@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9a72cdb5-2b57-4331-9836-82653732decf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstrfasthandler, KStrFastHandler routine [Streaming Media Devices], KStrFastHandler, PFNKSFASTHANDLER, PFNKSFASTHANDLER, ks/KStrFastHandler, ksfunc_e78a76eb-b3e6-4864-bae2-49536d3a9d52.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrFastHandler
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -87,7 +91,7 @@ Specifies an aligned structure that is used to return error status and informati
 
 ## Remarks
 
-The minidriver provides an entry point for this routine in <a href="..\ks\ns-ks-ksfastproperty_item.md">KSFASTPROPERTY_ITEM</a> or <a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>.</p>
+The minidriver provides an entry point for this routine in <a href="..\ks\ns-ks-ksfastproperty_item.md">KSFASTPROPERTY_ITEM</a> or <a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

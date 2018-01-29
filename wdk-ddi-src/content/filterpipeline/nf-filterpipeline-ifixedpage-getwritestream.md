@@ -7,8 +7,8 @@ old-location : print\ifixedpage_getwritestream.htm
 old-project : print
 ms.assetid : 1a095d51-b727-4d89-aa7c-f43998db4c2e
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IFixedPage, IFixedPage::GetWriteStream, GetWriteStream
+ms.date : 1/18/2018
+ms.keywords : filterpipeline_f253c020-8d3d-44c1-a9fb-e5093c29a637.xml, filterpipeline/IFixedPage::GetWriteStream, GetWriteStream, print.ifixedpage_getwritestream, IFixedPage::GetWriteStream, IFixedPage, GetWriteStream method [Print Devices], IFixedPage interface, GetWriteStream method [Print Devices], IFixedPage interface [Print Devices], GetWriteStream method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IFixedPage.GetWriteStream
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

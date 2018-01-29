@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : c24451cd-87d7-493d-83cb-2ee96590b8a3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serial_xoff_counter, IOCTL_SERIAL_XOFF_COUNTER control code [Serial Ports], IOCTL_SERIAL_XOFF_COUNTER, ntddser/IOCTL_SERIAL_XOFF_COUNTER, serref_ef42292d-d9d2-47be-b368-a696af5d0eea.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_XOFF_COUNTER
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -38,14 +42,20 @@ req.typenames : SD_REQUEST_FUNCTION
 The <b>IOCTL_SERIAL_XOFF_COUNTER</b> request sets an <i>XOFF counter</i>. An XOFF counter request supports clients that use software to emulate hardware handshake flow control.
 
 An XOFF counter request is synchronized with write requests. The driver sends a specified XOFF character, and completes the request after one of the following events occurs:
-
+<ul>
+<li>
 A write request is received.
 
+</li>
+<li>
 A timer expires (a time-out value is specified by the XOFF counter request).
 
+</li>
+<li>
 The serial controller driver receives a number of characters that is greater than or equal to a count specified by the XOFF counter request.
 
-For more information about the operation of an XOFF counter, see the description of the <b>SERIAL_XOFF_COUNTER</b> structure in the Ntddser.h header file in the Microsoft Windows Driver Kit (WDK).
+</li>
+</ul>For more information about the operation of an XOFF counter, see the description of the <b>SERIAL_XOFF_COUNTER</b> structure in the Ntddser.h header file in the Microsoft Windows Driver Kit (WDK).
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -69,18 +79,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero.
 
-The <b>Status</b> member is set to one of the <a href="serial_device_control_requests.htm#generic_status_values_for_serial_device_control_requests">Generic Status Values for Serial Device Control Requests</a> or to one of the following request-specific values:
-
-
-
-The count value specified for the XOFF counter request is less than zero.
-
-A write request was received.
-
-The request timed out.
+The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/serial-device-control-requests2">Generic Status Values for Serial Device Control Requests</a> or to one of the following request-specific values:
 
 
 ## Requirements
@@ -90,16 +91,12 @@ The request timed out.
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_xoff.md">IOCTL_SERIAL_SET_XOFF</a>
-</dt>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_xon.md">IOCTL_SERIAL_SET_XON</a>
-</dt>
-</dl>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_xoff.md">IOCTL_SERIAL_SET_XOFF</a>
+
  
 
  

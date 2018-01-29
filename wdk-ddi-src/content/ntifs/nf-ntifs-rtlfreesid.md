@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c3afb073-feb4-47ad-96a1-c9b580626026
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFreeSid
+ms.keywords : rtlref_4cdaafe3-70fa-4a22-be05-019e6b06cc15.xml, RtlFreeSid, ntifs/RtlFreeSid, ifsk.rtlfreesid, RtlFreeSid function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlFreeSid
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ The <b>RtlFreeSid</b> routine is reserved for system use.
 
 `Sid`
 
-
+TBD
 
 
 ## Return Value

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 47142adb-4d22-41eb-b455-93409bbffffb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerSetHardwareRequestQueue
+ms.keywords : UcmTcpciPortControllerSetHardwareRequestQueue, buses.ucmtcpciportcontrollersethardwarerequestqueue, UcmTcpciPortControllerSetHardwareRequestQueue method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerSetHardwareRequestQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UcmTcpciPortControllerSetHardwareRequestQueue
-req.alt-loc : ucmtcpciportcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
 req.product : Windows 10 or later.
 ---
@@ -86,11 +90,8 @@ A client driver may choose to use the same queue across multiple port controller
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
-</dt>
-</dl>
+
  
 
  

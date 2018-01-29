@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7214a0e9-5519-4daa-bd2f-cc3c697dd867
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::GetPnpState, GetPnpState
+ms.keywords : umdf.iwdfdevice_getpnpstate, IWDFDevice, UMDFDeviceObjectRef_6fe8971d-2af6-4fc0-a902-74edb5d45f39.xml, GetPnpState method, GetPnpState method, IWDFDevice interface, wudfddi/IWDFDevice::GetPnpState, wdf.iwdfdevice_getpnpstate, GetPnpState, IWDFDevice interface, GetPnpState method, IWDFDevice::GetPnpState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.GetPnpState
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -59,15 +63,45 @@ A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_state.md">WDF_PNP_STATE</a
 ## Return Value
 
 <b>GetPnpState</b> returns one of the following WDF_TRI_STATE-typed values that identifies the state of the PnP property that is specified in the <i>State</i> parameter.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>WdfUseDefault (0)</b></dt>
-</dl>The PnP property is set to the default state.
+</dl>
+</td>
+<td width="60%">
+The PnP property is set to the default state.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>WdfFalse (1)</b></dt>
-</dl>The PnP property is turned off.
+</dl>
+</td>
+<td width="60%">
+The PnP property is turned off.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>WdfTrue (2)</b></dt>
-</dl>The PnP property is turned on.
+</dl>
+</td>
+<td width="60%">
+The PnP property is turned on.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -84,17 +118,12 @@ A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_state.md">WDF_PNP_STATE</a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
-</dt>
-<dt>
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_state.md">WDF_PNP_STATE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : image\iwiadrvitem_findchilditembyname.htm
 old-project : image
 ms.assetid : 04f446f2-cd59-4191-be0c-60140ecee3b2
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaDrvItem, IWiaDrvItem::FindChildItemByName, FindChildItemByName
+ms.date : 1/18/2018
+ms.keywords : wiamindr_lh/IWiaDrvItem::FindChildItemByName, IWiaDrvItem::FindChildItemByName, DrvItem_afe8c47f-ebf9-484e-94bf-fdcd4713ea2a.xml, FindChildItemByName, image.iwiadrvitem_findchilditembyname, IWiaDrvItem interface [Imaging Devices], FindChildItemByName method, FindChildItemByName method [Imaging Devices], FindChildItemByName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaDrvItem.FindChildItemByName
-req.alt-loc : wiamindr_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wiamindr_lh.h
 req.dll : 
 req.irql : 
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -81,19 +85,14 @@ Minidrivers typically use this method to search a driver item tree for a specifi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543870">IWiaDrvItem::FindItemByName</a>
-</dt>
-</dl>
- 
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaDrvItem::FindChildItemByName method%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaDrvItem::FindChildItemByName method%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -7,8 +7,8 @@ old-location : print\delete_port_data_1.htm
 old-project : print
 ms.assetid : d4fb5bf9-7982-4abd-91ba-59b7798a18c7
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _DELETE_PORT_DATA_1, DELETE_PORT_DATA_1, *PDELETE_PORT_DATA_1
+ms.date : 1/18/2018
+ms.keywords : tcpxcv/DELETE_PORT_DATA_1, DELETE_PORT_DATA_1 structure [Print Devices], PDELETE_PORT_DATA_1, spoolfnc_238080f3-e916-4a7f-9531-361659c21a3d.xml, _DELETE_PORT_DATA_1, print.delete_port_data_1, *PDELETE_PORT_DATA_1, PDELETE_PORT_DATA_1 structure pointer [Print Devices], DELETE_PORT_DATA_1, tcpxcv/PDELETE_PORT_DATA_1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DELETE_PORT_DATA_1
-req.alt-loc : tcpxcv.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DELETE_PORT_DATA_1, *PDELETE_PORT_DATA_1
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDELETE_PORT_DATA_1, DELETE_PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _DELETE_PORT_DATA_1 {
 
 ## Members
 
-        
-            `dwReserved`
 
-            Is obsolete, and must be set to 0.
-        
-            `dwVersion`
+`dwReserved`
 
-            Specifies the version of this structure, which is currently 1.
-        
-            `psztPortName`
+Is obsolete, and must be set to 0.
 
-            Specifies the name of the port to be deleted. The MAX_PORTNAME_LEN constant is defined in tcpxcv.h.
-        
-            `Reserved`
+`dwVersion`
 
-            Is reserved for system use.
+Specifies the version of this structure, which is currently 1.
 
-    ## Remarks
-        When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function is called to delete a port, its <i>pInputData</i> parameter must be set with the address of a DELETE_PORT_DATA_1 structure. Set this function's <i>pszDataName</i> parameter to the string L"DeletePort". 
+`psztPortName`
+
+Specifies the name of the port to be deleted. The MAX_PORTNAME_LEN constant is defined in tcpxcv.h.
+
+`Reserved`
+
+Is reserved for system use.
+
+## Remarks
+When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function is called to delete a port, its <i>pInputData</i> parameter must be set with the address of a DELETE_PORT_DATA_1 structure. Set this function's <i>pszDataName</i> parameter to the string L"DeletePort". 
 
 See <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TCPMON Xcv Interface</a> for more information.
 
@@ -80,15 +84,12 @@ See <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TC
 | **Minimum UMDF version** |  |
 | **Header** | tcpxcv.h (include Tcpxcv.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DELETE_PORT_DATA_1 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DELETE_PORT_DATA_1 structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 50063bd0-c9d4-4013-8f83-8f9d92aa87c0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_GETCAPS, D3DDDIARG_GETCAPS
+ms.keywords : _D3DDDIARG_GETCAPS, UMDisplayDriver_param_Structs_05260c15-4f63-4a85-b9c8-db53ed8135cd.xml, display.d3dddiarg_getcaps, D3DDDIARG_GETCAPS structure [Display Devices], d3dumddi/D3DDDIARG_GETCAPS, D3DDDIARG_GETCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_GETCAPS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_GETCAPS
 ---
 
@@ -49,25 +53,25 @@ typedef struct _D3DDDIARG_GETCAPS {
 
 ## Members
 
-        
-            `DataSize`
 
-            [in/out] The size, in bytes, of the buffer at <b>pData</b>.
-        
-            `pData`
+`DataSize`
 
-            [out] A pointer to a buffer that is filled with capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition that is specified in the buffer at <b>pInfo</b>.
-        
-            `pInfo`
+[in/out] The size, in bytes, of the buffer at <b>pData</b>.
 
-            [in] A pointer to a buffer that contains data that specifies the specific condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
-        
-            `Type`
+`pData`
 
-            [in] The type of capabilities to retrieve. The Microsoft Direct3D runtime can supply one of the values from the <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a> enumeration type, possibly along with information in the buffer that is pointed to by <b>pInfo</b>, to retrieve particular capability data in the buffer at <b>pData</b>.
+[out] A pointer to a buffer that is filled with capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition that is specified in the buffer at <b>pInfo</b>.
 
-    ## Remarks
-        For information on how to specify <b>D3DDDIARG_GETCAPS</b> member values along with <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a> constant values, see Remarks of <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>.
+`pInfo`
+
+[in] A pointer to a buffer that contains data that specifies the specific condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
+
+`Type`
+
+[in] The type of capabilities to retrieve. The Microsoft Direct3D runtime can supply one of the values from the <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a> enumeration type, possibly along with information in the buffer that is pointed to by <b>pInfo</b>, to retrieve particular capability data in the buffer at <b>pData</b>.
+
+## Remarks
+For information on how to specify <b>D3DDDIARG_GETCAPS</b> member values along with <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a> constant values, see Remarks of <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,16 +81,12 @@ typedef struct _D3DDDIARG_GETCAPS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 042ebb72-b794-4cb8-9d81-bd52a785f1e0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.iasetindexbuffer, IaSetIndexBuffer callback function [Display Devices], IaSetIndexBuffer, PFND3D10DDI_IA_SETINDEXBUFFER, PFND3D10DDI_IA_SETINDEXBUFFER, d3d10umddi/IaSetIndexBuffer, UserModeDisplayDriverDx10_Functions_5b51e721-283c-447e-8170-17af90a29081.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IaSetIndexBuffer
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -95,14 +99,10 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-</dl>
+
  
 
  

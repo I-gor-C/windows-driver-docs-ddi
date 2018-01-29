@@ -7,8 +7,8 @@ old-location : netvista\rilsetgeolocationdataparams_2.htm
 old-project : netvista
 ms.assetid : 4e0d035b-5528-4e69-bd6c-9311bf0af4cf
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSETGEOLOCATIONDATAPARAMS, *LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS
+ms.date : 1/18/2018
+ms.keywords : "*LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS structure [Network Drivers Starting with Windows Vista], RILSETGEOLOCATIONDATAPARAMS, netvista.rilsetgeolocationdataparams_2, rilapitypes/RILSETGEOLOCATIONDATAPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSETGEOLOCATIONDATAPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -49,18 +53,18 @@ typedef struct _RILSETGEOLOCATIONDATAPARAMS {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `locationInfo`
 
-            
+
+`dwExecutor`
+
+
+
+`locationInfo`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DDB42924-5C28-4737-92C1-4FB7A00B09AA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.logmarkerstringtable, LogMarkerStringTable callback function [Display Devices], LogMarkerStringTable, PFND3DDDI_LOGSTRINGTABLE, PFND3DDDI_LOGSTRINGTABLE, d3dumddi/LogMarkerStringTable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LogMarkerStringTable
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,11 +87,8 @@ This function is free-threaded.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddicb_logstringtableentry.md">LogMarkerStringTableEntry</a>
-</dt>
-</dl>
+
  
 
  

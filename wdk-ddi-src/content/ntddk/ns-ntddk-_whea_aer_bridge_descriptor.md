@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 33cc9d34-cffb-410d-9948-37c8a409e0a5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
+ms.keywords : whearef_52e2fbef-c8d7-42c8-b8ae-584fbc4f622f.xml, _WHEA_AER_BRIDGE_DESCRIPTOR, PWHEA_AER_BRIDGE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], *PWHEA_AER_BRIDGE_DESCRIPTOR, whea.whea_aer_bridge_descriptor, ntddk/PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR structure [WHEA Drivers and Applications], PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/WHEA_AER_BRIDGE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_AER_BRIDGE_DESCRIPTOR
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR"
 ---
 
 # _WHEA_AER_BRIDGE_DESCRIPTOR structure
@@ -59,31 +63,30 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 
 ## Members
 
-        
-            `AdvancedCapsAndControl`
 
-            The contents of the bridge's Advanced Error Capabilities and Control register.
-        
-            `BusNumber`
+`AdvancedCapsAndControl`
 
-            The bridge's primary bus number.
-        
-            `CorrectableErrorMask`
+The contents of the bridge's Advanced Error Capabilities and Control register.
 
-            The contents of the bridge's Correctable Error Mask register.
-        
-            `DeviceControl`
+`BusNumber`
 
-            The contents of the bridge's Device Control register.
-        
-            `Enabled`
+The bridge's primary bus number.
 
-            A Boolean value that indicates if the error source is enabled.
-        
-            `Flags`
+`CorrectableErrorMask`
 
-            An AER_BRIDGE_DESCRIPTOR_FLAGS union that indicates which of the members of the WHEA_AER_BRIDGE_DESCRIPTOR structure can be written to by the operating system. The AER_BRIDGE_DESCRIPTOR_FLAGS union is defined as follows:
+The contents of the bridge's Correctable Error Mask register.
 
+`DeviceControl`
+
+The contents of the bridge's Device Control register.
+
+`Enabled`
+
+A Boolean value that indicates if the error source is enabled.
+
+`Flags`
+
+An AER_BRIDGE_DESCRIPTOR_FLAGS union that indicates which of the members of the WHEA_AER_BRIDGE_DESCRIPTOR structure can be written to by the operating system. The AER_BRIDGE_DESCRIPTOR_FLAGS union is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -106,41 +109,41 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 </td>
 </tr>
 </table></span></div>
-        
-            `Reserved`
 
-            Reserved for system use.
-        
-            `SecondaryCapsAndControl`
+`Reserved`
 
-            The contents of the bridge's Secondary Error Capabilities and Control register.
-        
-            `SecondaryUncorrectableErrorMask`
+Reserved for system use.
 
-            The contents of the bridge's Secondary Uncorrectable Error Mask register.
-        
-            `SecondaryUncorrectableErrorSev`
+`SecondaryCapsAndControl`
 
-            The contents of the bridge's Secondary Uncorrectable Error Severity register.
-        
-            `Slot`
+The contents of the bridge's Secondary Error Capabilities and Control register.
 
-            A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
-        
-            `Type`
+`SecondaryUncorrectableErrorMask`
 
-            The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_AERBRIDGE.
-        
-            `UncorrectableErrorMask`
+The contents of the bridge's Secondary Uncorrectable Error Mask register.
 
-            The contents of the bridge's Uncorrectable Error Mask register.
-        
-            `UncorrectableErrorSeverity`
+`SecondaryUncorrectableErrorSev`
 
-            The contents of the bridge's Uncorrectable Error Severity register.
+The contents of the bridge's Secondary Uncorrectable Error Severity register.
 
-    ## Remarks
-        A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+`Slot`
+
+A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
+
+`Type`
+
+The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_AERBRIDGE.
+
+`UncorrectableErrorMask`
+
+The contents of the bridge's Uncorrectable Error Mask register.
+
+`UncorrectableErrorSeverity`
+
+The contents of the bridge's Uncorrectable Error Severity register.
+
+## Remarks
+A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -150,16 +153,12 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a>
-</dt>
-</dl>
+
  
 
  

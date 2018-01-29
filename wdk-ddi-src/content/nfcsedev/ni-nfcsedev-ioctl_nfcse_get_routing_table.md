@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 838D31E8-1835-47C7-8201-93910610F5EC
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.keywords : nfpdrivers.ioctl_nfcse_get_routing_table, IOCTL_NFCSE_GET_ROUTING_TABLE control code [Near-Field Proximity Drivers], IOCTL_NFCSE_GET_ROUTING_TABLE, nfcsedev/IOCTL_NFCSE_GET_ROUTING_TABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_NFCSE_GET_ROUTING_TABLE
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_GET_ROUTING_TABLE IOCTL
@@ -59,8 +63,31 @@ sizeof(SECURE_ELEMENT_ROUTING_TABLE)
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<table>
+<tr>
+<th>Return Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>STATUS_BUFFER_OVERFLOW</b></td>
+<td>The buffer supplied was too small to receive the routing table configuration.</td>
+</tr>
+<tr>
+<td><b>STATUS_FEATURE_NOT_SUPPORTED</b></td>
+<td>The NFCC does not support listen mode routing configuration.
+</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_PARAMETER</b></td>
+<td>This code is returned if the input buffer is non-zero.</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_DEVICE_STATE</b></td>
+<td>This code is returned if the IOCTL is sent on a handle other than with relative name ‘SEManage’.
+</td>
+</tr>
+</table>
 
 
 ## Requirements

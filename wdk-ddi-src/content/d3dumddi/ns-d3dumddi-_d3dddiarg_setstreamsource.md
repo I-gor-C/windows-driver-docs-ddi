@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6a178ef0-0741-4b0c-a688-cae3923135ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETSTREAMSOURCE, D3DDDIARG_SETSTREAMSOURCE
+ms.keywords : _D3DDDIARG_SETSTREAMSOURCE, d3dumddi/D3DDDIARG_SETSTREAMSOURCE, D3DDDIARG_SETSTREAMSOURCE structure [Display Devices], D3DDDIARG_SETSTREAMSOURCE, display.d3dddiarg_setstreamsource, UMDisplayDriver_param_Structs_f90eed83-1d01-4502-84e4-22cff72016d6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETSTREAMSOURCE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETSTREAMSOURCE
 ---
 
@@ -49,24 +53,24 @@ typedef struct _D3DDDIARG_SETSTREAMSOURCE {
 
 ## Members
 
-        
-            `hVertexBuffer`
 
-            [in] A handle to the vertex buffer. If this member is zero, the stream should no longer be bound to a vertex buffer.
-        
-            `Offset`
+`hVertexBuffer`
 
-            [in] The offset in bytes into the stream. 
+[in] A handle to the vertex buffer. If this member is zero, the stream should no longer be bound to a vertex buffer.
+
+`Offset`
+
+[in] The offset in bytes into the stream. 
 
 The <b>Offset</b> value must be DWORD-aligned.
-        
-            `Stream`
 
-            [in] The stream to bind, which is a value between zero and the maximum number of streams that are specified by the driver.
-        
-            `Stride`
+`Stream`
 
-            [in] The size, in bytes, from one vertex to the next vertex. If <b>Stride</b> is set to zero, all of the vertices receive the same data for processing. 
+[in] The stream to bind, which is a value between zero and the maximum number of streams that are specified by the driver.
+
+`Stride`
+
+[in] The size, in bytes, from one vertex to the next vertex. If <b>Stride</b> is set to zero, all of the vertices receive the same data for processing. 
 
 For example, an application might use two input source streams where the first stream contains position information and the second stream contains normal information. If stride for the second stream is set to zero, all of the vertices in the second stream use the same normal information, which is the first normal information that occurs in the second stream.
 
@@ -81,13 +85,10 @@ The <b>Stride</b> value must be DWORD-aligned.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setstreamsource.md">SetStreamSource</a>
-</dt>
-</dl>
+
  
 
  

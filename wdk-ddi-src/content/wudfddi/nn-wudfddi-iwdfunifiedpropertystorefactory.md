@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 34884B88-187A-4079-843D-F777287442F7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.iwdfunifiedpropertystorefactory, IWDFUnifiedPropertyStoreFactory interface, IWDFUnifiedPropertyStoreFactory interface, described, IWDFUnifiedPropertyStoreFactory, wudfddi/IWDFUnifiedPropertyStoreFactory, umdf.iwdfunifiedpropertystorefactory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFUnifiedPropertyStoreFactory
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -64,13 +68,10 @@ For related information, see <a href="https://msdn.microsoft.com/51105f84-38d8-4
 | **Header** | wudfddi.h |
 | **DLL** | WUDFx.dll |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystore.md">IWDFUnifiedPropertyStore</a>
-</dt>
-</dl>
+
  
 
  

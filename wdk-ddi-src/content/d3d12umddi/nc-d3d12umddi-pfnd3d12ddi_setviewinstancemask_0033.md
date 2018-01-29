@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0A41AC01-9F45-4026-9451-AEF2732C9084
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_setviewinstancemask_0033, PFND3D12DDI_SETVIEWINSTANCEMASK_0033 callback function [Display Devices], PFND3D12DDI_SETVIEWINSTANCEMASK_0033, d3d12umddi/PFND3D12DDI_SETVIEWINSTANCEMASK_0033
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFND3D12DDI_SETVIEWINSTANCEMASK_0033
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 

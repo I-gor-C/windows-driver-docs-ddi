@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0BD6BA91-7F46-482B-B808-DEB8A23A0B84
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3
+ms.keywords : dispmprt/PDXGK_OPM_INTERFACE_3, dispmprt/DXGK_OPM_INTERFACE_3, PDXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3, display.dxgk_opm_interface_3, PDXGK_OPM_INTERFACE_3 structure pointer [Display Devices], _DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_OPM_INTERFACE_3
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3
 ---
 
@@ -62,74 +66,74 @@ typedef struct _DXGK_OPM_INTERFACE_3 {
 
 ## Members
 
-        
-            `Context`
 
-            A pointer to a private context block. <b>Context</b> must be set to <b>NULL</b>.
-        
-            `DxgkDdiOPMConfigureProtectedOutput`
+`Context`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> function.
-        
-            `DxgkDdiOPMCreateProtectedOutput`
+A pointer to a private context block. <b>Context</b> must be set to <b>NULL</b>.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a> function.
-        
-            `DxgkDdiOPMCreateProtectedOutputNonLocalDisplay`
+`DxgkDdiOPMConfigureProtectedOutput`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMCreateProtectedOutputNonLocalDisplay</a> function.
-        
-            `DxgkDdiOPMDestroyProtectedOutput`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> function.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMDestroyProtectedOutput</a> function.
-        
-            `DxgkDdiOPMGetCertificate`
+`DxgkDdiOPMCreateProtectedOutput`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate.md">DxgkDdiOPMGetCertificate</a> function.
-        
-            `DxgkDdiOPMGetCertificateSize`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a> function.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate_size.md">DxgkDdiOPMGetCertificateSize</a> function.
-        
-            `DxgkDdiOPMGetCOPPCompatibleInformation`
+`DxgkDdiOPMCreateProtectedOutputNonLocalDisplay`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> function.
-        
-            `DxgkDdiOPMGetInformation`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMCreateProtectedOutputNonLocalDisplay</a> function.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a> function.
-        
-            `DxgkDdiOPMGetRandomNumber`
+`DxgkDdiOPMDestroyProtectedOutput`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_random_number.md">DxgkDdiOPMGetRandomNumber</a> function.
-        
-            `DxgkDdiOPMGetSrmListVersion`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMDestroyProtectedOutput</a> function.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMGetSrmListVersion</a> function.
-        
-            `DxgkDdiOPMSetSigningKeyAndSequenceNumbers`
+`DxgkDdiOPMGetCertificate`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function.
-        
-            `DxgkDdiOPMSetSrmList`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate.md">DxgkDdiOPMGetCertificate</a> function.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMSetSrmList</a> function.
-        
-            `InterfaceDereference`
+`DxgkDdiOPMGetCertificateSize`
 
-            A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
-        
-            `InterfaceReference`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate_size.md">DxgkDdiOPMGetCertificateSize</a> function.
 
-            A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
-        
-            `Size`
+`DxgkDdiOPMGetCOPPCompatibleInformation`
 
-            The size, in bytes, of this structure.
-        
-            `Version`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> function.
 
-            A positive integer that indicates the version number of the OPM interface that is implemented by the display miniport driver. The <b>Version</b> member must be set to DXGK_OPM_INTERFACE_VERSION_1, which is defined in Dispmprt.h.
+`DxgkDdiOPMGetInformation`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a> function.
+
+`DxgkDdiOPMGetRandomNumber`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_random_number.md">DxgkDdiOPMGetRandomNumber</a> function.
+
+`DxgkDdiOPMGetSrmListVersion`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMGetSrmListVersion</a> function.
+
+`DxgkDdiOPMSetSigningKeyAndSequenceNumbers`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function.
+
+`DxgkDdiOPMSetSrmList`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMSetSrmList</a> function.
+
+`InterfaceDereference`
+
+A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
+
+`InterfaceReference`
+
+A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+A positive integer that indicates the version number of the OPM interface that is implemented by the display miniport driver. The <b>Version</b> member must be set to DXGK_OPM_INTERFACE_VERSION_1, which is defined in Dispmprt.h.
 
 
 ## Requirements

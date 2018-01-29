@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 30179fe1-e218-46cd-96a9-816ebab112bf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltQueueGenericWorkItem
+ms.keywords : fltkernel/FltQueueGenericWorkItem, ifsk.fltqueuegenericworkitem, FltApiRef_p_to_z_221f809d-f028-4e0f-b7b3-1341c1ed8782.xml, FltQueueGenericWorkItem function [Installable File System Drivers], FltQueueGenericWorkItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltQueueGenericWorkItem
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -63,7 +67,6 @@ Opaque filter (PFLT_FILTER) or instance (PFLT_INSTANCE) pointer for the caller.
 `WorkerRoutine`
 
 Pointer to a caller-supplied worker routine. This routine is declared as follows: 
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -83,7 +86,6 @@ Pointer to a caller-supplied worker routine. This routine is declared as follows
 `QueueType`
 
 Specifies the queue into which the work item that <i>FltWorkItem</i> points to is to be inserted. <i>QueueType</i> can be either of the following: 
-
 <table>
 <tr>
 <th>Value</th>
@@ -109,25 +111,35 @@ Insert the work item into the queue from which a system thread with a variable p
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The <i>QueueType</i> value <b>HyperCriticalWorkQueue</b> is reserved for system use.
 
 `Context`
 
-Context information pointer that was passed as the <i>Context</i> parameter of <b>FltQueueGenericWorkItem</b>. This parameter is optional. 
-
-</dd>
-</dl>
+Pointer to caller-defined context information to be passed as the <i>Context</i> parameter of the callback routine specified in the <i>WorkerRoutine</i> parameter. This parameter is optional.
 
 
 ## Return Value
 
 <b>FltQueueGenericWorkItem</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The minifilter driver is being unloaded. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The minifilter driver is being unloaded. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -151,14 +163,10 @@ To free the work item when it is no longer needed, call <a href="..\fltkernel\nf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 02de3382-031a-4d42-b349-786248da9c5c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.keywords : PSTORAGE_DEVICE_UNIQUE_IDENTIFIER structure pointer [Storage Devices], storduid/STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, _STORAGE_DEVICE_UNIQUE_IDENTIFIER, storage.storage_device_unique_identifier, structs-general_ed4e22dc-a5cb-4746-a846-cbae5e8d7ce8.xml, STORAGE_DEVICE_UNIQUE_IDENTIFIER structure [Storage Devices], PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, storduid/PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_DEVICE_UNIQUE_IDENTIFIER
-req.alt-loc : storduid.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
 req.product : Windows 10 or later.
 ---
@@ -51,26 +55,26 @@ typedef struct _STORAGE_DEVICE_UNIQUE_IDENTIFIER {
 
 ## Members
 
-        
-            `DriveLayoutSignatureOffset`
 
-            The offset, in bytes, to the drive layout signature (<a href="..\storduid\ns-storduid-_storage_device_layout_signature.md">STORAGE_DEVICE_LAYOUT_SIGNATURE</a>).
-        
-            `Size`
+`DriveLayoutSignatureOffset`
 
-            The size, in bytes, of the identifier header and the identifiers (IDs) that follow the header.
-        
-            `StorageDeviceIdOffset`
+The offset, in bytes, to the drive layout signature (<a href="..\storduid\ns-storduid-_storage_device_layout_signature.md">STORAGE_DEVICE_LAYOUT_SIGNATURE</a>).
 
-            The offset, in bytes, from the beginning of the header to the device ID descriptor (<a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>). The device ID descriptor contains the IDs that are extracted from page 0x83 of the device's vital product data (VPD).
-        
-            `StorageDeviceOffset`
+`Size`
 
-            The offset, in bytes, from the beginning of the header to the device descriptor (<a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>). The device descriptor contains IDs that are extracted from non-VPD inquiry data.
-        
-            `Version`
+The size, in bytes, of the identifier header and the identifiers (IDs) that follow the header.
 
-            The version of the DUID.
+`StorageDeviceIdOffset`
+
+The offset, in bytes, from the beginning of the header to the device ID descriptor (<a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>). The device ID descriptor contains the IDs that are extracted from page 0x83 of the device's vital product data (VPD).
+
+`StorageDeviceOffset`
+
+The offset, in bytes, from the beginning of the header to the device descriptor (<a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>). The device descriptor contains IDs that are extracted from non-VPD inquiry data.
+
+`Version`
+
+The version of the DUID.
 
 
 ## Requirements
@@ -81,16 +85,12 @@ typedef struct _STORAGE_DEVICE_UNIQUE_IDENTIFIER {
 | **Minimum UMDF version** |  |
 | **Header** | storduid.h (include Storduid.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

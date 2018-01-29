@@ -7,8 +7,8 @@ old-location : netvista\rilphonebookansoperation_2.htm
 old-project : netvista
 ms.assetid : ce1d2d09-64a3-40a9-b24b-66edbd34d637
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKANSOPERATION, RILPHONEBOOKANSOPERATION
+ms.date : 1/18/2018
+ms.keywords : RIL_PHONEBOOK_ANSDELETED, rilapitypes/RILPHONEBOOKANSOPERATION, netvista.rilphonebookansoperation_2, RIL_PHONEBOOK_MAX, RILPHONEBOOKANSOPERATION, rilapitypes/RIL_PHONEBOOK_MAX, RILPHONEBOOKANSOPERATION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PHONEBOOK_ANSDELETED, RIL_PHONEBOOK_ANSMODIFIED, rilapitypes/RIL_PHONEBOOK_ANSMODIFIED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKANSOPERATION
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPHONEBOOKANSOPERATION
 req.product : Windows 10 or later.
 ---
@@ -50,6 +54,11 @@ typedef enum _RILPHONEBOOKANSOPERATION {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_PHONEBOOK_ANSADDED</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_PHONEBOOK_ANSDELETED</td>

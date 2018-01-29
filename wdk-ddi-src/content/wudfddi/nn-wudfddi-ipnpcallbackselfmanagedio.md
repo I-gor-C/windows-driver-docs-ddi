@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 34971df0-4abc-41a1-8d2f-6e36df1daf20
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.ipnpcallbackselfmanagedio, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface, described, IPnpCallbackSelfManagedIo, wudfddi/IPnpCallbackSelfManagedIo, UMDFDeviceObjectRef_0f139c45-68eb-4429-ac90-675d7eddea5a.xml, umdf.ipnpcallbackselfmanagedio
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPnpCallbackSelfManagedIo
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -56,7 +60,7 @@ The <b>IPnpCallbackSelfManagedIo</b> interface is a Plug and Play (PnP) and powe
 
 ## Remarks
 
-A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>
+A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 57a0063d-1dc9-48ff-98e8-59a562cc5ce0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_get_roothub_pdo, IOCTL_INTERNAL_USB_GET_ROOTHUB_PDO control code [Buses], IOCTL_INTERNAL_USB_GET_ROOTHUB_PDO, usbioctl/IOCTL_INTERNAL_USB_GET_ROOTHUB_PDO, usbirp_66fee324-5309-4242-ad55-b0ed76dbf68e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_GET_ROOTHUB_PDO
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---

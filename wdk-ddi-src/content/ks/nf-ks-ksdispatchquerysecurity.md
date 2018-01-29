@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0aed2613-b40f-4328-91c4-c8e945c6ef17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDispatchQuerySecurity
+ms.keywords : ks/KsDispatchQuerySecurity, KsDispatchQuerySecurity, KsDispatchQuerySecurity function [Streaming Media Devices], stream.ksdispatchquerysecurity, ksfunc_9bf0ae3b-19d0-455d-9d58-2d7b7c515f30.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDispatchQuerySecurity
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

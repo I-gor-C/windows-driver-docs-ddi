@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e052e3bc-688e-4aa8-b987-88ed6963774a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_ENGINESTATUS, DXGK_ENGINESTATUS
+ms.keywords : display.dxgk_enginestatus, DXGK_ENGINESTATUS structure [Display Devices], d3dkmddi/DXGK_ENGINESTATUS, DXGK_ENGINESTATUS, _DXGK_ENGINESTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_ENGINESTATUS
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_ENGINESTATUS
 ---
 
@@ -62,13 +66,10 @@ typedef struct _DXGK_ENGINESTATUS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryenginestatus.md">DXGKARG_QUERYENGINESTATUS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 73835623-fa35-46f0-90a2-62d6d596dc64
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeGetIoTarget
+ms.keywords : kmdf.wdfusbtargetpipegetiotarget, wdfusb/WdfUsbTargetPipeGetIoTarget, WdfUsbTargetPipeGetIoTarget, WdfUsbTargetPipeGetIoTarget method, wdf.wdfusbtargetpipegetiotarget, PFN_WDFUSBTARGETPIPEGETIOTARGET, DFUsbRef_87bfc4fc-266b-44ca-911f-fc5d73735a6a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbTargetPipeGetIoTarget
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, FailD0EntryIoTargetState
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about the <b>WdfUsbTargetPipeGetIoTarget</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a> callback function can start a continuous reader for a USB pipe.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,14 +84,10 @@ The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_w
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetiotarget.md">WdfUsbTargetDeviceGetIoTarget</a>
-</dt>
-</dl>
+
  
 
  

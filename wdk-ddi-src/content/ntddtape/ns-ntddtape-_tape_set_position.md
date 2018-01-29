@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c9f462b2-4b56-4138-a374-9e9d3e1ae295
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _TAPE_SET_POSITION, *PTAPE_SET_POSITION, TAPE_SET_POSITION
+ms.keywords : PTAPE_SET_POSITION, *PTAPE_SET_POSITION, TAPE_SET_POSITION structure [Storage Devices], ntddtape/PTAPE_SET_POSITION, TAPE_SET_POSITION, _TAPE_SET_POSITION, storage.tape_set_position, structs-tape_412b4b85-a0b5-4372-a32c-fa7ac5a6f33a.xml, ntddtape/TAPE_SET_POSITION, PTAPE_SET_POSITION structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TAPE_SET_POSITION
-req.alt-loc : ntddtape.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PTAPE_SET_POSITION, TAPE_SET_POSITION"
 ---
 
@@ -49,25 +53,35 @@ typedef struct _TAPE_SET_POSITION {
 
 ## Members
 
-        
-            `Immediate`
 
-            When set to <b>TRUE</b>, indicates that the target device should return status immediately. When set to <b>FALSE</b>, indicates that the device should return status after the operation is complete.
-        
-            `Method`
+`Immediate`
 
-            Indicates the type of positioning to perform. This member must have one of the following values:
-        
-            `Offset`
+When set to <b>TRUE</b>, indicates that the target device should return status immediately. When set to <b>FALSE</b>, indicates that the device should return status after the operation is complete.
 
-            Specifies an offset whose type depends on the value in <b>Method</b>. If the specified method positions the tape to a block address, <b>Offset</b> specifies the byte offset into the specified partition. If the specified method is to skip blocks, filemarks, or setmarks, <b>Offset</b> specifies the number to skip. If <b>Offset</b> is zero, the tape is positioned at the beginning of the partition.
-        
-            `Partition`
+`Method`
 
-            Indicates the partition in which to set the tape's position. This member must have one of the following values:
+Indicates the type of positioning to perform. This member must have one of the following values:
 
-    ## Remarks
-        Note that a drive or a tape may not support all <b>Method</b> values.
+`Offset`
+
+Specifies an offset whose type depends on the value in <b>Method</b>. If the specified method positions the tape to a block address, <b>Offset</b> specifies the byte offset into the specified partition. If the specified method is to skip blocks, filemarks, or setmarks, <b>Offset</b> specifies the number to skip. If <b>Offset</b> is zero, the tape is positioned at the beginning of the partition.
+
+`Partition`
+
+Indicates the partition in which to set the tape's position. This member must have one of the following values:
+
+
+<dl>
+<dt>NOT_PARTITIONED (or zero)</dt>
+<dt>DATA_PARTITION</dt>
+<dt>DIRECTORY_PARTITION</dt>
+</dl>
+
+
+If the media is not partitioned, this member is zero.
+
+## Remarks
+Note that a drive or a tape may not support all <b>Method</b> values.
 
 Partitions are numbered logically from 1 to N. However, a partition number does not imply a physical position on the tape. For example, partition number one might not be at the beginning of the media.
 
@@ -81,16 +95,12 @@ When the offset specifies a number of blocks, filemarks, or setmarks to position
 | **Minimum UMDF version** |  |
 | **Header** | ntddtape.h (include Ntddtape.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddtape\ni-ntddtape-ioctl_tape_set_position.md">IOCTL_TAPE_SET_POSITION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a>
-</dt>
-</dl>
+
  
 
  

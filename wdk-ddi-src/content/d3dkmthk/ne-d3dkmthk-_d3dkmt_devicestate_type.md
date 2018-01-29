@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84570bac-63f1-4e34-919f-c150f9f0810e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DEVICESTATE_TYPE, D3DKMT_DEVICESTATE_TYPE
+ms.keywords : display.d3dkmt_devicestate_type, d3dkmthk/D3DKMT_DEVICESTATE_RESET, d3dkmthk/, D3DKMT_DEVICESTATE_EXECUTION, d3dkmthk/D3DKMT_DEVICESTATE_TYPE, d3dkmthk/D3DKMT_DEVICESTATE_EXECUTION, d3dkmthk/D3DKMT_DEVICESTATE_PAGE_FAULT, _D3DKMT_DEVICESTATE_TYPE, D3DKMT_DEVICESTATE_PRESENT_DWM, D3DKMT_DEVICESTATE_TYPE, d3dkmthk/D3DKMT_DEVICESTATE_PRESENT, d3dkmthk/D3DKMT_DEVICESTATE_PRESENT_DWM, D3DKMT_DEVICESTATE_PAGE_FAULT, D3DKMT_DEVICESTATE_TYPE enumeration [Display Devices], D3DKMT_DEVICESTATE_PRESENT, OpenGL_Structs_7446b76d-102c-4d61-bf39-ce1ca17ea036.xml, D3DKMT_DEVICESTATE_RESET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DEVICESTATE_TYPE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DEVICESTATE_TYPE
 ---
 
@@ -76,6 +80,11 @@ typedef enum _D3DKMT_DEVICESTATE_TYPE {
 </tr>
 
 <tr>
+<td>D3DKMT_DEVICESTATE_PRESENT_QUEUE</td>
+<td></td>
+</tr>
+
+<tr>
 <td>D3DKMT_DEVICESTATE_RESET</td>
 <td>The device reset state is retrieved.</td>
 </tr>
@@ -92,11 +101,8 @@ typedef enum _D3DKMT_DEVICESTATE_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
-</dt>
-</dl>
+
  
 
  

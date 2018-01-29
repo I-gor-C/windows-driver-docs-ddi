@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 47e6da4a-fa81-40ee-9bf5-80526dc0b865
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_GetUSBDIVersion
+ms.keywords : USBD_GetUSBDIVersion routine [Buses], buses.usbd_getusbdiversion, usbfunc_567ca75b-8d65-412c-aa28-284a01cff650.xml, USBD_GetUSBDIVersion, usbdlib/USBD_GetUSBDIVersion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_GetUSBDIVersion
-req.alt-loc : Usbd.lib,Usbd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbd.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL (See Remarks)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # USBD_GetUSBDIVersion function
 The <b>USBD_GetUSBDIVersion</b> routine returns version information about the host controller driver (HCD) that controls the client's USB device.
+<div class="alert"><b>Note</b>  <a href="..\usbdlib\nf-usbdlib-usbd_isinterfaceversionsupported.md">USBD_IsInterfaceVersionSupported</a> replaces the <b>USBD_GetUSBDIVersion</b>  routine</div><div> </div>
 
 ## Syntax
 
@@ -76,12 +81,10 @@ Callers of this routine can be running at IRQL &lt;= DISPATCH_LEVEL if the memor
 
 ## See Also
 
-<dl>
-<dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
-<dt>
 <a href="..\usbdlib\nf-usbdlib-usbd_isinterfaceversionsupported.md">USBD_IsInterfaceVersionSupported</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
  
 
  

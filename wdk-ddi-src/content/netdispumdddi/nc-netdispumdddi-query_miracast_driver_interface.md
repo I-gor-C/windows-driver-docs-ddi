@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a8833f8c-7e3f-422c-922e-e75476358ee9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _NDK_SRQ_DISPATCH, NDK_SRQ_DISPATCH
+ms.keywords : display.querymiracastdriverinterface, QueryMiracastDriverInterface callback function [Display Devices], QueryMiracastDriverInterface, QUERY_MIRACAST_DRIVER_INTERFACE, QUERY_MIRACAST_DRIVER_INTERFACE, netdispumdddi/QueryMiracastDriverInterface, display.query_miracast_driver_interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : QueryMiracastDriverInterface
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDK_SRQ_DISPATCH
 ---
 
@@ -75,6 +79,7 @@ On success, this function returns <b>STATUS_SUCCESS</b>. Otherwise, the function
 ## Remarks
 
 When the Miracast user-mode driver is loaded, the operating system calls the <a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a> function with "QueryMiracastDriverInterface" entered as the function name in the <i>lpProcName</i> parameter.
+<div class="alert"><b>Note</b>  If the Miracast user-mode driver doesn't supply a function with this name, the operating system fails the Miracast display device.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,14 +95,10 @@ When the Miracast user-mode driver is loaded, the operating system calls the <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a>
-</dt>
-<dt>
 <a href="..\netdispumdddi\ns-netdispumdddi-_miracast_driver_interface.md">MIRACAST_DRIVER_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a>
+
  
 
  

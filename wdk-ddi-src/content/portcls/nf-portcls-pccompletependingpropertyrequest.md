@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a4b59403-9a2f-4857-947b-dff8e3ea079c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcCompletePendingPropertyRequest
+ms.keywords : audpc-routines_934503ea-325f-4e57-ba45-e8834a64cefa.xml, PcCompletePendingPropertyRequest function [Audio Devices], audio.pccompletependingpropertyrequest, PcCompletePendingPropertyRequest, portcls/PcCompletePendingPropertyRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcCompleteP
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcCompletePendingPropertyRequest
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,14 +86,10 @@ The driver should call <b>PcCompletePendingPropertyRequest</b> only when the req
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
-</dt>
-</dl>
+
+<a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>
+
  
 
  

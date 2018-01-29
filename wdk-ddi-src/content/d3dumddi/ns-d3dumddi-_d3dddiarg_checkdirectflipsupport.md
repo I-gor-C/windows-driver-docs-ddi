@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 70df85b6-286a-45a2-813d-adb54daee122
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CHECKDIRECTFLIPSUPPORT, D3DDDIARG_CHECKDIRECTFLIPSUPPORT
+ms.keywords : d3dumddi/D3DDDIARG_CHECKDIRECTFLIPSUPPORT, D3DDDIARG_CHECKDIRECTFLIPSUPPORT, D3DDDIARG_CHECKDIRECTFLIPSUPPORT structure [Display Devices], display.d3dddiarg_checkdirectflipsupport, _D3DDDIARG_CHECKDIRECTFLIPSUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CHECKDIRECTFLIPSUPPORT
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CHECKDIRECTFLIPSUPPORT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DDDIARG_CHECKDIRECTFLIPSUPPORT {
 
 ## Members
 
-        
-            `CheckDirectFlipFlags`
 
-            [in] If this member has a value of <b>D3DDDI_CHECKDIRECTFLIP_IMMEDIATE</b>, seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.
-        
-            `hAppSwapchainResource`
+`CheckDirectFlipFlags`
 
-            [in] A resource in the application's swapchain.
-        
-            `hDWMSwapchainResource`
+[in] If this member has a value of <b>D3DDDI_CHECKDIRECTFLIP_IMMEDIATE</b>, seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.
 
-            [in] A resource in the DWM's swapchain.
-        
-            `Supported`
+`hAppSwapchainResource`
 
-            [out] Set to <b>TRUE</b> if the driver can seamlessly flip video memory between  an application's managed primary allocations and the DWM's managed primary allocations. Otherwise, set to <b>FALSE</b>.
+[in] A resource in the application's swapchain.
+
+`hDWMSwapchainResource`
+
+[in] A resource in the DWM's swapchain.
+
+`Supported`
+
+[out] Set to <b>TRUE</b> if the driver can seamlessly flip video memory between  an application's managed primary allocations and the DWM's managed primary allocations. Otherwise, set to <b>FALSE</b>.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _D3DDDIARG_CHECKDIRECTFLIPSUPPORT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_checkdirectflipsupport.md">CheckDirectFlipSupport</a>
-</dt>
-</dl>
+
  
 
  

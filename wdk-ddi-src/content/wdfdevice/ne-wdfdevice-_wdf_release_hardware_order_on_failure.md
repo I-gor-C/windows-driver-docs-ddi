@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 534B1E39-6B11-4954-8792-41A25FCA31B2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, *PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
+ms.keywords : wdf.wdf_release_hardware_order_on_failure, wdfdevice/WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, kmdf.wdf_release_hardware_order_on_failure, wdfdevice/WdfReleaseHardwareOrderOnFailureInvalid, wdfdevice/WdfReleaseHardwareOrderOnFailureAfterDescendants, WdfReleaseHardwareOrderOnFailureInvalid, wdfdevice/WdfReleaseHardwareOrderOnFailureEarly, *PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureEarly, _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration pointer, wdfdevice/PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureAfterDescendants, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.0
-req.alt-api : WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE"
 req.product : Windows 10 or later.
 ---
@@ -88,14 +92,10 @@ If a driver specifies <b>WdfReleaseHardwareOrderOnFailureAfterDescendants</b>, t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
+
  
 
  

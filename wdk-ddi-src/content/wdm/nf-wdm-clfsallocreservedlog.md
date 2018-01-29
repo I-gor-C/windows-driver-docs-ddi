@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 05e4fb47-38ef-4b46-a1bb-220c5b1a63ca
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsAllocReservedLog
+ms.keywords : Clfs_4429c61b-96d5-48cb-9ff0-5b0e3f01e0ec.xml, wdm/ClfsAllocReservedLog, kernel.clfsallocreservedlog, ClfsAllocReservedLog, ClfsAllocReservedLog routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsAllocReservedLog
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -86,11 +90,8 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-clfsalignreservedlog.md">ClfsAlignReservedLog</a>
-</dt>
-</dl>
+
  
 
  

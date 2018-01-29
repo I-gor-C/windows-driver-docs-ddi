@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5e3918a4-8cc6-45b9-acb1-3a2b2088d4b9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE
+ms.keywords : ntddmmc/PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure [Storage Devices], storage.feature_data_incremental_streaming_writable, PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure pointer [Storage Devices], _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, ntddmmc/FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, structs-CD-ROM_ad0cd0d4-fa5d-4ad4-82d9-7945eaa2a2cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE"
 ---
 
@@ -53,41 +57,41 @@ typedef struct _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE {
 
 ## Members
 
-        
-            `AddressModeReservation`
 
-            
-        
-            `BufferUnderrunFree`
+`AddressModeReservation`
 
-            Indicates, when set to one, that the logical unit is capable of zero-loss linking.
-        
-            `DataTypeSupported`
 
-            Indicates the supported data type. See the <i>SCSI Multimedia - 4 (MMC-4)</i> specification for an explanation of the values that this member can take. <b>DataTypeSupported</b>[0] must hold the most significant byte of the number of the data type. <b>DataTypeSupported</b>[1] must hold the least significant byte of the number.
-        
-            `Header`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `LinkSize`
+`BufferUnderrunFree`
 
-            Contains an array that indicates the number of logical blocks per link.
-        
-            `NumberOfLinkSizes`
+Indicates, when set to one, that the logical unit is capable of zero-loss linking.
 
-            Specifies the number of link sizes available for the current media. See the <i>MMC-3</i> specification for an explanation of the values that this member can take.
-        
-            `Reserved01`
+`DataTypeSupported`
 
-            
-        
-            `TrackRessourceInformation`
+Indicates the supported data type. See the <i>SCSI Multimedia - 4 (MMC-4)</i> specification for an explanation of the values that this member can take. <b>DataTypeSupported</b>[0] must hold the most significant byte of the number of the data type. <b>DataTypeSupported</b>[1] must hold the least significant byte of the number.
 
-            
+`Header`
 
-    ## Remarks
-        This structure holds data for the feature named "Incremental Streaming Writable" by the <i>MMC-3 </i>specification. Devices that support this feature can write data to a contiguous region, and can append data to a limited number of locations on the media. On CD media, this is known as "packet recording" and on a DVD media it is known as "incremental recording".
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+
+`LinkSize`
+
+Contains an array that indicates the number of logical blocks per link.
+
+`NumberOfLinkSizes`
+
+Specifies the number of link sizes available for the current media. See the <i>MMC-3</i> specification for an explanation of the values that this member can take.
+
+`Reserved01`
+
+
+
+`TrackRessourceInformation`
+
+
+
+## Remarks
+This structure holds data for the feature named "Incremental Streaming Writable" by the <i>MMC-3 </i>specification. Devices that support this feature can write data to a contiguous region, and can append data to a limited number of locations on the media. On CD media, this is known as "packet recording" and on a DVD media it is known as "incremental recording".
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,16 +101,12 @@ typedef struct _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

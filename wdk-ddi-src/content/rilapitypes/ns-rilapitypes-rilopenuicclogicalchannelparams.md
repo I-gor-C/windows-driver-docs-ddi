@@ -7,8 +7,8 @@ old-location : netvista\rilopenuicclogicalchannelparams_2.htm
 old-project : netvista
 ms.assetid : 067d33bf-33d5-49b7-9923-8c893d0b9184
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS, *LPRILOPENUICCLOGICALCHANNELPARAMS
+ms.date : 1/18/2018
+ms.keywords : netvista.rilopenuicclogicalchannelparams_2, RILOPENUICCLOGICALCHANNELPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILOPENUICCLOGICALCHANNELPARAMS, rilapitypes/RILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILOPENUICCLOGICALCHANNELPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILOPENUICCLOGICALCHANNELPARAMS, *LPRILOPENUICCLOGICALCHANNELPARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -51,26 +55,26 @@ typedef struct _RILOPENUICCLOGICALCHANNELPARAMS {
 
 ## Members
 
-        
-            `bAppId`
 
-            
-        
-            `dwAppIdLength`
+`bAppId`
 
-            
-        
-            `dwChannelGroup`
 
-            
-        
-            `dwSelectP2Arg`
 
-            
-        
-            `dwSlotIndex`
+`dwAppIdLength`
 
-            
+
+
+`dwChannelGroup`
+
+
+
+`dwSelectP2Arg`
+
+
+
+`dwSlotIndex`
+
+
 
 
 ## Requirements

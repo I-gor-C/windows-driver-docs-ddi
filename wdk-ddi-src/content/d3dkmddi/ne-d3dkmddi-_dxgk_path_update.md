@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DCBBFBF7-73B2-4298-BB87-83E1C6D76BD0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PATH_UPDATE, DXGK_PATH_UPDATE
+ms.keywords : d3dkmddi/DXGK_PATH_UPDATE_UNMODIFED, display.dxgk_path_update, d3dkmddi/DXGK_PATH_UPDATE, d3dkmddi/DXGK_PATH_UPDATE_MODIFIED, DXGK_PATH_UPDATE, d3dkmddi/DXGK_PATH_UPDATE_REMOVED, DXGK_PATH_UPDATE_MODIFIED, DXGK_PATH_UPDATE_REMOVED, _DXGK_PATH_UPDATE, DXGK_PATH_UPDATE enumeration [Display Devices], DXGK_PATH_UPDATE_ADDED, DXGK_PATH_UPDATE_UNMODIFED, d3dkmddi/DXGK_PATH_UPDATE_ADDED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_PATH_UPDATE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PATH_UPDATE
 ---
 
@@ -64,6 +68,16 @@ typedef enum _DXGK_PATH_UPDATE {
 <tr>
 <td>DXGK_PATH_UPDATE_REMOVED</td>
 <td>Indicates that this path was present in the previous VidPn but has been removed. The driver should be able to optimize the removal without interrogating VidPn to see that the path has been removed.</td>
+</tr>
+
+<tr>
+<td>DXGK_PATH_UPDATE_UNMODIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 

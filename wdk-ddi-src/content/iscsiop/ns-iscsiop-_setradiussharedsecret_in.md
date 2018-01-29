@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 948475eb-0670-4fab-b831-2fdb3ec86032
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SetRADIUSSharedSecret_IN, SetRADIUSSharedSecret_IN, *PSetRADIUSSharedSecret_IN
+ms.keywords : storage.setradiussharedsecret_in, PSetRADIUSSharedSecret_IN structure pointer [Storage Devices], iscsiop/SetRADIUSSharedSecret_IN, PSetRADIUSSharedSecret_IN, structs-iSCSI_0459fa21-0565-414f-bb05-0a7e553e0aa0.xml, iscsiop/PSetRADIUSSharedSecret_IN, *PSetRADIUSSharedSecret_IN, SetRADIUSSharedSecret_IN, SetRADIUSSharedSecret_IN structure [Storage Devices], _SetRADIUSSharedSecret_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetRADIUSSharedSecret_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetRADIUSSharedSecret_IN, *PSetRADIUSSharedSecret_IN
 ---
 
@@ -47,17 +51,17 @@ typedef struct _SetRADIUSSharedSecret_IN {
 
 ## Members
 
-        
-            `SharedSecret`
 
-            The shared secret.
-        
-            `SharedSecretSize`
+`SharedSecret`
 
-            The size, in bytes, of the shared secret.
+The shared secret.
 
-    ## Remarks
-        You must implement this method.
+`SharedSecretSize`
+
+The size, in bytes, of the shared secret.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _SetRADIUSSharedSecret_IN {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565815">SetRADIUSSharedSecret</a>
-</dt>
-<dt>
+
 <a href="..\iscsiop\ns-iscsiop-_setradiussharedsecret_out.md">SetRADIUSSharedSecret_OUT</a>
-</dt>
-</dl>
+
  
 
  

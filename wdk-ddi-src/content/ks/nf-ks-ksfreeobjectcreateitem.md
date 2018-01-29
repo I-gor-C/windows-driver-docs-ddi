@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 66f62a55-0bed-48ed-ae79-042bffe75b70
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFreeObjectCreateItem
+ms.keywords : KsFreeObjectCreateItem function [Streaming Media Devices], ksfunc_e91e49bc-521e-486e-a67b-33b16b7caa68.xml, ks/KsFreeObjectCreateItem, stream.ksfreeobjectcreateitem, KsFreeObjectCreateItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFreeObjectCreateItem
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -80,11 +84,8 @@ This function does not assume that the caller is serializing multiple changes to
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksfreeobjectcreateitemsbycontext.md">KsFreeObjectCreateItemsByContext</a>
-</dt>
-</dl>
+
  
 
  

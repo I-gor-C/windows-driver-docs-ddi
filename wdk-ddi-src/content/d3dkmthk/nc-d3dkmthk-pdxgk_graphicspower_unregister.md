@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A925D5D3-EF79-4C14-BE1C-188C255DDF8E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING
+ms.keywords : display.pdxgk_graphicspower_unregister, PDXGK_GRAPHICSPOWER_UNREGISTER callback function [Display Devices], PDXGK_GRAPHICSPOWER_UNREGISTER, d3dkmthk/PDXGK_GRAPHICSPOWER_UNREGISTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PDXGK_GRAPHICSPOWER_UNREGISTER
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_TARGETMODE_DETAIL_TIMING
 ---
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 641DE2B5-7903-4D25-A280-F2BCCE8B1500
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO
+ms.keywords : KSRTAUDIO_SETWRITEPACKET_INFO structure [Audio Devices], PKSRTAUDIO_SETWRITEPACKET_INFO, ksmedia/PKSRTAUDIO_SETWRITEPACKET_INFO, PKSRTAUDIO_SETWRITEPACKET_INFO structure pointer [Audio Devices], KSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO, ksmedia/KSRTAUDIO_SETWRITEPACKET_INFO, audio.ksrtaudio_setwritepacket_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10 and later Windows operating 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSRTAUDIO_SETWRITEPACKET_INFO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO"
 ---
 
@@ -48,22 +52,22 @@ typedef struct _KSRTAUDIO_SETWRITEPACKET_INFO {
 
 ## Members
 
-        
-            `EosPacketLength`
 
-            The length of the EOS packet if <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is specified in Flags. Zero is a valid value. If <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is not specified in Flags, this parameter is ignored. The EosPacketLength is measured in bytes.
-        
-            `Flags`
+`EosPacketLength`
 
-            Additional attributes related to the packet or stream. 
+The length of the EOS packet if <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is specified in Flags. Zero is a valid value. If <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is not specified in Flags, this parameter is ignored. The EosPacketLength is measured in bytes.
+
+`Flags`
+
+Additional attributes related to the packet or stream. 
 
 
 
 <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> - This flag indicates that this packet represents the end of the data stream.
-        
-            `PacketNumber`
 
-            The number of the packet written by the OS to the WaveRT buffer. Depending on the values returned by the driver in the KSPROPERTY_RTAUDIO_GETPACKETCOUNT property, the PacketNumber may skip values. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt171559">KSPROPERTY_RTAUDIO_PACKETCOUNT</a>.
+`PacketNumber`
+
+The number of the packet written by the OS to the WaveRT buffer. Depending on the values returned by the driver in the KSPROPERTY_RTAUDIO_GETPACKETCOUNT property, the PacketNumber may skip values. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt171559">KSPROPERTY_RTAUDIO_PACKETCOUNT</a>.
 
 
 ## Requirements
@@ -74,13 +78,10 @@ typedef struct _KSRTAUDIO_SETWRITEPACKET_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt786975">KSPROPERTY_RTAUDIO_SETWRITEPACKET</a>
-</dt>
-</dl>
+
  
 
  

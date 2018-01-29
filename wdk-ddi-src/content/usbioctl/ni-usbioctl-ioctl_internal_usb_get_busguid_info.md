@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 79a09c8d-ddea-4335-ac90-11438f4bede6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_get_busguid_info, IOCTL_INTERNAL_USB_GET_BUSGUID_INFO control code [Buses], IOCTL_INTERNAL_USB_GET_BUSGUID_INFO, usbioctl/IOCTL_INTERNAL_USB_GET_BUSGUID_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_GET_BUSGUID_INFO
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---

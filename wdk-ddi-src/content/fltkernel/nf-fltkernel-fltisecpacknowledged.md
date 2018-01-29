@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ae4f4dfd-2a1d-4116-b56c-f7250697cf9e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltIsEcpAcknowledged
+ms.keywords : ifsk.fltisecpacknowledged, FltIsEcpAcknowledged routine [Installable File System Drivers], FltIsEcpAcknowledged, fltkernel/FltIsEcpAcknowledged, FltApiRef_e_to_o_a5a70461-2108-4e8f-a01b-0fec773f6010.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available starting with Windows Vist
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltIsEcpAcknowledged
-req.alt-loc : FltMgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : FltMgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -80,29 +84,20 @@ To mark an ECP as acknowledged, use the <a href="..\fltkernel\nf-fltkernel-fltac
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltacknowledgeecp.md">FltAcknowledgeEcp</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltisecpfromusermode.md">FltIsEcpFromUserMode</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltacknowledgeecp.md">FltAcknowledgeEcp</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+
  
 
  

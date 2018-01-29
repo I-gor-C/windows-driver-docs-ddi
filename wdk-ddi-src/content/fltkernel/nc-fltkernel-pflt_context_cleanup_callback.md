@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f17eb108-58d1-4640-a0cc-ae568b0c844c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords : ifsk.pflt_context_cleanup_callback, ContextCleanupCallback routine [Installable File System Drivers], ContextCleanupCallback, PFLT_CONTEXT_CLEANUP_CALLBACK, PFLT_CONTEXT_CLEANUP_CALLBACK, fltkernel/ContextCleanupCallback, FltCallbacks_870edcbe-dbd7-4fad-b4f3-628bffe6fb44.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ContextCleanupCallback
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -60,36 +64,19 @@ A pointer to the minifilter driver's portion of the context.
 
 The type of context. Must be one of the following values: 
 
-<dl>
-<dd>
 FLT_FILE_CONTEXT (starting with  Windows Vista)
 
-</dd>
-<dd>
 FLT_INSTANCE_CONTEXT
 
-</dd>
-<dd>
 FLT_STREAM_CONTEXT
 
-</dd>
-<dd>
 FLT_STREAMHANDLE_CONTEXT
 
-</dd>
-<dd>
 FLT_SECTION_CONTEXT (starting with  Windows 8)
 
-</dd>
-<dd>
 FLT_TRANSACTION_CONTEXT (starting with  Windows Vista) 
 
-</dd>
-<dd>
 FLT_VOLUME_CONTEXT
-
-</dd>
-</dl>
 
 
 ## Return Value
@@ -118,23 +105,16 @@ For more information about context registration, see the reference entry for <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_context_allocate_callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_context_free_callback.md">PFLT_CONTEXT_FREE_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+
  
 
  

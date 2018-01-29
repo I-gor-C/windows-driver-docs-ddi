@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C92E53C8-3411-4E6E-B48E-B16F6B815488
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoUpdateLinkShareAccess
+ms.keywords : IoUpdateLinkShareAccess, IoUpdateLinkShareAccess function [Kernel-Mode Driver Architecture], kernel.ioupdatelinkshareaccess, wdm/IoUpdateLinkShareAccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoUpdateLinkShareAccess
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,17 +92,12 @@ Before calling <b>IoUpdateLinkShareAccess</b>, the caller must successfully call
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioremovelinkshareaccess.md">IoRemoveLinkShareAccess</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
+
+<a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
+
  
 
  

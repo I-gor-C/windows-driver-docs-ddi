@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : ae4936ac-9794-4854-81ec-2139b3ce4c3c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_MITIGATED_RANGE_UPDATE_INPUT, *PSRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT
+ms.keywords : _SRIOV_MITIGATED_RANGE_UPDATE_INPUT, pcivirt/SRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT structure [Buses], *PSRIOV_MITIGATED_RANGE_UPDATE_INPUT, PCI.sriov_mitigated_range_update_input
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_MITIGATED_RANGE_UPDATE_INPUT
-req.alt-loc : pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSRIOV_MITIGATED_RANGE_UPDATE_INPUT, SRIOV_MITIGATED_RANGE_UPDATE_INPUT"
 ---
 
@@ -46,10 +50,10 @@ typedef struct _SRIOV_MITIGATED_RANGE_UPDATE_INPUT {
 
 ## Members
 
-        
-            `VfIndex`
 
-            Zero-based index of the virtual function from the first virtual function exposed by this physical function.
+`VfIndex`
+
+Zero-based index of the virtual function from the first virtual function exposed by this physical function.
 
 
 ## Requirements

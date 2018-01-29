@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : FE396C2C-B099-47F4-9C27-93D420D54103
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_STOP, *PCIP_STOP, CIP_STOP
+ms.keywords : IEEE.cip_stop, 61883/PCIP_STOP, PCIP_STOP structure pointer [Buses], PCIP_STOP, _CIP_STOP, 61883/CIP_STOP, *PCIP_STOP, CIP_STOP structure [Buses], CIP_STOP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_STOP
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCIP_STOP, CIP_STOP"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CIP_STOP, *PCIP_STOP
 ---
 
 # _CIP_STOP structure
@@ -46,13 +50,13 @@ typedef struct _CIP_STOP {
 
 ## Members
 
-        
-            `hConnect`
 
-            On input, a handle to the connection on which to stop isochronous transmission or reception.
+`hConnect`
 
-    ## Remarks
-        If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
+On input, a handle to the connection on which to stop isochronous transmission or reception.
+
+## Remarks
+If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
@@ -64,13 +68,10 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

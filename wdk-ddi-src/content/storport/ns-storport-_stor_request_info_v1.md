@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : CCC429B7-88BB-4DC3-86BC-6A5FCD405A5D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1
+ms.keywords : PSTOR_REQUEST_INFO_V1, _STOR_REQUEST_INFO_V1 structure [Storage Devices], storport/_STOR_REQUEST_INFO_V1, StorIoPriorityLow, StorIoPriorityVeryLow, REQUEST_INFO_SEQUENTIAL_IO_FLAG, STOR_REQUEST_INFO_V1 structure [Storage Devices], REQUEST_INFO_WRITE_THROUGH_FLAG, PSTOR_REQUEST_INFO_V1 structure pointer [Storage Devices], STOR_REQUEST_INFO_V1, storage.stor_request_info, storport/PSTOR_REQUEST_INFO_V1, StorIoPriorityNormal, _STOR_REQUEST_INFO_V1, StorIoPriorityHigh, StorIoPriorityCritical, *PSTOR_REQUEST_INFO_V1, REQUEST_INFO_TEMPORARY_FLAG, REQUEST_INFO_NO_CACHE_FLAG, REQUEST_INFO_PAGING_IO_FLAG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_REQUEST_INFO_V1
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1
 req.product : Windows 10 or later.
 ---
@@ -55,55 +59,158 @@ typedef struct _STOR_REQUEST_INFO_V1 {
 
 ## Members
 
-        
-            `Flags`
 
-            Flags set for handling the request. May be a combination of these values:
+`Flags`
 
+Flags set for handling the request. May be a combination of these values:
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `IsWriteRequest`
+<td width="40%"><a id="REQUEST_INFO_NO_CACHE_FLAG"></a><a id="request_info_no_cache_flag"></a><dl>
+<dt><b>REQUEST_INFO_NO_CACHE_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+Non-cached writes are specified for this request.
 
-            True if this is a write request. Otherwise, false, if this is a read request.
-        
-            `Key`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_PAGING_IO_FLAG"></a><a id="request_info_paging_io_flag"></a><dl>
+<dt><b>REQUEST_INFO_PAGING_IO_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+Paging IO is specified for this request.
 
-            The read or write key for the request.
-        
-            `Length`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_SEQUENTIAL_IO_FLAG"></a><a id="request_info_sequential_io_flag"></a><dl>
+<dt><b>REQUEST_INFO_SEQUENTIAL_IO_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+Reads or writes are sequential.
 
-            The length of the data in this request.
-        
-            `PriorityHint`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_TEMPORARY_FLAG"></a><a id="request_info_temporary_flag"></a><dl>
+<dt><b>REQUEST_INFO_TEMPORARY_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+The file for this request is temporary.
 
-            The priority hint set for the IO request.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_WRITE_THROUGH_FLAG"></a><a id="request_info_write_through_flag"></a><dl>
+<dt><b>REQUEST_INFO_WRITE_THROUGH_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+No system buffering for the request.
 
+</td>
+</tr>
+</table>
+
+`IsWriteRequest`
+
+True if this is a write request. Otherwise, false, if this is a read request.
+
+`Key`
+
+The read or write key for the request.
+
+`Length`
+
+The length of the data in this request.
+
+`PriorityHint`
+
+The priority hint set for the IO request.
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `Reserved`
+<td width="40%"><a id="StorIoPriorityVeryLow"></a><a id="storiopriorityverylow"></a><a id="STORIOPRIORITYVERYLOW"></a><dl>
+<dt><b>StorIoPriorityVeryLow</b></dt>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Very low priority.
 
-            Reserved.
-        
-            `Size`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="StorIoPriorityLow"></a><a id="storioprioritylow"></a><a id="STORIOPRIORITYLOW"></a><dl>
+<dt><b>StorIoPriorityLow</b></dt>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Low priority.
 
-            The size of this structure. Set this value to <b>sizeof</b>(STOR_REQUEST_INFO).
-        
-            `Version`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="StorIoPriorityNormal"></a><a id="storioprioritynormal"></a><a id="STORIOPRIORITYNORMAL"></a><dl>
+<dt><b>StorIoPriorityNormal</b></dt>
+<dt>2</dt>
+</dl>
+</td>
+<td width="60%">
+Normal priority.
 
-            The version of this structure. Set this member to <b>STOR_REQUEST_INFO_VER_1</b>.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="StorIoPriorityHigh"></a><a id="storiopriorityhigh"></a><a id="STORIOPRIORITYHIGH"></a><dl>
+<dt><b>StorIoPriorityHigh</b></dt>
+<dt>3</dt>
+</dl>
+</td>
+<td width="60%">
+High priority.
 
-    ## Remarks
-        The caller to <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPortGetRequestInfo</a> allocates the <b>STOR_REQUEST_INFO</b> structure. Prior to calling <b>StorPortGetRequestInfo</b>,  <b>Version</b> must be set to <b>STOR_REQUEST_INFO_VER_1</b> and <b>Size</b> must be set to <b>sizeof</b>(STOR_REQUEST_INFO). Otherwise, <b>StorPortGetRequestInfo</b> will return with a status of <b>STOR_STATUS_INVALID_PARAMETER</b>.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="StorIoPriorityCritical"></a><a id="storioprioritycritical"></a><a id="STORIOPRIORITYCRITICAL"></a><dl>
+<dt><b>StorIoPriorityCritical</b></dt>
+<dt>4</dt>
+</dl>
+</td>
+<td width="60%">
+Critical priority.
+
+</td>
+</tr>
+</table>
+
+`Reserved`
+
+Reserved.
+
+`Size`
+
+The size of this structure. Set this value to <b>sizeof</b>(STOR_REQUEST_INFO).
+
+`Version`
+
+The version of this structure. Set this member to <b>STOR_REQUEST_INFO_VER_1</b>.
+
+## Remarks
+The caller to <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPortGetRequestInfo</a> allocates the <b>STOR_REQUEST_INFO</b> structure. Prior to calling <b>StorPortGetRequestInfo</b>,  <b>Version</b> must be set to <b>STOR_REQUEST_INFO_VER_1</b> and <b>Size</b> must be set to <b>sizeof</b>(STOR_REQUEST_INFO). Otherwise, <b>StorPortGetRequestInfo</b> will return with a status of <b>STOR_STATUS_INVALID_PARAMETER</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,13 +220,10 @@ typedef struct _STOR_REQUEST_INFO_V1 {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPortGetRequestInfo</a>
-</dt>
-</dl>
+
  
 
  

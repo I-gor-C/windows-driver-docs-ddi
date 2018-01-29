@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0A44551A-F379-442D-99E9-87231F5FB178
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
+ms.keywords : buses.usbfn_get_attach_action_abort, UsbFnGetAttachActionAbort callback function [Buses], UsbFnGetAttachActionAbort, USBFN_GET_ATTACH_ACTION_ABORT, USBFN_GET_ATTACH_ACTION_ABORT, usbfnattach/UsbFnGetAttachActionAbort, USBFN_SET_DEVICE_STATE callback function [Buses], USBFN_SET_DEVICE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : USBFN_SET_DEVICE_STATE
-req.alt-loc : usbfnattach.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY"
 req.product : Windows 10 or later.
 ---
 
@@ -79,11 +83,8 @@ To support attach and detatch detection, the USB lower filter driver must publis
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/05D2B46A-282C-4B75-9F5C-2FC0AF344AB9">USB filter driver for supporting proprietary chargers</a>
-</dt>
-</dl>
+
  
 
  

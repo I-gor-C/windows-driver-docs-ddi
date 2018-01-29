@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 717ac510-b456-43b9-9500-b07e942f424c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstrmethodhandler, KStrMethodHandler, KStrMethodHandler routine [Streaming Media Devices], KStrMethodHandler, PFNKSHANDLER, PFNKSHANDLER, ks/KStrMethodHandler, ksfunc_53b62198-4059-4715-b405-c6f55d736a09.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrMethodHandler
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -81,6 +85,34 @@ The handler declaration used for <i>KStrMethodHandler</i> and <i>KStrSupportHand
 When a helper function such as <a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a> calls a method handler whose data buffer is defined as a write or modify buffer, the method handler must set the <b>Information</b> member of the IO_STATUS_BLOCK structure for the <b>IoStatus</b> member within the IRP (<i>Irp</i> parameter) to the size of that data buffer. The minidriver sets the <b>Flags</b> member of the KSMETHOD_ITEM structure for the method to KSMETHOD_TYPE_WRITE or KSMETHOD_TYPE_MODIFY to define the method handler's data buffer as write or modify respectively. 
 
 The following code snippet shows an example of an implementation of a method handler that sets the size of the returning data buffer in the IRP:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS 
+  MethodHandler(PIRP pIrp, PKSIDENTIFIER Request, PVOID Data) {
+    NTSTATUS Status = STATUS_UNSUCCESSFUL;
+    // Pointer to hold the position on the Irp stack
+    PIO_STACK_LOCATION  pIrpStack  = NULL; 
+    ASSERT(pIrp);
+    if(Data) {
+        // Modify data here
+    }
+    // Find the current Irp stack.
+    pIrpStack = IoGetCurrentIrpStackLocation(pIrp);
+    if(pIrpStack) {
+        // Set the size of the returning Irp data.
+        pIrp-&gt;IoStatus.Information = 
+          pIrpStack-&gt;Parameters.DeviceIoControl.OutputBufferLength;
+        Status = STATUS_SUCCESS;
+    }
+    return(Status);
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,20 +128,14 @@ The following code snippet shows an example of an implementation of a method han
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
 <a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
-</dt>
-</dl>
+
  
 
  

@@ -59,58 +59,58 @@ typedef struct _RILPOSITIONINFO_V1 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwCntC2KMRL`
+`cbSize`
 
-            
-        
-            `dwCntEUTRAMRL`
 
-            
-        
-            `dwCntGSMNMR`
 
-            
-        
-            `dwCntUMTSMRL`
+`dwCntC2KMRL`
 
-            
-        
-            `dwSystemType`
 
-            
-        
-            `rc2kMRL`
 
-            
-        
-            `reMRL`
+`dwCntEUTRAMRL`
 
-            
-        
-            `rgNMR`
 
-            
-        
-            `ruMRL`
 
-            
-        
-            `stGSMServingCellInfo`
+`dwCntGSMNMR`
 
-            
-        
-            `stLTEServingCellInfo`
 
-            
-        
-            `stUMTSServingCellInfo`
 
-            
+`dwCntUMTSMRL`
+
+
+
+`dwSystemType`
+
+
+
+`rc2kMRL`
+
+
+
+`reMRL`
+
+
+
+`rgNMR`
+
+
+
+`ruMRL`
+
+
+
+`stGSMServingCellInfo`
+
+
+
+`stLTEServingCellInfo`
+
+
+
+`stUMTSServingCellInfo`
+
+
 
 
 ## Requirements

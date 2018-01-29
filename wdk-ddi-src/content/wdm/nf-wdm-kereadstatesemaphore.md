@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e88c89fb-c308-4c6d-a67d-c8f98d539a43
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeReadStateSemaphore
+ms.keywords : kernel.kereadstatesemaphore, KeReadStateSemaphore routine [Kernel-Mode Driver Architecture], wdm/KeReadStateSemaphore, KeReadStateSemaphore, k105_cc608a62-f747-4d8c-a4f8-b6df51a4d5dd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeReadStateSemaphore
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,17 +82,12 @@ For more information about semaphore objects, see <a href="https://msdn.microsof
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kereleasesemaphore.md">KeReleaseSemaphore</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
+
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
  
 
  

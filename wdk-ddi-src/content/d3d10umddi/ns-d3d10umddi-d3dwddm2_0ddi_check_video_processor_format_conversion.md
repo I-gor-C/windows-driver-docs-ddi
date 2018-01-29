@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3259CEB7-E902-4040-B99E-D0609935E804
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION, D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION
+ms.keywords : d3d10umddi/D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION, D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION, D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION structure [Display Devices], display.d3dwddm2_0ddi_check_video_processor_format_conversion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION
 ---
 
@@ -50,26 +54,26 @@ typedef struct D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION {
 
 ## Members
 
-        
-            `InputColorSpace`
 
-            Indicates the colorspace of the video processor input.
-        
-            `InputFormat`
+`InputColorSpace`
 
-            Indicates the format of the video processor input.
-        
-            `OutputColorSpace`
+Indicates the colorspace of the video processor input.
 
-            Indicates the colorspace of the video processor output.
-        
-            `OutputFormat`
+`InputFormat`
 
-            Indicates the format of the video processor output.
-        
-            `Supported`
+Indicates the format of the video processor input.
 
-            The driver sets this to <b>TRUE</b> if the conversion between the input format/color space and the output format/color space is supported.
+`OutputColorSpace`
+
+Indicates the colorspace of the video processor output.
+
+`OutputFormat`
+
+Indicates the format of the video processor output.
+
+`Supported`
+
+The driver sets this to <b>TRUE</b> if the conversion between the input format/color space and the output format/color space is supported.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm2_0ddi_checkvideoprocessorformatconversion.md">CheckVideoProcessorFormatConversion</a>
-</dt>
-</dl>
+
  
 
  

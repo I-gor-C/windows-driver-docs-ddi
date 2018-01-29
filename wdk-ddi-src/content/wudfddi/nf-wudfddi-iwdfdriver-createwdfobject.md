@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9dda353d-7c39-4c3c-b9e2-38946d6cc086
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDriver, IWDFDriver::CreateWdfObject, CreateWdfObject
+ms.keywords : CreateWdfObject, UMDFDriverObjectRef_8ab61a3d-78e3-4d92-8a9c-0eff2837f65f.xml, IWDFDriver::CreateWdfObject, CreateWdfObject method, IWDFDriver, wdf.iwdfdriver_createwdfobject, IWDFDriver interface, CreateWdfObject method, wudfddi/IWDFDriver::CreateWdfObject, CreateWdfObject method, IWDFDriver interface, umdf.iwdfdriver_createwdfobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDriver.CreateWdfObject
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -94,23 +98,16 @@ If the driver must clean up the child object before the parent object is deleted
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
+
+<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+
  
 
  

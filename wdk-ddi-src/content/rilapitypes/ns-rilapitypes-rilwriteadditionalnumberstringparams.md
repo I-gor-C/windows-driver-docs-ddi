@@ -7,8 +7,8 @@ old-location : netvista\rilwriteadditionalnumberstringparams_2.htm
 old-project : netvista
 ms.assetid : d68553ef-a343-4297-b3a3-718747da422d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILWRITEADDITIONALNUMBERSTRINGPARAMS, RILWRITEADDITIONALNUMBERSTRINGPARAMS, *LPRILWRITEADDITIONALNUMBERSTRINGPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILWRITEADDITIONALNUMBERSTRINGPARAMS, *LPRILWRITEADDITIONALNUMBERSTRINGPARAMS, rilapitypes/RILWRITEADDITIONALNUMBERSTRINGPARAMS, netvista.rilwriteadditionalnumberstringparams_2, RILWRITEADDITIONALNUMBERSTRINGPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILWRITEADDITIONALNUMBERSTRINGPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILWRITEADDITIONALNUMBERSTRINGPARAMS, *LPRILWRITEADDITIONALNUMBERSTRINGPARAMS
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _RILWRITEADDITIONALNUMBERSTRINGPARAMS {
 
 ## Members
 
-        
-            `hUiccApp`
 
-            
-        
-            `RilPBANS`
+`hUiccApp`
 
-            
+
+
+`RilPBANS`
+
+
 
 
 ## Requirements

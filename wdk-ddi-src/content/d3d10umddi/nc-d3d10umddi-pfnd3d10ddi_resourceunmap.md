@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fb2b714e-232d-40b2-88ad-ee8dcd70a057
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.resourceunmap, ResourceUnmap callback function [Display Devices], ResourceUnmap, PFND3D10DDI_RESOURCEUNMAP, PFND3D10DDI_RESOURCEUNMAP, d3d10umddi/ResourceUnmap, UserModeDisplayDriverDx10_Functions_473ebdfc-f365-4194-9d52-6338e19ca0d5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ResourceUnmap
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -75,8 +79,7 @@ The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror
 ## Remarks
 
 The driver can call <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a> to set the <b>D3DDDIERR_DEVICEREMOVED</b> error code; however, the driver is not required to set <b>D3DDDIERR_DEVICEREMOVED</b> if the device was removed. Calls to <b>pfnSetErrorCb</b> to set any other error code are critical.
-
-For Windows Display Driver Model (WDDM) 1.3 and later drivers, the Microsoft Direct3D runtime supplies a restricted set of input values used by this function. For a list of all restricted values, see <a href="https://msdn.microsoft.com/F9AAE489-EC45-4EE6-875E-E084BB3054EE">Direct3D rendering performance improvements</a>.
+<h3><a id="Restrictions_on_input_values"></a><a id="restrictions_on_input_values"></a><a id="RESTRICTIONS_ON_INPUT_VALUES"></a>Restrictions on input values</h3>For Windows Display Driver Model (WDDM) 1.3 and later drivers, the Microsoft Direct3D runtime supplies a restricted set of input values used by this function. For a list of all restricted values, see <a href="https://msdn.microsoft.com/F9AAE489-EC45-4EE6-875E-E084BB3054EE">Direct3D rendering performance improvements</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,14 +95,10 @@ For Windows Display Driver Model (WDDM) 1.3 and later drivers, the Microsoft Dir
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-</dl>
+
  
 
  

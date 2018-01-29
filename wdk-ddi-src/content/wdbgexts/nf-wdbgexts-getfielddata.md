@@ -7,8 +7,8 @@ old-location : debugger\getfielddata.htm
 old-project : debugger
 ms.assetid : e60c2288-fe25-4da5-9b17-6e95a30e7c1c
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : GetFieldData
+ms.date : 1/19/2018
+ms.keywords : debugger.getfielddata, GetFieldData function [Windows Debugging], WdbgExts_Ref_898dacb4-308c-4a8f-99e2-030adf2b0eae.xml, wdbgexts/GetFieldData, GetFieldData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFieldData
-req.alt-loc : wdbgexts.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXT_TDOP
 req.product : Windows 10 or later.
 ---

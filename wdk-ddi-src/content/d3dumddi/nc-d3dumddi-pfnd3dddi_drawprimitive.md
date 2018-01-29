@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1a6de2b0-cab0-4fcf-be1b-a8cc1c1f79e9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.drawprimitive, DrawPrimitive callback function [Display Devices], DrawPrimitive, PFND3DDDI_DRAWPRIMITIVE, PFND3DDDI_DRAWPRIMITIVE, d3dumddi/DrawPrimitive, UserModeDisplayDriver_Functions_c433d1f5-68ca-4461-a409-4353d8a581d8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DrawPrimitive
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -88,14 +92,10 @@ When the Microsoft Direct3D runtime specifies triangle-edge flags in the value t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

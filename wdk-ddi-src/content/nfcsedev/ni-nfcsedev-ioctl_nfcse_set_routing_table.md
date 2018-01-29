@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 54B37EC0-C38A-479C-A45F-424963C4D89A
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.keywords : nfpdrivers.ioctl_nfcse_set_routing_table, IOCTL_NFCSE_SET_ROUTING_TABLE control code [Near-Field Proximity Drivers], IOCTL_NFCSE_SET_ROUTING_TABLE, nfcsedev/IOCTL_NFCSE_SET_ROUTING_TABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_NFCSE_SET_ROUTING_TABLE
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_SET_ROUTING_TABLE IOCTL
@@ -59,11 +63,33 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<table>
+<tr>
+<th>Return Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_BUFFER_SIZE</b></td>
+<td>The buffer supplied was greater than NFC controller MAX_ROUTING_TABLE_SIZE.</td>
+</tr>
+<tr>
+<td><b>STATUS_FEATURE_NOT_SUPPORTED</b></td>
+<td>  The NFCC does not support listen mode routing configuration.</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_PARAMETER</b></td>
+<td>This status is returned if the output buffer is non-zero, or values used for technology or protocol is conformant to NFC NCI spec sec 6.3.2, or if duplicate AIDs are used, or when using routing mode that is not supported by current NFC controller capabilities.</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_DEVICE_STATE</b></td>
+<td>This code is returned if the IOCTL is sent on a handle other than with relative name ‘SEManage’.
+</td>
+</tr>
+</table>
 
-    ## Remarks
-        The following are requirements that the driver must adhere to.
+## Remarks
+The following are requirements that the driver must adhere to.
 
 <ul>
 <li>This IOCTL is sent on a handle with a ‘SEManage’ relative file name, otherwise the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.
@@ -77,7 +103,6 @@ I/O Status block
 </li>
 <li>If this IOCTL is issued when the NFCC is in RF discovery state, the driver needs to put the NFCC into RF idle state, configure the routing table, and restart RF discovery.</li>
 </ul>
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

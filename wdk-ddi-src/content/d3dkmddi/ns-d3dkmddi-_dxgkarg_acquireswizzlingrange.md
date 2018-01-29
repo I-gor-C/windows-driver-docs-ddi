@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 865f4d08-f2b3-4922-956f-2c49aa4e68b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_ACQUIRESWIZZLINGRANGE, DXGKARG_ACQUIRESWIZZLINGRANGE, *INOUT_PDXGKARG_ACQUIRESWIZZLINGRANGE
+ms.keywords : DXGKARG_ACQUIRESWIZZLINGRANGE structure [Display Devices], d3dkmddi/DXGKARG_ACQUIRESWIZZLINGRANGE, display.dxgkarg_acquireswizzlingrange, DXGKARG_ACQUIRESWIZZLINGRANGE, *INOUT_PDXGKARG_ACQUIRESWIZZLINGRANGE, _DXGKARG_ACQUIRESWIZZLINGRANGE, DmStructs_761fb707-877a-455c-b5cd-0c2e2b050aea.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_ACQUIRESWIZZLINGRANGE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_ACQUIRESWIZZLINGRANGE
 ---
 
@@ -51,30 +55,30 @@ typedef struct _DXGKARG_ACQUIRESWIZZLINGRANGE {
 
 ## Members
 
-        
-            `CPUTranslatedAddress`
 
-            [in/out] The base physical address where the CPU should map the allocation. The display miniport driver must set this information when a call to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function succeeds.
-        
-            `hAllocation`
+`CPUTranslatedAddress`
 
-            [in] A handle to the allocation that the display miniport driver assigned and that is returned through its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function.
-        
-            `PrivateDriverData`
+[in/out] The base physical address where the CPU should map the allocation. The display miniport driver must set this information when a call to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function succeeds.
 
-            [in] A UINT value of private data that the user-mode display driver sends when it calls the Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function. The private data should be an index that lets the display miniport driver determine the accessible part of the allocation (for example, the MIP level). This member should not contain a pointer.
-        
-            `RangeId`
+`hAllocation`
 
-            [in] The zero-based identifier of the swizzling range that the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function programs.
-        
-            `RangeSize`
+[in] A handle to the allocation that the display miniport driver assigned and that is returned through its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function.
 
-            [in] The size, in bytes, of the range to acquire. This range size is identical to the size of the allocation that <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> acquires a range for. The driver can modify the value in <b>RangeSize</b> when the <b>UseAlternateVA</b> bit-field flag is specified in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function. If the <b>UseAlternateVA</b> flag is not specified, the driver cannot change <b>RangeSize</b>.
-        
-            `SegmentId`
+`PrivateDriverData`
 
-            [in] The identifier of a segment in which the allocation is currently paged.
+[in] A UINT value of private data that the user-mode display driver sends when it calls the Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function. The private data should be an index that lets the display miniport driver determine the accessible part of the allocation (for example, the MIP level). This member should not contain a pointer.
+
+`RangeId`
+
+[in] The zero-based identifier of the swizzling range that the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function programs.
+
+`RangeSize`
+
+[in] The size, in bytes, of the range to acquire. This range size is identical to the size of the allocation that <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> acquires a range for. The driver can modify the value in <b>RangeSize</b> when the <b>UseAlternateVA</b> bit-field flag is specified in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function. If the <b>UseAlternateVA</b> flag is not specified, the driver cannot change <b>RangeSize</b>.
+
+`SegmentId`
+
+[in] The identifier of a segment in which the allocation is currently paged.
 
 
 ## Requirements
@@ -85,22 +89,16 @@ typedef struct _DXGKARG_ACQUIRESWIZZLINGRANGE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
+
  
 
  

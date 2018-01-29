@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 234907d8-d21e-4303-9508-0673afa471a6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltUnloadFilter
+ms.keywords : FltUnloadFilter, FltUnloadFilter function [Installable File System Drivers], ifsk.fltunloadfilter, FltApiRef_p_to_z_88925df3-96d3-4e1f-9e0b-f97eb8d9b40b.xml, fltkernel/FltUnloadFilter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltUnloadFilter
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -56,12 +60,34 @@ Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</
 ## Return Value
 
 <b>FltUnloadFilter</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>A matching minifilter driver was found, but it is already being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+A matching minifilter driver was found, but it is already being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_FILTER_NOT_FOUND</b></dt>
-</dl>No matching minifilter driver was found. This is an error code.
+</dl>
+</td>
+<td width="60%">
+No matching minifilter driver was found. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -85,17 +111,12 @@ A minifilter driver cannot call <b>FltUnloadFilter</b> to unload itself.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltloadfilter.md">FltLoadFilter</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_filter_unload_callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltloadfilter.md">FltLoadFilter</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

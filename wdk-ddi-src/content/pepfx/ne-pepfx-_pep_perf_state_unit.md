@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5E5F049D-4306-4382-B3F7-06C1F5FFE93E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PERF_STATE_UNIT, PEP_PERF_STATE_UNIT, *PPEP_PERF_STATE_UNIT
+ms.keywords : pepfx/PEP_PERF_STATE_UNIT, pepfx/PepPerfStateUnitMax, PepPerfStateUnitMax, PEP_PERF_STATE_UNIT, *PPEP_PERF_STATE_UNIT, PepPerfStateUnitFrequency, _PEP_PERF_STATE_UNIT, PepPerfStateUnitBandwidth, pepfx/PepPerfStateUnitOther, kernel.pep_perf_state_unit, PEP_PERF_STATE_UNIT enumeration [Kernel-Mode Driver Architecture], pepfx/PepPerfStateUnitBandwidth, PepPerfStateUnitOther, pepfx/PepPerfStateUnitFrequency
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PERF_STATE_UNIT
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
-req.typenames : PEP_PERF_STATE_UNIT, *PPEP_PERF_STATE_UNIT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_PERF_STATE_UNIT, PEP_PERF_STATE_UNIT"
 ---
 
 # _PEP_PERF_STATE_UNIT Enumeration
@@ -86,11 +90,8 @@ The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_component_perf_set
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_component_perf_set.md">PEP_COMPONENT_PERF_SET</a>
-</dt>
-</dl>
+
  
 
  

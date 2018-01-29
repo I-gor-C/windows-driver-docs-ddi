@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 19e40a1b-fcbf-4510-a7c0-aa9a61f2f651
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FcpScsiEntry, *PHBA_FCPSCSIENTRY, HBA_FCPSCSIENTRY
+ms.keywords : HBA_FcpScsiEntry, hbaapi/HBA_FcpScsiEntry, HBA_FCPSCSIENTRY structure [Storage Devices], storage.hba_fcpscsientry, PHBA_FCPSCSIENTRY structure pointer [Storage Devices], hbaapi/PHBA_FCPSCSIENTRY, PHBA_FCPSCSIENTRY, *PHBA_FCPSCSIENTRY, structs-Fibre_32b32b55-43e6-484c-a7fb-5c477864b735.xml, HBA_FCPSCSIENTRY, HBA_FcpScsiEntry structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_FCPSCSIENTRY
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHBA_FCPSCSIENTRY, HBA_FCPSCSIENTRY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HBA_FCPSCSIENTRY, *PHBA_FCPSCSIENTRY
 ---
 
 # HBA_FcpScsiEntry structure
@@ -47,14 +51,14 @@ typedef struct HBA_FcpScsiEntry {
 
 ## Members
 
-        
-            `FcpId`
 
-            Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network.
-        
-            `ScsiId`
+`FcpId`
 
-            Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device.
+Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network.
+
+`ScsiId`
+
+Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct HBA_FcpScsiEntry {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
+
  
 
  

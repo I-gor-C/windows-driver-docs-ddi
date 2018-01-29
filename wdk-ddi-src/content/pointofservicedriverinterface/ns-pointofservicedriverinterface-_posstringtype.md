@@ -7,8 +7,8 @@ old-location : pos\posstringtype.htm
 old-project : pos
 ms.assetid : 26cf79d7-1df3-40a3-8536-b672f9bf13a8
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosStringType, PosStringType
+ms.date : 1/18/2018
+ms.keywords : pos.posstringtype, pointofservicedriverinterface/PosStringType, _PosStringType, PosStringType structure, PosStringType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosStringType
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosStringType
 ---
 
@@ -46,13 +50,13 @@ typedef struct _PosStringType {
 
 ## Members
 
-        
-            `DataLengthInBytes`
 
-            The length of the string in bytes.
+`DataLengthInBytes`
 
-    ## Remarks
-        The string is Unicode and the contents of the string follow immediately after the PosStringType structure.</p>
+The length of the string in bytes.
+
+## Remarks
+The string is Unicode and the contents of the string follow immediately after the PosStringType structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -7,8 +7,8 @@ old-location : netvista\rilcallvideomediastateparammask.htm
 old-project : netvista
 ms.assetid : e36617c0-8471-417d-9135-bdd29c586172
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLVIDEOMEDIASTATEPARAMMASK, RILCALLVIDEOMEDIASTATEPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_CALLVIDEO_ALL, RILCALLVIDEOMEDIASTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_CALLVIDEO_ALL, ntddrilapitypes/RIL_PARAM_CALLVIDEO_FLAGS, RIL_PARAM_CALLVIDEO_CONTEXTID, ntddrilapitypes/RILCALLVIDEOMEDIASTATEPARAMMASK, ntddrilapitypes/RIL_PARAM_CALLVIDEO_CONTEXTID, RILCALLVIDEOMEDIASTATEPARAMMASK, netvista.rilcallvideomediastateparammask, RIL_PARAM_CALLVIDEO_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLVIDEOMEDIASTATEPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLVIDEOMEDIASTATEPARAMMASK
 ---
 
@@ -62,6 +66,11 @@ typedef enum _RILCALLVIDEOMEDIASTATEPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_CALLVIDEO_FLAGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_CALLVIDEO_PEERCAPABILITIES</td>
 <td></td>
 </tr>
 </table>

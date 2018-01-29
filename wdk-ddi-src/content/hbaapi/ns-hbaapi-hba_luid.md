@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : af272e27-6cb4-4f87-9c46-512ac80fa310
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_LUID, *PHBA_LUID, HBA_LUID
+ms.keywords : HBA_LUID structure [Storage Devices], hbaapi/PHBA_LUID, PHBA_LUID structure pointer [Storage Devices], PHBA_LUID, storage.hba_luid, HBA_LUID, *PHBA_LUID, hbaapi/HBA_LUID, structs-Fibre_32d9473b-e356-41cc-9352-7a142fc3dcc7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_LUID
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHBA_LUID, HBA_LUID"
 ---
 
@@ -46,13 +50,13 @@ typedef struct HBA_LUID {
 
 ## Members
 
-        
-            `buffer`
 
-            Contains a buffer that holds the identification descriptor.
+`buffer`
 
-    ## Remarks
-        A vendor specific LUID is not guaranteed to be unique or persistent.
+Contains a buffer that holds the identification descriptor.
+
+## Remarks
+A vendor specific LUID is not guaranteed to be unique or persistent.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct HBA_LUID {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_fcpbindingentry2.md">HBA_FCPBindingEntry2</a>
-</dt>
-<dt>
+
 <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientryv2.md">HBA_FcpScsiEntryV2</a>
-</dt>
-</dl>
+
  
 
  

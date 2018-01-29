@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0BDC6629-9C0E-4437-888D-1EF730714CA4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PsUpdateDiskCounters
+ms.keywords : ifsk.psupdatediskcounters, PsUpdateDiskCounters, ntifs/PsUpdateDiskCounters, PsUpdateDiskCounters routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsUpdateDiskCounters
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -100,11 +104,8 @@ File system drivers use <b>PsUpdateDiskCounters</b> to update counts for disk I/
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-psisdiskcountersenabled.md">PsIsDiskCountersEnabled</a>
-</dt>
-</dl>
+
  
 
  

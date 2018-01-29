@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : b3d23404-2d55-4a37-8c4c-d857c5307f18
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST
+ms.keywords : SD.psdbus_acknowledge_int_routine, AcknowledgeInterrupt callback function [Buses], AcknowledgeInterrupt, PSDBUS_ACKNOWLEDGE_INT_ROUTINE, PSDBUS_ACKNOWLEDGE_INT_ROUTINE, ntddsd/AcknowledgeInterrupt, sd-rtns_9197189b-4b46-4ab6-aa7b-df880985241b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AcknowledgeInterrupt
-req.alt-loc : ntddsd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL (See Remarks section.)
-req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
 ---
 
 
@@ -82,14 +86,10 @@ The caller must be running at IRQL &lt;= DISPATCH_LEVEL when it acknowledges tha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a>
-</dt>
-</dl>
+
  
 
  

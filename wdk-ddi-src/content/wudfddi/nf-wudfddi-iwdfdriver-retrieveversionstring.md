@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2fa320df-bafd-42f4-a0a1-14151c39d68a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDriver, IWDFDriver::RetrieveVersionString, RetrieveVersionString
+ms.keywords : RetrieveVersionString method, IWDFDriver interface, RetrieveVersionString method, RetrieveVersionString method, IWDFDriver interface, IWDFDriver, wdf.iwdfdriver_retrieveversionstring, RetrieveVersionString, wudfddi/IWDFDriver::RetrieveVersionString, IWDFDriver::RetrieveVersionString, umdf.iwdfdriver_retrieveversionstring, UMDFDriverObjectRef_fea0fb04-a861-44b6-8552-150454f9933d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDriver.RetrieveVersionString
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -82,11 +86,6 @@ The buffer at <i>pVersion</i> was <b>NULL</b>, the driver preset the variable at
 </li>
 </ul><b>RetrieveVersionString</b> returns HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER) to indicate that the supplied buffer is non-<b>NULL</b> and did not contain enough space to hold the version. The framework sets the variable at <i>pdwVersionLength</i> to the number of characters that are required for the string.
 
-
-
-The buffer that the <i>pVersion</i> parameter points to was non-<b>NULL</b> and large enough to hold the version string, including the <b>NULL</b> character. In addition, the framework successfully copied the string into the supplied buffer and set the variable that is pointed to by the <i>pdwVersionLength</i> parameter to the number of characters in the string.
-
-The buffer at <i>pVersion</i> was <b>NULL</b>, the driver preset the variable at <i>pdwVersionLength</i> to 0, and the framework set the variable at <i>pdwVersionLength</i> to the number of characters that are required for the string. 
 
 
 <b>RetrieveVersionString</b> might also return other HRESULT values.

@@ -7,8 +7,8 @@ old-location : debugger\debug_stack_frame_ex.htm
 old-project : debugger
 ms.assetid : EC0AF311-7BFC-4E2E-A1B1-FE38872B7FA2
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _DEBUG_STACK_FRAME_EX, *PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX
+ms.date : 1/19/2018
+ms.keywords : DEBUG_STACK_FRAME_EX, dbgeng/DEBUG_STACK_FRAME_EX, PDEBUG_STACK_FRAME_EX structure pointer [Windows Debugging], _DEBUG_STACK_FRAME_EX, PDEBUG_STACK_FRAME_EX, *PDEBUG_STACK_FRAME_EX, debugger.debug_stack_frame_ex, dbgeng/PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX structure [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEBUG_STACK_FRAME_EX
-req.alt-loc : DbgEng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX"
 ---
 
@@ -56,50 +60,50 @@ typedef struct _DEBUG_STACK_FRAME_EX {
 
 ## Members
 
-        
-            `FrameNumber`
 
-            The index of the frame.  This index counts the number of frames from the top of the call stack.  The frame at the top of the stack, representing the current call, has index zero.
-        
-            `FrameOffset`
+`FrameNumber`
 
-            The location in the process's virtual address space of the stack frame, if known.  Some processor architectures do not have a frame or have more than one.  In these cases, the engine chooses a value most representative for the given level of the stack.
-        
-            `FuncTableEntry`
+The index of the frame.  This index counts the number of frames from the top of the call stack.  The frame at the top of the stack, representing the current call, has index zero.
 
-            The location in the target's virtual address space of the function entry for this frame, if available. When set, this pointer is not guaranteed to remain valid indefinitely and should not be held for future use.  Instead, save the value of <b>InstructionOffset</b> and use it with <a href="https://msdn.microsoft.com/6b1fa9fc-f033-4d93-a2ec-f31159d6a69d">IDebugSymbols3::GetFunctionEntryByOffset</a> to retrieve function entry information later.
-        
-            `InlineFrameContext`
+`FrameOffset`
 
-            Inline frame context.
-        
-            `InstructionOffset`
+The location in the process's virtual address space of the stack frame, if known.  Some processor architectures do not have a frame or have more than one.  In these cases, the engine chooses a value most representative for the given level of the stack.
 
-            The location in the process's virtual address space of the related instruction for the stack frame.  This is typically the return address for the next stack frame, or the current instruction pointer if the frame is at the top of the stack.
-        
-            `Params`
+`FuncTableEntry`
 
-            The values of the first four stack slots that are passed to the function, if available.  If there are less than four arguments, the remaining entries are set to zero.  These stack slots are not guaranteed to contain parameter values.  Some calling conventions and compiler optimizations might interfere with identification of parameter information.  For more detailed argument information and proper location handling, use <a href="https://msdn.microsoft.com/002af3f1-4879-40e9-a5c6-bf62a3b26e02">IDebugSymbols::GetScopeSymbolGroup</a> to retrieve the actual parameter symbols.
-        
-            `Reserved`
+The location in the target's virtual address space of the function entry for this frame, if available. When set, this pointer is not guaranteed to remain valid indefinitely and should not be held for future use.  Instead, save the value of <b>InstructionOffset</b> and use it with <a href="https://msdn.microsoft.com/6b1fa9fc-f033-4d93-a2ec-f31159d6a69d">IDebugSymbols3::GetFunctionEntryByOffset</a> to retrieve function entry information later.
 
-            Reserved for future use. Set to NULL.
-        
-            `Reserved1`
+`InlineFrameContext`
 
-            Used for alignment purposes. Set to 0.
-        
-            `ReturnOffset`
+Inline frame context.
 
-            The location in the process's virtual address space of the return address for the stack frame.  This is typically the related instruction for the previous stack frame.
-        
-            `StackOffset`
+`InstructionOffset`
 
-            The location in the process's virtual address space of the processor stack.
-        
-            `Virtual`
+The location in the process's virtual address space of the related instruction for the stack frame.  This is typically the return address for the next stack frame, or the current instruction pointer if the frame is at the top of the stack.
 
-            The value is set to <b>TRUE</b> if this stack frame was generated by the debugger by unwinding.  Otherwise, the value is <b>FALSE</b> if it was formed from a thread's current context.  Typically, this is <b>TRUE</b> for the frame at the top of the stack, where <b>InstructionOffset</b> is the current instruction pointer.
+`Params`
+
+The values of the first four stack slots that are passed to the function, if available.  If there are less than four arguments, the remaining entries are set to zero.  These stack slots are not guaranteed to contain parameter values.  Some calling conventions and compiler optimizations might interfere with identification of parameter information.  For more detailed argument information and proper location handling, use <a href="https://msdn.microsoft.com/002af3f1-4879-40e9-a5c6-bf62a3b26e02">IDebugSymbols::GetScopeSymbolGroup</a> to retrieve the actual parameter symbols.
+
+`Reserved`
+
+Reserved for future use. Set to NULL.
+
+`Reserved1`
+
+Used for alignment purposes. Set to 0.
+
+`ReturnOffset`
+
+The location in the process's virtual address space of the return address for the stack frame.  This is typically the related instruction for the previous stack frame.
+
+`StackOffset`
+
+The location in the process's virtual address space of the processor stack.
+
+`Virtual`
+
+The value is set to <b>TRUE</b> if this stack frame was generated by the debugger by unwinding.  Otherwise, the value is <b>FALSE</b> if it was formed from a thread's current context.  Typically, this is <b>TRUE</b> for the frame at the top of the stack, where <b>InstructionOffset</b> is the current instruction pointer.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 85035147-0ae8-482a-9a12-1e4e53ae1969
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CHANGER_ELEMENT, CHANGER_ELEMENT, *PCHANGER_ELEMENT
+ms.keywords : _CHANGER_ELEMENT, storage.changer_element, structs-changer_b1685d99-20ff-495d-a9e3-c63571559106.xml, CHANGER_ELEMENT structure [Storage Devices], PCHANGER_ELEMENT structure pointer [Storage Devices], *PCHANGER_ELEMENT, CHANGER_ELEMENT, ntddchgr/CHANGER_ELEMENT, ntddchgr/PCHANGER_ELEMENT, PCHANGER_ELEMENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CHANGER_ELEMENT
-req.alt-loc : ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CHANGER_ELEMENT, *PCHANGER_ELEMENT
 ---
 
@@ -47,17 +51,17 @@ typedef struct _CHANGER_ELEMENT {
 
 ## Members
 
-        
-            `ElementAddress`
 
-            Indicates the element's zero-based address used by the system. A changer miniclass driver is responsible for translating this address to the device-specific address used by the changer.
-        
-            `ElementType`
+`ElementAddress`
 
-            Indicates the type of element. Can be one of the following values taken from the <a href="..\ntddchgr\ne-ntddchgr-_element_type.md">ELEMENT_TYPE</a> enumeration.
+Indicates the element's zero-based address used by the system. A changer miniclass driver is responsible for translating this address to the device-specific address used by the changer.
 
-    ## Remarks
-        CHANGER_ELEMENT is used by both the changer class driver and a changer miniclass driver to describe a changer element. 
+`ElementType`
+
+Indicates the type of element. Can be one of the following values taken from the <a href="..\ntddchgr\ne-ntddchgr-_element_type.md">ELEMENT_TYPE</a> enumeration.
+
+## Remarks
+CHANGER_ELEMENT is used by both the changer class driver and a changer miniclass driver to describe a changer element. 
 
 On input, a changer miniclass driver must translate the zero-based address in <b>ElementAddress</b> to a device-specific address before accessing the element. On output, the driver must translate a device-specific address to the zero-based equivalent before filling in <b>ElementAddress</b>.
 
@@ -69,19 +73,14 @@ On input, a changer miniclass driver must translate the zero-based address in <b
 | **Minimum UMDF version** |  |
 | **Header** | ntddchgr.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element_list.md">CHANGER_ELEMENT_LIST</a>
-</dt>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element_status.md">CHANGER_ELEMENT_STATUS</a>
-</dt>
-<dt>
 <a href="..\ntddchgr\ne-ntddchgr-_element_type.md">ELEMENT_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element_status.md">CHANGER_ELEMENT_STATUS</a>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element_list.md">CHANGER_ELEMENT_LIST</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4DCC4A37-0099-4C6F-B00D-B6CAA7D1EC68
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetShareAccessEx
+ms.keywords : wdm/IoSetShareAccessEx, kernel.iosetshareaccessex, IoSetShareAccessEx routine [Kernel-Mode Driver Architecture], IoSetShareAccessEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetShareAccessEx
-req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -61,20 +65,11 @@ Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff5404
 
 Specifies the type of share access to be set for the file object. This value can be zero, or any combination of the following flags:
 
-<dl>
-<dd>
 FILE_SHARE_READ
 
-</dd>
-<dd>
 FILE_SHARE_WRITE
 
-</dd>
-<dd>
 FILE_SHARE_DELETE
-
-</dd>
-</dl>
 
 `FileObject`
 
@@ -108,14 +103,10 @@ None.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
  
 
  

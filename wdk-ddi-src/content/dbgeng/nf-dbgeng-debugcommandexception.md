@@ -7,8 +7,8 @@ old-location : debugger\debugcommandexception.htm
 old-project : debugger
 ms.assetid : 6DC67840-B985-45D0-8E81-671C3DC1EBC2
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DebugCommandException
+ms.date : 1/19/2018
+ms.keywords : DebugCommandException, debugger.debugcommandexception, dbgeng/DebugCommandException, DebugCommandException function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DebugCommandException
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 

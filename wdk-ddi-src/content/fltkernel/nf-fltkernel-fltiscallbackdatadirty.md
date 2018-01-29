@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 128cab09-cbce-4a6f-9c57-5c8eda4477b3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltIsCallbackDataDirty
+ms.keywords : fltkernel/FltIsCallbackDataDirty, FltIsCallbackDataDirty routine [Installable File System Drivers], FltIsCallbackDataDirty, FltApiRef_e_to_o_89035d79-bcf8-4f8d-8030-8a805e1a44df.xml, ifsk.fltiscallbackdatadirty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltIsCallbackDataDirty
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -77,17 +81,12 @@ To clear a callback data structure's FLTFL_CALLBACK_DATA_DIRTY flag, call <a hre
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltclearcallbackdatadirty.md">FltClearCallbackDataDirty</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
-</dt>
-</dl>
+
  
 
  

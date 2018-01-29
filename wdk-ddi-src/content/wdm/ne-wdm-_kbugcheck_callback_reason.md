@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 08246843-9b6e-4694-8475-acb02fbdd82b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KBUGCHECK_CALLBACK_REASON, KBUGCHECK_CALLBACK_REASON
+ms.keywords : KbCallbackDumpIo, KbCallbackInvalid, KbCallbackReserved1, kernel.kbugcheck_callback_reason, wdm/KbCallbackSecondaryDumpData, wdm/KbCallbackInvalid, wdm/KbCallbackAddPages, sysenum_e8373f57-7ba5-44ad-9ad9-4110710732ee.xml, KbCallbackSecondaryDumpData, wdm/KbCallbackReserved1, KBUGCHECK_CALLBACK_REASON enumeration [Kernel-Mode Driver Architecture], wdm/KBUGCHECK_CALLBACK_REASON, KBUGCHECK_CALLBACK_REASON, wdm/KbCallbackDumpIo, KbCallbackAddPages, _KBUGCHECK_CALLBACK_REASON
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported on Windows XP with Service Pack 1 (SP1),
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KBUGCHECK_CALLBACK_REASON
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KBUGCHECK_CALLBACK_REASON
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,11 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 </tr>
 
 <tr>
+<td>KbCallbackRemovePages</td>
+<td></td>
+</tr>
+
+<tr>
 <td>KbCallbackReserved1</td>
 <td>Reserved for system use. Do not use.</td>
 </tr>
@@ -76,6 +85,11 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 <tr>
 <td>KbCallbackSecondaryDumpData</td>
 <td>Specifies that the callback is executed to provide data that the system appends to the secondary section of the crash dump file. For more information about this type of callback, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>.</td>
+</tr>
+
+<tr>
+<td>KbCallbackSecondaryMultiPartDumpData</td>
+<td></td>
 </tr>
 </table>
 
@@ -90,23 +104,16 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
+
  
 
  

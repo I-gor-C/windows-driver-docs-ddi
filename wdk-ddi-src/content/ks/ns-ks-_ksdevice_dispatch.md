@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1ae7af1d-5e1c-4728-82c5-efc8d60b5df6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSDEVICE_DISPATCH, KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH
+ms.keywords : PKSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, ks/PKSDEVICE_DISPATCH, KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices], stream.ksdevice_dispatch, _KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDEVICE_DISPATCH
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH
 ---
 
@@ -60,8 +64,8 @@ typedef struct _KSDEVICE_DISPATCH {
 ## Members
 
 
-    ## Remarks
-        In describing a device with the <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a> structure, clients include a pointer to a dispatch table defined by this structure. Any member of this structure may be <b>NULL</b> indicating that the minidriver receives no notification for that particular message.
+## Remarks
+In describing a device with the <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a> structure, clients include a pointer to a dispatch table defined by this structure. Any member of this structure may be <b>NULL</b> indicating that the minidriver receives no notification for that particular message.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -71,13 +75,10 @@ typedef struct _KSDEVICE_DISPATCH {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

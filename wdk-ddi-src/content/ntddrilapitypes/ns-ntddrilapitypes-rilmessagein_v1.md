@@ -7,8 +7,8 @@ old-location : netvista\rilmessagein_v1.htm
 old-project : netvista
 ms.assetid : c9de99e4-556c-4b3b-a442-53fc52553d3d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMESSAGEIN_V1, RILMESSAGEIN_V1
+ms.date : 1/18/2018
+ms.keywords : RILMESSAGEIN_V1 structure [Network Drivers Starting with Windows Vista], netvista.rilmessagein_v1, ntddrilapitypes/RILMESSAGEIN_V1, RILMESSAGEIN_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMESSAGEIN_V1
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMESSAGEIN_V1
 ---
 
@@ -50,26 +54,26 @@ typedef struct _RILMESSAGEIN_V1 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwAckID`
+`cbSize`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `hUiccApp`
 
-            
-        
-            `rm`
+`dwAckID`
 
-            
+
+
+`dwExecutor`
+
+
+
+`hUiccApp`
+
+
+
+`rm`
+
+
 
 
 ## Requirements

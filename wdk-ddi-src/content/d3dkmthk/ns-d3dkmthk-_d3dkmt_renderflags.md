@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6a25528c-063b-4cd5-963d-82245009bb48
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_RENDERFLAGS, D3DKMT_RENDERFLAGS
+ms.keywords : D3DKMT_RENDERFLAGS structure [Display Devices], _D3DKMT_RENDERFLAGS, D3DKMT_RENDERFLAGS, OpenGL_Structs_8a885a03-0eba-4119-973a-a1c1dafe3c10.xml, d3dkmthk/D3DKMT_RENDERFLAGS, display.d3dkmt_renderflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_RENDERFLAGS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_RENDERFLAGS
 ---
 
@@ -52,46 +56,50 @@ typedef struct _D3DKMT_RENDERFLAGS {
 
 ## Members
 
-        
-            `NullRendering`
 
-            A UINT value that specifies whether the graphics processing unit (GPU) should process any commands for the rendering context. The <b>NullRendering</b> bit-field flag is set to inform the GPU not to process any commands for the rendering context. The <b>NullRendering</b> bit-field flag is set only during performance investigating and debugging to simulate an infinitely fast rendering engine that still must perform the overhead of DMA buffer submission and signaling. <b>NullRendering</b> is never set during typical operations. 
+`NullRendering`
+
+A UINT value that specifies whether the graphics processing unit (GPU) should process any commands for the rendering context. The <b>NullRendering</b> bit-field flag is set to inform the GPU not to process any commands for the rendering context. The <b>NullRendering</b> bit-field flag is set only during performance investigating and debugging to simulate an infinitely fast rendering engine that still must perform the overhead of DMA buffer submission and signaling. <b>NullRendering</b> is never set during typical operations. 
 
 Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).
-        
-            `PresentRedirected`
 
-            A UINT value that specifies whether to redirect the present command. The command contains a completion of one frame even though the command was completed in the OpenGl ICD.
+`PresentRedirected`
+
+A UINT value that specifies whether to redirect the present command. The command contains a completion of one frame even though the command was completed in the OpenGl ICD.
 
 Setting this member is equivalent to setting the fifth bit of a 32-bit value (0x00000010).
-        
-            `RenderKm`
 
-            Supported in Windows 7 and later versions.
+`RenderKm`
+
+Supported in Windows 7 and later versions.
 
 A UINT value that specifies whether the OpenGL ICD supplies a pointer to the command buffer to be rendered in the ICD's call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. If this flag is set, the runtime does not call the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a> function. If this flag is set, the runtime calls the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRenderKm</a> function. 
 
 Setting this member is equivalent to setting the sixth bit of a 32-bit value (0x00000020).
-        
-            `Reserved`
 
-            This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 26 bits (0xFFFFFFC0) of a 32-bit value to zeros.
-        
-            `ResizeAllocationList`
+`RenderKmReadback`
 
-            A UINT value that specifies whether to resize the allocation list. The driver puts the requested number of elements in the <b>NewAllocationListSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.
+
+
+`Reserved`
+
+This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 26 bits (0xFFFFFFC0) of a 32-bit value to zeros.
+
+`ResizeAllocationList`
+
+A UINT value that specifies whether to resize the allocation list. The driver puts the requested number of elements in the <b>NewAllocationListSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.
 
 Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).
-        
-            `ResizeCommandBuffer`
 
-            A UINT value that specifies whether to resize the command buffer. The driver puts the requested size in the <b>NewCommandBufferSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.
+`ResizeCommandBuffer`
+
+A UINT value that specifies whether to resize the command buffer. The driver puts the requested size in the <b>NewCommandBufferSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.
 
 Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).
-        
-            `ResizePatchLocationList`
 
-            A UINT value that specifies whether to resize the patch-location list. The driver puts the requested number of elements in the <b>NewPatchLocationListSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.
+`ResizePatchLocationList`
+
+A UINT value that specifies whether to resize the patch-location list. The driver puts the requested number of elements in the <b>NewPatchLocationListSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.
 
 Setting this member is equivalent to setting the third bit of a 32-bit value (0x00000004).
 
@@ -104,13 +112,10 @@ Setting this member is equivalent to setting the third bit of a 32-bit value (0x
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_render.md">D3DKMT_RENDER</a>
-</dt>
-</dl>
+
  
 
  

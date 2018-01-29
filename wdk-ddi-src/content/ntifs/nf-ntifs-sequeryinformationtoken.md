@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 97e28b53-8b4c-4f76-b6bb-21dad2233463
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeQueryInformationToken
+ms.keywords : seref_80e09bda-ef06-4a25-ab50-d405f5539759.xml, SeQueryInformationToken routine [Installable File System Drivers], SeQueryInformationToken, ntifs/SeQueryInformationToken, ifsk.sequeryinformationtoken
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeQueryInformationToken
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -69,10 +73,9 @@ If STATUS_SUCCESS is returned,
 	  <b>SeQueryInformationToken</b> 
 	  from paged pool. This buffer must eventually be freed by the caller by 
 	  using either 
-	  <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or 
+	  <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or 
 	  <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.
 	  
-
 <table>
 <tr>
 <th>Value</th>
@@ -203,12 +206,34 @@ The buffer receives a <b>DWORD</b> value (not a pointer to it) that specifies th
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The call to <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> succeeded.
+</dl>
+</td>
+<td width="60%">
+The call to <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
-</dl>An invalid value was supplied for <i>TokenInformationClass</i>.
+</dl>
+</td>
+<td width="60%">
+An invalid value was supplied for <i>TokenInformationClass</i>. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -228,62 +253,42 @@ For more information about security and access control, see the documentation ab
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
-</dt>
-<dt>
-<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
-</dt>
-<dt>
-<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_privileges.md">TOKEN_PRIVILEGES</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
-</dt>
-<dt>
-<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a>
+
+<a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>
+
+<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
+
+<a href="..\ntifs\ns-ntifs-_token_privileges.md">TOKEN_PRIVILEGES</a>
+
+<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
+
+<a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a>
+
+<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
+
+<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
+
+<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
+
+<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
+
+<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
+
+<a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a>
+
+<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
+
+<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
+
+<a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D653607A-7C37-408D-AD19-B4A8988CDACE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _MM_PHYSICAL_ADDRESS_LIST, *PMM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST
+ms.keywords : _MM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST structure [Kernel-Mode Driver Architecture], wdm/MM_PHYSICAL_ADDRESS_LIST, *PMM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST, PMM_PHYSICAL_ADDRESS_LIST, wdm/PMM_PHYSICAL_ADDRESS_LIST, PMM_PHYSICAL_ADDRESS_LIST structure pointer [Kernel-Mode Driver Architecture], kernel.mm_physical_address_list
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MM_PHYSICAL_ADDRESS_LIST
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PMM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MM_PHYSICAL_ADDRESS_LIST, *PMM_PHYSICAL_ADDRESS_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -48,17 +52,17 @@ typedef struct _MM_PHYSICAL_ADDRESS_LIST {
 
 ## Members
 
-        
-            `NumberOfBytes`
 
-            The number of bytes in the range. This member must be nonzero and an integer multiple of the memory page size.
-        
-            `PhysicalAddress`
+`NumberOfBytes`
 
-            The starting physical address of the range. This address must be aligned to a page boundary in physical memory.
+The number of bytes in the range. This member must be nonzero and an integer multiple of the memory page size.
 
-    ## Remarks
-        The first parameter to the <a href="..\wdm\nf-wdm-mmallocatemdlforiospace.md">MmAllocateMdlForIoSpace</a> routine is a pointer to an array of <b>MM_PHYSICAL_ADDRESS_LIST</b> structures.
+`PhysicalAddress`
+
+The starting physical address of the range. This address must be aligned to a page boundary in physical memory.
+
+## Remarks
+The first parameter to the <a href="..\wdm\nf-wdm-mmallocatemdlforiospace.md">MmAllocateMdlForIoSpace</a> routine is a pointer to an array of <b>MM_PHYSICAL_ADDRESS_LIST</b> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,13 +72,10 @@ typedef struct _MM_PHYSICAL_ADDRESS_LIST {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmallocatemdlforiospace.md">MmAllocateMdlForIoSpace</a>
-</dt>
-</dl>
+
  
 
  

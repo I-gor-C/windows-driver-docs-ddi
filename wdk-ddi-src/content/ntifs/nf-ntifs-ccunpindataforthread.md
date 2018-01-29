@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9c29689c-ce5e-4b29-a17b-32d96f8f87e7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcUnpinDataForThread
+ms.keywords : ntifs/CcUnpinDataForThread, CcUnpinDataForThread routine [Installable File System Drivers], ccref_71102887-ef3b-44b1-8b1f-e2b07dea3392.xml, ifsk.ccunpindataforthread, CcUnpinDataForThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcUnpinDataForThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -84,14 +88,10 @@ Each call to <a href="..\ntifs\nf-ntifs-ccsetbcbownerpointer.md">CcSetBcbOwnerPo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccsetbcbownerpointer.md">CcSetBcbOwnerPointer</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
-</dt>
-</dl>
+
  
 
  

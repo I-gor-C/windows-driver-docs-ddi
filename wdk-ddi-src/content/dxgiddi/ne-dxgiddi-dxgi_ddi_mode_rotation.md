@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8cc413c4-e4fe-449b-a66a-c79da01ad3be
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MODE_ROTATION, DXGI_DDI_MODE_ROTATION
+ms.keywords : DXGI_DDI_MODE_ROTATION enumeration [Display Devices], UMDisplayDriver_Dx10param_Structs_61b842eb-a4b4-4d86-95b8-eca448b35b5e.xml, dxgiddi/DXGI_DDI_MODE_ROTATION_IDENTITY, dxgiddi/DXGI_DDI_MODE_ROTATION, DXGI_DDI_MODE_ROTATION, display.dxgi_ddi_mode_rotation, DXGI_DDI_MODE_ROTATION_ROTATE270, DXGI_DDI_MODE_ROTATION_ROTATE180, DXGI_DDI_MODE_ROTATION_ROTATE90, dxgiddi/DXGI_DDI_MODE_ROTATION_UNSPECIFIED, DXGI_DDI_MODE_ROTATION_IDENTITY, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE90, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE180, DXGI_DDI_MODE_ROTATION_UNSPECIFIED, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE270
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_MODE_ROTATION
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_MODE_ROTATION
 ---
 
@@ -89,11 +93,8 @@ typedef enum DXGI_DDI_MODE_ROTATION {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
-</dt>
-</dl>
+
  
 
  

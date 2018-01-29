@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 181df1a6-044d-406d-bc6d-1b35b3d744fc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_GENERIC_DESCRIPTOR, *PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR
+ms.keywords : DmStructs_f77c03e6-d887-43ba-9499-ce1740cb6c9e.xml, PDXGK_GENERIC_DESCRIPTOR, display.dxgk_generic_descriptor, *PDXGK_GENERIC_DESCRIPTOR, dispmprt/PDXGK_GENERIC_DESCRIPTOR, _DXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR structure [Display Devices], PDXGK_GENERIC_DESCRIPTOR structure pointer [Display Devices], dispmprt/DXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_GENERIC_DESCRIPTOR
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR"
 ---
 
@@ -49,25 +53,25 @@ typedef struct _DXGK_GENERIC_DESCRIPTOR {
 
 ## Members
 
-        
-            `CompatibleId`
 
-            A sequence of wide-character strings, each of which is terminated by a single wide NULL character. The last string in the sequence is terminated by two wide NULL characters.
-        
-            `DeviceText`
+`CompatibleId`
 
-            A single wide-character string, terminated by two wide NULL characters, that holds the device text of the child device.
-        
-            `HardwareId`
+A sequence of wide-character strings, each of which is terminated by a single wide NULL character. The last string in the sequence is terminated by two wide NULL characters.
 
-            A single wide-character string, terminated by two wide NULL characters, that holds the hardware ID of the child device.
-        
-            `InstanceId`
+`DeviceText`
 
-            A single wide-character string, terminated by two wide NULL characters, that holds the instance ID of the child device.
+A single wide-character string, terminated by two wide NULL characters, that holds the device text of the child device.
 
-    ## Remarks
-        The display adapter has two types of child devices: <b>TypeVideoOutput</b> and <b>TypeOther</b>. For child devices of type <b>TypeOther</b>, the display port driver passes a DXGK_GENERIC_DESCRIPTOR structure to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_device_descriptor.md">DxgkDdiQueryDeviceDescriptor</a> function. <i>DxgkDdiQueryDeviceDescriptor</i> must fill in the members of the structure.
+`HardwareId`
+
+A single wide-character string, terminated by two wide NULL characters, that holds the hardware ID of the child device.
+
+`InstanceId`
+
+A single wide-character string, terminated by two wide NULL characters, that holds the instance ID of the child device.
+
+## Remarks
+The display adapter has two types of child devices: <b>TypeVideoOutput</b> and <b>TypeOther</b>. For child devices of type <b>TypeOther</b>, the display port driver passes a DXGK_GENERIC_DESCRIPTOR structure to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_device_descriptor.md">DxgkDdiQueryDeviceDescriptor</a> function. <i>DxgkDdiQueryDeviceDescriptor</i> must fill in the members of the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _DXGK_GENERIC_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dispmprt\ns-dispmprt-_dxgk_device_descriptor.md">DXGK_DEVICE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

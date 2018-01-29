@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3f595816-29b5-4efc-a00c-77597dd9fa48
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OPENRESOURCEFROMNTHANDLE, D3DKMT_OPENRESOURCEFROMNTHANDLE
+ms.keywords : D3DKMT_OPENRESOURCEFROMNTHANDLE structure [Display Devices], d3dkmthk/D3DKMT_OPENRESOURCEFROMNTHANDLE, _D3DKMT_OPENRESOURCEFROMNTHANDLE, D3DKMT_OPENRESOURCEFROMNTHANDLE, display.d3dkmt_openresourcefromnthandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OPENRESOURCEFROMNTHANDLE
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OPENRESOURCEFROMNTHANDLE
 ---
 
@@ -60,70 +64,70 @@ typedef struct _D3DKMT_OPENRESOURCEFROMNTHANDLE {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the device.
-        
-            `hKeyedMutex`
+`hDevice`
 
-            [out] A handle to the keyed mutex in this process.
-        
-            `hNtHandle`
+[in] A D3DKMT_HANDLE data type that represents the device.
 
-            [in] An NT handle to the process.
-        
-            `hResource`
+`hKeyedMutex`
 
-            [out] A handle to the resource in this process.
-        
-            `hSyncObject`
+[out] A handle to the keyed mutex in this process.
 
-            [out] A handle to the synchronization object in this process.
-        
-            `KeyedMutexPrivateRuntimeDataSize`
+`hNtHandle`
 
-            [in] The size, in bytes, of the buffer pointed to by the <b>pKeyedMutexPrivateRuntimeData</b> member.
-        
-            `NumAllocations`
+[in] An NT handle to the process.
 
-            [in] The number of allocations associated with the resource.
-        
-            `pKeyedMutexPrivateRuntimeData`
+`hResource`
 
-            [in] A buffer that contains initial private data.
+[out] A handle to the resource in this process.
+
+`hSyncObject`
+
+[out] A handle to the synchronization object in this process.
+
+`KeyedMutexPrivateRuntimeDataSize`
+
+[in] The size, in bytes, of the buffer pointed to by the <b>pKeyedMutexPrivateRuntimeData</b> member.
+
+`NumAllocations`
+
+[in] The number of allocations associated with the resource.
+
+`pKeyedMutexPrivateRuntimeData`
+
+[in] A buffer that contains initial private data.
 
 The data in this buffer will be copied only if the keyed mutex does not already have private data.
 
 If this member has a value of <b>NULL</b>, the value of the <b>KeyedMutexPrivateRuntimeDataSize</b> member must be zero.
-        
-            `pOpenAllocationInfo2`
 
-            [in] This member is reserved and should be set to zero.
-        
-            `pPrivateRuntimeData`
+`pOpenAllocationInfo2`
 
-            [in] A caller-supplied buffer where the runtime private data associated with this resource will be copied to.
-        
-            `pResourcePrivateDriverData`
+[in] This member is reserved and should be set to zero.
 
-            [in] A caller-supplied buffer where the driver private data associated with the resource will be copied to.
-        
-            `PrivateRuntimeDataSize`
+`pPrivateRuntimeData`
 
-            [in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
-        
-            `pTotalPrivateDriverDataBuffer`
+[in] A caller-supplied buffer where the runtime private data associated with this resource will be copied to.
 
-            [in] A pointer to a caller-supplied buffer where the driver private data will be stored.
-        
-            `ResourcePrivateDriverDataSize`
+`pResourcePrivateDriverData`
 
-            [in] The size, in bytes, of the  buffer pointed to by the <b>pResourcePrivateDriverData</b> member.
-        
-            `TotalPrivateDriverDataBufferSize`
+[in] A caller-supplied buffer where the driver private data associated with the resource will be copied to.
 
-            [in] The size, in bytes, of the buffer pointed to by the <b>pTotalPrivateDriverDataBuffer</b> member.
+`PrivateRuntimeDataSize`
+
+[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
+
+`pTotalPrivateDriverDataBuffer`
+
+[in] A pointer to a caller-supplied buffer where the driver private data will be stored.
+
+`ResourcePrivateDriverDataSize`
+
+[in] The size, in bytes, of the  buffer pointed to by the <b>pResourcePrivateDriverData</b> member.
+
+`TotalPrivateDriverDataBufferSize`
+
+[in] The size, in bytes, of the buffer pointed to by the <b>pTotalPrivateDriverDataBuffer</b> member.
 
 [out] The size, in bytes, of  the data written to <b>pTotalPrivateDriverDataBuffer</b>.
 
@@ -136,19 +140,14 @@ If this member has a value of <b>NULL</b>, the value of the <b>KeyedMutexPrivate
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439280">D3DDDI_OPENALLOCATIONINFO2</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopennthandlefromname.md">D3DKMTOpenNtHandleFromName</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439280">D3DDDI_OPENALLOCATIONINFO2</a>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtshareobjects.md">D3DKMTShareObjects</a>
-</dt>
-</dl>
+
  
 
  

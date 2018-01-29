@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : beec5516-6191-4b70-8c80-ddbaedbad5c0
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpAppendNodeToContainerNode
+ms.keywords : sdplib/SdpAppendNodeToContainerNode, SdpAppendNodeToContainerNode, SdpAppendNodeToContainerNode function [Bluetooth Devices], bltooth.sdpappendnodetocontainernode, bth_funcs_dce0f01b-3dab-48d4-8230-ad3bb0d1c210.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpAppendNodeToContainerNode
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -59,7 +63,7 @@ The SDP sequence or alternative node to which the
 
 `Node`
 
-
+TBD
 
 
 ## Return Value
@@ -76,8 +80,8 @@ Use the
 Do not use this function to attach attribute nodes to the top level of an SDP record. Call the 
     <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a> function to
     perform that action. For more information about the tree structure, see 
-    <a href="https://msdn.microsoft.com/762cf68b-0082-4b9e-8f24-ff19ecf6f8bd">Converting SDP Records to a
-    Tree Structure</a>.
+    <mshelp:link keywords="bltooth.converting_sdp_records_to_a_tree_structure" tabindex="0">Converting SDP Records to a
+    Tree Structure</mshelp:link>.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
     <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>.
@@ -96,17 +100,12 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
-</dt>
-<dt>
 <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
-</dt>
-<dt>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

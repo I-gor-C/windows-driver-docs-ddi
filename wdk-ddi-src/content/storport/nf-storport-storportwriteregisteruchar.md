@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 731ae55e-8cfb-4b76-b811-dbdabd8dd067
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortWriteRegisterUchar
+ms.keywords : StorPortWriteRegisterUchar routine [Storage Devices], StorPortWriteRegisterUchar, storage.storportwriteregisteruchar, storprt_5c7a4209-e917-4a68-94f7-7b3b3fcc634e.xml, storport/StorPortWriteRegisterUchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortWriteRegisterUchar
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\nf-srb-scsiportwriteregisterbufferushort.md">ScsiPortWriteRegisterBufferUshort</a>
-</dt>
-</dl>
+
  
 
  

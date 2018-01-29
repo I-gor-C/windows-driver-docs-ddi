@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dc0f8dba-afdd-47f4-ba7f-72c510e80052
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.destroyvideoprocessdevice, DestroyVideoProcessDevice callback function [Display Devices], DestroyVideoProcessDevice, PFND3DDDI_DESTROYVIDEOPROCESSDEVICE, PFND3DDDI_DESTROYVIDEOPROCESSDEVICE, d3dumddi/DestroyVideoProcessDevice, UserModeDisplayDriver_Functions_a10d05fa-387f-469f-b516-17378f2bd655.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DestroyVideoProcessDevice
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,14 +87,10 @@ The <b>DestroyVideoProcessDevice</b> function notifies the driver to destroy the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvideoprocessdevice.md">CreateVideoProcessDevice</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

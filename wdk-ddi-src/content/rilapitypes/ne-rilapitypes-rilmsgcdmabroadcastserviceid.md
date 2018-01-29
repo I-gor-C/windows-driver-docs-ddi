@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmabroadcastserviceid_2.htm
 old-project : netvista
 ms.assetid : d991a0f6-54ba-4951-8bdb-865a537d797a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMABROADCASTSERVICEID, RILMSGCDMABROADCASTSERVICEID
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_1xBROADCAST_CMAS_AMBER, RILMSGCDMABROADCASTSERVICEID, RIL_1xBROADCAST_CMAS_EXTREME, RIL_1xBROADCAST_CMAS_TEST, RILMSGCDMABROADCASTSERVICEID enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_1xBROADCAST_CMAS_TEST, netvista.rilmsgcdmabroadcastserviceid_2, rilapitypes/RIL_1xBROADCAST_CMAS_EXTREME, rilapitypes/RIL_1xBROADCAST_CMAS_SEVERE, rilapitypes/RILMSGCDMABROADCASTSERVICEID, RIL_1xBROADCAST_CMAS_AMBER, RIL_1xBROADCAST_CMAS_SEVERE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMABROADCASTSERVICEID
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCDMABROADCASTSERVICEID
 req.product : Windows 10 or later.
 ---
@@ -59,6 +63,11 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
 
 <tr>
 <td>RIL_1xBROADCAST_CMAS_EXTREME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_1xBROADCAST_CMAS_PRESIDENTIAL</td>
 <td></td>
 </tr>
 

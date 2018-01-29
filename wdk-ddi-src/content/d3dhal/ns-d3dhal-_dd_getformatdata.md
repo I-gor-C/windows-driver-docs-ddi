@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 881a52d1-8e37-4474-a943-086ef5ceca80
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_GETFORMATDATA, DD_GETFORMATDATA
+ms.keywords : DD_GETFORMATDATA, display.dd_getformatdata, DD_GETFORMATDATA structure [Display Devices], d3dhal/DD_GETFORMATDATA, _DD_GETFORMATDATA, d3dstrct_cfa9e4e0-86d8-4b38-9c50-8661012c34e8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DD_GETFORMATDATA
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_GETFORMATDATA
 ---
 
@@ -50,21 +54,21 @@ typedef struct _DD_GETFORMATDATA {
 
 ## Members
 
-        
-            `dwFormatIndex`
 
-            Specifies the index of the pixel format to return.
-        
-            `format`
+`dwFormatIndex`
 
-            Receives the actual pixel format in a <a href="..\ksmedia\ns-ksmedia-_ddpixelformat.md">DDPIXELFORMAT</a> structure.
-        
-            `gdi2`
+Specifies the index of the pixel format to return.
 
-            Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.
+`format`
 
-    ## Remarks
-        The runtime identifies the format to be returned with an integer index whose value varies between zero and one less than the number of supported formats reported earlier by the driver. How these indices are mapped to actual formats is left to the driver. However, each index must map uniquely to one supported format. The order in which the formats are reported is not significant. 
+Receives the actual pixel format in a <a href="..\ksmedia\ns-ksmedia-_ddpixelformat.md">DDPIXELFORMAT</a> structure.
+
+`gdi2`
+
+Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.
+
+## Remarks
+The runtime identifies the format to be returned with an integer index whose value varies between zero and one less than the number of supported formats reported earlier by the driver. How these indices are mapped to actual formats is left to the driver. However, each index must map uniquely to one supported format. The order in which the formats are reported is not significant. 
 
 When processing this <b>GetDriverInfo2</b> request the driver should read the <b>dwFormatIndex</b> and map that to one of the supported formats (probably by using <b>dwFormatIndex</b> as an index into an array of DDPIXELFORMAT structures) and then copy that format into the format field of the DD_GETFORMATDATA field. The runtime guarantees that it only passes an index to the driver that is in the range zero to one less than the number of surface formats reported by the driver. The range of the index should be validated in the debug driver build.
 
@@ -78,19 +82,14 @@ When processing this <b>GetDriverInfo2</b> request the driver should read the <b
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-_ddpixelformat.md">DDPIXELFORMAT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b1bad6e8-8592-457a-8f66-40fc5040ae96
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_ADAPTERREGISTRYINFO, D3DKMT_ADAPTERREGISTRYINFO
+ms.keywords : D3DKMT_ADAPTERREGISTRYINFO, OpenGL_Structs_0d97d602-7fc3-40a2-aa06-2966a6fc04f7.xml, D3DKMT_ADAPTERREGISTRYINFO structure [Display Devices], display.d3dkmt_adapterregistryinfo, d3dkmthk/D3DKMT_ADAPTERREGISTRYINFO, _D3DKMT_ADAPTERREGISTRYINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_ADAPTERREGISTRYINFO
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_ADAPTERREGISTRYINFO
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMT_ADAPTERREGISTRYINFO {
 
 ## Members
 
-        
-            `AdapterString`
 
-            [out] A string that contains the name of the graphics adapter.
-        
-            `BiosString`
+`AdapterString`
 
-            [out] A string that contains the name of the BIOS for the graphics adapter.
-        
-            `ChipType`
+[out] A string that contains the name of the graphics adapter.
 
-            [out] A string that contains the chip type for the graphics adapter.
-        
-            `DacType`
+`BiosString`
 
-            [out] A string that contains the DAC type for the graphics adapter.
+[out] A string that contains the name of the BIOS for the graphics adapter.
+
+`ChipType`
+
+[out] A string that contains the chip type for the graphics adapter.
+
+`DacType`
+
+[out] A string that contains the DAC type for the graphics adapter.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _D3DKMT_ADAPTERREGISTRYINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
  
 
  

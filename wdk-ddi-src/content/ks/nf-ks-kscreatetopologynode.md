@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : aeed8086-b413-428c-b275-d555523b5503
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateTopologyNode
+ms.keywords : ksfunc_15092cdb-3f97-4f13-a10e-9dbc92d20776.xml, KsCreateTopologyNode function [Streaming Media Devices], KsCreateTopologyNode, stream.kscreatetopologynode, ks/KsCreateTopologyNode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCreateTopologyNode
-req.alt-loc : ks.lib,ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -90,14 +94,10 @@ The <a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a> structure describes
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
  
 
  

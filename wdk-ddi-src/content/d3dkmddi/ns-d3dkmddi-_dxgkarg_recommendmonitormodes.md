@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 283f398e-4162-4c46-847b-834f8f303052
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES
+ms.keywords : DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], DXGKARG_RECOMMENDMONITORMODES, display.dxgkarg_recommendmonitormodes, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES, _DXGKARG_RECOMMENDMONITORMODES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_RECOMMENDMONITORMODES
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_RECOMMENDMONITORMODES
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGKARG_RECOMMENDMONITORMODES {
 
 ## Members
 
-        
-            `hMonitorSourceModeSet`
 
-            A handle to a monitor source mode set object. This set contains a list of modes that are supported by the monitor that is connected to the video present target identified by <i>VideoPresentTargetId</i>.
-        
-            `pMonitorSourceModeSetInterface`
+`hMonitorSourceModeSet`
 
-            A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can use to inspect, and possibly add modes to, the monitor source mode set.
-        
-            `VideoPresentTargetId`
+A handle to a monitor source mode set object. This set contains a list of modes that are supported by the monitor that is connected to the video present target identified by <i>VideoPresentTargetId</i>.
 
-            An integer that identifies a video present target on the display adapter.
+`pMonitorSourceModeSetInterface`
+
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can use to inspect, and possibly add modes to, the monitor source mode set.
+
+`VideoPresentTargetId`
+
+An integer that identifies a video present target on the display adapter.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _DXGKARG_RECOMMENDMONITORMODES {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendmonitormodes.md">DxgkDdiRecommendMonitorModes</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
+
  
 
  

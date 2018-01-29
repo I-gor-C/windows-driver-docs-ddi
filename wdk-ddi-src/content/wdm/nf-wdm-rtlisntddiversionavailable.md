@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 54017f67-b01f-48bd-a5bb-598902672c4f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIsNtDdiVersionAvailable
+ms.keywords : RtlIsNtDdiVersionAvailable routine [Kernel-Mode Driver Architecture], kernel.rtlisntddiversionavailable, k109_62b3efdd-6678-4e88-92cb-eaacff80bfab.xml, RtlIsNtDdiVersionAvailable, wdm/RtlIsNtDdiVersionAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista. A compatibil
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIsNtDdiVersionAvailable
-req.alt-loc : Rtlver.lib,Rtlver.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Rtlver.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -52,7 +56,6 @@ BOOLEAN RtlIsNtDdiVersionAvailable(
 `Version`
 
 The version of the Windows DDI that is available. The following table lists the possible values for the <i>Version</i> parameter.
-
 <table>
 <tr>
 <th>Constant</th>
@@ -138,8 +141,7 @@ Windows 2000
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The NTDDI_<i>XXX</i> constants are defined in the Sdkddkver.h header file.
 
@@ -174,11 +176,8 @@ For more information about <b>RtlIsNtDdiVersionAvailable</b> and <b>RtlIsService
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlisservicepackversioninstalled.md">RtlIsServicePackVersionInstalled</a>
-</dt>
-</dl>
+
  
 
  

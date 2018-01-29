@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bce932a6-2f73-4d0e-8616-45fd41abb776
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice2, IWDFDevice2::CreateSymbolicLinkWithReferenceString, CreateSymbolicLinkWithReferenceString
+ms.keywords : CreateSymbolicLinkWithReferenceString, IWDFDevice2::CreateSymbolicLinkWithReferenceString, IWDFDevice2 interface, CreateSymbolicLinkWithReferenceString method, umdf.iwdfdevice2_createsymboliclinkwithreferencestring, CreateSymbolicLinkWithReferenceString method, IWDFDevice2, wudfddi/IWDFDevice2::CreateSymbolicLinkWithReferenceString, UMDFDeviceObjectRef_40f806fa-5db7-48db-b3c7-0f338947887e.xml, wdf.iwdfdevice2_createsymboliclinkwithreferencestring, CreateSymbolicLinkWithReferenceString method, IWDFDevice2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFDevice2.CreateSymbolicLinkWithReferenceString
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -64,14 +68,34 @@ A pointer to a <b>NULL</b>-terminated character string that Windows appends to t
 ## Return Value
 
 <b>CreateSymbolicLinkWithReferenceString</b> returns S_OK if the operation succeeds. Otherwise, the method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The caller specified an invalid value for an input parameter.
+</dl>
+</td>
+<td width="60%">
+The caller specified an invalid value for an input parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl>The memory allocation failed.
+</dl>
+</td>
+<td width="60%">
+The memory allocation failed.
 
- 
+</td>
+</tr>
+</table> 
 
 This method might return one of the other values that Winerror.h contains.
 
@@ -87,12 +111,6 @@ If the device is removed unexpectedly (surprise-removed), the framework removes 
 
 If you do not need to add a reference string to your device's symbolic link name, your driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557023">IWDFDevice::CreateSymbolicLink</a> instead of <b>CreateSymbolicLinkWithReferenceString</b>.
 
-
-          The following line defines a symbolic link name prefix in the global <b>DosDevices</b> namespace.
-        
-
-The following code example creates a symbolic name string, obtains the <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a> interface, and then calls <b>CreateSymbolicLinkWithReferenceString</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -107,14 +125,10 @@ The following code example creates a symbolic name string, obtains the <a href="
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557023">IWDFDevice::CreateSymbolicLink</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
  
 
  

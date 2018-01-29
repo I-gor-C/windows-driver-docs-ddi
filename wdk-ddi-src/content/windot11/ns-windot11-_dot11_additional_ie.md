@@ -7,8 +7,8 @@ old-location : netvista\dot11_additional_ie.htm
 old-project : netvista
 ms.assetid : db034863-f5fa-42bb-81c8-23d4784e0abe
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11_ADDITIONAL_IE, *PDOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE
+ms.date : 1/18/2018
+ms.keywords : PDOT11_ADDITIONAL_IE, PDOT11_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], _DOT11_ADDITIONAL_IE, Native_802.11_data_types_306f816b-e8fa-4f61-be10-5fd4d793f5a5.xml, netvista.dot11_additional_ie, *PDOT11_ADDITIONAL_IE, windot11/DOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE, windot11/PDOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11_ADDITIONAL_IE
-req.alt-loc : windot11.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DOT11_ADDITIONAL_IE, *PDOT11_ADDITIONAL_IE
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_ADDITIONAL_IE structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_ADDITIONAL_IE structure specifies characteristics of additional information elements (IEs)
+  for a BSS 802.11 Beacon or Probe Response frame.
 
 ## Syntax
 ````
@@ -51,40 +56,45 @@ typedef struct _DOT11_ADDITIONAL_IE {
 
 ## Members
 
-        
-            `Header`
 
-            The type, revision, and size of the DOT11_ADDITIONAL_IE structure. This member is formatted as an 
+`Header`
+
+The type, revision, and size of the DOT11_ADDITIONAL_IE structure. This member is formatted as an 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
-        
-            `uBeaconIEsLength`
 
-            The length of the additional IEs, in bytes, in the beacon frame sent by the NIC. The default value
+
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+`uBeaconIEsLength`
+
+The length of the additional IEs, in bytes, in the beacon frame sent by the NIC. The default value
      is 0.
-        
-            `uBeaconIEsOffset`
 
-            The offset of the additional IEs, in bytes, in the beacon frame sent by the NIC. This offset is
+`uBeaconIEsOffset`
+
+The offset of the additional IEs, in bytes, in the beacon frame sent by the NIC. This offset is
      relative to the start of the buffer that contains the DOT11_ADDITIONAL_IE structure. The default value
      is 0.
-        
-            `uResponseIEsLength`
 
-            The length of the additional IEs, in bytes, in the probe response frame sent by the NIC. The
+`uResponseIEsLength`
+
+The length of the additional IEs, in bytes, in the probe response frame sent by the NIC. The
      default value is 0.
-        
-            `uResponseIEsOffset`
 
-            The offset of the additional IEs, in bytes, in the probe response frame sent by the NIC. This
+`uResponseIEsOffset`
+
+The offset of the additional IEs, in bytes, in the probe response frame sent by the NIC. This
      offset is relative to the start of the buffer that contains the DOT11_ADDITIONAL_IE structure. The
      default value is 0.
 
-    ## Remarks
-        This structure is used with 
+## Remarks
+This structure is used with 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569103">OID_DOT11_ADDITIONAL_IE</a>.
 
 The miniport driver should reset the members of the DOT11_ADDITIONAL_IE structure to the default
@@ -99,21 +109,16 @@ The miniport driver should reset the members of the DOT11_ADDITIONAL_IE structur
 | **Minimum UMDF version** |  |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569103">OID_DOT11_ADDITIONAL_IE</a>
-</dt>
-<dt>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569409">OID_DOT11_RESET_REQUEST</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ADDITIONAL_IE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ADDITIONAL_IE structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

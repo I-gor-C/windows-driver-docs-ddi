@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c4ed9551-3dc8-4f76-9bcb-26030f76c244
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortMoveMemory
+ms.keywords : ScsiPortMoveMemory, scsiprt_88a58a03-0663-4aad-b048-2a2d3641e94e.xml, srb/ScsiPortMoveMemory, ScsiPortMoveMemory routine [Storage Devices], storage.scsiportmovememory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortMoveMemory
-req.alt-loc : storport.lib,storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortMoveMemory function
 The <b>ScsiPortMoveMemory</b> routine copies data from one location to another.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -74,7 +79,7 @@ None
 
 The (<i>ReadBuffer</i> + <i>Length</i>) can overlap the area pointed to by <i>WriteBuffer</i>. 
 
-Each of the given buffer areas must be at least <b>sizeof</b>(<i>Length</i>).</p>
+Each of the given buffer areas must be at least <b>sizeof</b>(<i>Length</i>).
 
 ## Requirements
 | &nbsp; | &nbsp; |

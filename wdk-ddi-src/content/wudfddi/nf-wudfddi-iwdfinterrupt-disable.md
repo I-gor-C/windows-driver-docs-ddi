@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : D87C868D-9538-4752-AEBD-2A15E53628CF
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFInterrupt, IWDFInterrupt::Disable, Disable
+ms.keywords : IWDFInterrupt interface, Disable method, IWDFInterrupt, Disable method, wdf.iwdfinterrupt_disable, umdf.iwdfinterrupt_disable, Disable, Disable method, IWDFInterrupt interface, wudfddi/IWDFInterrupt::Disable, IWDFInterrupt::Disable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFInterrupt.Disable
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 This method does not return a value.
 
-This method does not return a value.
-
-This method does not return a value.
-
 ## Remarks
 
 Most UMDF drivers do not need to call <b>IWDFInterrupt::Disable</b>, because the framework calls the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf_interrupt_disable.md">OnInterruptDisable</a> callback function each time the device leaves its working (D0) state.
@@ -66,8 +66,6 @@ Most UMDF drivers do not need to call <b>IWDFInterrupt::Disable</b>, because the
 
 
 For more information about handling interrupts in UMDF drivers, see <a href="https://msdn.microsoft.com/25D526CF-7C37-4D10-B099-352933F92F98">Accessing Hardware and Handling Interrupts</a>.
-
-The following code example disables the device interrupt that is associated with a specified interrupt object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,14 +81,10 @@ The following code example disables the device interrupt that is associated with
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/605C58C2-9A4F-4185-BB5C-95C9F5180C05">IWDFInterrupt::Enable</a>
-</dt>
-</dl>
+
  
 
  

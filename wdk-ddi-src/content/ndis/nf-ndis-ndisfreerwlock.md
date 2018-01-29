@@ -7,8 +7,8 @@ old-location : netvista\ndisfreerwlock.htm
 old-project : netvista
 ms.assetid : 1f54e8fe-e6a2-4ddd-9451-289d3df21fde
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisFreeRWLock
+ms.date : 1/18/2018
+ms.keywords : ndis_processor_group_ref_f711221a-f265-446e-86bc-7b5b4d17f7d9.xml, NdisFreeRWLock, ndis/NdisFreeRWLock, NdisFreeRWLock function [Network Drivers Starting with Windows Vista], netvista.ndisfreerwlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.20 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisFreeRWLock
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -89,19 +93,14 @@ A driver must call the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>
-</dt>
-</dl>
- 
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeRWLock function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeRWLock function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

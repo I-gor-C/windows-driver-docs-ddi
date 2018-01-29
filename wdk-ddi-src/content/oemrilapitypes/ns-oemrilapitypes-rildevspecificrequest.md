@@ -7,8 +7,8 @@ old-location : netvista\rildevspecificrequest.htm
 old-project : netvista
 ms.assetid : 36e2ae4b-cc2f-4980-95fe-25a38a1c07b1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDEVSPECIFICREQUEST, *LPRILDEVSPECIFICREQUEST, RILDEVSPECIFICREQUEST
+ms.date : 1/18/2018
+ms.keywords : oemrilapitypes/LPRILDEVSPECIFICREQUEST, *LPRILDEVSPECIFICREQUEST, RILDEVSPECIFICREQUEST, netvista.rildevspecificrequest, RILDEVSPECIFICREQUEST structure [Network Drivers Starting with Windows Vista], LPRILDEVSPECIFICREQUEST, LPRILDEVSPECIFICREQUEST structure pointer [Network Drivers Starting with Windows Vista], oemrilapitypes/RILDEVSPECIFICREQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDEVSPECIFICREQUEST
-req.alt-loc : oemrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILDEVSPECIFICREQUEST, RILDEVSPECIFICREQUEST"
 ---
 
@@ -48,18 +52,18 @@ typedef struct _RILDEVSPECIFICREQUEST {
 
 ## Members
 
-        
-            `dwCmdId`
 
-            
-        
-            `dwSize`
+`dwCmdId`
 
-            
-        
-            `params`
 
-            
+
+`dwSize`
+
+
+
+`params`
+
+
 
 
 ## Requirements

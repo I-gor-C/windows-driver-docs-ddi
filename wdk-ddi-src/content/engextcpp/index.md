@@ -16,6 +16,12 @@ ms.topic : portal
 engextcpp.h contains the following programming interfaces:
 
 
+## Classes
+| Title | Description |
+| ---- |:---- |
+| [ExtRemoteData](nl-engextcpp-extremotedata.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteTypedList](nl-engextcpp-extremotetypedlist.md) | The ExtRemoteTypedList class extends the ExtRemoteList class. The ExtRemoteTypedList class adds type information allowing each item in the list to be represented by an instance of the ExtRemoteTyped class. |
+
 
 
 

@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : ad4888fc-3d90-4920-bf84-aea18841d238
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST
+ms.keywords : "*PBTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST structure [Bluetooth Devices], bltooth.bth_device_info_list, PBTH_DEVICE_INFO_LIST, bth_structs_230962ed-c458-4c9e-a317-e2508b07c059.xml, _BTH_DEVICE_INFO_LIST, PBTH_DEVICE_INFO_LIST structure pointer [Bluetooth Devices], bthioctl/BTH_DEVICE_INFO_LIST, bthioctl/PBTH_DEVICE_INFO_LIST"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_DEVICE_INFO_LIST
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PBTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : BTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST
 ---
 
 # _BTH_DEVICE_INFO_LIST structure
@@ -48,19 +52,19 @@ typedef struct _BTH_DEVICE_INFO_LIST {
 
 ## Members
 
-        
-            `deviceList`
 
-            An open-ended array of 
+`deviceList`
+
+An open-ended array of 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a> structures. Each
      structure contains information about a previously discovered remote device.
-        
-            `numOfDevices`
 
-            The number of devices that have been discovered.
+`numOfDevices`
 
-    ## Remarks
-        The 
+The number of devices that have been discovered.
+
+## Remarks
+The 
     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_device_info.md">IOCTL_BTH_GET_DEVICE_INFO</a> call's
     output buffer contains the list of all cached, previously discovered remote devices.
 
@@ -77,14 +81,12 @@ The
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a></dt>
-<dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_device_info.md">IOCTL_BTH_GET_DEVICE_INFO</a>
-</dt>
-</dl>
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a>
+
  
 
  

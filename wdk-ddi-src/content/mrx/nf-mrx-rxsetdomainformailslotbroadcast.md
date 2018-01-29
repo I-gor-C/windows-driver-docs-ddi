@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 22f5e525-bdf8-4047-9b77-6523cb59f090
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxSetDomainForMailslotBroadcast
+ms.keywords : ifsk.rxsetdomainformailslotbroadcast, RxSetDomainForMailslotBroadcast, RxSetDomainForMailslotBroadcast function [Installable File System Drivers], mrx/RxSetDomainForMailslotBroadcast, rxref_d342ef48-ef62-4186-97ea-d974bc4bf596.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxSetDomainForMailslotBroadcast
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -56,9 +60,23 @@ A pointer to a buffer that contains a zero-terminated Unicode string that names 
 ## Return Value
 
 <b>RxSetDomainForMailslotBroadcast</b> returns STATUS_SUCCESS on success or one of the following error values on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There were insufficient resources to complete this routine. The memory allocation request failed for nonpaged pool memory to store the domain name.
+</dl>
+</td>
+<td width="60%">
+There were insufficient resources to complete this routine. The memory allocation request failed for nonpaged pool memory to store the domain name.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -80,23 +98,16 @@ One of the parameters passed to the <b>RxRegisterMinirdr</b> routine indicates w
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-</dt>
-<dt>
-<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
-</dt>
-<dt>
 <a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+
 <a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMinirdr</a>
-</dt>
-<dt>
+
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
+
 <a href="..\mrx\nf-mrx-__rxfillandinstallfastiodispatch.md">__RxFillAndInstallFastIoDispatch</a>
-</dt>
-</dl>
+
  
 
  

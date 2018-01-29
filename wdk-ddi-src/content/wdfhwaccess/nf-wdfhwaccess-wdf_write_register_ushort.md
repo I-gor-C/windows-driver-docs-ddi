@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : E098794F-9A32-409E-9B44-04FDCEF75341
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_WRITE_REGISTER_USHORT
+ms.keywords : wdfhwaccess/WDF_WRITE_REGISTER_USHORT, wdf.wdf_write_register_ushort, WDF_WRITE_REGISTER_USHORT, WDF_WRITE_REGISTER_USHORT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WDF_WRITE_REGISTER_USHORT
-req.alt-loc : Wdfhwaccess.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
 req.product : Windows 10 or later.
 ---
 

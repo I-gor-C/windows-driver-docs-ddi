@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3a22464f-4e0b-4b14-bdbf-b34b3abf9780
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_2DDIARG_GETCAPS, D3D10_2DDIARG_GETCAPS
+ms.keywords : D3D10_2DDIARG_GETCAPS structure [Display Devices], D3D10_2DDIARG_GETCAPS, d3d10umddi/D3D10_2DDIARG_GETCAPS, display.d3d10_2ddiarg_getcaps, UMDisplayDriver_Dx11param_Structs_0d9c80db-e29f-4e2f-b697-bcf87f29034c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D10_2DDIARG_GETCAPS is supported beginning with th
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_2DDIARG_GETCAPS
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_2DDIARG_GETCAPS
 ---
 
@@ -49,22 +53,22 @@ typedef struct D3D10_2DDIARG_GETCAPS {
 
 ## Members
 
-        
-            `DataSize`
 
-            [in/out] The size, in bytes, of the memory block at <b>pData</b>.
-        
-            `pData`
+`DataSize`
 
-            [out] A pointer to a memory block that is filled with capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition that is specified in the memory block at <b>pInfo</b>.
-        
-            `pInfo`
+[in/out] The size, in bytes, of the memory block at <b>pData</b>.
 
-            [in] A pointer to a memory block that contains data that specifies the specific condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
-        
-            `Type`
+`pData`
 
-            [in] The type of capabilities to retrieve. The Microsoft Direct3D runtime can supply one of the values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_2ddicaps_type.md">D3D10_2DDICAPS_TYPE</a> enumeration, possibly along with information in the memory block that is pointed to by <b>pInfo</b>, to retrieve particular capability data in the memory block at <b>pData</b>.
+[out] A pointer to a memory block that is filled with capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition that is specified in the memory block at <b>pInfo</b>.
+
+`pInfo`
+
+[in] A pointer to a memory block that contains data that specifies the specific condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
+
+`Type`
+
+[in] The type of capabilities to retrieve. The Microsoft Direct3D runtime can supply one of the values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_2ddicaps_type.md">D3D10_2DDICAPS_TYPE</a> enumeration, possibly along with information in the memory block that is pointed to by <b>pInfo</b>, to retrieve particular capability data in the memory block at <b>pData</b>.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct D3D10_2DDIARG_GETCAPS {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d10_2ddicaps_type.md">D3D10_2DDICAPS_TYPE</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10_2ddicaps_type.md">D3D10_2DDICAPS_TYPE</a>
+
  
 
  

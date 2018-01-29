@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d2f6d53b-2dd7-46ed-8d1e-dea264da4046
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_SETDISPLAYMODE, D3DDDICB_SETDISPLAYMODE
+ms.keywords : D3DDDICB_SETDISPLAYMODE structure [Display Devices], D3DDDICB_SETDISPLAYMODE, _D3DDDICB_SETDISPLAYMODE, d3dumddi/D3DDDICB_SETDISPLAYMODE, D3D_param_Structs_4aeee940-b195-4020-ad42-b69a2f34f93e.xml, display.d3dddicb_setdisplaymode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_SETDISPLAYMODE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_SETDISPLAYMODE
 ---
 
@@ -47,17 +51,17 @@ typedef struct _D3DDDICB_SETDISPLAYMODE {
 
 ## Members
 
-        
-            `hPrimaryAllocation`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the primary allocation for scanning out. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> function returns this handle.
-        
-            `PrivateDriverFormatAttribute`
+`hPrimaryAllocation`
 
-            [out] A private format attribute that the user-mode display driver should use to convert the current primary surface if the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a> callback function returned D3DDDIERR_INCOMPATIBLEPRIVATEFORMAT.
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the primary allocation for scanning out. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> function returns this handle.
 
-    ## Remarks
-        The user-mode display driver can set the <b>hPrimaryAllocation</b> member in the call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a> to scan out any allocation. However, the allocation must be marked as a primary (that is, the user-mode display driver must have set the <b>Primary</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> function to create the allocation).
+`PrivateDriverFormatAttribute`
+
+[out] A private format attribute that the user-mode display driver should use to convert the current primary surface if the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a> callback function returned D3DDDIERR_INCOMPATIBLEPRIVATEFORMAT.
+
+## Remarks
+The user-mode display driver can set the <b>hPrimaryAllocation</b> member in the call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a> to scan out any allocation. However, the allocation must be marked as a primary (that is, the user-mode display driver must have set the <b>Primary</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> function to create the allocation).
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct _D3DDDICB_SETDISPLAYMODE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
+
  
 
  

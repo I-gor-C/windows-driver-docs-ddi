@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 867b6152-9846-484f-9eac-07d0f24d55df
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES, *PIDE_MINIPORT_RESOURCES
+ms.keywords : storage.ide_miniport_resources, structs-ATA_28df7197-d4b0-4279-a4db-e9b1269f6ba7.xml, IDE_MINIPORT_RESOURCES structure [Storage Devices], _IDE_MINIPORT_RESOURCES, irb/IDE_MINIPORT_RESOURCES, PIDE_MINIPORT_RESOURCES, *PIDE_MINIPORT_RESOURCES, irb/PIDE_MINIPORT_RESOURCES, PIDE_MINIPORT_RESOURCES structure pointer [Storage Devices], IDE_MINIPORT_RESOURCES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDE_MINIPORT_RESOURCES
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_MINIPORT_RESOURCES, *PIDE_MINIPORT_RESOURCES
 ---
 
 # _IDE_MINIPORT_RESOURCES structure
 The IDE_MINIPORT_RESOURCES structure is used by the port driver to provide the miniport driver with resources.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -47,17 +52,17 @@ typedef struct _IDE_MINIPORT_RESOURCES {
 
 ## Members
 
-        
-            `IdeAccessRange`
 
-            Pointer to the first address range in a series of contiguous address ranges defined by a structure of type <a href="..\irb\ns-irb-_ide_access_range.md">IDE_ACCESS_RANGE</a>. The value in the <b>NumberOfAccessRanges</b> member indicates how many address ranges are provided. The port driver populates each <b>IDE_ACCESS_RANGE</b> structure with the address ranges allocated for the controller.
-        
-            `NumberOfAccessRanges`
+`IdeAccessRange`
 
-            Contains the number of access ranges pointed to by <b>IdeAccessRange</b>. Each is a range either of memory addresses or I/O port addresses.
+Pointer to the first address range in a series of contiguous address ranges defined by a structure of type <a href="..\irb\ns-irb-_ide_access_range.md">IDE_ACCESS_RANGE</a>. The value in the <b>NumberOfAccessRanges</b> member indicates how many address ranges are provided. The port driver populates each <b>IDE_ACCESS_RANGE</b> structure with the address ranges allocated for the controller.
 
-    ## Remarks
-        The port driver passes this structure to the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine.
+`NumberOfAccessRanges`
+
+Contains the number of access ranges pointed to by <b>IdeAccessRange</b>. Each is a range either of memory addresses or I/O port addresses.
+
+## Remarks
+The port driver passes this structure to the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +72,12 @@ typedef struct _IDE_MINIPORT_RESOURCES {
 | **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\irb\ns-irb-_ide_access_range.md">IDE_ACCESS_RANGE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
-</dt>
-</dl>
+
+<a href="..\irb\ns-irb-_ide_access_range.md">IDE_ACCESS_RANGE</a>
+
  
 
  

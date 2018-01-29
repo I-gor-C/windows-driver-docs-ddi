@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ad91208e-e57a-4b80-b1a1-13b9f7eb1119
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IUsbTargetPipeContinuousReaderCallbackReadersFailed, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, OnReaderFailure
+ms.keywords : IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure method, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, OnReaderFailure method, UMDFUSBref_01c8b9de-ab85-4cc6-abec-238dcda2b1e8.xml, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, OnReaderFailure method, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IUsbTargetPipeContinuousReaderCallbackReadersFailed.OnReaderFailure
-req.alt-loc : wudfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -95,14 +99,10 @@ For more information about the <b>OnReaderFailure</b> callback function and USB 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556910">IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion</a>
-</dt>
-</dl>
+
+<a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a>
+
  
 
  

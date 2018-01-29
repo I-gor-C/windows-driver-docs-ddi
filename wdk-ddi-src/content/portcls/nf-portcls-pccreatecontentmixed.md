@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9b916d43-26ab-4354-8537-2d4789c5fb52
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcCreateContentMixed
+ms.keywords : audpc-routines_40c3dd23-60cb-48dc-a570-1ba007a27bb2.xml, portcls/PcCreateContentMixed, PcCreateContentMixed, audio.pccreatecontentmixed, PcCreateContentMixed function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcCreateCon
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcCreateContentMixed
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -48,22 +52,18 @@ PORTCLASSAPI NTSTATUS NTAPI  PcCreateContentMixed(void);
 
 `paContentId`
 
-
+TBD
 
 `cContentId`
 
-
+TBD
 
 `pMixedContentId`
 
-
+TBD
 
 
 ## Return Value
-
-See return value definition in <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>.
-
-See return value definition in <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>.
 
 See return value definition in <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>.
 
@@ -85,11 +85,8 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmcreatecont
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
-</dt>
-</dl>
+
  
 
  

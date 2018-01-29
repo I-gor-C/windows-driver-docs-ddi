@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : 0a468158-4beb-42e0-a990-0282041a6bf8
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : SD_RESPONSE_TYPE, SD_RESPONSE_TYPE
+ms.keywords : sddef/SDRT_6, SDRT_NONE, sddef/SDRT_5B, sddef/SDRT_4, SDRT_5B, SDRT_1B, sddef/SDRT_UNSPECIFIED, sddef/SDRT_3, sddef/SDRT_1, sd-structs_e0ab70a5-5006-4469-872a-ea8f6279b5d6.xml, sddef/SDRT_1B, SDRT_UNSPECIFIED, SDRT_1, SDRT_6, SDRT_4, SDRT_2, sddef/SDRT_NONE, SD_RESPONSE_TYPE enumeration [Buses], sddef/SDRT_5, SDRT_5, sddef/SDRT_2, sddef/SD_RESPONSE_TYPE, SD.sd_response_type, SD_RESPONSE_TYPE, SDRT_3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SD_RESPONSE_TYPE
-req.alt-loc : sddef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_RESPONSE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -120,11 +124,8 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/7c49c394-d0b3-4594-a623-0a13825bdcec">SDCMD_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

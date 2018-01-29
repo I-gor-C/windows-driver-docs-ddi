@@ -7,8 +7,8 @@ old-location : netvista\rilnotificationparams.htm
 old-project : netvista
 ms.assetid : c89c7df3-7ccb-46db-adcc-22c49cae5108
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilnotificationparams, ntddrilapitypes/RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILNOTIFICATIONPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
 ---
 
@@ -47,14 +51,14 @@ typedef struct _RILNOTIFICATIONPARAMS {
 
 ## Members
 
-        
-            `dwNotificationCount`
 
-            
-        
-            `pdwNotifications`
+`dwNotificationCount`
 
-            
+
+
+`pdwNotifications`
+
+
 
 
 ## Requirements

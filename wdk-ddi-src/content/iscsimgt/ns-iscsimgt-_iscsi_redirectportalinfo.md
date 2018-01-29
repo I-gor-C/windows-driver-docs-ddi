@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 90d9c5e9-4bdf-4c7a-b5ac-54e1f94818bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo, *PISCSI_RedirectPortalInfo
+ms.keywords : ISCSI_RedirectPortalInfo structure [Storage Devices], iscsimgt/PISCSI_RedirectPortalInfo, structs-iSCSI_6b7dc6ac-b421-4454-aa8f-48f52c9b4350.xml, _ISCSI_RedirectPortalInfo, PISCSI_RedirectPortalInfo structure pointer [Storage Devices], PISCSI_RedirectPortalInfo, iscsimgt/ISCSI_RedirectPortalInfo, storage.iscsi_redirectportalinfo, *PISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_RedirectPortalInfo
-req.alt-loc : iscsimgt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ISCSI_RedirectPortalInfo, *PISCSI_RedirectPortalInfo
 ---
 
@@ -52,34 +56,34 @@ typedef struct _ISCSI_RedirectPortalInfo {
 
 ## Members
 
-        
-            `OriginalIPAddr`
 
-            This is the original IP address given during login from which redirection is to be set, and the IP address is provided via the ISCSI_IP_Address structure.
-        
-            `OriginalPort`
+`OriginalIPAddr`
 
-            This is the original portals socket number given during login.
-        
-            `Redirected`
+This is the original IP address given during login from which redirection is to be set, and the IP address is provided via the ISCSI_IP_Address structure.
 
-            This indicates whether the login is redirected. If this value is <b>TRUE</b>, RedirectedIPAddr and RedirectedPort are valid.
-        
-            `RedirectedIPAddr`
+`OriginalPort`
 
-            This is the IP address to which traffic needs to be redirected. The IP address is provided via the ISCSI_IP_Address structure.
-        
-            `RedirectedPort`
+This is the original portals socket number given during login.
 
-            This is the socket number for the redirected target portal.
-        
-            `TemporaryRedirect`
+`Redirected`
 
-            This value is <b>true</b> if redirection is temporary.
-        
-            `UniqueConnectionId`
+This indicates whether the login is redirected. If this value is <b>TRUE</b>, RedirectedIPAddr and RedirectedPort are valid.
 
-            The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter. This value is not to be confused with the connection ID (CID).
+`RedirectedIPAddr`
+
+This is the IP address to which traffic needs to be redirected. The IP address is provided via the ISCSI_IP_Address structure.
+
+`RedirectedPort`
+
+This is the socket number for the redirected target portal.
+
+`TemporaryRedirect`
+
+This value is <b>true</b> if redirection is temporary.
+
+`UniqueConnectionId`
+
+The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter. This value is not to be confused with the connection ID (CID).
 
 
 ## Requirements
@@ -90,16 +94,12 @@ typedef struct _ISCSI_RedirectPortalInfo {
 | **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-</dt>
-</dl>
+
  
 
  

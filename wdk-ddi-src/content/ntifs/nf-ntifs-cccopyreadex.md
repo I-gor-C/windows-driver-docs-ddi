@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4108EB7A-F8FB-4FA5-8426-BB434E89AF06
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcCopyReadEx
+ms.keywords : CcCopyReadEx routine [Installable File System Drivers], ntifs/CcCopyReadEx, CcCopyReadEx, ifsk.cccopyreadex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcCopyReadEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -113,26 +117,18 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccfastcopyread.md">CcFastCopyRead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
+
+<a href="..\ntifs\nf-ntifs-ccfastcopyread.md">CcFastCopyRead</a>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
+
  
 
  

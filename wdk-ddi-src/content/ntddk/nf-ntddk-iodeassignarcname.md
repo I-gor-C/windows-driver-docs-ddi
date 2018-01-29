@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 978fbe0a-ac10-4c83-870d-35d98775c233
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoDeassignArcName
+ms.keywords : IoDeassignArcName, ntddk/IoDeassignArcName, kernel.iodeassignarcname, k104_859767ed-5969-41db-a454-b7808a1ef131.xml, IoDeassignArcName routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoDeassignArcName
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,11 +79,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioassignarcname.md">IoAssignArcName</a>
-</dt>
-</dl>
+
  
 
  

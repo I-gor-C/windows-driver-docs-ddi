@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 525db78d-b25c-4325-ac71-b992564a19c0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFindUnicodePrefix
+ms.keywords : RtlFindUnicodePrefix routine [Installable File System Drivers], ntifs/RtlFindUnicodePrefix, ifsk.rtlfindunicodeprefix, rtlref_55dbfa12-5de6-44e0-8488-6e83abfaad84.xml, RtlFindUnicodePrefix
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows XP
 req.target-min-winversvr : Windows Server 2003
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlFindUnicodePrefix
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,7 +65,6 @@ Pointer to a Unicode string containing the full pathname for a file.
 `CaseInsensitiveIndex`
 
 Position in the file name and prefix strings at which the comparison is to become case-insensitive. The string comparison is case-sensitive for the first <i>CaseInsensitiveIndex</i> characters in each string, case-insensitive for the remainder of the string.
-
 <table>
 <tr>
 <th>Value</th>
@@ -130,23 +133,16 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlnextunicodeprefix.md">RtlNextUnicodePrefix</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlremoveunicodeprefix.md">RtlRemoveUnicodePrefix</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlnextunicodeprefix.md">RtlNextUnicodePrefix</a>
+
+<a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
+
  
 
  

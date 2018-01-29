@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9cb74a6f-64ae-449a-a1de-6b05419e3387
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2ADDDIRTYBOX, D3DHAL_DP2ADDDIRTYBOX, *LPD3DHAL_DP2ADDDIRTYBOX
+ms.keywords : d3dhal/LPD3DHAL_DP2ADDDIRTYBOX, _D3DHAL_DP2ADDDIRTYBOX, LPD3DHAL_DP2ADDDIRTYBOX, d3dstrct_ae7da3ce-63e0-4854-ad22-12b2669baba2.xml, d3dhal/D3DHAL_DP2ADDDIRTYBOX, LPD3DHAL_DP2ADDDIRTYBOX structure pointer [Display Devices], display.d3dhal_dp2adddirtybox, *LPD3DHAL_DP2ADDDIRTYBOX, D3DHAL_DP2ADDDIRTYBOX, D3DHAL_DP2ADDDIRTYBOX structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2ADDDIRTYBOX
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2ADDDIRTYBOX
 ---
 
@@ -50,17 +54,17 @@ typedef struct _D3DHAL_DP2ADDDIRTYBOX {
 
 ## Members
 
-        
-            `DirtyBox`
 
-            Specifies the volume texture that was marked as dirtied. This is a D3DBOX structure, which is described in the Microsoft Windows SDK documentation.
-        
-            `dwSurface`
+`DirtyBox`
 
-            Specifies the handle to the managed 3D resource that contains a dirtied volume texture.
+Specifies the volume texture that was marked as dirtied. This is a D3DBOX structure, which is described in the Microsoft Windows SDK documentation.
 
-    ## Remarks
-        D3DHAL_DP2ADDDIRTYBOX, along with the DP2OP_ADDDIRTYBOX token, is used only for driver managed resources. D3DHAL_DP2ADDDIRTYBOX is never sent unless the driver indicates that it manages resources. To indicate that it manages resources, the driver must set the DDCAPS2_CANMANAGERESOURCE bit, in addition to the DDCAPS2_CANMANAGETEXTURE bit, in the <b>dwCaps2</b> member of a DDCORECAPS structure. The driver specifies this <a href="https://msdn.microsoft.com/library/windows/hardware/ff549248">DDCORECAPS</a> structure in the <b>ddCaps</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure when the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function is called to initialize the DirectDraw component of the driver.
+`dwSurface`
+
+Specifies the handle to the managed 3D resource that contains a dirtied volume texture.
+
+## Remarks
+D3DHAL_DP2ADDDIRTYBOX, along with the DP2OP_ADDDIRTYBOX token, is used only for driver managed resources. D3DHAL_DP2ADDDIRTYBOX is never sent unless the driver indicates that it manages resources. To indicate that it manages resources, the driver must set the DDCAPS2_CANMANAGERESOURCE bit, in addition to the DDCAPS2_CANMANAGETEXTURE bit, in the <b>dwCaps2</b> member of a DDCORECAPS structure. The driver specifies this <a href="https://msdn.microsoft.com/library/windows/hardware/ff549248">DDCORECAPS</a> structure in the <b>ddCaps</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure when the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function is called to initialize the DirectDraw component of the driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -70,25 +74,18 @@ typedef struct _D3DHAL_DP2ADDDIRTYBOX {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-<dt>
-<a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549248">DDCORECAPS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549248">DDCORECAPS</a>
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
+
+<a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>
+
  
 
  

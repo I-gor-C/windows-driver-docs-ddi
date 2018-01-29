@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0e016f3a-4f3a-4256-bb7b-10a5f955b930
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _TAPE_DRIVE_PROBLEM_TYPE, TAPE_DRIVE_PROBLEM_TYPE
+ms.keywords : storage.ioctl_tape_prepare, IOCTL_TAPE_PREPARE control code [Storage Devices], IOCTL_TAPE_PREPARE, ntddtape/IOCTL_TAPE_PREPARE, k307_a564f3c9-909a-437c-973c-0e6c25fad061.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_TAPE_PREPARE
-req.alt-loc : Ntddtape.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_PREPARE IOCTL
-Loads or unloads the tape, resets tape tension, locks or unlocks the ejection mechanism, or formats the tape.
-
-
-
 Loads or unloads the tape, resets tape tension, locks or unlocks the ejection mechanism, or formats the tape.
 
 ### Major Code
@@ -65,7 +65,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes transferred. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_NO_SUCH_DEVICE, STATUS_IO_TIMEOUT, STATUS_IO_DEVICE_ERROR, STATUS_INSUFFICIENT_RESOURCES, STATUS_DEVICE_NOT_CONNECTED, STATUS_MEDIA_WRITE_PROTECTED, STATUS_NO_MEDIA_IN_DEVICE, or STATUS_VERIFY_REQUIRED.
 
 
@@ -76,19 +75,14 @@ The <b>Information</b> field is set to the number of bytes transferred. The <b>S
 | **Header** | ntddtape.h (include Ntddtape.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a>
-</dt>
-<dt>
-<a href="..\ntddtape\ns-ntddtape-_tape_prepare.md">TAPE_PREPARE</a>
-</dt>
-<dt>
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a>
+
+<a href="..\ntddtape\ns-ntddtape-_tape_prepare.md">TAPE_PREPARE</a>
+
  
 
  

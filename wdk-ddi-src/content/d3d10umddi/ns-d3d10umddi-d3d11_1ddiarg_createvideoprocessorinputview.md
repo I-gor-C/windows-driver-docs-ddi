@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 73F8F146-A38B-4890-867D-862361455AD4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW, D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW
+ms.keywords : d3d10umddi/D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW, PD3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW structure pointer [Display Devices], PD3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW, d3d10umddi/PD3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW, D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW, D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW structure [Display Devices], display.d3d11_1ddiarg_createvideoprocessorinputview
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW
 ---
 
@@ -51,34 +55,34 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW {
 
 ## Members
 
-        
-            `ArraySize`
 
-            The number of array slices for the texture.
-        
-            `FirstArraySlice`
+`ArraySize`
 
-            The identifier of the first array slice.
-        
-            `FourCC`
+The number of array slices for the texture.
 
-            A FOURCC code that the application uses to override the surface format. A value of zero indicates that the application will not override the resource format.
+`FirstArraySlice`
+
+The identifier of the first array slice.
+
+`FourCC`
+
+A FOURCC code that the application uses to override the surface format. A value of zero indicates that the application will not override the resource format.
 
 For example, if a new video standard emerges that requires a new substream format, the application can create an equivelant surface using a standard format and then specify a FOURCC code when it creates a view to indicate that the data is laid out according to the new video standard.
 
 For more information about FOURCC codes, see <a href="http://go.microsoft.com/fwlink/p/?linkid=231686">Video FOURCCs</a>.
-        
-            `hDrvResource`
 
-            A handle to the video decoder input resource.
-        
-            `hDrvVideoProcessorEnum`
+`hDrvResource`
 
-            A handle to the video processor enumeration.
-        
-            `MipSlice`
+A handle to the video decoder input resource.
 
-            The identifier of the MIP-map slice.
+`hDrvVideoProcessorEnum`
+
+A handle to the video processor enumeration.
+
+`MipSlice`
+
+The identifier of the MIP-map slice.
 
 
 ## Requirements
@@ -89,13 +93,10 @@ For more information about FOURCC codes, see <a href="http://go.microsoft.com/fw
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessoroutputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b30e4f19-068c-4ab0-a2e9-b1f57592be1c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddisetpointerposition, DxgkDdiSetPointerPosition callback function [Display Devices], DxgkDdiSetPointerPosition, DXGKDDI_SETPOINTERPOSITION, DXGKDDI_SETPOINTERPOSITION, d3dkmddi/DxgkDdiSetPointerPosition, DmFunctions_1067a75d-aece-48c2-93c1-35465c57c07e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiSetPointerPosition
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -89,17 +93,12 @@ If you run a <i>DxgkDdiSetPointerPosition</i> thread simultaneously with another
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_setpointerposition.md">DXGKARG_SETPOINTERPOSITION</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_setpointerposition.md">DXGKARG_SETPOINTERPOSITION</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setpointershape.md">DxgkDdiSetPointerShape</a>
-</dt>
-</dl>
+
  
 
  

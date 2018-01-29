@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fafb1b1f-409d-4eab-a5dd-22fd1ab830d2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR, D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR
+ms.keywords : d3dumddi/D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR, display.d3dddiarg_dxvahd_createvideoprocessor, D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR structure [Display Devices], D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR, _D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR, UMDisplayDriver_param_Structs_c2d925e2-646c-46dc-9795-1a885aa64a02.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR is supported b
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR {
 
 ## Members
 
-        
-            `hVideoProcessor`
 
-            [out] A handle to the video processor. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the video processor in subsequent calls.
-        
-            `pVPGuid`
+`hVideoProcessor`
 
-            [in] A pointer to the GUID that represents a DirectX VA video processor to create. The Microsoft Direct3D runtime can call the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to query (D3DDDICAPS_DXVAHD_GETVPCAPS) for the capabilities of the video processors that the driver supports. Each <b>VPGuid</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure in the array that the driver's <b>GetCaps</b> returns specifies a video processor that the driver supports.
+[out] A handle to the video processor. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the video processor in subsequent calls.
+
+`pVPGuid`
+
+[in] A pointer to the GUID that represents a DirectX VA video processor to create. The Microsoft Direct3D runtime can call the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to query (D3DDDICAPS_DXVAHD_GETVPCAPS) for the capabilities of the video processors that the driver supports. Each <b>VPGuid</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a> structure in the array that the driver's <b>GetCaps</b> returns specifies a video processor that the driver supports.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct _D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_createvideoprocessor.md">CreateVideoProcessor</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpcaps.md">DXVAHDDDI_VPCAPS</a>
-</dt>
-</dl>
+
  
 
  

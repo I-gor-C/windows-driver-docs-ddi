@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8abd72f1-0537-4624-b3d4-2de51c4d4daa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExFreeToNPagedLookasideList
+ms.keywords : kernel.exfreetonpagedlookasidelist, ExFreeToNPagedLookasideList routine [Kernel-Mode Driver Architecture], ExFreeToNPagedLookasideList, wdm/ExFreeToNPagedLookasideList, k102_30577c54-40a4-41a3-abc2-f3cdcd45ef1b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExFreeToNPagedLookasideList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : SpIrql
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,20 +91,14 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-exdeletenpagedlookasidelist.md">ExDeleteNPagedLookasideList</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a>
+
 <a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
-</dt>
-</dl>
+
  
 
  

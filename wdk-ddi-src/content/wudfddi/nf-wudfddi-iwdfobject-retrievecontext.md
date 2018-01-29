@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b76acae1-3c37-4095-bf8b-1785dc90f378
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject, IWDFObject::RetrieveContext, RetrieveContext
+ms.keywords : IWDFObject::RetrieveContext, RetrieveContext method, umdf.iwdfobject_retrievecontext, wudfddi/IWDFObject::RetrieveContext, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, IWDFObject interface, RetrieveContext method, RetrieveContext, RetrieveContext method, IWDFObject interface, wdf.iwdfobject_retrievecontext, IWDFObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFObject.RetrieveContext
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -64,8 +68,6 @@ A pointer to a buffer that receives a pointer to the previously registered conte
 
 Because the context is not a Component Object Model (COM) interface, the driver must not treat the context as such. For example, the driver cannot call the <b>AddRef</b> method on the context.
 
-For a code example of how to use the <b>RetrieveContext</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -80,17 +82,12 @@ For a code example of how to use the <b>RetrieveContext</b> method, see <a href=
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>
+
  
 
  

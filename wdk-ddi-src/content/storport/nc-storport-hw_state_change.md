@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E7E5E26A-B477-453C-AAFC-9B3572F4FC72
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.keywords : storage.hwstorstatechange, HwStorStateChange routine [Storage Devices], HwStorStateChange, HW_STATE_CHANGE, HW_STATE_CHANGE, storport/HwStorStateChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwStorStateChange
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
 req.product : Windows 10 or later.
 ---
@@ -70,7 +74,7 @@ The type of the address in <i>Address</i>.
 
 `Address`
 
-A pointer to a <a href="..\scsi\ns-scsi-_stor_address.md">STOR_ADDRESS</a> structure for the entity whose state change was processed.
+A pointer to a <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a> structure for the entity whose state change was processed.
 
 `Status`
 
@@ -90,6 +94,24 @@ This callback enables miniports to do any additional processing that is needed a
 If the value for <i>Status</i> is  &lt; 0x80000000, then the notification processing was successful. Otherwise, the notification process failed.
 
 The name <i>HwStorStateChange</i> is just a placeholder for the miniport function that is pointed to by the <i>HwStateChange</i> parameter of  <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+VOID
+HW_STATE_CHANGE (
+    _In_ PVOID HwDeviceExtension,
+    _In_opt_ PVOID Context,
+    _In_ SHORT AddressType,
+    _In_ PVOID Address,
+    _In_ ULONG Status
+    );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,14 +127,10 @@ The name <i>HwStorStateChange</i> is just a placeholder for the miniport functio
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\scsi\ns-scsi-_stor_address.md">STOR_ADDRESS</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>
-</dt>
-</dl>
+
+<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
+
  
 
  

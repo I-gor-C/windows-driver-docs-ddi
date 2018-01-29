@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5C208DF7-C6CB-419D-B775-74E09DC4D448
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _WOF_EXTERNAL_FILE_ID, WOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID
+ms.keywords : "*PWOF_EXTERNAL_FILE_ID, PWOF_EXTERNAL_FILE_ID, _WOF_EXTERNAL_FILE_ID, ntifs/PWOF_EXTERNAL_FILE_ID, PWOF_EXTERNAL_FILE_ID structure pointer [Installable File System Drivers], ntifs/WOF_EXTERNAL_FILE_ID, WOF_EXTERNAL_FILE_ID structure [Installable File System Drivers], WOF_EXTERNAL_FILE_ID, ifsk.wof_external_file_id"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WOF_EXTERNAL_FILE_ID
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID
 ---
 
@@ -46,13 +50,13 @@ typedef struct _WOF_EXTERNAL_FILE_ID {
 
 ## Members
 
-        
-            `FileId`
 
-            The file ID used with the <b>FILE_OPEN_BY_FILE_ID</b> flag to open a file with the <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> functions.
+`FileId`
 
-    ## Remarks
-        Use the <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> function to open a handle to a minifilter driver and use the <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> function to open a handle to a driver.
+The file ID used with the <b>FILE_OPEN_BY_FILE_ID</b> flag to open a file with the <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> functions.
+
+## Remarks
+Use the <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> function to open a handle to a minifilter driver and use the <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> function to open a handle to a driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _WOF_EXTERNAL_FILE_ID {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntifs\ns-ntifs-_wof_external_info.md">WOF_EXTERNAL_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_wof_version_info.md">WOF_VERSION_INFO</a>
-</dt>
-</dl>
+
  
 
  

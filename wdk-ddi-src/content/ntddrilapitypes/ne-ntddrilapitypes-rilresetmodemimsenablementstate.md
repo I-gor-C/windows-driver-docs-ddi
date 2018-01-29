@@ -7,8 +7,8 @@ old-location : netvista\rilresetmodemimsenablementstate.htm
 old-project : netvista
 ms.assetid : 50fae043-3575-4eff-869a-fae94168a4a1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRESETMODEMIMSENABLEMENTSTATE, RILRESETMODEMIMSENABLEMENTSTATE
+ms.date : 1/18/2018
+ms.keywords : RILRESETMODEMIMSENABLEMENTSTATE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILRESETMODEMIMSENABLEMENTSTATE, ntddrilapitypes/RIL_RESETMODEM_ENABLED, RILRESETMODEMIMSENABLEMENTSTATE, netvista.rilresetmodemimsenablementstate, RIL_RESETMODEM_ENABLED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRESETMODEMIMSENABLEMENTSTATE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRESETMODEMIMSENABLEMENTSTATE
 ---
 
@@ -47,6 +51,11 @@ typedef enum _RILRESETMODEMIMSENABLEMENTSTATE {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_RESETMODEM_DISABLED</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_RESETMODEM_ENABLED</td>

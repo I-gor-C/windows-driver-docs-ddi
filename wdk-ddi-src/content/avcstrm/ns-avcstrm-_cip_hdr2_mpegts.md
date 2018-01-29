@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e1f46926-8c2b-46ff-9adb-5332fba17e3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS
+ms.keywords : PCIP_HDR2_MPEGTS structure pointer [Streaming Media Devices], stream.cip_hdr2_mpegts, CIP_HDR2_MPEGTS structure [Streaming Media Devices], avcstrm/CIP_HDR2_MPEGTS, _CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS, avcstrm/PCIP_HDR2_MPEGTS, avcsref_80577192-cbb5-401a-a840-5970841111ab.xml, PCIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_HDR2_MPEGTS
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS
 ---
 
 # _CIP_HDR2_MPEGTS structure
@@ -49,22 +53,22 @@ typedef struct _CIP_HDR2_MPEGTS {
 
 ## Members
 
-        
-            `Bit10`
 
-            Must be set to 1:0
-        
-            `FMT`
+`Bit10`
 
-            CIP format. For example, 000000 = DV and 100000 = MPEGTS.
-        
-            `RSV23bit`
+Must be set to 1:0
 
-            Reserved bits. This must be 0. Do not use this.
-        
-            `TSF`
+`FMT`
 
-            Time-shift flag. This is not used for opening a stream.
+CIP format. For example, 000000 = DV and 100000 = MPEGTS.
+
+`RSV23bit`
+
+Reserved bits. This must be 0. Do not use this.
+
+`TSF`
+
+Time-shift flag. This is not used for opening a stream.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _CIP_HDR2_MPEGTS {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
-</dt>
-</dl>
+
  
 
  

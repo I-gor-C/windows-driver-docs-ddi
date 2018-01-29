@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 4EB36115-2783-4FD5-9CEE-1F7C971C334D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY
+ms.keywords : SPB.evtspbcontrollerunlock, EvtSpbControllerUnlock callback function [Buses], EvtSpbControllerUnlock, EVT_SPB_CONTROLLER_UNLOCK, EVT_SPB_CONTROLLER_UNLOCK, spbcx/EvtSpbControllerUnlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EvtSpbControllerUnlock
-req.alt-loc : Spbcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at IRQL <= DISPATCH_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY"
 req.product : Windows 10 or later.
 ---
@@ -87,14 +91,6 @@ To register an <i>EvtSpbControllerUnlock</i> callback function, call the <a href
 
 For more information about the <i>EvtSpbControllerUnlock</i> function, see <a href="https://msdn.microsoft.com/C1DED853-059D-481F-A524-E50772072018">Handling Client-Implemented Sequences</a>.
 
-To define an <i>EvtSpbControllerUnlock</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
-
-For example, to define an <i>EvtSpbControllerUnlock</i> callback function that is named <code>MyEvtSpbControllerUnlock</code>, use the EVT_SPB_CONTROLLER_UNLOCK function type, as shown in this code example:
-
-Then, implement your callback function as follows:
-
-The EVT_SPB_CONTROLLER_UNLOCK function type is defined in the Spbcx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EVT_SPB_CONTROLLER_UNLOCK function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -109,26 +105,18 @@ The EVT_SPB_CONTROLLER_UNLOCK function type is defined in the Spbcx.h header fil
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/E08674F1-CE63-464B-9C70-96F93C574753">EvtSpbControllerLock</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a>
-</dt>
-<dt>
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
+
+<a href="https://msdn.microsoft.com/E08674F1-CE63-464B-9C70-96F93C574753">EvtSpbControllerLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7c0ca9a0-dfa4-44ab-8d3a-ab43f72c806f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlVerifyVersionInfo
+ms.keywords : wdm/RtlVerifyVersionInfo, RtlVerifyVersionInfo, kernel.rtlverifyversioninfo, RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], k109_c0301686-a323-499f-ac04-3bc414b016cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlVerifyVersionInfo
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -59,7 +63,6 @@ Pointer to an <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW<
 
 Specifies which members of <i>VersionInfo</i> to compare with the corresponding attributes of the currently running version of the operating system. <i>TypeMask</i> is set to a logical OR of one or more of the following values.
                         
-
 <table>
 <tr>
 <th>Value</th>
@@ -151,7 +154,6 @@ VER_PRODUCT_TYPE
 
 Specifies how to compare each <b>VersionInfo</b> member. To set the value of <i>ConditionMask</i>, a caller should use the <b>VER_SET_CONDITION</b> macro:
 						  
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -165,9 +167,7 @@ Specifies how to compare each <b>VersionInfo</b> member. To set the value of <i>
         );</pre>
 </td>
 </tr>
-</table></span></div>
-The value of <i>ConditionMask</i> is created in the following way:
-
+</table></span></div>The value of <i>ConditionMask</i> is created in the following way:
 <ul>
 <li>
 Initialize the value of <i>ConditionMask</i> to zero. 
@@ -187,29 +187,65 @@ Set the <i>TypeBitMask</i> and <i>ComparisonType</i> parameters for each call to
 ## Return Value
 
 <b>RtlVerifyVersionInfo</b> returns one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The specified version matches the currently running version of the operating system.
+</dl>
+</td>
+<td width="60%">
+The specified version matches the currently running version of the operating system.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The input parameters are not valid.
+</dl>
+</td>
+<td width="60%">
+The input parameters are not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_REVISION_MISMATCH</b></dt>
-</dl>The specified version does not match the currently running version of the operating system.
+</dl>
+</td>
+<td width="60%">
+The specified version does not match the currently running version of the operating system.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 <b>RtlVerifyVersionInfo</b> enables a driver to easily verify the presence of a required set of operating system attributes. <b>RtlVerifyVersionInfo</b> is the kernel-mode equivalent of the user-mode <b>VerifyVersionInfo</b> function in the Windows SDK. See the example in the Windows SDK that shows how to verify the system version.
 
 Typically, <b>RtlVerifyVersionInfo</b> returns STATUS_SUCCESS only if all comparisons succeed. However, the major version, minor version, and service pack version are tested in a sequential manner in the following way:
-
+<ul>
+<li>
 If the major version exceeds the minimum required, then the minor version and service pack version are not tested. For example, if the current major version is 6.0, a test for a system greater than or equal to version 5.1 service pack 1 succeeds. The minor version and service pack version are not tested.
 
+</li>
+<li>
 If the minor version exceeds the minimum required, then the service pack version is not tested. For example, if the current major version is 5.2, a test for a system version greater than or equal to version 5.1 service pack 1 succeeds. The service pack version is not tested.
 
+</li>
+<li>
 If the major service pack version exceeds the minimum required, then the minor service pack version is not tested.
 
-To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo</b> twice, once to verify a lower bound on the system version and once to verify an upper bound on the system version.
+</li>
+</ul>To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo</b> twice, once to verify a lower bound on the system version and once to verify an upper bound on the system version.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -225,17 +261,12 @@ To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo<
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_osversioninfow.md">RTL_OSVERSIONINFOW</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
-</dt>
-</dl>
+
  
 
  

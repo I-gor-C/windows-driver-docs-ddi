@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5dc9f04b-8d7c-4ac7-9518-8836d56d5eed
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_CONTROLLER_NUMBER, *PDISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER
+ms.keywords : PDISK_CONTROLLER_NUMBER structure pointer [Storage Devices], ntdddisk/DISK_CONTROLLER_NUMBER, _DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER, ntdddisk/PDISK_CONTROLLER_NUMBER, structs-disk_5cf21b24-f10f-4484-bb76-22dff0b4e32c.xml, PDISK_CONTROLLER_NUMBER, *PDISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER structure [Storage Devices], storage.disk_controller_number
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISK_CONTROLLER_NUMBER
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _DISK_CONTROLLER_NUMBER {
 
 ## Members
 
-        
-            `ControllerNumber`
 
-            Contains the number of the IDE controller for the disk.
-        
-            `DiskNumber`
+`ControllerNumber`
 
-            Contains the number of the disk.
+Contains the number of the IDE controller for the disk.
 
-    ## Remarks
-        After DISK_CONTROLLER_NUMBER receives the controller number and the disk number, these values can be used to determine whether the disk is attached to the primary or to the secondary IDE controller.
+`DiskNumber`
+
+Contains the number of the disk.
+
+## Remarks
+After DISK_CONTROLLER_NUMBER receives the controller number and the disk number, these values can be used to determine whether the disk is attached to the primary or to the secondary IDE controller.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _DISK_CONTROLLER_NUMBER {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_controller_number.md">IOCTL_DISK_CONTROLLER_NUMBER</a>
-</dt>
-</dl>
+
  
 
  

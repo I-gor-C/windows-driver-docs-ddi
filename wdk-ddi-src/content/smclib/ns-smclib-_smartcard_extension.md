@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : 057d82a8-ce5d-416f-b753-297dcbac27b8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SMARTCARD_EXTENSION, SMARTCARD_EXTENSION, *PSMARTCARD_EXTENSION
+ms.keywords : "*PSMARTCARD_EXTENSION, SMARTCARD_EXTENSION structure [Smart Card Reader Devices], PSMARTCARD_EXTENSION structure pointer [Smart Card Reader Devices], smartcrd.smartcard_extension, smclib/SMARTCARD_EXTENSION, PSMARTCARD_EXTENSION, _SMARTCARD_EXTENSION, SMARTCARD_EXTENSION, scstruct_399a1231-e161-450e-b5e2-6fc6035c865f.xml, smclib/PSMARTCARD_EXTENSION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SMARTCARD_EXTENSION
-req.alt-loc : smclib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SMARTCARD_EXTENSION, *PSMARTCARD_EXTENSION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSMARTCARD_EXTENSION, SMARTCARD_EXTENSION"
 req.product : Windows 10 or later.
 ---
 
@@ -68,73 +72,77 @@ typedef struct _SMARTCARD_EXTENSION {
 
 ## Members
 
-        
-            `CardCapabilities`
 
-            Contains capabilities of the inserted smart card.
-        
-            `IoRequest`
+`CardCapabilities`
 
-            A structure with the following members:
-        
-            `LastError`
+Contains capabilities of the inserted smart card.
 
-            Not used.
-        
-            `MajorIoControlCode`
+`IoRequest`
 
-            Contains the major I/O control code.
-        
-            `MinorIoControlCode`
+A structure with the following members:
 
-            Contains the minor I/O control code.
-        
-            `OsData`
+`LastError`
 
-            Contains information that is specific to the operating system and the driver type.
-        
-            `ReaderCapabilities`
+Not used.
 
-            Contains the capabilities of the keyboard reader.
-        
-            `ReaderExtension`
+`MajorIoControlCode`
 
-            Contains data that is specifc to the smart card reader.
-        
-            `ReaderFunction`
+Contains the major I/O control code.
 
-            A pointer to an array of callback functions for readers.
-        
-            `Reserved`
+`MinorIoControlCode`
 
-            Reserved for system use.
-        
-            `SmartcardReply`
+Contains the minor I/O control code.
 
-            Contains data that comes from the reader.
-        
-            `SmartcardRequest`
+`OsData`
 
-            Contains the current command and the data that is sent to the smart card.
-        
-            `T0`
+Contains information that is specific to the operating system and the driver type.
 
-            Contains the data for use with the T=0 protocol.
-        
-            `T1`
+`PerfInfo`
 
-            Contains the data that is used with the T=1 protocol.
-        
-            `VendorAttr`
 
-            Contains information that identifies the reader driver, such as the vendor name, unit number, and serial number.
-        
-            `Version`
 
-            Indicates the version of this structure.
+`ReaderCapabilities`
 
-    ## Remarks
-        This structure is passed to all callback functions.</p>
+Contains the capabilities of the keyboard reader.
+
+`ReaderExtension`
+
+Contains data that is specifc to the smart card reader.
+
+`ReaderFunction`
+
+A pointer to an array of callback functions for readers.
+
+`Reserved`
+
+Reserved for system use.
+
+`SmartcardReply`
+
+Contains data that comes from the reader.
+
+`SmartcardRequest`
+
+Contains the current command and the data that is sent to the smart card.
+
+`T0`
+
+Contains the data for use with the T=0 protocol.
+
+`T1`
+
+Contains the data that is used with the T=1 protocol.
+
+`VendorAttr`
+
+Contains information that identifies the reader driver, such as the vendor name, unit number, and serial number.
+
+`Version`
+
+Indicates the version of this structure.
+
+## Remarks
+This structure is passed to all callback functions.
 
 ## Requirements
 | &nbsp; | &nbsp; |

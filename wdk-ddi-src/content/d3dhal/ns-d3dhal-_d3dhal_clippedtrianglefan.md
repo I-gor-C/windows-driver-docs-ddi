@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c169c483-ffad-470c-9adb-397e275341e3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_CLIPPEDTRIANGLEFAN, D3DHAL_CLIPPEDTRIANGLEFAN, *LPD3DHAL_CLIPPEDTRIANGLEFAN
+ms.keywords : _D3DHAL_CLIPPEDTRIANGLEFAN, LPD3DHAL_CLIPPEDTRIANGLEFAN, d3dstrct_443edf3e-a245-41c3-ba98-2ee9634363b9.xml, *LPD3DHAL_CLIPPEDTRIANGLEFAN, LPD3DHAL_CLIPPEDTRIANGLEFAN structure pointer [Display Devices], D3DHAL_CLIPPEDTRIANGLEFAN, display.d3dhal_clippedtrianglefan, D3DHAL_CLIPPEDTRIANGLEFAN structure [Display Devices], d3dhal/LPD3DHAL_CLIPPEDTRIANGLEFAN, d3dhal/D3DHAL_CLIPPEDTRIANGLEFAN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_CLIPPEDTRIANGLEFAN
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_CLIPPEDTRIANGLEFAN
 ---
 
@@ -51,18 +55,18 @@ typedef struct _D3DHAL_CLIPPEDTRIANGLEFAN {
 
 ## Members
 
-        
-            `dwEdgeFlags`
 
-            Specifies a bitmask that identifies what edges are to be drawn when rendering wire frame (to prevent the drawing of edges introduced by clipping). For more information about this bitmask, see the Remarks section of the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2trianglefan_imm.md">D3DHAL_DP2TRIANGLEFAN_IMM</a> structure.
-        
-            `FirstVertexOffset`
+`dwEdgeFlags`
 
-            Specifies the byte offset into stream 0 of the start of the vertex data (not the index of the vertex).
-        
-            `PrimitiveCount`
+Specifies a bitmask that identifies what edges are to be drawn when rendering wire frame (to prevent the drawing of edges introduced by clipping). For more information about this bitmask, see the Remarks section of the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2trianglefan_imm.md">D3DHAL_DP2TRIANGLEFAN_IMM</a> structure.
 
-            Specifies the number of triangles in the given triangle fan.
+`FirstVertexOffset`
+
+Specifies the byte offset into stream 0 of the start of the vertex data (not the index of the vertex).
+
+`PrimitiveCount`
+
+Specifies the number of triangles in the given triangle fan.
 
 
 ## Requirements
@@ -73,17 +77,14 @@ typedef struct _D3DHAL_CLIPPEDTRIANGLEFAN {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_CLIPPEDTRIANGLEFAN</dt>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-</dl>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+D3DDP2OP_CLIPPEDTRIANGLEFAN
+
  
 
  

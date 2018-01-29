@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : 90d36eb1-d122-4266-9c33-206c9c9b44e8
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST
+ms.keywords : SD.psdbus_initialize_interface_routine, InitializeInterface callback function [Buses], InitializeInterface, PSDBUS_INITIALIZE_INTERFACE_ROUTINE, PSDBUS_INITIALIZE_INTERFACE_ROUTINE, ntddsd/InitializeInterface, sd-rtns_7716bd48-1f82-4b8e-b688-016bb0716e57.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InitializeInterface
-req.alt-loc : ntddsd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
 ---
 
 
@@ -85,14 +89,10 @@ An SD card driver must call its initialization routine before attempting to send
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a>
-</dt>
-</dl>
+
  
 
  

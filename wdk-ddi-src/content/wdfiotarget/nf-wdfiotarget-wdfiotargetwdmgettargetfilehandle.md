@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3312e6ca-bf2c-4a53-bd86-d36d708ed596
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetWdmGetTargetFileHandle
+ms.keywords : wdf.wdfiotargetwdmgettargetfilehandle, PFN_WDFIOTARGETWDMGETTARGETFILEHANDLE, DFIOTargetRef_a3147001-4aa4-4fc2-8000-c6b1fcc4e972.xml, wdfiotarget/WdfIoTargetWdmGetTargetFileHandle, kmdf.wdfiotargetwdmgettargetfilehandle, WdfIoTargetWdmGetTargetFileHandle, WdfIoTargetWdmGetTargetFileHandle method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.15
-req.alt-api : WdfIoTargetWdmGetTargetFileHandle
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -78,12 +82,6 @@ For more information about <b>WdfIoTargetWdmGetTargetFileHandle</b>, see <a href
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
-The following code example obtains a handle to the file that is associated with a specified remote I/O target.
-
-A legacy UMDF driver (version 1.<i>x</i>)  calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff558841">IWDFDevice::RetrieveDeviceName</a> to get the name of the underlying kernel-mode device and then open a handle to it with <b>CreateFile</b>. The driver then sends I/O directly to the device using <b>DeviceIoControl</b>.
-
-Starting in UMDF 2.15, the driver opens the local I/O target by file and retrieves its handle. The framework opens and closes the file handle. The file handle remains valid within the contract of <b>WdfIoTargetWdmGetTargetFileHandle</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -98,14 +96,10 @@ Starting in UMDF 2.15, the driver opens the local I/O target by file and retriev
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-</dt>
-<dt>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfileobject.md">WdfIoTargetWdmGetTargetFileObject</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : debugger\getsymbolinformationwide.htm
 old-project : debugger
 ms.assetid : 8fa6a00d-ad4e-47e2-bffe-4d9d70846fd6
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugAdvanced3, IDebugAdvanced3::GetSymbolInformationWide, GetSymbolInformationWide
+ms.date : 1/19/2018
+ms.keywords : IDebugAdvanced3, GetSymbolInformationWide method [Windows Debugging], GetSymbolInformationWide, GetSymbolInformationWide method [Windows Debugging], IDebugAdvanced3 interface, debugger.getsymbolinformationwide, dbgeng/IDebugAdvanced3::GetSymbolInformationWide, IDebugAdvanced3::GetSymbolInformationWide, IDebugAdvanced3 interface [Windows Debugging], GetSymbolInformationWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugAdvanced3.GetSymbolInformationWide
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -59,7 +63,6 @@ HRESULT GetSymbolInformationWide(
 `Which`
 
 Specifies the piece of information to return.  <i>Which</i> can take one of the values in the follow table.
-
 <table>
 <tr>
 <th>Value</th>
@@ -145,12 +148,34 @@ Receives the size, in characters, of the string returned to <i>StringBuffer</i>.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_FALSE</b></dt>
-</dl>The method was successful. However, the information would not fit in the buffer <i>Buffer</i> or the string would not fit in the buffer <i>StringBuffer</i>, so the information or name was truncated.
+</dl>
+</td>
+<td width="60%">
+The method was successful. However, the information would not fit in the buffer <i>Buffer</i> or the string would not fit in the buffer <i>StringBuffer</i>, so the information or name was truncated.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

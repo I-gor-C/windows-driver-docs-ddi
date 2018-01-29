@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0e7fccd1-1ced-41e7-8e75-8f4fa496ea06
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR
+ms.keywords : "*PKSPIN_DESCRIPTOR, ks/KSPIN_DESCRIPTOR, PKSPIN_DESCRIPTOR structure pointer [Streaming Media Devices], stream.kspin_descriptor, KSPIN_DESCRIPTOR, ks-struct_adeadb36-6cf2-4c36-a1b4-a7852e98303f.xml, PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR structure [Streaming Media Devices], ks/PKSPIN_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPIN_DESCRIPTOR
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR"
 ---
 
 # KSPIN_DESCRIPTOR structure
@@ -62,49 +66,49 @@ typedef struct {
 
 ## Members
 
-        
-            `Category`
 
-            Specifies a pointer to a KS pin category GUID. The KS pin category GUID identifies the general category of functionality that the pin provides. Examples of KS pin category GUIDs are KSNODETYPE_SPEAKER, KSNODETYPE_HEADPHONES, and KSNODETYPE_MICROPHONE, which are all defined in <i>Ksmedia.h</i>. Also see <a href="https://msdn.microsoft.com/fd4a4afd-2c17-4002-87ae-21501b1d75c1">Pin Category Property</a>.
-        
-            `Communication`
+`Category`
 
-            Specifies KSPIN_COMMUNICATION_NONE, KSPIN_COMMUNICATION_SINK, KSPIN_COMMUNICATION_SOURCE, KSPIN_COMMUNICATION_BOTH or KSPIN_COMMUNICATION_BRIDGE. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a> for the meaning of each value.
-        
-            `DataFlow`
+Specifies a pointer to a KS pin category GUID. The KS pin category GUID identifies the general category of functionality that the pin provides. Examples of KS pin category GUIDs are KSNODETYPE_SPEAKER, KSNODETYPE_HEADPHONES, and KSNODETYPE_MICROPHONE, which are all defined in <i>Ksmedia.h</i>. Also see <a href="https://msdn.microsoft.com/fd4a4afd-2c17-4002-87ae-21501b1d75c1">Pin Category Property</a>.
 
-            Specifies either <b>KSPIN_DATAFLOW_IN</b> or KSPIN_DATAFLOW_OUT. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>.
-        
-            `DataRanges`
+`Communication`
 
-            An array of <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structures specifying the data ranges supported by this pin type.
-        
-            `DataRangesCount`
+Specifies KSPIN_COMMUNICATION_NONE, KSPIN_COMMUNICATION_SINK, KSPIN_COMMUNICATION_SOURCE, KSPIN_COMMUNICATION_BOTH or KSPIN_COMMUNICATION_BRIDGE. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a> for the meaning of each value.
 
-            Specifies the size of the array pointed to by <b>DataRanges</b>.
-        
-            `Interfaces`
+`DataFlow`
 
-            An array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.
-        
-            `InterfacesCount`
+Specifies either <b>KSPIN_DATAFLOW_IN</b> or KSPIN_DATAFLOW_OUT. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>.
 
-            Specifies the size of the array pointed to by <b>Interfaces</b>.
-        
-            `Mediums`
+`DataRanges`
 
-            An array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.
-        
-            `MediumsCount`
+An array of <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structures specifying the data ranges supported by this pin type.
 
-            Specifies the number of elements in the array pointed to by <b>Mediums</b>.
-        
-            `Name`
+`DataRangesCount`
 
-            Specifies the GUID of the localized Unicode string name for the pin type, stored in the Registry.
+Specifies the size of the array pointed to by <b>DataRanges</b>.
 
-    ## Remarks
-        Drivers typically define one KSPIN_DESCRIPTOR structure for each pin type they support.
+`Interfaces`
+
+An array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.
+
+`InterfacesCount`
+
+Specifies the size of the array pointed to by <b>Interfaces</b>.
+
+`Mediums`
+
+An array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.
+
+`MediumsCount`
+
+Specifies the number of elements in the array pointed to by <b>Mediums</b>.
+
+`Name`
+
+Specifies the GUID of the localized Unicode string name for the pin type, stored in the Registry.
+
+## Remarks
+Drivers typically define one KSPIN_DESCRIPTOR structure for each pin type they support.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -114,25 +118,18 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
+
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
+
  
 
  

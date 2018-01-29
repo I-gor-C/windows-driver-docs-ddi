@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 22ba50eb-e428-433f-aca0-1d61f31fcd0c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_FIRMWARE_TABLE_INTERFACE, *PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE
+ms.keywords : PDXGK_FIRMWARE_TABLE_INTERFACE structure pointer [Display Devices], display.dxgk_firmware_table_interface, DXGK_FIRMWARE_TABLE_INTERFACE, *PDXGK_FIRMWARE_TABLE_INTERFACE, dispmprt/DXGK_FIRMWARE_TABLE_INTERFACE, dispmprt/PDXGK_FIRMWARE_TABLE_INTERFACE, _DXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE structure [Display Devices], PDXGK_FIRMWARE_TABLE_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_FIRMWARE_TABLE_INTERFACE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DXGK_FIRMWARE_TABLE_INTERFACE, *PDXGK_FIRMWARE_TABLE_INTERFACE
 ---
 
 # _DXGK_FIRMWARE_TABLE_INTERFACE structure
@@ -63,34 +67,34 @@ typedef struct _DXGK_FIRMWARE_TABLE_INTERFACE {
 
 ## Members
 
-        
-            `Context`
 
-            A pointer to a context that is provided by the display port driver.
-        
-            `EnumSystemFirmwareTables`
+`Context`
 
-            A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a> function.
-        
-            `InterfaceDereference`
+A pointer to a context that is provided by the display port driver.
 
-            A pointer to an interface dereference function that is implemented by the display port driver.
-        
-            `InterfaceReference`
+`EnumSystemFirmwareTables`
 
-            A pointer to an interface reference function that is implemented by the display port driver.
-        
-            `ReadSystemFirmwareTable`
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a> function.
 
-            A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh802471">ReadSystemFirmwareTable</a> function.
-        
-            `Size`
+`InterfaceDereference`
 
-            The size, in bytes, of this structure.
-        
-            `Version`
+A pointer to an interface dereference function that is implemented by the display port driver.
 
-            The version number of the System Firmware Table interface. Version number constants are defined in Dispmprt.h (for example, <b>DXGK_FIRMWARE_TABLE_INTERFACE_VERSION_1</b>).
+`InterfaceReference`
+
+A pointer to an interface reference function that is implemented by the display port driver.
+
+`ReadSystemFirmwareTable`
+
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh802471">ReadSystemFirmwareTable</a> function.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+The version number of the System Firmware Table interface. Version number constants are defined in Dispmprt.h (for example, <b>DXGK_FIRMWARE_TABLE_INTERFACE_VERSION_1</b>).
 
 
 ## Requirements
@@ -101,16 +105,12 @@ typedef struct _DXGK_FIRMWARE_TABLE_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh802471">ReadSystemFirmwareTable</a>
-</dt>
-</dl>
+
  
 
  

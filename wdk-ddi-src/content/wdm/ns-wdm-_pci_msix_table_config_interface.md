@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0809a963-a0e7-49ca-b483-c39f1606051e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PCI_MSIX_TABLE_CONFIG_INTERFACE, *PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE
+ms.keywords : PPCI_MSIX_TABLE_CONFIG_INTERFACE structure pointer [Kernel-Mode Driver Architecture], drvr_interface_86de1cfb-1eac-442b-a154-6f23fcab87cd.xml, _PCI_MSIX_TABLE_CONFIG_INTERFACE, wdm/PCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE, PPCI_MSIX_TABLE_CONFIG_INTERFACE, *PPCI_MSIX_TABLE_CONFIG_INTERFACE, wdm/PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE structure [Kernel-Mode Driver Architecture], kernel.pci_msix_table_config_interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista with Service Pack 1 (SP
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_MSIX_TABLE_CONFIG_INTERFACE
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE"
 req.product : Windows 10 or later.
 ---
@@ -56,49 +60,49 @@ typedef struct _PCI_MSIX_TABLE_CONFIG_INTERFACE {
 
 ## Members
 
-        
-            `Context`
 
-            A pointer to interface-specific context information.
-        
-            `GetTableEntry`
+`Context`
 
-            Reserved for future use.
-        
-            `GetTableSize`
+A pointer to interface-specific context information.
 
-            Reserved for future use.
-        
-            `InterfaceDereference`
+`GetTableEntry`
 
-            A pointer to an <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a> routine that decrements the interface's reference count.
-        
-            `InterfaceReference`
+Reserved for future use.
 
-            A pointer to an <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a> routine that increments the interface's reference count.
-        
-            `MaskTableEntry`
+`GetTableSize`
 
-            A pointer to the interface's <a href="..\wdm\nc-wdm-pci_msix_maskunmask_entry.md">MaskTableEntry</a> routine.
-        
-            `SetTableEntry`
+Reserved for future use.
 
-            A pointer to the interface's <a href="..\wdm\nc-wdm-pci_msix_set_entry.md">SetTableEntry</a> routine.
-        
-            `Size`
+`InterfaceDereference`
 
-            The size, in bytes, of this structure.
-        
-            `UnmaskTableEntry`
+A pointer to an <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a> routine that decrements the interface's reference count.
 
-            A pointer to the interface's <a href="..\wdm\nc-wdm-pci_msix_maskunmask_entry.md">UnmaskTableEntry</a> routine.
-        
-            `Version`
+`InterfaceReference`
 
-            The driver-defined interface version.
+A pointer to an <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a> routine that increments the interface's reference count.
 
-    ## Remarks
-        A driver obtains a pointer to the <b>PCI_MSIX_TABLE_CONFIG_INTERFACE</b> structure by sending an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> IRP to its bus driver with <b>InterfaceType</b> set to <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff558787">GUID_MSIX_TABLE_CONFIG_INTERFACE</a>.
+`MaskTableEntry`
+
+A pointer to the interface's <a href="..\wdm\nc-wdm-pci_msix_maskunmask_entry.md">MaskTableEntry</a> routine.
+
+`SetTableEntry`
+
+A pointer to the interface's <a href="..\wdm\nc-wdm-pci_msix_set_entry.md">SetTableEntry</a> routine.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`UnmaskTableEntry`
+
+A pointer to the interface's <a href="..\wdm\nc-wdm-pci_msix_maskunmask_entry.md">UnmaskTableEntry</a> routine.
+
+`Version`
+
+The driver-defined interface version.
+
+## Remarks
+A driver obtains a pointer to the <b>PCI_MSIX_TABLE_CONFIG_INTERFACE</b> structure by sending an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> IRP to its bus driver with <b>InterfaceType</b> set to <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff558787">GUID_MSIX_TABLE_CONFIG_INTERFACE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,31 +112,22 @@ typedef struct _PCI_MSIX_TABLE_CONFIG_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff558787">GUID_MSIX_TABLE_CONFIG_INTERFACE</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pci_msix_maskunmask_entry.md">MaskTableEntry</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
+
+<a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>
+
 <a href="..\wdm\nc-wdm-pci_msix_set_entry.md">SetTableEntry</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff558787">GUID_MSIX_TABLE_CONFIG_INTERFACE</a>
+
 <a href="..\wdm\nc-wdm-pci_msix_maskunmask_entry.md">UnmaskTableEntry</a>
-</dt>
-</dl>
+
  
 
  

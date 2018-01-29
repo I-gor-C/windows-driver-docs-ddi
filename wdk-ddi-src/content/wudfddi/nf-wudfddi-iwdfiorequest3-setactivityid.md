@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 57CB3CED-FE46-4A74-9E23-82640B7EF1DC
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest3, IWDFIoRequest3::SetActivityId, SetActivityId
+ms.keywords : IWDFIoRequest3::SetActivityId, wudfddi/IWDFIoRequest3::SetActivityId, IWDFIoRequest3, wdf.iwdfiorequest3_setactivityid, SetActivityId method, umdf.iwdfiorequest3_setactivityid, IWDFIoRequest3 interface, SetActivityId method, SetActivityId, SetActivityId method, IWDFIoRequest3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFIoRequest3.SetActivityId
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -74,8 +78,6 @@ For more information about activity identifiers, see <a href="https://msdn.micro
 
 The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetactivityid.md">WdfRequestSetActivityId</a>.
 
-For a code example that uses <b>SetActivityId</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -90,17 +92,12 @@ For a code example that uses <b>SetActivityId</b>, see <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/A90FCF3C-B648-4E97-887E-FCE58D7FA13A">IWDFIoRequest3::RetrieveActivityId</a>
-</dt>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetactivityid.md">WdfRequestSetActivityId</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/A90FCF3C-B648-4E97-887E-FCE58D7FA13A">IWDFIoRequest3::RetrieveActivityId</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
+
  
 
  

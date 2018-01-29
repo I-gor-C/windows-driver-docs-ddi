@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d8c4d1d7-3510-48c4-b1a6-062157f4632e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExIsProcessorFeaturePresent
+ms.keywords : kernel.exisprocessorfeaturepresent, wdm/ExIsProcessorFeaturePresent, ExIsProcessorFeaturePresent routine [Kernel-Mode Driver Architecture], k102_4dccea04-24a3-4465-97bc-67bb58cee3b1.xml, ExIsProcessorFeaturePresent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExIsProcessorFeaturePresent
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---

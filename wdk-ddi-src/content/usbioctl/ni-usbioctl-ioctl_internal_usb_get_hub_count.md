@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : c671e983-aa19-4ba4-ba40-de9b4660f935
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_get_hub_count, IOCTL_INTERNAL_USB_GET_HUB_COUNT control code [Buses], IOCTL_INTERNAL_USB_GET_HUB_COUNT, usbioctl/IOCTL_INTERNAL_USB_GET_HUB_COUNT, usbirp_8c73af1c-9349-4b49-8d8d-aaaeb090dc5e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_GET_HUB_COUNT
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---

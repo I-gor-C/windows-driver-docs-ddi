@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7cdc81a9-e468-4da8-bc32-9e9cea1fd60d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.clearunorderedaccessviewuint, ClearUnorderedAccessViewUINT callback function [Display Devices], ClearUnorderedAccessViewUINT, PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT, PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT, d3d10umddi/ClearUnorderedAccessViewUINT, UserModeDisplayDriverDx11_Functions_c31370b0-9955-4ccb-b540-92b15fc27cc5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : ClearUnorderedAccessViewUINT is supported beginning 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClearUnorderedAccessViewUINT
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -90,14 +94,10 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
+
  
 
  

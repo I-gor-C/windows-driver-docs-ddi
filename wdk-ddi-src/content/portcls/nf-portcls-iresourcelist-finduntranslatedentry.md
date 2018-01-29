@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3578eb3a-e9c8-4de3-b959-daff9ac7f1a2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IResourceList, IResourceList::FindUntranslatedEntry, FindUntranslatedEntry
+ms.keywords : FindUntranslatedEntry method [Audio Devices], IResourceList interface [Audio Devices], FindUntranslatedEntry method, audmp-routines_d9b98845-63dd-454d-b1de-dd7db8825e27.xml, audio.iresourcelist_finduntranslatedentry, FindUntranslatedEntry, portcls/IResourceList::FindUntranslatedEntry, IResourceList, IResourceList::FindUntranslatedEntry, FindUntranslatedEntry method [Audio Devices], IResourceList interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IResourceList.FindUntranslatedEntry
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -68,6 +72,8 @@ For each resource type, a macro is defined to call this method. See <a href="..\
 
 The <i>Index</i> parameter indicates which occurrence of an entry of the specified type to find in the list of translated resource entries. The first occurrence in the list has an index of zero.
 
+For each resource type, a macro is defined to call this method. See <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>.
+
 For more information about translated and untranslated (or "raw") resources, see <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>.
 
 ## Requirements
@@ -84,20 +90,14 @@ For more information about translated and untranslated (or "raw") resources, see
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536988">IResourceList::NumberOfEntriesOfType</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+
+<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536982">IResourceList::FindTranslatedEntry</a>
-</dt>
-</dl>
+
  
 
  

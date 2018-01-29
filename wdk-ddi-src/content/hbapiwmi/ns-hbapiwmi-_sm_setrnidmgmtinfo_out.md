@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 30bb4e82-3a51-4d58-87aa-2e1545a9244f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : structs-Fibre_c416e571-7970-4856-937a-a8bd546d8d3d.xml, *PSM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT structure pointer [Storage Devices], hbapiwmi/SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, storage.sm_setrnidmgmtinfo_out, SM_SetRNIDMgmtInfo_OUT structure [Storage Devices], hbapiwmi/PSM_SetRNIDMgmtInfo_OUT, _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_SetRNIDMgmtInfo_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -46,13 +50,13 @@ typedef struct _SM_SetRNIDMgmtInfo_OUT {
 
 ## Members
 
-        
-            `HBAStatus`
 
-            The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+`HBAStatus`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM_SetRNIDMgmtInfo_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.</p>
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM_SetRNIDMgmtInfo_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

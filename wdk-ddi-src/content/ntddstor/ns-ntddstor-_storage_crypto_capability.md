@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9DFAB3C6-F833-487D-87FC-292B3AFAD767
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_CRYPTO_CAPABILITY, STORAGE_CRYPTO_CAPABILITY, *PSTORAGE_CRYPTO_CAPABILITY
+ms.keywords : storage.storage_crypto_capability, STORAGE_CRYPTO_CAPABILITY, STORAGE_CRYPTO_CAPABILITY structure [Storage Devices], PSTORAGE_CRYPTO_CAPABILITY, *PSTORAGE_CRYPTO_CAPABILITY, _STORAGE_CRYPTO_CAPABILITY, ntddstor/STORAGE_CRYPTO_CAPABILITY, PSTORAGE_CRYPTO_CAPABILITY structure pointer [Storage Devices], ntddstor/PSTORAGE_CRYPTO_CAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_CRYPTO_CAPABILITY
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STORAGE_CRYPTO_CAPABILITY, *PSTORAGE_CRYPTO_CAPABILITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTORAGE_CRYPTO_CAPABILITY, STORAGE_CRYPTO_CAPABILITY"
 ---
 
 # _STORAGE_CRYPTO_CAPABILITY structure
@@ -51,30 +55,30 @@ typedef struct _STORAGE_CRYPTO_CAPABILITY {
 
 ## Members
 
-        
-            `AlgorithmId`
 
-            Reserved for system use.
-        
-            `CryptoCapabilityIndex`
+`AlgorithmId`
 
-            Reserved for system use.
-        
-            `DataUnitSizeBitmask`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `KeySize`
+`CryptoCapabilityIndex`
 
-            Reserved for system use.
-        
-            `Size`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `Version`
+`DataUnitSizeBitmask`
 
-            Reserved for system use.
+Reserved for system use.
+
+`KeySize`
+
+Reserved for system use.
+
+`Size`
+
+Reserved for system use.
+
+`Version`
+
+Reserved for system use.
 
 
 ## Requirements

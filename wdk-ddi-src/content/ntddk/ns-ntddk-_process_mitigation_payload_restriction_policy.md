@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f55a47b2-c95c-4b6c-aeff-aed99dd9e43b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
+ms.keywords : kernel.process_mitigation_payload_restriction_policy, _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY structure [Kernel-Mode Driver Architecture], ntddk/PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
 ---
 
 # _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY structure
@@ -63,10 +67,10 @@ typedef struct _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY {
 
 ## Members
 
-        
-            `DUMMYUNIONNAME`
 
-            
+`DUMMYUNIONNAME`
+
+
 
 
 ## Requirements

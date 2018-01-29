@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2f65b381-bf81-45b5-9583-793e4ffb453c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_SAMPLER_DESC, D3D10_DDI_SAMPLER_DESC
+ms.keywords : D3D10_DDI_SAMPLER_DESC structure [Display Devices], D3D10_DDI_SAMPLER_DESC, d3d10umddi/D3D10_DDI_SAMPLER_DESC, UMDisplayDriver_Dx10param_Structs_3bd0d5fd-417c-43ef-9bdf-0073d8651ced.xml, display.d3d10_ddi_sampler_desc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_DDI_SAMPLER_DESC
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_DDI_SAMPLER_DESC
 ---
 
@@ -55,46 +59,46 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 
 ## Members
 
-        
-            `AddressU`
 
-            [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the u coordinate.
-        
-            `AddressV`
+`AddressU`
 
-            [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the v coordinate.
-        
-            `AddressW`
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the u coordinate.
 
-            [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the w coordinate.
-        
-            `BorderColor`
+`AddressV`
 
-            [in] A four-element array of single-precision float vectors for RGBA, where Red == 0. The border color is used when the D3D10_DDI_TEXTURE_ADDRESS_BORDER value is specified in the <b>AddressU</b>, <b>AddressV</b>, or <b>AddressW</b> member. The float should be converted to the appropriate resource format.
-        
-            `ComparisonFunc`
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the v coordinate.
 
-            [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_comparison_func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the sampler-comparison function to perform.
-        
-            `Filter`
+`AddressW`
 
-            [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_filter.md">D3D10_DDI_FILTER</a>-typed value that indicates the filter property for a sampler.
-        
-            `MaxAnisotropy`
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the w coordinate.
 
-            [in] The maximum valid value for the anisotropy texture-stage state.
-        
-            `MaxLOD`
+`BorderColor`
 
-            [in] A single-precision float vector for the maximum level of detail (LOD) for the sampler.
-        
-            `MinLOD`
+[in] A four-element array of single-precision float vectors for RGBA, where Red == 0. The border color is used when the D3D10_DDI_TEXTURE_ADDRESS_BORDER value is specified in the <b>AddressU</b>, <b>AddressV</b>, or <b>AddressW</b> member. The float should be converted to the appropriate resource format.
 
-            [in] A single-precision float vector for the minimum level of detail (LOD) for the sampler.
-        
-            `MipLODBias`
+`ComparisonFunc`
 
-            [in] A single-precision float that affects the level that the driver selects for MIP-map level of detail (LOD).
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_comparison_func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the sampler-comparison function to perform.
+
+`Filter`
+
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_filter.md">D3D10_DDI_FILTER</a>-typed value that indicates the filter property for a sampler.
+
+`MaxAnisotropy`
+
+[in] The maximum valid value for the anisotropy texture-stage state.
+
+`MaxLOD`
+
+[in] A single-precision float vector for the maximum level of detail (LOD) for the sampler.
+
+`MinLOD`
+
+[in] A single-precision float vector for the minimum level of detail (LOD) for the sampler.
+
+`MipLODBias`
+
+[in] A single-precision float that affects the level that the driver selects for MIP-map level of detail (LOD).
 
 
 ## Requirements
@@ -105,25 +109,18 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatesamplersize.md">CalcPrivateSamplerSize</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createsampler.md">CreateSampler</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_comparison_func.md">D3D10_DDI_COMPARISON_FUNC</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_filter.md">D3D10_DDI_FILTER</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatesamplersize.md">CalcPrivateSamplerSize</a>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_filter.md">D3D10_DDI_FILTER</a>
+
  
 
  

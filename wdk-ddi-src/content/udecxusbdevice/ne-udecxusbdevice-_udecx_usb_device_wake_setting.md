@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0CA3B49C-B2A7-497D-A97B-4AC845074BEC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING
+ms.keywords : udecxusbdevice/UdecxUsbDeviceWakeDisabled, UDECX_USB_DEVICE_WAKE_SETTING, udecxusbdevice/UdecxUsbDeviceWakeEnabled, _UDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING enumeration [Buses], UdecxUsbDeviceWakeNotApplicable, buses.udecx_usb_device_wake_setting, udecxusbdevice/UDECX_USB_DEVICE_WAKE_SETTING, udecxusbdevice/UdecxUsbDeviceWakeNotApplicable, PUDECX_USB_DEVICE_WAKE_SETTING enumeration pointer [Buses], PUDECX_USB_DEVICE_WAKE_SETTING, UdecxUsbDeviceWakeEnabled, *PUDECX_USB_DEVICE_WAKE_SETTING, udecxusbdevice/PUDECX_USB_DEVICE_WAKE_SETTING, UdecxUsbDeviceWakeDisabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UDECX_USB_DEVICE_WAKE_SETTING
-req.alt-loc : UdecxUsbDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
 req.product : Windows 10 or later.
 ---
 
@@ -78,11 +82,8 @@ typedef enum _UDECX_USB_DEVICE_WAKE_SETTING {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
-</dt>
-</dl>
+
  
 
  

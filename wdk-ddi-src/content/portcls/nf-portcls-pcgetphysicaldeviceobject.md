@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A7917082-4C3F-445A-AD26-32DE670754E5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcGetPhysicalDeviceObject
+ms.keywords : portcls/PcGetPhysicalDeviceObject, PcGetPhysicalDeviceObject function [Audio Devices], audio.pcgetphysicaldeviceobject, PcGetPhysicalDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting in Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcGetPhysicalDeviceObject
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -77,11 +81,8 @@ The <b>PcGetPhysicalDeviceObject</b> function returns STATUS_SUCCESS if the func
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536208">Audio Port Class Functions</a>
-</dt>
-</dl>
+
  
 
  

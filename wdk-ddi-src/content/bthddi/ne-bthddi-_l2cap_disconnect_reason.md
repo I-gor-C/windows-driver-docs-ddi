@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 34a37d29-c517-45dc-b94d-abffaa91cb31
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _L2CAP_DISCONNECT_REASON, L2CAP_DISCONNECT_REASON
+ms.keywords : L2capDisconnectRequest, bthddi/L2CAP_DISCONNECT_REASON, RadioPoweredDown, HardwareRemoval, bthddi/HardwareRemoval, bthddi/L2capDisconnectRequest, bthddi/RadioPoweredDown, bth_enums_b465d42e-515c-49b9-8d6c-0d576853a41b.xml, L2CAP_DISCONNECT_REASON, _L2CAP_DISCONNECT_REASON, bltooth.l2cap_disconnect_reason, bthddi/HciDisconnect, HciDisconnect, L2CAP_DISCONNECT_REASON enumeration [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista and later versions of Windows.
+req.target-min-winverclnt : Versions: Supported in Windows Vista and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : L2CAP_DISCONNECT_REASON
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : L2CAP_DISCONNECT_REASON
 ---
 
@@ -101,11 +105,8 @@ Currently,
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 14657843-bd48-4cab-b913-c95aeb6a6083
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : SeValidSecurityDescriptor
+ms.keywords : k110_f193d746-c75f-4003-a2b3-a6b752652f9b.xml, kernel.sevalidsecuritydescriptor, SeValidSecurityDescriptor routine [Kernel-Mode Driver Architecture], wdm/SeValidSecurityDescriptor, SeValidSecurityDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeValidSecurityDescriptor
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -85,14 +89,10 @@ To validate a security descriptor that was passed in from user mode, call <b>Rtl
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

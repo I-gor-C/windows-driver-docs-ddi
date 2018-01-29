@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4DD05230-E9CA-4067-984B-7F0540FE8079
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FCP_GET_REQUEST, *PFCP_GET_REQUEST, FCP_GET_REQUEST
+ms.keywords : _FCP_GET_REQUEST, 61883/PFCP_GET_REQUEST, PFCP_GET_REQUEST structure pointer [Buses], 61883/FCP_GET_REQUEST, PFCP_GET_REQUEST, FCP_GET_REQUEST, *PFCP_GET_REQUEST, IEEE.fcp_get_request, FCP_GET_REQUEST structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FCP_GET_REQUEST
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PFCP_GET_REQUEST, FCP_GET_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FCP_GET_REQUEST, *PFCP_GET_REQUEST
 ---
 
 # _FCP_GET_REQUEST structure
@@ -54,18 +58,18 @@ typedef struct _FCP_GET_REQUEST {
 
 ## Members
 
-        
-            `Frame`
 
-            On input, a pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff537113">FCP_FRAME</a> structure to receive the FCP request. On output, the FCP frame written to the caller-allocated <b>FCP_FRAME</b> structure by the protocol driver.
-        
-            `Length`
+`Frame`
 
-            On completion, this field will contain the actual length of the request.
-        
-            `NodeAddress`
+On input, a pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff537113">FCP_FRAME</a> structure to receive the FCP request. On output, the FCP frame written to the caller-allocated <b>FCP_FRAME</b> structure by the protocol driver.
 
-            On output, if the protocol driver is controlling a virtual device, <b>NodeAddress</b> contains the node address of the device that sent the FCP request obtained with this <b>Av61883_GetFcpRequest</b> IRP. The caller must use this node address in the FCP response sent so the 1394 bus driver can route the response to the correct device. 
+`Length`
+
+On completion, this field will contain the actual length of the request.
+
+`NodeAddress`
+
+On output, if the protocol driver is controlling a virtual device, <b>NodeAddress</b> contains the node address of the device that sent the FCP request obtained with this <b>Av61883_GetFcpRequest</b> IRP. The caller must use this node address in the FCP response sent so the 1394 bus driver can route the response to the correct device. 
 
 If the protocol driver is being used to control a physical device, <b>NodeAddress</b> is not used.
 
@@ -78,13 +82,10 @@ If the protocol driver is being used to control a physical device, <b>NodeAddres
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

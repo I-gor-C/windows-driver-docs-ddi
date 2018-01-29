@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 68A0A777-C068-4CE2-AB75-B977B34079C0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SENSOR_CONTROLLER_CONFIG_INIT
+ms.keywords : SENSOR_CONTROLLER_CONFIG_INIT function [Sensor Devices], SENSOR_CONTROLLER_CONFIG_INIT, sensors.sensor_controller_config_init, sensorscx/SENSOR_CONTROLLER_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SENSOR_CONTROLLER_CONFIG_INIT
-req.alt-loc : SensorsCx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -73,11 +77,8 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\sensorscx\ns-sensorscx-_sensor_controller_config.md">SENSOR_CONTROLLER_CONFIG</a>
-</dt>
-</dl>
+
  
 
  

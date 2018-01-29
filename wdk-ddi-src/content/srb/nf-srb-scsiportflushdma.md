@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9cf4286b-1ff7-4113-a2dc-d8813c633dd6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortFlushDma
+ms.keywords : ScsiPortFlushDma routine [Storage Devices], storage.scsiportflushdma, ScsiPortFlushDma, scsiprt_3c2fc1a8-0f37-4735-a9b8-dcec220ee5bf.xml, srb/ScsiPortFlushDma
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortFlushDma
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortFlushDma function
 The <b>ScsiPortFlushDma</b> routine flushes any data cached in the system DMA controller at the end of a transfer or terminates a system DMA transfer.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -80,14 +85,10 @@ Only miniport drivers of subordinate HBAs that use a system DMA controller call 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a>
-</dt>
-<dt>
 <a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a>
+
  
 
  

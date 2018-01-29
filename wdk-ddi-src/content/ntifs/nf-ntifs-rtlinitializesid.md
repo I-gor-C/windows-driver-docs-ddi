@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6b87483f-8d5e-4e1d-839d-2271990dcbaa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlInitializeSid
+ms.keywords : rtlref_fbcc1ed7-4929-415f-9644-b8d9521a5c1a.xml, RtlInitializeSid routine [Installable File System Drivers], ifsk.rtlinitializesid, RtlInitializeSid, ntifs/RtlInitializeSid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlInitializeSid
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -66,12 +70,34 @@ Number of subauthorities to set in the SID. Subauthority values must be set sepa
 ## Return Value
 
 <b>RtlInitializeSid</b> returns one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The SID was successfully initialized.
+</dl>
+</td>
+<td width="60%">
+The SID was successfully initialized.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The specified <i>SubAuthorityCount</i> value is invalid.
+</dl>
+</td>
+<td width="60%">
+The specified <i>SubAuthorityCount</i> value is invalid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,17 +119,12 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_sid_identifier_authority.md">SID_IDENTIFIER_AUTHORITY</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\clientcleanupbindingcontext.htm
 old-project : netvista
 ms.assetid : eebffed4-a2e0-4743-871b-f50f0cdda30d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
+ms.date : 1/18/2018
+ms.keywords : netvista.clientcleanupbindingcontext, ClientCleanupBindingContext callback function [Network Drivers Starting with Windows Vista], ClientCleanupBindingContext, NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, netioddk/ClientCleanupBindingContext, PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN callback function [Network Drivers Starting with Windows Vista], PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, nmrref_75483511-e903-4f9d-bc78-29e823b22f8f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN
-req.alt-loc : netioddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 
@@ -83,8 +87,8 @@ If the client module does not dynamically allocate the memory for its binding co
     <i>ClientCleanupBindingContext</i> callback function. If the client module does not implement a 
     <i>ClientCleanupBindingContext</i> callback function, then it must set the 
     <i>ClientCleanupBindingContext</i> member of the 
-    <a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">
-    NPI_CLIENT_CHARACTERISTICS</a> structure to <b>NULL</b> when it calls the 
+    <mshelp:link keywords="netvista.npi_client_characteristics" tabindex="0"><b>
+    NPI_CLIENT_CHARACTERISTICS</b></mshelp:link> structure to <b>NULL</b> when it calls the 
     <a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a> function to register
     itself with the NMR.
 
@@ -105,25 +109,18 @@ The NMR calls a client module's
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
-</dt>
-<dt>
-<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
-</dt>
-<dt>
-<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
-</dt>
-<dt>
-<a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a>
-</dt>
-<dt>
 <a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
-</dt>
-</dl>
- 
+
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
+
+<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
+
+<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
+
+<a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : adfe720f-695e-49a2-b7b5-940ba11bc83f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlCopySid
+ms.keywords : RtlCopySid, ntifs/RtlCopySid, ifsk.rtlcopysid, rtlref_598b8f18-6cd2-4714-a2da-8e91f6aba065.xml, RtlCopySid routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlCopySid
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -66,9 +70,23 @@ Pointer to the source SID structure to be copied.
 ## Return Value
 
 <b>RtlCopySid</b> returns STATUS_SUCCESS if the SID was successfully copied. Otherwise, it returns an NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The <i>DestinationSid</i> buffer was not large enough to receive a copy of the SID.
+</dl>
+</td>
+<td width="60%">
+The <i>DestinationSid</i> buffer was not large enough to receive a copy of the SID. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -88,23 +106,16 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlequalprefixsid.md">RtlEqualPrefixSid</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlequalsid.md">RtlEqualSid</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtllengthsid.md">RtlLengthSid</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlvalidsid.md">RtlValidSid</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlequalsid.md">RtlEqualSid</a>
+
+<a href="..\ntifs\nf-ntifs-rtlvalidsid.md">RtlValidSid</a>
+
  
 
  

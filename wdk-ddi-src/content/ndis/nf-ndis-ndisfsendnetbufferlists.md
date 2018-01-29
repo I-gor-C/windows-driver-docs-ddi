@@ -7,8 +7,8 @@ old-location : netvista\ndisfsendnetbufferlists.htm
 old-project : netvista
 ms.assetid : fe0896ab-2d20-465f-a8bc-bfc0033701d6
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisFSendNetBufferLists
+ms.date : 1/18/2018
+ms.keywords : netvista.ndisfsendnetbufferlists, NdisFSendNetBufferLists, NdisFSendNetBufferLists function [Network Drivers Starting with Windows Vista], ndis/NdisFSendNetBufferLists, filter_ndis_functions_ref_333e9ef3-6858-4b5b-bca1-4f06da775906.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisFSendNetBufferLists
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_Filter_Driver_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -60,7 +64,7 @@ The NDIS handle that identifies this filter module. NDIS passed the handle to th
 
 `NetBufferList`
 
-
+TBD
 
 `PortNumber`
 
@@ -108,8 +112,8 @@ Before calling
     underlying drivers can retrieve this information with the <b>NET_BUFFER_LIST_INFO</b> macro.
 
 NDIS calls a filter driver's 
-    <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">
-    FilterSendNetBufferLists</a> function to pass on send requests from overlying drivers. A filter driver
+    <mshelp:link keywords="netvista.filtersendnetbufferlists" tabindex="0"><i>
+    FilterSendNetBufferLists</i></mshelp:link> function to pass on send requests from overlying drivers. A filter driver
     can pass on such requests by passing the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>T structures that it received in 
     <i>FilterSendNetBufferLists</i> to 
     <b>NdisFSendNetBufferLists</b>.
@@ -117,8 +121,8 @@ NDIS calls a filter driver's
 As soon as a filter driver calls the 
     <b>NdisFSendNetBufferLists</b> function, it relinquishes ownership of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures and
     all associated resources. NDIS calls the 
-    <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists_complete.md">
-    FilterSendNetBufferListsComplete</a> function to return the structures and data to the filter driver.
+    <mshelp:link keywords="netvista.filtersendnetbufferlistscomplete" tabindex="0"><i>
+    FilterSendNetBufferListsComplete</i></mshelp:link> function to return the structures and data to the filter driver.
     NDIS can collect the structures and data from multiple send requests into a single linked list of
     <b>NET_BUFFER_LIST</b> structures before it passes the list to 
     <i>FilterSendNetBufferListsComplete</i>.
@@ -130,6 +134,10 @@ Until NDIS calls
     <b>NdisFSendNetBufferLists</b>. A filter driver should never try to examine the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
     structures or any associated data after calling 
     <b>NdisFSendNetBufferLists</b>.
+<div class="alert"><b>Note</b>  A filter driver should keep track of send requests that it originates and make
+      sure that it does not call the 
+      <mshelp:link keywords="netvista.ndisfsendnetbufferlistscomplete" tabindex="0"><b>
+      NdisFSendNetBufferListsComplete</b></mshelp:link> function when such requests are complete.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -145,32 +153,23 @@ Until NDIS calls
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-</dt>
-<dt>
+<mshelp:link keywords="netvista.filtersendnetbufferlistscomplete" tabindex="0"><i>
+   FilterSendNetBufferListsComplete</i></mshelp:link>
+
 <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">FilterSendNetBufferLists</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-filter_send_net_buffer_lists_complete.md">
-   FilterSendNetBufferListsComplete</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
-</dt>
-<dt>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFSendNetBufferLists function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFSendNetBufferLists function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

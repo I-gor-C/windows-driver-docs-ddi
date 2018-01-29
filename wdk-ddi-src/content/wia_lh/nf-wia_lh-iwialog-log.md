@@ -7,8 +7,8 @@ old-location : image\iwialog_log.htm
 old-project : image
 ms.assetid : bca012b4-76ae-4ba5-99b4-92a367774de7
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaLog, IWiaLog::Log, Log
+ms.date : 1/18/2018
+ms.keywords : Log method [Imaging Devices], IWiaLog interface, IWiaLog interface [Imaging Devices], Log method, IWiaLog::Log, Log method [Imaging Devices], image.iwialog_log, wia_lh/IWiaLog::Log, IWiaLog_e3605b5e-0494-46a7-85c1-3a0707a74764.xml, IWiaLog, Log
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me, Windows XP, and later. Obso
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaLog.Log
-req.alt-loc : wia_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wia_lh.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ Specifies the type of diagnostic message. This parameter can be WIA_WARNING, WIA
 `lDetail`
 
 Specifies the diagnostic detail level of the message. This parameter can be one of the following values.
-
 <table>
 <tr>
 <th>Level</th>

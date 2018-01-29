@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09b1275f-9755-44f7-ab8a-1b6797bfefde
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_STOPCAPTURE, DXGKARG_STOPCAPTURE
+ms.keywords : _DXGKARG_STOPCAPTURE, d3dkmddi/DXGKARG_STOPCAPTURE, DmStructs_52028d90-8c11-425c-80ca-533664035fa5.xml, display.dxgkarg_stopcapture, DXGKARG_STOPCAPTURE, DXGKARG_STOPCAPTURE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_STOPCAPTURE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_STOPCAPTURE
 ---
 
@@ -46,10 +50,10 @@ typedef struct _DXGKARG_STOPCAPTURE {
 
 ## Members
 
-        
-            `hAllocation`
 
-            [in] A handle to the allocation that is used for a capture buffer. The display miniport driver stops the capture hardware from using the allocation.
+`hAllocation`
+
+[in] A handle to the allocation that is used for a capture buffer. The display miniport driver stops the capture hardware from using the allocation.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _DXGKARG_STOPCAPTURE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_stopcapture.md">DxgkDdiStopCapture</a>
-</dt>
-</dl>
+
  
 
  

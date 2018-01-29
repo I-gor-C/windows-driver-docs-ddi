@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : da3784a8-6fc5-47cc-932e-52ec16392e49
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExDeletePagedLookasideList
+ms.keywords : k102_6e78a15a-e6e1-4282-a8de-a4f38f74ebc6.xml, kernel.exdeletepagedlookasidelist, ExDeletePagedLookasideList, ExDeletePagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExDeletePagedLookasideList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExDeletePagedLookasideList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,14 +84,10 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>
-</dt>
-</dl>
+
  
 
  

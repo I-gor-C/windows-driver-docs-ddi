@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 158411ee-6cc1-466d-b772-fe380b55baef
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033, D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
+ms.keywords : display.d3d12ddiarg-create-video-decoder-heap-0033, D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033, d3d12umddi/D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033, D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
 ---
 
@@ -55,38 +59,38 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 {
 
 ## Members
 
-        
-            `BitRate`
 
-            The number of bits per second.
-        
-            `Configuration`
+`BitRate`
 
-            The video decode configuration.
-        
-            `DecodeHeight`
+The number of bits per second.
 
-            Decode height.
-        
-            `DecodeWidth`
+`Configuration`
 
-            Decode width.
-        
-            `Format`
+The video decode configuration.
 
-            The resource data format.
-        
-            `FrameRate`
+`DecodeHeight`
 
-            A rational number that specifies the frame rate.
-        
-            `MaxDecodePictureBufferCount`
+Decode height.
 
-            Maximum decode picture buffer count.
-        
-            `NodeMask`
+`DecodeWidth`
 
-            The set of nodes.
+Decode width.
+
+`Format`
+
+The resource data format.
+
+`FrameRate`
+
+A rational number that specifies the frame rate.
+
+`MaxDecodePictureBufferCount`
+
+Maximum decode picture buffer count.
+
+`NodeMask`
+
+The set of nodes.
 
 
 ## Requirements

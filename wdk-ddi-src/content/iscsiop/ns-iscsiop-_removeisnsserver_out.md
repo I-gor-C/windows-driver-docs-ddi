@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 42866b25-280c-492c-8e98-1a04a46561a4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemoveiSNSServer_OUT, RemoveiSNSServer_OUT, *PRemoveiSNSServer_OUT
+ms.keywords : PRemoveiSNSServer_OUT, storage.removeisnsserver_out, PRemoveiSNSServer_OUT structure pointer [Storage Devices], structs-iSCSI_8d8df1a1-3b89-42a1-9ef8-3e749a94b531.xml, *PRemoveiSNSServer_OUT, iscsiop/RemoveiSNSServer_OUT, iscsiop/PRemoveiSNSServer_OUT, RemoveiSNSServer_OUT structure [Storage Devices], RemoveiSNSServer_OUT, _RemoveiSNSServer_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RemoveiSNSServer_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RemoveiSNSServer_OUT, *PRemoveiSNSServer_OUT
 ---
 
@@ -46,13 +50,13 @@ typedef struct _RemoveiSNSServer_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            On output from <b>RemoveISNSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`Status`
 
-    ## Remarks
-        It is optional that you implement this method.
+On output from <b>RemoveISNSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+It is optional that you implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _RemoveiSNSServer_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
 <a href="..\iscsiop\ns-iscsiop-_removeisnsserver_in.md">RemoveiSNSServer_IN</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
  
 
  

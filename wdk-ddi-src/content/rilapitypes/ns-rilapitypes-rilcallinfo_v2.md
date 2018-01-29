@@ -7,8 +7,8 @@ old-location : netvista\rilcallinfo_v2_2.htm
 old-project : netvista
 ms.assetid : bf7d8586-21da-4f62-b9e6-4ffe7ca546e1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLINFO_V2, *LPRILCALLINFO_V2, RILCALLINFO_V2
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILCALLINFO_V2, netvista.rilcallinfo_v2_2, RILCALLINFO_V2, *LPRILCALLINFO_V2, RILCALLINFO_V2 structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLINFO_V2
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILCALLINFO_V2, RILCALLINFO_V2"
 req.product : Windows 10 or later.
 ---
@@ -63,74 +67,74 @@ typedef struct _RILCALLINFO_V2 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwDirection`
+`cbSize`
 
-            
-        
-            `dwDisconnectInitiator`
 
-            
-        
-            `dwDisconnectReason`
 
-            
-        
-            `dwExecutor`
+`dwDirection`
 
-            
-        
-            `dwFlags`
 
-            
-        
-            `dwID`
 
-            
-        
-            `dwMultiparty`
+`dwDisconnectInitiator`
 
-            
-        
-            `dwNamePresentationIndicator`
 
-            
-        
-            `dwNumberPresentationIndicator`
 
-            
-        
-            `dwParams`
+`dwDisconnectReason`
 
-            
-        
-            `dwStatus`
 
-            
-        
-            `dwType`
 
-            
-        
-            `raAddress`
+`dwExecutor`
 
-            
-        
-            `rsaSubAddress`
 
-            
-        
-            `stDisconnectDetails`
 
-            
-        
-            `wszDescription`
+`dwFlags`
 
-            
+
+
+`dwID`
+
+
+
+`dwMultiparty`
+
+
+
+`dwNamePresentationIndicator`
+
+
+
+`dwNumberPresentationIndicator`
+
+
+
+`dwParams`
+
+
+
+`dwStatus`
+
+
+
+`dwType`
+
+
+
+`raAddress`
+
+
+
+`rsaSubAddress`
+
+
+
+`stDisconnectDetails`
+
+
+
+`wszDescription`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4e5c8942-3ce2-40d8-8cd7-436a5ebbc8ee
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IDrmPort2, IDrmPort2::ForwardContentToDeviceObject, ForwardContentToDeviceObject
+ms.keywords : IDrmPort2 interface [Audio Devices], ForwardContentToDeviceObject method, audmp-routines_6a59757e-e53e-4edb-aaa3-7dc695a1bc16.xml, audio.idrmport2_forwardcontenttodeviceobject, IDrmPort2::ForwardContentToDeviceObject, IDrmPort2, ForwardContentToDeviceObject method [Audio Devices], ForwardContentToDeviceObject, portcls/IDrmPort2::ForwardContentToDeviceObject, ForwardContentToDeviceObject method [Audio Devices], IDrmPort2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDrmPort2.ForwardContentToDeviceObject
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -63,10 +67,6 @@ NTSTATUS ForwardContentToDeviceObject();
 
 See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
 
-See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
-
-See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
-
 ## Remarks
 
 See comments in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
@@ -85,14 +85,10 @@ See comments in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">Drm
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-idrmport2.md">IDrmPort2</a>
-</dt>
-<dt>
 <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-idrmport2.md">IDrmPort2</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4f349089-ff50-4f69-941f-ba3e9225abec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _HW_TIME_CONTEXT, HW_TIME_CONTEXT, *PHW_TIME_CONTEXT
+ms.keywords : strmini/PHW_TIME_CONTEXT, *PHW_TIME_CONTEXT, _HW_TIME_CONTEXT, strmini/HW_TIME_CONTEXT, HW_TIME_CONTEXT structure [Streaming Media Devices], PHW_TIME_CONTEXT, strclass-struct_2c3e01ab-3b53-47cb-816f-994c0b7113b0.xml, HW_TIME_CONTEXT, PHW_TIME_CONTEXT structure pointer [Streaming Media Devices], stream.hw_time_context
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HW_TIME_CONTEXT
-req.alt-loc : strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HW_TIME_CONTEXT, *PHW_TIME_CONTEXT
 req.product : Windows 10 or later.
 ---
@@ -51,30 +55,38 @@ typedef struct _HW_TIME_CONTEXT {
 
 ## Members
 
-        
-            `Function`
 
-            Specifies the type of time value that is stored in the <b>Time</b> member. The possible values are:
-        
-            `HwDeviceExtension`
+`_HW_DEVICE_EXTENSION`
 
-            Points to the minidriver's device extension buffer. The class driver fills in this member when it passes the structure to a stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568452">StrMiniClock</a>, or to the callback passed to <a href="..\strmini\nf-strmini-streamclassquerymasterclock.md">StreamClassQueryMasterClock</a>. When passed as a parameter to <a href="..\strmini\nf-strmini-streamclassquerymasterclocksync.md">StreamClassQueryMasterClockSync</a>, the caller must fill in this member itself.
+
+
+`_HW_STREAM_OBJECT`
+
+
+
+`Function`
+
+Specifies the type of time value that is stored in the <b>Time</b> member. The possible values are:
+
+`HwDeviceExtension`
+
+Points to the minidriver's device extension buffer. The class driver fills in this member when it passes the structure to a stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568452">StrMiniClock</a>, or to the callback passed to <a href="..\strmini\nf-strmini-streamclassquerymasterclock.md">StreamClassQueryMasterClock</a>. When passed as a parameter to <a href="..\strmini\nf-strmini-streamclassquerymasterclocksync.md">StreamClassQueryMasterClockSync</a>, the caller must fill in this member itself.
 
 The minidriver may use its device extension to record private information global to the minidriver. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>, and <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
-        
-            `HwStreamObject`
 
-            When the class driver passes HW_TIME_CONTEXT to a stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568452">StrMiniClock</a> routine, this member points to the stream's <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a> structure.
+`HwStreamObject`
+
+When the class driver passes HW_TIME_CONTEXT to a stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568452">StrMiniClock</a> routine, this member points to the stream's <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a> structure.
 
 When the class driver passes a completed HW_TIME_CONTEXT structure to the callback provided by <a href="..\strmini\nf-strmini-streamclassquerymasterclock.md">StreamClassQueryMasterClock</a>, it fills in this member with a pointer to the stream object of the stream that makes the query request.
-        
-            `SystemTime`
 
-            The current system time, in 100-nanosecond units.
-        
-            `Time`
+`SystemTime`
 
-            The time value, in 100-nanosecond units, specified by the <b>Function</b> member.
+The current system time, in 100-nanosecond units.
+
+`Time`
+
+The time value, in 100-nanosecond units, specified by the <b>Function</b> member.
 
 
 ## Requirements
@@ -85,22 +97,16 @@ When the class driver passes a completed HW_TIME_CONTEXT structure to the callba
 | **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\strmini\ns-strmini-_hw_clock_object.md">HW_CLOCK_OBJECT</a>
-</dt>
-<dt>
 <a href="..\strmini\nf-strmini-streamclassquerymasterclock.md">StreamClassQueryMasterClock</a>
-</dt>
-<dt>
-<a href="..\strmini\nf-strmini-streamclassquerymasterclocksync.md">StreamClassQueryMasterClockSync</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568452">StrMiniClock</a>
-</dt>
-</dl>
+
+<a href="..\strmini\nf-strmini-streamclassquerymasterclocksync.md">StreamClassQueryMasterClockSync</a>
+
+<a href="..\strmini\ns-strmini-_hw_clock_object.md">HW_CLOCK_OBJECT</a>
+
  
 
  

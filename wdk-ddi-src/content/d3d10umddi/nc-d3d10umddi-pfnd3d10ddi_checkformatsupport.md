@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 463ab1e5-08b1-45a1-b7d8-bdfacb3d4bdb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.checkformatsupport, CheckFormatSupport callback function [Display Devices], CheckFormatSupport, PFND3D10DDI_CHECKFORMATSUPPORT, PFND3D10DDI_CHECKFORMATSUPPORT, d3d10umddi/CheckFormatSupport, D3D10_DDI_FORMAT_SUPPORT_SHADER_SAMPLE, D3D10_DDI_FORMAT_SUPPORT_RENDERTARGET, D3D10_DDI_FORMAT_SUPPORT_BLENDABLE, D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_RENDERTARGET, D3D10_DDI_FORMAT_SUPPORT_MULTISAMPLE_LOAD, D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED, D3D11_1DDI_FORMAT_SUPPORT_DECODER_OUTPUT, D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_OUTPUT, D3D11_1DDI_FORMAT_SUPPORT_VIDEO_PROCESSOR_INPUT, D3D11_1DDI_FORMAT_SUPPORT_VERTEX_BUFFER, D3D11_1DDI_FORMAT_SUPPORT_UAV_WRITES, D3D11_1DDI_FORMAT_SUPPORT_BUFFER, D3D11_1DDI_FORMAT_SUPPORT_CAPTURE, D3D11_1DDI_FORMAT_SUPPORT_VIDEO_ENCODER, D3D11_1DDI_FORMAT_SUPPORT_OUTPUT_MERGER_LOGIC_OP, D3D11_1DDI_FORMAT_SUPPORT_SHADER_GATHER, D3D11_1DDI_FORMAT_SUPPORT_MULTIPLANE_OVERLAY, D3DWDDM1_3DDI_FORMAT_SUPPORT_TILED, D3D10_DDI_FORMAT_SUPPORT_NOT_SUPPORTED, UserModeDisplayDriverDx10_Functions_4b619814-6ced-4177-a158-5311acb99f6d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CheckFormatSupport
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -90,20 +94,14 @@ The driver can call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterro
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/dce61bc4-4ed5-4e64-84e8-6db88025e5c2">DXGI_FORMAT</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/2aef590f-2328-4175-ab60-c72b1fd83db7">DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/dce61bc4-4ed5-4e64-84e8-6db88025e5c2">DXGI_FORMAT</a>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-</dl>
+
  
 
  

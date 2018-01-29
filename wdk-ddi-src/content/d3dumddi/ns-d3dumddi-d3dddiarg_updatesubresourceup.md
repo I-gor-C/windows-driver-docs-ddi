@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 27BE493F-8F70-4FBF-AA58-D6ACB27BFC2D
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_UPDATESUBRESOURCEUP, D3DDDIARG_UPDATESUBRESOURCEUP
+ms.keywords : D3DDDIARG_UPDATESUBRESOURCEUP, D3DDDIARG_UPDATESUBRESOURCEUP structure [Display Devices], display.d3dddiarg_updatesubresourceup, d3dumddi/D3DDDIARG_UPDATESUBRESOURCEUP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_UPDATESUBRESOURCEUP
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_UPDATESUBRESOURCEUP
 ---
 
@@ -52,34 +56,34 @@ typedef struct D3DDDIARG_UPDATESUBRESOURCEUP {
 
 ## Members
 
-        
-            `DepthPitch`
 
-            The offset, in bytes, to move to the next depth slice of source data.
-        
-            `DstBox`
+`DepthPitch`
 
-            A destination region, of type  <a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>, of the subresource to which data is to be copied. If <b>Flags</b>-&gt;<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">BoxValid</a> is not set, the entire subresource must be updated.
-        
-            `Flags`
+The offset, in bytes, to move to the next depth slice of source data.
 
-            A <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a> structure that specifies additional characteristics of the subresource update operation.
-        
-            `hResource`
+`DstBox`
 
-            A handle to the destination resource to copy to.
-        
-            `pSysMemUP`
+A destination region, of type  <a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>, of the subresource to which data is to be copied. If <b>Flags</b>-&gt;<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">BoxValid</a> is not set, the entire subresource must be updated.
 
-            A pointer to the beginning address of the source data that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updatesubresourceup.md">pfnUpdateSubresourceUP</a> function copies to update the destination subresouce.
-        
-            `RowPitch`
+`Flags`
 
-            The offset, in bytes, to move to the next row of source data.
-        
-            `SubResourceIndex`
+A <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a> structure that specifies additional characteristics of the subresource update operation.
 
-            The index of the destination subresource to which data is to be copied.
+`hResource`
+
+A handle to the destination resource to copy to.
+
+`pSysMemUP`
+
+A pointer to the beginning address of the source data that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updatesubresourceup.md">pfnUpdateSubresourceUP</a> function copies to update the destination subresouce.
+
+`RowPitch`
+
+The offset, in bytes, to move to the next row of source data.
+
+`SubResourceIndex`
+
+The index of the destination subresource to which data is to be copied.
 
 
 ## Requirements
@@ -90,19 +94,14 @@ typedef struct D3DDDIARG_UPDATESUBRESOURCEUP {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updatesubresourceup.md">pfnUpdateSubresourceUP</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a>
+
  
 
  

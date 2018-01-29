@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4f9dd025-b49f-44ab-88c4-38139e6cbee2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey, IRegistryKey::SetValueKey, SetValueKey
+ms.keywords : SetValueKey, portcls/IRegistryKey::SetValueKey, audmp-routines_a7668b45-2b58-4a49-b1ef-a8d0755225b0.xml, audio.iregistrykey_setvaluekey, SetValueKey method [Audio Devices], IRegistryKey interface, IRegistryKey interface [Audio Devices], SetValueKey method, IRegistryKey, SetValueKey method [Audio Devices], IRegistryKey::SetValueKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRegistryKey.SetValueKey
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -59,56 +63,30 @@ Pointer to a string containing the name of the value entry to set. The name stri
 
 Specifies the type of the data to be written for <i>ValueName</i>. Set this parameter to one of the following system-defined types:
 
-<dl>
-<dd>
 REG_BINARY
 
-</dd>
-<dd>
 REG_DWORD
 
-</dd>
-<dd>
 REG_DWORD_LITTLE_ENDIAN
 
-</dd>
-<dd>
 REG_DWORD_BIG_ENDIAN
 
-</dd>
-<dd>
 REG_EXPAND_SZ
 
-</dd>
-<dd>
 REG_LINK
 
-</dd>
-<dd>
 REG_MULTI_SZ
 
-</dd>
-<dd>
 REG_NONE
 
-</dd>
-<dd>
 REG_SZ
 
-</dd>
-<dd>
 REG_RESOURCE_LIST
 
-</dd>
-<dd>
 REG_RESOURCE_REQUIREMENTS_LIST
 
-</dd>
-<dd>
 REG_FULL_RESOURCE_DESCRIPTOR
 
-</dd>
-</dl>
 These parameter types are explained in <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.
 
 `Data`
@@ -123,12 +101,34 @@ Specifies the size in bytes of <i>Data</i>. This parameter specifies how many by
 ## Return Value
 
 <code>SetValueKey</code> returns STATUS_SUCCESS if the call was successful in setting the specified value key. Otherwise, the method returns an appropriate error code. The following table shows some of the possible return status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Indicates that one of the parameters passed to the method is not valid.
+</dl>
+</td>
+<td width="60%">
+Indicates that one of the parameters passed to the method is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>Indicates that method was unable to find the named value key.
+</dl>
+</td>
+<td width="60%">
+Indicates that method was unable to find the named value key.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -148,17 +148,12 @@ If the given key has no existing value entry with a name matching the given <i>V
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

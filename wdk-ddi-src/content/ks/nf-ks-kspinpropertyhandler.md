@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b721b79b-93f3-4dc8-853d-543222464341
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinPropertyHandler
+ms.keywords : KsPinPropertyHandler, ksfunc_4ebda111-4b9a-4e8e-b050-af336121bcf0.xml, stream.kspinpropertyhandler, KsPinPropertyHandler function [Streaming Media Devices], ks/KsPinPropertyHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinPropertyHandler
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -79,7 +83,7 @@ The <b>KsPinPropertyHandler</b> function returns STATUS_SUCCESS or an error spec
 
 ## Remarks
 
-Do not use the <b>KsPinPropertyHandler</b> function to define a pin property set; a pin property set can be more easily defined using the DEFINE_KSPROPERY_PINSET macro.</p>
+Do not use the <b>KsPinPropertyHandler</b> function to define a pin property set; a pin property set can be more easily defined using the DEFINE_KSPROPERY_PINSET macro.
 
 ## Requirements
 | &nbsp; | &nbsp; |

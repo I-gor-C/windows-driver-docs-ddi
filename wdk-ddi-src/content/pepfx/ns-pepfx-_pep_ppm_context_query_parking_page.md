@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F714D6EE-90F9-4FC6-95EB-32225284DC1F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_CONTEXT_QUERY_PARKING_PAGE, PEP_PPM_CONTEXT_QUERY_PARKING_PAGE, *PPEP_PPM_CONTEXT_QUERY_PARKING_PAGE
+ms.keywords : PPEP_PPM_CONTEXT_QUERY_PARKING_PAGE, _PEP_PPM_CONTEXT_QUERY_PARKING_PAGE, pepfx/PEP_PPM_CONTEXT_QUERY_PARKING_PAGE, kernel.pep_ppm_context_query_parking_page, *PPEP_PPM_CONTEXT_QUERY_PARKING_PAGE, PEP_PPM_CONTEXT_QUERY_PARKING_PAGE, PPEP_PPM_CONTEXT_QUERY_PARKING_PAGE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_CONTEXT_QUERY_PARKING_PAGE structure [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_CONTEXT_QUERY_PARKING_PAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_CONTEXT_QUERY_PARKING_PAGE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_PPM_CONTEXT_QUERY_PARKING_PAGE, *PPEP_PPM_CONTEXT_QUERY_PARKING_PAGE
 ---
 
@@ -47,17 +51,17 @@ typedef struct _PEP_PPM_CONTEXT_QUERY_PARKING_PAGE {
 
 ## Members
 
-        
-            `PhysicalPageAddress`
 
-            The physical memory address of the parking page.
-        
-            `VirtualPageAddress`
+`PhysicalPageAddress`
 
-            The virtual memory address of the parking page.
+The physical memory address of the parking page.
 
-    ## Remarks
-        The output buffer for a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186798">PEP_PPM_POWER_CONTROL_QUERY_PARKING_PAGE</a> power control request is a <b>PEP_PPM_CONTEXT_QUERY_PARKING_PAGE</b> structure.
+`VirtualPageAddress`
+
+The virtual memory address of the parking page.
+
+## Remarks
+The output buffer for a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186798">PEP_PPM_POWER_CONTROL_QUERY_PARKING_PAGE</a> power control request is a <b>PEP_PPM_CONTEXT_QUERY_PARKING_PAGE</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _PEP_PPM_CONTEXT_QUERY_PARKING_PAGE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186798">PEP_PPM_POWER_CONTROL_QUERY_PARKING_PAGE</a>
-</dt>
-</dl>
+
  
 
  

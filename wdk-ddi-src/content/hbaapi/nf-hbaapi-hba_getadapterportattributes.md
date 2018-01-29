@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f1f5dc4e-8069-4e3e-94a0-a9a7c359bdb4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetAdapterPortAttributes
+ms.keywords : HBA_GetAdapterPortAttributes, hbaapi/HBA_GetAdapterPortAttributes, storage.hba_getadapterportattributes, HBA_GetAdapterPortAttributes routine [Storage Devices], fibreHBA_rtns_c49b4806-e5cf-40fa-a166-8f2ab58259ae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_GetAdapterPortAttributes
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -52,7 +56,7 @@ HBA_STATUS HBA_API HBA_GetAdapterPortAttributes(
 
 `Handle`
 
-
+TBD
 
 `PortIndex`
 
@@ -85,17 +89,12 @@ The <b>HBA_GetAdapterPortAttributes</b> routine retrieves attributes for remote 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_portattributes.md">HBA_PortAttributes</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

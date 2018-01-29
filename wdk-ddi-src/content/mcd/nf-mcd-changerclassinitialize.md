@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b19f85f7-fe51-4539-8c36-e3c6a299faad
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerClassInitialize
+ms.keywords : chgrclas_f0aa8547-be16-44aa-bd15-a4828d7f57f5.xml, storage.changerclassinitialize, mcd/ChangerClassInitialize, ChangerClassInitialize, ChangerClassInitialize routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerClassInitialize
-req.alt-loc : Mcd.lib,Mcd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mcd.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -60,7 +64,7 @@ Pointer to the registry path for changer miniclass driver. This is also passed a
 
 `ChangerInitData`
 
-
+TBD
 
 
 ## Return Value
@@ -89,14 +93,10 @@ Changer miniclass drivers must allocate an <a href="..\mcd\ns-mcd-_mcd_init_data
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\mcd\ns-mcd-_mcd_init_data.md">MCD_INIT_DATA</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
-</dt>
-</dl>
+
+<a href="..\mcd\ns-mcd-_mcd_init_data.md">MCD_INIT_DATA</a>
+
  
 
  

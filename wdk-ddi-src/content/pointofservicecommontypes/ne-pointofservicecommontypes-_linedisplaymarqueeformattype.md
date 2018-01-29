@@ -7,8 +7,8 @@ old-location : pos\linedisplaymarqueeformattype.htm
 old-project : pos
 ms.assetid : BB182083-58F2-4706-9D6B-B581325BDD48
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _LineDisplayMarqueeFormatType, LineDisplayMarqueeFormatType
+ms.date : 1/18/2018
+ms.keywords : pointofservicecommontypes/PLineDisplayMarqueeFormatType, LineDisplayMarqueeFormatType, PLineDisplayMarqueeFormatType, pointofservicecommontypes/LineDisplayMarqueeFormatType, PLineDisplayMarqueeFormatType enumeration pointer, pointofservicecommontypes/, LineDisplayMarqueeFormatType enumeration, _LineDisplayMarqueeFormatType, pos.linedisplaymarqueeformattype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LineDisplayMarqueeFormatType
-req.alt-loc : pointofservicecommontypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LineDisplayMarqueeFormatType
 ---
 
@@ -47,6 +51,16 @@ typedef enum _LineDisplayMarqueeFormatType {
 ## Constants
 
 <table>
+
+<tr>
+<td>MarqueeFormatPlace</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MarqueeFormatWalk</td>
+<td></td>
+</tr>
 </table>
 
 

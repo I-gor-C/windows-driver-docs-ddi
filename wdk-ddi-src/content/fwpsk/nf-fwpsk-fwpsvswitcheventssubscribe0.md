@@ -7,8 +7,8 @@ old-location : netvista\fwpsvswitcheventssubscribe0.htm
 old-project : netvista
 ms.assetid : 479ff048-f57f-42ca-8787-f87ed055fdbf
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FwpsvSwitchEventsSubscribe0
+ms.date : 1/18/2018
+ms.keywords : netvista.fwpsvswitcheventssubscribe0, FwpsvSwitchEventsSubscribe0, fwpsk/FwpsvSwitchEventsSubscribe0, FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FwpsvSwitchEventsSubscribe0
-req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fwpkclnt.lib
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
@@ -83,13 +87,35 @@ A pointer to a variable that contains a unique identifier that WFP assigns to th
 
 The 
      <b>FwpsvSwitchEventsSubscribe0</b> function returns one of the following NTSTATUS codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>A handle to the classify request was successfully returned. The variable that the 
+</dl>
+</td>
+<td width="60%">
+A handle to the classify request was successfully returned. The variable that the 
        <i>classifyHandle</i> parameter points to contains the handle for the classify request.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Other status codes</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -115,16 +141,12 @@ The callout driver must later call
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
-</dt>
-<dt>
+
 <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

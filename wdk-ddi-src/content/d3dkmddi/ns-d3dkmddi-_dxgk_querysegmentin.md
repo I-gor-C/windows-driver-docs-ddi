@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5a3e6edf-40c7-49f3-8394-0e54c080c92c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_QUERYSEGMENTIN, DXGK_QUERYSEGMENTIN
+ms.keywords : d3dkmddi/DXGK_QUERYSEGMENTIN, DXGK_QUERYSEGMENTIN, display.dxgk_querysegmentin, DmStructs_d47cf13d-48ec-49fd-b80c-4df1501db329.xml, DXGK_QUERYSEGMENTIN structure [Display Devices], _DXGK_QUERYSEGMENTIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_QUERYSEGMENTIN
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_QUERYSEGMENTIN
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGK_QUERYSEGMENTIN {
 
 ## Members
 
-        
-            `AgpApertureBase`
 
-            [in] A PHYSICAL_ADDRESS data type (which is defined as LARGE_INTEGER) that indicates the base address of the AGP aperture.
-        
-            `AgpApertureSize`
+`AgpApertureBase`
 
-            [in] A LARGE_INTEGER that indicates the size, in bytes, of the available AGP aperture.
-        
-            `AgpFlags`
+[in] A PHYSICAL_ADDRESS data type (which is defined as LARGE_INTEGER) that indicates the base address of the AGP aperture.
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a> structure that identifies properties for the available AGP aperture in bit-field flags.
+`AgpApertureSize`
+
+[in] A LARGE_INTEGER that indicates the size, in bytes, of the available AGP aperture.
+
+`AgpFlags`
+
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a> structure that identifies properties for the available AGP aperture in bit-field flags.
 
 
 ## Requirements
@@ -70,25 +74,18 @@ typedef struct _DXGK_QUERYSEGMENTIN {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
+
  
 
  

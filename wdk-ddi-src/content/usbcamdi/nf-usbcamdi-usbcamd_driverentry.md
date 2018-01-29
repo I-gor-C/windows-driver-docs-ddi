@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ac77b121-2495-4739-8c8f-96d6c48e4dc6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : USBCAMD_DriverEntry
+ms.keywords : stream.usbcamd_driverentry, usbcamdi/USBCAMD_DriverEntry, USBCAMD_DriverEntry function [Streaming Media Devices], usbcmdpr_3aeb66f4-1729-400c-af6d-6e1290c9fe3b.xml, USBCAMD_DriverEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBCAMD_DriverEntry
-req.alt-loc : usbcamd2.lib,usbcamd2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbcamd2.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -67,7 +71,7 @@ Specifies the size, in bytes, required for the minidriver's device-specific cont
 
 `FrameCOntextSize`
 
-
+TBD
 
 `ReceivePacket`
 
@@ -99,17 +103,12 @@ A camera minidriver must call <b>USBCAMD_DriverEntry</b> from the minidriver's <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine.md">CamNewVideoFrame</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine.md">CamProcessRawVideoFrame</a>
-</dt>
-<dt>
 <a href="..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md">AdapterReceivePacket</a>
-</dt>
-</dl>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine.md">CamProcessRawVideoFrame</a>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine.md">CamNewVideoFrame</a>
+
  
 
  

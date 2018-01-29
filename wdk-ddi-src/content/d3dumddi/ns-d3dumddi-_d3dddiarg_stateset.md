@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0e2d7e78-bdf1-4582-a95c-1cbdd498c200
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_STATESET, D3DDDIARG_STATESET
+ms.keywords : _D3DDDIARG_STATESET, display.d3dddiarg_stateset, UMDisplayDriver_param_Structs_926f9aca-1ecc-4086-88b7-0d07df9a05ae.xml, D3DDDIARG_STATESET, D3DDDIARG_STATESET structure [Display Devices], d3dumddi/D3DDDIARG_STATESET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_STATESET
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_STATESET
 ---
 
@@ -48,19 +52,18 @@ typedef struct _D3DDDIARG_STATESET {
 
 ## Members
 
-        
-            `hStateSet`
 
-            [in/out] A handle to the state block that is manipulated by the operation that is specified in the <b>Operation</b> member.
+`hStateSet`
+
+[in/out] A handle to the state block that is manipulated by the operation that is specified in the <b>Operation</b> member.
 
 A state-block handle is passed in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_stateset.md">StateSet</a> function when <b>Operation</b> is set to D3DHAL_STATESETEXECUTE.
 
 The <i>StateSet</i> function returns the state-block handle when <b>Operation</b> is set to D3DHAL_STATESETBEGIN and D3DHAL_STATESETCREATE.
-        
-            `Operation`
 
-            [in] The operation to perform, which can be one of the following values.
+`Operation`
 
+[in] The operation to perform, which can be one of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -127,11 +130,10 @@ Run the state block that is referenced by the handle in <b>hStateSet</b>.
 </td>
 </tr>
 </table>
-        
-            `StateBlockType`
 
-            [in] A D3DSTATEBLOCKTYPE-typed value that indicates the type of state that the driver should record. This member can be one of the following values.
+`StateBlockType`
 
+[in] A D3DSTATEBLOCKTYPE-typed value that indicates the type of state that the driver should record. This member can be one of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -395,8 +397,8 @@ No predefined state group is specified.
 </tr>
 </table>
 
-    ## Remarks
-        If the user-mode display driver implements extended render states (that is, render states beyond those that the Microsoft Direct3D runtime supplies), the driver uses the <b>StateBlockType</b> member to determine the type of predefined render state that is being used. From this information, the driver can determine how to append the state block appropriately to support its extensions. 
+## Remarks
+If the user-mode display driver implements extended render states (that is, render states beyond those that the Microsoft Direct3D runtime supplies), the driver uses the <b>StateBlockType</b> member to determine the type of predefined render state that is being used. From this information, the driver can determine how to append the state block appropriately to support its extensions. 
 
 The <b>StateBlockType</b> member is valid only for D3DHAL_STATESETBEGIN, D3DHAL_STATESETEND, and D3DHAL_STATECREATE operations. For more information about the D3DSTATEBLOCKTYPE enumeration type, see the Microsoft Windows SDK documentation.
 
@@ -408,13 +410,10 @@ The <b>StateBlockType</b> member is valid only for D3DHAL_STATESETBEGIN, D3DHAL_
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_stateset.md">StateSet</a>
-</dt>
-</dl>
+
  
 
  

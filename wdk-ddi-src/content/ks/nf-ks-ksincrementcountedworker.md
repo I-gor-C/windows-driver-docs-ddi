@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 282ffc00-ca62-4729-afe3-c13ea8069a18
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsIncrementCountedWorker
+ms.keywords : ks/KsIncrementCountedWorker, KsIncrementCountedWorker function [Streaming Media Devices], KsIncrementCountedWorker, stream.ksincrementcountedworker, ksfunc_14b63f3e-f634-4147-891b-111179462966.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsIncrementCountedWorker
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,14 +79,10 @@ This should be called after an addition has been made to the worker's list of ta
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksdecrementcountedworker.md">KsDecrementCountedWorker</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksregistercountedworker.md">KsRegisterCountedWorker</a>
-</dt>
-</dl>
+
  
 
  

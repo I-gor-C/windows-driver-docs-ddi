@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cdc5d6a3-637e-4f0e-bc94-25bfe5763695
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIsEcpFromUserMode
+ms.keywords : ntifs/FsRtlIsEcpFromUserMode, ifsk.fsrtlisecpfromusermode, FsRtlIsEcpFromUserMode routine [Installable File System Drivers], FsRtlIsEcpFromUserMode, fsrtlref_14f09529-adf9-4113-bff4-5183ade20059.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : FsRtlIsEcpFromUserMode is available starting with Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlIsEcpFromUserMode
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 

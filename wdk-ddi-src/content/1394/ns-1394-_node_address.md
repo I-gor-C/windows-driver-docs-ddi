@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : ecafa166-356e-48d6-84c4-0f0c339289ac
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _NODE_ADDRESS, *PNODE_ADDRESS, NODE_ADDRESS
+ms.keywords : "*PNODE_ADDRESS, 1394/PNODE_ADDRESS, NODE_ADDRESS, NODE_ADDRESS structure [Buses], _NODE_ADDRESS, 1394stct_4b87009c-620b-4840-aea3-52e059d388cd.xml, IEEE.node_address, PNODE_ADDRESS structure pointer [Buses], PNODE_ADDRESS, 1394/NODE_ADDRESS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NODE_ADDRESS
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PNODE_ADDRESS, NODE_ADDRESS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NODE_ADDRESS, *PNODE_ADDRESS
 ---
 
 # _NODE_ADDRESS structure
@@ -47,14 +51,14 @@ typedef struct _NODE_ADDRESS {
 
 ## Members
 
-        
-            `NA_Bus_Number`
 
-            Specifies the 10-bit bus number. This member specifies bits 0-10 of the node address.
-        
-            `NA_Node_Number`
+`NA_Bus_Number`
 
-            Specifies the 6-bit node number. This member contains bits 10-15 of the node address.
+Specifies the 10-bit bus number. This member specifies bits 0-10 of the node address.
+
+`NA_Node_Number`
+
+Specifies the 6-bit node number. This member contains bits 10-15 of the node address.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct _NODE_ADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537020">BUS_GENERATION_NODE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537020">BUS_GENERATION_NODE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d8ca2c47-e3b6-4ead-8d8e-2b2a4fe97658
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringVPrintf
+ms.keywords : RtlUnicodeStringVPrintf, kernel.rtlunicodestringvprintf, ntstrsafe/RtlUnicodeStringVPrintf, RtlUnicodeStringVPrintf function [Kernel-Mode Driver Architecture], safestrings_45fb9433-8fea-42ec-83fc-772e943a3169.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUnicodeStringVPrintf
-req.alt-loc : Ntstrsafe.lib,Ntstrsafe.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntstrsafe.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
 ---
 
@@ -66,21 +70,53 @@ A <b>va_list</b>-typed argument list. Arguments in this argument list will be in
 ## Return Value
 
 <b>RtlUnicodeStringVPrintf</b> returns one of the following NTSTATUS values. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>This <i>success</i> status means source data was present, the string was copied without truncation, and the resultant destination buffer is null-terminated.
+</dl>
+</td>
+<td width="60%">
+This <i>success</i> status means source data was present, the string was copied without truncation, and the resultant destination buffer is null-terminated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>This <i>warning</i> status means the copy operation did not complete due to insufficient buffer space. The destination buffer contains a truncated, null-terminated version of the intended result.
+</dl>
+</td>
+<td width="60%">
+This <i>warning</i> status means the copy operation did not complete due to insufficient buffer space. The destination buffer contains a truncated, null-terminated version of the intended result.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>This <i>error</i> status means the function received an invalid input parameter. For more information, see the following paragraph.
+</dl>
+</td>
+<td width="60%">
+This <i>error</i> status means the function received an invalid input parameter. For more information, see the following paragraph.
 
- 
+</td>
+</tr>
+</table> 
 
 <b>RtlUnicodeStringVPrintf</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
-
-For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+<ul>
+<li>The contents of the <b>UNICODE_STRING</b> structure that <i>DestinationString</i> points to are invalid.</li>
+<li>The destination buffer is already full.</li>
+<li>A <b>NULL</b> pointer is present.</li>
+<li>The destination buffer's length is zero, but a nonzero length source string is present.</li>
+</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -106,20 +142,14 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringprintf.md">RtlUnicodeStringPrintf</a>
-</dt>
-<dt>
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringprintfex.md">RtlUnicodeStringPrintfEx</a>
-</dt>
-<dt>
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvprintfex.md">RtlUnicodeStringVPrintfEx</a>
-</dt>
-<dt>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringprintf.md">RtlUnicodeStringPrintf</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

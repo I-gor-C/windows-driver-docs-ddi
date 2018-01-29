@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 572A2C38-A990-4225-A3FC-6E899A248B1C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT
+ms.keywords : GNSS_SELFTESTRESULT structure [Sensor Devices], gnssdriver/PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT structure pointer [Sensor Devices], *PGNSS_SELFTESTRESULT, gnssdriver/GNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT, sensors.gnss_selftestresult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_SELFTESTRESULT
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT"
 ---
 
@@ -53,27 +57,30 @@ typedef struct {
 
 ## Members
 
-        
-            `OutBufLen`
 
-            The length of the buffer for returning any additional information about the self-test.
-        
-            `PinFailedBitMask`
+`OutBuffer`
 
-            The bit mask for adapter pins that failed the test.
-        
-            `Result`
 
-            The final result of the self-test.
-        
-            `Size`
 
-            Structure size.
-        
-            `TestResultStatus`
+`OutBufLen`
 
-            NTSTATUS value indicating:
+The length of the buffer for returning any additional information about the self-test.
 
+`PinFailedBitMask`
+
+The bit mask for adapter pins that failed the test.
+
+`Result`
+
+The final result of the self-test.
+
+`Size`
+
+Structure size.
+
+`TestResultStatus`
+
+NTSTATUS value indicating:
 <ul>
 <li>
 Success (self-test passed).
@@ -84,10 +91,14 @@ Failed (indicating the problem detected or indicating that the is test not imple
 
 </li>
 </ul>
-        
-            `Version`
 
-            Version number.
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

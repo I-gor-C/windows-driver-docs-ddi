@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 3b7814a7-828a-40eb-8494-0753d89a95f4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidD_GetAttributes
+ms.keywords : hid.hidd_getattributes, HidD_GetAttributes routine [Human Input Devices], HidD_GetAttributes, hidfunc_e4c243d5-b210-409f-b454-68a69c28057c.xml, hidsdi/HidD_GetAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HidD_GetAttributes
-req.alt-loc : Hid.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Hid.lib
 req.dll : Hid.dll
 req.irql : 
-req.typenames : HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 
@@ -82,14 +86,10 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hidsdi\ns-hidsdi-_hidd_attributes.md">HIDD_ATTRIBUTES</a>
-</dt>
-<dt>
+
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

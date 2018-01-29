@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5d243704-7424-4738-b122-6b9467eb5916
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SendRPS_OUT, SendRPS_OUT, *PSendRPS_OUT
+ms.keywords : _SendRPS_OUT, structs-Fibre_0c81817b-666f-4b2b-8ae2-2342894d7c46.xml, SendRPS_OUT, hbapiwmi/SendRPS_OUT, *PSendRPS_OUT, storage.sendrps_out, SendRPS_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SendRPS_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SendRPS_OUT, *PSendRPS_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSendRPS_OUT, SendRPS_OUT"
 ---
 
 # _SendRPS_OUT structure
@@ -49,25 +53,25 @@ struct SendRPS_OUT {
 
 ## Members
 
-        
-            `ActualRspBufferSize`
 
-            Contains the size in bytes of the data that was actually retrieved.
-        
-            `HBAStatus`
+`ActualRspBufferSize`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `RspBuffer`
+Contains the size in bytes of the data that was actually retrieved.
 
-            Contains the results of the RPS command.
-        
-            `TotalRspBufferSize`
+`HBAStatus`
 
-            Contains the size in bytes of the results of the RPS command.
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SendRPS_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`RspBuffer`
+
+Contains the results of the RPS command.
+
+`TotalRspBufferSize`
+
+Contains the size in bytes of the results of the RPS command.
+
+## Remarks
+The WMI tool suite generates a declaration of the SendRPS_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ struct SendRPS_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565505">SendRPS</a>
-</dt>
-</dl>
+
  
 
  

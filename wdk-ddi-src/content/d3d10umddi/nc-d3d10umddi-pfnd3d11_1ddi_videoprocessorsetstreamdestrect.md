@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84AD6C4F-A674-4CCC-B2E9-378E3E55EEF3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.videoprocessorsetstreamdestrect, pfnVideoProcessorSetStreamDestRect callback function [Display Devices], pfnVideoProcessorSetStreamDestRect, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT, d3d10umddi/pfnVideoProcessorSetStreamDestRect
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnVideoProcessorSetStreamDestRect
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -100,14 +104,10 @@ The default destination rectangle is an empty rectangle (0, 0, 0, 0). If the <i>
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_createvideoprocessor.md">CreateVideoProcessor</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

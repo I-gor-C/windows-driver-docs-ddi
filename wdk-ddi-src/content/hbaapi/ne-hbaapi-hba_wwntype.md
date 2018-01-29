@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 30ce30db-e030-43c3-bf8d-2f6ef86087ab
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_wwntype, HBA_WWNTYPE
+ms.keywords : HBA_WWNTYPE, hbaapi/NODE_WWN, hbaapi/HBA_wwntype, HBA_wwntype enumeration [Storage Devices], structs-Fibre_d6003dc8-cbef-437b-bb14-353416b04417.xml, PORT_WWN, hbaapi/PORT_WWN, storage.hba_wwntype, HBA_WWNTYPE enumeration [Storage Devices], HBA_wwntype, NODE_WWN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_WWNTYPE
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -71,11 +75,8 @@ typedef enum HBA_wwntype {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
-</dt>
-</dl>
+
  
 
  

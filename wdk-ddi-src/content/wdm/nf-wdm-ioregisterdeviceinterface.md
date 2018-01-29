@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4d0782c7-0516-4326-9994-7820446f2af6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRegisterDeviceInterface
+ms.keywords : k104_4916c641-8510-425d-953f-68ed7a3f8976.xml, IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], IoRegisterDeviceInterface, kernel.ioregisterdeviceinterface, wdm/IoRegisterDeviceInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoRegisterDeviceInterface
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive3, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,9 +84,23 @@ The caller is responsible for freeing <i>SymbolicLinkName</i> with <a href="..\w
 ## Return Value
 
 <b>IoRegisterDeviceInterface</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The parameters are invalid. Possibilities include that <i>PhysicalDeviceObject</i> does not point to a valid PDO, or that the <i>ReferenceString</i> string contains an invalid character.
+</dl>
+</td>
+<td width="60%">
+The parameters are invalid. Possibilities include that <i>PhysicalDeviceObject</i> does not point to a valid PDO, or that the <i>ReferenceString</i> string contains an invalid character. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -114,20 +132,14 @@ Callers of <b>IoRegisterDeviceInterface</b> must be running at IRQL = PASSIVE_LE
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioopendeviceinterfaceregistrykey.md">IoOpenDeviceInterfaceRegistryKey</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
+
+<a href="..\wdm\nf-wdm-ioopendeviceinterfaceregistrykey.md">IoOpenDeviceInterfaceRegistryKey</a>
+
  
 
  

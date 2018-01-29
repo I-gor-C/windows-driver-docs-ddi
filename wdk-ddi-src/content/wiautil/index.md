@@ -16,6 +16,13 @@ ms.topic : portal
 wiautil.h contains the following programming interfaces:
 
 
+## Classes
+| Title | Description |
+| ---- |:---- |
+| [CWiauDbgFn](nl-wiautil-cwiaudbgfn.md) | The CWiauDbgFn class is a helper class that is used for tracing function or method entry and exit points. |
+| [CWiauFormatConverter](nl-wiautil-cwiauformatconverter.md) | The CWiauFormatConverter class is a helper class for converting images to BMP format. |
+| [CWiauPropertyList](nl-wiautil-cwiaupropertylist.md) | The CWiauPropertyList class can be used to create and maintain a list of properties for a device. |
+
 
 
 

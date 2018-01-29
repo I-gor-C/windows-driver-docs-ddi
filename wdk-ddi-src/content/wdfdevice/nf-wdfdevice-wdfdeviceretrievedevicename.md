@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 26fdc802-e28b-47a0-b248-5403d024fea3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceRetrieveDeviceName
+ms.keywords : kmdf.wdfdeviceretrievedevicename, wdfdevice/WdfDeviceRetrieveDeviceName, PFN_WDFDEVICERETRIEVEDEVICENAME, WdfDeviceRetrieveDeviceName method, WdfDeviceRetrieveDeviceName, wdf.wdfdeviceretrievedevicename, DFDeviceObjectGeneralRef_8c3bab28-12f1-456b-a972-37444e81c847.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceRetrieveDeviceName
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,11 +68,23 @@ A handle to a framework string object that receives the device name.
 ## Return Value
 
 If the operation succeeds, <b>WdfDeviceRetrieveDeviceName</b> returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
 
- 
+</td>
+</tr>
+</table> 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -79,8 +95,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 The <b>WdfDeviceRetrieveDeviceName</b> method returns the device name that the driver specified in a previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignname.md">WdfDeviceInitAssignName</a>.
 
 To obtain the device name string from the string object, the driver can call <a href="..\wdfstring\nf-wdfstring-wdfstringgetunicodestring.md">WdfStringGetUnicodeString</a>.
-
-The following code example creates a string object and then retrieves a specified device's name.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,17 +110,12 @@ The following code example creates a string object and then retrieves a specifie
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignname.md">WdfDeviceInitAssignName</a>
-</dt>
-<dt>
+
 <a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignname.md">WdfDeviceInitAssignName</a>
+
  
 
  

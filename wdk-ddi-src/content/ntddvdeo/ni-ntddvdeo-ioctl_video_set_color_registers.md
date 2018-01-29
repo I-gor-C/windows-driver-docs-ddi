@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : efaea94e-0cfd-49a7-b8dc-452aa006b024
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_set_color_registers, IOCTL_VIDEO_SET_COLOR_REGISTERS control code [Display Devices], IOCTL_VIDEO_SET_COLOR_REGISTERS, ntddvdeo/IOCTL_VIDEO_SET_COLOR_REGISTERS, Video_IOCTLs_29dd4eb9-3c05-4b2f-8572-66b7c599fef1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_SET_COLOR_REGISTERS
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SET_COLOR_REGISTERS IOCTL
-Sets the adapter's color registers to the specified RGB values. If the adapter has a color look up table (CLUT), sometimes called a palette, the miniport driver is required to support this modal request.
-
-
-
 Sets the adapter's color registers to the specified RGB values. If the adapter has a color look up table (CLUT), sometimes called a palette, the miniport driver is required to support this modal request.
 
 ### Major Code
@@ -63,7 +63,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure.
 
 

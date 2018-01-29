@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : eef2741e-e1a3-471b-a756-d89990929738
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcUnregisterIoTimeout
+ms.keywords : audio.iservicegroup, IServiceGroup interface [Audio Devices], IServiceGroup interface [Audio Devices], described, IServiceGroup, portcls/IServiceGroup, audmp-routines_10cfd005-be11-47a2-a929-f338f40e6f79.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IServiceGroup
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 

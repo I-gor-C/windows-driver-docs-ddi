@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cc348bc8-137a-4abd-9f0e-4c5fb521428f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IO_SCSI_CAPABILITIES, *PIO_SCSI_CAPABILITIES, IO_SCSI_CAPABILITIES
+ms.keywords : PIO_SCSI_CAPABILITIES, *PIO_SCSI_CAPABILITIES, ntddscsi/IO_SCSI_CAPABILITIES, storage.io_scsi_capabilities, structs-scsibus_9329ca36-3fe4-4d9a-a3c7-f63a216244b5.xml, _IO_SCSI_CAPABILITIES, IO_SCSI_CAPABILITIES, IO_SCSI_CAPABILITIES structure [Storage Devices], ntddscsi/PIO_SCSI_CAPABILITIES, PIO_SCSI_CAPABILITIES structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_SCSI_CAPABILITIES
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIO_SCSI_CAPABILITIES, IO_SCSI_CAPABILITIES"
 ---
 
 # _IO_SCSI_CAPABILITIES structure
 The IO_SCSI_CAPABILITIES structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_capabilities.md">IOCTL_SCSI_GET_CAPABILITIES</a> request to retrieve the capabilities and limitations of the underlying SCSI host adapter.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -53,38 +58,38 @@ typedef struct _IO_SCSI_CAPABILITIES {
 
 ## Members
 
-        
-            `AdapterScansDown`
 
-            When <b>TRUE</b>, indicates that the host adapter scans down for BIOS devices.
-        
-            `AdapterUsesPio`
+`AdapterScansDown`
 
-            When <b>TRUE</b>, indicates that the host adapter uses programmed I/O.
-        
-            `AlignmentMask`
+When <b>TRUE</b>, indicates that the host adapter scans down for BIOS devices.
 
-            Contains the alignment mask for data transfers. The host adapter requires that data to be transferred must be aligned on an address that is an integer multiple of the value in this field.
-        
-            `Length`
+`AdapterUsesPio`
 
-            Contains the length in bytes of this structure.
-        
-            `MaximumPhysicalPages`
+When <b>TRUE</b>, indicates that the host adapter uses programmed I/O.
 
-            Contains the maximum number of physical pages per data buffer.
-        
-            `MaximumTransferLength`
+`AlignmentMask`
 
-            Contains the maximum size, in bytes, of a single SCSI request block (SRB).
-        
-            `SupportedAsynchronousEvents`
+Contains the alignment mask for data transfers. The host adapter requires that data to be transferred must be aligned on an address that is an integer multiple of the value in this field.
 
-            When <b>TRUE</b>, indicates that the host adapter supports SCSI asynchronous receive-event operations.
-        
-            `TaggedQueuing`
+`Length`
 
-            When <b>TRUE</b>, indicates that the host adapter supports tagged queuing.
+Contains the length in bytes of this structure.
+
+`MaximumPhysicalPages`
+
+Contains the maximum number of physical pages per data buffer.
+
+`MaximumTransferLength`
+
+Contains the maximum size, in bytes, of a single SCSI request block (SRB).
+
+`SupportedAsynchronousEvents`
+
+When <b>TRUE</b>, indicates that the host adapter supports SCSI asynchronous receive-event operations.
+
+`TaggedQueuing`
+
+When <b>TRUE</b>, indicates that the host adapter supports tagged queuing.
 
 
 ## Requirements
@@ -95,13 +100,10 @@ typedef struct _IO_SCSI_CAPABILITIES {
 | **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_capabilities.md">IOCTL_SCSI_GET_CAPABILITIES</a>
-</dt>
-</dl>
+
  
 
  

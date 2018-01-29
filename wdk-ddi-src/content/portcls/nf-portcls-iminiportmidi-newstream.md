@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6760c893-0574-4fb1-b714-d506ebbd0872
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportMidi, IMiniportMidi::NewStream, NewStream
+ms.keywords : NewStream method [Audio Devices], IMiniportMidi interface [Audio Devices], NewStream method, IMiniportMidi, audmp-routines_4cc2fc38-bf0b-467e-83d4-678189d8fc0f.xml, portcls/IMiniportMidi::NewStream, NewStream, IMiniportMidi::NewStream, NewStream method [Audio Devices], IMiniportMidi interface, audio.iminiportmidi_newstream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportMidi.NewStream
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -107,26 +111,18 @@ The <i>Stream</i>, <i>OuterUnknown</i>, and <i>ServiceGroup</i> parameters follo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
-</dt>
-<dt>
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
+
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
+
  
 
  

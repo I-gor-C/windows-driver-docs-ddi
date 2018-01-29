@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : db839cde-cb3e-47f2-9a06-54e37ac7ac67
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminidevicequerypower, AVStrMiniDeviceQueryPower, AVStrMiniDeviceQueryPower routine [Streaming Media Devices], AVStrMiniDeviceQueryPower, PFNKSDEVICEQUERYPOWER, PFNKSDEVICEQUERYPOWER, ks/AVStrMiniDeviceQueryPower, avstclbk_47f0fecd-9906-4582-9f1d-bb80a469ffa6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniDeviceQueryPower
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -114,14 +118,10 @@ This routine is optional.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+
  
 
  

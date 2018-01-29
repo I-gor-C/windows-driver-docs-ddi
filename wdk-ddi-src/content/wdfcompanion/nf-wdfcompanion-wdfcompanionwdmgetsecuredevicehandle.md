@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8fc3dc6f-8a21-490b-adbf-5f735cb953de
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCompanionWdmGetSecureDeviceHandle
+ms.keywords : wdfcompanion/WdfCompanionWdmGetSecureDeviceHandle, WdfCompanionWdmGetSecureDeviceHandle method, wdf.wdfcompanionwdmgetsecuredevicehandle, WdfCompanionWdmGetSecureDeviceHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.23
-req.alt-api : WdfCompanionWdmGetSecureDeviceHandle
-req.alt-loc : wdfcompanion.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_TASK_QUEUE_DISPATCH_TYPE
 req.product : Windows 10 or later.
 ---

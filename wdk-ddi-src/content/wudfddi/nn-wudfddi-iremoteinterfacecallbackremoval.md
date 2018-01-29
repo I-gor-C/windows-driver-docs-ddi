@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f4cbad57-922f-4265-b436-847feeca853c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.iremoteinterfacecallbackremoval, IRemoteInterfaceCallbackRemoval interface, IRemoteInterfaceCallbackRemoval interface, described, IRemoteInterfaceCallbackRemoval, wudfddi/IRemoteInterfaceCallbackRemoval, UMDFIoTargetObjectRef_7eeb5a11-5f99-4b2c-a36f-0fd72466e278.xml, umdf.iremoteinterfacecallbackremoval
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRemoteInterfaceCallbackRemoval
-req.alt-loc : wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -51,7 +55,7 @@ The <b>IRemoteInterfaceCallbackRemoval</b> provides a callback function that the
 
 ## Remarks
 
-If your driver supports an <b>IRemoteInterfaceCallbackRemoval</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> must return the interface. </p>
+If your driver supports an <b>IRemoteInterfaceCallbackRemoval</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> must return the interface.
 
 ## Requirements
 | &nbsp; | &nbsp; |

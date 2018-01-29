@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fdf40535-4e0d-4db9-9e95-744029eb2bd5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExQueryDepthSList
+ms.keywords : ExQueryDepthSList, kernel.exquerydepthslist, wdm/ExQueryDepthSList, ExQueryDepthSList routine [Kernel-Mode Driver Architecture], k102_14e2b5cb-bc6a-43f7-a0b2-1fcd8fd414a7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExQueryDepthSList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,17 +80,12 @@ For more information about using this routine to implement a sequenced singly li
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedpushentryslist.md">ExInterlockedPushEntrySList</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-exinterlockedpopentryslist.md">ExInterlockedPopEntrySList</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exinterlockedpushentryslist.md">ExInterlockedPushEntrySList</a>
+
+<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
+
  
 
  

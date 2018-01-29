@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8221a99a-1b46-48ba-8930-ac973e009eee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.calcprivatedevicesize, CalcPrivateDeviceSize callback function [Display Devices], CalcPrivateDeviceSize, PFND3D10DDI_CALCPRIVATEDEVICESIZE, PFND3D10DDI_CALCPRIVATEDEVICESIZE, d3d10umddi/CalcPrivateDeviceSize, UserModeDisplayDriverDx10_Functions_0de51abc-5fe3-4d65-bd0a-cc4f32f08d81.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CalcPrivateDeviceSize
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -80,11 +84,8 @@ SIZE_T Pfnd3d10ddiCalcprivatedevicesize(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_calcprivatedevicesize.md">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a>
-</dt>
-</dl>
+
  
 
  

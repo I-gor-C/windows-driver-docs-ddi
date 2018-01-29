@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C119B295-CBCF-46B3-BC8D-3C8AC058F6D8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_calc_private_pipeline_state_size_0033_, PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033 entry point [Display Devices], PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033, d3d12umddi/PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 

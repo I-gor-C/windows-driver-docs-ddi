@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : acb0fc1d-e360-4cb9-9b3b-7d8d03146cfd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIVERTEXELEMENT, D3DDDIVERTEXELEMENT
+ms.keywords : _D3DDDIVERTEXELEMENT, d3dumddi/D3DDDIVERTEXELEMENT, D3D_other_Structs_7f1e4f94-3964-4deb-b3b0-1b47f8953dfa.xml, D3DDDIVERTEXELEMENT structure [Display Devices], D3DDDIVERTEXELEMENT, display.d3dddivertexelement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIVERTEXELEMENT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIVERTEXELEMENT
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DDDIVERTEXELEMENT {
 
 ## Members
 
-        
-            `Method`
 
-            [in] The tessellator processing method. This method determines how the tessellator interprets and operates on the vertex data. For more information about these methods, see the D3DDECLMETHOD enumeration type in the Windows SDK documentation.
-        
-            `Offset`
+`Method`
 
-            [in] The offset (if any), in bytes, from the beginning of the stream to the start of the data.
-        
-            `Stream`
+[in] The tessellator processing method. This method determines how the tessellator interprets and operates on the vertex data. For more information about these methods, see the D3DDECLMETHOD enumeration type in the Windows SDK documentation.
 
-            [in] The number of the stream.
-        
-            `Type`
+`Offset`
 
-            [in] One of several predefined data types that define the data size. For more information about these types, see the D3DDECLTYPE enumeration type in the Microsoft Windows SDK documentation.
-        
-            `Usage`
+[in] The offset (if any), in bytes, from the beginning of the stream to the start of the data.
 
-            [in] The intended use of the vertex data. For more information about the possible uses, see the D3DDECLUSAGE enumeration type in the Windows SDK documentation.
-        
-            `UsageIndex`
+`Stream`
 
-            [in] A modification to the usage data that is specified in the <b>Usage</b> member. This modification enables multiple usage types to be specified.
+[in] The number of the stream.
+
+`Type`
+
+[in] One of several predefined data types that define the data size. For more information about these types, see the D3DDECLTYPE enumeration type in the Microsoft Windows SDK documentation.
+
+`Usage`
+
+[in] The intended use of the vertex data. For more information about the possible uses, see the D3DDECLUSAGE enumeration type in the Windows SDK documentation.
+
+`UsageIndex`
+
+[in] A modification to the usage data that is specified in the <b>Usage</b> member. This modification enables multiple usage types to be specified.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct _D3DDDIVERTEXELEMENT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderdecl.md">CreateVertexShaderDecl</a>
-</dt>
-</dl>
+
  
 
  

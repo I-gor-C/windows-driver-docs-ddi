@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DCB0E541-51AB-4624-A007-46D109F31E5B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, *PPEP_RESET_SOC_SUBSYSTEM_ACCOUNTING
+ms.keywords : PPEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, kernel.pep_reset_soc_subsystem_accounting, PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING structure [Kernel-Mode Driver Architecture], pepfx/PPEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, _PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, pepfx/PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, PPEP_RESET_SOC_SUBSYSTEM_ACCOUNTING structure pointer [Kernel-Mode Driver Architecture], *PPEP_RESET_SOC_SUBSYSTEM_ACCOUNTING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, *PPEP_RESET_SOC_SUBSYSTEM_ACCOUNTING
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_RESET_SOC_SUBSYSTEM_ACCOUNTING, PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING"
 ---
 
 # _PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING structure
@@ -47,14 +51,14 @@ typedef struct _PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING {
 
 ## Members
 
-        
-            `Flags`
 
-            This member is reserved and should be set to zero.
-        
-            `PlatformIdleStateIndex`
+`Flags`
 
-            [in] The platform idle state index for the subsystem accounting to be reset.
+This member is reserved and should be set to zero.
+
+`PlatformIdleStateIndex`
+
+[in] The platform idle state index for the subsystem accounting to be reset.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186740">PEP_DPM_RESET_SOC_SUBSYSTEM_ACCOUNTING notification</a>
-</dt>
-</dl>
+
  
 
  

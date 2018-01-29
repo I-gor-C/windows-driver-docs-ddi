@@ -7,8 +7,8 @@ old-location : netvista\riltdscdmakind.htm
 old-project : netvista
 ms.assetid : 61b5d7f8-bd45-448b-b7a1-3e52909a63cb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILTDSCDMAKIND, RILTDSCDMAKIND
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILTDSCDMAKIND, RIL_TDSCDMAKIND_HSUPA, RILTDSCDMAKIND enumeration [Network Drivers Starting with Windows Vista], RIL_TDSCDMAKIND_DC_HSPAPLUS, ntddrilapitypes/RIL_TDSCDMAKIND_MAX, netvista.riltdscdmakind, ntddrilapitypes/RIL_TDSCDMAKIND_HSDPA, RIL_TDSCDMAKIND_HSPAPLUS, ntddrilapitypes/RIL_TDSCDMAKIND_HSUPA, ntddrilapitypes/RIL_TDSCDMAKIND_HSPAPLUS, RIL_TDSCDMAKIND_MAX, RILTDSCDMAKIND, ntddrilapitypes/RIL_TDSCDMAKIND_DC_HSPAPLUS, RIL_TDSCDMAKIND_HSDPA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILTDSCDMAKIND
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILTDSCDMAKIND
 ---
 
@@ -74,6 +78,11 @@ typedef enum _RILTDSCDMAKIND {
 
 <tr>
 <td>RIL_TDSCDMAKIND_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_TDSCDMAKIND_UMTS</td>
 <td></td>
 </tr>
 </table>

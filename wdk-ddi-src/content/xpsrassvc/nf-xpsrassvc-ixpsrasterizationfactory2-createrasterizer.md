@@ -7,8 +7,8 @@ old-location : print\ixpsrasterizationfactory2_createrasterizer.htm
 old-project : print
 ms.assetid : C31681A0-17C6-4255-9068-7486A2101AB7
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsRasterizationFactory2, IXpsRasterizationFactory2::CreateRasterizer, CreateRasterizer
+ms.date : 1/18/2018
+ms.keywords : IXpsRasterizationFactory2::CreateRasterizer, CreateRasterizer method [Print Devices], CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface, print.ixpsrasterizationfactory2_createrasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, CreateRasterizer, IXpsRasterizationFactory2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IXpsRasterizationFactory2.CreateRasterizer
-req.alt-loc : xpsrassvc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : xpsrassvc.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : XPSRAS_BACKGROUND_COLOR
 req.product : Windows 10 or later.
 ---
@@ -71,7 +75,6 @@ HRESULT CreateRasterizer(
 `nonTextRenderingMode`
 
 Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md">XPSRAS_RENDERING_MODE</a> enumeration values:
-
 <ul>
 <li>
 XPSRAS_RENDERING_MODE_ANTIALIASED
@@ -86,7 +89,6 @@ XPSRAS_RENDERING_MODE_ALIASED
 `textRenderingMode`
 
 Rendering mode for text in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following XPSRAS_RENDERING_MODE enumeration values:
-
 <ul>
 <li>
 XPSRAS_RENDERING_MODE_ANTIALIASED
@@ -101,7 +103,6 @@ XPSRAS_RENDERING_MODE_ALIASED
 `pixelFormat`
 
 Allows a caller to select the pixel format used by the IWICBitmap returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a>. Set this parameter to one of the following <a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0003_0001.md">XPSRAS_PIXEL_FORMAT</a> enumeration values:
-
 <ul>
 <li>
 XPSRAS_PIXEL_FORMAT_32BPP_PBGRA_UINT_SRGB
@@ -120,7 +121,6 @@ XPSRAS_PIXEL_FORMAT_128BPP_PRGBA_FLOAT_SCRGB
 `backgroundColor`
 
 Allows a caller to select background color. Set this parameter to one of the following <a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0004_0001.md">XPSRAS_BACKGROUND_COLOR</a> enumeration values:
-
 <ul>
 <li>
 XPSRAS_BACKGROUND_COLOR_TRANSPARENT
@@ -130,8 +130,7 @@ XPSRAS_BACKGROUND_COLOR_TRANSPARENT
 XPSRAS_BACKGROUND_COLOR_OPAQUE
 
 </li>
-</ul>
-The default background color is XPSRAS_BACKGROUND_COLOR_TRANSPARENT.
+</ul>The default background color is XPSRAS_BACKGROUND_COLOR_TRANSPARENT.
 
 `ppIXpsRasterizer`
 
@@ -157,13 +156,10 @@ If this method succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HRE
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizationfactory2.md">IXpsRasterizationFactory2</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IXpsRasterizationFactory2::CreateRasterizer method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IXpsRasterizationFactory2::CreateRasterizer method%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : DF597216-FB81-466C-871E-5E08C69B78DA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcRegisterAdapterPnpManagement
+ms.keywords : audio.pcregisteradapterpnpmanagement, PcRegisterAdapterPnPManagement, portcls/PcRegisterAdapterPnPManagement, PcRegisterAdapterPnPManagement function [Audio Devices], PcRegisterAdapterPnpManagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1511 and later ve
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcRegisterAdapterPnPManagement
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -51,7 +55,7 @@ NTSTATUS PcRegisterAdapterPnPManagement(
 
 `Unknown`
 
-
+TBD
 
 `DeviceObject`
 
@@ -82,20 +86,14 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nf-portcls-pcunregisteradapterpnpmanagement.md">PcUnregisterAdapterPnpManagement</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nn-portcls-iadapterpnpmanagement.md">IAdapterPnpManagement</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>
-</dt>
-</dl>
+
  
 
  

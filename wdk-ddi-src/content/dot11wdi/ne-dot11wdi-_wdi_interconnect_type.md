@@ -7,8 +7,8 @@ old-location : netvista\wdi_interconnect_type.htm
 old-project : netvista
 ms.assetid : 58cb1ead-94a1-4587-bb2a-7b8e23f42eeb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_INTERCONNECT_TYPE, WDI_INTERCONNECT_TYPE
+ms.date : 1/18/2018
+ms.keywords : dot11wdi/WDI_INTERCONNECT_MESSAGE_BASED, WDI_INTERCONNECT_TYPE, netvista.wifi_interconnect_type, dot11wdi/WDI_INTERCONNECT_UNKNOWN, WDI_INTERCONNECT_MEMORY_MAPPED, WDI_INTERCONNECT_MESSAGE_BASED, WDI_INTERCONNECT_TYPE enumeration [Network Drivers Starting with Windows Vista], dot11wdi/WDI_INTERCONNECT_MEMORY_MAPPED, netvista.wdi_interconnect_type, _WDI_INTERCONNECT_TYPE, dot11wdi/WDI_INTERCONNECT_TYPE, WDI_INTERCONNECT_UNKNOWN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_INTERCONNECT_TYPE
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_INTERCONNECT_TYPE
 ---
 

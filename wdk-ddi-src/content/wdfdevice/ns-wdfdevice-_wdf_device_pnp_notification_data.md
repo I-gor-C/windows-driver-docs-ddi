@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b49431bf-4b44-4d7b-b3a6-c3d7416bcb53
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_PNP_NOTIFICATION_DATA, WDF_DEVICE_PNP_NOTIFICATION_DATA
+ms.keywords : wdf.wdf_device_pnp_notification_data, kmdf.wdf_device_pnp_notification_data, WDF_DEVICE_PNP_NOTIFICATION_DATA structure, DFDeviceObjectGeneralRef_92c66935-afca-4567-bc55-cb3e3822201e.xml, wdfdevice/WDF_DEVICE_PNP_NOTIFICATION_DATA, WDF_DEVICE_PNP_NOTIFICATION_DATA, _WDF_DEVICE_PNP_NOTIFICATION_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_DEVICE_PNP_NOTIFICATION_DATA
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_PNP_NOTIFICATION_DATA
 req.product : Windows 10 or later.
 ---
@@ -62,17 +66,17 @@ typedef struct _WDF_DEVICE_PNP_NOTIFICATION_DATA {
 
 ## Members
 
-        
-            `Data`
 
-            
-        
-            `Type`
+`Data`
 
-            A <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerator that identifies the type of state change that is being reported.
 
-    ## Remarks
-        The WDF_DEVICE_PNP_NOTIFICATION_DATA structure is an input argument to a driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a> callback function.
+
+`Type`
+
+A <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerator that identifies the type of state change that is being reported.
+
+## Remarks
+The WDF_DEVICE_PNP_NOTIFICATION_DATA structure is an input argument to a driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +86,10 @@ typedef struct _WDF_DEVICE_PNP_NOTIFICATION_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitregisterpnpstatechangecallback.md">WdfDeviceInitRegisterPnpStateChangeCallback</a>
-</dt>
-</dl>
+
  
 
  

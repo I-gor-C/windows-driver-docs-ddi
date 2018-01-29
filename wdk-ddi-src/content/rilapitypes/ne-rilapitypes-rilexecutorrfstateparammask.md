@@ -7,8 +7,8 @@ old-location : netvista\rilexecutorrfstateparammask_2.htm
 old-project : netvista
 ms.assetid : 310cd96f-ad99-4fdb-b49c-e4fee749ff78
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILEXECUTORRFSTATEPARAMMASK, RILEXECUTORRFSTATEPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILEXECUTORRFSTATEPARAMMASK, RILEXECUTORRFSTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_GERFS_ALL, rilapitypes/RIL_PARAM_GERFS_ALL, RILEXECUTORRFSTATEPARAMMASK, RIL_PARAM_GERFS_STATE, netvista.rilexecutorrfstateparammask_2, rilapitypes/RIL_PARAM_GERFS_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILEXECUTORRFSTATEPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILEXECUTORRFSTATEPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -52,6 +56,11 @@ typedef enum _RILEXECUTORRFSTATEPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_GERFS_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_GERFS_EXECUTOR</td>
 <td></td>
 </tr>
 

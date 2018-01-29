@@ -7,8 +7,8 @@ old-location : netvista\rilcallhandoverphase.htm
 old-project : netvista
 ms.assetid : c97fcbba-a127-4974-bda7-47456c05558f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLHANDOVERPHASE, RILCALLHANDOVERPHASE
+ms.date : 1/18/2018
+ms.keywords : RIL_CALLHANDOVERPHASE_CANCELLED, RILCALLHANDOVERPHASE, netvista.rilcallhandoverphase, ntddrilapitypes/RILCALLHANDOVERPHASE, ntddrilapitypes/RIL_CALLHANDOVERPHASE_FAILED, ntddrilapitypes/RIL_CALLHANDOVERPHASE_CANCELLED, ntddrilapitypes/RIL_CALLHANDOVERPHASE_COMPLETED, RIL_CALLHANDOVERPHASE_FAILED, RIL_CALLHANDOVERPHASE_MAX, RIL_CALLHANDOVERPHASE_COMPLETED, RILCALLHANDOVERPHASE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_CALLHANDOVERPHASE_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLHANDOVERPHASE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLHANDOVERPHASE
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILCALLHANDOVERPHASE {
 
 <tr>
 <td>RIL_CALLHANDOVERPHASE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLHANDOVERPHASE_STARTED</td>
 <td></td>
 </tr>
 </table>

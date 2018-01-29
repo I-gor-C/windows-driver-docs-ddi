@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D59E6B78-2B51-4A5D-A9EA-E6D8DD90C374
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlInitStringEx
+ms.keywords : kernel.rtl_init_string_ex, RtlInitString routine [Kernel-Mode Driver Architecture], RtlInitString, RtlInitStringEx, wdm/RtlInitString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlInitString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -86,11 +90,8 @@ Callers of <b>RtlInitStringEx</b> can be running at IRQL &lt;= DISPATCH_LEVEL if
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
-</dt>
-</dl>
+
  
 
  

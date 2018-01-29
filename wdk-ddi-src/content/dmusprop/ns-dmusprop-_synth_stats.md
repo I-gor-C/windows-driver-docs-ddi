@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : bbe3552b-0289-4f7f-bdaa-8a6437594247
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.keywords : dmusprop/PSYNTH_STATS, PSYNTH_STATS structure pointer [Audio Devices], aud-prop_04ed015d-56c6-4275-8025-66e67ee6ce87.xml, _SYNTH_STATS, dmusprop/SYNTH_STATS, PSYNTH_STATS, SYNTH_STATS structure [Audio Devices], audio.synth_stats, *PSYNTH_STATS, SYNTH_STATS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYNTH_STATS
-req.alt-loc : dmusprop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSYNTH_STATS, SYNTH_STATS"
 ---
 
 # _SYNTH_STATS structure
@@ -52,37 +56,37 @@ typedef struct _SYNTH_STATS {
 
 ## Members
 
-        
-            `CPUPerVoice`
 
-            Specifies the CPU usage per voice, which is expressed as a percentage (a fraction multiplied by 100).
-        
-            `FreeMemory`
+`CPUPerVoice`
 
-            Specifies the amount of free memory in bytes. This is the storage that remains available for downloading additional DLS data resources.
-        
-            `LostNotes`
+Specifies the CPU usage per voice, which is expressed as a percentage (a fraction multiplied by 100).
 
-            Specifies the number of notes lost. Notes can be dropped if the number of simultaneous voices exceeds the maximum specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> property. For additional information, see <a href="https://msdn.microsoft.com/fb1e6c36-02b4-41a6-b9c4-09f393d389db">Voice Allocation</a>.
-        
-            `PeakVolume`
+`FreeMemory`
 
-            Specifies the peak volume level expressed as decibels multiplied by 100.
-        
-            `TotalCPU`
+Specifies the amount of free memory in bytes. This is the storage that remains available for downloading additional DLS data resources.
 
-            Specifies the total CPU usage (all voices), which is expressed as a percentage (a fraction multiplied by 100).
-        
-            `ValidStats`
+`LostNotes`
 
-            Specifies which members of the SYNTH_STATS structure contain valid data. This member is a bitfield whose value is either zero or a bitwise OR of one or more of the following flag bits:
-        
-            `Voices`
+Specifies the number of notes lost. Notes can be dropped if the number of simultaneous voices exceeds the maximum specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> property. For additional information, see <a href="https://msdn.microsoft.com/fb1e6c36-02b4-41a6-b9c4-09f393d389db">Voice Allocation</a>.
 
-            Specifies the average number of voices playing.
+`PeakVolume`
 
-    ## Remarks
-        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537406">KSPROPERTY_SYNTH_RUNNINGSTATS</a> property uses the SYNTH_STATS structure to query a DirectMusic miniport driver for statistics about a synthesizer.
+Specifies the peak volume level expressed as decibels multiplied by 100.
+
+`TotalCPU`
+
+Specifies the total CPU usage (all voices), which is expressed as a percentage (a fraction multiplied by 100).
+
+`ValidStats`
+
+Specifies which members of the SYNTH_STATS structure contain valid data. This member is a bitfield whose value is either zero or a bitwise OR of one or more of the following flag bits:
+
+`Voices`
+
+Specifies the average number of voices playing.
+
+## Remarks
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537406">KSPROPERTY_SYNTH_RUNNINGSTATS</a> property uses the SYNTH_STATS structure to query a DirectMusic miniport driver for statistics about a synthesizer.
 
 The SYNTH_STATS structure is similar to the DMUS_SYNTHSTATS structure, which is described in the Microsoft Windows SDK documentation.
 
@@ -94,16 +98,12 @@ The SYNTH_STATS structure is similar to the DMUS_SYNTHSTATS structure, which is 
 | **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537406">KSPROPERTY_SYNTH_RUNNINGSTATS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

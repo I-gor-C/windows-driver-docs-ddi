@@ -7,8 +7,8 @@ old-location : netvista\rilradiostateitemid.htm
 old-project : netvista
 ms.assetid : 2aec37af-fd7d-44c6-a728-889dd75012cb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEITEMID, RILRADIOSTATEITEMID
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILRADIOSTATEITEMID, RILRADIOSTATEITEMID enumeration [Network Drivers Starting with Windows Vista], netvista.rilradiostateitemid, RILRADIOSTATEITEMID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEITEMID
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRADIOSTATEITEMID
 ---
 

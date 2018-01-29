@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 49b8f602-8f82-4445-98f2-a63563689561
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY, *PKSAUDIO_MIC_ARRAY_GEOMETRY
+ms.keywords : PKSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY, ksmedia/PKSAUDIO_MIC_ARRAY_GEOMETRY, ksmedia/KSAUDIO_MIC_ARRAY_GEOMETRY, PKSAUDIO_MIC_ARRAY_GEOMETRY structure pointer [Audio Devices], audio.ksaudio_mic_array_geometry, *PKSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY structure [Audio Devices], aud-prop_b25763af-a8d5-4335-ae71-f3bc59218201.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAUDIO_MIC_ARRAY_GEOMETRY
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSAUDIO_MIC_ARRAY_GEOMETRY, *PKSAUDIO_MIC_ARRAY_GEOMETRY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY"
 ---
 
 # KSAUDIO_MIC_ARRAY_GEOMETRY structure
@@ -55,23 +59,22 @@ typedef struct {
 
 ## Members
 
-        
-            `KsMicCoord`
 
-            Specifies the array of KSAUDIO_MICROPHONE_COORDINATES structures that contains the locations of the microphones in the array.
-        
-            `usFrequencyBandHi`
+`KsMicCoord`
 
-            Specifies the high end of the frequency range for the microphone array.
-        
-            `usFrequencyBandLo`
+Specifies the array of KSAUDIO_MICROPHONE_COORDINATES structures that contains the locations of the microphones in the array.
 
-            Specifies the low end of the frequency range for the microphone array.
-        
-            `usMicArrayType`
+`usFrequencyBandHi`
 
-            Specifies the type of microphone array in use. This member can be any one of the KSMICARRAY_MICARRAYTYPE enumeration values shown in the following table.
+Specifies the high end of the frequency range for the microphone array.
 
+`usFrequencyBandLo`
+
+Specifies the low end of the frequency range for the microphone array.
+
+`usMicArrayType`
+
+Specifies the type of microphone array in use. This member can be any one of the KSMICARRAY_MICARRAYTYPE enumeration values shown in the following table.
 <table>
 <tr>
 <td>
@@ -114,33 +117,33 @@ KSMICARRAY_MICARRAYTYPE_3D
 </td>
 </tr>
 </table>
-        
-            `usNumberOfMicrophones`
 
-            Specifies the number of microphones in the microphone array.
-        
-            `usVersion`
+`usNumberOfMicrophones`
 
-            Specifies the version number of the KSAUDIO_MIC_ARRAY_GEOMETRY structure. This member is a BCD value and is currently set to 0x0100, which represents a version number of 1.0.
-        
-            `wHorizontalAngleBegin`
+Specifies the number of microphones in the microphone array.
 
-            Work Volume HorizontalAngle Begin
-        
-            `wHorizontalAngleEnd`
+`usVersion`
 
-            Work Volume HorizontalAngle End
-        
-            `wVerticalAngleBegin`
+Specifies the version number of the KSAUDIO_MIC_ARRAY_GEOMETRY structure. This member is a BCD value and is currently set to 0x0100, which represents a version number of 1.0.
 
-            Specifies the vertical angle of the start of the working volume of the microphone array.
-        
-            `wVerticalAngleEnd`
+`wHorizontalAngleBegin`
 
-            Specifies the vertical angle of the end of the working volume of the microphone array.
+Work Volume HorizontalAngle Begin
 
-    ## Remarks
-        All angle values are expressed in units of 1/10000th of a radian. For example, 3.1416 radians is expressed as 31416 units. Acceptable values range from -31416 to 31416 units.
+`wHorizontalAngleEnd`
+
+Work Volume HorizontalAngle End
+
+`wVerticalAngleBegin`
+
+Specifies the vertical angle of the start of the working volume of the microphone array.
+
+`wVerticalAngleEnd`
+
+Specifies the vertical angle of the end of the working volume of the microphone array.
+
+## Remarks
+All angle values are expressed in units of 1/10000th of a radian. For example, 3.1416 radians is expressed as 31416 units. Acceptable values range from -31416 to 31416 units.
 
 All coordinate values are expressed in millimeters. Acceptable values range from -32768 to 32767, inclusive.
 
@@ -160,13 +163,10 @@ For more information about how to process a microphone array in Windows Vista, s
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksaudio_microphone_coordinates.md">KSAUDIO_MICROPHONE_COORDINATES</a>
-</dt>
-</dl>
+
  
 
  

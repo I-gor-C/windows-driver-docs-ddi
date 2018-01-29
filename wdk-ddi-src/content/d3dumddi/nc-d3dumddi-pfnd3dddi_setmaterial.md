@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e1273478-a450-44fa-95d5-ee86cb3a46b2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setmaterial, SetMaterial callback function [Display Devices], SetMaterial, PFND3DDDI_SETMATERIAL, PFND3DDDI_SETMATERIAL, d3dumddi/SetMaterial, UserModeDisplayDriver_Functions_004e812d-4be5-4222-9a29-e206e17a2fa1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetMaterial
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,14 +87,10 @@ Material properties detail a material's diffuse reflection, ambient reflection, 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setmaterial.md">D3DDDIARG_SETMATERIAL</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

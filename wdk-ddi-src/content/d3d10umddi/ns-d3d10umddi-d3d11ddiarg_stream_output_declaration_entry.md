@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 336bfc9d-325b-4ff1-8d6b-ec2ef4158cb9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
+ms.keywords : display.d3d11ddiarg_stream_output_declaration_entry, D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, UMDisplayDriver_Dx11param_Structs_c3324903-51b0-4679-ad77-b24cb5619bef.xml, d3d10umddi/D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY is suppo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 ---
 
@@ -49,22 +53,22 @@ typedef struct D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 
 ## Members
 
-        
-            `OutputSlot`
 
-            [in] The number of the slot for the portion of the stream output.
-        
-            `RegisterIndex`
+`OutputSlot`
 
-            [in] The number of the register for the portion of the stream output.
-        
-            `RegisterMask`
+[in] The number of the slot for the portion of the stream output.
 
-            [in] The xyzw register mask for the portion of the stream output. That is, the four least significant bits (LSBs) of the mask represent xyzw respectively.
-        
-            `Stream`
+`RegisterIndex`
 
-            [in] The stream to output from, which is a value between zero and the maximum number of streams that are specified by the driver.
+[in] The number of the register for the portion of the stream output.
+
+`RegisterMask`
+
+[in] The xyzw register mask for the portion of the stream output. That is, the four least significant bits (LSBs) of the mask represent xyzw respectively.
+
+`Stream`
+
+[in] The stream to output from, which is a value between zero and the maximum number of streams that are specified by the driver.
 
 
 ## Requirements

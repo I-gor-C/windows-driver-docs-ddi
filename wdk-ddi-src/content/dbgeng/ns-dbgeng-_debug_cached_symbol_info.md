@@ -7,8 +7,8 @@ old-location : debugger\debug_cached_symbol_info.htm
 old-project : debugger
 ms.assetid : CC7914B6-DCE1-45D1-84D3-5FF1449AD565
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
+ms.date : 1/19/2018
+ms.keywords : DEBUG_CACHED_SYMBOL_INFO structure [Windows Debugging], PDEBUG_CACHED_SYMBOL_INFO structure pointer [Windows Debugging], debugger.debug_cached_symbol_info, DEBUG_CACHED_SYMBOL_INFO, PDEBUG_CACHED_SYMBOL_INFO, dbgeng/PDEBUG_CACHED_SYMBOL_INFO, _DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO, dbgeng/DEBUG_CACHED_SYMBOL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEBUG_CACHED_SYMBOL_INFO
-req.alt-loc : DbgEng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO"
 ---
 
 # _DEBUG_CACHED_SYMBOL_INFO structure
@@ -50,26 +54,26 @@ typedef struct _DEBUG_CACHED_SYMBOL_INFO {
 
 ## Members
 
-        
-            `Arg1`
 
-            An argument value.
-        
-            `Arg2`
+`Arg1`
 
-            An argument value.
-        
-            `Arg3`
+An argument value.
 
-            An argument value.
-        
-            `Id`
+`Arg2`
 
-            An ID.
-        
-            `ModBase`
+An argument value.
 
-            A module base.
+`Arg3`
+
+An argument value.
+
+`Id`
+
+An ID.
+
+`ModBase`
+
+A module base.
 
 
 ## Requirements

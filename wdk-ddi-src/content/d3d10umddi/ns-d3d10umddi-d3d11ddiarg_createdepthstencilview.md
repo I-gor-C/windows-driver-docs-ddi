@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 563a443b-f460-4fb2-b179-454466c2291b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_CREATEDEPTHSTENCILVIEW, D3D11DDIARG_CREATEDEPTHSTENCILVIEW
+ms.keywords : display.d3d11ddiarg_createdepthstencilview, D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure [Display Devices], D3D11DDIARG_CREATEDEPTHSTENCILVIEW, UMDisplayDriver_Dx11param_Structs_17e6fa50-317c-445d-b304-8097f658652f.xml, d3d10umddi/D3D11DDIARG_CREATEDEPTHSTENCILVIEW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDIARG_CREATEDEPTHSTENCILVIEW is supported begi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDIARG_CREATEDEPTHSTENCILVIEW
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDIARG_CREATEDEPTHSTENCILVIEW
 ---
 
@@ -54,22 +58,22 @@ typedef struct D3D11DDIARG_CREATEDEPTHSTENCILVIEW {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A valid bitwise OR of <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_createdepthstencilview_flag.md">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>-typed values that indicates the type of depth-stencil view to create.
-        
-            `Format`
+`Flags`
 
-            [in] A DXGI_FORMAT-typed value that indicates the pixel format of the depth-stencil view.
-        
-            `hDrvResource`
+[in] A valid bitwise OR of <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_createdepthstencilview_flag.md">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>-typed values that indicates the type of depth-stencil view to create.
 
-            [in] A handle to the base depth stencil resource.
-        
-            `ResourceDimension`
+`Format`
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541810">D3D10DDIRESOURCE_TYPE</a>-typed value that indicates the resource type and dimensionality of the base resource.
+[in] A DXGI_FORMAT-typed value that indicates the pixel format of the depth-stencil view.
+
+`hDrvResource`
+
+[in] A handle to the base depth stencil resource.
+
+`ResourceDimension`
+
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541810">D3D10DDIRESOURCE_TYPE</a>-typed value that indicates the resource type and dimensionality of the base resource.
 
 
 ## Requirements
@@ -80,31 +84,22 @@ typedef struct D3D11DDIARG_CREATEDEPTHSTENCILVIEW {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatedepthstencilviewsize.md">CalcPrivateDepthStencilViewSize(D3D11)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdepthstencilview.md">CreateDepthStencilView(D3D11)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex1d_depthstencilview.md">D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex2d_depthstencilview.md">D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_texcube_depthstencilview.md">D3D10DDIARG_TEXCUBE_DEPTHSTENCILVIEW</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541810">D3D10DDIRESOURCE_TYPE</a>
-</dt>
-<dt>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex1d_depthstencilview.md">D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW</a>
+
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_createdepthstencilview_flag.md">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdepthstencilview.md">CreateDepthStencilView(D3D11)</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatedepthstencilviewsize.md">CalcPrivateDepthStencilViewSize(D3D11)</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541810">D3D10DDIRESOURCE_TYPE</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex2d_depthstencilview.md">D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW</a>
+
  
 
  

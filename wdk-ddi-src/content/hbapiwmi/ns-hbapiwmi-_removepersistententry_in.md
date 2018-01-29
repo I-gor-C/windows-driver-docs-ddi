@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7019ee37-2080-4ba3-ba39-977e575ec04e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemovePersistentEntry_IN, *PRemovePersistentEntry_IN, RemovePersistentEntry_IN
+ms.keywords : PRemovePersistentEntry_IN structure pointer [Storage Devices], *PRemovePersistentEntry_IN, _RemovePersistentEntry_IN, hbapiwmi/RemovePersistentEntry_IN, RemovePersistentEntry_IN, PRemovePersistentEntry_IN, structs-Fibre_e5e794c3-e43c-4218-af52-3f2d8a96c256.xml, storage.removepersistententry_in, hbapiwmi/PRemovePersistentEntry_IN, RemovePersistentEntry_IN structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RemovePersistentEntry_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PRemovePersistentEntry_IN, RemovePersistentEntry_IN"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _RemovePersistentEntry_IN {
 
 ## Members
 
-        
-            `Binding`
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings.
-        
-            `PortWWN`
+`Binding`
 
-            Contains a worldwide name that indicates the port for which a persistent binding will be removed.
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the RemovePersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
+`PortWWN`
+
+Contains a worldwide name that indicates the port for which a persistent binding will be removed.
+
+## Remarks
+The WMI tool suite generates a declaration of the RemovePersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _RemovePersistentEntry_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563988">RemovePersistentEntry</a>
-</dt>
-</dl>
+
  
 
  

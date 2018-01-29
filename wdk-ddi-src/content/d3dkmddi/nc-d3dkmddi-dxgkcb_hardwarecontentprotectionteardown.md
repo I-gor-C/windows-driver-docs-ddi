@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7B12B9AD-2288-4CE0-A4D8-F1C96150CE45
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcbhardwarecontentprotectionteardown, DxgkCbHardwareContentProtectionTeardown callback function [Display Devices], DxgkCbHardwareContentProtectionTeardown, DXGKCB_HARDWARECONTENTPROTECTIONTEARDOWN, DXGKCB_HARDWARECONTENTPROTECTIONTEARDOWN, d3dkmddi/DxgkCbHardwareContentProtectionTeardown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbHardwareContentProtectionTeardown
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -87,11 +91,8 @@ The driver can call this callback at either passive level or at dispatch level.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_hardware_content_protection_teardown_flags.md">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7e282ec6-c159-47a4-af14-2b0cb8e34a8e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkprotectedcallback, DxgkProtectedCallback callback function [Display Devices], DxgkProtectedCallback, DXGKDDI_PROTECTED_CALLBACK, DXGKDDI_PROTECTED_CALLBACK, dispmprt/DxgkProtectedCallback, DmFunctions_a4386149-d1c4-45f4-8649-5539783620f4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkProtectedCallback
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -75,16 +79,28 @@ None
 <i>DxgkProtectedCallback</i> must be called only when all access to the display adapter has been halted, as indicated by the status parameter <i>ProtectionStatus.</i>
 
 The driver must ensure that following conditions are met during the callback routine:
-
+<ul>
+<li>
 All interrupts on the device are disabled, and any remaining pending interrupts are handled, including any DPCs that may have been queued on any CPU but not yet serviced.
 
+</li>
+<li>
 All write-combined memory and any other cache-related states have been flushed.
 
+</li>
+<li>
 Any ACPI or BIOS/SMI events that occur do not access the hardware.
 
+</li>
+<li>
 Coherency is achieved between all adapters in a linked-adapter state configuration.
 
+</li>
+<li>
 The adapter, including its registers and display mode, is maintained in the proper state to handle the DMA buffer that occurs on the return from the <i>DxgkProtectedCallback</i> routine. The driver should not change the visible state or capabilities of any application.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,11 +116,8 @@ The adapter, including its registers and display mode, is maintained in the prop
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a>
-</dt>
-</dl>
+
  
 
  

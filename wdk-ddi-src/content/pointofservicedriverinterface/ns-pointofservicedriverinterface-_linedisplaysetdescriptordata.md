@@ -7,8 +7,8 @@ old-location : pos\linedisplaysetdescriptordata.htm
 old-project : pos
 ms.assetid : 60E2379E-BF42-4290-98AA-5E6E8DE0A922
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _LineDisplaySetDescriptorData, LineDisplaySetDescriptorData
+ms.date : 1/18/2018
+ms.keywords : LineDisplaySetDescriptorData structure, pointofservicedriverinterface/LineDisplaySetDescriptorData, pointofservicedriverinterface/PLineDisplaySetDescriptorData, _LineDisplaySetDescriptorData, LineDisplaySetDescriptorData, PLineDisplaySetDescriptorData structure pointer, PLineDisplaySetDescriptorData, pos.linedisplaysetdescriptordata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LineDisplaySetDescriptorData
-req.alt-loc : pointofservicedriverinterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LineDisplaySetDescriptorData
 ---
 
@@ -45,6 +49,14 @@ typedef struct _LineDisplaySetDescriptorData {
 ````
 
 ## Members
+
+
+`attribute`
+
+
+
+`descriptor`
+
 
 
 

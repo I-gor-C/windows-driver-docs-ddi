@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d6e6cd4c-680d-4885-b910-3de8de143e2b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_get_media_types, IOCTL_DISK_GET_MEDIA_TYPES control code [Storage Devices], IOCTL_DISK_GET_MEDIA_TYPES, ntdddisk/IOCTL_DISK_GET_MEDIA_TYPES, k307_692b21f7-7d14-4ba9-9d56-381606f5f5b1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_GET_MEDIA_TYPES
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 

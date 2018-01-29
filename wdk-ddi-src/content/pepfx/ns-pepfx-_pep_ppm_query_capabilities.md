@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D33FA62B-9DC8-4AC4-85FC-726C39FB76F4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_QUERY_CAPABILITIES, *PPEP_PPM_QUERY_CAPABILITIES, PEP_PPM_QUERY_CAPABILITIES
+ms.keywords : PEP_PPM_QUERY_CAPABILITIES, _PEP_PPM_QUERY_CAPABILITIES, pepfx/PPEP_PPM_QUERY_CAPABILITIES, PPEP_PPM_QUERY_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_CAPABILITIES structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_query_capabilities, pepfx/PEP_PPM_QUERY_CAPABILITIES, *PPEP_PPM_QUERY_CAPABILITIES, PPEP_PPM_QUERY_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_QUERY_CAPABILITIES
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_PPM_QUERY_CAPABILITIES, PEP_PPM_QUERY_CAPABILITIES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_PPM_QUERY_CAPABILITIES, *PPEP_PPM_QUERY_CAPABILITIES
 ---
 
 # _PEP_PPM_QUERY_CAPABILITIES structure
@@ -49,25 +53,29 @@ typedef struct _PEP_PPM_QUERY_CAPABILITIES {
 
 ## Members
 
-        
-            `FeedbackCounterCount`
 
-            [out] The number of processor performance feedback counters supported by the PEP for this processor. On x86/AMD64 platforms, this must be zero.
-        
-            `IdleStateCount`
+`DiscretePerformanceStateCount`
 
-            [out] The number of processor idle states that the PEP supports. The PEP is not required to support the same number of idle states for all processors. The PEP can set <b>IdleStateCount</b> = 0 to indicate that it doesn't support any idle states, in which case the PEP doesn't need to implement any other notifications that deal with processor idle states.
-        
-            `ParkingSupported`
 
-            [out] Whether the PEP supports supplying core parking hints. Set to TRUE if the PEP can indicate which cores to park, or to FALSE if it cannot.
-        
-            `PerformanceStatesSupported`
 
-            [out] Whether the PEP supports performance state controls. Set to TRUE if the PEP supports performance states, or to FALSE if it does not.
+`FeedbackCounterCount`
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186820">PEP_NOTIFY_PPM_QUERY_CAPABILITIES</a> notification. All four members contain output values that the PEP writes to the structure in response to this notification.
+[out] The number of processor performance feedback counters supported by the PEP for this processor. On x86/AMD64 platforms, this must be zero.
+
+`IdleStateCount`
+
+[out] The number of processor idle states that the PEP supports. The PEP is not required to support the same number of idle states for all processors. The PEP can set <b>IdleStateCount</b> = 0 to indicate that it doesn't support any idle states, in which case the PEP doesn't need to implement any other notifications that deal with processor idle states.
+
+`ParkingSupported`
+
+[out] Whether the PEP supports supplying core parking hints. Set to TRUE if the PEP can indicate which cores to park, or to FALSE if it cannot.
+
+`PerformanceStatesSupported`
+
+[out] Whether the PEP supports performance state controls. Set to TRUE if the PEP supports performance states, or to FALSE if it does not.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186820">PEP_NOTIFY_PPM_QUERY_CAPABILITIES</a> notification. All four members contain output values that the PEP writes to the structure in response to this notification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +85,10 @@ typedef struct _PEP_PPM_QUERY_CAPABILITIES {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186820">PEP_NOTIFY_PPM_QUERY_CAPABILITIES</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0d761b64-d405-4c19-9fd8-e4bf371515a1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_InitiatorNodeFailureEvent, *PMSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent
+ms.keywords : MSiSCSI_InitiatorNodeFailureEvent structure [Storage Devices], *PMSiSCSI_InitiatorNodeFailureEvent, iscsimgt/PMSiSCSI_InitiatorNodeFailureEvent, structs-iSCSI_0d1bb4bf-74a0-4d99-9bf8-1545faaff14d.xml, iscsimgt/MSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent, PMSiSCSI_InitiatorNodeFailureEvent structure pointer [Storage Devices], PMSiSCSI_InitiatorNodeFailureEvent, _MSiSCSI_InitiatorNodeFailureEvent, storage.msiscsi_initiatornodefailureevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_InitiatorNodeFailureEvent
-req.alt-loc : iscsimgt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSiSCSI_InitiatorNodeFailureEvent, *PMSiSCSI_InitiatorNodeFailureEvent
 ---
 
 # _MSiSCSI_InitiatorNodeFailureEvent structure
@@ -49,15 +53,14 @@ typedef struct _MSiSCSI_InitiatorNodeFailureEvent {
 
 ## Members
 
-        
-            `FailureTime`
 
-            A timestamp that indicates when the node failure occurred.
-        
-            `FailureType`
+`FailureTime`
 
-            The type of node failure. This member can have the following integer values, which are defined in a ValueMap in <i>Mgmt.mof</i>.
+A timestamp that indicates when the node failure occurred.
 
+`FailureType`
+
+The type of node failure. This member can have the following integer values, which are defined in a ValueMap in <i>Mgmt.mof</i>.
 <table>
 <tr>
 <th>Value</th>
@@ -114,17 +117,17 @@ The logout failed due to other reasons.
 </td>
 </tr>
 </table>
-        
-            `TargetFailureAddr`
 
-            A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies the IP address of the target that a logon or logoff failed for.
-        
-            `TargetFailureName`
+`TargetFailureAddr`
 
-            A wide character string that specifies the name of the target that a logon or logoff failed for.
+A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies the IP address of the target that a logon or logoff failed for.
 
-    ## Remarks
-        It is optional that you implement this class.
+`TargetFailureName`
+
+A wide character string that specifies the name of the target that a logon or logoff failed for.
+
+## Remarks
+It is optional that you implement this class.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -134,16 +137,12 @@ The logout failed due to other reasons.
 | **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563049">MSiSCSI_InitiatorNodeFailureEvent WMI Class</a>
-</dt>
-</dl>
+
  
 
  

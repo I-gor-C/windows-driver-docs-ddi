@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 10b6660c-7f48-4717-89d4-d6a5eb6594c8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DeleteInitiatorNodeName_IN, DeleteInitiatorNodeName_IN, *PDeleteInitiatorNodeName_IN
+ms.keywords : PDeleteInitiatorNodeName_IN, *PDeleteInitiatorNodeName_IN, DeleteInitiatorNodeName_IN, storage.deleteinitiatornodename_in, iscsiop/PDeleteInitiatorNodeName_IN, PDeleteInitiatorNodeName_IN structure pointer [Storage Devices], structs-iSCSI_2b687a5a-17af-4eda-b48f-8e7ca06024f2.xml, DeleteInitiatorNodeName_IN structure [Storage Devices], _DeleteInitiatorNodeName_IN, iscsiop/DeleteInitiatorNodeName_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DeleteInitiatorNodeName_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DeleteInitiatorNodeName_IN, *PDeleteInitiatorNodeName_IN
 ---
 
@@ -46,13 +50,13 @@ typedef struct _DeleteInitiatorNodeName_IN {
 
 ## Members
 
-        
-            `DeletedInitiatorName`
 
-            The iSCSI initiator node name that is to be deleted.
+`DeletedInitiatorName`
 
-    ## Remarks
-        It is optional that you implement this method.
+The iSCSI initiator node name that is to be deleted.
+
+## Remarks
+It is optional that you implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _DeleteInitiatorNodeName_IN {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a>
-</dt>
-<dt>
 <a href="..\iscsiop\ns-iscsiop-_deleteinitiatornodename_out.md">DeleteInitiatorNodeName_OUT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a>
+
  
 
  

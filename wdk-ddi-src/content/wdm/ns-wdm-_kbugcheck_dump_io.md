@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d1c246bd-314d-475f-9df8-f1bf90355a5a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO, *PKBUGCHECK_DUMP_IO
+ms.keywords : wdm/KBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO structure [Kernel-Mode Driver Architecture], wdm/PKBUGCHECK_DUMP_IO, PKBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO, *PKBUGCHECK_DUMP_IO, PKBUGCHECK_DUMP_IO structure pointer [Kernel-Mode Driver Architecture], kernel.kbugcheck_dump_io, _KBUGCHECK_DUMP_IO, kstruct_c_a6201416-346e-4100-882c-329dd3ae1843.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP with Service Pack
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KBUGCHECK_DUMP_IO
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KBUGCHECK_DUMP_IO, *PKBUGCHECK_DUMP_IO
 req.product : Windows 10 or later.
 ---
@@ -50,25 +54,25 @@ typedef struct _KBUGCHECK_DUMP_IO {
 
 ## Members
 
-        
-            `Buffer`
 
-            Pointer to a buffer that contains the current data to be written to the dump file.
-        
-            `BufferLength`
+`Buffer`
 
-            Specifies the length of the buffer, in bytes, that is specified by the <b>Buffer</b> member.
-        
-            `Offset`
+Pointer to a buffer that contains the current data to be written to the dump file.
 
-            Specifies the current offset in the crash dump file, or -1 if the crash dump file is being written sequentially.
-        
-            `Type`
+`BufferLength`
 
-            Specifies the <a href="..\wdm\ne-wdm-_kbugcheck_dump_io_type.md">KBUGCHECK_DUMP_IO_TYPE</a> value that signifies the type of data to be written to the dump file.
+Specifies the length of the buffer, in bytes, that is specified by the <b>Buffer</b> member.
 
-    ## Remarks
-        For information about how this structure is used, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>.
+`Offset`
+
+Specifies the current offset in the crash dump file, or -1 if the crash dump file is being written sequentially.
+
+`Type`
+
+Specifies the <a href="..\wdm\ne-wdm-_kbugcheck_dump_io_type.md">KBUGCHECK_DUMP_IO_TYPE</a> value that signifies the type of data to be written to the dump file.
+
+## Remarks
+For information about how this structure is used, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,16 +82,12 @@ typedef struct _KBUGCHECK_DUMP_IO {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ne-wdm-_kbugcheck_dump_io_type.md">KBUGCHECK_DUMP_IO_TYPE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
-</dt>
-</dl>
+
  
 
  

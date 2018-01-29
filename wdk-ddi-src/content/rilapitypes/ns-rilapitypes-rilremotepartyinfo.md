@@ -7,8 +7,8 @@ old-location : netvista\rilremotepartyinfo_2.htm
 old-project : netvista
 ms.assetid : 0ca17e70-1e50-4b62-89ec-0e92ad6e846b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILREMOTEPARTYINFO, RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO
+ms.date : 1/18/2018
+ms.keywords : RILREMOTEPARTYINFO structure [Network Drivers Starting with Windows Vista], RILREMOTEPARTYINFO, rilapitypes/RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO, netvista.rilremotepartyinfo_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILREMOTEPARTYINFO
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILREMOTEPARTYINFO, RILREMOTEPARTYINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -55,42 +59,42 @@ typedef struct _RILREMOTEPARTYINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwID`
 
-            
-        
-            `dwNamePresentationIndicator`
 
-            
-        
-            `dwNumberPresentationIndicator`
+`dwExecutor`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `raAddress`
 
-            
-        
-            `rsaSubAddress`
+`dwID`
 
-            
-        
-            `wszDescription`
 
-            
+
+`dwNamePresentationIndicator`
+
+
+
+`dwNumberPresentationIndicator`
+
+
+
+`dwParams`
+
+
+
+`raAddress`
+
+
+
+`rsaSubAddress`
+
+
+
+`wszDescription`
+
+
 
 
 ## Requirements

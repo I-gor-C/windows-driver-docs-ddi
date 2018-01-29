@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1931c640-666b-4db5-8d05-eab43ae96665
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _HW_STREAM_HEADER, *PHW_STREAM_HEADER, HW_STREAM_HEADER
+ms.keywords : "*PHW_STREAM_HEADER, PHW_STREAM_HEADER, _HW_STREAM_HEADER, HW_STREAM_HEADER structure [Streaming Media Devices], stream.hw_stream_header, HW_STREAM_HEADER, PHW_STREAM_HEADER structure pointer [Streaming Media Devices], strmini/PHW_STREAM_HEADER, strclass-struct_bf41c526-276a-4e94-9d27-97177a3164bc.xml, strmini/HW_STREAM_HEADER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HW_STREAM_HEADER
-req.alt-loc : strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHW_STREAM_HEADER, HW_STREAM_HEADER"
 req.product : Windows 10 or later.
 ---
@@ -55,42 +59,50 @@ typedef struct _HW_STREAM_HEADER {
 
 ## Members
 
-        
-            `DeviceEventRoutine`
 
-            Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568457">StrMiniEvent</a> routine.
-        
-            `DeviceEventsArray`
+`DeviceEventRoutine`
 
-            Pointer to the beginning of the array of event sets supported by the minidriver.
-        
-            `DevicePropertiesArray`
+Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568457">StrMiniEvent</a> routine.
 
-            Pointer to the beginning of the array of property sets that the minidriver as a whole supports. (Property sets supported by individual streams can be found in the <b>StreamPropertiesArray</b> member of the stream's <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structure.)
-        
-            `NumberOfStreams`
+`DeviceEventsArray`
 
-            The number of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures that follow this header.
-        
-            `NumDevEventArrayEntries`
+Pointer to the beginning of the array of event sets supported by the minidriver.
 
-            The number of entries in the array pointed to by <b>DeviceEventsArray</b>.
-        
-            `NumDevPropArrayEntries`
+`DeviceMethodsArray`
 
-            The number of entries in the array pointed to by <b>DevicePropertiesArray</b>.
-        
-            `Reserved`
 
-            Reserved for system use. Do not use.
-        
-            `SizeOfHwStreamInformation`
 
-            The size, in bytes, of the HW_STREAM_INFORMATION structure.
-        
-            `Topology`
+`DevicePropertiesArray`
 
-            Pointer to the <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure that describes the minidriver's internal topology of nodes and pins. The class driver uses this to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> property set for the minidriver.
+Pointer to the beginning of the array of property sets that the minidriver as a whole supports. (Property sets supported by individual streams can be found in the <b>StreamPropertiesArray</b> member of the stream's <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structure.)
+
+`NumberOfStreams`
+
+The number of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures that follow this header.
+
+`NumDevEventArrayEntries`
+
+The number of entries in the array pointed to by <b>DeviceEventsArray</b>.
+
+`NumDevMethodArrayEntries`
+
+
+
+`NumDevPropArrayEntries`
+
+The number of entries in the array pointed to by <b>DevicePropertiesArray</b>.
+
+`Reserved`
+
+Reserved for system use. Do not use.
+
+`SizeOfHwStreamInformation`
+
+The size, in bytes, of the HW_STREAM_INFORMATION structure.
+
+`Topology`
+
+Pointer to the <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure that describes the minidriver's internal topology of nodes and pins. The class driver uses this to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> property set for the minidriver.
 
 
 ## Requirements
@@ -101,16 +113,12 @@ typedef struct _HW_STREAM_HEADER {
 | **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
+
  
 
  

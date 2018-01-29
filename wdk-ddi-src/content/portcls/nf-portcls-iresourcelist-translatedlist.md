@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6bc4f939-dbc8-4d9a-95f9-b5ec97a47a8a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IResourceList, IResourceList::TranslatedList, TranslatedList
+ms.keywords : audmp-routines_d74c0767-97d9-4488-82f1-51cde4dc8259.xml, IResourceList, IResourceList::TranslatedList, audio.iresourcelist_translatedlist, TranslatedList, IResourceList interface [Audio Devices], TranslatedList method, TranslatedList method [Audio Devices], IResourceList interface, TranslatedList method [Audio Devices], portcls/IResourceList::TranslatedList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IResourceList.TranslatedList
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -69,14 +73,10 @@ This function has no parameters.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
-</dt>
-</dl>
+
  
 
  

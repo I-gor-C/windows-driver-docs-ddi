@@ -7,8 +7,8 @@ old-location : netvista\fwps_vswitch_event_dispatch_table0.htm
 old-project : netvista
 ms.assetid : 7e949e6d-7448-4f76-b8a1-6d050261fb21
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
+ms.date : 1/18/2018
+ms.keywords : FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure [Network Drivers Starting with Windows Vista], fwpsk/FWPS_VSWITCH_EVENT_DISPATCH_TABLE0, netvista.fwps_vswitch_event_dispatch_table0, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ---
 
@@ -57,37 +61,37 @@ typedef struct FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_ {
 
 ## Members
 
-        
-            `vSwitchFilterEngineReorderNotifyRn`
 
-            The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_filter_engine_reorder_callback0.md">FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0</a> callback function or NULL.
-        
-            `vSwitchInterfaceEventNotifyFn`
+`vSwitchFilterEngineReorderNotifyRn`
 
-            The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_interface_event_callback0.md">FWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a> callback function or NULL.
-        
-            `vSwitchLifetimeNotifyFn`
+The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_filter_engine_reorder_callback0.md">FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0</a> callback function or NULL.
 
-            The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_lifetime_event_callback0.md">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a> callback function or NULL.
-        
-            `vSwitchPolicyEventNotifyFn`
+`vSwitchInterfaceEventNotifyFn`
 
-            The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_policy_event_callback0.md">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a> callback function or NULL.
-        
-            `vSwitchPortEventNotifyFn`
+The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_interface_event_callback0.md">FWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a> callback function or NULL.
 
-            The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_port_event_callback0.md">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a> callback function or NULL.
-        
-            `vSwitchRuntimeStateRestoreNotifyFn`
+`vSwitchLifetimeNotifyFn`
 
-            The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_restore_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a> callback function or NULL.
-        
-            `vSwitchRuntimeStateSaveNotifyFn`
+The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_lifetime_event_callback0.md">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a> callback function or NULL.
 
-            The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_save_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a> callback function or NULL.
+`vSwitchPolicyEventNotifyFn`
 
-    ## Remarks
-        The callback driver passes a pointer to an initialized  FWPS_VSWITCH_EVENT_DISPATCH_TABLE0  structure to the <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a> function.
+The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_policy_event_callback0.md">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a> callback function or NULL.
+
+`vSwitchPortEventNotifyFn`
+
+The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_port_event_callback0.md">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a> callback function or NULL.
+
+`vSwitchRuntimeStateRestoreNotifyFn`
+
+The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_restore_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a> callback function or NULL.
+
+`vSwitchRuntimeStateSaveNotifyFn`
+
+The entry point for the <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_save_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a> callback function or NULL.
+
+## Remarks
+The callback driver passes a pointer to an initialized  FWPS_VSWITCH_EVENT_DISPATCH_TABLE0  structure to the <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a> function.
 
 The following definition is in fwpvi.h: 
 
@@ -102,36 +106,26 @@ The following definition is in fwpvi.h:
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_filter_engine_reorder_callback0.md">FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_interface_event_callback0.md">FWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_lifetime_event_callback0.md">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_policy_event_callback0.md">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a>
-</dt>
-<dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_port_event_callback0.md">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_restore_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
-</dt>
-<dt>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_lifetime_event_callback0.md">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_policy_event_callback0.md">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_filter_engine_reorder_callback0.md">FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_interface_event_callback0.md">FWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a>
+
 <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_save_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a>
-</dt>
-<dt>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_restore_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
+
 <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

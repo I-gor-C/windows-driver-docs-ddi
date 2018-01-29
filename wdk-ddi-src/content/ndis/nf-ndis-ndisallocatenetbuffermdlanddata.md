@@ -7,8 +7,8 @@ old-location : netvista\ndisallocatenetbuffermdlanddata.htm
 old-project : netvista
 ms.assetid : cfac9061-a685-4e67-aaa2-ca43b7e36cfa
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisAllocateNetBufferMdlAndData
+ms.date : 1/18/2018
+ms.keywords : NdisAllocateNetBufferMdlAndData function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateNetBufferMdlAndData, ndis_netbuf_functions_ref_4f5d872d-11c1-4d75-889c-0c2157ce5f2e.xml, NdisAllocateNetBufferMdlAndData, netvista.ndisallocatenetbuffermdlanddata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisAllocateNetBufferMdlAndData
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_NetBuffer_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -95,19 +99,14 @@ To free the NET_BUFFER and associated information, call the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferMdlAndData function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferMdlAndData function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

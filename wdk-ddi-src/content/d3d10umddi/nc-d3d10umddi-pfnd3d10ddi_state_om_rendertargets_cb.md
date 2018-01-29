@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d17cd31d-44a1-4f7d-82be-1201c0d5769f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.pfnstateomrendertargetscb, pfnStateOmRenderTargetsCb callback function [Display Devices], pfnStateOmRenderTargetsCb, PFND3D10DDI_STATE_OM_RENDERTARGETS_CB, PFND3D10DDI_STATE_OM_RENDERTARGETS_CB, d3d10umddi/pfnStateOmRenderTargetsCb, d3d10state_functions_d1d161af-c985-4d8d-b734-7acda03b13ce.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnStateOmRenderTargetsCb
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -78,17 +82,12 @@ The <b>pfnStateOmRenderTargetsCb</b> function calls the user-mode display driver
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks.md">D3D10DDI_CORELAYER_DEVICECALLBACKS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setrendertargets.md">SetRenderTargets</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2de3980a-da78-4cdd-916b-0801f38f3637
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeFilterToken
+ms.keywords : seref_33edad21-5cc4-4bd9-86f1-b52c648fc87c.xml, ntifs/SeFilterToken, ifsk.sefiltertoken, SeFilterToken routine [Installable File System Drivers], SeFilterToken
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows XP an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeFilterToken
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -60,7 +64,6 @@ Pointer to a primary or impersonation token. The token can also be a restricted 
 `Flags`
 
 Specifies additional privilege options. This parameter can be zero or a combination of the following values. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -120,7 +123,7 @@ This parameter is optional and can be <b>NULL</b>.
 
 `FilteredToken`
 
-
+TBD
 
 
 ## Return Value
@@ -130,14 +133,20 @@ If one or more of the parameter values were invalid, <b>SeFilterToken</b> return
 ## Remarks
 
 <b>SeFilterToken</b> can restrict the token in the following ways: 
-
+<ul>
+<li>
 Apply the deny-only attribute to SIDs in the token so they cannot be used to access secured objects. For more information about the deny-only attribute, see SID Attributes in an Access Token in the Microsoft Windows SDK documentation. 
 
+</li>
+<li>
 Remove privileges from the token. 
 
+</li>
+<li>
 Specify a list of restricting SIDs, which the system uses when it checks the token's access to a securable object. The system performs two access checks: one using the token's enabled SIDs, and another using the list of restricting SIDs. Access is granted only if both access checks allow the requested access rights.
 
-The restricted token can be used together with <a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a> and <a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a> to create a process that has restricted access rights and privileges. 
+</li>
+</ul>The restricted token can be used together with <a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a> and <a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a> to create a process that has restricted access rights and privileges. 
 
 For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. 
 
@@ -157,41 +166,28 @@ When the token returned in <i>NewToken</i> is no longer needed, free it by calli
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_sid_and_attributes.md">SID_AND_ATTRIBUTES</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+<a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a>
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
+<a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
+
 <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_token_privileges.md">TOKEN_PRIVILEGES</a>
-</dt>
-</dl>
+
  
 
  

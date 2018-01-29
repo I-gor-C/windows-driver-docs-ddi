@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 985dcde1-5643-4c35-9096-44b076a1dd51
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetCharacteristics
+ms.keywords : PFN_WDFDEVICEGETCHARACTERISTICS, DFDeviceObjectGeneralRef_b6e7566f-59b1-46ee-ab3d-45fa7316336e.xml, wdf.wdfdevicegetcharacteristics, kmdf.wdfdevicegetcharacteristics, WdfDeviceGetCharacteristics method, WdfDeviceGetCharacteristics, wdfdevice/WdfDeviceGetCharacteristics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceGetCharacteristics
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,8 +66,6 @@ A bitwise OR of system-defined constants that represent device characteristics. 
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-The following code example obtains a device's characteristics.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,14 +81,10 @@ The following code example obtains a device's characteristics.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetcharacteristics.md">WdfDeviceSetCharacteristics</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b6186c05-ccb9-432c-bd83-9a3fb3af7f0b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG
+ms.keywords : "*PWDF_WORKITEM_CONFIG, wdfworkitem/WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, DFWorkItemObjectRef_48012621-6363-421b-8b95-2bdae4e63b32.xml, _WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG structure, wdfworkitem/PWDF_WORKITEM_CONFIG, PWDF_WORKITEM_CONFIG, wdf.wdf_workitem_config, kmdf.wdf_workitem_config, PWDF_WORKITEM_CONFIG structure pointer"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_WORKITEM_CONFIG
-req.alt-loc : wdfworkitem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -51,21 +55,21 @@ typedef struct _WDF_WORKITEM_CONFIG {
 
 ## Members
 
-        
-            `AutomaticSerialization`
 
-            A Boolean value that, if <b>TRUE</b>, indicates that the framework will synchronize execution of the <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function with callback functions from other objects that are underneath the work-item object's parent object. For more information, see the following Remarks section. If <b>FALSE</b>, the framework does not synchronize execution of the <i>EvtWorkItem</i> callback function.
-        
-            `EvtWorkItemFunc`
+`AutomaticSerialization`
 
-            The address of an <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> event callback function.
-        
-            `Size`
+A Boolean value that, if <b>TRUE</b>, indicates that the framework will synchronize execution of the <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function with callback functions from other objects that are underneath the work-item object's parent object. For more information, see the following Remarks section. If <b>FALSE</b>, the framework does not synchronize execution of the <i>EvtWorkItem</i> callback function.
 
-            The size, in bytes, of this <b>WDF_WORKITEM_CONFIG</b> structure.
+`EvtWorkItemFunc`
 
-    ## Remarks
-        Your driver must initialize the <b>WDF_WORKITEM_CONFIG</b> structure by calling <a href="..\wdfworkitem\nf-wdfworkitem-wdf_workitem_config_init.md">WDF_WORKITEM_CONFIG_INIT</a>. Your driver can then pass the structure to the <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a> method as an input parameter.
+The address of an <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> event callback function.
+
+`Size`
+
+The size, in bytes, of this <b>WDF_WORKITEM_CONFIG</b> structure.
+
+## Remarks
+Your driver must initialize the <b>WDF_WORKITEM_CONFIG</b> structure by calling <a href="..\wdfworkitem\nf-wdfworkitem-wdf_workitem_config_init.md">WDF_WORKITEM_CONFIG_INIT</a>. Your driver can then pass the structure to the <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a> method as an input parameter.
 
 Setting the <b>AutomaticSerialization</b> member of <b>WDF_WORKITEM_CONFIG</b> to <b>TRUE</b> has no effect if the parent object's <a href="..\wdfobject\ne-wdfobject-_wdf_synchronization_scope.md">synchronization scope</a> is set to <b>WdfSynchronizationScopeNone</b>.
 
@@ -81,19 +85,14 @@ For more information about <b>AutomaticSerialization</b> and synchronizing drive
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfworkitem.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a>
-</dt>
-<dt>
 <a href="..\wdfworkitem\nf-wdfworkitem-wdf_workitem_config_init.md">WDF_WORKITEM_CONFIG_INIT</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a>
+
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2477F904-A470-4FB0-83D8-0264A4838C12
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _OPEN_REPARSE_LIST, OPEN_REPARSE_LIST, *POPEN_REPARSE_LIST
+ms.keywords : ntifs/OPEN_REPARSE_LIST, *POPEN_REPARSE_LIST, ifsk.open_reparse_list, ntifs/POPEN_REPARSE_LIST, POPEN_REPARSE_LIST structure pointer [Installable File System Drivers], OPEN_REPARSE_LIST structure [Installable File System Drivers], _OPEN_REPARSE_LIST, POPEN_REPARSE_LIST, OPEN_REPARSE_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OPEN_REPARSE_LIST
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : OPEN_REPARSE_LIST, *POPEN_REPARSE_LIST
 ---
 
@@ -47,10 +51,10 @@ typedef struct _OPEN_REPARSE_LIST {
 
 ## Members
 
-        
-            `OpenReparseList`
 
-            A pointer to a list of <b>OPEN_REPARSE_LIST_ENTRY</b>
+`OpenReparseList`
+
+A pointer to a list of <b>OPEN_REPARSE_LIST_ENTRY</b>
   structures that specify the tag and possibly GUID that should be  opened directly without returning <b>STATUS_REPARSE</b>.
 
 

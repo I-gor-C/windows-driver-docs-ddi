@@ -7,8 +7,8 @@ old-location : netvista\riluicccommand_2.htm
 old-project : netvista
 ms.assetid : 13861810-91a6-4027-81a0-297b049e3ee4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCCOMMAND, RILUICCCOMMAND
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_UICCCMD_READRECORD, rilapitypes/RIL_UICCCMD_UPDATERECORD, RIL_UICCCMD_UPDATERECORD, RIL_UICCCMD_READRECORD, rilapitypes/RIL_UICCCMD_UPDATEBINARY, RILUICCCOMMAND enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_UICCCMD_MAX, RIL_UICCCMD_MAX, RIL_UICCCMD_UPDATEBINARY, rilapitypes/RILUICCCOMMAND, netvista.riluicccommand_2, RILUICCCOMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCCOMMAND
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUICCCOMMAND
 req.product : Windows 10 or later.
 ---
@@ -54,6 +58,11 @@ typedef enum _RILUICCCOMMAND {
 
 <tr>
 <td>RIL_UICCCMD_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_UICCCMD_READBINARY</td>
 <td></td>
 </tr>
 

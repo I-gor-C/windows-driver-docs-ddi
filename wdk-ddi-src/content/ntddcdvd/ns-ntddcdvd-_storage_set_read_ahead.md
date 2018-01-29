@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5220230f-5436-4a79-808c-ab840d7009e7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_SET_READ_AHEAD, *PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD
+ms.keywords : "*PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD structure [Storage Devices], structs-general_a6938152-7839-43e0-a030-8767d032469c.xml, PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD, ntddcdvd/PSTORAGE_SET_READ_AHEAD, PSTORAGE_SET_READ_AHEAD structure pointer [Storage Devices], _STORAGE_SET_READ_AHEAD, storage.storage_set_read_ahead, ntddcdvd/STORAGE_SET_READ_AHEAD"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_SET_READ_AHEAD
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD"
 ---
 
@@ -47,14 +51,14 @@ typedef struct _STORAGE_SET_READ_AHEAD {
 
 ## Members
 
-        
-            `TargetAddress`
 
-            Indicates the address to jump to.
-        
-            `TriggerAddress`
+`TargetAddress`
 
-            Indicates the address at which the device jumps to the target address.
+Indicates the address to jump to.
+
+`TriggerAddress`
+
+Indicates the address at which the device jumps to the target address.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _STORAGE_SET_READ_AHEAD {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_storage_set_read_ahead.md">IOCTL_STORAGE_SET_READ_AHEAD</a>
-</dt>
-</dl>
+
  
 
  

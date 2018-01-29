@@ -7,8 +7,8 @@ old-location : netvista\rilosgeolocationinfo_2.htm
 old-project : netvista
 ms.assetid : 5207e880-67cb-4cd5-9884-a01e6dd20201
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
+ms.date : 1/18/2018
+ms.keywords : RILOSGEOLOCATIONINFO, rilapitypes/RILOSGEOLOCATIONINFO, netvista.rilosgeolocationinfo_2, RILOSGEOLOCATIONINFO structure [Network Drivers Starting with Windows Vista], *LPRILOSGEOLOCATIONINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILOSGEOLOCATIONINFO
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
 req.product : Windows 10 or later.
 ---
@@ -63,74 +67,74 @@ typedef struct _RILOSGEOLOCATIONINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwAccuracy`
+`cbSize`
 
-            
-        
-            `dwAltitude`
 
-            
-        
-            `dwLatitude`
 
-            
-        
-            `dwLocationInformationMask`
+`dwAccuracy`
 
-            
-        
-            `dwLongitude`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `stTimeStamp`
+`dwAltitude`
 
-            
-        
-            `wszAddressLine1`
 
-            
-        
-            `wszAddressLine2`
 
-            
-        
-            `wszCity`
+`dwLatitude`
 
-            
-        
-            `wszCountry`
 
-            
-        
-            `wszCountryCode`
 
-            
-        
-            `wszFormattedAddress`
+`dwLocationInformationMask`
 
-            
-        
-            `wszPostalCode`
 
-            
-        
-            `wszRegionCode`
 
-            
-        
-            `wszState`
+`dwLongitude`
 
-            
+
+
+`dwParams`
+
+
+
+`stTimeStamp`
+
+
+
+`wszAddressLine1`
+
+
+
+`wszAddressLine2`
+
+
+
+`wszCity`
+
+
+
+`wszCountry`
+
+
+
+`wszCountryCode`
+
+
+
+`wszFormattedAddress`
+
+
+
+`wszPostalCode`
+
+
+
+`wszRegionCode`
+
+
+
+`wszState`
+
+
 
 
 ## Requirements

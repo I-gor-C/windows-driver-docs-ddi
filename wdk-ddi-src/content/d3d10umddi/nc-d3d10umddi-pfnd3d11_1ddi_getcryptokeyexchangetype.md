@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 64870c9f-facf-4344-93d0-12cbcec86e11
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.getcryptokeyexchangetype, GetCryptoKeyExchangeType callback function [Display Devices], GetCryptoKeyExchangeType, PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE, PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE, d3d10umddi/GetCryptoKeyExchangeType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetCryptoKeyExchangeType
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -79,26 +83,56 @@ The zero-based index of the key exchange type.
 ## Return Value
 
 <b>GetCryptoKeyExchangeType</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The content protection capabilities were queried successfully.
+</dl>
+</td>
+<td width="60%">
+The content protection capabilities were queried successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DERR_INVALID_CRYPTO</b></dt>
-</dl>The encryption algorithm specified by the <i>pCryptoType</i> parameter is not supported.
+</dl>
+</td>
+<td width="60%">
+The encryption algorithm specified by the <i>pCryptoType</i> parameter is not supported.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The <b>GetCryptoKeyExchangeType</b> function can be called to query the key exchange types for any index from 0 to (<b>D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS.KeyExchangeTypeCount</b>– 1). 
 
 The <i>pCryptoType</i> parameter can contain one of the following values:
-
+<ul>
+<li>
 <b>D3DCRYPTOTYPE_AES128_CTR</b> if the driver is configured to use the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher. 
 
 
+</li>
+<li>
 <b>D3DCRYPTOTYPE_PROPRIETARY</b> if the driver is configured to use a proprietary encryption algorithm. 
 
 
+</li>
+<li>
 <b>NULL_GUID</b> if the driver is not configured to use any encryption algorithm.
+
+</li>
+</ul><div class="alert"><b>Note</b>  The Microsoft Direct3D runtime verifies that the  <i>pDecodeProfile</i>, <i>pCryptoType</i>, and <i>Index</i> parameter data is valid before it calls the <i>GetCryptoKeyExchangeType</i> function.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -114,14 +148,10 @@ The <i>pCryptoType</i> parameter can contain one of the following values:
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getcontentprotectioncaps.md">GetContentProtectionCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
+
  
 
  

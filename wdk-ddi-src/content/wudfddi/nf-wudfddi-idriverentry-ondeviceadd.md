@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f2953b0d-6745-4804-bcda-47c7ddfb901f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IDriverEntry, IDriverEntry::OnDeviceAdd, OnDeviceAdd
+ms.keywords : OnDeviceAdd method, IDriverEntry interface, IDriverEntry, UMDFDriverObjectRef_81d1022a-84b6-4a2e-a227-57f30c515171.xml, wdf.idriverentry_ondeviceadd, OnDeviceAdd method, umdf.idriverentry_ondeviceadd, IDriverEntry interface, OnDeviceAdd method, OnDeviceAdd, IDriverEntry::OnDeviceAdd, wudfddi/IDriverEntry::OnDeviceAdd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDriverEntry.OnDeviceAdd
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -89,26 +93,18 @@ For more information, see <a href="https://msdn.microsoft.com/233e3315-3044-42d7
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556768">IPnpCallbackHardware::OnReleaseHardware</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
+
+<a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+
  
 
  

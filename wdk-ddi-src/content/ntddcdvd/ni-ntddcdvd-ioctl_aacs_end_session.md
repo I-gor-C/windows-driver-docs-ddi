@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5a86c871-ed6e-4c96-bc12-03b3a900953d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.keywords : storage.ioctl_aacs_end_session, IOCTL_AACS_END_SESSION control code [Storage Devices], IOCTL_AACS_END_SESSION, ntddcdvd/IOCTL_AACS_END_SESSION, k307_608ddec6-9661-433b-8b82-22ce3b06267d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_AACS_END_SESSION
-req.alt-loc : Ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_END_SESSION IOCTL
@@ -59,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes transferred. The <b>Status</b> field is set to STATUS_SUCCESS or possibly STATUS_INSUFFICIENT_RESOURCES.
 
 

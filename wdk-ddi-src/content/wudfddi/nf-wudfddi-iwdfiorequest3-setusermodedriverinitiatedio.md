@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : F494ED4C-DA2F-4630-B0CA-8B3BE7D26A80
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest3, IWDFIoRequest3::SetUserModeDriverInitiatedIo, SetUserModeDriverInitiatedIo
+ms.keywords : IWDFIoRequest3, SetUserModeDriverInitiatedIo method, IWDFIoRequest3 interface, wdf.iwdfiorequest3_setusermodedriverinitiatedio, SetUserModeDriverInitiatedIo method, wudfddi/IWDFIoRequest3::SetUserModeDriverInitiatedIo, umdf.iwdfiorequest3_setusermodedriverinitiatedio, SetUserModeDriverInitiatedIo, IWDFIoRequest3::SetUserModeDriverInitiatedIo, IWDFIoRequest3 interface, SetUserModeDriverInitiatedIo method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFIoRequest3.SetUserModeDriverInitiatedIo
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -90,17 +94,12 @@ The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451341">GetUserModeDriverInitiatedIo</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetusermodedriverinitiatedio.md">WdfRequestSetUserModeDriverInitiatedIo</a>
-</dt>
-</dl>
+
  
 
  

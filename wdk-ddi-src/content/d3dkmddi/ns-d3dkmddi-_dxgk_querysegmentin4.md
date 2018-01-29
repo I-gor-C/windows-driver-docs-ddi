@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B78E5AEF-DC31-44B2-92D8-DE7C83726E29
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_QUERYSEGMENTIN4, DXGK_QUERYSEGMENTIN4
+ms.keywords : _DXGK_QUERYSEGMENTIN4, d3dkmddi/DXGK_QUERYSEGMENTIN4, DXGK_QUERYSEGMENTIN4 structure [Display Devices], DXGK_QUERYSEGMENTIN4, display.dxgk_querysegmentin4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_QUERYSEGMENTIN4
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_QUERYSEGMENTIN4
 ---
 
@@ -46,10 +50,10 @@ typedef struct _DXGK_QUERYSEGMENTIN4 {
 
 ## Members
 
-        
-            `PhysicalAdapterIndex`
 
-            A zero-based physical adapter index in a linked display adapter  (LDA) link. Zero for non-LDA configurations.
+`PhysicalAdapterIndex`
+
+A zero-based physical adapter index in a linked display adapter  (LDA) link. Zero for non-LDA configurations.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _DXGK_QUERYSEGMENTIN4 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout4.md">DXGK_QUERYSEGMENTOUT4</a>
-</dt>
-</dl>
+
  
 
  

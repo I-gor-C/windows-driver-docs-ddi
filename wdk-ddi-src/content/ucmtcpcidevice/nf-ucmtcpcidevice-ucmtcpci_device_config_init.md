@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 8845f8f7-683e-487b-924b-596dbbfb98f2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCMTCPCI_DEVICE_CONFIG_INIT
+ms.keywords : ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG_INIT, UCMTCPCI_DEVICE_CONFIG_INIT, buses.ucmtcpci_device_config_init, UCMTCPCI_DEVICE_CONFIG_INIT method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCMTCPCI_DEVICE_CONFIG_INIT
-req.alt-loc : ucmtcpcidevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -73,11 +77,8 @@ This method does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpcideviceinitialize.md">UcmTcpciDeviceInitialize</a>
-</dt>
-</dl>
+
  
 
  

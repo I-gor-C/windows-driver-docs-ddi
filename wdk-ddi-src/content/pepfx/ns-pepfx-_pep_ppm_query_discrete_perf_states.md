@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 506b3d8e-4aba-4e70-a6db-52a52d717c6b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_QUERY_DISCRETE_PERF_STATES, *PPEP_PPM_QUERY_DISCRETE_PERF_STATES, PEP_PPM_QUERY_DISCRETE_PERF_STATES
+ms.keywords : _PEP_PPM_QUERY_DISCRETE_PERF_STATES, pepfx/PEP_PPM_QUERY_DISCRETE_PERF_STATES, pepfx/PPEP_PPM_QUERY_DISCRETE_PERF_STATES, kernel.pep_ppm_query_discrete_perf_states, PPEP_PPM_QUERY_DISCRETE_PERF_STATES structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_DISCRETE_PERF_STATES, PEP_PPM_QUERY_DISCRETE_PERF_STATES structure [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_DISCRETE_PERF_STATES, *PPEP_PPM_QUERY_DISCRETE_PERF_STATES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_QUERY_DISCRETE_PERF_STATES
-req.alt-loc : Pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_PPM_QUERY_DISCRETE_PERF_STATES, PEP_PPM_QUERY_DISCRETE_PERF_STATES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_PPM_QUERY_DISCRETE_PERF_STATES, *PPEP_PPM_QUERY_DISCRETE_PERF_STATES
 ---
 
 # _PEP_PPM_QUERY_DISCRETE_PERF_STATES structure
@@ -47,14 +51,14 @@ typedef struct _PEP_PPM_QUERY_DISCRETE_PERF_STATES {
 
 ## Members
 
-        
-            `Count`
 
-            On input, the size of the array pointed to by <i>States</i>.
-        
-            `States`
+`Count`
 
-            On output, an array of <a href="https://msdn.microsoft.com/46231ac0-2c34-4154-8b3e-f34c40cbff4a">PEP_PROCESSOR_PERF_STATE</a> structures that indicates performance states that is filled by  PEP.
+On input, the size of the array pointed to by <i>States</i>.
+
+`States`
+
+On output, an array of <a href="https://msdn.microsoft.com/46231ac0-2c34-4154-8b3e-f34c40cbff4a">PEP_PROCESSOR_PERF_STATE</a> structures that indicates performance states that is filled by  PEP.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct _PEP_PPM_QUERY_DISCRETE_PERF_STATES {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_ppm_query_capabilities.md">PEP_PPM_QUERY_CAPABILITIES</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186881">Processor power management (PPM) notifications</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_ppm_query_capabilities.md">PEP_PPM_QUERY_CAPABILITIES</a>
+
  
 
  

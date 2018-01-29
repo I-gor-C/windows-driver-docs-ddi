@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c1e7a9ce-5794-4ed0-bb30-e3e68b0251db
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfInterruptGetDevice
+ms.keywords : DFInterruptObjectRef_9c646459-e17b-434f-b313-d22f3a211c4e.xml, WdfInterruptGetDevice method, WdfInterruptGetDevice, wdf.wdfinterruptgetdevice, wdfinterrupt/WdfInterruptGetDevice, kmdf.wdfinterruptgetdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfInterruptGetDevice
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DIRQL
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -66,8 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about handling interrupts in framework-based drivers, see <a href="https://msdn.microsoft.com/08460510-6e5f-4c02-8086-9caa9b4b4c2d">Handling Hardware Interrupts</a>.
 
-The following code example shows how an <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a> callback function can obtain a pointer to driver-defined context space for the device object that an interrupt object belongs to.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,11 +84,8 @@ The following code example shows how an <a href="..\wdfinterrupt\nc-wdfinterrupt
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a>
-</dt>
-</dl>
+
  
 
  

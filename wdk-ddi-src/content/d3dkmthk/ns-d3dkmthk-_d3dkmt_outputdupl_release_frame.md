@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 98d31b6b-c31a-4509-a89f-f09932468313
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OUTPUTDUPL_RELEASE_FRAME, D3DKMT_OUTPUTDUPL_RELEASE_FRAME
+ms.keywords : display.d3dkmt_outputdupl_release_frame, _D3DKMT_OUTPUTDUPL_RELEASE_FRAME, D3DKMT_OUTPUTDUPL_RELEASE_FRAME, d3dkmthk/D3DKMT_OUTPUTDUPL_RELEASE_FRAME, D3DKMT_OUTPUTDUPL_RELEASE_FRAME structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OUTPUTDUPL_RELEASE_FRAME
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OUTPUTDUPL_RELEASE_FRAME
 ---
 
@@ -47,14 +51,18 @@ typedef struct _D3DKMT_OUTPUTDUPL_RELEASE_FRAME {
 
 ## Members
 
-        
-            `hAdapter`
 
-            [in] A handle of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the graphics adapter that contains the duplicated desktop image.
-        
-            `VidPnSourceId`
+`hAdapter`
 
-            [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology.
+[in] A handle of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the graphics adapter that contains the duplicated desktop image.
+
+`NextKeyMutexIdx`
+
+
+
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology.
 
 
 ## Requirements
@@ -65,13 +73,10 @@ typedef struct _D3DKMT_OUTPUTDUPL_RELEASE_FRAME {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtoutputduplreleaseframe.md">D3DKMTOutputDuplReleaseFrame</a>
-</dt>
-</dl>
+
  
 
  

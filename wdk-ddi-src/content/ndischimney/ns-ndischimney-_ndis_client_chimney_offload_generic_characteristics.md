@@ -7,8 +7,8 @@ old-location : netvista\ndis_client_chimney_offload_generic_characteristics.htm
 old-project : netvista
 ms.assetid : 66eb9528-e026-44cd-a775-c8d963036adc
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, *PNDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS
+ms.date : 1/18/2018
+ms.keywords : "*PNDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, tcp_chim_struct_5db55d5e-f540-4f60-9f3b-adcd24932b1d.xml, NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], netvista.ndis_client_chimney_offload_generic_characteristics, ndischimney/NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, _NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, PNDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, PNDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], ndischimney/PNDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS
-req.alt-loc : ndischimney.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PNDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, *PNDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS
 ---
 
 # _NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure
@@ -57,59 +61,59 @@ typedef struct _NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS {
 
 ## Members
 
-        
-            `Flags`
 
-            Reserved for system use.
-        
-            `Header`
+`Flags`
 
-            The header of the NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure. The header is
+Reserved for system use.
+
+`Header`
+
+The header of the NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure. The header is
      formatted as an 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure. The
      NDIS_OBJECT_HEADER structure contains the revision number of the
      NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure and the size of the
      NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure, including the header, in bytes. The 
      <b>Type</b> member of the header is not significant.
-        
-            `IndicateOffloadEventHandler`
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-indicate_offload_event_handler.md">
-     ProtocolIndicateOffloadEvent</a> function.
-        
-            `InitiateOffloadCompleteHandler`
+`IndicateOffloadEventHandler`
 
-            Specifies the entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-initiate_offload_complete_handler.md">
-     ProtocolInitiateOffloadComplete</a> function.
-        
-            `InvalidateOffloadCompleteHandler`
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.protocolindicateoffloadevent" tabindex="0"><i>
+     ProtocolIndicateOffloadEvent</i></mshelp:link> function.
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-invalidate_offload_complete_handler.md">
-     ProtocolInvalidateOffloadComplete</a> function.
-        
-            `QueryOffloadCompleteHandler`
+`InitiateOffloadCompleteHandler`
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-query_offload_complete_handler.md">
-     ProtocolQueryOffloadComplete</a> function.
-        
-            `TerminateOffloadCompleteHandler`
+Specifies the entry point of the driver's 
+     <mshelp:link keywords="netvista.protocolinitiateoffloadcomplete" tabindex="0"><i>
+     ProtocolInitiateOffloadComplete</i></mshelp:link> function.
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-terminate_offload_complete_handler.md">
-     ProtocolTerminateOffloadComplete</a> function.
-        
-            `UpdateOffloadCompleteHandler`
+`InvalidateOffloadCompleteHandler`
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-update_offload_complete_handler.md">
-     ProtocolUpdateOffloadComplete</a> function.
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.protocolinvalidateoffloadcomplete" tabindex="0"><i>
+     ProtocolInvalidateOffloadComplete</i></mshelp:link> function.
 
-    ## Remarks
-        To register its generic chimney offload entry points, a protocol or intermediate driver calls the 
+`QueryOffloadCompleteHandler`
+
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.protocolqueryoffloadcomplete" tabindex="0"><i>
+     ProtocolQueryOffloadComplete</i></mshelp:link> function.
+
+`TerminateOffloadCompleteHandler`
+
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.protocolterminateoffloadcomplete" tabindex="0"><i>
+     ProtocolTerminateOffloadComplete</i></mshelp:link> function.
+
+`UpdateOffloadCompleteHandler`
+
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.protocolupdateoffloadcomplete" tabindex="0"><i>
+     ProtocolUpdateOffloadComplete</i></mshelp:link> function.
+
+## Remarks
+To register its generic chimney offload entry points, a protocol or intermediate driver calls the 
     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function
     in the context of the 
     <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a> function. To the 
@@ -125,45 +129,34 @@ typedef struct _NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS {
 | **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
+<mshelp:link keywords="netvista.protocolterminateoffloadcomplete" tabindex="0"><i>
+   ProtocolTerminateOffloadComplete</i></mshelp:link>
+
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-indicate_offload_event_handler.md">
-   ProtocolIndicateOffloadEvent</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-initiate_offload_complete_handler.md">
-   ProtocolInitiateOffloadComplete</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-invalidate_offload_complete_handler.md">
-   ProtocolInvalidateOffloadComplete</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-query_offload_complete_handler.md">
-   ProtocolQueryOffloadComplete</a>
-</dt>
-<dt>
+
+<mshelp:link keywords="netvista.protocolindicateoffloadevent" tabindex="0"><i>
+   ProtocolIndicateOffloadEvent</i></mshelp:link>
+
+<mshelp:link keywords="netvista.protocolinvalidateoffloadcomplete" tabindex="0"><i>
+   ProtocolInvalidateOffloadComplete</i></mshelp:link>
+
+<mshelp:link keywords="netvista.protocolupdateoffloadcomplete" tabindex="0"><i>
+   ProtocolUpdateOffloadComplete</i></mshelp:link>
+
 <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-terminate_offload_complete_handler.md">
-   ProtocolTerminateOffloadComplete</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-update_offload_complete_handler.md">
-   ProtocolUpdateOffloadComplete</a>
-</dt>
-</dl>
- 
+
+<mshelp:link keywords="netvista.protocolqueryoffloadcomplete" tabindex="0"><i>
+   ProtocolQueryOffloadComplete</i></mshelp:link>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<mshelp:link keywords="netvista.protocolinitiateoffloadcomplete" tabindex="0"><i>
+   ProtocolInitiateOffloadComplete</i></mshelp:link>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

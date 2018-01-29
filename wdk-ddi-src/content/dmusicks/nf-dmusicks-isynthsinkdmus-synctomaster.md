@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5009e4d8-5299-4eeb-a70d-5be87694b1d0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISynthSinkDMus, ISynthSinkDMus::SyncToMaster, SyncToMaster
+ms.keywords : dmusicks/ISynthSinkDMus::SyncToMaster, ISynthSinkDMus::SyncToMaster, SyncToMaster method [Audio Devices], ISynthSinkDMus interface, audmp-routines_35d431eb-a92c-4e73-b75c-8a3a1f0451ce.xml, SyncToMaster, audio.isynthsinkdmus_synctomaster, ISynthSinkDMus interface [Audio Devices], SyncToMaster method, SyncToMaster method [Audio Devices], ISynthSinkDMus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISynthSinkDMus.SyncToMaster
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -82,14 +86,10 @@ Parameter <i>fStart</i> is <b>TRUE</b> during the first call to <code>SyncToMast
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a>
-</dt>
-<dt>
+
 <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fb83a03e-56d9-4daf-93c1-407744ad134a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
+ms.keywords : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 structure [Display Devices], display.d3d12ddi-video-crypto-session-transform-support-data-0030, d3d12umddi/D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030
 ---
 
@@ -57,54 +61,54 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 {
 
 ## Members
 
-        
-            `BitstreamEncryption`
 
-            Bitstream encryption.
-        
-            `ContentProtectionSystem`
+`BitstreamEncryption`
 
-            Content protection system.
-        
-            `DecodeProfile`
+Bitstream encryption.
 
-            Decode profile.
-        
-            `Flags`
+`ContentProtectionSystem`
 
-            Flags.
-        
-            `InputAlignment`
+Content protection system.
 
-            Input alignment.
-        
-            `InputPreambleSize`
+`DecodeProfile`
 
-            Input preamble size.
-        
-            `NodeIndex`
+Decode profile.
 
-            Node index.
-        
-            `Operation`
+`Flags`
 
-            Operation.
-        
-            `OutputAlignment`
+Flags.
 
-            Output alignment.
-        
-            `OutputPreambleSize`
+`InputAlignment`
 
-            Output preamble size.
-        
-            `ProtectedOutputRequired`
+Input alignment.
 
-            Protected output required.
-        
-            `Support`
+`InputPreambleSize`
 
-            Support.
+Input preamble size.
+
+`NodeIndex`
+
+Node index.
+
+`Operation`
+
+Operation.
+
+`OutputAlignment`
+
+Output alignment.
+
+`OutputPreambleSize`
+
+Output preamble size.
+
+`ProtectedOutputRequired`
+
+Protected output required.
+
+`Support`
+
+Support.
 
 
 ## Requirements

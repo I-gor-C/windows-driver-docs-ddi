@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 670AFE37-1617-4171-9504-50B13B8E0F76
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetComponentLatency
+ms.keywords : PoFxSetComponentLatency routine [Kernel-Mode Driver Architecture], wdm/PoFxSetComponentLatency, PoFxSetComponentLatency, kernel.pofxsetcomponentlatency
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxSetComponentLatency
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -94,14 +98,10 @@ If a component is in the idle condition when <b>PoFxSetComponentLatency</b> is c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-</dl>
+
  
 
  

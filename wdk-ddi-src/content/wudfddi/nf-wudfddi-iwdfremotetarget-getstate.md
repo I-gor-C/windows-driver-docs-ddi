@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3918d764-c5bb-42b6-8b06-a2d544511a96
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRemoteTarget, IWDFRemoteTarget::GetState, GetState
+ms.keywords : GetState method, IWDFRemoteTarget interface, GetState method, IWDFRemoteTarget::GetState, wudfddi/IWDFRemoteTarget::GetState, IWDFRemoteTarget, umdf.iwdfremotetarget_getstate, wdf.iwdfremotetarget_getstate, UMDFIoTargetObjectRef_34bf0f92-927a-4733-9897-5aa146998136.xml, GetState, IWDFRemoteTarget interface, GetState method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFRemoteTarget.GetState
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -53,17 +57,11 @@ This function has no parameters.
 
 ## Return Value
 
-<b>GetState</b> returns a <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the remote I/O target.
-
-<b>GetState</b> returns a <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the remote I/O target.
-
-<b>GetState</b> returns a <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the remote I/O target.
+<b>GetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the remote I/O target.
 
 ## Remarks
 
 For more information about remote I/O target states, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>.
-
-The following code example determines whether a remote I/O target is closed.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,14 +77,10 @@ The following code example determines whether a remote I/O target is closed.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>
+
  
 
  

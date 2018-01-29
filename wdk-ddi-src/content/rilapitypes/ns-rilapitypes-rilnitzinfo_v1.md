@@ -7,8 +7,8 @@ old-location : netvista\rilnitzinfo_v1_2.htm
 old-project : netvista
 ms.assetid : ded74c48-b9a8-4ee4-8df9-3dc99892d41d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILNITZINFO_V1, *LPRILNITZINFO_V1, RILNITZINFO_V1
+ms.date : 1/18/2018
+ms.keywords : RILNITZINFO_V1, rilapitypes/RILNITZINFO_V1, netvista.rilnitzinfo_v1_2, *LPRILNITZINFO_V1, RILNITZINFO_V1 structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILNITZINFO_V1
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILNITZINFO_V1, RILNITZINFO_V1"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILNITZINFO_V1, *LPRILNITZINFO_V1
 req.product : Windows 10 or later.
 ---
 
@@ -52,30 +56,30 @@ typedef struct _RILNITZINFO_V1 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `DaylightSavingOffsetMinutes`
+`cbSize`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `SysTime`
+`DaylightSavingOffsetMinutes`
 
-            
-        
-            `TimeZoneOffsetMinutes`
 
-            
+
+`dwExecutor`
+
+
+
+`dwParams`
+
+
+
+`SysTime`
+
+
+
+`TimeZoneOffsetMinutes`
+
+
 
 
 ## Requirements

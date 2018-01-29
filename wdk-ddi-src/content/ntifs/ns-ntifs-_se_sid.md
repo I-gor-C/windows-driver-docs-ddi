@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6950B71D-B396-494E-A23C-EE37B439FD05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SE_SID, *PSE_SID, SE_SID
+ms.keywords : PSE_SID, ntifs/SE_SID, SE_SID, *PSE_SID, ntifs/PSE_SID, SE_SID union [Installable File System Drivers], PSE_SID union pointer [Installable File System Drivers], ifsk.se_sid, _SE_SID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SE_SID
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSE_SID, SE_SID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SE_SID, *PSE_SID
 ---
 
 # _SE_SID structure
@@ -47,14 +51,14 @@ typedef union _SE_SID {
 
 ## Members
 
-        
-            `Buffer`
 
-            Specifies an array of SECURITY_MAX_SID_SIZE for allocating enough memory for the largest possible SID size.
-        
-            `Sid`
+`Buffer`
 
-            A security identifier structure used to uniquely identify users or groups.
+Specifies an array of SECURITY_MAX_SID_SIZE for allocating enough memory for the largest possible SID size.
+
+`Sid`
+
+A security identifier structure used to uniquely identify users or groups.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef union _SE_SID {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 9ecaa3fa-137d-4f79-9316-727ecab35da8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serenum_port_desc, IOCTL_SERENUM_PORT_DESC control code [Serial Ports], IOCTL_SERENUM_PORT_DESC, ntddser/IOCTL_SERENUM_PORT_DESC, senumref_2afa4ab9-ceac-4477-9ac6-10f572444e61.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERENUM_PORT_DESC
-req.alt-loc : ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : a44f9d57-473c-45ed-94e3-db339c6d2296
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : hid.ioctl_set_num_device_input_buffers, IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS control code [Human Input Devices], IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS, hidclass/IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS, hidioreq_2fe1c0f7-6867-4924-a76f-b7970ebb1201.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -65,7 +69,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request succeeds, the HID class driver sets the <b>Status</b> field of <b>Irp-&gt;IoStatus</b> to STATUS_SUCCESS; otherwise, it sets the <b>Status</b> field to an appropriate NTSTATUS error code.
 
 
@@ -76,13 +79,10 @@ If the request succeeds, the HID class driver sets the <b>Status</b> field of <b
 | **Header** | hidclass.h (include Hidclass.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidsdi\nf-hidsdi-hidd_getnuminputbuffers.md">HidD_GetNumInputBuffers</a>
-</dt>
-</dl>
+
  
 
  

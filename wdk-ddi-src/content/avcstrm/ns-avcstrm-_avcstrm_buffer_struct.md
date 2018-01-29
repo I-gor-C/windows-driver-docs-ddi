@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ed9a5391-135d-4ac2-8b72-6a92d3ff9998
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _AVCSTRM_BUFFER_STRUCT, AVCSTRM_BUFFER_STRUCT, *PAVCSTRM_BUFFER_STRUCT
+ms.keywords : PAVCSTRM_BUFFER_STRUCT structure pointer [Streaming Media Devices], _AVCSTRM_BUFFER_STRUCT, PAVCSTRM_BUFFER_STRUCT, avcsref_9cec2cfb-d187-4349-b443-894f881f5108.xml, avcstrm/AVCSTRM_BUFFER_STRUCT, AVCSTRM_BUFFER_STRUCT structure [Streaming Media Devices], AVCSTRM_BUFFER_STRUCT, avcstrm/PAVCSTRM_BUFFER_STRUCT, *PAVCSTRM_BUFFER_STRUCT, stream.avcstrm_buffer_struct
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVCSTRM_BUFFER_STRUCT
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : AVCSTRM_BUFFER_STRUCT, *PAVCSTRM_BUFFER_STRUCT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PAVCSTRM_BUFFER_STRUCT, AVCSTRM_BUFFER_STRUCT"
 ---
 
 # _AVCSTRM_BUFFER_STRUCT structure
@@ -50,26 +54,26 @@ typedef struct _AVCSTRM_BUFFER_STRUCT {
 
 ## Members
 
-        
-            `ClockHandle`
 
-            Specifies a handle to a clock provider other than the subunit driver itself.
-        
-            `ClockProvider`
+`ClockHandle`
 
-            Indicates whether the subunit driver itself serves as a clock provider. This is <b>TRUE</b> if this stream also serves as a clock provider, Otherwise, this is <b>FALSE</b>.
-        
-            `Context`
+Specifies a handle to a clock provider other than the subunit driver itself.
 
-            Pointer to a client context value.
-        
-            `FrameBuffer`
+`ClockProvider`
 
-            Pointer to a nonpaged system-space virtual address for the buffer described by the MDL.
-        
-            `StreamHeader`
+Indicates whether the subunit driver itself serves as a clock provider. This is <b>TRUE</b> if this stream also serves as a clock provider, Otherwise, this is <b>FALSE</b>.
 
-            Pointer to a kernel streaming header that describes a packet of data to be read from or written to a streaming driver pin.
+`Context`
+
+Pointer to a client context value.
+
+`FrameBuffer`
+
+Pointer to a nonpaged system-space virtual address for the buffer described by the MDL.
+
+`StreamHeader`
+
+Pointer to a kernel streaming header that describes a packet of data to be read from or written to a streaming driver pin.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _AVCSTRM_BUFFER_STRUCT {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-</dt>
-</dl>
+
  
 
  

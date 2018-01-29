@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : df5afc18-da83-46b4-b7ab-8cef4353b951
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmFreeMappingAddress
+ms.keywords : k106_fa09359d-0552-429a-b3af-048f03ea7a15.xml, wdm/MmFreeMappingAddress, kernel.mmfreemappingaddress, MmFreeMappingAddress routine [Kernel-Mode Driver Architecture], MmFreeMappingAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmFreeMappingAddress
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,17 +85,12 @@ None
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
+
+<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 41af9528-4497-41aa-a65d-70352aa85f8c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiqueryvidpnhwcapability, DxgkDdiQueryVidPnHWCapability callback function [Display Devices], DxgkDdiQueryVidPnHWCapability, DXGKDDI_QUERYVIDPNHWCAPABILITY, DXGKDDI_QUERYVIDPNHWCAPABILITY, d3dkmddi/DxgkDdiQueryVidPnHWCapability, DmFunctions_2e9dffd4-d8af-49f9-86d4-7a67e18df2dc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiQueryVidPnHWCapability
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -85,11 +89,8 @@ For more information on how to process this function, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryvidpnhwcapability.md">DXGKARG_QUERYVIDPNHWCAPABILITY</a>
-</dt>
-</dl>
+
  
 
  

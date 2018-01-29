@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D10C65A6-96E7-4BE0-BDD5-EFD129DC424C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExReleaseSpinLockExclusive
+ms.keywords : kernel.exreleasespinlockexclusive_, ExReleaseSpinLockExclusive, wdm/ExReleaseSpinLockExclusive, ExReleaseSpinLockExclusive routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista with SP1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExReleaseSpinLockExclusive
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : DISPATCH_LEVEL (See Remarks.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -85,11 +89,8 @@ The caller should hold the spin lock only briefly before releasing it. For more 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451007">ExAcquireSpinLockExclusive</a>
-</dt>
-</dl>
+
  
 
  

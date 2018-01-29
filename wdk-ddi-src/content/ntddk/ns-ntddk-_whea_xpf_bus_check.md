@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 7886a796-2755-4367-bbbd-2017e7900bf4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_BUS_CHECK, *PWHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK
+ms.keywords : ntddk/PWHEA_XPF_BUS_CHECK, PWHEA_XPF_BUS_CHECK union pointer [WHEA Drivers and Applications], *PWHEA_XPF_BUS_CHECK, whea.whea_xpf_bus_check, whearef_fff50a8d-8ab0-4f25-adb3-b33e1ea80aed.xml, ntddk/WHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK union [WHEA Drivers and Applications], PWHEA_XPF_BUS_CHECK, _WHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_BUS_CHECK
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_XPF_BUS_CHECK, *PWHEA_XPF_BUS_CHECK
 ---
 
 # _WHEA_XPF_BUS_CHECK structure
@@ -72,13 +76,17 @@ typedef union _WHEA_XPF_BUS_CHECK {
 
 ## Members
 
-        
-            `XpfBusCheck`
 
-            A ULONGLONG representation of the contents of the WHEA_XPF_BUS_CHECK union.
+`DUMMYSTRUCTNAME`
 
-    ## Remarks
-        If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_BUSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_BUS_CHECK union.
+
+
+`XpfBusCheck`
+
+A ULONGLONG representation of the contents of the WHEA_XPF_BUS_CHECK union.
+
+## Remarks
+If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_BUSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_BUS_CHECK union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,13 +96,10 @@ typedef union _WHEA_XPF_BUS_CHECK {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : df68dda0-6128-46c9-bf2b-562c10f9a6f1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminipinsetdevicestate, AVStrMiniPinSetDeviceState, AVStrMiniPinSetDeviceState routine [Streaming Media Devices], AVStrMiniPinSetDeviceState, PFNKSPINSETDEVICESTATE, PFNKSPINSETDEVICESTATE, ks/AVStrMiniPinSetDeviceState, avstclbk_5a0f9097-33fb-4047-a361-bf14ac834cc3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniPinSetDeviceState
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -96,11 +100,8 @@ This routine is optional.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-</dl>
+
  
 
  

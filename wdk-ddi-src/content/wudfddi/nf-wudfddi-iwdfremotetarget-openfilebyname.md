@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7f0cef78-3edc-434b-af70-39694776e8a7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRemoteTarget, IWDFRemoteTarget::OpenFileByName, OpenFileByName
+ms.keywords : IWDFRemoteTarget interface, OpenFileByName method, wudfddi/IWDFRemoteTarget::OpenFileByName, umdf.iwdfremotetarget_openfilebyname, OpenFileByName, UMDFIoTargetObjectRef_909b78ee-2d3a-46b2-bfca-f72063ca62f8.xml, IWDFRemoteTarget::OpenFileByName, wdf.iwdfremotetarget_openfilebyname, OpenFileByName method, IWDFRemoteTarget interface, IWDFRemoteTarget, OpenFileByName method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFRemoteTarget.OpenFileByName
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -69,11 +73,23 @@ A pointer to a caller-allocated <a href="..\wudfddi\ns-wudfddi-_umdf_io_target_o
 ## Return Value
 
 <b>OpenFileByName</b> returns S_OK if the operation succeeds. Otherwise, the method might return the following value:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl>The framework's attempt to allocate memory failed. 
+</dl>
+</td>
+<td width="60%">
+The framework's attempt to allocate memory failed. 
 
- 
+</td>
+</tr>
+</table> 
 
 This method might return one of the other values that Winerror.h contains.
 
@@ -91,8 +107,6 @@ Do not call <b>OpenFileByName</b> to open a remote target to a control device ob
 
 For more information about the <b>OpenFileByName</b> method and remote I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/general-i-o-targets-in-umdf">General I/O Targets in UMDF</a>.
 
-The following code example creates a remote target object and opens an existing file with read-only access.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -107,17 +121,12 @@ The following code example creates a remote target object and opens an existing 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
+
  
 
  

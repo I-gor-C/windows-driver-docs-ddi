@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B6A0F80C-8AE2-4FFE-A3EE-F0260A8774D6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_UNREGISTER_DEVICE, *PPEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE
+ms.keywords : PEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE structure [Kernel-Mode Driver Architecture], pepfx/PEP_UNREGISTER_DEVICE, PPEP_UNREGISTER_DEVICE structure pointer [Kernel-Mode Driver Architecture], *PPEP_UNREGISTER_DEVICE, pepfx/PPEP_UNREGISTER_DEVICE, PPEP_UNREGISTER_DEVICE, _PEP_UNREGISTER_DEVICE, kernel.pep_unregister_device
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_UNREGISTER_DEVICE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE"
 ---
 
@@ -46,13 +50,13 @@ typedef struct _PEP_UNREGISTER_DEVICE {
 
 ## Members
 
-        
-            `DeviceHandle`
 
-            [in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a> notification.
+`DeviceHandle`
 
-    ## Remarks
-        This structure is used by the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_UNREGISTER_DEVICE</a> notification. The <b>DeviceHandle</b> member contains an input value that is supplied by the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx).
+[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a> notification.
+
+## Remarks
+This structure is used by the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_UNREGISTER_DEVICE</a> notification. The <b>DeviceHandle</b> member contains an input value that is supplied by the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx).
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _PEP_UNREGISTER_DEVICE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-</dt>
-<dt>
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_UNREGISTER_DEVICE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
  
 
  

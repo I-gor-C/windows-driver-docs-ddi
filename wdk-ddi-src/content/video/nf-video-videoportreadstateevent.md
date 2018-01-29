@@ -2,13 +2,13 @@
 UID : NF:video.VideoPortReadStateEvent
 title : VideoPortReadStateEvent function
 author : windows-driver-content
-description : The VideoPortReadStateEvent function returns the current state of a given event object signaled or nonsignaled.
+description : The VideoPortReadStateEvent function returns the current state of a given event object: signaled or nonsignaled.
 old-location : display\videoportreadstateevent.htm
 old-project : display
 ms.assetid : b09787b3-aede-4e53-9e22-0e81cf2dadb1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortReadStateEvent
+ms.keywords : VideoPort_Functions_8cd6da91-d349-4ef7-b61c-2e9a22c5f25e.xml, video/VideoPortReadStateEvent, VideoPortReadStateEvent function [Display Devices], display.videoportreadstateevent, VideoPortReadStateEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortReadStateEvent
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -65,7 +69,7 @@ Pointer to the event object whose state is to be read.
 
 ## Remarks
 
-This function is available in Windows XP and later. </p>
+This function is available in Windows XP and later.
 
 ## Requirements
 | &nbsp; | &nbsp; |

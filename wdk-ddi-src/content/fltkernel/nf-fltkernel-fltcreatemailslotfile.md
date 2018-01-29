@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : A727CDC1-A17A-4ABE-92AC-7CAEC11B78D1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCreateMailslotFile
+ms.keywords : fltkernel/FltCreateMailslotFile, ifsk.fltcreatemailslotfile, FltCreateMailslotFile function [Installable File System Drivers], FltCreateMailslotFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltCreateMailslotFile
-req.alt-loc : Fltmgr.lib,Fltmgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fltmgr.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -78,7 +82,6 @@ A pointer to a caller-allocated variable that receives the file object pointer i
 `DesiredAccess`
 
 A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. 
-
 <table>
 <tr>
 <th>DesiredAccess Flags</th>
@@ -184,11 +187,9 @@ The caller can synchronize the completion of an I/O operation by waiting for the
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Alternatively, for any file object that does not represent a directory, you can specify one or more of the following generic <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags. (The STANDARD_RIGHTS_<i>XXX</i> flags are predefined system values that are used to enforce security on system objects.) You can also combine these generic flags with additional flags from the preceding table. 
-
 <table>
 <tr>
 <th>DesiredAccess to File Values</th>
@@ -219,7 +220,6 @@ STANDARD_RIGHTS_WRITE, FILE_WRITE_DATA, FILE_APPEND_DATA, and SYNCHRONIZE.
 `ObjectAttributes`
 
 A pointer to an opaque <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that is already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object are listed in the following table. 
-
 <table>
 <tr>
 <th>Member</th>
@@ -281,21 +281,13 @@ A set of flags that controls the file object attributes. If the caller is runnin
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateMailslotFile</b>, the <b>Information</b> member of the variable contains one of the following values:
 
-<dl>
-<dd>
 FILE_CREATED
 
-</dd>
-<dd>
 FILE_OPENED
-
-</dd>
-</dl>
 
 `CreateOptions`
 
 The options to be applied when creating or opening the mailslot, as a compatible combination of the following flags. 
-
 <table>
 <tr>
 <th><i>CreateOptions</i> flags</th>
@@ -344,7 +336,6 @@ The maximum size, in bytes, of a message to write to the mailslot. A message of 
 `ReadTimeout`
 
 The time a read operation waits for a message to be available in the mailslot. The default timeout is expressed in 100-nanosecond increments as a negative integer. For example, 250 milliseconds is specified as –10 * 1000 * 250. Additionally, the following values have special meanings.
-
 <table>
 <tr>
 <th>Value</th>
@@ -352,6 +343,27 @@ The time a read operation waits for a message to be available in the mailslot. T
 </tr>
 <tr>
 <td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Returns immediately if no message is present.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>-1</dt>
+</dl>
+</td>
+<td width="60%">
+Waits forever for a message.
+
+</td>
+</tr>
+</table>
 
 `DriverContext`
 
@@ -361,12 +373,34 @@ Optional pointer to an <a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">
 ## Return Value
 
 <b>FltCreateMailslotFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The filter or instance specified in the <i>Filter</i> or <i>Instance</i> parameters is being torn down. This status code can be received if the open request crosses a volume mount point and the <i>Instance</i> parameter is non-<b>NULL</b>. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The filter or instance specified in the <i>Filter</i> or <i>Instance</i> parameters is being torn down. This status code can be received if the open request crosses a volume mount point and the <i>Instance</i> parameter is non-<b>NULL</b>. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_PATH_SYNTAX_BAD</b></dt>
-</dl>The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path.
+</dl>
+</td>
+<td width="60%">
+The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -393,23 +427,16 @@ To specify an extra create parameter (ECP) as part of a create operation, initia
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>
-</dt>
-</dl>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
+
+<a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 55f759dc-8fc7-4d47-9b3d-55d8902ed805
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : READ_PORT_USHORT
+ms.keywords : kernel.read_port_ushort, k103_b7b22427-572f-43d7-b6bd-dcf2dd7ac104.xml, wdm/READ_PORT_USHORT, READ_PORT_USHORT routine [Kernel-Mode Driver Architecture], READ_PORT_USHORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : READ_PORT_USHORT
-req.alt-loc : Hal.lib,Hal.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hal.lib
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ Specifies the port address, which must be a mapped range in I/O space.
 
 ## Remarks
 
-Callers of <b>READ_PORT_USHORT</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
+Callers of <b>READ_PORT_USHORT</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |

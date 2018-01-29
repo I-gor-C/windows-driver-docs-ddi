@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : affe9ab2-49ef-4284-b441-49c311158827
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_vidpntopology_interface_pfnupdatepathsupportinfo, pfnUpdatePathSupportInfo callback function [Display Devices], pfnUpdatePathSupportInfo, DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO, DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO, d3dkmddi/pfnUpdatePathSupportInfo, VidPnFunctions_6944a007-1a0a-41fc-b137-92307c532cca.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnUpdatePathSupportInfo
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,22 +68,60 @@ NTSTATUS DxgkddiVidpntopologyUpdatepathsupportinfo(
 ## Return Value
 
 The <b>pfnUpdatePathSupportInfo</b> function returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_TOPOLOGY</b></dt>
-</dl>The handle supplied in <i>i_hVidPnTopology</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>i_hVidPnTopology</i> was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was supplied.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was supplied.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The path cannot be removed in the context of the current DDI call.
+</dl>
+</td>
+<td width="60%">
+The path cannot be removed in the context of the current DDI call.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
-The display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a> function calls <b>pnfUpdatePathSupportInfo</b> to report rotation, scaling, and copy protection support for each of the paths in a topology.</p>
+The display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a> function calls <b>pnfUpdatePathSupportInfo</b> to report rotation, scaling, and copy protection support for each of the paths in a topology.
 
 ## Requirements
 | &nbsp; | &nbsp; |

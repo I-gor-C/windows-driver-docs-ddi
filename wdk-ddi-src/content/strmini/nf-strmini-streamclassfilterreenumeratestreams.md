@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 624a0fcb-472f-4a91-934e-02f83d1049c4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassFilterReenumerateStreams
+ms.keywords : stream.streamclassfilterreenumeratestreams, strmini/StreamClassFilterReenumerateStreams, StreamClassFilterReenumerateStreams, StreamClassFilterReenumerateStreams function [Streaming Media Devices], strclass-routines_972c0c03-67fc-4d5b-b699-08a8bc0a50e2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassFilterReenumerateStreams
-req.alt-loc : strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -51,11 +55,11 @@ Obsolete. Do not use.
 
 `HwInstanceExtension`
 
-
+TBD
 
 `StreamDescriptorSize`
 
-
+TBD
 
 
 ## Return Value

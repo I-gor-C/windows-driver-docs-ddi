@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 926ec9d5-090c-490d-a0ea-90cc515bdec7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_query_avail_modes, IOCTL_VIDEO_QUERY_AVAIL_MODES control code [Display Devices], IOCTL_VIDEO_QUERY_AVAIL_MODES, ntddvdeo/IOCTL_VIDEO_QUERY_AVAIL_MODES, Video_IOCTLs_a846ef88-234e-4867-a3fe-4d8c9b43e00e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_QUERY_AVAIL_MODES
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_AVAIL_MODES IOCTL
-Returns information about each video mode supported by the adapter. Miniport drivers are required to support this nonmodal request.
-
-
-
 Returns information about each video mode supported by the adapter. Miniport drivers are required to support this nonmodal request.
 
 ### Major Code
@@ -63,7 +63,6 @@ The miniport driver returns an array of <a href="..\ntddvdeo\ns-ntddvdeo-_video_
 <text></text>
 
 ### Status Block
-I/O Status block
 If the miniport driver successfully returns the available modes, it sets the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure to (<b>sizeof</b>(VIDEO_MODE_INFORMATION) * <i>NumberOfSupportedModes)</i>; otherwise, the miniport driver sets this member to zero.
 
 
@@ -74,16 +73,12 @@ If the miniport driver successfully returns the available modes, it sets the <b>
 | **Header** | ntddvdeo.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

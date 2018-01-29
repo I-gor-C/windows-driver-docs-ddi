@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3AF0646D-5405-4A35-8352-7E32BCA5DD24
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_FLAGS
+ms.keywords : d3dkmdt/DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, _DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_FLAGS enumeration [Display Devices], d3dkmdt/DXGK_PAGE_FAULT_FENCE_INVALID, DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, DXGK_PAGE_FAULT_FENCE_INVALID, d3dkmdt/DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_FLAGS, display.dxgk_page_fault_flags, d3dkmdt/DXGK_PAGE_FAULT_WRITE, DXGK_PAGE_FAULT_WRITE, d3dkmdt/DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_IOMMU, DXGK_PAGE_FAULT_IOMMU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_PAGE_FAULT_FLAGS
-req.alt-loc : D3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PAGE_FAULT_FLAGS
 ---
 
@@ -76,8 +80,18 @@ When not set, this indicates that the DMA packet submitted with <b>FaultedFenceI
 </tr>
 
 <tr>
+<td>DXGK_PAGE_FAULT_HW_CONTEXT_VALID</td>
+<td></td>
+</tr>
+
+<tr>
 <td>DXGK_PAGE_FAULT_IOMMU</td>
 <td>When set, this indicates that the faulting GPU's virtual address was mapped using IoMmu. When not set, the faulting GPU's virtual address was mapped using the GPU's memory management unit.</td>
+</tr>
+
+<tr>
+<td>DXGK_PAGE_FAULT_PROCESS_HANDLE_VALID</td>
+<td></td>
 </tr>
 
 <tr>
@@ -97,11 +111,8 @@ When not set, this indicates that the DMA packet submitted with <b>FaultedFenceI
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 310a3faf-de71-4965-9511-cb8feca7087c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSM_BDA_PIN_PAIR, KSM_BDA_PIN_PAIR, *PKSM_BDA_PIN_PAIR
+ms.keywords : bdamedia/PKSM_BDA_PIN_PAIR, PKSM_BDA_PIN_PAIR, bdamedia/KSM_BDA_PIN_PAIR, *PKSM_BDA_PIN_PAIR, KSM_BDA_PIN_PAIR, bdaref_c171cffc-e7e6-432b-98ae-f198fdc20079.xml, KSM_BDA_PIN_PAIR structure [Streaming Media Devices], _KSM_BDA_PIN_PAIR, stream.ksm_bda_pin_pair, PKSM_BDA_PIN_PAIR structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSM_BDA_PIN_PAIR
-req.alt-loc : bdamedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSM_BDA_PIN_PAIR, *PKSM_BDA_PIN_PAIR
 ---
 
@@ -54,10 +58,10 @@ typedef struct _KSM_BDA_PIN_PAIR {
 
 ## Members
 
-        
-            `Method`
 
-            KSMETHOD structure that describes a method and request type of a method request.
+`Method`
+
+KSMETHOD structure that describes a method and request type of a method request.
 
 
 ## Requirements
@@ -68,16 +72,12 @@ typedef struct _KSM_BDA_PIN_PAIR {
 | **Minimum UMDF version** |  |
 | **Header** | bdamedia.h (include Bdamedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bdasup\ns-bdasup-_bda_pin_pairing.md">BDA_PIN_PAIRING</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-</dt>
-</dl>
+
+<a href="..\bdasup\ns-bdasup-_bda_pin_pairing.md">BDA_PIN_PAIRING</a>
+
  
 
  

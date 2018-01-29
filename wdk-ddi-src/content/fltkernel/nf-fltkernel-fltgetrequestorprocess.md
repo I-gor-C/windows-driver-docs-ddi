@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : be734d14-64ee-47f0-8df9-4c4b8830448d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetRequestorProcess
+ms.keywords : FltApiRef_e_to_o_9705ecf7-4e60-4b9a-b07e-4e24227aff1d.xml, ifsk.fltgetrequestorprocess, FltGetRequestorProcess routine [Installable File System Drivers], FltGetRequestorProcess, fltkernel/FltGetRequestorProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetRequestorProcess
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -75,14 +79,10 @@ Pointer to the callback data structure (<a href="..\fltkernel\ns-fltkernel-_flt_
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltgetrequestorprocessid.md">FltGetRequestorProcessId</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
  
 
  

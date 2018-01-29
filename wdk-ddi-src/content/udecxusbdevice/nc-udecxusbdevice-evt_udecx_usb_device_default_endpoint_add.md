@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 575FA7CD-3F29-40A6-9625-EB8183AA05BA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUrbSetBytesCompleted
+ms.keywords : buses.evt_udecx_usb_device_default_endpoint_add, EvtUsbDeviceDefaultEndpointAdd callback function [Buses], EvtUsbDeviceDefaultEndpointAdd, EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD, EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD, udecxusbdevice/EvtUsbDeviceDefaultEndpointAdd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : EvtUsbDeviceDefaultEndpointAdd
-req.alt-loc : UdecxUsbDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
 req.product : Windows 10 or later.
 ---
 
@@ -81,17 +85,12 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbsimpleendpointinitallocate.md">UdecxUsbSimpleEndpointInitAllocate</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbsimpleendpointinitallocate.md">UdecxUsbSimpleEndpointInitAllocate</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

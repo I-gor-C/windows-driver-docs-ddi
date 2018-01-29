@@ -7,8 +7,8 @@ old-location : print\ixpspartiterator_isdone.htm
 old-project : print
 ms.assetid : 80877e8e-378f-4849-a8ce-b0651fdc2755
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::IsDone, IsDone
+ms.date : 1/18/2018
+ms.keywords : IsDone method [Print Devices], IXpsPartIterator interface, IsDone, filterpipeline/IXpsPartIterator::IsDone, IXpsPartIterator, IXpsPartIterator::IsDone, filterpipeline_c3b7b22e-6a29-463a-a516-d7857413050e.xml, IXpsPartIterator interface [Print Devices], IsDone method, print.ixpspartiterator_isdone, IsDone method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IXpsPartIterator.IsDone
-req.alt-loc : Filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 36F009C8-046B-437A-83D6-AE8D5BF51AF3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBDEVICE_UPDATE_FLAGS, USBDEVICE_UPDATE_FLAGS
+ms.keywords : ucxusbdevice/_USBDEVICE_UPDATE_FLAGS, ucxusbdevice/P_USBDEVICE_UPDATE_FLAGS, USBDEVICE_UPDATE_FLAGS structure [Buses], USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS structure pointer [Buses], _USBDEVICE_UPDATE_FLAGS, buses._usbdevice_update_flags, P_USBDEVICE_UPDATE_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBDEVICE_UPDATE_FLAGS
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBDEVICE_UPDATE_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -54,38 +58,38 @@ typedef struct _USBDEVICE_UPDATE_FLAGS {
 
 ## Members
 
-        
-            `Reserved`
 
-            Do not use.
-        
-            `Update20HardwareLpmParameters`
+`Reserved`
 
-            If set, indicates a request to update the 2.0 LPM state.
-        
-            `UpdateAllowIoOnInvalidPipeHandles`
+Do not use.
 
-            If set, indicates the USB device or hub has been updated to allow I/O with invalid pipe handles.
-        
-            `UpdateBosDescriptor`
+`Update20HardwareLpmParameters`
 
-            If set, indicates a request to update the USB BOS descriptor.
-        
-            `UpdateDeviceDescriptor`
+If set, indicates a request to update the 2.0 LPM state.
 
-            If set, indicates a request to update the USB device descriptor.
-        
-            `UpdateIsHub`
+`UpdateAllowIoOnInvalidPipeHandles`
 
-            If set, indicates a request to determine of the device is a hub.
-        
-            `UpdateMaxExitLatency`
+If set, indicates the USB device or hub has been updated to allow I/O with invalid pipe handles.
 
-            If set, indicates a request to update the maximum exit latency.
-        
-            `UpdateRootPortResumeTime`
+`UpdateBosDescriptor`
 
-            If set, indicates a request to  update the root port resume time.
+If set, indicates a request to update the USB BOS descriptor.
+
+`UpdateDeviceDescriptor`
+
+If set, indicates a request to update the USB device descriptor.
+
+`UpdateIsHub`
+
+If set, indicates a request to determine of the device is a hub.
+
+`UpdateMaxExitLatency`
+
+If set, indicates a request to update the maximum exit latency.
+
+`UpdateRootPortResumeTime`
+
+If set, indicates a request to  update the root port resume time.
 
 
 ## Requirements
@@ -96,19 +100,14 @@ typedef struct _USBDEVICE_UPDATE_FLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update.md">USBDEVICE_UPDATE</a>
-</dt>
-<dt>
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_failure_flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
-</dt>
-<dt>
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_20_hardware_lpm_parameters.md">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
-</dt>
-</dl>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_failure_flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update.md">USBDEVICE_UPDATE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 68372562-9af0-431d-90ae-c82678d9103e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PNP_BUS_INFORMATION, *PPNP_BUS_INFORMATION, PNP_BUS_INFORMATION
+ms.keywords : kstruct_c_a62e40f6-081a-4d2e-859b-28c98c2216f3.xml, wdm/PPNP_BUS_INFORMATION, kernel.pnp_bus_information, PNP_BUS_INFORMATION, *PPNP_BUS_INFORMATION, PNP_BUS_INFORMATION structure [Kernel-Mode Driver Architecture], _PNP_BUS_INFORMATION, PPNP_BUS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PPNP_BUS_INFORMATION, wdm/PNP_BUS_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PNP_BUS_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PPNP_BUS_INFORMATION, PNP_BUS_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PNP_BUS_INFORMATION, *PPNP_BUS_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -50,18 +54,18 @@ typedef struct _PNP_BUS_INFORMATION {
 
 ## Members
 
-        
-            `BusNumber`
 
-            
-        
-            `BusTypeGuid`
+`BusNumber`
 
-            
-        
-            `LegacyBusType`
 
-            
+
+`BusTypeGuid`
+
+
+
+`LegacyBusType`
+
+
 
 
 ## Requirements
@@ -72,13 +76,10 @@ typedef struct _PNP_BUS_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551654">IRP_MN_QUERY_BUS_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

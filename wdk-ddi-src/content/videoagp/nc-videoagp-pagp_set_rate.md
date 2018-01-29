@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6885df05-8cc4-4ae0-b7ca-6fd94374cfbf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+ms.keywords : display.agpsetrate, AgpSetRate callback function [Display Devices], AgpSetRate, PAGP_SET_RATE, PAGP_SET_RATE, videoagp/AgpSetRate, VideoPort_Functions_4dfdb762-5156-4a06-9dd8-1766bbe3dbe4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AgpSetRate
-req.alt-loc : videoagp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -60,7 +64,6 @@ Pointer to the miniport driver's device extension.
 `AgpRate`
 
 Specifies the transfer rate to be set. This value can be one of the following:
-
 <table>
 <tr>
 <th>Value</th>
@@ -135,11 +138,8 @@ The <b>AgpSetRate</b> function can be used to change an AGP chipset's data trans
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\ns-video-_video_port_agp_interface_2.md">VIDEO_PORT_AGP_INTERFACE_2</a>
-</dt>
-</dl>
+
  
 
  

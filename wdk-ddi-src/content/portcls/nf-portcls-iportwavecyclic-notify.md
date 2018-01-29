@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 318ba587-e34f-4f9f-bdf9-3e7c402456c5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveCyclic, IPortWaveCyclic::Notify, Notify
+ms.keywords : portcls/IPortWaveCyclic::Notify, IPortWaveCyclic::Notify, IPortWaveCyclic interface [Audio Devices], Notify method, IPortWaveCyclic, Notify, Notify method [Audio Devices], IPortWaveCyclic interface, audmp-routines_8b2252d3-100f-4e4a-b5ca-cdaf0c12834e.xml, Notify method [Audio Devices], audio.iportwavecyclic_notify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWaveCyclic.Notify
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -81,17 +85,12 @@ The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536719">IMiniportWaveCyclicStream::SetNotificationFreq</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+
  
 
  

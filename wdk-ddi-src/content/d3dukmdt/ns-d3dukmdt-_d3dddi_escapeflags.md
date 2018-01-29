@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 40648f6a-3393-4374-beff-e097c299f9e9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_ESCAPEFLAGS, D3DDDI_ESCAPEFLAGS
+ms.keywords : D3DDDI_ESCAPEFLAGS structure [Display Devices], _D3DDDI_ESCAPEFLAGS, d3dukmdt/D3DDDI_ESCAPEFLAGS, D3D_other_Structs_5ff9ad07-6a44-4a53-a70c-5abdbe84065a.xml, D3DDDI_ESCAPEFLAGS, display.d3dddi_escapeflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_ESCAPEFLAGS
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_ESCAPEFLAGS
 ---
 
@@ -61,10 +65,13 @@ typedef struct _D3DDDI_ESCAPEFLAGS {
 ## Members
 
 
-    ## Remarks
-        If <b>ChangeFrameLatency</b> is set, a <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_escapecb.md">pfnEscapeCb</a> call will succeed only if:
-
-If these conditions are not met, <i>pfnEscapeCb</i> call returns an <b>E_INVALIDARG</b> error code.
+## Remarks
+If <b>ChangeFrameLatency</b> is set, a <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_escapecb.md">pfnEscapeCb</a> call will succeed only if:
+<ul>
+<li>The display miniport driver is responsible for a linked adapter configuration (LDA) provided by a single vendor.</li>
+<li>The app has taken exclusive full-screen ownership of the display at some point in its lifetime.</li>
+<li>The app has not overridden the default maximum frame latency value of 3.</li>
+</ul>If these conditions are not met, <i>pfnEscapeCb</i> call returns an <b>E_INVALIDARG</b> error code.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,28 +81,20 @@ If these conditions are not met, <i>pfnEscapeCb</i> call returns an <b>E_INVALID
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_executionstateescape.md">D3DDDI_EXECUTIONSTATEESCAPE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_framelatencyescape.md">D3DDDI_FRAMELATENCYESCAPE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_escape.md">D3DDDICB_ESCAPE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_escape.md">DXGKARG_ESCAPE</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_executionstateescape.md">D3DDDI_EXECUTIONSTATEESCAPE</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_escape.md">D3DDDICB_ESCAPE</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_escapecb.md">pfnEscapeCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_framelatencyescape.md">D3DDDI_FRAMELATENCYESCAPE</a>
+
  
 
  

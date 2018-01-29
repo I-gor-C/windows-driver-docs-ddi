@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 741045a2-0a91-490a-907d-5f4900a4a0ae
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.createvideoprocessor1, CreateVideoProcessor callback function [Display Devices], CreateVideoProcessor, PFND3D11_1DDI_CREATEVIDEOPROCESSOR, PFND3D11_1DDI_CREATEVIDEOPROCESSOR, d3d10umddi/CreateVideoProcessor, display.pfncreatevideoprocessor1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CreateVideoProcessor
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -74,16 +78,46 @@ HRESULT Pfnd3d111DdiCreatevideoprocessor(
 ## Return Value
 
 <b>CreateVideoProcessor</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The video processor object was created successfully.
+</dl>
+</td>
+<td width="60%">
+The video processor object was created successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
-</dl>The graphics adapter was removed.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was removed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         Memory was not available to complete the operation.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -107,14 +141,10 @@ When the runtime  calls <i>CreateVideoProcessor</i>, it passes the handle to the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessorsize.md">CalcPrivateVideoProcessorSize</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessor.md">D3D11_1DDIARG_CREATEVIDEOPROCESSOR</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c49b1c12-8757-4d15-807d-fdb963746810
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_QUERYPROTECTEDSESSIONSTATUS, D3DKMT_QUERYPROTECTEDSESSIONSTATUS
+ms.keywords : _D3DKMT_QUERYPROTECTEDSESSIONSTATUS, D3DKMT_QUERYPROTECTEDSESSIONSTATUS structure [Display Devices], d3dkmthk/D3DKMT_QUERYPROTECTEDSESSIONSTATUS, D3DKMT_QUERYPROTECTEDSESSIONSTATUS, display.d3dkmt-queryprotectedsessionstatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_QUERYPROTECTEDSESSIONSTATUS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_QUERYPROTECTEDSESSIONSTATUS
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_QUERYPROTECTEDSESSIONSTATUS {
 
 ## Members
 
-        
-            `hHandle`
 
-            The handle of the protected session.
-        
-            `Status`
+`hHandle`
 
-            The status of the protected session.
+The handle of the protected session.
+
+`Status`
+
+The status of the protected session.
 
 
 ## Requirements

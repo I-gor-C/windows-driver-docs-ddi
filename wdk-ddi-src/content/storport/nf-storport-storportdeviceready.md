@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6dd3abdb-9037-4cf5-abe7-7776dcf67bd5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortDeviceReady
+ms.keywords : storprt_18a6f185-17dd-446c-9bbe-3937e1003a6b.xml, storage.storportdeviceready, StorPortDeviceReady, storport/StorPortDeviceReady, StorPortDeviceReady routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortDeviceReady
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -91,14 +95,10 @@ It is not generally necessary to notify the target device that new requests are 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nf-storport-storportdevicebusy.md">StorPortDeviceBusy</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportready.md">StorPortReady</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportdevicebusy.md">StorPortDeviceBusy</a>
+
  
 
  

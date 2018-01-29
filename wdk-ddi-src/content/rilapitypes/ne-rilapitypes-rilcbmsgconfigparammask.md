@@ -7,8 +7,8 @@ old-location : netvista\rilcbmsgconfigparammask_2.htm
 old-project : netvista
 ms.assetid : ec2a26a0-4325-41d9-a6b4-5b9c2f22dd4e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCBMSGCONFIGPARAMMASK, RILCBMSGCONFIGPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_CBMC_ALL, rilapitypes/RIL_PARAM_CBMC_CDMASIZE, RIL_PARAM_CBMC_GWLINFO, RILCBMSGCONFIGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILCBMSGCONFIGPARAMMASK, rilapitypes/RIL_PARAM_CBMC_ALL, rilapitypes/RILCBMSGCONFIGPARAMMASK, rilapitypes/RIL_PARAM_CBMC_GWLINFO, RIL_PARAM_CBMC_CDMAINFO, RIL_PARAM_CBMC_CDMASIZE, rilapitypes/RIL_PARAM_CBMC_CDMAINFO, netvista.rilcbmsgconfigparammask_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCBMSGCONFIGPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCBMSGCONFIGPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,11 @@ typedef enum _RILCBMSGCONFIGPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_CBMC_GWLINFO</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_CBMC_GWLSIZE</td>
 <td></td>
 </tr>
 </table>

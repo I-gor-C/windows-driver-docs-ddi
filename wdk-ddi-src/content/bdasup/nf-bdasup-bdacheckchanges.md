@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4831e13b-19e7-458c-a392-a135d43fc989
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaCheckChanges
+ms.keywords : BdaCheckChanges, stream.bdacheckchanges, BdaCheckChanges function [Streaming Media Devices], bdasup/BdaCheckChanges, bdaref_d60c7f03-8188-4be5-807c-e21384429341.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaCheckChanges
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -50,7 +54,7 @@ NTSTATUS BdaCheckChanges(
 
 `pIrp`
 
-
+TBD
 
 
 ## Return Value
@@ -75,20 +79,14 @@ A BDA minidriver calls the <b>BdaCheckChanges</b> function to verify a group of 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bdasup\nf-bdasup-bdacommitchanges.md">BdaCommitChanges</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563407">KSMETHOD_BDA_CHECK_CHANGES</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7a6ae185-2f91-4285-b540-61130aef464c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetDiscoveredPortAttributes_OUT, *PGetDiscoveredPortAttributes_OUT, GetDiscoveredPortAttributes_OUT
+ms.keywords : PGetDiscoveredPortAttributes_OUT structure pointer [Storage Devices], GetDiscoveredPortAttributes_OUT, *PGetDiscoveredPortAttributes_OUT, hbapiwmi/GetDiscoveredPortAttributes_OUT, structs-Fibre_611d9a0e-b0dc-472e-9bec-3902412e8ec4.xml, _GetDiscoveredPortAttributes_OUT, GetDiscoveredPortAttributes_OUT structure [Storage Devices], storage.getdiscoveredportattributes_out, PGetDiscoveredPortAttributes_OUT, hbapiwmi/PGetDiscoveredPortAttributes_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetDiscoveredPortAttributes_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGetDiscoveredPortAttributes_OUT, GetDiscoveredPortAttributes_OUT"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _GetDiscoveredPortAttributes_OUT {
 
 ## Members
 
-        
-            `HBAStatus`
 
-            Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
-        
-            `PortAttributes`
+`HBAStatus`
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that holds the port attributes to report.
+Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the GetDiscoveredPortAttributes_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`PortAttributes`
+
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that holds the port attributes to report.
+
+## Remarks
+The WMI tool suite generates a declaration of the GetDiscoveredPortAttributes_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _GetDiscoveredPortAttributes_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilimssubscribetype.htm
 old-project : netvista
 ms.assetid : 347b42c1-7585-471c-af42-44218da48fa3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILIMSSUBSCRIBETYPE, RILIMSSUBSCRIBETYPE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_IMSSUBSCRIBETYPE_CONFERENCE, RIL_IMSSUBSCRIBETYPE_MAX, RILIMSSUBSCRIBETYPE, RILIMSSUBSCRIBETYPE enumeration [Network Drivers Starting with Windows Vista], RIL_IMSSUBSCRIBETYPE_CONFERENCE, RIL_IMSSUBSCRIBETYPE_MWI, netvista.rilimssubscribetype, ntddrilapitypes/RILIMSSUBSCRIBETYPE, ntddrilapitypes/RIL_IMSSUBSCRIBETYPE_MAX, ntddrilapitypes/RIL_IMSSUBSCRIBETYPE_MWI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILIMSSUBSCRIBETYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILIMSSUBSCRIBETYPE
 ---
 
@@ -62,6 +66,11 @@ typedef enum _RILIMSSUBSCRIBETYPE {
 
 <tr>
 <td>RIL_IMSSUBSCRIBETYPE_MWI</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_IMSSUBSCRIBETYPE_REG</td>
 <td></td>
 </tr>
 </table>

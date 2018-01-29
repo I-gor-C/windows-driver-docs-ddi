@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 67a82442-591e-4e52-aaaf-b3cdb68c483a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SCSISCAN_INFO, *PSCSISCAN_INFO, SCSISCAN_INFO
+ms.keywords : storage.hwscsiwmiexecutemethod, HwScsiWmiExecuteMethod callback function [Storage Devices], HwScsiWmiExecuteMethod, PSCSIWMI_EXECUTE_METHOD, PSCSIWMI_EXECUTE_METHOD, scsiwmi/HwScsiWmiExecuteMethod, Scsimini_a0b3e943-a363-478d-9d68-09acf0c5b591.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwScsiWmiExecuteMethod
-req.alt-loc : scsiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,13 +29,20 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSCSISCAN_INFO, SCSISCAN_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCSISCAN_INFO, *PSCSISCAN_INFO
 req.product : Windows 10 or later.
 ---
 
 
 # PSCSIWMI_EXECUTE_METHOD callback function
 A miniport driver's <b>HwScsiWmiExecuteMethod</b> routine is called to execute a method associated with a data block. This routine is optional.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -120,20 +125,14 @@ The miniport driver executes the method and writes output, if any, to the buffer
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
-</dt>
-<dt>
-<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
-</dt>
-<dt>
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a>
-</dt>
-<dt>
+
+<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
+
+<a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
+
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
-</dt>
-</dl>
+
  
 
  

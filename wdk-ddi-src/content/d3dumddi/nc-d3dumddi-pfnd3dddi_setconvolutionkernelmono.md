@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b560352f-ca4e-4f03-88ac-13ec080834aa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setconvolutionkernelmono, SetConvolutionKernelMono callback function [Display Devices], SetConvolutionKernelMono, PFND3DDDI_SETCONVOLUTIONKERNELMONO, PFND3DDDI_SETCONVOLUTIONKERNELMONO, d3dumddi/SetConvolutionKernelMono, UserModeDisplayDriver_Functions_488a5fdd-562a-475b-a86d-23d05f35c6dc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetConvolutionKernelMono
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>SetConvolutionKernelMono</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The monochrome convolution kernel is successfully set.
+</dl>
+</td>
+<td width="60%">
+The monochrome convolution kernel is successfully set.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>SetConvolutionKernelMono</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>SetConvolutionKernelMono</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -117,14 +143,10 @@ alpha = V<sub>f</sub> - truncate(V<sub>f</sub>)
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setconvolutionkernelmono.md">D3DDDIARG_SETCONVOLUTIONKERNELMONO</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

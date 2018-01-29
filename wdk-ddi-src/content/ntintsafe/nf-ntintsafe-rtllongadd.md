@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E8CF5E74-2EDA-4B27-A9C0-053930FF741D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongAdd
+ms.keywords : kernel.rtllongadd, ntintsafe/RtlLongAdd, RtlLongAdd function [Kernel-Mode Driver Architecture], RtlLongAdd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlLongAdd
-req.alt-loc : Ntintsafe.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
@@ -69,7 +73,7 @@ None
 
 ## Remarks
 
-This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>
+This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 89E8FCC6-B618-4D7E-B1E6-59E85261BE3C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_RESERVEGPUVIRTUALADDRESS, D3DDDI_RESERVEGPUVIRTUALADDRESS
+ms.keywords : display.d3dddi_reservegpuvirtualaddress, d3dukmdt/D3DDDI_RESERVEGPUVIRTUALADDRESS, D3DDDI_RESERVEGPUVIRTUALADDRESS, D3DDDI_RESERVEGPUVIRTUALADDRESS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_RESERVEGPUVIRTUALADDRESS
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_RESERVEGPUVIRTUALADDRESS
 ---
 
@@ -66,39 +70,39 @@ typedef struct D3DDDI_RESERVEGPUVIRTUALADDRESS {
 
 ## Members
 
-        
-            `BaseAddress`
 
-            (Optional) If <b>non-NULL</b>, the video memory manager will attempt to use this address as the base address for the reserved range. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, the call will fail. When this parameter is <b>non-NULL</b>, <b>MinimumAddress</b> and <b>MaximumAddress</b> are ignored.
+`BaseAddress`
+
+(Optional) If <b>non-NULL</b>, the video memory manager will attempt to use this address as the base address for the reserved range. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, the call will fail. When this parameter is <b>non-NULL</b>, <b>MinimumAddress</b> and <b>MaximumAddress</b> are ignored.
 
 <b>BaseAddress</b> is in bytes and must be aligned to 64KB boundary.
 
 
 If <b>NULL</b> is specified the video memory manager will pick the base address for the allocation within the specified <b>MinimumAddress</b> and <b>MaximumAddress</b>.
-        
-            `MaximumAddress`
 
-            (Optional) Specifies the maximum GPU virtual address to consider for the reserved range. the video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to NULL the video memory manager will not apply any limit.
+`MaximumAddress`
+
+(Optional) Specifies the maximum GPU virtual address to consider for the reserved range. the video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to NULL the video memory manager will not apply any limit.
 
 <b>MaximumAddress</b> is in bytes and must be aligned to 64KB boundary.
 
 This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.
-        
-            `MinimumAddress`
 
-            (Optional) Specifies the minimum GPU virtual address to consider for the reserved range.
+`MinimumAddress`
+
+(Optional) Specifies the minimum GPU virtual address to consider for the reserved range.
 
 <b>MinimumAddress</b> is in bytes and must be aligned to 64KB boundary.
 
 This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.
-        
-            `Size`
 
-            Specify the size of the range to reserve in bytes. Must be a multiple of 64KB.
-        
-            `VirtualAddress`
+`Size`
 
-            [out] The reserved virtual address.
+Specify the size of the range to reserve in bytes. Must be a multiple of 64KB.
+
+`VirtualAddress`
+
+[out] The reserved virtual address.
 
 
 ## Requirements
@@ -109,13 +113,10 @@ This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
-</dt>
-</dl>
+
  
 
  

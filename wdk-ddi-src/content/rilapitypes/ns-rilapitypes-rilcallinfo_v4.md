@@ -7,8 +7,8 @@ old-location : netvista\rilcallinfo_v4_2.htm
 old-project : netvista
 ms.assetid : c369a79d-2f54-4a00-9442-0d96c714d726
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLINFO_V4, *LPRILCALLINFO_V4, RILCALLINFO_V4
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILCALLINFO_V4, *LPRILCALLINFO_V4, RILCALLINFO_V4 structure [Network Drivers Starting with Windows Vista], RILCALLINFO_V4, netvista.rilcallinfo_v4_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLINFO_V4
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILCALLINFO_V4, RILCALLINFO_V4"
 req.product : Windows 10 or later.
 ---
@@ -66,86 +70,86 @@ typedef struct _RILCALLINFO_V4 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwCallModificationCauseCode`
+`cbSize`
 
-            
-        
-            `dwDirection`
 
-            
-        
-            `dwDisconnectInitiator`
 
-            
-        
-            `dwDisconnectReason`
+`dwCallModificationCauseCode`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwFlags`
 
-            
-        
-            `dwID`
+`dwDirection`
 
-            
-        
-            `dwMultiparty`
 
-            
-        
-            `dwNamePresentationIndicator`
 
-            
-        
-            `dwNumberPresentationIndicator`
+`dwDisconnectInitiator`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwStatus`
 
-            
-        
-            `dwType`
+`dwDisconnectReason`
 
-            
-        
-            `raAddress`
 
-            
-        
-            `rchsHandoverState`
 
-            
-        
-            `rcmOfferAnswer`
+`dwExecutor`
 
-            
-        
-            `rsaSubAddress`
 
-            
-        
-            `stDisconnectDetails`
 
-            
-        
-            `wszDescription`
+`dwFlags`
 
-            
+
+
+`dwID`
+
+
+
+`dwMultiparty`
+
+
+
+`dwNamePresentationIndicator`
+
+
+
+`dwNumberPresentationIndicator`
+
+
+
+`dwParams`
+
+
+
+`dwStatus`
+
+
+
+`dwType`
+
+
+
+`raAddress`
+
+
+
+`rchsHandoverState`
+
+
+
+`rcmOfferAnswer`
+
+
+
+`rsaSubAddress`
+
+
+
+`stDisconnectDetails`
+
+
+
+`wszDescription`
+
+
 
 
 ## Requirements

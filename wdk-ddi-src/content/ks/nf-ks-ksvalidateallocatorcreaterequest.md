@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9275257b-50d8-4272-b340-4344644b3e15
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsValidateAllocatorCreateRequest
+ms.keywords : ks/KsValidateAllocatorCreateRequest, KsValidateAllocatorCreateRequest, stream.ksvalidateallocatorcreaterequest, KsValidateAllocatorCreateRequest function [Streaming Media Devices], ksfunc_2d988d7a-d39f-4c77-8c18-06d01a8d75e9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsValidateAllocatorCreateRequest
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

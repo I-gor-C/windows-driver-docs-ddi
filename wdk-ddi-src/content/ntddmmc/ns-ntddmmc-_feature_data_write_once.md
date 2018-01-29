@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d8352a73-6b3e-4890-a4ae-000d453d1143
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_WRITE_ONCE, *PFEATURE_DATA_WRITE_ONCE, FEATURE_DATA_WRITE_ONCE
+ms.keywords : FEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE structure pointer [Storage Devices], PFEATURE_DATA_WRITE_ONCE, FEATURE_DATA_WRITE_ONCE structure [Storage Devices], *PFEATURE_DATA_WRITE_ONCE, storage.feature_data_write_once, structs-CD-ROM_d10e83bf-73ef-43e2-901f-20ca3edea1ac.xml, ntddmmc/FEATURE_DATA_WRITE_ONCE, _FEATURE_DATA_WRITE_ONCE, ntddmmc/PFEATURE_DATA_WRITE_ONCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_WRITE_ONCE
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFEATURE_DATA_WRITE_ONCE, FEATURE_DATA_WRITE_ONCE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FEATURE_DATA_WRITE_ONCE, *PFEATURE_DATA_WRITE_ONCE
 ---
 
 # _FEATURE_DATA_WRITE_ONCE structure
@@ -51,33 +55,33 @@ typedef struct _FEATURE_DATA_WRITE_ONCE {
 
 ## Members
 
-        
-            `Blocking`
 
-            Indicates the number of logical blocks per device. The bytes in this array are arranged in big-endian order. <b>Blocking</b>[0] holds the most significant byte. <b>Blocking</b>[1] holds the least significant byte.
-        
-            `ErrorRecoveryPagePresent`
+`Blocking`
 
-            Indicates, when set to 1, that the Read/Write Error Recovery Mode Page is present. When set to zero, indicates that it might not be present. See the <i>SCSI Multimedia 3</i> (<i>MMC-3</i>) specification for a description of this page.
-        
-            `Header`
+Indicates the number of logical blocks per device. The bytes in this array are arranged in big-endian order. <b>Blocking</b>[0] holds the most significant byte. <b>Blocking</b>[1] holds the least significant byte.
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `LogicalBlockSize`
+`ErrorRecoveryPagePresent`
 
-            Indicates the number of bytes per logical block. The bytes in this array are arranged in big-endian order. <b>LogicalBlockSize</b>[0] holds the most significant byte. <b>LogicalBlockSize</b>[3] holds the least significant byte.
-        
-            `Reserved1`
+Indicates, when set to 1, that the Read/Write Error Recovery Mode Page is present. When set to zero, indicates that it might not be present. See the <i>SCSI Multimedia 3</i> (<i>MMC-3</i>) specification for a description of this page.
 
-            Reserved.
-        
-            `Reserved2`
+`Header`
 
-            Reserved.
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-    ## Remarks
-        This structure holds data for the feature named "Write Once" by the <i>MMC-3 </i>specification. Devices that support this feature can write to any previously unused logical block.
+`LogicalBlockSize`
+
+Indicates the number of bytes per logical block. The bytes in this array are arranged in big-endian order. <b>LogicalBlockSize</b>[0] holds the most significant byte. <b>LogicalBlockSize</b>[3] holds the least significant byte.
+
+`Reserved1`
+
+Reserved.
+
+`Reserved2`
+
+Reserved.
+
+## Remarks
+This structure holds data for the feature named "Write Once" by the <i>MMC-3 </i>specification. Devices that support this feature can write to any previously unused logical block.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,16 +91,12 @@ typedef struct _FEATURE_DATA_WRITE_ONCE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

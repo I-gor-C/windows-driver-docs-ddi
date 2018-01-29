@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4d968e4c-fb5b-47d6-b4ca-5f9d1d9c4739
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
+ms.keywords : D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_IN, d3d12umddi/D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_DEFAULT, d3d12umddi/D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_IN, D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_OUT, d3d12umddi/D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_MARKER_OUT, d3d12umddi/D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032, display.d3d12ddi-writebufferimmediate-mode-0032, D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_DEFAULT, D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032 enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032
 ---
 

@@ -7,8 +7,8 @@ old-location : image\wiausetimageitemsize.htm
 old-project : image
 ms.assetid : 5bf56435-df81-4555-91ca-5419883bb1e8
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : wiauSetImageItemSize
+ms.date : 1/18/2018
+ms.keywords : image.wiausetimageitemsize, wiauSetImageItemSize, wiauFncs_9def0e29-20fe-4e9b-b473-a2dbca9088da.xml, wiautil/wiauSetImageItemSize, wiauSetImageItemSize function [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : wiauSetImageItemSize
-req.alt-loc : wiautil.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SKIP_AMOUNT
 req.product : Windows 10 or later.
 ---
@@ -85,7 +89,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## Remarks
 
-If the format is not BMP, this function assumes that the value passed in the <i>lSize</i> parameter is correct for the current format.</p>
+If the format is not BMP, this function assumes that the value passed in the <i>lSize</i> parameter is correct for the current format.
 
 ## Requirements
 | &nbsp; | &nbsp; |

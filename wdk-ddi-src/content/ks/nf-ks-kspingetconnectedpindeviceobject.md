@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9588ef16-baf7-4e2b-a624-864ae218c385
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGetConnectedPinDeviceObject
+ms.keywords : KsPinGetConnectedPinDeviceObject function [Streaming Media Devices], stream.kspingetconnectedpindeviceobject, avfunc_baa36f5c-d0b9-4c18-9a9d-1a128c7ba8bd.xml, KsPinGetConnectedPinDeviceObject, ks/KsPinGetConnectedPinDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinGetConnectedPinDeviceObject
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,11 +79,8 @@ The returned device object is not necessarily the functional device object (FDO)
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksgetdevicefordeviceobject.md">KsGetDeviceForDeviceObject</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ed29c80a-7a42-46e3-8a18-d66dfddb9659
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATARANGE_MPEG2_VIDEO, *PKS_DATARANGE_MPEG2_VIDEO, KS_DATARANGE_MPEG2_VIDEO
+ms.keywords : KS_DATARANGE_MPEG2_VIDEO structure [Streaming Media Devices], ksmedia/PKS_DATARANGE_MPEG2_VIDEO, stream.ks_datarange_mpeg2_video, PKS_DATARANGE_MPEG2_VIDEO, *PKS_DATARANGE_MPEG2_VIDEO, ksmedia/KS_DATARANGE_MPEG2_VIDEO, PKS_DATARANGE_MPEG2_VIDEO structure pointer [Streaming Media Devices], KS_DATARANGE_MPEG2_VIDEO, tagKS_DATARANGE_MPEG2_VIDEO, vidcapstruct_91d79090-6aa2-4037-8436-7cb21d242e72.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATARANGE_MPEG2_VIDEO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_DATARANGE_MPEG2_VIDEO, KS_DATARANGE_MPEG2_VIDEO"
 ---
 
@@ -52,34 +56,34 @@ typedef struct tagKS_DATARANGE_MPEG2_VIDEO {
 
 ## Members
 
-        
-            `bFixedSizeSamples`
 
-            Specifies that all the samples are the same size if set to <b>TRUE</b>.
-        
-            `bTemporalCompression`
+`bFixedSizeSamples`
 
-            Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
-        
-            `ConfigCaps`
+Specifies that all the samples are the same size if set to <b>TRUE</b>.
 
-            Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
-        
-            `DataRange`
+`bTemporalCompression`
 
-            Specifies the major identifier for the format.
-        
-            `MemoryAllocationFlags`
+Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
 
-            Unused and should be set to zero.
-        
-            `StreamDescriptionFlags`
+`ConfigCaps`
 
-            Unused and should be set to zero.
-        
-            `VideoInfoHeader`
+Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
 
-            Specifies the details of the video stream.
+`DataRange`
+
+Specifies the major identifier for the format.
+
+`MemoryAllocationFlags`
+
+Unused and should be set to zero.
+
+`StreamDescriptionFlags`
+
+Unused and should be set to zero.
+
+`VideoInfoHeader`
+
+Specifies the details of the video stream.
 
 
 ## Requirements
@@ -90,19 +94,14 @@ typedef struct tagKS_DATARANGE_MPEG2_VIDEO {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-tagks_mpegvideoinfo2.md">KS_MPEGVIDEOINFO2</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
  
 
  

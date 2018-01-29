@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 985d9f12-11c6-40e6-9cb6-572196bc04f4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSATTRIBUTE, *PKSATTRIBUTE, KSATTRIBUTE
+ms.keywords : PKSATTRIBUTE structure pointer [Streaming Media Devices], ks/PKSATTRIBUTE, *PKSATTRIBUTE, KSATTRIBUTE, ks/KSATTRIBUTE, stream.ksattribute, KSATTRIBUTE structure [Streaming Media Devices], PKSATTRIBUTE, ks-struct_02cb064e-813f-4d67-8cf3-a33e05af7421.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSATTRIBUTE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSATTRIBUTE, KSATTRIBUTE"
 ---
 
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `Attribute`
 
-            Specifies the unique identifier of the attribute.
-        
-            `Flags`
+`Attribute`
 
-            Specifies the flags of the attribute. The only used flag is KSATTRIBUTE_REQUIRED; this flag specifies that an attribute is required. If this flag is not set, the attribute is optional. Note that the topmost bit is reserved for internal use in KS.
-        
-            `Size`
+Specifies the unique identifier of the attribute.
 
-            Specifies the size of the attribute. This is at least the size of the KSATTRIBUTE structure and may be more if there is extended information based on the identifying GUID in the <b>Attribute</b> field.
+`Flags`
 
-    ## Remarks
-        Note that KSATTRIBUTE is used in conjunction with data formats and data ranges; attributes on data formats and ranges are taken into consideration when determining if a data format is acceptable to a given pin or if a data range intersects with another data range.
+Specifies the flags of the attribute. The only used flag is KSATTRIBUTE_REQUIRED; this flag specifies that an attribute is required. If this flag is not set, the attribute is optional. Note that the topmost bit is reserved for internal use in KS.
+
+`Size`
+
+Specifies the size of the attribute. This is at least the size of the KSATTRIBUTE structure and may be more if there is extended information based on the identifying GUID in the <b>Attribute</b> field.
+
+## Remarks
+Note that KSATTRIBUTE is used in conjunction with data formats and data ranges; attributes on data formats and ranges are taken into consideration when determining if a data format is acceptable to a given pin or if a data range intersects with another data range.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +76,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
  
 
  

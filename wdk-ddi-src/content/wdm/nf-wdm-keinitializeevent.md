@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0b59056c-6e73-4078-b8b3-32ced29ff7b0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeEvent
+ms.keywords : k105_cc0b9273-d817-4853-b8ee-2337f53585f1.xml, KeInitializeEvent routine [Kernel-Mode Driver Architecture], KeInitializeEvent, wdm/KeInitializeEvent, kernel.keinitializeevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInitializeEvent
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IoAllocateIrpSignalEventInCompletion, IoAllocateIrpSignalEventInCompletion2, IoAllocateIrpSignalEventInCompletion3, IoAllocateIrpSignalEventInCompletionTimeout, IoBuildDeviceControlWait, IoBuildDeviceControlWaitTimeout, IoBuildDeviceIoControlSetEvent, IoBuildFsdIrpSignalEventInCompletion, IoBuildFsdIrpSignalEventInCompletion2, IoBuildFsdIrpSignalEventInCompletion3, IoBuildFsdIrpSignalEventInCompletionTimeout, IoBuildSynchronousFsdRequestWait, IoBuildSynchronousFsdRequestWaitTimeout, PendedCompletedRequest, PendedCompletedRequestEx, SignalEventInCompletion, SignalEventInCompletion2, SignalEventInCompletion3, StartDeviceWait, StartDeviceWait2, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -92,26 +96,18 @@ For more information about event objects, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kereadstateevent.md">KeReadStateEvent</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kereadstateevent.md">KeReadStateEvent</a>
+
+<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
+
+<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
+
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+
+<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
+
  
 
  

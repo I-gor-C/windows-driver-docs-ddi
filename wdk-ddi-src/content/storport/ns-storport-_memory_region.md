@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b8dbc3d4-7a70-4ec6-b7b0-2b0877fb9722
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MEMORY_REGION, MEMORY_REGION, *PMEMORY_REGION
+ms.keywords : PMEMORY_REGION, structs-storport_4ed10515-f1ce-4767-bbdc-239ac00a5cbe.xml, storport/MEMORY_REGION, *PMEMORY_REGION, MEMORY_REGION structure [Storage Devices], storport/PMEMORY_REGION, PMEMORY_REGION structure pointer [Storage Devices], storage.memory_region, _MEMORY_REGION, MEMORY_REGION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MEMORY_REGION
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MEMORY_REGION, *PMEMORY_REGION
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _MEMORY_REGION {
 
 ## Members
 
-        
-            `Length`
 
-            The size, in bytes, of the memory region.
-        
-            `PhysicalBase`
+`Length`
 
-            The beginning physical address of the memory region.
-        
-            `VirtualBase`
+The size, in bytes, of the memory region.
 
-            The beginning virtual address of the memory region.
+`PhysicalBase`
 
-    ## Remarks
-        The <b>DumpRegion</b> member of the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structure holds a MEMORY_REGION structure that describes a region of physically contiguous memory that a miniport driver can use during a crash dump.
+The beginning physical address of the memory region.
+
+`VirtualBase`
+
+The beginning virtual address of the memory region.
+
+## Remarks
+The <b>DumpRegion</b> member of the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structure holds a MEMORY_REGION structure that describes a region of physically contiguous memory that a miniport driver can use during a crash dump.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,13 +77,10 @@ typedef struct _MEMORY_REGION {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : b89c0758-beed-4c29-b966-78cb319258b1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_MITIGATED_RANGE_COUNT_OUTPUT, SRIOV_MITIGATED_RANGE_COUNT_OUTPUT, *PSRIOV_MITIGATED_RANGE_COUNT_OUTPUT
+ms.keywords : _SRIOV_MITIGATED_RANGE_COUNT_OUTPUT, PCI.sriov_mitigated_range_count_output, SRIOV_MITIGATED_RANGE_COUNT_OUTPUT, pcivirt/SRIOV_MITIGATED_RANGE_COUNT_OUTPUT, *PSRIOV_MITIGATED_RANGE_COUNT_OUTPUT, SRIOV_MITIGATED_RANGE_COUNT_OUTPUT structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_MITIGATED_RANGE_COUNT_OUTPUT
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SRIOV_MITIGATED_RANGE_COUNT_OUTPUT, *PSRIOV_MITIGATED_RANGE_COUNT_OUTPUT
 ---
 
@@ -47,10 +51,10 @@ typedef struct _SRIOV_MITIGATED_RANGE_COUNT_OUTPUT {
 
 ## Members
 
-        
-            `RangeCount`
 
-            Array of ranges of memory-mapped I/O space
+`RangeCount`
+
+Array of ranges of memory-mapped I/O space
  that must be mitigated.
 
 
@@ -62,13 +66,10 @@ typedef struct _SRIOV_MITIGATED_RANGE_COUNT_OUTPUT {
 | **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/68fd97a5-b7ea-43c0-96ed-b64445fd21dd">IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT</a>
-</dt>
-</dl>
+
  
 
  

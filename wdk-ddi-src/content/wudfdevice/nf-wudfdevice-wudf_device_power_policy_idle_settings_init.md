@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 893F249B-ACD9-4262-93B6-890987A9F591
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
+ms.keywords : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, wdf.wudf_device_power_policy_idle_settings_init, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function, wudfdevice/WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, umdf.wudf_device_power_policy_idle_settings_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
-req.alt-loc : Wudfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
 req.product : Windows 10 or later.
 ---
 
@@ -95,14 +99,10 @@ For a code example that uses <b>WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</b>,
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/D020B8AA-7353-47E1-A111-82BFE6F5F03D">IWDFDevice3::AssignS0IdleSettingsEx</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ns-wudfddi_types-_wudf_device_power_policy_idle_settings.md">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
-</dt>
-</dl>
+
  
 
  

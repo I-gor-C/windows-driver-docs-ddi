@@ -7,8 +7,8 @@ old-location : netvista\riluiccservicestate_2.htm
 old-project : netvista
 ms.assetid : f817db6b-bda4-45cd-953b-fd3d81bafa8f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCSERVICESTATE, RILUICCSERVICESTATE
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_UICCSERVICESTATE_MAX, netvista.riluiccservicestate_2, RILUICCSERVICESTATE, rilapitypes/RIL_UICCSERVICESTATE_DISABLED, rilapitypes/RIL_UICCSERVICESTATE_ENABLED, RIL_UICCSERVICESTATE_ENABLED, RIL_UICCSERVICESTATE_DISABLED, rilapitypes/RILUICCSERVICESTATE, RIL_UICCSERVICESTATE_MAX, RILUICCSERVICESTATE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCSERVICESTATE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUICCSERVICESTATE
 req.product : Windows 10 or later.
 ---
@@ -63,6 +67,11 @@ typedef enum _RILUICCSERVICESTATE {
 
 <tr>
 <td>RIL_UICCSERVICESTATE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_UICCSERVICESTATE_NOTAVAILABLE</td>
 <td></td>
 </tr>
 </table>

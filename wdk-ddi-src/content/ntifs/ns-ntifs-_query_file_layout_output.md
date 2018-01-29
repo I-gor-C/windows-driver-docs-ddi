@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT
+ms.keywords : QUERY_FILE_LAYOUT_SINGLE_INSTANCED, PQUERY_FILE_LAYOUT_OUTPUT, ntifs/QUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT structure [Installable File System Drivers], ntifs/PQUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT, _QUERY_FILE_LAYOUT_OUTPUT, ifsk.query_file_layout_output
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting in Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : QUERY_FILE_LAYOUT_OUTPUT
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT"
 ---
 
@@ -49,32 +53,41 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 
 ## Members
 
-        
-            `FileEntryCount`
 
-            The number of file entries that follow this structure.
-        
-            `FirstFileOffset`
+`FileEntryCount`
 
-            The offset in the user buffer for the first file entry.
-        
-            `Flags`
+The number of file entries that follow this structure.
 
-            Indicates the format of layout entries returned. Can be 0 or the following:
+`FirstFileOffset`
 
+The offset in the user buffer for the first file entry.
+
+`Flags`
+
+Indicates the format of layout entries returned. Can be 0 or the following:
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `Reserved`
+<td width="40%"><a id="QUERY_FILE_LAYOUT_SINGLE_INSTANCED"></a><a id="query_file_layout_single_instanced"></a><dl>
+<dt><b>QUERY_FILE_LAYOUT_SINGLE_INSTANCED</b></dt>
+</dl>
+</td>
+<td width="60%">
+Single instances of stream and file layout entries are returned. When set, only one <b>STREAM_LAYOUT_ENTRY</b> structure is returned per stream and only one <b>FILE_LAYOUT_ENTRY</b> structure is returned per file. This flag is always set for NTFS.
 
-            Reserved.
+</td>
+</tr>
+</table>
 
-    ## Remarks
-        The file layout entries that follow the <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure are determined by the flags set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a> provided as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request. A number of <b>FILE_LAYOUT_ENTRY</b> structures follow <b>QUERY_FILE_LAYOUT_OUTPUT</b>. Depending on the entries selected to return from a query, offsets in <b>FILE_LAYOUT_ENTRY</b> indicate where the additional informational entries are located in the user buffer. 
+`Reserved`
+
+Reserved.
+
+## Remarks
+The file layout entries that follow the <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure are determined by the flags set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a> provided as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request. A number of <b>FILE_LAYOUT_ENTRY</b> structures follow <b>QUERY_FILE_LAYOUT_OUTPUT</b>. Depending on the entries selected to return from a query, offsets in <b>FILE_LAYOUT_ENTRY</b> indicate where the additional informational entries are located in the user buffer. 
 
 The following entry structures are returned when their corresponding inclusion flag is set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a>.<table>
 <tr>
@@ -112,16 +125,12 @@ When multiple entries of the same type exist for a single <b>FILE_LAYOUT_ENTRY</
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a>
-</dt>
-</dl>
+
  
 
  

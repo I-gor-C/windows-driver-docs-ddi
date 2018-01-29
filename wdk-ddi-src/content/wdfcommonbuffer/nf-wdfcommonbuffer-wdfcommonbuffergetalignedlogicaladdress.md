@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6222db07-5aba-467c-94a5-18493dfb1524
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCommonBufferGetAlignedLogicalAddress
+ms.keywords : wdfcommonbuffer/WdfCommonBufferGetAlignedLogicalAddress, WdfCommonBufferGetAlignedLogicalAddress method, kmdf.wdfcommonbuffergetalignedlogicaladdress, WdfCommonBufferGetAlignedLogicalAddress, PFN_WDFCOMMONBUFFERGETALIGNEDLOGICALADDRESS, DFCommonBufferObjectRef_8381c500-1cd1-4271-9679-33a213a2307f.xml, wdf.wdfcommonbuffergetalignedlogicaladdress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfCommonBufferGetAlignedLogicalAddress
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -70,9 +74,6 @@ If the driver called <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentreq
 
 For more information about common buffers, see <a href="https://msdn.microsoft.com/81a56f62-917e-4798-b2cc-6469c802fab8">Using Common Buffers</a>
 
-
-For a code example that uses <b>WdfCommonBufferGetAlignedLogicalAddress</b>, see <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,17 +88,12 @@ For a code example that uses <b>WdfCommonBufferGetAlignedLogicalAddress</b>, see
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>
-</dt>
-<dt>
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>
-</dt>
-</dl>
+
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
+
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>
+
  
 
  

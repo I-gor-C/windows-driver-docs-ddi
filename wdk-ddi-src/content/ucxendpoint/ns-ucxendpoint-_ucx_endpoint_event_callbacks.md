@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 93071B7B-74D8-44A2-984D-A6BABFC07BA3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS
+ms.keywords : UCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], ucxendpoint/_UCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS structure [Buses], buses._ucx_endpoint_event_callbacks, _UCX_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/P_UCX_ENDPOINT_EVENT_CALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_ENDPOINT_EVENT_CALLBACKS
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS
 req.product : Windows 10 or later.
 ---
 
@@ -58,54 +62,54 @@ typedef struct _UCX_ENDPOINT_EVENT_CALLBACKS {
 
 ## Members
 
-        
-            `EvtEndpointAbort`
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_abort.md">EVT_UCX_ENDPOINT_ABORT</a> callback function.
-        
-            `EvtEndpointGetIsochTransferPathDelays`
+`EvtEndpointAbort`
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_get_isoch_transfer_path_delays.md">EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS</a> callback function.
-        
-            `EvtEndpointOkToCancelTransfers`
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_abort.md">EVT_UCX_ENDPOINT_ABORT</a> callback function.
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_ok_to_cancel_transfers.md">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a> callback function.
-        
-            `EvtEndpointPurge`
+`EvtEndpointGetIsochTransferPathDelays`
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_purge.md">EVT_UCX_ENDPOINT_PURGE</a> callback function.
-        
-            `EvtEndpointReset`
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_get_isoch_transfer_path_delays.md">EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS</a> callback function.
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_reset.md">EVT_UCX_ENDPOINT_RESET</a> callback function.
-        
-            `EvtEndpointSetCharacteristic`
+`EvtEndpointOkToCancelTransfers`
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_set_characteristic.md">EVT_UCX_ENDPOINT_SET_CHARACTERISTIC</a> callback function.
-        
-            `EvtEndpointStart`
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_ok_to_cancel_transfers.md">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a> callback function.
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_start.md">EVT_UCX_ENDPOINT_START</a> callback function.
-        
-            `EvtEndpointStaticStreamsAdd`
+`EvtEndpointPurge`
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> callback function.
-        
-            `EvtEndpointStaticStreamsDisable`
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_purge.md">EVT_UCX_ENDPOINT_PURGE</a> callback function.
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_disable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a> callback function.
-        
-            `EvtEndpointStaticStreamsEnable`
+`EvtEndpointReset`
 
-            A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.
-        
-            `Reserved1`
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_reset.md">EVT_UCX_ENDPOINT_RESET</a> callback function.
 
-            Do not use.
-        
-            `Size`
+`EvtEndpointSetCharacteristic`
 
-            The size in bytes of the structure.
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_set_characteristic.md">EVT_UCX_ENDPOINT_SET_CHARACTERISTIC</a> callback function.
+
+`EvtEndpointStart`
+
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_start.md">EVT_UCX_ENDPOINT_START</a> callback function.
+
+`EvtEndpointStaticStreamsAdd`
+
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> callback function.
+
+`EvtEndpointStaticStreamsDisable`
+
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_disable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a> callback function.
+
+`EvtEndpointStaticStreamsEnable`
+
+A pointer to an <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.
+
+`Reserved1`
+
+Do not use.
+
+`Size`
+
+The size in bytes of the structure.
 
 
 ## Requirements
@@ -116,16 +120,12 @@ typedef struct _UCX_ENDPOINT_EVENT_CALLBACKS {
 | **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ucxendpoint\nf-ucxendpoint-ucx_endpoint_event_callbacks_init.md">UCX_ENDPOINT_EVENT_CALLBACKS_INIT</a>
-</dt>
-<dt>
 <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointinitseteventcallbacks.md">UcxEndpointInitSetEventCallbacks</a>
-</dt>
-</dl>
+
+<a href="..\ucxendpoint\nf-ucxendpoint-ucx_endpoint_event_callbacks_init.md">UCX_ENDPOINT_EVENT_CALLBACKS_INIT</a>
+
  
 
  

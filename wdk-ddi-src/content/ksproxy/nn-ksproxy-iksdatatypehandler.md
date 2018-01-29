@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ef08d375-1ac6-489f-9fd4-f791ce82c553
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSynchronousDeviceControl
+ms.keywords : stream.iksdatatypehandler, IKsDataTypeHandler interface [Streaming Media Devices], IKsDataTypeHandler interface [Streaming Media Devices], described, IKsDataTypeHandler, ksproxy/IKsDataTypeHandler, ksproxy_fd2ab182-1556-438e-bc5e-fe1339d0d865.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsDataTypeHandler
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -73,13 +77,10 @@ For more information about <b>IAMStreamConfig::SetFormat</b> and <b>CoCreateInst
 | **Header** | ksproxy.h |
 | **DLL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-iksdatatypecompletion.md">IKsDataTypeCompletion</a>
-</dt>
-</dl>
+
  
 
  

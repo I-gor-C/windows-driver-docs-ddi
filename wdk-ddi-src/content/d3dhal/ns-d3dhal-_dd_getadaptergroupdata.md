@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8c427880-f809-4b58-8f69-d81a273d705c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_GETADAPTERGROUPDATA, DD_GETADAPTERGROUPDATA
+ms.keywords : d3dstrct_6bd570c2-bccf-4c1c-8bfb-ff20d77b7201.xml, DD_GETADAPTERGROUPDATA structure [Display Devices], d3dhal/DD_GETADAPTERGROUPDATA, DD_GETADAPTERGROUPDATA, _DD_GETADAPTERGROUPDATA, display.dd_getadaptergroupdata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DD_GETADAPTERGROUPDATA
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_GETADAPTERGROUPDATA
 ---
 
@@ -52,25 +56,25 @@ typedef struct _DD_GETADAPTERGROUPDATA {
 
 ## Members
 
-        
-            `dwReserved1`
 
-            Specifies a reserved field. Driver should not read or write. Set to zero.
-        
-            `dwReserved2`
+`dwReserved1`
 
-            Specifies a reserved field. Driver should not read or write. Set to zero.
-        
-            `gdi2`
+Specifies a reserved field. Driver should not read or write. Set to zero.
 
-            Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.
-        
-            `ulUniqueAdapterGroupId`
+`dwReserved2`
 
-            Receives the identifier of the group of adapters that comprise the driver's multiple-head video card. The driver must provide a unique identifier for the master and all subordinate adapters within this group.
+Specifies a reserved field. Driver should not read or write. Set to zero.
 
-    ## Remarks
-        The runtime uses DD_GETADAPTERGROUPDATA in a query for the identity of the driver's group of adapters. This group shares video hardware like video memory and the 3D accelerator. The runtime mainly uses this query for dual-view video adapters. An application can request that surface resources (like textures and vertex buffers) be shared across adapters in a group and the runtime complies with that request.
+`gdi2`
+
+Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.
+
+`ulUniqueAdapterGroupId`
+
+Receives the identifier of the group of adapters that comprise the driver's multiple-head video card. The driver must provide a unique identifier for the master and all subordinate adapters within this group.
+
+## Remarks
+The runtime uses DD_GETADAPTERGROUPDATA in a query for the identity of the driver's group of adapters. This group shares video hardware like video memory and the 3D accelerator. The runtime mainly uses this query for dual-view video adapters. An application can request that surface resources (like textures and vertex buffers) be shared across adapters in a group and the runtime complies with that request.
 
 The identifier in <b>ulUniqueAdapterGroupId</b> must be unique across drivers, including drivers from other hardware vendors. Therefore, it is recommended to report this identifier as a unique kernel-mode address that cannot be common with other multiple-head video cards. Note that the driver must report this identifier as nonzero.
 
@@ -82,16 +86,12 @@ The identifier in <b>ulUniqueAdapterGroupId</b> must be unique across drivers, i
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+
  
 
  

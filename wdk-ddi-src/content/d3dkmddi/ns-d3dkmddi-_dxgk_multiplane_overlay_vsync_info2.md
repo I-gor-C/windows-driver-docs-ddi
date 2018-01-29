@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CC1371C5-1BAB-458C-BC7F-9844B2BBEA3A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2, DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2
+ms.keywords : DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2 structure [Display Devices], d3dkmddi/DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2, display.dxgk_multiplane_overlay_vsync_info2, _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2, DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2 {
 
 ## Members
 
-        
-            `Flags`
 
-            Flag to indicate whether the scheduler should call DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT for this plane
-        
-            `LayerIndex`
+`Flags`
 
-            The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
-        
-            `PresentId`
+Flag to indicate whether the scheduler should call DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT for this plane
 
-            The 64 bit PresentId specified in the SetVidPnSourceAddressWithMultiPlaneOverlay3() DDI call.
+`LayerIndex`
+
+The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
+
+`PresentId`
+
+The 64 bit PresentId specified in the SetVidPnSourceAddressWithMultiPlaneOverlay3() DDI call.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 149DE843-937C-4A6F-AB2D-ACC8895D5E91
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : READ_REGISTER_UCHAR
+ms.keywords : wudfddi_hwaccess/READ_REGISTER_UCHAR, READ_REGISTER_UCHAR function, READ_REGISTER_UCHAR, wdf.read_register_uchar, umdf.read_register_uchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : READ_REGISTER_UCHAR
-req.alt-loc : Wudfddi_hwaccess.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -67,7 +71,7 @@ A pointer to the register address, which must be a mapped range in memory space.
 
 ## Remarks
 
-For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
+For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

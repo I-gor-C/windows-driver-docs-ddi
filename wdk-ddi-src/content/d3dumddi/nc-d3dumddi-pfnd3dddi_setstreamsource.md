@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 669dbabc-91fb-40f9-a034-11c3c2e70436
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setstreamsource, SetStreamSource callback function [Display Devices], SetStreamSource, PFND3DDDI_SETSTREAMSOURCE, PFND3DDDI_SETSTREAMSOURCE, d3dumddi/SetStreamSource, UserModeDisplayDriver_Functions_c84f438f-92b5-4d01-8d27-275deedc29e4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetStreamSource
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,14 +87,10 @@ The Microsoft Direct3D runtime calls the user-mode display driver's <i>SetStream
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setstreamsource.md">D3DDDIARG_SETSTREAMSOURCE</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

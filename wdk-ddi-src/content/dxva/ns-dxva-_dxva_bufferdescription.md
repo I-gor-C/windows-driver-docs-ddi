@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 34b1585d-ceba-4e13-b5c1-70ce29a940c5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_BufferDescription, DXVA_BufferDescription, *LPDXVA_BufferDescription
+ms.keywords : LPDXVA_BufferDescription, DXVA_BufferDescription, LPDXVA_BufferDescription structure pointer [Display Devices], display.dxva_bufferdescription, dxvaref_3d6f62c8-77a1-40b0-8bf3-1a82deaf3020.xml, _DXVA_BufferDescription, DXVA_BufferDescription structure [Display Devices], dxva/LPDXVA_BufferDescription, *LPDXVA_BufferDescription, dxva/DXVA_BufferDescription
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_BufferDescription
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DXVA_BufferDescription, *LPDXVA_BufferDescription
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPDXVA_BufferDescription, DXVA_BufferDescription"
 ---
 
 # _DXVA_BufferDescription structure
@@ -55,23 +59,22 @@ typedef struct _DXVA_BufferDescription {
 
 ## Members
 
-        
-            `dwBufferIndex`
 
-            Specifies the sequence number of the buffer within the buffers of the same type that were passed in the same <a href="https://msdn.microsoft.com/7d820491-2df2-4036-8f3d-e6bcff4cd1f6">buffer description list</a>.
-        
-            `dwDataOffset`
+`dwBufferIndex`
 
-            Specifies the offset of the relevant data from the beginning of the buffer in bytes. The use of this member is currently restricted to the value zero.
-        
-            `dwDataSize`
+Specifies the sequence number of the buffer within the buffers of the same type that were passed in the same <a href="https://msdn.microsoft.com/7d820491-2df2-4036-8f3d-e6bcff4cd1f6">buffer description list</a>.
 
-            Specifies the amount of relevant data in the buffer in bytes. The location of the last byte of content in the buffer is <b>dwDataOffset</b>, plus <b>dwDataSize</b> minus 1.
-        
-            `dwFirstMBaddress`
+`dwDataOffset`
 
-            Specifies the macroblock address of the first macroblock in the buffer passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>. Examples of macroblock addresses are as follows.
+Specifies the offset of the relevant data from the beginning of the buffer in bytes. The use of this member is currently restricted to the value zero.
 
+`dwDataSize`
+
+Specifies the amount of relevant data in the buffer in bytes. The location of the last byte of content in the buffer is <b>dwDataOffset</b>, plus <b>dwDataSize</b> minus 1.
+
+`dwFirstMBaddress`
+
+Specifies the macroblock address of the first macroblock in the buffer passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>. Examples of macroblock addresses are as follows.
 <table>
 <tr>
 <th>Macroblock</th>
@@ -117,23 +120,21 @@ lower-right
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 This member must be zero if the data buffer is among the following types: picture decoding parameters, inverse-quantization matrix, slice control, bitstream data, AYUV, IA44/AI44, DPXD, Highlight, and DCCMD.
 
 If the data buffer is a residual difference block data buffer, <b>dwFirstMBaddress</b> must have the same value as for the corresponding macroblock control command buffer. See <a href="https://msdn.microsoft.com/7a416992-04d3-4307-83b3-9fb94c17d60e">Macroblock-Oriented Picture Decoding</a> for more information.
-        
-            `dwHeight`
 
-            Specifies the height of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units).This member must be zero if the data buffer is not among the preceding types.
-        
-            `dwNumMBsInBuffer`
+`dwHeight`
 
-            Specifies the number of macroblocks of data in the buffer. This count includes skipped macroblocks. Must be zero if the data buffer is among the following types: picture decoding parameters, inverse-quantization matrix, AYUV, IA44/AI44, DPXD, Highlight, or DCCMD.
+Specifies the height of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units).This member must be zero if the data buffer is not among the preceding types.
+
+`dwNumMBsInBuffer`
+
+Specifies the number of macroblocks of data in the buffer. This count includes skipped macroblocks. Must be zero if the data buffer is among the following types: picture decoding parameters, inverse-quantization matrix, AYUV, IA44/AI44, DPXD, Highlight, or DCCMD.
 
 The value for <b>dwNumMBsInBuffer</b> depends on the type of data buffer being used as shown in the following table.
-
 <table>
 <tr>
 <th>Buffer Type</th>
@@ -180,19 +181,18 @@ Must have the same value as for the corresponding slice-control command buffer.
 </td>
 </tr>
 </table>
-        
-            `dwReservedBits`
 
-            Reserved bits used for packing and alignment. Must be zero.
-        
-            `dwStride`
+`dwReservedBits`
 
-            Specifies the stride of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units). The stride for the applicable buffer types is determined from the buffer allocation setup performed by the accelerator. This member must be zero if the data buffer is not among the preceding types.
-        
-            `dwTypeIndex`
+Reserved bits used for packing and alignment. Must be zero.
 
-            Identifies the type of buffer passed to the accelerator. The following table lists the numeric identifiers and the associated buffer type.
+`dwStride`
 
+Specifies the stride of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units). The stride for the applicable buffer types is determined from the buffer allocation setup performed by the accelerator. This member must be zero if the data buffer is not among the preceding types.
+
+`dwTypeIndex`
+
+Identifies the type of buffer passed to the accelerator. The following table lists the numeric identifiers and the associated buffer type.
 <table>
 <tr>
 <th>Value </th>
@@ -350,13 +350,13 @@ Read-back command buffers containing commands to read macroblocks of the resulti
 </td>
 </tr>
 </table>
-        
-            `dwWidth`
 
-            Specifies the width of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units). This member must be zero if the data buffer is not among the preceding types.
+`dwWidth`
 
-    ## Remarks
-        An array of DXVA_BufferDescription structures is referred to as a buffer description list. When a set of buffers is sent from the host decoder to the hardware accelerator, a buffer description list is sent to describe the buffers. The buffer description list contains one DXVA_BufferDescription structure for each buffer in this set. The buffer description list starts with a DXVA_BufferDescription structure for the first buffer of the first type, followed by a DXVA_BufferDescription structure for the next buffer of the same type, and so on. The buffer description list then continues with a DXVA_BufferDescription structure for the first buffer of the next type, and so on.
+Specifies the width of the data in the buffer as the number of units of bits for the following types of data: AYUV (data is specified in 32-bit units), IA44/AI44 (data is specified in 8-bit units), or DPXD (data is specified in 2-bit units). This member must be zero if the data buffer is not among the preceding types.
+
+## Remarks
+An array of DXVA_BufferDescription structures is referred to as a buffer description list. When a set of buffers is sent from the host decoder to the hardware accelerator, a buffer description list is sent to describe the buffers. The buffer description list contains one DXVA_BufferDescription structure for each buffer in this set. The buffer description list starts with a DXVA_BufferDescription structure for the first buffer of the first type, followed by a DXVA_BufferDescription structure for the next buffer of the same type, and so on. The buffer description list then continues with a DXVA_BufferDescription structure for the first buffer of the next type, and so on.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -366,16 +366,12 @@ Read-back command buffers containing commands to read macroblocks of the resulti
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a>
-</dt>
-<dt>
+
 <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
-</dt>
-</dl>
+
  
 
  

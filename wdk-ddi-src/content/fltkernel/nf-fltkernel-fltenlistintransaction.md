@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c4b82596-824f-488e-96cd-17bd850494e5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltEnlistInTransaction
+ms.keywords : FltApiRef_e_to_o_85856df2-46c0-457b-bc10-2e6a8d32f5bb.xml, ifsk.fltenlistintransaction, FltEnlistInTransaction, FltEnlistInTransaction routine [Installable File System Drivers], fltkernel/FltEnlistInTransaction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Windows Vista and later
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltEnlistInTransaction
-req.alt-loc : FltMgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : FltMgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,7 +70,6 @@ A pointer to the minifilter driver's transaction context. This parameter is requ
 `NotificationMask`
 
 Specifies the type of notifications that the filter manager is to send to the minifilter driver, as one or more of the values listed in the following table. This parameter is required and cannot be zero. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -138,21 +141,67 @@ TRANSACTION_NOTIFY_COMMIT | TRANSACTION_NOTIFY_PREPARE | TRANSACTION_NOTIFY_PREP
 ## Return Value
 
 <b>FltEnlistInTransaction</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_ALREADY_ENLISTED</b></dt>
-</dl>The caller is already enlisted in the transaction. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The caller is already enlisted in the transaction. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The instance specified in the <i>Instance</i> parameter is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The instance specified in the <i>Instance</i> parameter is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl><b>FltEnlistInTransaction</b> encountered a pool allocation error. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+<b>FltEnlistInTransaction</b> encountered a pool allocation error. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The caller did not register a <i>TransactionNotificationCallback</i> routine. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The caller did not register a <i>TransactionNotificationCallback</i> routine. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_4</b></dt>
-</dl>The caller specified an invalid value for the <i>NotificationMask</i> parameter. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The caller specified an invalid value for the <i>NotificationMask</i> parameter. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -184,47 +233,32 @@ To set a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltsettran
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltrollbackenlistment.md">FltRollbackEnlistment</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltrollbackenlistment.md">FltRollbackEnlistment</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_transaction_notification_callback.md">PFLT_TRANSACTION_NOTIFICATION_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+
  
 
  

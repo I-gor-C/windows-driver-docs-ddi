@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 224c8483-56b8-4341-8347-fa119ec04024
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortUnmapMemory
+ms.keywords : display.videoportunmapmemory, VideoPortUnmapMemory, VideoPortUnmapMemory function [Display Devices], VideoPort_Functions_394a66fa-47cd-4e0e-8467-3c3562d27822.xml, video/VideoPortUnmapMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortUnmapMemory
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -86,11 +90,8 @@ A miniport driver cannot release a subrange of the mapping between a logical dev
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>
-</dt>
-</dl>
+
  
 
  

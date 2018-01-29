@@ -7,8 +7,8 @@ old-location : netvista\ril3gpp2tone_2.htm
 old-project : netvista
 ms.assetid : 306efd49-27ca-43d1-8f56-2f93c31be9a1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL3GPP2TONE, RIL3GPP2TONE
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL3GPP2TONE, RIL_3GPP2TONE_MAX, rilapitypes/RIL_3GPP2TONE_ABRVREORDER, RIL3GPP2TONE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_3GPP2TONE_ABRVINTERCEPT, RIL_3GPP2TONE_REORDER, rilapitypes/RIL_3GPP2TONE_REORDER, rilapitypes/RIL_3GPP2TONE_ANSWER, netvista.ril3gpp2tone_2, RIL_3GPP2TONE_PIP, RIL_3GPP2TONE_RINGBACK, RIL_3GPP2TONE_CONFIRM, rilapitypes/RIL_3GPP2TONE_BUSY, RIL_3GPP2TONE_DIAL, rilapitypes/RIL_3GPP2TONE_CONFIRM, RIL_3GPP2TONE_BUSY, rilapitypes/RIL_3GPP2TONE_RINGBACK, RIL_3GPP2TONE_CALLWAITING, RIL3GPP2TONE, RIL_3GPP2TONE_ABRVINTERCEPT, rilapitypes/RIL_3GPP2TONE_CALLWAITING, rilapitypes/RIL_3GPP2TONE_MAX, rilapitypes/RIL_3GPP2TONE_INTERCEPT, rilapitypes/RIL_3GPP2TONE_DIAL, rilapitypes/RIL_3GPP2TONE_PIP, RIL_3GPP2TONE_ANSWER, RIL_3GPP2TONE_INTERCEPT, RIL_3GPP2TONE_ABRVREORDER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL3GPP2TONE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RIL3GPP2TONE
 req.product : Windows 10 or later.
 ---
@@ -117,6 +121,11 @@ typedef enum _RIL3GPP2TONE {
 
 <tr>
 <td>RIL_3GPP2TONE_RINGBACK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPP2TONE_TONEOFF</td>
 <td></td>
 </tr>
 </table>

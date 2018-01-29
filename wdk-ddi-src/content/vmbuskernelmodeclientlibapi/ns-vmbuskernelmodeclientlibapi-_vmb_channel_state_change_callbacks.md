@@ -7,8 +7,8 @@ old-location : netvista\vmb_channel_state_change_callbacks.htm
 old-project : netvista
 ms.assetid : 01A9A947-76F0-407C-8480-B2721A9A8A7B
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS, VMB_CHANNEL_STATE_CHANGE_CALLBACKS
+ms.date : 1/18/2018
+ms.keywords : VMB_CHANNEL_STATE_CHANGE_CALLBACKS structure [Network Drivers Starting with Windows Vista], *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS, PVMB_CHANNEL_STATE_CHANGE_CALLBACKS structure pointer [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VMB_CHANNEL_STATE_CHANGE_CALLBACKS, vmbuskernelmodeclientlibapi/PVMB_CHANNEL_STATE_CHANGE_CALLBACKS, PVMB_CHANNEL_STATE_CHANGE_CALLBACKS, netvista.vmb_channel_state_change_callbacks, VMB_CHANNEL_STATE_CHANGE_CALLBACKS, _VMB_CHANNEL_STATE_CHANGE_CALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VMB_CHANNEL_STATE_CHANGE_CALLBACKS
-req.alt-loc : VmbusKernelModeClientLibApi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PVMB_CHANNEL_STATE_CHANGE_CALLBACKS, VMB_CHANNEL_STATE_CHANGE_CALLBACKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
 req.product : Windows 10 or later.
 ---
 
@@ -55,34 +59,34 @@ typedef struct _VMB_CHANNEL_STATE_CHANGE_CALLBACKS {
 
 ## Members
 
-        
-            `EvtChannelClosed`
 
-            The channel closed callback function.
-        
-            `EvtChannelOpened`
+`EvtChannelClosed`
 
-            The channel opened callback function.
-        
-            `EvtChannelPostStarted`
+The channel closed callback function.
 
-            The channel post started callback function.
-        
-            `EvtChannelStarted`
+`EvtChannelOpened`
 
-            The channel started callback function.
-        
-            `EvtChannelSuspend`
+The channel opened callback function.
 
-            The channel suspended callback funciton.
-        
-            `Size`
+`EvtChannelPostStarted`
 
-            Size of callbacks.
-        
-            `Version`
+The channel post started callback function.
 
-            The version.
+`EvtChannelStarted`
+
+The channel started callback function.
+
+`EvtChannelSuspend`
+
+The channel suspended callback funciton.
+
+`Size`
+
+Size of callbacks.
+
+`Version`
+
+The version.
 
 
 ## Requirements

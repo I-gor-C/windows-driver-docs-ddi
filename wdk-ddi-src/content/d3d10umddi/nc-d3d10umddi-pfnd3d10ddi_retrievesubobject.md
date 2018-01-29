@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9029ec8d-102f-4d83-8ab5-fc208d8b5249
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.retrievesubobject_d3d11_1_, RetrieveSubObject(D3D11_1) callback function [Display Devices], RetrieveSubObject(D3D11_1), PFND3D10DDI_RETRIEVESUBOBJECT, PFND3D10DDI_RETRIEVESUBOBJECT, d3d10umddi/RetrieveSubObject(D3D11_1), display.retrievesubobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RetrieveSubObject(D3D11_1)
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -63,7 +67,6 @@ HRESULT Pfnd3d10ddiRetrievesubobject(
 `SubDeviceID`
 
 The function table being retrieved, with the following possible values.
-
 <table>
 <tr>
 <th>Value</th>
@@ -71,6 +74,29 @@ The function table being retrieved, with the following possible values.
 </tr>
 <tr>
 <td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+A video function table that is described as a   structure. The function returns a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_videodevicefuncs.md">D3D11_1DDI_VIDEODEVICEFUNCS</a> structure in the buffer referenced by the <i>pOutputParamsBuffer</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>3</dt>
+</dl>
+</td>
+<td width="60%">
+A WDDM 2.0 and later video function table that is described as a   structure. The function returns a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_videodevicefuncs.md">D3DWDDM2_0DDI_VIDEODEVICEFUNCS</a> structure in the buffer referenced by the <i>pOutputParamsBuffer</i> parameter.
+
+Supported starting with WDDM 2.0.
+
+</td>
+</tr>
+</table>
 
 `ParamSize`
 
@@ -115,17 +141,12 @@ This function is free-threaded.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_videodevicefuncs.md">D3D11_1DDI_VIDEODEVICEFUNCS</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_videodevicefuncs.md">D3DWDDM2_0DDI_VIDEODEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydevice.md">DestroyDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_videodevicefuncs.md">D3D11_1DDI_VIDEODEVICEFUNCS</a>
+
  
 
  

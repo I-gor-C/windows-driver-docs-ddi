@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 332ef453-6f9d-4cdd-a8c7-766158e540d8
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_UsageListDifference
+ms.keywords : HidP_UsageListDifference, hidfunc_91cbddd2-90f6-4784-9f1d-6d9bf8be35d3.xml, hid.hidp_usagelistdifference, HidP_UsageListDifference routine [Human Input Devices], hidpi/HidP_UsageListDifference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HidP_UsageListDifference
-req.alt-loc : Hidparse.lib,Hidparse.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hidparse.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HIDP_REPORT_TYPE
 ---
 
@@ -101,11 +105,8 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539824">HidP_UsageAndPageListDifference</a>
-</dt>
-</dl>
+
  
 
  

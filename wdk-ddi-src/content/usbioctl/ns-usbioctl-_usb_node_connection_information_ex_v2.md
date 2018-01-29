@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F886F470-BAAB-41C6-8431-01BF99236F81
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_NODE_CONNECTION_INFORMATION_EX_V2, USB_NODE_CONNECTION_INFORMATION_EX_V2, *PUSB_NODE_CONNECTION_INFORMATION_EX_V2
+ms.keywords : PUSB_NODE_CONNECTION_INFORMATION_EX_V2, usbioctl/PUSB_NODE_CONNECTION_INFORMATION_EX_V2, *PUSB_NODE_CONNECTION_INFORMATION_EX_V2, buses._usb_node_connection_information_ex_v2, usbioctl/USB_NODE_CONNECTION_INFORMATION_EX_V2, USB_NODE_CONNECTION_INFORMATION_EX_V2, USB_NODE_CONNECTION_INFORMATION_EX_V2 structure [Buses], PUSB_NODE_CONNECTION_INFORMATION_EX_V2 structure pointer [Buses], _USB_NODE_CONNECTION_INFORMATION_EX_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_NODE_CONNECTION_INFORMATION_EX_V2
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_NODE_CONNECTION_INFORMATION_EX_V2, *PUSB_NODE_CONNECTION_INFORMATION_EX_V2
 req.product : Windows 10 or later.
 ---
@@ -50,22 +54,22 @@ typedef struct _USB_NODE_CONNECTION_INFORMATION_EX_V2 {
 
 ## Members
 
-        
-            `ConnectionIndex`
 
-            The port number. If there are <i>n</i> ports on the USB hub, the ports are numbered from 1 to <i>n</i>. To get the number of ports, send the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_information_ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request. The request retrieves the highest port number on the hub.
-        
-            `Flags`
+`ConnectionIndex`
 
-            A bitmask that indicates the properties and capabilities of the attached device or  port. For more information, see <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2_flags.md">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>.
-        
-            `Length`
+The port number. If there are <i>n</i> ports on the USB hub, the ports are numbered from 1 to <i>n</i>. To get the number of ports, send the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_information_ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request. The request retrieves the highest port number on the hub.
 
-            The number of bytes that are required to hold the <b>USB_NODE_CONNECTION_INFORMATION_EX_V2</b> structure. The value must be set by the caller as input to  the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> request.
-        
-            `SupportedUsbProtocols`
+`Flags`
 
-            The USB signaling protocols that are supported by the port. 
+A bitmask that indicates the properties and capabilities of the attached device or  port. For more information, see <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2_flags.md">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>.
+
+`Length`
+
+The number of bytes that are required to hold the <b>USB_NODE_CONNECTION_INFORMATION_EX_V2</b> structure. The value must be set by the caller as input to  the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> request.
+
+`SupportedUsbProtocols`
+
+The USB signaling protocols that are supported by the port. 
 
 In the caller's <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> request, the caller can set <b>SupportedUsbProtocols</b> to a bitwise <b>OR</b> of one or more flags defined in <a href="..\usbioctl\ns-usbioctl-_usb_protocols.md">USB_PROTOCOLS</a>.
 
@@ -80,16 +84,12 @@ Upon completion of the request, <b>SupportedUsbProtocols</b> contains flags, whi
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2_flags.md">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>
-</dt>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
-</dt>
-</dl>
+
+<a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2_flags.md">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9eb470c8-ee37-497e-982e-d32b4b9b7348
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InsertTailList
+ms.keywords : kernel.inserttaillist, wdm/InsertTailList, InsertTailList routine [Kernel-Mode Driver Architecture], k109_8f31d6a6-89a0-440c-9397-2bef61a5878f.xml, InsertTailList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InsertTailList
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -85,26 +89,18 @@ Callers of <b>InsertTailList</b> can be running at any IRQL. If <b>InsertTailLis
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
+
+<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
+
+<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
+
  
 
  

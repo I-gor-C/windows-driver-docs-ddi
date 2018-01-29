@@ -7,8 +7,8 @@ old-location : netvista\rilpositioninfotdscdma.htm
 old-project : netvista
 ms.assetid : 0b7b2592-8a67-4eb0-8e87-354fd5f215c5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPOSITIONINFOTDSCDMA, *LPRILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA
+ms.date : 1/18/2018
+ms.keywords : RILPOSITIONINFOTDSCDMA structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA, *LPRILPOSITIONINFOTDSCDMA, netvista.rilpositioninfotdscdma
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPOSITIONINFOTDSCDMA
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA"
 req.product : Windows 10 or later.
 ---
 
 # RILPOSITIONINFOTDSCDMA structure
-
+<div class="alert"><b>Warning</b>  The Cellular COM API is deprecated in Windows 10. This content is provided to support maintenance of OEM and mobile operator created Windows Phone 8.1 applications.</div><div> </div>This structure represents the RILPOSITIONINFOTDSCDMA.
 
 ## Syntax
 ````
@@ -56,46 +60,46 @@ struct RILPOSITIONINFOTDSCDMA {
 
 ## Members
 
-        
-            `dwCellID`
 
-            Cell ID (0...268435455)).
-        
-            `dwCellParameterID`
+`dwCellID`
 
-            Cell parameter ID (0...127).
-        
-            `dwLocationAreaCode`
+Cell ID (0...268435455)).
 
-            Location Area Code (0...65535).
-        
-            `dwMobileCountryCode`
+`dwCellParameterID`
 
-            Mobile country code (0...999).
-        
-            `dwMobileNetworkCode`
+Cell parameter ID (0...127).
 
-            Mobile Network Code (0...999).
-        
-            `dwParams`
+`dwLocationAreaCode`
 
-            A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilpositioninfotdscdmaparammask.md">RILPOSITIONINFOTDSCDMAPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set
-        
-            `dwPathLoss`
+Location Area Code (0...65535).
 
-            Path loss of serving cell (46...158).
-        
-            `dwRSCP`
+`dwMobileCountryCode`
 
-            Received signal code power of serving cell. Range (−128...−25) in units of 1dBm in Q8 L3 filtered.
-        
-            `dwTimingAdvance`
+Mobile country code (0...999).
 
-            Timing Advance (0...1023), same value for all timeslots.
-        
-            `dwUARFCN`
+`dwMobileNetworkCode`
 
-            Channel number for serving cell (0...16383).
+Mobile Network Code (0...999).
+
+`dwParams`
+
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilpositioninfotdscdmaparammask.md">RILPOSITIONINFOTDSCDMAPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set
+
+`dwPathLoss`
+
+Path loss of serving cell (46...158).
+
+`dwRSCP`
+
+Received signal code power of serving cell. Range (−128...−25) in units of 1dBm in Q8 L3 filtered.
+
+`dwTimingAdvance`
+
+Timing Advance (0...1023), same value for all timeslots.
+
+`dwUARFCN`
+
+Channel number for serving cell (0...16383).
 
 
 ## Requirements
@@ -106,15 +110,12 @@ struct RILPOSITIONINFOTDSCDMA {
 | **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFOTDSCDMA structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFOTDSCDMA structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f756988d-8b21-4c2e-8c85-68f4eaa2c4f9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe::Abort, Abort
+ms.keywords : wudfusb/IWDFUsbTargetPipe::Abort, IWDFUsbTargetPipe::Abort, UMDFUSBref_8b413047-741c-4d3c-a71e-d29a79e5226c.xml, wdf.iwdfusbtargetpipe_abort, IWDFUsbTargetPipe, IWDFUsbTargetPipe interface, Abort method, umdf.iwdfusbtargetpipe_abort, Abort, Abort method, Abort method, IWDFUsbTargetPipe interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbTargetPipe.Abort
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -54,47 +58,47 @@ This function has no parameters.
 ## Return Value
 
 <b>Abort</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/f756988d-8b21-4c2e-8c85-68f4eaa2c4f9">Abort</a> successfully aborted all pending transfers. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/f756988d-8b21-4c2e-8c85-68f4eaa2c4f9">Abort</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
-
- 
-
-<b>Abort</b> returns one of the following values:
-<dl>
-<dt><b>S_OK </b></dt>
 </dl>
-<a href="https://msdn.microsoft.com/f756988d-8b21-4c2e-8c85-68f4eaa2c4f9">Abort</a> successfully aborted all pending transfers. 
-<dl>
-<dt><b>E_OUTOFMEMORY </b></dt>
-</dl>
-<a href="https://msdn.microsoft.com/f756988d-8b21-4c2e-8c85-68f4eaa2c4f9">Abort</a> encountered an allocation failure.
-<dl>
-<dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
 
- 
-
-<b>Abort</b> returns one of the following values:
-<dl>
-<dt><b>S_OK </b></dt>
-</dl>
-<a href="https://msdn.microsoft.com/f756988d-8b21-4c2e-8c85-68f4eaa2c4f9">Abort</a> successfully aborted all pending transfers. 
-<dl>
-<dt><b>E_OUTOFMEMORY </b></dt>
-</dl>
-<a href="https://msdn.microsoft.com/f756988d-8b21-4c2e-8c85-68f4eaa2c4f9">Abort</a> encountered an allocation failure.
-<dl>
-<dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -116,14 +120,10 @@ For more information about how <b>Abort</b> works, see the <a href="https://msdn
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540202">WinUsb_AbortPipe</a>
-</dt>
-</dl>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
+
  
 
  

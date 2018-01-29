@@ -7,8 +7,8 @@ old-location : netvista\rilimsstatus_v3.htm
 old-project : netvista
 ms.assetid : 4c0ee205-2508-4414-afa5-cb6e7a358fc8
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILIMSSTATUS_V3, RILIMSSTATUS, RILIMSSTATUS_V3, *LPRILIMSSTATUS_V3, *LPRILIMSSTATUS
+ms.date : 1/18/2018
+ms.keywords : RILIMSSTATUS, *LPRILIMSSTATUS_V3, netvista.rilimsstatus_v3, *LPRILIMSSTATUS, ntddrilapitypes/RILIMSSTATUS_V3, RILIMSSTATUS_V3 structure [Network Drivers Starting with Windows Vista], RILIMSSTATUS_V3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILIMSSTATUS_V3
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILIMSSTATUS, RILIMSSTATUS_V3, *LPRILIMSSTATUS_V3, *LPRILIMSSTATUS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILIMSSTATUS, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3, RILIMSSTATUS_V3
 ---
 
 # RILIMSSTATUS_V3 structure
@@ -53,38 +57,38 @@ typedef struct _RILIMSSTATUS_V3 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwAvailableServices`
+`cbSize`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwIMSSystemType`
 
-            
-        
-            `dwParams`
+`dwAvailableServices`
 
-            
-        
-            `dwSMSSupportedFormat`
 
-            
-        
-            `hUiccApp`
 
-            
-        
-            `wszServingDomain`
+`dwExecutor`
 
-            
+
+
+`dwIMSSystemType`
+
+
+
+`dwParams`
+
+
+
+`dwSMSSupportedFormat`
+
+
+
+`hUiccApp`
+
+
+
+`wszServingDomain`
+
+
 
 
 ## Requirements

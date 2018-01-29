@@ -7,8 +7,8 @@ old-location : print\binary_container.htm
 old-project : print
 ms.assetid : bac960c5-7c29-4550-9b82-5adb6a0cc243
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _BINARY_CONTAINER, *PBINARY_CONTAINER, BINARY_CONTAINER
+ms.date : 1/18/2018
+ms.keywords : PBINARY_CONTAINER structure pointer [Print Devices], print.binary_container, BINARY_CONTAINER structure [Print Devices], *PBINARY_CONTAINER, spoolfnc_a034cd3e-8afb-4a15-9640-06d693fd150c.xml, _BINARY_CONTAINER, winspool/BINARY_CONTAINER, PBINARY_CONTAINER, winspool/PBINARY_CONTAINER, BINARY_CONTAINER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available in Windows XP and later 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BINARY_CONTAINER
-req.alt-loc : winspool.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBINARY_CONTAINER, BINARY_CONTAINER"
 req.product : Windows 10 or later.
 ---
@@ -48,17 +52,17 @@ typedef struct _BINARY_CONTAINER {
 
 ## Members
 
-        
-            `cbBuf`
 
-            Specifies the number of bytes of binary data in the <b>pData</b> member.
-        
-            `pData`
+`cbBuf`
 
-            Pointer to a buffer that contains the binary data.
+Specifies the number of bytes of binary data in the <b>pData</b> member.
 
-    ## Remarks
-        The BINARY_CONTAINER structure is used in a <a href="..\winspool\ns-winspool-_bidi_data.md">BIDI_DATA</a> structure when the bidi data consists of binary data, as opposed to integer, float, or string data.
+`pData`
+
+Pointer to a buffer that contains the binary data.
+
+## Remarks
+The BINARY_CONTAINER structure is used in a <a href="..\winspool\ns-winspool-_bidi_data.md">BIDI_DATA</a> structure when the bidi data consists of binary data, as opposed to integer, float, or string data.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,15 +72,12 @@ typedef struct _BINARY_CONTAINER {
 | **Minimum UMDF version** |  |
 | **Header** | winspool.h (include Winspool.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\winspool\ns-winspool-_bidi_data.md">BIDI_DATA</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20BINARY_CONTAINER structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20BINARY_CONTAINER structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

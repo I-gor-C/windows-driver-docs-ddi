@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : abb8d45a-a698-41b0-94b3-c658fe3105bb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SecMakeSPNEx2
+ms.keywords : ifsk.secmakespnex2, ksecddref_be331d16-cc90-4e80-85cd-c2faaecca843.xml, SecMakeSPNEx2 function [Installable File System Drivers], ntifs/SecMakeSPNEx2, SecMakeSPNEx2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This function is available on Windows Vista, Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SecMakeSPNEx2
-req.alt-loc : Ksecdd.lib,Ksecdd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksecdd.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -67,19 +71,19 @@ A pointer to a Unicode string that specifies the service name for the security s
 
 `OPTIONAL`
 
-
-
-`OPTIONAL`
-
-
+TBD
 
 `OPTIONAL`
 
-
+TBD
 
 `OPTIONAL`
 
+TBD
 
+`OPTIONAL`
+
+TBD
 
 `Spn`
 
@@ -87,7 +91,7 @@ A pointer to a Unicode string that receives the security service provider name s
 
 `OPTIONAL`
 
-
+TBD
 
 `Allocate`
 
@@ -101,19 +105,49 @@ A Boolean variable that indicates that the caller provided a marshaled <i>InTarg
 ## Return Value
 
 <b>SecMakeSPNEx2</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>The <i>Allocate</i> parameter was set to <b>FALSE</b> and one of the following conditions occurred:
+</dl>
+</td>
+<td width="60%">
+The <i>Allocate</i> parameter was set to <b>FALSE</b> and one of the following conditions occurred:
 
 The <i>Spn </i>parameter was a <b>NULL</b> pointer.
 
 The maximum length for the <i>Spn</i> Unicode string parameter was too small.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>A total length of the <i>Spn</i> parameter exceeds 65535 bytes.
+</dl>
+</td>
+<td width="60%">
+A total length of the <i>Spn</i> parameter exceeds 65535 bytes.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl>The <i>Allocate</i> parameter was set to <b>TRUE</b>, but the memory allocation request failed.
+</dl>
+</td>
+<td width="60%">
+The <i>Allocate</i> parameter was set to <b>TRUE</b>, but the memory allocation request failed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -133,14 +167,10 @@ The maximum length for the <i>Spn</i> Unicode string parameter was too small.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-secmakespn.md">SecMakeSPN</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-secmakespnex.md">SecMakeSPNEx</a>
-</dt>
-</dl>
+
  
 
  

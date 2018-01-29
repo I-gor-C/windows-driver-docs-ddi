@@ -7,8 +7,8 @@ old-location : netvista\wdi_power_mode_reason_code.htm
 old-project : netvista
 ms.assetid : F9FAA622-A844-4D9F-A0E6-D919C1FAD3AB
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_POWER_MODE_REASON_CODE, WDI_POWER_MODE_REASON_CODE
+ms.date : 1/18/2018
+ms.keywords : WDI_POWER_MODE_REASON_CODE_COMPLIANT_P2P_DEVICE, _WDI_POWER_MODE_REASON_CODE, WDI_POWER_MODE_REASON_CODE_NO_CHANGE, wditypes/WDI_POWER_MODE_REASON_CODE_NO_CHANGE, WDI_POWER_MODE_REASON_CODE_OTHERS, wditypes/WDI_POWER_MODE_REASON_CODE_COMPLIANT_AP, WDI_POWER_MODE_REASON_CODE_NONCOMPLIANT_AP, wditypes/WDI_POWER_MODE_REASON_CODE_NONCOMPLIANT_AP, wditypes/WDI_POWER_MODE_REASON_CODE, wditypes/WDI_POWER_MODE_REASON_CODE_COMPLIANT_P2P_DEVICE, netvista.wdi_power_mode_reason_code, netvista.wifi_power_mode_reason_code, WDI_POWER_MODE_REASON_CODE_LEGACY_P2P_DEVICE, wditypes/WDI_POWER_MODE_REASON_CODE_LEGACY_P2P_DEVICE, WDI_POWER_MODE_REASON_CODE enumeration [Network Drivers Starting with Windows Vista], WDI_POWER_MODE_REASON_CODE_COMPLIANT_AP, wditypes/WDI_POWER_MODE_REASON_CODE_OTHERS, WDI_POWER_MODE_REASON_CODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_POWER_MODE_REASON_CODE
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_POWER_MODE_REASON_CODE
 req.product : Windows 10 or later.
 ---
@@ -72,6 +76,11 @@ typedef enum _WDI_POWER_MODE_REASON_CODE {
 <tr>
 <td>WDI_POWER_MODE_REASON_CODE_NO_CHANGE</td>
 <td>Device is initially in this state and has not changed since.</td>
+</tr>
+
+<tr>
+<td>WDI_POWER_MODE_REASON_CODE_NONCOMPLANT_AP</td>
+<td></td>
 </tr>
 
 <tr>

@@ -7,8 +7,8 @@ old-location : netvista\rilcalldisconnectdetails.htm
 old-project : netvista
 ms.assetid : c933e219-47bb-4896-b5ee-bd2fd59f4e8c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS
+ms.date : 1/18/2018
+ms.keywords : netvista.rilcalldisconnectdetails, RILCALLDISCONNECTDETAILS, ntddrilapitypes/RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista], *LPRILCALLDISCONNECTDETAILS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLDISCONNECTDETAILS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
 ---
 
 # RILCALLDISCONNECTDETAILS structure
@@ -54,18 +58,18 @@ typedef struct _RILCALLDISCONNECTDETAILS {
 
 ## Members
 
-        
-            `causeUnion`
 
-            
-        
-            `dwDisconnectGroup`
+`causeUnion`
 
-            
-        
-            `RILCAUSEUNION`
 
-            
+
+`dwDisconnectGroup`
+
+
+
+`RILCAUSEUNION`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 28a802b3-f916-4455-a93a-868393a570cf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTargetStateManagement, IWDFIoTargetStateManagement::Remove, Remove
+ms.keywords : wdf.iwdfiotargetstatemanagement_remove, Remove method, IWDFIoTargetStateManagement interface, Remove, wudfddi/IWDFIoTargetStateManagement::Remove, UMDFIoTargetObjectRef_aad5b1f1-14c0-442f-a289-be006b20816e.xml, IWDFIoTargetStateManagement, IWDFIoTargetStateManagement interface, Remove method, IWDFIoTargetStateManagement::Remove, umdf.iwdfiotargetstatemanagement_remove, Remove method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoTargetStateManagement.Remove
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ Although the <b>Remove</b> method is available, drivers do not need to call it. 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
-</dt>
-</dl>
+
  
 
  

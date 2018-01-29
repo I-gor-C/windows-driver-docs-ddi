@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 884C8141-2A15-4BAE-8A5C-73355BD84D53
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
+ms.keywords : GNSS_V2UPL_NI_INFO, sensors.gnss_v2upl_ni_info, *PGNSS_V2UPL_NI_INFO, gnssdriver/GNSS_V2UPL_NI_INFO, gnssdriver/PGNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO structure pointer [Sensor Devices], PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO structure [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_V2UPL_NI_INFO
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
 ---
 
 # GNSS_V2UPL_NI_INFO structure
@@ -48,14 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `Size`
 
-            Structure size.
-        
-            `Version`
+`RequestorId`
 
-            Version number.
+
+
+`Size`
+
+Structure size.
+
+`Version`
+
+Version number.
 
 
 ## Requirements

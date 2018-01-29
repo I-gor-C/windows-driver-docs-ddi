@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 346F6FEC-7E06-4DF0-A304-88BD830C591B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetDeviceInterfacePropertyData
+ms.keywords : wdm/IoSetDeviceInterfacePropertyData, IoSetDeviceInterfacePropertyData, IoSetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], kernel.iosetdeviceinterfacepropertydata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available for Windows 8 and later versions of Windo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetDeviceInterfacePropertyData
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,12 +91,34 @@ A pointer to the device interface property data. Set this parameter to <b>NULL</
 ## Return Value
 
 <b>IoSetDeviceInterfacePropertyData</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The specified LCID value is not valid.
+</dl>
+</td>
+<td width="60%">
+The specified LCID value is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>The specified property is not supported.
+</dl>
+</td>
+<td width="60%">
+The specified property is not supported.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -116,17 +142,12 @@ Callers of <b>IoSetDeviceInterfacePropertyData</b> must be running at IRQL &lt;=
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
+
 <a href="..\wdm\nf-wdm-iogetdeviceinterfacepropertydata.md">IoGetDeviceInterfacePropertyData</a>
-</dt>
-</dl>
+
  
 
  

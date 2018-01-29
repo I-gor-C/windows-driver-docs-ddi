@@ -7,8 +7,8 @@ old-location : netvista\rilunblockuicclockparams.htm
 old-project : netvista
 ms.assetid : 48d1deeb-8862-4e01-aa22-119a53aa4aba
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILUNBLOCKUICCLOCKPARAMS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS, netvista.rilunblockuicclockparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUNBLOCKUICCLOCKPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS
 ---
 
 # RILUNBLOCKUICCLOCKPARAMS structure
@@ -47,14 +51,14 @@ typedef struct _RILUNBLOCKUICCLOCKPARAMS {
 
 ## Members
 
-        
-            `lockCredential`
 
-            
-        
-            `szNewPassword`
+`lockCredential`
 
-            
+
+
+`szNewPassword`
+
+
 
 
 ## Requirements

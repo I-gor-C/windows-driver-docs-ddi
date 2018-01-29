@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C31AE3A8-CD3C-4270-BA5C-A61C0F386701
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UDECX_ENDPOINTS_CONFIGURE_PARAMS, *PUDECX_ENDPOINTS_CONFIGURE_PARAMS, UDECX_ENDPOINTS_CONFIGURE_PARAMS
+ms.keywords : UDECX_ENDPOINTS_CONFIGURE_PARAMS structure [Buses], PUDECX_ENDPOINTS_CONFIGURE_PARAMS, *PUDECX_ENDPOINTS_CONFIGURE_PARAMS, _UDECX_ENDPOINTS_CONFIGURE_PARAMS, udecxusbdevice/UDECX_ENDPOINTS_CONFIGURE_PARAMS, UDECX_ENDPOINTS_CONFIGURE_PARAMS, PUDECX_ENDPOINTS_CONFIGURE_PARAMS structure pointer [Buses], udecxusbdevice/PUDECX_ENDPOINTS_CONFIGURE_PARAMS, buses.udecx_endpoints_configure_params
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UDECX_ENDPOINTS_CONFIGURE_PARAMS
-req.alt-loc : UdecxUsbDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUDECX_ENDPOINTS_CONFIGURE_PARAMS, UDECX_ENDPOINTS_CONFIGURE_PARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UDECX_ENDPOINTS_CONFIGURE_PARAMS, *PUDECX_ENDPOINTS_CONFIGURE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -55,38 +59,44 @@ typedef struct _UDECX_ENDPOINTS_CONFIGURE_PARAMS {
 
 ## Members
 
-        
-            `ConfigureType`
 
-            A <a href="..\udecxusbdevice\ne-udecxusbdevice-_udecx_endpoints_configure_type.md">UDECX_ENDPOINTS_CONFIGURE_TYPE</a>-typed value that indicates whether the configuration, interface setting, or endpoint must be configured.
-        
-            `EndpointsToConfigure`
+`ConfigureType`
 
-            A pointer to an array of UDECXUSBENDPOINT handles that indicates the endpoint objects to be configured.
-        
-            `EndpointsToConfigureCount`
+A <a href="..\udecxusbdevice\ne-udecxusbdevice-_udecx_endpoints_configure_type.md">UDECX_ENDPOINTS_CONFIGURE_TYPE</a>-typed value that indicates whether the configuration, interface setting, or endpoint must be configured.
 
-            The number entries in the array pointed to by <i>EndpointsToConfigure</i>. This value indicates number of endpoints that must be configured.
-        
-            `InterfaceNumber`
+`EndpointsToConfigure`
 
-            If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeInterfaceSettingChange</b>, this value is <b>bInterfaceNumber</b> of the current interface descriptor (<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>).
-        
-            `NewConfigurationValue`
+A pointer to an array of UDECXUSBENDPOINT handles that indicates the endpoint objects to be configured.
 
-            If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeDeviceConfigurationChange</b>, this value is <b>bConfigurationValue</b> of the new configuration descriptor (<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>).
-        
-            `NewInterfaceSetting`
+A pointer to an array of UDECXUSBENDPOINT handles that indicates the endpoint objects that must be released.
 
-            If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeInterfaceSettingChange</b>, this value is <b>bAlternateSetting</b> of the interface descriptor (<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>) to set.
-        
-            `ReleasedEndpointsCount`
+`EndpointsToConfigureCount`
 
-            The number entries in the array pointed to by <i>EndpointsToConfigure</i>. This value indicates number of endpoints to release.
-        
-            `Size`
+The number entries in the array pointed to by <i>EndpointsToConfigure</i>. This value indicates number of endpoints that must be configured.
 
-            Size of this structure.
+`InterfaceNumber`
+
+If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeInterfaceSettingChange</b>, this value is <b>bInterfaceNumber</b> of the current interface descriptor (<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>).
+
+`NewConfigurationValue`
+
+If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeDeviceConfigurationChange</b>, this value is <b>bConfigurationValue</b> of the new configuration descriptor (<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>).
+
+`NewInterfaceSetting`
+
+If <b>ConfigureType</b> is <b>UdecxEndpointsConfigureTypeInterfaceSettingChange</b>, this value is <b>bAlternateSetting</b> of the interface descriptor (<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>) to set.
+
+`ReleasedEndpoints`
+
+
+
+`ReleasedEndpointsCount`
+
+The number entries in the array pointed to by <i>EndpointsToConfigure</i>. This value indicates number of endpoints to release.
+
+`Size`
+
+Size of this structure.
 
 
 ## Requirements
@@ -97,13 +107,10 @@ typedef struct _UDECX_ENDPOINTS_CONFIGURE_PARAMS {
 | **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
-</dt>
-</dl>
+
  
 
  

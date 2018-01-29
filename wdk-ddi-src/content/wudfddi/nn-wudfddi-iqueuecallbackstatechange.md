@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 39c66462-015d-49ba-9a37-0b3b928e5fbf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.iqueuecallbackstatechange, IQueueCallbackStateChange interface, IQueueCallbackStateChange interface, described, IQueueCallbackStateChange, wudfddi/IQueueCallbackStateChange, UMDFQueueObjectRef_57a57868-6a9d-42b3-8c74-ceb6c4be03c3.xml, umdf.iqueuecallbackstatechange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IQueueCallbackStateChange
-req.alt-loc : wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -51,7 +55,7 @@ An I/O queue object raises an event when it changes state. A driver can consume 
 
 ## Remarks
 
-A driver registers the <b>IQueueCallbackStateChange</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. </p>
+A driver registers the <b>IQueueCallbackStateChange</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue.
 
 ## Requirements
 | &nbsp; | &nbsp; |

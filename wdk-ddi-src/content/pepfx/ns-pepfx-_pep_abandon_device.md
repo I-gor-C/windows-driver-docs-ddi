@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 15F54054-F20B-43A6-8BCD-3A1C47433B12
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ABANDON_DEVICE, *PPEP_ABANDON_DEVICE, PEP_ABANDON_DEVICE
+ms.keywords : _PEP_ABANDON_DEVICE, pepfx/PEP_ABANDON_DEVICE, *PPEP_ABANDON_DEVICE, PPEP_ABANDON_DEVICE structure pointer [Kernel-Mode Driver Architecture], PPEP_ABANDON_DEVICE, kernel.pep_abandon_device, PEP_ABANDON_DEVICE structure [Kernel-Mode Driver Architecture], pepfx/PPEP_ABANDON_DEVICE, PEP_ABANDON_DEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ABANDON_DEVICE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_ABANDON_DEVICE, PEP_ABANDON_DEVICE"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _PEP_ABANDON_DEVICE {
 
 ## Members
 
-        
-            `DeviceAccepted`
 
-            [out] Whether the PEP claims ownership of the device. The PEP sets this member to TRUE to claim ownership of the device, or to FALSE to indicate that it does not own the device.
-        
-            `DeviceId`
+`DeviceAccepted`
 
-            [in] A string that uniquely identifies the device. This member is a pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identification-strings">device identification string</a>.
+[out] Whether the PEP claims ownership of the device. The PEP sets this member to TRUE to claim ownership of the device, or to FALSE to indicate that it does not own the device.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186656">PEP_DPM_ABANDON_DEVICE</a> notification. The <b>DeviceId</b> member of the structure contains an input value that is supplied by the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx). The <b>DeviceAccepted</b> member contains an output value that the PEP writes to the structure in response to this notification.
+`DeviceId`
+
+[in] A string that uniquely identifies the device. This member is a pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identification-strings">device identification string</a>.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186656">PEP_DPM_ABANDON_DEVICE</a> notification. The <b>DeviceId</b> member of the structure contains an input value that is supplied by the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx). The <b>DeviceAccepted</b> member contains an output value that the PEP writes to the structure in response to this notification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _PEP_ABANDON_DEVICE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186656">PEP_DPM_ABANDON_DEVICE</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

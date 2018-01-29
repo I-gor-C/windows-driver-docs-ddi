@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d9f3e892-1ed5-4030-a656-7d2d294b1c82
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_RESTRICTED_OVERWRITE, FEATURE_DATA_RESTRICTED_OVERWRITE, *PFEATURE_DATA_RESTRICTED_OVERWRITE
+ms.keywords : FEATURE_DATA_RESTRICTED_OVERWRITE, structs-CD-ROM_d2d9725b-16c9-4361-a2fc-90bdc2d7905c.xml, PFEATURE_DATA_RESTRICTED_OVERWRITE, _FEATURE_DATA_RESTRICTED_OVERWRITE, ntddmmc/PFEATURE_DATA_RESTRICTED_OVERWRITE, ntddmmc/FEATURE_DATA_RESTRICTED_OVERWRITE, FEATURE_DATA_RESTRICTED_OVERWRITE structure [Storage Devices], PFEATURE_DATA_RESTRICTED_OVERWRITE structure pointer [Storage Devices], *PFEATURE_DATA_RESTRICTED_OVERWRITE, storage.feature_data_restricted_overwrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_RESTRICTED_OVERWRITE
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FEATURE_DATA_RESTRICTED_OVERWRITE, *PFEATURE_DATA_RESTRICTED_OVERWRITE
 ---
 
@@ -46,13 +50,13 @@ typedef struct _FEATURE_DATA_RESTRICTED_OVERWRITE {
 
 ## Members
 
-        
-            `Header`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+`Header`
 
-    ## Remarks
-        This structure holds data for the feature named "Restricted Overwrite" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can only overwrite a limited set of logical blocks at any given time. 
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+
+## Remarks
+This structure holds data for the feature named "Restricted Overwrite" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can only overwrite a limited set of logical blocks at any given time. 
 
 When queried, devices supporting this feature must return the information indicated in <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>. No other feature-specific information is required.
 
@@ -64,16 +68,12 @@ When queried, devices supporting this feature must return the information indica
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

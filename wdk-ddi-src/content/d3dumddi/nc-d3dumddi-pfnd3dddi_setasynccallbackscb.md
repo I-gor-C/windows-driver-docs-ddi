@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7f046e5a-e8a2-4e39-ae31-d37afc03f21f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnsetasynccallbackscb, pfnSetAsyncCallbacksCb callback function [Display Devices], pfnSetAsyncCallbacksCb, PFND3DDDI_SETASYNCCALLBACKSCB, PFND3DDDI_SETASYNCCALLBACKSCB, d3dumddi/pfnSetAsyncCallbacksCb, D3Druntime_Functions_9bd5f5b7-2108-4cf6-a2d3-fbf6d2437956.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnSetAsyncCallbacksCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,14 +68,34 @@ A Boolean value that specifies whether the runtime will start or stop receiving 
 ## Return Value
 
 <b>pfnSetAsyncCallbacksCb</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The Direct3D runtime was successfully notified. 
+</dl>
+</td>
+<td width="60%">
+The Direct3D runtime was successfully notified. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other HRESULT values.
 
@@ -88,8 +112,7 @@ Within the implementation of <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md
 When the driver passes <b>TRUE</b> to the <i>Enable</i> parameter in a call to <b>pfnSetAsyncCallbacksCb</b>, the runtime puts itself in a state where it does not immediately respond to device-lost situations in its callback functions. Instead, when the runtime detects a device lost in a callback function while in this state, it sets a bit that indicates that the event occurred. When the driver passes <b>FALSE</b> to the <i>Enable</i> parameter in a call to <b>pfnSetAsyncCallbacksCb</b>, the runtime checks the bit to determine if a device lost occurred. If the bit is set, the runtime performs its typical device-lost handling. After this point, the driver no longer receives most calls to its functions from the runtime. 
 
 Only DirectX 9 and DirectX 9L versions of the runtime support <b>pfnSetAsyncCallbacksCb</b>. DirectX 10 and later versions of the runtime set the <b>pfnSetAsyncCallbacksCb</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure to <b>NULL</b> when the runtime calls the user-mode display driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create a rendering device. 
-
-Drivers can call the runtime's callback functions only from a worker thread if the runtime previously set the <b>pfnSetAsyncCallbacksCb</b> member of D3DDDI_DEVICECALLBACKS to non-<b>NULL</b> in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function.
+<div class="alert"><b>Note</b>    DirectX versions earlier than 9 do not support multiple-processor optimizations. </div><div> </div>Drivers can call the runtime's callback functions only from a worker thread if the runtime previously set the <b>pfnSetAsyncCallbacksCb</b> member of D3DDDI_DEVICECALLBACKS to non-<b>NULL</b> in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,29 +128,20 @@ Drivers can call the runtime's callback functions only from a worker thread if t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md">Flush</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rename.md">Rename</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockasync.md">UnlockAsync</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md">Flush</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
+
  
 
  

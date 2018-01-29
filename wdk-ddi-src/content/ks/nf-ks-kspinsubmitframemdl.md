@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8033c0a9-86dd-4d54-b93e-66c926cae952
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinSubmitFrameMdl
+ms.keywords : stream.kspinsubmitframemdl, avfunc_456aa5db-b749-4b95-8448-f024dbc2030b.xml, KsPinSubmitFrameMdl function [Streaming Media Devices], KsPinSubmitFrameMdl, ks/KsPinSubmitFrameMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinSubmitFrameMdl
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -74,7 +78,7 @@ Returns STATUS_SUCCESS if frame submission is successful. Otherwise returns an a
 
 ## Remarks
 
-The difference between this function and <a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a> is that this function will submit a frame using an <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a> structure rather than a data and size argument.
+The difference between this function and <a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a> is that this function will submit a frame using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> structure rather than a data and size argument.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,14 +94,10 @@ The difference between this function and <a href="..\ks\nf-ks-kspinsubmitframe.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
-</dt>
-</dl>
+
  
 
  

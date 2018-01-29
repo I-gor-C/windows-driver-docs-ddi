@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C2CF94F3-E12D-4D31-975B-720FA5AB5ABA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords : buses.ioctl_internal_usbfn_control_status_handshake_out, IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT control code [Buses], IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT, usbfnioctl/IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT
-req.alt-loc : usbfnioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSBFN_USB_STRING, USBFN_USB_STRING"
 req.product : Windows 10 or later.
 ---
@@ -60,13 +64,12 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the USB function class extension (UFX) returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE.
 
-    ## Remarks
-        This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.
+## Remarks
+This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.
 
-UFX forwards this IOCTL request to the transfer queue created for the endpoint by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.</p>
+UFX forwards this IOCTL request to the transfer queue created for the endpoint by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

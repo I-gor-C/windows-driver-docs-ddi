@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A44B4B93-4EC7-4FC3-B64F-BF1FF19D067E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmInitializeTransactionManager
+ms.keywords : TmInitializeTransactionManager routine [Kernel-Mode Driver Architecture], wdm/TmInitializeTransactionManager, kernel.tminitializetransactionmanager_, TmInitializeTransactionManager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TmInitializeTransactionManager
-req.alt-loc : Wdm.h,Ext-MS-Win-ntos-tm-l1-1-0.dll,tm.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,7 +71,6 @@ Specifies a pointer to a GUID that identifies  the name of the transaction manag
 `CreateOptions`
 
 Optional object creation flags. The following table contains the available flags.
-
 <table>
 <tr>
 <th>Option flag</th>

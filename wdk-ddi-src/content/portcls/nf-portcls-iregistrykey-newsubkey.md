@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 39b352ba-4b6f-4d9c-baf5-a479d8c74ae0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey, IRegistryKey::NewSubKey, NewSubKey
+ms.keywords : IRegistryKey interface [Audio Devices], NewSubKey method, NewSubKey method [Audio Devices], IRegistryKey interface, portcls/IRegistryKey::NewSubKey, IRegistryKey, audio.iregistrykey_newsubkey, NewSubKey method [Audio Devices], audmp-routines_8a9e8a73-551d-46d4-90a8-f24183c38d8d.xml, NewSubKey, IRegistryKey::NewSubKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRegistryKey.NewSubKey
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -106,23 +110,16 @@ The <i>RegistrySubKey</i> and <i>OuterUnknown</i> parameters follow the <a href=
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
-</dt>
-<dt>
-<a href="..\portcls\nf-portcls-pcnewregistrykey.md">PcNewRegistryKey</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536945">IPort::NewRegistryKey</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536945">IPort::NewRegistryKey</a>
+
+<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\portcls\nf-portcls-pcnewregistrykey.md">PcNewRegistryKey</a>
+
  
 
  

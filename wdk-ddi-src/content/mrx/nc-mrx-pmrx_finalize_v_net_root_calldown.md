@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 13d0c903-57b6-4a57-977a-bf1bd651660f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
+ms.keywords : ifsk.mrxfinalizevnetroot, MRxFinalizeVNetRoot routine [Installable File System Drivers], MRxFinalizeVNetRoot, PMRX_FINALIZE_V_NET_ROOT_CALLDOWN, PMRX_FINALIZE_V_NET_ROOT_CALLDOWN, mrx/MRxFinalizeVNetRoot, mrxref_a5cc53ee-2d11-4987-aeb4-fe9cc2cc9b3e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MRxFinalizeVNetRoot
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -87,29 +91,20 @@ RDBSS ignores the return value from <i>MRxFinalizeVNetRoot</i>.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549864">MRxCreateSrvCall</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549869">MRxCreateVNetRoot</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550649">MRxExtractNetRootName</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550653">MRxFinalizeNetRoot</a>
-</dt>
-<dt>
 <a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549864">MRxCreateSrvCall</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550750">MRxPreparseName</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550653">MRxFinalizeNetRoot</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549869">MRxCreateVNetRoot</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550649">MRxExtractNetRootName</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550824">MRxSrvCallWinnerNotify</a>
-</dt>
-</dl>
+
  
 
  

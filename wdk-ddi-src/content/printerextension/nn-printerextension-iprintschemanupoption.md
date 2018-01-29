@@ -7,8 +7,8 @@ old-location : print\iprintschemanupoption_interface.htm
 old-project : print
 ms.assetid : 1EC5C0D4-5170-4251-80C0-24CB0D6EF782
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPrintSchemaTicket2, IPrintSchemaTicket2::GetParameterInitializer, GetParameterInitializer
+ms.date : 1/18/2018
+ms.keywords : print.iprintschemanupoption_interface, IPrintSchemaNUpOption interface [Print Devices], IPrintSchemaNUpOption interface [Print Devices], described, IPrintSchemaNUpOption, printerextension/IPrintSchemaNUpOption
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPrintSchemaNUpOption
-req.alt-loc : printerextension.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : printerextension.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PrintSchemaSelectionType
 req.product : Windows 10 or later.
 ---

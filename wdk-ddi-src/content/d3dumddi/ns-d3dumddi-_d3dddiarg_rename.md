@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ecddaf4-bce7-4ea0-b53d-e4872fa21f81
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_RENAME, D3DDDIARG_RENAME
+ms.keywords : d3dumddi/D3DDDIARG_RENAME, UMDisplayDriver_param_Structs_5acf671e-94e3-4752-89c1-b3c9e33cba7a.xml, D3DDDIARG_RENAME structure [Display Devices], _D3DDDIARG_RENAME, display.d3dddiarg_rename, D3DDDIARG_RENAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_RENAME
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_RENAME
 ---
 
@@ -51,24 +55,24 @@ typedef struct _D3DDDIARG_RENAME {
 
 ## Members
 
-        
-            `GpuVirtualAddress`
 
-            This member is reserved and should be set to zero.
+`GpuVirtualAddress`
+
+This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
-        
-            `hCookie`
 
-            [in] A handle that represents the renamed surface instance that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a> function previously returned.
-        
-            `hResource`
+`hCookie`
 
-            [in] A handle to the resource to be renamed.
-        
-            `SubResourceIndex`
+[in] A handle that represents the renamed surface instance that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a> function previously returned.
 
-            [in] The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be renamed.
+`hResource`
+
+[in] A handle to the resource to be renamed.
+
+`SubResourceIndex`
+
+[in] The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be renamed.
 
 
 ## Requirements
@@ -79,16 +83,12 @@ This member is available beginning with Windows 7.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rename.md">Rename</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
+
  
 
  

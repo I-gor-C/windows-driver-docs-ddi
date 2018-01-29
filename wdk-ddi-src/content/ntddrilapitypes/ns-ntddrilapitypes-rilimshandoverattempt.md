@@ -7,8 +7,8 @@ old-location : netvista\rilimshandoverattempt.htm
 old-project : netvista
 ms.assetid : 22491e3c-fa23-473d-b3e6-92c776b81204
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT
+ms.date : 1/18/2018
+ms.keywords : "*LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT, netvista.rilimshandoverattempt, RILIMSHANDOVERATTEMPT structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILIMSHANDOVERATTEMPT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILIMSHANDOVERATTEMPT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _RILIMSHANDOVERATTEMPT {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwDestSystemType`
+`cbSize`
 
-            
-        
-            `dwOldSystemType`
 
-            
-        
-            `hrHandOverResult`
 
-            
+`dwDestSystemType`
+
+
+
+`dwOldSystemType`
+
+
+
+`hrHandOverResult`
+
+
 
 
 ## Requirements

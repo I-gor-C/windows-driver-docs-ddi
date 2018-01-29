@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 554cad50-d952-4658-904b-b2a8a8f75b76
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, IMiniportWaveCyclicStream::NormalizePhysicalPosition, NormalizePhysicalPosition
+ms.keywords : audmp-routines_a1b6d530-8199-4c5d-87ee-8f00d60436b0.xml, NormalizePhysicalPosition, IMiniportWaveCyclicStream::NormalizePhysicalPosition, portcls/IMiniportWaveCyclicStream::NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices], IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream, audio.iminiportwavecyclicstream_normalizephysicalposition, IMiniportWaveCyclicStream interface [Audio Devices], NormalizePhysicalPosition method, NormalizePhysicalPosition method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveCyclicStream.NormalizePhysicalPosition
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -59,7 +63,7 @@ Pointer to a caller-allocated variable that contains either the physical positio
 
 ## Remarks
 
-<i>PhysicalPosition</i> is both an input and an output parameter. Given a physical position based on the actual number of bytes transferred, <code>NormalizePhysicalPosition</code> converts the position to a time-based value of 100-nanosecond units.</p>
+<i>PhysicalPosition</i> is both an input and an output parameter. Given a physical position based on the actual number of bytes transferred, <code>NormalizePhysicalPosition</code> converts the position to a time-based value of 100-nanosecond units.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -7,8 +7,8 @@ old-location : netvista\rilcloseuicclogicalchannelgroupparams_2.htm
 old-project : netvista
 ms.assetid : 89d50918-2cd2-4889-aec4-fc9e2875855a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilcloseuicclogicalchannelgroupparams_2, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCLOSEUICCLOGICALCHANNELGROUPPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS, RILCLOSEUICCLOGICALCHANNELGROUPPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILCLOSEUICCLOGICALCHANNELGROUPPARAMS, *LPRILCLOSEUICCLOGICALCHANNELGROUPPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELGROUPPARAMS {
 
 ## Members
 
-        
-            `dwChannelGroup`
 
-            
-        
-            `dwSlotIndex`
+`dwChannelGroup`
 
-            
+
+
+`dwSlotIndex`
+
+
 
 
 ## Requirements

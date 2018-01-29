@@ -7,8 +7,8 @@ old-location : image\wiasgetimageinformation.htm
 old-project : image
 ms.assetid : 457c4b98-313d-4b31-aa6c-fb62fea6fc7d
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : wiasGetImageInformation
+ms.date : 1/18/2018
+ms.keywords : wiasFncs_6603ae74-b0b9-48f4-9fa9-83cdf3edc1d6.xml, wiasGetImageInformation, wiamdef/wiasGetImageInformation, image.wiasgetimageinformation, wiasGetImageInformation function [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : wiasGetImageInformation
-req.alt-loc : Wiaservc.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wiaservc.lib
 req.dll : Wiaservc.dll
 req.irql : 
-req.typenames : "*PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product : Windows 10 or later.
 ---
 
@@ -58,7 +62,6 @@ Pointer to a WIA item context.
 `lFlags`
 
 Specifies operational flags. Currently, only the following flag is defined:
-
 <table>
 <tr>
 <th>Flag</th>
@@ -107,13 +110,10 @@ If WIAS_INIT_CONTEXT is specified in the <i>lFlags</i> parameter, the MINIDRV_TR
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasGetImageInformation function%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasGetImageInformation function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f7cadf78-c908-4034-889d-b5c7d0ffdaad
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_CREATECONTEXTFLAGS, DXGK_CREATECONTEXTFLAGS
+ms.keywords : d3dkmddi/DXGK_CREATECONTEXTFLAGS, DXGK_CREATECONTEXTFLAGS, _DXGK_CREATECONTEXTFLAGS, display.dxgk_createcontextflags, DmStructs_19418464-77f9-407f-8b04-c6a35561069b.xml, DXGK_CREATECONTEXTFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_CREATECONTEXTFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_CREATECONTEXTFLAGS
 ---
 
@@ -65,16 +69,12 @@ typedef struct _DXGK_CREATECONTEXTFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createcontext.md">DXGKARG_CREATECONTEXT</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createcontext.md">DXGKARG_CREATECONTEXT</a>
+
  
 
  

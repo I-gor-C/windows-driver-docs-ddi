@@ -7,8 +7,8 @@ old-location : print\oemstretchblt.htm
 old-project : print
 ms.assetid : 5a533a68-6bdb-45dc-b5d3-04fa8d3e7129
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : OEMStretchBlt
+ms.date : 1/18/2018
+ms.keywords : OEMStretchBlt function [Print Devices], printoem/OEMStretchBlt, OEMStretchBlt, print.oemstretchblt, print_unidrv-pscript_rendering_cbbd51bd-2201-4fd4-9b3e-1e86f3962be8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OEMStretchBlt
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STDVARIABLEINDEX
 req.product : Windows 10 or later.
 ---

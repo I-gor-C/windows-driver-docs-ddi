@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0a88cbb6-66be-4ef7-93da-27d7ce169779
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::CreateDeviceInterface, CreateDeviceInterface
+ms.keywords : IWDFDevice, wudfddi/IWDFDevice::CreateDeviceInterface, CreateDeviceInterface method, IWDFDevice interface, CreateDeviceInterface method, CreateDeviceInterface, wdf.iwdfdevice_createdeviceinterface, IWDFDevice::CreateDeviceInterface, UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, CreateDeviceInterface method, IWDFDevice interface, umdf.iwdfdevice_createdeviceinterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.CreateDeviceInterface
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -73,8 +77,6 @@ If <b>CreateDeviceInterface</b> succeeds, the initial state of the interface is 
 
 For more information about device interfaces, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces-in-umdf-drivers">Using Device Interfaces in UMDF-based Drivers</a>.
 
-The following code example shows how to create a device interface instance. In this example, the driver explicitly calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557006">IWDFDevice::AssignDeviceInterfaceState</a> to enable the interface.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,14 +91,10 @@ The following code example shows how to create a device interface instance. In t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557006">IWDFDevice::AssignDeviceInterfaceState</a>
-</dt>
-</dl>
+
  
 
  

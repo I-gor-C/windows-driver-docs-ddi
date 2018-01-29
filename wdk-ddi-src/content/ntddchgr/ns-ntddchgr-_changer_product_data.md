@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 18e5b394-b0ea-481c-b634-83a2ebec4784
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CHANGER_PRODUCT_DATA, *PCHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA
+ms.keywords : storage.changer_product_data, CHANGER_PRODUCT_DATA structure [Storage Devices], structs-changer_10598085-7fbc-40f9-a04c-ca8973faace7.xml, _CHANGER_PRODUCT_DATA, *PCHANGER_PRODUCT_DATA, ntddchgr/CHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA, PCHANGER_PRODUCT_DATA, ntddchgr/PCHANGER_PRODUCT_DATA, PCHANGER_PRODUCT_DATA structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CHANGER_PRODUCT_DATA
-req.alt-loc : ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _CHANGER_PRODUCT_DATA {
 
 ## Members
 
-        
-            `DeviceType`
 
-            Specifies the device type of the changer. This member must be MEDIUM_CHANGER.
-        
-            `ProductId`
+`DeviceType`
 
-            Specifies the product identification as defined by the vendor.
-        
-            `Revision`
+Specifies the device type of the changer. This member must be MEDIUM_CHANGER.
 
-            Specifies the product revision as defined by the vendor.
-        
-            `SerialNumber`
+`ProductId`
 
-            Specifies the value defined by the vendor to identify this device. Serial numbers are unique for all changers of a given type, but are not necessarily unique across vendor and product lines. For a SCSI changer, this value might be from Vital Product Data. If <b>SerialNumber</b> is not unique, the miniclass driver should not set the CHANGER_SERIAL_NUMBER_VALID flag in the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a> structure.
-        
-            `VendorId`
+Specifies the product identification as defined by the vendor.
 
-            Specifies the name of the device manufacturer.
+`Revision`
+
+Specifies the product revision as defined by the vendor.
+
+`SerialNumber`
+
+Specifies the value defined by the vendor to identify this device. Serial numbers are unique for all changers of a given type, but are not necessarily unique across vendor and product lines. For a SCSI changer, this value might be from Vital Product Data. If <b>SerialNumber</b> is not unique, the miniclass driver should not set the CHANGER_SERIAL_NUMBER_VALID flag in the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a> structure.
+
+`VendorId`
+
+Specifies the name of the device manufacturer.
 
 
 ## Requirements
@@ -80,19 +84,14 @@ typedef struct _CHANGER_PRODUCT_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | ntddchgr.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_product_data.md">IOCTL_CHANGER_GET_PRODUCT_DATA</a>
-</dt>
-<dt>
 <a href="..\mcd\nf-mcd-changergetproductdata.md">ChangerGetProductData</a>
-</dt>
-<dt>
+
+<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_product_data.md">IOCTL_CHANGER_GET_PRODUCT_DATA</a>
+
 <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

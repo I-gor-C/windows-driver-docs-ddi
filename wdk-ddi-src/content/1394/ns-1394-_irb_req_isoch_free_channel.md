@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 949D165B-1F42-40EA-B050-38847E14B968
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IRB_REQ_ISOCH_FREE_CHANNEL, IRB_REQ_ISOCH_FREE_CHANNEL
+ms.keywords : _IRB_REQ_ISOCH_FREE_CHANNEL, IRB_REQ_ISOCH_FREE_CHANNEL structure [Buses], IEEE.irb_req_isoch_free_channel, IRB_REQ_ISOCH_FREE_CHANNEL, 1394/IRB_REQ_ISOCH_FREE_CHANNEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRB_REQ_ISOCH_FREE_CHANNEL
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IRB_REQ_ISOCH_FREE_CHANNEL
 ---
 
@@ -46,13 +50,13 @@ typedef struct _IRB_REQ_ISOCH_FREE_CHANNEL {
 
 ## Members
 
-        
-            `nChannel`
 
-            Specifies which allocated channel to release.
+`nChannel`
 
-    ## Remarks
-        If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous channel is returned to the pool of available channels.</p>
+Specifies which allocated channel to release.
+
+## Remarks
+If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS, and the isochronous channel is returned to the pool of available channels.
 
 ## Requirements
 | &nbsp; | &nbsp; |

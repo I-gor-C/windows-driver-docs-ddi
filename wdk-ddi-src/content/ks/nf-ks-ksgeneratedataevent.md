@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3ba49134-e144-4212-9ef7-e16b9d5f90ea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGenerateDataEvent
+ms.keywords : ks/KsGenerateDataEvent, stream.ksgeneratedataevent, ksfunc_4e7efb50-d6c2-45b5-9b44-5c3d48e91933.xml, KsGenerateDataEvent function [Streaming Media Devices], KsGenerateDataEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGenerateDataEvent
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -87,11 +91,8 @@ This function is specifically for events that pass data back through a callback 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-ksbuffer_item.md">KSBUFFER_ITEM</a>
-</dt>
-</dl>
+
  
 
  

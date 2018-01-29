@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c2037d77-8745-4307-ac12-54f62f20c2d9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DEVICERESET_STATE, D3DKMT_DEVICERESET_STATE
+ms.keywords : D3DKMT_DEVICERESET_STATE, display.d3dkmt_devicereset_state, OpenGL_Structs_03e42382-c472-4f0b-9183-a1b6630f64cf.xml, D3DKMT_DEVICERESET_STATE structure [Display Devices], d3dkmthk/D3DKMT_DEVICERESET_STATE, _D3DKMT_DEVICERESET_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DEVICERESET_STATE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DEVICERESET_STATE
 ---
 
@@ -62,13 +66,10 @@ typedef struct _D3DKMT_DEVICERESET_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 518cd3bb-86a8-4960-b140-fabb78fa3519
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_BUS_INFORMATION_LEVEL_1, *PUSB_BUS_INFORMATION_LEVEL_1, USB_BUS_INFORMATION_LEVEL_1
+ms.keywords : usbstrct_44c7c910-aa13-492b-b81e-79faa501f1f9.xml, usbbusif/PUSB_BUS_INFORMATION_LEVEL_1, PUSB_BUS_INFORMATION_LEVEL_1 structure pointer [Buses], buses.usb_bus_information_level_1, _USB_BUS_INFORMATION_LEVEL_1, usbbusif/USB_BUS_INFORMATION_LEVEL_1, USB_BUS_INFORMATION_LEVEL_1, USB_BUS_INFORMATION_LEVEL_1 structure [Buses], *PUSB_BUS_INFORMATION_LEVEL_1, PUSB_BUS_INFORMATION_LEVEL_1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_BUS_INFORMATION_LEVEL_1
-req.alt-loc : usbbusif.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUSB_BUS_INFORMATION_LEVEL_1, USB_BUS_INFORMATION_LEVEL_1"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USB_BUS_INFORMATION_LEVEL_1, *PUSB_BUS_INFORMATION_LEVEL_1
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _USB_BUS_INFORMATION_LEVEL_1 {
 
 ## Members
 
-        
-            `ConsumedBandwidth`
 
-            Specifies the mean bandwidth already in use, in bits per second.
-        
-            `ControllerNameLength`
+`ConsumedBandwidth`
 
-            Specifies the length of symbolic name for the host controller, in Unicode.
-        
-            `ControllerNameUnicodeString`
+Specifies the mean bandwidth already in use, in bits per second.
 
-            Specifies the symbolic name for the host controller, in Unicode.
-        
-            `TotalBandwidth`
+`ControllerNameLength`
 
-            Specifies the total bandwidth, in bits per second, available on the bus.
+Specifies the length of symbolic name for the host controller, in Unicode.
 
-    ## Remarks
-        Caller must set the <i>Level</i> parameter of the <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a> routine to 1. 
+`ControllerNameUnicodeString`
+
+Specifies the symbolic name for the host controller, in Unicode.
+
+`TotalBandwidth`
+
+Specifies the total bandwidth, in bits per second, available on the bus.
+
+## Remarks
+Caller must set the <i>Level</i> parameter of the <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a> routine to 1. 
 
 For more information about how to obtain the proper level of USB interface, see <a href="https://msdn.microsoft.com/1b571ee0-d47f-40b6-8beb-d57b49ae3ac8">USB Routines</a>.
 
@@ -80,16 +84,12 @@ For more information about how to obtain the proper level of USB interface, see 
 | **Minimum UMDF version** |  |
 | **Header** | usbbusif.h (include Usbbusif.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

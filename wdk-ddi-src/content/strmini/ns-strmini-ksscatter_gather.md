@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 10AFDC4B-75E5-4E88-A614-60043848C570
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSSCATTER_GATHER, *PKSSCATTER_GATHER, KSSCATTER_GATHER
+ms.keywords : PKSSCATTER_GATHER, PKSSCATTER_GATHER structure pointer [Streaming Media Devices], strmini/PKSSCATTER_GATHER, *PKSSCATTER_GATHER, KSSCATTER_GATHER structure [Streaming Media Devices], KSSCATTER_GATHER, stream.ksscatter_gather, strmini/KSSCATTER_GATHER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSSCATTER_GATHER
-req.alt-loc : Strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSSCATTER_GATHER, KSSCATTER_GATHER"
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct {
 
 ## Members
 
-        
-            `Length`
 
-            
-        
-            `PhysicalAddress`
+`Length`
 
-            
+
+
+`PhysicalAddress`
+
+
 
 
 ## Requirements

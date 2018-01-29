@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0E70F621-03CD-4593-88C7-DF6F2ADC902A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
+ms.keywords : d3dkmddi/DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, display.dxgk_buildpagingbuffer_notifyresidency, DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure [Display Devices], DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 ---
 
@@ -51,17 +55,17 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY {
 
 ## Members
 
-        
-            `hAllocation`
 
-            The kernel mode driver handle returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>.
-        
-            `PhysicalAddress`
+`hAllocation`
 
-            The physical address of the allocation. The physical address (0, 0) is invalid and is used when the allocation is being evicted.
+The kernel mode driver handle returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>.
 
-    ## Remarks
-        The paging operations is issued only for allocations, for which the kernel mode driver sets the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>::<b>ExplicitResidencyNotification</b> and <b>AccessedPhysically</b> flags.
+`PhysicalAddress`
+
+The physical address of the allocation. The physical address (0, 0) is invalid and is used when the allocation is being evicted.
+
+## Remarks
+The paging operations is issued only for allocations, for which the kernel mode driver sets the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>::<b>ExplicitResidencyNotification</b> and <b>AccessedPhysically</b> flags.
 
 The operation is issued after <i>FillVirtual</i> or <i>TransferVirtual</i> operations when the allocation is committed to a memory segment (<b>Resident</b> == 1). Note that the previous paging operations might not yet be finished by graphics processing unit (GPU).
 
@@ -78,16 +82,12 @@ Note that the <i>NotifyResidency</i> operation will be issued only once during a
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-</dl>
+
  
 
  

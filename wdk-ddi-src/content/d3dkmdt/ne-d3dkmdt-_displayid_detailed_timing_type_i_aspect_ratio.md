@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2641a446-1890-4b7d-ac28-c72338207f87
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO,
+ms.keywords : _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO, DIDDT1_AspectRatio_16x9, DIDDT1_AspectRatio_5x4, DmEnums_234cb76b-4b56-4ae4-b2b4-2eaa56cef4a9.xml, DIDDT1_AspectRatio_15x9, d3dkmdt/DIDDT1_AspectRatio_1x1, DIDDT1_AspectRatio_4x3, d3dkmdt/DIDDT1_AspectRatio_4x3, d3dkmdt/DIDDT1_AspectRatio_15x9, _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO enumeration [Display Devices], DIDDT1_AspectRatio_1x1, d3dkmdt/DIDDT1_AspectRatio_16x9, display.displayid_detailed_timing_type_i_aspect_ratio, d3dkmdt/_DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO, DIDDT1_AspectRatio_16x10, d3dkmdt/DIDDT1_AspectRatio_16x10, d3dkmdt/DIDDT1_AspectRatio_5x4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

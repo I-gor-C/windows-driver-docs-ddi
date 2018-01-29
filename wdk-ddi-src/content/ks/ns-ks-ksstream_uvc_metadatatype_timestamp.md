@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FDA0CD47-36D9-4E64-9377-F419A7D788A3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSSTREAM_UVC_METADATATYPE_TIMESTAMP, KSSTREAM_UVC_METADATATYPE_TIMESTAMP, *PKSSTREAM_UVC_METADATATYPE_TIMESTAMP
+ms.keywords : stream.ksstream_uvc_metadatatype_timestamp, ks/KSSTREAM_UVC_METADATATYPE_TIMESTAMP, KSSTREAM_UVC_METADATATYPE_TIMESTAMP structure [Streaming Media Devices], PKSSTREAM_UVC_METADATATYPE_TIMESTAMP, KSSTREAM_UVC_METADATATYPE_TIMESTAMP, ks/PKSSTREAM_UVC_METADATATYPE_TIMESTAMP, PKSSTREAM_UVC_METADATATYPE_TIMESTAMP structure pointer [Streaming Media Devices], *PKSSTREAM_UVC_METADATATYPE_TIMESTAMP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSSTREAM_UVC_METADATATYPE_TIMESTAMP
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSSTREAM_UVC_METADATATYPE_TIMESTAMP, *PKSSTREAM_UVC_METADATATYPE_TIMESTAMP
 ---
 
@@ -56,22 +60,22 @@ typedef struct {
 
 ## Members
 
-        
-            `PresentationTimeStamp`
 
-            Specifies the presentation timestamp.
-        
-            `Reserved0`
+`PresentationTimeStamp`
 
-            Reserved.
-        
-            `Reserved1`
+Specifies the presentation timestamp.
 
-            Reserved.
-        
-            `SourceClockReference`
+`Reserved0`
 
-            Specifies the source clock reference.
+Reserved.
+
+`Reserved1`
+
+Reserved.
+
+`SourceClockReference`
+
+Specifies the source clock reference.
 
 
 ## Requirements

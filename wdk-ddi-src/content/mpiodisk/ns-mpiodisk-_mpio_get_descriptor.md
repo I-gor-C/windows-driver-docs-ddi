@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cabd2a6d-20d0-4499-8494-7ad746f2d915
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MPIO_GET_DESCRIPTOR, *PMPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR
+ms.keywords : structs-scsibus_4d648295-24f6-44c1-a0a9-8a46aeada604.xml, PMPIO_GET_DESCRIPTOR, *PMPIO_GET_DESCRIPTOR, storage.mpio_get_descriptor, PMPIO_GET_DESCRIPTOR structure pointer [Storage Devices], mpiodisk/MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR structure [Storage Devices], _MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR, mpiodisk/PMPIO_GET_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MPIO_GET_DESCRIPTOR
-req.alt-loc : mpiodisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR"
 ---
 
@@ -48,18 +52,18 @@ typedef struct _MPIO_GET_DESCRIPTOR {
 
 ## Members
 
-        
-            `DeviceName`
 
-            A string field of maximum-length 63 characters that returns the device name that is created by MPIO for the LUN.
-        
-            `NumberPdos`
+`DeviceName`
 
-            An unsigned 32-bitfield that returns the number of real instances of the pseudo-LUN through its various paths.
-        
-            `PdoInformation`
+A string field of maximum-length 63 characters that returns the device name that is created by MPIO for the LUN.
 
-            A field that returns an array of PDO_INFORMATION structures, where the number of elements is given by <i>NumberPdos</i>, and each element represents an instance of the LUN that is exposed through a particular path.
+`NumberPdos`
+
+An unsigned 32-bitfield that returns the number of real instances of the pseudo-LUN through its various paths.
+
+`PdoInformation`
+
+A field that returns an array of PDO_INFORMATION structures, where the number of elements is given by <i>NumberPdos</i>, and each element represents an instance of the LUN that is exposed through a particular path.
 
 
 ## Requirements

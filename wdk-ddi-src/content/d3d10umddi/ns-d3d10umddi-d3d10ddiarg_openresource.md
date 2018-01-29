@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : acd1a957-9a1f-48a5-849b-e0cb9f8e05b6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_OPENRESOURCE, D3D10DDIARG_OPENRESOURCE
+ms.keywords : UMDisplayDriver_Dx10param_Structs_bb0f1769-190c-4500-8efa-9ed3eab771f7.xml, D3D10DDIARG_OPENRESOURCE, d3d10umddi/D3D10DDIARG_OPENRESOURCE, D3D10DDIARG_OPENRESOURCE structure [Display Devices], display.d3d10ddiarg_openresource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10DDIARG_OPENRESOURCE
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10DDIARG_OPENRESOURCE
 ---
 
@@ -57,30 +61,32 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 
 ## Members
 
-        
-            `hKMResource`
 
-            [in] A D3D10DDI_HKMRESOURCE data type that represents a kernel-mode handle to the resource that is associated with the allocations. 
+`hKMResource`
+
+[in] A D3D10DDI_HKMRESOURCE data type that represents a kernel-mode handle to the resource that is associated with the allocations. 
 
 This kernel-mode handle represents an existing shared resource that was previously created through a call to the user-mode display driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a> function. 
 
 The user-mode display driver can insert the kernel-mode resource handle in the command stream for subsequent use by the display miniport driver.
-        
-            `NumAllocations`
 
-            [in] The number of elements in the array that the <b>pOpenAllocationInfo</b> member specifies. <b>NumAllocations</b> represents the number of allocations to open.
-        
-            `pOpenAllocationInfo`
+`NumAllocations`
 
-            [in] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
-        
-            `pPrivateDriverData`
+[in] The number of elements in the array that the <b>pOpenAllocationInfo</b> member specifies. <b>NumAllocations</b> represents the number of allocations to open.
 
-            [in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structure.
-        
-            `PrivateDriverDataSize`
+`pOpenAllocationInfo`
 
-            [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
+
+[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
+
+`pPrivateDriverData`
+
+[in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structure.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -91,16 +97,12 @@ The user-mode display driver can insert the kernel-mode resource handle in the c
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
-</dt>
-</dl>
+
  
 
  

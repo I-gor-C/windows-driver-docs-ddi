@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e31b2b6a-3721-472a-8044-6516a8419ad3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.issuequery, IssueQuery callback function [Display Devices], IssueQuery, PFND3DDDI_ISSUEQUERY, PFND3DDDI_ISSUEQUERY, d3dumddi/IssueQuery, UserModeDisplayDriver_Functions_59755967-2a97-4c5c-9210-c4e85cdcdd38.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IssueQuery
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>IssueQuery</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The query is successfully processed.
+</dl>
+</td>
+<td width="60%">
+The query is successfully processed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>IssueQuery</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>IssueQuery</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,23 +117,16 @@ If the call to <i>IssueQuery</i> requires the driver to return data, the driver 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_issuequery.md">D3DDDIARG_ISSUEQUERY</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getquerydata.md">GetQueryData</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getquerydata.md">GetQueryData</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a>
+
  
 
  

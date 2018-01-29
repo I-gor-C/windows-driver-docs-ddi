@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2A441CEE-C138-4FF0-8865-04ABFB0F029C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
+ms.keywords : display.d3dddicb_waitforsynchronizationobjectfromgpu, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices], D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
 ---
 
@@ -53,18 +57,18 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU {
 
 ## Members
 
-        
-            `hContext`
 
-            [in] A kernel-mode handle to the context stream in which a wait for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted.
-        
-            `ObjectCount`
+`hContext`
 
-            [in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
-        
-            `ObjectHandleArray`
+[in] A kernel-mode handle to the context stream in which a wait for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted.
 
-            [in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for.
+`ObjectCount`
+
+[in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
+
+`ObjectHandleArray`
+
+[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromgpucb.md">pfnWaitForSynchronizationObjectFromGpuCb</a>
-</dt>
-</dl>
+
  
 
  

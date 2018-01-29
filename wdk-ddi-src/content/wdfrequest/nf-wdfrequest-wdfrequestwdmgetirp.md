@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 414950c6-b082-4ea9-bba4-f3d12b4d2a9e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestWdmGetIrp
+ms.keywords : PFN_WDFREQUESTWDMGETIRP, wdf.wdfrequestwdmgetirp, WdfRequestWdmGetIrp method, DFRequestObjectRef_2f8bba17-817e-4edb-98f2-bd56eb3e34ac.xml, kmdf.wdfrequestwdmgetirp, WdfRequestWdmGetIrp, wdfrequest/WdfRequestWdmGetIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfRequestWdmGetIrp
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -68,8 +72,6 @@ The driver must not access a request's IRP structure after <a href="https://docs
 
 For more information about <b>WdfRequestWdmGetIrp</b>, see <a href="https://msdn.microsoft.com/a686ea00-6987-480a-a4ce-892e1efbed87">Obtaining Information About an I/O Request</a>.
 
-The following code example is part of an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_device_control.md">EvtIoDeviceControl</a> callback function that obtains the WDM IRP that is associated with an I/O request and then calls <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a> to obtain the next-lower driver's I/O stack location.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -84,11 +86,8 @@ The following code example is part of an <a href="..\wdfio\nc-wdfio-evt_wdf_io_q
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
-</dt>
-</dl>
+
  
 
  

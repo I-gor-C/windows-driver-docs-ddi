@@ -7,8 +7,8 @@ old-location : pos\posprofiletype.htm
 old-project : pos
 ms.assetid : b0ef1592-f3f3-4ca1-83f8-dc7cb76cda36
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosProfileType, PosProfileType
+ms.date : 1/18/2018
+ms.keywords : pos.posprofiletype, PosProfileType, _PosProfileType, PosProfileType structure, pointofservicedriverinterface/PosProfileType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosProfileType
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosProfileType
 ---
 
@@ -48,8 +52,16 @@ typedef struct _PosProfileType {
 ## Members
 
 
-    ## Remarks
-        The buffer of profile <i>PosStringType</i> strings follows this structure in memory.</p>
+`BufferSize`
+
+
+
+`ProfileCount`
+
+
+
+## Remarks
+The buffer of profile <i>PosStringType</i> strings follows this structure in memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |

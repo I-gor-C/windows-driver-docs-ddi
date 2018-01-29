@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : 22301feb-2c6b-43ac-b7e8-c10f2e8e4d62
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : SDBUS_PROPERTY, SDBUS_PROPERTY
+ms.keywords : SDP_WRITE_PROTECTED, SDBUS_PROPERTY, SDP_MEDIA_STATE, ntddsd/SDP_FUNCTION_INT_ENABLE, SDP_FN0_BLOCK_LENGTH, ntddsd/SDP_BUS_DRIVER_VERSION, ntddsd/SDP_BUS_INTERFACE_CONTROL, SDP_BUS_CLOCK, SDP_FUNCTION_TYPE, ntddsd/SDP_BUS_WIDTH, SDP_FUNCTION_NUMBER, SDP_BUS_INTERFACE_CONTROL, SDP_BUS_DRIVER_VERSION, ntddsd/SDP_HOST_BLOCK_LENGTH, SDP_FUNCTION_BLOCK_LENGTH, ntddsd/SDP_WRITE_PROTECTED, sd-structs_257d86c6-0dd9-4f44-b85d-61647d2d8e8b.xml, SDP_MEDIA_CHANGECOUNT, ntddsd/SDP_MEDIA_CHANGECOUNT, ntddsd/SDP_FUNCTION_TYPE, ntddsd/SDP_FUNCTION_NUMBER, SDBUS_PROPERTY enumeration [Buses], SD.sdbus_property, ntddsd/SDP_FUNCTION_BLOCK_LENGTH, ntddsd/SDP_MEDIA_STATE, ntddsd/SDP_FN0_BLOCK_LENGTH, ntddsd/SDP_BUS_CLOCK, SDP_BUS_WIDTH, ntddsd/SDBUS_PROPERTY, SDP_FUNCTION_INT_ENABLE, SDP_HOST_BLOCK_LENGTH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SDBUS_PROPERTY
-req.alt-loc : ntddsd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SDBUS_PROPERTY
 ---
 
@@ -81,6 +85,11 @@ typedef enum  {
 </tr>
 
 <tr>
+<td>SDP_CHAINED_MDL_SUPPORTED</td>
+<td></td>
+</tr>
+
+<tr>
 <td>SDP_FN0_BLOCK_LENGTH</td>
 <td>Indicates that the operation applies to the SDIO function zero block length property. This property is shared by all functions of the SDIO card. This property is only supported in version 2.0 or later of the driver.</td>
 </tr>
@@ -106,8 +115,18 @@ typedef enum  {
 </tr>
 
 <tr>
+<td>SDP_HIGH_CAPACITY_SUPPORTED</td>
+<td></td>
+</tr>
+
+<tr>
 <td>SDP_HOST_BLOCK_LENGTH</td>
 <td>Indicates that the operation applies to the host block length property, which is the maximum block length that is supported by the controller. This property is read-only. This property is only supported in version 2.0 or later of the driver.</td>
+</tr>
+
+<tr>
+<td>SDP_HPI_SUPPORTED</td>
+<td></td>
 </tr>
 
 <tr>
@@ -121,6 +140,16 @@ typedef enum  {
 </tr>
 
 <tr>
+<td>SDP_SET_CARD_INTERRUPT_FORWARD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>SDP_SET_WAKE_INTERRUPT_FORWARD</td>
+<td></td>
+</tr>
+
+<tr>
 <td>SDP_WRITE_PROTECTED</td>
 <td>Indicates that the operation applies to the write-protected property and the state of the WriteProtect switch on the SD card. This property is read-only.</td>
 </tr>
@@ -129,12 +158,20 @@ typedef enum  {
 ## Remarks
 
 To read or set a property on an SD device, a device driver must do the following:
-
+<ol>
+<li>
 Set the <b>RequestFunction</b> member of <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a> to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a> enumeration value of either SDRF_GET_PROPERTY or SDRF_SET_PROPERTY.
 
+</li>
+<li>
 Set the <b>Property</b> member of SDBUS_REQUEST_PACKET to the SDBUS_PROPERTY enumeration value that specifies the property to read or change.
 
+</li>
+<li>
 Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACKET structure to either <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>.
+
+</li>
+</ol>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -146,20 +183,14 @@ Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACK
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 3AB8CECA-C5FD-4B0A-A85B-B6E90FA22B04
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
+ms.keywords : sensors.ioctl_gnss_listen_geofences_trackingstatus, IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS control code [Sensor Devices], IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS, gnssdriver/IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS IOCTL
 The <b>IOCTL_GNSS_LISTEN_GEOFENCES_TRACKINGSTATUS</b> control code is used to receive geofence tracking status from the driver.
+<div class="alert"><b>Note</b>  Applies to GNSS DDI version 2 and later.</div><div> </div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -63,11 +68,10 @@ Set to sizeof(GNSS_EVENT).
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code.
 
-    ## Remarks
-        The GNSS adapter keeps a pending request all the time.
+## Remarks
+<h3><a id="GNSS_adapter_notes"></a><a id="gnss_adapter_notes"></a><a id="GNSS_ADAPTER_NOTES"></a>GNSS adapter notes</h3>The GNSS adapter keeps a pending request all the time.
 
 When the driver completes the I/O call, the adapter issues another IOCTL to receive the next status change notification.
 
@@ -80,8 +84,7 @@ During this time, any changes in the geofence set (for example, addition of new 
 The application processor-based geofence engine stays active for as long as the GNSS engine remains in the low-signal condition. Subsequently, when the GNSS engine is able to track geofences again  by communicating a success tracking status alert through this IOCTL, the HLOS gracefully transfer full control back to the GNSS engine through the following steps.
 
 On receipt of this success tracking status alert, the HLOS brings down it’s application processor-based geofence tracking engine, issues a <b>GNSS_ResetGeofencesTracking</b> command to the GNSS engine, and re-adds the currently active geofences together with the current entry/exit status of each geofence. This reset operation is necessary so that the GNSS engine can re-synchronize the states of all the geofences  and raise any needed geofence alert for any of them
-
-There will be a pending IOCTL all the time. Whenever there is a tracking status change the I/O operation should be completed. When geofences are initially added to the GNSS engine, the HLOS optimistically assumes that the GNSS engine is able to track the geofences. Thus initially the IOCTL should be filled only when the GNSS engine is unable to track geofences, and the tracking status is a failure code. Subsequently, the adapter expects the IOCTL to be filled when the tracking status changes to success.
+<h3><a id="GNSS_driver_notes"></a><a id="gnss_driver_notes"></a><a id="GNSS_DRIVER_NOTES"></a>GNSS driver notes</h3>There will be a pending IOCTL all the time. Whenever there is a tracking status change the I/O operation should be completed. When geofences are initially added to the GNSS engine, the HLOS optimistically assumes that the GNSS engine is able to track the geofences. Thus initially the IOCTL should be filled only when the GNSS engine is unable to track geofences, and the tracking status is a failure code. Subsequently, the adapter expects the IOCTL to be filled when the tracking status changes to success.
 
 A failure tracking status implies that the GNSS engine is unable to reliably track geofences due to bad signal conditions or other transient reasons. This status applies to the overall ability to reliably track geofences, as opposed to specific to one or more geofence. Thus a failure status must be reported even when the GNSS engine can track most of the fences, but cannot do so for a smaller number.
 
@@ -104,22 +107,16 @@ Additionally, if geofence tracking is explicitly reset by the HLOS or the HLOS d
 | **Header** | gnssdriver.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
-</dt>
-</dl>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+
  
 
  

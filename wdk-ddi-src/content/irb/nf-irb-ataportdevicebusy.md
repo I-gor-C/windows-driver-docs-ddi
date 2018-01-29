@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 919f30b1-025d-4526-a1f6-2d14c482e474
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortDeviceBusy
+ms.keywords : atartns_22d36e2a-804e-4d24-910e-051e6dccdeaa.xml, AtaPortDeviceBusy routine [Storage Devices], AtaPortDeviceBusy, storage.ataportdevicebusy, irb/AtaPortDeviceBusy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortDeviceBusy
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortDeviceBusy function
-The <b>AtaPortDeviceBusy</b> routine informs the port driver that the indicated device is busy.
+The <b>AtaPortDeviceBusy</b> routine informs the port driver that the indicated device is busy. 
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -94,14 +99,10 @@ The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
-</dt>
-<dt>
 <a href="..\irb\nf-irb-ataportdeviceready.md">AtaPortDeviceReady</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
+
  
 
  

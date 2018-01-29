@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 2cf3564e-10aa-49bb-9b94-abd987870196
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.pnegotiate_ieee_mode, PNEGOTIATE_IEEE_MODE function pointer [Parallel Ports], PNEGOTIATE_IEEE_MODE, parallel/PNEGOTIATE_IEEE_MODE, cisspd_0bea0bb3-2a7c-4cf4-938d-8bc67962a222.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PNEGOTIATE_IEEE_MODE
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -63,15 +67,45 @@ NTSTATUS PnegotiateIeeeMode(
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESSFUL</b></dt>
-</dl>The IEEE mode was successfully negotiated.
+</dl>
+</td>
+<td width="60%">
+The IEEE mode was successfully negotiated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DEVICE_PROTOCOL_ERROR</b></dt>
-</dl>An IEEE mode is already set on the device.
+</dl>
+</td>
+<td width="60%">
+An IEEE mode is already set on the device.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_<i>Xxx</i></b></dt>
-</dl>An internal operation resulted in an NTSTATUS error.
+</dl>
+</td>
+<td width="60%">
+An internal operation resulted in an NTSTATUS error.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,29 +127,20 @@ The PNEGOTIATE_IEEE_MODE callback runs in the caller's thread at the IRQL of the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
-</dt>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
-</dt>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_par_get_default_modes.md">IOCTL_PAR_GET_DEFAULT_MODES</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pdetermine_ieee_modes.md">PDETERMINE_IEEE_MODES</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pparallel_ieee_fwd_to_rev.md">PPARALLEL_IEEE_FWD_TO_REV</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a>
-</dt>
-<dt>
 <a href="..\parallel\nc-parallel-pterminate_ieee_mode.md">PTERMINATE_IEEE_MODE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_par_get_default_modes.md">IOCTL_PAR_GET_DEFAULT_MODES</a>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
+
+<a href="..\parallel\nc-parallel-pparallel_ieee_fwd_to_rev.md">PPARALLEL_IEEE_FWD_TO_REV</a>
+
+<a href="..\parallel\nc-parallel-pdetermine_ieee_modes.md">PDETERMINE_IEEE_MODES</a>
+
  
 
  

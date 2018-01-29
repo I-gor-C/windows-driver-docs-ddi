@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : bdf44009-4898-4890-9441-918e1647566d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_parallel_port_free, IOCTL_INTERNAL_PARALLEL_PORT_FREE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_PORT_FREE, parallel/IOCTL_INTERNAL_PARALLEL_PORT_FREE, cisspd_ec1947dc-7124-445b-8b4a-759d6cba8225.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_PARALLEL_PORT_FREE
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,7 +65,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports.
@@ -74,16 +77,12 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_parallel_port_allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a>
-</dt>
-<dt>
 <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_parallel_port_allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a>
+
  
 
  

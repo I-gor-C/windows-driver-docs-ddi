@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 179419ee-2a99-4c03-9afb-a9bb34f3efb6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaMethodDeletePin
+ms.keywords : bdasup/BdaMethodDeletePin, bdaref_6d81ac60-26e8-4cdb-ba9c-05f73cea187d.xml, BdaMethodDeletePin function [Streaming Media Devices], BdaMethodDeletePin, stream.bdamethoddeletepin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaMethodDeletePin
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -52,7 +56,7 @@ NTSTATUS BdaMethodDeletePin(
 
 `pIrp`
 
-
+TBD
 
 `pKSMethod`
 
@@ -87,26 +91,18 @@ If a BDA minidriver must delete a pin without relying on the network provider, t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\bdasup\nf-bdasup-bdadeletepin.md">BdaDeletePin</a>
-</dt>
-<dt>
 <a href="..\bdasup\nf-bdasup-bdamethodcreatepin.md">BdaMethodCreatePin</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563415">KSMETHOD_BDA_DELETE_PIN_FACTORY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563415">KSMETHOD_BDA_DELETE_PIN_FACTORY</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
+<a href="..\bdasup\nf-bdasup-bdadeletepin.md">BdaDeletePin</a>
+
  
 
  

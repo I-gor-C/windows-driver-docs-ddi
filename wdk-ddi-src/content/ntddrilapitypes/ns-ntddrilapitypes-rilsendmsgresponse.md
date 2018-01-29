@@ -7,8 +7,8 @@ old-location : netvista\rilsendmsgresponse.htm
 old-project : netvista
 ms.assetid : 64ff0ba7-726e-49ee-bb7c-338b77458fc1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSENDMSGRESPONSE, RILSENDMSGRESPONSE, *LPRILSENDMSGRESPONSE
+ms.date : 1/18/2018
+ms.keywords : netvista.rilsendmsgresponse, *LPRILSENDMSGRESPONSE, ntddrilapitypes/RILSENDMSGRESPONSE, RILSENDMSGRESPONSE, RILSENDMSGRESPONSE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSENDMSGRESPONSE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSENDMSGRESPONSE, *LPRILSENDMSGRESPONSE
 ---
 
@@ -53,38 +57,38 @@ typedef struct _RILSENDMSGRESPONSE {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwCDMACauseCode`
+`cbSize`
 
-            
-        
-            `dwCDMAErrorClass`
 
-            
-        
-            `dwGWLRelayCode`
 
-            
-        
-            `dwGWLTransportCode`
+`dwCDMACauseCode`
 
-            
-        
-            `dwMsgID`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `hrReturn`
+`dwCDMAErrorClass`
 
-            
+
+
+`dwGWLRelayCode`
+
+
+
+`dwGWLTransportCode`
+
+
+
+`dwMsgID`
+
+
+
+`dwParams`
+
+
+
+`hrReturn`
+
+
 
 
 ## Requirements

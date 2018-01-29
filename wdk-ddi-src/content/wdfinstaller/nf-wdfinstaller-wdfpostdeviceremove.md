@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f29579de-ba5d-4b7a-9aeb-558be03d7eef
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPostDeviceRemove
+ms.keywords : WdfPostDeviceRemove function, kmdf.wdfpostdeviceremove, wdfinstaller/WdfPostDeviceRemove, wdf.wdfpostdeviceremove, DFCoinstallerRef_82480a49-b7ac-4e1d-b942-93d1eb8a5c34.xml, WdfPostDeviceRemove, PFN_WDFPOSTDEVICEREMOVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfPostDeviceRemove
-req.alt-loc : N/A,N/A.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
 req.dll : 
 req.irql : 
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
 req.product : Windows 10 or later.
 ---
 
@@ -73,8 +77,6 @@ To obtain the address of the co-installer's <b>WdfPostDeviceRemove</b> function,
 
 For more information about the <b>WdfPostDeviceRemove</b> function and installers for framework-based drivers of non-PnP devices, see <a href="https://msdn.microsoft.com/99676d85-feb2-482c-a91b-cfc48be5904c">Installing a Non-PnP Driver</a>. For more information about <b>DeleteService</b>, <b>GetProcAddress</b>, and <b>LoadLibrary</b>, see the Microsoft Windows SDK documentation.
 
-For a code example that uses the <b>WdfPostDeviceRemove</b> function, see the installer for the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">NONPNP</a> sample.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,11 +91,8 @@ For a code example that uses the <b>WdfPostDeviceRemove</b> function, see the in
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceremove.md">WdfPreDeviceRemove</a>
-</dt>
-</dl>
+
  
 
  

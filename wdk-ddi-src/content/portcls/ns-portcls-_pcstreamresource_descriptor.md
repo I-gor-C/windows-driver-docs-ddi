@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 978D06FC-B5CC-409C-BE5D-CA4B53005D8C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR
+ms.keywords : "*PPCSTREAMRESOURCE_DESCRIPTOR, portcls/PCSTREAMRESOURCE_DESCRIPTOR, portcls/PPCSTREAMRESOURCE_DESCRIPTOR, audio.pcstreamresource_descriptor, PPCSTREAMRESOURCE_DESCRIPTOR structure pointer [Audio Devices], _PCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR structure [Audio Devices], PPCSTREAMRESOURCE_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCSTREAMRESOURCE_DESCRIPTOR
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR"
 ---
 
 # _PCSTREAMRESOURCE_DESCRIPTOR structure
@@ -57,29 +61,29 @@ typedef struct _PCSTREAMRESOURCE_DESCRIPTOR {
 
 ## Members
 
-        
-            `Flags`
 
-            Reserved for future use. Set to zero.
-        
-            `Pdo`
+`Flags`
 
-            The physical device object of the stack that created this resource.
-        
-            `Resource`
+Reserved for future use. Set to zero.
 
-            
-        
-            `Size`
+`Pdo`
 
-            This field is init to the size of the struct.
-        
-            `Type`
+The physical device object of the stack that created this resource.
 
-            The union of the different stream resource types.
+`Resource`
 
-    ## Remarks
-        Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it.
+
+
+`Size`
+
+This field is init to the size of the struct.
+
+`Type`
+
+The union of the different stream resource types.
+
+## Remarks
+Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,13 +93,10 @@ typedef struct _PCSTREAMRESOURCE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | portcls.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\portcls\ne-portcls-_pcstreamresourcetype.md">PcStreamResourceType</a>
-</dt>
-</dl>
+
  
 
  

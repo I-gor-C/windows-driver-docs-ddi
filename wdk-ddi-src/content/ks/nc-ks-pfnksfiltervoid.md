@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8259117b-87ef-410a-955b-6f99966574a6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminifilterreset, AVStrMiniFilterReset, AVStrMiniFilterReset routine [Streaming Media Devices], AVStrMiniFilterReset, PFNKSFILTERVOID, PFNKSFILTERVOID, ks/AVStrMiniFilterReset, avstclbk_71a3cd5d-faa7-4a7f-a341-deacfbcda051.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniFilterReset
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -86,11 +90,8 @@ This routine is optional.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
-</dt>
-</dl>
+
  
 
  

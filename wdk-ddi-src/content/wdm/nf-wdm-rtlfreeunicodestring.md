@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 505e2ab7-13c3-4cdd-90ba-a37bb38fe160
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlFreeUnicodeString
+ms.keywords : wdm/RtlFreeUnicodeString, kernel.rtlfreeunicodestring, RtlFreeUnicodeString routine [Kernel-Mode Driver Architecture], RtlFreeUnicodeString, k109_c23e6c5e-d2dd-4b88-8249-5f88ad8482ad.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlFreeUnicodeString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,14 +80,10 @@ This routine does not release the ANSI string buffer passed to <b>RtlAnsiStringT
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlupcaseunicodestring.md">RtlUpcaseUnicodeString</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
  
 
  

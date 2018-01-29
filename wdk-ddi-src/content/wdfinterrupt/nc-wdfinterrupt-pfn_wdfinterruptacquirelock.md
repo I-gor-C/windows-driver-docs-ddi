@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6a2fe0d5-bc7e-4d3e-8f47-8206fd42a36f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS
+ms.keywords : wdf.wdfinterruptacquirelock, PFN_WDFINTERRUPTACQUIRELOCK, WdfInterruptAcquireLock callback function, WdfInterruptAcquireLock, wdfinterrupt/WdfInterruptAcquireLock, DFInterruptObjectRef_9d3cd9a1-801c-437a-b1df-7e2819d1465a.xml, kmdf.wdfinterruptacquirelock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfInterruptAcquireLock
-req.alt-loc : wdfinterrupt.h
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, WdfInterruptLock, WdfInterruptLockRelease
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DIRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -99,8 +103,12 @@ For more information about handling interrupts in framework-based drivers, see <
 For passive-level interrupt objects, drivers must call <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterrupttrytoacquirelock.md">WdfInterruptTryToAcquireLock</a> instead of <b>WdfInterruptAcquireLock</b>, when running in an arbitrary thread, such as a <a href="https://msdn.microsoft.com/5C311AF5-A67A-4F97-8605-1DD16C9D7839">queue object callback function</a>. For example, the driver might call <b>WdfInterruptTryToAcquireLock</b> from <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_read.md">EvtIoRead</a>.
 
 Doing so avoids the possibility of deadlock, as described in the following scenario.
-
-This code example shows how an <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a> callback function might acquire an interrupt object's spin lock before it accesses device registers to program a DMA transfer. For a complete example of an <i>EvtProgramDma</i> callback function, see the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">PLX9x5x</a> sample driver.
+<ol>
+<li>In order to determine if its device interrupted, the function driver for an SPB peripheral device sends I/O to its bus from within its ISR, with the passive-level interrupt lock held.</li>
+<li>  The bus driver completes a second request in the same thread in which it received the above request.</li>
+<li>The completion routine of the second request sends a request to the peripheral driver.</li>
+<li>  The peripheral driver's I/O dispatch routine calls <b>WdfInterruptAcquireLock</b>, which then deadlocks attempting to acquire the interrupt object's passive lock.</li>
+</ol>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -116,32 +124,22 @@ This code example shows how an <a href="https://msdn.microsoft.com/c01b94b2-aabf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterrupttrytoacquirelock.md">WdfInterruptTryToAcquireLock</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547376">WdfInterruptReleaseLock</a>
-</dt>
-<dt>
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsynchronize.md">WdfInterruptSynchronize</a>
-</dt>
-<dt>
 <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_config.md">WDF_INTERRUPT_CONFIG</a>
-</dt>
-<dt>
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_disable.md">EvtInterruptDisable</a>
-</dt>
-<dt>
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_enable.md">EvtInterruptEnable</a>
-</dt>
-<dt>
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a>
-</dt>
-<dt>
+
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterrupttrytoacquirelock.md">WdfInterruptTryToAcquireLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547376">WdfInterruptReleaseLock</a>
+
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsynchronize.md">WdfInterruptSynchronize</a>
+
 <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md">EvtInterruptSynchronize</a>
-</dt>
-</dl>
+
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_disable.md">EvtInterruptDisable</a>
+
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a>
+
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_enable.md">EvtInterruptEnable</a>
+
  
 
  

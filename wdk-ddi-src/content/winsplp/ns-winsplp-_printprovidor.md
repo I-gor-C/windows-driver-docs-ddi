@@ -7,8 +7,8 @@ old-location : print\printprovidor.htm
 old-project : print
 ms.assetid : c030cb9d-23c0-4d0e-970f-f447e9af7528
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _PRINTPROVIDOR, PRINTPROVIDOR, *LPPRINTPROVIDOR
+ms.date : 1/18/2018
+ms.keywords : LPPRINTPROVIDOR, winsplp/PRINTPROVIDOR, PRINTPROVIDOR structure [Print Devices], PRINTPROVIDOR, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, _PRINTPROVIDOR, print.printprovidor, LPPRINTPROVIDOR structure pointer [Print Devices], *LPPRINTPROVIDOR, winsplp/LPPRINTPROVIDOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PRINTPROVIDOR
-req.alt-loc : winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,20 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PRINTPROVIDOR, *LPPRINTPROVIDOR
 req.product : Windows 10 or later.
 ---
 
 # _PRINTPROVIDOR structure
+<div class="alert"><b>Warning</b>  <p class="note">Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
 
+</div><div> </div>The PRINTPROVIDOR structure is used as a parameter to a print provider's <a href="..\winsplp\nf-winsplp-initializeprintprovidor.md">InitializePrintProvidor</a> function. All structure member values are supplied by the provider.
 
 ## Syntax
 ````
@@ -455,167 +461,186 @@ typedef struct _PRINTPROVIDOR {
 
 ## Members
 
-        
-            `fpAbortPrinter`
 
-            (Required.) Pointer to the provider's <b>AbortPrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpAddForm`
+`fpAbortPrinter`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddForm</b> function (described in the Windows SDK documentation).
-        
-            `fpAddJob`
+(Required.) Pointer to the provider's <b>AbortPrinter</b> function (described in the Windows SDK documentation).
 
-            (Required.) Pointer to the provider's <b>AddJob</b> function (described in the Windows SDK documentation).
-        
-            `fpAddMonitor`
+`fpAddForm`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddMonitor</b> function (described in the Windows SDK documentation). If the provider does not support the specified monitor, it must supply ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
-        
-            `fpAddPerMachineConnection`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddForm</b> function (described in the Windows SDK documentation).
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpAddPort`
+`fpAddJob`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPort</b> function (described in the Windows SDK documentation). If the provider does not support the specified port, it must supply ERROR_NOT_SUPPORTED to SetLastError before returning <b>FALSE</b>.
-        
-            `fpAddPortEx`
+(Required.) Pointer to the provider's <b>AddJob</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPortEx</b> function (described in the Windows SDK documentation). If the provider does not support the specified port, it must supply ERROR_NOT_SUPPORTED to SetLastError before returning <b>FALSE</b>.
-        
-            `fpAddPrinter`
+`fpAddMonitor`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpAddPrinterConnection`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddMonitor</b> function (described in the Windows SDK documentation). If the provider does not support the specified monitor, it must supply ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinterConnection</b> function (described in the Windows SDK documentation).
-        
-            `fpAddPrinterDriver`
+`fpAddPerMachineConnection`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinterDriver</b> function (described in the Windows SDK documentation). If the provider does not support the specified driver or server, it should specify ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
-        
-            `fpAddPrinterDriverEx`
+For internal use only. Must be <b>NULL</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinterDriverEx</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
-        
-            `fpAddPrinterEx`
+`fpAddPort`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpAddPrintProcessor`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPort</b> function (described in the Windows SDK documentation). If the provider does not support the specified port, it must supply ERROR_NOT_SUPPORTED to SetLastError before returning <b>FALSE</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrintProcessor</b> function (described in the Windows SDK documentation).
-        
-            `fpClosePrinter`
+`fpAddPortEx`
 
-            (Required.) Pointer to the provider's <b>ClosePrinter</b> function (described in the Windows SDK documentation). If a printer change notification object has been created, then the router calls the provider's FindClosePrinterChangeNotification function (described in the Windows SDK documentation) before calling ClosePrinter.
-        
-            `fpCloseSpoolFileHandle`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPortEx</b> function (described in the Windows SDK documentation). If the provider does not support the specified port, it must supply ERROR_NOT_SUPPORTED to SetLastError before returning <b>FALSE</b>.
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpClusterSplClose`
+`fpAddPrinter`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpClusterSplIsAlive`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinter</b> function (described in the Windows SDK documentation).
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpClusterSplOpen`
+`fpAddPrinterConnection`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpCommitSpoolData`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinterConnection</b> function (described in the Windows SDK documentation).
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpConfigurePort`
+`fpAddPrinterConnection2`
 
-            (Required.) Pointer to the provider's <b>ConfigurePort</b> function (described in the Windows SDK documentation). If the function supplies ERROR_NOT_SUPPORTED, ERROR_INVALID_NAME, or ERROR_UNKNOWN_PORT to SetLastError, the router will attempt to call another provider.
-        
-            `fpCreatePrinterIC`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpDeleteForm`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeleteForm</b> function (described in the Windows SDK documentation).
-        
-            `fpDeleteMonitor`
+`fpAddPrinterDriver`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeleteMonitor</b> function (described in the Windows SDK documentation). If the provider does not support the specified monitor, it must supply ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
-        
-            `fpDeletePerMachineConnection`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinterDriver</b> function (described in the Windows SDK documentation). If the provider does not support the specified driver or server, it should specify ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpDeletePort`
+`fpAddPrinterDriverEx`
 
-            (Required.) Pointer to the provider's <b>DeletePort</b> function (described in the Windows SDK documentation). If the provider does not support the specified port, it must supply ERROR_NOT_SUPPORTED to SetLastError before returning <b>FALSE</b>.
-        
-            `fpDeletePrinter`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrinterDriverEx</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpDeletePrinterConnection`
+`fpAddPrinterEx`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterConnection</b> function (described in the Windows SDK documentation).
-        
-            `fpDeletePrinterData`
+For internal use only. Must be <b>NULL</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterData</b> function (described in the Windows SDK documentation).
-        
-            `fpDeletePrinterDataEx`
+`fpAddPrintProcessor`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterDataEx</b> function (described in the Windows SDK documentation).
-        
-            `fpDeletePrinterDriver`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>AddPrintProcessor</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterDriver</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to <b>SetLastError</b> before returning <b>FALSE</b>.
-        
-            `fpDeletePrinterDriverEx`
+`fpCanShutdown`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's DeletePrinterDriverEx function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to <b>SetLastError</b> before returning <b>FALSE</b>.
-        
-            `fpDeletePrinterIC`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpDeletePrinterKey`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterKey</b> function (described in the Windows SDK documentation).
-        
-            `fpDeletePrintProcessor`
+`fpClosePrinter`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrintProcessor</b> function (described in the Windows SDK documentation).
-        
-            `fpDriverUnloadComplete`
+(Required.) Pointer to the provider's <b>ClosePrinter</b> function (described in the Windows SDK documentation). If a printer change notification object has been created, then the router calls the provider's FindClosePrinterChangeNotification function (described in the Windows SDK documentation) before calling ClosePrinter.
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpEndDocPrinter`
+`fpCloseSpoolFileHandle`
 
-            (Required.) Pointer to the provider's <b>EndDocPrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpEndPagePrinter`
+For internal use only. Must be <b>NULL</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EndPagePrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumForms`
+`fpClusterSplClose`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumForms</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumJobs`
+For internal use only. Must be <b>NULL</b>.
 
-            (Required.) Pointer to the provider's <b>EnumJobs</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumMonitors`
+`fpClusterSplIsAlive`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumMonitors</b> function, which is described in the Windows SDK documentation. However, at the provider level this function must supply one of the DWORD return values listed in the following table.
+For internal use only. Must be <b>NULL</b>.
 
+`fpClusterSplOpen`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpCommitSpoolData`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpConfigurePort`
+
+(Required.) Pointer to the provider's <b>ConfigurePort</b> function (described in the Windows SDK documentation). If the function supplies ERROR_NOT_SUPPORTED, ERROR_INVALID_NAME, or ERROR_UNKNOWN_PORT to SetLastError, the router will attempt to call another provider.
+
+`fpCreatePrinterIC`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpDeleteForm`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeleteForm</b> function (described in the Windows SDK documentation).
+
+`fpDeleteJobNamedProperty`
+
+
+
+`fpDeleteMonitor`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeleteMonitor</b> function (described in the Windows SDK documentation). If the provider does not support the specified monitor, it must supply ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
+
+`fpDeletePerMachineConnection`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpDeletePort`
+
+(Required.) Pointer to the provider's <b>DeletePort</b> function (described in the Windows SDK documentation). If the provider does not support the specified port, it must supply ERROR_NOT_SUPPORTED to SetLastError before returning <b>FALSE</b>.
+
+`fpDeletePrinter`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinter</b> function (described in the Windows SDK documentation).
+
+`fpDeletePrinterConnection`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterConnection</b> function (described in the Windows SDK documentation).
+
+`fpDeletePrinterData`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterData</b> function (described in the Windows SDK documentation).
+
+`fpDeletePrinterDataEx`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterDataEx</b> function (described in the Windows SDK documentation).
+
+`fpDeletePrinterDriver`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterDriver</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to <b>SetLastError</b> before returning <b>FALSE</b>.
+
+`fpDeletePrinterDriverEx`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's DeletePrinterDriverEx function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to <b>SetLastError</b> before returning <b>FALSE</b>.
+
+`fpDeletePrinterIC`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpDeletePrinterKey`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrinterKey</b> function (described in the Windows SDK documentation).
+
+`fpDeletePrintProcessor`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>DeletePrintProcessor</b> function (described in the Windows SDK documentation).
+
+`fpDriverUnloadComplete`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpEndDocPrinter`
+
+(Required.) Pointer to the provider's <b>EndDocPrinter</b> function (described in the Windows SDK documentation).
+
+`fpEndPagePrinter`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EndPagePrinter</b> function (described in the Windows SDK documentation).
+
+`fpEnumAndLogProvidorObjects`
+
+
+
+`fpEnumForms`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumForms</b> function (described in the Windows SDK documentation).
+
+`fpEnumJobNamedProperties`
+
+
+
+`fpEnumJobs`
+
+(Required.) Pointer to the provider's <b>EnumJobs</b> function (described in the Windows SDK documentation).
+
+`fpEnumMonitors`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumMonitors</b> function, which is described in the Windows SDK documentation. However, at the provider level this function must supply one of the DWORD return values listed in the following table.
 <table>
 <tr>
 <th>Return value</th>
@@ -634,14 +659,14 @@ typedef struct _PRINTPROVIDOR {
 <td>The provider does not support the specified server.</td>
 </tr>
 </table>
-        
-            `fpEnumPerMachineConnections`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpEnumPorts`
+`fpEnumPerMachineConnections`
 
-            <table>
+For internal use only. Must be <b>NULL</b>.
+
+`fpEnumPorts`
+
+<table>
 <tr>
 <th>Return value</th>
 <th>Definition</th>
@@ -659,91 +684,110 @@ typedef struct _PRINTPROVIDOR {
 <td>The provider does not support the specified server.</td>
 </tr>
 </table>
-        
-            `fpEnumPrinterData`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterData</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumPrinterDataEx`
+`fpEnumPrinterData`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterDataEx</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumPrinterDrivers`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterData</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterDrivers</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
-        
-            `fpEnumPrinterKey`
+`fpEnumPrinterDataEx`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterKey</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumPrinters`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterDataEx</b> function (described in the Windows SDK documentation).
 
-            (Required.) Pointer to the provider's <b>EnumPrinters</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumPrintProcessorDatatypes`
+`fpEnumPrinterDrivers`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrintProcessorDatatypes</b> function (described in the Windows SDK documentation).
-        
-            `fpEnumPrintProcessors`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterDrivers</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to SetLastError before returning <b>FALSE</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrintProcessors</b> function (described in the Windows SDK documentation).
-        
-            `fpFindClosePrinterChangeNotification`
+`fpEnumPrinterKey`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>FindClosePrinterChangeNotification</b> function (described in the Windows SDK documentation).
-        
-            `fpFindFirstPrinterChangeNotification`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrinterKey</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a> function (described in the Windows SDK documentation).
-        
-            `fpFlushPrinter`
+`fpEnumPrinters`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpGetForm`
+(Required.) Pointer to the provider's <b>EnumPrinters</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetForm</b> function (described in the Windows SDK documentation).
-        
-            `fpGetJob`
+`fpEnumPrintProcessorDatatypes`
 
-            (Required.) Pointer to the provider's <b>GetJob</b> function (described in the Windows SDK documentation).
-        
-            `fpGetPrinter`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrintProcessorDatatypes</b> function (described in the Windows SDK documentation).
 
-            (Required.) Pointer to the provider's <b>GetPrinter</b> function (described in the Windows SDK documentation). If you are <a href="https://msdn.microsoft.com/9dbe8a00-6b5f-41ae-8ab5-218dcbe37833">writing a network print provider</a> and <b>GetPrinter</b> is returning a PRINTER_INFO_2 structure, the function should supply only the cJobs and Status structure members. The <a href="https://msdn.microsoft.com/c6f9ba42-5f0f-4919-bfac-e4cd1045de4d">local print provider</a> supplies the rest of the structure members.
-        
-            `fpGetPrinterData`
+`fpEnumPrintProcessors`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterData</b> function (described in the Windows SDK documentation).
-        
-            `fpGetPrinterDataEx`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>EnumPrintProcessors</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDataEx</b> function (described in the Windows SDK documentation).
-        
-            `fpGetPrinterDriver`
+`fpFindClosePrinterChangeNotification`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDriver</b> function (described in the Windows SDK documentation). The router first attempts to call the provider's <b>GetPrinterDriverEx</b> function. If that function is not supported, the router calls <b>GetPrinterDriver</b>.
-        
-            `fpGetPrinterDriverDirectory`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>FindClosePrinterChangeNotification</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDriverDirectory</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to <b>SetLastError</b> before returning <b>FALSE</b>.
-        
-            `fpGetPrinterDriverEx`
+`fpFindCompatibleDriver`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDriverEx</b> function (described in the Windows SDK documentation). If GetPrinterDriverEx is not supported, the router attempts to call GetPrinterDriver.
-        
-            `fpGetPrintProcessorDirectory`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrintProcessorDirectory</b> function (described in the Windows SDK documentation).
-        
-            `fpGetSpoolFileInfo`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpOpenPrinter`
+`fpFindFirstPrinterChangeNotification`
 
-            (Required.) Pointer to the provider's <b>OpenPrinter</b> function, which is described in the Microsoft Windows SDK documentation. However, at the provider level, this function must supply one of the DWORD return values listed in the following table.
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a> function (described in the Windows SDK documentation).
 
+`fpFlushPrinter`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpGetForm`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetForm</b> function (described in the Windows SDK documentation).
+
+`fpGetJob`
+
+(Required.) Pointer to the provider's <b>GetJob</b> function (described in the Windows SDK documentation).
+
+`fpGetJobNamedPropertyValue`
+
+
+
+`fpGetPrinter`
+
+(Required.) Pointer to the provider's <b>GetPrinter</b> function (described in the Windows SDK documentation). If you are <a href="https://msdn.microsoft.com/9dbe8a00-6b5f-41ae-8ab5-218dcbe37833">writing a network print provider</a> and <b>GetPrinter</b> is returning a PRINTER_INFO_2 structure, the function should supply only the cJobs and Status structure members. The <a href="https://msdn.microsoft.com/c6f9ba42-5f0f-4919-bfac-e4cd1045de4d">local print provider</a> supplies the rest of the structure members.
+
+`fpGetPrinterData`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterData</b> function (described in the Windows SDK documentation).
+
+`fpGetPrinterDataEx`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDataEx</b> function (described in the Windows SDK documentation).
+
+`fpGetPrinterDriver`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDriver</b> function (described in the Windows SDK documentation). The router first attempts to call the provider's <b>GetPrinterDriverEx</b> function. If that function is not supported, the router calls <b>GetPrinterDriver</b>.
+
+`fpGetPrinterDriverDirectory`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDriverDirectory</b> function (described in the Windows SDK documentation). If the provider does not support the specified server, it should specify ERROR_INVALID_NAME to <b>SetLastError</b> before returning <b>FALSE</b>.
+
+`fpGetPrinterDriverEx`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrinterDriverEx</b> function (described in the Windows SDK documentation). If GetPrinterDriverEx is not supported, the router attempts to call GetPrinterDriver.
+
+`fpGetPrintProcessorDirectory`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>GetPrintProcessorDirectory</b> function (described in the Windows SDK documentation).
+
+`fpGetSpoolFileInfo`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpGetUserPropertyBag`
+
+
+
+`fpInternalGetPrinterDriver`
+
+
+
+`fpLogJobInfoForBranchOffice`
+
+
+
+`fpOpenPrinter`
+
+(Required.) Pointer to the provider's <b>OpenPrinter</b> function, which is described in the Microsoft Windows SDK documentation. However, at the provider level, this function must supply one of the DWORD return values listed in the following table.
 <table>
 <tr>
 <th>Return value</th>
@@ -761,101 +805,112 @@ typedef struct _PRINTPROVIDOR {
 <td>ROUTER_UNKNOWN </td>
 <td>The provider does not support the specified printer. The function must call <b>SetLastError</b> and specify ERROR_INVALID_NAME.</td>
 </tr>
-</table>
- 
+</table> 
 
 The router calls each provider until one of them returns ROUTER_SUCCESS or ROUTER_STOP_ROUTING. If the provider returns ROUTER_SUCCESS, it must also return a unique handle. (For more information, see Introduction to Print Providers.) The router first attempts to call the provider's OpenPrinterEx function. If that function is not supported, the router calls OpenPrinter.
-        
-            `fpOpenPrinterEx`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpPlayGdiScriptOnPrinterIC`
+`fpOpenPrinterEx`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpPrinterMessageBox`
+For internal use only. Must be <b>NULL</b>.
 
-            Not used. Must be <b>NULL</b>.
-        
-            `fpReadPrinter`
+`fpPlayGdiScriptOnPrinterIC`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>ReadPrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpRefreshPrinterChangeNotification`
+For internal use only. Must be <b>NULL</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function.
-        
-            `fpResetPrinter`
+`fpPowerEvent`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>ResetPrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpScheduleJob`
 
-            (Required.) Pointer to the provider's <b>ScheduleJob</b> function (described in the Windows SDK documentation).
-        
-            `fpSeekPrinter`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpSendRecvBidiData`
+`fpPrinterMessageBox`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SendRecvBidiData</b> function. If this parameter is <b>NULL</b>, it means that the provider does not support bidi communication.
-        
-            `fpSetForm`
+Not used. Must be <b>NULL</b>.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetForm</b> function (described in the Windows SDK documentation).
-        
-            `fpSetJob`
+`fpReadPrinter`
 
-            (Required.) Pointer to the provider's <b>SetJob</b> function (described in the Windows SDK documentation).
-        
-            `fpSetPort`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>ReadPrinter</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetPort</b> function (described in the Windows SDK documentation). If the function supplies ERROR_NOT_SUPPORTED, ERROR_INVALID_NAME, or ERROR_UNKNOWN_PORT to <b>SetLastError</b>, the router will attempt to call another provider.
-        
-            `fpSetPrinter`
+`fpRefreshPrinterChangeNotification`
 
-            (Required.) Pointer to the provider's <b>SetPrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpSetPrinterData`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function.
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetPrinterData</b> function (described in the Windows SDK documentation).
-        
-            `fpSetPrinterDataEx`
+`fpReportJobProcessingProgress`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetPrinterDataEx</b> function (described in the Windows SDK documentation).
-        
-            `fpShutDown`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpSplReadPrinter`
 
-            For internal use only. Must be <b>NULL</b>.
-        
-            `fpStartDocPrinter`
+`fpResetPrinter`
 
-            (Required.) Pointer to the provider's <b>StartDocPrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpStartPagePrinter`
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>ResetPrinter</b> function (described in the Windows SDK documentation).
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>StartPagePrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpWaitForPrinterChange`
+`fpScheduleJob`
 
-            Obsolete. Must be <b>NULL</b>.
-        
-            `fpWritePrinter`
+(Required.) Pointer to the provider's <b>ScheduleJob</b> function (described in the Windows SDK documentation).
 
-            (Required.) Pointer to the provider's <b>WritePrinter</b> function (described in the Windows SDK documentation).
-        
-            `fpXcvData`
+`fpSeekPrinter`
 
-            (Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function.
+For internal use only. Must be <b>NULL</b>.
 
-    ## Remarks
-        Function pointers are listed in the order they are specified within the PRINTPROVIDOR structure. To see function descriptions grouped by related capabilities, see <a href="https://msdn.microsoft.com/4fae4b69-ed4b-47b6-b6e8-41733aed51a5">Functions Defined by Print Providers</a>.
+`fpSendRecvBidiData`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SendRecvBidiData</b> function. If this parameter is <b>NULL</b>, it means that the provider does not support bidi communication.
+
+`fpSetForm`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetForm</b> function (described in the Windows SDK documentation).
+
+`fpSetJob`
+
+(Required.) Pointer to the provider's <b>SetJob</b> function (described in the Windows SDK documentation).
+
+`fpSetJobNamedProperty`
+
+
+
+`fpSetPort`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetPort</b> function (described in the Windows SDK documentation). If the function supplies ERROR_NOT_SUPPORTED, ERROR_INVALID_NAME, or ERROR_UNKNOWN_PORT to <b>SetLastError</b>, the router will attempt to call another provider.
+
+`fpSetPrinter`
+
+(Required.) Pointer to the provider's <b>SetPrinter</b> function (described in the Windows SDK documentation).
+
+`fpSetPrinterData`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetPrinterData</b> function (described in the Windows SDK documentation).
+
+`fpSetPrinterDataEx`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>SetPrinterDataEx</b> function (described in the Windows SDK documentation).
+
+`fpShutDown`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpSplReadPrinter`
+
+For internal use only. Must be <b>NULL</b>.
+
+`fpStartDocPrinter`
+
+(Required.) Pointer to the provider's <b>StartDocPrinter</b> function (described in the Windows SDK documentation).
+
+`fpStartPagePrinter`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>StartPagePrinter</b> function (described in the Windows SDK documentation).
+
+`fpWaitForPrinterChange`
+
+Obsolete. Must be <b>NULL</b>.
+
+`fpWritePrinter`
+
+(Required.) Pointer to the provider's <b>WritePrinter</b> function (described in the Windows SDK documentation).
+
+`fpXcvData`
+
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function.
+
+## Remarks
+Function pointers are listed in the order they are specified within the PRINTPROVIDOR structure. To see function descriptions grouped by related capabilities, see <a href="https://msdn.microsoft.com/4fae4b69-ed4b-47b6-b6e8-41733aed51a5">Functions Defined by Print Providers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -865,27 +920,20 @@ The router calls each provider until one of them returns ROUTER_SUCCESS or ROUTE
 | **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\winsplp\nf-winsplp-initializeprintprovidor.md">InitializePrintProvidor</a>
-</dt>
-<dt>
-<a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
-</dt>
-<dt>
+
+<a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562068">SendRecvBidiData</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PRINTPROVIDOR structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PRINTPROVIDOR structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

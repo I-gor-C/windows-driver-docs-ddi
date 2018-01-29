@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : e67f0384-79a8-4040-aab4-bf5b865ad989
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+ms.keywords : gpiobtn.hwn_client_query_device_information, HwnClientQueryDeviceInformation callback function, HwnClientQueryDeviceInformation, HWN_CLIENT_QUERY_DEVICE_INFORMATION, HWN_CLIENT_QUERY_DEVICE_INFORMATION, hwnclx/HwnClientQueryDeviceInformation, PHWN_CLIENT_QUERY_DEVICE_INFORMATION callback function pointer, PHWN_CLIENT_QUERY_DEVICE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PHWN_CLIENT_QUERY_DEVICE_INFORMATION
-req.alt-loc : Hwnclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE"
 ---
 
 
@@ -83,12 +87,10 @@ Register your implementation of this callback function by setting the appropriat
 
 ## See Also
 
-<dl>
-<dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
-<dt>
 <a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
  
 
  

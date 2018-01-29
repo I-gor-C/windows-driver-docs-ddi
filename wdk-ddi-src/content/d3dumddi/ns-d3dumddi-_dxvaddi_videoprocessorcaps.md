@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bea6d458-943e-466f-adca-466f26dc3599
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_VIDEOPROCESSORCAPS, DXVADDI_VIDEOPROCESSORCAPS
+ms.keywords : _DXVADDI_VIDEOPROCESSORCAPS, d3dumddi/DXVADDI_VIDEOPROCESSORCAPS, display.dxvaddi_videoprocessorcaps, DXVADDI_VIDEOPROCESSORCAPS, DXVA2_Structs_dc28e351-d197-4440-a3fd-dc3a49e35230.xml, DXVADDI_VIDEOPROCESSORCAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_VIDEOPROCESSORCAPS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_VIDEOPROCESSORCAPS
 ---
 
@@ -54,11 +58,10 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 
 ## Members
 
-        
-            `DeinterlaceTechnology`
 
-            [out] A bitwise OR of the following values to indicate the underlying deinterlacing technology that is used to implement the deinterlacing algorithm. The values can be combined as required to most closely match the algorithm's implementation.
+`DeinterlaceTechnology`
 
+[out] A bitwise OR of the following values to indicate the underlying deinterlacing technology that is used to implement the deinterlacing algorithm. The values can be combined as required to most closely match the algorithm's implementation.
 <table>
 <tr>
 <th>Value</th>
@@ -165,11 +168,10 @@ A deinterlace algorithm that can undo the 3:2 pull-down process that is used for
 </td>
 </tr>
 </table>
-        
-            `DetailFilterTechnology`
 
-            [out] A bitwise OR of the following values to indicate the underlying technology that is used to implement detail filtering. The values can be combined as required to most closely match the detail-filter implementation.  
+`DetailFilterTechnology`
 
+[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement detail filtering. The values can be combined as required to most closely match the detail-filter implementation.  
 <table>
 <tr>
 <th>Value</th>
@@ -216,15 +218,14 @@ The video processing device uses sharpening detail filtering.
 </td>
 </tr>
 </table>
-        
-            `InputPool`
 
-            [out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the interlaced source surfaces should be allocated.
-        
-            `NoiseFilterTechnology`
+`InputPool`
 
-            [out] A bitwise OR of the following values to indicate the underlying technology that is used to implement noise filtering. The values can be combined as required to most closely match the noise-filter implementation. 
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the interlaced source surfaces should be allocated.
 
+`NoiseFilterTechnology`
+
+[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement noise filtering. The values can be combined as required to most closely match the noise-filter implementation. 
 <table>
 <tr>
 <th>Value</th>
@@ -291,25 +292,24 @@ The video processing device uses mosquito noise filtering.
 </td>
 </tr>
 </table>
-        
-            `NumBackwardRefSamples`
 
-            [out] The required backward reference samples for the defined deinterlace mode. The samples are in former fields. This value is zero for bob, 1 for line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
-        
-            `NumForwardRefSamples`
+`NumBackwardRefSamples`
 
-            [out] The required number of forward reference samples for the defined deinterlace mode. The samples are in subsequent fields. This value is zero for bob and line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
-        
-            `OutputFormat`
+[out] The required backward reference samples for the defined deinterlace mode. The samples are in former fields. This value is zero for bob, 1 for line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
 
-            [out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the uncompressed output frames. Typically, a deinterlace algorithm outputs frames in a pixel format that matches the input sample format. This member ensures that the Video Mixing Renderer (VMR) or other video renderer is able to supply the correct output frame surfaces to the deinterlacing hardware.
+`NumForwardRefSamples`
+
+[out] The required number of forward reference samples for the defined deinterlace mode. The samples are in subsequent fields. This value is zero for bob and line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
+
+`OutputFormat`
+
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the uncompressed output frames. Typically, a deinterlace algorithm outputs frames in a pixel format that matches the input sample format. This member ensures that the Video Mixing Renderer (VMR) or other video renderer is able to supply the correct output frame surfaces to the deinterlacing hardware.
 
 Note that if the DXVADDI_VIDEOPROCESS_YUV2RGB value is returned in the <b>VideoProcessorOperations</b> member, the VMR determines that valid output formats are specified by this member as well as an D3DFMT_X8R8G8B8 format.
-        
-            `ProcAmpControlCaps`
 
-            [out] A bitwise OR of the following values to indicate the ProcAmp operations that the hardware supports.
+`ProcAmpControlCaps`
 
+[out] A bitwise OR of the following values to indicate the ProcAmp operations that the hardware supports.
 <table>
 <tr>
 <th>Value</th>
@@ -366,11 +366,10 @@ Saturation adjustments to the video image are allowed.
 </td>
 </tr>
 </table>
-        
-            `VideoProcessorOperations`
 
-            [out] A bitwise OR of the following values to indicate which additional video processing operations the hardware can perform concurrently with the requested <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_videoprocessblt.md">VideoProcessBlt</a> operation.
+`VideoProcessorOperations`
 
+[out] A bitwise OR of the following values to indicate which additional video processing operations the hardware can perform concurrently with the requested <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_videoprocessblt.md">VideoProcessBlt</a> operation.
 <table>
 <tr>
 <th>Value</th>
@@ -557,31 +556,22 @@ The video processing device can maintain the original field data.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessorinput.md">DXVADDI_VIDEOPROCESSORINPUT</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessorinput.md">DXVADDI_VIDEOPROCESSORINPUT</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

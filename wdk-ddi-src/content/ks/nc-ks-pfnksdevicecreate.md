@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8f7168c3-0c28-4802-af34-45b46c1b6827
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminideviceadd, AVStrMiniDeviceAdd, AVStrMiniDeviceAdd routine [Streaming Media Devices], AVStrMiniDeviceAdd, PFNKSDEVICECREATE, PFNKSDEVICECREATE, ks/AVStrMiniDeviceAdd, avstclbk_1cba196f-c0c6-42fb-8674-52e0fad4a337.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniDeviceAdd
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -86,11 +90,8 @@ This routine is optional.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
-</dt>
-</dl>
+
  
 
  

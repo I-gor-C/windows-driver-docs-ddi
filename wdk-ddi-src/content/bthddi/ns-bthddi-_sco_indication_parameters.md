@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 2d3ae219-8a40-476c-b8eb-94f4c0566527
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _SCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS
+ms.keywords : bth_structs_73ebf679-d092-4b0a-a54f-84539b8c85ae.xml, bltooth.sco_indication_parameters, _SCO_INDICATION_PARAMETERS, bthddi/SCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS structure [Bluetooth Devices], bthddi/PSCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS structure pointer [Bluetooth Devices], SCO_INDICATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCO_INDICATION_PARAMETERS
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS
 ---
 
@@ -59,25 +63,22 @@ typedef struct _SCO_INDICATION_PARAMETERS {
 
 ## Members
 
-        
-            `BtAddress`
 
-            The Bluetooth address of the remote device.
-        
-            `ConnectionHandle`
+`BtAddress`
 
-            A connection handle to the remote device. This handle is only valid for notifications that arrive
+The Bluetooth address of the remote device.
+
+`ConnectionHandle`
+
+A connection handle to the remote device. This handle is only valid for notifications that arrive
      over an established SCO connection.
-        
-            `Parameters`
 
-            <dl>
+`Parameters`
 
 
-</dl>
 
-    ## Remarks
-        A profile driver's 
+## Remarks
+A profile driver's 
     <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a> should process
     a notification differently depending upon the value that the Bluetooth driver stack passes in the 
     <i>Indication</i> parameter of the callback function.
@@ -85,6 +86,11 @@ typedef struct _SCO_INDICATION_PARAMETERS {
 When the Bluetooth driver stack passes 
     <b>ScoIndicationRemoteConnect</b>, the callback function should use the 
     <b>Connect</b> member of the 
+    <b>Parameters</b> union.
+
+When the Bluetooth driver stack passes 
+    <b>ScoIndicationRemoteDisconnect</b>, the callback function should use the 
+    <b>Disconnect</b> member of the 
     <b>Parameters</b> union.
 
 ## Requirements
@@ -95,16 +101,12 @@ When the Bluetooth driver stack passes
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthddi\ne-bthddi-_sco_disconnect_reason.md">SCO_DISCONNECT_REASON</a>
-</dt>
-<dt>
+
 <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
-</dt>
-</dl>
+
  
 
  

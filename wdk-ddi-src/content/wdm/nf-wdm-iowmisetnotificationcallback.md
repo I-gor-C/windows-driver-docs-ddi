@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c1bd12e0-0862-4e51-a9e8-71eb7b2549fd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMISetNotificationCallback
+ms.keywords : kernel.iowmisetnotificationcallback, IoWMISetNotificationCallback routine [Kernel-Mode Driver Architecture], wdm/IoWMISetNotificationCallback, IoWMISetNotificationCallback, k104_8ee391bd-0abe-4901-b0dc-6266d0c8f5c4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWMISetNotificationCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -58,7 +62,6 @@ Pointer to a WMI data block object. The caller opens the data block object for t
 `Callback`
 
 Pointer to a function of the form:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -68,8 +71,7 @@ Pointer to a function of the form:
 <pre> XxxWmiNotificationCallback(PVOID Wnode, PVOID Context);</pre>
 </td>
 </tr>
-</table></span></div>
-WMI calls this function to notify the caller that the specified event has occurred. The <i>Wnode</i> parameter of the callback routine points to the <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a> structure returned by the driver triggering the event. The <i>Context</i> parameter of the callback routine points to the value specified in the <i>Context</i> parameter of the <b>IoWMISetNotificationCallback</b> routine.
+</table></span></div>WMI calls this function to notify the caller that the specified event has occurred. The <i>Wnode</i> parameter of the callback routine points to the <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a> structure returned by the driver triggering the event. The <i>Context</i> parameter of the callback routine points to the value specified in the <i>Context</i> parameter of the <b>IoWMISetNotificationCallback</b> routine.
 
 `Context`
 
@@ -95,14 +97,10 @@ This routine returns STATUS_SUCCESS on success, and the appropriate NTSTATUS err
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
-</dt>
-<dt>
 <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
+
  
 
  

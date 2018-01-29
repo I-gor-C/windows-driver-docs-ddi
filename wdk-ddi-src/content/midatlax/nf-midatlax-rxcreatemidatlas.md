@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7c3fed89-a4e1-436f-9cbb-e140ad42bb13
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCreateMidAtlas
+ms.keywords : ifsk.rxcreatemidatlas, midatlax/RxCreateMidAtlas, RxCreateMidAtlas, RxCreateMidAtlas function [Installable File System Drivers], rxref_539434e3-e1ea-4c97-b480-51bfe40eb44e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCreateMidAtlas
-req.alt-loc : midatlax.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : MCD_INIT_DATA, *PMCD_INIT_DATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 
@@ -51,11 +55,11 @@ PRX_MID_ATLAS RxCreateMidAtlas(
 
 `MaximumNumberOfEntries`
 
-
+TBD
 
 `InitialAllocation`
 
-
+TBD
 
 
 ## Return Value
@@ -86,23 +90,16 @@ For example, if a maximum of 50 MIDs are to be allocated on creation , the lengt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
-</dt>
-<dt>
-<a href="..\midatlax\nf-midatlax-rxdestroymidatlas.md">RxDestroyMidAtlas</a>
-</dt>
-<dt>
-<a href="..\midatlax\nf-midatlax-rxmapmidtocontext.md">RxMapMidToContext</a>
-</dt>
-<dt>
 <a href="..\midatlax\nf-midatlax-rxmapanddissociatemidfromcontext.md">RxMapAndDissociateMidFromContext</a>
-</dt>
-<dt>
+
+<a href="..\midatlax\nf-midatlax-rxmapmidtocontext.md">RxMapMidToContext</a>
+
 <a href="..\midatlax\nf-midatlax-rxreassociatemid.md">RxReassociateMid</a>
-</dt>
-</dl>
+
+<a href="..\midatlax\nf-midatlax-rxdestroymidatlas.md">RxDestroyMidAtlas</a>
+
+<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
+
  
 
  

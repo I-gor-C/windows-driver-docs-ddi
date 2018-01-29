@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cf19f468-86c1-4cc9-8945-e23f73a85c91
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_vidpn_interface_pfnacquiresourcemodeset, pfnAcquireSourceModeSet callback function [Display Devices], pfnAcquireSourceModeSet, DXGKDDI_VIDPN_ACQUIRESOURCEMODESET, DXGKDDI_VIDPN_ACQUIRESOURCEMODESET, d3dkmddi/pfnAcquireSourceModeSet, VidPnFunctions_1ef2f7d1-cdea-4b0d-a8b5-76b5013afba3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnAcquireSourceModeSet
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -74,15 +78,45 @@ NTSTATUS DxgkddiVidpnAcquiresourcemodeset(
 ## Return Value
 
 The <b>pfnAcquireSourceModeSet</b> function returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN</b></dt>
-</dl>The handle supplied in <i>hVidPn</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hVidPn</i> was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_SOURCE</b></dt>
-</dl>The identifier supplied in <i>VidPnSourceId</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The identifier supplied in <i>VidPnSourceId</i> was invalid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -110,20 +144,14 @@ The D3DKMDT_HVIDPN and D3DKMDT_HVIDPNSOURCEMODESET data types are defined in <i>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_releasetargetmodeset.md">pfnReleaseTargetModeSet</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_createnewsourcemodeset.md">pfnCreateNewSourceModeSet</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_assigntargetmodeset.md">pfnAssignTargetModeSet</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_releasetargetmodeset.md">pfnReleaseTargetModeSet</a>
+
  
 
  

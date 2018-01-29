@@ -7,8 +7,8 @@ old-location : image\sti_device_status.htm
 old-project : image
 ms.assetid : 40104e1f-b936-430b-9e8c-28738579f4c7
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _STI_DEVICE_STATUS, STI_DEVICE_STATUS, *PSTI_DEVICE_STATUS
+ms.date : 1/18/2018
+ms.keywords : image.sti_device_status, sti/STI_DEVICE_STATUS, stifnc_9581d5c4-a5c5-4115-8e9e-33f3da4806c6.xml, PSTI_DEVICE_STATUS, *PSTI_DEVICE_STATUS, STI_DEVICE_STATUS structure [Imaging Devices], PSTI_DEVICE_STATUS structure pointer [Imaging Devices], sti/PSTI_DEVICE_STATUS, STI_DEVICE_STATUS, _STI_DEVICE_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STI_DEVICE_STATUS
-req.alt-loc : sti.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STI_DEVICE_STATUS, *PSTI_DEVICE_STATUS
 req.product : Windows 10 or later.
 ---
@@ -52,33 +56,32 @@ typedef struct _STI_DEVICE_STATUS {
 
 ## Members
 
-        
-            `dwEventHandlingState`
 
-            Contains bit flags indicating event status. The following flags are defined in <i>Sti.h</i>.
-        
-            `dwHardwareStatusCode`
+`dwEventHandlingState`
 
-            Optional device-specific, vendor-defined value.
-        
-            `dwOnlineState`
+Contains bit flags indicating event status. The following flags are defined in <i>Sti.h</i>.
 
-            Bit flags indicating the device's current status. The following flags are defined in <i>Sti.h</i>.
+`dwHardwareStatusCode`
+
+Optional device-specific, vendor-defined value.
+
+`dwOnlineState`
+
+Bit flags indicating the device's current status. The following flags are defined in <i>Sti.h</i>.
 
 Currently use of STI_ONLINESTATE_OPERATIONAL is required, while use of all other flags is optional. (Currently, STI_ONLINESTATE_OPERATIONAL is the only flag that the still image server checks.)
-        
-            `dwPollingInterval`
 
-            Time value, in milliseconds, indicating how often the device should be polled, if polling is required.
-        
-            `dwSize`
+`dwPollingInterval`
 
-            Caller-supplied size, in bytes, of the STI_DEVICE_STATUS structure.
-        
-            `StatusMask`
+Time value, in milliseconds, indicating how often the device should be polled, if polling is required.
 
-            One or more caller-supplied bit flags, indicating the type of status information being requested. The following flags are defined:
+`dwSize`
 
+Caller-supplied size, in bytes, of the STI_DEVICE_STATUS structure.
+
+`StatusMask`
+
+One or more caller-supplied bit flags, indicating the type of status information being requested. The following flags are defined:
 <table>
 <tr>
 <th>Flag</th>

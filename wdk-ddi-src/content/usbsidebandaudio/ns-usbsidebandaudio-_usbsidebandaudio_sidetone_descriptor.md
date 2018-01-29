@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : BC337822-C36C-4673-BFA1-3F4C05529C05
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+ms.keywords : PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, usbsidebandaudio/USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure [Audio Devices], _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, usbsidebandaudio/PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure pointer [Audio Devices], *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, audio.usbsidebandaudio_sidetone_descriptor, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
-req.alt-loc : 
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -49,6 +53,14 @@ typedef struct _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR {
 ````
 
 ## Members
+
+
+`Mute`
+
+
+
+`Volume`
+
 
 
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 92110e27-5f1a-4c4d-b999-d9deb546e6a6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_read_stream, IOCTL_KS_READ_STREAM control code [Streaming Media Devices], IOCTL_KS_READ_STREAM, ks/IOCTL_KS_READ_STREAM, ks-ioctl_677f9dd3-bd4b-4c15-8ee1-67ede429c958.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_READ_STREAM
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -59,7 +63,6 @@ Stream data is returned in the buffers pointed to by the stream headers.  Upon r
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 
@@ -70,16 +73,12 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ni-ks-ioctl_ks_write_stream.md">IOCTL_KS_WRITE_STREAM</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksprobestreamirp.md">KsProbeStreamIrp</a>
-</dt>
-</dl>
+
  
 
  

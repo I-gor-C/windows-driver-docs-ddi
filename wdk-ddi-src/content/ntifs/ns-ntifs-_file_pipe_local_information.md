@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION
+ms.keywords : PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers], *PFILE_PIPE_LOCAL_INFORMATION, _FILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, ntifs/FILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_PIPE_LOCAL_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_PIPE_LOCAL_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION"
 ---
 
@@ -55,23 +59,22 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 
 ## Members
 
-        
-            `CurrentInstances`
 
-            The number of current named pipe instances.
-        
-            `InboundQuota`
+`CurrentInstances`
 
-            The inbound quota, in bytes, for the named pipe.
-        
-            `MaximumInstances`
+The number of current named pipe instances.
 
-            The maximum number of instances that can be created for this pipe. The first instance of the pipe must specify this value.
-        
-            `NamedPipeConfiguration`
+`InboundQuota`
 
-            One of the following named pipe configurations.
+The inbound quota, in bytes, for the named pipe.
 
+`MaximumInstances`
+
+The maximum number of instances that can be created for this pipe. The first instance of the pipe must specify this value.
+
+`NamedPipeConfiguration`
+
+One of the following named pipe configurations.
 
 <table>
 <tr>
@@ -97,11 +100,10 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 <td>The pipe is bidirectional; both server and client processes can read from and write to the pipe. </td>
 </tr>
 </table>
-        
-            `NamedPipeEnd`
 
-            The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
+`NamedPipeEnd`
 
+The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
 <table>
 <tr>
 <th>Value </th>
@@ -118,11 +120,10 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 <td>This is the server end of a named pipe.</td>
 </tr>
 </table>
-        
-            `NamedPipeState`
 
-            The connection status for the named pipe. This state has one of the following values.
+`NamedPipeState`
 
+The connection status for the named pipe. This state has one of the following values.
 <table>
 <tr>
 <th>Value </th>
@@ -150,11 +151,10 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 <td>Named pipe is in the process of being closed.</td>
 </tr>
 </table>
-        
-            `NamedPipeType`
 
-            One of the following named pipe types. 
+`NamedPipeType`
 
+One of the following named pipe types. 
 <table>
 <tr>
 <th>Value </th>
@@ -169,21 +169,21 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 <td>Data is read from the pipe as a stream of messages.</td>
 </tr>
 </table>
-        
-            `OutboundQuota`
 
-            The outbound quota, in bytes, for the named pipe.
-        
-            `ReadDataAvailable`
+`OutboundQuota`
 
-            The amount of data available, in bytes, to be read from the named pipe.
-        
-            `WriteQuotaAvailable`
+The outbound quota, in bytes, for the named pipe.
 
-            The write quota, in bytes, for the named pipe.
+`ReadDataAvailable`
 
-    ## Remarks
-        For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.</p>
+The amount of data available, in bytes, to be read from the named pipe.
+
+`WriteQuotaAvailable`
+
+The write quota, in bytes, for the named pipe.
+
+## Remarks
+For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

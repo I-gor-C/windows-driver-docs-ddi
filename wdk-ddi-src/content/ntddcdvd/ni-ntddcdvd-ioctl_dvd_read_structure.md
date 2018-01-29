@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 64cf4d53-5d03-43bc-b295-37ecf67b4d2a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.keywords : storage.ioctl_dvd_read_structure, IOCTL_DVD_READ_STRUCTURE control code [Storage Devices], IOCTL_DVD_READ_STRUCTURE, ntddcdvd/IOCTL_DVD_READ_STRUCTURE, k307_eafb209e-3aed-4471-a4e0-a0e52ce4c462.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DVD_READ_STRUCTURE
-req.alt-loc : Ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_READ_STRUCTURE IOCTL
-Returns information about a DVD disc, such as a layer descriptor, copyright information, or manufacturer-specific information.
-
-
-
 Returns information about a DVD disc, such as a layer descriptor, copyright information, or manufacturer-specific information.
 
 ### Major Code
@@ -63,7 +63,6 @@ The driver returns the disc information in the buffer at <b>Irp-&gt;AssociatedIr
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes transferred. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.
 
 
@@ -74,28 +73,20 @@ The <b>Information</b> field is set to the number of bytes transferred. The <b>S
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdvd\ns-ntddcdvd-dvd_read_structure.md">DVD_READ_STRUCTURE</a>
-</dt>
-<dt>
 <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_layer_descriptor.md">DVD_LAYER_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copyright_descriptor.md">DVD_COPYRIGHT_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_disk_key_descriptor.md">DVD_DISK_KEY_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_bca_descriptor.md">DVD_BCA_DESCRIPTOR</a>
-</dt>
-<dt>
+
+<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_disk_key_descriptor.md">DVD_DISK_KEY_DESCRIPTOR</a>
+
+<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copyright_descriptor.md">DVD_COPYRIGHT_DESCRIPTOR</a>
+
 <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_manufacturer_descriptor.md">DVD_MANUFACTURER_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdvd\ns-ntddcdvd-dvd_read_structure.md">DVD_READ_STRUCTURE</a>
+
  
 
  

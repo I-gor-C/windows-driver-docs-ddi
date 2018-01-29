@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3a1f6432-3f61-4502-ac98-fa984539f88e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice2, IWDFDevice2::GetDeviceStackIoTypePreference, GetDeviceStackIoTypePreference
+ms.keywords : UMDFDeviceObjectRef_f6402826-fe3b-46c7-a4a8-d1d4f74e4b5c.xml, IWDFDevice2::GetDeviceStackIoTypePreference, IWDFDevice2 interface, GetDeviceStackIoTypePreference method, umdf.iwdfdevice2_getdevicestackiotypepreference, wudfddi/IWDFDevice2::GetDeviceStackIoTypePreference, IWDFDevice2, GetDeviceStackIoTypePreference method, GetDeviceStackIoTypePreference, wdf.iwdfdevice2_getdevicestackiotypepreference, GetDeviceStackIoTypePreference method, IWDFDevice2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFDevice2.GetDeviceStackIoTypePreference
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -69,9 +73,7 @@ None.
 
 If your driver calls <b>GetDeviceStackIoTypePreference</b> before the PnP manager has loaded all of the device's drivers, the values that <b>GetDeviceStackIoTypePreference</b> retrieves might not be the values that it actually uses.
 
-For more information about how the framework chooses a buffer access method, see <a href="wdf.accessing_data_buffers_in_umdf_drivers#how_umdf_chooses_a_buffer_access_method_for_an_i_o_request#how_umdf_chooses_a_buffer_access_method_for_an_i_o_request">How UMDF Chooses a Buffer Access Method for an I/O Request</a>.
-
-The following code example retrieves the buffer access methods that the framework is using for a device.
+For more information about how the framework chooses a buffer access method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">How UMDF Chooses a Buffer Access Method for an I/O Request</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,14 +89,10 @@ The following code example retrieves the buffer access methods that the framewor
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
  
 
  

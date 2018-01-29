@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 07b04bad-9d52-4a32-8834-48cd5803844c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS
+ms.keywords : mpiowmi/MPIO_DISK_HEALTH_CLASS, storage.mpio_disk_health_class, mpiowmi/PMPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS structure [Storage Devices], PMPIO_DISK_HEALTH_CLASS structure pointer [Storage Devices], structs-scsibus_b3dfb95d-08eb-4eb6-80bb-3437282a65d6.xml, *PMPIO_DISK_HEALTH_CLASS, _MPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MPIO_DISK_HEALTH_CLASS
-req.alt-loc : mpiowmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
 ---
 
 # _MPIO_DISK_HEALTH_CLASS structure
@@ -61,70 +65,70 @@ typedef struct _MPIO_DISK_HEALTH_CLASS {
 
 ## Members
 
-        
-            `CreateTime`
 
-            A 64-bit integer that specifies the system time when the health packet was created for this multi-path disk.
-        
-            `DeviceOffline`
+`CreateTime`
 
-            A Boolean field that indicates whether the multi-path disk is offline or has failed.
-        
-            `FailTime`
+A 64-bit integer that specifies the system time when the health packet was created for this multi-path disk.
 
-            A 64-bit integer that specifies the system time when this multi-path disk went offline or failed.
-        
-            `Name`
+`DeviceOffline`
 
-            The name of this multi-path disk.
-        
-            `NumberBytesRead`
+A Boolean field that indicates whether the multi-path disk is offline or has failed.
 
-            An unsigned 64-bitfield that specifies the total number of bytes that are read from this multi-path disk.
-        
-            `NumberBytesReadWrap`
+`FailTime`
 
-            An unsigned character field that specifies the total number of times that the <i>NumberBytesRead</i> parameter has rolled around to zero.
-        
-            `NumberBytesWritten`
+A 64-bit integer that specifies the system time when this multi-path disk went offline or failed.
 
-            An unsigned 64-bitfield that specifies the total number of bytes that are written to this multi-path disk.
-        
-            `NumberBytesWrittenWrap`
+`Name`
 
-            An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
-        
-            `NumberIoErrors`
+The name of this multi-path disk.
 
-            An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered by this multi-path disk.
-        
-            `NumberReads`
+`NumberBytesRead`
 
-            An unsigned 64-bitfield that specifies the number of read requests that are serviced by this multi-path disk.
-        
-            `NumberReadsWrap`
+An unsigned 64-bitfield that specifies the total number of bytes that are read from this multi-path disk.
 
-            An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.
-        
-            `NumberRetries`
+`NumberBytesReadWrap`
 
-            An unsigned 64-bitfield that specifies the total number of retries for this multi-path disk.
-        
-            `NumberWrites`
+An unsigned character field that specifies the total number of times that the <i>NumberBytesRead</i> parameter has rolled around to zero.
 
-            An unsigned 64-bitfield that specifies the number of write requests that are serviced by this multi-path disk.
-        
-            `NumberWritesWrap`
+`NumberBytesWritten`
 
-            An unsigned character field that specifies the total number of times the <i>NumberWrites</i> parameter has rolled around to zero.
-        
-            `Pad`
+An unsigned 64-bitfield that specifies the total number of bytes that are written to this multi-path disk.
 
-            Should be zero.
-        
-            `PathFailures`
+`NumberBytesWrittenWrap`
 
-            A 64-bit integer that specifies the total number of path failures for this multi-path disk.
+An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
+
+`NumberIoErrors`
+
+An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered by this multi-path disk.
+
+`NumberReads`
+
+An unsigned 64-bitfield that specifies the number of read requests that are serviced by this multi-path disk.
+
+`NumberReadsWrap`
+
+An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.
+
+`NumberRetries`
+
+An unsigned 64-bitfield that specifies the total number of retries for this multi-path disk.
+
+`NumberWrites`
+
+An unsigned 64-bitfield that specifies the number of write requests that are serviced by this multi-path disk.
+
+`NumberWritesWrap`
+
+An unsigned character field that specifies the total number of times the <i>NumberWrites</i> parameter has rolled around to zero.
+
+`Pad`
+
+Should be zero.
+
+`PathFailures`
+
+A 64-bit integer that specifies the total number of path failures for this multi-path disk.
 
 
 ## Requirements

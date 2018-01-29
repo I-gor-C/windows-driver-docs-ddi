@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e0ccc6e8-9351-4440-808b-e0b8eef48bc2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmProtectMdlSystemAddress
+ms.keywords : kernel.mmprotectmdlsystemaddress, k106_b2a56ec8-cfee-4547-b1c2-6f817ecbfaad.xml, wdm/MmProtectMdlSystemAddress, MmProtectMdlSystemAddress, MmProtectMdlSystemAddress routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmProtectMdlSystemAddress
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,15 +66,45 @@ Specifies the new protection setting for the memory pages. Drivers should specif
 ## Return Value
 
 <b>MmProtectMdlSystemAddress</b> returns an NTSTATUS code. The possible return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The routine successfully changed the protection type for the memory address range.
+</dl>
+</td>
+<td width="60%">
+The routine successfully changed the protection type for the memory address range.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PAGE_PROTECTION</b></dt>
-</dl>The value specified for <i>NewProtect</i> is not a valid one for this routine.
+</dl>
+</td>
+<td width="60%">
+The value specified for <i>NewProtect</i> is not a valid one for this routine.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_MAPPED_VIEW</b></dt>
-</dl>The MDL has not yet been mapped. <b>MmProtectMdlSystemAddress</b> can only be used on MDLs that have already been mapped.
+</dl>
+</td>
+<td width="60%">
+The MDL has not yet been mapped. <b>MmProtectMdlSystemAddress</b> can only be used on MDLs that have already been mapped.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -90,11 +124,8 @@ The <b>MmProtectMdlSystemAddress</b> routine can only be called on an MDL that h
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
-</dt>
-</dl>
+
  
 
  

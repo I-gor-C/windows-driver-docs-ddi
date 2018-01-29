@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b41fc37a-d41f-49ca-848f-844e049dd987
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfInterruptSynchronize
+ms.keywords : kmdf.wdfinterruptsynchronize, WdfInterruptSynchronize, wdfinterrupt/WdfInterruptSynchronize, WdfInterruptSynchronize method, wdf.wdfinterruptsynchronize, PFN_WDFINTERRUPTSYNCHRONIZE, DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfInterruptSynchronize
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -90,8 +94,6 @@ For passive level interrupts, the driver must call <b>WdfInterruptSynchronize</b
 
 Do not call <b>WdfInterruptSynchronize</b> from an arbitrary thread context,  such as a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-handlers">request handler</a>.
 
-The following code example shows how to call <b>WdfInterruptSynchronize</b> to schedule execution of an <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md">EvtInterruptSynchronize</a>  callback function.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -106,17 +108,12 @@ The following code example shows how to call <b>WdfInterruptSynchronize</b> to s
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547340">WdfInterruptAcquireLock</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547376">WdfInterruptReleaseLock</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547340">WdfInterruptAcquireLock</a>
+
 <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md">EvtInterruptSynchronize</a>
-</dt>
-</dl>
+
  
 
  

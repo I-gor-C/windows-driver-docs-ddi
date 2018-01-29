@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2C5B3C90-04A9-48CF-9162-0E069A483C5F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords : kernel.pcreate_process_notify_routine, SetCreateProcessNotifyRoutine callback function [Kernel-Mode Driver Architecture], SetCreateProcessNotifyRoutine, PCREATE_PROCESS_NOTIFY_ROUTINE, PCREATE_PROCESS_NOTIFY_ROUTINE, ntddk/SetCreateProcessNotifyRoutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetCreateProcessNotifyRoutine
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 
 # PCREATE_PROCESS_NOTIFY_ROUTINE callback function
 Process-creation callback implemented by a driver  to track the system-wide creation and deletion of processes against the driver's internal state.
+<div class="alert"><b>Warning</b>  The actions that  you can perform in this routine are restricted for safe calls. See <a href="https://msdn.microsoft.com/c01b3fd9-7f4e-4d1a-a726-b31b0eebf094">Best Practices</a>. </div><div> </div>
 
 ## Syntax
 
@@ -92,9 +97,8 @@ A driver's process-notify routine is also called with <i>Create</i> set to <b>FA
 
 ## See Also
 
-<dl>
-<dt><b>PsSetCreateProcessNotifyRoutine</b></dt>
-</dl>
+<b>PsSetCreateProcessNotifyRoutine</b>
+
  
 
  

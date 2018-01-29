@@ -7,8 +7,8 @@ old-location : netvista\rilpsmediapreference.htm
 old-project : netvista
 ms.assetid : a7fbef54-78c1-4696-8b0a-8c98d250f899
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPSMEDIAPREFERENCE, RILPSMEDIAPREFERENCE
+ms.date : 1/18/2018
+ms.keywords : RIL_PSMPREF_CELLPREFERRED, RIL_PSMPREF_NUMBER_OF_VALUES, ntddrilapitypes/RIL_PSMPREF_NUMBER_OF_VALUES, RIL_PSMPREF_CELLONLY, RILPSMEDIAPREFERENCE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PSMPREF_WIFIONLY, netvista.rilpsmediapreference, RIL_PSMPREF_WIFIPREFERRED, ntddrilapitypes/RIL_PSMPREF_WIFIPREFERRED, RIL_PSMPREF_WIFIONLY, ntddrilapitypes/RILPSMEDIAPREFERENCE, ntddrilapitypes/RIL_PSMPREF_CELLPREFERRED, RILPSMEDIAPREFERENCE, ntddrilapitypes/RIL_PSMPREF_CELLONLY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPSMEDIAPREFERENCE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPSMEDIAPREFERENCE
 ---
 
@@ -64,6 +68,11 @@ typedef enum _RILPSMEDIAPREFERENCE {
 
 <tr>
 <td>RIL_PSMPREF_NUMBER_OF_VALUES</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PSMPREF_UNKNOWN</td>
 <td></td>
 </tr>
 

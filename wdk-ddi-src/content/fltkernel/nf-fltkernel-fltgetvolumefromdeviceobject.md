@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 49dc5866-d793-41a7-9d9e-e89eea6f2f28
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeFromDeviceObject
+ms.keywords : FltGetVolumeFromDeviceObject, ifsk.fltgetvolumefromdeviceobject, fltkernel/FltGetVolumeFromDeviceObject, FltGetVolumeFromDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_fcc59f13-4385-478e-ba1b-c539f13930af.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetVolumeFromDeviceObject
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,12 +70,34 @@ Pointer to a caller-allocated variable that receives an opaque pointer for the v
 ## Return Value
 
 <b>FltGetVolumeFromDeviceObject</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The volume is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The volume is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Volume device object specified in the <i>DeviceObject</i> parameter was not a valid volume device object pointer, or no matching volume was found. This is an error code.
+</dl>
+</td>
+<td width="60%">
+Volume device object specified in the <i>DeviceObject</i> parameter was not a valid volume device object pointer, or no matching volume was found. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -97,17 +123,12 @@ To get a pointer to the device object for a given volume, call <a href="..\fltke
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetdeviceobject.md">FltGetDeviceObject</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltgetdiskdeviceobject.md">FltGetDiskDeviceObject</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetdeviceobject.md">FltGetDeviceObject</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-</dt>
-</dl>
+
  
 
  

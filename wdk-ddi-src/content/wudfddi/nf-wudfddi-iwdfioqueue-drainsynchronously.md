@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6dc32dd7-e15b-4c93-92d1-5b7206ed98c0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::DrainSynchronously, DrainSynchronously
+ms.keywords : wdf.iwdfioqueue_drainsynchronously, IWDFIoQueue interface, DrainSynchronously method, DrainSynchronously method, IWDFIoQueue interface, umdf.iwdfioqueue_drainsynchronously, wudfddi/IWDFIoQueue::DrainSynchronously, IWDFIoQueue::DrainSynchronously, DrainSynchronously, IWDFIoQueue, UMDFQueueObjectRef_35105420-0461-4879-aba2-28c32ece9aab.xml, DrainSynchronously method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.DrainSynchronously
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 None
 
-None
-
-None
-
 ## Remarks
 
 The <b>DrainSynchronously</b> method is a synchronous version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558951">IWDFIoQueue::Drain</a> method. That is, <b>DrainSynchronously</b> does not return to the driver until the queue is drained.
@@ -77,14 +77,10 @@ The <b>DrainSynchronously</b> method is a synchronous version of the <a href="ht
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558951">IWDFIoQueue::Drain</a>
-</dt>
-</dl>
+
  
 
  

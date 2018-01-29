@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7db268a4-d1ef-4d23-9b5d-cd24612d547e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateController
+ms.keywords : ntddk/IoCreateController, IoCreateController, IoCreateController routine [Kernel-Mode Driver Architecture], kernel.iocreatecontroller, k104_a7ec4f8c-84d0-4fec-9f9e-40c5d57036f1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCreateController
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive2, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -79,20 +83,14 @@ If <b>IoCreateController</b> returns <b>NULL</b>, the driver should fail device 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_controller_object.md">CONTROLLER_OBJECT</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioallocatecontroller.md">IoAllocateController</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-iofreecontroller.md">IoFreeController</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-iofreecontroller.md">IoFreeController</a>
+
+<a href="..\ntddk\ns-ntddk-_controller_object.md">CONTROLLER_OBJECT</a>
+
+<a href="..\ntddk\nf-ntddk-ioallocatecontroller.md">IoAllocateController</a>
+
  
 
  

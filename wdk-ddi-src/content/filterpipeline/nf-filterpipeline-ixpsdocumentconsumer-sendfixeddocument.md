@@ -7,8 +7,8 @@ old-location : print\ixpsdocumentconsumer_sendfixeddocument.htm
 old-project : print
 ms.assetid : 917dd9c3-5552-43d0-b396-9ba236f53132
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsDocumentConsumer, IXpsDocumentConsumer::SendFixedDocument, SendFixedDocument
+ms.date : 1/18/2018
+ms.keywords : SendFixedDocument, SendFixedDocument method [Print Devices], IXpsDocumentConsumer interface, print.ixpsdocumentconsumer_sendfixeddocument, filterpipeline/IXpsDocumentConsumer::SendFixedDocument, IXpsDocumentConsumer::SendFixedDocument, filterpipeline_a6ecc63d-889e-4ae1-8031-16accffa9c2a.xml, SendFixedDocument method [Print Devices], IXpsDocumentConsumer, IXpsDocumentConsumer interface [Print Devices], SendFixedDocument method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IXpsDocumentConsumer.SendFixedDocument
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

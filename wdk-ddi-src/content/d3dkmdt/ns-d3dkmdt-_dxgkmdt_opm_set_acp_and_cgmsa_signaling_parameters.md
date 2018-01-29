@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e4151e72-e0a6-4873-a2e8-c3321941cfd4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
+ms.keywords : d3dkmdt/DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DmStructs_64a3857d-3c66-4653-980b-72df307eba0f.xml, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure [Display Devices], display.dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
 ---
 
@@ -55,46 +59,46 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 
 ## Members
 
-        
-            `ulAspectRatioChangeMask1`
 
-            A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData1</b> member.
-        
-            `ulAspectRatioChangeMask2`
+`ulAspectRatioChangeMask1`
 
-            A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData2</b> member.
-        
-            `ulAspectRatioChangeMask3`
+A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData1</b> member.
 
-            A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData3</b> member.
-        
-            `ulAspectRatioData1`
+`ulAspectRatioChangeMask2`
 
-            32-bit data that indicates the aspect ratio value to set for the active protection standard.
-        
-            `ulAspectRatioData2`
+A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData2</b> member.
 
-            32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.
-        
-            `ulAspectRatioData3`
+`ulAspectRatioChangeMask3`
 
-            32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.
-        
-            `ulNewTVProtectionStandard`
+A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData3</b> member.
 
-            A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output.
-        
-            `ulReserved`
+`ulAspectRatioData1`
 
-            Reserved. Must be set to zero.
-        
-            `ulReserved2`
+32-bit data that indicates the aspect ratio value to set for the active protection standard.
 
-            Reserved. Must be set to zero.
-        
-            `ulReserved3`
+`ulAspectRatioData2`
 
-            Reserved. Must be set to zero.
+32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.
+
+`ulAspectRatioData3`
+
+32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.
+
+`ulNewTVProtectionStandard`
+
+A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output.
+
+`ulReserved`
+
+Reserved. Must be set to zero.
+
+`ulReserved2`
+
+Reserved. Must be set to zero.
+
+`ulReserved3`
+
+Reserved. Must be set to zero.
 
 
 ## Requirements
@@ -105,13 +109,10 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>
-</dt>
-</dl>
+
  
 
  

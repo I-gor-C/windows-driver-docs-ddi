@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7269B231-62EC-4AF3-A11E-B51A19B85160
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CLOCK, KSPROPERTY_CLOCK
+ms.keywords : ks/KSPROPERTY_CLOCK_STATE, KSPROPERTY_CLOCK_STATE, ks/KSPROPERTY_CLOCK_RESOLUTION, KSPROPERTY_CLOCK, KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME, ks/KSPROPERTY_CLOCK_CORRELATEDTIME, KSPROPERTY_CLOCK_CORRELATEDTIME, KSPROPERTY_CLOCK_PHYSICALTIME, ks/KSPROPERTY_CLOCK_TIME, stream.ksproperty_clock, ks/KSPROPERTY_CLOCK, KSPROPERTY_CLOCK_TIME, KSPROPERTY_CLOCK enumeration [Streaming Media Devices], ks/KSPROPERTY_CLOCK_PHYSICALTIME, ks/KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME, ks/KSPROPERTY_CLOCK_FUNCTIONTABLE, KSPROPERTY_CLOCK_RESOLUTION, KSPROPERTY_CLOCK_FUNCTIONTABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_CLOCK
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_CLOCK
 ---
 

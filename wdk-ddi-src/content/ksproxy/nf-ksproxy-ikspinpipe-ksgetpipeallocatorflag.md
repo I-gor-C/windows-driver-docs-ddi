@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : EBF5B615-A7B1-4B44-855C-7956334AAF75
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPinPipe, IKsPinPipe::KsGetPipeAllocatorFlag, KsGetPipeAllocatorFlag
+ms.keywords : ksproxy/IKsPinPipe::KsGetPipeAllocatorFlag, KsGetPipeAllocatorFlag, IKsPinPipe::KsGetPipeAllocatorFlag, IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsGetPipeAllocatorFlag method, KsGetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe interface, stream.ikspinpipe_ksgetpipeallocatorflag, KsGetPipeAllocatorFlag method [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPinPipe.KsGetPipeAllocatorFlag
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -56,10 +60,6 @@ This function has no parameters.
 
 If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,11 +75,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspinpipe.md">IKsPinPipe</a>
-</dt>
-</dl>
+
  
 
  

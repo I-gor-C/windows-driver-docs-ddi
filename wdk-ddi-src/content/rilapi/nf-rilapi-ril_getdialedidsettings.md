@@ -7,8 +7,8 @@ old-location : netvista\ril_getdialedidsettings.htm
 old-project : netvista
 ms.assetid : 088fd502-a209-4fec-bec0-9f47f61022ee
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL_GetDialedIdSettings
+ms.date : 1/18/2018
+ms.keywords : netvista.ril_getdialedidsettings, RIL_GetDialedIdSettings, RIL_GetDialedIdSettings method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetDialedIdSettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL_GetDialedIdSettings
-req.alt-loc : rilapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product : Windows 10 or later.
 ---
 

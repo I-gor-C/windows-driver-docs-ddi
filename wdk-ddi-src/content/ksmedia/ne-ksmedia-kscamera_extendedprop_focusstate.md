@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2B74DB73-1D27-49E6-B1D8-8246FCE2F5E1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSCAMERA_EXTENDEDPROP_FOCUSSTATE, KSCAMERA_EXTENDEDPROP_FOCUSSTATE
+ms.keywords : ksmedia/KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED, ksmedia/KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED, KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED, ksmedia/KSCAMERA_EXTENDEDPROP_FOCUSSTATE_LOST, KSCAMERA_EXTENDEDPROP_FOCUSSTATE_LOST, KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED, ksmedia/KSCAMERA_EXTENDEDPROP_FOCUSSTATE, KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED, KSCAMERA_EXTENDEDPROP_FOCUSSTATE_SEARCHING, stream.kscamera_extendedprop_focusstate, ksmedia/KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED, ksmedia/KSCAMERA_EXTENDEDPROP_FOCUSSTATE_SEARCHING, KSCAMERA_EXTENDEDPROP_FOCUSSTATE enumeration [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_FOCUSSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_EXTENDEDPROP_FOCUSSTATE
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSCAMERA_EXTENDEDPROP_FOCUSSTATE
 ---
 

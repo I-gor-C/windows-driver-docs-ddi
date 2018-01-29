@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3C36DB8F-46C2-4E81-B2F3-6DE78D91566E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortWriteRegisterBufferUlong64
+ms.keywords : StorPortWriteRegisterBufferUlong64 routine [Storage Devices], StorPortWriteRegisterBufferUlong64, storport/StorPortWriteRegisterBufferUlong64, storage.storportwriteregisterbufferulong64
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortWriteRegisterBufferUlong64
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : storport.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -53,19 +57,19 @@ This <b>StorPortWriteRegisterBufferUlong64</b> routine writes a number of <b>ULO
 
 `h`
 
-
+TBD
 
 `r`
 
-
+TBD
 
 `b`
 
-
+TBD
 
 `c`
 
-
+TBD
 
 
 ## Return Value
@@ -90,11 +94,8 @@ The <b>StorPortWriteRegisterBufferUlong64</b> routine is only available on the 6
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportreadregisterbufferulong64.md">StorPortReadRegisterBufferUlong64</a>
-</dt>
-</dl>
+
  
 
  

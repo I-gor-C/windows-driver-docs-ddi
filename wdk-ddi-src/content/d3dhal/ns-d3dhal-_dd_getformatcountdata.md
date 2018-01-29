@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5f334f48-a262-4b09-98c4-766039de3f0e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_GETFORMATCOUNTDATA, DD_GETFORMATCOUNTDATA
+ms.keywords : display.dd_getformatcountdata, d3dstrct_610983cc-4f8a-4c16-b60b-960dbf0c58e9.xml, d3dhal/DD_GETFORMATCOUNTDATA, _DD_GETFORMATCOUNTDATA, DD_GETFORMATCOUNTDATA structure [Display Devices], DD_GETFORMATCOUNTDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DD_GETFORMATCOUNTDATA
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_GETFORMATCOUNTDATA
 ---
 
@@ -51,23 +55,23 @@ typedef struct _DD_GETFORMATCOUNTDATA {
 
 ## Members
 
-        
-            `dwFormatCount`
 
-            Receives the number of supported surface formats.
-        
-            `dwReserved`
+`dwFormatCount`
 
-            <b>DirectX 8.0 and 8.1 versions only.</b> Specifies a reserved field. Driver should not read or write.
+Receives the number of supported surface formats.
+
+`dwReserved`
+
+<b>DirectX 8.0 and 8.1 versions only.</b> Specifies a reserved field. Driver should not read or write.
 
 <b>DirectX 9.0 and later versions only.</b> Specifies the version of the DirectX runtime being used by the application. This member is set to DD_RUNTIME_VERSION, which is 0x00000900 for DirectX 9.0.
-        
-            `gdi2`
 
-            Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.
+`gdi2`
 
-    ## Remarks
-        To handle the D3DGDI2_TYPE_GETFORMATCOUNT request, the driver must store the number of DirectX 8.0 and later DDI style surface formats that it supports in the <b>dwFormatCount</b> member of DD_GETFORMATCOUNTDATA. For more information, see <a href="https://msdn.microsoft.com/5e60d6e3-d0a2-4b52-86cb-06de839f970a">The Texture Format List</a>.
+Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.
+
+## Remarks
+To handle the D3DGDI2_TYPE_GETFORMATCOUNT request, the driver must store the number of DirectX 8.0 and later DDI style surface formats that it supports in the <b>dwFormatCount</b> member of DD_GETFORMATCOUNTDATA. For more information, see <a href="https://msdn.microsoft.com/5e60d6e3-d0a2-4b52-86cb-06de839f970a">The Texture Format List</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,16 +81,12 @@ typedef struct _DD_GETFORMATCOUNTDATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+
  
 
  

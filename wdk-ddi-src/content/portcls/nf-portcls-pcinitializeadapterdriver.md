@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c9d019da-a05b-4c60-99e9-06b8537fa78e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcInitializeAdapterDriver
+ms.keywords : PcInitializeAdapterDriver function [Audio Devices], PcInitializeAdapterDriver, portcls/PcInitializeAdapterDriver, audpc-routines_57c7e54d-ab27-4752-b13b-9d7de107322c.xml, audio.pcinitializeadapterdriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcInitializ
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcInitializeAdapterDriver
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -61,7 +65,6 @@ Specifies the registry path name that is to be passed as a parameter to the adap
 `AddDevice`
 
 Pointer to the adapter's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> function. This is a pointer of type PDRIVER_ADD_DEVICE, which is defined in ntddk.h to be:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -87,30 +90,52 @@ Pointer to the adapter's <a href="https://msdn.microsoft.com/library/windows/har
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> handler supplied in the call to this function should call <a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>. For more information, see <a href="https://msdn.microsoft.com/bf88b9de-f4c4-4f9c-9355-603789b9ad3d">Startup Sequence</a>.
 
 The <b>PcInitializeAdapterDriver</b> function loads pointers to handlers for the following IRPs into the driver object:
-
+<ul>
+<li>
 IRP_MJ_CLOSE
 
+</li>
+<li>
 IRP_MJ_CREATE
 
+</li>
+<li>
 IRP_MJ_DEVICE_CONTROL
 
+</li>
+<li>
 IRP_MJ_FLUSH_BUFFERS
 
+</li>
+<li>
 IRP_MJ_PNP
 
+</li>
+<li>
 IRP_MJ_POWER
 
+</li>
+<li>
 IRP_MJ_QUERY_SECURITY
 
+</li>
+<li>
 IRP_MJ_READ
 
+</li>
+<li>
 IRP_MJ_SET_SECURITY
 
+</li>
+<li>
 IRP_MJ_SYSTEM_CONTROL
 
+</li>
+<li>
 IRP_MJ_WRITE
 
-PortCls uses its own internal handlers for the CREATE, PNP, POWER, and SYSTEM_CONTROL IRPs above. It uses the default KS handlers for the other seven IRPs.
+</li>
+</ul>PortCls uses its own internal handlers for the CREATE, PNP, POWER, and SYSTEM_CONTROL IRPs above. It uses the default KS handlers for the other seven IRPs.
 
 An adapter driver that overwrites one or more of the pointers above with a pointer to its own IRP handler can call <a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a> from within its handler routine in order to forward the IRP to PortCls. For a code example, see the SB16 sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
@@ -128,23 +153,16 @@ An adapter driver that overwrites one or more of the pointers above with a point
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
-</dt>
-<dt>
-<a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>
-</dt>
-<dt>
 <a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
+<a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+
  
 
  

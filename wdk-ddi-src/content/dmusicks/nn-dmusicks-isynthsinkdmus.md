@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3bff4242-3e7b-424e-ac86-121267a2c32a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISynthSinkDMus, ISynthSinkDMus::SyncToMaster, SyncToMaster
+ms.keywords : audio.isynthsinkdmus, ISynthSinkDMus interface [Audio Devices], ISynthSinkDMus interface [Audio Devices], described, ISynthSinkDMus, dmusicks/ISynthSinkDMus, audmp-routines_744ae6c7-7f7e-4a66-9624-5a5d82e2eb86.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISynthSinkDMus
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 

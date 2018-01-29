@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 12f19ef8-ce7c-4a04-814a-a8c34beca1b9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcUnregisterIoTimeout
+ms.keywords : audio.iminiportwavecyclic, IMiniportWaveCyclic interface [Audio Devices], IMiniportWaveCyclic interface [Audio Devices], described, IMiniportWaveCyclic, portcls/IMiniportWaveCyclic, audmp-routines_e9dda3e8-2545-4734-bf66-e08ff0c4a1e0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveCyclic
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 

@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_L2CA_OPEN_ENHANCED_CHANNEL,
+ms.keywords : bltooth._brb_l2ca_open_enhanced_channel, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth.brb_l2ca_open_enhanced_channel, BRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 8 and later versions of Windows
+req.target-min-winverclnt : Versions: Supported in Windows 8 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BRB_L2CA_OPEN_ENHANCED_CHANNEL
-req.alt-loc : Bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -89,29 +93,28 @@ typedef struct _BRB_L2CA_OPEN_ENHANCED_CHANNEL {
 
 ## Members
 
-        
-            `BtAddress`
 
-            The Bluetooth address of the device for which the connection is intended.
-        
-            `Callback`
+`BtAddress`
 
-            The 
-     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback_enhanced.md">Enhanced L2CAP Callback
-     Function</a> implemented by the profile driver, that the Bluetooth driver stack should call to notify
+The Bluetooth address of the device for which the connection is intended.
+
+`Callback`
+
+The 
+     <mshelp:link keywords="bltooth.enhanced_l2cap_callback_function" tabindex="0"><i>Enhanced L2CAP Callback
+     Function</i></mshelp:link> implemented by the profile driver, that the Bluetooth driver stack should call to notify
      the profile driver about any changes to the enhanced L2CAP connection.
-        
-            `CallbackContext`
 
-            The context to pass to the callback function specified in the 
+`CallbackContext`
+
+The context to pass to the callback function specified in the 
      <b>Callback</b> member. The profile driver defines this value.
-        
-            `CallbackFlags`
 
-            A flag that specifies which events should generate a callback routine to notify the profile driver
+`CallbackFlags`
+
+A flag that specifies which events should generate a callback routine to notify the profile driver
      that the event has occurred. Valid flag values are contained in the following table.
      
-
 <table>
 <tr>
 <th>Flag</th>
@@ -177,13 +180,12 @@ If set, the callback routine will be called when the profile driver receives an 
 </td>
 </tr>
 </table>
-        
-            `ChannelFlags`
 
-            Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+`ChannelFlags`
+
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
      the following table:
      
-
 <table>
 <tr>
 <td>
@@ -226,56 +228,56 @@ The profile driver indicates its preference that users not be prompted for a PIN
 </td>
 </tr>
 </table>
-        
-            `ChannelHandle`
 
-            
-        
-            `ConfigIn`
+`ChannelHandle`
 
-            The substructure that contains parameter settings to validate incoming
+
+
+`ConfigIn`
+
+The substructure that contains parameter settings to validate incoming
      <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</b> BRBs that are sent from a remote device.
-        
-            `ConfigOut`
 
-            The substructure that contains parameter settings for a <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL</b> BRB sent to a remote
+`ConfigOut`
+
+The substructure that contains parameter settings for a <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL</b> BRB sent to a remote
      device.
-        
-            `Hdr`
 
-            A 
+`Hdr`
+
+A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
-        
-            `IncomingQueueDepth`
 
-            Specifies the incoming queue length in message transfer units (MTUs).
-        
-            `InResults`
+`IncomingQueueDepth`
 
-            A CHANNEL_CONFIG_RESULTS_ENHANCED structure that contains configuration parameters negotiated for the inbound
+Specifies the incoming queue length in message transfer units (MTUs).
+
+`InResults`
+
+A CHANNEL_CONFIG_RESULTS_ENHANCED structure that contains configuration parameters negotiated for the inbound
      request.
-        
-            `OutResults`
 
-            A 
+`OutResults`
+
+A 
      <a href="..\bthddi\ns-bthddi-_channel_config_results_enhanced.md">CHANNEL_CONFIG_RESULTS_ENHANCED</a> structure that
      contains configuration parameters negotiated for the outbound request.
-        
-            `ReferenceObject`
 
-            A pointer to an object to pass to 
+`ReferenceObject`
+
+A pointer to an object to pass to 
      <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a> and 
      <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> for which to
      maintain a reference count of.
-        
-            `Reserved`
 
-            Reserved member. Do not use.
+`Reserved`
 
-    ## Remarks
-        Profile drivers can use CM_BASIC | CM_RETRANSMISSION_AND_FLOW, or CM_BASIC | CM_STREAMING modes for the <b>Flags</b> member. This indicates to open an enhanced retransmission mode, or streaming mode channel if possible, and if not fall back to basic mode channel. 
-A value of CM_RETRANSMISSION_AND_FLOW | CM_STREAMING is not supported.</p>
+Reserved member. Do not use.
+
+## Remarks
+Profile drivers can use CM_BASIC | CM_RETRANSMISSION_AND_FLOW, or CM_BASIC | CM_STREAMING modes for the <b>Flags</b> member. This indicates to open an enhanced retransmission mode, or streaming mode channel if possible, and if not fall back to basic mode channel. 
+A value of CM_RETRANSMISSION_AND_FLOW | CM_STREAMING is not supported.
 
 ## Requirements
 | &nbsp; | &nbsp; |

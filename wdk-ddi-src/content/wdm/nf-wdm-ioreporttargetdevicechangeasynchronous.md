@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 69ffe74f-59f9-41d6-a494-ee00be5bec62
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoReportTargetDeviceChangeAsynchronous
+ms.keywords : k104_b66839d5-f3b6-4f30-bf24-7b4ee869e733.xml, wdm/IoReportTargetDeviceChangeAsynchronous, IoReportTargetDeviceChangeAsynchronous routine [Kernel-Mode Driver Architecture], IoReportTargetDeviceChangeAsynchronous, kernel.ioreporttargetdevicechangeasynchronous
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoReportTargetDeviceChangeAsynchronous
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,6 @@ The PnP manager fills in the <i>NotificationStructure</i>.<b>FileObject</b> fiel
 Optionally points to a caller-supplied routine that the PnP manager calls after it finishes notifying drivers that registered for this custom event.
 
 The callback routine has the following type:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -83,8 +86,7 @@ VOID
     );</pre>
 </td>
 </tr>
-</table></span></div>
-A device-change-complete callback routine should not block and must not call synchronous routines that generate PnP events.
+</table></span></div>A device-change-complete callback routine should not block and must not call synchronous routines that generate PnP events.
 
 The PnP manager calls device-change-complete callback routines at IRQL = PASSIVE_LEVEL.
 
@@ -96,9 +98,23 @@ Optionally points to a caller-supplied context structure that the PnP manager pa
 ## Return Value
 
 <b>IoReportTargetDeviceChangeAsynchronous</b> returns STATUS_SUCCESS or an appropriate error status. Possible error status values include the following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The caller specified a system PnP event, such as GUID_TARGET_DEVICE_QUERY_REMOVE. This routine is only for custom events.
+</dl>
+</td>
+<td width="60%">
+The caller specified a system PnP event, such as GUID_TARGET_DEVICE_QUERY_REMOVE. This routine is only for custom events.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -126,14 +142,10 @@ Callers of <b>IoReportTargetDeviceChangeAsynchronous</b> must be running at IRQL
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-ioreporttargetdevicechange.md">IoReportTargetDeviceChange</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E068ECD0-059A-46E1-9D9E-64EA81B73BD6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSubmitWaitForSyncObjectsToHwQueue
+ms.keywords : D3DKMTSubmitWaitForSyncObjectsToHwQueue function [Display Devices], display.d3dkmtsubmitwaitforsyncobjectstohwqueue, D3DKMTSubmitWaitForSyncObjectsToHwQueue, d3dkmthk/D3DKMTSubmitWaitForSyncObjectsToHwQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTSubmitWaitForSyncObjectsToHwQueue
-req.alt-loc : tbd
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Tbd
 req.dll : Tbd
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTSubmitWaitForSyncObjectsToHwQueue(
 
 `D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE`
 
-
+TBD
 
 
 ## Return Value

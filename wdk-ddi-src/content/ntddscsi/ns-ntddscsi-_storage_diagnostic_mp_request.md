@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1F2B15A6-7C05-4FBA-B54F-EEF013FF5739
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST
+ms.keywords : _STORAGE_DIAGNOSTIC_MP_REQUEST, ntddscsi/STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST, ntddscsi/PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST, storage.storage_diagnostic_mp_request, PSTORAGE_DIAGNOSTIC_MP_REQUEST structure pointer [Storage Devices], PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_DIAGNOSTIC_MP_REQUEST
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
 ---
 
 # _STORAGE_DIAGNOSTIC_MP_REQUEST structure
@@ -53,40 +57,40 @@ typedef struct _STORAGE_DIAGNOSTIC_MP_REQUEST {
 
 ## Members
 
-        
-            `BufferSize`
 
-            Specifies the Data buffer size. As an input buffer, <i>BufferSize</i> should be set to number of bytes allocated for the <i>DataBuffer</i>. If the request is failed because of buffer too short, <i>BufferSize</i> should be set to the
+`BufferSize`
+
+Specifies the Data buffer size. As an input buffer, <i>BufferSize</i> should be set to number of bytes allocated for the <i>DataBuffer</i>. If the request is failed because of buffer too short, <i>BufferSize</i> should be set to the
        length required for <i>DataBuffer</i> by the diagnostic data provider;
        If the request is successful, it should be filled with returned data size of <i>DataBuffer</i>.       For other cases, it should be cleared to 0.
-        
-            `DataBuffer`
 
-            Specifies the Diagnostic data buffer.
-        
-            `Level`
+`DataBuffer`
 
-            Specifies the Diagnostic level. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_level.md">STORAGE_DIAGNOSTIC_LEVEL</a>.
-        
-            `ProviderId`
+Specifies the Diagnostic data buffer.
 
-            Specifies the GUID of the diagnostic data provider.
-        
-            `Reserved`
+`Level`
 
-            Reserved for future use.
-        
-            `Size`
+Specifies the Diagnostic level. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_level.md">STORAGE_DIAGNOSTIC_LEVEL</a>.
 
-            Specifies the whole size of the structure and the associated data buffer.
-        
-            `TargetType`
+`ProviderId`
 
-            Specifies the request target type. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_target_type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>.
-        
-            `Version`
+Specifies the GUID of the diagnostic data provider.
 
-            Version of this structure.
+`Reserved`
+
+Reserved for future use.
+
+`Size`
+
+Specifies the whole size of the structure and the associated data buffer.
+
+`TargetType`
+
+Specifies the request target type. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_target_type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>.
+
+`Version`
+
+Version of this structure.
 
 
 ## Requirements
@@ -97,22 +101,16 @@ typedef struct _STORAGE_DIAGNOSTIC_MP_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_diagnostic.md">IOCTL_SCSI_MINIPORT_DIAGNOSTIC</a>
-</dt>
-<dt>
-<a href="..\ntddstor\ns-ntddstor-_storage_diagnostic_data.md">STORAGE_DIAGNOSTIC_DATA</a>
-</dt>
-<dt>
 <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_level.md">STORAGE_DIAGNOSTIC_LEVEL</a>
-</dt>
-<dt>
+
+<a href="..\ntddstor\ns-ntddstor-_storage_diagnostic_data.md">STORAGE_DIAGNOSTIC_DATA</a>
+
 <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_target_type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_diagnostic.md">IOCTL_SCSI_MINIPORT_DIAGNOSTIC</a>
+
  
 
  

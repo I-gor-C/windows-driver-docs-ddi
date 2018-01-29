@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : B65A2268-6959-4630-97DA-C0CFD37D9174
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : UFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR
+ms.keywords : PUFS_CONFIG_DESCRIPTOR structure pointer [Storage Devices], UFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR structure [Storage Devices], storage.ufs_config_descriptor, ufs/UFS_CONFIG_DESCRIPTOR, ufs/PUFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR, PUFS_CONFIG_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UFS_CONFIG_DESCRIPTOR
-req.alt-loc : Ufs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -58,48 +62,57 @@ typedef struct _UFS_CONFIG_DESCRIPTOR {
 
 ## Members
 
-        
-            `bBootEnable`
 
-            Specifies if a device's boot feature is enabled.
-        
-            `bDescrAccessEn`
+`bBootEnable`
 
-            Enables access to the Device Descriptor after the
+Specifies if a device's boot feature is enabled.
+
+`bDescrAccessEn`
+
+Enables access to the Device Descriptor after the
 partial initialization phase of the boot sequence.
-        
-            `bDescriptorIDN`
 
-            Specifies the Configuration Descriptor Type Identifier. This descriptor will have a value of <b>UFS_DESC_CONFIGURATION_IDN</b>.
-        
-            `bHighPriorityLUN`
+`bDescriptorIDN`
 
-            <b>bHighPriorityLUN</b> configures the high priority logical unit.
-        
-            `bInitPowerMode`
+Specifies the Configuration Descriptor Type Identifier. This descriptor will have a value of <b>UFS_DESC_CONFIGURATION_IDN</b>.
 
-            Specifies the power mode after device initialization
+`bHighPriorityLUN`
+
+<b>bHighPriorityLUN</b> configures the high priority logical unit.
+
+`bInitActiveICCLevel`
+
+Configures the ICC level in Active mode after device
+initialization or hardware reset.
+
+`bInitPowerMode`
+
+Specifies the power mode after device initialization
 or hardware reset.
-        
-            `bLength`
 
-            Specifies the size, in bytes, of this descriptor.
-        
-            `bSecureRemovalType`
+`bLength`
 
-            Configures the secure removal type.
-        
-            `Reserved1`
+Specifies the size, in bytes, of this descriptor.
 
-            Reserved for future use.
-        
-            `UnitConfig`
+`bSecureRemovalType`
 
-            Contains the configurable parameters of the Unit Descriptor.
-        
-            `wPeriodicRTCUpdate`
+Configures the secure removal type.
 
-            Specifies the frequency and method of real-time clock updates.
+`Reserved1`
+
+Reserved for future use.
+
+`Reserved2`
+
+Reserved for future use.
+
+`UnitConfig`
+
+Contains the configurable parameters of the Unit Descriptor.
+
+`wPeriodicRTCUpdate`
+
+Specifies the frequency and method of real-time clock updates.
 
 
 ## Requirements
@@ -110,13 +123,10 @@ or hardware reset.
 | **Minimum UMDF version** |  |
 | **Header** | ufs.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ufs\ns-ufs-ufs_unit_config_descriptor.md">UFS_UNIT_CONFIG_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

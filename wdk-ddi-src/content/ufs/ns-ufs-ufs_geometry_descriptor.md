@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR
+ms.keywords : PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices], storage.ufs_geometry_descriptor, ufs/UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, ufs/PUFS_GEOMETRY_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UFS_GEOMETRY_DESCRIPTOR
-req.alt-loc : Ufs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -80,15 +84,14 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
 
 ## Members
 
-        
-            `bAllocationUnitSize`
 
-            Specifies the allocation unit size in number of segments.
-        
-            `bDataOrdering`
+`bAllocationUnitSize`
 
-            Specifies if a device supports out-of-order data transfer. Contains one of the following values:
+Specifies the allocation unit size in number of segments.
 
+`bDataOrdering`
+
+Specifies if a device supports out-of-order data transfer. Contains one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -107,16 +110,15 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
 <td>Reserved for future use.</td>
 </tr>
 </table>
-        
-            `bDescriptorIDN`
 
-            Specifies the type of the descriptor. This descriptor will have a value of<b> UFS_DESC_GEOMETRY_IDN</b>.
-        
-            `bDynamicCapacityResourcePolicy`
+`bDescriptorIDN`
 
-            Specifies a device's spare blocks
+Specifies the type of the descriptor. This descriptor will have a value of<b> UFS_DESC_GEOMETRY_IDN</b>.
+
+`bDynamicCapacityResourcePolicy`
+
+Specifies a device's spare blocks
 resource management policy. Contains one of the following values:
-
 <table>
 <tr>
 <th>Value</th>
@@ -133,23 +135,22 @@ per logical unit.</td>
 per memory type.</td>
 </tr>
 </table>
-        
-            `bLength`
 
-            Specifies the length of the descriptor.
-        
-            `bMaxContexIDNumber`
+`bLength`
 
-            Specifies the max number of contexts supported by a device. This number must be greater than 5.
-        
-            `bMaxInBufferSize`
+Specifies the length of the descriptor.
 
-            Specifies the max size of the data-in buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
-        
-            `bMaxNumberLU`
+`bMaxContexIDNumber`
 
-            Specifies the maximum number of logical unit(s) supported by the UFS (Universal Flash Storage). Contains one of the following values:
+Specifies the max number of contexts supported by a device. This number must be greater than 5.
 
+`bMaxInBufferSize`
+
+Specifies the max size of the data-in buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+
+`bMaxNumberLU`
+
+Specifies the maximum number of logical unit(s) supported by the UFS (Universal Flash Storage). Contains one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -168,36 +169,35 @@ per memory type.</td>
 <td>Reserved for future use.</td>
 </tr>
 </table>
-        
-            `bMaxOutBufferSize`
 
-            Specifies the max size of the data-out buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
-        
-            `bMediaTechnology`
+`bMaxOutBufferSize`
 
-            Reserved for future use.
-        
-            `bMinAddrBlockSize`
+Specifies the max size of the data-out buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
 
-            Specifies the minimum addressable block size in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
-        
-            `bOptimalReadBlockSize`
+`bMediaTechnology`
 
-            Specifies the optimal read block size in units of 512 bytes.
-        
-            `bOptimalWriteBlockSize`
+Reserved for future use.
 
-            Specifies the optimal write block size in units of 512 bytes. <b>bOptimalWriteBlockSize</b> is equal to or greater than <b>bMinAddrBlockSize</b>.
-        
-            `bRPMB_ReadWriteSize`
+`bMinAddrBlockSize`
 
-            Specifies the maximum number of Replay Protected Memory Block (RPMB) frames allowed in Security Protocol In and Security
+Specifies the minimum addressable block size in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+
+`bOptimalReadBlockSize`
+
+Specifies the optimal read block size in units of 512 bytes.
+
+`bOptimalWriteBlockSize`
+
+Specifies the optimal write block size in units of 512 bytes. <b>bOptimalWriteBlockSize</b> is equal to or greater than <b>bMinAddrBlockSize</b>.
+
+`bRPMB_ReadWriteSize`
+
+Specifies the maximum number of Replay Protected Memory Block (RPMB) frames allowed in Security Protocol In and Security
 Protocol Out. Each frame is 256-bytes.
-        
-            `bSupportedSecRTypes`
 
-            Specifies the supported Secure Removal types. The first 3 bits of the variable are flags that represent different supported Secure Removal types. 
+`bSupportedSecRTypes`
 
+Specifies the supported Secure Removal types. The first 3 bits of the variable are flags that represent different supported Secure Removal types. 
 <table>
 <tr>
 <th>Bit</th>
@@ -229,85 +229,88 @@ mechanism.</td>
 <td>Reserved for future use.</td>
 </tr>
 </table>
-        
-            `bSysDataTagResSize`
 
-            Specifies the maximum size in bytes allocated by
+`bSysDataTagResSize`
+
+Specifies the maximum size in bytes allocated by
 the device to handle system data.
-        
-            `bSysDataTagUnitSize`
 
-            Specifies the system data tag
+`bSysDataTagUnitSize`
+
+Specifies the system data tag
 unit size.
-        
-            `dEnhanced1MaxNAllocU`
 
-            specifies the max number of Allocation Units for the enhanced
+`dEnhanced1MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
 memory type 1.
-        
-            `dEnhanced2MaxNAllocU`
 
-            specifies the max number of Allocation Units for the enhanced
+`dEnhanced2MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
 memory type 2.
-        
-            `dEnhanced3MaxNAllocU`
 
-            specifies the max number of Allocation Units for the enhanced
+`dEnhanced3MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
 memory type 3.
-        
-            `dEnhanced4MaxNAllocU`
 
-            specifies the max number of Allocation Units for the enhanced
+`dEnhanced4MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
 memory type 4.
-        
-            `dNonPersistMaxNAllocU`
 
-            Species the maximum number of Allocation Units for a non-persistent memory type.
-        
-            `dOptimalLogicalBlockSize`
+`dNonPersistMaxNAllocU`
 
-            Specifies the optimal logical block size.
-        
-            `dSegmentSize`
+Species the maximum number of Allocation Units for a non-persistent memory type.
 
-            Specifies the segment size of the device in units of 512 bytes.
-        
-            `dSystemCodeMaxNAllocU`
+`dOptimalLogicalBlockSize`
 
-            Specifies the maximum number of allocation units for the System Code for a device.
-        
-            `Reserved1`
+Specifies the optimal logical block size.
 
-            Reserved for future use.
-        
-            `wEnhanced1CapAdjFac`
+`dSegmentSize`
 
-            specifies the Capacity Adjustment Factor for the enhanced
+Specifies the segment size of the device in units of 512 bytes.
+
+`dSystemCodeMaxNAllocU`
+
+Specifies the maximum number of allocation units for the System Code for a device.
+
+`qTotalRawDeviceCapacity`
+
+Specifies the total raw device capacity. Expressed in units of 512 bytes.
+
+`Reserved1`
+
+Reserved for future use.
+
+`wEnhanced1CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
 memory type 1.
-        
-            `wEnhanced2CapAdjFac`
 
-            specifies the Capacity Adjustment Factor for the enhanced
+`wEnhanced2CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
 memory type 2.
-        
-            `wEnhanced3CapAdjFac`
 
-            specifies the Capacity Adjustment Factor for the enhanced
+`wEnhanced3CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
 memory type 3.
-        
-            `wEnhanced4CapAdjFac`
 
-            specifies the Capacity Adjustment Factor for the enhanced
+`wEnhanced4CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
 memory type 4.
-        
-            `wNonPersistCapAdjFac`
 
-            Specifies the capacity adjustment factor for the non-persistent memory type.
-        
-            `wSupportedMemoryTypes`
+`wNonPersistCapAdjFac`
 
-            Specifies the supported memory types in a bitmap.
+Specifies the capacity adjustment factor for the non-persistent memory type.
 
+`wSupportedMemoryTypes`
+
+Specifies the supported memory types in a bitmap.
 <table>
 <tr>
 <th>Bit</th>
@@ -350,16 +353,16 @@ memory type 4.
 <td>A RPMB memory type is supported.</td>
 </tr>
 </table>
-        
-            `wSystemCodeCapAdjFac`
 
-            Species the Capacity Adjustment Factor for the System Code
+`wSystemCodeCapAdjFac`
+
+Species the Capacity Adjustment Factor for the System Code
 memory type.
 
-    ## Remarks
-        If the size of the data transferred exceeds the number of frames <b>bRPMB_ReadWriteSize</b>, it will be done in multiple Security commands.
+## Remarks
+If the size of the data transferred exceeds the number of frames <b>bRPMB_ReadWriteSize</b>, it will be done in multiple Security commands.
 
-The Capacity Adjustment Factor value for a normal memory type is equal to 1.</p>
+The Capacity Adjustment Factor value for a normal memory type is equal to 1.
 
 ## Requirements
 | &nbsp; | &nbsp; |

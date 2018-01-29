@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 31A1EAFB-FA48-432D-963E-EA907B43F08A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MULTIPLANE_OVERLAY_PLANE2, DXGK_MULTIPLANE_OVERLAY_PLANE2
+ms.keywords : _DXGK_MULTIPLANE_OVERLAY_PLANE2, DXGK_MULTIPLANE_OVERLAY_PLANE2 structure [Display Devices], d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE2, DXGK_MULTIPLANE_OVERLAY_PLANE2, display.dxgk_multiplane_overlay_plane2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MULTIPLANE_OVERLAY_PLANE2
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MULTIPLANE_OVERLAY_PLANE2
 ---
 
@@ -51,30 +55,30 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE2 {
 
 ## Members
 
-        
-            `AllocationAddress`
 
-            A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address within the segment that <b>AllocationSegment</b> specifies, where the data is read.
-        
-            `AllocationSegment`
+`AllocationAddress`
 
-            The identifier of a segment that data is read from.
-        
-            `Enabled`
+A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address within the segment that <b>AllocationSegment</b> specifies, where the data is read.
 
-            Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled for display.
-        
-            `hAllocation`
+`AllocationSegment`
 
-            A handle to the allocation to be displayed on the overlay plane.
-        
-            `LayerIndex`
+The identifier of a segment that data is read from.
 
-            The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
-        
-            `PlaneAttributes`
+`Enabled`
 
-            A structure of type <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> that specifies overlay plane attributes.
+Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled for display.
+
+`hAllocation`
+
+A handle to the allocation to be displayed on the overlay plane.
+
+`LayerIndex`
+
+The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
+
+`PlaneAttributes`
+
+A structure of type <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> that specifies overlay plane attributes.
 
 
 ## Requirements
@@ -85,16 +89,12 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE2 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay2.md">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a>
-</dt>
-</dl>
+
  
 
  

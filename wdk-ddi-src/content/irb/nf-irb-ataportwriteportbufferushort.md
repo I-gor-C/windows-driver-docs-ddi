@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b2b5b126-8cb3-494f-a67e-f8d4f37ec639
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortWritePortBufferUshort
+ms.keywords : AtaPortWritePortBufferUshort, irb/AtaPortWritePortBufferUshort, atartns_78cda4b1-7995-40c3-a784-ed66d8a8d520.xml, AtaPortWritePortBufferUshort routine [Storage Devices], storage.ataportwriteportbufferushort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortWritePortBufferUshort
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortWritePortBufferUshort function
 The <b>AtaPortWritePortBufferUshort</b> routine transfers the indicated number of USHORT values from a buffer to the HBA.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -82,17 +87,12 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
-</dt>
-<dt>
+
 <a href="..\irb\nf-irb-ataportwriteportbufferuchar.md">AtaPortWritePortBufferUchar</a>
-</dt>
-<dt>
+
 <a href="..\irb\nf-irb-ataportwriteportbufferulong.md">AtaPortWritePortBufferUlong</a>
-</dt>
-</dl>
+
  
 
  

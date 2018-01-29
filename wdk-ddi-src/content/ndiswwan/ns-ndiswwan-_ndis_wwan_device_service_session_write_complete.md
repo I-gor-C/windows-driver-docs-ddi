@@ -7,8 +7,8 @@ old-location : netvista\ndis_wwan_device_service_session_write_complete.htm
 old-project : netvista
 ms.assetid : 16A48882-BEA6-4F95-8E9F-572BFD102031
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+ms.date : 1/18/2018
+ms.keywords : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, netvista.ndis_wwan_device_service_session_write_complete, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
-req.alt-loc : ndiswwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure
@@ -47,16 +51,15 @@ typedef struct _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE {
 
 ## Members
 
-        
-            `Header`
 
-            The header with type, revision, and size information about the NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+`Header`
+
+The header with type, revision, and size information about the NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
      structure. The MB Service sets the header with the values that are shown in the following table when it
      sends the data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
-
 <table>
 <tr>
 <th>Header submember</th>
@@ -92,15 +95,14 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE)
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
-        
-            `uStatus`
 
-            The status of the completion of the write operation.
+`uStatus`
+
+The status of the completion of the write operation.
 
 
 ## Requirements

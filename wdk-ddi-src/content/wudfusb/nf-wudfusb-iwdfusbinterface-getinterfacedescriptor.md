@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ae4cffc8-65db-452c-9b85-19752c32c421
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface, IWDFUsbInterface::GetInterfaceDescriptor, GetInterfaceDescriptor
+ms.keywords : wdf.iwdfusbinterface_getinterfacedescriptor, wudfusb/IWDFUsbInterface::GetInterfaceDescriptor, umdf.iwdfusbinterface_getinterfacedescriptor, UMDFUSBref_2d9877fd-47c4-4629-8656-d5d513260b2d.xml, GetInterfaceDescriptor method, IWDFUsbInterface interface, IWDFUsbInterface interface, GetInterfaceDescriptor method, IWDFUsbInterface::GetInterfaceDescriptor, GetInterfaceDescriptor, GetInterfaceDescriptor method, IWDFUsbInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbInterface.GetInterfaceDescriptor
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -80,14 +84,10 @@ For a code example of how to use the <b>GetInterfaceDescriptor</b> method, see <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560381">IWDFUsbTargetDevice::RetrieveUsbInterface</a>
-</dt>
-</dl>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
+
  
 
  

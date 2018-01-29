@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : F5852D3B-FD30-4308-A08E-B7DEA86A35E6
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidRegisterMinidriver
+ms.keywords : hid.ioctl_umdf_get_physical_descriptor, IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR control code, IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR, hidport/IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR, umdf.ioctl_umdf_get_physical_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR
-req.alt-loc : Hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR IOCTL
@@ -45,7 +49,7 @@ The <b>IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR</b>
 A UMDF-based driver obtains the size, in bytes, of the buffer by calling <a href="https://msdn.microsoft.com/96de6f7a-da1d-44a6-b1f7-44859312a662">IWDFRequest::GetDeviceIoControlParameters</a> and providing the  <i>pOutBufferSize</i> parameter.
 
 ### Input Buffer Length
-None
+<text></text>
 
 ### Output Buffer
 The driver copies the physical descriptor to the user buffer that is retrieved by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559112">IWDFIoRequest::GetOutputMemory</a>.
@@ -60,8 +64,11 @@ The size of the buffer that is retrieved by calling <a href="https://msdn.micros
 <text></text>
 
 ### Status Block
-I/O Status block
 HID minidrivers that carry out the I/O to the device must also:
+<ul>
+<li>Call <a href="https://msdn.microsoft.com/dc2c907c-1e3b-418c-85f8-9902dc83f7ab">IWDFRequest::SetInformation</a> to set the number of bytes transferred from the device.</li>
+<li>Call <a href="https://msdn.microsoft.com/2fa389f8-8277-4795-a89e-ac5d92004310">IWDFRequest::Complete</a> with S_OK to complete the request without error. Otherwise, set the appropriate HRESULT error code.</li>
+</ul>
 
 
 ## Requirements
@@ -71,13 +78,10 @@ HID minidrivers that carry out the I/O to the device must also:
 | **Header** | hidport.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidclass\ni-hidclass-ioctl_get_physical_descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

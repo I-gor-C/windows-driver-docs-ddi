@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F40C5DBB-8E52-471E-B010-A5EDFACDF773
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntPtrMult
+ms.keywords : RtlIntPtrMult function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntPtrMult, RtlIntPtrMult, kernel.rtlintptrmult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIntPtrMult
-req.alt-loc : Ntintsafe.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
@@ -69,7 +73,7 @@ None
 
 ## Remarks
 
-This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>
+This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 ## Requirements
 | &nbsp; | &nbsp; |

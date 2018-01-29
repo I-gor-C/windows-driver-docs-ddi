@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0cfe3674-2261-44f5-a916-fb786bb25fe5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENT_SET, *PKSEVENT_SET, KSEVENT_SET
+ms.keywords : ks/KSEVENT_SET, *PKSEVENT_SET, ks/PKSEVENT_SET, KSEVENT_SET structure [Streaming Media Devices], KSEVENT_SET, stream.ksevent_set, ks-struct_f3a678ec-93b4-4b60-959a-ca750b4ac4c2.xml, PKSEVENT_SET, PKSEVENT_SET structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSEVENT_SET
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSEVENT_SET, KSEVENT_SET"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSEVENT_SET, *PKSEVENT_SET
 ---
 
 # KSEVENT_SET structure
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `EventItem`
 
-            Points to the beginning of the array of <a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a> structures that describe each event in the event set. The size of the array is in the <b>EventsCount</b> member.
-        
-            `EventsCount`
+`EventItem`
 
-            Specifies the number of events in the event set.
-        
-            `Set`
+Points to the beginning of the array of <a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a> structures that describe each event in the event set. The size of the array is in the <b>EventsCount</b> member.
 
-            Specifies a GUID that identifies the event set. For more information about defined event sets, see <b>Remarks</b>.
+`EventsCount`
 
-    ## Remarks
-        Microsoft provides several system-defined kernel streaming event set GUIDs. Minidrivers specify one of these GUIDs in the <b>Set</b> member. Kernel streaming event sets typically begin with a <i>KSEVENTSETID</i> prefix. Event set GUIDs are defined in <i>ks.h</i>, <i>ksmedia.h</i>, <i>bdamedia.h</i>, and possibly other header files.
+Specifies the number of events in the event set.
+
+`Set`
+
+Specifies a GUID that identifies the event set. For more information about defined event sets, see <b>Remarks</b>.
+
+## Remarks
+Microsoft provides several system-defined kernel streaming event set GUIDs. Minidrivers specify one of these GUIDs in the <b>Set</b> member. Kernel streaming event sets typically begin with a <i>KSEVENTSETID</i> prefix. Event set GUIDs are defined in <i>ks.h</i>, <i>ksmedia.h</i>, <i>bdamedia.h</i>, and possibly other header files.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
-</dt>
-</dl>
+
  
 
  

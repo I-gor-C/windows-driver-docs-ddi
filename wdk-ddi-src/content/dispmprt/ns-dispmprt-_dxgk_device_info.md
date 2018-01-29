@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dcdae08f-69a6-496b-8391-d2b505fb86d9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_DEVICE_INFO, DXGK_DEVICE_INFO, *PDXGK_DEVICE_INFO
+ms.keywords : DXGK_DEVICE_INFO structure [Display Devices], _DXGK_DEVICE_INFO, display.dxgk_device_info, *PDXGK_DEVICE_INFO, DmStructs_89344ee9-8c4e-4f7e-8950-11948c07bb8e.xml, dispmprt/DXGK_DEVICE_INFO, dispmprt/PDXGK_DEVICE_INFO, PDXGK_DEVICE_INFO, DXGK_DEVICE_INFO, PDXGK_DEVICE_INFO structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_DEVICE_INFO
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_DEVICE_INFO, *PDXGK_DEVICE_INFO
 ---
 
@@ -54,45 +58,45 @@ typedef struct _DXGK_DEVICE_INFO {
 
 ## Members
 
-        
-            `AgpApertureBase`
 
-            The base physical address of the AGP aperture. If 0, the display adapter is not an AGP adapter, or AGP resources were not found.
-        
-            `AgpApertureSize`
+`AgpApertureBase`
 
-            The size, in bytes, of the AGP aperture. If 0, the display adapter is not an AGP adapter, or AGP resources were not found.
-        
-            `DeviceRegistryPath`
+The base physical address of the AGP aperture. If 0, the display adapter is not an AGP adapter, or AGP resources were not found.
 
-            A Unicode string that holds the registry path of the software key for the display adapter. Registry data should be written only to this path.
-        
-            `DockingState`
+`AgpApertureSize`
 
-            The state of a portable computer that can be attached to a docking station.
-        
-            `HighestPhysicalAddress`
+The size, in bytes, of the AGP aperture. If 0, the display adapter is not an AGP adapter, or AGP resources were not found.
 
-            The highest physical address of system memory (RAM).
-        
-            `MiniportDeviceContext`
+`DeviceRegistryPath`
 
-            A handle to a context block (created and maintained by the display miniport driver) associated with a display adapter.
-        
-            `PhysicalDeviceObject`
+A Unicode string that holds the registry path of the software key for the display adapter. Registry data should be written only to this path.
 
-            A pointer to the physical device object (PDO) that represents the display adapter.
-        
-            `SystemMemorySize`
+`DockingState`
 
-            The size, in bytes, of system memory.
-        
-            `TranslatedResourceList`
+The state of a portable computer that can be attached to a docking station.
 
-            A pointer to a <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that holds the translated resources assigned to the display adapter.
+`HighestPhysicalAddress`
 
-    ## Remarks
-        The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function allocates a DXGK_DEVICE_INFO structure and calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_get_device_information.md">DxgkCbGetDeviceInformation</a> to get that structure filled in with information about a display adapter. Five of the structure members (<b>Version</b>, <b>SystemMemorySize</b>, <b>HighestPhysicalAddress</b>, <b>AgpApertureBase</b>, and <b>AgpApertureSize</b>) hold general information and are not associated with a particular display adapter. Those members are included in the DXGK_DEVICE_INFO structure because they provide information that <i>DxgkDdiStartDevice</i> requires to initialize the driver and display adapter hardware.
+The highest physical address of system memory (RAM).
+
+`MiniportDeviceContext`
+
+A handle to a context block (created and maintained by the display miniport driver) associated with a display adapter.
+
+`PhysicalDeviceObject`
+
+A pointer to the physical device object (PDO) that represents the display adapter.
+
+`SystemMemorySize`
+
+The size, in bytes, of system memory.
+
+`TranslatedResourceList`
+
+A pointer to a <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that holds the translated resources assigned to the display adapter.
+
+## Remarks
+The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function allocates a DXGK_DEVICE_INFO structure and calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_get_device_information.md">DxgkCbGetDeviceInformation</a> to get that structure filled in with information about a display adapter. Five of the structure members (<b>Version</b>, <b>SystemMemorySize</b>, <b>HighestPhysicalAddress</b>, <b>AgpApertureBase</b>, and <b>AgpApertureSize</b>) hold general information and are not associated with a particular display adapter. Those members are included in the DXGK_DEVICE_INFO structure because they provide information that <i>DxgkDdiStartDevice</i> requires to initialize the driver and display adapter hardware.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,19 +106,14 @@ typedef struct _DXGK_DEVICE_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_get_device_information.md">DxgkCbGetDeviceInformation</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
+
  
 
  

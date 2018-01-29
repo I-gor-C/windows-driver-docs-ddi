@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5c0d7abf-05e3-45fc-b5a4-db6f79a94a87
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT
+ms.keywords : kmdf.wdf_child_identification_description_header_init, wdf.wdf_child_identification_description_header_init, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT, DFDeviceObjectChildListRef_dbb576dd-7020-4c96-8f3a-568fd58f6cf5.xml, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT function, wdfchildlist/WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT
-req.alt-loc : wdfchildlist.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_RETRIEVE_CHILD_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ The <b>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</b> function zeros the s
 
 For more information about child identification descriptions, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">Dynamic Enumeration</a>.
 
-For a code example that uses <b>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</b>, see <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent.md">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,11 +89,8 @@ For a code example that uses <b>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
-</dt>
-</dl>
+
  
 
  

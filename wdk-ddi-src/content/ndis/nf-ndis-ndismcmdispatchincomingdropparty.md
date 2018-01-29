@@ -7,8 +7,8 @@ old-location : netvista\ndismcmdispatchincomingdropparty.htm
 old-project : netvista
 ms.assetid : 4549b6f4-5138-4724-959c-a36b38c319fd
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisMCmDispatchIncomingDropParty
+ms.date : 1/18/2018
+ms.keywords : NdisMCmDispatchIncomingDropParty macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmDispatchIncomingDropParty, netvista.ndismcmdispatchincomingdropparty, NdisMCmDispatchIncomingDropParty, condis_mcm_ref_1a170d75-7913-4068-b047-206b531d42c6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisMCmDispatchIncomingDropParty
-req.alt-loc : ndis.h
 req.ddi-compliance : Irql_MCM_Function
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ndis.h
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -54,19 +58,19 @@ VOID NdisMCmDispatchIncomingDropParty(
 
 `_S_`
 
-
+TBD
 
 `_H_`
 
-
+TBD
 
 `_B_`
 
-
+TBD
 
 `_Z_`
 
-
+TBD
 
 
 ## Return Value
@@ -89,13 +93,13 @@ However, an MCM driver also can call
 
 A call to 
     <b>NdisMCmDispatchIncomingDropParty</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">
-    ProtocolClIncomingDropParty</a> function.
+    <mshelp:link keywords="netvista.protocolclincomingdropparty" tabindex="0"><i>
+    ProtocolClIncomingDropParty</i></mshelp:link> function.
 
 If the 
     <i>NdisPartyHandle</i> identifies the last remaining party on the given VC, the MCM driver calls 
-    <a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
-    NdisMCmDispatchIncomingCloseCall</a>, rather than 
+    <mshelp:link keywords="netvista.ndismcmdispatchincomingclosecall" tabindex="0"><b>
+    NdisMCmDispatchIncomingCloseCall</b></mshelp:link>, rather than 
     <b>NdisMCmDispatchIncomingDropParty</b>.
 
 Only connection-oriented miniport drivers that provide integrated call-management support can call 
@@ -117,27 +121,20 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-</dt>
-<dt>
+<mshelp:link keywords="netvista.ndiscmdispatchincomingdropparty" tabindex="0"><b>
+   NdisCmDispatchIncomingDropParty</b></mshelp:link>
+
+<mshelp:link keywords="netvista.ndismcmdispatchincomingclosecall" tabindex="0"><b>
+   NdisMCmDispatchIncomingCloseCall</b></mshelp:link>
+
 <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingdropparty.md">
-   NdisCmDispatchIncomingDropParty</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
-   NdisMCmDispatchIncomingCloseCall</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingDropParty macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingDropParty macro%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

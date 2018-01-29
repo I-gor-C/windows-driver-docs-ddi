@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d2349c45-eb88-4584-bbdd-b7c46601a1bc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendRLS
+ms.keywords : storage.hba_sendrls, HBA_SendRLS routine [Storage Devices], hbaapi/HBA_SendRLS, HBA_SendRLS, fibreHBA_rtns_8a7d150c-eeba-4850-9a93-7a48096d6f22.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SendRLS
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -76,18 +80,56 @@ Indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>. A size of 28 b
 ## Return Value
 
 The <b>HBA_SendRLS</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendRLS</b> returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
-</dl>Returned if the complete payload of a reply to the RLS request was successfully retrieved. 
+</dl>
+</td>
+<td width="60%">
+Returned if the complete payload of a reply to the RLS request was successfully retrieved. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
-</dl>Returned if the HBA referenced by <i>handle</i> does not contain a port with a name that matches <i>HbaPortWWN</i>. 
+</dl>
+</td>
+<td width="60%">
+Returned if the HBA referenced by <i>handle</i> does not contain a port with a name that matches <i>HbaPortWWN</i>. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_ELS_REJECT</b></dt>
-</dl>Returned if the destination port referenced by <i>DestWWN </i>rejected the request node identification information data (RNID) that identifies the source HBA. 
+</dl>
+</td>
+<td width="60%">
+Returned if the destination port referenced by <i>DestWWN </i>rejected the request node identification information data (RNID) that identifies the source HBA. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
-</dl>Returned if an unspecified error occurred that prevented the execution of the RLS request.
+</dl>
+</td>
+<td width="60%">
+Returned if an unspecified error occurred that prevented the execution of the RLS request. 
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -104,14 +146,10 @@ The <b>HBA_SendRLS</b> routine returns a value of type <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

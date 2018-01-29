@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 85b3764d-00b5-4e1d-bedc-c59a6b182735
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_TIMED_OPERATION_INTERFACE, *PDXGK_TIMED_OPERATION_INTERFACE, DXGK_TIMED_OPERATION_INTERFACE
+ms.keywords : "*PDXGK_TIMED_OPERATION_INTERFACE, display.dxgk_timed_operation_interface, PDXGK_TIMED_OPERATION_INTERFACE, PDXGK_TIMED_OPERATION_INTERFACE structure pointer [Display Devices], DmStructs_024c0974-7f10-4251-b08e-c68307fc62d9.xml, dispmprt/DXGK_TIMED_OPERATION_INTERFACE, _DXGK_TIMED_OPERATION_INTERFACE, DXGK_TIMED_OPERATION_INTERFACE, DXGK_TIMED_OPERATION_INTERFACE structure [Display Devices], dispmprt/PDXGK_TIMED_OPERATION_INTERFACE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_TIMED_OPERATION_INTERFACE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PDXGK_TIMED_OPERATION_INTERFACE, DXGK_TIMED_OPERATION_INTERFACE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DXGK_TIMED_OPERATION_INTERFACE, *PDXGK_TIMED_OPERATION_INTERFACE
 ---
 
 # _DXGK_TIMED_OPERATION_INTERFACE structure
@@ -66,41 +70,41 @@ typedef struct _DXGK_TIMED_OPERATION_INTERFACE {
 
 ## Members
 
-        
-            `Context`
 
-            A pointer to a context that is provided by the display port driver.
-        
-            `InterfaceDereference`
+`Context`
 
-            A pointer to an interface dereference function that is implemented by the display port driver.
-        
-            `InterfaceReference`
+A pointer to a context that is provided by the display port driver.
 
-            A pointer to an interface reference function that is implemented by the display port driver.
-        
-            `Size`
+`InterfaceDereference`
 
-            The size, in bytes, of this structure.
-        
-            `TimedOperationDelay`
+A pointer to an interface dereference function that is implemented by the display port driver.
 
-            A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff570083">TimedOperationDelay</a> function.
-        
-            `TimedOperationStart`
+`InterfaceReference`
 
-            A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> function.
-        
-            `TimedOperationWaitForSingleObject`
+A pointer to an interface reference function that is implemented by the display port driver.
 
-            A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff570085">TimedOperationWaitForSingleObject</a> function.
-        
-            `Version`
+`Size`
 
-            The version number of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_TIMED_OPERATION_INTERFACE_VERSION_1).
+The size, in bytes, of this structure.
 
-    ## Remarks
-        The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.
+`TimedOperationDelay`
+
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff570083">TimedOperationDelay</a> function.
+
+`TimedOperationStart`
+
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> function.
+
+`TimedOperationWaitForSingleObject`
+
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff570085">TimedOperationWaitForSingleObject</a> function.
+
+`Version`
+
+The version number of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_TIMED_OPERATION_INTERFACE_VERSION_1).
+
+## Remarks
+The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,25 +114,18 @@ typedef struct _DXGK_TIMED_OPERATION_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570083">TimedOperationDelay</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570085">TimedOperationWaitForSingleObject</a>
-</dt>
-</dl>
+
  
 
  

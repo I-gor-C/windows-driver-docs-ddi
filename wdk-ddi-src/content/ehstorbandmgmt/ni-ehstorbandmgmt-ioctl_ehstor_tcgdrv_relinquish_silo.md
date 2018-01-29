@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4D3DA81A-D79A-4299-A743-AFB0118DDF3F
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DXVA_VideoSample32, DXVA_VideoSample32
+ms.keywords : storage.ioctl_ehstor_tcgdrv_relinquish_silo, IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO control code [Storage Devices], IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO, ehstorbandmgmt/IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoSample32
 ---
 
@@ -59,11 +63,10 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 On return, the <b>Status</b> field will contain STATUS_SUCCESS if the operation was successful. Otherwise, another appropriate status code is returned.
 
-    ## Remarks
-        When the TCG Storage Silo driver relinquishes control, all band management IOCTLs registered by an <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_report_capabilities.md"> IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a> request are unregistered. Any band management IOCTL requests received are returned with STATUS_INVALID_DEVICE_REQUEST. 
+## Remarks
+When the TCG Storage Silo driver relinquishes control, all band management IOCTLs registered by an <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_report_capabilities.md"> IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a> request are unregistered. Any band management IOCTL requests received are returned with STATUS_INVALID_DEVICE_REQUEST. 
 
 After relinquishing control, the TCG Storage Silo driver can regain control of a storage device when the device is stopped and restarted.
 
@@ -76,13 +79,10 @@ To prevent the TCG Storage Silo driver from reconfiguring the TCG subsystem in a
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_report_capabilities.md">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a>
-</dt>
-</dl>
+
  
 
  

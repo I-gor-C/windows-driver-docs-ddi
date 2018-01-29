@@ -7,8 +7,8 @@ old-location : netvista\rilmanagecallsparams_v2.htm
 old-project : netvista
 ms.assetid : 7a4e0930-b499-4abd-bbf6-326ae928b5c5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMANAGECALLSPARAMS_V2, *LPRILMANAGECALLSPARAMS_V2, RILMANAGECALLSPARAMS_V2
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILMANAGECALLSPARAMS_V2, netvista.rilmanagecallsparams_v2, RILMANAGECALLSPARAMS_V2 structure [Network Drivers Starting with Windows Vista], *LPRILMANAGECALLSPARAMS_V2, RILMANAGECALLSPARAMS_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMANAGECALLSPARAMS_V2
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILMANAGECALLSPARAMS_V2, RILMANAGECALLSPARAMS_V2"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _RILMANAGECALLSPARAMS_V2 {
 
 ## Members
 
-        
-            `dwCommand`
 
-            
-        
-            `dwExecutor`
+`dwCommand`
 
-            
-        
-            `dwID`
 
-            
-        
-            `fHasOfferAnswer`
 
-            
-        
-            `rcmOfferAnswer`
+`dwExecutor`
 
-            
+
+
+`dwID`
+
+
+
+`fHasOfferAnswer`
+
+
+
+`rcmOfferAnswer`
+
+
 
 
 ## Requirements

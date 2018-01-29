@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 95ef6c1e-c2b7-49ca-9aaf-caeb2dca7c3a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSSTREAMALLOCATOR_STATUS, *PKSSTREAMALLOCATOR_STATUS, KSSTREAMALLOCATOR_STATUS
+ms.keywords : PKSSTREAMALLOCATOR_STATUS, ks/PKSSTREAMALLOCATOR_STATUS, PKSSTREAMALLOCATOR_STATUS structure pointer [Streaming Media Devices], stream.ksstreamallocator_status, KSSTREAMALLOCATOR_STATUS structure [Streaming Media Devices], KSSTREAMALLOCATOR_STATUS, ks/KSSTREAMALLOCATOR_STATUS, *PKSSTREAMALLOCATOR_STATUS, ks-struct_e9071d70-ee9c-4ef9-828e-81d9abf6cc68.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSSTREAMALLOCATOR_STATUS
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSSTREAMALLOCATOR_STATUS, KSSTREAMALLOCATOR_STATUS"
 ---
 
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `AllocatedFrames`
 
-            Contains the current number of allocated frames. This value changes on an extremely frequent basis.
-        
-            `Framing`
+`AllocatedFrames`
 
-            A <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure that contains the framing specified when the allocator was created.
-        
-            `Reserved`
+Contains the current number of allocated frames. This value changes on an extremely frequent basis.
 
-            Reserved and set to zero.
+`Framing`
 
-    ## Remarks
-        Clients can query allocator status by providing a KSSTREAMALLOCATOR_STATUS structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565670">KSPROPERTY_STREAMALLOCATOR_STATUS</a> property request.
+A <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure that contains the framing specified when the allocator was created.
+
+`Reserved`
+
+Reserved and set to zero.
+
+## Remarks
+Clients can query allocator status by providing a KSSTREAMALLOCATOR_STATUS structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565670">KSPROPERTY_STREAMALLOCATOR_STATUS</a> property request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +76,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565670">KSPROPERTY_STREAMALLOCATOR_STATUS</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565670">KSPROPERTY_STREAMALLOCATOR_STATUS</a>
+
  
 
  

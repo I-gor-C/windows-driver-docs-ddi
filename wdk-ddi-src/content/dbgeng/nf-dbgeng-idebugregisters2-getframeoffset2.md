@@ -7,8 +7,8 @@ old-location : debugger\getframeoffset2.htm
 old-project : debugger
 ms.assetid : e0ab18ea-4447-4eee-bdf3-d251d4d4952f
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugRegisters2, IDebugRegisters2::GetFrameOffset2, GetFrameOffset2
+ms.date : 1/19/2018
+ms.keywords : GetFrameOffset2 method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], GetFrameOffset2 method, GetFrameOffset2 method [Windows Debugging], IDebugRegisters2 interface, debugger.getframeoffset2, IDebugRegisters_9b3855a5-d5e4-4485-81f3-1584b707f73a.xml, dbgeng/IDebugRegisters2::GetFrameOffset2, IDebugRegisters2, GetFrameOffset2, IDebugRegisters2::GetFrameOffset2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugRegisters2.GetFrameOffset2
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -54,7 +58,6 @@ HRESULT GetFrameOffset2(
 Specifies the register source to query.
 
 The possible values are listed in the following table.
-
 <table>
 <tr>
 <th>Value</th>
@@ -76,7 +79,7 @@ DEBUG_REGSRC_EXPLICIT
 
 </td>
 <td>
-Fetch register information from the current explicit <a href="debugger.changing_contexts#register_context#register_context">register context</a>.
+Fetch register information from the current explicit <a href="https://msdn.microsoft.com/3690903c-4281-4c65-98b0-00ca22206168">register context</a>.
 
 </td>
 </tr>
@@ -105,9 +108,23 @@ The location in the process's virtual address space of the stack frame for the c
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -131,16 +148,12 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546806">GetFrameOffset</a>
-</dt>
-</dl>
- 
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2::GetFrameOffset2 method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2::GetFrameOffset2 method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

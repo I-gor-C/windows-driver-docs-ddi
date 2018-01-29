@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 31bfa863-459f-4fb2-af41-2d40d0396dd7
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HIDD_ATTRIBUTES, *PHIDD_ATTRIBUTES, HIDD_ATTRIBUTES
+ms.keywords : hidsdi/PHIDD_ATTRIBUTES, hid.hidd_attributes, _HIDD_ATTRIBUTES, PHIDD_ATTRIBUTES, hidstrct_450ed87e-655a-414d-b24a-8b1aec7564b8.xml, HIDD_ATTRIBUTES, hidsdi/HIDD_ATTRIBUTES, HIDD_ATTRIBUTES structure [Human Input Devices], PHIDD_ATTRIBUTES structure pointer [Human Input Devices], *PHIDD_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HIDD_ATTRIBUTES
-req.alt-loc : hidsdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHIDD_ATTRIBUTES, HIDD_ATTRIBUTES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HIDD_ATTRIBUTES, *PHIDD_ATTRIBUTES
 ---
 
 # _HIDD_ATTRIBUTES structure
@@ -49,25 +53,25 @@ typedef struct _HIDD_ATTRIBUTES {
 
 ## Members
 
-        
-            `ProductID`
 
-            Specifies a HID device's product ID.
-        
-            `Size`
+`ProductID`
 
-            Specifies the size, in bytes, of a HIDD_ATTRIBUTES structure.
-        
-            `VendorID`
+Specifies a HID device's product ID.
 
-            Specifies a HID device's vendor ID.
-        
-            `VersionNumber`
+`Size`
 
-            Specifies the manufacturer's revision number for a HIDClass device.
+Specifies the size, in bytes, of a HIDD_ATTRIBUTES structure.
 
-    ## Remarks
-        A caller of <a href="..\hidsdi\nf-hidsdi-hidd_getattributes.md">HidD_GetAttributes</a>, uses this structure to obtain a device's vendor information.
+`VendorID`
+
+Specifies a HID device's vendor ID.
+
+`VersionNumber`
+
+Specifies the manufacturer's revision number for a HIDClass device.
+
+## Remarks
+A caller of <a href="..\hidsdi\nf-hidsdi-hidd_getattributes.md">HidD_GetAttributes</a>, uses this structure to obtain a device's vendor information.
 
 Before using a HIDD_ATTRIBUTES structure with <a href="https://msdn.microsoft.com/library/windows/hardware/ff538865">HIDClass support routines</a>, the caller must set the <b>Size</b> member.
 
@@ -79,13 +83,10 @@ Before using a HIDD_ATTRIBUTES structure with <a href="https://msdn.microsoft.co
 | **Minimum UMDF version** |  |
 | **Header** | hidsdi.h (include Hidsdi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidsdi\nf-hidsdi-hidd_getattributes.md">HidD_GetAttributes</a>
-</dt>
-</dl>
+
  
 
  

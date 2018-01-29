@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 10e3c823-97e3-47e9-8545-94cd186e5b59
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetFC4Statistics_IN, *PGetFC4Statistics_IN, GetFC4Statistics_IN
+ms.keywords : "*PGetFC4Statistics_IN, hbapiwmi/GetFC4Statistics_IN, hbapiwmi/PGetFC4Statistics_IN, storage.getfc4statistics_in, PGetFC4Statistics_IN structure pointer [Storage Devices], GetFC4Statistics_IN, _GetFC4Statistics_IN, GetFC4Statistics_IN structure [Storage Devices], structs-Fibre_17ea3e0e-1cf9-4cf8-9128-1152e610847c.xml, PGetFC4Statistics_IN"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFC4Statistics_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGetFC4Statistics_IN, GetFC4Statistics_IN"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GetFC4Statistics_IN, *PGetFC4Statistics_IN
 ---
 
 # _GetFC4Statistics_IN structure
@@ -47,17 +51,17 @@ typedef struct _GetFC4Statistics_IN {
 
 ## Members
 
-        
-            `FC4Type`
 
-            Contains a value that indicates the type FC-4 protocol. For an explanation of FC4 types, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification.
-        
-            `PortWWN`
+`FC4Type`
 
-            Contains the worldwide name for the local port of type Nx_Port whose traffic statistics are to be reported.
+Contains a value that indicates the type FC-4 protocol. For an explanation of FC4 types, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification.
 
-    ## Remarks
-        The method <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> queries an HBA and port of type Nx_Port for traffic statistics associated with the indicated FC-4 protocol.
+`PortWWN`
+
+Contains the worldwide name for the local port of type Nx_Port whose traffic statistics are to be reported.
+
+## Remarks
+The method <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> queries an HBA and port of type Nx_Port for traffic statistics associated with the indicated FC-4 protocol.
 
 The WMI tool suite generates a declaration of the GetFC4Statistics_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
@@ -71,13 +75,10 @@ For a definition of Nx_Port, see the T11 committee's specification for <i>Fibre 
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a>
-</dt>
-</dl>
+
  
 
  

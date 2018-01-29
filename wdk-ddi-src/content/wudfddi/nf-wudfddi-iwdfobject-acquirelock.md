@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f69328fb-356b-4381-ae6e-df39ac60e032
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject, IWDFObject::AcquireLock, AcquireLock
+ms.keywords : wudfddi/IWDFObject::AcquireLock, IWDFObject::AcquireLock, UMDFBaseObjectRef_3a9b581b-87cd-489d-b945-924489d5c3b9.xml, wdf.iwdfobject_acquirelock, AcquireLock method, IWDFObject interface, umdf.iwdfobject_acquirelock, AcquireLock, IWDFObject interface, AcquireLock method, AcquireLock method, IWDFObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFObject.AcquireLock
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 None
 
-None
-
-None
-
 ## Remarks
 
 If a driver configured itself to use the <b>AcquireLock</b> locking scheme, the framework automatically acquires the "presentation" lock before calling into the driver. (For more information about this locking scheme, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/specifying-a-callback-synchronization-mode">Specifying a Callback Synchronization Mode</a>.) The <b>AcquireLock</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a> methods acquire and release the presentation lock, respectively. <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Framework device objects</a> and <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-i-o-queue-object">framework I/O queue objects</a> currently support the <b>AcquireLock</b> method.
@@ -66,8 +66,6 @@ If a driver configured itself to use the <b>AcquireLock</b> locking scheme, the 
 The driver calls the <b>AcquireLock</b> method to manipulate its objects that were created from its callback interfaces outside the callback scope in a thread-safe manner. The <b>AcquireLock</b> method represents an advanced feature of the framework that most drivers will not use because improper usage can result in deadlocks.
 
 Unsynchronized code can call <b>AcquireLock</b>. The driver should call on objects that match its synchronization scope.
-
-For a code example of how to use the <b>AcquireLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,14 +81,10 @@ For a code example of how to use the <b>AcquireLock</b> method, see <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F5A853B2-4A8C-4929-AAEC-28844DEF0B29
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION
+ms.keywords : DXGKARG_SETTARGETANALOGCOPYPROTECTION structure [Display Devices], display.dxgkarg_settargetanalogcopyprotection, d3dkmddi/DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION, _DXGKARG_SETTARGETANALOGCOPYPROTECTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_SETTARGETANALOGCOPYPROTECTION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_SETTARGETANALOGCOPYPROTECTION
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXGKARG_SETTARGETANALOGCOPYPROTECTION {
 
 ## Members
 
-        
-            `APSTriggerBits`
 
-            [in] A value that describes copy protection for an OEM device. A value of 0 indicates no copy protection, and values of 1, 2, and 3 indicate low, medium, and high levels of copy protection, respectively. Values greater than 3 are not allowed.
-        
-            `CopyProtectionSupport`
+`APSTriggerBits`
 
-            [in] A D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure containing flags indicating the analog copy protection support being requested.
-        
-            `CopyProtectionType`
+[in] A value that describes copy protection for an OEM device. A value of 0 indicates no copy protection, and values of 1, 2, and 3 indicate low, medium, and high levels of copy protection, respectively. Values greater than 3 are not allowed.
 
-            [in] A value from the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enum indicating the type of analog copy protection being requested.
-        
-            `TargetId`
+`CopyProtectionSupport`
 
-            [in] The identifier of a display adapter's video present target.
+[in] A D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure containing flags indicating the analog copy protection support being requested.
+
+`CopyProtectionType`
+
+[in] A value from the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enum indicating the type of analog copy protection being requested.
+
+`TargetId`
+
+[in] The identifier of a display adapter's video present target.
 
 
 ## Requirements

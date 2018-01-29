@@ -7,8 +7,8 @@ old-location : image\sti_error_info.htm
 old-project : image
 ms.assetid : e448ddfc-ae5a-4eb8-a39c-e46771278081
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _ERROR_INFOW, *PSTI_ERROR_INFOW, STI_ERROR_INFOW, *PSTI_ERROR_INFO, STI_ERROR_INFO
+ms.date : 1/18/2018
+ms.keywords : sti/STI_ERROR_INFO, image.sti_error_info, STI_ERROR_INFO structure [Imaging Devices], STI_ERROR_INFOW, STI_ERROR_INFO, _ERROR_INFOW, PSTI_ERROR_INFO structure pointer [Imaging Devices], sti/PSTI_ERROR_INFO, stifnc_c4e51568-9e80-4866-9258-72a8fcbd242d.xml, *PSTI_ERROR_INFO, *PSTI_ERROR_INFOW, PSTI_ERROR_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STI_ERROR_INFO
-req.alt-loc : sti.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTI_ERROR_INFOW, STI_ERROR_INFOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STI_ERROR_INFOW, *PSTI_ERROR_INFOW
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _ERROR_INFO {
 
 ## Members
 
-        
-            `dwGenericError`
 
-            Win32 error code.
-        
-            `dwSize`
+`dwGenericError`
 
-            Caller-supplied size, in bytes, of the STI_ERROR_INFO structure.
-        
-            `dwVendorError`
+Win32 error code.
 
-            Optional, vendor-specific error code.
-        
-            `szExtendedErrorText`
+`dwSize`
 
-            Optional character array containing a text string describing the error.
+Caller-supplied size, in bytes, of the STI_ERROR_INFO structure.
+
+`dwVendorError`
+
+Optional, vendor-specific error code.
+
+`szExtendedErrorText`
+
+Optional character array containing a text string describing the error.
 
 
 ## Requirements

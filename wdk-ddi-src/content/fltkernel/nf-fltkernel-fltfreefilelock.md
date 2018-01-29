@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bcf2ac97-0aa2-4464-a045-b98866351243
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFreeFileLock
+ms.keywords : FltFreeFileLock, FltFreeFileLock routine [Installable File System Drivers], FltApiRef_e_to_o_823e2511-8afe-4151-bbac-a9481c079068.xml, fltkernel/FltFreeFileLock, ifsk.fltfreefilelock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows XP SP
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltFreeFileLock
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -79,29 +83,20 @@ It is a programming error to call <b>FltFreeFileLock</b> for a FILE_LOCK structu
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltchecklockforreadaccess.md">FltCheckLockForReadAccess</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md">FltCheckLockForWriteAccess</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltprocessfilelock.md">FltProcessFileLock</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltuninitializefilelock.md">FltUninitializeFileLock</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>
+
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfreefilelock.md">FsRtlFreeFileLock</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltchecklockforreadaccess.md">FltCheckLockForReadAccess</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltuninitializefilelock.md">FltUninitializeFileLock</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltprocessfilelock.md">FltProcessFileLock</a>
+
  
 
  

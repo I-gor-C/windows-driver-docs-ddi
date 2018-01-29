@@ -7,8 +7,8 @@ old-location : netvista\rilradiostateitemattributes_2.htm
 old-project : netvista
 ms.assetid : d13c1946-1283-4ed6-953e-626fda91a782
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEITEMATTRIBUTES, RILRADIOSTATEITEMATTRIBUTES
+ms.date : 1/18/2018
+ms.keywords : netvista.rilradiostateitemattributes_2, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, rilapitypes/RILRADIOSTATEITEMATTRIBUTES, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, RILRADIOSTATEITEMATTRIBUTES, RILRADIOSTATEITEMATTRIBUTES enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEITEMATTRIBUTES
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRADIOSTATEITEMATTRIBUTES
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,11 @@ typedef enum _RILRADIOSTATEITEMATTRIBUTES {
 
 <tr>
 <td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_NO_ATTRIBUTE</td>
 <td></td>
 </tr>
 </table>

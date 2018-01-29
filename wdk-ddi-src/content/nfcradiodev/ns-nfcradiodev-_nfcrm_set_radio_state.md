@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 22FE29AC-790D-40D2-949F-9C132F67AEAB
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE
+ms.keywords : _NFCRM_SET_RADIO_STATE, nfpdrivers._nfcrm_set_radio_state_, _NFCRM_SET_RADIO_STATE structure [Near-Field Proximity Drivers], P_NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE, nfcradiodev/P_NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE structure [Near-Field Proximity Drivers], P_NFCRM_SET_RADIO_STATE structure pointer [Near-Field Proximity Drivers], nfcradiodev/NFCRM_SET_RADIO_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _NFCRM_SET_RADIO_STATE
-req.alt-loc : nfcradiodev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE
 ---
 
@@ -47,17 +51,17 @@ typedef struct _NFCRM_SET_RADIO_STATE  {
 
 ## Members
 
-        
-            `MediaRadioOn`
 
-            The <b>MediaRadioOn</b> flag either enables the system trigger (airplane mode if  <b>SystemStateUpdate</b> is true) or disables it.
-        
-            `SystemStateUpdate`
+`MediaRadioOn`
 
-            The <b>SystemStateUpdate</b>. If true, indicates that IOCTL_NFCRM_SET_RADIO_STATE is triggered by airplane mode.
+The <b>MediaRadioOn</b> flag either enables the system trigger (airplane mode if  <b>SystemStateUpdate</b> is true) or disables it.
 
-    ## Remarks
-        Airplane mode status is ON if  <b>SystemStateUpdate</b> is true and <b>MediaRadioOn</b> is false.
+`SystemStateUpdate`
+
+The <b>SystemStateUpdate</b>. If true, indicates that IOCTL_NFCRM_SET_RADIO_STATE is triggered by airplane mode.
+
+## Remarks
+Airplane mode status is ON if  <b>SystemStateUpdate</b> is true and <b>MediaRadioOn</b> is false.
 
 
 
@@ -78,7 +82,7 @@ NFC status is ON if <b>SystemStateUpdate</b> is false and <b>MediaRadioOn</b> is
 
 
 
-NFC status is OFF if <b>SystemStateUpdate</b> is false and <b>MediaRadioOn</b> is false.</p>
+NFC status is OFF if <b>SystemStateUpdate</b> is false and <b>MediaRadioOn</b> is false.
 
 ## Requirements
 | &nbsp; | &nbsp; |

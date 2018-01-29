@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 46C16795-412B-48E7-A7E8-E474CEC51849
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PO_FX_CORE_DEVICE, *PPO_FX_CORE_DEVICE, PO_FX_CORE_DEVICE
+ms.keywords : pepfx/PPO_FX_CORE_DEVICE, pepfx/PO_FX_CORE_DEVICE, PPO_FX_CORE_DEVICE structure pointer [Kernel-Mode Driver Architecture], *PPO_FX_CORE_DEVICE, _PO_FX_CORE_DEVICE, PO_FX_CORE_DEVICE, PPO_FX_CORE_DEVICE, kernel.po_fx_core_device, PO_FX_CORE_DEVICE structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PO_FX_CORE_DEVICE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPO_FX_CORE_DEVICE, PO_FX_CORE_DEVICE"
 ---
 
@@ -53,41 +57,41 @@ typedef struct _PO_FX_CORE_DEVICE {
 
 ## Members
 
-        
-            `ComponentActiveConditionCallback`
 
-            A pointer to a  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component completed a transition from the idle condition to the active condition.
-        
-            `ComponentCount`
+`ComponentActiveConditionCallback`
 
-            The number of elements in the <b>Components</b> array at the end of this structure. This count includes all elements of the array, and includes both the first element, which is a member of this structure,  and any additional elements that follow the end of this structure.
-        
-            `ComponentCriticalTransitionCallback`
+A pointer to a  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component completed a transition from the idle condition to the active condition.
 
-            A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt186630">ComponentCriticalTransitionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component is about to make a transition between the idle condition and the active condition.
-        
-            `ComponentIdleConditionCallback`
+`ComponentCount`
 
-            A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component completed a transition from the active condition to the idle condition.
-        
-            `ComponentIdleStateCallback`
+The number of elements in the <b>Components</b> array at the end of this structure. This count includes all elements of the array, and includes both the first element, which is a member of this structure,  and any additional elements that follow the end of this structure.
 
-            A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> callback routine. PoFx calls this routine to notify the driver of a pending change to the F<i>x</i> power state of the specified component.
-        
-            `Components`
+`ComponentCriticalTransitionCallback`
 
-            The first element in an array of <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">PO_FX_COMPONENT</a> structures. Each element in the array describes the power attributes of a component in the device. If the array contains more than one element, the additional elements immediately follow the end of the <b>PO_FX_CORE_DEVICE</b> structure. The number of elements in the array is specified in the <b>ComponentCount</b> member of the <b>PO_FX_CORE_DEVICE</b> structure.
-        
-            `DeviceContext`
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt186630">ComponentCriticalTransitionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component is about to make a transition between the idle condition and the active condition.
 
-            A pointer to a PEP-defined device context. PoFx supplies this pointer as the first parameter in calls to the <i>ComponentActiveConditionCallback</i>, <i>ComponentIdleConditionCallback</i>, <i>ComponentCriticalTransitionCallback</i>, and <i>ComponentIdleStateCallback</i> routines. This context is opaque to PoFx.
-        
-            `Version`
+`ComponentIdleConditionCallback`
 
-            The version number of this structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a> callback routine. PoFx calls this routine to notify the driver that the specified component completed a transition from the active condition to the idle condition.
 
-    ## Remarks
-        This structure is used by the <a href="..\pepfx\nf-pepfx-pofxregistercoredevice.md">PoFxRegisterCoreDevice</a> routine.
+`ComponentIdleStateCallback`
+
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> callback routine. PoFx calls this routine to notify the driver of a pending change to the F<i>x</i> power state of the specified component.
+
+`Components`
+
+The first element in an array of <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">PO_FX_COMPONENT</a> structures. Each element in the array describes the power attributes of a component in the device. If the array contains more than one element, the additional elements immediately follow the end of the <b>PO_FX_CORE_DEVICE</b> structure. The number of elements in the array is specified in the <b>ComponentCount</b> member of the <b>PO_FX_CORE_DEVICE</b> structure.
+
+`DeviceContext`
+
+A pointer to a PEP-defined device context. PoFx supplies this pointer as the first parameter in calls to the <i>ComponentActiveConditionCallback</i>, <i>ComponentIdleConditionCallback</i>, <i>ComponentCriticalTransitionCallback</i>, and <i>ComponentIdleStateCallback</i> routines. This context is opaque to PoFx.
+
+`Version`
+
+The version number of this structure.
+
+## Remarks
+This structure is used by the <a href="..\pepfx\nf-pepfx-pofxregistercoredevice.md">PoFxRegisterCoreDevice</a> routine.
 
 A <i>core system resource</i> is a hardware device, such as a timer or an interrupt controller, that is managed by the Windows hardware abstraction layer (HAL).
 
@@ -101,28 +105,20 @@ For more information about component transitions between the active condition an
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186630">ComponentCriticalTransitionCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_po_fx_component_v2.md">PO_FX_COMPONENT</a>
-</dt>
-<dt>
 <a href="..\pepfx\nf-pepfx-pofxregistercoredevice.md">PoFxRegisterCoreDevice</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186630">ComponentCriticalTransitionCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a>
+
+<a href="..\wdm\ns-wdm-_po_fx_component_v2.md">PO_FX_COMPONENT</a>
+
  
 
  

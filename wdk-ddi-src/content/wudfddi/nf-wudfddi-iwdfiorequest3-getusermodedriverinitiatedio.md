@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 41C4E9D2-DC1B-4DFC-8C15-E9C21515B5F0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest3, IWDFIoRequest3::GetUserModeDriverInitiatedIo, GetUserModeDriverInitiatedIo
+ms.keywords : GetUserModeDriverInitiatedIo method, IWDFIoRequest3 interface, IWDFIoRequest3, wudfddi/IWDFIoRequest3::GetUserModeDriverInitiatedIo, GetUserModeDriverInitiatedIo method, umdf.iwdfiorequest3_getusermodedriverinitiatedio, IWDFIoRequest3 interface, GetUserModeDriverInitiatedIo method, IWDFIoRequest3::GetUserModeDriverInitiatedIo, GetUserModeDriverInitiatedIo, wdf.iwdfiorequest3_getusermodedriverinitiatedio
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFIoRequest3.GetUserModeDriverInitiatedIo
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -57,10 +61,6 @@ This function has no parameters.
 
 The method returns <b>TRUE</b> if the request is marked as UMDF driver-initiated and <b>FALSE</b> if the request is not marked as UMDF driver-initiated.
 
-The method returns <b>TRUE</b> if the request is marked as UMDF driver-initiated and <b>FALSE</b> if the request is not marked as UMDF driver-initiated.
-
-The method returns <b>TRUE</b> if the request is marked as UMDF driver-initiated and <b>FALSE</b> if the request is not marked as UMDF driver-initiated.
-
 ## Remarks
 
 For additional information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a>.
@@ -81,14 +81,10 @@ The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdf
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 2305ffbd-22c8-4f63-bbe4-fd297bf98e39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_EXPRESS_PME_REQUESTOR_ID, *PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID
+ms.keywords : PCI.pci_express_pme_requestor_id, ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses], PCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID, _PCI_EXPRESS_PME_REQUESTOR_ID, *PPCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_EXPRESS_PME_REQUESTOR_ID
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID"
 ---
 
@@ -51,13 +55,17 @@ typedef union _PCI_EXPRESS_PME_REQUESTOR_ID {
 
 ## Members
 
-        
-            `AsUSHORT`
 
-            A USHORT representation of the contents of the PCI_EXPRESS_PME_REQUESTOR_ID structure.
+`AsUSHORT`
 
-    ## Remarks
-        The PCI_EXPRESS_PME_REQUESTOR_ID structure is available in Windows Server 2008 and later versions of Windows.
+A USHORT representation of the contents of the PCI_EXPRESS_PME_REQUESTOR_ID structure.
+
+`DUMMYSTRUCTNAME`
+
+
+
+## Remarks
+The PCI_EXPRESS_PME_REQUESTOR_ID structure is available in Windows Server 2008 and later versions of Windows.
 
 A PCI_EXPRESS_PME_REQUESTOR_ID structure is contained in the <b>PMERequestorId</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537477">PCI_EXPRESS_ROOT_STATUS_REGISTER</a> structure.
 
@@ -69,13 +77,10 @@ A PCI_EXPRESS_PME_REQUESTOR_ID structure is contained in the <b>PMERequestorId</
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537477">PCI_EXPRESS_ROOT_STATUS_REGISTER</a>
-</dt>
-</dl>
+
  
 
  

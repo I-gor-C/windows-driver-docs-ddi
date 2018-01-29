@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 68fbaa04-ca7a-46b4-a7ca-c3d44443c2af
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestProbeAndLockUserBufferForRead
+ms.keywords : WdfRequestProbeAndLockUserBufferForRead method, WdfRequestProbeAndLockUserBufferForRead, wdfrequest/WdfRequestProbeAndLockUserBufferForRead, wdf.wdfrequestprobeandlockuserbufferforread, kmdf.wdfrequestprobeandlockuserbufferforread, DFRequestObjectRef_01a2309b-8cae-4a38-9e47-68619f422af2.xml, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORREAD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfRequestProbeAndLockUserBufferForRead
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -74,23 +78,67 @@ A pointer to a location that receives a handle to a framework memory object that
 ## Return Value
 
 <b>WdfRequestProbeAndLockUserBufferForRead</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An input parameter is invalid.
+</dl>
+</td>
+<td width="60%">
+An input parameter is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_USER_BUFFER</b></dt>
-</dl>The <i>Length</i> parameter is zero.
+</dl>
+</td>
+<td width="60%">
+The <i>Length</i> parameter is zero.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The request has already been completed or is otherwise invalid.
+</dl>
+</td>
+<td width="60%">
+The request has already been completed or is otherwise invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_VIOLATION</b></dt>
-</dl>The current thread is not the creator of the I/O request.
+</dl>
+</td>
+<td width="60%">
+The current thread is not the creator of the I/O request.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There is insufficient memory to complete the operation.
+</dl>
+</td>
+<td width="60%">
+There is insufficient memory to complete the operation.
 
- 
+</td>
+</tr>
+</table> 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -113,12 +161,6 @@ If <b>WdfRequestProbeAndLockUserBufferForRead</b> returns STATUS_SUCCESS, the dr
 
 For more information about <b>WdfRequestProbeAndLockUserBufferForRead</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers in Framework-Based Drivers</a>.
 
-The following code example is a shortened version of the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function that the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">NONPNP</a> sample driver contains. When the callback function receives an I/O request, it determines if the request contains an I/O control code with a transfer type of METHOD_NEITHER. If the request does contain such an I/O control code, the function:
-
-Calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer.md">WdfRequestRetrieveUnsafeUserInputBuffer</a> and <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuseroutputbuffer.md">WdfRequestRetrieveUnsafeUserOutputBuffer</a> to obtain the virtual addresses of the request's read and write buffers.
-
-Calls <b>WdfRequestProbeAndLockUserBufferForRead</b> and <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a> to probe and lock the buffers and to obtain a handle to a framework memory object that represents each buffer.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -133,17 +175,12 @@ Calls <b>WdfRequestProbeAndLockUserBufferForRead</b> and <a href="..\wdfrequest\
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
-</dt>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer.md">WdfRequestRetrieveUnsafeUserInputBuffer</a>
-</dt>
-</dl>
+
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
+
  
 
  

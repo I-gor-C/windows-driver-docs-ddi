@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 92A9462C-0E8C-4012-9374-3437BB220502
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION
+ms.keywords : ksmedia/PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION structure pointer [Audio Devices], KSAUDIOMODULE_NOTIFICATION, ksmedia/KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION, _KSAUDIOMODULE_NOTIFICATION, audio.ksaudiomodule_notification, KSAUDIOMODULE_NOTIFICATION structure [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAUDIOMODULE_NOTIFICATION
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION
 ---
 
 # _KSAUDIOMODULE_NOTIFICATION structure
@@ -55,12 +59,29 @@ typedef struct _KSAUDIOMODULE_NOTIFICATION {
 ## Members
 
 
-    ## Remarks
-        The Audio module notification KSNOTIFICATIONID_AudioModule is defined in Ksmedia.h as shown here. 
+## Remarks
+The Audio module notification KSNOTIFICATIONID_AudioModule is defined in Ksmedia.h as shown here. 
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>// 
+// Audio module notification definitions. 
+// 
 
+#define STATIC_KSNOTIFICATIONID_AudioModule \ 
+    0x9C2220F0, 0xD9A6, 0x4D5C, 0xA0, 0x36, 0x57, 0x38, 0x57, 0xFD, 0x50, 0xD2 
 
+DEFINE_GUIDSTRUCT("9C2220F0-D9A6-4D5C-A036-573857FD50D2", KSNOTIFICATIONID_AudioModule); 
 
-For more information about audio modules, see  <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>. </p>
+#define KSNOTIFICATIONID_AudioModule DEFINE_GUIDNAMED(KSNOTIFICATIONID_AudioModule)</pre>
+</td>
+</tr>
+</table></span></div>
+
+For more information about audio modules, see  <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

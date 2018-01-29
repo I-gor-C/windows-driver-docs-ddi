@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : cdf156a1-1556-441a-ae3d-9a49daf47990
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.keywords : bltooth.bthreusebrb, BthReuseBrb callback function [Bluetooth Devices], BthReuseBrb, PFNBTH_REUSE_BRB, PFNBTH_REUSE_BRB, bthddi/BthReuseBrb, bth_funcs_118c4022-448d-4970-ba70-34dcbc488d13.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BthReuseBrb
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
@@ -73,8 +77,8 @@ None.
 Profile drivers obtain a pointer to the 
     <i>BthReuseBrb</i> function when they query the Bluetooth driver stack for an instance of the
     BTHDDI_PROFILE_DRIVER_INTERFACE driver interface. See 
-    <a href="https://msdn.microsoft.com/56db29cd-26ab-4262-9b9f-40d46372ffe9">Querying for Bluetooth
-    Interfaces</a> for more information about querying the Bluetooth driver stack.
+    <mshelp:link keywords="bltooth.querying_for_bluetooth_interfaces" tabindex="0">Querying for Bluetooth
+    Interfaces</mshelp:link> for more information about querying the Bluetooth driver stack.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,11 +94,8 @@ Profile drivers obtain a pointer to the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 90fb54dd-a2df-423c-8dd6-bd99c5ad1de4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO
+ms.keywords : whearef_adb42f7c-687b-47ef-b3fe-312ef995e5c5.xml, *PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO, _WHEA_XPF_PROCINFO, PWHEA_XPF_PROCINFO structure pointer [WHEA Drivers and Applications], whea.whea_xpf_procinfo, ntddk/WHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO structure [WHEA Drivers and Applications], ntddk/PWHEA_XPF_PROCINFO, PWHEA_XPF_PROCINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_PROCINFO
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO
 ---
 
 # _WHEA_XPF_PROCINFO structure
@@ -58,47 +62,47 @@ typedef struct _WHEA_XPF_PROCINFO {
 
 ## Members
 
-        
-            `CheckInfo`
 
-            A union of unions that are specific to each different type of processor error information.
+`CheckInfo`
+
+A union of unions that are specific to each different type of processor error information.
 
 This member contains valid data only if the <b>ValidBits.CheckInfo</b> bit is set.
-        
-            `CheckInfoId`
 
-            A GUID that identifies the processor error information that is contained in the <b>CheckInfo</b> member. The following are the possible GUIDs that can be specified for this member:
-        
-            `InstructionPointer`
+`CheckInfoId`
 
-            The instruction pointer at the time that the error occurred.
+A GUID that identifies the processor error information that is contained in the <b>CheckInfo</b> member. The following are the possible GUIDs that can be specified for this member:
+
+`InstructionPointer`
+
+The instruction pointer at the time that the error occurred.
 
 This member contains valid data only if the <b>ValidBits.InstructionPointer</b> bit is set.
-        
-            `RequesterId`
 
-            An identifier that uniquely identifies the requester associated with the error.
+`RequesterId`
+
+An identifier that uniquely identifies the requester associated with the error.
 
 This member contains valid data only if the <b>ValidBits.RequesterId</b> bit is set.
-        
-            `ResponderId`
 
-            An identifier that uniquely identifies the responder associated with the error.
+`ResponderId`
+
+An identifier that uniquely identifies the responder associated with the error.
 
 This member contains valid data only if the <b>ValidBits.Responder</b> bit is set.
-        
-            `TargetId`
 
-            An identifier that uniquely identifies the target associated with the error.
+`TargetId`
+
+An identifier that uniquely identifies the target associated with the error.
 
 This member contains valid data only if the <b>ValidBits.TargetId</b> bit is set.
-        
-            `ValidBits`
 
-            A <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.
+`ValidBits`
 
-    ## Remarks
-        The <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains an array of WHEA_XPF_PROCINFO structures, each of which describes specific error information associated with the processor error that occurred.
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.
+
+## Remarks
+The <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains an array of WHEA_XPF_PROCINFO structures, each of which describes specific error information associated with the processor error that occurred.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,28 +112,20 @@ This member contains valid data only if the <b>ValidBits.TargetId</b> bit is set
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_xpf_bus_check.md">WHEA_XPF_BUS_CHECK</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_xpf_cache_check.md">WHEA_XPF_CACHE_CHECK</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_xpf_ms_check.md">WHEA_XPF_MS_CHECK</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_tlb_check.md">WHEA_XPF_TLB_CHECK</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_bus_check.md">WHEA_XPF_BUS_CHECK</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_ms_check.md">WHEA_XPF_MS_CHECK</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_cache_check.md">WHEA_XPF_CACHE_CHECK</a>
+
  
 
  

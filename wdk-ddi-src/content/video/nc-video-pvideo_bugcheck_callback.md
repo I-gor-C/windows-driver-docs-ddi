@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1223534f-a89c-45b4-b07d-75c2c8383b73
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.hwvidbugcheckcallback, HwVidBugcheckCallback callback function [Display Devices], HwVidBugcheckCallback, PVIDEO_BUGCHECK_CALLBACK, PVIDEO_BUGCHECK_CALLBACK, video/HwVidBugcheckCallback, VideoMiniport_Functions_d3dcce93-d172-4948-8cc5-395dd2a1f9a5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwVidBugcheckCallback
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -104,11 +108,8 @@ The function is called at raised IRQL and must not attempt to access pageable co
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportregisterbugcheckcallback.md">VideoPortRegisterBugcheckCallback</a>
-</dt>
-</dl>
+
  
 
  

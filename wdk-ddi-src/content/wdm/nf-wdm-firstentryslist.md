@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 80444a10-91f3-44b5-ad20-3d3d8f49ca60
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : FirstEntrySList
+ms.keywords : FirstEntrySList, k109_0a6c7f88-35fa-4cc9-ac3d-03bf1e873cf3.xml, wdm/FirstEntrySList, FirstEntrySList routine [Kernel-Mode Driver Architecture], kernel.firstentryslist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FirstEntrySList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff56
 
 ## Remarks
 
-Unlike other sequenced singly linked list routines, the <b>FirstEntrySList</b> routine is not atomic. For more information about sequenced singly linked lists, see <a href="kernel.singly_and_doubly_linked_lists#sequenced_singly_linked_lists#sequenced_singly_linked_lists">Sequenced Singly Linked Lists</a>. Callers of this routine can run at any level. If called at IRQL &gt;= DISPATCH_LEVEL, the storage for <b>ListHead</b> must be resident.
+Unlike other sequenced singly linked list routines, the <b>FirstEntrySList</b> routine is not atomic. For more information about sequenced singly linked lists, see <a href="https://msdn.microsoft.com/3a305f54-7866-4163-a3e4-e078d1927adc">Sequenced Singly Linked Lists</a>. Callers of this routine can run at any level. If called at IRQL &gt;= DISPATCH_LEVEL, the storage for <b>ListHead</b> must be resident.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,14 +80,10 @@ Unlike other sequenced singly linked list routines, the <b>FirstEntrySList</b> r
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_slist_entry.md">SLIST_ENTRY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_slist_entry.md">SLIST_ENTRY</a>
+
  
 
  

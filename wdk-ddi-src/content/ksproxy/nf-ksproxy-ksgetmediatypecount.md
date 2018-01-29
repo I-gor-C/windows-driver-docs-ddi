@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 157cb12c-1b2d-45b5-8541-e16ee3449064
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetMediaTypeCount
+ms.keywords : ksproxy/KsGetMediaTypeCount, stream.ksgetmediatypecount, ksproxy_77c6249c-2b35-4d9e-afff-b01cf5518a73.xml, KsGetMediaTypeCount, KsGetMediaTypeCount function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetMediaTypeCount
-req.alt-loc : Ksproxy.lib,Ksproxy.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -85,14 +89,10 @@ The number of available media types that <b>KsGetMediaTypeCount</b> returns is e
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspinfactory.md">IKsPinFactory</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 79f3fdaf-e23a-40ba-a1eb-5428a63cc96a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DVD_COPY_PROTECT_KEY, DVD_COPY_PROTECT_KEY, *PDVD_COPY_PROTECT_KEY
+ms.keywords : ntddcdvd/PDVD_COPY_PROTECT_KEY, DVD_COPY_PROTECT_KEY, _DVD_COPY_PROTECT_KEY, PDVD_COPY_PROTECT_KEY, PDVD_COPY_PROTECT_KEY structure pointer [Storage Devices], structs-DVD_3ea6aa08-28ce-42d0-855d-d2e83ce58f89.xml, DVD_COPY_PROTECT_KEY structure [Storage Devices], storage.dvd_copy_protect_key, ntddcdvd/DVD_COPY_PROTECT_KEY, *PDVD_COPY_PROTECT_KEY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_COPY_PROTECT_KEY
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DVD_COPY_PROTECT_KEY, *PDVD_COPY_PROTECT_KEY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDVD_COPY_PROTECT_KEY, DVD_COPY_PROTECT_KEY"
 ---
 
 # _DVD_COPY_PROTECT_KEY structure
@@ -54,30 +58,30 @@ typedef struct _DVD_COPY_PROTECT_KEY {
 
 ## Members
 
-        
-            `KeyData`
 
-            Contains the key data that was returned.
-        
-            `KeyFlags`
+`KeyData`
 
-            
-        
-            `KeyLength`
+Contains the key data that was returned.
 
-            Indicates the length of the key data to be retrieved.
-        
-            `KeyType`
+`KeyFlags`
 
-            Indicates the key type. The DVD device driver uses this information to determine the key format in a report key command, as defined by the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification. A report key command either reports key data for a specified key (challenge key, bus key, title key, RPC key, or disk key), reports the state of the authentication success flag (ASF), or invalidates an authentication grant ID (AGID). See the <i>MMC-3</i> specification for further information.
-        
-            `Parameters`
 
-            
-        
-            `SessionId`
 
-            Indicates the DVD session ID.
+`KeyLength`
+
+Indicates the length of the key data to be retrieved.
+
+`KeyType`
+
+Indicates the key type. The DVD device driver uses this information to determine the key format in a report key command, as defined by the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification. A report key command either reports key data for a specified key (challenge key, bus key, title key, RPC key, or disk key), reports the state of the authentication success flag (ASF), or invalidates an authentication grant ID (AGID). See the <i>MMC-3</i> specification for further information.
+
+`Parameters`
+
+
+
+`SessionId`
+
+Indicates the DVD session ID.
 
 
 ## Requirements
@@ -88,16 +92,12 @@ typedef struct _DVD_COPY_PROTECT_KEY {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ne-ntddcdvd-dvd_key_type.md">DVD_KEY_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_key.md">IOCTL_DVD_READ_KEY</a>
-</dt>
-</dl>
+
  
 
  

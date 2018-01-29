@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b73e49d1-3e71-4c36-b628-3d5a3975e5fa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_SUBMITCOMMANDFLAGS, DXGK_SUBMITCOMMANDFLAGS
+ms.keywords : d3dkmddi/DXGK_SUBMITCOMMANDFLAGS, DXGK_SUBMITCOMMANDFLAGS, DXGK_SUBMITCOMMANDFLAGS structure [Display Devices], DmStructs_c3c77059-3e18-4fe7-a845-b59bb117ba30.xml, display.dxgk_submitcommandflags, _DXGK_SUBMITCOMMANDFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_SUBMITCOMMANDFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_SUBMITCOMMANDFLAGS
 ---
 
@@ -77,16 +81,12 @@ typedef struct _DXGK_SUBMITCOMMANDFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommand.md">DXGKARG_SUBMITCOMMAND</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
-</dt>
-</dl>
+
  
 
  

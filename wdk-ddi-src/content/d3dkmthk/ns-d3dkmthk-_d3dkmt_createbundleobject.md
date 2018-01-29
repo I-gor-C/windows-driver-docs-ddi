@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dbb01112-9d28-4dbf-88c7-3304d9d6a661
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT
+ms.keywords : D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT structure [Display Devices], _D3DKMT_CREATEBUNDLEOBJECT, d3dkmthk/D3DKMT_CREATEBUNDLEOBJECT, display.d3dkmt-createbundleobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEBUNDLEOBJECT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEBUNDLEOBJECT
 ---
 
@@ -51,26 +55,30 @@ typedef struct _D3DKMT_CREATEBUNDLEOBJECT {
 
 ## Members
 
-        
-            `cObjects`
 
-            The number of the DXGK object to be bundled.
-        
-            `hNtBundleHandle`
+`cObjects`
 
-            The NT bundle handle.
-        
-            `pBundleObjectAttributes`
+The number of the DXGK object to be bundled.
 
-            Object attributes for the bundled object.
-        
-            `phObjects`
+`dwBundleDesiredAccess`
 
-            A pointer to the array of the DXGK object to be bundled.
-        
-            `ppObjectAttributes`
+The desired access for bundle handle.
 
-            An array of pointers to object attributes for DXGK objects.
+`hNtBundleHandle`
+
+The NT bundle handle.
+
+`pBundleObjectAttributes`
+
+Object attributes for the bundled object.
+
+`phObjects`
+
+A pointer to the array of the DXGK object to be bundled.
+
+`ppObjectAttributes`
+
+An array of pointers to object attributes for DXGK objects.
 
 
 ## Requirements

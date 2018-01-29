@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0b4a7375-1ee2-4829-92bb-01ed610236de
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ISCSI_DiscoveredTarget, *PISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget
+ms.keywords : iscsifnd/ISCSI_DiscoveredTarget, structs-iSCSI_d53d59a0-bd96-4eb8-b874-5846302ddda2.xml, *PISCSI_DiscoveredTarget, PISCSI_DiscoveredTarget, PISCSI_DiscoveredTarget structure pointer [Storage Devices], _ISCSI_DiscoveredTarget, storage.iscsi_discoveredtarget, ISCSI_DiscoveredTarget structure [Storage Devices], iscsifnd/PISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_DiscoveredTarget
-req.alt-loc : iscsifnd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ISCSI_DiscoveredTarget, *PISCSI_DiscoveredTarget
 ---
 
 # _ISCSI_DiscoveredTarget structure
@@ -49,25 +53,25 @@ typedef struct _ISCSI_DiscoveredTarget {
 
 ## Members
 
-        
-            `TargetAlias`
 
-            The human-readable name or description that is assigned to the target device by its host operating system. You can use this name in user interfaces, but it is not unique, you should not use it in authentication decisions.
-        
-            `TargetDiscoveredPortalGroups`
+`TargetAlias`
 
-            A variable-length array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a> structures that contains information about the portal groups that the initiator can use to connect to the target.
-        
-            `TargetName`
+The human-readable name or description that is assigned to the target device by its host operating system. You can use this name in user interfaces, but it is not unique, you should not use it in authentication decisions.
 
-            A name for the target that uniquely identifies the target anywhere in the world. For information about how to specify this name, see the <i>iSCSI </i>specification that is published by the Internet Engineering Task Force (IETF) of the IP storage working group.
-        
-            `TargetPortalGroupCount`
+`TargetDiscoveredPortalGroups`
 
-            The number of portal groups that are associated with the target.
+A variable-length array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a> structures that contains information about the portal groups that the initiator can use to connect to the target.
 
-    ## Remarks
-        The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561527">ISCSI_DiscoveredTarget WMI Class</a> in <i>Discover.mof</i>.
+`TargetName`
+
+A name for the target that uniquely identifies the target anywhere in the world. For information about how to specify this name, see the <i>iSCSI </i>specification that is published by the Internet Engineering Task Force (IETF) of the IP storage working group.
+
+`TargetPortalGroupCount`
+
+The number of portal groups that are associated with the target.
+
+## Remarks
+The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561527">ISCSI_DiscoveredTarget WMI Class</a> in <i>Discover.mof</i>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,19 +81,14 @@ typedef struct _ISCSI_DiscoveredTarget {
 | **Minimum UMDF version** |  |
 | **Header** | iscsifnd.h (include Iscsifnd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561527">ISCSI_DiscoveredTarget WMI Class</a>
-</dt>
-<dt>
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget2.md">ISCSI_DiscoveredTarget2</a>
-</dt>
-<dt>
+
 <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a>
-</dt>
-</dl>
+
+<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget2.md">ISCSI_DiscoveredTarget2</a>
+
  
 
  

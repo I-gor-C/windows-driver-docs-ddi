@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f2f4c54c-7413-48e5-a165-d71f35642b6c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiqueryadapterinfo, DxgkDdiQueryAdapterInfo callback function [Display Devices], DxgkDdiQueryAdapterInfo, DXGKDDI_QUERYADAPTERINFO, DXGKDDI_QUERYADAPTERINFO, d3dkmddi/DxgkDdiQueryAdapterInfo, DmFunctions_700dcca1-79a6-4d31-953c-00e33c8a404d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiQueryAdapterInfo
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,18 +68,56 @@ NTSTATUS DxgkddiQueryadapterinfo(
 ## Return Value
 
 <i>DxgkDdiQueryAdapterInfo</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><i>DxgkDdiQueryAdapterInfo</i> successfully retrieved the configuration information.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiQueryAdapterInfo</i> successfully retrieved the configuration information.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters that were passed to <i>DxgkDdiQueryAdapterInfo</i> contained errors that prevented it from completing.
+</dl>
+</td>
+<td width="60%">
+Parameters that were passed to <i>DxgkDdiQueryAdapterInfo</i> contained errors that prevented it from completing.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl><i>DxgkDdiQueryAdapterInfo</i> could not allocate memory that was required for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiQueryAdapterInfo</i> could not allocate memory that was required for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_DRIVER_MISMATCH</b></dt>
-</dl>The display miniport driver is not compatible with the user-mode display driver that initiated the call to <i>DxgkDdiQueryAdapterInfo</i> (that is, supplied private data for a query to the display miniport driver).
+</dl>
+</td>
+<td width="60%">
+The display miniport driver is not compatible with the user-mode display driver that initiated the call to <i>DxgkDdiQueryAdapterInfo</i> (that is, supplied private data for a query to the display miniport driver). 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -101,17 +143,12 @@ If the DirectX graphics kernel subsystem supplies the DXGKQAITYPE_QUERYSEGMENT v
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.md">pfnQueryAdapterInfoCb</a>
-</dt>
-</dl>
+
  
 
  

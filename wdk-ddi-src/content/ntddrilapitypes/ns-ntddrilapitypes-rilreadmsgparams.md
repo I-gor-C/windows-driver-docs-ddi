@@ -7,8 +7,8 @@ old-location : netvista\rilreadmsgparams.htm
 old-project : netvista
 ms.assetid : feeabcd2-659f-4a87-abdd-cfbf89589c48
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILREADMSGPARAMS, RILREADMSGPARAMS, *LPRILREADMSGPARAMS
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILREADMSGPARAMS, netvista.rilreadmsgparams, RILREADMSGPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILREADMSGPARAMS, RILREADMSGPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILREADMSGPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILREADMSGPARAMS, *LPRILREADMSGPARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILREADMSGPARAMS, RILREADMSGPARAMS"
 ---
 
 # RILREADMSGPARAMS structure
@@ -47,14 +51,14 @@ typedef struct _RILREADMSGPARAMS {
 
 ## Members
 
-        
-            `dwIndex`
 
-            
-        
-            `hUiccApp`
+`dwIndex`
 
-            
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

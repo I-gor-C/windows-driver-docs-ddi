@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b8ccd6f0-d1bf-430f-bffb-dd161793096f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_2DDI_ADAPTERFUNCS, D3D10_2DDI_ADAPTERFUNCS
+ms.keywords : D3D10_2DDI_ADAPTERFUNCS structure [Display Devices], UMDisplayDriver_Dx11param_Structs_6d47bf5d-d3ef-4187-83a0-95d5c3c62413.xml, display.d3d10_2ddi_adapterfuncs, d3d10umddi/D3D10_2DDI_ADAPTERFUNCS, D3D10_2DDI_ADAPTERFUNCS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D10_2DDI_ADAPTERFUNCS is supported beginning with 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_2DDI_ADAPTERFUNCS
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_2DDI_ADAPTERFUNCS
 ---
 
@@ -50,26 +54,26 @@ typedef struct D3D10_2DDI_ADAPTERFUNCS {
 
 ## Members
 
-        
-            `pfnCalcPrivateDeviceSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedevicesize.md">CalcPrivateDeviceSize</a> function that specifies the size of a memory block that the user-mode display driver requires from the Microsoft Direct3D runtime to store frequently-accessed data.
-        
-            `pfnCloseAdapter`
+`pfnCalcPrivateDeviceSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_closeadapter.md">CloseAdapter(D3D10)</a> function that releases resources for a graphics adapter object.
-        
-            `pfnCreateDevice`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedevicesize.md">CalcPrivateDeviceSize</a> function that specifies the size of a memory block that the user-mode display driver requires from the Microsoft Direct3D runtime to store frequently-accessed data.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function that creates a representation of a display device that handles a collection of rendering state.
-        
-            `pfnGetCaps`
+`pfnCloseAdapter`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a> function that queries for capabilities of the graphics hardware.
-        
-            `pfnGetSupportedVersions`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_closeadapter.md">CloseAdapter(D3D10)</a> function that releases resources for a graphics adapter object.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getsupportedversions.md">GetSupportedVersions</a> function that retrieves the version of the operating system that the driver supports and the hardware capabilities that are available (for example, Direct3D version 10.0, Direct3D version 10.1, and so on).
+`pfnCreateDevice`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function that creates a representation of a display device that handles a collection of rendering state.
+
+`pfnGetCaps`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a> function that queries for capabilities of the graphics hardware.
+
+`pfnGetSupportedVersions`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getsupportedversions.md">GetSupportedVersions</a> function that retrieves the version of the operating system that the driver supports and the hardware capabilities that are available (for example, Direct3D version 10.0, Direct3D version 10.1, and so on).
 
 
 ## Requirements
@@ -80,31 +84,22 @@ typedef struct D3D10_2DDI_ADAPTERFUNCS {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedevicesize.md">CalcPrivateDeviceSize</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_closeadapter.md">CloseAdapter(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_openadapter.md">D3D10DDIARG_OPENADAPTER</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getsupportedversions.md">GetSupportedVersions</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_openadapter.md">OpenAdapter10</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getsupportedversions.md">GetSupportedVersions</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_openadapter.md">D3D10DDIARG_OPENADAPTER</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedevicesize.md">CalcPrivateDeviceSize</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_closeadapter.md">CloseAdapter(D3D10)</a>
+
  
 
  

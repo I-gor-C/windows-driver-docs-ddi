@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 460ADE5A-0302-4695-A9E4-43B309738BE7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILE_STANDARD_INFORMATION_EX, FILE_STANDARD_INFORMATION_EX, *PFILE_STANDARD_INFORMATION_EX
+ms.keywords : FILE_STANDARD_INFORMATION_EX, kernel.file_standard_information_ex, PFILE_STANDARD_INFORMATION_EX structure pointer [Kernel-Mode Driver Architecture], PFILE_STANDARD_INFORMATION_EX, wdm/FILE_STANDARD_INFORMATION_EX, wdm/PFILE_STANDARD_INFORMATION_EX, _FILE_STANDARD_INFORMATION_EX, FILE_STANDARD_INFORMATION_EX structure [Kernel-Mode Driver Architecture], *PFILE_STANDARD_INFORMATION_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_STANDARD_INFORMATION_EX
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FILE_STANDARD_INFORMATION_EX, *PFILE_STANDARD_INFORMATION_EX
 req.product : Windows 10 or later.
 ---
@@ -53,37 +57,37 @@ typedef struct _FILE_STANDARD_INFORMATION_EX {
 
 ## Members
 
-        
-            `AllocationSize`
 
-            The file allocation size in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
-        
-            `AlternateStream`
+`AllocationSize`
 
-            The alternate data stream status. <b>TRUE</b> indicates the file object represents an alternate data stream.
-        
-            `DeletePending`
+The file allocation size in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
 
-            The delete pending status. <b>TRUE</b> indicates that a file deletion has been requested.
-        
-            `Directory`
+`AlternateStream`
 
-            The file directory status. <b>TRUE</b> indicates the file object represents a directory.
-        
-            `EndOfFile`
+The alternate data stream status. <b>TRUE</b> indicates the file object represents an alternate data stream.
 
-            The end of file location as a byte offset.
-        
-            `MetadataAttribute`
+`DeletePending`
 
-            The metadata attribute status. <b>TRUE</b> indicates the file object represents a metadata attribute.
-        
-            `NumberOfLinks`
+The delete pending status. <b>TRUE</b> indicates that a file deletion has been requested.
 
-            The number of hard links to the file.
+`Directory`
 
-    ## Remarks
-        <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file; that is, it is the offset to the byte immediately following the last valid byte in the file.
+The file directory status. <b>TRUE</b> indicates the file object represents a directory.
+
+`EndOfFile`
+
+The end of file location as a byte offset.
+
+`MetadataAttribute`
+
+The metadata attribute status. <b>TRUE</b> indicates the file object represents a metadata attribute.
+
+`NumberOfLinks`
+
+The number of hard links to the file.
+
+## Remarks
+<b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file; that is, it is the offset to the byte immediately following the last valid byte in the file.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,19 +97,14 @@ typedef struct _FILE_STANDARD_INFORMATION_EX {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
+
  
 
  

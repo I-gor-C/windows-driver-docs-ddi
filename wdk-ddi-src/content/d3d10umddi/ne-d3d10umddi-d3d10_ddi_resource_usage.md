@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f412b665-3489-4200-8fb8-7b6eb564ba98
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_RESOURCE_USAGE, D3D10_DDI_RESOURCE_USAGE
+ms.keywords : UMDisplayDriver_Dx10param_Structs_1d4cddbd-58a0-45b3-b7a9-8b55654c37a7.xml, D3D10_DDI_RESOURCE_USAGE, D3D10_DDI_USAGE_STAGING, D3D10_DDI_RESOURCE_USAGE enumeration [Display Devices], D3D10_DDI_USAGE_DEFAULT, d3d10umddi/D3D10_DDI_USAGE_STAGING, d3d10umddi/D3D10_DDI_USAGE_DEFAULT, D3D10_DDI_USAGE_DYNAMIC, d3d10umddi/D3D10_DDI_USAGE_IMMUTABLE, d3d10umddi/D3D10_DDI_RESOURCE_USAGE, D3D10_DDI_USAGE_IMMUTABLE, display.d3d10_ddi_resource_usage, d3d10umddi/D3D10_DDI_USAGE_DYNAMIC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_DDI_RESOURCE_USAGE
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_DDI_RESOURCE_USAGE
 ---
 
@@ -83,17 +87,12 @@ typedef enum D3D10_DDI_RESOURCE_USAGE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
+
  
 
  

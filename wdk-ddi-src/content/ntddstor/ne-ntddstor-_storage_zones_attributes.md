@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6C86A931-C87C-4273-9409-A45A3FDB8B4C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES
+ms.keywords : ZonesAttributeTypeMayDifferentLengthSame, storage.storage_zones_attributes, ntddstor/PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES, ZonesAttributeTypeSameLengthSame, ntddstor/ZonesAttributeTypeSameLengthSame, ZonesAttributeTypeAndLengthMayDifferent, ntddstor/ZonesAttributeTypeAndLengthMayDifferent, *PSTORAGE_ZONES_ATTRIBUTES, ntddstor/STORAGE_ZONES_ATTRIBUTES, ZonesAttributeTypeSameLastZoneLengthDifferent, _STORAGE_ZONES_ATTRIBUTES, PSTORAGE_ZONES_ATTRIBUTES, PSTORAGE_ZONES_ATTRIBUTES enumeration pointer [Storage Devices], ntddstor/ZonesAttributeTypeSameLastZoneLengthDifferent, STORAGE_ZONES_ATTRIBUTES enumeration [Storage Devices], ntddstor/ZonesAttributeTypeMayDifferentLengthSame
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_ZONES_ATTRIBUTES
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES
 ---
 
 # _STORAGE_ZONES_ATTRIBUTES Enumeration

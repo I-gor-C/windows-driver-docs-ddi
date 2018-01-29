@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EC9654B8-06AA-43C8-A159-F176BDE4E015
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_VALIDATEUPDATEALLOCPROPERTY, DXGKARG_VALIDATEUPDATEALLOCPROPERTY
+ms.keywords : d3dkmddi/DXGKARG_VALIDATEUPDATEALLOCPROPERTY, _DXGKARG_VALIDATEUPDATEALLOCPROPERTY, DXGKARG_VALIDATEUPDATEALLOCPROPERTY structure [Display Devices], display.dxgkarg_validateupdateallocproperty, DXGKARG_VALIDATEUPDATEALLOCPROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10 and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_VALIDATEUPDATEALLOCPROPERTY
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_VALIDATEUPDATEALLOCPROPERTY
 ---
 
@@ -58,22 +62,22 @@ typedef struct _DXGKARG_VALIDATEUPDATEALLOCPROPERTY {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] The flags that will be used to update the allocation.
-        
-            `hAllocation`
+`Flags`
 
-            [in] A Handle to the allocation that will be updated.
-        
-            `PreferredSegment`
+[in] The flags that will be used to update the allocation.
 
-            [in] An index for the new preferred segment set. If the current preferred segment set is the same, then this will be ignored.
-        
-            `SupportedSegmentSet`
+`hAllocation`
 
-            [in] An index for the new supported segment set. If the current supported segment set is the same, then this will be ignored.
+[in] A Handle to the allocation that will be updated.
+
+`PreferredSegment`
+
+[in] An index for the new preferred segment set. If the current preferred segment set is the same, then this will be ignored.
+
+`SupportedSegmentSet`
+
+[in] An index for the new supported segment set. If the current supported segment set is the same, then this will be ignored.
 
 
 ## Requirements

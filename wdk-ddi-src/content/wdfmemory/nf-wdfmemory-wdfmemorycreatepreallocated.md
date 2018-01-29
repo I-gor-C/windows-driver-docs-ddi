@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8c4f9abc-f03d-4084-b0ce-34aea5dd7d96
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfMemoryCreatePreallocated
+ms.keywords : WdfMemoryCreatePreallocated, kmdf.wdfmemorycreatepreallocated, wdf.wdfmemorycreatepreallocated, WdfMemoryCreatePreallocated method, wdfmemory/WdfMemoryCreatePreallocated, PFN_WDFMEMORYCREATEPREALLOCATED, DFMemoryObjectRef_03f219cd-a77b-4a17-b67a-2b01e0aeb3e6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfMemoryCreatePreallocated
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
 req.product : Windows 10 or later.
 ---
@@ -74,14 +78,34 @@ A pointer to a location that receives a handle to the new memory object.
 ## Return Value
 
 <b>WdfMemoryCreatePreallocated</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There was insufficient memory.
+</dl>
+</td>
+<td width="60%">
+There was insufficient memory.
 
- 
+</td>
+</tr>
+</table> 
 
 For a list of other return values that the <b>WdfMemoryCreatePreallocated</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -105,8 +129,6 @@ When the framework memory object that <b>WdfMemoryCreatePreallocated</b> created
 
 For more information about framework memory objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-memory-buffers">Using Memory Buffers</a>.
 
-The following code example allocates a buffer and then creates a framework memory object for the buffer.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -121,26 +143,18 @@ The following code example allocates a buffer and then creates a framework memor
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-</dt>
-<dt>
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
-</dt>
-<dt>
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemoryassignbuffer.md">WdfMemoryAssignBuffer</a>
-</dt>
-<dt>
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
-</dt>
-<dt>
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemoryassignbuffer.md">WdfMemoryAssignBuffer</a>
+
+<a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
+
  
 
  

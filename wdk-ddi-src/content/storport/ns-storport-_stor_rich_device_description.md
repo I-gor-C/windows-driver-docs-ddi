@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 765A420C-F406-4A46-BDCC-26A451549F8D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_RICH_DEVICE_DESCRIPTION, *PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION
+ms.keywords : storport/PSTOR_RICH_DEVICE_DESCRIPTION, _STOR_RICH_DEVICE_DESCRIPTION, *PSTOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION structure pointer [Storage Devices], storage.stor_rich_device_description, storport/STOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_RICH_DEVICE_DESCRIPTION
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION"
 req.product : Windows 10 or later.
 ---
@@ -53,29 +57,29 @@ typedef struct _STOR_RICH_DEVICE_DESCRIPTION {
 
 ## Members
 
-        
-            `FirmwareRevision`
 
-            A string representing the device’s currently active firmware revision.
-        
-            `ModelNumber`
+`FirmwareRevision`
 
-            A string representing the device’s model.
-        
-            `Size`
+A string representing the device’s currently active firmware revision.
 
-            The size of the structure.
-        
-            `VendorId`
+`ModelNumber`
 
-            A string representing the device’s vendor ID. May be an empty string if ModelNumber is provided.
-        
-            `Version`
+A string representing the device’s model.
 
-            The version of the structure. Must be STOR_RICH_DEVICE_DESCRIPTION_STRUCTURE_VERSION.
+`Size`
 
-    ## Remarks
-        Miniport can choose to support this UnitControl if the device reports longer Model or Firmware information than defined in SCSI.
+The size of the structure.
+
+`VendorId`
+
+A string representing the device’s vendor ID. May be an empty string if ModelNumber is provided.
+
+`Version`
+
+The version of the structure. Must be STOR_RICH_DEVICE_DESCRIPTION_STRUCTURE_VERSION.
+
+## Remarks
+Miniport can choose to support this UnitControl if the device reports longer Model or Firmware information than defined in SCSI.
 
 This is invoked during the Unit enumeration process or the device description update process. ScsiUnitRichDescription is a caller-allocated version of this structure.
 
@@ -87,13 +91,10 @@ This is invoked during the Unit enumeration process or the device description up
 | **Minimum UMDF version** |  |
 | **Header** | storport.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh920398">HwStorUnitControl</a>
-</dt>
-</dl>
+
  
 
  

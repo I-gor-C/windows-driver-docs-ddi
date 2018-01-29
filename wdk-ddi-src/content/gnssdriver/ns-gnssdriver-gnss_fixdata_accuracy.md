@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY
+ms.keywords : GNSS_FIXDATA_ACCURACY, PGNSS_FIXDATA_ACCURACY structure pointer [Sensor Devices], GNSS_FIXDATA_ACCURACY structure [Sensor Devices], gnssdriver/PGNSS_FIXDATA_ACCURACY, gnssdriver/GNSS_FIXDATA_ACCURACY, PGNSS_FIXDATA_ACCURACY, sensors.gnss_fixdata_accuracy, *PGNSS_FIXDATA_ACCURACY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_FIXDATA_ACCURACY
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY
 ---
 
 # GNSS_FIXDATA_ACCURACY structure
@@ -61,72 +65,72 @@ typedef struct {
 
 ## Members
 
-        
-            `AltitudeAccuracy`
 
-            Reserved, do not use.
-        
-            `AltitudeConfidence`
+`AltitudeAccuracy`
 
-            Reserved, do not use.
-        
-            `HeadingAccuracy`
+Reserved, do not use.
 
-            Reserved, do not use.
-        
-            `HeadingConfidence`
+`AltitudeConfidence`
 
-            Reserved, do not use.
-        
-            `HorizontalAccuracy`
+Reserved, do not use.
 
-            Accuracy reported with 95% confidence.
-        
-            `HorizontalConfidence`
+`HeadingAccuracy`
 
-            Reserved, do not use.
-        
-            `HorizontalDilutionOfPrecision`
+Reserved, do not use.
 
-            Horizontal dilution of precision (HDOP).
-        
-            `HorizontalErrorAngle`
+`HeadingConfidence`
 
-            Horizontal uncertainty ellipse orientation angle with  95% confidence accuracy.
-        
-            `HorizontalErrorMajorAxis`
+Reserved, do not use.
 
-            Horizontal uncertainty ellipse semi-major axis with  95% confidence accuracy.
-        
-            `HorizontalErrorMinorAxis`
+`HorizontalAccuracy`
 
-            Horizontal uncertainty ellipse semi-minor axis with  95% confidence accuracy.
-        
-            `PositionDilutionOfPrecision`
+Accuracy reported with 95% confidence.
 
-            Position dilution of precision (PDOP).
+`HorizontalConfidence`
+
+Reserved, do not use.
+
+`HorizontalDilutionOfPrecision`
+
+Horizontal dilution of precision (HDOP).
+
+`HorizontalErrorAngle`
+
+Horizontal uncertainty ellipse orientation angle with  95% confidence accuracy.
+
+`HorizontalErrorMajorAxis`
+
+Horizontal uncertainty ellipse semi-major axis with  95% confidence accuracy.
+
+`HorizontalErrorMinorAxis`
+
+Horizontal uncertainty ellipse semi-minor axis with  95% confidence accuracy.
+
+`PositionDilutionOfPrecision`
+
+Position dilution of precision (PDOP).
 
 Satellite-based positions with a dilution of precision (DOP) value of 0 or a DOP value higher than 10 may be filtered by the GNSS adapter.
-        
-            `Size`
 
-            Structure size.
-        
-            `SpeedAccuracy`
+`Size`
 
-            Reserved, do not use.
-        
-            `SpeedConfidence`
+Structure size.
 
-            Reserved, do not use.
-        
-            `Version`
+`SpeedAccuracy`
 
-            Version number.
-        
-            `VerticalDilutionOfPrecision`
+Reserved, do not use.
 
-            Vertical dilution of precision (VDOP).
+`SpeedConfidence`
+
+Reserved, do not use.
+
+`Version`
+
+Version number.
+
+`VerticalDilutionOfPrecision`
+
+Vertical dilution of precision (VDOP).
 
 
 ## Requirements

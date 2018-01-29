@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7f436ac1-1e36-449c-a23f-b5729e5a20c2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionDmaCompletedWithLength
+ms.keywords : kmdf.wdfdmatransactiondmacompletedwithlength, DFDmaObjectRef_b04fb6c6-98ce-4d3b-8bc9-10a29f6bde46.xml, wdfdmatransaction/WdfDmaTransactionDmaCompletedWithLength, WdfDmaTransactionDmaCompletedWithLength method, PFN_WDFDMATRANSACTIONDMACOMPLETEDWITHLENGTH, wdf.wdfdmatransactiondmacompletedwithlength, WdfDmaTransactionDmaCompletedWithLength
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDmaTransactionDmaCompletedWithLength
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -80,8 +84,6 @@ The <b>WdfDmaTransactionDmaCompletedWithLength</b> method behaves the same as <a
 
 For more information about completing DMA transfers, see <a href="https://msdn.microsoft.com/86383b9f-9b82-4afa-81ac-2ab09bd8778b">Completing a DMA Transfer</a>.
 
-The following code example is from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">PLX9x5x</a> sample driver. This example calls <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiongetcurrentdmatransferlength.md">WdfDmaTransactionGetCurrentDmaTransferLength</a> to determine the current transfer's original length, and then it calculates the actual transfer length. Next, the example calls <b>WdfDmaTransactionDmaCompletedWithLength</b> to report the actual transfer length to the framework. If the current transfer is the last one for the transaction, the example calls a private routine that completes the I/O request.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -96,17 +98,12 @@ The following code example is from the <a href="https://docs.microsoft.com/en-us
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
-</dt>
-<dt>
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
-</dt>
-<dt>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiongetcurrentdmatransferlength.md">WdfDmaTransactionGetCurrentDmaTransferLength</a>
-</dt>
-</dl>
+
  
 
  

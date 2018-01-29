@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5cb10ec9-8496-49d1-b8d0-53d8fe7470c5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW, D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW
+ms.keywords : D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW, D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW structure [Display Devices], UMDisplayDriver_Dx10param_Structs_804b8de8-55ba-4a68-ba21-ada239882372.xml, d3d10umddi/D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW, display.d3d10ddiarg_tex1d_shaderresourceview
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW
 ---
 
@@ -49,25 +53,25 @@ typedef struct D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW {
 
 ## Members
 
-        
-            `ArraySize`
 
-            [in] The number of array slices for the texture.
-        
-            `FirstArraySlice`
+`ArraySize`
 
-            [in] The identifier of the first array slice.
-        
-            `MipLevels`
+[in] The number of array slices for the texture.
 
-            [in] The number of MIP-map levels for the texture.
-        
-            `MostDetailedMip`
+`FirstArraySlice`
 
-            [in] The identifier of the most detailed MIP-map.
+[in] The identifier of the first array slice.
 
-    ## Remarks
-        If the <b>MipLevels</b> member is set to -1, the MIP-maps in the texture start from the MIP-map that is set in the <b>MostDetailedMip</b> member. 
+`MipLevels`
+
+[in] The number of MIP-map levels for the texture.
+
+`MostDetailedMip`
+
+[in] The identifier of the most detailed MIP-map.
+
+## Remarks
+If the <b>MipLevels</b> member is set to -1, the MIP-maps in the texture start from the MIP-map that is set in the <b>MostDetailedMip</b> member. 
 
 If the <b>ArraySize</b> member is set to -1, the array slices in the texture start from the array slice that is set in <b>FirstArraySlice</b> member.
 
@@ -79,19 +83,14 @@ If the <b>ArraySize</b> member is set to -1, the array slices in the texture sta
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createshaderresourceview.md">CreateShaderResourceView</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createshaderresourceview.md">D3D10DDIARG_CREATESHADERRESOURCEVIEW</a>
-</dt>
-</dl>
+
  
 
  

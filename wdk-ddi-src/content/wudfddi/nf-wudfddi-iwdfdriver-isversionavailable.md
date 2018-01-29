@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9048a568-3369-44eb-8fa8-361ce968a253
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDriver, IWDFDriver::IsVersionAvailable, IsVersionAvailable
+ms.keywords : wudfddi/IWDFDriver::IsVersionAvailable, IsVersionAvailable method, IWDFDriver interface, IsVersionAvailable method, IsVersionAvailable, IWDFDriver, UMDFDriverObjectRef_6ad78413-a8c5-4a9f-953d-94bd4eaf3425.xml, IWDFDriver::IsVersionAvailable, umdf.iwdfdriver_isversionavailable, wdf.iwdfdriver_isversionavailable, IWDFDriver interface, IsVersionAvailable method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDriver.IsVersionAvailable
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -75,14 +79,10 @@ A pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-umdf_version_data.md">
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
-</dt>
-<dt>
 <a href="..\wudfddi_types\ns-wudfddi_types-umdf_version_data.md">UMDF_VERSION_DATA</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
+
  
 
  

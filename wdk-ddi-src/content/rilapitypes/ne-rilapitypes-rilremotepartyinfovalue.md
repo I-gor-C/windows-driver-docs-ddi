@@ -7,8 +7,8 @@ old-location : netvista\rilremotepartyinfovalue_2.htm
 old-project : netvista
 ms.assetid : bdea158f-6ee5-4e59-be50-efd8027a8645
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILREMOTEPARTYINFOVALUE, RILREMOTEPARTYINFOVALUE
+ms.date : 1/18/2018
+ms.keywords : RIL_REMOTEPARTYINFO_UNAVAILABLE, RIL_REMOTEPARTYINFO_WITHHELD, rilapitypes/RIL_REMOTEPARTYINFO_MAX, rilapitypes/RILREMOTEPARTYINFOVALUE, rilapitypes/RIL_REMOTEPARTYINFO_UNAVAILABLE, RILREMOTEPARTYINFOVALUE, netvista.rilremotepartyinfovalue_2, RILREMOTEPARTYINFOVALUE enumeration [Network Drivers Starting with Windows Vista], RIL_REMOTEPARTYINFO_MAX, rilapitypes/RIL_REMOTEPARTYINFO_WITHHELD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILREMOTEPARTYINFOVALUE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILREMOTEPARTYINFOVALUE
 req.product : Windows 10 or later.
 ---
@@ -58,6 +62,11 @@ typedef enum _RILREMOTEPARTYINFOVALUE {
 
 <tr>
 <td>RIL_REMOTEPARTYINFO_UNAVAILABLE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_REMOTEPARTYINFO_VALID</td>
 <td></td>
 </tr>
 

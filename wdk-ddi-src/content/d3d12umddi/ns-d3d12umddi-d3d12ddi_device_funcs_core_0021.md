@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4E4C3DB3-9C4C-4BBC-82C4-C5C41C0B818C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_DEVICE_FUNCS_CORE_0021, D3D12DDI_DEVICE_FUNCS_CORE_0021
+ms.keywords : display.d3d12ddi_device_funcs_core_0021, D3D12DDI_DEVICE_FUNCS_CORE_0021 structure [Display Devices], D3D12DDI_DEVICE_FUNCS_CORE_0021, d3d12umddi/D3D12DDI_DEVICE_FUNCS_CORE_0021
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_DEVICE_FUNCS_CORE_0021
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_DEVICE_FUNCS_CORE_0021
 ---
 
@@ -48,18 +52,374 @@ typedef struct D3D12DDI_DEVICE_FUNCS_CORE_0021 {
 
 ## Members
 
-        
-            `pfnCalcPrivatePipelineStateSize`
 
-            A callback function that calculates the size of a private pipeline state.
-        
-            `pfnCreatePipelineState`
+`pfnAddPipelineStateToLibrary`
 
-            A callback function that creates a pipeline state.
-        
-            `pfnDestroyPipelineState`
 
-            A callback function that destroys  a pipeline state.
+
+`pfnCalcPrivateBlendStateSize`
+
+
+
+`pfnCalcPrivateCommandAllocatorSize`
+
+
+
+`pfnCalcPrivateCommandListSize`
+
+
+
+`pfnCalcPrivateCommandQueueSize`
+
+
+
+`pfnCalcPrivateCommandSignatureSize`
+
+
+
+`pfnCalcPrivateDepthStencilStateSize`
+
+
+
+`pfnCalcPrivateDescriptorHeapSize`
+
+
+
+`pfnCalcPrivateElementLayoutSize`
+
+
+
+`pfnCalcPrivateFenceSize`
+
+
+
+`pfnCalcPrivateGeometryShaderWithStreamOutput`
+
+
+
+`pfnCalcPrivateHeapAndResourceSizes`
+
+
+
+`pfnCalcPrivateOpenedHeapAndResourceSizes`
+
+
+
+`pfnCalcPrivatePipelineLibrarySize`
+
+
+
+`pfnCalcPrivatePipelineStateSize`
+
+A callback function that calculates the size of a private pipeline state.
+
+`pfnCalcPrivateQueryHeapSize`
+
+
+
+`pfnCalcPrivateRasterizerStateSize`
+
+
+
+`pfnCalcPrivateRootSignatureSize`
+
+
+
+`pfnCalcPrivateShaderSize`
+
+
+
+`pfnCalcPrivateTessellationShaderSize`
+
+
+
+`pfnCalcSerializedLibrarySize`
+
+
+
+`pfnCheckExistingResourceAllocationInfo`
+
+
+
+`pfnCheckFormatSupport`
+
+
+
+`pfnCheckMultisampleQualityLevels`
+
+
+
+`pfnCheckResourceAllocationHandle`
+
+
+
+`pfnCheckResourceAllocationInfo`
+
+
+
+`pfnCheckResourceVirtualAddress`
+
+
+
+`pfnCheckSubresourceInfo`
+
+
+
+`pfnCopyDescriptors`
+
+
+
+`pfnCopyDescriptorsSimple`
+
+
+
+`pfnCreateBlendState`
+
+
+
+`pfnCreateCommandAllocator`
+
+
+
+`pfnCreateCommandList`
+
+
+
+`pfnCreateCommandQueue`
+
+
+
+`pfnCreateCommandSignature`
+
+
+
+`pfnCreateComputeShader`
+
+
+
+`pfnCreateConstantBufferView`
+
+
+
+`pfnCreateDepthStencilState`
+
+
+
+`pfnCreateDepthStencilView`
+
+
+
+`pfnCreateDescriptorHeap`
+
+
+
+`pfnCreateDomainShader`
+
+
+
+`pfnCreateElementLayout`
+
+
+
+`pfnCreateFence`
+
+
+
+`pfnCreateGeometryShader`
+
+
+
+`pfnCreateGeometryShaderWithStreamOutput`
+
+
+
+`pfnCreateHeapAndResource`
+
+
+
+`pfnCreateHullShader`
+
+
+
+`pfnCreatePipelineLibrary`
+
+
+
+`pfnCreatePipelineState`
+
+A callback function that creates a pipeline state.
+
+`pfnCreatePixelShader`
+
+
+
+`pfnCreateQueryHeap`
+
+
+
+`pfnCreateRasterizerState`
+
+
+
+`pfnCreateRenderTargetView`
+
+
+
+`pfnCreateRootSignature`
+
+
+
+`pfnCreateSampler`
+
+
+
+`pfnCreateShaderResourceView`
+
+
+
+`pfnCreateUnorderedAccessView`
+
+
+
+`pfnCreateVertexShader`
+
+
+
+`pfnDestroyBlendState`
+
+
+
+`pfnDestroyCommandAllocator`
+
+
+
+`pfnDestroyCommandList`
+
+
+
+`pfnDestroyCommandQueue`
+
+
+
+`pfnDestroyCommandSignature`
+
+
+
+`pfnDestroyDepthStencilState`
+
+
+
+`pfnDestroyDescriptorHeap`
+
+
+
+`pfnDestroyElementLayout`
+
+
+
+`pfnDestroyFence`
+
+
+
+`pfnDestroyHeapAndResource`
+
+
+
+`pfnDestroyPipelineLibrary`
+
+
+
+`pfnDestroyPipelineState`
+
+A callback function that destroys  a pipeline state.
+
+`pfnDestroyQueryHeap`
+
+
+
+`pfnDestroyRasterizerState`
+
+
+
+`pfnDestroyRootSignature`
+
+
+
+`pfnDestroyShader`
+
+
+
+`pfnEvict`
+
+
+
+`pfnGetCPUDescriptorHandleForHeapStart`
+
+
+
+`pfnGetDebugAllocationInfo`
+
+
+
+`pfnGetDescriptorSizeInBytes`
+
+
+
+`pfnGetGPUDescriptorHandleForHeapStart`
+
+
+
+`pfnGetImplicitPhysicalAdapterMask`
+
+
+
+`pfnGetMipPacking`
+
+
+
+`pfnGetPresentPrivateDriverDataSize`
+
+
+
+`pfnMakeResident`
+
+
+
+`pfnMapHeap`
+
+
+
+`pfnOfferResources`
+
+
+
+`pfnOpenHeapAndResource`
+
+
+
+`pfnQueryNodeMap`
+
+
+
+`pfnReclaimResources`
+
+
+
+`pfnResetCommandAllocator`
+
+
+
+`pfnRetrieveShaderComment`
+
+
+
+`pfnSerializeLibrary`
+
+
+
+`pfnUnmapHeap`
+
+
 
 
 ## Requirements

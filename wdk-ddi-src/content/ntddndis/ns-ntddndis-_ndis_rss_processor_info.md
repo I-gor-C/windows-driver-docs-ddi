@@ -7,8 +7,8 @@ old-location : netvista\ndis_rss_processor_info.htm
 old-project : netvista
 ms.assetid : 7f40a815-0247-428c-a46f-d3cdbf7e8058
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
+ms.date : 1/18/2018
+ms.keywords : NDIS_RSS_PROCESSOR_INFO, PNDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO, _NDIS_RSS_PROCESSOR_INFO, PNDIS_RSS_PROCESSOR_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RSS_PROCESSOR_INFO, ntddndis/NDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO structure [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_de5d0ed6-e4b3-4074-8816-8ab3c3ff0c4d.xml, netvista.ndis_rss_processor_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.20 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_RSS_PROCESSOR_INFO
-req.alt-loc : ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
 ---
 
@@ -58,21 +62,20 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 
 ## Members
 
-        
-            `Flags`
 
-            Reserved. NDIS sets this member to zero.
-        
-            `Header`
+`Flags`
 
-            The 
+Reserved. NDIS sets this member to zero.
+
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RSS_PROCESSOR_INFO</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_PROCESSOR_INFO</b>. NDIS also sets the 
      <b>Revision</b> and 
      <b>Size</b> members to the values shown in the following table.
-
 <table>
 <tr>
 <th>NDIS version</th>
@@ -98,53 +101,51 @@ NDIS 6.30
 <td><b>NDIS_SIZEOF_RSS_PROCESSOR_INFO_REVISION_2</b></td>
 </tr>
 </table>
-        
-            `MaxNumRssProcessors`
 
-            The maximum number of processors that are used for RSS
-        
-            `PreferredNumaNode`
+`MaxNumRssProcessors`
 
-            The preferred NUMA node, which is the node closest to the NIC
-        
-            `RssBaseProcessor`
+The maximum number of processors that are used for RSS
 
-            The starting processor number that is used for RSS. 
+`PreferredNumaNode`
 
-<div class="alert"><b>Note</b>  The RSS base CPU number is the CPU number of the first CPU that RSS can use. RSS cannot use the CPUs that are numbered below the base CPU number.</div>
-<div> </div>
-        
-            `RssMaxProcessor`
+The preferred NUMA node, which is the node closest to the NIC
 
-            The maximum processor number that is used for RSS.
-        
-            `RssProcessorArrayOffset`
+`RssBaseProcessor`
 
-            The offset, in bytes, from the start of the structure to an array of 
+The starting processor number that is used for RSS. 
+<div class="alert"><b>Note</b>  The RSS base CPU number is the CPU number of the first CPU that RSS can use. RSS cannot use the CPUs that are numbered below the base CPU number.</div><div> </div>
+
+`RssMaxProcessor`
+
+The maximum processor number that is used for RSS.
+
+`RssProcessorArrayOffset`
+
+The offset, in bytes, from the start of the structure to an array of 
      <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures, with each
      entry describing an RSS processor on the system. The 
      <b>RssProcessorCount</b> member contains the number of <b>NDIS_RSS_PROCESSOR</b> structures in the array. The 
      <b>RssProcessorEntrySize</b> member contains the size of the <b>NDIS_RSS_PROCESSOR</b> structures in the
      array.
-        
-            `RssProcessorCount`
 
-            The number of elements in the array of <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
+`RssProcessorCount`
+
+The number of elements in the array of <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.
-        
-            `RssProcessorEntrySize`
 
-            The size, in bytes, of elements in the array of <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
+`RssProcessorEntrySize`
+
+The size, in bytes, of elements in the array of <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.
-        
-            `RssProfile`
 
-            Reserved.
+`RssProfile`
 
-    ## Remarks
-        NDIS network drivers use the <b>NDIS_RSS_PROCESSOR_INFO</b> structure in calls to the 
-    <a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
-    NdisGetRssProcessorInformation</a> function. After 
+Reserved.
+
+## Remarks
+NDIS network drivers use the <b>NDIS_RSS_PROCESSOR_INFO</b> structure in calls to the 
+    <mshelp:link keywords="netvista.ndisgetrssprocessorinformation" tabindex="0"><b>
+    NdisGetRssProcessorInformation</b></mshelp:link> function. After 
     <b>NdisGetRssProcessorInformation</b> returns, this structure contains information about the set of
     processors that will be used for receive side scaling (RSS).
 
@@ -156,25 +157,19 @@ NDIS 6.30
 | **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
+<mshelp:link keywords="netvista.ndisgetrssprocessorinformation" tabindex="0"><b>
+   NdisGetRssProcessorInformation</b></mshelp:link>
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj849980">NDIS_RSS_PROFILE</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
-   NdisGetRssProcessorInformation</a>
-</dt>
-</dl>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
+
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14d0585d-6fa1-4934-a4f2-fe5e20d4a324
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_OPM_GET_INFOMATION,
+ms.keywords : display.idarg_in_opm_get_infomation, iddcx/IDARG_IN_OPM_GET_INFOMATION, IDARG_IN_OPM_GET_INFOMATION, IDARG_IN_OPM_GET_INFOMATION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_OPM_GET_INFOMATION
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -46,10 +50,10 @@ typedef struct IDARG_IN_OPM_GET_INFOMATION {
 
 ## Members
 
-        
-            `GetInfoParameters`
 
-            [in] Parameters for the get information request
+`GetInfoParameters`
+
+[in] Parameters for the get information request
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 99a86339-62ce-48fd-a1f4-5c3061e624b5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
+ms.keywords : d3dumddi/D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure [Display Devices], _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, UMDisplayDriver_param_Structs_2b02df7d-1bae-446f-b52a-0a9353114504.xml, D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, display.d3dddiarg_authenticatedchannelkeyexchange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE is support
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE {
 
 ## Members
 
-        
-            `DataSize`
 
-            [in/out] The size, in bytes, of the data that the <b>pData</b> member points to.
-        
-            `hChannel`
+`DataSize`
 
-            [in] A handle to the authenticated channel that the runtime creates when the runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function.
-        
-            `pData`
+[in/out] The size, in bytes, of the data that the <b>pData</b> member points to.
 
-            [in/out] A pointer to a buffer that contains the session key.
+`hChannel`
+
+[in] A handle to the authenticated channel that the runtime creates when the runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function.
+
+`pData`
+
+[in/out] A pointer to a buffer that contains the session key.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_authenticatedchannelkeyexchange.md">AuthenticatedChannelKeyExchange</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_authenticatedchannelkeyexchange.md">AuthenticatedChannelKeyExchange</a>
+
  
 
  

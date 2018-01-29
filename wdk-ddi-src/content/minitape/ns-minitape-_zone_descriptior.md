@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8326f683-3952-486e-b322-80ce96759366
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.keywords : PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR structure pointer [Storage Devices], storage.zone_descriptior, scsi/PZONE_DESCRIPTIOR, scsi/ZONE_DESCRIPTIOR, _ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZONE_DESCRIPTIOR
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ---
 
@@ -57,50 +61,50 @@ typedef struct _ZONE_DESCRIPTIOR {
 
 ## Members
 
-        
-            `Non_Seq`
 
-            N/A
-        
-            `Reserved1`
+`Non_Seq`
 
-            N/A
-        
-            `Reserved2`
+N/A
 
-            N/A
-        
-            `Reserved3`
+`Reserved1`
 
-            N/A
-        
-            `Reserved4`
+N/A
 
-            N/A
-        
-            `Reset`
+`Reserved2`
 
-            N/A
-        
-            `WritePointerLBA`
+N/A
 
-            N/A
-        
-            `ZoneCondition`
+`Reserved3`
 
-            N/A
-        
-            `ZoneLength`
+N/A
 
-            N/A
-        
-            `ZoneStartLBA`
+`Reserved4`
 
-            N/A
-        
-            `ZoneType`
+N/A
 
-            N/A
+`Reset`
+
+N/A
+
+`WritePointerLBA`
+
+N/A
+
+`ZoneCondition`
+
+N/A
+
+`ZoneLength`
+
+N/A
+
+`ZoneStartLBA`
+
+N/A
+
+`ZoneType`
+
+N/A
 
 
 ## Requirements

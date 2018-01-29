@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 786ced41-7841-4898-93d5-afb4dcf7fa0c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaPropertyNodeTypes
+ms.keywords : bdasup/BdaPropertyNodeTypes, bdaref_cec37979-eb0c-4914-86fe-6dc613c61ae8.xml, BdaPropertyNodeTypes function [Streaming Media Devices], BdaPropertyNodeTypes, stream.bdapropertynodetypes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaPropertyNodeTypes
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -52,7 +56,7 @@ NTSTATUS BdaPropertyNodeTypes(
 
 `pIrp`
 
-
+TBD
 
 `pKSProperty`
 
@@ -85,17 +89,12 @@ A BDA minidriver calls the <b>BdaPropertyNodeTypes</b> function to retrieve the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564332">KSPROPERTY_BDA_NODE_TYPES</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564332">KSPROPERTY_BDA_NODE_TYPES</a>
+
  
 
  

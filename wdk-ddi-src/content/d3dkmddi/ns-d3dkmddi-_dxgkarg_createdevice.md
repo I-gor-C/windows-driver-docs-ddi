@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 88d20349-4039-4a5d-a1fd-0488148c623d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_CREATEDEVICE, DXGKARG_CREATEDEVICE, *INOUT_PDXGKARG_CREATEDEVICE
+ms.keywords : _DXGKARG_CREATEDEVICE, *INOUT_PDXGKARG_CREATEDEVICE, DmStructs_76bb50f9-b0d8-415c-b183-ad780ebcabc6.xml, DXGKARG_CREATEDEVICE structure [Display Devices], display.dxgkarg_createdevice, d3dkmddi/DXGKARG_CREATEDEVICE, DXGKARG_CREATEDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_CREATEDEVICE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_CREATEDEVICE
 ---
 
@@ -54,22 +58,22 @@ typedef struct _DXGKARG_CREATEDEVICE {
 
 ## Members
 
-        
-            `hDevice`
 
-            A handle to the graphics context device. On input to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function, <b>hDevice</b> specifies the handle that the driver should use when it calls back into the Microsoft DirectX graphics kernel subsystem. 
+`hDevice`
+
+A handle to the graphics context device. On input to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function, <b>hDevice</b> specifies the handle that the driver should use when it calls back into the Microsoft DirectX graphics kernel subsystem. 
 
 The driver generates a unique handle and passes it back to the DirectX graphics subsystem. On output from the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function, <b>hDevice</b> specifies the handle that the DirectX graphics subsystem should use in subsequent driver calls to identify the device.
-        
-            `hKmdProcess`
 
-            A handle to the corresponding kernel mode driver process object.
+`hKmdProcess`
+
+A handle to the corresponding kernel mode driver process object.
 
 Supported starting with Windows 10.
-        
-            `Pasid`
 
-            The owner process PASID for a support vector machine GPU.
+`Pasid`
+
+The owner process PASID for a support vector machine GPU.
 
 Supported starting with Windows 10.
 
@@ -82,19 +86,14 @@ Supported starting with Windows 10.
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createdeviceflags.md">DXGK_CREATEDEVICEFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_deviceinfo.md">DXGK_DEVICEINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_deviceinfo.md">DXGK_DEVICEINFO</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createdeviceflags.md">DXGK_CREATEDEVICEFLAGS</a>
+
  
 
  

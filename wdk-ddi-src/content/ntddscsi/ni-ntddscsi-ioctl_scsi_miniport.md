@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5a9facc7-c83e-4dd4-9fb4-e3385c1b94ea
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+ms.keywords : storage.ioctl_scsi_miniport, IOCTL_SCSI_MINIPORT control code [Storage Devices], IOCTL_SCSI_MINIPORT, ntddscsi/IOCTL_SCSI_MINIPORT, k307_49b821f3-1a79-44aa-a6a1-92543177181d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SCSI_MINIPORT
-req.alt-loc : Ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,20 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_MINIPORT IOCTL
 Sends a special control function to an HBA-specific miniport driver. Results vary, depending on the particular miniport driver to which this request is forwarded. If the caller specifies a nonzero <b>Length</b>, either the input or output buffer must be at least (<b>sizeof</b>(SRB_IO_CONTROL) + <i>DataBufferLength</i>)).
 
 
-
-Sends a special control function to an HBA-specific miniport driver. Results vary, depending on the particular miniport driver to which this request is forwarded. If the caller specifies a nonzero <b>Length</b>, either the input or output buffer must be at least (<b>sizeof</b>(SRB_IO_CONTROL) + <i>DataBufferLength</i>)).
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -63,7 +66,6 @@ The length of the <a href="..\ntddscsi\ns-ntddscsi-_srb_io_control.md">SRB_IO_CO
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field contains the number of bytes returned in the output buffer. The <b>Status</b> field indicates the results of the operation.
 
 
@@ -74,13 +76,10 @@ The <b>Information</b> field contains the number of bytes returned in the output
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddscsi\ns-ntddscsi-_srb_io_control.md">SRB_IO_CONTROL</a>
-</dt>
-</dl>
+
  
 
  

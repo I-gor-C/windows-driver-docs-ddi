@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : F175ED42-3DB6-4568-96CA-EFC283B14887
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortPoFxSetComponentLatency
+ms.keywords : storport/StorPortPoFxSetComponentLatency, StorPortPoFxSetComponentLatency routine [Storage Devices], storage.storportpofxsetcomponentlatency, StorPortPoFxSetComponentLatency
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortPoFxSetComponentLatency
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -72,12 +76,30 @@ The time, in units of 100 nanoseconds, that the storage device component can tol
 ## Return Value
 
 The <b>StorPortPoFxSetComponentLatency</b> routine returns one of these status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The component latency successfully set.
+</dl>
+</td>
+<td width="60%">
+The component latency successfully set.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>Either <i>HwDeviceExtension</i> or <i>Device</i> is NULL.
+</dl>
+</td>
+<td width="60%">
+Either <i>HwDeviceExtension</i> or <i>Device</i> is NULL.
 
 -or-
 
@@ -90,12 +112,32 @@ The storage device specified by <i>Address</i> is not found.
 -or-
 
 The index in <i>Component</i> specifies a component greater than the component count for the device.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The storage device is  not registered with the  power management framework (PoFx).
+</dl>
+</td>
+<td width="60%">
+The storage device is  not registered with the  power management framework (PoFx).
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
-</dl>The current IRQL &gt; DISPATCH_LEVEL.
+</dl>
+</td>
+<td width="60%">
+The current IRQL &gt; DISPATCH_LEVEL.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -112,11 +154,8 @@ The index in <i>Component</i> specifies a component greater than the component c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-pofxsetcomponentlatency.md">PoFxSetComponentLatency</a>
-</dt>
-</dl>
+
  
 
  

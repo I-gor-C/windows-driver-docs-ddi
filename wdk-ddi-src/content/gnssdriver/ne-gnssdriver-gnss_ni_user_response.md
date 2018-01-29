@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : FD4A244D-641C-46A7-8777-8F64A5400D23
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_NI_USER_RESPONSE, GNSS_NI_USER_RESPONSE
+ms.keywords : sensors.gnss_ni_user_response, GNSS_Ni_UserResponseAccept, gnssdriver/GNSS_Ni_UserResponseDeny, GNSS_NI_USER_RESPONSE enumeration [Sensor Devices], GNSS_Ni_UserResponseDeny, gnssdriver/GNSS_Ni_UserResponseTimeout, GNSS_NI_USER_RESPONSE, GNSS_Ni_UserResponseTimeout, gnssdriver/GNSS_Ni_UserResponseAccept, gnssdriver/GNSS_NI_USER_RESPONSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_NI_USER_RESPONSE
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_NI_USER_RESPONSE
 ---
 

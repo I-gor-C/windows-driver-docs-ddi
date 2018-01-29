@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 01fad141-d023-4a3a-80ae-cb07985db8d1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_MODE, VIDEO_MODE, *PVIDEO_MODE
+ms.keywords : VIDEO_MODE, VIDEO_MODE structure [Display Devices], _VIDEO_MODE, ntddvdeo/VIDEO_MODE, Video_Structs_7a64b36b-d8f2-411d-86e3-4fe854a94220.xml, ntddvdeo/PVIDEO_MODE, PVIDEO_MODE, PVIDEO_MODE structure pointer [Display Devices], *PVIDEO_MODE, display.video_mode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_MODE
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : VIDEO_MODE, *PVIDEO_MODE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVIDEO_MODE, VIDEO_MODE"
 ---
 
 # _VIDEO_MODE structure
@@ -46,10 +50,10 @@ typedef struct _VIDEO_MODE {
 
 ## Members
 
-        
-            `RequestedMode`
 
-            Is the mode that the miniport driver should set if possible. In addition, the two high-order bits can be set to request special behavior from the miniport driver as follows:
+`RequestedMode`
+
+Is the mode that the miniport driver should set if possible. In addition, the two high-order bits can be set to request special behavior from the miniport driver as follows:
 
 
 ## Requirements

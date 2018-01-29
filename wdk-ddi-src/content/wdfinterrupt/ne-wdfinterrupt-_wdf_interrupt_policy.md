@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 88f8f10d-bf1e-49bc-99c7-95a5e69c17e1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_INTERRUPT_POLICY, WDF_INTERRUPT_POLICY, *PWDF_INTERRUPT_POLICY
+ms.keywords : wdfinterrupt/WDF_INTERRUPT_POLICY, WdfIrqPolicyAllCloseProcessors, WdfIrqPolicyOneCloseProcessor, wdfinterrupt/WdfIrqPolicyOneCloseProcessor, WdfIrqPolicyMachineDefault, *PWDF_INTERRUPT_POLICY, WdfIrqPolicyAllProcessorsInMachine, WdfIrqPolicySpreadMessagesAcrossAllProcessors, WdfIrqPolicySpecifiedProcessors, wdfinterrupt/WdfIrqPolicySpecifiedProcessors, kmdf.wdf_interrupt_policy, wdfinterrupt/WdfIrqPolicySpreadMessagesAcrossAllProcessors, _WDF_INTERRUPT_POLICY, wdfinterrupt/WdfIrqPolicyMachineDefault, wdfinterrupt/WdfIrqPolicyAllProcessorsInMachine, wdfinterrupt/PWDF_INTERRUPT_POLICY, PWDF_INTERRUPT_POLICY enumeration pointer, wdf.wdf_interrupt_policy, WDF_INTERRUPT_POLICY, WDF_INTERRUPT_POLICY enumeration, wdfinterrupt/WdfIrqPolicyAllCloseProcessors, PWDF_INTERRUPT_POLICY, DFInterruptObjectRef_e8b207c7-1a4a-4537-9aba-070ddcc426c1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_INTERRUPT_POLICY
-req.alt-loc : wdfinterrupt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : WDF_INTERRUPT_POLICY, *PWDF_INTERRUPT_POLICY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_POLICY, WDF_INTERRUPT_POLICY"
 req.product : Windows 10 or later.
 ---
 
@@ -101,11 +105,8 @@ The <b>WDF_INTERRUPT_POLICY</b> enumeration type is used as input to the <a href
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a>
-</dt>
-</dl>
+
  
 
  

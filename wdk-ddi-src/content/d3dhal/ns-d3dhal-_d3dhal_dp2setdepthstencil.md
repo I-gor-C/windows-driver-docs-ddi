@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fb57b1c0-6cb2-42e4-bf67-239ac6c0548c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETDEPTHSTENCIL, D3DHAL_DP2SETDEPTHSTENCIL, *LPD3DHAL_DP2SETDEPTHSTENCIL
+ms.keywords : "*LPD3DHAL_DP2SETDEPTHSTENCIL, d3dhal/LPD3DHAL_DP2SETDEPTHSTENCIL, display.d3dhal_dp2setdepthstencil, LPD3DHAL_DP2SETDEPTHSTENCIL structure pointer [Display Devices], d3dstrct_6eda96cd-64bc-4ba1-acc3-0166ccfbd401.xml, _D3DHAL_DP2SETDEPTHSTENCIL, LPD3DHAL_DP2SETDEPTHSTENCIL, D3DHAL_DP2SETDEPTHSTENCIL structure [Display Devices], D3DHAL_DP2SETDEPTHSTENCIL, d3dhal/D3DHAL_DP2SETDEPTHSTENCIL"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETDEPTHSTENCIL
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETDEPTHSTENCIL
 ---
 
@@ -49,13 +53,13 @@ typedef struct _D3DHAL_DP2SETDEPTHSTENCIL {
 
 ## Members
 
-        
-            `hZBuffer`
 
-            Specifies a handle to the depth buffer.
+`hZBuffer`
 
-    ## Remarks
-        The driver should store the depth buffer identified by <b>hZBuffer</b> in the driver's context when the runtime sends a D3DDP2OP_SETDEPTHSTENCIL operation code in the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> command stream.
+Specifies a handle to the depth buffer.
+
+## Remarks
+The driver should store the depth buffer identified by <b>hZBuffer</b> in the driver's context when the runtime sends a D3DDP2OP_SETDEPTHSTENCIL operation code in the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> command stream.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -65,14 +69,12 @@ typedef struct _D3DHAL_DP2SETDEPTHSTENCIL {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_SETDEPTHSTENCIL</dt>
-<dt>
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-</dl>
+
+D3DDP2OP_SETDEPTHSTENCIL
+
  
 
  

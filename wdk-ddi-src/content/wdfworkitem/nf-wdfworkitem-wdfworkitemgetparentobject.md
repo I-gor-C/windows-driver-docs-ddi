@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6ebb1955-1ffc-4869-84c8-69d672ac782e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWorkItemGetParentObject
+ms.keywords : DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, WdfWorkItemGetParentObject method, kmdf.wdfworkitemgetparentobject, WdfWorkItemGetParentObject, wdfworkitem/WdfWorkItemGetParentObject, PFN_WDFWORKITEMGETPARENTOBJECT, wdf.wdfworkitemgetparentobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfWorkItemGetParentObject
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -66,8 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about work items, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-framework-work-items">Using Framework Work Items</a>.
 
-The following code example is an <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">1394</a> sample driver. The example obtains a work item's parent device object, calls a driver-defined routine to process the work item, and then deletes the work item object.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,14 +84,10 @@ The following code example is an <a href="https://msdn.microsoft.com/2a2811de-90
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
+
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>
-</dt>
-</dl>
+
  
 
  

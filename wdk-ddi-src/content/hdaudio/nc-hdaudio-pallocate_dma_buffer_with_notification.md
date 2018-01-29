@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c74b5969-35d4-45db-b631-31e00572107d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.allocatedmabufferwithnotification, AllocateDmaBufferWithNotification callback function [Audio Devices], AllocateDmaBufferWithNotification, PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION, PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION, hdaudio/AllocateDmaBufferWithNotification, aud-prop2_37aa129c-f389-402a-ba68-8dedb9ce6b6b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AllocateDmaBufferWithNotification
-req.alt-loc : Hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -101,24 +105,78 @@ NTSTATUS PallocateDmaBufferWithNotification(
 ## Return Value
 
 The <code>AllocateDmaBufferWithNotification</code> routine returns STATUS_SUCCESS if the call succeeds. Otherwise, the routine returns an appropriate error code. The following table shows some of the possible return error codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>Indicates that the caller is running at an IRQL that is too high.
+</dl>
+</td>
+<td width="60%">
+Indicates that the caller is running at an IRQL that is too high.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates that the buffer allocation has failed.
+</dl>
+</td>
+<td width="60%">
+Indicates that the buffer allocation has failed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>Indicates that the handle parameter value is invalid.
+</dl>
+</td>
+<td width="60%">
+Indicates that the handle parameter value is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Indicates that one of the parameter values is incorrect (bad pointer).
+</dl>
+</td>
+<td width="60%">
+Indicates that one of the parameter values is incorrect (bad pointer).
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DEVICE_NOT_READY</b></dt>
-</dl>Indicates that the hardware programming timed out. If this occurs, the hardware might be in a compromised state.
+</dl>
+</td>
+<td width="60%">
+Indicates that the hardware programming timed out. If this occurs, the hardware might be in a compromised state.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>Indicates that the stream is not in the reset state or that a buffer is already allocated for the DMA engine and has not yet been freed.
+</dl>
+</td>
+<td width="60%">
+Indicates that the stream is not in the reset state or that a buffer is already allocated for the DMA engine and has not yet been freed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -152,26 +210,18 @@ In Windows Vista and later versions of Windows, a WaveRT miniport driver calls t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537374">KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION</a>
-</dt>
-<dt>
 <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a>
-</dt>
-<dt>
+
 <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537374">KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION</a>
+
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
+
  
 
  

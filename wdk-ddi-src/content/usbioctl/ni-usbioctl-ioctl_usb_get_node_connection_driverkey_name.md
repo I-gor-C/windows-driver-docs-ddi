@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e9826b4d-e8ac-495e-8125-7835b62011dc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_usb_get_node_connection_driverkey_name, IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME, usbirp_cdc9e1be-96fd-41d4-a0d3-1303b0b4fb1d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,17 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME IOCTL
-The <b>IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</b> I/O control request retrieves the driver registry key name that is associated with the device that is connected to the indicated port. 
-
-<b>IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</b> is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
-
-
-
 The <b>IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</b> I/O control request retrieves the driver registry key name that is associated with the device that is connected to the indicated port. 
 
 <b>IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</b> is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
@@ -70,7 +68,6 @@ The size of a <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_driverkey_na
 <text></text>
 
 ### Status Block
-I/O Status block
 The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
 
 If the caller allocates an output buffer that is large enough to hold all of the output data, <b>IoStatus.Information</b> will be equal to the value of <b>ActualLength</b>. If the output buffer is large enough to hold all of the output data, <b>IoStatus.Information</b> will be equal to <code>sizeof(USB_NODE_CONNECTION_DRIVERKEY_NAME)</code>.
@@ -83,13 +80,10 @@ If the caller allocates an output buffer that is large enough to hold all of the
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_driverkey_name.md">USB_NODE_CONNECTION_DRIVERKEY_NAME</a>
-</dt>
-</dl>
+
  
 
  

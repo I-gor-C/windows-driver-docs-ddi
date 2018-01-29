@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 1F2C2B8E-6535-40F1-A5D3-46DAD43E923E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CMP_CONNECT_VER3, *PCMP_CONNECT_VER3, CMP_CONNECT_VER3, CMP_CONNECT, *PCMP_CONNECT
+ms.keywords : "*PCMP_CONNECT_VER3, CMP_CONNECT_VER3, CMP_CONNECT_VER3 structure [Buses], PCMP_CONNECT_VER3 structure pointer [Buses], _CMP_CONNECT_VER3, 61883/PCMP_CONNECT_VER3, IEEE.cmp_connect_ver3, PCMP_CONNECT_VER3, *PCMP_CONNECT, CMP_CONNECT, 61883/CMP_CONNECT_VER3"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_CONNECT_VER3
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCMP_CONNECT_VER3, CMP_CONNECT_VER3"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _CMP_CONNECT_VER3 {
 
 ## Members
 
-        
-            `Format`
 
-            The requested data format.
-        
-            `hConnect`
+`Format`
 
-            The handle for the created connection.
-        
-            `hInputPlug`
+The requested data format.
 
-            The handle of an input plug.
-        
-            `hOutputPlug`
+`hConnect`
 
-            The handle of an output plug.
-        
-            `Type`
+The handle for the created connection.
 
-            The type of the requested connection.
+`hInputPlug`
+
+The handle of an input plug.
+
+`hOutputPlug`
+
+The handle of an output plug.
+
+`Type`
+
+The type of the requested connection.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _CMP_CONNECT_VER3 {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 68BC990B-DD0C-49CD-95EC-672FD1459B39
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DIAGNOSTIC_DATA, STORAGE_DIAGNOSTIC_DATA, *PSTORAGE_DIAGNOSTIC_DATA
+ms.keywords : STORAGE_DIAGNOSTIC_DATA structure [Storage Devices], *PSTORAGE_DIAGNOSTIC_DATA, STORAGE_DIAGNOSTIC_DATA, storage.storage_diagnostic_data, PSTORAGE_DIAGNOSTIC_DATA structure pointer [Storage Devices], ntddstor/PSTORAGE_DIAGNOSTIC_DATA, ntddstor/STORAGE_DIAGNOSTIC_DATA, _STORAGE_DIAGNOSTIC_DATA, PSTORAGE_DIAGNOSTIC_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_DIAGNOSTIC_DATA
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STORAGE_DIAGNOSTIC_DATA, *PSTORAGE_DIAGNOSTIC_DATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTORAGE_DIAGNOSTIC_DATA, STORAGE_DIAGNOSTIC_DATA"
 ---
 
 # _STORAGE_DIAGNOSTIC_DATA structure
@@ -51,33 +55,33 @@ typedef struct _STORAGE_DIAGNOSTIC_DATA {
 
 ## Members
 
-        
-            `BufferSize`
 
-            If the request failed because of buffer too small, this field should be filled with the required buffer
+`BufferSize`
+
+If the request failed because of buffer too small, this field should be filled with the required buffer
     size for a <i>DiagnosticDataBuffer</i> needed by provider;
      if the request is successful, it should be filled with returned buffer size of <i>DiagnosticDataBuffer</i>;
      it should be cleared to zero for other cases.
-        
-            `DiagnosticDataBuffer`
 
-            Specifies the Diagnostic data buffer.
-        
-            `ProviderId`
+`DiagnosticDataBuffer`
 
-            Specifies the GUID of a diagnostic data provider.
-        
-            `Reserved`
+Specifies the Diagnostic data buffer.
 
-            Reserved for future use.
-        
-            `Size`
+`ProviderId`
 
-            Specifies the whole size of the structure and the associated data buffer.
-        
-            `Version`
+Specifies the GUID of a diagnostic data provider.
 
-            Version of this structure.
+`Reserved`
+
+Reserved for future use.
+
+`Size`
+
+Specifies the whole size of the structure and the associated data buffer.
+
+`Version`
+
+Version of this structure.
 
 
 ## Requirements
@@ -88,16 +92,12 @@ typedef struct _STORAGE_DIAGNOSTIC_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_storage_diagnostic_request.md">STORAGE_DIAGNOSTIC_REQUEST</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/5F71CCBE-F93F-4DCD-A673-1D6DE49C7400">IOCTL_STORAGE_DIAGNOSTIC</a>
-</dt>
-</dl>
+
  
 
  

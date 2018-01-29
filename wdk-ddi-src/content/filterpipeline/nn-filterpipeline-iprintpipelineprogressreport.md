@@ -7,8 +7,8 @@ old-location : print\iprintpipelineprogressreport.htm
 old-project : print
 ms.assetid : 7a2644af-fdfe-4481-8c44-c40244b8a00e
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.date : 1/18/2018
+ms.keywords : print.iprintpipelineprogressreport, IPrintPipelineProgressReport interface [Print Devices], IPrintPipelineProgressReport interface [Print Devices], described, IPrintPipelineProgressReport, filterpipeline/IPrintPipelineProgressReport, filterpipeline_de104fc6-8ac2-4a10-ab09-09596a093835.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPrintPipelineProgressReport
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

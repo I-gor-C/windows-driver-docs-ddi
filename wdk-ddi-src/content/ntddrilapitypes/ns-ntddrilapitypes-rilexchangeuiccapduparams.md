@@ -7,8 +7,8 @@ old-location : netvista\rilexchangeuiccapduparams.htm
 old-project : netvista
 ms.assetid : be77f9e2-acf7-4b59-9a46-abda7c43817b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS, netvista.rilexchangeuiccapduparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILEXCHANGEUICCAPDUPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS"
 ---
 
 # RILEXCHANGEUICCAPDUPARAMS structure
@@ -49,22 +53,22 @@ typedef struct _RILEXCHANGEUICCAPDUPARAMS {
 
 ## Members
 
-        
-            `bAPDU`
 
-            
-        
-            `dwAPDULength`
+`bAPDU`
 
-            
-        
-            `dwChannelId`
 
-            
-        
-            `dwSlotIndex`
 
-            
+`dwAPDULength`
+
+
+
+`dwChannelId`
+
+
+
+`dwSlotIndex`
+
+
 
 
 ## Requirements

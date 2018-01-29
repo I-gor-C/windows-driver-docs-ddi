@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmaindeliver_2.htm
 old-project : netvista
 ms.assetid : 0729c3e5-c95d-44fb-9aa4-079833b94619
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER
+ms.date : 1/18/2018
+ms.keywords : "*LPRILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER, rilapitypes/RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER structure [Network Drivers Starting with Windows Vista], netvista.rilmsgcdmaindeliver_2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMAINDELIVER
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER
 req.product : Windows 10 or later.
 ---
@@ -69,98 +73,98 @@ typedef struct _RILMSGCDMAINDELIVER {
 
 ## Members
 
-        
-            `bUserAckRequest`
 
-            
-        
-            `cbHdrLength`
+`bUserAckRequest`
 
-            
-        
-            `cchMsgLength`
 
-            
-        
-            `dwAlertOnMsgDelivery`
 
-            
-        
-            `dwMsgDisplayMode`
+`cbHdrLength`
 
-            
-        
-            `dwMsgEncoding`
 
-            
-        
-            `dwMsgID`
 
-            
-        
-            `dwMsgLang`
+`cchMsgLength`
 
-            
-        
-            `dwMsgPriority`
 
-            
-        
-            `dwMsgPrivacy`
 
-            
-        
-            `dwNumMsgs`
+`dwAlertOnMsgDelivery`
 
-            
-        
-            `dwServiceID`
 
-            
-        
-            `dwTeleservice`
 
-            
-        
-            `raCallBackNumber`
+`dwMsgDisplayMode`
 
-            
-        
-            `raOrigAddress`
 
-            
-        
-            `rgbHdr`
 
-            
-        
-            `rgbMsg`
+`dwMsgEncoding`
 
-            
-        
-            `rsaOrigSubaddr`
 
-            
-        
-            `stDeferredDelTimeAbs`
 
-            
-        
-            `stDeferredDelTimeRel`
+`dwMsgID`
 
-            
-        
-            `stSCReceiveTime`
 
-            
-        
-            `stValidityPeriodAbs`
 
-            
-        
-            `stValidityPeriodRel`
+`dwMsgLang`
 
-            
+
+
+`dwMsgPriority`
+
+
+
+`dwMsgPrivacy`
+
+
+
+`dwNumMsgs`
+
+
+
+`dwServiceID`
+
+
+
+`dwTeleservice`
+
+
+
+`raCallBackNumber`
+
+
+
+`raOrigAddress`
+
+
+
+`rgbHdr`
+
+
+
+`rgbMsg`
+
+
+
+`rsaOrigSubaddr`
+
+
+
+`stDeferredDelTimeAbs`
+
+
+
+`stDeferredDelTimeRel`
+
+
+
+`stSCReceiveTime`
+
+
+
+`stValidityPeriodAbs`
+
+
+
+`stValidityPeriodRel`
+
+
 
 
 ## Requirements

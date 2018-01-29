@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D0B2E7EA-3D1F-4FD1-AB8D-EAB8406B9127
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_SelectInterfaceUrbAllocateAndBuild
+ms.keywords : USBD_SelectInterfaceUrbAllocateAndBuild, usbdlib/USBD_SelectInterfaceUrbAllocateAndBuild, USBD_SelectInterfaceUrbAllocateAndBuild routine [Buses], buses.usbd_selectinterfaceurballocateandbuild
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista a
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_SelectInterfaceUrbAllocateAndBuild
-req.alt-loc : Usbdex.lib,Usbdex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbdex.lib
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -62,7 +66,7 @@ Handle returned by the USB driver stack in the  <b>UrbSelectConfiguration.Config
 
 `InterfaceListEntry`
 
-
+TBD
 
 `Urb`
 
@@ -72,23 +76,56 @@ Pointer to a  <a href="..\usb\ns-usb-_urb.md">URB</a> structure that receives th
 ## Return Value
 
 The routine returns an NTSTATUS code. Possible  values include but are not limited to, the status codes listed in the following table.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The routine call succeeded.
+</dl>
+</td>
+<td width="60%">
+The routine call succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The caller passed NULL in any of the parameters.
+</dl>
+</td>
+<td width="60%">
+The caller passed NULL in any of the parameters.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Insufficient memory available to complete the call.
+</dl>
+</td>
+<td width="60%">
+Insufficient memory available to complete the call.
+
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The client driver must call the <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> routine after selecting a configuration in the device. After a select-configuration request completes, the client driver receives a configuration handle in the <b>UrbSelectConfiguration.ConfigurationHandle</b> member of the URB. That handle must be specified in the <i>ConfigurationHandle</i> parameter of <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>. 
 
 A client driver calls <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> to allocate and build an URB for a select-interface request to change the alternate setting of an interface, in the selected configuration.  In the call to <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>, the client driver must allocate and provide a pointer to a <a href="..\usbdlib\ns-usbdlib-_usbd_interface_list_entry.md">USBD_INTERFACE_LIST_ENTRY</a> structure. The client driver must set the structure members as follows: 
-
-<b>USBD_SelectInterfaceUrbAllocateAndBuild</b> allocates an <a href="..\usb\ns-usb-_urb.md">URB</a> structure and fills it with information about the specified interface setting, and endpoints. The routine also allocates a <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure.  The structure members (except pipe information) are filled based on the specified interface descriptor. 
+<ul>
+<li>The <b>InterfaceDescriptor</b> member must point to a <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure that contains the interface descriptor with the alternate setting to select. The interface descriptor was obtained in a previous request to get a configuration descriptor and the associated interface and endpoint descriptors. </li>
+<li>The <b>Interface</b> member must be NULL.</li>
+</ul><b>USBD_SelectInterfaceUrbAllocateAndBuild</b> allocates an <a href="..\usb\ns-usb-_urb.md">URB</a> structure and fills it with information about the specified interface setting, and endpoints. The routine also allocates a <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure.  The structure members (except pipe information) are filled based on the specified interface descriptor. 
 <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> sets the <b>Interface</b> member of <a href="..\usbdlib\ns-usbdlib-_usbd_interface_list_entry.md">USBD_INTERFACE_LIST_ENTRY</a> to the address of <b>USBD_INTERFACE_INFORMATION</b> in the URB. The client driver can send this URB to the USB driver stack to select an alternate setting in the interface.
 
 A client driver cannot change alternate settings in multiple interfaces in a single select-interface request. Each request targets only one interface.
@@ -111,14 +148,10 @@ The client driver can reuse an URB allocated by <b>USBD_SelectInterfaceUrbAlloca
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
-</dt>
-<dt>
+
 <a href="..\usbdlib\nf-usbdlib-usbd_selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>
-</dt>
-</dl>
+
  
 
  

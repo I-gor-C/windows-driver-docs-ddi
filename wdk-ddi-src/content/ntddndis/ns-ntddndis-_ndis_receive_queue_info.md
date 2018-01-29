@@ -7,8 +7,8 @@ old-location : netvista\ndis_receive_queue_info.htm
 old-project : netvista
 ms.assetid : 7cdc45d4-e8aa-437a-b6fc-8b8c0dc17585
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO, *PNDIS_RECEIVE_QUEUE_INFO
+ms.date : 1/18/2018
+ms.keywords : virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO, ntddndis/PNDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, ntddndis/NDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_QUEUE_INFO, _NDIS_RECEIVE_QUEUE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.20 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_RECEIVE_QUEUE_INFO
-req.alt-loc : Ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_RECEIVE_QUEUE_INFO, *PNDIS_RECEIVE_QUEUE_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO"
 ---
 
 # _NDIS_RECEIVE_QUEUE_INFO structure
@@ -61,93 +65,89 @@ typedef struct _NDIS_RECEIVE_QUEUE_INFO {
 
 ## Members
 
-        
-            `Flags`
 
-            A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
-        
-            `Header`
+`Flags`
 
-            The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
+
+`Header`
+
+The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values:
-        
-            `InterruptCoalescingDomainId`
 
-            A ULONG value that is reserved for use by NDIS. This value is used for informational purposes by the miniport driver.
-        
-            `LookaheadSize`
+`InterruptCoalescingDomainId`
 
-            A <b>ULONG</b> value for the size, in bytes, of the lookahead size requirement for this queue. A network adapter that supports lookahead in VM queues splits a received packet at an offset that is equal to or
+A ULONG value that is reserved for use by NDIS. This value is used for informational purposes by the miniport driver.
+
+`LookaheadSize`
+
+A <b>ULONG</b> value for the size, in bytes, of the lookahead size requirement for this queue. A network adapter that supports lookahead in VM queues splits a received packet at an offset that is equal to or
      greater than the requested lookahead size and uses DMA to transfer the lookahead data and the
      post-lookahead data to separate shared memory segments.
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. The value of this member must be set to zero.</div><div> </div>
 
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. The value of this member must be set to zero.</div>
-<div> </div>
-        
-            `MSIXTableEntry`
+`MSIXTableEntry`
 
-            A <b>ULONG</b> value that contains the MSI-X table entry index for the queue.
-        
-            `NumFilters`
+A <b>ULONG</b> value that contains the MSI-X table entry index for the queue.
 
-            A ULONG value that specifies the number of receive filters that have been configured on the network adapter.
+`NumFilters`
 
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, the miniport driver must maintain a counter for the current number of receive filters that are set on the network adapter. The driver must increment the counter each time a receive filter is set through an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>.  The driver must also decrement the counter each time a receive filter is  cleared through an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a>.</div>
-<div> </div>
-        
-            `NumSuggestedReceiveBuffers`
+A ULONG value that specifies the number of receive filters that have been configured on the network adapter.
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, the miniport driver must maintain a counter for the current number of receive filters that are set on the network adapter. The driver must increment the counter each time a receive filter is set through an OID set request of <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>.  The driver must also decrement the counter each time a receive filter is  cleared through an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a>.</div><div> </div>
 
-            A <b>ULONG</b> value that contains a suggested value for the number of receive buffers that the network adapter should use to support the queue. This number can be adjusted relative to the resources that the
+`NumSuggestedReceiveBuffers`
+
+A <b>ULONG</b> value that contains a suggested value for the number of receive buffers that the network adapter should use to support the queue. This number can be adjusted relative to the resources that the
      miniport driver has available or in proportion to the number that the network adapter uses for other
      queues. For example, the actual number of receive buffers could be double or half of this suggested
      value.
-        
-            `ProcessorAffinity`
 
-            A <b>GROUP_AFFINITY</b> bitmap that specifies the CPU that the queue has affinity with. For example,
+`ProcessorAffinity`
+
+A <b>GROUP_AFFINITY</b> bitmap that specifies the CPU that the queue has affinity with. For example,
      setting bit 0 indicates that CPU 0 is used, setting bit 1 indicates that CPU 1 is used, and so on. Because a VM queue is associated with one CPU, all receive indications for the queue are handled on that processor.
-        
-            `QueueGroupId`
 
-            This member is reserved for NDIS.
-        
-            `QueueId`
+`QueueGroupId`
 
-            An <b>NDIS_RECEIVE_QUEUE_ID</b> type value that contains a receive queue identifier. This identifier is an
+This member is reserved for NDIS.
+
+`QueueId`
+
+An <b>NDIS_RECEIVE_QUEUE_ID</b> type value that contains a receive queue identifier. This identifier is an
      integer value between zero and the number of queues that the network adapter supports. A value of <b>NDIS_DEFAULT_RECEIVE_QUEUE_ID</b> specifies
      the default receive queue.
-        
-            `QueueName`
 
-            An <b>NDIS_QUEUE_NAME</b> value that contains the user-friendly description of the queue.
-        
-            `QueueState`
+`QueueName`
 
-            An 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_operational_state.md">
-     NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</a> enumeration value that specifies the operational state of the
+An <b>NDIS_QUEUE_NAME</b> value that contains the user-friendly description of the queue.
+
+`QueueState`
+
+An 
+     <mshelp:link keywords="netvista.ndis_receive_queue_operational_state" tabindex="0"><b>
+     NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</b></mshelp:link> enumeration value that specifies the operational state of the
      receive queue.
-        
-            `QueueType`
 
-            An 
+`QueueType`
+
+An 
      <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a> enumeration
      value that specifies the type of the receive queue.
-        
-            `VmName`
 
-            An <b>NDIS_VM_NAME</b> value that contains the user-friendly description of the virtual machine.
+`VmName`
 
-    ## Remarks
-        The <b>NDIS_RECEIVE_QUEUE_INFO</b> structure is used with the 
-    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">
-    NDIS_RECEIVE_QUEUE_INFO_ARRAY</a> structure for the 
-    <a href="netvista.oid_receive_filter_enum_queues">
-    OID_RECEIVE_FILTER_ENUM_QUEUES</a> OID that enumerates receive queues on a network adapter.
+An <b>NDIS_VM_NAME</b> value that contains the user-friendly description of the virtual machine.
 
-With a successful return from the <a href="netvista.oid_receive_filter_enum_queues">
-    OID_RECEIVE_FILTER_ENUM_QUEUES</a>, NDIS provides an
+## Remarks
+The <b>NDIS_RECEIVE_QUEUE_INFO</b> structure is used with the 
+    <mshelp:link keywords="netvista.ndis_receive_queue_info_array" tabindex="0"><b>
+    NDIS_RECEIVE_QUEUE_INFO_ARRAY</b></mshelp:link> structure for the 
+    <mshelp:link keywords="netvista.oid_receive_filter_enum_queues" tabindex="0">
+    OID_RECEIVE_FILTER_ENUM_QUEUES</mshelp:link> OID that enumerates receive queues on a network adapter.
+
+With a successful return from the <mshelp:link keywords="netvista.oid_receive_filter_enum_queues" tabindex="0">
+    OID_RECEIVE_FILTER_ENUM_QUEUES</mshelp:link>, NDIS provides an
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a> structure that defines the properties of the receive queue array. Each
     element in the array is an <b>NDIS_RECEIVE_QUEUE_INFO</b> structure.
 
@@ -159,34 +159,25 @@ With a successful return from the <a href="netvista.oid_receive_filter_enum_queu
 | **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_operational_state.md">
-   NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</a>
-</dt>
-<dt>
+
 <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569788">OID_RECEIVE_FILTER_ENUM_QUEUES</a>
-</dt>
-<dt>
+
+<mshelp:link keywords="netvista.ndis_receive_queue_operational_state" tabindex="0"><b>
+   NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</b></mshelp:link>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-queues">OID_RECEIVE_FILTER_ENUM_QUEUES</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>
-</dt>
-</dl>
+
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_INFO structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -7,8 +7,8 @@ old-location : netvista\ndisunicodestringtoansistring.htm
 old-project : netvista
 ms.assetid : 37ac55b8-093e-4bf4-9c66-05ab5fc7ebc9
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisUnicodeStringToAnsiString
+ms.date : 1/18/2018
+ms.keywords : ndis_string_ref_31235ece-f64c-4806-af32-e3ffffdb7904.xml, NdisUnicodeStringToAnsiString macro [Network Drivers Starting with Windows Vista], NdisUnicodeStringToAnsiString, netvista.ndisunicodestringtoansistring, ndis/NdisUnicodeStringToAnsiString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and late
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisUnicodeStringToAnsiString
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_Miscellaneous_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -53,11 +57,11 @@ NDIS_STATUS NdisUnicodeStringToAnsiString(
 
 `_as`
 
-
+TBD
 
 `_us`
 
-
+TBD
 
 
 ## Return Value
@@ -85,32 +89,23 @@ The caller must allocate storage for both the source and destination strings and
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry of NDIS Protocol
-   Drivers</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
-</dt>
-<dt>
+
+<mshelp:link keywords="netvista.driverentry_of_ndis_protocol_drivers" tabindex="0"><b>DriverEntry of NDIS Protocol
+   Drivers</b></mshelp:link>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisUnicodeStringToAnsiString macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisUnicodeStringToAnsiString macro%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

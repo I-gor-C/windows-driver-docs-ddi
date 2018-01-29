@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aba0ebc8-2c92-4d27-a35b-9ac25ac6e5ab
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
+ms.keywords : PDXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE structure pointer [Display Devices], dispmprt/PDXGK_I2C_INTERFACE, dispmprt/DXGK_I2C_INTERFACE, DmStructs_59985b59-bb86-459c-8bd2-2b6124a6b9bb.xml, *PDXGK_I2C_INTERFACE, display.dxgk_i2c_interface, DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE structure [Display Devices], _DXGK_I2C_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_I2C_INTERFACE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
 ---
 
@@ -52,37 +56,37 @@ typedef struct _DXGK_I2C_INTERFACE {
 
 ## Members
 
-        
-            `Context`
 
-            A pointer to a private context block.
-        
-            `DxgkDdiI2CReceiveDataFromDisplay`
+`Context`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_receive_data_from_display.md">DxgkDdiI2CReceiveDataFromDisplay</a> function.
-        
-            `DxgkDdiI2CTransmitDataToDisplay`
+A pointer to a private context block.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_transmit_data_to_display.md">DxgkDdiI2CTransmitDataToDisplay</a> function.
-        
-            `InterfaceDereference`
+`DxgkDdiI2CReceiveDataFromDisplay`
 
-            A pointer to an interface dereference function that is implemented by the display miniport driver.
-        
-            `InterfaceReference`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_receive_data_from_display.md">DxgkDdiI2CReceiveDataFromDisplay</a> function.
 
-            A pointer to an interface reference function that is implemented by the display miniport driver.
-        
-            `Size`
+`DxgkDdiI2CTransmitDataToDisplay`
 
-            The size, in bytes, of this structure.
-        
-            `Version`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_transmit_data_to_display.md">DxgkDdiI2CTransmitDataToDisplay</a> function.
 
-            The version number of the I2C interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_I2C_INTERFACE_VERSION_1).
+`InterfaceDereference`
 
-    ## Remarks
-        A kernel-mode component that needs to use the I2C interface calls the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function.</p>
+A pointer to an interface dereference function that is implemented by the display miniport driver.
+
+`InterfaceReference`
+
+A pointer to an interface reference function that is implemented by the display miniport driver.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+The version number of the I2C interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_I2C_INTERFACE_VERSION_1).
+
+## Remarks
+A kernel-mode component that needs to use the I2C interface calls the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |

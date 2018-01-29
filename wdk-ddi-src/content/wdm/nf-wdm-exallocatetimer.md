@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4FCFC48A-97BC-48E0-BBA7-F9E8B8A7588A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExAllocateTimer
+ms.keywords : kernel.exallocatetimer, wdm/ExAllocateTimer, ExAllocateTimer, ExAllocateTimer routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExAllocateTimer
-req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,7 +66,6 @@ A context value for the callback routine pointed to by the <i>Callback</i> param
 `Attributes`
 
 The timer attributes. Set this parameter to zero or to the bitwise-OR of one or more of the following timer flag bits.
-
 <table>
 <tr>
 <th>Timer flag bit</th>
@@ -80,8 +83,7 @@ The timer attributes. Set this parameter to zero or to the bitwise-OR of one or 
 <td>EX_TIMER_NOTIFICATION</td>
 <td>Notification timer. Make the timer a notification timer instead of a synchronization timer. If this flag is not set, the timer is a synchronization timer.</td>
 </tr>
-</table>
- 
+</table> 
 
 The EX_TIMER_NOTIFICATION flag bit can be set regardless of what other flag bits are set.
 
@@ -124,23 +126,16 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-excanceltimer.md">ExCancelTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exsettimer.md">ExSetTimer</a>
-</dt>
-<dt>
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/exxxxtimer-routines-and-ex-timer-objects">EX_TIMER</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-exsettimer.md">ExSetTimer</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-excanceltimer.md">ExCancelTimer</a>
+
+<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
+
  
 
  

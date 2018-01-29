@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0c4fbe80-03f2-4ee0-b766-c1ccaa8e83c2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SetRNIDMgmtInfo
+ms.keywords : HBA_SetRNIDMgmtInfo, hbaapi/HBA_SetRNIDMgmtInfo, fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml, HBA_SetRNIDMgmtInfo routine [Storage Devices], storage.hba_setrnidmgmtinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SetRNIDMgmtInfo
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -51,22 +55,44 @@ HBA_STATUS HBA_API HBA_SetRNIDMgmtInfo(
 
 `Handle`
 
-
+TBD
 
 `pInfo`
 
-
+TBD
 
 
 ## Return Value
 
 The <b>HBA_SetRNIDMgmtInfo</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SetRNIDMgmtInfo</b> returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
-</dl>Returned if the HBA was successfully programmed to return the specified RNID. 
+</dl>
+</td>
+<td width="60%">
+Returned if the HBA was successfully programmed to return the specified RNID. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
-</dl>Returned if an unspecified error occurred that prevented the routine from programming the HBA to return the specified RNID.
+</dl>
+</td>
+<td width="60%">
+Returned if an unspecified error occurred that prevented the routine from programming the HBA to return the specified RNID. 
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -83,14 +109,10 @@ The <b>HBA_SetRNIDMgmtInfo</b> routine returns a value of type <a href="https://
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

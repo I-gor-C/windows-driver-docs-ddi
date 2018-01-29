@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E8C3B9E3-854C-488D-809B-0F0893591352
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbmiracastsendmessage, DxgkCbMiracastSendMessage callback function [Display Devices], DxgkCbMiracastSendMessage, DXGKCB_MIRACAST_SEND_MESSAGE, DXGKCB_MIRACAST_SEND_MESSAGE, dispmprt/DxgkCbMiracastSendMessage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbMiracastSendMessage
-req.alt-loc : Dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -101,8 +105,63 @@ If the display miniport driver needs to know the status of message handling in u
 If the display miniport driver supplies the <i>pInputBuffer</i> and <i>pOutputBuffer</i> buffers, it is the driver’s responsibility to hold these two buffers until the <a href="..\dispmprt\nc-dispmprt-dxgkcb_miracast_send_message_callback.md">DxgkCbMiracastSendMessageCallback</a> function is called. Otherwise, a random memory corruption issue can be created.
 
 If the driver supplies the <a href="..\dispmprt\nc-dispmprt-dxgkcb_miracast_send_message_callback.md">DxgkCbMiracastSendMessageCallback</a> in the <i>pCallback</i> parameter, it's possible that <b>DxgkCbMiracastSendMessageCallback</b> will return before <b>DxgkCbMiracastSendMessage</b> returns.
+<h3><a id="Example_calling_sequence"></a><a id="example_calling_sequence"></a><a id="EXAMPLE_CALLING_SEQUENCE"></a>Example calling sequence</h3>Here's example code that shows how to use this function:
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _CALLBACK_CONTEXT
+{
+    UCHAR InputBuffer[INPUT_BUFFER_SIZE];
+    UCHAR OutputBuffer[OUTPUT_BUFFER_SIZE];
+} CALLBACK_CONTEXT, *PCALLBACK_CONTEXT;
 
-Here's example code that shows how to use this function:
+...
+
+_IRQL_requires_(PASSIVE_LEVEL)
+VOID
+DriverCallbackFunction(
+    _In_ PVOID Context,
+    _In_ PIO_STATUS_BLOCK pIoStatusBlock
+    )
+{
+    PCALLBACK_CONTEXT CallbackContex = (PCALLBACK_CONTEXT)Context;
+
+    ExFreePool(CallbackContex);
+}
+
+...
+
+    CallbackContex = (PCALLBACK_CONTEXT)ExAllocatePoolWithTag(
+                            PagedPool,
+                            sizeof(CALLBACK_CONTEXT),
+                            DRIVER_TAG);
+
+    if (CallbackContex == NULL)
+    {
+        return STATUS_NO_MEMORY;
+    }
+
+    RtlZeroMemory(CallbackContex, sizeof(CALLBACK_CONTEXT));
+
+    CallbackContex-&gt;InputBuffer[0] = 0xaa;
+    CallbackContex-&gt;InputBuffer[1] = 0x55;
+
+    Status = 
+      pDeviceContext-&gt;MiracastCallbacks.DxgkCbMiracastSendMessage(
+          pDeviceContext-&gt;MiracastCallbacks.MiracastHandle,
+          sizeof(CallbackContex-&gt;InputBuffer),
+          CallbackContex-&gt;InputBuffer,
+          sizeof(CallbackContex-&gt;OutputBuffer),
+          CallbackContext-&gt;OutputBuffer,
+          &amp;DriverCallbackFunction,
+          CallbackContex);
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -118,17 +177,12 @@ Here's example code that shows how to use this function:
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dispmprt\ns-dispmprt-_dxgk_miracast_display_callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_miracast_send_message_callback.md">DxgkCbMiracastSendMessageCallback</a>
-</dt>
-<dt>
+
+<a href="..\dispmprt\ns-dispmprt-_dxgk_miracast_display_callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
-</dt>
-</dl>
+
  
 
  

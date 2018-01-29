@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f07919f8-644f-43a4-98d7-d0f1a91d405d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoGetTransactionParameterBlock
+ms.keywords : ifsk.iogettransactionparameterblock, IoGetTransactionParameterBlock, ioref_4bce32be-89e0-4b69-9e44-a4b619588c79.xml, IoGetTransactionParameterBlock routine [Installable File System Drivers], ntddk/IoGetTransactionParameterBlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows Vista and later
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetTransactionParameterBlock
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -72,11 +76,8 @@ The <b>IoGetTransactionParameterBlock</b> routine returns a pointer to the <a hr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_txn_parameter_block.md">TXN_PARAMETER_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

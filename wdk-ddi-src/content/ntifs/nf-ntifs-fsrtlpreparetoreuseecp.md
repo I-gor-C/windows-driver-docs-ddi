@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 88967BD6-C633-40D0-BE4F-2B08494EA5B0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlPrepareToReuseEcp
+ms.keywords : ifsk.fsrtlpreparetoreuseecp, ntifs/FsRtlPrepareToReuseEcp, FsRtlPrepareToReuseEcp routine [Installable File System Drivers], FsRtlPrepareToReuseEcp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlPrepareToReuseEcp
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -79,23 +83,16 @@ Within a file system minifilter driver, use <a href="..\fltkernel\nf-fltkernel-f
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlinsertextracreateparameter.md">FsRtlInsertExtraCreateParameter</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlisecpacknowledged.md">FsRtlIsEcpAcknowledged</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltpreparetoreuseecp.md">FltPrepareToReuseEcp</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlremoveextracreateparameter.md">FsRtlRemoveExtraCreateParameter</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+
+<a href="..\ntifs\nf-ntifs-fsrtlinsertextracreateparameter.md">FsRtlInsertExtraCreateParameter</a>
+
  
 
  

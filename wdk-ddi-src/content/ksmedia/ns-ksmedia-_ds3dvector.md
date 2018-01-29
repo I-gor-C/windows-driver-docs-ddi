@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 828bb255-4640-4508-866e-e3641ca05773
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _DS3DVECTOR, *PDS3DVECTOR, DS3DVECTOR
+ms.keywords : ksmedia/DS3DVECTOR, DS3DVECTOR structure [Audio Devices], PDS3DVECTOR structure pointer [Audio Devices], PDS3DVECTOR, aud-prop_3e17b5ec-c2fc-4e6c-bff1-27be36e376c9.xml, ksmedia/PDS3DVECTOR, _DS3DVECTOR, DS3DVECTOR, audio.ds3dvector, *PDS3DVECTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DS3DVECTOR
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDS3DVECTOR, DS3DVECTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DS3DVECTOR, *PDS3DVECTOR
 ---
 
 # _DS3DVECTOR structure
@@ -67,19 +71,14 @@ typedef struct _DS3DVECTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksds3d_buffer_all.md">KSDS3D_BUFFER_ALL</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-ksds3d_listener_all.md">KSDS3D_LISTENER_ALL</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-ksds3d_listener_orientation.md">KSDS3D_LISTENER_ORIENTATION</a>
-</dt>
-</dl>
+
  
 
  

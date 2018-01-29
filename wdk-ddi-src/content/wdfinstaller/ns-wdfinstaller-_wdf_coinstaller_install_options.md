@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : be8867e4-42be-4f11-bf4b-1b0fd29daa06
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS
+ms.keywords : wdf.wdf_coinstaller_install_options, WDF_COINSTALLER_INSTALL_OPTIONS, PWDF_COINSTALLER_INSTALL_OPTIONS structure pointer, wdfinstaller/PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS structure, DFCoinstallerRef_71021229-7902-4d6a-a5f3-c9763860c7bf.xml, _WDF_COINSTALLER_INSTALL_OPTIONS, wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS, PWDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS, kmdf.wdf_coinstaller_install_options
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.9
 req.umdf-ver : 
-req.alt-api : WDF_COINSTALLER_INSTALL_OPTIONS
-req.alt-loc : wdfinstaller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -50,19 +54,19 @@ typedef struct _WDF_COINSTALLER_INSTALL_OPTIONS {
 
 ## Members
 
-        
-            `ShowRebootPrompt`
 
-            A Boolean value. If this value is <b>TRUE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> informs the Plug and Play (PnP) manager, and the PnP manager prompts the user that a restart is necessary.  
+`ShowRebootPrompt`
+
+A Boolean value. If this value is <b>TRUE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> informs the Plug and Play (PnP) manager, and the PnP manager prompts the user that a restart is necessary.  
 
 If this value is <b>FALSE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> does not inform the PnP manager.
-        
-            `Size`
 
-            The size, in bytes, of this structure.
+`Size`
 
-    ## Remarks
-        The <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure is used as an input parameter to <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a>.
+The size, in bytes, of this structure.
+
+## Remarks
+The <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure is used as an input parameter to <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a>.
 
 Your installer should initialize the <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure by calling <a href="..\wdfinstaller\nf-wdfinstaller-wdf_coinstaller_install_options_init.md">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>.
 
@@ -74,13 +78,10 @@ Your installer should initialize the <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> stru
 | **Minimum UMDF version** |  |
 | **Header** | wdfinstaller.h (include Wdfinstaller.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdfinstaller\nf-wdfinstaller-wdf_coinstaller_install_options_init.md">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>
-</dt>
-</dl>
+
  
 
  

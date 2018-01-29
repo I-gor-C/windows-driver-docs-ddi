@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 02c5d325-e0b2-4b0f-b964-7befd1b40cb6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsSetCreateThreadNotifyRoutine
+ms.keywords : PsSetCreateThreadNotifyRoutine routine [Kernel-Mode Driver Architecture], PsSetCreateThreadNotifyRoutine, kernel.pssetcreatethreadnotifyroutine, k108_1fe3d941-1e48-4f07-bf57-ad7b2855947f.xml, ntddk/PsSetCreateThreadNotifyRoutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsSetCreateThreadNotifyRoutine
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -60,8 +64,21 @@ A pointer to the driver's implementation of <a href="..\ntddk\nc-ntddk-pcreate_t
 ## Remarks
 
 Highest-level drivers can call <b>PsSetCreateThreadNotifyRoutine</b> to set up their thread-creation notify routines, declared as follows:
-
-For example, an IFS or highest-level system-profiling driver might register such a thread-creation callback to track the system-wide creation and deletion of threads against the driver's internal state.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+(*PCREATE_THREAD_NOTIFY_ROUTINE) (
+    IN HANDLE  ProcessId,
+    IN HANDLE  ThreadId,
+    IN BOOLEAN  Create
+    );</pre>
+</td>
+</tr>
+</table></span></div>For example, an IFS or highest-level system-profiling driver might register such a thread-creation callback to track the system-wide creation and deletion of threads against the driver's internal state.
 
 A driver must remove any callbacks it registers before it unloads. You can remove the callback by calling the <a href="..\ntddk\nf-ntddk-psremovecreatethreadnotifyroutine.md">PsRemoveCreateThreadNotifyRoutine</a> routine.
 
@@ -79,26 +96,18 @@ A driver must remove any callbacks it registers before it unloads. You can remov
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthreadid.md">PsGetCurrentThreadId</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psissystemthread.md">PsIsSystemThread</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-psremovecreatethreadnotifyroutine.md">PsRemoveCreateThreadNotifyRoutine</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-psissystemthread.md">PsIsSystemThread</a>
+
+<a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
+
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-psgetcurrentthreadid.md">PsGetCurrentThreadId</a>
+
 <a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 23cc9c64-99d4-4602-a1b0-234fe7fcc3da
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.unlock, Unlock callback function [Display Devices], Unlock, PFND3DDDI_UNLOCK, PFND3DDDI_UNLOCK, d3dumddi/Unlock, UserModeDisplayDriver_Functions_20b0d6f7-4bda-4d0f-9c3a-27d4011d2591.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : Unlock
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,15 +68,45 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>Unlock</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The resource is successfully unlocked.
+</dl>
+</td>
+<td width="60%">
+The resource is successfully unlocked.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>Unlock</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>Unlock</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The resource that <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a> describes was not locked by a previous call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> function.
+</dl>
+</td>
+<td width="60%">
+The resource that <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a> describes was not locked by a previous call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> function. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,23 +130,16 @@ The runtime calls the user-mode display driver's <i>Unlock</i> function to unloc
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
  
 
  

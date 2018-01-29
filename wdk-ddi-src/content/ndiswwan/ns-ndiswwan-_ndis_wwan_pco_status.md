@@ -7,8 +7,8 @@ old-location : netvista\ndis_wwan_pco_status.htm
 old-project : netvista
 ms.assetid : C71187C5-74B6-450A-8461-BB9FDF60DB8D
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS
+ms.date : 1/18/2018
+ms.keywords : NDIS_WWAN_PCO_STATUS, PNDIS_WWAN_PCO_STATUS, ndiswwan/NDIS_WWAN_PCO_STATUS, netvista.ndis_wwan_pco_status, NDIS_WWAN_PCO_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PCO_STATUS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_PCO_STATUS, _NDIS_WWAN_PCO_STATUS, ndiswwan/PNDIS_WWAN_PCO_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_WWAN_PCO_STATUS
-req.alt-loc : ndiswwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS"
 ---
 
 # _NDIS_WWAN_PCO_STATUS structure
@@ -48,16 +52,15 @@ typedef struct _NDIS_WWAN_PCO_STATUS {
 
 ## Members
 
-        
-            `Header`
 
-            The header with type, revision, and size information about the <b>NDIS_WWAN_PCO_STATUS</b> structure.
+`Header`
+
+The header with type, revision, and size information about the <b>NDIS_WWAN_PCO_STATUS</b> structure.
      The MB Service sets the header with the values that are shown in the following table when it sends the
      data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
-
 <table>
 <tr>
 <th>Header submember</th>
@@ -93,22 +96,20 @@ sizeof(NDIS_WWAN_PCO_STATUS)
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
-        
-            `PcoValue`
 
-            A formatted <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a> structure, which contains the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
-        
-            `uStatus`
+`PcoValue`
 
-            The status of system capability. The following table shows the possible values for
+A formatted <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a> structure, which contains the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
+
+`uStatus`
+
+The status of system capability. The following table shows the possible values for
      this member.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -225,27 +226,20 @@ The PCO value failed due to a read failure.
 | **Minimum UMDF version** |  |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a>
-</dt>
-<dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pco">OID_WWAN_PCO</a>
-</dt>
-<dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pco-status">NDIS_STATUS_WWAN_PCO_STATUS</a>
-</dt>
-<dt>
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-">MB Protocol Configuration Operations (PCO)</a>
-</dt>
-</dl>
- 
+
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pco">OID_WWAN_PCO</a>
+
+<a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a>
+
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pco-status">NDIS_STATUS_WWAN_PCO_STATUS</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PCO_STATUS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PCO_STATUS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ec017e5c-1c26-426d-935f-7a554d3db915
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsEnableEventWithAllocator
+ms.keywords : ks/KsEnableEventWithAllocator, KsEnableEventWithAllocator, ksfunc_2af8f81f-ef1d-4ad5-9267-dfdc14005183.xml, KsEnableEventWithAllocator function [Streaming Media Devices], stream.ksenableeventwithallocator
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsEnableEventWithAllocator
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,7 +79,7 @@ If the enabling event's KSEVENT_SET.AddHandler for the event set is <b>NULL</b>,
 
 `OPTIONAL`
 
-
+TBD
 
 `EventsLock`
 
@@ -96,7 +100,7 @@ Same as <b>KsEnableEvent</b>, which returns STATUS_SUCCESS if successful, or an 
 
 ## Remarks
 
-If the optional allocator callback is used, the filter may need to free the buffer in some nonconventional manner. Note that the IRP_BUFFERED_IO and IRP_DEALLOCATE_BUFFER flags are not set when using a custom allocator.</p>
+If the optional allocator callback is used, the filter may need to free the buffer in some nonconventional manner. Note that the IRP_BUFFERED_IO and IRP_DEALLOCATE_BUFFER flags are not set when using a custom allocator.
 
 ## Requirements
 | &nbsp; | &nbsp; |

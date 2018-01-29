@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 81875C20-8E0E-4BAC-B85F-3D275F8B4708
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_OBJECT_TYPE, PEP_ACPI_OBJECT_TYPE, *PPEP_ACPI_OBJECT_TYPE
+ms.keywords : PepAcpiObjectTypeMaximum, PepAcpiObjectTypeMethod, pepfx/PEP_ACPI_OBJECT_TYPE, kernel.pep_acpi_object_type, PEP_ACPI_OBJECT_TYPE, PEP_ACPI_OBJECT_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepAcpiObjectTypeMethod, _PEP_ACPI_OBJECT_TYPE, pepfx/PepAcpiObjectTypeMaximum, *PPEP_ACPI_OBJECT_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_OBJECT_TYPE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
-req.typenames : PEP_ACPI_OBJECT_TYPE, *PPEP_ACPI_OBJECT_TYPE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_ACPI_OBJECT_TYPE, PEP_ACPI_OBJECT_TYPE"
 ---
 
 # _PEP_ACPI_OBJECT_TYPE Enumeration
@@ -48,6 +52,11 @@ typedef enum _PEP_ACPI_OBJECT_TYPE {
 ## Constants
 
 <table>
+
+<tr>
+<td>PepAcpiObjectTypeDevice</td>
+<td></td>
+</tr>
 
 <tr>
 <td>PepAcpiObjectTypeMaximum</td>
@@ -74,11 +83,8 @@ The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

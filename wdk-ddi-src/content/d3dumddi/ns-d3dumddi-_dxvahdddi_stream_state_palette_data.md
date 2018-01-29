@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b71f3793-7856-4558-b205-7facf6d83a8c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_STREAM_STATE_PALETTE_DATA, DXVAHDDDI_STREAM_STATE_PALETTE_DATA
+ms.keywords : DXVA2_Structs_4b156a58-d13f-4ffc-8ad0-3bdbb5dc7386.xml, d3dumddi/DXVAHDDDI_STREAM_STATE_PALETTE_DATA, display.dxvahdddi_stream_state_palette_data, DXVAHDDDI_STREAM_STATE_PALETTE_DATA, DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_PALETTE_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_PALETTE_DATA is supported beg
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_STREAM_STATE_PALETTE_DATA
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_STREAM_STATE_PALETTE_DATA
 ---
 
@@ -47,17 +51,17 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PALETTE_DATA {
 
 ## Members
 
-        
-            `Count`
 
-            [in] The number of palette entries in the array that the <b>pEntries</b> member specifies. The default value is 0.
-        
-            `pEntries`
+`Count`
 
-            [in] An array of palette entries in either D3DFMT_A8R8G8B8 or "AYUV" <a href="wdkgloss.f#wdkgloss.fourcc#wdkgloss.fourcc"><i>FOURCC</i></a> format type. <b>pEntries</b> is set to <b>NULL</b> to retrieve the number of palette entries. The default value is <b>NULL</b>.
+[in] The number of palette entries in the array that the <b>pEntries</b> member specifies. The default value is 0.
 
-    ## Remarks
-        The 4-bit palletized "AYUV" FOURCC formats, "AI44", and "IA44" uses the first 16 entries.
+`pEntries`
+
+[in] An array of palette entries in either D3DFMT_A8R8G8B8 or "AYUV" <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FOURCC</a> format type. <b>pEntries</b> is set to <b>NULL</b> to retrieve the number of palette entries. The default value is <b>NULL</b>.
+
+## Remarks
+The 4-bit palletized "AYUV" FOURCC formats, "AI44", and "IA44" uses the first 16 entries.
 
 The 8-bit palletized "AYUV" FOURCC format, "AI88", D3DFMT_A8P8, and D3DFMT_P8 formats uses the first 256 entries.
 
@@ -79,22 +83,16 @@ For more information about alpha blending, see <a href="..\d3dumddi\ns-d3dumddi-
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_alpha_data.md">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessstreamstate.md">SetVideoProcessStreamState</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
+
  
 
  

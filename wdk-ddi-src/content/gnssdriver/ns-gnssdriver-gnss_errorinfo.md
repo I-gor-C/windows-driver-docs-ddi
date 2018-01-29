@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 754CD1DD-88E6-4E02-8E24-1939222FE326
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_ERRORINFO, *PGNSS_ERRORINFO, GNSS_ERRORINFO
+ms.keywords : PGNSS_ERRORINFO, GNSS_ERRORINFO structure [Sensor Devices], *PGNSS_ERRORINFO, gnssdriver/PGNSS_ERRORINFO, PGNSS_ERRORINFO structure pointer [Sensor Devices], GNSS_ERRORINFO, sensors.gnss_errorinfo, gnssdriver/GNSS_ERRORINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_ERRORINFO
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGNSS_ERRORINFO, GNSS_ERRORINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GNSS_ERRORINFO, *PGNSS_ERRORINFO
 ---
 
 # GNSS_ERRORINFO structure
@@ -51,24 +55,32 @@ typedef struct {
 
 ## Members
 
-        
-            `ErrorCode`
 
-            Win32 Error Code associated with the event.
+`ErrorCode`
+
+Win32 Error Code associated with the event.
 
 The IHV can pick the error that is most similar to what needs to be reported (for example, E_OUTOFMEMORY). The IHV can also use FACILITY_ITF to create custom errors. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=525284">Codes in FACILITY_ITF</a>.
-        
-            `IsRecoverable`
 
-            If FALSE, the GNSS adapter needs to reset it’s state with the GNSS driver.
-        
-            `Size`
+`ErrorDescription`
 
-            Structure size.
-        
-            `Version`
 
-            Version number.
+
+`IsRecoverable`
+
+If FALSE, the GNSS adapter needs to reset it’s state with the GNSS driver.
+
+`Size`
+
+Structure size.
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

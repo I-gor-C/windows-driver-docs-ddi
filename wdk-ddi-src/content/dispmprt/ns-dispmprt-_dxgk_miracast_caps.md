@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 63ED28D9-654F-45CC-BFDC-89C9E73DCF95
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS
+ms.keywords : display.dxgk_miracast_caps, *PDXGK_MIRACAST_CAPS, _DXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS structure pointer [Display Devices], dispmprt/PDXGK_MIRACAST_CAPS, dispmprt/DXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MIRACAST_CAPS
-req.alt-loc : Dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS
 ---
 
@@ -53,14 +57,14 @@ typedef struct _DXGK_MIRACAST_CAPS {
 
 ## Members
 
-        
-            `Flags`
 
-            
-        
-            `MaxChunkPrivateDriverDataSize`
+`Flags`
 
-            The maximum size, in bytes, of the private data that the display miniport driver will pass when it reports a <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a> interrupt type of <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.
+
+
+`MaxChunkPrivateDriverDataSize`
+
+The maximum size, in bytes, of the private data that the display miniport driver will pass when it reports a <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a> interrupt type of <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.
 
 
 ## Requirements
@@ -71,13 +75,10 @@ typedef struct _DXGK_MIRACAST_CAPS {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
-</dt>
-</dl>
+
  
 
  

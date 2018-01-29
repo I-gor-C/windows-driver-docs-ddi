@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ed441ca2-ca98-4c8c-9c2f-4258c535ebac
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords : ifsk.pflt_transaction_notification_callback, TransactionNotificationCallback routine [Installable File System Drivers], TransactionNotificationCallback, PFLT_TRANSACTION_NOTIFICATION_CALLBACK, PFLT_TRANSACTION_NOTIFICATION_CALLBACK, fltkernel/TransactionNotificationCallback, FltCallbacks_e4045561-4dc3-44eb-b5c6-086e767f9c22.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine i
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TransactionNotificationCallback
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -64,7 +68,6 @@ Pointer to the minifilter driver's transaction context.
 `NotificationMask`
 
 Specifies the type of notifications that the filter manager is sending to the minifilter driver, as one of the following values. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -126,12 +129,34 @@ This notification is sent when the transaction is being rolled back or aborted.
 ## Return Value
 
 The PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine returns one of the following NTSTATUS values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Returning this status value indicates that the minifilter driver is finished with the transaction. This is a success code. 
+</dl>
+</td>
+<td width="60%">
+Returning this status value indicates that the minifilter driver is finished with the transaction. This is a success code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>Returning this status value indicates that the minifilter driver is not yet finished with the transaction. This is a success code.
+</dl>
+</td>
+<td width="60%">
+Returning this status value indicates that the minifilter driver is not yet finished with the transaction. This is a success code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -172,29 +197,20 @@ If the minifilter driver returns STATUS_PENDING from this callback routine, it m
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+
  
 
  

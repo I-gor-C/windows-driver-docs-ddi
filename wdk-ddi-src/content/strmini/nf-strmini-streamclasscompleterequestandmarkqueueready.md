@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 10d08fe7-13ab-4bdb-ab91-bac3822de8ee
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassCompleteRequestAndMarkQueueReady
+ms.keywords : strmini/StreamClassCompleteRequestAndMarkQueueReady, StreamClassCompleteRequestAndMarkQueueReady, stream.streamclasscompleterequestandmarkqueueready, strclass-routines_c94691a3-a806-4b2a-a566-7a4a9d209a6c.xml, StreamClassCompleteRequestAndMarkQueueReady routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassCompleteRequestAndMarkQueueReady
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -76,17 +80,12 @@ This call is equivalent to calling <b>StreamClass</b><i>Xxx</i><b>Notification</
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>
-</dt>
-<dt>
 <a href="..\strmini\nf-strmini-streamclassdevicenotification.md">StreamClassDeviceNotification</a>
-</dt>
-<dt>
+
 <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>
-</dt>
-</dl>
+
+<a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>
+
  
 
  

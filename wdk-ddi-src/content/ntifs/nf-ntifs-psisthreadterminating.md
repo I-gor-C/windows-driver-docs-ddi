@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2b82b060-79ea-4add-b559-af37c954537e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PsIsThreadTerminating
+ms.keywords : ntifs/PsIsThreadTerminating, PsIsThreadTerminating routine [Installable File System Drivers], psref_55824a18-3df1-4d43-bc9c-77da8ee6cf6c.xml, ifsk.psisthreadterminating, PsIsThreadTerminating
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows 2000 and later Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsIsThreadTerminating
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -75,11 +79,8 @@ For more information about using system threads and managing synchronization wit
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-psgetprocessexittime.md">PsGetProcessExitTime</a>
-</dt>
-</dl>
+
  
 
  

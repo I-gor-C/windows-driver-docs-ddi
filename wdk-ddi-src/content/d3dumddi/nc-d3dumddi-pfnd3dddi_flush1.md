@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6BAC104A-85CE-42FC-AE30-969B2FF6AFEF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnflush1, pfnFlush1 callback function [Display Devices], pfnFlush1, PFND3DDDI_FLUSH1, PFND3DDDI_FLUSH1, d3dumddi/pfnFlush1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnFlush1
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -80,11 +84,8 @@ If this routine succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HR
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ne-d3dumddi-d3dddi_flush_flags.md">D3DDDI_FLUSH_FLAGS</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilunsolicitedssinfo_v1.htm
 old-project : netvista
 ms.assetid : c9681207-6cdd-40b6-8878-7ea37f383e4f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1
+ms.date : 1/18/2018
+ms.keywords : netvista.rilunsolicitedssinfo_v1, RILUNSOLICITEDSSINFO_V1 structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUNSOLICITEDSSINFO_V1
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1
 ---
 
 # RILUNSOLICITEDSSINFO_V1 structure
@@ -53,38 +57,38 @@ typedef struct _RILUNSOLICITEDSSINFO_V1 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwCUGIndex`
+`cbSize`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwID`
 
-            
-        
-            `dwNotificationCode`
+`dwCUGIndex`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `raAddress`
 
-            
-        
-            `rsaSubAddress`
+`dwExecutor`
 
-            
+
+
+`dwID`
+
+
+
+`dwNotificationCode`
+
+
+
+`dwParams`
+
+
+
+`raAddress`
+
+
+
+`rsaSubAddress`
+
+
 
 
 ## Requirements

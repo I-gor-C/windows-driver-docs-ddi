@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 81ff56bb-84e5-4556-a0bf-32164b938622
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_PALETTEDATA, D3DKMDT_PALETTEDATA
+ms.keywords : d3dkmdt/D3DKMDT_PALETTEDATA, DmStructs_83e6b2ae-dd44-4a21-bca5-6009af1f4ced.xml, display.d3dkmdt_palettedata, _D3DKMDT_PALETTEDATA, D3DKMDT_PALETTEDATA, D3DKMDT_PALETTEDATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_PALETTEDATA
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_PALETTEDATA
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMDT_PALETTEDATA {
 
 ## Members
 
-        
-            `Blue`
 
-            An 8-bit value for the blue portion of the color registers.
-        
-            `Green`
+`Blue`
 
-            An 8-bit value for the green portion of the color registers.
-        
-            `Red`
+An 8-bit value for the blue portion of the color registers.
 
-            An 8-bit value for the red portion of the color registers.
-        
-            `Unused`
+`Green`
 
-            An unused portion of the display.
+An 8-bit value for the green portion of the color registers.
+
+`Red`
+
+An 8-bit value for the red portion of the color registers.
+
+`Unused`
+
+An unused portion of the display.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _D3DKMDT_PALETTEDATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkarg_setpalette.md">DXGKARG_SETPALETTE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setpalette.md">DxgkDdiSetPalette</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkarg_setpalette.md">DXGKARG_SETPALETTE</a>
+
  
 
  

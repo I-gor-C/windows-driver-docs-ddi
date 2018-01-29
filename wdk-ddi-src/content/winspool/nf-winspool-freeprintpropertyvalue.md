@@ -7,8 +7,8 @@ old-location : print\freeprintpropertyvalue.htm
 old-project : print
 ms.assetid : 38B760D9-CB6E-45AD-A83F-3C26D1B31A30
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : FreePrintPropertyValue
+ms.date : 1/18/2018
+ms.keywords : winspool/FreePrintPropertyValue, print.freeprintpropertyvalue, FreePrintPropertyValue, FreePrintPropertyValue function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FreePrintPropertyValue
-req.alt-loc : spoolss.dll,WinSpool.drv
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : WinSpool.lib
 req.dll : Spoolss.dll; WinSpool.drv
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BIDI_TYPE
 req.product : Windows 10 or later.
 ---

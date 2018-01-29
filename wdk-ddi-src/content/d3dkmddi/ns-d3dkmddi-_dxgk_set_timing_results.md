@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EA5C845B-76FD-40AD-B4E8-78601CA847CE
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_SET_TIMING_RESULTS, *PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS
+ms.keywords : _DXGK_SET_TIMING_RESULTS, d3dkmddi/DXGK_SET_TIMING_RESULTS, PDXGK_SET_TIMING_RESULTS structure pointer [Display Devices], *PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS structure [Display Devices], d3dkmddi/PDXGK_SET_TIMING_RESULTS, PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS, display.dxgk_set_timing_results
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_SET_TIMING_RESULTS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS"
 ---
 

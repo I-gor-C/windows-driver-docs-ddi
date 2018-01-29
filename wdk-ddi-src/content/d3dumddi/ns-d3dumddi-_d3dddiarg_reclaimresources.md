@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 58e8738c-b10a-4c93-b179-03efcb65412d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES
+ms.keywords : _D3DDDIARG_RECLAIMRESOURCES, d3dumddi/D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES structure [Display Devices], display.d3dddiarg_reclaimresources
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_RECLAIMRESOURCES
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_RECLAIMRESOURCES
 ---
 
@@ -48,24 +52,24 @@ typedef struct _D3DDDIARG_RECLAIMRESOURCES {
 
 ## Members
 
-        
-            `pDiscarded`
 
-            [out] An optional array of Boolean values that specify whether each resource or allocation was discarded.
+`pDiscarded`
+
+[out] An optional array of Boolean values that specify whether each resource or allocation was discarded.
 
 Each Boolean value in this array corresponds to a resource at the same index location in the structure pointed to by <b>pResources</b>.
 
 The driver sets each Boolean value to <b>TRUE</b> if the corresponding resource was discarded, or to <b>FALSE</b> if not.
 
 If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.
-        
-            `pResources`
 
-            [in] A pointer to an array of handles to the resources that are to be reclaimed.
-        
-            `Resources`
+`pResources`
 
-            [in] The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.
+[in] A pointer to an array of handles to the resources that are to be reclaimed.
+
+`Resources`
+
+[in] The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.
 
 
 ## Requirements
@@ -76,16 +80,12 @@ If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reclaimresources.md">ReclaimResources</a>
-</dt>
-</dl>
+
  
 
  

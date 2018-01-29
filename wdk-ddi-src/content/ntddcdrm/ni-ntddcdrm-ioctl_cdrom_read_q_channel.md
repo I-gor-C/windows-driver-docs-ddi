@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bbcf1535-6454-45b5-bcbd-752b8bfd6517
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.keywords : storage.ioctl_cdrom_read_q_channel, IOCTL_CDROM_READ_Q_CHANNEL control code [Storage Devices], IOCTL_CDROM_READ_Q_CHANNEL, ntddcdrm/IOCTL_CDROM_READ_Q_CHANNEL, k307_1b91e5f3-ecd0-429d-a4d1-8b77170d14e7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Obsolete, beginning with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CDROM_READ_Q_CHANNEL
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_READ_Q_CHANNEL IOCTL
-Returns the current position, media catalog, or ISRC track data. Obsolete, beginning with Windows Vista.
-
-
-
 Returns the current position, media catalog, or ISRC track data. Obsolete, beginning with Windows Vista.
 
 ### Major Code
@@ -74,11 +74,10 @@ Length of a <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_channel_data.md">SUB_Q_CHANN
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_TOO_SMALL, STATUS_IO_DEVICE_ERROR, STATUS_INSUFFICIENT_RESOURCES, STATUS_INVALID_DEVICE_REQUEST, STATUS_NO_MEDIA_IN_DEVICE, STATUS_DEVICE_NOT_READY, STATUS_IO_TIME_OUT, or STATUS_VERIFY_REQUIRED.
 
-    ## Remarks
-        Beginning with Windows Vista, CDROM class drivers do not use this IOCTL. Prior to Windows Vista, this IOCTL was used for audio playback on older CD-ROM drives that supported direct audio output in hardware.
+## Remarks
+Beginning with Windows Vista, CDROM class drivers do not use this IOCTL. Prior to Windows Vista, this IOCTL was used for audio playback on older CD-ROM drives that supported direct audio output in hardware.
 
 Client applications should use the <i>Media Control Interface (MCI) API</i> rather than issuing this IOCTL.
 
@@ -89,13 +88,10 @@ Client applications should use the <i>Media Control Interface (MCI) API</i> rath
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_channel_data.md">SUB_Q_CHANNEL_DATA</a>
-</dt>
-</dl>
+
  
 
  

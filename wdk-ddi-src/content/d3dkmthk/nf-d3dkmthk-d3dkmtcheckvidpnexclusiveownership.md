@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 06333989-177c-4c58-b95a-60313c04fe35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCheckVidPnExclusiveOwnership
+ms.keywords : OpenGL_Functions_edc90d51-f7e4-4bb5-be24-1a32b9fb4461.xml, D3DKMTCheckVidPnExclusiveOwnership, d3dkmthk/D3DKMTCheckVidPnExclusiveOwnership, PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, D3DKMTCheckVidPnExclusiveOwnership function [Display Devices], display.d3dkmtcheckvidpnexclusiveownership
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMTCheckVidPnExclusiveOwnership is supported begi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTCheckVidPnExclusiveOwnership
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,29 +54,73 @@ NTSTATUS D3DKMTCheckVidPnExclusiveOwnership(
 
 `D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP`
 
-
+TBD
 
 
 ## Return Value
 
 <b>D3DKMTCheckVidPnExclusiveOwnership</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Exclusive ownership of the VidPN was successfully determined. 
+</dl>
+</td>
+<td width="60%">
+Exclusive ownership of the VidPN was successfully determined. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DEVICE_REMOVED</b></dt>
-</dl>The graphics adapter was stopped or the display device was reset.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was stopped or the display device was reset.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE</b></dt>
-</dl>The video present source that is identified by the <b>VidPnSourceId</b> member of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.
+</dl>
+</td>
+<td width="60%">
+The video present source that is identified by the <b>VidPnSourceId</b> member of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_SOURCE</b></dt>
-</dl>The video present source that is identified by the <b>VidPnSourceId</b> member of D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP is invalid. 
+</dl>
+</td>
+<td width="60%">
+The video present source that is identified by the <b>VidPnSourceId</b> member of D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP is invalid. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -91,11 +139,8 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a>
-</dt>
-</dl>
+
  
 
  

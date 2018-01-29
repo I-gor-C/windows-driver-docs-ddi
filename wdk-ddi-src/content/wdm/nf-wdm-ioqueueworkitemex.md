@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 277a6e13-dc2d-4170-a141-9df5b93eb504
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoQueueWorkItemEx
+ms.keywords : k104_e14fae9d-5b8c-4683-8226-8694de253b64.xml, IoQueueWorkItemEx routine [Kernel-Mode Driver Architecture], IoQueueWorkItemEx, wdm/IoQueueWorkItemEx, kernel.ioqueueworkitemex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoQueueWorkItemEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -91,23 +95,16 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566381">WorkItemEx</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a>
+
+<a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>
+
+<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
+
  
 
  

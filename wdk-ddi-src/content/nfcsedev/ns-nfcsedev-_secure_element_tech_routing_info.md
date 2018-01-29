@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 62622A56-D84A-40E4-9CFA-4B0938B8FD85
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+ms.keywords : nfcsedev/_SECURE_ELEMENT_TECH_ROUTING_INFO, P_SECURE_ELEMENT_TECH_ROUTING_INFO structure pointer [Near-Field Proximity Drivers], SECURE_ELEMENT_TECH_ROUTING_INFO structure [Near-Field Proximity Drivers], _SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO, P_SECURE_ELEMENT_TECH_ROUTING_INFO, nfcsedev/P_SECURE_ELEMENT_TECH_ROUTING_INFO, nfpdrivers._secure_element_tech_routing_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SECURE_ELEMENT_TECH_ROUTING_INFO
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO"
 ---
 
 # _SECURE_ELEMENT_TECH_ROUTING_INFO structure
@@ -47,14 +51,14 @@ typedef struct _SECURE_ELEMENT_TECH_ROUTING_INFO {
 
 ## Members
 
-        
-            `eRfTechType`
 
-            NFC Forum RF technology type.
-        
-            `guidSecureElementId`
+`eRfTechType`
 
-            Secure element unique identifier returned by enumeration DDI.
+NFC Forum RF technology type.
+
+`guidSecureElementId`
+
+Secure element unique identifier returned by enumeration DDI.
 
 
 ## Requirements

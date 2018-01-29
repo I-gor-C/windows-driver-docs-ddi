@@ -48,14 +48,14 @@ typedef struct _PCW_COUNTER_INFORMATION {
 
 ## Members
 
-        
-            `CounterMask`
 
-            A bitmask. If the <i>x</i>-th bit is set, counter <i>x</i>^2 is included in the query. The value assigned to identify the counters exposed in a registration.
-        
-            `InstanceMask`
+`CounterMask`
 
-            A Unicode string that contains a wildcard specification of the instance. That is, "*" and "?" have the usual meaning of zero-or-more-characters and any-character respectively. The <b>InstanceMask</b> identifies and maps the counter set to a specific instance.
+A bitmask. If the <i>x</i>-th bit is set, counter <i>x</i>^2 is included in the query. The value assigned to identify the counters exposed in a registration.
+
+`InstanceMask`
+
+A Unicode string that contains a wildcard specification of the instance. That is, "*" and "?" have the usual meaning of zero-or-more-characters and any-character respectively. The <b>InstanceMask</b> identifies and maps the counter set to a specific instance.
 
 
 ## Requirements

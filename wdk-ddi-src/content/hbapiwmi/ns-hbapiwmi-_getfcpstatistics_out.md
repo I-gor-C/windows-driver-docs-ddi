@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 150773a3-a3a9-41a7-9985-4387bba5a766
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetFCPStatistics_OUT, *PGetFCPStatistics_OUT, GetFCPStatistics_OUT
+ms.keywords : hbapiwmi/GetFCPStatistics_OUT, GetFCPStatistics_OUT structure [Storage Devices], PGetFCPStatistics_OUT structure pointer [Storage Devices], storage.getfcpstatistics_out, structs-Fibre_cb7a0157-9213-4c4f-adbe-5855d8cca225.xml, PGetFCPStatistics_OUT, hbapiwmi/PGetFCPStatistics_OUT, _GetFCPStatistics_OUT, *PGetFCPStatistics_OUT, GetFCPStatistics_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFCPStatistics_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGetFCPStatistics_OUT, GetFCPStatistics_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GetFCPStatistics_OUT, *PGetFCPStatistics_OUT
 ---
 
 # _GetFCPStatistics_OUT structure
@@ -47,17 +51,17 @@ typedef struct _GetFCPStatistics_OUT {
 
 ## Members
 
-        
-            `FC4Statistics`
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_fc4statistics.md">MSFC_FC4STATISTICS</a> that holds statistics for the specified FC-4 protocol.
-        
-            `HBAStatus`
+`FC4Statistics`
 
-            Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_fc4statistics.md">MSFC_FC4STATISTICS</a> that holds statistics for the specified FC-4 protocol.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the GetFCPStatistics_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`HBAStatus`
+
+Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
+
+## Remarks
+The WMI tool suite generates a declaration of the GetFCPStatistics_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _GetFCPStatistics_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554939">GetFCPStatistics</a>
-</dt>
-<dt>
 <a href="..\hbapiwmi\ns-hbapiwmi-_getfcpstatistics_in.md">GetFCPStatistics_IN</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554939">GetFCPStatistics</a>
+
  
 
  

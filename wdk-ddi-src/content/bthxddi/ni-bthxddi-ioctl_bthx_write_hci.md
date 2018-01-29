@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 77BBF6AC-F5FA-4795-8898-6DC02983F573
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords : bltooth.ioctl_bthx_hci_write, IOCTL_BTHX_WRITE_HCI control code [Bluetooth Devices], IOCTL_BTHX_WRITE_HCI, bthxddi/IOCTL_BTHX_WRITE_HCI, bltooth.ioctl_bthx_write_hci
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHX_WRITE_HCI
-req.alt-loc : BthXDDI.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
 # IOCTL_BTHX_WRITE_HCI IOCTL
-IOCTL_BTHX_WRITE_HCI is used to write Bluetooth ACL Data and Commands to the transport layer.
-
-
-
 IOCTL_BTHX_WRITE_HCI is used to write Bluetooth ACL Data and Commands to the transport layer.
 
 ### Major Code
@@ -75,21 +75,32 @@ The length of the buffer is the size of a ULONG.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the number of bytes in the Output Parameter.
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
-    ## Remarks
-        The Bluetooth stack sends IOCTL_BTHX_WRITE_HCI to write HCI ACL data and HCI command to the controller.
+</td>
+</tr>
+</table>
 
-The input buffer points to a BTHX_HCI_READ_WRITE_CONTEXT structure whose <b>DataLen</b> member specifies the number of bytes in the <b>Data</b> member. The <b>Type</b> member is set based on whether the packet is a command packet or an ACL data packet.</p>
+## Remarks
+The Bluetooth stack sends IOCTL_BTHX_WRITE_HCI to write HCI ACL data and HCI command to the controller.
+
+The input buffer points to a BTHX_HCI_READ_WRITE_CONTEXT structure whose <b>DataLen</b> member specifies the number of bytes in the <b>Data</b> member. The <b>Type</b> member is set based on whether the packet is a command packet or an ACL data packet.
 
 ## Requirements
 | &nbsp; | &nbsp; |

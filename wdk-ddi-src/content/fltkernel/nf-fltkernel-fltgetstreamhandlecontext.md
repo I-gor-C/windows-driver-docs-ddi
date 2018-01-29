@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c6e7c0d8-8005-4a40-a13b-ee58feeabbf0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetStreamHandleContext
+ms.keywords : FltGetStreamHandleContext routine [Installable File System Drivers], FltGetStreamHandleContext, FltApiRef_e_to_o_4a329c48-3a48-47bc-b998-3aaee454fbef.xml, fltkernel/FltGetStreamHandleContext, ifsk.fltgetstreamhandlecontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetStreamHandleContext
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,12 +70,34 @@ Pointer to a caller-allocated variable that receives the address of the context.
 ## Return Value
 
 <b>FltGetStreamHandleContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>No matching context was found. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+No matching context was found. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The file system does not support per-stream contexts for this file stream. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The file system does not support per-stream contexts for this file stream. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -99,23 +125,16 @@ To delete a stream handle context, call <a href="..\fltkernel\nf-fltkernel-fltde
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltsetstreamhandlecontext.md">FltSetStreamHandleContext</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
+
  
 
  

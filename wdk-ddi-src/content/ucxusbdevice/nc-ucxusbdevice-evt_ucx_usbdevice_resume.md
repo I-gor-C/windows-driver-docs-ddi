@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 876D9754-B3AA-42C5-8BDD-60CFD4F78951
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO
+ms.keywords : buses.evt_ucx_usbdevice_resume, EvtUcxDeviceResume callback function [Buses], EvtUcxDeviceResume, EVT_UCX_USBDEVICE_RESUME, EVT_UCX_USBDEVICE_RESUME, ucxusbdevice/EvtUcxDeviceResume, *PFN_UCX_USBDEVICE_RESUME callback function [Buses], *PFN_UCX_USBDEVICE_RESUME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : "*PFN_UCX_USBDEVICE_RESUME"
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : STREAM_INFO, *PSTREAM_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTREAM_INFO, STREAM_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -68,7 +72,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-The UCX client driver registers its implementation with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.</p>
+The UCX client driver registers its implementation with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |

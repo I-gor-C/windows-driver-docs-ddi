@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2c332700-7778-4342-b99b-093142496624
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlClearBits
+ms.keywords : RtlClearBits routine [Kernel-Mode Driver Architecture], RtlClearBits, kernel.rtlclearbits, k109_ee20da99-4d30-46dc-99c1-d3d8dfa92d08.xml, wdm/RtlClearBits
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlClearBits
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -90,29 +94,20 @@ Callers of <b>RtlClearBits</b> must be running at IRQL &lt;= APC_LEVEL if the me
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlclearallbits.md">RtlClearAllBits</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindsetbitsandclear.md">RtlFindSetBitsAndClear</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlnumberofsetbits.md">RtlNumberOfSetBits</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+
+<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
+
+<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+
+<a href="..\wdm\nf-wdm-rtlclearallbits.md">RtlClearAllBits</a>
+
+<a href="..\wdm\nf-wdm-rtlfindsetbitsandclear.md">RtlFindSetBitsAndClear</a>
+
+<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
+
  
 
  

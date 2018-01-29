@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 40b81630-997f-4427-8d02-5004de6fc943
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT
+ms.keywords : SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT structure [Buses], pcivirt/SRIOV_MITIGATED_RANGES_INPUT, PCI.sriov_mitigated_ranges_input, _SRIOV_MITIGATED_RANGES_INPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_MITIGATED_RANGES_INPUT
-req.alt-loc : pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT
 ---
 
 # _SRIOV_MITIGATED_RANGES_INPUT structure
@@ -47,14 +51,14 @@ typedef struct _SRIOV_MITIGATED_RANGES_INPUT {
 
 ## Members
 
-        
-            `BarNumber`
 
-            The number of BAR of the ranges of memory-mapped I/O space.
-        
-            `VfIndex`
+`BarNumber`
 
-            Zero-based index of the virtual function from the first virtual function exposed by this physical function.
+The number of BAR of the ranges of memory-mapped I/O space.
+
+`VfIndex`
+
+Zero-based index of the virtual function from the first virtual function exposed by this physical function.
 
 
 ## Requirements

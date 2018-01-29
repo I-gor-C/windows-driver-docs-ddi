@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : b323f803-56fb-44db-9b88-be25062c08ff
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnGetSupportedEvents, OnGetSupportedEvents
+ms.keywords : ISensorDriver::OnGetSupportedEvents, OnGetSupportedEvents method [Sensor Devices], ISensorDriver, sensors.isensordriver_ongetsupportedevents, OnGetSupportedEvents
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OnGetSupportedEvents
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -72,7 +76,7 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 
 Event IDs are represented by <b>GUID</b>s. Platform-defined events are defined in sensors.h. 
 
-You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.</p>
+You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |

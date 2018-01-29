@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : daa7d15f-580a-4668-9159-834e18b28c1f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeContext
+ms.keywords : ifsk.fltgetvolumecontext, FltApiRef_e_to_o_8cec5d5c-18c3-4ffe-be18-fffcfc8d0c14.xml, FltGetVolumeContext routine [Installable File System Drivers], FltGetVolumeContext, fltkernel/FltGetVolumeContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetVolumeContext
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,9 +70,23 @@ Pointer to a caller-allocated variable that receives the address of the requeste
 ## Return Value
 
 <b>FltGetVolumeContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>No matching context was found. This is an error code.
+</dl>
+</td>
+<td width="60%">
+No matching context was found. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,23 +112,16 @@ To delete a volume context, call <a href="..\fltkernel\nf-fltkernel-fltdeletevol
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltsetvolumecontext.md">FltSetVolumeContext</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
  
 
  

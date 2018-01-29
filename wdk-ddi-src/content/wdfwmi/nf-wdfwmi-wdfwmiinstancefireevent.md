@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7bef79ab-78d6-47b6-a3f4-d9733ffcb53d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWmiInstanceFireEvent
+ms.keywords : wdf.wdfwmiinstancefireevent, kmdf.wdfwmiinstancefireevent, WdfWmiInstanceFireEvent method, WdfWmiInstanceFireEvent, wdfwmi/WdfWmiInstanceFireEvent, PFN_WDFWMIINSTANCEFIREEVENT, DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfWmiInstanceFireEvent
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_WMI_PROVIDER_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -69,17 +73,45 @@ A pointer to the event data, or <b>NULL</b> if there is no event data.
 ## Return Value
 
 <b>WdfWmiInstanceFireEvent</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There was insufficient memory.
+</dl>
+</td>
+<td width="60%">
+There was insufficient memory.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The framework's attempt to communicate with WMI failed.
+</dl>
+</td>
+<td width="60%">
+The framework's attempt to communicate with WMI failed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>The event data buffer was too large.
+</dl>
+</td>
+<td width="60%">
+The event data buffer was too large.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -92,8 +124,6 @@ Your driver should call <b>WdfWmiInstanceFireEvent</b> only if a WMI client has 
 The driver should place its event-specific data, if any, in the buffer that the <i>EventData</i> parameter points to. The framework adds all of the necessary WMI header information.
 
 For more information about the <b>WdfWmiInstanceFireEvent</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-wmi-in-kmdf-drivers">Supporting WMI in Framework-Based Drivers</a>.
-
-The following code example sends a WMI event to WMI clients.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -109,17 +139,12 @@ The following code example sends a WMI event to WMI clients.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
-</dt>
-<dt>
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
-</dt>
-<dt>
+
+<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
-</dt>
-</dl>
+
  
 
  

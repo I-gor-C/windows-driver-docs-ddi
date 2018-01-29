@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7889400e-bd26-43b5-a860-bea9f9217002
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE, D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
+ms.keywords : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE structure [Display Devices], display.d3d11ddiarg_calcprivatedeferredcontextsize, D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE, d3d10umddi/D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE, UMDisplayDriver_Dx11param_Structs_eca4d605-7188-46b1-b429-04094a9f7db6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE is suppor
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
 ---
 
@@ -46,10 +50,10 @@ typedef struct D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A valid bitwise OR of flag values that identify how to create a rendering device. The Direct3D runtime supports the following flags:
+`Flags`
+
+[in] A valid bitwise OR of flag values that identify how to create a rendering device. The Direct3D runtime supports the following flags:
 
 
 ## Requirements
@@ -60,16 +64,12 @@ typedef struct D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_3dpipelinelevel.md">D3D11DDI_3DPIPELINELEVEL</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_3dpipelinesupport_caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a>
-</dt>
-</dl>
+
  
 
  

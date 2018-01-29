@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 44839b9e-f206-49e6-a9f6-14e79d1e0ae2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream, IPortWaveRTStream::AllocatePagesForMdl, AllocatePagesForMdl
+ms.keywords : AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream::AllocatePagesForMdl, AllocatePagesForMdl, IPortWaveRTStream, audio.iportwavertstream_allocatepagesformdl, portcls/IPortWaveRTStream::AllocatePagesForMdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, IPortWaveRTStream interface [Audio Devices], AllocatePagesForMdl method, AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWaveRTStream.AllocatePagesForMdl
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -88,17 +92,12 @@ Like the <a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
-</dt>
-</dl>
+
  
 
  

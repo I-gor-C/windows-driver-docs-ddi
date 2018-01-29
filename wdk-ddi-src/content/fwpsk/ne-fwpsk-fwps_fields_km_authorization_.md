@@ -7,8 +7,8 @@ old-location : netvista\fwps_fields_km_authorization.htm
 old-project : netvista
 ms.assetid : c15ed590-4a7f-4f21-8e6e-1440a57b5659
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_FIELDS_KM_AUTHORIZATION_, FWPS_FIELDS_KM_AUTHORIZATION
+ms.date : 1/18/2018
+ms.keywords : FWPS_FIELD_KM_AUTHORIZATION_AUTHENTICATION_TYPE, FWPS_FIELD_KM_AUTHORIZATION_MAX, FWPS_FIELD_KM_AUTHORIZATION_NAP_CONTEXT, wfp_ref_5_const_3_data_fields_97f93a49-0188-482e-a5e1-cba42f2e6dde.xml, fwpsk/FWPS_FIELD_KM_AUTHORIZATION_DIRECTION, fwpsk/FWPS_FIELD_KM_AUTHORIZATION_MAX, FWPS_FIELD_KM_AUTHORIZATION_IPSEC_POLICY_KEY, FWPS_FIELD_KM_AUTHORIZATION_KM_TYPE, fwpsk/FWPS_FIELD_KM_AUTHORIZATION_IPSEC_POLICY_KEY, FWPS_FIELD_KM_AUTHORIZATION_DIRECTION, FWPS_FIELDS_KM_AUTHORIZATION_, fwpsk/FWPS_FIELD_KM_AUTHORIZATION_AUTHENTICATION_TYPE, fwpsk/FWPS_FIELD_KM_AUTHORIZATION_NAP_CONTEXT, FWPS_FIELDS_KM_AUTHORIZATION, FWPS_FIELD_KM_AUTHORIZATION_KM_MODE, netvista.fwps_fields_km_authorization, fwpsk/FWPS_FIELD_KM_AUTHORIZATION_REMOTE_ID, FWPS_FIELD_KM_AUTHORIZATION_REMOTE_ID, FWPS_FIELDS_KM_AUTHORIZATION enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_KM_AUTHORIZATION_KM_MODE, fwpsk/FWPS_FIELDS_KM_AUTHORIZATION, fwpsk/FWPS_FIELD_KM_AUTHORIZATION_KM_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_FIELDS_KM_AUTHORIZATION
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_FIELDS_KM_AUTHORIZATION
 ---
 

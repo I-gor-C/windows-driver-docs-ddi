@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4EDEE2EE-7B42-4CC9-8CFC-4690193C5D4D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CMP_GET_PLUG_HANDLE, *PCMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE
+ms.keywords : 61883/PCMP_GET_PLUG_HANDLE, IEEE.cmp_get_plug_handle, CMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE structure [Buses], PCMP_GET_PLUG_HANDLE, _CMP_GET_PLUG_HANDLE, 61883/CMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE structure pointer [Buses], *PCMP_GET_PLUG_HANDLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_GET_PLUG_HANDLE
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE"
 ---
 
@@ -48,21 +52,21 @@ typedef struct _CMP_GET_PLUG_HANDLE {
 
 ## Members
 
-        
-            `hPlug`
 
-            On output, a handle to the plug specified with PlugNum and Type.
-        
-            `PlugNum`
+`hPlug`
 
-            The number of the plug whose handle was returned by the Av61883_CreatePlug request that created the plug.
-        
-            `Type`
+On output, a handle to the plug specified with PlugNum and Type.
 
-            The type of the plug. This can be CMP_PlugOut for an output plug, or CMP_PlugIn for an input plug.
+`PlugNum`
 
-    ## Remarks
-        If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
+The number of the plug whose handle was returned by the Av61883_CreatePlug request that created the plug.
+
+`Type`
+
+The type of the plug. This can be CMP_PlugOut for an output plug, or CMP_PlugIn for an input plug.
+
+## Remarks
+If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
@@ -74,13 +78,10 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

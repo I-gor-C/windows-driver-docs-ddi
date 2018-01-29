@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9b785bee-289f-4f91-8183-c1dc2fa1fa6d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDI_HANDLESIZE, D3D11DDI_HANDLESIZE
+ms.keywords : d3d10umddi/D3D11DDI_HANDLESIZE, D3D11DDI_HANDLESIZE structure [Display Devices], UMDisplayDriver_Dx11param_Structs_4eedfbd5-b87d-42bb-9ec9-2efc75ad3464.xml, D3D11DDI_HANDLESIZE, display.d3d11ddi_handlesize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDI_HANDLESIZE is supported beginning with the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDI_HANDLESIZE
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDI_HANDLESIZE
 ---
 
@@ -47,17 +51,17 @@ typedef struct D3D11DDI_HANDLESIZE {
 
 ## Members
 
-        
-            `DriverPrivateSize`
 
-            [in] The size, in bytes, of the driver-private memory space that holds the handle data.
-        
-            `HandleType`
+`DriverPrivateSize`
 
-            [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>-typed value that identifies the handle type.
+[in] The size, in bytes, of the driver-private memory space that holds the handle data.
 
-    ## Remarks
-        The driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_checkdeferredcontexthandlesizes.md">CheckDeferredContextHandleSizes</a> function verifies the size of the driver-private memory space that holds the handle data of a deferred context handle and returns the size in the <b>DriverPrivateSize</b> member of the D3D11DDI_HANDLESIZE structure that the <i>pHandleSize</i> parameter points to.
+`HandleType`
+
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>-typed value that identifies the handle type.
+
+## Remarks
+The driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_checkdeferredcontexthandlesizes.md">CheckDeferredContextHandleSizes</a> function verifies the size of the driver-private memory space that holds the handle data of a deferred context handle and returns the size in the <b>DriverPrivateSize</b> member of the D3D11DDI_HANDLESIZE structure that the <i>pHandleSize</i> parameter points to.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct D3D11DDI_HANDLESIZE {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_checkdeferredcontexthandlesizes.md">CheckDeferredContextHandleSizes</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_checkdeferredcontexthandlesizes.md">CheckDeferredContextHandleSizes</a>
+
  
 
  

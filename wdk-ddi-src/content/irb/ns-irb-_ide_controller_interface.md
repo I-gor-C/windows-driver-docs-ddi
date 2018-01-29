@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cb18f7d9-f9e8-436d-8d61-3641730bd8a2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDE_CONTROLLER_INTERFACE, *PIDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE
+ms.keywords : PIDE_CONTROLLER_INTERFACE structure pointer [Storage Devices], irb/PIDE_CONTROLLER_INTERFACE, irb/IDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE structure [Storage Devices], _IDE_CONTROLLER_INTERFACE, structs-ATA_3b2abcb7-676c-44c9-a2a3-c4efb0f1e032.xml, PIDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE, storage.ide_controller_interface, *PIDE_CONTROLLER_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDE_CONTROLLER_INTERFACE
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE"
 ---
 
 # _IDE_CONTROLLER_INTERFACE structure
 The IDE_CONTROLLER_INTERFACE structure is used to pass controller configuration information between the port driver and the miniport driver.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -54,42 +59,42 @@ typedef struct _IDE_CONTROLLER_INTERFACE {
 
 ## Members
 
-        
-            `AlignmentMask`
 
-            Contains a mask indicating the alignment restrictions for buffers required by the HBA for transfer operations. Valid mask values are also restricted by characteristics of the memory managers on different versions of Windows. Under Windows 2000 and Windows XP, the valid mask values are 0 (byte-aligned), 1 (word-aligned), 3 (DWORD-aligned) and 7 (double DWORD-aligned). The miniport driver should set this mask if the HBA supports scatter/gather.
-        
-            `AtaAdapterControl`
+`AlignmentMask`
 
-            Pointer to the miniport's <b>AtaControllerAdapterControl</b> routine. This is a required entry point.
-        
-            `AtaChannelInitRoutine`
+Contains a mask indicating the alignment restrictions for buffers required by the HBA for transfer operations. Valid mask values are also restricted by characteristics of the memory managers on different versions of Windows. Under Windows 2000 and Windows XP, the valid mask values are 0 (byte-aligned), 1 (word-aligned), 3 (DWORD-aligned) and 7 (double DWORD-aligned). The miniport driver should set this mask if the HBA supports scatter/gather.
 
-            Pointer to the miniport's <b>AtaChannelInitRoutine</b> routine. The miniport needs to set this entry point only if it supports the Channel Interface.
-        
-            `AtaControllerChannelEnabled`
+`AtaAdapterControl`
 
-            Pointer to the miniport's <b>AtaControllerChannelEnabled</b> routine. This is an optional entry point.
-        
-            `AtaControllerTransferModeSelect`
+Pointer to the miniport's <b>AtaControllerAdapterControl</b> routine. This is a required entry point.
 
-            Pointer to the miniport's <b>AtaControllerTransferModeSelect</b> routine. This is an optional entry point.
-        
-            `ChannelExtensionSize`
+`AtaChannelInitRoutine`
 
-            Specifies the size in bytes required by a miniport driver for its per-channel device extension.
-        
-            `ControllerExtensionSize`
+Pointer to the miniport's <b>AtaChannelInitRoutine</b> routine. The miniport needs to set this entry point only if it supports the Channel Interface.
 
-            Specifies the size in bytes required by a miniport driver for its controller device extension.
-        
-            `Reserved`
+`AtaControllerChannelEnabled`
 
-            Reserved for future use. The miniport driver shall not use this field.
-        
-            `Version`
+Pointer to the miniport's <b>AtaControllerChannelEnabled</b> routine. This is an optional entry point.
 
-            The port driver sets this field to indicate the version of the port driver. The port driver sets the version to sizeof(IDE_CONTROLLER_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
+`AtaControllerTransferModeSelect`
+
+Pointer to the miniport's <b>AtaControllerTransferModeSelect</b> routine. This is an optional entry point.
+
+`ChannelExtensionSize`
+
+Specifies the size in bytes required by a miniport driver for its per-channel device extension.
+
+`ControllerExtensionSize`
+
+Specifies the size in bytes required by a miniport driver for its controller device extension.
+
+`Reserved`
+
+Reserved for future use. The miniport driver shall not use this field.
+
+`Version`
+
+The port driver sets this field to indicate the version of the port driver. The port driver sets the version to sizeof(IDE_CONTROLLER_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
 
 
 ## Requirements

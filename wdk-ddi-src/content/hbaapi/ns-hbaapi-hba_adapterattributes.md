@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d86a5810-7014-41d5-bd88-3a1bd50032da
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_AdapterAttributes, *PHBA_ADAPTERATTRIBUTES, HBA_ADAPTERATTRIBUTES
+ms.keywords : PHBA_ADAPTERATTRIBUTES structure pointer [Storage Devices], hbaapi/PHBA_ADAPTERATTRIBUTES, PHBA_ADAPTERATTRIBUTES, *PHBA_ADAPTERATTRIBUTES, structs-Fibre_364bd5e8-0276-425b-a1f9-9659aabecd19.xml, HBA_ADAPTERATTRIBUTES structure [Storage Devices], HBA_AdapterAttributes structure [Storage Devices], storage.hba_adapterattributes, HBA_ADAPTERATTRIBUTES, hbaapi/HBA_AdapterAttributes, HBA_AdapterAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_ADAPTERATTRIBUTES
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHBA_ADAPTERATTRIBUTES, HBA_ADAPTERATTRIBUTES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HBA_ADAPTERATTRIBUTES, *PHBA_ADAPTERATTRIBUTES
 ---
 
 # HBA_AdapterAttributes structure
@@ -58,58 +62,58 @@ typedef struct HBA_AdapterAttributes {
 
 ## Members
 
-        
-            `DriverName`
 
-            Contains a string not exceeding 256 bytes in length that indicates name of the file that contains the binary image of the device driver for the HBA.
-        
-            `DriverVersion`
+`DriverName`
 
-            Contains a string not exceeding 256 bytes in length that indicates version of the driver that manages the HBA.
-        
-            `FirmwareVersion`
+Contains a string not exceeding 256 bytes in length that indicates name of the file that contains the binary image of the device driver for the HBA.
 
-            Contains a string not exceeding 256 bytes in length that identifies the version of the HBA's firmware.
-        
-            `HardwareVersion`
+`DriverVersion`
 
-            Contains a string not exceeding 256 bytes in length that indicates the hardware revision level of the HBA.
-        
-            `Manufacturer`
+Contains a string not exceeding 256 bytes in length that indicates version of the driver that manages the HBA.
 
-            Contains a string not exceeding 64 bytes in length that indicates the name of the manufacturer of the HBA..
-        
-            `Model`
+`FirmwareVersion`
 
-            Contains a string not exceeding 256 bytes in length that indicates a vendor specific name or identifying text for the HBA model.
-        
-            `ModelDescription`
+Contains a string not exceeding 256 bytes in length that identifies the version of the HBA's firmware.
 
-            Contains a string not exceeding 256 bytes in length that provides a description of the HBA model.
-        
-            `NodeSymbolicName`
+`HardwareVersion`
 
-            Contains a string not exceeding 256 bytes in length that indicates the symbolic name of the fibre channel node (machine) that the adapter is located on.
-        
-            `NodeWWN`
+Contains a string not exceeding 256 bytes in length that indicates the hardware revision level of the HBA.
 
-            Contains the 64 bit world-wide name that indicates the name of the node (machine) that the HBA is located on. If an HBA has multiple ports associated with more than one node, the member will contain a name chosen by vendor-specific means from among the names of the associated nodes. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
-        
-            `NumberOfPorts`
+`Manufacturer`
 
-            Indicates the number of ports on the HBA.
-        
-            `OptionROMVersion`
+Contains a string not exceeding 64 bytes in length that indicates the name of the manufacturer of the HBA..
 
-            Contains a string not exceeding 256 bytes in length that specifies the option ROM or the version of the BIOS of the HBA.
-        
-            `SerialNumber`
+`Model`
 
-            Contains a string not exceeding 64 bytes in length that indicates the serial number of the HBA.
-        
-            `VendorSpecificID`
+Contains a string not exceeding 256 bytes in length that indicates a vendor specific name or identifying text for the HBA model.
 
-            Contains a vendor-specified ID.
+`ModelDescription`
+
+Contains a string not exceeding 256 bytes in length that provides a description of the HBA model.
+
+`NodeSymbolicName`
+
+Contains a string not exceeding 256 bytes in length that indicates the symbolic name of the fibre channel node (machine) that the adapter is located on.
+
+`NodeWWN`
+
+Contains the 64 bit world-wide name that indicates the name of the node (machine) that the HBA is located on. If an HBA has multiple ports associated with more than one node, the member will contain a name chosen by vendor-specific means from among the names of the associated nodes. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+
+`NumberOfPorts`
+
+Indicates the number of ports on the HBA.
+
+`OptionROMVersion`
+
+Contains a string not exceeding 256 bytes in length that specifies the option ROM or the version of the BIOS of the HBA.
+
+`SerialNumber`
+
+Contains a string not exceeding 64 bytes in length that indicates the serial number of the HBA.
+
+`VendorSpecificID`
+
+Contains a vendor-specified ID.
 
 
 ## Requirements
@@ -120,13 +124,10 @@ typedef struct HBA_AdapterAttributes {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_getadapterattributes.md">HBA_GetAdapterAttributes</a>
-</dt>
-</dl>
+
  
 
  

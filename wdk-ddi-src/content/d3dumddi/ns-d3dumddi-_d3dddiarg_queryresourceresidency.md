@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14c0cb12-3ed0-4c78-befa-6da9e8cd7dbc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_QUERYRESOURCERESIDENCY, D3DDDIARG_QUERYRESOURCERESIDENCY
+ms.keywords : UMDisplayDriver_param_Structs_46a460d2-e511-43fd-9906-b9a47762f9a7.xml, _D3DDDIARG_QUERYRESOURCERESIDENCY, D3DDDIARG_QUERYRESOURCERESIDENCY, d3dumddi/D3DDDIARG_QUERYRESOURCERESIDENCY, D3DDDIARG_QUERYRESOURCERESIDENCY structure [Display Devices], display.d3dddiarg_queryresourceresidency
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_QUERYRESOURCERESIDENCY
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_QUERYRESOURCERESIDENCY
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DDDIARG_QUERYRESOURCERESIDENCY {
 
 ## Members
 
-        
-            `NumResources`
 
-            [in] The number of resources in the array in the <b>pHandleList</b> member. The range is from 1 through 0xFFFFF.
-        
-            `pHandleList`
+`NumResources`
 
-            [in] An array of handles to resources whose residency is queried. <b>pHandleList</b> cannot be <b>NULL</b>. A resource can be an object, which is derived from the <b>IDirect3DResource9</b> interface for a texture, volume texture, cube texture, vertex buffer, index buffer, or surface. For more information about <b>IDirect3DResource9</b>, see the DirectX SDK documentation.
+[in] The number of resources in the array in the <b>pHandleList</b> member. The range is from 1 through 0xFFFFF.
+
+`pHandleList`
+
+[in] An array of handles to resources whose residency is queried. <b>pHandleList</b> cannot be <b>NULL</b>. A resource can be an object, which is derived from the <b>IDirect3DResource9</b> interface for a texture, volume texture, cube texture, vertex buffer, index buffer, or surface. For more information about <b>IDirect3DResource9</b>, see the DirectX SDK documentation.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DDDIARG_QUERYRESOURCERESIDENCY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryresourceresidency.md">QueryResourceResidency</a>
-</dt>
-</dl>
+
  
 
  

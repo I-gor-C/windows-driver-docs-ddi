@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a1625eb2-a38b-4517-b873-f33b5ced8705
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSPROCESSPIN, *PKSPROCESSPIN, KSPROCESSPIN
+ms.keywords : KSPROCESSPIN, PKSPROCESSPIN, stream.ksprocesspin, ks/KSPROCESSPIN, ks/PKSPROCESSPIN, avstruct_a374bc58-a61f-4d3b-9b20-de14b7cc423f.xml, PKSPROCESSPIN structure pointer [Streaming Media Devices], *PKSPROCESSPIN, KSPROCESSPIN structure [Streaming Media Devices], _KSPROCESSPIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROCESSPIN
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPROCESSPIN, KSPROCESSPIN"
 ---
 
@@ -56,8 +60,8 @@ typedef struct _KSPROCESSPIN {
 ## Members
 
 
-    ## Remarks
-        The KSPROCESSPIN structure is used in the <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">filter-centric processing</a> model. You can use this structure to access data on a specific input pin or to write out processed data to an output pin.
+## Remarks
+The KSPROCESSPIN structure is used in the <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">filter-centric processing</a> model. You can use this structure to access data on a specific input pin or to write out processed data to an output pin.
 
 Only filter-centric clients use process pins. Further, process pins that have a non-<b>NULL</b><b>DelegateBranch</b> or a non-<b>NULL</b><b>CopySource</b> typically are not of concern to the client. The splitter automatically handles process pins with these pointers.
 
@@ -71,22 +75,16 @@ Most clients are concerned with the members <b>Pin</b>, <b>Data</b>, <b>BytesAva
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+<a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
+
  
 
  

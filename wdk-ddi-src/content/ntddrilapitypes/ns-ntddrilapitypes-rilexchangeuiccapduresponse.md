@@ -7,8 +7,8 @@ old-location : netvista\rilexchangeuiccapduresponse.htm
 old-project : netvista
 ms.assetid : 57418ab1-e341-41ad-a120-cc4f7e0b0227
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILEXCHANGEUICCAPDURESPONSE, *LPRILEXCHANGEUICCAPDURESPONSE, RILEXCHANGEUICCAPDURESPONSE
+ms.date : 1/18/2018
+ms.keywords : RILEXCHANGEUICCAPDURESPONSE, ntddrilapitypes/RILEXCHANGEUICCAPDURESPONSE, RILEXCHANGEUICCAPDURESPONSE structure [Network Drivers Starting with Windows Vista], netvista.rilexchangeuiccapduresponse, *LPRILEXCHANGEUICCAPDURESPONSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILEXCHANGEUICCAPDURESPONSE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILEXCHANGEUICCAPDURESPONSE, RILEXCHANGEUICCAPDURESPONSE"
 ---
 
@@ -49,22 +53,22 @@ typedef struct _RILEXCHANGEUICCAPDURESPONSE {
 
 ## Members
 
-        
-            `bResponseAPDU`
 
-            
-        
-            `cbSize`
+`bResponseAPDU`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwResponseAPDULength`
 
-            
+`cbSize`
+
+
+
+`dwParams`
+
+
+
+`dwResponseAPDULength`
+
+
 
 
 ## Requirements

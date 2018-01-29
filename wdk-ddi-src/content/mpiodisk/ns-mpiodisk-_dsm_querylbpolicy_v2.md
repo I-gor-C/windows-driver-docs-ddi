@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f02f3442-e9c2-4f60-833d-e470de62118e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DSM_QueryLBPolicy_V2, DSM_QueryLBPolicy_V2, *PDSM_QueryLBPolicy_V2
+ms.keywords : DSM_QueryLBPolicy_V2, mpiodisk/DSM_QueryLBPolicy_V2, structs-scsibus_ea429f47-a439-433a-962e-2ce334aa7498.xml, storage.dsm_querylbpolicy_v2, DSM_QueryLBPolicy_V2 structure [Storage Devices], *PDSM_QueryLBPolicy_V2, mpiodisk/PDSM_QueryLBPolicy_V2, _DSM_QueryLBPolicy_V2, PDSM_QueryLBPolicy_V2, PDSM_QueryLBPolicy_V2 structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DSM_QueryLBPolicy_V2
-req.alt-loc : mpiodisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DSM_QueryLBPolicy_V2, *PDSM_QueryLBPolicy_V2
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDSM_QueryLBPolicy_V2, DSM_QueryLBPolicy_V2"
 ---
 
 # _DSM_QueryLBPolicy_V2 structure
@@ -46,10 +50,10 @@ typedef struct _DSM_QueryLBPolicy_V2 {
 
 ## Members
 
-        
-            `LoadBalancePolicy`
 
-            An instance of the DSM_Load_Balance_Policy_V2 structure that has information about the current load balance policy that is being applied by the DSM on the targeted pseudo-LUN.
+`LoadBalancePolicy`
+
+An instance of the DSM_Load_Balance_Policy_V2 structure that has information about the current load balance policy that is being applied by the DSM on the targeted pseudo-LUN.
 
 
 ## Requirements

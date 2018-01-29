@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2546303a-53c3-4c6b-a230-eb1ebd74cb76
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaEnablerWdmGetDmaAdapter
+ms.keywords : wdf.wdfdmaenablerwdmgetdmaadapter, WdfDmaEnablerWdmGetDmaAdapter method, WdfDmaEnablerWdmGetDmaAdapter, PFN_WDFDMAENABLERWDMGETDMAADAPTER, wdfdmaenabler/WdfDmaEnablerWdmGetDmaAdapter, DFDmaObjectRef_9ed5be1b-56fd-4305-8aad-0ebb0856e34a.xml, kmdf.wdfdmaenablerwdmgetdmaadapter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.5
 req.umdf-ver : 
-req.alt-api : WdfDmaEnablerWdmGetDmaAdapter
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_PROFILE
 req.product : Windows 10 or later.
 ---
@@ -75,8 +79,6 @@ If your driver specified a duplex profile when it called <a href="..\wdfdmaenabl
 
 The pointer that <b>WdfDmaEnablerWdmGetDmaAdapter</b> returns is valid until the DMA enabler object is deleted. If the driver provides an <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> function for the DMA enabler object, the pointer is valid until the callback function returns.
 
-The following code example creates a DMA enabler object and then obtains pointers to the WDM <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structures that the framework creates for read and write operations.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,17 +93,12 @@ The following code example creates a DMA enabler object and then obtains pointer
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
 <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_direction.md">WDF_DMA_DIRECTION</a>
-</dt>
-<dt>
+
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilmsgdcsmsgclass.htm
 old-project : netvista
 ms.assetid : 3190aa21-201a-40d1-b894-dd393e413826
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGDCSMSGCLASS, RILMSGDCSMSGCLASS
+ms.date : 1/18/2018
+ms.keywords : RILMSGDCSMSGCLASS, ntddrilapitypes/RIL_DCSMSGCLASS_3, ntddrilapitypes/RIL_DCSMSGCLASS_2, RILMSGDCSMSGCLASS enumeration [Network Drivers Starting with Windows Vista], RIL_DCSMSGCLASS_MAX, RIL_DCSMSGCLASS_2, RIL_DCSMSGCLASS_3, netvista.rilmsgdcsmsgclass, ntddrilapitypes/RILMSGDCSMSGCLASS, ntddrilapitypes/RIL_DCSMSGCLASS_MAX, RIL_DCSMSGCLASS_1, ntddrilapitypes/RIL_DCSMSGCLASS_1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGDCSMSGCLASS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGDCSMSGCLASS
 ---
 
@@ -50,6 +54,11 @@ typedef enum _RILMSGDCSMSGCLASS {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_DCSMSGCLASS_0</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_DCSMSGCLASS_1</td>

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2bf90d1d-887f-4d0c-8d79-e102a14dfe71
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlDeleteAce
+ms.keywords : ntifs/RtlDeleteAce, rtlref_68fe46f1-318a-48c6-9004-c338f52f41a5.xml, RtlDeleteAce routine [Installable File System Drivers], RtlDeleteAce, ifsk.rtldeleteace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows Serve
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlDeleteAce
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,15 +65,35 @@ Specifies the ACE to delete. A value of zero corresponds to the first ACE in the
 ## Return Value
 
 <b>RtlDeleteAce</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameter values was invalid. Possible reasons include: 
+</dl>
+</td>
+<td width="60%">
+One of the parameter values was invalid. Possible reasons include: 
 
+<ul>
+<li>
 The specified ACL is invalid.
 
+</li>
+<li>
 The specified index value is out of range. 
 
-STATUS_INVALID_PARAMETER is an error code.
+</li>
+</ul>
+STATUS_INVALID_PARAMETER is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,23 +119,16 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtladdace.md">RtlAddAce</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlgetace.md">RtlGetAce</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

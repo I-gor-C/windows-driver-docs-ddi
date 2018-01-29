@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2a9ce391-718e-4be0-9699-7612b63d31f0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortSetBusData
+ms.keywords : display.videoportsetbusdata, VideoPortSetBusData, VideoPort_Functions_e7db4c76-eae1-4e06-9969-1e2b8fc71faf.xml, VideoPortSetBusData function [Display Devices], video/VideoPortSetBusData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortSetBusData
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -107,26 +111,18 @@ For example, a miniport driver might call <b>VideoPortSetBusData</b> to clear a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
+
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
+
+<a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
+
+<a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
+
  
 
  

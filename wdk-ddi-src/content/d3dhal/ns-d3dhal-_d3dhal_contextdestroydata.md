@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1224f634-b349-4098-a6ad-cbf18742ffb7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_CONTEXTDESTROYDATA, D3DHAL_CONTEXTDESTROYDATA, *LPD3DHAL_CONTEXTDESTROYDATA
+ms.keywords : D3DHAL_CONTEXTDESTROYDATA, d3dstrct_7ae0080d-0578-43e2-9ddc-0dd7df1a4fcd.xml, D3DHAL_CONTEXTDESTROYDATA structure [Display Devices], LPD3DHAL_CONTEXTDESTROYDATA structure pointer [Display Devices], d3dhal/LPD3DHAL_CONTEXTDESTROYDATA, LPD3DHAL_CONTEXTDESTROYDATA, *LPD3DHAL_CONTEXTDESTROYDATA, _D3DHAL_CONTEXTDESTROYDATA, display.d3dhal_contextdestroydata, d3dhal/D3DHAL_CONTEXTDESTROYDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_CONTEXTDESTROYDATA
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_CONTEXTDESTROYDATA
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DHAL_CONTEXTDESTROYDATA {
 
 ## Members
 
-        
-            `ddrval`
 
-            Specifies the location where the driver writes the return code for <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextdestroycb.md">D3dContextDestroy</a>. D3D_OK indicates success. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.
-        
-            `dwhContext`
+`ddrval`
 
-            Specifies the handle to the context to be destroyed.
+Specifies the location where the driver writes the return code for <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextdestroycb.md">D3dContextDestroy</a>. D3D_OK indicates success. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.
+
+`dwhContext`
+
+Specifies the handle to the context to be destroyed.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DHAL_CONTEXTDESTROYDATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextdestroycb.md">D3dContextDestroy</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : aa64da58-cb50-485e-afbc-3a0408b4ecf2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serial_set_break_off, IOCTL_SERIAL_SET_BREAK_OFF control code [Serial Ports], IOCTL_SERIAL_SET_BREAK_OFF, ntddser/IOCTL_SERIAL_SET_BREAK_OFF, serref_1a347f28-6dfb-4b5d-afb8-9bb8ffad9f36.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_SET_BREAK_OFF
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -61,10 +65,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero.
 
-The <b>Status</b> member is to one of the <a href="serial_device_control_requests.htm#generic_status_values_for_serial_device_control_requests">Generic Status Values for Serial Device Control Requests</a>.
+The <b>Status</b> member is to one of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/serial-device-control-requests2">Generic Status Values for Serial Device Control Requests</a>.
 
 
 ## Requirements
@@ -74,13 +77,10 @@ The <b>Status</b> member is to one of the <a href="serial_device_control_request
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_break_on.md">IOCTL_SERIAL_SET_BREAK_ON</a>
-</dt>
-</dl>
+
  
 
  

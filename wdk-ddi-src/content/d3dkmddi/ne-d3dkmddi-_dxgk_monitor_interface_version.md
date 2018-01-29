@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 76af0d70-f9bb-4768-9bfd-f2aaeb212db0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MONITOR_INTERFACE_VERSION, DXGK_MONITOR_INTERFACE_VERSION
+ms.keywords : d3dkmddi/DXGK_MONITOR_INTERFACE_VERSION, _DXGK_MONITOR_INTERFACE_VERSION, DXGK_MONITOR_INTERFACE_VERSION, d3dkmddi/DXGK_MONITOR_INTERFACE_VERSION_UNINITIALIZED, DXGK_MONITOR_INTERFACE_VERSION_V2, display.dxgk_monitor_interface_version, d3dkmddi/DXGK_MONITOR_INTERFACE_VERSION_V1, DmEnums_4ec3a10c-c04f-431b-851d-908a5ff972a1.xml, DXGK_MONITOR_INTERFACE_VERSION_V1, d3dkmddi/DXGK_MONITOR_INTERFACE_VERSION_V2, DXGK_MONITOR_INTERFACE_VERSION_UNINITIALIZED, DXGK_MONITOR_INTERFACE_VERSION enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MONITOR_INTERFACE_VERSION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MONITOR_INTERFACE_VERSION
 ---
 
@@ -68,7 +72,7 @@ typedef enum _DXGK_MONITOR_INTERFACE_VERSION {
 
 ## Remarks
 
-The <b>Version</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitor_interface.md">DXGK_MONITOR_INTERFACE</a> structure is a value from the <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration.</p>
+The <b>Version</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitor_interface.md">DXGK_MONITOR_INTERFACE</a> structure is a value from the <b>DXGK_MONITOR_INTERFACE_VERSION</b> enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |

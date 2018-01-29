@@ -7,8 +7,8 @@ old-location : netvista\rilgetmsginuiccstatusparams_2.htm
 old-project : netvista
 ms.assetid : 9e51f87a-42ae-4ee7-ae34-b49b40109e8b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS
+ms.date : 1/18/2018
+ms.keywords : "*LPRILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS, netvista.rilgetmsginuiccstatusparams_2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILGETMSGINUICCSTATUSPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILGETMSGINUICCSTATUSPARAMS, *LPRILGETMSGINUICCSTATUSPARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _RILGETMSGINUICCSTATUSPARAMS {
 
 ## Members
 
-        
-            `dwIndex`
 
-            
-        
-            `hUiccApp`
+`dwIndex`
 
-            
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

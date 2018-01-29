@@ -7,8 +7,8 @@ old-location : image\val.htm
 old-project : image
 ms.assetid : 9c9cf520-3249-4c1e-9d0d-e07f7127117e
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : VAL, *PVAL, VAL
+ms.date : 1/18/2018
+ms.keywords : PVAL structure pointer [Imaging Devices], VAL structure [Imaging Devices], wiamicro/VAL, VAL, PVAL, *PVAL, wiamicro/PVAL, MicroDrv_397b66fc-2f8e-434e-88ac-24b5cdd415d5.xml, image.val
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VAL
-req.alt-loc : wiamicro.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVAL, VAL"
 req.product : Windows 10 or later.
 ---
@@ -55,42 +59,42 @@ typedef struct VAL {
 
 ## Members
 
-        
-            `dblVal`
 
-            Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.
-        
-            `handle`
+`dblVal`
 
-            Points to a ShutDown event handle that will be signaled by the WIA Flatbed Driver when the driver is being unloaded or shut down.
-        
-            `lReserved`
+Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.
 
-            Reserved. Do not use.
-        
-            `lVal`
+`handle`
 
-            Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.
-        
-            `pGuid`
+Points to a ShutDown event handle that will be signaled by the WIA Flatbed Driver when the driver is being unloaded or shut down.
 
-            Points to the GUID of the pressed button. If no button was pressed, this member points to GUID_NULL.
-        
-            `pHandle`
+`lReserved`
 
-            Points to an event handle.
-        
-            `ppButtonNames`
+Reserved. Do not use.
 
-            Specifies the address of a pointer to an array of button names.
-        
-            `pScanInfo`
+`lVal`
 
-            Points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure.
-        
-            `szVal`
+Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.
 
-            Specifies the device name in ASCII form. If needed for interrupt checking, the microdriver can use this name to pass to <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> (described in the Microsoft Windows SDK documentation) in order to obtain a file handle to the device.
+`pGuid`
+
+Points to the GUID of the pressed button. If no button was pressed, this member points to GUID_NULL.
+
+`pHandle`
+
+Points to an event handle.
+
+`ppButtonNames`
+
+Specifies the address of a pointer to an array of button names.
+
+`pScanInfo`
+
+Points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure.
+
+`szVal`
+
+Specifies the device name in ASCII form. If needed for interrupt checking, the microdriver can use this name to pass to <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> (described in the Microsoft Windows SDK documentation) in order to obtain a file handle to the device.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b271e095-1ac5-4795-82b0-954a17df334a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionRelease
+ms.keywords : PFN_WDFDMATRANSACTIONRELEASE, DFDmaObjectRef_24ae3a95-d8b5-4a41-874a-ef537ed4c4cd.xml, kmdf.wdfdmatransactionrelease, wdf.wdfdmatransactionrelease, WdfDmaTransactionRelease method, wdfdmatransaction/WdfDmaTransactionRelease, WdfDmaTransactionRelease
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDmaTransactionRelease
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -59,11 +63,23 @@ A handle to a DMA transaction object that the driver obtained from a previous ca
 ## Return Value
 
 <b>WdfDmaTransactionRelease</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, the method might return the following value:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl>The driver has already released or deleted the transaction object that the <i>DmaTransaction</i> parameter specified.
+</dl>
+</td>
+<td width="60%">
+The driver has already released or deleted the transaction object that the <i>DmaTransaction</i> parameter specified.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -75,8 +91,6 @@ The <b>WdfDmaTransactionRelease</b> method flushes transfer buffers and releases
 
 
           If <b>WdfDmaTransactionInitialize<i>Xxx</i></b> returns success but <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a> returns an error value, your driver must call <b>WdfDmaTransactionRelease</b>.
-
-The following code example terminates the DMA transaction that the specified DMA transaction object represents, but it does not delete the DMA transaction object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,11 +106,8 @@ The following code example terminates the DMA transaction that the specified DMA
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
-</dt>
-</dl>
+
  
 
  

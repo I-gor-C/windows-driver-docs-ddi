@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c6c0da06-c304-4d2d-907c-ccbb141c385b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRT, IMiniportWaveRT::GetDeviceDescription, GetDeviceDescription
+ms.keywords : GetDeviceDescription method [Audio Devices], audio.iminiportwavert_getdevicedescription, IMiniportWaveRT interface [Audio Devices], GetDeviceDescription method, IMiniportWaveRT, GetDeviceDescription method [Audio Devices], IMiniportWaveRT interface, audmp-routines_3a5441ed-a935-42ea-84be-29f1f6b6db07.xml, IMiniportWaveRT::GetDeviceDescription, GetDeviceDescription, portcls/IMiniportWaveRT::GetDeviceDescription
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRT.GetDeviceDescription
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -75,17 +79,12 @@ The <i>DeviceDescription</i> parameter contains a pointer to a DEVICE_DESCRIPTIO
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
+
  
 
  

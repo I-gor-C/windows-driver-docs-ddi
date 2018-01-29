@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c611b051-45fe-4509-bf2c-7059d578ea05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlDowncaseUnicodeString
+ms.keywords : ntifs/RtlDowncaseUnicodeString, ifsk.rtldowncaseunicodestring, RtlDowncaseUnicodeString, rtlref_140e7faa-096a-49df-a2b7-87776cfc5b38.xml, RtlDowncaseUnicodeString routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlDowncaseUnicodeString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -89,17 +93,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlupcaseunicodestring.md">RtlUpcaseUnicodeString</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

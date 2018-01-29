@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d0796a9b-9823-4f13-b2df-1fc8ca74cbd1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : USBCAMD_InitializeNewInterface
+ms.keywords : USBCAMD_InitializeNewInterface, stream.usbcamd_initializenewinterface, usbcmdpr_4b43d8ab-fd5f-4199-afbc-b21801c4fab3.xml, USBCAMD_InitializeNewInterface function [Streaming Media Devices], usbcamdi/USBCAMD_InitializeNewInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBCAMD_InitializeNewInterface
-req.alt-loc : usbcamd2.lib,usbcamd2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbcamd2.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -67,7 +71,6 @@ Specifies the version information. This value should be set to the value USBCAMD
 `CamControlFlag`
 
 Specifies how USBCAMD and the camera minidriver should interact. The camera minidriver should set this value to one or more of the following:
-
 <table>
 <tr>
 <th>Flag</th>
@@ -140,14 +143,10 @@ The <b>USBCAMD_InitializeNewInterface</b> function must be called by the camera 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568185">SRB_INITIALIZE_DEVICE</a>
-</dt>
-<dt>
 <a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md">USBCAMD_DEVICE_DATA2</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568185">SRB_INITIALIZE_DEVICE</a>
+
  
 
  

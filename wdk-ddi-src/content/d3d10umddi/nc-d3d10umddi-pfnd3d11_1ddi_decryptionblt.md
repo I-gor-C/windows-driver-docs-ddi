@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 36aeb826-251e-404e-8ce3-6b2246ff07bc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.decryptionblt1, DecryptionBlt callback function [Display Devices], DecryptionBlt, PFND3D11_1DDI_DECRYPTIONBLT, PFND3D11_1DDI_DECRYPTIONBLT, d3d10umddi/DecryptionBlt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DecryptionBlt
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -108,6 +112,9 @@ For 128-bit AES-CTR encryption, the <i>pIV</i> parameter points to a <a href="..
 
 For other encryption types, a different structure might be used, or the encryption might not use an IV.
 
+
+<div class="alert"><b>Note</b>  This function does not honor a Direct3D version 11 predicate that may have been set.</div><div> </div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -122,17 +129,12 @@ For other encryption types, a different structure might be used, or the encrypti
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a>
-</dt>
-<dt>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
-</dt>
-</dl>
+
  
 
  

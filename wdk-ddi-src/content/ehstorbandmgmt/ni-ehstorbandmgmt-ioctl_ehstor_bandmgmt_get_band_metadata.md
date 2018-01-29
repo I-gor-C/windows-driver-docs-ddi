@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 543EB710-9BF5-428E-B5CE-7088B98586EA
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DXVA_VideoSample32, DXVA_VideoSample32
+ms.keywords : storage.ioctl_ehstor_bandmgmt_get_band_metadata, IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoSample32
 ---
 
@@ -59,11 +63,40 @@ The length of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_get_band_metadata_
 <text></text>
 
 ### Status Block
-I/O Status block
-The <b>Information</b> field contains the number of bytes returned in the output buffer. One of the following values can be returned in the <b>Status</b> field.
+The <b>Information</b> field contains the number of bytes returned in the output buffer. One of the following values can be returned in the <b>Status</b> field. 
+<table>
+<tr>
+<th>Status Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STATUS_SUCCESS</td>
+<td>The metadata was returned in the system buffer.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_DEVICE_REQUEST</td>
+<td>The storage device does not support band management.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_BUFFER_SIZE</td>
+<td>The output buffer size is incorrect.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_PARAMETER</td>
+<td>Information in the input buffer is invalid.</td>
+</tr>
+<tr>
+<td>STATUS_NOT_FOUND</td>
+<td>The band was not found for the selection criteria provided.</td>
+</tr>
+<tr>
+<td>STATUS_IO_DEVICE_ERROR</td>
+<td>Communication failed. The storage device might be incompatible with security protocols. </td>
+</tr>
+</table>
 
-    ## Remarks
-        Authentication for this IOCTL is unnecessary and an authentication key is not included as input.
+## Remarks
+Authentication for this IOCTL is unnecessary and an authentication key is not included as input.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,19 +105,14 @@ The <b>Information</b> field contains the number of bytes returned in the output
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
-</dt>
-<dt>
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_security_info.md">BAND_SECURITY_INFO</a>
-</dt>
-<dt>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
+
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_create_band_parameters.md">CREATE_BAND_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

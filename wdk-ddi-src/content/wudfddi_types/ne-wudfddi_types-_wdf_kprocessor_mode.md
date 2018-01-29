@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b50be4c2-4575-42b9-953d-9ddb3c3e696c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_KPROCESSOR_MODE, *PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE
+ms.keywords : wudfddi_types/WdfKernelMode, WdfKernelMode, wudfddi_types/WDF_KPROCESSOR_MODE, _WDF_KPROCESSOR_MODE, WdfKProcessorModeInvalid, WdfUserMode, wudfddi_types/WdfUserMode, WDF_KPROCESSOR_MODE enumeration, WdfKProcessorModeMaximum, wudfddi_types/PWDF_KPROCESSOR_MODE, umdf.wdf_kprocessor_mode, wdf.wdf_kprocessor_mode, PWDF_KPROCESSOR_MODE enumeration pointer, wudfddi_types/WdfKProcessorModeMaximum, umdfstructs_581a9b17-c059-4dc8-9784-8dce0d6a4e7d.xml, *PWDF_KPROCESSOR_MODE, PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE, wudfddi_types/WdfKProcessorModeInvalid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : WDF_KPROCESSOR_MODE
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE"
 req.product : Windows 10 or later.
 ---
@@ -89,11 +93,8 @@ The <b>WDF_KPROCESSOR_MODE</b> enumeration type is return type for <a href="http
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
-</dt>
-</dl>
+
  
 
  

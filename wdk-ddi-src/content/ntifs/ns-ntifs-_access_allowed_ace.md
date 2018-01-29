@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 20373863-0850-4ccf-b94a-7d252ad15d20
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _ACCESS_ALLOWED_ACE, ACCESS_ALLOWED_ACE, *PACCESS_ALLOWED_ACE
+ms.keywords : securitystructures_2dd3ec4a-0dc9-4268-8968-1a284b7124e6.xml, PACCESS_ALLOWED_ACE, _ACCESS_ALLOWED_ACE, ntifs/ACCESS_ALLOWED_ACE, ntifs/PACCESS_ALLOWED_ACE, ACCESS_ALLOWED_ACE structure [Installable File System Drivers], ACCESS_ALLOWED_ACE, ifsk.access_allowed_ace, PACCESS_ALLOWED_ACE structure pointer [Installable File System Drivers], *PACCESS_ALLOWED_ACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACCESS_ALLOWED_ACE
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ACCESS_ALLOWED_ACE
 ---
 
@@ -48,21 +52,21 @@ typedef struct _ACCESS_ALLOWED_ACE {
 
 ## Members
 
-        
-            `Header`
 
-            Specifies an ACE_HEADER structure.
-        
-            `Mask`
+`Header`
 
-            ACCESS_MASK structure that specifies the access rights granted by this ACE.
-        
-            `SidStart`
+Specifies an ACE_HEADER structure.
 
-            Specifies a SID. The access rights specified by the <b>Mask</b> member are granted to any subject possessing an enabled SID matching this member.
+`Mask`
 
-    ## Remarks
-        This structure must be aligned on a 32-bit boundary.
+ACCESS_MASK structure that specifies the access rights granted by this ACE.
+
+`SidStart`
+
+Specifies a SID. The access rights specified by the <b>Mask</b> member are granted to any subject possessing an enabled SID matching this member.
+
+## Remarks
+This structure must be aligned on a 32-bit boundary.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,37 +76,26 @@ typedef struct _ACCESS_ALLOWED_ACE {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_access_denied_ace.md">ACCESS_DENIED_ACE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_ace_header.md">ACE_HEADER</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtladdaccessallowedace.md">RtlAddAccessAllowedAce</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_system_alarm_ace.md">SYSTEM_ALARM_ACE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\ntifs\nf-ntifs-rtladdaccessallowedace.md">RtlAddAccessAllowedAce</a>
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+<a href="..\ntifs\ns-ntifs-_access_denied_ace.md">ACCESS_DENIED_ACE</a>
+
 <a href="..\ntifs\ns-ntifs-_system_audit_ace.md">SYSTEM_AUDIT_ACE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

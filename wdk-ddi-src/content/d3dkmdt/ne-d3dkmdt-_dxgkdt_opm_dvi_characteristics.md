@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4286a059-ef44-4a11-8e8e-ab030583f58d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKDT_OPM_DVI_CHARACTERISTICS, DXGKDT_OPM_DVI_CHARACTERISTICS
+ms.keywords : DXGKDT_OPM_DVI_CHARACTERISTICS enumeration [Display Devices], DXGKDT_OPM_DVI_CHARACTERISTICS, d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG, DmEnums_4bcf670e-2b55-4278-80a4-71c7c820dae6.xml, DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG, _DXGKDT_OPM_DVI_CHARACTERISTICS, display.dxgkdt_opm_dvi_characteristics, DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE, d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE, d3dkmdt/DXGKDT_OPM_DVI_CHARACTERISTICS, d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0, DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKDT_OPM_DVI_CHARACTERISTICS
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKDT_OPM_DVI_CHARACTERISTICS
 ---
 
@@ -80,11 +84,8 @@ The DXGKMDT_OPM_GET_DVI_CHARACTERISTICS GUID is used in a call to the display mi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-</dt>
-</dl>
+
  
 
  

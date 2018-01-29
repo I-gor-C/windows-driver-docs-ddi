@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : C42174FE-202F-405D-840B-8613762F43AC
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+ms.keywords : hid.evtvhfasyncoperation, EvtVhfAsyncOperation callback function [Human Input Devices], EvtVhfAsyncOperation, EVT_VHF_ASYNC_OPERATION, EVT_VHF_ASYNC_OPERATION, vhf/EvtVhfAsyncOperation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EvtVhfAsyncOperation
-req.alt-loc : vhf.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -79,8 +83,7 @@ This callback function does not return a value.
 ## Remarks
 
 There are four types of asynchronous operations that your HID source driver can support: <b>GetFeature</b>, <b>SetFeature</b>, <b>WriteReport</b>, <b>GetInputReport</b>. 
-
-To support such an operation, the HID source driver must implement an <i>EvtVhfAsyncOperation</i> callback function and register it with the Virtual HID Framework (VHF) in the driver's call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> function after calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.  For example, for <b>GetFeature</b>, the driver must implement  <i>EvtVhfAsyncOperation</i> and set the <b>EvtVhfAsyncOperationGetFeature</b> member of the <a href="..\vhf\ns-vhf-_vhf_config.md">VHF_CONFIG</a> to a function pointer of the implemented function.
+<div class="alert"><b>Note</b>  Those operations are analogous to <a href="..\hidclass\ni-hidclass-ioctl_hid_get_feature.md">IOCTL_HID_GET_FEATURE</a>, <a href="..\hidclass\ni-hidclass-ioctl_hid_set_feature.md">IOCTL_HID_SET_FEATURE</a>, <a href="..\hidport\ni-hidport-ioctl_hid_write_report.md">IOCTL_HID_WRITE_REPORT</a>, <a href="..\hidclass\ni-hidclass-ioctl_hid_get_input_report.md">IOCTL_HID_GET_INPUT_REPORT</a> requests that a HID transport minidriver implements.</div><div> </div>To support such an operation, the HID source driver must implement an <i>EvtVhfAsyncOperation</i> callback function and register it with the Virtual HID Framework (VHF) in the driver's call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> function after calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.  For example, for <b>GetFeature</b>, the driver must implement  <i>EvtVhfAsyncOperation</i> and set the <b>EvtVhfAsyncOperationGetFeature</b> member of the <a href="..\vhf\ns-vhf-_vhf_config.md">VHF_CONFIG</a> to a function pointer of the implemented function.
 
 When VHF gets a request that sets or queries a HID Report, VHF invokes the previously-registered <i>EvtVhfAsyncOperation</i> callback function and an asynchronous operation starts. Each operation is identified by a VHFOPERATIONHANDLE handle that is set by VHF. If the driver specified a non-zero value in the <b>OperationContextSize</b> member of the <a href="..\vhf\ns-vhf-_vhf_config.md">VHF_CONFIG</a> during initialization, VHF allocates a buffer of that size and passes a pointer to that buffer  in the <i>VhfOperationContext</i> parameter when it invokes  <i>EvtVhfAsyncOperation</i>. 
 
@@ -102,11 +105,8 @@ When the operation is complete, HID source calls <a href="..\vhf\nf-vhf-vhfasync
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
-</dt>
-</dl>
+
  
 
  

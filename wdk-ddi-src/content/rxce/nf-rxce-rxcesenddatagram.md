@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9cb714d5-92f6-481d-bc5e-5fa05b6a0938
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeSendDatagram
+ms.keywords : rxref_dc97dbe7-c676-4b1f-8aee-7dbc7cfbc5e3.xml, rxce/RxCeSendDatagram, RxCeSendDatagram, ifsk.rxcesenddatagram, RxCeSendDatagram function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeSendDatagram
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -57,7 +61,7 @@ NTSTATUS RxCeSendDatagram(
 
 `hAddress`
 
-
+TBD
 
 `pConnectionInformation`
 
@@ -65,7 +69,7 @@ A pointer to connection information that contains the remote address.
 
 `SendOptions`
 
-
+TBD
 
 `pMdl`
 
@@ -83,12 +87,34 @@ The context passed back to the caller during <b>SendCompletion</b> for asynchron
 ## Return Value
 
 <b>RxCeSendDatagram</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The allocation of nonpaged pool memory needed by this routine failed. 
+</dl>
+</td>
+<td width="60%">
+The allocation of nonpaged pool memory needed by this routine failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid length was passed in the <i>SendLength</i> parameter based on the <i>Options</i> specified.
+</dl>
+</td>
+<td width="60%">
+An invalid length was passed in the <i>SendLength</i> parameter based on the <i>Options</i> specified.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -116,17 +142,12 @@ Note that the synchronous <i>Option</i> is disregarded for sending datagrams bec
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-</dt>
-<dt>
-<a href="..\rxce\nf-rxce-rxcesend.md">RxCeSend</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\rxce\nf-rxce-rxcesend.md">RxCeSend</a>
+
  
 
  

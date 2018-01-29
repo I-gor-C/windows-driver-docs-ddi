@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 725ede16-5fc6-4465-bcdc-da7702779d68
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcFastCopyRead
+ms.keywords : CcFastCopyRead, ccref_7198ef60-5199-4597-9809-ddacc59e6223.xml, CcFastCopyRead routine [Installable File System Drivers], ifsk.ccfastcopyread, ntifs/CcFastCopyRead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcFastCopyRead
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -85,14 +89,20 @@ None
 ## Remarks
 
 <b>CcFastCopyRead</b> is a faster version of <a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>. It differs from <b>CcCopyRead</b> in the following respects:
-
+<ul>
+<li>
 <i>FileOffset</i> is a ULONG, not a PLARGE_INTEGER.
 
+</li>
+<li>
 There is no <i>Wait</i> parameter. The caller must be able to enter a wait state until all the data has been copied.
 
+</li>
+<li>
 <b>CcFastCopyRead</b> does not return a BOOLEAN to indicate whether the read operation was successful.
 
-<i>FileOffset</i> plus <i>Length</i> must be less than or equal to the size of the cached file, or an assertion failure will occur.
+</li>
+</ul><i>FileOffset</i> plus <i>Length</i> must be less than or equal to the size of the cached file, or an assertion failure will occur.
 
 If any failure occurs, <b>CcFastCopyRead</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcFastCopyRead</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcFastCopyRead</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcFastCopyRead</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
@@ -112,26 +122,18 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>
+
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
+
  
 
  

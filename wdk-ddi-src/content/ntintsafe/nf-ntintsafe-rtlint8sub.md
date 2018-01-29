@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3648668C-65CD-45F9-80E0-490AE2FE405E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlInt8Sub
+ms.keywords : RtlInt8Sub function [Kernel-Mode Driver Architecture], RtlInt8Sub, ntintsafe/RtlInt8Sub, kernel.rtlint8sub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlInt8Sub
-req.alt-loc : Ntintsafe.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
@@ -69,7 +73,7 @@ None
 
 ## Remarks
 
-This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>
+This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 ## Requirements
 | &nbsp; | &nbsp; |

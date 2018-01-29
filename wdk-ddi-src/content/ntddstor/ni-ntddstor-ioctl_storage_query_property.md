@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b68c5971-6d09-49a8-873d-8736068f6003
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_query_property, IOCTL_STORAGE_QUERY_PROPERTY control code [Storage Devices], IOCTL_STORAGE_QUERY_PROPERTY, ntddstor/IOCTL_STORAGE_QUERY_PROPERTY, k307_1ee2fd05-4e88-47ef-8ed5-0553bcccc0d7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_QUERY_PROPERTY
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_QUERY_PROPERTY IOCTL
-A driver can use <b>IOCTL_STORAGE_QUERY_PROPERTY</b> to return properties of a storage device or adapter. The request indicates the kind of information to retrieve, such as inquiry data for a device or capabilities and limitations of an adapter. <b>IOCTL_STORAGE_QUERY_PROPERTY</b> can also be used to determine whether the port driver supports a particular property or which fields in the property descriptor can be modified with a subsequent change-property request. 
-
-
-
 A driver can use <b>IOCTL_STORAGE_QUERY_PROPERTY</b> to return properties of a storage device or adapter. The request indicates the kind of information to retrieve, such as inquiry data for a device or capabilities and limitations of an adapter. <b>IOCTL_STORAGE_QUERY_PROPERTY</b> can also be used to determine whether the port driver supports a particular property or which fields in the property descriptor can be modified with a subsequent change-property request.
 
 ### Major Code
@@ -71,7 +71,6 @@ Cast the structure returned to a <a href="..\ntddstor\ns-ntddstor-_storage_descr
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INVALID_DEVICE_REQUEST, STATUS_INVALID_PARAMETER, or STATUS_NOT_SUPPORTED.
 
 
@@ -82,19 +81,14 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddstor\ns-ntddstor-_storage_descriptor_header.md">STORAGE_DESCRIPTOR_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/198E7A54-5AE3-4C6E-9E66-17818B999599">STORAGE_RPMB_DATA_FRAME</a>
-</dt>
-</dl>
+
+<a href="..\ntddstor\ns-ntddstor-_storage_descriptor_header.md">STORAGE_DESCRIPTOR_HEADER</a>
+
  
 
  

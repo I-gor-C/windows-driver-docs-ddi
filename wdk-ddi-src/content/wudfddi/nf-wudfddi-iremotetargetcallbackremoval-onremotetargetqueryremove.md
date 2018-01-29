@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 10a9510a-a11c-46fa-adb8-b122f6c571f4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove, OnRemoteTargetQueryRemove
+ms.keywords : IRemoteTargetCallbackRemoval interface, OnRemoteTargetQueryRemove method, wdf.iremotetargetcallbackremoval_onremotetargetqueryremove, UMDFIoTargetObjectRef_7cdc408d-7527-4af9-9fef-d8ccb9c1d4c3.xml, OnRemoteTargetQueryRemove, OnRemoteTargetQueryRemove method, IRemoteTargetCallbackRemoval, OnRemoteTargetQueryRemove method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove, umdf.iremotetargetcallbackremoval_onremotetargetqueryremove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IRemoteTargetCallbackRemoval.OnRemoteTargetQueryRemove
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -63,14 +67,20 @@ If the driver determines that the device can be stopped and removed, the <b>OnRe
 ## Remarks
 
 If your driver provides an <b>OnRemoteTargetQueryRemove</b> event callback function, the callback function should determine if the operating system should allow removal of the device. If the driver determines that the device can be removed, it should do the following:
-
+<ol>
+<li>
 Do any driver-specific actions needed to stop I/O to the remote target.
 
+</li>
+<li>
 Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560259">IWDFRemoteTarget::CloseForQueryRemove</a>.
 
+</li>
+<li>
 Return <b>TRUE</b> to indicate that the removal can occur. 
 
-If the driver determines that the device should not be removed, the callback function must return <b>FALSE</b>. Typically, drivers should avoid returning <b>FALSE</b>, because a <b>FALSE</b> return value can cause Windows to restart.
+</li>
+</ol>If the driver determines that the device should not be removed, the callback function must return <b>FALSE</b>. Typically, drivers should avoid returning <b>FALSE</b>, because a <b>FALSE</b> return value can cause Windows to restart.
 
 If the driver does not provide this callback function, the framework calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff560259">IWDFRemoteTarget::CloseForQueryRemove</a> for the driver. In other words, the framework always allows the device to be removed unless the driver provides an <b>OnRemoteTargetQueryRemove</b> event callback function.
 
@@ -90,17 +100,12 @@ For more information about the <b>OnRemoteTargetQueryRemove</b> event callback f
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556899">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556899">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled</a>
+
  
 
  

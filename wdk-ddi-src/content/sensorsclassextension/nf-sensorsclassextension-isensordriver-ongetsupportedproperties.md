@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 8712fe85-0af1-4552-9351-aca4fe5430d1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnGetSupportedProperties, OnGetSupportedProperties
+ms.keywords : OnGetSupportedProperties, ISensorDriver::OnGetSupportedProperties, sensors.isensordriver_ongetsupportedproperties, OnGetSupportedProperties method [Sensor Devices], ISensorDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OnGetSupportedProperties
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,7 @@ Properties describe the sensor device, as opposed to data fields, which contain 
 
 Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> object returned in this collection must contain <b>PROPERTYKEY</b>s for the  required properties, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a> reference section.
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> is documented in Windows Portable Devices.</p>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> is documented in Windows Portable Devices.
 
 ## Requirements
 | &nbsp; | &nbsp; |

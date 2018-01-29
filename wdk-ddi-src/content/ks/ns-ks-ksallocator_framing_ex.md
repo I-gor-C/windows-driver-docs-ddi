@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 39101009-ba03-472b-8664-d00c7a5cd335
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX, *PKSALLOCATOR_FRAMING_EX
+ms.keywords : ks/PKSALLOCATOR_FRAMING_EX, PKSALLOCATOR_FRAMING_EX structure pointer [Streaming Media Devices], ks/KSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX, stream.ksallocator_framing_ex, *PKSALLOCATOR_FRAMING_EX, PKSALLOCATOR_FRAMING_EX, ks-struct_d2aa8aab-1778-4383-b524-d52e4dd6c4c2.xml, KSALLOCATOR_FRAMING_EX structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSALLOCATOR_FRAMING_EX
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSALLOCATOR_FRAMING_EX, *PKSALLOCATOR_FRAMING_EX
 ---
 
@@ -50,31 +54,39 @@ typedef struct {
 
 ## Members
 
-        
-            `CountItems`
 
-            Specifies the number of framing items that are present in the <b>FramingItem</b> array.
-        
-            `FramingItem`
+`CountItems`
 
-            An array of <a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a> structures specifying the actual framing items.
-        
-            `OutputCompression`
+Specifies the number of framing items that are present in the <b>FramingItem</b> array.
 
-            Points to a structure of type <a href="..\ks\ns-ks-ks_compression.md">KS_COMPRESSION</a> that defines the frame ratio for transforms that change the size of a frame.
-        
-            `PinFlags`
+`FramingItem`
 
-            Reserved, set to zero.
-        
-            `PinWeight`
+An array of <a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a> structures specifying the actual framing items.
 
-            This pin framing's weight graph-wide. Reserved, set to zero.
+`OutputCompression`
 
-    ## Remarks
-        A minidriver can also use DECLARE_SIMPLE_FRAMING_EX to declare an extended framing structure in line with the original structure. This macro is defined in <i>Ks.h</i> as follows:
+Points to a structure of type <a href="..\ks\ns-ks-ks_compression.md">KS_COMPRESSION</a> that defines the frame ratio for transforms that change the size of a frame.
 
-DECLARE_SIMPLE_FRAMING_EX declares a KSALLOCATOR_FRAMING_EX structure called <b>FramingExName</b> with the specified memory type (often either STATIC_KS_TYPE_DONT_CARE or one of the kernel paged or nonpaged GUIDs). The <b>Frames</b> and <b>Alignment</b> fields of the macro correspond to the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>. <b>MinFrameSize</b> and <b>MaxFrameSize</b> ensure that frames are within a specific size range. Flags corresponds to the <b>OptionsFlags</b> and <b>RequirementsFlags</b> in <b>KSALLOCATOR_FRAMING</b>.
+`PinFlags`
+
+Reserved, set to zero.
+
+`PinWeight`
+
+This pin framing's weight graph-wide. Reserved, set to zero.
+
+## Remarks
+A minidriver can also use DECLARE_SIMPLE_FRAMING_EX to declare an extended framing structure in line with the original structure. This macro is defined in <i>Ks.h</i> as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define DECLARE_SIMPLE_FRAMING_EX(FramingExName, MemoryType, Flags, Frames, Alignment, MinFrameSize, MaxFrameSize) const KSALLOCATOR_FRAMING_EX FramingExName</pre>
+</td>
+</tr>
+</table></span></div>DECLARE_SIMPLE_FRAMING_EX declares a KSALLOCATOR_FRAMING_EX structure called <b>FramingExName</b> with the specified memory type (often either STATIC_KS_TYPE_DONT_CARE or one of the kernel paged or nonpaged GUIDs). The <b>Frames</b> and <b>Alignment</b> fields of the macro correspond to the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>. <b>MinFrameSize</b> and <b>MaxFrameSize</b> ensure that frames are within a specific size range. Flags corresponds to the <b>OptionsFlags</b> and <b>RequirementsFlags</b> in <b>KSALLOCATOR_FRAMING</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,25 +96,18 @@ DECLARE_SIMPLE_FRAMING_EX declares a KSALLOCATOR_FRAMING_EX structure called <b>
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ks_compression.md">KS_COMPRESSION</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
+
 <a href="..\ks\ns-ks-ks_framing_range.md">KS_FRAMING_RANGE</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ks_framing_range_weighted.md">KS_FRAMING_RANGE_WEIGHTED</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a>
+
  
 
  

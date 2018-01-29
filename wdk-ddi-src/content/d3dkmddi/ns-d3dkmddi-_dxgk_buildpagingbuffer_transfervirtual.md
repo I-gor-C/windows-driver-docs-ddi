@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D4427E44-204F-490C-9EE7-BBC4906E5920
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL, DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL
+ms.keywords : display.dxgk_buildpagingbuffer_transfervirtual, d3dkmddi/DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL, DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL, DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL structure [Display Devices], _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL
 ---
 
@@ -54,45 +58,43 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL {
 
 ## Members
 
-        
-            `AllocationOffsetInBytes`
 
-            The offset in bytes from the start of the allocation being transferred. The offset should not be added to <b>SourceVirtualAddress</b> or <b>DesinationVirtualAddress</b>.
-        
-            `DestinationPageTable`
+`AllocationOffsetInBytes`
 
-            The GPU virtual address of the page table that  is used to map the <b>DestinationVirtualAddress</b> address. The address is valid only when the <b>DXGK_GPUMMUCAPS.LegacyBehaviors.SourcePageTableVaInTransfer</b> cap is set.
-        
-            `DestinationVirtualAddress`
+The offset in bytes from the start of the allocation being transferred. The offset should not be added to <b>SourceVirtualAddress</b> or <b>DesinationVirtualAddress</b>.
 
-            The virtual address of the destination in the context of the paging process.
-        
-            `Flags`
+`DestinationPageTable`
 
-            The <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_transfervirtualflags.md">DXGK_TRANSFERVIRTUALFLAGS</a> structure describing the operation.
-        
-            `hAllocation`
+The GPU virtual address of the page table that  is used to map the <b>DestinationVirtualAddress</b> address. The address is valid only when the <b>DXGK_GPUMMUCAPS.LegacyBehaviors.SourcePageTableVaInTransfer</b> cap is set.
 
-            Kernel mode driver handle of the transferred allocation content. The handle is returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>. The allocation properties are needed to perform special transfers (as swizzle, de-swizzle, etc.).
-        
-            `SourcePageTable`
+`DestinationVirtualAddress`
 
-            The GPU virtual address of the page table that is used to map the <b>SourceVirtualAddress</b> address. 
+The virtual address of the destination in the context of the paging process.
 
-<div class="alert"><b>Note</b>  The address is valid only when the <b>DXGK_GPUMMUCAPS.LegacyBehaviors.SourcePageTableVaInTransfer</b> cap is set.</div>
-<div> </div>
-        
-            `SourceVirtualAddress`
+`Flags`
 
-            The virtual address of the source in the context of the paging process.
-        
-            `TransferDirection`
+The <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_transfervirtualflags.md">DXGK_TRANSFERVIRTUALFLAGS</a> structure describing the operation.
 
-            The <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_memory_transfer_direction.md">DXGK_MEMORY_TRANSFER_DIRECTION</a> structure describing the operation.
-        
-            `TransferSizeInBytes`
+`hAllocation`
 
-            The number of bytes to transfer.
+Kernel mode driver handle of the transferred allocation content. The handle is returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>. The allocation properties are needed to perform special transfers (as swizzle, de-swizzle, etc.).
+
+`SourcePageTable`
+
+The GPU virtual address of the page table that is used to map the <b>SourceVirtualAddress</b> address. 
+<div class="alert"><b>Note</b>  The address is valid only when the <b>DXGK_GPUMMUCAPS.LegacyBehaviors.SourcePageTableVaInTransfer</b> cap is set.</div><div> </div>
+
+`SourceVirtualAddress`
+
+The virtual address of the source in the context of the paging process.
+
+`TransferDirection`
+
+The <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_memory_transfer_direction.md">DXGK_MEMORY_TRANSFER_DIRECTION</a> structure describing the operation.
+
+`TransferSizeInBytes`
+
+The number of bytes to transfer.
 
 
 ## Requirements
@@ -103,22 +105,16 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_memory_transfer_direction.md">DXGK_MEMORY_TRANSFER_DIRECTION</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_transfervirtualflags.md">DXGK_TRANSFERVIRTUALFLAGS</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_memory_transfer_direction.md">DXGK_MEMORY_TRANSFER_DIRECTION</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_transfervirtualflags.md">DXGK_TRANSFERVIRTUALFLAGS</a>
+
  
 
  

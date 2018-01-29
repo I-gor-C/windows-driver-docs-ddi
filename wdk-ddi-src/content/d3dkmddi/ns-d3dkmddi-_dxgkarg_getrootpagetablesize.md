@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 31CB33F9-87E8-419D-AF35-E7F731661DD5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_GETROOTPAGETABLESIZE, DXGKARG_GETROOTPAGETABLESIZE, *INOUT_PDXGKARG_GETROOTPAGETABLESIZE
+ms.keywords : DXGKARG_GETROOTPAGETABLESIZE, _DXGKARG_GETROOTPAGETABLESIZE, DXGKARG_GETROOTPAGETABLESIZE structure [Display Devices], *INOUT_PDXGKARG_GETROOTPAGETABLESIZE, display.dxgkarg_getrootpagetablesize, d3dkmddi/DXGKARG_GETROOTPAGETABLESIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_GETROOTPAGETABLESIZE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_GETROOTPAGETABLESIZE
 ---
 
@@ -47,16 +51,16 @@ typedef struct _DXGKARG_GETROOTPAGETABLESIZE {
 
 ## Members
 
-        
-            `NumberOfPte`
 
-            [in] A pointer to the number of page table entries which are required to be in the root page table.
+`NumberOfPte`
+
+[in] A pointer to the number of page table entries which are required to be in the root page table.
 
 [out] The actual number of page table entries in the page table with the returned size.
-        
-            `PhysicalAdapterIndex`
 
-            Physical adapter index (zero for non-linked display adapter configurations).
+`PhysicalAdapterIndex`
+
+Physical adapter index (zero for non-linked display adapter configurations).
 
 
 ## Requirements
@@ -67,13 +71,10 @@ typedef struct _DXGKARG_GETROOTPAGETABLESIZE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getrootpagetablesize.md">DxgkDdiGetRootPageTableSize</a>
-</dt>
-</dl>
+
  
 
  

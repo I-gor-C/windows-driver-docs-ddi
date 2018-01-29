@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 825AA3FC-1D2E-4D71-8F21-C89A249B3F1A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG
+ms.keywords : ucmtypes/UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG, UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG function [Buses], buses.ucm_pd_request_data_object_init_ulong, UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG
-req.alt-loc : Ucmtypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_TYPEC_PARTNER
 req.product : Windows 10 or later.
 ---
@@ -52,7 +56,7 @@ void UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG(
 
 `Rdo`
 
-
+TBD
 
 `UlongInLittleEndian`
 
@@ -81,11 +85,8 @@ For information about Request Data Objects, see the Power Delivery specification
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_request_data_object.md">UCM_PD_REQUEST_DATA_OBJECT</a>
-</dt>
-</dl>
+
  
 
  

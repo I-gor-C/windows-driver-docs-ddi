@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e54d0e3f-4e46-43b5-8338-b6e2f2a14c56
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlOemStringToUnicodeSize
+ms.keywords : ifsk.rtloemstringtounicodesize, ntifs/RtlOemStringToUnicodeSize, RtlOemStringToUnicodeSize, RtlOemStringToUnicodeSize routine [Installable File System Drivers], rtlref_5f048569-d84e-43ee-8d51-1281f18c7ddf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlOemStringToUnicodeSize
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ ULONG RtlOemStringToUnicodeSize(
 
 `STRING`
 
-
+TBD
 
 
 ## Return Value
@@ -77,17 +81,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodesize.md">RtlOemStringToCountedUnicodeSize</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtloemstringtounicodestring.md">RtlOemStringToUnicodeString</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodesize.md">RtlOemStringToCountedUnicodeSize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BAFC7DD1-56F8-47CE-8914-54531BBC3165
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT
+ms.keywords : display.dxgkarg_checkmultiplaneoverlaysupport, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT structure [Display Devices], d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT structure pointer [Display Devices], _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, d3dkmddi/PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 
 ## Members
 
-        
-            `PlaneCount`
 
-            The number of overlay planes that the hardware supports.
-        
-            `pPlanes`
+`PlaneCount`
 
-            A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_check_multiplane_overlay_support_plane.md">DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE</a> structure that specifies support attributes that the hardware provides for multiplane overlays.
-        
-            `ReturnInfo`
+The number of overlay planes that the hardware supports.
 
-            Specifies limitations on hardware support of multiplane overlays.
-        
-            `Supported`
+`pPlanes`
 
-            <b>TRUE</b> if the hardware supports multiplane overlays, otherwise <b>FALSE</b>.
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_check_multiplane_overlay_support_plane.md">DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE</a> structure that specifies support attributes that the hardware provides for multiplane overlays.
+
+`ReturnInfo`
+
+Specifies limitations on hardware support of multiplane overlays.
+
+`Supported`
+
+<b>TRUE</b> if the hardware supports multiplane overlays, otherwise <b>FALSE</b>.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_check_multiplane_overlay_support_plane.md">DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport.md">DxgkDdiCheckMultiPlaneOverlaySupport</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_check_multiplane_overlay_support_plane.md">DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE</a>
+
  
 
  

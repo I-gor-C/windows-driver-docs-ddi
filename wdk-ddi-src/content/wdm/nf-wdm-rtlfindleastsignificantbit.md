@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fb260c9b-dece-49ef-9701-d5198b8a08fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlFindLeastSignificantBit
+ms.keywords : RtlFindLeastSignificantBit, kernel.rtlfindleastsignificantbit, wdm/RtlFindLeastSignificantBit, RtlFindLeastSignificantBit routine [Kernel-Mode Driver Architecture], k109_c7ab87ad-4b9e-40f5-87fb-25ced2ec0dd8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlFindLeastSignificantBit
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -73,11 +77,8 @@ The zero-based bit position of the least significant nonzero bit, or -1 if every
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlfindmostsignificantbit.md">RtlFindMostSignificantBit</a>
-</dt>
-</dl>
+
  
 
  

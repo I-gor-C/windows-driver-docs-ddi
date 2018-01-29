@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BB3DD49B-7DAB-48AC-BC63-595A184374AB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_FREEGPUVIRTUALADDRESS, D3DKMT_FREEGPUVIRTUALADDRESS
+ms.keywords : _D3DKMT_FREEGPUVIRTUALADDRESS, D3DKMT_FREEGPUVIRTUALADDRESS structure [Display Devices], display.d3dkmt_freegpuvirtualaddress, d3dkmthk/D3DKMT_FREEGPUVIRTUALADDRESS, D3DKMT_FREEGPUVIRTUALADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_FREEGPUVIRTUALADDRESS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_FREEGPUVIRTUALADDRESS
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_FREEGPUVIRTUALADDRESS {
 
 ## Members
 
-        
-            `BaseAddress`
 
-            Specifies the base virtual address, in bytes, of the range to free. Must be aligned to 4 KB.
-        
-            `hAdapter`
+`BaseAddress`
 
-            Specifies the handle to the adapter.
-        
-            `Size`
+Specifies the base virtual address, in bytes, of the range to free. Must be aligned to 4 KB.
 
-            Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
+`hAdapter`
+
+Specifies the handle to the adapter.
+
+`Size`
+
+Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_FREEGPUVIRTUALADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtfreegpuvirtualaddress.md">FreeGpuVirtualAddress</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fd5f29f7-e9c6-48c4-8704-5db37b8c6337
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestGetInformation
+ms.keywords : wdfrequest/WdfRequestGetInformation, WdfRequestGetInformation, kmdf.wdfrequestgetinformation, wdf.wdfrequestgetinformation, WdfRequestGetInformation method, PFN_WDFREQUESTGETINFORMATION, DFRequestObjectRef_ea947de9-aea4-4e66-8686-f4ca5a1385c4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestGetInformation
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ If your driver calls <b>WdfRequestGetInformation</b> after it calls <a href="..\
 
 For more information about <b>WdfRequestGetInformation</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
-The following code example sends an I/O request to an I/O target and then obtains status information that the I/O target provided.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -86,14 +88,10 @@ The following code example sends an I/O request to an I/O target and then obtain
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetinformation.md">WdfRequestSetInformation</a>
-</dt>
-</dl>
+
  
 
  

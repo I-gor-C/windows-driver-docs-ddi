@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07ad9fdb-16f0-4752-9b35-e69d6a7b8815
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
+ms.keywords : display.d3d11ddiarg_creategeometryshaderwithstreamoutput, D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT structure [Display Devices], d3d10umddi/D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, UMDisplayDriver_Dx11param_Structs_6b81cccd-92f9-4135-8bcc-d523b514c45c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT is 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
 ---
 
@@ -51,30 +55,30 @@ typedef struct D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT {
 
 ## Members
 
-        
-            `BufferStridesInBytes`
 
-            [in] An array of strides (bytes from one vertex to the next vertex).
-        
-            `NumEntries`
+`BufferStridesInBytes`
 
-            [in] The number of elements in that array that the <b>pOutputStreamDecl</b> member specifies.
-        
-            `NumStrides`
+[in] An array of strides (bytes from one vertex to the next vertex).
 
-            [in] The number of strides in the array that the <b>BufferStridesInBytes</b> member specifies.
-        
-            `pOutputStreamDecl`
+`NumEntries`
 
-            [in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_stream_output_declaration_entry.md">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader.
-        
-            `pShaderCode`
+[in] The number of elements in that array that the <b>pOutputStreamDecl</b> member specifies.
 
-            [in] An array of CONST UINT tokens that make up the geometry shader code.
-        
-            `RasterizedStream`
+`NumStrides`
 
-            [in] A value that identifies the rasterized stream.
+[in] The number of strides in the array that the <b>BufferStridesInBytes</b> member specifies.
+
+`pOutputStreamDecl`
+
+[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_stream_output_declaration_entry.md">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader.
+
+`pShaderCode`
+
+[in] An array of CONST UINT tokens that make up the geometry shader code.
+
+`RasterizedStream`
+
+[in] A value that identifies the rasterized stream.
 
 
 ## Requirements
@@ -85,19 +89,14 @@ typedef struct D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivategeometryshaderwithstreamoutput.md">CalcPrivateGeometryShaderWithStreamOutput</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_creategeometryshaderwithstreamoutput.md">CreateGeometryShaderWithStreamOutput</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_stream_output_declaration_entry.md">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a>
-</dt>
-</dl>
+
  
 
  

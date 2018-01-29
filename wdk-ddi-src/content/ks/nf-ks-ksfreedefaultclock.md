@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e2fc87c9-e48f-4e18-ae1b-52a7cc701e91
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFreeDefaultClock
+ms.keywords : stream.ksfreedefaultclock, KsFreeDefaultClock, ksfunc_30a51e64-775e-4412-9a8c-b186e6caf932.xml, KsFreeDefaultClock function [Streaming Media Devices], ks/KsFreeDefaultClock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFreeDefaultClock
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

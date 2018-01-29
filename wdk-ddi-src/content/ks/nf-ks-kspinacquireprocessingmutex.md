@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ce1fb470-6fee-4de0-a5db-15875a14e581
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinAcquireProcessingMutex
+ms.keywords : KsPinAcquireProcessingMutex, KsPinAcquireProcessingMutex function [Streaming Media Devices], ks/KsPinAcquireProcessingMutex, stream.kspinacquireprocessingmutex, avfunc_d06d3037-45b0-4931-86e4-ef7c586bcdf1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinAcquireProcessingMutex
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,20 +79,14 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kspinreleaseprocessingmutex.md">KsPinReleaseProcessingMutex</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspinacquirecontrol.md">KsPinAcquireControl</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
+
 <a href="..\ks\nf-ks-kspinreleasecontrol.md">KsPinReleaseControl</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinreleaseprocessingmutex.md">KsPinReleaseProcessingMutex</a>
+
  
 
  

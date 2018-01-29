@@ -7,8 +7,8 @@ old-location : debugger\idebugeventcallbacks_changesymbolstate.htm
 old-project : debugger
 ms.assetid : 5383bd49-df44-48dd-8385-c782a1b1f80a
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks::ChangeSymbolState, ChangeSymbolState
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugEventCallbacks::ChangeSymbolState, ChangeSymbolState method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_693f0465-088e-4f3d-a8a4-89e8803d0227.xml, IDebugEventCallbacks::ChangeSymbolState, ChangeSymbolState method [Windows Debugging], IDebugEventCallbacks, IDebugEventCallbacks interface [Windows Debugging], ChangeSymbolState method, debugger.idebugeventcallbacks_changesymbolstate, ChangeSymbolState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugEventCallbacks.ChangeSymbolState
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -52,7 +56,6 @@ HRESULT ChangeSymbolState(
 `Flags`
 
 Specifies a bit-set indicating the nature of the change to the symbol state.  The following bit flags might be set.
-
 <table>
 <tr>
 <th>Value</th>
@@ -133,7 +136,7 @@ The return value is ignored by the engine unless it indicates a remote procedure
 
 This method is only called by the engine if the DEBUG_EVENT_CHANGE_SYMBOL_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
-For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. </p>
+For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

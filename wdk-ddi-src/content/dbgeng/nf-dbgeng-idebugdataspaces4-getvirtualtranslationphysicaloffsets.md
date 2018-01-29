@@ -7,8 +7,8 @@ old-location : debugger\getvirtualtranslationphysicaloffsets.htm
 old-project : debugger
 ms.assetid : 40438ee7-2e58-4048-8739-75f21179c22c
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugDataSpaces4, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, dbgeng/IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces_661959c5-a514-4651-8eaa-fd4c4fb94bd7.xml, IDebugDataSpaces3 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces4 interface, debugger.getvirtualtranslationphysicaloffsets, IDebugDataSpaces4 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, dbgeng/IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces2 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces3 interface, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugDataSpaces2.GetVirtualTranslationPhysicalOffsets,IDebugDataSpaces3.GetVirtualTranslationPhysicalOffsets,IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -71,12 +75,34 @@ Receives the number of levels in the paging hierarchy for the specified address.
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_NT(STATUS_NO_PAGEFILE)</b></dt>
-</dl>No physical page containing the specified address could be found.
+</dl>
+</td>
+<td width="60%">
+No physical page containing the specified address could be found.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -86,7 +112,7 @@ Translating a virtual address to a physical address requires Windows  to walk do
 
 The address at the last level of the hierarchy is the physical address corresponding to the specified virtual address.  This is what <a href="https://msdn.microsoft.com/library/windows/hardware/ff560335">VirtualToPhysical</a> would return.
 
-For details on how virtual addresses are translated into physical addresses, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
+For details on how virtual addresses are translated into physical addresses, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.
 
 ## Requirements
 | &nbsp; | &nbsp; |

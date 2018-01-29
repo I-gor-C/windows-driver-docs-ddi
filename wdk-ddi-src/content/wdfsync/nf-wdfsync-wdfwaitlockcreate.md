@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a0ffa493-4490-440b-9f67-426a7b5d4442
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWaitLockCreate
+ms.keywords : wdfsync/WdfWaitLockCreate, WdfWaitLockCreate method, wdf.wdfwaitlockcreate, WdfWaitLockCreate, kmdf.wdfwaitlockcreate, DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, PFN_WDFWAITLOCKCREATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfWaitLockCreate
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheckLock
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -77,8 +81,6 @@ By default, the new wait-lock object's parent is the framework driver object tha
 
 For more information about wait locks, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/synchronization-techniques-for-wdf-drivers">Synchronization Techniques for Framework-Based Drivers</a>.
 
-The following code example initializes a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>, specifies that the wait lock's parent object will be a device object, and calls <b>WdfWaitLockCreate</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,20 +95,14 @@ The following code example initializes a <a href="..\wdfobject\ns-wdfobject-_wdf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-</dt>
-<dt>
-<a href="..\wdfsync\nf-wdfsync-wdfwaitlockacquire.md">WdfWaitLockAcquire</a>
-</dt>
-<dt>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556116">WdfWaitLockRelease</a>
-</dt>
-</dl>
+
+<a href="..\wdfsync\nf-wdfsync-wdfwaitlockacquire.md">WdfWaitLockAcquire</a>
+
  
 
  

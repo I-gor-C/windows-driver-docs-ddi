@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 24e47733-14c2-4d2c-8b0a-8cdfd68c8b3b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ReportDiscoveredTargets2_OUT, ReportDiscoveredTargets2_OUT, *PReportDiscoveredTargets2_OUT
+ms.keywords : PReportDiscoveredTargets2_OUT, PReportDiscoveredTargets2_OUT structure pointer [Storage Devices], _ReportDiscoveredTargets2_OUT, structs-iSCSI_b6c57e31-b994-4873-97e5-87499d4ce120.xml, *PReportDiscoveredTargets2_OUT, storage.reportdiscoveredtargets2_out, ReportDiscoveredTargets2_OUT, ReportDiscoveredTargets2_OUT structure [Storage Devices], iscsifnd/PReportDiscoveredTargets2_OUT, iscsifnd/ReportDiscoveredTargets2_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ReportDiscoveredTargets2_OUT
-req.alt-loc : iscsifnd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ReportDiscoveredTargets2_OUT, *PReportDiscoveredTargets2_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PReportDiscoveredTargets2_OUT, ReportDiscoveredTargets2_OUT"
 ---
 
 # _ReportDiscoveredTargets2_OUT structure
@@ -48,21 +52,21 @@ typedef struct _ReportDiscoveredTargets2_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
-        
-            `TargetCount`
+`Status`
 
-            On output, the number of targets that are discovered.
-        
-            `Targets`
+On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
 
-            On output, an array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget2.md">ISCSI_DiscoveredTarget2</a> structures, which provide information that is related to discovered targets.
+`TargetCount`
 
-    ## Remarks
-        You must implement this method.
+On output, the number of targets that are discovered.
+
+`Targets`
+
+On output, an array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget2.md">ISCSI_DiscoveredTarget2</a> structures, which provide information that is related to discovered targets.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,19 +76,14 @@ typedef struct _ReportDiscoveredTargets2_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsifnd.h (include Iscsifnd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget2.md">ISCSI_DiscoveredTarget2</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
+
+<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget2.md">ISCSI_DiscoveredTarget2</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564051">ReportDiscoveredTargets2</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : print\setcpsuiuserdata.htm
 old-project : print
 ms.assetid : 35119100-adf9-4376-bb1a-7317733fbcc5
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : SetCPSUIUserData
+ms.date : 1/18/2018
+ms.keywords : cpsuifnc_d2f38387-ece5-4894-86d5-0ef66f62a72c.xml, compstui/SetCPSUIUserData, SetCPSUIUserData, print.setcpsuiuserdata, SetCPSUIUserData function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetCPSUIUserData
-req.alt-loc : Compstui.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Compstui.lib
 req.dll : Compstui.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
@@ -68,7 +72,7 @@ The <code>SetCPSUIUserData</code> function should be called only from within a d
 
 A value that is stored by calling <code>SetCPSUIUserData</code> can be later retrieved by calling <a href="..\compstui\nf-compstui-getcpsuiuserdata.md">GetCPSUIUserData</a>.
 
-The handle specified for <i>hDlg</i> must be the handle received as input to the dialog box procedure. (Dialog box procedures are described in the Microsoft Windows SDK documentation.)</p>
+The handle specified for <i>hDlg</i> must be the handle received as input to the dialog box procedure. (Dialog box procedures are described in the Microsoft Windows SDK documentation.)
 
 ## Requirements
 | &nbsp; | &nbsp; |

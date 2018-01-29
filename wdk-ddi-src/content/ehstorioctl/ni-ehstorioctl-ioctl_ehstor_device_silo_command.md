@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3258FA16-E1FE-4CBF-8C87-0C7A8B2A7EBF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PDO_TYPE, PDO_TYPE
+ms.keywords : storage.ioctl_ehstor_device_silo_command, IOCTL_EHSTOR_DEVICE_SILO_COMMAND control code [Storage Devices], IOCTL_EHSTOR_DEVICE_SILO_COMMAND, ehstorioctl/IOCTL_EHSTOR_DEVICE_SILO_COMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_DEVICE_SILO_COMMAND
-req.alt-loc : EhStorIoctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PDO_TYPE
 ---
 
@@ -59,7 +63,6 @@ The length of the buffer.
 <text></text>
 
 ### Status Block
-I/O Status block
 One of the following values may be returned in the Status field:
 
 
@@ -71,8 +74,6 @@ STATUS_SUCCESS - The silo command was successfully issued to the device.
 </dl>
 
 
-STATUS_SUCCESS - The silo command was successfully issued to the device.
-
 
 <dl>
 <dd>
@@ -82,8 +83,6 @@ STATUS_INVALID_BUFFER_SIZE - The input buffer length supplied is of incorrect si
 </dl>
 
 
-STATUS_INVALID_BUFFER_SIZE - The input buffer length supplied is of incorrect size.
-
 
 <dl>
 <dd>
@@ -91,9 +90,6 @@ STATUS_BUFFER_TOO_SMALL - The output buffer length supplied is of insufficient s
 
 </dd>
 </dl>
-
-
-STATUS_BUFFER_TOO_SMALL - The output buffer length supplied is of insufficient size to hold the device response for this silo command.
 
 
 ## Requirements

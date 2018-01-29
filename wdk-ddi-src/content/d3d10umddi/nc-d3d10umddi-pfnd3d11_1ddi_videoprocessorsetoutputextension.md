@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 040aa673-4b80-4e89-a58d-f298936537cd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.videoprocessorsetoutputextension, pfnVideoProcessorSetOutputExtension callback function [Display Devices], pfnVideoProcessorSetOutputExtension, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION, d3d10umddi/pfnVideoProcessorSetOutputExtension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnVideoProcessorSetOutputExtension
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -79,21 +83,59 @@ HRESULT Pfnd3d111DdiVideoprocessorsetoutputextension(
 ## Return Value
 
 <b>VideoProcessorSetOutputExtension</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The private state data was set successfully.
+</dl>
+</td>
+<td width="60%">
+The private state data was set successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
-</dl>The graphics adapter was removed.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was removed.
 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_FAIL</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         The display miniport driver cannot set the requested private state data for the video processor.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         Memory was not available to complete the operation.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -110,11 +152,8 @@ HRESULT Pfnd3d111DdiVideoprocessorsetoutputextension(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7AACFA1A-4B56-4B51-91B6-5FA30918E516
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR, *PDEVICE_WRITE_AGGREGATION_DESCRIPTOR
+ms.keywords : "*PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, PDEVICE_WRITE_AGGREGATION_DESCRIPTOR structure pointer [Storage Devices], DEVICE_WRITE_AGGREGATION_DESCRIPTOR, PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, _DEVICE_WRITE_AGGREGATION_DESCRIPTOR, ntddstor/DEVICE_WRITE_AGGREGATION_DESCRIPTOR, ntddstor/PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure [Storage Devices], storage.device_write_aggregation_descriptor"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 7
 req.target-min-winversvr : Windows Server 2008 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_WRITE_AGGREGATION_DESCRIPTOR
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DEVICE_WRITE_AGGREGATION_DESCRIPTOR, *PDEVICE_WRITE_AGGREGATION_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR"
 ---
 
 # _DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure
@@ -48,18 +52,18 @@ typedef struct _DEVICE_WRITE_AGGREGATION_DESCRIPTOR {
 
 ## Members
 
-        
-            `BenefitsFromWriteAggregation`
 
-            <b>TRUE</b> if the device benefits from write aggregation.
-        
-            `Size`
+`BenefitsFromWriteAggregation`
 
-            Specifies the total size of the descriptor, in bytes.
-        
-            `Version`
+<b>TRUE</b> if the device benefits from write aggregation.
 
-            Contains the size, in bytes, of this structure. The value of this member will change as members are added 
+`Size`
+
+Specifies the total size of the descriptor, in bytes.
+
+`Version`
+
+Contains the size, in bytes, of this structure. The value of this member will change as members are added 
       to the structure.
 
 
@@ -71,13 +75,10 @@ typedef struct _DEVICE_WRITE_AGGREGATION_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-</dt>
-</dl>
+
  
 
  

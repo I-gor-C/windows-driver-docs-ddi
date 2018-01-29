@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cfaa6068-979c-49c3-b671-c51ede023776
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoQueryFileInformation
+ms.keywords : ifsk.ioqueryfileinformation, ioref_7dc69c37-bd12-4857-ae49-69d0d29d8e72.xml, IoQueryFileInformation, ntifs/IoQueryFileInformation, IoQueryFileInformation function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoQueryFileInformation
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,23 +54,23 @@ The <b>IoQueryFileInformation</b> routine is reserved for system use. See <a hre
 
 `FileObject`
 
-
+TBD
 
 `FileInformationClass`
 
-
+TBD
 
 `Length`
 
-
+TBD
 
 `FileInformation`
 
-
+TBD
 
 `ReturnedLength`
 
-
+TBD
 
 
 ## Return Value

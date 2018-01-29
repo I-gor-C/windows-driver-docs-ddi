@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : D7B47E18-038E-41B4-85E5-A48931CDCA89
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_PERFORMANCE_HEADER, *PCDROM_PERFORMANCE_HEADER, CDROM_PERFORMANCE_HEADER
+ms.keywords : PCDROM_PERFORMANCE_HEADER, _CDROM_PERFORMANCE_HEADER, ntddcdrm/CDROM_PERFORMANCE_HEADER, CDROM_PERFORMANCE_HEADER, ntddcdrm/PCDROM_PERFORMANCE_HEADER, storage.cdrom_performance_header, CDROM_PERFORMANCE_HEADER structure [Storage Devices], *PCDROM_PERFORMANCE_HEADER, PCDROM_PERFORMANCE_HEADER structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_PERFORMANCE_HEADER
-req.alt-loc : Ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCDROM_PERFORMANCE_HEADER, CDROM_PERFORMANCE_HEADER"
 ---
 
@@ -51,18 +55,32 @@ typedef struct _CDROM_PERFORMANCE_HEADER {
 
 ## Members
 
-        
-            `DataLength`
 
-            The size of the available data (not just the size of returned data). The size does  not include this <b>Datalength</b> field.
-        
-            `Reserved1`
+`Data`
 
-            Reserved.
-        
-            `Write`
+Contains a list of the following records, depending upon the type of request: <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_nominal_performance_descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>,   
+    <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_exception_performance_descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a>,   
+    <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_write_speed_descriptor.md">CDROM_WRITE_SPEED_DESCRIPTOR</a>.
 
-            Indicates whether the result data is for read or write performance.  If false (0), it indicates that the result data is for read performance. If true (1), it indicates that the result data is for write performance.
+`DataLength`
+
+The size of the available data (not just the size of returned data). The size does  not include this <b>Datalength</b> field.
+
+`Except`
+
+The format of the descriptors that follow the header depend on the value in this field. If false (0), the <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_nominal_performance_descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data. If true (1),  the <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_exception_performance_descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data.
+
+`Reserved1`
+
+Reserved.
+
+`Reserved2`
+
+Reserved.
+
+`Write`
+
+Indicates whether the result data is for read or write performance.  If false (0), it indicates that the result data is for read performance. If true (1), it indicates that the result data is for write performance.
 
 
 ## Requirements
@@ -73,22 +91,16 @@ typedef struct _CDROM_PERFORMANCE_HEADER {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_nominal_performance_descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_exception_performance_descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_write_speed_descriptor.md">CDROM_WRITE_SPEED_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_exception_performance_descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_nominal_performance_descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>
+
  
 
  

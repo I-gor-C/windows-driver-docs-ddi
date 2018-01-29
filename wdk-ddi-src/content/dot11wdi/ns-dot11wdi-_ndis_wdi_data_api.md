@@ -7,8 +7,8 @@ old-location : netvista\ndis_wdi_data_api.htm
 old-project : netvista
 ms.assetid : 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_WDI_DATA_API, NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
+ms.date : 1/18/2018
+ms.keywords : dot11wdi/PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API, dot11wdi/NDIS_WDI_DATA_API, PNDIS_WDI_DATA_API, PNDIS_WDI_DATA_API structure pointer [Network Drivers Starting with Windows Vista], NDIS_WDI_DATA_API structure [Network Drivers Starting with Windows Vista], _NDIS_WDI_DATA_API, netvista.ndis_wdi_data_api
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_WDI_DATA_API
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
 ---
 
@@ -63,18 +67,18 @@ typedef struct _NDIS_WDI_DATA_API {
 
 ## Members
 
-        
-            `AllocateWiFiFrameMetaData`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_allocate_wdi_frame_metadata.md">NdisWdiAllocateWiFiFrameMetaData</a> callback function.
-        
-            `FreeWiFiFrameMetaData`
+`AllocateWiFiFrameMetaData`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_free_wdi_frame_metadata.md">NdisWdiFreeWiFiFrameMetaData</a> callback function.
-        
-            `Header`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_allocate_wdi_frame_metadata.md">NdisWdiAllocateWiFiFrameMetaData</a> callback function.
 
-            The 
+`FreeWiFiFrameMetaData`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_free_wdi_frame_metadata.md">NdisWdiFreeWiFiFrameMetaData</a> callback function.
+
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_WDI_DATA_API structure. Set the 
      <b>Type</b> member of the structure that 
@@ -83,62 +87,66 @@ typedef struct _NDIS_WDI_DATA_API {
 
 To indicate the version of the NDIS_WDI_DATA_API structure, set the 
      <b>Revision</b> member to the following value:
-        
-            `PeerCreateIndication`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_peer_create_ind.md">NdisWdiPeerCreateIndication</a> callback function.
-        
-            `PeerDeleteIndication`
+`PeerCreateIndication`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_peer_delete_ind.md">NdisWdiPeerDeleteIndication</a> callback function.
-        
-            `RxFlushConfirm`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_peer_create_ind.md">NdisWdiPeerCreateIndication</a> callback function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_flush_confirm.md">NdisWdiRxFlushConfirm</a> callback function.
-        
-            `RxInorderDataIndication`
+`PeerDeleteIndication`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_inorder_data_ind.md">NdisWdiRxInorderDataIndication</a> callback function.
-        
-            `RxStopConfirm`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_peer_delete_ind.md">NdisWdiPeerDeleteIndication</a> callback function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_stop_confirm.md">NdisWdiRxStopConfirm</a> callback function.
-        
-            `TxAbortConfirm`
+`RxFlushConfirm`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_abort_confirm.md">NdisWdiTxAbortConfirm</a> callback function.
-        
-            `TxDequeueIndication`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_flush_confirm.md">NdisWdiRxFlushConfirm</a> callback function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_dequeue_ind.md">NdisWdiTxDequeueIndication</a> callback function.
-        
-            `TxInjectFrameIndication`
+`RxInorderDataIndication`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_inject_frame_ind.md">NdisWdiTxInjectFrameIndication</a> callback function.
-        
-            `TxQueryRATIDState`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_inorder_data_ind.md">NdisWdiRxInorderDataIndication</a> callback function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_query_ra_tid_state.md">NdisWdiTxQueryRATIDState</a> callback function.
-        
-            `TxReleaseFrameIndication`
+`RxStopConfirm`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_release_frames_ind.md">NdisWdiTxReleaseFrameIndication</a> callback function.
-        
-            `TxSendCompleteIndication`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_stop_confirm.md">NdisWdiRxStopConfirm</a> callback function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_complete_ind.md">NdisWdiTxSendCompleteIndication</a> callback function.
-        
-            `TxSendPauseIndication`
+`TxAbortConfirm`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_pause_ind.md">NdisWdiTxSendPauseIndication</a> callback function.
-        
-            `TxSendRestartIndication`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_abort_confirm.md">NdisWdiTxAbortConfirm</a> callback function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_restart_ind.md">NdisWdiTxSendRestartIndication</a> callback function.
-        
-            `TxTransferCompleteIndication`
+`TxDequeueIndication`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_transfer_complete_ind.md">NdisWdiTxTransferCompleteIndication</a> callback function.
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_dequeue_ind.md">NdisWdiTxDequeueIndication</a> callback function.
+
+`TxInjectFrameIndication`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_inject_frame_ind.md">NdisWdiTxInjectFrameIndication</a> callback function.
+
+`TxQueryRATIDState`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_query_ra_tid_state.md">NdisWdiTxQueryRATIDState</a> callback function.
+
+`TxQuerySuspectFrameCompleteStatus`
+
+
+
+`TxReleaseFrameIndication`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_release_frames_ind.md">NdisWdiTxReleaseFrameIndication</a> callback function.
+
+`TxSendCompleteIndication`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_complete_ind.md">NdisWdiTxSendCompleteIndication</a> callback function.
+
+`TxSendPauseIndication`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_pause_ind.md">NdisWdiTxSendPauseIndication</a> callback function.
+
+`TxSendRestartIndication`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_restart_ind.md">NdisWdiTxSendRestartIndication</a> callback function.
+
+`TxTransferCompleteIndication`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_transfer_complete_ind.md">NdisWdiTxTransferCompleteIndication</a> callback function.
 
 
 ## Requirements

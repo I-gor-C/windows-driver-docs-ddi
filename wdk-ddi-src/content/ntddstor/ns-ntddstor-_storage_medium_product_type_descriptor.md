@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : AC0C09DF-EFD4-457B-8ABC-C60890D3AF6A
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
+ms.keywords : STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure pointer [Storage Devices], PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, ntddstor/STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, ntddstor/PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure [Storage Devices], storage.storage_medium_product_type_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
 ---
 
@@ -48,11 +52,10 @@ typedef struct _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR {
 
 ## Members
 
-        
-            `MediumProductType`
 
-            Specifies the product type of the storage device.
+`MediumProductType`
 
+Specifies the product type of the storage device.
 <table>
 <tr>
 <th><b>MediumProductType</b> value</th>
@@ -99,15 +102,15 @@ typedef struct _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR {
 <td>Vendor-specific</td>
 </tr>
 </table>
-        
-            `Size`
 
-            Specifies the total size of the data returned, in bytes. This may include data that follows this 
+`Size`
+
+Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.
-        
-            `Version`
 
-            Contains the size of this structure, in bytes, as defined by <code>Sizeof(STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR)</code>. The value of this member will change as members are added to 
+`Version`
+
+Contains the size of this structure, in bytes, as defined by <code>Sizeof(STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR)</code>. The value of this member will change as members are added to 
       the structure.
 
 
@@ -119,13 +122,10 @@ typedef struct _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-</dt>
-</dl>
+
  
 
  

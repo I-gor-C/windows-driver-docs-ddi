@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : b16dd19f-1a67-4066-9dae-b36ff6f44d43
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_RECORD_HEADER_VALIDBITS, WHEA_ERROR_RECORD_HEADER_VALIDBITS, *PWHEA_ERROR_RECORD_HEADER_VALIDBITS
+ms.keywords : whea.whea_error_record_header_validbits, _WHEA_ERROR_RECORD_HEADER_VALIDBITS, PWHEA_ERROR_RECORD_HEADER_VALIDBITS union pointer [WHEA Drivers and Applications], ntddk/WHEA_ERROR_RECORD_HEADER_VALIDBITS, *PWHEA_ERROR_RECORD_HEADER_VALIDBITS, WHEA_ERROR_RECORD_HEADER_VALIDBITS union [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_RECORD_HEADER_VALIDBITS, PWHEA_ERROR_RECORD_HEADER_VALIDBITS, WHEA_ERROR_RECORD_HEADER_VALIDBITS, whearef_66b0c2f7-6fad-4cdb-ac15-f4d942d208e1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_RECORD_HEADER_VALIDBITS
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WHEA_ERROR_RECORD_HEADER_VALIDBITS, *PWHEA_ERROR_RECORD_HEADER_VALIDBITS
 ---
 
@@ -52,25 +56,22 @@ typedef union _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
 
 ## Members
 
-        
-            `AsULONG`
 
-            A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_VALIDBITS union.
+`AsULONG`
 
-    ## Remarks
-        A WHEA_ERROR_RECORD_HEADER_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
-<p class="note">If you build your <a href="https://msdn.microsoft.com/fb559ac3-1f8d-48b7-8ebe-018623ab8d09">Windows hardware error architecture (WHEA) user-mode application</a> or <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-in</a> with the header files from the Windows Server 2008 version of the WDK or Windows SDK, you will have trouble only if your application or PSHED plug-in accesses the <b>Timestamp</b> and <b>PlatformId</b> members directly when it processes the contents of a WHEA_ERROR_RECORD_HEADER structure. When you test these bits in the <b>AsULONG </b>member through the bitfield constants that are described in the following list, you will always produce the correct results.
+A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_VALIDBITS union.
+
+`DUMMYSTRUCTNAME`
+
+
+
+## Remarks
+A WHEA_ERROR_RECORD_HEADER_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
+<div class="alert"><b>Important</b>  After the release of Windows Server 2008, it was discovered that the <b>Timestamp</b> and <b>PlatformId</b> members of the WHEA_ERROR_RECORD_HEADER_VALIDBITS union are defined in the incorrect order. This topic now defines the correct order for these members.<p class="note">If you build your <a href="https://msdn.microsoft.com/fb559ac3-1f8d-48b7-8ebe-018623ab8d09">Windows hardware error architecture (WHEA) user-mode application</a> or <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-in</a> with the header files from the Windows Server 2008 version of the WDK or Windows SDK, you will have trouble only if your application or PSHED plug-in accesses the <b>Timestamp</b> and <b>PlatformId</b> members directly when it processes the contents of a WHEA_ERROR_RECORD_HEADER structure. When you test these bits in the <b>AsULONG </b>member through the bitfield constants that are described in the following list, you will always produce the correct results.
+
 <p class="note">This problem has been fixed in the Windows 7 version of the WDK and SDK.
 
-The following bitfield constants can be used to test the bits in the <b>AsULONG </b>member:
-
-
-
-If this bit is set, it indicates that the <b>PlatformId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.
-
-If this bit is set, it indicates that the <b>Timestamp</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.
-
-If this bit is set, it indicates that the <b>PartitionId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.
+</div><div> </div>The following bitfield constants can be used to test the bits in the <b>AsULONG </b>member:
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,13 +81,10 @@ If this bit is set, it indicates that the <b>PartitionId</b> member of the WHEA_
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
-</dt>
-</dl>
+
  
 
  

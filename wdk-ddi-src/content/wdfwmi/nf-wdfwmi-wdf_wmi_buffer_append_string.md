@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 23d65788-23ce-4ed7-8b68-890c1c3a4100
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_WMI_BUFFER_APPEND_STRING
+ms.keywords : WDF_WMI_BUFFER_APPEND_STRING function, kmdf.wdf_wmi_buffer_append_string, wdfwmi/WDF_WMI_BUFFER_APPEND_STRING, DFWMIRef_db6f29cb-fcdc-4948-9ea3-9b36e9f969e8.xml, wdf.wdf_wmi_buffer_append_string, WDF_WMI_BUFFER_APPEND_STRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_WMI_BUFFER_APPEND_STRING
-req.alt-loc : None,None.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : None
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_WMI_PROVIDER_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -81,8 +85,6 @@ WMI requires that strings that an <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_insta
 
 When <b>WDF_WMI_BUFFER_APPEND_STRING</b> returns, the location that the <i>RequiredSize</i> parameter points to contains the total number of bytes that were written to the buffer. To find the first buffer address that follows the string, your driver can pass the <i>RequiredSize</i> value to the WDF_PTR_ADD_OFFSET macro that is defined in <i>Wdfcore.h</i>.
 
-The following code example is from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">Serial</a> sample driver. This example is an <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a> callback function that obtains a device's symbolic name and copies the name into the callback function's output buffer.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,14 +99,10 @@ The following code example is from the <a href="https://docs.microsoft.com/en-us
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

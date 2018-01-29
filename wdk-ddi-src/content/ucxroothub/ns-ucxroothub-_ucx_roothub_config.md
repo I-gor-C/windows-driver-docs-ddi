@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 27E54F0D-2163-4D7C-B204-336EE0227488
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
+ms.keywords : buses._ucx_roothub_config, ucxroothub/P_UCX_ROOTHUB_CONFIG, ucxroothub/_UCX_ROOTHUB_CONFIG, P_UCX_ROOTHUB_CONFIG structure pointer [Buses], UCX_ROOTHUB_CONFIG, P_UCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG structure [Buses], _UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_ROOTHUB_CONFIG
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -61,66 +65,66 @@ typedef struct _UCX_ROOTHUB_CONFIG {
 
 ## Members
 
-        
-            `EvtRootHubClearHubFeature`
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `EvtRootHubClearPortFeature`
+`EvtRootHubClearHubFeature`
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `EvtRootHubControlUrb`
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `EvtRootHubGet20PortInfo`
+`EvtRootHubClearPortFeature`
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
-        
-            `EvtRootHubGet30PortInfo`
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.
-        
-            `EvtRootHubGetHubStatus`
+`EvtRootHubControlUrb`
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `EvtRootHubGetInfo`
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.
-        
-            `EvtRootHubGetPortErrorCount`
+`EvtRootHubGet20PortInfo`
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `EvtRootHubGetPortStatus`
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `EvtRootHubInterruptTx`
+`EvtRootHubGet30PortInfo`
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.
-        
-            `EvtRootHubSetHubFeature`
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `EvtRootHubSetPortFeature`
+`EvtRootHubGetHubStatus`
 
-            A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-        
-            `NumberOfPresentedControlUrbCallbacks`
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
-            The number of control requests sent to the default endpoint.
-        
-            `Size`
+`EvtRootHubGetInfo`
 
-            The size in bytes of this structure.
-        
-            `WdfRequestAttributes`
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.
 
-            A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies initialization parameters.
+`EvtRootHubGetPortErrorCount`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+
+`EvtRootHubGetPortStatus`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+
+`EvtRootHubInterruptTx`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.
+
+`EvtRootHubSetHubFeature`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+
+`EvtRootHubSetPortFeature`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+
+`NumberOfPresentedControlUrbCallbacks`
+
+The number of control requests sent to the default endpoint.
+
+`Size`
+
+The size in bytes of this structure.
+
+`WdfRequestAttributes`
+
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies initialization parameters.
 
 
 ## Requirements

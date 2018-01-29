@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 01c34bb8-b164-425d-b81c-7eefc08296e2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, *PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, FEATURE_DATA_CD_AUDIO_ANALOG_PLAY
+ms.keywords : "*PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, storage.feature_data_cd_audio_analog_play, PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, ntddmmc/PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure pointer [Storage Devices], structs-CD-ROM_87a067ea-0911-429b-808a-102f9600ecac.xml, FEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure [Storage Devices], ntddmmc/FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, FEATURE_DATA_CD_AUDIO_ANALOG_PLAY"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_CD_AUDIO_ANALOG_PLAY
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, FEATURE_DATA_CD_AUDIO_ANALOG_PLAY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, *PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY
 ---
 
 # _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure
@@ -52,37 +56,37 @@ typedef struct _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY {
 
 ## Members
 
-        
-            `Header`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `NumerOfVolumeLevels`
+`Header`
 
-            
-        
-            `Reserved1`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            Reserved.
-        
-            `Reserved2`
+`NumerOfVolumeLevels`
 
-            Reserved.
-        
-            `ScanSupported`
 
-            Indicates, when set to 1, that the SCAN command is supported. See the <i>SCSI Multimedia 3 </i>(<i>MMC-3</i>) specification for a description of the SCAN command.
-        
-            `SeperateChannelMute`
 
-            Indicates, when set to zero, that all audio channels are muted simultaneously. When set to 1, it indicates that each audio channel can be muted independently.
-        
-            `SeperateVolume`
+`Reserved1`
 
-            Indicates, when set to zero, that all audio channels have the same volume level. When set to 1, it indicates that the volume of each audio channel can be set separately.
+Reserved.
 
-    ## Remarks
-        This structure holds data for the feature named "CD Audio External Play" by the <i>MMC-3 </i>specification. Devices that support this feature can play CD audio data and channel it directly to an external output.
+`Reserved2`
+
+Reserved.
+
+`ScanSupported`
+
+Indicates, when set to 1, that the SCAN command is supported. See the <i>SCSI Multimedia 3 </i>(<i>MMC-3</i>) specification for a description of the SCAN command.
+
+`SeperateChannelMute`
+
+Indicates, when set to zero, that all audio channels are muted simultaneously. When set to 1, it indicates that each audio channel can be muted independently.
+
+`SeperateVolume`
+
+Indicates, when set to zero, that all audio channels have the same volume level. When set to 1, it indicates that the volume of each audio channel can be set separately.
+
+## Remarks
+This structure holds data for the feature named "CD Audio External Play" by the <i>MMC-3 </i>specification. Devices that support this feature can play CD audio data and channel it directly to an external output.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,16 +96,12 @@ typedef struct _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

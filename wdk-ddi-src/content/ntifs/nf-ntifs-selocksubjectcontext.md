@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 032e203a-9cb0-4232-91fc-883528e15a81
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeLockSubjectContext
+ms.keywords : ifsk.selocksubjectcontext, ntifs/SeLockSubjectContext, SeLockSubjectContext, SeLockSubjectContext routine [Installable File System Drivers], seref_ea4696ab-8343-4d15-866c-15720d009db8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeLockSubjectContext
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -81,17 +85,12 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-secapturesubjectcontext.md">SeCaptureSubjectContext</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-seunlocksubjectcontext.md">SeUnlockSubjectContext</a>
-</dt>
-</dl>
+
  
 
  

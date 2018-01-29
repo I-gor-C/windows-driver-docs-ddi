@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 339e688f-64ec-402f-bd28-9fa487acb984
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExInterlockedPopEntryList
+ms.keywords : kernel.exinterlockedpopentrylist, wdm/ExInterlockedPopEntryList, ExInterlockedPopEntryList routine [Kernel-Mode Driver Architecture], ExInterlockedPopEntryList, k102_4673c5a1-a650-48c3-934f-c35c202277cc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExInterlockedPopEntryList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -85,23 +89,16 @@ The <b>ExInterlockedPopEntryList</b> routine can be called at any IRQL. The stor
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-exinterlockedpopentryslist.md">ExInterlockedPopEntrySList</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
+
 <a href="..\wdm\nf-wdm-exinterlockedpushentrylist.md">ExInterlockedPushEntryList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-popentrylist.md">PopEntryList</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+
  
 
  

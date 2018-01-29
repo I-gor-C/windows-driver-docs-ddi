@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 38ac85bc-9ace-4e70-a886-92e18afb32db
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateDefaultClock
+ms.keywords : KsCreateDefaultClock, KsCreateDefaultClock function [Streaming Media Devices], ksfunc_eb8617e1-d6e0-434d-bace-cec6b2b1cce1.xml, stream.kscreatedefaultclock, ks/KsCreateDefaultClock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCreateDefaultClock
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -82,11 +86,8 @@ The clock can be created after using <b>KsAllocateDefaultClock</b> to create and
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksallocatedefaultclock.md">KsAllocateDefaultClock</a>
-</dt>
-</dl>
+
  
 
  

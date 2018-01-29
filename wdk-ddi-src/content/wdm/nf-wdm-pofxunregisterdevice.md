@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : FC4B1B4D-31D8-4E63-A3A5-07A1099997A8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxUnregisterDevice
+ms.keywords : PoFxUnregisterDevice routine [Kernel-Mode Driver Architecture], kernel.pofxunregisterdevice, wdm/PoFxUnregisterDevice, PoFxUnregisterDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxUnregisterDevice
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,17 +84,12 @@ A device driver that calls this routine must previously have called the <a href=
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c8671ba7-6128-4f0f-b5b1-32ce35e31168
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltReuseCallbackData
+ms.keywords : FltReuseCallbackData routine [Installable File System Drivers], FltReuseCallbackData, ifsk.fltreusecallbackdata, fltkernel/FltReuseCallbackData, FltApiRef_p_to_z_a412f56d-8cee-40de-93fb-1c007fe87c3c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltReuseCallbackData
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -85,26 +89,18 @@ In particular, a minifilter driver should not use this routine for any callback 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>
-</dt>
-</dl>
+
  
 
  

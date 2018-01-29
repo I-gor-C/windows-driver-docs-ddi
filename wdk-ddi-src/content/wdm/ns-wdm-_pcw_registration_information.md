@@ -52,33 +52,33 @@ typedef struct _PCW_REGISTRATION_INFORMATION {
 
 ## Members
 
-        
-            `Callback`
 
-            A pointer to the optional <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a> function that notifies the provider about events related to this counter set.
-        
-            `CallbackContext`
+`Callback`
 
-            A pointer to the callback context.
-        
-            `CounterCount`
+A pointer to the optional <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a> function that notifies the provider about events related to this counter set.
 
-            The number of counters that are exposed by this registration.
-        
-            `Counters`
+`CallbackContext`
 
-            A pointer to the array that describes the counters.
-        
-            `Name`
+A pointer to the callback context.
 
-            A pointer to the string that contains the name of the counter set to register.
-        
-            `Version`
+`CounterCount`
 
-            The numeric value that specifies the version of Performance Counters for Windows (PCW) that the provider supports.
+The number of counters that are exposed by this registration.
 
-    ## Remarks
-        The <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function takes, as a parameter, a pointer to this structure to serve as the registration handle.
+`Counters`
+
+A pointer to the array that describes the counters.
+
+`Name`
+
+A pointer to the string that contains the name of the counter set to register.
+
+`Version`
+
+The numeric value that specifies the version of Performance Counters for Windows (PCW) that the provider supports.
+
+## Remarks
+The <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function takes, as a parameter, a pointer to this structure to serve as the registration handle.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,9 +88,9 @@ typedef struct _PCW_REGISTRATION_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
+<dl>
 <dt>
 <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
 </dt>

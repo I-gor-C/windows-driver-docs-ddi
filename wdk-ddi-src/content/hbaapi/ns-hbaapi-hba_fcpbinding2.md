@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f715d45c-30e1-414f-907c-9ad1203ca604
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FCPBinding2, HBA_FCPBINDING2, *PHBA_FCPBINDING2
+ms.keywords : hbaapi/PHBA_FCPBINDING2, HBA_FCPBINDING2 structure [Storage Devices], HBA_FCPBINDING2, storage.hba_fcpbinding2, PHBA_FCPBINDING2 structure pointer [Storage Devices], hbaapi/HBA_FCPBinding2, structs-Fibre_b19a2c46-204e-4500-a4ed-9e3949941093.xml, PHBA_FCPBINDING2, *PHBA_FCPBINDING2, HBA_FCPBinding2, HBA_FCPBinding2 structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_FCPBINDING2
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_FCPBINDING2, *PHBA_FCPBINDING2
 ---
 
@@ -47,14 +51,14 @@ typedef struct HBA_FCPBinding2 {
 
 ## Members
 
-        
-            `entry`
 
-            Variable length array of elements of type <a href="..\hbaapi\ns-hbaapi-hba_fcpbindingentry2.md">HBA_FCPBindingEntry2</a>, each of which holds a persistent binding between operating system identifiers, a SCSI logical unit ID descriptor (LUID) and a fibre channel protocol (FCP) identifier for a logical unit.
-        
-            `NumberOfEntries`
+`entry`
 
-            Indicates, on input, the number of bindings that can fit in the array at <b>entry</b>. On output, this member holds the number of entries actually returned, which will be equal to the number specified on input or the full set of available bindings, whichever is smaller. The value in <b>NumberOfEntries</b> will contain the number of persistent bindings returned even when an error occurred because of insufficient buffer space.
+Variable length array of elements of type <a href="..\hbaapi\ns-hbaapi-hba_fcpbindingentry2.md">HBA_FCPBindingEntry2</a>, each of which holds a persistent binding between operating system identifiers, a SCSI logical unit ID descriptor (LUID) and a fibre channel protocol (FCP) identifier for a logical unit.
+
+`NumberOfEntries`
+
+Indicates, on input, the number of bindings that can fit in the array at <b>entry</b>. On output, this member holds the number of entries actually returned, which will be equal to the number specified on input or the full set of available bindings, whichever is smaller. The value in <b>NumberOfEntries</b> will contain the number of persistent bindings returned even when an error occurred because of insufficient buffer space.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct HBA_FCPBinding2 {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_getpersistentbindingv2.md">HBA_GetPersistentBindingV2</a>
-</dt>
-</dl>
+
  
 
  

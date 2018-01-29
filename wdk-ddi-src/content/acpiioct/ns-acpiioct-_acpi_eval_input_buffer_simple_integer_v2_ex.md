@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 26F68B49-8205-4132-93E7-BFE8FE695D9C
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX
+ms.keywords : ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure pointer [ACPI Devices], *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, acpi.acpi_eval_input_buffer_simple_integer_v2_ex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709 and later versions.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX
-req.alt-loc : Acpiioct.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure
@@ -48,14 +52,18 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX {
 
 ## Members
 
-        
-            `IntegerArgument`
 
-            Defines the <b>ULONG64</b> member <b>IntegerArgument</b>.
-        
-            `Signature`
+`IntegerArgument`
 
-            Defines the <b>ULONG</b> member <b>Signature</b>.
+Defines the <b>ULONG64</b> member <b>IntegerArgument</b>.
+
+`MethodName`
+
+
+
+`Signature`
+
+Defines the <b>ULONG</b> member <b>Signature</b>.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 35e11004-c716-4c6a-ba0a-be04750afb7a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportMidiStream, IMiniportMidiStream::SetFormat, SetFormat
+ms.keywords : audio.iminiportmidistream_setformat, SetFormat, IMiniportMidiStream::SetFormat, SetFormat method [Audio Devices], IMiniportMidiStream interface, IMiniportMidiStream, audmp-routines_9e75b920-4cc0-4acb-83e6-f970524e0587.xml, IMiniportMidiStream interface [Audio Devices], SetFormat method, portcls/IMiniportMidiStream::SetFormat, SetFormat method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportMidiStream.SetFormat
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -75,14 +79,10 @@ The <code>SetFormat</code> method essentially does nothing because the data form
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-</dl>
+
  
 
  

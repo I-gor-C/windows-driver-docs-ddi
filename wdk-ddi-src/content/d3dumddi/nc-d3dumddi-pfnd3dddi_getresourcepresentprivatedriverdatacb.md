@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D4F0F272-60DC-4060-9762-3DB49236CE62
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfngetresourcepresentprivatedriverdatacb, pfnGetResourcePresentPrivateDriverDataCb callback function [Display Devices], pfnGetResourcePresentPrivateDriverDataCb, PFND3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATACB, PFND3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATACB, d3dumddi/pfnGetResourcePresentPrivateDriverDataCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnGetResourcePresentPrivateDriverDataCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -63,14 +67,34 @@ A handle to the display device.
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>S_OK</dt>
-</dl>The operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation completed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INVALID_BUFFER_SIZE</dt>
-</dl>The value of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_getresourcepresentprivatedriverdata.md">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a>::<b>PrivateDriverDataSize</b> was zero or was insufficient to hold the data. When control returns to the caller, <b>PrivateDriverDataSize</b> will contain the required buffer size.
+</dl>
+</td>
+<td width="60%">
+The value of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_getresourcepresentprivatedriverdata.md">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a>::<b>PrivateDriverDataSize</b> was zero or was insufficient to hold the data. When control returns to the caller, <b>PrivateDriverDataSize</b> will contain the required buffer size.
 
- 
+</td>
+</tr>
+</table> 
 
 This method may return other <b>HRESULT</b> values.
 

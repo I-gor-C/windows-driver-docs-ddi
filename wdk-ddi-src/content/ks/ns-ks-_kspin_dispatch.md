@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6c4aea1f-e788-49c7-91c0-831c87c6fd39
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSPIN_DISPATCH, *PKSPIN_DISPATCH, KSPIN_DISPATCH
+ms.keywords : ks/KSPIN_DISPATCH, stream.kspin_dispatch, ks/PKSPIN_DISPATCH, _KSPIN_DISPATCH, *PKSPIN_DISPATCH, PKSPIN_DISPATCH, PKSPIN_DISPATCH structure pointer [Streaming Media Devices], KSPIN_DISPATCH structure [Streaming Media Devices], KSPIN_DISPATCH, avstruct_2ef1e08b-327f-476c-9c0b-804582f67815.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPIN_DISPATCH
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSPIN_DISPATCH, KSPIN_DISPATCH"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSPIN_DISPATCH, *PKSPIN_DISPATCH
 ---
 
 # _KSPIN_DISPATCH structure
@@ -56,8 +60,8 @@ typedef struct _KSPIN_DISPATCH {
 ## Members
 
 
-    ## Remarks
-        Any of the callback pointers can be <b>NULL</b>, indicating that the minidriver does not require to receive notification for this particular dispatch.
+## Remarks
+Any of the callback pointers can be <b>NULL</b>, indicating that the minidriver does not require to receive notification for this particular dispatch.
 
 If the minidriver needs to determine whether it has been signaled to go to a specific state (for example KSSTATE_RUN), comparing the value of the <b>DeviceState</b> member of <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> to <b>KSSTATE_RUN</b> is not a reliable method of doing this. <b>DeviceState</b> refers to the state to which the pin has been signaled to go, not the pipe. To perform the above reliably, instead create a variable in the <b>SetDeviceState</b> callback of this structure and then check this variable to make the determination.
 
@@ -69,22 +73,16 @@ If the minidriver needs to determine whether it has been signaled to go to a spe
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-_ksclock_dispatch.md">KSCLOCK_DISPATCH</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksallocator_dispatch.md">KSALLOCATOR_DISPATCH</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksallocator_dispatch.md">KSALLOCATOR_DISPATCH</a>
+
+<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
+
  
 
  

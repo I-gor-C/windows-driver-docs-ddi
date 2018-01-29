@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ed61d135-967d-4e7c-b437-09c9e0e6f3c2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KoDriverInitialize
+ms.keywords : ksfunc_117817ed-5a64-48c4-8b90-1ca6435c75b6.xml, KoDriverInitialize, kcom/KoDriverInitialize, KoDriverInitialize function [Streaming Media Devices], stream.kodriverinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KoDriverInitialize
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CONNECT_DATA, *PCONNECT_DATA
 ---
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5C6A62D2-C4D1-4024-B777-EA4AAC7AC971
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_calcprivatecryptosessionsize_0030_, PFND3D12DDI_CALCPRIVATECRYPTOSESSIONSIZE_0030 entry point [Display Devices], PFND3D12DDI_CALCPRIVATECRYPTOSESSIONSIZE_0030, d3d12umddi/PFND3D12DDI_CALCPRIVATECRYPTOSESSIONSIZE_0030
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFND3D12DDI_CALCPRIVATECRYPTOSESSIONSIZE_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 

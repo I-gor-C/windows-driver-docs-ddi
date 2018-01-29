@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 265ed956-1065-44be-ac8e-94bab2e4e8b8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_QMIPSECStats, MSiSCSI_QMIPSECStats, *PMSiSCSI_QMIPSECStats
+ms.keywords : "*PMSiSCSI_QMIPSECStats, PMSiSCSI_QMIPSECStats, iscsiprf/PMSiSCSI_QMIPSECStats, PMSiSCSI_QMIPSECStats structure pointer [Storage Devices], storage.msiscsi_qmipsecstats, structs-iSCSI_979ce8ac-35be-4ac1-930a-6614053fc805.xml, MSiSCSI_QMIPSECStats structure [Storage Devices], MSiSCSI_QMIPSECStats, _MSiSCSI_QMIPSECStats, iscsiprf/MSiSCSI_QMIPSECStats"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_QMIPSECStats
-req.alt-loc : iscsiprf.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MSiSCSI_QMIPSECStats, *PMSiSCSI_QMIPSECStats
 ---
 
@@ -63,81 +67,81 @@ typedef struct _MSiSCSI_QMIPSECStats {
 
 ## Members
 
-        
-            `ActiveSA`
 
-            The number of active IPsec security associations (SAs).
-        
-            `ActiveTunnels`
+`ActiveSA`
 
-            The number of active IPsec tunnels.
-        
-            `AuthenticatedBytesReceived`
+The number of active IPsec security associations (SAs).
 
-            The number of bytes that are received by using the AH protocol.
-        
-            `AuthenticatedBytesSent`
+`ActiveTunnels`
 
-            The number of bytes that are sent by using the authentication header (AH) protocol.
-        
-            `BadSPIPackets`
+The number of active IPsec tunnels.
 
-            The number of packets for which the security parameters index (SPI) was incorrect.
-        
-            `ConfidentialBytesReceived`
+`AuthenticatedBytesReceived`
 
-            The number of bytes that are received by using the ESP protocol.
-        
-            `ConfidentialBytesSent`
+The number of bytes that are received by using the AH protocol.
 
-            The number of bytes that are sent by using the encapsulating security payload (ESP) protocol.
-        
-            `KeyAdditions`
+`AuthenticatedBytesSent`
 
-            The number of successful IPsec SA negotiations.
-        
-            `KeyDeletions`
+The number of bytes that are sent by using the authentication header (AH) protocol.
 
-            The number of IPsec SA key deletions.
-        
-            `PacketsNotAuthenticated`
+`BadSPIPackets`
 
-            The number of packets for which data could not be verified.
-        
-            `PacketsNotDecrypted`
+The number of packets for which the security parameters index (SPI) was incorrect.
 
-            The number of failed decryption packets.
-        
-            `PacketsWithReplayDetection`
+`ConfidentialBytesReceived`
 
-            The number of packets that contained a valid sequence number field.
-        
-            `PendingKeyOperations`
+The number of bytes that are received by using the ESP protocol.
 
-            The number of IPsec key operations that are in progress.
-        
-            `ReKeys`
+`ConfidentialBytesSent`
 
-            The number of re-key operations for IPsec SAs.
-        
-            `TransportBytesReceived`
+The number of bytes that are sent by using the encapsulating security payload (ESP) protocol.
 
-            The number of bytes that are received by using the IPsec protocol.
-        
-            `TransportBytesSent`
+`KeyAdditions`
 
-            The number of bytes that are sent by using the IPsec protocol.
-        
-            `TunnelBytesReceived`
+The number of successful IPsec SA negotiations.
 
-            The number of bytes that are received by using the IPsec tunnel mode.
-        
-            `TunnelBytesSent`
+`KeyDeletions`
 
-            The number of bytes that are sent by using the IPsec tunnel mode.
+The number of IPsec SA key deletions.
 
-    ## Remarks
-        It is optional that you implement this class.
+`PacketsNotAuthenticated`
+
+The number of packets for which data could not be verified.
+
+`PacketsNotDecrypted`
+
+The number of failed decryption packets.
+
+`PacketsWithReplayDetection`
+
+The number of packets that contained a valid sequence number field.
+
+`PendingKeyOperations`
+
+The number of IPsec key operations that are in progress.
+
+`ReKeys`
+
+The number of re-key operations for IPsec SAs.
+
+`TransportBytesReceived`
+
+The number of bytes that are received by using the IPsec protocol.
+
+`TransportBytesSent`
+
+The number of bytes that are sent by using the IPsec protocol.
+
+`TunnelBytesReceived`
+
+The number of bytes that are received by using the IPsec tunnel mode.
+
+`TunnelBytesSent`
+
+The number of bytes that are sent by using the IPsec tunnel mode.
+
+## Remarks
+It is optional that you implement this class.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -147,13 +151,10 @@ typedef struct _MSiSCSI_QMIPSECStats {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiprf.h (include Iscsiprf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563105">MSiSCSI_QMIPSECStats WMI Class</a>
-</dt>
-</dl>
+
  
 
  

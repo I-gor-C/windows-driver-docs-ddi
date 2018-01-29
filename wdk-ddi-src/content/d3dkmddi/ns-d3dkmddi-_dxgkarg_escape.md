@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 73a1afa6-e156-4733-b204-a9cae4e18563
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_ESCAPE, DXGKARG_ESCAPE
+ms.keywords : display.dxgkarg_escape, DXGKARG_ESCAPE structure [Display Devices], _DXGKARG_ESCAPE, DmStructs_1edfa7aa-7ba1-4abc-a453-253de2a191af.xml, DXGKARG_ESCAPE, d3dkmddi/DXGKARG_ESCAPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_ESCAPE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_ESCAPE
 ---
 
@@ -50,26 +54,26 @@ typedef struct _DXGKARG_ESCAPE {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information.
-        
-            `hContext`
+`Flags`
 
-            [in] A handle to the context that was originally passed to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function.
-        
-            `hDevice`
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information.
 
-            [in] A handle to the display device (graphics context) that was originally passed to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function.
-        
-            `pPrivateDriverData`
+`hContext`
 
-            [in/out] A pointer to a buffer that contains the information that the display miniport driver and the user-mode display driver share.
-        
-            `PrivateDriverDataSize`
+[in] A handle to the context that was originally passed to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function.
 
-            [in/out] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
+`hDevice`
+
+[in] A handle to the display device (graphics context) that was originally passed to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function.
+
+`pPrivateDriverData`
+
+[in/out] A pointer to a buffer that contains the information that the display miniport driver and the user-mode display driver share.
+
+`PrivateDriverDataSize`
+
+[in/out] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -80,22 +84,16 @@ typedef struct _DXGKARG_ESCAPE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_escapeflags.md">D3DDDI_ESCAPEFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
-</dt>
-<dt>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_escapeflags.md">D3DDDI_ESCAPEFLAGS</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
+
  
 
  

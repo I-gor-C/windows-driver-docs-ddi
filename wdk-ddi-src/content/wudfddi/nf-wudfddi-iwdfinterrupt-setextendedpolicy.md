@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6637E939-010E-4462-92CE-50C4DB867694
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFInterrupt, IWDFInterrupt::SetExtendedPolicy, SetExtendedPolicy
+ms.keywords : SetExtendedPolicy method, IWDFInterrupt interface, wdf.iwdfinterrupt_setextendedpolicy, IWDFInterrupt, SetExtendedPolicy, IWDFInterrupt interface, SetExtendedPolicy method, wudfddi/IWDFInterrupt::SetExtendedPolicy, umdf.iwdfinterrupt_setextendedpolicy, SetExtendedPolicy method, IWDFInterrupt::SetExtendedPolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFInterrupt.SetExtendedPolicy
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ If a driver is running on an operating system version that is earlier than Windo
 
 For more information about handling interrupts in UMDF drivers, see <a href="https://msdn.microsoft.com/25D526CF-7C37-4D10-B099-352933F92F98">Accessing Hardware and Handling Interrupts</a>.
 
-The following code example calls <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a> to initialize a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure; sets values for the policy, priority, and target processor set; and calls <b>SetExtendedPolicy</b>. The example sets normal priority for the interrupt and assigns the interrupt to processor 0 in processor group 2.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -86,17 +88,12 @@ The following code example calls <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
-</dt>
-<dt>
+
 <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a>
-</dt>
-<dt>
+
 <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a>
-</dt>
-</dl>
+
  
 
  

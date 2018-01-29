@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : CADB17C6-07EA-4497-AA73-4AECCC1D0A45
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcAddStreamResource
+ms.keywords : PcAddStreamResource function [Audio Devices], portcls/PcAddStreamResource, PcAddStreamResource, audio.pcaddstreamresource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcAddStreamResource
-req.alt-loc : NA
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : NA
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -62,7 +66,7 @@ PVOID - Reserved for future use, set to NULL. Only device-scoped resources are s
 
 `ResourceDescriptor`
 
-
+PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information, see <a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>.
 
 `ResourceHandle`
 
@@ -107,14 +111,10 @@ Audio drivers that only run in Windows 10 can use  <b>PcAddStreamResource</b> an
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\portcls\nf-portcls-pcremovestreamresource.md">PcRemoveStreamResource</a>
-</dt>
-</dl>
+
+<a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>
+
  
 
  

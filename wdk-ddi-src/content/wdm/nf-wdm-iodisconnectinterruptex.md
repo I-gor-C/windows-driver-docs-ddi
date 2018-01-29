@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6c538468-2f7c-48b0-90f8-deb975c85970
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoDisconnectInterruptEx
+ms.keywords : WdmlibIoDisconnectInterruptEx, wdm/WdmlibIoDisconnectInterruptEx, kernel.iodisconnectinterruptex, wdm/IoDisconnectInterruptEx, IoDisconnectInterruptEx, k104_3bfae096-0af6-4f61-ae4b-4c83e748b071.xml, IoDisconnectInterruptEx routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista. Drivers that 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoDisconnectInterruptEx,WdmlibIoDisconnectInterruptEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib; Iointex.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -75,11 +79,8 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibiodisconnecti
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\iointex\nf-iointex-wdmlibiodisconnectinterruptex.md">WdmlibIoDisconnectInterruptEx</a>
-</dt>
-</dl>
+
  
 
  

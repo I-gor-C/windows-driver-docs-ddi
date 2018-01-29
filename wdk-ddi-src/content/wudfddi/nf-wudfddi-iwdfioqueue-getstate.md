@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 42dc9bbe-b00d-4187-ab07-0c268a061298
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::GetState, GetState
+ms.keywords : wudfddi/IWDFIoQueue::GetState, IWDFIoQueue::GetState, GetState method, IWDFIoQueue interface, GetState method, wdf.iwdfioqueue_getstate, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml, IWDFIoQueue interface, GetState method, IWDFIoQueue, umdf.iwdfioqueue_getstate, GetState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.GetState
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ The total number of requests that are associated with the I/O queue is the sum o
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
-</dt>
-</dl>
+
  
 
  

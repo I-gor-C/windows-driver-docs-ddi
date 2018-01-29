@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fad8a205-8427-48c5-b4b5-b125aa9fe85c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, *PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS
+ms.keywords : DFUsbRef_a32b6d83-abf8-4cc6-9ce3-3d03551164a4.xml, wdfusb/PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, wdf.wdf_usb_interface_select_setting_params, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, *PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, _WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure, wdfusb/WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, kmdf.wdf_usb_interface_select_setting_params, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure pointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_INTERFACE_SELECT_SETTING_PARAMS
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, *PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS
 req.product : Windows 10 or later.
 ---
@@ -61,34 +65,43 @@ typedef struct _WDF_USB_INTERFACE_SELECT_SETTING_PARAMS {
 
 ## Members
 
-        
-            `Size`
 
-            The size, in bytes, of this structure.
-        
-            `Type`
+`Size`
 
-            A <a href="..\wdfusb\ne-wdfusb-_wdfusbtargetdeviceselectsettingtype.md">WdfUsbTargetDeviceSelectSettingType</a>-typed value that identifies a technique for specifying a device interface.
-        
-            `Types`
+The size, in bytes, of this structure.
 
-            
+`Type`
 
-    ## Remarks
-        The <b>WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbinterfaceselectsetting.md">WdfUsbInterfaceSelectSetting</a> method. 
+A <a href="..\wdfusb\ne-wdfusb-_wdfusbtargetdeviceselectsettingtype.md">WdfUsbTargetDeviceSelectSettingType</a>-typed value that identifies a technique for specifying a device interface.
+
+`Types`
+
+
+
+## Remarks
+The <b>WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbinterfaceselectsetting.md">WdfUsbInterfaceSelectSetting</a> method. 
 
 To initialize a <b>WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</b> structure, your driver must call one of the following functions:
-
+<ul>
+<li>
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_interface_select_setting_params_init_descriptor.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_DESCRIPTOR</a>
 
 
+</li>
+<li>
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_interface_select_setting_params_init_setting.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_SETTING</a>
 
 
+</li>
+<li>
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_interface_select_setting_params_init_urb.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB</a>
+
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,22 +111,16 @@ To initialize a <b>WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</b> structure, your d
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbinterfaceselectsetting.md">WdfUsbInterfaceSelectSetting</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\ne-wdfusb-_wdfusbtargetdeviceselectsettingtype.md">WdfUsbTargetDeviceSelectSettingType</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
+
  
 
  

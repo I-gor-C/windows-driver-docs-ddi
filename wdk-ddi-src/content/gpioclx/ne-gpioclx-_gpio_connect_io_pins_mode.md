@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 17E98D35-8C63-4EEC-B8DD-896FA2B084A8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE
+ms.keywords : GPIO_CONNECT_IO_PINS_MODE, gpioclx/ConnectModeInvalid, ConnectModeOutput, ConnectModeInput, GPIO.gpio_connect_io_pins_mode, ConnectModeMaximum, gpioclx/GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE, gpioclx/ConnectModeMaximum, GPIO_CONNECT_IO_PINS_MODE enumeration [Parallel Ports], ConnectModeInvalid, gpioclx/ConnectModeInput, _GPIO_CONNECT_IO_PINS_MODE, gpioclx/ConnectModeOutput
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GPIO_CONNECT_IO_PINS_MODE
-req.alt-loc : Gpioclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
 ---
 
@@ -88,17 +92,12 @@ The <b>ConnectModeInput</b> enumeration constant labels a set of GPIO pins that 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439502">GPIO_CONNECT_IO_PINS_PARAMETERS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406483">IOCTL_GPIO_READ_PINS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406487">IOCTL_GPIO_WRITE_PINS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406483">IOCTL_GPIO_READ_PINS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 433b1346-f0f1-46f7-a1d8-e6397b2f7f05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSSTREAM_SEGMENT, *PKSSTREAM_SEGMENT, KSSTREAM_SEGMENT
+ms.keywords : PKSSTREAM_SEGMENT, _KSSTREAM_SEGMENT, *PKSSTREAM_SEGMENT, stream.ksstream_segment, ksproxy_ce88ef52-d88e-4dc8-952d-53dce519518f.xml, ksproxy/PKSSTREAM_SEGMENT, ksproxy/KSSTREAM_SEGMENT, KSSTREAM_SEGMENT, PKSSTREAM_SEGMENT structure pointer [Streaming Media Devices], KSSTREAM_SEGMENT structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSSTREAM_SEGMENT
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSSTREAM_SEGMENT, KSSTREAM_SEGMENT"
 ---
 
@@ -49,15 +53,14 @@ typedef struct _KSSTREAM_SEGMENT {
 
 ## Members
 
-        
-            `CompletionEvent`
 
-            Handle to an event that is used to signal that the I/O operation completed.
-        
-            `IoOperation`
+`CompletionEvent`
 
-            Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:
+Handle to an event that is used to signal that the I/O operation completed.
 
+`IoOperation`
+
+Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:
 <table>
 <tr>
 <th>Value</th>
@@ -84,14 +87,14 @@ Read data from stream.
 </td>
 </tr>
 </table>
-        
-            `KsDataTypeHandler`
 
-            Pointer to a <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a> interface for the I/O operation.
-        
-            `KsInterfaceHandler`
+`KsDataTypeHandler`
 
-            Pointer to a <a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a> interface for the I/O operation.
+Pointer to a <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a> interface for the I/O operation.
+
+`KsInterfaceHandler`
+
+Pointer to a <a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a> interface for the I/O operation.
 
 
 ## Requirements
@@ -102,25 +105,18 @@ Read data from stream.
 | **Minimum UMDF version** |  |
 | **Header** | ksproxy.h (include Ksproxy.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a>
-</dt>
-<dt>
-<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559862">IKsInterfaceHandler::KsCompleteIo</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559869">IKsInterfaceHandler::KsProcessMediaSamples</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560713">IKsPin::KsMediaSamplesCompleted</a>
-</dt>
-</dl>
+
+<a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559862">IKsInterfaceHandler::KsCompleteIo</a>
+
+<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559869">IKsInterfaceHandler::KsProcessMediaSamples</a>
+
  
 
  

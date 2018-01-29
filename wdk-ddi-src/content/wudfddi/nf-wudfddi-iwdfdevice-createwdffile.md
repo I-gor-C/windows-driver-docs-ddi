@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b356e3ac-451d-4a10-94e2-d03fcf76cb29
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::CreateWdfFile, CreateWdfFile
+ms.keywords : IWDFDevice, CreateWdfFile method, IWDFDevice interface, IWDFDevice interface, CreateWdfFile method, CreateWdfFile method, IWDFDevice::CreateWdfFile, wudfddi/IWDFDevice::CreateWdfFile, CreateWdfFile, wdf.iwdfdevice_createwdffile, umdf.iwdfdevice_createwdffile, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.CreateWdfFile
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -85,14 +89,10 @@ For information about when a UMDF driver might use <b>CreateWdfFile</b> to preve
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdrivercreatedfile.md">IWDFDriverCreatedFile</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
  
 
  

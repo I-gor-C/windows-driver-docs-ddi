@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 30989717-bbf4-44e6-9f1b-4818a8314714
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtRollbackEnlistment
+ms.keywords : ktm_ref_6e57f040-d43e-4986-a756-e35e1abc8670.xml, wdm/ZwRollbackEnlistment, NtRollbackEnlistment, ZwRollbackEnlistment, ZwRollbackEnlistment routine [Kernel-Mode Driver Architecture], kernel.zwrollbackenlistment, wdm/NtRollbackEnlistment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwRollbackEnlistment,NtRollbackEnlistment
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,20 +66,56 @@ A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbb
 ## Return Value
 
 <b>ZwRollbackEnlistment</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The specified handle is not a handle to an enlistment object.
+</dl>
+</td>
+<td width="60%">
+The specified handle is not a handle to an enlistment object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>The object handle is invalid.
+</dl>
+</td>
+<td width="60%">
+The object handle is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TRANSACTION_REQUEST_NOT_VALID</b></dt>
-</dl>The enlistment cannot be rolled back.
+</dl>
+</td>
+<td width="60%">
+The enlistment cannot be rolled back.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller does not have appropriate access to the enlistment object.
+</dl>
+</td>
+<td width="60%">
+The caller does not have appropriate access to the enlistment object.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -103,23 +143,16 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-tmrollbackenlistment.md">TmRollbackEnlistment</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+
+<a href="..\wdm\nf-wdm-tmrollbackenlistment.md">TmRollbackEnlistment</a>
+
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

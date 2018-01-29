@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b91f33b3-2706-4c94-9960-ceea023891af
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsClockPropertySet, IKsClockPropertySet::KsGetCorrelatedTime, KsGetCorrelatedTime
+ms.keywords : IKsClockPropertySet::KsGetCorrelatedTime, stream.iksclockpropertyset_ksgetcorrelatedtime, KsGetCorrelatedTime method [Streaming Media Devices], KsGetCorrelatedTime method [Streaming Media Devices], IKsClockPropertySet interface, IKsClockPropertySet, KsGetCorrelatedTime, ksproxy_79582c7f-456c-420e-88eb-b0cb6916040f.xml, ksproxy/IKsClockPropertySet::KsGetCorrelatedTime, IKsClockPropertySet interface [Streaming Media Devices], KsGetCorrelatedTime method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsClockPropertySet.KsGetCorrelatedTime
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -77,17 +81,12 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559756">IKsClockPropertySet::KsSetCorrelatedTime</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
+
  
 
  

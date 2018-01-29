@@ -7,8 +7,8 @@ old-location : netvista\rilinfoclass_2.htm
 old-project : netvista
 ms.assetid : 19927cd1-8afa-4006-a882-d5222c690724
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILINFOCLASS, RILINFOCLASS
+ms.date : 1/18/2018
+ms.keywords : RIL_INFOCLASS_DATA, RIL_INFOCLASS_ALL, rilapitypes/RIL_INFOCLASS_PADACCESS, RILINFOCLASS, RIL_INFOCLASS_DATACIRCUITASYNC, rilapitypes/RIL_INFOCLASS_DATACIRCUITASYNC, RILINFOCLASS enumeration [Network Drivers Starting with Windows Vista], RIL_INFOCLASS_VOICE, rilapitypes/RIL_INFOCLASS_FAX, rilapitypes/RILINFOCLASS, rilapitypes/RIL_INFOCLASS_PACKETACCESS, RIL_INFOCLASS_FAX, rilapitypes/RIL_INFOCLASS_VOICE, rilapitypes/RIL_INFOCLASS_DATACIRCUITSYNC, RIL_INFOCLASS_PACKETACCESS, RIL_INFOCLASS_DATACIRCUITSYNC, RIL_INFOCLASS_PADACCESS, rilapitypes/RIL_INFOCLASS_DATA, rilapitypes/RIL_INFOCLASS_ALL, RIL_INFOCLASS_SMS, rilapitypes/RIL_INFOCLASS_SMS, netvista.rilinfoclass_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILINFOCLASS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILINFOCLASS
 req.product : Windows 10 or later.
 ---
@@ -79,6 +83,11 @@ typedef enum _RILINFOCLASS {
 
 <tr>
 <td>RIL_INFOCLASS_FAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_NONE</td>
 <td></td>
 </tr>
 

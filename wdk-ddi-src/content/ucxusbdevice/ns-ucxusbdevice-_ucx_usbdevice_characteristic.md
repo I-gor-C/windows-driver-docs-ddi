@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 31BF5607-51EA-4FBF-A754-872FBD45915D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_USBDEVICE_CHARACTERISTIC, *PUCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC
+ms.keywords : _UCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC, PUCX_USBDEVICE_CHARACTERISTIC structure pointer [Buses], ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC, *PUCX_USBDEVICE_CHARACTERISTIC, buses.ucx_usbdevice_characteristic, ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC structure [Buses], PUCX_USBDEVICE_CHARACTERISTIC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_USBDEVICE_CHARACTERISTIC
-req.alt-loc : Ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC"
 req.product : Windows 10 or later.
 ---
@@ -51,14 +55,14 @@ typedef struct _UCX_USBDEVICE_CHARACTERISTIC {
 
 ## Members
 
-        
-            `CharacteristicType`
 
-            A <a href="..\ucxusbdevice\ne-ucxusbdevice-_ucx_usbdevice_characteristic_type.md">UCX_USBDEVICE_CHARACTERISTIC_TYPE</a>-type value that indicates the type of device characteristic.
-        
-            `Size`
+`CharacteristicType`
 
-            Size of this structure.
+A <a href="..\ucxusbdevice\ne-ucxusbdevice-_ucx_usbdevice_characteristic_type.md">UCX_USBDEVICE_CHARACTERISTIC_TYPE</a>-type value that indicates the type of device characteristic.
+
+`Size`
+
+Size of this structure.
 
 
 ## Requirements
@@ -69,13 +73,10 @@ typedef struct _UCX_USBDEVICE_CHARACTERISTIC {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
-</dt>
-</dl>
+
  
 
  

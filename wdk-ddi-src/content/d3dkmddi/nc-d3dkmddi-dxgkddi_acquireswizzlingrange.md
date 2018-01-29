@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f861e055-70db-4e0a-9c62-87e2d41f92ae
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiacquireswizzlingrange, DxgkDdiAcquireSwizzlingRange callback function [Display Devices], DxgkDdiAcquireSwizzlingRange, DXGKDDI_ACQUIRESWIZZLINGRANGE, DXGKDDI_ACQUIRESWIZZLINGRANGE, d3dkmddi/DxgkDdiAcquireSwizzlingRange, DmFunctions_6dd5b0ee-666c-45bf-ae39-05e37d74c137.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiAcquireSwizzlingRange
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,15 +68,45 @@ NTSTATUS DxgkddiAcquireswizzlingrange(
 ## Return Value
 
 <i>DxgkDdiAcquireSwizzlingRange</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><i>DxgkDdiAcquireSwizzlingRange</i> successfully made the allocation accessible.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiAcquireSwizzlingRange</i> successfully made the allocation accessible.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_UNSWIZZLING_APERTURE_UNSUPPORTED</b></dt>
-</dl><i>DxgkDdiAcquireSwizzlingRange</i> could not program the swizzling range for the allocation. The video memory manager fails to acquire the swizzling range without making futher attempts.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiAcquireSwizzlingRange</i> could not program the swizzling range for the allocation. The video memory manager fails to acquire the swizzling range without making futher attempts.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_UNSWIZZLING_APERTURE_UNAVAILABLE</b></dt>
-</dl><i>DxgkDdiAcquireSwizzlingRange</i> could not program the swizzling range for the allocation because another swizzling range is currently using the graphics processing unit (GPU) resources that are required. The video memory manager attempts to release a range that is currently in use and then attempts to set up the swizzling range again.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiAcquireSwizzlingRange</i> could not program the swizzling range for the allocation because another swizzling range is currently using the graphics processing unit (GPU) resources that are required. The video memory manager attempts to release a range that is currently in use and then attempts to set up the swizzling range again.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -110,32 +144,22 @@ A call to <i>DxgkDdiAcquireSwizzlingRange</i> to acquire a swizzling range might
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_acquireswizzlingrange.md">DXGKARG_ACQUIRESWIZZLINGRANGE</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_releaseswizzlingrange.md">DxgkDdiReleaseSwizzlingRange</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_acquireswizzlingrange.md">DXGKARG_ACQUIRESWIZZLINGRANGE</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilsmsmodificationinfo.htm
 old-project : netvista
 ms.assetid : 8fed32a2-f0a7-4462-b8bb-b01c9cccf6b7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO
+ms.date : 1/18/2018
+ms.keywords : netvista.rilsmsmodificationinfo, ntddrilapitypes/RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista], RILSMSMODIFICATIONINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSMSMODIFICATIONINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO"
 ---
 
 # RILSMSMODIFICATIONINFO structure
@@ -51,30 +55,30 @@ typedef struct _RILSMSMODIFICATIONINFO {
 
 ## Members
 
-        
-            `aiIdentifier`
 
-            
-        
-            `cbSize`
+`aiIdentifier`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwModificationType`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `raAddress`
 
-            
+
+`dwExecutor`
+
+
+
+`dwModificationType`
+
+
+
+`dwParams`
+
+
+
+`raAddress`
+
+
 
 
 ## Requirements

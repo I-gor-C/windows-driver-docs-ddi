@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 51BBE9F6-7661-45A1-8416-9AAA307FCA10
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcUnregisterAdapterPnpManagement
+ms.keywords : portcls/PcUnregisterAdapterPnpManagement, audio.pcunregisteradapterpnpmanagement, PcUnregisterAdapterPnpManagement, PcUnregisterAdapterPnpManagement function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1511 and later ve
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcUnregisterAdapterPnpManagement
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,14 +86,10 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
 <a href="..\portcls\nf-portcls-pcregisteradapterpnpmanagement.md">PcRegisterAdapterPnpManagement</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
  
 
  

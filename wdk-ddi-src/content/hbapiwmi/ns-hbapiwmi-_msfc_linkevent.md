@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 35fb3397-2e45-4d32-8cb1-1050199b2209
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_LinkEvent, MSFC_LinkEvent, *PMSFC_LinkEvent
+ms.keywords : "*PMSFC_LinkEvent, PMSFC_LinkEvent, storage.msfc_linkevent, hbapiwmi/MSFC_LinkEvent, hbapiwmi/PMSFC_LinkEvent, structs-Fibre_cbf79af7-ccf4-4996-b14d-bca141dece0e.xml, _MSFC_LinkEvent, PMSFC_LinkEvent structure pointer [Storage Devices], MSFC_LinkEvent, MSFC_LinkEvent structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSFC_LinkEvent
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MSFC_LinkEvent, *PMSFC_LinkEvent
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMSFC_LinkEvent, MSFC_LinkEvent"
 ---
 
 # _MSFC_LinkEvent structure
@@ -49,22 +53,22 @@ typedef struct _MSFC_LinkEvent {
 
 ## Members
 
-        
-            `AdapterWWN`
 
-            Contains a worldwide name that indicates the adapter for which the event occurred.
-        
-            `EventType`
+`AdapterWWN`
 
-            Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="https://msdn.microsoft.com/528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.
-        
-            `RLIRBuffer`
+Contains a worldwide name that indicates the adapter for which the event occurred.
 
-            Contains the data associated with a register link incident request (RLIR).
-        
-            `RLIRBufferSize`
+`EventType`
 
-            Indicates the size of the buffer at <b>RLIRBuffer</b>.
+Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="https://msdn.microsoft.com/528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.
+
+`RLIRBuffer`
+
+Contains the data associated with a register link incident request (RLIR).
+
+`RLIRBufferSize`
+
+Indicates the size of the buffer at <b>RLIRBuffer</b>.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _MSFC_LinkEvent {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee">EVENT_TYPE_QUALIFIERS</a>
-</dt>
-</dl>
+
  
 
  

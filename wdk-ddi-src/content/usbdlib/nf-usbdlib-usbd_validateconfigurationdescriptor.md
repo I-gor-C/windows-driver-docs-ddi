@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2fbe08ca-a9eb-4e3b-aa28-1ff34ad22a46
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_ValidateConfigurationDescriptor
+ms.keywords : USBD_ValidateConfigurationDescriptor, USBD_ValidateConfigurationDescriptor routine [Buses], buses.usbd_validateconfigurationdescriptor, usbdlib/USBD_ValidateConfigurationDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_ValidateConfigurationDescriptor
-req.alt-loc : Usbd.lib,Usbd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbd.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -64,7 +68,6 @@ Size, in bytes, of the configuration descriptor being validated.
 `Level`
 
 Level of validation to be performed.  The following are valid values:
-
 <ul>
 <li>1-Basic validation of the configuration descriptor header.</li>
 <li>2-Full validation of the configuration descriptor including checking for invalid endpoint addresses, interface numbers, descriptor structures, interface alternate settings, number of interfaces and <b>bLength</b> fields of all descriptors.               
@@ -100,9 +103,8 @@ USBD_STATUS_SUCCESS, or appropriate USBD error code if validation failed.
 
 ## See Also
 
-<dl>
-<dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
  
 
  

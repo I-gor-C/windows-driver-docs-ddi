@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 404A7AFC-291E-4056-9076-F9E62A07C9FB
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_PHYSICAL_ADAPTER_DATA, *PSTORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA
+ms.keywords : PSTORAGE_PHYSICAL_ADAPTER_DATA structure pointer [Storage Devices], ntddstor/STORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA, ntddstor/PSTORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA structure [Storage Devices], *PSTORAGE_PHYSICAL_ADAPTER_DATA, _STORAGE_PHYSICAL_ADAPTER_DATA, PSTORAGE_PHYSICAL_ADAPTER_DATA, storage.storage_physical_adapter_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_PHYSICAL_ADAPTER_DATA
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA"
 ---
 
@@ -56,22 +60,50 @@ typedef struct _STORAGE_PHYSICAL_ADAPTER_DATA {
 
 ## Members
 
-        
-            `AdapterId`
 
-            The hardware ID of the storage adapter.
-        
-            `CommandProtocol`
+`AdapterId`
 
-            Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
-        
-            `HealthStatus`
+The hardware ID of the storage adapter.
 
-            Indicates the health status of a storage adapter, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
-        
-            `SpecVersion`
+`CommandProtocol`
 
-            Indicates the specification of the storage adapter, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
+Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
+
+`ExpanderConnected`
+
+
+
+`FirmwareRevision`
+
+
+
+`HealthStatus`
+
+Indicates the health status of a storage adapter, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
+
+`Model`
+
+
+
+`PhysicalLocation`
+
+
+
+`Reserved0`
+
+
+
+`Reserved1`
+
+
+
+`SpecVersion`
+
+Indicates the specification of the storage adapter, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
+
+`Vendor`
+
+
 
 
 ## Requirements

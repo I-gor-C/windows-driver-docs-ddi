@@ -7,8 +7,8 @@ old-location : netvista\dot11_scan_request_v2.htm
 old-project : netvista
 ms.assetid : fd6dd2f4-ee58-46da-ba87-5aecaff35dd0
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2
+ms.date : 1/18/2018
+ms.keywords : DOT11_SCAN_REQUEST_V2 structure [Network Drivers Starting with Windows Vista], *PDOT11_SCAN_REQUEST_V2, windot11/DOT11_SCAN_REQUEST_V2, netvista.dot11_scan_request_v2, windot11/PDOT11_SCAN_REQUEST_V2, _DOT11_SCAN_REQUEST_V2, Native_802.11_data_types_e7a02ffc-ecf6-4159-ab3d-85c87d844785.xml, PDOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2, PDOT11_SCAN_REQUEST_V2 structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11_SCAN_REQUEST_V2
-req.alt-loc : windot11.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,20 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2"
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_SCAN_REQUEST_V2 structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_SCAN_REQUEST_V2 structure defines the parameters for the explicit scan operation performed
+  by the 802.11 station. The station performs the explicit scan operation following an OID set request of 
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>.
 
 ## Syntax
 ````
@@ -60,15 +66,14 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 
 ## Members
 
-        
-            `bRestrictedScan`
 
-            If this member is <b>TRUE</b>, the 802.11 station performs a scan restricted to the channel and PHY
+`bRestrictedScan`
+
+If this member is <b>TRUE</b>, the 802.11 station performs a scan restricted to the channel and PHY
      configuration used to connect to a BSS network.
      
 
 The miniport driver must ignore this member if any of the following are true:
-
 <ul>
 <li>
 The miniport driver is operating in ExtSTA mode.
@@ -79,10 +84,10 @@ The 802.11 station is not connected to a BSS network.
 
 </li>
 </ul>
-        
-            `bUseRequestIE`
 
-            If this member is <b>TRUE</b>, the 802.11 station must include the list of request IDs (defined through
+`bUseRequestIE`
+
+If this member is <b>TRUE</b>, the 802.11 station must include the list of request IDs (defined through
      the 
      <b>uRequestIDsOffset</b> and 
      <b>uNumOfRequestIDs</b> members) within the 802.11d request information element (IE) of each Probe
@@ -92,7 +97,6 @@ The 802.11 station is not connected to a BSS network.
 The miniport driver must ignore this member (along with the 
      <b>uRequestIDsOffset</b> and 
      <b>uNumOfRequestIDs</b> members) if any of the following are true:
-
 <ul>
 <li>
 The miniport driver is operating in ExtSTA mode.
@@ -103,8 +107,8 @@ The 802.11
        <b>dot11MultiDomainCapabilityEnabled</b> management information base (MIB) object is <b>FALSE</b>. For more
        information about the 
        <b>dot11MultiDomainCapabilityEnabled</b> MIB object, see 
-       <a href="netvista.oid_dot11_multi_domain_capability_enabled">
-       OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED</a>.
+       <mshelp:link keywords="netvista.oid_dot11_multi_domain_capability_enabled" tabindex="0">
+       OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED</mshelp:link>.
 
 </li>
 <li>
@@ -114,30 +118,54 @@ The
 
 </li>
 </ul>
-        
-            `dot11BSSID`
 
-            The BSS identifier (BSSID) of a BSS network for which the 802.11 station scans. If this member is
+`dot11BSSID`
+
+The BSS identifier (BSSID) of a BSS network for which the 802.11 station scans. If this member is
      set to the wildcard BSSID (0xFFFFFFFFFFFF), the station scans for all BSSIDs.
-        
-            `dot11BSSType`
 
-            The type of basic service set (BSS) networks for which the 802.11 station scans. The data type for
+`dot11BSSType`
+
+The type of basic service set (BSS) networks for which the 802.11 station scans. The data type for
      this member is the 
      <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a> enumeration.
-        
-            `dot11ScanType`
 
-            The type of scan that the 802.11 station performs. The data type for this member is the
+`dot11ScanType`
+
+The type of scan that the 802.11 station performs. The data type for this member is the
      DOT11_SCAN_TYPE enumeration, which declares the following values:
-        
-            `ucBuffer`
+     
 
-            The buffer containing optional data as specified through other members of this structure.
-        
-            `udot11SSIDsOffset`
 
-            The offset in the 
+
+Regardless of the value of 
+     <b>dot11ScanType</b>, the 802.11 station must perform a scan type of 
+     <b>dot11_scan_type_passive</b> whenever it scans on channels that are not valid in the current regulatory
+     domain. Also, the 802.11 station must perform a scan type of 
+     <b>dot11_scan_type_passive</b> if it does not have a default regulatory domain. For more information
+     about regulatory domains, see 
+     <mshelp:link keywords="netvista.oid_dot11_current_reg_domain" tabindex="0">
+     OID_DOT11_CURRENT_REG_DOMAIN</mshelp:link>.
+
+If the 
+     <b>dot11_scan_type_forced</b> bit is set in the 
+     <b>dot11ScanType</b> member, the 802.11 station must perform a complete scan on every supported channel.
+     If the 
+     <b>dot11_scan_type_forced</b> bit is not set, the 802.11 station can perform a complete scan, or it can
+     perform a partial scan on a subset of the supported channels.
+<div class="alert"><b>Note</b>  The 
+     <b>dot11_scan_type_forced</b> bit is only supported when the miniport driver is operating in Extensible
+     Station (ExtSTA) mode. The 
+     <b>dot11_scan_type_forced</b> bit must be set through a bitwise OR with a DOT11_SCAN_TYPE
+     value.</div><div> </div>
+
+`ucBuffer`
+
+The buffer containing optional data as specified through other members of this structure.
+
+`udot11SSIDsOffset`
+
+The offset in the 
      <b>ucBuffer</b> array where the service set identifier (SSID) list begins. Each entry in the SSID list is
      formatted as a 
      <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a> structure.
@@ -147,14 +175,14 @@ The 802.11 station scans for each SSID in the list. For example, if
      <b>dot11ScanType</b> is set to 
      <b>dot11_scan_type_active</b>, the 802.11 station transmits an 802.11 Probe Request for each SSID in the
      list while scanning on a channel.
-        
-            `uIEsLength`
 
-            The length, in bytes, of the list of IEs.
-        
-            `uIEsOffset`
+`uIEsLength`
 
-            The offset in the 
+The length, in bytes, of the list of IEs.
+
+`uIEsOffset`
+
+The offset in the 
      <b>ucBuffer</b> array where the list of variable-length information elements (IEs) begins. The 802.11
      station must append the list of IEs to the end of each Probe Request frame that it transmits during an
      active scan.
@@ -164,32 +192,32 @@ The miniport driver must ignore this member (along with the
      <b>uIEsLength</b> member) if 
      <b>dot11ScanType</b> is set to 
      <b>dot11_scan_type_passive</b>.
-        
-            `uNumOfdot11SSIDs`
 
-            The number of entries in the SSID list.
+`uNumOfdot11SSIDs`
+
+The number of entries in the SSID list.
      
 
 If 
      <b>uNumOfdot11SSIDs</b> is zero, the miniport driver must use an SSID list containing the wildcard
      zero-length SSID.
-        
-            `uNumOfPhyTypeInfos`
 
-            The number of entries in the list of PHY types.
+`uNumOfPhyTypeInfos`
+
+The number of entries in the list of PHY types.
      
 
 If 
      <b>uNumOfPhyTypeInfos</b> is zero, the 802.11 station performs the scan using all of its supported
      PHYs.
-        
-            `uNumOfRequestIDs`
 
-            The number of entries in the request IDs list.
-        
-            `uPhyTypeInfosOffset`
+`uNumOfRequestIDs`
 
-            The offset in the 
+The number of entries in the request IDs list.
+
+`uPhyTypeInfosOffset`
+
+The offset in the 
      <b>ucBuffer</b> array where the list of PHY types begins. Each entry in the list of PHY types is
      formatted as a 
      <a href="..\windot11\ns-windot11-_dot11_phy_type_info.md">DOT11_PHY_TYPE_INFO</a> structure.
@@ -201,26 +229,26 @@ The 802.11 station must perform the BSS scan by using each of the specified PHY 
 The miniport driver must ignore this member (along with the 
      <b>uNumOfPhyTypeInfos</b> member) if 
      <b>bRestrictedScan</b> is set to <b>TRUE</b>.
-        
-            `uRequestIDsOffset`
 
-            The offset in the 
+`uRequestIDsOffset`
+
+The offset in the 
      <b>ucBuffer</b> array where the Request IDs list begins. Each entry in the request IDs list is formatted
      as a UCHAR data type.
 
-    ## Remarks
-        The 802.11 station performs explicit scan operations following the OID set request of 
+## Remarks
+The 802.11 station performs explicit scan operations following the OID set request of 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>. The station
     performs the scan operation by using the parameters defined through the DOT11_SCAN_REQUEST_V2, which
     accompanies the set request.
 
 For more information about the scan operations performed by a Native 802.11 miniport driver, see 
-    <a href="netvista.native_802_11_scan_operations">Native 802.11 Scan
-    Operations</a>.
+    <mshelp:link keywords="netvista.native_802_11_scan_operations" tabindex="0">Native 802.11 Scan
+    Operations</mshelp:link>.
 
 For more information about the ExtSTA operation mode, see 
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/extensible-station-operation-mode">Extensible Station Operation
-    Mode</a>.
+    <mshelp:link keywords="netvista.extensible_station_operation_mode" tabindex="0">Extensible Station Operation
+    Mode</mshelp:link>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -230,18 +258,14 @@ For more information about the ExtSTA operation mode, see
 | **Minimum UMDF version** |  |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\windot11\ns-windot11-_dot11_phy_type_info.md">DOT11_PHY_TYPE_INFO</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

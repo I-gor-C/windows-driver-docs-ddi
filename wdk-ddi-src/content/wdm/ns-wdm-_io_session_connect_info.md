@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f9d7ffae-aa9e-44d6-b659-cb5a9068f1d7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO
+ms.keywords : kstruct_b_ef736de7-23b2-4d43-837f-ea879d963ef8.xml, IO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO structure [Kernel-Mode Driver Architecture], PIO_SESSION_CONNECT_INFO structure pointer [Kernel-Mode Driver Architecture], wdm/IO_SESSION_CONNECT_INFO, _IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO, wdm/PIO_SESSION_CONNECT_INFO, PIO_SESSION_CONNECT_INFO, kernel.io_session_connect_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_SESSION_CONNECT_INFO
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PIO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -48,17 +52,17 @@ typedef struct _IO_SESSION_CONNECT_INFO {
 
 ## Members
 
-        
-            `LocalSession`
 
-            Indicates whether the user session is a local session or a remote session. If <b>TRUE</b>, the user is logged on locally. If <b>FALSE</b>, the user is logged on remotely.
-        
-            `SessionId`
+`LocalSession`
 
-            Session ID. This member contains the <a href="http://go.microsoft.com/fwlink/p/?linkid=155045">Terminal Services</a> session identifier of the user session for which the driver is receiving this notification.
+Indicates whether the user session is a local session or a remote session. If <b>TRUE</b>, the user is logged on locally. If <b>FALSE</b>, the user is logged on remotely.
 
-    ## Remarks
-        If a driver is registered to receive notifications of events in a user session, and if this session enters the <i>connected</i> state, the I/O manager calls the driver's <a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a> function. For this call, the I/O manager sets the function's <i>Event</i> parameter to <b>IoSessionEventConnected</b>. Additionally, the I/O manager sets the function's <i>NotificationPayload</i> parameter to point to an <b>IO_SESSION_CONNECT_INFO</b> structure that contains information about the user session. For more information about <b>IoSessionEventConnected</b>, see <a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>.
+`SessionId`
+
+Session ID. This member contains the <a href="http://go.microsoft.com/fwlink/p/?linkid=155045">Terminal Services</a> session identifier of the user session for which the driver is receiving this notification.
+
+## Remarks
+If a driver is registered to receive notifications of events in a user session, and if this session enters the <i>connected</i> state, the I/O manager calls the driver's <a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a> function. For this call, the I/O manager sets the function's <i>Event</i> parameter to <b>IoSessionEventConnected</b>. Additionally, the I/O manager sets the function's <i>NotificationPayload</i> parameter to point to an <b>IO_SESSION_CONNECT_INFO</b> structure that contains information about the user session. For more information about <b>IoSessionEventConnected</b>, see <a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,16 +72,12 @@ typedef struct _IO_SESSION_CONNECT_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a>
-</dt>
-</dl>
+
  
 
  

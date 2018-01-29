@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 96aac09b-c6fc-43a7-a6d8-36f642e0f5d7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_MONITOR_MODE_ORIGIN,
+ms.keywords : IDDCX_MONITOR_MODE_ORIGIN, IDDCX_MONITOR_MODE_ORIGIN enumeration [Display Devices], iddcx/IDDCX_MONITOR_MODE_ORIGIN_DRIVER, IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR, display.iddcx_monitor_mode_origin, iddcx/IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED, IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED, iddcx/IDDCX_MONITOR_MODE_ORIGIN, IDDCX_MONITOR_MODE_ORIGIN_DRIVER, iddcx/IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_MONITOR_MODE_ORIGIN
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -63,6 +67,11 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
 <tr>
 <td>IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED</td>
 <td>Indicates that an <b>IDDCX_MONITOR_MODE_ORIGIN</b> variable has not yet been assigned a meaningful value.</td>
+</tr>
+
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 

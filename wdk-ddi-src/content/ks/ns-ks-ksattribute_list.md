@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4E533E77-9288-45DF-8C93-2A6EACADF9FF
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSATTRIBUTE_LIST, KSATTRIBUTE_LIST, *PKSATTRIBUTE_LIST
+ms.keywords : PKSATTRIBUTE_LIST structure pointer [Streaming Media Devices], PKSATTRIBUTE_LIST, ks/KSATTRIBUTE_LIST, *PKSATTRIBUTE_LIST, KSATTRIBUTE_LIST structure [Streaming Media Devices], stream.ksattribute_list, KSATTRIBUTE_LIST, ks/PKSATTRIBUTE_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSATTRIBUTE_LIST
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSATTRIBUTE_LIST, *PKSATTRIBUTE_LIST
 ---
 
@@ -49,14 +53,14 @@ typedef struct {
 
 ## Members
 
-        
-            `Attributes`
 
-            A <a href="..\ks\ns-ks-ksattribute.md">KSATTRIBUTE</a> structure who's Attribute member is set to <i>KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE</i>. For more information,  see <a href="https://msdn.microsoft.com/104275F8-2302-484B-B673-7448CAA1F793">Audio Signal Processing Modes</a>.
-        
-            `Count`
+`Attributes`
 
-            Specifies the number of attributes in the list.
+A <a href="..\ks\ns-ks-ksattribute.md">KSATTRIBUTE</a> structure who's Attribute member is set to <i>KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE</i>. For more information,  see <a href="https://msdn.microsoft.com/104275F8-2302-484B-B673-7448CAA1F793">Audio Signal Processing Modes</a>.
+
+`Count`
+
+Specifies the number of attributes in the list.
 
 
 ## Requirements

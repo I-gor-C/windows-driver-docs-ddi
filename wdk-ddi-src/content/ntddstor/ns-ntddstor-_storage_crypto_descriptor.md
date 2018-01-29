@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1D948882-2286-4080-A41B-D20714FC0A66
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_CRYPTO_DESCRIPTOR, *PSTORAGE_CRYPTO_DESCRIPTOR, STORAGE_CRYPTO_DESCRIPTOR
+ms.keywords : STORAGE_CRYPTO_DESCRIPTOR, PSTORAGE_CRYPTO_DESCRIPTOR structure pointer [Storage Devices], storage.storage_crypto_descriptor, PSTORAGE_CRYPTO_DESCRIPTOR, _STORAGE_CRYPTO_DESCRIPTOR, *PSTORAGE_CRYPTO_DESCRIPTOR, ntddstor/PSTORAGE_CRYPTO_DESCRIPTOR, STORAGE_CRYPTO_DESCRIPTOR structure [Storage Devices], ntddstor/STORAGE_CRYPTO_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_CRYPTO_DESCRIPTOR
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_CRYPTO_DESCRIPTOR, STORAGE_CRYPTO_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_CRYPTO_DESCRIPTOR, *PSTORAGE_CRYPTO_DESCRIPTOR
 ---
 
 # _STORAGE_CRYPTO_DESCRIPTOR structure
@@ -50,26 +54,26 @@ typedef struct _STORAGE_CRYPTO_DESCRIPTOR {
 
 ## Members
 
-        
-            `CryptoCapabilities`
 
-            Reserved for system use.
-        
-            `NumCryptoCapabilities`
+`CryptoCapabilities`
 
-            Reserved for system use.
-        
-            `NumKeysSupported`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `Size`
+`NumCryptoCapabilities`
 
-            Reserved for system use.
-        
-            `Version`
+Reserved for system use.
 
-            Reserved for system use.
+`NumKeysSupported`
+
+Reserved for system use.
+
+`Size`
+
+Reserved for system use.
+
+`Version`
+
+Reserved for system use.
 
 
 ## Requirements

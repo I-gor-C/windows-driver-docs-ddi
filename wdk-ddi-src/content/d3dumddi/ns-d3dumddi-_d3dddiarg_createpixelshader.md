@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dc7baff1-7e74-4666-805b-33b524c89c1d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CREATEPIXELSHADER, D3DDDIARG_CREATEPIXELSHADER
+ms.keywords : d3dumddi/D3DDDIARG_CREATEPIXELSHADER, D3DDDIARG_CREATEPIXELSHADER structure [Display Devices], display.d3dddiarg_createpixelshader, UMDisplayDriver_param_Structs_c1c78eaf-3eb9-4518-9b3c-f3fd5d6ce1f7.xml, _D3DDDIARG_CREATEPIXELSHADER, D3DDDIARG_CREATEPIXELSHADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CREATEPIXELSHADER
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CREATEPIXELSHADER
 ---
 
@@ -47,17 +51,17 @@ typedef struct _D3DDDIARG_CREATEPIXELSHADER {
 
 ## Members
 
-        
-            `CodeSize`
 
-            [in] The size, in bytes, of the pixel shader code that is passed in the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createpixelshader.md">CreatePixelShader</a> function.
-        
-            `ShaderHandle`
+`CodeSize`
 
-            [out] A handle to the pixel shader code.
+[in] The size, in bytes, of the pixel shader code that is passed in the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createpixelshader.md">CreatePixelShader</a> function.
 
-    ## Remarks
-        For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.
+`ShaderHandle`
+
+[out] A handle to the pixel shader code.
+
+## Remarks
+For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _D3DDDIARG_CREATEPIXELSHADER {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createpixelshader.md">CreatePixelShader</a>
-</dt>
-</dl>
+
  
 
  

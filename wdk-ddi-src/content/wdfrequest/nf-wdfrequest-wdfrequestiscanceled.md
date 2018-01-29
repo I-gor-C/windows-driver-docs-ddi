@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 73ec4bf1-ba48-4b51-8824-61ce42f9708d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestIsCanceled
+ms.keywords : wdfrequest/WdfRequestIsCanceled, kmdf.wdfrequestiscanceled, WdfRequestIsCanceled method, PFN_WDFREQUESTISCANCELED, wdf.wdfrequestiscanceled, WdfRequestIsCanceled, DFRequestObjectRef_2306854d-71f7-475f-bd8c-a74e2e6630ca.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestIsCanceled
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, ReqIsCancOnCancReq
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -86,9 +90,6 @@ If <b>WdfRequestIsCanceled</b> returns <b>TRUE</b>, your driver should cancel th
 
 For more information about <b>WdfRequestIsCanceled</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/canceling-i-o-requests">Canceling I/O Requests</a>
 
-
-The following code example calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> if <b>WdfRequestIsCanceled</b> returns <b>TRUE</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -103,23 +104,16 @@ The following code example calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequest
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
-</dt>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelable.md">WdfRequestMarkCancelable</a>
-</dt>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelableex.md">WdfRequestMarkCancelableEx</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestunmarkcancelable.md">WdfRequestUnmarkCancelable</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_cancel.md">EvtRequestCancel</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelableex.md">WdfRequestMarkCancelableEx</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelable.md">WdfRequestMarkCancelable</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 70FFDE9E-2029-4C84-9DEE-C2E81FEE5590
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_SCALE_SUPPORT_0022, D3D12DDI_VIDEO_SCALE_SUPPORT_0022
+ms.keywords : D3D12DDI_VIDEO_SCALE_SUPPORT_0022, display.d3d12ddi_video_scale_support, D3D12DDI_VIDEO_SCALE_SUPPORT_0022 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_SCALE_SUPPORT_0022
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_SCALE_SUPPORT_0022
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_SCALE_SUPPORT_0022
 ---
 
@@ -50,25 +54,29 @@ typedef struct D3D12DDI_VIDEO_SCALE_SUPPORT_0022 {
 
 ## Members
 
-        
-            `MaxOutputHeight`
 
-            The largest output height that can be scaled to.  The largest value allowed is <b>D3D12_REQ_TEXTURE2D_U_OR_V_DIMENSION</b>, which is 16384.
-        
-            `MaxOutputWidth`
+`Flags`
 
-            The largest output width that can be scaled to.  The largest value allowed is <b>D3D12_REQ_TEXTURE2D_U_OR_V_DIMENSION</b>, which is 16384.
-        
-            `MinOutputHeight`
 
-            The smallest output height that can be scaled to.  The smallest allowed value is 1.
-        
-            `MinOutputWidth`
 
-            The smallest output width that can be scaled to.  The smallest allowed value is 1.
+`MaxOutputHeight`
 
-    ## Remarks
-        By default, supported indicates that all possible output size combinations that exist between the maximum  size and minimum size for the extent, inclusive, are supported.  The values in the <i>ScaleSupportFlags</i> value may add additional restrictions.
+The largest output height that can be scaled to.  The largest value allowed is <b>D3D12_REQ_TEXTURE2D_U_OR_V_DIMENSION</b>, which is 16384.
+
+`MaxOutputWidth`
+
+The largest output width that can be scaled to.  The largest value allowed is <b>D3D12_REQ_TEXTURE2D_U_OR_V_DIMENSION</b>, which is 16384.
+
+`MinOutputHeight`
+
+The smallest output height that can be scaled to.  The smallest allowed value is 1.
+
+`MinOutputWidth`
+
+The smallest output width that can be scaled to.  The smallest allowed value is 1.
+
+## Remarks
+By default, supported indicates that all possible output size combinations that exist between the maximum  size and minimum size for the extent, inclusive, are supported.  The values in the <i>ScaleSupportFlags</i> value may add additional restrictions.
 
 
 When scaling is not supported, the maximum and maximum sizes should both be set to the input size and no flags specified.
@@ -81,13 +89,10 @@ When scaling is not supported, the maximum and maximum sizes should both be set 
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_scale_support_flags_0022.md">D3D12DDI_VIDEO_SCALE_SUPPORT_FLAGS</a>
-</dt>
-</dl>
+
  
 
  

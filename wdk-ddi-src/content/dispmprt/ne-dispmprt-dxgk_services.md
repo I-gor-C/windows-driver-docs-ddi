@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8853e0f8-1dd0-4cb5-8dbf-c1d4e62bb0ec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_SERVICES, DXGK_SERVICES
+ms.keywords : DxgkServicesTimedOperation, DXGK_SERVICES enumeration [Display Devices], DxgkServicesDebugReport, DxgkServicesAgp, dispmprt/DxgkServicesAgp, DmEnums_340c8991-c135-47da-876d-2970157fea0b.xml, dispmprt/DxgkServicesDebugReport, DxgkServicesFirmwareTable, dispmprt/DXGK_SERVICES, DxgkServicesSPB, display.dxgk_services, DXGK_SERVICES, dispmprt/DxgkServicesBDD, dispmprt/DxgkServicesTimedOperation, DxgkServicesBDD, dispmprt/DxgkServicesSPB, dispmprt/DxgkServicesFirmwareTable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_SERVICES
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_SERVICES
 ---
 
@@ -78,6 +82,11 @@ Supported starting with Windows 8.</td>
 </tr>
 
 <tr>
+<td>DxgkServicesIDD</td>
+<td></td>
+</tr>
+
+<tr>
 <td>DxgkServicesSPB</td>
 <td>Indicates the <a href="https://msdn.microsoft.com/D525A961-339D-414B-B40F-14AD9AEA51C5">Simple  Peripheral Bus (SPB) Interface</a>.
 
@@ -92,7 +101,7 @@ Supported starting with Windows 8.</td>
 
 ## Remarks
 
-An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.</p>
+An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |

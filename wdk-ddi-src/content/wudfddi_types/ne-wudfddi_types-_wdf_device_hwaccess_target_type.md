@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : AF462D58-1854-4A56-8DC6-63F373439842
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_HWACCESS_TARGET_TYPE, *PWDF_DEVICE_HWACCESS_TARGET_TYPE, WDF_DEVICE_HWACCESS_TARGET_TYPE
+ms.keywords : wdfdevice/WdfDeviceHwAccessTargetTypeRegister, WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration, wdfdevice/WdfDeviceHwAccessTargetTypeRegisterBuffer, wdf.wdf_device_hwaccess_target_type, wudfddi_types/WdfDeviceHwAccessTargetTypePortBuffer, umdf.wdf_device_hwaccess_target_type, WDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WdfDeviceHwAccessTargetTypeMaximum, wudfddi_types/WdfDeviceHwAccessTargetTypeRegister, PWDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WdfDeviceHwAccessTargetTypePort, _WDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetTypePort, WdfDeviceHwAccessTargetTypeMaximum, PWDF_DEVICE_HWACCESS_TARGET_TYPE enumeration pointer, *PWDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetTypeRegisterBuffer, WdfDeviceHwAccessTargetTypeRegister, wdfdevice/WdfDeviceHwAccessTargetTypePortBuffer, wdfdevice/WdfDeviceHwAccessTargetTypeInvalid, WdfDeviceHwAccessTargetTypeInvalid, wudfddi_types/WdfDeviceHwAccessTargetTypeMaximum, wudfddi_types/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetTypePort, wudfddi_types/WdfDeviceHwAccessTargetTypeRegisterBuffer, wdfdevice/PWDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetTypePortBuffer, wudfddi_types/WdfDeviceHwAccessTargetTypeInvalid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WDF_DEVICE_HWACCESS_TARGET_TYPE
-req.alt-loc : wdfdevice.h,wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PWDF_DEVICE_HWACCESS_TARGET_TYPE, WDF_DEVICE_HWACCESS_TARGET_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_DEVICE_HWACCESS_TARGET_TYPE, *PWDF_DEVICE_HWACCESS_TARGET_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -98,11 +102,8 @@ typedef enum __WDF_IO_TARGET_STATE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
-</dt>
-</dl>
+
  
 
  

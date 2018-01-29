@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 431d8f18-18db-460c-9f2f-454a5378825c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeIsInEndpoint
+ms.keywords : DFUsbRef_55ca68a2-c334-47b9-9716-68a492987897.xml, wdfusb/WdfUsbTargetPipeIsInEndpoint, WdfUsbTargetPipeIsInEndpoint, kmdf.wdfusbtargetpipeisinendpoint, PFN_WDFUSBTARGETPIPEISINENDPOINT, WdfUsbTargetPipeIsInEndpoint method, wdf.wdfusbtargetpipeisinendpoint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbTargetPipeIsInEndpoint
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about the <b>WdfUsbTargetPipeIsInEndpoint</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example determines whether a specified USB pipe is connected to an input endpoint.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,17 +84,12 @@ The following code example determines whether a specified USB pipe is connected 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_in.md">WDF_USB_PIPE_DIRECTION_IN</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
-</dt>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeisoutendpoint.md">WdfUsbTargetPipeIsOutEndpoint</a>
-</dt>
-</dl>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_in.md">WDF_USB_PIPE_DIRECTION_IN</a>
+
  
 
  

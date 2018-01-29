@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : c799ecb6-3024-491c-90d5-70e1d21b1baf
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_GetUsagesEx
+ms.keywords : HidP_GetUsagesEx, HidP_GetUsagesEx routine [Human Input Devices], hidfunc_2a2a6e4a-c966-43d7-8159-115bb6f2376c.xml, hid.hidp_getusagesex, hidpi/HidP_GetUsagesEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HidP_GetUsagesEx
-req.alt-loc : Hidparse.lib,Hidparse.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hidparse.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HIDP_REPORT_TYPE
 ---
 
@@ -64,7 +68,7 @@ Specifies the <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f
 
 `ButtonList`
 
-Pointer to a caller-allocated buffer that routine uses to return the usage and <a href="hid.hid_usages#usage_page#usage_page">usage page</a> identifiers for each button that is set to ON (1).
+Pointer to a caller-allocated buffer that routine uses to return the usage and <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage page</a> identifiers for each button that is set to ON (1).
 
 `UsageLength`
 
@@ -86,24 +90,78 @@ Specifies the length, in bytes, of the report located at <i>Report</i>.
 ## Return Value
 
 <b>HidP_GetUsagesEx</b> returns one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_STATUS_SUCCESS</b></dt>
-</dl>The routine successfully returned all button usages set to ON.
+</dl>
+</td>
+<td width="60%">
+The routine successfully returned all button usages set to ON.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_INVALID_REPORT_LENGTH</b></dt>
-</dl>The report length is not valid.
+</dl>
+</td>
+<td width="60%">
+The report length is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_INVALID_REPORT_TYPE</b></dt>
-</dl>The specified report type is not valid.
+</dl>
+</td>
+<td width="60%">
+The specified report type is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The <i>UsageList</i> buffer is too small to hold all the usages currently set to ON in the specified report.
+</dl>
+</td>
+<td width="60%">
+The <i>UsageList</i> buffer is too small to hold all the usages currently set to ON in the specified report.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_STATUS_INCOMPATIBLE_REPORT_ID</b></dt>
-</dl>The collection contains buttons in a report of the specified type, but there are no such usages in the specified report.
+</dl>
+</td>
+<td width="60%">
+The collection contains buttons in a report of the specified type, but there are no such usages in the specified report.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_STATUS_INVALID_PREPARSED_DATA</b></dt>
-</dl>The preparsed data is not valid.
+</dl>
+</td>
+<td width="60%">
+The preparsed data is not valid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -127,38 +185,26 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
-</dt>
-<dt>
 <a href="..\hidpi\ns-hidpi-_usage_and_page.md">USAGE_AND_PAGE</a>
-</dt>
-</dl>
+
+<a href="..\hidpi\nf-hidpi-hidp_getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
+
  
 
  

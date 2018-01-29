@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : C51D645B-5DF2-4F23-904B-AB56F97520CB
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HIDP_DEVICE_DESC, HIDP_DEVICE_DESC, *PHIDP_DEVICE_DESC
+ms.keywords : PHIDP_DEVICE_DESC structure pointer [Human Input Devices], *PHIDP_DEVICE_DESC, HIDP_DEVICE_DESC, hid.hidp_device_desc, PHIDP_DEVICE_DESC, HIDP_DEVICE_DESC structure [Human Input Devices], hidpddi/PHIDP_DEVICE_DESC, _HIDP_DEVICE_DESC, hidpddi/HIDP_DEVICE_DESC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HIDP_DEVICE_DESC
-req.alt-loc : Hidpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HIDP_DEVICE_DESC, *PHIDP_DEVICE_DESC
 ---
 
@@ -51,27 +55,27 @@ typedef struct _HIDP_DEVICE_DESC {
 
 ## Members
 
-        
-            `CollectionDesc`
 
-            An array of  <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> structure that contains the collection descriptors.
-        
-            `CollectionDescLength`
+`CollectionDesc`
 
-            The number of elements in the array of the collection descriptors.
-        
-            `Dbg`
+An array of  <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> structure that contains the collection descriptors.
 
-            A <a href="..\hidpddi\ns-hidpddi-_hidp_getcoldesc_dbg.md">HIDP_GETCOLDESC_DBG</a> structure that contains the error code indicating the failure in parsing the report 
+`CollectionDescLength`
+
+The number of elements in the array of the collection descriptors.
+
+`Dbg`
+
+A <a href="..\hidpddi\ns-hidpddi-_hidp_getcoldesc_dbg.md">HIDP_GETCOLDESC_DBG</a> structure that contains the error code indicating the failure in parsing the report 
                                       descriptor.
-        
-            `ReportIDs`
 
-            An array of <a href="..\hidpddi\ns-hidpddi-_hidp_report_ids.md">HIDP_REPORT_IDS</a> structures report ID information for a report descriptor.
-        
-            `ReportIDsLength`
+`ReportIDs`
 
-            The number of elements in the length of the array of report IDs.
+An array of <a href="..\hidpddi\ns-hidpddi-_hidp_report_ids.md">HIDP_REPORT_IDS</a> structures report ID information for a report descriptor.
+
+`ReportIDsLength`
+
+The number of elements in the length of the array of report IDs.
 
 
 ## Requirements
@@ -82,13 +86,10 @@ typedef struct _HIDP_DEVICE_DESC {
 | **Minimum UMDF version** |  |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidpddi\nf-hidpddi-hidp_getcollectiondescription.md">HidP_GetCollectionDescription</a>
-</dt>
-</dl>
+
  
 
  

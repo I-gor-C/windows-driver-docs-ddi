@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 605E2353-8C82-4005-BB72-4CB44146A253
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbControllerSetIoOtherCallback
+ms.keywords : SpbControllerSetIoOtherCallback method [Buses], spbcx/SpbControllerSetIoOtherCallback, SPB.spbcontrollersetioothercallback, SpbControllerSetIoOtherCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpbControllerSetIoOtherCallback
-req.alt-loc : spbcxstubs.lib,spbcxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Spbcxstubs.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -96,17 +100,12 @@ The SPB controller driver must call this method before it <i>commits</i> the dev
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450908">SpbControllerSetRequestAttributes</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F3F9B6EC-B978-4C87-8AE0-8F6BC73099D2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_COLORIMETRY, *PDXGK_COLORIMETRY, DXGK_COLORIMETRY
+ms.keywords : DXGK_COLORIMETRY, DXGK_COLORIMETRY structure [Display Devices], d3dkmddi/DXGK_COLORIMETRY, *PDXGK_COLORIMETRY, _DXGK_COLORIMETRY, PDXGK_COLORIMETRY, display.dxgk_colorimetry, PDXGK_COLORIMETRY structure pointer [Display Devices], d3dkmddi/PDXGK_COLORIMETRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_COLORIMETRY
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PDXGK_COLORIMETRY, DXGK_COLORIMETRY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DXGK_COLORIMETRY, *PDXGK_COLORIMETRY
 ---
 
 # _DXGK_COLORIMETRY structure
@@ -54,48 +58,48 @@ typedef struct _DXGK_COLORIMETRY {
 
 ## Members
 
-        
-            `BluePoint`
 
-            Override for display blue point. Note, each dimension is a 10-bit value stored in the least significant bits.
-        
-            `FormatBitDepths`
+`BluePoint`
 
-            Overrides the supported bits per color channel in each of the five color encodings specified for wire-formats.  At least one bit must be set, excluding the Preference field which is reserved and must be zero.
-        
-            `GreenPoint`
+Override for display blue point. Note, each dimension is a 10-bit value stored in the least significant bits.
 
-            Override for display green point. Note, each dimension is a 10-bit value stored in the least significant bits.
-        
-            `MaxFullFrameLuminance`
+`FormatBitDepths`
 
-            Override for the max full frame luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level must be supported across every pixel in the frame simultaneously in order to provide an estimate of the average luminance value which can be supported by the display across a frame.
+Overrides the supported bits per color channel in each of the five color encodings specified for wire-formats.  At least one bit must be set, excluding the Preference field which is reserved and must be zero.
+
+`GreenPoint`
+
+Override for display green point. Note, each dimension is a 10-bit value stored in the least significant bits.
+
+`MaxFullFrameLuminance`
+
+Override for the max full frame luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level must be supported across every pixel in the frame simultaneously in order to provide an estimate of the average luminance value which can be supported by the display across a frame.
 Only valid if MaxLuminance is non-zero.  Zero is not a valid override.
-        
-            `MaxLuminance`
 
-            Override for the maximum luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level is expected to be supported for only a relatively small area in any given frame.  
+`MaxLuminance`
+
+Override for the maximum luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level is expected to be supported for only a relatively small area in any given frame.  
 Zero indicates no override of MaxLuminance, MaxFullFrameLuminance or MinLuminance.
-        
-            `MinLuminance`
 
-            Override for the minimum luminance value supported by the display measured in one ten thousandth of a nit.  Only valid if MaxLuminance is non-zero.  Zero is a valid value.
-        
-            `RedPoint`
+`MinLuminance`
 
-            Override for display red point.  Note, each dimension is a 10-bit value stored in the least significant bits.
+Override for the minimum luminance value supported by the display measured in one ten thousandth of a nit.  Only valid if MaxLuminance is non-zero.  Zero is a valid value.
+
+`RedPoint`
+
+Override for display red point.  Note, each dimension is a 10-bit value stored in the least significant bits.
 Zero indicates no override.
-        
-            `StandardColorimetryFlags`
 
-            Indicates support for specific colorimetry and EOTF capabilities using bit-fields.
-        
-            `WhitePoint`
+`StandardColorimetryFlags`
 
-            Override for display white point. Note, each dimension is a 10-bit value stored in the least significant bits.
+Indicates support for specific colorimetry and EOTF capabilities using bit-fields.
 
-    ## Remarks
-        This struct is used both for querying overrides from the driver, and for the OS reporting the final set of values it has selected.  Overrides are supported for integrated displays using this structure which is embedded within the DXGK_QUERYINTEGRATEDDISPLAYOUT struct and for external displays where this stuct is used as the output buffer is for an adapter query type DXGKQAITYPE_QUERYCOLORIMETRYOVERRIDES.  The selected and adjusted overrides are reported back to the driver using DxgkDdiSetTargetAdjustedColorimetry.
+`WhitePoint`
+
+Override for display white point. Note, each dimension is a 10-bit value stored in the least significant bits.
+
+## Remarks
+This struct is used both for querying overrides from the driver, and for the OS reporting the final set of values it has selected.  Overrides are supported for integrated displays using this structure which is embedded within the DXGK_QUERYINTEGRATEDDISPLAYOUT struct and for external displays where this stuct is used as the output buffer is for an adapter query type DXGKQAITYPE_QUERYCOLORIMETRYOVERRIDES.  The selected and adjusted overrides are reported back to the driver using DxgkDdiSetTargetAdjustedColorimetry.
 
 
 
@@ -108,7 +112,6 @@ The color points are further validated beyond a simple sanity check (each value 
 
 
 When the OS calls DxgkDdiSetTargetAdjustedColorimetry, the FormatBitDepths and StandardColorimetryFlags are zeroed as these are capability fields so only valid in queries.
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

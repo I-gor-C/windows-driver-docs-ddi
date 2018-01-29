@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 774d1bda-2d9b-4ab4-97cf-b358471d8716
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.keywords : bltooth.ioctl_bth_sdp_submit_record_with_info, IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO control code [Bluetooth Devices], IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO, bthioctl/IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO, bth_ioctls_6ae2aeb0-ecf1-40c4-9135-2397c40a278e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO
-req.alt-loc : Bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,19 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1"
 ---
 
 # IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO IOCTL
-The IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO request adds an SDP record to the local SDP server along
-     with attributes that are not part of the SDP record itself. After this call completes successfully, the
-     profile driver can advertise that a service is available on the local computer. The profile driver calls
-     
-     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_remove_record.md">IOCTL_BTH_SDP_REMOVE_RECORD</a> to
-     stop advertising the service on the local SDP server.
-
-
-
 The IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO request adds an SDP record to the local SDP server along
      with attributes that are not part of the SDP record itself. After this call completes successfully, the
      profile driver can advertise that a service is available on the local computer. The profile driver calls
@@ -81,7 +76,6 @@ The length of the handle to the SDP record.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the handle that
       the IOCTL returns. Otherwise, the 
@@ -89,23 +83,53 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INSUFFICIENT_RESOURCES
 
+</td>
+<td>
 Not enough memory was allocated to process this request.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_BUFFER_SIZE
 
+</td>
+<td>
 The output buffer was sized incorrectly.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_PARAMETER
 
+</td>
+<td>
 A member of the structure passed to the input buffer, or the stream passed to the input buffer,
          was invalid.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -115,16 +139,12 @@ A member of the structure passed to the input buffer, or the stream passed to th
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | <= PASSIVE_LEVEL |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record.md">IOCTL_BTH_SDP_SUBMIT_RECORD</a>
-</dt>
-<dt>
 <a href="..\bthioctl\ns-bthioctl-_bth_sdp_record.md">BTH_SDP_RECORD</a>
-</dt>
-</dl>
+
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record.md">IOCTL_BTH_SDP_SUBMIT_RECORD</a>
+
  
 
  

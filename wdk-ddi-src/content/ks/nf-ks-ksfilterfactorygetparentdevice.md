@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ac1d10dc-d3cb-4a83-9f52-34ea90d2193b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryGetParentDevice
+ms.keywords : KsFilterFactoryGetParentDevice function [Streaming Media Devices], stream.ksfilterfactorygetparentdevice, avfunc_35d9d582-f7d6-4c1f-8998-a6664527db2c.xml, KsFilterFactoryGetParentDevice, ks/KsFilterFactoryGetParentDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterFactoryGetParentDevice
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,17 +79,12 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetparent.md">KsG
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+
  
 
  

@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : d1ef833e-8350-499c-9a3d-408d900c9245
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_SDP_SERVICE_SEARCH_REQUEST, BTH_SDP_SERVICE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_SEARCH_REQUEST
+ms.keywords : BTH_SDP_SERVICE_SEARCH_REQUEST, PBTH_SDP_SERVICE_SEARCH_REQUEST, bth_structs_c625eff6-6ec7-49a4-a141-778ebda2d563.xml, *PBTH_SDP_SERVICE_SEARCH_REQUEST, bthioctl/PBTH_SDP_SERVICE_SEARCH_REQUEST, _BTH_SDP_SERVICE_SEARCH_REQUEST, BTH_SDP_SERVICE_SEARCH_REQUEST structure [Bluetooth Devices], PBTH_SDP_SERVICE_SEARCH_REQUEST structure pointer [Bluetooth Devices], bltooth.bth_sdp_service_search_request, bthioctl/BTH_SDP_SERVICE_SEARCH_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_SDP_SERVICE_SEARCH_REQUEST
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BTH_SDP_SERVICE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_SEARCH_REQUEST
 ---
 
@@ -48,17 +52,21 @@ typedef struct _BTH_SDP_SERVICE_SEARCH_REQUEST {
 
 ## Members
 
-        
-            `uuids`
 
-            An array of UUIDs that represent the services for which to query. Each entry can be a 2-byte,
+`HANDLE_SDP_FIELD_NAME`
+
+
+
+`uuids`
+
+An array of UUIDs that represent the services for which to query. Each entry can be a 2-byte,
      4-byte, or 16-byte type, and there can be a maximum of 12 entries. The array can be terminated before
      all 12 entries are used if a UUID entry contains all zeros.
 
-    ## Remarks
-        This structure is passed as the input buffer to the 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_search.md">
-    IOCTL_BTH_SDP_SERVICE_SEARCH</a> IOCTL.
+## Remarks
+This structure is passed as the input buffer to the 
+    <mshelp:link keywords="bltooth.ioctl_bth_sdp_service_search" tabindex="0"><b>
+    IOCTL_BTH_SDP_SERVICE_SEARCH</b></mshelp:link> IOCTL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,16 +76,12 @@ typedef struct _BTH_SDP_SERVICE_SEARCH_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
-</dt>
-<dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_search.md">IOCTL_BTH_SDP_SERVICE_SEARCH</a>
-</dt>
-</dl>
+
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
+
  
 
  

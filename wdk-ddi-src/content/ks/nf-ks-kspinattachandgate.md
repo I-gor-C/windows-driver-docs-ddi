@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 63081b07-add8-49fc-b12d-6aa5c43356ce
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinAttachAndGate
+ms.keywords : avfunc_395e0cf9-ba21-4b20-a37b-7758d1bfeca0.xml, ks/KsPinAttachAndGate, stream.kspinattachandgate, KsPinAttachAndGate function [Streaming Media Devices], KsPinAttachAndGate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinAttachAndGate
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -82,17 +86,12 @@ To insert the gate, first call <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGa
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kspinattachorgate.md">KsPinAttachOrGate</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinattachorgate.md">KsPinAttachOrGate</a>
+
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+
  
 
  

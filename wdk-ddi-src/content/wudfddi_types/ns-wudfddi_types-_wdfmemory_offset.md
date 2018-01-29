@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 960710f7-15b1-4815-a33a-0e903d0a4193
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDFMEMORY_OFFSET, WDFMEMORY_OFFSET, *PWDFMEMORY_OFFSET
+ms.keywords : PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET, WDFMEMORY_OFFSET structure, umdfstructs_919b5e02-39d3-4f06-867d-43133c008e85.xml, wudfddi_types/WDFMEMORY_OFFSET, wdf.wdfmemory_offset_umdf, *PWDFMEMORY_OFFSET, umdf.wdfmemory_offset, wudfddi_types/PWDFMEMORY_OFFSET, _WDFMEMORY_OFFSET, PWDFMEMORY_OFFSET structure pointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDFMEMORY_OFFSET
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDFMEMORY_OFFSET, *PWDFMEMORY_OFFSET
 req.product : Windows 10 or later.
 ---
@@ -51,17 +55,17 @@ typedef struct _WDFMEMORY_OFFSET {
 
 ## Members
 
-        
-            `BufferLength`
 
-            The size, in bytes, of the information that is accessed in the memory block.
-        
-            `BufferOffset`
+`BufferLength`
 
-            The offset, in bytes, into the memory block where information is first accessed.
+The size, in bytes, of the information that is accessed in the memory block.
 
-    ## Remarks
-        A UMDF driver supplies a pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560145">IWDFMemory::CopyFromMemory</a> method to describe information to copy from a memory block.
+`BufferOffset`
+
+The offset, in bytes, into the memory block where information is first accessed.
+
+## Remarks
+A UMDF driver supplies a pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560145">IWDFMemory::CopyFromMemory</a> method to describe information to copy from a memory block.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -71,13 +75,10 @@ typedef struct _WDFMEMORY_OFFSET {
 | **Minimum UMDF version** |  |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560145">IWDFMemory::CopyFromMemory</a>
-</dt>
-</dl>
+
  
 
  

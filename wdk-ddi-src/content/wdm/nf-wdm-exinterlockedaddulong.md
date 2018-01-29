@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c418538a-4041-4ea8-8a4c-1f4d35e434c7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExInterlockedAddUlong
+ms.keywords : ExInterlockedAddUlong, kernel.exinterlockedaddulong, k102_bec4a58e-ee68-4f9e-8fac-9ef0c193ef10.xml, ExInterlockedAddUlong routine [Kernel-Mode Driver Architecture], wdm/ExInterlockedAddUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExInterlockedAddUlong
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -96,20 +100,14 @@ Callers of <b>ExInterlockedAddUlong</b> run at any IRQL. The storage for the <i>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedaddlargeinteger.md">ExInterlockedAddLargeInteger</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
+
+<a href="..\wdm\nf-wdm-exinterlockedaddlargeinteger.md">ExInterlockedAddLargeInteger</a>
+
  
 
  

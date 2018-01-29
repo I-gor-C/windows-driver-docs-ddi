@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7B67BB47-6F95-4B1A-A823-F796529D5C48
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFastIoMdlWriteComplete
+ms.keywords : ifsk.fltfastiomdlwritecomplete, FsRtlMdlWriteCompleteDev routine [Installable File System Drivers], fltkernel/FsRtlMdlWriteCompleteDev, FltFastIoMdlWriteComplete, FsRtlMdlWriteCompleteDev
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlMdlWriteCompleteDev
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -94,11 +98,8 @@ Each call to <a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">Flt
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">FltFastIoPrepareMdlWrite</a>
-</dt>
-</dl>
+
  
 
  

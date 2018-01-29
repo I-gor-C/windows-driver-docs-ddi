@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bf8390db-7e42-4860-8cf6-df3459f16cea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxAcquireSharedFcbResourceInMRxEx
+ms.keywords : RxAcquireSharedFcbResourceInMRxEx routine [Installable File System Drivers], mrxfcb/RxAcquireSharedFcbResourceInMRxEx, RxAcquireSharedFcbResourceInMRxEx, ifsk.rxacquiresharedfcbresourceinmrxex, rxref_2b8fc5d6-96e5-45a0-897a-f55964e6cc8a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The RxAcquireSharedFcbResourceInMRxEx routine is onl
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxAcquireSharedFcbResourceInMRxEx
-req.alt-loc : mrxfcb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -55,18 +59,40 @@ A pointer to the RX_CONTEXT. This parameter supplies the context of the operatio
 
 `Fcb`
 
-
+TBD
 
 
 ## Return Value
 
 <b>RxAcquireSharedFcbResourceInMRxEx</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_LOCK_NOT_GRANTED</b></dt>
-</dl>The FCB resource was not acquired.
+</dl>
+</td>
+<td width="60%">
+The FCB resource was not acquired.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_CANCELLED</b></dt>
-</dl>The RX_CONTEXT associated with the FCB was canceled.
+</dl>
+</td>
+<td width="60%">
+The RX_CONTEXT associated with the FCB was canceled.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -90,21 +116,14 @@ An FCB resource acquired with <b>RxAcquireSharedFcbResourceInMRxEx </b>should be
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\mrxfcb\nf-mrxfcb-rxacquiresharedfcbresourceinmrx.md">RxAcquireSharedFcbResourceInMRx</a>
-</dt>
-<dt>
-<a href="..\mrxfcb\nf-mrxfcb-rxacquireexclusivefcbresourceinmrx.md">RxAcquireExclusiveFcbResourceInMRx</a>
-</dt>
-<dt><b>RxAcquireSharedFcbResourceInMRx</b></dt>
-<dt>
 <a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceforthreadinmrx.md">RxReleaseFcbResourceForThreadInMRx</a>
-</dt>
-<dt>
+
+<a href="..\mrxfcb\nf-mrxfcb-rxacquireexclusivefcbresourceinmrx.md">RxAcquireExclusiveFcbResourceInMRx</a>
+
+<b>RxAcquireSharedFcbResourceInMRx</b>
+
 <a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceinmrx.md">RxReleaseFcbResourceInMRx</a>
-</dt>
-</dl>
+
  
 
  

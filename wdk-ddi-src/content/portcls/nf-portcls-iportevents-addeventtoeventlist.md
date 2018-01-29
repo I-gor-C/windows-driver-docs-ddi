@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 49b01942-3562-4fb2-907b-8863b2f09f8e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortEvents, IPortEvents::AddEventToEventList, AddEventToEventList
+ms.keywords : AddEventToEventList, audmp-routines_13ea6aa7-0f65-43d4-b80c-4aa46102c43e.xml, IPortEvents interface [Audio Devices], AddEventToEventList method, IPortEvents, AddEventToEventList method [Audio Devices], portcls/IPortEvents::AddEventToEventList, IPortEvents::AddEventToEventList, audio.iportevents_addeventtoeventlist, AddEventToEventList method [Audio Devices], IPortEvents interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortEvents.AddEventToEventList
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -75,20 +79,14 @@ This method is used by a miniport driver's to add events to the event list that 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
-</dt>
-<dt>
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
+
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
  
 
  

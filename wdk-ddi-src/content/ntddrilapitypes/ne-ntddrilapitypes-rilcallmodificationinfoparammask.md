@@ -7,8 +7,8 @@ old-location : netvista\rilcallmodificationinfoparammask.htm
 old-project : netvista
 ms.assetid : 1282f158-9e41-4789-abe9-181f367ea235
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMODIFICATIONINFOPARAMMASK, RILCALLMODIFICATIONINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_CMI_NEWCALLTYPE, ntddrilapitypes/RIL_PARAM_CMI_OLDCALLTYPE, RIL_PARAM_CMI_OLDCALLTYPE, ntddrilapitypes/RIL_PARAM_CMI_ADDRESS, RILCALLMODIFICATIONINFOPARAMMASK, RIL_PARAM_CMI_ALL, RIL_PARAM_CMI_ALPHAIDENTIFIER, RILCALLMODIFICATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_CMI_MODIFICATIONTYPE, RIL_PARAM_CMI_ADDRESS, ntddrilapitypes/RIL_PARAM_CMI_ALL, ntddrilapitypes/RIL_PARAM_CMI_ID, ntddrilapitypes/RIL_PARAM_CMI_NEWCALLTYPE, netvista.rilcallmodificationinfoparammask, ntddrilapitypes/RIL_PARAM_CMI_ALPHAIDENTIFIER, RIL_PARAM_CMI_MODIFICATIONTYPE, ntddrilapitypes/RILCALLMODIFICATIONINFOPARAMMASK, RIL_PARAM_CMI_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMODIFICATIONINFOPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLMODIFICATIONINFOPARAMMASK
 ---
 
@@ -66,6 +70,11 @@ typedef enum _RILCALLMODIFICATIONINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_CMI_ALPHAIDENTIFIER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_CMI_EXECUTOR</td>
 <td></td>
 </tr>
 

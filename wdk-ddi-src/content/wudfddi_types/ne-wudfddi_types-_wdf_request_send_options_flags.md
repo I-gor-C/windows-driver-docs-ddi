@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 02678466-aa8d-436d-8be3-b8a57218a106
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_REQUEST_SEND_OPTIONS_FLAGS, WDF_REQUEST_SEND_OPTIONS_FLAGS
+ms.keywords : WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE, wudfddi_types/WDF_REQUEST_SEND_OPTION_TIMEOUT, WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT, wudfddi_types/WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE, WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration, _WDF_REQUEST_SEND_OPTIONS_FLAGS, wudfddi_types/WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE, wudfddi_types/WDF_REQUEST_SEND_OPTIONS_FLAGS, WDF_REQUEST_SEND_OPTION_SYNCHRONOUS, wudfddi_types/WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT, WDF_REQUEST_SEND_OPTION_TIMEOUT, wudfddi_types/WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET, WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE, umdfstructs_a99bff2d-2fa0-4267-b3be-aa9fd01a0778.xml, wdf.wdf_request_send_options_flags__umdf_, wudfddi_types/WDF_REQUEST_SEND_OPTION_SYNCHRONOUS, WDF_REQUEST_SEND_OPTIONS_FLAGS, WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET, umdf.wdf_request_send_options_flags__umdf_
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.0
-req.alt-api : WDF_REQUEST_SEND_OPTIONS_FLAGS
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_SEND_OPTIONS_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -110,11 +114,8 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
-</dt>
-</dl>
+
  
 
  

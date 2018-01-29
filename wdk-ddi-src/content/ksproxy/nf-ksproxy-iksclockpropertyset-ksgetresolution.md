@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 507d41ae-31b9-4807-99af-9ec48eb2b5aa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsClockPropertySet, IKsClockPropertySet::KsGetResolution, KsGetResolution
+ms.keywords : IKsClockPropertySet::KsGetResolution, IKsClockPropertySet interface [Streaming Media Devices], KsGetResolution method, ksproxy/IKsClockPropertySet::KsGetResolution, IKsClockPropertySet, KsGetResolution method [Streaming Media Devices], ksproxy_0c0583b1-5ab3-4e30-bf99-6822d8966171.xml, stream.iksclockpropertyset_ksgetresolution, KsGetResolution method [Streaming Media Devices], IKsClockPropertySet interface, KsGetResolution
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsClockPropertySet.KsGetResolution
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -77,14 +81,10 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
+
  
 
  

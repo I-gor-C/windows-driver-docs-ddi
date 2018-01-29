@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : bc1c82f0-f68c-433c-87f0-16c687d18557
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
+ms.keywords : hid.pi8042_keyboard_initialization_routine, KeyboardInitializationRoutine callback function [Human Input Devices], KeyboardInitializationRoutine, PI8042_KEYBOARD_INITIALIZATION_ROUTINE, PI8042_KEYBOARD_INITIALIZATION_ROUTINE, ntdd8042/KeyboardInitializationRoutine, i8042ref_4bc54efc-bd3d-4091-a8c7-64631d187d20.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeyboardInitializationRoutine
-req.alt-loc : ntdd8042.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 
@@ -100,14 +104,10 @@ If an upper-level keyboard filter driver supplies an initialization callback, I8
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntdd8042\nc-ntdd8042-pi8042_synch_read_port.md">PI8042_SYNCH_READ_PORT</a>
-</dt>
-<dt>
+
 <a href="..\ntdd8042\nc-ntdd8042-pi8042_synch_write_port.md">PI8042_SYNCH_WRITE_PORT</a>
-</dt>
-</dl>
+
  
 
  

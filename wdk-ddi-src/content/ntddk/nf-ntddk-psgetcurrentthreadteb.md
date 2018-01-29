@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 822B75D4-A825-4BB1-8265-A1389F4982C7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetCurrentThreadTeb
+ms.keywords : kernel.psgetcurrentthreadteb, ntddk/PsGetCurrentThreadTeb, PsGetCurrentThreadTeb routine [Kernel-Mode Driver Architecture], PsGetCurrentThreadTeb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsGetCurrentThreadTeb
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -69,11 +73,8 @@ A pointer to the thread environment block of the current thread. The TEB should 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559917">Process and Thread Manager Routines</a>
-</dt>
-</dl>
+
  
 
  

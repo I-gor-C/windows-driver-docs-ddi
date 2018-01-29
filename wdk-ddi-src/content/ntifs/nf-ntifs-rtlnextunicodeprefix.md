@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c4f43f4c-a598-4bda-9325-21440f56ab17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlNextUnicodePrefix
+ms.keywords : ntifs/RtlNextUnicodePrefix, RtlNextUnicodePrefix, RtlNextUnicodePrefix routine [Installable File System Drivers], ifsk.rtlnextunicodeprefix, rtlref_75c728f8-96b0-4e46-b47a-7d30ac61872c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows XP
 req.target-min-winversvr : Windows Server 2003
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlNextUnicodePrefix
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -58,7 +62,6 @@ Pointer to the prefix table. The table must have been initialized by calling <a 
 Set to <b>TRUE</b> if the enumeration is to start at the first element in the table. Set to <b>FALSE</b> if resuming the enumeration from a previous call.
 
 To enumerate all elements in the table, use <b>RtlNextUnicodePrefix</b> as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -101,20 +104,14 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlremoveunicodeprefix.md">RtlRemoveUnicodePrefix</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
+
  
 
  

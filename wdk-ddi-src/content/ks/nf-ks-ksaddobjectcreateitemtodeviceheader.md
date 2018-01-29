@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cf508b5c-4af8-4371-b833-eaa71535afc5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAddObjectCreateItemToDeviceHeader
+ms.keywords : ksfunc_89d7ee34-62de-4702-9cfa-5e3b6c9a9819.xml, ks/KsAddObjectCreateItemToDeviceHeader, stream.ksaddobjectcreateitemtodeviceheader, KsAddObjectCreateItemToDeviceHeader function [Streaming Media Devices], KsAddObjectCreateItemToDeviceHeader
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAddObjectCreateItemToDeviceHeader
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

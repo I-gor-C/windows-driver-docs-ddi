@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0c87a0b8-f355-48a4-a119-11e047e159d0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FORMAT_EX_PARAMETERS, FORMAT_EX_PARAMETERS, *PFORMAT_EX_PARAMETERS
+ms.keywords : storage.format_ex_parameters, ntdddisk/FORMAT_EX_PARAMETERS, ntdddisk/PFORMAT_EX_PARAMETERS, _FORMAT_EX_PARAMETERS, PFORMAT_EX_PARAMETERS, PFORMAT_EX_PARAMETERS structure pointer [Storage Devices], structs-disk_753384dd-08cd-40ee-90dc-61a82e5e0d14.xml, *PFORMAT_EX_PARAMETERS, FORMAT_EX_PARAMETERS structure [Storage Devices], FORMAT_EX_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FORMAT_EX_PARAMETERS
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FORMAT_EX_PARAMETERS, *PFORMAT_EX_PARAMETERS
 ---
 
@@ -53,38 +57,38 @@ typedef struct _FORMAT_EX_PARAMETERS {
 
 ## Members
 
-        
-            `EndCylinderNumber`
 
-            Indicates the number of the cylinder where the formatting should end.
-        
-            `EndHeadNumber`
+`EndCylinderNumber`
 
-            Indicates the number of the head where the formatting should end.
-        
-            `FormatGapLength`
+Indicates the number of the cylinder where the formatting should end.
 
-            Indicates the length in bytes of a format gap.
-        
-            `MediaType`
+`EndHeadNumber`
 
-            Indicates format information, such as the disk size and the number of bytes per sector. For a list of the values that can be assigned to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a>.
-        
-            `SectorNumber`
+Indicates the number of the head where the formatting should end.
 
-            Contains an array whose first element indicates the number of the sector where the formatting should begin.
-        
-            `SectorsPerTrack`
+`FormatGapLength`
 
-            Indicates the number of sectors per track.
-        
-            `StartCylinderNumber`
+Indicates the length in bytes of a format gap.
 
-            Indicates the number of the cylinder where the formatting should begin.
-        
-            `StartHeadNumber`
+`MediaType`
 
-            Indicates the number of the head where the formatting should begin.
+Indicates format information, such as the disk size and the number of bytes per sector. For a list of the values that can be assigned to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a>.
+
+`SectorNumber`
+
+Contains an array whose first element indicates the number of the sector where the formatting should begin.
+
+`SectorsPerTrack`
+
+Indicates the number of sectors per track.
+
+`StartCylinderNumber`
+
+Indicates the number of the cylinder where the formatting should begin.
+
+`StartHeadNumber`
+
+Indicates the number of the head where the formatting should begin.
 
 
 ## Requirements
@@ -95,19 +99,14 @@ typedef struct _FORMAT_EX_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_format_tracks_ex.md">IOCTL_DISK_FORMAT_TRACKS_EX</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_format_tracks.md">IOCTL_DISK_FORMAT_TRACKS</a>
-</dt>
-<dt>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_format_tracks_ex.md">IOCTL_DISK_FORMAT_TRACKS_EX</a>
+
 <a href="..\ntdddisk\ns-ntdddisk-_format_parameters.md">FORMAT_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6f5a3c65-9d6c-4d5f-af99-71aba16eb254
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSSTATE, *PKSSTATE, KSSTATE"
+ms.keywords : ks/KSSTATE_PAUSE, KSSTATE, ks/KSSTATE_ACQUIRE, KSSTATE_STOP, KSSTATE enumeration [Streaming Media Devices], KSSTATE_RUN, ks/KSSTATE_STOP, *PKSSTATE, ks/KSSTATE, PKSSTATE, ks/KSSTATE_RUN, stream.ksstate, KSSTATE_ACQUIRE, PKSSTATE enumeration pointer [Streaming Media Devices], KSSTATE_PAUSE, ks-struct_a5862576-6737-471e-8e31-1bc98fb4b4f9.xml, ks/PKSSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSSTATE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSSTATE, KSSTATE"
 ---
 

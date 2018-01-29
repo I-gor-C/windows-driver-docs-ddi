@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f2d332cd-d744-444c-b616-d8400ad30d43
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDriverRegisterTraceInfo
+ms.keywords : kmdf.wdfdriverregistertraceinfo, PFN_WDFDRIVERREGISTERTRACEINFO, WdfDriverRegisterTraceInfo, WdfDriverRegisterTraceInfo method, wdf.wdfdriverregistertraceinfo, DFDriverObjectRef_1cbf9cbb-1a7f-4227-9c80-5d9c9cf0bb12.xml, wdfdriver/WdfDriverRegisterTraceInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WdfDriverRegisterTraceInfo
-req.alt-loc : Wdfdriver.h
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Not applicable
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DRIVER_INIT_FLAGS
 req.product : Windows 10 or later.
 ---

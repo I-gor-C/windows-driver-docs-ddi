@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 379fc7ec-577a-48a4-83b0-4be4e8cfe1bf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoQueueFindRequest
+ms.keywords : wdfio/WdfIoQueueFindRequest, PFN_WDFIOQUEUEFINDREQUEST, DFQueueObjectRef_c0d57542-6256-4502-ad31-8b388857296f.xml, WdfIoQueueFindRequest, wdf.wdfioqueuefindrequest, kmdf.wdfioqueuefindrequest, WdfIoQueueFindRequest method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfIoQueueFindRequest
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueuefindrequestfailed, wdfioqueueretrievefoundrequest, wdfioqueueretrievenextrequest
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -79,17 +83,45 @@ A pointer to a location that receives a handle to the found request. If no match
 ## Return Value
 
 <b>WdfIoQueueFindRequest</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The driver supplies an invalid handle.
+</dl>
+</td>
+<td width="60%">
+The driver supplies an invalid handle.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>The request that is identified by the <i>FoundRequest</i> parameter cannot be found in the I/O queue.
+</dl>
+</td>
+<td width="60%">
+The request that is identified by the <i>FoundRequest</i> parameter cannot be found in the I/O queue.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MORE_ENTRIES</b></dt>
-</dl>The framework reached the end of the I/O queue without finding a request that matches the search criteria.
+</dl>
+</td>
+<td width="60%">
+The framework reached the end of the I/O queue without finding a request that matches the search criteria.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -107,6 +139,30 @@ If <i>FoundRequest</i> is <b>NULL</b>, this method locates the first request in 
 
 If <i>Parameters</i> is not <b>NULL</b>, this method copies the found request's parameters into the driver-supplied structure.
 
+Every call to <b>WdfIoQueueFindRequest</b> that returns STATUS_SUCCESS increments the reference count of the request object whose handle is returned in <i>OutRequest</i>. Therefore, your driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a> after you have finished using the handle. 
+
+Calling <b>WdfIoQueueFindRequest</b> does <i>not</i> grant the driver <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-ownership">ownership</a> of any requests. If you want your driver to obtain ownership of a request so that it can process the request, the driver must call <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>. In fact, the driver can do only the following with the handle that it receives for the <i>OutRequest</i> parameter:
+<ul>
+<li>
+Use it as the <i>FoundRequest</i> parameter in a subsequent call to <b>WdfIoQueueFindRequest</b>.
+
+</li>
+<li>
+Use it as the <i>FoundRequest</i> parameter in a subsequent call to <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>.
+
+</li>
+<li>
+Use it as the input parameter in a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548749">WdfObjectGetTypedContext</a> or a driver-defined method for accessing the object's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space">context space</a>.
+
+</li>
+<li>
+Use it as the input parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>.
+
+</li>
+</ul>If a call to <b>WdfIoQueueFindRequest</b> returns STATUS_NOT_FOUND, a request that was previously in the queue has been removed. The request might have been canceled. A call to <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a> can also return STATUS_NOT_FOUND.
+
+For more information about the <b>WdfIoQueueFindRequest</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/managing-i-o-queues">Managing I/O Queues</a>.
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -121,20 +177,14 @@ If <i>Parameters</i> is not <b>NULL</b>, this method copies the found request's 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
-</dt>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>
-</dt>
-<dt>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
+
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

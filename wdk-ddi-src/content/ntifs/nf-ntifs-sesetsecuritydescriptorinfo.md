@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d6f02142-1cd8-4f09-b106-d963bf080495
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeSetSecurityDescriptorInfo
+ms.keywords : ifsk.sesetsecuritydescriptorinfo, SeSetSecurityDescriptorInfo, seref_061b8609-a537-4ccb-aa60-50a46b08e97f.xml, SeSetSecurityDescriptorInfo routine [Installable File System Drivers], ntifs/SeSetSecurityDescriptorInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeSetSecurityDescriptorInfo
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -60,7 +64,6 @@ Pointer to the object whose security descriptor is to be set. This is used to up
 `SecurityInformation`
 
 Pointer to a bitmask specifying which security information is to be applied to the object. Can be a combination of one or more of the following values. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -110,7 +113,7 @@ Indicates the system ACL (SACL) of the object is being set. Requires ACCESS_SYST
 
 `ModificationDescriptor`
 
-
+TBD
 
 `ObjectsSecurityDescriptor`
 
@@ -119,17 +122,13 @@ Pointer to a pointer to the object's security descriptor. The security descripto
 `PoolType`
 
 Specifies the pool type to use when allocating a new security descriptor, which can be one of the following: 
-
 <ul>
 <li><b>NonPagedPool</b></li>
 <li><b>PagedPool</b></li>
 <li><b>NonPagedPoolCacheAligned</b></li>
 <li><b>PagedPoolCacheAligned</b></li>
-</ul>
-Usually, a caller specifies <b>PagedPool</b>, or else <b>NonPagedPool</b> if the buffer will be accessed at IRQL &gt;= DISPATCH_LEVEL or in an arbitrary thread context. 
-
-<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div>
-<div> </div>
+</ul>Usually, a caller specifies <b>PagedPool</b>, or else <b>NonPagedPool</b> if the buffer will be accessed at IRQL &gt;= DISPATCH_LEVEL or in an arbitrary thread context. 
+<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div><div> </div>
 
 `GenericMapping`
 
@@ -138,15 +137,45 @@ Pointer to a GENERIC_MAPPING structure that specifies the mapping of generic to 
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The object's security descriptor was successfully modified.
+</dl>
+</td>
+<td width="60%">
+The object's security descriptor was successfully modified.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BAD_DESCRIPTOR_FORMAT</b></dt>
-</dl>The provided object's security descriptor was not in self-relative format.
+</dl>
+</td>
+<td width="60%">
+The provided object's security descriptor was not in self-relative format.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_SECURITY_ON_OBJECT</b></dt>
-</dl>The object does not have a security descriptor.
+</dl>
+</td>
+<td width="60%">
+The object does not have a security descriptor.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -172,50 +201,34 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-sequerysecuritydescriptorinfo.md">SeQuerySecurityDescriptorInfo</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-sesetaccessstategenericmapping.md">SeSetAccessStateGenericMapping</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
+
+<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+
+<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
+
 <a href="..\ntifs\nf-ntifs-sesetsecuritydescriptorinfoex.md">SeSetSecurityDescriptorInfoEx</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-sequerysecuritydescriptorinfo.md">SeQuerySecurityDescriptorInfo</a>
+
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
+
+<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
+
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

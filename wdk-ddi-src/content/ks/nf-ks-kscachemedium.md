@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d0e9c146-5d73-49e8-92a8-c453f5bbbfe9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCacheMedium
+ms.keywords : ks/KsCacheMedium, KsCacheMedium, stream.kscachemedium, KsCacheMedium function [Streaming Media Devices], ksfunc_19ac113f-3eb8-4073-90b0-786cc82cdf37.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCacheMedium
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -73,7 +77,7 @@ Contains the direction of the Pin.  1 is output, 0 is input.
 
 <b>\System\CurrentControlSet\Control\MediumCache\GUID\DWORD\DWORD </b>
 
-This enables fast lookup of connected filters in TvTuner and other complex graphs.  Note that the GUID identifies the Medium of the connection, and that the DWORDs denote the device instance.  The value name is the SymbolicLink for the driver, and ActualValue is the pin direction.turning. </p>
+This enables fast lookup of connected filters in TvTuner and other complex graphs.  Note that the GUID identifies the Medium of the connection, and that the DWORDs denote the device instance.  The value name is the SymbolicLink for the driver, and ActualValue is the pin direction.turning.
 
 ## Requirements
 | &nbsp; | &nbsp; |

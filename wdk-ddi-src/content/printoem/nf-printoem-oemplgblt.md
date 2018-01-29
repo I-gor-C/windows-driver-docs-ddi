@@ -7,8 +7,8 @@ old-location : print\oemplgblt.htm
 old-project : print
 ms.assetid : c33a9592-8e1b-4028-bd34-72cc4885f17f
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : OEMPlgBlt
+ms.date : 1/18/2018
+ms.keywords : printoem/OEMPlgBlt, print.oemplgblt, OEMPlgBlt function [Print Devices], OEMPlgBlt, print_unidrv-pscript_rendering_b0052697-f944-4969-94c3-efc74838d571.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OEMPlgBlt
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STDVARIABLEINDEX
 req.product : Windows 10 or later.
 ---

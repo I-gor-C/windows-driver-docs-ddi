@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3b953c73-a033-465a-a041-7c21ee307c32
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL, D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL
+ms.keywords : D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure [Display Devices], _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL, D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL, display.d3dddiarg_destroyauthenticatedchannel, UMDisplayDriver_param_Structs_be6187b3-2d01-450e-90a7-d01a97aba764.xml, d3dumddi/D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL is supported b
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL {
 
 ## Members
 
-        
-            `hChannel`
 
-            [in] The handle to the authenticated channel that the driver destroys.
+`hChannel`
+
+[in] The handle to the authenticated channel that the driver destroys.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyauthenticatedchannel.md">DestroyAuthenticatedChannel</a>
-</dt>
-</dl>
+
  
 
  

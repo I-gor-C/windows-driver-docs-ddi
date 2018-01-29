@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 95e1778a-4f65-40ee-8ad2-f797ce9e95b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_MONITOR_MODE,
+ms.keywords : iddcx/IDDCX_MONITOR_MODE, IDDCX_MONITOR_MODE structure [Display Devices], display.iddcx_monitor_mode, IDDCX_MONITOR_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_MONITOR_MODE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -48,21 +52,19 @@ typedef struct IDDCX_MONITOR_MODE {
 
 ## Members
 
-        
-            `MonitorVideoSignalInfo`
 
-            This is the details of the Monitor mode.
+`MonitorVideoSignalInfo`
 
-<div class="alert"><b>Note</b>  The<a href="https://msdn.microsoft.com/library/windows/hardware/ff554007">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a><b>AdditionalSignalInfo</b> value vSyncFreqDivider has to have a zero value.</div>
-<div> </div>
-        
-            `Origin`
+This is the details of the Monitor mode.
+<div class="alert"><b>Note</b>  The<a href="https://msdn.microsoft.com/library/windows/hardware/ff554007">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a><b>AdditionalSignalInfo</b> value vSyncFreqDivider has to have a zero value.</div><div> </div>
 
-            Where the driver derived this mode from.
-        
-            `Size`
+`Origin`
 
-            Total size of the structure.
+Where the driver derived this mode from.
+
+`Size`
+
+Total size of the structure.
 
 
 ## Requirements

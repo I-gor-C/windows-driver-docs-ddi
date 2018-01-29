@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ed9738cb-7016-417b-baae-b8d4242a384e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.keywords : storage.ioctl_cdrom_get_drive_geometry, IOCTL_CDROM_GET_DRIVE_GEOMETRY control code [Storage Devices], IOCTL_CDROM_GET_DRIVE_GEOMETRY, ntddcdrm/IOCTL_CDROM_GET_DRIVE_GEOMETRY, k307_f082c6e5-9d9a-4a11-a363-710f30cf3881.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CDROM_GET_DRIVE_GEOMETRY
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_DRIVE_GEOMETRY IOCTL
-Returns information about the CD-ROM's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
-
-
-
 Returns information about the CD-ROM's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
 
 ### Major Code
@@ -63,7 +63,6 @@ The driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code.
 
 
@@ -74,16 +73,12 @@ I/O Status block
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_drive_geometry_ex.md">IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
+
  
 
  

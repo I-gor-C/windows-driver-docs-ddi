@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ef60ba1c-6fff-4553-ba1c-97abbe48fed9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY, D3DKMT_GETCONTEXTSCHEDULINGPRIORITY
+ms.keywords : d3dkmthk/D3DKMT_GETCONTEXTSCHEDULINGPRIORITY, display.d3dkmt_getcontextschedulingpriority, D3DKMT_GETCONTEXTSCHEDULINGPRIORITY structure [Display Devices], _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY, D3DKMT_GETCONTEXTSCHEDULINGPRIORITY, OpenGL_Structs_076cf4c2-d805-473f-a035-1e0ec357ca1e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_GETCONTEXTSCHEDULINGPRIORITY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_GETCONTEXTSCHEDULINGPRIORITY
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY {
 
 ## Members
 
-        
-            `hContext`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context to retrieve scheduling priority for.
-        
-            `Priority`
+`hContext`
 
-            [out] The priority level that is retrieved for the device context.
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context to retrieve scheduling priority for.
+
+`Priority`
+
+[out] The priority level that is retrieved for the device context.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetcontextschedulingpriority.md">D3DKMTGetContextSchedulingPriority</a>
-</dt>
-</dl>
+
  
 
  

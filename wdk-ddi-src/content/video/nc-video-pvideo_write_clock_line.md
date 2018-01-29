@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4dfd6223-420e-4087-b5bd-8277575321f7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.writeclockline, WriteClockLine callback function [Display Devices], WriteClockLine, PVIDEO_WRITE_CLOCK_LINE, PVIDEO_WRITE_CLOCK_LINE, video/WriteClockLine, VideoMiniport_Functions_7d36df35-ac09-4a82-af0c-47a733617d9a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WriteClockLine
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -84,26 +88,18 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
-</dt>
-<dt>
+
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
-</dt>
-<dt>
+
 <a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a>
-</dt>
-</dl>
+
+<a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
+
+<a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a>
+
+<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
+
  
 
  

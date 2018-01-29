@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5dd82086-d39c-4ebc-9e2a-73ef504f873c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeDpc
+ms.keywords : KeInitializeDpc routine [Kernel-Mode Driver Architecture], kernel.keinitializedpc, KeInitializeDpc, k105_069c115c-3a05-442e-8fc4-56dcb635a473.xml, wdm/KeInitializeDpc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInitializeDpc
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,20 +92,14 @@ Storage for the DPC object must be resident: in the device extension of a driver
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keremovequeuedpc.md">KeRemoveQueueDpc</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keremovequeuedpc.md">KeRemoveQueueDpc</a>
+
  
 
  

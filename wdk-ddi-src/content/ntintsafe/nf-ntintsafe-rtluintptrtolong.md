@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 03138EBA-F041-47E4-B379-25A96B04E491
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUIntPtrToLong
+ms.keywords : kernel.rtluintptrtolong, RtlUIntPtrToLong function [Kernel-Mode Driver Architecture], RtlUIntPtrToLong, ntintsafe/RtlUIntPtrToLong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUIntPtrToLong
-req.alt-loc : Ntintsafe.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
@@ -51,7 +55,7 @@ NTSTATUS RtlUIntPtrToLong(
 
 `uOperand`
 
-
+TBD
 
 `plResult`
 
@@ -66,7 +70,11 @@ None
 
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
-This function uses the following alternate name:</p>
+This function uses the following alternate name:
+<ul>
+<li>RtlSizeTToLong
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

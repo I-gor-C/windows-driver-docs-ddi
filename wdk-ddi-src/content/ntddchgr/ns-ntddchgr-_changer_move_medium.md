@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b19c8add-7377-40d2-8496-fcfa166ac143
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CHANGER_MOVE_MEDIUM, CHANGER_MOVE_MEDIUM, *PCHANGER_MOVE_MEDIUM
+ms.keywords : storage.changer_move_medium, structs-changer_866dd781-90cd-41be-84ce-61c16d31a369.xml, _CHANGER_MOVE_MEDIUM, ntddchgr/PCHANGER_MOVE_MEDIUM, PCHANGER_MOVE_MEDIUM, ntddchgr/CHANGER_MOVE_MEDIUM, PCHANGER_MOVE_MEDIUM structure pointer [Storage Devices], CHANGER_MOVE_MEDIUM, *PCHANGER_MOVE_MEDIUM, CHANGER_MOVE_MEDIUM structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CHANGER_MOVE_MEDIUM
-req.alt-loc : ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CHANGER_MOVE_MEDIUM, *PCHANGER_MOVE_MEDIUM
 ---
 
@@ -49,22 +53,22 @@ typedef struct _CHANGER_MOVE_MEDIUM {
 
 ## Members
 
-        
-            `Destination`
 
-            Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> that indicates the destination of the piece of media originally at <b>Source</b>. The <b>ElementType</b> must be <b>ChangerDrive</b>, <b>ChangerTransport</b>, <b>ChangerSlot</b>, or <b>ChangerIEPort</b>.
-        
-            `Flip`
+`Destination`
 
-            Indicates, when <b>TRUE</b>, that the piece of media should be flipped. When <b>FALSE</b> the media is not ready to be flipped. This member is valid only if CHANGER_MEDIUM_FLIP is set in the <b>Features0</b> member of the  <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a> structure.
-        
-            `Source`
+Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> that indicates the destination of the piece of media originally at <b>Source</b>. The <b>ElementType</b> must be <b>ChangerDrive</b>, <b>ChangerTransport</b>, <b>ChangerSlot</b>, or <b>ChangerIEPort</b>.
 
-            Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> that indicates the element that contains the piece of media to be moved to <b>Destination</b>. The <b>ElementType</b> must be <b>ChangerDrive</b>, <b>ChangerTransport</b>, <b>ChangerSlot</b>, or <b>ChangerIEPort</b>.
-        
-            `Transport`
+`Flip`
 
-            Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> that indicates which transport element to use for the move operation. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned a value of <b>ChangerTransport</b>.
+Indicates, when <b>TRUE</b>, that the piece of media should be flipped. When <b>FALSE</b> the media is not ready to be flipped. This member is valid only if CHANGER_MEDIUM_FLIP is set in the <b>Features0</b> member of the  <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a> structure.
+
+`Source`
+
+Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> that indicates the element that contains the piece of media to be moved to <b>Destination</b>. The <b>ElementType</b> must be <b>ChangerDrive</b>, <b>ChangerTransport</b>, <b>ChangerSlot</b>, or <b>ChangerIEPort</b>.
+
+`Transport`
+
+Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> that indicates which transport element to use for the move operation. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned a value of <b>ChangerTransport</b>.
 
 
 ## Requirements
@@ -75,22 +79,16 @@ typedef struct _CHANGER_MOVE_MEDIUM {
 | **Minimum UMDF version** |  |
 | **Header** | ntddchgr.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_move_medium.md">IOCTL_CHANGER_MOVE_MEDIUM</a>
-</dt>
-<dt>
 <a href="..\mcd\nf-mcd-changermovemedium.md">ChangerMoveMedium</a>
-</dt>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
-</dt>
-<dt>
+
+<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_move_medium.md">IOCTL_CHANGER_MOVE_MEDIUM</a>
+
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
-</dt>
-</dl>
+
+<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
+
  
 
  

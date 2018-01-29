@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 27aa5d78-03ce-4fc9-b1c8-d02a760e2787
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_TARGET_OPEN_TYPE, WDF_IO_TARGET_OPEN_TYPE
+ms.keywords : WDF_IO_TARGET_OPEN_TYPE, wdfiotarget/WdfIoTargetOpenLocalTargetByFile, _WDF_IO_TARGET_OPEN_TYPE, WdfIoTargetOpenUseExistingDevice, DFIOTargetRef_4af14f33-176e-4dca-bf20-1841c834e29b.xml, wdfiotarget/WdfIoTargetOpenUndefined, WdfIoTargetOpenByName, WdfIoTargetOpenLocalTargetByFile, kmdf.wdf_io_target_open_type, WDF_IO_TARGET_OPEN_TYPE enumeration, wdfiotarget/WdfIoTargetOpenByName, WdfIoTargetOpenUndefined, wdf.wdf_io_target_open_type, wdfiotarget/WDF_IO_TARGET_OPEN_TYPE, WdfIoTargetOpenReopen, wdfiotarget/WdfIoTargetOpenReopen, wdfiotarget/WdfIoTargetOpenUseExistingDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_TARGET_OPEN_TYPE
-req.alt-loc : wdfiotarget.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_TARGET_OPEN_TYPE
 req.product : Windows 10 or later.
 ---
@@ -110,23 +114,16 @@ In this situation, you can use <b>WdfIoTargetOpenLocalTargetByFile</b> to cause 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_open_by_file.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE</a>
-</dt>
-<dt>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcloseforqueryremove.md">WdfIoTargetCloseForQueryRemove</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
-</dt>
-</dl>
+
+<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
+
  
 
  

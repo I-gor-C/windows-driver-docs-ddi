@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e503b016-3271-4cce-a7fc-09c04b56716d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCurrentOplock
+ms.keywords : FltCurrentOplock routine [Installable File System Drivers], FltCurrentOplock, fltkernel/FltCurrentOplock, ifsk.fltcurrentoplock, FltApiRef_a_to_d_cda1ee2b-1ce2-40a3-8e55-25846f59f611.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The FltCurrentOplock routine is available starting w
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltCurrentOplock
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -77,14 +81,10 @@ For more information about opportunistic locks, see the Microsoft Windows SDK do
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentoplock.md">FsRtlCurrentOplock</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
+
  
 
  

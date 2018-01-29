@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6c425b5d-8d9f-4438-b9e4-256dcc8878c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _PIPE_TERMINATION, PIPE_TERMINATION
+ms.keywords : _PIPE_TERMINATION, PPIPE_TERMINATION structure pointer [Streaming Media Devices], PPIPE_TERMINATION, ksproxy/PIPE_TERMINATION, PIPE_TERMINATION, PIPE_TERMINATION structure [Streaming Media Devices], ksproxy/PPIPE_TERMINATION, stream.pipe_termination, ksproxy_ee6f14a8-dda3-4b28-b6a9-e99bafd7e921.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PIPE_TERMINATION
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_TERMINATION
 ---
 
@@ -51,30 +55,30 @@ typedef struct _PIPE_TERMINATION {
 
 ## Members
 
-        
-            `Compression`
 
-            
-        
-            `Flags`
+`Compression`
 
-            
-        
-            `OptimalRange`
 
-            
-        
-            `OutsideFactors`
 
-            
-        
-            `PhysicalRange`
+`Flags`
 
-            
-        
-            `Weigth`
 
-            
+
+`OptimalRange`
+
+
+
+`OutsideFactors`
+
+
+
+`PhysicalRange`
+
+
+
+`Weigth`
+
+
 
 
 ## Requirements

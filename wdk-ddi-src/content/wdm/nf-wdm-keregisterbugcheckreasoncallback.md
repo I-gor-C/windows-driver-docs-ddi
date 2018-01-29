@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 01528aa0-c580-4527-a64d-83f4ed39a471
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRegisterBugCheckReasonCallback
+ms.keywords : KeRegisterBugCheckReasonCallback, k105_6b2fbc25-072d-470f-9860-e820e60cdf90.xml, wdm/KeRegisterBugCheckReasonCallback, KeRegisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture], kernel.keregisterbugcheckreasoncallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP Service Pack 1 (SP1), Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRegisterBugCheckReasonCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,31 +64,20 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff55
 
 A pointer to the callback routine to register. This parameter points to one of the following types of driver-implemented routine: 
 
-<dl>
-<dd>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
 
 
-</dd>
-<dd>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
 
 
-</dd>
-<dd>
 
 <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
-
-
-</dd>
-</dl>
 
 `Reason`
 
 Specifies the type of callback routine that <i>CallbackRoutine</i> points to. Set <i>Reason</i> to one of the <a href="..\wdm\ne-wdm-_kbugcheck_callback_reason.md">KBUGCHECK_CALLBACK_REASON</a> enumeration values in the following table.
-
 <table>
 <tr>
 <th>Value</th>
@@ -162,35 +155,24 @@ To display secondary dump data, you can use the <a href="http://go.microsoft.com
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\ne-wdm-_kbugcheck_callback_reason.md">KBUGCHECK_CALLBACK_REASON</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kederegisterbugcheckreasoncallback.md">KeDeregisterBugCheckReasonCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
+
+<a href="..\wdm\nf-wdm-kederegisterbugcheckreasoncallback.md">KeDeregisterBugCheckReasonCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
+
+<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
+
  
 
  

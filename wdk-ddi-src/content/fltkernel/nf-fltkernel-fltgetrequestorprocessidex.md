@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e6a8b2ca-7e9d-410a-b44b-7e873b6e5833
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetRequestorProcessIdEx
+ms.keywords : FltApiRef_e_to_o_ec80528f-12a7-4d31-9bd8-92050a16bd85.xml, ifsk.fltgetrequestorprocessidex, FltGetRequestorProcessIdEx, fltkernel/FltGetRequestorProcessIdEx, FltGetRequestorProcessIdEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Vista or later versions of th
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetRequestorProcessIdEx
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -75,14 +79,10 @@ The <b>FltGetRequestorProcessIdEx</b> routine returns the kernel-mode handle for
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltgetrequestorprocess.md">FltGetRequestorProcess</a>
-</dt>
-</dl>
+
  
 
  

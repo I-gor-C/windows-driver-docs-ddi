@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2b56183e-03aa-493a-84ba-03f9bc5daee2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+ms.keywords : _WDF_OBJECT_CONTEXT_TYPE_INFO, PWDF_OBJECT_CONTEXT_TYPE_INFO structure pointer, WDF_OBJECT_CONTEXT_TYPE_INFO, wdf.wdf_object_context_type_info, DFGenObjectRef_8c3ba75b-eb62-455f-a905-61b715478b5b.xml, PWDF_OBJECT_CONTEXT_TYPE_INFO, kmdf.wdf_object_context_type_info, *PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO structure, wdfobject/WDF_OBJECT_CONTEXT_TYPE_INFO, wdfobject/PWDF_OBJECT_CONTEXT_TYPE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_OBJECT_CONTEXT_TYPE_INFO
-req.alt-loc : wdfobject.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
 req.product : Windows 10 or later.
 ---
@@ -53,29 +57,29 @@ typedef struct _WDF_OBJECT_CONTEXT_TYPE_INFO {
 
 ## Members
 
-        
-            `ContextName`
 
-            A quoted string that represents the name of a driver-defined structure that contains an object's context information.
-        
-            `ContextSize`
+`ContextName`
 
-            The size, in bytes, of the structure that the <b>ContextName</b> member specifies. The framework allocates space for this structure when it creates an object. If the <b>ContextSizeOverride</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure is nonzero, its value overrides the value in the <b>ContextSize</b> member.
-        
-            `EvtDriverGetUniqueContextType`
+A quoted string that represents the name of a driver-defined structure that contains an object's context information.
 
-            For internal use.
-        
-            `Size`
+`ContextSize`
 
-            The size, in bytes, of this structure.
-        
-            `UniqueType`
+The size, in bytes, of the structure that the <b>ContextName</b> member specifies. The framework allocates space for this structure when it creates an object. If the <b>ContextSizeOverride</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure is nonzero, its value overrides the value in the <b>ContextSize</b> member.
 
-            For internal use.
+`EvtDriverGetUniqueContextType`
 
-    ## Remarks
-        For each object instance, the framework allocates context memory with a size that is based on the value of the <b>ContextSize</b> member or the value of the <b>ContextSizeOverride</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
+For internal use.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`UniqueType`
+
+For internal use.
+
+## Remarks
+For each object instance, the framework allocates context memory with a size that is based on the value of the <b>ContextSize</b> member or the value of the <b>ContextSizeOverride</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
 
 To create and initialize a WDF_OBJECT_CONTEXT_TYPE_INFO structure, drivers should use either the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551250">WDF_DECLARE_CONTEXT_TYPE</a> macro or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551252">WDF_DECLARE_CONTEXT_TYPE_WITH_NAME</a> macro.
 
@@ -91,22 +95,16 @@ For more information about using these macros, see <a href="https://docs.microso
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551250">WDF_DECLARE_CONTEXT_TYPE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551252">WDF_DECLARE_CONTEXT_TYPE_WITH_NAME</a>
-</dt>
-<dt>
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551252">WDF_DECLARE_CONTEXT_TYPE_WITH_NAME</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551250">WDF_DECLARE_CONTEXT_TYPE</a>
+
  
 
  

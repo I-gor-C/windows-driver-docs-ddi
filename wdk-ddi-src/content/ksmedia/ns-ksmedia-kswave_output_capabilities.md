@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3f7d534d-bfd8-4aca-a14d-97c047fb5aeb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES, *PKSWAVE_OUTPUT_CAPABILITIES
+ms.keywords : PKSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES, PKSWAVE_OUTPUT_CAPABILITIES structure pointer [Streaming Media Devices], dvdref_7660f724-15c2-419f-a0d9-c432069547a3.xml, KSWAVE_OUTPUT_CAPABILITIES structure [Streaming Media Devices], stream.kswave_output_capabilities, ksmedia/KSWAVE_OUTPUT_CAPABILITIES, ksmedia/PKSWAVE_OUTPUT_CAPABILITIES, *PKSWAVE_OUTPUT_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSWAVE_OUTPUT_CAPABILITIES
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSWAVE_OUTPUT_CAPABILITIES, *PKSWAVE_OUTPUT_CAPABILITIES
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES"
 ---
 
 # KSWAVE_OUTPUT_CAPABILITIES structure
@@ -65,89 +69,89 @@ typedef struct {
 
 ## Members
 
-        
-            `Active3DConnections`
 
-            Indicates the number of active 3D connections.
-        
-            `ActiveConnections`
+`Active3DConnections`
 
-            Indicates the number of active connections.
-        
-            `ActiveStatic3DConnections`
+Indicates the number of active 3D connections.
 
-            Indicates the number of static 3D connections.
-        
-            `ActiveStaticConnections`
+`ActiveConnections`
 
-            Indicates the number of active static connections.
-        
-            `ActiveStreaming3DConnections`
+Indicates the number of active connections.
 
-            Indicates the number of streaming 3D connections.
-        
-            `ActiveStreamingConnections`
+`ActiveStatic3DConnections`
 
-            Indicates the number of active streaming connections.
-        
-            `FreeSampleMemory`
+Indicates the number of static 3D connections.
 
-            Specifies the available free sample memory.
-        
-            `LargestFreeContiguousSampleMemory`
+`ActiveStaticConnections`
 
-            Specifies the largest, free contiguous amount of sample memory.
-        
-            `MaximumBitsPerSample`
+Indicates the number of active static connections.
 
-            Specifies the maximum bits per sample.
-        
-            `MaximumChannelsPerConnection`
+`ActiveStreaming3DConnections`
 
-            Specifies the maximum number of channels per connection.
-        
-            `MaximumSampleFrequency`
+Indicates the number of streaming 3D connections.
 
-            Specifies the maximum sampling frequency.
-        
-            `MinimumBitsPerSample`
+`ActiveStreamingConnections`
 
-            Specifies the minimum bits per sample.
-        
-            `MinimumSampleFrequency`
+Indicates the number of active streaming connections.
 
-            Specifies the minimum sampling frequency.
-        
-            `Static3DConnections`
+`FreeSampleMemory`
 
-            Indicates the number of static 3D connections.
-        
-            `StaticConnections`
+Specifies the available free sample memory.
 
-            Indicates the number of static connections.
-        
-            `Streaming3DConnections`
+`LargestFreeContiguousSampleMemory`
 
-            Indicates the number of streaming 3D connections.
-        
-            `StreamingConnections`
+Specifies the largest, free contiguous amount of sample memory.
 
-            Indicates the number of streaming connections.
-        
-            `Total3DConnections`
+`MaximumBitsPerSample`
 
-            Indicates the total number of 3D connections.
-        
-            `TotalConnections`
+Specifies the maximum bits per sample.
 
-            Indicates the total number of connections.
-        
-            `TotalSampleMemory`
+`MaximumChannelsPerConnection`
 
-            Specifies the total amount of sample memory.
+Specifies the maximum number of channels per connection.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566523">KSPROPERTY_WAVE_OUTPUT_CAPABILITIES</a> property.
+`MaximumSampleFrequency`
+
+Specifies the maximum sampling frequency.
+
+`MinimumBitsPerSample`
+
+Specifies the minimum bits per sample.
+
+`MinimumSampleFrequency`
+
+Specifies the minimum sampling frequency.
+
+`Static3DConnections`
+
+Indicates the number of static 3D connections.
+
+`StaticConnections`
+
+Indicates the number of static connections.
+
+`Streaming3DConnections`
+
+Indicates the number of streaming 3D connections.
+
+`StreamingConnections`
+
+Indicates the number of streaming connections.
+
+`Total3DConnections`
+
+Indicates the total number of 3D connections.
+
+`TotalConnections`
+
+Indicates the total number of connections.
+
+`TotalSampleMemory`
+
+Specifies the total amount of sample memory.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566523">KSPROPERTY_WAVE_OUTPUT_CAPABILITIES</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -157,13 +161,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566523">KSPROPERTY_WAVE_OUTPUT_CAPABILITIES</a>
-</dt>
-</dl>
+
  
 
  

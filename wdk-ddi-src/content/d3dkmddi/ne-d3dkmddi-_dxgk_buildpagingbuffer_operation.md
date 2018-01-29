@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D170D828-A0BC-4CBC-9F3F-E384AAD11FCC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_BUILDPAGINGBUFFER_OPERATION, DXGK_BUILDPAGINGBUFFER_OPERATION
+ms.keywords : DXGK_OPERATION_UPDATE_PAGE_TABLE, d3dkmddi/DXGK_BUILDPAGINGBUFFER_OPERATION, DXGK_OPERATION_READ_PHYSICAL, DXGK_OPERATION_MAP_APERTURE_SEGMENT, d3dkmddi/DXGK_OPERATION_FILL, DXGK_OPERATION_UNMAP_APERTURE_SEGMENT, DXGK_OPERATION_NOTIFY_RESIDENCY, d3dkmddi/DXGK_OPERATION_COPY_PAGE_TABLE_ENTRIES, d3dkmddi/DXGK_OPERATION_VIRTUAL_FILL, DXGK_OPERATION_DISCARD_CONTENT, d3dkmddi/DXGK_OPERATION_MAP_APERTURE_SEGMENT, DXGK_OPERATION_UPDATE_CONTEXT_ALLOCATION, DXGK_OPERATION_COPY_PAGE_TABLE_ENTRIES, display.dxgk_buildpagingbuffer_operation, DXGK_OPERATION_FLUSH_TLB, d3dkmddi/DXGK_OPERATION_READ_PHYSICAL, DXGK_BUILDPAGINGBUFFER_OPERATION, d3dkmddi/DXGK_OPERATION_SPECIAL_LOCK_TRANSFER, DXGK_BUILDPAGINGBUFFER_OPERATION enumeration [Display Devices], d3dkmddi/DXGK_OPERATION_UPDATE_PAGE_TABLE, DXGK_OPERATION_SPECIAL_LOCK_TRANSFER, DXGK_OPERATION_VIRTUAL_TRANSFER, DXGK_OPERATION_INIT_CONTEXT_RESOURCE, d3dkmddi/, DXGK_OPERATION_VIRTUAL_FILL, DXGK_OPERATION_TRANSFER, d3dkmddi/DXGK_OPERATION_FLUSH_TLB, d3dkmddi/DXGK_OPERATION_TRANSFER, d3dkmddi/DXGK_OPERATION_WRITE_PHYSICAL, d3dkmddi/DXGK_OPERATION_VIRTUAL_TRANSFER, DXGK_OPERATION_WRITE_PHYSICAL, d3dkmddi/DXGK_OPERATION_UPDATE_CONTEXT_ALLOCATION, DXGK_OPERATION_FILL, d3dkmddi/DXGK_OPERATION_INIT_CONTEXT_RESOURCE, d3dkmddi/DXGK_OPERATION_NOTIFY_RESIDENCY, d3dkmddi/DXGK_OPERATION_UNMAP_APERTURE_SEGMENT, _DXGK_BUILDPAGINGBUFFER_OPERATION, d3dkmddi/DXGK_OPERATION_DISCARD_CONTENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_BUILDPAGINGBUFFER_OPERATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_BUILDPAGINGBUFFER_OPERATION
 ---
 
@@ -94,9 +98,7 @@ typedef enum _DXGK_BUILDPAGINGBUFFER_OPERATION {
 <td>DXGK_OPERATION_INIT_CONTEXT_RESOURCE</td>
 <td>Perform an context initialization operation for a GPU context or device-specific context. This value is supported beginning with Windows 8.
 
-
-<div class="alert"><b>Note</b>  The display miniport driver allocates context resources by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>  The display miniport driver allocates context resources by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -112,6 +114,11 @@ typedef enum _DXGK_BUILDPAGINGBUFFER_OPERATION {
 <tr>
 <td>DXGK_OPERATION_READ_PHYSICAL</td>
 <td>Perform a read-physical operation that reads from a specified physical memory address.</td>
+</tr>
+
+<tr>
+<td>DXGK_OPERATION_SIGNAL_MONITORED_FENCE</td>
+<td></td>
 </tr>
 
 <tr>

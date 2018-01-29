@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 68523004-c9f5-4038-985e-702d929cdf04
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_ALIGN_SIZE_UP
+ms.keywords : DFMemoryObjectRef_48452ee1-3939-48ba-a485-4d503ee052f3.xml, wdf.wdf_align_size_up, wdfcore/WDF_ALIGN_SIZE_UP, WDF_ALIGN_SIZE_UP, kmdf.wdf_align_size_up, WDF_ALIGN_SIZE_UP function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_ALIGN_SIZE_UP
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : Any IRQL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ Drivers can use <b>WDF_ALIGN_SIZE_UP</b> or <a href="..\wdfcore\nf-wdfcore-wdf_a
 
 If the value of either input parameter is too large, arithmetic overflow causes <b>WDF_ALIGN_SIZE_UP</b> to return an invalid value that is smaller than <i>Length</i>. Your code should test for this condition.
 
-The following code example receives a buffer size and returns the size (either the current size or the next-higher size) that aligns to a DWORD address boundary.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,11 +89,8 @@ The following code example receives a buffer size and returns the size (either t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfcore\nf-wdfcore-wdf_align_size_down.md">WDF_ALIGN_SIZE_DOWN</a>
-</dt>
-</dl>
+
  
 
  

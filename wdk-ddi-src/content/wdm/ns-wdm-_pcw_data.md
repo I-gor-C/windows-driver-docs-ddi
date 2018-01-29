@@ -48,14 +48,14 @@ typedef struct _PCW_DATA {
 
 ## Members
 
-        
-            `Data`
 
-            A <b>const</b> pointer to a buffer of <b>Size</b> bytes.
-        
-            `Size`
+`Data`
 
-            A numeric value that specifies the size, in bytes, associated with the instance of the counter set.
+A <b>const</b> pointer to a buffer of <b>Size</b> bytes.
+
+`Size`
+
+A numeric value that specifies the size, in bytes, associated with the instance of the counter set.
 
 
 ## Requirements

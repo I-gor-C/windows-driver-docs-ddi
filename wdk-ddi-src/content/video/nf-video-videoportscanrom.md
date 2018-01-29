@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7787237c-5afd-46f2-ac75-6c0b41d37352
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortScanRom
+ms.keywords : VideoPortScanRom function [Display Devices], video/VideoPortScanRom, VideoPort_Functions_7bcf750d-48d5-4b3b-911f-90efd1f0eed1.xml, display.videoportscanrom, VideoPortScanRom
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortScanRom
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -93,17 +97,12 @@ If the string is found, <b>VideoPortScanRom</b> returns <b>TRUE</b>. Otherwise, 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportgetromimage.md">VideoPortGetRomImage</a>
-</dt>
-</dl>
+
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
+
  
 
  

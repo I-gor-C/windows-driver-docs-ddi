@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9878f614-89dc-4b23-8095-2a8c2b80c79d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltInitializeOplock
+ms.keywords : FltInitializeOplock routine [Installable File System Drivers], ifsk.fltinitializeoplock, FltInitializeOplock, fltkernel/FltInitializeOplock, FltApiRef_e_to_o_5d9b6a6a-6721-41b4-961c-49904596c916.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltInitializeOplock
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -79,26 +83,18 @@ For detailed information about opportunistic locks, see the Microsoft Windows SD
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcheckoplock.md">FltCheckOplock</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcurrentbatchoplock.md">FltCurrentBatchOplock</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltuninitializeoplock.md">FltUninitializeOplock</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md">FsRtlInitializeOplock</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltcheckoplock.md">FltCheckOplock</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcurrentbatchoplock.md">FltCurrentBatchOplock</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : ac78dda4-6d14-441b-8e79-3245f7253875
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UPSWaitForStateChange
+ms.keywords : battery.upswaitforstatechange, UPSWaitForStateChange function [Battery Devices], upssvc/UPSWaitForStateChange, UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, UPSWaitForStateChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UPSWaitForStateChange
-req.alt-loc : upssvc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_USAGE
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ A call to <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a> inter
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a>
-</dt>
-</dl>
+
  
 
  

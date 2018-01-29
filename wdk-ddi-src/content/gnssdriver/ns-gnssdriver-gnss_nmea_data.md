@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 6B890F85-0E77-41D2-B3B9-004F1882B6B5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_NMEA_DATA, *PGNSS_NMEA_DATA, GNSS_NMEA_DATA
+ms.keywords : PGNSS_NMEA_DATA, GNSS_NMEA_DATA structure [Sensor Devices], gnssdriver/PGNSS_NMEA_DATA, GNSS_NMEA_DATA, sensors.gnss_nmea_data, *PGNSS_NMEA_DATA, gnssdriver/GNSS_NMEA_DATA, PGNSS_NMEA_DATA structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_NMEA_DATA
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGNSS_NMEA_DATA, GNSS_NMEA_DATA"
 ---
 
@@ -48,14 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `Size`
 
-            Structure size.
-        
-            `Version`
+`NmeaSentences`
 
-            Version number.
+
+
+`Size`
+
+Structure size.
+
+`Version`
+
+Version number.
 
 
 ## Requirements

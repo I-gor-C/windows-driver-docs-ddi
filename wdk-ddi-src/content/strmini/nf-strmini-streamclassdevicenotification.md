@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 80383159-c2c3-4d05-92e8-9245408e5243
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassDeviceNotification
+ms.keywords : stream.streamclassdevicenotification, strclass-routines_bddec484-f87c-4ebc-b8e1-ea52d265cbc4.xml, StreamClassDeviceNotification, StreamClassDeviceNotification routine [Streaming Media Devices], strmini/StreamClassDeviceNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassDeviceNotification
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -89,11 +93,8 @@ The minidriver uses this routine for requests or events that apply to the minidr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>
-</dt>
-</dl>
+
  
 
  

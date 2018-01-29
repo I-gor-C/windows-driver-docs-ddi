@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 18c5ef8c-de72-4d2e-9bee-5b58bc5482c7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeSetSessionIdToken
+ms.keywords : SeSetSessionIdToken, seref_3af3660a-a2ba-4262-91bb-dff8533bcdcb.xml, ifsk.sesetsessionidtoken, ntifs/SeSetSessionIdToken, SeSetSessionIdToken function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeSetSessionIdToken
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,11 +54,11 @@ The <b>SeSetSessionIdToken</b> routine is reserved for system use.
 
 `Token`
 
-
+TBD
 
 `SessionId`
 
-
+TBD
 
 
 ## Return Value

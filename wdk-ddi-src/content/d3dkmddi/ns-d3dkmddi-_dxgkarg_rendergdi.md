@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E1DC536B-581E-43F8-99B2-776DC30EEBB7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI, *INOUT_PDXGKARG_RENDERGDI
+ms.keywords : display.dxgkarg_rendergdi, *INOUT_PDXGKARG_RENDERGDI, _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI, DXGKARG_RENDERGDI structure [Display Devices], d3dkmddi/DXGKARG_RENDERGDI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_RENDERGDI
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_RENDERGDI
 ---
 
@@ -55,46 +59,46 @@ typedef struct _DXGKARG_RENDERGDI {
 
 ## Members
 
-        
-            `AllocationListSize`
 
-            The available number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocation specifications to send through DMA to the graphics hardware.
-        
-            `CommandLength`
+`AllocationListSize`
 
-            The size, in bytes, of the command buffer that <b>pCommand</b> points to.
-        
-            `DmaBufferGpuVirtualAddress`
+The available number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocation specifications to send through DMA to the graphics hardware.
 
-            A <b>D3DGPU_VIRTUAL_ADDRESS</b> data type that indicates the virtual address where the DMA buffer was paged in. If the physical address is zero, the DMA buffer is not correctly paged in.
-        
-            `DmaBufferPrivateDataSize`
+`CommandLength`
 
-            The number of bytes that remain in the private data structure that <b>pDmaBufferPrivateData</b> points to for the current operation.
-        
-            `DmaSize`
+The size, in bytes, of the command buffer that <b>pCommand</b> points to.
 
-            The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.
-        
-            `MultipassOffset`
+`DmaBufferGpuVirtualAddress`
 
-            A value that specifies the progress of the rendering operation.
-        
-            `pAllocationList`
+A <b>D3DGPU_VIRTUAL_ADDRESS</b> data type that indicates the virtual address where the DMA buffer was paged in. If the physical address is zero, the DMA buffer is not correctly paged in.
 
-            An array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.
-        
-            `pCommand`
+`DmaBufferPrivateDataSize`
 
-            A pointer to the start of the command buffer.
-        
-            `pDmaBuffer`
+The number of bytes that remain in the private data structure that <b>pDmaBufferPrivateData</b> points to for the current operation.
 
-            A pointer to the start of the DMA buffer, which is aligned on 4 KB.
-        
-            `pDmaBufferPrivateData`
+`DmaSize`
 
-            A pointer to a driver-resident private data structure that is used for generating the DMA buffer that <b>pDmaBuffer</b> points to.
+The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.
+
+`MultipassOffset`
+
+A value that specifies the progress of the rendering operation.
+
+`pAllocationList`
+
+An array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.
+
+`pCommand`
+
+A pointer to the start of the command buffer.
+
+`pDmaBuffer`
+
+A pointer to the start of the DMA buffer, which is aligned on 4 KB.
+
+`pDmaBufferPrivateData`
+
+A pointer to a driver-resident private data structure that is used for generating the DMA buffer that <b>pDmaBuffer</b> points to.
 
 
 ## Requirements

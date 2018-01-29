@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 14b0aed7-1602-41a3-bc55-59da40650860
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SUB_Q_MEDIA_CATALOG_NUMBER, SUB_Q_MEDIA_CATALOG_NUMBER, *PSUB_Q_MEDIA_CATALOG_NUMBER
+ms.keywords : structs-CD-ROM_d4acf54e-b837-4064-a654-4fa2ebbe7425.xml, ntddcdrm/SUB_Q_MEDIA_CATALOG_NUMBER, SUB_Q_MEDIA_CATALOG_NUMBER, SUB_Q_MEDIA_CATALOG_NUMBER structure [Storage Devices], storage.sub_q_media_catalog_number, _SUB_Q_MEDIA_CATALOG_NUMBER, *PSUB_Q_MEDIA_CATALOG_NUMBER, PSUB_Q_MEDIA_CATALOG_NUMBER structure pointer [Storage Devices], PSUB_Q_MEDIA_CATALOG_NUMBER, ntddcdrm/PSUB_Q_MEDIA_CATALOG_NUMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SUB_Q_MEDIA_CATALOG_NUMBER
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SUB_Q_MEDIA_CATALOG_NUMBER, *PSUB_Q_MEDIA_CATALOG_NUMBER
 ---
 
@@ -51,30 +55,30 @@ typedef struct _SUB_Q_MEDIA_CATALOG_NUMBER {
 
 ## Members
 
-        
-            `FormatCode`
 
-            Should have a value of IOCTL_CDROM_MEDIA_CATALOG.
-        
-            `Header`
+`FormatCode`
 
-            Indicates, among other things, the length of the Q subchannel data that was retrieved. See <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_header.md">SUB_Q_HEADER</a> for further details.
-        
-            `Mcval`
+Should have a value of IOCTL_CDROM_MEDIA_CATALOG.
 
-            Indicates that the media catalog number (MCN) data is valid if set to 1; set to zero otherwise.
-        
-            `MediaCatalog`
+`Header`
 
-            Contains the catalog number if <b>Mcval</b> is set to 1.
-        
-            `Reserved`
+Indicates, among other things, the length of the Q subchannel data that was retrieved. See <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_header.md">SUB_Q_HEADER</a> for further details.
 
-            Reserved.
-        
-            `Reserved1`
+`Mcval`
 
-            Reserved.
+Indicates that the media catalog number (MCN) data is valid if set to 1; set to zero otherwise.
+
+`MediaCatalog`
+
+Contains the catalog number if <b>Mcval</b> is set to 1.
+
+`Reserved`
+
+Reserved.
+
+`Reserved1`
+
+Reserved.
 
 
 ## Requirements
@@ -85,22 +89,16 @@ typedef struct _SUB_Q_MEDIA_CATALOG_NUMBER {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_sub_q_data_format.md">CDROM_SUB_Q_DATA_FORMAT</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_channel_data.md">SUB_Q_CHANNEL_DATA</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_header.md">SUB_Q_HEADER</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_sub_q_data_format.md">CDROM_SUB_Q_DATA_FORMAT</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_channel_data.md">SUB_Q_CHANNEL_DATA</a>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
+
  
 
  

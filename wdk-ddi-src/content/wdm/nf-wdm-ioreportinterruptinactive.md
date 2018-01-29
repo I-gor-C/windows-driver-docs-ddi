@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 614ECB39-E1D0-4BF0-B3C8-635BADD05508
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoReportInterruptInactive
+ms.keywords : IoReportInterruptInactive routine [Kernel-Mode Driver Architecture], wdm/IoReportInterruptInactive, IoReportInterruptInactive, kernel.ioreportinterruptinactive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoReportInterruptInactive
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,20 +86,14 @@ For more information about <b>IoReportInterruptInactive</b>, see <a href="https:
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iodisconnectinterruptex.md">IoDisconnectInterruptEx</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_io_report_interrupt_active_state_parameters.md">IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iodisconnectinterruptex.md">IoDisconnectInterruptEx</a>
+
+<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
+
  
 
  

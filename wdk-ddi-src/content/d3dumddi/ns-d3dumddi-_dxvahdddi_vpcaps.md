@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3e7e3280-3176-4bec-95ab-4dd203fce419
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_VPCAPS, DXVAHDDDI_VPCAPS
+ms.keywords : DXVAHDDDI_VPCAPS, DXVA2_Structs_d3780f70-71f7-4105-a79e-df3abda62417.xml, display.dxvahdddi_vpcaps, _DXVAHDDDI_VPCAPS, DXVAHDDDI_VPCAPS structure [Display Devices], d3dumddi/DXVAHDDDI_VPCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_VPCAPS is supported beginning with the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_VPCAPS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_VPCAPS
 ---
 
@@ -51,19 +55,18 @@ typedef struct _DXVAHDDDI_VPCAPS {
 
 ## Members
 
-        
-            `CustomRateCount`
 
-            [out] The number of supported custom output rates. The driver returns an array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a> structures for the custom output rates that the video processor supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCUSTOMRATES value set.
-        
-            `FutureFrames`
+`CustomRateCount`
 
-            [out] The number of future reference frames that are required to perform the optimal video processing.
-        
-            `ITelecineCaps`
+[out] The number of supported custom output rates. The driver returns an array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a> structures for the custom output rates that the video processor supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCUSTOMRATES value set.
 
-            [out] A bitwise <b>OR</b> of the following values from the DXVAHDDDI_ITELECINE_CAPS enumeration to indicate inverse telecine-specific capabilities.
+`FutureFrames`
 
+[out] The number of future reference frames that are required to perform the optimal video processing.
+
+`ITelecineCaps`
+
+[out] A bitwise <b>OR</b> of the following values from the DXVAHDDDI_ITELECINE_CAPS enumeration to indicate inverse telecine-specific capabilities.
 <table>
 <tr>
 <th>Value</th>
@@ -170,15 +173,14 @@ The driver can perform reverse non-standard telecine.
 </td>
 </tr>
 </table>
-        
-            `PastFrames`
 
-            [out] The number of past reference frames that are required to perform the optimal video processing.
-        
-            `ProcessorCaps`
+`PastFrames`
 
-            [out] A bitwise <b>OR</b> of the following values from the DXVAHDDDI_PROCESSOR_CAPS enumeration to indicate video processor-specific capabilities.
+[out] The number of past reference frames that are required to perform the optimal video processing.
 
+`ProcessorCaps`
+
+[out] A bitwise <b>OR</b> of the following values from the DXVAHDDDI_PROCESSOR_CAPS enumeration to indicate video processor-specific capabilities.
 <table>
 <tr>
 <th>Value</th>
@@ -244,21 +246,20 @@ The driver can convert the frame rate by interpolating the frames.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The driver should not require any reference frames if it uses the deinterlacing types that are associated with DXVAHDDDI_PROCESSOR_CAPS_DEINTERLACE_BLEND and DXVAHDDDI_PROCESSOR_CAPS_DEINTERLACE_BOB.
 
 When the driver uses inverse telecine with normal rate de-interlacing, because the telecined interlaced frames become fewer progressive frames, the driver maintains the frame rate by repeating the frames. If the same video processor supports the frame rate conversion, the driver might interpolate the frames rather than repeating while reversing the telecine. <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> can control this interpolation.
 
 For more information about blend and Bob de-interlacing, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>.
-        
-            `VPGuid`
 
-            [out] A <b>GUID</b> that identifies the video processor.
+`VPGuid`
 
-    ## Remarks
-        The user-mode display driver returns a pointer to a populated DXVAHDDDI_VPCAPS structure in the <b>pData</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure when its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCAPS value set in the <b>Type</b> member of D3DDDIARG_GETCAPS.
+[out] A <b>GUID</b> that identifies the video processor.
+
+## Remarks
+The user-mode display driver returns a pointer to a populated DXVAHDDDI_VPCAPS structure in the <b>pData</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure when its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCAPS value set in the <b>Type</b> member of D3DDDIARG_GETCAPS.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -268,25 +269,18 @@ For more information about blend and Bob de-interlacing, see <a href="..\d3dumdd
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
+
  
 
  

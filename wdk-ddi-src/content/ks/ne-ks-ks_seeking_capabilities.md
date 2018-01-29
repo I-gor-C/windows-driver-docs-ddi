@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 345ADD1F-2002-4F9C-942C-212CADCF84E5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_SEEKING_CAPABILITIES, KS_SEEKING_CAPABILITIES
+ms.keywords : KS_SEEKING_CanGetDuration, ks/KS_SEEKING_CanPlayBackwards, ks/KS_SEEKING_CanSeekAbsolute, stream.ks_seeking_capabilities, ks/KS_SEEKING_CanSeekForwards, ks/KS_SEEKING_CanGetCurrentPos, KS_SEEKING_CanSeekAbsolute, KS_SEEKING_CanGetStopPos, KS_SEEKING_CanPlayBackwards, ks/KS_SEEKING_CanSeekBackwards, ks/KS_SEEKING_CAPABILITIES, KS_SEEKING_CanSeekForwards, KS_SEEKING_CAPABILITIES, ks/KS_SEEKING_CanGetStopPos, KS_SEEKING_CAPABILITIES enumeration [Streaming Media Devices], ks/KS_SEEKING_CanGetDuration, KS_SEEKING_CanGetCurrentPos, KS_SEEKING_CanSeekBackwards
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_SEEKING_CAPABILITIES
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_SEEKING_CAPABILITIES
 ---
 

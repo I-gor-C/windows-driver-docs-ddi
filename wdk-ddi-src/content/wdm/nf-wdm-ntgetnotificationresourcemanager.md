@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 53892fd1-d83c-4b6e-9c39-2f64ba0ab310
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtGetNotificationResourceManager
+ms.keywords : wdm/NtGetNotificationResourceManager, ktm_ref_c0a3b128-d49c-4080-ae12-0081ab5a27e9.xml, NtGetNotificationResourceManager, ZwGetNotificationResourceManager routine [Kernel-Mode Driver Architecture], wdm/ZwGetNotificationResourceManager, ZwGetNotificationResourceManager, kernel.zwgetnotificationresourcemanager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwGetNotificationResourceManager,NtGetNotificationResourceManager
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : = PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -95,23 +99,67 @@ A pointer to a ULONG value. This pointer must be <b>NULL</b>.
 ## Return Value
 
 <b>ZwGetNotificationResourceManager</b> returns STATUS_SUCCESS if the operation succeeds and a notification is available. Otherwise, this routine might return one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TIMEOUT</b></dt>
-</dl>The time-out interval that <i>Timeout</i> specifies elapsed before a notification became available.
+</dl>
+</td>
+<td width="60%">
+The time-out interval that <i>Timeout</i> specifies elapsed before a notification became available.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The specified handle is not a handle to a resource manager object.
+</dl>
+</td>
+<td width="60%">
+The specified handle is not a handle to a resource manager object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>The object handle is invalid.
+</dl>
+</td>
+<td width="60%">
+The object handle is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller does not have appropriate access to the resource manager object.
+</dl>
+</td>
+<td width="60%">
+The caller does not have appropriate access to the resource manager object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The <i>NotificationLength</i> parameter's value is too small.
+</dl>
+</td>
+<td width="60%">
+The <i>NotificationLength</i> parameter's value is too small.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -141,26 +189,18 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a>
+
 <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

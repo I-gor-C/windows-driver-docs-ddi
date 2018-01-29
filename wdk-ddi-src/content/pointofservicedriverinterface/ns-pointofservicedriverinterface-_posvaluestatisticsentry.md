@@ -7,8 +7,8 @@ old-location : pos\posvaluestatisticsentry.htm
 old-project : pos
 ms.assetid : e6627d5f-5905-479e-b968-6914491231b1
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosValueStatisticsEntry, PosValueStatisticsEntry
+ms.date : 1/18/2018
+ms.keywords : _PosValueStatisticsEntry, pointofservicedriverinterface/PosValueStatisticsEntry, pos.posvaluestatisticsentry, PosValueStatisticsEntry, PosValueStatisticsEntry structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosValueStatisticsEntry
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosValueStatisticsEntry
 ---
 
@@ -47,14 +51,14 @@ typedef struct _PosValueStatisticsEntry {
 
 ## Members
 
-        
-            `EntryName`
 
-            Indicates the NULL-terminated statistic name (for example, <i>GoodScanCount</i> or <i>BadScanCount</i>).
-        
-            `Value`
+`EntryName`
 
-            Indicates the current statistic value.
+Indicates the NULL-terminated statistic name (for example, <i>GoodScanCount</i> or <i>BadScanCount</i>).
+
+`Value`
+
+Indicates the current statistic value.
 
 
 ## Requirements

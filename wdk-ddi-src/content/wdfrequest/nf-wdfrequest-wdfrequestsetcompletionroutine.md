@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c60f3dd5-2a74-4d7c-8804-35b9dd91dce4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestSetCompletionRoutine
+ms.keywords : wdfrequest/WdfRequestSetCompletionRoutine, DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, kmdf.wdfrequestsetcompletionroutine, PFN_WDFREQUESTSETCOMPLETIONROUTINE, wdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine method, WdfRequestSetCompletionRoutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestSetCompletionRoutine
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, ReqCompletionRoutine
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,8 +82,6 @@ If your driver forwards I/O requests, but if you want your driver to be notified
 
 For more information about <b>WdfRequestSetCompletionRoutine</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
-For a code example that uses <b>WdfRequestSetCompletionRoutine</b>, see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,11 +96,8 @@ For a code example that uses <b>WdfRequestSetCompletionRoutine</b>, see <a href=
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
-</dt>
-</dl>
+
  
 
  

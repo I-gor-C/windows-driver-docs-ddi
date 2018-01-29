@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 47B53DDA-E04B-4DA5-BEAB-8515B6683AE4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE
+ms.keywords : D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP_PROTECT, d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE enumeration [Display Devices], D3DDDI_UPDATEGPUVIRTUALADDRESS_UNMAP, d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_UNMAP, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE, d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP_PROTECT, d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_COPY, d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE, D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP, D3DDDI_UPDATEGPUVIRTUALADDRESS_COPY, display.d3dddi_updategpuvirtualaddress_operation_type, _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE
 ---
 

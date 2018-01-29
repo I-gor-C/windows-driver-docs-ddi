@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : f20e424a-60d3-4bfa-9cc3-d2541c927b22
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+ms.keywords : hid.ioctl_internal_mouse_connect, IOCTL_INTERNAL_MOUSE_CONNECT control code [Human Input Devices], IOCTL_INTERNAL_MOUSE_CONNECT, kbdmou/IOCTL_INTERNAL_MOUSE_CONNECT, mfilref_df1ebbe7-9806-4c2a-93c5-4fcbbfdf2f1f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_MOUSE_CONNECT
-req.alt-loc : kbdmou.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
@@ -38,25 +42,38 @@ req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 The IOCTL_INTERNAL_MOUSE_CONNECT request connects Mouclass service to a mouse device. Mouclass sends this request down the device stack before it opens a mouse device. 
 
 After Moufiltr receives the mouse connect request, it filters the request in the following way:
-
+<ol>
+<li>
 Saves a copy of the <a href="https://msdn.microsoft.com/c6c2ebe5-eb88-4dc6-a85a-b297ecdc85d3">CONNECT_DATA (Mouclass)</a> structure that was passed to Moufiltr
 
+</li>
+<li>
 Substitutes its own connect information for the class driver connect information
 
+</li>
+<li>
 Sends the IOCTL_INTERNAL_MOUSE_CONNECT request down the device stack
 
-If the request is not successful, Moufiltr completes the request with an appropriate error status.
+</li>
+</ol>If the request is not successful, Moufiltr completes the request with an appropriate error status.
 
 Moufiltr provides a template for a filter service callback routine that can supplement the operation of <a href="https://msdn.microsoft.com/949955c1-a1c7-4b0b-a74e-593dd7885135">MouseClassServiceCallback</a>, the Mouclass service callback routine. The filter service callback can filter the input data that is transferred from the device input buffer to the class driver data queue. 
 
 For more information about the connection of the Mouclass service, see the following topics:
-
+<dl>
+<dd>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
 
 
+</dd>
+<dd>
 
 <a href="https://msdn.microsoft.com/c6b60905-edd0-496e-a4e7-5ca271a51bce">Moufiltr Callback Routines</a>
+
+
+</dd>
+</dl>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -80,16 +97,9 @@ The size of a CONNECT_DATA structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero.
 
 The <b>Status</b> member is set to one of the following values:
-
-
-
-<b>Parameters.DeviceIoControl.InputBufferLength</b> is less than the size, in bytes, of a CONNECT_DATA structure.
-
-Moufiltr is already connected (a filter driver supports only one connect request).
 
 
 ## Requirements
@@ -99,16 +109,12 @@ Moufiltr is already connected (a filter driver supports only one connect request
 | **Header** | kbdmou.h (include Kbdmou.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/c6c2ebe5-eb88-4dc6-a85a-b297ecdc85d3">CONNECT_DATA (Mouclass)</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/949955c1-a1c7-4b0b-a74e-593dd7885135">MouseClassServiceCallback</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 98ccf623-8232-4bcb-bd72-39dd31c7ede3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.keywords : storage.ioctl_mountdev_link_created, IOCTL_MOUNTDEV_LINK_CREATED control code [Storage Devices], IOCTL_MOUNTDEV_LINK_CREATED, mountdev/IOCTL_MOUNTDEV_LINK_CREATED, k307_b93a8e67-8e02-4d7d-aac2-a11f3d4297c2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTDEV_LINK_CREATED
-req.alt-loc : mountdev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ---
 
@@ -59,7 +63,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 No status.
 
 
@@ -70,13 +73,10 @@ No status.
 | **Header** | mountdev.h (include Mountmgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountmgr\ns-mountmgr-_mountdev_name.md">MOUNTDEV_NAME</a>
-</dt>
-</dl>
+
  
 
  

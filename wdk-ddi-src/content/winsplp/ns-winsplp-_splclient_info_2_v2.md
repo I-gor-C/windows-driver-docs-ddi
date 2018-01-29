@@ -7,8 +7,8 @@ old-location : print\splclient_info_2_winxp.htm
 old-project : print
 ms.assetid : 48BD760E-6017-49B2-854F-7F48671974F3
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _SPLCLIENT_INFO_2_V2, SPLCLIENT_INFO_2_WINXP, SPLCLIENT_INFO_2, *PSPLCLIENT_INFO_2, *LPSPLCLIENT_INFO_2
+ms.date : 1/18/2018
+ms.keywords : print.splclient_info_2_winxp, *PSPLCLIENT_INFO_2, SPLCLIENT_INFO_2, SPLCLIENT_INFO_2_WINXP, _SPLCLIENT_INFO_2_V2, winsplp/SPLCLIENT_INFO_2_WINXP, SPLCLIENT_INFO_2_WINXP structure [Print Devices], *LPSPLCLIENT_INFO_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPLCLIENT_INFO_2_WINXP
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SPLCLIENT_INFO_2_WINXP
 req.product : Windows 10 or later.
 ---

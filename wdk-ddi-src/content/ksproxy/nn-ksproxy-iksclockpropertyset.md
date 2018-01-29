@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : bf50d4b1-782f-4d15-b6ef-23fa13da68ff
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSynchronousDeviceControl
+ms.keywords : stream.iksclockpropertyset, IKsClockPropertySet interface [Streaming Media Devices], IKsClockPropertySet interface [Streaming Media Devices], described, IKsClockPropertySet, ksproxy/IKsClockPropertySet, ksproxy_0be3eb82-08b7-4afc-a4e5-3815f7499ad0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsClockPropertySet
-req.alt-loc : Ksproxy.lib,Ksproxy.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -57,7 +61,7 @@ The <b>IKsClockPropertySet</b> interface provides methods that let the proxy acc
 
 ## Remarks
 
-The IID for this interface is IID_IKsClockPropertySet.</p>
+The IID for this interface is IID_IKsClockPropertySet.
 
 ## Requirements
 | &nbsp; | &nbsp; |

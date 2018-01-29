@@ -7,8 +7,8 @@ old-location : print\routercreateprintasyncnotificationchannel.htm
 old-project : print
 ms.assetid : 11f9a438-861f-42ef-b4f5-f64b0b9d658a
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : RouterCreatePrintAsyncNotificationChannel
+ms.date : 1/18/2018
+ms.keywords : prnasntp/RouterCreatePrintAsyncNotificationChannel, print.routercreateprintasyncnotificationchannel, RouterCreatePrintAsyncNotificationChannel function [Print Devices], RouterCreatePrintAsyncNotificationChannel, spoolfnc_24cb45ed-2f72-4a13-9a40-c1197c41aae7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RouterCreatePrintAsyncNotificationChannel
-req.alt-loc : Spoolss.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Spoolss.lib
 req.dll : Spoolss.dll
 req.irql : 
-req.typenames : "*PUSERDATA, USERDATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USERDATA, *PUSERDATA
 req.product : Windows 10 or later.
 ---
 
@@ -64,7 +68,7 @@ A pointer to a GUID that represents the type of notifications sent through this 
 
 `eNotifyFilter`
 
-
+TBD
 
 `eConversationStyle`
 
@@ -76,7 +80,7 @@ A pointer to the callback function that is called to deliver the response notifi
 
 `ppIAsynchNotification`
 
-
+TBD
 
 
 ## Return Value
@@ -85,7 +89,7 @@ A pointer to the callback function that is called to deliver the response notifi
 
 ## Remarks
 
-In some cases, you must release the channel that you created with the <code>RouterCreatePrintAsyncNotificationChannel</code> function by calling <b>Release</b> on IPrintAsyncNotifyChannel. For information about when to release a channel, see <a href="https://msdn.microsoft.com/3161342a-0737-4f3b-bb16-32d6949bceea">Notification Channel</a>.</p>
+In some cases, you must release the channel that you created with the <code>RouterCreatePrintAsyncNotificationChannel</code> function by calling <b>Release</b> on IPrintAsyncNotifyChannel. For information about when to release a channel, see <a href="https://msdn.microsoft.com/3161342a-0737-4f3b-bb16-32d6949bceea">Notification Channel</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

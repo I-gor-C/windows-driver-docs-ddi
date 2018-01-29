@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4A5413AD-A2EB-4772-89BF-867C30E0CD10
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MIRACAST_CHUNK_INFO, DXGK_MIRACAST_CHUNK_INFO
+ms.keywords : DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], display.dxgk_miracast_chunk_info, DXGK_MIRACAST_CHUNK_INFO, d3dukmdt/DXGK_MIRACAST_CHUNK_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MIRACAST_CHUNK_INFO
-req.alt-loc : D3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MIRACAST_CHUNK_INFO
 ---
 
@@ -49,22 +53,22 @@ typedef struct {
 
 ## Members
 
-        
-            `ChunkId`
 
-            The identifier for this chunk, of type <a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_id.md">DXGK_MIRACAST_CHUNK_ID</a>.
-        
-            `ChunkType`
+`ChunkId`
 
-            The type of chunk that is to be processed, specified as a <a href="..\d3dukmdt\ne-d3dukmdt-_dxgk_miracast_chunk_type.md">DXGK_MIRACAST_CHUNK_TYPE</a> enumeration value.
-        
-            `EncodeRate`
+The identifier for this chunk, of type <a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_id.md">DXGK_MIRACAST_CHUNK_ID</a>.
 
-            The encode bit rate, in kilobits per second, that the display miniport driver reported for this chunk.
-        
-            `ProcessingTime`
+`ChunkType`
 
-            The time, in microseconds, that it took to process this chunk.
+The type of chunk that is to be processed, specified as a <a href="..\d3dukmdt\ne-d3dukmdt-_dxgk_miracast_chunk_type.md">DXGK_MIRACAST_CHUNK_TYPE</a> enumeration value.
+
+`EncodeRate`
+
+The encode bit rate, in kilobits per second, that the display miniport driver reported for this chunk.
+
+`ProcessingTime`
+
+The time, in microseconds, that it took to process this chunk.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dukmdt.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_id.md">DXGK_MIRACAST_CHUNK_ID</a>
-</dt>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_dxgk_miracast_chunk_type.md">DXGK_MIRACAST_CHUNK_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_id.md">DXGK_MIRACAST_CHUNK_ID</a>
+
  
 
  

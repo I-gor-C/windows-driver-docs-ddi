@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ADB7550F-9191-4EAA-BEBA-0D0D29EC7B03
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _NETWORK_APP_INSTANCE_ECP_CONTEXT, NETWORK_APP_INSTANCE_ECP_CONTEXT, *PNETWORK_APP_INSTANCE_ECP_CONTEXT
+ms.keywords : ntifs/NETWORK_APP_INSTANCE_ECP_CONTEXT, PNETWORK_APP_INSTANCE_ECP_CONTEXT, NETWORK_APP_INSTANCE_ECP_CONTEXT structure [Installable File System Drivers], ntifs/PNETWORK_APP_INSTANCE_ECP_CONTEXT, NETWORK_APP_INSTANCE_ECP_CONTEXT, PNETWORK_APP_INSTANCE_ECP_CONTEXT structure pointer [Installable File System Drivers], _NETWORK_APP_INSTANCE_ECP_CONTEXT, ifsk.network_app_instance_ecp_context, *PNETWORK_APP_INSTANCE_ECP_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available in Windows 8 and later 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NETWORK_APP_INSTANCE_ECP_CONTEXT
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : NETWORK_APP_INSTANCE_ECP_CONTEXT, *PNETWORK_APP_INSTANCE_ECP_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNETWORK_APP_INSTANCE_ECP_CONTEXT, NETWORK_APP_INSTANCE_ECP_CONTEXT"
 ---
 
 # _NETWORK_APP_INSTANCE_ECP_CONTEXT structure
@@ -48,21 +52,21 @@ typedef struct _NETWORK_APP_INSTANCE_ECP_CONTEXT {
 
 ## Members
 
-        
-            `AppInstanceID`
 
-            A unique instance identifier for a failover cluster client application. This is a GUID that associates an application  to file opened on a failover cluster node.
-        
-            `Reserved`
+`AppInstanceID`
 
-            Reserved. Must be set to zero.
-        
-            `Size`
+A unique instance identifier for a failover cluster client application. This is a GUID that associates an application  to file opened on a failover cluster node.
 
-            Size of this structure. This member is set to <b>sizeof</b>(NETWORK_APP_INSTANCE_ECP_CONTEXT).
+`Reserved`
 
-    ## Remarks
-        When  failover to a secondary node in a server cluster occurs, a cluster client application needs resumed access to the files it first opened on the failed node. The Cluster Client Failover infrastructure prevents sharing violations for the application's files on the failover node by validating its access to those files. Access is granted to the files the on the failover node having the same application instance identifier as the files opened on other node had  prior to failover. The instance identifier is found  in a <b>NETWORK_APP_INSTANCE_ECP_CONTEXT</b> structure in a file's ECP list.
+Reserved. Must be set to zero.
+
+`Size`
+
+Size of this structure. This member is set to <b>sizeof</b>(NETWORK_APP_INSTANCE_ECP_CONTEXT).
+
+## Remarks
+When  failover to a secondary node in a server cluster occurs, a cluster client application needs resumed access to the files it first opened on the failed node. The Cluster Client Failover infrastructure prevents sharing violations for the application's files on the failover node by validating its access to those files. Access is granted to the files the on the failover node having the same application instance identifier as the files opened on other node had  prior to failover. The instance identifier is found  in a <b>NETWORK_APP_INSTANCE_ECP_CONTEXT</b> structure in a file's ECP list.
 
 For example, a file system filter driver will allocate a <b>NETWORK_APP_INSTANCE_ECP_CONTEXT</b> with the unique application instance GUID. The context structure is inserted into the ECP list of a file when it is created or opened. The cluster nodes cache the instance identifier from the ECP when processing the network file system create request. On failover, the resuming node can match the application to its set of opened files and grant access.
 
@@ -78,16 +82,12 @@ For information about how to use ECPs to associate extra information with a file
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+
  
 
  

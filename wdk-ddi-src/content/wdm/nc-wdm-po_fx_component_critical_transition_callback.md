@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6E551951-E903-4970-8B30-6780C9FF4FC6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.componentcriticaltransitioncallback, ComponentCriticalTransitionCallback routine [Kernel-Mode Driver Architecture], ComponentCriticalTransitionCallback, PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK, PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK, wdm/ComponentCriticalTransitionCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ComponentCriticalTransitionCallback
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : TBD
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -101,11 +105,8 @@ A PEP can call this routine at IRQL TBD.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
-</dt>
-</dl>
+
  
 
  

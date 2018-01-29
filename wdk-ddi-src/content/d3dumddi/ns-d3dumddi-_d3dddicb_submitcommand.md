@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 53D4890A-D075-4DF7-97E6-A8E8A174866B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_SUBMITCOMMAND, D3DDDICB_SUBMITCOMMAND
+ms.keywords : display.d3dddicb_submitcommand, _D3DDDICB_SUBMITCOMMAND, d3dumddi/D3DDDICB_SUBMITCOMMAND, D3DDDICB_SUBMITCOMMAND structure [Display Devices], D3DDDICB_SUBMITCOMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_SUBMITCOMMAND
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_SUBMITCOMMAND
 ---
 
@@ -68,101 +72,109 @@ typedef struct _D3DDDICB_SUBMITCOMMAND {
 
 ## Members
 
-        
-            `BegunAPISequenceNumberLow0Size`
 
-            Used by the driver to pass the context's API sequence number.
-        
-            `BegunAPISequenceNumberLow1Size`
+`BegunAPISequenceNumberLow0Size`
 
-            Used by the driver to pass the context's API sequence number.
-        
-            `BroadcastContext`
+Used by the driver to pass the context's API sequence number.
 
-            Specifies the handle of the context to execute the specified commands.
-        
-            `BroadcastContextCount`
+`BegunAPISequenceNumberLow1Size`
 
-            Specifies the number of context these command should be submitted to. This count must be at least 1.
-        
-            `CommandLength`
+Used by the driver to pass the context's API sequence number.
 
-            Specifies the length, in bytes, of the commands being submitted to the GPU. This information is provided to the kernel  mode driver during command submission and is also used for debugging purposes.
-        
-            `Commands`
+`BroadcastContext`
 
-            GPU virtual address to the commands being submitted to the context for execution. This information is provided to the kernel mode driver during command submission and is also used for debugging purposes.
-        
-            `CompletedAPISequenceNumberLow0Size`
+Specifies the handle of the context to execute the specified commands.
 
-            Used by the driver to pass the context's API sequence number.
-        
-            `CompletedAPISequenceNumberLow1Size`
+`BroadcastContextCount`
 
-            Used by the driver to pass the context's API sequence number.
-        
-            `FirstAPISequenceNumberHigh`
+Specifies the number of context these command should be submitted to. This count must be at least 1.
 
-            Used by the driver to pass the context's API sequence number.
-        
-            `Flags`
+`CommandLength`
 
-            An instance of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.
-        
-            `HistoryBufferArray`
+Specifies the length, in bytes, of the commands being submitted to the GPU. This information is provided to the kernel  mode driver during command submission and is also used for debugging purposes.
 
-            A pointer to the array of history buffers.
-        
-            `MarkerLogType`
+`Commands`
 
-            A <a href="..\d3dumddi\ne-d3dumddi-d3dddi_markerlogtype.md">D3DDDI_MARKERLOGTYPE</a> enumeration that indicates the type of marker in the Event Tracing for Windows (ETW) log that the user-mode display driver supports.
-        
-            `NumHistoryBuffers`
+GPU virtual address to the commands being submitted to the context for execution. This information is provided to the kernel mode driver during command submission and is also used for debugging purposes.
 
-            The number of history buffers.
-        
-            `NumPrimaries`
+`CompletedAPISequenceNumberLow0Size`
 
-            Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
-        
-            `pBegunAPISequenceNumberLow0`
+Used by the driver to pass the context's API sequence number.
 
-            A pointer used by the driver to pass the context's API sequence number.
-        
-            `pBegunAPISequenceNumberLow1`
+`CompletedAPISequenceNumberLow1Size`
 
-            A pointer used by the driver to pass the context's API sequence number.
-        
-            `pCompletedAPISequenceNumberLow0`
+Used by the driver to pass the context's API sequence number.
 
-            A pointer used by the driver to pass the context's API sequence number.
-        
-            `pCompletedAPISequenceNumberLow1`
+`FirstAPISequenceNumberHigh`
 
-            A pointer used by the driver to pass the context's API sequence number.
-        
-            `pPrivateDriverData`
+Used by the driver to pass the context's API sequence number.
 
-            Pointer to driver private data to be passed to the kernel mode driver as part of this submission.
-        
-            `PrivateDriverDataSize`
+`Flags`
 
-            Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode driver for submission private driver data.
-        
-            `RenderCBSequence`
+An instance of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.
 
-            A unique identifier for each <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function call. Starts at a value of 1 for contexts associated with single-threaded user-mode DDIs and ranges to a value of 0x80000001 for contexts associated with free-threaded user mode DDIs. The user-mode display driver must increment the value for each <i>pfnRenderCb</i> call it makes on any engine.
-        
-            `Reserved`
+`HistoryBufferArray`
 
-            This member is reserved and should be set to zero.
-        
-            `WrittenPrimaries`
+A pointer to the array of history buffers.
 
-            Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.
+`hSyncToken`
 
-    ## Remarks
-        The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_submitcommandcb.md">pfnSubmitCommandCb</a> code path no longer provides an allocation list for the user mode driver to provide a list of allocations that will be read and written to during this command. However, it is necessary to synchronize some writes that would not normally be known without the allocation list. For this, a new small allocation list specifically for surfaces which will be written to and used for displaying content. The <b>WrittenPrimaries</b> array should be used to provide such allocations.
+
+
+`MarkerLogType`
+
+A <a href="..\d3dumddi\ne-d3dumddi-d3dddi_markerlogtype.md">D3DDDI_MARKERLOGTYPE</a> enumeration that indicates the type of marker in the Event Tracing for Windows (ETW) log that the user-mode display driver supports.
+
+`NumHistoryBuffers`
+
+The number of history buffers.
+
+`NumPrimaries`
+
+Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
+
+`pBegunAPISequenceNumberLow0`
+
+A pointer used by the driver to pass the context's API sequence number.
+
+`pBegunAPISequenceNumberLow1`
+
+A pointer used by the driver to pass the context's API sequence number.
+
+`pCompletedAPISequenceNumberLow0`
+
+A pointer used by the driver to pass the context's API sequence number.
+
+`pCompletedAPISequenceNumberLow1`
+
+A pointer used by the driver to pass the context's API sequence number.
+
+`pPrivateDriverData`
+
+Pointer to driver private data to be passed to the kernel mode driver as part of this submission.
+
+`pReserved`
+
+
+
+`PrivateDriverDataSize`
+
+Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode driver for submission private driver data.
+
+`RenderCBSequence`
+
+A unique identifier for each <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function call. Starts at a value of 1 for contexts associated with single-threaded user-mode DDIs and ranges to a value of 0x80000001 for contexts associated with free-threaded user mode DDIs. The user-mode display driver must increment the value for each <i>pfnRenderCb</i> call it makes on any engine.
+
+`Reserved`
+
+This member is reserved and should be set to zero.
+
+`WrittenPrimaries`
+
+Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.
+
+## Remarks
+The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_submitcommandcb.md">pfnSubmitCommandCb</a> code path no longer provides an allocation list for the user mode driver to provide a list of allocations that will be read and written to during this command. However, it is necessary to synchronize some writes that would not normally be known without the allocation list. For this, a new small allocation list specifically for surfaces which will be written to and used for displaying content. The <b>WrittenPrimaries</b> array should be used to provide such allocations.
 
 
 Despite the name, <b>WrittenPrimaries</b> must contain allocations that are considered <i>SwapChainBackBuffer</i> allocations according to the runtime in addition to the primaries. This is exposed to the user mode driver by a new flag in <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_resource_misc_flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a>. The runtime will provide the <b>D3DWDDM2_0DDI_RESOURCE_MISC_DISPLAYABLE_SURFACE</b> flag to the user mode driver during calls to create a resource or heap that is created as a <i>FlipEx swapchain</i> or <i>primary</i>. The driver may use this flag to determine all allocations that should be put in the <b>WrittenPrimaries</b> list for Microsoft Direct3D 11. Other runtimes have not changed.
@@ -178,19 +190,14 @@ If the driver receives a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_crea
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_resource_misc_flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_submitcommandcb.md">pfnSubmitCommandCb</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_resource_misc_flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
+
  
 
  

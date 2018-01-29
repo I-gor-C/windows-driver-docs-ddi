@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5b98802e-c1a8-4613-85fe-f734ecc4670a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcUnregisterIoTimeout
+ms.keywords : audio.iminiportwavert, IMiniportWaveRT interface [Audio Devices], IMiniportWaveRT interface [Audio Devices], described, IMiniportWaveRT, portcls/IMiniportWaveRT, audmp-routines_8d8d9bf9-09f1-4c1f-9113-c03e506e4edb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRT
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 

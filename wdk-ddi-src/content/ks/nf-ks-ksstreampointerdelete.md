@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 68819fe9-fd90-4391-a129-5aa0cae1558b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamPointerDelete
+ms.keywords : avfunc_b21da27c-abf4-4277-8a22-232c31fbfe97.xml, ks/KsStreamPointerDelete, KsStreamPointerDelete function [Streaming Media Devices], KsStreamPointerDelete, stream.ksstreampointerdelete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsStreamPointerDelete
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -79,17 +83,12 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
+
+<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
+
  
 
  

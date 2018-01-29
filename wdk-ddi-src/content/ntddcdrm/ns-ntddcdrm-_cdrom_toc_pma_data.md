@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : eded7fcf-8a0a-4ad2-8ce0-e10e670344a4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_TOC_PMA_DATA, *PCDROM_TOC_PMA_DATA, CDROM_TOC_PMA_DATA
+ms.keywords : CDROM_TOC_PMA_DATA, ntddcdrm/CDROM_TOC_PMA_DATA, PCDROM_TOC_PMA_DATA structure pointer [Storage Devices], PCDROM_TOC_PMA_DATA, ntddcdrm/PCDROM_TOC_PMA_DATA, *PCDROM_TOC_PMA_DATA, CDROM_TOC_PMA_DATA structure [Storage Devices], _CDROM_TOC_PMA_DATA, storage.cdrom_toc_pma_data, structs-CD-ROM_45c0bdd5-ef51-4314-b46a-9ea66eb0b290.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_TOC_PMA_DATA
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCDROM_TOC_PMA_DATA, CDROM_TOC_PMA_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CDROM_TOC_PMA_DATA, *PCDROM_TOC_PMA_DATA
 ---
 
 # _CDROM_TOC_PMA_DATA structure
@@ -49,22 +53,22 @@ typedef struct _CDROM_TOC_PMA_DATA {
 
 ## Members
 
-        
-            `Descriptors`
 
-            Contains zero or more track descriptors. See <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a> for a description of the track descriptor.
-        
-            `Length`
+`Descriptors`
 
-            Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
-        
-            `Reserved1`
+Contains zero or more track descriptors. See <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a> for a description of the track descriptor.
 
-            Reserved.
-        
-            `Reserved2`
+`Length`
 
-            Reserved.
+Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
+
+`Reserved1`
+
+Reserved.
+
+`Reserved2`
+
+Reserved.
 
 
 ## Requirements
@@ -75,19 +79,14 @@ typedef struct _CDROM_TOC_PMA_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 61dfdd09-1e2b-4771-a2c2-62454adc7832
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcCoherencyFlushAndPurgeCache
+ms.keywords : CcCoherencyFlushAndPurgeCache, ntifs/CcCoherencyFlushAndPurgeCache, CcCoherencyFlushAndPurgeCache routine [Installable File System Drivers], ccref_79641311-568b-472c-9950-2e46472affcf.xml, ifsk.cccoherencyflushandpurgecache
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcCoherencyFlushAndPurgeCache
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -71,7 +75,6 @@ A pointer to a caller-allocated structure that receives the final completion sta
 `Flags`
 
 A bitmask of flags that specify how the operation is to be performed. The one flag is defined in the following table. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -118,14 +121,10 @@ An <i>IoStatus</i>-&gt;<i>Status </i>value of STATUS_CACHE_PAGE_LOCKED indicates
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
+
  
 
  

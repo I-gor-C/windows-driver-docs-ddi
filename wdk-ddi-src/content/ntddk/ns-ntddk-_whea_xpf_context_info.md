@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 044af92b-b77c-415c-9ca5-4436bfe497e5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
+ms.keywords : _WHEA_XPF_CONTEXT_INFO, whea.whea_xpf_context_info, ntddk/PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO structure [WHEA Drivers and Applications], PWHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO, PWHEA_XPF_CONTEXT_INFO structure pointer [WHEA Drivers and Applications], whearef_3e1bae81-9b21-4b0c-bd86-b957afb95713.xml, WHEA_XPF_CONTEXT_INFO, ntddk/WHEA_XPF_CONTEXT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_CONTEXT_INFO
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO"
 ---
 
 # _WHEA_XPF_CONTEXT_INFO structure
@@ -50,25 +54,25 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 
 ## Members
 
-        
-            `MmRegisterAddress`
 
-            The starting memory address of the memory mapped registers. This member contains valid data only if the <b>RegisterContextType</b> member is set to XPF_CONTEXT_INFO_MMREGISTERS. For all other types of processor context information, this member should contain zero.
-        
-            `MSRAddress`
+`MmRegisterAddress`
 
-            The starting address of the machine-specific registers. This member contains valid data only if the <b>RegisterContextType</b> member is set to either XPF_CONTEXT_INFO_UNCLASSIFIEDDATA or XPF_CONTEXT_INFO_MSRREGISTERS. For all other types of processor context information, this member should contain zero.
-        
-            `RegisterContextType`
+The starting memory address of the memory mapped registers. This member contains valid data only if the <b>RegisterContextType</b> member is set to XPF_CONTEXT_INFO_MMREGISTERS. For all other types of processor context information, this member should contain zero.
 
-            The type of processor context information described by the structure. Possible values are:
-        
-            `RegisterDataSize`
+`MSRAddress`
 
-            The size, in bytes, of the register data that is contained in the <b>RegisterData</b> member.
+The starting address of the machine-specific registers. This member contains valid data only if the <b>RegisterContextType</b> member is set to either XPF_CONTEXT_INFO_UNCLASSIFIEDDATA or XPF_CONTEXT_INFO_MSRREGISTERS. For all other types of processor context information, this member should contain zero.
 
-    ## Remarks
-        The <b>VariableInfo</b> member of the <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains zero or more WHEA_XPF_CONTEXT_INFO structures, each of which describes specific context information associated with the processor error that occurred. If the size of a particular WHEA_XPF_CONTEXT_INFO structure is not an even multiple of 16 bytes, the space that is allocated for the structure in the buffer will be padded with additional bytes that are set to zero to round the allocated space up to an even multiple of 16 bytes.
+`RegisterContextType`
+
+The type of processor context information described by the structure. Possible values are:
+
+`RegisterDataSize`
+
+The size, in bytes, of the register data that is contained in the <b>RegisterData</b> member.
+
+## Remarks
+The <b>VariableInfo</b> member of the <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains zero or more WHEA_XPF_CONTEXT_INFO structures, each of which describes specific context information associated with the processor error that occurred. If the size of a particular WHEA_XPF_CONTEXT_INFO structure is not an even multiple of 16 bytes, the space that is allocated for the structure in the buffer will be padded with additional bytes that are set to zero to round the allocated space up to an even multiple of 16 bytes.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,19 +82,14 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_x64_register_state.md">WHEA_X64_REGISTER_STATE</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_x86_register_state.md">WHEA_X86_REGISTER_STATE</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3a2a8940-afe2-48f5-bcf0-abd6413eeb85
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeDeregisterBugCheckReasonCallback
+ms.keywords : wdm/KeDeregisterBugCheckReasonCallback, k105_f767309b-2c8a-4460-a43f-06aec0f7d401.xml, KeDeregisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture], KeDeregisterBugCheckReasonCallback, kernel.kederegisterbugcheckreasoncallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP Service Pack 1 (SP1), Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeDeregisterBugCheckReasonCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -73,11 +77,8 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5518
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
-</dt>
-</dl>
+
  
 
  

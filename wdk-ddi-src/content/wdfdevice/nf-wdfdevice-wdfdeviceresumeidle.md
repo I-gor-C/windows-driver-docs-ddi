@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d63848e8-0e6a-4ad7-a147-8804869b9c9b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceResumeIdle
+ms.keywords : WdfDeviceResumeIdle method, kmdf.wdfdeviceresumeidle, PFN_WDFDEVICERESUMEIDLE, wdfdevice/WdfDeviceResumeIdle, wdf.wdfdeviceresumeidle, DFDeviceObjectGeneralRef_6078e8e8-7d4e-4714-a1b4-74fc973a678c.xml, WdfDeviceResumeIdle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceResumeIdle
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ Every call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDevice
 
 Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a> instead of <b>WdfDeviceResumeIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.
 
-The following code example informs the framework that the specified device is not in use and can be placed in a device low-power state if it remains idle.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,20 +84,14 @@ The following code example informs the framework that the specified device is no
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDeviceStopIdle</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDeviceStopIdle</a>
+
  
 
  

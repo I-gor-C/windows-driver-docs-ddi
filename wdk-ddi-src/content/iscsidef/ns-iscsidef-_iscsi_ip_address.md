@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ec4c2add-33e0-4e3d-8f19-892cca4720a7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ISCSI_IP_Address, ISCSI_IP_Address, *PISCSI_IP_Address
+ms.keywords : _ISCSI_IP_Address, iscsidef/PISCSI_IP_Address, structs-iSCSI_c8f7a419-6398-4ece-a92d-fc0deffbe39a.xml, PISCSI_IP_Address structure pointer [Storage Devices], ISCSI_IP_Address structure [Storage Devices], iscsidef/ISCSI_IP_Address, *PISCSI_IP_Address, storage.iscsi_ip_address, ISCSI_IP_Address, PISCSI_IP_Address
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_IP_Address
-req.alt-loc : iscsidef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ISCSI_IP_Address, *PISCSI_IP_Address
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PISCSI_IP_Address, ISCSI_IP_Address"
 ---
 
 # _ISCSI_IP_Address structure
@@ -51,30 +55,30 @@ typedef struct _ISCSI_IP_Address {
 
 ## Members
 
-        
-            `IpV4Address`
 
-            If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV4</b>, the binary version 4 IP address. Otherwise, <b>IpV4Address</b> is not defined.
-        
-            `IpV6Address`
+`IpV4Address`
 
-            If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the binary version 6 IP address. Otherwise, <b>IpV6Address</b> is not defined.
-        
-            `IpV6FlowInfo`
+If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV4</b>, the binary version 4 IP address. Otherwise, <b>IpV4Address</b> is not defined.
 
-            If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the flow information for this IP address, as defined in version 6 of the IP protocol. Otherwise, <b>IpV6FlowInfo</b> is not defined.
-        
-            `IpV6ScopeId`
+`IpV6Address`
 
-            If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the scope ID of this IP address, as defined in version 6 of the IP protocol,. Otherwise, <b>IpV6ScopeId</b> is not defined.
-        
-            `TextAddress`
+If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the binary version 6 IP address. Otherwise, <b>IpV6Address</b> is not defined.
 
-            If <b>Type</b> = <b>ISCSI_IP_ADDRESS_TEXT</b>, the DNS or dotted decimal text address. Otherwise, <b>TextAddress</b> is not defined.
-        
-            `Type`
+`IpV6FlowInfo`
 
-            A <a href="..\iscsidef\ne-iscsidef-piscsiipaddresstype.md">ISCSIIPADDRESSTYPE</a> value that indicates the type of IP address.
+If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the flow information for this IP address, as defined in version 6 of the IP protocol. Otherwise, <b>IpV6FlowInfo</b> is not defined.
+
+`IpV6ScopeId`
+
+If <b>Type</b> = <b>ISCSI_IP_ADDRESS_IPV6</b>, the scope ID of this IP address, as defined in version 6 of the IP protocol,. Otherwise, <b>IpV6ScopeId</b> is not defined.
+
+`TextAddress`
+
+If <b>Type</b> = <b>ISCSI_IP_ADDRESS_TEXT</b>, the DNS or dotted decimal text address. Otherwise, <b>TextAddress</b> is not defined.
+
+`Type`
+
+A <a href="..\iscsidef\ne-iscsidef-piscsiipaddresstype.md">ISCSIIPADDRESSTYPE</a> value that indicates the type of IP address.
 
 
 ## Requirements
@@ -85,16 +89,12 @@ typedef struct _ISCSI_IP_Address {
 | **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-</dt>
-<dt>
 <a href="..\iscsidef\ne-iscsidef-piscsiipaddresstype.md">ISCSIIPADDRESSTYPE</a>
-</dt>
-</dl>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
+
  
 
  

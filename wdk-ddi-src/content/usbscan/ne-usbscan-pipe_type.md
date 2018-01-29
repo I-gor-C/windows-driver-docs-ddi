@@ -7,8 +7,8 @@ old-location : image\pipe_type.htm
 old-project : image
 ms.assetid : ae3077a3-01a8-4578-9a26-b8b14ec51a7a
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : PIPE_TYPE, PIPE_TYPE
+ms.date : 1/18/2018
+ms.keywords : PIPE_TYPE, EVENT_PIPE, image.pipe_type, usbscan/ALL_PIPE, stifnc_dd4122fa-8df4-4190-91ec-248a1e63ab64.xml, usbscan/PIPE_TYPE, usbscan/WRITE_DATA_PIPE, usbscan/READ_DATA_PIPE, ALL_PIPE, READ_DATA_PIPE, WRITE_DATA_PIPE, PIPE_TYPE enumeration [Imaging Devices], usbscan/EVENT_PIPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PIPE_TYPE
-req.alt-loc : usbscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_TYPE
 req.product : Windows 10 or later.
 ---

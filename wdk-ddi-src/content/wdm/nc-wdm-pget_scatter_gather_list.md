@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 44c597ed-a41e-4170-b75b-dcd61aa70350
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.getscattergatherlist, GetScatterGatherList, GetScatterGatherList callback function [Kernel-Mode Driver Architecture], GetScatterGatherList, PGET_SCATTER_GATHER_LIST, PGET_SCATTER_GATHER_LIST, ntddk/GetScatterGatherList, kdma_b451cb34-7181-4272-a1ef-0c8fc233a7fd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetScatterGatherList
-req.alt-loc : ntddk.h
 req.ddi-compliance : IrqlDispatch, IrqlDispatch(storport)
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -95,15 +99,45 @@ Indicates the direction of the DMA transfer: <b>TRUE</b> for a transfer from the
 ## Return Value
 
 This routine can return one of the following NTSTATUS values. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation succeeded.
+</dl>
+</td>
+<td width="60%">
+The operation succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The routine could not allocate sufficient memory or the number of map registers required for the transfer is larger than the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>.
+</dl>
+</td>
+<td width="60%">
+The routine could not allocate sufficient memory or the number of map registers required for the transfer is larger than the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer is too small for the requested transfer.
+</dl>
+</td>
+<td width="60%">
+The buffer is too small for the requested transfer.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -136,29 +170,20 @@ This routine can handle chained MDLs, provided that the total number of map regi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pput_scatter_gather_list.md">PutScatterGatherList</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
  
 
  

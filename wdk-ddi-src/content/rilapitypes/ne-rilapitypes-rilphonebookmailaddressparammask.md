@@ -7,8 +7,8 @@ old-location : netvista\rilphonebookmailaddressparammask_2.htm
 old-project : netvista
 ms.assetid : 4ce9142e-2a59-4908-a8d4-c6a9328d0dc5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKMAILADDRESSPARAMMASK, RILPHONEBOOKMAILADDRESSPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILPHONEBOOKMAILADDRESSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilphonebookmailaddressparammask_2, RIL_PARAM_PBEA_ALL, RILPHONEBOOKMAILADDRESSPARAMMASK, rilapitypes/RILPHONEBOOKMAILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_PBEA_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKMAILADDRESSPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPHONEBOOKMAILADDRESSPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -48,6 +52,11 @@ typedef enum _RILPHONEBOOKMAILADDRESSPARAMMASK {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_PARAM_PBEA_ADDRESS</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_PARAM_PBEA_ALL</td>

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 46b29026-b3a9-49cc-8f3d-0318516526d2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminipinirpcompletion, AVStrMiniPinIrpCompletion, AVStrMiniPinIrpCompletion routine [Streaming Media Devices], AVStrMiniPinIrpCompletion, PFNKSPINIRPCOMPLETION, PFNKSPINIRPCOMPLETION, ks/AVStrMiniPinIrpCompletion, avstclbk_fabf9c16-a37b-4101-9468-dc247545aea0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniPinIrpCompletion
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -83,14 +87,10 @@ The minidriver specifies this routine's address in the <i>IrpCompletion</i> para
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kspinregisterirpcompletioncallback.md">KsPinRegisterIrpCompletionCallback</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinregisterirpcompletioncallback.md">KsPinRegisterIrpCompletionCallback</a>
+
  
 
  

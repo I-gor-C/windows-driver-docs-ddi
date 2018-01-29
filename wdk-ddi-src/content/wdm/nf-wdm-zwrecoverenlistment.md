@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0f34d2d1-bb3a-4529-9ced-d9bed998c4ce
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwRecoverEnlistment
+ms.keywords : ZwRecoverEnlistment, kernel.zwrecoverenlistment, ZwRecoverEnlistment routine [Kernel-Mode Driver Architecture], wdm/ZwRecoverEnlistment, wdm/NtRecoverEnlistment, NtRecoverEnlistment, ktm_ref_0a6564fb-c6d1-4b4b-a278-a1d78395c1b4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwRecoverEnlistment,NtRecoverEnlistment
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,23 +66,67 @@ A pointer to the enlistment key value that the resource manager previously speci
 ## Return Value
 
 <b>ZwRecoverEnlistment</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The specified handle is not a handle to an enlistment object.
+</dl>
+</td>
+<td width="60%">
+The specified handle is not a handle to an enlistment object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>The object handle is invalid.
+</dl>
+</td>
+<td width="60%">
+The object handle is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TRANSACTION_REQUEST_NOT_VALID</b></dt>
-</dl>The transaction or its enlistment is not in the correct state.
+</dl>
+</td>
+<td width="60%">
+The transaction or its enlistment is not in the correct state.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>KTM has added a commit, rollback, or in-doubt notification to the resource manager's notification queue, and the resource manager is not using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a> callback routine.
+</dl>
+</td>
+<td width="60%">
+KTM has added a commit, rollback, or in-doubt notification to the resource manager's notification queue, and the resource manager is not using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a> callback routine.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller does not have appropriate access to the enlistment object.
+</dl>
+</td>
+<td width="60%">
+The caller does not have appropriate access to the enlistment object.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -106,26 +154,18 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-tmrecoverenlistment.md">TmRecoverEnlistment</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
+
 <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

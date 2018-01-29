@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0818907f-3346-42a2-b123-3298ea8f9a1d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxMakeLateDeviceAvailable
+ms.keywords : ifsk.rxmakelatedeviceavailable, RxMakeLateDeviceAvailable, rxref_7586550f-6abe-4e18-8154-09936c3f0488.xml, RxMakeLateDeviceAvailable routine [Installable File System Drivers], mrx/RxMakeLateDeviceAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxMakeLateDeviceAvailable
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -59,7 +63,7 @@ None
 
 ## Remarks
 
-<b>RxMakeLateDeviceAvailable</b> clears the DO_DEVICE_INITIALIZING bit in the <b>Flags</b> member of the device object. </p>
+<b>RxMakeLateDeviceAvailable</b> clears the DO_DEVICE_INITIALIZING bit in the <b>Flags</b> member of the device object.
 
 ## Requirements
 | &nbsp; | &nbsp; |

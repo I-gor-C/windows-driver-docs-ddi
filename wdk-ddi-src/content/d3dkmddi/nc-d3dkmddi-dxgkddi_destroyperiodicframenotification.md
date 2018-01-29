@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4C6B6FB2-A699-40F5-ACA3-62E8620E99AB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddi_destroyperiodicframenotification, DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION callback function [Display Devices], DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION, d3dkmddi/DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -59,12 +63,34 @@ A structure of type <i>PDXGKARG_DESTROYPERIODICFRAMENOTIFICATION</i> containing 
 ## Return Value
 
 DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>When a periodic frame notification has been successfully created.
+</dl>
+</td>
+<td width="60%">
+When a periodic frame notification has been successfully created.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Indicates that there was an invalid parameter passed to the call.
+</dl>
+</td>
+<td width="60%">
+Indicates that there was an invalid parameter passed to the call.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

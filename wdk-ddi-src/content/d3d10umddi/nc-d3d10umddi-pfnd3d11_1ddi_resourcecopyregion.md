@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CA26FB37-1A4C-4057-90A5-64FFBE289E39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.resourcecopyregion_d3d11_1_, ResourceConvertRegion(D3D11_1), PFND3D11_1DDI_RESOURCECOPYREGION, pfnResourceConvertRegion, ResourceCopyRegion(D3D11_1) callback function [Display Devices], ResourceCopyRegion(D3D11_1), PFND3D11_1DDI_RESOURCECOPYREGION, PFND3D11_1DDI_RESOURCECOPYREGION, d3d10umddi/ResourceCopyRegion(D3D11_1)
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ResourceCopyRegion(D3D11_1)
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -122,32 +126,74 @@ The following sections list conditions for copying and converting:
 <b>Copying</b>
 
 For copying, <i>ResourceCopyRegion(D3D11_1)</i> ensures that the source and destination resources were created through the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a> function with the following conditions: 
-
+<ul>
+<li>
 The destination resource was not created with the D3D10_DDI_USAGE_IMMUTABLE value set in the <b>Usage</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> structure. 
 
+</li>
+<li>
 If either the source or destination resource has the D3D10_DDI_BIND_DEPTH_STENCIL bit set in the <b>BindFlags</b> member of the D3D10DDIARG_CREATERESOURCE or is a multi-sampled resource, <i>ResourceCopyRegion(D3D11_1)</i> verifies that the <b>pSrcBox</b> parameter is <b>NULL</b>, while the <i>DstX</i>, <i>DstY</i>, and <i>DstZ</i> parameters are 0.
 
+</li>
+<li>
 The subresource indices are in range.
 
+</li>
+<li>
 Alignment restrictions apply to coordinates.
 
+</li>
+<li>
 The source and destination resources are not part of the exact same subresource. 
 
+</li>
+<li>
 Each source and destination resource format that is specified in the <b>Format</b> member of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> is in the same typeless group. 
 
+</li>
+<li>
 The source and destination resources must have the same number of samples and quality levels; except for single-sampled resources, which must only have the same number of samples. 
 
-<i>ResourceCopyRegion(D3D11_1)</i> does not ensure that the source box that is offset by the destination offsets fits entirely on the resource. <i>ResourceCopyRegion(D3D11_1)</i> also does not ensure that no subresources are currently mapped. 
+</li>
+</ul><i>ResourceCopyRegion(D3D11_1)</i> does not ensure that the source box that is offset by the destination offsets fits entirely on the resource. <i>ResourceCopyRegion(D3D11_1)</i> also does not ensure that no subresources are currently mapped. 
 
 <b>Converting</b>
 
 For conversion, <i>ResourceCopyRegion(D3D11_1)</i> ensures that the source and destination resources were created through the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a> function with the following conditions:
+<ul>
+<li>
+The destination resource was not created with the D3D10_DDI_USAGE_IMMUTABLE value set in the <b>Usage</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> structure. 
 
+</li>
+<li>
 If either the source or destination resource has the D3D10_DDI_BIND_DEPTH_STENCIL bit set in the <b>BindFlags</b> member of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> or is a multi-sampled resource, <i>ResourceCopyRegion(D3D11_1)</i> verifies that the <i>pSrcBox</i> parameter is <b>NULL</b>, while the <i>DstX</i>, <i>DstY</i>, and <i>DstZ</i> parameters are 0.
 
+</li>
+<li>
+The subresource indices are in range.
+
+</li>
+<li>
+Alignment restrictions apply to coordinates.
+
+</li>
+<li>
+The source and destination resources are not part of the exact same subresource. 
+
+</li>
+<li>
+Each source and destination resource format that is specified in the <b>Format</b> member of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> is in the same typeless group. 
+
+</li>
+<li>
 Each source and destination resource format that is specified in the <b>Format</b> member of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> supports the appropriate conversion operation. 
 
-<i>ResourceCopyRegion(D3D11_1)</i>
+</li>
+<li>
+The source and destination resources must have the same number of samples and quality levels; except for single-sampled resources, which must only have the same number of samples. 
+
+</li>
+</ul><i>ResourceCopyRegion(D3D11_1)</i>
       does not ensure that no subresources are currently mapped. <i>ResourceCopyRegion(D3D11_1)</i> also does not ensure that the source box that is offset by the destination offsets fits entirely on the resource.
 
 ## Requirements
@@ -164,26 +210,18 @@ Each source and destination resource format that is specified in the <b>Format</
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_box.md">D3D10_DDI_BOX</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1_ddi_copy_flags.md">D3D11_1_DDI_COPY_FLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_devicefuncs.md">D3D11_1DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a>
+
  
 
  

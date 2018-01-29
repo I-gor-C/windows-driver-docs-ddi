@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0627b278-2fd5-4185-8ec9-8b306c6d85a8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::GetWriteParameters, GetWriteParameters
+ms.keywords : IWDFIoRequest, wdf.iwdfiorequest_getwriteparameters, GetWriteParameters method, GetWriteParameters method, IWDFIoRequest interface, GetWriteParameters, IWDFIoRequest::GetWriteParameters, umdf.iwdfiorequest_getwriteparameters, IWDFIoRequest interface, GetWriteParameters method, UMDFRequestObjectRef_1aa8b098-4652-435b-beb7-5b7be69fd5d0.xml, wudfddi/IWDFIoRequest::GetWriteParameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.GetWriteParameters
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -94,14 +98,10 @@ For devices that support addressing (for example, a disk device), the value that
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559100">IWDFIoRequest::GetInputMemory</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
  
 
  

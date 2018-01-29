@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 832CA7CA-40B3-4D6D-B640-9838B479EC76
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyHwContext
+ms.keywords : D3DKMTDestroyHwContext function [Display Devices], display.d3dkmtdestroyhwcontext, d3dkmthk/D3DKMTDestroyHwContext, D3DKMTDestroyHwContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTDestroyHwContext
-req.alt-loc : tbd
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Tbd
 req.dll : Tbd
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,7 +54,7 @@ NTSTATUS APIENTRY D3DKMTDestroyHwContext(
 
 `D3DKMT_DESTROYHWCONTEXT`
 
-
+TBD
 
 
 ## Return Value

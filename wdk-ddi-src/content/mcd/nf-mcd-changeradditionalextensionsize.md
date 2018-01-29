@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d9bcbad5-ce2c-4968-9544-4fb024b1e933
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerAdditionalExtensionSize
+ms.keywords : chgrmini_22c1f2f6-d441-4208-b104-46711c4204cd.xml, storage.changeradditionalextensionsize, mcd/ChangerAdditionalExtensionSize, ChangerAdditionalExtensionSize function [Storage Devices], ChangerAdditionalExtensionSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerAdditionalExtensionSize
-req.alt-loc : mcd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -49,10 +53,6 @@ ULONG ChangerAdditionalExtensionSize(void);
 This function has no parameters.
 
 ## Return Value
-
-<b>ChangerAdditionalExtensionSize</b> returns the size, in bytes, of the additional device extension space required by the changer miniclass driver. 
-
-<b>ChangerAdditionalExtensionSize</b> returns the size, in bytes, of the additional device extension space required by the changer miniclass driver. 
 
 <b>ChangerAdditionalExtensionSize</b> returns the size, in bytes, of the additional device extension space required by the changer miniclass driver.
 
@@ -76,11 +76,8 @@ The device-specific information stored by a changer miniclass driver is determin
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\mcd\nf-mcd-changerinitialize.md">ChangerInitialize</a>
-</dt>
-</dl>
+
  
 
  

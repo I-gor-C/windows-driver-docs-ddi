@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f8055bb3-b8f1-47f5-9ae0-8e7a26989871
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.cryptosessionkeyexchange, CryptoSessionKeyExchange callback function [Display Devices], CryptoSessionKeyExchange, PFND3DDDI_CRYPTOSESSIONKEYEXCHANGE, PFND3DDDI_CRYPTOSESSIONKEYEXCHANGE, d3dumddi/CryptoSessionKeyExchange, UserModeDisplayDriver_Functions_36eab785-562d-4f2d-bcf2-2da53708f98d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : CryptoSessionKeyExchange is supported beginning with
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CryptoSessionKeyExchange
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,13 +68,35 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CryptoSessionKeyExchange</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The session key is successfully exchanged. 
+</dl>
+</td>
+<td width="60%">
+The session key is successfully exchanged. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_cryptosessionkeyexchange.md">CryptoSessionKeyExchange</a> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -92,11 +118,8 @@ For D3DKEYEXCHANGE_RSAES_OAEP, the <b>pData</b> member of the <a href="..\d3dumd
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_cryptosessionkeyexchange.md">D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE</a>
-</dt>
-</dl>
+
  
 
  

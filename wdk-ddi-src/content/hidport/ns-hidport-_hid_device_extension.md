@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 409fbc3e-1221-4869-9087-693b1e4d4587
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HID_DEVICE_EXTENSION, HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION
+ms.keywords : hid.hid_device_extension, _HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION, PHID_DEVICE_EXTENSION structure pointer [Human Input Devices], HID_DEVICE_EXTENSION structure [Human Input Devices], PHID_DEVICE_EXTENSION, hidport/PHID_DEVICE_EXTENSION, hidport/HID_DEVICE_EXTENSION, hidstrct_faf2bb84-b1f7-4cfa-84b0-5328dfb521dc.xml, HID_DEVICE_EXTENSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HID_DEVICE_EXTENSION
-req.alt-loc : hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION
 ---
 
@@ -48,18 +52,18 @@ typedef struct _HID_DEVICE_EXTENSION {
 
 ## Members
 
-        
-            `MiniDeviceExtension`
 
-            Pointer to the minidriver-specific portion of the device extension.
-        
-            `NextDeviceObject`
+`MiniDeviceExtension`
 
-            Pointer to the device object immediately below the functional device object in the HID device's device stack.
-        
-            `PhysicalDeviceObject`
+Pointer to the minidriver-specific portion of the device extension.
 
-            Pointer to HID device's physical device object.
+`NextDeviceObject`
+
+Pointer to the device object immediately below the functional device object in the HID device's device stack.
+
+`PhysicalDeviceObject`
+
+Pointer to HID device's physical device object.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _HID_DEVICE_EXTENSION {
 | **Minimum UMDF version** |  |
 | **Header** | hidport.h (include Hidport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>
-</dt>
-</dl>
+
  
 
  

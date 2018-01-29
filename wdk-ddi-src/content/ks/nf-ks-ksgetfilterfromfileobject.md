@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : eb4ca943-43cb-4eac-8a73-484a7b8acafe
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetFilterFromFileObject
+ms.keywords : KsGetFilterFromFileObject function [Streaming Media Devices], stream.ksgetfilterfromfileobject, KsGetFilterFromFileObject, avfunc_4c336bce-3064-471e-bd79-daa1888e14b8.xml, ks/KsGetFilterFromFileObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetFilterFromFileObject
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,17 +81,12 @@ It is the responsibility of the minidriver to verify that <i>FileObject</i> is a
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgetobjecttypefromfileobject.md">KsGetObjectTypeFromFileObject</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgetdevicefordeviceobject.md">KsGetDeviceForDeviceObject</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgetobjecttypefromfileobject.md">KsGetObjectTypeFromFileObject</a>
+
  
 
  

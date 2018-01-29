@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3b5d67c0-eb3f-4ac1-9f85-f9c673314458
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _DEVICE_INTERFACE_CHANGE_NOTIFICATION, DEVICE_INTERFACE_CHANGE_NOTIFICATION, *PDEVICE_INTERFACE_CHANGE_NOTIFICATION
+ms.keywords : wdm/DEVICE_INTERFACE_CHANGE_NOTIFICATION, DEVICE_INTERFACE_CHANGE_NOTIFICATION structure [Kernel-Mode Driver Architecture], PDEVICE_INTERFACE_CHANGE_NOTIFICATION, kernel.device_interface_change_notification, PDEVICE_INTERFACE_CHANGE_NOTIFICATION structure pointer [Kernel-Mode Driver Architecture], _DEVICE_INTERFACE_CHANGE_NOTIFICATION, *PDEVICE_INTERFACE_CHANGE_NOTIFICATION, wdm/PDEVICE_INTERFACE_CHANGE_NOTIFICATION, kstruct_a_43e52fa7-54ee-49bd-b822-4daf39ebcdc2.xml, DEVICE_INTERFACE_CHANGE_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_INTERFACE_CHANGE_NOTIFICATION
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : DEVICE_INTERFACE_CHANGE_NOTIFICATION, *PDEVICE_INTERFACE_CHANGE_NOTIFICATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDEVICE_INTERFACE_CHANGE_NOTIFICATION, DEVICE_INTERFACE_CHANGE_NOTIFICATION"
 req.product : Windows 10 or later.
 ---
 
@@ -51,29 +55,29 @@ typedef struct _DEVICE_INTERFACE_CHANGE_NOTIFICATION {
 
 ## Members
 
-        
-            `Event`
 
-            Specifies a GUID identifying the event:  GUID_DEVICE_INTERFACE_ARRIVAL or GUID_DEVICE_INTERFACE_REMOVAL. The GUIDs are defined in Wdmguid.h.
-        
-            `InterfaceClassGuid`
+`Event`
 
-            Specifies the class of the device interface that has just been enabled or disabled.
-        
-            `Size`
+Specifies a GUID identifying the event:  GUID_DEVICE_INTERFACE_ARRIVAL or GUID_DEVICE_INTERFACE_REMOVAL. The GUIDs are defined in Wdmguid.h.
 
-            Specifies the size of the structure, in bytes, including the size of the standard first three members plus the event-specific data.
-        
-            `SymbolicLinkName`
+`InterfaceClassGuid`
 
-            Pointer to a Unicode string that contains the name of the symbolic link for the device interface.
-        
-            `Version`
+Specifies the class of the device interface that has just been enabled or disabled.
 
-            Specifies the version of the data structure, currently 1.
+`Size`
 
-    ## Remarks
-        This structure is allocated from paged memory.
+Specifies the size of the structure, in bytes, including the size of the standard first three members plus the event-specific data.
+
+`SymbolicLinkName`
+
+Pointer to a Unicode string that contains the name of the symbolic link for the device interface.
+
+`Version`
+
+Specifies the version of the data structure, currently 1.
+
+## Remarks
+This structure is allocated from paged memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,22 +87,16 @@ typedef struct _DEVICE_INTERFACE_CHANGE_NOTIFICATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_hwprofile_change_notification.md">HWPROFILE_CHANGE_NOTIFICATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_plugplay_notification_header.md">PLUGPLAY_NOTIFICATION_HEADER</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
+
+<a href="..\wdm\ns-wdm-_hwprofile_change_notification.md">HWPROFILE_CHANGE_NOTIFICATION</a>
+
 <a href="..\wdm\ns-wdm-_target_device_removal_notification.md">TARGET_DEVICE_REMOVAL_NOTIFICATION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9cd17a86-6652-414d-a80d-2e61c0ac99b6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortCompleteRequest
+ms.keywords : scsiprt_be6690c0-6cfa-4a71-9877-176ed2c742e8.xml, ScsiPortCompleteRequest routine [Storage Devices], storage.scsiportcompleterequest, ScsiPortCompleteRequest, srb/ScsiPortCompleteRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortCompleteRequest
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortCompleteRequest function
 The <b>ScsiPortCompleteRequest</b> routine completes all of the active requests for the given SCSI bus, controller, or LU, including a request being processed by the calling miniport driver routine.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -96,14 +101,10 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-</dt>
-<dt>
+
 <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
-</dt>
-</dl>
+
  
 
  

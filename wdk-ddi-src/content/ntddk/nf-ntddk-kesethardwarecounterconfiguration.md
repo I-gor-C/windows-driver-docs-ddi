@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9677dbd7-4b6f-49a9-ac38-fdcbaeb3a6f8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetHardwareCounterConfiguration
+ms.keywords : KeSetHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], k105_2cf79626-ed0d-4a15-bd9f-22b669ffde98.xml, KeSetHardwareCounterConfiguration, kernel.kesethardwarecounterconfiguration, ntddk/KeSetHardwareCounterConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeSetHardwareCounterConfiguration
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -61,15 +65,45 @@ Specifies the number of elements in the array that is pointed to by the <i>Count
 ## Return Value
 
 <b>KeSetHardwareCounterConfiguration</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The value of the <i>Count</i> parameter exceeds the maximum number of counters that is specified by the MAX_HW_COUNTERS constant, which is defined in the Ntddk.h header file.
+</dl>
+</td>
+<td width="60%">
+The value of the <i>Count</i> parameter exceeds the maximum number of counters that is specified by the MAX_HW_COUNTERS constant, which is defined in the Ntddk.h header file.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WMI_ALREADY_ENABLED</b></dt>
-</dl>One or more of the counters that are specified in the <i>CounterArray</i> array are already enabled.
+</dl>
+</td>
+<td width="60%">
+One or more of the counters that are specified in the <i>CounterArray</i> array are already enabled.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>This routine is not implemented for the processor architecture that the caller is running on.
+</dl>
+</td>
+<td width="60%">
+This routine is not implemented for the processor architecture that the caller is running on.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,20 +139,14 @@ Virtualization software typically does not virtualize hardware performance count
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-halfreehardwarecounters.md">HalFreeHardwareCounters</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-kequeryhardwarecounterconfiguration.md">KeQueryHardwareCounterConfiguration</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
+
+<a href="..\ntddk\nf-ntddk-halfreehardwarecounters.md">HalFreeHardwareCounters</a>
+
  
 
  

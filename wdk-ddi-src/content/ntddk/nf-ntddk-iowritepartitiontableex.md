@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b49ea2db-bb1e-4293-bfac-cbb3e62bca91
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : IoWritePartitionTableEx
+ms.keywords : storage.iowritepartitiontableex, ntddk/IoWritePartitionTableEx, IoWritePartitionTableEx routine [Storage Devices], IoWritePartitionTableEx, rtns-disk_b84c8b07-5cdc-4e39-964f-a8f6b28e7346.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWritePartitionTableEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -55,21 +59,51 @@ Pointer to the device object representing the disk whose partition tables are to
 
 `DriveLayout`
 
-
+TBD
 
 
 ## Return Value
 
 <b>IoWritePartitionTabloEx</b> returns a status code of STATUS_SUCCESS if all writes were completed without error. In case of failure, the error codes returned by <b>IoWritePartitionTableEx</b> might include, but are not limited to, the following list:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DEVICE_NOT_READY</b></dt>
-</dl>Indicates a failure read the correct disk geometry.
+</dl>
+</td>
+<td width="60%">
+Indicates a failure read the correct disk geometry.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates a failure to allocate necessary resources (for example, heap memory, IRPs, and so on).
+</dl>
+</td>
+<td width="60%">
+Indicates a failure to allocate necessary resources (for example, heap memory, IRPs, and so on).
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>Indicates that sector zero did not have the expected MBR disk signature.
+</dl>
+</td>
+<td width="60%">
+Indicates that sector zero did not have the expected MBR disk signature.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -99,17 +133,12 @@ In order tot create or delete partitions a full description of the system must b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-iosetpartitioninformationex.md">IoSetPartitionInformationEx</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 801FBD9D-304A-41AC-AD28-00DE95DEFE63
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_DRIVER_REQUEST_DATA, GNSS_DRIVER_REQUEST_DATA
+ms.keywords : gnssdriver/PGNSS_DRIVER_REQUEST_DATA, PGNSS_DRIVER_REQUEST_DATA structure pointer [Sensor Devices], sensors.gnss_driver_request_data, PGNSS_DRIVER_REQUEST_DATA, GNSS_DRIVER_REQUEST_DATA, GNSS_DRIVER_REQUEST_DATA structure [Sensor Devices], gnssdriver/GNSS_DRIVER_REQUEST_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_DRIVER_REQUEST_DATA
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_DRIVER_REQUEST_DATA
 ---
 
@@ -49,27 +53,27 @@ typedef struct {
 
 ## Members
 
-        
-            `Request`
 
-            The type of request made by the driver.
+`Request`
+
+The type of request made by the driver.
 
 Represented by the <a href="..\gnssdriver\ne-gnssdriver-gnss_driver_request.md">GNSS_DRIVER_REQUEST</a> enumeration.
-        
-            `RequestFlag`
 
-            Additional flags along with this information.
-        
-            `Size`
+`RequestFlag`
 
-            Structure size.
-        
-            `Version`
+Additional flags along with this information.
 
-            Version number.
+`Size`
 
-    ## Remarks
-        Based on certain rules, the HLOS  will provide data to the GNSS driver. However, during specific  times, if the GNSS driver determines that it needs  data it can request it without waiting for the HLOS to send it in its normal operation.</p>
+Structure size.
+
+`Version`
+
+Version number.
+
+## Remarks
+Based on certain rules, the HLOS  will provide data to the GNSS driver. However, during specific  times, if the GNSS driver determines that it needs  data it can request it without waiting for the HLOS to send it in its normal operation.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 354dcd2b-fa63-4574-94d8-149e3f199751
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsDataTypeHandler, IKsDataTypeHandler::KsIsMediaTypeInRanges, KsIsMediaTypeInRanges
+ms.keywords : IKsDataTypeHandler::KsIsMediaTypeInRanges, stream.iksdatatypehandler_ksismediatypeinranges, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler interface [Streaming Media Devices], KsIsMediaTypeInRanges method, KsIsMediaTypeInRanges, KsIsMediaTypeInRanges method [Streaming Media Devices], ksproxy/IKsDataTypeHandler::KsIsMediaTypeInRanges, ksproxy_ebd4f24e-02a2-4228-b11b-890693ece498.xml, IKsDataTypeHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsDataTypeHandler.KsIsMediaTypeInRanges
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -75,17 +79,12 @@ A client first calls the <a href="https://msdn.microsoft.com/library/windows/har
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559844">IKsDataTypeHandler::KsSetMediaType</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559844">IKsDataTypeHandler::KsSetMediaType</a>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
  
 
  

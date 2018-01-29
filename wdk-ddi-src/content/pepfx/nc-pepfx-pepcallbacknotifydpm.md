@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 56446DA9-EAE9-4EEF-9299-892B7384D506
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.acceptdevicenotification, AcceptDeviceNotification routine [Kernel-Mode Driver Architecture], AcceptDeviceNotification, PEPCALLBACKNOTIFYDPM, PEPCALLBACKNOTIFYDPM, pepfx/AcceptDeviceNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AcceptDeviceNotification
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -91,17 +95,12 @@ The <i>AcceptDeviceNotification</i> routine can be called at IRQL &lt;= DISPATCH
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
-</dt>
-<dt>
 <a href="..\pepfx\nf-pepfx-pofxregisterpluginex.md">PoFxRegisterPluginEx</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
+
  
 
  

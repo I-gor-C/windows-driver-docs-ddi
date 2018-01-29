@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d294d97a-e6b2-4ab3-bebf-e545aa2f862d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port
+ms.keywords : PMS_SMHBA_SAS_Port structure pointer [Storage Devices], hbapiwmi/MS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port structure [Storage Devices], *PMS_SMHBA_SAS_Port, structs-Fibre_c7678d06-756a-4733-bdff-35571ff2c571.xml, storage.ms_smhba_sas_port, _MS_SMHBA_SAS_Port, hbapiwmi/PMS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MS_SMHBA_SAS_Port
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _MS_SMHBA_SAS_Port {
 
 ## Members
 
-        
-            `AttachedSASAddress`
 
-            The SAS address of the entity that is at the opposite end of the SAS link from this local SAS port.
-        
-            `LocalSASAddress`
+`AttachedSASAddress`
 
-            The Port_Identifier of this SAS port
-        
-            `NumberofDiscoveredPorts`
+The SAS address of the entity that is at the opposite end of the SAS link from this local SAS port.
 
-            The number of end ports that are visible to the local SAS port. The discovered ports might also include SMP ports that are contained within SAS expander devices.
-        
-            `NumberofPhys`
+`LocalSASAddress`
 
-            The number of physical ports that are associated with this SAS port. If the value is more than one, this SAS port is considered to be a wide port.
-        
-            `PortProtocol`
+The Port_Identifier of this SAS port
 
-            The protocols that are supported by this SAS port.
+`NumberofDiscoveredPorts`
+
+The number of end ports that are visible to the local SAS port. The discovered ports might also include SMP ports that are contained within SAS expander devices.
+
+`NumberofPhys`
+
+The number of physical ports that are associated with this SAS port. If the value is more than one, this SAS port is considered to be a wide port.
+
+`PortProtocol`
+
+The protocols that are supported by this SAS port.
 
 
 ## Requirements

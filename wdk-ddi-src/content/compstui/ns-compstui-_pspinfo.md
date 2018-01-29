@@ -7,8 +7,8 @@ old-location : print\pspinfo.htm
 old-project : print
 ms.assetid : 80a15ee4-e160-49fc-9c61-a14b14d19751
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _PSPINFO, PSPINFO, *PPSPINFO
+ms.date : 1/18/2018
+ms.keywords : print.pspinfo, compstui/PSPINFO, cpsuifnc_0e5bb634-1f21-4e4d-aee9-c45ff0dc1c26.xml, PPSPINFO, PPSPINFO structure pointer [Print Devices], *PPSPINFO, PSPINFO, _PSPINFO, PSPINFO structure [Print Devices], compstui/PPSPINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PSPINFO
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : PSPINFO, *PPSPINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPSPINFO, PSPINFO"
 ---
 
 # _PSPINFO structure
@@ -50,35 +54,46 @@ typedef struct _PSPINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            CPSUI-supplied size, in bytes, of the PSPINFO structure.
-        
-            `hComPropSheet`
+`cbSize`
 
-            CPSUI-supplied handle to the parent of the page whose handle is contained in <b>hCPSUIPage</b>.
-        
-            `hCPSUIPage`
+CPSUI-supplied size, in bytes, of the PSPINFO structure.
 
-            CPSUI-supplied handle to the property sheet page.
-        
-            `pfnComPropSheet`
+`hComPropSheet`
 
-            CPSUI-supplied pointer to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function.
-        
-            `wReserved`
+CPSUI-supplied handle to the parent of the page whose handle is contained in <b>hCPSUIPage</b>.
 
-            Reserved.
+`hCPSUIPage`
 
-    ## Remarks
-        Before CPSUI calls <b>CreatePropertySheetPage</b> to create a property sheet page, it expands the size of the standard PROPSHEETPAGE structure in order to append a PSPINFO structure. When the operating system calls a dialog box procedure (pointed to by a <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> structure) and specifies a WM_INITDIALOG message, the function's <b>lParam</b> member points to the expanded PROPSHEETPAGE structure containing the PSPINFO structure.
+CPSUI-supplied handle to the property sheet page.
+
+`pfnComPropSheet`
+
+CPSUI-supplied pointer to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function.
+
+`wReserved`
+
+Reserved.
+
+## Remarks
+Before CPSUI calls <b>CreatePropertySheetPage</b> to create a property sheet page, it expands the size of the standard PROPSHEETPAGE structure in order to append a PSPINFO structure. When the operating system calls a dialog box procedure (pointed to by a <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> structure) and specifies a WM_INITDIALOG message, the function's <b>lParam</b> member points to the expanded PROPSHEETPAGE structure containing the PSPINFO structure.
 
 (The <b>CreatePropertySheetPage</b> function, PROPSHEETPAGE structure, WM_INITDIALOG message, and dialog box procedures are all described in the Microsoft Windows SDK documentation.)
 
 To obtain the PSPINFO structure's address, use the PPSPINFO_FROM_WM_INITDIALOG_LPARAM macro (defined in compstui.h) as follows:
-
-The PSPINFO structure pointer can be saved for later use, but the structure's contents must not be modified.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>PPSPINFO pPspInfo;
+if (Msg == WM_INITDIALOG) {
+    pPspInfo = PPSPINFO_FROM_WM_INITDIALOG_LPARAM(lParam);
+}</pre>
+</td>
+</tr>
+</table></span></div>The PSPINFO structure pointer can be saved for later use, but the structure's contents must not be modified.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3f5fac9-013c-4739-a29e-c781b34e5289
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_NOMINALRANGE, DXVADDI_NOMINALRANGE
+ms.keywords : d3dumddi/DXVADDI_NominalRangeMask, DXVA2_Structs_fee8e221-64df-474a-a178-439365c683fd.xml, d3dumddi/DXVADDI_NominalRange_Wide, DXVADDI_NominalRange_16_235, d3dumddi/DXVADDI_NominalRange_16_235, DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NOMINALRANGE, DXVADDI_NOMINALRANGE enumeration [Display Devices], d3dumddi/DXVADDI_NominalRange_Normal, DXVADDI_NominalRange_0_255, DXVADDI_NominalRange_48_208, d3dumddi/DXVADDI_NominalRange_48_208, DXVADDI_NOMINALRANGE, _DXVADDI_NOMINALRANGE, DXVADDI_NominalRangeMask, display.dxvaddi_nominalrange, DXVADDI_NominalRange_Wide, d3dumddi/DXVADDI_NominalRange_0_255, d3dumddi/DXVADDI_NominalRange_Unknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_NOMINALRANGE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_NOMINALRANGE
 ---
 
@@ -106,11 +110,8 @@ Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
-</dt>
-</dl>
+
  
 
  

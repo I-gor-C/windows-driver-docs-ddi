@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 82716a1a-e361-40ad-b3cd-bdcd3abc75f8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbisdevicepresent, DxgkCbIsDevicePresent callback function [Display Devices], DxgkCbIsDevicePresent, DXGKCB_IS_DEVICE_PRESENT, DXGKCB_IS_DEVICE_PRESENT, dispmprt/DxgkCbIsDevicePresent, DpFunctions_0ef5f8dd-52b6-4bf6-a19b-f87043ff6d18.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbIsDevicePresent
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 11424e94-d279-4003-a97c-a46d1a75e8e5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeIpiGenericCall
+ms.keywords : k105_f819c564-ecbc-4d28-aa64-6936c8ad3542.xml, KeIpiGenericCall routine [Kernel-Mode Driver Architecture], wdm/KeIpiGenericCall, KeIpiGenericCall, kernel.keipigenericcall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeIpiGenericCall
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < IPI_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,11 +85,8 @@ When a driver calls <b>KeIpiGenericCall</b>, the system interrupts every process
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550688">IpiGenericCall</a>
-</dt>
-</dl>
+
  
 
  

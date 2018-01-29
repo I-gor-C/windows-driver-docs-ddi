@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : df9b3231-4c43-4d4b-b128-e8d6a9f21b17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassDebugAssert
+ms.keywords : strclass-routines_6f9302e6-592f-4097-830c-83b05a54d335.xml, stream.streamclassdebugassert, strmini/StreamClassDebugAssert, StreamClassDebugAssert routine [Streaming Media Devices], StreamClassDebugAssert
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassDebugAssert
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -91,14 +95,10 @@ When running a checked version of the class driver, asserts are recognized, and 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-dbgbreakpoint.md">DbgBreakPoint</a>
-</dt>
-<dt>
 <a href="..\strmini\nf-strmini-streamclassdebugprint.md">StreamClassDebugPrint</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543626">DbgBreakPoint</a>
+
  
 
  

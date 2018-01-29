@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 77dc31a1-a50c-4727-b730-1785e5d4a355
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_parclass_connect, IOCTL_INTERNAL_PARCLASS_CONNECT control code [Parallel Ports], IOCTL_INTERNAL_PARCLASS_CONNECT, parallel/IOCTL_INTERNAL_PARCLASS_CONNECT, cisspd_03b94b78-be74-4421-bb08-0860d6d8dca5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_PARCLASS_CONNECT
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,14 +65,9 @@ The size of a <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLAS
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a PARCLASS_INFORMATION structure. Otherwise, the <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel devices or to the following value:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is less than the size, in bytes, of a PARCLASS_INFORMATION structure.
 
 
 ## Requirements
@@ -78,16 +77,12 @@ The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is 
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_parclass_disconnect.md">IOCTL_INTERNAL_PARCLASS_DISCONNECT</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

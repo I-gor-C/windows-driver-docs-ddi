@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f139da57-1527-476d-8e9f-0b96876adecf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_NUMBER, *PFEATURE_NUMBER, FEATURE_NUMBER
+ms.keywords : FeatureDvdCSS, ntddmmc/PFEATURE_NUMBER, FeatureProfileList, FeatureDDCDRWWrite, FeatureEnhancedDefectReporting, FeatureTSR, ntddmmc/FeatureWriteProtect, FeatureCdrwCAVWrite, FeatureRigidRestrictedOverwrite, ntddmmc/FeatureCDRWMediaWriteSupport, ntddmmc/FeatureSectorErasable, ntddmmc/FeatureMrw, ntddmmc/FeatureLogicalUnitSerialNumber, PFEATURE_NUMBER enumeration pointer [Storage Devices], FeatureDvdPlusRDualLayer, ntddmmc/FeatureDvdPlusRWDualLayer, FeatureMediaSerialNumber, ntddmmc/FeatureDvdPlusR, FeatureRandomWritable, FeatureTimeout, ntddmmc/FeatureDiscControlBlocks, ntddmmc/FeatureCdrwCAVWrite, ntddmmc/FeatureCdRead, FeatureCdTrackAtOnce, FeatureCDAudioAnalogPlay, ntddmmc/FeatureMicrocodeUpgrade, ntddmmc/FeatureBDRPseudoOverwrite, ntddmmc/FeatureWriteOnce, ntddmmc/FeatureMultiRead, ntddmmc/FeatureIncrementalStreamingWritable, FeatureCdMastering, ntddmmc/FeatureDvdRecordableWrite, FEATURE_NUMBER, ntddmmc/FeatureHDDVDRead, ntddmmc/FeatureRandomWritable, ntddmmc/FeatureDvdPlusRW, structs-CD-ROM_6d75ed9b-8d13-4715-ae9a-51bc2a6025f0.xml, ntddmmc/FeatureMorphing, ntddmmc/FeatureFormattable, ntddmmc/FeatureRandomReadable, FeatureSectorErasable, FeatureLogicalUnitSerialNumber, FeatureCdRead, ntddmmc/FeatureCdTrackAtOnce, FeatureBDRead, ntddmmc/FeatureCdMastering, ntddmmc/FeatureLayerJumpRecording, ntddmmc/FeatureSMART, ntddmmc/FeatureAACS, FeatureRestrictedOverwrite, ntddmmc/FeatureBDRead, storage.feature_number, FeatureIncrementalStreamingWritable, ntddmmc/FeatureMediaSerialNumber, ntddmmc/FeatureRealTimeStreaming, ntddmmc/FeatureDDCDRWrite, ntddmmc/FeatureEmbeddedChanger, FeatureDefectManagement, FeaturePowerManagement, ntddmmc/FeatureBDWrite, FeatureRandomReadable, FeatureRealTimeStreaming, ntddmmc/FeatureCore, FeatureMrw, FeatureDvdCPRM, *PFEATURE_NUMBER, ntddmmc/FEATURE_NUMBER, ntddmmc/FeatureProfileList, FeatureWriteProtect, FeatureMultiRead, ntddmmc/FeatureVCPS, ntddmmc/FeatureTSR, ntddmmc/FeatureDvdCSS, FeatureDiscControlBlocks, ntddmmc/FeaturePowerManagement, FeatureVCPS, FeatureHDDVDRead, FeatureCore, PFEATURE_NUMBER, ntddmmc/FeatureDvdPlusRDualLayer, FEATURE_NUMBER enumeration [Storage Devices], FeatureRemovableMedium, FeatureSMART, FeatureEmbeddedChanger, ntddmmc/FeatureDDCDRead, FeatureHybridDisc, ntddmmc/FeatureHDDVDWrite, FeatureFirmwareDate, FeatureDvdRecordableWrite, FeatureHDDVDWrite, ntddmmc/FeatureRestrictedOverwrite, FeatureMorphing, ntddmmc/FeatureDefectManagement, ntddmmc/FeatureDvdCPRM, FeatureDvdPlusRWDualLayer, ntddmmc/FeatureDvdRead, FeatureFormattable, FeatureDvdPlusRW, ntddmmc/FeatureDDCDRWWrite, FeatureBDWrite, ntddmmc/FeatureRemovableMedium, ntddmmc/FeatureEnhancedDefectReporting, ntddmmc/FeatureHybridDisc, FeatureCDRWMediaWriteSupport, ntddmmc/FeatureCDAudioAnalogPlay, FeatureDvdPlusR, _FEATURE_NUMBER, FeatureDvdRead, FeatureBDRPseudoOverwrite, ntddmmc/FeatureFirmwareDate, ntddmmc/FeatureRigidRestrictedOverwrite, FeatureAACS, FeatureLayerJumpRecording, FeatureWriteOnce, FeatureMicrocodeUpgrade, FeatureDDCDRead, ntddmmc/FeatureTimeout, FeatureDDCDRWrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_NUMBER
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFEATURE_NUMBER, FEATURE_NUMBER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FEATURE_NUMBER, *PFEATURE_NUMBER
 ---
 
 # _FEATURE_NUMBER Enumeration
@@ -383,11 +387,8 @@ typedef enum _FEATURE_NUMBER {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-</dl>
+
  
 
  

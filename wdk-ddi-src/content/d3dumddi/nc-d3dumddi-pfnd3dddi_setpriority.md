@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 61ac2d28-7aed-4796-8d09-591db936013b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setpriority, SetPriority callback function [Display Devices], SetPriority, PFND3DDDI_SETPRIORITY, PFND3DDDI_SETPRIORITY, d3dumddi/SetPriority, UserModeDisplayDriver_Functions_6e8f2a2a-f88b-45b6-9c59-b942cb44664b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetPriority
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>SetPriority</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The priority level is successfully set.
+</dl>
+</td>
+<td width="60%">
+The priority level is successfully set.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -89,17 +115,12 @@ The Microsoft Direct3D runtime calls <i>SetPriority</i> to set the priority leve
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setpriority.md">D3DDDIARG_SETPRIORITY</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setprioritycb.md">pfnSetPriorityCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setpriority.md">D3DDDIARG_SETPRIORITY</a>
+
  
 
  

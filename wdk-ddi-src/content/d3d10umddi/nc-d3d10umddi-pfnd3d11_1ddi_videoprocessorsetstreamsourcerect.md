@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 78d62117-260a-46ab-9daa-ee9dcfc7fc1f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.videoprocessorsetstreamsourcerect, pfnVideoProcessorSetStreamSourceRect callback function [Display Devices], pfnVideoProcessorSetStreamSourceRect, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSOURCERECT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSOURCERECT, d3d10umddi/pfnVideoProcessorSetStreamSourceRect
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnVideoProcessorSetStreamSourceRect
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -102,14 +106,10 @@ If the <b>VideoProcessorSetStreamSourceRect</b> function is never called, or if 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

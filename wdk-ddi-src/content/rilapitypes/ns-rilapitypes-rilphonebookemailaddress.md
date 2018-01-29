@@ -7,8 +7,8 @@ old-location : netvista\rilphonebookemailaddress_2.htm
 old-project : netvista
 ms.assetid : 322939c8-c7c9-405b-9f78-08ae9c642b42
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS, *LPRILPHONEBOOKEMAILADDRESS, netvista.rilphonebookemailaddress_2, RILPHONEBOOKEMAILADDRESS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKEMAILADDRESS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS"
 req.product : Windows 10 or later.
 ---
@@ -49,18 +53,18 @@ typedef struct _RILPHONEBOOKEMAILADDRESS {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `wszAddress`
 
-            
+
+`dwParams`
+
+
+
+`wszAddress`
+
+
 
 
 ## Requirements

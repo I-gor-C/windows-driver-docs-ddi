@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFFile2, IWDFFile2::GetRelatedFileObject, GetRelatedFileObject
+ms.keywords : wudfddi/IWDFFile2::GetRelatedFileObject, GetRelatedFileObject method, GetRelatedFileObject, IWDFFile2 interface, GetRelatedFileObject method, wdf.iwdffile2_getrelatedfileobject, IWDFFile2, umdf.iwdffile2_getrelatedfileobject, UMDFFileObjectRef_f65433dc-ba63-456e-beff-ef7c9e2dffa8.xml, GetRelatedFileObject method, IWDFFile2 interface, IWDFFile2::GetRelatedFileObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFFile2.GetRelatedFileObject
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ Use of related file objects is technology-specific. For example, <a href="https:
 
 For more information about related file objects, see the <b>GetRelatedFileObject</b> member of the kernel-mode <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure.
 
-The following code example retrieves the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface of a related file object, from the <b>IWDFFile</b> interface that a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a>  callback function receives.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,11 +84,8 @@ The following code example retrieves the <a href="..\wudfddi\nn-wudfddi-iwdffile
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdffile2.md">IWDFFile2</a>
-</dt>
-</dl>
+
  
 
  

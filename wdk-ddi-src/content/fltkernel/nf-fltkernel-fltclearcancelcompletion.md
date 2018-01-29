@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 75c66cb7-3378-4951-9180-d1bd9f201a42
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltClearCancelCompletion
+ms.keywords : FltApiRef_a_to_d_4dea0214-a0a2-45b8-b044-960881a8f065.xml, fltkernel/FltClearCancelCompletion, ifsk.fltclearcancelcompletion, FltClearCancelCompletion, FltClearCancelCompletion routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltClearCancelCompletion
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -77,20 +81,14 @@ To cancel an I/O operation, call <a href="..\fltkernel\nf-fltkernel-fltcancelio.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltsetcancelcompletion.md">FltSetCancelCompletion</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
+
  
 
  

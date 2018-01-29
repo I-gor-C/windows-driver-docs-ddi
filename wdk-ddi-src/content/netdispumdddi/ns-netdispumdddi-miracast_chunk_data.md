@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1ff4af0b-df1c-4529-9f80-c9e44d889a63
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : MIRACAST_CHUNK_DATA, MIRACAST_CHUNK_DATA
+ms.keywords : netdispumdddi/MIRACAST_CHUNK_DATA, MIRACAST_CHUNK_DATA, MIRACAST_CHUNK_DATA structure [Display Devices], display.miracast_chunk_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MIRACAST_CHUNK_DATA
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MIRACAST_CHUNK_DATA
 ---
 
@@ -48,18 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `ChunkInfo`
 
-            A <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_info.md">MIRACAST_CHUNK_INFO</a> encode chunk information structure that the user-mode display driver wants to report.
-        
-            `PrivateDriverData`
+`ChunkInfo`
 
-            Private data, of type <b>UCHAR</b>, that the user-mode display driver sends when it calls the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_get_next_chunk_data.md">GetNextChunkData</a> function.
-        
-            `PrivateDriverDataSize`
+A <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_info.md">MIRACAST_CHUNK_INFO</a> encode chunk information structure that the user-mode display driver wants to report.
 
-            The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
+`PrivateDriverData`
+
+Private data, of type <b>UCHAR</b>, that the user-mode display driver sends when it calls the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_get_next_chunk_data.md">GetNextChunkData</a> function.
+
+`PrivateDriverDataSize`
+
+The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_get_next_chunk_data.md">GetNextChunkData</a>
-</dt>
-<dt>
 <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_info.md">MIRACAST_CHUNK_INFO</a>
-</dt>
-</dl>
+
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_get_next_chunk_data.md">GetNextChunkData</a>
+
  
 
  

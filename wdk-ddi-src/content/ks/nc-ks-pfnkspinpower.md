@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6362ca08-cf8d-4e54-b144-10b2252f05c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminipinpower, AVStrMiniPinPower, AVStrMiniPinPower routine [Streaming Media Devices], AVStrMiniPinPower, PFNKSPINPOWER, PFNKSPINPOWER, ks/AVStrMiniPinPower, avstclbk_fd047ae3-b574-4dad-a16b-2152193fb2cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniPinPower
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -67,7 +71,7 @@ None
 
 ## Remarks
 
-The minidriver specifies an address for routines of this type in the <i>Sleep </i>and/or <i>Wake </i>parameters of the <a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a> routine.
+<div class="alert"><b>Warning</b>  Do not attempt to obtain the filter control mutex from within either the Sleep or Wake callback. Doing so induces a risk of deadlock. For more information about mutexes, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</div><div> </div>The minidriver specifies an address for routines of this type in the <i>Sleep </i>and/or <i>Wake </i>parameters of the <a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,14 +87,10 @@ The minidriver specifies an address for routines of this type in the <i>Sleep </
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a>
+
  
 
  

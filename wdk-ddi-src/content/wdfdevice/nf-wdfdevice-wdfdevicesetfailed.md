@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 87fbceab-d08c-4da7-a257-1454f84c04b7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceSetFailed
+ms.keywords : WdfDeviceSetFailed, WdfDeviceSetFailed method, wdf.wdfdevicesetfailed, PFN_WDFDEVICESETFAILED, kmdf.wdfdevicesetfailed, wdfdevice/WdfDeviceSetFailed, DFDeviceObjectGeneralRef_7efacd41-7c8c-4832-b10a-cc7d3dac8982.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceSetFailed
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,8 +80,6 @@ Starting in UMDF version 2.15, a UMDF driver can request that the the underlying
 Alternatively, a UMDF driver can set <i>FailedAction</i> to <b>WdfDeviceFailedNoRestart</b>.
 
 For more information about <b>WdfDeviceSetFailed</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/reporting-device-failures">Reporting Device Failures</a>.
-
-The following code example informs the framework that a failure has occurred. If the specified device's drivers are not supporting other devices, the framework will unload the drivers and then attempt to reload them.</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

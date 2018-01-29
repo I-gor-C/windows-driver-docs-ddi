@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aa8cce5b-d582-4c5b-99e2-fad1f0e80128
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS
+ms.keywords : d3dkmddi/DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS structure [Display Devices], display.dxgk_power_component_flags, _DXGK_POWER_COMPONENT_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_POWER_COMPONENT_FLAGS
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_POWER_COMPONENT_FLAGS
 ---
 
@@ -64,13 +68,10 @@ typedef struct _DXGK_POWER_COMPONENT_FLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_completefstatetransition.md">DxgkCbCompleteFStateTransition</a>
-</dt>
-</dl>
+
  
 
  

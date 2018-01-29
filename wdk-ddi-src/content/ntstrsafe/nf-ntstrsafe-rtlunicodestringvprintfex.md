@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : da14f93d-c3db-4c54-8378-7492b79a5e18
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringVPrintfEx
+ms.keywords : RtlUnicodeStringVPrintfEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringVPrintfEx, kernel.rtlunicodestringvprintfex, safestrings_293f1ca7-b9e4-4502-9d04-e656bac17288.xml, RtlUnicodeStringVPrintfEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows XP with Service Pack
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUnicodeStringVPrintfEx
-req.alt-loc : Ntstrsafe.lib,Ntstrsafe.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntstrsafe.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
 ---
 
@@ -76,21 +80,55 @@ A <b>va_list</b>-typed argument list. Arguments in this argument list will be in
 ## Return Value
 
 <b>RtlUnicodeStringVPrintfEx</b> returns one of the following NTSTATUS values. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>This <i>success</i> status means source data was present, and the strings were concatenated without truncation.
+</dl>
+</td>
+<td width="60%">
+This <i>success</i> status means source data was present, and the strings were concatenated without truncation.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>This <i>warning</i> status means the copy operation did not complete due to insufficient space in the destination buffer. If STRSAFE_NO_TRUNCATION is set in <i>dwFlags</i>, the destination buffer is not modified. If the flag is not set, the destination buffer contains a truncated version of the copied string.
+</dl>
+</td>
+<td width="60%">
+This <i>warning</i> status means the copy operation did not complete due to insufficient space in the destination buffer. If STRSAFE_NO_TRUNCATION is set in <i>dwFlags</i>, the destination buffer is not modified. If the flag is not set, the destination buffer contains a truncated version of the copied string.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>This <i>error</i> status means the function received an invalid input parameter. For more information, see the following paragraph.
+</dl>
+</td>
+<td width="60%">
+This <i>error</i> status means the function received an invalid input parameter. For more information, see the following paragraph.
 
- 
+</td>
+</tr>
+</table> 
 
 <b>RtlUnicodeStringVPrintfEx</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
-
-For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+<ul>
+<li>The contents of a <b>UNICODE_STRING</b> structure are invalid.</li>
+<li>An invalid flag is specified in <i>dwFlags</i>.</li>
+<li>The destination buffer is already full.</li>
+<li>A buffer pointer is <b>NULL</b> and the STRSAFE_IGNORE_NULLS flag is not specified in <i>dwFlags</i>.</li>
+<li>The destination buffer pointer is <b>NULL</b>, but the buffer size is not zero.</li>
+<li>The destination buffer pointer is <b>NULL</b>, or its length is zero, but a nonzero length source string is present.</li>
+</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -120,20 +158,14 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringprintf.md">RtlUnicodeStringPrintf</a>
-</dt>
-<dt>
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringprintfex.md">RtlUnicodeStringPrintfEx</a>
-</dt>
-<dt>
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvprintf.md">RtlUnicodeStringVPrintf</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringprintf.md">RtlUnicodeStringPrintf</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvprintf.md">RtlUnicodeStringVPrintf</a>
+
  
 
  

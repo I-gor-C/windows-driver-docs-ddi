@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d8a603a3-fa3c-4524-89f8-eed43d0db316
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_find_new_devices, IOCTL_DISK_FIND_NEW_DEVICES control code [Storage Devices], IOCTL_DISK_FIND_NEW_DEVICES, ntdddisk/IOCTL_DISK_FIND_NEW_DEVICES, k307_369ae687-ba0c-4626-bd33-eb299ab4c2cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_FIND_NEW_DEVICES
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 

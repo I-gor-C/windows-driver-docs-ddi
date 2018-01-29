@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 01627E7A-460F-4E49-B98C-0FCCFAB2F8BB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _BDCB_CLASSIFICATION, BDCB_CLASSIFICATION, *PBDCB_CLASSIFICATION
+ms.keywords : _BDCB_CLASSIFICATION, BdCbClassificationEnd, BdCbClassificationKnownGoodImage, BDCB_CLASSIFICATION enumeration [Kernel-Mode Driver Architecture], ntddk/BDCB_CLASSIFICATION, kernel.bdcb_classification, ntddk/BdCbClassificationKnownBadImage, BdCbClassificationUnknownImage, BDCB_CLASSIFICATION, ntddk/BdCbClassificationKnownGoodImage, ntddk/BdCbClassificationKnownBadImageBootCritical, ntddk/BdCbClassificationEnd, BdCbClassificationKnownBadImage, *PBDCB_CLASSIFICATION, ntddk/BdCbClassificationUnknownImage, BdCbClassificationKnownBadImageBootCritical
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDCB_CLASSIFICATION
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : BDCB_CLASSIFICATION, *PBDCB_CLASSIFICATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PBDCB_CLASSIFICATION, BDCB_CLASSIFICATION"
 ---
 
 # _BDCB_CLASSIFICATION Enumeration
@@ -89,14 +93,10 @@ typedef enum _BDCB_CLASSIFICATION {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">BOOT_DRIVER_CALLBACK_FUNCTION</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
+
  
 
  

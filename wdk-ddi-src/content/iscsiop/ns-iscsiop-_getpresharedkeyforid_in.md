@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4b3d3c5d-c34c-4ed8-bf62-1d885442ee1e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetPresharedKeyForId_IN, *PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN
+ms.keywords : "*PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN, PGetPresharedKeyForId_IN structure pointer [Storage Devices], iscsiop/PGetPresharedKeyForId_IN, storage.getpresharedkeyforid_in, _GetPresharedKeyForId_IN, iscsiop/GetPresharedKeyForId_IN, PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN structure [Storage Devices], structs-iSCSI_2bdada81-7b98-40cd-bc44-e23e53118c60.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetPresharedKeyForId_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN"
 ---
 
@@ -49,19 +53,18 @@ typedef struct _GetPresharedKeyForId_IN {
 
 ## Members
 
-        
-            `Id`
 
-            The identifier that the initiator uses to identify itself to the target during key exchange.
-        
-            `IdSize`
+`Id`
 
-            The size, in bytes, of the identifier in <b>Id</b><i>.</i>
-        
-            `IdType`
+The identifier that the initiator uses to identify itself to the target during key exchange.
 
-            The type of identifier that the initiator puts in the Internet Key Exchange (IKE) identification payload to identify itself to the target. 
+`IdSize`
 
+The size, in bytes, of the identifier in <b>Id</b><i>.</i>
+
+`IdType`
+
+The type of identifier that the initiator puts in the Internet Key Exchange (IKE) identification payload to identify itself to the target. 
 <table>
 <tr>
 <th>Identification payload type</th>
@@ -108,13 +111,13 @@ The initiator identifies itself to the target during the key exchange with a sin
 </td>
 </tr>
 </table>
-        
-            `PortNumber`
 
-            The number of the port that the connection was made through. A value of -1 indicates that the connection can be made through any available port.
+`PortNumber`
 
-    ## Remarks
-        You must implement this method if the initiator supports IKE.
+The number of the port that the connection was made through. A value of -1 indicates that the connection can be made through any available port.
+
+## Remarks
+You must implement this method if the initiator supports IKE.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -124,19 +127,14 @@ The initiator identifies itself to the target during the key exchange with a sin
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
-</dt>
-<dt>
 <a href="..\iscsiop\ns-iscsiop-_getpresharedkeyforid_out.md">GetPresharedKeyForId_OUT</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
+
  
 
  

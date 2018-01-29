@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : de8f8bee-44e9-4a6a-bb36-a43a66afe188
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_PREEMPTCOMMAND, DXGKARG_PREEMPTCOMMAND
+ms.keywords : DmStructs_2564ca47-8304-4a95-a408-2e5ccca7353d.xml, _DXGKARG_PREEMPTCOMMAND, DXGKARG_PREEMPTCOMMAND, d3dkmddi/DXGKARG_PREEMPTCOMMAND, DXGKARG_PREEMPTCOMMAND structure [Display Devices], display.dxgkarg_preemptcommand
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_PREEMPTCOMMAND
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_PREEMPTCOMMAND
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXGKARG_PREEMPTCOMMAND {
 
 ## Members
 
-        
-            `EngineOrdinal`
 
-            [in] The index of the engine for the preemption request.
-        
-            `Flags`
+`EngineOrdinal`
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a> structure with a reserved member or a 32-bit value. No flags are currently defined for this structure.
-        
-            `NodeOrdinal`
+[in] The index of the engine for the preemption request.
 
-            [in] The index of the node for the preemption request.
-        
-            `PreemptionFenceId`
+`Flags`
 
-            [in] A unique identifier that the display miniport driver must patch into the fence command at the end of the DMA buffer to preempt the previously submitted DMA buffer. The display miniport driver uses the identifier in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a> function to inform the graphics processing unit (GPU) scheduler about the preemption at deferred-procedure-call (DPC) time.
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a> structure with a reserved member or a 32-bit value. No flags are currently defined for this structure.
+
+`NodeOrdinal`
+
+[in] The index of the node for the preemption request.
+
+`PreemptionFenceId`
+
+[in] A unique identifier that the display miniport driver must patch into the fence command at the end of the DMA buffer to preempt the previously submitted DMA buffer. The display miniport driver uses the identifier in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a> function to inform the graphics processing unit (GPU) scheduler about the preemption at deferred-procedure-call (DPC) time.
 
 
 ## Requirements
@@ -75,28 +79,20 @@ typedef struct _DXGKARG_PREEMPTCOMMAND {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_preemptcommand.md">DxgkDdiPreemptCommand</a>
-</dt>
-</dl>
+
  
 
  

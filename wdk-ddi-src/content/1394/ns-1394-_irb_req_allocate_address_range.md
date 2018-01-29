@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 76D306DF-D604-4B3C-BFED-A855113A55A9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IRB_REQ_ALLOCATE_ADDRESS_RANGE, IRB_REQ_ALLOCATE_ADDRESS_RANGE
+ms.keywords : IRB_REQ_ALLOCATE_ADDRESS_RANGE, _IRB_REQ_ALLOCATE_ADDRESS_RANGE, 1394/IRB_REQ_ALLOCATE_ADDRESS_RANGE, IRB_REQ_ALLOCATE_ADDRESS_RANGE structure [Buses], IEEE.irb_req_allocate_address_range
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRB_REQ_ALLOCATE_ADDRESS_RANGE
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IRB_REQ_ALLOCATE_ADDRESS_RANGE
 ---
 
@@ -64,15 +68,14 @@ typedef struct {
 
 ## Members
 
-        
-            `AddressesReturned`
 
-            Number of addresses returned.
-        
-            `Callback`
+`AddressesReturned`
 
-            Points to a device driver callback routine. If the device driver specifies that the bus driver notify the device driver for each asynchronous I/O request, <b>u.AllocateAddressRange.Callback</b> points to the device driver's notification routine, which must have the following prototype:
+Number of addresses returned.
 
+`Callback`
+
+Points to a device driver callback routine. If the device driver specifies that the bus driver notify the device driver for each asynchronous I/O request, <b>u.AllocateAddressRange.Callback</b> points to the device driver's notification routine, which must have the following prototype:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -82,9 +85,7 @@ typedef struct {
 <pre>VOID DriverNotificationRoutine(IN PNOTIFICATION_INFO );</pre>
 </td>
 </tr>
-</table></span></div>
-If the device driver specifies that it receives no notification, and submits this request at raised IRQL through the port driver's physical mapping routine, then <b>u.AllocateAddressRange.Callback</b> points to the device driver's allocation completion routine, which must have the following prototype:
-
+</table></span></div>If the device driver specifies that it receives no notification, and submits this request at raised IRQL through the port driver's physical mapping routine, then <b>u.AllocateAddressRange.Callback</b> points to the device driver's allocation completion routine, which must have the following prototype:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -94,35 +95,33 @@ If the device driver specifies that it receives no notification, and submits thi
 <pre>VOID AllocationCompletionRoutine( IN PVOID );</pre>
 </td>
 </tr>
-</table></span></div>
-Drivers that do not request notification, and submit this request in the normal way at PASSIVE_LEVEL, must set this member to <b>NULL</b>.
-        
-            `Context`
+</table></span></div>Drivers that do not request notification, and submit this request in the normal way at PASSIVE_LEVEL, must set this member to <b>NULL</b>.
 
-            Points to any context data that the device driver wants to pass for this set of addresses. If the provided callback (see previous) is a notification routine, the bus driver passes <b>u.AllocateAddressRange.Context</b> within the NOTIFICATION_INFO the parameter. If the callback is an allocation completion routine, the bus driver passes <b>u.AllocateAddressRange.Context</b> as the sole parameter to the routine
-        
-            `DeviceExtension`
+`Context`
 
-            Points to the device extension associated with the device object. Not setting this member can lead to unexpected behavior when the driver tries to access the allocated address space.
-        
-            `FifoSListHead`
+Points to any context data that the device driver wants to pass for this set of addresses. If the provided callback (see previous) is a notification routine, the bus driver passes <b>u.AllocateAddressRange.Context</b> within the NOTIFICATION_INFO the parameter. If the callback is an allocation completion routine, the bus driver passes <b>u.AllocateAddressRange.Context</b> as the sole parameter to the routine
 
-            If non-<b>NULL</b>, specifies a properly initialized (for example, by <b>ExInitializeSListHead</b>) interlocked, singly-linked list of ADDRESS_FIFO elements. Each ADDRESS_FIFO contains an MDL. As the bus driver handles each incoming write request to the allocated addresses, it pops off the first element on the list and writes incoming data to the MDL. It then calls the driver's notification routine.
+`DeviceExtension`
+
+Points to the device extension associated with the device object. Not setting this member can lead to unexpected behavior when the driver tries to access the allocated address space.
+
+`FifoSListHead`
+
+If non-<b>NULL</b>, specifies a properly initialized (for example, by <b>ExInitializeSListHead</b>) interlocked, singly-linked list of ADDRESS_FIFO elements. Each ADDRESS_FIFO contains an MDL. As the bus driver handles each incoming write request to the allocated addresses, it pops off the first element on the list and writes incoming data to the MDL. It then calls the driver's notification routine.
 
 Each MDL provided must only span one page in memory. The driver can add or remove elements from the ADDRESS_FIFO list by using <b>ExInterlockedPushEntrySList</b> and <b>ExInterlockedPopEntrySList</b>.
 
 If this member is non-<b>NULL</b>, the <b>Mdl</b> member of <b>u.AllocateAddress</b> range must be <b>NULL</b>, the <b>fulNotificationOptions</b> member must be NOTIFY_FLAGS_AFTER_WRITE (no other flags must be specified), and the driver must provide a spin lock in <b>FifoSpinLock</b>. This implies that the order in which packets are filled and returned is guaranteed to be based on a FIFO algorithm.  In fact, this SLIST-based mechanism acts more like a stack, or Last-In-First-Out (LIFO).
-        
-            `FifoSpinLock`
 
-            If non-<b>NULL</b>, specifies a properly initialized spin lock (for example, by <b>KeInitializeSpinLock</b>). The spin lock is used to serialize access to the SList provided in <b>u.AllocateAddressRange.FifoSListHead</b>.
+`FifoSpinLock`
+
+If non-<b>NULL</b>, specifies a properly initialized spin lock (for example, by <b>KeInitializeSpinLock</b>). The spin lock is used to serialize access to the SList provided in <b>u.AllocateAddressRange.FifoSListHead</b>.
 
 The <b>u.AllocateAddressRange.FifoSpinLock</b> member is non-<b>NULL</b> if and only if <b>u.AllocateAddressRange.FifoSListHead</b> is non-<b>NULL</b> as well.
-        
-            `fulAccessType`
 
-            Specifies access type using one or more of the following flags.
+`fulAccessType`
 
+Specifies access type using one or more of the following flags.
 <table>
 <tr>
 <th>Access</th>
@@ -168,21 +167,19 @@ Allocated addresses can receive asynchronous I/O requests from any node on the b
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Special considerations apply to drivers of virtual devices. Virtual devices do not have node IDs, and so when a driver sends a request to a virtual device, the bus driver has no means of identifying which device is the target. Thus in order for a virtual device to receive requests, its driver must allocate a range of addresses with the ACCESS_FLAGS_TYPE_BROADCAST flag set in <b>fulAccessType</b>. This permits the virtual device to receive all request packets, no matter what node ID is indicated in the request packet.
-        
-            `fulFlags`
 
-            Specifies whether the array entries in p1394AddressRange use big-endian byte order. If the caller specifies BIG_ENDIAN_ADDRESS_RANGE, the array entries are in big-endian byte order (the native byte order of the IEEE 1394 protocol), even if the local host is a little-endian machine. In order to specify a little-endian address range, the caller must explicitly guarantee that the BIG_ENDIAN_ADDRESS_RANGE flag is not set using a statement similar to the following:
+`fulFlags`
+
+Specifies whether the array entries in p1394AddressRange use big-endian byte order. If the caller specifies BIG_ENDIAN_ADDRESS_RANGE, the array entries are in big-endian byte order (the native byte order of the IEEE 1394 protocol), even if the local host is a little-endian machine. In order to specify a little-endian address range, the caller must explicitly guarantee that the BIG_ENDIAN_ADDRESS_RANGE flag is not set using a statement similar to the following:
 
 fulFlags = fulFlags &amp; ~(0x0ffffffff &amp; BIG_ENDIAN_ADDRESS_RANGE)
-        
-            `fulNotificationOptions`
 
-            If the device driver requests that the bus driver handle each request, and notifies the device driver upon completion, this specifies which asynchronous I/O request types will trigger the bus driver to the notify the device driver upon completion. See the <b>Operation</b> section for more details. The driver may specify one or more of the NOTIFY_FLAGS_AFTER_XXX flags.
+`fulNotificationOptions`
 
+If the device driver requests that the bus driver handle each request, and notifies the device driver upon completion, this specifies which asynchronous I/O request types will trigger the bus driver to the notify the device driver upon completion. See the <b>Operation</b> section for more details. The driver may specify one or more of the NOTIFY_FLAGS_AFTER_XXX flags.
 <table>
 <tr>
 <th>Flag</th>
@@ -229,32 +226,32 @@ Notify the device driver after carrying out an asynchronous lock operation.
 </td>
 </tr>
 </table>
-        
-            `hAddressRange`
 
-            Handle to the address range.
-        
-            `MaxSegmentSize`
+`hAddressRange`
 
-            Specifies the maximum size for each range of addresses that the bus driver allocates. Use zero to indicate that the driver does not have a required maximum segment size. If a nonzero value is specified for <b>MaxSegmentSize</b>, the value must be less than 64 KB (65,536 bytes). In other words, it must be less than or equal to 65,535 (0xFFFF) due to the fact that the address range size is stored in a 16-bit word. This member is ignored if <b>u.AllocateAddressRange.Required1394Offset</b> is non-<b>NULL</b>.
-        
-            `Mdl`
+Handle to the address range.
 
-            If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.
-        
-            `nLength`
+`MaxSegmentSize`
 
-            Specifies the number of the IEEE 1394 addresses to allocate.
-        
-            `p1394AddressRange`
+Specifies the maximum size for each range of addresses that the bus driver allocates. Use zero to indicate that the driver does not have a required maximum segment size. If a nonzero value is specified for <b>MaxSegmentSize</b>, the value must be less than 64 KB (65,536 bytes). In other words, it must be less than or equal to 65,535 (0xFFFF) due to the fact that the address range size is stored in a 16-bit word. This member is ignored if <b>u.AllocateAddressRange.Required1394Offset</b> is non-<b>NULL</b>.
 
-            Points to an array of ADDRESS_RANGE structures. The array must be large enough to hold the maximum number of structures the bus driver can return.
+`Mdl`
+
+If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.
+
+`nLength`
+
+Specifies the number of the IEEE 1394 addresses to allocate.
+
+`p1394AddressRange`
+
+Points to an array of ADDRESS_RANGE structures. The array must be large enough to hold the maximum number of structures the bus driver can return.
 
 If the driver specifies a required address offset, or if the driver does not provide any backing store, the bus driver only returns one address range. If the driver provides backing store in <b>u.AllocateAddressRange.Mdl</b> the bus driver segments the allocated addresses along physical memory boundaries. If the <b>MaxSegmentSize</b> of <b>u.AllocateAddressRange</b> is 0, or if <b>MaxSegmentSize</b> is bigger than the page size, the driver can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540562">ADDRESS_AND_SIZE_TO_SPAN_PAGES</a> macro to determine the worst case. Otherwise, the maximum number of addresses ranges returned by the bus driver is <b>u.AllocateAddressRange.nLength</b> / <b>u.MaxSegmentSize</b>. If a nonzero value is specified for <b>MaxSegmentSize</b>, the value must be less than 64 KB (65,536 bytes). In other words, it must be less than or equal to 65,535 (0xFFFF) due to the fact that the address range size is stored in a 16-bit word.
-        
-            `Required1394Offset`
 
-            Specifies a hard-coded address in the computer's IEEE 1394 address space. The bus driver allocates the addresses beginning at <b>u.AllocateAddressRange.Required1394Offset</b>. If no specific address is required, the driver should fill in each member of the ADDRESS_OFFSET with zero. The bus driver then chooses the addresses to allocate.
+`Required1394Offset`
+
+Specifies a hard-coded address in the computer's IEEE 1394 address space. The bus driver allocates the addresses beginning at <b>u.AllocateAddressRange.Required1394Offset</b>. If no specific address is required, the driver should fill in each member of the ADDRESS_OFFSET with zero. The bus driver then chooses the addresses to allocate.
 
 
 ## Requirements

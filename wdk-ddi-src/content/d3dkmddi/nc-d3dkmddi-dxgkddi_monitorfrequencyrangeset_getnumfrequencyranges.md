@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ba70c191-832f-4dd1-b949-cb47cf736c6e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_monitorfrequencyrangeset_interface_pfngetnumfrequencyranges, pfnGetNumFrequencyRanges callback function [Display Devices], pfnGetNumFrequencyRanges, DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES, DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES, d3dkmddi/pfnGetNumFrequencyRanges, VidPnFunctions_9840ad40-d098-4215-b3da-2de345970fe6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnGetNumFrequencyRanges
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,15 +68,45 @@ NTSTATUS DxgkddiMonitorfrequencyrangesetGetnumfrequencyranges(
 ## Return Value
 
 The <b>pfnGetNumFrequencyRanges</b> function returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was supplied.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was supplied.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_MONITOR_FREQUENCYRANGESET</b></dt>
-</dl>The handle supplied in <i>hMonitorFrequencyRangeSet</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hMonitorFrequencyRangeSet</i> was invalid.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

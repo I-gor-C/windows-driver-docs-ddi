@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4c0fa5c1-7d73-4380-a673-f09bbf0ea281
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _UMDETW_ALLOCATION_SEMANTIC, UMDETW_ALLOCATION_SEMANTIC
+ms.keywords : UMDETW_ALLOCATION_SEMANTIC, UMDETW_ALLOCATION_SEMANTIC enumeration [Display Devices], UMDETW_ALLOCATION_SEMANTIC_UPLOAD_STAGING, UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MIN, umdprovider/UMDETW_ALLOCATION_SEMANTIC_DMA_BUFFER, umdprovider/UMDETW_ALLOCATION_SEMANTIC_UPLOAD_STAGING, umdprovider/UMDETW_ALLOCATION_SEMANTIC_CONTEXT_SAVE, umdprovider/UMDETW_ALLOCATION_SEMANTIC, UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MAX, UMDETW_ALLOCATION_SEMANTIC_CONTEXT_SAVE, UMDETW_ALLOCATION_SEMANTIC_DOWNLOAD_STAGING, umdprovider/UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MAX, umdprovider/UMDETW_ALLOCATION_SEMANTIC_DOWNLOAD_STAGING, UMDETW_ALLOCATION_SEMANTIC_DMA_BUFFER, umdprovider/UMDETW_ALLOCATION_SEMANTIC_NONE, display.umdetw_allocation_semantic, umdprovider/UMDETW_ALLOCATION_SEMANTIC_DRIVER_OTHER_MIN, _UMDETW_ALLOCATION_SEMANTIC, UMDETW_ALLOCATION_SEMANTIC_NONE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UMDETW_ALLOCATION_SEMANTIC
-req.alt-loc : umdprovider.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_SEMANTIC
 req.product : Windows 10 or later.
 ---
@@ -102,14 +106,10 @@ typedef enum _UMDETW_ALLOCATION_SEMANTIC {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
-</dt>
-<dt>
 <a href="..\umdprovider\nf-umdprovider-umdetwlogunmapallocation.md">UMDEtwLogUnmapAllocation</a>
-</dt>
-</dl>
+
+<a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7b81fc29-4906-4095-b197-6b63f5f01ac0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortGetUnCachedExtension
+ms.keywords : storage.ataportgetuncachedextension, AtaPortGetUnCachedExtension routine [Storage Devices], irb/AtaPortGetUnCachedExtension, atartns_30b7c0f0-5636-4d81-b1de-13d8c413f4d6.xml, AtaPortGetUnCachedExtension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortGetUnCachedExtension
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortGetUnCachedExtension function
 The <b>AtaPortGetUncachedExtension</b> routine allocates an uncached common buffer that is shared by the CPU and the device.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -93,11 +98,8 @@ The miniport driver must not call <b>AtaPortGetUncachedExtension</b> from any ro
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
-</dt>
-</dl>
+
  
 
  

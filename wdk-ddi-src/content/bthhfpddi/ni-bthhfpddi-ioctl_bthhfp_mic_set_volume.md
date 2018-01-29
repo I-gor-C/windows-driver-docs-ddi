@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 438BB68B-9E09-4033-B38E-C1C28D00D43C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
+ms.keywords : audio.ioctl_bthhfp_mic_set_volume, IOCTL_BTHHFP_MIC_SET_VOLUME control code [Audio Devices], IOCTL_BTHHFP_MIC_SET_VOLUME, bthhfpddi/IOCTL_BTHHFP_MIC_SET_VOLUME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHHFP_MIC_SET_VOLUME
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
 ---
 
@@ -60,11 +64,10 @@ N/A
 <text></text>
 
 ### Status Block
-I/O Status block
 N/A
 
-    ## Remarks
-        The audio driver sends this request when handling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537309">KSPROPERTY_AUDIO_VOLUMELEVEL</a> property for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537208">KSNODETYPE_VOLUME</a> node in the KS topology of the microphone path. The request’s input parameter is the same as the <b>KSPROPERTY_AUDIO_VOLUMELEVEL</b> property value.
+## Remarks
+The audio driver sends this request when handling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537309">KSPROPERTY_AUDIO_VOLUMELEVEL</a> property for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537208">KSNODETYPE_VOLUME</a> node in the KS topology of the microphone path. The request’s input parameter is the same as the <b>KSPROPERTY_AUDIO_VOLUMELEVEL</b> property value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,19 +76,14 @@ N/A
 | **Header** | bthhfpddi.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537208">KSNODETYPE_VOLUME</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537309">KSPROPERTY_AUDIO_VOLUMELEVEL</a>
-</dt>
-</dl>
+
  
 
  

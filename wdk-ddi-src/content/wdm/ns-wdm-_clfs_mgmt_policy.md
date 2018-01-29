@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6765ced9-e21f-4bd9-bb2b-45df1d6dba75
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY, CLFS_MGMT_POLICY
+ms.keywords : CLFS_MGMT_POLICY, kstruct_a_12bfc6be-5318-49df-b74a-251c40c0b916.xml, wdm/CLFS_MGMT_POLICY, CLFS_MGMT_POLICY structure [Kernel-Mode Driver Architecture], kernel.clfs_mgmt_policy, PCLFS_MGMT_POLICY, _CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY, PCLFS_MGMT_POLICY structure pointer [Kernel-Mode Driver Architecture], wdm/PCLFS_MGMT_POLICY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CLFS_MGMT_POLICY
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PCLFS_MGMT_POLICY, CLFS_MGMT_POLICY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY
 req.product : Windows 10 or later.
 ---
 
@@ -86,29 +90,29 @@ typedef struct _CLFS_MGMT_POLICY {
 
 ## Members
 
-        
-            `LengthInBytes`
 
-            The length of the <b>CLFS_MGMT_POLICY</b> structure.
-        
-            `PolicyFlags`
+`LengthInBytes`
 
-            The flags that apply to this instance of the <b>CLFS_MGMT_POLICY</b> structure. The only flag that has been implemented for this release is <b>LOG_POLICY_OVERWRITE</b>, which indicates that when the policy is installed, it will replace the policy of the same type, if such a policy already exists.
-        
-            `PolicyParameters`
+The length of the <b>CLFS_MGMT_POLICY</b> structure.
 
-            The union that provides the detailed information about this instance of the <b>CLFS_MGMT_POLICY</b> structure.
-        
-            `PolicyType`
+`PolicyFlags`
 
-            A value of the <a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a> enumeration that supplies the type of this instance of the <b>CLFS_MGMT_POLICY</b> structure.
-        
-            `Version`
+The flags that apply to this instance of the <b>CLFS_MGMT_POLICY</b> structure. The only flag that has been implemented for this release is <b>LOG_POLICY_OVERWRITE</b>, which indicates that when the policy is installed, it will replace the policy of the same type, if such a policy already exists.
 
-            The version of the <b>CLFS_MGMT_POLICY</b> structure. Set this to <b>CLFS_MGMT_POLICY_VERSION</b>.
+`PolicyParameters`
 
-    ## Remarks
-        The way a <b>CLFS_MGMT_POLICY</b> structure is interpreted depends on the type of policy that the structure holds.
+The union that provides the detailed information about this instance of the <b>CLFS_MGMT_POLICY</b> structure.
+
+`PolicyType`
+
+A value of the <a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a> enumeration that supplies the type of this instance of the <b>CLFS_MGMT_POLICY</b> structure.
+
+`Version`
+
+The version of the <b>CLFS_MGMT_POLICY</b> structure. Set this to <b>CLFS_MGMT_POLICY_VERSION</b>.
+
+## Remarks
+The way a <b>CLFS_MGMT_POLICY</b> structure is interpreted depends on the type of policy that the structure holds.
 
 You can provide <i>policies</i> that specify how the log will be managed. Each policy is an instance of the <b>CLFS_MGMT_POLICY</b> structure, but the structure is interpreted differently depending on the policy type. CLFS uses the information that you provided in the policies to tailor how it manages the log.
 
@@ -124,22 +128,16 @@ You can only install a policy whose policy type specified in the <b>PolicyType</
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfsmgmtinstallpolicy.md">ClfsMgmtInstallPolicy</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-clfsmgmtquerypolicy.md">ClfsMgmtQueryPolicy</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-clfsmgmtinstallpolicy.md">ClfsMgmtInstallPolicy</a>
+
+<a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a>
+
 <a href="..\wdm\nf-wdm-clfsmgmtremovepolicy.md">ClfsMgmtRemovePolicy</a>
-</dt>
-</dl>
+
  
 
  

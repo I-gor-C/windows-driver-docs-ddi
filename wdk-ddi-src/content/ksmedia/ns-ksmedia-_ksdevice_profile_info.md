@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 32C894CA-B644-4221-97B6-A21F2A459DE6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO
+ms.keywords : _KSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO structure [Streaming Media Devices], PKSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO, ksmedia/KSDEVICE_PROFILE_INFO, PKSDEVICE_PROFILE_INFO structure pointer [Streaming Media Devices], stream.ksdevice_profile_info, ksmedia/PKSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDEVICE_PROFILE_INFO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO"
 ---
 
@@ -55,15 +59,14 @@ typedef struct _KSDEVICE_PROFILE_INFO {
 
 ## Members
 
-        
-            `Size`
 
-            This must be set to sizeof(KSDEVICE_PROFILE_INFO) structure.
-        
-            `Type`
+`Size`
 
-            Defines the type of profile. Currently, the only defined type is <b>KSDEVICE_PROFILE_TYPE_CAMERA</b>.
+This must be set to sizeof(KSDEVICE_PROFILE_INFO) structure.
 
+`Type`
+
+Defines the type of profile. Currently, the only defined type is <b>KSDEVICE_PROFILE_TYPE_CAMERA</b>.
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

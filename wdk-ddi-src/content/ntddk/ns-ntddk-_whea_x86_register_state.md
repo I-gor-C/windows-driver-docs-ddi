@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 64079b03-9771-4940-a19e-a29389cbf2fe
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE
+ms.keywords : PWHEA_X86_REGISTER_STATE, ntddk/WHEA_X86_REGISTER_STATE, _WHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE structure [WHEA Drivers and Applications], ntddk/PWHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE structure pointer [WHEA Drivers and Applications], whearef_330404b2-bd6e-4220-97c6-8bacc803eb78.xml, whea.whea_x86_register_state, *PWHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_X86_REGISTER_STATE
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE
 ---
 
@@ -70,109 +74,109 @@ typedef struct _WHEA_X86_REGISTER_STATE {
 
 ## Members
 
-        
-            `Cr0`
 
-            The control register 0.
-        
-            `Cr1`
+`Cr0`
 
-            The control register 1.
-        
-            `Cr2`
+The control register 0.
 
-            The control register 2.
-        
-            `Cr3`
+`Cr1`
 
-            The control register 3.
-        
-            `Cr4`
+The control register 1.
 
-            The control register 4.
-        
-            `Cs`
+`Cr2`
 
-            The code segment register.
-        
-            `Ds`
+The control register 2.
 
-            The data segment register.
-        
-            `Eax`
+`Cr3`
 
-            The accumulator register.
-        
-            `Ebp`
+The control register 3.
 
-            The base pointer register.
-        
-            `Ebx`
+`Cr4`
 
-            The base register.
-        
-            `Ecx`
+The control register 4.
 
-            The count register.
-        
-            `Edi`
+`Cs`
 
-            The destination index register.
-        
-            `Edx`
+The code segment register.
 
-            The data register.
-        
-            `Eflags`
+`Ds`
 
-            The flags register.
-        
-            `Eip`
+The data segment register.
 
-            The instruction pointer register.
-        
-            `Es`
+`Eax`
 
-            The extra segment register.
-        
-            `Esi`
+The accumulator register.
 
-            The source index register.
-        
-            `Esp`
+`Ebp`
 
-            The stack pointer register.
-        
-            `Fs`
+The base pointer register.
 
-            The general purpose segment register FS.
-        
-            `Gdtr`
+`Ebx`
 
-            The global descriptor table register.
-        
-            `Gs`
+The base register.
 
-            The general purpose segment register GS.
-        
-            `Idtr`
+`Ecx`
 
-            The interrupt descriptor table register.
-        
-            `Ldtr`
+The count register.
 
-            The local descriptor table register.
-        
-            `Ss`
+`Edi`
 
-            The stack segment register.
-        
-            `Tr`
+The destination index register.
 
-            The task register.
+`Edx`
 
-    ## Remarks
-        If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a> structure is set to XPF_CONTEXT_INFO_32BITCONTEXT, the <b>RegisterData</b> member of that structure contains a WHEA_X86_REGISTER_STATE structure.
+The data register.
+
+`Eflags`
+
+The flags register.
+
+`Eip`
+
+The instruction pointer register.
+
+`Es`
+
+The extra segment register.
+
+`Esi`
+
+The source index register.
+
+`Esp`
+
+The stack pointer register.
+
+`Fs`
+
+The general purpose segment register FS.
+
+`Gdtr`
+
+The global descriptor table register.
+
+`Gs`
+
+The general purpose segment register GS.
+
+`Idtr`
+
+The interrupt descriptor table register.
+
+`Ldtr`
+
+The local descriptor table register.
+
+`Ss`
+
+The stack segment register.
+
+`Tr`
+
+The task register.
+
+## Remarks
+If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a> structure is set to XPF_CONTEXT_INFO_32BITCONTEXT, the <b>RegisterData</b> member of that structure contains a WHEA_X86_REGISTER_STATE structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -182,13 +186,10 @@ typedef struct _WHEA_X86_REGISTER_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a>
-</dt>
-</dl>
+
  
 
  

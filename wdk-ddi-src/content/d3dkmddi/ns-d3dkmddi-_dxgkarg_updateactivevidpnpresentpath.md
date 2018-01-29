@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6a4d43fd-f118-4424-93e8-57f72b56f929
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
+ms.keywords : DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, display.dxgkarg_updateactivevidpnpresentpath, DmStructs_b8d80ff5-189d-4bd2-8b3f-f5ebeadee78f.xml, _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, d3dkmddi/DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
 ---
 
@@ -46,10 +50,10 @@ typedef struct _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH {
 
 ## Members
 
-        
-            `VidPnPresentPathInfo`
 
-            A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure that contains the arguments required by <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath.md">DxgkDdiUpdateActiveVidPnPresentPath</a>.
+`VidPnPresentPathInfo`
+
+A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure that contains the arguments required by <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath.md">DxgkDdiUpdateActiveVidPnPresentPath</a>.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath.md">DxgkDdiUpdateActiveVidPnPresentPath</a>
-</dt>
-</dl>
+
  
 
  

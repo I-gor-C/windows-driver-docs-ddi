@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9ba7c42a-4140-4d8c-abb3-ae5f9285dbd9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_QUERYPROCAMPINPUT, DXVADDI_QUERYPROCAMPINPUT
+ms.keywords : DXVADDI_QUERYPROCAMPINPUT, display.dxvaddi_queryprocampinput, d3dumddi/DXVADDI_QUERYPROCAMPINPUT, DXVA2_Structs_64cd50ed-940a-46a1-8a4d-b43d40e85b25.xml, _DXVADDI_QUERYPROCAMPINPUT, DXVADDI_QUERYPROCAMPINPUT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_QUERYPROCAMPINPUT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_QUERYPROCAMPINPUT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXVADDI_QUERYPROCAMPINPUT {
 
 ## Members
 
-        
-            `ProcAmpCap`
 
-            [in] A ProcAmp control property that range information is requested for. The ProcAmp control property can be one of the members of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_procampvalues.md">DXVADDI_PROCAMPVALUES</a> structure.
-        
-            `pVideoProcGuid`
+`ProcAmpCap`
 
-            [in] A pointer to a GUID that represents the video processing device type.
-        
-            `RenderTargetFormat`
+[in] A ProcAmp control property that range information is requested for. The ProcAmp control property can be one of the members of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_procampvalues.md">DXVADDI_PROCAMPVALUES</a> structure.
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
-        
-            `VideoDesc`
+`pVideoProcGuid`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a> structure that describes the video stream.
+[in] A pointer to a GUID that represents the video processing device type.
+
+`RenderTargetFormat`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
+
+`VideoDesc`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a> structure that describes the video stream.
 
 
 ## Requirements
@@ -75,31 +79,22 @@ typedef struct _DXVADDI_QUERYPROCAMPINPUT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_procampvalues.md">DXVADDI_PROCAMPVALUES</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_valuerange.md">DXVADDI_VALUERANGE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
-</dt>
-<dt>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_valuerange.md">DXVADDI_VALUERANGE</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

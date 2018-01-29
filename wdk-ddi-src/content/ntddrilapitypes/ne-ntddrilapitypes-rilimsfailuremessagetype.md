@@ -7,8 +7,8 @@ old-location : netvista\rilimsfailuremessagetype.htm
 old-project : netvista
 ms.assetid : e40241e6-90ee-4bbb-8fde-f52ffd838c1f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILIMSFAILUREMESSAGETYPE, RILIMSFAILUREMESSAGETYPE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_IMSFAILUREMESSAGETYPE_INCALL, RILIMSFAILUREMESSAGETYPE, RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE, ntddrilapitypes/RIL_IMSFAILUREMESSAGETYPE_MAX, netvista.rilimsfailuremessagetype, ntddrilapitypes/RILIMSFAILUREMESSAGETYPE, ntddrilapitypes/RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE, RIL_IMSFAILUREMESSAGETYPE_MAX, RILIMSFAILUREMESSAGETYPE enumeration [Network Drivers Starting with Windows Vista], RIL_IMSFAILUREMESSAGETYPE_INCALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILIMSFAILUREMESSAGETYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILIMSFAILUREMESSAGETYPE
 ---
 
@@ -57,6 +61,11 @@ typedef enum _RILIMSFAILUREMESSAGETYPE {
 
 <tr>
 <td>RIL_IMSFAILUREMESSAGETYPE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_IMSFAILUREMESSAGETYPE_REGISTER</td>
 <td></td>
 </tr>
 

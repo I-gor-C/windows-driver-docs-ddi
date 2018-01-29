@@ -54,38 +54,38 @@ typedef struct _RECORDER_LOG_CREATE_PARAMS {
 
 ## Members
 
-        
-            `ErrorPartitionSize`
 
-            The number of bytes out  of <b>TotalBufferSize</b> used to log error messages. Zero indicates no error partition.
-        
-            `LogIdentifier`
+`ErrorPartitionSize`
 
-            Identifier to print when debug messages are merged. Lives at end of structure so that, if at some point clients have different definitions of the array size, it remains simple to read the rest of the structure.
-        
-            `LogIdentifierAppendValue`
+The number of bytes out  of <b>TotalBufferSize</b> used to log error messages. Zero indicates no error partition.
 
-            Number/pointer to append to log identifier.
-        
-            `LogIdentifierAppendValueSet`
+`LogIdentifier`
 
-            Specifies whether <b>LogIdentifierAppendValue</b> has been set.
-        
-            `LogIdentifierSize`
+Identifier to print when debug messages are merged. Lives at end of structure so that, if at some point clients have different definitions of the array size, it remains simple to read the rest of the structure.
 
-            Size of <b>LogIdentifier</b> field, in bytes (according to client's definition).
-        
-            `LogTag`
+`LogIdentifierAppendValue`
 
-            Optional tag to associate with the allocated memory of the log.
-        
-            `Size`
+Number/pointer to append to log identifier.
 
-            Size of this structure.
-        
-            `TotalBufferSize`
+`LogIdentifierAppendValueSet`
 
-            Size in bytes for the log area.
+Specifies whether <b>LogIdentifierAppendValue</b> has been set.
+
+`LogIdentifierSize`
+
+Size of <b>LogIdentifier</b> field, in bytes (according to client's definition).
+
+`LogTag`
+
+Optional tag to associate with the allocated memory of the log.
+
+`Size`
+
+Size of this structure.
+
+`TotalBufferSize`
+
+Size in bytes for the log area.
 
 
 ## Requirements
@@ -96,9 +96,9 @@ typedef struct _RECORDER_LOG_CREATE_PARAMS {
 | **Minimum UMDF version** |  |
 | **Header** | wpprecorder.h |
 
-    ## See Also
+## See Also
 
-        <dl>
+<dl>
 <dt>
 <a href="..\wpprecorder\nf-wpprecorder-recorder_log_create_params_init.md">RECORDER_LOG_CREATE_PARAMS_INIT</a>
 </dt>

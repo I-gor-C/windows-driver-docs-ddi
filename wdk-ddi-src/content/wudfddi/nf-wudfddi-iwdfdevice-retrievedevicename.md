@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 75304f5d-8a07-4db5-9f20-5764ff5d2ef6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::RetrieveDeviceName, RetrieveDeviceName
+ms.keywords : RetrieveDeviceName, umdf.iwdfdevice_retrievedevicename, IWDFDevice, wudfddi/IWDFDevice::RetrieveDeviceName, IWDFDevice interface, RetrieveDeviceName method, RetrieveDeviceName method, IWDFDevice interface, UMDFDeviceObjectRef_6d24ee3e-719a-4408-90ea-89cc9315b8cb.xml, IWDFDevice::RetrieveDeviceName, RetrieveDeviceName method, wdf.iwdfdevice_retrievedevicename
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.RetrieveDeviceName
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -84,8 +88,6 @@ If the buffer at <i>pDeviceName</i> is non-<b>NULL</b>, the framework returns th
 
 The device name is not the physical device object (PDO) name. Instead, the device name is the name of the reflector. The driver must target all I/O to this device object.
 
-The following code example shows how to retrieve the name of an underlying kernel-mode device.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -100,11 +102,8 @@ The following code example shows how to retrieve the name of an underlying kerne
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-</dl>
+
  
 
  

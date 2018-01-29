@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F307A139-B55A-4C29-BE2F-14C243115F8C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UFX_ENDPOINT_CALLBACKS, UFX_ENDPOINT_CALLBACKS, *PUFX_ENDPOINT_CALLBACKS
+ms.keywords : buses.ufx_proprietary_charger_reset_operation, UfxProprietaryChargerReset callback function [Buses], UfxProprietaryChargerReset, UFX_PROPRIETARY_CHARGER_RESET_OPERATION, UFX_PROPRIETARY_CHARGER_RESET_OPERATION, ufxproprietarycharger/UfxProprietaryChargerReset, PFN_UFX_PROPRIETARY_CHARGER_RESET_OPERATION callback function pointer [Buses], PFN_UFX_PROPRIETARY_CHARGER_RESET_OPERATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PFN_UFX_PROPRIETARY_CHARGER_RESET_OPERATION
-req.alt-loc : ufxproprietarycharger.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UFX_ENDPOINT_CALLBACKS, *PUFX_ENDPOINT_CALLBACKS
 req.product : Windows 10 or later.
 ---
@@ -79,11 +83,8 @@ To support handling of proprietary chargers, the USB lower filter driver must pu
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/05D2B46A-282C-4B75-9F5C-2FC0AF344AB9">USB filter driver for supporting proprietary chargers</a>
-</dt>
-</dl>
+
  
 
  

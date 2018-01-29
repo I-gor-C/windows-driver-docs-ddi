@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a73ab33b-3e8c-43d8-8547-1483bcd2af52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlValidateCorrelationVector
+ms.keywords : RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture], ntddk/RtlValidateCorrelationVector, kernel.rtlvalidatecorrelationvector, RtlValidateCorrelationVector
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlValidateCorrelationVector
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode)
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -53,18 +57,40 @@ Validates the specified correlation vector to check whether it conforms to the C
 
 `Vector`
 
-
+TBD
 
 
 ## Return Value
 
 Returns an NTSTATUS value that indicates the success of failure of the operation. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The correlation vector is valid.
+</dl>
+</td>
+<td width="60%">
+The correlation vector is valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The supplied correlation vector is invalid.
+</dl>
+</td>
+<td width="60%">
+The supplied correlation vector is invalid.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

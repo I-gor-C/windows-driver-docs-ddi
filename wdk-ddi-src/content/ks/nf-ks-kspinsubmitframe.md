@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3fdb83b2-85b7-4f86-9a59-a42138000214
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinSubmitFrame
+ms.keywords : KsPinSubmitFrame, KsPinSubmitFrame function [Streaming Media Devices], avfunc_ce7c4c71-c404-4061-a2e5-b9f4c15df4a2.xml, stream.kspinsubmitframe, ks/KsPinSubmitFrame
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinSubmitFrame
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -62,7 +66,7 @@ A pointer to a frame buffer. This should be <b>NULL</b> if and only if <i>Size</
 
 `OPTIONAL`
 
-
+TBD
 
 `StreamHeader`
 
@@ -92,14 +96,10 @@ Returns STATUS_SUCCESS if frame submission is successful. Otherwise returns an a
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspinsubmitframemdl.md">KsPinSubmitFrameMdl</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
-</dt>
-</dl>
+
  
 
  

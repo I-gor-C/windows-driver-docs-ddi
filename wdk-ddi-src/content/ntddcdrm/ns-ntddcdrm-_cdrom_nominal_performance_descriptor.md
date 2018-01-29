@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : F931CE79-7070-43B9-BFED-9F3D5B18623E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, *PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
+ms.keywords : _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, *PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, ntddcdrm/CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices], PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, ntddcdrm/PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, storage.cdrom_nominal_performance_descriptor, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure [Storage Devices], CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
-req.alt-loc : Ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR"
 ---
 
@@ -51,10 +55,22 @@ typedef struct _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR {
 
 ## Members
 
-        
-            `StartPerformance`
 
-            The StartPerformance field (Start Performance) contains the nominal logical unit performance at the Start LBA in kilobytes per second.
+`EndLba`
+
+The EndLba field (End LBA) contains the last logical block address of the extent described by this descriptor.
+
+`EndPerformance`
+
+The EndPerformance field (End Performance) contains the nominal logical unit performance at the End LBA in kilobytes per second.
+
+`StartLba`
+
+The StartLba field (Start LBA) contains the first logical block address of the extent described by this descriptor.
+
+`StartPerformance`
+
+The StartPerformance field (Start Performance) contains the nominal logical unit performance at the Start LBA in kilobytes per second.
 
 
 ## Requirements
@@ -65,16 +81,12 @@ typedef struct _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_header.md">CDROM_PERFORMANCE_HEADER</a>
-</dt>
-</dl>
+
  
 
  

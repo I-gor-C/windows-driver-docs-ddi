@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 76f97976-f48b-4ead-88d6-a9e1fdb21f08
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsScanLogContainers
+ms.keywords : kernel.clfsscanlogcontainers, ClfsScanLogContainers routine [Kernel-Mode Driver Architecture], wdm/ClfsScanLogContainers, ClfsScanLogContainers, Clfs_eec877a8-028a-49f8-91ff-b8363e124011.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsScanLogContainers
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -57,7 +61,6 @@ A pointer to a <a href="..\wdm\ns-wdm-_cls_scan_context.md">CLFS_SCAN_CONTEXT</a
 `eScanMode`
 
 A set of flags that specify the direction of the scan and whether the scan context should be closed. The following flags are available to callers of this routine.
-
 <table>
 <tr>
 <th>Value</th>
@@ -93,8 +96,7 @@ Free all resources associated with the scan context pointed to by <i>pcxScan</i>
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 If the CLFS_SCAN_CLOSE flag is set, both the CLFS_SCAN_FORWARD and CLFS_SCAN_BACKWARD flags must be clear.
 
@@ -131,17 +133,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_cls_container_information.md">CLFS_CONTAINER_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_cls_scan_context.md">CLFS_SCAN_CONTEXT</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfscreatescancontext.md">ClfsCreateScanContext</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_cls_scan_context.md">CLFS_SCAN_CONTEXT</a>
+
  
 
  

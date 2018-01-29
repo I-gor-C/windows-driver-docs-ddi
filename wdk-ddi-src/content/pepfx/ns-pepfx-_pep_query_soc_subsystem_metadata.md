@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D823EF66-1440-45B7-A0D8-A98522AA69E1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_QUERY_SOC_SUBSYSTEM_METADATA, *PPEP_QUERY_SOC_SUBSYSTEM_METADATA, PEP_QUERY_SOC_SUBSYSTEM_METADATA
+ms.keywords : PPEP_QUERY_SOC_SUBSYSTEM_METADATA, kernel.pep_query_soc_subsystem_metadata, PEP_QUERY_SOC_SUBSYSTEM_METADATA structure [Kernel-Mode Driver Architecture], _PEP_QUERY_SOC_SUBSYSTEM_METADATA, *PPEP_QUERY_SOC_SUBSYSTEM_METADATA, pepfx/PEP_QUERY_SOC_SUBSYSTEM_METADATA, PPEP_QUERY_SOC_SUBSYSTEM_METADATA structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_QUERY_SOC_SUBSYSTEM_METADATA, PEP_QUERY_SOC_SUBSYSTEM_METADATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_QUERY_SOC_SUBSYSTEM_METADATA
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_QUERY_SOC_SUBSYSTEM_METADATA, PEP_QUERY_SOC_SUBSYSTEM_METADATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_QUERY_SOC_SUBSYSTEM_METADATA, *PPEP_QUERY_SOC_SUBSYSTEM_METADATA
 ---
 
 # _PEP_QUERY_SOC_SUBSYSTEM_METADATA structure
@@ -51,30 +55,30 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_METADATA {
 
 ## Members
 
-        
-            `Flags`
 
-            This member is reserved and should be set to zero.
-        
-            `Metadata`
+`Flags`
 
-            [in/out] An array of pointers to <a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a> structures.  Each entry holds one key/value metadata string-pair.
-        
-            `MetadataCount`
+This member is reserved and should be set to zero.
 
-            [in] The number of entries in the <b>Metadata</b> array.  The PEP previously provided this value as <b>PEP_QUERY_SOC_SUBSYSTEM.MetadataCount</b>.
-        
-            `PlatformIdleStateIndex`
+`Metadata`
 
-            [in] The platform idle state index for  for the SoC subsystem that the OS is querying.
-        
-            `SubsystemHandle`
+[in/out] An array of pointers to <a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a> structures.  Each entry holds one key/value metadata string-pair.
 
-            [in] A context pointer that the PEP previously provided on subsystem initialization. The context pointer is optional, so if none was provided then the value will be zero. The PEP is free to ignore this field.
-        
-            `SubsystemName`
+`MetadataCount`
 
-            [in] The name of the subsystem whose metadata is being queried.
+[in] The number of entries in the <b>Metadata</b> array.  The PEP previously provided this value as <b>PEP_QUERY_SOC_SUBSYSTEM.MetadataCount</b>.
+
+`PlatformIdleStateIndex`
+
+[in] The platform idle state index for  for the SoC subsystem that the OS is querying.
+
+`SubsystemHandle`
+
+[in] A context pointer that the PEP previously provided on subsystem initialization. The context pointer is optional, so if none was provided then the value will be zero. The PEP is free to ignore this field.
+
+`SubsystemName`
+
+[in] The name of the subsystem whose metadata is being queried.
 
 
 ## Requirements
@@ -85,14 +89,12 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_METADATA {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><b>PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA</b></dt>
-<dt>
+<b>PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA</b>
+
 <a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a>
-</dt>
-</dl>
+
  
 
  

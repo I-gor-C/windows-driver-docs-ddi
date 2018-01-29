@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0c3fd576-48de-454b-8015-51767b21f17e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbRequestCompletionParams, IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, GetDeviceControlTransferParameters
+ms.keywords : IWDFUsbRequestCompletionParams, wudfusb/IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, UMDFRequestObjectRef_b645716e-2ec3-45f3-a3b2-199374aadef8.xml, IWDFUsbRequestCompletionParams interface, GetDeviceControlTransferParameters method, wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, GetDeviceControlTransferParameters method, GetDeviceControlTransferParameters method, IWDFUsbRequestCompletionParams interface, GetDeviceControlTransferParameters, umdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbRequestCompletionParams.GetDeviceControlTransferParameters
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -90,14 +94,10 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbrequestcompletionparams.md">IWDFUsbRequestCompletionParams</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-</dl>
+
  
 
  

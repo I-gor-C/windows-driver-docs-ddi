@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 71a45396-0b23-4a20-a4f4-25355a1f6271
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateTopologyNode2
+ms.keywords : KsCreateTopologyNode2 function [Streaming Media Devices], stream.kscreatetopologynode2, ks/KsCreateTopologyNode2, KsCreateTopologyNode2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCreateTopologyNode2
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -92,20 +96,14 @@ This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCre
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCreateTopologyNode</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
+
 <a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
  
 
  

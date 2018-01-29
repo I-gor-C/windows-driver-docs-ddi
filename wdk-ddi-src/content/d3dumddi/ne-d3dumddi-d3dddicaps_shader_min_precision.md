@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 98856726-b426-42e4-9560-f6b56164824a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICAPS_SHADER_MIN_PRECISION, D3DDDICAPS_SHADER_MIN_PRECISION
+ms.keywords : display.d3dddicaps_shader_min_precision, D3DDDICAPS_SHADER_MIN_PRECISION, d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT, d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION, D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT, D3DDDICAPS_SHADER_MIN_PRECISION enumeration [Display Devices], D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT, d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICAPS_SHADER_MIN_PRECISION
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICAPS_SHADER_MIN_PRECISION
 ---
 

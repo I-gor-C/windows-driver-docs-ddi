@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 03F9E47D-A3CA-44A1-A136-8236309D3D36
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnsignalsynchronizationobjectfromgpu2cb, pfnSignalSynchronizationObjectFromGpu2Cb callback function [Display Devices], pfnSignalSynchronizationObjectFromGpu2Cb, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2CB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2CB, d3dumddi/pfnSignalSynchronizationObjectFromGpu2Cb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnSignalSynchronizationObjectFromGpu2Cb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -80,20 +84,14 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectcb.md">pfnSignalSynchronizationObjectCb</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobject2cb.md">pfnSignalSynchronizationObject2Cb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromgpucb.md">pfnSignalSynchronizationObjectFromGpuCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-d3dddicb_signalsynchronizationobjectfromgpu2.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectcb.md">pfnSignalSynchronizationObjectCb</a>
+
  
 
  

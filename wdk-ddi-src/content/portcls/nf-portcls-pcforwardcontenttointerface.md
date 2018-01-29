@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5aa6aa90-ef41-467e-a096-5ab660b3f357
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcForwardContentToInterface
+ms.keywords : audpc-routines_1c3b8e8d-556e-4029-9e25-5a2e083dd17f.xml, audio.pcforwardcontenttointerface, PcForwardContentToInterface, portcls/PcForwardContentToInterface, PcForwardContentToInterface function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcForwardCo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcForwardContentToInterface
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -48,22 +52,18 @@ PORTCLASSAPI NTSTATUS NTAPI  PcForwardContentToInterface(void);
 
 `ContentId`
 
-
+TBD
 
 `pUnknown`
 
-
+TBD
 
 `NumMethods`
 
-
+TBD
 
 
 ## Return Value
-
-See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>.
-
-See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>.
 
 See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>.
 
@@ -85,11 +85,8 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmforwardcon
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
-</dt>
-</dl>
+
  
 
  

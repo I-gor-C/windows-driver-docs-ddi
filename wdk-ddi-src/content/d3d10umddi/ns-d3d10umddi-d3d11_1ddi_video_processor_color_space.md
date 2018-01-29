@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2878b36e-3850-4af8-aeca-9c5d2da717f9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, display.d3d11_1ddi_video_processor_color_space
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
 ---
 
@@ -51,39 +55,24 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 
 ## Members
 
-        
-            `Nominal_Range`
 
-            [in] A UINT value that specifies that the luminance range of YUV data is described by the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> enumeration. The default state value is zero, which indicates the studio luminance range of 16 to 235, inclusive [16, 235].
+`Nominal_Range`
+
+[in] A UINT value that specifies that the luminance range of YUV data is described by the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> enumeration. The default state value is zero, which indicates the studio luminance range of 16 to 235, inclusive [16, 235].
 
 When YUV-format data is converted to RGB format, the luminance range specified by <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> is applied to the YUV data before the conversion to RGB.
 
 For more information on luminance range, see <a href="https://msdn.microsoft.com/D76FFB8C-CA42-446E-826F-52982B1849E5">YUV format ranges in Windows 8.1</a>.
 
 Supported starting with Windows 8.1.
-        
-            `Reserved`
 
-            Reserved for system use. Set to zero.
-        
-            `RGB_Range`
+`Reserved`
 
-            Specifies the RGB color range. The default state value is 0 (full range).
+Reserved for system use. Set to zero.
 
+`RGB_Range`
 
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-        
-            `Usage`
-
-            Specifies whether the output is intended for playback or video processing (such as editing or authoring). The device can optimize the processing based on the type. The default state value is 0 (playback). 
-
+Specifies the RGB color range. The default state value is 0 (full range).
 
 
 <table>
@@ -93,11 +82,31 @@ Supported starting with Windows 8.1.
 </tr>
 <tr>
 <td width="40%">
-        
-            `YCbCr_Matrix`
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Full range (0-255)
 
-            Specifies the YCbCr transfer matrix. The default state value is 0 (BT.601).
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Limited range (16-235)
 
+</td>
+</tr>
+</table>
+
+`Usage`
+
+Specifies whether the output is intended for playback or video processing (such as editing or authoring). The device can optimize the processing based on the type. The default state value is 0 (playback). 
 
 
 <table>
@@ -107,11 +116,31 @@ Supported starting with Windows 8.1.
 </tr>
 <tr>
 <td width="40%">
-        
-            `YCbCr_xvYCC`
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Playback
 
-            Specifies whether the output uses conventional YCbCr or extended YCbCr (xvYCC). The default state value is zero (conventional YCbCr).
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Video processing
 
+</td>
+</tr>
+</table>
+
+`YCbCr_Matrix`
+
+Specifies the YCbCr transfer matrix. The default state value is 0 (BT.601).
 
 
 <table>
@@ -121,6 +150,61 @@ Supported starting with Windows 8.1.
 </tr>
 <tr>
 <td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+ITU-R BT.601
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+ITU-R BT.709
+
+</td>
+</tr>
+</table>
+
+`YCbCr_xvYCC`
+
+Specifies whether the output uses conventional YCbCr or extended YCbCr (xvYCC). The default state value is zero (conventional YCbCr).
+
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Conventional YCbCr
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Extended YCbCr (xvYCC)
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -131,13 +215,10 @@ Supported starting with Windows 8.1.
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a>
-</dt>
-</dl>
+
  
 
  

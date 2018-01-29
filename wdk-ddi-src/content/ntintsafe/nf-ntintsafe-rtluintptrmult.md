@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E484AB83-DEA6-4FC7-9896-26984D998661
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUIntPtrMult
+ms.keywords : ntintsafe/RtlUIntPtrMult, RtlUIntPtrMult function [Kernel-Mode Driver Architecture], RtlUIntPtrMult, kernel.rtluintptrmult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUIntPtrMult
-req.alt-loc : Ntintsafe.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
@@ -71,7 +75,27 @@ None
 
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
-This function uses the following alternate name:</p>
+This function uses the following alternate name:
+<ul>
+<li>RtlUIntPtrMult
+</li>
+<li>RtlULongPtrMult
+</li>
+<li>RtlDWordPtrMult
+</li>
+<li>RtlSizeTMult
+</li>
+<li>RtlSIZETMult
+</li>
+<li>RtlDWordLongMult
+</li>
+<li>RtlULong64Mult
+</li>
+<li>RtlDWord64Mult
+</li>
+<li>RtlUInt64Mult
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

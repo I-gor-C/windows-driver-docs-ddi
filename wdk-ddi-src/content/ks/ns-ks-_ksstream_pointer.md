@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 31cdb264-89a1-48dc-af0c-b18d4f077d0f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSSTREAM_POINTER, *PKSSTREAM_POINTER, KSSTREAM_POINTER
+ms.keywords : stream.ksstream_pointer, PKSSTREAM_POINTER structure pointer [Streaming Media Devices], ks/PKSSTREAM_POINTER, PKSSTREAM_POINTER, KSSTREAM_POINTER structure [Streaming Media Devices], _KSSTREAM_POINTER, *PKSSTREAM_POINTER, KSSTREAM_POINTER, ks/KSSTREAM_POINTER, avstruct_1856dc7a-3351-4a87-97a5-85b06d12ab30.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSSTREAM_POINTER
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSSTREAM_POINTER, KSSTREAM_POINTER"
 ---
 
@@ -52,8 +56,8 @@ typedef struct _KSSTREAM_POINTER {
 ## Members
 
 
-    ## Remarks
-        A queue object for a stream has at minimum one hard-defined stream pointer: the leading-edge stream pointer. For more information, see <a href="https://msdn.microsoft.com/73ab974f-8034-421f-980a-2393d84ec54c">Leading and Trailing Edge Stream Pointers</a>.
+## Remarks
+A queue object for a stream has at minimum one hard-defined stream pointer: the leading-edge stream pointer. For more information, see <a href="https://msdn.microsoft.com/73ab974f-8034-421f-980a-2393d84ec54c">Leading and Trailing Edge Stream Pointers</a>.
 
 For general information about stream pointers, see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736f">Stream Pointers</a>.
 
@@ -65,37 +69,26 @@ For general information about stream pointers, see <a href="https://msdn.microso
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsets.md">KsStreamPointerAdvanceOffsets</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
+
 <a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsets.md">KsStreamPointerAdvanceOffsets</a>
+
+<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
+
+<a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>
+
  
 
  

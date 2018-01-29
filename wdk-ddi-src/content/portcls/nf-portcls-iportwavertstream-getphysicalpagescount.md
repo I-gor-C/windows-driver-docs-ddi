@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8126af29-a7ee-4ab7-8902-45b4baf33b9e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream, IPortWaveRTStream::GetPhysicalPagesCount, GetPhysicalPagesCount
+ms.keywords : IPortWaveRTStream::GetPhysicalPagesCount, GetPhysicalPagesCount method [Audio Devices], audio.iportwavertstream_getphysicalpagescount, audmp-routines_bdc74102-0337-436b-b3ac-68187fb323a4.xml, IPortWaveRTStream, IPortWaveRTStream interface [Audio Devices], GetPhysicalPagesCount method, GetPhysicalPagesCount method [Audio Devices], IPortWaveRTStream interface, GetPhysicalPagesCount, portcls/IPortWaveRTStream::GetPhysicalPagesCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWaveRTStream.GetPhysicalPagesCount
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -75,20 +79,14 @@ The miniport driver uses this call to determine the number of physical pages tha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536928">IPortWaveRTStream::GetPhysicalPageAddress</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilparticipantoperation.htm
 old-project : netvista
 ms.assetid : 0f59d104-ef86-4fed-9728-1a01ccb6f879
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPARTICIPANTOPERATION, RILPARTICIPANTOPERATION
+ms.date : 1/18/2018
+ms.keywords : RIL_PARTICIPANT_MAX, netvista.rilparticipantoperation, ntddrilapitypes/RIL_PARTICIPANT_MAX, RILPARTICIPANTOPERATION, RIL_PARTICIPANT_REMOVE, RILPARTICIPANTOPERATION enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARTICIPANT_REMOVE, ntddrilapitypes/RILPARTICIPANTOPERATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPARTICIPANTOPERATION
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPARTICIPANTOPERATION
 ---
 
@@ -48,6 +52,11 @@ typedef enum _RILPARTICIPANTOPERATION {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_PARTICIPANT_ADD</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_PARTICIPANT_MAX</td>

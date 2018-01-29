@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5fa704ec-5068-42e9-8d52-2f775fd0e5c9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeTryToAcquireGuardedMutex
+ms.keywords : KeTryToAcquireGuardedMutex routine [Kernel-Mode Driver Architecture], k105_4761d5a7-fc37-45de-a35e-7da9a99258b6.xml, kernel.ketrytoacquireguardedmutex, KeTryToAcquireGuardedMutex, wdm/KeTryToAcquireGuardedMutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeTryToAcquireGuardedMutex
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlKeApcLte1, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,11 +86,8 @@ For more information about guarded mutexes, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553124">KeReleaseGuardedMutex</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ead50a69-fe33-4e6c-84f9-98491d188140
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinReleaseControl
+ms.keywords : avfunc_24f35b7d-4ecc-4a64-8b78-9972ba7bab5c.xml, KsPinReleaseControl, stream.kspinreleasecontrol, ks/KsPinReleaseControl, KsPinReleaseControl function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinReleaseControl
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,17 +81,12 @@ Note that this function is an inline call to <a href="..\ks\nf-ks-ksreleasecontr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspinacquirecontrol.md">KsPinAcquireControl</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
+
  
 
  

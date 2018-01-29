@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a02f782f-6918-479a-b3de-9443df2e9ffe
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIENCRYPTED_BLOCK_INFO, D3DDDIENCRYPTED_BLOCK_INFO
+ms.keywords : _D3DDDIENCRYPTED_BLOCK_INFO, display.d3dddiencrypted_block_info, D3DDDIENCRYPTED_BLOCK_INFO, D3DDDIENCRYPTED_BLOCK_INFO structure [Display Devices], D3D_other_Structs_ca22516f-415c-47ff-9ba5-b837171cf77e.xml, d3dumddi/D3DDDIENCRYPTED_BLOCK_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIENCRYPTED_BLOCK_INFO is supported beginning wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIENCRYPTED_BLOCK_INFO
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIENCRYPTED_BLOCK_INFO
 ---
 
@@ -48,25 +52,39 @@ typedef struct _D3DDDIENCRYPTED_BLOCK_INFO {
 
 ## Members
 
-        
-            `NumBytesInEncryptPattern`
 
-            [in] The number of bytes in the buffer that are encrypted after the skip pattern, which the <b>NumBytesInSkipPattern</b> member specifies. The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
-        
-            `NumBytesInSkipPattern`
+`NumBytesInEncryptPattern`
 
-            [in] The number of bytes in the buffer that are skipped from encryption before encryption starts again.
-        
-            `NumEncryptedBytesAtBeginning`
+[in] The number of bytes in the buffer that are encrypted after the skip pattern, which the <b>NumBytesInSkipPattern</b> member specifies. The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
 
-            [in] The number of bytes at the beginning of the buffer that are encrypted.
+`NumBytesInSkipPattern`
 
-    ## Remarks
-        Because the buffer's encrypted portion is specified in bytes, an application must ensure that the encrypted blocks match the GPU's crypto-block alignment. 
+[in] The number of bytes in the buffer that are skipped from encryption before encryption starts again.
+
+`NumEncryptedBytesAtBeginning`
+
+[in] The number of bytes at the beginning of the buffer that are encrypted.
+
+## Remarks
+Because the buffer's encrypted portion is specified in bytes, an application must ensure that the encrypted blocks match the GPU's crypto-block alignment. 
 
 The runtime can specify a populated D3DDDIENCRYPTED_BLOCK_INFO structure in the block of memory that the <b>pEncryptedBlockInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decryptionblt.md">D3DDDIARG_DECRYPTIONBLT</a> structure points to when the runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a> function to write data to a protected surface. 
 
 The following examples show how the runtime can partition a buffer's encryption.
+<ol>
+<li>The following values encrypt the first 100 bytes of the buffer and skip the remaining buffer data:<ul>
+<li><b>NumEncryptedBytesAtBeginning</b> = 100;</li>
+<li><b>NumBytesInSkipPattern</b> = 0;</li>
+<li><b>NumBytesInEnycryptPattern</b> = 0;</li>
+</ul>
+</li>
+<li>The following values encrypt the first 100 bytes of the buffer, skips the next 20 bytes, and then encrypt the next 2 bytes blocks. The process is then repeated where these values skip 20 bytes and encrypt 2 bytes until the end of the buffer.<ul>
+<li><b>NumEncryptedBytesAtBeginning</b> = 100;</li>
+<li><b>NumBytesInSkipPattern</b> = 20;</li>
+<li><b>NumBytesInEnycryptPattern</b> = 2;</li>
+</ul>
+</li>
+</ol>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,16 +94,12 @@ The following examples show how the runtime can partition a buffer's encryption.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decryptionblt.md">D3DDDIARG_DECRYPTIONBLT</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decryptionblt.md">D3DDDIARG_DECRYPTIONBLT</a>
+
  
 
  

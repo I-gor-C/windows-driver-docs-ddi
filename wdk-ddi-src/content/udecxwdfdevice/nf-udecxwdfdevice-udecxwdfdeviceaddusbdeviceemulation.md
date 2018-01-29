@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : EE7644A9-AA57-4C53-9FA5-F844F2BFB0D7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxWdfDeviceAddUsbDeviceEmulation
+ms.keywords : UdecxWdfDeviceAddUsbDeviceEmulation, UdecxWdfDeviceAddUsbDeviceEmulation function [Buses], buses.udecxwdfdeviceaddusbdeviceemulation, udecxwdfdevice/UdecxWdfDeviceAddUsbDeviceEmulation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UdecxWdfDeviceAddUsbDeviceEmulation
-req.alt-loc : Udecxstub.lib,Udecxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Udecxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION
 req.product : Windows 10 or later.
 ---
@@ -52,7 +56,7 @@ FORCEINLINE NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
 
 `WdfDevice`
 
-
+TBD
 
 `Config`
 
@@ -85,14 +89,10 @@ The method makes the framework device object capable of performing operations re
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

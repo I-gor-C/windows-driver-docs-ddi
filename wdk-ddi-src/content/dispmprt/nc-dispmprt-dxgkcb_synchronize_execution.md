@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9c659319-d0a5-43a7-b9a9-9fad18397a09
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbsynchronizeexecution, DxgkCbSynchronizeExecution callback function [Display Devices], DxgkCbSynchronizeExecution, DXGKCB_SYNCHRONIZE_EXECUTION, DXGKCB_SYNCHRONIZE_EXECUTION, dispmprt/DxgkCbSynchronizeExecution, DpFunctions_3d9aecd7-8082-4869-a0d1-4a6cdadc4839.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbSynchronizeExecution
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -62,7 +66,6 @@ A handle that represents a display adapter. The display miniport driver previous
 `SynchronizeRoutine`
 
 A pointer to a function, implemented by the display miniport driver, that will be synchronized with <i>DxgkDdiInterruptRoutine</i>. The function must conform to the following prototype:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -90,19 +93,45 @@ A pointer to a Boolean variable that receives the return value of <i>Synchronize
 ## Return Value
 
 <b>DxgkCbSynchronizeExecution</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters is invalid.
+</dl>
+</td>
+<td width="60%">
+One of the parameters is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The function was unable to synchronize execution, possibly because the interrupt had not been connected yet.
+</dl>
+</td>
+<td width="60%">
+The function was unable to synchronize execution, possibly because the interrupt had not been connected yet.
 
- 
-
-The following code example shows a submission thread that notifies the GPU scheduler about the completion of packets from the software queue.
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -119,14 +148,10 @@ The following code example shows a submission thread that notifies the GPU sched
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_interrupt_routine.md">DxgkDdiInterruptRoutine</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>
-</dt>
-</dl>
+
  
 
  

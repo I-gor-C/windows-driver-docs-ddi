@@ -7,8 +7,8 @@ old-location : print\wcssetuseperuserprofiles.htm
 old-project : print
 ms.assetid : e14f944f-67fe-4eb8-85b2-9ba262e2e549
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : WcsSetUsePerUserProfiles
+ms.date : 1/18/2018
+ms.keywords : colorfnc_e56a2693-0dec-4b5a-96be-2934ec336d2b.xml, icm/WcsSetUsePerUserProfiles, print.wcssetuseperuserprofiles, WcsSetUsePerUserProfiles function [Print Devices], WcsSetUsePerUserProfiles
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Included in Windows Vista and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WcsSetUsePerUserProfiles
-req.alt-loc : Mscms.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mscms.lib
 req.dll : Mscms.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
@@ -87,13 +91,10 @@ This function is executable in Least-Privileged User Account (LUA) context.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\icm\nf-icm-wcsgetuseperuserprofiles.md">WcsGetUsePerUserProfiles</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20WcsSetUsePerUserProfiles function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20WcsSetUsePerUserProfiles function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 83260550-B364-4790-BDB5-5C6E5AD76A72
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbIoctl, *PSpbIoctl, SpbIoctl
+ms.keywords : spb/IOCTL_SPB_EXECUTE_SEQUENCE, spb/IOCTL_SPB_LOCK_CONNECTION, IOCTL_SPB_UNLOCK_CONTROLLER, SPB.spbioctl, IOCTL_SPB_LOCK_CONTROLLER, *PSpbIoctl enumeration [Buses], *PSpbIoctl, spb/IOCTL_SPB_UNLOCK_CONTROLLER, SpbIoctl, spb/IOCTL_SPB_UNLOCK_CONNECTION, spb/IOCTL_SPB_FULL_DUPLEX, SpbIoctl enumeration [Buses], spb/IOCTL_SPB_LOCK_CONTROLLER, IOCTL_SPB_EXECUTE_SEQUENCE, IOCTL_SPB_UNLOCK_CONNECTION, IOCTL_SPB_FULL_DUPLEX, spb/SpbIoctl, IOCTL_SPB_LOCK_CONNECTION, spb/*PSpbIoctl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpbIoctl
-req.alt-loc : Spb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSpbIoctl, SpbIoctl"
 req.product : Windows 10 or later.
 ---

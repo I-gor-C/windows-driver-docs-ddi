@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E257606A-66EE-4F53-B661-F5FFC63E1F54
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+ms.keywords : display.dxgkarg_postmultiplaneoverlaypresent, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT structure [Display Devices], d3dkmddi/DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 ---
 
@@ -49,18 +53,22 @@ typedef struct _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT {
 
 ## Members
 
-        
-            `LayerIndex`
 
-            [in] The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
-        
-            `PhysicalAdapterMask`
+`LayerIndex`
 
-            [in] The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the ValidPhysicalAdapterMask bit-field flag in the Flags member.
-        
-            `VidPnTargetId`
+[in] The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
 
-            [in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.
+`PhysicalAdapterMask`
+
+[in] The physical adapter mask where the vertical sync occurs. If this member contains a valid value, the driver must also set the ValidPhysicalAdapterMask bit-field flag in the Flags member.
+
+`PresentID`
+
+
+
+`VidPnTargetId`
+
+[in] The zero-based identification number of the video present target in a path of a video present network (VidPN) topology. This number represents the video present target where the vertical sync occurs.
 
 
 ## Requirements

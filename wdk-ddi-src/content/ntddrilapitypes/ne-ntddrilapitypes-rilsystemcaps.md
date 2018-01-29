@@ -7,8 +7,8 @@ old-location : netvista\rilsystemcaps.htm
 old-project : netvista
 ms.assetid : ed0ecb71-22b4-4387-8d5a-4d6fd2c7047e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSYSTEMCAPS, RILSYSTEMCAPS
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_SYSTEMCAPS_VOICEDATA, ntddrilapitypes/RILSYSTEMCAPS, RIL_SYSTEMCAPS_VOICEDATA, netvista.rilsystemcaps, RIL_SYSTEMCAPS_ALL, RILSYSTEMCAPS, RILSYSTEMCAPS enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_SYSTEMCAPS_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSYSTEMCAPS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSYSTEMCAPS
 ---
 
@@ -51,6 +55,11 @@ typedef enum _RILSYSTEMCAPS {
 
 <tr>
 <td>RIL_SYSTEMCAPS_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_SYSTEMCAPS_NONE</td>
 <td></td>
 </tr>
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FB7FB950-079C-41DC-AB9D-AD5D7460D7A7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY
+ms.keywords : stream.ksproperty_cameracontrol_image_pin_capability, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY, ksmedia/KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY_ID, ksmedia/KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY enumeration [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY
 ---
 
@@ -65,11 +69,8 @@ typedef enum _KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj553706">KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY</a>
-</dt>
-</dl>
+
  
 
  

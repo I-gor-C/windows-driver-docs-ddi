@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d94234ab-712b-4449-96de-16b9e310d250
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.discard_d3d11_1_, Discard(D3D11_1) callback function [Display Devices], Discard(D3D11_1), PFND3D11_1DDI_DISCARD, PFND3D11_1DDI_DISCARD, d3d10umddi/Discard(D3D11_1), display.pfndiscard
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : Discard(D3D11_1)
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -83,6 +87,16 @@ This callback function does not return a value.
 ## Remarks
 
 The D3D10_DDI_RECT structure is defined as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure.
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>typedef RECT D3D10_DDI_RECT;</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,14 +112,10 @@ The D3D10_DDI_RECT structure is defined as a <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_devicefuncs.md">D3D11_1DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>
-</dt>
-</dl>
+
  
 
  

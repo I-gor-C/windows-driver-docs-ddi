@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1f6b4d93-fca8-40da-b87e-c95169f142ea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsMoveIrpsOnCancelableQueue
+ms.keywords : ksfunc_e01b21f7-96b7-4a6c-b6cb-3667d7b6b4dc.xml, KsMoveIrpsOnCancelableQueue function [Streaming Media Devices], ks/KsMoveIrpsOnCancelableQueue, KsMoveIrpsOnCancelableQueue, stream.ksmoveirpsoncancelablequeue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsMoveIrpsOnCancelableQueue
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -109,11 +113,8 @@ The function can be called at DISPATCH_LEVEL or lower.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567187">KStrIrpListCallback</a>
-</dt>
-</dl>
+
  
 
  

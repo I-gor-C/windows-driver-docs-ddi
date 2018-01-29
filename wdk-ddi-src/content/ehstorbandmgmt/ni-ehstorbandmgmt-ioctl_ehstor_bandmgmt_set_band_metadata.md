@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5FBEAB29-C256-47EF-B673-6584679B8908
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DXVA_VideoSample32, DXVA_VideoSample32
+ms.keywords : storage.ioctl_ehstor_bandmgmt_set_band_metadata, IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoSample32
 ---
 
@@ -61,11 +65,40 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
-One of the following values may be returned in the <b>Status</b> field:
+One of the following values may be returned in the <b>Status</b> field: 
+<table>
+<tr>
+<th>Status Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STATUS_SUCCESS</td>
+<td>The metadata was set for the selected band.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_DEVICE_REQUEST</td>
+<td>Storage device does not support band management.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_BUFFER_SIZE</td>
+<td>The input buffer size is incorrect.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_PARAMETER</td>
+<td>Information in the input buffer is invalid.</td>
+</tr>
+<tr>
+<td>STATUS_NOT_FOUND</td>
+<td>Band was not found for the selection criteria provided.</td>
+</tr>
+<tr>
+<td>STATUS_IO_DEVICE_ERROR</td>
+<td>Communication failed. The storage device might be incompatible with security protocols. </td>
+</tr>
+</table>
 
-    ## Remarks
-        Metadata can also be erased by using this IOCTL. To erase metadata for a band, set the metadata portion of input buffer to all zeros or some other erase pattern. To ensure removal of sensitive information in metadata blobs, this erase operation should be performed prior to deleting a band from the silo driver's band table.
+## Remarks
+Metadata can also be erased by using this IOCTL. To erase metadata for a band, set the metadata portion of input buffer to all zeros or some other erase pattern. To ensure removal of sensitive information in metadata blobs, this erase operation should be performed prior to deleting a band from the silo driver's band table.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,13 +107,10 @@ One of the following values may be returned in the <b>Status</b> field:
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_set_band_metadata_parameters.md">SET_BAND_METADATA_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

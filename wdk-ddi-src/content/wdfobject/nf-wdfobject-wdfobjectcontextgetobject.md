@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7288a7e5-8e64-4ac3-9779-edc27a3888bb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfObjectContextGetObject
+ms.keywords : wdfobject/WdfObjectContextGetObject, DFGenObjectRef_cf11ce54-dbb0-4835-919d-6f0bec903e2d.xml, kmdf.wdfobjectcontextgetobject, wdf.wdfobjectcontextgetobject, PFN_WDFOBJECTCONTEXTGETOBJECT, WdfObjectContextGetObject, WdfObjectContextGetObject method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfObjectContextGetObject
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_SYNCHRONIZATION_SCOPE
 req.product : Windows 10 or later.
 ---
@@ -62,9 +66,7 @@ A pointer to object context space. The driver can obtain this pointer by calling
 
 ## Remarks
 
-For more information about object context space, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>. 
-
-The following code example obtains a handle to the framework object that a specified context space belongs to.
+For more information about object context space, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,11 +82,8 @@ The following code example obtains a handle to the framework object that a speci
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548749">WdfObjectGetTypedContext</a>
-</dt>
-</dl>
+
  
 
  

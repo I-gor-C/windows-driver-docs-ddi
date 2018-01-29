@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d201fdce-ae56-4ba5-a947-e3e0cecc6e17
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS
+ms.keywords : PKSAUDIO_MIX_CAPS, ksmedia/KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS, PKSAUDIO_MIX_CAPS structure pointer [Audio Devices], aud-prop_5468df9e-d7f4-4449-a59f-694100f2f825.xml, ksmedia/PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS structure [Audio Devices], KSAUDIO_MIX_CAPS, audio.ksaudio_mix_caps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAUDIO_MIX_CAPS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS"
 ---
 
 # KSAUDIO_MIX_CAPS structure
@@ -52,21 +56,21 @@ typedef struct {
 
 ## Members
 
-        
-            `Maximum`
 
-            Specifies the maximum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.
-        
-            `Minimum`
+`Maximum`
 
-            Specifies the minimum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.
-        
-            `Mute`
+Specifies the maximum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.
 
-            Specifies whether the data path from the input channel to the output channel is muted (not mixed). A value of <b>TRUE</b> indicates that the data path is muted.
+`Minimum`
 
-    ## Remarks
-        The mix-level values for the <b>Maximum</b> and <b>Minimum</b> members use the following scale:
+Specifies the minimum mix level for the data path from the input channel to the output channel. For more information, see the following Remarks section.
+
+`Mute`
+
+Specifies whether the data path from the input channel to the output channel is muted (not mixed). A value of <b>TRUE</b> indicates that the data path is muted.
+
+## Remarks
+The mix-level values for the <b>Maximum</b> and <b>Minimum</b> members use the following scale:
 
 -2147483648 is -Infinity decibels (attenuation), 
 
@@ -86,22 +90,16 @@ This scale has a resolution of 1/65536 decibel.
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537291">KSPROPERTY_AUDIO_MIX_LEVEL_CAPS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537292">KSPROPERTY_AUDIO_MIX_LEVEL_TABLE</a>
-</dt>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-ksaudio_mixcap_table.md">KSAUDIO_MIXCAP_TABLE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537291">KSPROPERTY_AUDIO_MIX_LEVEL_CAPS</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ns-ksmedia-ksaudio_mixcap_table.md">KSAUDIO_MIXCAP_TABLE</a>
+
  
 
  

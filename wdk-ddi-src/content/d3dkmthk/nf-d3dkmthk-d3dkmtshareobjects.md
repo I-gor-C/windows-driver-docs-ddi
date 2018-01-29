@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 853c4e73-b571-4b68-8690-bbef7a726c8e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTShareObjects
+ms.keywords : D3DKMTShareObjects, d3dkmthk/D3DKMTShareObjects, display.d3dkmtshareobjects, D3DKMTShareObjects function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTShareObjects
-req.alt-loc : GDI32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : GDI32.lib
 req.dll : GDI32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -88,8 +92,11 @@ None
 Objects to be shared using  <b>D3DKMTShareObjects</b>  must first be created with the <b>NtSecuritySharing</b> flag value set. This flag value is available in the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a>, <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>, and <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md">D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</a> structures.
 
 This function must specify handles through the <i>hObjects</i> parameter only to the following  combinations of input object array types:
-
-The operating system will reject any other input handle combinations.
+<ul>
+<li>an allocation</li>
+<li>an allocation, a keyed mutex, and a synchronization object</li>
+<li>a synchronization object</li>
+</ul>The operating system will reject any other input handle combinations.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,26 +112,18 @@ The operating system will reject any other input handle combinations.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md">D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
-</dt>
-<dt>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md">D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject2.md">D3DKMTCreateSynchronizationObject2</a>
-</dt>
-</dl>
+
  
 
  

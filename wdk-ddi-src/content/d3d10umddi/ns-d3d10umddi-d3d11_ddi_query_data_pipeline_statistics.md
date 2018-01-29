@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d82b4e91-6734-4644-811d-fb64cfb9f5c4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS, D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS
+ms.keywords : display.d3d11_ddi_query_data_pipeline_statistics, d3d10umddi/D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS, D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure [Display Devices], UMDisplayDriver_Dx11param_Structs_68a59a1f-0f02-4be2-b417-5c4064df23fb.xml, D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS is supporte
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS
 ---
 
@@ -56,53 +60,53 @@ typedef struct D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS {
 
 ## Members
 
-        
-            `CInvocations`
 
-            The number of clipper invocations.
-        
-            `CPrimitives`
+`CInvocations`
 
-            The number of clipper primitives.
-        
-            `CSInvocations`
+The number of clipper invocations.
 
-            The number of commute shader (CS) invocations.
-        
-            `DSInvocations`
+`CPrimitives`
 
-            The number of domain shader (DS) invocations.
-        
-            `GSInvocations`
+The number of clipper primitives.
 
-            The number of geometry shader (GS) invocations.
-        
-            `GSPrimitives`
+`CSInvocations`
 
-            The number of GS primitives.
-        
-            `HSInvocations`
+The number of commute shader (CS) invocations.
 
-            The number of hull shader (HS) invocations.
-        
-            `IAPrimitives`
+`DSInvocations`
 
-            The number of IA primitives.
-        
-            `IAVertices`
+The number of domain shader (DS) invocations.
 
-            The number of input assembler (IA) veritces.
-        
-            `PSInvocations`
+`GSInvocations`
 
-            The number of pixel shader (PS) invocations.
-        
-            `VSInvocations`
+The number of geometry shader (GS) invocations.
 
-            The number of vertex shader (VS) invocations.
+`GSPrimitives`
 
-    ## Remarks
-        The driver associates a D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure with the D3D11DDI_QUERY_PIPELINESTATS query type value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a> enumeration.
+The number of GS primitives.
+
+`HSInvocations`
+
+The number of hull shader (HS) invocations.
+
+`IAPrimitives`
+
+The number of IA primitives.
+
+`IAVertices`
+
+The number of input assembler (IA) veritces.
+
+`PSInvocations`
+
+The number of pixel shader (PS) invocations.
+
+`VSInvocations`
+
+The number of vertex shader (VS) invocations.
+
+## Remarks
+The driver associates a D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure with the D3D11DDI_QUERY_PIPELINESTATS query type value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a> enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,19 +116,14 @@ typedef struct D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querygetdata.md">QueryGetData</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
+
  
 
  

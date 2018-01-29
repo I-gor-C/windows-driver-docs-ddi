@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 63ca0e60-700b-459a-a88a-bc7bb6f5f6e6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwAllocateLocallyUniqueId
+ms.keywords : kernel.zwallocatelocallyuniqueid, ntddk/ZwAllocateLocallyUniqueId, k111_de9ec26c-4aa4-4f1b-b876-c6e27bb2a067.xml, ntddk/NtAllocateLocallyUniqueId, NtAllocateLocallyUniqueId, ZwAllocateLocallyUniqueId, ZwAllocateLocallyUniqueId routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwAllocateLocallyUniqueId,NtAllocateLocallyUniqueId
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -50,7 +54,7 @@ NTSTATUS ZwAllocateLocallyUniqueId(
 
 `Luid`
 
-
+TBD
 
 
 ## Return Value
@@ -60,8 +64,7 @@ NTSTATUS ZwAllocateLocallyUniqueId(
 ## Remarks
 
 The allocated <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a> is unique to the local system only, and uniqueness is guaranteed only until the system is next restarted.
-
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
+<div class="alert"><b>Note</b>  If the call to the <b>ZwAllocateLocallyUniqueId</b> function occurs in user mode, you should use the name "<b>NtAllocateLocallyUniqueId</b>" instead of "<b>ZwAllocateLocallyUniqueId</b>".</div><div> </div>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,14 +80,10 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-</dl>
+
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+
  
 
  

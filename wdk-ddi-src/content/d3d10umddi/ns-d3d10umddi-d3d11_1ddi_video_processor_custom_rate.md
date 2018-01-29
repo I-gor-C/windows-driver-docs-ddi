@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d7ea23de-1d2d-4a76-aa99-0b18bf50654c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE, D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
+ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE, D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE, display.d3d11_1ddi_video_processor_custom_rate, D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
 ---
 
@@ -49,25 +53,25 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE {
 
 ## Members
 
-        
-            `CustomRate`
 
-            The ratio of the output frame rate to the input frame rate, expressed as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure that holds a rational number.
-        
-            `InputFramesOrFields`
+`CustomRate`
 
-            The number of input fields or frames for every <i>N</i> output frames that will be generated, where <i>N</i> = <b>OutputFrames</b>.
-        
-            `InputInterlaced`
+The ratio of the output frame rate to the input frame rate, expressed as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure that holds a rational number.
 
-            If <b>TRUE</b>, the input stream must be interlaced. Otherwise, the input stream must be progressive.
-        
-            `OutputFrames`
+`InputFramesOrFields`
 
-            The number of output frames that will be generated for every <i>N</i> input samples, where <i>N</i> = <b>InputFramesOrFields</b>.
+The number of input fields or frames for every <i>N</i> output frames that will be generated, where <i>N</i> = <b>OutputFrames</b>.
 
-    ## Remarks
-        The <b>CustomRate</b> member gives the rate conversion factor, while the remaining members define the pattern of input and output samples.
+`InputInterlaced`
+
+If <b>TRUE</b>, the input stream must be interlaced. Otherwise, the input stream must be progressive.
+
+`OutputFrames`
+
+The number of output frames that will be generated for every <i>N</i> input samples, where <i>N</i> = <b>InputFramesOrFields</b>.
+
+## Remarks
+The <b>CustomRate</b> member gives the rate conversion factor, while the remaining members define the pattern of input and output samples.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a>
-</dt>
-</dl>
+
  
 
  

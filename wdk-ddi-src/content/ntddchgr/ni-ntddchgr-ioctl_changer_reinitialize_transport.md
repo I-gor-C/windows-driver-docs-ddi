@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 35b40514-a7a6-4860-a633-fe273ef21ba2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ELEMENT_TYPE, *PELEMENT_TYPE, ELEMENT_TYPE
+ms.keywords : storage.ioctl_changer_reinitialize_transport, IOCTL_CHANGER_REINITIALIZE_TRANSPORT control code [Storage Devices], IOCTL_CHANGER_REINITIALIZE_TRANSPORT, ntddchgr/IOCTL_CHANGER_REINITIALIZE_TRANSPORT, k307_36f3bd40-f084-4b11-b2e1-5e4ff976ba64.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CHANGER_REINITIALIZE_TRANSPORT
-req.alt-loc : Ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ELEMENT_TYPE, *PELEMENT_TYPE
 ---
 
 # IOCTL_CHANGER_REINITIALIZE_TRANSPORT IOCTL
@@ -59,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to <b>sizeof</b>(CHANGER_ELEMENT). The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH, STATUS_INSUFFICIENT_RESOURCES, STATUS_INVALID_ELEMENT_ADDRESS, or STATUS_INVALID_PARAMETER.
 
 
@@ -70,13 +73,10 @@ The <b>Information</b> field is set to <b>sizeof</b>(CHANGER_ELEMENT). The <b>St
 | **Header** | ntddchgr.h (include Ntddchgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5badc919-8663-4905-aaec-70f6b51ab2f1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_set_hotplug_info, IOCTL_STORAGE_SET_HOTPLUG_INFO control code [Storage Devices], IOCTL_STORAGE_SET_HOTPLUG_INFO, ntddstor/IOCTL_STORAGE_SET_HOTPLUG_INFO, k307_f6fb6bb6-0058-4fa6-9d4f-2f964b1ef646.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_SET_HOTPLUG_INFO
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_SET_HOTPLUG_INFO IOCTL
-Sets the hotplug configuration of the specified device. This request takes a <a href="..\ntddstor\ns-ntddstor-_storage_hotplug_info.md">STORAGE_HOTPLUG_INFO</a> structure as input. The <b>DeviceHotplug</b> member of the STORAGE_HOTPLUG_INFO structure determines what action is taken. If the value of that member is nonzero, the value for the device's removal policy in the registry is set to <b>ExpectSurpriseRemoval</b> and all levels of caching are disabled. If the value of <b>DeviceHotplug</b> is zero, the removal policy is set to <b>ExpectOrderlyRemoval</b>, and caching might be selectively enabled. 
-
-
-
 Sets the hotplug configuration of the specified device. This request takes a <a href="..\ntddstor\ns-ntddstor-_storage_hotplug_info.md">STORAGE_HOTPLUG_INFO</a> structure as input. The <b>DeviceHotplug</b> member of the STORAGE_HOTPLUG_INFO structure determines what action is taken. If the value of that member is nonzero, the value for the device's removal policy in the registry is set to <b>ExpectSurpriseRemoval</b> and all levels of caching are disabled. If the value of <b>DeviceHotplug</b> is zero, the removal policy is set to <b>ExpectOrderlyRemoval</b>, and caching might be selectively enabled.
 
 ### Major Code
@@ -63,7 +63,6 @@ The length of a <a href="..\ntddstor\ns-ntddstor-_storage_hotplug_info.md">STORA
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH if the input buffer is too small. It is set to STATUS_INVALID_PARAMETER_1 if the <b>Size</b> member of STORAGE_HOTPLUG_INFO is not the size expected by the class driver for this device. It is set to STATUS_INVALID_PARAMETER_2 if the <b>MediaRemoveable</b> member has a value different from that held by the class driver. It is set to STATUS_INVALID_PARAMETER_3 if the <b>MediaHotplug</b> member has a value different from that held by the class driver, and it is set to STATUS_INVALID_PARAMETER_5 if the <b>WriteCacheEnableOverride</b> member has a value different from that held by the class driver.
 
 
@@ -74,16 +73,12 @@ The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LEN
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_hotplug_info.md">IOCTL_STORAGE_GET_HOTPLUG_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_hotplug_info.md">STORAGE_HOTPLUG_INFO</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilphoneentrystorelocation.htm
 old-project : netvista
 ms.assetid : 2a20e9c8-a8f2-4519-a22b-2444c46ba13a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEENTRYSTORELOCATION, RILPHONEENTRYSTORELOCATION
+ms.date : 1/18/2018
+ms.keywords : RILPHONEENTRYSTORELOCATION, RIL_PBLOC_OWNNUMBERS, RIL_PBLOC_ALL, RIL_PBLOC_UICCFIXDIALING, ntddrilapitypes/RILPHONEENTRYSTORELOCATION, RIL_PBLOC_UICCSERVICEDIALING, ntddrilapitypes/RIL_PBLOC_OWNNUMBERS, netvista.rilphoneentrystorelocation, ntddrilapitypes/RIL_PBLOC_UICCSERVICEDIALING, RIL_PBLOC_UICCPHONEBOOK, ntddrilapitypes/RIL_PBLOC_UICCPHONEBOOK, ntddrilapitypes/RIL_PBLOC_UICCFIXDIALING, ntddrilapitypes/RIL_PBLOC_ALL, RILPHONEENTRYSTORELOCATION enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEENTRYSTORELOCATION
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPHONEENTRYSTORELOCATION
 ---
 
@@ -74,6 +78,11 @@ typedef enum _RILPHONEENTRYSTORELOCATION {
 
 <tr>
 <td>RIL_PBLOC_UICCSERVICEDIALING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PBLOC_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

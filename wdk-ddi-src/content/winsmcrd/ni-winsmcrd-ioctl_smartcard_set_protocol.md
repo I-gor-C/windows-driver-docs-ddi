@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 9A54D427-128F-41C1-B6BD-EE09B0402C32
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : GdiStartPageEMF
+ms.keywords : nfpdrivers.ioctl_smartcard_set_protocol, IOCTL_SMARTCARD_SET_PROTOCOL control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_SET_PROTOCOL, winsmcrd/IOCTL_SMARTCARD_SET_PROTOCOL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SMARTCARD_SET_PROTOCOL
-req.alt-loc : winsmcrd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -76,12 +80,12 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 | **Header** | winsmcrd.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b3b14c21-3613-4f84-9e7d-368c4cc3fa9d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION, *PKEY_VALUE_BASIC_INFORMATION
+ms.keywords : kernel.key_value_basic_information, KEY_VALUE_BASIC_INFORMATION, PKEY_VALUE_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _KEY_VALUE_BASIC_INFORMATION, wdm/PKEY_VALUE_BASIC_INFORMATION, kstruct_c_ba44285c-18a4-4a35-a31b-c2a6573d7023.xml, *PKEY_VALUE_BASIC_INFORMATION, PKEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/KEY_VALUE_BASIC_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_VALUE_BASIC_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEY_VALUE_BASIC_INFORMATION, *PKEY_VALUE_BASIC_INFORMATION
 req.product : Windows 10 or later.
 ---
@@ -50,23 +54,22 @@ typedef struct _KEY_VALUE_BASIC_INFORMATION {
 
 ## Members
 
-        
-            `Name`
 
-            A string of Unicode characters naming a value entry of the key.
-        
-            `NameLength`
+`Name`
 
-            Specifies the size in bytes of the following value entry name.
-        
-            `TitleIndex`
+A string of Unicode characters naming a value entry of the key.
 
-            Device and intermediate drivers should ignore this member.
-        
-            `Type`
+`NameLength`
 
-            Specifies the system-defined type for the value entry in the registry key, which is one of the following:
+Specifies the size in bytes of the following value entry name.
 
+`TitleIndex`
+
+Device and intermediate drivers should ignore this member.
+
+`Type`
+
+Specifies the system-defined type for the value entry in the registry key, which is one of the following:
 <table>
 <tr>
 <th>REG_<i>XXX</i> type</th>
@@ -194,8 +197,8 @@ A list of hardware resources that a physical device is using, detected and writt
 </tr>
 </table>
 
-    ## Remarks
-        A kernel-mode driver can obtain a <b>KEY_VALUE_BASIC_INFORMATION</b> that describes a registry key by calling the <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a> or <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a> routine.
+## Remarks
+A kernel-mode driver can obtain a <b>KEY_VALUE_BASIC_INFORMATION</b> that describes a registry key by calling the <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a> or <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -205,25 +208,18 @@ A list of hardware resources that a physical device is using, detected and writt
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_key_value_information_class.md">KEY_VALUE_INFORMATION_CLASS</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ne-wdm-_key_value_information_class.md">KEY_VALUE_INFORMATION_CLASS</a>
+
+<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
+
  
 
  

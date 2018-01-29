@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 31565c5f-a1f2-4a81-bb91-e30e13f45050
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlSelfRelativeToAbsoluteSD
+ms.keywords : RtlSelfRelativeToAbsoluteSD, rtlref_84aae1db-020b-440b-ab32-ade50a4b47bb.xml, RtlSelfRelativeToAbsoluteSD routine [Installable File System Drivers], ntifs/RtlSelfRelativeToAbsoluteSD, ifsk.rtlselfrelativetoabsolutesd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows Serve
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlSelfRelativeToAbsoluteSD
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -106,12 +110,34 @@ Pointer to a caller-allocated variable that specifies the size, in bytes, of the
 ## Return Value
 
 <b>RtlSelfRelativeToAbsoluteSD</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BAD_DESCRIPTOR_FORMAT</b></dt>
-</dl>The buffer pointed to by the <i>AbsoluteSecurityDescriptor</i> parameter did not contain a SECURITY_DESCRIPTOR structure in absolute format. STATUS_BAD_DESCRIPTOR_FORMAT is an error code. 
+</dl>
+</td>
+<td width="60%">
+The buffer pointed to by the <i>AbsoluteSecurityDescriptor</i> parameter did not contain a SECURITY_DESCRIPTOR structure in absolute format. STATUS_BAD_DESCRIPTOR_FORMAT is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer pointed to by the <i>AbsoluteSecurityDescriptor</i> , <i>Dacl</i>, <i>Sacl</i>, <i>Owner</i>, or <i>PrimaryGroup</i> parameter was too small. STATUS_BUFFER_TOO_SMALL is an error code.
+</dl>
+</td>
+<td width="60%">
+The buffer pointed to by the <i>AbsoluteSecurityDescriptor</i> , <i>Dacl</i>, <i>Sacl</i>, <i>Owner</i>, or <i>PrimaryGroup</i> parameter was too small. STATUS_BUFFER_TOO_SMALL is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -137,29 +163,20 @@ For more information about security and access control, see the Microsoft Window
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlabsolutetoselfrelativesd.md">RtlAbsoluteToSelfRelativeSD</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
+
+<a href="..\ntifs\nf-ntifs-rtlabsolutetoselfrelativesd.md">RtlAbsoluteToSelfRelativeSD</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

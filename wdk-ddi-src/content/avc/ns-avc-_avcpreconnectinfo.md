@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 828ce6cf-f47a-4487-8c45-887f2ace8202
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _AVCPRECONNECTINFO, *PAVCPRECONNECTINFO, AVCPRECONNECTINFO
+ms.keywords : avc/PAVCPRECONNECTINFO, AVCPRECONNECTINFO structure [Streaming Media Devices], avc/AVCPRECONNECTINFO, PAVCPRECONNECTINFO, stream.avcpreconnectinfo, _AVCPRECONNECTINFO, PAVCPRECONNECTINFO structure pointer [Streaming Media Devices], *PAVCPRECONNECTINFO, AVCPRECONNECTINFO, avcref_c38bc8dd-8218-40ea-95b6-c5376fa6273c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVCPRECONNECTINFO
-req.alt-loc : avc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PAVCPRECONNECTINFO, AVCPRECONNECTINFO"
 ---
 
@@ -51,33 +55,33 @@ typedef struct _AVCPRECONNECTINFO {
 
 ## Members
 
-        
-            `DataFlow`
 
-            The direction of data flow on this subunit plug. Destination plugs have KSPIN_DATAFLOW_IN; source plugs have KSPIN_DATAFLOW_OUT.
-        
-            `DeviceID`
+`DataFlow`
 
-            A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.
-        
-            `Flags`
+The direction of data flow on this subunit plug. Destination plugs have KSPIN_DATAFLOW_IN; source plugs have KSPIN_DATAFLOW_OUT.
 
-            A bitmap with one or more bits set from the KSPIN_FLAG_AVC enumeration.
-        
-            `SubunitAddress`
+`DeviceID`
 
-            The encoded subunit type and subunit ID of the subunit.
-        
-            `SubunitPlugNumber`
+A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.
 
-            The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.
-        
-            `UnitPlugNumber`
+`Flags`
 
-            The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.
+A bitmap with one or more bits set from the KSPIN_FLAG_AVC enumeration.
 
-    ## Remarks
-        This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a> function code.
+`SubunitAddress`
+
+The encoded subunit type and subunit ID of the subunit.
+
+`SubunitPlugNumber`
+
+The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.
+
+`UnitPlugNumber`
+
+The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.
+
+## Remarks
+This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a> function code.
 
 This structure is used only as member of the AVC_PRECONNECT_INFO structure. It is not used by itself.
 
@@ -89,16 +93,12 @@ This structure is used only as member of the AVC_PRECONNECT_INFO structure. It i
 | **Minimum UMDF version** |  |
 | **Header** | avc.h (include Avc.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\avc\ns-avc-_avc_preconnect_info.md">AVC_PRECONNECT_INFO</a>
-</dt>
-<dt>
 <a href="..\avc\ne-avc-_kspin_flag_avc.md">KSPIN_FLAG_AVC</a>
-</dt>
-</dl>
+
+<a href="..\avc\ns-avc-_avc_preconnect_info.md">AVC_PRECONNECT_INFO</a>
+
  
 
  

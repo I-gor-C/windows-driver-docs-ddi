@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 29A0CB0F-3469-4EF5-8C5B-132321F6C8E8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_calcprivatevideodecodersize, pfnCalcPrivateVideoDecoderSize callback function [Display Devices], pfnCalcPrivateVideoDecoderSize, PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0021, PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0021, d3d12umddi/pfnCalcPrivateVideoDecoderSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnCalcPrivateVideoDecoderSize
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
@@ -67,7 +71,7 @@ None
 
 ## Remarks
 
-The runtime allocates memory for storing the driver CPU object that represents the video decoder.  This method is used to calculate the driver object size.</p>
+The runtime allocates memory for storing the driver CPU object that represents the video decoder.  This method is used to calculate the driver object size.
 
 ## Requirements
 | &nbsp; | &nbsp; |

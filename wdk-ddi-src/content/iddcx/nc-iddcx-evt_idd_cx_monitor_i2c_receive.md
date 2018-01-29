@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f4d55fb9-57da-4f75-a0ab-89cc9516ac49
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : WcsTranslateColors
+ms.keywords : display.evt_idd_cx_monitor_i2c_receive, EvtIddCxMonitorI2cReceive callback function [Display Devices], EvtIddCxMonitorI2cReceive, EVT_IDD_CX_MONITOR_I2C_RECEIVE, EVT_IDD_CX_MONITOR_I2C_RECEIVE, iddcx/EvtIddCxMonitorI2cReceive, PFN_IDD_CX_MONITOR_I2C_RECEIVE callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_I2C_RECEIVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFN_IDD_CX_MONITOR_I2C_RECEIVE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
@@ -85,7 +89,7 @@ The <b>EVT_IDD_CX_MONITOR_I2C_RECEIVE</b> function is responsible for signaling 
 If the display adapter supports HDCP, <b>EVT_IDD_CX_MONITOR_I2C_RECIEVE</b> must refuse to receive data from an I2C device if the
  device has an I2C address that is used by HDCP.
  This function  can receive data from an I2C device in a monitor that is connected to the display adapter, but must never receive data from an I2C
- device that is on the display adapter itself.</p>
+ device that is on the display adapter itself.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : BD11B67F-9229-4584-A20D-7D7C70B42977
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tag_video_open_parms, VIDEO_OPEN_PARMS, *LPVIDEO_OPEN_PARMS
+ms.keywords : VIDEO_OPEN_PARMS structure [Streaming Media Devices], *LPVIDEO_OPEN_PARMS, tag_video_open_parms, LPVIDEO_OPEN_PARMS, LPVIDEO_OPEN_PARMS structure pointer [Streaming Media Devices], msviddrv/VIDEO_OPEN_PARMS, stream.video_open_parms, VIDEO_OPEN_PARMS, msviddrv/LPVIDEO_OPEN_PARMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_OPEN_PARMS
-req.alt-loc : Msviddrv.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_OPEN_PARMS, *LPVIDEO_OPEN_PARMS
 ---
 
@@ -54,42 +58,42 @@ typedef struct tag_video_open_parms {
 
 ## Members
 
-        
-            `dnDevNode`
 
-            Specifies the devnode for PnP devices.
-        
-            `dwError`
+`dnDevNode`
 
-            If open fails, specifies why it failed.
-        
-            `dwFlags`
+Specifies the devnode for PnP devices.
 
-            Specifies the type of channel.
-        
-            `dwSize`
+`dwError`
 
-            Set to the size of the <b>VIDEO_OPEN_PARMS</b> structure.
-        
-            `dwVersion`
+If open fails, specifies why it failed.
 
-            Specifies the version of msvideo.
-        
-            `fccComp`
+`dwFlags`
 
-            This member is not used.
-        
-            `fccType`
+Specifies the type of channel.
 
-            'vcap'
-        
-            `pV1Reserved`
+`dwSize`
 
-            Reserved.
-        
-            `pV2Reserved`
+Set to the size of the <b>VIDEO_OPEN_PARMS</b> structure.
 
-            Reserved.
+`dwVersion`
+
+Specifies the version of msvideo.
+
+`fccComp`
+
+This member is not used.
+
+`fccType`
+
+'vcap'
+
+`pV1Reserved`
+
+Reserved.
+
+`pV2Reserved`
+
+Reserved.
 
 
 ## Requirements

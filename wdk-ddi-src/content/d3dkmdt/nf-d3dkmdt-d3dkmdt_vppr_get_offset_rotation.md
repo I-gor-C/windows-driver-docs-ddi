@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EA7D2840-63B2-417A-933C-C1D360106264
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VPPR_GET_OFFSET_ROTATION
+ms.keywords : d3dkmdt/D3DKMDT_VPPR_GET_OFFSET_ROTATION, D3DKMDT_VPPR_GET_OFFSET_ROTATION, D3DKMDT_VPPR_GET_OFFSET_ROTATION function [Display Devices], display.d3dkmdt_vppr_get_offset_rotation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_IN
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_VPPR_GET_OFFSET_ROTATION
-req.alt-loc : D3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_RENDER_PIPELINE_STAGE
 ---
 
@@ -175,8 +179,28 @@ The returned value corresponds to the offset angle as follows:<table>
 ## Remarks
 
 This function is declared inline in D3dkmdt.h as:
-
-The driver should use the output value of the <i>Rotation</i> parameter to rotate the secondary clone path content when the Desktop Window Manager (DWM) has already rotated the primary clone path content. For more info, see <a href="https://msdn.microsoft.com/136CEDA5-2839-4E6E-A032-1A9222C769C6">Supporting Path-Independent Rotation</a>.
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>__inline
+D3DKMDT_VIDPN_PRESENT_PATH_ROTATION 
+    D3DKMDT_VPPR_GET_OFFSET_ROTATION(
+        D3DKMDT_VIDPN_PRESENT_PATH_ROTATION Rotation)
+{
+    if ((Rotation &gt;= D3DKMDT_VPPR_IDENTITY) &amp;&amp;
+        (Rotation &lt;= D3DKMDT_VPPR_ROTATE270_OFFSET270))
+    {
+        Rotation = (D3DKMDT_VIDPN_PRESENT_PATH_ROTATION)(
+            ((Rotation - 1) / 4) + 1);
+    }
+    return Rotation;
+}</pre>
+</td>
+</tr>
+</table></span></div>The driver should use the output value of the <i>Rotation</i> parameter to rotate the secondary clone path content when the Desktop Window Manager (DWM) has already rotated the primary clone path content. For more info, see <a href="https://msdn.microsoft.com/136CEDA5-2839-4E6E-A032-1A9222C769C6">Supporting Path-Independent Rotation</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -192,14 +216,10 @@ The driver should use the output value of the <i>Rotation</i> parameter to rotat
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation_support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a>
-</dt>
-</dl>
+
  
 
  

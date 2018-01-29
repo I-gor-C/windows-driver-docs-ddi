@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 304df6fb-8586-454a-a89a-24ac8848d3a1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortPause
+ms.keywords : StorPortPause routine [Storage Devices], storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml, storport/StorPortPause, storage.storportpause, StorPortPause
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortPause
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -56,7 +60,7 @@ Pointer to the hardware device extension of the adapter to pause. This is a per-
 
 `Timeout`
 
-
+TBD
 
 
 ## Return Value
@@ -81,11 +85,8 @@ All requests to the adapter are held until the time-out expires or the device re
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportresume.md">StorPortResume</a>
-</dt>
-</dl>
+
  
 
  

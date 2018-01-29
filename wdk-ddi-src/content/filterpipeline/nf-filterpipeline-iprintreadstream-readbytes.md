@@ -7,8 +7,8 @@ old-location : print\iprintreadstream_readbytes.htm
 old-project : print
 ms.assetid : 41ba600d-8b89-4e07-950a-a2518c2572a6
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPrintReadStream, IPrintReadStream::ReadBytes, ReadBytes
+ms.date : 1/18/2018
+ms.keywords : ReadBytes method [Print Devices], IPrintReadStream interface, IPrintReadStream interface [Print Devices], ReadBytes method, filterpipeline_92cb33c3-6229-47ca-b3da-2f4c268f8b7b.xml, ReadBytes method [Print Devices], print.iprintreadstream_readbytes, IPrintReadStream, IPrintReadStream::ReadBytes, ReadBytes, filterpipeline/IPrintReadStream::ReadBytes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPrintReadStream.ReadBytes
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

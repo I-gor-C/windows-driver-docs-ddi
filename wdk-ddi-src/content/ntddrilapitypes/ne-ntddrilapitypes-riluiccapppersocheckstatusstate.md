@@ -7,8 +7,8 @@ old-location : netvista\riluiccapppersocheckstatusstate.htm
 old-project : netvista
 ms.assetid : d41d5559-b9ec-4ae5-b658-8f75e8af13e4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCAPPPERSOCHECKSTATUSSTATE, RILUICCAPPPERSOCHECKSTATUSSTATE
+ms.date : 1/18/2018
+ms.keywords : netvista.riluiccapppersocheckstatusstate, RILUICCAPPPERSOCHECKSTATUSSTATE, ntddrilapitypes/RIL_PERSOCHECKSTATE_PASS, ntddrilapitypes/RIL_PERSOCHECKSTATE_MAX, ntddrilapitypes/RILUICCAPPPERSOCHECKSTATUSSTATE, RIL_PERSOCHECKSTATE_MAX, RILUICCAPPPERSOCHECKSTATUSSTATE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PERSOCHECKSTATE_FAIL, RIL_PERSOCHECKSTATE_PASS, RIL_PERSOCHECKSTATE_FAIL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCAPPPERSOCHECKSTATUSSTATE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUICCAPPPERSOCHECKSTATUSSTATE
 ---
 
@@ -57,6 +61,11 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSSTATE {
 
 <tr>
 <td>RIL_PERSOCHECKSTATE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PERSOCHECKSTATE_NOTREADY</td>
 <td></td>
 </tr>
 

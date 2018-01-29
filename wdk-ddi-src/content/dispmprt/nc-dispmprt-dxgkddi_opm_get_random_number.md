@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 91b07a5c-ed25-4268-bd6d-273ae8b1ac28
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkddiopmgetrandomnumber, DxgkDdiOPMGetRandomNumber callback function [Display Devices], DxgkDdiOPMGetRandomNumber, DXGKDDI_OPM_GET_RANDOM_NUMBER, DXGKDDI_OPM_GET_RANDOM_NUMBER, dispmprt/DxgkDdiOPMGetRandomNumber, Dm_Opm_functions_a7d335ef-61bf-452a-a811-20048ff28dbf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiOPMGetRandomNumber
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -96,20 +100,14 @@ For more information about cryptographically secure random numbers, see section 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
-</dt>
-<dt>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a>
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_random_number.md">DXGKMDT_OPM_RANDOM_NUMBER</a>
-</dt>
-</dl>
+
  
 
  

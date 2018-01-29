@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ed96b2ec-95ea-47a6-a3b0-f4d018e0c8e2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlRunOnceBeginInitialize
+ms.keywords : kernel.rtlrunoncebegininitialize, RtlRunOnceBeginInitialize, ntddk/RtlRunOnceBeginInitialize, RtlRunOnceBeginInitialize routine [Kernel-Mode Driver Architecture], k109_f7299ad8-4567-4ad8-a13c-2329a12af6ea.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlRunOnceBeginInitialize
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -66,12 +70,34 @@ Specifies a pointer to a PVOID variable that receives the initialized data. The 
 ## Return Value
 
 <b>RtlRunOnceBeginInitialize</b> returns one of the following NTSTATUS values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The one-time initialization has already completed. The initialized data is stored in the memory location that <i>Context</i> points to.
+</dl>
+</td>
+<td width="60%">
+The one-time initialization has already completed. The initialized data is stored in the memory location that <i>Context</i> points to.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>The caller has successfully begun one-time initialization. The caller now performs the driver-specific initialization steps and then calls <a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a> to complete the initialization.
+</dl>
+</td>
+<td width="60%">
+The caller has successfully begun one-time initialization. The caller now performs the driver-specific initialization steps and then calls <a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a> to complete the initialization. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,23 +117,16 @@ Drivers can alternatively perform one-time initialization by calling <a href="..
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlrunonceexecuteonce.md">RtlRunOnceExecuteOnce</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563635">RunOnceInitialization</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
+
+<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
+
+<a href="..\ntddk\nf-ntddk-rtlrunonceexecuteonce.md">RtlRunOnceExecuteOnce</a>
+
  
 
  

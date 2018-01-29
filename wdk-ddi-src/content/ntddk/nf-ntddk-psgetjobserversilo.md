@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8EBCBC06-8373-43EA-91F5-6C8A439C0EAD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetJobServerSilo
+ms.keywords : PsGetJobServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgetjobserversilo, ntddk/PsGetJobServerSilo, PsGetJobServerSilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsGetJobServerSilo
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -65,16 +69,38 @@ A pointer that receives the server silo for the job.
 ## Return Value
 
 The following NT status codes are returned.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>Job</i> parameter is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+The <i>Job</i> parameter is <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>A PESILO is returned successfully.
+</dl>
+</td>
+<td width="60%">
+A PESILO is returned successfully.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
-<b>STATUS_SUCCESS</b> is returned even if a server silo is not in effect for the job. In that case, it will return the default host silo.</p>
+<b>STATUS_SUCCESS</b> is returned even if a server silo is not in effect for the job. In that case, it will return the default host silo.
 
 ## Requirements
 | &nbsp; | &nbsp; |

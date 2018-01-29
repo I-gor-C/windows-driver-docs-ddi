@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ad6220e3-9b6a-4a46-978b-31edfb2c8b9b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_ENDPOINT_VERSION,
+ms.keywords : display.iddcx_endpoint_version, iddcx/IDDCX_ENDPOINT_VERSION, IDDCX_ENDPOINT_VERSION structure [Display Devices], IDDCX_ENDPOINT_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_ENDPOINT_VERSION
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -50,26 +54,26 @@ typedef struct IDDCX_ENDPOINT_VERSION {
 
 ## Members
 
-        
-            `Build`
 
-            The build number defined by the driver.
-        
-            `MajorVer`
+`Build`
 
-            The major version defined by the driver.
-        
-            `MinorVer`
+The build number defined by the driver.
 
-            The minor version defined by the driver.
-        
-            `Size`
+`MajorVer`
 
-            Total size of the structure.
-        
-            `SKU`
+The major version defined by the driver.
 
-            The SKU type defined by the driver.
+`MinorVer`
+
+The minor version defined by the driver.
+
+`Size`
+
+Total size of the structure.
+
+`SKU`
+
+The SKU type defined by the driver.
 
 
 ## Requirements

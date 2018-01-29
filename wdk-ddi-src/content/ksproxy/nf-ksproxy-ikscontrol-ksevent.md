@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b1ff6569-9568-40d8-b2a9-e63ce44720a2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsControl, IKsControl::KsEvent, KsEvent
+ms.keywords : KsEvent method [Streaming Media Devices], IKsControl interface, stream.ikscontrol_ksevent, IKsControl, ksproxy_d7ef7fda-b615-4aa9-8528-aa66de81da5b.xml, KsEvent, IKsControl interface [Streaming Media Devices], KsEvent method, KsEvent method [Streaming Media Devices], IKsControl::KsEvent, ksproxy/IKsControl::KsEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsControl.KsEvent
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -97,20 +101,14 @@ The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
+
+<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
+
  
 
  

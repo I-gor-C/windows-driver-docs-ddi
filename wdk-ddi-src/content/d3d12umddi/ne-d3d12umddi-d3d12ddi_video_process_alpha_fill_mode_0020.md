@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 74F07876-5502-4B57-9128-624F6066AF5B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020, D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020
+ms.keywords : D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_OPAQUE, d3d12umddi/D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_DESTINATION, D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_DESTINATION, display.d3d12ddi_video_process_alpha_fill_mode, D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_SOURCE_STREAM, d3d12umddi/D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_SOURCE_STREAM, d3d12umddi/D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_BACKGROUND, d3d12umddi/D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020, D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020, D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020 enumeration [Display Devices], D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_BACKGROUND, d3d12umddi/D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_OPAQUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020
 ---
 
@@ -74,7 +78,7 @@ typedef enum D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020 {
 
 ## Remarks
 
-The alpha fill mode is used in <b>D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_PARAMETERS</b>.  The <b>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_OPAQUE</b> flag is always supported.  The background, destination, and source stream modes are only supported when the driver reports <b>D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_ALPHA_FILL</b>.</p>
+The alpha fill mode is used in <b>D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_PARAMETERS</b>.  The <b>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_OPAQUE</b> flag is always supported.  The background, destination, and source stream modes are only supported when the driver reports <b>D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_ALPHA_FILL</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

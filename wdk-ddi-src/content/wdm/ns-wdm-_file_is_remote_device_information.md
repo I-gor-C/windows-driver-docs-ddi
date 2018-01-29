@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E1A82D24-A981-414A-83D8-E71F97E0301A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILE_IS_REMOTE_DEVICE_INFORMATION, *PFILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION
+ms.keywords : _FILE_IS_REMOTE_DEVICE_INFORMATION, PFILE_IS_REMOTE_DEVICE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PFILE_IS_REMOTE_DEVICE_INFORMATION, wdm/FILE_IS_REMOTE_DEVICE_INFORMATION, kernel.file_is_remote_device_information, FILE_IS_REMOTE_DEVICE_INFORMATION, PFILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PFILE_IS_REMOTE_DEVICE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_IS_REMOTE_DEVICE_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PFILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILE_IS_REMOTE_DEVICE_INFORMATION, *PFILE_IS_REMOTE_DEVICE_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -47,10 +51,10 @@ typedef struct _FILE_IS_REMOTE_DEVICE_INFORMATION {
 
 ## Members
 
-        
-            `IsRemote`
 
-            A value that indicates whether the file system that contains the file is a remote file system.
+`IsRemote`
+
+A value that indicates whether the file system that contains the file is a remote file system.
 
 
 ## Requirements
@@ -61,13 +65,10 @@ typedef struct _FILE_IS_REMOTE_DEVICE_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
-</dt>
-</dl>
+
  
 
  

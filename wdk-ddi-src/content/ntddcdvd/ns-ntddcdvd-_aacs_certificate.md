@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 591d8f63-ab3e-48b7-8fe4-98dcdf9464f1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _AACS_CERTIFICATE, *PAACS_CERTIFICATE, AACS_CERTIFICATE
+ms.keywords : PAACS_CERTIFICATE, storage.aacs_certificate, AACS_CERTIFICATE, *PAACS_CERTIFICATE, PAACS_CERTIFICATE structure pointer [Storage Devices], ntddcdvd/PAACS_CERTIFICATE, structs-DVD_0eedee44-0be8-462e-84ac-e5efbc37fc82.xml, ntddcdvd/AACS_CERTIFICATE, _AACS_CERTIFICATE, AACS_CERTIFICATE structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AACS_CERTIFICATE
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PAACS_CERTIFICATE, AACS_CERTIFICATE"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _AACS_CERTIFICATE {
 
 ## Members
 
-        
-            `Certificate`
 
-            A 92-byte certificate.
-        
-            `Nonce`
+`Certificate`
 
-            A cryptographically random 160-bit nonce value.
+A 92-byte certificate.
 
-    ## Remarks
-        Clients retrieve an Advanced Access Content System (AACS) certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_get_certificate.md">IOCTL_AACS_GET_CERTIFICATE</a> request. Clients send certificates in a <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_send_certificate.md">AACS_SEND_CERTIFICATE</a> structure with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_send_certificate.md">IOCTL_AACS_SEND_CERTIFICATE</a> request.
+`Nonce`
+
+A cryptographically random 160-bit nonce value.
+
+## Remarks
+Clients retrieve an Advanced Access Content System (AACS) certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_get_certificate.md">IOCTL_AACS_GET_CERTIFICATE</a> request. Clients send certificates in a <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_send_certificate.md">AACS_SEND_CERTIFICATE</a> structure with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_send_certificate.md">IOCTL_AACS_SEND_CERTIFICATE</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _AACS_CERTIFICATE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_get_certificate.md">IOCTL_AACS_GET_CERTIFICATE</a>
-</dt>
-</dl>
+
  
 
  

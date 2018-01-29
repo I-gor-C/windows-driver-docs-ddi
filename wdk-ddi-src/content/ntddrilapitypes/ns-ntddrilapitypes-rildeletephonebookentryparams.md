@@ -7,8 +7,8 @@ old-location : netvista\rildeletephonebookentryparams.htm
 old-project : netvista
 ms.assetid : 1a372468-2bad-44d4-a19a-d3b517b7ed7b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS
+ms.date : 1/18/2018
+ms.keywords : netvista.rildeletephonebookentryparams, ntddrilapitypes/RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS structure [Network Drivers Starting with Windows Vista], RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDELETEPHONEBOOKENTRYPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS
 ---
 
 # RILDELETEPHONEBOOKENTRYPARAMS structure
@@ -50,26 +54,26 @@ typedef struct _RILDELETEPHONEBOOKENTRYPARAMS {
 
 ## Members
 
-        
-            `dwIndex`
 
-            
-        
-            `dwStoreLocation`
+`dwIndex`
 
-            
-        
-            `fHasLockVerification`
 
-            
-        
-            `hUiccApp`
 
-            
-        
-            `lockVerification`
+`dwStoreLocation`
 
-            
+
+
+`fHasLockVerification`
+
+
+
+`hUiccApp`
+
+
+
+`lockVerification`
+
+
 
 
 ## Requirements

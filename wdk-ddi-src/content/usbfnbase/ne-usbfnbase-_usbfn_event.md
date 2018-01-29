@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4A1A4E49-6452-4291-8CD4-FA390C1F167E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBFN_EVENT, USBFN_EVENT, *PUSBFN_EVENT
+ms.keywords : _USBFN_EVENT, UsbfnEventPortType, usbfnbase/UsbfnEventAttach, UsbfnEventSetInterface, *PUSBFN_EVENT, usbfnbase/UsbfnEventConfigured, usbfnbase/UsbfnEventSetupPacket, usbfnbase/UsbfnEventSuspend, UsbfnEventReset, usbfnbase/UsbfnEventMaximum, UsbfnEventMaximum, usbfnbase/UsbfnEventDetach, UsbfnEventSetupPacket, USBFN_EVENT enumeration [Buses], usbfnbase/UsbfnEventBusTearDown, usbfnbase/UsbfnEventUnConfigured, UsbfnEventUnConfigured, UsbfnEventBusTearDown, UsbfnEventResume, usbfnbase/UsbfnEventResume, UsbfnEventDetach, usbfnbase/UsbfnEventReset, buses.usbfn_event, USBFN_EVENT, usbfnbase/UsbfnEventPortType, UsbfnEventAttach, UsbfnEventConfigured, UsbfnEventSuspend, usbfnbase/USBFN_EVENT, UsbfnEventMinimum, usbfnbase/UsbfnEventSetInterface, usbfnbase/UsbfnEventMinimum
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBFN_EVENT
-req.alt-loc : usbfnbase.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBFN_EVENT, *PUSBFN_EVENT
 req.product : Windows 10 or later.
 ---

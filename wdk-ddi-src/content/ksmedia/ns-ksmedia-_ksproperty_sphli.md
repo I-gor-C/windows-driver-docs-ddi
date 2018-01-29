@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e1ee8d13-7f83-4020-9f34-4b2c3626685b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI, KSPROPERTY_SPHLI
+ms.keywords : KSPROPERTY_SPHLI, PKSPROPERTY_SPHLI, PKSPROPERTY_SPHLI structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_SPHLI, ksmedia/PKSPROPERTY_SPHLI, dvdref_f6cc5797-e4f6-4973-abff-6b1bb9c0c637.xml, KSPROPERTY_SPHLI structure [Streaming Media Devices], stream.ksproperty_sphli, *PKSPROPERTY_SPHLI, _KSPROPERTY_SPHLI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_SPHLI
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSPROPERTY_SPHLI, KSPROPERTY_SPHLI"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI
 ---
 
 # _KSPROPERTY_SPHLI structure
@@ -54,45 +58,45 @@ typedef struct _KSPROPERTY_SPHLI {
 
 ## Members
 
-        
-            `ColCon`
 
-            Specifies the color/contrast of the highlight rectangle.
-        
-            `EndPTM`
+`ColCon`
 
-            Indicates the end of presentation time.
-        
-            `HLISS`
+Specifies the color/contrast of the highlight rectangle.
 
-            Indicates the highlight status of the current selection. A value of zero indicates that all highlights are invalid and the decoder should disable all highlights.
-        
-            `Reserved`
+`EndPTM`
 
-            Reserved. Do not use.
-        
-            `StartPTM`
+Indicates the end of presentation time.
 
-            Indicates the start of presentation time.
-        
-            `StartX`
+`HLISS`
 
-            Indicates the start x-coordinate pixel of the current highlight button.
-        
-            `StartY`
+Indicates the highlight status of the current selection. A value of zero indicates that all highlights are invalid and the decoder should disable all highlights.
 
-            Indicates the start y-coordinate pixel of the current highlight button.
-        
-            `StopX`
+`Reserved`
 
-            Indicates the ending x-coordinate pixel of the current highlight button.
-        
-            `StopY`
+Reserved. Do not use.
 
-            Indicates the ending y-coordinate pixel of the current highlight button.
+`StartPTM`
 
-    ## Remarks
-        The KSPROPERTY_SPHLI structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565150">KSPROPERTY_DVDSUBPIC_HLI</a> property.
+Indicates the start of presentation time.
+
+`StartX`
+
+Indicates the start x-coordinate pixel of the current highlight button.
+
+`StartY`
+
+Indicates the start y-coordinate pixel of the current highlight button.
+
+`StopX`
+
+Indicates the ending x-coordinate pixel of the current highlight button.
+
+`StopY`
+
+Indicates the ending y-coordinate pixel of the current highlight button.
+
+## Remarks
+The KSPROPERTY_SPHLI structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565150">KSPROPERTY_DVDSUBPIC_HLI</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,13 +106,10 @@ typedef struct _KSPROPERTY_SPHLI {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565150">KSPROPERTY_DVDSUBPIC_HLI</a>
-</dt>
-</dl>
+
  
 
  

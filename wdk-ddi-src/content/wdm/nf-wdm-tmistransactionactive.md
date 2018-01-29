@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0c9bf43d-9342-4d60-86d2-7388a4a80160
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmIsTransactionActive
+ms.keywords : kernel.tmistransactionactive, ktm_ref_f2dfbc14-24c0-494b-bf54-506c9d2c1af4.xml, TmIsTransactionActive, wdm/TmIsTransactionActive, TmIsTransactionActive routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TmIsTransactionActive
-req.alt-loc : NtosKrnl.exe,Ext-MS-Win-ntos-tm-l1-1-0.dll,tm.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,17 +82,12 @@ For more information about <b>TmIsTransactionActive</b>, and for information abo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
+<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4a973ecd-341f-4766-9fed-f56e55f8deae
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DXGK_MONITORFREQUENCYRANGESET_INTERFACE
+ms.keywords : DXGK_MONITORFREQUENCYRANGESET_INTERFACE, _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure [Display Devices], DmStructs_7ff19615-df83-4d5e-91c2-8a94a1cfeea3.xml, display.dxgk_monitorfrequencyrangeset_interface, d3dkmddi/DXGK_MONITORFREQUENCYRANGESET_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MONITORFREQUENCYRANGESET_INTERFACE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MONITORFREQUENCYRANGESET_INTERFACE
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXGK_MONITORFREQUENCYRANGESET_INTERFACE {
 
 ## Members
 
-        
-            `pfnAcquireFirstFrequencyRangeInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirefirstfrequencyrangeinfo.md">pfnAcquireFirstFrequencyRangeInfo</a> function.
-        
-            `pfnAcquireNextFrequencyRangeInfo`
+`pfnAcquireFirstFrequencyRangeInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirenextfrequencyrangeinfo.md">pfnAcquireNextFrequencyRangeInfo</a> function.
-        
-            `pfnGetNumFrequencyRanges`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirefirstfrequencyrangeinfo.md">pfnAcquireFirstFrequencyRangeInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_getnumfrequencyranges.md">pfnGetNumFrequencyRanges</a> function.
-        
-            `pfnReleaseFrequencyRangeInfo`
+`pfnAcquireNextFrequencyRangeInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_releasefrequencyrangeinfo.md">pfnReleaseFrequencyRangeInfo</a> function.
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirenextfrequencyrangeinfo.md">pfnAcquireNextFrequencyRangeInfo</a> function.
+
+`pfnGetNumFrequencyRanges`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_getnumfrequencyranges.md">pfnGetNumFrequencyRanges</a> function.
+
+`pfnReleaseFrequencyRangeInfo`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_releasefrequencyrangeinfo.md">pfnReleaseFrequencyRangeInfo</a> function.
 
 
 ## Requirements

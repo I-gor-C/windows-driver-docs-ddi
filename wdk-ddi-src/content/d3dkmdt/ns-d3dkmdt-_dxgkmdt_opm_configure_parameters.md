@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7f9a4770-c30d-41ae-bd46-dce106b1811d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKMDT_OPM_CONFIGURE_PARAMETERS, *PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_CONFIGURE_PARAMETERS
+ms.keywords : display.dxgkmdt_opm_configure_parameters, PDXGKMDT_OPM_CONFIGURE_PARAMETERS, *PDXGKMDT_OPM_CONFIGURE_PARAMETERS, PDXGKMDT_OPM_CONFIGURE_PARAMETERS structure pointer [Display Devices], _DXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_CONFIGURE_PARAMETERS structure [Display Devices], DXGKMDT_OPM_CONFIGURE_PARAMETERS, d3dkmdt/PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_SET_HDCP_SRM, DXGKMDT_OPM_SET_PROTECTION_LEVEL or DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD, d3dkmdt/DXGKMDT_OPM_CONFIGURE_PARAMETERS, DmStructs_98db66f6-39e1-4e08-83c5-ead1c527302f.xml, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKMDT_OPM_CONFIGURE_PARAMETERS
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_CONFIGURE_PARAMETERS"
 ---
 
@@ -50,24 +54,23 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 
 ## Members
 
-        
-            `abParameters`
 
-            A 4056-byte array that specifies how to configure the protected output object.
+`abParameters`
+
+A 4056-byte array that specifies how to configure the protected output object.
 
 The <b>abParameters</b> parameter is cast to one of the following structures that contains the configuration information, depending on the GUID that is specified in the <b>guidSetting</b> member of DXGKMDT_OPM_CONFIGURE_PARAMETERS that the <i>Parameters</i> parameter of <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> points to.
 
 
 These are possible GUIDs and structures for configuration information:
-        
-            `cbParametersSize`
 
-            The size, in bytes, of the valid configuration data that the <b>abParameters</b> member points to.
-        
-            `guidSetting`
+`cbParametersSize`
 
-            The GUID that is used to configure the protected output object. <b>guidSetting</b> can be set to one of the following GUIDs:
+The size, in bytes, of the valid configuration data that the <b>abParameters</b> member points to.
 
+`guidSetting`
+
+The GUID that is used to configure the protected output object. <b>guidSetting</b> can be set to one of the following GUIDs:
 <ul>
 <li>
 DXGKMDT_OPM_SET_PROTECTION_LEVEL
@@ -88,10 +91,10 @@ DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD
 
 </li>
 </ul>
-        
-            `omac`
 
-            A <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:
+`omac`
+
+A <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:
 
 <i>E</i> = AES (Advanced Encryption Standard)
 
@@ -102,10 +105,10 @@ DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD
 <i>n</i> = 128 bits 
 
 For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website.
-        
-            `ulSequenceNumber`
 
-            A sequence number. For the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to process a configure request, the value in <b>ulSequenceNumber</b> must match the current 4-byte sequence number that the display miniport driver stores. If a match is not detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> returns an error code. If a match is detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> increments the stored sequence number before returning. The initial 4-byte sequence number is part of the 256-byte array that the <i>EncryptedParameters</i> parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function points to.
+`ulSequenceNumber`
+
+A sequence number. For the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to process a configure request, the value in <b>ulSequenceNumber</b> must match the current 4-byte sequence number that the display miniport driver stores. If a match is not detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> returns an error code. If a match is detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> increments the stored sequence number before returning. The initial 4-byte sequence number is part of the 256-byte array that the <i>EncryptedParameters</i> parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function points to.
 
 
 ## Requirements
@@ -116,28 +119,20 @@ For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?li
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters.md">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_hdcp_srm_parameters.md">DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_protection_level_parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
-</dt>
-<dt>
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_hdcp_srm_parameters.md">DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters.md">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_protection_level_parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
+
  
 
  

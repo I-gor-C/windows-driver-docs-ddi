@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9ca0fdd5-a724-4d5d-81b2-8885b2aed1ca
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.calcprivatecryptosessionsize, CalcPrivateCryptoSessionSize callback function [Display Devices], CalcPrivateCryptoSessionSize, PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE, PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE, d3d10umddi/CalcPrivateCryptoSessionSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CalcPrivateCryptoSessionSize
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -85,11 +89,8 @@ This function is not expected to fail.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createcryptosession.md">D3D11_1DDIARG_CREATECRYPTOSESSION</a>
-</dt>
-</dl>
+
  
 
  

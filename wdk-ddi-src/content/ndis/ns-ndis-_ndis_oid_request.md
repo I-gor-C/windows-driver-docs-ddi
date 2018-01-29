@@ -7,8 +7,8 @@ old-location : netvista\ndis_oid_request.htm
 old-project : netvista
 ms.assetid : 3a5e151d-2a2d-4477-a736-8a5f3d3820a2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_OID_REQUEST, NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
+ms.date : 1/18/2018
+ms.keywords : PNDIS_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], ndis_request_ref_c431d090-b403-40a7-90de-5f47ca6213f4.xml, *PNDIS_OID_REQUEST, NDIS_OID_REQUEST structure [Network Drivers Starting with Windows Vista], ndis/NDIS_OID_REQUEST, ndis/PNDIS_OID_REQUEST, PNDIS_OID_REQUEST, NDIS_OID_REQUEST, netvista.ndis_oid_request, _NDIS_OID_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_OID_REQUEST
-req.alt-loc : ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
 ---
 
@@ -84,39 +88,47 @@ typedef struct _NDIS_OID_REQUEST {
 
 ## Members
 
-        
-            `DATA`
 
-            A union that defines the request data. The information in the data varies according to the type of
+`_REQUEST_DATA`
+
+
+
+`DATA`
+
+A union that defines the request data. The information in the data varies according to the type of
      request as specified by the 
      <b>RequestType</b> member. The following member structures are specified:
-        
-            `Header`
 
-            The 
+`Flags`
+
+
+
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_OID_REQUEST structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_OID_REQUEST, the 
      <b>Revision</b> member to NDIS_OID_REQUEST_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_OID_REQUEST_REVISION_1.
-        
-            `MiniportReserved`
 
-            An area that is reserved for the miniport driver.
-        
-            `NdisReserved`
+`MiniportReserved`
 
-            An area that is reserved for NDIS.
-        
-            `PortNumber`
+An area that is reserved for the miniport driver.
 
-            The port to which the request is sent. If the port is unknown or default, this member is
+`NdisReserved`
+
+An area that is reserved for NDIS.
+
+`PortNumber`
+
+The port to which the request is sent. If the port is unknown or default, this member is
      zero.
-        
-            `RequestHandle`
 
-            A handle that identifies the source that issued the OID request. If a miniport driver must complete
+`RequestHandle`
+
+A handle that identifies the source that issued the OID request. If a miniport driver must complete
       the request immediately and completes the request with a status of NDIS_STATUS_INDICATION_REQUIRED, the
       miniport driver uses this 
       <b>RequestHandle</b> value to set the 
@@ -125,10 +137,10 @@ typedef struct _NDIS_OID_REQUEST {
       the OID request.
 
 For more information about status indications, see the following Remarks section.
-        
-            `RequestId`
 
-            An identifier for the request. If a miniport driver must complete a request immediately and it
+`RequestId`
+
+An identifier for the request. If a miniport driver must complete a request immediately and it
      completes the request with a status of NDIS_STATUS_INDICATION_REQUIRED, the miniport driver uses this 
      <b>RequestId</b> value to set the 
      <b>RequestId</b> member of the associated 
@@ -141,44 +153,52 @@ NDIS or overlying drivers can also use the
      <b>RequestId</b>. If 
      <b>RequestId</b> is zero, the miniport driver can ignore this member. For more
      information about status indications, see the following Remarks section.
-        
-            `RequestType`
 
-            The request type as one of the 
+`RequestType`
+
+The request type as one of the 
      <a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a> enumeration
      values.
-        
-            `Reserved1`
 
-            Reserved for future use.
-        
-            `Reserved2`
+`Reserved1`
 
-            Reserved for future use.
-        
-            `SourceReserved`
+Reserved for future use.
 
-            An area that is reserved for the originating driver. Reserved for the allocator of the
+`Reserved2`
+
+Reserved for future use.
+
+`SourceReserved`
+
+An area that is reserved for the originating driver. Reserved for the allocator of the
      NDIS_OID_REQUEST structure. This is usually an NDIS protocol driver or an NDIS filter driver.
-        
-            `SupportedRevision`
 
-            The revision of an NDIS structure that was supported by an NDIS 6.0 or later driver when it
+`SupportedRevision`
+
+The revision of an NDIS structure that was supported by an NDIS 6.0 or later driver when it
      handled an OID request. A revisioned structure is any NDIS 6.0 structure that has an 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure inside it.
      When the driver succeeds in setting an OID, it must set 
      <b>SupportedRevision</b> to the revision number of the structure that it
      supported. For more information about NDIS version information, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/specifying-ndis-version-information">Specifying NDIS Version
-     Information</a>.
-        
-            `Timeout`
+     <mshelp:link keywords="netvista.specifying_ndis_version_information" tabindex="0">Specifying NDIS Version
+     Information</mshelp:link>.
 
-            A time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the
+`SwitchId`
+
+
+
+`Timeout`
+
+A time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the
      time-out expires before the driver completes the request.
 
-    ## Remarks
-        A protocol driver or a filter driver should allocate nonpaged memory for the buffer at 
+`VPortId`
+
+
+
+## Remarks
+A protocol driver or a filter driver should allocate nonpaged memory for the buffer at 
     <b>InformationBuffer</b> and for the NDIS_OID_REQUEST structure. Using data that
     is allocated from paged memory can cause fatal page faults because the underlying drivers run at IRQL =
     DISPATCH_LEVEL to carry out the requested operation.
@@ -225,27 +245,20 @@ The
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569641">OID_GEN_SUPPORTED_GUIDS</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

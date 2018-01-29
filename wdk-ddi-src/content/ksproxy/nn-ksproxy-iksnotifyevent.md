@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1de4db64-be4c-4a9b-b1ab-29f703e17959
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSynchronousDeviceControl
+ms.keywords : stream.iksnotifyevent, IKsNotifyEvent interface [Streaming Media Devices], IKsNotifyEvent interface [Streaming Media Devices], described, IKsNotifyEvent, ksproxy/IKsNotifyEvent, ksproxy_1ef13fd1-5ccb-410c-8b0e-4942d9ba790e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsNotifyEvent
-req.alt-loc : Ksproxy.lib,Ksproxy.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 

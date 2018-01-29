@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0F5BEDBF-6871-4343-88D1-85E7620171EF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+ms.keywords : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], display.d3dddicb_waitforsynchronizationobjectfromcpu, WaitAny, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 ---
 
@@ -50,33 +54,54 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 
 ## Members
 
-        
-            `FenceValueArray`
 
-            [in] An array of 64-bit monitored fence values to wait for, each corresponding to an object in the <b>ObjectHandleArray</b>.
-        
-            `Flags`
+`FenceValueArray`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags.md">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
+[in] An array of 64-bit monitored fence values to wait for, each corresponding to an object in the <b>ObjectHandleArray</b>.
 
+`Flags`
+
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags.md">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `hAsyncEvent`
+<td width="40%"><a id="WaitAny"></a><a id="waitany"></a><a id="WAITANY"></a><dl>
+<dt><b>WaitAny</b></dt>
+<dt>FALSE</dt>
+</dl>
+</td>
+<td width="60%">
+The wait condition is considered to be satisfied when all input synchronization objects are signaled to the corresponding input fence values or greater.
 
-            [in] When not <b>NULL</b>, specifies the event to be signaled when the wait condition is satisfied. When <b>NULL</b>, the call will not return until the wait condition is satisfied.
-        
-            `ObjectCount`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="WaitAny"></a><a id="waitany"></a><a id="WAITANY"></a><dl>
+<dt><b>WaitAny</b></dt>
+<dt>TRUE</dt>
+</dl>
+</td>
+<td width="60%">
+The wait condition is considered to be satisfied when any of the input synchronization objects is signaled to the corresponding input fence value or greater.
 
-            [in] The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>.
-        
-            `ObjectHandleArray`
+</td>
+</tr>
+</table>
 
-            [in] An array of kernel-mode handles to the synchronization events to wait for.
+`hAsyncEvent`
+
+[in] When not <b>NULL</b>, specifies the event to be signaled when the wait condition is satisfied. When <b>NULL</b>, the call will not return until the wait condition is satisfied.
+
+`ObjectCount`
+
+[in] The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>.
+
+`ObjectHandleArray`
+
+[in] An array of kernel-mode handles to the synchronization events to wait for.
 
 
 ## Requirements
@@ -87,13 +112,10 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromcpucb.md">pfnWaitForSynchronizationObjectFromCpuCb</a>
-</dt>
-</dl>
+
  
 
  

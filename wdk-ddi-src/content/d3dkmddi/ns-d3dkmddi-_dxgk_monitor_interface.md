@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : edb6df63-7354-4da3-b641-2ce7f28ca7e8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MONITOR_INTERFACE, DXGK_MONITOR_INTERFACE
+ms.keywords : DXGK_MONITOR_INTERFACE, display.dxgk_monitor_interface, d3dkmddi/DXGK_MONITOR_INTERFACE, DXGK_MONITOR_INTERFACE structure [Display Devices], _DXGK_MONITOR_INTERFACE, DmStructs_23906e50-4f65-4483-a54c-915f9fd3c433.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MONITOR_INTERFACE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MONITOR_INTERFACE
 ---
 
@@ -50,29 +54,31 @@ typedef struct _DXGK_MONITOR_INTERFACE {
 
 ## Members
 
-        
-            `pfnAcquireMonitorSourceModeSet`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function.
-        
-            `pfnGetMonitorDescriptorSet`
+`pfnAcquireMonitorSourceModeSet`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_getmonitordescriptorset.md">pfnGetMonitorDescriptorSet</a> function.
-        
-            `pfnGetMonitorFrequencyRangeSet`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_getmonitorfrequencyrangeset.md">pfnGetMonitorFrequencyRangeSet</a> function.
-        
-            `pfnReleaseMonitorSourceModeSet`
+`pfnGetMonitorDescriptorSet`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_releasemonitorsourcemodeset.md">pfnReleaseMonitorSourceModeSet</a> function.
-        
-            `Version`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_getmonitordescriptorset.md">pfnGetMonitorDescriptorSet</a> function.
 
-            A value from the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_monitor_interface_version.md">DXGK_MONITOR_INTERFACE_VERSION</a> enumeration that indicates the monitor interface version. Must be set to 1.
+`pfnGetMonitorFrequencyRangeSet`
 
-    ## Remarks
-        <p class="note">this structure.
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_getmonitorfrequencyrangeset.md">pfnGetMonitorFrequencyRangeSet</a> function.
+
+`pfnReleaseMonitorSourceModeSet`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_releasemonitorsourcemodeset.md">pfnReleaseMonitorSourceModeSet</a> function.
+
+`Version`
+
+A value from the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_monitor_interface_version.md">DXGK_MONITOR_INTERFACE_VERSION</a> enumeration that indicates the monitor interface version. Must be set to 1.
+
+## Remarks
+<div class="alert"><b>Note</b>    A display miniport driver must verify the interface version specified in the <b>Version</b> member before using <p class="note">this structure.
+
+</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,16 +88,12 @@ typedef struct _DXGK_MONITOR_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitor_interface_v2.md">DXGK_MONITOR_INTERFACE_V2</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_monitor_interface_version.md">DXGK_MONITOR_INTERFACE_VERSION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C79492C5-3872-4ED9-9AD7-ABE5C5732D41
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetPurge
+ms.keywords : wdf.wdfiotargetpurge, WdfIoTargetPurge method, kmdf.wdfiotargetpurge, wdfiotarget/WdfIoTargetPurge, WdfIoTargetPurge
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.0
-req.alt-api : WdfIoTargetPurge
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -96,8 +100,6 @@ For more information about I/O target states, see <a href="https://msdn.microsof
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
-The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a> callback function can call <b>WdfIoTargetPurge</b>, if the driver uses a continuous reader for a USB pipe.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -112,23 +114,16 @@ The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_w
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_purge_io_action.md">WDF_IO_TARGET_PURGE_IO_ACTION</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-</dt>
-<dt>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
-</dt>
-<dt>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
-</dt>
-</dl>
+
+<a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_purge_io_action.md">WDF_IO_TARGET_PURGE_IO_ACTION</a>
+
  
 
  

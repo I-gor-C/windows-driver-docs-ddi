@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 5795a1d1-0e13-4f9f-b2f2-37bbd71bde7a
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : RegisterOpRegionHandler, acpi.registeropregionhandler, opregref_9742e50b-613d-4191-b0a2-6d1b0f365494.xml, oprghdlr/RegisterOpRegionHandler, RegisterOpRegionHandler routine [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RegisterOpRegionHandler
-req.alt-loc : Oprghdlr.lib,Oprghdlr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Oprghdlr.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -56,7 +60,7 @@ NTSTATUS RegisterOpRegionHandler(
 
 `DeviceObject`
 
-Pointer to the physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>) that represents the ACPI device that defines the operation region.
+Pointer to the physical device object (<a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">PDO</a>) that represents the ACPI device that defines the operation region.
 
 `AccessType`
 
@@ -65,7 +69,6 @@ Specifies ACPI_OPREGION_ACCESS_AS_COOKED.
 `RegionSpace`
 
 Specifies one of the following types of region space.
-
 <table>
 <tr>
 <th>Region Space Identifier</th>
@@ -173,22 +176,60 @@ Pointer to caller-allocated buffer that, on output, contains a pointer to the op
 ## Return Value
 
 Returns one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operating region handler was successfully registered.
+</dl>
+</td>
+<td width="60%">
+The operating region handler was successfully registered.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACPI_INVALID_DATA</b></dt>
-</dl>The specified information is not valid.
+</dl>
+</td>
+<td width="60%">
+The specified information is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The routine could not allocate the necessary system resources.
+</dl>
+</td>
+<td width="60%">
+The routine could not allocate the necessary system resources.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_Xxx</b></dt>
-</dl>An internal error occurred.
+</dl>
+</td>
+<td width="60%">
+An internal error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
-The operation region context specified by <i>Context</i> is device-specific and is only used by the function driver. Typically, the context is the device extension for the functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>). The ACPI driver passes this context back to the function driver when it calls the operation region handler. The operation region object is only used by a function driver to uniquely identify the operation region when it deregisters the operation region handler.
+The operation region context specified by <i>Context</i> is device-specific and is only used by the function driver. Typically, the context is the device extension for the functional device object (<a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FDO</a>). The ACPI driver passes this context back to the function driver when it calls the operation region handler. The operation region object is only used by a function driver to uniquely identify the operation region when it deregisters the operation region handler.
 
 For more information about operation regions, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/supporting-an-operation-region">Supporting an Operation Region</a>.
 
@@ -206,14 +247,10 @@ For more information about operation regions, see <a href="https://msdn.microsof
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
-</dt>
-<dt>
+
 <a href="..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md">ACPI_OP_REGION_HANDLER</a>
-</dt>
-</dl>
+
  
 
  

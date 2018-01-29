@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 48B173D5-56C3-4611-BC55-CB7A25D05352
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_PNP_KEY_TYPE, D3DKMT_PNP_KEY_TYPE
+ms.keywords : d3dkmthk/D3DKMT_PNP_KEY_TYPE, D3DKMT_PNP_KEY_TYPE, _D3DKMT_PNP_KEY_TYPE, d3dkmthk/D3DKMT_PNP_KEY_SOFTWARE, d3dkmthk/D3DKMT_PNP_KEY_HARDWARE, D3DKMT_PNP_KEY_HARDWARE, D3DKMT_PNP_KEY_SOFTWARE, display.d3dkmt_pnp_key_type, D3DKMT_PNP_KEY_TYPE enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_PNP_KEY_TYPE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_PNP_KEY_TYPE
 ---
 

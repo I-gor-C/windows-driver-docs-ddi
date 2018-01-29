@@ -2,13 +2,13 @@
 UID : NC:hdaudio.PUNREGISTER_EVENT_CALLBACK
 title : PUNREGISTER_EVENT_CALLBACK
 author : windows-driver-content
-description : The UnregisterEventCallback routine deletes the registration of an event callback that was previously registered by a call to RegisterEventCallback.The function pointer type for an UnregisterEventCallback routine is defined as
+description : The UnregisterEventCallback routine deletes the registration of an event callback that was previously registered by a call to RegisterEventCallback.The function pointer type for an UnregisterEventCallback routine is defined as:
 old-location : audio\unregistereventcallback.htm
 old-project : audio
 ms.assetid : 698017a0-13d5-4ed5-a1ce-1a50a62135e0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.unregistereventcallback, UnregisterEventCallback callback function [Audio Devices], UnregisterEventCallback, PUNREGISTER_EVENT_CALLBACK, PUNREGISTER_EVENT_CALLBACK, hdaudio/UnregisterEventCallback, aud-prop2_9d6c50d7-56ac-4364-9a1e-74ea0d934046.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UnregisterEventCallback
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -66,9 +70,23 @@ NTSTATUS PunregisterEventCallback(
 ## Return Value
 
 <i>UnregisterEventCallback</i> returns STATUS_SUCCESS if the call succeeds in changing the DMA engines' states. Otherwise, the routine returns an appropriate error code. The following table shows a possible return status code.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Indicates that the specified tag is not valid.
+</dl>
+</td>
+<td width="60%">
+Indicates that the specified tag is not valid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -88,20 +106,14 @@ Before calling this routine, the function driver is responsible for programming 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
-</dt>
-<dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
-</dt>
-<dt>
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
-</dt>
-<dt>
+
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
+
 <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a>
-</dt>
-</dl>
+
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
+
  
 
  

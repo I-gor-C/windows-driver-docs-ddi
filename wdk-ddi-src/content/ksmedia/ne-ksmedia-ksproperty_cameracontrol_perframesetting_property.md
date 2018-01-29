@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 59328DD6-3E7B-43C3-A1FF-E02DC24228BA
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY, KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
+ms.keywords : KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET, ksmedia/KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR, KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY, ksmedia/KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET, ksmedia/KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY, KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR, KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY enumeration [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY, ksmedia/KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY, stream.ksproperty_cameracontrol_perframesetting_property
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
 ---
 

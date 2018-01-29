@@ -7,8 +7,8 @@ old-location : netvista\rilsmsreadystatus_2.htm
 old-project : netvista
 ms.assetid : a7039749-3f7d-4eca-919c-db27f9e62bf2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS, RILSMSREADYSTATUS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS, RILSMSREADYSTATUS, netvista.rilsmsreadystatus_2, RILSMSREADYSTATUS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSMSREADYSTATUS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILSMSREADYSTATUS, RILSMSREADYSTATUS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _RILSMSREADYSTATUS {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwReadyState`
 
-            
+`dwExecutor`
+
+
+
+`dwParams`
+
+
+
+`dwReadyState`
+
+
 
 
 ## Requirements

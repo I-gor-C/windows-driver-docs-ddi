@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 018cb4a0-e71d-407e-8fe9-716312099b73
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkddigetbacklightreduction, DxgkDdiGetBacklightReduction callback function [Display Devices], DxgkDdiGetBacklightReduction, DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION, DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION, dispmprt/DxgkDdiGetBacklightReduction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiGetBacklightReduction
-req.alt-loc : Dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -72,8 +76,7 @@ This function is mostly used for debugging and testing purposes to ensure a qual
 Note that for some hardware a value of zero for <i>BacklightInfo</i>-&gt;<b>BacklightUsersetting</b> or <i>BacklightInfo</i>-&gt;<b>BacklightEffective</b> might not correspond to a Windows brightness level of zero percent. The operating system therefore requires absolute brightness information given by <b>BacklightUsersetting</b> and <b>BacklightEffective</b>. If the hardware uses brightness levels of 0 to 255, it must multiply those values by 256 to correctly map them to the 0 to 65535 range of <b>BacklightUsersetting</b> and <b>BacklightEffective</b>.
 
 This function should be made pageable.
-
-The backlight reduction ratio (<i>BRR</i>) is calculated as (<b>BacklightUsersetting</b> - <b>BacklightEffective</b>) / <b>BacklightUsersetting</b>.
+<h3><a id="Computing_backlight_reduction_ratio"></a><a id="computing_backlight_reduction_ratio"></a><a id="COMPUTING_BACKLIGHT_REDUCTION_RATIO"></a>Computing backlight reduction ratio</h3>The backlight reduction ratio (<i>BRR</i>) is calculated as (<b>BacklightUsersetting</b> - <b>BacklightEffective</b>) / <b>BacklightUsersetting</b>.
 
 The operating system assumes that, in response to a new brightness level request, the driver will boost pixel brightness by a factor of <b>BacklightUsersetting</b> / <b>BacklightEffective</b> = 1.0 / (1.0 - <i>BRR</i>).
 
@@ -93,14 +96,10 @@ As an example, if <i>BRR</i> = 0.2, the driver will typically boost brightness b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_backlight_info.md">DXGK_BACKLIGHT_INFO</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_backlight_info.md">DXGK_BACKLIGHT_INFO</a>
+
  
 
  

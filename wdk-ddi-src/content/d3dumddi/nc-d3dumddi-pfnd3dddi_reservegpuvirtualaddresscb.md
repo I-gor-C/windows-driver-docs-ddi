@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CEDE03E1-4B0D-4839-B7D6-0826CC103C5E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnreservegpuvirtualaddresscb, pfnReserveGpuVirtualAddressCb callback function [Display Devices], pfnReserveGpuVirtualAddressCb, PFND3DDDI_RESERVEGPUVIRTUALADDRESSCB, PFND3DDDI_RESERVEGPUVIRTUALADDRESSCB, d3dumddi/pfnReserveGpuVirtualAddressCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnReserveGpuVirtualAddressCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -85,11 +89,8 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_reservegpuvirtualaddress.md">D3DDDI_RESERVEGPUVIRTUALADDRESS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B239E637-2920-48A5-9F45-D3089140C8A2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS
+ms.keywords : P_USBDEVICE_ENABLE_FAILURE_FLAGS, _USBDEVICE_ENABLE_FAILURE_FLAGS, buses._usbdevice_enable_failure_flags, ucxusbdevice/_USBDEVICE_ENABLE_FAILURE_FLAGS, ucxusbdevice/P_USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS structure [Buses], P_USBDEVICE_ENABLE_FAILURE_FLAGS structure pointer [Buses], USBDEVICE_ENABLE_FAILURE_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBDEVICE_ENABLE_FAILURE_FLAGS
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBDEVICE_ENABLE_FAILURE_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -49,18 +53,18 @@ typedef struct _USBDEVICE_ENABLE_FAILURE_FLAGS {
 
 ## Members
 
-        
-            `InsufficientHardwareResourcesForDefaultEndpoint`
 
-            Insufficient  hardware resources for  transfers to the default endpoint.
-        
-            `InsufficientHardwareResourcesForDevice`
+`InsufficientHardwareResourcesForDefaultEndpoint`
 
-            Insufficient hardware resources to enable transfers.
-        
-            `Reserved`
+Insufficient  hardware resources for  transfers to the default endpoint.
 
-            Do not use.
+`InsufficientHardwareResourcesForDevice`
+
+Insufficient hardware resources to enable transfers.
+
+`Reserved`
+
+Do not use.
 
 
 ## Requirements
@@ -71,16 +75,12 @@ typedef struct _USBDEVICE_ENABLE_FAILURE_FLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_enable.md">USBDEVICE_ENABLE</a>
-</dt>
-<dt>
+
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_enable.md">EVT_UCX_USBDEVICE_ENABLE</a>
-</dt>
-</dl>
+
  
 
  

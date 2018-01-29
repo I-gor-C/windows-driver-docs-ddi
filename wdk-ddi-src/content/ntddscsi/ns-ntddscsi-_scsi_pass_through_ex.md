@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3D00B42C-7320-4044-BA7D-71A9BD05B30E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SCSI_PASS_THROUGH_EX, *PSCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX
+ms.keywords : ntddscsi/PSCSI_PASS_THROUGH_EX, _SCSI_PASS_THROUGH_EX, *PSCSI_PASS_THROUGH_EX, PSCSI_PASS_THROUGH_EX, PSCSI_PASS_THROUGH_EX structure pointer [Storage Devices], storage.scsi_pass_through_ex, SCSI_PASS_THROUGH_EX, ntddscsi/SCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCSI_PASS_THROUGH_EX
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCSI_PASS_THROUGH_EX, *PSCSI_PASS_THROUGH_EX
 ---
 
 # _SCSI_PASS_THROUGH_EX structure
 The <b>SCSI_PASS_THROUGH_EX</b> structure is used in conjunction with an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request to instruct the port driver to send an embedded SCSI command to the target device. <b>SCSI_PASS_THROUGH_EX</b> can contain a bi-directional data transfers and a variable length command data block.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -61,73 +66,74 @@ typedef struct _SCSI_PASS_THROUGH_EX {
 
 ## Members
 
-        
-            `Cdb`
 
-            Specifies the SCSI command descriptor block to be sent to the target device.
-        
-            `CdbLength`
+`Cdb`
 
-            Indicates the size in bytes of the SCSI command descriptor block in <b>Cdb</b>.
-        
-            `DataDirection`
+Specifies the SCSI command descriptor block to be sent to the target device.
 
-            
-        
-            `DataInBufferOffset`
+`CdbLength`
 
-            Contains an offset from the beginning of this structure to the input data buffer. The offset must respect the data alignment requirements of the device.
-        
-            `DataInTransferLength`
+Indicates the size in bytes of the SCSI command descriptor block in <b>Cdb</b>.
 
-            Indicates the size in bytes of the input data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataInTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no input data buffer is present, this member is set to 0.
-        
-            `DataOutBufferOffset`
+`DataDirection`
 
-            Contains an offset from the beginning of this structure to the output data buffer. The offset must respect the data alignment requirements of the device.
-        
-            `DataOutTransferLength`
 
-            Indicates the size in bytes of the output data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataOutTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no output data buffer is present, this member is set to 0.
-        
-            `Length`
 
-            The size of the this structure. Set to <b>sizeof</b>(SCSI_PASS_THROUGH_EX).
-        
-            `Reserved`
+`DataInBufferOffset`
 
-            Reserved. Set to 0.
-        
-            `ScsiStatus`
+Contains an offset from the beginning of this structure to the input data buffer. The offset must respect the data alignment requirements of the device.
 
-            Reports the SCSI status that was returned by the HBA or the target device.
-        
-            `SenseInfoLength`
+`DataInTransferLength`
 
-            Indicates the size in bytes of the request-sense buffer. This member is optional and can be set to 0.
-        
-            `SenseInfoOffset`
+Indicates the size in bytes of the input data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataInTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no input data buffer is present, this member is set to 0.
 
-            Offset from the beginning of this structure to the request-sense buffer. Set to 0 if no request-sense buffer is present.
-        
-            `StorAddressLength`
+`DataOutBufferOffset`
 
-            The length of the storage device address structure at the offset of <b>StorAddressOffset</b> after this structure.
-        
-            `StorAddressOffset`
+Contains an offset from the beginning of this structure to the output data buffer. The offset must respect the data alignment requirements of the device.
 
-            The location of the target storage device address structure, in bytes, from the beginning of this structure.
-        
-            `TimeOutValue`
+`DataOutTransferLength`
 
-            Indicates the interval in seconds that the request can execute before the port driver considers it timed out.
-        
-            `Version`
+Indicates the size in bytes of the output data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataOutTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no output data buffer is present, this member is set to 0.
 
-            The version of this structure. Set to 0.
+`Length`
 
-    ## Remarks
-        The <b>SCSI_PASS_THROUGH_EX</b> structure is used with the  <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a> control code, which is a buffered device control request. To bypass buffering in system memory, callers should use <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>. When handling an <b>IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</b> request, the system locks down the buffer in user memory and the device accesses this memory directly.
+The size of the this structure. Set to <b>sizeof</b>(SCSI_PASS_THROUGH_EX).
+
+`Reserved`
+
+Reserved. Set to 0.
+
+`ScsiStatus`
+
+Reports the SCSI status that was returned by the HBA or the target device.
+
+`SenseInfoLength`
+
+Indicates the size in bytes of the request-sense buffer. This member is optional and can be set to 0.
+
+`SenseInfoOffset`
+
+Offset from the beginning of this structure to the request-sense buffer. Set to 0 if no request-sense buffer is present.
+
+`StorAddressLength`
+
+The length of the storage device address structure at the offset of <b>StorAddressOffset</b> after this structure.
+
+`StorAddressOffset`
+
+The location of the target storage device address structure, in bytes, from the beginning of this structure.
+
+`TimeOutValue`
+
+Indicates the interval in seconds that the request can execute before the port driver considers it timed out.
+
+`Version`
+
+The version of this structure. Set to 0.
+
+## Remarks
+The <b>SCSI_PASS_THROUGH_EX</b> structure is used with the  <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a> control code, which is a buffered device control request. To bypass buffering in system memory, callers should use <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>. When handling an <b>IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</b> request, the system locks down the buffer in user memory and the device accesses this memory directly. 
+<div class="alert"><b>Note</b>  Drivers executing on a 64 bit version of Windows must use the <b>SCSI_PASS_THROUGH32_EX</b> structure as the request data type  when handling an <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a> request from a 32 bit process.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -137,19 +143,14 @@ typedef struct _SCSI_PASS_THROUGH_EX {
 | **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>
-</dt>
-<dt>
+
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through.md">SCSI_PASS_THROUGH</a>
-</dt>
-</dl>
+
  
 
  

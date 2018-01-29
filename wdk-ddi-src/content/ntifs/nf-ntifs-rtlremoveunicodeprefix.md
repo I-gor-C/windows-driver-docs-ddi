@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b2f996b1-0c1a-4ad5-a4c4-5d84ca94c5a1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlRemoveUnicodePrefix
+ms.keywords : rtlref_a6eb361a-f00b-4377-913c-8494c49d4064.xml, ntifs/RtlRemoveUnicodePrefix, RtlRemoveUnicodePrefix routine [Installable File System Drivers], RtlRemoveUnicodePrefix, ifsk.rtlremoveunicodeprefix
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows XP
 req.target-min-winversvr : Windows Server 2003
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlRemoveUnicodePrefix
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -84,20 +88,14 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
+
+<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
+
 <a href="..\ntifs\nf-ntifs-rtlnextunicodeprefix.md">RtlNextUnicodePrefix</a>
-</dt>
-</dl>
+
  
 
  

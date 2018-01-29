@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3d5dd27f-8d0e-46e8-adbd-139db322cf6e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
+ms.keywords : netdispumdddi/MIRACAST_WFD_CONNECTION_STATS, display.miracast_wfd_connection_stats, MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MIRACAST_WFD_CONNECTION_STATS
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MIRACAST_WFD_CONNECTION_STATS
 ---
 
@@ -48,18 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `CurrentBitRate`
 
-            The bit rate, in bits per second, that the operating system recommends that the audio/video encoder uses.
-        
-            `LocalMaxBitRate`
+`CurrentBitRate`
 
-            The maximum bit rate, in bits per second, that the local Wi-Fi Direct hardware can support.
-        
-            `RemoteMaxBitRate`
+The bit rate, in bits per second, that the operating system recommends that the audio/video encoder uses.
 
-            The maximum bit rate, in bits per second, that the Miracast sink hardware can support.
+`LocalMaxBitRate`
+
+The maximum bit rate, in bits per second, that the local Wi-Fi Direct hardware can support.
+
+`RemoteMaxBitRate`
+
+The maximum bit rate, in bits per second, that the Miracast sink hardware can support.
 
 
 ## Requirements

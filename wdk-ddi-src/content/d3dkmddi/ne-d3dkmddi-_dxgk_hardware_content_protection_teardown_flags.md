@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C9D2763D-D129-429C-AA30-85EF4D30F730
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS, DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS
+ms.keywords : DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS, display.dxgk_hardware_content_protection_teardown_flags, d3dkmddi/DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS, d3dkmddi/DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAG_PREEMPTIVE, _DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS, DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS enumeration [Display Devices], DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAG_PREEMPTIVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS
 ---
 
@@ -65,11 +69,8 @@ typedef enum _DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_hardwarecontentprotectionteardown.md">DxgkCbHardwareContentProtectionTeardown</a>
-</dt>
-</dl>
+
  
 
  

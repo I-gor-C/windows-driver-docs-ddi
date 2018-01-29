@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 27D1FAAE-6DEF-4485-AA29-32CC85A01000
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.getdmatransferinfo, GetDmaTransferInfo, GetDmaTransferInfo callback function [Kernel-Mode Driver Architecture], GetDmaTransferInfo, PGET_DMA_TRANSFER_INFO, PGET_DMA_TRANSFER_INFO, wdm/GetDmaTransferInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetDmaTransferInfo
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -85,9 +89,24 @@ A pointer to a caller-allocated <a href="..\wdm\ns-wdm-_dma_transfer_info.md">DM
 ## Return Value
 
 <b>GetDmaTransferInfo</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The routine does not support the specified version of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure.
+</dl>
+</td>
+<td width="60%">
+The routine does not support the specified version of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure.
+       
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -98,14 +117,20 @@ Use <b>GetDmaTransferInfo</b> to calculate the size of the scatter/gather buffer
 <b>GetDmaTransferInfo</b> replaces the <a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a> routine and is more convenient to use with <b>BuildScatterGatherListEx</b>.
 
 The <i>Mdl</i>, <i>Offset</i>, and <i>Length</i> parameters together specify a collection of physical memory regions to use as a buffer for a scatter/gather DMA transfer. Each physical memory region is typically a page or part of a page. <b>GetDmaTransferInfo</b> determines the allocation requirements for this transfer. These requirements include the following:
-
+<ul>
+<li>
 The number of elements in the scatter/gather list. Each element is a <b>SCATTER_GATHER_ELEMENT</b> structure that describes a physically contiguous block of memory.
 
+</li>
+<li>
 The amount of memory to allocate to hold the specified scatter/gather list. (This memory allocation includes the space required for the scatter/gather list that describes the I/O buffer but not for the I/O buffer itself.)
 
+</li>
+<li>
 The number of map registers required to translate the physical addresses in the scatter/gather list to logical addresses.
 
-For information about the DMA transfer information that is provided by version 1 of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure, see <a href="..\wdm\ns-wdm-_dma_transfer_info_v1.md">DMA_TRANSFER_INFO_V1</a>.
+</li>
+</ul>For information about the DMA transfer information that is provided by version 1 of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure, see <a href="..\wdm\ns-wdm-_dma_transfer_info_v1.md">DMA_TRANSFER_INFO_V1</a>.
 
 An MDL describes the physical memory pages that underlie a locked-down, contiguous block of virtual memory. Typically, these physical memory pages are non-contiguous. An MDL chain is an ordered collection of MDLs that describes memory that can be used to buffer I/O data. Typically, the virtual memory regions described by the MDLs in the chain are non-contiguous. For more information about MDLs and MDL chains, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
 
@@ -123,29 +148,20 @@ An MDL describes the physical memory pages that underlie a locked-down, contiguo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_transfer_info.md">DMA_TRANSFER_INFO</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_dma_transfer_info_v1.md">DMA_TRANSFER_INFO_V1</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
+
 <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+
+<a href="..\wdm\ns-wdm-_dma_transfer_info.md">DMA_TRANSFER_INFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
  
 
  

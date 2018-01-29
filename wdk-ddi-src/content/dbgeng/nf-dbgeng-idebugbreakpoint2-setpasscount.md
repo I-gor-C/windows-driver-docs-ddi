@@ -7,8 +7,8 @@ old-location : debugger\setpasscount.htm
 old-project : debugger
 ms.assetid : a95f7a8d-7e0d-4971-9683-f83600030337
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugBreakpoint2, IDebugBreakpoint2::SetPassCount, SetPassCount
+ms.date : 1/19/2018
+ms.keywords : SetPassCount method [Windows Debugging], IDebugBreakpoint interface, ComOther_8398fd11-1821-4adb-b8be-4e207b616169.xml, SetPassCount method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint::SetPassCount, IDebugBreakpoint2::SetPassCount, SetPassCount method [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], SetPassCount method, debugger.setpasscount, dbgeng/IDebugBreakpoint2::SetPassCount, IDebugBreakpoint::SetPassCount, IDebugBreakpoint2, SetPassCount, IDebugBreakpoint interface [Windows Debugging], SetPassCount method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugBreakpoint.SetPassCount,IDebugBreakpoint2.SetPassCount
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -55,11 +59,23 @@ The number of times that the target must hit the breakpoint before it is trigger
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
 
- 
+</td>
+</tr>
+</table> 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -71,7 +87,7 @@ After the target has hit the breakpoint enough times to trigger the breakpoint, 
 
 If the debugger executes the code at the breakpoint location while stepping through the code, this execution does not contribute to the number of times that remain before the breakpoint is triggered.
 
-For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
+For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

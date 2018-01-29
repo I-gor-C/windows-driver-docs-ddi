@@ -7,8 +7,8 @@ old-location : netvista\rilprovisionstatusprovisionstatus_2.htm
 old-project : netvista
 ms.assetid : a0956046-766f-4cb0-9cf7-7cccdf929a2e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPROVISIONSTATUSPROVISIONSTATUS, RILPROVISIONSTATUSPROVISIONSTATUS
+ms.date : 1/18/2018
+ms.keywords : RIL_PROVISIONSTAT_NEEDED, rilapitypes/RILPROVISIONSTATUSPROVISIONSTATUS, RIL_PROVISIONSTAT_BIP_STARTED, rilapitypes/RIL_PROVISIONSTAT_BIP_STARTED, RIL_PROVISIONSTAT_BIP_SUCCESS, RIL_PROVISIONSTAT_SUCCESS, rilapitypes/RIL_PROVISIONSTAT_MAX, rilapitypes/RIL_PROVISIONSTAT_FAILURE_RETRY, rilapitypes/RIL_PROVISIONSTAT_FAILURE_END, rilapitypes/RIL_PROVISIONSTAT_BIP_SUCCESS, rilapitypes/RIL_PROVISIONSTAT_NEEDED, RILPROVISIONSTATUSPROVISIONSTATUS enumeration [Network Drivers Starting with Windows Vista], RIL_PROVISIONSTAT_FAILURE_END, RIL_PROVISIONSTAT_FAILURE_RETRY, RIL_PROVISIONSTAT_MAX, rilapitypes/RIL_PROVISIONSTAT_SUCCESS, netvista.rilprovisionstatusprovisionstatus_2, RILPROVISIONSTATUSPROVISIONSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPROVISIONSTATUSPROVISIONSTATUS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPROVISIONSTATUSPROVISIONSTATUS
 req.product : Windows 10 or later.
 ---
@@ -82,6 +86,11 @@ typedef enum _RILPROVISIONSTATUSPROVISIONSTATUS {
 
 <tr>
 <td>RIL_PROVISIONSTAT_NEEDED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PROVISIONSTAT_STARTED</td>
 <td></td>
 </tr>
 

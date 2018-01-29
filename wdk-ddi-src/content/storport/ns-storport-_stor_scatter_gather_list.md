@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9fbb8dea-67d3-4bb9-afc2-d623bea2ca8d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_SCATTER_GATHER_LIST, STOR_SCATTER_GATHER_LIST, *PSTOR_SCATTER_GATHER_LIST
+ms.keywords : storage.stor_scatter_gather_list, PSTOR_SCATTER_GATHER_LIST, STOR_SCATTER_GATHER_LIST, *PSTOR_SCATTER_GATHER_LIST, _STOR_SCATTER_GATHER_LIST, PSTOR_SCATTER_GATHER_LIST structure pointer [Storage Devices], structs-storport_eac06620-81b1-42e8-9517-3a2ce1b6623a.xml, storport/STOR_SCATTER_GATHER_LIST, STOR_SCATTER_GATHER_LIST structure [Storage Devices], storport/PSTOR_SCATTER_GATHER_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_SCATTER_GATHER_LIST
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SCATTER_GATHER_LIST, *PSTOR_SCATTER_GATHER_LIST
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _STOR_SCATTER_GATHER_LIST {
 
 ## Members
 
-        
-            `List`
 
-            Contains the array of scatter/gather elements.
-        
-            `NumberOfElements`
+`List`
 
-            Contains the number of scatter/gather elements in the list.
-        
-            `Reserved`
+Contains the array of scatter/gather elements.
 
-            Reserved.
+`NumberOfElements`
 
-    ## Remarks
-        Miniport drivers that work with the Storport driver call the Storport support routine, <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>, to retrieve the scatter gather list for an SRB. <b>StorPortGetScatterGatherList</b> returns a structure of type STOR_SCATTER_GATHER_LIST. Each scatter/gather element is of type <a href="..\storport\ns-storport-_stor_scatter_gather_element.md">STOR_SCATTER_GATHER_ELEMENT</a>.
+Contains the number of scatter/gather elements in the list.
+
+`Reserved`
+
+Reserved.
+
+## Remarks
+Miniport drivers that work with the Storport driver call the Storport support routine, <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>, to retrieve the scatter gather list for an SRB. <b>StorPortGetScatterGatherList</b> returns a structure of type STOR_SCATTER_GATHER_LIST. Each scatter/gather element is of type <a href="..\storport\ns-storport-_stor_scatter_gather_element.md">STOR_SCATTER_GATHER_ELEMENT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,16 +77,12 @@ typedef struct _STOR_SCATTER_GATHER_LIST {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\ns-storport-_stor_scatter_gather_element.md">STOR_SCATTER_GATHER_ELEMENT</a>
-</dt>
-<dt>
+
 <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>
-</dt>
-</dl>
+
  
 
  

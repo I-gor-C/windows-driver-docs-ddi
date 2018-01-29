@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0de9686f-69e6-4aac-8f58-9e61bcfe3827
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_MONITORCREATE,
+ms.keywords : IDARG_IN_MONITORCREATE, display.idarg_in_monitorcreate, IDARG_IN_MONITORCREATE structure [Display Devices], iddcx/IDARG_IN_MONITORCREATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_MONITORCREATE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,14 +51,14 @@ typedef struct IDARG_IN_MONITORCREATE {
 
 ## Members
 
-        
-            `ObjectAttributes`
 
-            Indicates object attributes for the monitor.
-        
-            `pMonitorInfo`
+`ObjectAttributes`
 
-            [in] Pointer to the information about this monitor.
+Indicates object attributes for the monitor.
+
+`pMonitorInfo`
+
+[in] Pointer to the information about this monitor.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 524150d8-d4a7-4b61-89c4-0074c938559b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT, *PSCSIWMI_REQUEST_CONTEXT
+ms.keywords : structs-scsibus_3323f388-8dc7-4723-bc2c-7822ed622ccd.xml, SCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT structure [Storage Devices], PSCSIWMI_REQUEST_CONTEXT, scsiwmi/SCSIWMI_REQUEST_CONTEXT, *PSCSIWMI_REQUEST_CONTEXT, scsiwmi/PSCSIWMI_REQUEST_CONTEXT, PSCSIWMI_REQUEST_CONTEXT structure pointer [Storage Devices], storage.scsiwmi_request_context
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCSIWMI_REQUEST_CONTEXT
-req.alt-loc : scsiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SCSIWMI_REQUEST_CONTEXT, *PSCSIWMI_REQUEST_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
 # SCSIWMI_REQUEST_CONTEXT structure
-A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB.
+A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB. 
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -52,33 +57,33 @@ typedef struct {
 
 ## Members
 
-        
-            `Buffer`
 
-            
-        
-            `BufferSize`
+`Buffer`
 
-            Reserved for system use and not available for use by miniport drivers.
-        
-            `MinorFunction`
 
-            Reserved for system use and not available for use by miniport drivers.
-        
-            `ReturnSize`
 
-            Indicates the number of bytes of data transferred for the SRB. This member is not valid until after the miniport driver has called <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> to update the request context.
-        
-            `ReturnStatus`
+`BufferSize`
 
-            Indicates the return status of the SRB. This member is not valid until after the miniport driver has called <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> to update the request context.
-        
-            `UserContext`
+Reserved for system use and not available for use by miniport drivers.
 
-            Points to a miniport driver buffer that contains any data the miniport driver requires to process the SRB. This can be a pointer to  the miniport driver's HW_DEVICE_EXTENSION structure or some other buffer.
+`MinorFunction`
 
-    ## Remarks
-        When the miniport driver receives an SRB in which the <b>Function</b> member is set to SRB_FUNCTION_WMI, it calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with request parameters, including a pointer to a request context. <b>ScsiPortWmiDispatchFunction</b> passes the request context to the miniport driver's appropriate <b>HwScsiWmi</b><b><i>Xxx</i></b> routine.
+Reserved for system use and not available for use by miniport drivers.
+
+`ReturnSize`
+
+Indicates the number of bytes of data transferred for the SRB. This member is not valid until after the miniport driver has called <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> to update the request context.
+
+`ReturnStatus`
+
+Indicates the return status of the SRB. This member is not valid until after the miniport driver has called <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> to update the request context.
+
+`UserContext`
+
+Points to a miniport driver buffer that contains any data the miniport driver requires to process the SRB. This can be a pointer to  the miniport driver's HW_DEVICE_EXTENSION structure or some other buffer.
+
+## Remarks
+When the miniport driver receives an SRB in which the <b>Function</b> member is set to SRB_FUNCTION_WMI, it calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with request parameters, including a pointer to a request context. <b>ScsiPortWmiDispatchFunction</b> passes the request context to the miniport driver's appropriate <b>HwScsiWmi</b><b><i>Xxx</i></b> routine.
 
 When the miniport driver is done processing the SRB and prior to completing the SRB, the miniport driver should call <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> to update the <b>ReturnStatus</b> and <b>ReturnSize</b> members of the request context. The miniport driver updates the SRB's data transfer length and status to these values by calling <a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnsize.md">ScsiPortWmiGetReturnSize</a> and <a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnstatus.md">ScsiPortWmiGetReturnStatus</a>. respectively.
 
@@ -92,22 +97,16 @@ A request context must remain valid throughout the processing of an SRB. If the 
 | **Minimum UMDF version** |  |
 | **Header** | scsiwmi.h (include Scsiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
-</dt>
-<dt>
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnsize.md">ScsiPortWmiGetReturnSize</a>
-</dt>
-<dt>
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnstatus.md">ScsiPortWmiGetReturnStatus</a>
-</dt>
-<dt>
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a>
-</dt>
-</dl>
+
+<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnsize.md">ScsiPortWmiGetReturnSize</a>
+
+<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnstatus.md">ScsiPortWmiGetReturnStatus</a>
+
+<a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
+
  
 
  

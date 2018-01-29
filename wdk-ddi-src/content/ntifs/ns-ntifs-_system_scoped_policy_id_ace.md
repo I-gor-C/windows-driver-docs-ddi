@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2867CA25-B140-4EBA-A8F9-57C12C3700CF
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SYSTEM_SCOPED_POLICY_ID_ACE, SYSTEM_SCOPED_POLICY_ID_ACE, *PSYSTEM_SCOPED_POLICY_ID_ACE
+ms.keywords : ifsk.system_scoped_policy_id_ace, *PSYSTEM_SCOPED_POLICY_ID_ACE, PSYSTEM_SCOPED_POLICY_ID_ACE structure pointer [Installable File System Drivers], ntifs/SYSTEM_SCOPED_POLICY_ID_ACE, PSYSTEM_SCOPED_POLICY_ID_ACE, SYSTEM_SCOPED_POLICY_ID_ACE, ntifs/PSYSTEM_SCOPED_POLICY_ID_ACE, _SYSTEM_SCOPED_POLICY_ID_ACE, SYSTEM_SCOPED_POLICY_ID_ACE structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYSTEM_SCOPED_POLICY_ID_ACE
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SYSTEM_SCOPED_POLICY_ID_ACE, *PSYSTEM_SCOPED_POLICY_ID_ACE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSYSTEM_SCOPED_POLICY_ID_ACE, SYSTEM_SCOPED_POLICY_ID_ACE"
 ---
 
 # _SYSTEM_SCOPED_POLICY_ID_ACE structure
@@ -48,18 +52,18 @@ typedef struct _SYSTEM_SCOPED_POLICY_ID_ACE {
 
 ## Members
 
-        
-            `Header`
 
-            Specifies an ACE_HEADER structure.
-        
-            `Mask`
+`Header`
 
-            Specifies an ACCESS_MASK structure that specifies access rights for the scoped policy identifier.
-        
-            `SidStart`
+Specifies an ACE_HEADER structure.
 
-            Specifies a SID. The SID represents a scoped policy configured to control access to an object or group of objects.
+`Mask`
+
+Specifies an ACCESS_MASK structure that specifies access rights for the scoped policy identifier.
+
+`SidStart`
+
+Specifies a SID. The SID represents a scoped policy configured to control access to an object or group of objects.
 
 
 ## Requirements
@@ -70,25 +74,18 @@ typedef struct _SYSTEM_SCOPED_POLICY_ID_ACE {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_ace_header.md">ACE_HEADER</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

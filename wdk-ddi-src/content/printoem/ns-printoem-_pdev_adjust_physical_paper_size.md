@@ -7,8 +7,8 @@ old-location : print\pdev_adjust_paper_physical_size.htm
 old-project : print
 ms.assetid : 27f6bc52-6973-4370-87cb-07d6f9399e20
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _PDEV_ADJUST_PHYSICAL_PAPER_SIZE, PDEV_ADJUST_PHYSICAL_PAPER_SIZE, *PPDEV_ADJUST_PHYSICAL_PAPER_SIZE
+ms.date : 1/18/2018
+ms.keywords : PDEV_ADJUST_PHYSICAL_PAPER_SIZE structure [Print Devices], printoem/PDEV_ADJUST_PHYSICAL_PAPER_SIZE, *PPDEV_ADJUST_PHYSICAL_PAPER_SIZE, print.pdev_adjust_paper_physical_size, printoem/PPDEV_ADJUST_PHYSICAL_PAPER_SIZE, PDEV_ADJUST_PHYSICAL_PAPER_SIZE, PDEV_ADJUST_PAPER_PHYSICAL_SIZE, PPDEV_ADJUST_PHYSICAL_PAPER_SIZE, PDEV_ADJUST_PAPER_PHYSICAL_SIZE structure [Print Devices], print_unidrv-pscript_rendering_6d8529f3-bcb3-48f8-a079-f855cd05d334.xml, PPDEV_ADJUST_PHYSICAL_PAPER_SIZE structure pointer [Print Devices], _PDEV_ADJUST_PHYSICAL_PAPER_SIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PDEV_ADJUST_PHYSICAL_PAPER_SIZE
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PDEV_ADJUST_PHYSICAL_PAPER_SIZE, *PPDEV_ADJUST_PHYSICAL_PAPER_SIZE
 req.product : Windows 10 or later.
 ---
@@ -47,13 +51,13 @@ typedef struct _PDEV_ADJUST_PHYSICAL_PAPER_SIZE {
 
 ## Members
 
-        
-            `szlPhysicalPaperSize`
 
-            A SIZEL structure that specifies the physical paper size, in graphics device units (pixels).
+`szlPhysicalPaperSize`
 
-    ## Remarks
-        The PDEV_ADJUST_PAPER_PHYSICAL_SIZE structure is available in Windows Vista and later operating systems. </p>
+A SIZEL structure that specifies the physical paper size, in graphics device units (pixels).
+
+## Remarks
+The PDEV_ADJUST_PAPER_PHYSICAL_SIZE structure is available in Windows Vista and later operating systems.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 057fb78f-6f1c-4b16-b9fa-6fcff299a90d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : WdmlibIoGetAffinityInterrupt
+ms.keywords : storage.idehwbuildio, IdeHwBuildIo routine [Storage Devices], IdeHwBuildIo, IDE_HW_BUILDIO, IDE_HW_BUILDIO, irb/IdeHwBuildIo, atartns_9111d60c-e0e1-4c5c-aacf-2af56fcf7338.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IdeHwBuildIo
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LUID
 ---
 
 
 # IDE_HW_BUILDIO callback function
 The <b><i>IdeHwBuildIo</i></b> miniport driver routine is called one time for every incoming I/O request.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -93,14 +98,10 @@ The <b><i>IdeHwBuildIo</i></b> routine resembles Storport's <a href="..\storport
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
-</dt>
-<dt>
+
 <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

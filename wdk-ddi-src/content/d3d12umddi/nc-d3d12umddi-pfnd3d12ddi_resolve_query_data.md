@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 981053FF-9928-442F-B3B3-3B89AC61EEE4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_resolve_query_data, pfnResolveQueryData callback function [Display Devices], pfnResolveQueryData, PFND3D12DDI_RESOLVE_QUERY_DATA, PFND3D12DDI_RESOLVE_QUERY_DATA, d3d12umddi/pfnResolveQueryData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnResolveQueryData
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
@@ -92,7 +96,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-Resolve functionality is used by applications to transform a query result previously stored in a query heap into the API defined format.  The resolved data is stored in a buffer.  The results can then be consumed by a shader, predication, or mapped and read on the CPU.</p>
+Resolve functionality is used by applications to transform a query result previously stored in a query heap into the API defined format.  The resolved data is stored in a buffer.  The results can then be consumed by a shader, predication, or mapped and read on the CPU.
 
 ## Requirements
 | &nbsp; | &nbsp; |

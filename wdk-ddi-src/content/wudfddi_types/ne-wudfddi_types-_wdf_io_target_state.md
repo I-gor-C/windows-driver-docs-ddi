@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0189a83d-da46-49f1-99b8-8fb920009804
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+ms.keywords : WdfIoTargetClosedForQueryRemove, wudfddi_types/WDF_IO_TARGET_STATE, WdfIoTargetStopped, kmdf.wdf_io_target_state, wdfiotarget/WdfIoTargetStarted, PWDF_IO_TARGET_STATE, WdfIoTargetPurged, wdfiotarget/WdfIoTargetPurged, wdfiotarget/WdfIoTargetClosedForQueryRemove, wdfiotarget/WDF_IO_TARGET_STATE, wudfddi_types/WdfIoTargetStarted, WdfIoTargetStarted, wudfddi_types/WdfIoTargetPurged, WDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE enumeration, DFIOTargetRef_0dbd75b8-eb70-4996-8a13-80fb90f86dca.xml, WdfIoTargetStateUndefined, wdfiotarget/WdfIoTargetClosed, wudfddi_types/PWDF_IO_TARGET_STATE, wudfddi_types/WdfIoTargetClosedForQueryRemove, wudfddi_types/WdfIoTargetStateUndefined, wdfiotarget/WdfIoTargetStateUndefined, wdfiotarget/WdfIoTargetStopped, PWDF_IO_TARGET_STATE enumeration pointer, _WDF_IO_TARGET_STATE, WdfIoTargetDeleted, wudfddi_types/WdfIoTargetStopped, wdfiotarget/WdfIoTargetDeleted, *PWDF_IO_TARGET_STATE, wudfddi_types/WdfIoTargetClosed, WdfIoTargetClosed, wdf.wdf_io_target_state, wudfddi_types/WdfIoTargetDeleted, wdfiotarget/PWDF_IO_TARGET_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 1.11
-req.alt-api : WDF_IO_TARGET_STATE
-req.alt-loc : wdfiotarget.h,wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -78,6 +82,11 @@ typedef enum _WDF_IO_TARGET_STATE {
 </tr>
 
 <tr>
+<td>WdfIoTargetStateMaximum</td>
+<td></td>
+</tr>
+
+<tr>
 <td>WdfIoTargetStateUndefined</td>
 <td>Reserved for internal use.</td>
 </tr>
@@ -104,11 +113,8 @@ For more information about states for I/O targets, see <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
-</dt>
-</dl>
+
  
 
  

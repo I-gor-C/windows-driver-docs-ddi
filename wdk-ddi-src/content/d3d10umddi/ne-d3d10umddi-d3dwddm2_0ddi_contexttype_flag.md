@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F767C051-637A-4912-80B0-36C4DF7E46DD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_CONTEXTTYPE_FLAG, D3DWDDM2_0DDI_CONTEXTTYPE_FLAG
+ms.keywords : D3DWDDM2_0DDI_CONTEXTTYPE_FLAG, D3DWDDM2_0DDI_CONTEXTTYPE_FLAG enumeration [Display Devices], d3d10umddi/D3DWDDM2_0DDI_CONTEXTTYPE_FLAG, d3d10umddi/D3DWDDM2_0DDI_CONTEXTTYPE_COMPUTE, d3d10umddi/D3DWDDM2_0DDI_CONTEXTTYPE_COPY, d3d10umddi/D3DWDDM2_0DDI_CONTEXTTYPE_IMAGE, D3DWDDM2_0DDI_CONTEXTTYPE_ALL, d3d10umddi/D3DWDDM2_0DDI_CONTEXTTYPE_3D, D3DWDDM2_0DDI_CONTEXTTYPE_COPY, D3DWDDM2_0DDI_CONTEXTTYPE_3D, display.d3dwddm2_0ddi_contexttype_flag, D3DWDDM2_0DDI_CONTEXTTYPE_VIDEO, D3DWDDM2_0DDI_CONTEXTTYPE_IMAGE, D3DWDDM2_0DDI_CONTEXTTYPE_COMPUTE, d3d10umddi/D3DWDDM2_0DDI_CONTEXTTYPE_VIDEO, d3d10umddi/D3DWDDM2_0DDI_CONTEXTTYPE_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DWDDM2_0DDI_CONTEXTTYPE_FLAG
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DWDDM2_0DDI_CONTEXTTYPE_FLAG
 ---
 

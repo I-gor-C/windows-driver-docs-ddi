@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 730872ee-3dfd-48c7-a86e-1a420e59471f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.pparallel_free_routine, (*PPARALLEL_FREE_ROUTINE) callback function [Parallel Ports], (*PPARALLEL_FREE_ROUTINE), parallel/(*PPARALLEL_FREE_ROUTINE), cisspd_5f5bcbed-0df6-4b2a-ab88-a26f48976ad7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PPARALLEL_FREE_ROUTINE)
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -53,7 +57,7 @@ void PparallelFreeRoutine(
 
 `FreeContext`
 
-Pointer to the device extension of a parallel port's functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>).
+Pointer to the device extension of a parallel port's functional device object (<a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FDO</a>).
 
 
 ## Return Value
@@ -82,20 +86,14 @@ For more information, see <a href="https://msdn.microsoft.com/ea3a1998-9e31-4047
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
-</dt>
-<dt>
-<a href="..\parallel\ns-parallel-_parallel_port_information.md">PARALLEL_PORT_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
-</dt>
-<dt>
 <a href="..\parallel\nc-parallel-pparallel_try_allocate_routine.md">PPARALLEL_TRY_ALLOCATE_ROUTINE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
+
+<a href="..\parallel\ns-parallel-_parallel_port_information.md">PARALLEL_PORT_INFORMATION</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+
  
 
  

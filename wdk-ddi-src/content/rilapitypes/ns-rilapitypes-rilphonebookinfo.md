@@ -7,8 +7,8 @@ old-location : netvista\rilphonebookinfo_2.htm
 old-project : netvista
 ms.assetid : bd302343-c9e3-4d1d-b991-ac19fbdb2da3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKINFO, RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
+ms.date : 1/18/2018
+ms.keywords : "*LPRILPHONEBOOKINFO, netvista.rilphonebookinfo_2, RILPHONEBOOKINFO structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPHONEBOOKINFO, RILPHONEBOOKINFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKINFO
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
 req.product : Windows 10 or later.
 ---
@@ -64,78 +68,78 @@ typedef struct _RILPHONEBOOKINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwMaxAdditionalNumberLength`
+`cbSize`
 
-            
-        
-            `dwMaxAdditionalNumbers`
 
-            
-        
-            `dwMaxAdditionalNumberTextLength`
 
-            
-        
-            `dwMaxAddressLength`
+`dwMaxAdditionalNumberLength`
 
-            
-        
-            `dwMaxEmailAddressLength`
 
-            
-        
-            `dwMaxEmails`
 
-            
-        
-            `dwMaxGroups`
+`dwMaxAdditionalNumbers`
 
-            
-        
-            `dwMaxGroupStringLength`
 
-            
-        
-            `dwMaxSecondNameStringLength`
 
-            
-        
-            `dwMaxTextLength`
+`dwMaxAdditionalNumberTextLength`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwTotal`
 
-            
-        
-            `dwTotalAdditionalNumberStrings`
+`dwMaxAddressLength`
 
-            
-        
-            `dwTotalGroupStrings`
 
-            
-        
-            `dwUsed`
 
-            
-        
-            `dwUsedAdditionalNumberStrings`
+`dwMaxEmailAddressLength`
 
-            
-        
-            `dwUsedGroupStrings`
 
-            
+
+`dwMaxEmails`
+
+
+
+`dwMaxGroups`
+
+
+
+`dwMaxGroupStringLength`
+
+
+
+`dwMaxSecondNameStringLength`
+
+
+
+`dwMaxTextLength`
+
+
+
+`dwParams`
+
+
+
+`dwTotal`
+
+
+
+`dwTotalAdditionalNumberStrings`
+
+
+
+`dwTotalGroupStrings`
+
+
+
+`dwUsed`
+
+
+
+`dwUsedAdditionalNumberStrings`
+
+
+
+`dwUsedGroupStrings`
+
+
 
 
 ## Requirements

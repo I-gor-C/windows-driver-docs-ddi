@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c4f27011-f198-474e-8d2c-8bf35c3c8c66
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoGetDiskDeviceObject
+ms.keywords : IoGetDiskDeviceObject, ntifs/IoGetDiskDeviceObject, ifsk.iogetdiskdeviceobject, IoGetDiskDeviceObject routine [Installable File System Drivers], ioref_b3532bdd-87b6-4e6b-91a0-093b8ed5aa6c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Update Rollup for Windo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDiskDeviceObject
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -55,20 +59,45 @@ A pointer to the file system device object.
 
 `DiskDeviceObject`
 
-
+TBD
 
 
 ## Return Value
 
 <b>IoGetDiskDeviceObject</b> returns one of the following status values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters passed to this function was invalid. 
+</dl>
+</td>
+<td width="60%">
+One of the parameters passed to this function was invalid. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_VOLUME_DISMOUNTED</b></dt>
-</dl><dl>
+</dl>
+</td>
+<td width="60%"></td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>
+</td>
+<td width="60%"></td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -92,23 +121,16 @@ File system filter drivers typically call <b>IoGetDiskDeviceObject</b> for a fil
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md">IoEnumerateDeviceObjectList</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iogetattacheddevice.md">IoGetAttachedDevice</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
-</dt>
-<dt>
+<a href="..\wdm\nf-wdm-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
+
 <a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-iogetattacheddevice.md">IoGetAttachedDevice</a>
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md">IoEnumerateDeviceObjectList</a>
+
  
 
  

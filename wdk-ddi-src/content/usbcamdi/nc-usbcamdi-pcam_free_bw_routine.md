@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 360fd299-bb8a-4fbb-899d-0e5fbe228d80
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camfreebandwidth, CamFreeBandwidth callback function [Streaming Media Devices], CamFreeBandwidth, PCAM_FREE_BW_ROUTINE, PCAM_FREE_BW_ROUTINE, usbcamdi/CamFreeBandwidth, usbcmdpr_bf8779db-a06c-49b8-aa2f-e558a53bfa93.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CamFreeBandwidth
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -93,14 +97,10 @@ This function is required.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine_ex.md">CamFreeBandwidthEx</a>
-</dt>
-<dt>
 <a href="..\usbcamdi\nf-usbcamdi-usbcamd_selectalternateinterface.md">USBCAMD_SelectAlternateInterface</a>
-</dt>
-</dl>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine_ex.md">CamFreeBandwidthEx</a>
+
  
 
  

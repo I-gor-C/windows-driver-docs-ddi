@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f25be064-6ad4-42e8-87a5-188978d093fb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRT, IMiniportWaveRT::Init, Init
+ms.keywords : audio.iminiportwavert_init, IMiniportWaveRT::Init, Init method [Audio Devices], IMiniportWaveRT interface, audmp-routines_3304baaf-f3bf-43f1-908b-5cf47b084ee1.xml, IMiniportWaveRT, portcls/IMiniportWaveRT::Init, Init method [Audio Devices], IMiniportWaveRT interface [Audio Devices], Init method, Init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRT.Init
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -85,14 +89,10 @@ For more information about the <i>ResourceList</i> parameter, see the <a href="h
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3746D618-C92C-43AB-A45A-2188D572105D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetIoTypeEx
+ms.keywords : WdfDeviceInitSetIoTypeEx, wdf.wdfdeviceinitassigniotype, wdfdevice/WdfDeviceInitSetIoTypeEx, PFN_WDFDEVICEINITSETIOTYPEEX, WdfDeviceInitSetIoTypeEx method, wdf.wdfdeviceinitsetiotypeex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceInitSetIoTypeEx
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,8 +91,6 @@ For more information about buffer-access methods, see <a href="https://docs.micr
 
 This method is the UMDF 2.0 equivalent of <a href="https://msdn.microsoft.com/7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0"> IWDFDeviceInitialize2::SetIoTypePreference</a>.
 
-The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a> structure, sets the driver's buffer-access preferences to direct I/O, specifies that transfers smaller than 32 KB should use buffered I/O, and calls <b>WdfDeviceInitSetIoTypeEx</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -103,23 +105,16 @@ The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicestackiotype.md">WdfDeviceGetDeviceStackIoType</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0"> IWDFDeviceInitialize2::SetIoTypePreference</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdf_io_type_config_init.md">WDF_IO_TYPE_CONFIG_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotype.md">WdfDeviceInitSetIoType</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicestackiotype.md">WdfDeviceGetDeviceStackIoType</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdf_io_type_config_init.md">WDF_IO_TYPE_CONFIG_INIT</a>
+
+<a href="https://msdn.microsoft.com/7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0"> IWDFDeviceInitialize2::SetIoTypePreference</a>
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
+
  
 
  

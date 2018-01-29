@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0a9685f8-f201-4d1b-aef6-c4ac78100a80
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_KERNELOVERLAYINFO, D3DDDI_KERNELOVERLAYINFO
+ms.keywords : _D3DDDI_KERNELOVERLAYINFO, d3dukmdt/D3DDDI_KERNELOVERLAYINFO, D3D_other_Structs_ee8ebc87-60be-4b70-8428-4db20bcbdaa0.xml, display.d3dddi_kerneloverlayinfo, D3DDDI_KERNELOVERLAYINFO structure [Display Devices], D3DDDI_KERNELOVERLAYINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_KERNELOVERLAYINFO
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_KERNELOVERLAYINFO
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DDDI_KERNELOVERLAYINFO {
 
 ## Members
 
-        
-            `DstRect`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddirect.md">D3DDDIRECT</a> structure that contains the overlay destination rectangle in device coordinates.
-        
-            `hAllocation`
+`DstRect`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation to be displayed.
-        
-            `pPrivateDriverData`
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddirect.md">D3DDDIRECT</a> structure that contains the overlay destination rectangle in device coordinates.
 
-            [in] A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
-        
-            `PrivateDriverDataSize`
+`hAllocation`
 
-            [in] The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
-        
-            `SrcRect`
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation to be displayed.
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddirect.md">D3DDDIRECT</a> structure that contains the overlay source rectangle in device coordinates.
+`pPrivateDriverData`
+
+[in] A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
+
+`SrcRect`
+
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddirect.md">D3DDDIRECT</a> structure that contains the overlay source rectangle in device coordinates.
 
 
 ## Requirements
@@ -80,19 +84,14 @@ typedef struct _D3DDDI_KERNELOVERLAYINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dukmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddirect.md">D3DDDIRECT</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlaycb.md">pfnCreateOverlayCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updateoverlaycb.md">pfnUpdateOverlayCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddirect.md">D3DDDIRECT</a>
+
  
 
  

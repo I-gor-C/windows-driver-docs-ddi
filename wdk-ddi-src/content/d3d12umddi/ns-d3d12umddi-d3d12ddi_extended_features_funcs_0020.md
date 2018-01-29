@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 36AAD6F2-3220-4F9A-AA10-BA8D87948D09
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_EXTENDED_FEATURES_FUNCS_0020, D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
+ms.keywords : D3D12DDI_EXTENDED_FEATURES_FUNCS_0020 structure [Display Devices], d3d12umddi/D3D12DDI_EXTENDED_FEATURES_FUNCS_0020, D3D12DDI_EXTENDED_FEATURES_FUNCS_0020, display.d3d12ddi_extended_features_funcs_0020
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3D12DDI_EXTENDED_FEATURES_FUNCS_0020 {
 
 ## Members
 
-        
-            `pfnEnableExtendedFeature`
 
-            A pointer for a callback function to enable an extended feature.
-        
-            `pfnGetSupportedExtendedFeatures`
+`pfnEnableExtendedFeature`
 
-            A pointer for a callback function to get supported extended features.
-        
-            `pfnGetSupportedExtendedFeatureVersions`
+A pointer for a callback function to enable an extended feature.
 
-            A pointer for a callback function to get the supported versions of extended features.
+`pfnGetSupportedExtendedFeatures`
+
+A pointer for a callback function to get supported extended features.
+
+`pfnGetSupportedExtendedFeatureVersions`
+
+A pointer for a callback function to get the supported versions of extended features.
 
 
 ## Requirements

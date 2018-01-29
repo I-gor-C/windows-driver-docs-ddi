@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0b88ec6d-a7e0-4bb8-8a12-c7f170ac2334
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE, *PSTORAGE_PREDICT_FAILURE
+ms.keywords : PSTORAGE_PREDICT_FAILURE structure pointer [Storage Devices], ntddstor/STORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE structure [Storage Devices], ntddstor/PSTORAGE_PREDICT_FAILURE, storage.storage_predict_failure, PSTORAGE_PREDICT_FAILURE, structs-general_b1bed4c9-33a9-4adf-a456-e420d1e2f317.xml, *PSTORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE, _STORAGE_PREDICT_FAILURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_PREDICT_FAILURE
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STORAGE_PREDICT_FAILURE, *PSTORAGE_PREDICT_FAILURE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE"
 ---
 
 # _STORAGE_PREDICT_FAILURE structure
@@ -47,17 +51,17 @@ typedef struct _STORAGE_PREDICT_FAILURE {
 
 ## Members
 
-        
-            `PredictFailure`
 
-            Indicates when nonzero that the device is currently predicting an imminent failure.
-        
-            `VendorSpecific`
+`PredictFailure`
 
-            Contains an array that holds 512 bytes of vendor-specific information if the device supports failure prediction.
+Indicates when nonzero that the device is currently predicting an imminent failure.
 
-    ## Remarks
-        Upon receiving an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_predict_failure.md">IOCTL_STORAGE_PREDICT_FAILURE</a> device control request, the disk class driver attempts to verify if an IDE drive supports SMART. If the drive is a SCSI drive, the class driver attempts to verify if the SCSI disk supports the equivalent IDE SMART technology: Information Exception Control Page, X3T10/94-190 Rev 4. 
+`VendorSpecific`
+
+Contains an array that holds 512 bytes of vendor-specific information if the device supports failure prediction.
+
+## Remarks
+Upon receiving an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_predict_failure.md">IOCTL_STORAGE_PREDICT_FAILURE</a> device control request, the disk class driver attempts to verify if an IDE drive supports SMART. If the drive is a SCSI drive, the class driver attempts to verify if the SCSI disk supports the equivalent IDE SMART technology: Information Exception Control Page, X3T10/94-190 Rev 4. 
 
 If the device does not support failure prediction, the disk class driver fails the IRP with a status of STATUS_INVALID_DEVICE_REQUEST.
 
@@ -71,13 +75,10 @@ If the device supports failure prediction, the disk class driver queries the dev
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_predict_failure.md">IOCTL_STORAGE_PREDICT_FAILURE</a>
-</dt>
-</dl>
+
  
 
  

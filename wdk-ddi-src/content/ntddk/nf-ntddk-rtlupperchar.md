@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a87e9f52-a136-492e-bfb3-dfbbea8b79e0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUpperChar
+ms.keywords : RtlUpperChar, k109_c1a13e9a-f863-4bcd-ae89-daee0c3d3a4b.xml, ntddk/RtlUpperChar, RtlUpperChar routine [Kernel-Mode Driver Architecture], kernel.rtlupperchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUpperChar
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,14 +79,10 @@ Specifies the character to convert.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlupcaseunicodechar.md">RtlUpcaseUnicodeChar</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlupperstring.md">RtlUpperString</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlupcaseunicodechar.md">RtlUpcaseUnicodeChar</a>
+
  
 
  

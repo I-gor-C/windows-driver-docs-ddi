@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : E1F0BB4A-17FB-4C35-9373-CD648553A738
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2SystemDmaTransmitPurgeFifoComplete
+ms.keywords : 2/SerCx2SystemDmaTransmitPurgeFifoComplete, serports.sercx2systemdmatransmitpurgefifocomplete, SerCx2SystemDmaTransmitPurgeFifoComplete method [Serial Ports], SerCx2SystemDmaTransmitPurgeFifoComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SerCx2SystemDmaTransmitPurgeFifoComplete
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX_STATUS, *PSERCX_STATUS
 req.product : Windows 10 or later.
 ---
@@ -89,23 +93,16 @@ For more information, see <a href="https://msdn.microsoft.com/8569E76F-CAFF-4A2C
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_purge_fifo.md">EvtSerCx2SystemDmaTransmitPurgeFifo</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
-</dt>
-<dt>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a>
-</dt>
-<dt>
+
 <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
-</dt>
-<dt>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a>
+
 <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
-</dt>
-</dl>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_purge_fifo.md">EvtSerCx2SystemDmaTransmitPurgeFifo</a>
+
  
 
  

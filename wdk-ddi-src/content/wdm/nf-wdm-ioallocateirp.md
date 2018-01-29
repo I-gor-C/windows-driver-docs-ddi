@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 40abbdf8-3712-4724-8aef-16c247780c86
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoAllocateIrp
+ms.keywords : IoAllocateIrp, kernel.ioallocateirp, IoAllocateIrp routine [Kernel-Mode Driver Architecture], wdm/IoAllocateIrp, k104_326eb80d-9bc3-4a91-9f33-710f7975808a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoAllocateIrp
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : ForwardedAtBadIrqlAllocate, IoAllocateComplete, IoAllocateForward, IoAllocateFree, IoAllocateIrpSignalEventInCompletion, IoAllocateIrpSignalEventInCompletion2, IoAllocateIrpSignalEventInCompletion3, IoAllocateIrpSignalEventInCompletionTimeout, IoReuseIrp, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, HwStorPortProhibitedDDIs, IoFreeIrp, SpNoWait, StorPortStartIo
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,35 +91,24 @@ An intermediate or highest-level driver also can call <a href="..\wdm\nf-wdm-iob
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
+
+<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>
+
+<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
+
+<a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>
+
+<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
+
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+
  
 
  

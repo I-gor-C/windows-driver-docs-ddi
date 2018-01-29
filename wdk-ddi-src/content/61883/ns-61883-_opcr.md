@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : fbd6fa74-eb39-4240-947e-1edec1365a83
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _OPCR, *POPCR, OPCR
+ms.keywords : _OPCR, *POPCR, OPCR structure [Buses], OPCR, 61883/POPCR, POPCR structure pointer [Buses], 61883_structures_271facde-3b80-421f-a3d2-1f0e9b8e1782.xml, POPCR, 61883/OPCR, IEEE.opcr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OPCR
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*POPCR, OPCR"
 ---
 
@@ -53,38 +57,38 @@ typedef struct _OPCR {
 
 ## Members
 
-        
-            `BCCCounter`
 
-            Indicates, when one, that there is a broadcast-out connection to the output plug. When zero it indicates that there is no connection.
-        
-            `Channel`
+`BCCCounter`
 
-            Indicates the channel number that the output plug shall use to transmit the isochronous data flow, for a suspended output plug. For an active output plug it indicates the actual channel number that the output plug uses to transmit the isochronous data flow. For an unconnected output plug it has no meaning.
-        
-            `DataRate`
+Indicates, when one, that there is a broadcast-out connection to the output plug. When zero it indicates that there is no connection.
 
-            Indicates the bit rate that the output plug uses to transmit an isochronous packet.
-        
-            `OnLine`
+`Channel`
 
-            Indicates, when one, that the corresponding output plug is on-line. When zero it indicates that the output plug is off-line.
-        
-            `OverheadID`
+Indicates the channel number that the output plug shall use to transmit the isochronous data flow, for a suspended output plug. For an active output plug it indicates the actual channel number that the output plug uses to transmit the isochronous data flow. For an unconnected output plug it has no meaning.
 
-            Specifies, for an unconnected output plug, the upper bounds for the bandwidth that the output plug needs for the transmission of an isochronous packet.
-        
-            `Payload`
+`DataRate`
 
-            Specifies the connection speed.
-        
-            `PPCCounter`
+Indicates the bit rate that the output plug uses to transmit an isochronous packet.
 
-            Indicates the number of point-to-point connections to the output plug.
-        
-            `Reserved`
+`OnLine`
 
-            Reserved.
+Indicates, when one, that the corresponding output plug is on-line. When zero it indicates that the output plug is off-line.
+
+`OverheadID`
+
+Specifies, for an unconnected output plug, the upper bounds for the bandwidth that the output plug needs for the transmission of an isochronous packet.
+
+`Payload`
+
+Specifies the connection speed.
+
+`PPCCounter`
+
+Indicates the number of point-to-point connections to the output plug.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements
@@ -95,13 +99,10 @@ typedef struct _OPCR {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\riluiccappinfoparammask_2.htm
 old-project : netvista
 ms.assetid : 17ca9b1c-aaf9-434e-be60-5698aa159b48
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCAPPINFOPARAMMASK, RILUICCAPPINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_PARAM_UICCAPPINFO_ALL, RILUICCAPPINFOPARAMMASK, rilapitypes/RIL_PARAM_UICCAPPINFO_PINREF, RIL_PARAM_UICCAPPINFO_ALL, rilapitypes/RIL_PARAM_UICCAPPINFO_APPTYPE, rilapitypes/RIL_PARAM_UICCAPPINFO_APPNAMELENGTH, rilapitypes/RILUICCAPPINFOPARAMMASK, rilapitypes/RIL_PARAM_UICCAPPINFO_APPIDLENGTH, rilapitypes/RIL_PARAM_UICCAPPINFO_APPID, RIL_PARAM_UICCAPPINFO_APPNAMELENGTH, rilapitypes/RIL_PARAM_UICCAPPINFO_NUMPINS, RIL_PARAM_UICCAPPINFO_PINREF, netvista.riluiccappinfoparammask_2, RIL_PARAM_UICCAPPINFO_NUMPINS, RILUICCAPPINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_UICCAPPINFO_APPNAME, RIL_PARAM_UICCAPPINFO_APPID, RIL_PARAM_UICCAPPINFO_APPIDLENGTH, RIL_PARAM_UICCAPPINFO_APPTYPE, rilapitypes/RIL_PARAM_UICCAPPINFO_APPNAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCAPPINFOPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUICCAPPINFOPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -83,6 +87,11 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_UICCAPPINFO_APPTYPE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UICCAPPINFO_HUICCAPP</td>
 <td></td>
 </tr>
 

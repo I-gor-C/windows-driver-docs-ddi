@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7e0c72ce-0959-4835-ac1a-3f37869cc81f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDispatchFastReadFailure
+ms.keywords : KsDispatchFastReadFailure function [Streaming Media Devices], stream.ksdispatchfastreadfailure, ks/KsDispatchFastReadFailure, KsDispatchFastReadFailure, ksfunc_fe3ea42f-80ae-4fbd-a2c2-55e957e913cc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDispatchFastReadFailure
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -94,7 +98,7 @@ The <b>KsDispatchFastReadFailure</b> function returns <b>FALSE</b>.
 
 ## Remarks
 
-The <b>KsDispatchFastReadFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastReadFailure</b> function, that calls a dispatch table entry.</p>
+The <b>KsDispatchFastReadFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastReadFailure</b> function, that calls a dispatch table entry.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e1d31fdd-de4f-4e57-a8e8-0468ab4242f8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoGetDeviceAttachmentBaseRef
+ms.keywords : ifsk.iogetdeviceattachmentbaseref, ioref_ab9c898e-74be-48aa-9462-d78d0e34c435.xml, ntifs/IoGetDeviceAttachmentBaseRef, IoGetDeviceAttachmentBaseRef routine [Installable File System Drivers], IoGetDeviceAttachmentBaseRef
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Update Rollup for Windo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDeviceAttachmentBaseRef
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -77,26 +81,18 @@ A file system filter driver typically calls <b>IoGetDeviceAttachmentBaseRef</b> 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md">IoEnumerateDeviceObjectList</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
+
 <a href="..\ntifs\nf-ntifs-obquerynamestring.md">ObQueryNameString</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md">IoEnumerateDeviceObjectList</a>
+
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
+
  
 
  

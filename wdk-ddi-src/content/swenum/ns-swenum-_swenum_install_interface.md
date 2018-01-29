@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 05280f35-7728-464e-9a8a-e45ab797e8a9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SWENUM_INSTALL_INTERFACE, *PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE
+ms.keywords : SWENUM_INSTALL_INTERFACE, ks-struct_64848a64-102a-44ec-b5d1-331526828c60.xml, _SWENUM_INSTALL_INTERFACE, stream.swenum_install_interface, PSWENUM_INSTALL_INTERFACE, *PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE structure [Streaming Media Devices], PSWENUM_INSTALL_INTERFACE structure pointer [Streaming Media Devices], swenum/PSWENUM_INSTALL_INTERFACE, swenum/SWENUM_INSTALL_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SWENUM_INSTALL_INTERFACE
-req.alt-loc : swenum.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SWENUM_INSTALL_INTERFACE, *PSWENUM_INSTALL_INTERFACE
 req.product : Windows 10 or later.
 ---
 
@@ -49,21 +53,21 @@ typedef struct _SWENUM_INSTALL_INTERFACE {
 
 ## Members
 
-        
-            `DeviceId`
 
-            GUID that specifies the demand-load bus enumerator object's device ID.
-        
-            `InterfaceId`
+`DeviceId`
 
-            GUID that specifies the demand-load bus enumerator object's interface ID.
-        
-            `ReferenceString`
+GUID that specifies the demand-load bus enumerator object's device ID.
 
-            A reference string that a driver can use to uniquely identify multiple interface instances of the same type for a single device.
+`InterfaceId`
 
-    ## Remarks
-        The <i>swenum</i> driver uses device interface instances as placeholders for software devices created on demand.
+GUID that specifies the demand-load bus enumerator object's interface ID.
+
+`ReferenceString`
+
+A reference string that a driver can use to uniquely identify multiple interface instances of the same type for a single device.
+
+## Remarks
+The <i>swenum</i> driver uses device interface instances as placeholders for software devices created on demand.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,16 +77,12 @@ typedef struct _SWENUM_INSTALL_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | swenum.h (include Swenum.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\swenum\nf-swenum-ksinstallbusenuminterface.md">KsInstallBusEnumInterface</a>
-</dt>
-<dt>
+
 <a href="..\swenum\nf-swenum-ksremovebusenuminterface.md">KsRemoveBusEnumInterface</a>
-</dt>
-</dl>
+
  
 
  

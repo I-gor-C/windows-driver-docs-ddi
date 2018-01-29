@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2F0B6C1F-54CC-47CF-B0D0-A53FAB80AF91
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
+ms.keywords : ata/PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, storage.identify_device_data_log_page_zoned_device_info, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure [Storage Devices], ata/IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
-req.alt-loc : Ata.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO"
 ---
 
@@ -80,38 +84,38 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 
 ## Members
 
-        
-            `Header`
 
-            N/A
-        
-            `MaxNumberOfOpenSequentialWriteRequiredZones`
+`Header`
 
-            
-        
-            `OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZones`
+N/A
 
-            
-        
-            `OptimalNumberOfOpenSequentialWritePreferredZones`
+`MaxNumberOfOpenSequentialWriteRequiredZones`
 
-            
-        
-            `Reserved`
 
-            N/A
-        
-            `Version`
 
-            
-        
-            `ZonedDeviceCapabilities`
+`OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZones`
 
-            
-        
-            `ZonedDeviceSettings`
 
-            
+
+`OptimalNumberOfOpenSequentialWritePreferredZones`
+
+
+
+`Reserved`
+
+N/A
+
+`Version`
+
+
+
+`ZonedDeviceCapabilities`
+
+
+
+`ZonedDeviceSettings`
+
+
 
 
 ## Requirements

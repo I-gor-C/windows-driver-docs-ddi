@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : adf514e1-5413-4552-b676-7567e8fa9954
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAC3_ROOM_TYPE, KSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE
+ms.keywords : ksmedia/PKSAC3_ROOM_TYPE, PKSAC3_ROOM_TYPE structure pointer [Audio Devices], audio.ksac3_room_type, KSAC3_ROOM_TYPE structure [Audio Devices], KSAC3_ROOM_TYPE, ksmedia/KSAC3_ROOM_TYPE, PKSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE, aud-prop_cfc30aae-0335-42d9-bd6d-7888fed060af.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAC3_ROOM_TYPE
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE
 ---
 
@@ -46,13 +50,13 @@ typedef struct {
 
 ## Members
 
-        
-            `fLargeRoom`
 
-            Specifies the type and calibration of the mixing room used for the final audio mixing session. If <b>TRUE</b>, a large room with an X curve (described in the AC-3 specification; for more information, see the following Remarks section) was used. If <b>FALSE</b>, a small room with a flat curve was used.
+`fLargeRoom`
 
-    ## Remarks
-        This structure characterizes the production environment of an AC-3-encoded stream. The information in the structure is not typically used by the decoder, but might be used by other audio components after decoding.
+Specifies the type and calibration of the mixing room used for the final audio mixing session. If <b>TRUE</b>, a large room with an X curve (described in the AC-3 specification; for more information, see the following Remarks section) was used. If <b>FALSE</b>, a small room with a flat curve was used.
+
+## Remarks
+This structure characterizes the production environment of an AC-3-encoded stream. The information in the structure is not typically used by the decoder, but might be used by other audio components after decoding.
 
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537225">KSPROPERTY_AC3_ROOM_TYPE</a> property.
 
@@ -66,13 +70,10 @@ For more information about room types, see the AC-3 specification at the <a href
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537225">KSPROPERTY_AC3_ROOM_TYPE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 867705b9-a721-48a6-b1bc-6a75d5a03a21
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATECONTEXT, D3DKMT_CREATECONTEXT
+ms.keywords : _D3DKMT_CREATECONTEXT, OpenGL_Structs_5a3cc128-be06-4189-a389-95813c2d3e28.xml, d3dkmthk/D3DKMT_CREATECONTEXT, D3DKMT_CREATECONTEXT structure [Display Devices], display.d3dkmt_createcontext, D3DKMT_CREATECONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATECONTEXT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATECONTEXT
 ---
 
@@ -60,17 +64,16 @@ typedef struct _D3DKMT_CREATECONTEXT {
 
 ## Members
 
-        
-            `AllocationListSize`
 
-            [out] The number of elements in the array of allocations that <b>pAllocationList</b> points to. This quantity of allocations is available when the DirectX graphics kernel subsystem submits the command buffer that is pointed to by <b>pCommandBuffer</b> to the display miniport driver. 
+`AllocationListSize`
+
+[out] The number of elements in the array of allocations that <b>pAllocationList</b> points to. This quantity of allocations is available when the DirectX graphics kernel subsystem submits the command buffer that is pointed to by <b>pCommandBuffer</b> to the display miniport driver. 
 
 The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this number.
-        
-            `ClientHint`
 
-            [in] A D3DKMT_CLIENTHINT-typed value that indicates the type of client that creates the context. The following table lists the possible values.
+`ClientHint`
 
+[in] A D3DKMT_CLIENTHINT-typed value that indicates the type of client that creates the context. The following table lists the possible values.
 <table>
 <tr>
 <th>Value</th>
@@ -147,64 +150,64 @@ The client is the DirectX 10.0 runtime.
 </td>
 </tr>
 </table>
-        
-            `CommandBuffer`
 
-            [out] A pointer to command buffer memory that the OpenGL ICD places commands into. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this memory pointer.
-        
-            `CommandBufferSize`
+`CommandBuffer`
 
-            [out] The size, in bytes, of the memory block that <b>pCommandBuffer</b> points to. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this size value.
-        
-            `EngineAffinity`
+[out] A pointer to command buffer memory that the OpenGL ICD places commands into. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this memory pointer.
 
-            [in] The engine affinity for the context.
-        
-            `Flags`
+`CommandBufferSize`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
-        
-            `hContext`
+[out] The size, in bytes, of the memory block that <b>pCommandBuffer</b> points to. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this size value.
 
-            [out] A handle to the device context that the DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) supplied and that is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function.
-        
-            `hDevice`
+`EngineAffinity`
 
-            [in] A handle to the device to create the device context on.
-        
-            `NodeOrdinal`
+[in] The engine affinity for the context.
 
-            [in] The zero-based index of the node that the context is scheduled on.
-        
-            `pAllocationList`
+`Flags`
 
-            [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD inserts referenced allocations in.
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
+
+`hContext`
+
+[out] A handle to the device context that the DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) supplied and that is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function.
+
+`hDevice`
+
+[in] A handle to the device to create the device context on.
+
+`NodeOrdinal`
+
+[in] The zero-based index of the node that the context is scheduled on.
+
+`pAllocationList`
+
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD inserts referenced allocations in.
 
 The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this array.
-        
-            `PatchLocationListSize`
 
-            [out] The number of elements in the patch-location list that <b>pPatchLocationList</b> points to. This quantity of patch locations is available when the DirectX graphics kernel subsystem submits the command buffer that is pointed to by <b>pCommandBuffer</b> to the display miniport driver. 
+`PatchLocationListSize`
+
+[out] The number of elements in the patch-location list that <b>pPatchLocationList</b> points to. This quantity of patch locations is available when the DirectX graphics kernel subsystem submits the command buffer that is pointed to by <b>pCommandBuffer</b> to the display miniport driver. 
 
 The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this number.
-        
-            `pCommandBuffer`
 
-            [out] A pointer to command buffer memory that the OpenGL ICD places commands into. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this memory pointer.
-        
-            `pPatchLocationList`
+`pCommandBuffer`
 
-            [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD inserts patching information in.
+[out] A pointer to command buffer memory that the OpenGL ICD places commands into. The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this memory pointer.
+
+`pPatchLocationList`
+
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD inserts patching information in.
 
 The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> function returns this array.
-        
-            `pPrivateDriverData`
 
-            [in] A pointer to private data that is passed to the display miniport driver.
-        
-            `PrivateDriverDataSize`
+`pPrivateDriverData`
 
-            [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+[in] A pointer to private data that is passed to the display miniport driver.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -215,22 +218,16 @@ The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a>
-</dt>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
+
  
 
  

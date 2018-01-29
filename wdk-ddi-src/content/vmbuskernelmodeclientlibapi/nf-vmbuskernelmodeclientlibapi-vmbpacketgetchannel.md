@@ -7,8 +7,8 @@ old-location : netvista\vmbpacketgetchannel.htm
 old-project : netvista
 ms.assetid : BE5BB8CD-6B2F-4CFE-8A1E-B13BD9D7DBE7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbPacketGetChannel
+ms.date : 1/18/2018
+ms.keywords : netvista.vmbpacketgetchannel, vmbuskernelmodeclientlibapi/VmbPacketGetChannel, VmbPacketGetChannel, VmbPacketGetChannel function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbPacketGetChannel
-req.alt-loc : vmbkmcl.lib,vmbkmcl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Vmbkmcl.lib
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 

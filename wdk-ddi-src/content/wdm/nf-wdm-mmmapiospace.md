@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : efc9eb0e-0e83-46db-a450-79b9472fedff
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmMapIoSpace
+ms.keywords : MmMapIoSpace, MmMapIoSpace routine [Kernel-Mode Driver Architecture], k106_65fbb44b-6b8a-408d-8945-8d2eba25ca7c.xml, wdm/MmMapIoSpace, kernel.mmmapiospace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmMapIoSpace
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -90,20 +94,14 @@ For more information about using this routine, see <a href="https://msdn.microso
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-mmallocatenoncachedmemory.md">MmAllocateNonCachedMemory</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-mmunmapiospace.md">MmUnmapIoSpace</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-mmallocatenoncachedmemory.md">MmAllocateNonCachedMemory</a>
+
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
+
  
 
  

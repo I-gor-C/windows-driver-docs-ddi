@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e7c50bac-96ca-446d-a865-4ad87ad5b295
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_DEVICE_SPEED, USB_DEVICE_SPEED
+ms.keywords : _USB_DEVICE_SPEED, USB_DEVICE_SPEED enumeration [Buses], usbstrct_c458b58d-fcfa-4082-bbcf-34e22d504ab9.xml, buses.usb_device_speed, usbspec/USB_DEVICE_SPEED, usbspec/UsbFullSpeed, usbspec/UsbHighSpeed, USB_DEVICE_SPEED, UsbLowSpeed, usbspec/UsbLowSpeed, usbspec/UsbSuperSpeed, UsbSuperSpeed, UsbHighSpeed, UsbFullSpeed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_DEVICE_SPEED
-req.alt-loc : Usbspec.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_DEVICE_SPEED
 req.product : Windows 10 or later.
 ---
@@ -84,11 +88,8 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
-</dt>
-</dl>
+
  
 
  

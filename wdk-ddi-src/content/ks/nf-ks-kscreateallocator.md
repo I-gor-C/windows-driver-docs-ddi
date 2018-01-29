@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c67e036c-9f4c-447e-94bb-73cf215c865a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateAllocator
+ms.keywords : KsCreateAllocator function [Streaming Media Devices], KsCreateAllocator, ks/KsCreateAllocator, ksfunc_cc89b86b-fdd7-4e08-83b1-0df712fccaa4.xml, stream.kscreateallocator
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCreateAllocator
-req.alt-loc : ks.lib,ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -85,11 +89,8 @@ There are two versions of the <b>KsCreateAllocator</b> function: one for user-mo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 59A52F4B-D987-420D-BF83-1375354C6D6A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSCAMERA_PERFRAMESETTING_FRAME_HEADER, *PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, KSCAMERA_PERFRAMESETTING_FRAME_HEADER
+ms.keywords : PKSCAMERA_PERFRAMESETTING_FRAME_HEADER structure pointer [Streaming Media Devices], *PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, stream.kscamera_perframesetting_frame_header, KSCAMERA_PERFRAMESETTING_FRAME_HEADER, KSCAMERA_PERFRAMESETTING_FRAME_HEADER structure [Streaming Media Devices], ksmedia/PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, ksmedia/KSCAMERA_PERFRAMESETTING_FRAME_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_PERFRAMESETTING_FRAME_HEADER
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, KSCAMERA_PERFRAMESETTING_FRAME_HEADER"
 ---
 
@@ -49,22 +53,22 @@ typedef struct {
 
 ## Members
 
-        
-            `Id`
 
-            The frame ID in the range of 0 and KSCAMERA_PERFRAMESETTING_HEADER.FrameCount - 1.
-        
-            `ItemCount`
+`Id`
 
-            The number of item settings for this frame. The value 0 indicates using global settings for this frame.
-        
-            `Reserved`
+The frame ID in the range of 0 and KSCAMERA_PERFRAMESETTING_HEADER.FrameCount - 1.
 
-            Reserved for future use.
-        
-            `Size`
+`ItemCount`
 
-            The size of this header, all the item headers, value payloads, custom items, and custom data for this frame.
+The number of item settings for this frame. The value 0 indicates using global settings for this frame.
+
+`Reserved`
+
+Reserved for future use.
+
+`Size`
+
+The size of this header, all the item headers, value payloads, custom items, and custom data for this frame.
 
 
 ## Requirements

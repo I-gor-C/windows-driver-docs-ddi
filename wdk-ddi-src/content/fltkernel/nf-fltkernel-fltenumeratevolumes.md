@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 67038ff5-c450-460b-b158-f5d817fdc972
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltEnumerateVolumes
+ms.keywords : FltApiRef_e_to_o_20e817de-0825-4c5f-a831-2815c216344e.xml, fltkernel/FltEnumerateVolumes, FltEnumerateVolumes, ifsk.fltenumeratevolumes, FltEnumerateVolumes routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltEnumerateVolumes
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -71,9 +75,23 @@ Pointer to a caller-allocated variable that receives the number of opaque volume
 ## Return Value
 
 <b>FltEnumerateVolumes</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer that the <i>VolumeList</i> parameter points to is not large enough to store the requested information. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The buffer that the <i>VolumeList</i> parameter points to is not large enough to store the requested information. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,26 +123,18 @@ To enumerate all minifilter driver instances on a given volume, call <a href="..
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstances.md">FltEnumerateInstances</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinformation.md">FltGetVolumeInformation</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinformation.md">FltGetVolumeInformation</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstances.md">FltEnumerateInstances</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
+
  
 
  

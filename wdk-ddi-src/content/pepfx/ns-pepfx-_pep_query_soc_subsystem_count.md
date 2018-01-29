@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1DB17B90-41B7-4DA2-AFB6-3A4B218068F6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_QUERY_SOC_SUBSYSTEM_COUNT, *PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT
+ms.keywords : PPEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT, PPEP_QUERY_SOC_SUBSYSTEM_COUNT structure pointer [Kernel-Mode Driver Architecture], kernel.pep_query_soc_subsystem_count, PEP_QUERY_SOC_SUBSYSTEM_COUNT structure [Kernel-Mode Driver Architecture], *PPEP_QUERY_SOC_SUBSYSTEM_COUNT, _PEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PEP_QUERY_SOC_SUBSYSTEM_COUNT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_QUERY_SOC_SUBSYSTEM_COUNT
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT"
 ---
 
@@ -48,18 +52,18 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_COUNT {
 
 ## Members
 
-        
-            `Flags`
 
-            This member is reserved and should be set to zero.
-        
-            `PlatformIdleStateIndex`
+`Flags`
 
-            [in] The platform idle state index for which the kernel is querying about.
-        
-            `SubsystemCount`
+This member is reserved and should be set to zero.
 
-            [out] The number of SoC subsystems tallied by the PEP for the specified platform idle state.  The PEP cannot return 0 in this parameter; instead the PEP should return <b>FALSE</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186733">PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT notification</a> that provided this structure.
+`PlatformIdleStateIndex`
+
+[in] The platform idle state index for which the kernel is querying about.
+
+`SubsystemCount`
+
+[out] The number of SoC subsystems tallied by the PEP for the specified platform idle state.  The PEP cannot return 0 in this parameter; instead the PEP should return <b>FALSE</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186733">PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT notification</a> that provided this structure.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_COUNT {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186733">PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT notification</a>
-</dt>
-</dl>
+
  
 
  

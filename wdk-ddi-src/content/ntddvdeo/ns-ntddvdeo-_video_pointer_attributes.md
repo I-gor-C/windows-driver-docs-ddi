@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aa897435-443b-4145-b6ca-7bafdb36b9c1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_POINTER_ATTRIBUTES, *PVIDEO_POINTER_ATTRIBUTES, VIDEO_POINTER_ATTRIBUTES
+ms.keywords : VIDEO_POINTER_ATTRIBUTES, ntddvdeo/VIDEO_POINTER_ATTRIBUTES, *PVIDEO_POINTER_ATTRIBUTES, Video_Structs_5ade2674-a930-46b3-aaad-6d3a8d017453.xml, VIDEO_POINTER_ATTRIBUTES structure [Display Devices], ntddvdeo/PVIDEO_POINTER_ATTRIBUTES, display.video_pointer_attributes, VIDEO_MODE_ANIMATE_START, VIDEO_MODE_MONO_POINTER, VIDEO_MODE_COLOR_POINTER, VIDEO_MODE_ANIMATE_UPDATE, _VIDEO_POINTER_ATTRIBUTES, PVIDEO_POINTER_ATTRIBUTES, VIDEO_MODE_ASYNC_POINTER, PVIDEO_POINTER_ATTRIBUTES structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_POINTER_ATTRIBUTES
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVIDEO_POINTER_ATTRIBUTES, VIDEO_POINTER_ATTRIBUTES"
 ---
 
@@ -53,45 +57,94 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 
 ## Members
 
-        
-            `Column`
 
-            Horizontal coordinate of the pointer's hot spot.
-        
-            `Enable`
+`Column`
 
-            Specifies whether the pointer is visible. A nonzero value specifies that the pointer is visible. A value of zero specifies that the pointer is not visible.
-        
-            `Flags`
+Horizontal coordinate of the pointer's hot spot.
 
-            A set of flags that specify certain attributes of the pointer. <b>Flags</b> can be a combination of the following values:
+`Enable`
 
+Specifies whether the pointer is visible. A nonzero value specifies that the pointer is visible. A value of zero specifies that the pointer is not visible.
+
+`Flags`
+
+A set of flags that specify certain attributes of the pointer. <b>Flags</b> can be a combination of the following values:
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `Height`
+<td width="40%"><a id="VIDEO_MODE_ASYNC_POINTER"></a><a id="video_mode_async_pointer"></a><dl>
+<dt><b>VIDEO_MODE_ASYNC_POINTER</b></dt>
+</dl>
+</td>
+<td width="60%">
+The pointer can be updated asynchronously to drawing operations.
 
-            Specifies the height of the pointer in pixels.
-        
-            `Pixels`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="VIDEO_MODE_MONO_POINTER"></a><a id="video_mode_mono_pointer"></a><dl>
+<dt><b>VIDEO_MODE_MONO_POINTER</b></dt>
+</dl>
+</td>
+<td width="60%">
+A monochrome hardware pointer is supported.
 
-            The pointer data, in device-compatible DIB format. Mask data is always in 1-bpp DIB format.
-        
-            `Row`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="VIDEO_MODE_COLOR_POINTER"></a><a id="video_mode_color_pointer"></a><dl>
+<dt><b>VIDEO_MODE_COLOR_POINTER</b></dt>
+</dl>
+</td>
+<td width="60%">
+A color hardware pointer is supported.
 
-            Vertical coordinate of the pointer's hot spot.
-        
-            `Width`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="VIDEO_MODE_ANIMATE_START"></a><a id="video_mode_animate_start"></a><dl>
+<dt><b>VIDEO_MODE_ANIMATE_START</b></dt>
+</dl>
+</td>
+<td width="60%">
+The current pointer has the same hotspot as the previous pointer.
 
-            Specifies the width of the pointer in pixels.
-        
-            `WidthInBytes`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="VIDEO_MODE_ANIMATE_UPDATE"></a><a id="video_mode_animate_update"></a><dl>
+<dt><b>VIDEO_MODE_ANIMATE_UPDATE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The current pointer has the same hotspot as the previous pointer.
 
-            Specifies the width of the pointer in bytes.
+</td>
+</tr>
+</table>
+
+`Height`
+
+Specifies the height of the pointer in pixels.
+
+`Pixels`
+
+The pointer data, in device-compatible DIB format. Mask data is always in 1-bpp DIB format.
+
+`Row`
+
+Vertical coordinate of the pointer's hot spot.
+
+`Width`
+
+Specifies the width of the pointer in pixels.
+
+`WidthInBytes`
+
+Specifies the width of the pointer in bytes.
 
 
 ## Requirements
@@ -102,16 +155,12 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 | **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_pointer_attr.md">IOCTL_VIDEO_QUERY_POINTER_ATTR</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_set_pointer_attr.md">IOCTL_VIDEO_SET_POINTER_ATTR</a>
-</dt>
-</dl>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_pointer_attr.md">IOCTL_VIDEO_QUERY_POINTER_ATTR</a>
+
  
 
  

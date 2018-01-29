@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0f796ad1-e4b4-4113-b076-ed6c9ea711c9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FLT_NAME_CONTROL, *PFLT_NAME_CONTROL, FLT_NAME_CONTROL
+ms.keywords : PFLT_NAME_CONTROL, FLT_NAME_CONTROL, FLT_NAME_CONTROL structure [Installable File System Drivers], FltSystemStructures_691a74ca-7671-44e3-9072-5d081c508a6c.xml, fltkernel/FLT_NAME_CONTROL, *PFLT_NAME_CONTROL, ifsk.flt_name_control, PFLT_NAME_CONTROL structure pointer [Installable File System Drivers], fltkernel/PFLT_NAME_CONTROL, _FLT_NAME_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FLT_NAME_CONTROL
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFLT_NAME_CONTROL, FLT_NAME_CONTROL"
 ---
 
@@ -46,13 +50,13 @@ typedef struct _FLT_NAME_CONTROL {
 
 ## Members
 
-        
-            `Name`
 
-            <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the file name string.
+`Name`
 
-    ## Remarks
-        Minifilters must not attempt to free or replace the buffer in the <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure  that the <b>Name</b> member points to directly. Instead, minifilters should call <a href="..\fltkernel\nf-fltkernel-fltcheckandgrownamecontrol.md">FltCheckAndGrowNameControl</a> to obtain a larger name control buffer.
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the file name string.
+
+## Remarks
+Minifilters must not attempt to free or replace the buffer in the <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure  that the <b>Name</b> member points to directly. Instead, minifilters should call <a href="..\fltkernel\nf-fltkernel-fltcheckandgrownamecontrol.md">FltCheckAndGrowNameControl</a> to obtain a larger name control buffer.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,28 +66,20 @@ typedef struct _FLT_NAME_CONTROL {
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltcheckandgrownamecontrol.md">FltCheckAndGrowNameControl</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543030">FltGetFileNameFormat</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformation.md">FltGetFileNameInformation</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543040">FltGetFileNameQueryMethod</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543030">FltGetFileNameFormat</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543040">FltGetFileNameQueryMethod</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D0503B73-EDFA-4742-BAFA-4FEE56F0A3C8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PLATFORM_IDLE_STATE, PEP_PLATFORM_IDLE_STATE, *PPEP_PLATFORM_IDLE_STATE
+ms.keywords : PEP_PLATFORM_IDLE_STATE, *PPEP_PLATFORM_IDLE_STATE, PPEP_PLATFORM_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_PLATFORM_IDLE_STATE structure [Kernel-Mode Driver Architecture], _PEP_PLATFORM_IDLE_STATE, pepfx/PPEP_PLATFORM_IDLE_STATE, PPEP_PLATFORM_IDLE_STATE, pepfx/PEP_PLATFORM_IDLE_STATE, kernel.pep_platform_idle_state
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PLATFORM_IDLE_STATE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PEP_PLATFORM_IDLE_STATE, *PPEP_PLATFORM_IDLE_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_PLATFORM_IDLE_STATE, PEP_PLATFORM_IDLE_STATE"
 ---
 
 # _PEP_PLATFORM_IDLE_STATE structure
@@ -52,37 +56,37 @@ typedef struct _PEP_PLATFORM_IDLE_STATE {
 
 ## Members
 
-        
-            `BreakEvenDuration`
 
-            The minimum amount of time, specified in 100-nanosecond units, that the platform must spend in this idle state to make a transition to this state worthwhile. PoFx uses this member value as a hint to avoid switching the platform to an idle state unless the platform is likely to remain in this state for at least the amount of time specified by <b>BreakEvenDuration</b>.
-        
-            `DependencyArray`
+`BreakEvenDuration`
 
-            The first element in an array of <a href="..\pepfx\ns-pepfx-_pep_processor_idle_dependency.md">PEP_PROCESSOR_IDLE_DEPENDENCY</a> structures. This array specifies the set of dependencies that the platform idle state has on each processor. If the platform contains N processors, the array contains N elements, and processors are numbered 0 to N-1 in the order in which they are represented in the array.
-        
-            `DependencyArrayCount`
+The minimum amount of time, specified in 100-nanosecond units, that the platform must spend in this idle state to make a transition to this state worthwhile. PoFx uses this member value as a hint to avoid switching the platform to an idle state unless the platform is likely to remain in this state for at least the amount of time specified by <b>BreakEvenDuration</b>.
 
-            The number of elements in the <b>DependencyArray</b> array. The array contains one element for each processor in the hardware platform.
-        
-            `DependencyArrayUsed`
+`DependencyArray`
 
-            The number of items in <b>DependencyArray</b> which were filled in by the PEP.
-        
-            `InitiatingProcessor`
+The first element in an array of <a href="..\pepfx\ns-pepfx-_pep_processor_idle_dependency.md">PEP_PROCESSOR_IDLE_DEPENDENCY</a> structures. This array specifies the set of dependencies that the platform idle state has on each processor. If the platform contains N processors, the array contains N elements, and processors are numbered 0 to N-1 in the order in which they are represented in the array.
 
-            A <b>POHANDLE</b> value that identifies the processor that initiates the transition to this platform idle state, or <b>NULL</b> if any processor can initiate the transition. If non-NULL, this handle represents the registration of the processor (as a device) with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx).
-        
-            `InitiatingState`
+`DependencyArrayCount`
 
-            The index of the processor idle state that the processor enters to initiate the platform's entry to the specified platform idle state. If the <b>IdleStates</b> array in the <a href="..\pepfx\ns-pepfx-_pep_ppm_query_idle_states_v2.md">PEP_PPM_QUERY_IDLE_STATES_V2</a> structure contains N elements, the idle states are numbered 0 to Nâ€“1 in the order in which they appear in the array.
-        
-            `Latency`
+The number of elements in the <b>DependencyArray</b> array. The array contains one element for each processor in the hardware platform.
 
-            The worst-case latency, in 100-nanosecond units, that the platform requires to wake from this idle state in response to a wake event.
+`DependencyArrayUsed`
 
-    ## Remarks
-        This structure is used in conjunction with the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186826">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE</a> notification. The <b>State</b> member of a <a href="..\pepfx\ns-pepfx-_pep_ppm_query_platform_state.md">PEP_PPM_QUERY_PLATFORM_STATE</a> structure is a <b>PEP_PLATFORM_IDLE_STATE</b> structure.
+The number of items in <b>DependencyArray</b> which were filled in by the PEP.
+
+`InitiatingProcessor`
+
+A <b>POHANDLE</b> value that identifies the processor that initiates the transition to this platform idle state, or <b>NULL</b> if any processor can initiate the transition. If non-NULL, this handle represents the registration of the processor (as a device) with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx).
+
+`InitiatingState`
+
+The index of the processor idle state that the processor enters to initiate the platform's entry to the specified platform idle state. If the <b>IdleStates</b> array in the <a href="..\pepfx\ns-pepfx-_pep_ppm_query_idle_states_v2.md">PEP_PPM_QUERY_IDLE_STATES_V2</a> structure contains N elements, the idle states are numbered 0 to Nâ€“1 in the order in which they appear in the array.
+
+`Latency`
+
+The worst-case latency, in 100-nanosecond units, that the platform requires to wake from this idle state in response to a wake event.
+
+## Remarks
+This structure is used in conjunction with the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186826">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE</a> notification. The <b>State</b> member of a <a href="..\pepfx\ns-pepfx-_pep_ppm_query_platform_state.md">PEP_PPM_QUERY_PLATFORM_STATE</a> structure is a <b>PEP_PLATFORM_IDLE_STATE</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,22 +96,16 @@ typedef struct _PEP_PLATFORM_IDLE_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186826">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE</a>
-</dt>
-<dt>
+
 <a href="..\pepfx\ns-pepfx-_pep_ppm_query_idle_states_v2.md">PEP_PPM_QUERY_IDLE_STATES_V2</a>
-</dt>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_ppm_query_platform_state.md">PEP_PPM_QUERY_PLATFORM_STATE</a>
-</dt>
-<dt>
+
 <a href="..\pepfx\ns-pepfx-_pep_processor_idle_dependency.md">PEP_PROCESSOR_IDLE_DEPENDENCY</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_ppm_query_platform_state.md">PEP_PPM_QUERY_PLATFORM_STATE</a>
+
  
 
  

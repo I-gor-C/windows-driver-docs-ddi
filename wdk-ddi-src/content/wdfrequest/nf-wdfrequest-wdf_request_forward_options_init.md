@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 301b4b63-0337-4f78-a4f8-6b2d2b168663
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_REQUEST_FORWARD_OPTIONS_INIT
+ms.keywords : WDF_REQUEST_FORWARD_OPTIONS_INIT, DFRequestObjectRef_ade75e55-accb-4fe0-a1be-b5acd9e4c34b.xml, WDF_REQUEST_FORWARD_OPTIONS_INIT function, kmdf.wdf_request_forward_options_init, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_INIT, wdf.wdf_request_forward_options_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.9
 req.umdf-ver : 
-req.alt-api : WDF_REQUEST_FORWARD_OPTIONS_INIT
-req.alt-loc : wdfrequest.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,14 +86,10 @@ For a code example that uses <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b>, see <a hre
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>
-</dt>
-</dl>
+
  
 
  

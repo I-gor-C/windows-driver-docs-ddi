@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 6b59fa86-3c3b-4ab9-98e2-f62f028d53df
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, ACPI_EVAL_INPUT_BUFFER_COMPLEX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1
+ms.keywords : ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, acpi-meth-eval-ref_e853be71-ec5f-41d6-82fc-6351a0847be8.xml, acpi.acpi_eval_input_buffer_complex, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_COMPLEX, acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 2000 and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1
-req.alt-loc : Acpiioct.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ACPI_EVAL_INPUT_BUFFER_COMPLEX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, ACPI_EVAL_INPUT_BUFFER_COMPLEX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure
@@ -53,41 +57,51 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 {
 
 ## Members
 
-        
-            `Argument`
 
-            An array of ACPI_METHOD_ARGUMENT structures.
-        
-            `ArgumentCount`
+`Argument`
 
-            The number of variable-length ACPI_METHOD_ARGUMENT structures that the <b>Argument</b> array contains. The <b>Argument</b> array can hold a maximum of seven argument structures.
-        
-            `DUMMYUNIONNAME`
+An array of ACPI_METHOD_ARGUMENT structures.
 
-            
-        
-            `Signature`
+`ArgumentCount`
 
-            The signature of a complex input buffer, which must be set to ACPI_EVAL_INPUT_BUFFER_COMPLEX_SIGNATURE.
-        
-            `Size`
+The number of variable-length ACPI_METHOD_ARGUMENT structures that the <b>Argument</b> array contains. The <b>Argument</b> array can hold a maximum of seven argument structures.
 
-            The number of bytes that the <b>Argument</b> array contains.
+`DUMMYUNIONNAME`
 
-    ## Remarks
-        If a device supports a control method named 'ABCD' that takes an array of arguments as input, a driver for the device can evaluate the method by sending an IOCTL_ACPI_EVAL_METHOD request or an IOCTL_ACPI_ASYNC_EVAL_METHOD request to the device and setting the members of the input ACPI_EVAL_INPUT_BUFFER_COMPLEX structure as follows:
 
+
+`Signature`
+
+The signature of a complex input buffer, which must be set to ACPI_EVAL_INPUT_BUFFER_COMPLEX_SIGNATURE.
+
+`Size`
+
+The number of bytes that the <b>Argument</b> array contains.
+
+## Remarks
+If a device supports a control method named 'ABCD' that takes an array of arguments as input, a driver for the device can evaluate the method by sending an IOCTL_ACPI_EVAL_METHOD request or an IOCTL_ACPI_ASYNC_EVAL_METHOD request to the device and setting the members of the input ACPI_EVAL_INPUT_BUFFER_COMPLEX structure as follows:
+<ul>
+<li>
 Set <b>Signature</b> to ACPI_EVAL_INPUT_BUFFER_COMPLEX_SIGNATURE.
 
+</li>
+<li>
 Set <b>MethodName</b> to 'ABCD' or <b>MethodNameAsUlong</b> to (ULONG)('DCBA').
 
+</li>
+<li>
 Set <b>Size</b> to the number of bytes in the <b>Argument</b> array.
 
+</li>
+<li>
 Set <b>Argument</b> count to the number of arguments in the <b>Argument</b> array.
 
+</li>
+<li>
 Set <b>Argument</b> to the array of ACPI_METHOD_ARGUMENT structures.
 
-For more information about how to use this structure, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/evaluating-acpi-control-methods">Evaluating ACPI Control Methods</a>.
+</li>
+</ul>For more information about how to use this structure, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/evaluating-acpi-control-methods">Evaluating ACPI Control Methods</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,19 +111,14 @@ For more information about how to use this structure, see <a href="https://msdn.
 | **Minimum UMDF version** |  |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a>
-</dt>
-<dt>
-<a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
-</dt>
-<dt>
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_eval_method.md">IOCTL_ACPI_EVAL_METHOD</a>
-</dt>
-</dl>
+
+<a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a>
+
+<a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
+
  
 
  

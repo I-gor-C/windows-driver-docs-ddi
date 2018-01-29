@@ -7,8 +7,8 @@ old-location : netvista\rilcallrtt.htm
 old-project : netvista
 ms.assetid : aa69cc11-66c7-4d23-b596-c37472af484a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLRTT, *LPRILCALLRTT, RILCALLRTT
+ms.date : 1/18/2018
+ms.keywords : netvista.rilcallrtt, RILCALLRTT, *LPRILCALLRTT, ntddrilapitypes/RILCALLRTT, RILCALLRTT structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLRTT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILCALLRTT, RILCALLRTT"
 ---
 
@@ -48,18 +52,18 @@ typedef struct _RILCALLRTT {
 
 ## Members
 
-        
-            `dwRTTAction`
 
-            
-        
-            `dwRTTModeType`
+`dwRTTAction`
 
-            
-        
-            `stRTTCap`
 
-            
+
+`dwRTTModeType`
+
+
+
+`stRTTCap`
+
+
 
 
 ## Requirements

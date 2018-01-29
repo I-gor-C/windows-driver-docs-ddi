@@ -7,8 +7,8 @@ old-location : netvista\rilcallsupportcaps_2.htm
 old-project : netvista
 ms.assetid : f51ab865-8862-4ed2-830e-ecbef4c9c74e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLSUPPORTCAPS, RILCALLSUPPORTCAPS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_CAPS_CALLSUPPORT_USSD_PHASE2, RIL_CAPS_CALLSUPPORT_CD, RIL_CAPS_CALLSUPPORT_CUG, RIL_CAPS_CALLSUPPORT_MSP, RIL_CAPS_CALLSUPPORT_USS, RIL_CAPS_CALLSUPPORT_USSD_PHASE2, RIL_CAPS_CALLSUPPORT_FM, RILCALLSUPPORTCAPS enumeration [Network Drivers Starting with Windows Vista], RILCALLSUPPORTCAPS, rilapitypes/RILCALLSUPPORTCAPS, RIL_CAPS_CALLSUPPORT_CNAP, rilapitypes/RIL_CAPS_CALLSUPPORT_ALL, rilapitypes/RIL_CAPS_CALLSUPPORT_CNAP, rilapitypes/RIL_CAPS_CALLSUPPORT_CUG, rilapitypes/RIL_CAPS_CALLSUPPORT_FM, netvista.rilcallsupportcaps_2, rilapitypes/RIL_CAPS_CALLSUPPORT_CD, RIL_CAPS_CALLSUPPORT_EMLPP, rilapitypes/RIL_CAPS_CALLSUPPORT_MSP, rilapitypes/RIL_CAPS_CALLSUPPORT_EMLPP, rilapitypes/RIL_CAPS_CALLSUPPORT_USS, RIL_CAPS_CALLSUPPORT_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLSUPPORTCAPS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLSUPPORTCAPS
 req.product : Windows 10 or later.
 ---
@@ -59,6 +63,11 @@ typedef enum _RILCALLSUPPORTCAPS {
 
 <tr>
 <td>RIL_CAPS_CALLSUPPORT_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_CALLSUPPORT_CCBS</td>
 <td></td>
 </tr>
 

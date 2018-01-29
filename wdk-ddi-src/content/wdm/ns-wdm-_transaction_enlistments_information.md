@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8b33a7ed-6892-4b2d-9d7a-cfc43c9fbf68
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _TRANSACTION_ENLISTMENTS_INFORMATION, *PTRANSACTION_ENLISTMENTS_INFORMATION, TRANSACTION_ENLISTMENTS_INFORMATION
+ms.keywords : "*PTRANSACTION_ENLISTMENTS_INFORMATION, PTRANSACTION_ENLISTMENTS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], ktm_ref_d6790593-2057-4d78-82f2-9d4d64cd800c.xml, TRANSACTION_ENLISTMENTS_INFORMATION structure [Kernel-Mode Driver Architecture], _TRANSACTION_ENLISTMENTS_INFORMATION, TRANSACTION_ENLISTMENTS_INFORMATION, wdm/TRANSACTION_ENLISTMENTS_INFORMATION, PTRANSACTION_ENLISTMENTS_INFORMATION, kernel.transaction_enlistments_information, wdm/PTRANSACTION_ENLISTMENTS_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSACTION_ENLISTMENTS_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PTRANSACTION_ENLISTMENTS_INFORMATION, TRANSACTION_ENLISTMENTS_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TRANSACTION_ENLISTMENTS_INFORMATION, *PTRANSACTION_ENLISTMENTS_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -48,17 +52,17 @@ typedef struct _TRANSACTION_ENLISTMENTS_INFORMATION {
 
 ## Members
 
-        
-            `EnlistmentPair`
 
-            A caller-allocated array of <a href="..\wdm\ns-wdm-_transaction_enlistment_pair.md">TRANSACTION_ENLISTMENT_PAIR</a> structures.
-        
-            `NumberOfEnlistments`
+`EnlistmentPair`
 
-            The number of enlistments that are associated with a transaction object. This is also the number of elements in the array that the <b>EnlistmentPair</b> member specifies.
+A caller-allocated array of <a href="..\wdm\ns-wdm-_transaction_enlistment_pair.md">TRANSACTION_ENLISTMENT_PAIR</a> structures.
 
-    ## Remarks
-        The <b>TRANSACTION_ENLISTMENTS_INFORMATION</b> structure is used with the <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a> routine. This routine fills in the structure's members.
+`NumberOfEnlistments`
+
+The number of enlistments that are associated with a transaction object. This is also the number of elements in the array that the <b>EnlistmentPair</b> member specifies.
+
+## Remarks
+The <b>TRANSACTION_ENLISTMENTS_INFORMATION</b> structure is used with the <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a> routine. This routine fills in the structure's members.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,19 +72,14 @@ typedef struct _TRANSACTION_ENLISTMENTS_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_transaction_enlistment_pair.md">TRANSACTION_ENLISTMENT_PAIR</a>
-</dt>
-<dt>
 <a href="..\wdm\ne-wdm-_transaction_information_class.md">TRANSACTION_INFORMATION_CLASS</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_transaction_enlistment_pair.md">TRANSACTION_ENLISTMENT_PAIR</a>
+
 <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
-</dt>
-</dl>
+
  
 
  

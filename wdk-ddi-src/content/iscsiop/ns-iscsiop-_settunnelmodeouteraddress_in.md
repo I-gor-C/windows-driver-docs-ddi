@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3f698252-213f-482c-8c8f-624f0c370705
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SetTunnelModeOuterAddress_IN, SetTunnelModeOuterAddress_IN, *PSetTunnelModeOuterAddress_IN
+ms.keywords : PSetTunnelModeOuterAddress_IN structure pointer [Storage Devices], *PSetTunnelModeOuterAddress_IN, iscsiop/PSetTunnelModeOuterAddress_IN, storage.settunnelmodeouteraddress_in, SetTunnelModeOuterAddress_IN, PSetTunnelModeOuterAddress_IN, _SetTunnelModeOuterAddress_IN, iscsiop/SetTunnelModeOuterAddress_IN, SetTunnelModeOuterAddress_IN structure [Storage Devices], structs-iSCSI_d86148f6-e3d0-42b3-9e1d-3f341545f0b8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetTunnelModeOuterAddress_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetTunnelModeOuterAddress_IN, *PSetTunnelModeOuterAddress_IN
 ---
 
@@ -48,21 +52,21 @@ typedef struct _SetTunnelModeOuterAddress_IN {
 
 ## Members
 
-        
-            `DestinationAddress`
 
-            An <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that indicates the destination IP address in a way that is independent of the version of IP protocol in use.
-        
-            `PortNumber`
+`DestinationAddress`
 
-            The number of the port to associate with the tunnel-mode address. A value of 0xffffffff associates the tunnel-mode address with all ports.
-        
-            `TunnelModeOuterAddress`
+An <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that indicates the destination IP address in a way that is independent of the version of IP protocol in use.
 
-            An ISCSI_IP_Address structure that indicates the IP address of the security gateway (tunnel-mode outer address) in a way that is independent of the version of IP protocol in use.
+`PortNumber`
 
-    ## Remarks
-        You must implement this method.
+The number of the port to associate with the tunnel-mode address. A value of 0xffffffff associates the tunnel-mode address with all ports.
+
+`TunnelModeOuterAddress`
+
+An ISCSI_IP_Address structure that indicates the IP address of the security gateway (tunnel-mode outer address) in a way that is independent of the version of IP protocol in use.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,19 +76,14 @@ typedef struct _SetTunnelModeOuterAddress_IN {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566186">SetTunnelModeOuterAddress</a>
-</dt>
-<dt>
 <a href="..\iscsiop\ns-iscsiop-_settunnelmodeouteraddress_out.md">SetTunnelModeOuterAddress_OUT</a>
-</dt>
-</dl>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566186">SetTunnelModeOuterAddress</a>
+
  
 
  

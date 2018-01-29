@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dd2a525d-fb9d-4fea-b9d7-64b1f498550c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _BOOTDISK_INFORMATION, BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION
+ms.keywords : wdm/PBOOTDISK_INFORMATION, _BOOTDISK_INFORMATION, PBOOTDISK_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_a_61cd1024-0bb4-4601-a458-4bf52a2339d5.xml, PBOOTDISK_INFORMATION, BOOTDISK_INFORMATION, wdm/BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION, kernel.bootdisk_information, BOOTDISK_INFORMATION structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Drivers on Microsoft Windows XP and later versions o
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BOOTDISK_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PBOOTDISK_INFORMATION, BOOTDISK_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _BOOTDISK_INFORMATION {
 
 ## Members
 
-        
-            `BootDeviceSignature`
 
-            If the boot disk is formatted with an MBR partition table, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
-        
-            `BootPartitionOffset`
+`BootDeviceSignature`
 
-            Specifies the offset, in bytes, on the boot disk where the boot partition begins.
-        
-            `SystemDeviceSignature`
+If the boot disk is formatted with an MBR partition table, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
 
-            If the system disk is formatted with an MBR partition table, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
-        
-            `SystemPartitionOffset`
+`BootPartitionOffset`
 
-            Specifies the offset, in bytes, on the system disk where the system partition begins.
+Specifies the offset, in bytes, on the boot disk where the boot partition begins.
 
-    ## Remarks
-        <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
+`SystemDeviceSignature`
+
+If the system disk is formatted with an MBR partition table, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
+
+`SystemPartitionOffset`
+
+Specifies the offset, in bytes, on the system disk where the system partition begins.
+
+## Remarks
+<a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,16 +82,12 @@ typedef struct _BOOTDISK_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_bootdisk_information_ex.md">BOOTDISK_INFORMATION_EX</a>
-</dt>
-</dl>
+
  
 
  

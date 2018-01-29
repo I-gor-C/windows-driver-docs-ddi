@@ -2,13 +2,13 @@
 UID : NI:ntddcdvd.IOCTL_DVD_READ_KEY
 title : IOCTL_DVD_READ_KEY
 author : windows-driver-content
-description : Returns a copy-protection key of the specified type challenge key, bus key, title key, read RPC key, set RPC key, or disk key.
+description : Returns a copy-protection key of the specified type: challenge key, bus key, title key, read RPC key, set RPC key, or disk key.
 old-location : storage\ioctl_dvd_read_key.htm
 old-project : storage
 ms.assetid : 42745dae-f472-4f64-8f16-9f4dec1e986a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.keywords : storage.ioctl_dvd_read_key, IOCTL_DVD_READ_KEY control code [Storage Devices], IOCTL_DVD_READ_KEY, ntddcdvd/IOCTL_DVD_READ_KEY, k307_6baca45d-504c-46b9-9724-f82132c2bead.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DVD_READ_KEY
-req.alt-loc : Ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_READ_KEY IOCTL
-Returns a copy-protection key of the specified type: challenge key, bus key, title key, read RPC key, set RPC key, or disk key. A challenge key or bus key is sent back to the device to complete the related step in a DVD authentication sequence. After the authentication sequence is completed, a title key is used to encrypt and decrypt user data transferred from a DVD disc and a disk key is used to encrypt and decrypt title key data. If the drive region has not been set previously (if it is still at factory default) and if the inserted media has a region, the device region will be set to the current media region.
-
-
-
 Returns a copy-protection key of the specified type: challenge key, bus key, title key, read RPC key, set RPC key, or disk key. A challenge key or bus key is sent back to the device to complete the related step in a DVD authentication sequence. After the authentication sequence is completed, a title key is used to encrypt and decrypt user data transferred from a DVD disc and a disk key is used to encrypt and decrypt title key data. If the drive region has not been set previously (if it is still at factory default) and if the inserted media has a region, the device region will be set to the current media region.
 
 ### Major Code
@@ -63,7 +63,6 @@ Length of a <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copy_protect_key.md">DVD_COPY_
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes transferred. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.
 
 
@@ -74,13 +73,10 @@ The <b>Information</b> field is set to the number of bytes transferred. The <b>S
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copy_protect_key.md">DVD_COPY_PROTECT_KEY</a>
-</dt>
-</dl>
+
  
 
  

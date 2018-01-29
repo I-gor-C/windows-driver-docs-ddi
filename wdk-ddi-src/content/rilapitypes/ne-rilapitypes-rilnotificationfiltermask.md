@@ -7,8 +7,8 @@ old-location : netvista\rilnotificationfiltermask_2.htm
 old-project : netvista
 ms.assetid : 00d083af-f2c1-4ad5-803a-5981ed70035f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILNOTIFICATIONFILTERMASK, RILNOTIFICATIONFILTERMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_NFS_ALL, RILNOTIFICATIONFILTERMASK enumeration [Network Drivers Starting with Windows Vista], RIL_NFS_LOCATIONUPDATE, RIL_NFS_SIGNALQUALITY, RILNOTIFICATIONFILTERMASK, rilapitypes/RIL_NFS_SIGNALQUALITY, rilapitypes/RIL_NFS_ALL, RIL_NFS_REGSTATUS_RATKIND, rilapitypes/RILNOTIFICATIONFILTERMASK, rilapitypes/RIL_NFS_LOCATIONUPDATE, netvista.rilnotificationfiltermask_2, rilapitypes/RIL_NFS_REGSTATUS_RATKIND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILNOTIFICATIONFILTERMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILNOTIFICATIONFILTERMASK
 req.product : Windows 10 or later.
 ---
@@ -59,6 +63,11 @@ typedef enum _RILNOTIFICATIONFILTERMASK {
 
 <tr>
 <td>RIL_NFS_LOCATIONUPDATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_NFS_NONE</td>
 <td></td>
 </tr>
 

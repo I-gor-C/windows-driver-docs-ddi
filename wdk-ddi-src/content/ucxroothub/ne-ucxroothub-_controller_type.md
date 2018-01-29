@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E7DFBFFA-C65B-4757-8DB8-202760D6D3C6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CONTROLLER_TYPE, CONTROLLER_TYPE
+ms.keywords : buses._controller_type, ucxroothub/ControllerTypeXhci, ucxroothub/_CONTROLLER_TYPE, CONTROLLER_TYPE, _CONTROLLER_TYPE enumeration [Buses], _CONTROLLER_TYPE, ucxroothub/ControllerTypeSoftXhci, ControllerTypeSoftXhci, ControllerTypeXhci
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CONTROLLER_TYPE
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CONTROLLER_TYPE
 req.product : Windows 10 or later.
 ---
@@ -72,11 +76,8 @@ typedef enum _CONTROLLER_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxroothub\ns-ucxroothub-_roothub_info.md">ROOTHUB_INFO</a>
-</dt>
-</dl>
+
  
 
  

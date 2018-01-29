@@ -7,8 +7,8 @@ old-location : debugger\geteventthread.htm
 old-project : debugger
 ms.assetid : 7a28c9bd-480e-4864-b7ff-9ff0dc1d04ad
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::GetEventThread, GetEventThread
+ms.date : 1/19/2018
+ms.keywords : GetEventThread method [Windows Debugging], IDebugSystemObjects4::GetEventThread, IDebugSystemObjects4 interface [Windows Debugging], GetEventThread method, dbgeng/IDebugSystemObjects3::GetEventThread, IDebugSystemObjects2 interface [Windows Debugging], GetEventThread method, GetEventThread, GetEventThread method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects_2074b9ad-a761-42fd-93ed-4774c2ddf3a5.xml, dbgeng/IDebugSystemObjects2::GetEventThread, dbgeng/IDebugSystemObjects4::GetEventThread, IDebugSystemObjects2::GetEventThread, IDebugSystemObjects::GetEventThread, GetEventThread method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4, IDebugSystemObjects3 interface [Windows Debugging], GetEventThread method, IDebugSystemObjects interface [Windows Debugging], GetEventThread method, IDebugSystemObjects3::GetEventThread, GetEventThread method [Windows Debugging], IDebugSystemObjects4 interface, GetEventThread method [Windows Debugging], IDebugSystemObjects interface, debugger.geteventthread, dbgeng/IDebugSystemObjects::GetEventThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSystemObjects.GetEventThread,IDebugSystemObjects2.GetEventThread,IDebugSystemObjects3.GetEventThread,IDebugSystemObjects4.GetEventThread
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -56,15 +60,29 @@ Receives the engine thread ID.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 In kernel-mode debugging, the engine thread ID for the virtual thread representing the processor on which the event occurred is returned.
 
-For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details about debugger engine events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details about debugger engine events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

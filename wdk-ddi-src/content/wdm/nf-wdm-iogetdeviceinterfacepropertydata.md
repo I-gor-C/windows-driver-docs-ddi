@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 01113C73-2C79-40F2-9B13-B864148D2C9A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetDeviceInterfacePropertyData
+ms.keywords : IoGetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], kernel.iogetdeviceinterfacepropertydata, IoGetDeviceInterfacePropertyData, wdm/IoGetDeviceInterfacePropertyData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDeviceInterfacePropertyData
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -92,15 +96,45 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff54
 ## Return Value
 
 <b>IoGetDeviceInterfacePropertyData</b> returns STATUS_SUCCESS if it is successful. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer that <i>Data</i> points to is too small to contain the property data. *<i>RequiredSize</i> contains the required buffer length.
+</dl>
+</td>
+<td width="60%">
+The buffer that <i>Data</i> points to is too small to contain the property data. *<i>RequiredSize</i> contains the required buffer length.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The specified LCID value is not valid.
+</dl>
+</td>
+<td width="60%">
+The specified LCID value is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>The specified property is not supported.
+</dl>
+</td>
+<td width="60%">
+The specified property is not supported.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -124,17 +158,12 @@ Callers of <b>IoGetDeviceInterfacePropertyData</b> must be running at IRQL = PAS
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
+
 <a href="..\wdm\nf-wdm-iosetdeviceinterfacepropertydata.md">IoSetDeviceInterfacePropertyData</a>
-</dt>
-</dl>
+
  
 
  

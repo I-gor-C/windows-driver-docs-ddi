@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 445A9EBA-EF15-4FE4-9747-3E1E138E13E7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetActivityIdThread
+ms.keywords : ntddk/IoGetActivityIdThread, kernel.iogetactivityidthread, IoGetActivityIdThread routine [Kernel-Mode Driver Architecture], IoGetActivityIdThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetActivityIdThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 

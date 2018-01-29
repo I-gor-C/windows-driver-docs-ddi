@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : E697F53C-2642-4E3F-AA8C-D0802B39D187
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetDeviceStackIoType
+ms.keywords : wdfdevice/WdfDeviceGetDeviceStackIoType, wdf.wdfdevicegetdevicestackiotype, WdfDeviceGetDeviceStackIoType method, WdfDeviceGetDeviceStackIoType, PFN_WDFDEVICEGETDEVICESTACKIOTYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceGetDeviceStackIoType
-req.alt-loc : WUDFx02000.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : WUDFx02000.lib
 req.dll : WUDFx02000.dll; TBD
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -90,11 +94,8 @@ For more information about how the framework chooses a buffer access method, see
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
-</dt>
-</dl>
+
  
 
  

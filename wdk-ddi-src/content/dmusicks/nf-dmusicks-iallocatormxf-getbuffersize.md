@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b3a35769-a98a-40f5-bdc1-db964d2a967c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF, IAllocatorMXF::GetBufferSize, GetBufferSize
+ms.keywords : audio.iallocatormxf_getbuffersize, dmusicks/IAllocatorMXF::GetBufferSize, GetBufferSize, IAllocatorMXF interface [Audio Devices], GetBufferSize method, IAllocatorMXF::GetBufferSize, GetBufferSize method [Audio Devices], IAllocatorMXF interface, audmp-routines_5eb7fc90-4f40-4796-9c7c-2086689f1593.xml, IAllocatorMXF, GetBufferSize method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IAllocatorMXF.GetBufferSize
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -72,14 +76,10 @@ This function has no parameters.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536492">IAllocatorMXF::GetBuffer</a>
-</dt>
-</dl>
+
  
 
  

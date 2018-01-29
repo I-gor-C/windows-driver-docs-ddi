@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ab97d0b0-00fc-499c-9b1b-83731fe8e935
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ClearCache_OUT, ClearCache_OUT, *PClearCache_OUT
+ms.keywords : ClearCache_OUT, iscsiop/PClearCache_OUT, iscsiop/ClearCache_OUT, *PClearCache_OUT, _ClearCache_OUT, structs-iSCSI_e96c134a-dfb1-474a-b730-1fb6e8d8f86f.xml, PClearCache_OUT structure pointer [Storage Devices], PClearCache_OUT, storage.clearcache_out, ClearCache_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClearCache_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ClearCache_OUT, *PClearCache_OUT
 ---
 
@@ -46,13 +50,13 @@ typedef struct _ClearCache_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            On output from <b>ClearCache</b>, the status of the <b>ClearCache</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`Status`
 
-    ## Remarks
-        You must implement this method.
+On output from <b>ClearCache</b>, the status of the <b>ClearCache</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,19 +66,14 @@ typedef struct _ClearCache_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552442">ClearCache</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552442">ClearCache</a>
+
  
 
  

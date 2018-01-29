@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : DFD077B7-307B-439B-828D-DC225FC5AAA0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WDI_TX_METADATA, WDI_TX_METADATA, *PWDI_TX_METADATA
+ms.keywords : audio.pfndrmforwardcontenttointerface, DRMForwardContentToInterface callback function [Audio Devices], DRMForwardContentToInterface, PFNDRMFORWARDCONTENTTOINTERFACE, PFNDRMFORWARDCONTENTTOINTERFACE, drmk/DRMForwardContentToInterface, DRMForwardContentToInterface callback function [Audio Devices], DRMForwardContentToInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DRMForwardContentToInterface
-req.alt-loc : Drmk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 

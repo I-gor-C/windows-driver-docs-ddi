@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 054d1673-0c1a-4ceb-821a-d61bf28392cf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CLS_IO_STATISTICS, CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, PPCLS_IO_STATISTICS, CLFS_IO_STATISTICS, *PCLFS_IO_STATISTICS
+ms.keywords : PCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], kstruct_a_2e43db78-8c4e-462f-ad85-8c799be2f2e3.xml, PPCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], CLFS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], PPCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], wdm/PPCLS_IO_STATISTICS, wdm/PPCLFS_IO_STATISTICS, CLS_IO_STATISTICS, wdm/CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, _CLS_IO_STATISTICS, kernel.clfs_io_statistics, wdm/PCLS_IO_STATISTICS, PCLS_IO_STATISTICS, CLS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], wdm/PCLFS_IO_STATISTICS, PPCLFS_IO_STATISTICS, *PCLFS_IO_STATISTICS, wdm/CLFS_IO_STATISTICS, PPCLS_IO_STATISTICS, CLFS_IO_STATISTICS, PCLFS_IO_STATISTICS, PCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CLS_IO_STATISTICS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, PPCLS_IO_STATISTICS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PCLS_IO_STATISTICS, PPCLS_IO_STATISTICS, CLS_IO_STATISTICS"
 req.product : Windows 10 or later.
 ---
 
@@ -51,26 +55,26 @@ typedef struct _CLS_IO_STATISTICS {
 
 ## Members
 
-        
-            `cbFlush`
 
-            The number of bytes of data flushed.
-        
-            `cbMetaFlush`
+`cbFlush`
 
-            The number of bytes of metadata flushed.
-        
-            `cFlush`
+The number of bytes of data flushed.
 
-            The number of data flushes.
-        
-            `cMetaFlush`
+`cbMetaFlush`
 
-            The number of metadata flushes.
-        
-            `hdrIoStats`
+The number of bytes of metadata flushed.
 
-            A <a href="..\wdm\ns-wdm-_cls_io_statistics_header.md">CLFS_IO_STATISTICS_HEADER</a> structure that holds header information for the set of statistics.
+`cFlush`
+
+The number of data flushes.
+
+`cMetaFlush`
+
+The number of metadata flushes.
+
+`hdrIoStats`
+
+A <a href="..\wdm\ns-wdm-_cls_io_statistics_header.md">CLFS_IO_STATISTICS_HEADER</a> structure that holds header information for the set of statistics.
 
 
 ## Requirements
@@ -81,16 +85,12 @@ typedef struct _CLS_IO_STATISTICS {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-clfsgetiostatistics.md">ClfsGetIoStatistics</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_cls_io_statistics_header.md">CLFS_IO_STATISTICS_HEADER</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c2d775b1-364a-4c50-bd5e-dab9d9e07b83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtRollforwardTransactionManager
+ms.keywords : kernel.zwrollforwardtransactionmanager, wdm/NtRollforwardTransactionManager, NtRollforwardTransactionManager, ZwRollforwardTransactionManager, wdm/ZwRollforwardTransactionManager, ktm_ref_79b2cde2-5fd0-431f-a776-f4cd6fda1e45.xml, ZwRollforwardTransactionManager routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwRollforwardTransactionManager,NtRollforwardTransactionManager
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,23 +66,67 @@ A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbb
 ## Return Value
 
 <b>ZwRollforwardTransactionManager</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The specified handle is not a handle to a transaction manager object.
+</dl>
+</td>
+<td width="60%">
+The specified handle is not a handle to a transaction manager object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>An object handle is invalid.
+</dl>
+</td>
+<td width="60%">
+An object handle is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller does not have appropriate access to the transaction manager object.
+</dl>
+</td>
+<td width="60%">
+The caller does not have appropriate access to the transaction manager object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TM_VOLATILE</b></dt>
-</dl>The specified transaction manager object does not have a log file, so recovery is not available.
+</dl>
+</td>
+<td width="60%">
+The specified transaction manager object does not have a log file, so recovery is not available.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The specified transaction manager object is in an unexpected state.
+</dl>
+</td>
+<td width="60%">
+The specified transaction manager object is in an unexpected state.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -110,23 +158,16 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-tmrecovertransactionmanager.md">TmRecoverTransactionManager</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwrecovertransactionmanager.md">ZwRecoverTransactionManager</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
+
+<a href="..\wdm\nf-wdm-tmrecovertransactionmanager.md">TmRecoverTransactionManager</a>
+
+<a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

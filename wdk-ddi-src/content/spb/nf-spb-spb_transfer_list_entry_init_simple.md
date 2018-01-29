@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 38F50F76-5D14-47CE-A211-3FC4F1399A74
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE
+ms.keywords : spb/SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE, SPB.spb_transfer_list_entry_init_simple, SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function [Buses], SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE
-req.alt-loc : Spb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,19 +26,21 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any IRQL
-req.typenames : SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSPB_TRANSFER_DIRECTION, SPB_TRANSFER_DIRECTION"
 req.product : Windows 10 or later.
 ---
 
 
 # SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function
-The <b>SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE</b> function returns an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structure that is initialized to describe a simple data buffer.
-
-
-
 The <b>SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE</b> function returns an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structure that is initialized to describe a simple data buffer.
 
 ## Syntax
@@ -97,17 +97,12 @@ This initialization function returns an unnamed local variable of type <b>SPB_TR
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406217">SPB_TRANSFER_BUFFER_LIST_ENTRY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406216">SPB_TRANSFER_BUFFER_FORMAT</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406216">SPB_TRANSFER_BUFFER_FORMAT</a>
+
  
 
  

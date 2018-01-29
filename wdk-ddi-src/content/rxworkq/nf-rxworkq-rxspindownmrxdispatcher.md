@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0ec10c43-df57-4661-9106-8edc6b76f5d7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxSpinDownMRxDispatcher
+ms.keywords : rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, rxworkq/RxSpinDownMRxDispatcher, RxSpinDownMRxDispatcher, ifsk.rxspindownmrxdispatcher, RxSpinDownMRxDispatcher function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The RxSpinDownMRxDispatcher routine is only availabl
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxSpinDownMRxDispatcher
-req.alt-loc : rxworkq.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -78,14 +82,10 @@ The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>R
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxworkq\nf-rxworkq-rxdispatchtoworkerthread.md">RxDispatchToWorkerThread</a>
-</dt>
-<dt>
 <a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a>
-</dt>
-</dl>
+
+<a href="..\rxworkq\nf-rxworkq-rxdispatchtoworkerthread.md">RxDispatchToWorkerThread</a>
+
  
 
  

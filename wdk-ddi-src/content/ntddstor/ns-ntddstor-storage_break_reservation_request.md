@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 06de4432-9437-4275-8d1e-606f209e1468
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STORAGE_BREAK_RESERVATION_REQUEST, *PSTORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST
+ms.keywords : storage.storage_break_reservation_request, structs-general_f902ea12-3b3d-4eb7-9ac2-9a5abfabe13c.xml, STORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST structure [Storage Devices], *PSTORAGE_BREAK_RESERVATION_REQUEST, PSTORAGE_BREAK_RESERVATION_REQUEST structure pointer [Storage Devices], ntddstor/STORAGE_BREAK_RESERVATION_REQUEST, ntddstor/PSTORAGE_BREAK_RESERVATION_REQUEST, PSTORAGE_BREAK_RESERVATION_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_BREAK_RESERVATION_REQUEST
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_BREAK_RESERVATION_REQUEST, *PSTORAGE_BREAK_RESERVATION_REQUEST
 ---
 
 # STORAGE_BREAK_RESERVATION_REQUEST structure
@@ -50,26 +54,26 @@ typedef struct STORAGE_BREAK_RESERVATION_REQUEST {
 
 ## Members
 
-        
-            `_unused`
 
-            Reserved. Do not use.
-        
-            `Length`
+`_unused`
 
-            Contains the length of this structure in bytes.
-        
-            `Lun`
+Reserved. Do not use.
 
-            Contains the logical unit number.
-        
-            `PathId`
+`Length`
 
-            Indicates the number of the bus to be reset.
-        
-            `TargetId`
+Contains the length of this structure in bytes.
 
-            Contains the number of the target device.
+`Lun`
+
+Contains the logical unit number.
+
+`PathId`
+
+Indicates the number of the bus to be reset.
+
+`TargetId`
+
+Contains the number of the target device.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct STORAGE_BREAK_RESERVATION_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_break_reservation.md">IOCTL_STORAGE_BREAK_RESERVATION</a>
-</dt>
-</dl>
+
  
 
  

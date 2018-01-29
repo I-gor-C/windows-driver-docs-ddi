@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5c325c16-6bc6-4eae-a58c-234d11616780
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL
+ms.keywords : umdf.security_impersonation_level, umdfstructs_f81ccb0e-4b8c-4a8a-bdd3-4b4a45a750ab.xml, SecurityDelegation, SECURITY_IMPERSONATION_LEVEL enumeration, SecurityImpersonation, SECURITY_IMPERSONATION_LEVEL, SecurityAnonymous, SecurityIdentification, wudfddi/SecurityIdentification, wudfddi/SecurityAnonymous, _SECURITY_IMPERSONATION_LEVEL, wdf.security_impersonation_level, wudfddi/SecurityDelegation, wudfddi/SECURITY_IMPERSONATION_LEVEL, wudfddi/SecurityImpersonation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SECURITY_IMPERSONATION_LEVEL
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SECURITY_IMPERSONATION_LEVEL
 req.product : Windows 10 or later.
 ---
@@ -93,11 +97,8 @@ For more information about the security impersonation levels, see the <b>SECURIT
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
-</dt>
-</dl>
+
  
 
  

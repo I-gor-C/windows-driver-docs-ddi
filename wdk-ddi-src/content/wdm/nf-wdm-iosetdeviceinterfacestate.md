@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 071b5f2a-7129-4de5-9577-f2aa22f23765
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetDeviceInterfaceState
+ms.keywords : IoSetDeviceInterfaceState routine [Kernel-Mode Driver Architecture], k104_da5493d0-6dd5-4404-a647-6c23825df29c.xml, wdm/IoSetDeviceInterfaceState, IoSetDeviceInterfaceState, kernel.iosetdeviceinterfacestate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetDeviceInterfaceState
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive1, LowerDriverReturn, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,9 +66,23 @@ Pointer to a string that identifies the device interface instance that is being 
 ## Return Value
 
 <b>IoSetDeviceInterfaceState</b> returns STATUS_SUCCESS if the call was successful. This routine returns an informational status of STATUS_OBJECT_NAME_EXISTS if the caller requested to enable a device interface that was already enabled. Possible error return values are described following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>The caller tried to disable a device interface that was not enabled.
+</dl>
+</td>
+<td width="60%">
+The caller tried to disable a device interface that was not enabled.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -98,26 +116,18 @@ Callers of <b>IoSetDeviceInterfaceState</b> must be running at IRQL = PASSIVE_LE
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
+
+<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
+
+<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
+
  
 
  

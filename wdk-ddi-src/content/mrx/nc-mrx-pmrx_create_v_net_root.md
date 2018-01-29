@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8cd5aa01-c814-4737-9088-0361e6ee9a61
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
+ms.keywords : ifsk.mrxcreatevnetroot, MRxCreateVNetRoot routine [Installable File System Drivers], MRxCreateVNetRoot, PMRX_CREATE_V_NET_ROOT, PMRX_CREATE_V_NET_ROOT, mrx/MRxCreateVNetRoot, mrxref_8d77acec-f7a5-40c6-8543-421c5c1f79f5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MRxCreateVNetRoot
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -63,42 +67,58 @@ RDBSS expects that <i>MRxCreateVNetRoot</i> returns STATUS_PENDING on success or
 The final completion status is returned in <b>pCreateNetRootContext-&gt;VirtualNetRootStatus</b> and <b>pCreateNetRootContext-&gt;NetRootStatus</b> members once the call completes and the routine in the <b>Callback</b> member of <b>pCreateNetRootContext</b> structure is called by the network mini-redirector. These members initially contain STATUS_SUCCESS until the network mini-redirector changes this value on completion. If the call completed successfully, both of the members contain STATUS_SUCCESS. 
 
 On failure to create a NET_ROOT structure, one of the following common error codes for the <b>NetRootStatus</b> member is returned (although other error codes are possible):
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_CONNECTION_RESET</b></dt>
-</dl>The connection to the remote resource was reset. 
+</dl>
+</td>
+<td width="60%">
+The connection to the remote resource was reset. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_IO_TIMEOUT</b></dt>
-</dl>A time out occurred on an I/O request.
+</dl>
+</td>
+<td width="60%">
+A time out occurred on an I/O request.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_RETRY</b></dt>
-</dl>A remote boot server was not ready to satisfy the request. 
+</dl>
+</td>
+<td width="60%">
+A remote boot server was not ready to satisfy the request. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNEXPECTED_NETWORK_ERROR</b></dt>
-</dl>An unexpected network error occurred usually caused by an invalid handle.
+</dl>
+</td>
+<td width="60%">
+An unexpected network error occurred usually caused by an invalid handle.
 
- 
+</td>
+</tr>
+</table> 
 
 On failure to create a V_NET_ROOT structure, one of the following common error codes for the <i>VirtualNetRootStatus</i> is returned (although other error codes are possible):
-<dl>
-<dd>STATUS_INVALID_HANDLE<dl>
-<dd>An invalid handle was found.</dd>
-</dl>
-</dd>
-<dd>STATUS_RETRY<dl>
-<dd>This value can be returned for a remote boot server.</dd>
-</dl>
-</dd>
-<dd>STATUS_UNEXPECTED_NETWORK_ERROR<dl>
-<dd>An unexpected network error occurred usually caused by an invalid handle.</dd>
-</dl>
-</dd>
-</dl><dl>
-<dd>An invalid handle was found.</dd>
-</dl><dl>
-<dd>This value can be returned for a remote boot server.</dd>
-</dl><dl>
-<dd>An unexpected network error occurred usually caused by an invalid handle.</dd>
-</dl>
 
 ## Remarks
 
@@ -107,12 +127,16 @@ The two important abstractions used in the interface between RDBSS and a network
 The creation of a NET_ROOT/V_NET_ROOT structure typically involves at least one network round trip. This operation can take considerable time to complete because a network connection with a remote resource may need to be established. To ensure that the asynchronous operations continue, the creation of a NET_ROOT/V_NET_ROOT structure is modeled as a two-phase activity. Each call to a network mini-redirector for creating a NET_ROOT/V_NET_ROOT structure is followed by a call back from the network mini-redirector to RDBSS that indicates to RDBSS the  completion status of the request to the network mini-redirector. Because RDBSS expects <i>MRxCreateVNetRoot</i> is completed asynchronously, RDBSS expects <i>MRxCreateVNetRoot</i> to return STATUS_PENDING. RDBSS will be notified using the callback routine when the call finally completes. 
 
 <i>MRxCreateVNetRoot</i> must deal with two cases of interest:
-
+<ol>
+<li>
 A new V_NET_ROOT structure and the associated new NET_ROOT structure are being created.
 
+</li>
+<li>
 A new V_NET_ROOT structure that is associated with an existing NET_ROOT structure is being created.
 
-These two cases can be distinguished by checking if the context associated with a NET_ROOT structure is <b>NULL</b>. 
+</li>
+</ol>These two cases can be distinguished by checking if the context associated with a NET_ROOT structure is <b>NULL</b>. 
 
 A network mini-redirector implementation of <i>MRxCreateVNetRoot</i> is expected to  return STATUS_PENDING to initial call. When processing is completed, the network mini-redirector would call the callback routine passed in as part of the <i>pCreateNetRootContext</i> parameter to notify RDBSS that the call was completed and return the completion status. The callback routine that the network mini-redirector should call up to is specified as the <b>Callback</b> member in the MRX_CREATENETROOT_CONTEXT structure passed as the <i>pCreateNetRootContext</i> parameter. The final completion status of the <i>MRxCreateVNetRoot</i> call must be stored in the <b>VirtualNetRootStatus</b> and <b>NetRootStatus</b> members of the <i>pCreateNetRootContext</i> parameter. Note that separate status is returned for the NET_ROOT and V_NET_ROOT structures.
 
@@ -142,38 +166,26 @@ When <i>MRxCreateVNetRoot</i> completes, the <i>pCreateNetRootContext</i> parame
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549864">MRxCreateSrvCall</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550649">MRxExtractNetRootName</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550653">MRxFinalizeNetRoot</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550656">MRxFinalizeSrvCall</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550663">MRxFinalizeVNetRoot</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550750">MRxPreparseName</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550824">MRxSrvCallWinnerNotify</a>
-</dt>
-<dt>
 <a href="..\rxstruc\nf-rxstruc-rxgetrdbssprocess.md">RxGetRDBSSProcess</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549864">MRxCreateSrvCall</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550750">MRxPreparseName</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550656">MRxFinalizeSrvCall</a>
+
+<a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550653">MRxFinalizeNetRoot</a>
+
 <a href="..\rxworkq\nf-rxworkq-rxdispatchtoworkerthread.md">RxDispatchToWorkerThread</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550649">MRxExtractNetRootName</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550824">MRxSrvCallWinnerNotify</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550663">MRxFinalizeVNetRoot</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : debugger\getinstructionoffset.htm
 old-project : debugger
 ms.assetid : f82416c9-1f4a-4083-b4df-f0d97eae2127
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugRegisters2, IDebugRegisters2::GetInstructionOffset, GetInstructionOffset
+ms.date : 1/19/2018
+ms.keywords : GetInstructionOffset method [Windows Debugging], IDebugRegisters interface [Windows Debugging], GetInstructionOffset method, IDebugRegisters::GetInstructionOffset, IDebugRegisters2::GetInstructionOffset, debugger.getinstructionoffset, IDebugRegisters2, GetInstructionOffset, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset method, GetInstructionOffset method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_229180dd-2da4-4ff1-9284-520bef0b6843.xml, dbgeng/IDebugRegisters2::GetInstructionOffset, GetInstructionOffset method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::GetInstructionOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugRegisters.GetInstructionOffset,IDebugRegisters2.GetInstructionOffset
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -56,9 +60,23 @@ Receives the location in the target's virtual address space of the target's curr
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -82,19 +100,14 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546933">GetInstructionOffset2</a>
-</dt>
-</dl>
- 
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters::GetInstructionOffset method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters::GetInstructionOffset method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

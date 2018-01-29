@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ebcbec0c-c5ee-4af1-be3c-36c730f82f4e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WRITE_REGISTER_USHORT
+ms.keywords : WRITE_REGISTER_USHORT routine [Kernel-Mode Driver Architecture], wdm/WRITE_REGISTER_USHORT, k103_bc20d667-b3c7-4e46-a21d-06123e73d348.xml, kernel.write_register_ushort, WRITE_REGISTER_USHORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WRITE_REGISTER_USHORT
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -65,7 +69,7 @@ None
 
 ## Remarks
 
-Callers of <b>WRITE_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory. </p>
+Callers of <b>WRITE_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |

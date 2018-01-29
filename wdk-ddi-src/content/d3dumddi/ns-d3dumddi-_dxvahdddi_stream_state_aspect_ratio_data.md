@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 12d33e2d-63d3-4cc8-9b50-5156132b2e72
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
+ms.keywords : d3dumddi/DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVA2_Structs_daab6809-2f81-4892-9f56-c57254047627.xml, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure [Display Devices], display.dxvahdddi_stream_state_aspect_ratio_data, _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA is supporte
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 ---
 
@@ -48,21 +52,21 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA {
 
 ## Members
 
-        
-            `DestinationAspectRatio`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the destination. The default is (1, 1).
-        
-            `Enable`
+`DestinationAspectRatio`
 
-            [in] A Boolean value that specifies whether the pixel aspect ratios are available. The default value is <b>FALSE</b>, which indicates that the pixel aspect ratios are not available.
-        
-            `SourceAspectRatio`
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the destination. The default is (1, 1).
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the source. The default is (1, 1).
+`Enable`
 
-    ## Remarks
-        The driver might require the source and destination pixel aspect ratios to achieve the best result. 
+[in] A Boolean value that specifies whether the pixel aspect ratios are available. The default value is <b>FALSE</b>, which indicates that the pixel aspect ratios are not available.
+
+`SourceAspectRatio`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the source. The default is (1, 1).
+
+## Remarks
+The driver might require the source and destination pixel aspect ratios to achieve the best result. 
 
 The <b>DXVAHDDDI_STREAM_STATE_ASPECT_RATIO</b> stream state is best set along with the <b>DXVAHDDDI_STREAM_STATE_FILTER_ANAMORPHIC_SCALING</b> stream state.
 
@@ -76,13 +80,10 @@ Pixel aspect ratios (0, any value) and (any value, 0) are invalid and causes the
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a>
-</dt>
-</dl>
+
  
 
  

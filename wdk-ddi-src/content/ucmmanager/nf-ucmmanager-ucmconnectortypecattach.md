@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D778E6B6-B245-41D5-B25B-1CF183146BA9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorTypeCAttach
+ms.keywords : UcmConnectorTypeCAttach, buses.ucmconnectortypecattach, ucmmanager/UcmConnectorTypeCAttach, UcmConnectorTypeCAttach method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmConnectorTypeCAttach
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -52,11 +56,11 @@ NTSTATUS UcmConnectorTypeCAttach(
 
 `Connector`
 
-
+Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
 
 `Params`
 
-
+A pointer to a driver-allocated <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> that has been initialized by  calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_attach_params_init.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>.
 
 
 ## Return Value
@@ -84,17 +88,12 @@ Typically, every  <b>UcmConnectorTypeCAttach</b> call has a subsequent <a href="
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-<dt>
 <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
-</dt>
-<dt>
+
 <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_attach_params_init.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>
-</dt>
-</dl>
+
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
+
  
 
  

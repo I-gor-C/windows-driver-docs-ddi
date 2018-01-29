@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 83f6a599-0b35-4a02-b20f-80abcc6eae4f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUshortByteSwap
+ms.keywords : k109_36a00506-f4e3-467b-9494-c13b2ea70a1f.xml, kernel.rtlushortbyteswap, wdm/RtlUshortByteSwap, RtlUshortByteSwap, RtlUshortByteSwap routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUshortByteSwap
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,14 +86,10 @@ To reverse the ordering of bytes in a ULONG value, use the <a href="..\wdm\nf-wd
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlulongbyteswap.md">RtlUlongByteSwap</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlulonglongbyteswap.md">RtlUlonglongByteSwap</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlulongbyteswap.md">RtlUlongByteSwap</a>
+
  
 
  

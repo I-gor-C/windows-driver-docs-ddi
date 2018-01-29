@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c834080a-1a0a-4327-b80b-6e5eb3728605
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_SETPOINTERPOSITIONFLAGS, DXGK_SETPOINTERPOSITIONFLAGS
+ms.keywords : _DXGK_SETPOINTERPOSITIONFLAGS, DXGK_SETPOINTERPOSITIONFLAGS, display.dxgk_setpointerpositionflags, DmStructs_57c5d8e6-b270-4423-8d85-5db8103e2492.xml, DXGK_SETPOINTERPOSITIONFLAGS structure [Display Devices], d3dkmddi/DXGK_SETPOINTERPOSITIONFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_SETPOINTERPOSITIONFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_SETPOINTERPOSITIONFLAGS
 ---
 
@@ -63,13 +67,10 @@ typedef struct _DXGK_SETPOINTERPOSITIONFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_setpointerposition.md">DXGKARG_SETPOINTERPOSITION</a>
-</dt>
-</dl>
+
  
 
  

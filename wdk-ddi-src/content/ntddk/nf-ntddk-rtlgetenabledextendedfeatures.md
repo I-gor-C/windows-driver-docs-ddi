@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c23d3bfd-a83c-4480-b5a1-b057201ea279
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlGetEnabledExtendedFeatures
+ms.keywords : RtlGetEnabledExtendedFeatures, XSTATE_MASK_LEGACY, XSTATE_MASK_LEGACY_SSE, XSTATE_MASK_GSSE, k109_94843b2d-9abe-4b82-a781-dd2863ddc9c1.xml, XSTATE_MASK_LEGACY_FLOATING_POINT, RtlGetEnabledExtendedFeatures routine [Kernel-Mode Driver Architecture], kernel.rtlgetenabledextendedfeatures, wdm/RtlGetEnabledExtendedFeatures
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlGetEnabledExtendedFeatures
-req.alt-loc : NtDll.dll,NtosKrnl.exe,API-MS-Win-Core-XState-l1-1-0.dll,API-MS-Win-Core-XState-l1-1-1.dll,API-MS-Win-Core-XState-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ntdll.lib (user mode); NtosKrnl.lib (kernel mode); OneCoreUAP.lib on Windows 10
 req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -51,13 +55,52 @@ ULONG64 RtlGetEnabledExtendedFeatures(
 `FeatureMask`
 
 A 64-bit feature mask. This parameter indicates a set of extended processor features for which the caller requests information about whether the features are enabled. If a mask bit is one, the caller requests information about the feature that corresponds to this mask bit. The caller sets all other mask bits to zero. Set this parameter to (ULONG64)(-1) to get the mask of all enabled features. To determine whether a particular set of features is enabled, set this parameter to the bitwise OR of one or more of the following <b>XSTATE_MASK_<i>XXX</i></b> flag bits:
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="XSTATE_MASK_LEGACY_FLOATING_POINT"></a><a id="xstate_mask_legacy_floating_point"></a><dl>
+<dt><b>XSTATE_MASK_LEGACY_FLOATING_POINT</b></dt>
+</dl>
+</td>
+<td width="60%">
+The floating-point extension (x87/MMX).
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="XSTATE_MASK_LEGACY_SSE"></a><a id="xstate_mask_legacy_sse"></a><dl>
+<dt><b>XSTATE_MASK_LEGACY_SSE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The streaming SIMD extension (SSE).
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="XSTATE_MASK_LEGACY"></a><a id="xstate_mask_legacy"></a><dl>
+<dt><b>XSTATE_MASK_LEGACY</b></dt>
+</dl>
+</td>
+<td width="60%">
+Both the x87/MMX and SSE extensions.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="XSTATE_MASK_GSSE"></a><a id="xstate_mask_gsse"></a><dl>
+<dt><b>XSTATE_MASK_GSSE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The Intel Sandy Bridge (formerly Gesher) SSE extension.
+
+</td>
+</tr>
+</table>
 
 
 ## Return Value
@@ -84,11 +127,8 @@ Another routine, <a href="..\wdm\nf-wdm-exisprocessorfeaturepresent.md">ExIsProc
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exisprocessorfeaturepresent.md">ExIsProcessorFeaturePresent</a>
-</dt>
-</dl>
+
  
 
  

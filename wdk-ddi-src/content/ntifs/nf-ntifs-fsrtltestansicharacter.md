@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b667f0c9-7746-432e-ae58-3fe5b48309e0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlTestAnsiCharacter
+ms.keywords : fsrtlref_7ef89c09-f42e-433a-90bf-59452fd1b7c4.xml, ntifs/FsRtlTestAnsiCharacter, ifsk.fsrtltestansicharacter, FsRtlTestAnsiCharacter function [Installable File System Drivers], FsRtlTestAnsiCharacter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlTestAnsiCharacter
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -53,19 +57,19 @@ BOOLEAN FsRtlTestAnsiCharacter(
 
 `C`
 
-
+TBD
 
 `DEFAULT_RET`
 
-
+TBD
 
 `WILD_OK`
 
-
+TBD
 
 `FLAGS`
 
-
+TBD
 
 
 ## Return Value
@@ -90,20 +94,14 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md">FsRtlIsAnsiCharacterLegalFat</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md">FsRtlIsAnsiCharacterLegalHpfs</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md">FsRtlIsAnsiCharacterLegalNtfs</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md">FsRtlIsAnsiCharacterLegalFat</a>
+
  
 
  

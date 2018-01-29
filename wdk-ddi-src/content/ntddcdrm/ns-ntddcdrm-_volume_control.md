@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 47512360-60fe-43f2-8052-58ca78e36d86
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VOLUME_CONTROL, *PVOLUME_CONTROL, VOLUME_CONTROL
+ms.keywords : storage.volume_control, PVOLUME_CONTROL structure pointer [Storage Devices], structs-CD-ROM_d0d59b00-4eb3-4e98-b164-cb8f3e11de31.xml, VOLUME_CONTROL structure [Storage Devices], VOLUME_CONTROL, _VOLUME_CONTROL, *PVOLUME_CONTROL, ntddcdrm/VOLUME_CONTROL, PVOLUME_CONTROL, ntddcdrm/PVOLUME_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VOLUME_CONTROL
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVOLUME_CONTROL, VOLUME_CONTROL"
 ---
 
@@ -46,10 +50,10 @@ typedef struct _VOLUME_CONTROL {
 
 ## Members
 
-        
-            `PortVolume`
 
-            Pointer to an array of volume values, one for each of the ports, with a maximum of four ports.
+`PortVolume`
+
+Pointer to an array of volume values, one for each of the ports, with a maximum of four ports.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _VOLUME_CONTROL {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_volume.md">IOCTL_CDROM_GET_VOLUME</a>
-</dt>
-</dl>
+
  
 
  

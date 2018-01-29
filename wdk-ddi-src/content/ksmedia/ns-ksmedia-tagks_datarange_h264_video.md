@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E52B252F-0530-4543-A44C-95D4198504CA
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO, *PKS_DATARANGE_H264_VIDEO
+ms.keywords : stream.ks_datarange_h264_video, ksmedia/KS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO, tagKS_DATARANGE_H264_VIDEO, PKS_DATARANGE_H264_VIDEO, ksmedia/PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO structure [Streaming Media Devices], PKS_DATARANGE_H264_VIDEO structure pointer [Streaming Media Devices], *PKS_DATARANGE_H264_VIDEO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATARANGE_H264_VIDEO
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_DATARANGE_H264_VIDEO, *PKS_DATARANGE_H264_VIDEO
 ---
 
@@ -52,34 +56,34 @@ typedef struct _KS_DATARANGE_H264_VIDEO {
 
 ## Members
 
-        
-            `bFixedSizeSamples`
 
-            Specifies that all the samples are the same size if set to <b>TRUE</b>.
-        
-            `bTemporalCompression`
+`bFixedSizeSamples`
 
-            Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
-        
-            `ConfigCaps`
+Specifies that all the samples are the same size if set to <b>TRUE</b>.
 
-            Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
-        
-            `DataRange`
+`bTemporalCompression`
 
-            Specifies the major identifier for the format.
-        
-            `MemoryAllocationFlags`
+Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
 
-            Unused and should be set to zero.
-        
-            `StreamDescriptionFlags`
+`ConfigCaps`
 
-            Unused and should be set to zero.
-        
-            `VideoInfoHeader`
+Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
 
-            Specifies the details of the video stream.
+`DataRange`
+
+Specifies the major identifier for the format.
+
+`MemoryAllocationFlags`
+
+Unused and should be set to zero.
+
+`StreamDescriptionFlags`
+
+Unused and should be set to zero.
+
+`VideoInfoHeader`
+
+Specifies the details of the video stream.
 
 
 ## Requirements
@@ -90,19 +94,14 @@ typedef struct _KS_DATARANGE_H264_VIDEO {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-tagks_h264videoinfo.md">KS_H264VIDEOINFO</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
  
 
  

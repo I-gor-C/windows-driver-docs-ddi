@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 08CCC4A8-2D85-436D-B18E-77C91A24F59C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG
+ms.keywords : GNSS_SUPL_HSLP_CONFIG structure [Sensor Devices], gnssdriver/PGNSS_SUPL_HSLP_CONFIG, PGNSS_SUPL_HSLP_CONFIG structure pointer [Sensor Devices], sensors.gnss_supl_hslp_config, gnssdriver/GNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG, PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_SUPL_HSLP_CONFIG
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : GNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG"
 ---
 
 # GNSS_SUPL_HSLP_CONFIG structure
@@ -51,18 +55,30 @@ typedef struct {
 
 ## Members
 
-        
-            `Reserved`
 
-            Reserved for future use.
-        
-            `Size`
+`Reserved`
 
-            Structure size.
-        
-            `Version`
+Reserved for future use.
 
-            Version number.
+`Size`
+
+Structure size.
+
+`SuplHslp`
+
+
+
+`SuplHslpFromImsi`
+
+
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ec9fd207-4ed8-4bc9-b240-b5214e8c7f67
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camconfigureex, CamConfigureEx, CamConfigureEx routine [Streaming Media Devices], CamConfigureEx, PCAM_CONFIGURE_ROUTINE_EX, PCAM_CONFIGURE_ROUTINE_EX, usbcamdi/CamConfigureEx, usbcmdpr_79d31303-32b2-493e-87b6-d6e1a9ad292d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CamConfigureEx
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -117,23 +121,16 @@ This function is required.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md">USBCAMD_DEVICE_DATA2</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\ns-usbcamdi-_pipe_config_descriptor.md">USBCAMD_Pipe_Config_Descriptor</a>
-</dt>
-<dt>
 <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\usbcamdi\ns-usbcamdi-_pipe_config_descriptor.md">USBCAMD_Pipe_Config_Descriptor</a>
+
+<a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md">USBCAMD_DEVICE_DATA2</a>
+
+<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
+
  
 
  

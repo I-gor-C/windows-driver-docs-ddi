@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 87e20abc-eb65-40c0-943e-eb194022a2de
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmGetSystemRoutineAddress
+ms.keywords : k106_4cd56243-e8f4-428a-95f2-4e7a1d2a7396.xml, kernel.mmgetsystemroutineaddress, wdm/MmGetSystemRoutineAddress, MmGetSystemRoutineAddress routine [Kernel-Mode Driver Architecture], MmGetSystemRoutineAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmGetSystemRoutineAddress
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ Drivers can use this routine to determine if a routine is available on a specifi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-ioiswdmversionavailable.md">IoIsWdmVersionAvailable</a>
-</dt>
-</dl>
+
  
 
  

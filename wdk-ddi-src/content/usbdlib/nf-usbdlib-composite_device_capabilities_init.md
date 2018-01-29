@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 92DDF65E-4B5B-443A-9C90-3B1BB2DD3CAF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : COMPOSITE_DEVICE_CAPABILITIES_INIT
+ms.keywords : usbdlib/COMPOSITE_DEVICE_CAPABILITIES_INIT, COMPOSITE_DEVICE_CAPABILITIES_INIT, buses.composite_driver_capabilities_init, COMPOSITE_DEVICE_CAPABILITIES_INIT routine [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista a
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : COMPOSITE_DEVICE_CAPABILITIES_INIT
-req.alt-loc : Usbdex.lib,Usbdex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbdex.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -74,17 +78,12 @@ This routine does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usbdlib\ns-usbdlib-_composite_device_capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450897">How to Register a Composite Device</a>
-</dt>
-<dt>
+
+<a href="..\usbdlib\ns-usbdlib-_composite_device_capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a>
+
 <a href="..\usbdlib\ns-usbdlib-_register_composite_device.md">REGISTER_COMPOSITE_DEVICE</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : print\extpush.htm
 old-project : print
 ms.assetid : c38d7eca-6486-4bb1-b0a8-7f69fe13f7db
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _EXTPUSH, *PEXTPUSH, EXTPUSH
+ms.date : 1/18/2018
+ms.keywords : "*PEXTPUSH, _EXTPUSH, EXTPUSH structure [Print Devices], compstui/PEXTPUSH, EXTPUSH, cpsuifnc_d8f5e9ba-ef61-4adb-959f-1d0ebf456dad.xml, PEXTPUSH structure pointer [Print Devices], PEXTPUSH, print.extpush, compstui/EXTPUSH"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EXTPUSH
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PEXTPUSH, EXTPUSH"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : EXTPUSH, *PEXTPUSH
 ---
 
 # _EXTPUSH structure
@@ -58,23 +62,22 @@ typedef struct _EXTPUSH {
 
 ## Members
 
-        
-            `cbSize`
 
-            Size, in bytes, of the EXTPUSH structure.
-        
-            `dwReserved`
+`cbSize`
 
-            Reserved, must be initialized to zero.
-        
-            `Flags`
+Size, in bytes, of the EXTPUSH structure.
 
-            Bit flags, which can be one of the following:
-        
-            `IconID`
+`dwReserved`
 
-            One of the following icon identifiers:
+Reserved, must be initialized to zero.
 
+`Flags`
+
+Bit flags, which can be one of the following:
+
+`IconID`
+
+One of the following icon identifiers:
 <ul>
 <li>
 An icon resource identifier. This can be application-defined, or it can be one of the CPSUI-supplied, IDI_CPSUI-prefixed icon resource identifiers.
@@ -84,15 +87,14 @@ An icon resource identifier. This can be application-defined, or it can be one o
 An icon handle. If a handle is specified, EPF_ICONID_AS_HICON must be set in the <b>Flags</b> member.
 
 </li>
-</ul>
-CPSUI displays the icon next to the push button. If this value is zero, an icon is not displayed.
-        
-            `pTitle`
+</ul>CPSUI displays the icon next to the push button. If this value is zero, an icon is not displayed.
 
-            String identifier, representing the push button title. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.
+`pTitle`
 
-    ## Remarks
-        An extended push button is a CPSUI-defined type of push button that can be associated with an <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure. An OPTITEM structure can have one extended push button or one extended check box associated with it.
+String identifier, representing the push button title. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.
+
+## Remarks
+An extended push button is a CPSUI-defined type of push button that can be associated with an <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure. An OPTITEM structure can have one extended push button or one extended check box associated with it.
 
 When you use the EXTPUSH structure to create a push button, you can optionally create an additional dialog box that opens when the user clicks on the button. To create this dialog box, you should specify a pointer to a dialog box procedure in the <b>DlgProc</b> member, and include a dialog template specification in either the <b>DlgTemplateID</b> or the <b>hDlgTemplate</b> member.
 
@@ -112,15 +114,12 @@ If you do not need CPSUI to display a dialog box when the user clicks on the but
 | **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\compstui\ns-compstui-_extchkbox.md">EXTCHKBOX</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EXTPUSH structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EXTPUSH structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

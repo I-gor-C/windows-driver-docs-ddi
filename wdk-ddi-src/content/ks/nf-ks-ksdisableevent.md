@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4af94bc4-9df3-4b37-a810-303748cc4b75
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDisableEvent
+ms.keywords : stream.ksdisableevent, KsDisableEvent function [Streaming Media Devices], ks/KsDisableEvent, KsDisableEvent, ksfunc_e430d502-c847-43ee-bdea-d53200f45e53.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDisableEvent
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -90,11 +94,8 @@ It is important that the remove handler synchronize with event generation to ens
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksenableevent.md">KsEnableEvent</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 876cb283-ce0d-44ed-b515-d4ee31089b88
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VOLUME_PHYSICAL_OFFSETS, *PVOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS
+ms.keywords : storage.volume_physical_offsets, VOLUME_PHYSICAL_OFFSETS structure [Storage Devices], *PVOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS, PVOLUME_PHYSICAL_OFFSETS structure pointer [Storage Devices], structs-volumemgr_f5ee82b1-a42a-47aa-a3fd-116eeb3b441b.xml, _VOLUME_PHYSICAL_OFFSETS, ntddvol/VOLUME_PHYSICAL_OFFSETS, PVOLUME_PHYSICAL_OFFSETS, ntddvol/PVOLUME_PHYSICAL_OFFSETS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VOLUME_PHYSICAL_OFFSETS
-req.alt-loc : ntddvol.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS"
 ---
 
@@ -47,14 +51,14 @@ typedef struct _VOLUME_PHYSICAL_OFFSETS {
 
 ## Members
 
-        
-            `NumberOfPhysicalOffsets`
 
-            Contains the number of physical offsets returned by the call to <a href="..\ntddvol\ni-ntddvol-ioctl_volume_logical_to_physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>.
-        
-            `PhysicalOffset`
+`NumberOfPhysicalOffsets`
 
-            Contains an array of structures of type <a href="..\ntddvol\ns-ntddvol-_volume_physical_offset.md">VOLUME_PHYSICAL_OFFSET</a>. Each element of the array contains a pair consisting of a physical disk number and an accompanying physical offset &lt;disk number, disk offset&gt;.
+Contains the number of physical offsets returned by the call to <a href="..\ntddvol\ni-ntddvol-ioctl_volume_logical_to_physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>.
+
+`PhysicalOffset`
+
+Contains an array of structures of type <a href="..\ntddvol\ns-ntddvol-_volume_physical_offset.md">VOLUME_PHYSICAL_OFFSET</a>. Each element of the array contains a pair consisting of a physical disk number and an accompanying physical offset &lt;disk number, disk offset&gt;.
 
 
 ## Requirements
@@ -65,19 +69,14 @@ typedef struct _VOLUME_PHYSICAL_OFFSETS {
 | **Minimum UMDF version** |  |
 | **Header** | ntddvol.h (include Ntddvol.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddvol\ni-ntddvol-ioctl_volume_logical_to_physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>
-</dt>
-<dt>
-<a href="..\ntddvol\ni-ntddvol-ioctl_volume_physical_to_logical.md">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a>
-</dt>
-<dt>
 <a href="..\ntddvol\ns-ntddvol-_volume_physical_offset.md">VOLUME_PHYSICAL_OFFSET</a>
-</dt>
-</dl>
+
+<a href="..\ntddvol\ni-ntddvol-ioctl_volume_physical_to_logical.md">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a>
+
+<a href="..\ntddvol\ni-ntddvol-ioctl_volume_logical_to_physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>
+
  
 
  

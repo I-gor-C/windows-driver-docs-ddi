@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7e7778ba-cf4f-44e8-91ce-c53458d3db9a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSM_BDA_PIN, *PKSM_BDA_PIN, KSM_BDA_PIN
+ms.keywords : KSM_BDA_PIN structure [Streaming Media Devices], PKSM_BDA_PIN, KSM_BDA_PIN, PKSM_BDA_PIN structure pointer [Streaming Media Devices], *PKSM_BDA_PIN, _KSM_BDA_PIN, bdaref_190ab329-704e-472a-926c-1aa04d4b6df5.xml, bdamedia/KSM_BDA_PIN, stream.ksm_bda_pin, bdamedia/PKSM_BDA_PIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSM_BDA_PIN
-req.alt-loc : bdamedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSM_BDA_PIN, KSM_BDA_PIN"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSM_BDA_PIN, *PKSM_BDA_PIN
 ---
 
 # _KSM_BDA_PIN structure
@@ -51,14 +55,14 @@ typedef struct _KSM_BDA_PIN {
 
 ## Members
 
-        
-            `Method`
 
-            KSMETHOD structure that describes a method and request type of a method request.
-        
-            `Reserved`
+`Method`
 
-            Reserved.
+KSMETHOD structure that describes a method and request type of a method request.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements
@@ -69,13 +73,10 @@ typedef struct _KSM_BDA_PIN {
 | **Minimum UMDF version** |  |
 | **Header** | bdamedia.h (include Bdamedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-</dt>
-</dl>
+
  
 
  

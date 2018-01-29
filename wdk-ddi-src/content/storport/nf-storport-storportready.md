@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 37c19ee9-4741-448c-bcbe-12437f4f3b4d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReady
+ms.keywords : storport/StorPortReady, StorPortReady, storage.storportready, StorPortReady routine [Storage Devices], storprt_6938d8e3-03f8-4f40-a867-07b64d91a6a2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortReady
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ The functionality provided by this routine is exclusive to the Storport driver l
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportbusy.md">StorPortBusy</a>
-</dt>
-</dl>
+
  
 
  

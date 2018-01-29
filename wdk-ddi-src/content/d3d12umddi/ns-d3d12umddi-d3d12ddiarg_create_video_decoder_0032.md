@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d4d42334-ae09-4900-828b-86da81b446c1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_CREATE_VIDEO_DECODER_0032, D3D12DDIARG_CREATE_VIDEO_DECODER_0032
+ms.keywords : D3D12DDIARG_CREATE_VIDEO_DECODER_0032, display.d3d12ddiarg-create-video-decoder-0032, d3d12umddi/D3D12DDIARG_CREATE_VIDEO_DECODER_0032, D3D12DDIARG_CREATE_VIDEO_DECODER_0032 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_CREATE_VIDEO_DECODER_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_CREATE_VIDEO_DECODER_0032
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_0032 {
 
 ## Members
 
-        
-            `Configuration`
 
-            The video decode configuration.
-        
-            `NodeMask`
+`Configuration`
 
-            Represents the set of nodes.
+The video decode configuration.
+
+`NodeMask`
+
+Represents the set of nodes.
 
 
 ## Requirements

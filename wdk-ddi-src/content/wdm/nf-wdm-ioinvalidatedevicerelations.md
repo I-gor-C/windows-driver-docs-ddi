@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f312afec-10b3-4049-a4c1-154c11b4a869
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoInvalidateDeviceRelations
+ms.keywords : IoInvalidateDeviceRelations routine [Kernel-Mode Driver Architecture], kernel.ioinvalidatedevicerelations, k104_c839e20b-2be6-4586-86c9-57c773bf755f.xml, wdm/IoInvalidateDeviceRelations, IoInvalidateDeviceRelations
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoInvalidateDeviceRelations
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ After a bus driver calls <b>IoInvalidateDeviceRelations</b> to inform the PnP ma
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551670">IRP_MN_QUERY_DEVICE_RELATIONS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
-</dt>
-</dl>
+
  
 
  

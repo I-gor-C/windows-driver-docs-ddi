@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c3512a79-884f-4f38-9942-63a4a464585c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : USBCAMD_GetRegistryKeyValue
+ms.keywords : usbcamdi/USBCAMD_GetRegistryKeyValue, stream.usbcamd_getregistrykeyvalue, USBCAMD_GetRegistryKeyValue function [Streaming Media Devices], usbcmdpr_f93ab3a6-f063-4c69-819d-1aed77b8efe6.xml, USBCAMD_GetRegistryKeyValue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBCAMD_GetRegistryKeyValue
-req.alt-loc : usbcamd2.lib,usbcamd2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbcamd2.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -77,9 +81,23 @@ Specifies the length, in bytes, of the value or structure at <i>Data.</i>
 ## Return Value
 
 <b>USBCAMD_GetRegistryKeyValue </b>returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl>There was insufficient memory to continue.
+</dl>
+</td>
+<td width="60%">
+There was insufficient memory to continue.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

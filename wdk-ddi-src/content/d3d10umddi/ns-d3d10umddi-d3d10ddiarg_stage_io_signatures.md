@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9639bdc8-9b2f-4911-8a09-d5cf16204cf4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_STAGE_IO_SIGNATURES, D3D10DDIARG_STAGE_IO_SIGNATURES
+ms.keywords : UMDisplayDriver_Dx10param_Structs_877fde5f-64e9-455a-b7ed-453e4b6a9e15.xml, display.d3d10ddiarg_stage_io_signatures, D3D10DDIARG_STAGE_IO_SIGNATURES structure [Display Devices], d3d10umddi/D3D10DDIARG_STAGE_IO_SIGNATURES, D3D10DDIARG_STAGE_IO_SIGNATURES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10DDIARG_STAGE_IO_SIGNATURES
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10DDIARG_STAGE_IO_SIGNATURES
 ---
 
@@ -49,25 +53,25 @@ typedef struct D3D10DDIARG_STAGE_IO_SIGNATURES {
 
 ## Members
 
-        
-            `NumInputSignatureEntries`
 
-            [in] The number of entries in the array that the <b>pInputSignature</b> member specifies.
-        
-            `NumOutputSignatureEntries`
+`NumInputSignatureEntries`
 
-            [in] The number of entries in the array that the <b>pOutputSignature</b> member specifies.
-        
-            `pInputSignature`
+[in] The number of entries in the array that the <b>pInputSignature</b> member specifies.
 
-            [in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature.
-        
-            `pOutputSignature`
+`NumOutputSignatureEntries`
 
-            [in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature.
+[in] The number of entries in the array that the <b>pOutputSignature</b> member specifies.
 
-    ## Remarks
-        A signature is basically the union of all registers that are input and output by any shader that shares the signature. Therefore, a signature might be a superset of what a given shader might actually input or output. 
+`pInputSignature`
+
+[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature.
+
+`pOutputSignature`
+
+[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature.
+
+## Remarks
+A signature is basically the union of all registers that are input and output by any shader that shares the signature. Therefore, a signature might be a superset of what a given shader might actually input or output. 
 
 Hardware should determine that the upstream stage in the pipeline might provide some or all of the data in the signature that is laid out as the <b>pInputSignature</b> and <b>NumInputSignatureEntries</b> members specify. Similarly, hardware should determine that the downstream stage in the pipeline might consume some or all of the data in the signature that is laid out as the <b>pOutputSignature</b> and <b>NumOutputSignatureEntries</b> members specify.
 
@@ -83,13 +87,10 @@ The declarations within the shader code itself also show which registers are act
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a>
-</dt>
-</dl>
+
  
 
  

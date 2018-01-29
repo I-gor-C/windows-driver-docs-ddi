@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e298f51b-58b7-4f04-85d3-3ee809deb489
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortAllocateQueueTag
+ms.keywords : atartns_bae1e6d8-6ae5-4428-88a6-334a63fcefae.xml, irb/AtaPortAllocateQueueTag, AtaPortAllocateQueueTag routine [Storage Devices], storage.ataportallocatequeuetag, AtaPortAllocateQueueTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortAllocateQueueTag
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortAllocateQueueTag function
 The <b>AtaPortAllocateQueueTag</b> routine returns a queue tag for the specified device.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -52,7 +57,7 @@ UCHAR AtaPortAllocateQueueTag(
 
 `DeviceExtension`
 
-
+TBD
 
 `TargetId`
 
@@ -85,14 +90,10 @@ The <b>AtaPortAllocateQueueTag</b> routine allocates either a per device queue t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\irb\nf-irb-ataportinitializequeuetag.md">AtaPortInitializeQueueTag</a>
-</dt>
-<dt>
 <a href="..\irb\nf-irb-ataportreleasequeuetag.md">AtaPortReleaseQueueTag</a>
-</dt>
-</dl>
+
+<a href="..\irb\nf-irb-ataportinitializequeuetag.md">AtaPortInitializeQueueTag</a>
+
  
 
  

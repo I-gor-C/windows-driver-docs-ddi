@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3be2ef6c-391e-4d1c-a1a6-e3228f5cc67d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::GetType, GetType
+ms.keywords : GetType method, IWDFIoRequest interface, GetType, UMDFRequestObjectRef_8f8bc7b0-b527-4325-a2dc-a9ef5e73cc28.xml, IWDFIoRequest, wudfddi/IWDFIoRequest::GetType, IWDFIoRequest interface, GetType method, wdf.iwdfiorequest_gettype, umdf.iwdfiorequest_gettype, GetType method, IWDFIoRequest::GetType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.GetType
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,16 +59,6 @@ This function has no parameters.
 
 <b>GetType</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>-typed value that identifies the request type and why the request is sent to the driver.
 
-The following code example processes a request according to its operation type by first comparing the request object's type with a known type.
-
-<b>GetType</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>-typed value that identifies the request type and why the request is sent to the driver.
-
-The following code example processes a request according to its operation type by first comparing the request object's type with a known type.
-
-<b>GetType</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>-typed value that identifies the request type and why the request is sent to the driver.
-
-The following code example processes a request according to its operation type by first comparing the request object's type with a known type.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,14 +74,10 @@ The following code example processes a request according to its operation type b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
  
 
  

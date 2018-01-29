@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f437f94c-075e-43e6-bf28-0e7c7bd78c5a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CLEAR, D3DDDIARG_CLEAR
+ms.keywords : D3DDDIARG_CLEAR, display.d3dddiarg_clear, D3DDDIARG_CLEAR structure [Display Devices], _D3DDDIARG_CLEAR, UMDisplayDriver_param_Structs_64efff84-8fe3-40d4-b823-27e4a235fd86.xml, d3dumddi/D3DDDIARG_CLEAR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CLEAR
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CLEAR
 ---
 
@@ -49,23 +53,22 @@ typedef struct _D3DDDIARG_CLEAR {
 
 ## Members
 
-        
-            `FillColor`
 
-            [in] The color value that the driver should clear the context's render target to.
-        
-            `FillDepth`
+`FillColor`
 
-            [in] The value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the range from 0.0 through 1.0.
-        
-            `FillStencil`
+[in] The color value that the driver should clear the context's render target to.
 
-            [in] The value that the driver should clear the context's stencil buffer to. This member can be an integer in the range from 0 through 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.
-        
-            `Flags`
+`FillDepth`
 
-            [in] A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a> reference page.
+[in] The value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the range from 0.0 through 1.0.
 
+`FillStencil`
+
+[in] The value that the driver should clear the context's stencil buffer to. This member can be an integer in the range from 0 through 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.
+
+`Flags`
+
+[in] A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a> reference page.
 <table>
 <tr>
 <th>Value</th>
@@ -113,8 +116,8 @@ If rectangles are specified for clearing, the driver should clip them against th
 </tr>
 </table>
 
-    ## Remarks
-        In a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a> function, a pointer to a D3DDDIARG_CLEAR structure is passed in the <i>pData</i> parameter. The Microsoft Direct3D runtime passes information to the <i>NumRect</i> and <i>pRect</i> parameters in a call to the user-mode display driver's <b>Clear</b> function to specify the rectangular areas of the buffer that the driver should clear.
+## Remarks
+In a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a> function, a pointer to a D3DDDIARG_CLEAR structure is passed in the <i>pData</i> parameter. The Microsoft Direct3D runtime passes information to the <i>NumRect</i> and <i>pRect</i> parameters in a call to the user-mode display driver's <b>Clear</b> function to specify the rectangular areas of the buffer that the driver should clear.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -124,13 +127,10 @@ If rectangles are specified for clearing, the driver should clip them against th
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a>
-</dt>
-</dl>
+
  
 
  

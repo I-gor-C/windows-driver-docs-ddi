@@ -7,8 +7,8 @@ old-location : print\iprintschemapageimageablesize_interface.htm
 old-project : print
 ms.assetid : C8E9278D-D24A-4EEC-8F68-D77C76ECCC40
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPrintSchemaTicket2, IPrintSchemaTicket2::GetParameterInitializer, GetParameterInitializer
+ms.date : 1/18/2018
+ms.keywords : print.iprintschemapageimageablesize_interface, IPrintSchemaPageImageableSize interface [Print Devices], IPrintSchemaPageImageableSize interface [Print Devices], described, IPrintSchemaPageImageableSize, printerextension/IPrintSchemaPageImageableSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPrintSchemaPageImageableSize
-req.alt-loc : Printerextension.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : printerextension.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PrintSchemaSelectionType
 req.product : Windows 10 or later.
 ---

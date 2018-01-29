@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d2b90ec1-cc4c-4a2b-8f7e-d46cd39d553b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_D3D12_OPTIONS_DATA_0033, D3D12DDI_D3D12_OPTIONS_DATA_0033
+ms.keywords : D3D12DDI_D3D12_OPTIONS_DATA_0033 structure [Display Devices], D3D12DDI_D3D12_OPTIONS_DATA_0033, d3d12umddi/D3D12DDI_D3D12_OPTIONS_DATA_0033, display.d3d12ddi-d3d12-options-data-0033
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_D3D12_OPTIONS_DATA_0033
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_D3D12_OPTIONS_DATA_0033
 ---
 
@@ -58,58 +62,58 @@ typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0033 {
 
 ## Members
 
-        
-            `BarycentricsSupported`
 
-            Barycentrics supported.
-        
-            `ConservativeRasterizationTier`
+`BarycentricsSupported`
 
-            Conservative rasterization tier.
-        
-            `CopyQueueTimestampQueriesSupported`
+Barycentrics supported.
 
-            Copy queue timestamp queries supported.
-        
-            `CrossNodeSharingTier`
+`ConservativeRasterizationTier`
 
-            Cross node sharing tier.
-        
-            `DepthBoundsTestSupported`
+Conservative rasterization tier.
 
-            Depth bounds test supported.
-        
-            `OutputMergerLogicOp`
+`CopyQueueTimestampQueriesSupported`
 
-            Output merger logic option.
-        
-            `ProgrammableSamplePositionsTier`
+Copy queue timestamp queries supported.
 
-            Programmable sample positions tier.
-        
-            `ResourceBindingTier`
+`CrossNodeSharingTier`
 
-            Resource binding tier.
-        
-            `ResourceHeapTier`
+Cross node sharing tier.
 
-            Resource heap tier.
-        
-            `TiledResourcesTier`
+`DepthBoundsTestSupported`
 
-            Tiled resource tier.
-        
-            `ViewInstancingTier`
+Depth bounds test supported.
 
-            View instancing tier.
-        
-            `VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation`
+`OutputMergerLogicOp`
 
-            VP and RT array index from any shader feeding rasterizer supported without GS emulation.
-        
-            `WriteBufferImmediateQueueFlags`
+Output merger logic option.
 
-            Write buffer immediate queue flags.
+`ProgrammableSamplePositionsTier`
+
+Programmable sample positions tier.
+
+`ResourceBindingTier`
+
+Resource binding tier.
+
+`ResourceHeapTier`
+
+Resource heap tier.
+
+`TiledResourcesTier`
+
+Tiled resource tier.
+
+`ViewInstancingTier`
+
+View instancing tier.
+
+`VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation`
+
+VP and RT array index from any shader feeding rasterizer supported without GS emulation.
+
+`WriteBufferImmediateQueueFlags`
+
+Write buffer immediate queue flags.
 
 
 ## Requirements

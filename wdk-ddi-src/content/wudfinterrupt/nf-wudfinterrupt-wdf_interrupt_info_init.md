@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : CFFE19FB-289C-4002-AB07-AE342D855B20
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_INTERRUPT_INFO_INIT
+ms.keywords : umdf.wdf_interrupt_info_init, WDF_INTERRUPT_INFO_INIT, wudfinterrupt/WDF_INTERRUPT_INFO_INIT, WDF_INTERRUPT_INFO_INIT function, wdf.wdf_interrupt_info_init_umdf
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WDF_INTERRUPT_INFO_INIT
-req.alt-loc : Wudfinterrupt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -54,7 +58,7 @@ VOID WDF_INTERRUPT_INFO_INIT(
 
 `InterruptInfo`
 
-
+TBD
 
 
 ## Return Value
@@ -66,8 +70,6 @@ None
 The <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a> function zeros the specified <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure and sets the structure's <b>Size</b> member.
 
 For more information about handling interrupts in framework-based drivers, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-hardware-interrupts">Handling Interrupts</a>.
-
-For a code example that uses <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>, see <a href="https://msdn.microsoft.com/744D0FFE-6D3C-4AED-8935-63EE9B0AFA0F">IWDFInterrupt::GetInfo</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,14 +85,10 @@ For a code example that uses <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_inte
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/744D0FFE-6D3C-4AED-8935-63EE9B0AFA0F">IWDFInterrupt::GetInfo</a>
-</dt>
-</dl>
+
  
 
  

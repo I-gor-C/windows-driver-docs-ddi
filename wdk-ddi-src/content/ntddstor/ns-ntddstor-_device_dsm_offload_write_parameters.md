@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : B0E9DABD-0D5B-4F5D-8CB0-470AC126F9C0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, *PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS
+ms.keywords : ntddstor/DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS structure pointer [Storage Devices], DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS structure [Storage Devices], ntddstor/PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, storage.device_dsm_offload_write_parameters, PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, *PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS"
 ---
 
@@ -51,25 +55,25 @@ typedef struct _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS {
 
 ## Members
 
-        
-            `Flags`
 
-            Not used.
-        
-            `Reserved`
+`Flags`
 
-            Reserved.
-        
-            `Token`
+Not used.
 
-            The unique identifier of the data block to write from.
-        
-            `TokenOffset`
+`Reserved`
 
-            The offset, in bytes, within the data block specified by <b>Token</b> to begin writing from.
+Reserved.
 
-    ## Remarks
-        The <b>ParameterBlockOffset</b> and <b>ParameterBlockLength</b> members  of <a href="..\ntddstor\ns-ntddstor-_device_manage_data_set_attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> are set to the location and length of the  <b>DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</b> structure in the system buffer of the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> request.
+`Token`
+
+The unique identifier of the data block to write from.
+
+`TokenOffset`
+
+The offset, in bytes, within the data block specified by <b>Token</b> to begin writing from.
+
+## Remarks
+The <b>ParameterBlockOffset</b> and <b>ParameterBlockLength</b> members  of <a href="..\ntddstor\ns-ntddstor-_device_manage_data_set_attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> are set to the location and length of the  <b>DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</b> structure in the system buffer of the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> request.
 
 The <b>DataSetRangesOffset</b> and <b>DataSetRangesLength</b> members of <a href="..\ntddstor\ns-ntddstor-_device_manage_data_set_attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> specify the <a href="..\ntddstor\ns-ntddstor-_device_data_set_range.md">DEVICE_DATA_SET_RANGE</a> structures for the extents of the offload write.
 
@@ -81,16 +85,12 @@ The <b>DataSetRangesOffset</b> and <b>DataSetRangesLength</b> members of <a href
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_device_manage_data_set_attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

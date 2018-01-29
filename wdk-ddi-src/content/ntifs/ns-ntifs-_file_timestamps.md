@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0F016D21-34CD-43DD-BE39-C6DF6D63A3AC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_TIMESTAMPS, FILE_TIMESTAMPS, *PFILE_TIMESTAMPS
+ms.keywords : _FILE_TIMESTAMPS, ntifs/File_TIMESTAMPS, ifsk.file_timestamps, ntifs/PFILE_TIMESTAMPS, FILE_TIMESTAMPS structure [Installable File System Drivers], FILE_TIMESTAMPS, PFILE_TIMESTAMPS, *PFILE_TIMESTAMPS, PFILE_TIMESTAMPS structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_TIMESTAMPS
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FILE_TIMESTAMPS, *PFILE_TIMESTAMPS
 ---
 
@@ -51,22 +55,22 @@ typedef struct _File_TIMESTAMPS {
 
 ## Members
 
-        
-            `ChangeTime`
 
-            Specifies the last time a file was changed or modified.
-        
-            `CreationTime`
+`ChangeTime`
 
-            Specifies the creation time of a file.
-        
-            `LastAccessTime`
+Specifies the last time a file was changed or modified.
 
-            Specifies the last time a file was accessed.
-        
-            `LastWriteTime`
+`CreationTime`
 
-            Specifies the last time a file was written to.
+Specifies the creation time of a file.
+
+`LastAccessTime`
+
+Specifies the last time a file was accessed.
+
+`LastWriteTime`
+
+Specifies the last time a file was written to.
 
 
 ## Requirements
@@ -77,13 +81,10 @@ typedef struct _File_TIMESTAMPS {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntifs\ns-ntifs-_atomic_create_ecp_context.md">ATOMIC_CREATE_ECP_CONTEXT</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilunsolicitedssinfoparammask.htm
 old-project : netvista
 ms.assetid : 41cf5add-4cad-41ed-ba9c-6bfba56a9f65
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUNSOLICITEDSSINFOPARAMMASK, RILUNSOLICITEDSSINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_UNSSS_ALL, ntddrilapitypes/RIL_PARAM_UNSSS_ALL, ntddrilapitypes/RIL_PARAM_UNSSS_HISTLENGTH, RIL_PARAM_UNSSS_ID, ntddrilapitypes/RIL_PARAM_UNSSS_HISTINFO, ntddrilapitypes/RIL_PARAM_UNSSS_ID, RIL_PARAM_UNSSS_SUBADDR, ntddrilapitypes/RILUNSOLICITEDSSINFOPARAMMASK, RIL_PARAM_UNSSS_HISTINFO, RILUNSOLICITEDSSINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_UNSSS_NOTIFICATIONCODE, RIL_PARAM_UNSSS_ADDRESS, RILUNSOLICITEDSSINFOPARAMMASK, RIL_PARAM_UNSSS_NOTIFICATIONCODE, ntddrilapitypes/RIL_PARAM_UNSSS_CUGINDEX, RIL_PARAM_UNSSS_HISTLENGTH, ntddrilapitypes/RIL_PARAM_UNSSS_ADDRESS, RIL_PARAM_UNSSS_CUGINDEX, ntddrilapitypes/RIL_PARAM_UNSSS_SUBADDR, netvista.rilunsolicitedssinfoparammask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUNSOLICITEDSSINFOPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUNSOLICITEDSSINFOPARAMMASK
 ---
 
@@ -67,6 +71,11 @@ typedef enum _RILUNSOLICITEDSSINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_UNSSS_CUGINDEX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_UNSSS_EXECUTOR</td>
 <td></td>
 </tr>
 

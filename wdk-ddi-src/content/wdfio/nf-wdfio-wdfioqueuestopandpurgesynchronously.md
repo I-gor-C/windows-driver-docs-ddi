@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 406044A5-D1C0-4771-8CDB-CCBC0B801281
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoQueueStopAndPurgeSynchronously
+ms.keywords : WdfIoQueueStopAndPurgeSynchronously, PFN_WDFIOQUEUESTOPANDPURGESYNCHRONOUSLY, wdfio/WdfIoQueueStopAndPurgeSynchronously, kmdf.wdfioqueuestopandpurgesynchronously, WdfIoQueueStopAndPurgeSynchronously method, wdf.wdfioqueuestopandpurgesynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.0
-req.alt-api : WdfIoQueueStopAndPurgeSynchronously
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, NoCancelFromEvtSurpriseRemove
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -82,11 +86,8 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurge.md">WdfIoQueueStopAndPurge</a>
-</dt>
-</dl>
+
  
 
  

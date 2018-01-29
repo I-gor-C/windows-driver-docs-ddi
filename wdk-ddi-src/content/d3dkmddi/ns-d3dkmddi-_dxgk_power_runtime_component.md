@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ed7e6fc4-651d-4dc3-9c90-cca3c5f0eb67
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_POWER_RUNTIME_COMPONENT, DXGK_POWER_RUNTIME_COMPONENT
+ms.keywords : display.dxgk_power_runtime_component, _DXGK_POWER_RUNTIME_COMPONENT, DXGK_POWER_RUNTIME_COMPONENT, DXGK_POWER_RUNTIME_COMPONENT structure [Display Devices], d3dkmddi/DXGK_POWER_RUNTIME_COMPONENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_POWER_RUNTIME_COMPONENT
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_POWER_RUNTIME_COMPONENT
 ---
 
@@ -53,45 +57,44 @@ typedef struct _DXGK_POWER_RUNTIME_COMPONENT {
 
 ## Members
 
-        
-            `ComponentGuid`
 
-            A GUID that identifies the power component. This GUID is used by the Power Engine Plug-in (PEP).
-        
-            `ComponentMapping`
+`ComponentGuid`
 
-            A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_mapping.md">DXGK_POWER_COMPONENT_MAPPING</a> structure that defines the standard component types of the DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.
-        
-            `ComponentName`
+A GUID that identifies the power component. This GUID is used by the Power Engine Plug-in (PEP).
 
-            A name for the power component. This name is used by GPU profiling tools and is not passed to the PEP.
-        
-            `Flags`
+`ComponentMapping`
 
-            A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_flags.md">DXGK_POWER_COMPONENT_FLAGS</a> structure that specifies power state transition information.
-        
-            `ProviderCount`
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_mapping.md">DXGK_POWER_COMPONENT_MAPPING</a> structure that defines the standard component types of the DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.
 
-            Defines the number of other power components that need to be active before this power component becomes active.
-        
-            `Providers`
+`ComponentName`
 
-            Specifies the indices of other power components that need to be active before this power component becomes active. Each index value must be less than the total number of power components.
-        
-            `StateCount`
+A name for the power component. This name is used by GPU profiling tools and is not passed to the PEP.
 
-            Defines the number of idle states (F-states) for the power component.
-        
-            `States`
+`Flags`
 
-            A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_state.md">DXGK_POWER_RUNTIME_STATE</a> structure that defines information about every idle state. 
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_flags.md">DXGK_POWER_COMPONENT_FLAGS</a> structure that specifies power state transition information.
+
+`ProviderCount`
+
+Defines the number of other power components that need to be active before this power component becomes active.
+
+`Providers`
+
+Specifies the indices of other power components that need to be active before this power component becomes active. Each index value must be less than the total number of power components.
+
+`StateCount`
+
+Defines the number of idle states (F-states) for the power component.
+
+`States`
+
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_state.md">DXGK_POWER_RUNTIME_STATE</a> structure that defines information about every idle state. 
 
 <b>DXGK_MAX_F_STATES</b> is the maximum number of F-states that a power component can have. In Windows 8, <b>DXGK_MAX_F_STATES</b> is defined to have a value of 8.
 
-    ## Remarks
-        Each power component must be mapped to an engine, a display, a memory segment, or another similar device component. The DirectX graphics kernel subsystem detects the idle state of engines, displays, and memory segments.
-
-Multiple power components should not be mapped to the same engine (node), to the same memory segment, or to the same VidPN source or target. A power component can be used with only one engine, memory segment, or VidPN source.
+## Remarks
+Each power component must be mapped to an engine, a display, a memory segment, or another similar device component. The DirectX graphics kernel subsystem detects the idle state of engines, displays, and memory segments.
+<div class="alert"><b>Note</b>  Memory segments were removed from Windows 8 but are available in Windows 8.1 and later.</div><div> </div>Multiple power components should not be mapped to the same engine (node), to the same memory segment, or to the same VidPN source or target. A power component can be used with only one engine, memory segment, or VidPN source.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,19 +104,14 @@ Multiple power components should not be mapped to the same engine (node), to the
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_flags.md">DXGK_POWER_COMPONENT_FLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_mapping.md">DXGK_POWER_COMPONENT_MAPPING</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_state.md">DXGK_POWER_RUNTIME_STATE</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_mapping.md">DXGK_POWER_COMPONENT_MAPPING</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_flags.md">DXGK_POWER_COMPONENT_FLAGS</a>
+
  
 
  

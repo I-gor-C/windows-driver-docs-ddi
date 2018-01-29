@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4833d4e2-295a-4d38-9ebf-8af68eeff948
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoQueryWatchdogTime
+ms.keywords : PoQueryWatchdogTime, wdm/PoQueryWatchdogTime, portn_1fe369ed-f8f0-4459-943f-a624764c279b.xml, kernel.poquerywatchdogtime, PoQueryWatchdogTime routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoQueryWatchdogTime
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -86,11 +90,8 @@ If more than one power watchdog time-out is currently enabled, the routine sets 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-</dl>
+
  
 
  

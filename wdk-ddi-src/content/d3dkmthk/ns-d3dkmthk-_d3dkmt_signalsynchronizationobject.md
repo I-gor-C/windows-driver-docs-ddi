@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 13368ea2-dd2e-48af-b528-097104dffb60
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
+ms.keywords : OpenGL_Structs_8a7c1832-e93f-47d3-b5ec-b5bea7f3321a.xml, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dkmt_signalsynchronizationobject, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
-        
-            `hContext`
+`Flags`
 
-            [in] A kernel-mode handle to a context that signals the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies.
-        
-            `ObjectCount`
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
 
-            [in] The number of synchronization events in the <b>ObjectHandleArray</b> array.
-        
-            `ObjectHandleArray`
+`hContext`
 
-            [in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member signals. The D3DDDI_MAX_OBJECT_SIGNALED constant, which is defined as 32, indicates the maximum number of synchronization events that the context can signal.
+[in] A kernel-mode handle to a context that signals the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies.
+
+`ObjectCount`
+
+[in] The number of synchronization events in the <b>ObjectHandleArray</b> array.
+
+`ObjectHandleArray`
+
+[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member signals. The D3DDDI_MAX_OBJECT_SIGNALED constant, which is defined as 32, indicates the maximum number of synchronization events that the context can signal.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobject.md">D3DKMTSignalSynchronizationObject</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a>
+
  
 
  

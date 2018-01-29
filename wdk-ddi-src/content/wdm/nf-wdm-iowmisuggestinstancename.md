@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a07ff2f6-e67e-489e-a477-6dc4b4ce6fed
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMISuggestInstanceName
+ms.keywords : wdm/IoWMISuggestInstanceName, kernel.iowmisuggestinstancename, k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], IoWMISuggestInstanceName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWMISuggestInstanceName
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -72,18 +76,56 @@ A pointer to a buffer which upon successful completion will contain a <a href=".
 ## Return Value
 
 <b>IoWMISuggestInstanceName</b> returns a status code from the following list:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Indicates that WMI was able to successfully complete this function.
+</dl>
+</td>
+<td width="60%">
+Indicates that WMI was able to successfully complete this function.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>Indicates that the WMI services are not available.
+</dl>
+</td>
+<td width="60%">
+Indicates that the WMI services are not available.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates that insufficient resources were available to provide the caller with a buffer containing the Unicode string.
+</dl>
+</td>
+<td width="60%">
+Indicates that insufficient resources were available to provide the caller with a buffer containing the Unicode string.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl>Indicates that insufficient resources were available to provide the caller with a buffer containing the Unicode string.
+</dl>
+</td>
+<td width="60%">
+Indicates that insufficient resources were available to provide the caller with a buffer containing the Unicode string.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,11 +145,8 @@ If the <i>CombineNames</i> parameter is <b>TRUE</b> then both <i>PhysicalDeviceO
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-iowmiallocateinstanceids.md">IoWMIAllocateInstanceIds</a>
-</dt>
-</dl>
+
  
 
  

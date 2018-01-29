@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 1A308BD8-E28E-4618-99D0-55FBD6FA7CF4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2CustomTransmitTransactionCreate
+ms.keywords : 2/SerCx2CustomTransmitTransactionCreate, SerCx2CustomTransmitTransactionCreate method [Serial Ports], serports.sercx2customtransmittransactioncreate, SerCx2CustomTransmitTransactionCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SerCx2CustomTransmitTransactionCreate
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX_STATUS, *PSERCX_STATUS
 req.product : Windows 10 or later.
 ---
@@ -72,18 +76,56 @@ A pointer to a location to which this method writes a <a href="https://msdn.micr
 ## Return Value
 
 This method returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>A custom-transmit-transaction object already exists from a previous <b>SerCx2CustomTransmitTransactionCreate</b> call.
+</dl>
+</td>
+<td width="60%">
+A custom-transmit-transaction object already exists from a previous <b>SerCx2CustomTransmitTransactionCreate</b> call.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>The <i>CustomTransmitTransactionConfig</i>-&gt;<b>Size</b> value does not equal <b>sizeof</b>(<b>SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG</b>).
+</dl>
+</td>
+<td width="60%">
+The <i>CustomTransmitTransactionConfig</i>-&gt;<b>Size</b> value does not equal <b>sizeof</b>(<b>SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG</b>).
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>A parameter value is not valid. The caller must supply a valid <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a> function pointer.
+</dl>
+</td>
+<td width="60%">
+A parameter value is not valid. The caller must supply a valid <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a> function pointer.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Insufficient resources are available to create the custom-transmit-transaction object.
+</dl>
+</td>
+<td width="60%">
+Insufficient resources are available to create the custom-transmit-transaction object.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -111,38 +153,26 @@ For more information about creating custom-transmit-transaction objects, see <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a>
-</dt>
-<dt>
 <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a>
-</dt>
-<dt>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2CUSTOMTRANSMIT</a>
-</dt>
-<dt>
+
 <a href="..\sercx\nf-sercx-sercx2customtransmitcreate.md">SerCx2CustomTransmitCreate</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a>
-</dt>
-<dt>
+
 <a href="..\sercx\ns-sercx-_sercx2_custom_transmit_transaction_config.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG</a>
-</dt>
-<dt>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a>
+
 <a href="..\sercx\nf-sercx-sercx2_custom_transmit_transaction_config_init.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a>
-</dt>
-<dt>
+
+<a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a>
+
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
+
 <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
-</dt>
-</dl>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2CUSTOMTRANSMIT</a>
+
  
 
  

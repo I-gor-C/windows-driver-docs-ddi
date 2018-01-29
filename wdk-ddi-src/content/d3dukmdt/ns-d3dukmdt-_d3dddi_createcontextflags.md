@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e450f85c-4c73-44a8-9d0a-da2c212c87c9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_CREATECONTEXTFLAGS, D3DDDI_CREATECONTEXTFLAGS
+ms.keywords : display.d3dddi_createcontextflags, _D3DDDI_CREATECONTEXTFLAGS, d3dukmdt/D3DDDI_CREATECONTEXTFLAGS, D3DDDI_CREATECONTEXTFLAGS, D3DDDI_CREATECONTEXTFLAGS structure [Display Devices], D3D_other_Structs_e20f9457-1008-4c63-a924-d5fa75929be5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_CREATECONTEXTFLAGS
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_CREATECONTEXTFLAGS
 ---
 
@@ -63,16 +67,12 @@ typedef struct _D3DDDI_CREATECONTEXTFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createcontext.md">D3DDDICB_CREATECONTEXT</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createcontext.md">D3DDDICB_CREATECONTEXT</a>
+
  
 
  

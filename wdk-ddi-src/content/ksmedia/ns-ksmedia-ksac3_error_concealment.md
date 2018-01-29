@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1ef69cb7-2437-4ab4-8727-b7718a3adbb1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAC3_ERROR_CONCEALMENT, *PKSAC3_ERROR_CONCEALMENT, KSAC3_ERROR_CONCEALMENT
+ms.keywords : KSAC3_ERROR_CONCEALMENT structure [Audio Devices], aud-prop_c5ba7732-b759-4110-8d43-bc4d5b351c6e.xml, *PKSAC3_ERROR_CONCEALMENT, ksmedia/KSAC3_ERROR_CONCEALMENT, audio.ksac3_error_concealment, KSAC3_ERROR_CONCEALMENT, PKSAC3_ERROR_CONCEALMENT, PKSAC3_ERROR_CONCEALMENT structure pointer [Audio Devices], ksmedia/PKSAC3_ERROR_CONCEALMENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAC3_ERROR_CONCEALMENT
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSAC3_ERROR_CONCEALMENT, KSAC3_ERROR_CONCEALMENT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSAC3_ERROR_CONCEALMENT, *PKSAC3_ERROR_CONCEALMENT
 ---
 
 # KSAC3_ERROR_CONCEALMENT structure
@@ -47,17 +51,17 @@ typedef struct {
 
 ## Members
 
-        
-            `fErrorInCurrentBlock`
 
-            Specifies whether the current block contains an error. If <b>TRUE</b>, the current block contains an error. If <b>FALSE</b>, the current block has no errors.
-        
-            `fRepeatPreviousBlock`
+`fErrorInCurrentBlock`
 
-            Specifies whether to repeat the previous block when an error occurs. If <b>TRUE</b>, the decoder repeats the last block not in error as long as errors are detected in the input stream. If <b>FALSE</b>, the decoder mutes. A muted output stream does not necessarily result in any data packets. Instead, the renderer might substitute a more reliable stream or simply output silence.
+Specifies whether the current block contains an error. If <b>TRUE</b>, the current block contains an error. If <b>FALSE</b>, the current block has no errors.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537220">KSPROPERTY_AC3_ERROR_CONCEALMENT</a> property.
+`fRepeatPreviousBlock`
+
+Specifies whether to repeat the previous block when an error occurs. If <b>TRUE</b>, the decoder repeats the last block not in error as long as errors are detected in the input stream. If <b>FALSE</b>, the decoder mutes. A muted output stream does not necessarily result in any data packets. Instead, the renderer might substitute a more reliable stream or simply output silence.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537220">KSPROPERTY_AC3_ERROR_CONCEALMENT</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537220">KSPROPERTY_AC3_ERROR_CONCEALMENT</a>
-</dt>
-</dl>
+
  
 
  

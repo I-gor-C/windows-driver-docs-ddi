@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1b9bbb6a-2dfb-4f3f-8083-62b51a62dec6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILE_FULL_EA_INFORMATION, FILE_FULL_EA_INFORMATION, *PFILE_FULL_EA_INFORMATION
+ms.keywords : wdm/FILE_FULL_EA_INFORMATION, FILE_FULL_EA_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.file_full_ea_information, wdm/PFILE_FULL_EA_INFORMATION, kstruct_b_3640566d-def9-44eb-a205-a6361d46e246.xml, FILE_FULL_EA_INFORMATION, _FILE_FULL_EA_INFORMATION, *PFILE_FULL_EA_INFORMATION, PFILE_FULL_EA_INFORMATION, PFILE_FULL_EA_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_FULL_EA_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FILE_FULL_EA_INFORMATION, *PFILE_FULL_EA_INFORMATION
 req.product : Windows 10 or later.
 ---
@@ -51,29 +55,29 @@ typedef struct _FILE_FULL_EA_INFORMATION {
 
 ## Members
 
-        
-            `EaName`
 
-            An array of characters naming the EA for this entry.
-        
-            `EaNameLength`
+`EaName`
 
-            The length in bytes of the <b>EaName</b> array. This value does not include a null-terminator to <b>EaName</b>.
-        
-            `EaValueLength`
+An array of characters naming the EA for this entry.
 
-            The length in bytes of each EA value in the array.
-        
-            `Flags`
+`EaNameLength`
 
-            Can be zero or can be set with FILE_NEED_EA, indicating that the file to which the EA belongs cannot be interpreted without understanding the associated extended attributes.
-        
-            `NextEntryOffset`
+The length in bytes of the <b>EaName</b> array. This value does not include a null-terminator to <b>EaName</b>.
 
-            The offset of the next <b>FILE_FULL_EA_INFORMATION</b>-type entry. This member is zero if no other entries follow this one.
+`EaValueLength`
 
-    ## Remarks
-        This structure is longword-aligned. If a set of <b>FILE_FULL_EA_INFORMATION</b> entries is buffered, <b>NextEntryOffset</b> value in each entry, except the last, falls on a longword boundary. 
+The length in bytes of each EA value in the array.
+
+`Flags`
+
+Can be zero or can be set with FILE_NEED_EA, indicating that the file to which the EA belongs cannot be interpreted without understanding the associated extended attributes.
+
+`NextEntryOffset`
+
+The offset of the next <b>FILE_FULL_EA_INFORMATION</b>-type entry. This member is zero if no other entries follow this one.
+
+## Remarks
+This structure is longword-aligned. If a set of <b>FILE_FULL_EA_INFORMATION</b> entries is buffered, <b>NextEntryOffset</b> value in each entry, except the last, falls on a longword boundary. 
 
 The value(s) associated with each entry follows the <b>EaName</b> array. That is, an EA's values are located at <b>EaName</b> + (<b>EaNameLength</b> + 1).
 
@@ -85,13 +89,10 @@ The value(s) associated with each entry follows the <b>EaName</b> array. That is
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cd6797a3-3128-4100-81f0-82e4d6f209b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_HBAPortAttributesResults, *PMSFC_HBAPortAttributesResults, MSFC_HBAPortAttributesResults
+ms.keywords : PMSFC_HBAPortAttributesResults structure pointer [Storage Devices], storage.msfc_hbaportattributesresults, structs-Fibre_976d4a28-f7d1-4a94-849c-f917f5bce339.xml, hbapiwmi/MSFC_HBAPortAttributesResults, MSFC_HBAPortAttributesResults structure [Storage Devices], *PMSFC_HBAPortAttributesResults, MSFC_HBAPortAttributesResults, _MSFC_HBAPortAttributesResults, PMSFC_HBAPortAttributesResults, hbapiwmi/PMSFC_HBAPortAttributesResults
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSFC_HBAPortAttributesResults
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMSFC_HBAPortAttributesResults, MSFC_HBAPortAttributesResults"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_HBAPortAttributesResults, *PMSFC_HBAPortAttributesResults
 ---
 
 # _MSFC_HBAPortAttributesResults structure
@@ -58,35 +62,34 @@ typedef struct _MSFC_HBAPortAttributesResults {
 
 ## Members
 
-        
-            `FabricName`
 
-            Contains the name identifier for the fabric to which <b>PortWWN</b> is attached.
-        
-            `NodeWWN`
+`FabricName`
 
-            Contains a 64 bit world-wide name (WWN) that uniquely identifies the fibre channel node associated with <b>PortWWN</b>. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
-        
-            `NumberofDiscoveredPorts`
+Contains the name identifier for the fabric to which <b>PortWWN</b> is attached.
 
-            Indicates the number of ports that are visible to <b>PortWWN</b>. For a more detailed explanation of the sorts of ports that this number takes into consideration, see the T11 committee's specification for <i>Fibre Channel HBA API</i> (FC-HBA).
-        
-            `PortActiveFc4Types`
+`NodeWWN`
 
-            Indicates the FC-4 types that are currently available on <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).
-        
-            `PortFcId`
+Contains a 64 bit world-wide name (WWN) that uniquely identifies the fibre channel node associated with <b>PortWWN</b>. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
-            Contains the current fibre channel address of <b>PortWWN</b>. The high order byte of this member contains the first byte of the address, and successively lower order bytes of this member contain successively lower bytes of the address. The lowest order byte of this member must be zero.
-        
-            `PortMaxFrameSize`
+`NumberofDiscoveredPorts`
 
-            Indicates the maximum frame size, in bytes, that is supported by <b>PortWWN</b>.
-        
-            `PortSpeed`
+Indicates the number of ports that are visible to <b>PortWWN</b>. For a more detailed explanation of the sorts of ports that this number takes into consideration, see the T11 committee's specification for <i>Fibre Channel HBA API</i> (FC-HBA).
 
-            Indicates the signaling bit rates at which <b>PortWWN</b> is currently operating. This member must have one of the following values: 
+`PortActiveFc4Types`
 
+Indicates the FC-4 types that are currently available on <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).
+
+`PortFcId`
+
+Contains the current fibre channel address of <b>PortWWN</b>. The high order byte of this member contains the first byte of the address, and successively lower order bytes of this member contain successively lower bytes of the address. The lowest order byte of this member must be zero.
+
+`PortMaxFrameSize`
+
+Indicates the maximum frame size, in bytes, that is supported by <b>PortWWN</b>.
+
+`PortSpeed`
+
+Indicates the signaling bit rates at which <b>PortWWN</b> is currently operating. This member must have one of the following values: 
 <table>
 <tr>
 <th>Value</th>
@@ -153,11 +156,10 @@ The speed at which the port will operate has not yet been established.
 </td>
 </tr>
 </table>
-        
-            `PortState`
 
-            Contains the state of the port indicated by <b>PortWWN</b>. This member must have one of the following values:
+`PortState`
 
+Contains the state of the port indicated by <b>PortWWN</b>. This member must have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -244,23 +246,22 @@ Loopback.
 </td>
 </tr>
 </table>
-        
-            `PortSupportedClassofService`
 
-            Indicates the class of service that are supported by <b>PortWWN</b>. For a list of the differences classes of service and the values that must be assigned to this member for each class, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).
-        
-            `PortSupportedFc4Types`
+`PortSupportedClassofService`
 
-            Indicates the FC-4 types that are supported by <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).
-        
-            `PortSupportedSpeed`
+Indicates the class of service that are supported by <b>PortWWN</b>. For a list of the differences classes of service and the values that must be assigned to this member for each class, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).
 
-            Indicates the signaling bit rates at which <b>PortWWN</b> can operate. For a list of the values that this member supports, see <b>PortSpeed</b>.
-        
-            `PortType`
+`PortSupportedFc4Types`
 
-            Indicates the port type. This member must have one of the following values: 
+Indicates the FC-4 types that are supported by <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).
 
+`PortSupportedSpeed`
+
+Indicates the signaling bit rates at which <b>PortWWN</b> can operate. For a list of the values that this member supports, see <b>PortSpeed</b>.
+
+`PortType`
+
+Indicates the port type. This member must have one of the following values: 
 <table>
 <tr>
 <th>Value</th>
@@ -377,10 +378,10 @@ Point to point.
 </td>
 </tr>
 </table>
-        
-            `PortWWN`
 
-            Contains a 64 bit world-wide name (WWN) that uniquely identifies the fibre channel port. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+`PortWWN`
+
+Contains a 64 bit world-wide name (WWN) that uniquely identifies the fibre channel port. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
 
 ## Requirements
@@ -391,13 +392,10 @@ Point to point.
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h, Hbaapi.h, Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
-</dt>
-</dl>
+
  
 
  

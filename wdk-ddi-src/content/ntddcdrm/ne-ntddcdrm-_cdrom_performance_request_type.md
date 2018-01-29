@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 139D6E9A-36EE-4162-B9C5-12E9D57C7BE7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_PERFORMANCE_REQUEST_TYPE, *PCDROM_PERFORMANCE_REQUEST_TYPE, CDROM_PERFORMANCE_REQUEST_TYPE
+ms.keywords : CdromWriteSpeedRequest, storage.cdrom_performance_request_type, ntddcdrm/ CdromWriteSpeedRequest, CdromPerformanceRequest, *PCDROM_PERFORMANCE_REQUEST_TYPE, PCDROM_PERFORMANCE_REQUEST_TYPE, CDROM_PERFORMANCE_REQUEST_TYPE, CDROM_PERFORMANCE_REQUEST_TYPE enumeration [Storage Devices], PCDROM_PERFORMANCE_REQUEST_TYPE enumeration pointer [Storage Devices], _CDROM_PERFORMANCE_REQUEST_TYPE, ntddcdrm/CdromPerformanceRequest, ntddcdrm/CDROM_PERFORMANCE_REQUEST_TYPE, ntddcdrm/PCDROM_PERFORMANCE_REQUEST_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_PERFORMANCE_REQUEST_TYPE
-req.alt-loc : Ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCDROM_PERFORMANCE_REQUEST_TYPE, CDROM_PERFORMANCE_REQUEST_TYPE"
 ---
 
@@ -53,6 +57,11 @@ typedef enum _CDROM_PERFORMANCE_REQUEST_TYPE {
 <td>CdromPerformanceRequest</td>
 <td>Requests streaming performance data.</td>
 </tr>
+
+<tr>
+<td>CdromWriteSpeedRequest</td>
+<td>Requests the  write speed descriptor.</td>
+</tr>
 </table>
 
 
@@ -66,14 +75,10 @@ typedef enum _CDROM_PERFORMANCE_REQUEST_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-</dt>
-</dl>
+
  
 
  

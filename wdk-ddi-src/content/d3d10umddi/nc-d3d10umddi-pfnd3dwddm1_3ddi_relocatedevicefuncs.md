@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BA2A1F90-6E30-4055-9374-943540AE2446
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.relocatedevicefuncs_d3d11_2_, RelocateDeviceFuncs(D3D11_2) callback function [Display Devices], RelocateDeviceFuncs(D3D11_2), PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS, PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS, d3d10umddi/RelocateDeviceFuncs(D3D11_2)
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RelocateDeviceFuncs(D3D11_2)
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -85,17 +89,12 @@ A user-mode display driver can use the <i>RelocateDeviceFuncs(D3D11_2)</i> funct
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_devicefuncs.md">D3DWDDM1_3DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_relocatedevicefuncs.md">RelocateDeviceFuncs(D3D11_2)</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_devicefuncs.md">D3DWDDM1_3DDI_DEVICEFUNCS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : FAC9AC9B-9C4B-4D53-A59A-8901EC8755BC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, SetStreamLoopbackProtection
+ms.keywords : SetStreamLoopbackProtection, SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_setstreamloopbackprotection, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamLoopbackProtection method, portcls/IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -75,15 +79,12 @@ For more information about audio stream loopback protection, see <a href="https:
 
 ## See Also
 
-<dl>
-<dt>CONSTRICTOR_OPTION</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450878">KSPROPERTY_AUDIOENGINE_LOOPBACK_PROTECTION</a>
-</dt>
-</dl>
+
+CONSTRICTOR_OPTION
+
  
 
  

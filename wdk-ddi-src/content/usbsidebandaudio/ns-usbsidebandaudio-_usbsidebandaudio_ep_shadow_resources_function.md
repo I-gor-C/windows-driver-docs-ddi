@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 554C5829-D9C0-4F5F-B88A-285A31415CD3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
+ms.keywords : PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, audio.usbsidebandaudio_ep_shadow_resources_function, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION structure [Audio Devices], *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, usbsidebandaudio/USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION structure pointer [Audio Devices], usbsidebandaudio/PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
-req.alt-loc : 
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION
 req.product : Windows 10 or later.
 ---
@@ -52,6 +56,26 @@ typedef struct _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION {
 ````
 
 ## Members
+
+
+`bcdAudioSpec`
+
+
+
+`bDelay`
+
+
+
+`bSlotSize`
+
+
+
+`CbSize`
+
+
+
+`pUsbEndpointDescriptor`
+
 
 
 

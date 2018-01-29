@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9A9D174A-0E9E-4B3A-BF91-3000128C58C7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _REFS_SMR_VOLUME_GC_ACTION, *PREFS_SMR_VOLUME_GC_ACTION, REFS_SMR_VOLUME_GC_ACTION
+ms.keywords : ntifs/SmrGcActionPause, SmrGcActionPause, ntifs/SmrGcActionStart, REFS_SMR_VOLUME_GC_ACTION, SmrGcActionStartFullSpeed, ntifs/REFS_SMR_VOLUME_GC_ACTION, SmrGcActionStart, _REFS_SMR_VOLUME_GC_ACTION, PREFS_SMR_VOLUME_GC_ACTION, ifsk.refs_smr_volume_gc_action, ntifs/PREFS_SMR_VOLUME_GC_ACTION, SmrGcActionStop, *PREFS_SMR_VOLUME_GC_ACTION, ntifs/SmrGcActionStartFullSpeed, PREFS_SMR_VOLUME_GC_ACTION enumeration pointer [Installable File System Drivers], REFS_SMR_VOLUME_GC_ACTION enumeration [Installable File System Drivers], ntifs/SmrGcActionStop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REFS_SMR_VOLUME_GC_ACTION
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PREFS_SMR_VOLUME_GC_ACTION, REFS_SMR_VOLUME_GC_ACTION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : REFS_SMR_VOLUME_GC_ACTION, *PREFS_SMR_VOLUME_GC_ACTION
 ---
 
 # _REFS_SMR_VOLUME_GC_ACTION Enumeration
@@ -83,11 +87,8 @@ typedef enum _REFS_SMR_VOLUME_GC_ACTION {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/782542C4-CFC5-4BF7-AF38-3247A3AC6AB9">FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

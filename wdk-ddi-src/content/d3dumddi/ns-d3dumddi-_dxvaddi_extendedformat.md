@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e4f863bd-12ec-489d-a6e0-6b9242fbb0b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_EXTENDEDFORMAT, DXVADDI_EXTENDEDFORMAT
+ms.keywords : d3dumddi/DXVADDI_EXTENDEDFORMAT, DXVADDI_EXTENDEDFORMAT structure [Display Devices], DXVA2_Structs_31dd9223-b889-4db9-acc0-520c8f16410a.xml, _DXVADDI_EXTENDEDFORMAT, display.dxvaddi_extendedformat, DXVADDI_EXTENDEDFORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_EXTENDEDFORMAT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_EXTENDEDFORMAT
 ---
 
@@ -67,13 +71,10 @@ typedef struct _DXVADDI_EXTENDEDFORMAT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
-</dt>
-</dl>
+
  
 
  

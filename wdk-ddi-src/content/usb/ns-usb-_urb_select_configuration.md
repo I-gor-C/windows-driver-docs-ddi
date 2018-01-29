@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : a6a4963b-64d7-4f46-bc19-16925929e7c7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_SELECT_CONFIGURATION,
+ms.keywords : _URB_SELECT_CONFIGURATION, usb/_URB_SELECT_CONFIGURATION, _URB_SELECT_CONFIGURATION structure [Buses], usbstrct_cfe530e7-f16f-4d45-96e9-e1603bde77b9.xml, buses._urb_select_configuration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_SELECT_CONFIGURATION
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -50,29 +54,33 @@ struct _URB_SELECT_CONFIGURATION {
 
 ## Members
 
-        
-            `ConfigurationDescriptor`
 
-            Pointer to an initialized USB configuration descriptor that identifies the configuration to be used on the device. If this member is <b>NULL</b>, the device will be set to an unconfigured state.
-        
-            `ConfigurationHandle`
+`_URB_HEADER`
 
-            Contains a handle that is used to access this configuration on return from the host controller driver. USB client drivers must treat this member as opaque.
-        
-            `Hdr`
 
-            Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_CONFIGURATION, and <b>Hdr.Length</b> must be the size of the entire URB. Drivers may use the GET_SELECT_CONFIGURATION_REQUEST_SIZE macro defined in usbdlib.h to obtain the size of the URB.
-        
-            `Interface`
 
-            Specifies a variable length array of <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structures, each describing an interface supported by the configuration being selected.
+`ConfigurationDescriptor`
+
+Pointer to an initialized USB configuration descriptor that identifies the configuration to be used on the device. If this member is <b>NULL</b>, the device will be set to an unconfigured state.
+
+`ConfigurationHandle`
+
+Contains a handle that is used to access this configuration on return from the host controller driver. USB client drivers must treat this member as opaque.
+
+`Hdr`
+
+Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_CONFIGURATION, and <b>Hdr.Length</b> must be the size of the entire URB. Drivers may use the GET_SELECT_CONFIGURATION_REQUEST_SIZE macro defined in usbdlib.h to obtain the size of the URB.
+
+`Interface`
+
+Specifies a variable length array of <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structures, each describing an interface supported by the configuration being selected.
 
 Before the request is sent to the host controller driver, the driver may select an alternate setting for one or more of the interfaces contained in this array by setting members of the <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure for that interface. 
 
 On return from the host controller driver, this member contains a <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure with data describing the capabilities and format of the endpoints within that interface.
 
-    ## Remarks
-        An URB_FUNCTION_SELECT_CONFIGURATION URB consists of a <b>_URB_SELECT_CONFIGURATION</b> structure followed by a sequence of variable-length array of <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structures, each element in the array for each unique interface number in the configuration. Client drivers must allocate enough memory to contain one <a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a> structure for each endpoint in the selected interfaces. 
+## Remarks
+An URB_FUNCTION_SELECT_CONFIGURATION URB consists of a <b>_URB_SELECT_CONFIGURATION</b> structure followed by a sequence of variable-length array of <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structures, each element in the array for each unique interface number in the configuration. Client drivers must allocate enough memory to contain one <a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a> structure for each endpoint in the selected interfaces. 
     
 
 Drivers can use the <a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a> service routine to allocate the URB.
@@ -88,28 +96,20 @@ Other members that are part of this structure but not described here should be t
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
-</dt>
-<dt>
+
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+
+<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

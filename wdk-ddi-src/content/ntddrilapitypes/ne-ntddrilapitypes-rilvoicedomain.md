@@ -7,8 +7,8 @@ old-location : netvista\rilvoicedomain.htm
 old-project : netvista
 ms.assetid : a7154c32-bca6-482d-b1f9-7c090a7ce432
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILVOICEDOMAIN, RILVOICEDOMAIN
+ms.date : 1/18/2018
+ms.keywords : RILVOICEDOMAIN enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILVOICEDOMAIN, ntddrilapitypes/RIL_VOICE_DOMAIN_MAX, netvista.rilvoicedomain, RIL_VOICE_DOMAIN_IMS, RIL_VOICE_DOMAIN_3GPP2, RIL_VOICE_DOMAIN_MAX, RIL_VOICE_DOMAIN_3GPP, ntddrilapitypes/RIL_VOICE_DOMAIN_3GPP, RILVOICEDOMAIN, ntddrilapitypes/RIL_VOICE_DOMAIN_IMS, ntddrilapitypes/RIL_VOICE_DOMAIN_3GPP2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILVOICEDOMAIN
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILVOICEDOMAIN
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILVOICEDOMAIN {
 
 <tr>
 <td>RIL_VOICE_DOMAIN_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_VOICE_DOMAIN_NONE</td>
 <td></td>
 </tr>
 </table>

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4C07239D-89AE-4A9F-B7EB-CFFE6D47F10B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBDEVICE_RESET, *PUSBDEVICE_RESET, USBDEVICE_RESET
+ms.keywords : buses._usbdevice_reset, ucxusbdevice/P_USBDEVICE_RESET, _USBDEVICE_RESET, P_USBDEVICE_RESET, *PUSBDEVICE_RESET, ucxusbdevice/_USBDEVICE_RESET, USBDEVICE_RESET, USBDEVICE_RESET structure [Buses], P_USBDEVICE_RESET structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBDEVICE_RESET
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSBDEVICE_RESET, USBDEVICE_RESET"
 req.product : Windows 10 or later.
 ---
@@ -54,22 +58,22 @@ typedef struct _USBDEVICE_RESET {
 
 ## Members
 
-        
-            `DefaultEndpoint`
 
-            The default endpoint for the USB hub or device.
-        
-            `EndpointsToDisable`
+`DefaultEndpoint`
 
-            A pointer to an array of handles to endpoints to disable.
-        
-            `EndpointsToDisableCount`
+The default endpoint for the USB hub or device.
 
-            The number of endpoints to disable.
-        
-            `Header`
+`EndpointsToDisable`
 
-            A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
+A pointer to an array of handles to endpoints to disable.
+
+`EndpointsToDisableCount`
+
+The number of endpoints to disable.
+
+`Header`
+
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _USBDEVICE_RESET {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_reset.md">EVT_UCX_USBDEVICE_RESET</a>
-</dt>
-</dl>
+
  
 
  

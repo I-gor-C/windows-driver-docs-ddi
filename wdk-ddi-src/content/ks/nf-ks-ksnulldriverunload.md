@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1fe4c3b7-4627-4a59-9779-fa2be29f387a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsNullDriverUnload
+ms.keywords : KsNullDriverUnload, ksfunc_449d73af-488d-4c4b-b5cb-f706fd48beab.xml, KsNullDriverUnload function [Streaming Media Devices], ks/KsNullDriverUnload, stream.ksnulldriverunload
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsNullDriverUnload
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

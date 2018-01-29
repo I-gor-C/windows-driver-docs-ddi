@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c7f9cfc5-5698-404b-9b67-51ad8e351519
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETSTREAMSOURCEFREQ, D3DHAL_DP2SETSTREAMSOURCEFREQ, *LPD3DHAL_DP2SETSTREAMSOURCEFREQ
+ms.keywords : LPD3DHAL_DP2SETSTREAMSOURCEFREQ structure pointer [Display Devices], *LPD3DHAL_DP2SETSTREAMSOURCEFREQ, D3DHAL_DP2SETSTREAMSOURCEFREQ, d3dhal/LPD3DHAL_DP2SETSTREAMSOURCEFREQ, _D3DHAL_DP2SETSTREAMSOURCEFREQ, d3dhal/D3DHAL_DP2SETSTREAMSOURCEFREQ, d3dstrct_979aa6d9-cf68-4e59-9ee5-b422749fa49d.xml, display.d3dhal_dp2setstreamsourcefreq, LPD3DHAL_DP2SETSTREAMSOURCEFREQ, D3DHAL_DP2SETSTREAMSOURCEFREQ structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETSTREAMSOURCEFREQ
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETSTREAMSOURCEFREQ
 ---
 
@@ -50,17 +54,17 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCEFREQ {
 
 ## Members
 
-        
-            `dwDivider`
 
-            Specifies the frequency divisor, which is the number of vertices after which data from the given stream is fetched into the vertex shader. This number can be greater than zero and at most 2^16-1 (WORD).
-        
-            `dwStream`
+`dwDivider`
 
-            Specifies the data stream, in the range from 0 to the maximum number of streams -1, whose frequency is being modified.
+Specifies the frequency divisor, which is the number of vertices after which data from the given stream is fetched into the vertex shader. This number can be greater than zero and at most 2^16-1 (WORD).
 
-    ## Remarks
-        A driver is requested to set a stream's frequency divisor through the D3DDP2OP_SETSTREAMSOURCEFREQ operation code. 
+`dwStream`
+
+Specifies the data stream, in the range from 0 to the maximum number of streams -1, whose frequency is being modified.
+
+## Remarks
+A driver is requested to set a stream's frequency divisor through the D3DDP2OP_SETSTREAMSOURCEFREQ operation code. 
 
 A driver for a device that supports vertex shader version 3.0 and later can implement stream frequency division. For more information, see <a href="https://msdn.microsoft.com/81bbced4-7331-4e54-9617-1ef29b02f162">Modifying Vertex Stream Frequency</a>.
 
@@ -72,14 +76,12 @@ A driver for a device that supports vertex shader version 3.0 and later can impl
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_SETSTREAMSOURCEFREQ</dt>
-<dt>
+D3DDP2OP_SETSTREAMSOURCEFREQ
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-</dl>
+
  
 
  

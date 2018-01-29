@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 067378bd-a2d8-4c83-9436-531519eadaa3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setrendertarget, SetRenderTarget callback function [Display Devices], SetRenderTarget, PFND3DDDI_SETRENDERTARGET, PFND3DDDI_SETRENDERTARGET, d3dumddi/SetRenderTarget, UserModeDisplayDriver_Functions_c6c2e714-ac5c-4106-98da-1d87a322c652.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetRenderTarget
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -80,14 +84,10 @@ A handle to the display device (graphics context).
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setrendertarget.md">D3DDDIARG_SETRENDERTARGET</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

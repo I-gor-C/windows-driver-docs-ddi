@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : aa0903db-fced-4af9-bfc9-2769ed4962a1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcPinMappedData
+ms.keywords : ntifs/CcPinMappedData, ifsk.ccpinmappeddata, CcPinMappedData routine [Installable File System Drivers], ccref_3935eee3-9906-4110-812f-ca186953cfbf.xml, CcPinMappedData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcPinMappedData
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -67,7 +71,6 @@ Length in bytes of the data to be pinned.
 `Flags`
 
 Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: 
-
 <table>
 <tr>
 <th>Flag</th>
@@ -152,26 +155,18 @@ It is not necessary to call <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinDa
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccsetdirtypinneddata.md">CcSetDirtyPinnedData</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
+
+<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
  
 
  

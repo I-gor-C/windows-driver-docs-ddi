@@ -7,8 +7,8 @@ old-location : netvista\ril_getuiccservicestate.htm
 old-project : netvista
 ms.assetid : 8ce53e64-791d-4e52-a383-b9e407b5b332
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL_GetUiccServiceState
+ms.date : 1/18/2018
+ms.keywords : netvista.ril_getuiccservicestate, RIL_GetUiccServiceState method [Network Drivers Starting with Windows Vista], RIL_GetUiccServiceState, rilapi/RIL_GetUiccServiceState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL_GetUiccServiceState
-req.alt-loc : rilapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product : Windows 10 or later.
 ---
 

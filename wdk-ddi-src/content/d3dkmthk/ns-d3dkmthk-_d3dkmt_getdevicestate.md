@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b90f8b63-51d3-4de4-9d8b-91926150fd30
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_GETDEVICESTATE, D3DKMT_GETDEVICESTATE
+ms.keywords : d3dkmthk/D3DKMT_GETDEVICESTATE, D3DKMT_GETDEVICESTATE, display.d3dkmt_getdevicestate, D3DKMT_GETDEVICESTATE structure [Display Devices], _D3DKMT_GETDEVICESTATE, OpenGL_Structs_39a99244-3951-4a2f-a92d-4aec50589cde.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_GETDEVICESTATE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_GETDEVICESTATE
 ---
 
@@ -52,14 +56,14 @@ typedef struct _D3DKMT_GETDEVICESTATE {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the device that status is requested for.
-        
-            `StateType`
+`hDevice`
 
-            [in] A <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_devicestate_type.md">D3DKMT_DEVICESTATE_TYPE</a>-typed value that indicates the type of status to retrieve for the device.
+[in] A handle to the device that status is requested for.
+
+`StateType`
+
+[in] A <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_devicestate_type.md">D3DKMT_DEVICESTATE_TYPE</a>-typed value that indicates the type of status to retrieve for the device.
 
 
 ## Requirements
@@ -70,25 +74,18 @@ typedef struct _D3DKMT_GETDEVICESTATE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_deviceexecution_state.md">D3DKMT_DEVICEEXECUTION_STATE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicepresent_state.md">D3DKMT_DEVICEPRESENT_STATE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicereset_state.md">D3DKMT_DEVICERESET_STATE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_devicestate_type.md">D3DKMT_DEVICESTATE_TYPE</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_devicestate_type.md">D3DKMT_DEVICESTATE_TYPE</a>
+
+<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_deviceexecution_state.md">D3DKMT_DEVICEEXECUTION_STATE</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicereset_state.md">D3DKMT_DEVICERESET_STATE</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicepresent_state.md">D3DKMT_DEVICEPRESENT_STATE</a>
+
  
 
  

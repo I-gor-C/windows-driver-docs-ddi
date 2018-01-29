@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 47e7fd44-b98f-4e0a-80c8-cc9b6dcc483b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetPinFromFileObject
+ms.keywords : stream.ksgetpinfromfileobject, ks/KsGetPinFromFileObject, avfunc_18bdc4eb-2823-481e-ba51-e4103ff10d8c.xml, KsGetPinFromFileObject, KsGetPinFromFileObject function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetPinFromFileObject
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,14 +81,10 @@ This call is an inline call to <a href="..\ks\nf-ks-ksgetobjectfromfileobject.md
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgetobjecttypefromfileobject.md">KsGetObjectTypeFromFileObject</a>
-</dt>
-</dl>
+
  
 
  

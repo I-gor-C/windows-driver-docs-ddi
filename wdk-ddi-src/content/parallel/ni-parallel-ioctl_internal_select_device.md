@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : d072a97d-f15d-44e9-b7d5-4fb872bfcbf0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_select_device, IOCTL_INTERNAL_SELECT_DEVICE control code [Parallel Ports], IOCTL_INTERNAL_SELECT_DEVICE, parallel/IOCTL_INTERNAL_SELECT_DEVICE, cisspd_e884bf73-c8d2-4007-a01a-ba6af4fd8359.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_SELECT_DEVICE
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -52,16 +56,6 @@ Although a client can select an end-of-chain device using a select device reques
 </li>
 </ul>
 
-
-The <b>IOCTL_INTERNAL_SELECT_DEVICE</b> request:
-
-Allocates the parallel port
-
-The system-supplied function driver for parallel ports allocates the parallel port if the client does not set the PAR_HAVE_PORT_KEEP_PORT flag in the <b>CommandFlags</b> member of the input PARALLEL_1284_COMMAND structure. Otherwise, the parallel port function driver does not allocate the parallel port.
-
-Selects an IEEE 1284.3 daisy chain parallel device or an end-of-chain device attached to the parallel port
-
-Although a client can select an end-of-chain device using a select device request, Microsoft recommends using an <a href="..\parallel\ni-parallel-ioctl_internal_parallel_port_allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request instead. The parallel port function driver selects the end-of-chain device before it allocates the parallel port to a client.
 
 For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71-8740-70c6fbe9a885">Selecting and Deselecting an IEEE 1284 Device Attached to a ParallelPort</a>.
 
@@ -87,16 +81,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.InputBufferLength</b> member is less than the size, in bytes, of a PARALLEL_1284_COMMAND structure.
-
-The specified device is not flagged internally as an end-of-chain device and the value of the <b>ID</b> member of the input structure is greater than the number of existing daisy chain devices.
 
 
 ## Requirements
@@ -106,16 +93,12 @@ The specified device is not flagged internally as an end-of-chain device and the
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a>
-</dt>
-</dl>
+
  
 
  

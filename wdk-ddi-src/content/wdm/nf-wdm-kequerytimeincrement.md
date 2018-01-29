@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f8291e2b-a7a1-4a19-9137-fcd93e62bbaf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryTimeIncrement
+ms.keywords : KeQueryTimeIncrement routine [Kernel-Mode Driver Architecture], KeQueryTimeIncrement, k105_dc7a4658-7d4b-4b60-a8c8-693c36d68b27.xml, wdm/KeQueryTimeIncrement, kernel.kequerytimeincrement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeQueryTimeIncrement
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -53,10 +57,6 @@ This function has no parameters.
 
 <b>KeQueryTimeIncrement</b> returns a ULONG value indicating the number of 100-nanosecond units that are added to the system time each time the interval clock interrupts.
 
-<b>KeQueryTimeIncrement</b> returns a ULONG value indicating the number of 100-nanosecond units that are added to the system time each time the interval clock interrupts.
-
-<b>KeQueryTimeIncrement</b> returns a ULONG value indicating the number of 100-nanosecond units that are added to the system time each time the interval clock interrupts.
-
 ## Remarks
 
 At startup time, the operating system determines the time increment to use for the system time. This time increment remains constant until the computer restarts. During this time, calls to <b>KeQueryTimeIncrement</b> always return the same time increment value. The time increment does not change while the computer is running, and it does not change as the result of a suspend-resume cycle.
@@ -75,17 +75,12 @@ At startup time, the operating system determines the time increment to use for t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
-</dt>
-<dt>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
+
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
-</dt>
-</dl>
+
  
 
  

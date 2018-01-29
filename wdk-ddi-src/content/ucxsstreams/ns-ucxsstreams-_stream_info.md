@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B8AE8866-AC13-4E7B-8815-70846DEECA12
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO
+ms.keywords : buses._stream_info, *PSTREAM_INFO, P_STREAM_INFO, P_STREAM_INFO structure pointer [Buses], STREAM_INFO, STREAM_INFO structure [Buses], _STREAM_INFO, ucxsstreams/P_STREAM_INFO, ucxsstreams/_STREAM_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STREAM_INFO
-req.alt-loc : ucxsstreams.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STREAM_INFO, *PSTREAM_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTREAM_INFO, STREAM_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _STREAM_INFO {
 
 ## Members
 
-        
-            `Size`
 
-            The size in bytes of this structure.
-        
-            `StreamId`
+`Size`
 
-            The stream identifier. The open-static streams request obtains stream identifiers that are assigned by the USB driver stack.
-        
-            `WdfQueue`
+The size in bytes of this structure.
 
-            A handle to the framework queue object that contains streams.
+`StreamId`
+
+The stream identifier. The open-static streams request obtains stream identifiers that are assigned by the USB driver stack.
+
+`WdfQueue`
+
+A handle to the framework queue object that contains streams.
 
 
 ## Requirements

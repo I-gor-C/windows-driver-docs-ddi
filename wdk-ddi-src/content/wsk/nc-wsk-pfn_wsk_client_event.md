@@ -7,8 +7,8 @@ old-location : netvista\wskclientevent.htm
 old-project : netvista
 ms.assetid : 5511f540-4448-4cbe-849a-b1712453fae1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.date : 1/18/2018
+ms.keywords : netvista.wskclientevent, WskClientEvent callback function [Network Drivers Starting with Windows Vista], WskClientEvent, PFN_WSK_CLIENT_EVENT, PFN_WSK_CLIENT_EVENT, wsk/WskClientEvent, wskref_c9f563f1-19c1-4f8d-ab44-04eedd74763f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WskClientEvent
-req.alt-loc : wsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -84,13 +88,35 @@ The length of the additional information that is contained in the buffer that is
 
 A WSK application's 
      <i>WskClientEvent</i> event callback function can return one of the following NTSTATUS codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The event notification was successfully processed.
+</dl>
+</td>
+<td width="60%">
+The event notification was successfully processed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>Support for the event that is passed in the 
+</dl>
+</td>
+<td width="60%">
+Support for the event that is passed in the 
        <i>Event</i> parameter is not implemented.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -128,16 +154,12 @@ A WSK application's <i>WskClientEvent</i> event callback function must not wait 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
-</dt>
-<dt>
 <a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
-</dt>
-</dl>
- 
+
+<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CLIENT_EVENT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CLIENT_EVENT callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : f55b74d0-d545-419a-87fb-c320f789aaf4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
+ms.keywords : smclib/*PSCARD_READER_CAPABILITIES, _SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], scstruct_bf7b8868-e647-42c5-8e1d-18681db95b08.xml, smartcrd.scard_reader_capabilities, smclib/SCARD_READER_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCARD_READER_CAPABILITIES
-req.alt-loc : Smclib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES"
 req.product : Windows 10 or later.
 ---
 
@@ -72,15 +76,22 @@ typedef struct {
 
 ## Members
 
-        
-            `CardConfiscated`
 
-            If <b>TRUE</b>, indicates that the smart card was confiscated.
-        
-            `Channel`
+`_CLKFrequenciesSupported`
 
-            Contains the logical channel number. This member is optional. The exact meaning of this member depends on the type of smart card, as shown in the following table. 
 
+
+`_DataRatesSupported`
+
+
+
+`CardConfiscated`
+
+If <b>TRUE</b>, indicates that the smart card was confiscated.
+
+`Channel`
+
+Contains the logical channel number. This member is optional. The exact meaning of this member depends on the type of smart card, as shown in the following table. 
 <table>
 <tr>
 <th>Type of smart card</th>
@@ -136,23 +147,21 @@ Device number
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information, see Part 3 of the <i>Interoperability Specification for ICCs and Personal Computer Systems</i>.
-        
-            `CLKFrequenciesSupported`
 
-            A structure with the following members:
-        
-            `CLKFrequency`
+`CLKFrequenciesSupported`
 
-            A structure with the following members:
-        
-            `CurrentState`
+A structure with the following members:
 
-            This member contains the status of the card and is required. This member can have one of the values listed in the following table.
+`CLKFrequency`
 
+A structure with the following members:
+
+`CurrentState`
+
+This member contains the status of the card and is required. This member can have one of the values listed in the following table.
 <table>
 <tr>
 <th>Status</th>
@@ -228,27 +237,25 @@ A smart card is inserted and a protocol has been selected.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a>.
-        
-            `DataRate`
 
-            A structure with the following members:
-        
-            `DataRatesSupported`
+`DataRate`
 
-            A structure with the following members:
-        
-            `MaxIFSD`
+A structure with the following members:
 
-            Contains the maximum buffer size of the reader. This value informs the smart card at the beginning of a T=1 transmission of the maximum number of bytes that can be received in one packet. This member is required.
-        
-            `MechProperties`
+`DataRatesSupported`
 
-            Contains a value that is formed by taking a bitwise OR of all applicable reader properties shown in the following table. This member is optional. 
+A structure with the following members:
 
+`MaxIFSD`
+
+Contains the maximum buffer size of the reader. This value informs the smart card at the beginning of a T=1 transmission of the maximum number of bytes that can be received in one packet. This member is required.
+
+`MechProperties`
+
+Contains a value that is formed by taking a bitwise OR of all applicable reader properties shown in the following table. This member is optional. 
 <table>
 <tr>
 <th>Value</th>
@@ -285,15 +292,14 @@ Reader can swallow the smart card.
 </td>
 </tr>
 </table>
-        
-            `PowerMgmtSupport`
 
-            Indicates the type of power management that the card supports. A value of zero indicates that the smart card does not support power management.
-        
-            `ReaderType`
+`PowerMgmtSupport`
 
-            This member contains the reader type and is required. This member can have one of the values in the following table.
+Indicates the type of power management that the card supports. A value of zero indicates that the smart card does not support power management.
 
+`ReaderType`
+
+This member contains the reader type and is required. This member can have one of the values in the following table.
 <table>
 <tr>
 <th>Value</th>
@@ -390,21 +396,21 @@ Reader that uses a proprietary vendor bus
 </td>
 </tr>
 </table>
-        
-            `Reserved`
 
-            Reserved for system use.
-        
-            `Reserved1`
+`Reserved`
 
-            Reserved for system use.
-        
-            `SupportedProtocols`
+Reserved for system use.
 
-            Must be set to a bitmask that reflects the asynchronous or synchronous protocols that the card reader and card reader driver support. This member is required.
+`Reserved1`
 
-    ## Remarks
-        This structure must be maintained by the smart card reader driver. </p>
+Reserved for system use.
+
+`SupportedProtocols`
+
+Must be set to a bitmask that reflects the asynchronous or synchronous protocols that the card reader and card reader driver support. This member is required.
+
+## Remarks
+This structure must be maintained by the smart card reader driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2ED5A28B-8668-411D-9462-8D6ED2F08B35
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.getlasttransitionstatus, GetLastTransitionStatus routine [Kernel-Mode Driver Architecture], GetLastTransitionStatus, GET_D3COLD_LAST_TRANSITION_STATUS, GET_D3COLD_LAST_TRANSITION_STATUS, wdm/GetLastTransitionStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetLastTransitionStatus
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -60,13 +64,11 @@ A pointer to interface-specific context information. The caller sets this parame
 `LastTransitionStatus`
 
 A pointer to a variable into which the routine writes one of the following <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
-
 <ul>
 <li><b>LastDStateTransitionStatusUnknown</b></li>
 <li><b>LastDStateTransitionD3hot</b></li>
 <li><b>LastDStateTransitionD3cold</b></li>
-</ul>
- The <b>LastDStateTransitionD3cold</b> value indicates that the most recent transition to D3hot was followed by a transition to D3cold. For more information, see Remarks.
+</ul> The <b>LastDStateTransitionD3cold</b> value indicates that the most recent transition to D3hot was followed by a transition to D3cold. For more information, see Remarks.
 
 
 ## Return Value
@@ -93,14 +95,10 @@ For more information, see <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

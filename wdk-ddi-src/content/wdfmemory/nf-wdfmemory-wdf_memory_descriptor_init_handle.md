@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e5449684-dd37-4d49-ae9f-372f295cecf8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_MEMORY_DESCRIPTOR_INIT_HANDLE
+ms.keywords : DFMemoryObjectRef_1cec1e9e-7279-4278-a5c2-2eaaaa7a8074.xml, WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function, wdfmemory/WDF_MEMORY_DESCRIPTOR_INIT_HANDLE, wdf.wdf_memory_descriptor_init_handle, WDF_MEMORY_DESCRIPTOR_INIT_HANDLE, kmdf.wdf_memory_descriptor_init_handle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_MEMORY_DESCRIPTOR_INIT_HANDLE
-req.alt-loc : wdfmemory.h
 req.ddi-compliance : MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
 req.product : Windows 10 or later.
 ---
@@ -74,8 +78,6 @@ None
 
 The <b>WDF_MEMORY_DESCRIPTOR_INIT_HANDLE</b> function zeros the specified <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure and sets the structure's <b>Type</b> member to <b>WdfMemoryDescriptorTypeHandle</b>. Then it sets the structure's <b>u.HandleType.Memory</b> and <b>u.HandleType.Offsets</b> members to the values that the <i>Memory</i> and <i>Offsets</i> parameters specify, respectively.
 
-The following code example obtains a handle to a framework memory object that represents an I/O request's input buffer. The example uses the memory object handle to initialize a <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure. Then, the example initializes a <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure and sends a USB control transfer request to an I/O target.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -90,20 +92,14 @@ The following code example obtains a handle to a framework memory object that re
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\wdfmemory\nf-wdfmemory-wdf_memory_descriptor_init_buffer.md">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>
-</dt>
-<dt>
+
 <a href="..\wdfmemory\nf-wdfmemory-wdf_memory_descriptor_init_mdl.md">WDF_MEMORY_DESCRIPTOR_INIT_MDL</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-</dt>
-</dl>
+
+<a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
+
  
 
  

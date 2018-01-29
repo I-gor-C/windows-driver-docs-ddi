@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 75df65bc-2309-40d6-8e1d-154e72ad0f23
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxNameCacheCheckEntry
+ms.keywords : RxNameCacheCheckEntry, namcache/RxNameCacheCheckEntry, rxref_703b5e6a-4904-4402-8905-bc1dd2ed1c9e.xml, RxNameCacheCheckEntry function [Installable File System Drivers], ifsk.rxnamecachecheckentry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxNameCacheCheckEntry
-req.alt-loc : namcache.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
@@ -61,15 +65,45 @@ A value of context supplied by the network mini-redirector for equality checking
 ## Return Value
 
 <b>RxNameCacheCheckEntry </b>returns one of the possible enumeration values defined for <b>RX_NC_CHECK_STATUS</b>:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>RX_NC_SUCCESS </b></dt>
-</dl>The check was successful and the entry is valid.
+</dl>
+</td>
+<td width="60%">
+The check was successful and the entry is valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>RX_NC_TIME_EXPIRED</b></dt>
-</dl>The check failed because the lifetime has expired.
+</dl>
+</td>
+<td width="60%">
+The check failed because the lifetime has expired.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>RX_NC_MRXCTX_FAIL</b></dt>
-</dl>The check failed because <i>MRxContext</i> failed equality checking.
+</dl>
+</td>
+<td width="60%">
+The check failed because <i>MRxContext</i> failed equality checking.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -86,32 +120,22 @@ A value of context supplied by the network mini-redirector for equality checking
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\namcache\nf-namcache-rxnamecacheactivateentry.md">RxNameCacheActivateEntry</a>
-</dt>
-<dt>
-<a href="..\namcache\nf-namcache-rxnamecachecreateentry.md">RxNameCacheCreateEntry</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecacheexpireentry.md">RxNameCacheExpireEntry</a>
-</dt>
-<dt>
-<a href="..\namcache\nf-namcache-rxnamecacheexpireentrywithshortname.md">RxNameCacheExpireEntryWithShortName</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecachefetchentry.md">RxNameCacheFetchEntry</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecachefinalize.md">RxNameCacheFinalize</a>
-</dt>
-<dt>
-<a href="..\namcache\nf-namcache-rxnamecachefreeentry.md">RxNameCacheFreeEntry</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecacheinitialize.md">RxNameCacheInitialize</a>
-</dt>
-</dl>
+
+<a href="..\namcache\nf-namcache-rxnamecachefreeentry.md">RxNameCacheFreeEntry</a>
+
+<a href="..\namcache\nf-namcache-rxnamecacheexpireentrywithshortname.md">RxNameCacheExpireEntryWithShortName</a>
+
+<a href="..\namcache\nf-namcache-rxnamecachecreateentry.md">RxNameCacheCreateEntry</a>
+
  
 
  

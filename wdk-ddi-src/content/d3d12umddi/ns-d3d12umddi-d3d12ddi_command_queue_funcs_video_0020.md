@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3B1FDF51-8B5E-4DF9-BFEC-91FD1A1DEC63
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020, D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020
+ms.keywords : D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020 structure [Display Devices], display.d3d12ddi_command_queue_funcs_video, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020, D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020
 ---
 
@@ -50,26 +54,26 @@ typedef struct D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020 {
 
 ## Members
 
-        
-            `pfnCopyTileMappings`
 
-            Copy tile mappings.
-        
-            `pfnExecuteCommandLists`
+`pfnCopyTileMappings`
 
-            Execute command lists.
-        
-            `pfnSignalFence`
+Copy tile mappings.
 
-            Signal fence.
-        
-            `pfnUpdateTileMappings`
+`pfnExecuteCommandLists`
 
-            Update tile mappings.
-        
-            `pfnWaitForFence`
+Execute command lists.
 
-            Wait for fence.
+`pfnSignalFence`
+
+Signal fence.
+
+`pfnUpdateTileMappings`
+
+Update tile mappings.
+
+`pfnWaitForFence`
+
+Wait for fence.
 
 
 ## Requirements

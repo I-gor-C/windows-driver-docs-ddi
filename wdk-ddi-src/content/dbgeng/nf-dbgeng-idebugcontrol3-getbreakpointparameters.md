@@ -7,8 +7,8 @@ old-location : debugger\getbreakpointparameters.htm
 old-project : debugger
 ms.assetid : c4426dfa-7c14-4ef0-8660-855ee24ed7fe
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugControl3, IDebugControl3::GetBreakpointParameters, GetBreakpointParameters
+ms.date : 1/19/2018
+ms.keywords : IDebugControl interface [Windows Debugging], GetBreakpointParameters method, IDebugControl2::GetBreakpointParameters, IDebugControl2 interface [Windows Debugging], GetBreakpointParameters method, IDebugControl_7b2d9423-82db-4274-a1f7-eebcda92e6c3.xml, dbgeng/IDebugControl3::GetBreakpointParameters, IDebugControl::GetBreakpointParameters, IDebugControl3::GetBreakpointParameters, dbgeng/IDebugControl2::GetBreakpointParameters, GetBreakpointParameters, GetBreakpointParameters method [Windows Debugging], GetBreakpointParameters method [Windows Debugging], IDebugControl3 interface, debugger.getbreakpointparameters, GetBreakpointParameters method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::GetBreakpointParameters, IDebugControl3, GetBreakpointParameters method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetBreakpointParameters method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugControl.GetBreakpointParameters,IDebugControl2.GetBreakpointParameters,IDebugControl3.GetBreakpointParameters
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,21 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 
 # GetBreakpointParameters method
-The <b>GetBreakpointParameters</b> method returns the parameters of one or more <a href="debugger.multiprocessor_syntax#breakpoints#breakpoints">breakpoints</a>.
+The <b>GetBreakpointParameters</b> method returns the parameters of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">breakpoints</a>.
 
 ## Syntax
 
@@ -71,12 +75,34 @@ Receives the parameters for the specified breakpoints. The size of this array is
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_FALSE</b></dt>
-</dl>The method was successful. However, the parameters for some of the breakpoints were not returned.  The parameters that were not returned have their <b>Id</b> field set to DEBUG_ANY_ID.
+</dl>
+</td>
+<td width="60%">
+The method was successful. However, the parameters for some of the breakpoints were not returned.  The parameters that were not returned have their <b>Id</b> field set to DEBUG_ANY_ID.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,28 +122,20 @@ Some of the parameters might not be returned.  This happens if either a breakpoi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-</dt>
-<dt>
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a>
-</dt>
-<dt>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545617">GetBreakpointById</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545639">GetBreakpointByIndex</a>
-</dt>
-</dl>
- 
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetBreakpointParameters method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetBreakpointParameters method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

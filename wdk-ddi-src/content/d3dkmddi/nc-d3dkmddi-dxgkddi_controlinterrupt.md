@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d6bef242-bafc-4d9e-a729-d62ccdbd2667
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddicontrolinterrupt, DxgkDdiControlInterrupt callback function [Display Devices], DxgkDdiControlInterrupt, DXGKDDI_CONTROLINTERRUPT, DXGKDDI_CONTROLINTERRUPT, d3dkmddi/DxgkDdiControlInterrupt, DmFunctions_a124d234-9609-4f21-a1f5-c1f4cfa65d9c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiControlInterrupt
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -69,12 +73,34 @@ NTSTATUS DxgkddiControlinterrupt(
 ## Return Value
 
 <i>DxgkDdiControlInterrupt</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The interrupt type was successfully enabled or disabled on the graphics hardware.
+</dl>
+</td>
+<td width="60%">
+The interrupt type was successfully enabled or disabled on the graphics hardware.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl><i>DxgkDdiControlInterrupt</i> does not support enabling or disabling the specified interrupt type.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiControlInterrupt</i> does not support enabling or disabling the specified interrupt type.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,17 +126,12 @@ The driver must return STATUS_NOT_IMPLEMENTED if an interrupt type other than DX
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : CE611168-76B3-496F-91C7-932E1F259529
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_FIXSESSIONTYPE, GNSS_FIXSESSIONTYPE
+ms.keywords : gnssdriver/GNSS_FixSession_SingleShot, GNSS_FIXSESSIONTYPE, GNSS_FixSession_DistanceTracking, GNSS_FIXSESSIONTYPE enumeration [Sensor Devices], sensors.gnss_fixsessiontype, gnssdriver/GNSS_FIXSESSIONTYPE, GNSS_FixSession_LKG, gnssdriver/GNSS_FixSession_ContinuousTracking, gnssdriver/GNSS_FixSession_LKG, gnssdriver/GNSS_FixSession_DistanceTracking, GNSS_FixSession_SingleShot, GNSS_FixSession_ContinuousTracking
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_FIXSESSIONTYPE
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_FIXSESSIONTYPE
 ---
 

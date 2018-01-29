@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d61892c6-f6ca-4077-909e-a21076375e5a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
+ms.keywords : storage.phw_interrupt, (*PHW_INTERRUPT) callback function [Storage Devices], (*PHW_INTERRUPT), srb/(*PHW_INTERRUPT), ide_minikr_d0fa2a3d-deef-45c5-9251-a3c30c7af434.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PHW_INTERRUPT)
-req.alt-loc : srb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ For more information about the miniport driver's interrupt handler routine that 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557312">HwScsiInterrupt</a>
-</dt>
-<dt>
 <a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557312">HwScsiInterrupt</a>
+
  
 
  

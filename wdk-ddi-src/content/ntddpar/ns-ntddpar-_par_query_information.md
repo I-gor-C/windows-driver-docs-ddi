@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 3115b0c2-0190-4c5c-8b31-dbafddc9c44d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION, *PPAR_QUERY_INFORMATION
+ms.keywords : PPAR_QUERY_INFORMATION, cisspd_d7d19b6f-e1a0-4ad7-b0ee-b8e291e63956.xml, *PPAR_QUERY_INFORMATION, PPAR_QUERY_INFORMATION structure pointer [Parallel Ports], PAR_QUERY_INFORMATION, parports.par_query_information, ntddpar/PPAR_QUERY_INFORMATION, _PAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION structure [Parallel Ports], ntddpar/PAR_QUERY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PAR_QUERY_INFORMATION
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PAR_QUERY_INFORMATION, *PPAR_QUERY_INFORMATION
 ---
 
@@ -46,13 +50,13 @@ typedef struct _PAR_QUERY_INFORMATION {
 
 ## Members
 
-        
-            `Status`
 
-            Specifies the operating status of a parallel port. The value of <b>Status</b> is a bitwise OR of one or more of the following flags:
+`Status`
 
-    ## Remarks
-        This structure is used with an <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_information.md">IOCTL_PAR_QUERY_INFORMATION</a> request.
+Specifies the operating status of a parallel port. The value of <b>Status</b> is a bitwise OR of one or more of the following flags:
+
+## Remarks
+This structure is used with an <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_information.md">IOCTL_PAR_QUERY_INFORMATION</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,19 +66,14 @@ typedef struct _PAR_QUERY_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ntddpar.h (include Ntddpar.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_information.md">IOCTL_PAR_QUERY_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_par_set_information.md">IOCTL_PAR_SET_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\ntddpar\ns-ntddpar-_par_set_information.md">PAR_SET_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_par_set_information.md">IOCTL_PAR_SET_INFORMATION</a>
+
  
 
  

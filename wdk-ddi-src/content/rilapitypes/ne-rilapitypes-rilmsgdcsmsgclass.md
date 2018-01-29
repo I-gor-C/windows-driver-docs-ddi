@@ -7,8 +7,8 @@ old-location : netvista\rilmsgdcsmsgclass_2.htm
 old-project : netvista
 ms.assetid : 67064f7c-4d2a-4d2f-8393-fb85d5139bca
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGDCSMSGCLASS, RILMSGDCSMSGCLASS
+ms.date : 1/18/2018
+ms.keywords : RILMSGDCSMSGCLASS, RILMSGDCSMSGCLASS enumeration [Network Drivers Starting with Windows Vista], RIL_DCSMSGCLASS_MAX, rilapitypes/RIL_DCSMSGCLASS_2, RIL_DCSMSGCLASS_2, RIL_DCSMSGCLASS_3, rilapitypes/RIL_DCSMSGCLASS_3, rilapitypes/RIL_DCSMSGCLASS_1, rilapitypes/RIL_DCSMSGCLASS_MAX, rilapitypes/RILMSGDCSMSGCLASS, RIL_DCSMSGCLASS_1, netvista.rilmsgdcsmsgclass_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGDCSMSGCLASS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGDCSMSGCLASS
 req.product : Windows 10 or later.
 ---
@@ -51,6 +55,11 @@ typedef enum _RILMSGDCSMSGCLASS {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_DCSMSGCLASS_0</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_DCSMSGCLASS_1</td>

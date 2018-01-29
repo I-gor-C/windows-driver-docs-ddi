@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a101e0c8-7121-42b6-aa0e-299f37af8e47
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER
+ms.keywords : "*PFLT_TAG_DATA_BUFFER, fltkernel/PFLT_TAG_DATA_BUFFER, FltSystemStructures_47092b0b-5a4b-40eb-8b5f-f0a182d5e509.xml, FLT_TAG_DATA_BUFFER, PFLT_TAG_DATA_BUFFER structure pointer [Installable File System Drivers], fltkernel/FLT_TAG_DATA_BUFFER, ifsk.flt_tag_data_buffer, PFLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER structure [Installable File System Drivers], _FLT_TAG_DATA_BUFFER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FLT_TAG_DATA_BUFFER
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER
 ---
 
@@ -72,21 +76,21 @@ typedef struct _FLT_TAG_DATA_BUFFER {
 
 ## Members
 
-        
-            `FileTag`
 
-            Reparse point tag.
-        
-            `TagDataLength`
+`FileTag`
 
-            Size, in bytes, of the reparse data pointed to by the <b>DataBuffer</b> member.
-        
-            `UnparsedNameLength`
+Reparse point tag.
 
-            Length, in bytes, of the unparsed portion of the file name pointed to by the <b>FileName</b> member of the associated file object.  For more information about the <b>FileName</b> member, see <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>.
+`TagDataLength`
 
-    ## Remarks
-        A minifilter can use the FLT_TAG_DATA_BUFFER structure to store information about a reparse point tag. 
+Size, in bytes, of the reparse data pointed to by the <b>DataBuffer</b> member.
+
+`UnparsedNameLength`
+
+Length, in bytes, of the unparsed portion of the file name pointed to by the <b>FileName</b> member of the associated file object.  For more information about the <b>FileName</b> member, see <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>.
+
+## Remarks
+A minifilter can use the FLT_TAG_DATA_BUFFER structure to store information about a reparse point tag. 
 
 A pointer to an FLT_TAG_DATA_BUFFER structure that contains reparse point tag data for an operation is stored in the <b>TagData</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> structure for the operation. 
 
@@ -100,22 +104,16 @@ The FLT_TAG_DATA_BUFFER_HEADER_SIZE macro returns the size of the fixed portion 
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include FltKernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
-</dt>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
-</dt>
-</dl>
+
  
 
  

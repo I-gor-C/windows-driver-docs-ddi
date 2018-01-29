@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1dca2b12-0542-43a9-abff-203ea34cff90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS
+ms.keywords : DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml, display.dxvaddi_videosampleflags, _DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS, d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_VIDEOSAMPLEFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_VIDEOSAMPLEFLAGS
 ---
 
@@ -67,13 +71,10 @@ typedef struct _DXVADDI_VIDEOSAMPLEFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videosample.md">DXVADDI_VIDEOSAMPLE</a>
-</dt>
-</dl>
+
  
 
  

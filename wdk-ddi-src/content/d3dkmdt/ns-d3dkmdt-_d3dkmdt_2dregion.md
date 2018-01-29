@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 24f703c5-d025-4233-a32d-7cb8bcb5c6b7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_2DREGION, D3DKMDT_2DREGION, D3DKMDT_2DOFFSET
+ms.keywords : display.d3dkmdt_2dregion, DmStructs_8f1640ee-c790-4617-a1fe-913510b2cfad.xml, D3DKMDT_2DREGION, d3dkmdt/D3DKMDT_2DREGION, _D3DKMDT_2DREGION, D3DKMDT_2DOFFSET, D3DKMDT_2DREGION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_2DREGION
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_2DREGION
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMDT_2DREGION {
 
 ## Members
 
-        
-            `cx`
 
-            The horizontal component of the point or offset.
-        
-            `cy`
+`cx`
 
-            The vertical component of the point or offset.
+The horizontal component of the point or offset.
+
+`cy`
+
+The vertical component of the point or offset.
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : netvista\ndis_ipsec_offload_v1_net_buffer_list_info.htm
 old-project : netvista
 ms.assetid : 990b3df6-5ef7-4201-a09d-d94822d0a8bb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, *PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO
+ms.date : 1/18/2018
+ms.keywords : NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, tcpip_offload_ref_2e052bb5-6546-47a9-b51b-f1f77116835d.xml, CRYPTO_TRANSPORT_ESP_AUTH_FAILED, CRYPTO_SUCCESS, CRYPTO_INVALID_PACKET_SYNTAX, CRYPTO_INVALID_PROTOCOL, _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], CRYPTO_TUNNEL_AH_AUTH_FAILED, CRYPTO_GENERIC_ERROR, netvista.ndis_ipsec_offload_v1_net_buffer_list_info, ndis/PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, CRYPTO_TRANSPORT_AH_AUTH_FAILED, CRYPTO_TUNNEL_ESP_AUTH_FAILED, *PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0. For NDIS 6.1 and later, use N
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO
-req.alt-loc : ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section
-req.typenames : "*PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, *PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO
 ---
 
 # _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure
@@ -59,8 +63,8 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO {
 ## Members
 
 
-    ## Remarks
-        Before the TCP/IP transport passes a send packet that a NIC will perform IPsec tasks on to the
+## Remarks
+Before the TCP/IP transport passes a send packet that a NIC will perform IPsec tasks on to the
     miniport driver of the NIC, the transport updates the IPsec information in the
     <b>NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO</b> structure that is associated with the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
@@ -79,25 +83,31 @@ Specifically, the TCP/IP transport supplies a value for the
 Before a miniport driver indicates up a receive packet that has one or more IPsec payloads, the driver
     updates the <b>NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO</b> structure that is associated with the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure as follows:
-
+<ul>
+<li>
 If the NIC performed IPsec checks on at least one IPsec payload in the packet, the miniport driver
       sets the 
       <b>CryptoDone</b> member and indicates the results of the checksum validation tests by specifying the
       appropriate value in the 
       <b>CryptoStatus</b> member.
 
+</li>
+<li>
 If the NIC performed IPsec checking on both the tunnel and transport portions of a receive packet,
       the miniport driver also sets the 
       <b>NextCryptoDone</b> member. 
       <b>NextCryptoDone</b> is set only if a packet has both tunnel and transport IPsec payloads; otherwise, 
       <b>NextCryptoDone</b> is set to zero.
 
+</li>
+<li>
 If the NIC did not perform IPsec checks on the packet, the miniport driver does not set 
       <b>CryptoDone</b> or 
       <b>NextCryptoDone</b> and does not supply a 
       <b>CryptoStatus</b> value.
 
-To create space for another SA on the NIC, the miniport driver of the NIC can set 
+</li>
+</ul>To create space for another SA on the NIC, the miniport driver of the NIC can set 
     <b>SaDeleteReq</b> in the <b>NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO</b> structure for a receive packet. The
     TCP/IP transport subsequently issues 
     <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">OID_TCP_TASK_IPSEC_DELETE_SA</a> once
@@ -120,27 +130,20 @@ To set and get the IPsec information, use the
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
-</dt>
-<dt>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
 <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">OID_TCP_TASK_IPSEC_DELETE_SA</a>
-</dt>
-</dl>
- 
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

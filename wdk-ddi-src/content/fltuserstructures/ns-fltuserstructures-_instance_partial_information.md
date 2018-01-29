@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cabcb39c-1f8d-41dc-a6ec-78f3fb3911cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+ms.keywords : ifsk.instance_partial_information, _INSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION structure [Installable File System Drivers], fltuserstructures/INSTANCE_PARTIAL_INFORMATION, fltuserstructures/PINSTANCE_PARTIAL_INFORMATION, FltSystemStructures_10279757-e7e1-49a9-aa12-184a830e1db7.xml, PINSTANCE_PARTIAL_INFORMATION structure pointer [Installable File System Drivers], PINSTANCE_PARTIAL_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : INSTANCE_PARTIAL_INFORMATION
-req.alt-loc : fltuserstructures.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 ---
 
@@ -50,29 +54,29 @@ typedef struct _INSTANCE_PARTIAL_INFORMATION {
 
 ## Members
 
-        
-            `AltitudeBufferOffset`
 
-            Byte offset of the first character of the altitude string. This character is followed in memory by the remainder of the string.
-        
-            `AltitudeLength`
+`AltitudeBufferOffset`
 
-            Length, in bytes, of the altitude string for the instance.
-        
-            `InstanceNameBufferOffset`
+Byte offset of the first character of the altitude string. This character is followed in memory by the remainder of the string.
 
-            Byte offset of the first character of the instance name string. This character is followed in memory by the remainder of the string.
-        
-            `InstanceNameLength`
+`AltitudeLength`
 
-            Length, in bytes, of the instance name.
-        
-            `NextEntryOffset`
+Length, in bytes, of the altitude string for the instance.
 
-            Byte offset of the next INSTANCE_PARTIAL_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+`InstanceNameBufferOffset`
 
-    ## Remarks
-        This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary.
+Byte offset of the first character of the instance name string. This character is followed in memory by the remainder of the string.
+
+`InstanceNameLength`
+
+Length, in bytes, of the instance name.
+
+`NextEntryOffset`
+
+Byte offset of the next INSTANCE_PARTIAL_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+
+## Remarks
+This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,43 +86,30 @@ typedef struct _INSTANCE_PARTIAL_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | fltuserstructures.h (include FltUser.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540538">FilterInstanceFindClose</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540541">FilterInstanceFindFirst</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541493">FilterInstanceFindNext</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541499">FilterInstanceGetInformation</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541535">FilterVolumeInstanceFindClose</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541541">FilterVolumeInstanceFindFirst</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541551">FilterVolumeInstanceFindNext</a>
-</dt>
-<dt>
+
 <a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\fltuserstructures\ns-fltuserstructures-_instance_basic_information.md">INSTANCE_BASIC_INFORMATION</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540538">FilterInstanceFindClose</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540541">FilterInstanceFindFirst</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541493">FilterInstanceFindNext</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541499">FilterInstanceGetInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541551">FilterVolumeInstanceFindNext</a>
+
 <a href="..\fltuserstructures\ns-fltuserstructures-_instance_full_information.md">INSTANCE_FULL_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541535">FilterVolumeInstanceFindClose</a>
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_basic_information.md">INSTANCE_BASIC_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a>
+
  
 
  

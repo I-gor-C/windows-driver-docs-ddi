@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3bbe3da6-f069-4965-ae60-2d755d7557c1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WdfUsbTargetDeviceSelectSettingType, WdfUsbTargetDeviceSelectSettingType
+ms.keywords : WdfUsbInterfaceSelectSettingTypeUrb, wdfusb/WdfUsbInterfaceSelectSettingTypeSetting, DFUsbRef_2c08813e-959f-48db-92d5-3aece2d8e856.xml, wdfusb/WdfUsbTargetDeviceSelectSettingType, WdfUsbInterfaceSelectSettingTypeDescriptor, WdfUsbInterfaceSelectSettingTypeSetting, wdf.wdfusbtargetdeviceselectsettingtype, WdfUsbTargetDeviceSelectSettingType enumeration, wdfusb/WdfUsbInterfaceSelectSettingTypeDescriptor, _WdfUsbTargetDeviceSelectSettingType, kmdf.wdfusbtargetdeviceselectsettingtype, wdfusb/WdfUsbInterfaceSelectSettingTypeUrb, WdfUsbTargetDeviceSelectSettingType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbTargetDeviceSelectSettingType
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL  (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WdfUsbTargetDeviceSelectSettingType
 req.product : Windows 10 or later.
 ---
@@ -83,17 +87,12 @@ The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a hre
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_interface_select_setting_params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
+
  
 
  

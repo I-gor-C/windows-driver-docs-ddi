@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0491AF42-53DF-4538-BE8A-AA5AA7B2C65E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
+ms.keywords : DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, display.dxgk_multiplane_overlay_attributes3, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
 ---
 
@@ -53,40 +57,44 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 {
 
 ## Members
 
-        
-            `Blend`
 
-            Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the DXGK_MULTIPLANE_OVERLAY_BLEND enumeration.
-        
-            `ClipRect`
+`Blend`
 
-            Specifies additional clipping information, of type RECT, relative to the DstRect rectangle, after the data has been stretched according to the values of SrcRect and DstRect.
+Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the DXGK_MULTIPLANE_OVERLAY_BLEND enumeration.
+
+`ClipRect`
+
+Specifies additional clipping information, of type RECT, relative to the DstRect rectangle, after the data has been stretched according to the values of SrcRect and DstRect.
 
 The driver and hardware can use the ClipRect member to apply a common stretch factor as the clipping changes when an app occludes part of the DstRect destination rectangle.
-        
-            `ColorSpaceType`
 
-            Specifies the colorspace configuration, given as a value from the D3DDDI_COLOR_SPACE_TYPE enumeration.
-        
-            `DstRect`
+`ColorSpaceType`
 
-            Specifies the destination rectangle, of type RECT, relative to the monitor resolution.
-        
-            `Flags`
+Specifies the colorspace configuration, given as a value from the D3DDDI_COLOR_SPACE_TYPE enumeration.
 
-            Specifies a combination of flip operations by Oring values in the DXGK_MULTIPLANE_OVERLAY_FLAGS enumeration.
-        
-            `Rotation`
+`DstRect`
 
-            Specifies the clockwise rotation of the overlay plane, given as a value from the D3DDDI_ROTATION enumeration.
-        
-            `SrcRect`
+Specifies the destination rectangle, of type RECT, relative to the monitor resolution.
 
-            Specifies the source rectangle, of type RECT, relative to the source resource.
-        
-            `StretchQuality`
+`Flags`
 
-            Specifies the overlay plane's stretch quality, given as a value from the DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration.
+Specifies a combination of flip operations by Oring values in the DXGK_MULTIPLANE_OVERLAY_FLAGS enumeration.
+
+`Rotation`
+
+Specifies the clockwise rotation of the overlay plane, given as a value from the D3DDDI_ROTATION enumeration.
+
+`SDRWhiteLevel`
+
+
+
+`SrcRect`
+
+Specifies the source rectangle, of type RECT, relative to the source resource.
+
+`StretchQuality`
+
+Specifies the overlay plane's stretch quality, given as a value from the DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration.
 
 
 ## Requirements

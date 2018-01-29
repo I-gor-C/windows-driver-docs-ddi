@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E334FEE1-DD78-4906-ADFA-1B496F91BA28
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPinPipe, IKsPinPipe::KsSetPinFramingCache, KsSetPinFramingCache
+ms.keywords : KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe interface, KsSetPinFramingCache, IKsPinPipe interface [Streaming Media Devices], KsSetPinFramingCache method, ksproxy/IKsPinPipe::KsSetPinFramingCache, KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe, stream.ikspinpipe_kssetpinframingcache, IKsPinPipe::KsSetPinFramingCache
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPinPipe.KsSetPinFramingCache
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -67,10 +71,6 @@ HRESULT KsSetPinFramingCache(
 
 If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,11 +86,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspinpipe.md">IKsPinPipe</a>
-</dt>
-</dl>
+
  
 
  

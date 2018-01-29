@@ -7,8 +7,8 @@ old-location : netvista\rilmessage.htm
 old-project : netvista
 ms.assetid : b776b060-79bf-4848-807d-1999d38075ad
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMESSAGE, RILMESSAGE, *LPRILMESSAGE
+ms.date : 1/18/2018
+ms.keywords : "*LPRILMESSAGE, ntddrilapitypes/RILMESSAGE, RILMESSAGE structure [Network Drivers Starting with Windows Vista], RILMESSAGE, netvista.rilmessage"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMESSAGE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMESSAGE, *LPRILMESSAGE
 ---
 
@@ -59,34 +63,34 @@ typedef struct _RILMESSAGE {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwFlags`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwType`
 
-            
-        
-            `msgUnion`
+`dwFlags`
 
-            
-        
-            `raSvcCtrAddress`
 
-            
-        
-            `RILMSGUNION`
 
-            
+`dwParams`
+
+
+
+`dwType`
+
+
+
+`msgUnion`
+
+
+
+`raSvcCtrAddress`
+
+
+
+`RILMSGUNION`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : AD531C16-0E24-4CDE-B188-981260CF8F49
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : LAMP_MODE, LAMP_MODE
+ms.keywords : stream.ioctl_lamp_set_intensity_color, IOCTL_LAMP_SET_INTENSITY_COLOR control code [Streaming Media Devices], IOCTL_LAMP_SET_INTENSITY_COLOR, lamp/IOCTL_LAMP_SET_INTENSITY_COLOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_LAMP_SET_INTENSITY_COLOR
-req.alt-loc : lamp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,29 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_MODE
 ---
 
 # IOCTL_LAMP_SET_INTENSITY_COLOR IOCTL
 The <b>IOCTL_LAMP_SET_INTENSITY_COLOR</b> 
    control code sets the lamp to the specified light intensity.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define IOCTL_LAMP_SET_INTENSITY_COLOR \
+    CTL_CODE(IOCTL_LAMP_BASE, 0x0007, METHOD_BUFFERED, FILE_ANY_ACCESS)</pre>
+</td>
+</tr>
+</table></span></div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -60,7 +75,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The driver sets <code>Irp-&gt;IoStatus.Status</code> to <b>STATUS_SUCCESS</b> or the appropriate error status.
 
 If the device has been acquired by a camera driver, the lamp driver should return a <b>STATUS_RESOURCE_IN_USE</b> error via <code>Irp-&gt;IoStatus.Status</code>.

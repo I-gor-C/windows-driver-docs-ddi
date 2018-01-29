@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 05615730-dbeb-496a-b4a8-a16830b31586
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGetLeadingEdgeStreamPointer
+ms.keywords : KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices], stream.kspingetleadingedgestreampointer, KsPinGetLeadingEdgeStreamPointer, ks/KsPinGetLeadingEdgeStreamPointer, avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinGetLeadingEdgeStreamPointer
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -80,29 +84,20 @@ Filters that implement <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a8
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
+
+<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
+
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
+
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+
  
 
  

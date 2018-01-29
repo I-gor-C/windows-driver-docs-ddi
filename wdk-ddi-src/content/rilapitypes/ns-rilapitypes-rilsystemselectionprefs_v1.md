@@ -7,8 +7,8 @@ old-location : netvista\rilsystemselectionprefs_v1_2.htm
 old-project : netvista
 ms.assetid : 19af0039-a2dd-49a4-ad93-1858288d00cd
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1
+ms.date : 1/18/2018
+ms.keywords : RILSYSTEMSELECTIONPREFS_V1 structure [Network Drivers Starting with Windows Vista], RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1, rilapitypes/RILSYSTEMSELECTIONPREFS_V1, netvista.rilsystemselectionprefs_v1_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSYSTEMSELECTIONPREFS_V1
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
 req.product : Windows 10 or later.
 ---
 
@@ -53,34 +57,34 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V1 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwMode`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwRoamingMode`
+`dwExecutor`
 
-            
-        
-            `dwSystemTypes`
 
-            
-        
-            `plmnInfo`
 
-            
+`dwMode`
+
+
+
+`dwParams`
+
+
+
+`dwRoamingMode`
+
+
+
+`dwSystemTypes`
+
+
+
+`plmnInfo`
+
+
 
 
 ## Requirements

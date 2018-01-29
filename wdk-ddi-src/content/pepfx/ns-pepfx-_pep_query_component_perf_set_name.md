@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7F0C550A-A443-4936-B961-17813F23D6AD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_QUERY_COMPONENT_PERF_SET_NAME, PEP_QUERY_COMPONENT_PERF_SET_NAME, *PPEP_QUERY_COMPONENT_PERF_SET_NAME
+ms.keywords : PPEP_QUERY_COMPONENT_PERF_SET_NAME, _PEP_QUERY_COMPONENT_PERF_SET_NAME, pepfx/PPEP_QUERY_COMPONENT_PERF_SET_NAME, PPEP_QUERY_COMPONENT_PERF_SET_NAME structure pointer [Kernel-Mode Driver Architecture], PEP_QUERY_COMPONENT_PERF_SET_NAME, pepfx/PEP_QUERY_COMPONENT_PERF_SET_NAME, *PPEP_QUERY_COMPONENT_PERF_SET_NAME, PEP_QUERY_COMPONENT_PERF_SET_NAME structure [Kernel-Mode Driver Architecture], kernel.pep_query_component_perf_set_name
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_QUERY_COMPONENT_PERF_SET_NAME
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_QUERY_COMPONENT_PERF_SET_NAME, *PPEP_QUERY_COMPONENT_PERF_SET_NAME
 ---
 
@@ -50,29 +54,29 @@ typedef struct _PEP_QUERY_COMPONENT_PERF_SET_NAME {
 
 ## Members
 
-        
-            `Component`
 
-            [in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
-        
-            `DeviceHandle`
+`Component`
 
-            [in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a> notification.
-        
-            `Name`
+[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-            [in] A pointer to an output buffer. The PEP writes the name of the P-state to this buffer. The name is stored as a wide-character, null-terminated string. The <b>Name</b> member is NULL if the Windows power management framework (PoFx) needs to determine how large a buffer to allocate for the name string. If <b>Name</b> is non-NULL, the buffer must be large enough to contain the entire string, including the terminating null character.
-        
-            `NameSize`
+`DeviceHandle`
 
-            [in, out] On input, the size, in bytes, of the buffer pointed to by the <b>Name</b> member. If <b>Name</b> is NULL, the PEP overwrites the input value of <b>NameSize</b> with the buffer size required for the name string.
-        
-            `Set`
+[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a> notification.
 
-            [in] The index that identifies this P-state set. If this component has M P-state sets, P-state set indexes range from 0 to M–1. The PEP previously specified the number of P-state sets in response to a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186839">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification.
+`Name`
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186841">PEP_DPM_QUERY_COMPONENT_PERF_SET_NAME</a> notification. The <b>DeviceHandle</b>, <b>Component</b>, and <b>Set</b> members of the structure contain input values supplied by PoFx when this notification is sent. If the <b>Name</b> member is non-NULL, the PEP writes a string to the buffer pointed to by <b>Name</b>. If <b>Name</b> is NULL, PEP writes the required buffer size to the <b>NameSize</b> member.
+[in] A pointer to an output buffer. The PEP writes the name of the P-state to this buffer. The name is stored as a wide-character, null-terminated string. The <b>Name</b> member is NULL if the Windows power management framework (PoFx) needs to determine how large a buffer to allocate for the name string. If <b>Name</b> is non-NULL, the buffer must be large enough to contain the entire string, including the terminating null character.
+
+`NameSize`
+
+[in, out] On input, the size, in bytes, of the buffer pointed to by the <b>Name</b> member. If <b>Name</b> is NULL, the PEP overwrites the input value of <b>NameSize</b> with the buffer size required for the name string.
+
+`Set`
+
+[in] The index that identifies this P-state set. If this component has M P-state sets, P-state set indexes range from 0 to M–1. The PEP previously specified the number of P-state sets in response to a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186839">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186841">PEP_DPM_QUERY_COMPONENT_PERF_SET_NAME</a> notification. The <b>DeviceHandle</b>, <b>Component</b>, and <b>Set</b> members of the structure contain input values supplied by PoFx when this notification is sent. If the <b>Name</b> member is non-NULL, the PEP writes a string to the buffer pointed to by <b>Name</b>. If <b>Name</b> is NULL, PEP writes the required buffer size to the <b>NameSize</b> member.
 
 The string that the PEP writes to the output buffer should contain a descriptive name for the P-state set. This name is intended to make log entries and diagnostic messages easier to understand.
 
@@ -84,22 +88,16 @@ The string that the PEP writes to the output buffer should contain a descriptive
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186839">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186841">PEP_DPM_QUERY_COMPONENT_PERF_SET_NAME</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186839">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a>
+
  
 
  

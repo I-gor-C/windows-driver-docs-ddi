@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : fb0650ee-24a6-4f64-9f16-dded0ccc79cd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IInterruptSync, IInterruptSync::RegisterServiceRoutine, RegisterServiceRoutine
+ms.keywords : audmp-routines_92919bdc-00aa-4911-ac3c-58a0807c7212.xml, audio.iinterruptsync_registerserviceroutine, RegisterServiceRoutine, RegisterServiceRoutine method [Audio Devices], IInterruptSync interface, IInterruptSync interface [Audio Devices], RegisterServiceRoutine method, portcls/IInterruptSync::RegisterServiceRoutine, IInterruptSync::RegisterServiceRoutine, RegisterServiceRoutine method [Audio Devices], IInterruptSync
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IInterruptSync.RegisterServiceRoutine
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -69,7 +73,7 @@ Specifies whether the routine is added at the head or tail of the list of ISRs. 
 
 ## Remarks
 
-This method adds the specified routine to the synchronization object's list of ISRs. When an interrupt occurs, the routine at the head of the list is called first, and the routine at the tail is called last.</p>
+This method adds the specified routine to the synchronization object's list of ISRs. When an interrupt occurs, the routine at the head of the list is called first, and the routine at the tail is called last.
 
 ## Requirements
 | &nbsp; | &nbsp; |

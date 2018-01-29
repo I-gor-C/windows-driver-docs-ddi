@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : f593e36e-8c2b-4cdc-ade1-d1e260f37667
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+ms.keywords : parports.ioctl_par_query_device_id_size, IOCTL_PAR_QUERY_DEVICE_ID_SIZE control code [Parallel Ports], IOCTL_PAR_QUERY_DEVICE_ID_SIZE, ntddpar/IOCTL_PAR_QUERY_DEVICE_ID_SIZE, cisspd_a1c3f5cd-d1bc-40e5-a1e0-dc4306107826.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PAR_QUERY_DEVICE_ID_SIZE
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_QUERY_DEVICE_ID_SIZE IOCTL
-The IOCTL_PAR_QUERY_DEVICE_ID_SIZE request returns the size, in bytes, of a buffer that can hold a device's IEEE 1284 device ID and a <b>NULL</b> terminator.
-
-
-
 The IOCTL_PAR_QUERY_DEVICE_ID_SIZE request returns the size, in bytes, of a buffer that can hold a device's IEEE 1284 device ID and a <b>NULL</b> terminator.
 
 ### Major Code
@@ -63,7 +63,6 @@ The length of a <a href="..\ntddpar\ns-ntddpar-_par_device_id_size_information.m
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a PAR_DEVICE_ID_SIZE_INFORMATION structure. Otherwise, the <b>Information</b> member is set to zero.
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to STATUS_IO_DEVICE_ERROR
@@ -76,16 +75,12 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 | **Header** | ntddpar.h (include Ntddpar.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id.md">IOCTL_PAR_QUERY_DEVICE_ID</a>
-</dt>
-<dt>
 <a href="..\ntddpar\ns-ntddpar-_par_device_id_size_information.md">PAR_DEVICE_ID_SIZE_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id.md">IOCTL_PAR_QUERY_DEVICE_ID</a>
+
  
 
  

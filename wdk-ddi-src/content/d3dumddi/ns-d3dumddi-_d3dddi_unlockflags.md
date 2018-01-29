@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3c3356c-ec7b-4869-896d-9d3b285f0e87
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_UNLOCKFLAGS, D3DDDI_UNLOCKFLAGS
+ms.keywords : _D3DDDI_UNLOCKFLAGS, D3D_other_Structs_c1133d3b-9330-4278-85c7-4083436278cf.xml, D3DDDI_UNLOCKFLAGS, D3DDDI_UNLOCKFLAGS structure [Display Devices], d3dumddi/D3DDDI_UNLOCKFLAGS, display.d3dddi_unlockflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_UNLOCKFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_UNLOCKFLAGS
 ---
 
@@ -62,13 +66,10 @@ typedef struct _D3DDDI_UNLOCKFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a>
-</dt>
-</dl>
+
  
 
  

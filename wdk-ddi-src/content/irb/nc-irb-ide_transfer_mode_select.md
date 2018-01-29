@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3ee46b54-791f-4eac-84d7-5a0093b6984a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : WdmlibIoGetAffinityInterrupt
+ms.keywords : storage.atacontrollertransfermodeselect, AtaControllerTransferModeSelect routine [Storage Devices], AtaControllerTransferModeSelect, IDE_TRANSFER_MODE_SELECT, IDE_TRANSFER_MODE_SELECT, irb/AtaControllerTransferModeSelect, atartns_c4d206b0-4a6a-49ce-b729-97c8b01e4089.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaControllerTransferModeSelect
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LUID
 ---
 
 
 # IDE_TRANSFER_MODE_SELECT callback function
 The <b><i>AtaControllerTransferModeSelect</i></b> miniport driver routine selects the transfer mode for all devices on the indicated ATA channel and programs the controller for the selected transfer mode.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -85,11 +90,8 @@ The <b><i>AtaControllerTransferModeSelect</i></b> miniport driver routine must s
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\ns-irb-_ide_transfer_mode_parameters.md">IDE_TRANSFER_MODE_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

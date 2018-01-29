@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 21932a96-285c-490d-a1fb-a137aed57bbb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListUpdateChildDescriptionAsMissing
+ms.keywords : WdfChildListUpdateChildDescriptionAsMissing method, wdfchildlist/WdfChildListUpdateChildDescriptionAsMissing, PFN_WDFCHILDLISTUPDATECHILDDESCRIPTIONASMISSING, DFDeviceObjectChildListRef_1a871104-3d76-4ecb-936e-c27c2a107f2e.xml, wdf.wdfchildlistupdatechilddescriptionasmissing, WdfChildListUpdateChildDescriptionAsMissing, kmdf.wdfchildlistupdatechilddescriptionasmissing
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfChildListUpdateChildDescriptionAsMissing
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_RETRIEVE_CHILD_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -58,23 +62,51 @@ A handle to a child list object.
 
 `IdentificationDescription`
 
-A pointer to a caller-allocated <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies a driver-supplied child <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">identification description</a>.
+A pointer to a caller-allocated <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies a driver-supplied child <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">identification description</a>.
 
 
 ## Return Value
 
 <b>WdfChildListUpdateChildDescriptionAsMissing</b> returns STATUS_SUCCESS, or another status value for which <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS(status)</a> equals <b>TRUE</b>, if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An input parameter was invalid.
+</dl>
+</td>
+<td width="60%">
+An input parameter was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The size of the structure that <i>IdentificationDescription</i> points to was incorrect.
+</dl>
+</td>
+<td width="60%">
+The size of the structure that <i>IdentificationDescription</i> points to was incorrect.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_SUCH_DEVICE</b></dt>
-</dl>The specified device was not found in the child list.
+</dl>
+</td>
+<td width="60%">
+The specified device was not found in the child list.
 
- 
+</td>
+</tr>
+</table> 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -90,8 +122,6 @@ If you want to report that all devices in a child list are unavailable, your dri
 
 For more information about child devices and child lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">Dynamic Enumeration</a>.
 
-The following code example informs the framework that a child device with a specified serial number is unavailable.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -106,17 +136,12 @@ The following code example informs the framework that a child device with a spec
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent.md">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>
-</dt>
-</dl>
+
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
+
  
 
  

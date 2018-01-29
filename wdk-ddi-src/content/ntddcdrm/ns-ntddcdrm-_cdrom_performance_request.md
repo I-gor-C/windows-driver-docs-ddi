@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E43D2F2C-B5A1-4724-AEBC-F4B6A85EA846
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_PERFORMANCE_REQUEST, *PCDROM_PERFORMANCE_REQUEST, CDROM_PERFORMANCE_REQUEST
+ms.keywords : _CDROM_PERFORMANCE_REQUEST, *PCDROM_PERFORMANCE_REQUEST, PCDROM_PERFORMANCE_REQUEST structure pointer [Storage Devices], CDROM_PERFORMANCE_REQUEST, CDROM_PERFORMANCE_REQUEST structure [Storage Devices], ntddcdrm/CDROM_PERFORMANCE_REQUEST, PCDROM_PERFORMANCE_REQUEST, storage.cdrom_performance_request, ntddcdrm/PCDROM_PERFORMANCE_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_PERFORMANCE_REQUEST
-req.alt-loc : Ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCDROM_PERFORMANCE_REQUEST, CDROM_PERFORMANCE_REQUEST"
 ---
 
@@ -50,22 +54,26 @@ typedef struct _CDROM_PERFORMANCE_REQUEST {
 
 ## Members
 
-        
-            `Exceptions`
 
-            The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_exception_type.md">CDROM_PERFORMANCE_EXCEPTION_TYPE</a>    enumeration specifies the type of exception.
-        
-            `PerformanceType`
+`Exceptions`
 
-            The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_type.md">CDROM_PERFORMANCE_TYPE</a> enumeration specifies the type of performance data.
-        
-            `RequestType`
+The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_exception_type.md">CDROM_PERFORMANCE_EXCEPTION_TYPE</a>    enumeration specifies the type of exception.
 
-            The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_request_type.md">CDROM_PERFORMANCE_REQUEST_TYPE</a> enumeration specifies the request type, <b>CdromPerformanceRequest</b>, or <b>CdromWriteSpeedRequest</b>.
-        
-            `Tolerance`
+`PerformanceType`
 
-            The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_tolerance_type.md">CDROM_PERFORMANCE_TOLERANCE_TYPE</a> enumeration specifies the performance tolerance for the nominal performance and the time tolerance (seek delay) for the exception list.
+The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_type.md">CDROM_PERFORMANCE_TYPE</a> enumeration specifies the type of performance data.
+
+`RequestType`
+
+The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_request_type.md">CDROM_PERFORMANCE_REQUEST_TYPE</a> enumeration specifies the request type, <b>CdromPerformanceRequest</b>, or <b>CdromWriteSpeedRequest</b>.
+
+`StaringLba`
+
+
+
+`Tolerance`
+
+The <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_performance_tolerance_type.md">CDROM_PERFORMANCE_TOLERANCE_TYPE</a> enumeration specifies the performance tolerance for the nominal performance and the time tolerance (seek delay) for the exception list.
 
 
 ## Requirements
@@ -76,13 +84,10 @@ typedef struct _CDROM_PERFORMANCE_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-</dt>
-</dl>
+
  
 
  

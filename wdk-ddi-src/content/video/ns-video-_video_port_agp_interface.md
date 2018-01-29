@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a2be4958-3f11-4b9d-9c0c-c339ebbbce04
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_PORT_AGP_INTERFACE, VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE
+ms.keywords : display.video_port_agp_interface, video/PVIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE, VIDEO_PORT_AGP_INTERFACE, Video_Structs_0b0b9383-1396-487e-afbb-5437ea3a2ec3.xml, video/VIDEO_PORT_AGP_INTERFACE, PVIDEO_PORT_AGP_INTERFACE structure pointer [Display Devices], PVIDEO_PORT_AGP_INTERFACE, VIDEO_PORT_AGP_INTERFACE structure [Display Devices], _VIDEO_PORT_AGP_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_PORT_AGP_INTERFACE
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_AGP_INTERFACE, *PVIDEO_PORT_AGP_INTERFACE
 req.product : Windows 10 or later.
 ---
@@ -60,65 +64,65 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 
 ## Members
 
-        
-            `AgpAllocationLimit`
 
-            Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.
-        
-            `AgpCommitPhysical`
+`AgpAllocationLimit`
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a> routine.
-        
-            `AgpCommitVirtual`
+Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a> routine.
-        
-            `AgpFreePhysical`
+`AgpCommitPhysical`
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a> routine.
-        
-            `AgpFreeVirtual`
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a> routine.
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a> routine.
-        
-            `AgpReleasePhysical`
+`AgpCommitVirtual`
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a> routine.
-        
-            `AgpReleaseVirtual`
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a> routine.
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a> routine.
-        
-            `AgpReservePhysical`
+`AgpFreePhysical`
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> routine.
-        
-            `AgpReserveVirtual`
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a> routine.
 
-            Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a> routine.
-        
-            `Context`
+`AgpFreeVirtual`
 
-            Pointer to a video port driver-defined context for the interface.
-        
-            `InterfaceDereference`
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a> routine.
 
-            Pointer to the video port driver-implemented dereference routine for this interface.
-        
-            `InterfaceReference`
+`AgpReleasePhysical`
 
-            Pointer to the video port driver-implemented reference routine for this interface.
-        
-            `Size`
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a> routine.
 
-            Specifies the size in bytes of this structure.
-        
-            `Version`
+`AgpReleaseVirtual`
 
-            Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_AGP_INTERFACE_<i>N</i>.
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a> routine.
 
-    ## Remarks
-        PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.
+`AgpReservePhysical`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> routine.
+
+`AgpReserveVirtual`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a> routine.
+
+`Context`
+
+Pointer to a video port driver-defined context for the interface.
+
+`InterfaceDereference`
+
+Pointer to the video port driver-implemented dereference routine for this interface.
+
+`InterfaceReference`
+
+Pointer to the video port driver-implemented reference routine for this interface.
+
+`Size`
+
+Specifies the size in bytes of this structure.
+
+`Version`
+
+Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_AGP_INTERFACE_<i>N</i>.
+
+## Remarks
+PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -128,16 +132,12 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

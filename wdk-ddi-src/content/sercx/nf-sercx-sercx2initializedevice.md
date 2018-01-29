@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : C0D20E2D-5895-4FD1-9F03-9E5D1C783992
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2InitializeDevice
+ms.keywords : SerCx2InitializeDevice, 2/SerCx2InitializeDevice, serports.sercx2initializedevice, SerCx2InitializeDevice method [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SerCx2InitializeDevice
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX_STATUS, *PSERCX_STATUS
 req.product : Windows 10 or later.
 ---
@@ -62,18 +66,56 @@ A pointer to a caller-allocated <a href="..\sercx\ns-sercx-_sercx2_config.md">SE
 ## Return Value
 
 <b>SerCx2InitializeDevice</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The method was called at the wrong IRQL, or the <i>Device</i> parameter is not a valid WDFDEVICE handle.
+</dl>
+</td>
+<td width="60%">
+The method was called at the wrong IRQL, or the <i>Device</i> parameter is not a valid WDFDEVICE handle.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>The <i>Config</i>-&gt;<b>Size</b> value does not equal <b>sizeof</b>(<b>SERCX2_CONFIG</b>).
+</dl>
+</td>
+<td width="60%">
+The <i>Config</i>-&gt;<b>Size</b> value does not equal <b>sizeof</b>(<b>SERCX2_CONFIG</b>).
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <b>RequestAttributes</b> member is not valid, or required callback functions are missing from the list of function pointers. For more information, see Remarks.
+</dl>
+</td>
+<td width="60%">
+The <b>RequestAttributes</b> member is not valid, or required callback functions are missing from the list of function pointers. For more information, see Remarks.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Insufficient resources are available to perform the requested operation.
+</dl>
+</td>
+<td width="60%">
+Insufficient resources are available to perform the requested operation.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -101,23 +143,16 @@ If the driver calls the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreque
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
-<a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>
-</dt>
-<dt>
-<a href="..\sercx\nf-sercx-sercx2initializedeviceinit.md">SerCx2InitializeDeviceInit</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-</dt>
-<dt>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a>
-</dt>
-</dl>
+
+<a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>
+
+<a href="..\sercx\nf-sercx-sercx2initializedeviceinit.md">SerCx2InitializeDeviceInit</a>
+
  
 
  

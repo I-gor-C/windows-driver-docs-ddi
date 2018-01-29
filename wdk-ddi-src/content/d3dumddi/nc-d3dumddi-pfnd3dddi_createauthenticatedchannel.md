@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0a565bff-fc6f-41c1-a6fd-3a82dd0d7889
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.createauthenticatedchannel, CreateAuthenticatedChannel callback function [Display Devices], CreateAuthenticatedChannel, PFND3DDDI_CREATEAUTHENTICATEDCHANNEL, PFND3DDDI_CREATEAUTHENTICATEDCHANNEL, d3dumddi/CreateAuthenticatedChannel, UserModeDisplayDriver_Functions_5645674c-e4e5-4b9c-9cbf-588b829df423.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : CreateAuthenticatedChannel is supported beginning wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CreateAuthenticatedChannel
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,16 +68,46 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CreateAuthenticatedChannel</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The channel is successfully created.
+</dl>
+</td>
+<td width="60%">
+The channel is successfully created.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_NOTAVAILABLE</b></dt>
-</dl>The driver does not support the channel type that is specified in the <b>ChannelType</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createauthenicatedchannel.md">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a> structure that the <i>pData</i> parameter points to.
+</dl>
+</td>
+<td width="60%">
+The driver does not support the channel type that is specified in the <b>ChannelType</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createauthenicatedchannel.md">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a> structure that the <i>pData</i> parameter points to. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,11 +129,8 @@ The driver must keep track of the display device (<i>hDevice</i>) that was used 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createauthenicatedchannel.md">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a>
-</dt>
-</dl>
+
  
 
  

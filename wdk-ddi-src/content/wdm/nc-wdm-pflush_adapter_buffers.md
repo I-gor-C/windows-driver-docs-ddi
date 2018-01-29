@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cd6cf9af-c600-465c-b8f3-ca0f972780a5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.flushadapterbuffers, FlushAdapterBuffers, FlushAdapterBuffers callback function [Kernel-Mode Driver Architecture], FlushAdapterBuffers, PFLUSH_ADAPTER_BUFFERS, PFLUSH_ADAPTER_BUFFERS, wdm/FlushAdapterBuffers, kdma_97ac2c04-7f7e-495d-b846-d4f0ea27bdac.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FlushAdapterBuffers
-req.alt-loc : wdm.h
 req.ddi-compliance : IrqlDispatch
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -111,29 +115,20 @@ A driver can get the initial <i>CurrentVa</i> for the start of a packet-based DM
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
+
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
  
 
  

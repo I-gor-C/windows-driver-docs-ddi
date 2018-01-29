@@ -7,8 +7,8 @@ old-location : debugger\idebugfailureanalysis2_getnext.htm
 old-project : debugger
 ms.assetid : 935E4BAD-2B4E-44DD-8AE6-A0FD1FE9F2BF
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugFailureAnalysis2, IDebugFailureAnalysis2::GetNext, GetNext
+ms.date : 1/19/2018
+ms.keywords : GetNext method [Windows Debugging], IDebugFailureAnalysis2::GetNext, GetNext, GetNext method [Windows Debugging], IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging], GetNext method, extsfns/IDebugFailureAnalysis2::GetNext, debugger.idebugfailureanalysis2_getnext, IDebugFailureAnalysis2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugFailureAnalysis2.GetNext
-req.alt-loc : extsfns.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : extsfns.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FA_EXTENSION_PLUGIN_PHASE
 ---
 
@@ -78,24 +82,29 @@ Tags are defined in extsfns.h as values of the <a href="..\extsfns\ne-extsfns-_d
 <code>entry-&gt;Tag &amp; 0xFFFFFF00 == 0x400</code>
 
 The following code snippet shows a portion of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration.
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>...
+// Pool
+DEBUG_FLR_POOL_ADDRESS = 0x400,
+DEBUG_FLR_SPECIAL_POOL_CORRUPTION_TYPE,
+DEBUG_FLR_CORRUPTING_POOL_ADDRESS,
+DEBUG_FLR_CORRUPTING_POOL_TAG,
+DEBUG_FLR_FREED_POOL_TAG,
+DEBUG_FLR_LEAKED_SESSION_POOL_TAG,
+DEBUG_FLR_CLIENT_DRIVER,
 
-<b>Example 1</b>
-
-The following example shows how to find all failure analysis entries that have a tag equal to <b>DEBUG_FLR_MANAGED_EXCEPTION_OBJECT</b>. Assume <code>pAnalysis</code> is a pointer to an <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.
-
-<b>Example 2</b>
-
-The following example shows how to find all FA entries that have tags in the Pool group. Recall the tags in the Pool group have values in the range 0x400, 0x401, ... 0x406. Assume <code>pAnalysis</code> is a pointer to an <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.
-
-<b>Example 3</b>
-
-You can create your own custom tags in the range 0xA0000001 through 0xAFFFFFFF.
-
-The following example shows how to find all failure analysis entries that have custom tags. In other words, the code finds all entries with tags that satisfy this condition:
-
-<code>entry-&gt;Tag &amp; 0xF0000000 == 0xA0000000</code>
-
-Entries that have tags 0xA0000001, 0xA0000002, ... 0xAFFFFFF satisfy the condition.
+// Filesystem
+DEBUG_FLR_FILE_ID = 0x500,
+DEBUG_FLR_FILE_LINE,
+...</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,25 +120,18 @@ Entries that have tags 0xA0000001, 0xA0000002, ... 0xAFFFFFF satisfy the conditi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983411">Get</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj983422">NextEntry</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983411">Get</a>
+
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+
 <a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetNext method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetNext method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

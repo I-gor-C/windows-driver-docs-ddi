@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : aea2aff2-5983-4583-9cc8-a45401ecdfb6
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.keywords : bltooth.ioctl_bth_sdp_service_search, IOCTL_BTH_SDP_SERVICE_SEARCH control code [Bluetooth Devices], IOCTL_BTH_SDP_SERVICE_SEARCH, bthioctl/IOCTL_BTH_SDP_SERVICE_SEARCH, bth_ioctls_63b14ae9-91a6-42c7-bdd2-6ab9326f106c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTH_SDP_SERVICE_SEARCH
-req.alt-loc : Bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1"
 ---
 
 # IOCTL_BTH_SDP_SERVICE_SEARCH IOCTL
-The IOCTL_BTH_SDP_SERVICE_SEARCH request contacts a remote device with an SDP request for handles to
-     SDP records of a particular service class or classes.
-
-
-
 The IOCTL_BTH_SDP_SERVICE_SEARCH request contacts a remote device with an SDP request for handles to
      SDP records of a particular service class or classes.
 
@@ -49,14 +48,14 @@ The IOCTL_BTH_SDP_SERVICE_SEARCH request contacts a remote device with an SDP re
 ### Input Buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member contains a 
-      <a href="..\bthioctl\ns-bthioctl-_bth_sdp_service_search_request.md">
-      BTH_SDP_SERVICE_SEARCH_REQUEST</a> structure that specifies the connection handle to the remote SDP
+      <mshelp:link keywords="bltooth.bth_sdp_service_search_request" tabindex="0"><b>
+      BTH_SDP_SERVICE_SEARCH_REQUEST</b></mshelp:link> structure that specifies the connection handle to the remote SDP
       server and an array of GUIDs to search for.
 
 ### Input Buffer Length
 The length of a 
-      <a href="..\bthioctl\ns-bthioctl-_bth_sdp_service_search_request.md">
-      BTH_SDP_SERVICE_SEARCH_REQUEST</a> structure/
+      <mshelp:link keywords="bltooth.bth_sdp_service_search_request" tabindex="0"><b>
+      BTH_SDP_SERVICE_SEARCH_REQUEST</b></mshelp:link> structure/
 
 ### Output Buffer
 The 
@@ -76,7 +75,6 @@ Callers can determine
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the output
       buffer. Otherwise, the 
@@ -84,34 +82,82 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_DEVICE_NOT_CONNECTED
 
+</td>
+<td>
 The device on which the SDP service resides was not connected.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INSUFFICIENT_RESOURCES
 
+</td>
+<td>
 There was not enough memory to complete this operation.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_BUFFER_SIZE
 
+</td>
+<td>
 The output buffer was sized incorrectly.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_PARAMETER
 
+</td>
+<td>
 One of the values in the input buffer was not valid.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_REQUEST_NOT_ACCEPTED
 
+</td>
+<td>
 The SDP service rejected the request.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_TOO_MANY_GUIDS_REQUESTED
 
+</td>
+<td>
 The SDP service could not process the number of GUIDs passed in the input buffer.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -121,13 +167,10 @@ The SDP service could not process the number of GUIDs passed in the input buffer
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | <= PASSIVE_LEVEL |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthioctl\ns-bthioctl-_bth_sdp_service_search_request.md">BTH_SDP_SERVICE_SEARCH_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

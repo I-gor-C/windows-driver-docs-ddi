@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9924f914-2812-4953-85d1-9c777404418b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MODE_DESC, DXGI_DDI_MODE_DESC
+ms.keywords : dxgiddi/DXGI_DDI_MODE_DESC, display.dxgi_ddi_mode_desc, DXGI_DDI_MODE_DESC, UMDisplayDriver_Dx10param_Structs_3687fd3c-7423-47bf-a376-a13b820ee787.xml, DXGI_DDI_MODE_DESC structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_MODE_DESC
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_MODE_DESC
 ---
 
@@ -52,34 +56,34 @@ typedef struct DXGI_DDI_MODE_DESC {
 
 ## Members
 
-        
-            `Format`
 
-            [out] A DXGI_FORMAT-typed value that indicates the pixel format of the display mode.
-        
-            `Height`
+`Format`
 
-            [out] The screen height of the display mode, in pixels.
-        
-            `RefreshRate`
+[out] A DXGI_FORMAT-typed value that indicates the pixel format of the display mode.
 
-            [out] A <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_rational.md">DXGI_DDI_RATIONAL</a> structure that indicates the refresh rate of the display mode.
-        
-            `Rotation`
+`Height`
 
-            [out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.
-        
-            `Scaling`
+[out] The screen height of the display mode, in pixels.
 
-            [out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scaling.md">DXGI_DDI_MODE_SCALING</a>-typed value that identifies the scaling of the display mode.
-        
-            `ScanlineOrdering`
+`RefreshRate`
 
-            [out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scanline_order.md">DXGI_DDI_MODE_SCANLINE_ORDER</a>-typed value that indicates how scan lines are ordered in the display mode.
-        
-            `Width`
+[out] A <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_rational.md">DXGI_DDI_RATIONAL</a> structure that indicates the refresh rate of the display mode.
 
-            [out] The screen width of the display mode, in pixels.
+`Rotation`
+
+[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.
+
+`Scaling`
+
+[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scaling.md">DXGI_DDI_MODE_SCALING</a>-typed value that identifies the scaling of the display mode.
+
+`ScanlineOrdering`
+
+[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scanline_order.md">DXGI_DDI_MODE_SCANLINE_ORDER</a>-typed value that indicates how scan lines are ordered in the display mode.
+
+`Width`
+
+[out] The screen width of the display mode, in pixels.
 
 
 ## Requirements
@@ -90,25 +94,18 @@ typedef struct DXGI_DDI_MODE_DESC {
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scaling.md">DXGI_DDI_MODE_SCALING</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scanline_order.md">DXGI_DDI_MODE_SCANLINE_ORDER</a>
-</dt>
-<dt>
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_primary_desc.md">DXGI_DDI_PRIMARY_DESC</a>
-</dt>
-<dt>
+
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_rational.md">DXGI_DDI_RATIONAL</a>
-</dt>
-</dl>
+
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scaling.md">DXGI_DDI_MODE_SCALING</a>
+
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>
+
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_scanline_order.md">DXGI_DDI_MODE_SCANLINE_ORDER</a>
+
  
 
  

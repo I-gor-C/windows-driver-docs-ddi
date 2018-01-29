@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 8c01d677-5ce4-44f6-8342-2152e851de87
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxInitializeDeviceInit
+ms.keywords : buses.evt_ucx_controller_reset, EvtUcxControllerReset callback function [Buses], EvtUcxControllerReset, EVT_UCX_CONTROLLER_RESET, EVT_UCX_CONTROLLER_RESET, ucxcontroller/EvtUcxControllerReset, PEVT_UCX_CONTROLLER_RESET callback function pointer [Buses], PEVT_UCX_CONTROLLER_RESET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_CONTROLLER_RESET
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
@@ -83,17 +87,12 @@ If the client driver calls <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrol
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
-</dt>
-<dt>
+
 <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>
-</dt>
-<dt>
+
 <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerneedsreset.md">UcxControllerNeedsReset</a>
-</dt>
-</dl>
+
  
 
  

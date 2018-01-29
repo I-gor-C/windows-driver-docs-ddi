@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D555E595-4319-4FCC-84A7-52FA3F278FFD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, *INOUT_PDXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE
+ms.keywords : "*INOUT_PDXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, display.dxgkargcb_reservegpuvirtualaddressrange, d3dkmddi/DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE structure [Display Devices], _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE
 ---
 
@@ -56,26 +60,26 @@ typedef struct _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE {
 
 ## Members
 
-        
-            `Alignment`
 
-            The number of bytes to align the start address to. Must be a multiple of the address space covered by a single page table entry and a power of 2.
-        
-            `BaseAddress`
+`Alignment`
 
-            The base virtual address of the virtual address range in bytes. It must be aligned to the size of the address space, covered by a single page table entry.
-        
-            `hDxgkProcess`
+The number of bytes to align the start address to. Must be a multiple of the address space covered by a single page table entry and a power of 2.
 
-            The handle that was passed to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>.
-        
-            `SizeInBytes`
+`BaseAddress`
 
-            The size of the address range in bytes, this must be set to an integral multiple of the address space covered by a single page table entry.
-        
-            `StartVirtualAddress`
+The base virtual address of the virtual address range in bytes. It must be aligned to the size of the address space, covered by a single page table entry.
 
-            The starting location of the reserved address range.
+`hDxgkProcess`
+
+The handle that was passed to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>.
+
+`SizeInBytes`
+
+The size of the address range in bytes, this must be set to an integral multiple of the address space covered by a single page table entry.
+
+`StartVirtualAddress`
+
+The starting location of the reserved address range.
 
 
 ## Requirements
@@ -86,16 +90,12 @@ typedef struct _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_reservegpuvirtualaddressrange.md">DxgkCbReserveGpuVirtualAddressRange</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_reservegpuvirtualaddressrange.md">DxgkCbReserveGpuVirtualAddressRange</a>
+
  
 
  

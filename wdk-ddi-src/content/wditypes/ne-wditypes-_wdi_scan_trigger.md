@@ -7,8 +7,8 @@ old-location : netvista\wdi_scan_trigger.htm
 old-project : netvista
 ms.assetid : 3E201A6D-3A5B-4A6B-8AED-258A96BBF869
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER
+ms.date : 1/18/2018
+ms.keywords : WDI_SCAN_TRIGGER enumeration [Device and Driver Installation], _WDI_SCAN_TRIGGER, netvista.wdi_scan_trigger, WDI_SCAN_TRIGGER, wditypes/WDI_SCAN_TRIGGER_MANUAL, wditypes/WDI_SCAN_TRIGGER_ANQP_QUERY, WDI_SCAN_TRIGGER_MANUAL, WDI_SCAN_TRIGGER_BACKGROUND, wditypes/WDI_SCAN_TRIGGER_FAST_ROAM, netvista.wifi_scan_trigger, wditypes/WDI_SCAN_TRIGGER_BACKGROUND, WDI_SCAN_TRIGGER_ROAM, wditypes/WDI_SCAN_TRIGGER_ROAM, WDI_SCAN_TRIGGER_CONNECT, WDI_SCAN_TRIGGER_FAST_ROAM, wditypes/WDI_SCAN_TRIGGER, wditypes/WDI_SCAN_TRIGGER_CONNECT, WDI_SCAN_TRIGGER_ANQP_QUERY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_SCAN_TRIGGER
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_SCAN_TRIGGER
 req.product : Windows 10 or later.
 ---

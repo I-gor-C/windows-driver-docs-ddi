@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 7d3f743e-2422-474d-aaad-4386e0dc100a
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpFreeTree
+ms.keywords : bltooth.sdpfreetree, SdpFreeTree, bth_funcs_526ed9cd-2c07-4c1f-a420-dec6fe930e44.xml, SdpFreeTree function [Bluetooth Devices], sdplib/SdpFreeTree
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpFreeTree
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -75,8 +79,8 @@ Callers should perform an
 
 Bluetooth profile drivers can obtain a pointer to the 
     <b>SdpFreeTree</b> function through the 
-    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">
-    BTHDDI_SDP_NODE_INTERFACE</a> structure.
+    <mshelp:link keywords="bltooth.bthddi_sdp_node_interface" tabindex="0"><b>
+    BTHDDI_SDP_NODE_INTERFACE</b></mshelp:link> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,23 +96,16 @@ Bluetooth profile drivers can obtain a pointer to the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
-</dt>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
-</dt>
-<dt>
+
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
-</dt>
-<dt>
+
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
+
  
 
  

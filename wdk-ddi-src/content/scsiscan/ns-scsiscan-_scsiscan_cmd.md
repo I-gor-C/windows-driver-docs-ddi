@@ -7,8 +7,8 @@ old-location : image\scsiscan_cmd.htm
 old-project : image
 ms.assetid : 412c35b2-eb08-43a3-b776-053645806f5d
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _SCSISCAN_CMD, *PSCSISCAN_CMD, SCSISCAN_CMD
+ms.date : 1/18/2018
+ms.keywords : stifnc_2a67c5d9-7866-4dc5-8ce4-6bc832cbf7de.xml, PSCSISCAN_CMD, image.scsiscan_cmd, SCSISCAN_CMD structure [Imaging Devices], _SCSISCAN_CMD, PSCSISCAN_CMD structure pointer [Imaging Devices], scsiscan/SCSISCAN_CMD, *PSCSISCAN_CMD, scsiscan/PSCSISCAN_CMD, SCSISCAN_CMD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCSISCAN_CMD
-req.alt-loc : scsiscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSCSISCAN_CMD, SCSISCAN_CMD"
 req.product : Windows 10 or later.
 ---
@@ -57,50 +61,50 @@ typedef struct _SCSISCAN_CMD {
 
 ## Members
 
-        
-            `Cdb`
 
-            Caller-supplied <a href="wdkgloss.c#wdkgloss.cdb#wdkgloss.cdb"><i>CDB</i></a> data. (The CDB structure is declared in <i>scsi.h</i>.)
-        
-            `CdbLength`
+`Cdb`
 
-            Length, in bytes, of the <a href="wdkgloss.c#wdkgloss.cdb#wdkgloss.cdb"><i>CDB</i></a> contained in the <b>Cdb</b> member.
-        
-            `pSenseBuffer`
+Caller-supplied <a href="https://msdn.microsoft.com/ac439eb8-b491-4215-877d-5ee177fbdb39">CDB</a> data. (The CDB structure is declared in <i>scsi.h</i>.)
 
-            Caller-supplied pointer to a request-sense buffer, to be filled in by the kernel-mode driver.
-        
-            `pSrbStatus`
+`CdbLength`
 
-            Caller-supplied pointer that will receive one of the SRB_STATUS-prefixed status values defined in <i>srb.h</i>.
-        
-            `Reserved1`
+Length, in bytes, of the <a href="https://msdn.microsoft.com/ac439eb8-b491-4215-877d-5ee177fbdb39">CDB</a> contained in the <b>Cdb</b> member.
 
-            Reserved. Do not use.
-        
-            `Reserved2`
+`pSenseBuffer`
 
-            Reserved. Do not use.
-        
-            `Reserved3`
+Caller-supplied pointer to a request-sense buffer, to be filled in by the kernel-mode driver.
 
-            Reserved. Do not use.
-        
-            `SenseLength`
+`pSrbStatus`
 
-            Length, in bytes, of the sense buffer the <b>pSenseBuffer</b> member points to.
-        
-            `Size`
+Caller-supplied pointer that will receive one of the SRB_STATUS-prefixed status values defined in <i>srb.h</i>.
 
-            Caller-supplied size, in bytes, of the SCSISCAN_CMD structure.
-        
-            `SrbFlags`
+`Reserved1`
 
-            Caller-supplied SRB_FLAGS-prefixed bit flag specifying the requested operation. Flags are defined in <i>srb.h</i>.
-        
-            `TransferLength`
+Reserved. Do not use.
 
-            Length, in bytes, of the buffer to be transferred. This should match the value specified for the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function's <i>nOutBufferSize</i> parameter.
+`Reserved2`
+
+Reserved. Do not use.
+
+`Reserved3`
+
+Reserved. Do not use.
+
+`SenseLength`
+
+Length, in bytes, of the sense buffer the <b>pSenseBuffer</b> member points to.
+
+`Size`
+
+Caller-supplied size, in bytes, of the SCSISCAN_CMD structure.
+
+`SrbFlags`
+
+Caller-supplied SRB_FLAGS-prefixed bit flag specifying the requested operation. Flags are defined in <i>srb.h</i>.
+
+`TransferLength`
+
+Length, in bytes, of the buffer to be transferred. This should match the value specified for the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function's <i>nOutBufferSize</i> parameter.
 
 
 ## Requirements

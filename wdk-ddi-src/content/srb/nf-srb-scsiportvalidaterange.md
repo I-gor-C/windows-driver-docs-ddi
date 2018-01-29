@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a9ad58c2-16fc-410a-abc7-01c3f2354b88
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortValidateRange
+ms.keywords : scsiprt_a5bae9f5-7912-4607-890d-ca08fda0c19c.xml, srb/ScsiPortValidateRange, storage.scsiportvalidaterange, ScsiPortValidateRange routine [Storage Devices], ScsiPortValidateRange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortValidateRange
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortValidateRange function
 The <b>ScsiPortValidateRange</b> routine indicates whether the specified access range values have already been claimed in the registry by another driver.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -96,16 +101,30 @@ For input <b>AccessRanges</b> elements set with default zeros, the <i>HwScsiFind
 If <b>ScsiPortValidateRange</b> returns <b>FALSE</b>, <i>HwScsiFindAdapter</i> must not attempt to map the input range addresses because another driver has already claimed the range in the registry.
 
 If <b>ScsiPortValidateRange</b> returns <b>TRUE</b>, <i>HwScsiFindAdapter</i> can safely do the following:
-
+<ol>
+<li>
 Map the bus-relative range addresses to system-space logical range addresses with <b>ScsiPortGetDeviceBase</b>.
 
+</li>
+<li>
 Use the mapped logical addresses with the <b>ScsiPortRead/Write</b><i>Xxx</i> to determine whether the adapter actually is an HBA that the driver supports.
 
-If a miniport driver uses a range successfully passed to <b>ScsiPortValidateRange</b> for an HBA it supports, that driver must invert the <i>InIoSpace</i> value when it sets the <b>RangeInMemory</b> member of an <b>AccessRanges</b> element in the PORT_CONFIGURATION_INFORMATION.
+</li>
+</ol>If a miniport driver uses a range successfully passed to <b>ScsiPortValidateRange</b> for an HBA it supports, that driver must invert the <i>InIoSpace</i> value when it sets the <b>RangeInMemory</b> member of an <b>AccessRanges</b> element in the PORT_CONFIGURATION_INFORMATION.
 
 <b>ScsiPortValidateRange</b> uses <b>SCSI_PHYSICAL_ADDRESS</b> to represent bus-relative addresses.
-
-The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that SCSI miniport drivers use to represent either a physical addresses or a bus-relative address.
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>typedef PHYSICAL_ADDRESS SCSI_PHYSICAL_ADDRESS, *PSCSI_PHYSICAL_ADDRESS;
+</pre>
+</td>
+</tr>
+</table></span></div>The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that SCSI miniport drivers use to represent either a physical addresses or a bus-relative address. 
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -121,23 +140,16 @@ The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data ty
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
-</dt>
-<dt>
 <a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
-</dt>
-<dt>
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
-</dt>
-<dt>
+
 <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
-</dt>
-</dl>
+
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
+<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 0796a1a2-1aaa-4e07-a8f1-7a3c895643e7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWavePci, IMiniportWavePci::Init, Init
+ms.keywords : IMiniportWavePci, audio.iminiportwavepci_init, Init method [Audio Devices], IMiniportWavePci interface, audmp-routines_fd2d7813-ebe8-4cf3-8a6c-4ebfccca5826.xml, portcls/IMiniportWavePci::Init, IMiniportWavePci interface [Audio Devices], Init method, IMiniportWavePci::Init, Init method [Audio Devices], Init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWavePci.Init
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -92,23 +96,16 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportwavepci.md">IMiniportWavePci</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\portcls\nn-portcls-iminiportwavepci.md">IMiniportWavePci</a>
+
  
 
  

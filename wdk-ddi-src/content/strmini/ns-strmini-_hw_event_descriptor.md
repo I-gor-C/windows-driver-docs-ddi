@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c0efec37-4897-4ece-9f53-4a62204e5af3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR
+ms.keywords : PHW_EVENT_DESCRIPTOR, strmini/PHW_EVENT_DESCRIPTOR, strclass-struct_ca0c15b2-17d1-4114-9765-5638dd81ca24.xml, _HW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR structure [Streaming Media Devices], PHW_EVENT_DESCRIPTOR structure pointer [Streaming Media Devices], strmini/HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, stream.hw_event_descriptor, HW_EVENT_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HW_EVENT_DESCRIPTOR
-req.alt-loc : strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -60,28 +64,28 @@ typedef struct _HW_EVENT_DESCRIPTOR {
 
 ## Members
 
-        
-            `Enable`
 
-            This is set to <b>TRUE</b> for an enabled event, and <b>FALSE</b> for a disabled event.
-        
-            `EnableEventSetIndex`
+`Enable`
 
-            For stream events, this specifies the index of the event set within the <b>StreamEventsArray</b> member of the stream's <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structure.
+This is set to <b>TRUE</b> for an enabled event, and <b>FALSE</b> for a disabled event.
+
+`EnableEventSetIndex`
+
+For stream events, this specifies the index of the event set within the <b>StreamEventsArray</b> member of the stream's <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structure.
 
 For device events, this specifies the index of the event set within the <b>DeviceEventsArray</b> member of the minidriver's <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a> structure.
-        
-            `EventData`
 
-            Points to the <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that describes this instance of the event.
-        
-            `EventEntry`
+`EventData`
 
-            Points to the <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure that describes this event.
-        
-            `HwInstanceExtension`
+Points to the <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that describes this instance of the event.
 
-            Pointer to the minidriver's instance extension. The minidriver may use this buffer to record private information global to this instance of the minidriver. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>.
+`EventEntry`
+
+Points to the <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure that describes this event.
+
+`HwInstanceExtension`
+
+Pointer to the minidriver's instance extension. The minidriver may use this buffer to record private information global to this instance of the minidriver. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>.
 
 
 ## Requirements

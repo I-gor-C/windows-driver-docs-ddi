@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 51c43e1a-ec8e-4dd2-ab08-b90cd89d9b5d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWMIRegistration, IPortWMIRegistration::UnregisterWMIProvider, UnregisterWMIProvider
+ms.keywords : portcls/IPortWMIRegistration::UnregisterWMIProvider, IPortWMIRegistration, UnregisterWMIProvider, UnregisterWMIProvider method [Audio Devices], IPortWMIRegistration::UnregisterWMIProvider, audio.iportwmiregistration_unregisterwmiprovider, UnregisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, IPortWMIRegistration interface [Audio Devices], UnregisterWMIProvider method, audmp-routines_3c640b1e-b98a-491d-a586-c6acaf8b07d4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWMIRegistration.UnregisterWMIProvider
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -69,17 +73,12 @@ The <code>UnregisterWMIProvider</code> method returns STATUS_SUCCESS if the call
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iportwmiregistration.md">IPortWMIRegistration</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iportwmiregistration.md">IPortWMIRegistration</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a>
-</dt>
-</dl>
+
  
 
  

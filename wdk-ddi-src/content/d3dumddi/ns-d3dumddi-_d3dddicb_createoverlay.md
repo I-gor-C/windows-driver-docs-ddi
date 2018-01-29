@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 52f95379-7bfd-4606-9199-ea253ccd6f35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_CREATEOVERLAY, D3DDDICB_CREATEOVERLAY
+ms.keywords : _D3DDDICB_CREATEOVERLAY, display.d3dddicb_createoverlay, D3D_param_Structs_d6883734-5c4a-480f-bb54-12df15297daa.xml, d3dumddi/D3DDDICB_CREATEOVERLAY, D3DDDICB_CREATEOVERLAY, D3DDDICB_CREATEOVERLAY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_CREATEOVERLAY
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_CREATEOVERLAY
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DDDICB_CREATEOVERLAY {
 
 ## Members
 
-        
-            `hKernelOverlay`
 
-            [out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode overlay object. This overlay object represents the overlay hardware in subsequent calls by the user-mode display driver to the Microsoft Direct3D runtime.
-        
-            `OverlayInfo`
+`hKernelOverlay`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a> structure that describes information about the kernel-mode overlay object.
-        
-            `VidPnSourceId`
+[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode overlay object. This overlay object represents the overlay hardware in subsequent calls by the user-mode display driver to the Microsoft Direct3D runtime.
 
-            [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to overlay on (that is, the identifier of the primary surface to overlay on).
+`OverlayInfo`
+
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a> structure that describes information about the kernel-mode overlay object.
+
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to overlay on (that is, the identifier of the primary surface to overlay on).
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DDDICB_CREATEOVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlaycb.md">pfnCreateOverlayCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
+
  
 
  

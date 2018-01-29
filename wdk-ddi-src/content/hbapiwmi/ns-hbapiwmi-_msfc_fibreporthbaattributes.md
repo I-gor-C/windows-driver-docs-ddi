@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e8a31f48-bad2-49d1-81be-d345d87a0fd5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes
+ms.keywords : "*PMSFC_FibrePortHBAAttributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml, PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices], hbapiwmi/MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes structure [Storage Devices], MSFC_FibrePortHBAAttributes, hbapiwmi/PMSFC_FibrePortHBAAttributes, PMSFC_FibrePortHBAAttributes, storage.msfc_fibreporthbaattributes, _MSFC_FibrePortHBAAttributes"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSFC_FibrePortHBAAttributes
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes"
 ---
 
 # _MSFC_FibrePortHBAAttributes structure
@@ -48,18 +52,18 @@ typedef struct _MSFC_FibrePortHBAAttributes {
 
 ## Members
 
-        
-            `Attributes`
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that contains information about the port attributes.
-        
-            `HBAStatus`
+`Attributes`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `UniquePortId`
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that contains information about the port attributes.
 
-            Unique identifier for the port. This identifier must be unique among all ports on all adapters. The same value for the identifier must be used for the same port in other classes that expose port information.
+`HBAStatus`
+
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+`UniquePortId`
+
+Unique identifier for the port. This identifier must be unique among all ports on all adapters. The same value for the identifier must be used for the same port in other classes that expose port information.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _MSFC_FibrePortHBAAttributes {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-<dt>
 <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+
  
 
  

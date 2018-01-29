@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 28f48224-90b8-45f5-b69d-6bb6a34f64e0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup, *PISCSI_TargetPortalGroup
+ms.keywords : ISCSI_TargetPortalGroup, iscsidef/ISCSI_TargetPortalGroup, iscsidef/PISCSI_TargetPortalGroup, storage.iscsi_targetportalgroup, *PISCSI_TargetPortalGroup, PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup structure [Storage Devices], _ISCSI_TargetPortalGroup, structs-iSCSI_27b8d554-5021-49d0-837c-302e7ac033ed.xml, PISCSI_TargetPortalGroup structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_TargetPortalGroup
-req.alt-loc : iscsidef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ISCSI_TargetPortalGroup, *PISCSI_TargetPortalGroup
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup"
 ---
 
 # _ISCSI_TargetPortalGroup structure
@@ -47,14 +51,14 @@ typedef struct _ISCSI_TargetPortalGroup {
 
 ## Members
 
-        
-            `PortalCount`
 
-            The number of portals in the portal group.
-        
-            `Portals`
+`PortalCount`
 
-            A variable-length array of <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structures, which describe portals in the target portal group. The number of elements in the array is specified by the PortalCount field.
+The number of portals in the portal group.
+
+`Portals`
+
+A variable-length array of <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structures, which describe portals in the target portal group. The number of elements in the array is specified by the PortalCount field.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct _ISCSI_TargetPortalGroup {
 | **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561576">ISCSI_TargetPortalGroup WMI Class</a>
-</dt>
-</dl>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
+
  
 
  

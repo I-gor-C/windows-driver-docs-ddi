@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b38683f3-42f2-4f5e-9482-f72e9f2e0a34
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.getsupportedversions, GetSupportedVersions callback function [Display Devices], GetSupportedVersions, PFND3D10_2DDI_GETSUPPORTEDVERSIONS, PFND3D10_2DDI_GETSUPPORTEDVERSIONS, d3d10umddi/GetSupportedVersions, UserModeDisplayDriverDx11_Functions_065e47e6-c02d-4091-b614-a93aa834cbfb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : GetSupportedVersions is supported beginning with the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetSupportedVersions
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -69,12 +73,34 @@ HRESULT Pfnd3d102DdiGetsupportedversions(
 ## Return Value
 
 <i>GetSupportedVersions</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The capabilities are successfully retrieved.
+</dl>
+</td>
+<td width="60%">
+The capabilities are successfully retrieved.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>GetSupportedVersions</i> could not allocate memory that is required for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>GetSupportedVersions</i> could not allocate memory that is required for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,17 +120,12 @@ When the Direct3D runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umdd
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_2ddi_adapterfuncs.md">D3D10_2DDI_ADAPTERFUNCS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_openadapter.md">D3D10DDIARG_OPENADAPTER</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_openadapter.md">OpenAdapter10_2</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_openadapter.md">D3D10DDIARG_OPENADAPTER</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 196555c8-74a6-4dae-ac4d-52654015ffeb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRequestDpc
+ms.keywords : IoRequestDpc routine [Kernel-Mode Driver Architecture], wdm/IoRequestDpc, kernel.iorequestdpc, IoRequestDpc, k104_37f449eb-de3d-4932-b845-388c73c55d01.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoRequestDpc
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : DIRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,17 +92,12 @@ Drivers call  <b>IoRequestDpc</b> from an <a href="https://msdn.microsoft.com/li
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioinitializedpcrequest.md">IoInitializeDpcRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioinitializedpcrequest.md">IoInitializeDpcRequest</a>
+
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
+
  
 
  

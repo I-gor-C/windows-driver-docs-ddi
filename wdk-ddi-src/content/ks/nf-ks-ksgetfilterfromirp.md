@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 00c90dbf-bb44-4cba-97b3-170765a2eba7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetFilterFromIrp
+ms.keywords : avfunc_223d8c62-c585-4749-a087-19cfa48824f3.xml, ks/KsGetFilterFromIrp, stream.ksgetfilterfromirp, KsGetFilterFromIrp, KsGetFilterFromIrp function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetFilterFromIrp
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,14 +79,10 @@ A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure for which to 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgetpinfromirp.md">KsGetPinFromIrp</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgetpinfromirp.md">KsGetPinFromIrp</a>
+
  
 
  

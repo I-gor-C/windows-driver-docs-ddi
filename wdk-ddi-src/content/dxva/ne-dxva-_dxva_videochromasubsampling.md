@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aa8f736f-1311-4217-8750-cdd134c6945c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_VideoChromaSubsampling, DXVA_VideoChromaSubsampling
+ms.keywords : DXVA_VideoChromaSubsampling_MPEG1, DXVA_VideoChromaSubsampling, _DXVA_VideoChromaSubsampling, DXVA_VideoChromaSubsamplingShift, DXVA_VideoChromaSubsampling_ProgressiveChroma, dxva/DXVA_VideoChromaSubsampling_ProgressiveChroma, dxva/DXVA_VideoChromaSubsampling_DV_PAL, dxva/DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, dxva/DXVA_VideoChromaSubsampling, dxvaref_2939ec96-fb1f-4911-916e-40d043bb58d5.xml, dxva/DXVA_VideoChromaSubsampling_Cosited, DXVA_VideoChromaSubsampling_MPEG2, DXVA_VideoChromaSubsampling_Unknown, DXVA_VideoChromaSubsampling enumeration [Display Devices], DXVA_VideoChromaSubsamplingMask, DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, display.dxva_videochromasubsampling, dxva/DXVA_VideoChromaSubsampling_MPEG2, dxva/DXVA_VideoChromaSubsampling_MPEG1, DXVA_VideoChromaSubsampling_Horizontally_Cosited, dxva/DXVA_VideoChromaSubsampling_Vertically_Cosited, dxva/DXVA_VideoChromaSubsampling_Unknown, dxva/DXVA_VideoChromaSubsamplingMask, DXVA_VideoChromaSubsampling_Vertically_Cosited, dxva/DXVA_VideoChromaSubsamplingShift, dxva/DXVA_VideoChromaSubsampling_Horizontally_Cosited, DXVA_VideoChromaSubsampling_DV_PAL, DXVA_VideoChromaSubsampling_Cosited
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This enumeration type applies only to Windows Server
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_VideoChromaSubsampling
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoChromaSubsampling
 ---
 
@@ -130,11 +134,8 @@ Cosite variations indicate that the chroma samples are aligned with the luma sam
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-</dt>
-</dl>
+
  
 
  

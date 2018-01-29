@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 271d77ae-dc2c-4dc0-8dd9-b09b2d341c60
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortDMus, IPortDMus::RegisterServiceGroup, RegisterServiceGroup
+ms.keywords : RegisterServiceGroup method [Audio Devices], IPortDMus interface, audio.iportdmus_registerservicegroup, IPortDMus, RegisterServiceGroup method [Audio Devices], audmp-routines_9167129c-286d-4c54-9633-1f31aa08b904.xml, RegisterServiceGroup, dmusicks/IPortDMus::RegisterServiceGroup, IPortDMus interface [Audio Devices], RegisterServiceGroup method, IPortDMus::RegisterServiceGroup
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortDMus.RegisterServiceGroup
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -85,23 +89,16 @@ The <i>pServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.c
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536700">IMiniportDMus::Init</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
+
+<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
  
 
  

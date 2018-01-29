@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e74e79fe-3b36-427e-ae0b-4072a0438c4e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbexcludeadapteraccess, DxgkCbExcludeAdapterAccess callback function [Display Devices], DxgkCbExcludeAdapterAccess, DXGKCB_EXCLUDE_ADAPTER_ACCESS, DXGKCB_EXCLUDE_ADAPTER_ACCESS, dispmprt/DxgkCbExcludeAdapterAccess, DpFunctions_8ad0a347-3d2f-429c-9b1f-67f000dbfc03.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbExcludeAdapterAccess
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -86,6 +90,7 @@ This function also prevents all PCI configuration space access to the PCI Expres
 The driver should not block continued execution of the calling thread by waiting for the <a href="..\dispmprt\nc-dispmprt-dxgkddi_protected_callback.md">DxgkProtectedCallback</a> callback routine to return. For example, the driver could schedule an asynchronous worker thread to handle the callback routine.
 
 An exception to this blocking of application requests occurs when the user-mode display driver has set the <b>UseAlternateVA</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function. <b>DxgkCbExcludeAdapterAccess</b> does not block this type of allocation lock, and the CPU can access the display adapter while the protected callback routine is executing.
+<div class="alert"><b>Note</b>  If <b>UseAlternateVA</b> has been set in a call to <b>pfnLockCb</b>, the display miniport driver should not call <b>DxgkCbExcludeAdapterAccess</b>.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,11 +106,8 @@ An exception to this blocking of application requests occurs when the user-mode 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_protected_callback.md">DxgkProtectedCallback</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 17768308-d92d-4033-aee8-2d52ce1e51fd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATAFORMAT_MPEG2TS_AVC, *PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC
+ms.keywords : KS_DATAFORMAT_MPEG2TS_AVC structure [Streaming Media Devices], stream.ks_dataformat_mpeg2ts_avc, tagKS_DATAFORMAT_MPEG2TS_AVC, avcstrm/KS_DATAFORMAT_MPEG2TS_AVC, PKS_DATAFORMAT_MPEG2TS_AVC, *PKS_DATAFORMAT_MPEG2TS_AVC, avcsref_1c04182d-3d89-4db1-9b5f-7fdbc3e62c47.xml, avcstrm/PKS_DATAFORMAT_MPEG2TS_AVC, PKS_DATAFORMAT_MPEG2TS_AVC structure pointer [Streaming Media Devices], KS_DATAFORMAT_MPEG2TS_AVC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATAFORMAT_MPEG2TS_AVC
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KS_DATAFORMAT_MPEG2TS_AVC, *PKS_DATAFORMAT_MPEG2TS_AVC
 ---
 
 # tagKS_DATAFORMAT_MPEG2TS_AVC structure
@@ -47,14 +51,14 @@ typedef struct tagKS_DATAFORMAT_MPEG2TS_AVC {
 
 ## Members
 
-        
-            `ConnectInfo`
 
-            Specifies the AV/C connection information.
-        
-            `DataFormat`
+`ConnectInfo`
 
-            Specifies the data format of the MPEG2 connection.
+Specifies the AV/C connection information.
+
+`DataFormat`
+
+Specifies the data format of the MPEG2 connection.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct tagKS_DATAFORMAT_MPEG2TS_AVC {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
 <a href="..\avc\ns-avc-_avcconnectinfo.md">AVCCONNECTINFO</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+
  
 
  

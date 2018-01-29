@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e5366a28-a541-47bb-b158-af676ad46273
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmGetSystemAddressForMdl
+ms.keywords : k106_fc92914d-81c3-4ae9-a12d-86003d55bb4d.xml, MmGetSystemAddressForMdl, kernel.mmgetsystemaddressformdl, wdm/MmGetSystemAddressForMdl, MmGetSystemAddressForMdl routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Obsolete for Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmGetSystemAddressForMdl
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wdm.h
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -53,7 +57,7 @@ PVOID MmGetSystemAddressForMdl(
 
 `MDL`
 
-
+TBD
 
 
 ## Return Value
@@ -84,17 +88,12 @@ Windows 2000 issues a bug check if the attempt to map to system space fails. (Th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
+<a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
+
  
 
  

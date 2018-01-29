@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8927e862-94e4-45ce-9245-5c6f5629fc01
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ELEMENT_TYPE, *PELEMENT_TYPE, ELEMENT_TYPE
+ms.keywords : storage.ioctl_changer_set_access, IOCTL_CHANGER_SET_ACCESS control code [Storage Devices], IOCTL_CHANGER_SET_ACCESS, ntddchgr/IOCTL_CHANGER_SET_ACCESS, k307_08d52a8e-d7a0-42c6-92f9-c5099670473c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CHANGER_SET_ACCESS
-req.alt-loc : Ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ELEMENT_TYPE, *PELEMENT_TYPE
 ---
 
 # IOCTL_CHANGER_SET_ACCESS IOCTL
-Sets the state of the device's import/export port (IEport), door, or keypad. 
-
-
-
 Sets the state of the device's import/export port (IEport), door, or keypad.
 
 ### Major Code
@@ -63,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes set. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH, STATUS_INSUFFICIENT_RESOURCES, STATUS_INVALID_DEVICE_REQUEST, or STATUS_INVALID_PARAMETER.
 
 
@@ -74,16 +73,12 @@ The <b>Information</b> field is set to the number of bytes set. The <b>Status</b
 | **Header** | ntddchgr.h (include Ntddchgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_set_access.md">CHANGER_SET_ACCESS</a>
-</dt>
-<dt>
 <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
-</dt>
-</dl>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_set_access.md">CHANGER_SET_ACCESS</a>
+
  
 
  

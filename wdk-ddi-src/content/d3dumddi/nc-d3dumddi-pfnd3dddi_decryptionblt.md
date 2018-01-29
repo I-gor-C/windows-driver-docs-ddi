@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1bfe2b9c-90f6-48bf-b0b3-30788ef94110
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.decryptionblt, DecryptionBlt callback function [Display Devices], DecryptionBlt, PFND3DDDI_DECRYPTIONBLT, PFND3DDDI_DECRYPTIONBLT, d3dumddi/DecryptionBlt, UserModeDisplayDriver_Functions_6c7efbab-8c07-4953-80cc-4d18080c12cc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DecryptionBlt is supported beginning with the Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DecryptionBlt
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,16 +68,46 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>DecryptionBlt</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The decrypted bitblt operation is successfully performed. 
+</dl>
+</td>
+<td width="60%">
+The decrypted bitblt operation is successfully performed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_NOTAVAILABLE</b></dt>
-</dl>The driver does not support the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a> function.
+</dl>
+</td>
+<td width="60%">
+The driver does not support the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a> function. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,20 +137,14 @@ The Direct3D runtime verifies that the source surface specified by the <b>SrcSub
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decryptionblt.md">D3DDDIARG_DECRYPTIONBLT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decryptionblt.md">D3DDDIARG_DECRYPTIONBLT</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a>
+
  
 
  

@@ -2,13 +2,13 @@
 UID : NC:hdaudio.PHDAUDIO_BDL_ISR
 title : PHDAUDIO_BDL_ISR
 author : windows-driver-content
-description : The HDAudioBdlIsr routine is the ISR that the HD Audio bus driver calls each time an IOC interrupt occurs on the stream. It is a function pointer of type PHDAUDIO_BDL_ISR, which is defined as
+description : The HDAudioBdlIsr routine is the ISR that the HD Audio bus driver calls each time an IOC interrupt occurs on the stream. It is a function pointer of type PHDAUDIO_BDL_ISR, which is defined as:
 old-location : audio\phdaudio_bdl_isr.htm
 old-project : audio
 ms.assetid : 9DC36C2E-6609-46C8-870E-44845020A4B2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.phdaudio_bdl_isr, HDAudioBdlIsr callback function [Audio Devices], HDAudioBdlIsr, PHDAUDIO_BDL_ISR, PHDAUDIO_BDL_ISR, hdaudio/HDAudioBdlIsr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HDAudioBdlIsr
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DIRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -59,7 +63,6 @@ void PhdaudioBdlIsr(
 `InterruptBitMask`
 
 The interruptBitMask parameter contains the bits from the HD Audio controller device's stream status register that indicate the reason for the interrupt. The following table shows the meaning of the individual bits in interruptBitMask.
-
 <table>
 <tr>
 <th>Bit Numbers</th>
@@ -122,8 +125,7 @@ The interruptBitMask parameter contains the bits from the HD Audio controller de
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The HD Audio bus driver sets the unused bits to zero. Instead of assuming that an IOC interrupt has occurred, the ISR must always check the interruptBitMask parameter to determine whether a stream error has occurred. For more information about the interrupt status bits shown in the preceding table, see the description of the stream status registers in the Intel High Definition Audio Specification.
 
@@ -157,11 +159,8 @@ The caller must allocate the buffer memory and BDL from the nonpaged pool.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">PSETUP_DMA_ENGINE_WITH_BDL</a>
-</dt>
-</dl>
+
  
 
  

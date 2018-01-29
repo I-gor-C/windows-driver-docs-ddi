@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : CE700126-8C29-4218-9248-F722523A4DA3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PC_REBALANCE_TYPE, PC_REBALANCE_TYPE
+ms.keywords : PC_REBALANCE_TYPE enumeration [Audio Devices], PC_REBALANCE_TYPE, audio.pc_rebalance_type, portcls/PcRebalanceRemoveSubdevices, portcls/PC_REBALANCE_TYPE, PcRebalanceRemoveSubdevices, PcRebalanceNotSupported, portcls/PcRebalanceNotSupported
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PC_REBALANCE_TYPE
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_REBALANCE_TYPE
 ---
 
@@ -66,7 +70,7 @@ Rebalancing is used in certain PCI scenarios. For example when additional device
 
 For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.
 
-Available in Windows 10, version 1511 and later versions of Windows. </p>
+Available in Windows 10, version 1511 and later versions of Windows.
 
 ## Requirements
 | &nbsp; | &nbsp; |

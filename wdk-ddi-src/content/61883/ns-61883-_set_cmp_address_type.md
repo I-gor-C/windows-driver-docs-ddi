@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : b08588a2-d786-44c1-a265-0f7fef9ecd6a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SET_CMP_ADDRESS_TYPE, SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE
+ms.keywords : PSET_CMP_ADDRESS_TYPE structure pointer [Buses], *PSET_CMP_ADDRESS_TYPE, 61883_structures_35b30fc9-69a6-4599-8d76-5aaf35104346.xml, SET_CMP_ADDRESS_TYPE, IEEE.set_cmp_address_type, PSET_CMP_ADDRESS_TYPE, _SET_CMP_ADDRESS_TYPE, SET_CMP_ADDRESS_TYPE structure [Buses], 61883/PSET_CMP_ADDRESS_TYPE, 61883/SET_CMP_ADDRESS_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SET_CMP_ADDRESS_TYPE
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSET_CMP_ADDRESS_TYPE, SET_CMP_ADDRESS_TYPE"
 ---
 
 # _SET_CMP_ADDRESS_TYPE structure
@@ -46,10 +50,10 @@ typedef struct _SET_CMP_ADDRESS_TYPE {
 
 ## Members
 
-        
-            `Type`
 
-            Indicates what kind of address range plugs can be accessed in. Possible values are:
+`Type`
+
+Indicates what kind of address range plugs can be accessed in. Possible values are:
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _SET_CMP_ADDRESS_TYPE {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537002">Av61883_SetUnitInfo</a>
-</dt>
-</dl>
+
  
 
  

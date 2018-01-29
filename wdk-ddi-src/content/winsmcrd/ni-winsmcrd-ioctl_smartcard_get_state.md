@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 18666E48-9505-448E-ABA1-536D365FC49D
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : GdiStartPageEMF
+ms.keywords : nfpdrivers.ioctl_smartcard_get_state, IOCTL_SMARTCARD_GET_STATE control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_GET_STATE, winsmcrd/IOCTL_SMARTCARD_GET_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SMARTCARD_GET_STATE
-req.alt-loc : winsmcrd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -50,6 +54,28 @@ None.
 
 ### Output Buffer
 (DWORD) one of the following states:
+<table>
+<tr>
+<th>State</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>SCARD_UNKNOWN</td>
+<td>Unknown state</td>
+</tr>
+<tr>
+<td>SCARD_ABSENT</td>
+<td>Card is not detected</td>
+</tr>
+<tr>
+<td>SCARD_SWALLOWED</td>
+<td>Card is present but not powered. When SCARD_POWER_DOWN is set.</td>
+</tr>
+<tr>
+<td>SCARD_SPECIFIC</td>
+<td>Card  is present and communication protocols are established.</td>
+</tr>
+</table>
 
 ### Output Buffer Length
 <text></text>
@@ -61,8 +87,25 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<table>
+<tr>
+<th>Return Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STATUS_INVALID_PARAMETER</td>
+<td>This code is returned when the input or output buffers are invalid.</td>
+</tr>
+<tr>
+<td>STATUS_BUFFER_TOO_SMALL</td>
+<td>This code is returned if the output buffer is too small for the return data.</td>
+</tr>
+<tr>
+<td>STATUS_DEVICE_POWERED_OFF</td>
+<td>This code is returned if the proximity radio control is off.</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -72,12 +115,12 @@ I/O Status block
 | **Header** | winsmcrd.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

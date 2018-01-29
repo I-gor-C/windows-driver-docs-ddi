@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 41560DC4-EE5E-4756-8540-ACC19835A9DA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxPowerOnCrashdumpDevice
+ms.keywords : wdm/PoFxPowerOnCrashdumpDevice, PoFxPowerOnCrashdumpDevice, PoFxPowerOnCrashdumpDevice routine [Kernel-Mode Driver Architecture], kernel.pofxpoweroncrashdumpdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxPowerOnCrashdumpDevice
-req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : 
 req.irql : <= HIGH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,12 +66,34 @@ A pointer to a device-specific context. This pointer is passed as an input param
 ## Return Value
 
 <b>PoFxPowerOnCrashdumpDevice</b> returns STATUS_SUCCESS if the routine succeeds in turning on power to the device. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INVALID_PARAMETER</dt>
-</dl>Not a valid handle value.
+</dl>
+</td>
+<td width="60%">
+Not a valid handle value.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_UNSUCCESSFUL</dt>
-</dl>The PEP for this device does not implement a <i>PowerOnDumpDeviceCallback</i> callback routine; or the PEP failed to turn on the device.
+</dl>
+</td>
+<td width="60%">
+The PEP for this device does not implement a <i>PowerOnDumpDeviceCallback</i> callback routine; or the PEP failed to turn on the device.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,14 +117,10 @@ This routine can be called at IRQL &lt;= HIGH_LEVEL.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186875">PowerOnDumpDeviceCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+
  
 
  

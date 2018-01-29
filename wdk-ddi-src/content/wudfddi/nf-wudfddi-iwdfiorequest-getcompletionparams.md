@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aaca14ff-9ea2-43f4-bfa9-9151d855c3af
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::GetCompletionParams, GetCompletionParams
+ms.keywords : UMDFRequestObjectRef_dbfb5f9c-c1ad-425d-9bcb-627cc961d00d.xml, wudfddi/IWDFIoRequest::GetCompletionParams, wdf.iwdfiorequest_getcompletionparams, IWDFIoRequest::GetCompletionParams, GetCompletionParams method, IWDFIoRequest, IWDFIoRequest interface, GetCompletionParams method, GetCompletionParams, GetCompletionParams method, IWDFIoRequest interface, umdf.iwdfiorequest_getcompletionparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.GetCompletionParams
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -60,8 +64,6 @@ A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wu
 
 None
 
-The following code example sends an I/O request synchronously to an I/O target. After the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> method returns, the example obtains the I/O request's completion status.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,17 +79,12 @@ The following code example sends an I/O request synchronously to an I/O target. 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : C16DE51F-6552-4379-B866-D7653B1BA9F2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : eEngineFormatType, eEngineFormatType
+ms.keywords : eEngineFormatType enumeration [Audio Devices], portcls/eSupportedDeviceFormats, eMixFormat, portcls/eDeviceFormat, eEngineFormatType, eSupportedDeviceFormats, portcls/eMixFormat, audio.eengineformattype, portcls/eEngineFormatType, eDeviceFormat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : eEngineFormatType
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : eEngineFormatType
 ---
 
@@ -77,11 +81,8 @@ typedef enum _eEngineFormatType {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265082">GetEngineFormatSize</a>
-</dt>
-</dl>
+
  
 
  

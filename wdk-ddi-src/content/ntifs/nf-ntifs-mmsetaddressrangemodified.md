@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c903485f-205e-4679-99a7-2a644731fa77
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : MmSetAddressRangeModified
+ms.keywords : ifsk.mmsetaddressrangemodified, mmref_4d6ef497-4a72-4fed-8422-365708740cc7.xml, MmSetAddressRangeModified, ntifs/MmSetAddressRangeModified, MmSetAddressRangeModified routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmSetAddressRangeModified
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -84,11 +88,8 @@ Callers of <b>MmSetAddressRangeModified</b> must be running at IRQL &lt; DISPATC
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccistheredirtydata.md">CcIsThereDirtyData</a>
-</dt>
-</dl>
+
  
 
  

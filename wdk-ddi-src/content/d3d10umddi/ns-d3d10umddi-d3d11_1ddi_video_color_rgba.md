@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0d97d6ef-87e6-4ba3-ab4b-aa5b22cb126b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_COLOR_RGBA, D3D11_1DDI_VIDEO_COLOR_RGBA
+ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_COLOR_RGBA, D3D11_1DDI_VIDEO_COLOR_RGBA, D3D11_1DDI_VIDEO_COLOR_RGBA structure [Display Devices], display.d3d11_1ddi_video_color_rgba
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_COLOR_RGBA
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_COLOR_RGBA
 ---
 
@@ -49,22 +53,22 @@ typedef struct D3D11_1DDI_VIDEO_COLOR_RGBA {
 
 ## Members
 
-        
-            `A`
 
-            The alpha value. Values range from 0 (transparent) to 1 (opaque).
-        
-            `B`
+`A`
 
-            The blue value.
-        
-            `G`
+The alpha value. Values range from 0 (transparent) to 1 (opaque).
 
-            The green value.
-        
-            `R`
+`B`
 
-            The red value.
+The blue value.
+
+`G`
+
+The green value.
+
+`R`
+
+The red value.
 
 
 ## Requirements

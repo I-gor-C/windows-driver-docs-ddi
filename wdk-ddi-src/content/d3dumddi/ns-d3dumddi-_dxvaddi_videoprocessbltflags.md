@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 790a18fa-5481-432a-921b-6310a0ab78d7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_VIDEOPROCESSBLTFLAGS, DXVADDI_VIDEOPROCESSBLTFLAGS
+ms.keywords : d3dumddi/DXVADDI_VIDEOPROCESSBLTFLAGS, DXVA2_Structs_8c40b10b-d3f4-420b-986a-455b20b01288.xml, _DXVADDI_VIDEOPROCESSBLTFLAGS, DXVADDI_VIDEOPROCESSBLTFLAGS, display.dxvaddi_videoprocessbltflags, DXVADDI_VIDEOPROCESSBLTFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_VIDEOPROCESSBLTFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_VIDEOPROCESSBLTFLAGS
 ---
 
@@ -66,13 +70,10 @@ typedef struct _DXVADDI_VIDEOPROCESSBLTFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
-</dt>
-</dl>
+
  
 
  

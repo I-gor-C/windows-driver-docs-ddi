@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 879c7117-080a-4056-b94f-6462b370f434
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY, D3DKMT_SETCONTEXTSCHEDULINGPRIORITY
+ms.keywords : _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY, display.d3dkmt_setcontextschedulingpriority, D3DKMT_SETCONTEXTSCHEDULINGPRIORITY, OpenGL_Structs_d0a33042-237e-469f-93af-f6031cf54098.xml, d3dkmthk/D3DKMT_SETCONTEXTSCHEDULINGPRIORITY, D3DKMT_SETCONTEXTSCHEDULINGPRIORITY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SETCONTEXTSCHEDULINGPRIORITY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SETCONTEXTSCHEDULINGPRIORITY
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY {
 
 ## Members
 
-        
-            `hContext`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context that scheduling priority is set on.
-        
-            `Priority`
+`hContext`
 
-            [in] The priority level to set for the device context.
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context that scheduling priority is set on.
+
+`Priority`
+
+[in] The priority level to set for the device context.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetcontextschedulingpriority.md">D3DKMTSetContextSchedulingPriority</a>
-</dt>
-</dl>
+
  
 
  

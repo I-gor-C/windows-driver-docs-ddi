@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : d834d97c-cf2d-430b-8f54-b0b47ab1503c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
+ms.keywords : PCMCIA_CONTROLLER_CLASS enumeration [Buses], ntddpcm/PcmciaTopic, PcmciaOpti, PcmciaCardBusCompatible, PcmciaDatabookCB, PCMCIA.pcmcia_controller_class, ntddpcm/PcmciaDatabook, memcdref_a3d708d3-6fa4-4edd-af5d-1513c8da5a9b.xml, PcmciaNEC, ntddpcm/PcmciaTrid, ntddpcm/PcmciaO2Micro, PcmciaRicoh, PcmciaIntelCompatible, PCMCIA_CONTROLLER_CLASS, PcmciaO2Micro, PcmciaPciPcmciaBridge, ntddpcm/PcmciaNEC, ntddpcm/PcmciaCardBusCompatible, ntddpcm/PcmciaPciPcmciaBridge, PcmciaTrid, ntddpcm/PcmciaTI, PcmciaNEC_98, _PCMCIA_CONTROLLER_CLASS, PcmciaTopic, ntddpcm/PcmciaElcController, ntddpcm/PcmciaNEC_98, ntddpcm/PCMCIA_CONTROLLER_CLASS, ntddpcm/PPCMCIA_CONTROLLER_CLASS, PcmciaInvalidControllerClass, PcmciaTI, ntddpcm/PcmciaOpti, PPCMCIA_CONTROLLER_CLASS, PPCMCIA_CONTROLLER_CLASS enumeration pointer [Buses], PcmciaElcController, ntddpcm/PcmciaRicoh, *PPCMCIA_CONTROLLER_CLASS, ntddpcm/PcmciaIntelCompatible, PcmciaCirrusLogic, ntddpcm/PcmciaInvalidControllerClass, PcmciaDatabook, ntddpcm/PcmciaDatabookCB, ntddpcm/PcmciaCirrusLogic
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCMCIA_CONTROLLER_CLASS
-req.alt-loc : ntddpcm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
 ---
 
@@ -155,11 +159,8 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537612">PCMCIA_SOCKET_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

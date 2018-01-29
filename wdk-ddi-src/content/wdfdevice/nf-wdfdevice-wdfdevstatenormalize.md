@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0243de8b-0f47-4f0a-af25-beb6365386dd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDevStateNormalize
+ms.keywords : WdfDevStateNormalize method, wdf.wdfdevstatenormalize, wdfdevice/WdfDevStateNormalize, WdfDevStateNormalize, DFDeviceObjectGeneralRef_24d4e166-f4b0-4696-b775-62d0df565a8a.xml, PFN_WDFDEVSTATENORMALIZE, kmdf.wdfdevstatenormalize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDevStateNormalize
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -59,8 +63,6 @@ A state machine value that is returned from <a href="..\wdfdevice\nf-wdfdevice-w
 ## Return Value
 
 <b>WdfDevStateNormalize</b> returns the specified <i>State</i> value with extra bits removed.
-
-The following code example obtains the current state of the framework's Plug and Play state machine and then removes extra bits from the state value.
 
 
 ## Requirements

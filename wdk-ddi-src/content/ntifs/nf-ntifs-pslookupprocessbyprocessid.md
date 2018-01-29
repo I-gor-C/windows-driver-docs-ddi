@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f9c4bcab-5584-4b26-b4ff-6067d7ef1890
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PsLookupProcessByProcessId
+ms.keywords : ntifs/PsLookupProcessByProcessId, PsLookupProcessByProcessId routine [Installable File System Drivers], ifsk.pslookupprocessbyprocessid, psref_809b3ca8-eb8a-4ee0-9d74-b33b10664834.xml, PsLookupProcessByProcessId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsLookupProcessByProcessId
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,9 +65,23 @@ Returns a referenced pointer to the EPROCESS structure of process specified by <
 ## Return Value
 
 <b>PsLookupProcessByProcessId </b>returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The process ID was not found.
+</dl>
+</td>
+<td width="60%">
+The process ID was not found.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,38 +109,26 @@ The <b>PsLookupProcessByProcessId</b> routine contains pageable code.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-psgetcurrentthreadid.md">PsGetCurrentThreadId</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-pslookupthreadbythreadid.md">PsLookupThreadByThreadId</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-psremovecreatethreadnotifyroutine.md">PsRemoveCreateThreadNotifyRoutine</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-psremoveloadimagenotifyroutine.md">PsRemoveLoadImageNotifyRoutine</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-psgetcurrentthreadid.md">PsGetCurrentThreadId</a>
+
 <a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-psremoveloadimagenotifyroutine.md">PsRemoveLoadImageNotifyRoutine</a>
+
+<a href="..\ntifs\nf-ntifs-pslookupthreadbythreadid.md">PsLookupThreadByThreadId</a>
+
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+
+<a href="..\ntddk\nf-ntddk-psremovecreatethreadnotifyroutine.md">PsRemoveCreateThreadNotifyRoutine</a>
+
  
 
  

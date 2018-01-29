@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c87e0635-ad0a-4832-97ed-30c731559fb9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwQueryInformationTransactionManager
+ms.keywords : wdm/ZwQueryInformationTransactionManager, ZwQueryInformationTransactionManager routine [Kernel-Mode Driver Architecture], wdm/NtQueryInformationTransactionManager, NtQueryInformationTransactionManager, kernel.zwqueryinformationtransactionmanager, ZwQueryInformationTransactionManager, ktm_ref_3311322f-0cc0-4198-8c80-1b203403b080.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwQueryInformationTransactionManager,NtQueryInformationTransactionManager
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,6 @@ A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a
 `TransactionManagerInformationClass`
 
 A <a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>-typed enumeration value that specifies the information to be obtained. This value must be one of the following:
-
 <ul>
 <li>
 <b>TransactionManagerBasicInformation</b>
@@ -74,8 +77,7 @@ A <a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMA
 <b>TransactionManagerLogPathInformation</b>
 
 </li>
-</ul>
-The enumeration's <b>TransactionManagerOnlineProbeInformation</b> value is not used with <b>ZwQueryInformationTransactionManager</b>.
+</ul>The enumeration's <b>TransactionManagerOnlineProbeInformation</b> value is not used with <b>ZwQueryInformationTransactionManager</b>.
 
 `TransactionManagerInformation`
 
@@ -93,26 +95,78 @@ A pointer to a caller-allocated variable that receives the length, in bytes, of 
 ## Return Value
 
 <b>ZwQueryInformationTransactionManager</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
-</dl>The <i>TransactionManagerInformationClass</i> parameter's value is invalid.
+</dl>
+</td>
+<td width="60%">
+The <i>TransactionManagerInformationClass</i> parameter's value is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>The length of the buffer that is specified by the <i>TransactionManagerInformationLength </i>parameter is incorrect.
+</dl>
+</td>
+<td width="60%">
+The length of the buffer that is specified by the <i>TransactionManagerInformationLength </i>parameter is incorrect.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The specified handle is not a handle to a transaction manager object.
+</dl>
+</td>
+<td width="60%">
+The specified handle is not a handle to a transaction manager object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>An object handle is invalid.
+</dl>
+</td>
+<td width="60%">
+An object handle is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller does not have appropriate access to the transaction manager object.
+</dl>
+</td>
+<td width="60%">
+The caller does not have appropriate access to the transaction manager object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer that is specified by the <i>TransactionManagerInformation </i>parameter is too small.
+</dl>
+</td>
+<td width="60%">
+The buffer that is specified by the <i>TransactionManagerInformation </i>parameter is too small.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -138,35 +192,24 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwrecovertransactionmanager.md">ZwRecoverTransactionManager</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>
+
+<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
+
+<a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-zwrollforwardtransactionmanager.md">ZwRollforwardTransactionManager</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

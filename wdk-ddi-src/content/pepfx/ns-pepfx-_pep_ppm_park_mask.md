@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 528576FD-BDB2-4772-9151-A1C855BA953E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK
+ms.keywords : PPEP_PPM_PARK_MASK, kernel.pep_ppm_park_mask, PPEP_PPM_PARK_MASK structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK structure [Kernel-Mode Driver Architecture], PEP_PPM_PARK_MASK, _PEP_PPM_PARK_MASK, pepfx/PEP_PPM_PARK_MASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_PARK_MASK
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK
 ---
 
@@ -48,18 +52,20 @@ typedef struct _PEP_PPM_PARK_MASK {
 
 ## Members
 
-        
-            `Count`
 
-            [in] Indicates the number of processors in the <b>Processors</b> array.
-        
-            `EvaluationTime`
+`Count`
 
-            [in] The interrupt time of the performance check evaluation that initiated this notification.
-        
-            `Processors`
+[in] Indicates the number of processors in the <b>Processors</b> array.
 
-            [in/out] An array of processors in the core parking domain.
+`EvaluationTime`
+
+[in] The interrupt time of the performance check evaluation that initiated this notification.
+
+`Processors`
+
+[in/out] An array of processors in the core parking domain. 
+
+The Processors array is guaranteed to contain the processors in increasing order by processor index.
 
 
 ## Requirements
@@ -70,16 +76,12 @@ typedef struct _PEP_PPM_PARK_MASK {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186768">PEP_NOTIFY_PPM_PARK_MASK notification</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_processor_park_state.md">PEP_PROCESSOR_PARK_STATE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186768">PEP_NOTIFY_PPM_PARK_MASK notification</a>
+
  
 
  

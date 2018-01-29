@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : eeec5e45-4db2-4a81-b773-0f9cbf86f593
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortMidi, IPortMidi::Notify, Notify
+ms.keywords : Notify method [Audio Devices], IPortMidi interface, audmp-routines_33df6b8a-0ebf-4544-8ad4-17fb93edf0c9.xml, IPortMidi interface [Audio Devices], Notify method, IPortMidi::Notify, IPortMidi, Notify, audio.iportmidi_notify, Notify method [Audio Devices], portcls/IPortMidi::Notify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortMidi.Notify
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -79,14 +83,10 @@ The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
+
  
 
  

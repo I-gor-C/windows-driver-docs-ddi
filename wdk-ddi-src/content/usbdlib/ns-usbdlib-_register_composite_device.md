@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : BBE92635-5230-454E-A6CA-80198B5B2C57
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REGISTER_COMPOSITE_DEVICE, *PREGISTER_COMPOSITE_DEVICE, REGISTER_COMPOSITE_DEVICE
+ms.keywords : REGISTER_COMPOSITE_DEVICE structure [Buses], *PREGISTER_COMPOSITE_DEVICE, usbdlib/REGISTER_COMPOSITE_DEVICE, buses.register_composite_driver, REGISTER_COMPOSITE_DEVICE, PREGISTER_COMPOSITE_DEVICE structure pointer [Buses], PREGISTER_COMPOSITE_DEVICE, _REGISTER_COMPOSITE_DEVICE, usbdlib/PREGISTER_COMPOSITE_DEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REGISTER_COMPOSITE_DEVICE
-req.alt-loc : usbdlib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PREGISTER_COMPOSITE_DEVICE, REGISTER_COMPOSITE_DEVICE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : REGISTER_COMPOSITE_DEVICE, *PREGISTER_COMPOSITE_DEVICE
 req.product : Windows 10 or later.
 ---
 
@@ -53,28 +57,28 @@ typedef struct _REGISTER_COMPOSITE_DEVICE {
 
 ## Members
 
-        
-            `CapabilityFlags`
 
-            The capabilities that are supported by the composite driver.
+`CapabilityFlags`
+
+The capabilities that are supported by the composite driver.
 To specify that function suspend is supported by the composite driver, first initialize the <a href="..\usbdlib\ns-usbdlib-_composite_device_capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a> structure by calling the <a href="..\usbdlib\nf-usbdlib-composite_device_capabilities_init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a> macro. Then, set the <b>CompositeDeviceCapabilityFunctionSuspend</b>
 member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1. Finally, call <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> and pass the initialized structure in the  <i>CapabilityFlags</i> parameter.
-        
-            `FunctionCount`
 
-            The number of functions supported by the composite device. The <b>FunctionCount</b> value must not exceed 255.
-        
-            `Reserved`
+`FunctionCount`
 
-            Reserved. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
-        
-            `Size`
+The number of functions supported by the composite device. The <b>FunctionCount</b> value must not exceed 255.
 
-            The size of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
-        
-            `Version`
+`Reserved`
 
-            The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
+Reserved. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
+
+`Size`
+
+The size of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
+
+`Version`
+
+The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
 
 
 ## Requirements
@@ -85,22 +89,16 @@ member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1. Finally, call <a href="..\u
 | **Minimum UMDF version** |  |
 | **Header** | usbdlib.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
-</dt>
-<dt>
-<a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>
-</dt>
-<dt>
-<a href="..\usbdlib\ns-usbdlib-_composite_device_capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a>
-</dt>
-<dt>
 <a href="..\usbdlib\nf-usbdlib-composite_device_capabilities_init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a>
-</dt>
-</dl>
+
+<a href="..\usbdlib\ns-usbdlib-_composite_device_capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a>
+
+<a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
+
  
 
  

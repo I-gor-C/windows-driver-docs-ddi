@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4fbb4d4b-b98a-4d10-b9b2-7ad8fc4ada6e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwUnloadDriver
+ms.keywords : wdm/NtUnloadDriver, ZwUnloadDriver routine [Kernel-Mode Driver Architecture], kernel.zwunloaddriver, k111_72ac4415-d46c-4ea2-9d6c-d66903082808.xml, wdm/ZwUnloadDriver, NtUnloadDriver, ZwUnloadDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Windo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwUnloadDriver,NtUnloadDriver
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,8 +71,7 @@ Pointer to a counted Unicode string that specifies a path to the driver's regist
 If <i>DriverName</i> is the name of a PnP device driver, <b>ZwUnloadDriver</b> returns STATUS_INVALID_DEVICE_REQUEST and does not unload the driver. 
 
 A minifilter should use <a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">FltUnloadFilter</a> instead of <b>ZwUnloadDriver</b> to unload a supporting minifilter. 
-
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
+<div class="alert"><b>Note</b>  If the call to the <b>ZwUnloadDriver</b> function occurs in user mode, you should use the name "<a href="https://msdn.microsoft.com/library/windows/hardware/ff557701">NtUnloadDriver</a>" instead of "<b>ZwUnloadDriver</b>".</div><div> </div>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,23 +87,16 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">FltUnloadFilter</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwloaddriver.md">ZwLoadDriver</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">FltUnloadFilter</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

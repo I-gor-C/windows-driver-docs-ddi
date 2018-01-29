@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ca3bd7af-b270-497e-a90a-6d79ce66d968
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IFileCallbackClose, IFileCallbackClose::OnCloseFile, OnCloseFile
+ms.keywords : OnCloseFile method, IFileCallbackClose interface, IFileCallbackClose, UMDFFileObjectRef_8aa60206-80e0-4c49-b2fd-c79f5e703c18.xml, umdf.ifilecallbackclose_onclosefile, IFileCallbackClose::OnCloseFile, OnCloseFile, wdf.ifilecallbackclose_onclosefile, IFileCallbackClose interface, OnCloseFile method, wudfddi/IFileCallbackClose::OnCloseFile, OnCloseFile method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IFileCallbackClose.OnCloseFile
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -80,17 +84,12 @@ For information about when the framework calls <b>OnCloseFile</b>, see <a href="
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-ifilecallbackclose.md">IFileCallbackClose</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-</dl>
+
  
 
  

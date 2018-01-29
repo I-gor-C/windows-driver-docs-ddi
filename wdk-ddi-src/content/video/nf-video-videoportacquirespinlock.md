@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e61ffb7-1720-47b2-b943-54ffa596cb08
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortAcquireSpinLock
+ms.keywords : display.videoportacquirespinlock, VideoPortAcquireSpinLock function [Display Devices], VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, VideoPortAcquireSpinLock, video/VideoPortAcquireSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortAcquireSpinLock
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -75,12 +79,20 @@ The current IRQL is saved in <i>OldIrql</i>. Then, the current IRQL is reset to 
 The <i>OldIrql</i> value must be specified when the spin lock is released with <a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>.
 
 Spin locks can cause serious problems if not used judiciously. In particular, no deadlock protection is performed and dispatching is disabled while the spin lock is held. Therefore: 
-
+<ul>
+<li>
 The code within a critical region guarded by a spin lock must neither be pageable nor make any references to pageable data. 
 
+</li>
+<li>
 The code within a critical region guarded by a spin lock can neither call any external function that might access pageable data or raise an exception, nor can it generate any exceptions. 
 
-The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as quickly as possible.
+</li>
+<li>
+The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as quickly as possible. 
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,14 +108,10 @@ The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportacquirespinlockatdpclevel.md">VideoPortAcquireSpinLockAtDpcLevel</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 78010e49-ad09-4eb3-bb48-17040737a0a0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KS_DVD_YCrCb, KS_DVD_YCrCb, *PKS_DVD_YCrCb
+ms.keywords : KS_DVD_YCrCb, ksmedia/KS_DVD_YCrCb, _KS_DVD_YCrCb, PKS_DVD_YCrCb, dvdref_559830d7-6f86-4a27-bc31-1e0e7928d7d4.xml, stream.ks_dvd_ycrcb, KS_DVD_YCrCb structure [Streaming Media Devices], ksmedia/PKS_DVD_YCrCb, PKS_DVD_YCrCb structure pointer [Streaming Media Devices], *PKS_DVD_YCrCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DVD_YCrCb
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KS_DVD_YCrCb, *PKS_DVD_YCrCb
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKS_DVD_YCrCb, KS_DVD_YCrCb"
 ---
 
 # _KS_DVD_YCrCb structure
@@ -49,25 +53,25 @@ typedef struct _KS_DVD_YCrCb {
 
 ## Members
 
-        
-            `Cb`
 
-            Indicates the color-blue (chrominance) component of the color.
-        
-            `Cr`
+`Cb`
 
-            Indicates the color-red (chrominance) component of the color.
-        
-            `Reserved`
+Indicates the color-blue (chrominance) component of the color.
 
-            Reserved. Do not use.
-        
-            `Y`
+`Cr`
 
-            Indicates the luminance (brightness) component of the color.
+Indicates the color-red (chrominance) component of the color.
 
-    ## Remarks
-        The KS_DVD_YCrCb structure is used
+`Reserved`
+
+Reserved. Do not use.
+
+`Y`
+
+Indicates the luminance (brightness) component of the color.
+
+## Remarks
+The KS_DVD_YCrCb structure is used
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _KS_DVD_YCrCb {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_ks_dvd_yuv.md">KS_DVD_YUV</a>
-</dt>
-</dl>
+
  
 
  

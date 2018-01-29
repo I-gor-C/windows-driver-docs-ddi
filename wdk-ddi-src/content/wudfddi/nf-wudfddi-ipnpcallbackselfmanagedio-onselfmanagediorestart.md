@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : dccc4be0-0724-44b6-8476-276b46acee6a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart, OnSelfManagedIoRestart
+ms.keywords : UMDFDeviceObjectRef_c570a334-c420-443d-8844-b4ff2bf35f47.xml, IPnpCallbackSelfManagedIo, OnSelfManagedIoRestart method, IPnpCallbackSelfManagedIo interface, umdf.ipnpcallbackselfmanagedio_onselfmanagediorestart, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoRestart method, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart, OnSelfManagedIoRestart, wdf.ipnpcallbackselfmanagedio_onselfmanagediorestart, OnSelfManagedIoRestart method, IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPnpCallbackSelfManagedIo.OnSelfManagedIoRestart
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -83,17 +87,12 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.md">IPnpCallbackSelfManagedIo</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
  
 
  

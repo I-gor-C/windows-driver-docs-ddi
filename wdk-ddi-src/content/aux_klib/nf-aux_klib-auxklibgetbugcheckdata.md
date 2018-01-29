@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d41d0eba-14e3-48ff-874d-e52589cf716c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : AuxKlibGetBugCheckData
+ms.keywords : kernel.auxklibgetbugcheckdata, aux_klib_3cb977df-feb6-4b52-afa1-b5e3038fc287.xml, AuxKlibGetBugCheckData, aux_klib/AuxKlibGetBugCheckData, AuxKlibGetBugCheckData routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AuxKlibGetBugCheckData
-req.alt-loc : Aux_Klib.lib,Aux_Klib.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Aux_Klib.lib
 req.dll : 
 req.irql : 
-req.typenames : REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PREPORT_ZONES_EXT_DATA, REPORT_ZONES_EXT_DATA"
 ---
 
 
@@ -77,17 +81,12 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
-</dt>
-<dt>
 <a href="..\aux_klib\ns-aux_klib-_kbugcheck_data.md">KBUGCHECK_DATA</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
+
+<a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
+
  
 
  

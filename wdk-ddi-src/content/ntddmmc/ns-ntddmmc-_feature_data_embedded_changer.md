@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1335d1fa-af96-4a31-a1cf-266f7a3325ef
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_EMBEDDED_CHANGER, *PFEATURE_DATA_EMBEDDED_CHANGER, FEATURE_DATA_EMBEDDED_CHANGER
+ms.keywords : PFEATURE_DATA_EMBEDDED_CHANGER structure pointer [Storage Devices], PFEATURE_DATA_EMBEDDED_CHANGER, ntddmmc/FEATURE_DATA_EMBEDDED_CHANGER, storage.feature_data_embedded_changer, FEATURE_DATA_EMBEDDED_CHANGER, _FEATURE_DATA_EMBEDDED_CHANGER, *PFEATURE_DATA_EMBEDDED_CHANGER, FEATURE_DATA_EMBEDDED_CHANGER structure [Storage Devices], structs-CD-ROM_655edb8d-6748-4d10-8cd9-51b3a696bccd.xml, ntddmmc/PFEATURE_DATA_EMBEDDED_CHANGER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_EMBEDDED_CHANGER
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFEATURE_DATA_EMBEDDED_CHANGER, FEATURE_DATA_EMBEDDED_CHANGER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FEATURE_DATA_EMBEDDED_CHANGER, *PFEATURE_DATA_EMBEDDED_CHANGER
 ---
 
 # _FEATURE_DATA_EMBEDDED_CHANGER structure
@@ -54,45 +58,45 @@ typedef struct _FEATURE_DATA_EMBEDDED_CHANGER {
 
 ## Members
 
-        
-            `Header`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `HighestSlotNumber`
+`Header`
 
-            Indicates the number of slots minus 1.
-        
-            `Reserved`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            Reserved.
-        
-            `Reserved1`
+`HighestSlotNumber`
 
-            Reserved.
-        
-            `Reserved2`
+Indicates the number of slots minus 1.
 
-            Reserved.
-        
-            `Reserved3`
+`Reserved`
 
-            Reserved.
-        
-            `Reserved4`
+Reserved.
 
-            Reserved.
-        
-            `SideChangeCapable`
+`Reserved1`
 
-            Indicates, when set to 1, that the device is capable of selecting both sides of the media. When set to zero, this bit indicates that the device is not capable of selecting both sides of the media.
-        
-            `SupportsDiscPresent`
+Reserved.
 
-            Indicates, when set to 1, that the device can report the contents of the slots after a reset or magazine change. When set to zero, this bit indicates that the device can report the contents of the slots after reset or magazine change.
+`Reserved2`
 
-    ## Remarks
-        This structure holds data for the feature named "Embedded Changer" by the <i>SCSI Multimedia - 4 (MMC-4) </i>specification. Devices that support this feature can move media back and forth between a media storage area and the mechanism that actually accesses the media.
+Reserved.
+
+`Reserved3`
+
+Reserved.
+
+`Reserved4`
+
+Reserved.
+
+`SideChangeCapable`
+
+Indicates, when set to 1, that the device is capable of selecting both sides of the media. When set to zero, this bit indicates that the device is not capable of selecting both sides of the media.
+
+`SupportsDiscPresent`
+
+Indicates, when set to 1, that the device can report the contents of the slots after a reset or magazine change. When set to zero, this bit indicates that the device can report the contents of the slots after reset or magazine change.
+
+## Remarks
+This structure holds data for the feature named "Embedded Changer" by the <i>SCSI Multimedia - 4 (MMC-4) </i>specification. Devices that support this feature can move media back and forth between a media storage area and the mechanism that actually accesses the media.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,16 +106,12 @@ typedef struct _FEATURE_DATA_EMBEDDED_CHANGER {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

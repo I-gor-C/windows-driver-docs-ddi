@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8cee85a3-b2e4-4378-a700-862d1b517f14
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _AUX_MODULE_BASIC_INFO, *PAUX_MODULE_BASIC_INFO, AUX_MODULE_BASIC_INFO
+ms.keywords : kernel.aux_module_basic_info, _AUX_MODULE_BASIC_INFO, AUX_MODULE_BASIC_INFO, aux_klib_7c33c85c-d2d1-49ea-98e2-d25299a281b9.xml, PAUX_MODULE_BASIC_INFO structure pointer [Kernel-Mode Driver Architecture], *PAUX_MODULE_BASIC_INFO, aux_klib/PAUX_MODULE_BASIC_INFO, AUX_MODULE_BASIC_INFO structure [Kernel-Mode Driver Architecture], PAUX_MODULE_BASIC_INFO, aux_klib/AUX_MODULE_BASIC_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AUX_MODULE_BASIC_INFO
-req.alt-loc : aux_klib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PAUX_MODULE_BASIC_INFO, AUX_MODULE_BASIC_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : AUX_MODULE_BASIC_INFO, *PAUX_MODULE_BASIC_INFO
 ---
 
 # _AUX_MODULE_BASIC_INFO structure
@@ -46,13 +50,13 @@ typedef struct _AUX_MODULE_BASIC_INFO {
 
 ## Members
 
-        
-            `ImageBase`
 
-            A pointer to the base of the loaded image.
+`ImageBase`
 
-    ## Remarks
-        The <b>AUX_MODULE_BASIC_INFO</b> structure is used as input to the <a href="..\aux_klib\nf-aux_klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a> routine.
+A pointer to the base of the loaded image.
+
+## Remarks
+The <b>AUX_MODULE_BASIC_INFO</b> structure is used as input to the <a href="..\aux_klib\nf-aux_klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,13 +66,10 @@ typedef struct _AUX_MODULE_BASIC_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | aux_klib.h (include Aux_klib.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\aux_klib\nf-aux_klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a>
-</dt>
-</dl>
+
  
 
  

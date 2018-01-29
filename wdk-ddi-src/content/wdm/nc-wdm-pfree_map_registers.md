@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0326229f-cf02-4368-bc32-7fbed118714b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.freemapregisters, FreeMapRegisters, FreeMapRegisters callback function [Kernel-Mode Driver Architecture], FreeMapRegisters, PFREE_MAP_REGISTERS, PFREE_MAP_REGISTERS, wdm/FreeMapRegisters, kdma_039f59c4-101e-40c2-bf2e-a0faa7c11032.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FreeMapRegisters
-req.alt-loc : wdm.h
 req.ddi-compliance : IrqlDispatch, IrqlDispatch(storport)
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -94,23 +98,16 @@ When the driver of a bus-master device has completed the current packet-based DM
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
 <a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
  
 
  

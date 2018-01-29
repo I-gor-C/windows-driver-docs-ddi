@@ -7,8 +7,8 @@ old-location : netvista\rilcallaudiosource.htm
 old-project : netvista
 ms.assetid : ec6d45ba-3afe-44cb-a699-ef3b3b804b6b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLAUDIOSOURCE, RILCALLAUDIOSOURCE
+ms.date : 1/18/2018
+ms.keywords : RIL_CALLAUDIOSOURCE_PKT_APP, ntddrilapitypes/RIL_CALLAUDIOSOURCE_PKT_APP, RILCALLAUDIOSOURCE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_CALLAUDIOSOURCE_MAX, netvista.rilcallaudiosource, RILCALLAUDIOSOURCE, ntddrilapitypes/RIL_CALLAUDIOSOURCE_PKT_MODEM, RIL_CALLAUDIOSOURCE_PKT_MODEM, ntddrilapitypes/RILCALLAUDIOSOURCE, RIL_CALLAUDIOSOURCE_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLAUDIOSOURCE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLAUDIOSOURCE
 ---
 
@@ -49,6 +53,11 @@ typedef enum _RILCALLAUDIOSOURCE {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_CALLAUDIOSOURCE_CIRCUIT</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_CALLAUDIOSOURCE_MAX</td>

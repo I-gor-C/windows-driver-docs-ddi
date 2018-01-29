@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 27da3881-4c47-492c-868e-ce72210e9d6f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortNotification
+ms.keywords : ScsiPortNotification routine [Storage Devices], ScsiPortNotification, storage.scsiportnotification, srb/ScsiPortNotification, scsiprt_0e410e4a-e7bb-448b-9d4d-c2a5db63fe02.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortNotification
-req.alt-loc : scsiport.lib,scsiport.dll,storport.lib,storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib; Storport.lib
 req.dll : 
 req.irql : (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortNotification function
 The <b>ScsiPortNotification</b> routine informs the operating system-specific port driver of certain events, such as when a miniport driver completes a request or is ready to start another SRB, as well as when the HBA indicates certain SCSI error conditions that occurred during an operation.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -53,7 +58,6 @@ VOID ScsiPortNotification(
 `NotificationType`
 
 Specifies the type of notification, which can be one of the following.
-
 <table>
 <tr>
 <th>Notification Type</th>
@@ -412,23 +416,16 @@ A miniport driver that is registered as a WMI data provider can call <b>ScsiPort
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557327">HwScsiTimer</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557288">HwScsiDisableInterruptsCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557295">HwScsiEnableInterruptsCallback</a>
-</dt>
-<dt>
+
 <a href="..\srb\nf-srb-scsiportcompleterequest.md">ScsiPortCompleteRequest</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iowmiregistrationcontrol.md">IoWMIRegistrationControl</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557295">HwScsiEnableInterruptsCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557288">HwScsiDisableInterruptsCallback</a>
+
  
 
  

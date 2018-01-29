@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9663d0fe-7397-49d7-b860-e466a9311aca
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_BLT, D3DDDIARG_BLT
+ms.keywords : D3DDDIARG_BLT structure [Display Devices], display.d3dddiarg_blt, d3dumddi/D3DDDIARG_BLT, _D3DDDIARG_BLT, D3DDDIARG_BLT, UMDisplayDriver_param_Structs_1c7d23e1-c05e-42b6-802e-4a69a80006c8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_BLT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_BLT
 ---
 
@@ -53,41 +57,41 @@ typedef struct _D3DDDIARG_BLT {
 
 ## Members
 
-        
-            `ColorKey`
 
-            [in] A value for the color key. Note that the <b>SrcColorKey</b> and <b>DstColorKey</b> bit-field flags are never set simultaneously in the <b>Flags</b> member.
-        
-            `DstRect`
+`ColorKey`
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle.
-        
-            `DstSubResourceIndex`
+[in] A value for the color key. Note that the <b>SrcColorKey</b> and <b>DstColorKey</b> bit-field flags are never set simultaneously in the <b>Flags</b> member.
 
-            [in] The index to the destination surface within the resource.
-        
-            `Flags`
+`DstRect`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_bltflags.md">D3DDDI_BLTFLAGS</a> structure that identifies the type of bitblt to perform. Note that some bit-field flags in this structure are mutually exclusive with other flags. For more information about these flags, see the following Remarks section.
-        
-            `hDstResource`
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle.
 
-            [in] A handle to the destination resource.
-        
-            `hSrcResource`
+`DstSubResourceIndex`
 
-            [in] A handle to the source resource.
-        
-            `SrcRect`
+[in] The index to the destination surface within the resource.
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the source rectangle.
-        
-            `SrcSubResourceIndex`
+`Flags`
 
-            [in] The index to the source surface within the resource.
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_bltflags.md">D3DDDI_BLTFLAGS</a> structure that identifies the type of bitblt to perform. Note that some bit-field flags in this structure are mutually exclusive with other flags. For more information about these flags, see the following Remarks section.
 
-    ## Remarks
-        If a filtering option (for example, the <b>Point</b> or <b>Linear</b> bit-field flag) is not specified in the <b>Flags</b> member, the driver can use its own filtering technique.
+`hDstResource`
+
+[in] A handle to the destination resource.
+
+`hSrcResource`
+
+[in] A handle to the source resource.
+
+`SrcRect`
+
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the source rectangle.
+
+`SrcSubResourceIndex`
+
+[in] The index to the source surface within the resource.
+
+## Remarks
+If a filtering option (for example, the <b>Point</b> or <b>Linear</b> bit-field flag) is not specified in the <b>Flags</b> member, the driver can use its own filtering technique.
 
 The <b>SrcColorKey</b> and <b>DstColorKey</b> bit-field flags are never set simultaneously. Similarly, the <b>Point</b> bit-field flag is not simultaneously set with the <b>Linear</b> bit-field flag.
 
@@ -99,19 +103,14 @@ The <b>SrcColorKey</b> and <b>DstColorKey</b> bit-field flags are never set simu
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_bltflags.md">D3DDDI_BLTFLAGS</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

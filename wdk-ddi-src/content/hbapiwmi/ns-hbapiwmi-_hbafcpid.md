@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a4fa3093-a328-4d90-bc51-0e7a6db1ed58
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _HBAFCPID, HBAFCPID, *PHBAFCPID
+ms.keywords : storage.hbafcpid, PHBAFCPID, hbapiwmi/PHBAFCPID, structs-Fibre_d993c5b6-2b58-4fae-981a-8096cd9c9bd0.xml, _HBAFCPID, HBAFCPID, hbapiwmi/HBAFCPID, *PHBAFCPID, PHBAFCPID structure pointer [Storage Devices], HBAFCPID structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBAFCPID
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : HBAFCPID, *PHBAFCPID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHBAFCPID, HBAFCPID"
 ---
 
 # _HBAFCPID structure
@@ -49,25 +53,25 @@ typedef struct _HBAFCPID {
 
 ## Members
 
-        
-            `Fcid`
 
-            Contains the identifier that indicates which port is to be queried for information about the logical unit. For a discussion of the values that this member have, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
-        
-            `FcpLun`
+`Fcid`
 
-            Contains a 64-bit fibre channel protocol (FCP) number for the logical unit.
-        
-            `NodeWWN`
+Contains the identifier that indicates which port is to be queried for information about the logical unit. For a discussion of the values that this member have, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
-            Contains the 64 bit world-wide name (WWN) of the node (machine) to which the logical unit is connected. If an HBA has multiple ports and is associated with more than one node, this member will contain a name chosen from among the names of the associated nodes. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
-        
-            `PortWWN`
+`FcpLun`
 
-            Contains the 64 bit world-wide name of the port to be queried for information about the logical unit. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+Contains a 64-bit fibre channel protocol (FCP) number for the logical unit.
 
-    ## Remarks
-        The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h</i> after compiling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556039">HBAFCPID WMI Class</a>.
+`NodeWWN`
+
+Contains the 64 bit world-wide name (WWN) of the node (machine) to which the logical unit is connected. If an HBA has multiple ports and is associated with more than one node, this member will contain a name chosen from among the names of the associated nodes. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+
+`PortWWN`
+
+Contains the 64 bit world-wide name of the port to be queried for information about the logical unit. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+
+## Remarks
+The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h</i> after compiling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556039">HBAFCPID WMI Class</a>.
 
 For more information about the fibre channel protocol (FCP), see the T11 committee's <i>dpANS Fibre Channel Protocol for SCSI</i> and <i>Fibre Channel HBA API</i> specifications.
 
@@ -79,16 +83,12 @@ For more information about the fibre channel protocol (FCP), see the T11 committ
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
-</dt>
-<dt>
 <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
+
  
 
  

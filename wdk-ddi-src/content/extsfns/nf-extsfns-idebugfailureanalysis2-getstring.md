@@ -7,8 +7,8 @@ old-location : debugger\idebugfailureanalysis2_getstring.htm
 old-project : debugger
 ms.assetid : 76F5F3E0-74BF-4DFF-9AA3-A67C03AF56F9
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugFailureAnalysis2, IDebugFailureAnalysis2::GetString, GetString
+ms.date : 1/19/2018
+ms.keywords : debugger.idebugfailureanalysis2_getstring, IDebugFailureAnalysis2::GetString, GetString, IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::GetUlong, GetUlong method [Windows Debugging], IDebugFailureAnalysis2::GetUlong, IDebugFailureAnalysis2 interface [Windows Debugging], GetUlong method, GetUlong method [Windows Debugging], IDebugFailureAnalysis2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugFailureAnalysis2.GetUlong
-req.alt-loc : extsfns.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : extsfns.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FA_EXTENSION_PLUGIN_PHASE
 ---
 
@@ -89,25 +93,18 @@ The appropriate use of this method is get the data block from an <a href="https:
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983427">SetString</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406612">AddString</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983427">SetString</a>
+
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+
 <a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetUlong method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetUlong method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

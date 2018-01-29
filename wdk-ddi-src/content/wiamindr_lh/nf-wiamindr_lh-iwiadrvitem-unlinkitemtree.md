@@ -7,8 +7,8 @@ old-location : image\iwiadrvitem_unlinkitemtree.htm
 old-project : image
 ms.assetid : f6fb2929-177b-44cd-a313-8620ba9b2907
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaDrvItem, IWiaDrvItem::UnlinkItemTree, UnlinkItemTree
+ms.date : 1/18/2018
+ms.keywords : DrvItem_70e5eaf0-4115-4207-9ea2-53ca8c210795.xml, IWiaDrvItem interface [Imaging Devices], UnlinkItemTree method, UnlinkItemTree, wiamindr_lh/IWiaDrvItem::UnlinkItemTree, image.iwiadrvitem_unlinkitemtree, IWiaDrvItem::UnlinkItemTree, UnlinkItemTree method [Imaging Devices], UnlinkItemTree method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaDrvItem.UnlinkItemTree
-req.alt-loc : wiamindr_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wiamindr_lh.h
 req.dll : 
 req.irql : 
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -60,7 +64,7 @@ If the method succeeds, it returns S_OK. If the method is called on a nonroot it
 
 ## Remarks
 
-Minidrivers must call this method on the root item in the driver item tree when they want to invalidate the tree. This is typically done when the driver is being unloaded or when the minidriver needs to rebuild the driver item tree.</p>
+Minidrivers must call this method on the root item in the driver item tree when they want to invalidate the tree. This is typically done when the driver is being unloaded or when the minidriver needs to rebuild the driver item tree.
 
 ## Requirements
 | &nbsp; | &nbsp; |

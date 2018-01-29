@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dde8ebf7-7839-4bcc-8cb1-02a5ca922792
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_WAITFORVERTICALBLANKEVENT, D3DKMT_WAITFORVERTICALBLANKEVENT
+ms.keywords : d3dkmthk/D3DKMT_WAITFORVERTICALBLANKEVENT, D3DKMT_WAITFORVERTICALBLANKEVENT structure [Display Devices], D3DKMT_WAITFORVERTICALBLANKEVENT, OpenGL_Structs_1072adb2-825b-4fee-a84a-b958e3d2e4d4.xml, display.d3dkmt_waitforverticalblankevent, _D3DKMT_WAITFORVERTICALBLANKEVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_WAITFORVERTICALBLANKEVENT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_WAITFORVERTICALBLANKEVENT
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_WAITFORVERTICALBLANKEVENT {
 
 ## Members
 
-        
-            `hAdapter`
 
-            [in] A handle to the adapter.
-        
-            `hDevice`
+`hAdapter`
 
-            [in] A handle to the display device. This member is optionally specified. However, if the OpenGL ICD specifies the display device, the kernel is given more optimization opportunities with regard to power usage.
-        
-            `VidPnSourceId`
+[in] A handle to the adapter.
 
-            [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source.
+`hDevice`
+
+[in] A handle to the display device. This member is optionally specified. However, if the OpenGL ICD specifies the display device, the kernel is given more optimization opportunities with regard to power usage.
+
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_WAITFORVERTICALBLANKEVENT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforverticalblankevent.md">D3DKMTWaitForVerticalBlankEvent</a>
-</dt>
-</dl>
+
  
 
  

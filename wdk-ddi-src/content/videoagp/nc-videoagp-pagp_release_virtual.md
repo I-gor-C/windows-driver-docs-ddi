@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4e880b39-e0ee-4801-86b7-ffc06ed415ab
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+ms.keywords : display.agpreleasevirtual, AgpReleaseVirtual callback function [Display Devices], AgpReleaseVirtual, PAGP_RELEASE_VIRTUAL, PAGP_RELEASE_VIRTUAL, videoagp/AgpReleaseVirtual, VideoPort_Functions_4ea0bf12-5d18-4704-9efe-7d8a65a44f1f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AgpReleaseVirtual
-req.alt-loc : videoagp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -84,14 +88,10 @@ The miniport driver must call <a href="..\videoagp\nc-videoagp-pagp_free_virtual
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a>
-</dt>
-<dt>
+
 <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 77101494-97bb-4049-8c6c-cdb4ee82f312
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER
+ms.keywords : ksmedia/KS_BITMAPINFOHEADER, tagKS_BITMAPINFOHEADER, ksmedia/PKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, PKS_BITMAPINFOHEADER, vidcapstruct_14e65a26-c943-4fad-949a-87aaf584e50c.xml, KS_BITMAPINFOHEADER structure [Streaming Media Devices], stream.ks_bitmapinfoheader, PKS_BITMAPINFOHEADER structure pointer [Streaming Media Devices], *PKS_BITMAPINFOHEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_BITMAPINFOHEADER
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER
 ---
 
@@ -56,53 +60,53 @@ typedef struct tagKS_BITMAPINFOHEADER {
 
 ## Members
 
-        
-            `biBitCount`
 
-            Specifies the color bits per pixel. For example, 1, 4, 8, or 24.
-        
-            `biClrImportant`
+`biBitCount`
 
-            Specifies the number of important colors in the image.
-        
-            `biClrUsed`
+Specifies the color bits per pixel. For example, 1, 4, 8, or 24.
 
-            Specifies the number of colors used in the image.
-        
-            `biCompression`
+`biClrImportant`
 
-            Specifies the compression scheme.
-        
-            `biHeight`
+Specifies the number of important colors in the image.
 
-            Specifies the height of the bitmap in pixels.
-        
-            `biPlanes`
+`biClrUsed`
 
-            Specifies the number of planes. This is always set to 1.
-        
-            `biSize`
+Specifies the number of colors used in the image.
 
-            Specifies the size of the structure in bytes.
-        
-            `biSizeImage`
+`biCompression`
 
-            Specifies the size of bitmap bits in bytes. (Only required if using compression.)
-        
-            `biWidth`
+Specifies the compression scheme.
 
-            Specifies the width of the bitmap in pixels.
-        
-            `biXPelsPerMeter`
+`biHeight`
 
-            Specifies the horizontal resolution in pixels per meter.
-        
-            `biYPelsPerMeter`
+Specifies the height of the bitmap in pixels.
 
-            Specifies the vertical resolution in pixels per meter.
+`biPlanes`
 
-    ## Remarks
-        This is the same structure as the user-mode GDI bitmap header (BITMAPINFOHEADER) structure.</p>
+Specifies the number of planes. This is always set to 1.
+
+`biSize`
+
+Specifies the size of the structure in bytes.
+
+`biSizeImage`
+
+Specifies the size of bitmap bits in bytes. (Only required if using compression.)
+
+`biWidth`
+
+Specifies the width of the bitmap in pixels.
+
+`biXPelsPerMeter`
+
+Specifies the horizontal resolution in pixels per meter.
+
+`biYPelsPerMeter`
+
+Specifies the vertical resolution in pixels per meter.
+
+## Remarks
+This is the same structure as the user-mode GDI bitmap header (BITMAPINFOHEADER) structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

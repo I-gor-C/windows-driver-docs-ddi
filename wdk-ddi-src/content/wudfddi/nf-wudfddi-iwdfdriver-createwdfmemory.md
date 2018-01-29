@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2ea754db-3bed-48d9-825f-7ee7b5e169b7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDriver, IWDFDriver::CreateWdfMemory, CreateWdfMemory
+ms.keywords : IWDFDriver interface, CreateWdfMemory method, CreateWdfMemory, wdf.iwdfdriver_createwdfmemory, UMDFDriverObjectRef_903775e8-0752-435b-96d9-fa1317f63289.xml, umdf.iwdfdriver_createwdfmemory, IWDFDriver::CreateWdfMemory, CreateWdfMemory method, IWDFDriver, CreateWdfMemory method, IWDFDriver interface, wudfddi/IWDFDriver::CreateWdfMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDriver.CreateWdfMemory
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -85,8 +89,6 @@ A UMDF driver can also delete a memory object and its buffer by calling <a href=
 
 A UMDF driver cannot create a memory object with a zero-specified size buffer. If a driver must use a zero-specified size buffer, the driver should use a <b>NULL</b> memory object instead. For example, if the driver must use a zero-specified size buffer in a read request, the driver must pass <b>NULL</b> to the <i>pOutputMemory</i> parameter in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559233">IWDFIoTarget::FormatRequestForRead</a> method.
 
-The following code example shows how to create a memory object that can hold information that is read from a USB endpoint.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -101,29 +103,20 @@ The following code example shows how to create a memory object that can hold inf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559233">IWDFIoTarget::FormatRequestForRead</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
+
+<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559233">IWDFIoTarget::FormatRequestForRead</a>
+
  
 
  

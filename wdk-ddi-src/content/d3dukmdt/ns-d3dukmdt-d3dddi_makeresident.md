@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 16F04DFD-3AF6-48E0-9BCF-9FE0FC397F91
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MAKERESIDENT, D3DDDI_MAKERESIDENT
+ms.keywords : D3DDDI_MAKERESIDENT, display.d3dddi_makeresident, D3DDDI_MAKERESIDENT structure [Display Devices], d3dukmdt/D3DDDI_MAKERESIDENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_MAKERESIDENT
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_MAKERESIDENT
 ---
 
@@ -52,35 +56,35 @@ typedef struct D3DDDI_MAKERESIDENT {
 
 ## Members
 
-        
-            `AllocationList`
 
-            [in] An array of <b>NumAllocations</b> allocation handles to make resident. All allocations must be created on the device <b>hPagingQueue</b> is created for.
-        
-            `Flags`
+`AllocationList`
 
-            [in] Specifies memory residency behavior as documented in <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident_flags.md">D3DDDI_MAKERESIDENT_FLAGS</a>.
-        
-            `hPagingQueue`
+[in] An array of <b>NumAllocations</b> allocation handles to make resident. All allocations must be created on the device <b>hPagingQueue</b> is created for.
 
-            [in] Paging queue on the device that created the input allocations. This queue will be used for residency operations.
-        
-            `NumAllocations`
+`Flags`
 
-            [in/out] On input, the number of allocation handles in the <b>AllocationList</b> array and allocation priority values in the <b>PriorityList</b> array. On output,
+[in] Specifies memory residency behavior as documented in <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident_flags.md">D3DDDI_MAKERESIDENT_FLAGS</a>.
+
+`hPagingQueue`
+
+[in] Paging queue on the device that created the input allocations. This queue will be used for residency operations.
+
+`NumAllocations`
+
+[in/out] On input, the number of allocation handles in the <b>AllocationList</b> array and allocation priority values in the <b>PriorityList</b> array. On output,
                                                     the number of allocations successfully made resident.
-        
-            `NumBytesToTrim`
 
-            [out] When <b>MakeResident</b> returns <b>E_OUTOFMEMORY</b>, this member indicates the number of bytes over budget the application would be if the allocation(s) were made resident.
-        
-            `PagingFenceValue`
+`NumBytesToTrim`
 
-            [out] When <b>MakeResident</b> returns <b>E_PENDING</b>, this member indicates the paging queue fence value to wait on.
-        
-            `PriorityList`
+[out] When <b>MakeResident</b> returns <b>E_OUTOFMEMORY</b>, this member indicates the number of bytes over budget the application would be if the allocation(s) were made resident.
 
-            [in] An array of <b>NumAllocations</b> specifying residency priority for each of the input allocations. This value is currently ignored and may be set to <b>NULL</b>.
+`PagingFenceValue`
+
+[out] When <b>MakeResident</b> returns <b>E_PENDING</b>, this member indicates the paging queue fence value to wait on.
+
+`PriorityList`
+
+[in] An array of <b>NumAllocations</b> specifying residency priority for each of the input allocations. This value is currently ignored and may be set to <b>NULL</b>.
 
 
 ## Requirements
@@ -91,19 +95,14 @@ typedef struct D3DDDI_MAKERESIDENT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_makeresidentcb.md">pfnMakeResidentCb</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmakeresident.md">D3DKMTMakeResident</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident_flags.md">D3DDDI_MAKERESIDENT_FLAGS</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_makeresidentcb.md">pfnMakeResidentCb</a>
+
  
 
  

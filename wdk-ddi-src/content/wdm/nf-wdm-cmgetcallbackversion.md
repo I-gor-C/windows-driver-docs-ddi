@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4b7aba14-bc6a-4d3d-bcc5-53fd122794a1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CmGetCallbackVersion
+ms.keywords : kernel.cmgetcallbackversion, ConfigMgrRef_f15e2e9c-8b84-40b2-abb4-b37a6d38f920.xml, CmGetCallbackVersion, wdm/CmGetCallbackVersion, CmGetCallbackVersion routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CmGetCallbackVersion
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -93,20 +97,14 @@ For more information on the differences between versions, see <a href="https://m
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_reg_post_create_key_information.md">REG_POST_CREATE_KEY_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560967">REG_POST_OPEN_KEY_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_reg_post_create_key_information.md">REG_POST_CREATE_KEY_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560967">REG_POST_OPEN_KEY_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-</dt>
-</dl>
+
  
 
  

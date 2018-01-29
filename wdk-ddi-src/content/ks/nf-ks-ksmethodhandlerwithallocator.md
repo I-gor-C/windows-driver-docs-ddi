@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3a4c2eaa-167a-406a-a792-612c3e624f89
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsMethodHandlerWithAllocator
+ms.keywords : stream.ksmethodhandlerwithallocator, KsMethodHandlerWithAllocator function [Streaming Media Devices], ksfunc_b8089a49-086b-4695-bebd-6fc3817ed7e0.xml, KsMethodHandlerWithAllocator, ks/KsMethodHandlerWithAllocator
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsMethodHandlerWithAllocator
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -70,7 +74,7 @@ Optionally points to an allocation function that will be used to allocate memory
 
 `OPTIONAL`
 
-
+TBD
 
 
 ## Return Value

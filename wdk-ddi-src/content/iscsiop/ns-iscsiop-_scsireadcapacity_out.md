@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3330379f-e484-4fd7-b914-fc969398b56b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT, ScsiReadCapacity_OUT
+ms.keywords : PScsiReadCapacity_OUT structure pointer [Storage Devices], *PScsiReadCapacity_OUT, ScsiReadCapacity_OUT, iscsiop/ScsiReadCapacity_OUT, ScsiReadCapacity_OUT structure [Storage Devices], _ScsiReadCapacity_OUT, storage.scsireadcapacity_out, PScsiReadCapacity_OUT, structs-iSCSI_48750b99-26df-4890-b906-fa487efc3797.xml, iscsiop/PScsiReadCapacity_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiReadCapacity_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PScsiReadCapacity_OUT, ScsiReadCapacity_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT
 ---
 
 # _ScsiReadCapacity_OUT structure
@@ -50,29 +54,29 @@ typedef struct _ScsiReadCapacity_OUT {
 
 ## Members
 
-        
-            `ResponseBuffer`
 
-            A buffer that holds the response data that the SCSI READ CAPACITY command received.
-        
-            `ResponseBufferSize`
+`ResponseBuffer`
 
-            The size, in bytes, of the buffer at <b>ResponseBuffer</b><i>. </i>
-        
-            `ScsiStatus`
+A buffer that holds the response data that the SCSI READ CAPACITY command received.
 
-            The status of the SCSI READ CAPACITY command.
-        
-            `SenseBuffer`
+`ResponseBufferSize`
 
-            A buffer that holds the SCSI sense data that the SCSI READ CAPACITY command received.
-        
-            `Status`
+The size, in bytes, of the buffer at <b>ResponseBuffer</b><i>. </i>
 
-            The status of the <b>ScsiReadCapacity</b> method. This member will contain 0 if the READ CAPACITY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the READ CAPACITY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`ScsiStatus`
 
-    ## Remarks
-        You must implement this method.
+The status of the SCSI READ CAPACITY command.
+
+`SenseBuffer`
+
+A buffer that holds the SCSI sense data that the SCSI READ CAPACITY command received.
+
+`Status`
+
+The status of the <b>ScsiReadCapacity</b> method. This member will contain 0 if the READ CAPACITY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the READ CAPACITY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,19 +86,14 @@ typedef struct _ScsiReadCapacity_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
+<a href="..\iscsiop\ns-iscsiop-_scsireadcapacity_in.md">ScsiReadCapacity_IN</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a>
-</dt>
-<dt>
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsireadcapacity_in.md">ScsiReadCapacity_IN</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b0b199ea-d72f-4de3-a6b1-bd22140d13cb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FSRTL_COMMON_FCB_HEADER, FSRTL_COMMON_FCB_HEADER, *PFSRTL_COMMON_FCB_HEADER
+ms.keywords : ntifs/FSRTL_COMMON_FCB_HEADER, contextstructures_775f0b4a-8043-4125-85b4-530a79ed76ba.xml, FSRTL_COMMON_FCB_HEADER structure [Installable File System Drivers], PFSRTL_COMMON_FCB_HEADER, FSRTL_COMMON_FCB_HEADER, _FSRTL_COMMON_FCB_HEADER, ntifs/PFSRTL_COMMON_FCB_HEADER, *PFSRTL_COMMON_FCB_HEADER, PFSRTL_COMMON_FCB_HEADER structure pointer [Installable File System Drivers], ifsk.fsrtl_common_fcb_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FSRTL_COMMON_FCB_HEADER
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FSRTL_COMMON_FCB_HEADER
 ---
 
@@ -57,29 +61,28 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 
 ## Members
 
-        
-            `AllocationSize`
 
-            Allocation size for the file stream. 
+`AllocationSize`
+
+Allocation size for the file stream. 
 
 For more information about the <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> members, see <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
-        
-            `FileSize`
 
-            File size of the file stream.
-        
-            `Flags`
+`FileSize`
 
-            Bitmask of flags that indicate support for various features. This member must be a bitwise OR combination of one or more of the following values:
-        
-            `Flags2`
+File size of the file stream.
 
-            Bitmask of flags that the file system sets to indicate support for various features. This member must be one or more of the following values:
-        
-            `IsFastIoPossible`
+`Flags`
 
-            This member must be one of the following values: 
+Bitmask of flags that indicate support for various features. This member must be a bitwise OR combination of one or more of the following values:
 
+`Flags2`
+
+Bitmask of flags that the file system sets to indicate support for various features. This member must be one or more of the following values:
+
+`IsFastIoPossible`
+
+This member must be one of the following values: 
 <table>
 <tr>
 <th>Value</th>
@@ -115,47 +118,45 @@ The FCB for the file is bad, or an opportunistic lock (also called  "oplock") ex
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about these values, see the reference entries for <a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>, <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>, and <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md">FsRtlCopyWrite</a>.
-        
-            `NodeByteSize`
 
-            Reserved for system use.
-        
-            `NodeTypeCode`
+`NodeByteSize`
 
-            Reserved for system use.
-        
-            `PagingIoResource`
+Reserved for system use.
 
-            Pointer to an additional resource variable, for which the file system supplies the storage that will be used to synchronize paging I/O access to the FCB. The resource variable must be allocated from nonpaged pool. 
+`NodeTypeCode`
 
-Filter drivers should treat this member as opaque.
-        
-            `Reserved`
+Reserved for system use.
 
-            Reserved for system use. Drivers must set this bit-field to zero.
-        
-            `Resource`
+`PagingIoResource`
 
-            Pointer to an initialized resource variable, for which the file system supplies the storage that will be used to synchronize I/O access to the FCB. The resource variable must be allocated from nonpaged pool. 
+Pointer to an additional resource variable, for which the file system supplies the storage that will be used to synchronize paging I/O access to the FCB. The resource variable must be allocated from nonpaged pool. 
 
 Filter drivers should treat this member as opaque.
-        
-            `ValidDataLength`
 
-            Valid data length of the file stream.
-        
-            `Version`
+`Reserved`
 
-            Reserved for system use.  This bit-field is set by the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> or <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> for more information.
+Reserved for system use. Drivers must set this bit-field to zero.
 
-    ## Remarks
-        File systems must set the <b>FsContext</b> member of every file object to point to an <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> structure.  This structure can be embedded inside of a file-system-specific stream context object structure (the remainder of this structure is file-system-specific). Usually, the FSRTL_ADVANCED_FCB_HEADER  structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).
+`Resource`
 
-If the file is used as a paging file, the FSRTL_ADVANCED_FCB_HEADER structure must be allocated from nonpaged pool. Otherwise, it can be allocated from paged or nonpaged pool.
+Pointer to an initialized resource variable, for which the file system supplies the storage that will be used to synchronize I/O access to the FCB. The resource variable must be allocated from nonpaged pool. 
+
+Filter drivers should treat this member as opaque.
+
+`ValidDataLength`
+
+Valid data length of the file stream.
+
+`Version`
+
+Reserved for system use.  This bit-field is set by the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> or <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> for more information.
+
+## Remarks
+File systems must set the <b>FsContext</b> member of every file object to point to an <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> structure.  This structure can be embedded inside of a file-system-specific stream context object structure (the remainder of this structure is file-system-specific). Usually, the FSRTL_ADVANCED_FCB_HEADER  structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).
+<div class="alert"><b>Note</b>   To support filter manager and filter contexts, file systems must use the FSRTL_ADVANCED_FCB_HEADER structure in their stream context objects. All Microsoft file systems use this structure, and all third-party file system developers must do so as well.  FCBs and SCBs for all classes of open requests, including volume open requests, must include this structure.</div><div> </div>If the file is used as a paging file, the FSRTL_ADVANCED_FCB_HEADER structure must be allocated from nonpaged pool. Otherwise, it can be allocated from paged or nonpaged pool.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -165,31 +166,22 @@ If the file is used as a paging file, the FSRTL_ADVANCED_FCB_HEADER structure mu
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md">FSRTL_PER_STREAM_CONTEXT</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md">FsRtlCopyWrite</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a>
+
+<a href="..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md">FSRTL_PER_STREAM_CONTEXT</a>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md">FsRtlCopyWrite</a>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ed0eac1a-8e41-44c3-a538-9ec48492425f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IQueueCallbackDeviceIoControl, IQueueCallbackDeviceIoControl::OnDeviceIoControl, OnDeviceIoControl
+ms.keywords : OnDeviceIoControl, UMDFQueueObjectRef_2dd692cd-27fb-41fc-ab9d-2bb9db9b32bb.xml, OnDeviceIoControl method, IQueueCallbackDeviceIoControl interface, umdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, wdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, IQueueCallbackDeviceIoControl interface, OnDeviceIoControl method, OnDeviceIoControl method, wudfddi/IQueueCallbackDeviceIoControl::OnDeviceIoControl, IQueueCallbackDeviceIoControl::OnDeviceIoControl, IQueueCallbackDeviceIoControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IQueueCallbackDeviceIoControl.OnDeviceIoControl
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -106,23 +110,16 @@ The driver can call the <a href="https://msdn.microsoft.com/library/windows/hard
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iqueuecallbackdeviceiocontrol.md">IQueueCallbackDeviceIoControl</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
  
 
  

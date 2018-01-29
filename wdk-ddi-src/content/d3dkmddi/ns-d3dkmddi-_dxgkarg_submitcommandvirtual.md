@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7BBB4BEC-82F1-44B9-A0C2-1073517A4116
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL
+ms.keywords : display.dxgkarg_submitcommandvirtual, d3dkmddi/DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL structure [Display Devices], DXGKARG_SUBMITCOMMANDVIRTUAL, _DXGKARG_SUBMITCOMMANDVIRTUAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_SUBMITCOMMANDVIRTUAL
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_SUBMITCOMMANDVIRTUAL
 ---
 
@@ -57,54 +61,54 @@ typedef struct _DXGKARG_SUBMITCOMMANDVIRTUAL {
 
 ## Members
 
-        
-            `DmaBufferPrivateDataSize`
 
-            The size of the driver-private data buffer in bytes.
-        
-            `DmaBufferSize`
+`DmaBufferPrivateDataSize`
 
-            The size of the DMA buffer in bytes.
-        
-            `DmaBufferUmdPrivateDataSize`
+The size of the driver-private data buffer in bytes.
 
-            Size of the private driver data, in bytes, that was set by the user mode driver in <b>SubmitCommandCb</b>. When <b>SubmitCommandCb</b> is called, the DirectX graphics kernel allocates a buffer for the private driver data with the size equal to <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a>::<b>DmaBufferPrivateDataSize</b>. This size was reported by the kernel mode driver in the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> call. The DirectX graphics kernel copies the driver private data from the <b>SubmitCommandCb</b> to the allocated buffer.
-        
-            `DmaBufferVirtualAddress`
+`DmaBufferSize`
 
-            The virtual address for the DMA buffer in the context of the submitting process.
-        
-            `EngineOrdinal`
+The size of the DMA buffer in bytes.
 
-            Reserved for future use.
-        
-            `Flags`
+`DmaBufferUmdPrivateDataSize`
 
-            A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_submitcommandflags.md">DXGK_SUBMITCOMMANDFLAGS</a> structure that identifies information about the DMA buffer to submit.
-        
-            `FlipInterval`
+Size of the private driver data, in bytes, that was set by the user mode driver in <b>SubmitCommandCb</b>. When <b>SubmitCommandCb</b> is called, the DirectX graphics kernel allocates a buffer for the private driver data with the size equal to <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a>::<b>DmaBufferPrivateDataSize</b>. This size was reported by the kernel mode driver in the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> call. The DirectX graphics kernel copies the driver private data from the <b>SubmitCommandCb</b> to the allocated buffer.
 
-            A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). <b>FlipInterval</b> is valid only if the <b>Flip</b> bit-field flag is set (that is, <b>TRUE</b>) in the <b>Flags</b> member.
-        
-            `hContext`
+`DmaBufferVirtualAddress`
 
-            The handle returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>.
-        
-            `NodeOrdinal`
+The virtual address for the DMA buffer in the context of the submitting process.
 
-            The zero-based index of the node that the context is created for. Identifies the node when the context is <b>NULL</b>.
-        
-            `pDmaBufferPrivateData`
+`EngineOrdinal`
 
-            A pointer to the driver-private data buffer.
-        
-            `SubmissionFenceId`
+Reserved for future use.
 
-            A unique identifier that the driver can write into the fence command in the ring buffer, which is the buffer where DMA buffers are queued for the GPU to run. For more information about these types of identifiers, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.
-        
-            `VidPnSourceId`
+`Flags`
 
-            The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for a flip operation. This member is valid only when the <b>Flip</b> or <b>FlipWithNoWait</b> bit-field flag is set in the <b>Flags</b> member.
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_submitcommandflags.md">DXGK_SUBMITCOMMANDFLAGS</a> structure that identifies information about the DMA buffer to submit.
+
+`FlipInterval`
+
+A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). <b>FlipInterval</b> is valid only if the <b>Flip</b> bit-field flag is set (that is, <b>TRUE</b>) in the <b>Flags</b> member.
+
+`hContext`
+
+The handle returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>.
+
+`NodeOrdinal`
+
+The zero-based index of the node that the context is created for. Identifies the node when the context is <b>NULL</b>.
+
+`pDmaBufferPrivateData`
+
+A pointer to the driver-private data buffer.
+
+`SubmissionFenceId`
+
+A unique identifier that the driver can write into the fence command in the ring buffer, which is the buffer where DMA buffers are queued for the GPU to run. For more information about these types of identifiers, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.
+
+`VidPnSourceId`
+
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for a flip operation. This member is valid only when the <b>Flip</b> or <b>FlipWithNoWait</b> bit-field flag is set in the <b>Flags</b> member.
 
 
 ## Requirements
@@ -115,25 +119,18 @@ typedef struct _DXGKARG_SUBMITCOMMANDVIRTUAL {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommandvirtual.md">DxgkDdiSubmitCommandVirtual</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommandvirtual.md">DxgkDdiSubmitCommandVirtual</a>
+
 <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
-</dt>
-</dl>
+
  
 
  

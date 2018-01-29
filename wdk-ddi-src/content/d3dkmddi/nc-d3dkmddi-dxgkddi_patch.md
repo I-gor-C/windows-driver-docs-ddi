@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 363be784-0e3b-4f9a-a643-80857478bbae
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddipatch, DxgkDdiPatch callback function [Display Devices], DxgkDdiPatch, DXGKDDI_PATCH, DXGKDDI_PATCH, d3dkmddi/DxgkDdiPatch, DmFunctions_dc8691fa-b688-4762-a641-93e4625d8931.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiPatch
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -74,8 +78,12 @@ The driver must examine the supplied patch-location list in the <b>pPatchLocatio
 The driver can patch the value that is supplied in the <b>SubmissionFenceId</b> member of DXGKARG_PATCH into the fence command at the end of the DMA buffer. For more information about this member, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.
 
 If the driver returns an error code, the Microsoft DirectX graphics kernel subsystem  causes a system bugcheck to occur. In a crash dump file, the error is noted by the message <b>BugCheck 0x119</b>, which has the following four parameters.
-
-<i>DxgkDdiPatch</i> should be made pageable.
+<ol>
+<li>0x3</li>
+<li>A pointer to an internal scheduler data structure</li>
+<li>A pointer to an internal scheduler data structure</li>
+<li>A pointer to an internal scheduler data structure</li>
+</ol><i>DxgkDdiPatch</i> should be made pageable.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,14 +99,10 @@ If the driver returns an error code, the Microsoft DirectX graphics kernel subsy
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 89cbb950-c3e5-4d79-aa7f-fd64cd67fd5e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATARANGE_DVVIDEO, KS_DATARANGE_DVVIDEO, *PKS_DATARANGE_DVVIDEO
+ms.keywords : PKS_DATARANGE_DVVIDEO structure pointer [Streaming Media Devices], PKS_DATARANGE_DVVIDEO, stream.ks_datarange_dvvideo, avcsref_4058b68a-c43e-46f0-82b7-dc596cbead98.xml, avcstrm/KS_DATARANGE_DVVIDEO, KS_DATARANGE_DVVIDEO structure [Streaming Media Devices], tagKS_DATARANGE_DVVIDEO, *PKS_DATARANGE_DVVIDEO, avcstrm/PKS_DATARANGE_DVVIDEO, KS_DATARANGE_DVVIDEO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATARANGE_DVVIDEO
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_DATARANGE_DVVIDEO, *PKS_DATARANGE_DVVIDEO
 ---
 
@@ -47,14 +51,14 @@ typedef struct tagKS_DATARANGE_DVVIDEO {
 
 ## Members
 
-        
-            `DataRange`
 
-            Specifies the range of supported digital video formats.
-        
-            `DVVideoInfo`
+`DataRange`
 
-            Specifies the digital video information, for example, sound tracks and video information.
+Specifies the range of supported digital video formats.
+
+`DVVideoInfo`
+
+Specifies the digital video information, for example, sound tracks and video information.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct tagKS_DATARANGE_DVVIDEO {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
  
 
  

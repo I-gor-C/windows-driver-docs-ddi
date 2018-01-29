@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 213d0ee8-96f1-4927-be87-1b504b3f3478
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetQueryForInterface
+ms.keywords : DFIOTargetRef_ed9f676e-903e-4a93-ad0a-80c428ed8230.xml, PFN_WDFIOTARGETQUERYFORINTERFACE, WdfIoTargetQueryForInterface method, wdfiotarget/WdfIoTargetQueryForInterface, WdfIoTargetQueryForInterface, wdf.wdfiotargetqueryforinterface, kmdf.wdfiotargetqueryforinterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfIoTargetQueryForInterface
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -84,14 +88,34 @@ Additional interface-specific information. This parameter is optional and can be
 ## Return Value
 
 <b>WdfIoTargetQueryForInterface</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>IoTarget</i>, <i>InterfaceType</i>, or <i>Interface</i> parameter is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+The <i>IoTarget</i>, <i>InterfaceType</i>, or <i>Interface</i> parameter is <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl> the framework could not allocate a request to send to another driver.
+</dl>
+</td>
+<td width="60%">
+ the framework could not allocate a request to send to another driver.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -102,8 +126,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 Your driver can call <b>WdfIoTargetQueryForInterface</b> to obtain access to a driver-defined interface that was created by a driver in a different driver stack. To access a driver-defined interface that was created by a driver that is in the same driver stack as your driver, your driver must call <a href="..\wdffdo\nf-wdffdo-wdffdoqueryforinterface.md">WdfFdoQueryForInterface</a>.
 
 Framework-based drivers define interfaces by calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>. For more information about driver-defined interfaces, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-driver-defined-interfaces">Using Driver-Defined Interfaces</a>.
-
-The following code example attempts to gain access to a specified remote I/O target's interface. GUID_RAWPDO_INTERFACE_STANDARD is the GUID that identifies the interface.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -119,20 +141,14 @@ The following code example attempts to gain access to a specified remote I/O tar
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-</dt>
-<dt>
-<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>
-</dt>
-<dt>
-<a href="..\wdffdo\nf-wdffdo-wdffdoqueryforinterface.md">WdfFdoQueryForInterface</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-</dt>
-</dl>
+
+<a href="..\wdffdo\nf-wdffdo-wdffdoqueryforinterface.md">WdfFdoQueryForInterface</a>
+
+<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>
+
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
+
  
 
  

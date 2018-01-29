@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 86c4e9da-7c71-4d79-b8e2-f602489da647
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassCallAtNewPriority
+ms.keywords : stream.streamclasscallatnewpriority, strmini/StreamClassCallAtNewPriority, StreamClassCallAtNewPriority routine [Streaming Media Devices], strclass-routines_6335ceee-08a1-4078-a9ce-aaa15d8158cd.xml, StreamClassCallAtNewPriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassCallAtNewPriority
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : (See Parameters section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -64,7 +68,6 @@ Pointer to the minidriver's device extension. The minidriver specifies the size 
 `Priority`
 
 Specifies one of the values listed in the following table.
-
 <table>
 <tr>
 <th>Priority</th>

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8a2f4429-b805-4a36-afdf-8b9c9a886951
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : READ_PORT_ULONG
+ms.keywords : k103_04794cc7-88eb-4456-8613-6fcf9947ebe4.xml, kernel.read_port_ulong, READ_PORT_ULONG, wdm/READ_PORT_ULONG, READ_PORT_ULONG routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : READ_PORT_ULONG
-req.alt-loc : Hal.lib,Hal.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hal.lib
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ Specifies the port address, which must be a mapped range in I/O space.
 
 ## Remarks
 
-Callers of <b>READ_PORT_ULONG</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
+Callers of <b>READ_PORT_ULONG</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7d746cac-42fd-4fb3-9384-ea690c2235f8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OPENKEYEDMUTEX2, D3DKMT_OPENKEYEDMUTEX2
+ms.keywords : d3dkmthk/D3DKMT_OPENKEYEDMUTEX2, D3DKMT_OPENKEYEDMUTEX2, display.d3dkmt_openkeyedmutex2, _D3DKMT_OPENKEYEDMUTEX2, D3DKMT_OPENKEYEDMUTEX2 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OPENKEYEDMUTEX2
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OPENKEYEDMUTEX2
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMT_OPENKEYEDMUTEX2 {
 
 ## Members
 
-        
-            `hKeyedMutex`
 
-            [out] A D3DKMT_HANDLE data type that represents a handle to the keyed mutex in this process.
-        
-            `hSharedHandle`
+`hKeyedMutex`
 
-            [in] A D3DKMT_HANDLE data type that represents a global handle to a keyed mutex.
-        
-            `pPrivateRuntimeData`
+[out] A D3DKMT_HANDLE data type that represents a handle to the keyed mutex in this process.
 
-            [in] A buffer that contains initial private data. This buffer is copied only if the keyed mutex does not already have private data.
-        
-            `PrivateRuntimeDataSize`
+`hSharedHandle`
 
-            [in] The size, in bytes, of the <b>pPrivateRuntimeData</b> member.
+[in] A D3DKMT_HANDLE data type that represents a global handle to a keyed mutex.
+
+`pPrivateRuntimeData`
+
+[in] A buffer that contains initial private data. This buffer is copied only if the keyed mutex does not already have private data.
+
+`PrivateRuntimeDataSize`
+
+[in] The size, in bytes, of the <b>pPrivateRuntimeData</b> member.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _D3DKMT_OPENKEYEDMUTEX2 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex2.md">D3DKMTOpenKeyedMutex2</a>
-</dt>
-</dl>
+
  
 
  

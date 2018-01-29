@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 842c6ece-5304-428c-afbe-2990d239f38a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_DestinationFlags, DXVA_DestinationFlags
+ms.keywords : DXVA_DestinationFlag_Background_Changed, DXVA_DestinationFlags enumeration [Display Devices], dxvaref_f18a38b4-531e-4c7c-bd77-e4c0d581f86d.xml, DXVA_DestinationFlags, dxva/DXVA_DestinationFlag_Alpha_Changed, dxva/DXVA_DestinationFlags, DXVA_DestinationFlag_TargetRect_Changed, dxva/DXVA_DestinationFlag_Background_Changed, DXVA_DestinationFlag_ColorData_Changed, dxva/DXVA_DestinationFlag_TargetRect_Changed, DXVA_DestinationFlag_Alpha_Changed, DXVA_DestinationFlagMask, dxva/DXVA_DestinationFlag_ColorData_Changed, _DXVA_DestinationFlags, dxva/DXVA_DestinationFlagMask, display.dxva_destinationflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This enumeration type applies only to Windows Server
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_DestinationFlags
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_DestinationFlags
 ---
 
@@ -89,14 +93,10 @@ typedef enum _DXVA_DestinationFlags {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
-</dt>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
+
  
 
  

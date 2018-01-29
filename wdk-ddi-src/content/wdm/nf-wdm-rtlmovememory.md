@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f6727247-e704-42d7-b4f1-ce7d20e317bb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlMoveMemory
+ms.keywords : wdm/RtlMoveMemory, k109_5731ba5b-a7a5-4883-87cf-543768a29a93.xml, RtlMoveMemory, kernel.rtlmovememory, RtlMoveMemory routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlMoveMemory
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -90,11 +94,8 @@ Callers of <b>RtlMoveMemory</b> can be running at any IRQL if the source and des
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a>
-</dt>
-</dl>
+
  
 
  

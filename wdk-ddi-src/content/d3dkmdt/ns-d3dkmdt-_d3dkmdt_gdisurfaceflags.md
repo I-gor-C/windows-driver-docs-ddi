@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ce6e1ca4-7a44-46ee-a5ac-33e143ce6377
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_GDISURFACEFLAGS, D3DKMDT_GDISURFACEFLAGS
+ms.keywords : DmStructs_6d5ae8f4-0155-41d5-b558-a229f68ffa99.xml, display.d3dkmdt_gdisurfaceflags, D3DKMDT_GDISURFACEFLAGS, D3DKMDT_GDISURFACEFLAGS structure [Display Devices], d3dkmdt/D3DKMDT_GDISURFACEFLAGS, _D3DKMDT_GDISURFACEFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_GDISURFACEFLAGS
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_GDISURFACEFLAGS
 ---
 

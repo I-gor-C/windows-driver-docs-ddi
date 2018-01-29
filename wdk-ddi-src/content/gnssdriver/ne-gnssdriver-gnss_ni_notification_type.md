@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : EC5FB722-F182-44A5-944C-ED81E43492AE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_NI_NOTIFICATION_TYPE, GNSS_NI_NOTIFICATION_TYPE
+ms.keywords : GNSS_NI_NOTIFICATION_TYPE, gnssdriver/GNSS_NI_NotifyOnly, gnssdriver/GNSS_NI_PrivacyOverride, gnssdriver/GNSS_NI_NOTIFICATION_TYPE, GNSS_NI_NOTIFICATION_TYPE enumeration [Sensor Devices], GNSS_NI_PrivacyOverride, GNSS_NI_NotifyOnly, GNSS_NI_NoNotifyNoVerify, gnssdriver/GNSS_NI_NotifyVerifyDefaultNotAllow, sensors.gnss_ni_notification_type, gnssdriver/GNSS_NI_NoNotifyNoVerify, GNSS_NI_NotifyVerifyDefaultNotAllow, gnssdriver/GNSS_NI_NotifyVerifyDefaultAllow, GNSS_NI_NotifyVerifyDefaultAllow
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_NI_NOTIFICATION_TYPE
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_NI_NOTIFICATION_TYPE
 ---
 

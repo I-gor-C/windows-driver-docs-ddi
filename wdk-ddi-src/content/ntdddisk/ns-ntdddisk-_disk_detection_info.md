@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 67a508cf-79c4-4c86-9ad3-fa7cca99cf5f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_DETECTION_INFO, DISK_DETECTION_INFO, *PDISK_DETECTION_INFO
+ms.keywords : _DISK_DETECTION_INFO, DISK_DETECTION_INFO structure [Storage Devices], DISK_DETECTION_INFO, ntdddisk/DISK_DETECTION_INFO, PDISK_DETECTION_INFO structure pointer [Storage Devices], PDISK_DETECTION_INFO, *PDISK_DETECTION_INFO, structs-disk_04ca1cb1-3995-47d9-9b5a-0e54ea98dbd6.xml, storage.disk_detection_info, ntdddisk/PDISK_DETECTION_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISK_DETECTION_INFO
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DISK_DETECTION_INFO, *PDISK_DETECTION_INFO
 ---
 
@@ -53,11 +57,10 @@ typedef struct _DISK_DETECTION_INFO {
 
 ## Members
 
-        
-            `DetectionType`
 
-            Indicates one of three possible detection types:
+`DetectionType`
 
+Indicates one of three possible detection types:
 <ol>
 <li>
 <b>DetectNone</b>
@@ -71,12 +74,15 @@ typedef struct _DISK_DETECTION_INFO {
 <b>DetectExInt13</b>
 
 </li>
-</ol>
-See the structure <a href="..\ntdddisk\ne-ntdddisk-_detection_type.md">DETECTION_TYPE</a> for further information.
-        
-            `SizeOfDetectInfo`
+</ol>See the structure <a href="..\ntdddisk\ne-ntdddisk-_detection_type.md">DETECTION_TYPE</a> for further information.
 
-            Contains the quantity, in bytes, of retrieved detect information.
+`DUMMYUNIONNAME`
+
+
+
+`SizeOfDetectInfo`
+
+Contains the quantity, in bytes, of retrieved detect information.
 
 
 ## Requirements
@@ -87,19 +93,14 @@ See the structure <a href="..\ntdddisk\ne-ntdddisk-_detection_type.md">DETECTION
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_int13_info.md">DISK_INT13_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntdddisk\ns-ntdddisk-_disk_ex_int13_info.md">DISK_EX_INT13_INFO</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
+
  
 
  

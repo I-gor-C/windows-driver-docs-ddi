@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4eb6c31d-97b2-4d51-ae49-ed2ab395188a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS
+ms.keywords : LPD3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS structure [Display Devices], _D3DTRANSFORMCAPS, D3DTRANSFORMCAPS, d3dcaps/D3DTRANSFORMCAPS, display.d3dtransformcaps, LPD3DTRANSFORMCAPS structure pointer [Display Devices], d3dstrct_9dc73cc8-edfd-424e-b902-0305de356c07.xml, d3dcaps/LPD3DTRANSFORMCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DTRANSFORMCAPS
-req.alt-loc : d3dcaps.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS"
 ---
 
@@ -50,22 +54,22 @@ typedef struct _D3DTRANSFORMCAPS {
 
 ## Members
 
-        
-            `dwCaps`
 
-            Specifies flags describing the capabilities of the lighting module. The following flag is defined:
+`dwCaps`
+
+Specifies flags describing the capabilities of the lighting module. The following flag is defined:
 
 D3DTRANSFORMCAPS_CLIP 
 <dl>
 <dd>The device can do clipping operations while transforming.</dd>
 </dl>
-        
-            `dwSize`
 
-            Specifies the size, in bytes, of the D3DTRANSFORMCAPS structure.
+`dwSize`
 
-    ## Remarks
-        This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for DirectX 7.0 and earlier runtime compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.
+Specifies the size, in bytes, of the D3DTRANSFORMCAPS structure.
+
+## Remarks
+This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for DirectX 7.0 and earlier runtime compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.
 
 This structure is a member of the <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1.md">D3DDEVICEDESC_V1</a> structure.
 
@@ -77,13 +81,10 @@ This structure is a member of the <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1
 | **Minimum UMDF version** |  |
 | **Header** | d3dcaps.h (include D3dcaps.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1.md">D3DDEVICEDESC_V1</a>
-</dt>
-</dl>
+
  
 
  

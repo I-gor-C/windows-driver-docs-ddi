@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e79b4294-5ba4-4fcc-97e2-69613b65f574
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortSetDeviceQueueDepth
+ms.keywords : storprt_1f3e0e5d-fa3e-4314-aa0a-4d8494c78fb2.xml, storage.storportsetdevicequeuedepth, StorPortSetDeviceQueueDepth routine [Storage Devices], storport/StorPortSetDeviceQueueDepth, StorPortSetDeviceQueueDepth
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortSetDeviceQueueDepth
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -81,8 +85,7 @@ Supplies the depth to which the queue is to be set. This value is always &gt; 0.
 ## Remarks
 
 Before the first call to <b>StorPortSetDeviceQueueDepth</b>, the device queue depth is set to the default value. The following conditional description determines the default queue depth.
-
-The <b>StorPortSetDeviceQueueDepth</b> routine should be called when the miniport driver receives the first SCSI Inquiry command for the specified LUN, or at any time thereafter (but not before), as long as the LUN is valid.</p>
+<b>InitialQueueDepth</b><a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a><b>InitialQueueDepth</b><b>MaxIOsPerLun</b><a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a><b>MaxIOsPerLun</b>The <b>StorPortSetDeviceQueueDepth</b> routine should be called when the miniport driver receives the first SCSI Inquiry command for the specified LUN, or at any time thereafter (but not before), as long as the LUN is valid.
 
 ## Requirements
 | &nbsp; | &nbsp; |

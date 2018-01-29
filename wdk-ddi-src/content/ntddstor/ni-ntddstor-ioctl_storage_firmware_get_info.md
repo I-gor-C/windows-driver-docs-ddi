@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : AB5FA3A5-1187-4925-9EC0-62870851AED1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_firmware_get_info, IOCTL_STORAGE_FIRMWARE_GET_INFO control code [Storage Devices], IOCTL_STORAGE_FIRMWARE_GET_INFO, ntddstor/IOCTL_STORAGE_FIRMWARE_GET_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_FIRMWARE_GET_INFO
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
@@ -66,7 +70,6 @@ The length of .
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INVALID_DEVICE_REQUEST, STATUS_INVALID_PARAMETER, or STATUS_NOT_SUPPORTED.
 
 
@@ -77,31 +80,22 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>
-</dt>
-<dt>
-<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info_query.md">STORAGE_HW_FIRMWARE_INFO_QUERY</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_slot_info.md">STORAGE_HW_FIRMWARE_SLOT_INFO</a>
-</dt>
-<dt>
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_activate.md">IOCTL_STORAGE_FIRMWARE_ACTIVATE</a>
-</dt>
-<dt>
-<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_activate.md">STORAGE_HW_FIRMWARE_ACTIVATE</a>
-</dt>
-<dt>
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_download.md">IOCTL_STORAGE_FIRMWARE_DOWNLOAD</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_download.md">STORAGE_HW_FIRMWARE_DOWNLOAD</a>
-</dt>
-</dl>
+
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_download.md">IOCTL_STORAGE_FIRMWARE_DOWNLOAD</a>
+
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_activate.md">STORAGE_HW_FIRMWARE_ACTIVATE</a>
+
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info_query.md">STORAGE_HW_FIRMWARE_INFO_QUERY</a>
+
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_activate.md">IOCTL_STORAGE_FIRMWARE_ACTIVATE</a>
+
  
 
  

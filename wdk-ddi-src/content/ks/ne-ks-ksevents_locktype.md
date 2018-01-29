@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 775d08ad-40c2-44b7-af02-6c182301e46f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENTS_LOCKTYPE, KSEVENTS_LOCKTYPE
+ms.keywords : ks/KSEVENTS_INTERRUPT, KSEVENTS_FMUTEXUNSAFE, ks/KSEVENTS_FMUTEXUNSAFE, KSEVENTS_INTERRUPT, ks/KSEVENTS_ERESOURCE, ks/KSEVENTS_NONE, KSEVENTS_LOCKTYPE enumeration [Streaming Media Devices], stream.ksevents_locktype, ks/KSEVENTS_LOCKTYPE, KSEVENTS_SPINLOCK, KSEVENTS_MUTEX, ks/KSEVENTS_SPINLOCK, ks/KSEVENTS_MUTEX, ks/KSEVENTS_FMUTEX, ks-struct_293dbf13-1dbe-478e-83fb-d38e17e4a697.xml, KSEVENTS_NONE, KSEVENTS_LOCKTYPE, KSEVENTS_FMUTEX, KSEVENTS_ERESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSEVENTS_LOCKTYPE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSEVENTS_LOCKTYPE
 ---
 

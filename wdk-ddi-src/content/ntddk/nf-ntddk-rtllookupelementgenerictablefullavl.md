@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fddb2e23-ddb3-48bc-a94e-0ca9a8580b78
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlLookupElementGenericTableFullAvl
+ms.keywords : ifsk.rtllookupelementgenerictablefullavl, ntddk/RtlLookupElementGenericTableFullAvl, RtlLookupElementGenericTableFullAvl routine [Installable File System Drivers], RtlLookupElementGenericTableFullAvl, rtlref_12eb0cb8-ea58-45a8-a88b-ceddc5af12c6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlLookupElementGenericTableFullAvl
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL (see Remarks section)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -83,10 +87,16 @@ If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic t
 Callers of the<i> Rtl..GenericTableAvl</i> routines are responsible for exclusively synchronizing access to the generic table. An exclusive fast mutex is the most efficient synchronization mechanism to use for this purpose. 
 
 Callers of <b>RtlLookupElementGenericTableFullAvl</b> must be running at IRQL &lt; DISPATCH_LEVEL if either of the following conditions holds:
-
+<ul>
+<li>
 The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable.
 
-The caller-supplied <i>CompareRoutine</i> contains pageable code.
+</li>
+<li>
+The caller-supplied <i>CompareRoutine</i> contains pageable code. 
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,17 +112,12 @@ The caller-supplied <i>CompareRoutine</i> contains pageable code.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
+
  
 
  

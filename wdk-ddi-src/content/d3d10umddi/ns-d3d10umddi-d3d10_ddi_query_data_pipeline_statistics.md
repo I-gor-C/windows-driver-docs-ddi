@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5e481453-1e01-46b4-a04e-e9c575cd65b9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS, D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
+ms.keywords : UMDisplayDriver_Dx10param_Structs_66e61d2d-0a0d-41aa-a25d-a7fa3ef08b4c.xml, d3d10umddi/D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS, display.d3d10_ddi_query_data_pipeline_statistics, D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS, D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
 ---
 
@@ -53,41 +57,41 @@ typedef struct D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS {
 
 ## Members
 
-        
-            `CInvocations`
 
-            The number of clipper invocations.
-        
-            `CPrimitives`
+`CInvocations`
 
-            The number of clipper primitives.
-        
-            `GSInvocations`
+The number of clipper invocations.
 
-            The number of geometry shader (GS) invocations.
-        
-            `GSPrimitives`
+`CPrimitives`
 
-            The number of GS primitives.
-        
-            `IAPrimitives`
+The number of clipper primitives.
 
-            The number of IA primitives.
-        
-            `IAVertices`
+`GSInvocations`
 
-            The number of input assembler (IA) veritces.
-        
-            `PSInvocations`
+The number of geometry shader (GS) invocations.
 
-            The number of pixel shader (PS) invocations.
-        
-            `VSInvocations`
+`GSPrimitives`
 
-            The number of vertex shader (VS) invocations.
+The number of GS primitives.
 
-    ## Remarks
-        The driver associates a D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure with the D3D10DDI_QUERY_PIPELINESTATS query type value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a> enumeration.
+`IAPrimitives`
+
+The number of IA primitives.
+
+`IAVertices`
+
+The number of input assembler (IA) veritces.
+
+`PSInvocations`
+
+The number of pixel shader (PS) invocations.
+
+`VSInvocations`
+
+The number of vertex shader (VS) invocations.
+
+## Remarks
+The driver associates a D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure with the D3D10DDI_QUERY_PIPELINESTATS query type value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a> enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,19 +101,14 @@ typedef struct D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querygetdata.md">QueryGetData</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
+
  
 
  

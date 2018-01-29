@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3c3a6936-7435-4a42-99e6-2c048613af23
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+ms.keywords : display.agpcommitphysical, AgpCommitPhysical callback function [Display Devices], AgpCommitPhysical, PAGP_COMMIT_PHYSICAL, PAGP_COMMIT_PHYSICAL, videoagp/AgpCommitPhysical, VideoPort_Functions_11f78058-194b-4407-b98b-1ae7cd0028f7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AgpCommitPhysical
-req.alt-loc : videoagp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -102,17 +106,12 @@ When a video miniport driver calls <b>AgpCommitPhysical</b>, a portion of the ph
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a>
-</dt>
-<dt>
-<a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>
-</dt>
-<dt>
 <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a>
-</dt>
-</dl>
+
+<a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a>
+
+<a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ffc6332b-7daa-4b23-8cf4-6077f7d1d40a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeAllocateIrpWithMDL
+ms.keywords : RxCeAllocateIrpWithMDL function [Installable File System Drivers], ifsk.rxceallocateirpwithmdl, rxref_8cb4dfd0-5789-4359-ad9f-bd1a9d460eb3.xml, rxce/RxCeAllocateIrpWithMDL, RxCeAllocateIrpWithMDL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The RxCeAllocateIrpWithMDL routine is only available
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeAllocateIrpWithMDL
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -90,14 +94,10 @@ An IRP allocated with an associated memory descriptor list allocated with <b>RxC
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxce\nf-rxce-rxcefreeirp.md">RxCeFreeIrp</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-</dt>
-</dl>
+
+<a href="..\rxce\nf-rxce-rxcefreeirp.md">RxCeFreeIrp</a>
+
  
 
  

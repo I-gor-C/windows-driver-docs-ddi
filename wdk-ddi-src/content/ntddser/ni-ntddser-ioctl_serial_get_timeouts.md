@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 8db92af3-d970-4740-8d49-46019b3ea016
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : parports.ioctl_serial_get_timeouts, IOCTL_SERIAL_GET_TIMEOUTS control code [Parallel Ports], IOCTL_SERIAL_GET_TIMEOUTS, ntddser/IOCTL_SERIAL_GET_TIMEOUTS, cisspd_15ce20eb-36f6-4df2-9ae5-e58b10daeae1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_GET_TIMEOUTS
-req.alt-loc : ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,16 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_TIMEOUTS IOCTL
-The IOCTL_SERIAL_GET_TIMEOUTS request returns the current setting of the time-out value that the system-supplied bus driver for parallel ports uses with write requests. The parallel port bus driver does not queue a get time-outs request. The write time-out value is used with SPP and SW_ECP modes. 
-
-A client uses an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a> request to set time-out values.
-
-
-
 The IOCTL_SERIAL_GET_TIMEOUTS request returns the current setting of the time-out value that the system-supplied bus driver for parallel ports uses with write requests. The parallel port bus driver does not queue a get time-outs request. The write time-out value is used with SPP and SW_ECP modes. 
 
 A client uses an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a> request to set time-out values.
@@ -67,14 +65,9 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a SERIAL_TIMEOUTS structure. Otherwise, the <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to  the following value:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is less than the size, in bytes, of a SERIAL_TIMEOUTS structure.
 
 
 ## Requirements
@@ -84,13 +77,10 @@ The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is 
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : C74E90C5-9876-4CD1-B9A7-1B32A6AAB474
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE
+ms.keywords : PFILE_LEVEL_TRIM_RANGE structure pointer [Installable File System Drivers], FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE structure [Installable File System Drivers], PFILE_LEVEL_TRIM_RANGE, _FILE_LEVEL_TRIM_RANGE, ifsk.file_level_trim_range, ntifs/PFILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE, ntifs/FILE_LEVEL_TRIM_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_LEVEL_TRIM_RANGE
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE"
 ---
 
 # _FILE_LEVEL_TRIM_RANGE structure
@@ -47,17 +51,17 @@ typedef struct _FILE_LEVEL_TRIM_RANGE {
 
 ## Members
 
-        
-            `Length`
 
-            Length in bytes to trim from the given offset.
-        
-            `Offset`
+`Length`
 
-            Byte offset from the front of the given file to trim at.
+Length in bytes to trim from the given offset.
 
-    ## Remarks
-        Due to alignment requirements, the file system may reduce the of the the trim range to a multiple of <b>PAGE_SIZE</b> &lt;= <b>Length</b>. Also, <b>Offset</b> will be adjusted to the next page boundary if its initial value is not on page boundary.
+`Offset`
+
+Byte offset from the front of the given file to trim at.
+
+## Remarks
+Due to alignment requirements, the file system may reduce the of the the trim range to a multiple of <b>PAGE_SIZE</b> &lt;= <b>Length</b>. Also, <b>Offset</b> will be adjusted to the next page boundary if its initial value is not on page boundary.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _FILE_LEVEL_TRIM_RANGE {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntifs\ns-ntifs-_file_level_trim.md">FILE_LEVEL_TRIM</a>
-</dt>
-</dl>
+
  
 
  

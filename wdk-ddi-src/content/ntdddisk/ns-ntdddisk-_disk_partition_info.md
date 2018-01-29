@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 14df0604-39cd-4743-a051-894d63f4417c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_PARTITION_INFO, DISK_PARTITION_INFO, *PDISK_PARTITION_INFO
+ms.keywords : DISK_PARTITION_INFO structure [Storage Devices], ntdddisk/PDISK_PARTITION_INFO, _DISK_PARTITION_INFO, PDISK_PARTITION_INFO structure pointer [Storage Devices], ntdddisk/DISK_PARTITION_INFO, PDISK_PARTITION_INFO, *PDISK_PARTITION_INFO, structs-disk_307cbbb9-2940-4a87-b6b7-04e588811b8e.xml, DISK_PARTITION_INFO, storage.disk_partition_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISK_PARTITION_INFO
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DISK_PARTITION_INFO, *PDISK_PARTITION_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDISK_PARTITION_INFO, DISK_PARTITION_INFO"
 ---
 
 # _DISK_PARTITION_INFO structure
@@ -56,14 +60,18 @@ typedef struct _DISK_PARTITION_INFO {
 
 ## Members
 
-        
-            `PartitionStyle`
 
-            Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.
-        
-            `SizeOfPartitionInfo`
+`DUMMYUNIONNAME`
 
-            Size of this structure in bytes. Set to <b>sizeof</b>(DISK_PARTITION_INFO).
+
+
+`PartitionStyle`
+
+Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.
+
+`SizeOfPartitionInfo`
+
+Size of this structure in bytes. Set to <b>sizeof</b>(DISK_PARTITION_INFO).
 
 
 ## Requirements
@@ -74,16 +82,12 @@ typedef struct _DISK_PARTITION_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
+
  
 
  

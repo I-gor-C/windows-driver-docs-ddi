@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fe8c55de-e542-4c0d-a96b-31ad39e11dff
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_READ_STRUCTURE, DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE
+ms.keywords : DVD_READ_STRUCTURE, DVD_READ_STRUCTURE structure [Storage Devices], ntddcdvd/DVD_READ_STRUCTURE, structs-DVD_64ffaf42-815a-4a1e-a712-7027930d099f.xml, PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE structure pointer [Storage Devices], ntddcdvd/PDVD_READ_STRUCTURE, storage.dvd_read_structure, *PDVD_READ_STRUCTURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_READ_STRUCTURE
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDVD_READ_STRUCTURE, DVD_READ_STRUCTURE"
 ---
 
 # DVD_READ_STRUCTURE structure
@@ -49,25 +53,25 @@ typedef struct DVD_READ_STRUCTURE {
 
 ## Members
 
-        
-            `BlockByteOffset`
 
-            Contains an offset to the logical block address of the descriptor to be retrieved.
-        
-            `Format`
+`BlockByteOffset`
 
-            Indicates the type of DVD descriptor to retrieve. See the <a href="..\ntddcdvd\ne-ntddcdvd-dvd_structure_format.md">DVD_STRUCTURE_FORMAT</a> enumeration type for further information about the values that can be assigned to this member.
-        
-            `LayerNumber`
+Contains an offset to the logical block address of the descriptor to be retrieved.
 
-            Contains the number of the layer where the descriptor is to be retrieved.
-        
-            `SessionId`
+`Format`
 
-            Contains the DVD session ID.
+Indicates the type of DVD descriptor to retrieve. See the <a href="..\ntddcdvd\ne-ntddcdvd-dvd_structure_format.md">DVD_STRUCTURE_FORMAT</a> enumeration type for further information about the values that can be assigned to this member.
 
-    ## Remarks
-        The DVD_READ_STRUCTURE structure contains data such as copyright information, or manufacturer-specific information.
+`LayerNumber`
+
+Contains the number of the layer where the descriptor is to be retrieved.
+
+`SessionId`
+
+Contains the DVD session ID.
+
+## Remarks
+The DVD_READ_STRUCTURE structure contains data such as copyright information, or manufacturer-specific information.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,16 +81,12 @@ typedef struct DVD_READ_STRUCTURE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
-</dt>
-<dt>
 <a href="..\ntddcdvd\ne-ntddcdvd-dvd_structure_format.md">DVD_STRUCTURE_FORMAT</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
+
  
 
  

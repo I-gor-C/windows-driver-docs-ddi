@@ -7,8 +7,8 @@ old-location : netvista\rilmessageflags_2.htm
 old-project : netvista
 ms.assetid : 49f8bd1b-5c8a-47d3-a5d5-817216562559
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMESSAGEFLAGS, RILMESSAGEFLAGS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_MSGFLAG_STATUSREPORTREQUESTED, RIL_MSGFLAG_STATUSREPORTRETURNED, rilapitypes/RIL_MSGFLAG_ALL, rilapitypes/RILMESSAGEFLAGS, netvista.rilmessageflags_2, RILMESSAGEFLAGS enumeration [Network Drivers Starting with Windows Vista], RIL_MSGFLAG_CAUSEDBYCOMMAND, RIL_MSGFLAG_ALL, RIL_MSGFLAG_REPLYPATH, rilapitypes/RIL_MSGFLAG_REPLYPATH, RIL_MSGFLAG_HEADER, RIL_MSGFLAG_REJECTDUPS, rilapitypes/RIL_MSGFLAG_MORETOSEND, rilapitypes/RIL_MSGFLAG_HEADER, RIL_MSGFLAG_MORETOSEND, RILMESSAGEFLAGS, rilapitypes/RIL_MSGFLAG_REJECTDUPS, rilapitypes/RIL_MSGFLAG_STATUSREPORTRETURNED, RIL_MSGFLAG_STATUSREPORTREQUESTED, rilapitypes/RIL_MSGFLAG_CAUSEDBYCOMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMESSAGEFLAGS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMESSAGEFLAGS
 req.product : Windows 10 or later.
 ---
@@ -73,6 +77,11 @@ typedef enum _RILMESSAGEFLAGS {
 
 <tr>
 <td>RIL_MSGFLAG_MORETOSEND</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGFLAG_NONE</td>
 <td></td>
 </tr>
 

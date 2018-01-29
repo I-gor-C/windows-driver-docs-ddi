@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7976ad9a-b40c-44b1-bc28-0bcb3b721e92
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_DELETE_VALUE_KEY_INFORMATION, *PREG_DELETE_VALUE_KEY_INFORMATION, REG_DELETE_VALUE_KEY_INFORMATION
+ms.keywords : REG_DELETE_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_DELETE_VALUE_KEY_INFORMATION, REG_DELETE_VALUE_KEY_INFORMATION, wdm/PREG_DELETE_VALUE_KEY_INFORMATION, wdm/REG_DELETE_VALUE_KEY_INFORMATION, _REG_DELETE_VALUE_KEY_INFORMATION, kstruct_d_a95a729a-53de-4acc-a935-c2f60d7f9f18.xml, PREG_DELETE_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PREG_DELETE_VALUE_KEY_INFORMATION, kernel.reg_delete_value_key_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_DELETE_VALUE_KEY_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PREG_DELETE_VALUE_KEY_INFORMATION, REG_DELETE_VALUE_KEY_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : REG_DELETE_VALUE_KEY_INFORMATION, *PREG_DELETE_VALUE_KEY_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -51,29 +55,29 @@ typedef struct _REG_DELETE_VALUE_KEY_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Object`
+`CallContext`
 
-            A pointer to the registry key object for the key whose value entry is about to be deleted.
-        
-            `ObjectContext`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
 
-            A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Reserved`
+`Object`
 
-            This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `ValueName`
+A pointer to the registry key object for the key whose value entry is about to be deleted.
 
-            A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of the value entry that is about to be deleted.
+`ObjectContext`
 
-    ## Remarks
-        The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to delete a value entry—for example, when a user-mode thread calls <b>RegDeleteValue</b> or when a driver calls <a href="..\wdm\nf-wdm-zwdeletevaluekey.md">ZwDeleteValueKey</a>.
+A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`Reserved`
+
+This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`ValueName`
+
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of the value entry that is about to be deleted.
+
+## Remarks
+The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to delete a value entry—for example, when a user-mode thread calls <b>RegDeleteValue</b> or when a driver calls <a href="..\wdm\nf-wdm-zwdeletevaluekey.md">ZwDeleteValueKey</a>.
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
@@ -85,22 +89,16 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwdeletevaluekey.md">ZwDeleteValueKey</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
  
 
  

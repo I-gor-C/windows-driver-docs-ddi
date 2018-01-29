@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 00c6c94e-06a8-40ec-8ddd-4a4191fa1ec6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT, *PRemoveConnectionFromSession_OUT
+ms.keywords : "*PRemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT structure pointer [Storage Devices], RemoveConnectionFromSession_OUT, structs-iSCSI_a986a037-b861-4c2b-8402-86dbf7c09942.xml, _RemoveConnectionFromSession_OUT, iscsiop/PRemoveConnectionFromSession_OUT, storage.removeconnectionfromsession_out, RemoveConnectionFromSession_OUT structure [Storage Devices], iscsiop/RemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RemoveConnectionFromSession_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RemoveConnectionFromSession_OUT, *PRemoveConnectionFromSession_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT"
 ---
 
 # _RemoveConnectionFromSession_OUT structure
@@ -46,13 +50,13 @@ typedef struct _RemoveConnectionFromSession_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            This specifies the status of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`Status`
 
-    ## Remarks
-        You must implement this class.
+This specifies the status of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+You must implement this class.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,13 +66,10 @@ typedef struct _RemoveConnectionFromSession_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a>
-</dt>
-</dl>
+
  
 
  

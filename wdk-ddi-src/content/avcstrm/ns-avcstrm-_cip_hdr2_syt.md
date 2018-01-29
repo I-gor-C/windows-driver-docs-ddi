@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _CIP_HDR2_SYT, CIP_HDR2_SYT, *PCIP_HDR2_SYT
+ms.keywords : avcsref_1ea551ca-5d40-4bc3-bc54-b736fd6a2b23.xml, avcstrm/CIP_HDR2_SYT, *PCIP_HDR2_SYT, CIP_HDR2_SYT, stream.cip_hdr2_syt, _CIP_HDR2_SYT, CIP_HDR2_SYT structure [Streaming Media Devices], PCIP_HDR2_SYT structure pointer [Streaming Media Devices], PCIP_HDR2_SYT, avcstrm/PCIP_HDR2_SYT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_HDR2_SYT
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : CIP_HDR2_SYT, *PCIP_HDR2_SYT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PCIP_HDR2_SYT, CIP_HDR2_SYT"
 ---
 
 # _CIP_HDR2_SYT structure
@@ -51,30 +55,30 @@ typedef struct _CIP_HDR2_SYT {
 
 ## Members
 
-        
-            `Bit10`
 
-            Must be set to 1:0.
-        
-            `F5060_OR_TSF`
+`Bit10`
 
-            Specifies field encoding or time-shift flag depending on the value of FMT. This flag may be either 0 for NTSC or 1 for PAL, or 1 for TimeShiftFlag. This flag has multiple meanings (like a union) depending on the FMT member. If the FMT member indicates DV format, then this is either 50/60 flag (NTSC or PAL); if it is it MPEG-TS, then this is a time-shifting flag.
-        
-            `FMT`
+Must be set to 1:0.
 
-            CIP format ID. For example, 000000 = DV and 100000 = MPEG2TS. If this is 111111 (no data), then DBS, FN, SPH and DBC (in the first quadlet of the CIP header, <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>) are ignored.
-        
-            `RSV`
+`F5060_OR_TSF`
 
-            Must be set to 0:0.
-        
-            `STYPE`
+Specifies field encoding or time-shift flag depending on the value of FMT. This flag may be either 0 for NTSC or 1 for PAL, or 1 for TimeShiftFlag. This flag has multiple meanings (like a union) depending on the FMT member. If the FMT member indicates DV format, then this is either 50/60 flag (NTSC or PAL); if it is it MPEG-TS, then this is a time-shifting flag.
 
-            Specifies the video signal type, which is used for transmitting real time data.
-        
-            `SYT`
+`FMT`
 
-            Lower 16 bits of CYCLE_TIME. This is not used for opening a stream.
+CIP format ID. For example, 000000 = DV and 100000 = MPEG2TS. If this is 111111 (no data), then DBS, FN, SPH and DBC (in the first quadlet of the CIP header, <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>) are ignored.
+
+`RSV`
+
+Must be set to 0:0.
+
+`STYPE`
+
+Specifies the video signal type, which is used for transmitting real time data.
+
+`SYT`
+
+Lower 16 bits of CYCLE_TIME. This is not used for opening a stream.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct _CIP_HDR2_SYT {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
-</dt>
-</dl>
+
  
 
  

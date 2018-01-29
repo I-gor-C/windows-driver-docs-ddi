@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e81b096b-273e-48ca-acff-3e4df5a607f4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_usb_diag_ignore_hubs_off, IOCTL_USB_DIAG_IGNORE_HUBS_OFF control code [Buses], IOCTL_USB_DIAG_IGNORE_HUBS_OFF, usbioctl/IOCTL_USB_DIAG_IGNORE_HUBS_OFF, usbirp_5a21e20d-60c5-411a-a01d-3a5d143e076f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported on Microsoft Windows 2000 only.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_USB_DIAG_IGNORE_HUBS_OFF
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
 
 # IOCTL_USB_DIAG_IGNORE_HUBS_OFF IOCTL
-The <b>IOCTL_USB_DIAG_IGNORE_HUBS_OFF</b> I/O control has been deprecated. Do not use.  
-
-
-
 The <b>IOCTL_USB_DIAG_IGNORE_HUBS_OFF</b> I/O control has been deprecated. Do not use.
 
 ### Major Code

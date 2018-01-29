@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : bc69e347-8ef7-4a80-9ef4-bbc03f5586c4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.parallel_try_allocate_routine__isr_, ParallelTryAllocateRoutine callback function [Parallel Ports], ParallelTryAllocateRoutine, PPARALLEL_TRY_ALLOCATE_ROUTINE, PPARALLEL_TRY_ALLOCATE_ROUTINE, parallel/ParallelTryAllocateRoutine, cisspd_737cb583-bcc9-46e9-915b-e073da2c11bf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ParallelTryAllocateRoutine
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DIRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -58,12 +62,34 @@ Pointer to the device extension of a functional device object that represents a 
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>TRUE</b></dt>
-</dl>The parallel port was allocated.
+</dl>
+</td>
+<td width="60%">
+The parallel port was allocated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>FALSE</b></dt>
-</dl>The parallel port was not allocated.
+</dl>
+</td>
+<td width="60%">
+The parallel port was not allocated.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -74,6 +100,7 @@ The <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback is nonblocking, does no
 A driver uses the <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback in conjunction with a driver-supplied ISR. If the driver does not have a parallel port allocated when the driver's ISR is called, the driver can use this callback.
 
 For more information about allocating a parallel port in an ISR, see <a href="https://msdn.microsoft.com/62d3a388-6de6-4019-ab95-56b5e96d0891">Connecting an Interrupt Service Routine to a ParallelPort</a>.
+<div class="alert"><b>Note</b>    The <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback is untested. Microsoft does not recommend using a client-supplied interrupt routine. The use of interrupts might cause system instability. By default, the <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request is disabled.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,29 +116,20 @@ For more information about allocating a parallel port in an ISR, see <a href="ht
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_parallel_disconnect_interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
-</dt>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_port_allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_parallel_port_free.md">IOCTL_INTERNAL_PARALLEL_PORT_FREE</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE (ISR)</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_parallel_port_free.md">IOCTL_INTERNAL_PARALLEL_PORT_FREE</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_parallel_disconnect_interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+
  
 
  

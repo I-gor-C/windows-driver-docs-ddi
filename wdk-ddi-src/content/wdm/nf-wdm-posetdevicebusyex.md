@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3f4d01fe-84cb-424e-9107-e29c4e25d85c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoSetDeviceBusyEx
+ms.keywords : wdm/PoSetDeviceBusyEx, kernel.posetdevicebusyex, PoSetDeviceBusyEx routine [Kernel-Mode Driver Architecture], portn_62143669-4381-4b4b-8d23-8b315d882c65.xml, PoSetDeviceBusyEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista with SP1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoSetDeviceBusyEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -51,7 +55,7 @@ VOID PoSetDeviceBusyEx(
 
 `IdlePointer`
 
-A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoSetDeviceBusyEx</b>.
+A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoSetDeviceBusyEx</b>.
 
 
 ## Return Value
@@ -66,7 +70,7 @@ A driver calls the <b>PoSetDeviceBusyEx</b> and <b>PoRegisterDeviceForIdleDetect
 
 <b>PoSetDeviceBusyEx</b> reports that the device is busy, so that the power manager can restart its idle countdown. If the device is in a sleep state, <b>PoSetDeviceBusyEx</b> does not change the state of the device. That is, it does not cause the system to send an <b>IRP_MN_SET_POWER</b> request to awaken the device.
 
-<b>PoSetDeviceBusyEx</b> is designed for use with I/O operations that are relatively brief compared to the time-out period of the idle counter. For longer operations that might exceed this period, use the <a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a> and <a href="..\ntifs\nf-ntifs-poenddevicebusy.md">PoEndDeviceBusy</a> routines instead.
+<b>PoSetDeviceBusyEx</b> is designed for use with I/O operations that are relatively brief compared to the time-out period of the idle counter. For longer operations that might exceed this period, use the <a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a> and <a href="..\wdm\nf-wdm-poenddevicebusy.md">PoEndDeviceBusy</a> routines instead.
 
 A driver that makes multiple requests for brief I/O operations should call <b>PoSetDeviceBusyEx</b> for every I/O request that it makes.
 
@@ -84,23 +88,16 @@ A driver that makes multiple requests for brief I/O operations should call <b>Po
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-poenddevicebusy.md">PoEndDeviceBusy</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-poenddevicebusy.md">PoEndDeviceBusy</a>
+
+<a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
+
+<a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755">PoSetDeviceBusy</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a>
-</dt>
-</dl>
+
  
 
  

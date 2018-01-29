@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 328dca02-9276-4a3d-acac-e00721863243
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_SDP_CONNECT, *PBTH_SDP_CONNECT, BTH_SDP_CONNECT
+ms.keywords : BTH_SDP_CONNECT, bth_structs_5502fd7e-54f1-46dd-a441-68103d439c27.xml, *PBTH_SDP_CONNECT, bthioctl/PBTH_SDP_CONNECT, bltooth.bth_sdp_connect, BTH_SDP_CONNECT structure [Bluetooth Devices], PBTH_SDP_CONNECT structure pointer [Bluetooth Devices], bthioctl/BTH_SDP_CONNECT, _BTH_SDP_CONNECT, PBTH_SDP_CONNECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_SDP_CONNECT
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTH_SDP_CONNECT, BTH_SDP_CONNECT"
 ---
 
@@ -52,18 +56,17 @@ typedef struct _BTH_SDP_CONNECT {
 
 ## Members
 
-        
-            `bthAddress`
 
-            The address of the remote SDP server that the local system connects to. This address cannot be to
+`bthAddress`
+
+The address of the remote SDP server that the local system connects to. This address cannot be to
      the local radio.
-        
-            `fSdpConnect`
 
-            A flag or combination of flags that determines how to handle the connection request. Valid flag
+`fSdpConnect`
+
+A flag or combination of flags that determines how to handle the connection request. Valid flag
      values are listed in the following table.
      
-
 <table>
 <tr>
 <th>Flag</th>
@@ -90,10 +93,14 @@ Requests are serviced out of the local cache of the SDP record.
 </td>
 </tr>
 </table>
-        
-            `requestTimeout`
 
-            The timeout, in seconds, for requests to the SDP connection handle that is returned in the 
+`HANDLE_SDP_FIELD_NAME`
+
+
+
+`requestTimeout`
+
+The timeout, in seconds, for requests to the SDP connection handle that is returned in the 
      <b>hConnection</b> member. If the request times out, the SDP connection returned in 
      <b>hConnection</b> must be closed. The values for this field are bound by SDP_REQUEST_TO_MIN and
      SDP_REQUEST_TO_MAX. If SDP_REQUEST_TO_DEFAULT is specified, the timeout is 30 seconds.
@@ -107,13 +114,10 @@ Requests are serviced out of the local cache of the SDP record.
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
-</dt>
-</dl>
+
  
 
  

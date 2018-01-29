@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3ee3657d-acdd-4d3f-9cff-eb4a494429b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SUB_Q_HEADER, SUB_Q_HEADER, *PSUB_Q_HEADER
+ms.keywords : ntddcdrm/PSUB_Q_HEADER, _SUB_Q_HEADER, *PSUB_Q_HEADER, SUB_Q_HEADER structure [Storage Devices], PSUB_Q_HEADER structure pointer [Storage Devices], ntddcdrm/SUB_Q_HEADER, SUB_Q_HEADER, structs-CD-ROM_c72df573-2396-4bf3-b586-7241d408c550.xml, storage.sub_q_header, PSUB_Q_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SUB_Q_HEADER
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SUB_Q_HEADER, *PSUB_Q_HEADER
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSUB_Q_HEADER, SUB_Q_HEADER"
 ---
 
 # _SUB_Q_HEADER structure
@@ -48,18 +52,18 @@ typedef struct _SUB_Q_HEADER {
 
 ## Members
 
-        
-            `AudioStatus`
 
-            Reports the audio status with one of the following flags:
-        
-            `DataLength`
+`AudioStatus`
 
-            Gives the length of Q subchannel data that follows this header structure. The bytes in this array are arranged in big-endian order. <b>DataLength</b>[0] contains the most significant byte, and <b>DataLength</b>[1] contains the least significant byte.
-        
-            `Reserved`
+Reports the audio status with one of the following flags:
 
-            Reserved.
+`DataLength`
+
+Gives the length of Q subchannel data that follows this header structure. The bytes in this array are arranged in big-endian order. <b>DataLength</b>[0] contains the most significant byte, and <b>DataLength</b>[1] contains the least significant byte.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct _SUB_Q_HEADER {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_sub_q_data_format.md">CDROM_SUB_Q_DATA_FORMAT</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_channel_data.md">SUB_Q_CHANNEL_DATA</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
+
  
 
  

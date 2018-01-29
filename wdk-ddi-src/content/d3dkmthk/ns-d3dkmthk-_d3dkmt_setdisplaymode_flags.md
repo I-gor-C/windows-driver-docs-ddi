@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 245586cb-d277-4cef-aeb9-b576a4ae6d43
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SETDISPLAYMODE_FLAGS, D3DKMT_SETDISPLAYMODE_FLAGS
+ms.keywords : display.d3dkmt_setdisplaymode_flags, _D3DKMT_SETDISPLAYMODE_FLAGS, D3DKMT_SETDISPLAYMODE_FLAGS structure [Display Devices], OpenGL_Structs_28412793-06ae-4e0d-9461-8e7cbcea8779.xml, D3DKMT_SETDISPLAYMODE_FLAGS, d3dkmthk/D3DKMT_SETDISPLAYMODE_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_SETDISPLAYMODE_FLAGS is supported beginning w
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SETDISPLAYMODE_FLAGS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SETDISPLAYMODE_FLAGS
 ---
 
@@ -47,17 +51,17 @@ typedef struct _D3DKMT_SETDISPLAYMODE_FLAGS {
 
 ## Members
 
-        
-            `PreserveVidPn`
 
-            [in] A Boolean value that specifies whether the video present network (VidPN) for a monitor is preserved.
-        
-            `Reserved`
+`PreserveVidPn`
 
-            [in] This member is reserved and should be set to zero.
+[in] A Boolean value that specifies whether the video present network (VidPN) for a monitor is preserved.
 
-    ## Remarks
-        To set attributes of the display mode, you specify bitfields of the D3DKMT_SETDISPLAYMODE_FLAGS structure in the <b>Flags</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode.md">D3DKMT_SETDISPLAYMODE</a> structure.
+`Reserved`
+
+[in] This member is reserved and should be set to zero.
+
+## Remarks
+To set attributes of the display mode, you specify bitfields of the D3DKMT_SETDISPLAYMODE_FLAGS structure in the <b>Flags</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode.md">D3DKMT_SETDISPLAYMODE</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _D3DKMT_SETDISPLAYMODE_FLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode.md">D3DKMT_SETDISPLAYMODE</a>
-</dt>
-</dl>
+
  
 
  

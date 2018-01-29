@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 98fc6201-d9b4-4c85-b624-011f360df068
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.freedmabufferwithnotification, FreeDmaBufferWithNotification callback function [Audio Devices], FreeDmaBufferWithNotification, PFREE_DMA_BUFFER_WITH_NOTIFICATION, PFREE_DMA_BUFFER_WITH_NOTIFICATION, hdaudio/FreeDmaBufferWithNotification, aud-prop2_065b7aad-f695-4076-9450-3311083ac17b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FreeDmaBufferWithNotification
-req.alt-loc : Hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -76,15 +80,45 @@ NTSTATUS PfreeDmaBufferWithNotification(
 ## Return Value
 
 <code>FreeDmaBufferWithNotification</code> returns STATUS_SUCCESS if the call succeeds. Otherwise, <code>FreeDmaBufferWithNotification</code> returns an appropriate error code. The following table shows some of the possible return error codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>Indicates that the caller is running at an IRQL that is too high.
+</dl>
+</td>
+<td width="60%">
+Indicates that the caller is running at an IRQL that is too high.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>Indicates that the <i>handle</i> parameter value is invalid.
+</dl>
+</td>
+<td width="60%">
+Indicates that the <i>handle</i> parameter value is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>Indicates that the stream is not in the reset state or that no buffer is currently allocated for the DMA engine.
+</dl>
+</td>
+<td width="60%">
+Indicates that the stream is not in the reset state or that no buffer is currently allocated for the DMA engine.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -106,20 +140,14 @@ Callers of FreeDmaBufferWithNotification must be running at IRQL PASSIVE_LEVEL.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
-</dt>
-<dt>
 <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer_with_notification.md">AllocateDmaBufferWithNotification</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
-</dt>
-<dt>
+
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
-</dt>
-</dl>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
+
  
 
  

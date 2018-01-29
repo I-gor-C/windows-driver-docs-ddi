@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5bf5eb72-aa51-4ab3-ab68-13e6303f12a9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_FLIPQUEUEINFO, D3DKMT_FLIPQUEUEINFO
+ms.keywords : D3DKMT_FLIPQUEUEINFO, display.d3dkmt_flipqueueinfo, D3DKMT_FLIPQUEUEINFO structure [Display Devices], d3dkmthk/D3DKMT_FLIPQUEUEINFO, _D3DKMT_FLIPQUEUEINFO, OpenGL_Structs_db4a7b98-df53-4e1e-a990-0a2f45d71525.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_FLIPQUEUEINFO
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_FLIPQUEUEINFO
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_FLIPQUEUEINFO {
 
 ## Members
 
-        
-            `FlipFlags`
 
-            [out] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipinfoflags.md">D3DKMT_FLIPINFOFLAGS</a> structure that indicates, in bit-field flags, flipping capabilities.
-        
-            `MaxHardwareFlipQueueLength`
+`FlipFlags`
 
-            [out] The maximum number of flip operations that can be queued for hardware-flip queuing.
-        
-            `MaxSoftwareFlipQueueLength`
+[out] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipinfoflags.md">D3DKMT_FLIPINFOFLAGS</a> structure that indicates, in bit-field flags, flipping capabilities.
 
-            [out] The maximum number of flip operations that can be queued for software-flip queuing  on hardware that supports memory mapped I/O (MMIO)-based flips.
+`MaxHardwareFlipQueueLength`
+
+[out] The maximum number of flip operations that can be queued for hardware-flip queuing.
+
+`MaxSoftwareFlipQueueLength`
+
+[out] The maximum number of flip operations that can be queued for software-flip queuing  on hardware that supports memory mapped I/O (MMIO)-based flips.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct _D3DKMT_FLIPQUEUEINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipinfoflags.md">D3DKMT_FLIPINFOFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipinfoflags.md">D3DKMT_FLIPINFOFLAGS</a>
+
  
 
  

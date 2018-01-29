@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A7C7FBE5-9046-48C7-AEE6-85C17CDE83AD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : AppendTailList
+ms.keywords : kernel.appendtaillist, wdm/AppendTailList, AppendTailList routine [Kernel-Mode Driver Architecture], AppendTailList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AppendTailList
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -77,10 +81,6 @@ For information about using this routine when implementing a doubly linked list,
 
 Callers of <b>AppendTailList</b> can be running at any IRQL. If <b>AppendTailList</b> is called at IRQL &gt;= DISPATCH_LEVEL, the storage for the list entries must be memory-resident.
 
-The following code example shows how to write a function named <code>MyAppendTailList</code> that is similar to <b>AppendTailList</b>, but that treats the <i>ListToAppend</i> parameter as a pointer to a list head instead of as a pointer to the first entry in a (headless) list. Unlike <b>AppendTailList</b>, the <code>MyAppendTailList</code> function avoids including the <b>LIST_ENTRY</b> structure pointed to by the <i>ListToAppend</i> parameter in the entries that are appended to the list pointed to by the <i>ListHead</i> parameter.
-
-The <code>MyAppendTailList</code> function in this code example treats both the <i>ListHead</i> and <i>ListToAppend</i> parameters as pointers to list heads. When this function returns, the list pointed to by <i>ListToAppend</i> is empty; that is, it consists of a list head that has no associated list entries. All of the entries that were initially in this list have been appended to the list pointed to by <i>ListHead</i>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -95,20 +95,14 @@ The <code>MyAppendTailList</code> function in this code example treats both the 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
+
 <a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
-</dt>
-</dl>
+
  
 
  

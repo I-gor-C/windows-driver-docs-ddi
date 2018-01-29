@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 39647e7d-d89f-43f4-916a-cbfa5ba28611
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_DEVICE_FUNCS_VIDEO_0030, D3D12DDI_DEVICE_FUNCS_VIDEO_0030
+ms.keywords : D3D12DDI_DEVICE_FUNCS_VIDEO_0030, d3d12umddi/D3D12DDI_DEVICE_FUNCS_VIDEO_0030, display.d3d12ddi-device-funcs-video-0030, D3D12DDI_DEVICE_FUNCS_VIDEO_0030 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_DEVICE_FUNCS_VIDEO_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_DEVICE_FUNCS_VIDEO_0030
 ---
 
@@ -57,54 +61,54 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0030 {
 
 ## Members
 
-        
-            `pfnCalcPrivateVideoDecoderSize`
 
-            Calculate private video decoder size.
-        
-            `pfnCalcPrivateVideoProcessorSize`
+`pfnCalcPrivateVideoDecoderSize`
 
-            Calculate private video processor size.
-        
-            `pfnCreateVideoDecoder`
+Calculate private video decoder size.
 
-            Create video decoder.
-        
-            `pfnCreateVideoProcessor`
+`pfnCalcPrivateVideoProcessorSize`
 
-            Create video processor.
-        
-            `pfnDecoderTrimAllocations`
+Calculate private video processor size.
 
-            Decoder trim allocations.
-        
-            `pfnDestroyVideoDecoder`
+`pfnCreateVideoDecoder`
 
-            Destroy video decoder.
-        
-            `pfnDestroyVideoProcessor`
+Create video decoder.
 
-            Destroy video processor.
-        
-            `pfnGetBitstreamEncryptionSchemeCount`
+`pfnCreateVideoProcessor`
 
-            Get bitstream encryption scheme count.
-        
-            `pfnGetCaps`
+Create video processor.
 
-            Get caps.
-        
-            `pfnGetDecodeFormatCount`
+`pfnDecoderTrimAllocations`
 
-            Get decode format count.
-        
-            `pfnGetDecodeProfileCount`
+Decoder trim allocations.
 
-            Get decode profile count.
-        
-            `pfnProcessorTrimAllocations`
+`pfnDestroyVideoDecoder`
 
-            Processor trim allocations.
+Destroy video decoder.
+
+`pfnDestroyVideoProcessor`
+
+Destroy video processor.
+
+`pfnGetBitstreamEncryptionSchemeCount`
+
+Get bitstream encryption scheme count.
+
+`pfnGetCaps`
+
+Get caps.
+
+`pfnGetDecodeFormatCount`
+
+Get decode format count.
+
+`pfnGetDecodeProfileCount`
+
+Get decode profile count.
+
+`pfnProcessorTrimAllocations`
+
+Processor trim allocations.
 
 
 ## Requirements

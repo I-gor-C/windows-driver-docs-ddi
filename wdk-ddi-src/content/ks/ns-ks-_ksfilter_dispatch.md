@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3b84c06f-774e-45e1-9a64-711749bb3a88
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSFILTER_DISPATCH, *PKSFILTER_DISPATCH, KSFILTER_DISPATCH
+ms.keywords : stream.ksfilter_dispatch, KSFILTER_DISPATCH, PKSFILTER_DISPATCH structure pointer [Streaming Media Devices], PKSFILTER_DISPATCH, _KSFILTER_DISPATCH, *PKSFILTER_DISPATCH, KSFILTER_DISPATCH structure [Streaming Media Devices], avstruct_cfadb813-12c3-4960-89d7-72a75db1684a.xml, ks/KSFILTER_DISPATCH, ks/PKSFILTER_DISPATCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSFILTER_DISPATCH
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSFILTER_DISPATCH, KSFILTER_DISPATCH"
 ---
 
@@ -50,8 +54,8 @@ typedef struct _KSFILTER_DISPATCH {
 ## Members
 
 
-    ## Remarks
-        Any of the callback pointers may be <b>NULL</b>, indicating that the driver does not wish to receive notification of a given event.
+## Remarks
+Any of the callback pointers may be <b>NULL</b>, indicating that the driver does not wish to receive notification of a given event.
 
 Also see <a href="https://msdn.microsoft.com/f60d4dbd-61e6-4ae2-aa43-9edc8f36c3ff">Restarting Processing in AVStream</a> and 
 
@@ -66,19 +70,14 @@ Also see <a href="https://msdn.microsoft.com/f60d4dbd-61e6-4ae2-aa43-9edc8f36c3f
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d7729edf-e92d-4707-83e2-fece90daeacf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListRequestChildEject
+ms.keywords : WdfChildListRequestChildEject method, wdf.wdfchildlistrequestchildeject, kmdf.wdfchildlistrequestchildeject, DFDeviceObjectChildListRef_52991ad9-29ef-4ab8-b746-168fcc0b8e99.xml, wdfchildlist/WdfChildListRequestChildEject, PFN_WDFCHILDLISTREQUESTCHILDEJECT, WdfChildListRequestChildEject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfChildListRequestChildEject
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_RETRIEVE_CHILD_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -81,8 +85,6 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 
 For more information about ejectable devices, see <a href="https://msdn.microsoft.com/7820bb71-7218-4c5f-af2b-f41e1b5f696d">Supporting Ejectable Devices</a>.
 
-For a code example that uses <b>WdfChildListRequestChildEject</b>, see <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,14 +99,10 @@ For a code example that uses <b>WdfChildListRequestChildEject</b>, see <a href="
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
-</dt>
-<dt>
+
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdorequesteject.md">WdfPdoRequestEject</a>
-</dt>
-</dl>
+
  
 
  

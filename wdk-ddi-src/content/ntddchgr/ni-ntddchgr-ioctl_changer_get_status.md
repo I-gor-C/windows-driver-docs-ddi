@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 88f1a248-0beb-4c7c-b68d-6ce145bf5ca7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ELEMENT_TYPE, *PELEMENT_TYPE, ELEMENT_TYPE
+ms.keywords : storage.ioctl_changer_get_status, IOCTL_CHANGER_GET_STATUS control code [Storage Devices], IOCTL_CHANGER_GET_STATUS, ntddchgr/IOCTL_CHANGER_GET_STATUS, k307_81e37b47-2d26-466d-9ddc-cc681398d607.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CHANGER_GET_STATUS
-req.alt-loc : Ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ELEMENT_TYPE, *PELEMENT_TYPE
 ---
 
 # IOCTL_CHANGER_GET_STATUS IOCTL
@@ -59,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.
 
 

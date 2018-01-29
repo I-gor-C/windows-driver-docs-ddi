@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f1d7ab17-516a-4f6e-b343-3f67a6e07ae4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_usb_get_root_hub_name, IOCTL_USB_GET_ROOT_HUB_NAME control code [Buses], IOCTL_USB_GET_ROOT_HUB_NAME, usbioctl/IOCTL_USB_GET_ROOT_HUB_NAME, usbirp_cf8d4d13-20cc-4134-8050-e3cd376a632e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_USB_GET_ROOT_HUB_NAME
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,17 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_ROOT_HUB_NAME IOCTL
-The <b>IOCTL_USB_GET_ROOT_HUB_NAME</b> I/O control request is used with the <a href="..\usbioctl\ns-usbioctl-_usb_root_hub_name.md">USB_ROOT_HUB_NAME</a> structure to retrieve the symbolic link name of the root hub.
-
-<b>IOCTL_USB_GET_ROOT_HUB_NAME</b> is a user-mode I/O control request. This request targets the USB host controller (GUID_DEVINTERFACE_USB_HOST_CONTROLLER).
-
-
-
 The <b>IOCTL_USB_GET_ROOT_HUB_NAME</b> I/O control request is used with the <a href="..\usbioctl\ns-usbioctl-_usb_root_hub_name.md">USB_ROOT_HUB_NAME</a> structure to retrieve the symbolic link name of the root hub.
 
 <b>IOCTL_USB_GET_ROOT_HUB_NAME</b> is a user-mode I/O control request. This request targets the USB host controller (GUID_DEVINTERFACE_USB_HOST_CONTROLLER).
@@ -68,7 +66,6 @@ The size of a <a href="..\usbioctl\ns-usbioctl-_usb_root_hub_name.md">USB_ROOT_H
 <text></text>
 
 ### Status Block
-I/O Status block
 The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
 
 If the root hub is removed or stopped, the request returns STATUS_SUCCESS but the string is NULL.
@@ -81,13 +78,10 @@ If the root hub is removed or stopped, the request returns STATUS_SUCCESS but th
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_root_hub_name.md">USB_ROOT_HUB_NAME</a>
-</dt>
-</dl>
+
  
 
  

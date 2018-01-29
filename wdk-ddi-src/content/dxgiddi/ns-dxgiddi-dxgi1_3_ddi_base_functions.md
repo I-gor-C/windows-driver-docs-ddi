@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F857BA54-A572-4376-83F3-573F90033261
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI1_3_DDI_BASE_FUNCTIONS, DXGI1_3_DDI_BASE_FUNCTIONS
+ms.keywords : DXGI1_3_DDI_BASE_FUNCTIONS, DXGI1_3_DDI_BASE_FUNCTIONS structure [Display Devices], display.dxgi1_3_ddi_base_functions, dxgiddi/DXGI1_3_DDI_BASE_FUNCTIONS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI1_3_DDI_BASE_FUNCTIONS
-req.alt-loc : Dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI1_3_DDI_BASE_FUNCTIONS
 ---
 
@@ -63,73 +67,81 @@ typedef struct DXGI1_3_DDI_BASE_FUNCTIONS {
 
 ## Members
 
-        
-            `pfnBlt`
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a> function.
-        
-            `pfnBlt1`
+`pfnBlt`
 
-            A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406235">Blt1DXGI</a> function.
-        
-            `pfnCheckPresentDurationSupport`
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a> function.
 
-            A pointer to the driver's <a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_arg_checkpresentdurationsupport.md">pfnCheckPresentDurationSupport(DXGI)</a> function.
-        
-            `pfnGetGammaCaps`
+`pfnBlt1`
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a> function.
-        
-            `pfnGetMultiplaneOverlayGroupCaps`
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406235">Blt1DXGI</a> function.
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn265494">pfnGetMultiplaneOverlayGroupCaps</a> function.
-        
-            `pfnOfferResources`
+`pfnCheckPresentDurationSupport`
 
-            A pointer to the driver's <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">pfnOfferResources</a> function.
-        
-            `pfnPresent`
+A pointer to the driver's <a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_arg_checkpresentdurationsupport.md">pfnCheckPresentDurationSupport(DXGI)</a> function.
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function.
-        
-            `pfnPresent1`
+`pfnGetGammaCaps`
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn469267">pfnPresent1(DXGI)</a> function.
-        
-            `pfnQueryResourceResidency`
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a> function.
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a> function.
-        
-            `pfnReclaimResources`
+`pfnGetMultiplaneOverlayCaps`
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/AF3DCD16-9F8C-442A-A9A5-9EA2BD1C3B84">pfnReclaimResources</a> function.
-        
-            `pfnReserved1`
 
-            Reserved for system use.
-        
-            `pfnReserved2`
 
-            Reserved for system use.
-        
-            `pfnResolveSharedResource`
+`pfnGetMultiplaneOverlayGroupCaps`
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a> function.
-        
-            `pfnRotateResourceIdentities`
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn265494">pfnGetMultiplaneOverlayGroupCaps</a> function.
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function.
-        
-            `pfnSetDisplayMode`
+`pfnOfferResources`
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
-        
-            `pfnSetResourcePriority`
+A pointer to the driver's <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">pfnOfferResources</a> function.
 
-            A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569657">SetResourcePriorityDXGI</a> function.
+`pfnPresent`
 
-    ## Remarks
-        For more info on how to use this structure, see <a href="https://msdn.microsoft.com/3a49d7cb-984f-4e4f-a549-5c0442e1c45a">Supporting the DXGI DDI</a>.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function.
+
+`pfnPresent1`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn469267">pfnPresent1(DXGI)</a> function.
+
+`pfnPresentMultiplaneOverlay`
+
+
+
+`pfnQueryResourceResidency`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a> function.
+
+`pfnReclaimResources`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/AF3DCD16-9F8C-442A-A9A5-9EA2BD1C3B84">pfnReclaimResources</a> function.
+
+`pfnReserved1`
+
+Reserved for system use.
+
+`pfnReserved2`
+
+Reserved for system use.
+
+`pfnResolveSharedResource`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a> function.
+
+`pfnRotateResourceIdentities`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function.
+
+`pfnSetDisplayMode`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
+
+`pfnSetResourcePriority`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569657">SetResourcePriorityDXGI</a> function.
+
+## Remarks
+For more info on how to use this structure, see <a href="https://msdn.microsoft.com/3a49d7cb-984f-4e4f-a549-5c0442e1c45a">Supporting the DXGI DDI</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -139,25 +151,18 @@ typedef struct DXGI1_3_DDI_BASE_FUNCTIONS {
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_args.md">DXGI_DDI_BASE_ARGS</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_functions.md">DXGI_DDI_BASE_FUNCTIONS</a>
-</dt>
-<dt>
 <a href="..\dxgiddi\ns-dxgiddi-dxgi1_2_ddi_base_functions.md">DXGI1_2_DDI_BASE_FUNCTIONS</a>
-</dt>
-</dl>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_args.md">DXGI_DDI_BASE_ARGS</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_functions.md">DXGI_DDI_BASE_FUNCTIONS</a>
+
  
 
  

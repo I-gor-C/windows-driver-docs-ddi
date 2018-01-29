@@ -7,8 +7,8 @@ old-location : netvista\rilcallbarringstatusparamstype.htm
 old-project : netvista
 ms.assetid : 95c15362-227c-4912-9eec-a18fee92f340
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLBARRINGSTATUSPARAMSTYPE, RILCALLBARRINGSTATUSPARAMSTYPE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_BARRTYPE_ALLINCOMINGBARRING, ntddrilapitypes/RILCALLBARRINGSTATUSPARAMSTYPE, RIL_BARRTYPE_ALLOUTGOINGBARRING, RILCALLBARRINGSTATUSPARAMSTYPE, RIL_BARRTYPE_ALLINCOMINGBARRING, RIL_BARRTYPE_OUTGOINGINT, RIL_BARRTYPE_OUTGOINGINTEXTOHOME, RIL_BARRTYPE_ALL, RILCALLBARRINGSTATUSPARAMSTYPE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_BARRTYPE_OUTGOINGINTEXTOHOME, ntddrilapitypes/RIL_BARRTYPE_ALLINCOMING, ntddrilapitypes/RIL_BARRTYPE_ALLBARRING, RIL_BARRTYPE_INCOMINGNOTINUICC, ntddrilapitypes/RIL_BARRTYPE_ALL, ntddrilapitypes/RIL_BARRTYPE_INCOMINGROAMING, RIL_BARRTYPE_ALLINCOMING, ntddrilapitypes/RIL_BARRTYPE_ALLOUTGOINGBARRING, netvista.rilcallbarringstatusparamstype, RIL_BARRTYPE_INCOMINGROAMING, ntddrilapitypes/RIL_BARRTYPE_INCOMINGNOTINUICC, ntddrilapitypes/RIL_BARRTYPE_OUTGOINGINT, RIL_BARRTYPE_ALLBARRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLBARRINGSTATUSPARAMSTYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLBARRINGSTATUSPARAMSTYPE
 ---
 
@@ -73,6 +77,11 @@ typedef enum _RILCALLBARRINGSTATUSPARAMSTYPE {
 
 <tr>
 <td>RIL_BARRTYPE_ALLINCOMINGBARRING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_BARRTYPE_ALLOUTGOING</td>
 <td></td>
 </tr>
 

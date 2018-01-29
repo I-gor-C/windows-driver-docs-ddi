@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07B51679-4E9B-4360-AA4A-D5BD9BADB4FC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_DISPLAY_USAGE, *PDXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE
+ms.keywords : d3dkmdt/DXGK_DU_VR, DXGK_DISPLAY_USAGE, PDXGK_DISPLAY_USAGE enumeration pointer [Display Devices], DXGK_DU_INVALID, *PDXGK_DISPLAY_USAGE, DXGK_DU_AR, DXGK_DU_GENERIC, DXGK_DU_VR, d3dkmdt/DXGK_DU_AR, _DXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE enumeration [Display Devices], d3dkmdt/DXGK_DU_INVALID, d3dkmdt/DXGK_DU_GENERIC, d3dkmdt/DXGK_DISPLAY_USAGE, display.dxgk_display_usage, d3dkmdt/PDXGK_DISPLAY_USAGE, PDXGK_DISPLAY_USAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_DISPLAY_USAGE
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PDXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DXGK_DISPLAY_USAGE, *PDXGK_DISPLAY_USAGE
 ---
 
 # _DXGK_DISPLAY_USAGE Enumeration
@@ -52,6 +56,11 @@ typedef enum _DXGK_DISPLAY_USAGE {
 <table>
 
 <tr>
+<td>BYTE</td>
+<td></td>
+</tr>
+
+<tr>
 <td>DXGK_DU_AR</td>
 <td>A head mounted augmented reality display.</td>
 </tr>
@@ -64,6 +73,11 @@ typedef enum _DXGK_DISPLAY_USAGE {
 <tr>
 <td>DXGK_DU_INVALID</td>
 <td>Invalid type.</td>
+</tr>
+
+<tr>
+<td>DXGK_DU_MAX</td>
+<td></td>
 </tr>
 
 <tr>

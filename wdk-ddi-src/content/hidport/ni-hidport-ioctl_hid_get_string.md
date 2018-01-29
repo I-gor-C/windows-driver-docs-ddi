@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 0812f27f-f38c-487d-9e92-98e16ddde21c
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidRegisterMinidriver
+ms.keywords : hid.ioctl_hid_get_string, IOCTL_HID_GET_STRING control code [Human Input Devices], IOCTL_HID_GET_STRING, hidport/IOCTL_HID_GET_STRING, hidioreq_987af494-0ac9-4b86-ab66-63dad179cec5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_GET_STRING
-req.alt-loc : hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_HID_GET_STRING IOCTL
@@ -48,14 +52,20 @@ IOCTL_HID_GET_STRING makes use of two input buffers.
 <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the locked-down output buffer at <b>Irp-&gt;UserBuffer</b>. If the output buffer is not large enough to hold the entire NULL-terminated embedded string, the request returns nothing in the output buffer. The maximum possible number of characters in an embedded string is device specific. For USB devices, the maximum string length is 126 wide characters (not including the terminating NULL character). 
 
 <b>Parameters.DeviceIoControl.Type3InputBuffer</b> in the I/O stack location of the IRP contains a composite value. The two most significant bytes contain the language ID of the string to be retrieved. The two least significant bytes contain one of the following three constant values: 
-
+<ul>
+<li>
 HID_STRING_ID_IMANUFACTURER
 
+</li>
+<li>
 HID_STRING_ID_IPRODUCT
 
+</li>
+<li>
 HID_STRING_ID_ISERIALNUMBER
 
-The HID minidriver determines which of these three constants is present in the lower two bytes of the input buffer, then it must retrieve the corresponding string index from the device descriptor. Device descriptor information is stored in the device extension of a top-level collection associated with the device.
+</li>
+</ul>The HID minidriver determines which of these three constants is present in the lower two bytes of the input buffer, then it must retrieve the corresponding string index from the device descriptor. Device descriptor information is stored in the device extension of a top-level collection associated with the device.
 
 It is important not to confuse these three constants with the actual string indices of the IDs. These constants represent the offsets in the device descriptor where the corresponding string indices can be found.
 
@@ -77,14 +87,17 @@ The size of the <b>UserBuffer</b>.
 <text></text>
 
 ### Status Block
-I/O Status block
 HID minidrivers that carry out the I/O to the device set the following fields of <b>Irp-&gt;IoStatus</b>:
-
+<ul>
+<li>
 <b>Information</b> is set to the number of bytes transferred from the device.
 
+</li>
+<li>
 <b>Status</b> is set to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
 
-HID minidrivers that call other drivers with this IOCTL to carry out the I/O to their device, should ensure that the <b>Information</b> field of the status block is correct and not change the contents of the <b>Status</b> field.
+</li>
+</ul>HID minidrivers that call other drivers with this IOCTL to carry out the I/O to their device, should ensure that the <b>Information</b> field of the status block is correct and not change the contents of the <b>Status</b> field.
 
 
 ## Requirements
@@ -94,34 +107,24 @@ HID minidrivers that call other drivers with this IOCTL to carry out the I/O to 
 | **Header** | hidport.h (include Hidport.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hidsdi\nf-hidsdi-hidd_getindexedstring.md">HidD_GetIndexedString</a>
-</dt>
-<dt>
-<a href="..\hidsdi\nf-hidsdi-hidd_getmanufacturerstring.md">HidD_GetManufacturerString</a>
-</dt>
-<dt>
-<a href="..\hidsdi\nf-hidsdi-hidd_getproductstring.md">HidD_GetProductString</a>
-</dt>
-<dt>
 <a href="..\hidsdi\nf-hidsdi-hidd_getserialnumberstring.md">HidD_GetSerialNumberString</a>
-</dt>
-<dt>
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_indexed_string.md">IOCTL_HID_GET_INDEXED_STRING</a>
-</dt>
-<dt>
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_manufacturer_string.md">IOCTL_HID_GET_MANUFACTURER_STRING</a>
-</dt>
-<dt>
+
+<a href="..\hidsdi\nf-hidsdi-hidd_getindexedstring.md">HidD_GetIndexedString</a>
+
+<a href="..\hidsdi\nf-hidsdi-hidd_getmanufacturerstring.md">HidD_GetManufacturerString</a>
+
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_product_string.md">IOCTL_HID_GET_PRODUCT_STRING</a>
-</dt>
-<dt>
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_indexed_string.md">IOCTL_HID_GET_INDEXED_STRING</a>
+
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_serialnumber_string.md">IOCTL_HID_GET_SERIALNUMBER_STRING</a>
-</dt>
-</dl>
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_manufacturer_string.md">IOCTL_HID_GET_MANUFACTURER_STRING</a>
+
+<a href="..\hidsdi\nf-hidsdi-hidd_getproductstring.md">HidD_GetProductString</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d38ede60-9bcf-4c90-8c41-8f1edf1a1d23
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTarget, IWDFIoTarget::GetTargetFile, GetTargetFile
+ms.keywords : IWDFIoTarget interface, GetTargetFile method, GetTargetFile method, GetTargetFile method, IWDFIoTarget interface, wdf.iwdfiotarget_gettargetfile, UMDFIoTargetObjectRef_c31a719b-616e-4559-851a-a9f5c35bc9e5.xml, umdf.iwdfiotarget_gettargetfile, IWDFIoTarget, GetTargetFile, IWDFIoTarget::GetTargetFile, wudfddi/IWDFIoTarget::GetTargetFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoTarget.GetTargetFile
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ The default I/O target has no file object, so a call to <b>GetTargetFile</b> for
 
 For more information about I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-i-o-targets-in-umdf">Using I/O Targets in UMDF</a>.
 
-For a code example of how to use the <b>GetTargetFile</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -86,14 +88,10 @@ For a code example of how to use the <b>GetTargetFile</b> method, see <a href="h
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-</dl>
+
  
 
  

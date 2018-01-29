@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4470EBAB-6B1F-43D3-B036-F0DD07BC8321
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBFN_ATTACH_ACTION, USBFN_ATTACH_ACTION, *PUSBFN_ATTACH_ACTION
+ms.keywords : usbfnattach/UsbfnProceedWithAttach, UsbfnPortDetected, buses.usbfn_attach_action, UsbfnPortDetectedNoCad, usbfnattach/UsbfnDetectProprietaryCharger, *PUSBFN_ATTACH_ACTION, usbfnattach/USBFN_ATTACH_ACTION, usbfnattach/UsbfnPortDetected, usbfnattach/UsbfnIgnoreAttach, USBFN_ATTACH_ACTION enumeration [Buses], usbfnattach/UsbfnPortDetectedNoCad, UsbfnProceedWithAttach, UsbfnDetectProprietaryCharger, UsbfnIgnoreAttach, _USBFN_ATTACH_ACTION, USBFN_ATTACH_ACTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBFN_ATTACH_ACTION
-req.alt-loc : usbfnattach.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBFN_ATTACH_ACTION, *PUSBFN_ATTACH_ACTION
 req.product : Windows 10 or later.
 ---
@@ -56,6 +60,11 @@ typedef enum _USBFN_ATTACH_ACTION {
 <tr>
 <td>UsbfnDetectProprietaryCharger</td>
 <td>The USB function stack calls the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_detect.md">UFX_PROPRIETARY_CHARGER_DETECT</a> event callback function implemented by the USB lower filter driver, to perform proprietary charger detection.</td>
+</tr>
+
+<tr>
+<td>UsbfnHwBasedChargerDetection</td>
+<td></td>
 </tr>
 
 <tr>
@@ -90,11 +99,8 @@ typedef enum _USBFN_ATTACH_ACTION {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md">USBFN_GET_ATTACH_ACTION</a>
-</dt>
-</dl>
+
  
 
  

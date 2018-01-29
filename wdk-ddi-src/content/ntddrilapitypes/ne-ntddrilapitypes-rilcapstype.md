@@ -7,8 +7,8 @@ old-location : netvista\rilcapstype.htm
 old-project : netvista
 ms.assetid : 78f372fc-75b2-47e8-ac3f-818b384c6d97
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCAPSTYPE, RILCAPSTYPE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_CAPSTYPE_NITZNOTIFICATION, netvista.rilcapstype, ntddrilapitypes/RIL_CAPSTYPE_ARG_SMALLEST, RIL_CAPSTYPE_ARG_SMALLEST, RILCAPSTYPE, RIL_CAPSTYPE_ARG_LARGEST, RIL_CAPSTYPE_SIGNALQUALITYIMPLEMENTATION, ntddrilapitypes/RIL_CAPSTYPE_ARG_LARGEST, ntddrilapitypes/RIL_CAPSTYPE_MAX, RIL_CAPSTYPE_CALLSUPPORT, ntddrilapitypes/RIL_CAPSTYPE_RADIOCONFIGURATIONS, RILCAPSTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CAPSTYPE_PBMAXREAD, RIL_CAPSTYPE_PBSTORELOCATIONS, ntddrilapitypes/RIL_CAPSTYPE_CALLSUPPORT, RIL_CAPSTYPE_RADIOCONFIGURATIONS, ntddrilapitypes/RIL_CAPSTYPE_PERSOLOCKPWDLENGTH, ntddrilapitypes/RILCAPSTYPE, RIL_CAPSTYPE_MAX, ntddrilapitypes/RIL_CAPSTYPE_SIGNALQUALITYIMPLEMENTATION, RIL_CAPSTYPE_NITZNOTIFICATION, RIL_CAPSTYPE_SMSSUPPORT, ntddrilapitypes/RIL_CAPSTYPE_PBSTORELOCATIONS, ntddrilapitypes/RIL_CAPSTYPE_PBMAXREAD, ntddrilapitypes/RIL_CAPSTYPE_SMSSUPPORT, RIL_CAPSTYPE_PERSOLOCKPWDLENGTH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCAPSTYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCAPSTYPE
 ---
 
@@ -95,6 +99,11 @@ typedef enum _RILCAPSTYPE {
 
 <tr>
 <td>RIL_CAPSTYPE_PERSOLOCKPWDLENGTH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPSTYPE_PERSOLOCKSUPPORT</td>
 <td></td>
 </tr>
 

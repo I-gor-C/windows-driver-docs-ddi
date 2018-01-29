@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 580af31d-4122-48fe-a9da-097787f87620
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.keywords : storage.ioctl_mountmgr_create_point, IOCTL_MOUNTMGR_CREATE_POINT control code [Storage Devices], IOCTL_MOUNTMGR_CREATE_POINT, mountmgr/IOCTL_MOUNTMGR_CREATE_POINT, k307_c1159db5-2699-4bac-9fe9-67ceda477ddb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTMGR_CREATE_POINT
-req.alt-loc : Mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_CREATE_POINT IOCTL
@@ -48,6 +52,59 @@ If IOCTL_MOUNTMGR_CREATE_POINT specifies a drive letter, the drive letter must b
 Note that a client can discover whether the mount manager has received the MOUNTDEV_MOUNTED_DEVICE_GUID device interface notification for its volume by querying the mount manager with <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.
 
 In this pseudocode sample, a mount manager client uses IOCTL_MOUNTMGR_CREATE_POINT to send the mount manager a device object name and its corresponding symbolic link:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    // The persistent symbolic link is a drive letter in
+    // this case:
+    wsprintf(dosBuffer, L"\\DosDevices\\%C:", DriveLetter);
+    RtlInitUnicodeString(&amp;dosName, dosBuffer);
+    // The nonpersistent volume (device) object name is
+    // formed using the volume number as a suffix
+    wsprintf(ntBuffer, L"\\Device\\HarddiskVolume%D", 
+                       Extension-&gt;VolumeNumber);
+    RtlInitUnicodeString(&amp;ntName, ntBuffer);
+    createPointSize = sizeof(MOUNTMGR_CREATE_POINT_INPUT) +
+                      dosName.Length + ntName.Length;
+    // Allocate a header with length and offset information
+    createPoint = (PMOUNTMGR_CREATE_POINT_INPUT)
+                  ExAllocatePool(PagedPool, 
+                  createPointSize);
+    createPoint-&gt;SymbolicLinkNameOffset = 
+                  sizeof(MOUNTMGR_CREATE_POINT_INPUT);
+    createPoint-&gt;SymbolicLinkNameLength = dosName.Length;
+    createPoint-&gt;DeviceNameOffset = 
+        createPoint -&gt; SymbolicLinkNameOffset +
+        createPoint -&gt; SymbolicLinkNameLength;
+    createPoint-&gt;DeviceNameLength = ntName.Length;
+    RtlCopyMemory((PCHAR) createPoint + 
+                  createPoint -&gt; SymbolicLinkNameOffset,
+                  dosName.Buffer, dosName.Length);
+    RtlCopyMemory((PCHAR) createPoint + 
+                  createPoint-&gt;DeviceNameOffset,
+                  ntName.Buffer, ntName.Length);
+    // Use the name of the mount manager device object
+    // defined in mountmgr.h (MOUNTMGR_DEVICE_NAME) to
+    // obtain a pointer to the mount manager.
+    RtlInitUnicodeString(&amp;name, MOUNTMGR_DEVICE_NAME);
+    status = IoGetDeviceObjectPointer(&amp;name,
+                              FILE_READ_ATTRIBUTES, 
+                              &amp;fileObject, &amp;deviceObject);
+    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+    irp = IoBuildDeviceIoControlRequest(
+            IOCTL_MOUNTMGR_CREATE_POINT,
+            deviceObject, createPoint, createPointSize, 
+            NULL, 0, FALSE, &amp;event, &amp;ioStatus);
+    // Send the irp to the mount manager requesting
+    // that a new mount point (persistent symbolic link)
+    // be created for the indicated volume.
+    status = IoCallDriver(deviceObject, irp);</pre>
+</td>
+</tr>
+</table></span></div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -71,7 +128,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS.
 
 If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_CREATE_POINT_INPUT), the <b>Status</b> field is set to STATUS_INVALID_PARAMETER.
@@ -84,13 +140,10 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_CREATE_POINT_INP
 | **Header** | mountmgr.h (include Mountmgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_create_point_input.md">MOUNTMGR_CREATE_POINT_INPUT</a>
-</dt>
-</dl>
+
  
 
  

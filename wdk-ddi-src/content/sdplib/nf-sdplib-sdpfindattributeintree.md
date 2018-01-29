@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 26c71c08-3b9a-474f-a232-d7f675582d27
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpFindAttributeInTree
+ms.keywords : SdpFindAttributeInTree, bltooth.sdpfindattributeintree, bth_funcs_8daefa96-6201-462a-9c91-485c5f9eaa98.xml, sdplib/SdpFindAttributeInTree, SdpFindAttributeInTree function [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpFindAttributeInTree
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -63,7 +67,7 @@ The identifier of the attribute node to locate.
 
 `Attribute`
 
-
+TBD
 
 
 ## Return Value
@@ -77,8 +81,8 @@ The
     perform a copy. This node pointer is valid until the SDP tree that it references is freed.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">
-    BTHDDI_SDP_PARSE_INTERFACE</a> structure.
+    <mshelp:link keywords="bltooth.bthddi_sdp_parse_interface" tabindex="0"><b>
+    BTHDDI_SDP_PARSE_INTERFACE</b></mshelp:link> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,11 +98,8 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

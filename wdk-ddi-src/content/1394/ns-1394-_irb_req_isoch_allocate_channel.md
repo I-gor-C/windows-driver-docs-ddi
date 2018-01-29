@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : CE38C189-34C7-40FC-81BE-9688AC9A7420
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IRB_REQ_ISOCH_ALLOCATE_CHANNEL, IRB_REQ_ISOCH_ALLOCATE_CHANNEL
+ms.keywords : IRB_REQ_ISOCH_ALLOCATE_CHANNEL structure [Buses], IEEE.irb_req_isoch_allocate_channel, IRB_REQ_ISOCH_ALLOCATE_CHANNEL, _IRB_REQ_ISOCH_ALLOCATE_CHANNEL, 1394/IRB_REQ_ISOCH_ALLOCATE_CHANNEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRB_REQ_ISOCH_ALLOCATE_CHANNEL
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IRB_REQ_ISOCH_ALLOCATE_CHANNEL
 ---
 
@@ -48,21 +52,19 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_CHANNEL {
 
 ## Members
 
-        
-            `Channel`
 
-            Specifies the channel allocated, if the request succeeds.
-        
-            `ChannelsAvailable`
+`Channel`
 
-            A bitmap specifying the available channels. The highest order bit (bit 63) specifies channel 0, the next bit (bit 62) specifies channel 1, and so on.
+Specifies the channel allocated, if the request succeeds.
 
-<div class="alert"><b>Note</b>  Drivers should not rely on this information  because another device may allocate or deallocate channels at any time. The bus driver fills in this member, even if the request fails.</div>
-<div> </div>
-        
-            `nRequestedChannel`
+`ChannelsAvailable`
 
-            Specifies the particular channel to allocate, or ISOCH_ANY_CHANNEL for an arbitrary channel.
+A bitmap specifying the available channels. The highest order bit (bit 63) specifies channel 0, the next bit (bit 62) specifies channel 1, and so on.
+<div class="alert"><b>Note</b>  Drivers should not rely on this information  because another device may allocate or deallocate channels at any time. The bus driver fills in this member, even if the request fails.</div><div> </div>
+
+`nRequestedChannel`
+
+Specifies the particular channel to allocate, or ISOCH_ANY_CHANNEL for an arbitrary channel.
 
 
 ## Requirements

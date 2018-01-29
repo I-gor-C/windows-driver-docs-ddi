@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 940c9234-6c4e-421d-a3e3-87ba2d786248
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlParent
+ms.keywords : ifsk.rtlparent, rtlref_85e6ffbf-9d34-47f5-b5c2-1d57a1a57056.xml, RtlParent routine [Installable File System Drivers], RtlParent, ntddk/RtlParent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlParent
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntddk.h
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -79,26 +83,18 @@ Callers of <b>RtlParent</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinsertasrightchild.md">RtlInsertAsRightChild</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlisroot.md">RtlIsRoot</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlleftchild.md">RtlLeftChild</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-rtlinsertasrightchild.md">RtlInsertAsRightChild</a>
+
+<a href="..\ntddk\nf-ntddk-rtlisroot.md">RtlIsRoot</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
+
 <a href="..\ntddk\nf-ntddk-rtlrightchild.md">RtlRightChild</a>
-</dt>
-</dl>
+
  
 
  

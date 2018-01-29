@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6684f350-da27-478d-ab7b-36e395f7df8d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnunlockcb, pfnUnlockCb callback function [Display Devices], pfnUnlockCb, PFND3DDDI_UNLOCKCB, PFND3DDDI_UNLOCKCB, d3dumddi/pfnUnlockCb, D3Druntime_Functions_8911e13b-cbfc-4620-bdb2-0dd6a558e88c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnUnlockCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,17 +68,45 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>pfnUnlockCb</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The allocation was successfully unlocked.
+</dl>
+</td>
+<td width="60%">
+The allocation was successfully unlocked.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><b>pfnUnlockCb</b> could not complete because of insufficient memory. (This error occurs when the system is in an extreme low memory situation and there is not sufficient space to allocate the array of pages.)
+</dl>
+</td>
+<td width="60%">
+<b>pfnUnlockCb</b> could not complete because of insufficient memory. (This error occurs when the system is in an extreme low memory situation and there is not sufficient space to allocate the array of pages.)
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other HRESULT values.
 
@@ -90,9 +122,7 @@ The user-mode display driver can unlock multiple allocations in one call to <b>p
 
 The user-mode display driver should call <b>pfnUnlockCb</b> to unlock all of the allocations that are referred to in the command stream before calling the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function. The driver could have allocations locked to support--for example, the <b>NoOverwrite</b> bit-field flag. If the driver does not unlock all of these allocations, the video memory manager might be required to place these allocations in AGP memory. 
 
-The user-mode display driver should not call <b>pfnUnlockCb</b> to unlock an allocation that an application could be using. The driver is notified that the application is no longer reading from or writing to the allocation when the driver receives a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function on the corresponding resource. 
-
-The following code example shows how to unlock an allocation.
+The user-mode display driver should not call <b>pfnUnlockCb</b> to unlock an allocation that an application could be using. The driver is notified that the application is no longer reading from or writing to the allocation when the driver receives a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function on the corresponding resource.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,32 +138,22 @@ The following code example shows how to unlock an allocation.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_unlock.md">D3DDDICB_UNLOCK</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroydevice.md">DestroyDevice</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydevice.md">DestroyDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroydevice.md">DestroyDevice</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydevice.md">DestroyDevice(D3D10)</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_unlock.md">D3DDDICB_UNLOCK</a>
+
  
 
  

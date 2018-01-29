@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5ddf67c1-5ee7-4948-b631-45aeb031a293
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030, D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030
+ms.keywords : D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030 structure [Display Devices], display.d3d12ddi-device-funcs-content-protection-streaming-0030, d3d12umddi/D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030, D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030
 ---
 
@@ -57,54 +61,54 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030 {
 
 ## Members
 
-        
-            `pfnCalcPrivateCryptoSessionPolicySize`
 
-            Calculate private crypto session policy size.
-        
-            `pfnCalcPrivateCryptoSessionSize`
+`pfnCalcPrivateCryptoSessionPolicySize`
 
-            Calculate private crypto session size.
-        
-            `pfnCalcPrivateOpenedCryptoSessionPolicySize`
+Calculate private crypto session policy size.
 
-            Calculate private opened crypto session policy size.
-        
-            `pfnCalcPrivateOpenedCryptoSessionSize`
+`pfnCalcPrivateCryptoSessionSize`
 
-            Calculate private opened crypto session size.
-        
-            `pfnCreateCryptoSession`
+Calculate private crypto session size.
 
-            Create crypto session.
-        
-            `pfnCreateCryptoSessionPolicy`
+`pfnCalcPrivateOpenedCryptoSessionPolicySize`
 
-            Create crypto session policy.
-        
-            `pfnDestroyCryptoSession`
+Calculate private opened crypto session policy size.
 
-            Destroy crypto session.
-        
-            `pfnDestroyCryptoSessionPolicy`
+`pfnCalcPrivateOpenedCryptoSessionSize`
 
-            Destroy crypto session policy.
-        
-            `pfnGetKeyBaseData`
+Calculate private opened crypto session size.
 
-            Get key base data.
-        
-            `pfnOpenCryptoSession`
+`pfnCreateCryptoSession`
 
-            Open crypto session.
-        
-            `pfnOpenCryptoSessionPolicy`
+Create crypto session.
 
-            Open crypto session policy.
-        
-            `pfnTransformEncryptedData`
+`pfnCreateCryptoSessionPolicy`
 
-            Transform encrypted data.
+Create crypto session policy.
+
+`pfnDestroyCryptoSession`
+
+Destroy crypto session.
+
+`pfnDestroyCryptoSessionPolicy`
+
+Destroy crypto session policy.
+
+`pfnGetKeyBaseData`
+
+Get key base data.
+
+`pfnOpenCryptoSession`
+
+Open crypto session.
+
+`pfnOpenCryptoSessionPolicy`
+
+Open crypto session policy.
+
+`pfnTransformEncryptedData`
+
+Transform encrypted data.
 
 
 ## Requirements

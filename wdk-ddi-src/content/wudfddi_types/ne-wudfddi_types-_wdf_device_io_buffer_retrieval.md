@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 50ece9a1-8d0d-442c-962c-488bd6368a67
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_IO_BUFFER_RETRIEVAL, *PWDF_DEVICE_IO_BUFFER_RETRIEVAL, WDF_DEVICE_IO_BUFFER_RETRIEVAL
+ms.keywords : PWDF_DEVICE_IO_BUFFER_RETRIEVAL, PWDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration pointer, *PWDF_DEVICE_IO_BUFFER_RETRIEVAL, WDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration, wudfddi_types/WdfDeviceIoBufferRetrievalDeferred, _WDF_DEVICE_IO_BUFFER_RETRIEVAL, wudfddi_types/WDF_DEVICE_IO_BUFFER_RETRIEVAL, wudfddi_types/WdfDeviceIoBufferRetrievalMaximum, umdfstructs_7bb0e71c-fbce-4f29-9373-a80527403e04.xml, wdf.wdf_device_io_buffer_retrieval, WdfDeviceIoBufferRetrievalInvalid, WdfDeviceIoBufferRetrievalCopyImmediately, wudfddi_types/PWDF_DEVICE_IO_BUFFER_RETRIEVAL, wudfddi_types/WdfDeviceIoBufferRetrievalCopyImmediately, WDF_DEVICE_IO_BUFFER_RETRIEVAL, WdfDeviceIoBufferRetrievalDeferred, WdfDeviceIoBufferRetrievalMaximum, wudfddi_types/WdfDeviceIoBufferRetrievalInvalid, umdf.wdf_device_io_buffer_retrieval
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : WDF_DEVICE_IO_BUFFER_RETRIEVAL
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PWDF_DEVICE_IO_BUFFER_RETRIEVAL, WDF_DEVICE_IO_BUFFER_RETRIEVAL"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_DEVICE_IO_BUFFER_RETRIEVAL, *PWDF_DEVICE_IO_BUFFER_RETRIEVAL
 req.product : Windows 10 or later.
 ---
 
@@ -115,11 +119,8 @@ For more information about accessing an I/O request's data buffers, see <a href=
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE (UMDF)</a>
-</dt>
-</dl>
+
  
 
  

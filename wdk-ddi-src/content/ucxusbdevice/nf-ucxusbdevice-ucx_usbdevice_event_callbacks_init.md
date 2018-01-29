@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 594583B0-6CCB-469F-82AB-604825D85E2E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCX_USBDEVICE_EVENT_CALLBACKS_INIT
+ms.keywords : UCX_USBDEVICE_EVENT_CALLBACKS_INIT, UCX_USBDEVICE_EVENT_CALLBACKS_INIT function [Buses], ucxusbdevice/UCX_USBDEVICE_EVENT_CALLBACKS_INIT, buses._ucx_usbdevice_event_callbacks_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UCX_USBDEVICE_EVENT_CALLBACKS_INIT
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_USBDEVICE_CHARACTERISTIC_TYPE
 req.product : Windows 10 or later.
 ---
@@ -119,17 +123,12 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_ucx_usbdevice_event_callbacks.md">UCX_USBDEVICE_EVENT_CALLBACKS</a>
-</dt>
-<dt>
-<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdeviceinitseteventcallbacks.md">UcxUsbDeviceInitSetEventCallbacks</a>
-</dt>
-<dt>
 <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
-</dt>
-</dl>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_ucx_usbdevice_event_callbacks.md">UCX_USBDEVICE_EVENT_CALLBACKS</a>
+
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdeviceinitseteventcallbacks.md">UcxUsbDeviceInitSetEventCallbacks</a>
+
  
 
  

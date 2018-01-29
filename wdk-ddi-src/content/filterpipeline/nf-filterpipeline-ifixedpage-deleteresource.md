@@ -7,8 +7,8 @@ old-location : print\ifixedpage_deleteresource.htm
 old-project : print
 ms.assetid : 11aefa65-9f1c-4a6e-aac0-8727c6e00a02
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IFixedPage, IFixedPage::DeleteResource, DeleteResource
+ms.date : 1/18/2018
+ms.keywords : IFixedPage::DeleteResource, filterpipeline_b87a40f2-68cc-4664-9531-aaffc41b1a1a.xml, DeleteResource, DeleteResource method [Print Devices], filterpipeline/IFixedPage::DeleteResource, IFixedPage interface [Print Devices], DeleteResource method, print.ifixedpage_deleteresource, IFixedPage, DeleteResource method [Print Devices], IFixedPage interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IFixedPage.DeleteResource
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

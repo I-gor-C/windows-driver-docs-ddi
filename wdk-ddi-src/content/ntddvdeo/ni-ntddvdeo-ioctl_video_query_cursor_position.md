@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0ca9aa92-7b9f-4fd4-a41e-663ac1aa5799
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_query_cursor_position, IOCTL_VIDEO_QUERY_CURSOR_POSITION control code [Display Devices], IOCTL_VIDEO_QUERY_CURSOR_POSITION, ntddvdeo/IOCTL_VIDEO_QUERY_CURSOR_POSITION, Video_IOCTLs_f9790f8c-b853-4231-b058-a09bd42e15de.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_QUERY_CURSOR_POSITION
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_CURSOR_POSITION IOCTL
-Returns the current cursor position (row and column). Miniport drivers for VGA-compatible adapters are required to support this modal request; optional for other miniport drivers.
-
-
-
 Returns the current cursor position (row and column). Miniport drivers for VGA-compatible adapters are required to support this modal request; optional for other miniport drivers.
 
 ### Major Code
@@ -63,7 +63,6 @@ The miniport driver returns a VIDEO_CURSOR_POSITION structure in the VRP <b>Outp
 <text></text>
 
 ### Status Block
-I/O Status block
 If the miniport driver successfully returns the cursor position, it sets the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure to <b>sizeof</b>(VIDEO_CURSOR_POSITION); otherwise, the miniport driver sets this member to zero.
 
 
@@ -74,13 +73,10 @@ If the miniport driver successfully returns the cursor position, it sets the <b>
 | **Header** | ntddvdeo.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

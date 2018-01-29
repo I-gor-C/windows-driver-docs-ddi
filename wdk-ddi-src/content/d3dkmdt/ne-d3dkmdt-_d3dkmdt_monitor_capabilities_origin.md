@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fbbea7d7-2bd7-4dd0-bcb8-3fc93c7474a3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
+ms.keywords : D3DKMDT_MCO_DEFAULTMONITORPROFILE, _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_UNINITIALIZED, DmEnums_fc03a227-b0c7-4152-a4f0-c8badee981e5.xml, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_DRIVER, D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration [Display Devices], d3dkmdt/D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_MONITORDESCRIPTOR, d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_UNINITIALIZED, d3dkmdt/D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_DEFAULTMONITORPROFILE, d3dkmdt/D3DKMDT_MCO_DRIVER, D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, display.d3dkmdt_monitor_capabilities_origin, d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
 ---
 
@@ -98,11 +102,8 @@ The <b>Origin</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
-</dt>
-</dl>
+
  
 
  

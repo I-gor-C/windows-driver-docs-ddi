@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 269eccd8-e477-4082-930b-1f4b3e3706b9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTStreamNotification, IMiniportWaveRTStreamNotification::RegisterNotificationEvent, RegisterNotificationEvent
+ms.keywords : RegisterNotificationEvent method [Audio Devices], RegisterNotificationEvent, audio.iminiportwavertstreamnotification_registernotificationevent, IMiniportWaveRTStreamNotification interface [Audio Devices], RegisterNotificationEvent method, IMiniportWaveRTStreamNotification, RegisterNotificationEvent method [Audio Devices], IMiniportWaveRTStreamNotification interface, audmp-routines_82613ca5-1ae2-449d-8883-2d6ee50aecf7.xml, portcls/IMiniportWaveRTStreamNotification::RegisterNotificationEvent, IMiniportWaveRTStreamNotification::RegisterNotificationEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRTStreamNotification.RegisterNotificationEvent
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -79,17 +83,12 @@ For more information about the behavior of the KSPROPERTY_RTAUDIO_REGISTER_NOTIF
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537385">KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksrtaudio_notification_event_property.md">KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537385">KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT</a>
+
  
 
  

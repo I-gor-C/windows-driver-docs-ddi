@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 665a9819-d319-414d-9a31-ee565b293197
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_TCoefSingle, DXVA_TCoefSingle, *LPDXVA_TCoefSingle
+ms.keywords : dxva/DXVA_TCoefSingle, _DXVA_TCoefSingle, dxvaref_2b92ced3-3856-466f-b95a-84dd78426a0e.xml, LPDXVA_TCoefSingle, dxva/LPDXVA_TCoefSingle, DXVA_TCoefSingle, LPDXVA_TCoefSingle structure pointer [Display Devices], display.dxva_tcoefsingle, *LPDXVA_TCoefSingle, DXVA_TCoefSingle structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_TCoefSingle
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_TCoefSingle, *LPDXVA_TCoefSingle
 ---
 
 # _DXVA_TCoefSingle structure
-The DXVA_TCoefSingle structure is sent by the host decoder to the accelerator to specify <a href="wdkgloss.i#wdkgloss.idct#wdkgloss.idct"><i>IDCT</i></a> coefficient values.
+The DXVA_TCoefSingle structure is sent by the host decoder to the accelerator to specify <a href="https://msdn.microsoft.com/5a140cc0-ecc5-46ff-be3f-3c92f0f67dca">IDCT</a> coefficient values.
 
 ## Syntax
 ````
@@ -47,17 +51,17 @@ typedef struct _DXVA_TCoefSingle {
 
 ## Members
 
-        
-            `TCoefValue`
 
-            Indicates the value of the coefficient in the block. <b>TCoefValue</b> must be clipped to the appropriate range as specified in <a href="https://msdn.microsoft.com/7736a226-1122-4380-b09f-a8560c0cd609">Low-Level IDCT Processing Elements</a> by the host prior to passing the coefficient value to the accelerator for <a href="wdkgloss.i#wdkgloss.idct#wdkgloss.idct"><i>IDCT</i></a> operation. MPEG-2 mismatch control, if necessary, is also the responsibility of the host, not the accelerator. (This might require the creation of extra "phantom" nonzero coefficients.)
-        
-            `wIndexWithEOB`
+`TCoefValue`
 
-            This member contains two fields: <i>TCoefIDX </i>and <i>TCoefEOB</i>.
+Indicates the value of the coefficient in the block. <b>TCoefValue</b> must be clipped to the appropriate range as specified in <a href="https://msdn.microsoft.com/7736a226-1122-4380-b09f-a8560c0cd609">Low-Level IDCT Processing Elements</a> by the host prior to passing the coefficient value to the accelerator for <a href="https://msdn.microsoft.com/5a140cc0-ecc5-46ff-be3f-3c92f0f67dca">IDCT</a> operation. MPEG-2 mismatch control, if necessary, is also the responsibility of the host, not the accelerator. (This might require the creation of extra "phantom" nonzero coefficients.)
 
-    ## Remarks
-        The DXVA_TCoefSingle structure is used whenever the <i>HostResidDiff</i> flag (bit 10 in the <b>wMBtype</b> member of the <a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> structure) is 1 and the <b>bConfig4GroupedCoefs</b> member of the <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is zero.
+`wIndexWithEOB`
+
+This member contains two fields: <i>TCoefIDX </i>and <i>TCoefEOB</i>.
+
+## Remarks
+The DXVA_TCoefSingle structure is used whenever the <i>HostResidDiff</i> flag (bit 10 in the <b>wMBtype</b> member of the <a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> structure) is 1 and the <b>bConfig4GroupedCoefs</b> member of the <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is zero.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct _DXVA_TCoefSingle {
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
-</dt>
-<dt>
-<a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
-</dt>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
-</dt>
-</dl>
+
+<a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
+
+<a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AFE6B92F-49DB-47F9-90BC-F75B5F37178D
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiunmapcpuhostaperture, DxgkDdiUnmapCpuHostAperture callback function [Display Devices], DxgkDdiUnmapCpuHostAperture, DXGKDDI_UNMAPCPUHOSTAPERTURE, DXGKDDI_UNMAPCPUHOSTAPERTURE, d3dkmddi/DxgkDdiUnmapCpuHostAperture
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiUnmapCpuHostAperture
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -80,11 +84,8 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the e
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_unmapcpuhostaperture.md">DXGKARG_UNMAPCPUHOSTAPERTURE</a>
-</dt>
-</dl>
+
  
 
  

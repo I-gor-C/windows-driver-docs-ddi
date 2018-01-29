@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2DD7D46A-2E2B-482D-BFD6-D0AFD975107E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbmiracastsendmessagecallback, DxgkCbMiracastSendMessageCallback callback function [Display Devices], DxgkCbMiracastSendMessageCallback, DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK, DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK, dispmprt/DxgkCbMiracastSendMessageCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbMiracastSendMessageCallback
-req.alt-loc : Dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -67,7 +71,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-This function can be called simultaneously from multiple execution threads.
+<h3><a id="Synchronization"></a><a id="synchronization"></a><a id="SYNCHRONIZATION"></a>Synchronization</h3>This function can be called simultaneously from multiple execution threads.
 
 The operating system guarantees that this function follows the zero level synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.
 
@@ -85,14 +89,10 @@ The operating system guarantees that this function follows the zero level synchr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_miracast_send_message.md">DxgkCbMiracastSendMessage</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

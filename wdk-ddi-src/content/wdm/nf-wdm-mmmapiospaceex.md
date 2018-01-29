@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0A8216B2-822D-4157-876E-AA0A1A9D6D3F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmMapIoSpaceEx
+ms.keywords : MmMapIoSpace, MmMapIoSpace routine [Kernel-Mode Driver Architecture], MmMapIoSpaceEx, kernel.mmmapiospaceex, wdm/MmMapIoSpace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmMapIoSpace
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,7 +66,6 @@ Specifies a value greater than zero, indicating the number of bytes to be mapped
 `Protect`
 
 Flag bits that specify the protection to use for the mapped range. The caller must set one of the following flag bits in the <i>Protect</i> parameter.
-
 <table>
 <tr>
 <th>Flag bit</th>
@@ -88,11 +91,9 @@ Flag bits that specify the protection to use for the mapped range. The caller mu
 <td>PAGE_EXECUTE_READWRITE</td>
 <td>The mapped range can be executed, read, or written. </td>
 </tr>
-</table>
- 
+</table> 
 
 In addition, the caller can set one (but not both) of the following optional flag bits in the <i>Protect</i> parameter.
-
 <table>
 <tr>
 <th>Flag bit</th>
@@ -135,20 +136,14 @@ For more information about using this routine, see <a href="https://msdn.microso
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-mmallocatenoncachedmemory.md">MmAllocateNonCachedMemory</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-mmunmapiospace.md">MmUnmapIoSpace</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-mmallocatenoncachedmemory.md">MmAllocateNonCachedMemory</a>
+
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 415255A8-4D43-4677-B4B3-0425D6D57933
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_SUBMITCOMMANDFLAGS, D3DDDICB_SUBMITCOMMANDFLAGS
+ms.keywords : d3dumddi/D3DDDICB_SUBMITCOMMANDFLAGS, _D3DDDICB_SUBMITCOMMANDFLAGS, display.d3dddicb_submitcommandflags, D3DDDICB_SUBMITCOMMANDFLAGS structure [Display Devices], D3DDDICB_SUBMITCOMMANDFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_SUBMITCOMMANDFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_SUBMITCOMMANDFLAGS
 ---
 

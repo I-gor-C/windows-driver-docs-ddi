@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FCE1DE7B-CDFE-4533-90E7-A400EC236007
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE
+ms.keywords : ntddstor/PSTORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, ntddstor/STORAGE_HW_FIRMWARE_ACTIVATE, _STORAGE_HW_FIRMWARE_ACTIVATE, PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE structure [Storage Devices], PSTORAGE_HW_FIRMWARE_ACTIVATE structure pointer [Storage Devices], storage.storage_hw_firmware_activate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_HW_FIRMWARE_ACTIVATE
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE"
 ---
 
@@ -50,11 +54,10 @@ typedef struct _STORAGE_HW_FIRMWARE_ACTIVATE {
 
 ## Members
 
-        
-            `Flags`
 
-            The flags associated with the activation request. The following are valid flags that can be set in this member.
+`Flags`
 
+The flags associated with the activation request. The following are valid flags that can be set in this member.
 <table>
 <tr>
 <th>Flag</th>
@@ -69,22 +72,22 @@ typedef struct _STORAGE_HW_FIRMWARE_ACTIVATE {
 <td>Indicates that an existing firmware image in the specified slot should be activated. </td>
 </tr>
 </table>
-        
-            `Reserved0`
 
-            Reserved for future use.
-        
-            `Size`
+`Reserved0`
 
-            The size of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
-        
-            `Slot`
+Reserved for future use.
 
-            The slot with the firmware image that is to be activated.
-        
-            `Version`
+`Size`
 
-            The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
+The size of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
+
+`Slot`
+
+The slot with the firmware image that is to be activated.
+
+`Version`
+
+The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : print\oemcuipcallback.htm
 old-project : print
 ms.assetid : d740bed2-ba3c-4834-8bda-3512ac8da1d5
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPrintSchemaTicket2, IPrintSchemaTicket2::GetParameterInitializer, GetParameterInitializer
+ms.date : 1/18/2018
+ms.keywords : print.oemcuipcallback, OEMCUIPCALLBACK callback function [Print Devices], OEMCUIPCALLBACK, printoem/OEMCUIPCALLBACK, print_unidrv-pscript_ui_e40ce896-2920-4839-99a8-ddc0a616dcad.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OEMCUIPCALLBACK
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PrintSchemaSelectionType
 req.product : Windows 10 or later.
 ---
@@ -79,9 +83,12 @@ The CPSUICBPARAM structure's <b>pOptItem</b> and <b>pCurItem</b> members identif
 When a callback function is called, it must determine if any of its customized OPTITEM structures are affected by the specified <b>Reason</b> value. If they are, the function should process the affected options and return one of the CPSUI_ACTION-prefixed return values described for the <a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a> function type. Otherwise it should return CPSUICB_ACTION_NONE.
 
 The following additional rules apply to callback function return values:
-
+<ul>
+<li>
 If <b>Reason</b> contains CPSUICB_REASON_APPLYNOW, then the callback must return either CPSUICB_ACTION_ITEMS_APPLIED or CPSUICB_ACTION_NO_APPLY_EXIT. In the latter case, the printer driver interface immediately returns to CPSUI without calling any other user interface plug-in's callback function.
 
+</li>
+<li>
 If <b>Reason</b> contains any value except CPSUICB_REASON_APPLYNOW, then the return value must be one of the following:<dl>
 <dd>CPSUICB_ACTION_REINIT_ITEMS</dd>
 <dd>CPSUICB_ACTION_OPTIF_CHANGED</dd>
@@ -89,7 +96,10 @@ If <b>Reason</b> contains any value except CPSUICB_REASON_APPLYNOW, then the ret
 </dl>
 
 
-These return values are listed in order of decreasing priority. If multiple user interface plug-ins exist, the printer interface DLL calls each one's callback function and saves the highest-priority return value, passing it back to CPSUI.</p>
+These return values are listed in order of decreasing priority. If multiple user interface plug-ins exist, the printer interface DLL calls each one's callback function and saves the highest-priority return value, passing it back to CPSUI.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1bd5c22e-c4c1-4b0a-b5ed-76e17cbe1aee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETTRANSFORM, D3DDDIARG_SETTRANSFORM
+ms.keywords : display.d3dddiarg_settransform, D3DDDIARG_SETTRANSFORM, d3dumddi/D3DDDIARG_SETTRANSFORM, _D3DDDIARG_SETTRANSFORM, D3DDDIARG_SETTRANSFORM structure [Display Devices], UMDisplayDriver_param_Structs_719de83f-0830-4b1a-aa72-e3f58553c733.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETTRANSFORM
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETTRANSFORM
 ---
 
@@ -47,15 +51,14 @@ typedef struct _D3DDDIARG_SETTRANSFORM {
 
 ## Members
 
-        
-            `Matrix`
 
-            [in] A D3DMATRIX structure that describes the matrix that is used to set up the transform. For more information about D3DMATRIX, see the Microsoft Windows SDK documentation.
-        
-            `TransformType`
+`Matrix`
 
-            [in] A D3DTRANSFORMSTATETYPE-typed value that indicates the type of transform to set up. This member can be one of the following values.
+[in] A D3DMATRIX structure that describes the matrix that is used to set up the transform. For more information about D3DMATRIX, see the Microsoft Windows SDK documentation.
 
+`TransformType`
+
+[in] A D3DTRANSFORMSTATETYPE-typed value that indicates the type of transform to set up. This member can be one of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -93,8 +96,8 @@ World transformation
 </tr>
 </table>
 
-    ## Remarks
-        The Microsoft Direct3D runtime uses D3DDDIARG_SETTRANSFORM in a call to the user-mode display driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_settransform.md">SetTransform</a> function to inform the driver about various hardware transformation and lighting matrices.
+## Remarks
+The Microsoft Direct3D runtime uses D3DDDIARG_SETTRANSFORM in a call to the user-mode display driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_settransform.md">SetTransform</a> function to inform the driver about various hardware transformation and lighting matrices.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -104,13 +107,10 @@ World transformation
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_settransform.md">SetTransform</a>
-</dt>
-</dl>
+
  
 
  

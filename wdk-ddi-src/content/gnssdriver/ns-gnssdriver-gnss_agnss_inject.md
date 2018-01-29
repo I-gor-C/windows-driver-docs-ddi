@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : B81F5D71-9928-412C-8199-787E71CE2638
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
+ms.keywords : "*PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT, gnssdriver/GNSS_AGNSS_INJECT, PGNSS_AGNSS_INJECT, sensors.gnss_agnss_inject, GNSS_AGNSS_INJECT structure [Sensor Devices], gnssdriver/PGNSS_AGNSS_INJECT, PGNSS_AGNSS_INJECT structure pointer [Sensor Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_AGNSS_INJECT
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT"
 ---
 
 # GNSS_AGNSS_INJECT structure
@@ -56,30 +60,34 @@ typedef struct {
 
 ## Members
 
-        
-            `InjectionDataSize`
 
-            Size of the injection data.
-        
-            `InjectionStatus`
+`InjectionDataSize`
 
-            Indicates whether any error was encountered in gathering the needed injection data. 
+Size of the injection data.
+
+`InjectionStatus`
+
+Indicates whether any error was encountered in gathering the needed injection data. 
 
 The driver must ignore the injection if this field does not indicate success.
-        
-            `InjectionType`
 
-            Indicates the specific type of AGNSS injection. 
+`InjectionType`
+
+Indicates the specific type of AGNSS injection. 
 
 Depending on the type, the driver must access the specific data element of the structure. For example, if the type is GNSS_AGNSS_PositionInjection, use the Position element.
-        
-            `Size`
 
-            Structure size.
-        
-            `Version`
+`Size`
 
-            Version number.
+Structure size.
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

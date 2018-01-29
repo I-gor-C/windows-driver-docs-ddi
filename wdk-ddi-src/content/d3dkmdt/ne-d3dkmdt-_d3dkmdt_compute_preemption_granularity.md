@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d8ed5406-3b76-49a7-961c-0be737b1dda9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY, D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY
+ms.keywords : D3DKMDT_COMPUTE_PREEMPTION_DISPATCH_BOUNDARY, D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY, D3DKMDT_COMPUTE_PREEMPTION_DMA_BUFFER_BOUNDARY, D3DKMDT_COMPUTE_PREEMPTION_NONE, display.d3dkmdt_compute_preemption_granularity, D3DKMDT_COMPUTE_PREEMPTION_THREAD_GROUP_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_THREAD_GROUP_BOUNDARY, _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY, D3DKMDT_COMPUTE_PREEMPTION_SHADER_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_SHADER_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_DMA_BUFFER_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_NONE, D3DKMDT_COMPUTE_PREEMPTION_THREAD_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY, D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY enumeration [Display Devices], d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_DISPATCH_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_THREAD_BOUNDARY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY
-req.alt-loc : D3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY
 ---
 
@@ -66,9 +70,7 @@ typedef enum _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY {
 <tr>
 <td>D3DKMDT_COMPUTE_PREEMPTION_NONE</td>
 <td>The driver does not support the preemption of GPU compute shader operations.
-
-<div class="alert"><b>Note</b>  This value also specifies that the driver cannot stop currently running DMA buffers of a specified type and cannot prevent all pending DMA buffers in the hardware queue from running.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>  This value also specifies that the driver cannot stop currently running DMA buffers of a specified type and cannot prevent all pending DMA buffers in the hardware queue from running.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -103,14 +105,10 @@ For example, if one engine supports the preemption of primitive level graphics r
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_graphics_preemption_granularity.md">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a>
-</dt>
-<dt>
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_preemption_caps.md">D3DKMDT_PREEMPTION_CAPS</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_graphics_preemption_granularity.md">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a>
+
  
 
  

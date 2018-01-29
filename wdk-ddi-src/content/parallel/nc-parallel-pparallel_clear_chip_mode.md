@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 398d38a0-2337-4f8e-bd30-d6546516b945
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.pparallel_clear_chip_mode, (*PPARALLEL_CLEAR_CHIP_MODE) callback function [Parallel Ports], (*PPARALLEL_CLEAR_CHIP_MODE), parallel/(*PPARALLEL_CLEAR_CHIP_MODE), cisspd_d5564f9d-0941-4f80-9fa7-5acacaaf47a9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PPARALLEL_CLEAR_CHIP_MODE)
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -54,7 +58,7 @@ NTSTATUS PparallelClearChipMode(
 
 `ClearChipContext`
 
-Pointer to the device extension of a parallel port's functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>).
+Pointer to the device extension of a parallel port's functional device object (<a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FDO</a>).
 
 `ChipMode`
 
@@ -65,12 +69,34 @@ For more information about operating modes, see the modes that are defined for t
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operating mode was set to IEEE 1284-compatibility mode.
+</dl>
+</td>
+<td width="60%">
+The operating mode was set to IEEE 1284-compatibility mode.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl>The specified mode does not match the current mode.
+</dl>
+</td>
+<td width="60%">
+The specified mode does not match the current mode.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,23 +122,16 @@ For more information, see <a href="https://msdn.microsoft.com/a22cdeef-4ae7-49f8
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_parallel_clear_chip_mode.md">IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_parallel_set_chip_mode.md">IOCTL_INTERNAL_PARALLEL_SET_CHIP_MODE</a>
-</dt>
-<dt>
 <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
-</dt>
-<dt>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_parallel_set_chip_mode.md">IOCTL_INTERNAL_PARALLEL_SET_CHIP_MODE</a>
+
 <a href="..\parallel\nc-parallel-pparallel_set_chip_mode.md">PPARALLEL_SET_CHIP_MODE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_parallel_clear_chip_mode.md">IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE</a>
+
  
 
  

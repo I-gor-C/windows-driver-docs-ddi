@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E8D9E05C-26C3-474C-854F-9AD12C8834DF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE, *PVPD_THIRD_PARTY_COPY_PAGE
+ms.keywords : PVPD_THIRD_PARTY_COPY_PAGE structure pointer [Storage Devices], storage.vpd_third_party_copy_page, scsi/VPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE structure [Storage Devices], _VPD_THIRD_PARTY_COPY_PAGE, *PVPD_THIRD_PARTY_COPY_PAGE, scsi/PVPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE, PVPD_THIRD_PARTY_COPY_PAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VPD_THIRD_PARTY_COPY_PAGE
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : VPD_THIRD_PARTY_COPY_PAGE, *PVPD_THIRD_PARTY_COPY_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE"
 req.product : Windows 10 or later.
 ---
 
@@ -51,29 +55,29 @@ typedef struct _VPD_THIRD_PARTY_COPY_PAGE {
 
 ## Members
 
-        
-            `DeviceType`
 
-            The device type. This is the same device type defined for use in the inquiry data for the storage device.
-        
-            `DeviceTypeQualifier`
+`DeviceType`
 
-            A qualifier code for the device. Currently, <b>DEVICE_CONNECTED</b>, is the only valid value.
-        
-            `PageCode`
+The device type. This is the same device type defined for use in the inquiry data for the storage device.
 
-            The page code for the VPD third party copy page. This page code is defined as 0x8f.
-        
-            `PageLength`
+`DeviceTypeQualifier`
 
-            The length, in bytes, of the VPD page. For offload data transfer on Windows, <b>PageLength</b> must be &gt;= 0x24.
-        
-            `ThirdPartyCopyDescriptors`
+A qualifier code for the device. Currently, <b>DEVICE_CONNECTED</b>, is the only valid value.
 
-            Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="..\scsi\ns-scsi-_windows_block_device_token_limits_descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.
+`PageCode`
 
-    ## Remarks
-        All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
+The page code for the VPD third party copy page. This page code is defined as 0x8f.
+
+`PageLength`
+
+The length, in bytes, of the VPD page. For offload data transfer on Windows, <b>PageLength</b> must be &gt;= 0x24.
+
+`ThirdPartyCopyDescriptors`
+
+Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="..\scsi\ns-scsi-_windows_block_device_token_limits_descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.
+
+## Remarks
+All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,13 +87,10 @@ typedef struct _VPD_THIRD_PARTY_COPY_PAGE {
 | **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Scsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\scsi\ns-scsi-_windows_block_device_token_limits_descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

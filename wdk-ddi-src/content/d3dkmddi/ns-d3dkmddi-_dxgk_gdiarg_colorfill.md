@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f7dad933-31e6-4de2-9753-67c054f44c4a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_GDIARG_COLORFILL, DXGK_GDIARG_COLORFILL
+ms.keywords : DXGK_GDIARG_COLORFILL structure [Display Devices], _DXGK_GDIARG_COLORFILL, DXGK_GDIARG_COLORFILL, display.dxgk_gdiarg_colorfill, DmStructs_d80a1a76-a7d1-4c7e-b9b1-3c6986124f77.xml, d3dkmddi/DXGK_GDIARG_COLORFILL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_GDIARG_COLORFILL
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_GDIARG_COLORFILL
 ---
 
@@ -52,36 +56,36 @@ typedef struct _DXGK_GDIARG_COLORFILL {
 
 ## Members
 
-        
-            `Color`
 
-            [in] The fill color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration).
-        
-            `DstAllocationIndex`
+`Color`
 
-            [in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>DstRect</b> destination rectangle.
-        
-            `DstRect`
+[in] The fill color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration).
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
+`DstAllocationIndex`
+
+[in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>DstRect</b> destination rectangle.
+
+`DstRect`
+
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
 
 The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the destination surface, but sub-rectangles cannot. Additionally, all sub-rectangles are guaranteed to fit inside the destination surface. Sub-rectangles can be constrained further by a bounding rectangle that is smaller than the destination rectangle.
-        
-            `NumSubRects`
 
-            [in] The number of sub-rectangles in the destination surface space. The sub-rectangles are not tightly bounded by the <b>DstRect</b> destination rectangle.
-        
-            `pSubRects`
+`NumSubRects`
 
-            [in] A pointer to the sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
-        
-            `Rop`
+[in] The number of sub-rectangles in the destination surface space. The sub-rectangles are not tightly bounded by the <b>DstRect</b> destination rectangle.
 
-            [in] An 8-bit value that specifies a GDI raster operation (ROP) that is defined by the constant values of the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_gdirop_colorfill.md">DXGK_GDIROP_COLORFILL</a> enumeration.
-        
-            `Rop3`
+`pSubRects`
 
-            [in] An 8-bit value that specifies a ternary GDI raster operation (ROP3) that combines a brush, a source bitmap, and a destination bitmap in one of 256 possible combinations. This type of raster operation will be processed only if the driver has set the <b>SupportAllBltRops</b> member in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure.
+[in] A pointer to the sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
+
+`Rop`
+
+[in] An 8-bit value that specifies a GDI raster operation (ROP) that is defined by the constant values of the <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_gdirop_colorfill.md">DXGK_GDIROP_COLORFILL</a> enumeration.
+
+`Rop3`
+
+[in] An 8-bit value that specifies a ternary GDI raster operation (ROP3) that combines a brush, a source bitmap, and a destination bitmap in one of 256 possible combinations. This type of raster operation will be processed only if the driver has set the <b>SupportAllBltRops</b> member in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure.
 
 
 ## Requirements
@@ -92,22 +96,16 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_gdirop_colorfill.md">DXGK_GDIROP_COLORFILL</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : aa8accf8-79c9-4868-b621-d468a121cb60
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+ms.keywords : storage.ioctl_volume_is_clustered, IOCTL_VOLUME_IS_CLUSTERED control code [Storage Devices], IOCTL_VOLUME_IS_CLUSTERED, ntddvol/IOCTL_VOLUME_IS_CLUSTERED, k307_32e3c9a5-1828-4fbb-b7f1-9ddbd367f70f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VOLUME_IS_CLUSTERED
-req.alt-loc : Ntddvol.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
@@ -59,11 +63,10 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
- If the volume is clustered, the IOCTL returns <b>STATUS_SUCCESS</b>. If the volume is not clustered, the IOCTL returns  <b>STATUS_UNSUCCESSFUL</b>.
+If the volume is clustered, the IOCTL returns <b>STATUS_SUCCESS</b>. If the volume is not clustered, the IOCTL returns  <b>STATUS_UNSUCCESSFUL</b>.
 
-    ## Remarks
-        For an invalid disk type, such as dynamic disk, the disk management component will return <b>STATUS_INVALID_DEVICE_REQUEST</b>.</p>
+## Remarks
+For an invalid disk type, such as dynamic disk, the disk management component will return <b>STATUS_INVALID_DEVICE_REQUEST</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

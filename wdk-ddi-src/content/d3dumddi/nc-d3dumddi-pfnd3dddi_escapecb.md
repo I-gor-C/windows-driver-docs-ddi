@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 66c0347f-2cf3-42fc-8641-47c731e958c9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnescapecb, pfnEscapeCb callback function [Display Devices], pfnEscapeCb, PFND3DDDI_ESCAPECB, PFND3DDDI_ESCAPECB, d3dumddi/pfnEscapeCb, D3Druntime_Functions_8c7e48ef-f8e8-45d2-a424-9065e97f725f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnEscapeCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,26 +68,62 @@ A handle to the graphics adapter object.
 ## Return Value
 
 <b>pfnEscapeCb</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>Information was successfully shared.
+</dl>
+</td>
+<td width="60%">
+Information was successfully shared.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><b>pfnEscapeCb</b> could not complete because of insufficient memory.
+</dl>
+</td>
+<td width="60%">
+<b>pfnEscapeCb</b> could not complete because of insufficient memory.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         Parameters were validated and determined to be incorrect.
        
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
-</dl><b>pfnEscapeCb</b> could not initiate a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a> function because a Plug and Play (PnP) stop or a Timeout Detection and Recovery (TDR) event occurred. The user-mode display driver function that called <b>pfnEscapeCb</b> must return this error code back to the Direct3D runtime. 
+</dl>
+</td>
+<td width="60%">
+<b>pfnEscapeCb</b> could not initiate a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a> function because a Plug and Play (PnP) stop or a Timeout Detection and Recovery (TDR) event occurred. The user-mode display driver function that called <b>pfnEscapeCb</b> must return this error code back to the Direct3D runtime. 
 
 <b>Direct3D Version 9 Note:  </b>For more information about returning error codes, see <a href="https://msdn.microsoft.com/4a2384e8-407f-4248-8b31-7c4e836b15dc">Returning Error Codes Received from Runtime Functions</a>.
 
 <b>Direct3D Versions 10 and 11 Note:  </b>If the driver function does not return a value (that is, has VOID for a return parameter type), the driver function calls the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a> function to send an error code back to the runtime. For more information about handling error codes, see <a href="https://msdn.microsoft.com/ac4e056e-3304-4934-887a-5cc2b87989bd">Handling Errors</a>.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other HRESULT values.
 
@@ -107,17 +147,12 @@ A user-mode display driver calls <b>pfnEscapeCb</b> to share miscellaneous infor
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_escape.md">D3DDDICB_ESCAPE</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a>
-</dt>
-</dl>
+
  
 
  

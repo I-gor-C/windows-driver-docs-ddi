@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5c805b9d-0b9a-4fbb-8b96-3ac11a6e4898
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetTopInstance
+ms.keywords : ifsk.fltgettopinstance, fltkernel/FltGetTopInstance, FltApiRef_e_to_o_3f4205c4-12aa-43d4-b67f-258665d81164.xml, FltGetTopInstance, FltGetTopInstance routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetTopInstance
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -61,9 +65,23 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 ## Return Value
 
 <b>FltGetTopInstance</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MORE_ENTRIES</b></dt>
-</dl>No matching instance was found. This is a warning code.
+</dl>
+</td>
+<td width="60%">
+No matching instance was found. This is a warning code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -89,29 +107,20 @@ The string "03333" represents a higher altitude than "100.123456". (Leading and 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltgetbottominstance.md">FltGetBottomInstance</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetlowerinstance.md">FltGetLowerInstance</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetupperinstance.md">FltGetUpperInstance</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetupperinstance.md">FltGetUpperInstance</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetlowerinstance.md">FltGetLowerInstance</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
+
  
 
  

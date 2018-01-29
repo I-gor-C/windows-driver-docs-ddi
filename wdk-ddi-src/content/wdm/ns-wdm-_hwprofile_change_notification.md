@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3b6fe106-2440-4bc6-a3ae-9bb8b18f8094
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _HWPROFILE_CHANGE_NOTIFICATION, HWPROFILE_CHANGE_NOTIFICATION, *PHWPROFILE_CHANGE_NOTIFICATION
+ms.keywords : wdm/HWPROFILE_CHANGE_NOTIFICATION, _HWPROFILE_CHANGE_NOTIFICATION, PHWPROFILE_CHANGE_NOTIFICATION, kernel.hwprofile_change_notification, *PHWPROFILE_CHANGE_NOTIFICATION, kstruct_b_2e8d0c69-abe9-49a9-96f6-fba3b0020ff8.xml, PHWPROFILE_CHANGE_NOTIFICATION structure pointer [Kernel-Mode Driver Architecture], wdm/PHWPROFILE_CHANGE_NOTIFICATION, HWPROFILE_CHANGE_NOTIFICATION, HWPROFILE_CHANGE_NOTIFICATION structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HWPROFILE_CHANGE_NOTIFICATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HWPROFILE_CHANGE_NOTIFICATION, *PHWPROFILE_CHANGE_NOTIFICATION
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _HWPROFILE_CHANGE_NOTIFICATION {
 
 ## Members
 
-        
-            `Event`
 
-            Specifies a GUID identifying the event: GUID_HWPROFILE_QUERY_CHANGE, GUID_HWPROFILE_CHANGE_COMPLETE, or GUID_HWPROFILE_CHANGE_CANCELLED. The GUIDs are defined in Wdmguid.h.
-        
-            `Size`
+`Event`
 
-            Specifies the size of the structure, in bytes including the size of the standard first three members plus the event-specific data.
-        
-            `Version`
+Specifies a GUID identifying the event: GUID_HWPROFILE_QUERY_CHANGE, GUID_HWPROFILE_CHANGE_COMPLETE, or GUID_HWPROFILE_CHANGE_CANCELLED. The GUIDs are defined in Wdmguid.h.
 
-            Specifies the version of the data structure, currently 1.
+`Size`
 
-    ## Remarks
-        There is no event-specific data for a hardware-profile-change event.
+Specifies the size of the structure, in bytes including the size of the standard first three members plus the event-specific data.
+
+`Version`
+
+Specifies the version of the data structure, currently 1.
+
+## Remarks
+There is no event-specific data for a hardware-profile-change event.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,22 +77,16 @@ typedef struct _HWPROFILE_CHANGE_NOTIFICATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_interface_change_notification.md">DEVICE_INTERFACE_CHANGE_NOTIFICATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_plugplay_notification_header.md">PLUGPLAY_NOTIFICATION_HEADER</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
+
 <a href="..\wdm\ns-wdm-_target_device_removal_notification.md">TARGET_DEVICE_REMOVAL_NOTIFICATION</a>
-</dt>
-</dl>
+
  
 
  

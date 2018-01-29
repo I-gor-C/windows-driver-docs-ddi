@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : b30ccf86-ae6d-484a-a3f2-8b38df26e995
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI_X_CAPABILITY, PCI_X_CAPABILITY, *PPCI_X_CAPABILITY
+ms.keywords : PCI_X_CAPABILITY structure [Buses], PPCI_X_CAPABILITY, wdm/PPCI_X_CAPABILITY, PPCI_X_CAPABILITY structure pointer [Buses], PCI_X_CAPABILITY, PCI.pci_x_capability, *PPCI_X_CAPABILITY, pci_struct_171a6a86-48fe-4955-8f12-43df82659f7a.xml, wdm/PCI_X_CAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_X_CAPABILITY
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PCI_X_CAPABILITY, *PPCI_X_CAPABILITY
 req.product : Windows 10 or later.
 ---
@@ -76,18 +80,18 @@ typedef struct {
 
 ## Members
 
-        
-            `Command`
 
-            
-        
-            `Header`
+`Command`
 
-            Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a> that identifies the capability and provides a link to the next capability description.
-        
-            `Status`
 
-            
+
+`Header`
+
+Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a> that identifies the capability and provides a link to the next capability description.
+
+`Status`
+
+
 
 
 ## Requirements
@@ -98,13 +102,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a>
-</dt>
-</dl>
+
  
 
  

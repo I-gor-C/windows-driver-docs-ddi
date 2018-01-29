@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1215cf8e-8e94-4da4-9fb9-2212e8386abd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SYSAUDIO_ATTACH_VIRTUAL_SOURCE, *PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE
+ms.keywords : ksmedia/SYSAUDIO_ATTACH_VIRTUAL_SOURCE, PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, aud-prop_5fce938d-a784-46cf-a65b-3eb0d19db2f8.xml, ksmedia/PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure [Audio Devices], audio.sysaudio_attach_virtual_source, PSYSAUDIO_ATTACH_VIRTUAL_SOURCE structure pointer [Audio Devices], *PSYSAUDIO_ATTACH_VIRTUAL_SOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYSAUDIO_ATTACH_VIRTUAL_SOURCE
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE"
 ---
 
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `MixerPinId`
 
-            Specifies the virtual source index.
-        
-            `Property`
+`MixerPinId`
 
-            Specifies the property. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
-        
-            `Reserved`
+Specifies the virtual source index.
 
-            Reserved. Set to zero.
+`Property`
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537413">KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE</a> property.
+Specifies the property. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
+
+`Reserved`
+
+Reserved. Set to zero.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537413">KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537413">KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE</a>
-</dt>
-</dl>
+
  
 
  

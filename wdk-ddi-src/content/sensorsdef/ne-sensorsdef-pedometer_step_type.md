@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 13ECDA33-2047-4F72-A8D4-5281C4BA8543
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PEDOMETER_STEP_TYPE, PEDOMETER_STEP_TYPE
+ms.keywords : sensorsdef/PedometerStepType_Walking, PedometerStepType_Force_Dword, PedometerStepType_Unknown, sensorsdef/PedometerStepType_Unknown, sensorsdef/PedometerStepType_Running, PedometerStepType_Walking, PEDOMETER_STEP_TYPE, sensors.pedometer_step_type, PEDOMETER_STEP_TYPE enumeration [Sensor Devices], sensorsdef/PEDOMETER_STEP_TYPE, PedometerStepType_Running, sensorsdef/PedometerStepType_Force_Dword, sensorsdef/PedometerStepType_Max, PedometerStepType_Max
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEDOMETER_STEP_TYPE
-req.alt-loc : Sensorsdef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEDOMETER_STEP_TYPE
 req.product : Windows 10 or later.
 ---
@@ -93,14 +97,10 @@ For more information about the sensor data fields that use this enumeration, see
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957076">Pedometer data fields</a>
-</dt>
-<dt>
 <a href="..\sensorsdef\ne-sensorsdef-pedometer_step_type_count.md">PEDOMETER_STEP_TYPE_COUNT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957076">Pedometer data fields</a>
+
  
 
  

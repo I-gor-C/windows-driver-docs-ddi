@@ -7,8 +7,8 @@ old-location : netvista\ndismcmdroppartycomplete.htm
 old-project : netvista
 ms.assetid : ba0e11d9-3bb1-412c-9b33-9362d774adee
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisMCmDropPartyComplete
+ms.date : 1/18/2018
+ms.keywords : netvista.ndismcmdroppartycomplete, NdisMCmDropPartyComplete, ndis/NdisMCmDropPartyComplete, NdisMCmDropPartyComplete macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_61bf04f0-c6cd-445f-8e4a-512884b96902.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisMCmDropPartyComplete
-req.alt-loc : ndis.h
 req.ddi-compliance : Irql_MCM_Function
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ndis.h
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -52,11 +56,11 @@ VOID NdisMCmDropPartyComplete(
 
 `_S_`
 
-
+TBD
 
 `_H_`
 
-
+TBD
 
 
 ## Return Value
@@ -73,8 +77,8 @@ An MCM driver must call
     <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>, can release the
     resources they allocated to maintain per-party state until the MCM driver's call to 
     <b>NdisMCmDropPartyComplete</b> causes a call to that client's 
-    <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">
-    ProtocolClDropPartyComplete</a> function.
+    <mshelp:link keywords="netvista.protocolcldroppartycomplete" tabindex="0"><i>
+    ProtocolClDropPartyComplete</i></mshelp:link> function.
 
 If it passes NDIS_STATUS_SUCCESS for the 
     <i>Status</i>, the MCM driver must consider the 
@@ -102,22 +106,16 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
+
 <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">ProtocolCmDropParty</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDropPartyComplete macro%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDropPartyComplete macro%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

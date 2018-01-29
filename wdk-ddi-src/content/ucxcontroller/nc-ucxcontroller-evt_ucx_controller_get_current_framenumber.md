@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2755d0fd-9801-4d54-89cb-54f8b984288c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxInitializeDeviceInit
+ms.keywords : buses.evt_ucx_controller_get_current_framenumber, EvtUcxControllerGetCurrentFrameNumber callback function [Buses], EvtUcxControllerGetCurrentFrameNumber, EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER, EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER, ucxcontroller/EvtUcxControllerGetCurrentFrameNumber, PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER callback function pointer [Buses], PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
@@ -84,11 +88,8 @@ The UCX client driver registers its <i>EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBE
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
-</dt>
-</dl>
+
  
 
  

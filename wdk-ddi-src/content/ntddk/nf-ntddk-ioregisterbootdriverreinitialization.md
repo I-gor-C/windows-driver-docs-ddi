@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : af1c1f4b-7710-4cf7-9596-32d11db98abb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRegisterBootDriverReinitialization
+ms.keywords : kernel.ioregisterbootdriverreinitialization, ntddk/IoRegisterBootDriverReinitialization, k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, IoRegisterBootDriverReinitialization, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoRegisterBootDriverReinitialization
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -91,17 +95,12 @@ The <i>DriverEntry</i> routine can call <b>IoRegisterBootDriverReinitialization<
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioregisterdriverreinitialization.md">IoRegisterDriverReinitialization</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
 <a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a>
-</dt>
-</dl>
+
  
 
  

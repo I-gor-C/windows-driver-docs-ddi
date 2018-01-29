@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : d43a21cb-5cee-4e72-8f0c-7aa8b2453507
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.keywords : PCI.sriov_set_power_state, SRIOV_SET_POWER_STATE callback function [Buses], SRIOV_SET_POWER_STATE, pcivirt/SRIOV_SET_POWER_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_SET_POWER_STATE
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
@@ -81,7 +85,75 @@ This callback function is implemented by the physical function (PF) driver. The 
 
 The PF driver registers its implementation by setting the <b>SetVfPowerState</b> member of the SRIOV_DEVICE_INTERFACE_STANDARD, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
-Here is an example implementation of this callback function.</p>
+Here is an example implementation of this callback function.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>
+NTSTATUS
+Virtualization_SetPowerState (
+    __inout              PVOID              Context,
+                         USHORT             VfIndex,
+                         DEVICE_POWER_STATE PowerState,
+                         BOOLEAN            Wake
+    )
+
+{
+    PDEVICE_CONTEXT         deviceContext;
+    WDF_POWER_DEVICE_STATE  wdfPowerState;
+    NTSTATUS                status;
+
+    PAGED_CODE();
+    status = STATUS_SUCCESS;
+
+    TraceEvents(TRACE_LEVEL_VERBOSE, DBG_INTERFACE,
+                        "Virtualization_SetPowerState received with \
+                        VFIndex = %d, PowerState = %d, Wake = %d\n",
+                        VfIndex, PowerState, Wake);
+
+
+    deviceContext = (PDEVICE_CONTEXT) Context;
+    
+    if (VfIndex &gt;= deviceContext-&gt;NumVFs)
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_INTERFACE,
+                "VfIndex specified: %d was out of bounds. NumVFs: %d\n",
+                VfIndex, deviceContext-&gt;NumVFs);
+        return STATUS_INVALID_PARAMETER;
+    }
+
+    switch (PowerState)
+    {
+    case PowerDeviceD0:
+        wdfPowerState = WdfPowerDeviceD0;
+        break;
+    case PowerDeviceD1:
+        wdfPowerState = WdfPowerDeviceD1;
+        break;
+    case PowerDeviceD2:
+        wdfPowerState = WdfPowerDeviceD2;
+        break;
+    case PowerDeviceD3:
+        wdfPowerState = WdfPowerDeviceD3;
+        break;
+    default:
+        return STATUS_INVALID_PARAMETER;
+    }
+
+    WdfWaitLockAcquire(deviceContext-&gt;PowerStateLock, NULL);
+    deviceContext-&gt;VfContext[VfIndex].VfPowerDeviceState = wdfPowerState;
+    deviceContext-&gt;VfContext[VfIndex].VfWake = Wake;
+    WdfWaitLockRelease(deviceContext-&gt;PowerStateLock);
+
+    return status;
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

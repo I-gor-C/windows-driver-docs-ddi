@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 7ecb357f-ba84-4b3d-b6db-73f6682988b8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serial_clr_rts, IOCTL_SERIAL_CLR_RTS control code [Serial Ports], IOCTL_SERIAL_CLR_RTS, ntddser/IOCTL_SERIAL_CLR_RTS, serref_c6ddd78f-7cea-4358-9c02-9c211399f6c8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_CLR_RTS
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -63,7 +67,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero.
 
 
@@ -74,13 +77,10 @@ The <b>Information</b> member is set to zero.
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_rts.md">IOCTL_SERIAL_SET_RTS</a>
-</dt>
-</dl>
+
  
 
  

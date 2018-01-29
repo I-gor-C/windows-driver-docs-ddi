@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : b32c6a7e-84c2-412a-a13e-959aaddc81ac
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_CONTROL_FEATURE_REQUEST,
+ms.keywords : usb/_URB_CONTROL_FEATURE_REQUEST, _URB_CONTROL_FEATURE_REQUEST structure [Buses], usbstrct_0552c436-5e4b-4573-b9ea-1f098de7dedd.xml, buses._urb_control_feature_request, _URB_CONTROL_FEATURE_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_CONTROL_FEATURE_REQUEST
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -58,69 +62,71 @@ struct _URB_CONTROL_FEATURE_REQUEST {
 
 ## Members
 
-        
-            `FeatureSelector`
 
-            Specifies the USB-defined feature code to be cleared or set. Using a feature code that is invalid, cannot be set, or cannot be cleared will cause the target to stall. The bus driver will copy the value in the <b>FeatureSelector</b> member to the <b>wValue</b> field of the setup packet.
-        
-            `hca`
+`_URB`
 
-            Reserved. Do not use.
-        
-            `Hdr`
 
-            Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> indicates either a set or a clear feature operation, to perform on a device, interface, endpoint or other non-standard component. <b>Hdr.Function</b> must have one of the following values:
 
-<dl>
-<dd>URB_FUNCTION_SET_FEATURE_TO_DEVICE</dd>
-<dd>URB_FUNCTION_SET_FEATURE_TO_INTERFACE</dd>
-<dd>URB_FUNCTION_SET_FEATURE_TO_ENDPOINT</dd>
-<dd>URB_FUNCTION_SET_FEATURE_TO_OTHER</dd>
-<dd>URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE</dd>
-<dd>URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE </dd>
-<dd>URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT</dd>
-<dd>URB_FUNCTION_CLEAR_FEATURE_TO_OTHER</dd>
-</dl>
+`_URB_HCD_AREA`
+
+
+
+`_URB_HEADER`
+
+
+
+`FeatureSelector`
+
+Specifies the USB-defined feature code to be cleared or set. Using a feature code that is invalid, cannot be set, or cannot be cleared will cause the target to stall. The bus driver will copy the value in the <b>FeatureSelector</b> member to the <b>wValue</b> field of the setup packet.
+
+`hca`
+
+Reserved. Do not use.
+
+`Hdr`
+
+Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> indicates either a set or a clear feature operation, to perform on a device, interface, endpoint or other non-standard component. <b>Hdr.Function</b> must have one of the following values:
+
 <b>Hdr.Length</b> must equal <code>sizeof(_URB_CONTROL_FEATURE_REQUEST)</code>.
-        
-            `Index`
 
-            Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <b>Index</b> must be zero. The bus driver will copy the value in the <b>Index</b> member to the <b>wIndex</b> field of the setup packet.
-        
-            `Reserved`
+`Index`
 
-            Reserved. Do not use.
-        
-            `Reserved0`
+Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <b>Index</b> must be zero. The bus driver will copy the value in the <b>Index</b> member to the <b>wIndex</b> field of the setup packet.
 
-            Reserved. Do not use.
-        
-            `Reserved1`
+`Reserved`
 
-            Reserved. Do not use.
-        
-            `Reserved2`
+Reserved. Do not use.
 
-            Reserved. Do not use.
-        
-            `Reserved3`
+`Reserved0`
 
-            Reserved. Do not use.
-        
-            `Reserved4`
+Reserved. Do not use.
 
-            Reserved. Do not use.
-        
-            `Reserved5`
+`Reserved1`
 
-            Reserved. Do not use.
-        
-            `UrbLink`
+Reserved. Do not use.
 
-            Reserved. Do not use.
+`Reserved2`
 
-    ## Remarks
-        Drivers can use the <b>UsbBuildFeatureRequest</b> service routine to format this URB. 
+Reserved. Do not use.
+
+`Reserved3`
+
+Reserved. Do not use.
+
+`Reserved4`
+
+Reserved. Do not use.
+
+`Reserved5`
+
+Reserved. Do not use.
+
+`UrbLink`
+
+Reserved. Do not use.
+
+## Remarks
+Drivers can use the <b>UsbBuildFeatureRequest</b> service routine to format this URB. 
 
 The reserved members of this structure must be treated as opaque and are reserved for system use.
 
@@ -136,19 +142,14 @@ Likewise, when a driver issues a URB with a function type of URB_FUNCTION_SYNC_R
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8c6a3766-c959-4979-8dc9-3b5234003272
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcUnregisterIoTimeout
+ms.keywords : audio.iprefetchoffset, IPreFetchOffset interface [Audio Devices], IPreFetchOffset interface [Audio Devices], described, IPreFetchOffset, portcls/IPreFetchOffset, audmp-routines_71e52125-c3a2-4434-96f3-e3a66b482a3a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPreFetchOffset
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 

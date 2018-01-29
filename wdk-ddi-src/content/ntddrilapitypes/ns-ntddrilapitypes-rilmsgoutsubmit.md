@@ -7,8 +7,8 @@ old-location : netvista\rilmsgoutsubmit.htm
 old-project : netvista
 ms.assetid : 83d15e40-b93f-4c7a-bfe4-db939c24b94f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGOUTSUBMIT, RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT, RILMSGOUTSUBMIT structure [Network Drivers Starting with Windows Vista], netvista.rilmsgoutsubmit, RILMSGOUTSUBMIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGOUTSUBMIT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT
 ---
 
@@ -55,46 +59,46 @@ typedef struct _RILMSGOUTSUBMIT {
 
 ## Members
 
-        
-            `cbHdrLength`
 
-            
-        
-            `cchMsgLength`
+`cbHdrLength`
 
-            
-        
-            `dwMsgID`
 
-            
-        
-            `dwProtocolID`
 
-            
-        
-            `dwVPFormat`
+`cchMsgLength`
 
-            
-        
-            `raDestAddress`
 
-            
-        
-            `rgbHdr`
 
-            
-        
-            `rgbMsg`
+`dwMsgID`
 
-            
-        
-            `rmdDataCoding`
 
-            
-        
-            `stVP`
 
-            
+`dwProtocolID`
+
+
+
+`dwVPFormat`
+
+
+
+`raDestAddress`
+
+
+
+`rgbHdr`
+
+
+
+`rgbMsg`
+
+
+
+`rmdDataCoding`
+
+
+
+`stVP`
+
+
 
 
 ## Requirements

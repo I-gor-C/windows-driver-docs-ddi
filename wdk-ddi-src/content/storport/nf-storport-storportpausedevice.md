@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b656882a-1cc7-45e8-bda4-c1450b599b4b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortPauseDevice
+ms.keywords : storprt_5506e943-789f-49d7-a9bc-c837fcd1bba2.xml, StorPortPauseDevice, StorPortPauseDevice routine [Storage Devices], storage.storportpausedevice, storport/StorPortPauseDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortPauseDevice
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -71,7 +75,7 @@ Identifies the logical unit number of the target device.
 
 `Timeout`
 
-
+TBD
 
 
 ## Return Value
@@ -96,11 +100,8 @@ When the time-out expires, I/O requests to the device will be resumed.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportresumedevice.md">StorPortResumeDevice</a>
-</dt>
-</dl>
+
  
 
  

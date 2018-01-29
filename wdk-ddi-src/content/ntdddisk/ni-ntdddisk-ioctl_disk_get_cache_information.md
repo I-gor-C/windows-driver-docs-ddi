@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fc651954-2048-4358-91b0-4d99e38e9a67
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_get_cache_information, IOCTL_DISK_GET_CACHE_INFORMATION control code [Storage Devices], IOCTL_DISK_GET_CACHE_INFORMATION, ntdddisk/IOCTL_DISK_GET_CACHE_INFORMATION, k307_1471eb7a-169f-4653-9bfe-01714d6299b7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_GET_CACHE_INFORMATION
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_CACHE_INFORMATION IOCTL
-Returns disk cache configuration data.
-
-
-
 Returns disk cache configuration data.
 
 ### Major Code
@@ -63,7 +63,6 @@ The device driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_cache_infor
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the size of the block of status information being returned, <b>sizeof</b>(DISK_CACHE_INFORMATION). The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_DEVICE_NOT_READY, STATUS_BUFFER_TOO_SMALL, STATUS_INSUFFICIENT_RESOURCES, STATUS_IO_DEVICE_ERROR, or STATUS_NOT_SUPPORTED.
 
 
@@ -74,13 +73,10 @@ The <b>Information</b> field is set to the size of the block of status informati
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

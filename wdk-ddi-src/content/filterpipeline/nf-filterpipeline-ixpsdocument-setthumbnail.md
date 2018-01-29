@@ -7,8 +7,8 @@ old-location : print\ixpsdocument_setthumbnail.htm
 old-project : print
 ms.assetid : 47211c8f-e112-47fd-bd9e-57ff7ec586a5
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsDocument, IXpsDocument::SetThumbnail, SetThumbnail
+ms.date : 1/18/2018
+ms.keywords : IXpsDocument, SetThumbnail, SetThumbnail method [Print Devices], IXpsDocument interface, IXpsDocument interface [Print Devices], SetThumbnail method, filterpipeline_ee7609e5-4e6f-4619-aa3f-dfa217d5eabc.xml, filterpipeline/IXpsDocument::SetThumbnail, SetThumbnail method [Print Devices], print.ixpsdocument_setthumbnail, IXpsDocument::SetThumbnail
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IXpsDocument.SetThumbnail
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

@@ -7,8 +7,8 @@ old-location : netvista\rilchangecallbarringpasswordparams_2.htm
 old-project : netvista
 ms.assetid : 1a9dda19-329b-4046-bba1-1bbedf37fa31
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCHANGECALLBARRINGPASSWORDPARAMS, *LPRILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILCHANGECALLBARRINGPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS, rilapitypes/RILCHANGECALLBARRINGPASSWORDPARAMS, netvista.rilchangecallbarringpasswordparams_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCHANGECALLBARRINGPASSWORDPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILCHANGECALLBARRINGPASSWORDPARAMS, *LPRILCHANGECALLBARRINGPASSWORDPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -51,26 +55,26 @@ typedef struct _RILCHANGECALLBARRINGPASSWORDPARAMS {
 
 ## Members
 
-        
-            `dwExecutor`
 
-            
-        
-            `dwType`
+`dwExecutor`
 
-            
-        
-            `szConfirmPassword`
 
-            
-        
-            `szNewPassword`
 
-            
-        
-            `szOldPassword`
+`dwType`
 
-            
+
+
+`szConfirmPassword`
+
+
+
+`szNewPassword`
+
+
+
+`szOldPassword`
+
+
 
 
 ## Requirements

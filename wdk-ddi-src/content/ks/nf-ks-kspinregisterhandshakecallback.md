@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a5b9f731-e029-40c2-9fbb-d7a3b63615df
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinRegisterHandshakeCallback
+ms.keywords : ks/KsPinRegisterHandshakeCallback, avfunc_9588944b-a56b-473a-848d-0a01031b6911.xml, KsPinRegisterHandshakeCallback, KsPinRegisterHandshakeCallback function [Streaming Media Devices], stream.kspinregisterhandshakecallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinRegisterHandshakeCallback
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -55,12 +59,7 @@ A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which t
 
 `Handshake`
 
-<dl>
-<dd>
 A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnkspinhandshake.md">AVStrMiniPinHandshake</a> routine to be called when AVStream receives a protocol handshake request on <i>Pin</i> that it does not handle.
-
-</dd>
-</dl>
 
 
 ## Return Value
@@ -87,26 +86,18 @@ Minidrivers that support private protocols between a given pin and another AVStr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnkspinhandshake.md">AVStrMiniPinHandshake</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
+
+<a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
+
+<a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a>
+
+<a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a>
+
  
 
  

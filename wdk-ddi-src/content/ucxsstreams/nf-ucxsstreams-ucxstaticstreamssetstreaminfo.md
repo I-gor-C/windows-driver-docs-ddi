@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 40AE9327-ABB7-4A63-AC90-494E2BC26C08
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxStaticStreamsSetStreamInfo
+ms.keywords : buses._ucxstaticstreamssetstreaminfo, UcxStaticStreamsSetStreamInfo method [Buses], UcxStaticStreamsSetStreamInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxStaticStreamsSetStreamInfo
-req.alt-loc : ucxsstreams.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -84,11 +88,8 @@ For a code example, see <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
-</dt>
-</dl>
+
  
 
  

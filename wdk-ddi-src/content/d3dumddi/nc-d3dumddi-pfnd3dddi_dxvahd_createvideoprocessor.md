@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 68a7c394-4b0f-4446-a54b-5aee6cf8a913
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.createvideoprocessor, CreateVideoProcessor callback function [Display Devices], CreateVideoProcessor, PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR, PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR, d3dumddi/CreateVideoProcessor, UserModeDisplayDriver_Functions_ce6a0d51-9da3-43d9-ac23-c2e250ca4cfa.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : CreateVideoProcessor is supported beginning with the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CreateVideoProcessor
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,13 +68,35 @@ HRESULT Pfnd3dddiDxvahdCreatevideoprocessor(
 ## Return Value
 
 <b>CreateVideoProcessor</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The video processor is successfully created. 
+</dl>
+</td>
+<td width="60%">
+The video processor is successfully created. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_createvideoprocessor.md">CreateVideoProcessor</a> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -87,14 +113,10 @@ HRESULT Pfnd3dddiDxvahdCreatevideoprocessor(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_createvideoprocessor.md">D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_destroyvideoprocessor.md">DestroyVideoProcessor</a>
-</dt>
-</dl>
+
  
 
  

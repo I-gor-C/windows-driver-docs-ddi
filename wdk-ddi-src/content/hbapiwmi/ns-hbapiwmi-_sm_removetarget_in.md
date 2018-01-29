@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a32e2442-a6a8-4c1a-ab70-40fdb525bafb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_RemoveTarget_IN, SM_RemoveTarget_IN, *PSM_RemoveTarget_IN
+ms.keywords : hbapiwmi/SM_RemoveTarget_IN, SM_RemoveTarget_IN, hbapiwmi/PSM_RemoveTarget_IN, _SM_RemoveTarget_IN, PSM_RemoveTarget_IN structure pointer [Storage Devices], storage.sm_removetarget_in, structs-Fibre_6efe773b-e240-40d4-bcf6-c6d141061ac3.xml, SM_RemoveTarget_IN structure [Storage Devices], *PSM_RemoveTarget_IN, PSM_RemoveTarget_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_RemoveTarget_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SM_RemoveTarget_IN, *PSM_RemoveTarget_IN
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSM_RemoveTarget_IN, SM_RemoveTarget_IN"
 ---
 
 # _SM_RemoveTarget_IN structure
@@ -49,25 +53,25 @@ typedef struct _SM_RemoveTarget_IN {
 
 ## Members
 
-        
-            `AllTargets`
 
-            The scope of the target events that stop reporting. If this member is zero, the WMI provider client stops reporting events that are associated with the port that is indicated by DiscoveredPortWWN. If this member is nonzero, the WMI provider stops reporting events that are associated with any target.
-        
-            `DiscoveredPortWWN`
+`AllTargets`
 
-            A worldwide name (WWN) that indicates the port that was discovered remotely. Remove this port from the list of ports whose events are reported to the WMI client.
-        
-            `DomainPortWWN`
+The scope of the target events that stop reporting. If this member is zero, the WMI provider client stops reporting events that are associated with the port that is indicated by DiscoveredPortWWN. If this member is nonzero, the WMI provider stops reporting events that are associated with any target.
 
-            A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
-        
-            `HbaPortWWN`
+`DiscoveredPortWWN`
 
-            A worldwide name (WWN) that indicates the local port that should be removed from the list of ports whose events are reported to the WMI client.
+A worldwide name (WWN) that indicates the port that was discovered remotely. Remove this port from the list of ports whose events are reported to the WMI client.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM_RemoveTarget_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.</p>
+`DomainPortWWN`
+
+A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
+
+`HbaPortWWN`
+
+A worldwide name (WWN) that indicates the local port that should be removed from the list of ports whose events are reported to the WMI client.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM_RemoveTarget_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

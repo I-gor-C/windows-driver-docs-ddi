@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ca1861d3-a838-4b4a-9304-e75dcca04f0d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCheckSharedResourceAccess
+ms.keywords : display.d3dkmtchecksharedresourceaccess, D3DKMTCheckSharedResourceAccess, PFND3DKMT_CHECKSHAREDRESOURCEACCESS, d3dkmthk/D3DKMTCheckSharedResourceAccess, D3DKMTCheckSharedResourceAccess function [Display Devices], OpenGL_Functions_b9ffd997-0bfe-47ad-a769-c2ed8148fe4b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMTCheckSharedResourceAccess is supported beginni
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTCheckSharedResourceAccess
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,20 +54,40 @@ NTSTATUS APIENTRY D3DKMTCheckSharedResourceAccess(
 
 `D3DKMT_CHECKSHAREDRESOURCEACCESS`
 
-
+TBD
 
 
 ## Return Value
 
 <b>D3DKMTCheckSharedResourceAccess</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The shared resource can be accessed by the process. 
+</dl>
+</td>
+<td width="60%">
+The shared resource can be accessed by the process. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -82,11 +106,8 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checksharedresourceaccess.md">D3DKMT_CHECKSHAREDRESOURCEACCESS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a39fac12-f284-4b3a-a9ab-ae75934f810e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PROCESSOR_NUMBER, *PPROCESSOR_NUMBER, PROCESSOR_NUMBER
+ms.keywords : storage.tapeminitapeerror, (*TAPE_ERROR_ROUTINE) routine [Storage Devices], (*TAPE_ERROR_ROUTINE), TAPE_ERROR_ROUTINE, TAPE_ERROR_ROUTINE, minitape/(*TAPE_ERROR_ROUTINE), tapemini_cf0f724e-63c4-4923-a59e-508c45dac6d9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*TAPE_ERROR_ROUTINE)
-req.alt-loc : minitape.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPROCESSOR_NUMBER, PROCESSOR_NUMBER"
 ---
 
@@ -94,23 +98,16 @@ A tape miniclass driver optionally specifies an entry point for its <i>TAPE_ERRO
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
-</dt>
-<dt>
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-</dt>
-<dt>
-<a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
-</dt>
-<dt>
-<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
-</dt>
-<dt>
+
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
+
+<a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 37425A71-D242-4E4B-9EE8-57207A022459
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSDEVICE_THERMAL_STATE, KSDEVICE_THERMAL_STATE
+ms.keywords : KSDEVICE_THERMAL_STATE, stream.ksdevice_thermal_state, KSDEVICE_THERMAL_STATE_HIGH, KSDEVICE_THERMAL_STATE enumeration [Streaming Media Devices], ks/KSDEVICE_THERMAL_STATE, ks/KSDEVICE_THERMAL_STATE_LOW, KSDEVICE_THERMAL_STATE_LOW, ks/KSDEVICE_THERMAL_STATE_HIGH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDEVICE_THERMAL_STATE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSDEVICE_THERMAL_STATE
 ---
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bb68ee38-1726-4493-9c3b-71a1352dd9f2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSetTransactionContext
+ms.keywords : FLT_SET_CONTEXT_KEEP_IF_EXISTS, ifsk.fltsettransactioncontext, FLT_SET_CONTEXT_REPLACE_IF_EXISTS, fltkernel/FltSetTransactionContext, FltSetTransactionContext, FltApiRef_p_to_z_ac2c79a4-ca14-417d-a394-24a38d89f3bf.xml, FltSetTransactionContext routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available and supported in Windows Vista and later o
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltSetTransactionContext
-req.alt-loc : FltMgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : FltMgr.sys
 req.irql : <= APC_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -63,13 +67,32 @@ Opaque transaction pointer for the transaction on which the context is being set
 `Operation`
 
 Flag that specifies the details of the operation to be performed. This parameter must be one of the following: 
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="FLT_SET_CONTEXT_REPLACE_IF_EXISTS"></a><a id="flt_set_context_replace_if_exists"></a><dl>
+<dt><b>FLT_SET_CONTEXT_REPLACE_IF_EXISTS</b></dt>
+</dl>
+</td>
+<td width="60%">
+If a context is already set for the transaction pointed to by the <i>Transaction</i> parameter, replace the existing context with the context pointed to by the <i>NewContext</i> parameter. Otherwise, set the context pointed to by the <i>NewContext</i> parameter as the context for the transaction pointed to by the <i>Transaction</i> parameter. 
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="FLT_SET_CONTEXT_KEEP_IF_EXISTS"></a><a id="flt_set_context_keep_if_exists"></a><dl>
+<dt><b>FLT_SET_CONTEXT_KEEP_IF_EXISTS</b></dt>
+</dl>
+</td>
+<td width="60%">
+If a context is already set for the transaction pointed to by the <i>Transaction</i> parameter, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, set the context pointed to by the <i>NewContext</i> parameter as the context for transaction pointed to by the <i>Transaction</i> parameter. 
+
+</td>
+</tr>
+</table>
 
 `NewContext`
 
@@ -83,22 +106,64 @@ Pointer to a caller-allocated variable that receives the address of the existing
 ## Return Value
 
 <b>FltSetTransactionContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
-</dl>If FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for the <i>Operation</i> parameter, this error code indicates that a context is already attached to the transaction. Only one context can be attached to a transaction for a given minifilter driver. 
+</dl>
+</td>
+<td width="60%">
+If FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for the <i>Operation</i> parameter, this error code indicates that a context is already attached to the transaction. Only one context can be attached to a transaction for a given minifilter driver. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_LINKED</b></dt>
-</dl>The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of an <b>FltSet</b><i>Xxx</i><b>Context</b> routine.
+</dl>
+</td>
+<td width="60%">
+The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of an <b>FltSet</b><i>Xxx</i><b>Context</b> routine.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The instance specified in the Instance parameter is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The instance specified in the Instance parameter is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>STATUS_INVALID_PARAMETER
+</dl>
+</td>
+<td width="60%">
+STATUS_INVALID_PARAMETER
 
 One of the following:
 
-STATUS_INVALID_PARAMETER is an error code.
+<ul>
+<li>The <i>NewContext</i> parameter does not point to a valid transaction context. </li>
+<li>An invalid value was specified for the <i>Operation</i> parameter. </li>
+</ul>
+STATUS_INVALID_PARAMETER is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -132,41 +197,28 @@ For more information about context reference counting, see <a href="https://msdn
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltenlistintransaction.md">FltEnlistInTransaction</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltrollbackenlistment.md">FltRollbackEnlistment</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
  
 
  

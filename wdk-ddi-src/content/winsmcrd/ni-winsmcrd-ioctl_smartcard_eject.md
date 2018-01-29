@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : 58bdd794-9061-4aae-a9a6-523db4e2e360
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GdiStartPageEMF
+ms.keywords : smartcrd.ioctl_smartcard_eject, IOCTL_SMARTCARD_EJECT control code [Smart Card Reader Devices], IOCTL_SMARTCARD_EJECT, winsmcrd/IOCTL_SMARTCARD_EJECT, scioctls_e12f239a-b997-4af6-bace-92e9c65c88b6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SMARTCARD_EJECT
-req.alt-loc : Winsmcrd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
 req.product : Windows 10 or later.
 ---
 
 # IOCTL_SMARTCARD_EJECT IOCTL
-The IOCTL_SMARTCARD_EJECT request ejects the currently inserted smart card from the smart card reader.
-
-
-
 The IOCTL_SMARTCARD_EJECT request ejects the currently inserted smart card from the smart card reader.
 
 ### Major Code
@@ -64,8 +64,25 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<table>
+<tr>
+<th>Return Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STATUS_NO_MEDIA</td>
+<td>No smart card is in the reader.</td>
+</tr>
+<tr>
+<td>STATUS_NOT_SUPPORTED</td>
+<td> Reader does not support smart card eject.</td>
+</tr>
+<tr>
+<td>STATUS_IO_TIMEOUT</td>
+<td>Operation timed out.</td>
+</tr>
+</table>
 
 
 ## Requirements

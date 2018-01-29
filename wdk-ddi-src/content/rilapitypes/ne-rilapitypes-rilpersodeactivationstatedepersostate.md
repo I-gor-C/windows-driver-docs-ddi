@@ -7,8 +7,8 @@ old-location : netvista\rilpersodeactivationstatedepersostate_2.htm
 old-project : netvista
 ms.assetid : e01aa9fb-a35e-41d4-994b-8a166372caaf
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPERSODEACTIVATIONSTATEDEPERSOSTATE, RILPERSODEACTIVATIONSTATEDEPERSOSTATE
+ms.date : 1/18/2018
+ms.keywords : RIL_DEPERSOSTATE_CK_REQUIRED, rilapitypes/RIL_DEPERSOSTATE_MAX, rilapitypes/RILPERSODEACTIVATIONSTATEDEPERSOSTATE, RILPERSODEACTIVATIONSTATEDEPERSOSTATE, RIL_DEPERSOSTATE_PUK_BLOCKED, RIL_DEPERSOSTATE_PUK_REQUIRED, rilapitypes/RIL_DEPERSOSTATE_PUK_BLOCKED, rilapitypes/RIL_DEPERSOSTATE_CK_REQUIRED, RIL_DEPERSOSTATE_MAX, rilapitypes/RIL_DEPERSOSTATE_PUK_REQUIRED, RILPERSODEACTIVATIONSTATEDEPERSOSTATE enumeration [Network Drivers Starting with Windows Vista], netvista.rilpersodeactivationstatedepersostate_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPERSODEACTIVATIONSTATEDEPERSOSTATE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPERSODEACTIVATIONSTATEDEPERSOSTATE
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,11 @@ typedef enum _RILPERSODEACTIVATIONSTATEDEPERSOSTATE {
 
 <tr>
 <td>RIL_DEPERSOSTATE_PUK_REQUIRED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DEPERSOSTATE_READY</td>
 <td></td>
 </tr>
 </table>

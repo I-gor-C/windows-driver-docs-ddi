@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5b2025ce-e0dd-434d-b92b-16ecaf24808f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_VIEWPORT, D3D10_DDI_VIEWPORT
+ms.keywords : UMDisplayDriver_Dx10param_Structs_820ac08a-01a2-4e47-8573-aedf3c3769e1.xml, D3D10_DDI_VIEWPORT structure [Display Devices], d3d10umddi/D3D10_DDI_VIEWPORT, D3D10_DDI_VIEWPORT, display.d3d10_ddi_viewport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_DDI_VIEWPORT
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_DDI_VIEWPORT
 ---
 
@@ -51,30 +55,30 @@ typedef struct D3D10_DDI_VIEWPORT {
 
 ## Members
 
-        
-            `Height`
 
-            [in] A single-precision float vector for the height of the viewport.
-        
-            `MaxDepth`
+`Height`
 
-            [in] A single-precision float vector for the maximum depth of the viewport.
-        
-            `MinDepth`
+[in] A single-precision float vector for the height of the viewport.
 
-            [in] A single-precision float vector for the minimum depth of the viewport.
-        
-            `TopLeftX`
+`MaxDepth`
 
-            [in] A single-precision float vector for the top-left x-coordinate of the viewport.
-        
-            `TopLeftY`
+[in] A single-precision float vector for the maximum depth of the viewport.
 
-            [in] A single-precision float vector for the top-left y-coordinate of the viewport.
-        
-            `Width`
+`MinDepth`
 
-            [in] A single-precision float vector for the width of the viewport.
+[in] A single-precision float vector for the minimum depth of the viewport.
+
+`TopLeftX`
+
+[in] A single-precision float vector for the top-left x-coordinate of the viewport.
+
+`TopLeftY`
+
+[in] A single-precision float vector for the top-left y-coordinate of the viewport.
+
+`Width`
+
+[in] A single-precision float vector for the width of the viewport.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct D3D10_DDI_VIEWPORT {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setviewports.md">SetViewports</a>
-</dt>
-</dl>
+
  
 
  

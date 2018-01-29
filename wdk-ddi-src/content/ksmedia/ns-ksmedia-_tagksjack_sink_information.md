@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : ec832068-9b5d-40ce-bafc-31642539e2d9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _tagKSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION
+ms.keywords : KSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION structure [Audio Devices], ksmedia/PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION, _tagKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION structure pointer [Audio Devices], audio.ksjack_sink_information, ksmedia/KSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION, aud-prop_e9bbfa8a-d002-400c-a35d-3da0a8026cd6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later Windows operating s
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSJACK_SINK_INFORMATION
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION"
 ---
 
@@ -54,38 +58,42 @@ typedef struct _tagKSJACK_SINK_INFORMATION {
 
 ## Members
 
-        
-            `AICapable`
 
-            Specifies that this jack sink provides support for the following data packet types: audio content protection (ACP), international standard recording code-1 (ISRC1), and ISRC2.
-        
-            `AudioLatency`
+`AICapable`
 
-            Specifies the sink audio latency.
-        
-            `ConnType`
+Specifies that this jack sink provides support for the following data packet types: audio content protection (ACP), international standard recording code-1 (ISRC1), and ISRC2.
 
-            Specifies the connection type of the sink. This parameter is an enumeration of type <a href="http://go.microsoft.com/fwlink/p/?linkid=143848">KSJACK_SINK_CONNECTIONTYPE</a>.
-        
-            `HDCPCapable`
+`AudioLatency`
 
-            Specifies that this jack sink provides support for High-bandwidth Digital Content Protection (HDCP).
-        
-            `ManufacturerId`
+Specifies the sink audio latency.
 
-            Specifies the sink manufacturer ID.
-        
-            `ProductId`
+`ConnType`
 
-            Specifies the sink product ID.
-        
-            `SinkDescription`
+Specifies the connection type of the sink. This parameter is an enumeration of type <a href="http://go.microsoft.com/fwlink/p/?linkid=143848">KSJACK_SINK_CONNECTIONTYPE</a>.
 
-            Specifies a string that contains the sink name, which must be NULL-terminated. The maximum length is defined by the MAX_SINK_DESCRIPTION_NAME_LENGTH constant (31  characters, plus a terminating <b>NULL</b>).
-        
-            `SinkDescriptionLength`
+`HDCPCapable`
 
-            Specifies the length of the <b>SinkDescription</b>[] member.
+Specifies that this jack sink provides support for High-bandwidth Digital Content Protection (HDCP).
+
+`ManufacturerId`
+
+Specifies the sink manufacturer ID.
+
+`PortId`
+
+
+
+`ProductId`
+
+Specifies the sink product ID.
+
+`SinkDescription`
+
+Specifies a string that contains the sink name, which must be NULL-terminated. The maximum length is defined by the MAX_SINK_DESCRIPTION_NAME_LENGTH constant (31  characters, plus a terminating <b>NULL</b>).
+
+`SinkDescriptionLength`
+
+Specifies the length of the <b>SinkDescription</b>[] member.
 
 
 ## Requirements
@@ -96,13 +104,10 @@ typedef struct _tagKSJACK_SINK_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-</dl>
+
  
 
  

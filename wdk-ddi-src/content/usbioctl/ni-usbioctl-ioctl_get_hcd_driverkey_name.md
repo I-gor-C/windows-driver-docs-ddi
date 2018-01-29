@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2435ef20-c75c-4b28-9824-8428b2ac6326
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_get_hcd_driverkey_name, IOCTL_GET_HCD_DRIVERKEY_NAME control code [Buses], IOCTL_GET_HCD_DRIVERKEY_NAME, usbioctl/IOCTL_GET_HCD_DRIVERKEY_NAME, usbirp_e5bfae17-3a5d-414d-a24d-6c09269618aa.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GET_HCD_DRIVERKEY_NAME
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
@@ -39,8 +43,6 @@ req.product : Windows 10 or later.
 The <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> I/O control request retrieves the driver key name in the registry for a USB host controller driver.
 
 
-
-The <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> I/O control request retrieves the driver key name in the registry for a USB host controller driver.
 
 <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> is a user-mode I/O control request. This request targets the USB host controller (GUID_DEVINTERFACE_USB_HOST_CONTROLLER).
 
@@ -66,13 +68,121 @@ The size of this buffer is specified in the <b>Parameters.DeviceIoControl.Output
 <text></text>
 
 ### Status Block
-I/O Status block
 The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
 
-    ## Remarks
-        To get the driver key name in  the registry, you must perform the following tasks: 
+## Remarks
+To get the driver key name in  the registry, you must perform the following tasks: 
+<ol>
+<li>Declare a variable of the type <a href="..\usbioctl\ns-usbioctl-_usb_hcd_driverkey_name.md">USB_HCD_DRIVERKEY_NAME</a>.</li>
+<li>Send an <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> request by specifying the address and size of the variable in the output parameters. On return, the <b>ActualLength</b> member of  <a href="..\usbioctl\ns-usbioctl-_usb_hcd_driverkey_name.md">USB_HCD_DRIVERKEY_NAME</a> contains the length required to allocate a buffer to hold a <b>USB_HCD_DRIVERKEY_NAME</b> that is populated with the driver key name.</li>
+<li>Allocate memory for a buffer to hold a <a href="..\usbioctl\ns-usbioctl-_usb_hcd_driverkey_name.md">USB_HCD_DRIVERKEY_NAME</a> structure. The size of the buffer  must be  the received <b>ActualLength</b> value.</li>
+<li>Send an <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> request by passing a pointer to the allocated buffer and its size in the output parameters. On return, the <b>DriverKeyName</b> member of  <a href="..\usbioctl\ns-usbioctl-_usb_hcd_driverkey_name.md">USB_HCD_DRIVERKEY_NAME</a> is a null-terminated Unicode string that contains the name of the driver key associated with the host controller driver. </li>
+</ol>The following example code shows how to send the <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> I/O control request.
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>
+/*++
 
-The following example code shows how to send the <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> I/O control request.
+Routine Description:
+
+This routine prints the name of the driver key associated with
+the specified host controller driver.
+
+Arguments:
+
+HCD - Handle for host controller driver.
+
+Return Value: Boolean that indicates success or failure.
+
+--*/
+
+BOOL GetHCDDriverKeyName (HANDLE  HCD)
+{
+    BOOL                    success;
+    ULONG                   nBytes;
+    USB_HCD_DRIVERKEY_NAME  driverKeyName;
+    PUSB_HCD_DRIVERKEY_NAME driverKeyNameW;
+
+    driverKeyNameW = NULL;
+
+    // 1. Get the length of the name of the driver key.
+    success = DeviceIoControl(HCD,
+        IOCTL_GET_HCD_DRIVERKEY_NAME,
+        NULL,
+        0,
+        &amp;driverKeyName,
+        sizeof(driverKeyName),
+        &amp;nBytes,
+        NULL);
+
+    if (!success) 
+    {
+        printf("First IOCTL_GET_HCD_DRIVERKEY_NAME request failed\n");
+        goto GetHCDDriverKeyNameDone;
+    }
+
+    //2. Get the length of the driver key name.
+    nBytes = driverKeyName.ActualLength;
+
+    if (nBytes &lt;= sizeof(driverKeyName)) 
+    {
+        printf("Incorrect length received by IOCTL_GET_HCD_DRIVERKEY_NAME.\n");
+        goto GetHCDDriverKeyNameDone;
+    }
+
+    // 3. Allocate memory for a USB_HCD_DRIVERKEY_NAME
+    //    to hold the driver key name.
+    driverKeyNameW = (PUSB_HCD_DRIVERKEY_NAME) malloc(nBytes);
+
+    if (driverKeyNameW == NULL) 
+    {
+        printf("Failed to allocate memory.\n");
+        goto GetHCDDriverKeyNameDone;
+    }
+
+    // Get the name of the driver key of the device attached to
+    // the specified port.
+    success = DeviceIoControl(HCD,
+        IOCTL_GET_HCD_DRIVERKEY_NAME,
+        NULL,
+        0,
+        driverKeyNameW,
+        nBytes,
+        &amp;nBytes,
+        NULL);
+
+    if (!success) 
+    {
+        printf("Second IOCTL_GET_HCD_DRIVERKEY_NAME request failed.\n");
+        goto GetHCDDriverKeyNameDone;
+    }
+
+    // print the driver key name. 
+    printf("Driver Key Name: %s.\n", driverKeyNameW-&gt;DriverKeyName);
+
+
+GetHCDDriverKeyNameDone:
+
+    // Cleanup.
+    // Free the allocated memory for USB_HCD_DRIVERKEY_NAME.
+
+    if (driverKeyNameW != NULL) 
+    {
+        free(driverKeyNameW);
+        driverKeyNameW = NULL;
+    }
+
+    return success;
+}
+
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,13 +191,10 @@ The following example code shows how to send the <b>IOCTL_GET_HCD_DRIVERKEY_NAME
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_hcd_driverkey_name.md">USB_HCD_DRIVERKEY_NAME</a>
-</dt>
-</dl>
+
  
 
  

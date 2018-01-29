@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bd369651-57d4-406f-ba51-9632362de15d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_vidpn_interface_pfnreleasetargetmodeset, pfnReleaseTargetModeSet callback function [Display Devices], pfnReleaseTargetModeSet, DXGKDDI_VIDPN_RELEASETARGETMODESET, DXGKDDI_VIDPN_RELEASETARGETMODESET, d3dkmddi/pfnReleaseTargetModeSet, VidPnFunctions_c1609a38-53ff-49e0-a11a-26ceb5d64cdb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnReleaseTargetModeSet
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,18 +68,56 @@ NTSTATUS DxgkddiVidpnReleasetargetmodeset(
 ## Return Value
 
 The <b>pfnReleaseTargetModeSet</b> function returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN</b></dt>
-</dl>The handle supplied in <i>hVidPn</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hVidPn</i> was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN_TARGETMODESET</b></dt>
-</dl>The handle supplied in <i>hVidPnTargetModeSet</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hVidPnTargetModeSet</i> was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_RESOURCES_NOT_RELATED</b></dt>
-</dl>The VidPN identified by <i>hVidPn</i> does not contain the target mode set identified by <i>hVidPnTargetModeSet</i>.
+</dl>
+</td>
+<td width="60%">
+The VidPN identified by <i>hVidPn</i> does not contain the target mode set identified by <i>hVidPnTargetModeSet</i>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -101,14 +143,10 @@ The D3DKMDT_HVIDPN and D3DKMDT_HVIDPNTARGETMODESET data types are defined in <i>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiretargetmodeset.md">pfnAcquireTargetModeSet</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_createnewtargetmodeset.md">pfnCreateNewTargetModeSet</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiretargetmodeset.md">pfnAcquireTargetModeSet</a>
+
  
 
  

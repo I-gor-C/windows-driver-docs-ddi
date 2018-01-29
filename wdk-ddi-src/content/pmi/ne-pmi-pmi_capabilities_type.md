@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 6857f85b-c79a-4e80-a63f-1414aff61d1f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PMI_CAPABILITIES_TYPE, PMI_CAPABILITIES_TYPE
+ms.keywords : pmi/PMI_CAPABILITIES_TYPE, PowerMeterRef_4b81a5dd-357b-4a02-acc6-3a0538cbeffb.xml, pmi/PmiCapabilitiesMax, powermeter.pmi_capabilities_type, PmiReportedCapabilities, PmiMeteredHardware, pmi/PmiReportedCapabilities, PmiCapabilitiesMax, PMI_CAPABILITIES_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiMeteredHardware, PMI_CAPABILITIES_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PMI_CAPABILITIES_TYPE
-req.alt-loc : pmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_CAPABILITIES_TYPE
 ---
 
@@ -80,20 +84,14 @@ The <b>CapabilityType</b> member of the <a href="..\pmi\ns-pmi-_pmi_capabilities
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
-</dt>
-</dl>
+
+<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
+
+<a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
+
+<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+
  
 
  

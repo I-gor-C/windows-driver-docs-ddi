@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 380f7fbd-34aa-401b-a7dc-5d8b521f7948
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.videoprocessorsetstreamextension, pfnVideoProcessorSetStreamExtension callback function [Display Devices], pfnVideoProcessorSetStreamExtension, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMEXTENSION, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMEXTENSION, d3d10umddi/pfnVideoProcessorSetStreamExtension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnVideoProcessorSetStreamExtension
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -84,20 +88,59 @@ HRESULT Pfnd3d111DdiVideoprocessorsetstreamextension(
 ## Return Value
 
 <b>VideoProcessorSetStreamExtension</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The private state data was set successfully.
+</dl>
+</td>
+<td width="60%">
+The private state data was set successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
-</dl>The graphics adapter was removed.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was removed.
 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_FAIL</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         The display miniport driver cannot set the requested private state data for the video processor.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
+
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -114,11 +157,8 @@ HRESULT Pfnd3d111DdiVideoprocessorsetstreamextension(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
-</dt>
-</dl>
+
  
 
  

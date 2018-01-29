@@ -7,8 +7,8 @@ old-location : netvista\riluiccslotinfo.htm
 old-project : netvista
 ms.assetid : 4f8ed150-b378-49c3-955c-a1e69ab8c1a9
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCSLOTINFO, *LPRILUICCSLOTINFO, RILUICCSLOTINFO
+ms.date : 1/18/2018
+ms.keywords : RILUICCSLOTINFO, RILUICCSLOTINFO structure [Network Drivers Starting with Windows Vista], *LPRILUICCSLOTINFO, netvista.riluiccslotinfo, ntddrilapitypes/RILUICCSLOTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCSLOTINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILUICCSLOTINFO, RILUICCSLOTINFO"
 ---
 
@@ -49,22 +53,22 @@ typedef struct _RILUICCSLOTINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwNumOfUiccSlots`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwSlotState`
 
-            
+`dwNumOfUiccSlots`
+
+
+
+`dwParams`
+
+
+
+`dwSlotState`
+
+
 
 
 ## Requirements

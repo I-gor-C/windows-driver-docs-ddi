@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 304656b4-ebbe-4cb1-8735-2e03bec71f9f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.svgahwioportushort, SvgaHwIoPortUshort callback function [Display Devices], SvgaHwIoPortUshort, PDRIVER_IO_PORT_USHORT, PDRIVER_IO_PORT_USHORT, video/SvgaHwIoPortUshort, VideoMiniport_Functions_756e549c-fadc-49ae-b356-c94893809e01.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SvgaHwIoPortUshort
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -66,6 +70,12 @@ Specifies the mapped I/O port to be trapped.
 `AccessMode`
 
 Specifies the type of access allowed, which can be one or a combination (ORed) of the following values:
+
+
+<dl>
+<dt>EMULATOR_READ_ACCESS</dt>
+<dt>EMULATOR_WRITE_ACCESS</dt>
+</dl>
 
 `Data`
 
@@ -104,29 +114,20 @@ If one or more application-issued x86 <b>IN</b> or <b>OUT</b> instructions might
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\miniport\ns-miniport-_emulator_access_entry.md">EMULATOR_ACCESS_ENTRY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pdriver_io_port_ushort_string.md">SvgaHwIoPortUshortString</a>
-</dt>
-<dt>
-<a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>
-</dt>
-<dt>
-<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a>
-</dt>
-</dl>
+
+<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
+
+<a href="..\miniport\ns-miniport-_emulator_access_entry.md">EMULATOR_ACCESS_ENTRY</a>
+
+<a href="..\video\nc-video-pdriver_io_port_ushort_string.md">SvgaHwIoPortUshortString</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>
+
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+
+<a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>
+
  
 
  

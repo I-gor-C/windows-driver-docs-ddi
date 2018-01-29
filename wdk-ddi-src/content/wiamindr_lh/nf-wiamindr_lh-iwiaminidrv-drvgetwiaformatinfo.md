@@ -7,8 +7,8 @@ old-location : image\iwiaminidrv_drvgetwiaformatinfo.htm
 old-project : image
 ms.assetid : f0b7d982-735f-489c-b9f8-81a287f6722a
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaMiniDrv, IWiaMiniDrv::drvGetWiaFormatInfo, drvGetWiaFormatInfo
+ms.date : 1/18/2018
+ms.keywords : drvGetWiaFormatInfo, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo, MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv::drvGetWiaFormatInfo, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, IWiaMiniDrv, image.iwiaminidrv_drvgetwiaformatinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaMiniDrv.drvGetWiaFormatInfo
-req.alt-loc : wiamindr_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wiamindr_lh.h
 req.dll : 
 req.irql : 
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -100,19 +104,14 @@ The minidriver can define a global array to hold the WIA_FORMAT_INFO structures,
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543972">IWiaMiniDrv::drvFreeDrvItemContext</a>
-</dt>
-</dl>
- 
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvGetWiaFormatInfo method%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvGetWiaFormatInfo method%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

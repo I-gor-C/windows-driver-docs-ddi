@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a28287d6-4dfa-4db4-92df-bbcd9379a5b2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddicreateallocation, DxgkDdiCreateAllocation callback function [Display Devices], DxgkDdiCreateAllocation, DXGKDDI_CREATEALLOCATION, DXGKDDI_CREATEALLOCATION, d3dkmddi/DxgkDdiCreateAllocation, DmFunctions_fa00d14b-b5f1-4dde-8283-cc7b71911f76.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiCreateAllocation
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,20 +68,58 @@ NTSTATUS DxgkddiCreateallocation(
 ## Return Value
 
 <i>DxgkDdiCreateAllocation</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> successfully created the allocation.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters that were passed to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> contained errors that prevented it from completing.
+</dl>
+</td>
+<td width="60%">
+Parameters that were passed to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> contained errors that prevented it from completing.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> could not allocate memory that was required for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_DRIVER_MISMATCH</b></dt>
-</dl>The display miniport driver is not compatible with the user-mode display driver that initiated the call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>.
+</dl>
+</td>
+<td width="60%">
+The display miniport driver is not compatible with the user-mode display driver that initiated the call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,8 +136,7 @@ Beginning with Windows 7, if a display miniport driver processes a call to the <
 The resources that are created in the <i>DxgkDdiCreateAllocation</i> call belong to the adapter and not to the device. The display miniport driver should not reference the device data anywhere within the private allocation and resource data structures. Because of surface sharing, a resource might be in use after the destruction of the device that the user-mode display driver created the resource from. 
 
 <i>DxgkDdiCreateAllocation</i> should be made pageable.
-
-Starting in Windows 8.1, when <i>DxgkDdiCreateAllocation</i> is called, the display miniport driver can set the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>.<b>HistoryBuffer</b> member to indicate that the user-mode driver can manage the creation and destruction of history buffers.
+<h3><a id="Allocating_history_buffers"></a><a id="allocating_history_buffers"></a><a id="ALLOCATING_HISTORY_BUFFERS"></a>Allocating history buffers</h3>Starting in Windows 8.1, when <i>DxgkDdiCreateAllocation</i> is called, the display miniport driver can set the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>.<b>HistoryBuffer</b> member to indicate that the user-mode driver can manage the creation and destruction of history buffers.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,29 +152,20 @@ Starting in Windows 8.1, when <i>DxgkDdiCreateAllocation</i> is called, the dis
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_enumhandlechildren.md">DxgkCbEnumHandleChildren</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+
  
 
  

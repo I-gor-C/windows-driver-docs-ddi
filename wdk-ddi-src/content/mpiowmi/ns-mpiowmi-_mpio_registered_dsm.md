@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c1be07b7-ebce-422f-83f2-890adc71655b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MPIO_REGISTERED_DSM, *PMPIO_REGISTERED_DSM, MPIO_REGISTERED_DSM
+ms.keywords : mpiowmi/MPIO_REGISTERED_DSM, mpiowmi/PMPIO_REGISTERED_DSM, PMPIO_REGISTERED_DSM structure pointer [Storage Devices], _MPIO_REGISTERED_DSM, PMPIO_REGISTERED_DSM, *PMPIO_REGISTERED_DSM, MPIO_REGISTERED_DSM, storage.mpio_registered_dsm, structs-scsibus_70ceccae-5a45-4ce1-a6de-fa86c3d82d7d.xml, MPIO_REGISTERED_DSM structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MPIO_REGISTERED_DSM
-req.alt-loc : mpiowmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMPIO_REGISTERED_DSM, MPIO_REGISTERED_DSM"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MPIO_REGISTERED_DSM, *PMPIO_REGISTERED_DSM
 ---
 
 # _MPIO_REGISTERED_DSM structure
@@ -47,14 +51,14 @@ typedef struct _MPIO_REGISTERED_DSM {
 
 ## Members
 
-        
-            `DsmParameters`
 
-            An array that returns information about each of the registered DSMs. The number of elements in the array is given by <i>NumberDSMs</i> and each element is an instance of the DSM_PARAMETERS structure.
-        
-            `NumberDSMs`
+`DsmParameters`
 
-            An unsigned 32-bitfield that specifies the number of DSMs that are registered in the system.
+An array that returns information about each of the registered DSMs. The number of elements in the array is given by <i>NumberDSMs</i> and each element is an instance of the DSM_PARAMETERS structure.
+
+`NumberDSMs`
+
+An unsigned 32-bitfield that specifies the number of DSMs that are registered in the system.
 
 
 ## Requirements

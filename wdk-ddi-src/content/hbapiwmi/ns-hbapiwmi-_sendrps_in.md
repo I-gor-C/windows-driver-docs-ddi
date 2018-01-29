@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7ab8986d-1e28-4d25-888f-cd10e310d623
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SendRPS_IN, *PSendRPS_IN, SendRPS_IN
+ms.keywords : SendRPS_IN structure [Storage Devices], hbapiwmi/PSendRPS_IN, _SendRPS_IN, storage.sendrps_in, *PSendRPS_IN, structs-Fibre_52ab21d3-f6bf-4e1d-b5a7-3f9cd054038c.xml, PSendRPS_IN, hbapiwmi/SendRPS_IN, SendRPS_IN, PSendRPS_IN structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SendRPS_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSendRPS_IN, SendRPS_IN"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SendRPS_IN, *PSendRPS_IN
 ---
 
 # _SendRPS_IN structure
@@ -50,29 +54,29 @@ typedef struct _SendRPS_IN {
 
 ## Members
 
-        
-            `AgentDomain`
 
-            Contains the domain number of the domain controller to be queried for the status of the port indicated by <b>ObjectWWN</b>.
-        
-            `AgentWWN`
+`AgentDomain`
 
-            Contains a worldwide name for the port that is to be queried for the status of the port indicated by <b>ObjectWWN</b>.
-        
-            `ObjectPortNumber`
+Contains the domain number of the domain controller to be queried for the status of the port indicated by <b>ObjectWWN</b>.
 
-            Contains the worldwide name of the port for which port status is to be returned.
-        
-            `ObjectWWN`
+`AgentWWN`
 
-            Contains the worldwide name of the port for which port status is to be returned.
-        
-            `PortWWN`
+Contains a worldwide name for the port that is to be queried for the status of the port indicated by <b>ObjectWWN</b>.
 
-            Contains a worldwide name for the local port through which the RPS command is sent.
+`ObjectPortNumber`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SendRPS_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+Contains the worldwide name of the port for which port status is to be returned.
+
+`ObjectWWN`
+
+Contains the worldwide name of the port for which port status is to be returned.
+
+`PortWWN`
+
+Contains a worldwide name for the local port through which the RPS command is sent.
+
+## Remarks
+The WMI tool suite generates a declaration of the SendRPS_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +86,10 @@ typedef struct _SendRPS_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565505">SendRPS</a>
-</dt>
-</dl>
+
  
 
  

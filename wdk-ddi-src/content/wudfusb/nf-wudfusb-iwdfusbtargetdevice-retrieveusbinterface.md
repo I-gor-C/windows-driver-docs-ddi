@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9dfa8686-a815-417c-9488-dd86de0e15a2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetDevice, IWDFUsbTargetDevice::RetrieveUsbInterface, RetrieveUsbInterface
+ms.keywords : RetrieveUsbInterface, umdf.iwdfusbtargetdevice_retrieveusbinterface, RetrieveUsbInterface method, wdf.iwdfusbtargetdevice_retrieveusbinterface, wudfusb/IWDFUsbTargetDevice::RetrieveUsbInterface, IWDFUsbTargetDevice, IWDFUsbTargetDevice::RetrieveUsbInterface, IWDFUsbTargetDevice interface, RetrieveUsbInterface method, UMDFUSBref_cc346a35-4508-40ac-b959-20174a1b39af.xml, RetrieveUsbInterface method, IWDFUsbTargetDevice interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbTargetDevice.RetrieveUsbInterface
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -64,25 +68,53 @@ A pointer to a variable that receives a pointer to the specified <a href="..\wud
 ## Return Value
 
 <b>RetrieveUsbInterface</b> returns one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/9dfa8686-a815-417c-9488-dd86de0e15a2">RetrieveUsbInterface</a> successfully retrieved the specified USB interface for the USB device. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/9dfa8686-a815-417c-9488-dd86de0e15a2">RetrieveUsbInterface</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</dl>
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560366">IWDFUsbTargetDevice::GetNumInterfaces</a> method to retrieve the total number of USB interfaces that are available. 
 
 The driver can use the interface pointer that <b>RetrieveUsbInterface</b> retrieves, to call the methods that the <a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a> interface provides. For more information about using these methods, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-interfaces-in-umdf-1-x-drivers">Working with USB Interfaces in UMDF</a>.
-
-For a code example of how to use the <b>RetrieveUsbInterface</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560390">IWDFUsbTargetFactory::CreateUsbTargetDevice</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,20 +130,14 @@ For a code example of how to use the <b>RetrieveUsbInterface</b> method, see <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
-</dt>
-<dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560366">IWDFUsbTargetDevice::GetNumInterfaces</a>
-</dt>
-<dt>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+
 <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560366">IWDFUsbTargetDevice::GetNumInterfaces</a>
+
  
 
  

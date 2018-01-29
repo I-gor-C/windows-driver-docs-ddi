@@ -7,8 +7,8 @@ old-location : image\iwiaminidrv_drvdevicecommand.htm
 old-project : image
 ms.assetid : e17c81a6-8c4e-41f0-bd98-f7a9a0f20893
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaMiniDrv, IWiaMiniDrv::drvDeviceCommand, drvDeviceCommand
+ms.date : 1/18/2018
+ms.keywords : image.iwiaminidrv_drvdevicecommand, MiniDrv_a65ceaef-73bf-4fd1-9d56-2a4b208f54a3.xml, wiamindr_lh/IWiaMiniDrv::drvDeviceCommand, drvDeviceCommand, IWiaMiniDrv::drvDeviceCommand, IWiaMiniDrv interface [Imaging Devices], drvDeviceCommand method, drvDeviceCommand method [Imaging Devices], drvDeviceCommand method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaMiniDrv.drvDeviceCommand
-req.alt-loc : wiamindr_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wiamindr_lh.h
 req.dll : 
 req.irql : 
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -104,19 +108,14 @@ The WIA service does not write any properties before calling this method. If the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545020">IWiaMiniDrv::drvWriteItemProperties</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvDeviceCommand method%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvDeviceCommand method%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : de592c2a-6f52-48ef-b2ee-253d83cafa80
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlSubtreeSuccessor
+ms.keywords : rtlref_65e50284-427f-47d9-92c7-719b8bc1bab5.xml, ifsk.rtlsubtreesuccessor, RtlSubtreeSuccessor routine [Installable File System Drivers], ntddk/RtlSubtreeSuccessor, RtlSubtreeSuccessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlSubtreeSuccessor
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -79,20 +83,14 @@ Callers of <b>RtlSubtreeSuccessor</b> must be running at IRQL &lt;= DISPATCH_LEV
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlrealsuccessor.md">RtlRealSuccessor</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-rtlrealsuccessor.md">RtlRealSuccessor</a>
+
 <a href="..\ntddk\nf-ntddk-rtlsubtreepredecessor.md">RtlSubtreePredecessor</a>
-</dt>
-</dl>
+
  
 
  

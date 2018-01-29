@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b08354c8-ef4e-4330-8a3b-dcfe3a722a5d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetFcpPersistentBinding_IN, *PGetFcpPersistentBinding_IN, GetFcpPersistentBinding_IN
+ms.keywords : PGetFcpPersistentBinding_IN structure pointer [Storage Devices], GetFcpPersistentBinding_IN structure [Storage Devices], hbapiwmi/PGetFcpPersistentBinding_IN, GetFcpPersistentBinding_IN, structs-Fibre_34b0e554-331b-4f99-ae8e-5c2e9855b641.xml, hbapiwmi/GetFcpPersistentBinding_IN, storage.getfcppersistentbinding_in, _GetFcpPersistentBinding_IN, PGetFcpPersistentBinding_IN, *PGetFcpPersistentBinding_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFcpPersistentBinding_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGetFcpPersistentBinding_IN, GetFcpPersistentBinding_IN"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GetFcpPersistentBinding_IN, *PGetFcpPersistentBinding_IN
 ---
 
 # _GetFcpPersistentBinding_IN structure
@@ -46,13 +50,13 @@ typedef struct _GetFcpPersistentBinding_IN {
 
 ## Members
 
-        
-            `InEntryCount`
 
-            Indicates the number of binding entries that will fit in the buffer that the WMI client provides when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a> WMI method.
+`InEntryCount`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the GetFcpPersistentBinding_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
+Indicates the number of binding entries that will fit in the buffer that the WMI client provides when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a> WMI method.
+
+## Remarks
+The WMI tool suite generates a declaration of the GetFcpPersistentBinding_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _GetFcpPersistentBinding_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>
-</dt>
-</dl>
+
  
 
  

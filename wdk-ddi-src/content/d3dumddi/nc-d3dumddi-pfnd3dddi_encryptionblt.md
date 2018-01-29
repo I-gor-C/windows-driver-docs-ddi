@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a92bfff7-8af6-48c3-9e7f-95b9426aaaf2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.encryptionblt, EncryptionBlt callback function [Display Devices], EncryptionBlt, PFND3DDDI_ENCRYPTIONBLT, PFND3DDDI_ENCRYPTIONBLT, d3dumddi/EncryptionBlt, UserModeDisplayDriver_Functions_49cc68db-1210-44e5-80f1-347210dc6cf3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : EncryptionBlt is supported beginning with the Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EncryptionBlt
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,15 +68,45 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>EncryptionBlt</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The encrypted bitblt operation is successfully performed. 
+</dl>
+</td>
+<td width="60%">
+The encrypted bitblt operation is successfully performed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>EncryptionBlt</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>EncryptionBlt</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_NOTAVAILABLE</b></dt>
-</dl>The driver does not support the <i>EncryptionBlt</i> function.
+</dl>
+</td>
+<td width="60%">
+The driver does not support the <i>EncryptionBlt</i> function. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,14 +134,10 @@ The Direct3D runtime verifies that the destination surface specified by the <b>D
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_encryptionblt.md">D3DDDIARG_ENCRYPTIONBLT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

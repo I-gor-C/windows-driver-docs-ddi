@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 91bf3d1d-5be2-4790-9e6d-07db5eed4f06
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_DRAWINDEXEDPRIMITIVE2, D3DDDIARG_DRAWINDEXEDPRIMITIVE2
+ms.keywords : D3DDDIARG_DRAWINDEXEDPRIMITIVE2, display.d3dddiarg_drawindexedprimitive2, UMDisplayDriver_param_Structs_464c958b-5ca2-4e21-9d1f-a7c32cb49295.xml, d3dumddi/D3DDDIARG_DRAWINDEXEDPRIMITIVE2, _D3DDDIARG_DRAWINDEXEDPRIMITIVE2, D3DDDIARG_DRAWINDEXEDPRIMITIVE2 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_DRAWINDEXEDPRIMITIVE2
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_DRAWINDEXEDPRIMITIVE2
 ---
 
@@ -51,33 +55,33 @@ typedef struct _D3DDDIARG_DRAWINDEXEDPRIMITIVE2 {
 
 ## Members
 
-        
-            `BaseVertexOffset`
 
-            [in] The offset that should be added to each vertex in vertex stream 0 by the various primitives to determine the actual vertex in vertex stream 0. This offset could be negative, but when an index is added to the offset, the result is positive.
-        
-            `MinIndex`
+`BaseVertexOffset`
 
-            [in] The minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
-        
-            `NumVertices`
+[in] The offset that should be added to each vertex in vertex stream 0 by the various primitives to determine the actual vertex in vertex stream 0. This offset could be negative, but when an index is added to the offset, the result is positive.
 
-            [in] The number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
-        
-            `PrimitiveCount`
+`MinIndex`
 
-            [in] The number of triangles, lines, or points to draw for the given primitive.
-        
-            `PrimitiveType`
+[in] The minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
 
-            [in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.
-        
-            `StartIndexOffset`
+`NumVertices`
 
-            [in] The offset of the first index in the index buffer from which indices are read to draw the primitives.
+[in] The number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
 
-    ## Remarks
-        The Microsoft Direct3D runtime transforms the index data before passing a pointer to the description of the index data in the <i>pData</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawindexedprimitive2.md">DrawIndexedPrimitive2</a> function. 
+`PrimitiveCount`
+
+[in] The number of triangles, lines, or points to draw for the given primitive.
+
+`PrimitiveType`
+
+[in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.
+
+`StartIndexOffset`
+
+[in] The offset of the first index in the index buffer from which indices are read to draw the primitives.
+
+## Remarks
+The Microsoft Direct3D runtime transforms the index data before passing a pointer to the description of the index data in the <i>pData</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawindexedprimitive2.md">DrawIndexedPrimitive2</a> function. 
 
 When the runtime specifies triangle-edge flags in the value that is pointed to by the <i>pFlagBuffer</i> parameter in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawindexedprimitive2.md">DrawIndexedPrimitive2</a> call, the runtime also specifies to draw only one triangle (that is, the runtime specifies the D3DPT_TRIANGLELIST value in the <b>PrimitiveType</b> member and 0x00000001 in the <b>PrimitiveCount</b> member of D3DDDIARG_DRAWINDEXEDPRIMITIVE2 that is pointed to by the <i>pData</i> parameter in the <b>DrawIndexedPrimitive2</b> call).
 
@@ -89,13 +93,10 @@ When the runtime specifies triangle-edge flags in the value that is pointed to b
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawindexedprimitive2.md">DrawIndexedPrimitive2</a>
-</dt>
-</dl>
+
  
 
  

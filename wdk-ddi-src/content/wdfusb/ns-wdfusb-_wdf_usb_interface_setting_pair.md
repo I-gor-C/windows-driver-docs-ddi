@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b6f169ae-6c4c-4c27-8532-75a76b66cc5a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_INTERFACE_SETTING_PAIR, *PWDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR
+ms.keywords : PWDF_USB_INTERFACE_SETTING_PAIR structure pointer, wdfusb/PWDF_USB_INTERFACE_SETTING_PAIR, PWDF_USB_INTERFACE_SETTING_PAIR, kmdf.wdf_usb_interface_setting_pair, DFUsbRef_e8de7f02-5d9b-4cba-9e7c-dc4562256f9e.xml, *PWDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR structure, wdfusb/WDF_USB_INTERFACE_SETTING_PAIR, _WDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR, wdf.wdf_usb_interface_setting_pair
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_INTERFACE_SETTING_PAIR
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PWDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_USB_INTERFACE_SETTING_PAIR, *PWDF_USB_INTERFACE_SETTING_PAIR
 req.product : Windows 10 or later.
 ---
 
@@ -50,17 +54,17 @@ typedef struct _WDF_USB_INTERFACE_SETTING_PAIR {
 
 ## Members
 
-        
-            `SettingIndex`
 
-            A device-specific index value that identifies an alternate setting for the interface. Alternate settings are described in the USB specification.
-        
-            `UsbInterface`
+`SettingIndex`
 
-            A handle to a framework USB interface object.
+A device-specific index value that identifies an alternate setting for the interface. Alternate settings are described in the USB specification.
 
-    ## Remarks
-        The <b>WDF_USB_INTERFACE_SETTING_PAIR</b> structure is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure.
+`UsbInterface`
+
+A handle to a framework USB interface object.
+
+## Remarks
+The <b>WDF_USB_INTERFACE_SETTING_PAIR</b> structure is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -70,13 +74,10 @@ typedef struct _WDF_USB_INTERFACE_SETTING_PAIR {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>
-</dt>
-</dl>
+
  
 
  

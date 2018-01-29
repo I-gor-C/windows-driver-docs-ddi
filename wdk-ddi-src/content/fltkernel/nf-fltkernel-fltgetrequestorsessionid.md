@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6a0eb588-fe64-4f36-8648-8e006e16704e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetRequestorSessionId
+ms.keywords : FltGetRequestorSessionId routine [Installable File System Drivers], FltGetRequestorSessionId, fltkernel/FltGetRequestorSessionId, ifsk.fltgetrequestorsessionid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows 7 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetRequestorSessionId
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,7 +70,7 @@ The <b>FltGetRequestorSessionId</b> routine returns STATUS_SUCCESS on success or
 
 If a process has no session ID, the SessionId parameter refers to -1 and the <b>FltGetRequestorSessionId</b> routine returns STATUS_SUCCESS.
 
-If the <b>FltGetRequestorSessionId</b> routine returns STATUS_UNSUCCESSFUL, <i>SessionId</i> is not valid.</p>
+If the <b>FltGetRequestorSessionId</b> routine returns STATUS_UNSUCCESSFUL, <i>SessionId</i> is not valid.
 
 ## Requirements
 | &nbsp; | &nbsp; |

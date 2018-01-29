@@ -7,8 +7,8 @@ old-location : netvista\rilmsgdcsflags.htm
 old-project : netvista
 ms.assetid : 9c69d290-0cc6-4444-b9cb-a9555526e9ed
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGDCSFLAGS, RILMSGDCSFLAGS
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_DCSFLAG_INDICATIONACTIVE, RIL_DCSFLAG_DISCARD, RILMSGDCSFLAGS, RILMSGDCSFLAGS enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_DCSFLAG_ALL, netvista.rilmsgdcsflags, ntddrilapitypes/RIL_DCSFLAG_COMPRESSED, RIL_DCSFLAG_INDICATIONACTIVE, ntddrilapitypes/RIL_DCSFLAG_DISCARD, RIL_DCSFLAG_COMPRESSED, ntddrilapitypes/RILMSGDCSFLAGS, RIL_DCSFLAG_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGDCSFLAGS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGDCSFLAGS
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILMSGDCSFLAGS {
 
 <tr>
 <td>RIL_DCSFLAG_INDICATIONACTIVE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSFLAG_NONE</td>
 <td></td>
 </tr>
 </table>

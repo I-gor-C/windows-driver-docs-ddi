@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 48b0e44d-51bb-48b1-bcbc-6a51fde3c8db
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DVD_DISK_KEY_DESCRIPTOR, DVD_DISK_KEY_DESCRIPTOR, *PDVD_DISK_KEY_DESCRIPTOR
+ms.keywords : structs-DVD_b5c88389-0128-4069-b460-d9fa81a2150e.xml, PDVD_DISK_KEY_DESCRIPTOR structure pointer [Storage Devices], storage.dvd_disk_key_descriptor, *PDVD_DISK_KEY_DESCRIPTOR, _DVD_DISK_KEY_DESCRIPTOR, DVD_DISK_KEY_DESCRIPTOR structure [Storage Devices], ntddcdvd/PDVD_DISK_KEY_DESCRIPTOR, PDVD_DISK_KEY_DESCRIPTOR, DVD_DISK_KEY_DESCRIPTOR, ntddcdvd/DVD_DISK_KEY_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_DISK_KEY_DESCRIPTOR
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DVD_DISK_KEY_DESCRIPTOR, *PDVD_DISK_KEY_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDVD_DISK_KEY_DESCRIPTOR, DVD_DISK_KEY_DESCRIPTOR"
 ---
 
 # _DVD_DISK_KEY_DESCRIPTOR structure
@@ -46,10 +50,10 @@ typedef struct _DVD_DISK_KEY_DESCRIPTOR {
 
 ## Members
 
-        
-            `DiskKeyData`
 
-            Pointer to a buffer containing the disc key data obfuscated by the bus key.
+`DiskKeyData`
+
+Pointer to a buffer containing the disc key data obfuscated by the bus key.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _DVD_DISK_KEY_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
-</dt>
-</dl>
+
  
 
  

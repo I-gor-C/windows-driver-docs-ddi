@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 05cba67b-c9da-4345-bc6f-09de12a617c1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_PIPE_INFORMATION, WDF_USB_PIPE_INFORMATION, *PWDF_USB_PIPE_INFORMATION
+ms.keywords : kmdf.wdf_usb_pipe_information, WDF_USB_PIPE_INFORMATION structure, *PWDF_USB_PIPE_INFORMATION, DFUsbRef_80f26f29-adf0-4017-b261-36637da41c0d.xml, PWDF_USB_PIPE_INFORMATION structure pointer, wdfusb/PWDF_USB_PIPE_INFORMATION, WDF_USB_PIPE_INFORMATION, PWDF_USB_PIPE_INFORMATION, wdfusb/WDF_USB_PIPE_INFORMATION, wdf.wdf_usb_pipe_information, _WDF_USB_PIPE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_PIPE_INFORMATION
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_USB_PIPE_INFORMATION, *PWDF_USB_PIPE_INFORMATION
 req.product : Windows 10 or later.
 ---
@@ -55,39 +59,39 @@ typedef struct _WDF_USB_PIPE_INFORMATION {
 
 ## Members
 
-        
-            `EndpointAddress`
 
-            The address of the endpoint on the USB device. For more information about endpoint addresses, see the USB specification.
-        
-            `Interval`
+`EndpointAddress`
 
-            The endpoint's polling interval, if the <b>PipeType</b> member is set to <b>WdfUsbPipeTypeInterrupt</b>. For more information about polling intervals, see the USB specification.
-        
-            `MaximumPacketSize`
+The address of the endpoint on the USB device. For more information about endpoint addresses, see the USB specification.
 
-            The maximum packet size, in bytes, that the pipe's endpoint is capable of sending or receiving.
+`Interval`
+
+The endpoint's polling interval, if the <b>PipeType</b> member is set to <b>WdfUsbPipeTypeInterrupt</b>. For more information about polling intervals, see the USB specification.
+
+`MaximumPacketSize`
+
+The maximum packet size, in bytes, that the pipe's endpoint is capable of sending or receiving.
 
 For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them.
-        
-            `MaximumTransferSize`
 
-            This member is not used.
-        
-            `PipeType`
+`MaximumTransferSize`
 
-            A <a href="..\wdfusb\ne-wdfusb-_wdf_usb_pipe_type.md">WDF_USB_PIPE_TYPE</a>-typed value that specifies the type of pipe.
-        
-            `SettingIndex`
+This member is not used.
 
-            An index value that identifies the alternate setting, within an interface, that the pipe belongs to. For more information about alternate settings, see the USB specification.
-        
-            `Size`
+`PipeType`
 
-            The size, in bytes, of this structure.
+A <a href="..\wdfusb\ne-wdfusb-_wdf_usb_pipe_type.md">WDF_USB_PIPE_TYPE</a>-typed value that specifies the type of pipe.
 
-    ## Remarks
-        The <b>WDF_USB_PIPE_INFORMATION</b> structure is filled in by the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetinformation.md">WdfUsbTargetPipeGetInformation</a>, <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>, and <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetendpointinformation.md">WdfUsbInterfaceGetEndpointInformation</a> methods.
+`SettingIndex`
+
+An index value that identifies the alternate setting, within an interface, that the pipe belongs to. For more information about alternate settings, see the USB specification.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+## Remarks
+The <b>WDF_USB_PIPE_INFORMATION</b> structure is filled in by the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetinformation.md">WdfUsbTargetPipeGetInformation</a>, <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>, and <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetendpointinformation.md">WdfUsbInterfaceGetEndpointInformation</a> methods.
 
 To initialize a <b>WDF_USB_PIPE_INFORMATION</b> structure, your driver should call <a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_information_init.md">WDF_USB_PIPE_INFORMATION_INIT</a>.
 
@@ -103,28 +107,20 @@ For information on how to transfer data to and from supported isochronous endpoi
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_information_init.md">WDF_USB_PIPE_INFORMATION_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfusb\ne-wdfusb-_wdf_usb_pipe_type.md">WDF_USB_PIPE_TYPE</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetendpointinformation.md">WdfUsbInterfaceGetEndpointInformation</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetinformation.md">WdfUsbTargetPipeGetInformation</a>
-</dt>
-</dl>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetendpointinformation.md">WdfUsbInterfaceGetEndpointInformation</a>
+
+<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_information_init.md">WDF_USB_PIPE_INFORMATION_INIT</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 75CD5462-8382-4E83-ADC1-3E1B811A0D60
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_SPB_SPI_RESOURCE, *PPEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE
+ms.keywords : PPEP_ACPI_SPB_SPI_RESOURCE structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_SPB_SPI_RESOURCE, PPEP_ACPI_SPB_SPI_RESOURCE, _PEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE, pepfx/PEP_ACPI_SPB_SPI_RESOURCE, kernel.pep_acpi_spb_spi_resource, PEP_ACPI_SPB_SPI_RESOURCE structure [Kernel-Mode Driver Architecture], *PPEP_ACPI_SPB_SPI_RESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_SPB_SPI_RESOURCE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_ACPI_SPB_SPI_RESOURCE, *PPEP_ACPI_SPB_SPI_RESOURCE
 ---
 
 # _PEP_ACPI_SPB_SPI_RESOURCE structure
@@ -51,34 +55,34 @@ typedef struct _PEP_ACPI_SPB_SPI_RESOURCE {
 
 ## Members
 
-        
-            `ConnectionSpeed`
 
-            The maximum speed, in hertz, supported by this connection.
-        
-            `DataBitLength`
+`ConnectionSpeed`
 
-            The size, in bits, of the smallest unit of transfer.
-        
-            `DeviceSelection`
+The maximum speed, in hertz, supported by this connection.
 
-            The device selection value. This value is
+`DataBitLength`
+
+The size, in bits, of the smallest unit of transfer.
+
+`DeviceSelection`
+
+The device selection value. This value is
 specific to the device and may refer to a chip-select line, GPIO
 line, or other line selection mechanism.
-        
-            `Phase`
 
-            The phase of the clock pulse on which to capture data.
-        
-            `Polarity`
+`Phase`
 
-            The polarity of the clock. If zero, this indicates the
+The phase of the clock pulse on which to capture data.
+
+`Polarity`
+
+The polarity of the clock. If zero, this indicates the
 clock is low during the first phase. If 1, this indicates the
 clock is high during the first phase.
-        
-            `SpbCommon`
 
-            A <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_resource.md">PEP_ACPI_SPB_RESOURCE</a> structure describing this resource.
+`SpbCommon`
+
+A <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_resource.md">PEP_ACPI_SPB_RESOURCE</a> structure describing this resource.
 
 
 ## Requirements
@@ -89,13 +93,10 @@ clock is high during the first phase.
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_resource.md">PEP_ACPI_SPB_RESOURCE</a>
-</dt>
-</dl>
+
  
 
  

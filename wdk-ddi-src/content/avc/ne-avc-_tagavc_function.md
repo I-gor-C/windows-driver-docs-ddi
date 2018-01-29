@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 31451163-bc60-4c84-88a7-e11edea97436
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _tagAVC_FUNCTION, AVC_FUNCTION
+ms.keywords : avc/AVC_FUNCTION_GET_PIN_DESCRIPTOR, avc/AVC_FUNCTION_COMMAND, AVC_FUNCTION_GET_PIN_DESCRIPTOR, AVC_FUNCTION_SET_CONNECTINFO, AVC_FUNCTION_GET_EXT_PLUG_COUNTS, avc/AVC_FUNCTION_ACQUIRE, avc/AVC_FUNCTION_CLR_CONNECTINFO, avc/AVC_FUNCTION_PEER_DO_LIST, AVC_FUNCTION_RELEASE, AVC_FUNCTION_GET_PIN_COUNT, AVC_FUNCTION_GET_SUBUNIT_INFO, avc/AVC_FUNCTION_GET_CONNECTINFO, avc/AVC_FUNCTION_SET_CONNECTINFO, AVC_FUNCTION_CLR_CONNECTINFO, avc/AVC_FUNCTION_GET_REQUEST, AVC_FUNCTION_SEND_RESPONSE, avc/AVC_FUNCTION_SEND_RESPONSE, avc/AVC_FUNCTION_GET_PIN_COUNT, AVC_FUNCTION_GET_UNIQUE_ID, avc/AVC_FUNCTION, avc/AVC_FUNCTION_GET_EXT_PLUG_COUNTS, avc/AVC_FUNCTION_GET_SUBUNIT_INFO, AVC_FUNCTION, _tagAVC_FUNCTION, stream.avc_function, AVC_FUNCTION_PEER_DO_LIST, AVC_FUNCTION_COMMAND, AVC_FUNCTION_ACQUIRE, avcref_aa8add30-67c7-469c-ab3d-9173e7b4b91e.xml, AVC_FUNCTION_GET_REQUEST, AVC_FUNCTION_FIND_PEER_DO, avc/AVC_FUNCTION_GET_UNIQUE_ID, AVC_FUNCTION enumeration [Streaming Media Devices], AVC_FUNCTION_GET_CONNECTINFO, avc/AVC_FUNCTION_RELEASE, avc/AVC_FUNCTION_FIND_PEER_DO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVC_FUNCTION
-req.alt-loc : avc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : AVC_FUNCTION
 ---
 
@@ -177,44 +181,30 @@ This function code is available only to peer instances of <i>avc.sys</i>.</td>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\avc\ns-avc-_avc_irb.md">AVC_IRB</a>
-</dt>
-<dt>
-<a href="..\avc\ns-avc-_avc_command_irb.md">AVC_COMMAND_IRB</a>
-</dt>
-<dt>
-<a href="..\avc\ns-avc-_avc_pin_count.md">AVC_PIN_COUNT</a>
-</dt>
-<dt>
-<a href="..\avc\ns-avc-_avc_pin_descriptor.md">AVC_PIN_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\avc\ns-avc-_avc_preconnect_info.md">AVC_PRECONNECT_INFO</a>
-</dt>
-<dt>
 <a href="..\avc\ns-avc-_avc_setconnect_info.md">AVC_SETCONNECT_INFO</a>
-</dt>
-<dt>
+
+<a href="..\avc\ns-avc-_avc_preconnect_info.md">AVC_PRECONNECT_INFO</a>
+
 <a href="..\avc\ns-avc-_avc_pin_id.md">AVC_PIN_ID</a>
-</dt>
-<dt>
-<a href="..\avc\ns-avc-_avc_ext_plug_counts.md">AVC_EXT_PLUG_COUNTS</a>
-</dt>
-<dt>
+
+<a href="..\avc\ns-avc-_avc_irb.md">AVC_IRB</a>
+
 <a href="..\avc\ns-avc-_avc_unique_id.md">AVC_UNIQUE_ID</a>
-</dt>
-<dt>
-<a href="..\avc\ns-avc-_avc_peer_do_locator.md">AVC_PEER_DO_LOCATOR</a>
-</dt>
-<dt>
-<a href="..\avc\ns-avc-_avc_peer_do_list.md">AVC_PEER_DO_LIST</a>
-</dt>
-<dt>
+
 <a href="..\avc\ns-avc-_avc_subunit_info_block.md">AVC_SUBUNIT_INFO_BLOCK</a>
-</dt>
-</dl>
+
+<a href="..\avc\ns-avc-_avc_peer_do_locator.md">AVC_PEER_DO_LOCATOR</a>
+
+<a href="..\avc\ns-avc-_avc_pin_count.md">AVC_PIN_COUNT</a>
+
+<a href="..\avc\ns-avc-_avc_ext_plug_counts.md">AVC_EXT_PLUG_COUNTS</a>
+
+<a href="..\avc\ns-avc-_avc_peer_do_list.md">AVC_PEER_DO_LIST</a>
+
+<a href="..\avc\ns-avc-_avc_command_irb.md">AVC_COMMAND_IRB</a>
+
+<a href="..\avc\ns-avc-_avc_pin_descriptor.md">AVC_PIN_DESCRIPTOR</a>
+
  
 
  

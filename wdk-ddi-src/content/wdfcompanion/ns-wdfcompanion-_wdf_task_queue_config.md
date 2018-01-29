@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a58dd106-dec8-4444-9783-eb16e969ea42
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_TASK_QUEUE_CONFIG, WDF_TASK_QUEUE_CONFIG, *PWDF_TASK_QUEUE_CONFIG
+ms.keywords : wdf.wdf_task_queue_config, PWDF_TASK_QUEUE_CONFIG, wdfcompanion/PWDF_TASK_QUEUE_CONFIG, WDF_TASK_QUEUE_CONFIG structure, WDF_TASK_QUEUE_CONFIG, _WDF_TASK_QUEUE_CONFIG, wdfcompanion/WDF_TASK_QUEUE_CONFIG, PWDF_TASK_QUEUE_CONFIG structure pointer, *PWDF_TASK_QUEUE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.23
-req.alt-api : WDF_TASK_QUEUE_CONFIG
-req.alt-loc : wdfcompanion.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_TASK_QUEUE_CONFIG, *PWDF_TASK_QUEUE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -50,22 +54,22 @@ typedef struct _WDF_TASK_QUEUE_CONFIG {
 
 ## Members
 
-        
-            `DispatchType`
 
-            
-        
-            `EvtTaskExecuteSync`
+`DispatchType`
 
-            
-        
-            `Size`
 
-            
-        
-            `TaskQueueId`
 
-            
+`EvtTaskExecuteSync`
+
+
+
+`Size`
+
+
+
+`TaskQueueId`
+
+
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : print\branchofficejobdata.htm
 old-project : print
 ms.assetid : B49FEED5-C90A-4E4F-9B73-E06E56FB4311
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : BranchOfficeJobData, BranchOfficeJobData, *PBranchOfficeJobData
+ms.date : 1/18/2018
+ms.keywords : PBranchOfficeJobData structure pointer [Print Devices], winsplp/PBranchOfficeJobData, print.branchofficejobdata, winsplp/BranchOfficeJobData, BranchOfficeJobData, BranchOfficeJobData structure [Print Devices], PBranchOfficeJobData, *PBranchOfficeJobData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BranchOfficeJobData
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BranchOfficeJobData, *PBranchOfficeJobData
 req.product : Windows 10 or later.
 ---
@@ -55,18 +59,18 @@ typedef struct {
 
 ## Members
 
-        
-            `eEventType`
 
-            Specifies the type of event to be logged.
-        
-            `JobId`
+`eEventType`
 
-            Specifies the ID of the job on the client.
-        
-            `JobInfo`
+Specifies the type of event to be logged.
 
-            
+`JobId`
+
+Specifies the ID of the job on the client.
+
+`JobInfo`
+
+
 
 
 ## Requirements

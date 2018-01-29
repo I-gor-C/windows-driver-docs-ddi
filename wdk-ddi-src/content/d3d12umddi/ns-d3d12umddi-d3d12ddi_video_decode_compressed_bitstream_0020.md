@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 24A1D8C7-E432-45CB-8DEA-C1137159E319
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020, D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020
+ms.keywords : D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020, D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020, display.d3d12ddi_video_decode_compressed_bitstream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020
 ---
 
@@ -47,14 +51,14 @@ typedef struct D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020 {
 
 ## Members
 
-        
-            `hDrvBuffer`
 
-            The source buffer that contains the compressed bitstream to decode.
-        
-            `Offset`
+`hDrvBuffer`
 
-            The offset to the beginning of the first slice.  This offset has alignment requirements based on the tier value.
+The source buffer that contains the compressed bitstream to decode.
+
+`Offset`
+
+The offset to the beginning of the first slice.  This offset has alignment requirements based on the tier value.
 
 
 ## Requirements

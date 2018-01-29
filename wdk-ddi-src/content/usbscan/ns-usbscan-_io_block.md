@@ -7,8 +7,8 @@ old-location : image\io_block.htm
 old-project : image
 ms.assetid : aa1ccffc-c742-415d-8b72-fef247dff03c
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _IO_BLOCK, IO_BLOCK, *PIO_BLOCK
+ms.date : 1/18/2018
+ms.keywords : usbscan/PIO_BLOCK, image.io_block, usbscan/IO_BLOCK, IO_BLOCK structure [Imaging Devices], _IO_BLOCK, IO_BLOCK, *PIO_BLOCK, stifnc_94187a6f-5c01-4d4a-a852-469f93d891b9.xml, PIO_BLOCK, PIO_BLOCK structure pointer [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_BLOCK
-req.alt-loc : usbscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : IO_BLOCK, *PIO_BLOCK
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PIO_BLOCK, IO_BLOCK"
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _IO_BLOCK {
 
 ## Members
 
-        
-            `pbyData`
 
-            Pointer to a data buffer with a length of <b>uLength</b>.
-        
-            `uIndex`
+`pbyData`
 
-            Used as the <b>Index</b> field of a USB Device Request.
-        
-            `uLength`
+Pointer to a data buffer with a length of <b>uLength</b>.
 
-            Length of the buffer to transfer.
-        
-            `uOffset`
+`uIndex`
 
-            Used as the <b>Value</b> field of a USB Device Request.
+Used as the <b>Index</b> field of a USB Device Request.
+
+`uLength`
+
+Length of the buffer to transfer.
+
+`uOffset`
+
+Used as the <b>Value</b> field of a USB Device Request.
 
 
 ## Requirements

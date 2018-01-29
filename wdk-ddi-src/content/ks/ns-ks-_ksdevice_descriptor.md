@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dc68f6d8-a2d5-4940-a708-fe761c3a8a0d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR
+ms.keywords : KSDEVICE_DESCRIPTOR structure [Streaming Media Devices], stream.ksdevice_descriptor, PKSDEVICE_DESCRIPTOR structure pointer [Streaming Media Devices], ks/PKSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR, _KSDEVICE_DESCRIPTOR, avstruct_b51d9c2c-278f-4357-b84a-da6959ea9959.xml, KSDEVICE_DESCRIPTOR, ks/KSDEVICE_DESCRIPTOR, PKSDEVICE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDEVICE_DESCRIPTOR
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR"
 ---
 
@@ -51,8 +55,8 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 ## Members
 
 
-    ## Remarks
-        Most often, this structure is used in conjunction with <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> in the client's <b>DriverEntry</b> function to initialize the device. This structure is also used to manually initialize or create devices with the <a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a> and <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a> functions.
+## Remarks
+Most often, this structure is used in conjunction with <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> in the client's <b>DriverEntry</b> function to initialize the device. This structure is also used to manually initialize or create devices with the <a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a> and <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a> functions.
 
 If you set <b>Version</b> to KSDEVICE_DESCRIPTOR_VERSION_2 and run your driver on an early version of AVStream that does not support <b>Flags</b>, all flags will be considered to be zero.
 
@@ -66,25 +70,18 @@ Similarly, using an earlier version descriptor on later versions of AVStream cau
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+
 <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
+
  
 
  

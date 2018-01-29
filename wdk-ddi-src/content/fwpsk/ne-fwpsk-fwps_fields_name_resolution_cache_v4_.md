@@ -7,8 +7,8 @@ old-location : netvista\fwps_fields_name_resolution_cache_v4.htm
 old-project : netvista
 ms.assetid : 9e999c4d-381d-4106-8eeb-e6974e2f8a22
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4_, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4
+ms.date : 1/18/2018
+ms.keywords : fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_ALE_APP_ID, FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_MAX, FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_IP_REMOTE_ADDRESS, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4_, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4, FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_ALE_USER_ID, FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_ALE_APP_ID, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_MAX, FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_PEER_NAME, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_PEER_NAME, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_ALE_USER_ID, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4, netvista.fwps_fields_name_resolution_cache_v4, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4 enumeration [Network Drivers Starting with Windows Vista], wfp_ref_5_const_3_data_fields_b0351c61-f624-4a2f-8c20-bdbad78e143f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting withn Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4
 ---
 
@@ -62,6 +66,11 @@ typedef enum FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4_ {
 <tr>
 <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_ALE_USER_ID</td>
 <td>The identifier of the local user.</td>
+</tr>
+
+<tr>
+<td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V4_COMPARTMENT_ID</td>
+<td></td>
 </tr>
 
 <tr>

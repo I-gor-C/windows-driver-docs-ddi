@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f826f949-b37f-4c48-80d9-b6ef640e1f00
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_FREQUENCY_RANGE, D3DKMDT_FREQUENCY_RANGE
+ms.keywords : d3dkmdt/D3DKMDT_FREQUENCY_RANGE, display.d3dkmdt_frequency_range, DmStructs_63b22220-c9fc-4eac-a725-caa0f5c38eba.xml, D3DKMDT_FREQUENCY_RANGE structure [Display Devices], _D3DKMDT_FREQUENCY_RANGE, D3DKMDT_FREQUENCY_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_FREQUENCY_RANGE
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_FREQUENCY_RANGE
 ---
 
@@ -49,25 +53,25 @@ typedef struct _D3DKMDT_FREQUENCY_RANGE {
 
 ## Members
 
-        
-            `MaxHSyncFreq`
 
-            The maximum horizontal refresh rate, in Hz, supported by the monitor.
-        
-            `MaxVSyncFreq`
+`MaxHSyncFreq`
 
-            The maximum vertical refresh rate, in Hz, supported by the monitor.
-        
-            `MinHSyncFreq`
+The maximum horizontal refresh rate, in Hz, supported by the monitor.
 
-            The minimum horizontal refresh rate, in Hz, supported by the monitor.
-        
-            `MinVSyncFreq`
+`MaxVSyncFreq`
 
-            The minimum vertical refresh rate, in Hz, supported by the monitor.
+The maximum vertical refresh rate, in Hz, supported by the monitor.
 
-    ## Remarks
-        The <b>RangeLimits</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_frequency_range.md">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a D3DKMDT_FREQUENCY_RANGE structure.
+`MinHSyncFreq`
+
+The minimum horizontal refresh rate, in Hz, supported by the monitor.
+
+`MinVSyncFreq`
+
+The minimum vertical refresh rate, in Hz, supported by the monitor.
+
+## Remarks
+The <b>RangeLimits</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_frequency_range.md">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a D3DKMDT_FREQUENCY_RANGE structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _D3DKMDT_FREQUENCY_RANGE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568430">Monitor Frequency Range Set Interface</a>
-</dt>
-</dl>
+
  
 
  

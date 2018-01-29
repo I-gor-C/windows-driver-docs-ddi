@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6960f235-984e-4f98-97ef-5e1dd295eab7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_OPM_GET_RANDOM_NUMBER,
+ms.keywords : iddcx/IDDCX_OPM_GET_RANDOM_NUMBER, IDDCX_OPM_GET_RANDOM_NUMBER structure [Display Devices], display.iddcx_opm_get_random_number, IDDCX_OPM_GET_RANDOM_NUMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_OPM_GET_RANDOM_NUMBER
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,14 +51,14 @@ typedef struct IDDCX_OPM_GET_RANDOM_NUMBER {
 
 ## Members
 
-        
-            `RandomNumber`
 
-            The random number the driver generated.
-        
-            `Size`
+`RandomNumber`
 
-            Total size of the structure.
+The random number the driver generated.
+
+`Size`
+
+Total size of the structure.
 
 
 ## Requirements

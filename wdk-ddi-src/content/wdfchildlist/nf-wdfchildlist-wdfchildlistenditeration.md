@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f8dc1d77-d0c5-4112-939d-221955012de1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListEndIteration
+ms.keywords : wdf.wdfchildlistenditeration, wdfchildlist/WdfChildListEndIteration, kmdf.wdfchildlistenditeration, PFN_WDFCHILDLISTENDITERATION, WdfChildListEndIteration, DFDeviceObjectChildListRef_24a52e50-851e-456f-b111-0b794e76acfb.xml, WdfChildListEndIteration method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfChildListEndIteration
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_RETRIEVE_CHILD_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -73,8 +77,6 @@ If the driver has made multiple calls to <a href="..\wdfchildlist\nf-wdfchildlis
 
 For more information about child lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">Dynamic Enumeration</a>.
 
-For a code example that uses <b>WdfChildListEndIteration</b>, see <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,20 +91,14 @@ For a code example that uses <b>WdfChildListEndIteration</b>, see <a href="..\wd
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a>
-</dt>
-<dt>
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginscan.md">WdfChildListBeginScan</a>
-</dt>
-<dt>
+
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistendscan.md">WdfChildListEndScan</a>
-</dt>
-</dl>
+
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginscan.md">WdfChildListBeginScan</a>
+
  
 
  

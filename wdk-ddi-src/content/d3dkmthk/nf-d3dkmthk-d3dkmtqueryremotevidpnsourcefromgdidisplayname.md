@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3606d5f4-760f-4ba1-84ea-218b6c2a2e20
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
+ms.keywords : display.d3dkmtqueryremotevidpnsourcefromgdidisplayname, d3dkmthk/D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName, D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function [Display Devices], D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName, PFND3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -53,15 +57,35 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The mapping was performed successfully.
+</dl>
+</td>
+<td width="60%">
+The mapping was performed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER </b></dt>
 </dl>
+</td>
+<td width="60%">
+
          Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other NTSTATUS values.
 
@@ -80,14 +104,10 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryremotevidpnsourcefromgdidisplayname.md">D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtoutputduplpresent.md">D3DKMTOutputDuplPresent</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryremotevidpnsourcefromgdidisplayname.md">D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME</a>
+
  
 
  

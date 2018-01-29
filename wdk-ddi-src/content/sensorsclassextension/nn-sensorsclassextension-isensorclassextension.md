@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : db455be3-3aec-47c4-81a8-992aa4926138
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnSetProperties, OnSetProperties
+ms.keywords : sensors.isensorclassextension, ISensorClassExtension interface [Sensor Devices], ISensorClassExtension interface [Sensor Devices], described, ISensorClassExtension, sensorsclassextension/ISensorClassExtension, Sensor_IFaces_84ca9d2b-f0e3-4500-99a4-21054c7dc527.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISensorClassExtension
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---

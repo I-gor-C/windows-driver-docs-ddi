@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c2a8973d-bdab-44a6-b88b-482355ada1e5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_COLOR_BASIS, D3DKMDT_COLOR_BASIS
+ms.keywords : display.d3dkmdt_color_basis, d3dkmdt/D3DKMDT_CB_YPBPR, D3DKMDT_COLOR_BASIS, D3DKMDT_CB_YPBPR, D3DKMDT_CB_UNINITIALIZED, D3DKMDT_CB_SRGB, DmEnums_68aa2c18-ed0d-429d-88c3-7a9a7913c7c6.xml, D3DKMDT_COLOR_BASIS enumeration [Display Devices], d3dkmdt/D3DKMDT_CB_INTENSITY, d3dkmdt/D3DKMDT_CB_SCRGB, D3DKMDT_CB_INTENSITY, d3dkmdt/D3DKMDT_CB_YCBCR, d3dkmdt/D3DKMDT_CB_SRGB, _D3DKMDT_COLOR_BASIS, d3dkmdt/D3DKMDT_COLOR_BASIS, D3DKMDT_CB_SCRGB, D3DKMDT_CB_YCBCR, d3dkmdt/D3DKMDT_CB_UNINITIALIZED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_COLOR_BASIS
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_COLOR_BASIS
 ---
 

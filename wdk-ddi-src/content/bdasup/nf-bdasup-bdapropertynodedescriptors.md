@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 46e38460-9284-4305-997d-bf72b308f301
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaPropertyNodeDescriptors
+ms.keywords : stream.bdapropertynodedescriptors, bdasup/BdaPropertyNodeDescriptors, bdaref_67976a51-5f21-4369-be96-ab6a2b758e85.xml, BdaPropertyNodeDescriptors function [Streaming Media Devices], BdaPropertyNodeDescriptors
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaPropertyNodeDescriptors
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -52,7 +56,7 @@ NTSTATUS BdaPropertyNodeDescriptors(
 
 `pIrp`
 
-
+TBD
 
 `pKSProperty`
 
@@ -60,7 +64,7 @@ Points to a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> struct
 
 `pNodeDescriptorProperty`
 
-
+TBD
 
 
 ## Return Value
@@ -87,17 +91,12 @@ For a list of BDA nodes that are available to create in a template topology, see
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564324">KSPROPERTY_BDA_NODE_DESCRIPTORS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564324">KSPROPERTY_BDA_NODE_DESCRIPTORS</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
  
 
  

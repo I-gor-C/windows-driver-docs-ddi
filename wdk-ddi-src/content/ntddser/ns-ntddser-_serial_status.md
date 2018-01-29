@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : F77EF32F-FAB6-4800-9241-5AAA9885DEF5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERIAL_STATUS, SERIAL_STATUS, *PSERIAL_STATUS
+ms.keywords : "*PSERIAL_STATUS, PSERIAL_STATUS structure pointer [Serial Ports], ntddser/SERIAL_STATUS, SERIAL_STATUS structure [Serial Ports], ntddser/PSERIAL_STATUS, PSERIAL_STATUS, SERIAL_STATUS, _SERIAL_STATUS, serports.serial_status"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SERIAL_STATUS
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SERIAL_STATUS, *PSERIAL_STATUS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSERIAL_STATUS, SERIAL_STATUS"
 ---
 
 # _SERIAL_STATUS structure
@@ -51,23 +55,22 @@ typedef struct _SERIAL_STATUS {
 
 ## Members
 
-        
-            `AmountInInQueue`
 
-            The number of bytes of data received from the serial port that are currently available to be read from the input buffer.
-        
-            `AmountInOutQueue`
+`AmountInInQueue`
 
-            The number of bytes of transmit data that are currently waiting to be written from the output buffer to the serial port.
-        
-            `EofReceived`
+The number of bytes of data received from the serial port that are currently available to be read from the input buffer.
 
-            Whether an EOF (end of file) character has been received. This member is <b>TRUE</b> if an EOF has been received. Otherwise, it is <b>FALSE</b>. The EOF character marks the end of the input stream.
-        
-            `Errors`
+`AmountInOutQueue`
 
-            A set of flags to indicate the receive errors that have occurred in the input stream. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+The number of bytes of transmit data that are currently waiting to be written from the output buffer to the serial port.
 
+`EofReceived`
+
+Whether an EOF (end of file) character has been received. This member is <b>TRUE</b> if an EOF has been received. Otherwise, it is <b>FALSE</b>. The EOF character marks the end of the input stream.
+
+`Errors`
+
+A set of flags to indicate the receive errors that have occurred in the input stream. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
 <table>
 <tr>
 <th>Flag name</th>
@@ -93,15 +96,13 @@ typedef struct _SERIAL_STATUS {
 <td>SERIAL_ERROR_FRAMING</td>
 <td>A framing error was detected in the bytes received from the input stream.</td>
 </tr>
-</table>
- 
+</table> 
 
 After the serial controller driver supplies the accumulated SERIAL_ERROR_<i>XXX</i> flags to satisfy an <a href="..\ntddser\ni-ntddser-ioctl_serial_get_commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a> request, the driver resets the flags to zero.
-        
-            `HoldReasons`
 
-            A set of flags to indicate the reasons that the serial port is currently waiting to transmit bytes to the output stream. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+`HoldReasons`
 
+A set of flags to indicate the reasons that the serial port is currently waiting to transmit bytes to the output stream. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
 <table>
 <tr>
 <th>Flag name</th>
@@ -131,17 +132,16 @@ After the serial controller driver supplies the accumulated SERIAL_ERROR_<i>XXX<
 <td>SERIAL_TX_WAITING_XOFF_SENT</td>
 <td>Sent an XOFF (transmit off) signal. This signal marks the end of transmission from the serial port, which then waits for the device on the other end of the line to start transmitting. The other device receives the transmitted XOFF signal as an XON signal.</td>
 </tr>
-</table>
- 
+</table> 
 
 <b>HoldReasons</b> is zero if the serial port has no reason to stop transmitting bytes.
-        
-            `WaitForImmediate`
 
-            Whether the serial port is waiting to transmit an immediate character. This member is <b>TRUE</b> if the serial port is waiting to transmit an immediate character. Otherwise, it is <b>FALSE</b>. Transmission of an immediate character might be delayed if any flag bit other than SERIAL_TX_WAITING_FOR_XON is set in the <b>HoldReasons</b> member. For more information about immediate characters, see <a href="..\ntddser\ni-ntddser-ioctl_serial_immediate_char.md">IOCTL_SERIAL_IMMEDIATE_CHAR</a>.
+`WaitForImmediate`
 
-    ## Remarks
-        This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a> request.
+Whether the serial port is waiting to transmit an immediate character. This member is <b>TRUE</b> if the serial port is waiting to transmit an immediate character. Otherwise, it is <b>FALSE</b>. Transmission of an immediate character might be delayed if any flag bit other than SERIAL_TX_WAITING_FOR_XON is set in the <b>HoldReasons</b> member. For more information about immediate characters, see <a href="..\ntddser\ni-ntddser-ioctl_serial_immediate_char.md">IOCTL_SERIAL_IMMEDIATE_CHAR</a>.
+
+## Remarks
+This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -151,16 +151,12 @@ After the serial controller driver supplies the accumulated SERIAL_ERROR_<i>XXX<
 | **Minimum UMDF version** |  |
 | **Header** | ntddser.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_get_commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a>
-</dt>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_immediate_char.md">IOCTL_SERIAL_IMMEDIATE_CHAR</a>
-</dt>
-</dl>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_get_commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a>
+
  
 
  

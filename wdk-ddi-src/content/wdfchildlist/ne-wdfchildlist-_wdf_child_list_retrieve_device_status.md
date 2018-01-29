@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 103f0c51-a7c9-4308-8ae2-d878daf0ff1c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, *PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS
+ms.keywords : WdfChildListRetrieveDeviceNoSuchDevice, wdfchildlist/WdfChildListRetrieveDeviceNoSuchDevice, WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, DFDeviceObjectChildListRef_e8569400-bcce-4c6a-9fe6-23244b35d361.xml, WdfChildListRetrieveDeviceSuccess, WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS enumeration, PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS enumeration pointer, kmdf.wdf_child_list_retrieve_device_status, *PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, wdf.wdf_child_list_retrieve_device_status, wdfchildlist/WdfChildListRetrieveDeviceNotYetCreated, wdfchildlist/WdfChildListRetrieveDeviceUndefined, wdfchildlist/WdfChildListRetrieveDeviceSuccess, WdfChildListRetrieveDeviceNotYetCreated, _WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, WdfChildListRetrieveDeviceUndefined, PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, wdfchildlist/WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, wdfchildlist/PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS
-req.alt-loc : wdfchildlist.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, *PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -89,20 +93,14 @@ The <b>WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</b> enumeration is used to specify 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a>
-</dt>
-<dt>
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
-</dt>
-<dt>
+
+<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a>
+
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a>
+
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievepdo.md">WdfChildListRetrievePdo</a>
-</dt>
-</dl>
+
  
 
  

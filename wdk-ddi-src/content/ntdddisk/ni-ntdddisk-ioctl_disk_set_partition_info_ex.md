@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 80558175-4d34-4011-a5b3-b6475b5e0d15
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_set_partition_info_ex, IOCTL_DISK_SET_PARTITION_INFO_EX control code [Storage Devices], IOCTL_DISK_SET_PARTITION_INFO_EX, ntdddisk/IOCTL_DISK_SET_PARTITION_INFO_EX, k307_5fc1358c-2216-41c9-a934-9a5cbed9a6fc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_SET_PARTITION_INFO_EX
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_SET_PARTITION_INFO_EX IOCTL
-Changes the partition type of the specified disk partition. (Floppy drivers need not handle this request.)
-
-
-
 Changes the partition type of the specified disk partition. (Floppy drivers need not handle this request.)
 
 ### Major Code
@@ -63,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero. The <b>Status</b> field can be set to STATUS_SUCCESS, or possibly to STATUS_INVALID_PARAMETER, STATUS_INVALID_DEVICE_REQUEST, STATUS_UNSUCCESSFUL, STATUS_INFO_LENGTH_MISMATCH, STATUS_INSUFFICIENT_RESOURCES, or STATUS_BUFFER_TOO_SMALL.
 
 
@@ -74,13 +73,10 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field can be set 
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_set_partition_information_ex.md">SET_PARTITION_INFORMATION_EX</a>
-</dt>
-</dl>
+
  
 
  

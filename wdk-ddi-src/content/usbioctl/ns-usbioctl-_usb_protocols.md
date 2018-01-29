@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F970A7FB-DF6F-414B-8B4B-C7E4C5C620B1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_PROTOCOLS, USB_PROTOCOLS, *PUSB_PROTOCOLS
+ms.keywords : PUSB_PROTOCOLS union pointer [Buses], USB_PROTOCOLS, _USB_PROTOCOLS, usbioctl/PUSB_PROTOCOLS, PUSB_PROTOCOLS, USB_PROTOCOLS union [Buses], buses.usb_protocols, *PUSB_PROTOCOLS, usbioctl/USB_PROTOCOLS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_PROTOCOLS
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_PROTOCOLS, *PUSB_PROTOCOLS
 req.product : Windows 10 or later.
 ---
@@ -57,10 +61,10 @@ typedef union _USB_PROTOCOLS {
 
 ## Members
 
-        
-            `ul`
 
-            A bitmask that indicates the USB signaling protocols that are supported by the port.
+`ul`
+
+A bitmask that indicates the USB signaling protocols that are supported by the port.
 
 
 ## Requirements
@@ -71,16 +75,12 @@ typedef union _USB_PROTOCOLS {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2.md">USB_NODE_CONNECTION_INFORMATION_EX_V2</a>
-</dt>
-<dt>
+
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
-</dt>
-</dl>
+
  
 
  

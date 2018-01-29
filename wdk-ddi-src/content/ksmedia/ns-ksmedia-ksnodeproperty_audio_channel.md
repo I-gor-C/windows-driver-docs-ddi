@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f76f5552-725b-4d8c-ab29-1f2de7bdc81f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSNODEPROPERTY_AUDIO_CHANNEL, *PKSNODEPROPERTY_AUDIO_CHANNEL, KSNODEPROPERTY_AUDIO_CHANNEL
+ms.keywords : KSNODEPROPERTY_AUDIO_CHANNEL structure [Audio Devices], PKSNODEPROPERTY_AUDIO_CHANNEL, aud-prop_a804d95b-c793-43c0-9579-af759c3c007f.xml, ksmedia/KSNODEPROPERTY_AUDIO_CHANNEL, KSNODEPROPERTY_AUDIO_CHANNEL, ksmedia/PKSNODEPROPERTY_AUDIO_CHANNEL, PKSNODEPROPERTY_AUDIO_CHANNEL structure pointer [Audio Devices], audio.ksnodeproperty_audio_channel, *PKSNODEPROPERTY_AUDIO_CHANNEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSNODEPROPERTY_AUDIO_CHANNEL
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSNODEPROPERTY_AUDIO_CHANNEL, KSNODEPROPERTY_AUDIO_CHANNEL"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSNODEPROPERTY_AUDIO_CHANNEL, *PKSNODEPROPERTY_AUDIO_CHANNEL
 ---
 
 # KSNODEPROPERTY_AUDIO_CHANNEL structure
@@ -48,20 +52,20 @@ typedef struct {
 
 ## Members
 
-        
-            `Channel`
 
-            Specifies a channel number. This member identifies the channel that is to be controlled. Given a stream with <i>n</i> channels, the channels are numbered 0 to <i>n</i>-1. When a channel number of -1 (0xFFFFFFFF) is specified, the level applies to the entire stream.
+`Channel`
+
+Specifies a channel number. This member identifies the channel that is to be controlled. Given a stream with <i>n</i> channels, the channels are numbered 0 to <i>n</i>-1. When a channel number of -1 (0xFFFFFFFF) is specified, the level applies to the entire stream.
 
 It is important  to note that the standard USB audio specification provides a mechanism that allows audio drivers that support the master channel control feature, to apply channel-specific information to an entire stream. To implement this mechanism, the USB audio driver must set the channel number to zero (0). Therefore, when a USB audio driver sets the channel number to -1, there is no guarantee that the property information will be applied to the entire stream.
-        
-            `NodeProperty`
 
-            Specifies both the target node and the property to get or set. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>.
-        
-            `Reserved`
+`NodeProperty`
 
-            Reserved for internal use by operating system. Do not use.
+Specifies both the target node and the property to get or set. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>.
+
+`Reserved`
+
+Reserved for internal use by operating system. Do not use.
 
 
 ## Requirements
@@ -72,16 +76,12 @@ It is important  to note that the standard USB audio specification provides a me
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
+
  
 
  

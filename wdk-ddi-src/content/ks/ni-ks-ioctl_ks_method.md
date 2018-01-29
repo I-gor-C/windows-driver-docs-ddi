@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a1b8c406-0d83-4145-b2cc-24e1f00ab80b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_method, IOCTL_KS_METHOD control code [Streaming Media Devices], IOCTL_KS_METHOD, ks/IOCTL_KS_METHOD, ks-ioctl_4e1471f0-3763-4828-9186-7771de6201bd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_METHOD
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -59,7 +63,6 @@ Length of the output buffer.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 
@@ -70,25 +73,18 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
+
 <a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
  
 
  

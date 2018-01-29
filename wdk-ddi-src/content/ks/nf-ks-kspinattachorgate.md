@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 14fb5b30-7169-4d8a-ad72-d0ee86da7f98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinAttachOrGate
+ms.keywords : ks/KsPinAttachOrGate, stream.kspinattachorgate, KsPinAttachOrGate, avfunc_bcc291d4-ee61-4196-88df-b7aef567a06b.xml, KsPinAttachOrGate function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinAttachOrGate
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -84,17 +88,12 @@ Do not leave an unattached OR gate at filter creation time. Instead, create the 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspinattachandgate.md">KsPinAttachAndGate</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
-</dt>
-</dl>
+
  
 
  

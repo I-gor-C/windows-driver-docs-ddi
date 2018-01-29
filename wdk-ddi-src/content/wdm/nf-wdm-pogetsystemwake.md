@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f2e6bcd6-ed6b-4c88-af96-768284bddb24
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoGetSystemWake
+ms.keywords : kernel.pogetsystemwake, PoGetSystemWake, wdm/PoGetSystemWake, PoGetSystemWake routine [Kernel-Mode Driver Architecture], portn_0762df5c-0956-4561-9984-83c680bdd764.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoGetSystemWake
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -57,12 +61,34 @@ A pointer to an IRP.
 ## Return Value
 
 <b>PoGetSystemWake</b> returns one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b><b>TRUE</b></b></dt>
-</dl>The specified IRP did cause the system to wake.
+</dl>
+</td>
+<td width="60%">
+The specified IRP did cause the system to wake.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b><b>FALSE</b></b></dt>
-</dl>The specified IRP did not cause the system to wake.
+</dl>
+</td>
+<td width="60%">
+The specified IRP did not cause the system to wake.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -86,11 +112,8 @@ It is possible that several IRPs are causing the system to wake. In this case, <
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-posetsystemwake.md">PoSetSystemWake</a>
-</dt>
-</dl>
+
  
 
  

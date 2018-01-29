@@ -7,8 +7,8 @@ old-location : netvista\rilhideidsettings_2.htm
 old-project : netvista
 ms.assetid : a633bc30-521f-4fdb-a4c0-4f72e619c28a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS, netvista.rilhideidsettings_2, RILHIDEIDSETTINGS, RILHIDEIDSETTINGS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILHIDEIDSETTINGS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS"
 req.product : Windows 10 or later.
 ---
@@ -51,26 +55,26 @@ typedef struct _RILHIDEIDSETTINGS {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwProvisioning`
 
-            
-        
-            `dwStatus`
+`dwExecutor`
 
-            
+
+
+`dwParams`
+
+
+
+`dwProvisioning`
+
+
+
+`dwStatus`
+
+
 
 
 ## Requirements

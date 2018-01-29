@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c3e7c79f-2a0d-4011-887d-0f01537cd6e6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoForwardIrpSynchronously
+ms.keywords : kernel.ioforwardirpsynchronously, wdm/IoForwardIrpSynchronously, IoForwardIrpSynchronously routine [Kernel-Mode Driver Architecture], k104_130c736e-6408-4484-b306-91ba275eaac0.xml, IoForwardIrpSynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoForwardIrpSynchronously
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PnpIrpCompletion
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,17 +87,12 @@ The <b>IoForwardIrpSynchronously</b> routine copies the current stack location t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iocopycurrentirpstacklocationtonext.md">IoCopyCurrentIrpStackLocationToNext</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
+
+<a href="..\wdm\nf-wdm-iocopycurrentirpstacklocationtonext.md">IoCopyCurrentIrpStackLocationToNext</a>
+
  
 
  

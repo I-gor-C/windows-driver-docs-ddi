@@ -7,8 +7,8 @@ old-location : netvista\rildisplayinfo_2.htm
 old-project : netvista
 ms.assetid : f24d8122-ea07-477f-9cf9-4767cc0fbf86
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDISPLAYINFO, *LPRILDISPLAYINFO, RILDISPLAYINFO
+ms.date : 1/18/2018
+ms.keywords : RILDISPLAYINFO structure [Network Drivers Starting with Windows Vista], rilapitypes/RILDISPLAYINFO, RILDISPLAYINFO, *LPRILDISPLAYINFO, netvista.rildisplayinfo_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDISPLAYINFO
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILDISPLAYINFO, RILDISPLAYINFO"
 req.product : Windows 10 or later.
 ---
@@ -53,34 +57,34 @@ typedef struct _RILDISPLAYINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwMessageSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwTag`
+`dwExecutor`
 
-            
-        
-            `dwType`
 
-            
-        
-            `pbMessage`
 
-            
+`dwMessageSize`
+
+
+
+`dwParams`
+
+
+
+`dwTag`
+
+
+
+`dwType`
+
+
+
+`pbMessage`
+
+
 
 
 ## Requirements

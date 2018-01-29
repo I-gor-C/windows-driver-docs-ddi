@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 37dc9f4a-1e9c-42f2-8894-4972562f5898
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_SELECTOR_NODE_S, KSPROPERTY_SELECTOR_NODE_S, *PKSPROPERTY_SELECTOR_NODE_S
+ms.keywords : "*PKSPROPERTY_SELECTOR_NODE_S, KSPROPERTY_SELECTOR_NODE_S, ksmedia/KSPROPERTY_SELECTOR_NODE_S, ksmedia/PKSPROPERTY_SELECTOR_NODE_S, PKSPROPERTY_SELECTOR_NODE_S, KSPROPERTY_SELECTOR_NODE_S structure [Streaming Media Devices], stream.ksproperty_selector_node_s, vidcapstruct_f7f566f9-2eea-44f5-8a4b-33769d99576f.xml, PKSPROPERTY_SELECTOR_NODE_S structure pointer [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_SELECTOR_NODE_S
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_SELECTOR_NODE_S, *PKSPROPERTY_SELECTOR_NODE_S
 ---
 
@@ -49,22 +53,22 @@ typedef struct {
 
 ## Members
 
-        
-            `Capabilities`
 
-            Specifies the capabilities of a property. This member has meaning only for Get requests. The minidriver should return the capabilities of the Selector with respect to the property specified in <b>Property</b>.
-        
-            `Flags`
+`Capabilities`
 
-            Specifies the flags of a request. For Set requests, this value indicates the desired setting. For Get requests, this value contains the current setting.
-        
-            `NodeProperty`
+Specifies the capabilities of a property. This member has meaning only for Get requests. The minidriver should return the capabilities of the Selector with respect to the property specified in <b>Property</b>.
 
-            Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
-        
-            `Value`
+`Flags`
 
-            Specifies the value of a request. For Set requests, the minidriver should set the property specified in <b>Property</b> to this value. For Get requests, the minidriver should return the value of the property specified in <b>Property</b>.
+Specifies the flags of a request. For Set requests, this value indicates the desired setting. For Get requests, this value contains the current setting.
+
+`NodeProperty`
+
+Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
+
+`Value`
+
+Specifies the value of a request. For Set requests, the minidriver should set the property specified in <b>Property</b> to this value. For Get requests, the minidriver should return the value of the property specified in <b>Property</b>.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksproperty_selector_s.md">KSPROPERTY_SELECTOR_S</a>
-</dt>
-</dl>
+
  
 
  

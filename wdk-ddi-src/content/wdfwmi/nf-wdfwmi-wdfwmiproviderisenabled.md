@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7b4fd9ff-09a7-44df-a3e6-0af5d7ea624e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWmiProviderIsEnabled
+ms.keywords : WdfWmiProviderIsEnabled, wdf.wdfwmiproviderisenabled, kmdf.wdfwmiproviderisenabled, wdfwmi/WdfWmiProviderIsEnabled, WdfWmiProviderIsEnabled method, PFN_WDFWMIPROVIDERISENABLED, DFWMIRef_3231e5bd-aa1c-4bf8-92ef-4b6c29308d95.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfWmiProviderIsEnabled
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_WMI_PROVIDER_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 A driver that does not provide an <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a> callback function can call <b>WdfWmiProviderIsEnabled</b> to determine if data collection or event notification is enabled.
 
-The following code example determines if event notification is enabled for a specified WMI data provider.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,20 +89,14 @@ The following code example determines if event notification is enabled for a spe
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
-</dt>
-<dt>
-<a href="..\wdfwmi\ne-wdfwmi-_wdf_wmi_provider_control.md">WDF_WMI_PROVIDER_CONTROL</a>
-</dt>
-<dt>
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancegetprovider.md">WdfWmiInstanceGetProvider</a>
-</dt>
-<dt>
+
+<a href="..\wdfwmi\ne-wdfwmi-_wdf_wmi_provider_control.md">WDF_WMI_PROVIDER_CONTROL</a>
+
+<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
-</dt>
-</dl>
+
  
 
  

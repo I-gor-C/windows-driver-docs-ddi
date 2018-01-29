@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3668aa5a-1cb4-4ee1-91bd-bf2f3fa30622
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoResourceRequirementsListRemove
+ms.keywords : DFResourceObjectRef_7f7c29e8-231a-48ec-b4e3-01989ad994b0.xml, wdf.wdfioresourcerequirementslistremove, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVE, WdfIoResourceRequirementsListRemove method, kmdf.wdfioresourcerequirementslistremove, WdfIoResourceRequirementsListRemove, wdfresource/WdfIoResourceRequirementsListRemove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfIoResourceRequirementsListRemove
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -75,8 +79,6 @@ When <b>WdfIoResourceRequirementsListRemove</b> removes the logical configuratio
 
 For more information about resource requirements lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
-The following code example removes the second logical configuration from a resource requirements list.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,11 +93,8 @@ The following code example removes the second logical configuration from a resou
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistremovebyioreslist.md">WdfIoResourceRequirementsListRemoveByIoResList</a>
-</dt>
-</dl>
+
  
 
  

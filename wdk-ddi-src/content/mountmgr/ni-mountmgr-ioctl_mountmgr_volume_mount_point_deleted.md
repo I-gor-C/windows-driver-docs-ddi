@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8a436053-87c2-4fa2-9280-7035a990d0b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.keywords : storage.ioctl_mountmgr_volume_mount_point_deleted, IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED control code [Storage Devices], IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED, mountmgr/IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED, k307_fce8de67-6c3d-4e89-8259-a7058c968c62.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED
-req.alt-loc : Mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED IOCTL
@@ -61,7 +65,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS.
 
 If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_VOLUME_MOUNT_POINT), the <b>Status</b> field is set to STATUS_INVALID_PARAMETER.
@@ -74,13 +77,10 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_VOLUME_MOUNT_POI
 | **Header** | mountmgr.h (include Mountmgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_volume_mount_point.md">MOUNTMGR_VOLUME_MOUNT_POINT</a>
-</dt>
-</dl>
+
  
 
  

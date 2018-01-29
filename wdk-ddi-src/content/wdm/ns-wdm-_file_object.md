@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6eefdbbb-59de-4cc8-a309-8353a05cba41
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILE_OBJECT, *PFILE_OBJECT, FILE_OBJECT, *PLOG_FILE_OBJECT, LOG_FILE_OBJECT
+ms.keywords : LOG_FILE_OBJECT structure [Kernel-Mode Driver Architecture], FILE_OBJECT, kstruct_c_4e9e4766-1e68-4972-92c4-3d13cdbc4cb2.xml, kernel.log_file_object, wdm/LOG_FILE_OBJECT, _FILE_OBJECT, *PFILE_OBJECT, *PLOG_FILE_OBJECT, LOG_FILE_OBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LOG_FILE_OBJECT
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,23 +29,37 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PFILE_OBJECT, FILE_OBJECT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILE_OBJECT, *PFILE_OBJECT
 req.product : Windows 10 or later.
 ---
 
 # _FILE_OBJECT structure
 The Common Log File System (CLFS) uses the <b>LOG_FILE_OBJECT</b> structure to represent logs. The <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> function returns a pointer to a <b>LOG_FILE_OBJECT</b> structure, which clients then pass to other CLFS functions.
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>typedef FILE_OBJECT LOG_FILE_OBJECT, *PLOG_FILE_OBJECT, **PPLOG_FILE_OBJECT;</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Syntax
-````
-typedef FILE_OBJECT LOG_FILE_OBJECT, *PLOG_FILE_OBJECT, **PPLOG_FILE_OBJECT;
-````
+
 
 ## Members
 
 
-    ## Remarks
-        CLFS clients do not directly access the members of a <b>LOG_FILE_OBJECT</b> structure.
+## Remarks
+CLFS clients do not directly access the members of a <b>LOG_FILE_OBJECT</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -57,13 +69,10 @@ typedef FILE_OBJECT LOG_FILE_OBJECT, *PLOG_FILE_OBJECT, **PPLOG_FILE_OBJECT;
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
-</dt>
-</dl>
+
  
 
  

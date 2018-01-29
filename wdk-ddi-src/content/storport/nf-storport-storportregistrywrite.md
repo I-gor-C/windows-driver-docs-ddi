@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9f149e86-7855-4a10-8e0c-8b1aff261946
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortRegistryWrite
+ms.keywords : storage.storportregistrywrite, StorPortRegistryWrite routine [Storage Devices], storprt_dda4d4a4-d312-4076-8b72-842517a701c5.xml, storport/StorPortRegistryWrite, StorPortRegistryWrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortRegistryWrite
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : StorPortIrql
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,6 @@ Indicates whether the operation is to be adapter specific or to relate to all ad
 `Type`
 
 One of the following registry data types.
-
 <table>
 <tr>
 <th>Type</th>
@@ -235,11 +238,8 @@ Specifies the size of the buffer pointed to by <i>Buffer</i>.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-</dt>
-</dl>
+
  
 
  

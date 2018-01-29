@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ffae774e-8ec9-49da-bdc6-b56beb45c4c0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _AVC_EXT_PLUG_COUNTS, AVC_EXT_PLUG_COUNTS, *PAVC_EXT_PLUG_COUNTS
+ms.keywords : avcref_171f4765-bb9f-4056-a238-d4822af50a3d.xml, AVC_EXT_PLUG_COUNTS, PAVC_EXT_PLUG_COUNTS structure pointer [Streaming Media Devices], AVC_EXT_PLUG_COUNTS structure [Streaming Media Devices], *PAVC_EXT_PLUG_COUNTS, PAVC_EXT_PLUG_COUNTS, stream.avc_ext_plug_counts, avc/AVC_EXT_PLUG_COUNTS, avc/PAVC_EXT_PLUG_COUNTS, _AVC_EXT_PLUG_COUNTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVC_EXT_PLUG_COUNTS
-req.alt-loc : avc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : AVC_EXT_PLUG_COUNTS, *PAVC_EXT_PLUG_COUNTS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PAVC_EXT_PLUG_COUNTS, AVC_EXT_PLUG_COUNTS"
 ---
 
 # _AVC_EXT_PLUG_COUNTS structure
@@ -47,17 +51,17 @@ typedef struct _AVC_EXT_PLUG_COUNTS {
 
 ## Members
 
-        
-            `ExtInputs`
 
-            Ignored on input. On output, this contains the count of external input plugs.
-        
-            `ExtOutputs`
+`ExtInputs`
 
-            Ignored on input. On output, this contains the count of external output plugs.
+Ignored on input. On output, this contains the count of external input plugs.
 
-    ## Remarks
-        This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554155">AVC_FUNCTION_GET_EXT_PLUG_COUNTS</a> function code.
+`ExtOutputs`
+
+Ignored on input. On output, this contains the count of external output plugs.
+
+## Remarks
+This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554155">AVC_FUNCTION_GET_EXT_PLUG_COUNTS</a> function code.
 
 This structure is used only as a member inside the AVC_MULTIFUNC_IRB structure. It is not used by itself.
 
@@ -71,19 +75,14 @@ See <a href="https://msdn.microsoft.com/3b4ec139-ff01-40bd-8e29-92f554180585">Ho
 | **Minimum UMDF version** |  |
 | **Header** | avc.h (include Avc.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\avc\ns-avc-_avc_multifunc_irb.md">AVC_MULTIFUNC_IRB</a>
-</dt>
-<dt>
+
 <a href="..\avc\ne-avc-_tagavc_function.md">AVC_FUNCTION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554155">AVC_FUNCTION_GET_EXT_PLUG_COUNTS</a>
-</dt>
-</dl>
+
  
 
  

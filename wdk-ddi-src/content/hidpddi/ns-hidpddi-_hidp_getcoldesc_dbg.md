@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 65EEEDED-14FE-4275-9314-276E544427DE
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HIDP_GETCOLDESC_DBG, *PHIDP_GETCOLDESC_DBG, HIDP_GETCOLDESC_DBG
+ms.keywords : _HIDP_GETCOLDESC_DBG, hidpddi/HIDP_GETCOLDESC_DBG, HIDP_GETCOLDESC_DBG structure [Human Input Devices], PHIDP_GETCOLDESC_DBG structure pointer [Human Input Devices], HIDP_GETCOLDESC_DBG, hidpddi/PHIDP_GETCOLDESC_DBG, PHIDP_GETCOLDESC_DBG, *PHIDP_GETCOLDESC_DBG, hid.hidp_getcoldesc_dbg
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HIDP_GETCOLDESC_DBG
-req.alt-loc : Hidpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHIDP_GETCOLDESC_DBG, HIDP_GETCOLDESC_DBG"
 ---
 
@@ -49,18 +53,18 @@ typedef struct _HIDP_GETCOLDESC_DBG {
 
 ## Members
 
-        
-            `Args`
 
-            Error-specific arguments. These are described as comments in the possible values for <b>ErrorCode</b> in hidpddi.h.
-        
-            `BreakOffset`
+`Args`
 
-            The byte offset in the report descriptor where the parsing error occurred.
-        
-            `ErrorCode`
+Error-specific arguments. These are described as comments in the possible values for <b>ErrorCode</b> in hidpddi.h.
 
-            Indicates the parsing error, if it’s not HIDP_GETCOLDESC_SUCCESS.
+`BreakOffset`
+
+The byte offset in the report descriptor where the parsing error occurred.
+
+`ErrorCode`
+
+Indicates the parsing error, if it’s not HIDP_GETCOLDESC_SUCCESS.
 
 All possible values are defined in hidpddi.h, from HIDP_GETCOLDESC_SUCCESS to the end  of the file.
 
@@ -73,13 +77,10 @@ All possible values are defined in hidpddi.h, from HIDP_GETCOLDESC_SUCCESS to th
 | **Minimum UMDF version** |  |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidpddi\nf-hidpddi-hidp_getcollectiondescription.md">HidP_GetCollectionDescription</a>
-</dt>
-</dl>
+
  
 
  

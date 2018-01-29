@@ -7,8 +7,8 @@ old-location : netvista\rilmsgserviceinfomsgsupport.htm
 old-project : netvista
 ms.assetid : b09a5b1d-b8da-4a75-b2d5-ee07072d45aa
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGSERVICEINFOMSGSUPPORT, RILMSGSERVICEINFOMSGSUPPORT
+ms.date : 1/18/2018
+ms.keywords : RIL_MSI_SMS_OUTGOING, RILMSGSERVICEINFOMSGSUPPORT, ntddrilapitypes/RILMSGSERVICEINFOMSGSUPPORT, ntddrilapitypes/RIL_MSI_SMS_OUTGOING, ntddrilapitypes/RIL_MSI_SMS_BROADCAST, netvista.rilmsgserviceinfomsgsupport, RILMSGSERVICEINFOMSGSUPPORT enumeration [Network Drivers Starting with Windows Vista], RIL_MSI_SMS_BROADCAST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGSERVICEINFOMSGSUPPORT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGSERVICEINFOMSGSUPPORT
 ---
 
@@ -51,6 +55,11 @@ typedef enum _RILMSGSERVICEINFOMSGSUPPORT {
 
 <tr>
 <td>RIL_MSI_SMS_BROADCAST</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSI_SMS_INCOMING</td>
 <td></td>
 </tr>
 

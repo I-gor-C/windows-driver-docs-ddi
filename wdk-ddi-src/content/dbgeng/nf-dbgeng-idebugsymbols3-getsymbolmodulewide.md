@@ -7,8 +7,8 @@ old-location : debugger\getsymbolmodulewide.htm
 old-project : debugger
 ms.assetid : 4c1284da-b086-46f3-aeea-0afe6a2f1031
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSymbols3, IDebugSymbols3::GetSymbolModuleWide, GetSymbolModuleWide
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugSymbols3::GetSymbolModuleWide, GetSymbolModuleWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetSymbolModuleWide method, IDebugSymbols3::GetSymbolModuleWide, IDebugSymbols3, debugger.getsymbolmodulewide, GetSymbolModuleWide method [Windows Debugging], GetSymbolModuleWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSymbols3.GetSymbolModuleWide
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -61,18 +65,40 @@ Receives the location in the target's memory address space of the base of the mo
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_NOINTERFACE</b></dt>
-</dl>The symbol or module could not be found.
+</dl>
+</td>
+<td width="60%">
+The symbol or module could not be found.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The string <i>Symbol</i> must contain an exclamation point ( <b>!</b> ).  If <i>Symbol</i> is a module-qualified symbol name (for example, <b>mymodules!main</b>) or if the module name is omitted (for example, <b>!main</b>), the engine will search for this symbol and return the module in which it is found.  If <i>Symbol</i> contains just a module name (for example, <b>mymodule!</b>) the engine returns the first module with this module name.
 
-For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
+For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

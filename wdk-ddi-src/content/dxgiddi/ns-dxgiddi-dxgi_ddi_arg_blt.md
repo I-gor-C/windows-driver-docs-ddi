@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 695f2aff-cce3-4358-a9e2-48eea43e8ef5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_BLT, DXGI_DDI_ARG_BLT
+ms.keywords : DXGI_DDI_ARG_BLT, UMDisplayDriver_Dx10param_Structs_299fa1c4-8c06-4a7e-a81c-741eb2e8c00a.xml, DXGI_DDI_ARG_BLT structure [Display Devices], display.dxgi_ddi_arg_blt, dxgiddi/DXGI_DDI_ARG_BLT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_ARG_BLT
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_ARG_BLT
 ---
 
@@ -56,50 +60,50 @@ typedef struct DXGI_DDI_ARG_BLT {
 
 ## Members
 
-        
-            `DstBottom`
 
-            [in] The <i>y</i>-coordinate of the lower-right corner of the destination rectangle.
-        
-            `DstLeft`
+`DstBottom`
 
-            [in] The <i>x</i>-coordinate of the upper-left corner of the destination rectangle.
-        
-            `DstRight`
+[in] The <i>y</i>-coordinate of the lower-right corner of the destination rectangle.
 
-            [in] The <i>x</i>-coordinate of the lower-right corner of the destination rectangle.
-        
-            `DstSubresource`
+`DstLeft`
 
-            [in] The index to the destination surface within the resource.
-        
-            `DstTop`
+[in] The <i>x</i>-coordinate of the upper-left corner of the destination rectangle.
 
-            [in] The <i>y</i>-coordinate of the upper-left corner of the destination rectangle.
-        
-            `Flags`
+`DstRight`
 
-            [in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt_flags.md">DXGI_DDI_ARG_BLT_FLAGS</a> structure that identifies the type of bitblt to perform.
-        
-            `hDevice`
+[in] The <i>x</i>-coordinate of the lower-right corner of the destination rectangle.
 
-            [in] A handle to the display device (graphics context) on which the driver performs the bitblt. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
-        
-            `hDstResource`
+`DstSubresource`
 
-            [in] A handle to the destination resource.
-        
-            `hSrcResource`
+[in] The index to the destination surface within the resource.
 
-            [in] A handle to the source resource.
-        
-            `Rotate`
+`DstTop`
 
-            [in] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.
-        
-            `SrcSubresource`
+[in] The <i>y</i>-coordinate of the upper-left corner of the destination rectangle.
 
-            [in] The index to the source surface within the resource.
+`Flags`
+
+[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt_flags.md">DXGI_DDI_ARG_BLT_FLAGS</a> structure that identifies the type of bitblt to perform.
+
+`hDevice`
+
+[in] A handle to the display device (graphics context) on which the driver performs the bitblt. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
+
+`hDstResource`
+
+[in] A handle to the destination resource.
+
+`hSrcResource`
+
+[in] A handle to the source resource.
+
+`Rotate`
+
+[in] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.
+
+`SrcSubresource`
+
+[in] The index to the source surface within the resource.
 
 
 ## Requirements
@@ -110,19 +114,14 @@ typedef struct DXGI_DDI_ARG_BLT {
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt_flags.md">DXGI_DDI_ARG_BLT_FLAGS</a>
-</dt>
-<dt>
 <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>
-</dt>
-</dl>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt_flags.md">DXGI_DDI_ARG_BLT_FLAGS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
+
  
 
  

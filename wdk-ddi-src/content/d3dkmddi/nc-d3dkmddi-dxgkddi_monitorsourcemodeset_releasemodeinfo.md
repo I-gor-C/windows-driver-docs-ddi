@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2c82ec09-e858-4efc-a1c0-a3792e0b5ddf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_monitorsourcemodeset_interface_pfnreleasemodeinfo, pfnReleaseModeInfo callback function [Display Devices], pfnReleaseModeInfo, DXGKDDI_MONITORSOURCEMODESET_RELEASEMODEINFO, DXGKDDI_MONITORSOURCEMODESET_RELEASEMODEINFO, d3dkmddi/pfnReleaseModeInfo, VidPnFunctions_215a7f94-e7f6-46a9-9f12-ba7d306c6c18.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnReleaseModeInfo
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,15 +68,45 @@ NTSTATUS DxgkddiMonitorsourcemodesetReleasemodeinfo(
 ## Return Value
 
 The <b>pfnReleaseModeInfo</b> function returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded. 
+</dl>
+</td>
+<td width="60%">
+The function succeeded. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_MONITOR_SOURCEMODESET</b></dt>
-</dl>The handle supplied in <i>hMonitorSourceModeSet </i>was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hMonitorSourceModeSet </i>was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_TARGET_MODE</b></dt>
-</dl>The pointer supplied in <i>pMonitorSourceModeInfo</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The pointer supplied in <i>pMonitorSourceModeInfo</i> was invalid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,17 +128,12 @@ The D3DKMDT_HMONITORSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>
-</dt>
-<dt>
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a>
+
  
 
  

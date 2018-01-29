@@ -7,8 +7,8 @@ old-location : debugger\readiospaceex64.htm
 old-project : debugger
 ms.assetid : 6903a684-e9da-4ff0-b5ea-330b070849c6
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ReadIoSpaceEx64
+ms.date : 1/19/2018
+ms.keywords : WdbgExts_Ref_5d81517c-f30d-4f8c-b4fe-e3487ad6c49e.xml, debugger.readiospaceex64, ReadIoSpaceEx64 function [Windows Debugging], ReadIoSpaceEx64, wdbgexts/ReadIoSpaceEx64
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ReadIoSpaceEx64
-req.alt-loc : wdbgexts.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXT_TDOP
 req.product : Windows 10 or later.
 ---
@@ -88,7 +92,6 @@ None
 If you are writing 32-bit code, you should use <a href="..\wdbgexts\nf-wdbgexts-readiospaceex.md">ReadIoSpaceEx</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

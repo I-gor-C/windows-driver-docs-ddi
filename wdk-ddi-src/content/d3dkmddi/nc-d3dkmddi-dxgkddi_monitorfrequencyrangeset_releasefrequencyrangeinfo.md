@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 54e3d08b-5f0d-4d98-9b93-e2aec96d3362
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_monitorfrequencyrangeset_interface_pfnreleasefrequencyrangeinfo, pfnReleaseFrequencyRangeInfo callback function [Display Devices], pfnReleaseFrequencyRangeInfo, DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO, DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO, d3dkmddi/pfnReleaseFrequencyRangeInfo, VidPnFunctions_3fa4c08c-827e-43ac-bcf2-68293d94cb79.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnReleaseFrequencyRangeInfo
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,19 +68,49 @@ NTSTATUS DxgkddiMonitorfrequencyrangesetReleasefrequencyrangeinfo(
 ## Return Value
 
 The <b>pfnAcquireNextFrequencyRangeInfo</b> function returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_MONITOR_FREQUENCY_RANGE</b></dt>
-</dl>The frequency range descriptor supplied in <i>pMonitorFrequencyRangeInfo</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The frequency range descriptor supplied in <i>pMonitorFrequencyRangeInfo</i> was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_MONITOR_FREQUENCYRANGESET</b></dt>
-</dl>The handle supplied in <i>hMonitorFrequencyRangeSet</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hMonitorFrequencyRangeSet</i> was invalid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
-When you have finished using a D3DKMDT_MONITOR_FREQUENCY_RANGE structure that you obtained by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirefirstfrequencyrangeinfo.md">pfnAcquireFirstFrequencyRangeInfo</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirenextfrequencyrangeinfo.md">pfnAcquireNextFrequencyRangeInfo</a>, you must release it by calling <b>pfnReleaseFrequencyRangeInfo</b>.</p>
+When you have finished using a D3DKMDT_MONITOR_FREQUENCY_RANGE structure that you obtained by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirefirstfrequencyrangeinfo.md">pfnAcquireFirstFrequencyRangeInfo</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirenextfrequencyrangeinfo.md">pfnAcquireNextFrequencyRangeInfo</a>, you must release it by calling <b>pfnReleaseFrequencyRangeInfo</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

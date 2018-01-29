@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ce3b17e9-bcbd-46a4-b379-472abfdb4c2a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_CHILD_ENUM_INFO, *PVIDEO_CHILD_ENUM_INFO, VIDEO_CHILD_ENUM_INFO
+ms.keywords : VIDEO_CHILD_ENUM_INFO, *PVIDEO_CHILD_ENUM_INFO, _VIDEO_CHILD_ENUM_INFO, PVIDEO_CHILD_ENUM_INFO, video/VIDEO_CHILD_ENUM_INFO, PVIDEO_CHILD_ENUM_INFO structure pointer [Display Devices], display.video_child_enum_info, Video_Structs_13176852-07dc-4b7e-9e3a-c9ed9c2a3879.xml, video/PVIDEO_CHILD_ENUM_INFO, VIDEO_CHILD_ENUM_INFO structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_CHILD_ENUM_INFO
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVIDEO_CHILD_ENUM_INFO, VIDEO_CHILD_ENUM_INFO"
 req.product : Windows 10 or later.
 ---
@@ -51,31 +55,31 @@ typedef struct _VIDEO_CHILD_ENUM_INFO {
 
 ## Members
 
-        
-            `ACPIHwId`
 
-            The identifier returned by the ACPI BIOS that represents the child device being enumerated. The miniport driver should use this member only if <b>ChildIndex</b> is zero.
+`ACPIHwId`
+
+The identifier returned by the ACPI BIOS that represents the child device being enumerated. The miniport driver should use this member only if <b>ChildIndex</b> is zero.
 
 The <b>ACPIHwId</b> returned by the firmware must match the value returned in <i>UId</i> by the miniport driver. The System BIOS manufacturer and the graphics IHV must synchronize these IDs.
-        
-            `ChildDescriptorSize`
 
-            The size in bytes of the buffer to which <i>pChildDescriptor</i> points. The video port driver allocates this buffer to be large enough to accommodate a DDC2-compliant EDID structure.
-        
-            `ChildHwDeviceExtension`
+`ChildDescriptorSize`
 
-            A pointer to a device extension specific to this child device. This member is valid only if the miniport driver filled the <b>ChildHwDeviceExtensionSize</b> member of VIDEO_HW_INITIALIZATION_DATA with a value other than zero.
-        
-            `ChildIndex`
+The size in bytes of the buffer to which <i>pChildDescriptor</i> points. The video port driver allocates this buffer to be large enough to accommodate a DDC2-compliant EDID structure.
 
-            The index of the child device for which the system is requesting information. This member is used to enumerate devices that are not enumerated by ACPI or other operating system components. If <b>ChildIndex</b> is set to zero, the driver should use the value specified in <b>ACPIHwId</b> as the ID of the device being enumerated.
-        
-            `Size`
+`ChildHwDeviceExtension`
 
-            The size in bytes of this structure.
+A pointer to a device extension specific to this child device. This member is valid only if the miniport driver filled the <b>ChildHwDeviceExtensionSize</b> member of VIDEO_HW_INITIALIZATION_DATA with a value other than zero.
 
-    ## Remarks
-        One parameter of the <i>HwVidGetVideoChildDescriptor</i> function is an instance of a VIDEO_CHILD_ENUM_INFO structure. 
+`ChildIndex`
+
+The index of the child device for which the system is requesting information. This member is used to enumerate devices that are not enumerated by ACPI or other operating system components. If <b>ChildIndex</b> is set to zero, the driver should use the value specified in <b>ACPIHwId</b> as the ID of the device being enumerated.
+
+`Size`
+
+The size in bytes of this structure.
+
+## Remarks
+One parameter of the <i>HwVidGetVideoChildDescriptor</i> function is an instance of a VIDEO_CHILD_ENUM_INFO structure. 
 
 The ACPI_METHOD_DISPLAY_DOD alias, defined in Dispmprt.h, represents the method used to enumerate the devices attached to the display adapter. This method is required if the integrated device controller supports switching of output devices.
 
@@ -87,16 +91,12 @@ The ACPI_METHOD_DISPLAY_DOD alias, defined in Dispmprt.h, represents the method 
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-</dt>
-<dt>
+
 <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
-</dt>
-</dl>
+
  
 
  

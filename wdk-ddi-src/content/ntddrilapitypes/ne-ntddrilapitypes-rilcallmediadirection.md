@@ -7,8 +7,8 @@ old-location : netvista\rilcallmediadirection.htm
 old-project : netvista
 ms.assetid : 8c6b2329-9956-43c1-8a4d-ef9587cf0980
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMEDIADIRECTION, RILCALLMEDIADIRECTION
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_CALLMEDIADIRECTION_TX, RIL_CALLMEDIADIRECTION_RXTX, RIL_CALLMEDIADIRECTION_RX, ntddrilapitypes/RIL_CALLMEDIADIRECTION_MAX, ntddrilapitypes/RIL_CALLMEDIADIRECTION_RX, ntddrilapitypes/RILCALLMEDIADIRECTION, ntddrilapitypes/RIL_CALLMEDIADIRECTION_RXTX, netvista.rilcallmediadirection, RIL_CALLMEDIADIRECTION_MAX, RILCALLMEDIADIRECTION, RILCALLMEDIADIRECTION enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIADIRECTION_TX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMEDIADIRECTION
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLMEDIADIRECTION
 ---
 
@@ -53,6 +57,11 @@ typedef enum _RILCALLMEDIADIRECTION {
 
 <tr>
 <td>RIL_CALLMEDIADIRECTION_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIADIRECTION_NONE</td>
 <td></td>
 </tr>
 

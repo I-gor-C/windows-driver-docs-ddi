@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d4249b81-0ee7-49dd-9886-cdc5842f02d8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : MIRACAST_DATARATE_STATS, MIRACAST_DATARATE_STATS
+ms.keywords : MIRACAST_DATARATE_STATS structure [Display Devices], netdispumdddi/MIRACAST_DATARATE_STATS, display.miracast_datarate_stats, MIRACAST_DATARATE_STATS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MIRACAST_DATARATE_STATS
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MIRACAST_DATARATE_STATS
 ---
 
@@ -51,30 +55,30 @@ typedef struct {
 
 ## Members
 
-        
-            `CurrentMaxTxDataRate`
 
-            The theoretical maximum speed, in bits per second, reported by the Wi-Fi driver.
-        
-            `EncoderBitRate`
+`CurrentMaxTxDataRate`
 
-            The bit rate, in bits per second, that the operating system recommends that the audio/video encoder uses.
-        
-            `FailedFrameCount`
+The theoretical maximum speed, in bits per second, reported by the Wi-Fi driver.
 
-            The total number of Wi-Fi frames that exhausted the maximum number of retries since the previous time step.
-        
-            `MultipleRetryFrameCount`
+`EncoderBitRate`
 
-            The total number of Wi-Fi frames that succeeded after more than one retry since the previous time step.
-        
-            `RetriedFrameCount`
+The bit rate, in bits per second, that the operating system recommends that the audio/video encoder uses.
 
-            The total number of Wi-Fi frames that succeeded after a single retry since the previous time step.
-        
-            `TransmittedFrameCount`
+`FailedFrameCount`
 
-            The total number of Wi-Fi frames that were sent with zero retries since the previous time step.
+The total number of Wi-Fi frames that exhausted the maximum number of retries since the previous time step.
+
+`MultipleRetryFrameCount`
+
+The total number of Wi-Fi frames that succeeded after more than one retry since the previous time step.
+
+`RetriedFrameCount`
+
+The total number of Wi-Fi frames that succeeded after a single retry since the previous time step.
+
+`TransmittedFrameCount`
+
+The total number of Wi-Fi frames that were sent with zero retries since the previous time step.
 
 
 ## Requirements

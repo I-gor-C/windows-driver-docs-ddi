@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6397c0dd-4dc7-49fa-85a7-841f6c2b30d8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_GEOMETRY_EX, *PDISK_GEOMETRY_EX, DISK_GEOMETRY_EX
+ms.keywords : _DISK_GEOMETRY_EX, *PDISK_GEOMETRY_EX, ntdddisk/PDISK_GEOMETRY_EX, storage.disk_geometry_ex, ntdddisk/DISK_GEOMETRY_EX, structs-disk_58b543a6-c9ee-4acf-9012-6572e9e9e627.xml, PDISK_GEOMETRY_EX, DISK_GEOMETRY_EX, DISK_GEOMETRY_EX structure [Storage Devices], PDISK_GEOMETRY_EX structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISK_GEOMETRY_EX
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDISK_GEOMETRY_EX, DISK_GEOMETRY_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DISK_GEOMETRY_EX, *PDISK_GEOMETRY_EX
 ---
 
 # _DISK_GEOMETRY_EX structure
@@ -48,23 +52,38 @@ typedef struct _DISK_GEOMETRY_EX {
 
 ## Members
 
-        
-            `Data`
 
-            Pointer to a variable length area containing a <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_info.md">DISK_PARTITION_INFO</a> structure followed by a <a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a> structure.
-        
-            `DiskSize`
+`Data`
 
-            Contains the size in bytes of the disk.
-        
-            `Geometry`
+Pointer to a variable length area containing a <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_info.md">DISK_PARTITION_INFO</a> structure followed by a <a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a> structure.
 
-            See <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a> for a description of this member.
+`DiskSize`
 
-    ## Remarks
-        DISK_GEOMETRY_EX is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry_ex.md">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> and the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> IOCTLs, in order to retrieve information about the geometry of a physical disk (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
+Contains the size in bytes of the disk.
+
+`Geometry`
+
+See <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a> for a description of this member.
+
+## Remarks
+DISK_GEOMETRY_EX is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry_ex.md">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> and the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> IOCTLs, in order to retrieve information about the geometry of a physical disk (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
 
 Because the partition and detect information are not at fixed locations within the <b>DISK_GEOMETRY_EX</b> structure, <i>ntdddisk.h</i> provides two macros for accessing this information. Both macros take a pointer to a structure of type <b>DISK_GEOMETRY_EX</b> as an argument:
+<pre class="syntax" xml:space="preserve"><code>#if (NTDDI_VERSION &lt; NTDDI_WS03)
+#define DiskGeometryGetPartition(Geometry)\
+                        ((PDISK_PARTITION_INFO)((Geometry)+1))
+
+#define DiskGeometryGetDetect(Geometry)\
+                        ((PDISK_DETECTION_INFO)(((PBYTE)DiskGeometryGetPartition(Geometry)+\
+                                        DiskGeometryGetPartition(Geometry)-&gt;SizeOfPartitionInfo)))
+#else
+#define DiskGeometryGetPartition(Geometry)\
+                        ((PDISK_PARTITION_INFO)((Geometry)-&gt;Data))
+
+#define DiskGeometryGetDetect(Geometry)\
+                        ((PDISK_DETECTION_INFO)(((ULONG_PTR)DiskGeometryGetPartition(Geometry)+\
+                                        DiskGeometryGetPartition(Geometry)-&gt;SizeOfPartitionInfo)))
+#endif</code></pre>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,25 +93,18 @@ Because the partition and detect information are not at fixed locations within t
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_info.md">DISK_PARTITION_INFO</a>
-</dt>
-<dt>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
+
 <a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
-</dt>
-<dt>
+
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
+
  
 
  

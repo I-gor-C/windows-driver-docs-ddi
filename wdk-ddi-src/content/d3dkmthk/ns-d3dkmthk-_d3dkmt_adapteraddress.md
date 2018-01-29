@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 70f45ca2-4be6-4e74-b2e8-55ef7a43192f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_ADAPTERADDRESS, D3DKMT_ADAPTERADDRESS
+ms.keywords : d3dkmthk/D3DKMT_ADAPTERADDRESS, display.d3dkmt_adapteraddress, D3DKMT_ADAPTERADDRESS, OpenGL_Structs_98b1caf8-46c4-4f78-896c-031e8f3f61d0.xml, D3DKMT_ADAPTERADDRESS structure [Display Devices], _D3DKMT_ADAPTERADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_ADAPTERADDRESS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_ADAPTERADDRESS
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_ADAPTERADDRESS {
 
 ## Members
 
-        
-            `BusNumber`
 
-            [out] The number of the bus that the graphics adapter's physical device is located on.
-        
-            `DeviceNumber`
+`BusNumber`
 
-            [out] The index of the graphics adapter's physical device on the bus.
-        
-            `FunctionNumber`
+[out] The number of the bus that the graphics adapter's physical device is located on.
 
-            [out] The function number of the graphics adapter on the physical device.
+`DeviceNumber`
+
+[out] The index of the graphics adapter's physical device on the bus.
+
+`FunctionNumber`
+
+[out] The function number of the graphics adapter on the physical device.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DKMT_ADAPTERADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
  
 
  

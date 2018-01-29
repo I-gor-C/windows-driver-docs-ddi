@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5ae60715-ba51-4814-ae34-34967cdbab78
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_DEVICE_PNP_CAPABILITIES_INIT
+ms.keywords : kmdf.wdf_device_pnp_capabilities_init, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES_INIT, wdf.wdf_device_pnp_capabilities_init, WDF_DEVICE_PNP_CAPABILITIES_INIT, DFDeviceObjectGeneralRef_630e05dc-1566-4dc4-b35c-d9b756629c99.xml, WDF_DEVICE_PNP_CAPABILITIES_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_DEVICE_PNP_CAPABILITIES_INIT
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -63,8 +67,6 @@ None
 ## Remarks
 
 The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function zeros the specified <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a> structure, sets the structure's <b>Size</b> member, and sets other members to default values.
-
-For a code example that uses <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpnpcapabilities.md">WdfDeviceSetPnpCapabilities</a>.</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

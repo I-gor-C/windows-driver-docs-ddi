@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 391f3b20-175f-4b27-b30f-34ccc43ca650
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortFreeDeviceBase
+ms.keywords : srb/ScsiPortFreeDeviceBase, storage.scsiportfreedevicebase, ScsiPortFreeDeviceBase, ScsiPortFreeDeviceBase routine [Storage Devices], scsiprt_e74eafd2-bedf-46d2-b71a-fb36b6bba128.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortFreeDeviceBase
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortFreeDeviceBase function
 The <b>ScsiPortFreeDeviceBase</b> routine frees a range of device I/O or memory space addresses previously mapped into the system address space with <b>ScsiPortGetDeviceBase</b>.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -83,14 +88,10 @@ If a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardw
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
-</dt>
-<dt>
+
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
-</dt>
-</dl>
+
  
 
  

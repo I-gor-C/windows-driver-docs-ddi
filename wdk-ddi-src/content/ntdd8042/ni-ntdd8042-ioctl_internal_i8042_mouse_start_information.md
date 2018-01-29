@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : aa7d5802-d1d0-4c7c-bf55-0f0b5b664113
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MOUSE_STATE, MOUSE_STATE, *PMOUSE_STATE
+ms.keywords : hid.ioctl_internal_i8042_mouse_start_information, IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION control code [Human Input Devices], IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION, ntdd8042/IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION, i8042ref_c4c81870-f104-4979-86e3-03bd376e34ce.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION
-req.alt-loc : ntdd8042.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION IOCTL
-The IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION request passes a pointer to a mouse interrupt object. I8042prt sends this request synchronously to the top of the device stack after the mouse interrupt object is created. Upper-level filter drivers that need to synchronize their callback operation with the mouse ISR can use the pointer to the mouse interrupt object.
-
-
-
 The IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION request passes a pointer to a mouse interrupt object. I8042prt sends this request synchronously to the top of the device stack after the mouse interrupt object is created. Upper-level filter drivers that need to synchronize their callback operation with the mouse ISR can use the pointer to the mouse interrupt object.
 
 ### Major Code
@@ -63,7 +63,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to STATUS_SUCCESS.
@@ -76,13 +75,10 @@ The <b>Status</b> member is set to STATUS_SUCCESS.
 | **Header** | ntdd8042.h (include Ntdd8042.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_start_information.md">INTERNAL_I8042_START_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

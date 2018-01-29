@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e3569e38-cb56-4e33-baba-c479fc4368da
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.keywords : storage.write_rotation, CdromCAVRotation, PWRITE_ROTATION, ntddcdrm/CdromDefaultRotation, structs-CD-ROM_1fcb9104-97bd-48bf-8f08-66b292cd9045.xml, _WRITE_ROTATION, WRITE_ROTATION enumeration [Storage Devices], ntddcdrm/WRITE_ROTATION, ntddcdrm/CdromCAVRotation, PWRITE_ROTATION enumeration pointer [Storage Devices], *PWRITE_ROTATION, ntddcdrm/PWRITE_ROTATION, WRITE_ROTATION, CdromDefaultRotation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WRITE_ROTATION
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
@@ -71,14 +75,10 @@ typedef enum _WRITE_ROTATION {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_speed_request.md">CDROM_SPEED_REQUEST</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_set_speed.md">IOCTL_CDROM_SET_SPEED</a>
-</dt>
-</dl>
+
  
 
  

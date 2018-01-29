@@ -7,8 +7,8 @@ old-location : netvista\wwan_ussd_event.htm
 old-project : netvista
 ms.assetid : 5E90FB65-AF23-47C0-B0E9-2B6EF353D095
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_USSD_EVENT, WWAN_USSD_EVENT, *PWWAN_USSD_EVENT
+ms.date : 1/18/2018
+ms.keywords : WWAN_USSD_EVENT, wwan/PWWAN_USSD_EVENT, PWWAN_USSD_EVENT structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_USSD_EVENT, wwan/WWAN_USSD_EVENT, PWWAN_USSD_EVENT, netvista.wwan_ussd_event, _WWAN_USSD_EVENT, WWAN_USSD_EVENT structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_USSD_EVENT
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WWAN_USSD_EVENT, *PWWAN_USSD_EVENT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWWAN_USSD_EVENT, WWAN_USSD_EVENT"
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _WWAN_USSD_EVENT {
 
 ## Members
 
-        
-            `EventType`
 
-            The type of USSD event.
-        
-            `SessionState`
+`EventType`
 
-            The USSD string is the first message of a USSD session.
-        
-            `UssdString`
+The type of USSD event.
 
-            The USSD string that accompanies the event.
+`SessionState`
+
+The USSD string is the first message of a USSD session.
+
+`UssdString`
+
+The USSD string that accompanies the event.
 
 
 ## Requirements
@@ -71,21 +75,16 @@ typedef struct _WWAN_USSD_EVENT {
 | **Minimum UMDF version** |  |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wwan\ne-wwan-_wwan_ussd_event_type.md">WWAN_USSD_EVENT_TYPE</a>
-</dt>
-<dt>
-<a href="..\wwan\ne-wwan-_wwan_ussd_session_state.md">WWAN_USSD_SESSION_STATE</a>
-</dt>
-<dt>
 <a href="..\wwan\ns-wwan-_wwan_ussd_string.md">WWAN_USSD_STRING</a>
-</dt>
-</dl>
- 
+
+<a href="..\wwan\ne-wwan-_wwan_ussd_session_state.md">WWAN_USSD_SESSION_STATE</a>
+
+<a href="..\wwan\ne-wwan-_wwan_ussd_event_type.md">WWAN_USSD_EVENT_TYPE</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_EVENT structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_EVENT structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

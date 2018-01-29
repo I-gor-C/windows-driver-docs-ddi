@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 92F2AED7-935F-4E3E-934F-D6DF9AA87495
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.bufblt1, BufBlt1 callback function [Display Devices], BufBlt1, PFND3DDDI_BUFBLT1, PFND3DDDI_BUFBLT1, d3dumddi/BufBlt1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BufBlt1
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -80,14 +84,10 @@ Returns S_OK or an appropriate error result if the buffer bitblt operation is no
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_bufferblt1.md">D3DDDIARG_BUFFERBLT1</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_bufferblt1.md">D3DDDIARG_BUFFERBLT1</a>
+
  
 
  

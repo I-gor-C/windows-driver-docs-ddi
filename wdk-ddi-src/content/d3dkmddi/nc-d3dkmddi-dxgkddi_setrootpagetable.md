@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BC9E7A2D-690D-4EC2-8D16-22C5FEBA574A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddisetrootpagetable, DxgkDdiSetRootPageTable callback function [Display Devices], DxgkDdiSetRootPageTable, DXGKDDI_SETROOTPAGETABLE, DXGKDDI_SETROOTPAGETABLE, dispmprt/DxgkDdiSetRootPageTable, d3dkmddi/DxgkDdiSetRootPageTable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiSetRootPageTable
-req.alt-loc : dispmprt.h,d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -83,11 +87,8 @@ This callback function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_setrootpagetable.md">DXGKARG_SETROOTPAGETABLE</a>
-</dt>
-</dl>
+
  
 
  

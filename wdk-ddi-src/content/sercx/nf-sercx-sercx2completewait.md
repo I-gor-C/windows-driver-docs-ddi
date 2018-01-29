@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 7A3DC90E-628C-4FFC-807D-8F23BDC97742
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2CompleteWait
+ms.keywords : SerCx2CompleteWait method [Serial Ports], 2/SerCx2CompleteWait, serports.sercx2completewait, SerCx2CompleteWait
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SerCx2CompleteWait
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX_STATUS, *PSERCX_STATUS
 req.product : Windows 10 or later.
 ---
@@ -83,20 +87,14 @@ When an event in the new wait mask occurs, the driver calls <b>SerCx2CompleteWai
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
-</dt>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
-</dt>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
-</dt>
-<dt>
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/peripheral-drivers-for-devices-on-sercx2-managed-serial-ports">SERIAL_EV_XXX</a>
-</dt>
-</dl>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
+
  
 
  

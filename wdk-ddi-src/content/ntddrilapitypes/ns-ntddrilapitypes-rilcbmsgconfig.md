@@ -7,8 +7,8 @@ old-location : netvista\rilcbmsgconfig.htm
 old-project : netvista
 ms.assetid : c59f26b7-47ce-4bf9-b678-a2bb48c69754
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCBMSGCONFIG, *LPRILCBMSGCONFIG, RILCBMSGCONFIG
+ms.date : 1/18/2018
+ms.keywords : netvista.rilcbmsgconfig, *LPRILCBMSGCONFIG, ntddrilapitypes/RILCBMSGCONFIG, RILCBMSGCONFIG, RILCBMSGCONFIG structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCBMSGCONFIG
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILCBMSGCONFIG, RILCBMSGCONFIG"
 ---
 
@@ -51,30 +55,30 @@ typedef struct _RILCBMSGCONFIG {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `CDMAConfigInfo`
+`cbSize`
 
-            
-        
-            `dwCDMAConfigInfoSize`
 
-            
-        
-            `dwGWLConfigInfoSize`
 
-            
-        
-            `dwParams`
+`CDMAConfigInfo`
 
-            
-        
-            `GWLConfigInfo`
 
-            
+
+`dwCDMAConfigInfoSize`
+
+
+
+`dwGWLConfigInfoSize`
+
+
+
+`dwParams`
+
+
+
+`GWLConfigInfo`
+
+
 
 
 ## Requirements

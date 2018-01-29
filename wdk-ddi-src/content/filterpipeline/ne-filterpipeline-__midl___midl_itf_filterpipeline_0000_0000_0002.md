@@ -7,8 +7,8 @@ old-location : print\expsfontoptions.htm
 old-project : print
 ms.assetid : 3a92b219-91ee-4c11-b5c1-8e2e0cbff406
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : __MIDL___MIDL_itf_filterpipeline_0000_0000_0002, EXpsFontOptions
+ms.date : 1/18/2018
+ms.keywords : Font_Obfusticate, filterpipeline_252cd44a-7a00-40fb-9245-364c1453e2ef.xml, EXpsFontOptions enumeration [Print Devices], __MIDL___MIDL_itf_filterpipeline_0000_0000_0002, filterpipeline/Font_Obfusticate, print.expsfontoptions, filterpipeline/EXpsFontOptions, Font_Normal, filterpipeline/Font_Normal, EXpsFontOptions
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EXpsFontOptions
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontOptions
 ---
 

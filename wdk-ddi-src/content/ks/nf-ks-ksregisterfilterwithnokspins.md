@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4ad768c9-211d-4370-b6d3-6d88b223fe48
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsRegisterFilterWithNoKSPins
+ms.keywords : KsRegisterFilterWithNoKSPins, KsRegisterFilterWithNoKSPins function [Streaming Media Devices], stream.ksregisterfilterwithnokspins, avfunc_c9fc5273-7fd9-41d5-9ac4-5033ed757b7c.xml, ks/KsRegisterFilterWithNoKSPins
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsRegisterFilterWithNoKSPins
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -106,20 +110,14 @@ For more information, see <a href="https://msdn.microsoft.com/fd436406-311b-4537
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilterfactoryupdatecachedata.md">KsFilterFactoryUpdateCacheData</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksfilterfactoryupdatecachedata.md">KsFilterFactoryUpdateCacheData</a>
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
+<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
+
  
 
  

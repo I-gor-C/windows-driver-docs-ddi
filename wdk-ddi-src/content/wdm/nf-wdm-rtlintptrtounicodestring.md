@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9bcd278f-b6eb-4e88-8255-f2724bfca285
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntPtrToUnicodeString
+ms.keywords : RtlIntPtrToUnicodeString routine [Kernel-Mode Driver Architecture], RtlIntPtrToUnicodeString, wdm/RtlIntPtrToUnicodeString, kernel.rtlintptrtounicodestring, k109_8ec9aafc-288e-4814-a22b-8b8e973689be.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIntPtrToUnicodeString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -58,7 +62,6 @@ Specifies the ULONG_PTR value to convert.
 `Base`
 
 Specifies the base to use when converting <i>Value</i> to a string. The possible values are:
-
 <table>
 <tr>
 <th>Value</th>
@@ -130,20 +133,14 @@ None
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlunicodestringtointeger.md">RtlUnicodeStringToInteger</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>
+
+<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 883a7a56-ecb9-428f-a15a-ba428a626bed
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetPersistentBinding2_OUT, *PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT
+ms.keywords : hbapiwmi/GetPersistentBinding2_OUT, GetPersistentBinding2_OUT structure [Storage Devices], storage.getpersistentbinding2_out, _GetPersistentBinding2_OUT, *PGetPersistentBinding2_OUT, PGetPersistentBinding2_OUT structure pointer [Storage Devices], PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT, structs-Fibre_e6ffe5e2-f1e2-4b40-836c-954eb31301de.xml, hbapiwmi/PGetPersistentBinding2_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetPersistentBinding2_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT"
 ---
 
@@ -49,25 +53,25 @@ typedef struct _GetPersistentBinding2_OUT {
 
 ## Members
 
-        
-            `Bindings`
 
-            Contains an array of structures of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers.
-        
-            `HBAStatus`
+`Bindings`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `OutEntryCount`
+Contains an array of structures of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers.
 
-            Indicates the total number of persistent bindings retrieved by the GetPersistentBinding2 method.
-        
-            `TotalEntryCount`
+`HBAStatus`
 
-            Indicates the number of binding entries that the WMI provider can report.
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the GetPersistentBinding2_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
+`OutEntryCount`
+
+Indicates the total number of persistent bindings retrieved by the GetPersistentBinding2 method.
+
+`TotalEntryCount`
+
+Indicates the number of binding entries that the WMI provider can report.
+
+## Remarks
+The WMI tool suite generates a declaration of the GetPersistentBinding2_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _GetPersistentBinding2_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554959">GetPersistentBinding2</a>
-</dt>
-</dl>
+
  
 
  

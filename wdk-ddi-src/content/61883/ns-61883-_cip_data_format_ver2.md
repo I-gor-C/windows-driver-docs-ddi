@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : C78543F5-82CC-43CF-8769-1E721C17FF9C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT, CIP_DATA_FORMAT
+ms.keywords : PCIP_DATA_FORMAT_VER2, IEEE.cip_data_format_ver2, CIP_DATA_FORMAT_VER2, 61883/CIP_DATA_FORMAT_VER2, 61883/PCIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT, _CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT_VER2 structure [Buses], PCIP_DATA_FORMAT_VER2 structure pointer [Buses], CIP_DATA_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_DATA_FORMAT_VER2
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT_VER2"
 ---
 
@@ -48,6 +52,42 @@ typedef struct _CIP_DATA_FORMAT_VER2 {
 ## Members
 
 
+`bHeader`
+
+
+
+`BlockPeriod`
+
+
+
+`BlockSize`
+
+
+
+`FDF_hi`
+
+
+
+`FDF_lo`
+
+
+
+`FDF_mid`
+
+
+
+`FMT`
+
+
+
+`Fraction`
+
+
+
+`Padding`
+
+
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -57,13 +97,10 @@ typedef struct _CIP_DATA_FORMAT_VER2 {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

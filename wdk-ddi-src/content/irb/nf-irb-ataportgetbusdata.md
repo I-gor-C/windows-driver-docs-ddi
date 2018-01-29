@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bfff10ab-7e15-4db3-b808-947d61844bc0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortGetBusData
+ms.keywords : AtaPortGetBusData routine [Storage Devices], storage.ataportgetbusdata, irb/AtaPortGetBusData, atartns_a137d697-85fa-4d99-964f-94e9bcbb6b7b.xml, AtaPortGetBusData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortGetBusData
-req.alt-loc : Pciidex.lib,Pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortGetBusData function
 The <b>AtaPortGetBusData</b> routine retrieves data from the location that is specified by <i>ConfigDataOffset</i> within the device's PCI configuration space.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -90,11 +95,8 @@ Specifies the length, in bytes, of the buffer.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportsetbusdata.md">AtaPortSetBusData</a>
-</dt>
-</dl>
+
  
 
  

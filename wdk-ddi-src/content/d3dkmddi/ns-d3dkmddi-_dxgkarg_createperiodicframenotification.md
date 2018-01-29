@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 455C3FBD-2E0D-4CD7-B753-E53ED58A7F6F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_CREATEPERIODICFRAMENOTIFICATION, DXGKARG_CREATEPERIODICFRAMENOTIFICATION, *INOUT_PDXGKARG_CREATEPERIODICFRAMENOTIFICATION
+ms.keywords : display.dxgkarg_createperiodicframenotification, DXGKARG_CREATEPERIODICFRAMENOTIFICATION, *INOUT_PDXGKARG_CREATEPERIODICFRAMENOTIFICATION, DXGKARG_CREATEPERIODICFRAMENOTIFICATION structure [Display Devices], _DXGKARG_CREATEPERIODICFRAMENOTIFICATION, d3dkmddi/DXGKARG_CREATEPERIODICFRAMENOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_CREATEPERIODICFRAMENOTIFICATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_CREATEPERIODICFRAMENOTIFICATION
 ---
 
@@ -50,22 +54,26 @@ typedef struct _DXGKARG_CREATEPERIODICFRAMENOTIFICATION {
 
 ## Members
 
-        
-            `hAdapter`
 
-            A handle to the adapter associated with VidPnSourceID.
-        
-            `hNotification`
+`hAdapter`
 
-            A Handle to the notification object, later used to destroy the object.
-        
-            `NotificationID`
+A handle to the adapter associated with VidPnSourceID.
 
-            Represents an ID for the notification that will be used to track which interrupt has fired from the GPU.
-        
-            `Time`
+`hNotification`
 
-            Represents an offset before the VSync. The Time value may not be longer than a VSync interval while in VSync mode. In units of 100ns.
+A Handle to the notification object, later used to destroy the object.
+
+`NotificationID`
+
+Represents an ID for the notification that will be used to track which interrupt has fired from the GPU.
+
+`Time`
+
+Represents an offset before the VSync. The Time value may not be longer than a VSync interval while in VSync mode. In units of 100ns.
+
+`VidPnTargetId`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 70be09ed-5633-464b-b311-f671efe83a54
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_ENDPOINT_DIAGNOSTIC_INFO,
+ms.keywords : IDDCX_ENDPOINT_DIAGNOSTIC_INFO, display.iddcx_endpoint_diagnostic_info, IDDCX_ENDPOINT_DIAGNOSTIC_INFO structure [Display Devices], iddcx/IDDCX_ENDPOINT_DIAGNOSTIC_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_ENDPOINT_DIAGNOSTIC_INFO
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -53,38 +57,38 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
 
 ## Members
 
-        
-            `GammaSupport`
 
-            Indicates how gamma is implemented.
-        
-            `pEndPointFriendlyName`
+`GammaSupport`
 
-            The friendly name of the endpoint, if one exists. This is applicable if the user can give the device a name and is NULL if a friendly name does not exist.
-        
-            `pEndPointManufacturerName`
+Indicates how gamma is implemented.
 
-            The manufacture name of the endpoint. Must be a non-empty string.
-        
-            `pEndPointModelName`
+`pEndPointFriendlyName`
 
-            The model name of the endpoint. Must be a non-empty string.
-        
-            `pFirmwareVersion`
+The friendly name of the endpoint, if one exists. This is applicable if the user can give the device a name and is NULL if a friendly name does not exist.
 
-            Pointer to version info for the endpoint firmware.
-        
-            `pHardwareVersion`
+`pEndPointManufacturerName`
 
-            Pointer to version info for the endpoint hardware.
-        
-            `Size`
+The manufacture name of the endpoint. Must be a non-empty string.
 
-            Total size of the structure.
-        
-            `TransmissionType`
+`pEndPointModelName`
 
-            Describes the type of link the video data is being transmitted over.
+The model name of the endpoint. Must be a non-empty string.
+
+`pFirmwareVersion`
+
+Pointer to version info for the endpoint firmware.
+
+`pHardwareVersion`
+
+Pointer to version info for the endpoint hardware.
+
+`Size`
+
+Total size of the structure.
+
+`TransmissionType`
+
+Describes the type of link the video data is being transmitted over.
 
 
 ## Requirements

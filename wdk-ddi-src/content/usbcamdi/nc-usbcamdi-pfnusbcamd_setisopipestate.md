@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6170c69d-f73d-4ba4-b7de-06257c8dd83c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.usbcamd_setisopipestate, USBCAMD_SetIsoPipeState routine [Streaming Media Devices], USBCAMD_SetIsoPipeState, PFNUSBCAMD_SetIsoPipeState, PFNUSBCAMD_SetIsoPipeState, usbcamdi/USBCAMD_SetIsoPipeState, usbcmdpr_6643c631-6892-4955-8a1f-ae152fd155e4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBCAMD_SetIsoPipeState
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,6 @@ Pointer to device-specific context.
 `PipeStateFlags`
 
 Specifies the isochronous pipe state. This argument should be set to either of the following values:
-
 <table>
 <tr>
 <th>Flag</th>
@@ -92,15 +95,45 @@ This flags indicates to start streaming.
 ## Return Value
 
 <b>USBCAMD_SetIsoPipeState</b> returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The requested pipe state is the same as the current pipe state.
+</dl>
+</td>
+<td width="60%">
+The requested pipe state is the same as the current pipe state.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>The pipe state change is deferred.
+</dl>
+</td>
+<td width="60%">
+The pipe state change is deferred.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There are insufficient resources to allocate a work item to change the pipe state.
+</dl>
+</td>
+<td width="60%">
+There are insufficient resources to allocate a work item to change the pipe state.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -126,11 +159,8 @@ Using this function does not enable you to change the alternate setting within t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

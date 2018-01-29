@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C04F29FF-972C-44CC-8557-28C23827ADF0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsRegisterSiloMonitor
+ms.keywords : ntddk/PsRegisterSiloMonitor, kernel.psregistersilomonitor, PsRegisterSiloMonitor, PsRegisterSiloMonitor routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsRegisterSiloMonitor
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -65,18 +69,56 @@ Receives a pointer to the monitor. This pointer is used to make further monitor-
 ## Return Value
 
 The following NT status codes are returned.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The version specified in <b>ntddk.h</b> does not match <b>SILO_MONITOR_REGISTRATION_VERSION</b>, the component name is not specified, or the terminate callback is not supplied.
+</dl>
+</td>
+<td width="60%">
+The version specified in <b>ntddk.h</b> does not match <b>SILO_MONITOR_REGISTRATION_VERSION</b>, the component name is not specified, or the terminate callback is not supplied.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PRIVILEDGE_NOT_HELD</b></dt>
-</dl>The routine is called in a silo.
+</dl>
+</td>
+<td width="60%">
+The routine is called in a silo.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There is no memory to register a silo monitor or there is no available silo slot.
+</dl>
+</td>
+<td width="60%">
+There is no memory to register a silo monitor or there is no available silo slot.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation completed successfully.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9c90c182-86ac-43e5-9e77-0ea2da76e6b9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V1, USB_BUS_INTERFACE_USBDI_V1, *PUSB_BUS_INTERFACE_USBDI_V1
+ms.keywords : PUSB_BUS_INTERFACE_USBDI_V1, USB_BUS_INTERFACE_USBDI_V1, USB_BUS_INTERFACE_USBDI_V1 structure [Buses], buses.usb_bus_interface_usbdi_v1, usbinterKR_baeecc46-78ee-409a-9017-b6e74b3340e0.xml, *PUSB_BUS_INTERFACE_USBDI_V1, _USB_BUS_INTERFACE_USBDI_V1, usbbusif/USB_BUS_INTERFACE_USBDI_V1, usbbusif/PUSB_BUS_INTERFACE_USBDI_V1, PUSB_BUS_INTERFACE_USBDI_V1 structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_BUS_INTERFACE_USBDI_V1
-req.alt-loc : usbbusif.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USB_BUS_INTERFACE_USBDI_V1, *PUSB_BUS_INTERFACE_USBDI_V1
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V1, USB_BUS_INTERFACE_USBDI_V1"
 req.product : Windows 10 or later.
 ---
 
@@ -56,47 +60,46 @@ typedef struct _USB_BUS_INTERFACE_USBDI_V1 {
 
 ## Members
 
-        
-            `BusContext`
 
-            Contains information that describes the USB bus and the USB bus driver that exposes this interface. This is an opaque entity that the caller must pass to the interface routines.
-        
-            `GetUSBDIVersion`
+`BusContext`
 
-            Pointer to a routine that returns the USB interface version number, the version number of USB specification that defines the interface, along with host controller capabilities information. This routine returns the highest USBDI interface version supported by the port driver. For more information about this routine, see <a href="https://msdn.microsoft.com/05a22049-5165-41a3-aa6f-134c5d1b6c15">GetUSBDIVersion</a>.
-        
-            `InterfaceDereference`
+Contains information that describes the USB bus and the USB bus driver that exposes this interface. This is an opaque entity that the caller must pass to the interface routines.
 
-            Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>.
-        
-            `InterfaceReference`
+`GetUSBDIVersion`
 
-            Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>.
-        
-            `IsDeviceHighSpeed`
+Pointer to a routine that returns the USB interface version number, the version number of USB specification that defines the interface, along with host controller capabilities information. This routine returns the highest USBDI interface version supported by the port driver. For more information about this routine, see <a href="https://msdn.microsoft.com/05a22049-5165-41a3-aa6f-134c5d1b6c15">GetUSBDIVersion</a>.
 
-            Pointer to a routine that determines whether the USB device is operating at high speed. This routine returns <b>TRUE</b> if the USB device is operating at high speed (USB 2.0-compliant device). Otherwise this routine returns <b>FALSE</b>. For more information about this routine, see <a href="https://msdn.microsoft.com/36e0041d-700f-44db-84b6-3745026cb6f7">IsDeviceHighSpeed</a>.
-        
-            `QueryBusInformation`
+`InterfaceDereference`
 
-            Pointer to a routine that retrieves information about the bus. The information that is returned depends on the value of the <b>Level </b>member. If <b>Level</b> is 0, this routine returns bus bandwidth information. If <b>Level</b> is 1, it returns bus bandwidth information and the host controller's symbolic name. This routine replaces the <b>USBD_QueryBusInformation</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a>.
-        
-            `QueryBusTime`
+Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>.
 
-            Pointer to a routine that returns the current 32-bit USB frame number. This routine replaces the <b>USBD_QueryBusTime</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/6a0a1953-070d-4335-a906-4ca3fe8a04e1">QueryBusTime</a>.
-        
-            `Size`
+`InterfaceReference`
 
-            Specifies the size in bytes of the buffer that holds the interface pointers.
-        
-            `SubmitIsoOutUrb`
+Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>.
 
-            Reserved. Do not use.
-        
-            `Version`
+`IsDeviceHighSpeed`
 
-            Indicates, on input, the version of the interface. The values that this member can take are as follows.
+Pointer to a routine that determines whether the USB device is operating at high speed. This routine returns <b>TRUE</b> if the USB device is operating at high speed (USB 2.0-compliant device). Otherwise this routine returns <b>FALSE</b>. For more information about this routine, see <a href="https://msdn.microsoft.com/36e0041d-700f-44db-84b6-3745026cb6f7">IsDeviceHighSpeed</a>.
 
+`QueryBusInformation`
+
+Pointer to a routine that retrieves information about the bus. The information that is returned depends on the value of the <b>Level </b>member. If <b>Level</b> is 0, this routine returns bus bandwidth information. If <b>Level</b> is 1, it returns bus bandwidth information and the host controller's symbolic name. This routine replaces the <b>USBD_QueryBusInformation</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a>.
+
+`QueryBusTime`
+
+Pointer to a routine that returns the current 32-bit USB frame number. This routine replaces the <b>USBD_QueryBusTime</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/6a0a1953-070d-4335-a906-4ca3fe8a04e1">QueryBusTime</a>.
+
+`Size`
+
+Specifies the size in bytes of the buffer that holds the interface pointers.
+
+`SubmitIsoOutUrb`
+
+Reserved. Do not use.
+
+`Version`
+
+Indicates, on input, the version of the interface. The values that this member can take are as follows.
 <table>
 <tr>
 <th>Value</th>
@@ -144,8 +147,8 @@ Version 3 of the interface.
 </tr>
 </table>
 
-    ## Remarks
-        The <b>IsDeviceHighSpeed</b> member does not indicate whether a device is capable of high speed operation, but rather whether it is in fact operating at high speed. 
+## Remarks
+The <b>IsDeviceHighSpeed</b> member does not indicate whether a device is capable of high speed operation, but rather whether it is in fact operating at high speed. 
 
 The routines in this structure must be callable at IRQL &gt;= DISPATCH_LEVEL.
 
@@ -157,16 +160,12 @@ The routines in this structure must be callable at IRQL &gt;= DISPATCH_LEVEL.
 | **Minimum UMDF version** |  |
 | **Header** | usbbusif.h (include Usbbusif.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/1b571ee0-d47f-40b6-8beb-d57b49ae3ac8">Bus Driver Interface Routines for USB Client Drivers</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

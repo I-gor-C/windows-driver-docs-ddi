@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8e429a48-4e86-4673-aa32-85b640e2f64f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDefaultAddEventHandler
+ms.keywords : avfunc_7e4e393b-c3ab-4538-8790-9fe4c4f964cd.xml, ks/KsDefaultAddEventHandler, stream.ksdefaultaddeventhandler, KsDefaultAddEventHandler function [Streaming Media Devices], KsDefaultAddEventHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDefaultAddEventHandler
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -87,23 +91,16 @@ This is functionally equivalent to <a href="..\ks\nf-ks-ksaddevent.md">KsAddEven
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
+
+<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
+
 <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
+
  
 
  

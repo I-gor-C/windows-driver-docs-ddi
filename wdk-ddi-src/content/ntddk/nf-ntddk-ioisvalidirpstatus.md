@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0A995357-A578-41C6-A1B8-ABD251C16C83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIsValidIrpStatus
+ms.keywords : kernel.ioisvalidirpstatus, IoIsValidIrpStatus, ntddk/IoIsValidIrpStatus, IoIsValidIrpStatus routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoIsValidIrpStatus
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level.
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -81,11 +85,8 @@ For more information about these fields, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
-</dt>
-</dl>
+
  
 
  

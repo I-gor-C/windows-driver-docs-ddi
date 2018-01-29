@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 46e29607-ee09-4db4-a501-68a3bc678e16
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoVerifyVolume
+ms.keywords : ntifs/IoVerifyVolume, IoVerifyVolume, ioref_b55e7a87-a18d-4ccd-ab32-061676c9dde4.xml, ifsk.ioverifyvolume, IoVerifyVolume routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoVerifyVolume
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,15 +65,44 @@ Set to <b>TRUE</b> if this verify request is being issued on behalf of a DASD op
 ## Return Value
 
 <b>IoVerifyVolume</b> can return one of the following NTSTATUS values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><dl>
+</dl>
+</td>
+<td width="60%"></td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl><dl>
+</dl>
+</td>
+<td width="60%"></td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl><dl>
+</dl>
+</td>
+<td width="60%"></td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
 <dt><b>STATUS_WRONG_VOLUME</b></dt>
 </dl>
+</td>
+<td width="60%"></td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,14 +128,10 @@ For more information about removable-media devices, see <a href="https://msdn.mi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
+
  
 
  

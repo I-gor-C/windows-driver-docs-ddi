@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 329e0036-2d67-465f-a049-a36648622003
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2ZRANGE, D3DHAL_DP2ZRANGE, *LPD3DHAL_DP2ZRANGE
+ms.keywords : D3DHAL_DP2ZRANGE structure [Display Devices], _D3DHAL_DP2ZRANGE, display.d3dhal_dp2zrange, d3dstrct_327e85bf-81c0-420e-b229-e389115fcab3.xml, D3DHAL_DP2ZRANGE, *LPD3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE, d3dhal/D3DHAL_DP2ZRANGE, d3dhal/LPD3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2ZRANGE
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2ZRANGE
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DHAL_DP2ZRANGE {
 
 ## Members
 
-        
-            `dvMaxZ`
 
-            Specifies the maximum z value for the Mvs matrix described in the <a href="https://msdn.microsoft.com/b45aa56e-2d8c-412a-b581-a1e2002d4fac">Hardware Transform and Lighting</a> section of the design guide.
-        
-            `dvMinZ`
+`dvMaxZ`
 
-            Specifies the minimum z value for the Mvs matrix described in the <a href="https://msdn.microsoft.com/b45aa56e-2d8c-412a-b581-a1e2002d4fac">Hardware Transform and Lighting</a> section of the design guide.
+Specifies the maximum z value for the Mvs matrix described in the <a href="https://msdn.microsoft.com/b45aa56e-2d8c-412a-b581-a1e2002d4fac">Hardware Transform and Lighting</a> section of the design guide.
+
+`dvMinZ`
+
+Specifies the minimum z value for the Mvs matrix described in the <a href="https://msdn.microsoft.com/b45aa56e-2d8c-412a-b581-a1e2002d4fac">Hardware Transform and Lighting</a> section of the design guide.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DHAL_DP2ZRANGE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-</dl>
+
  
 
  

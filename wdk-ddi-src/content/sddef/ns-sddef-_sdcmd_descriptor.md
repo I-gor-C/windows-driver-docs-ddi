@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : 7c49c394-d0b3-4594-a623-0a13825bdcec
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR
+ms.keywords : SDCMD_DESCRIPTOR, sd-structs_20a7faa8-4e91-49cc-94eb-13bd584a25a3.xml, _SDCMD_DESCRIPTOR, sddef/SDCMD_DESCRIPTOR, sddef/PSDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR structure pointer [Buses], SD.sdcmd_descriptor, *PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SDCMD_DESCRIPTOR
-req.alt-loc : sddef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -51,11 +55,10 @@ typedef struct _SDCMD_DESCRIPTOR {
 
 ## Members
 
-        
-            `Cmd`
 
-            Contains a value of type SD_COMMAND_CODE that specifies the SD command.
+`Cmd`
 
+Contains a value of type SD_COMMAND_CODE that specifies the SD command.
 <ul>
 <li>SDCMD_IO_RW_DIRECTIndicates a read or write operation of a single byte.
 
@@ -64,36 +67,42 @@ typedef struct _SDCMD_DESCRIPTOR {
 
 </li>
 </ul>
-        
-            `CmdClass`
 
-            Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538003">SD_COMMAND_CLASS</a>
+`CmdClass`
+
+Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538003">SD_COMMAND_CLASS</a>
 
 
 that specifies the class of the SD command.
-        
-            `ResponseType`
 
-            Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a> that indicates the type of response that the card sends in response to the command indicated in the <b>Cmd</b> member.
-        
-            `TransferDirection`
+`ResponseType`
 
-            Contains an enumeration value of type <a href="https://msdn.microsoft.com/1e821ca5-ff65-48a1-be5c-6d776c61f166">SD_TRANSFER_DIRECTION</a> that indicates the direction of the data transfer.
-        
-            `TransferType`
+Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a> that indicates the type of response that the card sends in response to the command indicated in the <b>Cmd</b> member.
 
-            Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538045">SD_TRANSFER_TYPE</a> that indicates the type of the data transfer.
+`TransferDirection`
 
-    ## Remarks
-        To send a command to an SD device, a device driver must complete the following steps:
+Contains an enumeration value of type <a href="https://msdn.microsoft.com/1e821ca5-ff65-48a1-be5c-6d776c61f166">SD_TRANSFER_DIRECTION</a> that indicates the direction of the data transfer.
 
+`TransferType`
+
+Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538045">SD_TRANSFER_TYPE</a> that indicates the type of the data transfer.
+
+## Remarks
+To send a command to an SD device, a device driver must complete the following steps:
+<ol>
+<li>
 Set the <b>RequestFunction</b> member of SDBUS_REQUEST_PACKET to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a> enumeration value of SDRF_DEVICE_COMMAND.
 
+</li>
+<li>
 Initialize the <b>CmdDesc</b> member of SDBUS_REQUEST_PACKET to define the command.
 
+</li>
+<li>
 Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACKET structure to either <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>.
 
-If a driver submits a command request without properly initializing the <b>TransferDirection</b>, <b>TransferType</b>, and <b>ResponseType</b> members of the command descriptor, the request will fail. These members cannot be 0.
+</li>
+</ol>If a driver submits a command request without properly initializing the <b>TransferDirection</b>, <b>TransferType</b>, and <b>ResponseType</b> members of the command descriptor, the request will fail. These members cannot be 0.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,34 +112,24 @@ If a driver submits a command request without properly initializing the <b>Trans
 | **Minimum UMDF version** |  |
 | **Header** | sddef.h (include Sddef.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538003">SD_COMMAND_CLASS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538008">SD_COMMAND_CODE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/1e821ca5-ff65-48a1-be5c-6d776c61f166">SD_TRANSFER_DIRECTION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538045">SD_TRANSFER_TYPE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538003">SD_COMMAND_CLASS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538008">SD_COMMAND_CODE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
-</dt>
-</dl>
+
  
 
  

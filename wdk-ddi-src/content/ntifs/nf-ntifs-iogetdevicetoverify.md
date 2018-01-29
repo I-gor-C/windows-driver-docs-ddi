@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3dcd33ac-845a-4519-b697-5917687a9672
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoGetDeviceToVerify
+ms.keywords : k104_47163b80-0b35-40e0-9a30-3f5e2fe51bba.xml, ifsk.iogetdevicetoverify, IoGetDeviceToVerify routine [Installable File System Drivers], ntifs/IoGetDeviceToVerify, IoGetDeviceToVerify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDeviceToVerify
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoDispatch
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -77,20 +81,14 @@ An underlying removable-media device driver is responsible for notifying higher-
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
-</dt>
-<dt>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+
 <a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
+
+<a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
+
  
 
  

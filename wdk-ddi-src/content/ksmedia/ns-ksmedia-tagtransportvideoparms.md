@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 14bc6133-78f1-4f25-8638-9348245180fa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagTRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS
+ms.keywords : "*PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS structure [Streaming Media Devices], tagTRANSPORTVIDEOPARMS, stream.transportvideoparms, TRANSPORTVIDEOPARMS, PTRANSPORTVIDEOPARMS, vidcapstruct_6438f7be-abd8-4d45-969d-6f80e7833216.xml, ksmedia/PTRANSPORTVIDEOPARMS, PTRANSPORTVIDEOPARMS structure pointer [Streaming Media Devices], ksmedia/TRANSPORTVIDEOPARMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSPORTVIDEOPARMS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS"
 ---
 
@@ -47,17 +51,17 @@ typedef struct tagTRANSPORTVIDEOPARMS {
 
 ## Members
 
-        
-            `Input`
 
-            Specifies the video input to use. For example, specify zero to use the first (zeroth) video input.
-        
-            `OutputMode`
+`Input`
 
-            Specifies the video output mode. For example ED_PLAYBACK.
+Specifies the video input to use. For example, specify zero to use the first (zeroth) video input.
 
-    ## Remarks
-        Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.</p>
+`OutputMode`
+
+Specifies the video output mode. For example ED_PLAYBACK.
+
+## Remarks
+Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 
 ## Requirements
 | &nbsp; | &nbsp; |

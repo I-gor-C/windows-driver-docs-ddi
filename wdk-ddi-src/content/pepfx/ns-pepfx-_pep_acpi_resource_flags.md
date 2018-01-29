@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1BB4933B-2707-4350-8D9C-E0E25A85F5CB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
+ms.keywords : kernel.pep_acpi_resource_flags, pepfx/PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS union [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_RESOURCE_FLAGS, _PEP_ACPI_RESOURCE_FLAGS, PPEP_ACPI_RESOURCE_FLAGS union pointer [Kernel-Mode Driver Architecture], PPEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_RESOURCE_FLAGS
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS"
 ---
 
 # _PEP_ACPI_RESOURCE_FLAGS structure
@@ -55,14 +59,14 @@ typedef union _PEP_ACPI_RESOURCE_FLAGS {
 
 ## Members
 
-        
-            `AsULong`
 
-            The consolidated values of the flags in <b>DUMMYSTRUCTNAME</b>.
-        
-            `DUMMYSTRUCTNAME`
+`AsULong`
 
-            A structure containing ACPI resource flags.
+The consolidated values of the flags in <b>DUMMYSTRUCTNAME</b>.
+
+`DUMMYSTRUCTNAME`
+
+A structure containing ACPI resource flags.
 
 
 ## Requirements

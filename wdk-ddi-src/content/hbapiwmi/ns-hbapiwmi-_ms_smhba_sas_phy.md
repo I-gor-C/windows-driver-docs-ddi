@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9bbf2f63-4479-47ee-a014-78b13deccb4c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY
+ms.keywords : hbapiwmi/MS_SMHBA_SAS_PHY, PMS_SMHBA_SAS_PHY, hbapiwmi/PMS_SMHBA_SAS_PHY, storage.ms_smhba_sas_phy, MS_SMHBA_SAS_PHY structure [Storage Devices], PMS_SMHBA_SAS_PHY structure pointer [Storage Devices], structs-Fibre_2ff7917d-a369-4cc9-ab8e-c774f63761a7.xml, _MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MS_SMHBA_SAS_PHY
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY"
 ---
 
@@ -52,37 +56,37 @@ typedef struct _MS_SMHBA_SAS_PHY {
 
 ## Members
 
-        
-            `domainPortWWN`
 
-            The Port_Identifier that has the smallest value of any Port_Identifier of an expander SMP.
-        
-            `HardwareMaxLinkRate`
+`domainPortWWN`
 
-            The maximum physical link rate that is supported by the physical port.
-        
-            `HardwareMinLinkRate`
+The Port_Identifier that has the smallest value of any Port_Identifier of an expander SMP.
 
-            The minimum physical link rate that is supported by the physical port.
-        
-            `NegotiatedLinkRate`
+`HardwareMaxLinkRate`
 
-            The state or the transmission speed that is negotiated by the physical port for the physical link.
-        
-            `PhyIdentifier`
+The maximum physical link rate that is supported by the physical port.
 
-            The port whose physical configuration and link information is being returned. It is unique within the context of the SAS device that contains the physical port.
-        
-            `ProgrammedMaxLinkRate`
+`HardwareMinLinkRate`
 
-            The maximum physical link rate that is set by the physical port control mechanism.
-        
-            `ProgrammedMinLinkRate`
+The minimum physical link rate that is supported by the physical port.
 
-            The minimum physical link rate that is set by the physical port control mechanism.
+`NegotiatedLinkRate`
 
-    ## Remarks
-        Link rates are defined in hpaapi.h as HBA_SASSPEED_1_5GBIT and HBA_SASSPEED_3GBIT.</p>
+The state or the transmission speed that is negotiated by the physical port for the physical link.
+
+`PhyIdentifier`
+
+The port whose physical configuration and link information is being returned. It is unique within the context of the SAS device that contains the physical port.
+
+`ProgrammedMaxLinkRate`
+
+The maximum physical link rate that is set by the physical port control mechanism.
+
+`ProgrammedMinLinkRate`
+
+The minimum physical link rate that is set by the physical port control mechanism.
+
+## Remarks
+Link rates are defined in hpaapi.h as HBA_SASSPEED_1_5GBIT and HBA_SASSPEED_3GBIT.
 
 ## Requirements
 | &nbsp; | &nbsp; |

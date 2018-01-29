@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c56d767f-598c-46b8-bab1-ce4de0780076
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : IoReadDiskSignature
+ms.keywords : storage.ioreaddisksignature, rtns-disk_4bd8bcea-c43a-45ea-a074-013b8eb30e01.xml, IoReadDiskSignature routine [Storage Devices], IoReadDiskSignature, ntddk/IoReadDiskSignature
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is only available on Windows XP and lat
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoReadDiskSignature
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -85,14 +89,10 @@ The routine returns STATUS_SUCCESS on success, or the appropriate error code on 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_disk_signature.md">DISK_SIGNATURE</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry_ex.md">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_disk_signature.md">DISK_SIGNATURE</a>
+
  
 
  

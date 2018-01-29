@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bd3f84ad-d617-4744-b423-1d82da3b05c0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlSubAuthoritySid
+ms.keywords : ntifs/RtlSubAuthoritySid, rtlref_d901f9ac-d7c4-49e1-871e-75aee9fa8c2b.xml, RtlSubAuthoritySid, RtlSubAuthoritySid routine [Installable File System Drivers], ifsk.rtlsubauthoritysid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlSubAuthoritySid
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -55,7 +59,7 @@ Pointer to the SID structure. The SID must have been initialized by calling <b>R
 
 `SubAuthority`
 
-
+TBD
 
 
 ## Return Value
@@ -80,14 +84,10 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlinitializesid.md">RtlInitializeSid</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlinitializesid.md">RtlInitializeSid</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7fc67320-6943-4e39-8474-28c24265eae2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestCreateFromIrp
+ms.keywords : wdfrequest/WdfRequestCreateFromIrp, PFN_WDFREQUESTCREATEFROMIRP, wdf.wdfrequestcreatefromirp, WdfRequestCreateFromIrp method, kmdf.wdfrequestcreatefromirp, WdfRequestCreateFromIrp, DFRequestObjectRef_fb959453-1aab-4e2d-8877-356ce04b5784.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfRequestCreateFromIrp
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -91,14 +95,6 @@ For more information about creating framework request objects, see <a href="http
 
 Framework-based drivers must not use the <b>Tail.Overlay.DriverContext</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure, because the framework uses this member.
 
-<b>Example 1</b>
-
-The following code example creates a framework request object from a specified WDM IRP and then deletes it. This example sets the <i>RequestFreesIrp</i> parameter to <b>TRUE</b>, so the framework removes the IRP when the request handle is destroyed.
-
-<b>Example 2</b>
-
-The following code example also creates a framework request object from a specified WDM IRP and then deletes it. This example sets the <i>RequestFreesIrp</i> parameter to <b>FALSE</b>, so the driver must call <a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a> to remove the IRP. All of the function calls in the example  are required.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -113,26 +109,18 @@ The following code example also creates a framework request object from a specif
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a>
-</dt>
-<dt>
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-</dt>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
-</dt>
-<dt>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
+
  
 
  

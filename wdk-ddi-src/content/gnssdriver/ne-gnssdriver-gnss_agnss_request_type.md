@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 31293354-D68B-475F-91BD-0504129207A5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_AGNSS_REQUEST_TYPE, GNSS_AGNSS_REQUEST_TYPE
+ms.keywords : GNSS_AGNSS_TimeInjection, GNSS_AGNSS_PositionInjection, gnssdriver/GNSS_AGNSS_PositionInjection, GNSS_AGNSS_BlobInjection, gnssdriver/GNSS_AGNSS_BlobInjection, GNSS_AGNSS_REQUEST_TYPE, gnssdriver/GNSS_AGNSS_TimeInjection, gnssdriver/GNSS_AGNSS_REQUEST_TYPE, GNSS_AGNSS_REQUEST_TYPE enumeration [Sensor Devices], sensors.gnss_agnss_request_type
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_AGNSS_REQUEST_TYPE
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_AGNSS_REQUEST_TYPE
 ---
 

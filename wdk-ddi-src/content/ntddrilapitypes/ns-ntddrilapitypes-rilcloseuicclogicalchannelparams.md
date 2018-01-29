@@ -7,8 +7,8 @@ old-location : netvista\rilcloseuicclogicalchannelparams.htm
 old-project : netvista
 ms.assetid : 0c06bcd7-d475-40b8-b997-fe65047db331
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCLOSEUICCLOGICALCHANNELPARAMS, *LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILCLOSEUICCLOGICALCHANNELPARAMS, ntddrilapitypes/RILCLOSEUICCLOGICALCHANNELPARAMS, netvista.rilcloseuicclogicalchannelparams, RILCLOSEUICCLOGICALCHANNELPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILCLOSEUICCLOGICALCHANNELPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCLOSEUICCLOGICALCHANNELPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS"
 ---
 
@@ -47,14 +51,14 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELPARAMS {
 
 ## Members
 
-        
-            `dwChannelId`
 
-            
-        
-            `dwSlotIndex`
+`dwChannelId`
 
-            
+
+
+`dwSlotIndex`
+
+
 
 
 ## Requirements

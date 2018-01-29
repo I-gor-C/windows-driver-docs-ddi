@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 421e6b72-a771-4b18-9776-0b5e8e7a1e29
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_DEVICE_FUNCS_CORE_0030, D3D12DDI_DEVICE_FUNCS_CORE_0030
+ms.keywords : D3D12DDI_DEVICE_FUNCS_CORE_0030 structure [Display Devices], d3d12umddi/D3D12DDI_DEVICE_FUNCS_CORE_0030, D3D12DDI_DEVICE_FUNCS_CORE_0030, display.d3d12ddi-device-funcs-core-0030
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_DEVICE_FUNCS_CORE_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_DEVICE_FUNCS_CORE_0030
 ---
 
@@ -137,374 +141,374 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_CORE_0030 {
 
 ## Members
 
-        
-            `pfnAddPipelineStateToLibrary`
-
-            Add pipeline state to library.
-        
-            `pfnCalcPrivateBlendStateSize`
-
-            Calculate private blend state size.
-        
-            `pfnCalcPrivateCommandAllocatorSize`
-
-            Calculate private command allocator size.
-        
-            `pfnCalcPrivateCommandListSize`
-
-            Calculate private command list size.
-        
-            `pfnCalcPrivateCommandQueueSize`
-
-            Calculate private command queue size.
-        
-            `pfnCalcPrivateCommandSignatureSize`
-
-            Calculate private command signature size.
-        
-            `pfnCalcPrivateDepthStencilStateSize`
-
-            Calculate private depth stencil state size.
-        
-            `pfnCalcPrivateDescriptorHeapSize`
-
-            Calculate private descriptor heap size.
-        
-            `pfnCalcPrivateElementLayoutSize`
-
-            Calculate private element layout size.
-        
-            `pfnCalcPrivateFenceSize`
-
-            Calculate private fence size.
-        
-            `pfnCalcPrivateGeometryShaderWithStreamOutput`
-
-            Calculate private geometry shader with stream output.
-        
-            `pfnCalcPrivateHeapAndResourceSizes`
-
-            Calculate private heap and resource sizes.
-        
-            `pfnCalcPrivateOpenedHeapAndResourceSizes`
-
-            Calculate private opened heap and resource sizes.
-        
-            `pfnCalcPrivatePipelineLibrarySize`
-
-            Calculate private pipeline library size.
-        
-            `pfnCalcPrivatePipelineStateSize`
-
-            Calculate private pipeline state size.
-        
-            `pfnCalcPrivateQueryHeapSize`
-
-            Calculate private query heap size.
-        
-            `pfnCalcPrivateRasterizerStateSize`
-
-            Calculate private rasterizer state size.
-        
-            `pfnCalcPrivateRootSignatureSize`
-
-            Calculate private root signature size.
-        
-            `pfnCalcPrivateShaderSize`
-
-            Calculate private shader size.
-        
-            `pfnCalcPrivateTessellationShaderSize`
-
-            Calculate private tessellation shader size.
-        
-            `pfnCalcSerializedLibrarySize`
-
-            Calculate serialized library size.
-        
-            `pfnCheckExistingResourceAllocationInfo`
-
-            Check existing resource allocation info.
-        
-            `pfnCheckFormatSupport`
-
-            Check format support.
-        
-            `pfnCheckMultisampleQualityLevels`
-
-            Check multi-sample quality levels.
-        
-            `pfnCheckResourceAllocationHandle`
-
-            Check resource allocation handle.
-        
-            `pfnCheckResourceAllocationInfo`
-
-            Check resource allocation info.
-        
-            `pfnCheckResourceVirtualAddress`
-
-            Check resource virtual address.
-        
-            `pfnCheckSubresourceInfo`
-
-            Check sub resource info.
-        
-            `pfnCopyDescriptors`
-
-            Copy descriptors.
-        
-            `pfnCopyDescriptorsSimple`
-
-            Copy descriptor sample.
-        
-            `pfnCreateBlendState`
-
-            Create blend state.
-        
-            `pfnCreateCommandAllocator`
-
-            Create command allocator.
-        
-            `pfnCreateCommandList`
-
-            Create command list.
-        
-            `pfnCreateCommandQueue`
-
-            Create command queue.
-        
-            `pfnCreateCommandSignature`
-
-            Create command signature.
-        
-            `pfnCreateComputeShader`
-
-            Create compute shader.
-        
-            `pfnCreateConstantBufferView`
-
-            Create constant buffer view.
-        
-            `pfnCreateDepthStencilState`
-
-            Create depth stencil state.
-        
-            `pfnCreateDepthStencilView`
-
-            Create depth stencil view.
-        
-            `pfnCreateDescriptorHeap`
-
-            Create descriptor heap.
-        
-            `pfnCreateDomainShader`
-
-            Create domain shader.
-        
-            `pfnCreateElementLayout`
-
-            
-        
-            `pfnCreateFence`
-
-            Create fence.
-        
-            `pfnCreateGeometryShader`
-
-            Create geometry shader.
-        
-            `pfnCreateGeometryShaderWithStreamOutput`
-
-            Create geometry shader with stream output.
-        
-            `pfnCreateHeapAndResource`
-
-            Create heap and resource.
-        
-            `pfnCreateHullShader`
-
-            Create hull shader.
-        
-            `pfnCreatePipelineLibrary`
-
-            Create pipeline library.
-        
-            `pfnCreatePipelineState`
-
-            Create pipeline state.
-        
-            `pfnCreatePixelShader`
-
-            Create pixel shader.
-        
-            `pfnCreateQueryHeap`
-
-            Create query heap.
-        
-            `pfnCreateRasterizerState`
-
-            Create rasterizer state.
-        
-            `pfnCreateRenderTargetView`
-
-            Create render target view.
-        
-            `pfnCreateRootSignature`
-
-            Create root signature.
-        
-            `pfnCreateSampler`
-
-            Create sampler.
-        
-            `pfnCreateShaderResourceView`
-
-            Create shader resource view.
-        
-            `pfnCreateUnorderedAccessView`
-
-            Create unordered access view.
-        
-            `pfnCreateVertexShader`
-
-            Create vertex shader.
-        
-            `pfnDestroyBlendState`
-
-            Destroy blend state.
-        
-            `pfnDestroyCommandAllocator`
-
-            Destroy command allocator.
-        
-            `pfnDestroyCommandList`
-
-            Destroy command list.
-        
-            `pfnDestroyCommandQueue`
-
-            Destroy command queue.
-        
-            `pfnDestroyCommandSignature`
-
-            Destroy command signature.
-        
-            `pfnDestroyDepthStencilState`
-
-            Destroy depth stencil state.
-        
-            `pfnDestroyDescriptorHeap`
-
-            Destroy descriptor heap.
-        
-            `pfnDestroyElementLayout`
-
-            Destroy element layout.
-        
-            `pfnDestroyFence`
-
-            Destroy fence.
-        
-            `pfnDestroyHeapAndResource`
 
-            Destroy heap and resource.
-        
-            `pfnDestroyPipelineLibrary`
+`pfnAddPipelineStateToLibrary`
 
-            Destroy pipeline library.
-        
-            `pfnDestroyPipelineState`
+Add pipeline state to library.
 
-            
-        
-            `pfnDestroyQueryHeap`
+`pfnCalcPrivateBlendStateSize`
 
-            Destroy query heap.
-        
-            `pfnDestroyRasterizerState`
+Calculate private blend state size.
 
-            Destory rasterizer state.
-        
-            `pfnDestroyRootSignature`
+`pfnCalcPrivateCommandAllocatorSize`
 
-            Destroy root signature.
-        
-            `pfnDestroyShader`
+Calculate private command allocator size.
 
-            Destroy shader.
-        
-            `pfnEvict`
+`pfnCalcPrivateCommandListSize`
 
-            Evict.
-        
-            `pfnGetCPUDescriptorHandleForHeapStart`
+Calculate private command list size.
 
-            Get CPU descriptor handle for heap start.
-        
-            `pfnGetDebugAllocationInfo`
+`pfnCalcPrivateCommandQueueSize`
 
-            Get debug allocation info.
-        
-            `pfnGetDescriptorSizeInBytes`
+Calculate private command queue size.
 
-            Get descriptor size in bytes.
-        
-            `pfnGetGPUDescriptorHandleForHeapStart`
+`pfnCalcPrivateCommandSignatureSize`
 
-            Get GPU descriptor handle for heap start.
-        
-            `pfnGetImplicitPhysicalAdapterMask`
+Calculate private command signature size.
 
-            Get implicit physical adapter mask.
-        
-            `pfnGetMipPacking`
+`pfnCalcPrivateDepthStencilStateSize`
 
-            Get MIP packing.
-        
-            `pfnGetPresentPrivateDriverDataSize`
+Calculate private depth stencil state size.
 
-            Get present private driver data size.
-        
-            `pfnMakeResident`
+`pfnCalcPrivateDescriptorHeapSize`
 
-            Make resident.
-        
-            `pfnMapHeap`
+Calculate private descriptor heap size.
 
-            Map heap.
-        
-            `pfnOfferResources`
+`pfnCalcPrivateElementLayoutSize`
 
-            Offer resources.
-        
-            `pfnOpenHeapAndResource`
+Calculate private element layout size.
 
-            Open heap and resource.
-        
-            `pfnQueryNodeMap`
+`pfnCalcPrivateFenceSize`
 
-            Query node map.
-        
-            `pfnReclaimResources`
+Calculate private fence size.
 
-            Reclaim resources.
-        
-            `pfnResetCommandAllocator`
+`pfnCalcPrivateGeometryShaderWithStreamOutput`
 
-            Reset command allocator.
-        
-            `pfnRetrieveShaderComment`
+Calculate private geometry shader with stream output.
 
-            Retrieve shader comment.
-        
-            `pfnSerializeLibrary`
+`pfnCalcPrivateHeapAndResourceSizes`
 
-            Serialized libary.
-        
-            `pfnUnmapHeap`
+Calculate private heap and resource sizes.
 
-            Unmap heap.
+`pfnCalcPrivateOpenedHeapAndResourceSizes`
+
+Calculate private opened heap and resource sizes.
+
+`pfnCalcPrivatePipelineLibrarySize`
+
+Calculate private pipeline library size.
+
+`pfnCalcPrivatePipelineStateSize`
+
+Calculate private pipeline state size.
+
+`pfnCalcPrivateQueryHeapSize`
+
+Calculate private query heap size.
+
+`pfnCalcPrivateRasterizerStateSize`
+
+Calculate private rasterizer state size.
+
+`pfnCalcPrivateRootSignatureSize`
+
+Calculate private root signature size.
+
+`pfnCalcPrivateShaderSize`
+
+Calculate private shader size.
+
+`pfnCalcPrivateTessellationShaderSize`
+
+Calculate private tessellation shader size.
+
+`pfnCalcSerializedLibrarySize`
+
+Calculate serialized library size.
+
+`pfnCheckExistingResourceAllocationInfo`
+
+Check existing resource allocation info.
+
+`pfnCheckFormatSupport`
+
+Check format support.
+
+`pfnCheckMultisampleQualityLevels`
+
+Check multi-sample quality levels.
+
+`pfnCheckResourceAllocationHandle`
+
+Check resource allocation handle.
+
+`pfnCheckResourceAllocationInfo`
+
+Check resource allocation info.
+
+`pfnCheckResourceVirtualAddress`
+
+Check resource virtual address.
+
+`pfnCheckSubresourceInfo`
+
+Check sub resource info.
+
+`pfnCopyDescriptors`
+
+Copy descriptors.
+
+`pfnCopyDescriptorsSimple`
+
+Copy descriptor sample.
+
+`pfnCreateBlendState`
+
+Create blend state.
+
+`pfnCreateCommandAllocator`
+
+Create command allocator.
+
+`pfnCreateCommandList`
+
+Create command list.
+
+`pfnCreateCommandQueue`
+
+Create command queue.
+
+`pfnCreateCommandSignature`
+
+Create command signature.
+
+`pfnCreateComputeShader`
+
+Create compute shader.
+
+`pfnCreateConstantBufferView`
+
+Create constant buffer view.
+
+`pfnCreateDepthStencilState`
+
+Create depth stencil state.
+
+`pfnCreateDepthStencilView`
+
+Create depth stencil view.
+
+`pfnCreateDescriptorHeap`
+
+Create descriptor heap.
+
+`pfnCreateDomainShader`
+
+Create domain shader.
+
+`pfnCreateElementLayout`
+
+
+
+`pfnCreateFence`
+
+Create fence.
+
+`pfnCreateGeometryShader`
+
+Create geometry shader.
+
+`pfnCreateGeometryShaderWithStreamOutput`
+
+Create geometry shader with stream output.
+
+`pfnCreateHeapAndResource`
+
+Create heap and resource.
+
+`pfnCreateHullShader`
+
+Create hull shader.
+
+`pfnCreatePipelineLibrary`
+
+Create pipeline library.
+
+`pfnCreatePipelineState`
+
+Create pipeline state.
+
+`pfnCreatePixelShader`
+
+Create pixel shader.
+
+`pfnCreateQueryHeap`
+
+Create query heap.
+
+`pfnCreateRasterizerState`
+
+Create rasterizer state.
+
+`pfnCreateRenderTargetView`
+
+Create render target view.
+
+`pfnCreateRootSignature`
+
+Create root signature.
+
+`pfnCreateSampler`
+
+Create sampler.
+
+`pfnCreateShaderResourceView`
+
+Create shader resource view.
+
+`pfnCreateUnorderedAccessView`
+
+Create unordered access view.
+
+`pfnCreateVertexShader`
+
+Create vertex shader.
+
+`pfnDestroyBlendState`
+
+Destroy blend state.
+
+`pfnDestroyCommandAllocator`
+
+Destroy command allocator.
+
+`pfnDestroyCommandList`
+
+Destroy command list.
+
+`pfnDestroyCommandQueue`
+
+Destroy command queue.
+
+`pfnDestroyCommandSignature`
+
+Destroy command signature.
+
+`pfnDestroyDepthStencilState`
+
+Destroy depth stencil state.
+
+`pfnDestroyDescriptorHeap`
+
+Destroy descriptor heap.
+
+`pfnDestroyElementLayout`
+
+Destroy element layout.
+
+`pfnDestroyFence`
+
+Destroy fence.
+
+`pfnDestroyHeapAndResource`
+
+Destroy heap and resource.
+
+`pfnDestroyPipelineLibrary`
+
+Destroy pipeline library.
+
+`pfnDestroyPipelineState`
+
+
+
+`pfnDestroyQueryHeap`
+
+Destroy query heap.
+
+`pfnDestroyRasterizerState`
+
+Destory rasterizer state.
+
+`pfnDestroyRootSignature`
+
+Destroy root signature.
+
+`pfnDestroyShader`
+
+Destroy shader.
+
+`pfnEvict`
+
+Evict.
+
+`pfnGetCPUDescriptorHandleForHeapStart`
+
+Get CPU descriptor handle for heap start.
+
+`pfnGetDebugAllocationInfo`
+
+Get debug allocation info.
+
+`pfnGetDescriptorSizeInBytes`
+
+Get descriptor size in bytes.
+
+`pfnGetGPUDescriptorHandleForHeapStart`
+
+Get GPU descriptor handle for heap start.
+
+`pfnGetImplicitPhysicalAdapterMask`
+
+Get implicit physical adapter mask.
+
+`pfnGetMipPacking`
+
+Get MIP packing.
+
+`pfnGetPresentPrivateDriverDataSize`
+
+Get present private driver data size.
+
+`pfnMakeResident`
+
+Make resident.
+
+`pfnMapHeap`
+
+Map heap.
+
+`pfnOfferResources`
+
+Offer resources.
+
+`pfnOpenHeapAndResource`
+
+Open heap and resource.
+
+`pfnQueryNodeMap`
+
+Query node map.
+
+`pfnReclaimResources`
+
+Reclaim resources.
+
+`pfnResetCommandAllocator`
+
+Reset command allocator.
+
+`pfnRetrieveShaderComment`
+
+Retrieve shader comment.
+
+`pfnSerializeLibrary`
+
+Serialized libary.
+
+`pfnUnmapHeap`
+
+Unmap heap.
 
 
 ## Requirements

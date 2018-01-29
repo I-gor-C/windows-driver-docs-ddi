@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dbf65c28-b4f2-4930-8d01-050c45f87bb4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_FILTER, DXVAHDDDI_FILTER
+ms.keywords : d3dumddi/DXVAHDDDI_FILTER_ANAMORPHIC_SCALING, DXVA2_Structs_730202a4-96bd-4779-b952-d493295f06ad.xml, DXVAHDDDI_FILTER_ANAMORPHIC_SCALING, d3dumddi/DXVAHDDDI_FILTER_HUE, DXVAHDDDI_FILTER_EDGE_ENHANCEMENT, DXVAHDDDI_FILTER_BRIGHTNESS, DXVAHDDDI_FILTER_CONTRAST, DXVAHDDDI_FILTER_HUE, d3dumddi/DXVAHDDDI_FILTER_BRIGHTNESS, d3dumddi/DXVAHDDDI_FILTER_NOISE_REDUCTION, d3dumddi/DXVAHDDDI_FILTER_SATURATION, DXVAHDDDI_FILTER enumeration [Display Devices], display.dxvahdddi_filter, d3dumddi/DXVAHDDDI_FILTER_CONTRAST, DXVAHDDDI_FILTER_SATURATION, d3dumddi/DXVAHDDDI_FILTER, DXVAHDDDI_FILTER_NOISE_REDUCTION, DXVAHDDDI_FILTER, _DXVAHDDDI_FILTER, d3dumddi/DXVAHDDDI_FILTER_EDGE_ENHANCEMENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_FILTER is supported beginning with the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_FILTER
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_FILTER
 ---
 
@@ -101,11 +105,8 @@ typedef enum _DXVAHDDDI_FILTER {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
  
 
  

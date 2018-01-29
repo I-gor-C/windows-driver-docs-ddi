@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b28290c7-2c02-4422-af7b-4188d6f54b54
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE, *LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE
+ms.keywords : d3dhal/LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dhal/D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure [Display Devices], *LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, display.d3dhal_dp2drawindexedprimitive, d3dstrct_61b06507-bfbe-4733-ac52-03d27bac0a07.xml, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2DRAWINDEXEDPRIMITIVE
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2DRAWINDEXEDPRIMITIVE
 ---
 
@@ -54,33 +58,41 @@ typedef struct _D3DHAL_DP2DRAWINDEXEDPRIMITIVE {
 
 ## Members
 
-        
-            `BaseVertexIndex`
 
-            Specifies the amount that should be added to each index referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.
-        
-            `MinIndex`
+`BaseVertexIndex`
 
-            Specifies the minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
-        
-            `NumVertices`
+Specifies the amount that should be added to each index referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.
 
-            Specifies the number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
-        
-            `PrimitiveCount`
 
-            Specifies the number of triangles, lines or points to draw for the given primitive.
-        
-            `primType`
+<dl>
+<dt><b>DirectX 8.1 and earlier versions only.</b></dt>
+<dt>Specified using a DWORD.</dt>
+<dt><b>DirectX 9.0 and later versions only.</b></dt>
+<dt>Specified using an INT.</dt>
+</dl>
 
-            Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).
-        
-            `StartIndex`
+`MinIndex`
 
-            Specifies the first index in the index buffer from which indices are read to draw the primitives.
+Specifies the minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
 
-    ## Remarks
-        The vertex data can be untransformed (if the hardware supports hardware vertex processing) or transformed if the application supplied data in that form to the runtime.
+`NumVertices`
+
+Specifies the number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
+
+`PrimitiveCount`
+
+Specifies the number of triangles, lines or points to draw for the given primitive.
+
+`primType`
+
+Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).
+
+`StartIndex`
+
+Specifies the first index in the index buffer from which indices are read to draw the primitives.
+
+## Remarks
+The vertex data can be untransformed (if the hardware supports hardware vertex processing) or transformed if the application supplied data in that form to the runtime.
 
 As with vertices, the actual indices to use are not passed with the token data, but rather should be read from the currently selected index buffer. See <a href="https://msdn.microsoft.com/5bf7dc12-d988-4194-a81f-52c9c5356610">Index Buffers</a> for more details.
 
@@ -92,20 +104,16 @@ As with vertices, the actual indices to use are not passed with the token data, 
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2drawindexedprimitive2.md">D3DHAL_DP2DRAWINDEXEDPRIMITIVE2</a>
-</dt>
-<dt>D3DDP2OP_DRAWINDEXEDPRIMITIVE</dt>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-</dl>
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2drawindexedprimitive2.md">D3DHAL_DP2DRAWINDEXEDPRIMITIVE2</a>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+D3DDP2OP_DRAWINDEXEDPRIMITIVE
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\riloperatorinfo.htm
 old-project : netvista
 ms.assetid : 213a4d4e-d19a-40c4-9bc4-8cf6f8aa2d07
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILOPERATORINFO, RILOPERATORINFO, *LPRILOPERATORINFO
+ms.date : 1/18/2018
+ms.keywords : RILOPERATORINFO structure [Network Drivers Starting with Windows Vista], RILOPERATORINFO, *LPRILOPERATORINFO, ntddrilapitypes/RILOPERATORINFO, netvista.riloperatorinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILOPERATORINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILOPERATORINFO, *LPRILOPERATORINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILOPERATORINFO, RILOPERATORINFO"
 ---
 
 # RILOPERATORINFO structure
@@ -50,26 +54,26 @@ typedef struct _RILOPERATORINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwIndex`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwStatus`
 
-            
-        
-            `ronNames`
+`dwIndex`
 
-            
+
+
+`dwParams`
+
+
+
+`dwStatus`
+
+
+
+`ronNames`
+
+
 
 
 ## Requirements

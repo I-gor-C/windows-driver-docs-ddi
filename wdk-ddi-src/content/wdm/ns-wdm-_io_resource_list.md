@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d8c29339-274e-410a-893d-328703d902c3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_RESOURCE_LIST, *PIO_RESOURCE_LIST, IO_RESOURCE_LIST
+ms.keywords : kstruct_b_2e2d049f-a7c9-4051-8fa7-639bf03b5aae.xml, kernel.io_resource_list, wdm/PIO_RESOURCE_LIST, wdm/IO_RESOURCE_LIST, PIO_RESOURCE_LIST, PIO_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], *PIO_RESOURCE_LIST, IO_RESOURCE_LIST, IO_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], _IO_RESOURCE_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_RESOURCE_LIST
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PIO_RESOURCE_LIST, IO_RESOURCE_LIST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : IO_RESOURCE_LIST, *PIO_RESOURCE_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _IO_RESOURCE_LIST {
 
 ## Members
 
-        
-            `Count`
 
-            The number of elements in the <b>Descriptors</b> array.
-        
-            `Descriptors`
+`Count`
 
-            The first element in an array of one or more <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures.
-        
-            `Revision`
+The number of elements in the <b>Descriptors</b> array.
 
-            The revision of this structure. This value should be 1.
-        
-            `Version`
+`Descriptors`
 
-            The version number of this structure. This value should be 1.
+The first element in an array of one or more <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures.
 
-    ## Remarks
-        This structure is the header for an array of <b>IO_RESOURCE_DESCRIPTOR</b> structures. The <b>Descriptors</b> member contains the first element in this array, and the <b>Count</b> member specifies the total number of array elements. If the array contains more than one element, the remaining elements in the array immediately follow the <b>IO_RESOURCE_LIST</b> structure in memory. The total number of bytes occupied by the <b>IO_RESOURCE_LIST</b> structure and any array elements that follow this structure is <b>sizeof</b>(<b>IO_RESOURCE_LIST</b>) + (<b>Count</b> - 1) * <b>sizeof</b>(<b>IO_RESOURCE_DESCRIPTOR</b>).
+`Revision`
+
+The revision of this structure. This value should be 1.
+
+`Version`
+
+The version number of this structure. This value should be 1.
+
+## Remarks
+This structure is the header for an array of <b>IO_RESOURCE_DESCRIPTOR</b> structures. The <b>Descriptors</b> member contains the first element in this array, and the <b>Count</b> member specifies the total number of array elements. If the array contains more than one element, the remaining elements in the array immediately follow the <b>IO_RESOURCE_LIST</b> structure in memory. The total number of bytes occupied by the <b>IO_RESOURCE_LIST</b> structure and any array elements that follow this structure is <b>sizeof</b>(<b>IO_RESOURCE_LIST</b>) + (<b>Count</b> - 1) * <b>sizeof</b>(<b>IO_RESOURCE_DESCRIPTOR</b>).
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,16 +82,12 @@ typedef struct _IO_RESOURCE_LIST {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
  
 
  

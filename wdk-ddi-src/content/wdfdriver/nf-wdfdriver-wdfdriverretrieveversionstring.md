@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cbea7a3c-faae-4779-9a27-6c2b60f2b35c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDriverRetrieveVersionString
+ms.keywords : kmdf.wdfdriverretrieveversionstring, WdfDriverRetrieveVersionString, DFDriverObjectRef_42298067-6221-4d0c-af6b-8579f95d2047.xml, wdfdriver/WdfDriverRetrieveVersionString, WdfDriverRetrieveVersionString method, wdf.wdfdriverretrieveversionstring, PFN_WDFDRIVERRETRIEVEVERSIONSTRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDriverRetrieveVersionString
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DRIVER_INIT_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -64,11 +68,23 @@ A handle to a framework string object that the driver obtained from a previous c
 ## Return Value
 
 <b>WdfDriverRetrieveVersionString</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The framework could not allocate a buffer for the Unicode string.
+</dl>
+</td>
+<td width="60%">
+The framework could not allocate a buffer for the Unicode string.
 
- 
+</td>
+</tr>
+</table> 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -79,8 +95,6 @@ A system bug check occurs if the <i>Driver</i> handle is invalid.
 Your driver can call <b>WdfDriverRetrieveVersionString</b> if you want to display a string that identifies the framework library's version. The string's format might change from one version to another, so the driver must not attempt to interpret the string's format or content.
 
 For more information about library versions, see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.
-
-The following code example creates a string object, assigns the version string to the object, and displays the string if a debugger is running.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,26 +110,18 @@ The following code example creates a string object, assigns the version string t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-</dt>
-<dt>
-<a href="..\wdfdriver\nf-wdfdriver-wdfdriverisversionavailable.md">WdfDriverIsVersionAvailable</a>
-</dt>
-<dt>
-<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
-</dt>
-<dt>
 <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
-</dt>
-<dt>
+
 <a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>
-</dt>
-<dt>
+
 <a href="..\wdfstring\nf-wdfstring-wdfstringgetunicodestring.md">WdfStringGetUnicodeString</a>
-</dt>
-</dl>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdriverisversionavailable.md">WdfDriverIsVersionAvailable</a>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
+
  
 
  

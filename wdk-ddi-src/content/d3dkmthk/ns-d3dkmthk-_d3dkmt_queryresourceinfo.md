@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14078b2b-8951-48df-912a-e053bc997dde
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_QUERYRESOURCEINFO, D3DKMT_QUERYRESOURCEINFO
+ms.keywords : display.d3dkmt_queryresourceinfo, D3DKMT_QUERYRESOURCEINFO structure [Display Devices], _D3DKMT_QUERYRESOURCEINFO, D3DKMT_QUERYRESOURCEINFO, OpenGL_Structs_1bab95d7-d3a4-4380-939f-bca4e2d98478.xml, d3dkmthk/D3DKMT_QUERYRESOURCEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_QUERYRESOURCEINFO
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_QUERYRESOURCEINFO
 ---
 
@@ -52,34 +56,34 @@ typedef struct _D3DKMT_QUERYRESOURCEINFO {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the device that the resource and allocations are associated with.
-        
-            `hGlobalShare`
+`hDevice`
 
-            [in] A handle to the shared resource to open.
-        
-            `NumAllocations`
+[in] A handle to the device that the resource and allocations are associated with.
 
-            [out] The number of allocations that are associated with the resource.
-        
-            `pPrivateRuntimeData`
+`hGlobalShare`
 
-            [in] If non-<b>NULL</b>, a pointer to a buffer that receives the runtime-private data that is supplied at create time. The OpenGL ICD should first call the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a> function with <b>pPrivateRuntimeData</b> set to <b>NULL</b> to obtain the buffer size and then call again with the correct size buffer.
-        
-            `PrivateRuntimeDataSize`
+[in] A handle to the shared resource to open.
 
-            [in/out] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to. If <b>pPrivateRuntimeData</b> is <b>NULL</b>, <b>PrivateRuntimeDataSize</b> is set to the size, in bytes, that is required for the buffer to store the runtime-private data.
-        
-            `ResourcePrivateDriverDataSize`
+`NumAllocations`
 
-            [out] The size, in bytes, of the buffer that is required to hold the private driver data for the resource.
-        
-            `TotalPrivateDriverDataSize`
+[out] The number of allocations that are associated with the resource.
 
-            [out] The size, in bytes, of the buffer that is required to hold the private driver data for all of the allocations that are associated with the resource.
+`pPrivateRuntimeData`
+
+[in] If non-<b>NULL</b>, a pointer to a buffer that receives the runtime-private data that is supplied at create time. The OpenGL ICD should first call the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a> function with <b>pPrivateRuntimeData</b> set to <b>NULL</b> to obtain the buffer size and then call again with the correct size buffer.
+
+`PrivateRuntimeDataSize`
+
+[in/out] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to. If <b>pPrivateRuntimeData</b> is <b>NULL</b>, <b>PrivateRuntimeDataSize</b> is set to the size, in bytes, that is required for the buffer to store the runtime-private data.
+
+`ResourcePrivateDriverDataSize`
+
+[out] The size, in bytes, of the buffer that is required to hold the private driver data for the resource.
+
+`TotalPrivateDriverDataSize`
+
+[out] The size, in bytes, of the buffer that is required to hold the private driver data for all of the allocations that are associated with the resource.
 
 
 ## Requirements
@@ -90,16 +94,12 @@ typedef struct _D3DKMT_QUERYRESOURCEINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a>
+
  
 
  

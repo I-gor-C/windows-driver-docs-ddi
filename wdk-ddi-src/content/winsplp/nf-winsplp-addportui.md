@@ -7,8 +7,8 @@ old-location : print\addportui.htm
 old-project : print
 ms.assetid : 8305ab0c-0783-4597-9e2c-dfd9cbc843d1
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : AddPortUI
+ms.date : 1/18/2018
+ms.keywords : pfnAddPortUI function [Print Devices], spoolfnc_e82f0e4d-e4f2-44b8-b957-3fc1b35e8a34.xml, print.addportui, pfnAddPortUI, winsplp/pfnAddPortUI, AddPortUI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnAddPortUI
-req.alt-loc : winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NOTIFICATION_CONFIG_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -62,7 +66,7 @@ Caller-supplied handle of the window that should be used as the parent for dialo
 
 `pszMonitorNameIn`
 
-
+TBD
 
 `ppszPortNameOut`
 
@@ -80,7 +84,8 @@ Port monitor UI DLLs are required to define an <b>AddPortUI</b> function and inc
 The spooler calls <b>AddPortUI</b> from within its AddPort function. The first three arguments received by <b>AddPortUI</b> are the arguments received by AddPort. (The AddPort function is described in the Microsoft Windows SDK documentation.)
 
 The function should perform the following operations:
-
+<ol>
+<li>
 Call OpenPrinter, specifying a printer name with the following format:<dl>
 <dd>\\<i>ServerName</i>\,XcvMonitor<i>MonitorName</i></dd>
 </dl>
@@ -92,8 +97,12 @@ The call to OpenPrinter requires a PRINTER_DEFAULTS structure, which is describe
 
 This call causes the print monitor server DLL's <a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a> function to be called.
 
+</li>
+<li>
 Obtain a port name from the user by displaying a dialog box.
 
+</li>
+<li>
 Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>, specifying the following input arguments:<ul>
 <li>The handle received from OpenPrinter</li>
 <li>The port name received from the user</li>
@@ -103,6 +112,8 @@ Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvD
 
 This call causes the server DLL's <a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a> function to be called. The <b>XcvDataPort</b> function should return a value that indicates whether the specified port name has already been used. If it has, the UI DLL should request another name from the user and call <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> again.
 
+</li>
+<li>
 After a valid new port name has been received, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> again, this time specifying the following input arguments:<ul>
 <li>The handle received from OpenPrinter</li>
 <li>The validated port name received from the user</li>
@@ -112,11 +123,20 @@ After a valid new port name has been received, call <a href="https://msdn.micros
 
 This call causes the server DLL's <a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a> function to be called again.
 
+</li>
+<li>
 Obtain port configuration parameters from the user by displaying a dialog box.
 
+</li>
+<li>
 Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> one or more times, specifying customized data name strings, to send each configuration parameter to the server DLL. Each <b>XcvData</b> call causes the server's <a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a> function to be called.
 
+</li>
+<li>
 Call ClosePrinter, specifying the handle received from OpenPrinter. This causes the server DLL's <a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a> function to be called.
+
+</li>
+</ol>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -132,25 +152,18 @@ Call ClosePrinter, specifying the handle received from OpenPrinter. This causes 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a>
-</dt>
-<dt>
-<a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>
-</dt>
-<dt>
-<a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
-</dt>
-<dt>
+
+<a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a>
+
+<a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a>
+
 <a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a>
-</dt>
-</dl>
- 
+
+<a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20AddPortUI function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20AddPortUI function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

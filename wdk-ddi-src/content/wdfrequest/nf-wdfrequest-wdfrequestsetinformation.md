@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2a5cccb3-24aa-404a-b887-2ccbe98a0673
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestSetInformation
+ms.keywords : PFN_WDFREQUESTSETINFORMATION, WdfRequestSetInformation method, wdfrequest/WdfRequestSetInformation, kmdf.wdfrequestsetinformation, WdfRequestSetInformation, wdf.wdfrequestsetinformation, DFRequestObjectRef_76b63618-935e-44b2-ac3d-591c5e11ea74.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestSetInformation
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -75,8 +79,6 @@ Drivers can also specify completion status information by calling <a href="..\wd
 
 For more information about <b>WdfRequestSetInformation</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
-The following code example sets request completion information that is based on the value of the I/O control code that an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_device_control.md">EvtIoDeviceControl</a> callback function receives.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,14 +93,10 @@ The following code example sets request completion information that is based on 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
-</dt>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetinformation.md">WdfRequestGetInformation</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
+
  
 
  

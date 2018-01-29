@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FEDC2FB5-9F1A-4829-A98D-3BEA4218AE3D
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_openadapter, PFND3D12DDI_OPENADAPTER callback function [Display Devices], PFND3D12DDI_OPENADAPTER, d3d12umddi/PFND3D12DDI_OPENADAPTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFND3D12DDI_OPENADAPTER
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
@@ -59,19 +63,41 @@ HRESULT Pfnd3d12ddiOpenadapter(
 ## Return Value
 
 PFND3D12DDI_OPENADAPTER returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The graphics adapter object was successfully created.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter object was successfully created.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
                 PFND3D12DDI_OPENADAPTER could not allocate memory that was required for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The graphics adapter object that is created by the PFND3D12DDI_OPENADAPTER function represents the underlying graphics hardware. Before the Direct3D runtime can create a display device by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt779070">PFND3D12DDI_CREATEDEVICE_0003</a>, the user-mode display driver should call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.md">pfnQueryAdapterInfoCb</a> function to query for the graphics hardware capabilities from the display miniport driver. 
 
-The Direct3D runtime can open multiple graphics adapter objects from a single graphics adapter.</p>
+The Direct3D runtime can open multiple graphics adapter objects from a single graphics adapter.
 
 ## Requirements
 | &nbsp; | &nbsp; |

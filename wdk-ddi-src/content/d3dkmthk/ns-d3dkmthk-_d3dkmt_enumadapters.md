@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a05252bc-6bc4-4cef-aa42-e2c03556847a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_ENUMADAPTERS, D3DKMT_ENUMADAPTERS
+ms.keywords : display.d3dkmt_enumadapters, D3DKMT_ENUMADAPTERS, d3dkmthk/D3DKMT_ENUMADAPTERS, _D3DKMT_ENUMADAPTERS, D3DKMT_ENUMADAPTERS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_ENUMADAPTERS
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_ENUMADAPTERS
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_ENUMADAPTERS {
 
 ## Members
 
-        
-            `Adapters`
 
-            An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapterinfo.md">D3DKMT_ADAPTERINFO</a> structures that supply configuration information for each adapter. The maximum number of adapters that can be enumerated is 16.
-        
-            `NumAdapters`
+`Adapters`
 
-            [in] The number of graphics adapters.
+An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapterinfo.md">D3DKMT_ADAPTERINFO</a> structures that supply configuration information for each adapter. The maximum number of adapters that can be enumerated is 16.
+
+`NumAdapters`
+
+[in] The number of graphics adapters.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DKMT_ENUMADAPTERS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapterinfo.md">D3DKMT_ADAPTERINFO</a>
-</dt>
-</dl>
+
  
 
  

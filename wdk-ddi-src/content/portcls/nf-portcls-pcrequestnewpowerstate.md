@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : fbe2c665-a7e8-43e4-95e5-a7e87521e163
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcRequestNewPowerState
+ms.keywords : PcRequestNewPowerState, audio.pcrequestnewpowerstate, PcRequestNewPowerState function [Audio Devices], audpc-routines_c3341fb0-4609-4b3f-a0b2-ef589c804f1d.xml, portcls/PcRequestNewPowerState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcRequestNe
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcRequestNewPowerState
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -51,7 +55,7 @@ NTSTATUS PcRequestNewPowerState(
 
 `pDeviceObject`
 
-Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
+Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">functional device object (FDO)</a>. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
 
 `RequestedNewState`
 
@@ -67,22 +71,52 @@ Specifies the device power state being requested. Set this parameter to one of t
 An adapter driver can call <b>PcRequestNewPowerState</b> to compensate for hardware design flaws. For example, if the functions in an audio adapter are not mutually independent and need to be shut down in a particular order, the adapter can call <b>PcRequestNewPowerState</b> to ensure that a particular subdevice is shut down first.
 
 The <b>RequestedNewState</b> parameter can be set to one of the DEVICE_POWER_STATE enumeration values in the following table.
-
+<table>
+<tr>
+<th>Power State</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
 <b>PowerDeviceD0</b>
 
+</td>
+<td>
 Full power state
 
+</td>
+</tr>
+<tr>
+<td>
 <b>PowerDeviceD1</b>
 
+</td>
+<td>
 The sleep state with the lowest power-up latency
 
+</td>
+</tr>
+<tr>
+<td>
 <b>PowerDeviceD2</b>
 
+</td>
+<td>
 A medium-latency sleep state
 
+</td>
+</tr>
+<tr>
+<td>
 <b>PowerDeviceD3</b>
 
+</td>
+<td>
 A full hibernation state and the sleep state with the longest power-up latency
+
+</td>
+</tr>
+</table> 
 
 The hardware can be accessed only in power state <b>PowerDeviceD0</b>. In any other state, the driver must cache any attempted hardware accesses and defer those accesses until the <b>PowerDeviceD0</b> state is restored.
 
@@ -102,11 +136,8 @@ For more information, see <a href="https://msdn.microsoft.com/3d3d63af-5790-4760
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-</dl>
+
  
 
  

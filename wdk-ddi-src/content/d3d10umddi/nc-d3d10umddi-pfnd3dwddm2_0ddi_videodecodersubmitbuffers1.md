@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 708A7F64-F8A8-4D0B-A824-CC8DD158216A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.videodecodersubmitbuffers1, pfnVideoDecoderSubmitBuffers1 callback function [Display Devices], pfnVideoDecoderSubmitBuffers1, PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1, PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1, d3d10umddi/pfnVideoDecoderSubmitBuffers1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnVideoDecoderSubmitBuffers1
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -74,13 +78,36 @@ The number of buffers in the array that is referenced by the <b>pBufferDesc</b> 
 ## Return Value
 
 Returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>Private driver data was successfully returned.
+</dl>
+</td>
+<td width="60%">
+Private driver data was successfully returned.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         Memory was not available to complete the operation.
+
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,17 +127,12 @@ The <b>pBufferDesc</b> member points to an array of one or more <a href="..\d3d1
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_decoder_buffer_desc1.md">D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoder.md">CreateVideoDecoder</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_decoder_buffer_desc1.md">D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoder.md">CreateVideoDecoder</a>
+
  
 
  

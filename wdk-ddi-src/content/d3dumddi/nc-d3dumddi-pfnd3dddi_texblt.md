@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1ddfd822-7a43-4976-a153-ba862d6dfd82
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.texblt, TexBlt callback function [Display Devices], TexBlt, PFND3DDDI_TEXBLT, PFND3DDDI_TEXBLT, d3dumddi/TexBlt, UserModeDisplayDriver_Functions_1d3c2c6d-849d-46c2-9934-f3c4e5720edf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TexBlt
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -91,17 +95,12 @@ The pixel formats of the source and destination textures are identical and, in g
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_texblt.md">D3DDDIARG_TEXBLT</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

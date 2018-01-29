@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 80b72de0-02a6-4891-b74a-c41cb14fa629
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIsWdmVersionAvailable
+ms.keywords : kernel.ioiswdmversionavailable, IoIsWdmVersionAvailable, k104_775d6afa-6edd-4922-bdff-a8fe5d32bc3a.xml, IoIsWdmVersionAvailable routine [Kernel-Mode Driver Architecture], wdm/IoIsWdmVersionAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoIsWdmVersionAvailable
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -70,48 +74,180 @@ Drivers should use the <a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">Rtl
 Cross-platform drivers should use this routine to check the WDM version before performing any operations that vary by platform or are not supported in all versions of WDM.
 
 The WDM_MAJORVERSION and WDM_MINORVERSION constants, which are defined in the Wdm.h header file, specify the WDM major and minor version numbers for the current version of Windows. The following lists the WDM version provided with each operating system.
-
+<table>
+<tr>
+<th>Operating system</th>
+<th>WDM major version</th>
+<th>WDM minor version</th>
+</tr>
+<tr>
+<td>
 Windows 7
 
+</td>
+<td>
 6
 
+</td>
+<td>
 0x00
 
+</td>
+</tr>
+<tr>
+<td>
 Windows Server 2008 R2
 
+</td>
+<td>
+6
+
+</td>
+<td>
+0x00
+
+</td>
+</tr>
+<tr>
+<td>
 Windows Server 2008
 
+</td>
+<td>
+6
+
+</td>
+<td>
+0x00
+
+</td>
+</tr>
+<tr>
+<td>
 Windows Vista
 
+</td>
+<td>
+6
+
+</td>
+<td>
+0x00
+
+</td>
+</tr>
+<tr>
+<td>
 Windows Server 2003
 
+</td>
+<td>
 1
 
+</td>
+<td>
 0x30
 
+</td>
+</tr>
+<tr>
+<td>
 Windows XP
 
+</td>
+<td>
+1
+
+</td>
+<td>
 0x20
 
+</td>
+</tr>
+<tr>
+<td>
 Windows 2000
 
+</td>
+<td>
+1
+
+</td>
+<td>
 0x10
 
+</td>
+</tr>
+<tr>
+<td>
 Windows Me
 
+</td>
+<td>
+1
+
+</td>
+<td>
 0x05
 
+</td>
+</tr>
+<tr>
+<td>
 Windows 98
+
+</td>
+<td>
+1
+
+</td>
+<td>
+0x00
+
+</td>
+</tr>
+</table> 
 
 Note that the minor version number is defined as a hexadecimal value.
 
 Later versions of WDM support all the features available in earlier versions of WDM; that is, each version of WDM is a superset of the previous WDM version.
 
 The following call returns <b>TRUE</b> on any of the listed operating systems, because all these systems support all the features of WDM 1.0:
-
-The following example shows how a driver can dynamically detect the current operating system:
-
-As the example shows, calling <b>IoIsWdmVersionAvailable</b>(1, 5) returns <b>TRUE</b> on Windows Me, Windows 2000, and any succeeding operating systems, but <b>FALSE</b> on Windows 98 and Windows 98 SE.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>bVersion = IoIsWdmVersionAvailable(1,0);</pre>
+</td>
+</tr>
+</table></span></div>The following example shows how a driver can dynamically detect the current operating system:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>if (IoIsWdmVersionAvailable(1, 0x10)) {
+    //
+    //If WDM 1.10 is supported, this is Windows 2000
+    //or better.
+    //
+} else if (IoIsWdmVersionAvailable(1, 5)) {
+    //
+    //If WDM 1.05 is supported, this is Windows ME
+    //or better.
+    //
+} else {
+    //
+    //WDM 1.0 is always supported, so this is Windows 98, 
+    //Windows 98 SE, or better.
+    //
+}</pre>
+</td>
+</tr>
+</table></span></div>As the example shows, calling <b>IoIsWdmVersionAvailable</b>(1, 5) returns <b>TRUE</b> on Windows Me, Windows 2000, and any succeeding operating systems, but <b>FALSE</b> on Windows 98 and Windows 98 SE.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -127,11 +263,8 @@ As the example shows, calling <b>IoIsWdmVersionAvailable</b>(1, 5) returns <b>TR
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a>
-</dt>
-</dl>
+
  
 
  

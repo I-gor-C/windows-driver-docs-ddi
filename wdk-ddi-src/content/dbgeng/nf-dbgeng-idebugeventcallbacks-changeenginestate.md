@@ -7,8 +7,8 @@ old-location : debugger\idebugeventcallbacks_changeenginestate.htm
 old-project : debugger
 ms.assetid : 42ad993a-b12e-49ff-8a1f-f62e2ab968d3
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks::ChangeEngineState, ChangeEngineState
+ms.date : 1/19/2018
+ms.keywords : debugger.idebugeventcallbacks_changeenginestate, ChangeEngineState, dbgeng/IDebugEventCallbacks::ChangeEngineState, IDebugEventCallbacks interface [Windows Debugging], ChangeEngineState method, ComCallbacks_fafc4238-0565-410b-9e00-1cbce74737f4.xml, IDebugEventCallbacks, ChangeEngineState method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks::ChangeEngineState, ChangeEngineState method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugEventCallbacks.ChangeEngineState
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -52,7 +56,6 @@ HRESULT ChangeEngineState(
 `Flags`
 
 Specifies a bit-set indicating the type of changes that occurred in the engine's state.  The following bit flags might be set:
-
 <table>
 <tr>
 <th>Value</th>
@@ -84,7 +87,7 @@ DEBUG_CES_BREAKPOINTS
 
 </td>
 <td>
-One or more <a href="debugger.multiprocessor_syntax#breakpoints#breakpoints">breakpoints</a> have changed.
+One or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">breakpoints</a> have changed.
 
 </td>
 </tr>
@@ -223,7 +226,7 @@ The return value is ignored by the engine unless it indicates a remote procedure
 
 This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
-For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. </p>
+For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

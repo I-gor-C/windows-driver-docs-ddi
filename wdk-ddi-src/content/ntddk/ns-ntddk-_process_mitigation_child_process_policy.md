@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8f388c0e-41ee-40e4-b633-687eeff74a0a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PROCESS_MITIGATION_CHILD_PROCESS_POLICY, *PPROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY
+ms.keywords : "*PPROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY, _PROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY structure [Kernel-Mode Driver Architecture], kernel.process_mitigation_child_process_policy, ntddk/PROCESS_MITIGATION_CHILD_PROCESS_POLICY"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PROCESS_MITIGATION_CHILD_PROCESS_POLICY
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPROCESS_MITIGATION_CHILD_PROCESS_POLICY, PROCESS_MITIGATION_CHILD_PROCESS_POLICY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PROCESS_MITIGATION_CHILD_PROCESS_POLICY, *PPROCESS_MITIGATION_CHILD_PROCESS_POLICY
 ---
 
 # _PROCESS_MITIGATION_CHILD_PROCESS_POLICY structure
@@ -53,10 +57,10 @@ typedef struct _PROCESS_MITIGATION_CHILD_PROCESS_POLICY {
 
 ## Members
 
-        
-            `DUMMYUNIONNAME`
 
-            
+`DUMMYUNIONNAME`
+
+
 
 
 ## Requirements

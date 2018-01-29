@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSRELATIVEEVENT, KSRELATIVEEVENT
+ms.keywords : stream.ksrelativeevent, KSRELATIVEEVENT structure [Streaming Media Devices], ks/KSRELATIVEEVENT, KSRELATIVEEVENT, ks-struct_d79f6a15-6e44-4d81-b4f1-c113cbc2ee79.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSRELATIVEEVENT
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSRELATIVEEVENT
 ---
 
@@ -54,26 +58,26 @@ typedef struct {
 
 ## Members
 
-        
-            `Event`
 
-            A <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that contains the event to be used.
-        
-            `EventData`
+`Event`
 
-            A <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
-        
-            `Flags`
+A <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that contains the event to be used.
 
-            Specifies what type of object is specified in the <b>ObjectHandle</b> and <b>ObjectPointer</b> union.
-        
-            `Reserved`
+`EventData`
 
-            Reserved and set to zero.
-        
-            `Size`
+A <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
 
-            Specifies the inclusive size of the structure, including any event specific data appended to the <b>EventData</b> member.
+`Flags`
+
+Specifies what type of object is specified in the <b>ObjectHandle</b> and <b>ObjectPointer</b> union.
+
+`Reserved`
+
+Reserved and set to zero.
+
+`Size`
+
+Specifies the inclusive size of the structure, including any event specific data appended to the <b>EventData</b> member.
 
 
 ## Requirements

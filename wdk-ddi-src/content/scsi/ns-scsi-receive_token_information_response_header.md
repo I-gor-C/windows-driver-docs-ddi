@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 54168476-1C55-4343-858C-7FBA863D35D0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+ms.keywords : storage.receive_token_information_response_header, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure [Storage Devices], *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure pointer [Storage Devices], RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -48,17 +52,17 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER {
 
 ## Members
 
-        
-            `TokenDescriptor`
 
-            The data containing a token created as the offload read ROD.
-        
-            `TokenDescriptorsLength`
+`TokenDescriptor`
 
-            The length, in bytes, of the <b>TokenDescriptor</b> member.
+The data containing a token created as the offload read ROD.
 
-    ## Remarks
-        The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure is included with a <a href="..\scsi\ns-scsi-receive_token_information_header.md">RECEIVE_TOKEN_INFORMATION_HEADER</a>structure  as a response to a POPULATE TOKEN command. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure follows the <b>SenseData</b> member of <b>RECEIVE_TOKEN_INFORMATION_HEADER</b>.
+`TokenDescriptorsLength`
+
+The length, in bytes, of the <b>TokenDescriptor</b> member.
+
+## Remarks
+The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure is included with a <a href="..\scsi\ns-scsi-receive_token_information_header.md">RECEIVE_TOKEN_INFORMATION_HEADER</a>structure  as a response to a POPULATE TOKEN command. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure follows the <b>SenseData</b> member of <b>RECEIVE_TOKEN_INFORMATION_HEADER</b>.
 
 All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
 
@@ -70,16 +74,12 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 | **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Scsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
-</dt>
-<dt>
+
 <a href="..\scsi\ns-scsi-receive_token_information_header.md">RECEIVE_TOKEN_INFORMATION_HEADER</a>
-</dt>
-</dl>
+
  
 
  

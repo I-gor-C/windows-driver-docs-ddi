@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 88D85EB1-11BC-42B9-B22E-5FB58F409C75
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : __MIDL_IKeywordDetectorOemAdapter_0002, KEYWORDID
+ms.keywords : __MIDL_IKeywordDetectorOemAdapter_0002, KwSelection, keyworddetectoroemadapter/ KwSelection, KEYWORDID enumeration [Audio Devices], audio.keywordid, keyworddetectoroemadapter/KEYWORDID, KEYWORDID, keyworddetectoroemadapter/KwInvalid, KwInvalid, KwVoiceAssistant, keyworddetectoroemadapter/ KwVoiceAssistant
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEYWORDID
-req.alt-loc : KeywordDetectorOemAdapter.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : KeywordDetectorOemAdapter.idl
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDID
 ---
 
@@ -53,6 +57,16 @@ typedef enum  {
 <tr>
 <td>KwInvalid</td>
 <td>Indicates that the keyword was invalid.</td>
+</tr>
+
+<tr>
+<td>KwSelection</td>
+<td>Indicates the "select" keyword was used.</td>
+</tr>
+
+<tr>
+<td>KwVoiceAssistant</td>
+<td>Indicates that the "hey Cortana" keyword was used.</td>
 </tr>
 </table>
 

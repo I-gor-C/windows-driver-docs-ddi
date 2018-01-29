@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 558636ed-4bab-42bc-8925-df01e032439a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream, IPortWaveRTStream::UnmapAllocatedPages, UnmapAllocatedPages
+ms.keywords : IPortWaveRTStream interface [Audio Devices], UnmapAllocatedPages method, portcls/IPortWaveRTStream::UnmapAllocatedPages, IPortWaveRTStream::UnmapAllocatedPages, UnmapAllocatedPages method [Audio Devices], IPortWaveRTStream interface, IPortWaveRTStream, UnmapAllocatedPages method [Audio Devices], audmp-routines_2d402b1b-6951-48db-89bb-81f3cc7e0076.xml, audio.iportwavertstream_unmapallocatedpages, UnmapAllocatedPages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWaveRTStream.UnmapAllocatedPages
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,20 +86,14 @@ This method is similar in operation to the <a href="..\wdm\nf-wdm-mmunmaplockedp
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536926">IPortWaveRTStream::FreePagesFromMdl</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : CC199F5C-BF05-4F1F-BEE4-8693F9156D8A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxWdfDeviceTryHandleUserIoctl
+ms.keywords : buses.udecxwdfdevicetryhandleuserioctl, udecxwdfdevice/UdecxWdfDeviceTryHandleUserIoctl, UdecxWdfDeviceTryHandleUserIoctl function [Buses], UdecxWdfDeviceTryHandleUserIoctl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UdecxWdfDeviceTryHandleUserIoctl
-req.alt-loc : Udecxstub.lib,Udecxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Udecxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION
 req.product : Windows 10 or later.
 ---
@@ -52,7 +56,7 @@ FORCEINLINE BOOLEAN UdecxWdfDeviceTryHandleUserIoctl(
 
 `UdecxWdfDevice`
 
-
+TBD
 
 `Request`
 
@@ -67,8 +71,19 @@ TRUE indicates that USB device emulation  class extension (UdeCx) recognized and
 ## Remarks
 
 The UDE client driver presents itself to user-mode software as a host controller driver. The client driver registers and exposes the GUID_DEVINTERFACE_USB_HOST_CONTROLLER device interface GUID. User-mode software  can open a handle to the device by specifying that GUID. By using that handle, the software can send IOCTL requests. 
-
- The client driver does not need to process the received IOCTL. It can send the request to the class extension by calling <b>UdecxWdfDeviceTryHandleUserIoctl</b>. If the class extension recognizes the request as a standard request, it completes it. Otherwise, the call fails and the client driver is then expected to complete the request. For a list of IOCTLs that must be handled, see <a href="usb_interfaces.htm#um_ioctl">USB IOCTLs for applications and services</a>.
+<div class="alert"><b>Note</b>  Note that other interface's IOCTL codes may overlap with the USB host controller interface. If
+    such I/O reaches this function the IOCTL will not be handled correctly.</div><div> </div> The client driver does not need to process the received IOCTL. It can send the request to the class extension by calling <b>UdecxWdfDeviceTryHandleUserIoctl</b>. If the class extension recognizes the request as a standard request, it completes it. Otherwise, the call fails and the client driver is then expected to complete the request. For a list of IOCTLs that must be handled, see <a href="https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist">USB IOCTLs for applications and services</a>.
+<ul>
+<li>
+<a href="..\usbioctl\ni-usbioctl-ioctl_get_hcd_driverkey_name.md">IOCTL_GET_HCD_DRIVERKEY_NAME</a>
+</li>
+<li>
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_root_hub_name.md">IOCTL_USB_GET_ROOT_HUB_NAME</a>
+</li>
+<li>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537344">IOCTL_USB_USER_REQUEST</a>
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,14 +99,10 @@ The UDE client driver presents itself to user-mode software as a host controller
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

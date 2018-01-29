@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 504878FA-3234-4BE7-95D9-6CCE08DB4D8A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UFX_ENDPOINT_CALLBACKS, UFX_ENDPOINT_CALLBACKS, *PUFX_ENDPOINT_CALLBACKS
+ms.keywords : buses.ufx_proprietary_charger_set_property, UfxProprietaryChargerSetProperty callback function [Buses], UfxProprietaryChargerSetProperty, UFX_PROPRIETARY_CHARGER_SET_PROPERTY, UFX_PROPRIETARY_CHARGER_SET_PROPERTY, ufxproprietarycharger/UfxProprietaryChargerSetProperty, PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY callback function pointer [Buses], PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY
-req.alt-loc : ufxproprietarycharger.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UFX_ENDPOINT_CALLBACKS, *PUFX_ENDPOINT_CALLBACKS
 req.product : Windows 10 or later.
 ---
@@ -86,11 +90,8 @@ In this callback function, the driver sets the specified property value. For exa
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/05D2B46A-282C-4B75-9F5C-2FC0AF344AB9">USB filter driver for supporting proprietary chargers</a>
-</dt>
-</dl>
+
  
 
  

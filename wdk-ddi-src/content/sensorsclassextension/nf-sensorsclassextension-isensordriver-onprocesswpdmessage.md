@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 4780d0ea-a54a-4125-b3b6-2210a14eff71
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnProcessWpdMessage, OnProcessWpdMessage
+ms.keywords : sensors.isensordriver_onprocesswpdmessage, OnProcessWpdMessage, ISensorDriver, ISensorDriver::OnProcessWpdMessage, OnProcessWpdMessage method [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OnProcessWpdMessage
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -65,7 +69,7 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 
 ## Remarks
 
-This method enables you to extend the WPD commands and interfaces in a device-specific way.</p>
+This method enables you to extend the WPD commands and interfaces in a device-specific way.
 
 ## Requirements
 | &nbsp; | &nbsp; |

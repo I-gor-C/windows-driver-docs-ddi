@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f3975ad7-8eb8-4f46-8024-6a1decc21c77
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlRandom
+ms.keywords : rtlref_c9c196b4-7335-4320-ae7f-7c565b6f73e6.xml, ntifs/RtlRandom, RtlRandom routine [Installable File System Drivers], ifsk.rtlrandom, RtlRandom
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlRandom
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -77,11 +81,8 @@ The <b>RtlRandomEx</b> function is an improved version of the <b>RtlRandom</b> f
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlrandomex.md">RtlRandomEx</a>
-</dt>
-</dl>
+
  
 
  

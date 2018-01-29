@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 524efbe1-110e-4c59-a759-b083888b2e26
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : parports.ioctl_serial_set_timeouts, IOCTL_SERIAL_SET_TIMEOUTS control code [Parallel Ports], IOCTL_SERIAL_SET_TIMEOUTS, ntddser/IOCTL_SERIAL_SET_TIMEOUTS, cisspd_d42d38bf-b276-4428-9a6e-05f4d0b4253b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_SET_TIMEOUTS
-req.alt-loc : ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -61,16 +65,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to one of the following values:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.InputBufferLength</b> member is less than the size, in bytes, of a SERIAL_TIMEOUTS structure.
-
-The requested time-out value is less than two seconds.
 
 
 ## Requirements
@@ -80,13 +77,10 @@ The requested time-out value is less than two seconds.
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_timeouts.md">IOCTL_SERIAL_GET_TIMEOUTS</a>
-</dt>
-</dl>
+
  
 
  

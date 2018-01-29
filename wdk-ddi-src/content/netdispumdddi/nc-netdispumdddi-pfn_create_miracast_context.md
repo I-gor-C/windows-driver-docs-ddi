@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3b10ddd9-a48d-4f96-b35e-db017d1f9583
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _NDK_SRQ_DISPATCH, NDK_SRQ_DISPATCH
+ms.keywords : display.createmiracastcontext, CreateMiracastContext callback function [Display Devices], CreateMiracastContext, PFN_CREATE_MIRACAST_CONTEXT, PFN_CREATE_MIRACAST_CONTEXT, netdispumdddi/CreateMiracastContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CreateMiracastContext
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDK_SRQ_DISPATCH
 ---
 
@@ -76,8 +80,6 @@ When this function is called, the Miracast user-mode driver should prepare all r
 
 The driver can call the callback functions pointed to by <i>pMiracastCallbacks</i> only during the lifetime of the current Miracast context.
 
-The operating system guarantees that only one of the <i>CreateMiracastContext</i>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>, and <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a> functions is called at a time.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -92,20 +94,14 @@ The operating system guarantees that only one of the <i>CreateMiracastContext</i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
-</dt>
-<dt>
 <a href="..\netdispumdddi\ns-netdispumdddi-_miracast_callbacks.md">MIRACAST_CALLBACKS</a>
-</dt>
-<dt>
+
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
+
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
-</dt>
-<dt>
+
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
-</dt>
-</dl>
+
  
 
  

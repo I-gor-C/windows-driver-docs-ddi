@@ -7,8 +7,8 @@ old-location : netvista\riluiccappinfo.htm
 old-project : netvista
 ms.assetid : b3a688fe-928c-458e-ac47-59a9ae61bc5e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCAPPINFO, RILUICCAPPINFO, *LPRILUICCAPPINFO
+ms.date : 1/18/2018
+ms.keywords : RILUICCAPPINFO, RILUICCAPPINFO structure [Network Drivers Starting with Windows Vista], netvista.riluiccappinfo, ntddrilapitypes/RILUICCAPPINFO, *LPRILUICCAPPINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCAPPINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILUICCAPPINFO, *LPRILUICCAPPINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILUICCAPPINFO, RILUICCAPPINFO"
 ---
 
 # RILUICCAPPINFO structure
@@ -55,46 +59,46 @@ typedef struct _RILUICCAPPINFO {
 
 ## Members
 
-        
-            `bAppId`
 
-            
-        
-            `bPinRef`
+`bAppId`
 
-            
-        
-            `cbSize`
 
-            
-        
-            `cszAppName`
 
-            
-        
-            `dwAppIdLength`
+`bPinRef`
 
-            
-        
-            `dwAppNameLength`
 
-            
-        
-            `dwNumPins`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `dwUiccAppType`
 
-            
-        
-            `hUiccApp`
 
-            
+`cszAppName`
+
+
+
+`dwAppIdLength`
+
+
+
+`dwAppNameLength`
+
+
+
+`dwNumPins`
+
+
+
+`dwParams`
+
+
+
+`dwUiccAppType`
+
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

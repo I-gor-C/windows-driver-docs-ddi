@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8F8C97B2-5C77-4AD0-9434-22108111F5A8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_FLAGS
+ms.keywords : kmdf.wdf_dma_enabler_config_flags, WDF_DMA_ENABLER_CONFIG_FLAGS, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, _WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, WDF_DMA_ENABLER_CONFIG_FLAGS enumeration, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, wdf.wdf_dma_enabler_config_flags, WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 
-req.alt-api : WDF_DMA_ENABLER_CONFIG_FLAGS
-req.alt-loc : wdfdmaenabler.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_ENABLER_CONFIG_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -55,14 +59,12 @@ typedef enum _WDF_DMA_ENABLER_CONFIG_FLAGS {
 <tr>
 <td>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</td>
 <td>The WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION flag applies only  to the following DMA profiles:
-
 <ul>
 <li>WdfDmaProfileScatterGather</li>
 <li>WdfDmaProfileScatterGather64</li>
 <li>WdfDmaProfileScatterGatherDuplex </li>
 <li>WdfDmaProfileScatterGather64Duplex</li>
-</ul>
- 
+</ul> 
       By default, when <b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b> is not set and the <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a> is one of those in the previous list, WDF  
       creates a lookaside list of scatter/gather lists that is  used by this DMA adapter's transaction 
       objects. The list entries are initialized to allow the maximum specified  
@@ -101,17 +103,12 @@ You can specify a valid bitwise OR of the values on this page for the <b>Flags</
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a>
-</dt>
-<dt>
-<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
-</dt>
-<dt>
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement.md">WdfDmaTransactionSetSingleTransferRequirement</a>
-</dt>
-</dl>
+
+<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a>
+
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
+
  
 
  

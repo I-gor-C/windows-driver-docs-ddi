@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8cf42c60-655a-4deb-9351-4a3505b49593
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CAPTURETOSYSMEM, D3DDDIARG_CAPTURETOSYSMEM
+ms.keywords : D3DDDIARG_CAPTURETOSYSMEM structure [Display Devices], _D3DDDIARG_CAPTURETOSYSMEM, d3dumddi/D3DDDIARG_CAPTURETOSYSMEM, display.d3dddiarg_capturetosysmem, D3DDDIARG_CAPTURETOSYSMEM, UMDisplayDriver_param_Structs_497b7e52-066f-4078-b673-0f9cd3b6f4c1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CAPTURETOSYSMEM
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CAPTURETOSYSMEM
 ---
 
@@ -50,29 +54,29 @@ typedef struct _D3DDDIARG_CAPTURETOSYSMEM {
 
 ## Members
 
-        
-            `DstRect`
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle.
-        
-            `DstSubResourceIndex`
+`DstRect`
 
-            [in] The index to the destination surface within the resource.
-        
-            `hDstResource`
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle.
 
-            [in] A handle to the destination resource.
-        
-            `hSrcResource`
+`DstSubResourceIndex`
 
-            [in] A handle to the source resource.
-        
-            `SrcRect`
+[in] The index to the destination surface within the resource.
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the source rectangle.
+`hDstResource`
 
-    ## Remarks
-        Because the source resource that is specified by the <b>hSrcResource</b> member is a capture buffer, it is guaranteed to be a stand alone resource. Therefore, in a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_capturetosysmem.md">CaptureToSysMem</a>, the Microsoft Direct3D runtime is not required to supply an index to a sub source surface within the resource. However, an index to a sub source surface is required when the runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a> function to perform a more general bitblt.
+[in] A handle to the destination resource.
+
+`hSrcResource`
+
+[in] A handle to the source resource.
+
+`SrcRect`
+
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the source rectangle.
+
+## Remarks
+Because the source resource that is specified by the <b>hSrcResource</b> member is a capture buffer, it is guaranteed to be a stand alone resource. Therefore, in a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_capturetosysmem.md">CaptureToSysMem</a>, the Microsoft Direct3D runtime is not required to supply an index to a sub source surface within the resource. However, an index to a sub source surface is required when the runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a> function to perform a more general bitblt.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,19 +86,14 @@ typedef struct _D3DDDIARG_CAPTURETOSYSMEM {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_capturetosysmem.md">CaptureToSysMem</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f4297e91-06ae-4c7a-87bc-12e3f5b0238c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRegistryControllerKeyWriteDeferred
+ms.keywords : AtaPortRegistryControllerKeyWriteDeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], storage.ataportregistrycontrollerkeywritedeferred, atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, irb/AtaPortRegistryControllerKeyWriteDeferred
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortRegistryControllerKeyWriteDeferred
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortRegistryControllerKeyWriteDeferred function
-The <b>AtaPortRegistryControllerKeyWriteDeferred</b> routine writes the data asynchronously to the indicated value name under the registry key <b>HKLM\CurrentControlSet\Services\</b><i>&lt;service name&gt;</i><b>\Controller</b><i>N</i>, where <i>N </i>is the number of the controller.
+The <b>AtaPortRegistryControllerKeyWriteDeferred</b> routine writes the data asynchronously to the indicated value name under the registry key <b>HKLM\CurrentControlSet\Services\</b><i>&lt;service name&gt;</i><b>\Controller</b><i>N</i>, where <i>N </i>is the number of the controller. 
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -68,7 +73,6 @@ Contains the name of the registry value to write to.
 `ValueType`
 
 Indicates the type of data that is contained in the registry value. This member should be assigned one of values indicated in the following table. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -112,7 +116,7 @@ A pointer to the source buffer that contains the data to write to the registry v
 
 `BufferLength`
 
-
+TBD
 
 
 ## Return Value
@@ -141,14 +145,10 @@ The buffer pointed to by <i>Buffer </i>must be allocated by using <a href="..\ir
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
-</dt>
-<dt>
 <a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
-</dt>
-</dl>
+
+<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
+
  
 
  

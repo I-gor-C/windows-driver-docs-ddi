@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 535D7611-8C86-44CF-964C-731882A3AF69
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetCurrentSilo
+ms.keywords : ntddk/PsGetCurrentSilo, PsGetCurrentSilo routine [Kernel-Mode Driver Architecture], PsGetCurrentSilo, kernel.psgetcurrentsilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsGetCurrentSilo
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : _IRQL_requires_max_(DISPATCH_LEVEL)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -49,10 +53,6 @@ PESILO PsGetCurrentSilo(void);
 This function has no parameters.
 
 ## Return Value
-
-A pointer to the <b>ESILO</b> object.  This pointer is valid for the current thread, but must be referenced before transferring to another thread (for example, via a workitem).
-
-A pointer to the <b>ESILO</b> object.  This pointer is valid for the current thread, but must be referenced before transferring to another thread (for example, via a workitem).
 
 A pointer to the <b>ESILO</b> object.  This pointer is valid for the current thread, but must be referenced before transferring to another thread (for example, via a workitem).
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2bfd677f-f2bd-49d7-b572-d7df4de0425c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_PNPPOWER_EVENT_CALLBACKS, WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS
+ms.keywords : _WDF_PNPPOWER_EVENT_CALLBACKS, wdf.wdf_pnppower_event_callbacks, WDF_PNPPOWER_EVENT_CALLBACKS, PWDF_PNPPOWER_EVENT_CALLBACKS structure pointer, WDF_PNPPOWER_EVENT_CALLBACKS structure, wdfdevice/PWDF_PNPPOWER_EVENT_CALLBACKS, PWDF_PNPPOWER_EVENT_CALLBACKS, DFDeviceObjectGeneralRef_a4b53707-d968-45a7-a5e8-284e9f34f866.xml, kmdf.wdf_pnppower_event_callbacks, wdfdevice/WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_PNPPOWER_EVENT_CALLBACKS
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_PNPPOWER_EVENT_CALLBACKS, WDF_PNPPOWER_EVENT_CALLBACKS"
 req.product : Windows 10 or later.
 ---
 
@@ -66,82 +70,82 @@ typedef struct _WDF_PNPPOWER_EVENT_CALLBACKS {
 
 ## Members
 
-        
-            `EvtDeviceD0Entry`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceD0EntryPostInterruptsEnabled`
+`EvtDeviceD0Entry`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled.md">EvtDeviceD0EntryPostInterruptsEnabled</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceD0Exit`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceD0ExitPreInterruptsDisabled`
+`EvtDeviceD0EntryPostInterruptsEnabled`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit_pre_interrupts_disabled.md">EvtDeviceD0ExitPreInterruptsDisabled</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDevicePrepareHardware`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled.md">EvtDeviceD0EntryPostInterruptsEnabled</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceQueryRemove`
+`EvtDeviceD0Exit`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_query_remove.md">EvtDeviceQueryRemove</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceQueryStop`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_query_stop.md">EvtDeviceQueryStop</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceRelationsQuery`
+`EvtDeviceD0ExitPreInterruptsDisabled`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_relations_query.md">EvtDeviceRelationsQuery</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceReleaseHardware`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit_pre_interrupts_disabled.md">EvtDeviceD0ExitPreInterruptsDisabled</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceSelfManagedIoCleanup`
+`EvtDevicePrepareHardware`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_cleanup.md">EvtDeviceSelfManagedIoCleanup</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceSelfManagedIoFlush`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_flush.md">EvtDeviceSelfManagedIoFlush</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceSelfManagedIoInit`
+`EvtDeviceQueryRemove`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_init.md">EvtDeviceSelfManagedIoInit</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceSelfManagedIoRestart`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_query_remove.md">EvtDeviceQueryRemove</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_restart.md">EvtDeviceSelfManagedIoRestart</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceSelfManagedIoSuspend`
+`EvtDeviceQueryStop`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_suspend.md">EvtDeviceSelfManagedIoSuspend</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceSurpriseRemoval`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_query_stop.md">EvtDeviceQueryStop</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_surprise_removal.md">EvtDeviceSurpriseRemoval</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceUsageNotification`
+`EvtDeviceRelationsQuery`
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification.md">EvtDeviceUsageNotification</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDeviceUsageNotificationEx`
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_relations_query.md">EvtDeviceRelationsQuery</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification_ex.md">EvtDeviceUsageNotificationEx</a> event callback function, or <b>NULL</b>. The <b>EvtDeviceUsageNotificationEx</b> member is available in version 1.11 and later versions of KMDF.
+`EvtDeviceReleaseHardware`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceSelfManagedIoCleanup`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_cleanup.md">EvtDeviceSelfManagedIoCleanup</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceSelfManagedIoFlush`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_flush.md">EvtDeviceSelfManagedIoFlush</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceSelfManagedIoInit`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_init.md">EvtDeviceSelfManagedIoInit</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceSelfManagedIoRestart`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_restart.md">EvtDeviceSelfManagedIoRestart</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceSelfManagedIoSuspend`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_suspend.md">EvtDeviceSelfManagedIoSuspend</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceSurpriseRemoval`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_surprise_removal.md">EvtDeviceSurpriseRemoval</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceUsageNotification`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification.md">EvtDeviceUsageNotification</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceUsageNotificationEx`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification_ex.md">EvtDeviceUsageNotificationEx</a> event callback function, or <b>NULL</b>. The <b>EvtDeviceUsageNotificationEx</b> member is available in version 1.11 and later versions of KMDF.
 A driver can register either <b>EvtDeviceRelationsQuery</b> or <b>EvtDeviceUsageNotificationEx</b>, but not both.
-        
-            `Size`
 
-            The size, in bytes, of this structure.
+`Size`
 
-    ## Remarks
-        The <b>WDF_PNPPOWER_EVENT_CALLBACKS</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a> method.
+The size, in bytes, of this structure.
+
+## Remarks
+The <b>WDF_PNPPOWER_EVENT_CALLBACKS</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a> method.
 
 Your driver should initialize its WDF_PNPPOWER_EVENT_CALLBACKS structure by calling <a href="..\wdfdevice\nf-wdfdevice-wdf_pnppower_event_callbacks_init.md">WDF_PNPPOWER_EVENT_CALLBACKS_INIT</a>.
 
@@ -153,13 +157,10 @@ Your driver should initialize its WDF_PNPPOWER_EVENT_CALLBACKS structure by call
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_power_policy_event_callbacks.md">WDF_POWER_POLICY_EVENT_CALLBACKS</a>
-</dt>
-</dl>
+
  
 
  

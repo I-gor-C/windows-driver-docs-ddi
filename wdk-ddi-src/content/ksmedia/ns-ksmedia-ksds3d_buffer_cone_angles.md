@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 702d3698-396d-4609-a082-74290d2ccb41
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSDS3D_BUFFER_CONE_ANGLES, *PKSDS3D_BUFFER_CONE_ANGLES, KSDS3D_BUFFER_CONE_ANGLES
+ms.keywords : "*PKSDS3D_BUFFER_CONE_ANGLES, PKSDS3D_BUFFER_CONE_ANGLES, PKSDS3D_BUFFER_CONE_ANGLES structure pointer [Audio Devices], KSDS3D_BUFFER_CONE_ANGLES, aud-prop_6b484499-7859-4c81-828d-35c2dc0dc070.xml, audio.ksds3d_buffer_cone_angles, ksmedia/PKSDS3D_BUFFER_CONE_ANGLES, KSDS3D_BUFFER_CONE_ANGLES structure [Audio Devices], ksmedia/KSDS3D_BUFFER_CONE_ANGLES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDS3D_BUFFER_CONE_ANGLES
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSDS3D_BUFFER_CONE_ANGLES, KSDS3D_BUFFER_CONE_ANGLES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSDS3D_BUFFER_CONE_ANGLES, *PKSDS3D_BUFFER_CONE_ANGLES
 ---
 
 # KSDS3D_BUFFER_CONE_ANGLES structure
@@ -47,17 +51,17 @@ typedef struct {
 
 ## Members
 
-        
-            `InsideConeAngle`
 
-            Specifies the angle in degrees of the inside sound projection cone.
-        
-            `OutsideConeAngle`
+`InsideConeAngle`
 
-            Specifies the angle in degrees of the outside sound projection cone.
+Specifies the angle in degrees of the inside sound projection cone.
 
-    ## Remarks
-        This structure is used to set or get the data value for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537318">KSPROPERTY_DIRECTSOUND3DBUFFER_CONEANGLES</a> property. DirectSound uses this property to implement the <b>IDirectSound3DBuffer::GetConeAngles</b> and <b>IDirectSound3DBuffer::SetConeAngles</b> methods, which are described in the Microsoft Windows SDK documentation.
+`OutsideConeAngle`
+
+Specifies the angle in degrees of the outside sound projection cone.
+
+## Remarks
+This structure is used to set or get the data value for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537318">KSPROPERTY_DIRECTSOUND3DBUFFER_CONEANGLES</a> property. DirectSound uses this property to implement the <b>IDirectSound3DBuffer::GetConeAngles</b> and <b>IDirectSound3DBuffer::SetConeAngles</b> methods, which are described in the Microsoft Windows SDK documentation.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537318">KSPROPERTY_DIRECTSOUND3DBUFFER_CONEANGLES</a>
-</dt>
-</dl>
+
  
 
  

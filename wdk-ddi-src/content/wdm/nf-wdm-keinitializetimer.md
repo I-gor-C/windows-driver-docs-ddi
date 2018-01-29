@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 97140cf6-9c5a-4fdc-b7c7-10e6d28b9b1b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeTimer
+ms.keywords : KeInitializeTimer, k105_ce90de5c-7259-4863-adf1-fe90f288e791.xml, kernel.keinitializetimer, KeInitializeTimer routine [Kernel-Mode Driver Architecture], wdm/KeInitializeTimer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInitializeTimer
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -86,29 +90,20 @@ Callers of <b>KeInitializeTimer</b> should be running at IRQL = DISPATCH_LEVEL o
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
+
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
+
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
  
 
  

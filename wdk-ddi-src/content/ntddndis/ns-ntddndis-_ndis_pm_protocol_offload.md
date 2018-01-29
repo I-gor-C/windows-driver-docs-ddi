@@ -7,8 +7,8 @@ old-location : netvista\ndis_pm_protocol_offload.htm
 old-project : netvista
 ms.assetid : 1ae68e5c-f9ea-4454-b015-82e3af0f7ccd
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_PM_PROTOCOL_OFFLOAD, NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD
+ms.date : 1/18/2018
+ms.keywords : ntddndis/NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD, miniport_power_management_ref_f8a5be81-c46e-41cd-ac96-9877e1f9ebec.xml, PNDIS_PM_PROTOCOL_OFFLOAD, NDIS_PM_PROTOCOL_OFFLOAD structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PM_PROTOCOL_OFFLOAD, NDIS_PM_PROTOCOL_OFFLOAD, _NDIS_PM_PROTOCOL_OFFLOAD, PNDIS_PM_PROTOCOL_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_pm_protocol_offload
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.20 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_PM_PROTOCOL_OFFLOAD
-req.alt-loc : ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD
 ---
 
@@ -74,66 +78,70 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 
 ## Members
 
-        
-            `Flags`
 
-            A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
-        
-            `FriendlyName`
+`_PROTOCOL_OFFLOAD_PARAMETERS`
 
-            An 
+
+
+`Flags`
+
+A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
+
+`FriendlyName`
+
+An 
      <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a> structure
      that contains the user-readable description of the low power protocol offload.
-        
-            `Header`
 
-            The 
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      structure (NDIS_PM_PROTOCOL_OFFLOAD). The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
      <b>Revision</b> member to NDIS_PM_PROTOCOL_OFFLOAD_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_PROTOCOL_OFFLOAD_REVISION_1.
-        
-            `NextProtocolOffloadOffset`
 
-            A ULONG value that contains an offset, in bytes. The 
+`NextProtocolOffloadOffset`
+
+A ULONG value that contains an offset, in bytes. The 
      <b>NextProtocolOffloadOffset</b> member of each <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure in a list is set to
      the offset (from the beginning of the OID request 
      InformationBuffer) of the next <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure in the list. If 
      <b>NextProtocolOffloadOffset</b> is zero, the current structure is the last structure in the list.
-        
-            `Priority`
 
-            A ULONG value that contains the priority of the protocol offload. If an overlying driver adds a
+`Priority`
+
+A ULONG value that contains the priority of the protocol offload. If an overlying driver adds a
      higher priority protocol offload when there are no resources that are available for more protocol offloads, NDIS
      might remove a lower priority protocol offload to free resources. Miniport drivers should ignore this
      member. Protocol drivers can provide any value within the predefined range. The following values are
      predefined:
-        
-            `ProtocolOffloadId`
 
-            A ULONG value that contains an NDIS-provided value that identifies the offloaded protocol. Before
+`ProtocolOffloadId`
+
+A ULONG value that contains an NDIS-provided value that identifies the offloaded protocol. Before
      NDIS sends the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a> OID
      request down to the underlying NDIS drivers or completes the request to the overlying driver, NDIS sets 
      <b>ProtocolOffloadId</b> to a value that is unique among the protocol offloads on a network adapter.
-        
-            `ProtocolOffloadParameters`
 
-            A union that contains the following member structures:
-        
-            `ProtocolOffloadType`
+`ProtocolOffloadParameters`
 
-            An 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_pm_protocol_offload_type.md">
-     NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a> value that contains the type of protocol offload.
+A union that contains the following member structures:
 
-    ## Remarks
-        The <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure is used in the 
+`ProtocolOffloadType`
+
+An 
+     <mshelp:link keywords="netvista.ndis_pm_protocol_offload_type" tabindex="0"><b>
+     NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b></mshelp:link> value that contains the type of protocol offload.
+
+## Remarks
+The <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure is used in the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a> and 
-    <a href="netvista.oid_pm_protocol_offload_list">
-    OID_PM_PROTOCOL_OFFLOAD_LIST</a> OIDs.
+    <mshelp:link keywords="netvista.oid_pm_protocol_offload_list" tabindex="0">
+    OID_PM_PROTOCOL_OFFLOAD_LIST</mshelp:link> OIDs.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -143,27 +151,20 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 | **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
-</dt>
-<dt>
 <a href="..\ntddndis\ne-ntddndis-_ndis_pm_protocol_offload_type.md">NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a>
-</dt>
-<dt>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-pm-protocol-offload-list">OID_PM_PROTOCOL_OFFLOAD_LIST</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569769">OID_PM_PROTOCOL_OFFLOAD_LIST</a>
-</dt>
-</dl>
+
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

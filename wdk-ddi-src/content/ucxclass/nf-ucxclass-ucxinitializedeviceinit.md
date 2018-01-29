@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : A92A3E2E-1C73-40BD-808A-CBC14404F3E9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxInitializeDeviceInit
+ms.keywords : UcxInitializeDeviceInit method [Buses], ucxclass/UcxInitializeDeviceInit, buses._ucxinitializedeviceinit, UcxInitializeDeviceInit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UcxInitializeDeviceInit
-req.alt-loc : ucxclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ The client driver for the host controller calls this method in its <a href="..\w
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4bbd50a8-1f1f-45d9-9b63-6c1576fe7b98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIsAnsiCharacterLegalFat
+ms.keywords : ntifs/FsRtlIsAnsiCharacterLegalFat, fsrtlref_9d13203c-5fc4-4f4f-9372-09459f053bbc.xml, FsRtlIsAnsiCharacterLegalFat, ifsk.fsrtlisansicharacterlegalfat, FsRtlIsAnsiCharacterLegalFat function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlIsAnsiCharacterLegalFat
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -51,11 +55,11 @@ BOOLEAN FsRtlIsAnsiCharacterLegalFat(
 
 `C`
 
-
+TBD
 
 `WILD_OK`
 
-
+TBD
 
 
 ## Return Value
@@ -77,17 +81,12 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md">FsRtlIsAnsiCharacterLegalHpfs</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md">FsRtlIsAnsiCharacterLegalNtfs</a>
-</dt>
-</dl>
+
  
 
  

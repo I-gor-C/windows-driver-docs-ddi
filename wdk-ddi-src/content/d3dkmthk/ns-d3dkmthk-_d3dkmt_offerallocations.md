@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6f6df55d-bb23-4a70-97f4-32809d1a41a5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OFFERALLOCATIONS, D3DKMT_OFFERALLOCATIONS
+ms.keywords : D3DKMT_OFFERALLOCATIONS, D3DKMT_OFFERALLOCATIONS structure [Display Devices], d3dkmthk/D3DKMT_OFFERALLOCATIONS, _D3DKMT_OFFERALLOCATIONS, display.d3dkmt_offerallocations
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OFFERALLOCATIONS
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OFFERALLOCATIONS
 ---
 
@@ -50,30 +54,34 @@ typedef struct _D3DKMT_OFFERALLOCATIONS {
 
 ## Members
 
-        
-            `HandleList`
 
-            [in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to allocations to offer.
+`Flags`
+
+
+
+`HandleList`
+
+[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to allocations to offer.
 
 If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set in <i>pCreateResource</i>-&gt;<b>BindFlags</b>, offer the resources by their allocation handles, not by their resource handles.
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that created the allocations.
-        
-            `NumAllocations`
+`hDevice`
 
-            [in] The number of items in the <b>pResources</b> or <b>HandleList</b> members, whichever is not <b>NULL</b>.
-        
-            `pResources`
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that created the allocations.
 
-            [in] An array of Direct3D runtime handles to resources to offer.
+`NumAllocations`
+
+[in] The number of items in the <b>pResources</b> or <b>HandleList</b> members, whichever is not <b>NULL</b>.
+
+`pResources`
+
+[in] An array of Direct3D runtime handles to resources to offer.
 
 If the user-mode driver uses the array specified by <b>HandleList</b> to offer a list of allocations, it must set <b>pResources</b> to <b>NULL</b>. Conversely, if the driver uses the array specified by <b>pResources</b> to offer a list of resources, it must set <b>HandleList</b> to <b>NULL</b>.
-        
-            `Priority`
 
-            [in] The priority, of type  <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_offer_priority.md">D3DKMT_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.
+`Priority`
+
+[in] The priority, of type  <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_offer_priority.md">D3DKMT_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.
 
 
 ## Requirements
@@ -84,16 +92,12 @@ If the user-mode driver uses the array specified by <b>HandleList</b> to offer a
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_offer_priority.md">D3DKMT_OFFER_PRIORITY</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtofferallocations.md">D3DKMTOfferAllocations</a>
-</dt>
-</dl>
+
  
 
  

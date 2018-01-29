@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 694020c6-dd0a-46c7-9122-cd86ce28d03a
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_VENDOR_PATTERN, *PBTH_VENDOR_PATTERN, BTH_VENDOR_PATTERN
+ms.keywords : PBTH_VENDOR_PATTERN, _BTH_VENDOR_PATTERN, BTH_VENDOR_PATTERN, bthioctl/PBTH_VENDOR_PATTERN, BTH_VENDOR_PATTERN structure [Bluetooth Devices], bltooth.bth_vendor_pattern, PBTH_VENDOR_PATTERN structure pointer [Bluetooth Devices], bth_ref_e5c1f867-d585-4c90-bfe1-7b3c4a6e1582.xml, *PBTH_VENDOR_PATTERN, bthioctl/BTH_VENDOR_PATTERN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista, and later versions of Windows.
+req.target-min-winverclnt : Versions: Available in Windows Vista, and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_VENDOR_PATTERN
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTH_VENDOR_PATTERN, BTH_VENDOR_PATTERN"
 ---
 
@@ -48,24 +52,24 @@ typedef struct _BTH_VENDOR_PATTERN {
 
 ## Members
 
-        
-            `Offset`
 
-            The offset, in bytes, of the pattern from the beginning of the event data, excluding the event
+`Offset`
+
+The offset, in bytes, of the pattern from the beginning of the event data, excluding the event
      header.
-        
-            `Pattern`
 
-            A buffer that contains pattern data.
-        
-            `Size`
+`Pattern`
 
-            The size, in bytes, of the pattern.
+A buffer that contains pattern data.
 
-    ## Remarks
-        The BTH_VENDOR_PATTERN structure specifies vendor patterns for the 
-    <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">
-    BTH_VENDOR_SPECIFIC_COMMAND</a> structure.
+`Size`
+
+The size, in bytes, of the pattern.
+
+## Remarks
+The BTH_VENDOR_PATTERN structure specifies vendor patterns for the 
+    <mshelp:link keywords="bltooth.bth_vendor_specific_command" tabindex="0"><b>
+    BTH_VENDOR_SPECIFIC_COMMAND</b></mshelp:link> structure.
 
 A list of patterns can immediately follow the vendor-specific command data that is specified in the 
     <b>Data</b> member of the BTH_VENDOR_SPECIFIC_COMMAND structure.
@@ -81,13 +85,10 @@ Patterns are required if a vendor-specific command does not follow the standard 
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">BTH_VENDOR_SPECIFIC_COMMAND</a>
-</dt>
-</dl>
+
  
 
  

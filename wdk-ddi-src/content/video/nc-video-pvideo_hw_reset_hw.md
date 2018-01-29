@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dae00663-17bd-461d-9b3f-febff2d9811b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.hwvidresethw, HwVidResetHw callback function [Display Devices], HwVidResetHw, PVIDEO_HW_RESET_HW, PVIDEO_HW_RESET_HW, video/HwVidResetHw, VideoMiniport_Functions_783bcc9a-8af3-4cfb-8121-a2bbeb0e64f1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwVidResetHw
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -83,7 +87,7 @@ Most miniport drivers must provide this function, except for drivers of adapters
 
 If <i>HwVidResetHw</i> cannot change the mode of the adapter by simply programming the adapter registers, it can set up the appropriate values in adapter registers and return <b>FALSE</b>. This causes the HAL to perform an extended INT10-type operation to reset the video adapter to character mode.
 
-<i>HwVidResetHw</i> must not call <a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>. A miniport driver's <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a> function is called with the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a><a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> to reset the adapter whenever the Display program is used to test or change the graphics display mode, <i>not</i> the miniport driver's <i>HwVidResetHw</i> function.
+<i>HwVidResetHw</i> must not call <a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>. A miniport driver's <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a> function is called with the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a><a href="https://msdn.microsoft.com/a1de1905-09f3-4689-ace9-06690a1f930a">VRP</a> to reset the adapter whenever the Display program is used to test or change the graphics display mode, <i>not</i> the miniport driver's <i>HwVidResetHw</i> function.
 
 <i>HwVidResetHw</i> must not be made pageable.
 
@@ -101,23 +105,16 @@ If <i>HwVidResetHw</i> cannot change the mode of the adapter by simply programmi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
-</dt>
-<dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>
-</dt>
-</dl>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a>
+
+<a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
+
+<a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
+
  
 
  

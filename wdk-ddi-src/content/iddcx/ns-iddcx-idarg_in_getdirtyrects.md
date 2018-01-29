@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 78a216c7-b208-49fb-bb8e-6758b3cb13ad
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_GETDIRTYRECTS,
+ms.keywords : IDARG_IN_GETDIRTYRECTS structure [Display Devices], iddcx/IDARG_IN_GETDIRTYRECTS, display.idarg_in_getdirtyrects, IDARG_IN_GETDIRTYRECTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_GETDIRTYRECTS
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,14 +51,14 @@ typedef struct IDARG_IN_GETDIRTYRECTS {
 
 ## Members
 
-        
-            `DirtyRectInCount`
 
-            [in] Number of dirty rects in the <b>pDirtyRects</b> array
-        
-            `pDirtyRects`
+`DirtyRectInCount`
 
-            [out] Pointer to the buffer where the OS can copy the dirty rects that indicate which parts of the surface have been changed since the last present.
+[in] Number of dirty rects in the <b>pDirtyRects</b> array
+
+`pDirtyRects`
+
+[out] Pointer to the buffer where the OS can copy the dirty rects that indicate which parts of the surface have been changed since the last present.
 
 
 ## Requirements

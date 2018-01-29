@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6D460EBF-1D5D-4A99-90EE-FCBBC56B8EA4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS
+ms.keywords : display.d3dddicb_updategpuvirtualaddress, d3dumddi/D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS structure [Display Devices], _D3DDDICB_UPDATEGPUVIRTUALADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_UPDATEGPUVIRTUALADDRESS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_UPDATEGPUVIRTUALADDRESS
 ---
 
@@ -59,38 +63,38 @@ typedef struct _D3DDDICB_UPDATEGPUVIRTUALADDRESS {
 
 ## Members
 
-        
-            `FenceValue`
 
-            Specifies the <b>FenceValue</b> for <b>hFenceObject</b> that the <i>Map</i> operation should wait on (unless <b>DoNotWait</b> is 1). When the <i>Map</i> operation completes, the fence object will signal <b>hFenceObject</b> with <b>FenceValue</b>+1.
-        
-            `Flags`
+`FenceValue`
 
-            
-        
-            `hContext`
+Specifies the <b>FenceValue</b> for <b>hFenceObject</b> that the <i>Map</i> operation should wait on (unless <b>DoNotWait</b> is 1). When the <i>Map</i> operation completes, the fence object will signal <b>hFenceObject</b> with <b>FenceValue</b>+1.
 
-            Specifies the context against which the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In an linked display adapter configuration <b>hContext</b> defines a physical GPU, whose page tables are modified.
-        
-            `hFenceObject`
+`Flags`
 
-            Specifies the monitored fence object to use for synchronization. This should typically be set to the monitored fence used by the user mode driver to track progress of <b>hContext</b>.
-        
-            `NumOperations`
 
-            Specifies the number of operations in the <b>Operations</b> array.
-        
-            `Operations`
 
-            <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a> array of operations to perform on the GPU virtual address space.
-        
-            `Reserved0`
+`hContext`
 
-            This member is reserved and should be set to zero.
-        
-            `Reserved1`
+Specifies the context against which the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In an linked display adapter configuration <b>hContext</b> defines a physical GPU, whose page tables are modified.
 
-            This member is reserved and should be set to zero.
+`hFenceObject`
+
+Specifies the monitored fence object to use for synchronization. This should typically be set to the monitored fence used by the user mode driver to track progress of <b>hContext</b>.
+
+`NumOperations`
+
+Specifies the number of operations in the <b>Operations</b> array.
+
+`Operations`
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a> array of operations to perform on the GPU virtual address space.
+
+`Reserved0`
+
+This member is reserved and should be set to zero.
+
+`Reserved1`
+
+This member is reserved and should be set to zero.
 
 
 ## Requirements
@@ -101,16 +105,12 @@ typedef struct _D3DDDICB_UPDATEGPUVIRTUALADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a>
+
  
 
  

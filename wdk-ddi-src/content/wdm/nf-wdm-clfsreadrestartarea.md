@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d391a7ed-220e-412a-8e32-22b206c7a062
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsReadRestartArea
+ms.keywords : Clfs_bce9c012-cc19-472e-a1b3-c2d83435c6c0.xml, ClfsReadRestartArea routine [Kernel-Mode Driver Architecture], wdm/ClfsReadRestartArea, ClfsReadRestartArea, kernel.clfsreadrestartarea
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsReadRestartArea
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -100,20 +104,14 @@ Read contexts are not thread-safe. Clients are responsible for serializing acces
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
+
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
  
 
  

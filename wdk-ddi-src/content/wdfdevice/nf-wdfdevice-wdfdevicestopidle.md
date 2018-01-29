@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a394f539-bd66-44e2-a857-d657a123b473
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceStopIdle
+ms.keywords : WdfDeviceStopIdle, DFDeviceObjectGeneralRef_3dbde224-ecdf-429e-9389-9bdb49b16040.xml, wdfdevice/WdfDeviceStopIdle, wdf.wdfdevicestopidle, WdfDeviceStopIdle method, kmdf.wdfdevicestopidle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceStopIdle
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -89,9 +93,7 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 
 If <i>WaitForD0</i> is <b>TRUE</b>, <b>WdfDeviceStopIdle</b> must be called at IRQL = PASSIVE_LEVEL. If <i>WaitForD0</i> is <b>FALSE</b>, this method must be called at IRQL &lt;= DISPATCH_LEVEL.
 
-Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a> instead of <b>WdfDeviceStopIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.  
-
-In the following code example, <b>WdfDeviceStopIdle</b> returns after the specified device has entered the D0 device power state.
+Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a> instead of <b>WdfDeviceStopIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,20 +109,14 @@ In the following code example, <b>WdfDeviceStopIdle</b> returns after the specif
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceresumeidle.md">WdfDeviceResumeIdle</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
+
  
 
  

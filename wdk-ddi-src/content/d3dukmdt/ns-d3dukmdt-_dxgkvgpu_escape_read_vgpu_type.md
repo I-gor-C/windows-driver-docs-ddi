@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2D3D8927-74E3-438F-94CF-63456C7C7BBC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKVGPU_ESCAPE_READ_VGPU_TYPE, DXGKVGPU_ESCAPE_READ_VGPU_TYPE
+ms.keywords : display.dxgkvgpu_escape_read_vgpu_type, DXGKVGPU_ESCAPE_READ_VGPU_TYPE, DXGKVGPU_ESCAPE_READ_VGPU_TYPE structure [Display Devices], d3dukmdt/DXGKVGPU_ESCAPE_READ_VGPU_TYPE, _DXGKVGPU_ESCAPE_READ_VGPU_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKVGPU_ESCAPE_READ_VGPU_TYPE
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKVGPU_ESCAPE_READ_VGPU_TYPE
 ---
 
@@ -46,10 +50,10 @@ typedef struct _DXGKVGPU_ESCAPE_READ_VGPU_TYPE {
 
 ## Members
 
-        
-            `Header`
 
-            The header that is being processed.
+`Header`
+
+The header that is being processed.
 
 
 ## Requirements

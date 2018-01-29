@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1B8AD1A9-9EB0-49A8-B791-0453C768A974
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_GPIO_RESOURCE, PEP_ACPI_GPIO_RESOURCE, *PPEP_ACPI_GPIO_RESOURCE
+ms.keywords : PPEP_ACPI_GPIO_RESOURCE, PEP_ACPI_GPIO_RESOURCE, *PPEP_ACPI_GPIO_RESOURCE, PPEP_ACPI_GPIO_RESOURCE structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_GPIO_RESOURCE, kernel.pep_acpi_gpio_resource, _PEP_ACPI_GPIO_RESOURCE, PEP_ACPI_GPIO_RESOURCE structure [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_GPIO_RESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_GPIO_RESOURCE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_ACPI_GPIO_RESOURCE, *PPEP_ACPI_GPIO_RESOURCE
 ---
 
@@ -59,62 +63,62 @@ typedef struct _PEP_ACPI_GPIO_RESOURCE {
 
 ## Members
 
-        
-            `DebounceTimeout`
 
-            Specifies the hardware debounce wait time, in hundredths of milliseconds.
-        
-            `DriveStrength`
+`DebounceTimeout`
 
-            Specifies the output drive capability of the pin, in hundredths of milliamperes.
-        
-            `Flags`
+Specifies the hardware debounce wait time, in hundredths of milliseconds.
 
-            A <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.
-        
-            `InterruptPolarity`
+`DriveStrength`
 
-            A <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
-        
-            `InterruptType`
+Specifies the output drive capability of the pin, in hundredths of milliamperes.
 
-            A <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
-        
-            `IoRestrictionType`
+`Flags`
 
-            A <a href="..\pepfx\ne-pepfx-_gpio_pin_iorestriction_type.md">GPIO_PIN_IORESTRICTION_TYPE</a> enumeration value that identifies the type of IO that the pin supports.
-        
-            `PinConfig`
+A <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.
 
-            A <a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.
-        
-            `PinCount`
+`InterruptPolarity`
 
-            The number of pins in <b>PinTable</b>.
-        
-            `PinTable`
+A <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
 
-            A list of pin numbers on the resource that are described by this descriptor.
-        
-            `ResourceSourceIndex`
+`InterruptType`
 
-            This member is always zero.
-        
-            `ResourceSourceName`
+A <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
 
-            This member is always set to "ResourceConsumer."
-        
-            `Type`
+`IoRestrictionType`
 
-            A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.
-        
-            `VendorData`
+A <a href="..\pepfx\ne-pepfx-_gpio_pin_iorestriction_type.md">GPIO_PIN_IORESTRICTION_TYPE</a> enumeration value that identifies the type of IO that the pin supports.
 
-            A pointer to a raw data buffer containing vendor-defined byte data to be decoded by the OS driver.
-        
-            `VendorDataLength`
+`PinConfig`
 
-            The size of the <b>VendorData</b> buffer.
+A <a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.
+
+`PinCount`
+
+The number of pins in <b>PinTable</b>.
+
+`PinTable`
+
+A list of pin numbers on the resource that are described by this descriptor.
+
+`ResourceSourceIndex`
+
+This member is always zero.
+
+`ResourceSourceName`
+
+This member is always set to "ResourceConsumer."
+
+`Type`
+
+A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.
+
+`VendorData`
+
+A pointer to a raw data buffer containing vendor-defined byte data to be decoded by the OS driver.
+
+`VendorDataLength`
+
+The size of the <b>VendorData</b> buffer.
 
 
 ## Requirements
@@ -125,28 +129,20 @@ typedef struct _PEP_ACPI_GPIO_RESOURCE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
-</dt>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a>
-</dt>
-<dt>
 <a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
+
 <a href="..\pepfx\ne-pepfx-_gpio_pin_iorestriction_type.md">GPIO_PIN_IORESTRICTION_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a>
+
+<a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a>
+
+<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
+
  
 
  

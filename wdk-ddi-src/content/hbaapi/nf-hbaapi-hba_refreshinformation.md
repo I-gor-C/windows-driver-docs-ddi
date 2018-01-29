@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7fd03702-154b-47d4-96cb-6ad9683124ca
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_RefreshInformation
+ms.keywords : storage.hba_refreshinformation, HBA_RefreshInformation routine [Storage Devices], HBA_RefreshInformation, hbaapi/HBA_RefreshInformation, fibreHBA_rtns_3c486993-5307-42c2-924c-743f635447e8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_RefreshInformation
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -50,7 +54,7 @@ void HBA_API HBA_RefreshInformation(
 
 `Handle`
 
-
+TBD
 
 
 ## Return Value
@@ -72,14 +76,10 @@ None
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_refreshadapterconfiguration.md">HBA_RefreshAdapterConfiguration</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

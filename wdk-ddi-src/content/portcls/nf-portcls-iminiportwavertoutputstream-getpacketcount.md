@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : F2870421-2A6F-4E63-AC91-E251E0B67C06
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTOutputStream, IMiniportWaveRTOutputStream::GetPacketCount, GetPacketCount
+ms.keywords : IMiniportWaveRTOutputStream, GetPacketCount method [Audio Devices], GetPacketCount method [Audio Devices], IMiniportWaveRTOutputStream interface, IMiniportWaveRTOutputStream interface [Audio Devices], GetPacketCount method, GetPacketCount, audio.iminiportwavertoutputstream_getpacketcount, portcls/IMiniportWaveRTOutputStream::GetPacketCount, IMiniportWaveRTOutputStream::GetPacketCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRTOutputStream.GetPacketCount
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -83,11 +87,8 @@ The driver should reset the packet count to 0 when the stream is in KSSTATE_STOP
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavertoutputstream.md">IMiniportWaveRTOutputStream</a>
-</dt>
-</dl>
+
  
 
  

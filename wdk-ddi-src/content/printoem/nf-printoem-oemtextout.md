@@ -7,8 +7,8 @@ old-location : print\oemtextout.htm
 old-project : print
 ms.assetid : cecce6ae-9b26-4b5f-aad3-69630ea340a4
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : OEMTextOut
+ms.date : 1/18/2018
+ms.keywords : print_unidrv-pscript_rendering_fda6f01f-5d37-424f-aa4f-bf7849c50c19.xml, OEMTextOut, print.oemtextout, OEMTextOut function [Print Devices], printoem/OEMTextOut
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OEMTextOut
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STDVARIABLEINDEX
 req.product : Windows 10 or later.
 ---

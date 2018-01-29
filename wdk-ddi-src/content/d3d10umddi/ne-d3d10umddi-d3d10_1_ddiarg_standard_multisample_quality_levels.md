@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 47c285fa-f53a-4e35-ad66-bf14dfc9f80e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS
+ms.keywords : d3d10umddi/D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS, d3d10umddi/D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN, d3d10umddi/D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN, UMDisplayDriver_Dx10param_Structs_b617a227-3358-4b23-918f-9603c8fed13e.xml, display.d3d10_1_ddiarg_standard_multisample_quality_levels, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS i
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS
 ---
 
@@ -76,11 +80,8 @@ For every sample count where D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN is supp
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels</a>
-</dt>
-</dl>
+
  
 
  

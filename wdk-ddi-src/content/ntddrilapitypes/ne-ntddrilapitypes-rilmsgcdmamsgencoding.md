@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmamsgencoding.htm
 old-project : netvista
 ms.assetid : d0bc5fa4-d08d-484c-b6e0-35c7f1d144c3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMAMSGENCODING, RILMSGCDMAMSGENCODING
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_MSGCODING_LATIN_HEBREW, ntddrilapitypes/RILMSGCDMAMSGENCODING, netvista.rilmsgcdmamsgencoding, ntddrilapitypes/RIL_MSGCODING_OCTET, RIL_MSGCODING_7BITASCII, RIL_MSGCODING_LATIN_HEBREW, ntddrilapitypes/RIL_MSGCODING_UNICODE, RIL_MSGCODING_8BITGSM, RILMSGCDMAMSGENCODING, ntddrilapitypes/RIL_MSGCODING_7BITASCII, ntddrilapitypes/RIL_MSGCODING_KOREAN, ntddrilapitypes/RIL_MSGCODING_JIS, RIL_MSGCODING_KOREAN, RIL_MSGCODING_LATIN, RIL_MSGCODING_IA5, RIL_MSGCODING_OCTET, ntddrilapitypes/RIL_MSGCODING_MAX, RIL_MSGCODING_MAX, ntddrilapitypes/RIL_MSGCODING_IA5, RIL_MSGCODING_7BITGSM, ntddrilapitypes/RIL_MSGCODING_8BITGSM, ntddrilapitypes/RIL_MSGCODING_LATIN, RIL_MSGCODING_UNICODE, RILMSGCDMAMSGENCODING enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_MSGCODING_7BITGSM, RIL_MSGCODING_JIS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMAMSGENCODING
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCDMAMSGENCODING
 ---
 
@@ -110,6 +114,11 @@ typedef enum _RILMSGCDMAMSGENCODING {
 
 <tr>
 <td>RIL_MSGCODING_UNICODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGCODING_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

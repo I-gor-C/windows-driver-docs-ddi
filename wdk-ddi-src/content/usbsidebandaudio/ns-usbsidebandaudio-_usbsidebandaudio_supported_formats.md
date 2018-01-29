@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 69D1C328-309B-41FC-8216-971A3C6D38AF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS
+ms.keywords : PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS structure pointer [Audio Devices], PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, usbsidebandaudio/PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, audio.usbsidebandaudio_supported_formats, _USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS structure [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_SUPPORTED_FORMATS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSIDEBANDAUDIO_SUPPORTED_FORMATS
-req.alt-loc : 
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS"
 req.product : Windows 10 or later.
 ---
 
@@ -50,6 +54,18 @@ typedef struct _USBSIDEBANDAUDIO_SUPPORTED_FORMATS {
 ````
 
 ## Members
+
+
+`CbSize`
+
+
+
+`Formats`
+
+
+
+`NumFormats`
+
 
 
 

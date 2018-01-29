@@ -7,8 +7,8 @@ old-location : netvista\rilregstatusinfo.htm
 old-project : netvista
 ms.assetid : 12471d22-4d5d-411e-bfde-4d13d7a3bcca
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILREGSTATUSINFO, *LPRILREGSTATUSINFO, RILREGSTATUSINFO
+ms.date : 1/18/2018
+ms.keywords : RILREGSTATUSINFO, netvista.rilregstatusinfo, RILREGSTATUSINFO structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILREGSTATUSINFO, *LPRILREGSTATUSINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILREGSTATUSINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILREGSTATUSINFO, RILREGSTATUSINFO"
 ---
 
@@ -56,50 +60,50 @@ typedef struct _RILREGSTATUSINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwRegRejectReason`
 
-            
-        
-            `dwRegStatus`
+`dwExecutor`
 
-            
-        
-            `dwSystemCaps`
 
-            
-        
-            `dwVoiceDomain`
 
-            
-        
-            `hUiccApp`
+`dwParams`
 
-            
-        
-            `ratAccessTechnology`
 
-            
-        
-            `rncNetworkCode`
 
-            
-        
-            `ronCurrentOperator`
+`dwRegRejectReason`
 
-            
+
+
+`dwRegStatus`
+
+
+
+`dwSystemCaps`
+
+
+
+`dwVoiceDomain`
+
+
+
+`hUiccApp`
+
+
+
+`ratAccessTechnology`
+
+
+
+`rncNetworkCode`
+
+
+
+`ronCurrentOperator`
+
+
 
 
 ## Requirements

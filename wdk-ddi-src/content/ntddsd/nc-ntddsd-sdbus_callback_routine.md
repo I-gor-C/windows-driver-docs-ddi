@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : e63ebdcc-afcd-451e-942c-0e295eb3468f
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST
+ms.keywords : SD.psdbus_callback_routine, SdBusCallbackRoutine callback function [Buses], SdBusCallbackRoutine, SDBUS_CALLBACK_ROUTINE, SDBUS_CALLBACK_ROUTINE, ntddsd/SdBusCallbackRoutine, sd-rtns_a51040c8-723c-45ae-9e3b-15ef2baca85b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdBusCallbackRoutine
-req.alt-loc : ntddsd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
 ---
 
 
@@ -85,11 +89,8 @@ The bus driver calls the SD card driver's callback routine whenever the card ind
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/d407131e-5dda-4d50-b09a-0f937774eefb">SDBUS_INTERFACE_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

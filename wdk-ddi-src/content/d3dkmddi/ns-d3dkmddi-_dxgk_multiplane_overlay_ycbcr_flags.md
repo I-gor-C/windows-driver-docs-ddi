@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c3a463b1-fc6f-4834-87e5-1d694f2823f9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS, DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS
+ms.keywords : display.dxgk_multiplane_overlay_ycbcr_flags, _DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS, DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS structure [Display Devices], DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ---
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4f45e2ad-19f9-4308-8d63-edf066545e07
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT
+ms.keywords : SM_GetBindingSupport_OUT, hbapiwmi/SM_GetBindingSupport_OUT, PSM_GetBindingSupport_OUT structure pointer [Storage Devices], PSM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT, structs-Fibre_687416b3-60d9-494f-895b-a23fcb666994.xml, storage.sm_getbindingsupport_out, _SM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT structure [Storage Devices], hbapiwmi/PSM_GetBindingSupport_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_GetBindingSupport_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT
 ---
 
 # _SM_GetBindingSupport_OUT structure
@@ -47,17 +51,17 @@ typedef struct _SM_GetBindingSupport_OUT {
 
 ## Members
 
-        
-            `Flags`
 
-            The HBA_BIND_CAPABILITY binding capabilities.
-        
-            `HBAStatus`
+`Flags`
 
-            The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+The HBA_BIND_CAPABILITY binding capabilities.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM_GetBindingSupport_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>
+`HBAStatus`
+
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM_GetBindingSupport_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

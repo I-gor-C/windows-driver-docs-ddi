@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c8972d8b-9eba-4276-af63-1096a76b104f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetLogicalUnit
+ms.keywords : storport/StorPortGetLogicalUnit, StorPortGetLogicalUnit routine [Storage Devices], storage.storportgetlogicalunit, storprt_065c9617-06c6-4795-9743-14cd5803d9f9.xml, StorPortGetLogicalUnit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the W
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortGetLogicalUnit
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -80,6 +84,7 @@ Identifies the logical unit (LU) number of the target device.
 Per-LU storage can be used to store data relevant to a particular peripheral, such as saved data pointers. To access this area, the miniport driver calls <b>StorPortGetLogicalUnit</b> when the driver is maintaining information about the state of or current operation for any particular peripheral.
 
 The operating system-specific port driver can consider a logical unit to be nonexistent if there is no active request for that logical unit and the device has never been successfully selected.
+<div class="alert"><b>Note</b>  When the miniport driver calls <b>StorPortGetLogicalUnit</b> at IRQL = DISPATCH_LEVEL, the function acquires the interrupt lock. Calling <b>StorPortGetLogicalUnit</b> too often at this IRQL level impacts the performance and scalability of the miniport driver.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,14 +100,10 @@ The operating system-specific port driver can consider a logical unit to be none
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-</dt>
-</dl>
+
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
+
  
 
  

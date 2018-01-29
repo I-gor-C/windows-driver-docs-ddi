@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 294e5475-3aca-4758-87ed-07892a910b4f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILTER_MESSAGE_HEADER, FILTER_MESSAGE_HEADER, *PFILTER_MESSAGE_HEADER
+ms.keywords : "*PFILTER_MESSAGE_HEADER, _FILTER_MESSAGE_HEADER, PFILTER_MESSAGE_HEADER, PFILTER_MESSAGE_HEADER structure pointer [Installable File System Drivers], ifsk.filter_message_header, fltuserstructures/PFILTER_MESSAGE_HEADER, fltuserstructures/FILTER_MESSAGE_HEADER, FILTER_MESSAGE_HEADER, FILTER_MESSAGE_HEADER structure [Installable File System Drivers], FltSystemStructures_80f5d30b-5507-45c8-b399-6fa816ba9232.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILTER_MESSAGE_HEADER
-req.alt-loc : fltuserstructures.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FILTER_MESSAGE_HEADER, *PFILTER_MESSAGE_HEADER
 ---
 
@@ -47,17 +51,17 @@ typedef struct _FILTER_MESSAGE_HEADER {
 
 ## Members
 
-        
-            `MessageId`
 
-            On output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, this field receives the unique identifier (ID) for the message sent by the kernel-mode driver. If the application replies to the message, it must set this ID in the <b>MessageId</b> field of the FILTER_REPLY_HEADER header in the reply.
-        
-            `ReplyLength`
+`MessageId`
 
-            On output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, this field receives the length, in bytes, of the expected reply, including the FILTER_REPLY_HEADER header. Set to zero if no reply is expected.
+On output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, this field receives the unique identifier (ID) for the message sent by the kernel-mode driver. If the application replies to the message, it must set this ID in the <b>MessageId</b> field of the FILTER_REPLY_HEADER header in the reply.
 
-    ## Remarks
-        To receive messages from a kernel-mode minifilter, a user-mode application typically defines a custom message structure. This structure typically consists of this header structure, followed by an application-defined structure to hold the actual message data.
+`ReplyLength`
+
+On output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, this field receives the length, in bytes, of the expected reply, including the FILTER_REPLY_HEADER header. Set to zero if no reply is expected.
+
+## Remarks
+To receive messages from a kernel-mode minifilter, a user-mode application typically defines a custom message structure. This structure typically consists of this header structure, followed by an application-defined structure to hold the actual message data.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _FILTER_MESSAGE_HEADER {
 | **Minimum UMDF version** |  |
 | **Header** | fltuserstructures.h (include FltUser.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_reply_header.md">FILTER_REPLY_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>
-</dt>
-</dl>
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_reply_header.md">FILTER_REPLY_HEADER</a>
+
  
 
  

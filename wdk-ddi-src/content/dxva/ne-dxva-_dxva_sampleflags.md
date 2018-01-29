@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 24f77f16-e043-4d58-87ef-6c834e61cb5d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_SampleFlags, DXVA_SampleFlags
+ms.keywords : DXVA_SampleFlagsMask, dxva/DXVA_SampleFlag_DstRect_Changed, dxva/DXVA_SampleFlags, dxva/DXVA_SampleFlag_Palette_Changed, DXVA_SampleFlag_SrcRect_Changed, dxva/DXVA_SampleFlagsMask, DXVA_SampleFlag_Palette_Changed, DXVA_SampleFlags enumeration [Display Devices], DXVA_SampleFlag_DstRect_Changed, display.dxva_sampleflags, dxva/DXVA_SampleFlag_ColorData_Changed, dxvaref_b74a9819-950e-40cc-bf3c-eebb797862f7.xml, _DXVA_SampleFlags, DXVA_SampleFlags, dxva/DXVA_SampleFlag_SrcRect_Changed, DXVA_SampleFlag_ColorData_Changed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This enumeration type applies only to Windows Server
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_SampleFlags
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_SampleFlags
 ---
 
@@ -89,17 +93,12 @@ typedef enum _DXVA_SampleFlags {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563927">DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx</a>
-</dt>
-<dt>
-<a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
-</dt>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
-</dt>
-</dl>
+
+<a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563927">DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx</a>
+
  
 
  

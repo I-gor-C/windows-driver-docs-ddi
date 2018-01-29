@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f107b9a8-d124-4fc3-80b3-dd20a87f9a86
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_USAGE, D3D11_1DDI_VIDEO_USAGE
+ms.keywords : D3D11_1DDI_VIDEO_USAGE, d3d10umddi/D3D11_1DDI_VIDEO_USAGE, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED, display.d3d11_1ddi_video_usage, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_USAGE
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_USAGE
 ---
 
@@ -80,11 +84,8 @@ A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_info.md">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a>
-</dt>
-</dl>
+
  
 
  

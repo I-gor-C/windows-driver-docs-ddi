@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1c477f38-c24f-45df-ab02-62ee47c0957b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ISCSI_LUNList, ISCSI_LUNList, *PISCSI_LUNList
+ms.keywords : iscsidef/PISCSI_LUNList, PISCSI_LUNList structure pointer [Storage Devices], structs-iSCSI_f6a29259-8905-438e-ba9f-1055026d7bf6.xml, *PISCSI_LUNList, _ISCSI_LUNList, storage.iscsi_lunlist, ISCSI_LUNList, PISCSI_LUNList, ISCSI_LUNList structure [Storage Devices], iscsidef/ISCSI_LUNList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_LUNList
-req.alt-loc : iscsidef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ISCSI_LUNList, *PISCSI_LUNList
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PISCSI_LUNList, ISCSI_LUNList"
 ---
 
 # _ISCSI_LUNList structure
@@ -48,18 +52,18 @@ typedef struct _ISCSI_LUNList {
 
 ## Members
 
-        
-            `OSLUN`
 
-            The SCSI LUN (which is valid in the local operating system) that the remote LUN is mapped to.
-        
-            `Reserved`
+`OSLUN`
 
-            Reserved for Microsoft use only.
-        
-            `TargetLUN`
+The SCSI LUN (which is valid in the local operating system) that the remote LUN is mapped to.
 
-            A LUN that is globally valid anywhere in the network.
+`Reserved`
+
+Reserved for Microsoft use only.
+
+`TargetLUN`
+
+A LUN that is globally valid anywhere in the network.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _ISCSI_LUNList {
 | **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561547">ISCSI_LUNList WMI Class</a>
-</dt>
-</dl>
+
  
 
  

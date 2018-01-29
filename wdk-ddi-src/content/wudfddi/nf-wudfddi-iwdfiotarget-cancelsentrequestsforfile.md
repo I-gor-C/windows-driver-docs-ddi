@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : df008ee8-352f-4655-b4c0-750eeb281e6a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTarget, IWDFIoTarget::CancelSentRequestsForFile, CancelSentRequestsForFile
+ms.keywords : CancelSentRequestsForFile method, umdf.iwdfiotarget_cancelsentrequestsforfile, IWDFIoTarget interface, CancelSentRequestsForFile method, IWDFIoTarget::CancelSentRequestsForFile, wudfddi/IWDFIoTarget::CancelSentRequestsForFile, CancelSentRequestsForFile, IWDFIoTarget, wdf.iwdfiotarget_cancelsentrequestsforfile, UMDFIoTargetObjectRef_d2a2405f-312e-4e3c-8ffa-8568438805b0.xml, CancelSentRequestsForFile method, IWDFIoTarget interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoTarget.CancelSentRequestsForFile
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -60,8 +64,6 @@ A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interf
 
 None
 
-The following code example shows a UMDF driver implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a> method that cancels all previously sent I/O requests.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,14 +79,10 @@ The following code example shows a UMDF driver implementation of the <a href="ht
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-</dl>
+
  
 
  

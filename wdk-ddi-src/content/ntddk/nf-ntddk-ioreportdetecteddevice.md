@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b7756f69-feab-4a28-88d5-0262f86db54b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoReportDetectedDevice
+ms.keywords : k104_b906486e-318a-49b5-aa6a-683c1889c10b.xml, kernel.ioreportdetecteddevice, IoReportDetectedDevice, ntddk/IoReportDetectedDevice, IoReportDetectedDevice routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoReportDetectedDevice
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -134,14 +138,10 @@ A driver writer must provide an INF file that matches any of the specified hardw
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioreportresourcefordetection.md">IoReportResourceForDetection</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551670">IRP_MN_QUERY_DEVICE_RELATIONS</a>
-</dt>
-</dl>
+
  
 
  

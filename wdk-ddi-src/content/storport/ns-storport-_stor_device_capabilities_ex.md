@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6DCD1F8A-45E3-4084-9688-AE59597D65AF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_DEVICE_CAPABILITIES_EX, *PSTOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX
+ms.keywords : storage.stor_device_capabilities_ex, *PSTOR_DEVICE_CAPABILITIES_EX, _STOR_DEVICE_CAPABILITIES_EX, PSTOR_DEVICE_CAPABILITIES_EX structure pointer [Storage Devices], PSTOR_DEVICE_CAPABILITIES_EX, storport/PSTOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX structure [Storage Devices], storport/STOR_DEVICE_CAPABILITIES_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_DEVICE_CAPABILITIES_EX
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STOR_DEVICE_CAPABILITIES_EX, *PSTOR_DEVICE_CAPABILITIES_EX
 req.product : Windows 10 or later.
 ---
 
@@ -64,79 +68,83 @@ typedef struct _STOR_DEVICE_CAPABILITIES_EX {
 
 ## Members
 
-        
-            `Address`
 
-            LUN address of the storage unit device.
-        
-            `DefaultWriteCacheEnabled`
+`Address`
 
-            The storage device's write cache is enabled by default at initialization.
-        
-            `DeviceD1`
+LUN address of the storage unit device.
 
-            Specifies whether the device hardware supports the D1 power state. Miniport drivers set this bit to 0.
-        
-            `DeviceD2`
+`DefaultWriteCacheEnabled`
 
-            Specifies whether the device hardware supports the D2 power state. Miniport drivers set this bit to 0.
-        
-            `DockDevice`
+The storage device's write cache is enabled by default at initialization.
 
-            Specifies whether the device is a docking peripheral.
-        
-            `EjectSupported`
+`DeviceD1`
 
-            Specifies whether the device supports software-controlled device ejection while the system is in the <b>PowerSystemWorking</b> state. This member pertains to ejecting a LUN or unit device.
-        
-            `LockSupported`
+Specifies whether the device hardware supports the D1 power state. Miniport drivers set this bit to 0.
 
-            Specifies whether the device supports physical-device locking that prevents device ejection. This member pertains to ejecting a LUN or a unit device.
-        
-            `NoDisplayInUI`
+`DeviceD2`
 
-            Do not display the device in the user interface. If this bit is set, the device is never displayed in the user interface, even if the device is present but fails to start. Miniport drivers do not set this bit.
-        
-            `RawDeviceOK`
+Specifies whether the device hardware supports the D2 power state. Miniport drivers set this bit to 0.
 
-            Specifies whether the driver for the underlying bus can drive the device if there is no function driver (for example, SCSI devices in pass-through mode). This mode of operation is called raw mode.
-        
-            `Reserved0`
+`DockDevice`
 
-            Reserved bits.
-        
-            `Reserved1`
+Specifies whether the device is a docking peripheral.
 
-            Reserved bits.
-        
-            `SilentInstall`
+`EjectSupported`
 
-            Specifies whether <b>Device Manager</b> should suppress all installation dialog boxes; except required dialog boxes such as "no compatible drivers found."
-        
-            `Size`
+Specifies whether the device supports software-controlled device ejection while the system is in the <b>PowerSystemWorking</b> state. This member pertains to ejecting a LUN or unit device.
 
-            Specifies the size of the structure. Set to <b>sizeof</b>(STOR_DEVICE_CAPABILITIES_EX) by Storport.
-        
-            `SurpriseRemovalOK`
+`LockSupported`
 
-            Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in.
-        
-            `UINumber`
+Specifies whether the device supports physical-device locking that prevents device ejection. This member pertains to ejecting a LUN or a unit device.
 
-            Specifies a number associated with the device that can be displayed in the user interface. 
+`NoDisplayInUI`
+
+Do not display the device in the user interface. If this bit is set, the device is never displayed in the user interface, even if the device is present but fails to start. Miniport drivers do not set this bit.
+
+`RawDeviceOK`
+
+Specifies whether the driver for the underlying bus can drive the device if there is no function driver (for example, SCSI devices in pass-through mode). This mode of operation is called raw mode.
+
+`Removable`
+
+
+
+`Reserved0`
+
+Reserved bits.
+
+`Reserved1`
+
+Reserved bits.
+
+`SilentInstall`
+
+Specifies whether <b>Device Manager</b> should suppress all installation dialog boxes; except required dialog boxes such as "no compatible drivers found."
+
+`Size`
+
+Specifies the size of the structure. Set to <b>sizeof</b>(STOR_DEVICE_CAPABILITIES_EX) by Storport.
+
+`SurpriseRemovalOK`
+
+Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in.
+
+`UINumber`
+
+Specifies a number associated with the device that can be displayed in the user interface. 
 
 This number might be an ID value chosen to make locating the physical device easier for the user. When the <b>UINumber</b> is unknown, the miniport driver can set this member to its default value of 0xFFFFFFFF.
-        
-            `UniqueID`
 
-            Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus.
-        
-            `Version`
+`UniqueID`
 
-            Specifies the version of the structure. Set to STOR_DEVICE_CAPABILITIES_EX_VERSION_1 by Storport.
+Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus.
 
-    ## Remarks
-        When a miniport driver receives an SRB in its <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine where the SRB function is SRB_FUNCTION_PNP, the SRB is formatted as a <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If the <b>PnPAction</b> member of the SRB is <b>StorQueryCapabilities</b>, the miniport can return a <b>STOR_DEVICE_CAPABILITIES_EX</b> structure in the <b>DataBuffer</b> member of the SRB.
+`Version`
+
+Specifies the version of the structure. Set to STOR_DEVICE_CAPABILITIES_EX_VERSION_1 by Storport.
+
+## Remarks
+When a miniport driver receives an SRB in its <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine where the SRB function is SRB_FUNCTION_PNP, the SRB is formatted as a <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If the <b>PnPAction</b> member of the SRB is <b>StorQueryCapabilities</b>, the miniport can return a <b>STOR_DEVICE_CAPABILITIES_EX</b> structure in the <b>DataBuffer</b> member of the SRB.
 
 The eject, removal, and install characteristics for the device are set in the <b>STOR_DEVICE_CAPABILITIES_EX</b> structure. To support the use of this structure, the miniport must set the  STOR_FEATURE_FULL_PNP_DEVICE_CAPABILITIES flag in the  <b>FeatureSupport</b> flags member in <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> before calling <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>.
 
@@ -148,22 +156,16 @@ The eject, removal, and install characteristics for the device are set in the <b
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
-</dt>
-<dt>
 <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a>
-</dt>
-<dt>
+
 <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-</dt>
-</dl>
+
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
+
+<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
+
  
 
  

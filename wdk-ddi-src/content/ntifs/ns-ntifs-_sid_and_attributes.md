@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 37c299ab-16a6-4fa2-8ac9-55d75cc98f60
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SID_AND_ATTRIBUTES, *PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES
+ms.keywords : ifsk.sid_and_attributes, PSID_AND_ATTRIBUTES structure pointer [Installable File System Drivers], ntifs/PSID_AND_ATTRIBUTES, ntifs/SID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES structure [Installable File System Drivers], securitystructures_b0075789-13b6-4324-965b-33a162bff18b.xml, *PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES, _SID_AND_ATTRIBUTES, PSID_AND_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SID_AND_ATTRIBUTES
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES"
 ---
 
@@ -47,13 +51,13 @@ typedef struct _SID_AND_ATTRIBUTES {
 
 ## Members
 
-        
-            `Attributes`
 
-            Specifies attributes of the SID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the SID.
+`Attributes`
 
-    ## Remarks
-        A group is represented by a SID. SIDs have attributes that indicate whether they are currently enabled, disabled, or mandatory, and how they are used. A <b>SID_AND_ATTRIBUTES</b> structure can represent a SID whose attributes change frequently. For example, it is used to represent groups in the <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a> structure.
+Specifies attributes of the SID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the SID.
+
+## Remarks
+A group is represented by a SID. SIDs have attributes that indicate whether they are currently enabled, disabled, or mandatory, and how they are used. A <b>SID_AND_ATTRIBUTES</b> structure can represent a SID whose attributes change frequently. For example, it is used to represent groups in the <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -63,22 +67,16 @@ typedef struct _SID_AND_ATTRIBUTES {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-sefiltertoken.md">SeFilterToken</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
-</dt>
-</dl>
+
  
 
  

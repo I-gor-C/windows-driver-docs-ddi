@@ -7,8 +7,8 @@ old-location : netvista\rilrfstate.htm
 old-project : netvista
 ms.assetid : 7eb78864-d20c-4993-8b33-63096bf971fa
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRFSTATE, *LPRILRFSTATE, RILRFSTATE
+ms.date : 1/18/2018
+ms.keywords : "*LPRILRFSTATE, ntddrilapitypes/RILRFSTATE, RILRFSTATE, RILRFSTATE structure [Network Drivers Starting with Windows Vista], netvista.rilrfstate"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRFSTATE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILRFSTATE, RILRFSTATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILRFSTATE, *LPRILRFSTATE
 ---
 
 # RILRFSTATE structure
@@ -50,26 +54,26 @@ typedef struct _RILRFSTATE {
 
 ## Members
 
-        
-            `bRFData`
 
-            
-        
-            `cbSize`
+`bRFData`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwRFDataSize`
 
-            
-        
-            `dwRFState`
+`cbSize`
 
-            
+
+
+`dwParams`
+
+
+
+`dwRFDataSize`
+
+
+
+`dwRFState`
+
+
 
 
 ## Requirements

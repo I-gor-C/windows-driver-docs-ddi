@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3973564-8739-4bf7-b9f7-e5792018b98d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETVERTEXSHADERCONST, D3DHAL_DP2SETVERTEXSHADERCONST, *LPD3DHAL_DP2SETVERTEXSHADERCONST, *LPD3DHAL_DP2SETVERTEXSHADERCONSTI, D3DHAL_DP2SETVERTEXSHADERCONSTI, *LPD3DHAL_DP2SETVERTEXSHADERCONSTB, D3DHAL_DP2SETVERTEXSHADERCONSTB
+ms.keywords : "*LPD3DHAL_DP2SETVERTEXSHADERCONST, D3DHAL_DP2SETVERTEXSHADERCONST structure [Display Devices], display.d3dhal_dp2setvertexshaderconst, d3dhal/D3DHAL_DP2SETVERTEXSHADERCONST, d3dstrct_5d02ceb6-1d80-4586-a256-ca56ca51a101.xml, *LPD3DHAL_DP2SETVERTEXSHADERCONSTB, D3DHAL_DP2SETVERTEXSHADERCONSTB, LPD3DHAL_DP2SETVERTEXSHADERCONST structure pointer [Display Devices], D3DHAL_DP2SETVERTEXSHADERCONST, *LPD3DHAL_DP2SETVERTEXSHADERCONSTI, _D3DHAL_DP2SETVERTEXSHADERCONST, LPD3DHAL_DP2SETVERTEXSHADERCONST, D3DHAL_DP2SETVERTEXSHADERCONSTI, d3dhal/LPD3DHAL_DP2SETVERTEXSHADERCONST"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETVERTEXSHADERCONST
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETVERTEXSHADERCONST
 ---
 
@@ -50,17 +54,17 @@ typedef struct _D3DHAL_DP2SETVERTEXSHADERCONST {
 
 ## Members
 
-        
-            `dwCount`
 
-            Specifies the number of constant registers to set and, therefore, the number of four element, single precision float vectors to read from the DP2 stream.
-        
-            `dwRegister`
+`dwCount`
 
-            Specifies the index of the first vertex shader constant to have its value sent.
+Specifies the number of constant registers to set and, therefore, the number of four element, single precision float vectors to read from the DP2 stream.
 
-    ## Remarks
-        A start register and register count are given. One or more vectors of four single precision floating-point values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream.
+`dwRegister`
+
+Specifies the index of the first vertex shader constant to have its value sent.
+
+## Remarks
+A start register and register count are given. One or more vectors of four single precision floating-point values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream.
 
 The runtime validates that the range of registers specified is legal given the level of vertex shader support reported to the driver. Furthermore, if the driver does not support any form of programmable vertex processing the runtime does not send this token to the driver.
 
@@ -72,20 +76,16 @@ The runtime validates that the range of registers specified is legal given the l
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_SETVERTEXSHADERCONST</dt>
-<dt>
+D3DDP2OP_SETVERTEXSHADERCONST
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
+
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>
-</dt>
-<dt>
+
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2createvertexshader.md">D3DHAL_DP2CREATEVERTEXSHADER</a>
-</dt>
-</dl>
+
  
 
  

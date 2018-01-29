@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 91da1c7a-aff5-4ece-b18d-14bd41e95464
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETLIGHT, D3DDDIARG_SETLIGHT
+ms.keywords : UMDisplayDriver_param_Structs_85eaa308-4edf-44ee-9235-e8637c10aa35.xml, display.d3dddiarg_setlight, _D3DDDIARG_SETLIGHT, d3dumddi/D3DDDIARG_SETLIGHT, D3DDDIARG_SETLIGHT, D3DDDIARG_SETLIGHT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETLIGHT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETLIGHT
 ---
 
@@ -47,11 +51,10 @@ typedef struct _D3DDDIARG_SETLIGHT {
 
 ## Members
 
-        
-            `DataType`
 
-            [in] A valid bitwise OR of the following flags that indicate the type of light data:
+`DataType`
 
+[in] A valid bitwise OR of the following flags that indicate the type of light data:
 <table>
 <tr>
 <th>Value</th>
@@ -88,10 +91,10 @@ Disables the light whose index is specified in <b>Index</b>
 </td>
 </tr>
 </table>
-        
-            `Index`
 
-            [in] An index into an array of lights.
+`Index`
+
+[in] An index into an array of lights.
 
 
 ## Requirements
@@ -102,16 +105,12 @@ Disables the light whose index is specified in <b>Index</b>
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_light.md">D3DDDI_LIGHT</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setlight.md">SetLight</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_light.md">D3DDDI_LIGHT</a>
+
  
 
  

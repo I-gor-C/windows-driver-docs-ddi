@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5d8e6b87-6cfd-48ec-ac38-a75cb94cf5ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxAdapterUpdateMaxDisplayPipelineRate
+ms.keywords : IddCxAdapterUpdateMaxDisplayPipelineRate method [Display Devices], IddCxAdapterUpdateMaxDisplayPipelineRate, iddcx/IddCxAdapterUpdateMaxDisplayPipelineRate, display.iddcxadapterupdatemaxdisplaypipelinerate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IddCxAdapterUpdateMaxDisplayPipelineRate
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : _Must_inspect_result_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : e0920576-de0f-44bd-8d95-85dde4ee6817
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WINBIO_GET_INDICATOR, *PWINBIO_GET_INDICATOR, WINBIO_GET_INDICATOR
+ms.keywords : winbio_ioctl/PWINBIO_GET_INDICATOR, winbio_ioctl/WINBIO_GET_INDICATOR, biometric.winbio_get_indicator, WINBIO_GET_INDICATOR, biometric_ref_2ff9c2b7-38fd-4419-aa90-a87cceef3cda.xml, _WINBIO_GET_INDICATOR, *PWINBIO_GET_INDICATOR, PWINBIO_GET_INDICATOR, PWINBIO_GET_INDICATOR structure pointer [Biometric Devices], WINBIO_GET_INDICATOR structure [Biometric Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WINBIO_GET_INDICATOR
-req.alt-loc : winbio_ioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PWINBIO_GET_INDICATOR, WINBIO_GET_INDICATOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WINBIO_GET_INDICATOR, *PWINBIO_GET_INDICATOR
 req.product : Windows 10 or later.
 ---
 
@@ -49,13 +53,12 @@ typedef struct _WINBIO_GET_INDICATOR {
 
 ## Members
 
-        
-            `IndicatorStatus`
 
-            Specifies a WINBIO_INDICATOR_STATUS, which indicates whether the indicator light is on or off.
+`IndicatorStatus`
+
+Specifies a WINBIO_INDICATOR_STATUS, which indicates whether the indicator light is on or off.
 
  Possible values are shown in the following table. 
-
 <table>
 <tr>
 <td>
@@ -88,14 +91,14 @@ The sensor indicator light is off.  Sensors that do not have an indicator light 
 </td>
 </tr>
 </table>
-        
-            `PayloadSize`
 
-            Specifies the total size of the payload, which includes the fixed length structure and any variable data at the end.
-        
-            `WinBioHresult`
+`PayloadSize`
 
-            Specifies an HRESULT that contains the status of the I/O operation. See <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a> for possible values.
+Specifies the total size of the payload, which includes the fixed length structure and any variable data at the end.
+
+`WinBioHresult`
+
+Specifies an HRESULT that contains the status of the I/O operation. See <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a> for possible values.
 
 
 ## Requirements
@@ -106,16 +109,12 @@ The sensor indicator light is off.  Sensors that do not have an indicator light 
 | **Minimum UMDF version** |  |
 | **Header** | winbio_ioctl.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_set_indicator.md">WINBIO_SET_INDICATOR</a>
-</dt>
-<dt>
+
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a>
-</dt>
-</dl>
+
  
 
  

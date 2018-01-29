@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E2939DFA-52EC-4AA7-ACC6-63D60603A24D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS, *PPEP_PROCESSOR_IDLE_CONSTRAINTS
+ms.keywords : _PEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS structure [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_IDLE_CONSTRAINTS, PPEP_PROCESSOR_IDLE_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_CONSTRAINTS, pep_x/PPEP_PROCESSOR_IDLE_CONSTRAINTS, kernel.pep_processor_idle_constraints, pep_x/PEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PROCESSOR_IDLE_CONSTRAINTS
-req.alt-loc : pep_x.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PEP_PROCESSOR_IDLE_CONSTRAINTS, *PPEP_PROCESSOR_IDLE_CONSTRAINTS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS"
 ---
 
 # _PEP_PROCESSOR_IDLE_CONSTRAINTS structure
@@ -48,21 +52,21 @@ typedef struct _PEP_PROCESSOR_IDLE_CONSTRAINTS {
 
 ## Members
 
-        
-            `IdleDuration`
 
-            The length of time, in 100-nanosecond units, for which the processor is expected to stay in the selected idle state. This is the operating system's current best estimate and might vary over time without further notification.
-        
-            `Interruptible`
+`IdleDuration`
 
-            Whether the processor must be able to respond to interrupts in the selected idle state. A value of TRUE indicates that the processor must be interruptible in this idle state. A value of FALSE indicates that the processor is not required to be interruptible in this idle state.
-        
-            `Type`
+The length of time, in 100-nanosecond units, for which the processor is expected to stay in the selected idle state. This is the operating system's current best estimate and might vary over time without further notification.
 
-            A <a href="..\pep_x\ne-pep_x-ppep_processor_idle_type.md">PEP_PROCESSOR_IDLE_TYPE</a> enumeration value that indicates whether these idle constraints apply to just the current processor (<b>Type</b> = <b>PepIdleTypeProcessor</b>) or to all processors in the hardware platform (<b>Type</b> = <b>PepIdleTypePlatform</b>).
+`Interruptible`
 
-    ## Remarks
-        The <b>Constraints</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_select.md">PEP_PPM_IDLE_SELECT</a> structure is a pointer to a <b>PEP_PROCESSOR_IDLE_CONSTRAINTS</b> structure.
+Whether the processor must be able to respond to interrupts in the selected idle state. A value of TRUE indicates that the processor must be interruptible in this idle state. A value of FALSE indicates that the processor is not required to be interruptible in this idle state.
+
+`Type`
+
+A <a href="..\pep_x\ne-pep_x-ppep_processor_idle_type.md">PEP_PROCESSOR_IDLE_TYPE</a> enumeration value that indicates whether these idle constraints apply to just the current processor (<b>Type</b> = <b>PepIdleTypeProcessor</b>) or to all processors in the hardware platform (<b>Type</b> = <b>PepIdleTypePlatform</b>).
+
+## Remarks
+The <b>Constraints</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_select.md">PEP_PPM_IDLE_SELECT</a> structure is a pointer to a <b>PEP_PROCESSOR_IDLE_CONSTRAINTS</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +76,12 @@ typedef struct _PEP_PROCESSOR_IDLE_CONSTRAINTS {
 | **Minimum UMDF version** |  |
 | **Header** | pep_x.h (include Pepfx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_select.md">PEP_PPM_IDLE_SELECT</a>
-</dt>
-<dt>
+
 <a href="..\pep_x\ne-pep_x-ppep_processor_idle_type.md">PEP_PROCESSOR_IDLE_TYPE</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\ndiscmcloseaddressfamilycomplete.htm
 old-project : netvista
 ms.assetid : 1aeb2ca5-8c56-4a78-8cd5-a178efa9b014
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisCmCloseAddressFamilyComplete
+ms.date : 1/18/2018
+ms.keywords : NdisCmCloseAddressFamilyComplete, ndis/NdisCmCloseAddressFamilyComplete, netvista.ndiscmcloseaddressfamilycomplete, NdisCmCloseAddressFamilyComplete function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_e8f3c7fa-1a6a-4cf4-9c3c-78f036c2e912.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisCmCloseAddressFamilyComplete
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_CallManager_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -76,8 +80,8 @@ A stand-alone call manager must call
     <a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>, cannot
     release the resources it allocated to track communications on the AF until the CM's call to 
     <b>NdisCmCloseAddressFamilyComplete</b> causes a call to that client's 
-    <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">
-    ProtocolClCloseAfComplete</a> function.
+    <mshelp:link keywords="netvista.protocolclcloseafcomplete" tabindex="0"><i>
+    ProtocolClCloseAfComplete</i></mshelp:link> function.
 
 After a call to 
     <b>NdisCmCloseAddressFamilyComplete</b>, the call manager cannot subsequently use the 
@@ -102,26 +106,19 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndismcmcloseaddressfamilycomplete.md">
-   NdisMCmCloseAddressFamilyComplete</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">ProtocolClCloseAfComplete</a>
-</dt>
-<dt>
 <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
+
 <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">ProtocolClCloseAfComplete</a>
+
+<mshelp:link keywords="netvista.ndismcmcloseaddressfamilycomplete" tabindex="0"><b>
+   NdisMCmCloseAddressFamilyComplete</b></mshelp:link>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmCloseAddressFamilyComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmCloseAddressFamilyComplete function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

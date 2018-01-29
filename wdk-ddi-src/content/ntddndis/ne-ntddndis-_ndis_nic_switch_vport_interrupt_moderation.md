@@ -7,8 +7,8 @@ old-location : netvista\ndis_nic_switch_vport_interrupt_moderation.htm
 old-project : netvista
 ms.assetid : 86ec2e8f-1a89-4c0a-b761-d9bf0d3dc35a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, *PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION
+ms.date : 1/18/2018
+ms.keywords : PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NdisNicSwitchVPortIntModHigh, ntddndis/NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, netvista.ndis_nic_switch_vport_interrupt_moderation, _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/NdisNicSwitchVPortIntModOff, *PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration [Network Drivers Starting with Windows Vista], NdisNicSwitchVPortIntModMedium, ntddndis/NdisNicSwitchVPortIntModLow, ntddndis/NdisNicSwitchVPortIntModMedium, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NdisNicSwitchVPortIntModOff, NdisNicSwitchVPortIntModAdaptive, NdisNicSwitchVPortIntModHigh, ntddndis/NdisNicSwitchVPortIntModAdaptive, ntddndis/NdisNicSwitchVPortIntModUndefined, ntddndis/PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NdisNicSwitchVPortIntModUndefined, NdisNicSwitchVPortIntModLow
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.30 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION
-req.alt-loc : Ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, *PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION
 ---
 
 # _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION Enumeration
@@ -52,6 +56,36 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION {
 ## Constants
 
 <table>
+
+<tr>
+<td>NdisNicSwitchVPortInterruptModerationAdaptive</td>
+<td></td>
+</tr>
+
+<tr>
+<td>NdisNicSwitchVPortInterruptModerationHigh</td>
+<td></td>
+</tr>
+
+<tr>
+<td>NdisNicSwitchVPortInterruptModerationLow</td>
+<td></td>
+</tr>
+
+<tr>
+<td>NdisNicSwitchVPortInterruptModerationMedium</td>
+<td></td>
+</tr>
+
+<tr>
+<td>NdisNicSwitchVPortInterruptModerationOff</td>
+<td></td>
+</tr>
+
+<tr>
+<td>NdisNicSwitchVPortInterruptModerationUndefined</td>
+<td></td>
+</tr>
 </table>
 
 ## Remarks
@@ -70,17 +104,14 @@ The <b>InterruptModeration</b> member of the <a href="..\ntddndis\ns-ntddndis-_n
 
 ## See Also
 
-<dl>
-<dt><b></b></dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a>
-</dt>
-<dt>
 <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_parameters.md">NDIS_NIC_SWITCH_VPORT_PARAMETERS</a>
-</dt>
-</dl>
- 
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a>
+
+<b></b>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

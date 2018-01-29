@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 832ca4fe-1040-4f07-8c84-f576e5ce6423
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_ADAPTER_FLAGS,
+ms.keywords : IDDCX_ADAPTER_FLAGS enumeration [Display Devices], iddcx/IDDCX_ADAPTER_FLAGS, IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE, iddcx/IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS, iddcx/IDDCX_ADAPTER_FLAGS_NONE, display.iddcx_adapter_flags, iddcx/IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE, IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS, IDDCX_ADAPTER_FLAGS_NONE, IDDCX_ADAPTER_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_ADAPTER_FLAGS
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -63,15 +67,18 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
 <tr>
 <td>IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE</td>
 <td>Indicates to the OS that the smallest possible desktop surface size should be used when the desktop mode is changed. Typically a solution that has a large processing overhead or limited transmission bandwidth uses this flag to reduce the desktop image size in order to process as much as possible. 
+<div class="alert"><b>Note</b>  Setting this flag results in a mode change each time the desktop resolution is changed.</div><div> </div></td>
+</tr>
 
-<div class="alert"><b>Note</b>  Setting this flag results in a mode change each time the desktop resolution is changed.</div>
-<div> </div></td>
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 
 ## Remarks
 
-Indirect display automatically supports OS virtual modes.  Mode changes can be performed seamlessly by the OS using DWM scaling on a per frame basis without any display mode change. The disadvantage of this is that when a smaller desktop mode is used by the user, the desktop image provided to the driver will be bigger than the desktop size. 		This wastes encode and transmit bandwidth. </p>
+Indirect display automatically supports OS virtual modes.  Mode changes can be performed seamlessly by the OS using DWM scaling on a per frame basis without any display mode change. The disadvantage of this is that when a smaller desktop mode is used by the user, the desktop image provided to the driver will be bigger than the desktop size. 		This wastes encode and transmit bandwidth.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -7,8 +7,8 @@ old-location : netvista\fwps_fields_inbound_mac_frame_native.htm
 old-project : netvista
 ms.assetid : 0EFD49D5-1A5D-4D8F-AA19-7A1562C4B581
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE_, FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE
+ms.date : 1/18/2018
+ms.keywords : FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_PORT, FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_FLAGS, fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_PHYSICAL_MEDIA_TYPE, FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_MAX, fwpsk/FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE, FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE, fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_FLAGS, fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_MAX, fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_MEDIA_TYPE, FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_MEDIA_TYPE, FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE_, fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE, fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_PORT, FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_INDEX, netvista.fwps_fields_inbound_mac_frame_native, FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_INDEX, fwpsk/FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE, FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE, FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE, FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_PHYSICAL_MEDIA_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE
 ---
 
@@ -58,6 +62,11 @@ typedef enum  {
 <table>
 
 <tr>
+<td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_COMPARTMENT_ID</td>
+<td></td>
+</tr>
+
+<tr>
 <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE</td>
 <td>The inbound MAC frame native interface field.</td>
 </tr>
@@ -70,6 +79,11 @@ typedef enum  {
 <tr>
 <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE</td>
 <td>The inbound MAC frame native interface type field.</td>
+</tr>
+
+<tr>
+<td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_L2_FLAGS</td>
+<td></td>
 </tr>
 
 <tr>

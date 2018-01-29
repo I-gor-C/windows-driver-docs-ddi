@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 2FE13A53-5B88-40B8-B129-8DD141F1B160
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GET_UNIT_INFO, *PGET_UNIT_INFO, GET_UNIT_INFO
+ms.keywords : "*PGET_UNIT_INFO, IEEE.get_unit_info, 61883/PGET_UNIT_INFO, GET_UNIT_INFO, _GET_UNIT_INFO, PGET_UNIT_INFO, PGET_UNIT_INFO structure pointer [Buses], GET_UNIT_INFO structure [Buses], 61883/GET_UNIT_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GET_UNIT_INFO
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGET_UNIT_INFO, GET_UNIT_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GET_UNIT_INFO, *PGET_UNIT_INFO
 ---
 
 # _GET_UNIT_INFO structure
@@ -47,11 +51,10 @@ typedef struct _GET_UNIT_INFO {
 
 ## Members
 
-        
-            `Information`
 
-            In input, a pointer to information supplied by the protocol driver about the device. 
+`Information`
 
+In input, a pointer to information supplied by the protocol driver about the device. 
 <table>
 <tr>
 <th>Value of nLevel</th>
@@ -118,10 +121,10 @@ The protocol driver writes current diag level to the caller-allocated <a href="h
 </td>
 </tr>
 </table>
-        
-            `nLevel`
 
-            On input, the level of information to retrieve. Can be one of the following:
+`nLevel`
+
+On input, the level of information to retrieve. Can be one of the following:
 
 GET_UNIT_INFO_IDS
 
@@ -135,8 +138,8 @@ GET_UNIT_DDI_VERSION
 
 GET_UNIT_DIAG_LEVEL
 
-    ## Remarks
-        <b>Flags</b> in the request specifies either RETRIEVE_DEVICE_UNIT_INFO or RETRIEVE_LOCAL_UNIT_INFO. Only used when <b>nLevel</b> is set to GET_UNIT_INFO_CAPABILITIES.
+## Remarks
+<b>Flags</b> in the request specifies either RETRIEVE_DEVICE_UNIT_INFO or RETRIEVE_LOCAL_UNIT_INFO. Only used when <b>nLevel</b> is set to GET_UNIT_INFO_CAPABILITIES.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -146,13 +149,10 @@ GET_UNIT_DIAG_LEVEL
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

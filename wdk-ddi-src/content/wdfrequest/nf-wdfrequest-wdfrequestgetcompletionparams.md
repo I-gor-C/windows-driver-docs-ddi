@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 167bb0f3-a484-443b-8bc4-bb2bbcecc19a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestGetCompletionParams
+ms.keywords : wdf.wdfrequestgetcompletionparams, wdfrequest/WdfRequestGetCompletionParams, WdfRequestGetCompletionParams, DFRequestObjectRef_032fe29a-4000-4d97-92fb-50462d2c1bea.xml, WdfRequestGetCompletionParams method, PFN_WDFREQUESTGETCOMPLETIONPARAMS, kmdf.wdfrequestgetcompletionparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestGetCompletionParams
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,8 +85,6 @@ If a driver sends an I/O request asynchronously, it typically calls this method 
 
 For more information about <b>WdfRequestGetCompletionParams</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
-The following code example initializes a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structure and then calls <b>WdfRequestGetCompletionParams</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,17 +99,12 @@ The following code example initializes a <a href="..\wdfrequest\ns-wdfrequest-_w
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
-</dt>
-</dl>
+
  
 
  

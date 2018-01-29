@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BD544686-20D3-4577-9950-9C3B6853C4BD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnlogumdmarkercb, pfnLogUMDMarkerCb callback function [Display Devices], pfnLogUMDMarkerCb, PFND3DDDI_LOGUMDMARKERCB, PFND3DDDI_LOGUMDMARKERCB, d3dumddi/pfnLogUMDMarkerCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnLogUMDMarkerCb
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 

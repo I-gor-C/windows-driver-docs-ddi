@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d36a0545-22cf-4980-aa1a-d3b9dd7f9871
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_OPM_GET_INFO_PARAMETERS,
+ms.keywords : display.iddcx_opm_get_info_parameters, IDDCX_OPM_GET_INFO_PARAMETERS, iddcx/IDDCX_OPM_GET_INFO_PARAMETERS, IDDCX_OPM_GET_INFO_PARAMETERS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_OPM_GET_INFO_PARAMETERS
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,14 +51,14 @@ typedef struct IDDCX_OPM_GET_INFO_PARAMETERS {
 
 ## Members
 
-        
-            `GetInfoParameters`
 
-            Parameters for the get information request.
-        
-            `Size`
+`GetInfoParameters`
 
-            Total size of the structure.
+Parameters for the get information request.
+
+`Size`
+
+Total size of the structure.
 
 
 ## Requirements

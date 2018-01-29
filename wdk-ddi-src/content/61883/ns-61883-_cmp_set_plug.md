@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 2C47165D-9D04-46C8-A1EC-04E6F32AE516
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CMP_SET_PLUG, *PCMP_SET_PLUG, CMP_SET_PLUG
+ms.keywords : _CMP_SET_PLUG, PCMP_SET_PLUG, CMP_SET_PLUG structure [Buses], *PCMP_SET_PLUG, CMP_SET_PLUG, 61883/PCMP_SET_PLUG, PCMP_SET_PLUG structure pointer [Buses], IEEE.cmp_set_plug, 61883/CMP_SET_PLUG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_SET_PLUG
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCMP_SET_PLUG, CMP_SET_PLUG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CMP_SET_PLUG, *PCMP_SET_PLUG
 ---
 
 # _CMP_SET_PLUG structure
@@ -47,17 +51,17 @@ typedef struct _CMP_SET_PLUG {
 
 ## Members
 
-        
-            `hPlug`
 
-            On input, a handle to the plug.
-        
-            `Pcr`
+`hPlug`
 
-            On input, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a> structure that contains settings for the plug.
+On input, a handle to the plug.
 
-    ## Remarks
-        If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
+`Pcr`
+
+On input, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a> structure that contains settings for the plug.
+
+## Remarks
+If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
@@ -71,13 +75,10 @@ If a driver attempts to set the contents of a plug register it did not create, t
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

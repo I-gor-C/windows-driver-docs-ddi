@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ab5f33b9-5261-4d30-bceb-8e91a24ae0a8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmUnmapLockedPages
+ms.keywords : MmUnmapLockedPages, k106_1ed6ae95-665b-4a6e-802a-4f80294c4f6e.xml, MmUnmapLockedPages routine [Kernel-Mode Driver Architecture], wdm/MmUnmapLockedPages, kernel.mmunmaplockedpages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmUnmapLockedPages
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ Note that if the call to <b>MmMapLockedPages</b> or <b>MmMapLockedPagesSpecifyCa
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
+
  
 
  

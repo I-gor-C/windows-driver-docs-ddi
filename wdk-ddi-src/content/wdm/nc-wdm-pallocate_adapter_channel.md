@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d3339754-1a54-48f0-90c8-6c7db59fb7cc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.allocateadapterchannel, AllocateAdapterChannel, AllocateAdapterChannel callback function [Kernel-Mode Driver Architecture], AllocateAdapterChannel, PALLOCATE_ADAPTER_CHANNEL, PALLOCATE_ADAPTER_CHANNEL, wdm/AllocateAdapterChannel, kdma_b2d02da0-ab8f-4fc3-a7a5-a981920c071d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AllocateAdapterChannel
-req.alt-loc : wdm.h
 req.ddi-compliance : IrqlDispatch, IrqlDispatch(storport)
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -80,12 +84,34 @@ Pointer to the driver-determined context to be passed to the <a href="..\wdm\nc-
 ## Return Value
 
 This routine can return one of the following NTSTATUS values. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The adapter channel has been allocated. The system will call the <i>AdapterControl</i> routine once the DMA operation can begin.
+</dl>
+</td>
+<td width="60%">
+The adapter channel has been allocated. The system will call the <i>AdapterControl</i> routine once the DMA operation can begin.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The <i>NumberOfMapRegisters</i> is larger than the value returned by <b>IoGetDmaAdapter</b>. The <i>AdapterControl</i> routine will not be called.
+</dl>
+</td>
+<td width="60%">
+The <i>NumberOfMapRegisters</i> is larger than the value returned by <b>IoGetDmaAdapter</b>. The <i>AdapterControl</i> routine will not be called.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -120,35 +146,24 @@ The system passes the value of the <b>CurrentIrp</b> member of <i>DeviceObject</
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
+
 <a href="..\wdm\nc-wdm-pread_dma_counter.md">ReadDmaCounter</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
+
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
+<a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
+
  
 
  

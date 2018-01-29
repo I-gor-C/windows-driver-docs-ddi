@@ -7,8 +7,8 @@ old-location : netvista\ndis_miniport_driver_wdi_characteristics.htm
 old-project : netvista
 ms.assetid : 2F69C228-FF2D-4277-A4C9-14FBADA1CD31
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
+ms.date : 1/18/2018
+ms.keywords : PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], dot11wdi/NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, dot11wdi/PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, netvista.ndis_miniport_driver_wdi_characteristics, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure
@@ -60,26 +64,26 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 
 ## Members
 
-        
-            `AllocateAdapterHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_allocate_adapter.md">MiniportWdiAllocateAdapter</a> handler function.
-        
-            `CloseAdapterHandler`
+`AllocateAdapterHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_close_adapter.md">MiniportWdiCloseAdapter</a> handler function.
-        
-            `FreeAdapterHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_allocate_adapter.md">MiniportWdiAllocateAdapter</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_free_adapter.md">MiniportWdiFreeAdapter</a> handler function.
-        
-            `HangDiagnoseHandler`
+`CloseAdapterHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_adapter_hang_diagnose.md">MiniportWdiAdapterHangDiagnose</a> handler function.
-        
-            `Header`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_close_adapter.md">MiniportWdiCloseAdapter</a> handler function.
 
-            The 
+`FreeAdapterHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_free_adapter.md">MiniportWdiFreeAdapter</a> handler function.
+
+`HangDiagnoseHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_adapter_hang_diagnose.md">MiniportWdiAdapterHangDiagnose</a> handler function.
+
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure. Set the 
      <b>Type</b> member of the structure that 
@@ -88,46 +92,46 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 
 To indicate the version of the NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure, set the 
      <b>Revision</b> member to the following value:
-        
-            `LeCancelIdleNotificationHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_cancel_idle_notification.md">MiniportWdiCancelIdleNotification</a> handler function.
-        
-            `LeIdleNotificationHandler`
+`LeCancelIdleNotificationHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_idle_notification.md">MiniportWdiIdleNotification</a> handler function.
-        
-            `OpenAdapterHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_cancel_idle_notification.md">MiniportWdiCancelIdleNotification</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_open_adapter.md">MiniportWdiOpenAdapter</a> handler function.
-        
-            `PostPauseHandler`
+`LeIdleNotificationHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_post_adapter_pause.md">MiniportWdiPostAdapterPause</a> handler function.
-        
-            `PostRestartHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_idle_notification.md">MiniportWdiIdleNotification</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_post_adapter_restart.md">MiniportWdiPostAdapterRestart</a> handler function.
-        
-            `StartOperationHandler`
+`OpenAdapterHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_start_adapter_operation.md">MiniportWdiStartOperation</a> handler function.
-        
-            `StopOperationHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_open_adapter.md">MiniportWdiOpenAdapter</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_stop_adapter_operation.md">MiniportWdiStopOperation</a> handler function.
-        
-            `TalTxRxDeinitializeHandler`
+`PostPauseHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_deinitialize.md">MiniportWdiTalTxRxDeinitialize</a> handler function.
-        
-            `TalTxRxInitializeHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_post_adapter_pause.md">MiniportWdiPostAdapterPause</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a> handler function.
-        
-            `WdiVersion`
+`PostRestartHandler`
 
-            The version of WDI used by the driver. Set this member to one of the following values:
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_post_adapter_restart.md">MiniportWdiPostAdapterRestart</a> handler function.
+
+`StartOperationHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_start_adapter_operation.md">MiniportWdiStartOperation</a> handler function.
+
+`StopOperationHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_stop_adapter_operation.md">MiniportWdiStopOperation</a> handler function.
+
+`TalTxRxDeinitializeHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_deinitialize.md">MiniportWdiTalTxRxDeinitialize</a> handler function.
+
+`TalTxRxInitializeHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a> handler function.
+
+`WdiVersion`
+
+The version of WDI used by the driver. Set this member to one of the following values:
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 201fd9e8-74c3-4da0-b01d-f43f9aec4894
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_OVERLAYCOLORCONTROLS, D3DDDI_OVERLAYCOLORCONTROLS
+ms.keywords : display.d3dddi_overlaycolorcontrols, d3dumddi/D3DDDI_OVERLAYCOLORCONTROLS, D3DDDI_OVERLAYCOLORCONTROLS structure [Display Devices], D3DDDI_OVERLAYCOLORCONTROLS, _D3DDDI_OVERLAYCOLORCONTROLS, D3D_other_Structs_276dd56c-35ba-4ee4-97d7-adb8dfd59c7f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_OVERLAYCOLORCONTROLS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_OVERLAYCOLORCONTROLS
 ---
 
@@ -53,38 +57,38 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLS {
 
 ## Members
 
-        
-            `BrightnessSetting`
 
-            [in] An INT value that specifies the brightness of the output image as it is written to the overlay. This member is set if the <b>Brightness</b> bit-field flag is set in the <b>Flags</b> member.
-        
-            `ColorEnableSetting`
+`BrightnessSetting`
 
-            [in] An INT value that specifies the color-enable setting of the output image as it is written to the overlay. This member is set if the <b>ColorEnable</b> bit-field flag is set in the <b>Flags</b> member.
-        
-            `ContrastSetting`
+[in] An INT value that specifies the brightness of the output image as it is written to the overlay. This member is set if the <b>Brightness</b> bit-field flag is set in the <b>Flags</b> member.
 
-            [in] An INT value that specifies the contrast of the output image as it is written to the overlay. This member is set if the <b>Contrast</b> bit-field flag is set in the <b>Flags</b> member.
-        
-            `Flags`
+`ColorEnableSetting`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrolsflags.md">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a> structure that identifies color-control settings that the overlay hardware supports.
-        
-            `GammaSetting`
+[in] An INT value that specifies the color-enable setting of the output image as it is written to the overlay. This member is set if the <b>ColorEnable</b> bit-field flag is set in the <b>Flags</b> member.
 
-            [in] An INT value that specifies the gamma setting of the output image as it is written to the overlay. This member is set if the <b>Gamma</b> bit-field flag is set in the <b>Flags</b> member.
-        
-            `HueSetting`
+`ContrastSetting`
 
-            [in] An INT value that specifies the hue of the output image as it is written to the overlay. This member is set if the <b>Hue</b> bit-field flag is set in the <b>Flags</b> member.
-        
-            `SaturationSetting`
+[in] An INT value that specifies the contrast of the output image as it is written to the overlay. This member is set if the <b>Contrast</b> bit-field flag is set in the <b>Flags</b> member.
 
-            [in] An INT value that specifies the saturation of the output image as it is written to the overlay. This member is set if the <b>Saturation</b> bit-field flag is set in the <b>Flags</b> member.
-        
-            `SharpnessSetting`
+`Flags`
 
-            [in] An INT value that specifies the sharpness of the output image as it is written to the overlay. This member is set if the <b>Sharpness</b> bit-field flag is set in the <b>Flags</b> member.
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrolsflags.md">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a> structure that identifies color-control settings that the overlay hardware supports.
+
+`GammaSetting`
+
+[in] An INT value that specifies the gamma setting of the output image as it is written to the overlay. This member is set if the <b>Gamma</b> bit-field flag is set in the <b>Flags</b> member.
+
+`HueSetting`
+
+[in] An INT value that specifies the hue of the output image as it is written to the overlay. This member is set if the <b>Hue</b> bit-field flag is set in the <b>Flags</b> member.
+
+`SaturationSetting`
+
+[in] An INT value that specifies the saturation of the output image as it is written to the overlay. This member is set if the <b>Saturation</b> bit-field flag is set in the <b>Flags</b> member.
+
+`SharpnessSetting`
+
+[in] An INT value that specifies the sharpness of the output image as it is written to the overlay. This member is set if the <b>Sharpness</b> bit-field flag is set in the <b>Flags</b> member.
 
 
 ## Requirements
@@ -95,19 +99,14 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getoverlaycolorcontrols.md">D3DDDIARG_GETOVERLAYCOLORCONTROLS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrolsflags.md">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a>
-</dt>
-</dl>
+
  
 
  

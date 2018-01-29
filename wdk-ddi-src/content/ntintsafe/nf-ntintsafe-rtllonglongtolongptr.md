@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1E7B693A-B363-4AE0-B9E3-45CC01FE9724
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongLongToLongPtr
+ms.keywords : kernel.rtllonglongtolongptr, RtlLongLongToLongPtr, ntintsafe/RtlLongLongToLongPtr, RtlLongLongToLongPtr function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlLongLongToLongPtr
-req.alt-loc : Ntintsafe.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
@@ -66,7 +70,20 @@ None
 
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
-This function uses the following alternate name:</p>
+This function uses the following alternate name:
+<ul>
+<li>
+RtlLongLongToSSIZET
+</li>
+<li>RtlLong64ToLongPtr
+</li>
+<li>RtlLong64ToSSIZET
+</li>
+<li>RtlInt64ToLongPtr
+</li>
+<li>RtlInt64ToSSIZET
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

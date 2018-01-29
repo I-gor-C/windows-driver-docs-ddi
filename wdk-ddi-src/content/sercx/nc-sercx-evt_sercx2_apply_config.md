@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 8D9BC698-1E62-4DC2-B233-37022F330F98
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords : serports.evtsercx2applyconfig, EvtSerCx2ApplyConfig callback function [Serial Ports], EvtSerCx2ApplyConfig, EVT_SERCX2_APPLY_CONFIG, EVT_SERCX2_APPLY_CONFIG, 2/EvtSerCx2ApplyConfig
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EvtSerCx2ApplyConfig
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
 req.product : Windows 10 or later.
 ---
@@ -76,18 +80,6 @@ SerCx2 obtains the configuration parameters from the vendor-defined data field i
 
 When a client sends an <b>IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION</b> request to a serial port that is managed by SerCx2, SerCx2 calls the <i>EvtSerCx2ApplyConfig</i> function to pass the configuration parameters to the serial controller driver. After this callback returns, SerCx2 completes the request and uses the return value from the callback as the status code for the request.
 
-To define an <i>EvtSerCx2ApplyConfig</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
-
-For example, to define an <i>EvtSerCx2ApplyConfig</i> callback function that is named <code>MyApplyConfig</code>, use the <b>EVT_SERCX2_APPLY_CONFIG</b> function type, as shown in this code example:
-
-Then, implement your callback function as follows:
-
-The <b>EVT_SERCX2_APPLY_CONFIG</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_APPLY_CONFIG</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
-
-The following code example shows a partial implementation of an <i>EvtSerCx2ApplyConfig</i> function for a UART:
-
-The pshpack1.h and poppack.h header files in the preceding code example control the structure alignment mode used by the compiler. The PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER and PPNP_SERIAL_BUS_DESCRIPTOR pointer types are pointers to <a href="https://msdn.microsoft.com/library/windows/hardware/jj938063">RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/jj938062">PNP_SERIAL_BUS_DESCRIPTOR</a> structures. For more information about the members of the <b>PNP_UART_SERIAL_BUS_DESCRIPTOR</b> structure, see Table 6-193 in the <i>Advanced Configuration and Power Interface Specification, Revision 5.0</i>, at the <a href="http://www.acpi.info">ACPI</a> website.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -102,20 +94,14 @@ The pshpack1.h and poppack.h header files in the preceding code example control 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_apply_default_configuration.md">IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj938062">PNP_SERIAL_BUS_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj938063">RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER</a>
-</dt>
-<dt>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_apply_default_configuration.md">IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj938062">PNP_SERIAL_BUS_DESCRIPTOR</a>
+
 <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
-</dt>
-</dl>
+
  
 
  

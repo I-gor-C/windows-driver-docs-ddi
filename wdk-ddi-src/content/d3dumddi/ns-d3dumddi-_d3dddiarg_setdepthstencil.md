@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9d0e9762-060e-40bb-9914-3577a086e8e0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETDEPTHSTENCIL, D3DDDIARG_SETDEPTHSTENCIL
+ms.keywords : UMDisplayDriver_param_Structs_8e3b527c-b594-4bed-9fe1-c8f3a410746d.xml, _D3DDDIARG_SETDEPTHSTENCIL, d3dumddi/D3DDDIARG_SETDEPTHSTENCIL, D3DDDIARG_SETDEPTHSTENCIL structure [Display Devices], D3DDDIARG_SETDEPTHSTENCIL, display.d3dddiarg_setdepthstencil
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETDEPTHSTENCIL
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETDEPTHSTENCIL
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DDDIARG_SETDEPTHSTENCIL {
 
 ## Members
 
-        
-            `hZBuffer`
 
-            [in] A handle to the depth buffer.
+`hZBuffer`
+
+[in] A handle to the depth buffer.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _D3DDDIARG_SETDEPTHSTENCIL {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdepthstencil.md">SetDepthStencil</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 77ebca0f-3056-4f11-9d59-fbd166967ed3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDpcGetParentObject
+ms.keywords : kmdf.wdfdpcgetparentobject, WdfDpcGetParentObject method, DFDpcObjectRef_28be5a7f-4f65-4b9e-b9f4-80b754cc8ca3.xml, PFN_WDFDPCGETPARENTOBJECT, wdf.wdfdpcgetparentobject, wdfdpc/WdfDpcGetParentObject, WdfDpcGetParentObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDpcGetParentObject
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 A driver might call <b>WdfDpcGetParentObject</b> from within its <a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a> callback function.
 
-The following code example returns a handle to the parent object of a specified DPC object. The <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a> code example shows how the specified DPC object was created.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,11 +84,8 @@ The following code example returns a handle to the parent object of a specified 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 18406f06-d60c-401e-a745-54caf1d0c21d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCmResourceListInsertDescriptor
+ms.keywords : kmdf.wdfcmresourcelistinsertdescriptor, PFN_WDFCMRESOURCELISTINSERTDESCRIPTOR, wdfresource/WdfCmResourceListInsertDescriptor, WdfCmResourceListInsertDescriptor method, DFResourceObjectRef_f55c637b-3d8b-4467-9668-bd723bc0206e.xml, wdf.wdfcmresourcelistinsertdescriptor, WdfCmResourceListInsertDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfCmResourceListInsertDescriptor
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -69,20 +73,56 @@ A zero-based value that is used as an index into the logical configuration that 
 ## Return Value
 
 <b>WdfCmResourceListInsertDescriptor</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was specified.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was specified.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The driver was not allowed to add descriptors to the logical configuration that the <i>List</i> parameter specified. For example, the driver could not modify the logical configuration that its <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> or <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> callback function received.
+</dl>
+</td>
+<td width="60%">
+The driver was not allowed to add descriptors to the logical configuration that the <i>List</i> parameter specified. For example, the driver could not modify the logical configuration that its <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> or <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> callback function received.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The framework could not allocate space to store the descriptor that the <i>Descriptor</i> parameter points to.
+</dl>
+</td>
+<td width="60%">
+The framework could not allocate space to store the descriptor that the <i>Descriptor</i> parameter points to.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ARRAY_BOUNDS_EXCEEDED</b></dt>
-</dl>The value that the <i>Index</i> parameter specified was too large.
+</dl>
+</td>
+<td width="60%">
+The value that the <i>Index</i> parameter specified was too large.
 
- 
+</td>
+</tr>
+</table> 
 
 A system bug check occurs if the driver supplies an invalid object handle.
 
@@ -95,8 +135,6 @@ To add a resource descriptor to the end of a resource list, specify WDF_INSERT_A
 The framework copies the contents of the <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure into internal storage, so the driver routine that calls <b>WdfCmResourceListInsertDescriptor</b> can allocate the structure locally. After the driver calls <b>WdfCmResourceListInsertDescriptor</b>, it can reuse the CM_PARTIAL_RESOURCE_DESCRIPTOR structure.
 
 For more information about resource lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
-
-The following code example adds a resource descriptor to the end of the resource list that an <a href="https://msdn.microsoft.com/3210b28b-cbaa-4ad9-9ca8-3b5f03aee41e">EvtDeviceResourcesQuery</a> callback function receives.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,23 +150,16 @@ The following code example adds a resource descriptor to the end of the resource
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/3210b28b-cbaa-4ad9-9ca8-3b5f03aee41e">EvtDeviceResourcesQuery</a>
-</dt>
-<dt>
+
 <a href="..\wdfresource\nf-wdfresource-wdfcmresourcelistappenddescriptor.md">WdfCmResourceListAppendDescriptor</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
+
  
 
  

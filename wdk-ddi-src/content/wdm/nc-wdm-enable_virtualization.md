@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : BC833231-CA7B-4E68-9498-46F1D4B32B88
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : PCI.enablevirtualization, EnableVirtualization routine, EnableVirtualization, ENABLE_VIRTUALIZATION, ENABLE_VIRTUALIZATION, wdm/EnableVirtualization
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2012 and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EnableVirtualization
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -65,25 +69,19 @@ A pointer to interface-specific context information. The caller passes the value
 The number of PCIe virtual functions (VFs) that are to be enabled for the device. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451005">EnableVirtualization</a> routine sets the <b>NumVFs</b> member of the PCIe SR-IOV Extended Capability structure to the value of the <i>NumVFs</i> parameter. 
 
 
-
 <div class="alert"><b>Note</b>  If the <i>EnableVirtualization</i> parameter is <b>FALSE</b>, the <i>NumVFs</i> parameter must be set to zero.
 
-</div>
-<div> </div>
+</div><div> </div>
 
 `EnableVfMigration`
 
 A BOOLEAN value that indicates whether the multi-root I/O virtualization (MR-IOV) base function (BF) can dynamically reprovision the PCIe physical function (PF) of the device   as a VF at run time.
-
-<div class="alert"><b>Note</b>  This parameter is only applicable to devices that support both the SR-IOV and MR-IOV interfaces. The driver must set this parameter to <b>FALSE</b> if the device supports only the SR-IOV interface and not the MR-IOV interface.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  This parameter is only applicable to devices that support both the SR-IOV and MR-IOV interfaces. The driver must set this parameter to <b>FALSE</b> if the device supports only the SR-IOV interface and not the MR-IOV interface.</div><div> </div>
 
 `EnableMigrationInterrupt`
 
 A BOOLEAN value that indicates whether the interrupt associated with the PF should be masked or unmasked during VF migration.
-
-<div class="alert"><b>Note</b>  If the <i>EnableVfMigration</i> parameters is <b>FALSE</b>, the driver must also set this parameter to <b>FALSE</b>.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  If the <i>EnableVfMigration</i> parameters is <b>FALSE</b>, the driver must also set this parameter to <b>FALSE</b>.</div><div> </div>
 
 `EnableVirtualization`
 
@@ -93,15 +91,45 @@ A BOOLEAN value that indicates whether virtualization is enabled on the PCIe con
 ## Return Value
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451005">EnableVirtualization</a> routine returns one of the following NTSTATUS values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation completed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>NumVFs</i> parameter is either zero or  is larger than the value of the <b>TotalVFs</b> member of the SR-IOV Extended Capability structure for the device.
+</dl>
+</td>
+<td width="60%">
+The <i>NumVFs</i> parameter is either zero or  is larger than the value of the <b>TotalVFs</b> member of the SR-IOV Extended Capability structure for the device.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl>Virtualization is already enabled on the device and the <i>EnableVirtualization</i> parameter is <b>TRUE</b>, or virtualization is already disabled on the device and the <i>EnableVirtualization</i> parameter is <b>FALSE</b>.
+</dl>
+</td>
+<td width="60%">
+Virtualization is already enabled on the device and the <i>EnableVirtualization</i> parameter is <b>TRUE</b>, or virtualization is already disabled on the device and the <i>EnableVirtualization</i> parameter is <b>FALSE</b>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -125,15 +153,12 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451005">Enabl
 
 ## See Also
 
-<dl>
-<dt><b></b></dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406642">PCI_VIRTUALIZATION_INTERFACE</a>
-</dt>
-</dl>
+
+<b></b>
+
  
 
  

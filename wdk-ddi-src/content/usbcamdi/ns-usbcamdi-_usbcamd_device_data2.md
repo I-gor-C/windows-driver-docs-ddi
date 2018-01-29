@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 51339fd1-a962-4e3c-b9c9-5fe54ff53aa0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+ms.keywords : _USBCAMD_DEVICE_DATA2, stream.usbcamd_device_data2, PUSBCAMD_DEVICE_DATA2 structure pointer [Streaming Media Devices], USBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2 structure [Streaming Media Devices], usbcamdi/USBCAMD_DEVICE_DATA2, usbcamdi/PUSBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2, PUSBCAMD_DEVICE_DATA2, usbcmdpr_01305731-bde1-4718-8ff9-d0f102d6cc34.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBCAMD_DEVICE_DATA2
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -59,61 +63,61 @@ typedef struct _USBCAMD_DEVICE_DATA2 {
 
 ## Members
 
-        
-            `CamAllocateBandwidthEx`
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_allocate_bw_routine_ex.md">CamAllocateBandwidthEx</a> callback function. This entry point is required.
-        
-            `CamConfigureEx`
+`CamAllocateBandwidthEx`
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md">CamConfigureEx</a> callback function. This entry point is required.
-        
-            `CamFreeBandwidthEx`
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_allocate_bw_routine_ex.md">CamAllocateBandwidthEx</a> callback function. This entry point is required.
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine_ex.md">CamFreeBandwidthEx</a> callback function. This entry point is required.
-        
-            `CamInitialize`
+`CamConfigureEx`
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_initialize_routine.md">CamInitialize</a> callback function. This entry point is required.
-        
-            `CamNewVideoFrameEx`
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md">CamConfigureEx</a> callback function. This entry point is required.
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine_ex.md">CamNewVideoFrameEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
-        
-            `CamProcessRawVideoFrameEx`
+`CamFreeBandwidthEx`
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
-        
-            `CamProcessUSBPacketEx`
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine_ex.md">CamFreeBandwidthEx</a> callback function. This entry point is required.
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_process_packet_routine_ex.md">CamProcessUSBPacketEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
-        
-            `CamRestoreState`
+`CamInitialize`
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_state_routine.md">CamRestoreState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
-        
-            `CamSaveState`
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_initialize_routine.md">CamInitialize</a> callback function. This entry point is required.
 
-            Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff557635">CamSaveState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
-        
-            `CamStartCaptureEx`
+`CamNewVideoFrameEx`
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md">CamStartCaptureEx</a> callback function. This entry point is required.
-        
-            `CamStopCaptureEx`
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine_ex.md">CamNewVideoFrameEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
 
-            Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_stop_capture_routine_ex.md">CamStopCaptureEx</a> callback function. This entry point is required.
-        
-            `CamUnInitialize`
+`CamProcessRawVideoFrameEx`
 
-            Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff557646">CamUnInitialize</a> callback function. This entry point is required.
-        
-            `Sig`
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
 
-            Reserved. Do not use.
+`CamProcessUSBPacketEx`
 
-    ## Remarks
-        A camera minidriver passes a USBCAMD_DEVICE_DATA2 structure to USBCAMD as a parameter to USBCAMD service <a href="..\usbcamdi\nf-usbcamdi-usbcamd_initializenewinterface.md">USBCAMD_InitializeNewInterface</a>.
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_process_packet_routine_ex.md">CamProcessUSBPacketEx</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
+
+`CamRestoreState`
+
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_state_routine.md">CamRestoreState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
+
+`CamSaveState`
+
+Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff557635">CamSaveState</a> callback function. This is an optional entry point. If the minidriver does not implement this function, it must point to an empty function.
+
+`CamStartCaptureEx`
+
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md">CamStartCaptureEx</a> callback function. This entry point is required.
+
+`CamStopCaptureEx`
+
+Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_stop_capture_routine_ex.md">CamStopCaptureEx</a> callback function. This entry point is required.
+
+`CamUnInitialize`
+
+Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff557646">CamUnInitialize</a> callback function. This entry point is required.
+
+`Sig`
+
+Reserved. Do not use.
+
+## Remarks
+A camera minidriver passes a USBCAMD_DEVICE_DATA2 structure to USBCAMD as a parameter to USBCAMD service <a href="..\usbcamdi\nf-usbcamdi-usbcamd_initializenewinterface.md">USBCAMD_InitializeNewInterface</a>.
 
 Camera minidrivers that must be backward compatible with the original USBCAMD library must use the <a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data.md">USBCAMD_DEVICE_DATA</a> structure.
 
@@ -125,49 +129,34 @@ Camera minidrivers that must be backward compatible with the original USBCAMD li
 | **Minimum UMDF version** |  |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usbcamdi\nf-usbcamdi-usbcamd_initializenewinterface.md">USBCAMD_InitializeNewInterface</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_initialize_routine.md">CamInitialize</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557646">CamUnInitialize</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_process_packet_routine_ex.md">CamProcessUSBPacketEx</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine_ex.md">CamNewVideoFrameEx</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md">CamStartCaptureEx</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_stop_capture_routine_ex.md">CamStopCaptureEx</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md">CamConfigureEx</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557635">CamSaveState</a>
-</dt>
-<dt>
 <a href="..\usbcamdi\nc-usbcamdi-pcam_state_routine.md">CamRestoreState</a>
-</dt>
-<dt>
-<a href="..\usbcamdi\nc-usbcamdi-pcam_allocate_bw_routine_ex.md">CamAllocateBandwidthEx</a>
-</dt>
-<dt>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_process_packet_routine_ex.md">CamProcessUSBPacketEx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557635">CamSaveState</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557646">CamUnInitialize</a>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_initialize_routine.md">CamInitialize</a>
+
+<a href="..\usbcamdi\nf-usbcamdi-usbcamd_initializenewinterface.md">USBCAMD_InitializeNewInterface</a>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md">CamConfigureEx</a>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine_ex.md">CamNewVideoFrameEx</a>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_stop_capture_routine_ex.md">CamStopCaptureEx</a>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md">CamStartCaptureEx</a>
+
 <a href="..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine_ex.md">CamFreeBandwidthEx</a>
-</dt>
-</dl>
+
+<a href="..\usbcamdi\nc-usbcamdi-pcam_allocate_bw_routine_ex.md">CamAllocateBandwidthEx</a>
+
  
 
  

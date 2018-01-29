@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b5f8073c-9989-4413-842d-e3e295cc3470
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_QUERYVIDPNHWCAPABILITY, DXGKARG_QUERYVIDPNHWCAPABILITY, *INOUT_PDXGKARG_QUERYVIDPNHWCAPABILITY
+ms.keywords : DXGKARG_QUERYVIDPNHWCAPABILITY;typedef __inout DXGKARG_QUERYVIDPNHWCAPABILITY* INOUT_PDXGKARG_QUERYVIDPNHWCAPABILITY structure [Display Devices], display.dxgkarg_queryvidpnhwcapability, DXGKARG_QUERYVIDPNHWCAPABILITY structure [Display Devices], DXGKARG_QUERYVIDPNHWCAPABILITY, d3dkmddi/DXGKARG_QUERYVIDPNHWCAPABILITY, DmStructs_64808a07-769c-4f57-b1c8-84a676f596a3.xml, DXGKARG_QUERYVIDPNHWCAPABILITY;typedef __inout DXGKARG_QUERYVIDPNHWCAPABILITY* INOUT_PDXGKARG_QUERYVIDPNHWCAPABILITY, *INOUT_PDXGKARG_QUERYVIDPNHWCAPABILITY, _DXGKARG_QUERYVIDPNHWCAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_QUERYVIDPNHWCAPABILITY;typedef __inout DXGKARG_QUERYVIDPNHWCAPABILITY* INOUT_PDXGKARG_QUERYVIDPNHWCAPABILITY
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_QUERYVIDPNHWCAPABILITY
 ---
 
@@ -49,25 +53,25 @@ typedef struct _DXGKARG_QUERYVIDPNHWCAPABILITY {
 
 ## Members
 
-        
-            `hFunctionalVidPn`
 
-            [in] A handle to a functional VidPN object for which the hardware capabilities are being queried.
-        
-            `SourceId`
+`hFunctionalVidPn`
 
-            [in] An integer that identifies a video present source on the display adapter.
-        
-            `TargetId`
+[in] A handle to a functional VidPN object for which the hardware capabilities are being queried.
 
-            [in] An integer that identifies a video present target on the display adapter.
-        
-            `VidPnHWCaps`
+`SourceId`
 
-            [out] A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_hw_capability.md">D3DKMDT_VIDPN_HW_CAPABILITY</a> structure that describes the capabilities of the display miniport driver to perform display operations without dedicated GPU hardware support.
+[in] An integer that identifies a video present source on the display adapter.
 
-    ## Remarks
-        The D3DDDI_VIDEO_PRESENT_SOURCE_ID and D3DDDI_VIDEO_PRESENT_TARGET_ID data types are defined in <i>D3dukmdt.h</i>.
+`TargetId`
+
+[in] An integer that identifies a video present target on the display adapter.
+
+`VidPnHWCaps`
+
+[out] A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_hw_capability.md">D3DKMDT_VIDPN_HW_CAPABILITY</a> structure that describes the capabilities of the display miniport driver to perform display operations without dedicated GPU hardware support.
+
+## Remarks
+The D3DDDI_VIDEO_PRESENT_SOURCE_ID and D3DDDI_VIDEO_PRESENT_TARGET_ID data types are defined in <i>D3dukmdt.h</i>.
 
 Video present source identifiers are assigned by the operating system. <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>, implemented by the display miniport driver, returns the number N of video present sources supported by the display adapter. Then the operating system assigns identifiers 0, 1, 2, ... N - 1.
 
@@ -83,34 +87,24 @@ For more information about video present sources and targets, see <a href="https
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_source.md">D3DKMDT_VIDEO_PRESENT_SOURCE</a>
-</dt>
-<dt>
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_target.md">D3DKMDT_VIDEO_PRESENT_TARGET</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_hw_capability.md">D3DKMDT_VIDPN_HW_CAPABILITY</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_source.md">D3DKMDT_VIDEO_PRESENT_SOURCE</a>
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryvidpnhwcapability.md">DxgkDdiQueryVidPnHWCapability</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryvidpnhwcapability.md">DxgkDdiQueryVidPnHWCapability</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
+
  
 
  

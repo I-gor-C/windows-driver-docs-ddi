@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : ffacfd4e-9ceb-477a-8b2f-17d7c590fd81
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcRegisterPhysicalConnectionToExternal
+ms.keywords : audpc-routines_8e03485f-aca9-4e06-981b-fa9593472499.xml, audio.pcregisterphysicalconnectiontoexternal, portcls/PcRegisterPhysicalConnectionToExternal, PcRegisterPhysicalConnectionToExternal, PcRegisterPhysicalConnectionToExternal function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcRegisterP
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcRegisterPhysicalConnectionToExternal
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -103,26 +107,18 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
-</dt>
-<dt>
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iport.md">IPort</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537029">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
+
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
+
  
 
  

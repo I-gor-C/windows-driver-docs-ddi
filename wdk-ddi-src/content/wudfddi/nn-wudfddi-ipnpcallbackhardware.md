@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2746e7ab-690c-4382-be9a-124a7d68cf72
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.ipnpcallbackhardware, IPnpCallbackHardware interface, IPnpCallbackHardware interface, described, IPnpCallbackHardware, wudfddi/IPnpCallbackHardware, UMDFDeviceObjectRef_4b39ad3c-6fa6-4c47-aba8-676a6f628f1b.xml, umdf.ipnpcallbackhardware
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPnpCallbackHardware
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -63,13 +67,10 @@ A driver registers the <b>IPnpCallbackHardware</b> interface when the driver cal
 | **Header** | wudfddi.h (include Wudfddi.h) |
 | **DLL** | WUDFx.dll |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware2.md">IPnpCallbackHardware2</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ED63E47F-B91F-49DC-9CE9-8CFE8F670B16
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestGetEffectiveIoType
+ms.keywords : WdfRequestGetEffectiveIoType method, PFN_WDFREQUESTGETEFFECTIVEIOTYPE, wdfrequest/WdfRequestGetEffectiveIoType, WdfRequestGetEffectiveIoType, wdf.wdfrequestgeteffectiveiotype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestGetEffectiveIoType
-req.alt-loc : WUDFx02000.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : WUDFx02000.lib
 req.dll : WUDFx02000.dll; TBD
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,8 +68,6 @@ A handle to a framework request object.
 
 For more information, see <a href="https://msdn.microsoft.com/BDB78BCD-1964-431B-BE99-CABA6DF44D7A">Managing Buffer Access Methods in UMDF Drivers</a>.
 
-The following code example shows how an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_write.md">EvtIoWrite</a> callback function can determine the buffer access method for the specified write request.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -80,11 +82,8 @@ The following code example shows how an <a href="..\wdfio\nc-wdfio-evt_wdf_io_qu
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
-</dt>
-</dl>
+
  
 
  

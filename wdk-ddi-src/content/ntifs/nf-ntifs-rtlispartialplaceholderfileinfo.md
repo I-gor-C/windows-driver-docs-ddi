@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : B84CC8C1-639D-45B4-A2A4-03BA2F1FF04B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsPartialPlaceholderFileInfo
+ms.keywords : ntifs/RtlIsPartialPlaceholderFileInfo, RtlIsPartialPlaceholderFileInfo, RtlIsPartialPlaceholderFileInfo routine [Installable File System Drivers], ifsk.rtlispartialplaceholderfileinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIsPartialPlaceholderFileInfo
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -91,11 +95,8 @@ If <b>InfoBuffer</b> is from a call
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlispartialplaceholder.md">RtlIsPartialPlaceholder</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : B9CDFB62-32CF-497A-BF0F-1E4FBCA36E82
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IRB_REQ_ISOCH_QUERY_RESOURCES, IRB_REQ_ISOCH_QUERY_RESOURCES
+ms.keywords : _IRB_REQ_ISOCH_QUERY_RESOURCES, IEEE.irb_req_isoch_query_resources, 1394/IRB_REQ_ISOCH_QUERY_RESOURCES, IRB_REQ_ISOCH_QUERY_RESOURCES, IRB_REQ_ISOCH_QUERY_RESOURCES structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRB_REQ_ISOCH_QUERY_RESOURCES
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IRB_REQ_ISOCH_QUERY_RESOURCES
 ---
 
@@ -48,21 +52,20 @@ typedef struct _IRB_REQ_ISOCH_QUERY_RESOURCES {
 
 ## Members
 
-        
-            `BytesPerFrameAvailable`
 
-            On success, specifies the returned available bandwidth as expressed in bytes per isochronous frame.
-        
-            `ChannelsAvailable`
+`BytesPerFrameAvailable`
 
-            On success, points to a bitmap of available channels.
+On success, specifies the returned available bandwidth as expressed in bytes per isochronous frame.
+
+`ChannelsAvailable`
+
+On success, points to a bitmap of available channels.
 
  The highest order bit (bit 63) specifies channel 0, the next bit (bit 62) specifies channel 1, and so on.
-        
-            `fulSpeed`
 
-            Specifies the speed flag to use in allocating bandwidth. The possible speed values are SPEED_FLAGS_xxx, where xxx is the approximate transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 MBps.
+`fulSpeed`
 
+Specifies the speed flag to use in allocating bandwidth. The possible speed values are SPEED_FLAGS_xxx, where xxx is the approximate transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 MBps.
 <table>
 <tr>
 <th>Transfer Rate</th>

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e498a907-8d20-4d00-9411-8e82030af223
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinRegisterPowerCallbacks
+ms.keywords : KsPinRegisterPowerCallbacks function [Streaming Media Devices], ks/KsPinRegisterPowerCallbacks, KsPinRegisterPowerCallbacks, avfunc_2e133cdb-6afa-47a7-8d3b-8293b63428b5.xml, stream.kspinregisterpowercallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinRegisterPowerCallbacks
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -69,7 +73,7 @@ None
 
 ## Remarks
 
-At least one of the callbacks must be specified when calling <b>KsPinRegisterPowerCallbacks</b>.
+<div class="alert"><b>Warning</b>  <i>Do not attempt to obtain the filter control mutex</i> from within either the Sleep or Wake callback, or deadlock may occur. For more information about mutexes, read <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.</div><div> </div>At least one of the callbacks must be specified when calling <b>KsPinRegisterPowerCallbacks</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,14 +89,10 @@ At least one of the callbacks must be specified when calling <b>KsPinRegisterPow
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>
-</dt>
-</dl>
+
  
 
  

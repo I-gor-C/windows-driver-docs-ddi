@@ -7,8 +7,8 @@ old-location : debugger\getprocessidbydataoffset.htm
 old-project : debugger
 ms.assetid : a2c094f4-f54d-4c3c-95e7-75df717db8cc
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::GetProcessIdByDataOffset, GetProcessIdByDataOffset
+ms.date : 1/19/2018
+ms.keywords : debugger.getprocessidbydataoffset, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects3::GetProcessIdByDataOffset, IDebugSystemObjects interface [Windows Debugging], GetProcessIdByDataOffset method, dbgeng/IDebugSystemObjects4::GetProcessIdByDataOffset, IDebugSystemObjects3::GetProcessIdByDataOffset, IDebugSystemObjects4::GetProcessIdByDataOffset, IDebugSystemObjects4 interface [Windows Debugging], GetProcessIdByDataOffset method, IDebugSystemObjects2::GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects interface, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects::GetProcessIdByDataOffset, dbgeng/IDebugSystemObjects2::GetProcessIdByDataOffset, IDebugSystemObjects4, IDebugSystemObjects_8c7f276b-9a12-41ac-8c56-4e37b68d491d.xml, GetProcessIdByDataOffset method [Windows Debugging], dbgeng/IDebugSystemObjects::GetProcessIdByDataOffset, IDebugSystemObjects3 interface [Windows Debugging], GetProcessIdByDataOffset method, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, GetProcessIdByDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetProcessIdByDataOffset method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSystemObjects.GetProcessIdByDataOffset,IDebugSystemObjects2.GetProcessIdByDataOffset,IDebugSystemObjects3.GetProcessIdByDataOffset,IDebugSystemObjects4.GetProcessIdByDataOffset
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -61,12 +65,34 @@ Receives the engine process ID for the process.
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_NOTIMPL</b></dt>
-</dl>The current target is a kernel-mode target.  This method is currently not available in kernel-mode debugging.
+</dl>
+</td>
+<td width="60%">
+The current target is a kernel-mode target.  This method is currently not available in kernel-mode debugging.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -74,7 +100,7 @@ This method is currently not available in kernel-mode debugging.
 
 In user-mode debugging, this method behaves the same as <a href="https://msdn.microsoft.com/library/windows/hardware/ff548150">GetProcessIdByPeb</a>.
 
-For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
+For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 46E892A7-2813-4C50-BE91-B5267696E2A5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _XVARIABLE_NAME_AND_VALUE, *PXVARIABLE_NAME_AND_VALUE, XVARIABLE_NAME_AND_VALUE, SYSENV_VARIABLE_AND_VALUE, *PSYSENV_VARIABLE_AND_VALUE
+ms.keywords : PXVARIABLE_NAME_AND_VALUE structure pointer [Kernel-Mode Driver Architecture], *PXVARIABLE_NAME_AND_VALUE, XVARIABLE_NAME_AND_VALUE structure [Kernel-Mode Driver Architecture], *PSYSENV_VARIABLE_AND_VALUE, ntddsysenv/XVARIABLE_NAME_AND_VALUE, _XVARIABLE_NAME_AND_VALUE, SYSENV_VARIABLE_AND_VALUE, ntddsysenv/PXVARIABLE_NAME_AND_VALUE, XVARIABLE_NAME_AND_VALUE, PXVARIABLE_NAME_AND_VALUE, kernel.xvariable_name_and_value
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : XVARIABLE_NAME_AND_VALUE
-req.alt-loc : Ntddsysenv.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PXVARIABLE_NAME_AND_VALUE, XVARIABLE_NAME_AND_VALUE"
 ---
 
@@ -52,26 +56,30 @@ typedef struct _XVARIABLE_NAME_AND_VALUE {
 
 ## Members
 
-        
-            `Attributes`
 
-            Attributes of the system environment variable.
-        
-            `Name`
+`Attributes`
 
-            Name of the system environment variable.
-        
-            `ValueLength`
+Attributes of the system environment variable.
 
-            The length of the value.
-        
-            `ValueOffset`
+`Name`
 
-            The value of the system environment variable.
-        
-            `VendorGuid`
+Name of the system environment variable.
 
-            The vendor GUID.
+`NextEntryOffset`
+
+The location of the next entry in the array of XVARIABLE_NAME structures reprieved by the  <a href="..\ntddsysenv\ni-ntddsysenv-ioctl_sysenv_enum_variables.md">IOCTL_SYSENV_ENUM_VARIABLES</a> request.
+
+`ValueLength`
+
+The length of the value.
+
+`ValueOffset`
+
+The value of the system environment variable.
+
+`VendorGuid`
+
+The vendor GUID.
 
 
 ## Requirements
@@ -82,16 +90,12 @@ typedef struct _XVARIABLE_NAME_AND_VALUE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddsysenv.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddsysenv\ni-ntddsysenv-ioctl_sysenv_enum_variables.md">IOCTL_SYSENV_ENUM_VARIABLES</a>
-</dt>
-<dt>
+
 <a href="..\ntddsysenv\ni-ntddsysenv-ioctl_sysenv_set_variable.md">IOCTL_SYSENV_SET_VARIABLE</a>
-</dt>
-</dl>
+
  
 
  

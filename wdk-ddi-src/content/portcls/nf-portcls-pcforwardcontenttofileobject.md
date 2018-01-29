@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3cad8e61-e016-415a-9aa9-1169267dc729
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcForwardContentToFileObject
+ms.keywords : audpc-routines_2560382f-57c9-4d3c-9ba0-330374e18663.xml, portcls/PcForwardContentToFileObject, PcForwardContentToFileObject, PcForwardContentToFileObject function [Audio Devices], audio.pcforwardcontenttofileobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcForwardCo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcForwardContentToFileObject
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -48,18 +52,14 @@ PORTCLASSAPI NTSTATUS NTAPI  PcForwardContentToFileObject(void);
 
 `ContentId`
 
-
+TBD
 
 `FileObject`
 
-
+TBD
 
 
 ## Return Value
-
-See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>.
-
-See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>.
 
 See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>.
 
@@ -81,11 +81,8 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmforwardcon
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
-</dt>
-</dl>
+
  
 
  

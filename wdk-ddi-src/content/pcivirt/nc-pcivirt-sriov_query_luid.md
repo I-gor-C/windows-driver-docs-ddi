@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 9bb8e54f-b42a-4f61-a3f5-6972141c8f28
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.keywords : PCI.sriov_query_luid, SriovQueryLuid callback function [Buses], SriovQueryLuid, SRIOV_QUERY_LUID, SRIOV_QUERY_LUID, pcivirt/SriovQueryLuid, *PSRIOV_QUERY_LUID callback function pointer [Buses], *PSRIOV_QUERY_LUID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : "*PSRIOV_QUERY_LUID"
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
@@ -72,7 +76,34 @@ This callback function is implemented by the physical function (PF) driver. It i
 
 The PF driver registers its implementation by setting the <b>QueryLuid</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
-Here is an example implementation of this callback function. The PF driver generates a unique identifier by calling <a href="..\ntddk\nf-ntddk-zwallocatelocallyuniqueid.md">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
+Here is an example implementation of this callback function. The PF driver generates a unique identifier by calling <a href="..\ntddk\nf-ntddk-zwallocatelocallyuniqueid.md">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. 
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>
+NTSTATUS
+Virtualization_QueryLuid (
+    _In_        PVOID             Context,
+    _Out_       PLUID             Luid
+    )
+{
+    PDEVICE_CONTEXT deviceContext;
+
+    PAGED_CODE();
+
+    deviceContext = (PDEVICE_CONTEXT)Context;
+    *Luid = deviceContext-&gt;Luid;
+
+    return STATUS_SUCCESS;
+}
+
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fdfcb8bc-bc42-4c34-ae19-b40401bea41e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaEnablerSetMaximumScatterGatherElements
+ms.keywords : WdfDmaEnablerSetMaximumScatterGatherElements, WdfDmaEnablerSetMaximumScatterGatherElements method, DFDmaObjectRef_d9f2c46d-5981-4997-96b6-5a9db0dbfd8d.xml, wdfdmaenabler/WdfDmaEnablerSetMaximumScatterGatherElements, PFN_WDFDMAENABLERSETMAXIMUMSCATTERGATHERELEMENTS, kmdf.wdfdmaenablersetmaximumscattergatherelements, wdf.wdfdmaenablersetmaximumscattergatherelements
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDmaEnablerSetMaximumScatterGatherElements
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_PROFILE
 req.product : Windows 10 or later.
 ---
@@ -75,8 +79,6 @@ If your driver does not call <b>WdfDmaEnablerSetMaximumScatterGatherElements</b>
 
 For more information about this method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enabling-dma-transactions">Enabling DMA Transactions</a>.
 
-The following code example sets the maximum number of scatter/gather elements for a specified DMA enabler object.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,14 +93,10 @@ The following code example sets the maximum number of scatter/gather elements fo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-</dt>
-<dt>
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablergetmaximumscattergatherelements.md">WdfDmaEnablerGetMaximumScatterGatherElements</a>
-</dt>
-</dl>
+
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
+
  
 
  

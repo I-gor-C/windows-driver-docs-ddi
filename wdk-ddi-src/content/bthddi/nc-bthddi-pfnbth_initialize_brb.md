@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 0b822d28-edaa-40cc-a678-112a356d9022
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.keywords : bltooth.bthinitializebrb, BthInitializeBrb callback function [Bluetooth Devices], BthInitializeBrb, PFNBTH_INITIALIZE_BRB, PFNBTH_INITIALIZE_BRB, bthddi/BthInitializeBrb, bth_funcs_11ec7e91-bfca-404f-a029-a3fbb8c56d47.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BthInitializeBrb
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
@@ -81,8 +85,8 @@ It is not necessary to call this function for a BRB that was allocated using
 Profile drivers obtain a pointer to the 
     <i>BthInitializeBrb</i> function when they query the Bluetooth driver stack for an instance of the
     BTHDDI_PROFILE_DRIVER_INTERFACE driver interface. See 
-    <a href="https://msdn.microsoft.com/56db29cd-26ab-4262-9b9f-40d46372ffe9">Querying for Bluetooth
-    Interfaces</a> for more information about querying the Bluetooth driver stack.
+    <mshelp:link keywords="bltooth.querying_for_bluetooth_interfaces" tabindex="0">Querying for Bluetooth
+    Interfaces</mshelp:link> for more information about querying the Bluetooth driver stack.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,14 +102,10 @@ Profile drivers obtain a pointer to the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
-</dt>
-</dl>
+
  
 
  

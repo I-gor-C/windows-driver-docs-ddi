@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4aaef251-7387-4e42-a7ae-e08120fc95ff
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRemoteTarget, IWDFRemoteTarget::Stop, Stop
+ms.keywords : Stop method, IWDFRemoteTarget::Stop, wudfddi/IWDFRemoteTarget::Stop, UMDFIoTargetObjectRef_a7d1be6f-890c-4e06-9544-7bd18876b56e.xml, umdf.iwdfremotetarget_stop, Stop, wdf.iwdfremotetarget_stop, IWDFRemoteTarget, IWDFRemoteTarget interface, Stop method, Stop method, IWDFRemoteTarget interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFRemoteTarget.Stop
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ If your driver can detect recoverable errors on a remote I/O target, you might w
 
 For more information about <b>Stop</b>, and how to use remote I/O targets in UMDF-based drivers, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>.
 
-The following code example stops a remote I/O target.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,14 +84,10 @@ The following code example stops a remote I/O target.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560280">IWDFRemoteTarget::Start</a>
-</dt>
-</dl>
+
  
 
  

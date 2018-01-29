@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 5c4bf4c0-c36f-4779-a012-6364c94f37a1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_PMCSR, *PPCI_PMCSR, PCI_PMCSR
+ms.keywords : PCI_PMCSR structure [Buses], PCI_PMCSR, *PPCI_PMCSR, PPCI_PMCSR, PPCI_PMCSR structure pointer [Buses], wdm/PPCI_PMCSR, PCI.pci_pmcsr, pci_struct_03c3c722-9aa9-4fff-a50e-4499122d7490.xml, _PCI_PMCSR, wdm/PCI_PMCSR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_PMCSR
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPCI_PMCSR, PCI_PMCSR"
 req.product : Windows 10 or later.
 ---
@@ -52,27 +56,30 @@ typedef struct _PCI_PMCSR {
 
 ## Members
 
-        
-            `DataScale`
 
-            Indicates the scaling factor used to interpret the value of the data register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>.
-        
-            `DataSelect`
+`DataScale`
 
-            Indicates which data is to be reported through the data register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>.
-        
-            `PMEEnable`
+Indicates the scaling factor used to interpret the value of the data register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>.
 
-            Indicates, when 1, that the device is enabled to assert the PME signal. When 0, the device is not enabled to assert the PME signal. For more information about the meaning of the PME Enable bit, see the <i>PCI Power Management Specification</i>.
-        
-            `PMEStatus`
+`DataSelect`
 
-            Contains a one-bit value (either 0 or 1) that reports the value of the PMEStatus bit in the power management register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>.
-        
-            `PowerState`
+Indicates which data is to be reported through the data register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>.
 
-            Indicates the power state of the device. This member can have the following values:
+`NoSoftReset`
 
+
+
+`PMEEnable`
+
+Indicates, when 1, that the device is enabled to assert the PME signal. When 0, the device is not enabled to assert the PME signal. For more information about the meaning of the PME Enable bit, see the <i>PCI Power Management Specification</i>.
+
+`PMEStatus`
+
+Contains a one-bit value (either 0 or 1) that reports the value of the PMEStatus bit in the power management register. For more information about the values that this member can hold, see the <i>PCI Power Management Specification</i>.
+
+`PowerState`
+
+Indicates the power state of the device. This member can have the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -118,14 +125,17 @@ Indicates that the device is in D3.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about the power state register, see the <i>PCI Power Management Specification</i>.
-        
-            `Rsvd1`
 
-            Reserved.
+`Rsvd1`
+
+Reserved.
+
+`Rsvd2`
+
+
 
 
 ## Requirements
@@ -136,13 +146,10 @@ For more information about the power state register, see the <i>PCI Power Manage
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537588">PCI_PM_CAPABILITY</a>
-</dt>
-</dl>
+
  
 
  

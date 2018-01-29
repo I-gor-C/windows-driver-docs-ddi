@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 28e3992e-a636-47e2-a5a6-5da06d276b5c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setlight, SetLight callback function [Display Devices], SetLight, PFND3DDDI_SETLIGHT, PFND3DDDI_SETLIGHT, d3dumddi/SetLight, UserModeDisplayDriver_Functions_82c42629-2344-4778-aaf4-e41acac4cfce.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetLight
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -88,17 +92,12 @@ Light properties describe the type and color of a light source. Depending on the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setlight.md">D3DDDIARG_SETLIGHT</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_light.md">D3DDDI_LIGHT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_light.md">D3DDDI_LIGHT</a>
+
  
 
  

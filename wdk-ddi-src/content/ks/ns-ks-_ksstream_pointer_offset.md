@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ccbe77ee-2377-45d9-b8bf-714680c1920a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSSTREAM_POINTER_OFFSET, *PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET
+ms.keywords : KSSTREAM_POINTER_OFFSET, stream.ksstream_pointer_offset, ks/PKSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET structure [Streaming Media Devices], _KSSTREAM_POINTER_OFFSET, ks/KSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET structure pointer [Streaming Media Devices], avstruct_e210364b-520e-4d21-98ea-e22f5468e911.xml, *PKSSTREAM_POINTER_OFFSET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSSTREAM_POINTER_OFFSET
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSSTREAM_POINTER_OFFSET, *PKSSTREAM_POINTER_OFFSET
 ---
 
 # _KSSTREAM_POINTER_OFFSET structure
@@ -52,8 +56,8 @@ typedef struct _KSSTREAM_POINTER_OFFSET {
 ## Members
 
 
-    ## Remarks
-        See also <a href="https://msdn.microsoft.com/ba1c525b-26b0-4778-b58b-f4169cfb972e">AVStream DMA Services</a>.
+## Remarks
+See also <a href="https://msdn.microsoft.com/ba1c525b-26b0-4778-b58b-f4169cfb972e">AVStream DMA Services</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -63,16 +67,12 @@ typedef struct _KSSTREAM_POINTER_OFFSET {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksmapping.md">KSMAPPING</a>
-</dt>
-</dl>
+
  
 
  

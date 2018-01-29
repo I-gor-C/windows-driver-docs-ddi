@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 16c7b4bd-efc9-4cce-8677-8046038d1c76
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SEGMENTSIZEINFO, D3DKMT_SEGMENTSIZEINFO
+ms.keywords : D3DKMT_SEGMENTSIZEINFO structure [Display Devices], d3dkmthk/D3DKMT_SEGMENTSIZEINFO, OpenGL_Structs_bdb19184-37f0-4341-b8bb-41011f6cb6b3.xml, D3DKMT_SEGMENTSIZEINFO, _D3DKMT_SEGMENTSIZEINFO, display.d3dkmt_segmentsizeinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SEGMENTSIZEINFO
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SEGMENTSIZEINFO
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_SEGMENTSIZEINFO {
 
 ## Members
 
-        
-            `DedicatedSystemMemorySize`
 
-            [out] The size, in bytes, of memory that is dedicated from system memory.
-        
-            `DedicatedVideoMemorySize`
+`DedicatedSystemMemorySize`
 
-            [out] The size, in bytes, of memory that is dedicated from video memory.
-        
-            `SharedSystemMemorySize`
+[out] The size, in bytes, of memory that is dedicated from system memory.
 
-            [out] The size, in bytes, of memory from system memory that can be shared by many users.
+`DedicatedVideoMemorySize`
+
+[out] The size, in bytes, of memory that is dedicated from video memory.
+
+`SharedSystemMemorySize`
+
+[out] The size, in bytes, of memory from system memory that can be shared by many users.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DKMT_SEGMENTSIZEINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
  
 
  

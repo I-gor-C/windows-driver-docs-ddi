@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2266e816-2060-4071-bf9f-319daefbfc50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION, *PREG_POST_OPERATION_INFORMATION
+ms.keywords : kstruct_d_70ca0f06-65d5-4b1b-ab66-cc44361d4e5a.xml, *PREG_POST_OPERATION_INFORMATION, PREG_POST_OPERATION_INFORMATION, wdm/REG_POST_OPERATION_INFORMATION, PREG_POST_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PREG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_post_operation_information, _REG_POST_OPERATION_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows Server 2003 and later
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_POST_OPERATION_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : REG_POST_OPERATION_INFORMATION, *PREG_POST_OPERATION_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PREG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -53,37 +57,37 @@ typedef struct _REG_POST_OPERATION_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Object`
+`CallContext`
 
-            A pointer to the registry key object for which the operation has completed. This member is valid only if the Status member of the structure is set to STATUS_SUCCESS. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=613134">Invalid Key Object Pointers in Registry Notifications</a>.
-        
-            `ObjectContext`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
 
-            A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `PreInformation`
+`Object`
 
-            A pointer to the structure that contains preprocessing information for the registry operation that has completed. For example, if the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine is processing a <b>RegNtPostQueryValueKey</b> operation, the <b>PreInformation</b> member points to a <a href="..\wdm\ns-wdm-_reg_query_value_key_information.md">REG_QUERY_VALUE_KEY_INFORMATION</a> structure. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Reserved`
+A pointer to the registry key object for which the operation has completed. This member is valid only if the Status member of the structure is set to STATUS_SUCCESS. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=613134">Invalid Key Object Pointers in Registry Notifications</a>.
 
-            This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `ReturnStatus`
+`ObjectContext`
 
-            A driver-supplied NTSTATUS-typed value. If the driver's <i>RegistryCallback</i> routine returns STATUS_CALLBACK_BYPASS, the operating system uses the <b>ReturnStatus</b> member's value as the status that it returns to the thread that initiated the registry operation. (In such cases, the operating system also copies the <b>ReturnStatus</b> member's value to the <b>Status</b> member.) Otherwise, this member is ignored. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Status`
+A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
 
-            The NTSTATUS-typed value that the system will return for the registry operation.
+`PreInformation`
 
-    ## Remarks
-        For more information about handling post-notifications, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546907">Handling Notifications</a>.
+A pointer to the structure that contains preprocessing information for the registry operation that has completed. For example, if the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine is processing a <b>RegNtPostQueryValueKey</b> operation, the <b>PreInformation</b> member points to a <a href="..\wdm\ns-wdm-_reg_query_value_key_information.md">REG_QUERY_VALUE_KEY_INFORMATION</a> structure. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`Reserved`
+
+This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`ReturnStatus`
+
+A driver-supplied NTSTATUS-typed value. If the driver's <i>RegistryCallback</i> routine returns STATUS_CALLBACK_BYPASS, the operating system uses the <b>ReturnStatus</b> member's value as the status that it returns to the thread that initiated the registry operation. (In such cases, the operating system also copies the <b>ReturnStatus</b> member's value to the <b>Status</b> member.) Otherwise, this member is ignored. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`Status`
+
+The NTSTATUS-typed value that the system will return for the registry operation.
+
+## Remarks
+For more information about handling post-notifications, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546907">Handling Notifications</a>.
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
@@ -95,19 +99,14 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_reg_query_value_key_information.md">REG_QUERY_VALUE_KEY_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
  
 
  

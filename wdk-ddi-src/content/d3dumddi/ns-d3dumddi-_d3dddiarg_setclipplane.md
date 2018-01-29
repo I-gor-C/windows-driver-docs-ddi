@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 94e942a4-de66-47a3-89bf-fbec2a408775
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETCLIPPLANE, D3DDDIARG_SETCLIPPLANE
+ms.keywords : D3DDDIARG_SETCLIPPLANE structure [Display Devices], display.d3dddiarg_setclipplane, _D3DDDIARG_SETCLIPPLANE, UMDisplayDriver_param_Structs_3371265a-3cb5-4aee-b019-14ef454e9d6d.xml, d3dumddi/D3DDDIARG_SETCLIPPLANE, D3DDDIARG_SETCLIPPLANE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETCLIPPLANE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETCLIPPLANE
 ---
 
@@ -47,17 +51,17 @@ typedef struct _D3DDDIARG_SETCLIPPLANE {
 
 ## Members
 
-        
-            `Index`
 
-            [in] The index of the clipping plane for which the plane equation coefficients are set.
-        
-            `Plane`
+`Index`
 
-            [in] A four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane.
+[in] The index of the clipping plane for which the plane equation coefficients are set.
 
-    ## Remarks
-        The general plane equation in standard form is A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> = 0. A point with homogeneous coordinates (<i>x</i>, <i>y</i>, <i>z</i>, <i>w</i>) is visible in the half-space of this plane if A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> &gt;= 0. Points that exist on or behind the clipping plane are clipped from the scene. That is, points for which A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> &lt; 0 are clipped.
+`Plane`
+
+[in] A four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane.
+
+## Remarks
+The general plane equation in standard form is A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> = 0. A point with homogeneous coordinates (<i>x</i>, <i>y</i>, <i>z</i>, <i>w</i>) is visible in the half-space of this plane if A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> &gt;= 0. Points that exist on or behind the clipping plane are clipped from the scene. That is, points for which A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> &lt; 0 are clipped.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _D3DDDIARG_SETCLIPPLANE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setclipplane.md">SetClipPlane</a>
-</dt>
-</dl>
+
  
 
  

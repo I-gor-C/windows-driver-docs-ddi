@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5efe0ede-b55f-499e-9f95-66652cd8a872
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes
+ms.keywords : storage.msfc_fcadapterhbaattributes, PMSFC_FCAdapterHBAAttributes structure pointer [Storage Devices], hbapiwmi/MSFC_FCAdapterHBAAttributes, _MSFC_FCAdapterHBAAttributes, PMSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes structure [Storage Devices], MSFC_FCAdapterHBAAttributes, hbapiwmi/PMSFC_FCAdapterHBAAttributes, structs-Fibre_07d902b9-2da0-4bca-94ab-db837beff481.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSFC_FCAdapterHBAAttributes
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes"
 ---
 
@@ -61,70 +65,70 @@ typedef struct _MSFC_FCAdapterHBAAttributes {
 
 ## Members
 
-        
-            `DriverName`
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
-        
-            `DriverVersion`
+`DriverName`
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
-        
-            `FirmwareVersion`
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
-        
-            `HardwareVersion`
+`DriverVersion`
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
-        
-            `HBAStatus`
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `Manufacturer`
+`FirmwareVersion`
 
-            Contains an ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
-        
-            `MfgDomain`
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
 
-            Contains the name of the HBA manufacturer.
-        
-            `Model`
+`HardwareVersion`
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.
-        
-            `ModelDescription`
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that indicates the model description.
-        
-            `NodeSymbolicName`
+`HBAStatus`
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
-        
-            `NodeWWN`
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
-            Contains the 64 bit world-wide name that indicates the node name of the HBA. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
-        
-            `NumberOfPorts`
+`Manufacturer`
 
-            Indicates the number of ports on the HBA.
-        
-            `OptionROMVersion`
+Contains an ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
 
-            Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
-        
-            `SerialNumber`
+`MfgDomain`
 
-            Contains an ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
-        
-            `UniqueAdapterId`
+Contains the name of the HBA manufacturer.
 
-            Indicates the unique adapter ID.
-        
-            `VendorSpecificID`
+`Model`
 
-            Indicates a vendor-specific ID.
+Contains an ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.
+
+`ModelDescription`
+
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the model description.
+
+`NodeSymbolicName`
+
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
+
+`NodeWWN`
+
+Contains the 64 bit world-wide name that indicates the node name of the HBA. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+
+`NumberOfPorts`
+
+Indicates the number of ports on the HBA.
+
+`OptionROMVersion`
+
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
+
+`SerialNumber`
+
+Contains an ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
+
+`UniqueAdapterId`
+
+Indicates the unique adapter ID.
+
+`VendorSpecificID`
+
+Indicates a vendor-specific ID.
 
 
 ## Requirements
@@ -135,16 +139,12 @@ typedef struct _MSFC_FCAdapterHBAAttributes {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562497">MSFC_FCAdapterHBAAttributes WMI Class</a>
-</dt>
-</dl>
+
  
 
  

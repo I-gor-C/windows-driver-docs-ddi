@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 35eb22aa-3158-48ad-a20c-909604f9b4b1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
+ms.keywords : buses.evt_ucx_roothub_get_30port_info, EvtUcxRootHubGet30PortInfo callback function [Buses], EvtUcxRootHubGet30PortInfo, EVT_UCX_ROOTHUB_GET_30PORT_INFO, EVT_UCX_ROOTHUB_GET_30PORT_INFO, ucxroothub/EvtUcxRootHubGet30PortInfo, PEVT_UCX_ROOTHUB_GET_30PORT_INFO callback function pointer [Buses], PEVT_UCX_ROOTHUB_GET_30PORT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_ROOTHUB_GET_30PORT_INFO
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
 req.product : Windows 10 or later.
 ---
@@ -91,11 +95,8 @@ The client driver returns completion status in <i>Request</i> and in the USBD_ST
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxroothub\ns-ucxroothub-_roothub_30port_info.md">_ROOTHUB_30PORT_INFO</a>
-</dt>
-</dl>
+
  
 
  

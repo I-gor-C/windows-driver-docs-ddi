@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 0CD692E2-B2D6-4786-8C0B-C0DCAFCF6259
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbRequestGetController
+ms.keywords : SpbRequestGetController, spbcx/SpbRequestGetController, SPB.spbrequestgetcontroller, SpbRequestGetController method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpbRequestGetController
-req.alt-loc : spbcxstubs.lib,spbcxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Spbcxstubs.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -73,11 +77,8 @@ The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
-</dt>
-</dl>
+
  
 
  

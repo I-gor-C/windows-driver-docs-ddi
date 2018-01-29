@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 10d1889b-d79c-4c06-a012-77414c88ce17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoSetTopLevelIrp
+ms.keywords : IoSetTopLevelIrp routine [Installable File System Drivers], ifsk.iosettoplevelirp, IoSetTopLevelIrp, ioref_1c046677-97df-4f46-956c-108a203f83f2.xml, ntifs/IoSetTopLevelIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetTopLevelIrp
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -77,11 +81,8 @@ Only file systems can call <b>IoSetTopLevelIrp</b>. File system filters and mini
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>
-</dt>
-</dl>
+
  
 
  

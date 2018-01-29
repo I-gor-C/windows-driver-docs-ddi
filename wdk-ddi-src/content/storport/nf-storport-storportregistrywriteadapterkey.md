@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : D995FB36-177A-44BF-9326-EB2820DB0962
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortRegistryWriteAdapterKey
+ms.keywords : storage.storportregistrywriteadapterkey, storport/StorPortRegistryWriteAdapterKey, StorPortRegistryWriteAdapterKey, StorPortRegistryWriteAdapterKey routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortRegistryWriteAdapterKey
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,6 @@ The name of the Value under the key.
 `ValueType`
 
 One of the following registry data types.
-
 <table>
 <tr>
 <th>Type</th>
@@ -235,11 +238,8 @@ Returns STOR_STATUS_SUCCESS when the operation is successful, otherwise the appr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-</dt>
-</dl>
+
  
 
  

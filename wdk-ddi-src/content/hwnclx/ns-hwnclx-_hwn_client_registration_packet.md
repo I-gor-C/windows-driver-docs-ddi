@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : bf8ac72b-c3d6-4965-a1e9-2408d2fa2196
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET
+ms.keywords : hwnclx/HWN_CLIENT_REGISTRATION_PACKET, gpiobtn._hwn_client_registration_packet, HWN_CLIENT_REGISTRATION_PACKET, _HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET structure, *PHWN_CLIENT_REGISTRATION_PACKET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HWN_CLIENT_REGISTRATION_PACKET
-req.alt-loc : Hwnclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET"
 ---
 
@@ -58,50 +62,50 @@ typedef struct _HWN_CLIENT_REGISTRATION_PACKET {
 
 ## Members
 
-        
-            `ClientGetHwNState`
 
-            A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_get_state.md">HWN_CLIENT_GET_STATE</a> callback function.
-        
-            `ClientInitializeDevice`
+`ClientGetHwNState`
 
-            A pointer to the client driver's implementation of the <a href="..\hwnclx\nc-hwnclx-hwn_client_initialize_device.md">HWN_CLIENT_INITIALIZE_DEVICE</a> callback function.
-        
-            `ClientQueryDeviceInformation`
+A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_get_state.md">HWN_CLIENT_GET_STATE</a> callback function.
 
-            A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_query_device_information.md">HWN_CLIENT_QUERY_DEVICE_INFORMATION</a> callback function.
-        
-            `ClientSetHwNState`
+`ClientInitializeDevice`
 
-            A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_set_state.md">HWN_CLIENT_SET_STATE</a> callback function.
-        
-            `ClientStartDevice`
+A pointer to the client driver's implementation of the <a href="..\hwnclx\nc-hwnclx-hwn_client_initialize_device.md">HWN_CLIENT_INITIALIZE_DEVICE</a> callback function.
 
-            A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_start_device.md">HWN_CLIENT_START_DEVICE</a> callback function.
-        
-            `ClientStopDevice`
+`ClientQueryDeviceInformation`
 
-            A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_stop_device.md">HWN_CLIENT_STOP_DEVICE</a> callback function.
-        
-            `ClientUnInitializeDevice`
+A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_query_device_information.md">HWN_CLIENT_QUERY_DEVICE_INFORMATION</a> callback function.
 
-            A pointer to the client driver's implementation of the <a href="..\hwnclx\nc-hwnclx-hwn_client_uninitialize_device.md">HWN_CLIENT_UNINITIALIZE_DEVICE</a> callback function.
-        
-            `DeviceContextSize`
+`ClientSetHwNState`
 
-            Size of the driver-defined context structure.
-        
-            `Reserved`
+A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_set_state.md">HWN_CLIENT_SET_STATE</a> callback function.
 
-            Reseved.
-        
-            `Size`
+`ClientStartDevice`
 
-            Size of this structure.
-        
-            `Version`
+A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_start_device.md">HWN_CLIENT_START_DEVICE</a> callback function.
 
-            Version of this structure.
+`ClientStopDevice`
+
+A pointer to the client driver's implementation of the  <a href="..\hwnclx\nc-hwnclx-hwn_client_stop_device.md">HWN_CLIENT_STOP_DEVICE</a> callback function.
+
+`ClientUnInitializeDevice`
+
+A pointer to the client driver's implementation of the <a href="..\hwnclx\nc-hwnclx-hwn_client_uninitialize_device.md">HWN_CLIENT_UNINITIALIZE_DEVICE</a> callback function.
+
+`DeviceContextSize`
+
+Size of the driver-defined context structure.
+
+`Reserved`
+
+Reseved.
+
+`Size`
+
+Size of this structure.
+
+`Version`
+
+Version of this structure.
 
 
 ## Requirements
@@ -112,14 +116,12 @@ typedef struct _HWN_CLIENT_REGISTRATION_PACKET {
 | **Minimum UMDF version** |  |
 | **Header** | hwnclx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
-<dt>
 <a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 012c3178-f3a0-449b-b4a2-91fff4af1a17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_DIRECTORY_INFORMATION, FILE_DIRECTORY_INFORMATION, *PFILE_DIRECTORY_INFORMATION
+ms.keywords : PFILE_DIRECTORY_INFORMATION structure pointer [Installable File System Drivers], FILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION, _FILE_DIRECTORY_INFORMATION, *PFILE_DIRECTORY_INFORMATION, FILE_DIRECTORY_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_DIRECTORY_INFORMATION, ifsk.file_directory_information, ntifs/FILE_DIRECTORY_INFORMATION, fileinformationstructures_4ff53e27-9b59-46f0-8ca8-b4e1fb3e3905.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_DIRECTORY_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : FILE_DIRECTORY_INFORMATION, *PFILE_DIRECTORY_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFILE_DIRECTORY_INFORMATION, FILE_DIRECTORY_INFORMATION"
 ---
 
 # _FILE_DIRECTORY_INFORMATION structure
@@ -56,71 +60,63 @@ typedef struct _FILE_DIRECTORY_INFORMATION {
 
 ## Members
 
-        
-            `AllocationSize`
 
-            File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
-        
-            `ChangeTime`
+`AllocationSize`
 
-            Last time the file was changed.
-        
-            `CreationTime`
+File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
 
-            Time when the file was created.
-        
-            `EndOfFile`
+`ChangeTime`
 
-            Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
-        
-            `FileAttributes`
+Last time the file was changed.
 
-            File attributes, which can be any valid combination of the following:
-	  	
+`CreationTime`
 
-<dl>
-<dd>FILE_ATTRIBUTE_READONLY</dd>
-<dd>FILE_ATTRIBUTE_HIDDEN</dd>
-<dd>FILE_ATTRIBUTE_SYSTEM</dd>
-<dd>FILE_ATTRIBUTE_DIRECTORY</dd>
-<dd>FILE_ATTRIBUTE_ARCHIVE</dd>
-<dd>FILE_ATTRIBUTE_NORMAL</dd>
-<dd>FILE_ATTRIBUTE_TEMPORARY</dd>
-<dd>FILE_ATTRIBUTE_COMPRESSED</dd>
-</dl>
-        
-            `FileIndex`
+Time when the file was created.
 
-            Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
-        
-            `FileName`
+`EndOfFile`
 
-            Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
-        
-            `FileNameLength`
+Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
 
-            Specifies the length of the file name string.
-        
-            `LastAccessTime`
+`FileAttributes`
 
-            Last time the file was accessed.
-        
-            `LastWriteTime`
+File attributes, which can be any valid combination of the following:
 
-            Last time information was written to the file.
-        
-            `NextEntryOffset`
+`FileIndex`
 
-            Byte offset of the next FILE_DIRECTORY_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
 
-    ## Remarks
-        This information can be queried in either of the following ways: 
+`FileName`
 
+Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
+
+`FileNameLength`
+
+Specifies the length of the file name string.
+
+`LastAccessTime`
+
+Last time the file was accessed.
+
+`LastWriteTime`
+
+Last time information was written to the file.
+
+`NextEntryOffset`
+
+Byte offset of the next FILE_DIRECTORY_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+
+## Remarks
+This information can be queried in either of the following ways: 
+<ul>
+<li>
 Call <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>, passing FileDirectoryInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_DIRECTORY_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
+</li>
+<li>
 Create an IRP with major function code IRP_MJ_DIRECTORY_CONTROL and minor function code IRP_MN_QUERY_DIRECTORY. 
 
-No specific access rights are required to query this information. 
+</li>
+</ul>No specific access rights are required to query this information. 
 
 All dates and times are in absolute system-time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601. 
 
@@ -134,19 +130,14 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
+
+<a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 9E57757B-65BA-40FF-98F9-F771C48EFF9E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
+ms.keywords : sensors.ioctl_gnss_get_chipsetinfo, IOCTL_GNSS_GET_CHIPSETINFO control code [Sensor Devices], IOCTL_GNSS_GET_CHIPSETINFO, gnssdriver/IOCTL_GNSS_GET_CHIPSETINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GNSS_GET_CHIPSETINFO
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_SUPL_CERT_ACTION
 ---
 
@@ -60,13 +64,11 @@ Set to sizeof(GNSS_CHIPSETINFO).
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code.
 
-    ## Remarks
-        The GNSS test application must wait for the response from the GNSS driver and be resilient to the GNSS driver not responding.
-
-The GNSS driver must respond with the information about the GNSS chipset.
+## Remarks
+<h3><a id="GNSS_test_application_notes"></a><a id="gnss_test_application_notes"></a><a id="GNSS_TEST_APPLICATION_NOTES"></a>GNSS test application notes</h3>The GNSS test application must wait for the response from the GNSS driver and be resilient to the GNSS driver not responding.
+<h3><a id="GNSS_driver_notes"></a><a id="gnss_driver_notes"></a><a id="GNSS_DRIVER_NOTES"></a>GNSS driver notes</h3>The GNSS driver must respond with the information about the GNSS chipset.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,22 +77,16 @@ The GNSS driver must respond with the information about the GNSS chipset.
 | **Header** | gnssdriver.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
-</dt>
-</dl>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+
  
 
  

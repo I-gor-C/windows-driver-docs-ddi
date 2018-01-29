@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4DA3FB63-D2D3-43E1-9420-29303176B837
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxEndpointNeedToCancelTransfers
+ms.keywords : UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers method [Buses], buses._ucxendpointneedtocanceltransfers, ucxendpoint/UcxEndpointNeedToCancelTransfers
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxEndpointNeedToCancelTransfers
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_ENDPOINT_CHARACTERISTIC_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ If needed, UCX coordinates with the hub driver to send a Clear TT buffer command
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
-</dt>
-</dl>
+
  
 
  

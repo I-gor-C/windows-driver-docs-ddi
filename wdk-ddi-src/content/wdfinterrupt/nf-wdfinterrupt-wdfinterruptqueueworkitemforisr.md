@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1E88E9D9-B564-43B4-9A83-F621FF23437F
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfInterruptQueueWorkItemForIsr
+ms.keywords : WdfInterruptQueueWorkItemForIsr method, wdfinterrupt/WdfInterruptQueueWorkItemForIsr, WdfInterruptQueueWorkItemForIsr, kmdf.wdfinterruptqueueworkitemforisr, wdf.wdfinterruptqueueworkitemforisr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.0
-req.alt-api : WdfInterruptQueueWorkItemForIsr
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DIRQL
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -89,20 +93,14 @@ For more information about handling interrupts in framework-based drivers, see <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptqueuedpcforisr.md">WdfInterruptQueueDpcForIsr</a>
-</dt>
-<dt>
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptcreate.md">WdfInterruptCreate</a>
-</dt>
-<dt>
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
-</dt>
-<dt>
+
 <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a>
-</dt>
-</dl>
+
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptqueuedpcforisr.md">WdfInterruptQueueDpcForIsr</a>
+
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
+
  
 
  

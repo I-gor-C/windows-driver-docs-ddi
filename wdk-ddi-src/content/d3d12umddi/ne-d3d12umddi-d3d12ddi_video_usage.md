@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 663790EE-A9E3-4EBC-93C7-20DE0D759A26
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_USAGE, D3D12DDI_VIDEO_USAGE
+ms.keywords : D3D12DDI_VIDEO_USAGE, D3D12DDI_VIDEO_USAGE_NORMAL, display.d3d12ddi_video_usage, d3d12umddi/D3D12DDI_VIDEO_USAGE, d3d12umddi/D3D12_VIDEO_USAGE_QUALITY, d3d12umddi/D3D12DDI_VIDEO_USAGE_NORMAL, D3D12DDI_VIDEO_USAGE enumeration [Display Devices], D3D12DDI_VIDEO_USAGE_POWER, d3d12umddi/D3D12DDI_VIDEO_USAGE_POWER, D3D12_VIDEO_USAGE_QUALITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_USAGE
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_USAGE
 ---
 
@@ -58,6 +62,11 @@ typedef enum D3D12DDI_VIDEO_USAGE {
 <tr>
 <td>D3D12DDI_VIDEO_USAGE_POWER</td>
 <td>Lower the power usage. This setting can lead to some reduction in video quality.</td>
+</tr>
+
+<tr>
+<td>D3D12DDI_VIDEO_USAGE_QUALITY</td>
+<td></td>
 </tr>
 </table>
 

@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : B52012DB-922A-43A2-A175-7F7887C290F1
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _LPI_STATE_DESCRIPTOR, *PLPI_STATE_DESCRIPTOR, LPI_STATE_DESCRIPTOR
+ms.keywords : acpi.lpi_state_descriptor, acpitabl/LPI_STATE_DESCRIPTOR, _LPI_STATE_DESCRIPTOR, LPI_STATE_DESCRIPTOR, PLPI_STATE_DESCRIPTOR structure pointer [ACPI Devices], PLPI_STATE_DESCRIPTOR, *PLPI_STATE_DESCRIPTOR, acpitabl/PLPI_STATE_DESCRIPTOR, LPI_STATE_DESCRIPTOR structure [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LPI_STATE_DESCRIPTOR
-req.alt-loc : acpitabl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PLPI_STATE_DESCRIPTOR, LPI_STATE_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : LPI_STATE_DESCRIPTOR, *PLPI_STATE_DESCRIPTOR
 ---
 
 # _LPI_STATE_DESCRIPTOR structure
@@ -55,46 +59,46 @@ typedef struct _LPI_STATE_DESCRIPTOR {
 
 ## Members
 
-        
-            `EntryTrigger`
 
-            An entry trigger.
-        
-            `Flags`
+`EntryTrigger`
 
-            State flags.
-        
-            `Latency`
+An entry trigger.
 
-            A latency value.
-        
-            `Length`
+`Flags`
 
-            The length.
-        
-            `Reserved`
+State flags.
 
-            Reserved.
-        
-            `Residency`
+`Latency`
 
-            A residency value.
-        
-            `ResidencyCounter`
+A latency value.
 
-            Residency counter.
-        
-            `ResidencyCounterFrequency`
+`Length`
 
-            Residency counter frequency.
-        
-            `Type`
+The length.
 
-            The type.
-        
-            `UniqueId`
+`Reserved`
 
-            A unique ID.
+Reserved.
+
+`Residency`
+
+A residency value.
+
+`ResidencyCounter`
+
+Residency counter.
+
+`ResidencyCounterFrequency`
+
+Residency counter frequency.
+
+`Type`
+
+The type.
+
+`UniqueId`
+
+A unique ID.
 
 
 ## Requirements

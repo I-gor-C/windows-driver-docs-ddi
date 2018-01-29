@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14dcff4a-3295-435b-a1b2-f3aa15117673
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CREATELIGHT, D3DDDIARG_CREATELIGHT
+ms.keywords : UMDisplayDriver_param_Structs_683ae423-2e77-49e2-8028-3980a2f1a32d.xml, display.d3dddiarg_createlight, D3DDDIARG_CREATELIGHT structure [Display Devices], _D3DDDIARG_CREATELIGHT, d3dumddi/D3DDDIARG_CREATELIGHT, D3DDDIARG_CREATELIGHT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CREATELIGHT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CREATELIGHT
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DDDIARG_CREATELIGHT {
 
 ## Members
 
-        
-            `Index`
 
-            [in] The index of the light to create.
+`Index`
+
+[in] The index of the light to create.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _D3DDDIARG_CREATELIGHT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createlight.md">CreateLight</a>
-</dt>
-</dl>
+
  
 
  

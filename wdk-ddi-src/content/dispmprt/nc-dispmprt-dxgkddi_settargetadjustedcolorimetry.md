@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C37E0DE1-E849-440F-A11A-BB0E3F50BDFA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkddi_settargetadjustedcolorimetry, DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback function [Display Devices], DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY, dispmprt/DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -86,7 +90,6 @@ The FormatBitDepths and StandardColorimetryFlags in the DXGK_COLORIMETRY are zer
 
 
 This function is always called at PASSIVE level so the supporting code should be made pageable where possible.
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

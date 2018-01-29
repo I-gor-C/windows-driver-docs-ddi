@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c2723c57-44eb-4866-9381-a3a341996989
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setoverlaycolorcontrols, SetOverlayColorControls callback function [Display Devices], SetOverlayColorControls, PFND3DDDI_SETOVERLAYCOLORCONTROLS, PFND3DDDI_SETOVERLAYCOLORCONTROLS, d3dumddi/SetOverlayColorControls, UserModeDisplayDriver_Functions_3164b9ba-d03c-473d-b067-2fc5b2756594.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetOverlayColorControls
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,15 +68,45 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>SetOverlayColorControls</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The color-control settings were successfully changed.
+</dl>
+</td>
+<td width="60%">
+The color-control settings were successfully changed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>SetOverlayColorControls</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>SetOverlayColorControls</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,14 +128,10 @@ The runtime can also call <i>SetOverlayColorControls</i> for an overlay that is 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

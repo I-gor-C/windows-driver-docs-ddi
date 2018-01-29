@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8e535a6a-9b17-4ef6-b068-43042a589ac0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetDevicePropertyData
+ms.keywords : kernel.iosetdevicepropertydata, k104_a7cd308b-4d43-4364-80fb-ae773d0de101.xml, IoSetDevicePropertyData routine [Kernel-Mode Driver Architecture], IoSetDevicePropertyData, wdm/IoSetDevicePropertyData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetDevicePropertyData
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -128,17 +132,12 @@ Callers of <b>IoSetDeviceProperty</b> must be running at IRQL &lt;= APC_LEVEL in
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
+
 <a href="..\wdm\nf-wdm-iogetdevicepropertydata.md">IoGetDevicePropertyData</a>
-</dt>
-</dl>
+
  
 
  

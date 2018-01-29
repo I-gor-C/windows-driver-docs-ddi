@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e318e13b-8b6c-4593-93ce-17d2a1056ac2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoRegisterFsRegistrationChangeEx
+ms.keywords : IoRegisterFsRegistrationChangeEx, ioref_330f3a93-4d81-4a6b-9733-521558d255a6.xml, ifsk.ioregisterfsregistrationchangeex, IoRegisterFsRegistrationChangeEx routine [Installable File System Drivers], ntifs/IoRegisterFsRegistrationChangeEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is only available on the Update Rollup 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoRegisterFsRegistrationChangeEx
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,12 +65,34 @@ A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff
 ## Return Value
 
 <b>IoRegisterFsRegistrationChangeEx</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The notification routine was successfully registered.
+</dl>
+</td>
+<td width="60%">
+The notification routine was successfully registered.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>A notification packet could not be allocated for the notification routine.
+</dl>
+</td>
+<td width="60%">
+A notification packet could not be allocated for the notification routine.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,20 +126,14 @@ If a file system filter driver calls <b>IoRegisterFsRegistrationChangeEx</b> twi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
+
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
+
+<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
+
  
 
  

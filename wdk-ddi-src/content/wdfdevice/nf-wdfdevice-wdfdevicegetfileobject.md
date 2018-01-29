@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2e56d444-4248-4f00-b712-cbb3a4869302
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetFileObject
+ms.keywords : wdfdevice/WdfDeviceGetFileObject, wdf.wdfdevicegetfileobject, kmdf.wdfdevicegetfileobject, WdfDeviceGetFileObject method, DFDeviceObjectGeneralRef_5aa48187-4a28-424c-9cd1-76cb5a33dc75.xml, PFN_WDFDEVICEGETFILEOBJECT, WdfDeviceGetFileObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceGetFileObject
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about framework file objects, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
 
-The following code example obtains a pointer to a named WDM device object and its corresponding WDM file object, if the requested access to the objects can be granted. Then, the example obtains a handle to the framework file object that is associated with the WDM file object.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,11 +89,8 @@ The following code example obtains a pointer to a named WDM device object and it
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
-</dt>
-</dl>
+
  
 
  

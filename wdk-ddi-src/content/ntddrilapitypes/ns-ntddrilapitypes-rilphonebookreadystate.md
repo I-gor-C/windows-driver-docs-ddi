@@ -7,8 +7,8 @@ old-location : netvista\rilphonebookreadystate.htm
 old-project : netvista
 ms.assetid : cd71234b-4b46-4b7b-953b-32e6f014af03
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE
+ms.date : 1/18/2018
+ms.keywords : RILPHONEBOOKREADYSTATE structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE, netvista.rilphonebookreadystate, RILPHONEBOOKREADYSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKREADYSTATE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE"
 ---
 
@@ -48,18 +52,18 @@ typedef struct _RILPHONEBOOKREADYSTATE {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwStoreLocations`
+`cbSize`
 
-            
-        
-            `hUiccApp`
 
-            
+
+`dwStoreLocations`
+
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : netvista\rilrequestgeolocationdataparammask.htm
 old-project : netvista
 ms.assetid : 86b89336-56f9-4665-a0d3-37dc6ec6c377
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILREQUESTGEOLOCATIONDATAPARAMMASK, RILREQUESTGEOLOCATIONDATAPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILREQUESTGEOLOCATIONDATAPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTINFORMATION, RILREQUESTGEOLOCATIONDATAPARAMMASK, netvista.rilrequestgeolocationdataparammask, RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTACCCURACY, RIL_PARAM_REQUESTGEOLOCATIONDATA_ALL, RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTINFORMATION, ntddrilapitypes/RIL_PARAM_REQUESTGEOLOCATIONDATA_ALL, ntddrilapitypes/RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTACCCURACY, ntddrilapitypes/RIL_PARAM_REQUESTGEOLOCATIONDATA_MASK, ntddrilapitypes/RIL_PARAM_REQUESTGEOLOCATIONDATA_SIZE, ntddrilapitypes/RILREQUESTGEOLOCATIONDATAPARAMMASK, RIL_PARAM_REQUESTGEOLOCATIONDATA_EXECUTOR, ntddrilapitypes/RIL_PARAM_REQUESTGEOLOCATIONDATA_EXECUTOR, RIL_PARAM_REQUESTGEOLOCATIONDATA_MASK, RIL_PARAM_REQUESTGEOLOCATIONDATA_SIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILREQUESTGEOLOCATIONDATAPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILREQUESTGEOLOCATIONDATAPARAMMASK
 ---
 
@@ -65,6 +69,11 @@ typedef enum _RILREQUESTGEOLOCATIONDATAPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_MASK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_REQUESTGEOLOCATIONDATA_NONE</td>
 <td></td>
 </tr>
 

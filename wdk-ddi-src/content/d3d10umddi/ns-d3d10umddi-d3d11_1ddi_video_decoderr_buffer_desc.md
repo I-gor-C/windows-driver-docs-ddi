@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aff44ad9-7ade-4b01-8e41-11d686728faa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC, D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC
+ms.keywords : D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC structure [Display Devices], display.d3d11_1ddi_video_decoderr_buffer_desc, D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC, d3d10umddi/D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC, D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC structure [Display Devices], D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC
 ---
 
@@ -60,70 +64,70 @@ typedef struct D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC {
 
 ## Members
 
-        
-            `BufferIndex`
 
-            Reserved for system use.
-        
-            `BufferType`
+`BufferIndex`
 
-            The type of buffer, specified as a constant value of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_video_decoder_buffer_type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> enumeration.
+Reserved for system use.
+
+`BufferType`
+
+The type of buffer, specified as a constant value of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_video_decoder_buffer_type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> enumeration.
 
 In D3d10umddi.h, <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_video_decoder_buffer_type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> are defined as the same type.
-        
-            `DataOffset`
 
-            The offset of the relevant data from the beginning of the buffer, in bytes. This value must be zero.
-        
-            `DataSize`
+`DataOffset`
 
-            The offset of the relevant data from the beginning of the buffer, in bytes. This value must be zero.
-        
-            `EncryptedBlockInfo`
+The offset of the relevant data from the beginning of the buffer, in bytes. This value must be zero.
 
-            A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that specifies which bytes of the surface are encrypted.
-        
-            `FirstMBaddress`
+`DataSize`
 
-            The macroblock address of the first macroblock in the buffer. The macroblock address is given in raster scan order.
-        
-            `Height`
+The offset of the relevant data from the beginning of the buffer, in bytes. This value must be zero.
 
-            Reserved for system use. Set to zero.
-        
-            `hResource`
+`EncryptedBlockInfo`
 
-            A handle to the resource that will receive the decrypted and decode frame buffers.
-        
-            `IVSize`
+A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that specifies which bytes of the surface are encrypted.
 
-            The size of the buffer specified in the <b>pIV</b> member. If <b>pIV</b> is <b>NULL</b>, set this member to zero.
-        
-            `NumMBsInBuffer`
+`FirstMBaddress`
 
-            The number of macroblocks of data in the buffer. This count includes skipped macroblocks.
-        
-            `PartialEncryption`
+The macroblock address of the first macroblock in the buffer. The macroblock address is given in raster scan order.
 
-            If <b>TRUE</b>, the video surfaces are partially encrypted.
-        
-            `pIV`
+`Height`
 
-            A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a> structure that contains an initialization vector (IV) for the frame buffer data that was encrypted by using the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher encryption algorithm.
+Reserved for system use. Set to zero.
+
+`hResource`
+
+A handle to the resource that will receive the decrypted and decode frame buffers.
+
+`IVSize`
+
+The size of the buffer specified in the <b>pIV</b> member. If <b>pIV</b> is <b>NULL</b>, set this member to zero.
+
+`NumMBsInBuffer`
+
+The number of macroblocks of data in the buffer. This count includes skipped macroblocks.
+
+`PartialEncryption`
+
+If <b>TRUE</b>, the video surfaces are partially encrypted.
+
+`pIV`
+
+A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a> structure that contains an initialization vector (IV) for the frame buffer data that was encrypted by using the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher encryption algorithm.
 
 If the decode buffer does not contain any encrypted data, set <b>pIV</b> to <b>NULL</b>.
-        
-            `ReservedBits`
 
-            Reserved for system use. Set to zero.
-        
-            `Stride`
+`ReservedBits`
 
-            Reserved for system use. Set to zero.
-        
-            `Width`
+Reserved for system use. Set to zero.
 
-            Reserved for system use. Set to zero.
+`Stride`
+
+Reserved for system use. Set to zero.
+
+`Width`
+
+Reserved for system use. Set to zero.
 
 
 ## Requirements
@@ -134,19 +138,14 @@ If the decode buffer does not contain any encrypted data, set <b>pIV</b> to <b>N
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_video_decoder_buffer_type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a>
+
  
 
  

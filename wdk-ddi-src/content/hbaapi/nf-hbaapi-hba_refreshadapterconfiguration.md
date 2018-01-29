@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 140a25ed-b591-413f-8b67-28bc5d776260
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_RefreshAdapterConfiguration
+ms.keywords : HBA_RefreshAdapterConfiguration routine [Storage Devices], storage.hba_refreshadapterconfiguration, fibreHBA_rtns_c380d992-b977-4f93-a204-93458699eeb1.xml, hbaapi/HBA_RefreshAdapterConfiguration, HBA_RefreshAdapterConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_RefreshAdapterConfiguration
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -52,10 +56,6 @@ This function has no parameters.
 
 None
 
-None
-
-None
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -71,11 +71,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_refreshinformation.md">HBA_RefreshInformation</a>
-</dt>
-</dl>
+
  
 
  

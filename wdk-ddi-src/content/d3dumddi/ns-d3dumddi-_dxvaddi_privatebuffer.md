@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3e41472c-4c9d-4727-af08-a350e1967ef0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER
+ms.keywords : d3dumddi/DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER, DXVA2_Structs_90012dba-8a0c-4685-a528-1a57265e5688.xml, display.dxvaddi_privatebuffer, DXVADDI_PRIVATEBUFFER structure [Display Devices], _DXVADDI_PRIVATEBUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_PRIVATEBUFFER
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_PRIVATEBUFFER
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXVADDI_PRIVATEBUFFER {
 
 ## Members
 
-        
-            `DataOffset`
 
-            [in] The offset to the relevant data, in bytes, from the beginning of the buffer.
-        
-            `DataSize`
+`DataOffset`
 
-            [in] The size of the relevant data, in bytes.
-        
-            `hResource`
+[in] The offset to the relevant data, in bytes, from the beginning of the buffer.
 
-            [in] A handle to the resource that contains the private buffer for the decode operation.
-        
-            `SubResourceIndex`
+`DataSize`
 
-            [in] The index to the private buffer within the resource.
+[in] The size of the relevant data, in bytes.
+
+`hResource`
+
+[in] A handle to the resource that contains the private buffer for the decode operation.
+
+`SubResourceIndex`
+
+[in] The index to the private buffer within the resource.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _DXVADDI_PRIVATEBUFFER {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
-</dt>
-</dl>
+
  
 
  

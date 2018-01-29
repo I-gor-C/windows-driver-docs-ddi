@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8d881133-3ea7-43c4-99cc-d843026573d6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY
+ms.keywords : d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, display.d3dkmdt_vidpn_hw_capability, _D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices], D3DKMDT_VIDPN_HW_CAPABILITY, DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_VIDPN_HW_CAPABILITY
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_VIDPN_HW_CAPABILITY
 ---
 
@@ -52,67 +56,61 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 
 ## Members
 
-        
-            `DriverCloning`
 
-            A UINT value that describes the capability of the display miniport driver to display a cloned image.
+`DriverCloning`
+
+A UINT value that describes the capability of the display miniport driver to display a cloned image.
 
 If set to a nonzero value, the driver uses software or the system-supplied graphics engine to copy the on-screen image and then uses display pipeline hardware to display the copy.
 
 If set to 0, the driver uses display pipeline hardware to directly generate the cloned image.
-        
-            `DriverColorConvert`
 
-            A UINT value that describes the capability of the display miniport driver to display a color-convert bit-block transfer (bitblt).
+`DriverColorConvert`
+
+A UINT value that describes the capability of the display miniport driver to display a color-convert bit-block transfer (bitblt).
 
 If set to a nonzero value, the driver uses software or the system-supplied graphics engine to generate the color-convert bitblt and then uses display pipeline hardware to display the color-converted image. For example, if the display pipeline hardware cannot color-convert from an 8-bit palletized surface format (defined by the D3DDDIFMT_P8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration), the driver can use the graphics engine to perform a color-convert bitblt from the D3DDDIFMT_ P8 format to the D3DDDIFMT_R8G8B8 format and then render the new D3DDDIFMT_R8G8B8 image using the display pipeline hardware.
 
 If set to 0, the driver uses display pipeline hardware to directly generate the color-converted image.
-        
-            `DriverLinkedAdapaterOutput`
 
-            A UINT value that describes the capability of the display miniport driver to perform a bit-block transfer (bitblt) of a primary surface from one linked display adapter to another linked display adapter.
+`DriverLinkedAdapaterOutput`
+
+A UINT value that describes the capability of the display miniport driver to perform a bit-block transfer (bitblt) of a primary surface from one linked display adapter to another linked display adapter.
 
 If set to a nonzero value, the driver uses software or the system-supplied graphics engine to generate the bitblt from the on-screen image on the first linked display adapter and then uses the second linked display adapter to display the bitblt image on the second display device.
 
 If set to 0, the driver uses display pipeline hardware to directly generate the bitblt from the first linked display adapter and to display it with the second linked display adapter.
-        
-            `DriverRemoteDisplay`
 
-            A UINT value that describes whether the display pipeline hardware is located on the same device as the GPU graphics rendering pipeline.
+`DriverRemoteDisplay`
+
+A UINT value that describes whether the display pipeline hardware is located on the same device as the GPU graphics rendering pipeline.
 
 If set to a nonzero value, the display pipeline hardware is not located on the same device as the GPU graphics rendering pipeline, and the primary surface might have to be transmitted over a bus that is not designed specifically for display image transfers. Examples of such remote display situations are a display monitor that is connected to the computer with a USB bus and a display that is connected remotely over a network.
 
 If set to 0, the display pipeline hardware is located on the same device as the GPU graphics rendering pipeline.
-        
-            `DriverRotation`
 
-            A UINT value that describes the capability of the display miniport driver to display a rotated image.
+`DriverRotation`
+
+A UINT value that describes the capability of the display miniport driver to display a rotated image.
 
 If set to a nonzero value, the driver uses software or the system-supplied graphics engine to generate the rotated image and then uses display pipeline hardware to display the rotated image.
 
 If set to 0, the driver uses display pipeline hardware to directly generate the rotated image.
-        
-            `DriverScaling`
 
-            A UINT value that describes the capability of the display miniport driver to display a scaled image.
+`DriverScaling`
+
+A UINT value that describes the capability of the display miniport driver to display a scaled image.
 
 If set to a nonzero value, the driver uses software or the system-supplied graphics engine to scale the on-screen image and then uses display pipeline hardware to display the scaled image.
 
 If set to 0, the driver uses display pipeline hardware to directly generate the scaled image.
-        
-            `Reserved`
 
-            Reserved for system use. The display miniport driver must set this value to 0.
+`Reserved`
 
-    ## Remarks
-        The following definitions of terms are used in this topic.
+Reserved for system use. The display miniport driver must set this value to 0.
 
-
-
-Describes the components on the display device that generate the video signal from the image.
-
-Describes the components on the display device that perform 3-D image rendering.
+## Remarks
+The following definitions of terms are used in this topic.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -122,13 +120,10 @@ Describes the components on the display device that perform 3-D image rendering.
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-</dl>
+
  
 
  

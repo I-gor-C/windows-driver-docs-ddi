@@ -7,8 +7,8 @@ old-location : netvista\miniportcosendnetbufferlists.htm
 old-project : netvista
 ms.assetid : 4a717842-6d71-488e-a56a-57c6e6e0c5d7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RxNameCacheInitialize
+ms.date : 1/18/2018
+ms.keywords : netvista.miniportcosendnetbufferlists, MiniportCoSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], MiniportCoSendNetBufferLists, MINIPORT_CO_SEND_NET_BUFFER_LISTS, MINIPORT_CO_SEND_NET_BUFFER_LISTS, ndis/MiniportCoSendNetBufferLists, condis_sendrcv_ref_28cddc06-235d-4274-a783-554dec10ad84.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MiniportCoSendNetBufferLists
-req.alt-loc : Ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
@@ -40,6 +44,8 @@ The
   <i>MiniportCoSendNetBufferLists</i> function transmits network data that is contained in a specified linked
   list of 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
+<div class="alert"><b>Note</b>  You must declare the function by using the <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> type. For more
+   information, see the following Examples section.</div><div> </div>
 
 ## Syntax
 
@@ -87,8 +93,8 @@ None
 The 
     <i>MiniportCoSendNetBufferLists</i> function is required for CoNDIS miniport drivers. When an overlying
     driver calls the 
-    <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">
-    NdisCoSendNetBufferLists</a> function, NDIS calls the 
+    <mshelp:link keywords="netvista.ndiscosendnetbufferlists" tabindex="0"><b>
+    NdisCoSendNetBufferLists</b></mshelp:link> function, NDIS calls the 
     <i>MiniportCoSendNetBufferLists</i> function of the bound miniport driver.
 
 The order of the linked list of 
@@ -106,8 +112,8 @@ CoNDIS miniport drivers must accept all of the send requests that NDIS makes by 
     the resources that are associated with the <b>NET_BUFFER_LIST</b> structures.
 
 The miniport driver must call the 
-    <a href="..\ndis\nf-ndis-ndismcosendnetbufferlistscomplete.md">
-    NdisMCoSendNetBufferListsComplete</a> function to complete all CoNDIS send requests. To improve
+    <mshelp:link keywords="netvista.ndismcosendnetbufferlistscomplete" tabindex="0"><b>
+    NdisMCoSendNetBufferListsComplete</b></mshelp:link> function to complete all CoNDIS send requests. To improve
     computer performance, the driver can create a linked list that contains the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures from multiple
     send requests. The driver can then pass such a linked list in a single call to 
@@ -131,14 +137,36 @@ Protocol drivers are responsible for determining what network data is required, 
 
 NDIS calls 
     <i>MiniportCoSendNetBufferLists</i> at IRQL&lt;= DISPATCH_LEVEL.
-
-To define a <i>MiniportCoSendNetBufferLists</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
+<h3><a id="Examples"></a><a id="examples"></a><a id="EXAMPLES"></a>Examples</h3>To define a <i>MiniportCoSendNetBufferLists</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
 
 For example, to define a <i>MiniportCoSendNetBufferLists</i> function that is named "MyCoSendNetBufferLists", use the <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> type as shown in this code example:
-
-Then, implement your function as follows:
-
-The <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>MINIPORT_CO_SEND_NET_BUFFER_LISTS MyCoSendNetBufferLists;</pre>
+</td>
+</tr>
+</table></span></div>Then, implement your function as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>_Use_decl_annotations_
+VOID
+ MyCoSendNetBufferLists(
+    NDIS_HANDLE  MiniportVcContext,
+    PNET_BUFFER_LIST  NetBufferLists,
+    ULONG  SendFlags
+    )
+  {...}</pre>
+</td>
+</tr>
+</table></span></div>The <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
@@ -156,26 +184,19 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
+<mshelp:link keywords="netvista.ndismcosendnetbufferlistscomplete" tabindex="0"><b>
+   NdisMCoSendNetBufferListsComplete</b></mshelp:link>
+
 <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndismcosendnetbufferlistscomplete.md">
-   NdisMCoSendNetBufferListsComplete</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
-</dt>
-<dt>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-</dt>
-<dt>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_SEND_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

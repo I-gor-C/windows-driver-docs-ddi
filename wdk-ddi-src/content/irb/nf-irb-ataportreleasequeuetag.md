@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 54399050-740f-4af8-ad85-cd3060f14af4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortReleaseQueueTag
+ms.keywords : storage.ataportreleasequeuetag, irb/AtaPortReleaseQueueTag, AtaPortReleaseQueueTag routine [Storage Devices], atartns_cfdd9be6-53b5-4c4a-ac61-bc6a3cf48ea5.xml, AtaPortReleaseQueueTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortReleaseQueueTag
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortReleaseQueueTag function
 The <b>AtaPortReleaseQueueTag</b> routine releases the specified queue tag.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -53,7 +58,7 @@ VOID AtaPortReleaseQueueTag(
 
 `DeviceExtension`
 
-
+TBD
 
 `TargetId`
 
@@ -90,14 +95,10 @@ The miniport driver should call <b>AtaPortReleaseQueueTag</b> to free allocated 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportallocatequeuetag.md">AtaPortAllocateQueueTag</a>
-</dt>
-<dt>
+
 <a href="..\irb\nf-irb-ataportinitializequeuetag.md">AtaPortInitializeQueueTag</a>
-</dt>
-</dl>
+
  
 
  

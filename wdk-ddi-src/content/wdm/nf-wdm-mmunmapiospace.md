@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5963f34a-4315-46c3-9802-0b6a1b229e3f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmUnmapIoSpace
+ms.keywords : MmUnmapIoSpace routine [Kernel-Mode Driver Architecture], MmUnmapIoSpace, kernel.mmunmapiospace, k106_a56f91b1-7187-4836-a3d8-4b7d2918227a.xml, wdm/MmUnmapIoSpace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmUnmapIoSpace
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,11 +85,8 @@ If a driver calls <b>MmMapIoSpace</b> during device start-up, it must call <b>Mm
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>
-</dt>
-</dl>
+
  
 
  

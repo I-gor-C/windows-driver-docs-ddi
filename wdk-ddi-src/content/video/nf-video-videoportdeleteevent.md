@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0952f6ab-6d57-4ded-b167-74a7ace47961
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortDeleteEvent
+ms.keywords : video/VideoPortDeleteEvent, display.videoportdeleteevent, VideoPortDeleteEvent function [Display Devices], VideoPortDeleteEvent, VideoPort_Functions_66e14d53-8a5e-4322-8576-4ac06230db31.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortDeleteEvent
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -81,14 +85,10 @@ This function should not be used to delete a mapped user event. To delete a mapp
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nf-video-videoportcreateevent.md">VideoPortCreateEvent</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565434">EngUnmapEvent</a>
-</dt>
-</dl>
+
+<a href="..\video\nf-video-videoportcreateevent.md">VideoPortCreateEvent</a>
+
  
 
  

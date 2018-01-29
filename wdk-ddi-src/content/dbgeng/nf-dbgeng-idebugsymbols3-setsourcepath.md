@@ -7,8 +7,8 @@ old-location : debugger\setsourcepath.htm
 old-project : debugger
 ms.assetid : 00b5927e-4b95-4528-bc09-da90db8a7716
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSymbols3, IDebugSymbols3::SetSourcePath, SetSourcePath
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugSymbols2::SetSourcePath, IDebugSymbols2::SetSourcePath, dbgeng/IDebugSymbols::SetSourcePath, SetSourcePath method [Windows Debugging], IDebugSymbols::SetSourcePath, IDebugSymbols interface [Windows Debugging], SetSourcePath method, SetSourcePath method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::SetSourcePath, SetSourcePath method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, SetSourcePath method [Windows Debugging], IDebugSymbols interface, IDebugSymbols_d592ec7c-56f9-46b2-9627-d79e8fdba5c4.xml, IDebugSymbols3 interface [Windows Debugging], SetSourcePath method, IDebugSymbols3::SetSourcePath, IDebugSymbols2 interface [Windows Debugging], SetSourcePath method, debugger.setsourcepath, SetSourcePath
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSymbols.SetSourcePath,IDebugSymbols2.SetSourcePath,IDebugSymbols3.SetSourcePath
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -56,9 +60,23 @@ Specifies the new source path.  This is a string that contains source path eleme
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -80,25 +98,18 @@ For more information about manipulating the source path, see <a href="https://ms
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-</dt>
-<dt>
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
-</dt>
-<dt>
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548358">GetSourcePath</a>
-</dt>
-</dl>
- 
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::SetSourcePath method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::SetSourcePath method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac0ec68a-1f2c-4a39-bf88-0e69d50b1279
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
+ms.keywords : d3dkmthk/D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, display.d3dkmt_queryremotevidpnsourcefromgdidisplayname, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME structure [Display Devices], _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME {
 
 ## Members
 
-        
-            `DeviceName`
 
-            [in] The name of the GDI device on which to open an adapter instance.
-        
-            `VidPnSourceId`
+`DeviceName`
 
-            [out] The zero-based video present network (VidPN) source identifier for the display device that is represented by the <b>DeviceName</b> member.
+[in] The name of the GDI device on which to open an adapter instance.
+
+`VidPnSourceId`
+
+[out] The zero-based video present network (VidPN) source identifier for the display device that is represented by the <b>DeviceName</b> member.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryremotevidpnsourcefromgdidisplayname.md">D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 035c3d04-56e8-48ec-91d4-6d6a1a5037c4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_MAXDISPLAYPIPELINERATE,
+ms.keywords : IDARG_IN_MAXDISPLAYPIPELINERATE, display.idarg_in_maxdisplaypipelinerate, IDARG_IN_MAXDISPLAYPIPELINERATE structure [Display Devices], iddcx/IDARG_IN_MAXDISPLAYPIPELINERATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_MAXDISPLAYPIPELINERATE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,14 +51,14 @@ typedef struct IDARG_IN_MAXDISPLAYPIPELINERATE {
 
 ## Members
 
-        
-            `MaxDisplayPipelineRate`
 
-            Indicates the maximum display pipeline rate. This is the new value for <b>IDDCX_ADAPTER_CAPS.MaxDisplayPipelineRate</b>
-        
-            `Reason`
+`MaxDisplayPipelineRate`
 
-            Indicates the reason why the driver is updating the rate.
+Indicates the maximum display pipeline rate. This is the new value for <b>IDDCX_ADAPTER_CAPS.MaxDisplayPipelineRate</b>
+
+`Reason`
+
+Indicates the reason why the driver is updating the rate.
 
 
 ## Requirements

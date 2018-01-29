@@ -7,8 +7,8 @@ old-location : netvista\riluiccresponse.htm
 old-project : netvista
 ms.assetid : c584e508-b0f1-4809-808e-089e9a7fbcf9
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE
+ms.date : 1/18/2018
+ms.keywords : "*LPRILUICCRESPONSE, netvista.riluiccresponse, ntddrilapitypes/RILUICCRESPONSE, RILUICCRESPONSE, RILUICCRESPONSE structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCRESPONSE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILUICCRESPONSE, *LPRILUICCRESPONSE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILUICCRESPONSE, RILUICCRESPONSE"
 ---
 
 # RILUICCRESPONSE structure
@@ -51,30 +55,30 @@ typedef struct _RILUICCRESPONSE {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `dwResponseSize`
 
-            
-        
-            `dwStatusWord1`
 
-            
-        
-            `dwStatusWord2`
+`dwParams`
 
-            
-        
-            `pbResponse`
 
-            
+
+`dwResponseSize`
+
+
+
+`dwStatusWord1`
+
+
+
+`dwStatusWord2`
+
+
+
+`pbResponse`
+
+
 
 
 ## Requirements

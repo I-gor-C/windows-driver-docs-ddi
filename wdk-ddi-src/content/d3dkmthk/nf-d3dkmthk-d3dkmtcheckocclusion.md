@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ce889a72-5f42-4bcf-aa15-6ec9b0423781
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCheckOcclusion
+ms.keywords : D3DKMTCheckOcclusion function [Display Devices], display.d3dkmtcheckocclusion, d3dkmthk/D3DKMTCheckOcclusion, D3DKMTCheckOcclusion, PFND3DKMT_CHECKOCCLUSION, OpenGL_Functions_a73b8485-971d-47a7-bc42-77bd709c5a74.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTCheckOcclusion
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,23 +54,51 @@ NTSTATUS APIENTRY D3DKMTCheckOcclusion(
 
 `D3DKMT_CHECKOCCLUSION`
 
-
+TBD
 
 
 ## Return Value
 
 <b>D3DKMTCheckOcclusion</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The client area of the window is not occluded.
+</dl>
+</td>
+<td width="60%">
+The client area of the window is not occluded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_PRESENT_OCCLUDED</b></dt>
-</dl>The client area of the window is occluded.
+</dl>
+</td>
+<td width="60%">
+The client area of the window is occluded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -88,11 +120,8 @@ The handle to the window that is checked for occlusion must be valid. A window i
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkocclusion.md">D3DKMT_CHECKOCCLUSION</a>
-</dt>
-</dl>
+
  
 
  

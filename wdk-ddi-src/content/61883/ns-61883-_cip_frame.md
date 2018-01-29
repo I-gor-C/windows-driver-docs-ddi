@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : ac9efa58-fd38-43f2-85e6-577d58735847
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_FRAME, *PCIP_FRAME, CIP_FRAME
+ms.keywords : IEEE.cip_frame, 61883/PCIP_FRAME, PCIP_FRAME, 61883_structures_1fd796fa-88d2-4dc4-a440-89bf50b81ae8.xml, CIP_FRAME structure [Buses], CIP_FRAME, *PCIP_FRAME, PCIP_FRAME structure pointer [Buses], 61883/CIP_FRAME, _CIP_FRAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_FRAME
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCIP_FRAME, CIP_FRAME"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CIP_FRAME, *PCIP_FRAME
 ---
 
 # _CIP_FRAME structure
@@ -58,31 +62,42 @@ typedef struct _CIP_FRAME {
 
 ## Members
 
-        
-            `CompletedBytes`
 
-            
-        
-            `Flags`
+`CompletedBytes`
 
-            Specifies options associated with this frame. 
+
+
+`Flags`
+
+Specifies options associated with this frame. 
 
 For packets to be received, <b>Flags</b> can be one of the following:
-        
-            `NotifyContext`
 
-            Points to an optional caller-defined context for the caller-supplied function at <b>pfnNotify</b>. If the function does not require a context, <b>NotifyContext</b> can be <b>NULL</b>.
-        
-            `Packet`
 
-            Points to the beginning of a caller-allocated data buffer to be transmitted or received with this frame. The frame length specified in the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a> request indicates the size of the buffer.
-        
-            `pfnNotify`
 
-            Points to a caller-supplied function to be called by the protocol driver when the requested frame is completed. The protocol driver calls this function at IRQL = DISPATCH_LEVEL.
+For packets to be received, CIP_VALIDATE_XXX can be combined with either or both of the following:
+
+
+
+For packets to be transmitted, <b>Flags</b> can be one of the following:
+
+
+
+For packets to be transmitted or received, <b>Flags</b> can also be set with the following:
+
+`NotifyContext`
+
+Points to an optional caller-defined context for the caller-supplied function at <b>pfnNotify</b>. If the function does not require a context, <b>NotifyContext</b> can be <b>NULL</b>.
+
+`Packet`
+
+Points to the beginning of a caller-allocated data buffer to be transmitted or received with this frame. The frame length specified in the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a> request indicates the size of the buffer.
+
+`pfnNotify`
+
+Points to a caller-supplied function to be called by the protocol driver when the requested frame is completed. The protocol driver calls this function at IRQL = DISPATCH_LEVEL.
 
 This function uses the following prototype:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -96,11 +111,10 @@ This function uses the following prototype:
 </td>
 </tr>
 </table></span></div>
-        
-            `pfnValidate`
 
-            Points to a caller-supplied function to validate a source packet. This function uses the following prototype: The parameter <b>ValidateInfo</b> must point to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537048">CIP_VALIDATE_INFO</a> structure that contains information about the frame. 
+`pfnValidate`
 
+Points to a caller-supplied function to validate a source packet. This function uses the following prototype: The parameter <b>ValidateInfo</b> must point to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537048">CIP_VALIDATE_INFO</a> structure that contains information about the frame. 
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -114,28 +128,28 @@ This function uses the following prototype:
 </td>
 </tr>
 </table></span></div>
-        
-            `Status`
 
-            The status of the frame. Can be one of the following:
+`Status`
+
+The status of the frame. Can be one of the following:
 
 CIP_STATUS_SUCCESS
 
 CIP_STATUS_CORRUPT_FRAME
 
 CIP_STATUS_FIRST_FRAME
-        
-            `Timestamp`
 
-            The time associated with completion of the frame. 
+`Timestamp`
+
+The time associated with completion of the frame. 
 
 For packets to be received, the protocol driver sets this member to the time when transmission of the frame was completed, unless CIP_USE_SOURCE_HEADER_TIMESTAMP is set in <b>Flags</b>. 
 
 For packets to be transmitted, CIP-DV_STYLE_SYT or CIP_AUDIO_STYLE_SYT in <b>Flags</b> indicates the format of the timestamp.
-        
-            `ValidateContext`
 
-            Points to an optional caller-defined context for the function at <b>pfnValidate</b>. If the function does not require a context, <b>ValidateContext</b> can be <b>NULL</b>.
+`ValidateContext`
+
+Points to an optional caller-defined context for the function at <b>pfnValidate</b>. If the function does not require a context, <b>ValidateContext</b> can be <b>NULL</b>.
 
 
 ## Requirements
@@ -146,16 +160,12 @@ For packets to be transmitted, CIP-DV_STYLE_SYT or CIP_AUDIO_STYLE_SYT in <b>Fla
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>
-</dt>
-</dl>
+
  
 
  

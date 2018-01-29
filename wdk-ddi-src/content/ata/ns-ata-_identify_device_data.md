@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7f2edd6f-16bf-47a6-8546-7871435a56ac
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA
+ms.keywords : "*PIDENTIFY_DEVICE_DATA, storage.identify_device_data, _IDENTIFY_DEVICE_DATA, ata/PIDENTIFY_DEVICE_DATA, PIDENTIFY_DEVICE_DATA, structs-ATA_904f6e71-4dd9-4ecb-9928-0d7ce44b83ef.xml, PIDENTIFY_DEVICE_DATA structure pointer [Storage Devices], ata/IDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDENTIFY_DEVICE_DATA
-req.alt-loc : ata.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA
 ---
 
 # _IDENTIFY_DEVICE_DATA structure
 The IDENTIFY_DEVICE_DATA structure contains the data retrieved by an ATA identify device data command (0xEC).
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -291,309 +296,458 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 
 ## Members
 
-        
-            `AdvancedPIOModes`
 
-            
-        
-            `BlockAlignment`
+`AdditionalProductID`
 
-            
-        
-            `Capabilities`
 
-            
-        
-            `CheckSum`
 
-            Indicates the checksum.
-        
-            `CommandSetActive`
+`AdditionalSupported`
 
-            <dl>
 
 
-</dl>
-        
-            `CommandSetActiveExt`
+`AdvancedPIOModes`
 
-            
-        
-            `CommandSetSupport`
 
-            
-        
-            `CommandSetSupportExt`
 
-            
-        
-            `CurrentAcousticValue`
+`BlockAlignment`
 
-            Indicates the current acoustic management value.
-        
-            `CurrentMediaSerialNumber`
 
-            Words 176-205
-        
-            `CurrentMultiSectorSetting`
 
-            Indicates the multisector setting.
-        
-            `CurrentSectorCapacity`
+`BlockEraseExtCommandSupported`
 
-            Indicates the number of sectors on the device.
-        
-            `CurrentSectorsPerTrack`
 
-            Indicates the number of sectors per track.
-        
-            `DataSetManagementFeature`
 
-            
-        
-            `FirmwareRevision`
+`Capabilities`
 
-            Contains the revision number of the device's firmware.
-        
-            `GeneralConfiguration`
 
-            
-        
-            `HardwareResetResult`
 
-            Indicates the result of a hardware reset. For more information about the values assigned to this member, see the <i>ATA/ATAP specification</i>.
-        
-            `InterSeekDelay`
+`CfaPowerMode1`
 
-            
-        
-            `MajorRevision`
 
-            Indicates the device's major revision number.
-        
-            `Max48BitLBA`
 
-            Contains the maximum user LBA for the 48-bit address feature set.
-        
-            `MaximumBlockTransfer`
+`CheckSum`
 
-            Contains the maximum number of blocks allowed in a single transfer.
-        
-            `MinimumMWXferCycleTime`
+Indicates the checksum.
 
-            Indicates the minimum multiword DMA transfer cycle time per word.
-        
-            `MinimumPIOCycleTime`
+`CommandSetActive`
 
-            Indicates the minimum PIO transfer cycle time without flow control.
-        
-            `MinimumPIOCycleTimeIORDY`
 
-            Indicates the minimum PIO transfer cycle time with IORDY flow control.
-        
-            `MinorRevision`
-
-            Indicates the device's minor revision number.
-        
-            `ModelNumber`
-
-            Contains the device's model number.
-        
-            `MsnSupport`
-
-            Indicates when <b>TRUE</b> that the device supports media status notification.
-        
-            `MultiSectorSettingValid`
-
-            Indicates when <b>TRUE</b> that the multisector setting is valid.
-        
-            `MultiWordDMAActive`
-
-            Indicates which DMA modes are currently selected.
-        
-            `MultiWordDMASupport`
-
-            Indicates which DMA modes the device supports.
-        
-            `NominalMediaRotationRate`
-
-            
-        
-            `NumberOfCurrentCylinders`
-
-            Indicates the number of cylinders on the device.
-        
-            `NumberOfCurrentHeads`
-
-            Indicates the number of heads on the device.
-        
-            `NumCylinders`
-
-            Indicates the number of cylinders on the device.
-        
-            `NumHeads`
-
-            Number of logical heads on the device.
-        
-            `NumSectorsPerTrack`
-
-            Indicates the number of sectors per track.
-        
-            `NVCacheCapabilities`
-
-            
-        
-            `NVCacheOptions`
-
-            
-        
-            `NVCacheSizeLSW`
-
-            
-        
-            `NVCacheSizeMSW`
-
-            
-        
-            `Obsolete1`
-
-            This member is obsolete. Do not use.
-        
-            `ObsoleteWord62`
-
-            This member is obsolete. Do not use.
-        
-            `ObsoleteWords51`
-
-            This member is obsolete. Do not use.
-        
-            `PhysicalLogicalSectorSize`
-
-            
-        
-            `QueueDepth`
-
-            Indicates the maximum queue depth.
-        
-            `RecommendedAcousticValue`
-
-            Contain the device vendor's recommended acoustic management value.
-        
-            `RecommendedMWXferCycleTime`
-
-            Indicates the recommended multiword DMA transfer cycle time per word.
-        
-            `Reserved3`
-
-            Reserved.
-        
-            `ReservedByte59`
-
-            Reserved.
-        
-            `ReservedByte64`
-
-            Reserved.
-        
-            `ReservedForCfaWord161`
 
-            Words 161-168
-        
-            `ReservedForExpandedSupportandActive`
+`CommandSetActiveExt`
 
-            
-        
-            `ReservedForTlcTechnicalReport`
 
-            
-        
-            `ReservedForWorldWideName128`
 
-            
-        
-            `ReservedWord129`
+`CommandSetSupport`
 
-            Reserved.
-        
-            `ReservedWord207`
 
-            Words 207-208
-        
-            `ReservedWord218`
 
-            
-        
-            `ReservedWord220`
+`CommandSetSupportExt`
 
-            Words 220-254
-        
-            `ReservedWord75`
 
-            Reserved.
-        
-            `Retired1`
 
-            This member is no longer used.
-        
-            `Retired2`
+`CryptoScrambleExtCommandSupported`
 
-            This member is no longer used.
-        
-            `SecurityStatus`
 
-            Contains a bitmap that indicates the security status. For more information about the meaning of each individual bit, see the <i>ATA/ATAPI specification</i>.
-        
-            `SerialNumber`
 
-            Contains the serial number of the device.
-        
-            `Signature`
+`CurrentAcousticValue`
 
-            Indicates the disk signature.
-        
-            `StreamingTransferTime`
+Indicates the current acoustic management value.
 
-            
-        
-            `TranslationFieldsValid`
+`CurrentAPMLevel`
 
-            Contains a bitfield whose bits indicate which of the bytes in the identify data package contain valid address translation information. For more information about how this bitfield is defined, see the <i>ATA/ATAPI specification</i>.
-        
-            `UltraDMAActive`
 
-            Contains a bitmap indicating which ultraDMA modes are selected.
-        
-            `UltraDMASupport`
 
-            Contains a bitmap indicating which ultraDMA modes the device supports.
-        
-            `UserAddressableSectors`
+`CurrentMediaSerialNumber`
 
-            Indicates the total number of user-addressable sectors.
-        
-            `VendorUnique1`
+Words 176-205
 
-            Contains the first ID of the device's vendor.
-        
-            `VendorUnique2`
+`CurrentMultiSectorSetting`
 
-            Contains the second ID of the device's vendor.
-        
-            `WordsPerLogicalSector`
+Indicates the multisector setting.
 
-            
-        
-            `WorldWideName`
+`CurrentSectorCapacity`
 
-            
-        
-            `WriteReadVerifySectorCountMode2Only`
+Indicates the number of sectors on the device.
 
-            Words 212-213
-        
-            `WriteReadVerifySectorCountMode3Only`
+`CurrentSectorsPerTrack`
 
-            Words 210-211
+Indicates the number of sectors per track.
+
+`DataSetManagementFeature`
+
+
+
+`DsmCap`
+
+
+
+`EnhancedSecurityEraseUnit`
+
+
+
+`ExtendedNumberOfUserAddressableSectors`
+
+
+
+`FirmwareRevision`
+
+Contains the revision number of the device's firmware.
+
+`FreeFallControlSensitivity`
+
+
+
+`GeneralConfiguration`
+
+
+
+`HardwareResetResult`
+
+Indicates the result of a hardware reset. For more information about the values assigned to this member, see the <i>ATA/ATAP specification</i>.
+
+`InterSeekDelay`
+
+
+
+`MajorRevision`
+
+Indicates the device's major revision number.
+
+`MasterPasswordID`
+
+
+
+`Max48BitLBA`
+
+Contains the maximum user LBA for the 48-bit address feature set.
+
+`MaxBlocksPerDownloadMicrocodeMode03`
+
+
+
+`MaximumBlockTransfer`
+
+Contains the maximum number of blocks allowed in a single transfer.
+
+`MinBlocksPerDownloadMicrocodeMode03`
+
+
+
+`MinimumMWXferCycleTime`
+
+Indicates the minimum multiword DMA transfer cycle time per word.
+
+`MinimumPIOCycleTime`
+
+Indicates the minimum PIO transfer cycle time without flow control.
+
+`MinimumPIOCycleTimeIORDY`
+
+Indicates the minimum PIO transfer cycle time with IORDY flow control.
+
+`MinorRevision`
+
+Indicates the device's minor revision number.
+
+`ModelNumber`
+
+Contains the device's model number.
+
+`MsnSupport`
+
+Indicates when <b>TRUE</b> that the device supports media status notification.
+
+`MultiSectorSettingValid`
+
+Indicates when <b>TRUE</b> that the multisector setting is valid.
+
+`MultiWordDMAActive`
+
+Indicates which DMA modes are currently selected.
+
+`MultiWordDMASupport`
+
+Indicates which DMA modes the device supports.
+
+`NominalFormFactor`
+
+
+
+`NominalMediaRotationRate`
+
+
+
+`NormalSecurityEraseUnit`
+
+
+
+`NumberOfCurrentCylinders`
+
+Indicates the number of cylinders on the device.
+
+`NumberOfCurrentHeads`
+
+Indicates the number of heads on the device.
+
+`NumCylinders`
+
+Indicates the number of cylinders on the device.
+
+`NumHeads`
+
+Number of logical heads on the device.
+
+`NumSectorsPerTrack`
+
+Indicates the number of sectors per track.
+
+`NVCacheCapabilities`
+
+
+
+`NVCacheOptions`
+
+
+
+`NVCacheSizeLSW`
+
+
+
+`NVCacheSizeMSW`
+
+
+
+`Obsolete1`
+
+This member is obsolete. Do not use.
+
+`ObsoleteWord62`
+
+This member is obsolete. Do not use.
+
+`ObsoleteWords51`
+
+This member is obsolete. Do not use.
+
+`OverwriteExtCommandSupported`
+
+
+
+`PhysicalLogicalSectorSize`
+
+
+
+`QueueDepth`
+
+Indicates the maximum queue depth.
+
+`RecommendedAcousticValue`
+
+Contain the device vendor's recommended acoustic management value.
+
+`RecommendedMWXferCycleTime`
+
+Indicates the recommended multiword DMA transfer cycle time per word.
+
+`Reserved3`
+
+Reserved.
+
+`ReservedByte59`
+
+Reserved.
+
+`ReservedByte64`
+
+Reserved.
+
+`ReservedForCfaWord161`
+
+Words 161-168
+
+`ReservedForCfaWord174`
+
+
+
+`ReservedForExpandedSupportandActive`
+
+
+
+`ReservedForTlcTechnicalReport`
+
+
+
+`ReservedForWorldWideName128`
+
+
+
+`ReservedWord127`
+
+
+
+`ReservedWord129`
+
+Reserved.
+
+`ReservedWord168`
+
+
+
+`ReservedWord207`
+
+Words 207-208
+
+`ReservedWord218`
+
+
+
+`ReservedWord220`
+
+Words 220-254
+
+`ReservedWord221`
+
+
+
+`ReservedWord224`
+
+
+
+`ReservedWord236`
+
+
+
+`ReservedWord75`
+
+Reserved.
+
+`ReservedWord91`
+
+
+
+`ReservedWords70`
+
+
+
+`Retired1`
+
+This member is no longer used.
+
+`Retired2`
+
+This member is no longer used.
+
+`SanitizeFeatureSupported`
+
+
+
+`SCTCommandTransport`
+
+
+
+`SecurityStatus`
+
+Contains a bitmap that indicates the security status. For more information about the meaning of each individual bit, see the <i>ATA/ATAPI specification</i>.
+
+`SerialAtaCapabilities`
+
+
+
+`SerialAtaFeaturesEnabled`
+
+
+
+`SerialAtaFeaturesSupported`
+
+
+
+`SerialNumber`
+
+Contains the serial number of the device.
+
+`Signature`
+
+Indicates the disk signature.
+
+`SpecificConfiguration`
+
+
+
+`StreamingAccessLatencyDMAPIO`
+
+
+
+`StreamingPerfGranularity`
+
+
+
+`StreamingTransferTime`
+
+
+
+`StreamingTransferTimeDMA`
+
+
+
+`StreamMinRequestSize`
+
+
+
+`TranslationFieldsValid`
+
+Contains a bitfield whose bits indicate which of the bytes in the identify data package contain valid address translation information. For more information about how this bitfield is defined, see the <i>ATA/ATAPI specification</i>.
+
+`TransportMajorVersion`
+
+
+
+`TransportMinorVersion`
+
+
+
+`TrustedComputing`
+
+
+
+`UltraDMAActive`
+
+Contains a bitmap indicating which ultraDMA modes are selected.
+
+`UltraDMASupport`
+
+Contains a bitmap indicating which ultraDMA modes the device supports.
+
+`UserAddressableSectors`
+
+Indicates the total number of user-addressable sectors.
+
+`VendorUnique1`
+
+Contains the first ID of the device's vendor.
+
+`VendorUnique2`
+
+Contains the second ID of the device's vendor.
+
+`WordsPerLogicalSector`
+
+
+
+`WorldWideName`
+
+
+
+`WriteReadVerifySectorCountMode`
+
+
+
+`WriteReadVerifySectorCountMode2Only`
+
+Words 212-213
+
+`WriteReadVerifySectorCountMode3Only`
+
+Words 210-211
 
 
 ## Requirements

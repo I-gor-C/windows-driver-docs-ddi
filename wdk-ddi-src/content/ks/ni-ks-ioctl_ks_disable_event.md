@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4e451d0c-6548-4735-833a-3972cf5e59c6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_disable_event, IOCTL_KS_DISABLE_EVENT control code [Streaming Media Devices], IOCTL_KS_DISABLE_EVENT, ks/IOCTL_KS_DISABLE_EVENT, ks-ioctl_8b6cd750-3003-49b2-9b91-3edc1da6cf11.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_DISABLE_EVENT
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
 # IOCTL_KS_DISABLE_EVENT IOCTL
-An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>.
-
-
-
 An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>.
 
 ### Major Code
@@ -63,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 
@@ -74,34 +73,24 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksdpc_item.md">KSDPC_ITEM</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
+
 <a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
+
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
 <a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
+
  
 
  

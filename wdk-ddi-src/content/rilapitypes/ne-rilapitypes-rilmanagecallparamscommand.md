@@ -7,8 +7,8 @@ old-location : netvista\rilmanagecallparamscommand_2.htm
 old-project : netvista
 ms.assetid : 0749f3fb-261c-4b98-961f-f2720100b8e6
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMANAGECALLPARAMSCOMMAND, RILMANAGECALLPARAMSCOMMAND
+ms.date : 1/18/2018
+ms.keywords : RILMANAGECALLPARAMSCOMMAND enumeration [Network Drivers Starting with Windows Vista], RIL_CALLCMD_RELEASEALLCALLS, rilapitypes/RIL_CALLCMD_OFFERMEDIA, rilapitypes/RIL_CALLCMD_BLINDCALLTRANSFER, RIL_CALLCMD_MAX, rilapitypes/RIL_CALLCMD_RELEASEPROCEEDING, RIL_CALLCMD_OFFERMEDIA, rilapitypes/RIL_CALLCMD_ACCEPTINCOMINGCALL, RIL_CALLCMD_RTT, RIL_CALLCMD_RELEASECALL, rilapitypes/RIL_CALLCMD_RELEASECALL, RIL_CALLCMD_RELEASEPROCEEDING, rilapitypes/RIL_CALLCMD_HOLDACTIVE_ACCEPTHELD, rilapitypes/RIL_CALLCMD_RELEASEALLCALLS, RIL_CALLCMD_HOLDACTIVE_ACCEPTHELD, RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT, netvista.rilmanagecallparamscommand_2, rilapitypes/RIL_CALLCMD_RELEASEHELDCONFCALL, RIL_CALLCMD_BLINDCALLTRANSFER, RIL_CALLCMD_ANSWERMEDIAOFFER, rilapitypes/RILMANAGECALLPARAMSCOMMAND, rilapitypes/RIL_CALLCMD_RTT, RIL_CALLCMD_ACCEPTINCOMINGCALL, rilapitypes/RIL_CALLCMD_ANSWERMEDIAOFFER, RIL_CALLCMD_ADDHELDTOCONF, RILMANAGECALLPARAMSCOMMAND, RIL_CALLCMD_CONSULTATIVECALLTRANSFER, rilapitypes/RIL_CALLCMD_CONSULTATIVECALLTRANSFER, RIL_CALLCMD_ASSUREDCALLTRANSFER, rilapitypes/RIL_CALLCMD_ASSUREDCALLTRANSFER, rilapitypes/RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT, rilapitypes/RIL_CALLCMD_HOLDALLBUTONE, RIL_CALLCMD_HOLDALLBUTONE, rilapitypes/RIL_CALLCMD_MAX, RIL_CALLCMD_RELEASEHELDCONFCALL, rilapitypes/RIL_CALLCMD_ADDHELDTOCONF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMANAGECALLPARAMSCOMMAND
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMANAGECALLPARAMSCOMMAND
 req.product : Windows 10 or later.
 ---
@@ -116,6 +120,11 @@ typedef enum _RILMANAGECALLPARAMSCOMMAND {
 
 <tr>
 <td>RIL_CALLCMD_OFFERMEDIA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLCMD_RELEASEACTIVE_ACCEPTHELD</td>
 <td></td>
 </tr>
 

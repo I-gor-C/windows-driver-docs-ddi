@@ -7,8 +7,8 @@ old-location : print\ixpsdocumentconsumer_closesender.htm
 old-project : print
 ms.assetid : b9a860b1-d169-44b6-8dbd-0d26b050b7b0
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsDocumentConsumer, IXpsDocumentConsumer::CloseSender, CloseSender
+ms.date : 1/18/2018
+ms.keywords : CloseSender method [Print Devices], CloseSender method [Print Devices], IXpsDocumentConsumer interface, filterpipeline/IXpsDocumentConsumer::CloseSender, IXpsDocumentConsumer interface [Print Devices], CloseSender method, print.ixpsdocumentconsumer_closesender, CloseSender, filterpipeline_64223953-a027-45c8-b296-a07ef3340a41.xml, IXpsDocumentConsumer::CloseSender, IXpsDocumentConsumer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IXpsDocumentConsumer.CloseSender
-req.alt-loc : Filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -56,7 +60,7 @@ None
 
 ## Remarks
 
-The filter must call the <code>CloseSender</code> method when it has finished sending the XPS parts to the pipeline.</p>
+The filter must call the <code>CloseSender</code> method when it has finished sending the XPS parts to the pipeline.
 
 ## Requirements
 | &nbsp; | &nbsp; |

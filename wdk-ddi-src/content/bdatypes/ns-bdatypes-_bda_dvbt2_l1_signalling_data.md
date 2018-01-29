@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 34BD68C3-446A-4074-8F5C-E670BE09083A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDA_DVBT2_L1_SIGNALLING_DATA, *PBDA_DVBT2_L1_SIGNALLING_DATA, BDA_DVBT2_L1_SIGNALLING_DATA
+ms.keywords : stream.bda_dvbt2_l1_signalling_data, PBDA_DVBT2_L1_SIGNALLING_DATA structure pointer [Streaming Media Devices], _BDA_DVBT2_L1_SIGNALLING_DATA, PBDA_DVBT2_L1_SIGNALLING_DATA, bdatypes/PBDA_DVBT2_L1_SIGNALLING_DATA, bdatypes/BDA_DVBT2_L1_SIGNALLING_DATA, BDA_DVBT2_L1_SIGNALLING_DATA structure [Streaming Media Devices], BDA_DVBT2_L1_SIGNALLING_DATA, *PBDA_DVBT2_L1_SIGNALLING_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_DVBT2_L1_SIGNALLING_DATA
-req.alt-loc : Bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBDA_DVBT2_L1_SIGNALLING_DATA, BDA_DVBT2_L1_SIGNALLING_DATA"
 ---
 
@@ -59,62 +63,62 @@ typedef struct _BDA_DVBT2_L1_SIGNALLING_DATA {
 
 ## Members
 
-        
-            `L1PostData`
 
-            
-        
-            `L1Pre_BWT_S1_S2`
+`L1PostData`
 
-            
-        
-            `L1Pre_CELL_ID`
 
-            
-        
-            `L1Pre_CRC32`
 
-            
-        
-            `L1Pre_MOD_COD_FEC`
+`L1Pre_BWT_S1_S2`
 
-            
-        
-            `L1Pre_NETWORK_ID`
 
-            
-        
-            `L1Pre_NUM_DATA_REGENFLAG_L1POSTEXT`
 
-            
-        
-            `L1Pre_NUM_T2_FRAMES`
+`L1Pre_CELL_ID`
 
-            
-        
-            `L1Pre_NUMRF_CURRENTRF_RESERVED`
 
-            
-        
-            `L1Pre_POSTSIZE_INFO_PILOT`
 
-            
-        
-            `L1Pre_REPETITION_GUARD_PAPR`
+`L1Pre_CRC32`
 
-            
-        
-            `L1Pre_T2SYSTEM_ID`
 
-            
-        
-            `L1Pre_TX_ID_AVAIL`
 
-            
-        
-            `L1Pre_TYPE`
+`L1Pre_MOD_COD_FEC`
 
-            
+
+
+`L1Pre_NETWORK_ID`
+
+
+
+`L1Pre_NUM_DATA_REGENFLAG_L1POSTEXT`
+
+
+
+`L1Pre_NUM_T2_FRAMES`
+
+
+
+`L1Pre_NUMRF_CURRENTRF_RESERVED`
+
+
+
+`L1Pre_POSTSIZE_INFO_PILOT`
+
+
+
+`L1Pre_REPETITION_GUARD_PAPR`
+
+
+
+`L1Pre_T2SYSTEM_ID`
+
+
+
+`L1Pre_TX_ID_AVAIL`
+
+
+
+`L1Pre_TYPE`
+
+
 
 
 ## Requirements

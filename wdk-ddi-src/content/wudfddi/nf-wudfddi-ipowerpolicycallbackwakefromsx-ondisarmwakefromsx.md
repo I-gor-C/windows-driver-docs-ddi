@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0e2f42af-3eb7-4957-be91-4f31d2d558c2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPowerPolicyCallbackWakeFromSx, IPowerPolicyCallbackWakeFromSx::OnDisarmWakeFromSx, OnDisarmWakeFromSx
+ms.keywords : OnDisarmWakeFromSx method, IPowerPolicyCallbackWakeFromSx interface, UMDFDeviceObjectRef_65152bfc-4855-40ba-ab0d-abfc2415441d.xml, OnDisarmWakeFromSx, IPowerPolicyCallbackWakeFromSx::OnDisarmWakeFromSx, IPowerPolicyCallbackWakeFromSx interface, OnDisarmWakeFromSx method, wdf.ipowerpolicycallbackwakefromsx_ondisarmwakefromsx, IPowerPolicyCallbackWakeFromSx, wudfddi/IPowerPolicyCallbackWakeFromSx::OnDisarmWakeFromSx, OnDisarmWakeFromSx method, umdf.ipowerpolicycallbackwakefromsx_ondisarmwakefromsx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IPowerPolicyCallbackWakeFromSx.OnDisarmWakeFromSx
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -86,17 +90,12 @@ For more information about this callback function, see <a href="https://docs.mic
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-ipowerpolicycallbackwakefromsx.md">IPowerPolicyCallbackWakeFromSx</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556826">IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556833">IPowerPolicyCallbackWakeFromSx::OnWakeFromSxTriggered</a>
-</dt>
-</dl>
+
  
 
  

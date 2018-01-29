@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6C42E6C4-91EB-44A3-84E1-CAFDBD5CD724
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeTokenGetNoChildProcessRestricted
+ms.keywords : SeTokenGetNoChildProcessRestricted, ifsk.setokengetnochildprocessrestricted, SeTokenGetNoChildProcessRestricted function [Installable File System Drivers], ntifs/SeTokenGetNoChildProcessRestricted
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeTokenGetNoChildProcessRestricted
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -89,11 +93,8 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-setokensetnochildprocessrestricted.md">SeTokenSetNoChildProcessRestricted</a>
-</dt>
-</dl>
+
  
 
  

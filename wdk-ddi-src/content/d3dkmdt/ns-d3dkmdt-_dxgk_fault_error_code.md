@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 753FC177-D430-40E5-98CD-B3BDFD47ACEF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_FAULT_ERROR_CODE, DXGK_FAULT_ERROR_CODE
+ms.keywords : d3dkmdt/DXGK_FAULT_ERROR_CODE, _DXGK_FAULT_ERROR_CODE, DXGK_FAULT_ERROR_CODE structure [Display Devices], display.dxgk_fault_error_code, DXGK_FAULT_ERROR_CODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_FAULT_ERROR_CODE
-req.alt-loc : D3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_FAULT_ERROR_CODE
 ---
 
@@ -65,13 +69,10 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmdt\ne-d3dkmdt-_dxgk_general_error_code.md">DXGK_GENERAL_ERROR_CODE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6de3363c-fcf8-4350-acee-b401bb3f82a6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_ALLOCATIONUSAGEINFO1, DXGK_ALLOCATIONUSAGEINFO1
+ms.keywords : display.dxgk_allocationusageinfo1, d3dkmddi/DXGK_ALLOCATIONUSAGEINFO1, DXGK_ALLOCATIONUSAGEINFO1, _DXGK_ALLOCATIONUSAGEINFO1, DXGK_ALLOCATIONUSAGEINFO1 structure [Display Devices], DmStructs_262d3b0f-50c6-429b-9b6e-34963d2ae42b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_ALLOCATIONUSAGEINFO1
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_ALLOCATIONUSAGEINFO1
 ---
 
@@ -69,38 +73,38 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 
 ## Members
 
-        
-            `ByteOffset`
 
-            [out] The offset, in bytes, into the video memory manager's allocation that marks the start of the driver's version of the allocation.
-        
-            `Depth`
+`ByteOffset`
 
-            [out] The depth, in levels, of the allocation (for MIP-mapped and volume textures only).
-        
-            `Flags`
+[out] The offset, in bytes, into the video memory manager's allocation that marks the start of the driver's version of the allocation.
 
-            [out] A union that contains either a structure (with the first eight members that are described below) or a 32-bit value (in the <b>Value</b> member) that identifies how the allocation is used:
-        
-            `Height`
+`Depth`
 
-            [out] The height, in number of lines, of the allocation.
-        
-            `Pitch`
+[out] The depth, in levels, of the allocation (for MIP-mapped and volume textures only).
 
-            [out] The pitch, in bytes, of the allocation--that is, the distance, in bytes, to the start of the next line.
-        
-            `SlicePitch`
+`Flags`
 
-            [out] The slice pitch, in bytes, from level to level (for cube and volume textures only).
-        
-            `SwizzledFormat`
+[out] A union that contains either a structure (with the first eight members that are described below) or a 32-bit value (in the <b>Value</b> member) that identifies how the allocation is used:
 
-            [out] A swizzled format value for the allocation that is private to a specific vendor.
-        
-            `Width`
+`Height`
 
-            [out] The width, in pixels, of the allocation.
+[out] The height, in number of lines, of the allocation.
+
+`Pitch`
+
+[out] The pitch, in bytes, of the allocation--that is, the distance, in bytes, to the start of the next line.
+
+`SlicePitch`
+
+[out] The slice pitch, in bytes, from level to level (for cube and volume textures only).
+
+`SwizzledFormat`
+
+[out] A swizzled format value for the allocation that is private to a specific vendor.
+
+`Width`
+
+[out] The width, in pixels, of the allocation.
 
 
 ## Requirements
@@ -111,22 +115,16 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusagehint.md">DXGK_ALLOCATIONUSAGEHINT</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
  
 
  

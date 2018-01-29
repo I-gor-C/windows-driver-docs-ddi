@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e3bb6ead-8129-4605-8755-3a56d4b3d8f6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsReadFile
+ms.keywords : KsReadFile function [Streaming Media Devices], ksfunc_9264bdad-2acc-46fe-9ca3-d006bf6c3e23.xml, stream.ksreadfile, ks/KsReadFile, KsReadFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsReadFile
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -81,7 +85,7 @@ Specifies the size of the buffer passed.
 
 `OPTIONAL`
 
-
+TBD
 
 `RequestorMode`
 

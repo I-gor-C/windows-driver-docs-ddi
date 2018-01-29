@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bf1b9c63-6fc2-4006-8f9a-d4b50d61d270
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeSend
+ms.keywords : rxce/RxCeSend, rxref_07c5b21c-253c-4032-a5e8-61c4e71450fb.xml, RxCeSend, RxCeSend function [Installable File System Drivers], ifsk.rxcesend
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeSend
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -77,15 +81,45 @@ The context passed back to the caller during <b>SendCompletion</b> for asynchron
 ## Return Value
 
 <b>RxCeSend</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_CONNECTION_DISCONNECTED</b></dt>
-</dl>An invalid or disconnected virtual circuit or connection was specified
+</dl>
+</td>
+<td width="60%">
+An invalid or disconnected virtual circuit or connection was specified
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The allocation of nonpaged pool memory needed by this routine failed. 
+</dl>
+</td>
+<td width="60%">
+The allocation of nonpaged pool memory needed by this routine failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid length was passed in the <i>SendLength</i> parameter based on the <i>SendOptions</i> specified.
+</dl>
+</td>
+<td width="60%">
+An invalid length was passed in the <i>SendLength</i> parameter based on the <i>SendOptions</i> specified.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -111,14 +145,10 @@ The benefit of asynchronous and synchronous options depends on the underlying tr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-</dt>
-<dt>
+
 <a href="..\rxce\nf-rxce-rxcesenddatagram.md">RxCeSendDatagram</a>
-</dt>
-</dl>
+
  
 
  

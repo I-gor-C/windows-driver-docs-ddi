@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0dfa2eb8-a7f6-46d9-9599-5e2aaf583f78
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IRemoteInterfaceCallbackRemoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval
+ms.keywords : IRemoteInterfaceCallbackRemoval, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval method, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IRemoteInterfaceCallbackRemoval.OnRemoteInterfaceRemoval
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -82,17 +86,12 @@ For more information about a driver's <b>OnRemoteInterfaceRemoval</b> event call
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556889">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
+
+<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
+
  
 
  

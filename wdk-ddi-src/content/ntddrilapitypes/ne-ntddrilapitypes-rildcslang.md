@@ -7,8 +7,8 @@ old-location : netvista\rildcslang.htm
 old-project : netvista
 ms.assetid : bc39cb1a-d08a-40d7-a7c6-0342a90654dc
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDCSLANG, RILDCSLANG
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_DCSLANG_ITALIAN, RIL_DCSLANG_POLISH, ntddrilapitypes/RIL_DCSLANG_UNKNOWN, ntddrilapitypes/RIL_DCSLANG_SWEDISH, RIL_DCSLANG_HEBREW, RILDCSLANG enumeration [Network Drivers Starting with Windows Vista], RIL_DCSLANG_ENGLISH, RIL_DCSLANG_RUSSIAN, RILDCSLANG, ntddrilapitypes/RIL_DCSLANG_DUTCH, RIL_DCSLANG_DANISH, ntddrilapitypes/RIL_DCSLANG_POLISH, ntddrilapitypes/RIL_DCSLANG_FINNISH, ntddrilapitypes/RIL_DCSLANG_CZECH, ntddrilapitypes/RIL_DCSLANG_HEBREW, RIL_DCSLANG_ARABIC, ntddrilapitypes/RIL_DCSLANG_FRENCH, RIL_DCSLANG_SWEDISH, ntddrilapitypes/RIL_DCSLANG_HUNGARIAN, ntddrilapitypes/RIL_DCSLANG_DANISH, ntddrilapitypes/RIL_DCSLANG_SPANISH, ntddrilapitypes/RIL_DCSLANG_ICELANDIC, RIL_DCSLANG_ICELANDIC, ntddrilapitypes/RIL_DCSLANG_RUSSIAN, netvista.rildcslang, RIL_DCSLANG_HUNGARIAN, RIL_DCSLANG_NORWEGIAN, RIL_DCSLANG_UNKNOWN, RIL_DCSLANG_ALL, ntddrilapitypes/RILDCSLANG, RIL_DCSLANG_SPANISH, ntddrilapitypes/RIL_DCSLANG_GERMAN, RIL_DCSLANG_ITALIAN, RIL_DCSLANG_FRENCH, RIL_DCSLANG_TURKISH, ntddrilapitypes/RIL_DCSLANG_PORTUGUESE, ntddrilapitypes/RIL_DCSLANG_ARABIC, ntddrilapitypes/RIL_DCSLANG_GREEK, RIL_DCSLANG_GREEK, RIL_DCSLANG_PORTUGUESE, ntddrilapitypes/RIL_DCSLANG_NORWEGIAN, RIL_DCSLANG_CZECH, ntddrilapitypes/RIL_DCSLANG_TURKISH, RIL_DCSLANG_FINNISH, RIL_DCSLANG_DUTCH, ntddrilapitypes/RIL_DCSLANG_ALL, ntddrilapitypes/RIL_DCSLANG_ENGLISH, RIL_DCSLANG_GERMAN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDCSLANG
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILDCSLANG
 ---
 
@@ -136,6 +140,11 @@ typedef enum _RILDCSLANG {
 
 <tr>
 <td>RIL_DCSLANG_ITALIAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_None</td>
 <td></td>
 </tr>
 

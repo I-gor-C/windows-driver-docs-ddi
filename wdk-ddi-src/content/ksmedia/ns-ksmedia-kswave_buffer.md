@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1bd19fcd-90da-4e1a-ac9a-692c6fddc7ab
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSWAVE_BUFFER, *PKSWAVE_BUFFER, KSWAVE_BUFFER
+ms.keywords : KSWAVE_BUFFER structure [Streaming Media Devices], ksmedia/PKSWAVE_BUFFER, dvdref_8b774201-3725-497e-8545-10c5cad2ef1f.xml, PKSWAVE_BUFFER, ksmedia/KSWAVE_BUFFER, stream.kswave_buffer, KSWAVE_BUFFER, PKSWAVE_BUFFER structure pointer [Streaming Media Devices], *PKSWAVE_BUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSWAVE_BUFFER
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSWAVE_BUFFER, KSWAVE_BUFFER"
 ---
 
@@ -48,11 +52,10 @@ typedef struct {
 
 ## Members
 
-        
-            `Attributes`
 
-            Specifies the following flags:
+`Attributes`
 
+Specifies the following flags:
 <table>
 <tr>
 <th>Flag</th>
@@ -79,17 +82,17 @@ Indicates that the buffer is static.
 </td>
 </tr>
 </table>
-        
-            `BufferAddress`
 
-            Specifies the starting address of the buffer.
-        
-            `BufferSize`
+`BufferAddress`
 
-            Specifies the size of the buffer, in bytes.
+Specifies the starting address of the buffer.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566514">KSPROPERTY_WAVE_BUFFER</a> property.
+`BufferSize`
+
+Specifies the size of the buffer, in bytes.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566514">KSPROPERTY_WAVE_BUFFER</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,13 +102,10 @@ Indicates that the buffer is static.
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566514">KSPROPERTY_WAVE_BUFFER</a>
-</dt>
-</dl>
+
  
 
  

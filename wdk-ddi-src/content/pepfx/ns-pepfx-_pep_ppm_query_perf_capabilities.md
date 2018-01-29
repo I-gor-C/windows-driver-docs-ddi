@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 562EA523-A74D-4D46-8C01-12C745106F86
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_QUERY_PERF_CAPABILITIES, PEP_PPM_QUERY_PERF_CAPABILITIES, *PPEP_PPM_QUERY_PERF_CAPABILITIES
+ms.keywords : PEP_PPM_QUERY_PERF_CAPABILITIES, PPEP_PPM_QUERY_PERF_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_PERF_CAPABILITIES structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_query_perf_capabilities, pepfx/PEP_PPM_QUERY_PERF_CAPABILITIES, *PPEP_PPM_QUERY_PERF_CAPABILITIES, PPEP_PPM_QUERY_PERF_CAPABILITIES, _PEP_PPM_QUERY_PERF_CAPABILITIES, pepfx/PPEP_PPM_QUERY_PERF_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_QUERY_PERF_CAPABILITIES
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_PPM_QUERY_PERF_CAPABILITIES, *PPEP_PPM_QUERY_PERF_CAPABILITIES
 ---
 
@@ -51,33 +55,33 @@ typedef struct _PEP_PPM_QUERY_PERF_CAPABILITIES {
 
 ## Members
 
-        
-            `DomainId`
 
-            [out] The domain ID of the processor performance domain.
-        
-            `DomainMembers`
+`DomainId`
 
-            [out] The number of processors in this performance domain.
-        
-            `HighestPerformance`
+[out] The domain ID of the processor performance domain.
 
-            [out] The highest performance level in platform-specific units. For more information, see Remarks.
-        
-            `LowestNonlinearPerformance`
+`DomainMembers`
 
-            [out] The lowest nonlinear performance level in platform-specific units. For more information, see Remarks.
-        
-            `LowestPerformance`
+[out] The number of processors in this performance domain.
 
-            [out] The lowest performance level in platform-specific units. For more information, see Remarks.
-        
-            `NominalPerformance`
+`HighestPerformance`
 
-            [out] The nominal performance level in platform-specific units. For more information, see Remarks.
+[out] The highest performance level in platform-specific units. For more information, see Remarks.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186825">PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES</a> notification. All six members contain output values that the platform extension plug-in (PEP) writes to the structure in response to this notification.
+`LowestNonlinearPerformance`
+
+[out] The lowest nonlinear performance level in platform-specific units. For more information, see Remarks.
+
+`LowestPerformance`
+
+[out] The lowest performance level in platform-specific units. For more information, see Remarks.
+
+`NominalPerformance`
+
+[out] The nominal performance level in platform-specific units. For more information, see Remarks.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186825">PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES</a> notification. All six members contain output values that the platform extension plug-in (PEP) writes to the structure in response to this notification.
 
 Processor performance levels are specified in platform-specific units. For example, a hardware platform might use a metric such as the processor clock frequency to provide a rough approximation to the amount of processing work that is being done. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt629132">Platform Performance Thresholds</a>.
 
@@ -89,16 +93,12 @@ Processor performance levels are specified in platform-specific units. For examp
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186825">PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt629132">Platform Performance Thresholds</a>
-</dt>
-</dl>
+
  
 
  

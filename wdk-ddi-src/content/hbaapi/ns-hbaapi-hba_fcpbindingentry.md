@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c9c46133-a660-46c6-911b-77c2dd2ed2e0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FCPBindingEntry, HBA_FCPBINDINGENTRY, *PHBA_FCPBINDINGENTRY
+ms.keywords : storage.hba_fcpbindingentry, structs-Fibre_b3a84cf5-d8d5-41cc-9fe3-d362da586cbc.xml, *PHBA_FCPBINDINGENTRY, HBA_FCPBindingEntry, hbaapi/HBA_FCPBindingEntry, HBA_FCPBindingEntry structure [Storage Devices], HBA_FCPBINDINGENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_FCPBindingEntry
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_FCPBINDINGENTRY, *PHBA_FCPBINDINGENTRY
 ---
 

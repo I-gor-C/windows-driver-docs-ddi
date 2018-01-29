@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 97914eb2-18fd-4b7b-8dcd-475c4d98927c
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : hid.ioctl_hid_flush_queue, IOCTL_HID_FLUSH_QUEUE control code [Human Input Devices], IOCTL_HID_FLUSH_QUEUE, hidclass/IOCTL_HID_FLUSH_QUEUE, hidioreq_d7b2ccb0-76c8-4aa7-9d05-b8226106baa6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_FLUSH_QUEUE
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -61,7 +65,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The HID class driver sets the <b>Status</b> member of <b>Irp-&gt;IoStatus</b> to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
 
 
@@ -72,13 +75,10 @@ The HID class driver sets the <b>Status</b> member of <b>Irp-&gt;IoStatus</b> to
 | **Header** | hidclass.h (include Hidclass.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidsdi\nf-hidsdi-hidd_flushqueue.md">HidD_FlushQueue</a>
-</dt>
-</dl>
+
  
 
  

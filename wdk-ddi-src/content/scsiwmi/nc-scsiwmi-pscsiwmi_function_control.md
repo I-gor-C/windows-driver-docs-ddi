@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a975e201-9015-4315-830e-4cd7cc5a3bc5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SCSISCAN_INFO, *PSCSISCAN_INFO, SCSISCAN_INFO
+ms.keywords : storage.hwscsiwmifunctioncontrol, HwScsiWmiFunctionControl callback function [Storage Devices], HwScsiWmiFunctionControl, PSCSIWMI_FUNCTION_CONTROL, PSCSIWMI_FUNCTION_CONTROL, scsiwmi/HwScsiWmiFunctionControl, Scsimini_42361f5c-fc45-4883-997e-afa65bc376c4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwScsiWmiFunctionControl
-req.alt-loc : scsiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,13 +29,20 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSCSISCAN_INFO, SCSISCAN_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCSISCAN_INFO, *PSCSISCAN_INFO
 req.product : Windows 10 or later.
 ---
 
 
 # PSCSIWMI_FUNCTION_CONTROL callback function
 A miniport driver's <b>HwScsiWmiFunctionControl</b> routine is called to enable or disable notification of events. It is also called to enable or disable data collection for data blocks that the miniport driver designated as expensive to collect. This routine is optional.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -105,20 +110,14 @@ If the SRB is completed in the <b>HwScsiWmiFunctionControl</b> callback, then th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\scsiwmi\ns-scsiwmi-scsiwmiguidreginfo.md">SCSIWMIGUIDREGINFO</a>
-</dt>
-<dt>
-<a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
-</dt>
-<dt>
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
-</dt>
-<dt>
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a>
-</dt>
-</dl>
+
+<a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
+
+<a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
+
+<a href="..\scsiwmi\ns-scsiwmi-scsiwmiguidreginfo.md">SCSIWMIGUIDREGINFO</a>
+
  
 
  

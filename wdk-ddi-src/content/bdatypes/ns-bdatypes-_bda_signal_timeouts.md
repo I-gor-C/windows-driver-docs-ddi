@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : CFEF848D-8268-4FFC-A629-D122021D8411
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDA_SIGNAL_TIMEOUTS, *PBDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS
+ms.keywords : "*PBDA_SIGNAL_TIMEOUTS, PBDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS structure [Streaming Media Devices], bdatypes/PBDA_SIGNAL_TIMEOUTS, _BDA_SIGNAL_TIMEOUTS, stream.bda_signal_timeouts, bdatypes/BDA_SIGNAL_TIMEOUTS, PBDA_SIGNAL_TIMEOUTS structure pointer [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_SIGNAL_TIMEOUTS
-req.alt-loc : Bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS"
 ---
 
@@ -48,18 +52,18 @@ typedef struct _BDA_SIGNAL_TIMEOUTS {
 
 ## Members
 
-        
-            `ulCarrierTimeoutMs`
 
-            
-        
-            `ulScanningTimeoutMs`
+`ulCarrierTimeoutMs`
 
-            
-        
-            `ulTuningTimeoutMs`
 
-            
+
+`ulScanningTimeoutMs`
+
+
+
+`ulTuningTimeoutMs`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f5083841-a6d7-4437-9941-bd7dca2f1771
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortBuildRequestSenseIrb
+ms.keywords : atartns_82b5c3cd-1956-47a0-9c05-cd18dbb2e2b6.xml, AtaPortBuildRequestSenseIrb routine [Storage Devices], irb/AtaPortBuildRequestSenseIrb, AtaPortBuildRequestSenseIrb, storage.ataportbuildrequestsenseirb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortBuildRequestSenseIrb
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortBuildRequestSenseIrb function
 The <b>AtaPortBuildRequestSenseIrb</b> routine builds and returns an IRB for operation code SCSIOP_REQUEST_SENSE.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -84,11 +89,8 @@ The miniport driver can have only one outstanding request sense IRB per logical 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportreleaserequestsenseirb.md">AtaPortReleaseRequestSenseIrb</a>
-</dt>
-</dl>
+
  
 
  

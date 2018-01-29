@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 404e1893-8ee2-429c-b7e3-e6d8d01eaa1c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_USB_PIPE_DIRECTION_OUT
+ms.keywords : wdfusb/WDF_USB_PIPE_DIRECTION_OUT, WDF_USB_PIPE_DIRECTION_OUT, WDF_USB_PIPE_DIRECTION_OUT function, wdf.wdf_usb_pipe_direction_out, kmdf.wdf_usb_pipe_direction_out, DFUsbRef_24f2180e-94da-4d77-9209-6bf97ea051a3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_PIPE_DIRECTION_OUT
-req.alt-loc : None,None.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : None
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -80,14 +84,10 @@ For more information about the <b>WDF_USB_PIPE_DIRECTION_OUT</b> function and US
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_in.md">WDF_USB_PIPE_DIRECTION_IN</a>
-</dt>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeisoutendpoint.md">WdfUsbTargetPipeIsOutEndpoint</a>
-</dt>
-</dl>
+
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_in.md">WDF_USB_PIPE_DIRECTION_IN</a>
+
  
 
  

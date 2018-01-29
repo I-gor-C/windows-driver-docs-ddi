@@ -7,8 +7,8 @@ old-location : netvista\ril_setpreferredoperatorlist.htm
 old-project : netvista
 ms.assetid : e61e9e3f-b70f-4b0a-8e64-4c7c4c086130
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL_SetPreferredOperatorList
+ms.date : 1/18/2018
+ms.keywords : RIL_SetPreferredOperatorList method [Network Drivers Starting with Windows Vista], netvista.ril_setpreferredoperatorlist, RIL_SetPreferredOperatorList, rilapi/RIL_SetPreferredOperatorList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL_SetPreferredOperatorList
-req.alt-loc : rilapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b9f72e79-930c-456e-8001-5df808604caa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSynchronousDeviceControl
+ms.keywords : stream.iksinterfacehandler, IKsInterfaceHandler interface [Streaming Media Devices], IKsInterfaceHandler interface [Streaming Media Devices], described, IKsInterfaceHandler, ksproxy/IKsInterfaceHandler, ksproxy_9d597bae-a5d7-4575-a4ac-983b827b0ae4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsInterfaceHandler
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -69,16 +73,12 @@ For more information about <b>CoCreateInstance</b>, see the Microsoft Windows SD
 | **Header** | ksproxy.h |
 | **DLL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
+
  
 
  

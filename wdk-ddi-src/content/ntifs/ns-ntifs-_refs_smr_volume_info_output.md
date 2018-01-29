@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0DCBAF5F-AEBC-4C4B-9DBD-F7A6FD6C7712
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT
+ms.keywords : PREFS_SMR_VOLUME_INFO_OUTPUT structure pointer [Installable File System Drivers], *PREFS_SMR_VOLUME_INFO_OUTPUT, _REFS_SMR_VOLUME_INFO_OUTPUT, ifsk.refs_smr_volume_info_output, ntifs/PREFS_SMR_VOLUME_INFO_OUTPUT, PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT structure [Installable File System Drivers], REFS_SMR_VOLUME_INFO_OUTPUT, ntifs/REFS_SMR_VOLUME_INFO_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REFS_SMR_VOLUME_INFO_OUTPUT
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT
 ---
 
@@ -55,42 +59,46 @@ typedef struct _REFS_SMR_VOLUME_INFO_OUTPUT {
 
 ## Members
 
-        
-            `Flags`
 
-            Currently ignored. Will be set to zero for now.
-        
-            `FreeSpaceInRandomlyWritableTier`
+`Flags`
 
-            Specifies the free space within the randomly writable tier.
-        
-            `SizeOfRandomlyWritableTier`
+Currently ignored. Will be set to zero for now.
 
-            Specifies the total size of the randomly writable tier.
-        
-            `SizeofSMRTier`
+`FreeSpaceInRandomlyWritableTier`
 
-            Specifies the total size of the Shingled Magnetic Recording (SMR) tier.
-        
-            `Unused`
+Specifies the free space within the randomly writable tier.
 
-            Reserved for future use.
-        
-            `UsableFreeSpaceInSMRTier`
+`FreeSpaceInSMRTier`
 
-            Specifies the usable space the Shingled Magnetic Recording (SMR) tier.
-        
-            `Version`
+Specifies the free space the Shingled Magnetic Recording (SMR) tier.
 
-            Currently ignored.  Will be set to zero for now.
-        
-            `VolumeGcLastStatus`
+`SizeOfRandomlyWritableTier`
 
-            Specifies the status of the last garbage collection using the specified method in <a href="..\ntifs\ne-ntifs-_refs_smr_volume_gc_method.md">REFS_SMR_VOLUME_GC_METHOD</a>.
-        
-            `VolumeGcState`
+Specifies the total size of the randomly writable tier.
 
-            Specifies the current state of the garbage collector.
+`SizeofSMRTier`
+
+Specifies the total size of the Shingled Magnetic Recording (SMR) tier.
+
+`Unused`
+
+Reserved for future use.
+
+`UsableFreeSpaceInSMRTier`
+
+Specifies the usable space the Shingled Magnetic Recording (SMR) tier.
+
+`Version`
+
+Currently ignored.  Will be set to zero for now.
+
+`VolumeGcLastStatus`
+
+Specifies the status of the last garbage collection using the specified method in <a href="..\ntifs\ne-ntifs-_refs_smr_volume_gc_method.md">REFS_SMR_VOLUME_GC_METHOD</a>.
+
+`VolumeGcState`
+
+Specifies the current state of the garbage collector.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 44b7f841-40e5-4d7d-adca-b70b4a8ef55c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
+ms.keywords : d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, DmStructs_8a17e0fc-7c6c-4c95-bbdb-471beef9e830.xml, display.d3dkmdt_vidpn_present_path_scaling_support, D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure [Display Devices], _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
 ---
 
@@ -50,31 +54,31 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT {
 
 ## Members
 
-        
-            `AspectRatioCenteredMax`
 
-            The path is capable of scaling source content to fit the target while preserving the aspect ratio of the source.
+`AspectRatioCenteredMax`
+
+The path is capable of scaling source content to fit the target while preserving the aspect ratio of the source.
 
 This member is available beginning with Windows 7.
-        
-            `Centered`
 
-            The path is capable of displaying centered content.
-        
-            `Custom`
+`Centered`
 
-            The path is capable of displaying one or more scaling modes that are not described by other members of this structure.
-        
-            `Identity`
+The path is capable of displaying centered content.
 
-            The path is capable of displaying content with no transformation.
-        
-            `Stretched`
+`Custom`
 
-            The path is capable of displaying scaled content.
+The path is capable of displaying one or more scaling modes that are not described by other members of this structure.
 
-    ## Remarks
-        The <b>ScalingSupport</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure.
+`Identity`
+
+The path is capable of displaying content with no transformation.
+
+`Stretched`
+
+The path is capable of displaying scaled content.
+
+## Remarks
+The <b>ScalingSupport</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,16 +88,12 @@ This member is available beginning with Windows 7.
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a>
-</dt>
-</dl>
+
  
 
  

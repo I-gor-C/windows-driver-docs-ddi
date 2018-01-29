@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : FCFCBF4C-CBAA-4284-A6F4-67630608CF19
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeTokenSetNoChildProcessRestricted
+ms.keywords : SeTokenSetNoChildProcessRestricted, ntifs/SeTokenSetNoChildProcessRestricted, SeTokenSetNoChildProcessRestricted function [Installable File System Drivers], ifsk.setokensetnochildprocessrestricted
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeTokenSetNoChildProcessRestricted
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -89,11 +93,8 @@ Note that both flags cannot be set at the same time
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-setokengetnochildprocessrestricted.md">SeTokenGetNoChildProcessRestricted</a>
-</dt>
-</dl>
+
  
 
  

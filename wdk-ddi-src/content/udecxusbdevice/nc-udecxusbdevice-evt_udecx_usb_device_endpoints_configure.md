@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5E425011-BFC7-434C-9D0A-DB4481EC315F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUrbSetBytesCompleted
+ms.keywords : buses.evt_udecx_usb_device_endpoints_configure, EvtUsbDeviceEndpointsConfigure callback function [Buses], EvtUsbDeviceEndpointsConfigure, EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE, EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE, udecxusbdevice/EvtUsbDeviceEndpointsConfigure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : EvtUsbDeviceEndpointsConfigure
-req.alt-loc : UdecxUsbDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
 req.product : Windows 10 or later.
 ---
 
@@ -101,17 +105,12 @@ This call is asynchronous. The client driver must signals completion with status
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointsetwdfioqueue.md">UdecxUsbEndpointSetWdfIoQueue</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointsetwdfioqueue.md">UdecxUsbEndpointSetWdfIoQueue</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FA3365DC-B604-468E-AACD-AC006D2B4EAF
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION
+ms.keywords : KSCAMERA_METADATA_PHOTOCONFIRMATION structure [Streaming Media Devices], PKSCAMERA_METADATA_PHOTOCONFIRMATION structure pointer [Streaming Media Devices], stream.kscamera_metadata_photoconfirmation, KSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, PKSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/PKSCAMERA_METADATA_PHOTOCONFIRMATION, tagKSCAMERA_METADATA_PHOTOCONFIRMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_METADATA_PHOTOCONFIRMATION
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION"
 ---
 
 # tagKSCAMERA_METADATA_PHOTOCONFIRMATION structure
@@ -48,18 +52,18 @@ typedef struct tagKSCAMERA_METADATA_PHOTOCONFIRMATION {
 
 ## Members
 
-        
-            `Header`
 
-            Contains the header information for the metadata item
-        
-            `PhotoConfirmationIndex`
+`Header`
 
-            Stores the index of the still confirmation frame. For single photo capture, this is always 0. For multishot, this corresponds to the index of the photo frame captured.
-        
-            `Reserved`
+Contains the header information for the metadata item
 
-            Reserved for future use.
+`PhotoConfirmationIndex`
+
+Stores the index of the still confirmation frame. For single photo capture, this is always 0. For multishot, this corresponds to the index of the photo frame captured.
+
+`Reserved`
+
+Reserved for future use.
 
 
 ## Requirements

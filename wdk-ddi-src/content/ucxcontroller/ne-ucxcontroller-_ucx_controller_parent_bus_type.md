@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : FD78074D-E128-4085-A178-0133C9256E42
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_CONTROLLER_PARENT_BUS_TYPE, UCX_CONTROLLER_PARENT_BUS_TYPE
+ms.keywords : ucxcontroller/UcxControllerParentBusTypeAcpi, ucxcontroller/UcxControllerParentBusTypeCustom, _UCX_CONTROLLER_PARENT_BUS_TYPE, UcxControllerParentBusTypeCustom, buses.ucx_controller_parent_bus_type, UcxControllerParentBusTypePci, UCX_CONTROLLER_PARENT_BUS_TYPE enumeration [Buses], ucxcontroller/UcxControllerParentBusTypePci, UcxControllerParentBusTypeAcpi, UCX_CONTROLLER_PARENT_BUS_TYPE, ucxcontroller/UCX_CONTROLLER_PARENT_BUS_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_CONTROLLER_PARENT_BUS_TYPE
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_PARENT_BUS_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,6 +66,11 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 </tr>
 
 <tr>
+<td>UcxControllerParentBusTypeMaUsb</td>
+<td></td>
+</tr>
+
+<tr>
 <td>UcxControllerParentBusTypePci</td>
 <td>Parent bus is PCI.</td>
 </tr>
@@ -78,11 +87,8 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a>
-</dt>
-</dl>
+
  
 
  

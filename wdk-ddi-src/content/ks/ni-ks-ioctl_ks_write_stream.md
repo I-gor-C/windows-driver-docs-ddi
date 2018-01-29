@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 560cfc18-5cbe-4af7-b579-3904ee68acbf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_write_stream, IOCTL_KS_WRITE_STREAM control code [Streaming Media Devices], IOCTL_KS_WRITE_STREAM, ks/IOCTL_KS_WRITE_STREAM, ks-ioctl_83263ce8-e0b1-4ae5-a5b8-848e0fb99471.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_WRITE_STREAM
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -50,7 +54,7 @@ The <b>InLength</b> parameter should specify the size, in bytes, of the input bu
 Kernel streaming provides the number of bytes written in the <b>BytesReturned</b> parameter.
 
 ### Output Buffer Length
-
+<text></text>
 
 ### Input / Output Buffer
 <text></text>
@@ -59,7 +63,6 @@ Kernel streaming provides the number of bytes written in the <b>BytesReturned</b
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 
@@ -70,16 +73,12 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ni-ks-ioctl_ks_read_stream.md">IOCTL_KS_READ_STREAM</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksprobestreamirp.md">KsProbeStreamIrp</a>
-</dt>
-</dl>
+
+<a href="..\ks\ni-ks-ioctl_ks_read_stream.md">IOCTL_KS_READ_STREAM</a>
+
  
 
  

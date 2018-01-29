@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e11c6e8d-a338-4427-af04-bdb07b9e9a73
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPIN_PHYSICALCONNECTION, *PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION
+ms.keywords : ks/KSPIN_PHYSICALCONNECTION, stream.kspin_physicalconnection, PKSPIN_PHYSICALCONNECTION structure pointer [Streaming Media Devices], ks/PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION structure [Streaming Media Devices], *PKSPIN_PHYSICALCONNECTION, ks-struct_7b9a3e0f-2cd9-4822-8e8a-03355dc522ed.xml, PKSPIN_PHYSICALCONNECTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPIN_PHYSICALCONNECTION
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION"
 ---
 
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `Pin`
 
-            Specifies the PinId of the connected pin on the other filter. (Pin 2 of Wave is connected to Pin 1 of Topology.)
-        
-            `Size`
+`Pin`
 
-            Specifies the size of the structure. Note that the structure contains a dynamic array.
-        
-            `SymbolicLinkName`
+Specifies the PinId of the connected pin on the other filter. (Pin 2 of Wave is connected to Pin 1 of Topology.)
 
-            Specifies a string containing the symbolic link name of the connected filter
+`Size`
 
-    ## Remarks
-        This structure is used with port class only.
+Specifies the size of the structure. Note that the structure contains a dynamic array.
+
+`SymbolicLinkName`
+
+Specifies a string containing the symbolic link name of the connected filter
+
+## Remarks
+This structure is used with port class only.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
-</dt>
-</dl>
+
  
 
  

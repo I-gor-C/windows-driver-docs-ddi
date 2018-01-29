@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 18CB1032-78CB-4D65-9077-02B89E9C31B4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.transitioncriticalresource, TransitionCriticalResource, TransitionCriticalResource routine [Kernel-Mode Driver Architecture], TransitionCriticalResource, POFXCALLBACKCRITICALRESOURCE, POFXCALLBACKCRITICALRESOURCE, pepfx/TransitionCriticalResource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TransitionCriticalResource
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= HIGH_LEVEL
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -90,17 +94,12 @@ A PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-</dt>
-<dt>
+
+<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
+
 <a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
-</dt>
-</dl>
+
  
 
  

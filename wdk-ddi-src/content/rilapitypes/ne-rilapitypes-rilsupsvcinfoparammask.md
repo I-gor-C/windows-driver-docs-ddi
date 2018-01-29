@@ -7,8 +7,8 @@ old-location : netvista\rilsupsvcinfoparammask_2.htm
 old-project : netvista
 ms.assetid : 52dd2092-939a-491b-af2d-2ea86eabf99a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSUPSVCINFOPARAMMASK, RILSUPSVCINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_PARAM_SSI_ALL, rilapitypes/RIL_PARAM_SSI_ALPHA_IDENTIFIER, RIL_PARAM_SSI_FAILURE_REASON, RIL_PARAM_SSI_CALLER_ID_SETTINGS, RIL_PARAM_SSI_SUPSERVICE_DATA, rilapitypes/RIL_PARAM_SSI_NEW_CALL_BARRING_PASSWORD, RIL_PARAM_SSI_SUPSVC_TYPE, RIL_PARAM_SSI_CALL_FORWARDING_REASON, RIL_PARAM_SSI_HIDE_ID_SETTINGS, rilapitypes/RIL_PARAM_SSI_SUPSVC_TYPE, rilapitypes/RIL_PARAM_SSI_CONNECTED_ID_SETTINGS, RIL_PARAM_SSI_NEW_CALL_BARRING_PASSWORD, rilapitypes/RIL_PARAM_SSI_CALL_FORWARDING_SETTINGS, RIL_PARAM_SSI_ALPHA_IDENTIFIER, rilapitypes/RIL_PARAM_SSI_FROM_NETWORK, netvista.rilsupsvcinfoparammask_2, rilapitypes/RIL_PARAM_SSI_SUPSERVICE_DATA, RIL_PARAM_SSI_ALL, RIL_PARAM_SSI_DIALED_ID_SETTINGS, rilapitypes/RIL_PARAM_SSI_CALL_FORWARDING_REASON, RIL_PARAM_SSI_INFOCLASSES, rilapitypes/RIL_PARAM_SSI_HIDE_ID_SETTINGS, rilapitypes/RIL_PARAM_SSI_SUPSVC_ACTION, rilapitypes/RIL_PARAM_SSI_INFOCLASSES, RILSUPSVCINFOPARAMMASK, rilapitypes/RIL_PARAM_SSI_CALLER_ID_SETTINGS, rilapitypes/RIL_PARAM_SSI_CALL_BARRING_TYPE, RILSUPSVCINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_SSI_CALL_BARRING_PASSWORD, rilapitypes/RIL_PARAM_SSI_FAILURE_REASON, RIL_PARAM_SSI_SUPSVC_ACTION, RIL_PARAM_SSI_FROM_NETWORK, RIL_PARAM_SSI_CALL_FORWARDING_SETTINGS, RIL_PARAM_SSI_CONNECTED_ID_SETTINGS, RIL_PARAM_SSI_CALL_BARRING_PASSWORD, RIL_PARAM_SSI_CALL_BARRING_TYPE, rilapitypes/RILSUPSVCINFOPARAMMASK, rilapitypes/RIL_PARAM_SSI_DIALED_ID_SETTINGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSUPSVCINFOPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSUPSVCINFOPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -107,6 +111,11 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_SSI_DIALED_ID_SETTINGS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SSI_EXECUTOR</td>
 <td></td>
 </tr>
 

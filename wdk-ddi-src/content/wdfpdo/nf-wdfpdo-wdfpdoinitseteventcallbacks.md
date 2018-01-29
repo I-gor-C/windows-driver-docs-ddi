@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7ce47eab-c1d7-4a0d-accb-c8a925aa3d1d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoInitSetEventCallbacks
+ms.keywords : wdfpdo/WdfPdoInitSetEventCallbacks, wdf.wdfpdoinitseteventcallbacks, DFDeviceObjectFdoPdoRef_00002737-467e-4449-8c6c-498860a18747.xml, WdfPdoInitSetEventCallbacks, kmdf.wdfpdoinitseteventcallbacks, WdfPdoInitSetEventCallbacks method, PFN_WDFPDOINITSETEVENTCALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfPdoInitSetEventCallbacks
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : ChildDeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ The bus driver must allocate a <a href="..\wdfpdo\ns-wdfpdo-_wdf_pdo_event_callb
 
 The driver must call <b>WdfPdoInitSetEventCallbacks</b> before calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfPdoInitSetEventCallbacks</b> and <b>WdfDeviceCreate</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-device-objects-in-a-bus-driver">Creating Device Objects in a Bus Driver</a>.
 
-The following code example initializes a <a href="..\wdfpdo\ns-wdfpdo-_wdf_pdo_event_callbacks.md">WDF_PDO_EVENT_CALLBACKS</a> structure and then calls <b>WdfPdoInitSetEventCallbacks</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,14 +89,10 @@ The following code example initializes a <a href="..\wdfpdo\ns-wdfpdo-_wdf_pdo_e
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfpdo\nf-wdfpdo-wdf_pdo_event_callbacks_init.md">WDF_PDO_EVENT_CALLBACKS_INIT</a>
-</dt>
-<dt>
+
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitallocate.md">WdfPdoInitAllocate</a>
-</dt>
-</dl>
+
  
 
  

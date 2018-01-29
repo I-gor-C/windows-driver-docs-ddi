@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2DE78869-9AFC-423A-BCB0-B7BBAB0C06BC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorPdConnectionStateChanged
+ms.keywords : ucmmanager/UcmConnectorPdConnectionStateChanged, UcmConnectorPdConnectionStateChanged method [Buses], UcmConnectorPdConnectionStateChanged, buses.ucmconnectorpdconnectionstatechanged
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmConnectorPdConnectionStateChanged
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -52,11 +56,11 @@ NTSTATUS UcmConnectorPdConnectionStateChanged(
 
 `Connector`
 
-
+Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
 
 `Params`
 
-
+Pointer to a  <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_pd_conn_state_changed_params.md">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a> structure contains driver-supplied state of the connector.
 
 
 ## Return Value
@@ -78,11 +82,8 @@ NTSTATUS UcmConnectorPdConnectionStateChanged(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-</dl>
+
  
 
  

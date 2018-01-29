@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 9e02f32b-cd39-4953-9698-a1800bedf0e2
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpCreateNodeSequence
+ms.keywords : sdplib/SdpCreateNodeSequence, bth_funcs_646168a7-522f-425c-99b7-706b84e02e20.xml, SdpCreateNodeSequence function [Bluetooth Devices], SdpCreateNodeSequence, bltooth.sdpcreatenodesequence
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpCreateNodeSequence
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -65,8 +69,8 @@ If successful, this function returns a pointer to the newly allocated
 
 After a sequence node is created by calling the 
     <b>SdpCreateNodeSequence</b> function, Bluetooth drivers can call the 
-    <a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">
-    SdpAppendNodeToContainerNode</a> function to insert other nodes into the sequence node or to add the
+    <mshelp:link keywords="bltooth.sdpappendnodetocontainernode" tabindex="0"><b>
+    SdpAppendNodeToContainerNode</b></mshelp:link> function to insert other nodes into the sequence node or to add the
     new sequence node to another sequence node.
 
 A sequence node can be added as a top-level attribute of an SDP record by calling the 
@@ -86,17 +90,12 @@ A sequence node can be added as a top-level attribute of an SDP record by callin
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
-</dt>
-<dt>
-<a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">SdpAppendNodeToContainerNode</a>
-</dt>
-<dt>
 <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
-</dt>
-</dl>
+
+<a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">SdpAppendNodeToContainerNode</a>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
  
 
  

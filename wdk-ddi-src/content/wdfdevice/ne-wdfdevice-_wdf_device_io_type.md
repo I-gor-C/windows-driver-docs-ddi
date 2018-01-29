@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0ad08e4f-7a9b-4052-888e-ae01c9c105c8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_IO_TYPE, *PWDF_DEVICE_IO_TYPE, WDF_DEVICE_IO_TYPE
+ms.keywords : wdfdevice/PWDF_DEVICE_IO_TYPE, WdfDeviceIoBuffered, wdfdevice/WDF_DEVICE_IO_TYPE, _WDF_DEVICE_IO_TYPE, wdf.wdf_device_io_type, *PWDF_DEVICE_IO_TYPE, WdfDeviceIoNeither, DFDeviceObjectGeneralRef_72f77b23-a975-4ab4-bc28-312ed9682738.xml, WDF_DEVICE_IO_TYPE, kmdf.wdf_device_io_type, PWDF_DEVICE_IO_TYPE enumeration pointer, WDF_DEVICE_IO_TYPE enumeration, PWDF_DEVICE_IO_TYPE, wdfdevice/WdfDeviceIoBuffered, wdfdevice/WdfDeviceIoBufferedOrDirect, wdfdevice/WdfDeviceIoUndefined, WdfDeviceIoDirect, WdfDeviceIoBufferedOrDirect, wdfdevice/WdfDeviceIoNeither, wdfdevice/WdfDeviceIoDirect, WdfDeviceIoUndefined
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_DEVICE_IO_TYPE
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PWDF_DEVICE_IO_TYPE, WDF_DEVICE_IO_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_DEVICE_IO_TYPE, *PWDF_DEVICE_IO_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -73,6 +77,11 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 </tr>
 
 <tr>
+<td>WdfDeviceIoMaximum</td>
+<td></td>
+</tr>
+
+<tr>
 <td>WdfDeviceIoNeither</td>
 <td><b>UMDF </b>This value is not used by UMDF drivers. A UMDF driver can access device I/O control requests that specify the METHOD_NEITHER buffer access method by setting the <b>UmdfMethodNeitherAction</b> INF directive and using <b>WdfDeviceIoBuffered</b> or <b>WdfDeviceIoDirect</b>. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files">Specifying WDF Directives in INF Files</a>.
 
@@ -101,17 +110,12 @@ The <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFI
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotype.md">WdfDeviceInitSetIoType</a>
-</dt>
-<dt>
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 38c8422d-7307-4acd-81f0-931d2e128cb9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS
+ms.keywords : PWHEA_GENERIC_ERROR_BLOCKSTATUS union pointer [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS, _WHEA_GENERIC_ERROR_BLOCKSTATUS, whea.whea_generic_error_blockstatus, ntddk/WHEA_GENERIC_ERROR_BLOCKSTATUS, PWHEA_GENERIC_ERROR_BLOCKSTATUS, ntddk/PWHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS union [WHEA Drivers and Applications], whearef_2137a60a-daff-4a33-a516-c9ae87e2f11c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_GENERIC_ERROR_BLOCKSTATUS
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS
 ---
 
 # _WHEA_GENERIC_ERROR_BLOCKSTATUS structure
@@ -54,13 +58,17 @@ typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
 
 ## Members
 
-        
-            `AsULONG`
 
-            A ULONG representation of the contents of the WHEA_GENERIC_ERROR_BLOCKSTATUS union.
+`AsULONG`
 
-    ## Remarks
-        A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
+A ULONG representation of the contents of the WHEA_GENERIC_ERROR_BLOCKSTATUS union.
+
+`DUMMYSTRUCTNAME`
+
+
+
+## Remarks
+A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -70,16 +78,12 @@ typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
+
  
 
  

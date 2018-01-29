@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : bc984f10-8eae-45f7-9ab0-637b35e57e3c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATAFORMAT_VIDEOINFO_PALETTE, *PKS_DATAFORMAT_VIDEOINFO_PALETTE, KS_DATAFORMAT_VIDEOINFO_PALETTE
+ms.keywords : tagKS_DATAFORMAT_VIDEOINFO_PALETTE, PKS_DATAFORMAT_VIDEOINFO_PALETTE structure pointer [Streaming Media Devices], stream.ks_dataformat_videoinfo_palette, KS_DATAFORMAT_VIDEOINFO_PALETTE, ksmedia/PKS_DATAFORMAT_VIDEOINFO_PALETTE, KS_DATAFORMAT_VIDEOINFO_PALETTE structure [Streaming Media Devices], PKS_DATAFORMAT_VIDEOINFO_PALETTE, ksmedia/KS_DATAFORMAT_VIDEOINFO_PALETTE, *PKS_DATAFORMAT_VIDEOINFO_PALETTE, vidcapstruct_1c005432-ed48-43fb-b866-387903e45b93.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATAFORMAT_VIDEOINFO_PALETTE
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKS_DATAFORMAT_VIDEOINFO_PALETTE, KS_DATAFORMAT_VIDEOINFO_PALETTE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KS_DATAFORMAT_VIDEOINFO_PALETTE, *PKS_DATAFORMAT_VIDEOINFO_PALETTE
 ---
 
 # tagKS_DATAFORMAT_VIDEOINFO_PALETTE structure
@@ -47,14 +51,14 @@ typedef struct tagKS_DATAFORMAT_VIDEOINFO_PALETTE {
 
 ## Members
 
-        
-            `DataFormat`
 
-            Specifies the data format that is being proposed.
-        
-            `VideoInfo`
+`DataFormat`
 
-            Specifies the details of the video stream.
+Specifies the data format that is being proposed.
+
+`VideoInfo`
+
+Specifies the details of the video stream.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct tagKS_DATAFORMAT_VIDEOINFO_PALETTE {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_videoinfo.md">KS_VIDEOINFO</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+
  
 
  

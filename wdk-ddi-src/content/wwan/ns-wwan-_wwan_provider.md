@@ -7,8 +7,8 @@ old-location : netvista\wwan_provider.htm
 old-project : netvista
 ms.assetid : 2bca3123-3ac4-44fe-8d47-051314ef3cb7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_PROVIDER, WWAN_PROVIDER, *PWWAN_PROVIDER
+ms.date : 1/18/2018
+ms.keywords : WwanRef_a76aa69a-8c66-40a4-bda0-5ce66cc57790.xml, WWAN_PROVIDER structure [Network Drivers Starting with Windows Vista], wwan/WWAN_PROVIDER, _WWAN_PROVIDER, wwan/PWWAN_PROVIDER, *PWWAN_PROVIDER, netvista.wwan_provider, WWAN_PROVIDER, PWWAN_PROVIDER, PWWAN_PROVIDER structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_PROVIDER
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WWAN_PROVIDER, *PWWAN_PROVIDER
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWWAN_PROVIDER, WWAN_PROVIDER"
 req.product : Windows 10 or later.
 ---
 
@@ -50,10 +54,10 @@ typedef struct _WWAN_PROVIDER {
 
 ## Members
 
-        
-            `ProviderId`
 
-            A NULL-terminated numeric (0-9) string that represents the network provider identity.
+`ProviderId`
+
+A NULL-terminated numeric (0-9) string that represents the network provider identity.
      
 
 For GSM-based networks, this string is a concatenation of a three-digit Mobile Country Code (MCC) and
@@ -66,10 +70,10 @@ For CDMA-based networks, this string is a five-digit System ID (SID). Generally 
      geographically within a nation by regulations, such as Metropolitan Statistical Areas (MSA) in the
      United States of America. Miniport drivers of CDMA-based devices must specify
      WWAN_CDMA_DEFAULT_PROVIDER_ID if this information is not available.
-        
-            `ProviderName`
 
-            A NULL-terminated string that represents the network provider's name. This member is limited to,
+`ProviderName`
+
+A NULL-terminated string that represents the network provider's name. This member is limited to,
      at most, WWAN_PROVIDERNAME_LEN characters.
      
 
@@ -81,14 +85,13 @@ This member is ignored when the MB Service sets the preferred provider list.
 
 Miniport drivers should specify a <b>NULL</b> string for devices that do not have this
      information.
-        
-            `ProviderState`
 
-            A value that represents the various states that the network provider's entry can be tagged with.
+`ProviderState`
+
+A value that represents the various states that the network provider's entry can be tagged with.
      The following table shows the possible values that miniport drivers should specify (one or more values
      can be specified).
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -154,12 +157,10 @@ The network provider state is unknown.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Some values in the previous table apply only to specific object identifiers (OIDs). The following
      table shows the associations between those values and related OIDs.
-
 <table>
 <tr>
 <th>Value</th>
@@ -212,10 +213,10 @@ WWAN_PROVIDER_STATE_FORBIDDEN
 </td>
 </tr>
 </table>
-        
-            `WwanDataClass`
 
-            A bitmap that represents the data-class(es) that the device supports. For a detailed list of
+`WwanDataClass`
+
+A bitmap that represents the data-class(es) that the device supports. For a detailed list of
      values, see the 
      <b>WwanDataClass</b> member of 
      <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
@@ -232,24 +233,18 @@ This member can be ignored when queried for OID_WWAN_HOME_PROVIDER.
 | **Minimum UMDF version** |  |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_home_provider.md">NDIS_WWAN_HOME_PROVIDER</a>
-</dt>
-<dt>
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_preferred_providers.md">NDIS_WWAN_PREFERRED_PROVIDERS</a>
-</dt>
-<dt>
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_visible_providers.md">NDIS_WWAN_VISIBLE_PROVIDERS</a>
-</dt>
-<dt>
+
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_home_provider.md">NDIS_WWAN_HOME_PROVIDER</a>
+
 <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_visible_providers.md">NDIS_WWAN_VISIBLE_PROVIDERS</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PROVIDER structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PROVIDER structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5756e907-008a-49c3-b1cd-947cb0ce1bd4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST, PRI_RESERVATION_LIST
+ms.keywords : "*PPRI_RESERVATION_LIST, PPRI_RESERVATION_LIST, storport/PPRI_RESERVATION_LIST, PPRI_RESERVATION_LIST structure pointer [Storage Devices], storage.pri_reservation_list, storport/PRI_RESERVATION_LIST, structs-general_10a53f53-2aed-4be1-bf2b-d61efa2c846f.xml, PRI_RESERVATION_LIST structure [Storage Devices], PRI_RESERVATION_LIST"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PRI_RESERVATION_LIST
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PPRI_RESERVATION_LIST, PRI_RESERVATION_LIST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -49,23 +53,23 @@ typedef struct {
 
 ## Members
 
-        
-            `AdditionalLength`
 
-            The AdditionalLength field contains a count of the number of bytes in the reservation descriptors.
-        
-            `Generation`
+`AdditionalLength`
 
-            The Generation field contains a 32-bit counter that is maintained by the device server, which is incremented every time a Persistent Reserve Out command requests a REGISTER, REGISTER AND IGNORE
+The AdditionalLength field contains a count of the number of bytes in the reservation descriptors.
+
+`Generation`
+
+The Generation field contains a 32-bit counter that is maintained by the device server, which is incremented every time a Persistent Reserve Out command requests a REGISTER, REGISTER AND IGNORE
 
 EXISTING KEY, CLEAR, PREEMPT, or PREEMPT AND ABORT service action.
-        
-            `Reservations`
 
-            An array of reservation descriptors.
+`Reservations`
 
-    ## Remarks
-        The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
+An array of reservation descriptors.
+
+## Remarks
+The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,13 +79,10 @@ EXISTING KEY, CLEAR, PREEMPT, or PREEMPT AND ABORT service action.
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
-</dt>
-</dl>
+
  
 
  

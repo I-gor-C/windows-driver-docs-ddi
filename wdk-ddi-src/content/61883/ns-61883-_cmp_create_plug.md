@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4FE3FE9E-9F00-431D-99F0-002B1368CE34
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CMP_CREATE_PLUG, *PCMP_CREATE_PLUG, CMP_CREATE_PLUG
+ms.keywords : CMP_CREATE_PLUG structure [Buses], 61883/CMP_CREATE_PLUG, PCMP_CREATE_PLUG, _CMP_CREATE_PLUG, PCMP_CREATE_PLUG structure pointer [Buses], *PCMP_CREATE_PLUG, 61883/PCMP_CREATE_PLUG, CMP_CREATE_PLUG, IEEE.cmp_create_plug
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_CREATE_PLUG
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCMP_CREATE_PLUG, CMP_CREATE_PLUG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
 ---
 
 # _CMP_CREATE_PLUG structure
@@ -51,14 +55,14 @@ typedef struct _CMP_CREATE_PLUG {
 
 ## Members
 
-        
-            `Context`
 
-            On input, a pointer to an optional caller-supplied context for the function at <b>pfnNotify</b>.
-        
-            `hPlug`
+`Context`
 
-            On output, the handle of the created plug
+On input, a pointer to an optional caller-supplied context for the function at <b>pfnNotify</b>.
+
+`hPlug`
+
+On output, the handle of the created plug
 
 <b>PlugNum</b>
     
@@ -67,27 +71,28 @@ typedef struct _CMP_CREATE_PLUG {
      <b>hPlug</b>
     
     A handle to the newly created plug. If the plug could not be created, <b>hPlug</b> is null.
+    
 
 .
-        
-            `Pcr`
 
-            On input, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a> structure that contains values used by the protocol driver to initialize the plug.
-        
-            `pfnNotify`
+`Pcr`
 
-            On input, a pointer to a caller-supplied function to be called by the protocol driver when the plug is created.
-        
-            `PlugNum`
+On input, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a> structure that contains values used by the protocol driver to initialize the plug.
 
-            On output, the plug number.
-        
-            `PlugType`
+`pfnNotify`
 
-            On input, the type of plug to create. Can be one of the following:
+On input, a pointer to a caller-supplied function to be called by the protocol driver when the plug is created.
 
-    ## Remarks
-        If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
+`PlugNum`
+
+On output, the plug number.
+
+`PlugType`
+
+On input, the type of plug to create. Can be one of the following:
+
+## Remarks
+If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
@@ -101,13 +106,10 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

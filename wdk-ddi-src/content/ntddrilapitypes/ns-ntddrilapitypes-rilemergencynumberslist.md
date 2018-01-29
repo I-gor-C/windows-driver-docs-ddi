@@ -7,8 +7,8 @@ old-location : netvista\rilemergencynumberslist.htm
 old-project : netvista
 ms.assetid : bfeaff04-6dd2-4889-9ab3-f20361dc2f5c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
+ms.date : 1/18/2018
+ms.keywords : "*LPRILEMERGENCYNUMBERSLIST, ntddrilapitypes/RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, netvista.rilemergencynumberslist, RILEMERGENCYNUMBERSLIST structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILEMERGENCYNUMBERSLIST
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST"
 ---
 
 # RILEMERGENCYNUMBERSLIST structure
@@ -48,18 +52,18 @@ typedef struct _RILEMERGENCYNUMBERSLIST {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwRilENSize`
+`cbSize`
 
-            
-        
-            `RilEN`
 
-            
+
+`dwRilENSize`
+
+
+
+`RilEN`
+
+
 
 
 ## Requirements

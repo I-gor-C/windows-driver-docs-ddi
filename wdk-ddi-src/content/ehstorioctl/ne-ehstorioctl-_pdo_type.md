@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9695d55c-a214-4bba-aba9-38dfa7f54ec9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PDO_TYPE, PDO_TYPE
+ms.keywords : storage.pdo_type, _PDO_TYPE, PDO_TYPE, ehstorioctl/PDO_TYPE_THIS, structs-silo_9ef418bc-5275-4fcf-a49b-804ace353da8.xml, ehstorioctl/PDO_TYPE_DISK, PDO_TYPE enumeration [Storage Devices], PDO_TYPE_CONTROL, PDO_TYPE_SILO, PDO_TYPE_DISK, ehstorioctl/PDO_TYPE_SILO, ehstorioctl/PDO_TYPE_CONTROL, PDO_TYPE_THIS, PDO_TYPE_UNDEFINED, ehstorioctl/PDO_TYPE_UNDEFINED, ehstorioctl/PDO_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PDO_TYPE
-req.alt-loc : EhStorIoctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PDO_TYPE
 ---
 
@@ -89,11 +93,8 @@ typedef enum _PDO_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
-</dt>
-</dl>
+
  
 
  

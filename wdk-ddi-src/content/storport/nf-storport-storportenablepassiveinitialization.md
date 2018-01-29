@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 881253d2-b44d-4c41-ad72-b0143dc50803
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortEnablePassiveInitialization
+ms.keywords : StorPortEnablePassiveInitialization, StorPortEnablePassiveInitialization routine [Storage Devices], storage.storportenablepassiveinitialization, storprt_faea18e4-c684-4010-aca4-177132c011c5.xml, storport/StorPortEnablePassiveInitialization
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortEnablePassiveInitialization
-req.alt-loc : storport.h
 req.ddi-compliance : StorPortEnablePassive, StorPortPassiveFromHwInit
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : DIRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -52,11 +56,11 @@ BOOLEAN StorPortEnablePassiveInitialization(
 
 `DeviceExtension`
 
-
+TBD
 
 `HwPassiveInitializeRoutine`
 
-
+TBD
 
 
 ## Return Value
@@ -83,11 +87,8 @@ This routine is implemented using inline function definitions, so that miniport 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>
-</dt>
-</dl>
+
  
 
  

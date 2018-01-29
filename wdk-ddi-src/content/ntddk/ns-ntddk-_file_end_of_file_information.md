@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9af172d9-2309-4731-82bf-55ec99c475a6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION
+ms.keywords : ntddk/FILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION, ntddk/PFILE_END_OF_FILE_INFORMATION, kernel.file_end_of_file_information, _FILE_END_OF_FILE_INFORMATION, PFILE_END_OF_FILE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PFILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_b_6c41bbd0-64be-4765-b79c-09e2dd86fa6f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_END_OF_FILE_INFORMATION
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION
 ---
 
@@ -46,13 +50,13 @@ typedef struct _FILE_END_OF_FILE_INFORMATION {
 
 ## Members
 
-        
-            `EndOfFile`
 
-            The absolute new end of file position as a byte offset from the start of the file.
+`EndOfFile`
 
-    ## Remarks
-        <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file: that is, it is the offset to the byte immediately following the last valid byte in the file.
+The absolute new end of file position as a byte offset from the start of the file.
+
+## Remarks
+<b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file: that is, it is the offset to the byte immediately following the last valid byte in the file.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _FILE_END_OF_FILE_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : image\usbscan_pipe_configuration.htm
 old-project : image
 ms.assetid : c9b0247b-1444-46c9-a430-897594f8d223
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _USBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION
+ms.date : 1/18/2018
+ms.keywords : usbscan/PUSBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION, usbscan/USBSCAN_PIPE_CONFIGURATION, stifnc_b18d3edd-f392-4b68-82e4-10f870c18f6a.xml, PUSBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION, _USBSCAN_PIPE_CONFIGURATION, PUSBSCAN_PIPE_CONFIGURATION structure pointer [Imaging Devices], USBSCAN_PIPE_CONFIGURATION structure [Imaging Devices], image.usbscan_pipe_configuration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSCAN_PIPE_CONFIGURATION
-req.alt-loc : usbscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _USBSCAN_PIPE_CONFIGURATION {
 
 ## Members
 
-        
-            `NumberOfPipes`
 
-            The number of transfer pipes supported for the device.
-        
-            `PipeInfo`
+`NumberOfPipes`
 
-            Pointer to a <b>NumberOfPipes</b>-sized array of <a href="..\usbscan\ns-usbscan-_usbscan_pipe_information.md">USBSCAN_PIPE_INFORMATION</a> structures.
+The number of transfer pipes supported for the device.
+
+`PipeInfo`
+
+Pointer to a <b>NumberOfPipes</b>-sized array of <a href="..\usbscan\ns-usbscan-_usbscan_pipe_information.md">USBSCAN_PIPE_INFORMATION</a> structures.
 
 
 ## Requirements

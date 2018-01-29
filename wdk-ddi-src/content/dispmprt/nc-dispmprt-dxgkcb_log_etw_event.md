@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d869f933-4316-440e-899a-d46d72a0d10f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcblogetwevent, DxgkCbLogEtwEvent callback function [Display Devices], DxgkCbLogEtwEvent, DXGKCB_LOG_ETW_EVENT, DXGKCB_LOG_ETW_EVENT, dispmprt/DxgkCbLogEtwEvent, DpFunctions_1e074b6d-dff4-4d1f-93ce-4333a4241562.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbLogEtwEvent
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -83,8 +87,6 @@ To enable or disable event logging, call the <a href="..\dispmprt\nc-dispmprt-dx
 
 If <i>EventBufferSize</i> is less than or equal to 256, <i>DxgkCbLogEtwEvent</i> can be called an any IRQL. If <i>EventBufferSize</i> is greater than 256, <i>DxgkCbLogEtwEvent</i> must be called at IRQL = PASSIVE_LEVEL.
 
-The following code example shows how to log an event with the event logger.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,11 +101,8 @@ The following code example shows how to log an event with the event logger.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_control_etw_logging.md">DxgkDdiControlEtwLogging</a>
-</dt>
-</dl>
+
  
 
  

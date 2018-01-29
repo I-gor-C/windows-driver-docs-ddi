@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2A8BC777-291C-4EC4-8EF9-AA78C6295700
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoDecrementKeepAliveCount
+ms.keywords : IoDecrementKeepAliveCount, ntddk/IoDecrementKeepAliveCount, kernel.iodecrementkeepalivecount, IoDecrementKeepAliveCount routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoDecrementKeepAliveCount
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 

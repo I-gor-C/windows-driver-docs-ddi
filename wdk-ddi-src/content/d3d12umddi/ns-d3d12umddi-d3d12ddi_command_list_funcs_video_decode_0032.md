@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5e49e21c-57b8-4864-b4e5-a9baa8df129d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032
+ms.keywords : d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032, display.d3d12ddi-command-list-funcs-video-decode-0032, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032
 ---
 
@@ -57,54 +61,54 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032 {
 
 ## Members
 
-        
-            `pfnBeginQuery`
 
-            Begin query.
-        
-            `pfnCloseCommandList`
+`pfnBeginQuery`
 
-            Close command list.
-        
-            `pfnDecodeFrame`
+Begin query.
 
-            Decode frame.
-        
-            `pfnDiscardResource`
+`pfnCloseCommandList`
 
-            Discard resource.
-        
-            `pfnEndQuery`
+Close command list.
 
-            End query.
-        
-            `pfnResetCommandList`
+`pfnDecodeFrame`
 
-            Reset command list.
-        
-            `pfnResolveQueryData`
+Decode frame.
 
-            Resolve query data.
-        
-            `pfnResourceBarrier`
+`pfnDiscardResource`
 
-            Resource barrier.
-        
-            `pfnSetMarker`
+Discard resource.
 
-            Set marker.
-        
-            `pfnSetPredication`
+`pfnEndQuery`
 
-            Set predication.
-        
-            `pfnSetProtectedResourceSession`
+End query.
 
-            Set protected resource session.
-        
-            `pfnWriteBufferImmediate`
+`pfnResetCommandList`
 
-            Write buffer immediate.
+Reset command list.
+
+`pfnResolveQueryData`
+
+Resolve query data.
+
+`pfnResourceBarrier`
+
+Resource barrier.
+
+`pfnSetMarker`
+
+Set marker.
+
+`pfnSetPredication`
+
+Set predication.
+
+`pfnSetProtectedResourceSession`
+
+Set protected resource session.
+
+`pfnWriteBufferImmediate`
+
+Write buffer immediate.
 
 
 ## Requirements

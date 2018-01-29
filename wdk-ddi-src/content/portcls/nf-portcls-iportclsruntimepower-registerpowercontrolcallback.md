@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1500E2C2-240F-4087-9275-9FD4170B8BED
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsRuntimePower, IPortClsRuntimePower::RegisterPowerControlCallback, RegisterPowerControlCallback
+ms.keywords : RegisterPowerControlCallback, IPortClsRuntimePower interface [Audio Devices], RegisterPowerControlCallback method, IPortClsRuntimePower::RegisterPowerControlCallback, audio.iportclsruntimepower_registerpowercontrolcallback, RegisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower interface, RegisterPowerControlCallback method [Audio Devices], portcls/IPortClsRuntimePower::RegisterPowerControlCallback, IPortClsRuntimePower
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 7
 req.target-min-winversvr : Windows Server 2003
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortClsRuntimePower.RegisterPowerControlCallback
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,11 +86,8 @@ The <code>RegisterPowerControlCallback</code> method returns STATUS_SUCCESS, if 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportclsruntimepower.md">IPortClsRuntimePower</a>
-</dt>
-</dl>
+
  
 
  

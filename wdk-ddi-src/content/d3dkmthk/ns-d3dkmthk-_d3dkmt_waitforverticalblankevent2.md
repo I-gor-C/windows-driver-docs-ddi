@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b83e1d1c-e940-4e7b-8a74-82aee2c54391
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_WAITFORVERTICALBLANKEVENT2, D3DKMT_WAITFORVERTICALBLANKEVENT2
+ms.keywords : _D3DKMT_WAITFORVERTICALBLANKEVENT2, display.d3dkmt_waitforverticalblankevent2, D3DKMT_WAITFORVERTICALBLANKEVENT2, D3DKMT_WAITFORVERTICALBLANKEVENT2 structure [Display Devices], d3dkmthk/D3DKMT_WAITFORVERTICALBLANKEVENT2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_WAITFORVERTICALBLANKEVENT2
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_WAITFORVERTICALBLANKEVENT2
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DKMT_WAITFORVERTICALBLANKEVENT2 {
 
 ## Members
 
-        
-            `hAdapter`
 
-            [in] A handle to the adapter.
-        
-            `hDevice`
+`hAdapter`
 
-            [in] A handle to the display device. This member is optionally specified. However, if the OpenGL ICD specifies the display device, the kernel is given more optimization opportunities with regard to power usage.
-        
-            `NumObjects`
+[in] A handle to the adapter.
 
-            The number of wait objects to wait on, which equals the size of the array specified by the <b>ObjectHandleArray</b> member.
-        
-            `ObjectHandleArray`
+`hDevice`
 
-            [in] A handle to an array of wait objects to wait on.
-        
-            `VidPnSourceId`
+[in] A handle to the display device. This member is optionally specified. However, if the OpenGL ICD specifies the display device, the kernel is given more optimization opportunities with regard to power usage.
 
-            [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source.
+`NumObjects`
+
+The number of wait objects to wait on, which equals the size of the array specified by the <b>ObjectHandleArray</b> member.
+
+`ObjectHandleArray`
+
+[in] A handle to an array of wait objects to wait on.
+
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source.
 
 
 ## Requirements

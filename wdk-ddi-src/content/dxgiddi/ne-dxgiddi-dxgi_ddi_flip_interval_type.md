@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e33da768-9d57-4b07-9c4e-c86d19828291
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_FLIP_INTERVAL_TYPE, DXGI_DDI_FLIP_INTERVAL_TYPE
+ms.keywords : dxgiddi/DXGI_DDI_FLIP_INTERVAL_FOUR, dxgiddi/DXGI_DDI_FLIP_INTERVAL_TYPE, DXGI_DDI_FLIP_INTERVAL_IMMEDIATE, dxgiddi/DXGI_DDI_FLIP_INTERVAL_IMMEDIATE, DXGI_DDI_FLIP_INTERVAL_THREE, UMDisplayDriver_Dx10param_Structs_65a96d1c-4c37-4fdd-b79e-2a90559db67d.xml, dxgiddi/DXGI_DDI_FLIP_INTERVAL_TWO, dxgiddi/DXGI_DDI_FLIP_INTERVAL_THREE, DXGI_DDI_FLIP_INTERVAL_ONE, DXGI_DDI_FLIP_INTERVAL_TYPE enumeration [Display Devices], display.dxgi_ddi_flip_interval_type, DXGI_DDI_FLIP_INTERVAL_TYPE, DXGI_DDI_FLIP_INTERVAL_TWO, dxgiddi/DXGI_DDI_FLIP_INTERVAL_ONE, DXGI_DDI_FLIP_INTERVAL_FOUR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_FLIP_INTERVAL_TYPE
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_FLIP_INTERVAL_TYPE
 ---
 
@@ -63,6 +67,11 @@ typedef enum DXGI_DDI_FLIP_INTERVAL_TYPE {
 </tr>
 
 <tr>
+<td>DXGI_DDI_FLIP_INTERVAL_IMMEDIATE_ALLOW_TEARING</td>
+<td></td>
+</tr>
+
+<tr>
 <td>DXGI_DDI_FLIP_INTERVAL_ONE</td>
 <td>Indicates to perform the flip on every vertical sync.</td>
 </tr>
@@ -89,11 +98,8 @@ typedef enum DXGI_DDI_FLIP_INTERVAL_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a>
-</dt>
-</dl>
+
  
 
  

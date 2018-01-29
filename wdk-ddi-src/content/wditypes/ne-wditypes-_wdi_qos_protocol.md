@@ -7,8 +7,8 @@ old-location : netvista\wdi_qos_protocol.htm
 old-project : netvista
 ms.assetid : 39466BF7-0517-4113-9C94-26D8691CCCC1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_QOS_PROTOCOL, WDI_QOS_PROTOCOL
+ms.date : 1/18/2018
+ms.keywords : WDI_QOS_PROTOCOL_WMM, _WDI_QOS_PROTOCOL, WDI_QOS_PROTOCOL enumeration [Device and Driver Installation], netvista.wifi_qos_protocol, WDI_QOS_PROTOCOL, wditypes/WDI_QOS_PROTOCOL_NONE, netvista.wdi_qos_protocol, wditypes/WDI_QOS_PROTOCOL_WMM, WDI_QOS_PROTOCOL_11E, WDI_QOS_PROTOCOL_NONE, wditypes/WDI_QOS_PROTOCOL_11E, wditypes/WDI_QOS_PROTOCOL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_QOS_PROTOCOL
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_QOS_PROTOCOL
 req.product : Windows 10 or later.
 ---
@@ -54,6 +58,11 @@ typedef enum _WDI_QOS_PROTOCOL {
 <tr>
 <td>WDI_QOS_PROTOCOL_11E</td>
 <td>802.11E</td>
+</tr>
+
+<tr>
+<td>WDI_QOS_PROTOCOL_MAX</td>
+<td></td>
 </tr>
 
 <tr>

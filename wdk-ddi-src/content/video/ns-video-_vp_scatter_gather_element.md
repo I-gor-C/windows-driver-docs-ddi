@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7b0ca123-8847-4dc3-b0f5-9788104381ec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VP_SCATTER_GATHER_ELEMENT, *PVP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT
+ms.keywords : display.vp_scatter_gather_element, PVP_SCATTER_GATHER_ELEMENT, PVP_SCATTER_GATHER_ELEMENT structure pointer [Display Devices], _VP_SCATTER_GATHER_ELEMENT, Video_Structs_eacc94d7-8de2-4847-b843-3ae56bbca6d5.xml, video/PVP_SCATTER_GATHER_ELEMENT, *PVP_SCATTER_GATHER_ELEMENT, video/VP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VP_SCATTER_GATHER_ELEMENT
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT"
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _VP_SCATTER_GATHER_ELEMENT {
 
 ## Members
 
-        
-            `Address`
 
-            Specifies the logical address of one scatter/gather element.
-        
-            `Length`
+`Address`
 
-            Specifies the length, in bytes, of the scatter/gather element.
-        
-            `Reserved`
+Specifies the logical address of one scatter/gather element.
 
-            Reserved for system use.
+`Length`
 
-    ## Remarks
-        This structure is available in Windows XP and later.
+Specifies the length, in bytes, of the scatter/gather element.
+
+`Reserved`
+
+Reserved for system use.
+
+## Remarks
+This structure is available in Windows XP and later.
 
 A VP_SCATTER_GATHER_ELEMENT structure is one element of the <a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a> structure's array member.
 
@@ -75,13 +79,10 @@ A VP_SCATTER_GATHER_ELEMENT structure is one element of the <a href="..\video\ns
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a>
-</dt>
-</dl>
+
  
 
  

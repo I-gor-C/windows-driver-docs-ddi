@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : DCC4EB4C-B9A0-4E25-B3BD-4CAB07022A7B
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : VhfReadReportSubmit
+ms.keywords : VhfReadReportSubmit, vhf/VhfReadReportSubmit, VhfReadReportSubmit method [Human Input Devices], hid.vhfreadreportsubmit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VhfReadReportSubmit
-req.alt-loc : vhfKm.lib,vhfKm.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : VhfKm.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -85,11 +89,8 @@ If the HID source driver does not implement the <a href="..\vhf\nc-vhf-evt_vhf_r
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
-</dt>
-</dl>
+
  
 
  

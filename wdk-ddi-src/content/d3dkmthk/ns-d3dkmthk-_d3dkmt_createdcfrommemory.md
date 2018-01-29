@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 260fd894-fc5a-4a27-ac35-3f1b145b52b7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEDCFROMMEMORY, D3DKMT_CREATEDCFROMMEMORY
+ms.keywords : D3DKMT_CREATEDCFROMMEMORY structure [Display Devices], d3dkmthk/D3DKMT_CREATEDCFROMMEMORY, display.d3dkmt_createdcfrommemory, OpenGL_Structs_b56e280f-e29b-4781-942a-a36024786d9e.xml, D3DKMT_CREATEDCFROMMEMORY, _D3DKMT_CREATEDCFROMMEMORY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEDCFROMMEMORY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEDCFROMMEMORY
 ---
 
@@ -54,42 +58,42 @@ typedef struct _D3DKMT_CREATEDCFROMMEMORY {
 
 ## Members
 
-        
-            `Format`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format for the memory block that <b>pMemory</b> points to.
-        
-            `hBitmap`
+`Format`
 
-            [out] A handle to a bitmap that is related to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
-        
-            `hDc`
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format for the memory block that <b>pMemory</b> points to.
 
-            [out] A handle to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
-        
-            `hDeviceDc`
+`hBitmap`
 
-            [in] A handle to the display context for the device.
-        
-            `Height`
+[out] A handle to a bitmap that is related to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
 
-            [in] The height, in pixels, of the memory block that <b>pMemory</b> points to.
-        
-            `pColorTable`
+`hDc`
 
-            [in] An array of 2, 4, 16, or 256 PALETTEENTRY structures that are used to initialize the colors for the memory block that <b>pMemory</b> points to. For more information about PALETTEENTRY, see the Microsoft Window SDK documentation.
-        
-            `Pitch`
+[out] A handle to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
 
-            [in] The pitch, in bytes, of the memory block that <b>pMemory</b> points to--that is, the distance in bytes to the start of the next line.
-        
-            `pMemory`
+`hDeviceDc`
 
-            [in] A pointer to a block of memory for the display context.
-        
-            `Width`
+[in] A handle to the display context for the device.
 
-            [in] The width, in pixels, of the memory block that <b>pMemory</b> points to.
+`Height`
+
+[in] The height, in pixels, of the memory block that <b>pMemory</b> points to.
+
+`pColorTable`
+
+[in] An array of 2, 4, 16, or 256 PALETTEENTRY structures that are used to initialize the colors for the memory block that <b>pMemory</b> points to. For more information about PALETTEENTRY, see the Microsoft Window SDK documentation.
+
+`Pitch`
+
+[in] The pitch, in bytes, of the memory block that <b>pMemory</b> points to--that is, the distance in bytes to the start of the next line.
+
+`pMemory`
+
+[in] A pointer to a block of memory for the display context.
+
+`Width`
+
+[in] The width, in pixels, of the memory block that <b>pMemory</b> points to.
 
 
 ## Requirements
@@ -100,16 +104,12 @@ typedef struct _D3DKMT_CREATEDCFROMMEMORY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatedcfrommemory.md">D3DKMTCreateDCFromMemory</a>
-</dt>
-</dl>
+
  
 
  

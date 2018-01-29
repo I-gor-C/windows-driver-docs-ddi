@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2d0cdc50-a194-4eda-8bba-f6e5c06ff32c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2BLT, D3DHAL_DP2BLT, *LPD3DHAL_DP2BLT
+ms.keywords : _D3DHAL_DP2BLT, display.d3dhal_dp2blt, D3DHAL_DP2BLT, *LPD3DHAL_DP2BLT, d3dstrct_cab5e8b8-ec72-4d7d-8aaa-4a1f6da44a9b.xml, LPD3DHAL_DP2BLT structure pointer [Display Devices], D3DHAL_DP2BLT structure [Display Devices], d3dhal/D3DHAL_DP2BLT, LPD3DHAL_DP2BLT, d3dhal/LPD3DHAL_DP2BLT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2BLT
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2BLT
 ---
 
@@ -55,27 +59,26 @@ typedef struct _D3DHAL_DP2BLT {
 
 ## Members
 
-        
-            `dwDest`
 
-            Specifies the handle to the destination surface.
-        
-            `dwDestMipLevel`
+`dwDest`
 
-            Specifies the sublevel of a MIP-map texture that is the destination for the blt.
-        
-            `dwSource`
+Specifies the handle to the destination surface.
 
-            Specifies the handle to the source surface.
-        
-            `dwSourceMipLevel`
+`dwDestMipLevel`
 
-            Specifies the sublevel of a MIP-map texture that is the source of the blt.
-        
-            `Flags`
+Specifies the sublevel of a MIP-map texture that is the destination for the blt.
 
-            Specifies a flag that indicates the type of filtering that the driver must perform. This member is set to zero to indicate that the driver can use its own filtering technique or is set to one of the following flags.
+`dwSource`
 
+Specifies the handle to the source surface.
+
+`dwSourceMipLevel`
+
+Specifies the sublevel of a MIP-map texture that is the source of the blt.
+
+`Flags`
+
+Specifies a flag that indicates the type of filtering that the driver must perform. This member is set to zero to indicate that the driver can use its own filtering technique or is set to one of the following flags.
 <table>
 <tr>
 <th>Flag</th>
@@ -102,17 +105,17 @@ Set for point filtering.
 </td>
 </tr>
 </table>
-        
-            `rDest`
 
-            Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the blit should occur and its position on the destination surface.
-        
-            `rSource`
+`rDest`
 
-            Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the source surface. These points define the area of the source blit data and its position on the source surface.
+Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the blit should occur and its position on the destination surface.
 
-    ## Remarks
-        The <b>dwSource</b> or <b>dwDest</b> member specifies the kernel handle to the top-level surface and the <b>dwSourceMipLevel</b> or <b>dwDestMiplevel</b> member specifies the sublevel for the MIP-map chain where the blt occurs.
+`rSource`
+
+Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the source surface. These points define the area of the source blit data and its position on the source surface.
+
+## Remarks
+The <b>dwSource</b> or <b>dwDest</b> member specifies the kernel handle to the top-level surface and the <b>dwSourceMipLevel</b> or <b>dwDestMiplevel</b> member specifies the sublevel for the MIP-map chain where the blt occurs.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -122,17 +125,14 @@ Set for point filtering.
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_BLT</dt>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-</dl>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+D3DDP2OP_BLT
+
  
 
  

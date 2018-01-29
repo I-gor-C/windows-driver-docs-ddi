@@ -16,6 +16,12 @@ ms.topic : portal
 dbgeng.h contains the following programming interfaces:
 
 
+## Classes
+| Title | Description |
+| ---- |:---- |
+| [DebugBaseEventCallbacks](nl-dbgeng-debugbaseeventcallbacks.md) | The DebugBaseEventCallbacks class provides a base implementation of the IDebugEventCallbacks interface. |
+| [DebugBaseEventCallbacksWide](nl-dbgeng-debugbaseeventcallbackswide.md) | The DebugBaseEventCallbacksWide class provides a base implementation of the IDebugEventCallbacksWide interface. |
+
 
 ## Interfaces
 | Title | Description |

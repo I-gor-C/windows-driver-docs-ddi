@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4cbf6d29-bccd-4629-b282-eb5314f9b4f4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::FormatUsingCurrentType, FormatUsingCurrentType
+ms.keywords : wdf.iwdfiorequest_formatusingcurrenttype, IWDFIoRequest, IWDFIoRequest interface, FormatUsingCurrentType method, FormatUsingCurrentType method, IWDFIoRequest interface, wudfddi/IWDFIoRequest::FormatUsingCurrentType, UMDFRequestObjectRef_e16e60fe-557d-413c-a483-6bbe602986dc.xml, FormatUsingCurrentType, IWDFIoRequest::FormatUsingCurrentType, FormatUsingCurrentType method, umdf.iwdfiorequest_formatusingcurrenttype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.FormatUsingCurrentType
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,19 +59,19 @@ This function has no parameters.
 
 None
 
-None
-
-None
-
 ## Remarks
 
 When a driver receives an I/O request, the driver might forward the request to the local I/O target, unmodified. To forward the unmodified request, the driver must:
-
+<ul>
+<li>
 Call <b>FormatUsingCurrentType</b> to format the request so that the framework can pass the request to the driver's local I/O target.
 
+</li>
+<li>
 Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> method to send the request to the I/O target.
 
-For a code example of how to use the <b>FormatUsingCurrentType</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>.
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,14 +87,10 @@ For a code example of how to use the <b>FormatUsingCurrentType</b> method, see <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
  
 
  

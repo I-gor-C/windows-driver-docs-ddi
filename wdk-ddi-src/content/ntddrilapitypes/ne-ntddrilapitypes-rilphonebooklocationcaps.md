@@ -7,8 +7,8 @@ old-location : netvista\rilphonebooklocationcaps.htm
 old-project : netvista
 ms.assetid : df2f059c-d1c3-4716-8254-47c71f0b4a7c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKLOCATIONCAPS, RILPHONEBOOKLOCATIONCAPS
+ms.date : 1/18/2018
+ms.keywords : netvista.rilphonebooklocationcaps, RIL_CAPS_PBLOC_ALL, ntddrilapitypes/RIL_CAPS_PBLOC_ALL, ntddrilapitypes/RIL_CAPS_PBLOC_UICCSERVICEDIALING, ntddrilapitypes/RIL_CAPS_PBLOC_UICCFIXDIALING, ntddrilapitypes/RIL_CAPS_PBLOC_UICCPHONEBOOK, ntddrilapitypes/RILPHONEBOOKLOCATIONCAPS, RIL_CAPS_PBLOC_OWNNUMBERS, ntddrilapitypes/RIL_CAPS_PBLOC_OWNNUMBERS, RILPHONEBOOKLOCATIONCAPS enumeration [Network Drivers Starting with Windows Vista], RILPHONEBOOKLOCATIONCAPS, RIL_CAPS_PBLOC_UICCSERVICEDIALING, RIL_CAPS_PBLOC_UICCPHONEBOOK, RIL_CAPS_PBLOC_UICCFIXDIALING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKLOCATIONCAPS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPHONEBOOKLOCATIONCAPS
 ---
 
@@ -74,6 +78,11 @@ typedef enum _RILPHONEBOOKLOCATIONCAPS {
 
 <tr>
 <td>RIL_CAPS_PBLOC_UICCSERVICEDIALING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CAPS_PBLOC_UNKOWN</td>
 <td></td>
 </tr>
 </table>

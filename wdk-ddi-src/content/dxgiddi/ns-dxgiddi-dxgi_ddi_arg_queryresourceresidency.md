@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 140a92a8-4b82-47d0-855c-6bc1f9a3d167
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_QUERYRESOURCERESIDENCY, DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
+ms.keywords : display.dxgi_ddi_arg_queryresourceresidency, dxgiddi/DXGI_DDI_ARG_QUERYRESOURCERESIDENCY, DXGI_DDI_ARG_QUERYRESOURCERESIDENCY, DXGI_DDI_ARG_QUERYRESOURCERESIDENCY structure [Display Devices], UMDisplayDriver_Dx10param_Structs_c6e97d75-9ef8-4ae5-9b1f-c4a25234b906.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
 ---
 
@@ -49,19 +53,18 @@ typedef struct DXGI_DDI_ARG_QUERYRESOURCERESIDENCY {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the display device (graphics context) on which the driver determines resource residency status. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
-        
-            `pResources`
+`hDevice`
 
-            [in] An array of handles to the resources to query for residency on.
-        
-            `pStatus`
+[in] A handle to the display device (graphics context) on which the driver determines resource residency status. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
 
-            [out] A pointer to an array of DXGI_DDI_RESIDENCY values. The number of elements in the array is specified by the <b>Resources</b> member, and each element receives one of the following values to indicate the residency status of the corresponding resource in the array that <b>pResources</b> specifies. 
+`pResources`
 
+[in] An array of handles to the resources to query for residency on.
+
+`pStatus`
+
+[out] A pointer to an array of DXGI_DDI_RESIDENCY values. The number of elements in the array is specified by the <b>Resources</b> member, and each element receives one of the following values to indicate the residency status of the corresponding resource in the array that <b>pResources</b> specifies. 
 <table>
 <tr>
 <th>Value</th>
@@ -98,10 +101,10 @@ The resources are nonresident, which is the lowest residency status.
 </td>
 </tr>
 </table>
-        
-            `Resources`
 
-            [in] The number of elements in the <i>pResources</i> and <i>pStatus</i> arrays.
+`Resources`
+
+[in] The number of elements in the <i>pResources</i> and <i>pStatus</i> arrays.
 
 
 ## Requirements
@@ -112,13 +115,10 @@ The resources are nonresident, which is the lowest residency status.
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a>
-</dt>
-</dl>
+
  
 
  

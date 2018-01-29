@@ -7,8 +7,8 @@ old-location : print\branchofficejobdataerror.htm
 old-project : print
 ms.assetid : 947C508E-2EB9-451D-AA8D-DCDDE27DEBE6
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : BranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError
+ms.date : 1/18/2018
+ms.keywords : winsplp/PBranchOfficeJobDataError, BranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError structure [Print Devices], winsplp/BranchOfficeJobDataError, print.branchofficejobdataerror, PBranchOfficeJobDataError structure pointer [Print Devices], PBranchOfficeJobDataError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BranchOfficeJobDataError
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PBranchOfficeJobDataError, BranchOfficeJobDataError"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : BranchOfficeJobDataError, *PBranchOfficeJobDataError
 req.product : Windows 10 or later.
 ---
 
@@ -58,54 +62,54 @@ typedef struct {
 
 ## Members
 
-        
-            `LastError`
 
-            Specifies the LastError at the time the event was logged.
-        
-            `pDataType`
+`LastError`
 
-            Specifies the data type of the job.
-        
-            `pDocumentName`
+Specifies the LastError at the time the event was logged.
 
-            Specifies the name of the printed document.
-        
-            `pErrorDescription`
+`pDataType`
 
-            Specifies the text description of the error, if available.
-        
-            `pJobError`
+Specifies the data type of the job.
 
-            Specifies the failure code for a JOB_ERROR event.
-        
-            `pMachineName`
+`pDocumentName`
 
-            Specifies the name of the client machine printing the job.
-        
-            `pPrinterName`
+Specifies the name of the printed document.
 
-            Specifies the name of the print connection.
-        
-            `PrintedPages`
+`pErrorDescription`
 
-            Specifies the number of pages currently printed.
-        
-            `PrintedSize`
+Specifies the text description of the error, if available.
 
-            Specifies the 64-bit size of the job.
-        
-            `pUserName`
+`pJobError`
 
-            Specifies the user who submitted the job.
-        
-            `TotalPages`
+Specifies the failure code for a JOB_ERROR event.
 
-            Specifies the total number of pages in the job.
-        
-            `TotalSize`
+`pMachineName`
 
-            Specifies the 64-bit size of the job.
+Specifies the name of the client machine printing the job.
+
+`pPrinterName`
+
+Specifies the name of the print connection.
+
+`PrintedPages`
+
+Specifies the number of pages currently printed.
+
+`PrintedSize`
+
+Specifies the 64-bit size of the job.
+
+`pUserName`
+
+Specifies the user who submitted the job.
+
+`TotalPages`
+
+Specifies the total number of pages in the job.
+
+`TotalSize`
+
+Specifies the 64-bit size of the job.
 
 
 ## Requirements

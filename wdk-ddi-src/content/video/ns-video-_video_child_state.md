@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 69a2eebb-9294-4fc1-871a-587792f84f35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_CHILD_STATE, VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE
+ms.keywords : "*PVIDEO_CHILD_STATE, display.video_child_state, video/VIDEO_CHILD_STATE, _VIDEO_CHILD_STATE, VIDEO_CHILD_STATE, PVIDEO_CHILD_STATE, Video_Structs_330b2d6d-13da-4949-9827-73e7829931b6.xml, video/PVIDEO_CHILD_STATE, VIDEO_CHILD_STATE structure [Display Devices], PVIDEO_CHILD_STATE structure pointer [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_CHILD_STATE
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE
 req.product : Windows 10 or later.
 ---
@@ -48,17 +52,17 @@ typedef struct _VIDEO_CHILD_STATE {
 
 ## Members
 
-        
-            `Id`
 
-            Specifies the ID for a particular child device, as given to it by the miniport driver. This value is the same as that returned in the <i>UId</i> parameter of the <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a> function.
-        
-            `State`
+`Id`
 
-            Specifies the new state, on or off, for the child device. A value of one (1) indicates that the child device should be turned on; a value of zero (0) indicates that it should be turned off. One possible use for <b>State</b> is in hotkey switching from one display device to another.
+Specifies the ID for a particular child device, as given to it by the miniport driver. This value is the same as that returned in the <i>UId</i> parameter of the <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a> function.
 
-    ## Remarks
-        One member of the <a href="..\video\ns-video-_video_child_state_configuration.md">VIDEO_CHILD_STATE_CONFIGURATION</a> structure is an array of VIDEO_CHILD_STATE structures. Each of these structures maintains state information for one of an adapter's child devices.
+`State`
+
+Specifies the new state, on or off, for the child device. A value of one (1) indicates that the child device should be turned on; a value of zero (0) indicates that it should be turned off. One possible use for <b>State</b> is in hotkey switching from one display device to another.
+
+## Remarks
+One member of the <a href="..\video\ns-video-_video_child_state_configuration.md">VIDEO_CHILD_STATE_CONFIGURATION</a> structure is an array of VIDEO_CHILD_STATE structures. Each of these structures maintains state information for one of an adapter's child devices.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,16 +72,12 @@ typedef struct _VIDEO_CHILD_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\video\ns-video-_video_child_state_configuration.md">VIDEO_CHILD_STATE_CONFIGURATION</a>
-</dt>
-<dt>
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-</dt>
-</dl>
+
+<a href="..\video\ns-video-_video_child_state_configuration.md">VIDEO_CHILD_STATE_CONFIGURATION</a>
+
  
 
  

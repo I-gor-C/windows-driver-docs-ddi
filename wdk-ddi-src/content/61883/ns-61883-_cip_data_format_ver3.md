@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : A7EDC949-A2C6-43E9-9CA0-886FEE5282F5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT, CIP_DATA_FORMAT
+ms.keywords : CIP_DATA_FORMAT_VER3 structure [Buses], CIP_DATA_FORMAT_VER3, 61883/CIP_DATA_FORMAT_VER3, 61883/PCIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3, PCIP_DATA_FORMAT_VER3 structure pointer [Buses], IEEE.cip_data_format_ver3, *PCIP_DATA_FORMAT, PCIP_DATA_FORMAT_VER3, _CIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_DATA_FORMAT_VER3
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3
 ---
 
@@ -56,50 +60,50 @@ typedef struct _CIP_DATA_FORMAT_VER3 {
 
 ## Members
 
-        
-            `bHeader`
 
-            This member is SPH as defined by IEC-61883.
-        
-            `BlockPeriod`
+`bHeader`
 
-            This member is the number of 1394 ticks to send a data block.
-        
-            `BlockPeriodRemainder`
+This member is SPH as defined by IEC-61883.
 
-            This member is the remainder of 1394 ticks to send a data block.
-        
-            `BlockSize`
+`BlockPeriod`
 
-            This member is DBS as defined by IEC-61883.
-        
-            `BlocksPerPacket`
+This member is the number of 1394 ticks to send a data block.
 
-            This member is the number of blocks per packet; used for blocking mode only
-        
-            `FDF_hi`
+`BlockPeriodRemainder`
 
-            This member is either known, or discovered by an AV/C command.
-        
-            `FDF_lo`
+This member is the remainder of 1394 ticks to send a data block.
 
-            This member is either known, or discovered by an AV/C command.
-        
-            `FDF_mid`
+`BlockSize`
 
-            This member is either known, or discovered by an AV/C command.
-        
-            `FMT`
+This member is DBS as defined by IEC-61883.
 
-            This member is either known, or discovered by an AV/C command.
-        
-            `Fraction`
+`BlocksPerPacket`
 
-            This member is FN as defined by IEC-61883.
-        
-            `Padding`
+This member is the number of blocks per packet; used for blocking mode only
 
-            This member is QPC as defined by IEC-61883.
+`FDF_hi`
+
+This member is either known, or discovered by an AV/C command.
+
+`FDF_lo`
+
+This member is either known, or discovered by an AV/C command.
+
+`FDF_mid`
+
+This member is either known, or discovered by an AV/C command.
+
+`FMT`
+
+This member is either known, or discovered by an AV/C command.
+
+`Fraction`
+
+This member is FN as defined by IEC-61883.
+
+`Padding`
+
+This member is QPC as defined by IEC-61883.
 
 
 ## Requirements
@@ -110,13 +114,10 @@ typedef struct _CIP_DATA_FORMAT_VER3 {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

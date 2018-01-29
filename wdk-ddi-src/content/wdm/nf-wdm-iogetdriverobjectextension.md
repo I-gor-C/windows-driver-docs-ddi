@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ce983953-53fc-4a32-8072-8a9f74d11ae3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetDriverObjectExtension
+ms.keywords : IoGetDriverObjectExtension, k104_37d4bd5d-6090-49b8-ab45-c898871f22e8.xml, kernel.iogetdriverobjectextension, wdm/IoGetDriverObjectExtension, IoGetDriverObjectExtension routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDriverObjectExtension
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,11 +85,8 @@ Drivers call <b>IoGetDriverObjectExtension</b> to retrieve a pointer to a previo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-ioallocatedriverobjectextension.md">IoAllocateDriverObjectExtension</a>
-</dt>
-</dl>
+
  
 
  

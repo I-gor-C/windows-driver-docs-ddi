@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a6d1020d-e8e1-465f-a133-59afdfe1cfce
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.videoprocessorsetoutputcolorspace, pfnVideoProcessorSetOutputColorSpace callback function [Display Devices], pfnVideoProcessorSetOutputColorSpace, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE, d3d10umddi/pfnVideoProcessorSetOutputColorSpace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnVideoProcessorSetOutputColorSpace
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -73,18 +77,32 @@ This callback function does not return a value.
 ## Remarks
 
 The <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_color_space.md">D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE</a> structure includes the following members:
-
+<ul>
+<li>
 The <b>Usage</b> member specifies whether the output is intended for playback or video processing, such as editing or authoring. The driver can optimize the video processing based on the specified usage. 
 
+</li>
+<li>
 The <b>RGB_Range</b> member specifies the RGB color range. If this member is set to zero, the transfer matrix is based on the . If this member is set to one, the RGB range is limited to index values from 16 to 235.
 
+</li>
+<li>
 The <b>YCbCr_Matrix </b> member specifies the YCbCr transfer matrix. If this member is set to zero, the transfer matrix is based on the BT.601 format. If this member is set to one, the transfer matrix is based on the BT.709 format.
 
+<div class="alert"><b>Note</b>  Both of these transfer matrixes define the black point as index 16 and the white point as index 235.</div>
+<div> </div>
+</li>
+<li>
 The <b>YCbCr_xvYCC </b> member specifies whether the output uses the conventional YCbCr format or the extended YCbCr (xvYCC) format. 
 
 If this member is set to zero, the format that is used is the conventional YCbCr format. 
 
 If this member is set to one, the format that is used is the extended xvYCC format.
+
+<div class="alert"><b>Note</b>  The xvYCC format can be used with either YCbCr transfer matrix and also defines the black point as index 16 and the white point as index 235. However, the xvYCC format supports blacker luminance values in the range from 1 to 15. The xvYCC format also supports whiter luminance values in the range from 236 to 254.  Therefore, the graphics adapter must not adjust these luminance values to the standard 16 and 235 index values for the white and black point respectively.</div>
+<div> </div>
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,14 +118,10 @@ If this member is set to one, the format that is used is the extended xvYCC form
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_color_space.md">D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE</a>
-</dt>
-</dl>
+
  
 
  

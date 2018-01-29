@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : F41E7DD6-336C-477D-87AD-0151A523DD0A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WRITE_REGISTER_USHORT
+ms.keywords : WRITE_REGISTER_USHORT function, wudfddi_hwaccess/WRITE_REGISTER_USHORT, umdf.write_register_ushort, wdf.write_register_ushort, WRITE_REGISTER_USHORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WRITE_REGISTER_USHORT
-req.alt-loc : Wudfddi_hwaccess.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -72,7 +76,7 @@ This function does not return a value.
 
 ## Remarks
 
-For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
+For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

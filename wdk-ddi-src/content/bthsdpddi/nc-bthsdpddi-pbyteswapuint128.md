@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 04a3400a-e526-47d2-a602-6ecaa7ee7fcf
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_VENDOR_SPECIFIC_COMMAND, *PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND
+ms.keywords : bltooth.sdpbyteswapuint128, SdpByteSwapUint128 callback function [Bluetooth Devices], SdpByteSwapUint128, PBYTESWAPUINT128, PBYTESWAPUINT128, sdplib/SdpByteSwapUint128, bth_funcs_48f64465-c4dd-4cf2-8655-b55d5f0c89ba.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
 req.header : bthsdpddi.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpByteSwapUint128
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
@@ -91,11 +95,8 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

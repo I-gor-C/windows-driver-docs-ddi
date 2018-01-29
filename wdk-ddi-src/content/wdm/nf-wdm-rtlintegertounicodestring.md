@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d9c82a97-a8fb-4c23-aa9c-23711d98fd8b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntegerToUnicodeString
+ms.keywords : wdm/RtlIntegerToUnicodeString, RtlIntegerToUnicodeString, k109_2ed50455-f426-4072-be25-cab15c4c79cc.xml, kernel.rtlintegertounicodestring, RtlIntegerToUnicodeString routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIntegerToUnicodeString
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -58,7 +62,6 @@ Specifies the ULONG value to convert.
 `Base`
 
 Specifies the base to use when converting <i>Value</i> to a string. The possible values are:
-
 <table>
 <tr>
 <th>Value</th>
@@ -114,15 +117,45 @@ Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</
 ## Return Value
 
 <b>RtlIntegerToUnicodeString</b> returns an NTSTATUS value. Possible return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The routine successfully converted <i>Value</i> to a Unicode string.
+</dl>
+</td>
+<td width="60%">
+The routine successfully converted <i>Value</i> to a Unicode string.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl><i>Value</i> is too large to convert, or the <b>UNICODE_STRING</b> structure is too small to hold the result.
+</dl>
+</td>
+<td width="60%">
+<i>Value</i> is too large to convert, or the <b>UNICODE_STRING</b> structure is too small to hold the result.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The specified code base is not valid. The only valid values are 0, 2, 8, 10, and 16.
+</dl>
+</td>
+<td width="60%">
+The specified code base is not valid. The only valid values are 0, 2, 8, 10, and 16.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -139,17 +172,12 @@ Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlunicodestringtointeger.md">RtlUnicodeStringToInteger</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

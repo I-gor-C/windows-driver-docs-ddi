@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90ae3382-0a2d-46cf-89e6-2148f0cbfc83
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS
+ms.keywords : display.d3dkmt_present_rgns, d3dkmthk/D3DKMT_PRESENT_RGNS, _D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_PRESENT_RGNS
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_PRESENT_RGNS
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMT_PRESENT_RGNS {
 
 ## Members
 
-        
-            `DirtyRectCount`
 
-            The number of dirty rectangles.
-        
-            `MoveRectCount`
+`DirtyRectCount`
 
-            The number of move rectangles.
-        
-            `pDirtyRects`
+The number of dirty rectangles.
 
-            A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s).
-        
-            `pMoveRects`
+`MoveRectCount`
 
-            A pointer to an array of move rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s).
+The number of move rectangles.
+
+`pDirtyRects`
+
+A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s).
+
+`pMoveRects`
+
+A pointer to an array of move rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s).
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _D3DKMT_PRESENT_RGNS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

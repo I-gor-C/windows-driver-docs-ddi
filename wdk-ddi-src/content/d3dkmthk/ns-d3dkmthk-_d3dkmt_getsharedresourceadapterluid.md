@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b7f9413b-3d57-47c4-a8a4-3288cb03af21
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_GETSHAREDRESOURCEADAPTERLUID, D3DKMT_GETSHAREDRESOURCEADAPTERLUID
+ms.keywords : display.d3dkmt_getsharedresourceadapterluid, D3DKMT_GETSHAREDRESOURCEADAPTERLUID structure [Display Devices], d3dkmthk/D3DKMT_GETSHAREDRESOURCEADAPTERLUID, D3DKMT_GETSHAREDRESOURCEADAPTERLUID, _D3DKMT_GETSHAREDRESOURCEADAPTERLUID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_GETSHAREDRESOURCEADAPTERLUID
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_GETSHAREDRESOURCEADAPTERLUID
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_GETSHAREDRESOURCEADAPTERLUID {
 
 ## Members
 
-        
-            `AdapterLuid`
 
-            [out] A LUID that serves as an identifier for the device that the resource indicated by <b>hGlobalShare</b> was created on. <b>LUID</b> is defined in Dxgi.h.
-        
-            `hGlobalShare`
+`AdapterLuid`
 
-            [in] A handle to the shared resource.
-        
-            `hNtHandle`
+[out] A LUID that serves as an identifier for the device that the resource indicated by <b>hGlobalShare</b> was created on. <b>LUID</b> is defined in Dxgi.h.
 
-            [in] An NT handle to the process.
+`hGlobalShare`
+
+[in] A handle to the shared resource.
+
+`hNtHandle`
+
+[in] An NT handle to the process.
 
 
 ## Requirements

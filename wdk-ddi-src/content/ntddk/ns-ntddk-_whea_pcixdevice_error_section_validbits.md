@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 705cfd2c-b4c0-4a59-a494-f57007e13385
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_VALIDBITS
+ms.keywords : WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_VALIDBITS, ntddk/WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, whea.whea_pcixdevice_error_section_validbits, PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], ntddk/PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], WHEA_PCIXDEVICE_ERROR_VALIDBITS, whearef_aa4d8f33-e22c-46df-8bb7-408cf04db2d1.xml, *PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS
 ---
 
 # _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS structure
@@ -54,13 +58,17 @@ typedef union _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
 
 ## Members
 
-        
-            `ValidBits`
 
-            A ULONGLONG representation of the contents of the WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union.
+`DUMMYSTRUCTNAME`
 
-    ## Remarks
-        A WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.
+
+
+`ValidBits`
+
+A ULONGLONG representation of the contents of the WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union.
+
+## Remarks
+A WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -70,13 +78,10 @@ typedef union _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
-</dt>
-</dl>
+
  
 
  

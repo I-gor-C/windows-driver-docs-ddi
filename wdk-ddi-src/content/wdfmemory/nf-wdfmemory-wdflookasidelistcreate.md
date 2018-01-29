@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 37fc86b0-de8c-469b-94bb-ad482b9c7202
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfLookasideListCreate
+ms.keywords : wdfmemory/WdfLookasideListCreate, WdfLookasideListCreate, wdf.wdflookasidelistcreate, WdfLookasideListCreate method, kmdf.wdflookasidelistcreate, DFMemoryObjectRef_f5146f3e-a9ae-459c-9361-37a4f33edd67.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfLookasideListCreate
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,14 +92,34 @@ A pointer to a location that receives a handle to the new lookaside-list object.
 ## Return Value
 
 <b>WdfLookasideListCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There was insufficient memory.
+</dl>
+</td>
+<td width="60%">
+There was insufficient memory.
 
- 
+</td>
+</tr>
+</table> 
 
 For a list of other return values that the <b>WdfLookasideListCreate</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -115,8 +139,6 @@ For more information about framework memory objects and lookaside lists, see <a 
 
 If your driver specifies <b>PagedPool</b> for the <i>PoolType</i> parameter, the <b>WdfLookasideListCreate</b> method must be called at IRQL &lt;= APC_LEVEL. Otherwise, the method can be called at IRQL &lt;= DISPATCH_LEVEL.
 
-For a code example that uses <b>WdfLookasideListCreate</b>, see <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -131,17 +153,12 @@ For a code example that uses <b>WdfLookasideListCreate</b>, see <a href="..\wdfm
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-</dt>
-<dt>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>
-</dt>
-</dl>
+
  
 
  

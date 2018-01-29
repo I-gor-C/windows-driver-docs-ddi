@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 47e857d0-1423-45e5-a5a5-54507b8fa315
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceSetAlignmentRequirement
+ms.keywords : PFN_WDFDEVICESETALIGNMENTREQUIREMENT, kmdf.wdfdevicesetalignmentrequirement, WdfDeviceSetAlignmentRequirement method, wdfdevice/WdfDeviceSetAlignmentRequirement, wdf.wdfdevicesetalignmentrequirement, DFDeviceObjectGeneralRef_9648c639-95b8-4dd9-8d30-8fb6352fe5f6.xml, WdfDeviceSetAlignmentRequirement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceSetAlignmentRequirement
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,8 +87,6 @@ If your driver specifies an alignment requirement that is less than the computer
 
 For more information about calling <b>WdfDeviceSetAlignmentRequirement</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enabling-dma-transactions">Enabling DMA Transactions</a> and <a href="https://msdn.microsoft.com/81a56f62-917e-4798-b2cc-6469c802fab8">Using Common Buffers</a>.
 
-The following code example is from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">AMCC5933</a> sample driver. This example checks a device's current alignment requirement and sets the alignment requirement to a new value, if necessary.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,17 +101,12 @@ The following code example is from the <a href="https://docs.microsoft.com/en-us
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedlogicaladdress.md">WdfCommonBufferGetAlignedLogicalAddress</a>
-</dt>
-<dt>
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetalignmentrequirement.md">WdfDeviceGetAlignmentRequirement</a>
-</dt>
-</dl>
+
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
+
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedlogicaladdress.md">WdfCommonBufferGetAlignedLogicalAddress</a>
+
  
 
  

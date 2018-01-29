@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : a9afbac3-9494-466c-b36b-26a5839913f1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTcpciDeviceInitInitialize
+ms.keywords : buses.ucmtcpcideviceinitinitialize, UcmTcpciDeviceInitInitialize method [Buses], ucmtcpcidevice/UcmTcpciDeviceInitInitialize, UcmTcpciDeviceInitInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UcmTcpciDeviceInitInitialize
-req.alt-loc : ucmtcpcicxstub.lib,ucmtcpcicxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ucmtcpcicxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -76,11 +80,8 @@ The client driver calls this method after it has performed all of its own initia
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
-</dt>
-</dl>
+
  
 
  

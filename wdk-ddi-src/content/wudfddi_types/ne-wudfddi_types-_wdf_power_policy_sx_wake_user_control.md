@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d5f4eb5f-28bb-4906-b9f5-3adae31cac80
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_POWER_POLICY_SX_WAKE_USER_CONTROL, WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
+ms.keywords : wdfdevice/WakeUserControlInvalid, DFDeviceObjectGeneralRef_1594c32d-63b6-4280-b5b3-dfcf508a88c6.xml, WakeDoNotAllowUserControl, wudfddi_types/WakeAllowUserControl, _WDF_POWER_POLICY_SX_WAKE_USER_CONTROL, wudfddi_types/WakeUserControlInvalid, wdfdevice/WakeDoNotAllowUserControl, wudfddi_types/WDF_POWER_POLICY_SX_WAKE_USER_CONTROL, wdf.wdf_power_policy_sx_wake_user_control, wdfdevice/WDF_POWER_POLICY_SX_WAKE_USER_CONTROL, WakeUserControlInvalid, wdfdevice/WakeAllowUserControl, kmdf.wdf_power_policy_sx_wake_user_control, wudfddi_types/WakeDoNotAllowUserControl, WDF_POWER_POLICY_SX_WAKE_USER_CONTROL, WDF_POWER_POLICY_SX_WAKE_USER_CONTROL enumeration, WakeAllowUserControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 1.11
-req.alt-api : WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
-req.alt-loc : wdfdevice.h,wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
 req.product : Windows 10 or later.
 ---
@@ -85,11 +89,8 @@ To control a device's ability to wake the system from a low system power state, 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 33AE6D40-F54D-427D-B811-2188EA623A26
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_DESCRIPTOR, STORAGE_ZONE_DESCRIPTOR, *PSTORAGE_ZONE_DESCRIPTOR
+ms.keywords : STORAGE_ZONE_DESCRIPTOR, PSTORAGE_ZONE_DESCRIPTOR, STORAGE_ZONE_DESCRIPTOR structure [Storage Devices], *PSTORAGE_ZONE_DESCRIPTOR, PSTORAGE_ZONE_DESCRIPTOR structure pointer [Storage Devices], ntddstor/PSTORAGE_ZONE_DESCRIPTOR, ntddstor/STORAGE_ZONE_DESCRIPTOR, _STORAGE_ZONE_DESCRIPTOR, storage.storage_zone_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_ZONE_DESCRIPTOR
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_DESCRIPTOR, *PSTORAGE_ZONE_DESCRIPTOR
 ---
 
@@ -53,22 +57,34 @@ typedef struct _STORAGE_ZONE_DESCRIPTOR {
 
 ## Members
 
-        
-            `Reserved0`
 
-            N/A
-        
-            `Size`
+`Reserved0`
 
-            N/A
-        
-            `ZoneSize`
+N/A
 
-            N/A
-        
-            `ZoneType`
+`ResetWritePointerRecommend`
 
-            N/A
+
+
+`Size`
+
+N/A
+
+`WritePointerOffset`
+
+
+
+`ZoneCondition`
+
+
+
+`ZoneSize`
+
+N/A
+
+`ZoneType`
+
+N/A
 
 
 ## Requirements

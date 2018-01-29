@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6f0ae6fc-4f2f-4a1a-ac2f-93689f6b7d50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtRemovePolicy
+ms.keywords : ClfsMgmtRemovePolicy, Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml, kernel.clfsmgmtremovepolicy, wdm/ClfsMgmtRemovePolicy, ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsMgmtRemovePolicy
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,26 +66,78 @@ A value of the <a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLIC
 ## Return Value
 
 The <b>ClfsMgmtRemovePolicy</b> routine returns one of the following NTSTATUS values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>CLFS management has removed the requested policy.
+</dl>
+</td>
+<td width="60%">
+CLFS management has removed the requested policy.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>CLFS management was not able to process the request.
+</dl>
+</td>
+<td width="60%">
+CLFS management was not able to process the request.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_1</b></dt>
-</dl>A <b>NULL</b> value was supplied for the <i>LogFile</i> parameter.
+</dl>
+</td>
+<td width="60%">
+A <b>NULL</b> value was supplied for the <i>LogFile</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There is insufficient memory to complete the operation.
+</dl>
+</td>
+<td width="60%">
+There is insufficient memory to complete the operation.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The value of the <i>PolicyType</i> parameter is not a valid value for the <b>CLFS_MGMT_POLICY_TYPE</b> enumeration.
+</dl>
+</td>
+<td width="60%">
+The value of the <i>PolicyType</i> parameter is not a valid value for the <b>CLFS_MGMT_POLICY_TYPE</b> enumeration.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_LOG_POLICY_NOT_INSTALLED</b></dt>
-</dl>No policy of this type has been registered for the log file.
+</dl>
+</td>
+<td width="60%">
+No policy of this type has been registered for the log file.
 
- 
+</td>
+</tr>
+</table> 
 
 This routine might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS Values</a>.
 
@@ -100,14 +156,10 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
-</dt>
-<dt>
 <a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
+
  
 
  

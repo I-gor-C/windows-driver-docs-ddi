@@ -7,8 +7,8 @@ old-location : netvista\rilcallaudiomediastate.htm
 old-project : netvista
 ms.assetid : f8e65085-6837-4d49-a39e-784942ee39a4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE
+ms.date : 1/18/2018
+ms.keywords : RILCALLAUDIOMEDIASTATE structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE, netvista.rilcallaudiomediastate, RILCALLAUDIOMEDIASTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLAUDIOMEDIASTATE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE"
 ---
 
 # RILCALLAUDIOMEDIASTATE structure
@@ -49,22 +53,22 @@ typedef struct _RILCALLAUDIOMEDIASTATE {
 
 ## Members
 
-        
-            `dwAudioQuality`
 
-            
-        
-            `dwAudioSource`
+`dwAudioQuality`
 
-            
-        
-            `dwFlags`
 
-            
-        
-            `dwParams`
 
-            
+`dwAudioSource`
+
+
+
+`dwFlags`
+
+
+
+`dwParams`
+
+
 
 
 ## Requirements

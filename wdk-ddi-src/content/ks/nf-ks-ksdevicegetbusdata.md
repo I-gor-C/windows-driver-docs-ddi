@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 40971ff3-6fd3-480b-aba9-7f572d6e1ce2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDeviceGetBusData
+ms.keywords : avfunc_3106cd50-9e8c-407c-bcb0-c5e9c86d8dc7.xml, ks/KsDeviceGetBusData, KsDeviceGetBusData function [Streaming Media Devices], KsDeviceGetBusData, stream.ksdevicegetbusdata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDeviceGetBusData
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -97,14 +101,10 @@ To ensure compatibility, minidriver writers may want to restrict use of <b>KsDev
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksdevicesetbusdata.md">KsDeviceSetBusData</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksdevicesetbusdata.md">KsDeviceSetBusData</a>
+
  
 
  

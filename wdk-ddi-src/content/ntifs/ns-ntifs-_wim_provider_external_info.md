@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : CD51FBD6-A589-4135-8BF0-8F0075654A05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _WIM_PROVIDER_EXTERNAL_INFO, *PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO
+ms.keywords : WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE, *PWIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO structure pointer [Installable File System Drivers], ntifs/PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO structure [Installable File System Drivers], ntifs/WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED, _WIM_PROVIDER_EXTERNAL_INFO, ifsk.wim_provider_external_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1 Update.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WIM_PROVIDER_EXTERNAL_INFO
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO"
 ---
 
@@ -49,32 +53,51 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 
 ## Members
 
-        
-            `DataSourceId`
 
-            An identifier value for the WIM file data source.
-        
-            `Flags`
+`DataSourceId`
 
-            The status flags for the WIM provider. Set to 0 when active. Otherwise <b>Flags</b> is set to one of the following values.
+An identifier value for the WIM file data source.
 
+`Flags`
+
+The status flags for the WIM provider. Set to 0 when active. Otherwise <b>Flags</b> is set to one of the following values.
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `ResourceHash`
+<td width="40%"><a id="WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE"></a><a id="wim_provider_external_flag_not_active"></a><dl>
+<dt><b>WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The WIM provider is not active. This can occur when the WIM file is  not found. In this case the WIM file will not be recovered.
 
-            An identifier for the object contained within the WIM.  Conventionally a hash of the contents of a file, stored within the WIM.
-        
-            `Version`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED"></a><a id="wim_provider_external_flag_suspended"></a><dl>
+<dt><b>WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED</b></dt>
+</dl>
+</td>
+<td width="60%">
+Indicates that the provider is dismounted. Recovery will be attempted.
 
-            The WIM provider version. Set to WIM_PROVIDER_CURRENT_VERSION.
+</td>
+</tr>
+</table>
 
-    ## Remarks
-        The backing source for a file is set with a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632443">FSCTL_SET_EXTERNAL_BACKING</a> control code request. The WIM file backing the file specified in the request is set in the <b>DataSourceId</b> member of <b>WIM_PROVIDER_EXTERNAL_INFO</b>.
+`ResourceHash`
+
+An identifier for the object contained within the WIM.  Conventionally a hash of the contents of a file, stored within the WIM.
+
+`Version`
+
+The WIM provider version. Set to WIM_PROVIDER_CURRENT_VERSION.
+
+## Remarks
+The backing source for a file is set with a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632443">FSCTL_SET_EXTERNAL_BACKING</a> control code request. The WIM file backing the file specified in the request is set in the <b>DataSourceId</b> member of <b>WIM_PROVIDER_EXTERNAL_INFO</b>.
 
 The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider info is returned from a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a> request.
 
@@ -86,16 +109,12 @@ The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider inf
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632443">FSCTL_SET_EXTERNAL_BACKING</a>
-</dt>
-</dl>
+
  
 
  

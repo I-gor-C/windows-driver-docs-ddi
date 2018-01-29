@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 38700667-d872-4c08-b846-236e94318dba
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerAlert
+ms.keywords : UcmTcpciPortControllerAlert method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerAlert, buses.ucmtcpciportcontrolleralert, UcmTcpciPortControllerAlert
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UcmTcpciPortControllerAlert
-req.alt-loc : ucmtcpciportcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
 req.product : Windows 10 or later.
 ---
@@ -94,9 +98,8 @@ When handling alerts, UcmTcpciCx may send hardware requests to the client driver
 
 ## See Also
 
-<dl>
-<dt><a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/wdf/handling-hardware-interrupts">Handling Hardware Interrupts</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/wdf/handling-hardware-interrupts">Handling Hardware Interrupts</a>
+
  
 
  

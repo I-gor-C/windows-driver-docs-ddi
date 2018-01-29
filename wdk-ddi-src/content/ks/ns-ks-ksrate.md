@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dc8f23d5-14bb-43be-807a-041ca9c30a76
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSRATE, KSRATE, *PKSRATE
+ms.keywords : "*PKSRATE, ks/PKSRATE, stream.ksrate, KSRATE structure [Streaming Media Devices], ks/KSRATE, PKSRATE, KSRATE, PKSRATE structure pointer [Streaming Media Devices], ks-struct_a47aa4cc-ff36-4a02-bd68-63c7ed450279.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSRATE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSRATE, *PKSRATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSRATE, KSRATE"
 ---
 
 # KSRATE structure
@@ -50,15 +54,14 @@ typedef struct {
 
 ## Members
 
-        
-            `Duration`
 
-            Specifies the duration of the rate in presentation time units.
-        
-            `Flags`
+`Duration`
 
-            Possible flag values are listed in the following table.
+Specifies the duration of the rate in presentation time units.
 
+`Flags`
+
+Possible flag values are listed in the following table.
 <table>
 <tr>
 <th>Flag</th>
@@ -85,18 +88,18 @@ Specifies that there is no valid duration in this rate change request or query.
 </td>
 </tr>
 </table>
-        
-            `Interface`
 
-            A structure of type <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> that specifies either the interface used in the connection this rate request is being sent to, or the interface of a related connection. This allows the time units to be interpreted by the pin.
-        
-            `PresentationStart`
+`Interface`
 
-            Specifies the start point for the rate in presentation time units.
-        
-            `Rate`
+A structure of type <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> that specifies either the interface used in the connection this rate request is being sent to, or the interface of a related connection. This allows the time units to be interpreted by the pin.
 
-            Specifies the rate in terms of 1/10th percentage points, where 1000 is the nominal 1.0 rate, 500 is 0.5 rate, and so on. Negative numbers indicate reverse rates.
+`PresentationStart`
+
+Specifies the start point for the rate in presentation time units.
+
+`Rate`
+
+Specifies the rate in terms of 1/10th percentage points, where 1000 is the nominal 1.0 rate, 500 is 0.5 rate, and so on. Negative numbers indicate reverse rates.
 
 
 ## Requirements
@@ -107,13 +110,10 @@ Specifies that there is no valid duration in this rate change request or query.
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksrate_capability.md">KSRATE_CAPABILITY</a>
-</dt>
-</dl>
+
  
 
  

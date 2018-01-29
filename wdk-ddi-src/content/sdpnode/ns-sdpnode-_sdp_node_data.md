@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : ce1f9f1b-2215-4b39-b5e6-a5076f02af64
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _SDP_NODE_DATA, *PSDP_NODE_DATA, SDP_NODE_DATA
+ms.keywords : sdpnode/SDP_NODE_DATA, *PSDP_NODE_DATA, SDP_NODE_DATA union [Bluetooth Devices], bltooth.sdp_node_data, PSDP_NODE_DATA union pointer [Bluetooth Devices], SDP_NODE_DATA, PSDP_NODE_DATA, _SDP_NODE_DATA, sdpnode/PSDP_NODE_DATA, bth_structs_c97da04d-31d0-4e0b-b909-9a1fae7d53dd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : sdpnode.h
 req.include-header : Sdpnode.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SDP_NODE_DATA
-req.alt-loc : sdpnode.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PSDP_NODE_DATA, SDP_NODE_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SDP_NODE_DATA, *PSDP_NODE_DATA
 req.product : Windows 10 or later.
 ---
 
@@ -70,87 +74,87 @@ typedef union _SDP_NODE_DATA {
 
 ## Members
 
-        
-            `alternative`
 
-            An SDP_NODE_HEADER structure that references the elements of an alternate list sequence.
-        
-            `boolean`
+`alternative`
 
-            The union member for a Boolean value.
-        
-            `container`
+An SDP_NODE_HEADER structure that references the elements of an alternate list sequence.
 
-            A list of pointers to user-mode specific interfaces.
-        
-            `int128`
+`boolean`
 
-            The union member for a 128-bit integer.
-        
-            `int16`
+The union member for a Boolean value.
 
-            The union member for a 16-bit integer.
-        
-            `int32`
+`container`
 
-            The union member for a 32-bit integer.
-        
-            `int64`
+A list of pointers to user-mode specific interfaces.
 
-            The union member for a 64-bit integer.
-        
-            `int8`
+`int128`
 
-            The union reserved for an 8-bit integer.
-        
-            `sequence`
+The union member for a 128-bit integer.
 
-            An 
+`int16`
+
+The union member for a 16-bit integer.
+
+`int32`
+
+The union member for a 32-bit integer.
+
+`int64`
+
+The union member for a 64-bit integer.
+
+`int8`
+
+The union reserved for an 8-bit integer.
+
+`sequence`
+
+An 
      <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a> structure that references
      the elements of a sequence.
-        
-            `string`
 
-            The union member for a string value.
-        
-            `uint128`
+`string`
 
-            The union member for an unsigned 128-bit integer.
-        
-            `uint16`
+The union member for a string value.
 
-            The union member for an unsigned 16-bit integer.
-        
-            `uint32`
+`uint128`
 
-            The union member for an unsigned 32-bit integer.
-        
-            `uint64`
+The union member for an unsigned 128-bit integer.
 
-            The union member for an unsigned 64-bit integer.
-        
-            `uint8`
+`uint16`
 
-            The union member for an unsigned 8-bit integer.
-        
-            `url`
+The union member for an unsigned 16-bit integer.
 
-            The union member for a URL value.
-        
-            `uuid128`
+`uint32`
 
-            The union member for a 128-bit universally unique identifier (UUID).
-        
-            `uuid16`
+The union member for an unsigned 32-bit integer.
 
-            The union member for a 16-bit UUID.
-        
-            `uuid32`
+`uint64`
 
-            The union member for a 32-bit UUID.
+The union member for an unsigned 64-bit integer.
 
-    ## Remarks
-        Each 
+`uint8`
+
+The union member for an unsigned 8-bit integer.
+
+`url`
+
+The union member for a URL value.
+
+`uuid128`
+
+The union member for a 128-bit universally unique identifier (UUID).
+
+`uuid16`
+
+The union member for a 16-bit UUID.
+
+`uuid32`
+
+The union member for a 32-bit UUID.
+
+## Remarks
+Each 
     <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure in the tree representation of an
     SDP record contains a SDP_NODE_HEADER structure and an SDP_NODE_DATA union.
 
@@ -173,22 +177,16 @@ The header specifies the type of data. Driver developers can access links to pee
 | **Minimum UMDF version** |  |
 | **Header** | sdpnode.h (include Sdpnode.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
-</dt>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
-</dt>
-<dt>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
-</dt>
-</dl>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
  
 
  

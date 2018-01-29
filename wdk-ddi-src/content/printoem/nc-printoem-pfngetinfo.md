@@ -7,8 +7,8 @@ old-location : print\unifontobj_getinfo.htm
 old-project : print
 ms.assetid : 2c0d350d-dcdf-4da7-8cca-7f36d4ca622e
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPrintSchemaTicket2, IPrintSchemaTicket2::GetParameterInitializer, GetParameterInitializer
+ms.date : 1/18/2018
+ms.keywords : print.unifontobj_getinfo, UNIFONTOBJ_GetInfo routine [Print Devices], UNIFONTOBJ_GetInfo, PFNGETINFO, PFNGETINFO, printoem/UNIFONTOBJ_GetInfo, print_unidrv-pscript_rendering_7dc55246-beaa-4058-87a3-5438db3368c4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UNIFONTOBJ_GetInfo
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PrintSchemaSelectionType
 req.product : Windows 10 or later.
 ---
@@ -88,44 +92,86 @@ The <b>UNIFONTOBJ_GetInfo</b> callback function allows a <a href="https://msdn.m
 A rendering plug-in receives the <b>UNIFONTOBJ_GetInfo</b> function's address in the <a href="..\printoem\ns-printoem-_unifontobj.md">UNIFONTOBJ</a> structure that is passed to the font customization methods.
 
 The type of information returned by the function is dependent on the input arguments. The caller supplies values for <i>dwInfoID</i>, <i>pData</i>, and <i>dwDataSize</i> to indicate the type of information wanted. The following table summarizes the types of information returned. For more information, see the structure descriptions.
-
+<table>
+<tr>
+<th><i>pData</i> Structure</th>
+<th>Returned Information</th>
+</tr>
+<tr>
+<td>
 
 <a href="..\printoem\ns-printoem-_getinfo_fontobj.md">GETINFO_FONTOBJ</a>
 
 
+</td>
+<td>
 A FONTOBJ structure describing the current font.
 
+</td>
+</tr>
+<tr>
+<td>
 
 <a href="..\printoem\ns-printoem-_getinfo_glyphbitmap.md">GETINFO_GLYPHBITMAP</a>
 
 
+</td>
+<td>
 A single glyph bitmap.
 
+</td>
+</tr>
+<tr>
+<td>
 
 <a href="..\printoem\ns-printoem-_getinfo_glyphstring.md">GETINFO_GLYPHSTRING</a>
 
 
+</td>
+<td>
 An array of glyph specifiers in a specified format.
 
+</td>
+</tr>
+<tr>
+<td>
 
 <a href="..\printoem\ns-printoem-_getinfo_glyphwidth.md">GETINFO_GLYPHWIDTH</a>
 
 
+</td>
+<td>
 Total width of a set of glyphs.
 
+</td>
+</tr>
+<tr>
+<td>
 
 <a href="..\printoem\ns-printoem-_getinfo_memory.md">GETINFO_MEMORY</a>
 
 
+</td>
+<td>
 Amount of available printer memory remaining.
 
+</td>
+</tr>
+<tr>
+<td>
 
 <a href="..\printoem\ns-printoem-_getinfo_stdvar.md">GETINFO_STDVAR</a>
 
 
+</td>
+<td>
 The current value for one or more of Unidrv's <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a>.
 
-If the buffer described by <i>pData</i> and <i>dwDataSize</i> is too small to receive the structure indicated by <i>dwInfoID</i>, the function loads the required buffer size into the location pointed by <i>pcbNeeded</i> and returns <b>FALSE</b>.</p>
+</td>
+</tr>
+</table> 
+
+If the buffer described by <i>pData</i> and <i>dwDataSize</i> is too small to receive the structure indicated by <i>dwInfoID</i>, the function loads the required buffer size into the location pointed by <i>pcbNeeded</i> and returns <b>FALSE</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

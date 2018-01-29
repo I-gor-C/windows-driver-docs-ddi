@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 05971A19-4B66-41F6-9043-DA9C81FA92E5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUsbDeviceInitAddStringDescriptor
+ms.keywords : buses.udecxusbdeviceinitaddstringdescriptor, UdecxUsbDeviceInitAddStringDescriptor, UdecxUsbDeviceInitAddStringDescriptor function [Buses], udecxusbdevice/UdecxUsbDeviceInitAddStringDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UdecxUsbDeviceInitAddStringDescriptor
-req.alt-loc : Udecxstub.lib,Udecxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Udecxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
 req.product : Windows 10 or later.
 ---
 
@@ -91,20 +95,14 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540156">USB String Descriptors</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540156">USB String Descriptors</a>
+
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>
+
  
 
  

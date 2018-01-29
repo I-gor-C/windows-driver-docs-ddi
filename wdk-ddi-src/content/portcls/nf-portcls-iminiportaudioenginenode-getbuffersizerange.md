@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 75CBDD4F-618F-4618-9D53-4A8DF40992B0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode, IMiniportAudioEngineNode::GetBufferSizeRange, GetBufferSizeRange
+ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetBufferSizeRange method, audio.iminiportaudioenginenode_getbuffersizerange, GetBufferSizeRange, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode::GetBufferSizeRange, GetBufferSizeRange method [Audio Devices], IMiniportAudioEngineNode interface, GetBufferSizeRange method [Audio Devices], IMiniportAudioEngineNode::GetBufferSizeRange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportAudioEngineNode.GetBufferSizeRange
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -84,11 +88,8 @@ code.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
-</dt>
-</dl>
+
  
 
  

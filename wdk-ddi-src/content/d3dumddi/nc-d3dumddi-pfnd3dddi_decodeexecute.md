@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e12496c0-e3e4-437e-9f84-a30ee99b4541
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.decodeexecute, DecodeExecute callback function [Display Devices], DecodeExecute, PFND3DDDI_DECODEEXECUTE, PFND3DDDI_DECODEEXECUTE, d3dumddi/DecodeExecute, UserModeDisplayDriver_Functions_6e4181b3-2ba5-4c77-a05a-4c8bb2d0d97c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DecodeExecute
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,13 +68,35 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>DecodeExecute</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The DirectX VA decode operation is successfully performed.
+</dl>
+</td>
+<td width="60%">
+The DirectX VA decode operation is successfully performed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decodeexecute.md">DecodeExecute</a> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -92,14 +118,10 @@ DirectX VA 1.0 supported an external synchronization mechanism through a call to
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

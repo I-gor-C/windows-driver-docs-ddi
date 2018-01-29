@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 98dd7262-e8f7-4e22-b19e-1a7fc56c8fe1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camprocessrawvideoframe, CamProcessRawVideoFrame, CamProcessRawVideoFrame callback function [Streaming Media Devices], CamProcessRawVideoFrame, PCAM_PROCESS_RAW_FRAME_ROUTINE, PCAM_PROCESS_RAW_FRAME_ROUTINE, usbcamdi/CamProcessRawVideoFrame, usbcmdpr_68fb4b0e-0f04-4af5-b0a6-38279f84f31a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CamProcessRawVideoFrame
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -126,11 +130,8 @@ This function is optional.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a>
-</dt>
-</dl>
+
  
 
  

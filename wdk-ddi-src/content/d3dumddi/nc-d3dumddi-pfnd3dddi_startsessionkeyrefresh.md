@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 986d8f46-3b4f-41b2-938e-4f3adbfe057a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.startsessionkeyrefresh, StartSessionKeyRefresh callback function [Display Devices], StartSessionKeyRefresh, PFND3DDDI_STARTSESSIONKEYREFRESH, PFND3DDDI_STARTSESSIONKEYREFRESH, d3dumddi/StartSessionKeyRefresh, UserModeDisplayDriver_Functions_c68a1081-f350-4439-8c1c-91d9c54469bd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : StartSessionKeyRefresh is supported beginning with t
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StartSessionKeyRefresh
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>StartSessionKeyRefresh</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The random number is successfully returned. 
+</dl>
+</td>
+<td width="60%">
+The random number is successfully returned. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_NOTAVAILABLE</b></dt>
-</dl>The driver does not support the <i>StartSessionKeyRefresh</i> function.
+</dl>
+</td>
+<td width="60%">
+The driver does not support the <i>StartSessionKeyRefresh</i> function. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,14 +119,10 @@ When the runtime subsequently calls the driver's <a href="..\d3dumddi\nc-d3dumdd
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_finishsessionkeyrefresh.md">FinishSessionKeyRefresh</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
+
  
 
  

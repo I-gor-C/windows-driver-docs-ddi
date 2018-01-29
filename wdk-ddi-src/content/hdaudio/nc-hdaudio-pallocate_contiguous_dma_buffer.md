@@ -2,13 +2,13 @@
 UID : NC:hdaudio.PALLOCATE_CONTIGUOUS_DMA_BUFFER
 title : PALLOCATE_CONTIGUOUS_DMA_BUFFER
 author : windows-driver-content
-description : The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as
+description : The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as:
 old-location : audio\allocatecontiguousdmabuffer.htm
 old-project : audio
 ms.assetid : 4538ce8e-fccd-4862-b226-a99fe578a5fd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.allocatecontiguousdmabuffer, AllocateContiguousDmaBuffer callback function [Audio Devices], AllocateContiguousDmaBuffer, PALLOCATE_CONTIGUOUS_DMA_BUFFER, PALLOCATE_CONTIGUOUS_DMA_BUFFER, hdaudio/AllocateContiguousDmaBuffer, aud-prop2_c9f2fa85-0967-4793-9092-9f95986c2126.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AllocateContiguousDmaBuffer
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -81,24 +85,78 @@ NTSTATUS PallocateContiguousDmaBuffer(
 ## Return Value
 
 <code>AllocateContiguousDmaBuffer</code> returns STATUS_SUCCESS if the call succeeds. Otherwise, the routine returns an appropriate error code. The following table shows some of the possible return status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>Indicates that the caller is running at an interrupt request level (IRQL) that is too high.
+</dl>
+</td>
+<td width="60%">
+Indicates that the caller is running at an interrupt request level (IRQL) that is too high.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates that buffer allocation failed.
+</dl>
+</td>
+<td width="60%">
+Indicates that buffer allocation failed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>Indicates that the handle parameter value is invalid.
+</dl>
+</td>
+<td width="60%">
+Indicates that the handle parameter value is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Indicates that one of the parameter values is incorrect (bad pointer).
+</dl>
+</td>
+<td width="60%">
+Indicates that one of the parameter values is incorrect (bad pointer).
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DEVICE_NOT_READY</b></dt>
-</dl>Indicates that the hardware programming timed out. If this occurs, the hardware might be in a compromised state.
+</dl>
+</td>
+<td width="60%">
+Indicates that the hardware programming timed out. If this occurs, the hardware might be in a compromised state.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>Indicates that the stream is not in the reset state or that a buffer is already allocated for the DMA engine.
+</dl>
+</td>
+<td width="60%">
+Indicates that the stream is not in the reset state or that a buffer is already allocated for the DMA engine.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -117,10 +175,16 @@ During the lifetime of a DMA engine handle, <code>AllocateContiguousDmaBuffer</c
 During calls to <code>AllocateContiguousDmaBuffer</code>, <b>SetupDmaEngineWithBdl</b>, and <b>FreeContiguousDmaBuffer</b>, the DMA engine must be in the reset stream state. The DMA engine is in the reset state immediately following the call to Allocate<i>Xxx</i>DmaEngine. To change the DMA engine to the run state, call <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a>.
 
 This routine fails and returns error code STATUS_INVALID_DEVICE_REQUEST in either of the following circumstances:
-
+<ul>
+<li>
 Any previously allocated DMA buffer has not been freed (by calling <b>FreeContiguousDmaBuffer</b>).
 
+</li>
+<li>
 The stream is in a state other than reset.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -136,32 +200,22 @@ The stream is in a state other than reset.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pfree_contiguous_dma_buffer.md">FreeContiguousDmaBuffer</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer.md">FreeDmaBuffer</a>
-</dt>
-<dt>
+
 <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a>
-</dt>
-</dl>
+
+<a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a>
+
+<a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer.md">FreeDmaBuffer</a>
+
+<a href="..\hdaudio\nc-hdaudio-pfree_contiguous_dma_buffer.md">FreeContiguousDmaBuffer</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
+
  
 
  

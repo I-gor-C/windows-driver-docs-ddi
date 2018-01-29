@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : c2a8422d-15f0-45df-bc54-946fb3d11a22
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PMI_EVENT_TYPE, PMI_EVENT_TYPE
+ms.keywords : powermeter.pmi_event_type, PmiBudgetEvent, pmi/PmiBudgetEvent, pmi/PmiAveragingIntervalChangedEvent, pmi/PmiEventMax, pmi/PMI_EVENT_TYPE, PMI_EVENT_TYPE enumeration [Power Metering and Budgeting Devices], PowerMeterRef_86ff4160-2977-4b72-a37f-72779df2d5dc.xml, pmi/PmiCapabilitiesChangedEvent, pmi/PmiThresholdEvent, pmi/PmiConfigurationChangedEvent, PMI_EVENT_TYPE, PmiThresholdEvent, PmiAveragingIntervalChangedEvent, PmiConfigurationChangedEvent, PmiEventMax, PmiCapabilitiesChangedEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PMI_EVENT_TYPE
-req.alt-loc : pmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_EVENT_TYPE
 ---
 
@@ -98,14 +102,10 @@ The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVE
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
-</dt>
-<dt>
+
 <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a>
-</dt>
-</dl>
+
  
 
  

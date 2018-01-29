@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 475e352a-b6ea-4e37-ad46-e94284caa105
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeRemoveQueue
+ms.keywords : ntifs/KeRemoveQueue, KeRemoveQueue, KeRemoveQueue routine [Installable File System Drivers], ifsk.keremovequeue, keref_99014b0b-5ca1-4cda-8422-fc3819f42d8b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRemoveQueue
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -66,6 +70,13 @@ Pointer to a variable that specifies the absolute or relative time, in units of 
 ## Return Value
 
 <b>KeRemoveQueue</b> returns one of the following:
+<ul>
+<li>A pointer to a dequeued entry from the given queue object, if one is available 
+</li>
+<li>STATUS_TIMEOUT, if the given Timeout interval expired before an entry became available</li>
+<li>STATUS_USER_APC, if a user-mode APC was delivered in the context of the calling thread</li>
+<li>STATUS_ABANDONED, if the queue has been run down</li>
+</ul>
 
 ## Remarks
 
@@ -93,14 +104,10 @@ For more information about using driver-managed internal queues, see <a href="ht
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-keinsertheadqueue.md">KeInsertHeadQueue</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-keinsertqueue.md">KeInsertQueue</a>
-</dt>
-</dl>
+
  
 
  

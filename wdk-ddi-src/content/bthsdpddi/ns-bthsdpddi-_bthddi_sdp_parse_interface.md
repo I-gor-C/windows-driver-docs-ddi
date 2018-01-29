@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : bb8a1dd5-8207-4034-993e-eed49dc0f9c4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE
+ms.keywords : PBTHDDI_SDP_PARSE_INTERFACE structure pointer [Bluetooth Devices], bth_structs_9c26fcf9-b84e-4b8d-a6bd-f897428cb921.xml, PBTHDDI_SDP_PARSE_INTERFACE, bthsdpddi/BTHDDI_SDP_PARSE_INTERFACE, bltooth.bthddi_sdp_parse_interface, *PBTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE structure [Bluetooth Devices], bthsdpddi/PBTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, _BTHDDI_SDP_PARSE_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthsdpddi.h
 req.include-header : BthSdpddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTHDDI_SDP_PARSE_INTERFACE
-req.alt-loc : bthsdpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE"
 ---
 
@@ -62,95 +66,95 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 
 ## Members
 
-        
-            `Interface`
 
-            A structure that describes the 
+`Interface`
+
+A structure that describes the 
      <b>BTHDDI_SDP_NODE_INTERFACE</b> interface for use by profile drivers. For more information about this
      structure, see 
      <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
-        
-            `Reserved1`
 
-            Reserved for future use. Do not use.
-        
-            `Reserved2`
+`Reserved1`
 
-            Reserved for future use. Do not use.
-        
-            `Reserved3`
+Reserved for future use. Do not use.
 
-            Reserved for future use. Do not use.
-        
-            `Reserved4`
+`Reserved2`
 
-            Reserved for future use. Do not use.
-        
-            `SdpByteSwapUint128`
+Reserved for future use. Do not use.
 
-            A pointer to the 
+`Reserved3`
+
+Reserved for future use. Do not use.
+
+`Reserved4`
+
+Reserved for future use. Do not use.
+
+`SdpByteSwapUint128`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md">SdpByteSwapUint128</a> function.
-        
-            `SdpByteSwapUint64`
 
-            A pointer to the 
+`SdpByteSwapUint64`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md">SdpByteSwapUint64</a> function.
-        
-            `SdpByteSwapUuid128`
 
-            A pointer to the 
+`SdpByteSwapUuid128`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a> function.
-        
-            `SdpConvertStreamToTree`
 
-            A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">
-     SdpConvertStreamToTree</a> function.
-        
-            `SdpConvertTreeToStream`
+`SdpConvertStreamToTree`
 
-            A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">
-     SdpConvertTreeToStream</a> function.
-        
-            `SdpFindAttributeInTree`
+A pointer to the 
+     <mshelp:link keywords="bltooth.sdpconvertstreamtotree" tabindex="0"><b>
+     SdpConvertStreamToTree</b></mshelp:link> function.
 
-            A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">
-     SdpFindAttributeInTree</a> function.
-        
-            `SdpFreeTree`
+`SdpConvertTreeToStream`
 
-            A pointer to the 
+A pointer to the 
+     <mshelp:link keywords="bltooth.sdpconverttreetostream" tabindex="0"><b>
+     SdpConvertTreeToStream</b></mshelp:link> function.
+
+`SdpFindAttributeInTree`
+
+A pointer to the 
+     <mshelp:link keywords="bltooth.sdpfindattributeintree" tabindex="0"><b>
+     SdpFindAttributeInTree</b></mshelp:link> function.
+
+`SdpFreeTree`
+
+A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function.
-        
-            `SdpGetNextElement`
 
-            A pointer to the 
+`SdpGetNextElement`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md">SdpGetNextElement</a> function.
-        
-            `SdpRetrieveUint128`
 
-            A pointer to the 
+`SdpRetrieveUint128`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint128</a> function.
-        
-            `SdpRetrieveUint64`
 
-            A pointer to the 
+`SdpRetrieveUint64`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint64</a> function.
-        
-            `SdpRetrieveUuid128`
 
-            A pointer to the 
+`SdpRetrieveUuid128`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md">SdpRetrieveUuid128</a> function.
-        
-            `SdpValidateStream`
 
-            A pointer to the 
+`SdpValidateStream`
+
+A pointer to the 
      <a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a> function.
 
-    ## Remarks
-        Profile drivers should specify the 
+## Remarks
+Profile drivers should specify the 
     <b>GUID_BTHDDI_SDP_PARSE_INTERFACE</b> GUID to query for an instance of the BTHDDI_SDP_PARSE_INTERFACE
     structure from the Bluetooth driver stack.
 
@@ -165,49 +169,34 @@ All the members of this structure, other than the
 | **Minimum UMDF version** |  |
 | **Header** | bthsdpddi.h (include BthSdpddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
-</dt>
-<dt>
-<a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md">SdpByteSwapUint128</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md">SdpByteSwapUint64</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md">SdpRetrieveUuid128</a>
-</dt>
-<dt>
-<a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint128</a>
-</dt>
-<dt>
 <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint64</a>
-</dt>
-<dt>
-<a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
+
 <a href="..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md">SdpGetNextElement</a>
-</dt>
-</dl>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md">SdpRetrieveUuid128</a>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md">SdpByteSwapUint128</a>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md">SdpByteSwapUint64</a>
+
+<a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a>
+
+<a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint128</a>
+
+<a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
+
  
 
  

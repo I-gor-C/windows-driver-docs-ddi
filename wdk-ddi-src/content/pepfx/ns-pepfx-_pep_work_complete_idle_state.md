@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6065A77F-5E80-4D3D-8EF1-4D336505122A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_WORK_COMPLETE_IDLE_STATE, PEP_WORK_COMPLETE_IDLE_STATE, *PPEP_WORK_COMPLETE_IDLE_STATE
+ms.keywords : "*PPEP_WORK_COMPLETE_IDLE_STATE, PPEP_WORK_COMPLETE_IDLE_STATE, PEP_WORK_COMPLETE_IDLE_STATE, kernel.pep_work_complete_idle_state, pepfx/PEP_WORK_COMPLETE_IDLE_STATE, PEP_WORK_COMPLETE_IDLE_STATE structure [Kernel-Mode Driver Architecture], _PEP_WORK_COMPLETE_IDLE_STATE, pepfx/PPEP_WORK_COMPLETE_IDLE_STATE, PPEP_WORK_COMPLETE_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_WORK_COMPLETE_IDLE_STATE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PEP_WORK_COMPLETE_IDLE_STATE, *PPEP_WORK_COMPLETE_IDLE_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_WORK_COMPLETE_IDLE_STATE, PEP_WORK_COMPLETE_IDLE_STATE"
 ---
 
 # _PEP_WORK_COMPLETE_IDLE_STATE structure
@@ -47,17 +51,17 @@ typedef struct _PEP_WORK_COMPLETE_IDLE_STATE {
 
 ## Members
 
-        
-            `Component`
 
-            [in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
-        
-            `DeviceHandle`
+`Component`
 
-            A handle that represents the registration of the device with the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx). A POHANDLE value that represents the registration of the device with PoFx. The PEP previously received this handle from PoFx during the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the device's driver stack registered the device with PoFx.
+[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-    ## Remarks
-        The <b>CompleteIdleState</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure is a <b>PEP_WORK_COMPLETE_IDLE_STATE</b> structure.
+`DeviceHandle`
+
+A handle that represents the registration of the device with the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx). A POHANDLE value that represents the registration of the device with PoFx. The PEP previously received this handle from PoFx during the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the device's driver stack registered the device with PoFx.
+
+## Remarks
+The <b>CompleteIdleState</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure is a <b>PEP_WORK_COMPLETE_IDLE_STATE</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct _PEP_WORK_COMPLETE_IDLE_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
  
 
  

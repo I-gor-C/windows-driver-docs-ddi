@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0c23e72d-3eb9-4511-a386-1dcc2f4910b7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcbquerymonitorinterface, DxgkCbQueryMonitorInterface callback function [Display Devices], DxgkCbQueryMonitorInterface, DXGKCB_QUERYMONITORINTERFACE, DXGKCB_QUERYMONITORINTERFACE, d3dkmddi/DxgkCbQueryMonitorInterface, DpFunctions_6d1b7fa2-c5ab-4fd0-8a60-740c5415777c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbQueryMonitorInterface
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -68,9 +72,7 @@ NTSTATUS DxgkcbQuerymonitorinterface(
 
 ## Return Value
 
-<b>DxgkCbQueryMonitorInterface</b> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in <i>Ntstatus.</i>h. 
-
-The following code example shows how to acquire the monitor-management interface from the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) and use the monitor-management interface to retrieve the monitor-frequency-range-set object.
+<b>DxgkCbQueryMonitorInterface</b> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in <i>Ntstatus.</i>h.
 
 
 ## Requirements
@@ -87,11 +89,8 @@ The following code example shows how to acquire the monitor-management interface
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor Interface</a>
-</dt>
-</dl>
+
  
 
  

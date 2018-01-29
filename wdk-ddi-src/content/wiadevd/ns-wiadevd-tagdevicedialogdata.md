@@ -7,8 +7,8 @@ old-location : image\devicedialogdata.htm
 old-project : image
 ms.assetid : 8ddd3ad7-fa97-45a4-a124-ceccdfb93f7f
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : tagDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA, DEVICEDIALOGDATA, *PDEVICEDIALOGDATA
+ms.date : 1/18/2018
+ms.keywords : DEVICEDIALOGDATA, wiadevd/PDEVICEDIALOGDATA, image.devicedialogdata, wiadevd/LPDEVICEDIALOGDATA, DEVICEDIALOGDATA structure [Imaging Devices], UIExt_58107635-73eb-474c-83a6-c46b7ea27dc2.xml, PDEVICEDIALOGDATA structure pointer [Imaging Devices], *PDEVICEDIALOGDATA, wiadevd/DEVICEDIALOGDATA, PDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA, LPDEVICEDIALOGDATA, tagDEVICEDIALOGDATA, LPDEVICEDIALOGDATA structure pointer [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICEDIALOGDATA
-req.alt-loc : wiadevd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*LPDEVICEDIALOGDATA, DEVICEDIALOGDATA, *PDEVICEDIALOGDATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPDEVICEDIALOGDATA, *PDEVICEDIALOGDATA, DEVICEDIALOGDATA"
 req.product : Windows 10 or later.
 ---
 
@@ -53,37 +57,37 @@ typedef struct tagDEVICEDIALOGDATA {
 
 ## Members
 
-        
-            `cbSize`
 
-            Specifies the size of this structure in bytes.
-        
-            `dwFlags`
+`cbSize`
 
-            Specifies the flags passed to <b>IWiaItem::DeviceDlg</b> and <b>IWiaDevMgr::GetImageDlg</b> by the calling program. These methods are described in the Windows SDK documentation. The possible values for this member are WIA_DEVICE_DIALOG_SINGLE_IMAGE and WIA_DEVICE_DIALOG_USE_COMMON_UI (defined in <i>Wiadef.h</i>).
-        
-            `hwndParent`
+Specifies the size of this structure in bytes.
 
-            Specifies the handle to the parent window of the dialog.
-        
-            `lIntent`
+`dwFlags`
 
-            Specifies the intents passed to <b>IWiaItem::DeviceDlg</b> and <b>IWiaDevMgr::GetImageDlg</b> by the calling program (see the Windows SDK documentation).
-        
-            `lItemCount`
+Specifies the flags passed to <b>IWiaItem::DeviceDlg</b> and <b>IWiaDevMgr::GetImageDlg</b> by the calling program. These methods are described in the Windows SDK documentation. The possible values for this member are WIA_DEVICE_DIALOG_SINGLE_IMAGE and WIA_DEVICE_DIALOG_USE_COMMON_UI (defined in <i>Wiadef.h</i>).
 
-            Specifies the number of items in the array to which <b>ppIWiaItems</b> points.
-        
-            `pIWiaItemRoot`
+`hwndParent`
 
-            Points to an <b>IWiaItem</b> interface that represents the valid root item in the application item tree. For more information about this interface, see the Windows SDK documentation.
-        
-            `ppWiaItems`
+Specifies the handle to the parent window of the dialog.
 
-            Array of IWiaItem interface pointers. Array must
+`lIntent`
 
-    ## Remarks
-        The DEVICEDIALOGDATA structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545069">IWiaUIExtension::DeviceDialog</a> method.
+Specifies the intents passed to <b>IWiaItem::DeviceDlg</b> and <b>IWiaDevMgr::GetImageDlg</b> by the calling program (see the Windows SDK documentation).
+
+`lItemCount`
+
+Specifies the number of items in the array to which <b>ppIWiaItems</b> points.
+
+`pIWiaItemRoot`
+
+Points to an <b>IWiaItem</b> interface that represents the valid root item in the application item tree. For more information about this interface, see the Windows SDK documentation.
+
+`ppWiaItems`
+
+Array of IWiaItem interface pointers. Array must
+
+## Remarks
+The DEVICEDIALOGDATA structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545069">IWiaUIExtension::DeviceDialog</a> method.
 
 The array specified in <i>ppIWiaItems</i> must be allocated using <b>CoTaskMemAlloc</b>. All interface pointers indicated in the array must be initialized using the <b>AddRef</b> COM method. See the Windows SDK documentation for descriptions of these functions.
 
@@ -97,15 +101,12 @@ The <b>IWiaPropertyStorage</b> interface is used to access information about the
 | **Minimum UMDF version** |  |
 | **Header** | wiadevd.h (include Wiadevd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545069">IWiaUIExtension::DeviceDialog</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20DEVICEDIALOGDATA structure%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20DEVICEDIALOGDATA structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

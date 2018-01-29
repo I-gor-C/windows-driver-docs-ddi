@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : AB79C2AE-0696-4EEC-9FC0-8A458CF19B82
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::Flush, Flush
+ms.keywords : Flush, Flush method, IWDFWorkItem interface, wudfddi/IWDFWorkItem::Flush, umdf.iwdfworkitem_flush, IWDFWorkItem, wdf.iwdfworkitem_flush, Flush method, IWDFWorkItem interface, Flush method, IWDFWorkItem::Flush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFWorkItem.Flush
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 This method does not return a value.
 
-This method does not return a value.
-
-This method does not return a value.
-
 ## Remarks
 
 If a driver calls the <b>Flush</b> method, the method does not return until a worker thread has removed the specified work item from the work-item queue and called the driver's <a href="..\wudfworkitem\nc-wudfworkitem-wudf_workitem_function.md">OnWorkItem</a> callback function, and the <i>OnWorkItem</i> callback function has subsequently returned after processing the work item.
@@ -79,14 +79,10 @@ For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
-</dt>
-<dt>
 <a href="..\wudfworkitem\nc-wudfworkitem-wudf_workitem_function.md">OnWorkItem</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
+
  
 
  

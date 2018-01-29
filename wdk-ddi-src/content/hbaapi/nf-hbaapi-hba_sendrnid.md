@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c15d74c8-bc04-4d82-a729-6b13f778b8c7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendRNID
+ms.keywords : fibreHBA_rtns_fd816d59-9c64-499e-a3bb-2a2d2427fbf9.xml, HBA_SendRNID, storage.hba_sendrnid, hbaapi/HBA_SendRNID, HBA_SendRNID routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SendRNID
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -54,7 +58,7 @@ HBA_STATUS HBA_API HBA_SendRNID(
 
 `Handle`
 
-
+TBD
 
 `Wwn`
 
@@ -62,7 +66,7 @@ Contains a 64-bit worldwide name (WWN) that uniquely identifies a port or a node
 
 `WnnType`
 
-
+TBD
 
 `pRspBuffer`
 
@@ -97,14 +101,10 @@ The <b>HBA_SendRNID</b> library routine serves a purpose very similar to the <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
+
  
 
  

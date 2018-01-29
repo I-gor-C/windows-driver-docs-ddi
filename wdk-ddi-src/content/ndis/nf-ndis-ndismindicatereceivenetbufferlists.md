@@ -7,8 +7,8 @@ old-location : netvista\ndismindicatereceivenetbufferlists.htm
 old-project : netvista
 ms.assetid : b87dba3e-c18f-4ea2-8bd5-ec3cdafc534b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisMIndicateReceiveNetBufferLists
+ms.date : 1/18/2018
+ms.keywords : NdisMIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista], ndis_sendrcv_ref_3ef0c38f-53f7-44a0-adfc-443132743f50.xml, NdisMIndicateReceiveNetBufferLists, netvista.ndismindicatereceivenetbufferlists, ndis/NdisMIndicateReceiveNetBufferLists
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisMIndicateReceiveNetBufferLists
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_SendRcv_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -56,12 +60,12 @@ VOID NdisMIndicateReceiveNetBufferLists(
 `MiniportAdapterHandle`
 
 The miniport handle that NDIS passed to the 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">
-     MiniportInitializeEx</a> function.
+     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
+     MiniportInitializeEx</i></mshelp:link> function.
 
 `NetBufferList`
 
-
+TBD
 
 `PortNumber`
 
@@ -95,8 +99,8 @@ A miniport driver typically calls the
     <b>NdisMIndicateReceiveNetBufferLists</b>, it specifies a list of 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in the 
     <i>NetBufferLists</i> parameter. NDIS passes the <b>NET_BUFFER_LIST</b> structures to the 
-    <a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
-    ProtocolReceiveNetBufferLists</a> function of bound protocol drivers.
+    <mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><b>
+    ProtocolReceiveNetBufferLists</b></mshelp:link> function of bound protocol drivers.
 
 Miniport drivers must set the 
     <b>SourceHandle</b> member of each <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure to the same value as the 
@@ -106,8 +110,8 @@ If a miniport driver calls
     <b>NdisMIndicateReceiveNetBufferLists</b> and clears the <b>NDIS_RECEIVE_FLAG_RESOURCES</b> flag in the 
     <i>ReceiveFlags</i> parameter, NDIS returns the indicated <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures to the miniport
     driver's 
-    <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
-    MiniportReturnNetBufferLists</a> function. In this case, the miniport driver must not reclaim the
+    <mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
+    MiniportReturnNetBufferLists</i></mshelp:link> function. In this case, the miniport driver must not reclaim the
     <b>NET_BUFFER_LIST</b> structures until NDIS returns the <b>NET_BUFFER_LIST</b> structures to the miniport driver's 
     <i>MiniportReturnNetBufferLists</i> function.
 
@@ -121,8 +125,8 @@ If a miniport driver calls
     structures immediately after 
     <b>NdisMIndicateReceiveNetBufferLists</b> returns. To reclaim the <b>NET_BUFFER_LIST</b> structures, a miniport
     driver can call its own 
-    <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
-    MiniportReturnNetBufferLists</a> function.
+    <mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
+    MiniportReturnNetBufferLists</i></mshelp:link> function.
 
 Setting the <b>NDIS_RECEIVE_FLAG_RESOURCES</b> flag in the 
     <i>ReceiveFlags</i> parameter forces the protocol drivers to copy the network data and release the
@@ -148,36 +152,26 @@ The caller of
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
-   MiniportReturnNetBufferLists</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_parameters.md">NDIS_RECEIVE_QUEUE_PARAMETERS</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
-</dt>
-<dt>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><b>
+   ProtocolReceiveNetBufferLists</b></mshelp:link>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
-   ProtocolReceiveNetBufferLists</a>
-</dt>
-</dl>
- 
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_parameters.md">NDIS_RECEIVE_QUEUE_PARAMETERS</a>
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
+<mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
+   MiniportReturnNetBufferLists</i></mshelp:link>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateReceiveNetBufferLists function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMIndicateReceiveNetBufferLists function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

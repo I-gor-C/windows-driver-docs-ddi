@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 71524333-dd5d-4f0b-8dd3-034ea926bc93
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _MDL, PMDL, MDL, *PMDLX
+ms.keywords : MDL, *PMDLX, _MDL, kstruct_c_2c589a9a-d775-4fa6-8a37-37212798a215.xml, PMDL, kernel.mdl, wdm/MDL, MDL structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MDL
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMDL, MDL
 req.product : Windows 10 or later.
 ---
@@ -47,13 +51,49 @@ struct MDL {
 
 ## Members
 
-        
-            `Next`
 
-            Pointer to the next MDL in an MDL chain. For more information about MDL chains, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
+`_EPROCESS`
 
-    ## Remarks
-        An MDL describes the layout of a virtual memory buffer in physical memory. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
+
+
+`_MDL`
+
+
+
+`ByteCount`
+
+
+
+`ByteOffset`
+
+
+
+`MappedSystemVa`
+
+
+
+`MdlFlags`
+
+
+
+`Next`
+
+Pointer to the next MDL in an MDL chain. For more information about MDL chains, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
+
+`Process`
+
+
+
+`Size`
+
+
+
+`StartVa`
+
+
+
+## Remarks
+An MDL describes the layout of a virtual memory buffer in physical memory. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -63,28 +103,20 @@ struct MDL {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmgetmdlbytecount.md">MmGetMdlByteCount</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554537">MmGetMdlPfnArray</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554568">MmInitializeMdl</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
+
+<a href="..\wdm\nf-wdm-mmgetmdlbytecount.md">MmGetMdlByteCount</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554537">MmGetMdlPfnArray</a>
+
  
 
  

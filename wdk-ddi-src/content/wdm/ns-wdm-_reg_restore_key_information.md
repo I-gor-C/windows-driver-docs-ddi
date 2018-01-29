@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : df9180d8-37aa-4b75-a8c6-a786901bd8a6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_RESTORE_KEY_INFORMATION, REG_RESTORE_KEY_INFORMATION, *PREG_RESTORE_KEY_INFORMATION
+ms.keywords : "*PREG_RESTORE_KEY_INFORMATION, _REG_RESTORE_KEY_INFORMATION, kstruct_d_493707cd-b5e8-4f28-b080-b3639060b5e9.xml, wdm/REG_RESTORE_KEY_INFORMATION, wdm/PREG_RESTORE_KEY_INFORMATION, PREG_RESTORE_KEY_INFORMATION, kernel.reg_restore_key_information, REG_RESTORE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_RESTORE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], REG_RESTORE_KEY_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Windows Vista SP2 and later versions of
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_RESTORE_KEY_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : REG_RESTORE_KEY_INFORMATION, *PREG_RESTORE_KEY_INFORMATION
 req.product : Windows 10 or later.
 ---
@@ -52,18 +56,18 @@ typedef struct _REG_RESTORE_KEY_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `FileHandle`
+`CallContext`
 
-            A handle to the file from which the hive will be restored.
-        
-            `Flags`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
 
-            <b>REG_FORCE_RESTORE</b>
+`FileHandle`
+
+A handle to the file from which the hive will be restored.
+
+`Flags`
+
+<b>REG_FORCE_RESTORE</b>
 
 0x00000008L
 
@@ -80,21 +84,21 @@ If specified, a new, volatile (memory-only) set of registry information, or <i>h
 0x00000002
 
 If set, the location of the subtree that the <i>hKey</i> parameter points to is restored to its state immediately following the last flush. The subtree must not be lazy flushed (by calling <b>RegRestoreKey</b> with REG_NO_LAZY_FLUSH specified as the value of this parameter); the caller must have the trusted computing base (TCB) privilege; and the handle to which the <i>hKey</i> parameter refers must point to the root of the subtree.
-        
-            `Object`
 
-            A pointer to a registry key object for the key whose name is about to be changed.
-        
-            `ObjectContext`
+`Object`
 
-            A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Reserved`
+A pointer to a registry key object for the key whose name is about to be changed.
 
-            This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+`ObjectContext`
 
-    ## Remarks
-        Note that when a key is restored, only the last component of the path can be changed.
+A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`Reserved`
+
+This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+## Remarks
+Note that when a key is restored, only the last component of the path can be changed.
 
 The REG_REFRESH_HIVE flag is opaque and a filter should not attempt to change it.
 
@@ -108,16 +112,12 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
  
 
  

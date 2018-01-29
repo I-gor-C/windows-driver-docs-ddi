@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 0186dc75-6d37-4adb-8337-6daa634bd936
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_L2CA_UPDATE_CHANNEL,
+ms.keywords : _BRB_L2CA_UPDATE_CHANNEL, _BRB_L2CA_UPDATE_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_L2CA_UPDATE_CHANNEL, bth_structs_7ee8d85e-5cf3-4820-a325-6abe0777b22a.xml, bltooth._brb_l2ca_update_channel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _BRB_L2CA_UPDATE_CHANNEL
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -51,37 +55,37 @@ struct _BRB_L2CA_UPDATE_CHANNEL {
 
 ## Members
 
-        
-            `BtAddress`
 
-            The Bluetooth address of the remote device.
-        
-            `ChannelHandle`
+`BtAddress`
 
-            The L2CAP channel handle that was returned by Bluetooth driver stack in response to an earlier 
+The Bluetooth address of the remote device.
+
+`ChannelHandle`
+
+The L2CAP channel handle that was returned by Bluetooth driver stack in response to an earlier 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a> or 
-     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
-     BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request.
-        
-            `FailedChannelFlags`
+     <mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
+     BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link> request.
 
-            The flag or flags in the 
+`FailedChannelFlags`
+
+The flag or flags in the 
      <b>NewChannelFlags</b> member that the Bluetooth driver stack was not able to honor. This member contains
      information only if the BRB call failed.
-        
-            `Hdr`
 
-            A 
+`Hdr`
+
+A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
-        
-            `NewChannelFlags`
 
-            A combination of flag values that specify the updated requirements for the channel. This member
+`NewChannelFlags`
+
+A combination of flag values that specify the updated requirements for the channel. This member
       should be set to CF_ROLE_EITHER.
 
-    ## Remarks
-        To retrieve the current settings of a L2CAP channel, profile drivers should 
+## Remarks
+To retrieve the current settings of a L2CAP channel, profile drivers should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536620">BRB_L2CA_UPDATE_CHANNEL</a> request.
 
@@ -109,23 +113,17 @@ By building and sending a <b>BRB_L2CA_UPDATE_CHANNEL</b> request, profile driver
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
-   BRB_L2CA_OPEN_CHANNEL_RESPONSE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536620">BRB_L2CA_UPDATE_CHANNEL</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
+
+<mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
+   BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link>
+
  
 
  

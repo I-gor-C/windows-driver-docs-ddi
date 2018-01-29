@@ -7,8 +7,8 @@ old-location : print\docevent_createdcpre.htm
 old-project : print
 ms.assetid : ad95d11e-c170-4c21-a498-45e38f41cbbb
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _DOCEVENT_CREATEDCPRE, DOCEVENT_CREATEDCPRE, *PDCEVENT_CREATEDCPRE
+ms.date : 1/18/2018
+ms.keywords : "*PDCEVENT_CREATEDCPRE, DOCEVENT_CREATEDCPRE, DOCEVENT_CREATEDCPRE structure [Print Devices], print_interface-graphics_cb3123e7-a842-4fd8-b01a-4402c63bb43a.xml, PDCEVENT_CREATEDCPRE, winddiui/DOCEVENT_CREATEDCPRE, winddiui/PDCEVENT_CREATEDCPRE, print.docevent_createdcpre, _DOCEVENT_CREATEDCPRE, PDCEVENT_CREATEDCPRE structure pointer [Print Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOCEVENT_CREATEDCPRE
-req.alt-loc : winddiui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DOCEVENT_CREATEDCPRE, *PDCEVENT_CREATEDCPRE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDCEVENT_CREATEDCPRE, DOCEVENT_CREATEDCPRE"
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _DOCEVENT_CREATEDCPRE {
 
 ## Members
 
-        
-            `bIC`
 
-            Specifies whether the DEVMODEW structure pointed to by the <b>pdm</b> member is being passed to CreateIC or CreateDC. If <b>TRUE</b>, CreateIC is being called. If <b>FALSE</b>, CreateDC is being called.
-        
-            `pdm`
+`bIC`
 
-            Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure passed to either CreateIC or CreateDC (both described in the Microsoft Windows SDK documentation). This member can be <b>NULL</b>.
-        
-            `pszDevice`
+Specifies whether the DEVMODEW structure pointed to by the <b>pdm</b> member is being passed to CreateIC or CreateDC. If <b>TRUE</b>, CreateIC is being called. If <b>FALSE</b>, CreateDC is being called.
 
-            Pointer to the first byte of a Unicode string that contains either the device name or the port name, depending on whether print spooling is enabled or disabled. If the print job is being sent directly to the printer (spooling is disabled), this member contains the printer name. If a print job is being spooled, this member contains the port name.
-        
-            `pszDriver`
+`pdm`
 
-            Reserved for system use. Set to zero.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure passed to either CreateIC or CreateDC (both described in the Microsoft Windows SDK documentation). This member can be <b>NULL</b>.
 
-    ## Remarks
-        The DOCEVENT_CREATEDCPRE structure is defined for Windows XP and later.
+`pszDevice`
+
+Pointer to the first byte of a Unicode string that contains either the device name or the port name, depending on whether print spooling is enabled or disabled. If the print job is being sent directly to the printer (spooling is disabled), this member contains the printer name. If a print job is being spooled, this member contains the port name.
+
+`pszDriver`
+
+Reserved for system use. Set to zero.
+
+## Remarks
+The DOCEVENT_CREATEDCPRE structure is defined for Windows XP and later.
 
 This structure is used in conjunction with a call to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_CREATEDCPRE. Before calling either of these functions, the caller must fill in the members of this structure.
 
@@ -80,18 +84,14 @@ This structure is used in conjunction with a call to <a href="..\winddiui\nf-win
 | **Minimum UMDF version** |  |
 | **Header** | winddiui.h (include Winddiui.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DOCEVENT_CREATEDCPRE structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DOCEVENT_CREATEDCPRE structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

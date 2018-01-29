@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIs32bitProcess
+ms.keywords : kernel.iois32bitprocess, wdm/IoIs32bitProcess, IoIs32bitProcess, k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in 64-bit versions of Microsoft Windows XP
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoIs32bitProcess
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -66,7 +70,7 @@ If the <i>Irp</i> parameter is <b>NULL</b>, and the caller is running in the con
 
 If the <i>Irp</i> parameter is not <b>NULL</b>, it must point to an IRP that was issued by the I/O manager on behalf of a user-mode process. <b>IoIs32bitProcess</b> cannot be used to check driver-allocated IRPs. Driver-allocated IRPs, as well as kernel-mode drivers, are assumed to be 64-bit-ready.
 
-For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559923">Programming Issues for 64-Bit Drivers</a>.</p>
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559923">Programming Issues for 64-Bit Drivers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

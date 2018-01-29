@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 97fa159c-ce71-4ce2-8d40-def7671d014c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPinName, IPinName::GetPinName, GetPinName
+ms.keywords : GetPinName, GetPinName method [Audio Devices], audmp-routines_438a3c13-6571-45ab-ad7a-6ef71336c17f.xml, portcls/IPinName::GetPinName, GetPinName method [Audio Devices], IPinName interface, IPinName, IPinName interface [Audio Devices], GetPinName method, IPinName::GetPinName, audio.ipinname_getpinname
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPinName.GetPinName
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -70,14 +74,25 @@ The <code>GetPinName</code> method returns STATUS_SUCCESS if the call was succes
 ## Remarks
 
 If a client needs the current pin name of an endpoint, but has determined that the miniport driver does not support the <code>GetPinName</code> method, the client uses the friendly name of the topology bridge pin. For more information about pin categories and friendly names, see <a href="https://msdn.microsoft.com/fd4a4afd-2c17-4002-87ae-21501b1d75c1">Pin Category Property</a> and <a href="https://msdn.microsoft.com/e0937d20-dd5b-453f-99f6-4e501f0f0e5b">Friendly Names for Audio Endpoint Devices</a>. 
-
+<div class="alert"><b>Note</b>   In Windows 7, the user-mode audio stack does not support customization of the Speakers endpoint name. So in Windows 7, the <code>GetPinName</code> method only works with endpoints that do not have the Speakers friendly name. The following list shows the KS node type categories that are assigned the Speakers friendly name:<dl>
+<dd>
 KSNODETYPE_SPEAKER
 
+</dd>
+<dd>
 KSNODETYPE_DESKTOP_SPEAKER
 
+</dd>
+<dd>
 KSNODETYPE_ROOM_SPEAKER
 
+</dd>
+<dd>
 KSNODETYPE_LOW_FREQUENCY_EFFECTS_SPEAKER
+
+</dd>
+</dl>
+</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,17 +108,12 @@ KSNODETYPE_LOW_FREQUENCY_EFFECTS_SPEAKER
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-ipinname.md">IPinName</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/e0937d20-dd5b-453f-99f6-4e501f0f0e5b">Friendly Names for Audio Endpoint Devices</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/fd4a4afd-2c17-4002-87ae-21501b1d75c1">Pin Category Property</a>
-</dt>
-</dl>
+
  
 
  

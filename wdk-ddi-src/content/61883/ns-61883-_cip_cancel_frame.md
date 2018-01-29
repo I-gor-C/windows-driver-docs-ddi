@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 952625D0-BA82-40C1-8EBF-8CD54C0E4C40
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_CANCEL_FRAME, *PCIP_CANCEL_FRAME, CIP_CANCEL_FRAME
+ms.keywords : IEEE.cip_cancel_frame, CIP_CANCEL_FRAME, _CIP_CANCEL_FRAME, 61883/CIP_CANCEL_FRAME, PCIP_CANCEL_FRAME, CIP_CANCEL_FRAME structure [Buses], *PCIP_CANCEL_FRAME, PCIP_CANCEL_FRAME structure pointer [Buses], 61883/PCIP_CANCEL_FRAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_CANCEL_FRAME
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCIP_CANCEL_FRAME, CIP_CANCEL_FRAME"
 ---
 
@@ -47,14 +51,14 @@ typedef struct _CIP_CANCEL_FRAME {
 
 ## Members
 
-        
-            `Frame`
 
-            Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537045">CIP_FRAME</a> structure that contains information about the frame to cancel.
-        
-            `hConnect`
+`Frame`
 
-            A handle to a connection.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537045">CIP_FRAME</a> structure that contains information about the frame to cancel.
+
+`hConnect`
+
+A handle to a connection.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _CIP_CANCEL_FRAME {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

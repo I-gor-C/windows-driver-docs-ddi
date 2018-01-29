@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9e112984-0a7e-4bb9-a10f-b50ab67ce4f3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
+ms.keywords : _IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK structure [Storage Devices], *PIDE_REQUEST_BLOCK, PIDE_REQUEST_BLOCK structure pointer [Storage Devices], structs-ATA_d1c6164f-8964-4e37-a9d4-9948215ed7cc.xml, irb/IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, irb/PIDE_REQUEST_BLOCK, storage.ide_request_block, PIDE_REQUEST_BLOCK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDE_REQUEST_BLOCK
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
 ---
 
 # _IDE_REQUEST_BLOCK structure
 The IDE_REQUEST_BLOCK structure defines an IDE request block.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -71,35 +76,34 @@ typedef struct _IDE_REQUEST_BLOCK {
 
 ## Members
 
-        
-            `AtaError`
 
-            Indicates the error value returned by the device in its error register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
-        
-            `AtaStatus`
+`AtaError`
 
-            Indicates the status returned by the device in its status register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
-        
-            `CdbLength`
+Indicates the error value returned by the device in its error register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
 
-            Specifies the length in bytes of the buffer pointed to by <b>Cdb</b>.
-        
-            `Channel`
+`AtaStatus`
 
-            Specifies the channel number.
-        
-            `DataBuffer`
+Indicates the status returned by the device in its status register. The miniport driver should update this field when completing an IRB with <i>IRB_STATUS_DEVICE_ERROR</i>.
 
-            Pointer to the buffer where the data resides.
-        
-            `DataTransferLength`
+`CdbLength`
 
-            Contains the length in bytes of the data buffer that contains data to be transferred.
-        
-            `Function`
+Specifies the length in bytes of the buffer pointed to by <b>Cdb</b>.
 
-            Specifies the category that the request belongs to. The table below describes the classification of the I/O requests.
+`Channel`
 
+Specifies the channel number.
+
+`DataBuffer`
+
+Pointer to the buffer where the data resides.
+
+`DataTransferLength`
+
+Contains the length in bytes of the data buffer that contains data to be transferred.
+
+`Function`
+
+Specifies the category that the request belongs to. The table below describes the classification of the I/O requests.
 <table>
 <tr>
 <td>
@@ -176,15 +180,14 @@ Indicates that the IRB is for the miniport. It is the responsibility of the mini
 </td>
 </tr>
 </table>
-        
-            `IrbExtension`
 
-            Pointer to the per-request extension allocated by the port driver.
-        
-            `IrbFlags`
+`IrbExtension`
 
-            Qualifies the request with ceratin actions that need to be performed. The table below describes them in detail.
+Pointer to the per-request extension allocated by the port driver.
 
+`IrbFlags`
+
+Qualifies the request with ceratin actions that need to be performed. The table below describes them in detail.
 <table>
 <tr>
 <td>
@@ -297,11 +300,10 @@ Indicates that this IRB is to be processed as soon as possible, before non-high-
 </td>
 </tr>
 </table>
-        
-            `IrbStatus`
 
-            The miniport must set this member to indicates the status of the specified operation. The table below describes the various <b>IrbStatus</b> values and their meaning.
+`IrbStatus`
 
+The miniport must set this member to indicates the status of the specified operation. The table below describes the various <b>IrbStatus</b> values and their meaning.
 <table>
 <tr>
 <td>
@@ -414,51 +416,51 @@ IRB_STATUS_RETURN_TASKFILE_VALID is a bitmask that indicates a valid return task
 </td>
 </tr>
 </table>
-        
-            `Lun`
 
-            Specifies the logical unit number of the device.
-        
-            `NextIrb`
+`Lun`
 
-            Pointer to the next IRB to be processed. The port driver sets this to <b>NULL</b>. The miniport driver can use this field to link IRBs together.
-        
-            `QueueTag`
+Specifies the logical unit number of the device.
 
-            The queue tag for this IRB. The port driver sets this field to 0.
-        
-            `Reserved`
+`NextIrb`
 
-            Reserved for future use.
-        
-            `ReservedAsUlong`
+Pointer to the next IRB to be processed. The port driver sets this to <b>NULL</b>. The miniport driver can use this field to link IRBs together.
 
-            Reserved for future use.
-        
-            `SenseInfoBuffer`
+`QueueTag`
 
-            Pointer to the buffer which holds the sense data.
-        
-            `SenseInfoBufferLength`
+The queue tag for this IRB. The port driver sets this field to 0.
 
-            Specifies the length in bytes of the buffer pointed to by <b>SenseInfoBuffer</b>.
-        
-            `SenseInfoBufferType`
+`Reserved`
 
-            Specifies the type of data structure returned in <b>SenseInfoBuffer</b>. Because ATA commands don't have a need for the request sense command, ATA_PASS_THROUGH commands use <b>SenseInfoBuffer</b> to return task file information. For ATA_PASS_THROUGH commands, as identified in the <b>IrbFlags</b> member, the appropriate return <b>TaskFile</b> size should be reported as either SENSE_INFO_BUFFER_RETURN_TYPE_28BIT_TASKFILE or
+Reserved for future use.
+
+`ReservedAsUlong`
+
+Reserved for future use.
+
+`SenseInfoBuffer`
+
+Pointer to the buffer which holds the sense data.
+
+`SenseInfoBufferLength`
+
+Specifies the length in bytes of the buffer pointed to by <b>SenseInfoBuffer</b>.
+
+`SenseInfoBufferType`
+
+Specifies the type of data structure returned in <b>SenseInfoBuffer</b>. Because ATA commands don't have a need for the request sense command, ATA_PASS_THROUGH commands use <b>SenseInfoBuffer</b> to return task file information. For ATA_PASS_THROUGH commands, as identified in the <b>IrbFlags</b> member, the appropriate return <b>TaskFile</b> size should be reported as either SENSE_INFO_BUFFER_RETURN_TYPE_28BIT_TASKFILE or
 
 SENSE_INFO_BUFFER_RETURN_TYPE_48BIT_TASKFILE.
-        
-            `TargetId`
 
-            Specifies the target ID of the device.
-        
-            `TimeOutValue`
+`TargetId`
 
-            Indicates the time in seconds after which the request will time out.
+Specifies the target ID of the device.
 
-    ## Remarks
-        The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
+`TimeOutValue`
+
+Indicates the time in seconds after which the request will time out.
+
+## Remarks
+The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -468,22 +470,16 @@ SENSE_INFO_BUFFER_RETURN_TYPE_48BIT_TASKFILE.
 | **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
-</dt>
-<dt>
-<a href="..\irb\ns-irb-_ide_task_file.md">IDE_TASK_FILE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a>
-</dt>
-<dt>
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a>
+
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
+
+<a href="..\irb\ns-irb-_ide_task_file.md">IDE_TASK_FILE</a>
+
  
 
  

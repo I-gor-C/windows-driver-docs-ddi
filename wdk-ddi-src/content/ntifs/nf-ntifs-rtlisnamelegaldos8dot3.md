@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 27aa6bd1-c4e2-427e-a9e4-383d66fe2d61
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsNameLegalDOS8Dot3
+ms.keywords : RtlIsNameLegalDOS8Dot3, RtlIsNameLegalDOS8Dot3 routine [Installable File System Drivers], rtlref_73bcf962-f0aa-4fa1-9e45-0a471a6b2c40.xml, ntifs/RtlIsNameLegalDOS8Dot3, ifsk.rtlisnamelegaldos8dot3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIsNameLegalDOS8Dot3
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -89,17 +93,12 @@ If the block of memory at <i>Name</i> is nonpaged, the caller can be running at 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlgenerate8dot3name.md">RtlGenerate8dot3Name</a>
-</dt>
-<dt>
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlgenerate8dot3name.md">RtlGenerate8dot3Name</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+
  
 
  

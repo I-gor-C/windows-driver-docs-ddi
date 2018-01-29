@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A6041B10-0296-4A96-B65C-C35B8DCB2B5D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR
+ms.keywords : ntddstor/PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR, storage.storage_temperature_data_descriptor, PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure [Storage Devices], *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR structure pointer [Storage Devices], ntddstor/STORAGE_TEMPERATURE_DATA_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_TEMPERATURE_DATA_DESCRIPTOR
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_TEMPERATURE_DATA_DESCRIPTOR, *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR
 ---
 
 # _STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure
@@ -53,34 +57,38 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 
 ## Members
 
-        
-            `CriticalTemperature`
 
-            Indicates the minimum temperature in degrees Celsius that may prevent normal operation. Exceeding this temperature may result in possible data loss, automatic device shutdown, extreme performance throttling, or permanent damage.
-        
-            `InfoCount`
+`CriticalTemperature`
 
-            Specifies the number of <a href="..\ntddstor\ns-ntddstor-_storage_temperature_info.md">STORAGE_TEMPERATURE_INFO</a> structures reported in <b>TemperatureInfo</b>. More than one set of temperature data may be returned when there are multiple sensors in the drive.
-        
-            `Reserved0`
+Indicates the minimum temperature in degrees Celsius that may prevent normal operation. Exceeding this temperature may result in possible data loss, automatic device shutdown, extreme performance throttling, or permanent damage.
 
-            Reserved for future use.
-        
-            `Reserved1`
+`InfoCount`
 
-            Reserved for future use.
-        
-            `Size`
+Specifies the number of <a href="..\ntddstor\ns-ntddstor-_storage_temperature_info.md">STORAGE_TEMPERATURE_INFO</a> structures reported in <b>TemperatureInfo</b>. More than one set of temperature data may be returned when there are multiple sensors in the drive.
 
-            Specifies the total size of the data returned, in bytes. This may include data that follows this structure.
-        
-            `Version`
+`Reserved0`
 
-            Contains the size of this structure, in bytes. The value of this member will change as members are added to the structure.
-        
-            `WarningTemperature`
+Reserved for future use.
 
-            Indicates the maximum temperature in degrees Celsius at which the device is capable of operating continuously without degrading operation or reliability.
+`Reserved1`
+
+Reserved for future use.
+
+`Size`
+
+Specifies the total size of the data returned, in bytes. This may include data that follows this structure.
+
+`TemperatureInfo`
+
+
+
+`Version`
+
+Contains the size of this structure, in bytes. The value of this member will change as members are added to the structure.
+
+`WarningTemperature`
+
+Indicates the maximum temperature in degrees Celsius at which the device is capable of operating continuously without degrading operation or reliability.
 
 
 ## Requirements
@@ -91,22 +99,16 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_temperature_info.md">STORAGE_TEMPERATURE_INFO</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
+
  
 
  

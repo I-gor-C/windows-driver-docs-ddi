@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 42D4064A-1697-4772-8450-6D217C526347
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddi_destroyprotectedsession, DXGKDDI_DESTROYPROTECTEDSESSION callback function [Display Devices], DXGKDDI_DESTROYPROTECTEDSESSION, d3dkmddi/DXGKDDI_DESTROYPROTECTEDSESSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKDDI_DESTROYPROTECTEDSESSION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : requires_(PASSIVE_LEVEL)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 

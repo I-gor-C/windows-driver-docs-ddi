@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 282E12E2-F16F-4399-BC8C-78BD64F05F13
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorPdPartnerSourceCaps
+ms.keywords : UcmConnectorPdPartnerSourceCaps method [Buses], UcmConnectorPdPartnerSourceCaps, buses.ucmconnectorpdportpartnersourcecaps, ucmmanager/UcmConnectorPdPartnerSourceCaps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmConnectorPdPartnerSourceCaps
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -53,15 +57,15 @@ NTSTATUS UcmConnectorPdPartnerSourceCaps(
 
 `Connector`
 
-
+Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
 
 `Pdos`
 
-
+TBD
 
 `PdoCount`
 
-
+Number of elements in the array specified by   <i>Pdos[]</i>.
 
 
 ## Return Value
@@ -88,11 +92,8 @@ If the partner connector is the power sink, the local connector port must query 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-</dl>
+
  
 
  

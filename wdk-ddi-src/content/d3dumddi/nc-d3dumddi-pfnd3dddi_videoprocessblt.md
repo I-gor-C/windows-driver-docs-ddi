@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 719465dd-4547-491c-ab30-ae63bba1b72c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.videoprocessblt, VideoProcessBlt callback function [Display Devices], VideoProcessBlt, PFND3DDDI_VIDEOPROCESSBLT, PFND3DDDI_VIDEOPROCESSBLT, d3dumddi/VideoProcessBlt, UserModeDisplayDriver_Functions_23e47fd3-a838-4b56-82c3-7894d2b173a1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoProcessBlt
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>VideoProcessBlt</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The DirectX VA video processing operation is successfully performed.
+</dl>
+</td>
+<td width="60%">
+The DirectX VA video processing operation is successfully performed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>VideoProcessBlt</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>VideoProcessBlt</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -86,14 +112,10 @@ A handle to the display device (graphics context).
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b72265b7-dce3-4688-bee7-2a6f7d7731f9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR
+ms.keywords : strmini/PSTREAM_PROPERTY_DESCRIPTOR, stream.stream_property_descriptor, STREAM_PROPERTY_DESCRIPTOR structure [Streaming Media Devices], *PSTREAM_PROPERTY_DESCRIPTOR, PSTREAM_PROPERTY_DESCRIPTOR, strclass-struct_5cf57d2b-c4ea-41fb-b3b3-4b6f67c2ecca.xml, strmini/STREAM_PROPERTY_DESCRIPTOR, PSTREAM_PROPERTY_DESCRIPTOR structure pointer [Streaming Media Devices], _STREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STREAM_PROPERTY_DESCRIPTOR
-req.alt-loc : strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -51,26 +55,26 @@ typedef struct _STREAM_PROPERTY_DESCRIPTOR {
 
 ## Members
 
-        
-            `Property`
 
-            Specifies the property to be read/written.
-        
-            `PropertyInfo`
+`Property`
 
-            Points to a buffer that the property data will be read from or written to.
-        
-            `PropertyInputSize`
+Specifies the property to be read/written.
 
-            Size of the <b>Property</b> buffer.
-        
-            `PropertyOutputSize`
+`PropertyInfo`
 
-            Size of the <b>PropertyInfo</b> buffer.
-        
-            `PropertySetID`
+Points to a buffer that the property data will be read from or written to.
 
-            Specifies the index of the property set within either the <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>'s <b>DevicePropertiesArray</b> (for minidriver properties) or the <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>'s <b>StreamPropertiesArray</b> (for stream properties).
+`PropertyInputSize`
+
+Size of the <b>Property</b> buffer.
+
+`PropertyOutputSize`
+
+Size of the <b>PropertyInfo</b> buffer.
+
+`PropertySetID`
+
+Specifies the index of the property set within either the <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>'s <b>DevicePropertiesArray</b> (for minidriver properties) or the <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>'s <b>StreamPropertiesArray</b> (for stream properties).
 
 
 ## Requirements

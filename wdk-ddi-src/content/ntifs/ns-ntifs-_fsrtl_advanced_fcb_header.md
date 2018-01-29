@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7816c937-109c-40a8-8b67-04413b00e5fd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FSRTL_ADVANCED_FCB_HEADER, *PFSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER, FSRTL_UNC_PROVIDER_REGISTRATION, *PFSRTL_ADVANCED_FCB_HEADER
+ms.keywords : PFSRTL_ADVANCED_FCB_HEADER, ntifs/PFSRTL_ADVANCED_FCB_HEADER, *PFSRTL_ADVANCED_FCB_HEADER, contextstructures_cede2315-2c72-496f-a192-3ef25a8b0516.xml, FSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER, FSRTL_ADVANCED_FCB_HEADER structure [Installable File System Drivers], ifsk.fsrtl_advanced_fcb_header, _FSRTL_ADVANCED_FCB_HEADER, *PFSRTL_UNC_PROVIDER_REGISTRATION, ntifs/FSRTL_ADVANCED_FCB_HEADER, PFSRTL_ADVANCED_FCB_HEADER structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FSRTL_ADVANCED_FCB_HEADER
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PFSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER, FSRTL_UNC_PROVIDER_REGISTRATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FSRTL_ADVANCED_FCB_HEADER, FSRTL_UNC_PROVIDER_REGISTRATION, *PFSRTL_UNC_PROVIDER_REGISTRATION
 ---
 
 # _FSRTL_ADVANCED_FCB_HEADER structure
@@ -55,28 +59,134 @@ typedef struct _FSRTL_ADVANCED_FCB_HEADER {
 ## Members
 
 
-    ## Remarks
-        The <b>FSRTL_ADVANCED_FCB_HEADER</b> structure is a superset of the <a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a> structure. File systems (including legacy filter and minifilter drivers, when applicable) must use the <b>FSRTL_ADVANCED_FCB_HEADER</b> structure. 
+`_BASE_MCB`
+
+
+
+`_DUAL_OPLOCK_KEY_ECP_CONTEXT`
+
+
+
+`_EOF_WAIT_BLOCK`
+
+
+
+`_FILE_LOCK`
+
+
+
+`_FILE_LOCK_INFO`
+
+
+
+`_FSRTL_ADVANCED_FCB_HEADER`
+
+
+
+`_FSRTL_AUXILIARY_BUFFER`
+
+
+
+`_LARGE_MCB`
+
+
+
+`_MCB`
+
+
+
+`_OPLOCK_KEY_ECP_CONTEXT`
+
+
+
+`_REAL_NOTIFY_SYNC`
+
+
+
+`DUMMYUNIONNAME`
+
+
+
+`DUMMYUNIONNAME2`
+
+
+
+`FSRTL_COMMON_FCB_HEADER`
+
+
+
+`GUID_ECP_DUAL_OPLOCK_KEY`
+
+
+
+`GUID_ECP_OPLOCK_KEY`
+
+
+
+`LEGAL_ANSI_CHARACTER_ARRAY`
+
+
+
+`NLS_OEM_LEAD_BYTE_INFO`
+
+
+
+`Version`
+
+
+
+## Remarks
+The <b>FSRTL_ADVANCED_FCB_HEADER</b> structure is a superset of the <a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a> structure. File systems (including legacy filter and minifilter drivers, when applicable) must use the <b>FSRTL_ADVANCED_FCB_HEADER</b> structure. 
 
 File systems must use the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> macro or the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macro to initialize an <b>FSRTL_ADVANCED_FCB_HEADER</b> structure.
 
 The following flags are set by the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> and <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macros.
-
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
 FSRTL_FLAG_ADVANCED_HEADER
 
+</td>
+<td>
 Set in the <b>Flags</b> member of the  <a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a> structure, this flag indicates file system driver support for <b>FSRTL_ADVANCED_FCB_HEADER</b> structures.  This flag should not be modified.
 
+</td>
+</tr>
+<tr>
+<td>
 FSRTL_FLAG2_SUPPORTS_FILTER_CONTEXTS
 
+</td>
+<td>
 Set in the <b>Flags2</b> member of  <a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a>, this flag indicates support for filter driver contexts.  This flag can only be cleared for paging files (see information after the table).
 
+</td>
+</tr>
+<tr>
+<td>
 FSRTL_FCB_HEADER_V1
 
+</td>
+<td>
 Set in the <b>Version</b> member of <a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a>, this value indicates support for the <b>PushLock</b> and <b>FilterContextPointer</b> members.  This flag should not be modified.
 
+</td>
+</tr>
+<tr>
+<td>
 FSRTL_FCB_HEADER_V2
 
+</td>
+<td>
 Set in the <b>Version</b> member of <a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a>, this value indicates support for the <b>PushLock</b>, <b>FilterContextPointer</b>, <b>Oplock</b>, and <b>ReservedForRemote</b> members.  This flag should not be modified.
+
+</td>
+</tr>
+</table> 
 
 File systems must set the <b>FsContext</b> member of every file object to point to an <b>FSRTL_ADVANCED_FCB_HEADER</b> structure. This structure can be embedded inside of a context object structure that is specific to a file-system stream  (the remainder of the structure is file-system–specific). Usually, this structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).  Note that FCBs and SCBs for all classes of open requests, including volume open requests, must include this structure.
 
@@ -92,34 +202,24 @@ All Microsoft file systems disable stream context support for paging files by cl
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md">FSRTL_PER_STREAM_CONTEXT</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlinsertperstreamcontext.md">FsRtlInsertPerStreamContext</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtllookupperstreamcontext.md">FsRtlLookupPerStreamContext</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlremoveperstreamcontext.md">FsRtlRemovePerStreamContext</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-fsrtllookupperstreamcontext.md">FsRtlLookupPerStreamContext</a>
+
+<a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a>
+
+<a href="..\ntifs\nf-ntifs-fsrtlinsertperstreamcontext.md">FsRtlInsertPerStreamContext</a>
+
+<a href="..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md">FSRTL_PER_STREAM_CONTEXT</a>
+
+<a href="..\ntifs\ns-ntifs-_fsrtl_common_fcb_header.md">FSRTL_COMMON_FCB_HEADER</a>
+
+<a href="..\ntifs\nf-ntifs-fsrtlremoveperstreamcontext.md">FsRtlRemovePerStreamContext</a>
+
 <a href="..\ntifs\nf-ntifs-fsrtlteardownperstreamcontexts.md">FsRtlTeardownPerStreamContexts</a>
-</dt>
-</dl>
+
  
 
  

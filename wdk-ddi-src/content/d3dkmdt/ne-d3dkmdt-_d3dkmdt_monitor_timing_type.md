@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fb8a2c29-f41b-4701-bbc2-f0a8e6dadc11
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_MONITOR_TIMING_TYPE, D3DKMDT_MONITOR_TIMING_TYPE
+ms.keywords : _D3DKMDT_MONITOR_TIMING_TYPE, d3dkmdt/D3DKMDT_MTT_STANDARD, D3DKMDT_MTT_EXTRASTANDARD, D3DKMDT_MTT_DETAILED, DmEnums_dd8c4653-6af5-420c-a74e-3b0d2201e84a.xml, d3dkmdt/D3DKMDT_MTT_UNINITIALIZED, D3DKMDT_MTT_STANDARD, display.d3dkmdt_monitor_timing_type, D3DKMDT_MTT_DRIVER, D3DKMDT_MTT_UNINITIALIZED, d3dkmdt/D3DKMDT_MTT_EXTRASTANDARD, D3DKMDT_MTT_DEFAULTMONITORPROFILE, D3DKMDT_MONITOR_TIMING_TYPE, D3DKMDT_MTT_ESTABLISHED, d3dkmdt/D3DKMDT_MTT_DETAILED, d3dkmdt/D3DKMDT_MONITOR_TIMING_TYPE, d3dkmdt/D3DKMDT_MTT_DEFAULTMONITORPROFILE, D3DKMDT_MONITOR_TIMING_TYPE enumeration [Display Devices], d3dkmdt/D3DKMDT_MTT_DRIVER, d3dkmdt/D3DKMDT_MTT_ESTABLISHED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_MONITOR_TIMING_TYPE
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_MONITOR_TIMING_TYPE
 ---
 

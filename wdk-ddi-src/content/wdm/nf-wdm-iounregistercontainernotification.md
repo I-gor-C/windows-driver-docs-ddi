@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e8c1dee9-515f-4844-aa3e-8deab660bd33
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoUnregisterContainerNotification
+ms.keywords : IoUnregisterContainerNotification, IoUnregisterContainerNotification routine [Kernel-Mode Driver Architecture], kernel.iounregistercontainernotification, wdm/IoUnregisterContainerNotification, k104_92c44631-4032-4538-bc1b-6463c3ae3c76.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoUnregisterContainerNotification
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ After this routine returns, the <i>CallbackRegistration</i> pointer value is no 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a>
-</dt>
-</dl>
+
  
 
  

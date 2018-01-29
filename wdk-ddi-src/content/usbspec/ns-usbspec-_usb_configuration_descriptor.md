@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2a9398f7-4d01-42a6-9ac2-ca105db76bb8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_CONFIGURATION_DESCRIPTOR, *PUSB_CONFIGURATION_DESCRIPTOR, USB_CONFIGURATION_DESCRIPTOR
+ms.keywords : usbspec/PUSB_CONFIGURATION_DESCRIPTOR, _USB_CONFIGURATION_DESCRIPTOR, USB_CONFIGURATION_DESCRIPTOR, usbspec/USB_CONFIGURATION_DESCRIPTOR, buses.usb_configuration_descriptor, PUSB_CONFIGURATION_DESCRIPTOR structure pointer [Buses], PUSB_CONFIGURATION_DESCRIPTOR, USB_CONFIGURATION_DESCRIPTOR structure [Buses], usbstrct_f057519c-8b38-479c-9065-16c2106550aa.xml, *PUSB_CONFIGURATION_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_CONFIGURATION_DESCRIPTOR
-req.alt-loc : usbspec.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUSB_CONFIGURATION_DESCRIPTOR, USB_CONFIGURATION_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USB_CONFIGURATION_DESCRIPTOR, *PUSB_CONFIGURATION_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -54,23 +58,22 @@ typedef struct _USB_CONFIGURATION_DESCRIPTOR {
 
 ## Members
 
-        
-            `bConfigurationValue`
 
-            Contains the value that is used to select a configuration. This value is passed to the USB SetConfiguration request , as described in version 1.1 of the Universal Serial Bus Specification. The port driver does not currently expose a service that allows higher-level drivers to set the configuration.
-        
-            `bDescriptorType`
+`bConfigurationValue`
 
-            Specifies the descriptor type. Must be set to USB_CONFIGURATION_DESCRIPTOR_TYPE.
-        
-            `bLength`
+Contains the value that is used to select a configuration. This value is passed to the USB SetConfiguration request , as described in version 1.1 of the Universal Serial Bus Specification. The port driver does not currently expose a service that allows higher-level drivers to set the configuration.
 
-            Specifies the length, in bytes, of this structure.
-        
-            `bmAttributes`
+`bDescriptorType`
 
-            Specifies a bitmap to describe behavior of this configuration. The bits are described and set in little-endian order.
+Specifies the descriptor type. Must be set to USB_CONFIGURATION_DESCRIPTOR_TYPE.
 
+`bLength`
+
+Specifies the length, in bytes, of this structure.
+
+`bmAttributes`
+
+Specifies a bitmap to describe behavior of this configuration. The bits are described and set in little-endian order.
 <table>
 <tr>
 <th>Bit</th>
@@ -117,25 +120,25 @@ The configuration is powered by the bus.
 </td>
 </tr>
 </table>
-        
-            `bNumInterfaces`
 
-            Specifies the total number of interfaces supported by this configuration.
-        
-            `iConfiguration`
+`bNumInterfaces`
 
-            Specifies the device-defined index of the string descriptor for this configuration.
-        
-            `MaxPower`
+Specifies the total number of interfaces supported by this configuration.
 
-            Specifies the power requirements of this device in two-milliampere units. This member is valid only if bit seven is set in <b>bmAttributes</b>.
-        
-            `wTotalLength`
+`iConfiguration`
 
-            Specifies the total length, in bytes, of all data for the configuration. The length includes all interface, endpoint, class, or vendor-specific descriptors that are returned with the configuration descriptor.
+Specifies the device-defined index of the string descriptor for this configuration.
 
-    ## Remarks
-        If <b>wTotalLength</b> is greater than the buffer size provided in the URB to hold all descriptors retrieved (interface, endpoint, class, and vendor-defined), incomplete data will be returned. In order to retrieve complete descriptors, the request will need to be re-sent with a larger buffer.
+`MaxPower`
+
+Specifies the power requirements of this device in two-milliampere units. This member is valid only if bit seven is set in <b>bmAttributes</b>.
+
+`wTotalLength`
+
+Specifies the total length, in bytes, of all data for the configuration. The length includes all interface, endpoint, class, or vendor-specific descriptors that are returned with the configuration descriptor.
+
+## Remarks
+If <b>wTotalLength</b> is greater than the buffer size provided in the URB to hold all descriptors retrieved (interface, endpoint, class, and vendor-defined), incomplete data will be returned. In order to retrieve complete descriptors, the request will need to be re-sent with a larger buffer.
 
 If <b>bmAttributes</b> bits six and seven are both set, then the device is powered both by the bus and by a source external to the bus.
 
@@ -149,19 +152,14 @@ Other members that are part of this structure but not described here should be t
 | **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usb100.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
-</dt>
-<dt>
-<a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequest.md">USBD_CreateConfigurationRequest</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequest.md">USBD_CreateConfigurationRequest</a>
+
  
 
  

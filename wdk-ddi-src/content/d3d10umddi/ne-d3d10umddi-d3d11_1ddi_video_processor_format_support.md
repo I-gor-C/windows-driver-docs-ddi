@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3fef0cb0-6584-487d-9660-1c748509a6a9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_OUTPUT, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_INPUT, D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT_OUTPUT, display.d3d11_1ddi_video_processor_format_support, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT
 ---
 

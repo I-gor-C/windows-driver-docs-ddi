@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 17ADC83B-53C8-43BD-9FFB-1197501FE275
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PMI_THRESHOLD_CONFIGURATION, PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
+ms.keywords : kernel.passivecooling, PassiveCooling routine [Kernel-Mode Driver Architecture], PassiveCooling, DEVICE_PASSIVE_COOLING, DEVICE_PASSIVE_COOLING, poclass/PassiveCooling
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PassiveCooling
-req.alt-loc : Poclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
 ---
 
@@ -97,11 +101,8 @@ For more information about passive cooling, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\poclass\ns-poclass-_thermal_cooling_interface.md">THERMAL_COOLING_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

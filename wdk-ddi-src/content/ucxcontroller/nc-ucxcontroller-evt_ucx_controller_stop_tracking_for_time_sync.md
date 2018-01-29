@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C65A250A-594B-4317-AEE6-C3E60D122A1D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxInitializeDeviceInit
+ms.keywords : buses.evt_ucx_controller_stop_tracking_for_time_sync, EvUcxControllerStopTrackingForTimeSync callback function [Buses], EvUcxControllerStopTrackingForTimeSync, EVT_UCX_CONTROLLER_STOP_TRACKING_FOR_TIME_SYNC, EVT_UCX_CONTROLLER_STOP_TRACKING_FOR_TIME_SYNC, ucxcontroller/EvUcxControllerStopTrackingForTimeSync
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : EvUcxControllerStopTrackingForTimeSync
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
@@ -93,11 +97,8 @@ This callback function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_stop_tracking_for_time_sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a>
-</dt>
-</dl>
+
  
 
  

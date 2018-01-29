@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 66189a9a-241f-4457-87cd-d5d583a46f14
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_PACKET_V1, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V1
+ms.keywords : WHEA_ERROR_PACKET, whea.whea_error_packet_v1, PWHEA_ERROR_PACKET_V1, PWHEA_ERROR_PACKET_V1 structure pointer [WHEA Drivers and Applications], ntddk/WHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET, ntddk/PWHEA_ERROR_PACKET_V1, _WHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET_V1, WHEA_ERROR_PACKET_V1 structure [WHEA Drivers and Applications], WHEA_ERROR_PACKET_V1, whearef_d65ca9a6-c7ff-42f0-b7d5-763b6a34b924.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_PACKET_V1
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V1
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET
 ---
 
 # _WHEA_ERROR_PACKET_V1 structure
 The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).
+<div class="alert"><b>Note</b>  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1.</div><div> </div>
 
 ## Syntax
 ````
@@ -69,85 +74,89 @@ typedef struct _WHEA_ERROR_PACKET_V1 {
 
 ## Members
 
-        
-            `Context`
 
-            Reserved for system use.
-        
-            `Cpu`
+`Context`
 
-            Reserved for system use.
-        
-            `ErrorSeverity`
+Reserved for system use.
 
-            A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition.
-        
-            `ErrorSourceId`
+`Cpu`
 
-            The identifier of the error source that reported the hardware error.
-        
-            `ErrorSourceType`
+Reserved for system use.
 
-            A <a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>-typed value that indicates the type of error source that reported the hardware error.
-        
-            `ErrorType`
+`ErrorSeverity`
 
-            A <a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>-typed value that indicates the type of hardware component that reported the hardware error.
-        
-            `Flags`
+A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition.
 
-            A <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that describes the error condition.
-        
-            `RawData`
+`ErrorSourceId`
 
-            A variable-sized data buffer that contains the raw hardware error information from the error source's status registers. The format of the hardware error data is specified by the <b>RawDataFormat</b> member.
-        
-            `RawDataFormat`
+The identifier of the error source that reported the hardware error.
 
-            A <a href="..\ntddk\ne-ntddk-_whea_raw_data_format.md">WHEA_RAW_DATA_FORMAT</a>-typed value that indicates the format of the hardware error information that is contained in the <b>RawData</b> data buffer.
-        
-            `RawDataLength`
+`ErrorSourceType`
 
-            The length, in bytes, of the data that is contained in the <b>RawData</b> member.
-        
-            `RawDataOffset`
+A <a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>-typed value that indicates the type of error source that reported the hardware error.
 
-            An offset, in bytes, from the beginning of the <b>RawData</b> data buffer where a PSHED plug-in can add supplementary platform-specific error information to the hardware error packet. The amount of supplementary information that can be added to the hardware error packet is limited by the total size of the packet as specified in the <b>Size</b> member.
-        
-            `Reserved1`
+`ErrorType`
 
-            Reserved for system use.
-        
-            `Reserved2`
+A <a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>-typed value that indicates the type of hardware component that reported the hardware error.
 
-            Reserved for system use.
-        
-            `Signature`
+`Flags`
 
-            The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V1_SIGNATURE.
-        
-            `Size`
+A <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that describes the error condition.
 
-            The size, in bytes, of the hardware error packet, including the raw data.
-        
-            `u`
+`RawData`
 
-            A union consisting of the following members:
-        
-            `Version`
+A variable-sized data buffer that contains the raw hardware error information from the error source's status registers. The format of the hardware error data is specified by the <b>RawDataFormat</b> member.
 
-            The version of the WHEA_ERROR_PACKET_V1 structure. This member contains the value WHEA_ERROR_PKT_V1VERSION.
+`RawDataFormat`
 
-    ## Remarks
-        The WHEA_ERROR_PACKET_V1 structure is used to report a hardware error in Windows Server 2008 and Windows Vista SP1.
+A <a href="..\ntddk\ne-ntddk-_whea_raw_data_format.md">WHEA_RAW_DATA_FORMAT</a>-typed value that indicates the format of the hardware error information that is contained in the <b>RawData</b> data buffer.
+
+`RawDataLength`
+
+The length, in bytes, of the data that is contained in the <b>RawData</b> member.
+
+`RawDataOffset`
+
+An offset, in bytes, from the beginning of the <b>RawData</b> data buffer where a PSHED plug-in can add supplementary platform-specific error information to the hardware error packet. The amount of supplementary information that can be added to the hardware error packet is limited by the total size of the packet as specified in the <b>Size</b> member.
+
+`Reserved1`
+
+Reserved for system use.
+
+`Reserved2`
+
+Reserved for system use.
+
+`Signature`
+
+The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V1_SIGNATURE.
+
+`Size`
+
+The size, in bytes, of the hardware error packet, including the raw data.
+
+`u`
+
+A union consisting of the following members:
+
+`Version`
+
+The version of the WHEA_ERROR_PACKET_V1 structure. This member contains the value WHEA_ERROR_PKT_V1VERSION.
+
+## Remarks
+The WHEA_ERROR_PACKET_V1 structure is used to report a hardware error in Windows Server 2008 and Windows Vista SP1.
 
 If your <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-ins</a> run on any WHEA-compatible Windows version, You can inspect the version of WHEA_ERROR_PACKET by following these steps:
-
+<ol>
+<li>
 If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V1, the code is running on an early version of Windows, and the error packet is formatted as a <b>WHEA_ERROR_PACKET_V1</b> structure.
 
+</li>
+<li>
 If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V2, the code is running on a later version of Windows, and the error packet is formatted as a <a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a> structure.
 
-An LLHEH passes a WHEA_ERROR_PACKET_V1 structure to the operating system when it reports a hardware error. This hardware error packet contains the raw hardware error data direct from the error source's error status registers.
+</li>
+</ol>An LLHEH passes a WHEA_ERROR_PACKET_V1 structure to the operating system when it reports a hardware error. This hardware error packet contains the raw hardware error data direct from the error source's error status registers.
 
 The WHEA_ERROR_PACKET_V1 structure describes the error data that is contained in a hardware error packet error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a hardware error packet error section only if the  <b>SectionType</b> member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains WHEA_PACKET_SECTION_GUID.
 
@@ -159,52 +168,36 @@ The WHEA_ERROR_PACKET_V1 structure describes the error data that is contained in
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">Platform-Specific Hardware Error Driver (PSHED) Plug-Ins</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
-</dt>
-<dt>
-<a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>
-</dt>
-<dt>
-<a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_nmi_error_section.md">WHEA_NMI_ERROR_SECTION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
+
+<a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">Platform-Specific Hardware Error Driver (PSHED) Plug-Ins</a>
+
 <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a>
+
+<a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>
+
 <a href="..\ntddk\ne-ntddk-_whea_raw_data_format.md">WHEA_RAW_DATA_FORMAT</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_nmi_error_section.md">WHEA_NMI_ERROR_SECTION</a>
+
+<a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a>
+
  
 
  

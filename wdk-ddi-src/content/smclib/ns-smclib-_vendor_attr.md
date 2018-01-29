@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : f166ced5-2d63-4e35-af77-78ca80c888d7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _VENDOR_ATTR, *PVENDOR_ATTR, VENDOR_ATTR
+ms.keywords : PVENDOR_ATTR, *PVENDOR_ATTR, _VENDOR_ATTR, PVENDOR_ATTR structure pointer [Smart Card Reader Devices], smclib/VENDOR_ATTR, VENDOR_ATTR, smclib/PVENDOR_ATTR, VENDOR_ATTR structure [Smart Card Reader Devices], smartcrd.vendor_attr, scstruct_dfa4be20-d572-46d6-aff7-c4c16d930c7f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VENDOR_ATTR
-req.alt-loc : smclib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PVENDOR_ATTR, VENDOR_ATTR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VENDOR_ATTR, *PVENDOR_ATTR
 req.product : Windows 10 or later.
 ---
 
@@ -65,30 +69,30 @@ typedef struct _VENDOR_ATTR {
 
 ## Members
 
-        
-            `IfdSerialNo`
 
-            A structure with the following members:
-        
-            `IfdType`
+`IfdSerialNo`
 
-            A structure with the following members:
-        
-            `IfdVersion`
+A structure with the following members:
 
-            A structure with the following members:
-        
-            `Reserved`
+`IfdType`
 
-            Reserved for system use.
-        
-            `UnitNo`
+A structure with the following members:
 
-            Contains the zero-based number of this unit. Because you can have more than one reader of this kind installed, <b>UnitNo</b> can distinguish the readers. This member is required.
-        
-            `VendorName`
+`IfdVersion`
 
-            A structure with the following members:
+A structure with the following members:
+
+`Reserved`
+
+Reserved for system use.
+
+`UnitNo`
+
+Contains the zero-based number of this unit. Because you can have more than one reader of this kind installed, <b>UnitNo</b> can distinguish the readers. This member is required.
+
+`VendorName`
+
+A structure with the following members:
 
 
 ## Requirements

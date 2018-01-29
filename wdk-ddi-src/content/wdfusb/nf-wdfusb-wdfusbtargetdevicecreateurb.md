@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 274232FF-573A-47B4-B363-2FA7F810BF84
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceCreateUrb
+ms.keywords : PFN_WDFUSBTARGETDEVICECREATEURB, wdfusb/WdfUsbTargetDeviceCreateUrb, kmdf.wdfusbtargetdevicecreateurb, wdf.wdfusbtargetdevicecreateurb, WdfUsbTargetDeviceCreateUrb, WdfUsbTargetDeviceCreateUrb method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows Vista
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 
-req.alt-api : WdfUsbTargetDeviceCreateUrb
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -76,17 +80,45 @@ A pointer to an URB structure that receives the address of the newly allocated U
 ## Return Value
 
 <b>WdfUsbTargetDeviceCreateUrb</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl>The driver did not specify a client contract version when it called <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>.
+</dl>
+</td>
+<td width="60%">
+The driver did not specify a client contract version when it called <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There was insufficient memory to create a new URB.
+</dl>
+</td>
+<td width="60%">
+There was insufficient memory to create a new URB.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -102,8 +134,6 @@ If the driver provides an <i>Urb</i> parameter when it calls <b>WdfUsbTargetDevi
 
 The memory object and its buffer are deleted when the parent object is deleted. A driver can also delete a memory object and its buffer by calling <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>.
 
-The following code example declares a framework memory object. The example calls <b>WdfUsbTargetDeviceCreateUrb</b> to allocate a USB request block, and then calls <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a> to format a request that uses the URB structure's contents. Finally, the example registers a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function and sends the request to an I/O target.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -118,20 +148,14 @@ The following code example declares a framework memory object. The example calls
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-</dt>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>
-</dt>
-</dl>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+
  
 
  

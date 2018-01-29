@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7858f3ba-e02a-4115-bf30-12e3a6a75965
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFFile, IWDFFile::RetrieveFileName, RetrieveFileName
+ms.keywords : wudfddi/IWDFFile::RetrieveFileName, RetrieveFileName method, IWDFFile interface, wdf.iwdffile_retrievefilename, UMDFFileObjectRef_6c460bef-f774-4f9c-9e56-3c57ad023ae8.xml, RetrieveFileName, umdf.iwdffile_retrievefilename, IWDFFile, IWDFFile::RetrieveFileName, IWDFFile interface, RetrieveFileName method, RetrieveFileName method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFFile.RetrieveFileName
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -82,18 +86,11 @@ The buffer at <i>pFileName</i> was <b>NULL</b>, the driver preset the variable a
 
 
 
-The buffer that the <i>pFileName</i> parameter points to was non-<b>NULL</b> and large enough to hold the name string, including the <b>NULL</b> character, and the framework successfully copied the string into the supplied buffer and set the variable that is pointed to by the <i>pdwFileNameLengthInChars</i> parameter to the number of characters in the string.
-
-The buffer at <i>pFileName</i> was <b>NULL</b>, the driver preset the variable at <i>pdwFileNameLengthInChars</i> to 0, and the framework set the variable at <i>pdwFileNameLengthInChars</i> to the number of characters that are required for the string. 
-
-
 <b>RetrieveFileName</b> might also return other HRESULT values.
 
 ## Remarks
 
 Your driver might call <b>RetrieveFileName</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a> callback function.  For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces-in-umdf-drivers">Using Device Interfaces in UMDF Drivers</a>.
-
-The following code example shows how to retrieve the name of a file.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -109,11 +106,8 @@ The following code example shows how to retrieve the name of a file.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-</dl>
+
  
 
  

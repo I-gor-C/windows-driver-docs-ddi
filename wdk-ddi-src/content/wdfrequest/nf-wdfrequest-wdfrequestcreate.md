@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 94329e5a-9efb-4e88-92a6-457098d1245f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestCreate
+ms.keywords : kmdf.wdfrequestcreate, WdfRequestCreate, WdfRequestCreate method, wdf.wdfrequestcreate, PFN_WDFREQUESTCREATE, wdfrequest/WdfRequestCreate, DFRequestObjectRef_9c240f29-fd5e-4d6e-9a54-31abb05507c5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestCreate
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, ReqDelete, RequestForUrbXrb, RequestSendAndForgetNoFormatting2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -69,17 +73,45 @@ A pointer to a location that receives a handle to a framework request object.
 ## Return Value
 
 <b>WdfRequestCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An input parameter is invalid.
+</dl>
+</td>
+<td width="60%">
+An input parameter is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There are insufficient system resources to complete the operation.
+</dl>
+</td>
+<td width="60%">
+There are insufficient system resources to complete the operation.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_REQUEST_NOT_ACCEPTED</b></dt>
-</dl>The request's array of I/O stack locations is not large enough to allow the driver to send the request to the specified I/O target.
+</dl>
+</td>
+<td width="60%">
+The request's array of I/O stack locations is not large enough to allow the driver to send the request to the specified I/O target.
 
- 
+</td>
+</tr>
+</table> 
 
 For a list of additional return values, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -99,8 +131,6 @@ By default, the new request object's parent is the framework driver object that 
 
 For more information about calling <b>WdfRequestCreate</b>, see <a href="https://msdn.microsoft.com/4bd668ec-14fb-4999-9535-a49712a26ba6">Creating Framework Request Objects</a>.
 
-The following code example creates an I/O target object, initializes a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure, and calls <b>WdfRequestCreate</b>. The new request object's parent is the I/O target object.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -115,26 +145,18 @@ The following code example creates an I/O target object, initializes a <a href="
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a>
-</dt>
-<dt>
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-</dt>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
-</dt>
-<dt>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
-</dt>
-<dt>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
+
 <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
-</dt>
-</dl>
+
  
 
  

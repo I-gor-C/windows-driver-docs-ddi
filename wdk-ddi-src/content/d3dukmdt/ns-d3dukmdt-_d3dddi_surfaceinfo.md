@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 347edff7-b209-4b60-aabc-5ee7963c8164
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_SURFACEINFO, D3DDDI_SURFACEINFO
+ms.keywords : D3DDDI_SURFACEINFO, d3dukmdt/D3DDDI_SURFACEINFO, display.d3dddi_surfaceinfo, _D3DDDI_SURFACEINFO, D3DDDI_SURFACEINFO structure [Display Devices], D3D_other_Structs_03e742b5-062c-46d3-bedf-25aee3582dfc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_SURFACEINFO
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_SURFACEINFO
 ---
 
@@ -51,32 +55,32 @@ typedef struct _D3DDDI_SURFACEINFO {
 
 ## Members
 
-        
-            `Depth`
 
-            [in] The depth, in pixels, of the volume.
-        
-            `Height`
+`Depth`
 
-            [in] The height, in pixels, of the surface or volume.
-        
-            `pSysMem`
+[in] The depth, in pixels, of the volume.
 
-            [in] A pointer to a buffer that contains the contents of the resource if the resource exists in system memory and <b>NULL</b> if the resource exists in video memory.
+`Height`
+
+[in] The height, in pixels, of the surface or volume.
+
+`pSysMem`
+
+[in] A pointer to a buffer that contains the contents of the resource if the resource exists in system memory and <b>NULL</b> if the resource exists in video memory.
 
 Note that this member is valid only if the <b>Pool</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a> structure for creating the resource is set to the D3DDDIPOOL_SYSTEMMEM value.
-        
-            `SysMemPitch`
 
-            [in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next line.
-        
-            `SysMemSlicePitch`
+`SysMemPitch`
 
-            [in] The slice, in bytes, of the volume.
-        
-            `Width`
+[in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next line.
 
-            [in] The width, in pixels, of the surface or volume or the length, in pixels, of the linear resource.
+`SysMemSlicePitch`
+
+[in] The slice, in bytes, of the volume.
+
+`Width`
+
+[in] The width, in pixels, of the surface or volume or the length, in pixels, of the linear resource.
 
 
 ## Requirements
@@ -87,16 +91,12 @@ Note that this member is valid only if the <b>Pool</b> member of the <a href="..
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
-</dt>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 50A3EB6D-C485-4C04-8E88-9BD7D7ED0A62
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT
+ms.keywords : PSTORPORT_TELEMETRY_EVENT, storport/STORPORT_TELEMETRY_EVENT, storport/PSTORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT, storage.storport_telemetry_event, STORPORT_TELEMETRY_EVENT structure [Storage Devices], STORPORT_TELEMETRY_EVENT, PSTORPORT_TELEMETRY_EVENT structure pointer [Storage Devices], _STORPORT_TELEMETRY_EVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORPORT_TELEMETRY_EVENT
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
 req.product : Windows 10 or later.
 ---
 
@@ -71,101 +75,101 @@ typedef struct _STORPORT_TELEMETRY_EVENT {
 
 ## Members
 
-        
-            `DriverVersion`
 
-            Miniport driver version.
-        
-            `EventBuffer`
+`DriverVersion`
 
-            A miniport defined telemetry payload, the length of which is <b>EventBufferLength</b>.
-        
-            `EventBufferLength`
+Miniport driver version.
 
-            The length of <b>EventBuffer</b>, which should be not larger than <b>EVENT_BUFFER_MAX_LENGTH</b> that is 4KB.
-        
-            `EventId`
+`EventBuffer`
 
-            A miniport defined identifier for the telemetry event.
-        
-            `EventName`
+A miniport defined telemetry payload, the length of which is <b>EventBufferLength</b>.
 
-            A miniport defined name for the telemetry event, which has the maximum length of <b>EVENT_NAME_MAX_LENGTH</b>.
-        
-            `EventVersion`
+`EventBufferLength`
 
-            A miniport defined version for the telemetry event.
-        
-            `Flags`
+The length of <b>EventBuffer</b>, which should be not larger than <b>EVENT_BUFFER_MAX_LENGTH</b> that is 4KB.
 
-            Reserved.
-        
-            `ParameterName0`
+`EventId`
 
-            A description of the of the meaning of ParameterValue0. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterName1`
+A miniport defined identifier for the telemetry event.
 
-            A description of the of the meaning of ParameterValue1. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterName2`
+`EventName`
 
-            A description of the of the meaning of ParameterValue2. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterName3`
+A miniport defined name for the telemetry event, which has the maximum length of <b>EVENT_NAME_MAX_LENGTH</b>.
 
-            A description of the of the meaning of ParameterValue3. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterName4`
+`EventVersion`
 
-            A description of the of the meaning of ParameterValue4. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterName5`
+A miniport defined version for the telemetry event.
 
-            A description of the of the meaning of ParameterValue5. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterName6`
+`Flags`
 
-            A description of the of the meaning of ParameterValue6. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterName7`
+Reserved.
 
-            A description of the of the meaning of ParameterValue7. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-        
-            `ParameterValue0`
+`ParameterName0`
 
-            The value for parameter 0.
-        
-            `ParameterValue1`
+A description of the of the meaning of ParameterValue0. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
-            The value for parameter 1.
-        
-            `ParameterValue2`
+`ParameterName1`
 
-            The value for parameter 2.
-        
-            `ParameterValue3`
+A description of the of the meaning of ParameterValue1. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
-            The value for parameter 3.
-        
-            `ParameterValue4`
+`ParameterName2`
 
-            The value for parameter 4.
-        
-            `ParameterValue5`
+A description of the of the meaning of ParameterValue2. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
-            The value for parameter 5.
-        
-            `ParameterValue6`
+`ParameterName3`
 
-            The value for parameter 6.
-        
-            `ParameterValue7`
+A description of the of the meaning of ParameterValue3. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
-            The value for parameter 7.
+`ParameterName4`
 
-    ## Remarks
-        A <b>STORPORT_TELEMETRY_EVENT</b> structure describes the miniport telemetry data payload. The miniport should fill it when calling StorPortLogTelemetry.
+A description of the of the meaning of ParameterValue4. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
+`ParameterName5`
+
+A description of the of the meaning of ParameterValue5. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
+`ParameterName6`
+
+A description of the of the meaning of ParameterValue6. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
+`ParameterName7`
+
+A description of the of the meaning of ParameterValue7. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
+`ParameterValue0`
+
+The value for parameter 0.
+
+`ParameterValue1`
+
+The value for parameter 1.
+
+`ParameterValue2`
+
+The value for parameter 2.
+
+`ParameterValue3`
+
+The value for parameter 3.
+
+`ParameterValue4`
+
+The value for parameter 4.
+
+`ParameterValue5`
+
+The value for parameter 5.
+
+`ParameterValue6`
+
+The value for parameter 6.
+
+`ParameterValue7`
+
+The value for parameter 7.
+
+## Remarks
+A <b>STORPORT_TELEMETRY_EVENT</b> structure describes the miniport telemetry data payload. The miniport should fill it when calling StorPortLogTelemetry.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -175,13 +179,10 @@ typedef struct _STORPORT_TELEMETRY_EVENT {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\nf-storport-storportlogtelemetry.md">StorPortLogTelemetry</a>
-</dt>
-</dl>
+
  
 
  

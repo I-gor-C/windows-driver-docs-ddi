@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 83E5D362-BC3C-4480-9904-6ABBB26DAFF2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.powerondumpdevicecallback, PowerOnDumpDeviceCallback routine [Kernel-Mode Driver Architecture], PowerOnDumpDeviceCallback, PEPCALLBACKPOWERONCRASHDUMPDEVICE, PEPCALLBACKPOWERONCRASHDUMPDEVICE, pepfx/PowerOnDumpDeviceCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PowerOnDumpDeviceCallback
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at HIGH_LEVEL.
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -82,14 +86,10 @@ The <i>PowerOnDumpDeviceCallback</i> routine is called at IRQL = HIGH_LEVEL with
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_CRASHDUMP_DEVICE</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
+
  
 
  

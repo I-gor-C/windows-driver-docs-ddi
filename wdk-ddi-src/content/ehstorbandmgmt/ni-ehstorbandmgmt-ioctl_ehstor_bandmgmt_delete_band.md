@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : CA0002E6-D9E7-417B-AD48-32E25E24EC32
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DXVA_VideoSample32, DXVA_VideoSample32
+ms.keywords : storage.ioctl_ehstor_bandmgmt_delete_band, IOCTL_EHSTOR_BANDMGMT_DELETE_BAND control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_DELETE_BAND, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_DELETE_BAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_BANDMGMT_DELETE_BAND
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoSample32
 ---
 
@@ -61,11 +65,44 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
-One of the following values can be returned in the <b>Status</b> field.
+One of the following values can be returned in the <b>Status</b> field. 
+<table>
+<tr>
+<th>Status Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STATUS_SUCCESS</td>
+<td>The band was successfully deleted.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_DEVICE_REQUEST</td>
+<td>The storage device does not support band management.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_BUFFER_SIZE</td>
+<td>The input buffer size is incorrect.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_PARAMETER</td>
+<td>Information in the input buffer is invalid.</td>
+</tr>
+<tr>
+<td>STATUS_ACCESS_DENIED</td>
+<td>The authentication key is invalid or band is locked for writing.</td>
+</tr>
+<tr>
+<td>STATUS_NOT_FOUND</td>
+<td>The band was not found for the selection criteria provided.</td>
+</tr>
+<tr>
+<td>STATUS_IO_DEVICE_ERROR</td>
+<td>Communication failed. The storage device might be incompatible with security protocols. </td>
+</tr>
+</table>
 
-    ## Remarks
-        An authentication key is required to delete a band without performing an erase first. To request a band erase, the <b>DELBAND_ERASE_BEFORE_DELETE</b> flag is set in the <b>Flags</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_delete_band_parameters.md">DELETE_BAND_PARAMETERS</a>.
+## Remarks
+An authentication key is required to delete a band without performing an erase first. To request a band erase, the <b>DELBAND_ERASE_BEFORE_DELETE</b> flag is set in the <b>Flags</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_delete_band_parameters.md">DELETE_BAND_PARAMETERS</a>.
 
 After a band delete, all LBAs contained in the deleted band are returned to the global band. The locking conditions for the global band now apply to the LBAs returned to the global band. The LBAs returned to the global band are now associated with the media key for the global band and encrypted data in those LBAs is unrecoverable.
 
@@ -82,19 +119,14 @@ The <b>IOCTL_EHSTOR_BANDMGMT_DELETE_BAND</b> will not delete the global band. A 
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_delete_band_parameters.md">DELETE_BAND_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
-</dt>
-<dt>
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_erase_band.md">IOCTL_EHSTOR_BANDMGMT_ERASE_BAND</a>
-</dt>
-</dl>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_delete_band_parameters.md">DELETE_BAND_PARAMETERS</a>
+
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
+
  
 
  

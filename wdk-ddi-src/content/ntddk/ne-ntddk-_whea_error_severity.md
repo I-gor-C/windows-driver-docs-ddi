@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 3b056910-dc33-4608-bb7d-a3f13bc546ca
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_SEVERITY, *PWHEA_ERROR_SEVERITY, WHEA_ERROR_SEVERITY
+ms.keywords : ntddk/WheaErrSevCorrected, ntddk/PWHEA_ERROR_SEVERITY, WheaErrSevCorrected, ntddk/WheaErrSevInformational, whea.whea_error_severity, ntddk/WHEA_ERROR_SEVERITY, ntddk/WheaErrSevFatal, WheaErrSevFatal, ntddk/WheaErrSevRecoverable, PWHEA_ERROR_SEVERITY, whearef_e9b0fee6-a6cf-4f61-a3b6-ef53553aa3ff.xml, PWHEA_ERROR_SEVERITY enumeration pointer [WHEA Drivers and Applications], _WHEA_ERROR_SEVERITY, WheaErrSevRecoverable, WHEA_ERROR_SEVERITY, WheaErrSevInformational, WHEA_ERROR_SEVERITY enumeration [WHEA Drivers and Applications], *PWHEA_ERROR_SEVERITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_SEVERITY
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWHEA_ERROR_SEVERITY, WHEA_ERROR_SEVERITY"
 ---
 
@@ -64,9 +68,7 @@ typedef enum _WHEA_ERROR_SEVERITY {
 <tr>
 <td>WheaErrSevInformational</td>
 <td>An error has not occurred.
-
-<div class="alert"><b>Note</b>  In versions of the WDK that were released prior to Windows 7, this value was named <b>WheaErrSevNone</b>.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>  In versions of the WDK that were released prior to Windows 7, this value was named <b>WheaErrSevNone</b>.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -89,20 +91,14 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+
  
 
  

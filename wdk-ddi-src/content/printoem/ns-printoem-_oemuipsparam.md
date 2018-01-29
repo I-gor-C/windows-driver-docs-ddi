@@ -7,8 +7,8 @@ old-location : print\oemuipsparam.htm
 old-project : print
 ms.assetid : e7708b33-b032-41b9-84f9-6c5b38044f9c
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _OEMUIPSPARAM, *POEMUIPSPARAM, OEMUIPSPARAM
+ms.date : 1/18/2018
+ms.keywords : printoem/OEMUIPSPARAM, OEMUIPSPARAM structure [Print Devices], _OEMUIPSPARAM, *POEMUIPSPARAM, printoem/POEMUIPSPARAM, OEMUIPSPARAM, POEMUIPSPARAM, POEMUIPSPARAM structure pointer [Print Devices], print_unidrv-pscript_ui_7a4c3f10-5a2d-45da-99e4-bbd6ee0fb8bf.xml, print.oemuipsparam
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OEMUIPSPARAM
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*POEMUIPSPARAM, OEMUIPSPARAM"
 req.product : Windows 10 or later.
 ---
@@ -57,50 +61,50 @@ typedef struct _OEMUIPSPARAM {
 
 ## Members
 
-        
-            `cbSize`
 
-            Size of the OEMUIPSPARAM structure. Supplied by the Unidrv or Pscript5 driver.
-        
-            `dwFlags`
+`cbSize`
 
-            
-        
-            `hModule`
+Size of the OEMUIPSPARAM structure. Supplied by the Unidrv or Pscript5 driver.
 
-            Handle to the user interface plug-in. Supplied by the Unidrv or Pscript5 driver.
-        
-            `hOEMHeap`
+`dwFlags`
 
-            Handle to a heap from which space can be allocated by calling the Microsoft Windows SDK <b>HeapAlloc</b> function. Supplied by the Unidrv or Pscript5 driver.
-        
-            `hPrinter`
 
-            Handle to the printer. Supplied by the Unidrv or Pscript5 driver.
-        
-            `pOEMDM`
 
-            
-        
-            `pOemEntry`
+`hModule`
 
-            Reserved for system use.
-        
-            `poemuiobj`
+Handle to the user interface plug-in. Supplied by the Unidrv or Pscript5 driver.
 
-            Not used.
-        
-            `pOEMUserData`
+`hOEMHeap`
 
-            Pointer, supplied by user interface plug-in, to a location containing private information. This pointer is returned to the plug-in's <a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function when a property sheet item has changed.
-        
-            `pPrinterName`
+Handle to a heap from which space can be allocated by calling the Microsoft Windows SDK <b>HeapAlloc</b> function. Supplied by the Unidrv or Pscript5 driver.
 
-            String containing the printer name. Supplied by the Unidrv or Pscript5 driver.
-        
-            `pPublicDM`
+`hPrinter`
 
-            
+Handle to the printer. Supplied by the Unidrv or Pscript5 driver.
+
+`pOEMDM`
+
+
+
+`pOemEntry`
+
+Reserved for system use.
+
+`poemuiobj`
+
+Not used.
+
+`pOEMUserData`
+
+Pointer, supplied by user interface plug-in, to a location containing private information. This pointer is returned to the plug-in's <a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function when a property sheet item has changed.
+
+`pPrinterName`
+
+String containing the printer name. Supplied by the Unidrv or Pscript5 driver.
+
+`pPublicDM`
+
+
 
 
 ## Requirements
@@ -111,27 +115,20 @@ typedef struct _OEMUIPSPARAM {
 | **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a>
-</dt>
-<dt>
-<a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a>
-</dt>
-<dt>
-<a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>
-</dt>
-<dt>
 <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a>
-</dt>
-</dl>
- 
+
+<a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>
+
+<a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20OEMUIPSPARAM structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20OEMUIPSPARAM structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

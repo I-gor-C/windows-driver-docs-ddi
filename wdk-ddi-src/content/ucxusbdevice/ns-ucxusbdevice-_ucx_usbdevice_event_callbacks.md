@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7A320D48-E71C-40FE-A2EF-201CFCE55145
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_USBDEVICE_EVENT_CALLBACKS, UCX_USBDEVICE_EVENT_CALLBACKS, *PUCX_USBDEVICE_EVENT_CALLBACKS
+ms.keywords : UCX_USBDEVICE_EVENT_CALLBACKS structure [Buses], buses._ucx_usbdevice_event_callbacks, UCX_USBDEVICE_EVENT_CALLBACKS, ucxusbdevice/_UCX_USBDEVICE_EVENT_CALLBACKS, P_UCX_USBDEVICE_EVENT_CALLBACKS, P_UCX_USBDEVICE_EVENT_CALLBACKS structure pointer [Buses], *PUCX_USBDEVICE_EVENT_CALLBACKS, ucxusbdevice/P_UCX_USBDEVICE_EVENT_CALLBACKS, _UCX_USBDEVICE_EVENT_CALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_USBDEVICE_EVENT_CALLBACKS
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : UCX_USBDEVICE_EVENT_CALLBACKS, *PUCX_USBDEVICE_EVENT_CALLBACKS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUCX_USBDEVICE_EVENT_CALLBACKS, UCX_USBDEVICE_EVENT_CALLBACKS"
 req.product : Windows 10 or later.
 ---
 
@@ -59,58 +63,58 @@ typedef struct _UCX_USBDEVICE_EVENT_CALLBACKS {
 
 ## Members
 
-        
-            `EvtUsbDeviceAddress`
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_address.md">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.
-        
-            `EvtUsbDeviceDefaultEndpointAdd`
+`EvtUsbDeviceAddress`
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add.md">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a> callback function.
-        
-            `EvtUsbDeviceDisable`
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_address.md">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_disable.md">EVT_UCX_USBDEVICE_DISABLE</a> callback function.
-        
-            `EvtUsbDeviceEnable`
+`EvtUsbDeviceDefaultEndpointAdd`
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_enable.md">EVT_UCX_USBDEVICE_ENABLE</a> callback function.
-        
-            `EvtUsbDeviceEndpointAdd`
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add.md">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a> callback function.
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> callback function.
-        
-            `EvtUsbDeviceEndpointsConfigure`
+`EvtUsbDeviceDisable`
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.
-        
-            `EvtUsbDeviceGetCharacteristic`
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_disable.md">EVT_UCX_USBDEVICE_DISABLE</a> callback function.
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a> callback function.
-        
-            `EvtUsbDeviceHubInfo`
+`EvtUsbDeviceEnable`
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_hub_info.md">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.
-        
-            `EvtUsbDeviceReset`
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_enable.md">EVT_UCX_USBDEVICE_ENABLE</a> callback function.
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_reset.md">EVT_UCX_USBDEVICE_RESET</a> callback function.
-        
-            `EvtUsbDeviceResume`
+`EvtUsbDeviceEndpointAdd`
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_resume.md">EVT_UCX_USBDEVICE_RESUME</a> callback function.
-        
-            `EvtUsbDeviceSuspend`
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> callback function.
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_suspend.md">EVT_UCX_USBDEVICE_SUSPEND</a> callback function.
-        
-            `EvtUsbDeviceUpdate`
+`EvtUsbDeviceEndpointsConfigure`
 
-            A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.
-        
-            `Size`
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.
 
-            The size in bytes of this structure.
+`EvtUsbDeviceGetCharacteristic`
+
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a> callback function.
+
+`EvtUsbDeviceHubInfo`
+
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_hub_info.md">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.
+
+`EvtUsbDeviceReset`
+
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_reset.md">EVT_UCX_USBDEVICE_RESET</a> callback function.
+
+`EvtUsbDeviceResume`
+
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_resume.md">EVT_UCX_USBDEVICE_RESUME</a> callback function.
+
+`EvtUsbDeviceSuspend`
+
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_suspend.md">EVT_UCX_USBDEVICE_SUSPEND</a> callback function.
+
+`EvtUsbDeviceUpdate`
+
+A pointer to an <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.
+
+`Size`
+
+The size in bytes of this structure.
 
 
 ## Requirements
@@ -121,16 +125,12 @@ typedef struct _UCX_USBDEVICE_EVENT_CALLBACKS {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\nf-ucxusbdevice-ucx_usbdevice_event_callbacks_init.md">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
-</dt>
-<dt>
+
 <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdeviceinitseteventcallbacks.md">UcxUsbDeviceInitSetEventCallbacks</a>
-</dt>
-</dl>
+
  
 
  

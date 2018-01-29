@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 115d9489-f9f5-4dd2-bf09-33e8fd640743
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _RTL_AVL_TABLE, RTL_AVL_TABLE, *PRTL_AVL_TABLE
+ms.keywords : ntddk/PRTL_AVL_TABLE, PRTL_AVL_TABLE structure pointer [Installable File System Drivers], _RTL_AVL_TABLE, ntddk/RTL_AVL_TABLE, RTL_AVL_TABLE structure [Installable File System Drivers], *PRTL_AVL_TABLE, ifsk.rtl_avl_table, RTL_AVL_TABLE, othersystemstructures_15c34a0b-0bca-4c5f-82d9-0320ef0d33ad.xml, PRTL_AVL_TABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available on Windows XP and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RTL_AVL_TABLE
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RTL_AVL_TABLE
 ---
 
@@ -58,100 +62,127 @@ typedef struct _RTL_AVL_TABLE {
 
 ## Members
 
-        
-            `AllocateRoutine`
 
-            Reserved for system use.
-        
-            `BalancedRoot`
+`AllocateRoutine`
 
-            Reserved for system use.
-        
-            `CompareRoutine`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `DeleteCount`
+`BalancedRoot`
 
-            Reserved for system use.
-        
-            `DepthOfTree`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `FreeRoutine`
+`CompareRoutine`
 
-            Reserved for system use.
-        
-            `NumberGenericTableElements`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `OrderedPointer`
+`DeleteCount`
 
-            Reserved for system use.
-        
-            `RestartKey`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `TableContext`
+`DepthOfTree`
 
-            Reserved for system use.
-        
-            `WhichOrderedElement`
+Reserved for system use.
 
-            Reserved for system use.
+`FreeRoutine`
 
-    ## Remarks
-        To initialize an AVL table package, you allocate a buffer that is at least <b>sizeof(</b>RTL_AVL_TABLE<b>) </b>bytes in size. You can then use this buffer to receive the initialized AVL table structure from a call to the <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTableAvl</a> routine. Use the following routines to manipulate the table:
+Reserved for system use.
 
+`NumberGenericTableElements`
+
+Reserved for system use.
+
+`OrderedPointer`
+
+Reserved for system use.
+
+`RestartKey`
+
+Reserved for system use.
+
+`TableContext`
+
+Reserved for system use.
+
+`WhichOrderedElement`
+
+Reserved for system use.
+
+## Remarks
+To initialize an AVL table package, you allocate a buffer that is at least <b>sizeof(</b>RTL_AVL_TABLE<b>) </b>bytes in size. You can then use this buffer to receive the initialized AVL table structure from a call to the <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTableAvl</a> routine. Use the following routines to manipulate the table:
+<ul>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTableAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTableAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablelikeadirectory.md">RtlEnumerateGenericTableLikeADirectory</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlgetelementgenerictableavl.md">RtlGetElementGenericTableAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictable.md">RtlInsertElementGenericTableAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictablefullavl.md">RtlInsertElementGenericTableFullAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableempty.md">RtlIsGenericTableEmptyAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtllookupelementgenerictable.md">RtlLookupElementGenericTableAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtllookupelementgenerictablefullavl.md">RtlLookupElementGenericTableFullAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtllookupfirstmatchingelementgenerictableavl.md">RtlLookupFirstMatchingElementGenericTableAvl</a>
 
 
+</li>
+<li>
 
 <a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelements.md">RtlNumberGenericTableElementsAvl</a>
+
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -161,52 +192,36 @@ typedef struct _RTL_AVL_TABLE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_rtl_generic_table.md">RTL_GENERIC_TABLE</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablelikeadirectory.md">RtlEnumerateGenericTableLikeADirectory</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlgetelementgenerictableavl.md">RtlGetElementGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictable.md">RtlInsertElementGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictablefullavl.md">RtlInsertElementGenericTableFullAvl</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableempty.md">RtlIsGenericTableEmptyAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtllookupelementgenerictable.md">RtlLookupElementGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtllookupelementgenerictablefullavl.md">RtlLookupElementGenericTableFullAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtllookupfirstmatchingelementgenerictableavl.md">RtlLookupFirstMatchingElementGenericTableAvl</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTableAvl</a>
+
 <a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelements.md">RtlNumberGenericTableElementsAvl</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictable.md">RtlInsertElementGenericTableAvl</a>
+
+<a href="..\ntddk\ns-ntddk-_rtl_generic_table.md">RTL_GENERIC_TABLE</a>
+
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablelikeadirectory.md">RtlEnumerateGenericTableLikeADirectory</a>
+
+<a href="..\ntddk\nf-ntddk-rtllookupfirstmatchingelementgenerictableavl.md">RtlLookupFirstMatchingElementGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtllookupelementgenerictablefullavl.md">RtlLookupElementGenericTableFullAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtllookupelementgenerictable.md">RtlLookupElementGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictablefullavl.md">RtlInsertElementGenericTableFullAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlgetelementgenerictableavl.md">RtlGetElementGenericTableAvl</a>
+
  
 
  

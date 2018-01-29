@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fe3443e7-0dc9-4c91-88ab-b05bac19516d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_GETOVERLAYSTATE, D3DKMT_GETOVERLAYSTATE
+ms.keywords : display.d3dkmt_getoverlaystate, OpenGL_Structs_c9bee52b-d6ba-45ee-9af6-b795685715bb.xml, D3DKMT_GETOVERLAYSTATE structure [Display Devices], D3DKMT_GETOVERLAYSTATE, d3dkmthk/D3DKMT_GETOVERLAYSTATE, _D3DKMT_GETOVERLAYSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_GETOVERLAYSTATE is supported beginning with t
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_GETOVERLAYSTATE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_GETOVERLAYSTATE
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_GETOVERLAYSTATE {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
-        
-            `hOverlay`
+`hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to retrieve status about.
-        
-            `OverlayEnabled`
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
 
-            [out] A Boolean variable that receives <b>TRUE</b> if the overlay is enabled and <b>FALSE</b> if the overlay is disabled.
+`hOverlay`
+
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to retrieve status about.
+
+`OverlayEnabled`
+
+[out] A Boolean variable that receives <b>TRUE</b> if the overlay is enabled and <b>FALSE</b> if the overlay is disabled.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_GETOVERLAYSTATE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetoverlaystate.md">D3DKMTGetOverlayState</a>
-</dt>
-</dl>
+
  
 
  

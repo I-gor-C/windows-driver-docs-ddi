@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c26f9b28-396d-40de-bdc3-287fc3ac4113
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExFreePool
+ms.keywords : ExFreePool, wdm/ExFreePool, ExFreePool routine [Kernel-Mode Driver Architecture], k102_134b475a-f669-4f1e-8836-f41945d7230c.xml, kernel.exfreepool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExFreePool
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : DoubleExFreePool
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,23 +84,16 @@ Callers of <b>ExFreePool</b> must be running at IRQL &lt;= DISPATCH_LEVEL. A cal
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatepool.md">ExAllocatePool</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatepoolwithquota.md">ExAllocatePoolWithQuota</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithquota.md">ExAllocatePoolWithQuota</a>
+
+<a href="..\wdm\nf-wdm-exallocatepool.md">ExAllocatePool</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
+
  
 
  

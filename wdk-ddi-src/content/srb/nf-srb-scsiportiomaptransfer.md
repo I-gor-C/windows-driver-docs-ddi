@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 627a2d4c-22c8-48ea-b409-dc246c85a316
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortIoMapTransfer
+ms.keywords : srb/ScsiPortIoMapTransfer, scsiprt_9473c978-7355-4296-b8ac-07b20f6ea441.xml, ScsiPortIoMapTransfer routine [Storage Devices], ScsiPortIoMapTransfer, storage.scsiportiomaptransfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortIoMapTransfer
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortIoMapTransfer function
 The <b>ScsiPortIoMapTransfer</b> routine sets up the system DMA controller for a miniport driver to transfer data through a subordinate HBA.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -93,14 +98,10 @@ After the operating system-specific port driver programs the system DMA controll
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a>
-</dt>
-<dt>
+
 <a href="..\srb\nf-srb-scsiportflushdma.md">ScsiPortFlushDma</a>
-</dt>
-</dl>
+
  
 
  

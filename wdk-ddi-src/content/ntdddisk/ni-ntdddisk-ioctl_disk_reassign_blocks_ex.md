@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 885CC365-A730-4C1E-AD74-89D47DC17407
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_reassign_blocks_ex, IOCTL_DISK_REASSIGN_BLOCKS_EX control code [Storage Devices], IOCTL_DISK_REASSIGN_BLOCKS_EX, ntdddisk/IOCTL_DISK_REASSIGN_BLOCKS_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_REASSIGN_BLOCKS_EX
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
@@ -61,7 +65,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero. The <b>Status</b> field can be set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH, STATUS_INSUFFICIENT_RESOURCES, or STATUS_BUFFER_TOO_SMALL.
 
 
@@ -72,13 +75,10 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field can be set 
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_reassign_blocks_ex.md">REASSIGN_BLOCKS_EX</a>
-</dt>
-</dl>
+
  
 
  

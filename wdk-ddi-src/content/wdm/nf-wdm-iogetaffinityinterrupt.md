@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : aec1ace6-9945-4e7a-b0f6-81591670ecfe
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetAffinityInterrupt
+ms.keywords : WdmlibIoGetAffinityInterrupt, kernel.iogetaffinityinterrupt, k104_39247b69-50e1-4162-b26e-81b5358738de.xml, IoGetAffinityInterrupt routine [Kernel-Mode Driver Architecture], IoGetAffinityInterrupt, wdm/WdmlibIoGetAffinityInterrupt, wdm/IoGetAffinityInterrupt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetAffinityInterrupt,WdmlibIoGetAffinityInterrupt
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,11 +84,8 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinity
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a>
-</dt>
-</dl>
+
  
 
  

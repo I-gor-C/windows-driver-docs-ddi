@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : d08bbaea-6f2b-49ef-bb8b-c1fe357e1c90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.keywords : PCI.sriov_get_vendor_and_device_ids, SriovGetVendorAndDeviceIds callback function [Buses], SriovGetVendorAndDeviceIds, SRIOV_GET_VENDOR_AND_DEVICE_IDS, SRIOV_GET_VENDOR_AND_DEVICE_IDS, pcivirt/SriovGetVendorAndDeviceIds, *PSRIOV_GET_VENDOR_AND_DEVICE_IDS callback function pointer [Buses], *PSRIOV_GET_VENDOR_AND_DEVICE_IDS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : "*PSRIOV_GET_VENDOR_AND_DEVICE_IDS"
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
@@ -83,7 +87,37 @@ The PCI Express SR-IOV Specification requires that all VFs have the same Vendor 
 
 The PF driver registers its implementation by setting the <b>GetVendorAndDevice</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
-Here is an example implementation of this callback function. </p>
+Here is an example implementation of this callback function. 
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>
+Virtualization_GetVendorAndDevice (
+    _In_    PVOID           Context,
+    _In_    USHORT          VfIndex,
+    _Out_   PUSHORT         VendorId,
+    _Out_   PUSHORT         DeviceId
+    )
+{
+    PDEVICE_CONTEXT deviceContext;
+
+    UNREFERENCED_PARAMETER(VfIndex);
+    PAGED_CODE();
+
+    deviceContext = (PDEVICE_CONTEXT)Context;
+
+    *VendorId = deviceContext-&gt;VendorId;
+    *DeviceId = deviceContext-&gt;DeviceId;
+
+    return;
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

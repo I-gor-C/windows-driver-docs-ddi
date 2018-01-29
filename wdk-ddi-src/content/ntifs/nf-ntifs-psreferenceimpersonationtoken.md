@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c72f48a8-ba51-423f-9105-7d78521dcae2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PsReferenceImpersonationToken
+ms.keywords : ntifs/PsReferenceImpersonationToken, psref_150f4e7c-56c2-4108-b5c9-0882f9027252.xml, PsReferenceImpersonationToken, ifsk.psreferenceimpersonationtoken, PsReferenceImpersonationToken routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsReferenceImpersonationToken
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -77,12 +81,16 @@ Pointer to a caller-allocated SECURITY_IMPERSONATION_LEVEL variable. On return, 
 This routine is available starting with Microsoft Windows 2000. 
 
 If the thread is currently impersonating a client, <b>PsReferenceImpersonationToken</b> increments the reference count of the impersonation token and returns a pointer to the token. If the returned pointer is non-<b>NULL</b>, the impersonation token's reference count must be decremented by calling one of the following functions:
-
+<ul>
+<li>
 <b>ObDereferenceObject</b>, for Windows 2000.
 
+</li>
+<li>
 <b>PsDereferenceImpersonationToken</b>, for Microsoft Windows XP or later.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+</li>
+</ul>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,20 +106,14 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
-</dt>
-<dt>
 <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
+
  
 
  

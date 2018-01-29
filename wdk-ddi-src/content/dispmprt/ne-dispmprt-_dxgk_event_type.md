@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : df28ae8f-01f7-42c5-99df-2a3fc7401173
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_EVENT_TYPE, DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE, IN_DXGK_EVENT_TYPE
+ms.keywords : dispmprt/DxgkAcpiEvent, display.dxgk_event_type, dispmprt/PDXGK_EVENT_TYPE, dispmprt/DxgkPowerStateEvent, dispmprt/DxgkDockingEvent, PDXGK_EVENT_TYPE, DxgkUndefinedEvent, DmEnums_94bee105-be3f-4268-982e-be8581bb9bc0.xml, DxgkDockingEvent, dispmprt/DXGK_EVENT_TYPE, DxgkAcpiEvent, _DXGK_EVENT_TYPE, IN_DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE, DxgkPowerStateEvent, PDXGK_EVENT_TYPE enumeration pointer [Display Devices], DXGK_EVENT_TYPE enumeration [Display Devices], DXGK_EVENT_TYPE, dispmprt/DxgkUndefinedEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_EVENT_TYPE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE
 ---
 
@@ -54,6 +58,11 @@ typedef enum _DXGK_EVENT_TYPE {
 <tr>
 <td>DxgkAcpiEvent</td>
 <td>Indicates that the event is an ACPI event.</td>
+</tr>
+
+<tr>
+<td>DxgkChainedAcpiEvent</td>
+<td></td>
 </tr>
 
 <tr>
@@ -83,11 +92,8 @@ typedef enum _DXGK_EVENT_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_notify_acpi_event.md">DxgkDdiNotifyAcpiEvent</a>
-</dt>
-</dl>
+
  
 
  

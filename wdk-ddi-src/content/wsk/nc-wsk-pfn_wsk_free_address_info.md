@@ -7,8 +7,8 @@ old-location : netvista\wskfreeaddressinfo.htm
 old-project : netvista
 ms.assetid : 552b4024-03d3-4e9b-b149-cf584c7e7259
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.date : 1/18/2018
+ms.keywords : netvista.wskfreeaddressinfo, WskFreeAddressInfo callback function [Network Drivers Starting with Windows Vista], WskFreeAddressInfo, PFN_WSK_FREE_ADDRESS_INFO, PFN_WSK_FREE_ADDRESS_INFO, wsk/WskFreeAddressInfo, wskref_dff141b0-8164-439d-9ad7-69a4d2207f31.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WskFreeAddressInfo
-req.alt-loc : wsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -62,8 +66,8 @@ void PfnWskFreeAddressInfo(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
-     WskCaptureProviderNPI</a> function.
+     <mshelp:link keywords="netvista.wskcaptureprovidernpi" tabindex="0"><b>
+     WskCaptureProviderNPI</b></mshelp:link> function.
 
 `AddrInfo`
 
@@ -76,12 +80,10 @@ void PfnWskFreeAddressInfo(
 The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
      Ws2def.h header file. It is identical to the 
      <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
-
 <div class="alert"><b>Important</b>  The 
      Ws2def.h header file is automatically included in 
      Wsk.h. Do not use 
-     Ws2def.h directly.</div>
-<div> </div>
+     Ws2def.h directly.</div><div> </div>
 
 
 ## Return Value
@@ -103,19 +105,14 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
-</dt>
-<dt>
-<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
-</dt>
-<dt>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_get_address_info.md">WskGetAddressInfo</a>
-</dt>
-</dl>
- 
+
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_FREE_ADDRESS_INFO callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_FREE_ADDRESS_INFO callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

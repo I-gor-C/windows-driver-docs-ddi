@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b7903bf8-ef62-4224-a81d-4b41f36e2061
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DESTROYKEYEDMUTEX, D3DKMT_DESTROYKEYEDMUTEX
+ms.keywords : d3dkmthk/D3DKMT_DESTROYKEYEDMUTEX, D3DKMT_DESTROYKEYEDMUTEX, D3DKMT_DESTROYKEYEDMUTEX structure [Display Devices], display.d3dkmt_destroykeyedmutex, _D3DKMT_DESTROYKEYEDMUTEX, OpenGL_Structs_4eb8a9cb-d2b1-445b-b545-5ec0a017a61c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_DESTROYKEYEDMUTEX is supported beginning with
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DESTROYKEYEDMUTEX
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DESTROYKEYEDMUTEX
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DKMT_DESTROYKEYEDMUTEX {
 
 ## Members
 
-        
-            `hKeyedMutex`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to destroy.
+`hKeyedMutex`
+
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to destroy.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _D3DKMT_DESTROYKEYEDMUTEX {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroykeyedmutex.md">D3DKMTDestroyKeyedMutex</a>
-</dt>
-</dl>
+
  
 
  

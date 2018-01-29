@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 344E0F3F-7363-4611-AD33-80CCED5D3564
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PORT_DATA_1, *PPORT_DATA_1, PORT_DATA_1
+ms.keywords : buses.evt_ucm_connector_set_data_role, EvtSetDataRole callback function [Buses], EvtSetDataRole, EVT_UCM_CONNECTOR_SET_DATA_ROLE, EVT_UCM_CONNECTOR_SET_DATA_ROLE, ucmmanager/EvtSetDataRole, PFN_UCM_CONNECTOR_SET_DATA_ROLE callback function pointer [Buses], PFN_UCM_CONNECTOR_SET_DATA_ROLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : PFN_UCM_CONNECTOR_SET_DATA_ROLE
-req.alt-loc : Ucmmanager.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -92,11 +96,8 @@ After the swap operation completes, if the partner port sends a DR_Swap request,
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-</dl>
+
  
 
  

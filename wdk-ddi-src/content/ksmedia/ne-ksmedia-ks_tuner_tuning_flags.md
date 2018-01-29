@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f8742053-0d02-40af-9a6e-7af029db8575
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_TUNER_TUNING_FLAGS, KS_TUNER_TUNING_FLAGS
+ms.keywords : KS_TUNER_TUNING_FLAGS enumeration [Streaming Media Devices], stream.ks_tuner_tuning_flags, vidcapstruct_af322917-69e6-4688-885d-45422c594348.xml, ksmedia/KS_TUNER_TUNING_EXACT, KS_TUNER_TUNING_EXACT, ksmedia/KS_TUNER_TUNING_FINE, ksmedia/KS_TUNER_TUNING_FLAGS, KS_TUNER_TUNING_FINE, ksmedia/KS_TUNER_TUNING_COARSE, KS_TUNER_TUNING_FLAGS, KS_TUNER_TUNING_COARSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_TUNER_TUNING_FLAGS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_TUNER_TUNING_FLAGS
 ---
 
@@ -77,11 +81,8 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_frequency_s.md">KSPROPERTY_TUNER_FREQUENCY_S</a>
-</dt>
-</dl>
+
  
 
  

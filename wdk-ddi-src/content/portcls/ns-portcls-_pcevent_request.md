@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b28bd1c2-9fbe-4427-a4ba-5b79a338e913
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCEVENT_REQUEST, *PPCEVENT_REQUEST, PCEVENT_REQUEST
+ms.keywords : portcls/PPCEVENT_REQUEST, PPCEVENT_REQUEST, audio.pcevent_request, PCEVENT_REQUEST structure [Audio Devices], PPCEVENT_REQUEST structure pointer [Audio Devices], audpc-struct_d60c4cf4-11e2-44b7-842a-65d965c8c422.xml, PCEVENT_REQUEST, portcls/PCEVENT_REQUEST, *PPCEVENT_REQUEST, _PCEVENT_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCEVENT_REQUEST
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPCEVENT_REQUEST, PCEVENT_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PCEVENT_REQUEST, *PPCEVENT_REQUEST
 ---
 
 # _PCEVENT_REQUEST structure
@@ -52,35 +56,34 @@ typedef struct _PCEVENT_REQUEST {
 
 ## Members
 
-        
-            `EventEntry`
 
-            Pointer to the <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure for this request
-        
-            `EventItem`
+`EventEntry`
 
-            Pointer to the <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a> structure for this request
-        
-            `Irp`
+Pointer to the <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure for this request
 
-            Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> containing the event request
-        
-            `MajorTarget`
+`EventItem`
 
-            <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> pointer that the adapter driver previously passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> method.
-        
-            `MinorTarget`
+Pointer to the <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a> structure for this request
 
-            <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to a stream object that is associated with the <i>MajorTarget</i> miniport object. This member contains the stream-object pointer that the port driver previously retrieved from the IMiniport<i>Xxx</i>::NewStream method (for example, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter).
-        
-            `Node`
+`Irp`
 
-            Specifies a node ID. This member identifies the target node for the request. If the target is not a node, this member is set to ULONG(-1).
-        
-            `Verb`
+Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> containing the event request
 
-            Specifies the type of event request. This member should be set to one of the values in the following table.
+`MajorTarget`
 
+<a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> pointer that the adapter driver previously passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> method.
+
+`MinorTarget`
+
+<a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to a stream object that is associated with the <i>MajorTarget</i> miniport object. This member contains the stream-object pointer that the port driver previously retrieved from the IMiniport<i>Xxx</i>::NewStream method (for example, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter).
+
+`Node`
+
+Specifies a node ID. This member identifies the target node for the request. If the target is not a node, this member is set to ULONG(-1).
+
+`Verb`
+
+Specifies the type of event request. This member should be set to one of the values in the following table.
 <table>
 <tr>
 <th>Value</th>
@@ -128,18 +131,24 @@ No action is needed.
 </tr>
 </table>
 
-    ## Remarks
-        This is the structure that the port driver passes to the miniport driver's <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a> structure contains a function pointer to an event handler that takes a <b>PCEVENT_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCEVENT_REQUEST</b> structure, extracts the relevant information from the original event request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
+## Remarks
+This is the structure that the port driver passes to the miniport driver's <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a> structure contains a function pointer to an event handler that takes a <b>PCEVENT_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCEVENT_REQUEST</b> structure, extracts the relevant information from the original event request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
 In WDM audio, the target of an event request can be a pin instance but not a filter instance. The target can also include a node ID.
 
 The <b>MajorTarget</b> and <b>MinorTarget</b> members are <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointers to the main miniport object and an associated stream object, respectively. The event handler can query these objects for their miniport and stream interfaces.
 
 For example, if the target for the event request is a pin instance on a WaveCyclic filter:
-
+<ul>
+<li>
 The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636-f93ac053146d">QueryInterface</a> on the <b>MajorTarget</b> object's <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a> interface.
 
+</li>
+<li>
 The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636-f93ac053146d">QueryInterface</a> on the <b>MinorTarget</b> object's <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a> interface.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -149,25 +158,18 @@ The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636
 | **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
-</dt>
-<dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-<dt>
-<a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
+
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a>
+
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
+<a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
+
  
 
  

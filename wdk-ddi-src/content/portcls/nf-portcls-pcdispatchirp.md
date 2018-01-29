@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 01add66e-a007-4b1d-add6-c5be71dd0d61
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcDispatchIrp
+ms.keywords : audio.pcdispatchirp, portcls/PcDispatchIrp, audpc-routines_c87193c2-a8f8-4ba1-bf47-422fb5ff452d.xml, PcDispatchIrp function [Audio Devices], PcDispatchIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcDispatchI
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcDispatchIrp
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -51,11 +55,11 @@ PORTCLASSAPI NTSTATUS NTAPI PcDispatchIrp(
 
 `pDeviceObject`
 
-
+TBD
 
 `pIrp`
 
-
+TBD
 
 
 ## Return Value
@@ -84,17 +88,12 @@ For a code example, see the SB16 sample audio driver in the Microsoft Windows Dr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nf-portcls-pcinitializeadapterdriver.md">PcInitializeAdapterDriver</a>
-</dt>
-</dl>
+
  
 
  

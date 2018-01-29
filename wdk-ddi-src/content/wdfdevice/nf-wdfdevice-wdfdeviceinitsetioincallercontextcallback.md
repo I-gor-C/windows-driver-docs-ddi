@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f0104e8b-9a2f-4f52-a431-bec7de3be968
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetIoInCallerContextCallback
+ms.keywords : kmdf.wdfdeviceinitsetioincallercontextcallback, WdfDeviceInitSetIoInCallerContextCallback method, PFN_WDFDEVICEINITSETIOINCALLERCONTEXTCALLBACK, DFDeviceObjectGeneralRef_6ef62fc4-094a-4fe7-8ecb-7205566aef77.xml, wdf.wdfdeviceinitsetioincallercontextcallback, WdfDeviceInitSetIoInCallerContextCallback, wdfdevice/WdfDeviceInitSetIoInCallerContextCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceInitSetIoInCallerContextCallback
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -69,9 +73,7 @@ None
 
 If a driver calls <b>WdfDeviceInitSetIoInCallerContextCallback</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
 
-For more information about the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> event callback function, see <a href="wdf.managing_i_o_queues#intercepting_an_i_o_request_before_it_is_queued#intercepting_an_i_o_request_before_it_is_queued">Intercepting an I/O Request before it is Queued</a>.
-
-The following code example registers a driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> event callback function.
+For more information about the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> event callback function, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/managing-i-o-queues">Intercepting an I/O Request before it is Queued</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,11 +89,8 @@ The following code example registers a driver's <a href="..\wdfdevice\nc-wdfdevi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
-</dt>
-</dl>
+
  
 
  

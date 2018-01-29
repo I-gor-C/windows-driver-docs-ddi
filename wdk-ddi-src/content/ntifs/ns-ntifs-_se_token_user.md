@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3B870461-0C5D-46DF-A850-EB796AE5A4CB
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SE_TOKEN_USER, SE_TOKEN_USER, PSE_TOKEN_USER
+ms.keywords : ntifs/SE_TOKEN_USER, SE_TOKEN_USER, PSE_TOKEN_USER, ifsk.se_token_user, PSE_TOKEN_USER structure pointer [Installable File System Drivers], ntifs/PSE_TOKEN_USER, _SE_TOKEN_USER, SE_TOKEN_USER structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SE_TOKEN_USER
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SE_TOKEN_USER, PSE_TOKEN_USER
 ---
 
@@ -54,6 +58,14 @@ typedef struct _SE_TOKEN_USER {
 ## Members
 
 
+`DUMMYUNIONNAME`
+
+
+
+`DUMMYUNIONNAME2`
+
+
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -63,19 +75,14 @@ typedef struct _SE_TOKEN_USER {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556742">SID_AND_ATTRIBUTES</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556742">SID_AND_ATTRIBUTES</a>
+
  
 
  

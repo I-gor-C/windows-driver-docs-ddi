@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4A22CC69-F529-4D0B-BF00-877468E29429
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MONITORLINKINFO, DXGK_MONITORLINKINFO
+ms.keywords : DXGK_MONITORLINKINFO structure [Display Devices], PDXGK_MONITORLINKINFO, display.dxgk_monitorlinkinfo, PDXGK_MONITORLINKINFO structure pointer [Display Devices], _DXGK_MONITORLINKINFO, d3dkmddi/DXGK_MONITORLINKINFO, d3dkmddi/PDXGK_MONITORLINKINFO, DXGK_MONITORLINKINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MONITORLINKINFO
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MONITORLINKINFO
 ---
 
@@ -47,14 +51,14 @@ typedef struct _DXGK_MONITORLINKINFO {
 
 ## Members
 
-        
-            `Capabilities`
 
-            Flags which describe the capabilities for driving the monitor.
-        
-            `UsageHints`
+`Capabilities`
 
-            Hints to the driver on the intended usage of the display device.
+Flags which describe the capabilities for driving the monitor.
+
+`UsageHints`
+
+Hints to the driver on the intended usage of the display device.
 
 
 ## Requirements

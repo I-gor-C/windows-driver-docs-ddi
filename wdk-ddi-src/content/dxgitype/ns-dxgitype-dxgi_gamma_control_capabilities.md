@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a91311e-c8b9-4f28-b72e-9f93d459aac2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_GAMMA_CONTROL_CAPABILITIES, DXGI_GAMMA_CONTROL_CAPABILITIES
+ms.keywords : UMDisplayDriver_Dx10param_Structs_002eb4f0-081a-43df-a307-e979017daf6f.xml, dxgitype/DXGI_GAMMA_CONTROL_CAPABILIITES, DXGI_GAMMA_CONTROL_CAPABILITIES structure [Display Devices], DXGI_GAMMA_CONTROL_CAPABILITIES, DXGI_GAMMA_CONTROL_CAPABILIITES structure [Display Devices], display.dxgi_gamma_control_capabiliites, DXGI_GAMMA_CONTROL_CAPABILIITES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_GAMMA_CONTROL_CAPABILITIES
-req.alt-loc : Dxgitype.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_GAMMA_CONTROL_CAPABILITIES
 ---
 
@@ -50,26 +54,26 @@ typedef struct DXGI_GAMMA_CONTROL_CAPABILIITES {
 
 ## Members
 
-        
-            `ControlPointPositions`
 
-            [out] An array of single-precision float vectors that describe the gamma control point positions.
-        
-            `MaxConvertedValue`
+`ControlPointPositions`
 
-            [out] A single-precision float vector for the maximum converted value for the gamma control.
-        
-            `MinConvertedValue`
+[out] An array of single-precision float vectors that describe the gamma control point positions.
 
-            [out] A single-precision float vector for the minimum converted value for the gamma control.
-        
-            `NumGammaControlPoints`
+`MaxConvertedValue`
 
-            [out] The number of elements in the array that the <b>ControlPointPositions</b> member specifies.
-        
-            `ScaleAndOffsetSupported`
+[out] A single-precision float vector for the maximum converted value for the gamma control.
 
-            [out] A BOOL value that indicates whether the device supports scale and offset. <b>TRUE</b> indicates that the device supports scale and offset; <b>FALSE</b> indicates that the device does not support scale and offset.
+`MinConvertedValue`
+
+[out] A single-precision float vector for the minimum converted value for the gamma control.
+
+`NumGammaControlPoints`
+
+[out] The number of elements in the array that the <b>ControlPointPositions</b> member specifies.
+
+`ScaleAndOffsetSupported`
+
+[out] A BOOL value that indicates whether the device supports scale and offset. <b>TRUE</b> indicates that the device supports scale and offset; <b>FALSE</b> indicates that the device does not support scale and offset.
 
 
 ## Requirements
@@ -80,16 +84,12 @@ typedef struct DXGI_GAMMA_CONTROL_CAPABILIITES {
 | **Minimum UMDF version** |  |
 | **Header** | dxgitype.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_get_gamma_control_caps.md">DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5C50D9B0-53C7-4F1B-A6D1-CE77A3645956
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+ms.keywords : PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, usbsidebandaudio/PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS structure [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS structure pointer [Audio Devices], audio.usbsidebandaudio_stream_status_params, _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
-req.alt-loc : 
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -50,6 +54,18 @@ typedef struct _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS {
 ````
 
 ## Members
+
+
+`EpIndex`
+
+
+
+`Immediate`
+
+
+
+`Status`
+
 
 
 

@@ -7,8 +7,8 @@ old-location : netvista\rilcallmodificationinfo_2.htm
 old-project : netvista
 ms.assetid : 2e17e480-325a-4a7c-84b8-07775ddd52bc
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO
+ms.date : 1/18/2018
+ms.keywords : netvista.rilcallmodificationinfo_2, *LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO, rilapitypes/RILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMODIFICATIONINFO
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO
 req.product : Windows 10 or later.
 ---
 
@@ -55,42 +59,42 @@ typedef struct _RILCALLMODIFICATIONINFO {
 
 ## Members
 
-        
-            `aiIdentifier`
 
-            
-        
-            `cbSize`
+`aiIdentifier`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwID`
 
-            
-        
-            `dwModificationType`
+`cbSize`
 
-            
-        
-            `dwNewCallType`
 
-            
-        
-            `dwOldCallType`
 
-            
-        
-            `dwParams`
+`dwExecutor`
 
-            
-        
-            `raAddress`
 
-            
+
+`dwID`
+
+
+
+`dwModificationType`
+
+
+
+`dwNewCallType`
+
+
+
+`dwOldCallType`
+
+
+
+`dwParams`
+
+
+
+`raAddress`
+
+
 
 
 ## Requirements

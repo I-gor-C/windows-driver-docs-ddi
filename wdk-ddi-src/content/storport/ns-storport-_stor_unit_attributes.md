@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9677C044-354B-4575-B2EC-187D1B4E8C61
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
+ms.keywords : STOR_UNIT_ATTRIBUTES structure [Storage Devices], storport/PSTOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, storage.stor_unit_attributes, storport/STOR_UNIT_ATTRIBUTES, _STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES, PSTOR_UNIT_ATTRIBUTES structure pointer [Storage Devices], PSTOR_UNIT_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_UNIT_ATTRIBUTES
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES"
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _STOR_UNIT_ATTRIBUTES {
 
 ## Members
 
-        
-            `AsyncNotificationSupported`
 
-            Set to 1 if the device supports asynchronous notifications. Otherwise, set to 0.
-        
-            `D3ColdNotSupported`
+`AsyncNotificationSupported`
 
-            Set to 1 if the D3 Cold power state is NOT supported. Otherwise, set to 0.
-        
-            `DeviceAttentionSupported`
+Set to 1 if the device supports asynchronous notifications. Otherwise, set to 0.
 
-            Set to 1 if device attention is supported for the unit. Otherwise, set to 0.
-        
-            `Reserved`
+`D3ColdNotSupported`
 
-            Reserved bits. Must be set to 0.
+Set to 1 if the D3 Cold power state is NOT supported. Otherwise, set to 0.
 
-    ## Remarks
-        The unit attributes are registered with Storport  using this structure as a parameter to the <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a> routine.
+`DeviceAttentionSupported`
+
+Set to 1 if device attention is supported for the unit. Otherwise, set to 0.
+
+`Reserved`
+
+Reserved bits. Must be set to 0.
+
+## Remarks
+The unit attributes are registered with Storport  using this structure as a parameter to the <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a> routine.
 
 If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a> routine.
 
@@ -80,16 +84,12 @@ If the miniport driver supports asynchronous notifications, the <b>AsyncNotifica
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a>
-</dt>
-<dt>
+
 <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
-</dt>
-</dl>
+
  
 
  

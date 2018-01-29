@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 34447879-1a2e-45de-b754-121a5956330a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoQueueRetrieveFoundRequest
+ms.keywords : kmdf.wdfioqueueretrievefoundrequest, DFQueueObjectRef_17174143-5657-4500-bd07-bf9487e8048e.xml, WdfIoQueueRetrieveFoundRequest, PFN_WDFIOQUEUERETRIEVEFOUNDREQUEST, WdfIoQueueRetrieveFoundRequest method, wdf.wdfioqueueretrievefoundrequest, wdfio/WdfIoQueueRetrieveFoundRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfIoQueueRetrieveFoundRequest
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueuefindrequestfailed, wdfioqueueretrievefoundrequest
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -69,17 +73,45 @@ A pointer to a location that receives a handle to a framework request object. Th
 ## Return Value
 
 <b>WdfIoQueueRetrieveFoundRequest</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The driver supplied an invalid handle.
+</dl>
+</td>
+<td width="60%">
+The driver supplied an invalid handle.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>The request that is identified by the <i>FoundRequest</i> parameter cannot be found in the I/O queue.
+</dl>
+</td>
+<td width="60%">
+The request that is identified by the <i>FoundRequest</i> parameter cannot be found in the I/O queue.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MORE_ENTRIES</b></dt>
-</dl>The framework reached the end of the I/O queue without finding a request that matches the search criteria.
+</dl>
+</td>
+<td width="60%">
+The framework reached the end of the I/O queue without finding a request that matches the search criteria.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -95,9 +127,7 @@ If your driver was built with KMDF version 1.11 or later, the driver can call <b
 
 If a call to <b>WdfIoQueueRetrieveFoundRequest</b> returns STATUS_NOT_FOUND, a request that was previously in the queue has been removed. The request might have been canceled. 
 
-For more information about the <b>WdfIoQueueRetrieveFoundRequest</b> method, see <a href="https://msdn.microsoft.com/83cc87c8-7e2d-4f79-a580-0519d327e7ba">Managing I/O Queues</a>.
-
-For a code example that uses <b>WdfIoQueueRetrieveFoundRequest</b>, see <a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>.
+For more information about the <b>WdfIoQueueRetrieveFoundRequest</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/managing-i-o-queues">Managing I/O Queues</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,17 +143,12 @@ For a code example that uses <b>WdfIoQueueRetrieveFoundRequest</b>, see <a href=
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>
-</dt>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
-</dt>
-<dt>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>
+
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
-</dt>
-</dl>
+
  
 
  

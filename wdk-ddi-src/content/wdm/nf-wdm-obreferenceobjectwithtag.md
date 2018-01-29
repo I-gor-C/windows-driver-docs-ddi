@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d2b95301-c018-4a2f-801d-a78b00c8d9ca
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ObReferenceObjectWithTag
+ms.keywords : kernel.obreferenceobjectwithtag, ObReferenceObjectWithTag, wdm/ObReferenceObjectWithTag, ObReferenceObjectWithTag routine [Kernel-Mode Driver Architecture], k107_a35c78fa-edf5-4a93-908b-baf16718b095.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObReferenceObjectWithTag
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -91,20 +95,14 @@ To view an object reference trace in the <a href="http://go.microsoft.com/fwlink
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandlewithtag.md">ObReferenceObjectByHandleWithTag</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-obreferenceobjectbypointerwithtag.md">ObReferenceObjectByPointerWithTag</a>
-</dt>
-</dl>
+
  
 
  

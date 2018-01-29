@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 28d2efa5-a7bf-4b85-a0f3-a4bad705a874
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_VALIDATETEXTURESTAGESTATE, D3DDDIARG_VALIDATETEXTURESTAGESTATE
+ms.keywords : display.d3dddiarg_validatetexturestagestate, D3DDDIARG_VALIDATETEXTURESTAGESTATE, D3DDDIARG_VALIDATETEXTURESTAGESTATE structure [Display Devices], UMDisplayDriver_param_Structs_dde6cce2-f21e-4a16-8238-6956d9a465f5.xml, _D3DDDIARG_VALIDATETEXTURESTAGESTATE, d3dumddi/D3DDDIARG_VALIDATETEXTURESTAGESTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_VALIDATETEXTURESTAGESTATE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_VALIDATETEXTURESTAGESTATE
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DDDIARG_VALIDATETEXTURESTAGESTATE {
 
 ## Members
 
-        
-            `NumPasses`
 
-            [in] The number of passes in which the hardware can perform the blending operations that are specified in the current state.
+`NumPasses`
+
+[in] The number of passes in which the hardware can perform the blending operations that are specified in the current state.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _D3DDDIARG_VALIDATETEXTURESTAGESTATE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_validatedevice.md">ValidateDevice</a>
-</dt>
-</dl>
+
  
 
  

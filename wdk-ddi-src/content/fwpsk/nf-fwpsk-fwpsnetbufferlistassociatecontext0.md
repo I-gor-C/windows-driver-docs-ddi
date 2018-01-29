@@ -7,8 +7,8 @@ old-location : netvista\fwpsnetbufferlistassociatecontext0.htm
 old-project : netvista
 ms.assetid : 31135396-303b-4b94-8616-a4b7be207fa1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FwpsNetBufferListAssociateContext0
+ms.date : 1/18/2018
+ms.keywords : netvista.fwpsnetbufferlistassociatecontext0, FwpsNetBufferListAssociateContext0, fwpsk/FwpsNetBufferListAssociateContext0, wfp_ref_2_funct_3_fwps_J-Q_f30e27fe-3146-4393-b967-fdb7bbfd6370.xml, FwpsNetBufferListAssociateContext0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FwpsNetBufferListAssociateContext0
-req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fwpkclnt.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
@@ -39,6 +43,7 @@ req.typenames : FWPS_VSWITCH_EVENT_TYPE
 The 
   <b>FwpsNetBufferListAssociateContext0</b> function associates the callout driver's context with a network buffer
   list and configures notification for network buffer list events.
+<div class="alert"><b>Note</b>  <b>FwpsNetBufferListAssociateContext0</b> is the specific version of <b>FwpsNetBufferListAssociateContext</b> used in Windows 7 and later. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 8, <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a> is available.</div><div> </div>
 
 ## Syntax
 
@@ -70,18 +75,18 @@ The identifier of the layer in which the context is being associated. When calli
 
 Arbitrary context information set by the callout driver. The filter engine will pass this context
      to the callout driver's 
-     <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">
-     FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>.
+     <mshelp:link keywords="netvista.fwps_net_buffer_list_notify_fn0" tabindex="0"><i>
+     FWPS_NET_BUFFER_LIST_NOTIFY_FN0</i></mshelp:link>.
 
 `contextTag`
 
 A locally unique identifier obtained by calling the 
-     <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
-     FwpsNetBufferListGetTagForContext0</a> function.
+     <mshelp:link keywords="netvista.fwpsnetbufferlistgettagforcontext0" tabindex="0"><b>
+     FwpsNetBufferListGetTagForContext0</b></mshelp:link> function.
 
 `providerGuid`
 
-
+TBD
 
 `deviceObject`
 
@@ -90,8 +95,8 @@ A pointer to the callout driver's device object.
 `notifyFn`
 
 A pointer to the callout driver's 
-     <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">
-     FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a> function. The filter engine will send status notifications to this
+     <mshelp:link keywords="netvista.fwps_net_buffer_list_notify_fn0" tabindex="0"><i>
+     FWPS_NET_BUFFER_LIST_NOTIFY_FN0</i></mshelp:link> function. The filter engine will send status notifications to this
      function.
 
 `flags`
@@ -103,12 +108,34 @@ This parameter is reserved for future use and is set to zero.
 
 The 
      <b>FwpsNetBufferListAssociateContext0</b> function returns one of the following NTSTATUS codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The association was successful.
+</dl>
+</td>
+<td width="60%">
+The association was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Other status codes</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -133,31 +160,23 @@ Before calling this function, the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
-   FwpsNetBufferListGetTagForContext0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
-   FwpsNetBufferListRemoveContext0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistretrievecontext0.md">
-   FwpsNetBufferListRetrieveContext0</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
-</dt>
-</dl>
- 
+
+<mshelp:link keywords="netvista.fwpsnetbufferlistremovecontext0" tabindex="0"><b>
+   FwpsNetBufferListRemoveContext0</b></mshelp:link>
+
+<mshelp:link keywords="netvista.fwpsnetbufferlistretrievecontext0" tabindex="0"><b>
+   FwpsNetBufferListRetrieveContext0</b></mshelp:link>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
+
+<mshelp:link keywords="netvista.fwpsnetbufferlistgettagforcontext0" tabindex="0"><b>
+   FwpsNetBufferListGetTagForContext0</b></mshelp:link>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext0 function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

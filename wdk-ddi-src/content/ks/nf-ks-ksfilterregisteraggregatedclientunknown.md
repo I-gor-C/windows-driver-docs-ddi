@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : aac70408-83b8-4bfd-8ce9-9b74483f6282
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterRegisterAggregatedClientUnknown
+ms.keywords : stream.ksfilterregisteraggregatedclientunknown, KsFilterRegisterAggregatedClientUnknown function [Streaming Media Devices], ks/KsFilterRegisterAggregatedClientUnknown, avfunc_c485334a-83bd-474e-abfc-ced331ca55db.xml, KsFilterRegisterAggregatedClientUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterRegisterAggregatedClientUnknown
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -80,11 +84,8 @@ Note that this inline function only performs a typecast and then calls <a href="
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
-</dt>
-</dl>
+
  
 
  

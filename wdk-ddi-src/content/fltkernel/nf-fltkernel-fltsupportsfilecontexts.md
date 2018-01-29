@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 968c2c6d-3544-45e7-b852-740fa4930349
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSupportsFileContexts
+ms.keywords : ifsk.fltsupportsfilecontexts, FltSupportsFileContexts, fltkernel/FltSupportsFileContexts, FltApiRef_p_to_z_cad3f45c-7ae0-44dc-840d-a8ec3da65ea6.xml, FltSupportsFileContexts routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Windows Vista and later
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltSupportsFileContexts
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -87,29 +91,20 @@ To decrement the reference count on a context, call <a href="..\fltkernel\nf-flt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletefilecontext.md">FltDeleteFileContext</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltgetfilecontext.md">FltGetFileContext</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltsetfilecontext.md">FltSetFileContext</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltsupportsfilecontextsex.md">FltSupportsFileContextsEx</a>
-</dt>
-</dl>
+
  
 
  

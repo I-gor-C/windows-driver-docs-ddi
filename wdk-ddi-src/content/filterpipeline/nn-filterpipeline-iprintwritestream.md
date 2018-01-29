@@ -7,8 +7,8 @@ old-location : print\iprintwritestream.htm
 old-project : print
 ms.assetid : b76a58fb-fbd4-4afe-83dc-582242b53e05
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.date : 1/18/2018
+ms.keywords : print.iprintwritestream, IPrintWriteStream interface [Print Devices], IPrintWriteStream interface [Print Devices], described, IPrintWriteStream, filterpipeline/IPrintWriteStream, filterpipeline_edf6ac16-09e1-433a-8f41-50ba308dc7a7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPrintWriteStream
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

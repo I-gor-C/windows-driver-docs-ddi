@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cea11e84-bff5-4189-9ed4-830049a44a4b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_MONITOR_ORIENTATION_AWARENESS, D3DKMDT_MONITOR_ORIENTATION_AWARENESS
+ms.keywords : D3DKMDT_MOA_UNINITIALIZED, D3DKMDT_MOA_INTERRUPTIBLE, _D3DKMDT_MONITOR_ORIENTATION_AWARENESS, DmEnums_d2570bc0-98c7-4402-b167-a4167715cc90.xml, d3dkmdt/D3DKMDT_MOA_POLLED, D3DKMDT_MOA_POLLED, D3DKMDT_MOA_NONE, d3dkmdt/D3DKMDT_MOA_INTERRUPTIBLE, d3dkmdt/D3DKMDT_MOA_UNINITIALIZED, D3DKMDT_MONITOR_ORIENTATION_AWARENESS, d3dkmdt/D3DKMDT_MONITOR_ORIENTATION_AWARENESS, d3dkmdt/D3DKMDT_MOA_NONE, D3DKMDT_MONITOR_ORIENTATION_AWARENESS enumeration [Display Devices], display.d3dkmdt_monitor_orientation_awareness
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_MONITOR_ORIENTATION_AWARENESS
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_MONITOR_ORIENTATION_AWARENESS
 ---
 
@@ -86,11 +90,8 @@ The <b>ChildCapabilities</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 97a8822f-ed0c-43ae-8b4e-08642558773d
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_GetExtendedAttributes
+ms.keywords : hidpi/HidP_GetExtendedAttributes, hidfunc_2870ef44-8659-4c02-9fc6-659581684253.xml, hid.hidp_getextendedattributes, HidP_GetExtendedAttributes, HidP_GetExtendedAttributes routine [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HidP_GetExtendedAttributes
-req.alt-loc : Hidparse.lib,Hidparse.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hidparse.lib
 req.dll : 
 req.irql : <= DISPATCH_ LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HIDP_REPORT_TYPE
 ---
 
@@ -76,15 +80,45 @@ Specifies the size, in bytes, of the <i>Attributes</i> buffer (which must be gre
 ## Return Value
 
 <b>HidP_GetExtendedAttributes</b> returns one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_STATUS_SUCCESS</b></dt>
-</dl>The routine successfully returned all the control's extended attribute information.
+</dl>
+</td>
+<td width="60%">
+The routine successfully returned all the control's extended attribute information.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The <i>Attribute</i> buffer was not large enough to hold all the extended attribute information.
+</dl>
+</td>
+<td width="60%">
+The <i>Attribute</i> buffer was not large enough to hold all the extended attribute information.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HIDP_STATUS_DATA_INDEX_NOT_FOUND</b></dt>
-</dl>The specified data index is not valid.
+</dl>
+</td>
+<td width="60%">
+The specified data index is not valid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -108,17 +142,12 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-</dt>
-<dt>
-<a href="..\hidpi\ns-hidpi-_hidp_extended_attributes.md">HIDP_EXTENDED_ATTRIBUTES</a>
-</dt>
-<dt>
 <a href="..\hidpi\ns-hidpi-_hidp_unknown_token.md">HIDP_UNKNOWN_TOKEN</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+<a href="..\hidpi\ns-hidpi-_hidp_extended_attributes.md">HIDP_EXTENDED_ATTRIBUTES</a>
+
  
 
  

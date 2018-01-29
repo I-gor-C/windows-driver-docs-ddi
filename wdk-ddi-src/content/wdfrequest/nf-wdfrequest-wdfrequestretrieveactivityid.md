@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6E38514E-75BD-4F98-AD12-FA4E31654C3E
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestRetrieveActivityId
+ms.keywords : PFN_WDFREQUESTRETRIEVEACTIVITYID, wdfrequest/WdfRequestRetrieveActivityId, wdf.wdfrequestretrieveactivityid, WdfRequestRetrieveActivityId, WdfRequestRetrieveActivityId method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestRetrieveActivityId
-req.alt-loc : WUDFx02000.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : WUDFx02000.lib
 req.dll : WUDFx02000.dll; TBD
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,11 +68,23 @@ A pointer to a location to store the retrieved GUID.
 ## Return Value
 
 If the operation succeeds, <b>WdfRequestRetrieveActivityId</b> returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>No activity ID is associated with the request.
+</dl>
+</td>
+<td width="60%">
+No activity ID is associated with the request.
 
- 
+</td>
+</tr>
+</table> 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -96,11 +112,8 @@ For more information about activity identifiers, see <a href="https://msdn.micro
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetactivityid.md">WdfRequestSetActivityId</a>
-</dt>
-</dl>
+
  
 
  

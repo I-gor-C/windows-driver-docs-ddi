@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ee9124db-9d92-42e1-84fa-6d3eefeaeac5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeThreadedDpc
+ms.keywords : wdm/KeInitializeThreadedDpc, KeInitializeThreadedDpc routine [Kernel-Mode Driver Architecture], kernel.keinitializethreadeddpc, KeInitializeThreadedDpc, k105_b5df057f-6d75-4a06-ac5f-d99340bdbb21.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInitializeThreadedDpc
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -86,17 +90,12 @@ For more information about threaded DPCs, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542976">CustomThreadedDpc</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-keremovequeuedpc.md">KeRemoveQueueDpc</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542976">CustomThreadedDpc</a>
+
  
 
  

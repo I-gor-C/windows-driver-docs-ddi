@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7128e49d-71e9-4014-9f08-591cfaeba363
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_METADATA,
+ms.keywords : iddcx/IDDCX_METADATA, IDDCX_METADATA structure, IDDCX_METADATA structure structure [Display Devices], IDDCX_METADATA structure [Display Devices], IDDCX_METADATA structure pointer [Display Devices], display.iddcx_metadata, IDDCX_METADATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_METADATA
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -52,47 +56,41 @@ typedef struct IDDCX_METADATA {
 
 ## Members
 
-        
-            `DirtyRectCount`
 
-            Number of dirty rects for this frame. Call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetdirtyrects.md">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
+`DirtyRectCount`
+
+Number of dirty rects for this frame. Call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetdirtyrects.md">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
                  
-
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
-    PresentationFrameNumber is the same as last frame</div>
-<div> </div>
-        
-            `HwProtectedSurface`
+    PresentationFrameNumber is the same as last frame</div><div> </div>
 
-            Indicates if the provided surface is hardware protected or not
-        
-            `MoveRegionCount`
+`HwProtectedSurface`
 
-            Number of move regions in this frame, call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetmoveregions.md">IddCxSwapChainGetMoveRegions</a> to get the move regions
+Indicates if the provided surface is hardware protected or not
+
+`MoveRegionCount`
+
+Number of move regions in this frame, call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetmoveregions.md">IddCxSwapChainGetMoveRegions</a> to get the move regions
                  
-
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
-    PresentationFrameNumber is the same as last frame</div>
-<div> </div>
-        
-            `PresentationFrameNumber`
+    PresentationFrameNumber is the same as last frame</div><div> </div>
 
-            Presentation frame number of this surface. If the frame number is the same as the previous frame, then it indicates that there has not been any image updates from the previous frame. This is an opportunity for the driver to re-encode the desktop image again to increase the visual quality. Once there are no more updates, the OS presents the same frame as many times indicated by the <a href="..\iddcx\ns-iddcx-iddcx_adapter_caps.md">IDDCX_ADAPTER_CAPS</a> value <b>StaticDesktopReencodeFrameCount</b> , then stops presenting until the next update
-        
-            `PresentDisplayQPCTime`
+`PresentationFrameNumber`
 
-            System QPC time of when this surface should be displayed on the indirect display monitor
-        
-            `pSurface`
+Presentation frame number of this surface. If the frame number is the same as the previous frame, then it indicates that there has not been any image updates from the previous frame. This is an opportunity for the driver to re-encode the desktop image again to increase the visual quality. Once there are no more updates, the OS presents the same frame as many times indicated by the <a href="..\iddcx\ns-iddcx-iddcx_adapter_caps.md">IDDCX_ADAPTER_CAPS</a> value <b>StaticDesktopReencodeFrameCount</b> , then stops presenting until the next update
 
-            DX surface that contains the image to encode and transmit. The driver can use this DX surface anytime until <a href="..\iddcx\nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md">IddCxSwapChainReleaseAndAcquire</a> is called again
+`PresentDisplayQPCTime`
 
-<div class="alert"><b>Note</b>  This surface is always a A8R8G8B8 formated surface</div>
-<div> </div>
-        
-            `Size`
+System QPC time of when this surface should be displayed on the indirect display monitor
 
-            Total size of the structure
+`pSurface`
+
+DX surface that contains the image to encode and transmit. The driver can use this DX surface anytime until <a href="..\iddcx\nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md">IddCxSwapChainReleaseAndAcquire</a> is called again
+<div class="alert"><b>Note</b>  This surface is always a A8R8G8B8 formated surface</div><div> </div>
+
+`Size`
+
+Total size of the structure
 
 
 ## Requirements

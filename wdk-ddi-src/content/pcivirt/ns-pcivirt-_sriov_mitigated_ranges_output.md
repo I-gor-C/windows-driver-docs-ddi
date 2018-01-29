@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : f33f602e-0bce-4ac2-8bd8-8640b2376278
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_MITIGATED_RANGES_OUTPUT, SRIOV_MITIGATED_RANGES_OUTPUT, *PSRIOV_MITIGATED_RANGES_OUTPUT
+ms.keywords : _SRIOV_MITIGATED_RANGES_OUTPUT, SRIOV_MITIGATED_RANGES_OUTPUT, *PSRIOV_MITIGATED_RANGES_OUTPUT, SRIOV_MITIGATED_RANGES_OUTPUT structure [Buses], pcivirt/SRIOV_MITIGATED_RANGES_OUTPUT, PCI.sriov_mitigated_ranges_output
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_MITIGATED_RANGES_OUTPUT
-req.alt-loc : pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SRIOV_MITIGATED_RANGES_OUTPUT, *PSRIOV_MITIGATED_RANGES_OUTPUT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _SRIOV_MITIGATED_RANGES_OUTPUT {
 
 ## Members
 
-        
-            `BasePageNumber`
 
-            The base address of the allocated region of pages.
-        
-            `InterceptReads`
+`BasePageNumber`
 
-            A boolean that indicates the reads intercept bit.
-        
-            `InterceptWrites`
+The base address of the allocated region of pages.
 
-            A boolean that indicates the write intercept bit.
-        
-            `PageCount`
+`InterceptReads`
 
-            Total number of pages.
+A boolean that indicates the reads intercept bit.
+
+`InterceptWrites`
+
+A boolean that indicates the write intercept bit.
+
+`PageCount`
+
+Total number of pages.
 
 
 ## Requirements

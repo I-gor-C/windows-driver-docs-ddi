@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 50a5cbe1-acae-461f-892b-c1a3b5b218b3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : INIT_AVCSTRM_HEADER
+ms.keywords : stream.ioctl_avcstrm_class, IOCTL_AVCSTRM_CLASS control code [Streaming Media Devices], IOCTL_AVCSTRM_CLASS, avcstrm/IOCTL_AVCSTRM_CLASS, avcsref_0e06e31a-7520-4162-8441-210cc367f65f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_AVCSTRM_CLASS
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,16 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : AVCSTRM_FUNCTION
 ---
 
 # IOCTL_AVCSTRM_CLASS IOCTL
-An AV/C subunit driver uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a> IRP, with the <b>IoControlCode</b> member set to IOCTL_AVCSTRM_CLASS, to communicate with <i>avcstrm.sys</i>. The driver has access to all operations provided by the AV/C Streaming filter driver (<i>avcstrm.sys</i>) through this request.
-
-For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546847">Handling IRPs</a>.
-
-
-
 An AV/C subunit driver uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a> IRP, with the <b>IoControlCode</b> member set to IOCTL_AVCSTRM_CLASS, to communicate with <i>avcstrm.sys</i>. The driver has access to all operations provided by the AV/C Streaming filter driver (<i>avcstrm.sys</i>) through this request.
 
 For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546847">Handling IRPs</a>.
@@ -67,11 +65,10 @@ Length of an <a href="..\avcstrm\ns-avcstrm-_avc_stream_request_block.md">AVC_ST
 <text></text>
 
 ### Status Block
-I/O Status block
 The information the AV/C Streaming driver returns in the I/O Status Block is documented with each request.
 
-    ## Remarks
-        Must be called at IRQL = PASSIVE_LEVEL.
+## Remarks
+Must be called at IRQL = PASSIVE_LEVEL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,37 +77,26 @@ The information the AV/C Streaming driver returns in the I/O Status Block is doc
 | **Header** | avcstrm.h (include Avcstrm.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554130">AVCSTRM_READ</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554135">AVCSTRM_WRITE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554107">AVCSTRM_ABORT_STREAMING</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554110">AVCSTRM_CLOSE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554124">AVCSTRM_GET_STATE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554134">AVCSTRM_SET_STATE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554130">AVCSTRM_READ</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554121">AVCSTRM_GET_PROPERTY</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554107">AVCSTRM_ABORT_STREAMING</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554110">AVCSTRM_CLOSE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554124">AVCSTRM_GET_STATE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554132">AVCSTRM_SET_PROPERTY</a>
-</dt>
-</dl>
+
  
 
  

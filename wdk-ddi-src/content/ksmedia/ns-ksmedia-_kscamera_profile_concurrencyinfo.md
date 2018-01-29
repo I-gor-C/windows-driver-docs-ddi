@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4E0A9CE6-2FA0-46A5-B478-C088E5FF1BAD
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO
+ms.keywords : ksmedia/KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO, ksmedia/PKSCAMERA_PROFILE_CONCURRENCYINFO, _KSCAMERA_PROFILE_CONCURRENCYINFO, stream.kscamera_profile_concurrencyinfo, PKSCAMERA_PROFILE_CONCURRENCYINFO structure pointer [Streaming Media Devices], KSCAMERA_PROFILE_CONCURRENCYINFO structure [Streaming Media Devices], KSCAMERA_PROFILE_CONCURRENCYINFO, PKSCAMERA_PROFILE_CONCURRENCYINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_PROFILE_CONCURRENCYINFO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO
 ---
 
 # _KSCAMERA_PROFILE_CONCURRENCYINFO structure
@@ -49,29 +53,29 @@ typedef struct _KSCAMERA_PROFILE_CONCURRENCYINFO {
 
 ## Members
 
-        
-            `ProfileCount`
 
-            Number of profile IDs contained in the <b>Profiles</b> array.  Must be greater than 0.
-        
-            `Profiles`
+`ProfileCount`
 
-            This is an array of <b>KSCAMERA_PROFILE_INFO</b> structures that can be simultaneously used on the other camera device specified by the <b>ReferenceGuid</b>. This field must not be <b>NULL</b>.
-        
-            `ReferenceGuid`
+Number of profile IDs contained in the <b>Profiles</b> array.  Must be greater than 0.
 
-            Must be set to the <b>ReferenceGuid</b> of the <b>KSFILTER_DESCRIPTOR</b> which corresponds to the other device with which this profile is concurrent.
-        
-            `Reserved`
+`Profiles`
 
-            Unused.  Must be 0.
+This is an array of <b>KSCAMERA_PROFILE_INFO</b> structures that can be simultaneously used on the other camera device specified by the <b>ReferenceGuid</b>. This field must not be <b>NULL</b>.
 
-    ## Remarks
-        Currently, an application has no knowledge as to whether it can attempt to stream from more than one camera until the attempt succeeds or fails.  In the case of web blogging scenario, this means the application will have to attempt to activate both streams before it paints the UI with a picture in picture video element.
+`ReferenceGuid`
+
+Must be set to the <b>ReferenceGuid</b> of the <b>KSFILTER_DESCRIPTOR</b> which corresponds to the other device with which this profile is concurrent.
+
+`Reserved`
+
+Unused.  Must be 0.
+
+## Remarks
+Currently, an application has no knowledge as to whether it can attempt to stream from more than one camera until the attempt succeeds or fails.  In the case of web blogging scenario, this means the application will have to attempt to activate both streams before it paints the UI with a picture in picture video element.
 
 For multiple applications, concurrency will not be sufficient to guarantee concurrent operation.  The concurrency information will not attempt to solve this scenario.  Instead, the existing camera yanking feature will be leveraged.
 
-If both <b>Camera.CountOfConcurrency</b> and the <b>Camera.Concurrency</b> fields are 0 and <b>NULL</b> respectively, it indicates to the OS that the profile defined by the KSCAMERA_PROFILE_INFO is not a concurrent profile.</p>
+If both <b>Camera.CountOfConcurrency</b> and the <b>Camera.Concurrency</b> fields are 0 and <b>NULL</b> respectively, it indicates to the OS that the profile defined by the KSCAMERA_PROFILE_INFO is not a concurrent profile.
 
 ## Requirements
 | &nbsp; | &nbsp; |

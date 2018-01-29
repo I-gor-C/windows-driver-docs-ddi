@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 17145801-5EE4-4022-997A-03B14C794D2F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsAllocatorEx, IKsAllocatorEx::KsSetProperties, KsSetProperties
+ms.keywords : KsSetProperties, KsSetProperties method [Streaming Media Devices], KsSetProperties method [Streaming Media Devices], IKsAllocatorEx interface, IKsAllocatorEx interface [Streaming Media Devices], KsSetProperties method, IKsAllocatorEx, ksproxy/IKsAllocatorEx::KsSetProperties, stream.iksallocatorex_kssetproperties, IKsAllocatorEx::KsSetProperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsAllocatorEx.KsSetProperties
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -56,10 +60,6 @@ This function has no parameters.
 
 If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,11 +75,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-iksallocatorex.md">IKsAllocatorEx</a>
-</dt>
-</dl>
+
  
 
  

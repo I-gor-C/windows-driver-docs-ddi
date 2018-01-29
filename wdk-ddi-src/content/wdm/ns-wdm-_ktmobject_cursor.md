@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0cfcd019-0c5b-4635-859f-741a6e4aa91d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KTMOBJECT_CURSOR, KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
+ms.keywords : PKTMOBJECT_CURSOR structure pointer [Kernel-Mode Driver Architecture], KTMOBJECT_CURSOR, wdm/KTMOBJECT_CURSOR, PKTMOBJECT_CURSOR, ktm_ref_dab40de2-cd5f-4f13-93e8-5baa3b9cc37f.xml, wdm/PKTMOBJECT_CURSOR, _KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR, kernel.ktmobject_cursor, KTMOBJECT_CURSOR structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KTMOBJECT_CURSOR
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKTMOBJECT_CURSOR, KTMOBJECT_CURSOR"
 req.product : Windows 10 or later.
 ---
 
@@ -49,21 +53,21 @@ typedef struct _KTMOBJECT_CURSOR {
 
 ## Members
 
-        
-            `LastQuery`
 
-            After <b>ZwEnumerateTransactionObject</b> returns, this member contains the GUID of the last object that <b>ZwEnumerateTransactionObject</b> enumerated. Before it calls <b>ZwEnumerateTransactionObject</b> the first time, the caller must set this value to zero.
-        
-            `ObjectIdCount`
+`LastQuery`
 
-            After <b>ZwEnumerateTransactionObject</b> returns, this member contains the number of GUIDs that the <b>ObjectIds</b> array contains.
-        
-            `ObjectIds`
+After <b>ZwEnumerateTransactionObject</b> returns, this member contains the GUID of the last object that <b>ZwEnumerateTransactionObject</b> enumerated. Before it calls <b>ZwEnumerateTransactionObject</b> the first time, the caller must set this value to zero.
 
-            A caller-allocated array of GUID-typed elements. After <b>ZwEnumerateTransactionObject</b> returns, this array contains GUIDs that identify enumerated objects.
+`ObjectIdCount`
 
-    ## Remarks
-        The <b>KTMOBJECT_CURSOR</b> structure is used at the beginning of buffers that callers pass to the <b>ZwEnumerateTransactionObject</b> routine.
+After <b>ZwEnumerateTransactionObject</b> returns, this member contains the number of GUIDs that the <b>ObjectIds</b> array contains.
+
+`ObjectIds`
+
+A caller-allocated array of GUID-typed elements. After <b>ZwEnumerateTransactionObject</b> returns, this array contains GUIDs that identify enumerated objects.
+
+## Remarks
+The <b>KTMOBJECT_CURSOR</b> structure is used at the beginning of buffers that callers pass to the <b>ZwEnumerateTransactionObject</b> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,13 +77,10 @@ typedef struct _KTMOBJECT_CURSOR {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a>
-</dt>
-</dl>
+
  
 
  

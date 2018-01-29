@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2930b049-7572-4ee5-bef1-fd4485e5f644
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey, IRegistryKey::DeleteKey, DeleteKey
+ms.keywords : portcls/IRegistryKey::DeleteKey, DeleteKey, audio.iregistrykey_deletekey, DeleteKey method [Audio Devices], IRegistryKey interface [Audio Devices], DeleteKey method, DeleteKey method [Audio Devices], IRegistryKey interface, audmp-routines_b5556b44-0bf4-47d2-8bbd-65d12c393341.xml, IRegistryKey, IRegistryKey::DeleteKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRegistryKey.DeleteKey
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -72,29 +76,20 @@ A caller deletes an <b>IRegistryKey</b> object's registry key by calling the <co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
-</dt>
-<dt>
-<a href="..\portcls\nf-portcls-pcnewregistrykey.md">PcNewRegistryKey</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536945">IPort::NewRegistryKey</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536970">IRegistryKey::NewSubKey</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536945">IPort::NewRegistryKey</a>
+
+<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
+
+<a href="..\portcls\nf-portcls-pcnewregistrykey.md">PcNewRegistryKey</a>
+
  
 
  

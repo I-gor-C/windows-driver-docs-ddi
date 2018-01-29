@@ -2,13 +2,13 @@
 UID : NI:ntddscsi.IOCTL_ATA_PASS_THROUGH_DIRECT
 title : IOCTL_ATA_PASS_THROUGH_DIRECT
 author : windows-driver-content
-description : Allows an application to send almost any ATA command to a target device, with the following restrictions If a class driver for the target type of device exists, the application must send the request to the class driver.
+description : Allows an application to send almost any ATA command to a target device, with the following restrictions: If a class driver for the target type of device exists, the application must send the request to the class driver.
 old-location : storage\ioctl_ata_pass_through_direct.htm
 old-project : storage
 ms.assetid : 705918c7-c4ea-4495-b87f-2904f7d45ac0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+ms.keywords : storage.ioctl_ata_pass_through_direct, IOCTL_ATA_PASS_THROUGH_DIRECT control code [Storage Devices], IOCTL_ATA_PASS_THROUGH_DIRECT, ntddscsi/IOCTL_ATA_PASS_THROUGH_DIRECT, k307_8f1da276-e1bf-405e-8e01-a633b8671d5f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Server 2003.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_ATA_PASS_THROUGH_DIRECT
-req.alt-loc : Ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_ATA_PASS_THROUGH_DIRECT IOCTL
@@ -47,16 +51,6 @@ The application <i>must</i> use this request rather than <a href="..\ntddscsi\ni
 
 </li>
 </ul>
-If the ATA command requests a data transfer operation, the caller must set up a cache-aligned buffer from which, or into which, the driver can transfer data directly. The IOCTL_ATA_PASS_THROUGH_DIRECT request is typically used for transferring large amounts of data (more than 16 KB).
-
-
-
-Allows an application to send almost any ATA command to a target device, with the following restrictions: 
-
-If a class driver for the target type of device exists, the application must send the request to the class driver. Thus, an application can send this request directly to the system port driver for a target logical unit only if there is no class driver for the device. 
-
-The application <i>must</i> use this request rather than <a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through.md">IOCTL_ATA_PASS_THROUGH</a> if the embedded ATA command might require the underlying miniport driver to access memory directly. 
-
 If the ATA command requests a data transfer operation, the caller must set up a cache-aligned buffer from which, or into which, the driver can transfer data directly. The IOCTL_ATA_PASS_THROUGH_DIRECT request is typically used for transferring large amounts of data (more than 16 KB).
 
 ### Major Code
@@ -89,7 +83,6 @@ The port driver updates the <b>DataTransferLength</b> member of the <a href="..\
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to the number of bytes returned in the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The <b>Status</b> member is set to STATUS_SUCCESS or possibly to STATUS_BUFFER_TOO_SMALL or STATUS_INVALID_PARAMETER if the input <b>Length</b> value in <a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_direct.md">ATA_PASS_THROUGH_DIRECT</a> is improperly set.
 
 
@@ -100,16 +93,12 @@ The <b>Information</b> member is set to the number of bytes returned in the outp
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_direct.md">ATA_PASS_THROUGH_DIRECT</a>
-</dt>
-<dt>
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through.md">IOCTL_ATA_PASS_THROUGH</a>
-</dt>
-</dl>
+
+<a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_direct.md">ATA_PASS_THROUGH_DIRECT</a>
+
  
 
  

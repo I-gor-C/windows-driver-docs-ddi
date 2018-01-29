@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : DF334754-8027-418D-B329-877492896B82
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE
+ms.keywords : ntifs/SYSTEM_PROCESS_TRUST_LABEL_ACE, ifsk.system_process_trust_label_ace, SYSTEM_PROCESS_TRUST_LABEL_ACE structure [Installable File System Drivers], SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE, _SYSTEM_PROCESS_TRUST_LABEL_ACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYSTEM_PROCESS_TRUST_LABEL_ACE
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SYSTEM_PROCESS_TRUST_LABEL_ACE, *PSYSTEM_PROCESS_TRUST_LABEL_ACE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSYSTEM_PROCESS_TRUST_LABEL_ACE, SYSTEM_PROCESS_TRUST_LABEL_ACE"
 ---
 
 # _SYSTEM_PROCESS_TRUST_LABEL_ACE structure
@@ -48,18 +52,18 @@ struct SYSTEM_PROCESS_TRUST_LABEL_ACE {
 
 ## Members
 
-        
-            `Header`
 
-            
-        
-            `Mask`
+`Header`
 
-            
-        
-            `SidStart`
 
-            
+
+`Mask`
+
+
+
+`SidStart`
+
+
 
 
 ## Requirements

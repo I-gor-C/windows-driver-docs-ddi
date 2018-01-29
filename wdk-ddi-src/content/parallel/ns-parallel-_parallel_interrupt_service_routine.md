@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : dff10a68-f7c4-4f7a-a3f7-3697fc88992a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE
+ms.keywords : PARALLEL_INTERRUPT_SERVICE_ROUTINE structure [Parallel Ports], _PARALLEL_INTERRUPT_SERVICE_ROUTINE, parallel/PARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE, parports.parallel_interrupt_service_routine, PPARALLEL_INTERRUPT_SERVICE_ROUTINE structure pointer [Parallel Ports], PARALLEL_INTERRUPT_SERVICE_ROUTINE, parallel/PPARALLEL_INTERRUPT_SERVICE_ROUTINE, cisspd_db43e8c1-06d8-4a00-8f66-896987a45b83.xml, PPARALLEL_INTERRUPT_SERVICE_ROUTINE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PARALLEL_INTERRUPT_SERVICE_ROUTINE
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PPARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE
 ---
 
 # _PARALLEL_INTERRUPT_SERVICE_ROUTINE structure
@@ -49,15 +53,14 @@ typedef struct _PARALLEL_INTERRUPT_SERVICE_ROUTINE {
 
 ## Members
 
-        
-            `DeferredPortCheckContext`
 
-            Pointer to an optional context for the deferred port check routine.
-        
-            `DeferredPortCheckRoutine`
+`DeferredPortCheckContext`
 
-            Pointer to an optional deferred port check routine:
+Pointer to an optional context for the deferred port check routine.
 
+`DeferredPortCheckRoutine`
+
+Pointer to an optional deferred port check routine:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -70,19 +73,19 @@ typedef struct _PARALLEL_INTERRUPT_SERVICE_ROUTINE {
 );</pre>
 </td>
 </tr>
-</table></span></div>
-<b>Parameters</b>
-        
-            `InterruptServiceContext`
+</table></span></div><b>Parameters</b>
 
-            Pointer to a context for the interrupt service routine.
-        
-            `InterruptServiceRoutine`
+`InterruptServiceContext`
 
-            Pointer to an interrupt service routine.
+Pointer to a context for the interrupt service routine.
 
-    ## Remarks
-        A kernel-mode driver can connect a device-specific interrupt service routine and a deferred port check routine to the parallel port.
+`InterruptServiceRoutine`
+
+Pointer to an interrupt service routine.
+
+## Remarks
+A kernel-mode driver can connect a device-specific interrupt service routine and a deferred port check routine to the parallel port.
+<div class="alert"><b>Note</b>    Microsoft does not recommend using a client-supplied interrupt routine. The use of interrupts might cause system instability. By default, the <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request is disabled. For more information, see <a href="https://msdn.microsoft.com/62d3a388-6de6-4019-ab95-56b5e96d0891">Connecting an Interrupt Service Routine to a ParallelPort</a>.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,19 +95,14 @@ typedef struct _PARALLEL_INTERRUPT_SERVICE_ROUTINE {
 | **Minimum UMDF version** |  |
 | **Header** | parallel.h (include Parallel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_disconnect_interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

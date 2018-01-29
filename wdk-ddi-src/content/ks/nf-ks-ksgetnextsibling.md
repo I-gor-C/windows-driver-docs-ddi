@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 509cf778-2b0c-4dd2-982d-0c7be95ad407
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetNextSibling
+ms.keywords : stream.ksgetnextsibling, KsGetNextSibling function [Streaming Media Devices], ks/KsGetNextSibling, avfunc_0fedfc95-34c0-44d9-bed4-fff6bf6bd467.xml, KsGetNextSibling
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetNextSibling
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -79,26 +83,18 @@ Minidrivers rarely call <b>KsGetNextSibling</b> directly. There are a number of 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilterfactorygetnextsiblingfilterfactory.md">KsFilterFactoryGetNextSiblingFilterFactory</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksfiltergetnextsiblingfilter.md">KsFilterGetNextSiblingFilter</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksfilterfactorygetnextsiblingfilterfactory.md">KsFilterFactoryGetNextSiblingFilterFactory</a>
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
 <a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
-</dt>
-</dl>
+
  
 
  

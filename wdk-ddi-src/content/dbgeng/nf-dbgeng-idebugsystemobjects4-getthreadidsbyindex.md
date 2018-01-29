@@ -7,8 +7,8 @@ old-location : debugger\getthreadidsbyindex.htm
 old-project : debugger
 ms.assetid : d671ea6e-19cb-4a90-b345-ea544c9561cd
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::GetThreadIdsByIndex, GetThreadIdsByIndex
+ms.date : 1/19/2018
+ms.keywords : debugger.getthreadidsbyindex, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdsByIndex method, GetThreadIdsByIndex, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdsByIndex method, IDebugSystemObjects3::GetThreadIdsByIndex, IDebugSystemObjects4::GetThreadIdsByIndex, GetThreadIdsByIndex method [Windows Debugging], IDebugSystemObjects3 interface, dbgeng/IDebugSystemObjects2::GetThreadIdsByIndex, IDebugSystemObjects interface [Windows Debugging], GetThreadIdsByIndex method, GetThreadIdsByIndex method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdsByIndex method, IDebugSystemObjects::GetThreadIdsByIndex, GetThreadIdsByIndex method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects4::GetThreadIdsByIndex, IDebugSystemObjects_fa12ac17-9a66-45c0-9c91-11236a4a3eab.xml, GetThreadIdsByIndex method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4, dbgeng/IDebugSystemObjects::GetThreadIdsByIndex, GetThreadIdsByIndex method [Windows Debugging], dbgeng/IDebugSystemObjects3::GetThreadIdsByIndex, IDebugSystemObjects2::GetThreadIdsByIndex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSystemObjects.GetThreadIdsByIndex,IDebugSystemObjects2.GetThreadIdsByIndex,IDebugSystemObjects3.GetThreadIdsByIndex,IDebugSystemObjects4.GetThreadIdsByIndex
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,21 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 
 # GetThreadIdsByIndex method
-The <b>GetThreadIdsByIndex</b> method returns the engine and system thread IDs for the specified <a href="debugger.controlling_threads_and_processes#threads#threads">threads</a> in the current process.
+The <b>GetThreadIdsByIndex</b> method returns the engine and system thread IDs for the specified <a href="https://msdn.microsoft.com/6182ca34-ee5e-47e9-82fe-29266397e3a8">threads</a> in the current process.
 
 ## Syntax
 
@@ -71,15 +75,29 @@ Receives the system thread IDs.  If <i>SysIds</i> is <b>NULL</b>, this informati
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The index of the first thread is zero.  The index of the last thread is the number of threads returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547992">GetNumberThreads</a> minus one.
 
-For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
+For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

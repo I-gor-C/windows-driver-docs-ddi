@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fc496af8-0b4b-4de4-8890-f2290970ced5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeRundownQueue
+ms.keywords : ifsk.kerundownqueue, KeRundownQueue, keref_d1ad3c47-a2e8-40d9-b59d-bcedd6e4314a.xml, ntifs/KeRundownQueue, KeRundownQueue routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRundownQueue
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -83,11 +87,8 @@ For more information about using driver-managed internal queues, see <a href="ht
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-keinitializequeue.md">KeInitializeQueue</a>
-</dt>
-</dl>
+
  
 
  

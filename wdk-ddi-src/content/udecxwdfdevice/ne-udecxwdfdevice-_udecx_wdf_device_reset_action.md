@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E3216F62-5506-4DA2-AD89-B2406D3E97C0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION
+ms.keywords : "*PUDECX_WDF_DEVICE_RESET_ACTION, UdecxWdfDeviceResetActionResetWdfDevice, udecxwdfdevice/UdecxWdfDeviceResetActionResetWdfDevice, buses.udecx_wdf_device_reset_action, udecxwdfdevice/UDECX_WDF_DEVICE_RESET_ACTION, UdecxWdfDeviceResetActionResetEachUsbDevice, udecxwdfdevice/UdecxWdfDeviceResetActionResetEachUsbDevice, _UDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION enumeration [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UDECX_WDF_DEVICE_RESET_ACTION
-req.alt-loc : UdecxWdfDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION
 req.product : Windows 10 or later.
 ---
@@ -72,14 +76,10 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
-</dt>
-<dt>
 <a href="..\udecxwdfdevice\ns-udecxwdfdevice-_udecx_wdf_device_config.md">UDECX_WDF_DEVICE_CONFIG</a>
-</dt>
-</dl>
+
+<a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
+
  
 
  

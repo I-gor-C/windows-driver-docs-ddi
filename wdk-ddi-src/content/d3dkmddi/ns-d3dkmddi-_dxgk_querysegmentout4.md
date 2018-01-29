@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AE6988E6-81D7-47FB-986A-B5DEE9B7215B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_QUERYSEGMENTOUT4, DXGK_QUERYSEGMENTOUT4
+ms.keywords : _DXGK_QUERYSEGMENTOUT4, DXGK_QUERYSEGMENTOUT4 structure [Display Devices], d3dkmddi/DXGK_QUERYSEGMENTOUT4, DXGK_QUERYSEGMENTOUT4, display.dxgk_querysegmentout4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_QUERYSEGMENTOUT4
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_QUERYSEGMENTOUT4
 ---
 
@@ -51,30 +55,30 @@ typedef struct _DXGK_QUERYSEGMENTOUT4 {
 
 ## Members
 
-        
-            `NbSegment`
 
-            Number of elements in the <b>pSegmentDescriptor</b> array. The <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> (<b>DXGKQAITYPE_QUERYSEGMENT4</b>) will be called twice. First time, <b>NbSegment</b> will be set to 0. The driver should return <b>STATUS_SUCCESS</b> and set <b>NbSegment</b> to the number of GPU memory segments in the adapter without accessing any other member of the structure. Second time, the driver will be called with the reported number of segments and the driver should fill all required information.
-        
-            `PagingBufferPrivateDataSize`
+`NbSegment`
 
-            Size, in bytes, of the driver-private data that will be provided with each paging buffer.
-        
-            `PagingBufferSegmentId`
+Number of elements in the <b>pSegmentDescriptor</b> array. The <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> (<b>DXGKQAITYPE_QUERYSEGMENT4</b>) will be called twice. First time, <b>NbSegment</b> will be set to 0. The driver should return <b>STATUS_SUCCESS</b> and set <b>NbSegment</b> to the number of GPU memory segments in the adapter without accessing any other member of the structure. Second time, the driver will be called with the reported number of segments and the driver should fill all required information.
 
-            Segment identifier of the paging buffer. This is the index (starting from 1) of the segment in the <b>pSegmentDescriptor </b>array.
-        
-            `PagingBufferSize`
+`PagingBufferPrivateDataSize`
 
-            Paging buffer size.
-        
-            `pSegmentDescriptor`
+Size, in bytes, of the driver-private data that will be provided with each paging buffer.
 
-            Pointer to the array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a> structures. The size of the array element is defined by <b>SegmentDescriptorStride</b>. The <b>pSegmentDescriptor</b> type has been changed to a <b>BYTE*</b> to help enforce the use of the stride as the method of iterating the array. The driver fills the array with information about each memory segment.
-        
-            `SegmentDescriptorStride`
+`PagingBufferSegmentId`
 
-            Size of the elements in the <b>pSegmentDescriptor</b> array in bytes.
+Segment identifier of the paging buffer. This is the index (starting from 1) of the segment in the <b>pSegmentDescriptor </b>array.
+
+`PagingBufferSize`
+
+Paging buffer size.
+
+`pSegmentDescriptor`
+
+Pointer to the array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a> structures. The size of the array element is defined by <b>SegmentDescriptorStride</b>. The <b>pSegmentDescriptor</b> type has been changed to a <b>BYTE*</b> to help enforce the use of the stride as the method of iterating the array. The driver fills the array with information about each memory segment.
+
+`SegmentDescriptorStride`
+
+Size of the elements in the <b>pSegmentDescriptor</b> array in bytes.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct _DXGK_QUERYSEGMENTOUT4 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentin4.md">DXGK_QUERYSEGMENTIN4</a>
-</dt>
-</dl>
+
  
 
  

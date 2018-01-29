@@ -7,8 +7,8 @@ old-location : netvista\rilrmcvtype.htm
 old-project : netvista
 ms.assetid : 007c6b45-0bec-4fcf-984a-675aa5336993
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRMCVTYPE, RILRMCVTYPE
+ms.date : 1/18/2018
+ms.keywords : RILRMCVTYPE, RIL_RMCV_TYPE_BOOLEAN, RILRMCVTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_RMCV_TYPE_DWORD, ntddrilapitypes/RILRMCVTYPE, netvista.rilrmcvtype, RIL_RMCV_TYPE_STRING, ntddrilapitypes/RIL_RMCV_TYPE_STRING, ntddrilapitypes/RIL_RMCV_TYPE_BOOLEAN, ntddrilapitypes/RIL_RMCV_TYPE_DWORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRMCVTYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRMCVTYPE
 ---
 
@@ -57,6 +61,11 @@ typedef enum _RILRMCVTYPE {
 
 <tr>
 <td>RIL_RMCV_TYPE_DWORD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RMCV_TYPE_NONE</td>
 <td></td>
 </tr>
 

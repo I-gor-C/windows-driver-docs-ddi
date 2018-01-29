@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a1143ca4-9c39-4bd7-92e1-473bdb447eb5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.int10writememory, Int10WriteMemory callback function [Display Devices], Int10WriteMemory, PINT10_WRITE_MEMORY, PINT10_WRITE_MEMORY, video/Int10WriteMemory, VideoPort_Functions_6a882de2-2147-4b15-b4d8-6a87c49fa3d9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : Int10WriteMemory
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -99,11 +103,8 @@ The video port implements this function, which can be accessed through a pointer
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\ns-video-_video_port_int10_interface.md">VIDEO_PORT_INT10_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

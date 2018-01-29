@@ -7,8 +7,8 @@ old-location : netvista\rilphonebookentry.htm
 old-project : netvista
 ms.assetid : 2741d992-624a-4fd1-a1b5-57fb39c42f84
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKENTRY, *LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY
+ms.date : 1/18/2018
+ms.keywords : netvista.rilphonebookentry, RILPHONEBOOKENTRY, RILPHONEBOOKENTRY structure [Network Drivers Starting with Windows Vista], *LPRILPHONEBOOKENTRY, ntddrilapitypes/RILPHONEBOOKENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKENTRY
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY"
 ---
 
@@ -59,62 +63,62 @@ typedef struct _RILPHONEBOOKENTRY {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwAdditionalNumCount`
+`cbSize`
 
-            
-        
-            `dwAdditionalNumOffset`
 
-            
-        
-            `dwAdditionalNumSize`
 
-            
-        
-            `dwEmailCount`
+`dwAdditionalNumCount`
 
-            
-        
-            `dwEmailOffset`
 
-            
-        
-            `dwEmailSize`
 
-            
-        
-            `dwGroupIdCount`
+`dwAdditionalNumOffset`
 
-            
-        
-            `dwIndex`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `raAddress`
+`dwAdditionalNumSize`
 
-            
-        
-            `rgdwGroupId`
 
-            
-        
-            `wszSecondName`
 
-            
-        
-            `wszText`
+`dwEmailCount`
 
-            
+
+
+`dwEmailOffset`
+
+
+
+`dwEmailSize`
+
+
+
+`dwGroupIdCount`
+
+
+
+`dwIndex`
+
+
+
+`dwParams`
+
+
+
+`raAddress`
+
+
+
+`rgdwGroupId`
+
+
+
+`wszSecondName`
+
+
+
+`wszText`
+
+
 
 
 ## Requirements

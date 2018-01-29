@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D09A124A-82F6-4B0A-B60F-E60EB54B0EC1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS, *PUDECX_USB_DEVICE_PLUG_IN_OPTIONS
+ms.keywords : buses.udecx_usb_device_plug_in_options, udecxusbdevice/ PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS structure [Buses], PUDECX_USB_DEVICE_PLUG_IN_OPTIONS structure pointer [Buses], UDECX_USB_DEVICE_PLUG_IN_OPTIONS, PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, *PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, _UDECX_USB_DEVICE_PLUG_IN_OPTIONS, udecxusbdevice/UDECX_USB_DEVICE_PLUG_IN_OPTIONS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UDECX_USB_DEVICE_PLUG_IN_OPTIONS
-req.alt-loc : UdecxUsbDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : UDECX_USB_DEVICE_PLUG_IN_OPTIONS, *PUDECX_USB_DEVICE_PLUG_IN_OPTIONS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS"
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _UDECX_USB_DEVICE_PLUG_IN_OPTIONS {
 
 ## Members
 
-        
-            `Size`
 
-            The size of this structure.
-        
-            `Usb20PortNumber`
+`Size`
 
-            The USB 2.0 port number.
-        
-            `Usb30PortNumber`
+The size of this structure.
 
-            The USB 2.0 port number.
+`Usb20PortNumber`
+
+The USB 2.0 port number.
+
+`Usb30PortNumber`
+
+The USB 2.0 port number.
 
 
 ## Requirements
@@ -71,13 +75,10 @@ typedef struct _UDECX_USB_DEVICE_PLUG_IN_OPTIONS {
 | **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceplugin.md">UdecxUsbDevicePlugIn</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 28C73FBA-9122-4CFD-959E-495062CEEF41
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTOutputStream, IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket
+ms.keywords : audio.iminiportwavertoutputstream_setwritepacket, IMiniportWaveRTOutputStream, SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface, SetWritePacket, portcls/IMiniportWaveRTOutputStream::SetWritePacket, IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface [Audio Devices], SetWritePacket method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRTOutputStream.SetWritePacket
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -110,11 +114,8 @@ Depending on hardware capabilities, if the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavertoutputstream.md">IMiniportWaveRTOutputStream</a>
-</dt>
-</dl>
+
  
 
  

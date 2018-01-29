@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e4070d53-bdd6-4708-857d-7ed1e9699e21
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_DEPTHFILL, D3DDDIARG_DEPTHFILL
+ms.keywords : UMDisplayDriver_param_Structs_94ba7961-5956-4939-830f-eaa15aeca614.xml, D3DDDIARG_DEPTHFILL, _D3DDDIARG_DEPTHFILL, D3DDDIARG_DEPTHFILL structure [Display Devices], d3dumddi/D3DDDIARG_DEPTHFILL, display.d3dddiarg_depthfill
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_DEPTHFILL
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_DEPTHFILL
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DDDIARG_DEPTHFILL {
 
 ## Members
 
-        
-            `Depth`
 
-            A pixel value that is specified in native format for the fill depth.
-        
-            `DstRect`
+`Depth`
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the buffer to depth fill.
-        
-            `hResource`
+A pixel value that is specified in native format for the fill depth.
 
-            [in] A handle to the resource.
-        
-            `SubResourceIndex`
+`DstRect`
 
-            [in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or buffer, on which a rectangular area is depth-filled.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the buffer to depth fill.
+
+`hResource`
+
+[in] A handle to the resource.
+
+`SubResourceIndex`
+
+[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or buffer, on which a rectangular area is depth-filled.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _D3DDDIARG_DEPTHFILL {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_depthfill.md">DepthFill</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
-</dt>
-</dl>
+
  
 
  

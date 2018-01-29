@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f9a6998d-f340-47ad-a9be-ff7ef76c627e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltDeviceIoControlFile
+ms.keywords : fltkernel/FltDeviceIoControlFile, FltDeviceIoControlFile, FltDeviceIoControlFile function [Installable File System Drivers], FltApiRef_a_to_d_0e8f1a72-1620-4d72-8569-7411c724e906.xml, ifsk.fltdeviceiocontrolfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltDeviceIoControlFile
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -110,11 +114,8 @@ For more information about the system-defined IOCTL_<i>XXX</i> codes, see the Re
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
-</dt>
-</dl>
+
  
 
  

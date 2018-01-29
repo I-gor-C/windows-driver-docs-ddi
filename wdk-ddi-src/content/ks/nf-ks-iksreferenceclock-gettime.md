@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3e5ff621-47ec-4ab7-bf8e-26bff57588f8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsReferenceClock, IKsReferenceClock::GetTime, GetTime
+ms.keywords : GetTime, IKsReferenceClock::GetTime, stream.iksreferenceclock_gettime, avintfc_54820682-eb28-4344-91d3-ee30ef2f7bd6.xml, GetTime method [Streaming Media Devices], IKsReferenceClock, GetTime method [Streaming Media Devices], IKsReferenceClock interface, ks/IKsReferenceClock::GetTime, IKsReferenceClock interface [Streaming Media Devices], GetTime method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsReferenceClock.GetTime
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -49,10 +53,6 @@ LONGLONG GetTime();
 This function has no parameters.
 
 ## Return Value
-
-The <b>IKsReferenceClock::GetTime</b> method returns the current stream time for the associated pin, specified by default in 100-nanosecond units.
-
-The <b>IKsReferenceClock::GetTime</b> method returns the current stream time for the associated pin, specified by default in 100-nanosecond units.
 
 The <b>IKsReferenceClock::GetTime</b> method returns the current stream time for the associated pin, specified by default in 100-nanosecond units.
 
@@ -78,11 +78,8 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
-</dt>
-</dl>
+
  
 
  

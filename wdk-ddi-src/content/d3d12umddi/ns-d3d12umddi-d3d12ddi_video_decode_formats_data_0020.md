@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0FF0F184-60FF-4467-ABF5-E05893083B25
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020, D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020
+ms.keywords : D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020 structure [Display Devices], display.d3d12ddi_video_decode_formats_data, d3d12umddi/D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020, D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020
 ---
 
@@ -49,22 +53,22 @@ typedef struct D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020 {
 
 ## Members
 
-        
-            `Configuration`
 
-            Specifies the decode configuration for the list of formats.
-        
-            `FormatCount`
+`Configuration`
 
-            The number of formats to retrieve.  The runtime ensures this value matches the value returned from PFND3D12DDI_VIDEO_GETCAPS with D3D12DDI_CAPSTYPE_VIDEO set to D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILE_FORMAT_COUNT.
-        
-            `NodeIndex`
+Specifies the decode configuration for the list of formats.
 
-            In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
-        
-            `pOutputFormats`
+`FormatCount`
 
-            A pointer to the returned supported formats.  The calling application allocates storage for the format list.
+The number of formats to retrieve.  The runtime ensures this value matches the value returned from PFND3D12DDI_VIDEO_GETCAPS with D3D12DDI_CAPSTYPE_VIDEO set to D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILE_FORMAT_COUNT.
+
+`NodeIndex`
+
+In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
+
+`pOutputFormats`
+
+A pointer to the returned supported formats.  The calling application allocates storage for the format list.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_video_get_decode_format_count_0020.md">pfnGetDecodeFormatCount</a>
-</dt>
-</dl>
+
  
 
  

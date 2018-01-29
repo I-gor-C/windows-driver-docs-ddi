@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 725ADCA2-FE86-4131-8D70-2BF63F26F89D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+ms.keywords : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure [Buses], usbspec/PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, usbspec/USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure pointer [Buses], _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, buses.usb_superspeed_endpoint_companion_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.alt-loc : usbspec.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -63,29 +67,29 @@ typedef struct _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
 
 ## Members
 
-        
-            `bDescriptorType`
 
-            Specifies the descriptor type. Must be set to USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR.
-        
-            `bLength`
+`bDescriptorType`
 
-            Specifies the length, in bytes, of this descriptor.
-        
-            `bmAttributes`
+Specifies the descriptor type. Must be set to USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR.
 
-            
-        
-            `bMaxBurst`
+`bLength`
 
-            Specifies the maximum number of packets that the endpoint can send or receive as a part of a burst.
-        
-            `wBytesPerInterval`
+Specifies the length, in bytes, of this descriptor.
 
-            Number of bytes per interval.
+`bmAttributes`
 
-    ## Remarks
-        A client driver that supports streams associated with a bulk endpoint, uses <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b> to get the maximum number of streams supported by the endpoint. That information is required by the client driver in an open-streams request. In the request, the specified value for <b>NumberOfStreams</b> member of the <a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a> structure cannot exceed the <b>MaxStreams</b> value reported in <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b>. For more information about opening streams, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
+
+
+`bMaxBurst`
+
+Specifies the maximum number of packets that the endpoint can send or receive as a part of a burst.
+
+`wBytesPerInterval`
+
+Number of bytes per interval.
+
+## Remarks
+A client driver that supports streams associated with a bulk endpoint, uses <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b> to get the maximum number of streams supported by the endpoint. That information is required by the client driver in an open-streams request. In the request, the specified value for <b>NumberOfStreams</b> member of the <a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a> structure cannot exceed the <b>MaxStreams</b> value reported in <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b>. For more information about opening streams, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,13 +99,10 @@ typedef struct _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usbspec.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

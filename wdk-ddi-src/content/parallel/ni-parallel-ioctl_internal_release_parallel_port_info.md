@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 1a28e6db-b140-42aa-be52-fb5655983383
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_release_parallel_port_info, IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO control code [Parallel Ports], IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, parallel/IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, cisspd_3bbcd68f-ea0d-46c8-8aab-0e33dcb4afad.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
 # IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO IOCTL
-The <b>IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO</b> request returns STATUS_SUCCESS.
+The <b>IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO</b> request returns STATUS_SUCCESS. 
+<div class="alert"><b>Note</b>    The intended purpose of this IOCTL is to make it possible to page the callback routines supported by the system-supplied function driver for parallel ports. However, this capability is not yet implemented.</div><div> </div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -59,7 +64,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports.
@@ -72,19 +76,14 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_more_parallel_port_info.md">IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</a>
-</dt>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_more_parallel_port_info.md">IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</a>
+
  
 
  

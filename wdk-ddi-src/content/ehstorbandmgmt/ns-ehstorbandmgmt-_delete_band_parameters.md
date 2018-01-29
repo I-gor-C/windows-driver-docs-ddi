@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6C96CF49-A7B2-4A99-8C7A-FC1C8C389C18
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS, *PDELETE_BAND_PARAMETERS
+ms.keywords : DELBAND_ERASE_BEFORE_DELETE, ehstorbandmgmt/PDELETE_BAND_PARAMETERS, PDELETE_BAND_PARAMETERS structure pointer [Storage Devices], PDELETE_BAND_PARAMETERS, storage.delete_band_parameters, _DELETE_BAND_PARAMETERS, ehstorbandmgmt/DELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS structure [Storage Devices], *PDELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DELETE_BAND_PARAMETERS
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DELETE_BAND_PARAMETERS, *PDELETE_BAND_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS"
 ---
 
 # _DELETE_BAND_PARAMETERS structure
@@ -51,11 +55,10 @@ typedef struct _DELETE_BAND_PARAMETERS {
 
 ## Members
 
-        
-            `AuthKeyOffset`
 
-            The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <b>DELETE_BAND_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+`AuthKeyOffset`
 
+The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <b>DELETE_BAND_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -70,36 +73,47 @@ typedef struct _DELETE_BAND_PARAMETERS {
 </td>
 </tr>
 </table></span></div>
-        
-            `BandId`
 
-            The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId</b>. To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
-        
-            `BandStart`
+To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>. If <b>Flags</b> contains <b>DELBAND_ERASE_BEFORE_DELETE</b>, <b>AuthKeyOffset</b> must be set to <b>EHSTOR_BANDMGR_NO_KEY</b>.
 
-            The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
-        
-            `Flags`
+`BandId`
 
-            Delete operation flags. This value is a bitwise OR combination of the following.
+The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId</b>. To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
 
+`BandStart`
+
+The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
+
+`Flags`
+
+Delete operation flags. This value is a bitwise OR combination of the following.
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `Reserved`
+<td width="40%"><a id="DELBAND_ERASE_BEFORE_DELETE"></a><a id="delband_erase_before_delete"></a><dl>
+<dt><b>DELBAND_ERASE_BEFORE_DELETE</b></dt>
+</dl>
+</td>
+<td width="60%">
+Perform a cryptographic erase of the band property data before delete.
 
-            Reserved.
-        
-            `StructSize`
+</td>
+</tr>
+</table>
 
-            The size of this structure in bytes. Set to <b>sizeof</b>(DELETE_BAND_PARAMETERS).
+`Reserved`
 
-    ## Remarks
-        Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_delete_band.md">IOCTL_EHSTOR_BANDMGMT_DELETE_BAND</a>.
+Reserved.
+
+`StructSize`
+
+The size of this structure in bytes. Set to <b>sizeof</b>(DELETE_BAND_PARAMETERS).
+
+## Remarks
+Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_delete_band.md">IOCTL_EHSTOR_BANDMGMT_DELETE_BAND</a>.
 
 If <b>DELBAND_ERASE_BEFORE_DELETE</b> is set in <b>Flags</b>, then an authentication key is not needed to delete the band. If this flag is not set, the current authentication key must be included at <b>AuthKeyOffset</b>.
 
@@ -113,19 +127,14 @@ If <b>DELBAND_ERASE_BEFORE_DELETE</b> is set in <b>Flags</b>, then an authentica
 | **Minimum UMDF version** |  |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_delete_band.md">IOCTL_EHSTOR_BANDMGMT_DELETE_BAND</a>
-</dt>
-<dt>
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_erase_band.md">IOCTL_EHSTOR_BANDMGMT_ERASE_BAND</a>
-</dt>
-</dl>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
+
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_delete_band.md">IOCTL_EHSTOR_BANDMGMT_DELETE_BAND</a>
+
  
 
  

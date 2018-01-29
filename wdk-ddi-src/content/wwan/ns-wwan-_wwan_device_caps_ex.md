@@ -7,8 +7,8 @@ old-location : netvista\wwan_device_caps_ex.htm
 old-project : netvista
 ms.assetid : 91F62BFF-C26A-422A-B138-1E8D9A5146B3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_DEVICE_CAPS_EX, *PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX
+ms.date : 1/18/2018
+ms.keywords : wwan/WWAN_DEVICE_CAPS_EX, wwan/PWWAN_DEVICE_CAPS_EX, PWWAN_DEVICE_CAPS_EX, *PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], _WWAN_DEVICE_CAPS_EX, netvista.wwan_device_caps_ex, PWWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_CAPS_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_DEVICE_CAPS_EX
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX"
 req.product : Windows 10 or later.
 ---
@@ -66,27 +70,27 @@ typedef struct _WWAN_DEVICE_CAPS_EX {
 
 ## Members
 
-        
-            `CellularClassListHeader`
 
-            A formatted WWAN_LIST_HEADER object that represents a list of cellular classes that a multi-mode capable device supports. The <b>ElementType</b> member in WWAN_LIST_HEADER should always be set to <b>WwanStructCellularClass</b>. The <b>ElementCount</b> member in WWAN_LIST_HEADER is set to the number of cellular classes that follow the WWAN_LIST_HEADER structure. MB devices that are not multi-mode capable should set <b>ElementCount</b> to 0.
-        
-            `CustomBandClass`
+`CellularClassListHeader`
 
-            A NULL-terminated string that represents the name of the custom band class. This member is valid
+A formatted WWAN_LIST_HEADER object that represents a list of cellular classes that a multi-mode capable device supports. The <b>ElementType</b> member in WWAN_LIST_HEADER should always be set to <b>WwanStructCellularClass</b>. The <b>ElementCount</b> member in WWAN_LIST_HEADER is set to the number of cellular classes that follow the WWAN_LIST_HEADER structure. MB devices that are not multi-mode capable should set <b>ElementCount</b> to 0.
+
+`CustomBandClass`
+
+A NULL-terminated string that represents the name of the custom band class. This member is valid
      only when the miniport driver sets the WWAN_BAND_CLASS_CUSTOM bit in either the 
      <b>WwanGsmBandClass</b> or 
      <b>WwanCdmaBandClass</b> members, as appropriate.
-        
-            `CustomDataClass`
 
-            A NULL-terminated string that represents the name of the custom data-class. This member is valid
+`CustomDataClass`
+
+A NULL-terminated string that represents the name of the custom data-class. This member is valid
      only when the miniport driver sets the WWAN_DATA_CLASS_CUSTOM bit in the 
      <b>WwanDataClass</b> member.
-        
-            `DeviceId`
 
-            A NULL-terminated string that represents the device ID.
+`DeviceId`
+
+A NULL-terminated string that represents the device ID.
 
 For GSM-based devices, the string must
      conform to the International Mobile Equipment Identity (IMEI) format (up to 15 digits).
@@ -99,35 +103,34 @@ For multi-mode capable miniport drivers, for example those that set the <b>WWAN_
 
 This value should be stored in the device's memory and
      must be available even when the MB device/SIM requires a PIN to unlock.
-        
-            `ExecutorIndex`
 
-            The <b>WwanDeviceType</b> member for <b>WWAN_DEVICE_CAPS_EX</b> no longer refers to the modem device but rather to an individual executor. Each device is an RF executor entity of which the OS is aware.
-        
-            `FirmwareInfo`
+`ExecutorIndex`
 
-            A NULL-terminated string that represents the firmware specific information about the device. This
+The <b>WwanDeviceType</b> member for <b>WWAN_DEVICE_CAPS_EX</b> no longer refers to the modem device but rather to an individual executor. Each device is an RF executor entity of which the OS is aware.
+
+`FirmwareInfo`
+
+A NULL-terminated string that represents the firmware specific information about the device. This
      member is optional.
-        
-            `Manufacturer`
 
-            A NULL-terminated string that represents the manufacturer of the device. This member is
+`Manufacturer`
+
+A NULL-terminated string that represents the manufacturer of the device. This member is
      optional.
-        
-            `MaxActivatedContexts`
 
-            The maximum number of activated contexts that are supported by the device. Miniport drivers should
+`MaxActivatedContexts`
+
+The maximum number of activated contexts that are supported by the device. Miniport drivers should
      enforce this limit by failing any activation attempts that exceed 
      <b>MaxActivatedContexts</b>.
-        
-            `Model`
 
-            A NULL-terminated string that represents the model of the device. This member is optional.
-        
-            `WwanAuthAlgoCaps`
+`Model`
 
-            A bitmap that represents the types of authentication methods the MB device supports.
+A NULL-terminated string that represents the model of the device. This member is optional.
 
+`WwanAuthAlgoCaps`
+
+A bitmap that represents the types of authentication methods the MB device supports.
 <table>
 <tr>
 <th>Value</th>
@@ -174,13 +177,12 @@ The MB device supports the AKA' (AKA Prime) authentication method.
 </td>
 </tr>
 </table>
-        
-            `WwanCdmaBandClass`
 
-            A bitmap that represents the frequency bands CDMA-based devices support. The following table shows
+`WwanCdmaBandClass`
+
+A bitmap that represents the frequency bands CDMA-based devices support. The following table shows
      the possible values for this member.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -386,8 +388,7 @@ The device supports a band other than the bands listed in this table.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide the name of the
      data-class in 
@@ -395,22 +396,21 @@ If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide 
 
 For more information about these values, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a>.
-        
-            `WwanCellularClass`
 
-            The cellular class of the device. Miniport drivers must set the cellular class to be a value other
+`WwanCellularClass`
+
+The cellular class of the device. Miniport drivers must set the cellular class to be a value other
      than 
      <b>WwanCellularClassUnknown</b>. The values in this member control features that are specific to
      cellular technology, such as network provider registration modes.
 
 Miniport drivers that support multi-mode should set this to <b>WwanCellularClassGsm.</b>
-        
-            `WwanControlCaps`
 
-            A bitmap that represents the control capabilities that the device supports. The following table
+`WwanControlCaps`
+
+A bitmap that represents the control capabilities that the device supports. The following table
      shows the valid WwanControlCaps settings for GSM-based and CDMA-based devices. 
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -520,19 +520,17 @@ This flag indicates that the current home provider supports multiple cellular cl
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Miniport drivers of CDMA-based devices must specify WWAN_CTRL_CAPS_CDMA_MOBILE_IP, or
      WWAN_CTRL_CAPS_CDMA_SIMPLE_IP, or both flags to inform the MB Service about the type of IP that the
      device supports.
-        
-            `WwanDataClass`
 
-            A bitmap that represents the data-class(es) that the device supports. The following table shows
+`WwanDataClass`
+
+A bitmap that represents the data-class(es) that the device supports. The following table shows
      the possible values for this member.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -698,18 +696,17 @@ The device supports a data service not listed in this table.
 </td>
 </tr>
 </table>
-        
-            `WwanDeviceType`
 
-            The type of the device. Miniport drivers must set the device type to be a value other than 
+`WwanDeviceType`
+
+The type of the device. Miniport drivers must set the device type to be a value other than 
      <b>WwanDeviceTypeUnknown</b>.
-        
-            `WwanGsmBandClass`
 
-            A bitmap that represents the frequency bands GSM-based devices support. The following table shows
+`WwanGsmBandClass`
+
+A bitmap that represents the frequency bands GSM-based devices support. The following table shows
      the possible values for this member.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -832,8 +829,7 @@ The device supports a spectrum other than those listed in this table.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide the name of the
      data-class in 
@@ -841,11 +837,10 @@ If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide 
 
 For more information about these values, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a>.
-        
-            `WwanOptionalServiceCaps`
 
-            A ULONG structure that represents the Microsoft service extensions the underlying modem supports. It is a 64-bit bitmap structure that whose undefined bits are reserved and must be set to "0." As new service extensions are introduced, the reserved bits will be used to represent the new service extensions.
+`WwanOptionalServiceCaps`
 
+A ULONG structure that represents the Microsoft service extensions the underlying modem supports. It is a 64-bit bitmap structure that whose undefined bits are reserved and must be set to "0." As new service extensions are introduced, the reserved bits will be used to represent the new service extensions.
 <table>
 <tr>
 <th>Value</th>
@@ -962,19 +957,18 @@ The device and driver support network blacklist configuration from the OS and th
 </td>
 </tr>
 </table>
-        
-            `WwanSimClass`
 
-            The class of the Subscriber Identity Module (SIM card). Miniport drivers must set the SIM class to
+`WwanSimClass`
+
+The class of the Subscriber Identity Module (SIM card). Miniport drivers must set the SIM class to
      be a value other than 
      <b>WwanSimClassUnknown</b>.
-        
-            `WwanSmsCaps`
 
-            A bitmap that represents the type of SMS messages and directional flow that the device supports.
+`WwanSmsCaps`
+
+A bitmap that represents the type of SMS messages and directional flow that the device supports.
      The following table shows the valid SMS capabilities settings.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -1041,21 +1035,20 @@ The device supports receiving Text-style SMS messages. This flag applies for CDM
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Miniport drivers should set this member to reflect support for only GSM PDU format for receiving and sending SMS when the current home provider is multi-mode capable. Therefure, if the miniport driver receives a SMS in the cellular class native format, for example CDMA TEXT or CDMA PDU, then the miniport driver is required to do the translation to GSM PDU and indicate it to the MB Service. Similarly if the miniport driver receives a send request in GSM PDU format then it is required to do the translation to its native cellular class format.
-        
-            `WwanVoiceClass`
 
-            The voice class of the device. This member informs the MB Service about the presence of circuit
+`WwanVoiceClass`
+
+The voice class of the device. This member informs the MB Service about the presence of circuit
      voice service, and how such service interacts with data service. Be aware that the MB Service does not
      support circuit-switched voice natively, nor does it preclude it. It is up to the miniport driver to
      determine how to support circuit voice. This 
      <b>WwanVoiceClass</b> member allows the MB Service to support this feature in the future.
 
-    ## Remarks
-        Miniport drivers should specify WWAN_DATA_CLASS_CUSTOM if the data service supported by the device
+## Remarks
+Miniport drivers should specify WWAN_DATA_CLASS_CUSTOM if the data service supported by the device
     does not belong to any of the other values defined in the table for the 
     <b>WwanDataClass</b> member. If a miniport driver sets the WWAN_DATA_CLASS_CUSTOM flag, the miniport
     driver should also provide the name of the data-class in the 
@@ -1079,21 +1072,16 @@ For CDMA-based devices, only CDMA-related data services must be specified. For e
 | **Minimum UMDF version** |  |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps_ex.md">NDIS_WWAN_DEVICE_CAPS_EX</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
-</dt>
-<dt>
+
 <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps_ex.md">NDIS_WWAN_DEVICE_CAPS_EX</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

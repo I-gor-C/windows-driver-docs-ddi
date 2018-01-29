@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 679C9A71-7F39-4344-93D0-6B1332D76CF7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GPIO_READ_PINS_MASK_PARAMETERS, *PGPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS
+ms.keywords : GPIO_READ_PINS_MASK_PARAMETERS, gpioclx/PGPIO_READ_PINS_MASK_PARAMETERS, PGPIO_READ_PINS_MASK_PARAMETERS structure pointer [Parallel Ports], GPIO_READ_PINS_MASK_PARAMETERS structure [Parallel Ports], gpioclx/GPIO_READ_PINS_MASK_PARAMETERS, _GPIO_READ_PINS_MASK_PARAMETERS, PGPIO_READ_PINS_MASK_PARAMETERS, GPIO.gpio_read_pins_mask_parameters, *PGPIO_READ_PINS_MASK_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GPIO_READ_PINS_MASK_PARAMETERS
-req.alt-loc : Gpioclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PGPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GPIO_READ_PINS_MASK_PARAMETERS, *PGPIO_READ_PINS_MASK_PARAMETERS
 ---
 
 # _GPIO_READ_PINS_MASK_PARAMETERS structure
@@ -49,25 +53,25 @@ typedef struct _GPIO_READ_PINS_MASK_PARAMETERS {
 
 ## Members
 
-        
-            `BankId`
 
-            The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
-        
-            `Flags`
+`BankId`
 
-            A set of flags to control the GPIO pin read operation. If the <b>WriteConfiguredPins</b> flag bit is set, the GPIO controller driver can read from a GPIO pin that is configured for write operations.
-        
-            `PinValues`
+The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
 
-            A 64-bit variable to which the GPIO controller driver stores the values that it reads from the GPIO pins in the bank. If N is the number of GPIO pins in this bank, the pins are numbered 0 to N–1. The value from pin number 0 is saved in bit 0 (the least significant bit) of this variable, the value from pin number 1 is saved in bit 1 of this variable, and so on.
-        
-            `Reserved`
+`Flags`
 
-            Reserved for system use.
+A set of flags to control the GPIO pin read operation. If the <b>WriteConfiguredPins</b> flag bit is set, the GPIO controller driver can read from a GPIO pin that is configured for write operations.
 
-    ## Remarks
-        The <i>ReadParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a> event callback function is a pointer to a caller-allocated <b>GPIO_READ_PINS_MASK_PARAMETERS</b> structure.
+`PinValues`
+
+A 64-bit variable to which the GPIO controller driver stores the values that it reads from the GPIO pins in the bank. If N is the number of GPIO pins in this bank, the pins are numbered 0 to N–1. The value from pin number 0 is saved in bit 0 (the least significant bit) of this variable, the value from pin number 1 is saved in bit 1 of this variable, and so on.
+
+`Reserved`
+
+Reserved for system use.
+
+## Remarks
+The <i>ReadParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a> event callback function is a pointer to a caller-allocated <b>GPIO_READ_PINS_MASK_PARAMETERS</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,19 +81,14 @@ typedef struct _GPIO_READ_PINS_MASK_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | gpioclx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 450c2e2b-56fa-4896-ba81-0f84f7e3051d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS
+ms.keywords : IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture], kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, IO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, kernel.io_connect_interrupt_parameters, _IO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], wdm/PIO_CONNECT_INTERRUPT_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_CONNECT_INTERRUPT_PARAMETERS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS"
 req.product : Windows 10 or later.
 ---
@@ -87,11 +91,10 @@ typedef struct _IO_CONNECT_INTERRUPT_PARAMETERS {
 
 ## Members
 
-        
-            `Version`
 
-            On input, specifies the particular operation to be performed by <b>IoConnectInterruptEx</b>, as follows.
+`Version`
 
+On input, specifies the particular operation to be performed by <b>IoConnectInterruptEx</b>, as follows.
 <table>
 <tr>
 <th>Version value</th>
@@ -127,11 +130,9 @@ Registers an <a href="https://msdn.microsoft.com/library/windows/hardware/ff5479
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 On return, the routine provides information about the operation, as follows.
-
 <table>
 <tr>
 <th>Version value</th>
@@ -169,8 +170,8 @@ The caller specified CONNECT_MESSAGE_BASED and the caller's <i>InterruptMessageS
 </tr>
 </table>
 
-    ## Remarks
-        The <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine takes a single <i>Parameters</i> parameter, which points to an <b>IO_CONNECT_INTERRUPT_PARAMETERS</b> structure that contains all of the parameters of the operation.
+## Remarks
+The <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine takes a single <i>Parameters</i> parameter, which points to an <b>IO_CONNECT_INTERRUPT_PARAMETERS</b> structure that contains all of the parameters of the operation.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -180,13 +181,10 @@ The caller specified CONNECT_MESSAGE_BASED and the caller's <i>InterruptMessageS
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
-</dt>
-</dl>
+
  
 
  

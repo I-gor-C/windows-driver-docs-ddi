@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : eb3aa7ec-65f7-4e3d-8059-e9627de9818c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey, IRegistryKey::QueryRegistryValues, QueryRegistryValues
+ms.keywords : IRegistryKey::QueryRegistryValues, IRegistryKey interface [Audio Devices], QueryRegistryValues method, audio.iregistrykey_queryregistryvalues, QueryRegistryValues method [Audio Devices], IRegistryKey interface, QueryRegistryValues method [Audio Devices], QueryRegistryValues, IRegistryKey, portcls/IRegistryKey::QueryRegistryValues, audmp-routines_b2601a0c-3b8f-4e2b-868c-cf189eca7e05.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRegistryKey.QueryRegistryValues
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -61,12 +65,34 @@ This is a caller-defined context value. The <code>QueryRegistryValues</code> met
 ## Return Value
 
 <code>QueryRegistryValues</code> returns STATUS_SUCCESS if the call was successful in processing the entire <i>QueryTable</i>. Otherwise, the method returns an appropriate error code. The following table shows some of the possible return status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Indicates that the <i>QueryTable</i> parameter that was passed to the method is not valid.
+</dl>
+</td>
+<td width="60%">
+Indicates that the <i>QueryTable</i> parameter that was passed to the method is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>Indicates that the method was unable to find the object that was specified in one of the <i>QueryTable</i> entries.
+</dl>
+</td>
+<td width="60%">
+Indicates that the method was unable to find the object that was specified in one of the <i>QueryTable</i> entries.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -88,14 +114,10 @@ The <i>QueryTable</i> parameter points to an array of RTL_QUERY_REGISTRY_TABLE s
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : print\propsheetui_geticon_info.htm
 old-project : print
 ms.assetid : 23c06f1c-0c8f-4055-a997-1ff94c4a541e
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _PROPSHEETUI_GETICON_INFO, PROPSHEETUI_GETICON_INFO, *PPROPSHEETUI_GETICON_INFO
+ms.date : 1/18/2018
+ms.keywords : print.propsheetui_geticon_info, _PROPSHEETUI_GETICON_INFO, *PPROPSHEETUI_GETICON_INFO, PROPSHEETUI_GETICON_INFO structure [Print Devices], PPROPSHEETUI_GETICON_INFO, compstui/PPROPSHEETUI_GETICON_INFO, PPROPSHEETUI_GETICON_INFO structure pointer [Print Devices], cpsuifnc_da228e66-0d1b-4d35-af1e-e1b99e56ad08.xml, PROPSHEETUI_GETICON_INFO, compstui/PROPSHEETUI_GETICON_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PROPSHEETUI_GETICON_INFO
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PROPSHEETUI_GETICON_INFO, *PPROPSHEETUI_GETICON_INFO
 ---
 
@@ -50,26 +54,26 @@ typedef struct _PROPSHEETUI_GETICON_INFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            CPSUI-supplied size, in bytes, of the PROPSHEETUI_GETICON_INFO structure.
-        
-            `cxIcon`
+`cbSize`
 
-            CPSUI-supplied icon width, in pixels.
-        
-            `cyIcon`
+CPSUI-supplied size, in bytes, of the PROPSHEETUI_GETICON_INFO structure.
 
-            CPSUI-supplied icon height, in pixels.
-        
-            `Flags`
+`cxIcon`
 
-            Reserved.
-        
-            `hIcon`
+CPSUI-supplied icon width, in pixels.
 
-            Receives an application-supplied icon handle. If the icon is not loaded, the member must be set to zero.
+`cyIcon`
+
+CPSUI-supplied icon height, in pixels.
+
+`Flags`
+
+Reserved.
+
+`hIcon`
+
+Receives an application-supplied icon handle. If the icon is not loaded, the member must be set to zero.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 690c900f-fba8-4712-9a05-bfbe633dd9cf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_X64_REGISTER_STATE, WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE
+ms.keywords : whea.whea_x64_register_state, whearef_2602d89a-de68-4dd9-ba4b-bb42fc0f258b.xml, WHEA_X64_REGISTER_STATE, ntddk/WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE, PWHEA_X64_REGISTER_STATE structure pointer [WHEA Drivers and Applications], PWHEA_X64_REGISTER_STATE, ntddk/PWHEA_X64_REGISTER_STATE, _WHEA_X64_REGISTER_STATE, WHEA_X64_REGISTER_STATE structure [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_X64_REGISTER_STATE
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE
 ---
 
@@ -80,55 +84,54 @@ typedef struct _WHEA_X64_REGISTER_STATE {
 
 ## Members
 
-        
-            `Cr0`
 
-            The control register 0.
-        
-            `Cr1`
+`Cr0`
 
-            The control register 1.
-        
-            `Cr2`
+The control register 0.
 
-            The control register 2.
-        
-            `Cr3`
+`Cr1`
 
-            The control register 3.
-        
-            `Cr4`
+The control register 1.
 
-            The control register 4.
-        
-            `Cr8`
+`Cr2`
 
-            The control register 8.
-        
-            `Cs`
+The control register 2.
 
-            The code segment register.
-        
-            `Ds`
+`Cr3`
 
-            The data segment register.
-        
-            `Eip`
+The control register 3.
 
-            The instruction pointer register.
-        
-            `Es`
+`Cr4`
 
-            The extra segment register.
-        
-            `Fs`
+The control register 4.
 
-            The general purpose segment register FS.
-        
-            `Gdtr`
+`Cr8`
 
-            A WHEA128A structure that contains the state of the global descriptor table register. The WHEA128A structure describes a 128-bit value and is defined as follows:
+The control register 8.
 
+`Cs`
+
+The code segment register.
+
+`Ds`
+
+The data segment register.
+
+`Eip`
+
+The instruction pointer register.
+
+`Es`
+
+The extra segment register.
+
+`Fs`
+
+The general purpose segment register FS.
+
+`Gdtr`
+
+A WHEA128A structure that contains the state of the global descriptor table register. The WHEA128A structure describes a 128-bit value and is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -142,101 +145,101 @@ typedef struct _WHEA_X64_REGISTER_STATE {
 </td>
 </tr>
 </table></span></div>
-        
-            `Gs`
 
-            The general purpose segment register GS.
-        
-            `Idtr`
+`Gs`
 
-            A WHEA128A structure that contains the state of the interrupt descriptor table register. For a description of the WHEA128A structure, see the description for the <b>Gdtr</b> member.
-        
-            `Ldtr`
+The general purpose segment register GS.
 
-            The local descriptor table register.
-        
-            `R10`
+`Idtr`
 
-            The general purpose register R10.
-        
-            `R11`
+A WHEA128A structure that contains the state of the interrupt descriptor table register. For a description of the WHEA128A structure, see the description for the <b>Gdtr</b> member.
 
-            The general purpose register R11.
-        
-            `R12`
+`Ldtr`
 
-            The general purpose register R12.
-        
-            `R13`
+The local descriptor table register.
 
-            The general purpose register R13.
-        
-            `R14`
+`R10`
 
-            The general purpose register R14.
-        
-            `R15`
+The general purpose register R10.
 
-            The general purpose register R15.
-        
-            `R8`
+`R11`
 
-            The general purpose register R8.
-        
-            `R9`
+The general purpose register R11.
 
-            The general purpose register R9.
-        
-            `Rax`
+`R12`
 
-            The accumulator register.
-        
-            `Rbp`
+The general purpose register R12.
 
-            The base pointer register.
-        
-            `Rbx`
+`R13`
 
-            The base register.
-        
-            `Rcx`
+The general purpose register R13.
 
-            The count register.
-        
-            `Rdi`
+`R14`
 
-            The destination index register.
-        
-            `Rdx`
+The general purpose register R14.
 
-            The data register.
-        
-            `Reserved`
+`R15`
 
-            Reserved for system use.
-        
-            `Rflags`
+The general purpose register R15.
 
-            The flags register.
-        
-            `Rsi`
+`R8`
 
-            The source index register.
-        
-            `Rsp`
+The general purpose register R8.
 
-            The stack pointer register.
-        
-            `Ss`
+`R9`
 
-            The stack segment register.
-        
-            `Tr`
+The general purpose register R9.
 
-            The task register.
+`Rax`
 
-    ## Remarks
-        If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a> structure is set to XPF_CONTEXT_INFO_64BITCONTEXT, the <b>RegisterData</b> member of that structure contains a WHEA_X64_REGISTER_STATE structure.
+The accumulator register.
+
+`Rbp`
+
+The base pointer register.
+
+`Rbx`
+
+The base register.
+
+`Rcx`
+
+The count register.
+
+`Rdi`
+
+The destination index register.
+
+`Rdx`
+
+The data register.
+
+`Reserved`
+
+Reserved for system use.
+
+`Rflags`
+
+The flags register.
+
+`Rsi`
+
+The source index register.
+
+`Rsp`
+
+The stack pointer register.
+
+`Ss`
+
+The stack segment register.
+
+`Tr`
+
+The task register.
+
+## Remarks
+If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a> structure is set to XPF_CONTEXT_INFO_64BITCONTEXT, the <b>RegisterData</b> member of that structure contains a WHEA_X64_REGISTER_STATE structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -246,13 +249,10 @@ typedef struct _WHEA_X64_REGISTER_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a>
-</dt>
-</dl>
+
  
 
  

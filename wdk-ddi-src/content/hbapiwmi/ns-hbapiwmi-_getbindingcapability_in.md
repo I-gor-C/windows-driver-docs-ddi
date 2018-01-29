@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cd4046db-f9f5-4c9e-8886-29504c727f67
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetBindingCapability_IN, *PGetBindingCapability_IN, GetBindingCapability_IN
+ms.keywords : hbapiwmi/GetBindingCapability_IN, hbapiwmi/PGetBindingCapability_IN, PGetBindingCapability_IN structure pointer [Storage Devices], PGetBindingCapability_IN, *PGetBindingCapability_IN, _GetBindingCapability_IN, GetBindingCapability_IN, GetBindingCapability_IN structure [Storage Devices], storage.getbindingcapability_in, structs-Fibre_11549945-ce24-45b2-b547-724bfa1b2380.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetBindingCapability_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGetBindingCapability_IN, GetBindingCapability_IN"
 ---
 
@@ -46,13 +50,13 @@ typedef struct _GetBindingCapability_IN {
 
 ## Members
 
-        
-            `PortWWN`
 
-            Contains a worldwide name that indicates the port whose persistent bindings are to be retrieved.
+`PortWWN`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the GetBindingCapability_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
+Contains a worldwide name that indicates the port whose persistent bindings are to be retrieved.
+
+## Remarks
+The WMI tool suite generates a declaration of the GetBindingCapability_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,13 +66,10 @@ typedef struct _GetBindingCapability_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553902">GetBindingCapability</a>
-</dt>
-</dl>
+
  
 
  

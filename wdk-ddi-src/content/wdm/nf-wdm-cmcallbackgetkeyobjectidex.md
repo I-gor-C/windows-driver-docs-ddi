@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E55CDAF9-2711-4DC6-8BED-EDB0D78D9158
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CmCallbackGetKeyObjectIDEx
+ms.keywords : CmCallbackGetKeyObjectIDEx routine [Kernel-Mode Driver Architecture], wdm/CmCallbackGetKeyObjectIDEx, kernel.cmcallbackgetkeyobjectidex, CmCallbackGetKeyObjectIDEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CmCallbackGetKeyObjectIDEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # CmCallbackGetKeyObjectIDEx function
 The <b>CmCallbackGetKeyObjectIDEx</b> routine retrieves the unique identifier and object name that are associated with a specified registry key object.
+<div class="alert"><b>Note</b>  This routine is available starting with Windows 8. In earlier versions of Windows, use the <a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectid.md">CmCallbackGetKeyObjectID</a> routine instead. For more information, see Remarks.</div><div> </div>
 
 ## Syntax
 
@@ -60,9 +65,7 @@ A cookie value that represents the caller's registration to receive registry fil
 `Object`
 
 A pointer to the registry key object. This parameter is the pointer value that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> callback routine received in the <b>Object</b> member of one of the <b>REG_<i>XXX</i>_KEY_INFORMATION</b> structures.
-
-<div class="alert"><b>Warning</b>  In certain circumstances registry callback notification structures may contain invalid non-NULL object pointers. Registry filtering drivers must not pass such pointers to this routine. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=613134">Invalid Key Object Pointers in Registry Notifications</a>.</div>
-<div> </div>
+<div class="alert"><b>Warning</b>  In certain circumstances registry callback notification structures may contain invalid non-NULL object pointers. Registry filtering drivers must not pass such pointers to this routine. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=613134">Invalid Key Object Pointers in Registry Notifications</a>.</div><div> </div>
 
 `ObjectID`
 
@@ -80,9 +83,23 @@ Reserved. Set to zero.
 ## Return Value
 
 <b>CmCallbackGetKeyObjectIDEx</b> returns STATUS_SUCCESS if the operation succeeds. Possible error return values include the following status code.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>Cookie</i>, <i>Object</i>, or <i>Flags</i> parameter is invalid.
+</dl>
+</td>
+<td width="60%">
+The <i>Cookie</i>, <i>Object</i>, or <i>Flags</i> parameter is invalid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -116,26 +133,18 @@ For more information about registry filter drivers, see <a href="https://msdn.mi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectid.md">CmCallbackGetKeyObjectID</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-cmcallbackreleasekeyobjectidex.md">CmCallbackReleaseKeyObjectIDEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
+
+<a href="..\wdm\nf-wdm-cmcallbackreleasekeyobjectidex.md">CmCallbackReleaseKeyObjectIDEx</a>
+
+<a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectid.md">CmCallbackGetKeyObjectID</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+
  
 
  

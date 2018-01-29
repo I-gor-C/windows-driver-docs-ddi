@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D55A8B5A-4133-4CE8-AD08-F551A3AEA42C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION
+ms.keywords : DXGKARG_HISTORYBUFFERPRECISION structure [Display Devices], display.dxgkarg_historybufferprecision, DXGKARG_HISTORYBUFFERPRECISION, _DXGKARG_HISTORYBUFFERPRECISION, d3dkmddi/DXGKARG_HISTORYBUFFERPRECISION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_HISTORYBUFFERPRECISION
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_HISTORYBUFFERPRECISION
 ---
 
@@ -46,13 +50,12 @@ typedef struct _DXGKARG_HISTORYBUFFERPRECISION {
 
 ## Members
 
-        
-            `PrecisionBits`
 
-            The number of valid bits that are used in each time stamp. This number doesn't include bits used for junk values.
+`PrecisionBits`
+
+The number of valid bits that are used in each time stamp. This number doesn't include bits used for junk values.
 
 This precision value has three valid ranges:
-
 <table>
 <tr>
 <th>Value</th>
@@ -60,9 +63,59 @@ This precision value has three valid ranges:
 </tr>
 <tr>
 <td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+No bits contain useful data, and the  DirectX graphics kernel subsystem will call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_formathistorybuffer.md">DxgkDdiFormatHistoryBuffer</a> function to provide valid data to output to the Event Tracing for Windows (ETW) facility. When the driver processes this call, it sets a new precision value as the output parameter of the function.
 
-    ## Remarks
-        In a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> function, the output data size,  <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>.<b>OutputDataSize</b>, is:
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>32</dt>
+</dl>
+</td>
+<td width="60%">
+The driver should log 32-bit time stamps using the full 32 bits of precision.
+
+
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>33–64</dt>
+</dl>
+</td>
+<td width="60%">
+The driver should log 64-bit time stamps. This value defines the number of bits used to store data per time stamp.
+
+To reduce the cost of formatting the data, the driver can include junk values in the 64-bit time stamps. For example, the driver could write 64-bit time stamps with 55 valid bits of precision. In this case the upper 9 bits are considered junk values and are stripped off by ETW.
+
+</td>
+</tr>
+</table> 
+
+Values between 0 and 32 are unsupported and invalid.
+
+If the hardware supports 64-bit time stamps but only 32 bits are usable, the driver must ensure that the data is presented correctly to the DirectX graphics kernel subsystem. If the driver has no other alternatives to present the data, it should provide the precision value when the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_formathistorybuffer.md">DxgkDdiFormatHistoryBuffer</a> function is next called.
+
+## Remarks
+In a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> function, the output data size,  <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>.<b>OutputDataSize</b>, is:
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>sizeof(DXGKARG_HISTORYBUFFERPRECISION) * m_DriverCaps.GpuEngineTopology.NbAsymetricProcessingNodes</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,19 +125,14 @@ This precision value has three valid ranges:
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_formathistorybuffer.md">DxgkDdiFormatHistoryBuffer</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_formathistorybuffer.md">DxgkDdiFormatHistoryBuffer</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
+
  
 
  

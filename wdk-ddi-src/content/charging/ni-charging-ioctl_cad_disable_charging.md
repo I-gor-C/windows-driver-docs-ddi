@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 51E91097-7315-489A-8C07-0946481BF573
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _POWERSOURCEID, POWERSOURCEID, *PPOWERSOURCEID
+ms.keywords : battery.ioctl_cad_disable_charging, IOCTL_CAD_DISABLE_CHARGING control code [Battery Devices], IOCTL_CAD_DISABLE_CHARGING, charging/IOCTL_CAD_DISABLE_CHARGING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CAD_DISABLE_CHARGING
-req.alt-loc : charging.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : POWERSOURCEID, *PPOWERSOURCEID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPOWERSOURCEID, POWERSOURCEID"
 ---
 
 # IOCTL_CAD_DISABLE_CHARGING IOCTL

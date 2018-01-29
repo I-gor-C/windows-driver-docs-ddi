@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2cb96d6b-37f1-47dd-8135-66d3ead2dd64
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_QmatrixData, *LPDXVA_QmatrixData, DXVA_QmatrixData
+ms.keywords : "*LPDXVA_QmatrixData, DXVA_QmatrixData structure [Display Devices], display.dxva_qmatrixdata, LPDXVA_QmatrixData structure pointer [Display Devices], LPDXVA_QmatrixData, dxvaref_96294cc5-1f6c-4632-bb98-df5e56bac34f.xml, dxva/LPDXVA_QmatrixData, dxva/DXVA_QmatrixData, DXVA_QmatrixData, _DXVA_QmatrixData"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_QmatrixData
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPDXVA_QmatrixData, DXVA_QmatrixData"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DXVA_QmatrixData, *LPDXVA_QmatrixData
 ---
 
 # _DXVA_QmatrixData structure
@@ -47,11 +51,10 @@ typedef struct _DXVA_QmatrixData {
 
 ## Members
 
-        
-            `bNewQmatrix`
 
-            Indicates which new inverse-quantization matrices are present in an inverse-quantization matrix buffer. Each element in this array corresponds to an inverse-quantization matrix type and indicates whether a new inverse-quantization matrix of that type is present in the buffer. If any element in the <b>bNewQmatrix</b> array contains a value of 1, a new inverse-quantization matrix of the type specified for that array element follows in the inverse-quantization matrix buffer. The inverse-quantization matrices that can be used are as follows.
+`bNewQmatrix`
 
+Indicates which new inverse-quantization matrices are present in an inverse-quantization matrix buffer. Each element in this array corresponds to an inverse-quantization matrix type and indicates whether a new inverse-quantization matrix of that type is present in the buffer. If any element in the <b>bNewQmatrix</b> array contains a value of 1, a new inverse-quantization matrix of the type specified for that array element follows in the inverse-quantization matrix buffer. The inverse-quantization matrices that can be used are as follows.
 <table>
 <tr>
 <th>bNewQmatrix Element</th>
@@ -97,37 +100,23 @@ Specifies inter-chrominance quantization.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
-<dl>
-<dd>
 The value in <b>bNewQmatrix</b>[0] and <b>bNewQmatrix</b>[1] must not both be zero.
 
-</dd>
-<dd>
 If the value for <b>bNewQmatrix</b>[2] or <b>bNewQmatrix</b>[3] is zero, then the following applies:
 
-</dd>
-<dd>
 If <b>bNewQmatrix</b>[<i>i </i>- 2] is zero, the previous inverse-quantization matrix defined by the <i>i</i>th element must continue to be used by the accelerator.
 
-</dd>
-<dd>
 If <b>bNewQmatrix</b>[<i>i </i>- 2] is 1, the inverse-quantization matrix defined by the <i>i</i>th element is set equal to the new inverse-quantization matrix for <i>i </i>- 2.
 
-</dd>
-</dl>
-        
-            `Qmatrix`
+`Qmatrix`
 
-            A two-dimensional array that specifies an inverse-quantization matrix buffer. This array is present only for each element in <b>bNewQmatrix</b> equal to 1. The matrix consists of (<b>bBlockWidthMinus1</b>+1) X (<b>bBlockHeightMinus1</b>+1) unsigned words (in which only the lower 8 bits of each word are used for the dominant video coding standards), where <b>bBlockWidthMinus1</b> and <b>bBlockHeightMinus1</b> are members of the <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a> structure.
+A two-dimensional array that specifies an inverse-quantization matrix buffer. This array is present only for each element in <b>bNewQmatrix</b> equal to 1. The matrix consists of (<b>bBlockWidthMinus1</b>+1) X (<b>bBlockHeightMinus1</b>+1) unsigned words (in which only the lower 8 bits of each word are used for the dominant video coding standards), where <b>bBlockWidthMinus1</b> and <b>bBlockHeightMinus1</b> are members of the <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a> structure.
+<div class="alert"><b>Note</b>  For MPEG-2 bitstreams, the data values within Qmatrix are in zigzag inverse scan order, as specified in subclause 7.3.1 and figure 7-2 of MPEG-2.</div><div> </div>
 
-<div class="alert"><b>Note</b>  For MPEG-2 bitstreams, the data values within Qmatrix are in zigzag inverse scan order, as specified in subclause 7.3.1 and figure 7-2 of MPEG-2.</div>
-<div> </div>
-
-    ## Remarks
-        If the video coding does not need inverse-quantization matrices (for example, H.261 and H.263), inverse-quantization matrix buffers must not be sent. If the video coding does need inverse-quantization matrices, some value must be provided for these inverse-quantization matrices by the host prior to, or in conjunction with, the transfer of any bitstream data buffers at the start of the video decoding process.
+## Remarks
+If the video coding does not need inverse-quantization matrices (for example, H.261 and H.263), inverse-quantization matrix buffers must not be sent. If the video coding does need inverse-quantization matrices, some value must be provided for these inverse-quantization matrices by the host prior to, or in conjunction with, the transfer of any bitstream data buffers at the start of the video decoding process.
 
 No default values of inverse-quantization matrices may be assumed by the accelerator in the absence of any prior value sent by the host. The quantization matrix values must be sent explicitly, even if they contain values that are available by default in the relevant video coding specification.
 
@@ -143,16 +132,12 @@ The order of the data values within the inverse-quantization matrix is as specif
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
-</dt>
-<dt>
+
 <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
-</dt>
-</dl>
+
  
 
  

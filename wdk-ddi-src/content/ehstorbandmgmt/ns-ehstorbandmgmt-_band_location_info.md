@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A9E28600-45B2-4082-917F-29B3237DEC84
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _BAND_LOCATION_INFO, *PBAND_LOCATION_INFO, BAND_LOCATION_INFO
+ms.keywords : ehstorbandmgmt/PBAND_LOCATION_INFO, storage.band_location_info, ehstorbandmgmt/BAND_LOCATION_INFO, BAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], _BAND_LOCATION_INFO, BAND_LOCATION_INFO structure [Storage Devices], PBAND_LOCATION_INFO, *PBAND_LOCATION_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BAND_LOCATION_INFO
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBAND_LOCATION_INFO, BAND_LOCATION_INFO"
 ---
 
@@ -50,29 +54,29 @@ typedef struct _BAND_LOCATION_INFO {
 
 ## Members
 
-        
-            `BandSize`
 
-            The size in bytes of the band configured at this location. This value is set to the maximum size possible for the global band.
-        
-            `BandStart`
+`BandSize`
 
-            The offset in bytes of this band location on the storage device. This value is always 0 for the global band.
-        
-            `Metadata`
+The size in bytes of the band configured at this location. This value is set to the maximum size possible for the global band.
 
-            A metadata field used as a data area for a band management application.
-        
-            `Reserved`
+`BandStart`
 
-            Reserved.
-        
-            `StructSize`
+The offset in bytes of this band location on the storage device. This value is always 0 for the global band.
 
-            The size of the structure in bytes. Set to <b>sizeof</b>(BAND_LOCATION_INFO).
+`Metadata`
 
-    ## Remarks
-        <b>BandStart</b> and <b>BandSize</b> must be a multiple of the sector size of the underlying storage device.
+A metadata field used as a data area for a band management application.
+
+`Reserved`
+
+Reserved.
+
+`StructSize`
+
+The size of the structure in bytes. Set to <b>sizeof</b>(BAND_LOCATION_INFO).
+
+## Remarks
+<b>BandStart</b> and <b>BandSize</b> must be a multiple of the sector size of the underlying storage device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,19 +86,14 @@ typedef struct _BAND_LOCATION_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
-</dt>
-<dt>
+
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
-</dt>
-</dl>
+
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
+
  
 
  

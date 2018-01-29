@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 394593f5-92eb-4f84-adbe-67e0e5320ff0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfTimerStop
+ms.keywords : DFTimerObjectRef_6b433db6-e7a0-4521-961d-56c3de8a97ad.xml, wdf.wdftimerstop, WdfTimerStop, kmdf.wdftimerstop, wdftimer/WdfTimerStop, WdfTimerStop method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfTimerStop
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -81,8 +85,6 @@ Do not call <b>WdfTimerStop</b> from inside <a href="https://msdn.microsoft.com/
 
 For more information about framework timer objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-timers">Using Timers</a>.
 
-The following code example stops a specified timer and waits for all of the driver's queued DPCs to execute.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,17 +99,12 @@ The following code example stops a specified timer and waits for all of the driv
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
-</dt>
-<dt>
 <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
+
 <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
-</dt>
-</dl>
+
  
 
  

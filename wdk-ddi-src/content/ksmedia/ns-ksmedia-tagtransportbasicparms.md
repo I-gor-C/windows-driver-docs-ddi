@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 40e305b3-e91c-4227-99e7-dbb939082f54
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagTRANSPORTBASICPARMS, TRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS
+ms.keywords : TRANSPORTBASICPARMS, vidcapstruct_5a5cdf6a-56f3-43ad-9bab-e5d406052707.xml, ksmedia/TRANSPORTBASICPARMS, stream.transportbasicparms, *PTRANSPORTBASICPARMS, PTRANSPORTBASICPARMS, PTRANSPORTBASICPARMS structure pointer [Streaming Media Devices], ksmedia/PTRANSPORTBASICPARMS, tagTRANSPORTBASICPARMS, TRANSPORTBASICPARMS structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSPORTBASICPARMS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS
 ---
 
@@ -75,31 +79,30 @@ typedef struct tagTRANSPORTBASICPARMS {
 
 ## Members
 
-        
-            `Ballistic`
 
-            Specifies any proprietary data.
-        
-            `ColorFrameServo`
+`Ballistic`
 
-            Specifies the color frame servo.
-        
-            `CounterFormat`
+Specifies any proprietary data.
 
-            Specifies the counter format.
-        
-            `EditDelay`
+`ColorFrameServo`
 
-            Indicates the edit delay amount.
-        
-            `EditField`
+Specifies the color frame servo.
 
-            Indicates the edit field.
-        
-            `EndStopAction`
+`CounterFormat`
 
-            Specifies the stop action.
+Specifies the counter format.
 
+`EditDelay`
+
+Indicates the edit delay amount.
+
+`EditField`
+
+Indicates the edit field.
+
+`EndStopAction`
+
+Specifies the stop action.
 <table>
 <tr>
 <th>Flag</th>
@@ -136,27 +139,26 @@ Freeze/pause
 </td>
 </tr>
 </table>
-        
-            `FrameServo`
 
-            Specifies the frame servo.
-        
-            `PlayTCDelay`
+`FrameServo`
 
-            Indicates the play timecode delay amount.
-        
-            `Postroll`
+Specifies the frame servo.
 
-            Indicates the postroll amount.
-        
-            `Preroll`
+`PlayTCDelay`
 
-            Indicates the preroll amount.
-        
-            `RecordFormat`
+Indicates the play timecode delay amount.
 
-            Indicates the basic record format.
+`Postroll`
 
+Indicates the postroll amount.
+
+`Preroll`
+
+Indicates the preroll amount.
+
+`RecordFormat`
+
+Indicates the basic record format.
 <table>
 <tr>
 <th>Flag</th>
@@ -193,19 +195,18 @@ Extended play
 </td>
 </tr>
 </table>
-        
-            `RecPreroll`
 
-            Indicates the record preroll amount.
-        
-            `RecTCDelay`
+`RecPreroll`
 
-            Indicates the record timecode delay amount.
-        
-            `ServoRef`
+Indicates the record preroll amount.
 
-            Specifies the servo ref.
+`RecTCDelay`
 
+Indicates the record timecode delay amount.
+
+`ServoRef`
+
+Specifies the servo ref.
 <table>
 <tr>
 <th>Flag</th>
@@ -252,15 +253,14 @@ Auto
 </td>
 </tr>
 </table>
-        
-            `SetpField`
 
-            Indicates the field step count.
-        
-            `SetTracking`
+`SetpField`
 
-            Specifies the tracking.
+Indicates the field step count.
 
+`SetTracking`
+
+Specifies the tracking.
 <table>
 <tr>
 <th>Flag</th>
@@ -297,23 +297,22 @@ Reset
 </td>
 </tr>
 </table>
-        
-            `Speed`
 
-            Specifies the speed.
-        
-            `StepFrames`
+`Speed`
 
-            Indicates the frame step count.
-        
-            `Superimpose`
+Specifies the speed.
 
-            Indicates whether to enable or disable the onscreen display. Specify <b>TRUE</b> to enable, <b>FALSE</b> to disable.
-        
-            `TimeFormat`
+`StepFrames`
 
-            Indicates the basic time format.
+Indicates the frame step count.
 
+`Superimpose`
+
+Indicates whether to enable or disable the onscreen display. Specify <b>TRUE</b> to enable, <b>FALSE</b> to disable.
+
+`TimeFormat`
+
+Indicates the basic time format.
 <table>
 <tr>
 <th>Flag</th>
@@ -370,11 +369,10 @@ Binary coded decimal, representing tracks, minutes, seconds, and frames
 </td>
 </tr>
 </table>
-        
-            `TimeReference`
 
-            Indicates the basic time reference.
+`TimeReference`
 
+Indicates the basic time reference.
 <table>
 <tr>
 <th>Flag</th>
@@ -411,45 +409,45 @@ Index
 </td>
 </tr>
 </table>
-        
-            `TimerEvent`
 
-            Specifies a timer event.
-        
-            `TimerStartDay`
+`TimerEvent`
 
-            Indicates the timer start-day.
-        
-            `TimerStartTime`
+Specifies a timer event.
 
-            Indicates the timer start-time.
-        
-            `TimerStopDay`
+`TimerStartDay`
 
-            Indicates the timer stop-day.
-        
-            `TimerStopTime`
+Indicates the timer start-day.
 
-            Indicates the timer stop-time.
-        
-            `TunerChannel`
+`TimerStartTime`
 
-            Indicates the tuner channel.
-        
-            `TunerNumber`
+Indicates the timer start-time.
 
-            Indicates the tuner number.
-        
-            `VolumeName`
+`TimerStopDay`
 
-            Specifies the volume name.
-        
-            `WarnGenlock`
+Indicates the timer stop-day.
 
-            Indicates the warn genlock.
+`TimerStopTime`
 
-    ## Remarks
-        Any ED_<i>Xxx</i> tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.</p>
+Indicates the timer stop-time.
+
+`TunerChannel`
+
+Indicates the tuner channel.
+
+`TunerNumber`
+
+Indicates the tuner number.
+
+`VolumeName`
+
+Specifies the volume name.
+
+`WarnGenlock`
+
+Indicates the warn genlock.
+
+## Remarks
+Any ED_<i>Xxx</i> tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 
 ## Requirements
 | &nbsp; | &nbsp; |

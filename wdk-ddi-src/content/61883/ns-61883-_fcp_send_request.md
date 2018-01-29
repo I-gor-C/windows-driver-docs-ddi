@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 82F36729-57E0-49AB-8C2D-BCBA6EED33EE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FCP_SEND_REQUEST, *PFCP_REQUEST, FCP_REQUEST, FCP_SEND_REQUEST, *PFCP_SEND_REQUEST
+ms.keywords : 61883/FCP_SEND_REQUEST, PFCP_SEND_REQUEST, *PFCP_SEND_REQUEST, PFCP_SEND_REQUEST structure pointer [Buses], FCP_SEND_REQUEST structure [Buses], *PFCP_REQUEST, _FCP_SEND_REQUEST, 61883/PFCP_SEND_REQUEST, FCP_REQUEST, FCP_SEND_REQUEST, IEEE.fcp_send_request
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FCP_SEND_REQUEST
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PFCP_REQUEST, FCP_REQUEST, FCP_SEND_REQUEST, *PFCP_SEND_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFCP_REQUEST, *PFCP_SEND_REQUEST, FCP_REQUEST, FCP_SEND_REQUEST"
 ---
 
 # _FCP_SEND_REQUEST structure
@@ -48,21 +52,21 @@ typedef struct _FCP_SEND_REQUEST {
 
 ## Members
 
-        
-            `Frame`
 
-            On input, a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537113">FCP_FRAME</a> structure that contains the FCP request to send to the device.
-        
-            `Length`
+`Frame`
 
-            On input, the length of the Frame payload in bytes, including the FCP header.
-        
-            `NodeAddress`
+On input, a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537113">FCP_FRAME</a> structure that contains the FCP request to send to the device.
 
-            On input, if the protocol driver is being used to control a virtual device, <b>NodeAddress</b> must contain the node address of the device to which this request is being sent so the protocol driver can route the request to the correct device. If the protocol driver is being used to control a physical device, <b>NodeAddress</b> is not used.
+`Length`
 
-    ## Remarks
-        If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
+On input, the length of the Frame payload in bytes, including the FCP header.
+
+`NodeAddress`
+
+On input, if the protocol driver is being used to control a virtual device, <b>NodeAddress</b> must contain the node address of the device to which this request is being sent so the protocol driver can route the request to the correct device. If the protocol driver is being used to control a physical device, <b>NodeAddress</b> is not used.
+
+## Remarks
+If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
@@ -76,13 +80,10 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

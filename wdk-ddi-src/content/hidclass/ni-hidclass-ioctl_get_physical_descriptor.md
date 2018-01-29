@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : cf15dd7f-4568-40c7-b2e4-7cec8239df0b
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : hid.ioctl_get_physical_descriptor, IOCTL_GET_PHYSICAL_DESCRIPTOR control code [Human Input Devices], IOCTL_GET_PHYSICAL_DESCRIPTOR, hidclass/IOCTL_GET_PHYSICAL_DESCRIPTOR, hidioreq_3a61c6d2-a97a-47d6-86b1-317e22775271.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GET_PHYSICAL_DESCRIPTOR
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -46,13 +50,13 @@ For general information about HIDClass devices, see <a href="https://msdn.micros
 <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the output buffer.
 
 ### Input Buffer Length
-None
+<text></text>
 
 ### Output Buffer
 <b>Irp-&gt;MdlAddress</b> must point to the buffer that will receive the physical descriptor.
 
 ### Output Buffer Length
-
+<text></text>
 
 ### Input / Output Buffer
 <text></text>
@@ -61,7 +65,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The HID class driver sets the <b>Status</b> member of <b>Irp-&gt;IoStatus</b> to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
 
 
@@ -72,13 +75,10 @@ The HID class driver sets the <b>Status</b> member of <b>Irp-&gt;IoStatus</b> to
 | **Header** | hidclass.h (include Hidclass.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidsdi\nf-hidsdi-hidd_getphysicaldescriptor.md">HidD_GetPhysicalDescriptor</a>
-</dt>
-</dl>
+
  
 
  

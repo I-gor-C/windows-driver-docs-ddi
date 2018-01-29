@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8418ed17-39f0-4a3b-9eb5-453c7cc2ae98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxResumeBlockedOperations_Serially
+ms.keywords : RxResumeBlockedOperations_Serially function [Installable File System Drivers], rxref_b1284b31-72f0-4e0e-9602-817080b96e16.xml, ifsk.rxresumeblockedoperations_serially, rxcontx/RxResumeBlockedOperations_Serially, RxResumeBlockedOperations_Serially
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxResumeBlockedOperations_Serially
-req.alt-loc : rxcontx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -89,35 +93,24 @@ A network mini-redirector may need to call <b>RxResumeBlockedOperations_Serially
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxprocs\nf-rxprocs-rxcompleterequest_real.md">RxCompleteRequest_Real</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext_real.md">RxDereferenceAndDeleteRxContext_Real</a>
-</dt>
-<dt>
+
 <a href="..\rxprocs\nf-rxprocs-rxfsdpostrequest.md">RxFsdPostRequest</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
-</dt>
-<dt>
+
+<a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext_real.md">RxDereferenceAndDeleteRxContext_Real</a>
+
+<a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557382">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
-</dt>
-</dl>
+
+<a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
+
+<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+
+<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
+
  
 
  

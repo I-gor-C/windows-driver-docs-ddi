@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c43ee3dd-552a-41ab-9b4f-01611e44f453
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ISCSI_Persistent_Login, *PISCSI_Persistent_Login, ISCSI_Persistent_Login
+ms.keywords : structs-iSCSI_86b54cb5-df75-47c0-8dc4-337a5f46bea0.xml, iscsiop/ISCSI_Persistent_Login, PISCSI_Persistent_Login structure pointer [Storage Devices], _ISCSI_Persistent_Login, ISCSI_Persistent_Login structure [Storage Devices], *PISCSI_Persistent_Login, ISCSI_Persistent_Login, storage.iscsi_persistent_login, iscsiop/PISCSI_Persistent_Login, PISCSI_Persistent_Login
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_Persistent_Login
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PISCSI_Persistent_Login, ISCSI_Persistent_Login"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ISCSI_Persistent_Login, *PISCSI_Persistent_Login
 ---
 
 # _ISCSI_Persistent_Login structure
@@ -55,46 +59,46 @@ typedef struct _ISCSI_Persistent_Login {
 
 ## Members
 
-        
-            `InitiatorPortNumber`
 
-            The port number on the initiator side to perform the logon operation through.
-        
-            `IsInformationalSession`
+`InitiatorPortNumber`
 
-            A Boolean value that indicates whether the persistent logon is configured to establish a purely informational session. If this member is <b>TRUE</b>, the persistent logon is configured to establish a purely informational session.
-        
-            `LoginOptions`
+The port number on the initiator side to perform the logon operation through.
 
-            An <a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the persistent logon session.
-        
-            `SecurityFlags`
+`IsInformationalSession`
 
-            A bitwise OR of security flags that indicate the security requirements of the target that is specified in the persistent logon. For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.
-        
-            `TargetMapping`
+A Boolean value that indicates whether the persistent logon is configured to establish a purely informational session. If this member is <b>TRUE</b>, the persistent logon is configured to establish a purely informational session.
 
-            An <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a> structure that defines the target mappings.
-        
-            `TargetName`
+`LoginOptions`
 
-            A wide character string that indicates the name of the target with which the iSCSI initiator service establishes a persistent logon when it restarts.
-        
-            `TargetPortal`
+An <a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the persistent logon session.
 
-            An <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structure that specifies which target portal to use for the initial logon connection.
-        
-            `UniqueIdForISID`
+`SecurityFlags`
 
-            Portal to use for initial connection
-        
-            `Username`
+A bitwise OR of security flags that indicate the security requirements of the target that is specified in the persistent logon. For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.
 
-            A variable-length array of characters that specifies the challenge handshake authentication protocol user name (CHAP_N) to use when the initiator is authenticating the target. The number of elements in the array is specified by the <b>UsernameSize</b> field.
-        
-            `UsernameSize`
+`TargetMapping`
 
-            The size, in bytes, of the string in <b>Username</b>.
+An <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a> structure that defines the target mappings.
+
+`TargetName`
+
+A wide character string that indicates the name of the target with which the iSCSI initiator service establishes a persistent logon when it restarts.
+
+`TargetPortal`
+
+An <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structure that specifies which target portal to use for the initial logon connection.
+
+`UniqueIdForISID`
+
+Portal to use for initial connection
+
+`Username`
+
+A variable-length array of characters that specifies the challenge handshake authentication protocol user name (CHAP_N) to use when the initiator is authenticating the target. The number of elements in the array is specified by the <b>UsernameSize</b> field.
+
+`UsernameSize`
+
+The size, in bytes, of the string in <b>Username</b>.
 
 
 ## Requirements
@@ -105,25 +109,18 @@ typedef struct _ISCSI_Persistent_Login {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561556">ISCSI_Persistent_Login WMI Class</a>
-</dt>
-<dt>
-<a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a>
-</dt>
-<dt>
+
 <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a>
-</dt>
-<dt>
+
 <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
-</dt>
-<dt>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
-</dt>
-</dl>
+
  
 
  

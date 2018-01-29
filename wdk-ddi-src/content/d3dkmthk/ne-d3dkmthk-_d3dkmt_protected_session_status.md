@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 87a7de73-5e94-4016-b760-f3501ead08ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_PROTECTED_SESSION_STATUS, D3DKMT_PROTECTED_SESSION_STATUS
+ms.keywords : D3DKMT_PROTECTED_SESSION_STATUS_INVALID, D3DKMT_PROTECTED_SESSION_STATUS, D3DKMT_PROTECTED_SESSION_STATUS_OK, display.d3dkmt-protected-session-status, d3dkmthk/D3DKMT_PROTECTED_SESSION_STATUS_OK, D3DKMT_PROTECTED_SESSION_STATUS enumeration [Display Devices], d3dkmthk/D3DKMT_PROTECTED_SESSION_STATUS, d3dkmthk/D3DKMT_PROTECTED_SESSION_STATUS_INVALID, _D3DKMT_PROTECTED_SESSION_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_PROTECTED_SESSION_STATUS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_PROTECTED_SESSION_STATUS
 ---
 

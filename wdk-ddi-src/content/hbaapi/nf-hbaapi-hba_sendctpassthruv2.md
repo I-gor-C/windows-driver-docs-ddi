@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 95526c2d-19bf-4f4a-abfa-e5be73c1a6a5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendCTPassThruV2
+ms.keywords : HBA_SendCTPassThruV2, storage.hba_sendctpassthruv2, fibreHBA_rtns_8ed894f5-3f6c-4b71-a149-8e5624643aa0.xml, HBA_SendCTPassThruV2 routine [Storage Devices], hbaapi/HBA_SendCTPassThruV2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SendCTPassThruV2
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -55,7 +59,7 @@ HBA_STATUS HBA_API HBA_SendCTPassThruV2(
 
 `Handle`
 
-
+TBD
 
 `HbaPortWWN`
 
@@ -75,7 +79,7 @@ Pointer to a buffer that contains the payload data from the reply to the common 
 
 `pRspBufferSize`
 
-
+TBD
 
 
 ## Return Value
@@ -104,20 +108,14 @@ A CT command can request services that distribute encryption keys, IP addresses,
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_sendctpassthru.md">HBA_SendCTPassThru</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565409">SendCTPassThru</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_sendctpassthru.md">HBA_SendCTPassThru</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

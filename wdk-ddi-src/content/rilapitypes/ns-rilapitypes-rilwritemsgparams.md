@@ -7,8 +7,8 @@ old-location : netvista\rilwritemsgparams_2.htm
 old-project : netvista
 ms.assetid : 7221efdc-1751-4539-9dc1-5ba3cd40c5ce
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILWRITEMSGPARAMS, RILWRITEMSGPARAMS, *LPRILWRITEMSGPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILWRITEMSGPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILWRITEMSGPARAMS, RILWRITEMSGPARAMS, *LPRILWRITEMSGPARAMS, netvista.rilwritemsgparams_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILWRITEMSGPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILWRITEMSGPARAMS, *LPRILWRITEMSGPARAMS
 req.product : Windows 10 or later.
 ---
@@ -49,18 +53,18 @@ typedef struct _RILWRITEMSGPARAMS {
 
 ## Members
 
-        
-            `dwStatus`
 
-            
-        
-            `hUiccApp`
+`dwStatus`
 
-            
-        
-            `rmMessage`
 
-            
+
+`hUiccApp`
+
+
+
+`rmMessage`
+
+
 
 
 ## Requirements

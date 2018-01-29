@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 54484E17-AA96-4152-B672-94C29E53F352
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUrbSetBytesCompleted
+ms.keywords : buses.evt_udecx_usb_device_set_function_suspend_and_wake, EvtUsbDeviceSetFunctionSuspendAndWake callback function [Buses], EvtUsbDeviceSetFunctionSuspendAndWake, EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE, EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE, udecxusbdevice/EvtUsbDeviceSetFunctionSuspendAndWake
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : EvtUsbDeviceSetFunctionSuspendAndWake
-req.alt-loc : udecxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
 req.product : Windows 10 or later.
 ---
 
@@ -100,14 +104,10 @@ The power request may be completed asynchronously by returning STATUS_PENDING, a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

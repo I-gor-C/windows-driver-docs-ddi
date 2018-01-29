@@ -7,8 +7,8 @@ old-location : image\iwiaimagefilter_initializefilter.htm
 old-project : image
 ms.assetid : 03e359aa-4745-4961-a342-79f725468aab
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaImageFilter, IWiaImageFilter::InitializeFilter, InitializeFilter
+ms.date : 1/18/2018
+ms.keywords : InitializeFilter method [Imaging Devices], InitializeFilter method [Imaging Devices], IWiaImageFilter interface, image.iwiaimagefilter_initializefilter, IWiaImageFilter::InitializeFilter, IWiaImageFilter, InitializeFilter, IWiaErrorHandler_f9d42d0d-1768-4868-bd41-b20297008312.xml, IWiaImageFilter interface [Imaging Devices], InitializeFilter method, wia_lh/IWiaImageFilter::InitializeFilter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaImageFilter.InitializeFilter
-req.alt-loc : wia_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wia_lh.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product : Windows 10 or later.
 ---
@@ -89,16 +93,12 @@ The <b>IWiaItem2, IWiaPreview</b> and <b>IWiaTransfer</b> interfaces are describ
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wia_lh\nn-wia_lh-iwiaimagefilter.md">IWiaImageFilter</a>
-</dt>
-<dt>
+
 <a href="..\wia_lh\nn-wia_lh-iwiatransfercallback.md">IWiaTransferCallback Interface</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaImageFilter::InitializeFilter method%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaImageFilter::InitializeFilter method%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

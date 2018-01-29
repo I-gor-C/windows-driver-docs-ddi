@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c7863713-850f-4516-aec5-9e851c36cf52
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::Purge, Purge
+ms.keywords : wudfddi/IWDFIoQueue::Purge, IWDFIoQueue interface, Purge method, wdf.iwdfioqueue_purge, umdf.iwdfioqueue_purge, IWDFIoQueue::Purge, Purge method, Purge method, IWDFIoQueue interface, Purge, IWDFIoQueue, UMDFQueueObjectRef_5d2113b9-d2e3-4a27-af75-60f4bf7bddbf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.Purge
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -65,20 +69,24 @@ None
 The framework cancels unprocessed requests in the queue. For requests that are delivered to the driver and marked cancelable, the framework calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>. 
 
 The driver should ensure that only one of the following methods is in progress at any given time: 
-
+<ul>
+<li>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
 
 
+</li>
+<li>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558951">IWDFIoQueue::Drain</a>
 
 
+</li>
+<li>
 <b>IWDFIoQueue::Purge</b>
 
-For example, if the driver previously called <b>Purge</b>, it should wait for notification from the method of the interface that the <i>pPurgeComplete</i> parameter points to before it calls either <a href="https://msdn.microsoft.com/library/windows/hardware/dn927275">Stop</a> or <a href="https://msdn.microsoft.com/0356e8a7-de44-4b0f-9067-ca3bb04260d8">Drain</a>. Violating this rule results in termination of the host process.
-
-The following code example shows how to stop requests to a queue.
+</li>
+</ul>For example, if the driver previously called <b>Purge</b>, it should wait for notification from the method of the interface that the <i>pPurgeComplete</i> parameter points to before it calls either <a href="https://msdn.microsoft.com/library/windows/hardware/dn927275">Stop</a> or <a href="https://msdn.microsoft.com/0356e8a7-de44-4b0f-9067-ca3bb04260d8">Drain</a>. Violating this rule results in termination of the host process.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,23 +102,16 @@ The following code example shows how to stop requests to a queue.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558951">IWDFIoQueue::Drain</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558951">IWDFIoQueue::Drain</a>
+
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
+
  
 
  

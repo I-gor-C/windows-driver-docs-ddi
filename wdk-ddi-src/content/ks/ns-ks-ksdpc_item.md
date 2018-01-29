@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7732b1a8-4f76-49d0-acbf-ce0be6b36858
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSDPC_ITEM, KSDPC_ITEM, *PKSDPC_ITEM
+ms.keywords : PKSDPC_ITEM, ks/PKSDPC_ITEM, PKSDPC_ITEM structure pointer [Streaming Media Devices], KSDPC_ITEM structure [Streaming Media Devices], ks/KSDPC_ITEM, KSDPC_ITEM, ks-struct_c40f10e3-5732-4020-a22f-4695eaaa471a.xml, *PKSDPC_ITEM, stream.ksdpc_item
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDPC_ITEM
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSDPC_ITEM, *PKSDPC_ITEM
 ---
 
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `AccessLock`
 
-            This lock is used to synchronize deletion of an event item with any DPC that might be running.
-        
-            `Dpc`
+`AccessLock`
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that is queued to perform notifications that cannot occur at raised IRQL.
-        
-            `ReferenceCount`
+This lock is used to synchronize deletion of an event item with any DPC that might be running.
 
-            Specifies whether pending DPCs will reference this structure. This is initially set to 1 when the event structure is created, and decremented when the event structure is destroyed. If the reference count is nonzero at that time, then the last DPC to run frees the structure rather than the event disable call.
+`Dpc`
 
-    ## Remarks
-        KSDPC_ITEM uses a reference counting scheme to determine when to free the structure.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that is queued to perform notifications that cannot occur at raised IRQL.
+
+`ReferenceCount`
+
+Specifies whether pending DPCs will reference this structure. This is initially set to 1 when the event structure is created, and decremented when the event structure is destroyed. If the reference count is nonzero at that time, then the last DPC to run frees the structure rather than the event disable call.
+
+## Remarks
+KSDPC_ITEM uses a reference counting scheme to determine when to free the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
-</dt>
-</dl>
+
  
 
  

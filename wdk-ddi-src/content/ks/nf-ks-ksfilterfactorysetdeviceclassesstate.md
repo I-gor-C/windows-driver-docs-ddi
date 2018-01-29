@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 66515f08-b652-4aa0-8f22-b5ff0a407d6a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactorySetDeviceClassesState
+ms.keywords : KsFilterFactorySetDeviceClassesState function [Streaming Media Devices], avfunc_a88f0816-e755-450f-b8b7-83dee85171f9.xml, KsFilterFactorySetDeviceClassesState, stream.ksfilterfactorysetdeviceclassesstate, ks/KsFilterFactorySetDeviceClassesState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterFactorySetDeviceClassesState
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -64,7 +68,7 @@ If set to <b>TRUE</b>, the device classes are enabled; if <b>FALSE</b>, they are
 
 ## Remarks
 
-This function is available in Windows XP and DirectX 8.0 and later.</p>
+This function is available in Windows XP and DirectX 8.0 and later.
 
 ## Requirements
 | &nbsp; | &nbsp; |

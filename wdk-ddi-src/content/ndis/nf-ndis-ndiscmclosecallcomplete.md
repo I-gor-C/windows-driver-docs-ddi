@@ -7,8 +7,8 @@ old-location : netvista\ndiscmclosecallcomplete.htm
 old-project : netvista
 ms.assetid : caf248e0-ec9a-4c85-86f7-f35c715c6e39
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisCmCloseCallComplete
+ms.date : 1/18/2018
+ms.keywords : condis_call_manager_ref_9380a315-f44c-4f6d-914f-480408c8d804.xml, netvista.ndiscmclosecallcomplete, ndis/NdisCmCloseCallComplete, NdisCmCloseCallComplete, NdisCmCloseCallComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisCmCloseCallComplete
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_CallManager_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -63,8 +67,8 @@ Specifies the handle to the VC for the call. This handle was supplied by NDIS wh
      <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>. More recently, the call
      manager obtained this handle from its per-VC state designated by the 
      <i>CallMgrVcContext</i> passed as an input parameter to its 
-     <a href="..\ndis\nc-ndis-protocol_cm_close_call.md">
-     ProtocolCmCloseCall</a> function.
+     <mshelp:link keywords="netvista.protocolcmclosecall" tabindex="0"><i>
+     ProtocolCmCloseCall</i></mshelp:link> function.
 
 `NdisPartyHandle`
 
@@ -86,8 +90,8 @@ If a stand-alone call manager's
     <b>NdisCmCloseCallComplete</b> subsequently to notify the client and NDIS that its attempt to break the
     connection has completed, whether successfully or with an error. A call to 
     <b>NdisCmCloseCallComplete</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">
-    ProtocolClCloseCallComplete</a> function.
+    <mshelp:link keywords="netvista.protocolclclosecallcomplete" tabindex="0"><i>
+    ProtocolClCloseCallComplete</i></mshelp:link> function.
 
 If it passes NDIS_STATUS_SUCCESS as the 
     <i>Status</i>, the call manager should consider the 
@@ -121,25 +125,18 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndismcmclosecallcomplete.md">NdisMCmCloseCallComplete</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+<a href="..\ndis\nf-ndis-ndismcmclosecallcomplete.md">NdisMCmCloseCallComplete</a>
+
 <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmCloseCallComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmCloseCallComplete function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

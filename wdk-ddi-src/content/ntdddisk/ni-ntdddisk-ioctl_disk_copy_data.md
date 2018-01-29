@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1434ee49-4c3d-4104-bca4-c0ea4299c9aa
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_copy_data, IOCTL_DISK_COPY_DATA control code [Storage Devices], IOCTL_DISK_COPY_DATA, ntdddisk/IOCTL_DISK_COPY_DATA, k307_d7859abc-a32a-4930-b612-6bea53331e3a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_COPY_DATA
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_COPY_DATA IOCTL
-This IOCTL_DISK_COPY_DATA IOCTL is used to copy data from one area of the disk to another.
-
-
-
 This IOCTL_DISK_COPY_DATA IOCTL is used to copy data from one area of the disk to another.
 
 ### Major Code
@@ -63,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Status</b> field is set to STATUS_SUCCESS if the operation is successful.
 
 
@@ -74,13 +73,10 @@ The <b>Status</b> field is set to STATUS_SUCCESS if the operation is successful.
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_copy_data_parameters.md">DISK_COPY_DATA_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

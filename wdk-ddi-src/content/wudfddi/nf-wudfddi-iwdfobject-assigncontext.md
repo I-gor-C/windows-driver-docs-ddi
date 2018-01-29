@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9b543d5d-ed6d-4440-b5ad-aefca69dd489
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject, IWDFObject::AssignContext, AssignContext
+ms.keywords : IWDFObject::AssignContext, wdf.iwdfobject_assigncontext, IWDFObject interface, AssignContext method, wudfddi/IWDFObject::AssignContext, umdf.iwdfobject_assigncontext, AssignContext method, AssignContext, AssignContext method, IWDFObject interface, IWDFObject, UMDFBaseObjectRef_1cc8c14a-66bd-487c-a58d-00f22f52adcc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFObject.AssignContext
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -77,8 +81,6 @@ Because the context is not a Component Object Model (COM) interface, the driver 
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a> method can be used to retrieve the context that was previously registered through <b>AssignContext</b>.
 
-For a code example of how to use the <b>AssignContext</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,20 +95,14 @@ For a code example of how to use the <b>AssignContext</b> method, see <a href="h
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
+<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+
  
 
  

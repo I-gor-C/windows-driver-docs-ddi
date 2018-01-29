@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9A4249B6-BFC2-42B4-BBA6-094BD78C98DE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG
+ms.keywords : buses._ucx_controller_config, UCX_CONTROLLER_CONFIG structure [Buses], *PUCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG structure pointer [Buses], _UCX_CONTROLLER_CONFIG, ucxcontroller/P_UCX_CONTROLLER_CONFIG, ucxcontroller/_UCX_CONTROLLER_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_CONTROLLER_CONFIG
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -68,94 +72,94 @@ typedef struct _UCX_CONTROLLER_CONFIG {
 
 ## Members
 
-        
-            `AcpiDeviceInfo`
 
-            Information about the advanced configuration and power interface (ACPI) USB controller (if present).
-        
-            `DeviceDescription`
+`AcpiDeviceInfo`
 
-            A description for the device.
-        
-            `EvtControllerGetCurrentFrameNumber`
+Information about the advanced configuration and power interface (ACPI) USB controller (if present).
 
-            A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_current_framenumber.md">EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER</a> call back function.
-        
-            `EvtControllerGetTransportCharacteristics`
+`DeviceDescription`
 
-            A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_transport_characteristics.md">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a> callback function.
-        
-            `EvtControllerQueryUsbCapability`
+A description for the device.
 
-            A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_query_usb_capability.md">EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</a> callback function.
-        
-            `EvtControllerReset`
+`EvtControllerGetCurrentFrameNumber`
 
-            A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_reset.md">EVT_UCX_CONTROLLER_RESET</a> callback function.
-        
-            `EvtControllerSetTransportCharacteristicsChangeNotification`
+A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_current_framenumber.md">EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER</a> call back function.
 
-            A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_set_transport_characteristics_change_notification.md">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.
-        
-            `EvtControllerUsbDeviceAdd`
+`EvtControllerGetTransportCharacteristics`
 
-            A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> callback function.
-        
-            `ManufacturerNameString`
+A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_transport_characteristics.md">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a> callback function.
 
-            String containing the manufacturer name.
-        
-            `ModelNameString`
+`EvtControllerQueryUsbCapability`
 
-            String containing the model name of the controller hardware.
-        
-            `ModelNumberString`
+A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_query_usb_capability.md">EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</a> callback function.
 
-            String containing the model number of the controller hardware.
-        
-            `NumberOfPresentedDeviceMgmtEvtCallbacks`
+`EvtControllerReset`
 
-            The number of device event callback functions provided by this structure.
-        
-            `ParentBusType`
+A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_reset.md">EVT_UCX_CONTROLLER_RESET</a> callback function.
 
-            The parent bus type of the USB controller.
-        
-            `PciDeviceInfo`
+`EvtControllerSetTransportCharacteristicsChangeNotification`
 
-            Information about the PCI USB controller (if present).
-        
-            `Reserved1`
+A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_set_transport_characteristics_change_notification.md">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.
 
-            Do not use.
-        
-            `Reserved2`
+`EvtControllerUsbDeviceAdd`
 
-            Do not use.
-        
-            `Reserved3`
+A pointer to an <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> callback function.
 
-            Do not use.
-        
-            `Reserved4`
+`ManufacturerNameString`
 
-            Do not use.
-        
-            `Reserved5`
+String containing the manufacturer name.
 
-            Do not use.
-        
-            `Reserved6`
+`ModelNameString`
 
-            Do not use.
-        
-            `Reserved7`
+String containing the model name of the controller hardware.
 
-            Do not use.
-        
-            `Size`
+`ModelNumberString`
 
-            The size in bytes of this structure.
+String containing the model number of the controller hardware.
+
+`NumberOfPresentedDeviceMgmtEvtCallbacks`
+
+The number of device event callback functions provided by this structure.
+
+`ParentBusType`
+
+The parent bus type of the USB controller.
+
+`PciDeviceInfo`
+
+Information about the PCI USB controller (if present).
+
+`Reserved1`
+
+Do not use.
+
+`Reserved2`
+
+Do not use.
+
+`Reserved3`
+
+Do not use.
+
+`Reserved4`
+
+Do not use.
+
+`Reserved5`
+
+Do not use.
+
+`Reserved6`
+
+Do not use.
+
+`Reserved7`
+
+Do not use.
+
+`Size`
+
+The size in bytes of this structure.
 
 
 ## Requirements

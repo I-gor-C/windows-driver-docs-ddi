@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6e450788-445f-4d0a-b99b-913100a54259
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WMI_CHANGER_PROBLEM_DEVICE_ERROR, WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+ms.keywords : kernel.dpwmiqueryreginfo, DpWmiQueryReginfo, DpWmiQueryReginfo callback function [Kernel-Mode Driver Architecture], DpWmiQueryReginfo, WMI_QUERY_REGINFO_CALLBACK, WMI_QUERY_REGINFO_CALLBACK, wmilib/DpWmiQueryReginfo, k903_61d9ad7d-1bdf-49d5-8a12-5bf0d6912ccc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DpWmiQueryReginfo
-req.alt-loc : Wmilib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWMI_CHANGER_PROBLEM_DEVICE_ERROR, WMI_CHANGER_PROBLEM_DEVICE_ERROR"
 req.product : Windows 10 or later.
 ---
 
@@ -67,9 +71,13 @@ This parameter indicates common characteristics of all blocks being registered. 
 
 The driver sets one of the following flags in <i>RegFlags</i>:
 
+
+
+A driver might also set one or more of the following flags in <i>RegFlags</i>, but more typically would set them in <b>Flags</b> of a block's <a href="..\wmilib\ns-wmilib-_wmiguidreginfo.md">WMIGUIDREGINFO</a> structure:
+
 `InstanceName`
 
-A pointer to a single counted Unicode string that serves as the base name for all instances of all blocks to be registered by the driver. WMI frees the string with <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>. If WMIREG_FLAG_INSTANCE_BASENAME is clear, <i>InstanceName</i> is ignored.
+A pointer to a single counted Unicode string that serves as the base name for all instances of all blocks to be registered by the driver. WMI frees the string with <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>. If WMIREG_FLAG_INSTANCE_BASENAME is clear, <i>InstanceName</i> is ignored.
 
 `*RegistryPath`
 
@@ -118,23 +126,16 @@ For more information about implementing this routine, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiregistrationcontrol.md">IoWMIRegistrationControl</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
-</dt>
-<dt>
-<a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
-</dt>
-<dt>
-<a href="..\wmilib\ns-wmilib-_wmiguidreginfo.md">WMIGUIDREGINFO</a>
-</dt>
-<dt>
+
 <a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
-</dt>
-</dl>
+
+<a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
+
+<a href="..\wdm\nf-wdm-iowmiregistrationcontrol.md">IoWMIRegistrationControl</a>
+
+<a href="..\wmilib\ns-wmilib-_wmiguidreginfo.md">WMIGUIDREGINFO</a>
+
  
 
  

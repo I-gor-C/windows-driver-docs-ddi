@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b282dcbe-f2ed-41f2-b97d-e9c409671197
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_query_pointer_capabilities, IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES control code [Display Devices], IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES, ntddvdeo/IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES, Video_IOCTLs_42064dfd-73fb-4afc-aa3b-4e1ec4829e99.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES IOCTL
-Returns information about the adapter's "hardware cursor" features. Support for this modal request is optional.
-
-
-
 Returns information about the adapter's "hardware cursor" features. Support for this modal request is optional.
 
 ### Major Code
@@ -63,7 +63,6 @@ The miniport driver returns a <a href="..\ntddvdeo\ns-ntddvdeo-_video_pointer_ca
 <text></text>
 
 ### Status Block
-I/O Status block
 If the miniport driver successfully returns the pointer capabilities, it sets the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure to <b>sizeof</b>(VIDEO_POINTER_CAPABILITIES); otherwise, the miniport driver sets this member to zero.
 
 
@@ -74,16 +73,12 @@ If the miniport driver successfully returns the pointer capabilities, it sets th
 | **Header** | ntddvdeo.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_pointer_capabilities.md">VIDEO_POINTER_CAPABILITIES</a>
-</dt>
-</dl>
+
+<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
+
  
 
  

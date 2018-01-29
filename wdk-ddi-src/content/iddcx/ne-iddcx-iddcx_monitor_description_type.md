@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ca50256b-2b37-4d39-ad4c-e2eaaa0adbb1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_MONITOR_DESCRIPTION_TYPE,
+ms.keywords : IDDCX_MONITOR_DESCRIPTION_TYPE enumeration [Display Devices], iddcx/IDDCX_MONITOR_DESCRIPTION_TYPE_EDID, IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID, IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED, IDDCX_MONITOR_DESCRIPTION_TYPE, iddcx/IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID, display.iddcx_monitor_description_type, IDDCX_MONITOR_DESCRIPTION_TYPE_EDID, iddcx/IDDCX_MONITOR_DESCRIPTION_TYPE, iddcx/IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_MONITOR_DESCRIPTION_TYPE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -51,6 +55,11 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
 <table>
 
 <tr>
+<td>IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID_AND_EDID</td>
+<td></td>
+</tr>
+
+<tr>
 <td>IDDCX_MONITOR_DESCRIPTION_TYPE_EDID</td>
 <td>The monitor description is EdId</td>
 </tr>
@@ -58,6 +67,11 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
 <tr>
 <td>IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED</td>
 <td>Indicates that an <b>IDDCX_MONITOR_DESCRIPTION_TYPE</b> variable has not yet been assigned a meaningful value.</td>
+</tr>
+
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 

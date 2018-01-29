@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 829d4df0-2dc2-4a1f-9606-3d5f25624252
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_PM_CAPABILITY, *PPCI_PM_CAPABILITY, PCI_PM_CAPABILITY
+ms.keywords : PPCI_PM_CAPABILITY structure pointer [Buses], _PCI_PM_CAPABILITY, *PPCI_PM_CAPABILITY, PCI_PM_CAPABILITY structure [Buses], wdm/PPCI_PM_CAPABILITY, PCI_PM_CAPABILITY, PPCI_PM_CAPABILITY, pci_struct_041a9702-7b1e-43dc-8b8c-0371bc0eac26.xml, wdm/PCI_PM_CAPABILITY, PCI.pci_pm_capability
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_PM_CAPABILITY
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PPCI_PM_CAPABILITY, PCI_PM_CAPABILITY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PCI_PM_CAPABILITY, *PPCI_PM_CAPABILITY
 req.product : Windows 10 or later.
 ---
 
@@ -60,26 +64,26 @@ typedef struct _PCI_PM_CAPABILITY {
 
 ## Members
 
-        
-            `Data`
 
-            Holds the contents of an optional data register that the device uses to report state-dependent operating data, such as heat dissipation or how much power the device has consumed.
-        
-            `Header`
+`Data`
 
-            Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a> that identifies the capability and provides a link to the next capability description.
-        
-            `PMC`
+Holds the contents of an optional data register that the device uses to report state-dependent operating data, such as heat dissipation or how much power the device has consumed.
 
-            
-        
-            `PMCSR`
+`Header`
 
-            
-        
-            `PMCSR_BSE`
+Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a> that identifies the capability and provides a link to the next capability description.
 
-            
+`PMC`
+
+
+
+`PMCSR`
+
+
+
+`PMCSR_BSE`
+
+
 
 
 ## Requirements
@@ -90,22 +94,16 @@ typedef struct _PCI_PM_CAPABILITY {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537581">PCI_PMC</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537583">PCI_PMCSR</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537581">PCI_PMC</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537587">PCI_PMCSR_BSE</a>
-</dt>
-</dl>
+
  
 
  

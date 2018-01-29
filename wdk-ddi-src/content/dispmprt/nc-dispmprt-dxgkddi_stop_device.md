@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3c17c7cf-9cfa-421d-a503-88726519fb6c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkddistopdevice, DxgkDdiStopDevice callback function [Display Devices], DxgkDdiStopDevice, DXGKDDI_STOP_DEVICE, DXGKDDI_STOP_DEVICE, dispmprt/DxgkDdiStopDevice, DmFunctions_c2d7e95b-beba-488a-b046-98e5daa728b9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiStopDevice
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -80,11 +84,8 @@ The <i>DxgkDdiStopDevice</i> function should be made pageable.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
-</dt>
-</dl>
+
  
 
  

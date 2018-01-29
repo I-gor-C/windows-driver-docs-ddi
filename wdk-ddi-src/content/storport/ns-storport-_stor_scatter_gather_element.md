@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2e387418-a37c-492b-8ee4-b6ff8f0e53b0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_SCATTER_GATHER_ELEMENT, STOR_SCATTER_GATHER_ELEMENT, *PSTOR_SCATTER_GATHER_ELEMENT
+ms.keywords : "*PSTOR_SCATTER_GATHER_ELEMENT, PSTOR_SCATTER_GATHER_ELEMENT, storport/PSTOR_SCATTER_GATHER_ELEMENT, STOR_SCATTER_GATHER_ELEMENT, storport/STOR_SCATTER_GATHER_ELEMENT, storage.stor_scatter_gather_element, PSTOR_SCATTER_GATHER_ELEMENT structure pointer [Storage Devices], _STOR_SCATTER_GATHER_ELEMENT, structs-storport_e7e71caf-d421-45ba-b356-c1450eec6e6c.xml, STOR_SCATTER_GATHER_ELEMENT structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_SCATTER_GATHER_ELEMENT
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SCATTER_GATHER_ELEMENT, *PSTOR_SCATTER_GATHER_ELEMENT
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _STOR_SCATTER_GATHER_ELEMENT {
 
 ## Members
 
-        
-            `Length`
 
-            Contains the length in bytes of this scatter/gather element.
-        
-            `PhysicalAddress`
+`Length`
 
-            Contains the physical address of the scatter/gather element.
-        
-            `Reserved`
+Contains the length in bytes of this scatter/gather element.
 
-            Reserved.
+`PhysicalAddress`
 
-    ## Remarks
-        Miniport drivers used with the Storport driver retrieve an array of these structures using <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>.
+Contains the physical address of the scatter/gather element.
+
+`Reserved`
+
+Reserved.
+
+## Remarks
+Miniport drivers used with the Storport driver retrieve an array of these structures using <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,16 +77,12 @@ typedef struct _STOR_SCATTER_GATHER_ELEMENT {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\ns-storport-_stor_scatter_gather_list.md">STOR_SCATTER_GATHER_LIST</a>
-</dt>
-<dt>
+
 <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>
-</dt>
-</dl>
+
  
 
  

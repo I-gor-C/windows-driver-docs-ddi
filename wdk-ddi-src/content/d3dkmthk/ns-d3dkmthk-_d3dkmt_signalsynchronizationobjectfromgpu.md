@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09190DCC-5F88-4C49-89B3-9063707E3F15
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
+ms.keywords : D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, display.d3dkmt_signalsynchronizationobjectfromgpu, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
 ---
 
@@ -52,18 +56,18 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
 
 ## Members
 
-        
-            `hContext`
 
-            [in] A kernel-mode handle to the context stream.
-        
-            `ObjectCount`
+`hContext`
 
-            [in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
-        
-            `ObjectHandleArray`
+[in] A kernel-mode handle to the context stream.
 
-            [in] An array of kernel-mode handles to the synchronization events that the <b>hContext</b> member signals.
+`ObjectCount`
+
+[in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
+
+`ObjectHandleArray`
+
+[in] An array of kernel-mode handles to the synchronization events that the <b>hContext</b> member signals.
 
 
 ## Requirements
@@ -74,13 +78,10 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromgpu.md">D3DKMTSignalSynchronizationObjectFromGpu</a>
-</dt>
-</dl>
+
  
 
  

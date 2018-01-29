@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f528d20a-16f8-401f-a6e6-ab165a40e18a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGetAce
+ms.keywords : RtlGetAce routine [Installable File System Drivers], RtlGetAce, rtlref_e018acc3-f776-4d15-9e0b-9e34d286a746.xml, ifsk.rtlgetace, ntifs/RtlGetAce
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows XP an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlGetAce
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -85,17 +89,12 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

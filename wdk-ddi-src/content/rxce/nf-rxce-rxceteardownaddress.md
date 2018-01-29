@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 76fd7c35-fef1-43c2-aedd-d09d18ab27a4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeTearDownAddress
+ms.keywords : RxCeTearDownAddress function [Installable File System Drivers], rxref_99fcdd00-8c1a-4a0b-8007-5b7f01a725bb.xml, rxce/RxCeTearDownAddress, RxCeTearDownAddress, ifsk.rxceteardownaddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeTearDownAddress
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -57,9 +61,23 @@ A pointer to the RDBSS connection engine address to deregister.
 ## Return Value
 
 <b>RxCeTearDownAddress</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>pAddress</i> parameter passed to <b>RxCeTearDownAddress</b> or one of the data members associated with this address was invalid.
+</dl>
+</td>
+<td width="60%">
+The <i>pAddress</i> parameter passed to <b>RxCeTearDownAddress</b> or one of the data members associated with this address was invalid. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -79,11 +97,8 @@ When <b>RxCeTearDownAddress</b> is successful, the data members in the RXCE_ADDR
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxce\nf-rxce-rxcebuildaddress.md">RxCeBuildAddress</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 867da1f8-061b-4fc1-8e20-3ebc43300f15
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminideleteallocator, AVStrMiniDeleteAllocator, AVStrMiniDeleteAllocator routine [Streaming Media Devices], AVStrMiniDeleteAllocator, PFNKSDELETEALLOCATOR, PFNKSDELETEALLOCATOR, ks/AVStrMiniDeleteAllocator, avstclbk_32e3c0fd-c437-45e0-8e5e-72f2f628ee51.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniDeleteAllocator
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -82,17 +86,12 @@ For more information, see <a href="https://msdn.microsoft.com/07812703-a66f-450a
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nc-ks-pfnkspininitializeallocator.md">AVStrMiniInitializeAllocator</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksallocator_dispatch.md">KSALLOCATOR_DISPATCH</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksallocator_dispatch.md">KSALLOCATOR_DISPATCH</a>
+
  
 
  

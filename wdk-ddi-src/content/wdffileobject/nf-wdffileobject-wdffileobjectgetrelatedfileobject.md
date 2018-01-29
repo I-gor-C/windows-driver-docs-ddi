@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : EB00FF6B-144B-4256-A362-D593FD4CFC98
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFileObjectGetRelatedFileObject
+ms.keywords : PFN_WDFFILEOBJECTGETRELATEDFILEOBJECT, WdfFileObjectGetRelatedFileObject method, WdfFileObjectGetRelatedFileObject, wdf.wdffileobjectgetrelatedfileobject, wdffileobject/WdfFileObjectGetRelatedFileObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WdfFileObjectGetRelatedFileObject
-req.alt-loc : WUDFx02000.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : WUDFx02000.lib
 req.dll : WUDFx02000.dll; TBD
 req.irql : PASSIVE_LEVEL
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
 req.product : Windows 10 or later.
 ---
 
@@ -80,11 +84,8 @@ For more information about related file objects, see the <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdffileobject\nf-wdffileobject-wdffileobjectgetfilename.md">WdfFileObjectGetFileName</a>
-</dt>
-</dl>
+
  
 
  

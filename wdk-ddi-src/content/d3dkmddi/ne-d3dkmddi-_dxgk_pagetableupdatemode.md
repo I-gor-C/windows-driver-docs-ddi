@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E7C823B1-457E-4B86-B44B-DC5BD48CF98E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PAGETABLEUPDATEMODE, DXGK_PAGETABLEUPDATEMODE
+ms.keywords : DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, DXGK_PAGETABLEUPDATEMODE, DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, d3dkmddi/DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, _DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATEMODE enumeration [Display Devices], d3dkmddi/DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, display.dxgk_pagetableupdatemode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_PAGETABLEUPDATEMODE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PAGETABLEUPDATEMODE
 ---
 
@@ -77,14 +81,10 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+
  
 
  

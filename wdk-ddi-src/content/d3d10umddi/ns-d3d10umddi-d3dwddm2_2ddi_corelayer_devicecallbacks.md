@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B42DA194-690F-41A6-AC11-71224887A2E4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS, D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS
+ms.keywords : D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS, D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3dwddm2_2ddi_corelayer_devicecallbacks, d3d10umddi/D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS
 ---
 
@@ -49,14 +53,190 @@ typedef struct D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS {
 
 ## Members
 
-        
-            `pfnShaderCacheAddRefCb`
 
-            A callback function that adds a reference to the shader cache.
-        
-            `pfnShaderCacheReleaseCb`
+`pfnCreateContextCb`
 
-            A callback function that releases a reference to a cache.
+
+
+`pfnCreateContextVirtualCb`
+
+
+
+`pfnDisableDeferredStagingResourceDestruction`
+
+
+
+`pfnPerformAmortizedProcessingCb`
+
+
+
+`pfnSetErrorCb`
+
+
+
+`pfnShaderCacheAddRefCb`
+
+A callback function that adds a reference to the shader cache.
+
+`pfnShaderCacheGetValueCb`
+
+
+
+`pfnShaderCacheReleaseCb`
+
+A callback function that releases a reference to a cache.
+
+`pfnShaderCacheStoreValueCb`
+
+
+
+`pfnStateCsConstBufCb`
+
+
+
+`pfnStateCsSamplerCb`
+
+
+
+`pfnStateCsShaderCb`
+
+
+
+`pfnStateCsSrvCb`
+
+
+
+`pfnStateCsUavCb`
+
+
+
+`pfnStateDsConstBufCb`
+
+
+
+`pfnStateDsSamplerCb`
+
+
+
+`pfnStateDsShaderCb`
+
+
+
+`pfnStateDsSrvCb`
+
+
+
+`pfnStateGsConstBufCb`
+
+
+
+`pfnStateGsSamplerCb`
+
+
+
+`pfnStateGsShaderCb`
+
+
+
+`pfnStateGsSrvCb`
+
+
+
+`pfnStateHsConstBufCb`
+
+
+
+`pfnStateHsSamplerCb`
+
+
+
+`pfnStateHsShaderCb`
+
+
+
+`pfnStateHsSrvCb`
+
+
+
+`pfnStateIaIndexBufCb`
+
+
+
+`pfnStateIaInputLayoutCb`
+
+
+
+`pfnStateIaPrimitiveTopologyCb`
+
+
+
+`pfnStateIaVertexBufCb`
+
+
+
+`pfnStateOmBlendStateCb`
+
+
+
+`pfnStateOmDepthStateCb`
+
+
+
+`pfnStateOmRenderTargetsCb`
+
+
+
+`pfnStatePsConstBufCb`
+
+
+
+`pfnStatePsSamplerCb`
+
+
+
+`pfnStatePsShaderCb`
+
+
+
+`pfnStatePsSrvCb`
+
+
+
+`pfnStateRsRastStateCb`
+
+
+
+`pfnStateRsScissorCb`
+
+
+
+`pfnStateRsViewportsCb`
+
+
+
+`pfnStateSoTargetsCb`
+
+
+
+`pfnStateTextFilterSizeCb`
+
+
+
+`pfnStateVsConstBufCb`
+
+
+
+`pfnStateVsSamplerCb`
+
+
+
+`pfnStateVsShaderCb`
+
+
+
+`pfnStateVsSrvCb`
+
+
 
 
 ## Requirements

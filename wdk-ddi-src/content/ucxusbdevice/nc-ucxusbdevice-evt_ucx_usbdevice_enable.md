@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : ac46a6eb-c30d-4b1f-8e14-0ae44ae0d4f1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO
+ms.keywords : buses.evt_ucx_usbdevice_enable, EvtUcxUsbDeviceEnable callback function [Buses], EvtUcxUsbDeviceEnable, EVT_UCX_USBDEVICE_ENABLE, EVT_UCX_USBDEVICE_ENABLE, ucxusbdevice/EvtUcxUsbDeviceEnable, PEVT_UCX_USBDEVICE_ENABLE callback function pointer [Buses], PEVT_UCX_USBDEVICE_ENABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_USBDEVICE_ENABLE
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
-req.typenames : STREAM_INFO, *PSTREAM_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTREAM_INFO, STREAM_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -95,11 +99,8 @@ The client driver returns completion status in <i>Request</i>.  The driver can c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
-</dt>
-</dl>
+
  
 
  

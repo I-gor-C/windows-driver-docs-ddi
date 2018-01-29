@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 426d28fa-abfe-44d9-9b15-119f92367b40
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxDispatchToWorkerThread
+ms.keywords : RxDispatchToWorkerThread routine [Installable File System Drivers], RxDispatchToWorkerThread, rxworkq/RxDispatchToWorkerThread, rxref_4ac4f78d-fd07-4d80-a4db-8215322d6c89.xml, ifsk.rxdispatchtoworkerthread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxDispatchToWorkerThread
-req.alt-loc : rxworkq.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -72,19 +76,37 @@ A pointer to a context parameter associated with the work item to complete that 
 ## Return Value
 
 <b>RxDispatchToWorkerThread</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The item could not be dispatched.
+</dl>
+</td>
+<td width="60%">
+The item could not be dispatched.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 There are two common cases of dispatching operations to worker threads:
-
+<ul>
+<li>
 For a very infrequent operation, space can be conserved by dynamically allocating and freeing memory for the work queue item when its is needed. The <b>RxDispatchToWorkerThread</b> routine would be used in this case 
 
+</li>
+<li>
 When an operation is going to be repeatedly dispatched, time is conserved by allocating in advance the WORK_QUEUE_ITEM as part of the data structure to be dispatched and using this pre-allocated memory repeatedly. The <a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a> routine would be used in this case 
 
-The trade off between the two dispatching operations is time versus space (memory usage).
+</li>
+</ul>The trade off between the two dispatching operations is time versus space (memory usage).
 
 The <b>RxDispatchToWorkerThread</b> invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by the <b>RxDispatchToWorkerThread</b> routine from non-paged pool memory. Hence this routine can fail if insufficient resources are available. 
 
@@ -106,14 +128,10 @@ If the <b>RxDispatchToWorkerThread </b>routine fails on a debug build, the <b>_R
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a>
-</dt>
-<dt>
 <a href="..\rxworkq\nf-rxworkq-rxspindownmrxdispatcher.md">RxSpinDownMRxDispatcher</a>
-</dt>
-</dl>
+
+<a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a>
+
  
 
  

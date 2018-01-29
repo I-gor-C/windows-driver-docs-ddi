@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 83801ea2-1beb-4b73-8906-ffefee67a2ac
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI, *PKS_DATARANGE_VIDEO_VBI
+ms.keywords : stream.ks_datarange_video_vbi, KS_DATARANGE_VIDEO_VBI, PKS_DATARANGE_VIDEO_VBI structure pointer [Streaming Media Devices], vidcapstruct_79d2aa9b-f3b9-4faf-b06e-6048686602a5.xml, tagKS_DATARANGE_VIDEO_VBI, ksmedia/PKS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI structure [Streaming Media Devices], *PKS_DATARANGE_VIDEO_VBI, PKS_DATARANGE_VIDEO_VBI, ksmedia/KS_DATARANGE_VIDEO_VBI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATARANGE_VIDEO_VBI
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_DATARANGE_VIDEO_VBI, *PKS_DATARANGE_VIDEO_VBI
 ---
 
@@ -52,34 +56,34 @@ typedef struct tagKS_DATARANGE_VIDEO_VBI {
 
 ## Members
 
-        
-            `bFixedSizeSamples`
 
-            Specifies that all the samples are the same size if set to <b>TRUE</b>.
-        
-            `bTemporalCompression`
+`bFixedSizeSamples`
 
-            Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
-        
-            `ConfigCaps`
+Specifies that all the samples are the same size if set to <b>TRUE</b>.
 
-            Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
-        
-            `DataRange`
+`bTemporalCompression`
 
-            Specifies major, minor, and specifier identifiers of the range of formats being described.
-        
-            `MemoryAllocationFlags`
+Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
 
-            Unused and should be set to zero.
-        
-            `StreamDescriptionFlags`
+`ConfigCaps`
 
-            Unused and should be set to zero.
-        
-            `VBIInfoHeader`
+Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
 
-            Indicates VBI-specific information for the range of formats being described.
+`DataRange`
+
+Specifies major, minor, and specifier identifiers of the range of formats being described.
+
+`MemoryAllocationFlags`
+
+Unused and should be set to zero.
+
+`StreamDescriptionFlags`
+
+Unused and should be set to zero.
+
+`VBIInfoHeader`
+
+Indicates VBI-specific information for the range of formats being described.
 
 
 ## Requirements
@@ -90,19 +94,14 @@ typedef struct tagKS_DATARANGE_VIDEO_VBI {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
 <a href="..\ksmedia\ns-ksmedia-tagks_vbiinfoheader.md">KS_VBIINFOHEADER</a>
-</dt>
-</dl>
+
  
 
  

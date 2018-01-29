@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eb66a17e-2e85-453c-8b39-091f0dc8c29b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeGetCurrentProcessorNumberEx
+ms.keywords : KeGetCurrentProcessorNumberEx, kernel.kegetcurrentprocessornumberex, wdm/KeGetCurrentProcessorNumberEx, KeGetCurrentProcessorNumberEx routine [Kernel-Mode Driver Architecture], k105_3eea6705-7267-452a-88c2-1597c6f19828.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeGetCurrentProcessorNumberEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,17 +84,12 @@ A related routine, <a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">Ke
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kequeryactiveprocessorcount.md">KeQueryActiveProcessorCount</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
+
 <a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 91182ed5-e444-41a7-b6fc-f14d0407f089
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.pparallel_deselect_routine, (*PPARALLEL_DESELECT_ROUTINE) callback function [Parallel Ports], (*PPARALLEL_DESELECT_ROUTINE), parallel/(*PPARALLEL_DESELECT_ROUTINE), cisspd_e8bc6fa2-03e4-4845-bfd6-0ebaf573e1b2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PPARALLEL_DESELECT_ROUTINE)
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -54,7 +58,7 @@ NTSTATUS PparallelDeselectRoutine(
 
 `DeselectContext`
 
-Pointer to the device extension of a functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>) that represents a parallel port.
+Pointer to the device extension of a functional device object (<a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FDO</a>) that represents a parallel port.
 
 `DeselectCommand`
 
@@ -63,15 +67,45 @@ Pointer to a PARALLEL_1284_COMMAND structure. The caller specifies the following
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The device was deselected.
+</dl>
+</td>
+<td width="60%">
+The device was deselected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The specified device ID is invalid.
+</dl>
+</td>
+<td width="60%">
+The specified device ID is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The system-supplied function driver for parallel ports could not deselect the device.
+</dl>
+</td>
+<td width="60%">
+The system-supplied function driver for parallel ports could not deselect the device.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,20 +129,14 @@ For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\parallel\nc-parallel-pparallel_try_select_routine.md">PPARALLEL_TRY_SELECT_ROUTINE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
+
  
 
  

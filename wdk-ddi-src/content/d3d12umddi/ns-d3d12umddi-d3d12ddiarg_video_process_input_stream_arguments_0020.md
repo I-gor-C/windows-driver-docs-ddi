@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2488E73E-CF47-4852-8090-BC063DCC4EA4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020, D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020
+ms.keywords : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020, d3d12umddi/D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020, display.d3d12ddiarg_video_process_input_stream_parameters, D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020
 ---
 
@@ -59,62 +63,62 @@ typedef struct D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020 {
 
 ## Members
 
-        
-            `AlphaBlending`
 
-            The planar alpha for an input stream on the video processor.  For more information, see the  <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING</a> structure.
-        
-            `ColorSpace`
+`AlphaBlending`
 
-            The colorspace for the video processor input and reference surfaces as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
-        
-            `DeinterlaceMode`
+The planar alpha for an input stream on the video processor.  For more information, see the  <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING</a> structure.
 
-            The deinterlace mode to use.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a> enumeration.
-        
-            `EnableAutoProcessing`
+`ColorSpace`
 
-            Whether to enable automatic processing features on the video processor.
-        
-            `FieldType`
+The colorspace for the video processor input and reference surfaces as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
 
-            Frame format as progressive or interlaced for the input stream.
-        
-            `FilterFlags`
+`DeinterlaceMode`
 
-            The filters to enable, as a bitwise OR of one or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a> enumeration.
-        
-            `FilterLevels`
+The deinterlace mode to use.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a> enumeration.
 
-            The level to apply for each enabled filter.  If a filter is not enabled or the filter index is reserved, specify zero (0).
-        
-            `Flags`
+`EnableAutoProcessing`
 
-            Options for the input stream.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_input_stream_flags_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS</a> enumeration.
-        
-            `InputStream`
+Whether to enable automatic processing features on the video processor.
 
-            The set of references to be able to perform processing. If stereo format is <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, two sets of input streams must be supplied.  If stereo format is any other mode, the first set of reference must be supplied, and the second should be zero initialized.
-        
-            `LumaKey`
+`FieldType`
 
-            The luma key for an input stream on the video processor.  For more information, see the  <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_luma_key_0020.md">D3D12DDI_VIDEO_PROCESS_LUMA_KEY</a> structure.
-        
-            `Palette`
+Frame format as progressive or interlaced for the input stream.
 
-            The palette to use for this stream. If the video processor supports the given palletized formats, it must apply alpha values from color palette entries.
-        
-            `RateInfo`
+`FilterFlags`
 
-            Frame rate and input and output indexes for frame rate conversion and deinterlacing.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO</a> structure.
-        
-            `StereoFormat`
+The filters to enable, as a bitwise OR of one or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a> enumeration.
 
-            Specifies whether the stream is stereo or not. If there is a value of <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, there are two sets of input textures and references. This is to support a stereo interlaced case.
-        
-            `Transform`
+`FilterLevels`
 
-            Flip, rotation, scale and destination translation for the video input.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_transform_0020.md">D3D12DDI_VIDEO_PROCESS_TRANSFORM</a> structure.
+The level to apply for each enabled filter.  If a filter is not enabled or the filter index is reserved, specify zero (0).
+
+`Flags`
+
+Options for the input stream.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_input_stream_flags_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS</a> enumeration.
+
+`InputStream`
+
+The set of references to be able to perform processing. If stereo format is <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, two sets of input streams must be supplied.  If stereo format is any other mode, the first set of reference must be supplied, and the second should be zero initialized.
+
+`LumaKey`
+
+The luma key for an input stream on the video processor.  For more information, see the  <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_luma_key_0020.md">D3D12DDI_VIDEO_PROCESS_LUMA_KEY</a> structure.
+
+`Palette`
+
+The palette to use for this stream. If the video processor supports the given palletized formats, it must apply alpha values from color palette entries.
+
+`RateInfo`
+
+Frame rate and input and output indexes for frame rate conversion and deinterlacing.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO</a> structure.
+
+`StereoFormat`
+
+Specifies whether the stream is stereo or not. If there is a value of <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, there are two sets of input textures and references. This is to support a stereo interlaced case.
+
+`Transform`
+
+Flip, rotation, scale and destination translation for the video input.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_transform_0020.md">D3D12DDI_VIDEO_PROCESS_TRANSFORM</a> structure.
 
 
 ## Requirements
@@ -125,34 +129,24 @@ typedef struct D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a>
-</dt>
-<dt>
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING</a>
-</dt>
-<dt>
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_input_stream_flags_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS</a>
-</dt>
-<dt>
-<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO</a>
-</dt>
-<dt>
+
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a>
-</dt>
-<dt>
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a>
+
+<a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a>
+
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_luma_key_0020.md">D3D12DDI_VIDEO_PROCESS_LUMA_KEY</a>
-</dt>
-<dt>
+
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_transform_0020.md">D3D12DDI_VIDEO_PROCESS_TRANSFORM</a>
-</dt>
-</dl>
+
+<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A84BE3D6-7D2A-4123-979B-F6E1CA8C8B23
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _tagKSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID, KSTOPOLOGY_ENDPOINTID
+ms.keywords : PKSTOPOLOGY_ENDPOINTID structure pointer [Audio Devices], _tagKSTOPOLOGY_ENDPOINTID, ksmedia/KSTOPOLOGY_ENDPOINTID, KSTOPOLOGY_ENDPOINTID structure [Audio Devices], audio.kstopology_endpointid, PKSTOPOLOGY_ENDPOINTID, ksmedia/PKSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID, KSTOPOLOGY_ENDPOINTID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10,Windows 10 Mobile
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSTOPOLOGY_ENDPOINTID
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSTOPOLOGY_ENDPOINTID, KSTOPOLOGY_ENDPOINTID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
 ---
 
 # _tagKSTOPOLOGY_ENDPOINTID structure
@@ -47,14 +51,14 @@ typedef struct _tagKSTOPOLOGY_ENDPOINTID {
 
 ## Members
 
-        
-            `PinId`
 
-            The pin ID of the topology endpoint.
-        
-            `TopologyName`
+`PinId`
 
-            The name of the topology endpoint.
+The pin ID of the topology endpoint.
+
+`TopologyName`
+
+The name of the topology endpoint.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _tagKSTOPOLOGY_ENDPOINTID {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_tagkstopology_endpointidpair.md">KSTOPOLOGY_ENDPOINTIDPAIR</a>
-</dt>
-</dl>
+
  
 
  

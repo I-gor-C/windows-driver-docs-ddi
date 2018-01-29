@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 74784405-8435-4305-A630-255D7BB24157
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_READ_PORT_BUFFER_USHORT
+ms.keywords : WDF_READ_PORT_BUFFER_USHORT, wdfhwaccess/WDF_READ_PORT_BUFFER_USHORT, WDF_READ_PORT_BUFFER_USHORT function, wdf.wdf_read_port_buffer_ushort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WDF_READ_PORT_BUFFER_USHORT
-req.alt-loc : Wdfhwaccess.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
 req.product : Windows 10 or later.
 ---
 

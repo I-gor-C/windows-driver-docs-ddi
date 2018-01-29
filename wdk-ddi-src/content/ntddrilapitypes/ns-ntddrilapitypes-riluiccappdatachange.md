@@ -7,8 +7,8 @@ old-location : netvista\riluiccappdatachange.htm
 old-project : netvista
 ms.assetid : a551f469-96f4-42cf-826d-3557cc13ce29
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE
+ms.date : 1/18/2018
+ms.keywords : RILUICCAPPDATACHANGE, netvista.riluiccappdatachange, RILUICCAPPDATACHANGE structure [Network Drivers Starting with Windows Vista], *LPRILUICCAPPDATACHANGE, ntddrilapitypes/RILUICCAPPDATACHANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCAPPDATACHANGE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE
 ---
 
 # RILUICCAPPDATACHANGE structure
@@ -48,18 +52,18 @@ typedef struct _RILUICCAPPDATACHANGE {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwDataChange`
+`cbSize`
 
-            
-        
-            `hUiccApp`
 
-            
+
+`dwDataChange`
+
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

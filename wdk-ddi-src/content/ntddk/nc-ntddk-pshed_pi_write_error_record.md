@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 4800a0f9-29ee-4631-aee8-5a4924a08f55
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords : whea.writeerrorrecord, WriteErrorRecord callback function [WHEA Drivers and Applications], WriteErrorRecord, PSHED_PI_WRITE_ERROR_RECORD, PSHED_PI_WRITE_ERROR_RECORD, ntddk/WriteErrorRecord, whearef_3a405d7d-3427-4c22-919e-7cbab5ea4f19.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WriteErrorRecord
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= HIGH_LEVEL (See Remarks section)
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 
@@ -74,12 +78,34 @@ A pointer to a <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECO
 ## Return Value
 
 A PSHED plug-in's <i>WriteErrorRecord</i> callback function returns one of the following NTSTATUS codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The error record was successfully written to the system's persistent data storage.
+</dl>
+</td>
+<td width="60%">
+The error record was successfully written to the system's persistent data storage.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,23 +129,16 @@ The PSHED calls a PSHED plug-in's <i>WriteErrorRecord</i> callback function at I
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
-</dt>
-<dt>
-<a href="..\ntddk\nc-ntddk-pshed_pi_clear_error_record.md">ClearErrorRecord</a>
-</dt>
-<dt>
-<a href="..\ntddk\nc-ntddk-pshed_pi_read_error_record.md">ReadErrorRecord</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nc-ntddk-pshed_pi_clear_error_record.md">ClearErrorRecord</a>
+
 <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nc-ntddk-pshed_pi_read_error_record.md">ReadErrorRecord</a>
+
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
  
 
  

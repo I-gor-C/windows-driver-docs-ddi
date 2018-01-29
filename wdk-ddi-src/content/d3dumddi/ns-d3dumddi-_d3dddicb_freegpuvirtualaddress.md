@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5E11C1BB-7E9E-4D9C-A15A-B9CCB29622C3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_FREEGPUVIRTUALADDRESS, D3DDDICB_FREEGPUVIRTUALADDRESS
+ms.keywords : display.d3dddicb_freegpuvirtualaddress, D3DDDICB_FREEGPUVIRTUALADDRESS, D3DDDICB_FREEGPUVIRTUALADDRESS structure [Display Devices], d3dumddi/D3DDDICB_FREEGPUVIRTUALADDRESS, _D3DDDICB_FREEGPUVIRTUALADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_FREEGPUVIRTUALADDRESS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_FREEGPUVIRTUALADDRESS
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DDDICB_FREEGPUVIRTUALADDRESS {
 
 ## Members
 
-        
-            `BaseAddress`
 
-            Specifies the base virtual address, in bytes, of the range to free. Must be aligned to 4 KB.
-        
-            `Size`
+`BaseAddress`
 
-            Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
+Specifies the base virtual address, in bytes, of the range to free. Must be aligned to 4 KB.
+
+`Size`
+
+Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DDDICB_FREEGPUVIRTUALADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_freegpuvirtualaddresscb.md">pfnFreeGpuVirtualAddressCb</a>
-</dt>
-</dl>
+
  
 
  

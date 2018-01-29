@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bc8999e2-d305-407f-8302-6834efa698c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxpReferenceNetFcb
+ms.keywords : fcb/RxpReferenceNetFcb, rxref_48d7801e-1459-405e-a681-2aa13e9e31cd.xml, RxpReferenceNetFcb, ifsk.rxpreferencenetfcb, RxpReferenceNetFcb function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxpReferenceNetFcb
-req.alt-loc : fcb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FA_ENTRY, *PFA_ENTRY
 ---
 
@@ -77,17 +81,12 @@ On checked builds, <b>RxpReferenceNetFcb</b> causes the system to ASSERT if the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fcb\nf-fcb-rxpdereferencenetfcb.md">RxpDereferenceNetFcb</a>
-</dt>
-<dt>
-<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
-</dt>
-<dt>
 <a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
-</dt>
-</dl>
+
+<a href="..\fcb\nf-fcb-rxpdereferencenetfcb.md">RxpDereferenceNetFcb</a>
+
+<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+
  
 
  

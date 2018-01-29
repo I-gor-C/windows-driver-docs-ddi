@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84503E38-E141-4DAC-B305-6C7E6157A3E9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_video_get_decode_format_count, pfnGetDecodeFormatCount callback function [Display Devices], pfnGetDecodeFormatCount, PFND3D12DDI_VIDEO_GET_DECODE_FORMAT_COUNT_0020, PFND3D12DDI_VIDEO_GET_DECODE_FORMAT_COUNT_0020, d3d12umddi/pfnGetDecodeFormatCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnGetDecodeFormatCount
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
@@ -85,11 +89,8 @@ This function retrieves the number of formats supported for a decode configurati
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_configuration_flags_0020.md">3D12DDI_VIDEO_DECODE_CONFIGURATION</a>
-</dt>
-</dl>
+
  
 
  

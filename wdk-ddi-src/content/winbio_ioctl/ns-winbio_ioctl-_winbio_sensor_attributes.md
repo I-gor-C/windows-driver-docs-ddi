@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : edfd5b49-f658-46c7-a3f3-221afb35abb7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES
+ms.keywords : WINBIO_SENSOR_ATTRIBUTES, biometric.winbio_sensor_attributes, _WINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES structure pointer [Biometric Devices], *PWINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/PWINBIO_SENSOR_ATTRIBUTES, biometric_ref_958b511b-a855-4897-87d8-f0d7bb4970ce.xml, winbio_ioctl/WINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES structure [Biometric Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WINBIO_SENSOR_ATTRIBUTES
-req.alt-loc : winbio_ioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES"
 req.product : Windows 10 or later.
 ---
 
@@ -58,13 +62,12 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 
 ## Members
 
-        
-            `Capabilities`
 
-            A WINBIO_CAPABILITIES subtype, which indicates which capabilities are supported by the device. 
+`Capabilities`
+
+A WINBIO_CAPABILITIES subtype, which indicates which capabilities are supported by the device. 
 
 WINBIO_CAPABILITIES can contain the values in the following table.
-
 <table>
 <tr>
 <th>
@@ -193,29 +196,28 @@ The device supports security methods available in the WinBio engine adapter inte
 </td>
 </tr>
 </table>
-        
-            `FirmwareVersion`
 
-            A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.
-        
-            `ManufacturerName`
+`FirmwareVersion`
 
-            A structure of type WINBIO_STRING that contains the name of the device manufacturer.
-        
-            `ModelName`
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.
 
-            A structure of type WINBIO_STRING that contains the name of the device model.
-        
-            `PayloadSize`
+`ManufacturerName`
 
-            A DWORD value that indicates the total size of the payload, including the fixed length structure and any variable data at the end.
-        
-            `SensorSubType`
+A structure of type WINBIO_STRING that contains the name of the device manufacturer.
 
-            A WINBIO_BIOMETRIC_SENSOR_SUBTYPE subtype that contains additional information about the sensor.  For example, this member could specify whether the sensor requires the user to simply touch the sensor or swipe a finger over the sensor.
+`ModelName`
+
+A structure of type WINBIO_STRING that contains the name of the device model.
+
+`PayloadSize`
+
+A DWORD value that indicates the total size of the payload, including the fixed length structure and any variable data at the end.
+
+`SensorSubType`
+
+A WINBIO_BIOMETRIC_SENSOR_SUBTYPE subtype that contains additional information about the sensor.  For example, this member could specify whether the sensor requires the user to simply touch the sensor or swipe a finger over the sensor.
 
 WINBIO_BIOMETRIC_SENSOR_SUBTYPE can contain the values in the following table.
-
 <table>
 <tr>
 <th>
@@ -250,27 +252,26 @@ The device requires the user to place their entire fingerprint on a sensor pad.
 </td>
 </tr>
 </table>
-        
-            `SensorType`
 
-            A DWORD bitmask of type WINBIO_BIOMETRIC_TYPE that contains biometric data that is collected by the sensor. In Windows 7, only WINBIO_TYPE_FINGERPRINT is supported.
-        
-            `SerialNumber`
+`SensorType`
 
-            A structure of type WINBIO_STRING that contains the serial number of the device, if one exists.
-        
-            `SupportedFormat`
+A DWORD bitmask of type WINBIO_BIOMETRIC_TYPE that contains biometric data that is collected by the sensor. In Windows 7, only WINBIO_TYPE_FINGERPRINT is supported.
 
-            A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device.
-        
-            `SupportedFormatEntries`
+`SerialNumber`
 
-            The number of formats that are supported by the driver and device.  There must be at least one, which is the Windows standard format.
-        
-            `WinBioHresult`
+A structure of type WINBIO_STRING that contains the serial number of the device, if one exists.
 
-            An HRESULT value that indicates containing status detail of the I/O operation.   The following table includes possible values.
+`SupportedFormat`
 
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device.
+
+`SupportedFormatEntries`
+
+The number of formats that are supported by the driver and device.  There must be at least one, which is the Windows standard format.
+
+`WinBioHresult`
+
+An HRESULT value that indicates containing status detail of the I/O operation.   The following table includes possible values.
 <table>
 <tr>
 <th>Status value</th>
@@ -297,10 +298,10 @@ The driver could not gather the necessary information from the device.
 </td>
 </tr>
 </table>
-        
-            `WinBioVersion`
 
-            A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service.
+`WinBioVersion`
+
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service.
 
 
 ## Requirements
@@ -311,13 +312,10 @@ The driver could not gather the necessary information from the device.
 | **Minimum UMDF version** |  |
 | **Header** | winbio_ioctl.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_attributes.md">IOCTL_BIOMETRIC_GET_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

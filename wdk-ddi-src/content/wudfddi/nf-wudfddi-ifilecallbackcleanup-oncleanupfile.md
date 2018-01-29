@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e6dd18f4-725f-4611-ad70-029654cf4375
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IFileCallbackCleanup, IFileCallbackCleanup::OnCleanupFile, OnCleanupFile
+ms.keywords : OnCleanupFile method, IFileCallbackCleanup interface, OnCleanupFile method, wudfddi/IFileCallbackCleanup::OnCleanupFile, IFileCallbackCleanup, wdf.ifilecallbackcleanup_oncleanupfile, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, OnCleanupFile, IFileCallbackCleanup interface, OnCleanupFile method, IFileCallbackCleanup::OnCleanupFile, umdf.ifilecallbackcleanup_oncleanupfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IFileCallbackCleanup.OnCleanupFile
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -82,17 +86,12 @@ For information about when the framework calls <b>OnCleanupFile</b>, see <a href
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-ifilecallbackcleanup.md">IFileCallbackCleanup</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-ifilecallbackcleanup.md">IFileCallbackCleanup</a>
+
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-</dl>
+
  
 
  

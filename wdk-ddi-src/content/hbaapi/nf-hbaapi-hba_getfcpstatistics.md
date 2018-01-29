@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 62ef9d02-3a59-4d4e-a48f-21a8bb4f6e58
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetFCPStatistics
+ms.keywords : HBA_GetFCPStatistics routine [Storage Devices], storage.hba_getfcpstatistics, hbaapi/HBA_GetFCPStatistics, fibreHBA_rtns_59fb5caf-3df0-4c87-902c-6832645895d1.xml, HBA_GetFCPStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_GetFCPStatistics
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -52,32 +56,70 @@ HBA_STATUS HBA_API HBA_GetFCPStatistics(
 
 `Handle`
 
-
+TBD
 
 `Lunit`
 
-
+TBD
 
 `Statistics`
 
-
+TBD
 
 
 ## Return Value
 
 The <b>HBA_GetFCPStatistics</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFCPStatistics</b> returns one of the following qualifiers.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
-</dl>Returned if the FCP statistics were successfully retrieved for the HBA referenced by <i>handle</i>.
+</dl>
+</td>
+<td width="60%">
+Returned if the FCP statistics were successfully retrieved for the HBA referenced by <i>handle</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_INVALID_LUN</b></dt>
-</dl>Returned if the HBA referenced by <i>handle</i> is not attached to the logical unit referenced by <i>lunit</i>.
+</dl>
+</td>
+<td width="60%">
+Returned if the HBA referenced by <i>handle</i> is not attached to the logical unit referenced by <i>lunit</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_UNSUPPORTED_FC4</b></dt>
-</dl>Returned if the HBA referenced by <i>handle</i> does not support FCP.
+</dl>
+</td>
+<td width="60%">
+Returned if the HBA referenced by <i>handle</i> does not support FCP.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
-</dl>Returned if an unspecified error occurred that prevented the retrieval of the statistics.
+</dl>
+</td>
+<td width="60%">
+Returned if an unspecified error occurred that prevented the retrieval of the statistics. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -97,20 +139,14 @@ Statistics counters in HBA_FC4Statistics are 64-bit signed integers that wrap to
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_fc4statistics.md">HBA_FC4Statistics</a>
-</dt>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\ns-hbaapi-hba_fc4statistics.md">HBA_FC4Statistics</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

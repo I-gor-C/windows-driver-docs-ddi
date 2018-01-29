@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 3f87558a-5c56-46c0-a983-2db2057fcc81
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+ms.keywords : parports.ioctl_par_query_device_id, IOCTL_PAR_QUERY_DEVICE_ID control code [Parallel Ports], IOCTL_PAR_QUERY_DEVICE_ID, ntddpar/IOCTL_PAR_QUERY_DEVICE_ID, cisspd_29c73c7d-a6fb-4307-b766-ef8b098a1e6f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PAR_QUERY_DEVICE_ID
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_QUERY_DEVICE_ID IOCTL
-The IOCTL_PAR_QUERY_DEVICE_ID request returns the IEEE 1284 device ID of a parallel device assigned by the system-supplied function driver for parallel ports.
-
-
-
 The IOCTL_PAR_QUERY_DEVICE_ID request returns the IEEE 1284 device ID of a parallel device assigned by the system-supplied function driver for parallel ports.
 
 ### Major Code
@@ -63,16 +63,9 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member specifies  the s
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a buffer that holds both the device ID and a <b>NULL</b> terminator. Otherwise, the <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to one of the following values:
-
-
-
-The output buffer that <b>AssociatedIrp.SystemBuffer</b> points to is less than the size, in bytes, of the device ID and a <b>NULL</b> terminator.
-
-A device I/O error occurred.
 
 
 ## Requirements
@@ -82,13 +75,10 @@ A device I/O error occurred.
 | **Header** | ntddpar.h (include Ntddpar.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id_size.md">IOCTL_PAR_QUERY_DEVICE_ID_SIZE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a8089653-a14b-4542-bf20-b1b596b1b4ea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS
+ms.keywords : ksmedia/PKS_VIDEO_STREAM_CONFIG_CAPS, ksmedia/KS_VIDEO_STREAM_CONFIG_CAPS, stream.ks_video_stream_config_caps, PKS_VIDEO_STREAM_CONFIG_CAPS, vidcapstruct_43cae18b-0430-4a1e-9bac-7de2e32388a6.xml, PKS_VIDEO_STREAM_CONFIG_CAPS structure pointer [Streaming Media Devices], _KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS structure [Streaming Media Devices], KS_VIDEO_STREAM_CONFIG_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_VIDEO_STREAM_CONFIG_CAPS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS
 ---
 
 # _KS_VIDEO_STREAM_CONFIG_CAPS structure
@@ -66,26 +70,26 @@ typedef struct _KS_VIDEO_STREAM_CONFIG_CAPS {
 
 ## Members
 
-        
-            `CropAlignX`
 
-            Specifies the horizontal alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four.
-        
-            `CropAlignY`
+`CropAlignX`
 
-            Specifies the vertical alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four.
-        
-            `CropGranularityX`
+Specifies the horizontal alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four.
 
-            Specifies the horizontal granularity of the cropping size. For example, valid widths could be specified as even multiples of four.
-        
-            `CropGranularityY`
+`CropAlignY`
 
-            Specifies the vertical granularity of the cropping size. For example, valid heights could be specified as even multiples of four.
-        
-            `guid`
+Specifies the vertical alignment of the cropping rectangle inside <b>InputSize</b>. For example, the minidriver could specify that valid rectangles must start on a boundary that is a multiple of four.
 
-            GUID that specifies the video format type. Possible values include:
+`CropGranularityX`
+
+Specifies the horizontal granularity of the cropping size. For example, valid widths could be specified as even multiples of four.
+
+`CropGranularityY`
+
+Specifies the vertical granularity of the cropping size. For example, valid heights could be specified as even multiples of four.
+
+`guid`
+
+GUID that specifies the video format type. Possible values include:
 
 KSDATAFORMAT_SPECIFIER_VIDEOINFO
 
@@ -100,55 +104,54 @@ KSDATAFORMAT_SPECIFIER_MPEG1_VIDEO
 KSDATAFORMAT_SPECIFIER_MPEG2_VIDEO
 
 This GUID is identical to the DirectShow AM_MEDIA_TYPE enumeration. For more information about AM_MEDIA_TYPE, see the DirectX SDK documentation.
-        
-            `InputSize`
 
-            Specifies the size of the incoming signal. <b>InputSize</b> indicates the image rectangle's width and height, in pixels. This is the largest signal that the filter can digitize with each pixel remaining unique.
-        
-            `MaxBitsPerSecond`
+`InputSize`
 
-            Specifies the maximum data rate, in bits per second, that this pin can produce.
-        
-            `MaxCroppingSize`
+Specifies the size of the incoming signal. <b>InputSize</b> indicates the image rectangle's width and height, in pixels. This is the largest signal that the filter can digitize with each pixel remaining unique.
 
-            Specifies the largest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the KS_VIDEOINFOHEADER structure, which is associated with the <b>DataRange</b> member.
-        
-            `MaxFrameInterval`
+`MaxBitsPerSecond`
 
-            Specifies the maximum frame rate allowed. This value applies to capture filters only.
-        
-            `MaxOutputSize`
+Specifies the maximum data rate, in bits per second, that this pin can produce.
 
-            Specifies the largest bitmap that this pin can produce.
-        
-            `MinBitsPerSecond`
+`MaxCroppingSize`
 
-            Specifies the minimum data rate, in bits per second, that this pin can produce.
-        
-            `MinCroppingSize`
+Specifies the largest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the KS_VIDEOINFOHEADER structure, which is associated with the <b>DataRange</b> member.
 
-            Specifies the smallest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure, which is associated with the <b>DataRange</b> member.
-        
-            `MinFrameInterval`
+`MaxFrameInterval`
 
-            Specifies the minimum frame rate allowed. This value applies to capture filters only.
-        
-            `MinOutputSize`
+Specifies the maximum frame rate allowed. This value applies to capture filters only.
 
-            Specifies the smallest bitmap that this pin can produce.
-        
-            `OutputGranularityX`
+`MaxOutputSize`
 
-            Specifies the granularity of the output bitmap width.
-        
-            `OutputGranularityY`
+Specifies the largest bitmap that this pin can produce.
 
-            Specifies the granularity of the output bitmap height.
-        
-            `ShrinkTapsX`
+`MinBitsPerSecond`
 
-            Specifies one of the following values to indicate how well the filter can shrink the image's width.
+Specifies the minimum data rate, in bits per second, that this pin can produce.
 
+`MinCroppingSize`
+
+Specifies the smallest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure, which is associated with the <b>DataRange</b> member.
+
+`MinFrameInterval`
+
+Specifies the minimum frame rate allowed. This value applies to capture filters only.
+
+`MinOutputSize`
+
+Specifies the smallest bitmap that this pin can produce.
+
+`OutputGranularityX`
+
+Specifies the granularity of the output bitmap width.
+
+`OutputGranularityY`
+
+Specifies the granularity of the output bitmap height.
+
+`ShrinkTapsX`
+
+Specifies one of the following values to indicate how well the filter can shrink the image's width.
 <table>
 <tr>
 <th>Value</th>
@@ -195,11 +198,10 @@ The filter uses a higher-order (smoother) form of interpolation.
 </td>
 </tr>
 </table>
-        
-            `ShrinkTapsY`
 
-            Specifies one of the following values to indicate how well the filter can shrink the image's height.
+`ShrinkTapsY`
 
+Specifies one of the following values to indicate how well the filter can shrink the image's height.
 <table>
 <tr>
 <th>Value</th>
@@ -246,11 +248,10 @@ The filter uses a higher-order (smoother) form of interpolation.
 </td>
 </tr>
 </table>
-        
-            `StretchTapsX`
 
-            Specifies one of the following values to indicate how well the filter can stretch the image's width.
+`StretchTapsX`
 
+Specifies one of the following values to indicate how well the filter can stretch the image's width.
 <table>
 <tr>
 <th>Value</th>
@@ -297,11 +298,10 @@ The filter uses a higher-order (smoother) form of interpolation.
 </td>
 </tr>
 </table>
-        
-            `StretchTapsY`
 
-            Specifies one of the following values to indicate how well the filter can stretch the image's height.
+`StretchTapsY`
 
+Specifies one of the following values to indicate how well the filter can stretch the image's height.
 <table>
 <tr>
 <th>Value</th>
@@ -348,13 +348,13 @@ The filter uses a higher-order (smoother) form of interpolation.
 </td>
 </tr>
 </table>
-        
-            `VideoStandard`
 
-            Specifies the analog video standards that are supported by the stream. This member can be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
+`VideoStandard`
 
-    ## Remarks
-        The KS_VIDEO_STREAM_CONFIG_CAPS structure is identical to the DirectShow VIDEO_STREAM_CONFIG_CAPS structure.
+Specifies the analog video standards that are supported by the stream. This member can be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
+
+## Remarks
+The KS_VIDEO_STREAM_CONFIG_CAPS structure is identical to the DirectShow VIDEO_STREAM_CONFIG_CAPS structure.
 
 It is important to understand the relationships between the members of this structure. For example, assume the following values for some of the structure members: 
 
@@ -369,26 +369,40 @@ It is important to understand the relationships between the members of this stru
 These values indicate that valid cropping sizes begin at <b>MinCroppingSize</b> and increase in steps in the <i>x</i>-direction by<b> CropGranularityX</b> and in the <i>y</i>-direction by <b>CropGranularityY</b>. In this case, the <i>x</i>-value can be anywhere from 160 to 320 pixels, in steps of four, and the <i>y</i>-value can be anywhere from 120 to 240 pixels in steps of eight. 
 
 In the example scenario, a few of the valid sizes are: 
-
+<ul>
+<li>
 160 × 120, 164 × 120, 168 × 120, 172 × 120, and so on. 
 
+</li>
+<li>
 160 × 128, 164 × 128, 168 × 128, 172 × 128, and so on. 
 
+</li>
+<li>
 160 × 136, 164 × 136, 168 × 136, 172 × 136, and so on. 
 
-<b>CropAlignX</b> and <b>CropAlignY</b> indicate where the cropping rectangle can be located inside the input size rectangle. Given a 160 × 120 cropping rectangle and a value of 2 for <b>CropAlignX</b> and a value of 4 for <b>CropAlignY</b>, 
+</li>
+</ul><b>CropAlignX</b> and <b>CropAlignY</b> indicate where the cropping rectangle can be located inside the input size rectangle. Given a 160 × 120 cropping rectangle and a value of 2 for <b>CropAlignX</b> and a value of 4 for <b>CropAlignY</b>, 
 
 some of the valid values for the <b>rcSource</b> member of the <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure would be: 
-
+<ul>
+<li>
 (0, 0, 160, 120) 
 
+</li>
+<li>
 (2, 0, 162, 120) 
 
+</li>
+<li>
 (2, 4, 162, 124) 
 
+</li>
+<li>
 (2, 8, 162, 128) 
 
-For a 320 × 240 cropping rectangle and the same cropping alignment values, (2, 4, 322, 244) is one example of the many valid rectangles. 
+</li>
+</ul>For a 320 × 240 cropping rectangle and the same cropping alignment values, (2, 4, 322, 244) is one example of the many valid rectangles. 
 
 The <b>MinCroppingSize</b>, <b>MaxCroppingSize</b>, <b>CropGranularityX</b>, <b>CropGranularityY</b>, <b>CropAlignX</b>, and <b>CropAlignY</b> members discussed above work together to specify which values of <b>rcSource</b> are valid for the KS_VIDEOINFOHEADER structure that describes the output pin's media type. The remaining structure members (<b>MinOutputSize</b>, <b>MaxOutputSize</b>, <b>OutputGranularityX</b>, and <b>OutputGranularityY</b>) describe the <b>biWidth</b> and <b>biHeight</b> members of the <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure, which is contained in the pin's media type KS_VIDEOINFOHEADER structure.
 
@@ -400,19 +414,14 @@ The <b>MinCroppingSize</b>, <b>MaxCroppingSize</b>, <b>CropGranularityX</b>, <b>
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
-</dt>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
+
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+
  
 
  

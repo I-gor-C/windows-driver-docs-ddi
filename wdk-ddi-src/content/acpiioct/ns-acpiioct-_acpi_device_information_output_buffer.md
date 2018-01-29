@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 15AA7E06-DD7F-46B4-B2C2-604EA5150F7D
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
+ms.keywords : PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpi.acpi_device_information_output_buffer, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure pointer [ACPI Devices], *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpiioct/PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure [ACPI Devices], acpi.acpi_get_device_information_output_buffer, acpiioct/ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8 and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
-req.alt-loc : Acpiioct.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
 ---
 
@@ -62,77 +66,77 @@ typedef struct _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER {
 
 ## Members
 
-        
-            `BaseClassCode`
 
-            A number identifying the class of the device. See http://pcisig.org for baseclass code definitions.
-        
-            `DeviceIdStringOffset`
+`BaseClassCode`
 
-            The offset from the beginning of this structure to the beginning of the <b>DeviceIDString</b> member. This string uniquely identifies the device.
-        
-            `HardwareRevision`
+A number identifying the class of the device. See http://pcisig.org for baseclass code definitions.
 
-            A number identifying the hardware revision of the device.
-        
-            `InstanceIdLength`
+`DeviceIdStringOffset`
 
-            The length of the <b>InstanceIDString</b> member.
-        
-            `InstanceIdOffset`
+The offset from the beginning of this structure to the beginning of the <b>DeviceIDString</b> member. This string uniquely identifies the device.
 
-            The offset from the beginning of this structure to the beginning of the <b>InstanceIDString</b> member. This string uniquely identifies the device amongst all such devices on the platform.
-        
-            `ProgrammingInterface`
+`HardwareRevision`
 
-            A number identifying the programming interface of the device. See http://pcisig.org for class programming interface definitions.
-        
-            `Reserved0`
+A number identifying the hardware revision of the device.
 
-            Reserved. Do not use.
-        
-            `Reserved1`
+`InstanceIdLength`
 
-            Reserved. Do not use.
-        
-            `Revision`
+The length of the <b>InstanceIDString</b> member.
 
-            Revision of the ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure.
-        
-            `Signature`
+`InstanceIdOffset`
 
-            A unique identifier for the IOCTL that returns this buffer. Used for verification.
-        
-            `Size`
+The offset from the beginning of this structure to the beginning of the <b>InstanceIDString</b> member. This string uniquely identifies the device amongst all such devices on the platform.
 
-            The size, in bytes, of the ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure.
-        
-            `SubClassCode`
+`ProgrammingInterface`
 
-            A number identifying the subclass of the device. See http://pcisig.org for subclass code definitions.
-        
-            `SubDeviceIdStringOffset`
+A number identifying the programming interface of the device. See http://pcisig.org for class programming interface definitions.
 
-            The offset from the beginning of this structure to the beginning of the <b>DeviceIDString</b> member. This string uniquely identifies the subsystem.
-        
-            `SubSystemIdStringOffset`
+`Reserved0`
 
-            The offset from the beginning of this structure to the beginning of the <b>SubSystemIDString</b> member. This string uniquely identifies the manufacturer and the subsystem (chip or board) into which the device is integrated.
-        
-            `SubSystemStringLength`
+Reserved. Do not use.
 
-            The length of the <b>SubSystemIDString</b> member.
-        
-            `VendorIdStringOffset`
+`Reserved1`
 
-            The offset from the beginning of this structure to the beginning of the <b>VendorIDString</b> member. This string uniquely identifies The manufacturer and the device itself.
-        
-            `VendorStringLength`
+Reserved. Do not use.
 
-            The length of the <b>VendorIDString</b> member.
+`Revision`
 
-    ## Remarks
-        Appended after the ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER are the SubSystemIdString, VendorIdString, and InstanceIdString strings, described as follows:
+Revision of the ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure.
+
+`Signature`
+
+A unique identifier for the IOCTL that returns this buffer. Used for verification.
+
+`Size`
+
+The size, in bytes, of the ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure.
+
+`SubClassCode`
+
+A number identifying the subclass of the device. See http://pcisig.org for subclass code definitions.
+
+`SubDeviceIdStringOffset`
+
+The offset from the beginning of this structure to the beginning of the <b>DeviceIDString</b> member. This string uniquely identifies the subsystem.
+
+`SubSystemIdStringOffset`
+
+The offset from the beginning of this structure to the beginning of the <b>SubSystemIDString</b> member. This string uniquely identifies the manufacturer and the subsystem (chip or board) into which the device is integrated.
+
+`SubSystemStringLength`
+
+The length of the <b>SubSystemIDString</b> member.
+
+`VendorIdStringOffset`
+
+The offset from the beginning of this structure to the beginning of the <b>VendorIDString</b> member. This string uniquely identifies The manufacturer and the device itself.
+
+`VendorStringLength`
+
+The length of the <b>VendorIDString</b> member.
+
+## Remarks
+Appended after the ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER are the SubSystemIdString, VendorIdString, and InstanceIdString strings, described as follows:
 
 <b>BYTE[SubVendorStringLength+1] SubSystemIdString</b>
 
@@ -154,13 +158,10 @@ A string of <b>InstanceIDLength</b> in length which contains a number that uniqu
 | **Minimum UMDF version** |  |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_get_device_information.md">IOCTL_ACPI_GET_DEVICE_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

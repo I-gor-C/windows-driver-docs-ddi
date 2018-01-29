@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 04f9f699-0ca1-4b22-b66f-04fcf53935c4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsTerminateSystemThread
+ms.keywords : wdm/PsTerminateSystemThread, PsTerminateSystemThread routine [Kernel-Mode Driver Architecture], kernel.psterminatesystemthread, PsTerminateSystemThread, k108_a8e19a60-578c-42a6-b77a-cf6c4098c815.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsTerminateSystemThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ A system thread calls <b>PsTerminateSystemThread</b> to terminate itself. A driv
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
-</dt>
-</dl>
+
  
 
  

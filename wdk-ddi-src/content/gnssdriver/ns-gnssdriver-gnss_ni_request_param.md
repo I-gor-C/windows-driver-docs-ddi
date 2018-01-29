@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 0528EEE6-31D6-4CF6-8192-3557C28B4D10
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_NI_REQUEST_PARAM, *PGNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM
+ms.keywords : sensors.gnss_ni_request_param, PGNSS_NI_REQUEST_PARAM structure pointer [Sensor Devices], *PGNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM structure [Sensor Devices], gnssdriver/PGNSS_NI_REQUEST_PARAM, gnssdriver/GNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM, PGNSS_NI_REQUEST_PARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_NI_REQUEST_PARAM
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM"
 ---
 
@@ -58,38 +62,38 @@ typedef struct {
 
 ## Members
 
-        
-            `EmergencyLocation`
 
-            Indicates an emergency request, so an existing NI dialog will be dismissed and the new request will be processed immediately.
-        
-            `NotificationType`
+`EmergencyLocation`
 
-            A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.
-        
-            `RequestId`
+Indicates an emergency request, so an existing NI dialog will be dismissed and the new request will be processed immediately.
 
-            The ID that uniquely identifies the NI request. It is used later by the NI response to identify the request to respond to.
-        
-            `RequestPlaneType`
+`NotificationType`
 
-            A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.
-        
-            `RequestType`
+A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.
 
-            A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.
-        
-            `ResponseTimeInSec`
+`RequestId`
 
-            The required response time, in seconds.
-        
-            `Size`
+The ID that uniquely identifies the NI request. It is used later by the NI response to identify the request to respond to.
 
-            Structure size.
-        
-            `Version`
+`RequestPlaneType`
 
-            Version number.
+A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.
+
+`RequestType`
+
+A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.
+
+`ResponseTimeInSec`
+
+The required response time, in seconds.
+
+`Size`
+
+Structure size.
+
+`Version`
+
+Version number.
 
 
 ## Requirements

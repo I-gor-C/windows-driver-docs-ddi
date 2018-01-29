@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fcb06620-8a30-4980-8733-35d7aabcc872
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_SETPOINTERSHAPE, DXGKARG_SETPOINTERSHAPE
+ms.keywords : display.dxgkarg_setpointershape, DmStructs_9fab674a-0138-4c55-b17e-87cb85110325.xml, DXGKARG_SETPOINTERSHAPE, d3dkmddi/DXGKARG_SETPOINTERSHAPE, DXGKARG_SETPOINTERSHAPE structure [Display Devices], _DXGKARG_SETPOINTERSHAPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_SETPOINTERSHAPE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_SETPOINTERSHAPE
 ---
 
@@ -53,23 +57,22 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a> structure that identifies, in bit-field flags, how to display the mouse pointer.
-        
-            `Height`
+`Flags`
 
-            [in] The height of the mouse pointer, in scan lines.
-        
-            `Pitch`
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a> structure that identifies, in bit-field flags, how to display the mouse pointer.
 
-            [in] The width of the mouse pointer, in bytes.
-        
-            `pPixels`
+`Height`
 
-            [in] A pointer to the start of the following bitmap depending on the bit-field flag that is set in the <b>Flags</b> member:
+[in] The height of the mouse pointer, in scan lines.
 
+`Pitch`
+
+[in] The width of the mouse pointer, in bytes.
+
+`pPixels`
+
+[in] A pointer to the start of the following bitmap depending on the bit-field flag that is set in the <b>Flags</b> member:
 <table>
 <tr>
 <th>Bit-field flag</th>
@@ -81,25 +84,65 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 
 </td>
 <td>
-        
-            `VidPnSourceId`
 
-            [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the mouse pointer is located in.
-        
-            `Width`
+<dl>
+<dt>For monochrome mouse pointers:</dt>
+<dt>A monochrome bitmap whose size is specified by <b>Width</b> and <b>Height</b> in a 1 bits per pixel (bpp) DIB format AND mask that is followed by another 1 bpp DIB format XOR mask of the same size.</dt>
+</dl>
 
-            [in] The width of the mouse pointer, in pixels.
-        
-            `XHot`
 
-            [in] The column, in pixels, that the mouse pointer is located on from the top left of the bitmap that <b>pPixels</b> points to.
-        
-            `YHot`
+</td>
+</tr>
+<tr>
+<td>
+<b>Color</b>
 
-            [in] The row, in pixels, that the mouse pointer is located on from the top left of the bitmap that <b>pPixels</b> points to.
+</td>
+<td>
 
-    ## Remarks
-        The <b>XHot</b> and <b>YHot</b> members are used by display miniport drivers that are not associated with hardware, and these members can be ignored by drivers that control hardware.
+<dl>
+<dt>For color mouse pointers:</dt>
+<dt>A color bitmap whose size is specified by <b>Width</b> and <b>Height</b> in a 32 bpp ARGB device independent bitmap (DIB) format.</dt>
+</dl>
+
+
+</td>
+</tr>
+<tr>
+<td>
+<b>MaskedColor</b>
+
+</td>
+<td>
+
+<dl>
+<dt>For masked color mouse pointers:</dt>
+<dt>A 32-bpp ARGB format bitmap with the mask value in the alpha bits. The only allowed mask values are 0 and 0xFF. When the mask value is 0, the RGB value should replace the screen pixel. When the mask value is 0xFF, an XOR operation is performed on the RGB value and the screen pixel; the result should replace the screen pixel.</dt>
+</dl>
+
+
+</td>
+</tr>
+</table>
+
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the mouse pointer is located in.
+
+`Width`
+
+[in] The width of the mouse pointer, in pixels.
+
+`XHot`
+
+[in] The column, in pixels, that the mouse pointer is located on from the top left of the bitmap that <b>pPixels</b> points to.
+
+`YHot`
+
+[in] The row, in pixels, that the mouse pointer is located on from the top left of the bitmap that <b>pPixels</b> points to.
+
+## Remarks
+The <b>XHot</b> and <b>YHot</b> members are used by display miniport drivers that are not associated with hardware, and these members can be ignored by drivers that control hardware.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -109,16 +152,12 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setpointershape.md">DxgkDdiSetPointerShape</a>
-</dt>
-</dl>
+
  
 
  

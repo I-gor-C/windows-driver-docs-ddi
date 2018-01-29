@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fc747ff1-cc84-4863-a66a-ae172f45f2bd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetFC4Statistics_OUT, *PGetFC4Statistics_OUT, GetFC4Statistics_OUT
+ms.keywords : storage.getfc4statistics_out, PGetFC4Statistics_OUT, *PGetFC4Statistics_OUT, structs-Fibre_2a49fe85-534d-42df-8d8f-d07d0c4a7193.xml, hbapiwmi/PGetFC4Statistics_OUT, PGetFC4Statistics_OUT structure pointer [Storage Devices], GetFC4Statistics_OUT, hbapiwmi/GetFC4Statistics_OUT, _GetFC4Statistics_OUT, GetFC4Statistics_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFC4Statistics_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGetFC4Statistics_OUT, GetFC4Statistics_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GetFC4Statistics_OUT, *PGetFC4Statistics_OUT
 ---
 
 # _GetFC4Statistics_OUT structure
@@ -47,17 +51,17 @@ typedef struct _GetFC4Statistics_OUT {
 
 ## Members
 
-        
-            `FC4Statistics`
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_fc4statistics.md">MSFC_FC4STATISTICS</a> that holds statistics for the specified FC-4 protocol.
-        
-            `HBAStatus`
+`FC4Statistics`
 
-            Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_fc4statistics.md">MSFC_FC4STATISTICS</a> that holds statistics for the specified FC-4 protocol.
 
-    ## Remarks
-        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> WMI method reports traffic statistics for a specific FC-4 protocol via a specific local HBA and port of type Nx_Port.
+`HBAStatus`
+
+Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
+
+## Remarks
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> WMI method reports traffic statistics for a specific FC-4 protocol via a specific local HBA and port of type Nx_Port.
 
 The WMI tool suite generates a declaration of the GetFC4Statistics_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
@@ -69,13 +73,10 @@ The WMI tool suite generates a declaration of the GetFC4Statistics_OUT structure
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a>
-</dt>
-</dl>
+
  
 
  

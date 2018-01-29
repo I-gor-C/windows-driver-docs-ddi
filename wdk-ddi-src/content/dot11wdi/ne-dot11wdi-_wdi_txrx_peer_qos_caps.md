@@ -7,8 +7,8 @@ old-location : netvista\wdi_txrx_peer_qos_caps.htm
 old-project : netvista
 ms.assetid : 34d53daa-3501-4532-82e3-e5b0ed452b66
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PEER_QOS_CAPS
+ms.date : 1/18/2018
+ms.keywords : dot11wdi/WDI_TXRX_PeerCfgQosUapsdTids, dot11wdi/WDI_TXRX_PeerCfgQosNone, netvista.wifi_txrx_peer_qos_caps, WDI_TXRX_PeerCfgQosNone, _WDI_TXRX_PEER_QOS_CAPS, dot11wdi/WDI_TXRX_PeerCfgQosCapable, netvista.wdi_txrx_peer_qos_caps, dot11wdi/WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PeerCfgQosCapable, WDI_TXRX_PeerCfgQosUapsdTids, WDI_TXRX_PEER_QOS_CAPS enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_TXRX_PEER_QOS_CAPS
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TXRX_PEER_QOS_CAPS
 ---
 
@@ -58,6 +62,11 @@ typedef enum _WDI_TXRX_PEER_QOS_CAPS {
 <tr>
 <td>WDI_TXRX_PeerCfgQosNone</td>
 <td>Specifies that QoS was not negotiated for this peer during association.</td>
+</tr>
+
+<tr>
+<td>WDI_TXRX_PeerCfgUapsdTids</td>
+<td></td>
 </tr>
 </table>
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f669790f-0370-46a0-ba38-05e35cdf23b3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceEnqueueRequest
+ms.keywords : PFN_WDFDEVICEENQUEUEREQUEST, WdfDeviceEnqueueRequest, WdfDeviceEnqueueRequest method, DFDeviceObjectGeneralRef_f97fc280-163f-4931-a222-6a8ccf3251d2.xml, kmdf.wdfdeviceenqueuerequest, wdf.wdfdeviceenqueuerequest, wdfdevice/WdfDeviceEnqueueRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceEnqueueRequest
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL (See remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,18 +68,46 @@ A handle to a framework request object.
 ## Return Value
 
 If the operation succeeds, the method returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The amount of available memory is low.
+</dl>
+</td>
+<td width="60%">
+The amount of available memory is low.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The driver has not created any I/O queues for the device, and the driver is not a filter driver.
+</dl>
+</td>
+<td width="60%">
+The driver has not created any I/O queues for the device, and the driver is not a filter driver.
 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WDF_BUSY</b></dt>
-</dl>The device's I/O queue is not accepting requests.
+</dl>
+</td>
+<td width="60%">
+The device's I/O queue is not accepting requests.
 
- 
+</td>
+</tr>
+</table> 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -88,22 +120,24 @@ Your driver can call <b>WdfDeviceEnqueueRequest</b> only from an <a href="..\wdf
 The <b>WdfDeviceEnqueueRequest</b> method adds the request to the driver's request-type-specific I/O queue for the device, if the driver has created one. Otherwise the method adds the request to the device's default queue, if the driver has created one.
 
 If the driver has not created any I/O queues for the device, <b>WdfDeviceEnqueueRequest</b> does the following:
-
+<ul>
+<li>
 If the driver is a filter driver, <b>WdfDeviceEnqueueRequest</b> sends the request to the driver's I/O target.
 
+</li>
+<li>
 If the driver is not a filter driver, <b>WdfDeviceEnqueueRequest</b> returns STATUS_INVALID_DEVICE_REQUEST.
 
-While <b>WdfDeviceEnqueueRequest</b> is executing, it is possible for the driver to receive and complete or cancel the request.
+</li>
+</ul>While <b>WdfDeviceEnqueueRequest</b> is executing, it is possible for the driver to receive and complete or cancel the request.
 
 As a result, if the driver needs to use the request or its context after calling <b>WdfDeviceEnqueueRequest</b>, then it should take a reference on the request before calling <b>WdfDeviceEnqueueRequest</b>.
 
 To do so, the driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548758">WdfObjectReference</a> before and then <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a> after the call to <b>WdfDeviceEnqueueRequest</b>. The driver must dereference the request before exiting <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>.
 
-For more information about the <b>WdfDeviceEnqueueRequest</b> method, see <a href="https://msdn.microsoft.com/83cc87c8-7e2d-4f79-a580-0519d327e7ba">Managing I/O Queues</a>.
+For more information about the <b>WdfDeviceEnqueueRequest</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/managing-i-o-queues">Managing I/O Queues</a>.
 
 For versions 1.0 and 1.5 of KMDF, <b>WdfDeviceEnqueueRequest</b> must be called at PASSIVE_LEVEL. For versions 1.7 and later, <b>WdfDeviceEnqueueRequest</b> can be called at IRQL &lt;= DISPATCH_LEVEL.
-
-The following code example is an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function that looks for requests that contain the custom I/O control code, IOCTL_NONPNP_METHOD_NEITHER. If the I/O control code is not found, the callback function just returns the request to the framework. If the callback function finds the I/O control code, it preprocesses the request and then returns it to the framework. If an error is encountered, the callback function completes the request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -119,17 +153,12 @@ The following code example is an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
+
  
 
  

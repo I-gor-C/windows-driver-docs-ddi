@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9bc64d00-3590-4bc2-aa1f-0d50bb0e628d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsReadLogRecord
+ms.keywords : kernel.clfsreadlogrecord, ClfsReadLogRecord, wdm/ClfsReadLogRecord, ClfsReadLogRecord routine [Kernel-Mode Driver Architecture], Clfs_e829153c-541e-463a-9ff3-85200929e3d2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsReadLogRecord
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,7 +84,6 @@ A pointer to a ULONG-typed variable that receives the size, in bytes, of the buf
 `peRecordType`
 
 A pointer to a variable of type CLFS_RECORD_TYPE that receives one of the following values.
-
 <table>
 <tr>
 <th>Value</th>
@@ -149,14 +152,10 @@ Read contexts are not thread-safe. Clients are responsible for serializing acces
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
+
  
 
  

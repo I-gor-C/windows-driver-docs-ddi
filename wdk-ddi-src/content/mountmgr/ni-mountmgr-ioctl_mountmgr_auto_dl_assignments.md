@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 59ceeaaf-0916-4f0a-a636-624f2f70a64c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.keywords : storage.ioctl_mountmgr_auto_dl_assignments, IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS control code [Storage Devices], IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS, mountmgr/IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS, k307_ec5f9d47-ffd0-481c-8ce9-fa0465c5b69c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS
-req.alt-loc : Mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS IOCTL
@@ -59,7 +63,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS.
 
 

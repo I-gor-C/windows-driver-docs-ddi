@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cb531a0e-c934-4f3e-9b92-07eb3ab75673
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_INFORMATION_CLASS, KEY_INFORMATION_CLASS
+ms.keywords : sysenum_c64ec9c8-1eda-495a-8b4a-566607e29a78.xml, wdm/KeyFullInformation, KeyNodeInformation, wdm/KeyHandleTagsInformation, wdm/KEY_INFORMATION_CLASS, KeyCachedInformation, wdm/KeyFlagsInformation, KEY_INFORMATION_CLASS, KeyFlagsInformation, wdm/KeyVirtualizationInformation, KeyVirtualizationInformation, KEY_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], _KEY_INFORMATION_CLASS, wdm/KeyCachedInformation, wdm/KeyNodeInformation, KeyFullInformation, wdm/KeyNameInformation, kernel.key_information_class, MaxKeyInfoClass, wdm/KeyBasicInformation, KeyNameInformation, wdm/MaxKeyInfoClass, KeyHandleTagsInformation, KeyBasicInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_INFORMATION_CLASS
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEY_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
@@ -83,6 +87,11 @@ typedef enum _KEY_INFORMATION_CLASS {
 </tr>
 
 <tr>
+<td>KeyLayerInformation</td>
+<td></td>
+</tr>
+
+<tr>
 <td>KeyNameInformation</td>
 <td>A <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a> structure is supplied.</td>
 </tr>
@@ -90,6 +99,11 @@ typedef enum _KEY_INFORMATION_CLASS {
 <tr>
 <td>KeyNodeInformation</td>
 <td>A <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a> structure is supplied.</td>
+</tr>
+
+<tr>
+<td>KeyTrustInformation</td>
+<td></td>
 </tr>
 
 <tr>
@@ -117,32 +131,22 @@ Use the <b>KEY_INFORMATION_CLASS</b> values to specify the type of data to be su
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
+
 <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+
+<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
+
+<a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a>
+
  
 
  

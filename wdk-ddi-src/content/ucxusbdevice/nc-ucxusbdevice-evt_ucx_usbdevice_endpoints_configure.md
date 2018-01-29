@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2f374912-985d-47e0-9fda-b43242375cb5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO
+ms.keywords : buses.evt_ucx_usbdevice_endpoints_configure, EvtUcxUsbDeviceEndpointsConfigure callback function [Buses], EvtUcxUsbDeviceEndpointsConfigure, EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE, EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE, ucxusbdevice/EvtUcxUsbDeviceEndpointsConfigure, PEVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback function pointer [Buses], PEVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
-req.typenames : STREAM_INFO, *PSTREAM_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTREAM_INFO, STREAM_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -90,14 +94,10 @@ The client driver returns completion status in <i>Request</i>.  The driver can c
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucxendpoint\ns-ucxendpoint-_endpoints_configure.md">ENDPOINTS_CONFIGURE</a>
-</dt>
-<dt>
 <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
-</dt>
-</dl>
+
+<a href="..\ucxendpoint\ns-ucxendpoint-_endpoints_configure.md">ENDPOINTS_CONFIGURE</a>
+
  
 
  

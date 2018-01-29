@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2AA67B06-F87F-47E3-A80F-154993BAF0E8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUsbDeviceCreate
+ms.keywords : buses.udecxusbdevicecreate, UdecxUsbDeviceCreate function [Buses], udecxusbdevice/UdecxUsbDeviceCreate, UdecxUsbDeviceCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UdecxUsbDeviceCreate
-req.alt-loc : Udecxstub.lib,Udecxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Udecxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
 req.product : Windows 10 or later.
 ---
 
@@ -83,14 +87,10 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

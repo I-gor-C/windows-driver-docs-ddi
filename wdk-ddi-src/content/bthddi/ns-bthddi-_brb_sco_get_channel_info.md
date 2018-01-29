@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 1a7eb79c-5a3e-4977-ba1f-682bbebb0494
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_SCO_GET_CHANNEL_INFO,
+ms.keywords : _BRB_SCO_GET_CHANNEL_INFO structure [Bluetooth Devices], bth_structs_cf7da00a-9c32-432d-a8a2-7bac58fe17e0.xml, bthddi/_BRB_SCO_GET_CHANNEL_INFO, bltooth._brb_sco_get_channel_info, _BRB_SCO_GET_CHANNEL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _BRB_SCO_GET_CHANNEL_INFO
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -61,24 +65,23 @@ struct _BRB_SCO_GET_CHANNEL_INFO {
 
 ## Members
 
-        
-            `BasebandInfo`
 
-            A 
+`BasebandInfo`
+
+A 
      <a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a> structure that
      contains information for the SCO connection. This information is only available for links established
      using the 1.2 Bluetooth Synchronous Commands.
-        
-            `BtAddress`
 
-            The Bluetooth address of the remote device.
-        
-            `ChannelFlags`
+`BtAddress`
 
-            Flags that specify how the channel was opened. Valid flag values are listed in the following
+The Bluetooth address of the remote device.
+
+`ChannelFlags`
+
+Flags that specify how the channel was opened. Valid flag values are listed in the following
      table.
      
-
 <table>
 <tr>
 <th>Flag</th>
@@ -115,31 +118,72 @@ The profile driver indicates its preference that users not be prompted for a PIN
 </td>
 </tr>
 </table>
-        
-            `ChannelHandle`
 
-            The handle to the SCO channel to query.
-        
-            `ContentFormat`
+`ChannelHandle`
 
-            The audio voice setting for the channel. Use the following definitions to decode this member:
-        
-            `HciConnectionHandle`
+The handle to the SCO channel to query.
 
-            The host controller interface's connection handle for the SCO connection.
-        
-            `Hdr`
+`ContentFormat`
 
-            A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
-     about the current BRB.
-        
-            `InfoFlags`
-
-            A flag that determines if baseband information is available for the SCO channel. The following
-     flag is defined:
+The audio voice setting for the channel. Use the following definitions to decode this member:
      
 
+
+<dl>
+<dt>SCO_VS_AIR_CODING_DATA
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_ALAW
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_CVSD
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MULAW
+     </dt>
+<dt>SCO_VS_IN_CODING_ALAW
+     </dt>
+<dt>SCO_VS_IN_CODING_LINEAR
+     </dt>
+<dt>SCO_VS_IN_CODING_MASK
+     </dt>
+<dt>SCO_VS_IN_CODING_MULAW
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_1C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_2C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_SM
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_US
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_8BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_16BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_MASK
+     </dt>
+<dt>SCO_VS_PCM_BIT_POS_MASK
+     </dt>
+<dt>SCO_VS_SETTING_DEFAULT</dt>
+</dl>
+
+`HciConnectionHandle`
+
+The host controller interface's connection handle for the SCO connection.
+
+`Hdr`
+
+A 
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     about the current BRB.
+
+`InfoFlags`
+
+A flag that determines if baseband information is available for the SCO channel. The following
+     flag is defined:
+     
 <table>
 <tr>
 <th>
@@ -157,19 +201,18 @@ If set, baseband settings are available for the SCO channel.
 </td>
 </tr>
 </table>
-        
-            `LinkType`
 
-            The 
+`LinkType`
+
+The 
      <a href="..\bthddi\ne-bthddi-_sco_link_type.md">SCO_LINK_TYPE</a> that is associated with the host
      controller interface.
-        
-            `MaxLatency`
 
-            A value that represents the upper limit of the sum of the synchronous interval and the size of the
+`MaxLatency`
+
+A value that represents the upper limit of the sum of the synchronous interval and the size of the
      SCO window, in milliseconds. Possible values are listed in the following table.
      
-
 <table>
 <tr>
 <th>
@@ -208,36 +251,52 @@ The channel doesn't have a preferred
 </td>
 </tr>
 </table>
-        
-            `PacketType`
 
-            A flag or combination of flags that indicates the type of data packets that the SCO channel
+`PacketType`
+
+A flag or combination of flags that indicates the type of data packets that the SCO channel
      supports. These SCO packet types are defined by the Bluetooth SIG. See the Bluetooth specification for
      more information about these flags. Possible values include:
-        
-            `ReceiveBandwidth`
+     
 
-            The reception bandwidth of the channel, in bytes per second.
-        
-            `Reserved`
 
-            Reserved for future use. Do not use.
-        
-            `RetransmissionEffort`
+<dl>
+<dt>SCO_HV1
+     </dt>
+<dt>SCO_HV2
+     </dt>
+<dt>SCO_HV3
+     </dt>
+<dt>SCO_EV3
+     </dt>
+<dt>SCO_EV4
+     </dt>
+<dt>SCO_EV5</dt>
+</dl>
 
-            A 
+`ReceiveBandwidth`
+
+The reception bandwidth of the channel, in bytes per second.
+
+`Reserved`
+
+Reserved for future use. Do not use.
+
+`RetransmissionEffort`
+
+A 
      <a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">SCO_RETRANSMISSION_EFFORT</a> value that
      determines the channel's retransmission policies.
-        
-            `TransmitBandwidth`
 
-            The transmission bandwidth of the channel, in bytes per second.
+`TransmitBandwidth`
 
-    ## Remarks
-        To get the settings and statistics of a SCO channel, profile drivers should 
+The transmission bandwidth of the channel, in bytes per second.
+
+## Remarks
+To get the settings and statistics of a SCO channel, profile drivers should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
-    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536868">
-    BRB_SCO_GET_CHANNEL_INFO</a> request.
+    <mshelp:link keywords="bltooth.brb_sco_get_channel_info" tabindex="0"><b>
+    BRB_SCO_GET_CHANNEL_INFO</b></mshelp:link> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -247,25 +306,18 @@ The channel doesn't have a preferred
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-</dt>
-<dt>
-<a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">SCO_RETRANSMISSION_EFFORT</a>
-</dt>
-<dt>
-<a href="..\bthddi\ne-bthddi-_sco_link_type.md">SCO_LINK_TYPE</a>
-</dt>
-<dt>
-<a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536868">BRB_SCO_GET_CHANNEL_INFO</a>
-</dt>
-</dl>
+
+<a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">SCO_RETRANSMISSION_EFFORT</a>
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
+<a href="..\bthddi\ne-bthddi-_sco_link_type.md">SCO_LINK_TYPE</a>
+
+<a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a>
+
  
 
  

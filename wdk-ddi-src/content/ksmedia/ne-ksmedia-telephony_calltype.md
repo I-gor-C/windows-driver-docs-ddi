@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8CF2CAF2-29F2-4B8B-B23F-B423392B2DAF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : TELEPHONY_CALLTYPE, TELEPHONY_CALLTYPE
+ms.keywords : TELEPHONY_CALLTYPE enumeration [Audio Devices], TELEPHONY_CALLTYPE, ksmedia/TELEPHONY_CALLTYPE, TELEPHONY_CALLTYPE_CIRCUITSWITCHED, ksmedia/TELEPHONY_CALLTYPE_CIRCUITSWITCHED, ksmedia/TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE, TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN, ksmedia/TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN, TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE, audio.telephony_calltype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10,Windows 10 Mobile
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TELEPHONY_CALLTYPE
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TELEPHONY_CALLTYPE
 ---
 
@@ -77,17 +81,12 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callcontrol.md">KSTELEPHONY_CALLCONTROL</a>
-</dt>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callinfo.md">KSTELEPHONY_CALLINFO</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_tagkstelephony_providerchange.md">KSTELEPHONY_PROVIDERCHANGE</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callinfo.md">KSTELEPHONY_CALLINFO</a>
+
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callcontrol.md">KSTELEPHONY_CALLCONTROL</a>
+
  
 
  

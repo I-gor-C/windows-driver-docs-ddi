@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4eeadee1-ac2a-46f5-88e0-fe8d3db3dcf1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_QUERYTARGETMODES,
+ms.keywords : display.idarg_in_querytargetmodes, iddcx/IDARG_IN_QUERYTARGETMODES, IDARG_IN_QUERYTARGETMODES, IDARG_IN_QUERYTARGETMODES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_QUERYTARGETMODES
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -48,22 +52,20 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 
 ## Members
 
-        
-            `MonitorDescription`
 
-            [in] The monitor description. 
+`MonitorDescription`
 
-<div class="alert"><b>Note</b>  This may not be the monitor description the driver originally provided in the monitor arrival call, which allows for the monitor description to be updated by the OS.</div>
-<div> </div>
-        
-            `pTargetModes`
+[in] The monitor description. 
+<div class="alert"><b>Note</b>  This may not be the monitor description the driver originally provided in the monitor arrival call, which allows for the monitor description to be updated by the OS.</div><div> </div>
 
-            [out] Pointer to the buffer that the driver should copy the target modes it supports for this monitor
+`pTargetModes`
+
+[out] Pointer to the buffer that the driver should copy the target modes it supports for this monitor
                  to.
-        
-            `TargetModeBufferInputCount`
 
-            [in] The number of target modes the <b>pTargetModes</b> buffer passed to the driver can hold. If the value is zero, then the driver should not copy the target mode list to <b>pTargetModes.</b>
+`TargetModeBufferInputCount`
+
+[in] The number of target modes the <b>pTargetModes</b> buffer passed to the driver can hold. If the value is zero, then the driver should not copy the target mode list to <b>pTargetModes.</b>
 
 
 ## Requirements

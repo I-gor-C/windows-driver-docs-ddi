@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8a39b7cb-cd05-4fb8-9e50-7425e689a36f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM
+ms.keywords : ks-struct_dddb648f-ea8a-436a-b948-397364fe2db6.xml, *PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM structure pointer [Streaming Media Devices], PKSFASTPROPERTY_ITEM, ks/KSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM structure [Streaming Media Devices], stream.ksfastproperty_item, ks/PKSFASTPROPERTY_ITEM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSFASTPROPERTY_ITEM
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM
 ---
 
 # KSFASTPROPERTY_ITEM structure
@@ -55,14 +59,14 @@ typedef struct {
 
 ## Members
 
-        
-            `PropertyId`
 
-            Specifies the identifier of the specific property within the set.
-        
-            `Reserved`
+`PropertyId`
 
-            Reserved and set to zero.
+Specifies the identifier of the specific property within the set.
+
+`Reserved`
+
+Reserved and set to zero.
 
 
 ## Requirements
@@ -73,13 +77,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567173">KStrFastHandler</a>
-</dt>
-</dl>
+
  
 
  

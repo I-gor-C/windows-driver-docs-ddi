@@ -7,8 +7,8 @@ old-location : netvista\ndismcoactivatevccomplete.htm
 old-project : netvista
 ms.assetid : db5ff69f-dcae-4016-a078-c8edb2390c6c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisMCoActivateVcComplete
+ms.date : 1/18/2018
+ms.keywords : netvista.ndismcoactivatevccomplete, NdisMCoActivateVcComplete, NdisMCoActivateVcComplete function [Network Drivers Starting with Windows Vista], ndis/NdisMCoActivateVcComplete, condis_miniport_ref_3a81c66b-8e97-4194-bf90-988ac2fd05b5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisMCoActivateVcComplete
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_MCO_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -61,8 +65,8 @@ VOID NdisMCoActivateVcComplete(
 Specifies the handle identifying the VC. The caller obtained this handle from its per-VC state,
      designated by the 
      <i>MiniportVcContext</i> passed as an input parameter to its 
-     <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">
-     MiniportCoActivateVc</a> function.
+     <mshelp:link keywords="netvista.miniportcoactivatevc" tabindex="0"><i>
+     MiniportCoActivateVc</i></mshelp:link> function.
 
 `CallParameters`
 
@@ -98,8 +102,8 @@ If the miniport driver finds the CM-supplied call parameters unacceptable, it fa
 
 A call to 
     <b>NdisMCoActivateVcComplete</b> causes NDIS to call the 
-    <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
-    ProtocolCmActivateVcComplete</a> function of the call manager that originally requested the VC
+    <mshelp:link keywords="netvista.protocolcmactivatevccomplete" tabindex="0"><i>
+    ProtocolCmActivateVcComplete</i></mshelp:link> function of the call manager that originally requested the VC
     activation.
 
 ## Requirements
@@ -116,26 +120,19 @@ A call to
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
+
+<mshelp:link keywords="netvista.protocolcmactivatevccomplete" tabindex="0"><i>
+   ProtocolCmActivateVcComplete</i></mshelp:link>
+
 <a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
-   ProtocolCmActivateVcComplete</a>
-</dt>
-</dl>
+
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoActivateVcComplete function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoActivateVcComplete function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

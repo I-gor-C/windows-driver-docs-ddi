@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6a05b25f-e529-469a-8bfc-e75c0f7a9a8a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxPrepareToReparseSymbolicLink
+ms.keywords : ifsk.rxpreparetoreparsesymboliclink, rxprocs/RxPrepareToReparseSymbolicLink, RxPrepareToReparseSymbolicLink, rxref_6726dffd-ccae-43e0-98da-14dc0d11c7c2.xml, RxPrepareToReparseSymbolicLink routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxPrepareToReparseSymbolicLink
-req.alt-loc : rxprocs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -77,15 +81,45 @@ A pointer to a Boolean value that indicates whether a reparse is required. If th
 ## Return Value
 
 <b>RxPrepareToReparseSymbolicLink</b> returns STATUS_SUCCESS on success or one of the following error values on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>A request to delete failed.
+</dl>
+</td>
+<td width="60%">
+A request to delete failed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There were insufficient resources available.
+</dl>
+</td>
+<td width="60%">
+There were insufficient resources available.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was passed to the routine. This error will be returned if the <b>MajorFunction</b> member of <i>RxContext </i>is not IRP_MJ_CREATE.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was passed to the routine. This error will be returned if the <b>MajorFunction</b> member of <i>RxContext </i>is not IRP_MJ_CREATE. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -113,11 +147,8 @@ The value of the <i>ReparseRequired</i> parameter assumes significance only if S
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
-</dt>
-</dl>
+
  
 
  

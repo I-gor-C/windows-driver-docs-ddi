@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7C55EB8D-1B68-484A-B95A-E0150FBA9AB8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UFX_DEVICE_CAPABILITIES_INIT
+ms.keywords : ufxclient/UFX_DEVICE_CAPABILITIES_INIT, UFX_DEVICE_CAPABILITIES_INIT, buses.ufx_device_capabilities_init, UFX_DEVICE_CAPABILITIES_INIT function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UFX_DEVICE_CAPABILITIES_INIT
-req.alt-loc : ufxclient.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 

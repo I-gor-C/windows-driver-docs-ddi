@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 3bfb43dd-b4e1-49ee-9be6-c9861341daa1
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _ACPI_EVAL_OUTPUT_BUFFER_V1, ACPI_EVAL_OUTPUT_BUFFER, *PACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER_V1, *PACPI_EVAL_OUTPUT_BUFFER_V1
+ms.keywords : acpiioct/ACPI_EVAL_OUTPUT_BUFFER_V1, *PACPI_EVAL_OUTPUT_BUFFER_V1, acpi.acpi_eval_output_buffer, _ACPI_EVAL_OUTPUT_BUFFER_V1, ACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER_V1, *PACPI_EVAL_OUTPUT_BUFFER, acpi-meth-eval-ref_438f3766-37fd-449b-8084-26f08c2f82a0.xml, ACPI_EVAL_OUTPUT_BUFFER_V1 structure [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACPI_EVAL_OUTPUT_BUFFER_V1
-req.alt-loc : Acpiioct.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ACPI_EVAL_OUTPUT_BUFFER, *PACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER_V1
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER_V1, ACPI_EVAL_OUTPUT_BUFFER"
 ---
 
 # _ACPI_EVAL_OUTPUT_BUFFER_V1 structure
@@ -49,25 +53,25 @@ typedef struct _ACPI_EVAL_OUTPUT_BUFFER_V1 {
 
 ## Members
 
-        
-            `Argument`
 
-            An array of <b>ACPI_METHOD_ARGUMENT</b> structures. For more information, see Remarks.
-        
-            `Count`
+`Argument`
 
-            The number of <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a> structures that the <b>Argument</b> array contains.
-        
-            `Length`
+An array of <b>ACPI_METHOD_ARGUMENT</b> structures. For more information, see Remarks.
 
-            The size, in bytes, of the output buffer. This size includes the storage for the <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure at the start of the output buffer, plus any additional storage that might be required for data in the <b>Argument</b> array that extends past the end of the <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure.
-        
-            `Signature`
+`Count`
 
-            The signature of the output buffer, which must be set to ACPI_EVAL_OUTPUT_BUFFER_SIGNATURE.
+The number of <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a> structures that the <b>Argument</b> array contains.
 
-    ## Remarks
-        The following ACPI IOCTLs return output arguments from ACPI control methods in an <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure:
+`Length`
+
+The size, in bytes, of the output buffer. This size includes the storage for the <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure at the start of the output buffer, plus any additional storage that might be required for data in the <b>Argument</b> array that extends past the end of the <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure.
+
+`Signature`
+
+The signature of the output buffer, which must be set to ACPI_EVAL_OUTPUT_BUFFER_SIGNATURE.
+
+## Remarks
+The following ACPI IOCTLs return output arguments from ACPI control methods in an <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure:
 
 
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
@@ -97,13 +101,10 @@ For more information about how to use <b>ACPI_EVAL_OUTPUT_BUFFER</b> structures 
 | **Minimum UMDF version** |  |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a>
-</dt>
-</dl>
+
  
 
  

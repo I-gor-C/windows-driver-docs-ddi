@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 22698DF4-7B8C-40B8-9B07-EEDCC03D0D0F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _BDCB_CALLBACK_TYPE, *PBDCB_CALLBACK_TYPE, BDCB_CALLBACK_TYPE
+ms.keywords : _BDCB_CALLBACK_TYPE, ntddk/BDCB_CALLBACK_TYPE, ntddk/BdCbStatusUpdate, BdCbInitializeImage, *PBDCB_CALLBACK_TYPE, BdCbStatusUpdate, BDCB_CALLBACK_TYPE enumeration [Kernel-Mode Driver Architecture], BDCB_CALLBACK_TYPE, kernel.bdcb_callback_type, ntddk/BdCbInitializeImage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDCB_CALLBACK_TYPE
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBDCB_CALLBACK_TYPE, BDCB_CALLBACK_TYPE"
 ---
 
@@ -63,17 +67,36 @@ typedef enum _BDCB_CALLBACK_TYPE {
 ## Remarks
 
 The two callback types have unique context structures that provide additional information specific to the callback.
-
+<table>
+<tr>
+<th>Value </th>
+<th>Corresponding structure to use</th>
+</tr>
+<tr>
+<td>
 BdCbStatusUpdate
 
+</td>
+<td>
 
 <a href="..\ntddk\ne-ntddk-_bdcb_status_update_type.md">BDCB_STATUS_UPDATE_TYPE</a>
 
 
+</td>
+</tr>
+<tr>
+<td>
 BdCbInitializeImage
 
+</td>
+<td>
 
 <a href="..\ntddk\ne-ntddk-_bdcb_classification.md">BDCB_CLASSIFICATION</a>
+
+
+</td>
+</tr>
+</table>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,17 +108,12 @@ BdCbInitializeImage
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">BOOT_DRIVER_CALLBACK_FUNCTION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ne-ntddk-_bdcb_status_update_type.md">BDCB_STATUS_UPDATE_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ne-ntddk-_bdcb_classification.md">BDCB_CLASSIFICATION</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ne-ntddk-_bdcb_status_update_type.md">BDCB_STATUS_UPDATE_TYPE</a>
+
  
 
  

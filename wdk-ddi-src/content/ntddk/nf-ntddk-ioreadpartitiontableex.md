@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1aa8665a-1674-4fca-b5c6-d8d25166ca29
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : IoReadPartitionTableEx
+ms.keywords : storage.ioreadpartitiontableex, IoReadPartitionTableEx, rtns-disk_eb4e14e1-14a3-441a-b8ff-9ce68c1b3992.xml, ntddk/IoReadPartitionTableEx, IoReadPartitionTableEx routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoReadPartitionTableEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -55,7 +59,7 @@ Pointer to the device object for the disk whose partitions are to be read.
 
 `DriveLayout`
 
-
+TBD
 
 
 ## Return Value
@@ -95,35 +99,24 @@ Note that disk drivers also return and set partition information in response to 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_partition_info_ex.md">IOCTL_DISK_GET_PARTITION_INFO_EX</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_set_partition_info_ex.md">IOCTL_DISK_SET_PARTITION_INFO_EX</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_layout_ex.md">IOCTL_DISK_GET_DRIVE_LAYOUT_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_set_drive_layout_ex.md">IOCTL_DISK_SET_DRIVE_LAYOUT_EX</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-iowritepartitiontableex.md">IoWritePartitionTableEx</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_set_partition_info_ex.md">IOCTL_DISK_SET_PARTITION_INFO_EX</a>
+
+<a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_partition_info_ex.md">IOCTL_DISK_GET_PARTITION_INFO_EX</a>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_layout_ex.md">IOCTL_DISK_GET_DRIVE_LAYOUT_EX</a>
+
  
 
  

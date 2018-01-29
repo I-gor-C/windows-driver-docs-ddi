@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B6FCA052-FFAE-4F7D-8BDE-CDB84772B5E5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PROTECTED_SESSION_STATUS, DXGK_PROTECTED_SESSION_STATUS
+ms.keywords : DXGK_PROTECTED_SESSION_STATUS_INVALID, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS_INVALID, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS_OK, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS, DXGK_PROTECTED_SESSION_STATUS enumeration [Display Devices], _DXGK_PROTECTED_SESSION_STATUS, DXGK_PROTECTED_SESSION_STATUS_OK, display.dxgk_protected_session_status, DXGK_PROTECTED_SESSION_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_PROTECTED_SESSION_STATUS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PROTECTED_SESSION_STATUS
 ---
 

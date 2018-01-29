@@ -7,8 +7,8 @@ old-location : debugger\readlistentry.htm
 old-project : debugger
 ms.assetid : b5bfbb6d-4797-4e5f-bc66-398527b13d85
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ReadListEntry
+ms.date : 1/19/2018
+ms.keywords : debugger.readlistentry, ReadListEntry, ReadListEntry function [Windows Debugging], WdbgExts_Ref_ab7a48d6-aa2a-4ed1-a4dc-7339993ccb45.xml, wdbgexts/ReadListEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ReadListEntry
-req.alt-loc : wdbgexts.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXT_TDOP
 req.product : Windows 10 or later.
 ---
@@ -70,7 +74,7 @@ For more information about the LIST_ENTRY structures, see the Windows Driver Kit
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
 
 
-LIST_ENTRY64 and LIST_ENTRY32 are defined in <b>winnt.h</b>.</p>
+LIST_ENTRY64 and LIST_ENTRY32 are defined in <b>winnt.h</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

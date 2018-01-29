@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DA9C020F-18E7-4C6C-AEBB-81B099C80CD0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO, *PPO_FX_COMPONENT_PERF_INFO
+ms.keywords : kernel.po_fx_component_perf_info, PPO_FX_COMPONENT_PERF_INFO structure pointer [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_PERF_INFO, wdm/PO_FX_COMPONENT_PERF_INFO, *PPO_FX_COMPONENT_PERF_INFO, wdm/PPO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO structure [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_PERF_INFO, PPO_FX_COMPONENT_PERF_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PO_FX_COMPONENT_PERF_INFO
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : PO_FX_COMPONENT_PERF_INFO, *PPO_FX_COMPONENT_PERF_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -48,17 +52,17 @@ typedef struct _PO_FX_COMPONENT_PERF_INFO {
 
 ## Members
 
-        
-            `PerfStateSets`
 
-            This member is the first element in an array of one or more <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> elements. Each  <b>PO_FX_COMPONENT_PERF_SET</b> represents one set of supported performance states for a component. If the array contains more than one element, the additional elements immediately follow the first element.
-        
-            `PerfStateSetsCount`
+`PerfStateSets`
 
-            The number of elements in the array <b>PerfStateSets</b> array.
+This member is the first element in an array of one or more <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> elements. Each  <b>PO_FX_COMPONENT_PERF_SET</b> represents one set of supported performance states for a component. If the array contains more than one element, the additional elements immediately follow the first element.
 
-    ## Remarks
-        When a device driver calls the <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a> routine to register a component for performance state support with the power management framework (PoFx),  the driver can supply a <b>PO_FX_COMPONENT_PERF_INFO</b> structure that  describes the sets of the performance states supported by the component. The <b>PerfStateSets</b> member of the <b>PO_FX_COMPONENT_PERF_INFO</b> structure contains an array of <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structures that represent the supported performance states.
+`PerfStateSetsCount`
+
+The number of elements in the array <b>PerfStateSets</b> array.
+
+## Remarks
+When a device driver calls the <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a> routine to register a component for performance state support with the power management framework (PoFx),  the driver can supply a <b>PO_FX_COMPONENT_PERF_INFO</b> structure that  describes the sets of the performance states supported by the component. The <b>PerfStateSets</b> member of the <b>PO_FX_COMPONENT_PERF_INFO</b> structure contains an array of <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structures that represent the supported performance states.
 
 Most drivers are expected to define a single set of performance states per component. For example, a driver might define one set of performance states to control the clock frequency for a component. However, some drivers may need to define more than one performance state set to control multiple dimensions of performance states for a component. For example, a driver might define two sets of performance states to control the clock frequency and bus bandwidth.
 
@@ -70,19 +74,14 @@ Most drivers are expected to define a single set of performance states per compo
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn939352">Component-Level Performance State Management</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939352">Component-Level Performance State Management</a>
+
  
 
  

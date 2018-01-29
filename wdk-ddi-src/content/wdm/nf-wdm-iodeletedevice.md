@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 973549c3-c570-48ab-9a82-9398c920dbd9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoDeleteDevice
+ms.keywords : wdm/IoDeleteDevice, IoDeleteDevice, IoDeleteDevice routine [Kernel-Mode Driver Architecture], k104_246c1fe6-75cc-434e-a1d4-7e573eff96de.xml, kernel.iodeletedevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoDeleteDevice
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : DeleteDevice, IrqlIoApcLte, PnpSurpriseRemove, RemoveLockCheck, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -84,14 +88,10 @@ When a driver calls <b>IoDeleteDevice</b>, the I/O manager deletes the target de
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iodisconnectinterrupt.md">IoDisconnectInterrupt</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+
  
 
  

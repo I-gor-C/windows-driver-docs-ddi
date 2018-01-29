@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 76a0fc34-a3e9-4f97-9c60-e7d179b1e6c3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlTimeToSecondsSince1980
+ms.keywords : rtlref_14f6e0b0-4291-46ce-aadc-ee8dc169a8cf.xml, RtlTimeToSecondsSince1980 routine [Installable File System Drivers], RtlTimeToSecondsSince1980, ntifs/RtlTimeToSecondsSince1980, ifsk.rtltimetosecondssince1980
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlTimeToSecondsSince1980
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -82,20 +86,14 @@ For more information about converting time values, see <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlsecondssince1970totime.md">RtlSecondsSince1980ToTime</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtltimefieldstotime.md">RtlTimeFieldsToTime</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtltimetosecondssince1980.md">RtlTimeToSecondsSince1970</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtltimetotimefields.md">RtlTimeToTimeFields</a>
-</dt>
-</dl>
+
  
 
  

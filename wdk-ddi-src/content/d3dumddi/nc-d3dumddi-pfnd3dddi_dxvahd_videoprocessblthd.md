@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 62451fc4-92cc-4553-80cc-0843cf734a62
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.videoprocessblthd, VideoProcessBltHD callback function [Display Devices], VideoProcessBltHD, PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, d3dumddi/VideoProcessBltHD, UserModeDisplayDriver_Functions_72b2babe-fc93-4960-93d3-6bc2022227c8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : VideoProcessBltHD is supported beginning with the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoProcessBltHD
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ HRESULT Pfnd3dddiDxvahdVideoprocessblthd(
 ## Return Value
 
 <i>VideoProcessBltHD</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The DirectX VA video processing operation is successfully performed.
+</dl>
+</td>
+<td width="60%">
+The DirectX VA video processing operation is successfully performed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>VideoProcessBltHD</i> could not allocate memory that was required for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>VideoProcessBltHD</i> could not allocate memory that was required for it to complete.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -86,11 +112,8 @@ HRESULT Pfnd3dddiDxvahdVideoprocessblthd(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_videoprocessblthd.md">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a>
-</dt>
-</dl>
+
  
 
  

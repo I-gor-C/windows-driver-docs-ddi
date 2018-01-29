@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7438C120-9CFB-4D5D-9323-8A5D84D02449
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_IO_MEMORY_RESOURCE, *PPEP_ACPI_IO_MEMORY_RESOURCE, PEP_ACPI_IO_MEMORY_RESOURCE
+ms.keywords : pepfx/PEP_ACPI_IO_MEMORY_RESOURCE, PPEP_ACPI_IO_MEMORY_RESOURCE structure pointer [Kernel-Mode Driver Architecture], *PPEP_ACPI_IO_MEMORY_RESOURCE, PEP_ACPI_IO_MEMORY_RESOURCE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_IO_MEMORY_RESOURCE, pepfx/PPEP_ACPI_IO_MEMORY_RESOURCE, PEP_ACPI_IO_MEMORY_RESOURCE, kernel.pep_acpi_io_memory_resource, _PEP_ACPI_IO_MEMORY_RESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_IO_MEMORY_RESOURCE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_ACPI_IO_MEMORY_RESOURCE, PEP_ACPI_IO_MEMORY_RESOURCE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_ACPI_IO_MEMORY_RESOURCE, *PPEP_ACPI_IO_MEMORY_RESOURCE
 ---
 
 # _PEP_ACPI_IO_MEMORY_RESOURCE structure
@@ -51,32 +55,32 @@ typedef struct _PEP_ACPI_IO_MEMORY_RESOURCE {
 
 ## Members
 
-        
-            `Alignment`
 
-            Specifies the alignment granularity for the IO address assigned.
-        
-            `Information`
+`Alignment`
 
-            If bit 0 is a 1, this indicates that the logical device decodes 16-bit addresses. If bit 0 is 0, this indicates that the logical device only decodes the first 10 bits of the address.
+Specifies the alignment granularity for the IO address assigned.
+
+`Information`
+
+If bit 0 is a 1, this indicates that the logical device decodes 16-bit addresses. If bit 0 is 0, this indicates that the logical device only decodes the first 10 bits of the address.
 
 Bits 1 to 7 of this member are reserved and must be set to zero.
-        
-            `Length`
 
-            Specifies the number of bytes in the IO range.
-        
-            `MaximumAddress`
+`Length`
 
-            Specifies the maximum acceptable starting address for the IO range.
-        
-            `MinimumAddress`
+Specifies the number of bytes in the IO range.
 
-            Specifies the minimum acceptable starting address for the IO range.
-        
-            `Type`
+`MaximumAddress`
 
-            A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.
+Specifies the maximum acceptable starting address for the IO range.
+
+`MinimumAddress`
+
+Specifies the minimum acceptable starting address for the IO range.
+
+`Type`
+
+A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.
 
 
 ## Requirements
@@ -87,13 +91,10 @@ Bits 1 to 7 of this member are reserved and must be set to zero.
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a>
-</dt>
-</dl>
+
  
 
  

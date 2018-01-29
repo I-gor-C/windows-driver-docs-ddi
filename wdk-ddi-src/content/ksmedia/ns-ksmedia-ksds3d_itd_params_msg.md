@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : cc580766-54ca-47b2-93dd-2f234afa73ff
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG, *PKSDS3D_ITD_PARAMS_MSG
+ms.keywords : PKSDS3D_ITD_PARAMS_MSG, audio.ksds3d_itd_params_msg, KSDS3D_ITD_PARAMS_MSG structure [Audio Devices], aud-prop_af31be2f-c153-4430-9634-6d29b05208dd.xml, ksmedia/KSDS3D_ITD_PARAMS_MSG, PKSDS3D_ITD_PARAMS_MSG structure pointer [Audio Devices], ksmedia/PKSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG, *PKSDS3D_ITD_PARAMS_MSG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDS3D_ITD_PARAMS_MSG
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSDS3D_ITD_PARAMS_MSG, *PKSDS3D_ITD_PARAMS_MSG
 ---
 
@@ -49,25 +53,25 @@ typedef struct {
 
 ## Members
 
-        
-            `Enabled`
 
-            Specifies whether to enable the ITD algorithm. A nonzero value enables the algorithm. Zero disables it. For more information, see the following Remarks section.
-        
-            `LeftParams`
+`Enabled`
 
-            Specifies the ITD parameters for the left channel (channel 0). This parameter is a structure of type <a href="..\ksmedia\ns-ksmedia-ksds3d_itd_params.md">KSDS3D_ITD_PARAMS</a>.
-        
-            `Reserved`
+Specifies whether to enable the ITD algorithm. A nonzero value enables the algorithm. Zero disables it. For more information, see the following Remarks section.
 
-            Reserved. Set to zero.
-        
-            `RightParams`
+`LeftParams`
 
-            Specifies the ITD parameters for the right channel (channel 1). This parameter is a structure of type KSDS3D_ITD_PARAMS.
+Specifies the ITD parameters for the left channel (channel 0). This parameter is a structure of type <a href="..\ksmedia\ns-ksmedia-ksds3d_itd_params.md">KSDS3D_ITD_PARAMS</a>.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537358">KSPROPERTY_ITD3D_PARAMS</a> property request.
+`Reserved`
+
+Reserved. Set to zero.
+
+`RightParams`
+
+Specifies the ITD parameters for the right channel (channel 1). This parameter is a structure of type KSDS3D_ITD_PARAMS.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537358">KSPROPERTY_ITD3D_PARAMS</a> property request.
 
 The <i>Enabled</i> parameter should track the DirectSound buffer's 3D mode: Disable ITD processing when the 3D mode is disabled, and enable it when the 3D mode is enabled. For more information, see the description of the <b>DirectSound3DBuffer::SetMode</b> method in the Microsoft Windows SDK documentation.
 
@@ -79,19 +83,14 @@ The <i>Enabled</i> parameter should track the DirectSound buffer's 3D mode: Disa
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-ksds3d_itd_params.md">KSDS3D_ITD_PARAMS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537358">KSPROPERTY_ITD3D_PARAMS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537148">KSNODETYPE_3D_EFFECTS</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ns-ksmedia-ksds3d_itd_params.md">KSDS3D_ITD_PARAMS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537358">KSPROPERTY_ITD3D_PARAMS</a>
+
  
 
  

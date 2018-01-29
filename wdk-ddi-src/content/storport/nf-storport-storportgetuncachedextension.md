@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d5fa83d6-d733-4fff-89a9-f519ed608e57
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetUncachedExtension
+ms.keywords : StorPortGetUncachedExtension routine [Storage Devices], storage.storportgetuncachedextension, storprt_f3acfe04-374f-47d9-8e8f-7f7f8ee8a1d3.xml, StorPortGetUncachedExtension, storport/StorPortGetUncachedExtension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortGetUncachedExtension
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -88,11 +92,8 @@ Bus-master devices use common buffer space for DMA transfers.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
-</dt>
-</dl>
+
  
 
  

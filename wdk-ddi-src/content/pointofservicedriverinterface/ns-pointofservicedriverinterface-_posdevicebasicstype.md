@@ -7,8 +7,8 @@ old-location : pos\posdevicebasicstype.htm
 old-project : pos
 ms.assetid : 5f882f37-0554-48c0-b4a0-026d42452f56
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosDeviceBasicsType, PosDeviceBasicsType
+ms.date : 1/18/2018
+ms.keywords : pos.posdevicebasicstype, pointofservicedriverinterface/PosDeviceBasicsType, PosDeviceBasicsType, PosDeviceBasicsType structure, _PosDeviceBasicsType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosDeviceBasicsType
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosDeviceBasicsType
 ---
 
@@ -48,18 +52,18 @@ typedef struct _PosDeviceBasicsType {
 
 ## Members
 
-        
-            `DeviceType`
 
-            Indicates the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_posdevicetype.md">PosDeviceType</a> of the POS device (for example, a barcode scanner or a magnetic stripe reader).
-        
-            `RecommendedBufferSize`
+`DeviceType`
 
-            Indicates the size of the buffer that needs to be allocated to receive event data when calling <a href="http://go.microsoft.com/fwlink/p/?LinkId=314125">ReadFile</a> to retrieve events for this device
-        
-            `Version`
+Indicates the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_posdevicetype.md">PosDeviceType</a> of the POS device (for example, a barcode scanner or a magnetic stripe reader).
 
-            Contains the major and minor version of the POS driver interface. The top 16 bits contains the major version and the bottom 16 bits contains the minor version.
+`RecommendedBufferSize`
+
+Indicates the size of the buffer that needs to be allocated to receive event data when calling <a href="http://go.microsoft.com/fwlink/p/?LinkId=314125">ReadFile</a> to retrieve events for this device
+
+`Version`
+
+Contains the major and minor version of the POS driver interface. The top 16 bits contains the major version and the bottom 16 bits contains the minor version.
 
 
 ## Requirements

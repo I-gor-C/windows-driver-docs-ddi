@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aa8b64a7-eae9-444c-892f-841ca5a610cf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_QUEUE_CONFIG, WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
+ms.keywords : _WDF_IO_QUEUE_CONFIG, DFQueueObjectRef_5fda62f6-b76d-4691-9354-e091af8a5567.xml, WDF_IO_QUEUE_CONFIG, PWDF_IO_QUEUE_CONFIG structure pointer, kmdf.wdf_io_queue_config, wdfio/PWDF_IO_QUEUE_CONFIG, PWDF_IO_QUEUE_CONFIG, wdfio/WDF_IO_QUEUE_CONFIG, WDF_IO_QUEUE_CONFIG structure, wdf.wdf_io_queue_config, *PWDF_IO_QUEUE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_QUEUE_CONFIG
-req.alt-loc : wdfio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any IRQL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -67,58 +71,58 @@ typedef struct _WDF_IO_QUEUE_CONFIG {
 
 ## Members
 
-        
-            `AllowZeroLengthRequests`
 
-            A Boolean value that, if <b>TRUE</b>, indicates that the driver expects to receive read or write requests that have a buffer length of zero, so the framework delivers these requests to the driver. If <b>FALSE</b>, the framework does not deliver these requests to the driver; instead, it completes them with a completion status of STATUS_SUCCESS.
-        
-            `DefaultQueue`
+`AllowZeroLengthRequests`
 
-            A Boolean value that, if <b>TRUE</b>, indicates that the queue will be the device's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-i-o-queues">default I/O queue</a>. If <b>FALSE</b>, the queue will not be the device's default queue.
-        
-            `DispatchType`
+A Boolean value that, if <b>TRUE</b>, indicates that the driver expects to receive read or write requests that have a buffer length of zero, so the framework delivers these requests to the driver. If <b>FALSE</b>, the framework does not deliver these requests to the driver; instead, it completes them with a completion status of STATUS_SUCCESS.
 
-            A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.
-        
-            `Driver`
+`DefaultQueue`
 
-            For internal use only.  Set to NULL. This member is available in version 1.11 and later versions of KMDF.
-        
-            `EvtIoCanceledOnQueue`
+A Boolean value that, if <b>TRUE</b>, indicates that the queue will be the device's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-i-o-queues">default I/O queue</a>. If <b>FALSE</b>, the queue will not be the device's default queue.
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a> callback function, or <b>NULL</b>.
-        
-            `EvtIoDefault`
+`DispatchType`
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_default.md">EvtIoDefault</a> callback function, or <b>NULL</b>.
-        
-            `EvtIoDeviceControl`
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_device_control.md">EvtIoDeviceControl</a> callback function, or <b>NULL</b>.
-        
-            `EvtIoInternalDeviceControl`
+`Driver`
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_internal_device_control.md">EvtIoInternalDeviceControl</a> callback function, or <b>NULL</b>.
-        
-            `EvtIoRead`
+For internal use only.  Set to NULL. This member is available in version 1.11 and later versions of KMDF.
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_read.md">EvtIoRead</a> callback function, or <b>NULL</b>.
-        
-            `EvtIoResume`
+`EvtIoCanceledOnQueue`
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_resume.md">EvtIoResume</a> callback function, or <b>NULL</b>.
-        
-            `EvtIoStop`
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a> callback function, or <b>NULL</b>.
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a> callback function, or <b>NULL</b>.
-        
-            `EvtIoWrite`
+`EvtIoDefault`
 
-            A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_write.md">EvtIoWrite</a> callback function, or <b>NULL</b>.
-        
-            `PowerManaged`
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_default.md">EvtIoDefault</a> callback function, or <b>NULL</b>.
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that, if set to <b>WdfTrue</b>, indicates that the framework handles power management of the queue. 
+`EvtIoDeviceControl`
+
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_device_control.md">EvtIoDeviceControl</a> callback function, or <b>NULL</b>.
+
+`EvtIoInternalDeviceControl`
+
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_internal_device_control.md">EvtIoInternalDeviceControl</a> callback function, or <b>NULL</b>.
+
+`EvtIoRead`
+
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_read.md">EvtIoRead</a> callback function, or <b>NULL</b>.
+
+`EvtIoResume`
+
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_resume.md">EvtIoResume</a> callback function, or <b>NULL</b>.
+
+`EvtIoStop`
+
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a> callback function, or <b>NULL</b>.
+
+`EvtIoWrite`
+
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_write.md">EvtIoWrite</a> callback function, or <b>NULL</b>.
+
+`PowerManaged`
+
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that, if set to <b>WdfTrue</b>, indicates that the framework handles power management of the queue. 
 
 If set to <b>WdfFalse</b>, the driver must handle power management of the queue. 
 
@@ -127,17 +131,17 @@ If set to <b>WdfDefault</b>, the framework handles power management for the queu
 Drivers above the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/power-policy-ownership">power policy owner</a> in the driver stack must not set the <b>PowerManaged</b> member to <b>WdfTrue</b>. 
 
 For more information about power-managed I/O queues, see <a href="https://msdn.microsoft.com/2e1bf9d2-615b-49b0-b677-f41b23c42eda">Power Management for I/O Queues</a>.
-        
-            `Settings`
 
-            
-        
-            `Size`
+`Settings`
 
-            The length, in bytes, of this structure.
 
-    ## Remarks
-        The driver must initialize the <b>WDF_IO_QUEUE_CONFIG</b> structure by calling <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a> or <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init_default_queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>.
+
+`Size`
+
+The length, in bytes, of this structure.
+
+## Remarks
+The driver must initialize the <b>WDF_IO_QUEUE_CONFIG</b> structure by calling <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a> or <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init_default_queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>.
 
 The WDF_IO_QUEUE_CONFIG structure is used as an input parameter to <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>.
 
@@ -154,22 +158,16 @@ For parallel queues,
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
-</dt>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a>
-</dt>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init_default_queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init_default_queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
+
  
 
  

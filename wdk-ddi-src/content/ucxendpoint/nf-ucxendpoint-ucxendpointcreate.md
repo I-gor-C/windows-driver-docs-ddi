@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2BB3B2CE-FD15-4D28-BBDA-29C3BB523874
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxEndpointCreate
+ms.keywords : UcxEndpointCreate, buses._ucxendpointcreate, ucxendpoint/UcxEndpointCreate, UcxEndpointCreate method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxEndpointCreate
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_ENDPOINT_CHARACTERISTIC_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,7 +85,7 @@ The client driver for the host controller must call this method after the <a hre
 
 The method initializes the endpoint object with information such as the type of endpoint, pipe, transfer, and maximum transfers size.
 
-For a code example, see <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a>.</p>
+For a code example, see <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

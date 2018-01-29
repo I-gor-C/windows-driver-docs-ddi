@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 957a2658-dddc-4529-8697-5fa44fcb96c2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PMI_MEASUREMENT_UNIT, PMI_MEASUREMENT_UNIT
+ms.keywords : powermeter.ioctl_pmi_get_configuration, IOCTL_PMI_GET_CONFIGURATION control code [Power Metering and Budgeting Devices], IOCTL_PMI_GET_CONFIGURATION, pmi/IOCTL_PMI_GET_CONFIGURATION, PowerMeterRef_7d1f1fbc-cd7a-4885-8d41-8f42c4659de7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PMI_GET_CONFIGURATION
-req.alt-loc : Pmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_MEASUREMENT_UNIT
 ---
 
@@ -59,35 +63,50 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the IRP's cur
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure.
 
 The <b>Status</b> member is set to one of the following values:
 
-
-
-The WDM driver that supports the PMI interface has completed the IOCTL request successfully.
-
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure.
-
-The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a> value.
-
-    ## Remarks
-        The <b>IOCTL_PMI_GET_CONFIGURATION</b> request queries the current configuration of the power meter. The input <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a> enumeration value specifies the type of configuration data to be returned. The data type and contents of the output buffer vary based on the data requested.
+## Remarks
+The <b>IOCTL_PMI_GET_CONFIGURATION</b> request queries the current configuration of the power meter. The input <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a> enumeration value specifies the type of configuration data to be returned. The data type and contents of the output buffer vary based on the data requested.
 
 The following table describes the type of data that is returned for the specified <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a> enumeration value.
-
+<table>
+<tr>
+<th>PMI_CONFIGURATION_TYPE value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 <b>PmiBudgetingConfiguration</b>
 
+</td>
+<td>
 A <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure that contains information about the budgeting configuration of the power meter.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>PmiMeasurementConfiguration</b>
 
+</td>
+<td>
 A <a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a> structure that contains information about the measurement configuration of the power meter.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>PmiThresholdConfiguration</b>
 
+</td>
+<td>
 A <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a> structure that contains information about the threshold configuration of the power meter.
+
+</td>
+</tr>
+</table>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,37 +115,26 @@ A <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGUR
 | **Header** | pmi.h (include Pmi.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
-<a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
-</dt>
-<dt>
 <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>
-</dt>
-<dt>
+
+<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
 <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a>
-</dt>
-<dt>
-<a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
-</dt>
-<dt>
-<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
-</dt>
-<dt>
+
+<a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
+
 <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
-</dt>
-</dl>
+
+<a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
+
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+
+<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1C6324DB-18E2-4CBC-9589-73DF3EB79503
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, *IN_OUT_PDXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
+ms.keywords : display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay3, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, *IN_OUT_PDXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
 ---
 
@@ -53,42 +57,42 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 {
 
 ## Members
 
-        
-            `Duration`
 
-            The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.
+`Duration`
+
+The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.
 
 If zero, the refresh rate should be the default rate based on the current mode.
-        
-            `InputFlags`
 
-            A DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS structure that identifies the type of display operation to perform.
-        
-            `OutputFlags`
+`InputFlags`
 
-            A DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS structure that returns information from the driver.
-        
-            `pHDRMetaData`
+A DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS structure that identifies the type of display operation to perform.
 
-            Pointer to a DXGK_HDR_METADATA structure indicating any metadata information that might be available. A NULL value indicates that no new metadata is available.
-        
-            `PlaneCount`
+`OutputFlags`
 
-            The number of overlay planes in the ppPlanes list.
-        
-            `pPostComposition`
+A DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS structure that returns information from the driver.
 
-            Pointer to a DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure containing virtual mode information and other transform information that should be applied after the planes have been composed.
+`pHDRMetaData`
+
+Pointer to a DXGK_HDR_METADATA structure indicating any metadata information that might be available. A NULL value indicates that no new metadata is available.
+
+`PlaneCount`
+
+The number of overlay planes in the ppPlanes list.
+
+`pPostComposition`
+
+Pointer to a DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure containing virtual mode information and other transform information that should be applied after the planes have been composed.
 
 If NULL, no post composition transforms should be applied.
-        
-            `ppPlanes`
 
-            An array of pointers to a DXGK_MULTIPLANE_OVERLAY_PLANE3 structures that specify the overlay planes to display.
-        
-            `VidPnSourceId`
+`ppPlanes`
 
-            An integer that identifies a video present source on the display adapter.
+An array of pointers to a DXGK_MULTIPLANE_OVERLAY_PLANE3 structures that specify the overlay planes to display.
+
+`VidPnSourceId`
+
+An integer that identifies a video present source on the display adapter.
 
 
 ## Requirements

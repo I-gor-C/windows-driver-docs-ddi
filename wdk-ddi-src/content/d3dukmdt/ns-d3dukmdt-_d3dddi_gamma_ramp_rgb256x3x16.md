@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d5a8a040-0b96-4eb9-b90f-f506de89559f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_GAMMA_RAMP_RGB256x3x16, D3DDDI_GAMMA_RAMP_RGB256x3x16
+ms.keywords : display.d3dddi_gamma_ramp_rgb256x3x16, d3dukmdt/D3DDDI_GAMMA_RAMP_RGB256x3x16, _D3DDDI_GAMMA_RAMP_RGB256x3x16, D3DDDI_GAMMA_RAMP_RGB256x3x16 structure [Display Devices], DmStructs_803b0bbe-a2a2-4e61-82da-11db95413949.xml, D3DDDI_GAMMA_RAMP_RGB256x3x16
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_GAMMA_RAMP_RGB256x3x16
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_GAMMA_RAMP_RGB256x3x16
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DDDI_GAMMA_RAMP_RGB256x3x16 {
 
 ## Members
 
-        
-            `Blue`
 
-            An array of 16-bit values that holds the gamma function for the blue color channel.
-        
-            `Green`
+`Blue`
 
-            An array of 16-bit values that holds the gamma function for the green color channel.
-        
-            `Red`
+An array of 16-bit values that holds the gamma function for the blue color channel.
 
-            An array of 16-bit values that holds the gamma function for the red color channel.
+`Green`
+
+An array of 16-bit values that holds the gamma function for the green color channel.
+
+`Red`
+
+An array of 16-bit values that holds the gamma function for the red color channel.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DDDI_GAMMA_RAMP_RGB256x3x16 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dukmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_gammaramp_type.md">D3DDDI_GAMMARAMP_TYPE</a>
-</dt>
-</dl>
+
  
 
  

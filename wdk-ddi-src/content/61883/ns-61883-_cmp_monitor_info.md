@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 258bcd6f-0536-48d3-a06a-10277f8bef87
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CMP_MONITOR_INFO, CMP_MONITOR_INFO, *PCMP_MONITOR_INFO
+ms.keywords : 61883/CMP_MONITOR_INFO, *PCMP_MONITOR_INFO, IEEE.cmp_monitor_info, PCMP_MONITOR_INFO structure pointer [Buses], _CMP_MONITOR_INFO, 61883/PCMP_MONITOR_INFO, CMP_MONITOR_INFO, CMP_MONITOR_INFO structure [Buses], 61883_structures_0064b5eb-7b9a-4f96-9e56-f3190d2fd7a3.xml, PCMP_MONITOR_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_MONITOR_INFO
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CMP_MONITOR_INFO, *PCMP_MONITOR_INFO
 ---
 
@@ -50,26 +54,26 @@ typedef struct _CMP_MONITOR_INFO {
 
 ## Members
 
-        
-            `Context`
 
-            Points to a caller-defined context that was registered with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>.
-        
-            `Pcr`
+`Context`
 
-            The current contents of the plug.
-        
-            `PlugNum`
+Points to a caller-defined context that was registered with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>.
 
-            The number of the plug that was accessed.
-        
-            `PlugType`
+`Pcr`
 
-            The type of plug, either CMP_PlugOut or CMP_PlugIn.
-        
-            `State`
+The current contents of the plug.
 
-            The current state of the plug.
+`PlugNum`
+
+The number of the plug that was accessed.
+
+`PlugType`
+
+The type of plug, either CMP_PlugOut or CMP_PlugIn.
+
+`State`
+
+The current state of the plug.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _CMP_MONITOR_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>
-</dt>
-</dl>
+
  
 
  

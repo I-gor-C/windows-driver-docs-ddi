@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1dd2bf12-741b-4f3a-9c80-367b5d5036b5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_BUFFERBLT1, D3DDDIARG_BUFFERBLT1
+ms.keywords : D3DDDIARG_BUFFERBLT1 structure [Display Devices], D3DDDIARG_BUFFERBLT1, display.d3dddiarg_bufferblt1, _D3DDDIARG_BUFFERBLT1, d3dumddi/D3DDDIARG_BUFFERBLT1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_BUFFERBLT1
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_BUFFERBLT1
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DDDIARG_BUFFERBLT1 {
 
 ## Members
 
-        
-            `CopyFlags`
 
-            A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.
-        
-            `hDstResource`
+`CopyFlags`
 
-            A handle to the destination resource.
-        
-            `hSrcResource`
+A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.
 
-            A handle to the source resource.
-        
-            `Offset`
+`hDstResource`
 
-            The offset in the destination surface, in bytes.
-        
-            `SrcRange`
+A handle to the destination resource.
 
-            The source range.
+`hSrcResource`
+
+A handle to the source resource.
+
+`Offset`
+
+The offset in the destination surface, in bytes.
+
+`SrcRange`
+
+The source range.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _D3DDDIARG_BUFFERBLT1 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 973f440a-ba17-466a-a9f4-f21c07e854d8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _TXN_PARAMETER_BLOCK, *PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK
+ms.keywords : "*PTXN_PARAMETER_BLOCK, ntddk/PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK structure [Installable File System Drivers], ntddk/_TXN_PARAMETER_BLOCK, fileinformationstructures_fd9a870c-f8bf-4a9d-8f7c-1dfbdcbab7aa.xml, _TXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK, PTXN_PARAMETER_BLOCK, ifsk.txn_parameter_block, PTXN_PARAMETER_BLOCK structure pointer [Installable File System Drivers]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The TXN_PARAMETER_BLOCK structure is available on Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TXN_PARAMETER_BLOCK
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK"
 ---
 
@@ -48,21 +52,21 @@ typedef struct _TXN_PARAMETER_BLOCK {
 
 ## Members
 
-        
-            `Length`
 
-            The size, in bytes, of the TXN_PARAMETER_BLOCK structure.
-        
-            `TransactionObject`
+`Length`
 
-            An opaque pointer to the transaction object for the transaction.
-        
-            `TxFsContext`
+The size, in bytes, of the TXN_PARAMETER_BLOCK structure.
 
-            The miniversion ID for the file.
+`TransactionObject`
 
-    ## Remarks
-        A <i>miniversion</i> is a version of a file that a transacted writer creates during a transaction. (A <i>transacted writer</i> is a transacted file handle opened with any permission that is not part of generic read access, but is part of generic write access.) 
+An opaque pointer to the transaction object for the transaction.
+
+`TxFsContext`
+
+The miniversion ID for the file.
+
+## Remarks
+A <i>miniversion</i> is a version of a file that a transacted writer creates during a transaction. (A <i>transacted writer</i> is a transacted file handle opened with any permission that is not part of generic read access, but is part of generic write access.) 
 
 If a specific miniversion number for the file is not provided, the <b>TxFsContext</b> member must be set to TXF_MINIVERSION_DEFAULT_VIEW.
 
@@ -71,8 +75,7 @@ The <b>TxFsContext</b> member of the <b>TXN_PARAMETER_BLOCK</b> uses TXF_MINIVER
 A miniversion exists only as a point-in-time view of a file and has not yet been written as an actual on-disk variant of a given file.  A transacted writer creates a miniversion by using the <a href="http://go.microsoft.com/fwlink/p/?linkid=139790">FSCTL_TXFS_CREATE_MINIVERSION</a> control code to call <a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>.  In response, the system creates a miniversion and returns its miniversion ID.  The transacted writer can continue to make changes to the file thereafter.  If the file is opened later by using the returned miniversion ID as the <b>TxFsContext</b> member of the <b>TXN_PARAMETER_BLOCK</b> structure, the resulting file handle shows the file as it was at the time that miniversion was created.
 
 All miniversions created in a transaction go away when the transaction ends.  Afterwards, the file can no longer be opened by using the miniversion IDs.
-
-The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure.
+<div class="alert"><b>Note</b>    A miniversion is available only to the transacted writer that created the miniversion, not to a transacted reader or non-transacted reader.</div><div> </div>The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,17 +85,14 @@ The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransacti
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, FltKernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>
-</dt>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=139790">FSCTL_TXFS_CREATE_MINIVERSION</a></dt>
-</dl>
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=139790">FSCTL_TXFS_CREATE_MINIVERSION</a>
+
+<a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a>
+
  
 
  

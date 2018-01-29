@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9b2d471a-649e-4289-a27a-b78893d8477b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_GetBindingCapability_IN, *PSM_GetBindingCapability_IN, SM_GetBindingCapability_IN
+ms.keywords : SM_GetBindingCapability_IN, PSM_GetBindingCapability_IN structure pointer [Storage Devices], hbapiwmi/PSM_GetBindingCapability_IN, *PSM_GetBindingCapability_IN, SM_GetBindingCapability_IN structure [Storage Devices], structs-Fibre_0aed53e6-0683-4d6c-94c7-30ee531084ab.xml, PSM_GetBindingCapability_IN, storage.sm_getbindingcapability_in, hbapiwmi/SM_GetBindingCapability_IN, _SM_GetBindingCapability_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_GetBindingCapability_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSM_GetBindingCapability_IN, SM_GetBindingCapability_IN"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SM_GetBindingCapability_IN, *PSM_GetBindingCapability_IN
 ---
 
 # _SM_GetBindingCapability_IN structure
@@ -47,17 +51,17 @@ typedef struct _SM_GetBindingCapability_IN {
 
 ## Members
 
-        
-            `DomainPortWWN`
 
-            A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
-        
-            `HbaPortWWN`
+`DomainPortWWN`
 
-            The worldwide name (WWN) of the local port whose events the WMI client will receive.
+A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM_GetBindingCapability_IN structure in <i>Hbapiwmi.h</i> when it compiles the SM_TargetInformationMethod WMI class.</p>
+`HbaPortWWN`
+
+The worldwide name (WWN) of the local port whose events the WMI client will receive.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM_GetBindingCapability_IN structure in <i>Hbapiwmi.h</i> when it compiles the SM_TargetInformationMethod WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

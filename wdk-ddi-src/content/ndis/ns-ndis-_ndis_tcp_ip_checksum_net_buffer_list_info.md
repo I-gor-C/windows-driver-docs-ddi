@@ -7,8 +7,8 @@ old-location : netvista\ndis_tcp_ip_checksum_net_buffer_list_info.htm
 old-project : netvista
 ms.assetid : 989ecf50-18c4-4977-b845-b3fea0cade47
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
+ms.date : 1/18/2018
+ms.keywords : netvista.ndis_tcp_ip_checksum_net_buffer_list_info, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], ndis/NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], tcpip_offload_ref_2ce657f6-a894-420b-bcb0-310819237c5b.xml, ndis/PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
-req.alt-loc : ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section
-req.typenames : NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO"
 ---
 
 # _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure
@@ -75,8 +79,8 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 ## Members
 
 
-    ## Remarks
-        The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure specifies information that is used in
+## Remarks
+The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure specifies information that is used in
     offloading checksum tasks from the TCP/IP transport to a NIC. The
     <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure is part of the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information (out-of-band
@@ -102,8 +106,7 @@ Before indicating up a receive TCP/IP packet on which it performs checksum tasks
     sets the appropriate 
     Xxx<b>ChecksumFailed</b> or 
     Xxx<b>ChecksumSucceeded</b> flags in the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure.
-
-To obtain the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure, a driver should call the 
+<div class="alert"><b>Note</b>  Checksum offload is disabled until the miniport receives <a href="https://msdn.microsoft.com/library/windows/hardware/ff569762">OID_OFFLOAD_ENCAPSULATION</a>. After it receives this OID, the miniport is then permitted to start validating the checksums on some received packets. The miniport is not required to validate the checksum on every packet; if both the Xxx<b>ChecksumFailed</b> and Xxx<b>ChecksumSucceeded</b> flags are clear, the OS will fall back to validating the checksum in software.</div><div> </div>To obtain the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure, a driver should call the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro with an 
     <i>_Id</i> of 
     <b>TcpIpChecksumNetBufferListInfo</b>.
@@ -116,21 +119,16 @@ To obtain the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure, a driv
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

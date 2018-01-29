@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 014ca1bd-6e18-4110-aefb-ec36e816f013
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsHandleSizedListQuery
+ms.keywords : stream.kshandlesizedlistquery, KsHandleSizedListQuery function [Streaming Media Devices], ksfunc_31d10c58-ce60-43ca-aae7-27a0bd83d2e2.xml, KsHandleSizedListQuery, ks/KsHandleSizedListQuery
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsHandleSizedListQuery
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -74,7 +78,7 @@ The <b>KsHandleSizedListQuery</b> function returns STATUS_SUCCESS if the number 
 
 ## Remarks
 
-Use the <b>KsHandleSizedListQuery</b> function when implementing properties that are to return information in the multiple item format.</p>
+Use the <b>KsHandleSizedListQuery</b> function when implementing properties that are to return information in the multiple item format.
 
 ## Requirements
 | &nbsp; | &nbsp; |

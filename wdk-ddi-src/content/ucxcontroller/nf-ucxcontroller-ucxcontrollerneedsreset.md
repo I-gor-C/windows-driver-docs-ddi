@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : FAE099E4-6BE9-4637-934F-9F86FFDCAA6A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxControllerNeedsReset
+ms.keywords : UcxControllerNeedsReset, ucxcontroller/UcxControllerNeedsReset, UcxControllerNeedsReset method [Buses], buses._ucxcontrollerneedsreset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxControllerNeedsReset
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_STATE
 req.product : Windows 10 or later.
 ---
@@ -74,11 +78,8 @@ If the operation is successful, the method returns TRUE. Otherwise it returns FA
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
-</dt>
-</dl>
+
  
 
  

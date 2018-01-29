@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a3df8ce0-4414-49d1-a02c-3f5a3efc0de2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDEREGISTERS, IDEREGISTERS, *PIDEREGISTERS
+ms.keywords : IDEREGISTERS, irb/IDEREGISTERS, _IDEREGISTERS, IDEREGISTERS structure [Storage Devices], storage.ideregisters, PIDEREGISTERS, structs-ATA_8e024553-553c-4a64-9f74-7259f530b3b5.xml, irb/PIDEREGISTERS, PIDEREGISTERS structure pointer [Storage Devices], *PIDEREGISTERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDEREGISTERS
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : IDEREGISTERS, *PIDEREGISTERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PIDEREGISTERS, IDEREGISTERS"
 ---
 
 # _IDEREGISTERS structure
 The IDEREGISTERS structure is used to report the contents of the IDE controller registers.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -53,41 +58,41 @@ typedef struct _IDEREGISTERS {
 
 ## Members
 
-        
-            `bCommandReg`
 
-            Specifies the contents of the ATA Command register.
-        
-            `bCylHighReg`
+`bCommandReg`
 
-            Specifies the contents of the ATA Cylinder High register.
-        
-            `bCylLowReg`
+Specifies the contents of the ATA Command register.
 
-            Specifies the contents of the ATA Cylinder Low register.
-        
-            `bDriveHeadReg`
+`bCylHighReg`
 
-            Specifies the contents of the ATA Device/Head register.
-        
-            `bFeaturesReg`
+Specifies the contents of the ATA Cylinder High register.
 
-            Specifies the contents of the ATA features register.
-        
-            `bReserved`
+`bCylLowReg`
 
-            Reserved for future use. The miniport driver shall not use this field.
-        
-            `bSectorCountReg`
+Specifies the contents of the ATA Cylinder Low register.
 
-            Specifies the contents of the ATA Sector Count register.
-        
-            `bSectorNumberReg`
+`bDriveHeadReg`
 
-            Specifies the contents of the ATA Sector Number register.
+Specifies the contents of the ATA Device/Head register.
 
-    ## Remarks
-        The information reported in the IDEREGISTERS structure is intended to be a superset of the information contained in <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a>. Microsoft might expand the contents of the IDEREGISTERS structure in the future. If you need a structure whose size is stable across different versions of the operating system, you should use <b>IDEREGS</b>.
+`bFeaturesReg`
+
+Specifies the contents of the ATA features register.
+
+`bReserved`
+
+Reserved for future use. The miniport driver shall not use this field.
+
+`bSectorCountReg`
+
+Specifies the contents of the ATA Sector Count register.
+
+`bSectorNumberReg`
+
+Specifies the contents of the ATA Sector Number register.
+
+## Remarks
+The information reported in the IDEREGISTERS structure is intended to be a superset of the information contained in <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a>. Microsoft might expand the contents of the IDEREGISTERS structure in the future. If you need a structure whose size is stable across different versions of the operating system, you should use <b>IDEREGS</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,13 +102,10 @@ typedef struct _IDEREGISTERS {
 | **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5a3fa72c-241e-4270-92eb-70f135d79871
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::UnmarkCancelable, UnmarkCancelable
+ms.keywords : UnmarkCancelable method, IWDFIoRequest::UnmarkCancelable, UMDFRequestObjectRef_365794c9-1bce-43ef-8ce5-83affed9b18e.xml, UnmarkCancelable, IWDFIoRequest, wdf.iwdfiorequest_unmarkcancelable, IWDFIoRequest interface, UnmarkCancelable method, wudfddi/IWDFIoRequest::UnmarkCancelable, UnmarkCancelable method, IWDFIoRequest interface, umdf.iwdfiorequest_unmarkcancelable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.UnmarkCancelable
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -54,35 +58,35 @@ This function has no parameters.
 ## Return Value
 
 <b>UnmarkCancelable</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/5a3fa72c-241e-4270-92eb-70f135d79871">UnmarkCancelable</a> disabled use of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a> method that was previously registered through a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a> method.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_WIN32 (ERROR_OPERATION_ABORTED)</b></dt>
-</dl>The request is currently being canceled.
-
- 
-
-<b>UnmarkCancelable</b> returns one of the following values:
-<dl>
-<dt><b>S_OK</b></dt>
 </dl>
-<a href="https://msdn.microsoft.com/5a3fa72c-241e-4270-92eb-70f135d79871">UnmarkCancelable</a> disabled use of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a> method that was previously registered through a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a> method.
-<dl>
-<dt><b>HRESULT_FROM_WIN32 (ERROR_OPERATION_ABORTED)</b></dt>
-</dl>The request is currently being canceled.
+</td>
+<td width="60%">
+The request is currently being canceled.
 
- 
-
-<b>UnmarkCancelable</b> returns one of the following values:
-<dl>
-<dt><b>S_OK</b></dt>
-</dl>
-<a href="https://msdn.microsoft.com/5a3fa72c-241e-4270-92eb-70f135d79871">UnmarkCancelable</a> disabled use of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a> method that was previously registered through a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a> method.
-<dl>
-<dt><b>HRESULT_FROM_WIN32 (ERROR_OPERATION_ABORTED)</b></dt>
-</dl>The request is currently being canceled.
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,18 +99,6 @@ However, the driver must not call <b>UnmarkCancelable</b> after <a href="https:/
 If <b>UnmarkCancelable</b> returns HRESULT_FROM_WIN32(ERROR_OPERATION_ABORTED), and then <a href="https://msdn.microsoft.com/67c85eaa-bb47-4384-8e37-fdbbc879b352">OnCancel</a> completes the request, the driver must not subsequently use the request object.
 
 If <b>UnmarkCancelable</b> returns HRESULT_FROM_WIN32(ERROR_OPERATION_ABORTED), the driver must not complete the request before the framework calls <a href="https://msdn.microsoft.com/67c85eaa-bb47-4384-8e37-fdbbc879b352">OnCancel</a>.  Otherwise, the framework might call the driver's <b>OnCancel</b> with an invalid request.
-
-The following code example demonstrates how a driver might call <b>IWDFIoRequest::UnmarkCancelable</b> before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>, outside of a call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a> method.
-
-The example also shows how you can use <a href="https://msdn.microsoft.com/67c85eaa-bb47-4384-8e37-fdbbc879b352">OnCancel</a> to expedite the completion of a request. In this case, the <b>OnCancel</b> callback does not always complete/cancel the specified request.
-
-In the next code example, the driver stores I/O requests in a driver-implemented queue object called <b>MyQueue</b>.  The driver’s <b>MyQueue</b> interface implements some basic methods to manipulate the queue, such as <b>IsEmpty</b>, <b>RemoveHead</b>, <b>Cleanup</b>, <b>GetFirstNodePosition</b>, <b>GetAt</b>, and <b>RemoveAt</b>.
-
-The driver also defines a <b>CommandInformation</b> structure that holds a single I/O request from <b>MyQueue</b>.
-
-  The <b>MyQueue::DeQueue</b> method removes an I/O request from the queue, calls <b>UnmarkCancelable</b> to disable canceling of the request, and then returns the request for processing.
-
-Also see the code example on <a href="..\wdfrequest\nf-wdfrequest-wdfrequestunmarkcancelable.md">WdfRequestUnmarkCancelable</a>. While written for a KMDF driver, this example demonstrates how you can use the framework's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-automatic-synchronization">automatic synchronization</a> to manage synchronization between the cancel callback and another thread that calls the <i>Unmark</i> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -122,20 +114,14 @@ Also see the code example on <a href="..\wdfrequest\nf-wdfrequest-wdfrequestunma
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
  
 
  

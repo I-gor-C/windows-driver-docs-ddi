@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0e3beb72-2b00-41be-a7b4-341bcf065e92
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSFRAMETIME, *PKSFRAMETIME, KSFRAMETIME
+ms.keywords : "*PKSFRAMETIME, ks/PKSFRAMETIME, PKSFRAMETIME structure pointer [Streaming Media Devices], stream.ksframetime, KSFRAMETIME structure [Streaming Media Devices], PKSFRAMETIME, KSFRAMETIME, ks-struct_3abc9b81-d7e7-455c-a577-2efa7c986cc5.xml, ks/KSFRAMETIME"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSFRAMETIME
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSFRAMETIME, KSFRAMETIME"
 ---
 
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `Duration`
 
-            Specifies the duration in presentation time units.
-        
-            `FrameFlags`
+`Duration`
 
-            Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>.
-        
-            `Reserved`
+Specifies the duration in presentation time units.
 
-            Set to zero.
+`FrameFlags`
 
-    ## Remarks
-        Note that this is an optional property, which need only be implemented if the pin instance understands the specifics of the media type it is transporting.</p>
+Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>.
+
+`Reserved`
+
+Set to zero.
+
+## Remarks
+Note that this is an optional property, which need only be implemented if the pin instance understands the specifics of the media type it is transporting.
 
 ## Requirements
 | &nbsp; | &nbsp; |

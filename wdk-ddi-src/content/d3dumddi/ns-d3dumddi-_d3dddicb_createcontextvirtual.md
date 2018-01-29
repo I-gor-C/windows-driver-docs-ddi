@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 451D1CE2-A50D-4E42-BD93-879503EDE4B5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_CREATECONTEXTVIRTUAL, D3DDDICB_CREATECONTEXTVIRTUAL
+ms.keywords : D3DDDICB_CREATECONTEXTVIRTUAL structure [Display Devices], d3dumddi/D3DDDICB_CREATECONTEXTVIRTUAL, display.d3dddicb_createcontextvirtual, D3DDDICB_CREATECONTEXTVIRTUAL, _D3DDDICB_CREATECONTEXTVIRTUAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_CREATECONTEXTVIRTUAL
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_CREATECONTEXTVIRTUAL
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 
 ## Members
 
-        
-            `EngineAffinity`
 
-            [in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
-        
-            `Flags`
+`EngineAffinity`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
-        
-            `hContext`
+[in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
 
-            [out] A handle to the context that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function creates.
-        
-            `NodeOrdinal`
+`Flags`
 
-            [in] The zero-based index for the node that the context is scheduled on.
-        
-            `pPrivateDriverData`
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
 
-            [in] A pointer to private data that is passed to a display miniport driver.
-        
-            `PrivateDriverDataSize`
+`hContext`
 
-            [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+[out] A handle to the context that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function creates.
+
+`NodeOrdinal`
+
+[in] The zero-based index for the node that the context is scheduled on.
+
+`pPrivateDriverData`
+
+[in] A pointer to private data that is passed to a display miniport driver.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -85,16 +89,12 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a>
-</dt>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a>
+
  
 
  

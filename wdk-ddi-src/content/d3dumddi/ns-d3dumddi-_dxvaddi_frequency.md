@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5bfb02f6-4482-4260-827f-54c5f74b6b46
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_FREQUENCY, DXVADDI_FREQUENCY
+ms.keywords : d3dumddi/DXVADDI_FREQUENCY, DXVADDI_FREQUENCY, DXVADDI_FREQUENCY structure [Display Devices], DXVA2_Structs_bf2ee217-d321-4302-8bd3-1621081fdb09.xml, display.dxvaddi_frequency, _DXVADDI_FREQUENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_FREQUENCY
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_FREQUENCY
 ---
 
@@ -47,23 +51,31 @@ typedef struct _DXVADDI_FREQUENCY {
 
 ## Members
 
-        
-            `Denominator`
 
-            [in] The denominator of the frequency fraction.
-        
-            `Numerator`
+`Denominator`
 
-            [in] The numerator of the frequency fraction.
+[in] The denominator of the frequency fraction.
 
-    ## Remarks
-        The user-mode display driver must interpret the video frame rate for the following special cases as indicated:
+`Numerator`
 
+[in] The numerator of the frequency fraction.
+
+## Remarks
+The user-mode display driver must interpret the video frame rate for the following special cases as indicated:
+<ul>
+<li>
 <b>Numerator</b>/<b>Denominator</b> = 0/0 is interpreted as an unknown frequency.
 
+</li>
+<li>
 <b>Numerator</b>/<b>Denominator</b> = n/0, where n is any number, is interpreted as invalid.
 
+</li>
+<li>
 <b>Numerator</b>/<b>Denominator</b> = 0/n is interpreted as zero frequency.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,13 +85,10 @@ typedef struct _DXVADDI_FREQUENCY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
-</dt>
-</dl>
+
  
 
  

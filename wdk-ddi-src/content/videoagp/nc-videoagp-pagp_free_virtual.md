@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a6f689ab-8cf1-4207-af2b-30957500c190
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+ms.keywords : display.agpfreevirtual, AgpFreeVirtual callback function [Display Devices], AgpFreeVirtual, PAGP_FREE_VIRTUAL, PAGP_FREE_VIRTUAL, videoagp/AgpFreeVirtual, VideoPort_Functions_49eabd30-2590-466f-b9d4-f2577a7e78e4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AgpFreeVirtual
-req.alt-loc : videoagp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -96,11 +100,8 @@ A call to <b>AgpFreeVirtual</b> must be paired with a previous call to <a href="
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a>
-</dt>
-</dl>
+
  
 
  

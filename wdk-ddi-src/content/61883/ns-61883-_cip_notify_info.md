@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 60b0d44b-0178-43ce-a1ad-7f5825bed3ba
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_NOTIFY_INFO, CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO
+ms.keywords : 61883/PCIP_NOTIFY_INFO, CIP_NOTIFY_INFO structure [Buses], *PCIP_NOTIFY_INFO, _CIP_NOTIFY_INFO, 61883/CIP_NOTIFY_INFO, CIP_NOTIFY_INFO, PCIP_NOTIFY_INFO, 61883_structures_383bc74c-1168-4478-8284-b2724f9ec654.xml, IEEE.cip_notify_info, PCIP_NOTIFY_INFO structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_NOTIFY_INFO
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PCIP_NOTIFY_INFO, CIP_NOTIFY_INFO"
 ---
 
 # _CIP_NOTIFY_INFO structure
@@ -48,21 +52,21 @@ typedef struct _CIP_NOTIFY_INFO {
 
 ## Members
 
-        
-            `Context`
 
-            Points to the context provided by the caller at <b>NotifyContext</b> in the input CIP_FRAME structure.
-        
-            `Frame`
+`Context`
 
-            Points to the completed frame.
-        
-            `hConnect`
+Points to the context provided by the caller at <b>NotifyContext</b> in the input CIP_FRAME structure.
 
-            A handle to the connection.
+`Frame`
 
-    ## Remarks
-        The IEC-61883 protocol driver allocates and initializes this structure from the input CIP_FRAME structure.
+Points to the completed frame.
+
+`hConnect`
+
+A handle to the connection.
+
+## Remarks
+The IEC-61883 protocol driver allocates and initializes this structure from the input CIP_FRAME structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct _CIP_NOTIFY_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537045">CIP_FRAME</a>
-</dt>
-</dl>
+
  
 
  

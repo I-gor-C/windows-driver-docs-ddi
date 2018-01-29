@@ -7,8 +7,8 @@ old-location : pos\posdevicecontroltype.htm
 old-project : pos
 ms.assetid : 9f5f3baa-49a0-4711-88c0-b9ff8d87ae1d
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosDeviceControlType, PosDeviceControlType
+ms.date : 1/18/2018
+ms.keywords : pointofservicedriverinterface/UpdateStatistics, pointofservicedriverinterface/Invalid, PosDeviceControlType enumeration, GetProperty, UpdateStatistics, ResetStatistics, pointofservicedriverinterface/MsrUpdateKey, pointofservicedriverinterface/ClaimDevice, pointofservicedriverinterface/GetDeviceBasics, pointofservicedriverinterface/RetainDevice, PosDeviceControlType, SetProperty, pointofservicedriverinterface/_MaxDeviceControlType, MsrRetrieveDeviceAuthentication, pointofservicedriverinterface/MsrDeAuthenticateDevice, pointofservicedriverinterface/RetrieveStatistics, MsrAuthenticateDevice, ReleaseDevice, pointofservicedriverinterface/MsrRetrieveDeviceAuthentication, _PosDeviceControlType, _MaxDeviceControlType, CheckHealth, pointofservicedriverinterface/BarcodeScannerInjectEvent, pointofservicedriverinterface/ResetStatistics, pointofservicedriverinterface/ReleaseDevice, RetrieveStatistics, pointofservicedriverinterface/GetProperty, pointofservicedriverinterface/CheckHealth, Invalid, ClaimDevice, RetainDevice, pos.posdevicecontroltype, pointofservicedriverinterface/SetProperty, BarcodeScannerInjectEvent, pointofservicedriverinterface/PosDeviceControlType, pointofservicedriverinterface/MsrAuthenticateDevice, MsrUpdateKey, GetDeviceBasics, MsrDeAuthenticateDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosDeviceControlType
-req.alt-loc : pointofservicedriverinterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosDeviceControlType
 ---
 
@@ -70,8 +74,38 @@ typedef enum _PosDeviceControlType {
 </tr>
 
 <tr>
+<td>_MinDeviceControlType</td>
+<td></td>
+</tr>
+
+<tr>
+<td>BarcodeScannerGetSymbologyAttributes</td>
+<td></td>
+</tr>
+
+<tr>
 <td>BarcodeScannerInjectEvent</td>
 <td>Unused.</td>
+</tr>
+
+<tr>
+<td>BarcodeScannerSetSymbologyAttributes</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CashDrawerCancelWait</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CashDrawerCreateDrawerCloseAlarm</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CashDrawerOpenDrawer</td>
+<td></td>
 </tr>
 
 <tr>
@@ -82,6 +116,11 @@ typedef enum _PosDeviceControlType {
 <tr>
 <td>ClaimDevice</td>
 <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_claim_device.md">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a>.</td>
+</tr>
+
+<tr>
+<td>ConnectRemotePosDevice</td>
+<td></td>
 </tr>
 
 <tr>
@@ -97,6 +136,71 @@ typedef enum _PosDeviceControlType {
 <tr>
 <td>Invalid</td>
 <td>The event code is not valid.</td>
+</tr>
+
+<tr>
+<td>LineDisplayClearDescriptors</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayCreateWindow</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayDefineGlyph</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayDestroyWindow</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayReadCharacterAtCursor</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayRefreshWindow</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplaySetBitmap</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplaySetDescriptor</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayWindowClearText</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayWindowDisplayBitmap</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayWindowDisplayText</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayWindowDisplayTextAt</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LineDisplayWindowScrollText</td>
+<td></td>
 </tr>
 
 <tr>
@@ -117,6 +221,111 @@ typedef enum _PosDeviceControlType {
 <tr>
 <td>MsrUpdateKey</td>
 <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_update_key.md">IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY</a>.</td>
+</tr>
+
+<tr>
+<td>PrinterChangePrintSide</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterClearOutput</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterCutPaper</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterDrawRuledLine</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterMarkFeed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterPageModePrint</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterPrintBarcode</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterPrintMemoryBitmapFill</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterPrintMemoryBitmapStart</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterPrintNormal</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterPrintSavedBitmap</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterRotatePrint</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterSetBitmapFill</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterSetBitmapStart</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterSlipCloseJaws</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterSlipOpenJaws</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterSlipWaitForPaperInserted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterSlipWaitForPaperRemoved</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterTransactionPrint</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterValidateData</td>
+<td></td>
+</tr>
+
+<tr>
+<td>PrinterWaitForJobComplete</td>
+<td></td>
 </tr>
 
 <tr>
@@ -145,6 +354,16 @@ typedef enum _PosDeviceControlType {
 </tr>
 
 <tr>
+<td>StartBarcodeScannerSoftwareTrigger</td>
+<td></td>
+</tr>
+
+<tr>
+<td>StopBarcodeScannerSoftwareTrigger</td>
+<td></td>
+</tr>
+
+<tr>
 <td>UpdateStatistics</td>
 <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.</td>
 </tr>
@@ -152,7 +371,7 @@ typedef enum _PosDeviceControlType {
 
 ## Remarks
 
-This enumeration provides values for each IOCTL that you can send to the device driver. It is a convenient way to indicate which IOCTL to dispatch when calling functions like <b>SendDeviceCommand()</b>.</p>
+This enumeration provides values for each IOCTL that you can send to the device driver. It is a convenient way to indicate which IOCTL to dispatch when calling functions like <b>SendDeviceCommand()</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

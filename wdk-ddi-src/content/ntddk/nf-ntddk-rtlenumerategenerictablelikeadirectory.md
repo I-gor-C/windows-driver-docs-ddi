@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 206c8b70-575d-47e2-a03d-4c88e0d92fe0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlEnumerateGenericTableLikeADirectory
+ms.keywords : rtlref_7a5f2110-e171-4273-9928-9a8471f4e933.xml, RtlEnumerateGenericTableLikeADirectory routine [Installable File System Drivers], ntddk/RtlEnumerateGenericTableLikeADirectory, ifsk.rtlenumerategenerictablelikeadirectory, RtlEnumerateGenericTableLikeADirectory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available starting with Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlEnumerateGenericTableLikeADirectory
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL (See Remarks section)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -73,7 +77,6 @@ If <i>RestartKey</i> is not <b>NULL</b>, a value of <b>TRUE</b> indicates that t
 `RestartKey`
 
 A value that determines where to begin or resume the enumeration of generic table elements. If <i>RestartKey</i> is <b>NULL</b>, the enumeration begins or resumes from the position that is described in <i>Buffer</i>. If not <b>NULL</b>, the enumeration resumes from the point that <i>RestartKey</i> indicates. On return, the <i>RestartKey</i> holds a value that indicates the place in the tree where the enumeration left off. On the next call to <b>RtlEnumerateGenericTableLikeADirectory</b> caller should pass the same value back in to inform <b>RtlEnumerateGenericTableLikeADirectory</b> where to resume the enumeration. The following code example illustrates how to do this:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -101,8 +104,7 @@ for (ptr = NULL; ptr != NULL;  ) {
 }</pre>
 </td>
 </tr>
-</table></span></div>
-If a node is deleted from the tree between calls to <b>RtlEnumerateGenericTableLikeADirectory</b>, enumeration resumes from the position in the tree that is described in <i>Buffer</i>, no matter what the value of <i>RestartKey</i>.
+</table></span></div>If a node is deleted from the tree between calls to <b>RtlEnumerateGenericTableLikeADirectory</b>, enumeration resumes from the position in the tree that is described in <i>Buffer</i>, no matter what the value of <i>RestartKey</i>.
 
 `DeleteCount`
 
@@ -125,23 +127,29 @@ There are four routines you can use to enumerate a generic table:
 
 
 
-The <a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.
-
-The <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.
-
-The <a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.
-
-The <b>RtlEnumerateGenericTableLikeADirectory</b> routine enumerates a generic table in collation order; it is reentrant, and it allows multiple threads to do insertions and deletions during the enumeration without dropping or repeating key names in the enumeration. Caller must acquire shared access that locks out changes to the table across each call to the routine, but it is not necessary to hold a lock for the entire duration of the enumeration.
-
 By default, the operating system uses splay trees to implement generic tables, but the <b>RtlEnumerateGenericTableLikeADirectory</b> routine only works with Adelson-Velsky/Landis (AVL) trees. To configure the generic table routines to use AVL trees instead of splay trees in your driver, insert the following define statement in a common header file before including Ntddk.h:
-
-If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. 
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre> #define RTL_USE_AVL_TABLES 0</pre>
+</td>
+</tr>
+</table></span></div>If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. 
 
 Callers of <b>RtlEnumerateGenericTableLikeADirectory</b> must be running at IRQL &lt;= APC_LEVEL if either of the following conditions holds:
-
+<ul>
+<li>
 The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable. 
 
-The caller-supplied <i>MatchFunction</i> contains pageable code.
+</li>
+<li>
+The caller-supplied <i>MatchFunction</i> contains pageable code. 
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -157,17 +165,12 @@ The caller-supplied <i>MatchFunction</i> contains pageable code.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6afc3e8b-0be0-4728-b00f-deea5e60d27e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwSetVolumeInformationFile
+ms.keywords : ntifs/NtSetInformationFile, ZwSetVolumeInformationFile routine [Kernel-Mode Driver Architecture], kernel.zwsetvolumeinformationfile, ntifs/ZwSetVolumeInformationFile, ZwSetVolumeInformationFile, NtSetInformationFile, k111_580470b4-9769-4fec-9811-04f703473131.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwSetVolumeInformationFile,NtSetInformationFile
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -71,7 +75,6 @@ Size in bytes of the buffer pointed to by <i>FsInformation</i>. The caller shoul
 `FsInformationClass`
 
 Type of volume information to be set. One of the following: 
-
 <table>
 <tr>
 <th>Value</th>
@@ -113,16 +116,46 @@ Set <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTI
 ## Return Value
 
 <b>ZwSetVolumeInformationFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>An invalid value was specified for <i>Length</i>. This is an error code.
+</dl>
+</td>
+<td width="60%">
+An invalid value was specified for <i>Length</i>. This is an error code.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\ntifs\nf-ntifs-zwsetvolumeinformationfile.md">ZwSetVolumeInformationFile</a> encountered a pool allocation failure. This is an error code.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
-</dl>An invalid value was specified for <i>FsInformationClass</i>. This is an error code.
+</dl>
+</td>
+<td width="60%">
+An invalid value was specified for <i>FsInformationClass</i>. This is an error code.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -131,8 +164,7 @@ To query volume information, call <a href="..\ntifs\nf-ntifs-zwqueryvolumeinform
 To change information about a file, call <b>ZwSetVolumeInformationFile</b>. 
 
 Minifilters should use <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a> instead of <b>ZwSetVolumeInformationFile</b>. 
-
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
+<div class="alert"><b>Note</b>  If the call to the <b>ZwSetVolumeInformationFile</b>function occurs in user mode, you should use the name "<a href="https://msdn.microsoft.com/library/windows/hardware/ff557671">NtSetInformationFile</a>" instead of "<b>ZwSetVolumeInformationFile</b>".</div><div> </div>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -148,32 +180,22 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
+
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
+
+<a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

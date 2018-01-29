@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 86e48354-d4cd-4ad0-a6bd-e8ba662075d8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoInitAllocate
+ms.keywords : wdfpdo/WdfPdoInitAllocate, kmdf.wdfpdoinitallocate, WdfPdoInitAllocate method, WdfPdoInitAllocate, wdf.wdfpdoinitallocate, DFDeviceObjectFdoPdoRef_bc23c37b-d595-4672-ad92-4a29aea9c2dd.xml, PFN_WDFPDOINITALLOCATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfPdoInitAllocate
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : AddPdoToStaticChildList, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate, PdoInitFreeDeviceCreateType2, PdoInitFreeDeviceCreateType4
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
 req.product : Windows 10 or later.
 ---
@@ -63,16 +67,20 @@ If the operation succeeds, the method returns a pointer to a framework-allocated
 ## Remarks
 
 If a bus driver uses static enumeration, it reports a new device by:
-
+<ol>
+<li>
 Calling <b>WdfPdoInitAllocate</b> to allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure.
 
-Calling <a href="wdf_device_object_reference.htm#device_init_methods">framework device object initialization methods</a> and <a href="wdf_device_object_reference.htm#pdo_init_methods">framework PDO initialization methods</a>, as needed, to initialize the WDFDEVICE_INIT structure. If a call to one of these methods fails, the driver must call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitfree.md">WdfDeviceInitFree</a>. 
+</li>
+<li>
+Calling <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn265631">framework device object initialization methods</a> and <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn265631">framework PDO initialization methods</a>, as needed, to initialize the WDFDEVICE_INIT structure. If a call to one of these methods fails, the driver must call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitfree.md">WdfDeviceInitFree</a>. 
 
+</li>
+<li>
 Calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> to create a framework device object, supplying the initialized WDFDEVICE_INIT structure as input.
 
-For more information about static enumeration, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus">Enumerating the Devices on a Bus</a>.
-
-For a code example that uses <b>WdfPdoInitAllocate</b>, see <a href="..\wdffdo\nf-wdffdo-wdffdoaddstaticchild.md">WdfFdoAddStaticChild</a>.
+</li>
+</ol>For more information about static enumeration, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus">Enumerating the Devices on a Bus</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,11 +96,8 @@ For a code example that uses <b>WdfPdoInitAllocate</b>, see <a href="..\wdffdo\n
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitallocate.md">WdfControlDeviceInitAllocate</a>
-</dt>
-</dl>
+
  
 
  

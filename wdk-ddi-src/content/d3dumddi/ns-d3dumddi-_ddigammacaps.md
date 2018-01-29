@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4db605f8-a1ed-4b75-8c72-f4846ae7007e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DDIGAMMACAPS, DDIGAMMACAPS
+ms.keywords : d3dumddi/DDIGAMMACAPS, display.ddigammacaps, DDIGAMMACAPS structure [Display Devices], D3D_other_Structs_7aa0b131-f7e5-4208-b3bb-7a35fa0d5ef1.xml, DDIGAMMACAPS, _DDIGAMMACAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DDIGAMMACAPS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DDIGAMMACAPS
 ---
 
@@ -46,11 +50,10 @@ typedef struct _DDIGAMMACAPS {
 
 ## Members
 
-        
-            `GammaCaps`
 
-            [out] A valid bitwise OR of the following capability bits that the driver supports.
+`GammaCaps`
 
+[out] A valid bitwise OR of the following capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -77,19 +80,14 @@ Gamma-ramp data is stored as 256 16-bit RGB values.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 718431f9-e4cc-4e79-84d3-a59f5399e711
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _HBAFCPScsiEntry, HBAFCPScsiEntry, *PHBAFCPScsiEntry
+ms.keywords : PHBAFCPScsiEntry, hbapiwmi/PHBAFCPScsiEntry, PHBAFCPScsiEntry structure pointer [Storage Devices], HBAFCPScsiEntry, structs-Fibre_500172f1-a231-4530-afdf-fa0ba05d4904.xml, *PHBAFCPScsiEntry, HBAFCPScsiEntry structure [Storage Devices], _HBAFCPScsiEntry, hbapiwmi/HBAFCPScsiEntry, storage.hbafcpscsientry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBAFCPScsiEntry
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBAFCPScsiEntry, *PHBAFCPScsiEntry
 ---
 
@@ -48,18 +52,18 @@ typedef struct _HBAFCPScsiEntry {
 
 ## Members
 
-        
-            `FCPId`
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpid.md">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.
-        
-            `Luid`
+`FCPId`
 
-            Contains the logical unit descriptor for the device that the operating system derives from SCSI inquiry data.
-        
-            `ScsiId`
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpid.md">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbascsiid.md">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system.
+`Luid`
+
+Contains the logical unit descriptor for the device that the operating system derives from SCSI inquiry data.
+
+`ScsiId`
+
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbascsiid.md">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _HBAFCPScsiEntry {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a>
-</dt>
-</dl>
+
  
 
  

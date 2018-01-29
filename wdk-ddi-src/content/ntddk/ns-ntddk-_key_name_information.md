@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5b46e7d9-fbb0-4e55-b1f5-d9d0f1dd1f2c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_NAME_INFORMATION, *PKEY_NAME_INFORMATION, KEY_NAME_INFORMATION
+ms.keywords : _KEY_NAME_INFORMATION, ntddk/KEY_NAME_INFORMATION, PKEY_NAME_INFORMATION, KEY_NAME_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.key_name_information, PKEY_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_c_1b3b2976-9298-4d7d-a3d7-b0c8d303d29a.xml, ntddk/PKEY_NAME_INFORMATION, *PKEY_NAME_INFORMATION, KEY_NAME_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_NAME_INFORMATION
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKEY_NAME_INFORMATION, KEY_NAME_INFORMATION"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _KEY_NAME_INFORMATION {
 
 ## Members
 
-        
-            `Name`
 
-            An array of wide characters that contains the name of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_NAME_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.
-        
-            `NameLength`
+`Name`
 
-            The size, in bytes, of the key name string in the <b>Name</b> array.
+An array of wide characters that contains the name of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_NAME_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.
 
-    ## Remarks
-        The <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routine uses the <b>KEY_NAME_INFORMATION</b> structure to contain the registry key name. When the <i>KeyInformationClass</i> parameter of this routine is <b>KeyNameInformation</b>, the <i>KeyInformation</i> buffer is treated as a <b>KEY_NAME_INFORMATION</b> structure.  For more information about the <b>KeyNameInformation</b> enumeration value, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
+`NameLength`
+
+The size, in bytes, of the key name string in the <b>Name</b> array.
+
+## Remarks
+The <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routine uses the <b>KEY_NAME_INFORMATION</b> structure to contain the registry key name. When the <i>KeyInformationClass</i> parameter of this routine is <b>KeyNameInformation</b>, the <i>KeyInformation</i> buffer is treated as a <b>KEY_NAME_INFORMATION</b> structure.  For more information about the <b>KeyNameInformation</b> enumeration value, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,28 +71,20 @@ typedef struct _KEY_NAME_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
+
+<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
+
 <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
+
+<a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a>
+
  
 
  

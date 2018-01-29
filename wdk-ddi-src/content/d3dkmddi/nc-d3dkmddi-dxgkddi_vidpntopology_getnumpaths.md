@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 60960774-3f90-4eeb-a408-fa37122f22ea
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_vidpntopology_interface_pfngetnumpaths, pfnGetNumPaths callback function [Display Devices], pfnGetNumPaths, DXGKDDI_VIDPNTOPOLOGY_GETNUMPATHS, DXGKDDI_VIDPNTOPOLOGY_GETNUMPATHS, d3dkmddi/pfnGetNumPaths, VidPnFunctions_c330d233-9a8e-4c53-a73e-b789fb2cb7b0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnGetNumPaths
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,12 +68,34 @@ NTSTATUS DxgkddiVidpntopologyGetnumpaths(
 ## Return Value
 
 The <b>pfnGetNumPaths</b> function returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN_TOPOLOGY</b></dt>
-</dl>The handle supplied in <i>hVidPnTopology </i>was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hVidPnTopology </i>was invalid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -89,11 +115,8 @@ The D3DKMDT_HVIDPNTOPOLOGY data type is defined in <i>D3dkmdt.h</i>.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpathsfromsource.md">pfnGetNumPathsFromSource</a>
-</dt>
-</dl>
+
  
 
  

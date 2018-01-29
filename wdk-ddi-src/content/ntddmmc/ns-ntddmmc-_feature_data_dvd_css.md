@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8266f17d-65d6-49a0-a8ea-fee71dff4db0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_DVD_CSS, *PFEATURE_DATA_DVD_CSS, FEATURE_DATA_DVD_CSS
+ms.keywords : _FEATURE_DATA_DVD_CSS, FEATURE_DATA_DVD_CSS structure [Storage Devices], FEATURE_DATA_DVD_CSS, storage.feature_data_dvd_css, structs-CD-ROM_1508ce84-fa86-423e-a6c1-4059bf0cb54c.xml, *PFEATURE_DATA_DVD_CSS, ntddmmc/FEATURE_DATA_DVD_CSS, PFEATURE_DATA_DVD_CSS, ntddmmc/PFEATURE_DATA_DVD_CSS, PFEATURE_DATA_DVD_CSS structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_DVD_CSS
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFEATURE_DATA_DVD_CSS, FEATURE_DATA_DVD_CSS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FEATURE_DATA_DVD_CSS, *PFEATURE_DATA_DVD_CSS
 ---
 
 # _FEATURE_DATA_DVD_CSS structure
@@ -48,21 +52,21 @@ typedef struct _FEATURE_DATA_DVD_CSS {
 
 ## Members
 
-        
-            `CssVersion`
 
-            Must be set to 1.
-        
-            `Header`
+`CssVersion`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `Reserved1`
+Must be set to 1.
 
-            Reserved.
+`Header`
 
-    ## Remarks
-        This structure holds data for the feature named "DVD-CSS" by the <i>MMC-3 </i>specification. Devices that support this feature can perform DVD Content Scrambling System (DVD-CSS) authentication and key management.
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+
+`Reserved1`
+
+Reserved.
+
+## Remarks
+This structure holds data for the feature named "DVD-CSS" by the <i>MMC-3 </i>specification. Devices that support this feature can perform DVD Content Scrambling System (DVD-CSS) authentication and key management.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +76,12 @@ typedef struct _FEATURE_DATA_DVD_CSS {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

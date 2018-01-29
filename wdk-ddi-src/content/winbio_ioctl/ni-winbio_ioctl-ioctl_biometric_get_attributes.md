@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : 7a855435-017e-4724-adb4-976403015a93
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IWiaTransferCallback, IWiaTransferCallback::TransferCallback, TransferCallback
+ms.keywords : biometric.ioctl_biometric_get_attributes, IOCTL_BIOMETRIC_GET_ATTRIBUTES control code [Biometric Devices], IOCTL_BIOMETRIC_GET_ATTRIBUTES, winbio_ioctl/IOCTL_BIOMETRIC_GET_ATTRIBUTES, biometric_ref_ee60223e-6d9a-4533-9449-b7a7463f835e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BIOMETRIC_GET_ATTRIBUTES
-req.alt-loc : Winbio_ioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product : Windows 10 or later.
 ---
@@ -60,33 +64,68 @@ The smallest valid output buffer size is the size of DWORD.  If the driver recei
 <text></text>
 
 ### Status Block
-I/O Status block
 Indicates whether the DeviceIoControl call to the driver completed and the OUT payload is valid.
 
 The <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 S_OK, STATUS_SUCCESS
 
+</td>
+<td>
 The operation completed successfully.  If the size of data returned is DWORD, the payload contains the size of the buffer necessary for the call.  Otherwise, the payload contains the full output buffer.
 
+</td>
+</tr>
+<tr>
+<td>
 E_INVALIDARG
 
+</td>
+<td>
 The parameters were not specified correctly.
 
+</td>
+</tr>
+<tr>
+<td>
 E_UNKNOWN
 
+</td>
+<td>
 Any other failure that prevents the payload from being filled in.
 
+</td>
+</tr>
+<tr>
+<td>
 E_UNEXPECTED
 
+</td>
+<td>
 Any other failure that prevents the payload from being filled in.
 
+</td>
+</tr>
+<tr>
+<td>
 E_FAIL
 
+</td>
+<td>
 Any other failure that prevents the payload from being filled in.
 
-    ## Remarks
-        If the vendor-supplied driver passes back the entire payload, it should fill in the <b>WinBioHresult</b> member of <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_sensor_attributes.md">WINBIO_SENSOR_ATTRIBUTES</a> with an HRESULT value indicating the status of the biometric operation.</p>
+</td>
+</tr>
+</table>
+
+## Remarks
+If the vendor-supplied driver passes back the entire payload, it should fill in the <b>WinBioHresult</b> member of <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_sensor_attributes.md">WINBIO_SENSOR_ATTRIBUTES</a> with an HRESULT value indicating the status of the biometric operation.
 
 ## Requirements
 | &nbsp; | &nbsp; |

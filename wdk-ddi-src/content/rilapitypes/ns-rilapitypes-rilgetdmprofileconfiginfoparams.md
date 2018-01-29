@@ -7,8 +7,8 @@ old-location : netvista\rilgetdmprofileconfiginfoparams_2.htm
 old-project : netvista
 ms.assetid : 9f9c4c27-0a32-40c6-a302-98b4013e2664
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS
+ms.date : 1/18/2018
+ms.keywords : "*LPRILGETDMPROFILECONFIGINFOPARAMS, rilapitypes/RILGETDMPROFILECONFIGINFOPARAMS, netvista.rilgetdmprofileconfiginfoparams_2, RILGETDMPROFILECONFIGINFOPARAMS structure [Network Drivers Starting with Windows Vista], RILGETDMPROFILECONFIGINFOPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILGETDMPROFILECONFIGINFOPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _RILGETDMPROFILECONFIGINFOPARAMS {
 
 ## Members
 
-        
-            `dwConfigItem`
 
-            
-        
-            `dwExecutor`
+`dwConfigItem`
 
-            
+
+
+`dwExecutor`
+
+
 
 
 ## Requirements

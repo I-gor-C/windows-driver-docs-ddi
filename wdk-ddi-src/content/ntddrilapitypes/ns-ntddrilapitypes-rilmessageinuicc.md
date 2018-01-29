@@ -7,8 +7,8 @@ old-location : netvista\rilmessageinuicc.htm
 old-project : netvista
 ms.assetid : 71f48863-06dd-4ea1-a8b7-fdf673090fe0
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMESSAGEINUICC, RILMESSAGEINUICC, *LPRILMESSAGEINUICC
+ms.date : 1/18/2018
+ms.keywords : "*LPRILMESSAGEINUICC, ntddrilapitypes/RILMESSAGEINUICC, netvista.rilmessageinuicc, RILMESSAGEINUICC, RILMESSAGEINUICC structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMESSAGEINUICC
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILMESSAGEINUICC, *LPRILMESSAGEINUICC
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILMESSAGEINUICC, RILMESSAGEINUICC"
 ---
 
 # RILMESSAGEINUICC structure
@@ -49,22 +53,22 @@ typedef struct _RILMESSAGEINUICC {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwIndex`
 
-            
-        
-            `hUiccApp`
 
-            
+`dwExecutor`
+
+
+
+`dwIndex`
+
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

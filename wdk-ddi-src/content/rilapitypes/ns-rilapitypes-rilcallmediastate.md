@@ -7,8 +7,8 @@ old-location : netvista\rilcallmediastate_2.htm
 old-project : netvista
 ms.assetid : d3b89502-667c-45dd-af1c-05b7c8613d6c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMEDIASTATE, *LPRILCALLMEDIASTATE, RILCALLMEDIASTATE
+ms.date : 1/18/2018
+ms.keywords : "*LPRILCALLMEDIASTATE, netvista.rilcallmediastate_2, RILCALLMEDIASTATE, RILCALLMEDIASTATE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILCALLMEDIASTATE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMEDIASTATE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILCALLMEDIASTATE, RILCALLMEDIASTATE"
 req.product : Windows 10 or later.
 ---
@@ -64,22 +68,22 @@ typedef struct _RILCALLMEDIASTATE {
 
 ## Members
 
-        
-            `dwCallMediaType`
 
-            
-        
-            `dwDirection`
+`dwCallMediaType`
 
-            
-        
-            `mediaStateUnion`
 
-            
-        
-            `RILCALLMEDIASTATEUNION`
 
-            
+`dwDirection`
+
+
+
+`mediaStateUnion`
+
+
+
+`RILCALLMEDIASTATEUNION`
+
+
 
 
 ## Requirements

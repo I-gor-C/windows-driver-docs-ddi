@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c233d4e1-285c-4f74-bb37-808cf855b19c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortUnlockPages
+ms.keywords : VideoPort_Functions_f7a233cf-3db5-49db-94e9-d2c6ec96f05d.xml, VideoPortUnlockPages function [Display Devices], display.videoportunlockpages, VideoPortUnlockPages, video/VideoPortUnlockPages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortUnlockPages
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -85,11 +89,8 @@ This function can be called only within the context of a DMA IOCTL. It cannot be
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a>
-</dt>
-</dl>
+
  
 
  

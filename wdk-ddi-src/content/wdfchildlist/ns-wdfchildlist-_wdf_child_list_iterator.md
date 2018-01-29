@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3baeaaab-cb2f-49a1-bd01-01bd1e3e5214
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_CHILD_LIST_ITERATOR, WDF_CHILD_LIST_ITERATOR, *PWDF_CHILD_LIST_ITERATOR
+ms.keywords : WDF_CHILD_LIST_ITERATOR, wdfchildlist/PWDF_CHILD_LIST_ITERATOR, *PWDF_CHILD_LIST_ITERATOR, wdfchildlist/WDF_CHILD_LIST_ITERATOR, PWDF_CHILD_LIST_ITERATOR, kmdf.wdf_child_list_iterator, PWDF_CHILD_LIST_ITERATOR structure pointer, WDF_CHILD_LIST_ITERATOR structure, wdf.wdf_child_list_iterator, _WDF_CHILD_LIST_ITERATOR, DFDeviceObjectChildListRef_5a77ee51-8e18-4e86-afd0-8add561dab4d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_CHILD_LIST_ITERATOR
-req.alt-loc : wdfchildlist.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any level
-req.typenames : WDF_CHILD_LIST_ITERATOR, *PWDF_CHILD_LIST_ITERATOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_CHILD_LIST_ITERATOR, WDF_CHILD_LIST_ITERATOR"
 req.product : Windows 10 or later.
 ---
 
@@ -51,21 +55,21 @@ typedef struct _WDF_CHILD_LIST_ITERATOR {
 
 ## Members
 
-        
-            `Flags`
 
-            One or more flags that are defined by the <a href="..\wdfchildlist\ne-wdfchildlist-_wdf_retrieve_child_flags.md">WDF_RETRIEVE_CHILD_FLAGS</a> enumeration.
-        
-            `Reserved`
+`Flags`
 
-            Reserved for internal use only.
-        
-            `Size`
+One or more flags that are defined by the <a href="..\wdfchildlist\ne-wdfchildlist-_wdf_retrieve_child_flags.md">WDF_RETRIEVE_CHILD_FLAGS</a> enumeration.
 
-            The size, in bytes, of this structure.
+`Reserved`
 
-    ## Remarks
-        The driver must initialize the <b>WDF_CHILD_LIST_ITERATOR</b> structure by calling <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_iterator_init.md">WDF_CHILD_LIST_ITERATOR_INIT</a>.
+Reserved for internal use only.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+## Remarks
+The driver must initialize the <b>WDF_CHILD_LIST_ITERATOR</b> structure by calling <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_iterator_init.md">WDF_CHILD_LIST_ITERATOR_INIT</a>.
 
 The WDF_CHILD_LIST_ITERATOR structure is used as input to the <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>,<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> ,and <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a> methods. The driver must set the <b>Flags</b> member before calling <b>WdfChildListBeginIteration</b>. After calling <b>WdfChildListBeginIteration</b>, the driver must not modify the structure's contents until after calling <b>WdfChildListEndIteration</b>.
 
@@ -79,25 +83,18 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 | **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_iterator_init.md">WDF_CHILD_LIST_ITERATOR_INIT</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\ne-wdfchildlist-_wdf_retrieve_child_flags.md">WDF_RETRIEVE_CHILD_FLAGS</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a>
-</dt>
-<dt>
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
-</dt>
-</dl>
+
+<a href="..\wdfchildlist\ne-wdfchildlist-_wdf_retrieve_child_flags.md">WDF_RETRIEVE_CHILD_FLAGS</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_iterator_init.md">WDF_CHILD_LIST_ITERATOR_INIT</a>
+
  
 
  

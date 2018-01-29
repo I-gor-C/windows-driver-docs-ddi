@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e65a7fa3-1c9c-447a-b99a-a63570c9e233
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG
+ms.keywords : kmdf.wdf_wmi_instance_config_init_provider_config, WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG function, WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG, wdfwmi/WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG, wdf.wdf_wmi_instance_config_init_provider_config, DFWMIRef_6aec4b1b-494c-4f9f-89c3-a8e79fa552da.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG
-req.alt-loc : wdfwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_WMI_PROVIDER_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ The <b>WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</b> function zeros the speci
 
 Your driver should call <b>WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</b> to initialize a <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_instance_config.md">WDF_WMI_INSTANCE_CONFIG</a> structure if it does not call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a> before calling <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>.
 
-For a code example the uses <b>WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</b>, see <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,23 +89,16 @@ For a code example the uses <b>WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</b>,
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_instance_config.md">WDF_WMI_INSTANCE_CONFIG</a>
-</dt>
-<dt>
-<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a>
-</dt>
-<dt>
+
 <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a>
-</dt>
-<dt>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
-</dt>
-<dt>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
-</dt>
-</dl>
+
  
 
  

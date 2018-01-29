@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 9f170425-2c65-469e-adae-e845b11b9c8e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION
+ms.keywords : parallel/PPARALLEL_PORT_INFORMATION, parports.parallel_port_information, parallel/PARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION structure [Parallel Ports], PPARALLEL_PORT_INFORMATION structure pointer [Parallel Ports], cisspd_ca857237-0c57-46e9-aedf-f6d40a25dbf8.xml, PPARALLEL_PORT_INFORMATION, _PARALLEL_PORT_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PARALLEL_PORT_INFORMATION
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION"
 ---
 
@@ -52,37 +56,37 @@ typedef struct _PARALLEL_PORT_INFORMATION {
 
 ## Members
 
-        
-            `Context`
 
-            Pointer to the device extension of parallel port.
-        
-            `Controller`
+`Context`
 
-            Pointer to the system-mapped base I/O location of the parallel port registers.
-        
-            `FreePort`
+Pointer to the device extension of parallel port.
 
-            Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a> callback that a kernel-mode driver can use to free the parallel port.
-        
-            `OriginalController`
+`Controller`
 
-            Specifies the bus relative base I/O address of the parallel port registers.
-        
-            `QueryNumWaiters`
+Pointer to the system-mapped base I/O location of the parallel port registers.
 
-            Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a> callback that a kernel-mode driver can use to determine the number of requests on the work queue of the parallel port.
-        
-            `SpanOfController`
+`FreePort`
 
-            Specifies the size, in bytes, of the I/O space, allocated to the parallel port.
-        
-            `TryAllocatePort`
+Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a> callback that a kernel-mode driver can use to free the parallel port.
 
-            Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel_try_allocate_routine.md">PPARALLEL_TRY_ALLOCATE_ROUTINE</a> callback that a kernel-mode driver can use to attempt to allocate the parallel port.
+`OriginalController`
 
-    ## Remarks
-        An <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request from the Plug and Play manager passes a translated resource list that contains the port information in a PARALLEL_PORT_INFORMATION structure. The system-supplied function driver for parallel ports saves the information in the extension of the parallel port and returns the information in response to an <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request.
+Specifies the bus relative base I/O address of the parallel port registers.
+
+`QueryNumWaiters`
+
+Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a> callback that a kernel-mode driver can use to determine the number of requests on the work queue of the parallel port.
+
+`SpanOfController`
+
+Specifies the size, in bytes, of the I/O space, allocated to the parallel port.
+
+`TryAllocatePort`
+
+Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel_try_allocate_routine.md">PPARALLEL_TRY_ALLOCATE_ROUTINE</a> callback that a kernel-mode driver can use to attempt to allocate the parallel port.
+
+## Remarks
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request from the Plug and Play manager passes a translated resource list that contains the port information in a PARALLEL_PORT_INFORMATION structure. The system-supplied function driver for parallel ports saves the information in the extension of the parallel port and returns the information in response to an <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request.
 
 For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a-93cc-00fcb12d41fe">Obtaining Information About a ParallelPort</a>.
 
@@ -94,37 +98,26 @@ For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a
 | **Minimum UMDF version** |  |
 | **Header** | parallel.h (include Parallel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_more_parallel_port_info.md">IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
-</dt>
-<dt>
-<a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
-</dt>
-<dt>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_more_parallel_port_info.md">IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
+
 <a href="..\parallel\nc-parallel-pparallel_try_allocate_routine.md">PPARALLEL_TRY_ALLOCATE_ROUTINE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
+
+<a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
+
+<a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f57e9c0f-d99b-4b01-b512-4a8f754c8822
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassRegisterAdapter
+ms.keywords : strclass-routines_059c6a60-83c5-4eaa-ade5-f60ddcbba594.xml, strmini/StreamClassRegisterAdapter, StreamClassRegisterAdapter function [Streaming Media Devices], StreamClassRegisterAdapter, stream.streamclassregisteradapter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassRegisterAdapter
-req.alt-loc : strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -55,15 +59,15 @@ Instead, Microsoft recommends the use of <a href="https://msdn.microsoft.com/lib
 
 `Argument1`
 
-
+TBD
 
 `Argument2`
 
-
+TBD
 
 `HwInitializationData`
 
-
+TBD
 
 
 ## Return Value

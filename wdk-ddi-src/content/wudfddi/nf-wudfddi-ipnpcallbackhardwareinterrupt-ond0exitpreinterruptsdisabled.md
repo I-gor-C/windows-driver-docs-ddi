@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C67EA467-D344-44D0-93E8-29D29A3A586B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPnpCallbackHardwareInterrupt, IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, OnD0ExitPreInterruptsDisabled
+ms.keywords : umdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, wudfddi/IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt interface, IPnpCallbackHardwareInterrupt, IPnpCallbackHardwareInterrupt interface, OnD0ExitPreInterruptsDisabled method, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, wdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IPnpCallbackHardwareInterrupt.OnD0ExitPreInterruptsDisabled
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ For more information, see <a href="https://msdn.microsoft.com/432907e7-05a3-4a99
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardwareinterrupt.md">IPnpCallbackHardwareInterrupt</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439750">OnD0EntryPostInterruptsEnabled</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardwareinterrupt.md">IPnpCallbackHardwareInterrupt</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a83ed1a3-e279-45be-b229-137fa61d9b38
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : WcsTranslateColors
+ms.keywords : display.evt_idd_cx_monitor_query_target_modes, EvtIddCxMonitorQueryTargetModes callback function [Display Devices], EvtIddCxMonitorQueryTargetModes, EVT_IDD_CX_MONITOR_QUERY_TARGET_MODES, EVT_IDD_CX_MONITOR_QUERY_TARGET_MODES, iddcx/EvtIddCxMonitorQueryTargetModes, PFN_IDD_CX_MONITOR_QUERY_TARGET_MODES callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_QUERY_TARGET_MODES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFN_IDD_CX_MONITOR_QUERY_TARGET_MODES
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 

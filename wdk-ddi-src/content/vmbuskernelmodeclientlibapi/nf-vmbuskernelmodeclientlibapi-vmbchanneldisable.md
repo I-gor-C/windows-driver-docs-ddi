@@ -7,8 +7,8 @@ old-location : netvista\vmbchanneldisable.htm
 old-project : netvista
 ms.assetid : 688A1DF3-F801-47C3-8403-9FA5D96BD428
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbChannelDisable
+ms.date : 1/18/2018
+ms.keywords : VmbChannelDisable function [Network Drivers Starting with Windows Vista], netvista.vmbchanneldisable, vmbuskernelmodeclientlibapi/VmbChannelDisable, VmbChannelDisable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbChannelDisable
-req.alt-loc : vmbkmcl.lib,vmbkmcl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Vmbkmcl.lib
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 

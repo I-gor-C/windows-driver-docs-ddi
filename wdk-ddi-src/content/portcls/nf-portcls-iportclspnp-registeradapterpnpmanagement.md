@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : D9A54562-0ABC-4BEA-A9E3-F1A0A4EBC095
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsPnp, IPortClsPnp::RegisterAdapterPnpManagement, RegisterAdapterPnpManagement
+ms.keywords : RegisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, IPortClsPnp, RegisterAdapterPnpManagement method [Audio Devices], portcls/IPortClsPnp::RegisterAdapterPnpManagement, RegisterAdapterPnpManagement, IPortClsPnp::RegisterAdapterPnpManagement, IPortClsPnp interface [Audio Devices], RegisterAdapterPnpManagement method, audio.iportclspnp_registeradapterpnpmanagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1511 and later ver
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortClsPnp.RegisterAdapterPnpManagement
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,14 +86,10 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536876">IPortClsPower::UnregisterAdapterPowerManagement</a>
-</dt>
-</dl>
+
  
 
  

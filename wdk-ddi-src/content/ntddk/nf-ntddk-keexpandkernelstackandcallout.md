@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : afa27127-b427-4831-b5f5-3e293738c275
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeExpandKernelStackAndCallout
+ms.keywords : ntddk/KeExpandKernelStackAndCallout, kernel.keexpandkernelstackandcallout, k105_37fc85c2-2317-41a2-9daa-766c3ccf343f.xml, KeExpandKernelStackAndCallout, KeExpandKernelStackAndCallout routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Server 2003 on x64-b
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeExpandKernelStackAndCallout
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -89,17 +93,12 @@ The calling thread must not call the <a href="..\wdm\nf-wdm-psterminatesystemthr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545494">ExpandedStackCall</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552036">KeExpandKernelStackAndCalloutEx</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545494">ExpandedStackCall</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552036">KeExpandKernelStackAndCalloutEx</a>
+
  
 
  

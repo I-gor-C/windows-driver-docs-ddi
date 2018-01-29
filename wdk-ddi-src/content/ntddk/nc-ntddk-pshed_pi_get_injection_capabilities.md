@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 8cb19677-11b8-4594-b4dd-ebd00fae07d4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords : whea.getinjectioncapabilities, GetInjectionCapabilities callback function [WHEA Drivers and Applications], GetInjectionCapabilities, PSHED_PI_GET_INJECTION_CAPABILITIES, PSHED_PI_GET_INJECTION_CAPABILITIES, ntddk/GetInjectionCapabilities, whearef_0c5e00c7-c5d7-4e28-a351-7831d883c70f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetInjectionCapabilities
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 
@@ -64,12 +68,34 @@ A pointer to a <a href="..\ntddk\ns-ntddk-_whea_error_injection_capabilities.md"
 ## Return Value
 
 A PSHED plug-in's <i>GetInjectionCapabilities</i> callback function returns one of the following NTSTATUS codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The data that describes the types of hardware errors that can be injected into the hardware platform was successfully returned in the WHEA_ERROR_INJECTION_CAPABILITIES union pointed to by the <i>Capabilities</i> parameter.
+</dl>
+</td>
+<td width="60%">
+The data that describes the types of hardware errors that can be injected into the hardware platform was successfully returned in the WHEA_ERROR_INJECTION_CAPABILITIES union pointed to by the <i>Capabilities</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,20 +117,14 @@ The Windows kernel calls into the PSHED to retrieve information about the types 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
-</dt>
-<dt>
 <a href="..\ntddk\nc-ntddk-pshed_pi_inject_error.md">InjectError</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_error_injection_capabilities.md">WHEA_ERROR_INJECTION_CAPABILITIES</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
  
 
  

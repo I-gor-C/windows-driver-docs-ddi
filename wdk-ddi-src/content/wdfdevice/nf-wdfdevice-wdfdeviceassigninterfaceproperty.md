@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 49608EE6-1666-4430-AD22-9627EEF6F223
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceAssignInterfaceProperty
+ms.keywords : wdfdevice/WdfDeviceAssignInterfaceProperty, wdf.wdfdeviceassigninterfaceproperty, WdfDeviceAssignInterfaceProperty method, WdfDeviceAssignInterfaceProperty, PFN_WDFDEVICEASSIGNINTERFACEPROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceAssignInterfaceProperty
-req.alt-loc : WUDFx02000.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : WUDFx02000.lib
 req.dll : WUDFx02000.dll; TBD
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -79,19 +83,29 @@ A pointer to the device interface property data. Set this parameter to <b>NULL</
 ## Return Value
 
 If the <b>WdfDeviceAssignInterfaceProperty</b> method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters is incorrect.
+</dl>
+</td>
+<td width="60%">
+One of the parameters is incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
 ## Remarks
 
 For information about related methods, see <a href="https://msdn.microsoft.com/C81988F9-E0DA-439F-B770-DAD86E33D5F3">Accessing the Unified Device Property Model</a>.
-
-The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure and then calls <b>WdfDeviceAssignInterfaceProperty</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,20 +121,14 @@ The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty.md">WdfDeviceAllocAndQueryInterfaceProperty</a>
-</dt>
-<dt>
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 376b0cc3-8189-499e-ad7f-5844f8cb4221
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::ConfigureRequestDispatching, ConfigureRequestDispatching
+ms.keywords : IWDFIoQueue interface, ConfigureRequestDispatching method, ConfigureRequestDispatching, IWDFIoQueue::ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFIoQueue interface, umdf.iwdfioqueue_configurerequestdispatching, wdf.iwdfioqueue_configurerequestdispatching, UMDFQueueObjectRef_8aab2e0a-7864-4a37-abba-2807327dd4dc.xml, wudfddi/IWDFIoQueue::ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFIoQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.ConfigureRequestDispatching
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -67,9 +71,7 @@ A BOOL value that specifies whether requests of the specified type are queued. <
 
 ## Remarks
 
-The driver can call the <b>ConfigureRequestDispatching</b> method multiple times to configure how each request type is dispatched to the I/O queue. 
-
-The following code example shows how to configure forwarding for IOCTL requests.
+The driver can call the <b>ConfigureRequestDispatching</b> method multiple times to configure how each request type is dispatched to the I/O queue.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,14 +87,10 @@ The following code example shows how to configure forwarding for IOCTL requests.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
-</dt>
-</dl>
+
  
 
  

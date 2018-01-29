@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5ea964a2-7d80-4846-bee8-a5476cc8d0fa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1_DDI_LOGIC_OP, D3D11_1_DDI_LOGIC_OP
+ms.keywords : d3d10umddi/D3D11_1_DDI_LOGIC_OP_SET, d3d10umddi/D3D11_1_DDI_LOGIC_OP_NOOP, d3d10umddi/D3D11_1_DDI_LOGIC_OP_AND_REVERSE, d3d10umddi/D3D11_1_DDI_LOGIC_OP_CLEAR, D3D11_1_DDI_LOGIC_OP, D3D11_1_DDI_LOGIC_OP_XOR, d3d10umddi/D3D11_1_DDI_LOGIC_OP_OR_REVERSE, D3D11_1_DDI_LOGIC_OP_OR, d3d10umddi/D3D11_1_DDI_LOGIC_OP_AND, d3d10umddi/D3D11_1_DDI_LOGIC_OP_NAND, D3D11_1_DDI_LOGIC_OP_CLEAR, D3D11_1_DDI_LOGIC_OP_EQUIV, D3D11_1_DDI_LOGIC_OP_AND_REVERSE, D3D11_1_DDI_LOGIC_OP_COPY, D3D11_1_DDI_LOGIC_OP_SET, d3d10umddi/D3D11_1_DDI_LOGIC_OP, d3d10umddi/D3D11_1_DDI_LOGIC_OP_COPY, D3D11_1_DDI_LOGIC_OP_COPY_INVERTED, d3d10umddi/D3D11_1_DDI_LOGIC_OP_COPY_INVERTED, d3d10umddi/D3D11_1_DDI_LOGIC_OP_OR_INVERTED, D3D11_1_DDI_LOGIC_OP enumeration [Display Devices], display.d3d11_1_ddi_logic_op, d3d10umddi/D3D11_1_DDI_LOGIC_OP_NOR, d3d10umddi/D3D11_1_DDI_LOGIC_OP_AND_INVERTED, d3d10umddi/D3D11_1_DDI_LOGIC_OP_EQUIV, D3D11_1_DDI_LOGIC_OP_OR_INVERTED, D3D11_1_DDI_LOGIC_OP_AND, D3D11_1_DDI_LOGIC_OP_NAND, d3d10umddi/D3D11_1_DDI_LOGIC_OP_XOR, d3d10umddi/D3D11_1_DDI_LOGIC_OP_INVERT, D3D11_1_DDI_LOGIC_OP_OR_REVERSE, D3D11_1_DDI_LOGIC_OP_INVERT, D3D11_1_DDI_LOGIC_OP_AND_INVERTED, d3d10umddi/D3D11_1_DDI_LOGIC_OP_OR, D3D11_1_DDI_LOGIC_OP_NOOP, D3D11_1_DDI_LOGIC_OP_NOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1_DDI_LOGIC_OP
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1_DDI_LOGIC_OP
 ---
 
@@ -67,6 +71,86 @@ typedef enum D3D11_1_DDI_LOGIC_OP {
 ## Constants
 
 <table>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_AND</td>
+<td><i>s</i> AND <i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_AND_INVERTED</td>
+<td>~<i>s</i> AND <i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_AND_REVERSE</td>
+<td><i>s</i> AND ~<i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_CLEAR</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_COPY</td>
+<td><i>s</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_COPY_INVERTED</td>
+<td>~<i>s</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_EQUIV</td>
+<td>~(<i>s</i> ^ <i>d</i>)</td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_INVERT</td>
+<td>~<i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_NAND</td>
+<td>~(<i>s</i> AND <i>d</i>)</td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_NOOP</td>
+<td><i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_NOR</td>
+<td>~(<i>s</i> | <i>d</i>)</td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_OR</td>
+<td><i>s</i> | <i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_OR_INVERTED</td>
+<td>~<i>s</i> | <i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_OR_REVERSE</td>
+<td><i>s</i> | ~<i>d</i></td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_SET</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>D3D11_1_DDI_LOGIC_OP_XOR</td>
+<td><i>s</i> ^ <i>d</i></td>
+</tr>
 </table>
 
 ## Remarks
@@ -83,14 +167,10 @@ The <b>D3D11_1_DDI_LOGIC_OP</b> blend state  logic operations are specified by t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createblendstate.md">CreateBlendState(D3D11_1)</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1_ddi_blend_desc.md">D3D11_1_DDI_BLEND_DESC</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createblendstate.md">CreateBlendState(D3D11_1)</a>
+
  
 
  

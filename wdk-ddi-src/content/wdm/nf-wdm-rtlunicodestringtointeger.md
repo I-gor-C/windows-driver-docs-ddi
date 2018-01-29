@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d9357864-d49b-44fe-b884-64c6da609789
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringToInteger
+ms.keywords : kernel.rtlunicodestringtointeger, RtlUnicodeStringToInteger routine [Kernel-Mode Driver Architecture], k109_862feacf-64af-4aae-87b5-264ef277ea22.xml, wdm/RtlUnicodeStringToInteger, RtlUnicodeStringToInteger
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUnicodeStringToInteger
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,6 @@ A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING
 A numeric value that indicates the base (or radix) of the number that the Unicode string represents. This parameter value is optional and can be set to zero.
 
 If <i>Base</i> is zero, <b>RtlUnicodeStringToInteger</b> checks the prefix of the Unicode string to determine the base of the number:
-
 <ul>
 <li>
 If the prefix is "0x", <b>RtlUnicodeStringToInteger</b> interprets the number in the string as a hexadecimal integer.
@@ -74,8 +77,7 @@ If the prefix is "0o", <b>RtlUnicodeStringToInteger</b> interprets the number in
 If the prefix is "0b", <b>RtlUnicodeStringToInteger</b> interprets the number in the string as a binary integer.
 
 </li>
-</ul>
-If the Unicode string does not contain any of these prefixes, <b>RtlUnicodeStringToInteger</b> treats the string as a base-10 integer.
+</ul>If the Unicode string does not contain any of these prefixes, <b>RtlUnicodeStringToInteger</b> treats the string as a base-10 integer.
 
 `Value`
 
@@ -97,6 +99,58 @@ If the first non-white space character in the string is a hyphen (-), the intege
 A substring that contains one or more valid digits is terminated by any character that is not a valid digit. For example, if <i>Base</i> = 2, valid digits are '0' and '1'. If <i>Base</i> = 8, valid digits are '0' to '7'. If <i>Base</i> = 10, valid digits are '0' to '9'. If <i>Base</i> = 16, valid digits are '0' to '9', 'a' to 'f', and 'A' to 'F'.
 
 The following table contains examples of output values that result from various combinations of input strings and <i>Base</i> parameter values.
+<table>
+<tr>
+<th>Input string</th>
+<th>Base</th>
+<th>Output value</th>
+</tr>
+<tr>
+<td>"123"</td>
+<td>10</td>
+<td>123</td>
+</tr>
+<tr>
+<td>"  -345"</td>
+<td>10</td>
+<td>-345</td>
+</tr>
+<tr>
+<td>"xyz"</td>
+<td>10</td>
+<td>0</td>
+</tr>
+<tr>
+<td>"   +678abc"</td>
+<td>10</td>
+<td>678</td>
+</tr>
+<tr>
+<td>"   +678abc"</td>
+<td>16</td>
+<td>6785724</td>
+</tr>
+<tr>
+<td>"007"</td>
+<td>10</td>
+<td>7</td>
+</tr>
+<tr>
+<td>"789"</td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td>"FGH"</td>
+<td>16</td>
+<td>15</td>
+</tr>
+<tr>
+<td>"      "</td>
+<td>10</td>
+<td>0</td>
+</tr>
+</table> 
 
 A related routine, <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>, converts an integer value to the equivalent Unicode string representation.
 
@@ -114,14 +168,10 @@ A related routine, <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlInteg
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

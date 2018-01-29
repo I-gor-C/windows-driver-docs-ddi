@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4c8b6252-8438-4cd1-81e0-02c260da0daf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAddItemToObjectBag
+ms.keywords : avfunc_c7496331-05a5-4336-9c62-144e2db6e218.xml, KsAddItemToObjectBag function [Streaming Media Devices], ks/KsAddItemToObjectBag, KsAddItemToObjectBag, stream.ksadditemtoobjectbag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAddItemToObjectBag
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -61,7 +65,6 @@ A pointer to the item to add to the object bag.
 `Free`
 
 A function that is called when the item is removed from the object bag or when the object bag is deleted. This function typically is used to free any dynamic memory associated with <i>Item</i>. The function should be prototyped as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -71,8 +74,7 @@ A function that is called when the item is removed from the object bag or when t
 <pre>void Free (IN PVOID Data);</pre>
 </td>
 </tr>
-</table></span></div>
-If the caller does not specify this optional parameter, <i>Item</i> is freed with <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> when removed from the object bag or when the object bag is deleted.
+</table></span></div>If the caller does not specify this optional parameter, <i>Item</i> is freed with <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> when removed from the object bag or when the object bag is deleted.
 
 
 ## Return Value
@@ -99,29 +101,20 @@ For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-_ksedit.md">_KsEdit</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
+
+<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
+
+<a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
  
 
  

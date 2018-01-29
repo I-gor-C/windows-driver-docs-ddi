@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 091aee9d-5ecd-481a-b5e2-28b4828b2c2e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HDAUDIO_DEVICE_INFORMATION, *PHDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION
+ms.keywords : audio.hdaudio_device_information, *PHDAUDIO_DEVICE_INFORMATION, PHDAUDIO_DEVICE_INFORMATION, hdaudio/HDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION, PHDAUDIO_DEVICE_INFORMATION structure pointer [Audio Devices], aud-prop2_3350e3d4-dfbe-4002-b237-2395f4a07c7f.xml, _HDAUDIO_DEVICE_INFORMATION, hdaudio/PHDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION structure [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HDAUDIO_DEVICE_INFORMATION
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL.
-req.typenames : "*PHDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HDAUDIO_DEVICE_INFORMATION, *PHDAUDIO_DEVICE_INFORMATION
 ---
 
 # _HDAUDIO_DEVICE_INFORMATION structure
@@ -50,29 +54,29 @@ typedef struct _HDAUDIO_DEVICE_INFORMATION {
 
 ## Members
 
-        
-            `CodecsDetected`
 
-            Specifies the number of codecs that the HD Audio controller detects on the HD Audio Link.
-        
-            `DeviceVersion`
+`CodecsDetected`
 
-            Specifies the HD Audio controller device version.
-        
-            `DriverVersion`
+Specifies the number of codecs that the HD Audio controller detects on the HD Audio Link.
 
-            Specifies the HD Audio bus driver version.
-        
-            `IsStripingSupported`
+`DeviceVersion`
 
-            Specifies whether the HD Audio controller supports <a href="https://msdn.microsoft.com/29ab650c-0c3b-4693-a277-4d9ba63b7b66">striping</a>. If <b>TRUE</b>, it supports striping (with at least two SDO lines). If <b>FALSE</b>, it does not support striping.
-        
-            `Size`
+Specifies the HD Audio controller device version.
 
-            Specifies the size in bytes of the HDAUDIO_DEVICE_INFORMATION structure.
+`DriverVersion`
 
-    ## Remarks
-        The <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine uses this structure to provide information about the HD Audio controller's device-specific capabilities to clients.
+Specifies the HD Audio bus driver version.
+
+`IsStripingSupported`
+
+Specifies whether the HD Audio controller supports <a href="https://msdn.microsoft.com/29ab650c-0c3b-4693-a277-4d9ba63b7b66">striping</a>. If <b>TRUE</b>, it supports striping (with at least two SDO lines). If <b>FALSE</b>, it does not support striping.
+
+`Size`
+
+Specifies the size in bytes of the HDAUDIO_DEVICE_INFORMATION structure.
+
+## Remarks
+The <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine uses this structure to provide information about the HD Audio controller's device-specific capabilities to clients.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +86,10 @@ typedef struct _HDAUDIO_DEVICE_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a>
-</dt>
-</dl>
+
  
 
  

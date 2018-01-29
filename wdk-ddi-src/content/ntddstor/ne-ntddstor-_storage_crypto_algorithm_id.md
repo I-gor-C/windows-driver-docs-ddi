@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5D1CCF3D-D677-47B0-9C7B-7E35C649A7D5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_CRYPTO_ALGORITHM_ID, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
+ms.keywords : ntddstor/STORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmAESECB, ntddstor/StorageCryptoAlgorithmESSIVAESCBC, StorageCryptoAlgorithmUnknown, ntddstor/StorageCryptoAlgorithmBitlockerAESCBC, StorageCryptoAlgorithmAESECB, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmXTSAES, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], ntddstor/StorageCryptoAlgorithmUnknown, _STORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmXTSAES, storage.storage_crypto_algorithm_id, StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], StorageCryptoAlgorithmBitlockerAESCBC, StorageCryptoAlgorithmESSIVAESCBC, *PSTORAGE_CRYPTO_ALGORITHM_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
 ---
 

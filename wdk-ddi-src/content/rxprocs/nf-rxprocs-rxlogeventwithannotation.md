@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cb8b757a-cff5-41cf-8155-2c45a8a35f00
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxLogEventWithAnnotation
+ms.keywords : RxLogEventWithAnnotation function [Installable File System Drivers], RxLogEventWithAnnotation, rxprocs/RxLogEventWithAnnotation, rxref_9c7d3613-cf3b-4de9-bfcb-a1dbe9213834.xml, ifsk.rxlogeventwithannotation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxLogEventWithAnnotation
-req.alt-loc : rxprocs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -61,23 +65,23 @@ A pointer to the RDBSS device object.
 
 `EventId`
 
-
+TBD
 
 `Status`
 
-
+TBD
 
 `DataBuffer`
 
-
+TBD
 
 `DataBufferLength`
 
-
+TBD
 
 `Annotation`
 
-
+TBD
 
 `AnnotationCount`
 
@@ -110,17 +114,12 @@ The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxlogeventwithbufferdirect.md">RxLogEventWithBufferDirect</a>
-</dt>
-<dt>
 <a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
-</dt>
-</dl>
+
+<a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxlogeventwithbufferdirect.md">RxLogEventWithBufferDirect</a>
+
  
 
  

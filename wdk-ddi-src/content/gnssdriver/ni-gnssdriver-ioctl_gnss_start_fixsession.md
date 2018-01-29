@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : C3D1902A-DEB6-4AC7-B452-66C4636416BB
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
+ms.keywords : sensors.ioctl_gnss_start_fixsession, IOCTL_GNSS_START_FIXSESSION control code [Sensor Devices], IOCTL_GNSS_START_FIXSESSION, gnssdriver/IOCTL_GNSS_START_FIXSESSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GNSS_START_FIXSESSION
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_SUPL_CERT_ACTION
 ---
 
@@ -59,21 +63,23 @@ Set to 0.
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code.
 
-    ## Remarks
-        The driver sets an NTSTATUS value to indicate one of the following results.
-
+## Remarks
+The driver sets an NTSTATUS value to indicate one of the following results.
+<ul>
+<li>
 The fix session successfully started.
 
+</li>
+<li>
 A fix session of the same type is already active and the driver does not support multiple sessions.
 
-If multi-session support is not present, the GNSS adapter ensures that multiple sessions of the same fix type are multiplexed properly so that the GNSS driver sees only one session of a given type of fix. The GNSS adapter can modify the fix session parameters of an active fix session through the <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_modify_fixsession.md">IOCTL_GNSS_MODIFY_FIXSESSION</a> call.
+</li>
+</ul><h3><a id="GNSS_adapter_notes"></a><a id="gnss_adapter_notes"></a><a id="GNSS_ADAPTER_NOTES"></a>GNSS adapter notes</h3>If multi-session support is not present, the GNSS adapter ensures that multiple sessions of the same fix type are multiplexed properly so that the GNSS driver sees only one session of a given type of fix. The GNSS adapter can modify the fix session parameters of an active fix session through the <a href="..\gnssdriver\ni-gnssdriver-ioctl_gnss_modify_fixsession.md">IOCTL_GNSS_MODIFY_FIXSESSION</a> call.
 
 The GNSS adapter does not start a get fix request unless the driver completes this call and returns a success status in the output.
-
-If multi-session support is not present, and the GNSS adapter sends another start fix request for a fix type that is already active, the GNSS driver must fail the new session request. The driver should not replace the previous session with the new fix session details.
+<h3><a id="GNSS_driver_notes"></a><a id="gnss_driver_notes"></a><a id="GNSS_DRIVER_NOTES"></a>GNSS driver notes</h3>If multi-session support is not present, and the GNSS adapter sends another start fix request for a fix type that is already active, the GNSS driver must fail the new session request. The driver should not replace the previous session with the new fix session details.
 
 Multiple fix sessions of different fix types are always supported by the GNSS driver.
 
@@ -88,22 +94,16 @@ Once a fix session is started, it remains active unless the fix session is expli
 | **Header** | gnssdriver.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
-</dt>
-</dl>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+
  
 
  

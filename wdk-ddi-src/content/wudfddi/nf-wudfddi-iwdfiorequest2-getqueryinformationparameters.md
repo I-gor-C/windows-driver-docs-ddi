@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e189d2f6-ef1c-45ed-8b55-8aae0661a426
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2, IWDFIoRequest2::GetQueryInformationParameters, GetQueryInformationParameters
+ms.keywords : IWDFIoRequest2 interface, GetQueryInformationParameters method, umdf.iwdfiorequest2_getqueryinformationparameters, GetQueryInformationParameters method, IWDFIoRequest2 interface, IWDFIoRequest2::GetQueryInformationParameters, UMDFRequestObjectRef_595d2b4c-1286-4243-b440-0efaae03980d.xml, wudfddi/IWDFIoRequest2::GetQueryInformationParameters, GetQueryInformationParameters, IWDFIoRequest2, wdf.iwdfiorequest2_getqueryinformationparameters, GetQueryInformationParameters method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFIoRequest2.GetQueryInformationParameters
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ Your driver can call <b>GetQueryInformationParameters</b> to obtain the paramete
 
 Your driver must verify that the specified buffer size is large enough to receive the requested file information.
 
-The following code example is part of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function. If the callback function receives a query information request, it retrieves the request's parameters. If the driver supports the specified type of information, it copies the information into the request's output buffer.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,14 +89,10 @@ The following code example is part of an <a href="https://msdn.microsoft.com/lib
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>
-</dt>
-</dl>
+
  
 
  

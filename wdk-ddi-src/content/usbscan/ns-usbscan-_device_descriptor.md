@@ -7,8 +7,8 @@ old-location : image\device_descriptor.htm
 old-project : image
 ms.assetid : 15ad337a-0b33-48ba-98cf-6aff2698e2ba
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR
+ms.date : 1/18/2018
+ms.keywords : DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR, PDEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR structure [Imaging Devices], image.device_descriptor, _DEVICE_DESCRIPTOR, usbscan/PDEVICE_DESCRIPTOR, usbscan/DEVICE_DESCRIPTOR, stifnc_1b07d50b-5530-47d4-a212-54305a0fef7a.xml, PDEVICE_DESCRIPTOR structure pointer [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_DESCRIPTOR
-req.alt-loc : usbscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -50,22 +54,22 @@ typedef struct _DEVICE_DESCRIPTOR {
 
 ## Members
 
-        
-            `usBcdDevice`
 
-            BCD-encoded device version number.
-        
-            `usLanguageId`
+`usBcdDevice`
 
-            <i>Not used</i>.
-        
-            `usProductId`
+BCD-encoded device version number.
 
-            Device product identifier.
-        
-            `usVendorId`
+`usLanguageId`
 
-            Vendor identifier.
+<i>Not used</i>.
+
+`usProductId`
+
+Device product identifier.
+
+`usVendorId`
+
+Vendor identifier.
 
 
 ## Requirements

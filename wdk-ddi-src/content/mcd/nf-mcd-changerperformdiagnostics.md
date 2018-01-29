@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 87767b2b-8ca3-4d19-8719-673562246a41
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerPerformDiagnostics
+ms.keywords : mcd/ChangerPerformDiagnostics, ChangerPerformDiagnostics, chgrmini_dd38573a-a1cc-4b7b-abdf-0a200ba11d88.xml, ChangerPerformDiagnostics function [Storage Devices], storage.changerperformdiagnostics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerPerformDiagnostics
-req.alt-loc : mcd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -55,7 +59,7 @@ Pointer to the device object that represents the changer.
 
 `changerDeviceError`
 
-
+TBD
 
 
 ## Return Value
@@ -87,14 +91,10 @@ STATUS_BUFFER_TOO_SMALL
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wmidata\ns-wmidata-_wmi_changer_problem_device_error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
-</dt>
-<dt>
 <a href="..\ntddchgr\ne-ntddchgr-_changer_device_problem_type.md">CHANGER_DEVICE_PROBLEM_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\wmidata\ns-wmidata-_wmi_changer_problem_device_error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
+
  
 
  

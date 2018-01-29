@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2517b7a9-76f5-46f6-9225-18081cd1d357
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC
+ms.keywords : d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC, _D3DDDIARG_CREATEVERTEXSHADERFUNC, UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices], display.d3dddiarg_createvertexshaderfunc, D3DDDIARG_CREATEVERTEXSHADERFUNC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CREATEVERTEXSHADERFUNC
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CREATEVERTEXSHADERFUNC
 ---
 
@@ -47,17 +51,17 @@ typedef struct _D3DDDIARG_CREATEVERTEXSHADERFUNC {
 
 ## Members
 
-        
-            `ShaderHandle`
 
-            [out] A handle to the vertex shader code.
-        
-            `Size`
+`ShaderHandle`
 
-            [in] The size, in bytes, of the vertex shader code that is passed to the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderfunc.md">CreateVertexShaderFunc</a> function.
+[out] A handle to the vertex shader code.
 
-    ## Remarks
-        For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.
+`Size`
+
+[in] The size, in bytes, of the vertex shader code that is passed to the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderfunc.md">CreateVertexShaderFunc</a> function.
+
+## Remarks
+For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _D3DDDIARG_CREATEVERTEXSHADERFUNC {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderfunc.md">CreateVertexShaderFunc</a>
-</dt>
-</dl>
+
  
 
  

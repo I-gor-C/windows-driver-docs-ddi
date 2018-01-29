@@ -7,8 +7,8 @@ old-location : image\sti_diag.htm
 old-project : image
 ms.assetid : 07caa8b0-849c-4ad9-9adb-b1726edc9234
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _STI_DIAG, *LPSTI_DIAG, STI_DIAG, DIAG
+ms.date : 1/18/2018
+ms.keywords : image.sti_diag, LPSTI_DIAG structure pointer [Imaging Devices], STI_DIAG structure [Imaging Devices], stifnc_793c0930-51bf-46b5-89c9-9ddaf91a1fee.xml, _STI_DIAG, *LPSTI_DIAG, STI_DIAG, LPSTI_DIAG, DIAG, sti/LPSTI_DIAG, sti/STI_DIAG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STI_DIAG
-req.alt-loc : sti.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPSTI_DIAG, STI_DIAG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STI_DIAG, *LPSTI_DIAG
 req.product : Windows 10 or later.
 ---
 
@@ -51,26 +55,26 @@ typedef struct _STI_DIAG {
 
 ## Members
 
-        
-            `dwBasicDiagCode`
 
-            Bit flag indicating the type of test to be performed. Currently this must be STI_DIAGCODE_HWPRESENCE<i>.</i>
-        
-            `dwSize`
+`dwBasicDiagCode`
 
-            Caller-supplied size, in bytes, of the STI_DIAG structure.
-        
-            `dwStatusMask`
+Bit flag indicating the type of test to be performed. Currently this must be STI_DIAGCODE_HWPRESENCE<i>.</i>
 
-            Reserved for future use.
-        
-            `dwVendorDiagCode`
+`dwSize`
 
-            Optional, vendor-defined diagnostic request code.
-        
-            `sErrorInfo`
+Caller-supplied size, in bytes, of the STI_DIAG structure.
 
-            Structure of type <a href="..\sti\ns-sti-_error_infow.md">STI_ERROR_INFO</a>.
+`dwStatusMask`
+
+Reserved for future use.
+
+`dwVendorDiagCode`
+
+Optional, vendor-defined diagnostic request code.
+
+`sErrorInfo`
+
+Structure of type <a href="..\sti\ns-sti-_error_infow.md">STI_ERROR_INFO</a>.
 
 
 ## Requirements

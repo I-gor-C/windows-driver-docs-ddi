@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6aa00a36-f7a2-4e49-bbd9-1a1ae3592951
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_POWER_COMPONENT_MAPPING, DXGK_POWER_COMPONENT_MAPPING
+ms.keywords : display.dxgk_power_component_mapping, _DXGK_POWER_COMPONENT_MAPPING, DXGK_POWER_COMPONENT_MAPPING, d3dkmddi/DXGK_POWER_COMPONENT_MAPPING, DXGK_POWER_COMPONENT_MAPPING structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_POWER_COMPONENT_MAPPING
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_POWER_COMPONENT_MAPPING
 ---
 
@@ -57,10 +61,10 @@ typedef struct _DXGK_POWER_COMPONENT_MAPPING {
 
 ## Members
 
-        
-            `ComponentType`
 
-            A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_power_component_type.md">DXGK_POWER_COMPONENT_TYPE</a>-typed value that indicates the power component type that is reported by the display miniport driver to the DirectX graphics kernel subsystem.
+`ComponentType`
+
+A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_power_component_type.md">DXGK_POWER_COMPONENT_TYPE</a>-typed value that indicates the power component type that is reported by the display miniport driver to the DirectX graphics kernel subsystem.
 
 
 ## Requirements
@@ -71,16 +75,12 @@ typedef struct _DXGK_POWER_COMPONENT_MAPPING {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_power_component_type.md">DXGK_POWER_COMPONENT_TYPE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_component.md">DXGK_POWER_RUNTIME_COMPONENT</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_power_component_type.md">DXGK_POWER_COMPONENT_TYPE</a>
+
  
 
  

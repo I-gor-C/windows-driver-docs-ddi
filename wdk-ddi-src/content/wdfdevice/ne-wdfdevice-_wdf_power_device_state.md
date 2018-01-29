@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 66ff00fd-43b0-4fe1-a010-4b5ef65fa811
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE
+ms.keywords : WdfPowerDeviceD1, wdfdevice/WdfPowerDevicePrepareForHibernation, wdf.wdf_power_device_state, wdfdevice/PWDF_POWER_DEVICE_STATE, wdfdevice/WdfPowerDeviceD3, wdfdevice/WdfPowerDeviceD1, WdfPowerDeviceInvalid, wdfdevice/WdfPowerDeviceMaximum, *PWDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE enumeration, WdfPowerDeviceD2, WdfPowerDeviceD3, WdfPowerDevicePrepareForHibernation, _WDF_POWER_DEVICE_STATE, kmdf.wdf_power_device_state, WDF_POWER_DEVICE_STATE, WdfPowerDeviceD3Final, wdfdevice/WdfPowerDeviceInvalid, wdfdevice/WDF_POWER_DEVICE_STATE, PWDF_POWER_DEVICE_STATE enumeration pointer, PWDF_POWER_DEVICE_STATE, WdfPowerDeviceD0, wdfdevice/WdfPowerDeviceD3Final, DFDeviceObjectGeneralRef_5a921767-81e1-4a80-b775-8f91819c6ea5.xml, wdfdevice/WdfPowerDeviceD0, wdfdevice/WdfPowerDeviceD2, WdfPowerDeviceMaximum
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_POWER_DEVICE_STATE
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE
 req.product : Windows 10 or later.
 ---
@@ -110,14 +114,10 @@ typedef enum _WDF_POWER_DEVICE_STATE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>
+
  
 
  

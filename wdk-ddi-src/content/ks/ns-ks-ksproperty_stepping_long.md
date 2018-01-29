@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : bf0c16f5-ecfa-42bc-bd60-805d5b28ddc3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_STEPPING_LONG, KSPROPERTY_STEPPING_LONG, *PKSPROPERTY_STEPPING_LONG
+ms.keywords : "*PKSPROPERTY_STEPPING_LONG, stream.ksproperty_stepping_long, PKSPROPERTY_STEPPING_LONG structure pointer [Streaming Media Devices], ks-struct_2aad8fb1-d35c-4227-ad97-92451261b33c.xml, PKSPROPERTY_STEPPING_LONG, ks/PKSPROPERTY_STEPPING_LONG, KSPROPERTY_STEPPING_LONG structure [Streaming Media Devices], KSPROPERTY_STEPPING_LONG, ks/KSPROPERTY_STEPPING_LONG"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_STEPPING_LONG
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_STEPPING_LONG, *PKSPROPERTY_STEPPING_LONG
 ---
 
@@ -48,21 +52,25 @@ typedef struct {
 
 ## Members
 
-        
-            `Bounds`
 
-            A structure of type <a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a> that specifies the range of values over which the <b>SteppingDelta</b> is valid.
-        
-            `Reserved`
+`Bounds`
 
-            Reserved for system use.
-        
-            `SteppingDelta`
+A structure of type <a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a> that specifies the range of values over which the <b>SteppingDelta</b> is valid.
 
-            Specifies the step value that should be used to create legal values within the range defined in <b>Bounds</b>.
+`Reserved`
 
-    ## Remarks
-        The <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a> structure may contain structures of this type in its <b>Members</b> array.
+Reserved for system use.
+
+`SteppingDelta`
+
+Specifies the step value that should be used to create legal values within the range defined in <b>Bounds</b>.
+
+## Remarks
+The <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a> structure may contain structures of this type in its <b>Members</b> array.
+
+See the Testcap sample in the Windows Driver Kit (WDK) for examples of usage.
+
+For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +80,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a>
+
  
 
  

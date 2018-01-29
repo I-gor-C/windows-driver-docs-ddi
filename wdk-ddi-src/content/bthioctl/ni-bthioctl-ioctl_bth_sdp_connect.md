@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 8bfe92c9-6049-4d68-80a9-3a8f8dda3bcc
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.keywords : bltooth.ioctl_bth_sdp_connect, IOCTL_BTH_SDP_CONNECT control code [Bluetooth Devices], IOCTL_BTH_SDP_CONNECT, bthioctl/IOCTL_BTH_SDP_CONNECT, bth_ioctls_e03c93b3-b2af-40d0-a296-bb76f33c38a2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTH_SDP_CONNECT
-req.alt-loc : Bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1"
 ---
 
 # IOCTL_BTH_SDP_CONNECT IOCTL
-The IOCTL_BTH_SDP_CONNECT request creates a connection to the SDP service on a remote Bluetooth
-     device.
-
-
-
 The IOCTL_BTH_SDP_CONNECT request creates a connection to the SDP service on a remote Bluetooth
      device.
 
@@ -71,7 +70,6 @@ Length of a <a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNEC
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the output
       buffer. Otherwise, the 
@@ -79,34 +77,76 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_DEVICE_BUSY
 
+</td>
+<td>
 The HCI layer is currently unable to accept requests.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_DEVICE_NOT_CONNECTED
 
+</td>
+<td>
 If a cached connection was specified, there are no cached records available. Otherwise, the
          connection was canceled before it completed.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INSUFFICIENT_RESOURCES
 
+</td>
+<td>
 There was not enough memory available to process the request.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_PARAMETER
 
+</td>
+<td>
 A portion of the structure found in the input buffer was incorrect.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_PENDING
 
+</td>
+<td>
 The system cannot currently respond, but will attempt to shortly.
 
-    ## Remarks
-        The IOCTL_BTH_SDP_CONNECT request allows a profile driver to obtain an SDP connection handle to a
+</td>
+</tr>
+</table>
+
+## Remarks
+The IOCTL_BTH_SDP_CONNECT request allows a profile driver to obtain an SDP connection handle to a
     remote device. After the SDP connection handle is obtained, the profile driver can pass it to other SDP
     IOCTL interfaces to gather information about the remote device's SDP server. When the SDP queries are
     completed, the profile driver must close the SDP connection with 
@@ -119,16 +159,12 @@ The system cannot currently respond, but will attempt to shortly.
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | <= PASSIVE_LEVEL |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
-</dt>
-<dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_disconnect.md">IOCTL_BTH_SDP_DISCONNECT</a>
-</dt>
-</dl>
+
+<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
+
  
 
  

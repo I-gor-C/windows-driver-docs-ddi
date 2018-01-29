@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 759CDFAA-D939-44E7-AE03-E3ED90F8E09D
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFlushNonVolatileMemory
+ms.keywords : RtlFlushNonVolatileMemory routine [Installable File System Drivers], RtlFlushNonVolatileMemory, ntddk/RtlFlushNonVolatileMemory, ifsk.rtlflushnonvolatilememory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlFlushNonVolatileMemory
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -68,7 +72,6 @@ The length, in bytes, of the non-volatile memory buffer <b>NvBuffer</b> points t
 `Flags`
 
 One of the following flags can be specified:
-
 <table>
 <tr>
 <th>Flags</th>
@@ -90,12 +93,34 @@ Specifies that this routine does not need to wait for the flush to drain.
 ## Return Value
 
 The routine <b>RtlFreeNonVolatileToken</b> returns one of the status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl><b>NvToken</b> is an invalid pointer or token.
+</dl>
+</td>
+<td width="60%">
+<b>NvToken</b> is an invalid pointer or token.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The request was successful.
+</dl>
+</td>
+<td width="60%">
+The request was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -115,23 +140,16 @@ This routine <b>RtlFlushNonVolatileMemory</b> can also add more context to <b>Nv
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/EA1C2DF3-591C-407A-ABBF-DE615466A498">RtlDrainNonVolatileFlush</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/169C5F41-B372-4056-AAC5-53DD0582A563">RtlFlushNonVolatileMemoryRanges</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/49DDDEF8-F949-4674-A18B-9BB091D163C2">RtlWriteNonVolatileMemory</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
+
+<a href="https://msdn.microsoft.com/169C5F41-B372-4056-AAC5-53DD0582A563">RtlFlushNonVolatileMemoryRanges</a>
+
+<a href="https://msdn.microsoft.com/EA1C2DF3-591C-407A-ABBF-DE615466A498">RtlDrainNonVolatileFlush</a>
+
+<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
+
  
 
  

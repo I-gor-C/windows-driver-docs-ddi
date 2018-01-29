@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 660aa6f2-03d8-44aa-b263-29a74c912668
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltOplockKeysEqual
+ms.keywords : FltOplockKeysEqual, fltkernel/FltOplockKeysEqual, ifsk.fltoplockkeysequal, FltApiRef_e_to_o_66634abf-9f0a-44b1-a4e4-85ef958b05f5.xml, FltOplockKeysEqual routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The FltOplockKeysEqual routine is available starting
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltOplockKeysEqual
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -80,11 +84,8 @@ If no oplock key was provided when the file objects were created, the file objec
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockkeysequal~r1.md">FsRtlOplockKeysEqual</a>
-</dt>
-</dl>
+
  
 
  

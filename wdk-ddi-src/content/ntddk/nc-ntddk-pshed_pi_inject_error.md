@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : efd2658b-875e-4589-9ba0-42232e070b91
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords : whea.injecterror, InjectError callback function [WHEA Drivers and Applications], InjectError, PSHED_PI_INJECT_ERROR, PSHED_PI_INJECT_ERROR, ntddk/InjectError, whearef_377f07ab-4ea0-4982-8298-c7139b4bfdc7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InjectError
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 
@@ -84,12 +88,36 @@ A generic parameter that contains additional data that is passed by the WHEA man
 ## Return Value
 
 A PSHED plug-in's <i>InjectError</i> callback function returns one of the following NTSTATUS codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The error was successfully injected into the hardware platform.
+</dl>
+</td>
+<td width="60%">
+The error was successfully injected into the hardware platform.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred.
+
+<div class="alert"><b>Note</b>  For injected errors that are fatal or otherwise unrecoverable, this callback function might not return before the operating system generates a bug check in response to the error condition.</div>
+<div> </div>
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -113,17 +141,12 @@ The WHEA management application that is injecting the error can pass additional 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
-</dt>
-<dt>
 <a href="..\ntddk\nc-ntddk-pshed_pi_get_injection_capabilities.md">GetInjectionCapabilities</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
  
 
  

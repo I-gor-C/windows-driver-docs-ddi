@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 90491024-f623-4528-8d37-4a6acb394473
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_MaxUsageListLength
+ms.keywords : hidpi/HidP_MaxUsageListLength, HidP_MaxUsageListLength, hid.hidp_maxusagelistlength, HidP_MaxUsageListLength routine [Human Input Devices], hidfunc_a038fac0-7532-40e4-b083-e0dbe046ad85.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HidP_MaxUsageListLength
-req.alt-loc : Hidparse.lib,Hidparse.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hidparse.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HIDP_REPORT_TYPE
 ---
 
@@ -56,7 +60,7 @@ Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a
 
 `UsagePage`
 
-Specifies a <a href="hid.hid_usages#usage_page#usage_page">usage page</a> as a search criteria. If <i>UsagePage</i> is zero, the routine returns the number of all the buttons in the collection.
+Specifies a <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage page</a> as a search criteria. If <i>UsagePage</i> is zero, the routine returns the number of all the buttons in the collection.
 
 `PreparsedData`
 
@@ -85,17 +89,12 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
-</dt>
-<dt>
 <a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
+
  
 
  

@@ -50,33 +50,33 @@ typedef struct _DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT {
 
 ## Members
 
-        
-            `ClosestLargerDuration`
 
-            [out] The largest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≥ <b>DesiredPresentDuration</b>.
+`ClosestLargerDuration`
 
-See Remarks for more limitations on this value.
-        
-            `ClosestSmallerDuration`
-
-            The smallest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≤ <b>DesiredPresentDuration</b>.
+[out] The largest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≥ <b>DesiredPresentDuration</b>.
 
 See Remarks for more limitations on this value.
-        
-            `DesiredPresentDuration`
 
-            The desired duration of a single present operation, in units of 100 nanoseconds.
-        
-            `hDevice`
+`ClosestSmallerDuration`
 
-            A handle to the display device (graphics context) on which the driver performs the presentation. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
-        
-            `VidPnSourceId`
+The smallest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≤ <b>DesiredPresentDuration</b>.
 
-            The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.
+See Remarks for more limitations on this value.
 
-    ## Remarks
-        Either  <b>ClosestSmallerDuration</b> or <b>ClosestLargerDuration</b> can be zero. However, if both  are zero, the device cannot seamlessly switch to a new refresh rate.
+`DesiredPresentDuration`
+
+The desired duration of a single present operation, in units of 100 nanoseconds.
+
+`hDevice`
+
+A handle to the display device (graphics context) on which the driver performs the presentation. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
+
+`VidPnSourceId`
+
+The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.
+
+## Remarks
+Either  <b>ClosestSmallerDuration</b> or <b>ClosestLargerDuration</b> can be zero. However, if both  are zero, the device cannot seamlessly switch to a new refresh rate.
 
 If both <b>ClosestSmallerDuration</b> and <b>ClosestLargerDuration</b> have the same value as <b>DesiredPresentDuration</b>, the device can precisely match <b>DesiredPresentDuration</b>.
 
@@ -90,9 +90,9 @@ The difference between <b>DesiredPresentDuration</b> and <b>ClosestSmallerDurati
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
+<dl>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
 </dt>

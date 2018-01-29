@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5eb004d1-7cf8-45a3-aad5-2932b1a83bb8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _NDK_SRQ_DISPATCH, NDK_SRQ_DISPATCH
+ms.keywords : display.pfndataratenotify, pfnDataRateNotify callback function [Display Devices], pfnDataRateNotify, PFN_DATARATE_NOTIFICATION, PFN_DATARATE_NOTIFICATION, netdispumdddi/pfnDataRateNotify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnDataRateNotify
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDK_SRQ_DISPATCH
 ---
 
@@ -85,17 +89,12 @@ If data on the quality of service (QoS) of the network connection becomes unavai
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_datarate_stats.md">MIRACAST_DATARATE_STATS</a>
-</dt>
-<dt>
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_register_datarate_notifications.md">RegisterForDataRateNotifications</a>
-</dt>
-</dl>
+
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast_datarate_stats.md">MIRACAST_DATARATE_STATS</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
  
 
  

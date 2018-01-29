@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 19121888-ad5c-4596-a7ec-a95fbffda685
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_VIDEODESC, DXVADDI_VIDEODESC
+ms.keywords : DXVADDI_VIDEODESC, DXVADDI_VIDEODESC structure [Display Devices], _DXVADDI_VIDEODESC, display.dxvaddi_videodesc, d3dumddi/DXVADDI_VIDEODESC, DXVA2_Structs_7e8c3d70-50a3-48f7-bc5e-4280a599e43d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_VIDEODESC
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_VIDEODESC
 ---
 
@@ -53,38 +57,38 @@ typedef struct _DXVADDI_VIDEODESC {
 
 ## Members
 
-        
-            `Format`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.
-        
-            `InputSampleFreq`
+`Format`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_frequency.md">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.
-        
-            `OutputFrameFreq`
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.
 
-            [in] A DXVADDI_FREQUENCY structure that defines the frame rate of output video.
-        
-            `Reserved`
+`InputSampleFreq`
 
-            [in] Reserved. Do not use this member.
-        
-            `SampleFormat`
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_frequency.md">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.
-        
-            `SampleHeight`
+`OutputFrameFreq`
 
-            [in] The height of the video sample, in pixels.
-        
-            `SampleWidth`
+[in] A DXVADDI_FREQUENCY structure that defines the frame rate of output video.
 
-            [in] The width of the video sample, in pixels.
-        
-            `UABProtectionLevel`
+`Reserved`
 
-            [in] A UINT value that specifies the level of data protection that is required when the user accessible bus is present.
+[in] Reserved. Do not use this member.
+
+`SampleFormat`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.
+
+`SampleHeight`
+
+[in] The height of the video sample, in pixels.
+
+`SampleWidth`
+
+[in] The width of the video sample, in pixels.
+
+`UABProtectionLevel`
+
+[in] A UINT value that specifies the level of data protection that is required when the user accessible bus is present.
 
 
 ## Requirements
@@ -95,19 +99,14 @@ typedef struct _DXVADDI_VIDEODESC {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_frequency.md">DXVADDI_FREQUENCY</a>
-</dt>
-</dl>
+
  
 
  

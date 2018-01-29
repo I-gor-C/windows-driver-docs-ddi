@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 754aad8a-834c-4197-8505-dbf1cd74c697
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISynthSinkDMus, ISynthSinkDMus::SyncToMaster, SyncToMaster
+ms.keywords : audio.imasterclock, IMasterClock interface [Audio Devices], IMasterClock interface [Audio Devices], described, IMasterClock, dmusicks/IMasterClock, audmp-routines_b8172e0e-55ac-4abd-8b62-39be5d708f9b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMasterClock
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 

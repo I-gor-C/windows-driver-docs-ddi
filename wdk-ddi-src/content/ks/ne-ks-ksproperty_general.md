@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 45D94211-4756-4D3C-8512-2AF7953CFADC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_GENERAL, KSPROPERTY_GENERAL
+ms.keywords : KSPROPERTY_GENERAL enumeration [Streaming Media Devices], KSPROPERTY_GENERAL, KSPROPERTY_GENERAL_COMPONENTID, stream.ksproperty_general, ks/KSPROPERTY_GENERAL, ks/KSPROPERTY_GENERAL_COMPONENTID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_GENERAL
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_GENERAL
 ---
 

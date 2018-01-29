@@ -7,8 +7,8 @@ old-location : netvista\rilcallmediavideoflagparammask.htm
 old-project : netvista
 ms.assetid : cff507e4-d673-4608-9fd9-530ff7e26ffb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMEDIAVIDEOFLAGPARAMMASK, RILCALLMEDIAVIDEOFLAGPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_ALL, RIL_CALLMEDIAVIDEOFLAG_ALL, RILCALLMEDIAVIDEOFLAGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIAVIDEOFLAG_PAUSE, ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_PAUSE, RILCALLMEDIAVIDEOFLAGPARAMMASK, RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE, ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE, RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN, netvista.rilcallmediavideoflagparammask, ntddrilapitypes/RILCALLMEDIAVIDEOFLAGPARAMMASK, ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMEDIAVIDEOFLAGPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLMEDIAVIDEOFLAGPARAMMASK
 ---
 
@@ -58,6 +62,11 @@ typedef enum _RILCALLMEDIAVIDEOFLAGPARAMMASK {
 
 <tr>
 <td>RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAVIDEOFLAG_NONE</td>
 <td></td>
 </tr>
 

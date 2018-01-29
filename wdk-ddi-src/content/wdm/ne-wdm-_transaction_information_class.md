@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f3211114-8924-4e57-85a3-12471585652b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _TRANSACTION_INFORMATION_CLASS, TRANSACTION_INFORMATION_CLASS
+ms.keywords : _TRANSACTION_INFORMATION_CLASS, ktm_ref_b02f7265-fb29-402a-b0d3-79427735f354.xml, TRANSACTION_INFORMATION_CLASS, wdm/TransactionPropertiesInformation, TransactionSuperiorEnlistmentInformation, wdm/TransactionEnlistmentInformation, TransactionPropertiesInformation, wdm/TransactionSuperiorEnlistmentInformation, wdm/TRANSACTION_INFORMATION_CLASS, TransactionBasicInformation, wdm/TransactionBasicInformation, kernel.transaction_information_class, TRANSACTION_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], TransactionEnlistmentInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSACTION_INFORMATION_CLASS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TRANSACTION_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
@@ -84,14 +88,10 @@ typedef enum _TRANSACTION_INFORMATION_CLASS {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
+
  
 
  

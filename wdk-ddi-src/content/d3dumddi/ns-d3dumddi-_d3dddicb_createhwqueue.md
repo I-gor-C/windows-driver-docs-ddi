@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 085CEF61-2C2E-4F9C-B143-2E2D58C51643
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_CREATEHWQUEUE, D3DDDICB_CREATEHWQUEUE
+ms.keywords : display.d3dddicb_createhwqueue, D3DDDICB_CREATEHWQUEUE, _D3DDDICB_CREATEHWQUEUE, D3DDDICB_CREATEHWQUEUE structure [Display Devices], d3dumddi/D3DDDICB_CREATEHWQUEUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_CREATEHWQUEUE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_CREATEHWQUEUE
 ---
 
@@ -53,34 +57,38 @@ typedef struct _D3DDDICB_CREATEHWQUEUE {
 
 ## Members
 
-        
-            `Flags`
 
-            Queue creation flags.
-        
-            `hHwQueue`
+`Flags`
 
-            Handle to the created queue.
-        
-            `hHwQueueProgressFence`
+Queue creation flags.
 
-            Handle to the hardware queue progress fence object.
-        
-            `HwQueueProgressFenceCPUVirtualAddress`
+`hHwContext`
 
-            Read-only mapping of the fence value for the CPU
-        
-            `HwQueueProgressFenceGPUVirtualAddress`
+Handle to the context the queue is created for.
 
-            Read/write mapping of the fence value for the GPU
-        
-            `pPrivateDriverData`
+`hHwQueue`
 
-            Pointer to private driver data.
-        
-            `PrivateDriverDataSize`
+Handle to the created queue.
 
-            Size of private driver data.
+`hHwQueueProgressFence`
+
+Handle to the hardware queue progress fence object.
+
+`HwQueueProgressFenceCPUVirtualAddress`
+
+Read-only mapping of the fence value for the CPU
+
+`HwQueueProgressFenceGPUVirtualAddress`
+
+Read/write mapping of the fence value for the GPU
+
+`pPrivateDriverData`
+
+Pointer to private driver data.
+
+`PrivateDriverDataSize`
+
+Size of private driver data.
 
 
 ## Requirements

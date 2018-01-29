@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9a21495e-8a4d-4177-a2c5-b6a928d86fd9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeEnterGuardedRegion
+ms.keywords : wdm/KeEnterGuardedRegion, KeEnterGuardedRegion routine [Kernel-Mode Driver Architecture], kernel.keenterguardedregion, KeEnterGuardedRegion, k105_0f632d64-85dc-4c0f-8a26-8b4710673ab5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeEnterGuardedRegion
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : GuardedRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -50,10 +54,6 @@ VOID KeEnterGuardedRegion(void);
 This function has no parameters.
 
 ## Return Value
-
-None
-
-None
 
 None
 
@@ -77,11 +77,8 @@ For more information about guarded regions, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
-</dt>
-</dl>
+<a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f7669c36-6bf0-477e-8466-46a3da015cf3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDA_TABLE_SECTION, *PBDA_TABLE_SECTION, BDA_TABLE_SECTION
+ms.keywords : _BDA_TABLE_SECTION, PBDA_TABLE_SECTION structure pointer [Streaming Media Devices], *PBDA_TABLE_SECTION, PBDA_TABLE_SECTION, bdatypes/BDA_TABLE_SECTION, stream.bda_table_section, bdaref_cf9fff4a-3ab2-4cf1-9db8-fccd36661cad.xml, BDA_TABLE_SECTION structure [Streaming Media Devices], bdatypes/PBDA_TABLE_SECTION, BDA_TABLE_SECTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_TABLE_SECTION
-req.alt-loc : bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBDA_TABLE_SECTION, BDA_TABLE_SECTION"
 ---
 
@@ -49,22 +53,22 @@ typedef struct _BDA_TABLE_SECTION {
 
 ## Members
 
-        
-            `argbSectionData`
 
-            Array of table section data.
-        
-            `ulcbSectionLength`
+`argbSectionData`
 
-            Size, in bytes, of the <b>argbSectionData</b> array.
-        
-            `ulPrimarySectionId`
+Array of table section data.
 
-            Identifier of the primary table section.
-        
-            `ulSecondarySectionId`
+`ulcbSectionLength`
 
-            Identifier of the secondary table section.
+Size, in bytes, of the <b>argbSectionData</b> array.
+
+`ulPrimarySectionId`
+
+Identifier of the primary table section.
+
+`ulSecondarySectionId`
+
+Identifier of the secondary table section.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _BDA_TABLE_SECTION {
 | **Minimum UMDF version** |  |
 | **Header** | bdatypes.h (include Bdatypes.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566560">KSPROPSETID_BdaTableSection</a>
-</dt>
-</dl>
+
  
 
  

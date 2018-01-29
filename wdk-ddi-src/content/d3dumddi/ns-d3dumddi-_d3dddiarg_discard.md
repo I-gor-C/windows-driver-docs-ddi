@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6efee74e-9e82-4631-8360-19061b0c015d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_DISCARD, D3DDDIARG_DISCARD
+ms.keywords : d3dumddi/D3DDDIARG_DISCARD, display.d3dddiarg_discard, D3DDDIARG_DISCARD, D3DDDIARG_DISCARD structure [Display Devices], _D3DDDIARG_DISCARD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_DISCARD
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_DISCARD
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DDDIARG_DISCARD {
 
 ## Members
 
-        
-            `FirstSubResource`
 
-            The index of the first subresource to be discarded.
-        
-            `hResource`
+`FirstSubResource`
 
-            A handle to the resource in which subresources are to be discarded.
-        
-            `NumRects`
+The index of the first subresource to be discarded.
 
-            The number of rectangles in the array that the  <b>pRects</b> member specifies.
-        
-            `NumSubResources`
+`hResource`
 
-            The number of subresources to be discarded.
-        
-            `pRects`
+A handle to the resource in which subresources are to be discarded.
 
-            An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_discard.md">Discard</a> function discards the entire surface.
+`NumRects`
+
+The number of rectangles in the array that the  <b>pRects</b> member specifies.
+
+`NumSubResources`
+
+The number of subresources to be discarded.
+
+`pRects`
+
+An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_discard.md">Discard</a> function discards the entire surface.
 
 
 ## Requirements
@@ -80,16 +84,12 @@ typedef struct _D3DDDIARG_DISCARD {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_discard.md">Discard</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

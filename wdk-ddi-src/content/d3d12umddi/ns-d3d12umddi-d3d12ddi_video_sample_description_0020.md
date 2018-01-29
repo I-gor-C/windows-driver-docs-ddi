@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B9918A06-6C10-4AD7-97EC-4FA0BC5319AD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020, D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020
+ms.keywords : D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_SAMPLE_DESCRIPTION, D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020, display.d3d12ddi_video_sample_description
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020
 ---
 
@@ -48,18 +52,18 @@ typedef struct D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020 {
 
 ## Members
 
-        
-            `Format`
 
-            The format and color space of the sample.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_format_description_0020.md">D3D12DDI_VIDEO_FORMAT_DESCRIPTION</a> structure.
-        
-            `Height`
+`Format`
 
-            The height of the sample.
-        
-            `Width`
+The format and color space of the sample.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_format_description_0020.md">D3D12DDI_VIDEO_FORMAT_DESCRIPTION</a> structure.
 
-            The width of the sample.
+`Height`
+
+The height of the sample.
+
+`Width`
+
+The width of the sample.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_format_description_0020.md">D3D12DDI_VIDEO_FORMAT_DESCRIPTION</a>
-</dt>
-</dl>
+
  
 
  

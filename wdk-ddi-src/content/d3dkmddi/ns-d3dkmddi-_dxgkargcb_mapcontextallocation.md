@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F26E382F-D9F8-4452-983E-4523A77ADC35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARGCB_MAPCONTEXTALLOCATION, DXGKARGCB_MAPCONTEXTALLOCATION
+ms.keywords : display.dxgkargcb_mapcontextallocation, DXGKARGCB_MAPCONTEXTALLOCATION, _DXGKARGCB_MAPCONTEXTALLOCATION, d3dkmddi/DXGKARGCB_MAPCONTEXTALLOCATION, DXGKARGCB_MAPCONTEXTALLOCATION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARGCB_MAPCONTEXTALLOCATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARGCB_MAPCONTEXTALLOCATION
 ---
 
@@ -53,48 +57,48 @@ typedef struct _DXGKARGCB_MAPCONTEXTALLOCATION {
 
 ## Members
 
-        
-            `BaseAddress`
 
-            (optional) If non-NULL, the video memory manager will attempt to use this address as the base address for the mapping. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, the call will fail. When this parameter is non-NULL, <b>MinimumAddress</b> and <b>MaximumAddress</b> are ignored.
+`BaseAddress`
+
+(optional) If non-NULL, the video memory manager will attempt to use this address as the base address for the mapping. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, the call will fail. When this parameter is non-NULL, <b>MinimumAddress</b> and <b>MaximumAddress</b> are ignored.
 
 
 
 If NULL is specified, the video memory manager will pick the base address for the allocation within the specified <b>MinimumAddress</b> and <b>MaximumAddress</b>.
-        
-            `DriverProtection`
 
-            Specifies the driver protection parameters.
-        
-            `hAllocation`
+`DriverProtection`
 
-            Handle to the allocation being mapped into the GPU virtual address space. This is a DirectX graphics kernel  handle, returned by <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>.
-        
-            `MaximumAddress`
+Specifies the driver protection parameters.
 
-            Specifies the maximum GPU virtual address to consider for the mapped range. The video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to <b>NULL</b> the video memory manager will not apply any limit.
+`hAllocation`
 
+Handle to the allocation being mapped into the GPU virtual address space. This is a DirectX graphics kernel  handle, returned by <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>.
 
-This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.
-        
-            `MinimumAddress`
+`MaximumAddress`
 
-            (optional) Specifies the minimum GPU virtual address to consider for the mapped range. 
+Specifies the maximum GPU virtual address to consider for the mapped range. The video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to <b>NULL</b> the video memory manager will not apply any limit.
 
 
 This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.
-        
-            `OffsetInPages`
 
-            Specifies the offset, in 4KB pages, to the starting page within the specified allocation that must be mapped.
-        
-            `Protection`
+`MinimumAddress`
 
-            Specifies the protection on the GPU virtual address that is mapped.
-        
-            `SizeInPages`
+(optional) Specifies the minimum GPU virtual address to consider for the mapped range. 
 
-            Specifies the size of the range to map in number of 4KB pages.
+
+This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.
+
+`OffsetInPages`
+
+Specifies the offset, in 4KB pages, to the starting page within the specified allocation that must be mapped.
+
+`Protection`
+
+Specifies the protection on the GPU virtual address that is mapped.
+
+`SizeInPages`
+
+Specifies the size of the range to map in number of 4KB pages.
 
 
 ## Requirements
@@ -105,16 +109,12 @@ This parameter is ignored when <b>BaseAddress</b> != <b>NULL</b>.
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_mapcontextallocation.md">DxgkCbMapContextAllocation</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
+
  
 
  

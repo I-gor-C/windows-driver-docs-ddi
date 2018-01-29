@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f18b46c0-975b-49ba-b398-45f2a44d6d3b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDE_TASK_FILE, IDE_TASK_FILE, *PIDE_TASK_FILE
+ms.keywords : PIDE_TASK_FILE, irb/PIDE_TASK_FILE, IDE_TASK_FILE, irb/IDE_TASK_FILE, storage.ide_task_file, *PIDE_TASK_FILE, structs-ATA_0d96e047-8840-46cd-9df1-606ca70edb9e.xml, PIDE_TASK_FILE structure pointer [Storage Devices], _IDE_TASK_FILE, IDE_TASK_FILE structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDE_TASK_FILE
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_TASK_FILE, *PIDE_TASK_FILE
 ---
 
 # _IDE_TASK_FILE structure
 The IDE_TASK_FILE structure contains the current and previous IDE task file.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -47,14 +52,14 @@ typedef struct _IDE_TASK_FILE {
 
 ## Members
 
-        
-            `Current`
 
-            Contains a structure of type <a href="..\irb\ns-irb-_ideregisters.md">IDEREGISTERS</a> that holds the current contents of the ATA task file registers.
-        
-            `Previous`
+`Current`
 
-            Contains a structure of type <a href="..\irb\ns-irb-_ideregisters.md">IDEREGISTERS</a> that holds the previous contents of the ATA task file registers in the case of a 48-bit LBA command.
+Contains a structure of type <a href="..\irb\ns-irb-_ideregisters.md">IDEREGISTERS</a> that holds the current contents of the ATA task file registers.
+
+`Previous`
+
+Contains a structure of type <a href="..\irb\ns-irb-_ideregisters.md">IDEREGISTERS</a> that holds the previous contents of the ATA task file registers in the case of a 48-bit LBA command.
 
 
 ## Requirements
@@ -65,13 +70,10 @@ typedef struct _IDE_TASK_FILE {
 | **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\irb\ns-irb-_ideregisters.md">IDEREGISTERS</a>
-</dt>
-</dl>
+
  
 
  

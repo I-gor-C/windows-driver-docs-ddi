@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 99a34b06-3352-47a6-95bc-051a5dfdd82e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_VALUE_INFORMATION_CLASS, KEY_VALUE_INFORMATION_CLASS
+ms.keywords : wdm/KeyValuePartialInformationAlign64, _KEY_VALUE_INFORMATION_CLASS, sysenum_ee3730f5-18b6-45ff-bb9b-4ec2e71586fc.xml, KEY_VALUE_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/KEY_VALUE_INFORMATION_CLASS, wdm/KeyValueFullInformation, kernel.key_value_information_class, KeyValuePartialInformationAlign64, KeyValueFullInformation, KeyValueBasicInformation, wdm/KeyValuePartialInformation, KeyValuePartialInformation, wdm/KeyValueFullInformationAlign64, KEY_VALUE_INFORMATION_CLASS, wdm/MaxKeyValueInfoClass, MaxKeyValueInfoClass, KeyValueFullInformationAlign64, wdm/KeyValueBasicInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_VALUE_INFORMATION_CLASS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEY_VALUE_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
@@ -70,6 +74,11 @@ typedef enum _KEY_VALUE_INFORMATION_CLASS {
 </tr>
 
 <tr>
+<td>KeyValueLayerInformation</td>
+<td></td>
+</tr>
+
+<tr>
 <td>KeyValuePartialInformation</td>
 <td>The information is stored as a <a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a> structure.</td>
 </tr>
@@ -99,23 +108,16 @@ Use the <b>KEY_VALUE_INFORMATION_CLASS</b> values to specify the type of data to
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
+
  
 
  

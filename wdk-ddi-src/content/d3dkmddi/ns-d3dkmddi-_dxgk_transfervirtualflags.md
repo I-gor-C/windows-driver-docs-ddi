@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E5323A30-5BBE-4084-9F99-91FBDD680C12
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS
+ms.keywords : d3dkmddi/DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS, _DXGK_TRANSFERVIRTUALFLAGS, display.dxgk_transfervirtualflags, DXGK_TRANSFERVIRTUALFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_TRANSFERVIRTUALFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_TRANSFERVIRTUALFLAGS
 ---
 

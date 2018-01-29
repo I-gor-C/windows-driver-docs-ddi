@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 697fbf86-5c99-4e35-bcb4-a6f5272cc987
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _AV_61883_REQUEST, *PAV_61883_REQUEST, AV_61883_REQUEST
+ms.keywords : 61883/PAV_61883_REQUEST, _AV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], IEEE.av_61883_request, 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, 61883/AV_61883_REQUEST, AV_61883_REQUEST structure [Buses], *PAV_61883_REQUEST, AV_61883_REQUEST, PAV_61883_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AV_61883_REQUEST
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PAV_61883_REQUEST, AV_61883_REQUEST"
 ---
 
@@ -74,21 +78,21 @@ typedef struct _AV_61883_REQUEST {
 
 ## Members
 
-        
-            `Flags`
 
-            Flags specific to the request. For details, see the reference page for the request. Drivers must set this member to zero for requests that do not use flags.
-        
-            `Function`
+`Flags`
 
-            Determines the type of request. Each request type is documented under the value of <b>Function</b> in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537195">IEC-61883 Protocol I/O Requests</a>.
-        
-            `Version`
+Flags specific to the request. For details, see the reference page for the request. Drivers must set this member to zero for requests that do not use flags.
 
-            The device driver interface (DDI) version for the request. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537219">INIT_61883_HEADER</a> macro initializes <b>Version</b> to CURRENT_61883_DDI_VERSION.
+`Function`
 
-    ## Remarks
-        The <b>Parameters-&gt;</b><b>Others.Arguments1</b> member of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537234">IOCTL_61883_CLASS</a> IRP points to an AV_61883_REQUEST structure. The IEC-61883 protocol driver uses the request structure to determine the type of request made by the client driver, and also to return the results of the operation. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537195">IEC-61883 Protocol I/O Requests</a> for a description of the behavior of each request.
+Determines the type of request. Each request type is documented under the value of <b>Function</b> in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537195">IEC-61883 Protocol I/O Requests</a>.
+
+`Version`
+
+The device driver interface (DDI) version for the request. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537219">INIT_61883_HEADER</a> macro initializes <b>Version</b> to CURRENT_61883_DDI_VERSION.
+
+## Remarks
+The <b>Parameters-&gt;</b><b>Others.Arguments1</b> member of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537234">IOCTL_61883_CLASS</a> IRP points to an AV_61883_REQUEST structure. The IEC-61883 protocol driver uses the request structure to determine the type of request made by the client driver, and also to return the results of the operation. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537195">IEC-61883 Protocol I/O Requests</a> for a description of the behavior of each request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,16 +102,12 @@ typedef struct _AV_61883_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537219">INIT_61883_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537234">IOCTL_61883_CLASS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537219">INIT_61883_HEADER</a>
+
  
 
  

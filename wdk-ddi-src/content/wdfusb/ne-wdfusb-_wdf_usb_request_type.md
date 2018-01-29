@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4d10cefb-1039-4c48-b9f7-c4a530a6514b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
+ms.keywords : WDF_USB_REQUEST_TYPE enumeration, wdfusb/WdfUsbRequestTypePipeUrb, PWDF_USB_REQUEST_TYPE, WdfUsbRequestTypePipeAbort, wdfusb/WdfUsbRequestTypeDeviceUrb, wdfusb/WdfUsbRequestTypeInvalid, WdfUsbRequestTypeNoFormat, kmdf.wdf_usb_request_type, WdfUsbRequestTypePipeUrb, wdfusb/WdfUsbRequestTypeDeviceControlTransfer, wdfusb/WdfUsbRequestTypePipeWrite, WdfUsbRequestTypePipeRead, wdfusb/WdfUsbRequestTypeDeviceString, wdfusb/WdfUsbRequestTypeNoFormat, wdf.wdf_usb_request_type, PWDF_USB_REQUEST_TYPE enumeration pointer, WdfUsbRequestTypeDeviceControlTransfer, WDF_USB_REQUEST_TYPE, _WDF_USB_REQUEST_TYPE, wdfusb/WdfUsbRequestTypePipeRead, wdfusb/WdfUsbRequestTypePipeAbort, DFUsbRef_b3c4cd6e-66ac-40b3-b78b-c550f14c3e94.xml, wdfusb/WdfUsbRequestTypePipeReset, WdfUsbRequestTypePipeReset, *PWDF_USB_REQUEST_TYPE, wdfusb/WDF_USB_REQUEST_TYPE, WdfUsbRequestTypeDeviceString, wdfusb/PWDF_USB_REQUEST_TYPE, WdfUsbRequestTypeDeviceUrb, WdfUsbRequestTypeInvalid, WdfUsbRequestTypePipeWrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_REQUEST_TYPE
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL  (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -62,17 +66,17 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 
 <tr>
 <td>WdfUsbRequestTypeDeviceControlTransfer</td>
-<td>A request to <a href="wdf.working_with_usb_devices#sending_a_control_transfer#sending_a_control_transfer">send a control transfer</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">send a control transfer</a>.</td>
 </tr>
 
 <tr>
 <td>WdfUsbRequestTypeDeviceString</td>
-<td>A request to <a href="wdf.working_with_usb_devices#obtaining_a_device_s_unicode_strings#obtaining_a_device_s_unicode_strings">obtain a device's Unicode strings</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">obtain a device's Unicode strings</a>.</td>
 </tr>
 
 <tr>
 <td>WdfUsbRequestTypeDeviceUrb</td>
-<td>A request to <a href="wdf.working_with_usb_devices#sending_a_urb_to_a_device#sending_a_urb_to_a_device">send a URB to a device</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">send a URB to a device</a>.</td>
 </tr>
 
 <tr>
@@ -87,27 +91,27 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 
 <tr>
 <td>WdfUsbRequestTypePipeAbort</td>
-<td>A request to <a href="wdf.working_with_usb_pipes#stopping_and_resetting_a_pipe#stopping_and_resetting_a_pipe">stop a pipe</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">stop a pipe</a>.</td>
 </tr>
 
 <tr>
 <td>WdfUsbRequestTypePipeRead</td>
-<td>A request to <a href="wdf.working_with_usb_pipes#reading_from_a_pipe#reading_from_a_pipe">read from a pipe</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">read from a pipe</a>.</td>
 </tr>
 
 <tr>
 <td>WdfUsbRequestTypePipeReset</td>
-<td>A request to <a href="wdf.working_with_usb_pipes#stopping_and_resetting_a_pipe#stopping_and_resetting_a_pipe">reset a pipe</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">reset a pipe</a>.</td>
 </tr>
 
 <tr>
 <td>WdfUsbRequestTypePipeUrb</td>
-<td>A request to <a href="wdf.working_with_usb_pipes#sending_a_urb_to_a_pipe#sending_a_urb_to_a_pipe">send a URB to a pipe</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">send a URB to a pipe</a>.</td>
 </tr>
 
 <tr>
 <td>WdfUsbRequestTypePipeWrite</td>
-<td>A request to <a href="wdf.working_with_usb_pipes#writing_to_a_pipe#writing_to_a_pipe">write to a pipe</a>.</td>
+<td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">write to a pipe</a>.</td>
 </tr>
 </table>
 
@@ -125,11 +129,8 @@ The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a>
-</dt>
-</dl>
+
  
 
  

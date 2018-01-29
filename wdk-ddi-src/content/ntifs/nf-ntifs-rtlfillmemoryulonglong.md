@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b5604cdb-084e-431a-b413-020e8213a18f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFillMemoryUlonglong
+ms.keywords : ifsk.rtlfillmemoryulonglong, ntifs/RtlFillMemoryUlonglong, RtlFillMemoryUlonglong routine [Installable File System Drivers], RtlFillMemoryUlonglong, rtlref_5e06d1be-accd-40f6-a5b1-2a3b39caacce.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : For AMD64 systems, this routine is available on Micr
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlFillMemoryUlonglong
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -89,17 +93,12 @@ For AMD64 systems, this routine is a macro.  For non-AMD64 systems, this routine
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlfillmemoryulong.md">RtlFillMemoryUlong</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlfillmemoryulong.md">RtlFillMemoryUlong</a>
+
+<a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
+
  
 
  

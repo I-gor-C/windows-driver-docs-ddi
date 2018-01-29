@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0f89b57a-3374-4f40-88b5-43d233ba0e47
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxInitializeDeviceInit
+ms.keywords : buses.evt_ucx_controller_usbdevice_add, EvtUcxControllerUsbDeviceAdd callback function [Buses], EvtUcxControllerUsbDeviceAdd, EVT_UCX_CONTROLLER_USBDEVICE_ADD, EVT_UCX_CONTROLLER_USBDEVICE_ADD, ucxcontroller/EvtUcxControllerUsbDeviceAdd, PEVT_UCX_CONTROLLER_USBDEVICE_ADD callback function pointer [Buses], PEVT_UCX_CONTROLLER_USBDEVICE_ADD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_CONTROLLER_USBDEVICE_ADD
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
@@ -96,11 +100,8 @@ This callback function creates a new USB device object and registers the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
-</dt>
-</dl>
+
  
 
  

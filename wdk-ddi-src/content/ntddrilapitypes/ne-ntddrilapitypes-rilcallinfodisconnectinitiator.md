@@ -7,8 +7,8 @@ old-location : netvista\rilcallinfodisconnectinitiator.htm
 old-project : netvista
 ms.assetid : df3c3cb9-583c-4a6e-9477-843067865418
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLINFODISCONNECTINITIATOR, RILCALLINFODISCONNECTINITIATOR
+ms.date : 1/18/2018
+ms.keywords : RILCALLINFODISCONNECTINITIATOR, RIL_DISCINIT_LOCAL, RIL_DISCINIT_MAX, RILCALLINFODISCONNECTINITIATOR enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCALLINFODISCONNECTINITIATOR, ntddrilapitypes/RIL_DISCINIT_MAX, netvista.rilcallinfodisconnectinitiator, RIL_DISCINIT_REMOTE, ntddrilapitypes/RIL_DISCINIT_REMOTE, ntddrilapitypes/RIL_DISCINIT_LOCAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLINFODISCONNECTINITIATOR
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLINFODISCONNECTINITIATOR
 ---
 
@@ -62,6 +66,11 @@ typedef enum _RILCALLINFODISCONNECTINITIATOR {
 
 <tr>
 <td>RIL_DISCINIT_REMOTE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DISCINIT_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

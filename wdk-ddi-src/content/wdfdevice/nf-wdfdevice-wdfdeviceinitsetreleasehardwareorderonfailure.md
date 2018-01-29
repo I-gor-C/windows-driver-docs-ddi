@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5DC3C7C8-E7D1-4874-AF8D-8E6FD48DF046
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetReleaseHardwareOrderOnFailure
+ms.keywords : wdfdevice/WdfDeviceInitSetReleaseHardwareOrderOnFailure, kmdf.wdfdeviceinitsetreleasehardwareorderonfailure, PFN_WDFDEVICEINITSETRELEASEHARDWAREORDERONFAILURE, WdfDeviceInitSetReleaseHardwareOrderOnFailure method, wdf.wdfdeviceinitsetreleasehardwareorderonfailure, WdfDeviceInitSetReleaseHardwareOrderOnFailure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceInitSetReleaseHardwareOrderOnFailure
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,8 +82,6 @@ To override this default behavior, a driver can call <b>WdfDeviceInitSetReleaseH
 
 If a driver calls <b>WdfDeviceInitSetReleaseHardwareOrderOnFailure</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
 
-The following code example shows how a bus driver can request that the framework wait to call its <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> callback function until all of its child devices have been removed.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,17 +96,12 @@ The following code example shows how a bus driver can request that the framework
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_release_hardware_order_on_failure.md">WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
+
  
 
  

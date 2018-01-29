@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 713cd675-56a8-42d8-ac75-4af227c55dec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_OUT_MONITORCREATE,
+ms.keywords : display.idarg_out_monitorcreate, IDARG_OUT_MONITORCREATE structure [Display Devices], IDARG_OUT_MONITORCREATE, iddcx/IDARG_OUT_MONITORCREATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_OUT_MONITORCREATE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -46,10 +50,10 @@ typedef struct IDARG_OUT_MONITORCREATE {
 
 ## Members
 
-        
-            `MonitorObject`
 
-            [out] Handle the driver can use to identify this monitor when calling OS functions.
+`MonitorObject`
+
+[out] Handle the driver can use to identify this monitor when calling OS functions.
 
 
 ## Requirements

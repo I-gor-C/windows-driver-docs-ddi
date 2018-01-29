@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1c874df6-6b47-4501-9eaf-7c07f0172580
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_STREAM_STATE_ROTATION_DATA, DXVAHDDDI_STREAM_STATE_ROTATION_DATA
+ms.keywords : DXVAHDDDI_STREAM_STATE_ROTATION_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_ROTATION_DATA, DXVAHDDDI_STREAM_STATE_ROTATION_DATA, display.dxvahdddi_stream_state_rotation_data, d3dumddi/DXVAHDDDI_STREAM_STATE_ROTATION_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_STREAM_STATE_ROTATION_DATA
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_STREAM_STATE_ROTATION_DATA
 ---
 
@@ -47,14 +51,14 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ROTATION_DATA {
 
 ## Members
 
-        
-            `Enable`
 
-            A Boolean value that specifies whether the driver should rotate the output surface. The default value is <b>FALSE</b>, which indicates that rotation is disabled.
-        
-            `Rotation`
+`Enable`
 
-            The clockwise degrees of rotation as specified by a <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_rotation.md">DXVAHDDDI_ROTATION</a> enumeration value.
+A Boolean value that specifies whether the driver should rotate the output surface. The default value is <b>FALSE</b>, which indicates that rotation is disabled.
+
+`Rotation`
+
+The clockwise degrees of rotation as specified by a <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_rotation.md">DXVAHDDDI_ROTATION</a> enumeration value.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ROTATION_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_rotation.md">DXVAHDDDI_ROTATION</a>
-</dt>
-</dl>
+
  
 
  

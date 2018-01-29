@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : ec1c2267-b92c-4d4c-86fa-f2b3ccb6aa40
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+ms.keywords : hid.ioctl_internal_keyboard_disconnect, IOCTL_INTERNAL_KEYBOARD_DISCONNECT control code [Human Input Devices], IOCTL_INTERNAL_KEYBOARD_DISCONNECT, kbdmou/IOCTL_INTERNAL_KEYBOARD_DISCONNECT, kfilref_fd52cb0d-fbdd-44fb-9c71-ec829387a88b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_KEYBOARD_DISCONNECT
-req.alt-loc : kbdmou.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
 # IOCTL_INTERNAL_KEYBOARD_DISCONNECT IOCTL
-The IOCTL_INTERNAL_KEYBOARD_DISCONNECT request is completed with a status of STATUS_NOT_IMPLEMENTED. Note that a Plug and Play keyboard can be added or removed by the Plug and Play manager.
-
-
-
 The IOCTL_INTERNAL_KEYBOARD_DISCONNECT request is completed with a status of STATUS_NOT_IMPLEMENTED. Note that a Plug and Play keyboard can be added or removed by the Plug and Play manager.
 
 ### Major Code
@@ -63,7 +63,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Status</b> member is set to STATUS_NOT_IMPLEMENTED.
 
 
@@ -74,13 +73,10 @@ The <b>Status</b> member is set to STATUS_NOT_IMPLEMENTED.
 | **Header** | kbdmou.h (include Kbdmou.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\kbdmou\ni-kbdmou-ioctl_internal_keyboard_connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a>
-</dt>
-</dl>
+
  
 
  

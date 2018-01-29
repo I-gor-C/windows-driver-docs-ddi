@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 627f43e7-1561-4822-b2b6-a49b54550bf5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortReleaseBuffer
+ms.keywords : video/VideoPortReleaseBuffer, VideoPortReleaseBuffer, VideoPortReleaseBuffer function [Display Devices], display.videoportreleasebuffer, VideoPort_Functions_908af223-2ee5-4e86-b5ab-47f7f3cc459b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortReleaseBuffer
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ This function releases memory allocated by <a href="..\video\nf-video-videoporta
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportallocatebuffer.md">VideoPortAllocateBuffer</a>
-</dt>
-</dl>
+
  
 
  

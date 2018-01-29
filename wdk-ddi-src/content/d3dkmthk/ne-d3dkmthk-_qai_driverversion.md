@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 12ac73ed-f829-4f22-bca9-ccc1dc29f4c4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _QAI_DRIVERVERSION, D3DKMT_DRIVERVERSION
+ms.keywords : D3DKMT_DRIVERVERSION, KMT_DRIVERVERSION_WDDM_1_1, _QAI_DRIVERVERSION, KMT_DRIVERVERSION_WDDM_2_0, d3dkmthk/, KMT_DRIVERVERSION_WDDM_1_3, display.d3dkmt_driverversion, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_3, D3DKMT_DRIVERVERSION enumeration [Display Devices], KMT_DRIVERVERSION_WDDM_1_0, _QAI_DRIVERVERSION enumeration [Display Devices], OpenGL_Structs_2f7fe9d6-ec67-46b1-9c05-51d06d186fe1.xml, d3dkmthk/_QAI_DRIVERVERSION, KMT_DRIVERVERSION_WDDM_1_2, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_2, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_0, d3dkmthk/KMT_DRIVERVERSION_WDDM_2_0, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1, KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_DRIVERVERSION is supported beginning with the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DRIVERVERSION
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -95,6 +99,21 @@ Supported starting with Windows 8.1.</td>
 
 Supported starting with Windows 10.</td>
 </tr>
+
+<tr>
+<td>KMT_DRIVERVERSION_WDDM_2_1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>KMT_DRIVERVERSION_WDDM_2_2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>KMT_DRIVERVERSION_WDDM_2_3</td>
+<td></td>
+</tr>
 </table>
 
 ## Remarks
@@ -111,14 +130,10 @@ The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilmsgoutsubmitvpformat.htm
 old-project : netvista
 ms.assetid : c0a2646c-aa0a-4946-999f-a78d1c488752
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGOUTSUBMITVPFORMAT, RILMSGOUTSUBMITVPFORMAT
+ms.date : 1/18/2018
+ms.keywords : netvista.rilmsgoutsubmitvpformat, ntddrilapitypes/RIL_MSGVP_RELATIVE, RIL_MSGVP_ENHANCED, ntddrilapitypes/RIL_MSGVP_ABSOLUTE, RIL_MSGVP_RELATIVE, RIL_MSGVP_ABSOLUTE, RILMSGOUTSUBMITVPFORMAT, ntddrilapitypes/RIL_MSGVP_MAX, ntddrilapitypes/RIL_MSGVP_ENHANCED, RIL_MSGVP_MAX, ntddrilapitypes/RILMSGOUTSUBMITVPFORMAT, RILMSGOUTSUBMITVPFORMAT enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGOUTSUBMITVPFORMAT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGOUTSUBMITVPFORMAT
 ---
 
@@ -63,6 +67,11 @@ typedef enum _RILMSGOUTSUBMITVPFORMAT {
 
 <tr>
 <td>RIL_MSGVP_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGVP_NONE</td>
 <td></td>
 </tr>
 

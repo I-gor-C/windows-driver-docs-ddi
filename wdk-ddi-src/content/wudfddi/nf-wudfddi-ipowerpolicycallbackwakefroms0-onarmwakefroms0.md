@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4801a7c4-8bd4-4372-bcdd-49e5570d833e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPowerPolicyCallbackWakeFromS0, IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, OnArmWakeFromS0
+ms.keywords : IPowerPolicyCallbackWakeFromS0, OnArmWakeFromS0, wdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, UMDFDeviceObjectRef_7b2a2ca8-d8d4-4da2-ae51-15aabf150973.xml, IPowerPolicyCallbackWakeFromS0 interface, OnArmWakeFromS0 method, umdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, wudfddi/IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, OnArmWakeFromS0 method, IPowerPolicyCallbackWakeFromS0 interface, OnArmWakeFromS0 method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IPowerPolicyCallbackWakeFromS0.OnArmWakeFromS0
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -71,26 +75,38 @@ The <b>OnArmWakeFromS0</b> callback function handles device-specific operations 
 If the driver has registered an <b>OnArmWakeFromS0</b> callback function, the framework calls it while the device is still in the D0 device power state, before the bus driver lowers the device's power state but after the framework has sent a <a href="https://msdn.microsoft.com/ed582644-af51-4841-be59-6a3deb6d9de5">wait/wake IRP</a> on behalf of the driver. 
 
 The process occurs in the following sequence:
-
+<ol>
+<li>
 The framework determines that the device has been idle for a preset amount of time.
 
+</li>
+<li>
 The framework calls the driver's <b>OnArmWakeFromS0</b> callback function.
 
+</li>
+<li>
 The framework requests the driver for the device's bus to lower the device's power.
 
-Immediately before your device enters a low power state, the framework will call your driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a> callback function.
+</li>
+</ol>Immediately before your device enters a low power state, the framework will call your driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a> callback function.
 
 For more information about when the framework calls this callback function, see <a href="https://msdn.microsoft.com/ca36eee5-482c-4cfe-a515-be9d3743e241">PnP and Power Management Scenarios in UMDF</a>.
 
 You do not need to provide an <b>OnArmWakeFromS0</b> callback function if your device:
-
+<ul>
+<li>
 Is a USB device that supports "selective suspend."
 
+</li>
+<li>
 Cannot be powered down while the system remains fully powered.
 
+</li>
+<li>
 Does not require special hardware operations that enable the device to trigger a wake signal.
 
-If your device supports USB "selective suspend" and if your driver specifies <b>IdleUsbSelectiveSuspend</b> when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>, the framework sends a "selective suspend" request to the USB bus driver when the device has been idle for a preset amount of time.
+</li>
+</ul>If your device supports USB "selective suspend" and if your driver specifies <b>IdleUsbSelectiveSuspend</b> when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>, the framework sends a "selective suspend" request to the USB bus driver when the device has been idle for a preset amount of time.
 
 For more information about this callback function, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-idle-power-down-in-umdf-drivers">Supporting Idle Power-Down in UMDF-based Drivers</a>.
 
@@ -108,17 +124,12 @@ For more information about this callback function, see <a href="https://docs.mic
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-ipowerpolicycallbackwakefroms0.md">IPowerPolicyCallbackWakeFromS0</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556819">IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556822">IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-ipowerpolicycallbackwakefroms0.md">IPowerPolicyCallbackWakeFromS0</a>
+
  
 
  

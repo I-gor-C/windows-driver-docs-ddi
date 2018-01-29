@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1ea51976-c786-4ca3-aaa3-a44fa8697efa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_COMMON_DESCRIPTOR, USB_COMMON_DESCRIPTOR, *PUSB_COMMON_DESCRIPTOR
+ms.keywords : usbstrct_be74945b-60a4-44cc-9c7b-e1eb5cc25525.xml, usbspec/USB_COMMON_DESCRIPTOR, PUSB_COMMON_DESCRIPTOR structure pointer [Buses], usbspec/PUSB_COMMON_DESCRIPTOR, USB_COMMON_DESCRIPTOR structure [Buses], PUSB_COMMON_DESCRIPTOR, *PUSB_COMMON_DESCRIPTOR, buses.usb_common_descriptor, USB_COMMON_DESCRIPTOR, _USB_COMMON_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_COMMON_DESCRIPTOR
-req.alt-loc : usbspec.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USB_COMMON_DESCRIPTOR, *PUSB_COMMON_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_COMMON_DESCRIPTOR, USB_COMMON_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _USB_COMMON_DESCRIPTOR {
 
 ## Members
 
-        
-            `bDescriptorType`
 
-            Specifies the descriptor type code, as assigned by USB, for this descriptor.
-        
-            `bLength`
+`bDescriptorType`
 
-            Specifies the entire length of the descriptor, not of this structure.
+Specifies the descriptor type code, as assigned by USB, for this descriptor.
+
+`bLength`
+
+Specifies the entire length of the descriptor, not of this structure.
 
 
 ## Requirements
@@ -66,16 +70,12 @@ typedef struct _USB_COMMON_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usb100.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usbdlib\nf-usbdlib-usbd_parsedescriptors.md">USBD_ParseDescriptors</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usbdlib\nf-usbdlib-usbd_parsedescriptors.md">USBD_ParseDescriptors</a>
+
  
 
  

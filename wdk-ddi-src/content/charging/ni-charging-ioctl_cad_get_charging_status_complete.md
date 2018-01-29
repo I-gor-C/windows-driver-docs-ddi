@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 715F1DF3-C3CF-4662-8095-22ECA0E45796
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _POWERSOURCEID, POWERSOURCEID, *PPOWERSOURCEID
+ms.keywords : battery.ioctl_cad_get_charging_status_complete, IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE control code [Battery Devices], IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE, charging/IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE
-req.alt-loc : charging.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : POWERSOURCEID, *PPOWERSOURCEID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPOWERSOURCEID, POWERSOURCEID"
 ---
 
 # IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE IOCTL

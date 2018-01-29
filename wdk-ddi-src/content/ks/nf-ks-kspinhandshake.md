@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 31855688-9221-4128-89c5-dbc4f3e6f794
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinHandshake
+ms.keywords : KsPinHandshake, stream.kspinhandshake, avfunc_a7b6afa8-acb0-4847-9e86-136100c4dd48.xml, KsPinHandshake function [Streaming Media Devices], ks/KsPinHandshake
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinHandshake
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -87,17 +91,12 @@ Connections between AVStream pins are performed using this type of handshake.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
-</dt>
-<dt>
-<a href="..\ks\ni-ks-ioctl_ks_handshake.md">IOCTL_KS_HANDSHAKE</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
+
+<a href="..\ks\ni-ks-ioctl_ks_handshake.md">IOCTL_KS_HANDSHAKE</a>
+
  
 
  

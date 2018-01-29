@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a501a693-bea1-43eb-af8c-5512c8ee9d50
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENT_ITEM, KSEVENT_ITEM, *PKSEVENT_ITEM
+ms.keywords : "*PKSEVENT_ITEM, KSEVENT_ITEM, PKSEVENT_ITEM structure pointer [Streaming Media Devices], ks/PKSEVENT_ITEM, PKSEVENT_ITEM, ks-struct_1e126443-3eef-4e67-9969-69c3a4aaa17c.xml, ks/KSEVENT_ITEM, stream.ksevent_item, KSEVENT_ITEM structure [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSEVENT_ITEM
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSEVENT_ITEM, *PKSEVENT_ITEM
 ---
 
@@ -51,33 +55,33 @@ typedef struct {
 
 ## Members
 
-        
-            `AddHandler`
 
-            Pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksaddevent.md">AVStrMiniAddEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.
-        
-            `DataInput`
+`AddHandler`
 
-            Specifies the size in bytes of event data. The event data begins with a <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that describes how the client should be notified when the event occurs, optionally followed by any additional parameters that specify when the event occurs. Must be at least <b>sizeof</b>(KSEVENTDATA).
-        
-            `EventId`
+Pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksaddevent.md">AVStrMiniAddEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.
 
-            Specifies the unique ID of the event within the event set.
-        
-            `ExtraEntryData`
+`DataInput`
 
-            Specifies the size in bytes of any additional memory that the system should allocate for each enable request for this event. The driver uses this memory to store any data it needs to keep track of the event request. The memory is allocated directly after the event enable request's <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure.
-        
-            `RemoveHandler`
+Specifies the size in bytes of event data. The event data begins with a <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that describes how the client should be notified when the event occurs, optionally followed by any additional parameters that specify when the event occurs. Must be at least <b>sizeof</b>(KSEVENTDATA).
 
-            Pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksremoveevent.md">AVStrMiniRemoveEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.
-        
-            `SupportHandler`
+`EventId`
 
-            Not used by the stream class driver.
+Specifies the unique ID of the event within the event set.
 
-    ## Remarks
-        <i>A minidriver that specifies the </i><b>AddHandler</b><i> and </i><b>RemoveHandler</b><i> members and does not properly clean the events up can cause a resource (memory/handle) leak.</i>
+`ExtraEntryData`
+
+Specifies the size in bytes of any additional memory that the system should allocate for each enable request for this event. The driver uses this memory to store any data it needs to keep track of the event request. The memory is allocated directly after the event enable request's <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure.
+
+`RemoveHandler`
+
+Pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksremoveevent.md">AVStrMiniRemoveEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.
+
+`SupportHandler`
+
+Not used by the stream class driver.
+
+## Remarks
+<i>A minidriver that specifies the </i><b>AddHandler</b><i> and </i><b>RemoveHandler</b><i> members and does not properly clean the events up can cause a resource (memory/handle) leak.</i>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,22 +91,16 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
-</dt>
-<dt>
+
 <a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
+<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
+
  
 
  

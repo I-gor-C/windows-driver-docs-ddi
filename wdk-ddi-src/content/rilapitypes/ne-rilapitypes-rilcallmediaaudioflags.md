@@ -7,8 +7,8 @@ old-location : netvista\rilcallmediaaudioflags_2.htm
 old-project : netvista
 ms.assetid : da09298f-88be-44ef-8072-d11cf91401c7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMEDIAAUDIOFLAGS, RILCALLMEDIAAUDIOFLAGS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_CALLMEDIAAUDIOFLAG_ALL, RIL_CALLMEDIAAUDIOFLAG_ALL, RILCALLMEDIAAUDIOFLAGS, RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE, rilapitypes/RILCALLMEDIAAUDIOFLAGS, netvista.rilcallmediaaudioflags_2, rilapitypes/RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE, RILCALLMEDIAAUDIOFLAGS enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMEDIAAUDIOFLAGS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLMEDIAAUDIOFLAGS
 req.product : Windows 10 or later.
 ---
@@ -52,6 +56,11 @@ typedef enum _RILCALLMEDIAAUDIOFLAGS {
 
 <tr>
 <td>RIL_CALLMEDIAAUDIOFLAG_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAAUDIOFLAG_NONE</td>
 <td></td>
 </tr>
 

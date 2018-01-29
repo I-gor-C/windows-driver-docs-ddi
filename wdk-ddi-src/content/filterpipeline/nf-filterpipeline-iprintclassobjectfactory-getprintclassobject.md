@@ -7,8 +7,8 @@ old-location : print\iprintclassobjectfactory_getprintclassobject.htm
 old-project : print
 ms.assetid : 96ba0c27-d512-4bca-9053-a753434e461d
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPrintClassObjectFactory, IPrintClassObjectFactory::GetPrintClassObject, GetPrintClassObject
+ms.date : 1/18/2018
+ms.keywords : GetPrintClassObject, IPrintClassObjectFactory, GetPrintClassObject method [Print Devices], IPrintClassObjectFactory interface, filterpipeline_18eaede9-1064-4387-a30b-2fc2e245e0ca.xml, print.iprintclassobjectfactory_getprintclassobject, filterpipeline/IPrintClassObjectFactory::GetPrintClassObject, IPrintClassObjectFactory::GetPrintClassObject, GetPrintClassObject method [Print Devices], IPrintClassObjectFactory interface [Print Devices], GetPrintClassObject method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPrintClassObjectFactory.GetPrintClassObject
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

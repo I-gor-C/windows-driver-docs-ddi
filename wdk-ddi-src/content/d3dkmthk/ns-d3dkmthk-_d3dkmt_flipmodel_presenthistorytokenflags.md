@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 61901e06-fefd-4481-9f19-60ead55bbe36
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS, D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS
+ms.keywords : d3dkmthk/D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS, display.d3dkmt_flipmodel_presenthistorytokenflags, D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS structure [Display Devices], D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS, _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS, OpenGL_Structs_1ffd61bb-ba0b-4ee5-95af-d8c7e38c0b15.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS
 ---
 
@@ -74,13 +78,10 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
-</dt>
-</dl>
+
  
 
  

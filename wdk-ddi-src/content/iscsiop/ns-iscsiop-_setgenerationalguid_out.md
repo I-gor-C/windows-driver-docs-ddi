@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7b697241-6411-4fb0-b633-502233f2d155
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SetGenerationalGuid_OUT, *PSetGenerationalGuid_OUT, SetGenerationalGuid_OUT
+ms.keywords : storage.setgenerationalguid_out, SetGenerationalGuid_OUT, _SetGenerationalGuid_OUT, PSetGenerationalGuid_OUT, *PSetGenerationalGuid_OUT, SetGenerationalGuid_OUT structure [Storage Devices], PSetGenerationalGuid_OUT structure pointer [Storage Devices], iscsiop/SetGenerationalGuid_OUT, iscsiop/PSetGenerationalGuid_OUT, structs-iSCSI_80d71c4a-f542-4b19-9bbe-b1e8e7cc21cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetGenerationalGuid_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSetGenerationalGuid_OUT, SetGenerationalGuid_OUT"
 ---
 
@@ -46,13 +50,13 @@ typedef struct _SetGenerationalGuid_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            On output, the status of the <b>SetGenerationalGuid</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`Status`
 
-    ## Remarks
-        You must implement this method.
+On output, the status of the <b>SetGenerationalGuid</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,19 +66,14 @@ typedef struct _SetGenerationalGuid_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a>
-</dt>
-<dt>
 <a href="..\iscsiop\ns-iscsiop-_setgenerationalguid_in.md">SetGenerationalGuid_IN</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E7E80C4E-C002-4F00-AF7E-6B8DDA337323
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_SPEC_VERSION, *PSTORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION
+ms.keywords : ntddstor/PSTORAGE_SPEC_VERSION, _STORAGE_SPEC_VERSION, PSTORAGE_SPEC_VERSION union pointer [Storage Devices], STORAGE_SPEC_VERSION union [Storage Devices], ntddstor/STORAGE_SPEC_VERSION, storage.storage_spec_version, PSTORAGE_SPEC_VERSION, *PSTORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_SPEC_VERSION
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION"
 ---
 
@@ -56,17 +60,17 @@ typedef union _STORAGE_SPEC_VERSION {
 
 ## Members
 
-        
-            `AsUlong`
 
-            The combination of the <b>MajorVersion</b> and <b>MinorVersion</b> versions of the storage specification.
-        
-            `DUMMYSTRUCTNAME`
+`AsUlong`
 
-            The major and minor version of the storage specification.
+The combination of the <b>MajorVersion</b> and <b>MinorVersion</b> versions of the storage specification.
 
-    ## Remarks
-        This union allows for specifying the storage specification version, such as SBC 3, SATA 3.2, and NVMe 1.2.</p>
+`DUMMYSTRUCTNAME`
+
+The major and minor version of the storage specification.
+
+## Remarks
+This union allows for specifying the storage specification version, such as SBC 3, SATA 3.2, and NVMe 1.2.
 
 ## Requirements
 | &nbsp; | &nbsp; |

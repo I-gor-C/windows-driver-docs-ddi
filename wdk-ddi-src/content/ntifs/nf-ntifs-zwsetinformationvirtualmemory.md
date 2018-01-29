@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1D53D6C6-7546-439F-818C-85E65901B5DC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwSetInformationVirtualMemory
+ms.keywords : ZwSetInformationVirtualMemory, kernel.zwsetinformationvirtualmemory, ZwSetInformationVirtualMemory routine [Kernel-Mode Driver Architecture], ntifs/ZwSetInformationVirtualMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1511.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwSetInformationVirtualMemory
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -104,7 +108,6 @@ Drivers call this routine  purely for performance optimization: prefetching is n
 
 
 Because this call is  not necessary for correct operation of the driver, it is treated as a strong hint by the system and is subject to usual physical memory constraints where it can completely or partially fail under low-memory conditions. It can also create memory pressure if called with large address ranges, so applications should only prefetch address ranges they will actually use.
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

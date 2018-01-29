@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2f32e44a-e4a6-4745-9749-fc611119cc0e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemovePort_IN, RemovePort_IN, *PRemovePort_IN
+ms.keywords : storage.removeport_in, *PRemovePort_IN, hbapiwmi/PRemovePort_IN, PRemovePort_IN structure pointer [Storage Devices], structs-Fibre_f60e236f-5ed1-4cc2-b685-6ee40895736e.xml, _RemovePort_IN, RemovePort_IN structure [Storage Devices], hbapiwmi/RemovePort_IN, RemovePort_IN, PRemovePort_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RemovePort_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RemovePort_IN, *PRemovePort_IN
 ---
 
@@ -46,13 +50,13 @@ typedef struct _RemovePort_IN {
 
 ## Members
 
-        
-            `PortWWN`
 
-            Contains a worldwide name that indicates the port that should be removed from the list of ports whose events are reported to the WMI client..
+`PortWWN`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the RemovePort_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.
+Contains a worldwide name that indicates the port that should be removed from the list of ports whose events are reported to the WMI client..
+
+## Remarks
+The WMI tool suite generates a declaration of the RemovePort_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,13 +66,10 @@ typedef struct _RemovePort_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564011">RemovePort</a>
-</dt>
-</dl>
+
  
 
  

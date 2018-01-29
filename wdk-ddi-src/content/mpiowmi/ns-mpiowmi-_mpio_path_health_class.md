@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 13be9014-e1ce-4b08-a264-c2828e8632ae
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MPIO_PATH_HEALTH_CLASS, *PMPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS
+ms.keywords : _MPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS structure [Storage Devices], storage.mpio_path_health_class, mpiowmi/PMPIO_PATH_HEALTH_CLASS, mpiowmi/MPIO_PATH_HEALTH_CLASS, PMPIO_PATH_HEALTH_CLASS structure pointer [Storage Devices], *PMPIO_PATH_HEALTH_CLASS, structs-scsibus_ffbf044f-24cd-4e04-8a26-bfa5f2542189.xml, PMPIO_PATH_HEALTH_CLASS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MPIO_PATH_HEALTH_CLASS
-req.alt-loc : mpiowmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS"
 ---
 
@@ -61,70 +65,70 @@ typedef struct _MPIO_PATH_HEALTH_CLASS {
 
 ## Members
 
-        
-            `CreateTime`
 
-            A 64-bit integer that specifies the system time when this instance was created and exposed.
-        
-            `FailTime`
+`CreateTime`
 
-            A 64-bit integer that specifies the system time when the path that is associated with this path ID was removed.
-        
-            `NumberBytesRead`
+A 64-bit integer that specifies the system time when this instance was created and exposed.
 
-            An unsigned 64-bitfield that specifies the total number of bytes that are read through the specified path identifier.
-        
-            `NumberBytesReadWrap`
+`FailTime`
 
-            An unsigned character field that specifies the total number of times the <i>NumberBytesRead</i> parameter has rolled around to zero.
-        
-            `NumberBytesWritten`
+A 64-bit integer that specifies the system time when the path that is associated with this path ID was removed.
 
-            An unsigned 64-bitfield that specifies the total number of bytes that are written through the specified path identifier.
-        
-            `NumberBytesWrittenWrap`
+`NumberBytesRead`
 
-            An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
-        
-            `NumberIoErrors`
+An unsigned 64-bitfield that specifies the total number of bytes that are read through the specified path identifier.
 
-            An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered through the specified path identifier.
-        
-            `NumberReads`
+`NumberBytesReadWrap`
 
-            An unsigned 64-bitfield that specifies the number of read requests that are serviced by the specified path identifier.
-        
-            `NumberReadsWrap`
+An unsigned character field that specifies the total number of times the <i>NumberBytesRead</i> parameter has rolled around to zero.
 
-            An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.
-        
-            `NumberRetries`
+`NumberBytesWritten`
 
-            An unsigned 64-bitfield that specifies the total number of retries by using the specified path identifier.
-        
-            `NumberWrites`
+An unsigned 64-bitfield that specifies the total number of bytes that are written through the specified path identifier.
 
-            An unsigned 64-bitfield that specifies the number of write requests that are serviced by the specified path identifier.
-        
-            `NumberWritesWrap`
+`NumberBytesWrittenWrap`
 
-            An unsigned character field that specifies the total number of times that the <i>NumberWrites</i> parameter has rolled around to zero.
-        
-            `OutstandingRequests`
+An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
 
-            An unsigned character field that specifies the total number of outstanding requests.
-        
-            `Pad`
+`NumberIoErrors`
 
-            Should be zero.
-        
-            `PathId`
+An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered through the specified path identifier.
 
-            An unsigned 64-bitfield that represents an identifier that is assigned to a particular path.
-        
-            `PathOffline`
+`NumberReads`
 
-            A Boolean field that indicates whether the path that is associated with this path ID is removed.
+An unsigned 64-bitfield that specifies the number of read requests that are serviced by the specified path identifier.
+
+`NumberReadsWrap`
+
+An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.
+
+`NumberRetries`
+
+An unsigned 64-bitfield that specifies the total number of retries by using the specified path identifier.
+
+`NumberWrites`
+
+An unsigned 64-bitfield that specifies the number of write requests that are serviced by the specified path identifier.
+
+`NumberWritesWrap`
+
+An unsigned character field that specifies the total number of times that the <i>NumberWrites</i> parameter has rolled around to zero.
+
+`OutstandingRequests`
+
+An unsigned character field that specifies the total number of outstanding requests.
+
+`Pad`
+
+Should be zero.
+
+`PathId`
+
+An unsigned 64-bitfield that represents an identifier that is assigned to a particular path.
+
+`PathOffline`
+
+A Boolean field that indicates whether the path that is associated with this path ID is removed.
 
 
 ## Requirements

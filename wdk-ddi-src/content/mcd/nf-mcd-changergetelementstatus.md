@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8114d029-fe6e-4466-9e54-5ceadef96949
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerGetElementStatus
+ms.keywords : storage.changergetelementstatus, chgrmini_b0e442c7-18c4-4086-b036-3db43177f6e5.xml, ChangerGetElementStatus, ChangerGetElementStatus function [Storage Devices], mcd/ChangerGetElementStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerGetElementStatus
-req.alt-loc : mcd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -103,35 +107,24 @@ The changer class driver checks the input and output buffer lengths in the I/O s
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element_list.md">CHANGER_ELEMENT_LIST</a>
-</dt>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element_status.md">CHANGER_ELEMENT_STATUS</a>
-</dt>
-<dt>
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element_status_ex.md">CHANGER_ELEMENT_STATUS_EX</a>
-</dt>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
-</dt>
-<dt>
-<a href="..\mcd\nf-mcd-changergetstatus.md">ChangerGetStatus</a>
-</dt>
-<dt>
+
 <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
-</dt>
-<dt>
-<a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>
-</dt>
-<dt>
-<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_element_status.md">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>
-</dt>
-<dt>
+
 <a href="..\ntddchgr\ns-ntddchgr-_changer_read_element_status.md">CHANGER_READ_ELEMENT STATUS</a>
-</dt>
-</dl>
+
+<a href="..\mcd\nf-mcd-changergetstatus.md">ChangerGetStatus</a>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element_list.md">CHANGER_ELEMENT_LIST</a>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element_status.md">CHANGER_ELEMENT_STATUS</a>
+
+<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_element_status.md">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>
+
+<a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>
+
  
 
  

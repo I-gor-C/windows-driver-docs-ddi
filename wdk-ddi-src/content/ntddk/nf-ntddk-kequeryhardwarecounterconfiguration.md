@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5ac33177-38fc-4027-95c9-c2cf9ccdaa52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryHardwareCounterConfiguration
+ms.keywords : kernel.kequeryhardwarecounterconfiguration, KeQueryHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], KeQueryHardwareCounterConfiguration, k105_442c5acf-84a3-4078-b401-ca8cb8069c6e.xml, ntddk/KeQueryHardwareCounterConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeQueryHardwareCounterConfiguration
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -66,12 +70,34 @@ A pointer to a location into which the routine writes the number of array elemen
 ## Return Value
 
 <b>KeQueryHardwareCounterConfiguration</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The <i>MaximumCount</i> parameter specifies a buffer length that is not large enough to contain the counter configuration information. 
+</dl>
+</td>
+<td width="60%">
+The <i>MaximumCount</i> parameter specifies a buffer length that is not large enough to contain the counter configuration information. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>This routine is not implemented for the processor architecture that the caller is running on.
+</dl>
+</td>
+<td width="60%">
+This routine is not implemented for the processor architecture that the caller is running on. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,14 +119,10 @@ To set the hardware counter configuration to use for thread profiling, call the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-kesethardwarecounterconfiguration.md">KeSetHardwareCounterConfiguration</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
+
  
 
  

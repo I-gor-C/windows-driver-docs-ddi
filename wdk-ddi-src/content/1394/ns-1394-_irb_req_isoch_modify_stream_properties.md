@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 06CA5F26-8042-4EAC-A381-A0C6E7023BFD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
+ms.keywords : _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure [Buses], IEEE.irb_req_isoch_modify_stream_properties, 1394/IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 ---
 
@@ -53,15 +57,14 @@ typedef struct _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES {
 
 ## Members
 
-        
-            `ChannelMask`
 
-            Specifies the allocated channel.
-        
-            `fulSpeed`
+`ChannelMask`
 
-            Specifies the connection speed to use for communication on the channel.  The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
+Specifies the allocated channel.
 
+`fulSpeed`
+
+Specifies the connection speed to use for communication on the channel.  The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
 <table>
 <tr>
 <th>Transfer Rate</th>
@@ -97,18 +100,15 @@ SPEED_FLAGS_400
 
 </td>
 </tr>
-</table>
- 
+</table> 
+<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div><div> </div>
 
-<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
-<div> </div>
-        
-            `hResource`
+`hResource`
 
-            The handle for the allocated resource.
+The handle for the allocated resource.
 
-    ## Remarks
-        The resource must not be streaming when <a href="https://msdn.microsoft.com/library/windows/hardware/gg266405">REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</a>  is issued. Before issuing <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b>, the caller must  send an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537659">REQUEST_ISOCH_STOP</a> request followed by a start request. Also make sure that there are no pending buffers after the caller sends a <b>REQUEST_ISOCH_STOP</b> request and before the caller sends a <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b> request.  </p>
+## Remarks
+The resource must not be streaming when <a href="https://msdn.microsoft.com/library/windows/hardware/gg266405">REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</a>  is issued. Before issuing <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b>, the caller must  send an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537659">REQUEST_ISOCH_STOP</a> request followed by a start request. Also make sure that there are no pending buffers after the caller sends a <b>REQUEST_ISOCH_STOP</b> request and before the caller sends a <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |

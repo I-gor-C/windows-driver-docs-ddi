@@ -7,8 +7,8 @@ old-location : netvista\rileutramrl.htm
 old-project : netvista
 ms.assetid : 2dd695c4-ed3e-4278-b82e-6643aaded890
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILEUTRAMRL, RILEUTRAMRL, *LPRILEUTRAMRL
+ms.date : 1/18/2018
+ms.keywords : RILEUTRAMRL structure [Network Drivers Starting with Windows Vista], *LPRILEUTRAMRL, netvista.rileutramrl, rilapitypes/RILEUTRAMRL, RILEUTRAMRL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILEUTRAMRL
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILEUTRAMRL, *LPRILEUTRAMRL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILEUTRAMRL, RILEUTRAMRL"
 req.product : Windows 10 or later.
 ---
 
 # RILEUTRAMRL structure
-
+<div class="alert"><b>Warning</b>  The Cellular COM API is deprecated in Windows 10. This content is provided to support maintenance of OEM and mobile operator created Windows Phone 8.1 applications.</div><div> </div>This structure represents RILEUTRAMRL, which is a EUTRA (LTE) network measurement report.
 
 ## Syntax
 ````
@@ -55,42 +59,42 @@ struct RILEUTRAMRL {
 
 ## Members
 
-        
-            `dwCellID`
 
-            Cell identity (28 bits).
-        
-            `dwEARFCN`
+`dwCellID`
 
-            EUTRA absolute radio frequency channel number (0...65535).
-        
-            `dwMobileCountryCode`
+Cell identity (28 bits).
 
-            Mobile country code (0...999)
-        
-            `dwMobileNetworkCode`
+`dwEARFCN`
 
-            Mobile Network Code (0...999)
-        
-            `dwParams`
+EUTRA absolute radio frequency channel number (0...65535).
 
-            A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rileutramrlparammask.md">RILEUTRAMRLPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
-        
-            `dwPhysCellID`
+`dwMobileCountryCode`
 
-            Physical cell ID (0...503).
-        
-            `dwRSRP`
+Mobile country code (0...999)
 
-            Average reference signal received power (–1400 ... –440) in units of 0.1dBm.
-        
-            `dwRSRQ`
+`dwMobileNetworkCode`
 
-            Average reference signal received quality (–200 ... –30) in units of 0.1dBm.
-        
-            `dwTAC`
+Mobile Network Code (0...999)
 
-            Tracking area code (0...65535).
+`dwParams`
+
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rileutramrlparammask.md">RILEUTRAMRLPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
+
+`dwPhysCellID`
+
+Physical cell ID (0...503).
+
+`dwRSRP`
+
+Average reference signal received power (–1400 ... –440) in units of 0.1dBm.
+
+`dwRSRQ`
+
+Average reference signal received quality (–200 ... –30) in units of 0.1dBm.
+
+`dwTAC`
+
+Tracking area code (0...65535).
 
 
 ## Requirements
@@ -101,15 +105,12 @@ struct RILEUTRAMRL {
 | **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILEUTRAMRL structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILEUTRAMRL structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

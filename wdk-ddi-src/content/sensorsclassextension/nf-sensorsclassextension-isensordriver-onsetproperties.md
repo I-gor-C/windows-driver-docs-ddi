@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 7c3cca5b-1d08-42dc-8dc4-42eb1160b8bb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnSetProperties, OnSetProperties
+ms.keywords : Sensor_IFaces_1b27ccef-2b50-4942-b8fa-9126e2624b27.xml, ISensorDriver interface [Sensor Devices], OnSetProperties method, OnSetProperties, OnSetProperties method [Sensor Devices], ISensorDriver, OnSetProperties method [Sensor Devices], ISensorDriver interface, sensorsclassextension/ISensorDriver::OnSetProperties, ISensorDriver::OnSetProperties, sensors.isensordriver_onsetproperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 7,Available in Windows 7.
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISensorDriver.OnSetProperties
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -82,6 +86,7 @@ The list of properties provided through <i>pPropertiesToSet</i> is typically  a 
 The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.
 
 <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> is documented in Windows Portable Devices.
+<div class="alert"><b>Note</b>  This method will be called only if the user has enabled the sensor in the <b>Location and Other Sensors</b> control panel.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,11 +102,8 @@ The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> str
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\wdi_connection_quality_hint.htm
 old-project : netvista
 ms.assetid : D83AE2BE-1273-48A1-A42C-C2EADA07D9C0
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HINT
+ms.date : 1/18/2018
+ms.keywords : devinst.wfi_connection_quality_hint, WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE, wditypes/WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE, wditypes/WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT, wditypes/WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY, wditypes/WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HINT enumeration [Device and Driver Installation], WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT, WDI_CONNECTION_QUALITY_LOW_LATENCY, wditypes/WDI_CONNECTION_QUALITY_LOW_LATENCY, _WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HINT, netvista.wdi_connection_quality_hint, WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_CONNECTION_QUALITY_HINT
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_CONNECTION_QUALITY_HINT
 req.product : Windows 10 or later.
 ---
@@ -68,6 +72,11 @@ typedef enum _WDI_CONNECTION_QUALITY_HINT {
 The WLAN schedule should be so that one way latency is no more than 30ms and packet loss &lt;=0.5% and no more than 3 consecutive packets are lost.
 This can be set simultaneously on two ports. If the ports are on different channels, the max latency is relaxed to 50ms.  This is based on Windows Certification Programrequirements.
 When in this mode, the port can (optionally) use power saving as long as it can meet the above latency requirements.</td>
+</tr>
+
+<tr>
+<td>WDI_CONNECTION_QUALITY_NO_POWER_SAVE</td>
+<td></td>
 </tr>
 </table>
 

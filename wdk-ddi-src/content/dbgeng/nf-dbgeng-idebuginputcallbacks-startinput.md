@@ -7,8 +7,8 @@ old-location : debugger\idebuginputcallbacks_startinput.htm
 old-project : debugger
 ms.assetid : 4ac3764e-6482-49de-aac8-3b540561d201
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugInputCallbacks, IDebugInputCallbacks::StartInput, StartInput
+ms.date : 1/19/2018
+ms.keywords : StartInput method [Windows Debugging], StartInput, debugger.idebuginputcallbacks_startinput, dbgeng/IDebugInputCallbacks::StartInput, IDebugInputCallbacks, IDebugInputCallbacks::StartInput, IDebugInputCallbacks interface [Windows Debugging], StartInput method, ComCallbacks_155d62a2-08b2-4caf-80d6-80fab139e77b.xml, StartInput method [Windows Debugging], IDebugInputCallbacks interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugInputCallbacks.StartInput
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -65,7 +69,7 @@ After calling this method, the engine waits until it receives some input.  When 
 
 The <b>IDebugInputCallbacks</b> object can provide the engine with a line of input by calling either the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554600">ReturnInput</a> or <b>ReturnInputWide</b> methods.
 
-For more information about debugger engine input, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
+For more information about debugger engine input, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

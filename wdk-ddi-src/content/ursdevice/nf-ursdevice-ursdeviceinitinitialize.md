@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : EFA83238-77DF-474D-8F8F-2400C9B23A00
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsDeviceInitInitialize
+ms.keywords : UrsDeviceInitInitialize method [Buses], ursdevice/UrsDeviceInitInitialize, UrsDeviceInitInitialize, buses.ursdeviceinitinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UrsDeviceInitInitialize
-req.alt-loc : Urscxstub.lib,Urscxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Urscxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_USAGE
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ The client driver for the dual-role controller calls this method in its <a href=
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-</dt>
-</dl>
+
  
 
  

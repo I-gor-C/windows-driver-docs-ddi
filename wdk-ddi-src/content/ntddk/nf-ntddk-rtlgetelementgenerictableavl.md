@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c836dd4b-5c66-4302-9b2a-115cec418533
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGetElementGenericTableAvl
+ms.keywords : RtlGetElementGenericTableAvl routine [Installable File System Drivers], ntddk/RtlGetElementGenericTableAvl, ifsk.rtlgetelementgenerictableavl, rtlref_c94e774b-baba-4be7-be6d-09b01544612b.xml, RtlGetElementGenericTableAvl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available with Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlGetElementGenericTableAvl
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (See Remarks)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -92,26 +96,18 @@ Callers of <b>RtlGetElementGenericTableAvl</b> must be running at IRQL &lt; DISP
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictableavl.md">RtlDeleteElementGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictableavl.md">RtlInsertElementGenericTableAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtllookupelementgenerictableavl.md">RtlLookupElementGenericTableAvl</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictableavl.md">RtlInsertElementGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtllookupelementgenerictableavl.md">RtlLookupElementGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
+
  
 
  

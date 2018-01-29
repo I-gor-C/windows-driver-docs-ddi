@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C3E9B4D6-A1BB-425E-A131-D93C3219D28B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT
+ms.keywords : wdf.wdf_dma_system_profile_config_init, WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function, WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, kmdf.wdf_dma_system_profile_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 
-req.alt-api : WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT
-req.alt-loc : wdfdmaenabler.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_PROFILE
 req.product : Windows 10 or later.
 ---
@@ -57,7 +61,7 @@ void WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT(
 
 `DmaConfig`
 
-
+TBD
 
 `Address`
 
@@ -85,8 +89,6 @@ Depending on the System on a Chip (SoC) design, the <i>Address</i> parameter mig
 
  For more information about creating a system-mode DMA enabler, see <a href="https://msdn.microsoft.com/CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6">Supporting System-Mode DMA</a>.
 
-For a code example that uses <b>WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</b>, see <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -101,17 +103,12 @@ For a code example that uses <b>WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</b>, see <a h
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_system_profile_config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
-</dt>
-<dt>
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-</dt>
-<dt>
+
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_system_profile_config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
+
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ea2dabc5-6853-4491-8c1f-f3f5ae516952
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
+ms.keywords : display.d3d12ddi-video-process-support-data-0032, d3d12umddi/D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 structure [Display Devices], D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032
 ---
 
@@ -60,66 +64,66 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 {
 
 ## Members
 
-        
-            `AutoProcessingSupport`
 
-            Auto processing support.
-        
-            `DeinterlaceSupport`
+`AutoProcessingSupport`
 
-            Deinterlace support.
-        
-            `FeatureSupport`
+Auto processing support.
 
-            Feature support.
-        
-            `FilterRangeSupport`
+`DeinterlaceSupport`
 
-            Filter range support.
-        
-            `FilterSupport`
+Deinterlace support.
 
-            Filter support.
-        
-            `InputFieldType`
+`FeatureSupport`
 
-            Input field type.
-        
-            `InputFrameRate`
+Feature support.
 
-            Input frame rate.
-        
-            `InputSample`
+`FilterRangeSupport`
 
-            Input sample.
-        
-            `InputStereoFormat`
+Filter range support.
 
-            Input stereo format.
-        
-            `NodeIndex`
+`FilterSupport`
 
-            Node index.
-        
-            `OutputFormat`
+Filter support.
 
-            Output format.
-        
-            `OutputFrameRate`
+`InputFieldType`
 
-            Output frame rate.
-        
-            `OutputStereoFormat`
+Input field type.
 
-            Output stereo format.
-        
-            `ScaleSupport`
+`InputFrameRate`
 
-            Scale support.
-        
-            `SupportFlags`
+Input frame rate.
 
-            Support flags.
+`InputSample`
+
+Input sample.
+
+`InputStereoFormat`
+
+Input stereo format.
+
+`NodeIndex`
+
+Node index.
+
+`OutputFormat`
+
+Output format.
+
+`OutputFrameRate`
+
+Output frame rate.
+
+`OutputStereoFormat`
+
+Output stereo format.
+
+`ScaleSupport`
+
+Scale support.
+
+`SupportFlags`
+
+Support flags.
 
 
 ## Requirements

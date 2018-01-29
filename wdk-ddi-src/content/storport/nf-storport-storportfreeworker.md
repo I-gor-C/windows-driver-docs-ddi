@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 90BD61C8-322B-48D5-83E0-7204E3DC4423
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortFreeWorker
+ms.keywords : storage.storportfreeworker, storport/StorPortFreeWorker, StorPortFreeWorker, StorPortFreeWorker routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortFreeWorker
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -56,27 +60,73 @@ A pointer to the hardware device extension for the host bus adapter (HBA).
 
 `Worker`
 
-
+TBD
 
 
 ## Return Value
 
 The <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a> routine returns one of these status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
-</dl>Current IRQL &gt; DISPATCH_LEVEL.
+</dl>
+</td>
+<td width="60%">
+Current IRQL &gt; DISPATCH_LEVEL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>Either <i>HwDeviceExtension</i> or <i>WorkItem</i> is NULL.
+</dl>
+</td>
+<td width="60%">
+Either <i>HwDeviceExtension</i> or <i>WorkItem</i> is NULL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_BUSY</b></dt>
-</dl>The work item is currently queued for processing.
+</dl>
+</td>
+<td width="60%">
+The work item is currently queued for processing.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The work item was successfully freed.
+</dl>
+</td>
+<td width="60%">
+The work item was successfully freed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl>The work item is already free.
+</dl>
+</td>
+<td width="60%">
+The work item is already free.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,14 +146,10 @@ Miniports should call <b>StorPortFreeWorker</b> whenever a work item is no longe
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 119386fe-1eff-4dac-b9d5-54baefcf6e12
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_TOC_CD_TEXT_DATA_BLOCK, CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK
+ms.keywords : storage.cdrom_toc_cd_text_data_block, ntddcdrm/PCDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK, CDROM_TOC_CD_TEXT_DATA_BLOCK, ntddcdrm/CDROM_TOC_CD_TEXT_DATA_BLOCK, CDROM_TOC_CD_TEXT_DATA_BLOCK structure [Storage Devices], PCDROM_TOC_CD_TEXT_DATA_BLOCK, structs-CD-ROM_6bdb8d21-6388-4505-b9a1-1b3e1e594e02.xml, _CDROM_TOC_CD_TEXT_DATA_BLOCK, PCDROM_TOC_CD_TEXT_DATA_BLOCK structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_TOC_CD_TEXT_DATA_BLOCK
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK
 ---
 
@@ -57,38 +61,38 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 
 ## Members
 
-        
-            `BlockNumber`
 
-            See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
-        
-            `CharacterPosition`
+`BlockNumber`
 
-            See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
-        
-            `CRC`
+See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
 
-            Contains the cyclic redundancy check.
-        
-            `ExtensionFlag`
+`CharacterPosition`
 
-            Must be set to zero.
-        
-            `PackType`
+See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
 
-            Indicates the type of pack data, as follows:
-        
-            `SequenceNumber`
+`CRC`
 
-            See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
-        
-            `TrackNumber`
+Contains the cyclic redundancy check.
 
-            See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
-        
-            `Unicode`
+`ExtensionFlag`
 
-            Indicates, when set to 1, that the text is stored in Unicode format.
+Must be set to zero.
+
+`PackType`
+
+Indicates the type of pack data, as follows:
+
+`SequenceNumber`
+
+See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
+
+`TrackNumber`
+
+See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
+
+`Unicode`
+
+Indicates, when set to 1, that the text is stored in Unicode format.
 
 
 ## Requirements
@@ -99,19 +103,14 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data.md">CDROM_TOC_CD_TEXT_DATA</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
+
  
 
  

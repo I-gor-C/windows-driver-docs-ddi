@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 23a2dd4d-ea30-4646-a4c3-bc90ad60933d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsServiceBusEnumCreateRequest
+ms.keywords : stream.ksservicebusenumcreaterequest, ksfunc_2eac1d4d-0b8f-4997-8265-4f3e7354f3a1.xml, KsServiceBusEnumCreateRequest, swenum/KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsServiceBusEnumCreateRequest
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ Returns STATUS_SUCCESS if successful. Otherwise. it returns STATUS_OBJECT_NAME_N
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\swenum\nf-swenum-ksservicebusenumpnprequest.md">KsServiceBusEnumPnpRequest</a>
-</dt>
-</dl>
+
  
 
  

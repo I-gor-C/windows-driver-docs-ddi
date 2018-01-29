@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3FFBF258-50C3-4D2D-AFC8-184D2FF85EE4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SRBEX_DATA_WMI, *PSRBEX_DATA_WMI, SRBEX_DATA_WMI
+ms.keywords : _SRBEX_DATA_WMI, PSRBEX_DATA_WMI structure pointer [Storage Devices], PSRBEX_DATA_WMI, storport/PSRBEX_DATA_WMI, storage.srbex_data_wmi, SRBEX_DATA_WMI, storport/SRBEX_DATA_WMI, *PSRBEX_DATA_WMI, SRBEX_DATA_WMI structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available  starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRBEX_DATA_WMI
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSRBEX_DATA_WMI, SRBEX_DATA_WMI"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SRBEX_DATA_WMI, *PSRBEX_DATA_WMI
 req.product : Windows 10 or later.
 ---
 
 # _SRBEX_DATA_WMI structure
 The <b>SRBEX_DATA_WMI</b> structure contains the request data for an extended WMI SRB.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -53,34 +58,34 @@ typedef struct _SRBEX_DATA_WMI {
 
 ## Members
 
-        
-            `DataPath`
 
-            Specifies the WMI data path for this request.
-        
-            `Length`
+`DataPath`
 
-            Length of the data in this structure starting with the <b>WMISubFunction</b> member. Set to SRBEX_DATA_WMI_LENGTH.
-        
-            `Reserved`
+Specifies the WMI data path for this request.
 
-            This member is reserved. Contains zeros.
-        
-            `Reserved1`
+`Length`
 
-            This member is reserved. Set to 0.
-        
-            `Type`
+Length of the data in this structure starting with the <b>WMISubFunction</b> member. Set to SRBEX_DATA_WMI_LENGTH.
 
-            Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeWmi</b>.
-        
-            `WMIFlags`
+`Reserved`
 
-            Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>WMIFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
-        
-            `WMISubFunction`
+This member is reserved. Contains zeros.
 
-            Indicates the WMI action to be performed. The subfunction value corresponds to the WMI minor IRP number that identifies the WMI operation.
+`Reserved1`
+
+This member is reserved. Set to 0.
+
+`Type`
+
+Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeWmi</b>.
+
+`WMIFlags`
+
+Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>WMIFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
+
+`WMISubFunction`
+
+Indicates the WMI action to be performed. The subfunction value corresponds to the WMI minor IRP number that identifies the WMI operation.
 
 
 ## Requirements
@@ -91,13 +96,10 @@ typedef struct _SRBEX_DATA_WMI {
 | **Minimum UMDF version** |  |
 | **Header** | srb.h (include Storport.h, Srb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-</dt>
-</dl>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+
  
 
  

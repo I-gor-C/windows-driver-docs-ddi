@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 954cc3f6-731f-4c55-bf61-63b5d48248c0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_GRAPHICS_RENDERING_FORMAT, D3DKMDT_GRAPHICS_RENDERING_FORMAT
+ms.keywords : _D3DKMDT_GRAPHICS_RENDERING_FORMAT, d3dkmdt/D3DKMDT_GRAPHICS_RENDERING_FORMAT, D3DKMDT_GRAPHICS_RENDERING_FORMAT, D3DKMDT_GRAPHICS_RENDERING_FORMAT structure [Display Devices], DmStructs_c51e5886-bbd0-48a2-8be7-98d10b13fc2d.xml, display.d3dkmdt_graphics_rendering_format
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_GRAPHICS_RENDERING_FORMAT
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_GRAPHICS_RENDERING_FORMAT
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DKMDT_GRAPHICS_RENDERING_FORMAT {
 
 ## Members
 
-        
-            `ColorBasis`
 
-            A value from the D3DKMDT_COLOR_BASIS enumeration that indicates the color basis used to encode the content of the surface.
-        
-            `PixelFormat`
+`ColorBasis`
 
-            A value from the D3DDDIFORMAT enumeration that indicates the pixel format of the surface.
-        
-            `PixelValueAccessMode`
+A value from the D3DKMDT_COLOR_BASIS enumeration that indicates the color basis used to encode the content of the surface.
 
-            A value from the D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration that indicates the type of data (for example, direct color values or palette indexes) that are stored in the surface.
-        
-            `PrimSurfSize`
+`PixelFormat`
 
-            A D3DKMDT_2DREGION structure that holds the size (number of pixels, both horizontal and vertical) of the surface.
-        
-            `Stride`
+A value from the D3DDDIFORMAT enumeration that indicates the pixel format of the surface.
 
-            The offset, in bytes, between one scan line and the next scan line in the surface.
-        
-            `VisibleRegionSize`
+`PixelValueAccessMode`
 
-            A D3DKMDT_2DREGION structure that holds the size of the visible portion of the surface.
+A value from the D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration that indicates the type of data (for example, direct color values or palette indexes) that are stored in the surface.
+
+`PrimSurfSize`
+
+A D3DKMDT_2DREGION structure that holds the size (number of pixels, both horizontal and vertical) of the surface.
+
+`Stride`
+
+The offset, in bytes, between one scan line and the next scan line in the surface.
+
+`VisibleRegionSize`
+
+A D3DKMDT_2DREGION structure that holds the size of the visible portion of the surface.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct _D3DKMDT_GRAPHICS_RENDERING_FORMAT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-</dl>
+
  
 
  

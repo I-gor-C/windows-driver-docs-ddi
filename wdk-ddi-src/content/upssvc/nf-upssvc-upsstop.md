@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 55555e58-eaba-4c39-a771-9924da3fcfc4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UPSStop
+ms.keywords : UPSStop, battery.upsstop, UPSStop function [Battery Devices], UPS_fns_60f920b5-6225-4569-a60a-dfb1c6b2538c.xml, upssvc/UPSStop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UPSStop
-req.alt-loc : Upssvc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_USAGE
 req.product : Windows 10 or later.
 ---
@@ -58,14 +62,20 @@ None
 ## Remarks
 
 The <b>UPSStop</b> function must:
-
+<ul>
+<li>
 Cancel all waiting calls to <a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>.
 
+</li>
+<li>
 Stop monitoring the UPS unit.
 
+</li>
+<li>
 Close and release the UPS unit's COM port.
 
-After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>.
+</li>
+</ul>After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,11 +91,8 @@ After <b>UPSStop</b> returns, the only function the UPS service can call is <a h
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>
-</dt>
-</dl>
+
  
 
  

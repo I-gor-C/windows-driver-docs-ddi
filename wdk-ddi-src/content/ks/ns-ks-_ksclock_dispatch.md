@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cc9b7049-7b43-4c66-9d08-93af22d92540
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSCLOCK_DISPATCH, *PKSCLOCK_DISPATCH, KSCLOCK_DISPATCH
+ms.keywords : _KSCLOCK_DISPATCH, KSCLOCK_DISPATCH structure [Streaming Media Devices], ks/KSCLOCK_DISPATCH, PKSCLOCK_DISPATCH structure pointer [Streaming Media Devices], stream.ksclock_dispatch, *PKSCLOCK_DISPATCH, PKSCLOCK_DISPATCH, ks/PKSCLOCK_DISPATCH, KSCLOCK_DISPATCH, avstruct_5015e5e6-b0c5-4eb9-9e04-8631e732f8be.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCLOCK_DISPATCH
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSCLOCK_DISPATCH, KSCLOCK_DISPATCH"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSCLOCK_DISPATCH, *PKSCLOCK_DISPATCH
 ---
 
 # _KSCLOCK_DISPATCH structure
@@ -59,28 +63,20 @@ typedef struct _KSCLOCK_DISPATCH {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+<a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
+
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
  
 
  

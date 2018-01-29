@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 876b3932-780f-4d00-8afc-40960f8fcaaf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxSetSrvCallDomainName
+ms.keywords : RxSetSrvCallDomainName, rxprocs/RxSetSrvCallDomainName, rxref_f6d23374-7565-4922-8f1c-222886e3a90c.xml, ifsk.rxsetsrvcalldomainname, RxSetSrvCallDomainName function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxSetSrvCallDomainName
-req.alt-loc : rxprocs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -62,9 +66,23 @@ A pointer to a buffer containing a zero-terminated Unicode string that names the
 ## Return Value
 
 <b>RxSetSrvCallDomainName</b> returns STATUS_SUCCESS on success or one of the following error values on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There were insufficient resources to complete this routine. The memory allocation request failed for nonpaged pool memory to store the new domain name.
+</dl>
+</td>
+<td width="60%">
+There were insufficient resources to complete this routine. The memory allocation request failed for nonpaged pool memory to store the new domain name.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -88,14 +106,10 @@ If the <i>DomainName</i> parameter is not a <b>NULL</b> pointer, and the <i>Doma
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
-</dt>
-<dt>
 <a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
-</dt>
-</dl>
+
+<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
+
  
 
  

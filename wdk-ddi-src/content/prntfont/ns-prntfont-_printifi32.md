@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f8e77eb1-3964-4ca0-8ae7-2e9617671990
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PRINTIFI32, PRINTIFI32, *PPRINTIFI32
+ms.keywords : prntfont/PRINTIFI32, prntfont/PPRINTIFI32, *PPRINTIFI32, _PRINTIFI32, display.printifi32, PPRINTIFI32 structure pointer [Display Devices], PPRINTIFI32, PRINTIFI32, grstrcts_f7643950-b91f-462a-9d13-0c46a82da7d3.xml, PRINTIFI32 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PRINTIFI32
-req.alt-loc : prntfont.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : PRINTIFI32, *PPRINTIFI32
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPRINTIFI32, PRINTIFI32"
 req.product : Windows 10 or later.
 ---
 
@@ -105,81 +109,80 @@ typedef struct _PRINTIFI32 {
 
 ## Members
 
-        
-            `achVendId`
 
-            Specifies a four character identifier for the font vendor. Identifiers are documented in the Microsoft TrueType specification.
-        
-            `chBreakChar`
+`achVendId`
 
-            Specifies the break character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
-        
-            `chDefaultChar`
+Specifies a four character identifier for the font vendor. Identifiers are documented in the Microsoft TrueType specification.
 
-            Specifies the default character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
-        
-            `chFirstChar`
+`chBreakChar`
 
-            Specifies the lowest supported character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
-        
-            `chLastChar`
+Specifies the break character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
 
-            Specifies the highest supported character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
-        
-            `cjIfiExtra`
+`chDefaultChar`
 
-            Specifies the size in bytes of the IFIEXTRA structure that follows this structure. A value of zero indicates that no IFIEXTRA structure is present.
-        
-            `cjThis`
+Specifies the default character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
 
-            Specifies the size in bytes of this structure. The specified size includes any Unicode strings appended to the end of this structure, plus the size in bytes of the optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff567416">IFIEXTRA</a> structure.
-        
-            `cKerningPairs`
+`chFirstChar`
 
-            Specifies the number of kerning pairs associated with this font.
-        
-            `dpCharSets`
+Specifies the lowest supported character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
 
-            Specifies the offset from the beginning of this structure to an array containing a list of all Windows character sets supported by this font. The array is 16 bytes in size and is always terminated with DEFAULT_CHARSET. The first value of the array should identify the Windows character set that has the best and most complete coverage in the font; this value should also be stored in <b>jWinCharSet</b>. For instance, if this is a Japanese font that also supports US ANSI and Cyrillic character sets, then <b>jWinCharSet</b> should be set to SHIFTJIS_CHARSET and the array identified by <b>dpCharSets</b> would contain SHIFTJIS_CHARSET, ANSI_CHARSET, RUSSIAN_CHARSET, DEFAULT_CHARSET.
+`chLastChar`
+
+Specifies the highest supported character in the code page specified in <b>jWinCharSet</b>. This field is provided for Windows 3.1 compatibility.
+
+`cjIfiExtra`
+
+Specifies the size in bytes of the IFIEXTRA structure that follows this structure. A value of zero indicates that no IFIEXTRA structure is present.
+
+`cjThis`
+
+Specifies the size in bytes of this structure. The specified size includes any Unicode strings appended to the end of this structure, plus the size in bytes of the optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff567416">IFIEXTRA</a> structure.
+
+`cKerningPairs`
+
+Specifies the number of kerning pairs associated with this font.
+
+`dpCharSets`
+
+Specifies the offset from the beginning of this structure to an array containing a list of all Windows character sets supported by this font. The array is 16 bytes in size and is always terminated with DEFAULT_CHARSET. The first value of the array should identify the Windows character set that has the best and most complete coverage in the font; this value should also be stored in <b>jWinCharSet</b>. For instance, if this is a Japanese font that also supports US ANSI and Cyrillic character sets, then <b>jWinCharSet</b> should be set to SHIFTJIS_CHARSET and the array identified by <b>dpCharSets</b> would contain SHIFTJIS_CHARSET, ANSI_CHARSET, RUSSIAN_CHARSET, DEFAULT_CHARSET.
 
 If this font does not support more than one Windows character set, <b>dpCharSets</b> should be set to zero.
-        
-            `dpFontSim`
 
-            Specifies the offset in bytes from the beginning of this structure to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566017">FONTSIM</a> structure that describes the simulations that the font supports. The driver should set this member to a nonzero value only if the font supports bold, italic, or bold italic simulations; otherwise, the driver should set this to zero.
+`dpFontSim`
+
+Specifies the offset in bytes from the beginning of this structure to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566017">FONTSIM</a> structure that describes the simulations that the font supports. The driver should set this member to a nonzero value only if the font supports bold, italic, or bold italic simulations; otherwise, the driver should set this to zero.
 
 Note that if a font is italic by design, the driver should not indicate font support for italic simulation although it can indicate font support for bold italic simulation. Similarly, the driver should not indicate font support for bold simulation if the font is bold by design, but can indicate font support for bold italic simulation. If the font is both bold and italic by design, it should not support any simulations.
 
 The offsets in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566017">FONTSIM</a> structure are relative to the base of the FONTSIM structure.
-        
-            `dpwszFaceName`
 
-            Specifies the offset in bytes to a null-terminated Unicode string representing the unique and complete name of the font. The name contains the family and subfamily names of the font (for example, "Times New Roman Bold").
-        
-            `dpwszFamilyName`
+`dpwszFaceName`
 
-            Specifies the offset in bytes to a null-terminated Unicode string containing the family name of the font (for example, "Times Roman"). Generally, this string immediately follows this structure. This string should be the same as the name recorded in the <b>lfFaceName</b> member of the Win32 LOGFONT structure.
-        
-            `dpwszStyleName`
+Specifies the offset in bytes to a null-terminated Unicode string representing the unique and complete name of the font. The name contains the family and subfamily names of the font (for example, "Times New Roman Bold").
 
-            Specifies the offset in bytes to a null-terminated Unicode string describing the style of the font (for example, "Bold").
-        
-            `dpwszUniqueName`
+`dpwszFamilyName`
 
-            Specifies the offset in bytes to a null-terminated Unicode string representing the unique identifier of the font (for example, "Monotype:Times New Roman:1990").
-        
-            `flInfo`
+Specifies the offset in bytes to a null-terminated Unicode string containing the family name of the font (for example, "Times Roman"). Generally, this string immediately follows this structure. This string should be the same as the name recorded in the <b>lfFaceName</b> member of the Win32 LOGFONT structure.
 
-            Specifies additional information about the font. This field can be a combination of the following flag values:
+`dpwszStyleName`
+
+Specifies the offset in bytes to a null-terminated Unicode string describing the style of the font (for example, "Bold").
+
+`dpwszUniqueName`
+
+Specifies the offset in bytes to a null-terminated Unicode string representing the unique identifier of the font (for example, "Monotype:Times New Roman:1990").
+
+`flInfo`
+
+Specifies additional information about the font. This field can be a combination of the following flag values:
 
 Value
 
 Meaning
-        
-            `fsSelection`
 
-            Specifies a combination of the following flags:
+`fsSelection`
 
+Specifies a combination of the following flags:
 <table>
 <tr>
 <th>Value</th>
@@ -256,11 +259,10 @@ Set if all the characters of the font are underscored by default; otherwise unde
 </td>
 </tr>
 </table>
-        
-            `fsType`
 
-            This is a TrueType-specific bitfield indicating certain properties for the font, such as font embedding and licensing rights for the font. Embeddable fonts can be stored in a document. When a document with embedded fonts is opened on a system that does not have the font installed (the remote system), the embedded font can be loaded for temporary (and in some cases permanent) use on that system by an embedding-aware application. Embedding licensing rights are granted by the font vendor. The following flags can be set:
+`fsType`
 
+This is a TrueType-specific bitfield indicating certain properties for the font, such as font embedding and licensing rights for the font. Embeddable fonts can be stored in a document. When a document with embedded fonts is opened on a system that does not have the font installed (the remote system), the embedded font can be loaded for temporary (and in some cases permanent) use on that system by an embedding-aware application. Embedding licensing rights are granted by the font vendor. The following flags can be set:
 <table>
 <tr>
 <th>Value</th>
@@ -288,115 +290,138 @@ Set if read/write embedding is not permitted; only "preview and print" encapsula
 </tr>
 <tr>
 <td>
-        
-            `fwdAveCharWidth`
 
-            Specifies the arithmetic average of the width of all of the 26 lower case letters 'a' through 'z' of the Latin alphabet and the space character. If any of the 26 lowercase letters are not present, then this member should be set equal to the weighted average of all glyphs in the font.
-        
-            `fwdCapHeight`
+<dl>
+<dt>FM_TYPE_LICENSED</dt>
+<dt>FM_NO_EMBEDDING</dt>
+</dl>
 
-            Specifies the height of the optical line describing the top of the uppercase 'H' in font units (FUnits). This might not be the same as the measured height of the uppercase 'H.' If this information does not exist, <b>fwdCapHeight</b> should be set to zero, which indicates that it is undefined.
-        
-            `fwdLowestPPEm`
 
-            Specifies the smallest readable size of the font, in pixels. This value is ignored for bitmap fonts.
-        
-            `fwdMacAscender`
+</td>
+<td>
+Set if the font is a Restricted License font. When only this bit is set, this font <i>must not be modified, embedded, or exchanged in any manner</i> without first obtaining permission of the legal owner. For Restricted License embedding to take effect, it must be the only level of embedding selected.
 
-            Specifies the Macintosh ascender value for the font.
-        
-            `fwdMacDescender`
+</td>
+</tr>
+</table> 
 
-            Specifies the Macintosh descender value for the font. This number is typically less than zero. It measures the signed displacement from the base line of the lowest descender in the Macintosh character set.
-        
-            `fwdMacLineGap`
+Fonts with the FM_READONLY_EMBED bit set indicate that they can be embedded within documents but must only be installed <i>temporarily</i> on the remote system. Any document that includes an FM_READONLY_EMBED font must be opened "read-only." That is, the application can let the user view and/or print the document, but not edit it.
 
-            Specifies the Macintosh line gap for the font. The suggested Macintosh interline spacing is equal to <b>fwdMacLineGap</b> + <b>fwdMacAscender</b> âˆ’ <b>fwdMacDescender</b>.
-        
-            `fwdMaxCharInc`
+Fonts with the FM_EDITABLE_EMBED bit set indicate that they can be embedded in documents, but must only be installed <i>temporarily</i> on the remote system. In contrast to FM_READONLY_EMBED fonts, documents containing Editable fonts can be opened "read/write;" editing is permitted, and changes can be saved.
 
-            Specifies the maximum character increment of all glyphs in the font.
-        
-            `fwdStrikeoutPosition`
+Fonts with no <b>fsType</b> bits set indicate that they can be embedded and permanently installed on the remote system by an application. The user of the remote system acquires the identical rights, obligations, and licenses for that font as the original purchaser of the font, and is subject to the same end-user license agreement, copyright, design patent, and/or trademark as was the original purchaser.
 
-            Specifies the suggested displacement of the middle of the strikeout bar from the baseline.
-        
-            `fwdStrikeoutSize`
+Applications that implement support for font embedding, either through use of the Font Embedding DLL or through other means, must not embed fonts that are not licensed to permit embedding. Further, applications loading embedded fonts for temporary use <i>must</i> delete the fonts when the document containing the embedded font is closed.
 
-            Specifies the suggested width of the strike-out bar, in font coordinates.
-        
-            `fwdSubscriptXOffset`
+If multiple embedding bits are set, the <i>least</i> restrictive license granted takes precedence. For example, if bits 1 and 3 are set, bit 3 takes precedence over bit 1and the font can be embedded with Editable rights. For compatibility purposes, most vendors granting Editable embedding rights also set the Preview &amp; Print bit (0x000C). This permits an application that only supports Preview &amp; Print embedding to detect that font embedding is allowed.
 
-            Specifies the suggested offset in the baseline direction of the subscript character. The offset is with respect to the character origin of the base character.
-        
-            `fwdSubscriptXSize`
+`fwdAveCharWidth`
 
-            Specifies the suggested character width (the size along the baseline direction) of the subscript font.
-        
-            `fwdSubscriptYOffset`
+Specifies the arithmetic average of the width of all of the 26 lower case letters 'a' through 'z' of the Latin alphabet and the space character. If any of the 26 lowercase letters are not present, then this member should be set equal to the weighted average of all glyphs in the font.
 
-            Specifies the suggested offset in the baseline direction of the subscript character. The offset is taken from the character origin of the base character.
-        
-            `fwdSubscriptYSize`
+`fwdCapHeight`
 
-            Specifies the suggested character height (the size along the ascender direction) of the subscript font.
-        
-            `fwdSuperscriptXOffset`
+Specifies the height of the optical line describing the top of the uppercase 'H' in font units (FUnits). This might not be the same as the measured height of the uppercase 'H.' If this information does not exist, <b>fwdCapHeight</b> should be set to zero, which indicates that it is undefined.
 
-            Specifies the suggested offset in the baseline direction of the superscript character. The offset is taken from the character origin of the base character.
-        
-            `fwdSuperscriptXSize`
+`fwdLowestPPEm`
 
-            Specifies the suggested character width (the size along the baseline direction) of the superscript font.
-        
-            `fwdSuperscriptYOffset`
+Specifies the smallest readable size of the font, in pixels. This value is ignored for bitmap fonts.
 
-            Specifies the suggested offset in the baseline direction of the superscript character. The offset is taken from the character origin of the base character.
-        
-            `fwdSuperscriptYSize`
+`fwdMacAscender`
 
-            Specifies the suggested character height (the size along the ascender direction) of the superscript font.
-        
-            `fwdTypoAscender`
+Specifies the Macintosh ascender value for the font.
 
-            Specifies the typographic ascender value for the font.
-        
-            `fwdTypoDescender`
+`fwdMacDescender`
 
-            Specifies the typographic descender value for the font. This value specifies the signed displacement of the lowest descender from the baseline.
-        
-            `fwdTypoLineGap`
+Specifies the Macintosh descender value for the font. This number is typically less than zero. It measures the signed displacement from the base line of the lowest descender in the Macintosh character set.
 
-            Specifies the typographic line gap for the font.
-        
-            `fwdUnderscorePosition`
+`fwdMacLineGap`
 
-            Specifies the suggested displacement, in font units, from the base line to the middle of the underscore bar.
-        
-            `fwdUnderscoreSize`
+Specifies the Macintosh line gap for the font. The suggested Macintosh interline spacing is equal to <b>fwdMacLineGap</b> + <b>fwdMacAscender</b> âˆ’ <b>fwdMacDescender</b>.
 
-            Specifies the suggested width of the underscore bar, in font units.
-        
-            `fwdUnitsPerEm`
+`fwdMaxCharInc`
 
-            Specifies the em-height of the font.
-        
-            `fwdWinAscender`
+Specifies the maximum character increment of all glyphs in the font.
 
-            Specifies the Windows ascender value for the font.
-        
-            `fwdWinDescender`
+`fwdStrikeoutPosition`
 
-            Specifies the Windows descender value for the font.
-        
-            `fwdXHeight`
+Specifies the suggested displacement of the middle of the strikeout bar from the baseline.
 
-            Specifies the height of the optical line describing the height of the lowercase 'x' in font units. This might not be the same as the measured height of the lowercase 'x.' A value of zero indicates that this member is undefined.
-        
-            `jWinCharSet`
+`fwdStrikeoutSize`
 
-            Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store DEFAULT_CHARSET in this field. This member can be one of the following values:
+Specifies the suggested width of the strike-out bar, in font coordinates.
 
+`fwdSubscriptXOffset`
+
+Specifies the suggested offset in the baseline direction of the subscript character. The offset is with respect to the character origin of the base character.
+
+`fwdSubscriptXSize`
+
+Specifies the suggested character width (the size along the baseline direction) of the subscript font.
+
+`fwdSubscriptYOffset`
+
+Specifies the suggested offset in the baseline direction of the subscript character. The offset is taken from the character origin of the base character.
+
+`fwdSubscriptYSize`
+
+Specifies the suggested character height (the size along the ascender direction) of the subscript font.
+
+`fwdSuperscriptXOffset`
+
+Specifies the suggested offset in the baseline direction of the superscript character. The offset is taken from the character origin of the base character.
+
+`fwdSuperscriptXSize`
+
+Specifies the suggested character width (the size along the baseline direction) of the superscript font.
+
+`fwdSuperscriptYOffset`
+
+Specifies the suggested offset in the baseline direction of the superscript character. The offset is taken from the character origin of the base character.
+
+`fwdSuperscriptYSize`
+
+Specifies the suggested character height (the size along the ascender direction) of the superscript font.
+
+`fwdTypoAscender`
+
+Specifies the typographic ascender value for the font.
+
+`fwdTypoDescender`
+
+Specifies the typographic descender value for the font. This value specifies the signed displacement of the lowest descender from the baseline.
+
+`fwdTypoLineGap`
+
+Specifies the typographic line gap for the font.
+
+`fwdUnderscorePosition`
+
+Specifies the suggested displacement, in font units, from the base line to the middle of the underscore bar.
+
+`fwdUnderscoreSize`
+
+Specifies the suggested width of the underscore bar, in font units.
+
+`fwdUnitsPerEm`
+
+Specifies the em-height of the font.
+
+`fwdWinAscender`
+
+Specifies the Windows ascender value for the font.
+
+`fwdWinDescender`
+
+Specifies the Windows descender value for the font.
+
+`fwdXHeight`
+
+Specifies the height of the optical line describing the height of the lowercase 'x' in font units. This might not be the same as the measured height of the lowercase 'x.' A value of zero indicates that this member is undefined.
+
+`jWinCharSet`
+
+Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store DEFAULT_CHARSET in this field. This member can be one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -573,11 +598,10 @@ This font supports the Vietnamese character set.
 </td>
 </tr>
 </table>
-        
-            `jWinPitchAndFamily`
 
-            Specifies the pitch of the font. The two low-order bits specify the pitch of the font and can be one of the following values:
+`jWinPitchAndFamily`
 
+Specifies the pitch of the font. The two low-order bits specify the pitch of the font and can be one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -603,11 +627,9 @@ For variable pitch fonts
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Bits 4 through 7 of this member specify the font family and can be one of the following values:
-
 <table>
 <tr>
 <th>Value</th>
@@ -674,65 +696,65 @@ Fonts with variable stroke width (proportionally spaced) and without serifs, suc
 </td>
 </tr>
 </table>
-        
-            `lCharBias`
 
-            Specifies the character bias. This value is TrueType-specific and should be set to zero by all other font providers.
-        
-            `lEmbedId`
+`lCharBias`
 
-            Specifies the Embedding ID of the font. This value is TrueType-specific and should be set to zero by all other font providers.
-        
-            `lItalicAngle`
+Specifies the character bias. This value is TrueType-specific and should be set to zero by all other font providers.
 
-            Specifies the italic angle of the font. This value is TrueType-specific and should be set to zero by all other font providers.
-        
-            `panose`
+`lEmbedId`
 
-            Is an array of 10 bytes used to describe the visual characteristics of a given typeface. These characteristics are then used to associate the font with other fonts of similar appearance having different names. See the Window SDK documentation for information about the PANOSE structure.
-        
-            `ptlAspect`
+Specifies the Embedding ID of the font. This value is TrueType-specific and should be set to zero by all other font providers.
 
-            Specifies a POINTL structure that contains the aspect ratio of the pixel centers for which the bitmap font was designed. This value is used only by bitmap fonts.
-        
-            `ptlBaseline`
+`lItalicAngle`
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569166">POINTL</a> structure that contains the intended writing direction of this font. For example, a typical Latin font specifies a value of (1,0).
-        
-            `ptlCaret`
+Specifies the italic angle of the font. This value is TrueType-specific and should be set to zero by all other font providers.
 
-            Specifies a POINTL structure that contains the direction of the ascender direction of the font. For example, the value for a nonitalicized Latin font is (0,1) while an italicized Latin font might specify a value of (2,5).
-        
-            `rclFontBox`
+`panose`
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that describes the bounding box of all glyphs in the font in design space.
-        
-            `ulPanoseCulture`
+Is an array of 10 bytes used to describe the visual characteristics of a given typeface. These characteristics are then used to associate the font with other fonts of similar appearance having different names. See the Window SDK documentation for information about the PANOSE structure.
 
-            Specifies the manner in which to interpret the panose number. This number should be set to FM_PANOSE_CULTURE_LATIN for Latin-based fonts. See the Microsoft Window SDK documentation for information about the PANOSE structure.
-        
-            `usWinWeight`
+`ptlAspect`
 
-            Specifies the weight of the font in the range 0 to 1000 (for example, 400 is normal and 700 is bold). This value is provided to the application in the <b>lfWeight</b> member of the Win32 LOGFONT structure.
-        
-            `wcBreakChar`
+Specifies a POINTL structure that contains the aspect ratio of the pixel centers for which the bitmap font was designed. This value is used only by bitmap fonts.
 
-            Specifies the code point of the space character or its equivalent.
-        
-            `wcDefaultChar`
+`ptlBaseline`
 
-            Specifies the character to be substituted when an application requests a character that is not supported by the font.
-        
-            `wcFirstChar`
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569166">POINTL</a> structure that contains the intended writing direction of this font. For example, a typical Latin font specifies a value of (1,0).
 
-            Specifies the supported character with the smallest Unicode character code.
-        
-            `wcLastChar`
+`ptlCaret`
 
-            Specifies the supported character with the largest Unicode character code.
+Specifies a POINTL structure that contains the direction of the ascender direction of the font. For example, the value for a nonitalicized Latin font is (0,1) while an italicized Latin font might specify a value of (2,5).
 
-    ## Remarks
-        The PRINTIFI32 structure is available in Windows Server 2003 SP1 and later. Because this structure is of fixed size, and it is guaranteed not to change across architectures or operating system versions, it can be used for binary file layouts. Unidrv UFM files are laid out in the format described in this structure, for all platforms. Pscript5 NTF files use the platform-specific version of this structure.
+`rclFontBox`
+
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that describes the bounding box of all glyphs in the font in design space.
+
+`ulPanoseCulture`
+
+Specifies the manner in which to interpret the panose number. This number should be set to FM_PANOSE_CULTURE_LATIN for Latin-based fonts. See the Microsoft Window SDK documentation for information about the PANOSE structure.
+
+`usWinWeight`
+
+Specifies the weight of the font in the range 0 to 1000 (for example, 400 is normal and 700 is bold). This value is provided to the application in the <b>lfWeight</b> member of the Win32 LOGFONT structure.
+
+`wcBreakChar`
+
+Specifies the code point of the space character or its equivalent.
+
+`wcDefaultChar`
+
+Specifies the character to be substituted when an application requests a character that is not supported by the font.
+
+`wcFirstChar`
+
+Specifies the supported character with the smallest Unicode character code.
+
+`wcLastChar`
+
+Specifies the supported character with the largest Unicode character code.
+
+## Remarks
+The PRINTIFI32 structure is available in Windows Server 2003 SP1 and later. Because this structure is of fixed size, and it is guaranteed not to change across architectures or operating system versions, it can be used for binary file layouts. Unidrv UFM files are laid out in the format described in this structure, for all platforms. Pscript5 NTF files use the platform-specific version of this structure.
 
 Additional information for a typeface can optionally be specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567416">IFIEXTRA</a> structure.
 
@@ -750,13 +772,10 @@ The coordinate system in the font/notional space is such that the y coordinate i
 | **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
-</dt>
-</dl>
+
  
 
  

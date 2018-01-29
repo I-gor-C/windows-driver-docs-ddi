@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4663cc8e-ce69-4454-afff-03d4a8d82dfb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_PRESENT_MODEL, D3DKMT_PRESENT_MODEL
+ms.keywords : d3dkmthk/D3DKMT_PM_REDIRECTED_GDI_SYSMEM, d3dkmthk/D3DKMT_PM_REDIRECTED_BLT, D3DKMT_PRESENT_MODEL, d3dkmthk/D3DKMT_PM_REDIRECTED_FLIP, d3dkmthk/D3DKMT_PM_SCREENCAPTUREFENCE, d3dkmthk/D3DKMT_PRESENT_MODEL, D3DKMT_PM_UNINITIALIZED, D3DKMT_PRESENT_MODEL enumeration [Display Devices], D3DKMT_PM_REDIRECTED_COMPOSITION, _D3DKMT_PRESENT_MODEL, D3DKMT_PM_REDIRECTED_BLT, d3dkmthk/D3DKMT_PM_UNINITIALIZED, d3dkmthk/D3DKMT_PM_REDIRECTED_VISTABLT, d3dkmthk/D3DKMT_PM_REDIRECTED_COMPOSITION, d3dkmthk/D3DKMT_PM_REDIRECTED_GDI, D3DKMT_PM_REDIRECTED_GDI_SYSMEM, D3DKMT_PM_SCREENCAPTUREFENCE, D3DKMT_PM_REDIRECTED_FLIP, D3DKMT_PM_REDIRECTED_GDI, D3DKMT_PM_REDIRECTED_VISTABLT, display.d3dkmt_present_model, OpenGL_Structs_b2e4c00b-9072-449d-84c0-7958200e7d9a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_PRESENT_MODEL is supported beginning with the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_PRESENT_MODEL
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_PRESENT_MODEL
 ---
 
@@ -91,6 +95,11 @@ typedef enum _D3DKMT_PRESENT_MODEL {
 </tr>
 
 <tr>
+<td>D3DKMT_PM_SURFACECOMPLETE</td>
+<td></td>
+</tr>
+
+<tr>
 <td>D3DKMT_PM_UNINITIALIZED</td>
 <td>The present-operation model is not initialized.</td>
 </tr>
@@ -107,11 +116,8 @@ typedef enum _D3DKMT_PRESENT_MODEL {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
-</dt>
-</dl>
+
  
 
  

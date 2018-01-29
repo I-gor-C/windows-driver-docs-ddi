@@ -7,8 +7,8 @@ old-location : netvista\rilpersofeature_2.htm
 old-project : netvista
 ms.assetid : 6969c6bd-6f8c-4f78-af99-48b18542a5bf
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPERSOFEATURE, RILPERSOFEATURE
+ms.date : 1/18/2018
+ms.keywords : RIL_PERSOFEATURE_3GPP2_NETTYPE1, RIL_PERSOFEATURE_3GPP2_HRPD, rilapitypes/RIL_PERSOFEATURE_3GPP_USIM, rilapitypes/RILPERSOFEATURE, rilapitypes/RIL_PERSOFEATURE_3GPP2_HRPD, RIL_PERSOFEATURE_3GPP2_CORP, RIL_PERSOFEATURE_ALL, RIL_PERSOFEATURE_3GPP_SP, RIL_PERSOFEATURE_3GPP2_UIM, RIL_PERSOFEATURE_3GPP_NET, rilapitypes/RIL_PERSOFEATURE_3GPP2_NETTYPE2, rilapitypes/RIL_PERSOFEATURE_3GPP2_CORP, RIL_PERSOFEATURE_3GPP_NETSUB, RILPERSOFEATURE enumeration [Network Drivers Starting with Windows Vista], RIL_PERSOFEATURE_3GPP2_NETTYPE2, RILPERSOFEATURE, rilapitypes/RIL_PERSOFEATURE_3GPP2_UIM, RIL_PERSOFEATURE_3GPP_CORP, rilapitypes/RIL_PERSOFEATURE_3GPP_SP, rilapitypes/RIL_PERSOFEATURE_3GPP_CORP, rilapitypes/RIL_PERSOFEATURE_3GPP_NETSUB, rilapitypes/RIL_PERSOFEATURE_3GPP2_NETTYPE1, rilapitypes/RIL_PERSOFEATURE_3GPP2_SP, netvista.rilpersofeature_2, RIL_PERSOFEATURE_3GPP_USIM, rilapitypes/RIL_PERSOFEATURE_3GPP_NET, RIL_PERSOFEATURE_3GPP2_SP, rilapitypes/RIL_PERSOFEATURE_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPERSOFEATURE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPERSOFEATURE
 req.product : Windows 10 or later.
 ---
@@ -117,6 +121,11 @@ typedef enum _RILPERSOFEATURE {
 
 <tr>
 <td>RIL_PERSOFEATURE_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PERSOFEATURE_NONE</td>
 <td></td>
 </tr>
 </table>

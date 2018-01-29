@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 81e5b26d-78b5-4ee7-a47c-fc92d01752d1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortBusy
+ms.keywords : storport/StorPortBusy, storage.storportbusy, StorPortBusy, StorPortBusy routine [Storage Devices], storprt_b4765f8e-c48f-4920-bd1a-1ff9dbdd8656.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortBusy
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ The library of support routines provided by the SCSI Port driver does not includ
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportready.md">StorPortReady</a>
-</dt>
-</dl>
+
  
 
  

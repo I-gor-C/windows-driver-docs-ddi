@@ -7,8 +7,8 @@ old-location : debugger\readdebuggerdata.htm
 old-project : debugger
 ms.assetid : 54e4d3b9-db9d-4844-938f-c8ca8819d182
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugDataSpaces4, IDebugDataSpaces4::ReadDebuggerData, ReadDebuggerData
+ms.date : 1/19/2018
+ms.keywords : IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces_618b8518-3e32-4518-8e4b-38f66484d554.xml, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces4 interface, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces::ReadDebuggerData, ReadDebuggerData, IDebugDataSpaces3::ReadDebuggerData, debugger.readdebuggerdata, IDebugDataSpaces3 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces2 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces2::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces3::ReadDebuggerData, IDebugDataSpaces4::ReadDebuggerData, dbgeng/IDebugDataSpaces::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces interface [Windows Debugging], ReadDebuggerData method, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadDebuggerData method, dbgeng/IDebugDataSpaces2::ReadDebuggerData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugDataSpaces.ReadDebuggerData,IDebugDataSpaces2.ReadDebuggerData,IDebugDataSpaces3.ReadDebuggerData,IDebugDataSpaces4.ReadDebuggerData
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,21 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 
 # ReadDebuggerData method
-The <b>ReadDebuggerData</b> method returns information about the target that the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> has queried or determined during the current session.  The available information includes the locations of certain key target kernel locations, specific status values, and a number of other things.
+The <b>ReadDebuggerData</b> method returns information about the target that the <a href="https://msdn.microsoft.com/fa52a1f0-9397-48a5-acbd-ce5347c0baef">debugger engine</a> has queried or determined during the current session.  The available information includes the locations of certain key target kernel locations, specific status values, and a number of other things.
 
 ## Syntax
 
@@ -54,7 +58,6 @@ HRESULT ReadDebuggerData(
 `Index`
 
 Specifies the index of the data to retrieve.  The following values are valid:
-
 <table>
 <tr>
 <th>Value</th>
@@ -994,11 +997,9 @@ Returns the status of the writer of the dump file.  This value is operating syst
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The following values are valid for Windows XP and later versions of Windows:
-
 <table>
 <tr>
 <th>Value</th>
@@ -1243,11 +1244,9 @@ ULONG64
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The following values are valid for Windows Server 2003 and later versions of Windows:
-
 <table>
 <tr>
 <th>Value</th>
@@ -1611,11 +1610,23 @@ Receives the number of bytes used in the buffer <i>Buffer</i>.  If <i>DataSize</
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
 
- 
+</td>
+</tr>
+</table> 
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -1623,7 +1634,7 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 
 Some or all of the values may be unavailable in certain debugging sessions.  For example, some of the values are only available for particular versions of the operating system.
 
-For details on the different values returned by <b>ReadDebuggerData</b>, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich, the Microsoft Windows SDK, and the Windows Driver Kit (WDK).</p>
+For details on the different values returned by <b>ReadDebuggerData</b>, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich, the Microsoft Windows SDK, and the Windows Driver Kit (WDK).
 
 ## Requirements
 | &nbsp; | &nbsp; |

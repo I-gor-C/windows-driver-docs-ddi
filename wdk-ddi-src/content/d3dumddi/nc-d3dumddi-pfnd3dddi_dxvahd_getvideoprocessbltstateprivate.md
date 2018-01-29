@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bb4c04cf-0125-47bf-8fc8-88d807e7b6ad
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.getvideoprocessbltstateprivate, GetVideoProcessBltStatePrivate callback function [Display Devices], GetVideoProcessBltStatePrivate, PFND3DDDI_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE, PFND3DDDI_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE, d3dumddi/GetVideoProcessBltStatePrivate, UserModeDisplayDriver_Functions_e39248ae-aa92-4c0a-aebc-a48f7d1e24a7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : GetVideoProcessBltStatePrivate is supported beginnin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetVideoProcessBltStatePrivate
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ HRESULT Pfnd3dddiDxvahdGetvideoprocessbltstateprivate(
 ## Return Value
 
 The <i>GetVideoProcessBltStatePrivate</i> function returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The bitblt state data is successfully retrieved. 
+</dl>
+</td>
+<td width="60%">
+The bitblt state data is successfully retrieved. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>GetVideoProcessBltStatePrivate</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>GetVideoProcessBltStatePrivate</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -86,11 +112,8 @@ The <i>GetVideoProcessBltStatePrivate</i> function returns one of the following 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_getvideoprocessbltstateprivate.md">D3DDDIARG_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\dot11ext_ihv_ui_request.htm
 old-project : netvista
 ms.assetid : 028e3445-320a-41c8-9577-219f9fbabe40
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11EXT_IHV_UI_REQUEST, *PDOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST
+ms.date : 1/18/2018
+ms.keywords : Native_802.11_data_types_2d145576-2a7d-4fff-ae75-a99e27ebbb18.xml, wlanihv/PDOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST, _DOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST structure [Network Drivers Starting with Windows Vista], PDOT11EXT_IHV_UI_REQUEST, wlanihv/DOT11EXT_IHV_UI_REQUEST, netvista.dot11ext_ihv_ui_request, PDOT11EXT_IHV_UI_REQUEST structure pointer [Network Drivers Starting with Windows Vista], *PDOT11EXT_IHV_UI_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11EXT_IHV_UI_REQUEST
-req.alt-loc : wlanihv.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DOT11EXT_IHV_UI_REQUEST, *PDOT11EXT_IHV_UI_REQUEST
 req.product : Windows 10 or later.
 ---
 
 # _DOT11EXT_IHV_UI_REQUEST structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11EXT_IHV_UI_REQUEST structure specifies a request made by the IHV Extensions DLL to the IHV
+  UI extensions DLL.
 
 ## Syntax
 ````
@@ -51,40 +56,40 @@ typedef struct _DOT11EXT_IHV_UI_REQUEST {
 
 ## Members
 
-        
-            `dwByteCount`
 
-            The length, in bytes, within the buffer referenced through the 
+`dwByteCount`
+
+The length, in bytes, within the buffer referenced through the 
      <b>pvUIRequest</b> member.
-        
-            `dwSessionId`
 
-            The session identifier (ID) of the current user.
-        
-            `guidUIRequest`
+`dwSessionId`
 
-            A globally unique ID (GUID) which identifies the UI request.
-        
-            `pvUIRequest`
+The session identifier (ID) of the current user.
 
-            A pointer to a buffer that contains the request data in a format defined by the independent
+`guidUIRequest`
+
+A globally unique ID (GUID) which identifies the UI request.
+
+`pvUIRequest`
+
+A pointer to a buffer that contains the request data in a format defined by the independent
      hardware vendor (IHV).
-        
-            `UIPageClsid`
 
-            The 
+`UIPageClsid`
+
+The 
      <b>IWizardExtension</b> COM class ID (CLSID) of the target UI page that will handle this request. For
      more information about the 
      <b>IWizardExtension</b> COM interface, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=56607">IWizardExtension COM Interface</a>.
 
-    ## Remarks
-        The IHV Extensions DLL can issue requests to the IHV UI extensions DLL to interact with the user for
+## Remarks
+The IHV Extensions DLL can issue requests to the IHV UI extensions DLL to interact with the user for
     input to network UI extensions defined by the IHV. The IHV Extensions DLL initiates these requests
     through calls to the 
     <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">Dot11ExtSendUIRequest</a> or 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv_query_ui_request.md">
-    Dot11ExtIhvQueryUIRequest</a> functions.
+    <mshelp:link keywords="netvista.dot11extihvqueryuirequest" tabindex="0"><i>
+    Dot11ExtIhvQueryUIRequest</i></mshelp:link> functions.
 
 For each UI request, the DLL must format a DOT11EXT_IHV_UI_REQUEST structure to define the request,
     and must set the 
@@ -98,22 +103,17 @@ For each UI request, the DLL must format a DOT11EXT_IHV_UI_REQUEST structure to 
 | **Minimum UMDF version** |  |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_is_ui_request_pending.md">
-   Dot11ExtIhvIsUIRequestPending</a>
-</dt>
-<dt>
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_query_ui_request.md">Dot11ExtIhvQueryUIRequest</a>
-</dt>
-<dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">Dot11ExtSendUIRequest</a>
-</dt>
-</dl>
- 
+
+<mshelp:link keywords="netvista.dot11extihvisuirequestpending" tabindex="0"><i>
+   Dot11ExtIhvIsUIRequestPending</i></mshelp:link>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_query_ui_request.md">Dot11ExtIhvQueryUIRequest</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_UI_REQUEST structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_UI_REQUEST structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

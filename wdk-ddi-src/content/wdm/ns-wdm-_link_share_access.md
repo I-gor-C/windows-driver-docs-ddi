@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : CD9E3356-45C3-4F56-9EB3-45FB4B3F054B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _LINK_SHARE_ACCESS, *PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS
+ms.keywords : "*PLINK_SHARE_ACCESS, PLINK_SHARE_ACCESS, PLINK_SHARE_ACCESS structure pointer [Kernel-Mode Driver Architecture], LINK_SHARE_ACCESS structure [Kernel-Mode Driver Architecture], kernel.link_share_access, LINK_SHARE_ACCESS, _LINK_SHARE_ACCESS, wdm/PLINK_SHARE_ACCESS, wdm/LINK_SHARE_ACCESS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LINK_SHARE_ACCESS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS"
 req.product : Windows 10 or later.
 ---
@@ -50,6 +54,19 @@ typedef struct _LINK_SHARE_ACCESS {
 ## Members
 
 
+`Deleters`
+
+File associated with the file object has been 
+      opened for delete access.
+
+`OpenCount`
+
+The number of open requests to the file.
+
+`SharedDelete`
+
+File associated with the file object has been opened for delete sharing access.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -59,16 +76,12 @@ typedef struct _LINK_SHARE_ACCESS {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
-</dt>
-</dl>
+
  
 
  

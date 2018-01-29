@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A05617FB-5105-4FCA-807F-C49F32BD1399
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE
+ms.keywords : pepfx/PEP_PROCESSOR_IDLE_STATE_UPDATE, PPEP_PROCESSOR_IDLE_STATE_UPDATE structure pointer [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_STATE_UPDATE, _PEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE structure [Kernel-Mode Driver Architecture], PEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE, kernel.pep_processor_idle_state_update, pepfx/PPEP_PROCESSOR_IDLE_STATE_UPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PROCESSOR_IDLE_STATE_UPDATE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE
 ---
 
 # _PEP_PROCESSOR_IDLE_STATE_UPDATE structure
@@ -48,21 +52,21 @@ typedef struct _PEP_PROCESSOR_IDLE_STATE_UPDATE {
 
 ## Members
 
-        
-            `BreakEvenDuration`
 
-            The minimum amount of time, specified in 100-nanosecond units, that the platform must spend in this idle state to make a transition to this state worthwhile. PoFx uses this member value as a hint to avoid switching the platform to an idle state unless the platform is likely to remain in this state for at least the amount of time specified by <b>BreakEvenDuration</b>.
-        
-            `Latency`
+`BreakEvenDuration`
 
-            The worst-case latency, in 100-nanosecond units, that the platform requires to wake from this platform idle state in response to a wake event.
-        
-            `Version`
+The minimum amount of time, specified in 100-nanosecond units, that the platform must spend in this idle state to make a transition to this state worthwhile. PoFx uses this member value as a hint to avoid switching the platform to an idle state unless the platform is likely to remain in this state for at least the amount of time specified by <b>BreakEvenDuration</b>.
 
-            The version number of this structure. Set this member to PEP_PROCESSOR_IDLE_STATE_UPDATE_VERSION.
+`Latency`
 
-    ## Remarks
-        The <i>Update</i> parameter to the <a href="..\pepfx\nc-pepfx-pofxcallbackupdateprocessoridlestate.md">UpdateProcessorIdleState</a> routine is a pointer to a <b>PEP_PROCESSOR_IDLE_STATE_UPDATE</b> structure. This routine updates the properties of the specified idle state for a processor. The PEP must not call this routine until it has responded to a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186824">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a> notification for this processor.
+The worst-case latency, in 100-nanosecond units, that the platform requires to wake from this platform idle state in response to a wake event.
+
+`Version`
+
+The version number of this structure. Set this member to PEP_PROCESSOR_IDLE_STATE_UPDATE_VERSION.
+
+## Remarks
+The <i>Update</i> parameter to the <a href="..\pepfx\nc-pepfx-pofxcallbackupdateprocessoridlestate.md">UpdateProcessorIdleState</a> routine is a pointer to a <b>PEP_PROCESSOR_IDLE_STATE_UPDATE</b> structure. This routine updates the properties of the specified idle state for a processor. The PEP must not call this routine until it has responded to a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186824">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a> notification for this processor.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +76,12 @@ typedef struct _PEP_PROCESSOR_IDLE_STATE_UPDATE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186824">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a>
-</dt>
-<dt>
 <a href="..\pepfx\nc-pepfx-pofxcallbackupdateprocessoridlestate.md">UpdateProcessorIdleState</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186824">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a>
+
  
 
  

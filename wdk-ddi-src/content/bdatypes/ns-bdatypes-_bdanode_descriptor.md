@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 324eddca-f619-44e2-b32f-34cefd4c9cdc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDANODE_DESCRIPTOR, *PBDANODE_DESCRIPTOR, BDANODE_DESCRIPTOR
+ms.keywords : PBDANODE_DESCRIPTOR, BDANODE_DESCRIPTOR, bdaref_0610ecfc-d15b-4031-9d88-b041ef21e2fb.xml, PBDANODE_DESCRIPTOR structure pointer [Streaming Media Devices], _BDANODE_DESCRIPTOR, bdatypes/BDANODE_DESCRIPTOR, bdatypes/PBDANODE_DESCRIPTOR, *PBDANODE_DESCRIPTOR, BDANODE_DESCRIPTOR structure [Streaming Media Devices], stream.bdanode_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDANODE_DESCRIPTOR
-req.alt-loc : bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBDANODE_DESCRIPTOR, BDANODE_DESCRIPTOR"
 ---
 
@@ -48,18 +52,18 @@ typedef struct _BDANODE_DESCRIPTOR {
 
 ## Members
 
-        
-            `guidFunction`
 
-            GUID that describes the node's function. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff556529">BDA Node Category GUIDs</a> for a list of these GUIDs.
-        
-            `guidName`
+`guidFunction`
 
-            GUID that can be used to store a string containing the name of the node. Applications can search the registry for this GUID to obtain the node's name and then can display the name.
-        
-            `ulBdaNodeType`
+GUID that describes the node's function. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff556529">BDA Node Category GUIDs</a> for a list of these GUIDs.
 
-            The node type as the BDA template topology identifies it. The BDA node-type identifier typically corresponds to the index of the element in the zero-based array of node types. This array of node types is an array of KSNODE_DESCRIPTOR structures.
+`guidName`
+
+GUID that can be used to store a string containing the name of the node. Applications can search the registry for this GUID to obtain the node's name and then can display the name.
+
+`ulBdaNodeType`
+
+The node type as the BDA template topology identifies it. The BDA node-type identifier typically corresponds to the index of the element in the zero-based array of node types. This array of node types is an array of KSNODE_DESCRIPTOR structures.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _BDANODE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | bdatypes.h (include Bdatypes.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556529">BDA Node Category GUIDs</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 80ffa1dc-aa4f-40b4-936b-7e441b3b123d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_RENAME_KEY_INFORMATION, *PREG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION
+ms.keywords : REG_RENAME_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_f6416cfd-5ace-4366-81a5-87b233551c7a.xml, kernel.reg_rename_key_information, PREG_RENAME_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _REG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION, PREG_RENAME_KEY_INFORMATION, *PREG_RENAME_KEY_INFORMATION, wdm/PREG_RENAME_KEY_INFORMATION, wdm/REG_RENAME_KEY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_RENAME_KEY_INFORMATION
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PREG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION"
 req.product : Windows 10 or later.
 ---
@@ -51,29 +55,29 @@ typedef struct _REG_RENAME_KEY_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `NewName`
+`CallContext`
 
-            A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the new name for the registry key.
-        
-            `Object`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
 
-            A pointer to the registry key object for the key whose name is about to be changed.
-        
-            `ObjectContext`
+`NewName`
 
-            A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Reserved`
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the new name for the registry key.
 
-            This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+`Object`
 
-    ## Remarks
-        Note that when a key is renamed, only the last component of the path can be changed.
+A pointer to the registry key object for the key whose name is about to be changed.
+
+`ObjectContext`
+
+A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`Reserved`
+
+This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+## Remarks
+Note that when a key is renamed, only the last component of the path can be changed.
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
@@ -85,16 +89,12 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
  
 
  

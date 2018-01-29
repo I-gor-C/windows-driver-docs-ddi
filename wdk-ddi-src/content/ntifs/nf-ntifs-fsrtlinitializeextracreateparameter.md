@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e3be12e4-84f3-4bd5-af9a-26ad89948e50
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlInitializeExtraCreateParameter
+ms.keywords : fsrtlref_266d4d18-e024-42e8-8ca1-fa8b6fabef9b.xml, FsRtlInitializeExtraCreateParameter, ntifs/FsRtlInitializeExtraCreateParameter, ifsk.fsrtlinitializeextracreateparameter, FsRtlInitializeExtraCreateParameter routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The FsRtlInitializeExtraCreateParameter routine is a
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlInitializeExtraCreateParameter
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -97,14 +101,10 @@ None
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameter.md">FsRtlAllocateExtraCreateParameter</a>
-</dt>
-<dt>
 <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameter.md">FsRtlAllocateExtraCreateParameter</a>
+
  
 
  

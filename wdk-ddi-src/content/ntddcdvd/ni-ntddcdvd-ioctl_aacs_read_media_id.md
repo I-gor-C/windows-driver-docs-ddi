@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e56f6af5-0391-4044-b6b3-efb27b511db6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.keywords : storage.ioctl_aacs_read_media_id, IOCTL_AACS_READ_MEDIA_ID control code [Storage Devices], IOCTL_AACS_READ_MEDIA_ID, ntddcdvd/IOCTL_AACS_READ_MEDIA_ID, k307_1f0ffe88-e59a-44e5-bec0-247d38478be8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_AACS_READ_MEDIA_ID
-req.alt-loc : Ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_READ_MEDIA_ID IOCTL
@@ -59,13 +63,12 @@ Length of a <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_media_id.md">AACS_MEDIA_ID</a
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes transferred. The <b>Status</b> field is set to STATUS_SUCCESS or possibly STATUS_INSUFFICIENT_RESOURCES.
 
-    ## Remarks
-        The IOCTL_AACS_READ_MEDIA_ID request corresponds to the part of the AACS authentication protocol that is responsible for transferring the media identifier. For a complete description of this protocol, see the <i>Advanced Access Content System, Introduction and Common Cryptographic Elements</i> specification that is published by Advanced Access Content System Licensing Administrator (AACS LA).
+## Remarks
+The IOCTL_AACS_READ_MEDIA_ID request corresponds to the part of the AACS authentication protocol that is responsible for transferring the media identifier. For a complete description of this protocol, see the <i>Advanced Access Content System, Introduction and Common Cryptographic Elements</i> specification that is published by Advanced Access Content System Licensing Administrator (AACS LA).
 
-The AGID is automatically released after the IOCTL_AACS_READ_MEDIA_ID request completes.</p>
+The AGID is automatically released after the IOCTL_AACS_READ_MEDIA_ID request completes.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -7,8 +7,8 @@ old-location : netvista\rilcallforwardingsettingsparammask.htm
 old-project : netvista
 ms.assetid : 0da4e19f-9e7b-4986-bdb1-fc59e177f3fa
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLFORWARDINGSETTINGSPARAMMASK, RILCALLFORWARDINGSETTINGSPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILCALLFORWARDINGSETTINGSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_CFS_ALL, RIL_PARAM_CFS_ALL, ntddrilapitypes/RIL_PARAM_CFS_ADDRESS, RIL_PARAM_CFS_ADDRESS, ntddrilapitypes/RIL_PARAM_CFS_DELAYTIME, ntddrilapitypes/RIL_PARAM_CFS_SUBADDRESS, RIL_PARAM_CFS_SUBADDRESS, netvista.rilcallforwardingsettingsparammask, RIL_PARAM_CFS_DELAYTIME, RIL_PARAM_CFS_INFOCLASSES, ntddrilapitypes/RIL_PARAM_CFS_INFOCLASSES, ntddrilapitypes/RILCALLFORWARDINGSETTINGSPARAMMASK, RILCALLFORWARDINGSETTINGSPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLFORWARDINGSETTINGSPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLFORWARDINGSETTINGSPARAMMASK
 ---
 
@@ -69,6 +73,11 @@ typedef enum _RILCALLFORWARDINGSETTINGSPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_CFS_INFOCLASSES</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_CFS_STATUS</td>
 <td></td>
 </tr>
 

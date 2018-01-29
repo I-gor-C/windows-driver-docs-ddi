@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9d4a317d-bb0c-47d4-b9f2-e668adc4d0d4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DMM_ESCAPE, D3DKMT_DMM_ESCAPE
+ms.keywords : OpenGL_Structs_670cf3b6-6c85-4ddc-af88-8891e3f8f6ce.xml, d3dkmthk/D3DKMT_DMM_ESCAPE, _D3DKMT_DMM_ESCAPE, D3DKMT_DMM_ESCAPE structure [Display Devices], display.d3dkmt_dmm_escape, D3DKMT_DMM_ESCAPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DMM_ESCAPE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DMM_ESCAPE
 ---
 
@@ -52,22 +56,22 @@ typedef struct _D3DKMT_DMM_ESCAPE {
 
 ## Members
 
-        
-            `Data`
 
-            
-        
-            `MinRequiredBufferSize`
+`Data`
 
-            minimum required size of Data[] array to contain requested data.
-        
-            `ProvidedBufferSize`
 
-            actual size of Data[] array, in bytes.
-        
-            `Type`
 
-            
+`MinRequiredBufferSize`
+
+minimum required size of Data[] array to contain requested data.
+
+`ProvidedBufferSize`
+
+actual size of Data[] array, in bytes.
+
+`Type`
+
+
 
 
 ## Requirements
@@ -78,16 +82,12 @@ typedef struct _D3DKMT_DMM_ESCAPE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
-</dt>
-</dl>
+
  
 
  

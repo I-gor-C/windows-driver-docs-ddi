@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 24a7745d-28f8-4f5a-9f51-37ad2d0ffa0b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGateCaptureThreshold
+ms.keywords : KsGateCaptureThreshold, KsGateCaptureThreshold function [Streaming Media Devices], stream.ksgatecapturethreshold, avfunc_9fd4ddfc-f715-45da-936e-9527b8ec4a25.xml, ks/KsGateCaptureThreshold
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGateCaptureThreshold
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -79,47 +83,32 @@ The call is made using interlocked functions and is thus synchronous with respec
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgategetstateunsafe.md">KsGateGetStateUnsafe</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgateaddoninputtoand.md">KsGateAddOnInputToAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoninputtoor.md">KsGateAddOnInputToOr</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoffinputtoor.md">KsGateAddOffInputToOr</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoninputfromor.md">KsGateRemoveOnInputFromOr</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+
 <a href="..\ks\nf-ks-ksgateremoveoffinputfromor.md">KsGateRemoveOffInputFromOr</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksgateaddoninputtoor.md">KsGateAddOnInputToOr</a>
+
 <a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksgateaddoffinputtoor.md">KsGateAddOffInputToOr</a>
+
+<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
+
+<a href="..\ks\nf-ks-ksgateremoveoninputfromor.md">KsGateRemoveOnInputFromOr</a>
+
+<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
+
+<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
+
 <a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
+
+<a href="..\ks\nf-ks-ksgategetstateunsafe.md">KsGateGetStateUnsafe</a>
+
  
 
  

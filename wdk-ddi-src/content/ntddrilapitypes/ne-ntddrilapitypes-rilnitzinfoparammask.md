@@ -7,8 +7,8 @@ old-location : netvista\rilnitzinfoparammask.htm
 old-project : netvista
 ms.assetid : bdf1505f-2a84-48a3-9534-df83237ab7bb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILNITZINFOPARAMMASK, RILNITZINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILNITZINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_NITZ_SYSTEMTIME, ntddrilapitypes/RIL_PARAM_NITZ_SYSTEMTYPE, RIL_PARAM_NITZ_TIMEZONEOFFSET, ntddrilapitypes/RIL_PARAM_NITZ_ALL, ntddrilapitypes/RIL_PARAM_NITZ_DAYLIGHTSAVINGOFFSET, ntddrilapitypes/RIL_PARAM_NITZ_TIMEZONEOFFSET, RIL_PARAM_NITZ_SYSTEMTIME, RIL_PARAM_NITZ_ALL, ntddrilapitypes/RILNITZINFOPARAMMASK, RIL_PARAM_NITZ_DAYLIGHTSAVINGOFFSET, RIL_PARAM_NITZ_SYSTEMTYPE, netvista.rilnitzinfoparammask, RILNITZINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILNITZINFOPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILNITZINFOPARAMMASK
 ---
 
@@ -59,6 +63,11 @@ typedef enum _RILNITZINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_NITZ_DAYLIGHTSAVINGOFFSET</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_NITZ_EXECUTOR</td>
 <td></td>
 </tr>
 

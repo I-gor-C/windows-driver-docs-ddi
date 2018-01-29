@@ -7,8 +7,8 @@ old-location : netvista\ndis_nic_switch_capabilities.htm
 old-project : netvista
 ms.assetid : bc4b56bd-583f-4b41-b5a7-90958ce65f42
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES
+ms.date : 1/18/2018
+ms.keywords : NDIS_NIC_SWITCH_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_CAPABILITIES, PNDIS_NIC_SWITCH_CAPABILITIES, netvista.ndis_nic_switch_capabilities, ntddndis/PNDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES, virtual_machine_queue_ref_b71fb086-5613-4ebb-ac19-97bd3bd9c55f.xml, _NDIS_NIC_SWITCH_CAPABILITIES, ntddndis/NDIS_NIC_SWITCH_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.20 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_NIC_SWITCH_CAPABILITIES
-req.alt-loc : Ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PNDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES
 ---
 
 # _NDIS_NIC_SWITCH_CAPABILITIES structure
@@ -82,190 +86,178 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 
 ## Members
 
-        
-            `Flags`
 
-            A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
-        
-            `Header`
+`Flags`
 
-            The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
+
+`Header`
+
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values:
-        
-            `MaxNumMacAddresses`
 
-            A ULONG value that specifies the maximum number of unicast MAC address filters that are available on the NIC switch.  
+`MaxNumMacAddresses`
 
-<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>. This enables each VPort (including the default VPort) to be configured to have at least one unicast MAC address filter.</div>
-<div> </div>
-        
-            `MaxNumQueuePairs`
+A ULONG value that specifies the maximum number of unicast MAC address filters that are available on the NIC switch.  
+<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>. This enables each VPort (including the default VPort) to be configured to have at least one unicast MAC address filter.</div><div> </div>
 
-            A ULONG value that specifies the maximum number of queue pairs that can be assigned to all VPorts. This includes the default VPort that is attached to the PF.
+`MaxNumQueuePairs`
 
-<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>.</div>
-<div> </div>
-        
-            `MaxNumQueuePairsForDefaultVPort`
+A ULONG value that specifies the maximum number of queue pairs that can be assigned to all VPorts. This includes the default VPort that is attached to the PF.
+<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>.</div><div> </div>
 
-            A ULONG value that specifies the maximum number of queue pairs that can be assigned to the default VPort. 
+`MaxNumQueuePairsForDefaultVPort`
+
+A ULONG value that specifies the maximum number of queue pairs that can be assigned to the default VPort. 
 
 This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
-        
-            `MaxNumQueuePairsPerNonDefaultVPort`
 
-            A ULONG value that specifies the maximum number of queue pairs that can be assigned to a nondefault VPort. 
+`MaxNumQueuePairsPerNonDefaultVPort`
+
+A ULONG value that specifies the maximum number of queue pairs that can be assigned to a nondefault VPort. 
 
 This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
-        
-            `MaxNumRssCapableNonDefaultPFVPorts`
 
-            A ULONG value that specifies the maximum number of RSS-capable non-default PFVPorts.
-        
-            `MaxNumSwitches`
+`MaxNumRssCapableNonDefaultPFVPorts`
 
-            A ULONG value that specifies the maximum number of switches that can be created on the network adapter's PCI Express (PCIe) Physical Function (PF).
+A ULONG value that specifies the maximum number of RSS-capable non-default PFVPorts.
 
+`MaxNumSwitches`
+
+A ULONG value that specifies the maximum number of switches that can be created on the network adapter's PCI Express (PCIe) Physical Function (PF).
 <div class="alert"><b>Note</b>  Starting with Windows Server 2012, Windows only supports the default NIC switch on the network adapter. Therefore, this member must always be set to one. 
-</div>
-<div> </div>
-        
-            `MaxNumVFs`
+</div><div> </div>
 
-            A ULONG value that specifies the maximum number of VFs that can be created on the NIC switch. 
+`MaxNumVFs`
 
+A ULONG value that specifies the maximum number of VFs that can be created on the NIC switch. 
 <div class="alert"><b>Note</b>  Depending on the available hardware resources on the network adapter, the miniport driver can set the <b>MaxNumVFs</b> member to a value that is less than its <b>*NumVFs</b>
-keyword. For more information about this keyword, see <a href="https://msdn.microsoft.com/5CA33B4F-E43A-4EB6-BCAB-365CA1FD3EF2">Standardized INF Keywords for SR-IOV</a>.</div>
-<div> </div>
-        
-            `MaxNumVPorts`
+keyword. For more information about this keyword, see <a href="https://msdn.microsoft.com/5CA33B4F-E43A-4EB6-BCAB-365CA1FD3EF2">Standardized INF Keywords for SR-IOV</a>.</div><div> </div>
 
-            A ULONG value that specifies the maximum number of VPorts that can be created on a network adapter. This includes the default VPort that is always attached to the PF. 
+`MaxNumVPorts`
 
-<div class="alert"><b>Note</b>  The NIC switch must support at least (<b>MaxNumVFs</b> + 1) VPorts.</div>
-<div> </div>
-        
-            `NdisReserved1`
+A ULONG value that specifies the maximum number of VPorts that can be created on a network adapter. This includes the default VPort that is always attached to the PF. 
+<div class="alert"><b>Note</b>  The NIC switch must support at least (<b>MaxNumVFs</b> + 1) VPorts.</div><div> </div>
 
-            Reserved for NDIS.
-        
-            `NdisReserved10`
+`NdisReserved1`
 
-            Reserved for NDIS.
-        
-            `NdisReserved11`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NdisReserved12`
+`NdisReserved10`
 
-            Reserved for NDIS.
-        
-            `NdisReserved13`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NdisReserved14`
+`NdisReserved11`
 
-            Reserved for NDIS.
-        
-            `NdisReserved15`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NdisReserved16`
+`NdisReserved12`
 
-            Reserved for NDIS.
-        
-            `NdisReserved17`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NdisReserved2`
+`NdisReserved13`
 
-            Reserved for NDIS.
-        
-            `NdisReserved3`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NdisReserved4`
+`NdisReserved14`
 
-            Reserved for NDIS.
-        
-            `NdisReserved5`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NdisReserved6`
+`NdisReserved15`
 
-            Reserved for NDIS.
-        
-            `NdisReserved7`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NdisReserved8`
+`NdisReserved16`
 
-            Reserved for NDIS.
-        
-            `NdisReserved9`
+Reserved for NDIS.
 
-            Reserved for NDIS.
-        
-            `NicSwitchCapabilities`
+`NdisReserved17`
 
-            A ULONG value that contains a bitwise OR of the following flags that specify the capabilities of the NIC switch:
-        
-            `NumberOfIndirectionTableEntriesForDefaultVPort`
+Reserved for NDIS.
 
-            A ULONG value that specifies the number of indirection table entries for the default VPort.
-        
-            `NumberOfIndirectionTableEntriesPerNonDefaultPFVPort`
+`NdisReserved2`
 
-            A ULONG value that specifies the number of indirection table entries for each non-default PFVPort.
-        
-            `NumMacAddressesPerPort`
+Reserved for NDIS.
 
-            A ULONG value that contains the number of MAC addresses that are supported for each port.
+`NdisReserved3`
 
-<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
-<div> </div>
-        
-            `NumTotalMacAddresses`
+Reserved for NDIS.
 
-            A ULONG value that contains the total number of media access control (MAC) addresses that the network adapter supports.
+`NdisReserved4`
 
-<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
-<div> </div>
-        
-            `NumVlansPerPort`
+Reserved for NDIS.
 
-            A ULONG value that contains the number of VLANs that are supported for each port.
+`NdisReserved5`
 
-<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
-<div> </div>
+Reserved for NDIS.
 
-    ## Remarks
-        The <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure is used in the 
+`NdisReserved6`
+
+Reserved for NDIS.
+
+`NdisReserved7`
+
+Reserved for NDIS.
+
+`NdisReserved8`
+
+Reserved for NDIS.
+
+`NdisReserved9`
+
+Reserved for NDIS.
+
+`NicSwitchCapabilities`
+
+A ULONG value that contains a bitwise OR of the following flags that specify the capabilities of the NIC switch:
+
+`NumberOfIndirectionTableEntriesForDefaultVPort`
+
+A ULONG value that specifies the number of indirection table entries for the default VPort.
+
+`NumberOfIndirectionTableEntriesPerNonDefaultPFVPort`
+
+A ULONG value that specifies the number of indirection table entries for each non-default PFVPort.
+
+`NumMacAddressesPerPort`
+
+A ULONG value that contains the number of MAC addresses that are supported for each port.
+<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div><div> </div>
+
+`NumTotalMacAddresses`
+
+A ULONG value that contains the total number of media access control (MAC) addresses that the network adapter supports.
+<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div><div> </div>
+
+`NumVlansPerPort`
+
+A ULONG value that contains the number of VLANs that are supported for each port.
+<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div><div> </div>
+
+## Remarks
+The <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure is used in the 
     members of the following structures:
-
+<ul>
+<li>
 The <b>HardwareNicSwitchCapabilities</b> and 
     <b>CurrentNicSwitchCapabilities</b> members of the 
-    <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">
-    NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a> structure.
+    <mshelp:link keywords="netvista.ndis_miniport_adapter_hardware_assist_attributes" tabindex="0"><b>
+    NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</b></mshelp:link> structure.
 
+</li>
+<li>
 The 
     <b>NicSwitchCapabilities</b> member of the 
-    <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
-    NDIS_FILTER_ATTACH_PARAMETERS</a> and 
+    <mshelp:link keywords="netvista.ndis_filter_attach_parameters" tabindex="0"><b>
+    NDIS_FILTER_ATTACH_PARAMETERS</b></mshelp:link> and 
     <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a> structures. 
 
-OID query requests of <a href="netvista.oid_nic_switch_current_capabilities">
-    OID_NIC_SWITCH_CURRENT_CAPABILITIES</a> and 
-    <a href="netvista.oid_nic_switch_hardware_capabilities">
-    OID_NIC_SWITCH_HARDWARE_CAPABILITIES</a> return an <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure.
+</li>
+</ul>OID query requests of <mshelp:link keywords="netvista.oid_nic_switch_current_capabilities" tabindex="0">
+    OID_NIC_SWITCH_CURRENT_CAPABILITIES</mshelp:link> and 
+    <mshelp:link keywords="netvista.oid_nic_switch_hardware_capabilities" tabindex="0">
+    OID_NIC_SWITCH_HARDWARE_CAPABILITIES</mshelp:link> return an <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -275,34 +267,26 @@ OID query requests of <a href="netvista.oid_nic_switch_current_capabilities">
 | **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><b></b></dt>
-<dt>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-nic-switch-current-capabilities">OID_NIC_SWITCH_CURRENT_CAPABILITIES</a>
+
 <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569760">OID_NIC_SWITCH_CURRENT_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569761">OID_NIC_SWITCH_HARDWARE_CAPABILITIES</a>
-</dt>
-</dl>
- 
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-nic-switch-hardware-capabilities">OID_NIC_SWITCH_HARDWARE_CAPABILITIES</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
+
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
+
+<b></b>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_CAPABILITIES structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_CAPABILITIES structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bd6e9583-774f-4ca2-9c23-4d32b233daff
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoQueuePurge
+ms.keywords : WdfIoQueuePurge method, kmdf.wdfioqueuepurge, PFN_WDFIOQUEUEPURGE, WdfIoQueuePurge, wdfio/WdfIoQueuePurge, wdf.wdfioqueuepurge, DFQueueObjectRef_611371f2-862e-41c5-9f8f-d0a61c7e731e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfIoQueuePurge
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -85,9 +89,7 @@ After a driver has purged an I/O queue, it can restart the queue by calling <a h
 If the driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestrequeue.md">WdfRequestRequeue</a> after calling <b>WdfIoQueuePurge</b>, the requeue attempt may succeed before the purge is complete. In versions 1.9 and earlier of KMDF, this 
 sequence causes the operating system to crash.  This problem is fixed in KMDF version 1.11 and later.
 
-For more information about the <b>WdfIoQueuePurge</b> method, see <a href="https://msdn.microsoft.com/83cc87c8-7e2d-4f79-a580-0519d327e7ba">Managing I/O Queues</a>.
-
-The following code example purges an I/O queue and does not call a callback function when all requests that were delivered to the driver have been completed or canceled.
+For more information about the <b>WdfIoQueuePurge</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/managing-i-o-queues">Managing I/O Queues</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,17 +105,12 @@ The following code example purges an I/O queue and does not call a callback func
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueuedrain.md">WdfIoQueueDrain</a>
-</dt>
-<dt>
+
 <a href="..\wdfio\nf-wdfio-wdfioqueuepurgesynchronously.md">WdfIoQueuePurgeSynchronously</a>
-</dt>
-<dt>
+
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
-</dt>
-</dl>
+
  
 
  

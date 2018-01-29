@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5b1c3cc4-6185-4299-86ed-662a2b445042
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SecLookupAccountName
+ms.keywords : ksecddref_1f4959e5-ea3b-440d-af1b-df05782eefce.xml, ifsk.seclookupaccountname, ntifs/SecLookupAccountName, SecLookupAccountName function [Installable File System Drivers], SecLookupAccountName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The SecLookupAccountName function is only available 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SecLookupAccountName
-req.alt-loc : Ksecdd.lib,Ksecdd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksecdd.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -71,34 +75,88 @@ A pointer to a SID_NAME_USE enumerated type that indicates the type of the accou
 
 `OPTIONAL`
 
-
+TBD
 
 `OPTIONAL`
 
-
+TBD
 
 
 ## Return Value
 
 <b>SecLookupAccountName</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>SEC_E_INTERNAL_ERROR</b></dt>
-</dl>An internal error occurred while trying to connect to the Local System Authority (LSA) or the local procedure call (LPC) to the security provider failed. 
+</dl>
+</td>
+<td width="60%">
+An internal error occurred while trying to connect to the Local System Authority (LSA) or the local procedure call (LPC) to the security provider failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The process ID associated with the currently executing thread does not match the current process ID. 
+</dl>
+</td>
+<td width="60%">
+The process ID associated with the currently executing thread does not match the current process ID. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer size for the <i>Sid</i> or the <i>ReferencedDomain</i> parameter was too small.
+</dl>
+</td>
+<td width="60%">
+The buffer size for the <i>Sid</i> or the <i>ReferencedDomain</i> parameter was too small.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The length of the <i>Name</i> parameter exceeded the length allowed in a message to the Local System Authority. 
+</dl>
+</td>
+<td width="60%">
+The length of the <i>Name</i> parameter exceeded the length allowed in a message to the Local System Authority. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NONE_MAPPED</b></dt>
-</dl>The <i>Name</i> parameter could not be found. 
+</dl>
+</td>
+<td width="60%">
+The <i>Name</i> parameter could not be found. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PROCESS_IS_TERMINATING</b></dt>
-</dl>This process has terminated so it is not possible to establish the local procedure call (LPC) connection.
+</dl>
+</td>
+<td width="60%">
+This process has terminated so it is not possible to establish the local procedure call (LPC) connection.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -126,20 +184,14 @@ In addition to looking up local accounts, local domain accounts, and explicitly 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-seclookupaccountsid.md">SecLookupAccountSid</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-seclookupwellknownsid.md">SecLookupWellKnownSid</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-seclookupwellknownsid.md">SecLookupWellKnownSid</a>
+
 <a href="..\ntifs\ne-ntifs-_sid_name_use.md">SID_NAME_USE</a>
-</dt>
-</dl>
+
  
 
  

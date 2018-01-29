@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8a1ce43d-ba2c-489c-b37f-d98b9cf1d6b0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSVPSURFACEPARAMS, *PKSVPSURFACEPARAMS, KSVPSURFACEPARAMS
+ms.keywords : KSVPSURFACEPARAMS, ksmedia/PKSVPSURFACEPARAMS, ksmedia/KSVPSURFACEPARAMS, stream.ksvpsurfaceparams, *PKSVPSURFACEPARAMS, KSVPSURFACEPARAMS structure [Streaming Media Devices], PKSVPSURFACEPARAMS structure pointer [Streaming Media Devices], PKSVPSURFACEPARAMS, dvdref_676b0467-3a23-4aac-8f72-7fd53ef399dd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSVPSURFACEPARAMS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSVPSURFACEPARAMS, KSVPSURFACEPARAMS"
 ---
 
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `dwPitch`
 
-            Specifies the pitch (byte count between subsequent lines) of the video port surface.
-        
-            `dwXOrigin`
+`dwPitch`
 
-            Indicates the x-origin of the video port surface.
-        
-            `dwYOrigin`
+Specifies the pitch (byte count between subsequent lines) of the video port surface.
 
-            Indicates the y-origin of the video port surface.
+`dwXOrigin`
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566509">KSPROPERTY_VPCONFIG_SURFACEPARAMS</a> property.
+Indicates the x-origin of the video port surface.
+
+`dwYOrigin`
+
+Indicates the y-origin of the video port surface.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566509">KSPROPERTY_VPCONFIG_SURFACEPARAMS</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566509">KSPROPERTY_VPCONFIG_SURFACEPARAMS</a>
-</dt>
-</dl>
+
  
 
  

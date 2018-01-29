@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0c1a9a60-de17-41d1-b31d-c1d3c95d8121
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.flush, Flush callback function [Display Devices], Flush, PFND3DDDI_FLUSH, PFND3DDDI_FLUSH, d3dumddi/Flush, UserModeDisplayDriver_Functions_a39b804f-2f41-473f-8160-4c23655c24ec.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : Flush
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -59,12 +63,34 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>Flush</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>Hardware commands were successfully flushed.
+</dl>
+</td>
+<td width="60%">
+Hardware commands were successfully flushed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>Flush</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>Flush</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -86,14 +112,10 @@ To submit commands to the display miniport driver, the user-mode display driver'
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 3A9DECE8-E85A-49D5-8AF1-6C7BA8B1AB7D
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _LPI_STATE_FLAGS, LPI_STATE_FLAGS, *PLPI_STATE_FLAGS
+ms.keywords : LPI_STATE_FLAGS, _LPI_STATE_FLAGS, *PLPI_STATE_FLAGS, acpi.lpi_state_flags, acpitabl/LPI_STATE_FLAGS, LPI_STATE_FLAGS union [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LPI_STATE_FLAGS
-req.alt-loc : acpitabl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LPI_STATE_FLAGS, *PLPI_STATE_FLAGS
 ---
 
@@ -51,10 +55,10 @@ typedef union _LPI_STATE_FLAGS {
 
 ## Members
 
-        
-            `AsUlong`
 
-            An LPI state as an integer.
+`AsUlong`
+
+An LPI state as an integer.
 
 
 ## Requirements

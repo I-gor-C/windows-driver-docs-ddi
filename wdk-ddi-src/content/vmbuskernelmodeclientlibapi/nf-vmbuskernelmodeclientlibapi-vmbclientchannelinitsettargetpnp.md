@@ -7,8 +7,8 @@ old-location : netvista\vmbclientchannelinitsettargetpnp.htm
 old-project : netvista
 ms.assetid : 5525FD48-BE65-48CA-B3D5-C96AFD4ECF56
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbClientChannelInitSetTargetPnp
+ms.date : 1/18/2018
+ms.keywords : netvista.vmbclientchannelinitsettargetpnp, VmbClientChannelInitSetTargetPnp, VmbClientChannelInitSetTargetPnp function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbClientChannelInitSetTargetPnp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbClientChannelInitSetTargetPnp
-req.alt-loc : vmbkmcl.lib,vmbkmcl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Vmbkmcl.lib
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 
@@ -82,15 +86,29 @@ located.
 ## Return Value
 
 <b>VmbClientChannelInitSetTargetPnp</b> returns the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_1</b></dt>
-</dl>The <i>Channel</i> value was invalid or in an invalid state, such as Disabled.
+</dl>
+</td>
+<td width="60%">
+The <i>Channel</i> value was invalid or in an invalid state, such as Disabled.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 If you 
 have two paravirtual network interfaces, they will have the 
-same <i>InterfaceType</i> but different <i>InterfaceInstance</i> values. </p>
+same <i>InterfaceType</i> but different <i>InterfaceInstance</i> values.
 
 ## Requirements
 | &nbsp; | &nbsp; |

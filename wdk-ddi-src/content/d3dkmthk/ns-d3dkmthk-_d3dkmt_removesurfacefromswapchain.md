@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 249a2bfc-7326-480f-bcc0-8d5104a9c890
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_REMOVESURFACEFROMSWAPCHAIN, D3DKMT_REMOVESURFACEFROMSWAPCHAIN
+ms.keywords : D3DKMT_REMOVESURFACEFROMSWAPCHAIN, display.d3dkmt-removesurfacefromswapchain, _D3DKMT_REMOVESURFACEFROMSWAPCHAIN, d3dkmthk/D3DKMT_REMOVESURFACEFROMSWAPCHAIN, D3DKMT_REMOVESURFACEFROMSWAPCHAIN structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_REMOVESURFACEFROMSWAPCHAIN
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_REMOVESURFACEFROMSWAPCHAIN
 ---
 
@@ -51,22 +55,22 @@ typedef struct _D3DKMT_REMOVESURFACEFROMSWAPCHAIN {
 
 ## Members
 
-        
-            `bProducer`
 
-            Indicates if the handle is a producer or consumer.
-        
-            `BufferIdx`
+`bProducer`
 
-            The buffer index of the surface to remove.
-        
-            `hNtSurfaceHandle`
+Indicates if the handle is a producer or consumer.
 
-            The NT handle of the surface to remove.
-        
-            `hNtSwapChain`
+`BufferIdx`
 
-            The NT handle for the swapchain in this process.
+The buffer index of the surface to remove.
+
+`hNtSurfaceHandle`
+
+The NT handle of the surface to remove.
+
+`hNtSwapChain`
+
+The NT handle for the swapchain in this process.
 
 
 ## Requirements

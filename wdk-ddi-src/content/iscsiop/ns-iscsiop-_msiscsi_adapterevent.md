@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 03820d4d-d013-40fb-a686-1b228f178f50
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent
+ms.keywords : iscsiop/PMSiSCSI_AdapterEvent, _MSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent structure pointer [Storage Devices], MSiSCSI_AdapterEvent structure [Storage Devices], iscsiop/MSiSCSI_AdapterEvent, structs-iSCSI_86ec7324-3d5c-44d2-8972-691504f1c5e1.xml, MSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent, storage.msiscsi_adapterevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_AdapterEvent
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent"
 ---
 
 # _MSiSCSI_AdapterEvent structure
@@ -47,17 +51,17 @@ typedef struct _MSiSCSI_AdapterEvent {
 
 ## Members
 
-        
-            `EventCode`
 
-            An <a href="..\iscsiop\ne-iscsiop-piscsi_adapter_event_code.md">ISCSI_ADAPTER_EVENT_CODE</a> enumeration value that indicates the type of adapter event that occurred.
-        
-            `UniqueAdapterId`
+`EventCode`
 
-            A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a> structure.
+An <a href="..\iscsiop\ne-iscsiop-piscsi_adapter_event_code.md">ISCSI_ADAPTER_EVENT_CODE</a> enumeration value that indicates the type of adapter event that occurred.
 
-    ## Remarks
-        The WMI tool suite automatically generates a declaration of the MSiSCSI_AdapterEvent structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a> in <i>Operations.mof</i>.  You must implement this method if the adapter supports discovery.
+`UniqueAdapterId`
+
+A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a> structure.
+
+## Remarks
+The WMI tool suite automatically generates a declaration of the MSiSCSI_AdapterEvent structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a> in <i>Operations.mof</i>.  You must implement this method if the adapter supports discovery.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct _MSiSCSI_AdapterEvent {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\iscsiop\ne-iscsiop-piscsi_adapter_event_code.md">ISCSI_ADAPTER_EVENT_CODE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a>
-</dt>
-<dt>
+
 <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0754c362-57b8-40e8-a050-c9dded5180c1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad
+ms.keywords : dxva/LPDXVA_ConfigAlphaLoad, LPDXVA_ConfigAlphaLoad structure pointer [Display Devices], DXVA_ConfigAlphaLoad, dxvaref_c813af12-264d-44c6-bebb-1b93f20c545d.xml, *LPDXVA_ConfigAlphaLoad, display.dxva_configalphaload, DXVA_ConfigAlphaLoad structure [Display Devices], LPDXVA_ConfigAlphaLoad, _DXVA_ConfigAlphaLoad, dxva/DXVA_ConfigAlphaLoad
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_ConfigAlphaLoad
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad
 ---
 
@@ -48,11 +52,10 @@ typedef struct _DXVA_ConfigAlphaLoad {
 
 ## Members
 
-        
-            `bConfigDataType`
 
-            Specifies the type of alpha-blend data to be used. This member can be set to one of the following values.
+`bConfigDataType`
 
+Specifies the type of alpha-blend data to be used. This member can be set to one of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -64,7 +67,7 @@ typedef struct _DXVA_ConfigAlphaLoad {
 
 </td>
 <td>
-16-entry AYUV palette with <a href="wdkgloss.i#wdkgloss.ia44#wdkgloss.ia44"><i>IA44</i></a> alpha-blending surface.
+16-entry AYUV palette with <a href="https://msdn.microsoft.com/5a140cc0-ecc5-46ff-be3f-3c92f0f67dca">IA44</a> alpha-blending surface.
 
 </td>
 </tr>
@@ -74,7 +77,7 @@ typedef struct _DXVA_ConfigAlphaLoad {
 
 </td>
 <td>
-16-entry AYUV palette with <a href="wdkgloss.a#wdkgloss.ai44#wdkgloss.ai44"><i>AI44</i></a> alpha-blending surface.
+16-entry AYUV palette with <a href="https://msdn.microsoft.com/4ef14b5b-128b-4b7c-9211-116e8bd60cab">AI44</a> alpha-blending surface.
 
 </td>
 </tr>
@@ -98,22 +101,21 @@ AYUV graphic surface.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The preferred values for an accelerator to support for <b>bConfigDataType</b> are 1 and 3.
-        
-            `dwFunction`
 
-            Indicates the type of query or response when using probing and locking commands. The most significant 24 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag</a> variable.
+`dwFunction`
+
+Indicates the type of query or response when using probing and locking commands. The most significant 24 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag</a> variable.
 
 The least significant 4 bits of the <i>DXVA_ConfigQueryOrReplyFlag</i> variable contains status indicators for the query or response being performed.
 
 The least significant 8 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func variable</a> that, in this case, is equal to 2.
-        
-            `dwReservedBits`
 
-            Reserved bits used for packing and alignment. These bits are zero.
+`dwReservedBits`
+
+Reserved bits used for packing and alignment. These bits are zero.
 
 
 ## Requirements

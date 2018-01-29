@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 47C442F5-7D16-4E73-8D05-82D63D5265C1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO, USBDEVICE_TREE_PURGEIO
+ms.keywords : ucxusbdevice/P_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO, USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO structure pointer [Buses], _USBDEVICE_TREE_PURGEIO, buses._usbdevice_tree_purgeio, *PUSBDEVICE_TREE_PURGEIO, ucxusbdevice/_USBDEVICE_TREE_PURGEIO, USBDEVICE_TREE_PURGEIO structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBDEVICE_TREE_PURGEIO
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUSBDEVICE_TREE_PURGEIO, USBDEVICE_TREE_PURGEIO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO
 req.product : Windows 10 or later.
 ---
 
@@ -51,10 +55,10 @@ typedef struct __USBDEVICE_TREE_PURGEIO {
 
 ## Members
 
-        
-            `Header`
 
-            A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
+`Header`
+
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct __USBDEVICE_TREE_PURGEIO {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_purgeio.md">USBDEVICE_PURGEIO</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 127D132B-6A40-4F6F-BCDA-473F89A1A747
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUsbDeviceInitAllocate
+ms.keywords : UdecxUsbDeviceInitAllocate, UdecxUsbDeviceInitAllocate function [Buses], udecxusbdevice/UdecxUsbDeviceInitAllocate, buses.udecxusbdeviceinitallocate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UdecxUsbDeviceInitAllocate
-req.alt-loc : Udecxstub.lib,Udecxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Udecxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +80,10 @@ The UDE client driver calls this method to allocate parameters for the virtual d
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

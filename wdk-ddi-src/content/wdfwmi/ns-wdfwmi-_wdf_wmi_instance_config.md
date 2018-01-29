@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b2b2fd0c-c331-4132-b037-05c816626563
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG, WDF_WMI_INSTANCE_CONFIG
+ms.keywords : wdf.wdf_wmi_instance_config, wdfwmi/PWDF_WMI_INSTANCE_CONFIG, WDF_WMI_INSTANCE_CONFIG structure, *PWDF_WMI_INSTANCE_CONFIG, kmdf.wdf_wmi_instance_config, wdfwmi/WDF_WMI_INSTANCE_CONFIG, DFWMIRef_20be4139-3dcc-425e-9aaf-2851ceb794fb.xml, _WDF_WMI_INSTANCE_CONFIG, PWDF_WMI_INSTANCE_CONFIG structure pointer, WDF_WMI_INSTANCE_CONFIG, PWDF_WMI_INSTANCE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_WMI_INSTANCE_CONFIG
-req.alt-loc : wdfwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_WMI_INSTANCE_CONFIG, WDF_WMI_INSTANCE_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -57,47 +61,47 @@ typedef struct _WDF_WMI_INSTANCE_CONFIG {
 
 ## Members
 
-        
-            `EvtWmiInstanceExecuteMethod`
 
-            A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_execute_method.md">EvtWmiInstanceExecuteMethod</a> callback function for the provider instance, or <b>NULL</b>.
-        
-            `EvtWmiInstanceQueryInstance`
+`EvtWmiInstanceExecuteMethod`
 
-            A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a> callback function for the provider instance, or <b>NULL</b>.
-        
-            `EvtWmiInstanceSetInstance`
+A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_execute_method.md">EvtWmiInstanceExecuteMethod</a> callback function for the provider instance, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_instance.md">EvtWmiInstanceSetInstance</a> callback function for the provider instance, or <b>NULL</b>.
-        
-            `EvtWmiInstanceSetItem`
+`EvtWmiInstanceQueryInstance`
 
-            A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_item.md">EvtWmiInstanceSetItem</a> callback function for the provider instance, or <b>NULL</b>.
-        
-            `Provider`
+A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a> callback function for the provider instance, or <b>NULL</b>.
 
-            A handle to a WMI provider object that a driver obtained by calling <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>. If this member is <b>NULL</b>, the <b>ProviderConfig</b> member must not be <b>NULL</b>.
-        
-            `ProviderConfig`
+`EvtWmiInstanceSetInstance`
 
-            A pointer to a <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a> structure. If this member is <b>NULL</b>, the <b>Provider</b> member must not be <b>NULL</b>.
-        
-            `Register`
+A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_instance.md">EvtWmiInstanceSetInstance</a> callback function for the provider instance, or <b>NULL</b>.
 
-            A Boolean value that, if <b>TRUE</b>, indicates that the framework will register the provider instance with the system's WMI service after it creates a WMI instance object. If this member is <b>FALSE</b>, the driver must call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a> to register the provider instance.
-        
-            `Size`
+`EvtWmiInstanceSetItem`
 
-            The size, in bytes, of this structure.
-        
-            `UseContextForQuery`
+A pointer to the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_item.md">EvtWmiInstanceSetItem</a> callback function for the provider instance, or <b>NULL</b>.
 
-            A Boolean value that, if <b>TRUE</b>, indicates that the driver will store instance data in the WMI instance object's context space and will not provide an <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a> callback function. Instead, the framework will service a WMI client's request for instance data by sending the contents of the context space to WMI. If this member is <b>FALSE</b>, the driver must provide an <i>EvtWmiInstanceQueryInstance</i> callback function (unless the instance data is write-only).
+`Provider`
+
+A handle to a WMI provider object that a driver obtained by calling <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>. If this member is <b>NULL</b>, the <b>ProviderConfig</b> member must not be <b>NULL</b>.
+
+`ProviderConfig`
+
+A pointer to a <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a> structure. If this member is <b>NULL</b>, the <b>Provider</b> member must not be <b>NULL</b>.
+
+`Register`
+
+A Boolean value that, if <b>TRUE</b>, indicates that the framework will register the provider instance with the system's WMI service after it creates a WMI instance object. If this member is <b>FALSE</b>, the driver must call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a> to register the provider instance.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`UseContextForQuery`
+
+A Boolean value that, if <b>TRUE</b>, indicates that the driver will store instance data in the WMI instance object's context space and will not provide an <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a> callback function. Instead, the framework will service a WMI client's request for instance data by sending the contents of the context space to WMI. If this member is <b>FALSE</b>, the driver must provide an <i>EvtWmiInstanceQueryInstance</i> callback function (unless the instance data is write-only).
 
 If <b>UseContextForQuery</b> is <b>TRUE</b>, the instance data must be read-only and therefore the driver cannot provide <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_instance.md">EvtWmiInstanceSetInstance</a> or <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_item.md">EvtWmiInstanceSetItem</a> callback functions.
 
-    ## Remarks
-        The <b>WDF_WMI_INSTANCE_CONFIG</b> structure is used as input to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a> method.
+## Remarks
+The <b>WDF_WMI_INSTANCE_CONFIG</b> structure is used as input to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a> method.
 
 To initialize a <b>WDF_WMI_INSTANCE_CONFIG</b> structure, your driver should call <a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a> or <a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider_config.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>.
 
@@ -109,40 +113,28 @@ To initialize a <b>WDF_WMI_INSTANCE_CONFIG</b> structure, your driver should cal
 | **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_execute_method.md">EvtWmiInstanceExecuteMethod</a>
-</dt>
-<dt>
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a>
-</dt>
-<dt>
 <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_instance.md">EvtWmiInstanceSetInstance</a>
-</dt>
-<dt>
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_item.md">EvtWmiInstanceSetItem</a>
-</dt>
-<dt>
-<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a>
-</dt>
-<dt>
-<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider_config.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>
-</dt>
-<dt>
+
+<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_query_instance.md">EvtWmiInstanceQueryInstance</a>
+
 <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a>
-</dt>
-<dt>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER</a>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
-</dt>
-<dt>
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a>
-</dt>
-<dt>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider_config.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
-</dt>
-</dl>
+
+<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_execute_method.md">EvtWmiInstanceExecuteMethod</a>
+
+<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_instance_set_item.md">EvtWmiInstanceSetItem</a>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a>
+
  
 
  

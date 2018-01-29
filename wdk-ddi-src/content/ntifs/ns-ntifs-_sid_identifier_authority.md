@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 66d8b02d-fbab-4ff7-8f47-858b9f143171
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SID_IDENTIFIER_AUTHORITY, SID_IDENTIFIER_AUTHORITY, *PSID_IDENTIFIER_AUTHORITY
+ms.keywords : PSID_IDENTIFIER_AUTHORITY, _SID_IDENTIFIER_AUTHORITY, ntifs/SID_IDENTIFIER_AUTHORITY, SID_IDENTIFIER_AUTHORITY, ntifs/PSID_IDENTIFIER_AUTHORITY, *PSID_IDENTIFIER_AUTHORITY, ifsk.sid_identifier_authority, securitystructures_d1535875-a778-4b95-b736-e357e5379c19.xml, SID_IDENTIFIER_AUTHORITY structure [Installable File System Drivers], PSID_IDENTIFIER_AUTHORITY structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SID_IDENTIFIER_AUTHORITY
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SID_IDENTIFIER_AUTHORITY, *PSID_IDENTIFIER_AUTHORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSID_IDENTIFIER_AUTHORITY, SID_IDENTIFIER_AUTHORITY"
 ---
 
 # _SID_IDENTIFIER_AUTHORITY structure
@@ -46,37 +50,79 @@ typedef struct _SID_IDENTIFIER_AUTHORITY {
 
 ## Members
 
-        
-            `Value`
 
-            An array of six bytes specifying a SID's top-level authority.
+`Value`
 
-    ## Remarks
-        The identifier authority value identifies the agency that issued the SID. The following identifier authorities are predefined. 
+An array of six bytes specifying a SID's top-level authority.
 
+## Remarks
+The identifier authority value identifies the agency that issued the SID. The following identifier authorities are predefined. 
+<table>
+<tr>
+<th>Identifier Authority</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>
 SECURITY_NULL_SID_AUTHORITY
 
+</td>
+<td>
 0
 
+</td>
+</tr>
+<tr>
+<td>
 SECURITY_WORLD_SID_AUTHORITY
 
+</td>
+<td>
 1
 
+</td>
+</tr>
+<tr>
+<td>
 SECURITY_LOCAL_SID_AUTHORITY
 
+</td>
+<td>
 2
 
+</td>
+</tr>
+<tr>
+<td>
 SECURITY_CREATOR_SID_AUTHORITY
 
+</td>
+<td>
 3
 
+</td>
+</tr>
+<tr>
+<td>
 SECURITY_NON_UNIQUE_AUTHORITY
 
+</td>
+<td>
 4
 
+</td>
+</tr>
+<tr>
+<td>
 SECURITY_NT_AUTHORITY
 
+</td>
+<td>
 5
+
+</td>
+</tr>
+</table>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,16 +132,12 @@ SECURITY_NT_AUTHORITY
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlinitializesid.md">RtlInitializeSid</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlinitializesid.md">RtlInitializeSid</a>
+
  
 
  

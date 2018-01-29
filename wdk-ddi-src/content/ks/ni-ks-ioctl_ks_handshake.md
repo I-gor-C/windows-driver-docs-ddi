@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 63c50af0-365b-4074-a703-9e43b1514a55
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_handshake, IOCTL_KS_HANDSHAKE control code [Streaming Media Devices], IOCTL_KS_HANDSHAKE, ks/IOCTL_KS_HANDSHAKE, ks-ioctl_f848d65c-b795-439e-a8a1-d4c2e0764ef1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_HANDSHAKE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,16 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
 # IOCTL_KS_HANDSHAKE IOCTL
-A kernel-mode client can use IOCTL_KS_HANDSHAKE to negotiate an interface between unconnected AVStream pins. The client calls <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a> with IOCTL_KS_HANDSHAKE and the parameters described below.
-
-To attempt a protocol handshake with a pin that is already connected, call <a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a>.
-
-
-
 A kernel-mode client can use IOCTL_KS_HANDSHAKE to negotiate an interface between unconnected AVStream pins. The client calls <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a> with IOCTL_KS_HANDSHAKE and the parameters described below.
 
 To attempt a protocol handshake with a pin that is already connected, call <a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a>.
@@ -67,7 +65,6 @@ The client places a pointer to a structure of type <a href="..\ks\ns-ks-kshandsh
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, IoStatus.Information is set to sizeof(KSHANDSHAKE).
 
 This IOCTL can be sent from kernel-mode only. If the request is sent from user mode, the Status member is set to STATUS_INVALID_DEVICE_REQUEST. 
@@ -82,22 +79,16 @@ If the <b>InLength</b> and <b>OutLength</b> parameters in the call to <b>KsSynch
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnkspinhandshake.md">AVStrMiniPinHandshake</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>
+
+<a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
+
  
 
  

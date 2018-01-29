@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 41b159b6-f365-4ade-b5d4-e7662c75e866
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassQueryMasterClock
+ms.keywords : StreamClassQueryMasterClock, StreamClassQueryMasterClock routine [Streaming Media Devices], strclass-routines_2049b544-0e7a-4c12-801b-15d0a4a7ce6c.xml, stream.streamclassquerymasterclock, strmini/StreamClassQueryMasterClock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassQueryMasterClock
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -67,7 +71,6 @@ Specifies what time function to query the master clock for. See <a href="..\strm
 `ClockCallbackRoutine`
 
 Specifies the routine to which the class driver passes the results. The function prototype must be:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -106,17 +109,12 @@ On rare occasions, the graph manager switches the master clock. The class driver
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>
-</dt>
-<dt>
 <a href="..\strmini\nf-strmini-streamclassquerymasterclocksync.md">StreamClassQueryMasterClockSync</a>
-</dt>
-<dt>
+
+<a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568467">StrMiniReceiveStreamControlPacket</a>
-</dt>
-</dl>
+
  
 
  

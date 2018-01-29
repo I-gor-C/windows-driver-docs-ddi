@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e288b050-0875-4c9b-aa72-47845861755a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _OB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION, *POB_CALLBACK_REGISTRATION
+ms.keywords : wdm/POB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION structure [Kernel-Mode Driver Architecture], wdm/OB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION, _OB_CALLBACK_REGISTRATION, POB_CALLBACK_REGISTRATION, *POB_CALLBACK_REGISTRATION, kstruct_c_8357a6f5-881d-4840-a530-454383ba3ddd.xml, kernel.ob_callback_registration, POB_CALLBACK_REGISTRATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Server 2008.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OB_CALLBACK_REGISTRATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : OB_CALLBACK_REGISTRATION, *POB_CALLBACK_REGISTRATION
 req.product : Windows 10 or later.
 ---
@@ -51,29 +55,29 @@ typedef struct _OB_CALLBACK_REGISTRATION {
 
 ## Members
 
-        
-            `Altitude`
 
-            A Unicode string that specifies the altitude of the driver. For more information about altitude, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/load-order-groups-and-altitudes-for-minifilter-drivers">Load Order Groups and Altitudes for Minifilter Drivers</a>.
-        
-            `OperationRegistration`
+`Altitude`
 
-            A pointer to an array of <a href="..\wdm\ns-wdm-_ob_operation_registration.md">OB_OPERATION_REGISTRATION</a> structures. Each structure specifies <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> and <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a> callback routines and the types of operations that the routines are called for.
-        
-            `OperationRegistrationCount`
+A Unicode string that specifies the altitude of the driver. For more information about altitude, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/load-order-groups-and-altitudes-for-minifilter-drivers">Load Order Groups and Altitudes for Minifilter Drivers</a>.
 
-            The number of entries in the <b>OperationRegistration</b> array.
-        
-            `RegistrationContext`
+`OperationRegistration`
 
-            The system passes the <b>RegistrationContext</b> value to the callback routine when the callback routine is run. The meaning of this value is driver-defined.
-        
-            `Version`
+A pointer to an array of <a href="..\wdm\ns-wdm-_ob_operation_registration.md">OB_OPERATION_REGISTRATION</a> structures. Each structure specifies <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> and <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a> callback routines and the types of operations that the routines are called for.
 
-            The version of object callback registration that is requested. Drivers should specify OB_FLT_REGISTRATION_VERSION.
+`OperationRegistrationCount`
 
-    ## Remarks
-        This structure is used by the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine. The <i>CallBackRegistration</i> parameter to this routine is a pointer to a buffer that contains an <b>OB_CALLBACK_REGISTRATION</b> structure that is followed by an array of one or more <a href="..\wdm\ns-wdm-_ob_operation_registration.md">OB_OPERATION_REGISTRATION</a> structures.
+The number of entries in the <b>OperationRegistration</b> array.
+
+`RegistrationContext`
+
+The system passes the <b>RegistrationContext</b> value to the callback routine when the callback routine is run. The meaning of this value is driver-defined.
+
+`Version`
+
+The version of object callback registration that is requested. Drivers should specify OB_FLT_REGISTRATION_VERSION.
+
+## Remarks
+This structure is used by the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine. The <i>CallBackRegistration</i> parameter to this routine is a pointer to a buffer that contains an <b>OB_CALLBACK_REGISTRATION</b> structure that is followed by an array of one or more <a href="..\wdm\ns-wdm-_ob_operation_registration.md">OB_OPERATION_REGISTRATION</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,22 +87,16 @@ typedef struct _OB_CALLBACK_REGISTRATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_ob_operation_registration.md">OB_OPERATION_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
+
+<a href="..\wdm\ns-wdm-_ob_operation_registration.md">OB_OPERATION_REGISTRATION</a>
+
 <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a>
-</dt>
-</dl>
+
  
 
  

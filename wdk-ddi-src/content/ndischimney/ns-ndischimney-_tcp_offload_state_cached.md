@@ -7,8 +7,8 @@ old-location : netvista\tcp_offload_state_cached.htm
 old-project : netvista
 ms.assetid : 953154eb-e6f3-4013-a68f-1a358953c7ad
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _TCP_OFFLOAD_STATE_CACHED, *PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED
+ms.date : 1/18/2018
+ms.keywords : TCP_OFFLOAD_STATE_CACHED, _TCP_OFFLOAD_STATE_CACHED, ndischimney/PTCP_OFFLOAD_STATE_CACHED, PTCP_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], PTCP_OFFLOAD_STATE_CACHED, tcp_chim_struct_43b44d70-521b-483d-800f-ed9528499ca3.xml, netvista.tcp_offload_state_cached, ndischimney/TCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], *PTCP_OFFLOAD_STATE_CACHED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TCP_OFFLOAD_STATE_CACHED
-req.alt-loc : ndischimney.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED"
 ---
 
@@ -60,56 +64,56 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
 
 ## Members
 
-        
-            `Flags`
 
-            A bitmask that can be set to zero or any of the following flags, combined with bitwise OR:
-        
-            `FlowLabel`
+`Flags`
 
-            This member marks host-labeled packets for special handling by intervening routers--for example,
+A bitmask that can be set to zero or any of the following flags, combined with bitwise OR:
+
+`FlowLabel`
+
+This member marks host-labeled packets for special handling by intervening routers--for example,
      nondefault QoS or "real-time" service (see RFC 2460). This variable is set through a socket option and
      can vary during the lifetime of the TCP connection. This variable is only meaningful if the TCP
      connection is over IPv6.
-        
-            `Header`
 
-            An 
+`Header`
+
+An 
      <a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a> structure. NDIS
      sets the 
      <b>Length</b> member of 
      <b>Header</b> to the size, in bytes, of the TCP_OFFLOAD_STATE_CACHED structure. The 
      <b>RecognizedOptions</b> member of 
      <b>Header</b> is reserved.
-        
-            `InitialRcvWnd`
 
-            The default receive window (from socket option SO_RCVBUF).
-        
-            `KaInterval`
+`InitialRcvWnd`
 
-            This member specifies, in clock ticks, the timeout after which to retransmit a keepalive frame if
+The default receive window (from socket option SO_RCVBUF).
+
+`KaInterval`
+
+This member specifies, in clock ticks, the timeout after which to retransmit a keepalive frame if
      no response is received to a keepalive probe (see RFC 1122).
-        
-            `KaProbeCount`
 
-            The number of keepalive probes that the offload target should send to determine whether a TCP
+`KaProbeCount`
+
+The number of keepalive probes that the offload target should send to determine whether a TCP
      connection is intact (see RFC 1122).
-        
-            `KaTimeout`
 
-            This member specifies, in clock ticks, the timeout interval for inactivity before sending a
+`KaTimeout`
+
+This member specifies, in clock ticks, the timeout interval for inactivity before sending a
      keepalive probe (see RFC 1122).
-        
-            `MaxRT`
 
-            This member specifies, in clock ticks, the maximum time that the offload target should spend
+`MaxRT`
+
+This member specifies, in clock ticks, the maximum time that the offload target should spend
      retransmitting a segment. If the value of 
      <b>MaxRT</b> is non-zero, 
      <b>MaxRT</b> overrides 
      <b>TcpMaximumRetransmissions</b> in the 
-     <a href="https://msdn.microsoft.com/d8c9fdf9-47aa-4492-b20a-4a53de191d97">
-     NDIS_TASK_TCP_CONNECTION_OFFLOAD</a> structure. The default value for is 
+     <mshelp:link keywords="netvista.ndis_task_tcp_connection_offload" tabindex="0"><b>
+     NDIS_TASK_TCP_CONNECTION_OFFLOAD</b></mshelp:link> structure. The default value for is 
      <b>MaxRT</b> is zero, which means that 
      <b>TcpMaximumRetransmissions</b> sets the maximum number of times that the offload target should
      retransmit a segment on a TCP connection. If the value of 
@@ -118,13 +122,13 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
      <b>TotalRT</b> variable in the TCP delegated state for the connection. 
      <b>TotalRT</b> indicates the total time, in clock ticks, that the offload target has spent retransmitting
      the current TCP segment.
-        
-            `RcvIndicationSize`
 
-            When non-<b>NULL</b>, the optimum number of data bytes that the offload target should supply in a single
+`RcvIndicationSize`
+
+When non-<b>NULL</b>, the optimum number of data bytes that the offload target should supply in a single
      call to the 
-     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">
-     NdisTcpOffloadReceiveHandler</a> function. This number, which is typically between tens and hundreds
+     <mshelp:link keywords="netvista.ndistcpoffloadreceivehandler" tabindex="0"><b>
+     NdisTcpOffloadReceiveHandler</b></mshelp:link> function. This number, which is typically between tens and hundreds
      of bytes, is a suggestion--not a requirement. The offload target can indicate more or less than 
      <b>RcvIndicationSize</b> data bytes. However, for optimum performance, the offload target should indicate
      
@@ -137,10 +141,10 @@ When <b>NULL</b>,
      <b>RcvIndicationSize</b> is unspecified. In this case, the offload target should ignore 
      <b>RcvIndicationSize</b> and indicate as much data as possible in calls to the 
      <i>NdisTcpOffloadReceiveHandler</i> function.
-        
-            `TosOrTrafficClass`
 
-            If the TCP connection is over IPv4, then this member specifies the type of service for routing a
+`TosOrTrafficClass`
+
+If the TCP connection is over IPv4, then this member specifies the type of service for routing a
      packet (see RFC 2474). This variable is set through a socket option and can vary during the lifetime of
      the TCP connection. 
      
@@ -149,52 +153,56 @@ If the TCP connection is over IPv6, then this member prioritizes values for pack
      traffic types, indicating how willing the sender is to have the packets discarded (see RFC 2460). This
      variable is set through a socket option and can vary during the lifetime of the TCP
      connection.
-        
-            `TtlOrHopLimit`
 
-            If the TCP connection is over IPv4, then this member specifies the time to live (see RFC 791).
+`TtlOrHopLimit`
+
+If the TCP connection is over IPv4, then this member specifies the time to live (see RFC 791).
      This variable is set through a socket option and can vary during the lifetime of the TCP connection. 
      
 
 If the TCP connection is over IPv6, then this member specifies the number of routers that the packet
      can pass through (see RFC 2460). This variable is set through a socket option and can vary during the
      lifetime of the TCP connection.
-        
-            `UserPriority`
 
-            A 3-bit priority value. If the offload target supports 802.1p packet information, it must insert
+`UserPriority`
+
+A 3-bit priority value. If the offload target supports 802.1p packet information, it must insert
      this priority value into the 
      <a href="https://msdn.microsoft.com/70dedf56-0591-4296-ad29-df3c48d06987">tag header</a> of all packets that it transmits
      on the offloaded TCP connection. If the offload target does not support 802.1p packet information, it
      should ignore 
      <b>UserPriority</b> . For more information about supporting 802.1p packet information, see 
-     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570937">802.1Q
-     and 802.1p Processing on an Offloaded TCP Connection</a>.
+     <mshelp:link keywords="netvista.802_1q_and_802_1p_processing_on_an_offloaded_tcp_connection" tabindex="0">802.1Q
+     and 802.1p Processing on an Offloaded TCP Connection</mshelp:link>.
 
-    ## Remarks
-        Cached variables are owned and maintained by the host stack. An offload target must not change the
+## Remarks
+Cached variables are owned and maintained by the host stack. An offload target must not change the
     value of a cached variable unless requested to do so by the host stack. If the value of a cached variable
     changes, the host stack requests an update of the variable, which causes NDIS to call the offload
     target's 
     <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a> function.
     When the host stack terminates the offload of one or more state objects by causing NDIS to call the
     offload target's 
-    <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">
-    MiniportTerminateOffload</a> function, the offload target does not return the value of offloaded
+    <mshelp:link keywords="netvista.miniportterminateoffload" tabindex="0"><i>
+    MiniportTerminateOffload</i></mshelp:link> function, the offload target does not return the value of offloaded
     constant variables to the host stack.
 
 Note that if an offloaded TCP connection's TCP_FLAG_MAX_RT_RESTART flag is set, the offload target
     must:
-
+<ul>
+<li>
 Reset that connection's delegated KeepaliveProbeCount variable when the host stack updates that
       connection's cached KaProbeCount variable.
 
+</li>
+<li>
 Reset that connection's delegated KeepaliveTimeoutDelta variable when the host stack updates that
       connection's cached KaTimeout and/or KaInterval variables.
 
-When passed to an offload target, a TCP_OFFLOAD_STATE_CACHED structure is associated with an 
-    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
+</li>
+</ul>When passed to an offload target, a TCP_OFFLOAD_STATE_CACHED structure is associated with an 
+    <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure, which contains a header that is formatted as an 
     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the TCP_OFFLOAD_STATE_CACHED structure.
@@ -207,30 +215,22 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_CACHED structure is associ
 | **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
-</dt>
-<dt>
-<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
-</dt>
-<dt>
+
 <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
+
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
+
+<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

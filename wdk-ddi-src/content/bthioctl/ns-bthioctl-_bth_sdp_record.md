@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 29aeb49a-1647-46ee-a88e-f088f8a2548f
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_SDP_RECORD, BTH_SDP_RECORD, *PBTH_SDP_RECORD
+ms.keywords : _BTH_SDP_RECORD, bth_structs_e77453a7-05d1-403d-9552-972368d7a76c.xml, BTH_SDP_RECORD, PBTH_SDP_RECORD structure pointer [Bluetooth Devices], PBTH_SDP_RECORD, bltooth.bth_sdp_record, *PBTH_SDP_RECORD, bthioctl/BTH_SDP_RECORD, BTH_SDP_RECORD structure [Bluetooth Devices], bthioctl/PBTH_SDP_RECORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_SDP_RECORD
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : BTH_SDP_RECORD, *PBTH_SDP_RECORD
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PBTH_SDP_RECORD, BTH_SDP_RECORD"
 ---
 
 # _BTH_SDP_RECORD structure
@@ -51,17 +55,16 @@ typedef struct _BTH_SDP_RECORD {
 
 ## Members
 
-        
-            `fCodService`
 
-            
-        
-            `fOptions`
+`fCodService`
 
-            A combination of flags that specifies the publication options for the SDP record. Valid flag
+
+
+`fOptions`
+
+A combination of flags that specifies the publication options for the SDP record. Valid flag
      values are listed in the following table.
      
-
 <table>
 <tr>
 <th>Flag</th>
@@ -90,13 +93,12 @@ The record should be obtainable if specifically requested, but it should not be 
 </td>
 </tr>
 </table>
-        
-            `fSecurity`
 
-            A combination of flags that specifies the security attributes of the SDP record. Valid flag values
+`fSecurity`
+
+A combination of flags that specifies the security attributes of the SDP record. Valid flag values
      are listed in the following table.
      
-
 <table>
 <tr>
 <th>Flag</th>
@@ -153,20 +155,20 @@ No security is required to access this record.
 </td>
 </tr>
 </table>
-        
-            `record`
 
-            The SDP record in its raw stream format. The first byte is defined in this structure, with the
+`record`
+
+The SDP record in its raw stream format. The first byte is defined in this structure, with the
       entire record following it.
-        
-            `recordLength`
 
-            The size, in bytes, of the record.
+`recordLength`
 
-    ## Remarks
-        This structure is passed as the input buffer and output buffer of 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
-    IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>.
+The size, in bytes, of the record.
+
+## Remarks
+This structure is passed as the input buffer and output buffer of 
+    <mshelp:link keywords="bltooth.ioctl_bth_sdp_submit_record_with_info" tabindex="0"><b>
+    IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</b></mshelp:link>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -176,14 +178,11 @@ No security is required to access this record.
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
-   IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>
-</dt>
-</dl>
+<mshelp:link keywords="bltooth.ioctl_bth_sdp_submit_record_with_info" tabindex="0"><b>
+   IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</b></mshelp:link>
+
  
 
  

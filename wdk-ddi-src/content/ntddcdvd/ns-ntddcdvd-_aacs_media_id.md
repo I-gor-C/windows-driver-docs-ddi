@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 56be82fc-c438-4cd1-8fcc-1184699f03e6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _AACS_MEDIA_ID, *PAACS_MEDIA_ID, AACS_MEDIA_ID
+ms.keywords : ntddcdvd/PAACS_MEDIA_ID, ntddcdvd/AACS_MEDIA_ID, structs-DVD_413a14c6-75e0-444f-b325-8dfeb9c0c074.xml, PAACS_MEDIA_ID structure pointer [Storage Devices], storage.aacs_media_id, _AACS_MEDIA_ID, *PAACS_MEDIA_ID, AACS_MEDIA_ID, PAACS_MEDIA_ID, AACS_MEDIA_ID structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AACS_MEDIA_ID
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PAACS_MEDIA_ID, AACS_MEDIA_ID"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _AACS_MEDIA_ID {
 
 ## Members
 
-        
-            `MAC`
 
-            The message authentication code (MAC) that the client uses to verify that the MediaID is for the current AACS authentication sequence.
-        
-            `MediaID`
+`MAC`
 
-            The media identifier.
+The message authentication code (MAC) that the client uses to verify that the MediaID is for the current AACS authentication sequence.
 
-    ## Remarks
-        Clients retrieve the AACS certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_read_media_id.md">IOCTL_AACS_READ_MEDIA_ID</a> request.
+`MediaID`
+
+The media identifier.
+
+## Remarks
+Clients retrieve the AACS certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_read_media_id.md">IOCTL_AACS_READ_MEDIA_ID</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _AACS_MEDIA_ID {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_read_media_id.md">IOCTL_AACS_READ_MEDIA_ID</a>
-</dt>
-</dl>
+
  
 
  

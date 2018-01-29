@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b24ec573-4164-4016-a19d-574ebd75ec8f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PopEntryList
+ms.keywords : kernel.popentrylist, PopEntryList, PopEntryList routine [Kernel-Mode Driver Architecture], k109_a5d1634c-e1ab-43ac-ab3f-d0993263f5bb.xml, wdm/PopEntryList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PopEntryList
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,14 +84,10 @@ Callers of <b>PopEntryList</b> can be running at any IRQL. If <b>PopEntryList</b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedpopentrylist.md">ExInterlockedPopEntryList</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-pushentrylist.md">PushEntryList</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exinterlockedpopentrylist.md">ExInterlockedPopEntryList</a>
+
  
 
  

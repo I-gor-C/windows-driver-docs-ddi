@@ -7,8 +7,8 @@ old-location : print\dot4_driver_cmd.htm
 old-project : print
 ms.assetid : 7F099F7E-6E1F-499A-AF09-80B20429B892
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _DOT4_DRIVER_CMD, *PDOT4_DRIVER_CMD, DOT4_DRIVER_CMD
+ms.date : 1/18/2018
+ms.keywords : DOT4_DRIVER_CMD, *PDOT4_DRIVER_CMD, PDOT4_DRIVER_CMD structure pointer [Print Devices], d4drvif/DOT4_DRIVER_CMD, _DOT4_DRIVER_CMD, print.dot4_driver_cmd, DOT4_DRIVER_CMD structure [Print Devices], PDOT4_DRIVER_CMD, d4drvif/PDOT4_DRIVER_CMD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT4_DRIVER_CMD
-req.alt-loc : D4drvif.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_DRIVER_CMD, DOT4_DRIVER_CMD"
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DOT4_DRIVER_CMD {
 
 ## Members
 
-        
-            `hChannelHandle`
 
-            Specifies the handle to the channel.
-        
-            `ulOffset`
+`hChannelHandle`
 
-            Specifies the offset into the  buffer.
-        
-            `ulSize`
+Specifies the handle to the channel.
 
-            Specifies the length of the request.
-        
-            `ulTimeout`
+`ulOffset`
 
-            Specifies the timeout of the operation. Can be INFINITE.
+Specifies the offset into the  buffer.
+
+`ulSize`
+
+Specifies the length of the request.
+
+`ulTimeout`
+
+Specifies the timeout of the operation. Can be INFINITE.
 
 
 ## Requirements

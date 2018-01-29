@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 348d17f3-a688-4f63-87aa-a8588f069c5c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT
+ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_ROW_INTERLEAVED, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_HORIZONTAL, display.d3d11_1ddi_video_processor_stereo_format, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_VERTICAL, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_HORIZONTAL, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_ROW_INTERLEAVED, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_VERTICAL, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT
 ---
 
@@ -140,17 +144,12 @@ To query whether the device supports stereo 3-D video, call <a href="..\d3d10umd
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcaps.md">GetVideoProcessorCaps</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamstereoformat.md">VideoProcessorSetStreamStereoFormat</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcaps.md">GetVideoProcessorCaps</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a>
+
  
 
  

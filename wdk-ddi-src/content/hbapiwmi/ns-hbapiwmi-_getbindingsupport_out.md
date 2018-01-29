@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cd67b301-a94a-41dd-9c06-e6c674ea9173
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetBindingSupport_OUT, GetBindingSupport_OUT, *PGetBindingSupport_OUT
+ms.keywords : hbapiwmi/PGetBindingSupport_OUT, _GetBindingSupport_OUT, *PGetBindingSupport_OUT, GetBindingSupport_OUT, GetBindingSupport_OUT structure [Storage Devices], structs-Fibre_1db0b747-ead3-461f-a7ab-c8150f92623a.xml, storage.getbindingsupport_out, PGetBindingSupport_OUT, hbapiwmi/GetBindingSupport_OUT, PGetBindingSupport_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetBindingSupport_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GetBindingSupport_OUT, *PGetBindingSupport_OUT
 ---
 
@@ -47,17 +51,17 @@ typedef struct _GetBindingSupport_OUT {
 
 ## Members
 
-        
-            `BindType`
 
-            Contains a bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a> WMI class qualifier.
-        
-            `HBAStatus`
+`BindType`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+Contains a bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a> WMI class qualifier.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the GetBindingSupport_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
+`HBAStatus`
+
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+## Remarks
+The WMI tool suite generates a declaration of the GetBindingSupport_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _GetBindingSupport_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553910">GetBindingSupport</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3efed879-bde4-44ea-9af5-fc35a2ac27fc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER
+ms.keywords : STORAGE_DEVICE_NUMBER structure [Storage Devices], STORAGE_DEVICE_NUMBER, structs-general_e5b6df4e-787c-415b-82ed-14dffa34a95e.xml, _STORAGE_DEVICE_NUMBER, ntddstor/STORAGE_DEVICE_NUMBER, storage.storage_device_number, *PSTORAGE_DEVICE_NUMBER, ntddstor/PSTORAGE_DEVICE_NUMBER, PSTORAGE_DEVICE_NUMBER structure pointer [Storage Devices], PSTORAGE_DEVICE_NUMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_DEVICE_NUMBER
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER
 ---
 
@@ -48,21 +52,21 @@ typedef struct _STORAGE_DEVICE_NUMBER {
 
 ## Members
 
-        
-            `DeviceNumber`
 
-            Indicates the number of this device. This value is set to 0xFFFFFFFF (-1) for the disks that represent the physical paths of an MPIO disk.
-        
-            `DeviceType`
+`DeviceNumber`
 
-            Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants indicating the type of device (such as FILE_DEVICE_DISK, FILE_DEVICE_KEYBOARD, and so forth) or a vendor-defined value for a new type of device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.
-        
-            `PartitionNumber`
+Indicates the number of this device. This value is set to 0xFFFFFFFF (-1) for the disks that represent the physical paths of an MPIO disk.
 
-            Indicates the partition number of the device is returned in this member, if the device can be partitioned. Otherwise, -1 is returned.
+`DeviceType`
 
-    ## Remarks
-        The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_device_number.md">IOCTL_STORAGE_GET_DEVICE_NUMBER</a> request is usually issued by a fault-tolerant disk driver.
+Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants indicating the type of device (such as FILE_DEVICE_DISK, FILE_DEVICE_KEYBOARD, and so forth) or a vendor-defined value for a new type of device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.
+
+`PartitionNumber`
+
+Indicates the partition number of the device is returned in this member, if the device can be partitioned. Otherwise, -1 is returned.
+
+## Remarks
+The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_device_number.md">IOCTL_STORAGE_GET_DEVICE_NUMBER</a> request is usually issued by a fault-tolerant disk driver.
 
 The values in the STORAGE_DEVICE_NUMBER structure are guaranteed to remain unchanged until the system is rebooted. They are not guaranteed to be persistent across boots.
 
@@ -74,13 +78,10 @@ The values in the STORAGE_DEVICE_NUMBER structure are guaranteed to remain uncha
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_device_number.md">IOCTL_STORAGE_GET_DEVICE_NUMBER</a>
-</dt>
-</dl>
+
  
 
  

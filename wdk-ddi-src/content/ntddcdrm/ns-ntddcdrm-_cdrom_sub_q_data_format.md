@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0eac3cc1-9c1c-4438-ab20-51c65018cea0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_SUB_Q_DATA_FORMAT, *PCDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT
+ms.keywords : ntddcdrm/PCDROM_SUB_Q_DATA_FORMAT, PCDROM_SUB_Q_DATA_FORMAT, *PCDROM_SUB_Q_DATA_FORMAT, structs-CD-ROM_1448747c-8b9c-4ccb-8c91-0f8f567f0373.xml, ntddcdrm/CDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT, PCDROM_SUB_Q_DATA_FORMAT structure pointer [Storage Devices], CDROM_SUB_Q_DATA_FORMAT structure [Storage Devices], storage.cdrom_sub_q_data_format, _CDROM_SUB_Q_DATA_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_SUB_Q_DATA_FORMAT
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CDROM_SUB_Q_DATA_FORMAT, *PCDROM_SUB_Q_DATA_FORMAT
 ---
 
 # _CDROM_SUB_Q_DATA_FORMAT structure
@@ -47,17 +51,17 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 
 ## Members
 
-        
-            `Format`
 
-            Specifies which subset of the Q data the read operation should return, as follows:
-        
-            `Track`
+`Format`
 
-            Indicates the track number where the CD-ROM driver must read the Q subchannel data. If <b>Format</b> is set to IOCTL_CDROM_MEDIA_CATALOG, then the <b>Track</b> member must be set to zero.
+Specifies which subset of the Q data the read operation should return, as follows:
 
-    ## Remarks
-        The CDROM_SUB_Q_DATA_FORMAT structure indicates the track from which to read the Q part of the subchannel data and the format of the read.
+`Track`
+
+Indicates the track number where the CD-ROM driver must read the Q subchannel data. If <b>Format</b> is set to IOCTL_CDROM_MEDIA_CATALOG, then the <b>Track</b> member must be set to zero.
+
+## Remarks
+The CDROM_SUB_Q_DATA_FORMAT structure indicates the track from which to read the Q part of the subchannel data and the format of the read.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,25 +71,18 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_channel_data.md">SUB_Q_CHANNEL_DATA</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_current_position.md">SUB_Q_CURRENT_POSITION</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_media_catalog_number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_track_isrc.md">SUB_Q_TRACK_ISRC</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_channel_data.md">SUB_Q_CHANNEL_DATA</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_media_catalog_number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_current_position.md">SUB_Q_CURRENT_POSITION</a>
+
  
 
  

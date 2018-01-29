@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2a1e380b-ddad-495b-a921-ebd85525d1a6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortResume
+ms.keywords : storage.storportresume, storport/StorPortResume, storprt_3970ca06-96f5-4d0a-84b0-781145133788.xml, StorPortResume routine [Storage Devices], StorPortResume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortResume
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -73,11 +77,8 @@ A pointer to the hardware device extension. This is a per HBA storage area that 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportpause.md">StorPortPause</a>
-</dt>
-</dl>
+
  
 
  

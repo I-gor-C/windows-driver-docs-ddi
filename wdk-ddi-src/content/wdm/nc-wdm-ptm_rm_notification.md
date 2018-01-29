@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 86d8632a-be39-46ed-8ec6-f65edb4bb017
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.resourcemanagernotification, (*PTM_RM_NOTIFICATION) callback function [Kernel-Mode Driver Architecture], (*PTM_RM_NOTIFICATION), PTM_RM_NOTIFICATION, PTM_RM_NOTIFICATION, wdm/(*PTM_RM_NOTIFICATION), ktm_ref_f4bc7393-b895-4a03-8eb6-b0a71f26e1d5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PTM_RM_NOTIFICATION)
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -123,20 +127,14 @@ The <i>ResourceManagerNotification</i> callback routine is called at IRQL = PASS
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b8b8e2af-487c-4d7b-8af0-b6365d4703b0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, *PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
+ms.keywords : PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure pointer [Kernel-Mode Driver Architecture], wdm/KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, kstruct_c_dcd6ab01-880a-4a63-bd74-acff53b786d1.xml, wdm/PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, *PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, kernel.ke_processor_change_notify_context, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure [Kernel-Mode Driver Architecture], _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows Server 2008.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, *PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
 req.product : Windows 10 or later.
 ---
@@ -50,25 +54,25 @@ typedef struct _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT {
 
 ## Members
 
-        
-            `NtNumber`
 
-            The processor index of the new processor. For information about the relationship between a processor index and a processor number, see <a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>.
-        
-            `ProcNumber`
+`NtNumber`
 
-            The processor number of the new processor. This member is a <a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a> structure that specifies a group number and a group-relative processor number.
-        
-            `State`
+The processor index of the new processor. For information about the relationship between a processor index and a processor number, see <a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>.
 
-            The state of the processor add operation. Possible values are as follows:
-        
-            `Status`
+`ProcNumber`
 
-            If the <b>State</b> member contains <b>KeProcessorAddFailureNotify</b>, this member contains the error status that indicates why the processor add operation failed.
+The processor number of the new processor. This member is a <a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a> structure that specifies a group number and a group-relative processor number.
 
-    ## Remarks
-        The <b>KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</b> structure is available starting with Windows Server 2008.
+`State`
+
+The state of the processor add operation. Possible values are as follows:
+
+`Status`
+
+If the <b>State</b> member contains <b>KeProcessorAddFailureNotify</b>, this member contains the error status that indicates why the processor add operation failed.
+
+## Remarks
+The <b>KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</b> structure is available starting with Windows Server 2008.
 
 A device driver registers to receive notification when a new processor is dynamically added to the hardware partition by calling the <a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a> function. For more information about registering for this notification, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560897">Registering for Synchronous Driver Notification</a>.
 
@@ -84,19 +88,14 @@ A device driver's callback function that receives these notifications must not m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
-</dt>
-<dt>
 <a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
+
+<a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
+
  
 
  

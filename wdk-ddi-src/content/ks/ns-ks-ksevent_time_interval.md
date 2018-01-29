@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 61699da0-2c34-44cb-8e1a-b266acfc7878
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENT_TIME_INTERVAL, KSEVENT_TIME_INTERVAL, *PKSEVENT_TIME_INTERVAL
+ms.keywords : PKSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL structure pointer [Streaming Media Devices], ks-struct_690ec7fd-ea7c-4a47-8351-779aa2cf8e2c.xml, stream.ksevent_time_interval, KSEVENT_TIME_INTERVAL, ks/KSEVENT_TIME_INTERVAL, ks/PKSEVENT_TIME_INTERVAL, KSEVENT_TIME_INTERVAL structure [Streaming Media Devices], *PKSEVENT_TIME_INTERVAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSEVENT_TIME_INTERVAL
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSEVENT_TIME_INTERVAL, *PKSEVENT_TIME_INTERVAL
 ---
 
@@ -48,18 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `EventData`
 
-            A structure of type <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> that specifies the standard event structure.
-        
-            `Interval`
+`EventData`
 
-            Specifies the subsequent interval when the event should continue to be signaled.
-        
-            `TimeBase`
+A structure of type <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> that specifies the standard event structure.
 
-            Specifies the initial clock time when the event should be signaled.
+`Interval`
+
+Specifies the subsequent interval when the event should continue to be signaled.
+
+`TimeBase`
+
+Specifies the initial clock time when the event should be signaled.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksevent_time_mark.md">KSEVENT_TIME_MARK</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561764">KSEVENTSETID_Clock</a>
-</dt>
-</dl>
+
  
 
  

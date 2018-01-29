@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8e19e8a1-0cb6-4d57-862c-2e3a785b949b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_VIDSCH_ESCAPE, D3DKMT_VIDSCH_ESCAPE
+ms.keywords : d3dkmthk/D3DKMT_VIDSCH_ESCAPE, OpenGL_Structs_d668addb-7c4a-4f07-bf9b-71ccd4a216fa.xml, display.d3dkmt_vidsch_escape, D3DKMT_VIDSCH_ESCAPE, _D3DKMT_VIDSCH_ESCAPE, D3DKMT_VIDSCH_ESCAPE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_VIDSCH_ESCAPE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_VIDSCH_ESCAPE
 ---
 
@@ -63,10 +67,10 @@ typedef struct _D3DKMT_VIDSCH_ESCAPE {
 
 ## Members
 
-        
-            `Type`
 
-            The escape type, of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.
+`Type`
+
+The escape type, of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.
 
 
 ## Requirements
@@ -77,19 +81,14 @@ typedef struct _D3DKMT_VIDSCH_ESCAPE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
+
  
 
  

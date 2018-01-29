@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 98fcada7-5160-4eb2-ac7c-0ab1192340a9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExInterlockedFlushSList
+ms.keywords : k102_493935e2-44c7-471b-807f-ca6f110d8155.xml, ExInterlockedFlushSList, ExInterlockedFlushSList routine [Kernel-Mode Driver Architecture], wdm/ExInterlockedFlushSList, kernel.exinterlockedflushslist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExInterlockedFlushSList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,11 +86,8 @@ Callers of <b>ExInterlockedFlushSList</b> can be running at any IRQL. The storag
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
-</dt>
-</dl>
+
  
 
  

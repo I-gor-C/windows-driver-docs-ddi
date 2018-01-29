@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d53e0b05-8761-4b88-a7d5-081244b3dc93
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SCSI_ADDR, SCSI_ADDR, *PSCSI_ADDR
+ms.keywords : SCSI_ADDR, mpiowmi/PSCSI_ADDR, SCSI_ADDR structure [Storage Devices], storage.scsi_addr, PSCSI_ADDR structure pointer [Storage Devices], PSCSI_ADDR, *PSCSI_ADDR, mpiowmi/SCSI_ADDR, structs-scsibus_32f6b726-53af-4ea4-94e2-f30d67811592.xml, _SCSI_ADDR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCSI_ADDR
-req.alt-loc : mpiowmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SCSI_ADDR, *PSCSI_ADDR
 ---
 
@@ -49,22 +53,22 @@ typedef struct _SCSI_ADDR {
 
 ## Members
 
-        
-            `Lun`
 
-            An unsigned 8-bitfield that represents the Lun as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
-        
-            `PortNumber`
+`Lun`
 
-            An unsigned 8-bitfield that represents the PortNumber as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
-        
-            `ScsiPathId`
+An unsigned 8-bitfield that represents the Lun as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
 
-            An unsigned 8-bitfield that represents the PathId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
-        
-            `TargetId`
+`PortNumber`
 
-            An unsigned 8-bitfield that represents the TargetId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
+An unsigned 8-bitfield that represents the PortNumber as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
+
+`ScsiPathId`
+
+An unsigned 8-bitfield that represents the PathId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
+
+`TargetId`
+
+An unsigned 8-bitfield that represents the TargetId as defined by the SCSI_ADDRESS structure in <i>Ntddscsi.h</i>.
 
 
 ## Requirements

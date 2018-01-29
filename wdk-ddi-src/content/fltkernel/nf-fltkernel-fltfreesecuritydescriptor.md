@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ebf7ad37-6c3b-4216-87e6-ea5d6a0cba20
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFreeSecurityDescriptor
+ms.keywords : FltApiRef_e_to_o_ee21346e-6629-4ffd-bf82-b3915f4e1649.xml, ifsk.fltfreesecuritydescriptor, FltFreeSecurityDescriptor routine [Installable File System Drivers], FltFreeSecurityDescriptor, fltkernel/FltFreeSecurityDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltFreeSecurityDescriptor
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -75,14 +79,10 @@ None
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltbuilddefaultsecuritydescriptor.md">FltBuildDefaultSecurityDescriptor</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltbuilddefaultsecuritydescriptor.md">FltBuildDefaultSecurityDescriptor</a>
+
  
 
  

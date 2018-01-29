@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 272e7810-1242-4e56-8431-bd7c5908247a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+ms.keywords : parports.ioctl_par_query_information, IOCTL_PAR_QUERY_INFORMATION control code [Parallel Ports], IOCTL_PAR_QUERY_INFORMATION, ntddpar/IOCTL_PAR_QUERY_INFORMATION, cisspd_50a28bb8-8015-4b25-9850-9038b1c1789a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PAR_QUERY_INFORMATION
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_QUERY_INFORMATION IOCTL
-The IOCTL_PAR_QUERY_INFORMATION request returns the status of an IEEE 1284 end-of-chain device.
-
-
-
 The IOCTL_PAR_QUERY_INFORMATION request returns the status of an IEEE 1284 end-of-chain device.
 
 ### Major Code
@@ -75,14 +75,9 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a PAR_QUERY_INFORMATION structure. Otherwise, the <b>Information</b> is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to the following value:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is less than the size, in bytes, of a PAR_QUERY_INFORMATION structure.
 
 
 ## Requirements
@@ -92,16 +87,12 @@ The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is 
 | **Header** | ntddpar.h (include Ntddpar.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_location.md">IOCTL_PAR_QUERY_LOCATION</a>
-</dt>
-<dt>
+
 <a href="..\ntddpar\ns-ntddpar-_par_query_information.md">PAR_QUERY_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

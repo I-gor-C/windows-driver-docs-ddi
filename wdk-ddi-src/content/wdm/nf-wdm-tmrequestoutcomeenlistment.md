@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1e58be94-7a10-4708-a658-9de28e26a465
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmRequestOutcomeEnlistment
+ms.keywords : TmRequestOutcomeEnlistment, ktm_ref_9be6bea7-eae4-4621-8155-f8a06285bb97.xml, kernel.tmrequestoutcomeenlistment, TmRequestOutcomeEnlistment routine [Kernel-Mode Driver Architecture], wdm/TmRequestOutcomeEnlistment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TmRequestOutcomeEnlistment
-req.alt-loc : NtosKrnl.exe,Ext-MS-Win-ntos-tm-l1-1-0.dll,tm.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,11 +66,23 @@ A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbb
 ## Return Value
 
 <b>TmRequestOutcomeEnlistment</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return the following value: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TRANSACTION_REQUEST_NOT_VALID</b></dt>
-</dl>The specified enlistment is a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior enlistment</a>.
+</dl>
+</td>
+<td width="60%">
+The specified enlistment is a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior enlistment</a>.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -92,29 +108,20 @@ For more information about <b>TmCreateEnlistment</b>, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-tmpreparecomplete.md">TmPrepareComplete</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
+
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
+
+<a href="..\wdm\nf-wdm-tmpreparecomplete.md">TmPrepareComplete</a>
+
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
+
  
 
  

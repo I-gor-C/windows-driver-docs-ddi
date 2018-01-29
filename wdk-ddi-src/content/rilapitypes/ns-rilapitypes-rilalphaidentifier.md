@@ -7,8 +7,8 @@ old-location : netvista\rilalphaidentifier_2.htm
 old-project : netvista
 ms.assetid : 40656b8d-3921-420e-9577-12ba272aa72c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILALPHAIDENTIFIER, RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER
+ms.date : 1/18/2018
+ms.keywords : RILALPHAIDENTIFIER structure [Network Drivers Starting with Windows Vista], netvista.rilalphaidentifier_2, rilapitypes/RILALPHAIDENTIFIER, RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILALPHAIDENTIFIER
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER
 req.product : Windows 10 or later.
 ---
@@ -50,22 +54,22 @@ typedef struct _RILALPHAIDENTIFIER {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `dwType`
 
-            
-        
-            `wszReason`
 
-            
+`dwParams`
+
+
+
+`dwType`
+
+
+
+`wszReason`
+
+
 
 
 ## Requirements

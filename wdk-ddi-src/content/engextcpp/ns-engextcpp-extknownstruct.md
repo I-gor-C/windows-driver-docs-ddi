@@ -7,8 +7,8 @@ old-location : debugger\extknownstruct.htm
 old-project : debugger
 ms.assetid : 95bf9a47-e121-4432-a28f-5476467f1823
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ExtKnownStruct,
+ms.date : 1/19/2018
+ms.keywords : debugger.extknownstruct, EngExtCpp_Ref_b59346d2-06da-4112-9bed-ce64de0f2807.xml, ExtKnownStruct structure [Windows Debugging], engextcpp/ExtKnownStruct, ExtKnownStruct
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExtKnownStruct
-req.alt-loc : Engextcpp.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -48,18 +52,18 @@ struct ExtKnownStruct {
 
 ## Members
 
-        
-            `Method`
 
-            The <a href="https://msdn.microsoft.com/library/windows/hardware/ff543989">ExtKnownStructMethod</a> callback function that can be called to format an instance of the structure specified in <b>TypeName</b>.
-        
-            `SuppressesTypeName`
+`Method`
 
-            A Boolean flag that specifies whether the formatted output includes the name of the structure's type.  If <b>FALSE</b>, the name is included in the formatted output; otherwise, the name is not included.
-        
-            `TypeName`
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff543989">ExtKnownStructMethod</a> callback function that can be called to format an instance of the structure specified in <b>TypeName</b>.
 
-            The name of the structure type.
+`SuppressesTypeName`
+
+A Boolean flag that specifies whether the formatted output includes the name of the structure's type.  If <b>FALSE</b>, the name is included in the formatted output; otherwise, the name is not included.
+
+`TypeName`
+
+The name of the structure type.
 
 
 ## Requirements
@@ -70,15 +74,12 @@ struct ExtKnownStruct {
 | **Minimum UMDF version** |  |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543989">ExtKnownStructMethod</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20ExtKnownStruct structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20ExtKnownStruct structure%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

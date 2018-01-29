@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1EAFEFAD-A8FC-4A79-9332-75B143EEEB18
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_usbdevice_remote_wake_notification, IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION control code [Buses], IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION, usbioctl/IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The hub or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or the appropriate error status.
 
 
@@ -74,13 +77,10 @@ The hub or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or 
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** | DISPATCH_LEVEL |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/91F96D30-CD18-4DDC-BA5A-7BFFA8FBED9B">How to Implement Function Suspend in a Composite Driver</a>
-</dt>
-</dl>
+
  
 
  

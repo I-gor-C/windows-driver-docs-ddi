@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 28d45b36-c20d-40a5-bdf9-5fb754e36e74
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeGuardedMutex
+ms.keywords : KeInitializeGuardedMutex routine [Kernel-Mode Driver Architecture], kernel.keinitializeguardedmutex, KeInitializeGuardedMutex, wdm/KeInitializeGuardedMutex, k105_e9686411-583c-43bb-b7e6-b5248bed72f8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 with Service Pack 1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInitializeGuardedMutex
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ For more information about guarded mutexes, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554235">KGUARDED_MUTEX</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551892">KeAcquireGuardedMutex</a>
-</dt>
-</dl>
+
  
 
  

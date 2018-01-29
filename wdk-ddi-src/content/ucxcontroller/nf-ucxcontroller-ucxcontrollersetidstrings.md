@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : FC0F6C02-C53A-4F7E-B718-70788FA807F3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxControllerSetIdStrings
+ms.keywords : buses.ucxcontrollersetidstrings, UcxControllerSetIdStrings, UcxControllerSetIdStrings function [Buses], ucxcontroller/UcxControllerSetIdStrings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxControllerSetIdStrings
-req.alt-loc : Ucxstubs.lib,Ucxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ucxstubs.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_STATE
 req.product : Windows 10 or later.
 ---
@@ -55,7 +59,7 @@ NTSTATUS UcxControllerSetIdStrings(
 
 `Controller`
 
-
+TBD
 
 `ManufacturerNameString`
 

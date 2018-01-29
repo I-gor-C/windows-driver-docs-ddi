@@ -7,8 +7,8 @@ old-location : netvista\rilmsgdcs_2.htm
 old-project : netvista
 ms.assetid : 50ef03af-3890-40dd-b0ed-7cf048f8530d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGDCS, *LPRILMSGDCS, RILMSGDCS
+ms.date : 1/18/2018
+ms.keywords : "*LPRILMSGDCS, rilapitypes/RILMSGDCS, netvista.rilmsgdcs_2, RILMSGDCS, RILMSGDCS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGDCS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILMSGDCS, RILMSGDCS"
 req.product : Windows 10 or later.
 ---
@@ -54,38 +58,38 @@ typedef struct _RILMSGDCS {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwAlphabet`
+`cbSize`
 
-            
-        
-            `dwFlags`
 
-            
-        
-            `dwIndication`
 
-            
-        
-            `dwLanguage`
+`dwAlphabet`
 
-            
-        
-            `dwMsgClass`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwType`
+`dwFlags`
 
-            
+
+
+`dwIndication`
+
+
+
+`dwLanguage`
+
+
+
+`dwMsgClass`
+
+
+
+`dwParams`
+
+
+
+`dwType`
+
+
 
 
 ## Requirements

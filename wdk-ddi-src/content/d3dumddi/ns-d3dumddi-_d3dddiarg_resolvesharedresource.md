@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f8baaa47-9b3a-4a85-8943-0878105bb5fe
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_RESOLVESHAREDRESOURCE, D3DDDIARG_RESOLVESHAREDRESOURCE
+ms.keywords : d3dumddi/D3DDDIARG_RESOLVESHAREDRESOURCE, UMDisplayDriver_param_Structs_94131b1d-aa0e-4d9a-92b5-baca06cf8247.xml, D3DDDIARG_RESOLVESHAREDRESOURCE, _D3DDDIARG_RESOLVESHAREDRESOURCE, D3DDDIARG_RESOLVESHAREDRESOURCE structure [Display Devices], display.d3dddiarg_resolvesharedresource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIARG_RESOLVESHAREDRESOURCE is supported beginni
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_RESOLVESHAREDRESOURCE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_RESOLVESHAREDRESOURCE
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DDDIARG_RESOLVESHAREDRESOURCE {
 
 ## Members
 
-        
-            `hResource`
 
-            [in] A handle to the surface that the driver uses as a shared surface or in GDI interoperability.
+`hResource`
+
+[in] A handle to the surface that the driver uses as a shared surface or in GDI interoperability.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _D3DDDIARG_RESOLVESHAREDRESOURCE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_resolvesharedresource.md">ResolveSharedResource</a>
-</dt>
-</dl>
+
  
 
  

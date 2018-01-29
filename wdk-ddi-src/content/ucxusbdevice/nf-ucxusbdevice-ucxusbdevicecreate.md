@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 36883440-805F-4588-AA04-3A7BCBEB6D76
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxUsbDeviceCreate
+ms.keywords : UcxUsbDeviceCreate method [Buses], UcxUsbDeviceCreate, ucxusbdevice/UcxUsbDeviceCreate, buses._ucxusbdevicecreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxUsbDeviceCreate
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_USBDEVICE_CHARACTERISTIC_TYPE
 req.product : Windows 10 or later.
 ---
@@ -95,11 +99,8 @@ For a code example, see <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_contr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>
-</dt>
-</dl>
+
  
 
  

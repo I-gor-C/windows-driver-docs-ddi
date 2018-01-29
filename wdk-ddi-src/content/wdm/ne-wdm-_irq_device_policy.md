@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1a605eed-d9a1-4a2f-a095-3e790061527b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IRQ_DEVICE_POLICY, *PIRQ_DEVICE_POLICY, IRQ_DEVICE_POLICY
+ms.keywords : kernel.irq_device_policy, IRQ_DEVICE_POLICY, wdm/IRQ_DEVICE_POLICY, PIRQ_DEVICE_POLICY, wdm/PIRQ_DEVICE_POLICY, IrqPolicySpecifiedProcessors, _IRQ_DEVICE_POLICY, IrqPolicyOneCloseProcessor, IrqPolicyAllProcessorsInMachine, wdm/IrqPolicyMachineDefault, IrqPolicySpreadMessagesAcrossAllProcessors, wdm/IrqPolicyAllProcessorsInMachine, wdm/IrqPolicyOneCloseProcessor, IrqPolicyMachineDefault, *PIRQ_DEVICE_POLICY, PIRQ_DEVICE_POLICY enumeration pointer [Kernel-Mode Driver Architecture], wdm/IrqPolicySpreadMessagesAcrossAllProcessors, wdm/IrqPolicyAllCloseProcessors, sysenum_09bcf230-5558-447e-8646-c60d807365d4.xml, IrqPolicyAllCloseProcessors, IRQ_DEVICE_POLICY enumeration [Kernel-Mode Driver Architecture], wdm/IrqPolicySpecifiedProcessors
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRQ_DEVICE_POLICY
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIRQ_DEVICE_POLICY, IRQ_DEVICE_POLICY"
 req.product : Windows 10 or later.
 ---
@@ -62,6 +66,11 @@ typedef enum _IRQ_DEVICE_POLICY {
 <tr>
 <td>IrqPolicyAllProcessorsInMachine</td>
 <td>The operating system should assign interrupts from the device to all processors.</td>
+</tr>
+
+<tr>
+<td>IrqPolicyAllProcessorsInMachineWhenSteered</td>
+<td></td>
 </tr>
 
 <tr>
@@ -99,11 +108,8 @@ The <b>Interrupt.AffinityPolicy</b> member of the <a href="..\wdm\ns-wdm-_io_res
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

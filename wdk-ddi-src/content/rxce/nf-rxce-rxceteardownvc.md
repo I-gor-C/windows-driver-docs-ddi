@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d4b3af4d-8bb2-42a4-a8d9-baa643a90418
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeTearDownVC
+ms.keywords : ifsk.rxceteardownvc, RxCeTearDownVC function [Installable File System Drivers], RxCeTearDownVC, rxce/RxCeTearDownVC, rxref_12c4b02d-b629-4543-bf74-aeaa14f6f05d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeTearDownVC
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -57,9 +61,23 @@ A pointer to a handle for an virtual circuit structure to be torn down.
 ## Return Value
 
 <b>RxCeTearDownVC</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters passed to this routine was invalid.
+</dl>
+</td>
+<td width="60%">
+One of the parameters passed to this routine was invalid. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -83,11 +101,8 @@ Note that <b>RxCeTearDownVC</b> will wait for the clean up of connections over o
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxce\nf-rxce-rxcebuildvc.md">RxCeBuildVC</a>
-</dt>
-</dl>
+
  
 
  

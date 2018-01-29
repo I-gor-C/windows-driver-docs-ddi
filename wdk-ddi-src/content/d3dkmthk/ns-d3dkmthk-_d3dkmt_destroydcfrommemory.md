@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 98110dcc-bd82-444b-80bb-45a989e2f4f1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DESTROYDCFROMMEMORY, D3DKMT_DESTROYDCFROMMEMORY
+ms.keywords : d3dkmthk/D3DKMT_DESTROYDCFROMMEMORY, display.d3dkmt_destroydcfrommemory, OpenGL_Structs_1d3adbd5-a0cf-4650-b293-148ca3b093fb.xml, _D3DKMT_DESTROYDCFROMMEMORY, D3DKMT_DESTROYDCFROMMEMORY structure [Display Devices], D3DKMT_DESTROYDCFROMMEMORY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DESTROYDCFROMMEMORY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DESTROYDCFROMMEMORY
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_DESTROYDCFROMMEMORY {
 
 ## Members
 
-        
-            `hBitmap`
 
-            [in] A handle to a bitmap that is related to the display context.
-        
-            `hDc`
+`hBitmap`
 
-            [in] A handle to the display context.
+[in] A handle to a bitmap that is related to the display context.
+
+`hDc`
+
+[in] A handle to the display context.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DKMT_DESTROYDCFROMMEMORY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroydcfrommemory.md">D3DKMTDestroyDCFromMemory</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : F57B0E44-A6A1-4C43-83EE-8DF4A605C0D0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
+ms.keywords : KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, ksmedia/KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure pointer [Streaming Media Devices], stream.kscamera_extendedprop_roi_ispcontrolheader, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure
@@ -48,18 +52,18 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
 
 ## Members
 
-        
-            `ControlCount`
 
-            The number of ISP controls. If this value is 0, the ROI control will remove all ROIs previously configured. This effectively clears up all ROIs configured and resets the driver to the default ROI.
-        
-            `Reserved`
+`ControlCount`
 
-            Reserved for future use.
-        
-            `Size`
+The number of ISP controls. If this value is 0, the ROI control will remove all ROIs previously configured. This effectively clears up all ROIs configured and resets the driver to the default ROI.
 
-            The sum of this structure size, all <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrol.md">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow
+`Reserved`
+
+Reserved for future use.
+
+`Size`
+
+The sum of this structure size, all <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrol.md">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow
 
 
 ## Requirements

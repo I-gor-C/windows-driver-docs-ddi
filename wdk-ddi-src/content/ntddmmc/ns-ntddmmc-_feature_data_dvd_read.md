@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 489d3edc-4966-481e-b5c8-6979173e9341
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ, *PFEATURE_DATA_DVD_READ
+ms.keywords : FEATURE_DATA_DVD_READ structure [Storage Devices], _FEATURE_DATA_DVD_READ, structs-CD-ROM_94af17d0-72ec-4248-9035-4050f6e3c275.xml, ntddmmc/PFEATURE_DATA_DVD_READ, PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ, ntddmmc/FEATURE_DATA_DVD_READ, storage.feature_data_dvd_read, *PFEATURE_DATA_DVD_READ, PFEATURE_DATA_DVD_READ structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_DVD_READ
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : FEATURE_DATA_DVD_READ, *PFEATURE_DATA_DVD_READ
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ"
 ---
 
 # _FEATURE_DATA_DVD_READ structure
@@ -52,37 +56,37 @@ typedef struct _FEATURE_DATA_DVD_READ {
 
 ## Members
 
-        
-            `DualDashR`
 
-            
-        
-            `Header`
+`DualDashR`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `Multi110`
 
-            
-        
-            `Reserved1`
 
-            
-        
-            `Reserved2`
+`Header`
 
-            
-        
-            `Reserved3`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            
-        
-            `Reserved4`
+`Multi110`
 
-            
 
-    ## Remarks
-        This structure holds data for the feature named "DVD Read" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can read DVD-specific information from the media.
+
+`Reserved1`
+
+
+
+`Reserved2`
+
+
+
+`Reserved3`
+
+
+
+`Reserved4`
+
+
+
+## Remarks
+This structure holds data for the feature named "DVD Read" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can read DVD-specific information from the media.
 
 When queried, devices supporting this feature must return the information indicated in <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>. No other feature-specific information is required.
 
@@ -94,16 +98,12 @@ When queried, devices supporting this feature must return the information indica
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

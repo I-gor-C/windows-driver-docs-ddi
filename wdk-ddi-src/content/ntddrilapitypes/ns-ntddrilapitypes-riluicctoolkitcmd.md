@@ -7,8 +7,8 @@ old-location : netvista\riluicctoolkitcmd.htm
 old-project : netvista
 ms.assetid : f5fc28df-ee06-4efd-8509-a05ed0ebf322
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCTOOLKITCMD, *LPRILUICCTOOLKITCMD, RILUICCTOOLKITCMD
+ms.date : 1/18/2018
+ms.keywords : "*LPRILUICCTOOLKITCMD, netvista.riluicctoolkitcmd, RILUICCTOOLKITCMD structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILUICCTOOLKITCMD, RILUICCTOOLKITCMD"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCTOOLKITCMD
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILUICCTOOLKITCMD, RILUICCTOOLKITCMD"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _RILUICCTOOLKITCMD {
 
 ## Members
 
-        
-            `bDetails`
 
-            
-        
-            `cbSize`
+`bDetails`
 
-            
-        
-            `dwDetailsSize`
 
-            
-        
-            `dwSlotIndex`
 
-            
-        
-            `fTerminalResponseNeeded`
+`cbSize`
 
-            
+
+
+`dwDetailsSize`
+
+
+
+`dwSlotIndex`
+
+
+
+`fTerminalResponseNeeded`
+
+
 
 
 ## Requirements

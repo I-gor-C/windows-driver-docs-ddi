@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2F5CC46B-3BFC-4C69-A9C8-C4BC4864E84B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
+ms.keywords : buses.ucm_pd_request_data_object, PUCM_PD_REQUEST_DATA_OBJECT, PUCM_PD_REQUEST_DATA_OBJECT union pointer [Buses], ucmtypes/PUCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT, _UCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT, ucmtypes/UCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT union [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_PD_REQUEST_DATA_OBJECT
-req.alt-loc : ucmtypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
 
 # _UCM_PD_REQUEST_DATA_OBJECT structure
-Describes a Request Data Object (RDO). For information about these members, see the <a href="http://www.usb.org/developers/docs/usb20_docs/#usb20spec">Power Delivery specification</a>.
+Describes a Request Data Object (RDO). For information about these members, see the <a href="http://www.usb.org/developers/docs/usb20_docs/">Power Delivery specification</a>.
 
 ## Syntax
 ````
@@ -74,22 +78,22 @@ typedef union _UCM_PD_REQUEST_DATA_OBJECT {
 
 ## Members
 
-        
-            `BatteryRdo`
 
-            
-        
-            `Common`
+`BatteryRdo`
 
-            
-        
-            `FixedAndVariableRdo`
 
-            
-        
-            `Ul`
 
-            Size of the structure.
+`Common`
+
+
+
+`FixedAndVariableRdo`
+
+
+
+`Ul`
+
+Size of the structure.
 
 
 ## Requirements

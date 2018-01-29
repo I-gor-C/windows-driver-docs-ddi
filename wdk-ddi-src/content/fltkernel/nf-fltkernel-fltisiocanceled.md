@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a27ec86b-85b3-4d65-a77a-fb6292b935d0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltIsIoCanceled
+ms.keywords : FltIsIoCanceled, FltApiRef_e_to_o_00dccf3a-3f69-4c6c-b5c6-1d7371e4afbc.xml, FltIsIoCanceled routine [Installable File System Drivers], ifsk.fltisiocanceled, fltkernel/FltIsIoCanceled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltIsIoCanceled
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -75,26 +79,18 @@ It is a programming error to call <b>FltIsIoCanceled</b> for an operation that i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcancelfileopen.md">FltCancelFileOpen</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltclearcancelcompletion.md">FltClearCancelCompletion</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltsetcancelcompletion.md">FltSetCancelCompletion</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltclearcancelcompletion.md">FltClearCancelCompletion</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcancelfileopen.md">FltCancelFileOpen</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
+
  
 
  

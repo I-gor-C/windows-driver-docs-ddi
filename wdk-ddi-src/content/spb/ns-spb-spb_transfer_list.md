@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : DC4E165B-4D3A-4C5F-9B6F-8CB825BAF4FD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_LIST, SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST
+ms.keywords : PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST structure [Buses], SPB_TRANSFER_LIST, SPB.spb_transfer_list, PSPB_TRANSFER_LIST structure pointer [Buses], spb/PSPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST, spb/SPB_TRANSFER_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPB_TRANSFER_LIST
-req.alt-loc : Spb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _SPB_TRANSFER_LIST {
 
 ## Members
 
-        
-            `Reserved`
 
-            Reserved for use by the operating system. Set to zero.
-        
-            `Size`
+`Reserved`
 
-            The size, in bytes, of the <b>SPB_TRANSFER_LIST</b> structure. This size value does not include any <b>Transfers</b> array elements that might follow this structure. If new members are added to future versions of this structure, the <b>Size</b> value can be used to determine which version of the <b>SPB_TRANSFER_LIST</b> structure is being used.
-        
-            `TransferCount`
+Reserved for use by the operating system. Set to zero.
 
-            The number of elements in the <b>Transfers</b> array. This array contains a minimum of one element.
-        
-            `Transfers`
+`Size`
 
-            This member is the first element in an array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structures.  Each array element describes an individual transfer in the I/O transfer sequence. If the array contains more than one element, the additional array elements immediately follow the <b>SPB_TRANSFER_LIST</b> structure in memory. The transfers are performed in the order in which they appear in the array, starting with the first element.
+The size, in bytes, of the <b>SPB_TRANSFER_LIST</b> structure. This size value does not include any <b>Transfers</b> array elements that might follow this structure. If new members are added to future versions of this structure, the <b>Size</b> value can be used to determine which version of the <b>SPB_TRANSFER_LIST</b> structure is being used.
 
-    ## Remarks
-        The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> request begins with an <b>SPB_TRANSFER_LIST</b> structure. The first transfer in the requested I/O transfer sequence is specified in the <b>Transfers</b> member of this structure. If the sequence contains more than one transfer, the array elements that describe the additional transfers immediately follow the <b>SPB_TRANSFER_LIST</b> structure.
+`TransferCount`
+
+The number of elements in the <b>Transfers</b> array. This array contains a minimum of one element.
+
+`Transfers`
+
+This member is the first element in an array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structures.  Each array element describes an individual transfer in the I/O transfer sequence. If the array contains more than one element, the additional array elements immediately follow the <b>SPB_TRANSFER_LIST</b> structure in memory. The transfers are performed in the order in which they appear in the array, starting with the first element.
+
+## Remarks
+The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> request begins with an <b>SPB_TRANSFER_LIST</b> structure. The first transfer in the requested I/O transfer sequence is specified in the <b>Transfers</b> member of this structure. If the sequence contains more than one transfer, the array elements that describe the additional transfers immediately follow the <b>SPB_TRANSFER_LIST</b> structure.
 
 The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh974774">IOCTL_SPB_FULL_DUPLEX</a> request begins with an <b>SPB_TRANSFER_LIST</b> structure. The <b>SPB_TRANSFER_LIST</b> structure for this request always specifies two buffers. The first buffer, which is described by the <b>Transfers</b> member of this structure, contains the data to write to the device. The second buffer, which is described by an array element that immediately follows the <b>SPB_TRANSFER_LIST</b> structure, is used to hold the data read from the device.
 
@@ -82,19 +86,14 @@ If your SPB controller driver supports custom I/O control (IOCTL) requests that 
 | **Minimum UMDF version** |  |
 | **Header** | spb.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh974774">IOCTL_SPB_FULL_DUPLEX</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh974774">IOCTL_SPB_FULL_DUPLEX</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 2A2C1478-0512-4F84-90B9-B9C62B5D44DA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CMP_CONNECT_VER2, *PCMP_CONNECT_VER2, CMP_CONNECT_VER2, CMP_CONNECT, *PCMP_CONNECT
+ms.keywords : "*PCMP_CONNECT_VER2, _CMP_CONNECT_VER2, 61883/CMP_CONNECT_VER2, CMP_CONNECT_VER2, 61883/PCMP_CONNECT_VER2, PCMP_CONNECT_VER2, CMP_CONNECT, IEEE.cmp_connect_ver2, PCMP_CONNECT_VER2 structure pointer, *PCMP_CONNECT, CMP_CONNECT_VER2 structure"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_CONNECT_VER2
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCMP_CONNECT_VER2, CMP_CONNECT_VER2"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CMP_CONNECT_VER2, *PCMP_CONNECT_VER2
 ---
 
 # _CMP_CONNECT_VER2 structure
@@ -50,33 +54,33 @@ typedef struct _CMP_CONNECT_VER2 {
 
 ## Members
 
-        
-            `Format`
 
-            The requested data format.
+`Format`
+
+The requested data format.
 
 On input, a pointer to a <a href="..\61883\ns-61883-_cip_data_format_ver2.md">CIP_DATA_FORMAT_VER2</a> structure that specifies the format of the connection.
-        
-            `hConnect`
 
-            On output, the handle for the created connection.
-        
-            `hInputPlug`
+`hConnect`
 
-            On input, handle to the input plug to use for the connection. If <b>hInputPlug</b> is <b>NULL</b>, the connection is for output only.
-        
-            `hOutputPlug`
+On output, the handle for the created connection.
 
-            On input, a handle to the output plug to use for the connection. If <b>hOutputPlug</b> is <b>NULL</b>, the connection is for input only.
-        
-            `Type`
+`hInputPlug`
 
-            On input, the type of the requested connection.
+On input, handle to the input plug to use for the connection. If <b>hInputPlug</b> is <b>NULL</b>, the connection is for output only.
+
+`hOutputPlug`
+
+On input, a handle to the output plug to use for the connection. If <b>hOutputPlug</b> is <b>NULL</b>, the connection is for input only.
+
+`Type`
+
+On input, the type of the requested connection.
 
 The type of connection to make. Can be one of the following:
 
-    ## Remarks
-        If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
+## Remarks
+If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
@@ -90,13 +94,10 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8f848d68-cef4-45a2-bdda-1bc8c9df6272
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_DESTROYALLOCATIONFLAGS, DXGK_DESTROYALLOCATIONFLAGS
+ms.keywords : DXGK_DESTROYALLOCATIONFLAGS, d3dkmddi/DXGK_DESTROYALLOCATIONFLAGS, display.dxgk_destroyallocationflags, DmStructs_acc32f8d-3d16-493e-be05-e739bc635bd0.xml, DXGK_DESTROYALLOCATIONFLAGS structure [Display Devices], _DXGK_DESTROYALLOCATIONFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_DESTROYALLOCATIONFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_DESTROYALLOCATIONFLAGS
 ---
 
@@ -62,13 +66,10 @@ typedef struct _DXGK_DESTROYALLOCATIONFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_destroyallocation.md">DXGKARG_DESTROYALLOCATION</a>
-</dt>
-</dl>
+
  
 
  

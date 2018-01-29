@@ -7,8 +7,8 @@ old-location : netvista\rilsmsackopt.htm
 old-project : netvista
 ms.assetid : 652315db-0cdc-4c32-8fa0-3a538c917497
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSMSACKOPT, RILSMSACKOPT
+ms.date : 1/18/2018
+ms.keywords : RILSMSACKOPT enumeration [Network Drivers Starting with Windows Vista], netvista.rilsmsackopt, ntddrilapitypes/RILSMSACKOPT, RILSMSACKOPT, ntddrilapitypes/RIL_SMSACKOPT_IMS, RIL_SMSACKOPT_IMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSMSACKOPT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSMSACKOPT
 ---
 
@@ -50,6 +54,11 @@ typedef enum _RILSMSACKOPT {
 
 <tr>
 <td>RIL_SMSACKOPT_IMS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_SMSACKOPT_NONE</td>
 <td></td>
 </tr>
 </table>

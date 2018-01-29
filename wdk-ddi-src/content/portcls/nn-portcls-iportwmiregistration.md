@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 0fb18e82-4853-459f-b8d3-4841ca3d8301
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcUnregisterIoTimeout
+ms.keywords : audio.iportwmiregistration, IPortWMIRegistration interface [Audio Devices], IPortWMIRegistration interface [Audio Devices], described, IPortWMIRegistration, portcls/IPortWMIRegistration, audmp-routines_c7591b25-80f3-4d0e-ac6b-bc1dea55adb1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWMIRegistration
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 

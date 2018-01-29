@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 994ba853-88b6-4456-8fdb-3199979df05e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : AuxKlibGetImageExportDirectory
+ms.keywords : kernel.auxklibgetimageexportdirectory, AuxKlibGetImageExportDirectory, AuxKlibGetImageExportDirectory routine [Kernel-Mode Driver Architecture], aux_klib_266e4e59-eaf6-47a4-a5d0-27fc55426273.xml, aux_klib/AuxKlibGetImageExportDirectory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AuxKlibGetImageExportDirectory
-req.alt-loc : Aux_Klib.lib,Aux_Klib.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Aux_Klib.lib
 req.dll : 
 req.irql : 
-req.typenames : REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PREPORT_ZONES_EXT_DATA, REPORT_ZONES_EXT_DATA"
 ---
 
 
@@ -75,11 +79,8 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\aux_klib\nf-aux_klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a>
-</dt>
-</dl>
+
  
 
  

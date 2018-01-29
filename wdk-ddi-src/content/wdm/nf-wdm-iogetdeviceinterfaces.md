@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a980fe92-ccd9-4a23-b324-ae8ef4e10345
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetDeviceInterfaces
+ms.keywords : IoGetDeviceInterfaces, IoGetDeviceInterfaces routine [Kernel-Mode Driver Architecture], k104_c4286fdb-9b4e-42e4-a1f6-fb3a79d556a7.xml, wdm/IoGetDeviceInterfaces, kernel.iogetdeviceinterfaces
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDeviceInterfaces
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ Pointer to an optional PDO that narrows the search to only the device interface 
 `Flags`
 
 Specifies flags that modify the search for device interfaces. Only one flag is currently defined, and is described in the following table.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -79,8 +82,7 @@ Return disabled device interface instances in addition to enabled interface inst
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 When searching for a device that supports a particular interface class, the caller requires an enabled interface instance and thus does not set the DEVICE_INTERFACE_INCLUDE_NONACTIVE flag.
 
@@ -88,7 +90,7 @@ A driver typically sets the DEVICE_INTERFACE_INCLUDE_NONACTIVE flag to locate di
 
 `SymbolicLinkList`
 
-A pointer to a wide character pointer to which the routine, if successful, writes the base address of a buffer that contains a list of Unicode strings. These strings are symbolic link names that identify the device interface instances that match the search criteria. Each Unicode string in the list is null-terminated; the end of the whole list is marked by an additional null character. The routine allocates the buffer for these strings from paged system memory. The caller is responsible for freeing the buffer (by calling the <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> routine) when it is no longer needed.
+A pointer to a wide character pointer to which the routine, if successful, writes the base address of a buffer that contains a list of Unicode strings. These strings are symbolic link names that identify the device interface instances that match the search criteria. Each Unicode string in the list is null-terminated; the end of the whole list is marked by an additional null character. The routine allocates the buffer for these strings from paged system memory. The caller is responsible for freeing the buffer (by calling the <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> routine) when it is no longer needed.
 
 If no device interface instances match the search criteria, this routine returns STATUS_SUCCESS and the string contains a single NULL character.
 
@@ -96,9 +98,23 @@ If no device interface instances match the search criteria, this routine returns
 ## Return Value
 
 <b>IoGetDeviceInterfaces</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>Possibly indicates that <i>PhysicalDeviceObject</i> was not a valid PDO pointer.
+</dl>
+</td>
+<td width="60%">
+Possibly indicates that <i>PhysicalDeviceObject</i> was not a valid PDO pointer.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -128,29 +144,20 @@ Callers of <b>IoGetDeviceInterfaces</b> must be running at IRQL = PASSIVE_LEVEL 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a>
+
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
+
+<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
+
+<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
+
+<a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : image\scsiscan_info.htm
 old-project : image
 ms.assetid : 5fd9b381-c0e3-45bf-9061-da816da5e29f
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _SCSISCAN_INFO, *PSCSISCAN_INFO, SCSISCAN_INFO
+ms.date : 1/18/2018
+ms.keywords : SCSISCAN_INFO, image.scsiscan_info, _SCSISCAN_INFO, PSCSISCAN_INFO structure pointer [Imaging Devices], scsiscan/PSCSISCAN_INFO, stifnc_157af712-4f72-49f3-9da6-b8f750826d3e.xml, scsiscan/SCSISCAN_INFO, PSCSISCAN_INFO, *PSCSISCAN_INFO, SCSISCAN_INFO structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCSISCAN_INFO
-req.alt-loc : scsiscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSCSISCAN_INFO, SCSISCAN_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCSISCAN_INFO, *PSCSISCAN_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -54,38 +58,38 @@ typedef struct _SCSISCAN_INFO {
 
 ## Members
 
-        
-            `AdapterName`
 
-            <i>For internal use only.</i>
-        
-            `Flags`
+`AdapterName`
 
-            Not used, must be zero.
-        
-            `Lun`
+<i>For internal use only.</i>
 
-            Target logical unit number (LUN).
-        
-            `PathId`
+`Flags`
 
-            Host SCSI ID.
-        
-            `PortNumber`
+Not used, must be zero.
 
-            SCSI adapter number.
-        
-            `Reserved`
+`Lun`
 
-            <i>For internal use only.</i>
-        
-            `Size`
+Target logical unit number (LUN).
 
-            Size, in bytes, of the SCSISCAN_INFO structure.
-        
-            `TargetId`
+`PathId`
 
-            Target SCSI ID.
+Host SCSI ID.
+
+`PortNumber`
+
+SCSI adapter number.
+
+`Reserved`
+
+<i>For internal use only.</i>
+
+`Size`
+
+Size, in bytes, of the SCSISCAN_INFO structure.
+
+`TargetId`
+
+Target SCSI ID.
 
 
 ## Requirements

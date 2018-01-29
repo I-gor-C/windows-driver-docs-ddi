@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : f0955e88-df80-4f53-bc5f-5a38a840aab4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.keywords : bltooth.ioctl_bth_sdp_service_attribute_search, IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH control code [Bluetooth Devices], IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH, bthioctl/IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH, bth_ioctls_73db8572-0986-4ac7-a76c-4cb3777c0660.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH
-req.alt-loc : Bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1"
 ---
 
 # IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH IOCTL
-The IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH request combines an SDP service and attribute search into
-     a single operation. This allows a caller to directly obtain SDP records from a remote device.
-
-
-
 The IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH request combines an SDP service and attribute search into
      a single operation. This allows a caller to directly obtain SDP records from a remote device.
 
@@ -75,7 +74,6 @@ The length of a
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the SDP
       response stream or the size of the output buffer, whichever is smaller. Otherwise, the 
@@ -83,40 +81,88 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_DEVICE_NOT_CONNECTED
 
+</td>
+<td>
 The device on which the SDP service resides was not connected.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INSUFFICIENT_RESOURCES
 
+</td>
+<td>
 There was not enough memory to complete this operation.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_BUFFER_SIZE
 
+</td>
+<td>
 The output buffer was sized incorrectly.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_PARAMETER
 
+</td>
+<td>
 One of the values in the input buffer was not valid.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_REQUEST_NOT_ACCEPTED
 
+</td>
+<td>
 The SDP service rejected the request.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_TOO_MANY_GUIDS_REQUESTED
 
+</td>
+<td>
 The SDP service could not process the number of GUIDs passed in the input buffer.
 
-    ## Remarks
-        After a profile driver obtains an SDP record, it can use SDP functions to parse them. Pointers to
+</td>
+</tr>
+</table>
+
+## Remarks
+After a profile driver obtains an SDP record, it can use SDP functions to parse them. Pointers to
     these functions are provided by the 
-    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">
-    BTHDDI_SDP_PARSE_INTERFACE</a> interface.
+    <mshelp:link keywords="bltooth.bthddi_sdp_parse_interface" tabindex="0"><b>
+    BTHDDI_SDP_PARSE_INTERFACE</b></mshelp:link> interface.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -125,20 +171,15 @@ The SDP service could not process the number of GUIDs passed in the input buffer
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | <= PASSIVE_LEVEL |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_attribute_search.md">
-   IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH</a>
-</dt>
-<dt>
-<a href="..\bthioctl\ns-bthioctl-_bth_sdp_stream_response.md">BTH_SDP_STREAM_RESPONSE</a>
-</dt>
-<dt>
+<mshelp:link keywords="bltooth.ioctl_bth_sdp_service_attribute_search" tabindex="0"><b>
+   IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH</b></mshelp:link>
+
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="..\bthioctl\ns-bthioctl-_bth_sdp_stream_response.md">BTH_SDP_STREAM_RESPONSE</a>
+
  
 
  

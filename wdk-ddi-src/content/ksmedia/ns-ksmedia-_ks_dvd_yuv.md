@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9b155d09-6fb2-4c6c-bde6-7eadeb09bc40
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KS_DVD_YUV, KS_DVD_YUV, *PKS_DVD_YUV
+ms.keywords : PKS_DVD_YUV, _KS_DVD_YUV, *PKS_DVD_YUV, dvdref_ea41e501-8a59-4d54-8dde-792ce2673b8c.xml, stream.ks_dvd_yuv, PKS_DVD_YUV structure pointer [Streaming Media Devices], KS_DVD_YUV, KS_DVD_YUV structure [Streaming Media Devices], ksmedia/PKS_DVD_YUV, ksmedia/KS_DVD_YUV
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DVD_YUV
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_DVD_YUV, *PKS_DVD_YUV
 ---
 
@@ -49,25 +53,25 @@ typedef struct _KS_DVD_YUV {
 
 ## Members
 
-        
-            `Reserved`
 
-            Reserved. Do not use.
-        
-            `U`
+`Reserved`
 
-            Indicates the color-blue (chrominance) component of the color.
-        
-            `V`
+Reserved. Do not use.
 
-            Indicates the color-red (chrominance) component of the color.
-        
-            `Y`
+`U`
 
-            Indicates the luminance (brightness) component of the color.
+Indicates the color-blue (chrominance) component of the color.
 
-    ## Remarks
-        The KS_DVD_YUV structure is used
+`V`
+
+Indicates the color-red (chrominance) component of the color.
+
+`Y`
+
+Indicates the luminance (brightness) component of the color.
+
+## Remarks
+The KS_DVD_YUV structure is used
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _KS_DVD_YUV {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_ks_dvd_ycrcb.md">KS_DVD_YCrCb</a>
-</dt>
-</dl>
+
  
 
  

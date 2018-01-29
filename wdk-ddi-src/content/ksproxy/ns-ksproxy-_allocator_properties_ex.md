@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6edb8af4-a5c9-430f-800a-8a6f47a9cce4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _ALLOCATOR_PROPERTIES_EX, ALLOCATOR_PROPERTIES_EX, *PALLOCATOR_PROPERTIES_EX
+ms.keywords : PALLOCATOR_PROPERTIES_EX, ksproxy/PALLOCATOR_PROPERTIES_EX, ksproxy_6d16a85e-e11b-46e1-a9ab-b8f099e32d57.xml, _ALLOCATOR_PROPERTIES_EX, stream.allocator_properties_ex, ksproxy/ALLOCATOR_PROPERTIES_EX, *PALLOCATOR_PROPERTIES_EX, ALLOCATOR_PROPERTIES_EX structure [Streaming Media Devices], PALLOCATOR_PROPERTIES_EX structure pointer [Streaming Media Devices], ALLOCATOR_PROPERTIES_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ALLOCATOR_PROPERTIES_EX
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ALLOCATOR_PROPERTIES_EX
 ---
 
@@ -66,90 +70,90 @@ typedef struct _ALLOCATOR_PROPERTIES_EX {
 
 ## Members
 
-        
-            `AllocatorPlace`
 
-            
-        
-            `BusType`
+`AllocatorPlace`
 
-            
-        
-            `cbAlign`
 
-            
-        
-            `cbBuffer`
 
-            
-        
-            `cbPrefix`
+`BusType`
 
-            
-        
-            `cBuffers`
 
-            
-        
-            `CountNextSegments`
 
-            
-        
-            `Dimensions`
+`cbAlign`
 
-            
-        
-            `Flags`
 
-            
-        
-            `Input`
 
-            
-        
-            `InsideFactors`
+`cbBuffer`
 
-            
-        
-            `LogicalMemoryType`
 
-            
-        
-            `MemoryType`
 
-            
-        
-            `NextSegments`
+`cbPrefix`
 
-            
-        
-            `NumberPins`
 
-            
-        
-            `Output`
 
-            
-        
-            `PhysicalRange`
+`cBuffers`
 
-            
-        
-            `PrevSegment`
 
-            
-        
-            `State`
 
-            
-        
-            `Strategy`
+`CountNextSegments`
 
-            
-        
-            `Weight`
 
-            
+
+`Dimensions`
+
+
+
+`Flags`
+
+
+
+`Input`
+
+
+
+`InsideFactors`
+
+
+
+`LogicalMemoryType`
+
+
+
+`MemoryType`
+
+
+
+`NextSegments`
+
+
+
+`NumberPins`
+
+
+
+`Output`
+
+
+
+`PhysicalRange`
+
+
+
+`PrevSegment`
+
+
+
+`State`
+
+
+
+`Strategy`
+
+
+
+`Weight`
+
+
 
 
 ## Requirements

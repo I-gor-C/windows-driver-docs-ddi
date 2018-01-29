@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4424be3a-6e73-449c-b5fb-5cbc1109490d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_VBIINFOHEADER, *PKS_VBIINFOHEADER, KS_VBIINFOHEADER
+ms.keywords : KS_VBIINFOHEADER, *PKS_VBIINFOHEADER, stream.ks_vbiinfoheader, PKS_VBIINFOHEADER structure pointer [Streaming Media Devices], vidcapstruct_2a637c59-2852-4b59-9d92-f51c9892df85.xml, KS_VBIINFOHEADER structure [Streaming Media Devices], ksmedia/PKS_VBIINFOHEADER, tagKS_VBIINFOHEADER, ksmedia/KS_VBIINFOHEADER, PKS_VBIINFOHEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_VBIINFOHEADER
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_VBIINFOHEADER, KS_VBIINFOHEADER"
 ---
 
@@ -56,53 +60,53 @@ typedef struct tagKS_VBIINFOHEADER {
 
 ## Members
 
-        
-            `ActualLineEndTime`
 
-            Specifies the actual ending point for VBI digitization from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
-        
-            `ActualLineStartTime`
+`ActualLineEndTime`
 
-            Specifies the actual starting point of VBI digitization from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
-        
-            `BufferSize`
+Specifies the actual ending point for VBI digitization from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
 
-            Specifies the size in bytes of the buffer to store the entire digitized VBI signal.
-        
-            `EndLine`
+`ActualLineStartTime`
 
-            Specifies the line number of the last digitized VBI line.
-        
-            `MaxLineStartTime`
+Specifies the actual starting point of VBI digitization from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
 
-            Specifies the longest possible interval from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
-        
-            `MinLineStartTime`
+`BufferSize`
 
-            Specifies the shortest possible interval from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
-        
-            `SamplesPerLine`
+Specifies the size in bytes of the buffer to store the entire digitized VBI signal.
 
-            Specifies the number of samples digitized per video line.
-        
-            `SamplingFrequency`
+`EndLine`
 
-            Specifies the sampling frequency in hertz (Hz).
-        
-            `StartLine`
+Specifies the line number of the last digitized VBI line.
 
-            Specifies the line number of the first digitized VBI line.
-        
-            `StrideInBytes`
+`MaxLineStartTime`
 
-            Specifies the stride in bytes between the first sample on a given line and the first sample on the next line. This value can be larger than <b>SamplesPerLine</b>.
-        
-            `VideoStandard`
+Specifies the longest possible interval from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
 
-            Specifies one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
+`MinLineStartTime`
 
-    ## Remarks
-        VBI streams are usually converted to NABTS, CC, and WST streams by downstream filters.
+Specifies the shortest possible interval from the leading edge of H-sync in 10-nanosecond units (that is, in hundredths of microseconds).
+
+`SamplesPerLine`
+
+Specifies the number of samples digitized per video line.
+
+`SamplingFrequency`
+
+Specifies the sampling frequency in hertz (Hz).
+
+`StartLine`
+
+Specifies the line number of the first digitized VBI line.
+
+`StrideInBytes`
+
+Specifies the stride in bytes between the first sample on a given line and the first sample on the next line. This value can be larger than <b>SamplesPerLine</b>.
+
+`VideoStandard`
+
+Specifies one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
+
+## Remarks
+VBI streams are usually converted to NABTS, CC, and WST streams by downstream filters.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,13 +116,10 @@ typedef struct tagKS_VBIINFOHEADER {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
-</dt>
-</dl>
+
  
 
  

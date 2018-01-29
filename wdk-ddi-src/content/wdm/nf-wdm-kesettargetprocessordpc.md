@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9fd86250-a495-4628-a07b-f5c44df69c0e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetTargetProcessorDpc
+ms.keywords : KeSetTargetProcessorDpc, wdm/KeSetTargetProcessorDpc, k105_a7931e50-ba41-47a0-9056-e9479ac46808.xml, kernel.kesettargetprocessordpc, KeSetTargetProcessorDpc routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeSetTargetProcessorDpc
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -89,26 +93,18 @@ Windows 7 and later versions of Windows support processor groups. Drivers that 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iorequestdpc.md">IoRequestDpc</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-kesetimportancedpc.md">KeSetImportanceDpc</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iorequestdpc.md">IoRequestDpc</a>
+
+<a href="..\wdm\nf-wdm-kesetimportancedpc.md">KeSetImportanceDpc</a>
+
+<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
+
 <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
+
  
 
  

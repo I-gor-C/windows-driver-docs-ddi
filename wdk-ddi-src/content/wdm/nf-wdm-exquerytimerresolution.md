@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2648AD10-B2D7-4F24-A508-239DA6AF551D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExQueryTimerResolution
+ms.keywords : ExQueryTimerResolution, wdm/ExQueryTimerResolution, kernel.exquerytimerresolution, ExQueryTimerResolution routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExQueryTimerResolution
-req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : 
 req.irql : Any level.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,14 +92,10 @@ When your driver calls a routine such as <a href="..\wdm\nf-wdm-kesettimerex.md"
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exsettimerresolution.md">ExSetTimerResolution</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 97028FEB-A3C2-4C2F-B64E-07024BC3C382
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_destroyvideodecoder_, PFND3D12DDI_DESTROYVIDEODECODER_0021 callback function [Display Devices], PFND3D12DDI_DESTROYVIDEODECODER_0021, d3d12umddi/PFND3D12DDI_DESTROYVIDEODECODER_0021
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFND3D12DDI_DESTROYVIDEODECODER_0021
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 

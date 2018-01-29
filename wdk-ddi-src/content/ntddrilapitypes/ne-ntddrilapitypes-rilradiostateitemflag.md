@@ -7,8 +7,8 @@ old-location : netvista\rilradiostateitemflag.htm
 old-project : netvista
 ms.assetid : dcbd0b16-4960-4cc1-b76b-6d971ba6a192
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEITEMFLAG, RILRADIOSTATEITEMFLAG
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, RILRADIOSTATEITEMFLAG, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_MAX, RIL_RADIOSTATE_ITEMFLAG_USE_MAX, netvista.rilradiostateitemflag, RILRADIOSTATEITEMFLAG enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL, ntddrilapitypes/RILRADIOSTATEITEMFLAG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEITEMFLAG
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRADIOSTATEITEMFLAG
 ---
 
@@ -60,6 +64,11 @@ typedef enum _RILRADIOSTATEITEMFLAG {
 
 <tr>
 <td>RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RADIOSTATE_ITEMFLAG_USE_INTVAL</td>
 <td></td>
 </tr>
 

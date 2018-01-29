@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8f218b63-304e-4f25-88d8-ea1326c613ee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCheckMonitorPowerState
+ms.keywords : D3DKMTCheckMonitorPowerState function [Display Devices], D3DKMTCheckMonitorPowerState, OpenGL_Functions_d05a2b63-fe81-45f0-908d-94043416b1d0.xml, PFND3DKMT_CHECKMONITORPOWERSTATE, display.d3dkmtcheckmonitorpowerstate, d3dkmthk/D3DKMTCheckMonitorPowerState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTCheckMonitorPowerState
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,20 +54,40 @@ NTSTATUS APIENTRY D3DKMTCheckMonitorPowerState(
 
 `D3DKMT_CHECKMONITORPOWERSTATE`
 
-
+TBD
 
 
 ## Return Value
 
 <b>D3DKMTCheckMonitorPowerState</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The power state of the monitor was successfully verified.
+</dl>
+</td>
+<td width="60%">
+The power state of the monitor was successfully verified.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -82,11 +106,8 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkmonitorpowerstate.md">D3DKMT_CHECKMONITORPOWERSTATE</a>
-</dt>
-</dl>
+
  
 
  

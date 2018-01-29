@@ -7,8 +7,8 @@ old-location : netvista\rilmsgdcsindication.htm
 old-project : netvista
 ms.assetid : 709980c8-e13f-48a7-9af7-26f0bb79e699
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGDCSINDICATION, RILMSGDCSINDICATION
+ms.date : 1/18/2018
+ms.keywords : netvista.rilmsgdcsindication, RIL_DCSINDICATION_FAX, RILMSGDCSINDICATION enumeration [Network Drivers Starting with Windows Vista], RILMSGDCSINDICATION, ntddrilapitypes/RIL_DCSINDICATION_EMAIL, RIL_DCSINDICATION_EMAIL, ntddrilapitypes/RIL_DCSINDICATION_MAX, ntddrilapitypes/RILMSGDCSINDICATION, RIL_DCSINDICATION_OTHER, ntddrilapitypes/RIL_DCSINDICATION_FAX, RIL_DCSINDICATION_MAX, ntddrilapitypes/RIL_DCSINDICATION_OTHER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGDCSINDICATION
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGDCSINDICATION
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILMSGDCSINDICATION {
 
 <tr>
 <td>RIL_DCSINDICATION_OTHER</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSINDICATION_VOICEMAIL</td>
 <td></td>
 </tr>
 </table>

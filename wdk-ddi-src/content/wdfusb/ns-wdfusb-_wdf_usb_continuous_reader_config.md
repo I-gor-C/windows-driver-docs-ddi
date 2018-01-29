@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9b98d5f1-6052-4c52-b3d4-031c8a0db51c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG, *PWDF_USB_CONTINUOUS_READER_CONFIG
+ms.keywords : DFUsbRef_f74973fe-cb6c-470f-acd8-805ff2ea3c19.xml, wdfusb/PWDF_USB_CONTINUOUS_READER_CONFIG, _WDF_USB_CONTINUOUS_READER_CONFIG, PWDF_USB_CONTINUOUS_READER_CONFIG structure pointer, wdfusb/WDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG structure, wdf.wdf_usb_continuous_reader_config, PWDF_USB_CONTINUOUS_READER_CONFIG, *PWDF_USB_CONTINUOUS_READER_CONFIG, kmdf.wdf_usb_continuous_reader_config, WDF_USB_CONTINUOUS_READER_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_CONTINUOUS_READER_CONFIG
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_USB_CONTINUOUS_READER_CONFIG, *PWDF_USB_CONTINUOUS_READER_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -57,61 +61,67 @@ typedef struct _WDF_USB_CONTINUOUS_READER_CONFIG {
 
 ## Members
 
-        
-            `BufferAttributes`
 
-            A <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework memory object that the framework creates for each read request. This member can be <b>NULL</b>. You cannot set the <b>ParentObject</b> member of the WDF_OBJECT_ATTRIBUTES structure.
-        
-            `EvtUsbTargetPipeReadComplete`
+`BufferAttributes`
 
-            A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_reader_completion_routine.md">EvtUsbTargetPipeReadComplete</a> callback function.
-        
-            `EvtUsbTargetPipeReadCompleteContext`
+A <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework memory object that the framework creates for each read request. This member can be <b>NULL</b>. You cannot set the <b>ParentObject</b> member of the WDF_OBJECT_ATTRIBUTES structure.
 
-            An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_reader_completion_routine.md">EvtUsbTargetPipeReadComplete</a> callback function.
-        
-            `EvtUsbTargetPipeReadersFailed`
+`EvtUsbTargetPipeReadComplete`
 
-            A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a> callback function. This pointer is optional and can be <b>NULL</b>. For more information about about this parameter, see the Remarks section of <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a>.
-        
-            `HeaderLength`
+A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_reader_completion_routine.md">EvtUsbTargetPipeReadComplete</a> callback function.
 
-            An offset, in bytes, into the buffer that receives data from the device. The framework will store data from the device in a read buffer, beginning at the offset value. In other words, this space precedes the <b>TransferLength</b>-sized space in which the framework stores data from the device.
-        
-            `NumPendingReads`
+`EvtUsbTargetPipeReadCompleteContext`
 
-            The number of read requests that the framework will queue to receive data from the I/O target. If this value is zero, the framework uses a default number of read requests. If the specified value is greater than the permitted maximum, the framework uses the permitted maximum. For more information about the <b>NumPendingReads</b> member, see the following Remarks section.
-        
-            `Size`
+An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_reader_completion_routine.md">EvtUsbTargetPipeReadComplete</a> callback function.
 
-            The size, in bytes, of this structure.
-        
-            `TrailerLength`
+`EvtUsbTargetPipeReadersFailed`
 
-            The length, in bytes, of a trailing buffer space. This space follows the <b>TransferLength</b>-sized space in which the framework stores data from the device.
-        
-            `TransferLength`
+A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a> callback function. This pointer is optional and can be <b>NULL</b>. For more information about about this parameter, see the Remarks section of <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a>.
 
-            The maximum length, in bytes, of data that can be received from the device.
+`HeaderLength`
 
-    ## Remarks
-        The <b>WDF_USB_CONTINUOUS_READER_CONFIG</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a> method. 
+An offset, in bytes, into the buffer that receives data from the device. The framework will store data from the device in a read buffer, beginning at the offset value. In other words, this space precedes the <b>TransferLength</b>-sized space in which the framework stores data from the device.
+
+`NumPendingReads`
+
+The number of read requests that the framework will queue to receive data from the I/O target. If this value is zero, the framework uses a default number of read requests. If the specified value is greater than the permitted maximum, the framework uses the permitted maximum. For more information about the <b>NumPendingReads</b> member, see the following Remarks section.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`TrailerLength`
+
+The length, in bytes, of a trailing buffer space. This space follows the <b>TransferLength</b>-sized space in which the framework stores data from the device.
+
+`TransferLength`
+
+The maximum length, in bytes, of data that can be received from the device.
+
+## Remarks
+The <b>WDF_USB_CONTINUOUS_READER_CONFIG</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a> method. 
 
 To initialize a WDF_USB_CONTINUOUS_READER_CONFIG structure, the driver must call <a href="..\wdfusb\nf-wdfusb-wdf_usb_continuous_reader_config_init.md">WDF_USB_CONTINUOUS_READER_CONFIG_INIT</a>.
 
 Use the following guidelines when choosing a value for the <b>NumPendingReads</b> member:
-
+<ul>
+<li>
 Set <b>NumPendingReads</b> to 0 if you want your driver to use the framework's default value. 
 
 The default value is greater than 1 and has been determined to provide reasonably good performance for many devices on many processor configurations. 
 
+</li>
+<li>
 Set <b>NumPendingReads</b> to 1 if it is important that your driver receive data buffers in the exact order that the device delivers the data.
 
+</li>
+<li>
 Set <b>NumPendingReads</b> to a number that meets the performance requirements for your device, based on thorough performance measurements.
 
 First, test your device with the default value (0) for <b>NumPendingReads</b>. Your tests should include various hardware configurations, including different types and numbers of processors and different USB host controllers and USB configurations. You can then experiment with higher values, using the same tests. A driver that might require a higher value is one for a device that has a high interrupt rate, where data can be lost if interrupts are not serviced rapidly. 
 
-A <b>NumPendingReads</b> value that is too large can slow down a system's performance. You should use the lowest value that meets your performance requirements. Typically, values that are higher than 3 or 4 do not improve data throughput. But higher values might reduce latency, or the chance of missing data, on a high-frequency pipe.
+</li>
+</ul>A <b>NumPendingReads</b> value that is too large can slow down a system's performance. You should use the lowest value that meets your performance requirements. Typically, values that are higher than 3 or 4 do not improve data throughput. But higher values might reduce latency, or the chance of missing data, on a high-frequency pipe.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -121,25 +131,18 @@ A <b>NumPendingReads</b> value that is too large can slow down a system's perfor
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_reader_completion_routine.md">EvtUsbTargetPipeReadComplete</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a>
-</dt>
-<dt>
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_continuous_reader_config_init.md">WDF_USB_CONTINUOUS_READER_CONFIG_INIT</a>
-</dt>
-<dt>
+
+<a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_reader_completion_routine.md">EvtUsbTargetPipeReadComplete</a>
+
+<a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a>
-</dt>
-</dl>
+
  
 
  

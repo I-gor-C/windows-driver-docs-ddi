@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2985A0EC-4B5F-43FA-A2E9-487877A3C9A0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDA_ETHERNET_ADDRESS_LIST, *PBDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST
+ms.keywords : "*PBDA_ETHERNET_ADDRESS_LIST, bdatypes/PBDA_ETHERNET_ADDRESS_LIST, PBDA_ETHERNET_ADDRESS_LIST structure pointer [Streaming Media Devices], stream.bda_ethernet_address_list, _BDA_ETHERNET_ADDRESS_LIST, PBDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST structure [Streaming Media Devices], BDA_ETHERNET_ADDRESS_LIST, bdatypes/BDA_ETHERNET_ADDRESS_LIST"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_ETHERNET_ADDRESS_LIST
-req.alt-loc : Bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PBDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : BDA_ETHERNET_ADDRESS_LIST, *PBDA_ETHERNET_ADDRESS_LIST
 ---
 
 # _BDA_ETHERNET_ADDRESS_LIST structure
@@ -47,14 +51,14 @@ typedef struct _BDA_ETHERNET_ADDRESS_LIST {
 
 ## Members
 
-        
-            `rgAddressl`
 
-            
-        
-            `ulcAddresses`
+`rgAddressl`
 
-            
+
+
+`ulcAddresses`
+
+
 
 
 ## Requirements

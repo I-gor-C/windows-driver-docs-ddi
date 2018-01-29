@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2500fa22-b3f9-419d-9e37-5060b83403fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UsbBuildInterruptOrBulkTransferRequest
+ms.keywords : usbfunc_ecc1d157-942d-4d0e-9c07-9fef00cd5faf.xml, UsbBuildInterruptOrBulkTransferRequest routine [Buses], usbdlib/UsbBuildInterruptOrBulkTransferRequest, UsbBuildInterruptOrBulkTransferRequest, buses.usbbuildinterruptorbulktransferrequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UsbBuildInterruptOrBulkTransferRequest
-req.alt-loc : usbdlib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : usbdlib.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -58,35 +62,35 @@ void UsbBuildInterruptOrBulkTransferRequest(
 
 `urb`
 
-
+TBD
 
 `length`
 
-
+TBD
 
 `pipeHandle`
 
-
+TBD
 
 `transferBuffer`
 
-
+TBD
 
 `transferBufferMDL`
 
-
+TBD
 
 `transferBufferLength`
 
-
+TBD
 
 `transferFlags`
 
-
+TBD
 
 `link`
 
-
+TBD
 
 
 ## Return Value
@@ -108,15 +112,12 @@ None
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
 <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
-</dt>
-<dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

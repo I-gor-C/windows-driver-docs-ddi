@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6cdc0665-61e6-4c13-9b15-46ce301febec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_MULTISAMPLEMETHOD, D3DKMT_MULTISAMPLEMETHOD
+ms.keywords : D3DKMT_MULTISAMPLEMETHOD structure [Display Devices], _D3DKMT_MULTISAMPLEMETHOD, d3dkmthk/D3DKMT_MULTISAMPLEMETHOD, OpenGL_Structs_0617065f-aa53-4b1a-9a3f-e135972d4852.xml, display.d3dkmt_multisamplemethod, D3DKMT_MULTISAMPLEMETHOD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_MULTISAMPLEMETHOD
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_MULTISAMPLEMETHOD
 ---
 
@@ -48,21 +52,21 @@ typedef struct _D3DKMT_MULTISAMPLEMETHOD {
 
 ## Members
 
-        
-            `NumQualityLevels`
 
-            [out] The upper bound on the quality range that is supported for the multiple-sampling method. The range extends from zero through the reported maximum quality setting.
-        
-            `NumSamples`
+`NumQualityLevels`
 
-            [out] The number of subpixels that are used in the multiple-sampling method (for example, 2 for 2x and 8 for 8x multiple-sampling).
-        
-            `Reserved`
+[out] The upper bound on the quality range that is supported for the multiple-sampling method. The range extends from zero through the reported maximum quality setting.
 
-            [out] Reserved.
+`NumSamples`
 
-    ## Remarks
-        The driver can partition its quality levels for a given multiple-sampling method into as many increments as it requires, with the condition that each incremental step noticeably improves the quality of the presented image.
+[out] The number of subpixels that are used in the multiple-sampling method (for example, 2 for 2x and 8 for 8x multiple-sampling).
+
+`Reserved`
+
+[out] Reserved.
+
+## Remarks
+The driver can partition its quality levels for a given multiple-sampling method into as many increments as it requires, with the condition that each incremental step noticeably improves the quality of the presented image.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +76,12 @@ typedef struct _D3DKMT_MULTISAMPLEMETHOD {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getmultisamplemethodlist.md">D3DKMT_GETMULTISAMPLEMETHODLIST</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetmultisamplemethodlist.md">D3DKMTGetMultisampleMethodList</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getmultisamplemethodlist.md">D3DKMT_GETMULTISAMPLEMETHODLIST</a>
+
  
 
  

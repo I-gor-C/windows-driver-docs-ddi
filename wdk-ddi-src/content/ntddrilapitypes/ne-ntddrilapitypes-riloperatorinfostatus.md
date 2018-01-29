@@ -7,8 +7,8 @@ old-location : netvista\riloperatorinfostatus.htm
 old-project : netvista
 ms.assetid : 372d84da-600f-44db-ac76-b59ceac7321d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILOPERATORINFOSTATUS, RILOPERATORINFOSTATUS
+ms.date : 1/18/2018
+ms.keywords : RIL_OPSTATUS_MAX, ntddrilapitypes/RIL_OPSTATUS_CURRENT, ntddrilapitypes/RIL_OPSTATUS_MAX, ntddrilapitypes/RIL_OPSTATUS_AVAILABLE, RILOPERATORINFOSTATUS enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_OPSTATUS_FORBIDDEN, netvista.riloperatorinfostatus, RIL_OPSTATUS_CURRENT, ntddrilapitypes/RILOPERATORINFOSTATUS, RIL_OPSTATUS_FORBIDDEN, RILOPERATORINFOSTATUS, RIL_OPSTATUS_AVAILABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILOPERATORINFOSTATUS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILOPERATORINFOSTATUS
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILOPERATORINFOSTATUS {
 
 <tr>
 <td>RIL_OPSTATUS_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_OPSTATUS_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

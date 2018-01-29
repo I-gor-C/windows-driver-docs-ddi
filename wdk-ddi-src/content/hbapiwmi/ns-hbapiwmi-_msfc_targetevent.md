@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e34e505c-74b1-45e4-9d9f-ba7cae111156
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_TargetEvent, *PMSFC_TargetEvent, MSFC_TargetEvent
+ms.keywords : _MSFC_TargetEvent, hbapiwmi/PMSFC_TargetEvent, MSFC_TargetEvent structure [Storage Devices], PMSFC_TargetEvent, PMSFC_TargetEvent structure pointer [Storage Devices], hbapiwmi/MSFC_TargetEvent, structs-Fibre_3f8b9bd0-29b2-43f3-85ae-47324d168956.xml, *PMSFC_TargetEvent, storage.msfc_targetevent, MSFC_TargetEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSFC_TargetEvent
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMSFC_TargetEvent, MSFC_TargetEvent"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_TargetEvent, *PMSFC_TargetEvent
 ---
 
 # _MSFC_TargetEvent structure
@@ -48,18 +52,18 @@ typedef struct _MSFC_TargetEvent {
 
 ## Members
 
-        
-            `DiscoveredPortWWN`
 
-            Contains a worldwide name that indicates the remote port for which the event occurred.
-        
-            `EventType`
+`DiscoveredPortWWN`
 
-            Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="https://msdn.microsoft.com/528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.
-        
-            `PortWWN`
+Contains a worldwide name that indicates the remote port for which the event occurred.
 
-            Contains a worldwide name that indicates the local port for which the event occurred.
+`EventType`
+
+Indicates the type of the event. The values that can be assigned to this member are defined by the <a href="https://msdn.microsoft.com/528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee">EVENT_TYPE_QUALIFIERS</a> WMI class qualifier.
+
+`PortWWN`
+
+Contains a worldwide name that indicates the local port for which the event occurred.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _MSFC_TargetEvent {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee">EVENT_TYPE_QUALIFIERS</a>
-</dt>
-</dl>
+
  
 
  

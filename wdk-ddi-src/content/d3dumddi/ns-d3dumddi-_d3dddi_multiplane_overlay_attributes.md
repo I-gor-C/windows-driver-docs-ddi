@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6f758785-5d7f-4d63-82c7-93ced5de3da4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+ms.keywords : _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, display.d3dddi_multiplane_overlay_attributes, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 ---
 
@@ -65,65 +69,63 @@ typedef struct _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES {
 
 ## Members
 
-        
-            `Blend`
 
-            Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_blend.md">D3DDDI_MULTIPLANE_OVERLAY_BLEND</a> enumeration.
-        
-            `ClipRect`
+`Blend`
 
-            Specifies any additional clipping, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the <b>DstRect</b> rectangle, after the data has been stretched according to the values of <b>SrcRect</b> and <b>DstRect</b>.
+Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_blend.md">D3DDDI_MULTIPLANE_OVERLAY_BLEND</a> enumeration.
+
+`ClipRect`
+
+Specifies any additional clipping, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the <b>DstRect</b> rectangle, after the data has been stretched according to the values of <b>SrcRect</b> and <b>DstRect</b>.
 
 The driver and hardware can use the <b>ClipRect</b> member to apply a common stretch factor as the clipping changes when an app occludes part of the <b>DstRect</b> destination rectangle.
-        
-            `DirtyRectCount`
 
-            The number of dirty rectangles specified for the overlay plane. If zero, the entire plane is considered dirty.
-        
-            `DstRect`
+`DirtyRectCount`
 
-            Specifies the destination rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the monitor resolution.
-        
-            `Flags`
+The number of dirty rectangles specified for the overlay plane. If zero, the entire plane is considered dirty.
 
-            Specifies a flip operation as one of the applicable values in the <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_flags.md">D3DDDI_MULTIPLANE_OVERLAY_FLAGS</a> enumeration.
-        
-            `NumFilters`
+`DstRect`
 
-            Optionally specifies the number of filters that the driver and hardware implement on the overlay plane. Note that the operating system ignores this member.
-        
-            `pDirtyRects`
+Specifies the destination rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the monitor resolution.
 
-            A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s), relative to the source rectangle <b>SrcRect</b>, that indicate the portion of the overlay plane that has changed.
+`Flags`
+
+Specifies a flip operation as one of the applicable values in the <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_flags.md">D3DDDI_MULTIPLANE_OVERLAY_FLAGS</a> enumeration.
+
+`NumFilters`
+
+Optionally specifies the number of filters that the driver and hardware implement on the overlay plane. Note that the operating system ignores this member.
+
+`pDirtyRects`
+
+A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s), relative to the source rectangle <b>SrcRect</b>, that indicate the portion of the overlay plane that has changed.
 
 The driver can use this member to perform optimizations, though it's not required to use the dirty rectangle info. However, the driver should never fail a function call based on the provided dirty rectangles.
-        
-            `pFilters`
 
-            An optional pointer to a buffer that specifies the filters that the driver and hardware implement on the overlay plane. Note that the operating system ignores this member.
-        
-            `Rotation`
+`pFilters`
 
-            Specifies the clockwise rotation of the overlay plane, given as a value from the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a> enumeration.
-        
-            `SrcRect`
+An optional pointer to a buffer that specifies the filters that the driver and hardware implement on the overlay plane. Note that the operating system ignores this member.
 
-            Specifies the source rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the source resource.
-        
-            `StretchQuality`
+`Rotation`
 
-            Specifies the overlay plane's stretch quality, given as a value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_stretch_quality.md">D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a> enumeration.
-        
-            `VideoFrameFormat`
+Specifies the clockwise rotation of the overlay plane, given as a value from the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a> enumeration.
 
-            Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_video_frame_format.md">D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a> enumeration.
+`SrcRect`
 
-<div class="alert"><b>Note</b>  This value must always be <b>DXGI_DDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</b>. The operating system does not support the other enumeration values.</div>
-<div> </div>
-        
-            `YCbCrFlags`
+Specifies the source rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the source resource.
 
-            Specifies YUV range and conversion info given as a value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a> enumeration.
+`StretchQuality`
+
+Specifies the overlay plane's stretch quality, given as a value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_stretch_quality.md">D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a> enumeration.
+
+`VideoFrameFormat`
+
+Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_video_frame_format.md">D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a> enumeration.
+<div class="alert"><b>Note</b>  This value must always be <b>DXGI_DDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</b>. The operating system does not support the other enumeration values.</div><div> </div>
+
+`YCbCrFlags`
+
+Specifies YUV range and conversion info given as a value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a> enumeration.
 
 
 ## Requirements
@@ -134,31 +136,22 @@ The driver can use this member to perform optimizations, though it's not require
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_blend.md">D3DDDI_MULTIPLANE_OVERLAY_BLEND</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_flags.md">D3DDDI_MULTIPLANE_OVERLAY_FLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_stretch_quality.md">D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_video_frame_format.md">D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_flags.md">D3DDDI_MULTIPLANE_OVERLAY_FLAGS</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_video_frame_format.md">D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_stretch_quality.md">D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
+
  
 
  

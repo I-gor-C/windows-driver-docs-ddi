@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cad04f59-5312-4241-9524-aeabc27df92d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAllocateDefaultClockEx
+ms.keywords : stream.ksallocatedefaultclockex, ks/KsAllocateDefaultClockEx, KsAllocateDefaultClockEx function [Streaming Media Devices], KsAllocateDefaultClockEx, ksfunc_bace76db-468b-4d8e-bbc4-5a64f238308f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAllocateDefaultClockEx
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -72,7 +76,7 @@ Optionally contains a pointer to a driver-defined <a href="https://msdn.microsof
 
 `CorrelatedTime`
 
-Optionally contains a pointer to a driver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a> function to retrieve both the Presentation and Physical Time in a correlated manner. This allows the clock owner to completely determine the current time. Pass <b>NULL</b> if the default <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a> function is to be used to regulate time progression.
+Optionally contains a pointer to a driver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a> function to retrieve both the Presentation and Physical Time in a correlated manner. This allows the clock owner to completely determine the current time. Pass <b>NULL</b> if the default <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a> function is to be used to regulate time progression.
 
 `Resolution`
 
@@ -105,23 +109,16 @@ The internal DefaultClock.ReferenceCount element is initialized to one by the <a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksfreedefaultclock.md">KsFreeDefaultClock</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksallocatedefaultclock.md">KsAllocateDefaultClock</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksfreedefaultclock.md">KsFreeDefaultClock</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a>
-</dt>
-</dl>
+
  
 
  

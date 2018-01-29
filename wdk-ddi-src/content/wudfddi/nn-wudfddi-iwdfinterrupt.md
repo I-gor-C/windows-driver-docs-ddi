@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 729A2361-6FE1-4096-AC8B-3D042326EE5C
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.iwdfinterrupt, IWDFInterrupt interface, IWDFInterrupt interface, described, IWDFInterrupt, wudfddi/IWDFInterrupt, umdf.iwdfinterrupt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFInterrupt
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -71,13 +75,10 @@ This interface exposes an interrupt object.
 | **Header** | wudfddi.h |
 | **DLL** | WUDFx.dll |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-</dl>
+
  
 
  

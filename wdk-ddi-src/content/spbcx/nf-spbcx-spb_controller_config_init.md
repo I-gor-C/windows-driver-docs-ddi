@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 78D46903-A13D-4BC2-803F-E1656A43E865
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB_CONTROLLER_CONFIG_INIT
+ms.keywords : SPB.spb_controller_config_init, spbcx/SPB_CONTROLLER_CONFIG_INIT, SPB_CONTROLLER_CONFIG_INIT function [Buses], SPB_CONTROLLER_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPB_CONTROLLER_CONFIG_INIT
-req.alt-loc : Spbcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any IRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -76,14 +80,10 @@ Your SPB controller driver must use this function to initialize an <b>SPB_CONTRO
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
+
  
 
  

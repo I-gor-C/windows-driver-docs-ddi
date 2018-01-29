@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 29b77215-9c7e-47f2-8c94-0bcd733f54a2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFMemory, IWDFMemory::CopyFromMemory, CopyFromMemory
+ms.keywords : IWDFMemory::CopyFromMemory, wudfddi/IWDFMemory::CopyFromMemory, CopyFromMemory method, IWDFMemory interface, UMDFMemoryObjectRef_c5bc961a-62e9-4692-bbd7-6551b268b08b.xml, IWDFMemory, CopyFromMemory, IWDFMemory interface, CopyFromMemory method, CopyFromMemory method, umdf.iwdfmemory_copyfrommemory, wdf.iwdfmemory_copyfrommemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFMemory.CopyFromMemory
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -80,14 +84,10 @@ HRESULT CopyFromMemory(
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-<dt>
 <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+
  
 
  

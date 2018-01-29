@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A5CF6601-C0BF-4534-93DD-5FFA4F167CFC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_PAGINGQUEUE_PRIORITY, D3DDDI_PAGINGQUEUE_PRIORITY
+ms.keywords : d3dukmdt/D3DDDI_PAGINGQUEUE_PRIORITY_BELOW_NORMAL, d3dukmdt/D3DDDI_PAGINGQUEUE_PRIORITY_NORMAL, d3dukmdt/D3DDDI_PAGINGQUEUE_PRIORITY, D3DDDI_PAGINGQUEUE_PRIORITY_NORMAL, display.d3dddi_pagingqueue_priority, D3DDDI_PAGINGQUEUE_PRIORITY enumeration [Display Devices], D3DDDI_PAGINGQUEUE_PRIORITY, D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL, d3dukmdt/D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL, D3DDDI_PAGINGQUEUE_PRIORITY_BELOW_NORMAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_PAGINGQUEUE_PRIORITY
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_PAGINGQUEUE_PRIORITY
 ---
 

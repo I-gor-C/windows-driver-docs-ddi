@@ -52,26 +52,26 @@ typedef struct _WPP_TRIAGE_INFO {
 
 ## Members
 
-        
-            `WppAutoLogHeaderSize`
 
-            Size of WPP_AUTOLOG_HEADER.
-        
-            `WppAutoLogHeaderSizeOffset`
+`WppAutoLogHeaderSize`
 
-            Offset of Size field into WPP_AUTOLOG_HEADER.
-        
-            `WppDriverContextOffset`
+Size of WPP_AUTOLOG_HEADER.
 
-            Offset of DriverContext into WPP_AUTOLOG_HEADER.
-        
-            `WppDriverContextSize`
+`WppAutoLogHeaderSizeOffset`
 
-            Size of WPP_AUTOLOG_CONTEXT.
-        
-            `WppSizeOfAutoLogHeaderSizeField`
+Offset of Size field into WPP_AUTOLOG_HEADER.
 
-            Size of Header size field.
+`WppDriverContextOffset`
+
+Offset of DriverContext into WPP_AUTOLOG_HEADER.
+
+`WppDriverContextSize`
+
+Size of WPP_AUTOLOG_CONTEXT.
+
+`WppSizeOfAutoLogHeaderSizeField`
+
+Size of Header size field.
 
 
 ## Requirements

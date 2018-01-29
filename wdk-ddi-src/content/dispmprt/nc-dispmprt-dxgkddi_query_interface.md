@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d8255f36-be3a-4b19-ac8d-8748ac9b6a24
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkddiqueryinterface, DxgkDdiQueryInterface callback function [Display Devices], DxgkDdiQueryInterface, DXGKDDI_QUERY_INTERFACE, DXGKDDI_QUERY_INTERFACE, dispmprt/DxgkDdiQueryInterface, DmFunctions_1c8cdcd5-60e2-4d76-ba70-6af3f96f1740.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiQueryInterface
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -70,18 +74,28 @@ A pointer to a <a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</
 <i>DxgkDdiQueryInterface</i> exposes a communication mechanism between the display miniport driver and the driver of a child device (for example, a video capture device). A display miniport driver that exposes such a mechanism should implement this function.
 
 <i>DxgkDdiQueryInterface</i> should fill in the members of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure that <i>QueryInterface</i>-&gt;<b>Interface</b> points to as follows:
-
+<ul>
+<li>
 Set <b>Size</b> to the number of bytes in the INTERFACE structure. This value must not exceed the number of bytes specified by <i>QueryInterface</i>-&gt;<b>Size</b>.
 
+</li>
+<li>
 Set <b>Version</b> to the version of the interface being returned by the display miniport driver. The display miniport driver should best match the version requested by the child driver in <i>QueryInterface</i>-&gt;<b>Version</b>.
 
+</li>
+<li>
 Set <b>Context</b> to point to a display miniport driver-defined context for the interface. Typically, a display miniport driver would set <b>Context</b> to the handle to the display adapter's context block that is identified by <i>MiniportDeviceContext</i>.
 
+</li>
+<li>
 Initialize <b>InterfaceReference</b> and <b>InterfaceDereference</b> to point to the display miniport driver-implemented reference and dereference routines for this interface.
 
+</li>
+<li>
 Initialize all additional interface-specific members to point to the appropriate routines of the interface being exposed.
 
-<i>DxgkDdiQueryInterface</i> runs at IRQL = PASSIVE_LEVEL and should be made pageable.
+</li>
+</ul><i>DxgkDdiQueryInterface</i> runs at IRQL = PASSIVE_LEVEL and should be made pageable.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,17 +111,12 @@ Initialize all additional interface-specific members to point to the appropriate
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-</dt>
-</dl>
+
+<a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a>
+
  
 
  

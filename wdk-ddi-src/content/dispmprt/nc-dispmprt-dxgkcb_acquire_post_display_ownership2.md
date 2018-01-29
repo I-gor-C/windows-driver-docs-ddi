@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 923A2107-8F5E-4EF7-8C3C-4EFDE26A50F5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcb_acquire_post_display_ownership2, DxgkcbAcquirePostDisplayOwnership2 callback function [Display Devices], DxgkcbAcquirePostDisplayOwnership2, DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2, DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2, dispmprt/DxgkcbAcquirePostDisplayOwnership2, callback function pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkcbAcquirePostDisplayOwnership2
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -72,7 +76,7 @@ A pointer to a DXGK_DISPLAY_OWNERSHIP_FLAGS structure that is allocated by the d
 
 ## Remarks
 
-Register your implementation of this callback function by setting the appropriate member of  and then calling .</p>
+Register your implementation of this callback function by setting the appropriate member of  and then calling .
 
 ## Requirements
 | &nbsp; | &nbsp; |

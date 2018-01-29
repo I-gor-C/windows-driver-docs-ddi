@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 65244091-6089-4d0c-abf4-1178cf0bf1b5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryGetOuterUnknown
+ms.keywords : stream.ksfilterfactorygetouterunknown, KsFilterFactoryGetOuterUnknown function [Streaming Media Devices], ks/KsFilterFactoryGetOuterUnknown, KsFilterFactoryGetOuterUnknown, avfunc_4a154d39-a344-4f58-8abe-cbf2a0926271.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterFactoryGetOuterUnknown
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,26 +81,18 @@ For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
-</dt>
-<dt>
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
+
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
+
  
 
  

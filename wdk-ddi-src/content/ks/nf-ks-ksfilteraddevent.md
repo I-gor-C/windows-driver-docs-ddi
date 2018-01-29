@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e93491c1-bd6d-4d89-b55f-10439b0f5eec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterAddEvent
+ms.keywords : stream.ksfilteraddevent, ks/KsFilterAddEvent, KsFilterAddEvent, avfunc_a00691e6-cae6-40ae-9776-1b6d09e01d73.xml, KsFilterAddEvent function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterAddEvent
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -80,17 +84,12 @@ This function is an inline function call to <a href="..\ks\nf-ks-ksaddevent.md">
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-</dl>
+
  
 
  

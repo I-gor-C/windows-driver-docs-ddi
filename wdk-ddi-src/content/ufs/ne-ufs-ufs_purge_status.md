@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9BC978A9-FA5E-4A1E-9775-1DC9C270F5DC
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : UFS_PURGE_STATUS, UFS_PURGE_STATUS
+ms.keywords : UFS_PurgeStatusInProgress, ufs/UFS_PurgeStatusInProgress, ufs/UFS_PURGE_STATUS, storage.ufs_purge_status, UFS_PurgeStatusInterrupted, UFS_PurgeStatusSuccess, UFS_PURGE_STATUS, ufs/UFS_PurgeStatusFailure, UFS_PurgeStatusIdle, ufs/UFS_PurgeStatusIdle, ufs/UFS_PurgeStatusSuccess, UFS_PurgeStatusQueueNotEmpty, UFS_PurgeStatusFailure, ufs/UFS_PurgeStatusQueueNotEmpty, ufs/UFS_PurgeStatusInterrupted, UFS_PURGE_STATUS enumeration [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UFS_PURGE_STATUS
-req.alt-loc : Ufs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UFS_PURGE_STATUS
 req.product : Windows 10 or later.
 ---
@@ -103,11 +107,8 @@ that it is read.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ufs\ne-ufs-ufs_attributes_descriptor.md">UFS_ATTRIBUTES_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

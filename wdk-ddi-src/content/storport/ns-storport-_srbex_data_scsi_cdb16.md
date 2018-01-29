@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 168AC5F4-652B-405C-BE41-CD416A66FB74
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SRBEX_DATA_SCSI_CDB16, *PSRBEX_DATA_SCSI_CDB16, SRBEX_DATA_SCSI_CDB16
+ms.keywords : storage.srbex_data_scsi_cdb16, PSRBEX_DATA_SCSI_CDB16, storport/PSRBEX_DATA_SCSI_CDB16, _SRBEX_DATA_SCSI_CDB16, SRBEX_DATA_SCSI_CDB16 structure [Storage Devices], storport/SRBEX_DATA_SCSI_CDB16, SRBEX_DATA_SCSI_CDB16, PSRBEX_DATA_SCSI_CDB16 structure pointer [Storage Devices], *PSRBEX_DATA_SCSI_CDB16
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRBEX_DATA_SCSI_CDB16
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSRBEX_DATA_SCSI_CDB16, SRBEX_DATA_SCSI_CDB16"
 req.product : Windows 10 or later.
 ---
 
 # _SRBEX_DATA_SCSI_CDB16 structure
 The <b>SRBEX_DATA_SCSI_CDB16</b> structure contains the extended SRB data for a 16-byte SCSI command data block (CDB).
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -55,45 +60,45 @@ typedef struct _SRBEX_DATA_SCSI_CDB16 {
 
 ## Members
 
-        
-            `Cdb`
 
-            The 16-byte CDB buffer.
-        
-            `CdbLength`
+`Cdb`
 
-            The length of the CDB data, in bytes, of the <b>Cdb</b> array.
-        
-            `Length`
+The 16-byte CDB buffer.
 
-            Length of the data in this structure, in bytes, starting with the <b>ScsiStatus</b> member. Set to SRBEX_DATA_SCSI_CDB16_LENGTH.
-        
-            `Reserved`
+`CdbLength`
 
-            This member is reserved. Set to 0.
-        
-            `Reserved1`
+The length of the CDB data, in bytes, of the <b>Cdb</b> array.
 
-            This member is reserved. Set to 0.
-        
-            `ScsiStatus`
+`Length`
 
-            The SCSI status code returned for the submitted SRB.
-        
-            `SenseInfoBuffer`
+Length of the data in this structure, in bytes, starting with the <b>ScsiStatus</b> member. Set to SRBEX_DATA_SCSI_CDB16_LENGTH.
 
-            A pointer to a buffer containing any returned sense information.
-        
-            `SenseInfoBufferLength`
+`Reserved`
 
-            The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.
-        
-            `Type`
+This member is reserved. Set to 0.
 
-            Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdb16</b>.
+`Reserved1`
 
-    ## Remarks
-        This structure is used to submit an extended SRB data for a CDB of 16 bytes or less.
+This member is reserved. Set to 0.
+
+`ScsiStatus`
+
+The SCSI status code returned for the submitted SRB.
+
+`SenseInfoBuffer`
+
+A pointer to a buffer containing any returned sense information.
+
+`SenseInfoBufferLength`
+
+The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.
+
+`Type`
+
+Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdb16</b>.
+
+## Remarks
+This structure is used to submit an extended SRB data for a CDB of 16 bytes or less.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,16 +108,12 @@ typedef struct _SRBEX_DATA_SCSI_CDB16 {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h, Srb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\srb\ns-srb-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
-</dt>
-<dt>
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-</dt>
-</dl>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
+
  
 
  

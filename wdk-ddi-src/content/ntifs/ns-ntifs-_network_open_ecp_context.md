@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 583fe92d-ce81-47b4-bd75-5566a5379790
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _NETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT, *PNETWORK_OPEN_ECP_CONTEXT
+ms.keywords : ifsk.network_open_ecp_context, *PNETWORK_OPEN_ECP_CONTEXT, _NETWORK_OPEN_ECP_CONTEXT, ntifs/NETWORK_OPEN_ECP_CONTEXT, PNETWORK_OPEN_ECP_CONTEXT, PNETWORK_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], ECP_Structures_9cdb7dab-17df-47f3-b994-fca989b3442e.xml, NETWORK_OPEN_ECP_CONTEXT structure [Installable File System Drivers], ntifs/PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available starting with Windows V
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NETWORK_OPEN_ECP_CONTEXT
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NETWORK_OPEN_ECP_CONTEXT, *PNETWORK_OPEN_ECP_CONTEXT
 ---
 
@@ -59,17 +63,21 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT {
 
 ## Members
 
-        
-            `Reserved`
 
-            Reserved. Must be set to zero.
-        
-            `Size`
+`DUMMYSTRUCTNAME`
 
-            The size, in bytes, of this structure.
 
-    ## Remarks
-        For information about how to use ECPs to associate extra information with a file when the file is created, see <a href="https://msdn.microsoft.com/e32aeec6-1a0a-4d21-8358-89d9fc0a15eb">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>. 
+
+`Reserved`
+
+Reserved. Must be set to zero.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+## Remarks
+For information about how to use ECPs to associate extra information with a file when the file is created, see <a href="https://msdn.microsoft.com/e32aeec6-1a0a-4d21-8358-89d9fc0a15eb">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>. 
 
 The NETWORK_OPEN_ECP_CONTEXT structure is read-only. You should use it to retrieve information about the network ECP context on a file only. For more information about this issue, see <a href="https://msdn.microsoft.com/6acb4be4-a7aa-431d-b2d8-3ef6d41cb4ef">System-Defined ECPs</a>.
 
@@ -85,19 +93,14 @@ Drivers that run on Windows 7 and later versions of Windows and that must interp
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_network_open_ecp_context_v0.md">NETWORK_OPEN_ECP_CONTEXT_V0</a>
-</dt>
-<dt>
 <a href="..\ntifs\ne-ntifs-network_open_integrity_qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\ns-ntifs-_network_open_ecp_context_v0.md">NETWORK_OPEN_ECP_CONTEXT_V0</a>
+
 <a href="..\ntifs\ne-ntifs-network_open_location_qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>
-</dt>
-</dl>
+
  
 
  

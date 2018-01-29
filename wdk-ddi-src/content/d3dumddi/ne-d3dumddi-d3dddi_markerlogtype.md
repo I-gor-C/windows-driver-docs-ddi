@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CBD48828-7DAA-470F-AB9E-34957C579EB5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MARKERLOGTYPE, D3DDDI_MARKERLOGTYPE
+ms.keywords : D3DDDIMLT_PROFILE, d3dumddi/D3DDDIMLT_PROFILE, D3DDDI_MARKERLOGTYPE, D3DDDI_MARKERLOGTYPE enumeration [Display Devices], D3DDDIMLT_FT_PROFILE, d3dumddi/D3DDDIMLT_FT_PROFILE, d3dumddi/D3DDDIMLT_NONE, d3dumddi/D3DDDI_MARKERLOGTYPE, display.d3dddi_markerlogtype, D3DDDIMLT_NONE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_MARKERLOGTYPE
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_MARKERLOGTYPE
 ---
 
@@ -77,14 +81,10 @@ typedef enum D3DDDI_MARKERLOGTYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ne-d3dumddi-d3dddi_markertype.md">D3DDDI_MARKERTYPE</a>
-</dt>
-</dl>
+
  
 
  

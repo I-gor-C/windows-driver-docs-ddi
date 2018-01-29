@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C6EB96AC-0D5B-4D75-9B44-B1744F6A4360
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DxApiGetVersion
+ms.keywords : display.pfnpresentmultiplaneoverlay__dxgi_, pfnPresentMultiPlaneOverlayCb callback function [Display Devices], pfnPresentMultiPlaneOverlayCb, PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB, PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB, dxgiddi/pfnPresentMultiPlaneOverlayCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnPresentMultiPlaneOverlayCb
-req.alt-loc : Dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DRMRIGHTS, *PDRMRIGHTS
 ---
 
@@ -83,14 +87,10 @@ When the user-mode display driver successfully completes its processing of a cal
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_arg_presentmultiplaneoverlay.md">DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh780324">pfnPresentMultiPlaneOverlayCb (DXGI)</a>
-</dt>
-</dl>
+
  
 
  

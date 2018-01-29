@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 7f73aaec-09fb-45f2-bff0-daef9fdb9b90
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_SCO_OPEN_CHANNEL,
+ms.keywords : _BRB_SCO_OPEN_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_SCO_OPEN_CHANNEL, _BRB_SCO_OPEN_CHANNEL, bltooth._brb_sco_open_channel, bth_structs_f852010d-7117-48fe-bd65-f4e4f17e8706.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _BRB_SCO_OPEN_CHANNEL
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -63,29 +67,28 @@ struct _BRB_SCO_OPEN_CHANNEL {
 
 ## Members
 
-        
-            `BtAddress`
 
-            The Bluetooth address of the remote device to open a SCO channel to.
-        
-            `Callback`
+`BtAddress`
 
-            The 
+The Bluetooth address of the remote device to open a SCO channel to.
+
+`Callback`
+
+The 
      <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a> implemented by
      the profile driver, that the Bluetooth driver stack should call to notify the profile driver about any
      changes to the SCO connection.
-        
-            `CallbackContext`
 
-            The context to pass to the callback function specified in the 
+`CallbackContext`
+
+The context to pass to the callback function specified in the 
      <b>Callback</b> member. The profile driver defines this value.
-        
-            `CallbackFlags`
 
-            A flag that specifies when the function assigned to the 
+`CallbackFlags`
+
+A flag that specifies when the function assigned to the 
      <b>Callback</b> member should be sent to the client. Currently, there is only one valid flag:
      
-
 <table>
 <tr>
 <td>
@@ -108,13 +111,12 @@ The profile driver should be notified when the remote device is disconnected.
 </td>
 </tr>
 </table>
-        
-            `ChannelFlags`
 
-            Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+`ChannelFlags`
+
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
      the following table:
      
-
 <table>
 <tr>
 <td>
@@ -157,27 +159,68 @@ The profile driver indicates its preference that users not be prompted for a PIN
 </td>
 </tr>
 </table>
-        
-            `ChannelHandle`
 
-            A handle to identify the SCO channel, if the open channel request completes successfully.
-        
-            `ContentFormat`
+`ChannelHandle`
 
-            The audio voice settings for the channel. Use the following definitions to encode this member:
-        
-            `Hdr`
+A handle to identify the SCO channel, if the open channel request completes successfully.
 
-            A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
-     about the current BRB.
-        
-            `MaxLatency`
+`ContentFormat`
 
-            A value that represents, in milliseconds, the upper limit of the sum of the synchronous interval
-     and the size of the (e)SCO window. Possible values are listed in the following table.
+The audio voice settings for the channel. Use the following definitions to encode this member:
      
 
+
+<dl>
+<dt>SCO_VS_AIR_CODING_DATA
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_ALAW
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_CVSD
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MULAW
+     </dt>
+<dt>SCO_VS_IN_CODING_ALAW 
+     </dt>
+<dt>SCO_VS_IN_CODING_LINEAR
+     </dt>
+<dt>SCO_VS_IN_CODING_MASK
+     </dt>
+<dt>SCO_VS_IN_CODING_MULAW
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_1C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_2C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_SM
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_US
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_8BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_16BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_MASK
+     </dt>
+<dt>SCO_VS_PCM_BIT_POS_MASK
+     </dt>
+<dt>SCO_VS_SETTING_DEFAULT</dt>
+</dl>
+
+`Hdr`
+
+A 
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     about the current BRB.
+
+`MaxLatency`
+
+A value that represents, in milliseconds, the upper limit of the sum of the synchronous interval
+     and the size of the (e)SCO window. Possible values are listed in the following table.
+     
 <table>
 <tr>
 <td>
@@ -223,35 +266,34 @@ The channel doesn't have a preferred
 </td>
 </tr>
 </table>
-        
-            `PacketType`
 
-            A flag or combination of flags that indicate the type of data packets that the SCO connection
+`PacketType`
+
+A flag or combination of flags that indicate the type of data packets that the SCO connection
      supports. These SCO packet types are defined by the Bluetooth SIG. See the Bluetooth specification for
      more information about these flags. Possible values include:
-        
-            `ReceiveBandwidth`
 
-            The reception bandwidth, in bytes per second, to be assigned to the SCO channel.
-        
-            `ReferenceObject`
+`ReceiveBandwidth`
 
-            A pointer to an object to pass to 
+The reception bandwidth, in bytes per second, to be assigned to the SCO channel.
+
+`ReferenceObject`
+
+A pointer to an object to pass to 
      <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a> and 
      <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> for which to
      maintain a reference count of.
-        
-            `Reserved`
 
-            Reserved for future use. Do not use.
-        
-            `Response`
+`Reserved`
 
-            A flag that indicates whether the local server will accept or reject an incoming SCO connection.
+Reserved for future use. Do not use.
+
+`Response`
+
+A flag that indicates whether the local server will accept or reject an incoming SCO connection.
      This member is used only when building and sending a <b>BRB_SCO_OPEN_CHANNEL_RESPONSE</b> request. Valid flag
      values are listed in the following table.
      
-
 <table>
 <tr>
 <th>Flag</th>
@@ -300,20 +342,20 @@ The local server rejects the SCO connection request because it does not accept c
 </td>
 </tr>
 </table>
-        
-            `RetransmissionEffort`
 
-            A 
-     <a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">
-     SCO_RETRANSMISSION_EFFORT</a> enumeration value that determines the retransmission policies for the
+`RetransmissionEffort`
+
+A 
+     <mshelp:link keywords="bltooth.sco_retransmission_effort" tabindex="0"><b>
+     SCO_RETRANSMISSION_EFFORT</b></mshelp:link> enumeration value that determines the retransmission policies for the
      channel.
-        
-            `TransmitBandwidth`
 
-            The transmission bandwidth, in bytes per second, to be assigned to the SCO channel.
+`TransmitBandwidth`
 
-    ## Remarks
-        To open a SCO channel, profile drivers should 
+The transmission bandwidth, in bytes per second, to be assigned to the SCO channel.
+
+## Remarks
+To open a SCO channel, profile drivers should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a> request.
 
@@ -323,8 +365,8 @@ If the asynchronous connectionless link to the remote device does not exist prio
 To accept or reject an incoming SCO connection request initiated by a remote device, profile drivers
     should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
-    <a href="https://social.msdn.microsoft.com/Forums/en-US/0a9a4323-d046-4d27-9d22-4974dbab30a4/windows-bluetooth-sco-brbscoopenchannelresponse?forum=wdk">
-    BRB_SCO_OPEN_CHANNEL_RESPONSE</a> request.
+    <mshelp:link keywords="bltooth.brb_sco_open_channel_response" tabindex="0"><b>
+    BRB_SCO_OPEN_CHANNEL_RESPONSE</b></mshelp:link> request.
 
 A profile driver should build and send a <b>BRB_SCO_OPEN_CHANNEL_RESPONSE</b> request when the Bluetooth
     driver stack calls the profile driver's 
@@ -344,31 +386,22 @@ The profile driver specifies whether the connection should be accepted by storin
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-</dt>
-<dt>
-<a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">SCO_RETRANSMISSION_EFFORT</a>
-</dt>
-<dt>
-<a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a>
-</dt>
-<dt>
+
+<a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">SCO_RETRANSMISSION_EFFORT</a>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
 <a href="https://social.msdn.microsoft.com/Forums/en-US/0a9a4323-d046-4d27-9d22-4974dbab30a4/windows-bluetooth-sco-brbscoopenchannelresponse?forum=wdk">BRB_SCO_OPEN_CHANNEL_RESPONSE</a>
-</dt>
-</dl>
+
+<a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
+
  
 
  

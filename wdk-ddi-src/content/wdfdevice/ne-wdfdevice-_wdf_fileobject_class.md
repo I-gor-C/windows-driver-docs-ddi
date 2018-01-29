@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e0887061-eafe-4dba-bb7a-58bf949e2d08
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_FILEOBJECT_CLASS, *PWDF_FILEOBJECT_CLASS, WDF_FILEOBJECT_CLASS
+ms.keywords : wdf.wdf_fileobject_class, WdfFileObjectCanBeOptional, PWDF_FILEOBJECT_CLASS enumeration pointer, WDF_FILEOBJECT_CLASS enumeration, WDF_FILEOBJECT_CLASS, _WDF_FILEOBJECT_CLASS, wdfdevice/WdfFileObjectWdfCanUseFsContext, wdfdevice/WdfFileObjectWdfCanUseFsContext2, kmdf.wdf_fileobject_class, wdfdevice/WdfFileObjectInvalid, WdfFileObjectWdfCanUseFsContext, *PWDF_FILEOBJECT_CLASS, wdfdevice/WdfFileObjectCanBeOptional, WdfFileObjectNotRequired, wdfdevice/PWDF_FILEOBJECT_CLASS, WdfFileObjectWdfCanUseFsContext2, wdfdevice/WDF_FILEOBJECT_CLASS, wdfdevice/WdfFileObjectNotRequired, WdfFileObjectWdfCannotUseFsContexts, wdfdevice/WdfFileObjectWdfCannotUseFsContexts, WdfFileObjectInvalid, PWDF_FILEOBJECT_CLASS, DFFileObjectRef_001acbc3-7e2c-4b8b-ab14-024653cefe19.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_FILEOBJECT_CLASS
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PWDF_FILEOBJECT_CLASS, WDF_FILEOBJECT_CLASS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_FILEOBJECT_CLASS, *PWDF_FILEOBJECT_CLASS
 req.product : Windows 10 or later.
 ---
 
@@ -100,12 +104,16 @@ The <b>WDF_FILEOBJECT_CLASS</b> enumeration is used in the <a href="..\wdfdevice
 If your driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a> to obtain framework file objects for I/O requests, and if you know that some of the WDM I/O request packets (IRPs) that your driver receives do not include WDM file objects, the driver can set the <b>WdfFileObjectCanBeOptional</b> bit flag. 
 
 If your driver sets the <b>WdfFileObjectWdfCanUseFsContext</b>, <b>WdfFileObjectWdfCanUseFsContext2</b>, or <b>WdfFileObjectWdfCannotUseFsContexts</b> value and does <i>not</i> set the <b>WdfFileObjectCanBeOptional</b> bit flag, <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-kmdf-verifier">the framework's verifier</a> reports an error for the following cases when the driver calls the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a> method: 
-
+<ul>
+<li>
 An IRP does not include a WDM file object.
 
+</li>
+<li>
 An IRP includes a WDM file object, but the file object is different from the one that the file creation IRP included.
 
-If the <b>WdfFileObjectCanBeOptional</b> bit flag is set, the framework's verifier ignores such cases.
+</li>
+</ul>If the <b>WdfFileObjectCanBeOptional</b> bit flag is set, the framework's verifier ignores such cases.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -117,14 +125,10 @@ If the <b>WdfFileObjectCanBeOptional</b> bit flag is set, the framework's verifi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_fileobject_config.md">WDF_FILEOBJECT_CONFIG</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+
  
 
  

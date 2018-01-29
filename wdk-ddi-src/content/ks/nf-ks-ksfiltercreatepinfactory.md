@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f4c8de23-dc92-41b0-82ee-2622d3942c0e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterCreatePinFactory
+ms.keywords : ks/KsFilterCreatePinFactory, avfunc_845b66c4-755e-43db-afdc-db929b6bd1c6.xml, stream.ksfiltercreatepinfactory, KsFilterCreatePinFactory, KsFilterCreatePinFactory function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterCreatePinFactory
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -85,11 +89,8 @@ Note that the filter control mutex must be held before calling this function. Fo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksfiltercreatenode.md">KsFilterCreateNode</a>
-</dt>
-</dl>
+
  
 
  

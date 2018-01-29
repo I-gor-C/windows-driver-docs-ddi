@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b6fd9c92-ac36-46ac-b996-d76afaf6b906
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SYNTHDOWNLOAD, SYNTHDOWNLOAD, *PSYNTHDOWNLOAD
+ms.keywords : SYNTHDOWNLOAD structure [Audio Devices], SYNTHDOWNLOAD, PSYNTHDOWNLOAD structure pointer [Audio Devices], *PSYNTHDOWNLOAD, audio.synthdownload, dmusprop/PSYNTHDOWNLOAD, PSYNTHDOWNLOAD, _SYNTHDOWNLOAD, aud-prop_dbafbabb-05b5-4bf4-9791-e7c2eb78ed4f.xml, dmusprop/SYNTHDOWNLOAD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYNTHDOWNLOAD
-req.alt-loc : dmusprop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SYNTHDOWNLOAD, *PSYNTHDOWNLOAD
 ---
 
@@ -47,17 +51,17 @@ typedef struct _SYNTHDOWNLOAD {
 
 ## Members
 
-        
-            `DownloadHandle`
 
-            Handle to the downloaded DLS data buffer, which the miniport driver generates to uniquely identify the DLS data so that it can be unloaded later.
-        
-            `Free`
+`DownloadHandle`
 
-            Specifies whether the client can free the data buffer as soon as the DLS download completes. If <b>TRUE</b>, the client can free the buffer when the download completes. If <b>FALSE</b>, the client must not free the buffer until it is unloaded. For more information, see the following Remarks section.
+Handle to the downloaded DLS data buffer, which the miniport driver generates to uniquely identify the DLS data so that it can be unloaded later.
 
-    ## Remarks
-        When processing a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537396">KSPROPERTY_SYNTH_DLS_DOWNLOAD</a> get-property request, the synthesizer miniport driver uses the SYNTHDOWNLOAD structure to pass a handle back to the client. This handle uniquely identifies the downloaded DLS data. The client later specifies this same handle in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537398">KSPROPERTY_SYNTH_DLS_UNLOAD</a> set-property request that unloads the DLS data.
+`Free`
+
+Specifies whether the client can free the data buffer as soon as the DLS download completes. If <b>TRUE</b>, the client can free the buffer when the download completes. If <b>FALSE</b>, the client must not free the buffer until it is unloaded. For more information, see the following Remarks section.
+
+## Remarks
+When processing a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537396">KSPROPERTY_SYNTH_DLS_DOWNLOAD</a> get-property request, the synthesizer miniport driver uses the SYNTHDOWNLOAD structure to pass a handle back to the client. This handle uniquely identifies the downloaded DLS data. The client later specifies this same handle in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537398">KSPROPERTY_SYNTH_DLS_UNLOAD</a> set-property request that unloads the DLS data.
 
 If the miniport driver makes its own copy of the DLS data, it sets the <i>Free</i> parameter to <b>TRUE</b> to indicate that the client can free the buffer containing the DLS data as soon as the KSPROPERTY_SYNTH_DLS_DOWNLOAD property request completes. If the miniport driver continues to use the client's copy of the DLS data, however, it sets <i>Free</i> to <b>FALSE</b> to indicate that the client should maintain its allocation of the original DLS data buffer until it unloads the data by sending a KSPROPERTY_SYNTH_DLS_UNLOAD property request.
 
@@ -69,16 +73,12 @@ If the miniport driver makes its own copy of the DLS data, it sets the <i>Free</
 | **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537396">KSPROPERTY_SYNTH_DLS_DOWNLOAD</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537398">KSPROPERTY_SYNTH_DLS_UNLOAD</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5D4F3D70-6E2B-4B2E-91A4-6852AF8FEAD0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlQueryCachedVdl
+ms.keywords : FsRtlQueryCachedVdl routine [Installable File System Drivers], ifsk.fsrtlquerycachedvdl, FsRtlQueryCachedVdl, ntifs/FsRtlQueryCachedVdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlQueryCachedVdl
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -64,7 +68,7 @@ A pointer to a caller supplied value which receives the VDL.
 
 ## Remarks
 
-The <b>FsRtlQueryCachedVdl</b> routine will return the VDL for a full span file region. This is a region beginning at an offset of 0 and having a length of <b>MAXLONGLONG</b>.</p>
+The <b>FsRtlQueryCachedVdl</b> routine will return the VDL for a full span file region. This is a region beginning at an offset of 0 and having a length of <b>MAXLONGLONG</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

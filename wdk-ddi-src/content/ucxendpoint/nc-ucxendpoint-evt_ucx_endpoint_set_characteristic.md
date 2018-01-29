@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4FA3F175-52E4-472D-A9B3-B3B4B37E1701
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
+ms.keywords : buses.evt_ucx_endpoint_set_characteristic, EvtUcxEndpointSetCharacteristic callback function [Buses], EvtUcxEndpointSetCharacteristic, EVT_UCX_ENDPOINT_SET_CHARACTERISTIC, EVT_UCX_ENDPOINT_SET_CHARACTERISTIC, ucxendpoint/EvtUcxEndpointSetCharacteristic
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : EvtUcxEndpointSetCharacteristic
-req.alt-loc : Ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -85,9 +89,8 @@ The UCX client driver registers this callback function with the USB host control
 
 ## See Also
 
-<dl>
-<dt><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a></dt>
-</dl>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a>
+
  
 
  

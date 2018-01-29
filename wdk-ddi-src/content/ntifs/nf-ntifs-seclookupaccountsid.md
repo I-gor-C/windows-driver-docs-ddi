@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7237a041-46e0-4211-97c1-96d309ada602
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SecLookupAccountSid
+ms.keywords : SecLookupAccountSid function [Installable File System Drivers], ntifs/SecLookupAccountSid, ifsk.seclookupaccountsid, SecLookupAccountSid, ksecddref_ba65e59c-5c9a-47bb-bf2c-9b3b8c727bb6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This SecLookupAccountSid function is only available 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SecLookupAccountSid
-req.alt-loc : Ksecdd.lib,Ksecdd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksecdd.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -67,11 +71,11 @@ A pointer to the <i>NameBuffer</i>.
 
 `OPTIONAL`
 
-
+TBD
 
 `OPTIONAL`
 
-
+TBD
 
 `NameUse`
 
@@ -81,27 +85,89 @@ A pointer to a SID_NAME_USE enumerated type that indicates the type of the accou
 ## Return Value
 
 <b>SecLookupAccountSid</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>SEC_E_INTERNAL_ERROR</b></dt>
-</dl>An internal error occurred while trying to connect to the Local System Authority (LSA) or the local procedure call (LPC) to the security provider failed. 
+</dl>
+</td>
+<td width="60%">
+An internal error occurred while trying to connect to the Local System Authority (LSA) or the local procedure call (LPC) to the security provider failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The process ID associated with the currently executing thread does not match the current process ID. 
+</dl>
+</td>
+<td width="60%">
+The process ID associated with the currently executing thread does not match the current process ID. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer size for the <i>NameBuffer</i> or the <i>ReferencedDomain</i> parameter was too small.
+</dl>
+</td>
+<td width="60%">
+The buffer size for the <i>NameBuffer</i> or the <i>ReferencedDomain</i> parameter was too small.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The length of the <i>Name</i> parameter exceeded the length allowed in a message to the Local System Authority (LSA). 
+</dl>
+</td>
+<td width="60%">
+The length of the <i>Name</i> parameter exceeded the length allowed in a message to the Local System Authority (LSA). 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl>It was not possible to allocate sufficient memory for a temporary internal buffer used by this function.
+</dl>
+</td>
+<td width="60%">
+It was not possible to allocate sufficient memory for a temporary internal buffer used by this function.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NONE_MAPPED</b></dt>
-</dl>The <i>Sid</i> parameter could not be found. 
+</dl>
+</td>
+<td width="60%">
+The <i>Sid</i> parameter could not be found. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PROCESS_IS_TERMINATING</b></dt>
-</dl>This process has terminated so it is not possible to establish a local procedure call (LPC) connection.
+</dl>
+</td>
+<td width="60%">
+This process has terminated so it is not possible to establish a local procedure call (LPC) connection.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -129,20 +195,14 @@ In addition to looking up SIDs for local accounts, local domain accounts, and ex
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-seclookupwellknownsid.md">SecLookupWellKnownSid</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-seclookupwellknownsid.md">SecLookupWellKnownSid</a>
+
 <a href="..\ntifs\ne-ntifs-_sid_name_use.md">SID_NAME_USE</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\fwps_vswitch_runtime_state_save_callback0.htm
 old-project : netvista
 ms.assetid : 2CDD666F-3D88-4078-9A4C-D7A107806EA7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FwpmEngineOpen0
+ms.date : 1/18/2018
+ms.keywords : netvista.fwps_vswitch_runtime_state_save_callback0, vSwitchRuntimeStateSaveNotifyFn callback function [Network Drivers Starting with Windows Vista], vSwitchRuntimeStateSaveNotifyFn, FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0, FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0, fwpsk/vSwitchRuntimeStateSaveNotifyFn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : vSwitchRuntimeStateSaveNotifyFn
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 ---
 
@@ -92,15 +96,45 @@ The source switch port identifier.
 A callout's 
   
   <i>FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</i> function returns one of the following NTSTATUS codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The callout driver accepts the notification from the filter engine.
+</dl>
+</td>
+<td width="60%">
+The callout driver accepts the notification from the filter engine.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl> The operation is pending and will be completed later.  The callout  driver will  call the <a href="..\fwpsk\nf-fwpsk-fwpsvswitchnotifycomplete0.md">FwpsvSwitchNotifyComplete0</a> function to complete the pending operation.
+</dl>
+</td>
+<td width="60%">
+ The operation is pending and will be completed later.  The callout  driver will  call the <a href="..\fwpsk\nf-fwpsk-fwpsvswitchnotifycomplete0.md">FwpsvSwitchNotifyComplete0</a> function to complete the pending operation.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Other status codes</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -135,37 +169,26 @@ See the <i>vSwitchRuntimeStateRestoreNotifyFn</i> (<a href="..\fwpsk\nc-fwpsk-fw
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
-</dt>
-<dt>
 <a href="..\fwpsk\ne-fwpsk-fwps_vswitch_event_type_.md">FWPS_VSWITCH_EVENT_TYPE</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_restore_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsvswitchnotifycomplete0.md">FwpsvSwitchNotifyComplete0</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_save_state.md">NDIS_SWITCH_NIC_SAVE_STATE</a>
-</dt>
-<dt>
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_switch_parameters.md">NDIS_SWITCH_PARAMETERS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598268">OID_SWITCH_NIC_SAVE</a>
-</dt>
-<dt>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsvswitchnotifycomplete0.md">FwpsvSwitchNotifyComplete0</a>
+
+<a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
-</dt>
-</dl>
- 
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_save_state.md">NDIS_SWITCH_NIC_SAVE_STATE</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_restore_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0 callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0 callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

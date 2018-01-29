@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c821231a-446d-45dd-9c12-9ab05aeb1108
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPnpCallbackHardware, IPnpCallbackHardware::OnPrepareHardware, OnPrepareHardware
+ms.keywords : IPnpCallbackHardware interface, OnPrepareHardware method, OnPrepareHardware, umdf.ipnpcallbackhardware_onpreparehardware, wudfddi/IPnpCallbackHardware::OnPrepareHardware, IPnpCallbackHardware, OnPrepareHardware method, IPnpCallbackHardware interface, OnPrepareHardware method, wdf.ipnpcallbackhardware_onpreparehardware, IPnpCallbackHardware::OnPrepareHardware, UMDFDeviceObjectRef_3b9db069-02f0-4d3e-855d-835bb1bb6d2d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPnpCallbackHardware.OnPrepareHardware
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -88,26 +92,18 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware.md">IPnpCallbackHardware</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556768">IPnpCallbackHardware::OnReleaseHardware</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/830D706A-016C-4637-829F-2014AD1A1309">IPnpCallbackHardware2::OnPrepareHardware</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556768">IPnpCallbackHardware::OnReleaseHardware</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/830D706A-016C-4637-829F-2014AD1A1309">IPnpCallbackHardware2::OnPrepareHardware</a>
+
+<a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware.md">IPnpCallbackHardware</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
  
 
  

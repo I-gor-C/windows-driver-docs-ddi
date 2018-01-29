@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 0679406E-091D-4E66-956A-54E3A517BF4C
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : NFC_CX_CLIENT_CONFIG_INIT
+ms.keywords : NFC_CX_CLIENT_CONFIG_INIT function [Near-Field Proximity Drivers], nfccx/NFC_CX_CLIENT_CONFIG_INIT, NFC_CX_CLIENT_CONFIG_INIT, nfpdrivers.nfc_cx_client_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NFC_CX_CLIENT_CONFIG_INIT
-req.alt-loc : nfccxstub.lib,nfccxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Nfccxstub.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE"
 ---
 
@@ -77,10 +81,10 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

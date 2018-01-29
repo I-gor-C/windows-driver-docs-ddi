@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5e257b72-fe16-49a0-9232-9c791a88e903
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetRemainingStackSize
+ms.keywords : kernel.iogetremainingstacksize, wdm/IoGetRemainingStackSize, k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml, IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], IoGetRemainingStackSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetRemainingStackSize
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -50,10 +54,6 @@ ULONG_PTR IoGetRemainingStackSize(void);
 This function has no parameters.
 
 ## Return Value
-
-<b>IoGetRemainingStackSize</b> returns the number of bytes of stack space in the current thread context.
-
-<b>IoGetRemainingStackSize</b> returns the number of bytes of stack space in the current thread context.
 
 <b>IoGetRemainingStackSize</b> returns the number of bytes of stack space in the current thread context.
 
@@ -77,14 +77,10 @@ For Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows, call
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iogetinitialstack.md">IoGetInitialStack</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iogetstacklimits.md">IoGetStackLimits</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iogetinitialstack.md">IoGetInitialStack</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : e62c61e7-ef64-4939-ad24-686d137b6319
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+ms.keywords : hid.ioctl_internal_mouse_disconnect, IOCTL_INTERNAL_MOUSE_DISCONNECT control code [Human Input Devices], IOCTL_INTERNAL_MOUSE_DISCONNECT, kbdmou/IOCTL_INTERNAL_MOUSE_DISCONNECT, mfilref_11062207-6bb0-4a84-aaee-c3c086812b90.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_MOUSE_DISCONNECT
-req.alt-loc : kbdmou.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
@@ -59,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Status</b> member is set to STATUS_NOT_IMPLEMENTED.
 
 
@@ -70,13 +73,10 @@ The <b>Status</b> member is set to STATUS_NOT_IMPLEMENTED.
 | **Header** | kbdmou.h (include Kbdmou.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\kbdmou\ni-kbdmou-ioctl_internal_mouse_connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a>
-</dt>
-</dl>
+
  
 
  

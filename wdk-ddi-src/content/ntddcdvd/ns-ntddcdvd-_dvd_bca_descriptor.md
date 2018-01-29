@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a573beb8-7019-4605-ab37-5871f67c585d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DVD_BCA_DESCRIPTOR, DVD_BCA_DESCRIPTOR, *PDVD_BCA_DESCRIPTOR
+ms.keywords : ntddcdvd/DVD_BCA_DESCRIPTOR, DVD_BCA_DESCRIPTOR structure [Storage Devices], PDVD_BCA_DESCRIPTOR structure pointer [Storage Devices], storage.dvd_bca_descriptor, structs-DVD_4bbbd075-9b9f-40a6-b52d-e96b8ad7118b.xml, PDVD_BCA_DESCRIPTOR, DVD_BCA_DESCRIPTOR, *PDVD_BCA_DESCRIPTOR, _DVD_BCA_DESCRIPTOR, ntddcdvd/PDVD_BCA_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_BCA_DESCRIPTOR
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DVD_BCA_DESCRIPTOR, *PDVD_BCA_DESCRIPTOR
 ---
 
@@ -46,13 +50,13 @@ typedef struct _DVD_BCA_DESCRIPTOR {
 
 ## Members
 
-        
-            `BCAInformation`
 
-            Contains an array that holds vendor-defined information retrieved from the burst cutting area.
+`BCAInformation`
 
-    ## Remarks
-        The contents of the BCA region are specified by the media manufacturer.
+Contains an array that holds vendor-defined information retrieved from the burst cutting area.
+
+## Remarks
+The contents of the BCA region are specified by the media manufacturer.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,13 +66,10 @@ typedef struct _DVD_BCA_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
-</dt>
-</dl>
+
  
 
  

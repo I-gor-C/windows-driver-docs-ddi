@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 300720f6-8049-4558-ba8b-ecdbb8a59dbd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryRuntimeThread
+ms.keywords : KeQueryRuntimeThread, k105_e8f1a28f-98f1-447c-bb72-1d1da6b50f01.xml, KeQueryRuntimeThread routine [Kernel-Mode Driver Architecture], kernel.kequeryruntimethread, wdm/KeQueryRuntimeThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeQueryRuntimeThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ Pointer to the memory location where <b>KeQueryRuntimeThread</b> returns the acc
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e724ae02-642d-464c-b1d2-e43a657b4e9c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_req_global_suspend, IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND control code [Buses], IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND, usbioctl/IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---

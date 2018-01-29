@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 21298d5b-e99f-470f-a352-65da2d91b81e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoDeletePowerRequest
+ms.keywords : wdm/PoDeletePowerRequest, portn_a0e21464-039d-4619-b9d5-f67bf2d7273b.xml, kernel.podeletepowerrequest, PoDeletePowerRequest routine [Kernel-Mode Driver Architecture], PoDeletePowerRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoDeletePowerRequest
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -51,7 +55,7 @@ VOID PoDeletePowerRequest(
 
 `PowerRequest`
 
-A pointer to a power request object that was created by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
+A pointer to a power request object that was created by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
 
 
 ## Return Value
@@ -76,11 +80,8 @@ The driver must delete the power request object before it deletes the device obj
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
-</dt>
-</dl>
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+
  
 
  

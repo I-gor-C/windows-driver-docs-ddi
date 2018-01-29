@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a4d78135-38bc-4a34-98ce-d2712829124a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxLowIoGetBufferAddress
+ms.keywords : ifsk.rxlowiogetbufferaddress, rxref_b45afb50-cf03-4450-9e96-3d8f08392eb6.xml, RxLowIoGetBufferAddress function [Installable File System Drivers], RxLowIoGetBufferAddress, lowio/RxLowIoGetBufferAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxLowIoGetBufferAddress
-req.alt-loc : lowio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -79,23 +83,16 @@ A pointer to the RX_CONTEXT structure for this request.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
-</dt>
-<dt>
-<a href="..\lowio\nf-lowio-rxlowiocompletion.md">RxLowIoCompletion</a>
-</dt>
-<dt>
 <a href="..\rxprocs\nf-rxprocs-rxmapsystembuffer.md">RxMapSystemBuffer</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554591">RxNewMapUserBuffer</a>
-</dt>
-<dt>
+
 <a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554591">RxNewMapUserBuffer</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
+<a href="..\lowio\nf-lowio-rxlowiocompletion.md">RxLowIoCompletion</a>
+
  
 
  

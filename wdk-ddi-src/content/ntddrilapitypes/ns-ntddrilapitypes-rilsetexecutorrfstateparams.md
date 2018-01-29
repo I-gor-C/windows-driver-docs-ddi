@@ -7,8 +7,8 @@ old-location : netvista\rilsetexecutorrfstateparams.htm
 old-project : netvista
 ms.assetid : d7f36cbd-56bb-470e-b965-369b9e49f5e2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILSETEXECUTORRFSTATEPARAMS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS, netvista.rilsetexecutorrfstateparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSETEXECUTORRFSTATEPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS"
 ---
 
 # RILSETEXECUTORRFSTATEPARAMS structure
@@ -47,14 +51,14 @@ typedef struct _RILSETEXECUTORRFSTATEPARAMS {
 
 ## Members
 
-        
-            `dwExecutor`
 
-            
-        
-            `fExecutorRFState`
+`dwExecutor`
 
-            
+
+
+`fExecutorRFState`
+
+
 
 
 ## Requirements

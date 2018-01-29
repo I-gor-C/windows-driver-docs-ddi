@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 483147CF-B15D-435C-B5AA-31723D4C2A85
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxControllerResetComplete
+ms.keywords : ucxcontroller/UcxControllerResetComplete, buses._ucxcontrollerresetcomplete, UcxControllerResetComplete method [Buses], UcxControllerResetComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxControllerResetComplete
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_STATE
 req.product : Windows 10 or later.
 ---
@@ -55,7 +59,7 @@ A handle to the controller object to reset. The client driver retrieved the hand
 
 `UcxControllerResetCompleteInfo`
 
-
+TBD
 
 
 ## Return Value
@@ -77,11 +81,8 @@ This method does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
-</dt>
-</dl>
+
  
 
  

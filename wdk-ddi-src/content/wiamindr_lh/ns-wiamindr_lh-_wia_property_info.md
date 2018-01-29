@@ -7,8 +7,8 @@ old-location : image\wia_property_info.htm
 old-project : image
 ms.assetid : 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO
+ms.date : 1/18/2018
+ms.keywords : WIA_PROPERTY_INFO structure [Imaging Devices], _WIA_PROPERTY_INFO, wiamindr_lh/WIA_PROPERTY_INFO, PWIA_PROPERTY_INFO structure pointer [Imaging Devices], WIA_PROPERTY_INFO, wiamindr_lh/PWIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO, PWIA_PROPERTY_INFO, image.wia_property_info, wiastrct_6e0091b3-43a3-473b-88e4-ec41533a5b0e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WIA_PROPERTY_INFO
-req.alt-loc : wiamindr_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO"
 req.product : Windows 10 or later.
 ---
@@ -89,61 +93,41 @@ typedef struct _WIA_PROPERTY_INFO {
 
 ## Members
 
-        
-            `lAccessFlags`
 
-            Specifies the access and property attribute flags for a property. See the Microsoft Windows SDK documentation for a list of WIA property attribute flags.
-        
-            `ValidVal`
+`lAccessFlags`
 
-            
-        
-            `vt`
+Specifies the access and property attribute flags for a property. See the Microsoft Windows SDK documentation for a list of WIA property attribute flags.
 
-            Specifies the variant data type for the property. This member, which can be one of the following, controls which structure member of the <b>ValidValunion</b> is valid:
+`ValidVal`
 
-<dl>
-<dd>
+
+
+`vt`
+
+Specifies the variant data type for the property. This member, which can be one of the following, controls which structure member of the <b>ValidValunion</b> is valid:
+
 VT_UI1
 
-</dd>
-<dd>
 VT_UI2
 
-</dd>
-<dd>
 VT_UI4
 
-</dd>
-<dd>
 VT_I2
 
-</dd>
-<dd>
 VT_I4
 
-</dd>
-<dd>
 VT_R4
 
-</dd>
-<dd>
 VT_R8
 
-</dd>
-<dd>
 VT_CLSID
 
-</dd>
-<dd>
 VT_BSTR
 
-</dd>
-</dl>
 See PROPVARIANT in the Windows SDK documentation for more information.
 
-    ## Remarks
-        The WIA_PROPERTY_INFO is used by the minidriver to store information about a property of arbitrary type. This structure is also used by the <b>wiasSetItemPropAttribs</b> to set a property's valid values. The <b>lAccessFlags</b> member controls whether access to a property is read-only or read/write. This member also conveys information about the set of valid values for a property when they are defined by a list of values, a range of values, or a bitset of flags. The <b>vt</b> member contains information about the type of the property. Both members should be used to determine which member of the <b>ValidValunion</b> can be accessed. 
+## Remarks
+The WIA_PROPERTY_INFO is used by the minidriver to store information about a property of arbitrary type. This structure is also used by the <b>wiasSetItemPropAttribs</b> to set a property's valid values. The <b>lAccessFlags</b> member controls whether access to a property is read-only or read/write. This member also conveys information about the set of valid values for a property when they are defined by a list of values, a range of values, or a bitset of flags. The <b>vt</b> member contains information about the type of the property. Both members should be used to determine which member of the <b>ValidValunion</b> can be accessed. 
 
 For example, for a read/write property of type <b>long</b>, whose valid values are integers in the range -128 to 127, and whose nominal value is 0, <b>lAccessFlags</b> would be set to WIA_PROP_RW | WIA_PROP_RANGE, and <b>vt</b> would be set to VT_I4. <b>Range.Min</b> would be set to -128, <b>Range.Max</b> would be set to 127, and <b>Range.Inc</b> would be set to 1. <b>Range.Nom</b> would be set to 0.
 
@@ -154,10 +138,43 @@ A property whose valid values are defined by a bitset of the values 0x01, 0x02, 
 The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a> to set your property values.
 
 Initialization might look like the following example:
-
-At run time, changing the value with <b>wiasWriteMultiple</b> might look like the following example:
-
-<b>Note</b>  WIA uses the COM PROPVARIANT type, VARIANT (defined in the Microsoft Windows SDK documentation), so the default is VT_VECTOR, and not VT_ARRAY (which is also supported).
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>  // Initialize WIA_IPA_ITEM_TIME (NONE)
+  g_pszItemDefaults[13]              = WIA_IPA_ITEM_TIME_STR;
+  g_piItemDefaults [13]              = WIA_IPA_ITEM_TIME;
+  g_pvItemDefaults [13].cai.celems   = MyNumberOfElements;
+  g_pvItemDefaults [13].cai.pelems   = PointerToMyArray;
+  g_pvItemDefaults [13].vt           = VT_VECTOR|VT_UI2; // MyArray is an array of DWORD values
+  g_psItemDefaults [13].ulKind       = PRSPEC_PROPID;
+  g_psItemDefaults [13].propid       = g_piItemDefaults [13];
+  g_wpiItemDefaults[13].lAccessFlags = WIA_PROP_READ|WIA_PROP_NONE;
+  g_wpiItemDefaults[13].vt           = g_pvItemDefaults [13].vt;</pre>
+</td>
+</tr>
+</table></span></div>At run time, changing the value with <b>wiasWriteMultiple</b> might look like the following example:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>  PROPVARIANT propVar;
+  PROPSPEC    propSpec;
+  PropVariantInit(&amp;propVar);
+  propVar.vt          = VT_VECTOR | VT_UI2;
+  propVar.caui.cElems = sizeof(SYSTEMTIME) / sizeof(WORD);
+  propVar.caui.pElems = (WORD *) &amp;CurrentTimeStruct;
+  propSpec.ulKind     = PRSPEC_PROPID;
+  propSpec.propid     = WIA_IPA_ITEM_TIME;
+  hr                  = wiasWriteMultiple(pWiasContext, 1, &amp;propSpec, &amp;propVar);</pre>
+</td>
+</tr>
+</table></span></div><b>Note</b>  WIA uses the COM PROPVARIANT type, VARIANT (defined in the Microsoft Windows SDK documentation), so the default is VT_VECTOR, and not VT_ARRAY (which is also supported).
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -167,15 +184,12 @@ At run time, changing the value with <b>wiasWriteMultiple</b> might look like th
 | **Minimum UMDF version** |  |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_PROPERTY_INFO structure%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_PROPERTY_INFO structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

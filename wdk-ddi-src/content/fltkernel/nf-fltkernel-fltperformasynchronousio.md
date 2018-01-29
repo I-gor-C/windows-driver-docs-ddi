@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c76529fe-c808-4239-9bde-68dc68d987ec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltPerformAsynchronousIo
+ms.keywords : FltApiRef_p_to_z_ed6cd087-6139-4280-aaf3-fe6f0d5b056a.xml, ifsk.fltperformasynchronousio, FltPerformAsynchronousIo function [Installable File System Drivers], fltkernel/FltPerformAsynchronousIo, FltPerformAsynchronousIo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltPerformAsynchronousIo
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,12 +70,34 @@ Context pointer to be passed to the <i>CallbackRoutine</i> This parameter is opt
 ## Return Value
 
 <b>FltPerformAsynchronousIo</b> returns STATUS_SUCCESS to indicate that the I/O operation is complete, and the callback routine that <i>CallbackRoutine</i> points to has been called. Otherwise, it returns an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_INVALID_ASYNCHRONOUS_REQUEST</b></dt>
-</dl>IRP_MJ_CREATE requests cannot be performed asynchronously. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+IRP_MJ_CREATE requests cannot be performed asynchronously. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>The operation returned STATUS_PENDING. The callback routine that <i>CallbackRoutine</i> points to is called when the I/O operation is complete. This is a success code.
+</dl>
+</td>
+<td width="60%">
+The operation returned STATUS_PENDING. The callback routine that <i>CallbackRoutine</i> points to is called when the I/O operation is complete. This is a success code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -113,35 +139,24 @@ The caller of <b>FltPerformAsynchronousIo</b> can be running at IRQL &lt;= APC_L
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreusecallbackdata.md">FltReuseCallbackData</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltreusecallbackdata.md">FltReuseCallbackData</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a>
+
  
 
  

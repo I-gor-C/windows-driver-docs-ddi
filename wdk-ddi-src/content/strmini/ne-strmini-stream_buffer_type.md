@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7C9E1D94-BF59-4302-BEE8-24546C8AE7E6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : STREAM_BUFFER_TYPE, STREAM_BUFFER_TYPE
+ms.keywords : SRBDataBuffer, strmini/DmaBuffer, DmaBuffer, PerRequestExtension, STREAM_BUFFER_TYPE, strmini/SRBDataBuffer, strmini/PerRequestExtension, strmini/STREAM_BUFFER_TYPE, STREAM_BUFFER_TYPE enumeration [Streaming Media Devices], stream.stream_buffer_type
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STREAM_BUFFER_TYPE
-req.alt-loc : Strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_BUFFER_TYPE
 req.product : Windows 10 or later.
 ---
 
 # STREAM_BUFFER_TYPE Enumeration
-This enumeration defines the buffer types for <a href="https://msdn.microsoft.com/library/windows/hardware/ff568247">StreamClassGetPhysicalAddress</a>.
+This enumeration defines the buffer types for <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">StreamClassGetPhysicalAddress</a>.
 
 ## Syntax
 ````

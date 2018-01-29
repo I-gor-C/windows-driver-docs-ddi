@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 52b2b97e-217b-445b-9c7a-093808f37aba
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SPEED_MAP, SPEED_MAP, *PSPEED_MAP
+ms.keywords : _SPEED_MAP, *PSPEED_MAP, SPEED_MAP structure [Buses], IEEE.speed_map, PSPEED_MAP structure pointer [Buses], PSPEED_MAP, 1394/SPEED_MAP, 1394/PSPEED_MAP, SPEED_MAP, 1394stct_0df32f88-2279-4df2-a7f3-856ddfdacb56.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPEED_MAP
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SPEED_MAP, *PSPEED_MAP
 ---
 
@@ -49,40 +53,31 @@ typedef struct _SPEED_MAP {
 
 ## Members
 
-        
-            `SPD_CRC`
 
-            Specifies the CRC value for the speed map.
-        
-            `SPD_Generation`
+`SPD_CRC`
 
-            Specifies the generation count for the bus reset that corresponds to this speed map.
-        
-            `SPD_Length`
+Specifies the CRC value for the speed map.
 
-            Specifies the number of quadlets in the speed map.
-        
-            `SPD_Speed_Code`
+`SPD_Generation`
 
-            Specifies an array of speed codes. Currently, the possible values are:
+Specifies the generation count for the bus reset that corresponds to this speed map.
 
-<dl>
-<dd>
+`SPD_Length`
+
+Specifies the number of quadlets in the speed map.
+
+`SPD_Speed_Code`
+
+Specifies an array of speed codes. Currently, the possible values are:
+
 SCODE_100_RATE
 
-</dd>
-<dd>
 SCODE_200_RATE
 
-</dd>
-<dd>
 SCODE_400_RATE
 
-</dd>
-</dl>
-
-    ## Remarks
-        The SPEED_MAP structure describes the maximum speed that devices on the bus can attain. All values in this structure are recorded in big-endian format.
+## Remarks
+The SPEED_MAP structure describes the maximum speed that devices on the bus can attain. All values in this structure are recorded in big-endian format.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,13 +87,10 @@ SCODE_400_RATE
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537646">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
-</dt>
-</dl>
+
  
 
  

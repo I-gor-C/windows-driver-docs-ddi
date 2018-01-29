@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a5c868a5-0e79-482b-9694-02cae2de99ca
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryUpdateCacheData
+ms.keywords : stream.ksfilterfactoryupdatecachedata, ks/KsFilterFactoryUpdateCacheData, avfunc_2fdbd12c-b074-415e-8de3-bfbe61ef198a.xml, KsFilterFactoryUpdateCacheData, KsFilterFactoryUpdateCacheData function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterFactoryUpdateCacheData
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,6 +79,7 @@ Do not use this routine in place of <b>KsRegisterFilterWithNoKSPins</b> for filt
 In addition, <b>KsRegisterFilterWithNoKSPins</b> only allows one medium per registered pin. This may not be sufficient for a BDA minidriver.
 
 For more information, see <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a>.
+<div class="alert"><b>Note</b>  The <b>KsFilterFactoryUpdateCacheData</b> function can only be called in PASSIVE_LEVEL.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,17 +95,12 @@ For more information, see <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNoKSPins</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+
+<a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNoKSPins</a>
+
  
 
  

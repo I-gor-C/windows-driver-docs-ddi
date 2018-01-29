@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fb9b7c58-1c4f-42e4-a59f-4a529d3caca2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkddilinkdevice, DxgkDdiLinkDevice callback function [Display Devices], DxgkDdiLinkDevice, DXGKDDI_LINK_DEVICE, DXGKDDI_LINK_DEVICE, dispmprt/DxgkDdiLinkDevice, DmFunctions_3dcba945-b441-49a2-9d1e-af0ff235136c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiLinkDevice
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -96,14 +100,10 @@ Plug and Play or power events cause the leading linked adapter to power up or st
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\ns-dispmprt-_linked_device.md">LINKED_DEVICE</a>
-</dt>
-</dl>
+
  
 
  

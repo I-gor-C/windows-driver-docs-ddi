@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 07317157-1222-4b34-89f4-d546818e9851
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::ForwardToIoQueue, ForwardToIoQueue
+ms.keywords : wdf.iwdfiorequest_forwardtoioqueue, wudfddi/IWDFIoRequest::ForwardToIoQueue, ForwardToIoQueue method, ForwardToIoQueue method, IWDFIoRequest interface, IWDFIoRequest, IWDFIoRequest::ForwardToIoQueue, umdf.iwdfiorequest_forwardtoioqueue, IWDFIoRequest interface, ForwardToIoQueue method, ForwardToIoQueue, UMDFRequestObjectRef_ae3c7113-1fac-4742-b53b-8230bf78b61a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.ForwardToIoQueue
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -72,8 +76,6 @@ Also, the <b>ForwardToIoQueue</b> method cannot requeue a request that the drive
 
 The request cannot be cancelable. If the driver previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a> method to make the request cancelable, the driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559163">IWDFIoRequest::UnmarkCancelable</a> method before calling <b>ForwardToIoQueue</b>.
 
-The following code example shows how to forward a request to another queue if the request's buffer is insufficient to hold the required information.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -88,23 +90,16 @@ The following code example shows how to forward a request to another queue if th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559163">IWDFIoRequest::UnmarkCancelable</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
+
  
 
  

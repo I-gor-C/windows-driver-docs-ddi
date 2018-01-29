@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b319f2a4-dbbe-4324-8f8d-a42bb40d7939
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDeviceSetBusData
+ms.keywords : avfunc_5b7ad4e8-d651-4b80-99db-260fba83ce15.xml, ks/KsDeviceSetBusData, stream.ksdevicesetbusdata, KsDeviceSetBusData, KsDeviceSetBusData function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDeviceSetBusData
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -99,14 +103,10 @@ Drivers running on Windows 2000 and later can make this call at IRQL = DISPATCH_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksdevicegetbusdata.md">KsDeviceGetBusData</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-</dt>
-</dl>
+
  
 
  

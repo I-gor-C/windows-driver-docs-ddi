@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 588ebf7a-db83-4eb8-8403-04b215bed12b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
+ms.keywords : D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure [Display Devices], d3dumddi/D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, UMDisplayDriver_param_Structs_8fece49c-e3e6-4683-b4af-517da6f73cc7.xml, display.d3dddiarg_getcaptureallocationhandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE {
 
 ## Members
 
-        
-            `hAllocation`
 
-            [out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation that is associated with the resource that <b>hResource</b> specifies.
-        
-            `hResource`
+`hAllocation`
 
-            [in] A handle to the capture resource that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaptureallocationhandle.md">GetCaptureAllocationHandle</a> retrieves the allocation handle for.
+[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation that is associated with the resource that <b>hResource</b> specifies.
+
+`hResource`
+
+[in] A handle to the capture resource that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaptureallocationhandle.md">GetCaptureAllocationHandle</a> retrieves the allocation handle for.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaptureallocationhandle.md">GetCaptureAllocationHandle</a>
-</dt>
-</dl>
+
  
 
  

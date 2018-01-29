@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : B073D354-14FB-477E-BBD7-8BD282696EF4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode, IMiniportAudioEngineNode::SetGfxState, SetGfxState
+ms.keywords : portcls/IMiniportAudioEngineNode::SetGfxState, SetGfxState method [Audio Devices], IMiniportAudioEngineNode interface [Audio Devices], SetGfxState method, SetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode, SetGfxState, IMiniportAudioEngineNode::SetGfxState, audio.iminiportaudioenginenode_setgfxstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportAudioEngineNode.SetGfxState
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -77,11 +81,8 @@ The state of the GFX node.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
-</dt>
-</dl>
+
  
 
  

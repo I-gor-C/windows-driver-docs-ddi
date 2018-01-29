@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c358220c-1e29-4889-b214-f2892c9ac47d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _BOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX
+ms.keywords : kernel.bootdisk_information_ex, wdm/PBOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX structure [Kernel-Mode Driver Architecture], wdm/BOOTDISK_INFORMATION_EX, _BOOTDISK_INFORMATION_EX, kstruct_a_abc410ed-6eca-4417-b428-565971e85287.xml, BOOTDISK_INFORMATION_EX, PBOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX, PBOOTDISK_INFORMATION_EX structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BOOTDISK_INFORMATION_EX
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX
 req.product : Windows 10 or later.
 ---
@@ -54,41 +58,41 @@ typedef struct _BOOTDISK_INFORMATION_EX {
 
 ## Members
 
-        
-            `BootDeviceGuid`
 
-            If the <b>BootDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused.
-        
-            `BootDeviceIsGpt`
+`BootDeviceGuid`
 
-            <b>TRUE</b> if the boot disk is formatted with the GPT partition table type.
-        
-            `BootDeviceSignature`
+If the <b>BootDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused.
 
-            If the <b>BootDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
-        
-            `BootPartitionOffset`
+`BootDeviceIsGpt`
 
-            Specifies the offset, in bytes, on the boot disk where the boot partition begins.
-        
-            `SystemDeviceGuid`
+<b>TRUE</b> if the boot disk is formatted with the GPT partition table type.
 
-            If the <b>SystemDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused.
-        
-            `SystemDeviceIsGpt`
+`BootDeviceSignature`
 
-            <b>TRUE</b> if the system disk is formatted with the GPT partition table type.
-        
-            `SystemDeviceSignature`
+If the <b>BootDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
 
-            If the <b>SystemDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
-        
-            `SystemPartitionOffset`
+`BootPartitionOffset`
 
-            Specifies the offset, in bytes, on the system disk where the system partition begins.
+Specifies the offset, in bytes, on the boot disk where the boot partition begins.
 
-    ## Remarks
-        On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
+`SystemDeviceGuid`
+
+If the <b>SystemDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused.
+
+`SystemDeviceIsGpt`
+
+<b>TRUE</b> if the system disk is formatted with the GPT partition table type.
+
+`SystemDeviceSignature`
+
+If the <b>SystemDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
+
+`SystemPartitionOffset`
+
+Specifies the offset, in bytes, on the system disk where the system partition begins.
+
+## Remarks
+On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,16 +102,12 @@ typedef struct _BOOTDISK_INFORMATION_EX {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_bootdisk_information.md">BOOTDISK_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

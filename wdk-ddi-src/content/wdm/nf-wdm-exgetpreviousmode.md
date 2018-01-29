@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0f4c7bc2-a29d-4b0c-81c3-01cdfefa1322
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExGetPreviousMode
+ms.keywords : ExGetPreviousMode, kernel.exgetpreviousmode, ExGetPreviousMode routine [Kernel-Mode Driver Architecture], wdm/ExGetPreviousMode, k102_080fbfa6-6261-453d-a2c7-e08818d34b6f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExGetPreviousMode
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -50,10 +54,6 @@ KPROCESSOR_MODE ExGetPreviousMode(void);
 This function has no parameters.
 
 ## Return Value
-
-<b>ExGetPreviousMode</b> returns a <b>KPROCESSOR_MODE</b> value, one of <b>KernelMode</b> or <b>UserMode</b>. This value specifies the previous processor mode for the current thread.
-
-<b>ExGetPreviousMode</b> returns a <b>KPROCESSOR_MODE</b> value, one of <b>KernelMode</b> or <b>UserMode</b>. This value specifies the previous processor mode for the current thread.
 
 <b>ExGetPreviousMode</b> returns a <b>KPROCESSOR_MODE</b> value, one of <b>KernelMode</b> or <b>UserMode</b>. This value specifies the previous processor mode for the current thread.
 
@@ -79,11 +79,8 @@ Alternatively, <b>ExGetPreviousMode</b> can be used to determine the previous pr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
-</dt>
-</dl>
+
  
 
  

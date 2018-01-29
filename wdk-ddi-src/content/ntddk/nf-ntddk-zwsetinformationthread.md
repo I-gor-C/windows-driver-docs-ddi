@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ec67c643-bc91-4784-b5f4-09a20e8406c3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwSetInformationThread
+ms.keywords : MEMORY_PRIORITY_VERY_LOW, ZwSetInformationThread, NtSetInformationThread, ZwSetInformationThread routine [Kernel-Mode Driver Architecture], MEMORY_PRIORITY_LOW, ntddk/ZwSetInformationThread, MEMORY_PRIORITY_MEDIUM, MEMORY_PRIORITY_BELOW_NORMAL, k111_6d6657b3-b0f9-4c47-9bb5-d5c692161c53.xml, ntddk/NtSetInformationThread, MEMORY_PRIORITY_NORMAL, kernel.zwsetinformationthread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwSetInformationThread,NtSetInformationThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -70,13 +74,67 @@ If <b>ThreadInformationClass</b> is <b>ThreadBasePriority</b>, this value must f
 If <b>ThreadInformationClass</b> is <b>ThreadPagePriority</b>, this value is a pointer to a <b>PAGE_PRIORITY_INFORMATION</b> structure, see ntddk.h. The <b>PagePriority</b> member value must be one of these values. 
 
 If <b>ThreadInformationClass</b> is <b>ThreadPowerThrottlingState</b>, this value is a pointer to a <a href="https://msdn.microsoft.com/85659694-f93a-42dc-9fa4-f6fea6ad71d0">POWER_THROTTLING_THREAD_STATE</a> structure, see ntddk.h. The <b>PagePriority</b> member value must be one of these values. 
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="MEMORY_PRIORITY_VERY_LOW"></a><a id="memory_priority_very_low"></a><dl>
+<dt><b>MEMORY_PRIORITY_VERY_LOW</b></dt>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Very low memory priority.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="MEMORY_PRIORITY_LOW"></a><a id="memory_priority_low"></a><dl>
+<dt><b>MEMORY_PRIORITY_LOW</b></dt>
+<dt>2</dt>
+</dl>
+</td>
+<td width="60%">
+Low memory priority.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="MEMORY_PRIORITY_MEDIUM"></a><a id="memory_priority_medium"></a><dl>
+<dt><b>MEMORY_PRIORITY_MEDIUM</b></dt>
+<dt>3</dt>
+</dl>
+</td>
+<td width="60%">
+Medium memory priority.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="MEMORY_PRIORITY_BELOW_NORMAL"></a><a id="memory_priority_below_normal"></a><dl>
+<dt><b>MEMORY_PRIORITY_BELOW_NORMAL</b></dt>
+<dt>4</dt>
+</dl>
+</td>
+<td width="60%">
+Below normal memory priority.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="MEMORY_PRIORITY_NORMAL"></a><a id="memory_priority_normal"></a><dl>
+<dt><b>MEMORY_PRIORITY_NORMAL</b></dt>
+<dt>5</dt>
+</dl>
+</td>
+<td width="60%">
+Normal memory priority. This is the default priority for all threads and processes on the system.
+
+</td>
+</tr>
+</table>
 
 `ThreadInformationLength`
 
@@ -100,8 +158,7 @@ Kernel mode drivers can call the <b>ZwSetInformationThread</b> function with <b>
 To help improve system performance, drivers should use the  function with <b>ThreadPagePriority</b> to lower the page priority of threads that perform background operations or access files and data that are not expected to be accessed again soon. For example, an anti-malware application might lower the priority of threads involved in scanning files.
 
 To determine the page priority for a thread, call <a href="https://msdn.microsoft.com/0B3F4CCF-D727-46AD-B3E0-3217DA1F3486">ZwQueryInformationThread</a>.
-
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
+<div class="alert"><b>Note</b>  If the call to this function occurs in user mode, you should use the name <a href="https://msdn.microsoft.com/library/windows/hardware/ff557675">NtSetInformationThread</a> instead of <b>ZwSetInformationThread</b>. </div><div> </div>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -117,20 +174,14 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a>
+
  
 
  

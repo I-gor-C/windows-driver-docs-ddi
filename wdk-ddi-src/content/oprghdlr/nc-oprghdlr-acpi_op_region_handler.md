@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : c3a5af59-c97c-42be-bc43-afa30ad710ec
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : RILGBATOKEN, *LPRILGBATOKEN, RILGBATOKEN
+ms.keywords : acpi.pacpi_op_region_handler, AcpiOpRegionHandler callback function [ACPI Devices], AcpiOpRegionHandler, ACPI_OP_REGION_HANDLER, ACPI_OP_REGION_HANDLER, oprghdlr/AcpiOpRegionHandler, opregref_be7bf2cd-0369-4efd-bbdb-5ad7dc28c33d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AcpiOpRegionHandler
-req.alt-loc : oprghdlr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,7 +65,6 @@ NTSTATUS AcpiOpRegionHandler(
 `AccessType`
 
 Specifies one of the following access types.
-
 <table>
 <tr>
 <th>Access Type</th>
@@ -121,15 +124,45 @@ Reserved for internal use.
 ## Return Value
 
 Returns one of the following status values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The access was successful.
+</dl>
+</td>
+<td width="60%">
+The access was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The access type is invalid.
+</dl>
+</td>
+<td width="60%">
+The access type is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_Xxx</b></dt>
-</dl>An internal error occurred.
+</dl>
+</td>
+<td width="60%">
+An internal error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -155,14 +188,10 @@ For detailed information about constraints on operation regions, see the <a href
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
-</dt>
-<dt>
 <a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
-</dt>
-</dl>
+
+<a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
+
  
 
  

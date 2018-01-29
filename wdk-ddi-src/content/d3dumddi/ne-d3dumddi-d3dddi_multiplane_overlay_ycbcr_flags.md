@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d28170a4-2cf3-4e42-bc76-afdb8c3bce70
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
+ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC, D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE, D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709, D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS enumeration [Display Devices], D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709, display.d3dddi_multiplane_overlay_ycbcr_flags, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ---
 
@@ -68,7 +72,7 @@ typedef enum D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 
 ## Remarks
 
-For more info on how YUV ranges are defined and converted, see <a href="https://msdn.microsoft.com/D76FFB8C-CA42-446E-826F-52982B1849E5">YUV format ranges in Windows 8.1</a>.</p>
+For more info on how YUV ranges are defined and converted, see <a href="https://msdn.microsoft.com/D76FFB8C-CA42-446E-826F-52982B1849E5">YUV format ranges in Windows 8.1</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

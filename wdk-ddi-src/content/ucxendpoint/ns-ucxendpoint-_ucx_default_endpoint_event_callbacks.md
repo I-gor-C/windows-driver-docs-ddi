@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : A22E96FC-E219-4F6C-B8AF-AC86FAD89543
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, *PUCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
+ms.keywords : ucxendpoint/_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, buses._ucx_default_endpoint_event_callbacks, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS structure [Buses], _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, *PUCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS"
 req.product : Windows 10 or later.
 ---
@@ -53,34 +57,34 @@ typedef struct _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS {
 
 ## Members
 
-        
-            `EvtDefaultEndpointUpdate`
 
-            A pointer to a EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function.
-        
-            `EvtEndpointAbort`
+`EvtDefaultEndpointUpdate`
 
-            A pointer to a EVT_UCX_ENDPOINT_ABORT callback function.
-        
-            `EvtEndpointOkToCancelTransfers`
+A pointer to a EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function.
 
-            A pointer to a EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS callback function.
-        
-            `EvtEndpointPurge`
+`EvtEndpointAbort`
 
-            A pointer to a EVT_UCX_ENDPOINT_PURGE callback function.
-        
-            `EvtEndpointStart`
+A pointer to a EVT_UCX_ENDPOINT_ABORT callback function.
 
-            A pointer to a EVT_UCX_ENDPOINT_START callback function.
-        
-            `Reserved1`
+`EvtEndpointOkToCancelTransfers`
 
-            Do not use.
-        
-            `Size`
+A pointer to a EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS callback function.
 
-            The size in bytes of this structure.
+`EvtEndpointPurge`
+
+A pointer to a EVT_UCX_ENDPOINT_PURGE callback function.
+
+`EvtEndpointStart`
+
+A pointer to a EVT_UCX_ENDPOINT_START callback function.
+
+`Reserved1`
+
+Do not use.
+
+`Size`
+
+The size in bytes of this structure.
 
 
 ## Requirements
@@ -91,16 +95,12 @@ typedef struct _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS {
 | **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxendpoint\nf-ucxendpoint-ucx_default_endpoint_event_callbacks_init.md">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
-</dt>
-<dt>
+
 <a href="..\ucxendpoint\nf-ucxendpoint-ucxdefaultendpointinitseteventcallbacks.md">UcxDefaultEndpointInitSetEventCallbacks</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8aa7e23e-f52e-4252-9f22-56ce523f6cba
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setvideoprocessrendertarget, SetVideoProcessRenderTarget callback function [Display Devices], SetVideoProcessRenderTarget, PFND3DDDI_SETVIDEOPROCESSRENDERTARGET, PFND3DDDI_SETVIDEOPROCESSRENDERTARGET, d3dumddi/SetVideoProcessRenderTarget, UserModeDisplayDriver_Functions_8ce2d981-2c69-45e9-a2e2-eba9026be1a0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetVideoProcessRenderTarget
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,12 +68,34 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>SetVideoProcessRenderTarget</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The render target surface is successfully set.
+</dl>
+</td>
+<td width="60%">
+The render target surface is successfully set.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>SetVideoProcessRenderTarget</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>SetVideoProcessRenderTarget</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,17 +117,12 @@ All video processing render targets are created by setting the <a href="..\d3duk
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setvideoprocessrendertarget.md">D3DDDIARG_SETVIDEOPROCESSRENDERTARGET</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setvideoprocessrendertarget.md">D3DDDIARG_SETVIDEOPROCESSRENDERTARGET</a>
+
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags.md">D3DDDI_RESOURCEFLAGS</a>
-</dt>
-</dl>
+
  
 
  

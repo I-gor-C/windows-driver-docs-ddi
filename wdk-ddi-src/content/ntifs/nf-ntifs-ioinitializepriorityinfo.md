@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 21aa5850-1984-4ab8-8e7c-3028fc87680b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoInitializePriorityInfo
+ms.keywords : IoInitializePriorityInfo routine [Installable File System Drivers], ntifs/IoInitializePriorityInfo, ifsk.ioinitializepriorityinfo, IoInitializePriorityInfo, ioref_65eef333-11a8-4603-9b64-dc317f3d4e7b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available starting with Windows Vist
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoInitializePriorityInfo
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -75,17 +79,12 @@ The <b>IoInitializePriorityInfo</b> routine is used to initialize the IO_PRIORIT
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltretrieveiopriorityinfo.md">FltRetrieveIoPriorityInfo</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_io_priority_info.md">IO_PRIORITY_INFO</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a>
+
  
 
  

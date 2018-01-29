@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4CCA1F5E-C92E-4D8D-A8C0-B8E9A0F29703
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _UNICODE_STRING, UNICODE_STRING, *PUNICODE_STRING
+ms.keywords : wdf.onworkitem, OnWorkItem callback function, OnWorkItem, WUDF_WORKITEM_FUNCTION, WUDF_WORKITEM_FUNCTION, wudfworkitem/OnWorkItem, wudfworkitem/PFN_WUDF_WORKITEM, PFN_WUDF_WORKITEM callback function pointer, PFN_WUDF_WORKITEM, umdf.onworkitem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WUDF_WORKITEM_FUNCTION
-req.alt-loc : Wudfworkitem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UNICODE_STRING
 req.product : Windows 10 or later.
 ---
@@ -73,12 +77,6 @@ The driver must not call <a href="https://msdn.microsoft.com/library/windows/har
 
 For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF-9CC2-7215423E6D35">Using Work Items</a>.
 
-The function type is declared in <i>Wudfworkitem.h</i>, as follows.
-
-To define an <i>OnWorkItem</i> callback function that is named <i>MyWorkItem</i>, you must first provide a function declaration that SDV and other verification tools require, as follows:
-
-Then, implement your callback function as follows:
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,17 +91,12 @@ Then, implement your callback function as follows:
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/B34EABF4-C659-4DB4-AEC6-94F544D79221">IWDFDevice3::CreateWorkItem</a>
-</dt>
-<dt>
-<a href="..\wudfworkitem\ns-wudfworkitem-_wudf_workitem_config.md">WUDF_WORKITEM_CONFIG</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>
-</dt>
-</dl>
+
+<a href="..\wudfworkitem\ns-wudfworkitem-_wudf_workitem_config.md">WUDF_WORKITEM_CONFIG</a>
+
+<a href="https://msdn.microsoft.com/B34EABF4-C659-4DB4-AEC6-94F544D79221">IWDFDevice3::CreateWorkItem</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5743d84c-6132-4058-b517-250b5de9a6b5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortInt10
+ms.keywords : VideoPortInt10, VideoPortInt10 function [Display Devices], display.videoportint10, video/VideoPortInt10, VideoPort_Functions_681fc4cc-f8f5-4d26-b3eb-8f4098339470.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortInt10
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -85,20 +89,14 @@ Because <b>VideoPortInt10</b> interprets the <i>BiosArgument</i> parameter value
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
-</dt>
-<dt>
 <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
-</dt>
-<dt>
-<a href="..\video\ns-video-_video_x86_bios_arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
+
+<a href="..\video\ns-video-_video_x86_bios_arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a>
+
  
 
  

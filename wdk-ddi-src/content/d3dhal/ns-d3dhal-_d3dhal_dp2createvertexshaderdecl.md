@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 063e72ef-7d57-484a-98f8-b6166a238096
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2CREATEVERTEXSHADERDECL, D3DHAL_DP2CREATEVERTEXSHADERDECL, *LPD3DHAL_DP2CREATEVERTEXSHADERDECL
+ms.keywords : LPD3DHAL_DP2CREATEVERTEXSHADERDECL structure pointer [Display Devices], LPD3DHAL_DP2CREATEVERTEXSHADERDECL, d3dhal/LPD3DHAL_DP2CREATEVERTEXSHADERDECL, d3dhal/D3DHAL_DP2CREATEVERTEXSHADERDECL, display.d3dhal_dp2createvertexshaderdecl, d3dstrct_ae2ef7ce-67b3-4c91-b4d8-e3ff8b82734b.xml, _D3DHAL_DP2CREATEVERTEXSHADERDECL, *LPD3DHAL_DP2CREATEVERTEXSHADERDECL, D3DHAL_DP2CREATEVERTEXSHADERDECL, D3DHAL_DP2CREATEVERTEXSHADERDECL structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2CREATEVERTEXSHADERDECL
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2CREATEVERTEXSHADERDECL
 ---
 
@@ -50,17 +54,17 @@ typedef struct _D3DHAL_DP2CREATEVERTEXSHADERDECL {
 
 ## Members
 
-        
-            `dwHandle`
 
-            Specifies the handle to the vertex shader declaration that is assigned by the runtime. This value is guaranteed to be subzero. Flexible vertex format (FVF) codes are part of the shader declaration handle namespace. If bit zero of the handle is set, the handle passed is a shader declaration handle; otherwise, an FVF code.
-        
-            `dwNumVertexElements`
+`dwHandle`
 
-            Specifies the number of vertex elements that make up the shader declaration.
+Specifies the handle to the vertex shader declaration that is assigned by the runtime. This value is guaranteed to be subzero. Flexible vertex format (FVF) codes are part of the shader declaration handle namespace. If bit zero of the handle is set, the handle passed is a shader declaration handle; otherwise, an FVF code.
 
-    ## Remarks
-        When the runtime calls the driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> function with this token, the driver should validate the given shader declaration and report success or failure accordingly. 
+`dwNumVertexElements`
+
+Specifies the number of vertex elements that make up the shader declaration.
+
+## Remarks
+When the runtime calls the driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> function with this token, the driver should validate the given shader declaration and report success or failure accordingly. 
 
 An array of D3DVERTEXELEMENT9 structures that define the vertex elements that make up the shader declaration follow D3DHAL_DP2CREATEVERTEXSHADERDECL in the command stream. For more information about D3DVERTEXELEMENT9, see the latest DirectX SDK documentation.
 
@@ -74,17 +78,14 @@ The DirectX 9.0 runtime specifies a legacy FVF code or a declaration handle in t
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_CREATEVERTEXSHADERDECL</dt>
-<dt>
+D3DDP2OP_CREATEVERTEXSHADERDECL
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
+
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>
-</dt>
-</dl>
+
  
 
  

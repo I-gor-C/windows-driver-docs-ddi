@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6dd1aa9d-58e6-484b-b372-4c1d9f6d04f3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlAllocateExtraCreateParameterFromLookasideList
+ms.keywords : ifsk.fsrtlallocateextracreateparameterfromlookasidelist, FsRtlAllocateExtraCreateParameterFromLookasideList routine [Installable File System Drivers], fsrtlref_c85ee3ff-e71f-4c6e-bc37-4187cad9855f.xml, FsRtlAllocateExtraCreateParameterFromLookasideList, ntifs/FsRtlAllocateExtraCreateParameterFromLookasideList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : FsRtlAllocateExtraCreateParameterFromLookasideList i
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlAllocateExtraCreateParameterFromLookasideList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -81,12 +85,34 @@ Pointer to a location that receives a pointer to the allocated ECP context struc
 ## Return Value
 
 The <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> routine can return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> routine was unable to allocate sufficient memory for an ECP context structure. In this case, the <i>EcpContext </i>parameter is <b>NULL</b>. 
+</dl>
+</td>
+<td width="60%">
+The <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> routine was unable to allocate sufficient memory for an ECP context structure. In this case, the <i>EcpContext </i>parameter is <b>NULL</b>. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The ECP context structure was successfully allocated. In this case, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> returns a pointer to the allocated structure in the <i>EcpContext </i>parameter.
+</dl>
+</td>
+<td width="60%">
+The ECP context structure was successfully allocated. In this case, <b>FsRtlAllocateExtraCreateParameterFromLookasideList</b> returns a pointer to the allocated structure in the <i>EcpContext </i>parameter. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -112,20 +138,14 @@ For more information about using lookaside lists with drivers, see <a href="http
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md">FsRtlDeleteExtraCreateParameterLookasideList</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlinitextracreateparameterlookasidelist.md">FsRtlInitExtraCreateParameterLookasideList</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>
-</dt>
-</dl>
+
  
 
  

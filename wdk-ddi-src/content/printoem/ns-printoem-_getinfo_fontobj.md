@@ -7,8 +7,8 @@ old-location : print\getinfo_fontobj.htm
 old-project : print
 ms.assetid : f5116986-aa0c-4cc3-9893-c93e83e922f7
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _GETINFO_FONTOBJ, *PGETINFO_FONTOBJ, GETINFO_FONTOBJ
+ms.date : 1/18/2018
+ms.keywords : _GETINFO_FONTOBJ, print.getinfo_fontobj, printoem/PGETINFO_FONTOBJ, print_unidrv-pscript_rendering_2fdbe41f-95af-46ef-be82-04c1dc02297f.xml, GETINFO_FONTOBJ structure [Print Devices], PGETINFO_FONTOBJ, printoem/GETINFO_FONTOBJ, *PGETINFO_FONTOBJ, GETINFO_FONTOBJ, PGETINFO_FONTOBJ structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GETINFO_FONTOBJ
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGETINFO_FONTOBJ, GETINFO_FONTOBJ"
 req.product : Windows 10 or later.
 ---
@@ -48,17 +52,17 @@ typedef struct _GETINFO_FONTOBJ {
 
 ## Members
 
-        
-            `dwSize`
 
-            Specifies the size, in bytes, of the GETINFO_FONTOBJ structure. Supplied by the UNIFONTOBJ_GetInfo caller.
-        
-            `pFontObj`
+`dwSize`
 
-            Pointer to an empty <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a> structure. The structure is filled in by Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function. The pointer is supplied by the UNIFONTOBJ_GetInfo caller.
+Specifies the size, in bytes, of the GETINFO_FONTOBJ structure. Supplied by the UNIFONTOBJ_GetInfo caller.
 
-    ## Remarks
-        To obtain a font's FONTOBJ structure contents, a rendering plug-in can supply the address of a GETINFO_FONTOBJ structure when calling Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.
+`pFontObj`
+
+Pointer to an empty <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a> structure. The structure is filled in by Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function. The pointer is supplied by the UNIFONTOBJ_GetInfo caller.
+
+## Remarks
+To obtain a font's FONTOBJ structure contents, a rendering plug-in can supply the address of a GETINFO_FONTOBJ structure when calling Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,18 +72,14 @@ typedef struct _GETINFO_FONTOBJ {
 | **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GETINFO_FONTOBJ structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GETINFO_FONTOBJ structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

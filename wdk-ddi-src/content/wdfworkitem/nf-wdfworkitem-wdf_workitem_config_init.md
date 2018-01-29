@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d24d9aea-0cdd-4130-9904-4e50c825612e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_WORKITEM_CONFIG_INIT
+ms.keywords : WDF_WORKITEM_CONFIG_INIT function, DFWorkItemObjectRef_fa6a881e-6591-448a-9fc3-81ab60ff370c.xml, wdf.wdf_workitem_config_init, kmdf.wdf_workitem_config_init, wdfworkitem/WDF_WORKITEM_CONFIG_INIT, WDF_WORKITEM_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_WORKITEM_CONFIG_INIT
-req.alt-loc : wdfworkitem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -71,8 +75,6 @@ Drivers must call <b>WDF_WORKITEM_CONFIG_INIT</b> before calling <a href="..\wdf
 
 The <b>WDF_WORKITEM_CONFIG_INIT</b> function stores the pointer that the <i>EvtWorkItemFunc</i> parameter specifies and sets the <b>AutomaticSerialization</b> member of the <a href="..\wdfworkitem\ns-wdfworkitem-_wdf_workitem_config.md">WDF_WORKITEM_CONFIG</a> structure that is pointed to by the <i>Config</i> parameter to <b>TRUE</b>.
 
-For a code example that uses <b>WDF_WORKITEM_CONFIG_INIT</b>, see <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,17 +89,12 @@ For a code example that uses <b>WDF_WORKITEM_CONFIG_INIT</b>, see <a href="..\wd
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a>
-</dt>
-<dt>
+
 <a href="..\wdfworkitem\ns-wdfworkitem-_wdf_workitem_config.md">WDF_WORKITEM_CONFIG</a>
-</dt>
-<dt>
+
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>
-</dt>
-</dl>
+
  
 
  

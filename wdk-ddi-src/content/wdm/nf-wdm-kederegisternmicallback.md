@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 45022490-8130-449c-8ec9-380be0a3a03d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeDeregisterNmiCallback
+ms.keywords : k105_407e4af5-fb93-4a7e-bacd-cc1d08935815.xml, kernel.kederegisternmicallback, KeDeregisterNmiCallback routine [Kernel-Mode Driver Architecture], wdm/KeDeregisterNmiCallback, KeDeregisterNmiCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeDeregisterNmiCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlKeApcLte2, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -73,11 +77,8 @@ The <b>KeDeregisterNmiCallback</b> routine returns STATUS_SUCCESS if the callbac
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-keregisternmicallback.md">KeRegisterNmiCallback</a>
-</dt>
-</dl>
+
  
 
  

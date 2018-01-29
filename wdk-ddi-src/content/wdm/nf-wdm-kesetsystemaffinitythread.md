@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eb66ed06-356d-4550-8ccf-10854e4ca259
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetSystemAffinityThread
+ms.keywords : wdm/KeSetSystemAffinityThread, k105_86ff0d26-a53d-4da4-b776-35ed30b950ad.xml, KeSetSystemAffinityThread routine [Kernel-Mode Driver Architecture], kernel.kesetsystemaffinitythread, KeSetSystemAffinityThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeSetSystemAffinityThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section).
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ If <b>KeSetSystemAffinityThread</b> is called at IRQL &lt;= APC_LEVEL and the ca
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>
-</dt>
-</dl>
+
  
 
  

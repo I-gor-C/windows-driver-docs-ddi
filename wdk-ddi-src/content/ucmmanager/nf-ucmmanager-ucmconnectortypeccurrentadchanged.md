@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 26C4D840-2287-4DC2-B039-FD8D2FB92288
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorTypeCCurrentAdChanged
+ms.keywords : buses.ucmconnectortypeccurrentadchanged, UcmConnectorTypeCCurrentAdChanged method [Buses], ucmmanager/UcmConnectorTypeCCurrentAdChanged, UcmConnectorTypeCCurrentAdChanged
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmConnectorTypeCCurrentAdChanged
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -81,17 +85,12 @@ When using a Type-C connector for charging, the partner connector sends a curren
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
-</dt>
-<dt>
+
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypeccurrentadchanged.md">UcmConnectorTypeCCurrentAdChanged</a>
-</dt>
-</dl>
+
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
+
  
 
  

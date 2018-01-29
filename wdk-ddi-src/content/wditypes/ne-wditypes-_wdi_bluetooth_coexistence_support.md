@@ -7,8 +7,8 @@ old-location : netvista\wdi_bluetooth_coexistence_support.htm
 old-project : netvista
 ms.assetid : 88642615-D5DD-4C0E-BAAA-308EB6050E77
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_BLUETOOTH_COEXISTENCE_SUPPORT, WDI_BLUETOOTH_COEXISTENCE_SUPPORT
+ms.date : 1/18/2018
+ms.keywords : WDI_BLUETOOTH_COEXISTENCE_UNKNOWN, netvista.wdi_bluetooth_coexistence_support, WDI_BLUETOOTH_COEXISTENCE_WIFI_DEGRADED_TO_1x1, _WDI_BLUETOOTH_COEXISTENCE_SUPPORT, wditypes/WDI_BLUETOOTH_COEXISTENCE_WIFI_DEGRADED_TO_1x1, wditypes/WDI_BLUETOOTH_COEXISTENCE_UNKNOWN, WDI_BLUETOOTH_COEXISTENCE_PERFORMANCE_MAINTAINED, WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE, WDI_BLUETOOTH_COEXISTENCE_SUPPORT, wditypes/WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE, WDI_BLUETOOTH_COEXISTENCE_WIFI_THROUGHPUT_DEGRADED, wditypes/WDI_BLUETOOTH_COEXISTENCE_SUPPORT, wditypes/WDI_BLUETOOTH_COEXISTENCE_WIFI_THROUGHPUT_DEGRADED, WDI_BLUETOOTH_COEXISTENCE_SUPPORT enumeration [Network Drivers Starting with Windows Vista], wditypes/WDI_BLUETOOTH_COEXISTENCE_PERFORMANCE_MAINTAINED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_BLUETOOTH_COEXISTENCE_SUPPORT
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 req.product : Windows 10 or later.
 ---
@@ -52,6 +56,11 @@ typedef enum _WDI_BLUETOOTH_COEXISTENCE_SUPPORT {
 ## Constants
 
 <table>
+
+<tr>
+<td>WDI_BLUETOOTH_COEXISTENCE_MAX</td>
+<td></td>
+</tr>
 
 <tr>
 <td>WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE</td>

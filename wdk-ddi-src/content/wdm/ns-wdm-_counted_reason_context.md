@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : beb17d50-d99a-4baf-99bd-9f42fbea0478
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _COUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT
+ms.keywords : COUNTED_REASON_CONTEXT structure [Kernel-Mode Driver Architecture], _COUNTED_REASON_CONTEXT, PCOUNTED_REASON_CONTEXT, wdm/PCOUNTED_REASON_CONTEXT, wdm/COUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT, PCOUNTED_REASON_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kstruct_a_52baf683-dfd2-4004-abed-e9ae6221c342.xml, *PCOUNTED_REASON_CONTEXT, kernel.counted_reason_context
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : COUNTED_REASON_CONTEXT
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PCOUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : COUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -57,11 +61,14 @@ typedef struct _COUNTED_REASON_CONTEXT {
 
 ## Members
 
-        
-            `Flags`
 
-            Indicates whether the structure contains a simple reason string or a detailed set of reason strings. Set this member to one of the following constants:
+`DUMMYUNIONNAME`
 
+
+
+`Flags`
+
+Indicates whether the structure contains a simple reason string or a detailed set of reason strings. Set this member to one of the following constants:
 <ul>
 <li>
 DIAGNOSTIC_REASON_SIMPLE_STRING
@@ -71,15 +78,14 @@ DIAGNOSTIC_REASON_SIMPLE_STRING
 DIAGNOSTIC_REASON_DETAILED_STRING
 
 </li>
-</ul>
-If <b>Flags</b> = DIAGNOSTIC_REASON_SIMPLE_STRING, the <b>SimpleString</b> member of the union is valid. If <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING, the <b>ResourceFileName</b>, <b>ResourceReasonId</b>, <b>StringCount</b>, and <b>ReasonStrings</b> members are valid (and the <b>SimpleString</b> member is not valid).
-        
-            `Version`
+</ul>If <b>Flags</b> = DIAGNOSTIC_REASON_SIMPLE_STRING, the <b>SimpleString</b> member of the union is valid. If <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING, the <b>ResourceFileName</b>, <b>ResourceReasonId</b>, <b>StringCount</b>, and <b>ReasonStrings</b> members are valid (and the <b>SimpleString</b> member is not valid).
 
-            The version number of the structure. Set this member to DIAGNOSTIC_REASON_VERSION.
+`Version`
 
-    ## Remarks
-        This structure is used by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
+The version number of the structure. Set this member to DIAGNOSTIC_REASON_VERSION.
+
+## Remarks
+This structure is used by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> uses the reason string or strings contained in this structure as a diagnostic aid during functional and performance testing.
 
@@ -95,13 +101,10 @@ The DIAGNOSTIC_REASON_DETAILED_STRING flag supports localization. If the localiz
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
-</dt>
-</dl>
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+
  
 
  

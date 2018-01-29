@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 36c204fb-638d-44d2-8379-a5bd79e4167a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDEtwLogUnmapAllocation
+ms.keywords : UMDEtwLogUnmapAllocation, UMDEtwLogUnmapAllocation function [Display Devices], umdprovider/UMDEtwLogUnmapAllocation, display.umdetwlogunmapallocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UMDEtwLogUnmapAllocation
-req.alt-loc : umdprovider.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_SEMANTIC
 req.product : Windows 10 or later.
 ---
@@ -96,6 +100,60 @@ The user-mode display driver must completely account for the video memory it all
 The driver should pass the same parameters values to <b>UMDEtwLogUnmapAllocation</b> as it did to <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>.
 
 <b>UMDEtwLogUnmapAllocation</b> is defined inline in Umdprovider.h as:
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>FORCEINLINE void LogMapAllocation(BOOLEAN Enter,
+                    ULONGLONG hD3DAllocation,
+                    ULONGLONG hDxgAllocation,
+                    ULONGLONG Offset,
+                    ULONGLONG Size,
+                    UMDETW_ALLOCATION_USAGE Usage,
+                    UMDETW_ALLOCATION_SEMANTIC Semantic)
+{
+    if (Enabled)
+    {   
+        EVENT_DATA_DESCRIPTOR Descriptors[6];
+        
+        // Create a description of the event
+        EventDataDescCreate(&amp;Descriptors[0], &amp;hD3DAllocation, 8);
+        EventDataDescCreate(&amp;Descriptors[1], &amp;hDxgAllocation, 8);
+        EventDataDescCreate(&amp;Descriptors[2], &amp;Offset, 8);
+        EventDataDescCreate(&amp;Descriptors[3], &amp;Size, 8);
+        EventDataDescCreate(&amp;Descriptors[4], &amp;Usage, 4);
+        EventDataDescCreate(&amp;Descriptors[5], &amp;Semantic, 4);
+
+        // Log the event
+        EventWrite(
+            RegHandle,
+            Enter ? (InRundown ? &amp;RundownAllocationEvent : &amp;MapAllocationEvent) : &amp;UnmapAllocationEvent,
+            sizeof(Descriptors) / sizeof(Descriptors[0]),
+            Descriptors
+        );
+    }
+}
+
+FORCEINLINE void UMDEtwLogUnmapAllocation(ULONGLONG hD3DAllocation,
+                              ULONGLONG hDxgAllocation,
+                              ULONGLONG Offset,
+                              ULONGLONG Size,
+                              UMDETW_ALLOCATION_USAGE Usage,
+                              UMDETW_ALLOCATION_SEMANTIC Semantic)
+{
+    LogMapAllocation(FALSE,
+                     hD3DAllocation,
+                     hDxgAllocation,
+                     Offset,
+                     Size,
+                     Usage,
+                     Semantic);
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,23 +169,16 @@ The driver should pass the same parameters values to <b>UMDEtwLogUnmapAllocation
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
-</dt>
-<dt>
-<a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
-</dt>
-<dt>
-<a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a>
-</dt>
-<dt>
+
 <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
+
+<a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a>
+
+<a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
+
  
 
  

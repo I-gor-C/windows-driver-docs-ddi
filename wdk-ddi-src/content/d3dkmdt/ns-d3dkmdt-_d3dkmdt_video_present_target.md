@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e36aba12-51fc-486c-a92c-47f72a4bcb0a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_VIDEO_PRESENT_TARGET, D3DKMDT_VIDEO_PRESENT_TARGET
+ms.keywords : _D3DKMDT_VIDEO_PRESENT_TARGET, display.d3dkmdt_video_present_target, DmStructs_ef451c58-7ee5-4c52-9afe-9aab45114186.xml, d3dkmdt/D3DKMDT_VIDEO_PRESENT_TARGET, D3DKMDT_VIDEO_PRESENT_TARGET structure [Display Devices], D3DKMDT_VIDEO_PRESENT_TARGET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_VIDEO_PRESENT_TARGET
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_VIDEO_PRESENT_TARGET
 ---
 
@@ -50,29 +54,29 @@ typedef struct _D3DKMDT_VIDEO_PRESENT_TARGET {
 
 ## Members
 
-        
-            `Id`
 
-            An integer that uniquely identifies the video present target.
-        
-            `MonitorOrientationAwareness`
+`Id`
 
-            A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_monitor_orientation_awareness.md">D3DKMDT_MONITOR_ORIENTATION_AWARENESS</a> enumerator that indicates the target's ability to detect that a connected monitor (or other display device) has been rotated.
-        
-            `SupportsSdtvModes`
+An integer that uniquely identifies the video present target.
 
-            Indicates whether the video output supports standard definition TV (SDTV) modes.
-        
-            `VideoOutputHpdAwareness`
+`MonitorOrientationAwareness`
 
-            A value from the <a href="..\d3dkmdt\ne-d3dkmdt-_dxgk_child_device_hpd_awareness.md">DXGK_CHILD_DEVICE_HPD_AWARENESS</a> enumeration that indicates the target's ability to detect that a monitor has been hot plugged or unplugged.
-        
-            `VideoOutputTechnology`
+A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_monitor_orientation_awareness.md">D3DKMDT_MONITOR_ORIENTATION_AWARENESS</a> enumerator that indicates the target's ability to detect that a connected monitor (or other display device) has been rotated.
 
-            A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_output_technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a> enumerator that indicates the target's output technology (for example HD15, DVI, HDMI).
+`SupportsSdtvModes`
 
-    ## Remarks
-        The D3DDDI_VIDEO_PRESENT_TARGET_ID data type is defined in <i>D3dukmdt.h</i>.
+Indicates whether the video output supports standard definition TV (SDTV) modes.
+
+`VideoOutputHpdAwareness`
+
+A value from the <a href="..\d3dkmdt\ne-d3dkmdt-_dxgk_child_device_hpd_awareness.md">DXGK_CHILD_DEVICE_HPD_AWARENESS</a> enumeration that indicates the target's ability to detect that a monitor has been hot plugged or unplugged.
+
+`VideoOutputTechnology`
+
+A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_output_technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a> enumerator that indicates the target's output technology (for example HD15, DVI, HDMI).
+
+## Remarks
+The D3DDDI_VIDEO_PRESENT_TARGET_ID data type is defined in <i>D3dukmdt.h</i>.
 
 Video present target identifiers are assigned by the display miniport driver. <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>, implemented by the display miniport driver, returns an array of <a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.
 
@@ -86,22 +90,16 @@ For more information about video present targets, see <a href="https://msdn.micr
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_source.md">D3DKMDT_VIDEO_PRESENT_SOURCE</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-</dt>
-<dt>
 <a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_source.md">D3DKMDT_VIDEO_PRESENT_SOURCE</a>
+
  
 
  

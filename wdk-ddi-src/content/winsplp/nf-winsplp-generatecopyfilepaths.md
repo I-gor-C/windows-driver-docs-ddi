@@ -7,8 +7,8 @@ old-location : print\generatecopyfilepaths.htm
 old-project : print
 ms.assetid : 61274493-1ec4-483b-85fa-f6087cf0631e
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : GenerateCopyFilePaths
+ms.date : 1/18/2018
+ms.keywords : poprfnc_35a0e3c2-1841-4e84-b980-c3b13592c854.xml, winsplp/GenerateCopyFilePaths, print.generatecopyfilepaths, GenerateCopyFilePaths function [Print Devices], GenerateCopyFilePaths
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GenerateCopyFilePaths
-req.alt-loc : Mscms.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mscms.lib
 req.dll : Mscms.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NOTIFICATION_CONFIG_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -86,7 +90,6 @@ Caller-supplied address containing the length of the buffer pointed to by <i>psz
 `pszTargetDir`
 
 For input, receives a caller-supplied pointer to a string representing the client directory path to which files are to be copied. The following rules apply:
-
 <ul>
 <li>
 When the function is called on the server, this path is relative to PRINT$.
@@ -96,8 +99,7 @@ When the function is called on the server, this path is relative to PRINT$.
 When the function is called on the client, the string contains a complete path.
 
 </li>
-</ul>
-For output, the function can modify this string.
+</ul>For output, the function can modify this string.
 
 `pcchTargetDirSize`
 
@@ -138,13 +140,10 @@ If no modifications to the source or destination directories are needed, the fun
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\winsplp\nf-winsplp-spoolercopyfileevent.md">SpoolerCopyFileEvent</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GenerateCopyFilePaths function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GenerateCopyFilePaths function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

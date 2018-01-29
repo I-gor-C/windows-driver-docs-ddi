@@ -7,8 +7,8 @@ old-location : netvista\rildisplayinfotype.htm
 old-project : netvista
 ms.assetid : 0da424f5-2970-497c-8965-af627fd582ff
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDISPLAYINFOTYPE, RILDISPLAYINFOTYPE
+ms.date : 1/18/2018
+ms.keywords : RILDISPLAYINFOTYPE, RILDISPLAYINFOTYPE enumeration [Network Drivers Starting with Windows Vista], netvista.rildisplayinfotype, ntddrilapitypes/RILDISPLAYINFOTYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDISPLAYINFOTYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILDISPLAYINFOTYPE
 ---
 

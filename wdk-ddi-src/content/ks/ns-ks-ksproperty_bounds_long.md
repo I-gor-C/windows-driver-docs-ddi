@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 16804ff1-8531-48aa-baf6-b89ccfe25d07
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG, *PKSPROPERTY_BOUNDS_LONG
+ms.keywords : PKSPROPERTY_BOUNDS_LONG union pointer [Streaming Media Devices], ks/KSPROPERTY_BOUNDS_LONG, PKSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG, stream.ksproperty_bounds_long, ks-struct_805e1a44-91bb-45be-a99d-174e98639d9e.xml, ks/PKSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG union [Streaming Media Devices], *PKSPROPERTY_BOUNDS_LONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_BOUNDS_LONG
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSPROPERTY_BOUNDS_LONG, *PKSPROPERTY_BOUNDS_LONG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG"
 ---
 
 # KSPROPERTY_BOUNDS_LONG structure
@@ -54,8 +58,20 @@ typedef union {
 ## Members
 
 
-    ## Remarks
-        This structure specifies a range of 32-bit values for a property. Use only when the <b>MembersFlags</b> member of the relevant <a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a> is set to KSPROPERTY_MEMBER_RANGES. Use this structure in the <b>Members</b> array in the relevant <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a> structure.
+`_SIGNED`
+
+
+
+`_UNSIGNED`
+
+
+
+## Remarks
+This structure specifies a range of 32-bit values for a property. Use only when the <b>MembersFlags</b> member of the relevant <a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a> is set to KSPROPERTY_MEMBER_RANGES. Use this structure in the <b>Members</b> array in the relevant <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a> structure.
+
+See the Testcap sample in the Windows Driver Kit (WDK) for examples of usage.
+
+Also see related information in <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -65,19 +81,14 @@ typedef union {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksproperty_values.md">KSPROPERTY_VALUES</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
-</dt>
-</dl>
+
  
 
  

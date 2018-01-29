@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 81a205cd-a641-4f85-a217-7febf203b62d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetTimer
+ms.keywords : KeSetTimer, k105_9cd3cb17-0067-4340-8226-ee75392cfdd1.xml, wdm/KeSetTimer, kernel.kesettimer, KeSetTimer routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeSetTimer
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -71,14 +75,20 @@ If the timer object was already in the system timer queue, <b>KeSetTimer</b> ret
 ## Remarks
 
 The <b>KeSetTimer</b> routine does the following:
-
+<ul>
+<li>
 Computes the expiration time.
 
+</li>
+<li>
 Sets the timer to a not-signaled state.
 
+</li>
+<li>
 Inserts the timer object in the system timer queue.
 
-If the timer object was already in the timer queue, it is implicitly canceled before being set to the new expiration time. A call to <b>KeSetTimer</b> before the previously specified <i>DueTime</i> has expired cancels both the timer and the call to the <i>Dpc</i>, if any, associated with the previous call.
+</li>
+</ul>If the timer object was already in the timer queue, it is implicitly canceled before being set to the new expiration time. A call to <b>KeSetTimer</b> before the previously specified <i>DueTime</i> has expired cancels both the timer and the call to the <i>Dpc</i>, if any, associated with the previous call.
 
 If the <i>Dpc</i> parameter is specified, a DPC object is associated with the timer object. When the timer expires, the timer object is removed from the system timer queue and its state is set to signaled. If a DPC object was associated with the timer when it was set, the DPC object is inserted in the system DPC queue to be executed as soon as conditions permit after the timer interval expires.
 
@@ -106,32 +116,22 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
+
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
+
  
 
  

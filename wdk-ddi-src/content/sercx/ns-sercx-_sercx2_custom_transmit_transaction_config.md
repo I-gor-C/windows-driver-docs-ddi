@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 40655056-8E29-4A53-812D-5F006A95C827
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, *PSERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG
+ms.keywords : serports.sercx2_custom_transmit_transaction_config, PSERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG structure pointer [Serial Ports], 2/PSERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, *PSERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, PSERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, _SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, 2/SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG structure [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any IRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, *PSERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -50,25 +54,25 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG {
 
 ## Members
 
-        
-            `EvtSerCx2CustomTransmitTransactionCleanup`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_cleanup.md">EvtSerCx2CustomTransmitTransactionCleanup</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
-        
-            `EvtSerCx2CustomTransmitTransactionInitialize`
+`EvtSerCx2CustomTransmitTransactionCleanup`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_initialize.md">EvtSerCx2CustomTransmitTransactionInitialize</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
-        
-            `EvtSerCx2CustomTransmitTransactionStart`
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_cleanup.md">EvtSerCx2CustomTransmitTransactionCleanup</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a> event callback function. This member must point to a valid function.
-        
-            `Size`
+`EvtSerCx2CustomTransmitTransactionInitialize`
 
-            The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_initialize.md">EvtSerCx2CustomTransmitTransactionInitialize</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
 
-    ## Remarks
-        The <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomTransmitTransactionInitialize</b>, call the <a href="..\sercx\nf-sercx-sercx2_custom_transmit_transaction_config_init.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.
+`EvtSerCx2CustomTransmitTransactionStart`
+
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a> event callback function. This member must point to a valid function.
+
+`Size`
+
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+
+## Remarks
+The <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomTransmitTransactionInitialize</b>, call the <a href="..\sercx\nf-sercx-sercx2_custom_transmit_transaction_config_init.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,25 +82,18 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG {
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_cleanup.md">EvtSerCx2CustomTransmitTransactionCleanup</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_initialize.md">EvtSerCx2CustomTransmitTransactionInitialize</a>
-</dt>
-<dt>
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a>
-</dt>
-<dt>
-<a href="..\sercx\nf-sercx-sercx2_custom_transmit_transaction_config_init.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a>
-</dt>
-<dt>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_cleanup.md">EvtSerCx2CustomTransmitTransactionCleanup</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_initialize.md">EvtSerCx2CustomTransmitTransactionInitialize</a>
+
 <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a>
-</dt>
-</dl>
+
+<a href="..\sercx\nf-sercx-sercx2_custom_transmit_transaction_config_init.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a>
+
  
 
  

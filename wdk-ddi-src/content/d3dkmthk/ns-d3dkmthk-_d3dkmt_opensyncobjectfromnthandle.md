@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 163ce4ed-e81b-4b69-b1a7-4ea2b9e8f437
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE, D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
+ms.keywords : D3DKMT_OPENSYNCOBJECTFROMNTHANDLE structure [Display Devices], D3DKMT_OPENSYNCOBJECTFROMNTHANDLE, _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE, d3dkmthk/D3DKMT_OPENSYNCOBJECTFROMNTHANDLE, display.d3dkmt_opensyncobjectfromnthandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OPENSYNCOBJECTFROMNTHANDLE
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_OPENSYNCOBJECTFROMNTHANDLE {
 
 ## Members
 
-        
-            `hNtHandle`
 
-            [in] An NT handle to the process.
-        
-            `hSyncObject`
+`hNtHandle`
 
-            [out] A handle of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the kernel-mode synchronization object.
+[in] An NT handle to the process.
+
+`hSyncObject`
+
+[out] A handle of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the kernel-mode synchronization object.
 
 
 ## Requirements

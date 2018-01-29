@@ -7,8 +7,8 @@ old-location : print\pfnpropsheetui.htm
 old-project : print
 ms.assetid : b78d0dd7-1fe9-4b7e-8f51-4b5dc5fa2571
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX
+ms.date : 1/18/2018
+ms.keywords : print.pfnpropsheetui, PFNPROPSHEETUI callback function [Print Devices], PFNPROPSHEETUI, compstui/PFNPROPSHEETUI, cpsuifnc_a30dfbce-634a-4eb9-b86c-fdd14d8333fd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFNPROPSHEETUI
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
@@ -64,37 +68,42 @@ CPSUI-supplied integer value that is dependent on the contents of the <b>Reason<
 ## Return Value
 
 If the operation succeeds, the function should return a value of one (or greater). Otherwise it should return a value less than one.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>One or greater.</b></dt>
-</dl>The PFNPROPSHEETUI function associated with the parent of the current page will be called.
+</dl>
+</td>
+<td width="60%">
+The PFNPROPSHEETUI function associated with the parent of the current page will be called.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Less than 1.</b></dt>
-</dl>The PFNPROPSHEETUI function associated with the parent of the current page will not be called.
+</dl>
+</td>
+<td width="60%">
+The PFNPROPSHEETUI function associated with the parent of the current page will not be called.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 Callback functions specified using the PFNPROPSHEETUI function type are supplied by applications that use <a href="https://msdn.microsoft.com/7af3435a-19e0-40a1-9f94-319d9d323856">CPSUI</a> to manage customized property sheet pages. One such callback function must be specified when an application calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a> function. For example, when the NT-based operating system print spooler calls CPSUI's <b>CommonPropertySheetUI</b> function to support its <b>DocumentProperties</b> or <b>PrinterProperties</b> API functions (described in the Microsoft Windows SDK documentation), the spooler specifies an internal PFNPROPSHEETUI-typed callback function. 
 
-Applications can specify additional PFNPROPSHEETUI-typed callback functions by calling CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function with a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff546391">CPSFUNC_ADD_PFNPROPSHEETUI</a>. For example, the NT-based operating system print spooler does this to notify CPSUI of the existence of a printer interface DLL's <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> and <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> functions. Likewise, Microsoft's <a href="wdkgloss.u#wdkgloss.unidrv#wdkgloss.unidrv"><i>Unidrv</i></a> and <a href="wdkgloss.p#wdkgloss.pscript#wdkgloss.pscript"><i>Pscript</i></a> drivers use this technique to notify CPSUI of the existence of <a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a> methods in <a href="https://msdn.microsoft.com/22ac2af6-37d8-4913-95af-9c3dc8576d40">user interface plug-ins</a>.
+Applications can specify additional PFNPROPSHEETUI-typed callback functions by calling CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function with a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff546391">CPSFUNC_ADD_PFNPROPSHEETUI</a>. For example, the NT-based operating system print spooler does this to notify CPSUI of the existence of a printer interface DLL's <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> and <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> functions. Likewise, Microsoft's <a href="https://msdn.microsoft.com/0a51fa2b-3d09-4a5f-9fff-40604877a414">Unidrv</a> and <a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">Pscript</a> drivers use this technique to notify CPSUI of the existence of <a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a> methods in <a href="https://msdn.microsoft.com/22ac2af6-37d8-4913-95af-9c3dc8576d40">user interface plug-ins</a>.
 
 Each PFNPROPSHEETUI-typed callback function is called by CPSUI several times. The <b>Reason</b> member of the <a href="..\compstui\ns-compstui-_propsheetui_info.md">PROPSHEETUI_INFO</a> structure stipulates the operation that the function should perform, as follows:
-
-
-
-This <i>lParam</i> value is used between the common printer UI and the system-provided configuration
-module for v4 printer drivers. This value should be ignored by v3 printer drivers, which should return -1 in this case.
-
-The callback function should release resources that were allocated in response to PROPSHEETUI_REASON_INIT.
-
-The callback function should call <b>LoadImage</b> (described in the Windows SDK documentation) to load an icon resource, using parameters specified by the <a href="..\compstui\ns-compstui-_propsheetui_geticon_info.md">PROPSHEETUI_GETICON_INFO</a> structure pointed to be <i>lParam</i>, and it should return the icon's handle in the structure.
-
-The callback function should supply page header information in the <a href="..\compstui\ns-compstui-_propsheetui_info_header.md">PROPSHEETUI_INFO_HEADER</a> structure pointed to by <i>lParam</i>.
-
-The callback function should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function to specify property sheet pages. (This is always the first reason received.)
-
-The callback function receives result information in the <a href="..\compstui\ns-compstui-_setresult_info.md">SETRESULT_INFO</a> structure pointed to by <i>lParam</i>. This is application-supplied status information, specified by calling CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function with a function code of CPSFUNC_SET_RESULT.
-
-For more information about handling this reason value, see the description of <a href="..\compstui\ns-compstui-_setresult_info.md">SETRESULT_INFO</a>. </p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

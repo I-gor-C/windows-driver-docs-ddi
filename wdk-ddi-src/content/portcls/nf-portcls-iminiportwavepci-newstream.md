@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : cad3eeb5-2106-4648-97e5-cf3bb8601599
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWavePci, IMiniportWavePci::NewStream, NewStream
+ms.keywords : portcls/IMiniportWavePci::NewStream, NewStream method [Audio Devices], IMiniportWavePci, audio.iminiportwavepci_newstream, NewStream method [Audio Devices], IMiniportWavePci interface, audmp-routines_cf0b0f93-033d-47f1-8e07-c0407e0a89f3.xml, IMiniportWavePci::NewStream, IMiniportWavePci interface [Audio Devices], NewStream method, NewStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWavePci.NewStream
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -135,35 +139,24 @@ Note that the <code>NewStream</code> methods for the other port types (WaveCycli
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportwavepci.md">IMiniportWavePci</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-ksdataformat_dsound.md">KSDATAFORMAT_DSOUND</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
+
+<a href="..\ksmedia\ns-ksmedia-ksdataformat_dsound.md">KSDATAFORMAT_DSOUND</a>
+
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+
+<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\portcls\nn-portcls-iminiportwavepci.md">IMiniportWavePci</a>
+
  
 
  

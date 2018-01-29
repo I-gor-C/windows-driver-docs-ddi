@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b42edb45-3f4f-4f65-aede-8f51149dda78
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION, *PFILE_LINK_ENTRY_INFORMATION
+ms.keywords : ntifs/FILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION structure [Installable File System Drivers], *PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION, ifsk.file_link_entry_information, PFILE_LINK_ENTRY_INFORMATION structure pointer [Installable File System Drivers], PFILE_LINK_ENTRY_INFORMATION, _FILE_LINK_ENTRY_INFORMATION, ntifs/PFILE_LINK_ENTRY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_LINK_ENTRY_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : FILE_LINK_ENTRY_INFORMATION, *PFILE_LINK_ENTRY_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION"
 ---
 
 # _FILE_LINK_ENTRY_INFORMATION structure
@@ -49,22 +53,22 @@ typedef struct _FILE_LINK_ENTRY_INFORMATION {
 
 ## Members
 
-        
-            `FileName`
 
-            The name of the link.
-        
-            `FileNameLength`
+`FileName`
 
-            The length, in characters, of the <b>FileName</b> for the link.
-        
-            `NextEntryOffset`
+The name of the link.
 
-            The offset, in bytes, to the next <b>FILE_LINK_ENTRY_INFORMATION</b> structure, or 0 if the current structure is the last  <b>FILE_LINK_ENTRY_INFORMATION</b> structure.
-        
-            `ParentFileId`
+`FileNameLength`
 
-            The ID of the parent directory of the link.
+The length, in characters, of the <b>FileName</b> for the link.
+
+`NextEntryOffset`
+
+The offset, in bytes, to the next <b>FILE_LINK_ENTRY_INFORMATION</b> structure, or 0 if the current structure is the last  <b>FILE_LINK_ENTRY_INFORMATION</b> structure.
+
+`ParentFileId`
+
+The ID of the parent directory of the link.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _FILE_LINK_ENTRY_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntifs\ns-ntifs-_file_links_information.md">FILE_LINKS_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

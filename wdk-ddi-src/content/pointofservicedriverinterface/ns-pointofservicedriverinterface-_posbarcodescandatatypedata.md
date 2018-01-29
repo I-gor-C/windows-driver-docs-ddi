@@ -7,8 +7,8 @@ old-location : pos\posbarcodescandatatypedata.htm
 old-project : pos
 ms.assetid : 1b6fcad3-a6a0-4180-8e36-ae4e597b4eb0
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosBarcodeScanDataTypeData, PosBarcodeScanDataTypeData
+ms.date : 1/18/2018
+ms.keywords : pointofservicedriverinterface/PosBarcodeScanDataTypeData, PosBarcodeScanDataTypeData, _PosBarcodeScanDataTypeData, pos.posbarcodescandatatypedata, PosBarcodeScanDataTypeData structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosBarcodeScanDataTypeData
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosBarcodeScanDataTypeData
 ---
 
@@ -47,17 +51,17 @@ typedef struct _PosBarcodeScanDataTypeData {
 
 ## Members
 
-        
-            `dataLengthInBytes`
 
-            The size of the buffer that contains the symbologies, including the size of the <b>PosBarcodeScanDataTypeData</b> structure.
-        
-            `scanDataTypes_0`
+`dataLengthInBytes`
 
-            The start of the DWORD array of symbologies.
+The size of the buffer that contains the symbologies, including the size of the <b>PosBarcodeScanDataTypeData</b> structure.
 
-    ## Remarks
-        Each symbology in the buffer is represented by a DWORD. The size of the array of symboligies that scanDataTypes_0 points to is <code>scanDataTypes_0/sizeof(UINT32) - 1;</code></p>
+`scanDataTypes_0`
+
+The start of the DWORD array of symbologies.
+
+## Remarks
+Each symbology in the buffer is represented by a DWORD. The size of the array of symboligies that scanDataTypes_0 points to is <code>scanDataTypes_0/sizeof(UINT32) - 1;</code>
 
 ## Requirements
 | &nbsp; | &nbsp; |

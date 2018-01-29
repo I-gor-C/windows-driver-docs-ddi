@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C6BED59F-066E-42F6-86AE-B0423E0E847F
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_REL_TIMEOUT_IN_US
+ms.keywords : wdf.evtdevicewdmirpdispatch, EvtDeviceWdmIrpDispatch callback function, EvtDeviceWdmIrpDispatch, EVT_WDFDEVICE_WDM_IRP_DISPATCH, EVT_WDFDEVICE_WDM_IRP_DISPATCH, wdfdevice/EvtDeviceWdmIrpDispatch, kmdf.evtdevicewdmirpdispatch
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.17
-req.alt-api : EvtDeviceWdmIrpDispatch
-req.alt-loc : Wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -92,12 +96,16 @@ An untyped pointer to the framework's dispatch  context information. The driver 
 ## Return Value
 
 The <i>EvtDeviceWdmIrpDispatch</i> callback function must:
-
-<b>KMDF only</b>
-
-<b>KMDF only</b>
-
-<b>KMDF only</b>
+<ul>
+<li>Return the value that the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirp.md">WdfDeviceWdmDispatchIrp</a> method returns, if the callback function calls that method.</li>
+<li>Return the value that the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a> method returns, if the callback function calls that method.</li>
+<li>
+<b>KMDF only</b></p> Set the <b>IoStatus.Status</b> member of the IRP to STATUS_SUCCESS or another status value for which NT_SUCCESS(status) equals TRUE, and return the same value (after calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>) if the callback function successfully completes the received IRP.</li>
+<li>
+<b>KMDF only</b></p>Set the <b>IoStatus.Status</b> member of the IRP to a status value for which NT_SUCCESS(status) equals FALSE, and return the same value (after calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>) if the callback function detects an error.</li>
+<li>
+<b>KMDF only</b></p>Return STATUS_PENDING if the callback function calls <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>.</li>
+</ul>
 
 ## Remarks
 
@@ -113,14 +121,6 @@ In its <i>EvtDeviceWdmIrpDispatch</i> callback function, a driver should not set
 
  For more information about specifying queues for IRPs as they arrive, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-irps-to-i-o-queues">Dispatching IRPs to I/O Queues</a>.
 
-To define an <i>EvtDeviceWdmIrpDispatch</i> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
-
-For example, to define an <i>EvtDeviceWdmIrpDispatch</i> callback function that is named <i>MyDeviceWdmIrpDispatch</i>, use the <b>EVT_WDFDEVICE_WDM_IRP_DISPATCH</b> type as shown in this code example:
-
-Then, implement your callback function:
-
-The <b>EVT_WDFDEVICE_WDM_IRP_DISPATCH</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDFDEVICE_WDM_IRP_DISPATCH</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -135,17 +135,12 @@ The <b>EVT_WDFDEVICE_WDM_IRP_DISPATCH</b> function type is defined in the Wdfdev
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurewdmirpdispatchcallback.md">WdfDeviceConfigureWdmIrpDispatchCallback</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirp.md">WdfDeviceWdmDispatchIrp</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirp.md">WdfDeviceWdmDispatchIrp</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurewdmirpdispatchcallback.md">WdfDeviceConfigureWdmIrpDispatchCallback</a>
+
  
 
  

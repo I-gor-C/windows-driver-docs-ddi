@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : cc20c2d6-c76b-4f72-9762-23b9aa5fe946
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO
+ms.keywords : _WHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO, PWHEA_PROCESSOR_FAMILY_INFO, whearef_f15c7bb5-aee5-4a59-9869-285828d92b5e.xml, PWHEA_PROCESSOR_FAMILY_INFO union pointer [WHEA Drivers and Applications], ntddk/PWHEA_PROCESSOR_FAMILY_INFO, ntddk/WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO, whea.whea_processor_family_info, WHEA_PROCESSOR_FAMILY_INFO union [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_PROCESSOR_FAMILY_INFO
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO"
 ---
 
@@ -57,13 +61,17 @@ typedef union _WHEA_PROCESSOR_FAMILY_INFO {
 
 ## Members
 
-        
-            `AsULONGLONG`
 
-            A ULONGLONG representation of the contents of the WHEA_PROCESSOR_FAMILY_INFO union.
+`AsULONGLONG`
 
-    ## Remarks
-        For x86 and x64 processors, the <b>CPUVersion</b> member of the <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contains a WHEA_PROCESSOR_FAMILY_INFO union.
+A ULONGLONG representation of the contents of the WHEA_PROCESSOR_FAMILY_INFO union.
+
+`DUMMYSTRUCTNAME`
+
+
+
+## Remarks
+For x86 and x64 processors, the <b>CPUVersion</b> member of the <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contains a WHEA_PROCESSOR_FAMILY_INFO union.
 
 The contents of this union are obtained by executing the CPUID instruction with the EAX register set to 1 on input. For more information about the CPUID instruction, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>. For additional information about the data that is contained in the members of this union, see <a href="http://go.microsoft.com/fwlink/p/?linkid=80097">AP-485 Intel Processor Identification and the CPUID Instruction</a>.
 
@@ -75,13 +83,10 @@ The contents of this union are obtained by executing the CPUID instruction with 
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
-</dt>
-</dl>
+
  
 
  

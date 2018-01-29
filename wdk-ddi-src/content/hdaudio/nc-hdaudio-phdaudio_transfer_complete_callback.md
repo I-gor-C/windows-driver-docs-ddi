@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6B3DA3B1-33E9-4BE4-A3EE-146080C483A6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.phdaudio_transfer_complete_callback, HDAudioTransferCompleteCallback callback function [Audio Devices], HDAudioTransferCompleteCallback, PHDAUDIO_TRANSFER_COMPLETE_CALLBACK, PHDAUDIO_TRANSFER_COMPLETE_CALLBACK, hdaudio/HDAudioTransferCompleteCallback, HDAudioTransferCompleteCallback callback function [Audio Devices], HDAudioTransferCompleteCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HDAudioTransferCompleteCallback
-req.alt-loc : Hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -67,7 +71,7 @@ Void
 
 ## Remarks
 
-For more information, see <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">PTRANSFER_CODEC_VERBS</a>.</p>
+For more information, see <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">PTRANSFER_CODEC_VERBS</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DA23251C-E901-48A0-9B58-458622DE8CF0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
+ms.keywords : display.dxgk_buildpagingbuffer_updatecontextallocation, DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION structure [Display Devices], DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION {
 
 ## Members
 
-        
-            `ContextAllocation`
 
-            A GPU virtual address in the paging process scratch area for the context allocation being updated.
-        
-            `ContextAllocationSize`
+`ContextAllocation`
 
-            The size of the context allocation.
-        
-            `DriverPrivateDataSize`
+A GPU virtual address in the paging process scratch area for the context allocation being updated.
 
-            The size of the driver-private data.
-        
-            `pDriverPrivateData`
+`ContextAllocationSize`
 
-            A pointer to the driver-private data that was passed in the call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>.
+The size of the context allocation.
+
+`DriverPrivateDataSize`
+
+The size of the driver-private data.
+
+`pDriverPrivateData`
+
+A pointer to the driver-private data that was passed in the call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>
-</dt>
-</dl>
+
  
 
  

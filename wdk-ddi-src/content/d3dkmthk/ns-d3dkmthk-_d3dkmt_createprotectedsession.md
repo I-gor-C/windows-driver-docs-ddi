@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4ec42f5a-df33-4da3-a959-64cb400f3177
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEPROTECTEDSESSION, D3DKMT_CREATEPROTECTEDSESSION
+ms.keywords : d3dkmthk/D3DKMT_CREATEPROTECTEDSESSION, _D3DKMT_CREATEPROTECTEDSESSION, D3DKMT_CREATEPROTECTEDSESSION, D3DKMT_CREATEPROTECTEDSESSION structure [Display Devices], display.d3dkmt-createprotectedsession
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEPROTECTEDSESSION
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEPROTECTEDSESSION
 ---
 
@@ -52,34 +56,34 @@ typedef struct _D3DKMT_CREATEPROTECTEDSESSION {
 
 ## Members
 
-        
-            `hDevice`
 
-            A handle for the device.
-        
-            `hHandle`
+`hDevice`
 
-            The protected session handle.
-        
-            `hSyncObject`
+A handle for the device.
 
-            A monitored fence handle associated with the session.
-        
-            `pPrivateDriverData`
+`hHandle`
 
-            Private driver data.
-        
-            `pPrivateRuntimeData`
+The protected session handle.
 
-            Private runtime data.
-        
-            `PrivateDriverDataSize`
+`hSyncObject`
 
-            Size of private driver data.
-        
-            `PrivateRuntimeDataSize`
+A monitored fence handle associated with the session.
 
-            Size of private runtime data.
+`pPrivateDriverData`
+
+Private driver data.
+
+`pPrivateRuntimeData`
+
+Private runtime data.
+
+`PrivateDriverDataSize`
+
+Size of private driver data.
+
+`PrivateRuntimeDataSize`
+
+Size of private runtime data.
 
 
 ## Requirements

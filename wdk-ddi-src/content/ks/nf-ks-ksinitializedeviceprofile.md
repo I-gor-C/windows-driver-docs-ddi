@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E6AD21CE-C218-439F-A8F7-8E1AAF307A57
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsInitializeDeviceProfile
+ms.keywords : ks/KsInitializeDeviceProfile, stream.ksinitializedeviceprofile, KsInitializeDeviceProfile, KsInitializeDeviceProfile function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsInitializeDeviceProfile
-req.alt-loc : ks.lib,ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -61,7 +65,7 @@ If the provided <b>KSFILTERFACTORY</b> does not contain a device interface assoc
 
 It is required that the <b>ReferenceGuid</b> field of the <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a> structure contained with the <b>KSFILTERFACTORY</b> be set with a unique GUID for this filter type.  And the <b>Flags</b> field of the <b>KSFILTER_DESCRIPTOR</b> has the <b>KSFILTER_FLAG_PRIORITIZE_REFERENCEGUID</b> flag set.
 
-To delete all profiles from the profile store associated with the device interface for this <b>KSFILTERFACTORY</b>, the driver may call <b>KsInitializeDeviceProfile</b> followed immediately by <a href="..\ks\nf-ks-kspersistdeviceprofile.md">KsPersistDeviceProfile</a>.  This would result in an empty profile information, which would remove the profile information from the profile store.</p>
+To delete all profiles from the profile store associated with the device interface for this <b>KSFILTERFACTORY</b>, the driver may call <b>KsInitializeDeviceProfile</b> followed immediately by <a href="..\ks\nf-ks-kspersistdeviceprofile.md">KsPersistDeviceProfile</a>.  This would result in an empty profile information, which would remove the profile information from the profile store.
 
 ## Requirements
 | &nbsp; | &nbsp; |

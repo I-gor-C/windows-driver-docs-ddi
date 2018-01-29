@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 634398E9-7AAA-424C-8C81-287F70CE3578
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _ROOTHUB_INFO, *PROOTHUB_INFO, ROOTHUB_INFO
+ms.keywords : ucxroothub/P_ROOTHUB_INFO, ucxroothub/_ROOTHUB_INFO, _ROOTHUB_INFO, *PROOTHUB_INFO, P_ROOTHUB_INFO structure pointer [Buses], P_ROOTHUB_INFO, ROOTHUB_INFO structure [Buses], ROOTHUB_INFO, buses._roothub_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ROOTHUB_INFO
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PROOTHUB_INFO, ROOTHUB_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ROOTHUB_INFO, *PROOTHUB_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -52,30 +56,30 @@ typedef struct _ROOTHUB_INFO {
 
 ## Members
 
-        
-            `ControllerType`
 
-            A <a href="..\ucxroothub\ne-ucxroothub-_controller_type.md">CONTROLLER_TYPE</a> value that identifies the type of eXtensible Host Controller Interface (xHCI) which has the root hub.
-        
-            `MaxU1ExitLatency`
+`ControllerType`
 
-            The exit latency for the slowest link for U1 transition.
-        
-            `MaxU2ExitLatency`
+A <a href="..\ucxroothub\ne-ucxroothub-_controller_type.md">CONTROLLER_TYPE</a> value that identifies the type of eXtensible Host Controller Interface (xHCI) which has the root hub.
 
-            The exit latency for the slowest link for U2 transition.
-        
-            `NumberOf20Ports`
+`MaxU1ExitLatency`
 
-            The number of USB 2.0 ports connected to the root hub.
-        
-            `NumberOf30Ports`
+The exit latency for the slowest link for U1 transition.
 
-            The number of USB 3.0 ports connected to the root hub.
-        
-            `Size`
+`MaxU2ExitLatency`
 
-            The size in bytes of this structure.
+The exit latency for the slowest link for U2 transition.
+
+`NumberOf20Ports`
+
+The number of USB 2.0 ports connected to the root hub.
+
+`NumberOf30Ports`
+
+The number of USB 3.0 ports connected to the root hub.
+
+`Size`
+
+The size in bytes of this structure.
 
 
 ## Requirements
@@ -86,13 +90,10 @@ typedef struct _ROOTHUB_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a>
-</dt>
-</dl>
+
  
 
  

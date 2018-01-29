@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe3c6010-532b-4f3d-b3d3-a1c27d4a05f1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUpcaseUnicodeString
+ms.keywords : kernel.rtlupcaseunicodestring, RtlUpcaseUnicodeString, ntddk/RtlUpcaseUnicodeString, RtlUpcaseUnicodeString routine [Kernel-Mode Driver Architecture], k109_617db3d7-18d8-46eb-a555-59f99d9cae78.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUpcaseUnicodeString
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : <= APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -82,14 +86,10 @@ If the operation succeeds, <b>RtlUpcaseUnicodeString</b> returns STATUS_SUCCESS.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtlupcaseunicodechar.md">RtlUpcaseUnicodeChar</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 48322143-8c95-4ffa-ac7a-597ed5fb066c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortWriteRegisterBufferUlong
+ms.keywords : video/VideoPortWriteRegisterBufferUlong, VideoPortWriteRegisterBufferUlong, VideoPort_Functions_c9709e69-cf6e-4772-8889-0c37f79c0b22.xml, display.videoportwriteregisterbufferulong, VideoPortWriteRegisterBufferUlong function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortWriteRegisterBufferUlong
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -88,11 +92,8 @@ Callers of <b>VideoPortWriteRegisterBufferUlong</b> can be running at any IRQL, 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-</dl>
+
  
 
  

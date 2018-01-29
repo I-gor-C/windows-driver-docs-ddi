@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3E7754A3-3A7A-4036-B524-CBA40EF22048
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltEnumerateInstanceInformationByDeviceObject
+ms.keywords : FltEnumerateInstanceInformationByDeviceObject, ifsk.fltenumerateinstanceinformationbydeviceobject, fltkernel/FltEnumerateInstanceInformationByDeviceObject, FltEnumerateInstanceInformationByDeviceObject routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltEnumerateInstanceInformationByDeviceObject
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -64,7 +68,6 @@ Zero-based index of the minifilter driver instance or legacy filter driver for w
 `InformationClass`
 
 Type of information to be returned for the minifilter driver instance or legacy filter driver. This parameter can have one of the following values.
-
 <table>
 <tr>
 <th>Value</th>
@@ -128,28 +131,82 @@ Pointer to a caller-allocated variable that receives the number of bytes returne
 ## Return Value
 
 <b>FltEnumerateInstanceInformationByDeviceObject</b> returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value, such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer that the <i>Buffer</i> parameter points to is not large enough to store the requested information. 
+</dl>
+</td>
+<td width="60%">
+The buffer that the <i>Buffer</i> parameter points to is not large enough to store the requested information. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>A matching minifilter instance was found, but it is being torn down.  Note that this return value does not apply to legacy filter drivers because legacy filter drivers cannot be unloaded.
+</dl>
+</td>
+<td width="60%">
+A matching minifilter instance was found, but it is being torn down.  Note that this return value does not apply to legacy filter drivers because legacy filter drivers cannot be unloaded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid value was specified for the <i>InformationClass</i> parameter.
+</dl>
+</td>
+<td width="60%">
+An invalid value was specified for the <i>InformationClass</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MORE_ENTRIES</b></dt>
-</dl>There are no more entries in the volume's instance/filter list.
+</dl>
+</td>
+<td width="60%">
+There are no more entries in the volume's instance/filter list.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_VOLUME_NOT_FOUND</b></dt>
-</dl>No related volume was found for <i>DeviceObject</i>.
+</dl>
+</td>
+<td width="60%">
+No related volume was found for <i>DeviceObject</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_INTERNAL_ERROR</b></dt>
-</dl><i>DeviceObject</i>  is not a valid volume device object.
+</dl>
+</td>
+<td width="60%">
+<i>DeviceObject</i>  is not a valid volume device object.
 
 -or-
 
 The volume related to <i>DeviceObject</i> was registered but   does not have any filter instances attached.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -171,17 +228,12 @@ This routine will return both legacy filter driver information and minifilter dr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolumename.md">FltEnumerateInstanceInformationByVolumeName</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
+
  
 
  

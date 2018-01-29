@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 47d0330e-5413-4729-b103-c1a4d6c648e1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
+ms.keywords : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dkmt_waitforsynchronizationobject, OpenGL_Structs_5498c651-0ef6-4114-9821-de193980f879.xml, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT {
 
 ## Members
 
-        
-            `hContext`
 
-            [in] A kernel-mode handle to the context stream in which a wait for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted.
-        
-            `ObjectCount`
+`hContext`
 
-            [in] The number of synchronization events in the <b>ObjectHandleArray</b> array.
-        
-            `ObjectHandleArray`
+[in] A kernel-mode handle to the context stream in which a wait for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted.
 
-            [in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for. The D3DDDI_MAX_OBJECT_WAITED_ON constant, which is defined as 32, indicates the maximum number of synchronization events that the context can wait for.
+`ObjectCount`
+
+[in] The number of synchronization events in the <b>ObjectHandleArray</b> array.
+
+`ObjectHandleArray`
+
+[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for. The D3DDDI_MAX_OBJECT_WAITED_ON constant, which is defined as 32, indicates the maximum number of synchronization events that the context can wait for.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject.md">D3DKMTWaitForSynchronizationObject</a>
-</dt>
-</dl>
+
  
 
  

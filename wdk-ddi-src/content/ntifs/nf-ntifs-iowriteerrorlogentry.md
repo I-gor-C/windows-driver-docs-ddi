@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1259c344-584c-410a-a152-5de1f433082c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWriteErrorLogEntry
+ms.keywords : IoWriteErrorLogEntry routine [Kernel-Mode Driver Architecture], kernel.iowriteerrorlogentry, wdm/IoWriteErrorLogEntry, IoWriteErrorLogEntry, k104_1822a499-059a-41c8-b97b-aa3a5bfd22e3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWriteErrorLogEntry
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlDispatch
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -75,17 +79,12 @@ None
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_error_log_packet.md">IO_ERROR_LOG_PACKET</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_io_error_log_packet.md">IO_ERROR_LOG_PACKET</a>
+
  
 
  

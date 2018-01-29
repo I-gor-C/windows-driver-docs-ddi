@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3f29fb48-5145-4b2c-8a0c-3130f4491675
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGateTerminateAnd
+ms.keywords : ks/KsGateTerminateAnd, KsGateTerminateAnd, avfunc_e8c3af46-fdb4-4e95-8473-12e1fadff072.xml, stream.ksgateterminateand, KsGateTerminateAnd function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGateTerminateAnd
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,17 +79,12 @@ Logical gates should be deleted in a front to back manner. <b>KsGateTerminateAnd
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgateterminateor.md">KsGateTerminateOr</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+
  
 
  

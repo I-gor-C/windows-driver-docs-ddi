@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 53C8A5D4-4D8B-4D3E-A350-B3BBAC7F8C71
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_ADDR_BTL8, *PSTOR_ADDR_BTL8, STOR_ADDR_BTL8
+ms.keywords : storport/PSTOR_ADDR_BTL8, storage.stor_addr_btl8, PSTOR_ADDR_BTL8 structure pointer [Storage Devices], PSTOR_ADDR_BTL8, STOR_ADDR_BTL8, STOR_ADDR_BTL8 structure [Storage Devices], *PSTOR_ADDR_BTL8, _STOR_ADDR_BTL8, storport/STOR_ADDR_BTL8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_ADDR_BTL8
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTOR_ADDR_BTL8, STOR_ADDR_BTL8"
 req.product : Windows 10 or later.
 ---
@@ -53,34 +57,34 @@ typedef struct _STOR_ADDR_BTL8 {
 
 ## Members
 
-        
-            `AddressLength`
 
-            The byte length of the address. This value is set to <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.
-        
-            `Lun`
+`AddressLength`
 
-            The logical unit on the target device.
-        
-            `Path`
+The byte length of the address. This value is set to <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.
 
-            The bus number for the target device.
-        
-            `Port`
+`Lun`
 
-            The host bus adapter (HBA) port number.
-        
-            `Reserved`
+The logical unit on the target device.
 
-            Reserved, set to 0.
-        
-            `Target`
+`Path`
 
-            The target device number.
-        
-            `Type`
+The bus number for the target device.
 
-            The address type. This member is set to <b>STOR_ADDRESS_TYPE_BTL8</b>.
+`Port`
+
+The host bus adapter (HBA) port number.
+
+`Reserved`
+
+Reserved, set to 0.
+
+`Target`
+
+The target device number.
+
+`Type`
+
+The address type. This member is set to <b>STOR_ADDRESS_TYPE_BTL8</b>.
 
 
 ## Requirements
@@ -91,13 +95,10 @@ typedef struct _STOR_ADDR_BTL8 {
 | **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Storport.h, Scsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\scsi\ns-scsi-_stor_address.md">STOR_ADDRESS</a>
-</dt>
-</dl>
+<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B42D3637-BBFF-411B-AA1B-4B9578E2EDA9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022
+ms.keywords : display.d3d12ddi_video_process_support_data, D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022 structure [Display Devices], D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022, d3d12umddi/D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022
 ---
 
@@ -60,66 +64,66 @@ typedef struct D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022 {
 
 ## Members
 
-        
-            `AutoProcessingSupport`
 
-            Indicates the type of auto processing operations supported by driver.
-        
-            `DeinterlaceSupport`
+`AutoProcessingSupport`
 
-            The deinterlace modes supported by the driver as a bitwise OR of zero or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a> enumeration.
-        
-            `FeatureSupport`
+Indicates the type of auto processing operations supported by driver.
 
-            A bitwise OR of zero or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_feature_support_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS</a> enumeration.
-        
-            `FilterRangeSupport`
+`DeinterlaceSupport`
 
-            The list of filter range values.  The order of the range values should be specified in the same order that the filters appear in the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a> enumeration.  <b>D3D12DDI_VIDEO_PROCESS_MAX_FILTERS</b> range values are available for current and future filters.  The D3D runtime zero initializes any range value that is not supported by the driver.
-        
-            `FilterSupport`
+The deinterlace modes supported by the driver as a bitwise OR of zero or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a> enumeration.
 
-            A bitwise OR of zero or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a> enumeration.
-        
-            `InputFieldType`
+`FeatureSupport`
 
-            The interlaced field type of the input sample.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_field_type_0020.md">D3D12DDI_VIDEO_FIELD_TYPE</a> enumeration.
-        
-            `InputFrameRate`
+A bitwise OR of zero or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_feature_support_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS</a> enumeration.
 
-            The input frame rate.
-        
-            `InputSample`
+`FilterRangeSupport`
 
-            The input width, height, and format.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_sample_description_0020.md">D3D12DDI_VIDEO_SAMPLE_DESCRIPTION</a> structure.
-        
-            `InputStereoFormat`
+The list of filter range values.  The order of the range values should be specified in the same order that the filters appear in the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a> enumeration.  <b>D3D12DDI_VIDEO_PROCESS_MAX_FILTERS</b> range values are available for current and future filters.  The D3D runtime zero initializes any range value that is not supported by the driver.
 
-            The stereo format of the input.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_frame_stereo_format_0020.md">D3D12DDI_VIDEO_FRAME_STEREO_FORMAT</a> enumeration.
-        
-            `NodeIndex`
+`FilterSupport`
 
-            In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
-        
-            `OutputFormat`
+A bitwise OR of zero or more flags from the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a> enumeration.
 
-            The output DXGI format and color space.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_format_description_0020.md">D3D12DDI_VIDEO_FORMAT_DESCRIPTION</a> structure.
-        
-            `OutputFrameRate`
+`InputFieldType`
 
-            The frame rate of the output.
-        
-            `OutputStereoFormat`
+The interlaced field type of the input sample.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_field_type_0020.md">D3D12DDI_VIDEO_FIELD_TYPE</a> enumeration.
 
-            The stereo format of the output.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_frame_stereo_format_0020.md">D3D12DDI_VIDEO_FRAME_STEREO_FORMAT</a> enumeration.
-        
-            `ScaleSupport`
+`InputFrameRate`
 
-            Indicates the supported output scale range for the  input to output processing.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_scale_support_0022.md">D3D12DDI_VIDEO_SCALE_SUPPORT</a> structure.
-        
-            `SupportFlags`
+The input frame rate.
 
-            Indicates whether the conversion from input format and colorspace to output format and color space is supported.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_support_flags_0022.md">D3D12DDI_VIDEO_PROCESS_SUPPORT_FLAGS</a> enumeration.
+`InputSample`
+
+The input width, height, and format.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_sample_description_0020.md">D3D12DDI_VIDEO_SAMPLE_DESCRIPTION</a> structure.
+
+`InputStereoFormat`
+
+The stereo format of the input.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_frame_stereo_format_0020.md">D3D12DDI_VIDEO_FRAME_STEREO_FORMAT</a> enumeration.
+
+`NodeIndex`
+
+In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
+
+`OutputFormat`
+
+The output DXGI format and color space.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_format_description_0020.md">D3D12DDI_VIDEO_FORMAT_DESCRIPTION</a> structure.
+
+`OutputFrameRate`
+
+The frame rate of the output.
+
+`OutputStereoFormat`
+
+The stereo format of the output.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_frame_stereo_format_0020.md">D3D12DDI_VIDEO_FRAME_STEREO_FORMAT</a> enumeration.
+
+`ScaleSupport`
+
+Indicates the supported output scale range for the  input to output processing.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_scale_support_0022.md">D3D12DDI_VIDEO_SCALE_SUPPORT</a> structure.
+
+`SupportFlags`
+
+Indicates whether the conversion from input format and colorspace to output format and color space is supported.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_support_flags_0022.md">D3D12DDI_VIDEO_PROCESS_SUPPORT_FLAGS</a> enumeration.
 
 
 ## Requirements
@@ -130,37 +134,26 @@ typedef struct D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_field_type_0020.md">D3D12DDI_VIDEO_FIELD_TYPE</a>
-</dt>
-<dt>
-<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_format_description_0020.md">D3D12DDI_VIDEO_FORMAT_DESCRIPTION</a>
-</dt>
-<dt>
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_frame_stereo_format_0020.md">D3D12DDI_VIDEO_FRAME_STEREO_FORMAT</a>
-</dt>
-<dt>
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a>
-</dt>
-<dt>
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_feature_support_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS</a>
-</dt>
-<dt>
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a>
-</dt>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_support_flags_0022.md">D3D12DDI_VIDEO_PROCESS_SUPPORT_FLAGS</a>
-</dt>
-<dt>
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_frame_stereo_format_0020.md">D3D12DDI_VIDEO_FRAME_STEREO_FORMAT</a>
+
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_sample_description_0020.md">D3D12DDI_VIDEO_SAMPLE_DESCRIPTION</a>
-</dt>
-<dt>
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a>
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a>
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_feature_support_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS</a>
+
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_scale_support_0022.md">D3D12DDI_VIDEO_SCALE_SUPPORT</a>
-</dt>
-</dl>
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_field_type_0020.md">D3D12DDI_VIDEO_FIELD_TYPE</a>
+
+<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_format_description_0020.md">D3D12DDI_VIDEO_FORMAT_DESCRIPTION</a>
+
  
 
  

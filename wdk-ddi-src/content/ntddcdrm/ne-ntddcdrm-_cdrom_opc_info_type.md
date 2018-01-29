@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 447D225C-4B73-4567-81E3-950EBC802F84
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_OPC_INFO_TYPE, *PCDROM_OPC_INFO_TYPE, CDROM_OPC_INFO_TYPE
+ms.keywords : CDROM_OPC_INFO_TYPE, ntddcdrm/CDROM_OPC_INFO_TYPE, ntddcdrm/PCDROM_OPC_INFO_TYPE, ntddcdrm/SimpleOpcInfo, CDROM_OPC_INFO_TYPE enumeration [Storage Devices], SimpleOpcInfo, PCDROM_OPC_INFO_TYPE enumeration pointer [Storage Devices], storage.cdrom_opc_info_type, *PCDROM_OPC_INFO_TYPE, PCDROM_OPC_INFO_TYPE, _CDROM_OPC_INFO_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_OPC_INFO_TYPE
-req.alt-loc : Ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCDROM_OPC_INFO_TYPE, CDROM_OPC_INFO_TYPE"
 ---
 
@@ -65,14 +69,10 @@ typedef enum _CDROM_OPC_INFO_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_simple_opc_info.md">CDROM_SIMPLE_OPC_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F3C17CD8-F423-46E7-891F-E428235CEF3D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCM_CONNECTOR_TYPEC_CONFIG, UCM_CONNECTOR_TYPEC_CONFIG, *PUCM_CONNECTOR_TYPEC_CONFIG
+ms.keywords : buses.ucm_connector_type_c_config, PUCM_CONNECTOR_TYPEC_CONFIG, _UCM_CONNECTOR_TYPEC_CONFIG, *PUCM_CONNECTOR_TYPEC_CONFIG, UCM_CONNECTOR_TYPEC_CONFIG, ucmmanager/UCM_CONNECTOR_TYPEC_CONFIG, PUCM_CONNECTOR_TYPEC_CONFIG structure pointer [Buses], UCM_CONNECTOR_TYPEC_CONFIG structure [Buses], ucmmanager/PUCM_CONNECTOR_TYPEC_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_CONNECTOR_TYPEC_CONFIG
-req.alt-loc : Ucmmanager.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : UCM_CONNECTOR_TYPEC_CONFIG, *PUCM_CONNECTOR_TYPEC_CONFIG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUCM_CONNECTOR_TYPEC_CONFIG, UCM_CONNECTOR_TYPEC_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -52,33 +56,33 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 
 ## Members
 
-        
-            `AudioAccessoryCapable`
 
-            Indicates whether the connector is capable of detecting a USB Type-C analog input as 3.5 mm audio jack.
-        
-            `EvtSetDataRole`
+`AudioAccessoryCapable`
 
-            A pointer to the client driver's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_data_role.md">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.
-        
-            `IsSupported`
+Indicates whether the connector is capable of detecting a USB Type-C analog input as 3.5 mm audio jack.
 
-            TRUE indicates a Type-C connector. FALSE, otherwise.  is supported.
-        
-            `Size`
+`EvtSetDataRole`
 
-            Size of the <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure.
-        
-            `SupportedOperatingModes`
+A pointer to the client driver's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_data_role.md">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.
 
-            Indicates the supported operating mode of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_typec_operating_mode.md">UCM_TYPEC_OPERATING_MODE</a>-typed flags.
-        
-            `SupportedPowerSourcingCapabilities`
+`IsSupported`
 
-            Indicates the supported power source capabilities of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_typec_current.md">UCM_TYPEC_CURRENT</a>-typed flags.
+TRUE indicates a Type-C connector. FALSE, otherwise.  is supported.
 
-    ## Remarks
-        Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_config_init.md">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is used by Policy Manager to create a connector object.
+`Size`
+
+Size of the <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure.
+
+`SupportedOperatingModes`
+
+Indicates the supported operating mode of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_typec_operating_mode.md">UCM_TYPEC_OPERATING_MODE</a>-typed flags.
+
+`SupportedPowerSourcingCapabilities`
+
+Indicates the supported power source capabilities of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_typec_current.md">UCM_TYPEC_CURRENT</a>-typed flags.
+
+## Remarks
+Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_config_init.md">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is used by Policy Manager to create a connector object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,13 +92,10 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-</dl>
+
  
 
  

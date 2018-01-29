@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 0d79a25b-846d-490d-9e04-d319fa860761
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PMI_MEASUREMENT_UNIT, PMI_MEASUREMENT_UNIT
+ms.keywords : powermeter.ioctl_pmi_register_event_notify, IOCTL_PMI_REGISTER_EVENT_NOTIFY control code [Power Metering and Budgeting Devices], IOCTL_PMI_REGISTER_EVENT_NOTIFY, pmi/IOCTL_PMI_REGISTER_EVENT_NOTIFY, PowerMeterRef_9132445e-2195-4f6a-933d-0dc858128c4d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PMI_REGISTER_EVENT_NOTIFY
-req.alt-loc : Pmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_MEASUREMENT_UNIT
 ---
 
@@ -59,29 +63,26 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure.
 
 The <b>Status</b> member is set to one of the following values:
 
-
-
-The WDM driver that supports the PMI interface has completed the IOCTL request successfully.
-
-The WDM driver that supports the PMI interface has put the IOCTL request in a queue and will complete it after a PMI event occurs. 
-
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure.
-
-    ## Remarks
-        PMI creates an event notification queue for each initiator that opens the device instance for a power meter by using the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> function. A separate queue is created for each caller's connection to a device instance. The following points apply to the event notification queue:
-
+## Remarks
+PMI creates an event notification queue for each initiator that opens the device instance for a power meter by using the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> function. A separate queue is created for each caller's connection to a device instance. The following points apply to the event notification queue:
+<ul>
+<li>
 When PMI creates the event notification queue, the queue is empty. After the queue is created, PMI sends events to the caller after the caller has registered for event notification by using the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. 
 
+</li>
+<li>
 If the event notification queue is empty when the caller registers, the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request remains pending until either an event occurs or the device instance connection is broken through the <b>CloseFile</b> function.
 
+</li>
+<li>
 After the event notification queue is created, the queue will contain unsent events for the caller. This prevents callers from missing events during the interval between when the driver processes one event and the caller registers for another. If there are events in the caller's queue, they are sent immediately after the caller registers by using an <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request.
 
-When PMI sends a power meter event to the caller, it completes the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. The data that describes the event is contained within the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure in the output buffer that is referenced by the <b>MdlAddress</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The <b>EventType </b>member of this structure contains information about the power meter event's type. For example, if <b>EventType</b> is set to <b>PmiConfigurationChangedEvent</b>, the power meter's configuration has changed. In this case, the caller can query the power meter's new configuration by using an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> request.
+</li>
+</ul>When PMI sends a power meter event to the caller, it completes the <b>IOCTL_PMI_REGISTER_EVENT_NOTIFY</b> request. The data that describes the event is contained within the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure in the output buffer that is referenced by the <b>MdlAddress</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The <b>EventType </b>member of this structure contains information about the power meter event's type. For example, if <b>EventType</b> is set to <b>PmiConfigurationChangedEvent</b>, the power meter's configuration has changed. In this case, the caller can query the power meter's new configuration by using an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> request.
 
 For more information about the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> and <b>CloseFile</b> functions, refer to the Windows SDK documentation.
 
@@ -92,22 +93,16 @@ For more information about the <a href="https://msdn.microsoft.com/80a96083-4de9
 | **Header** | pmi.h (include Pmi.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
+
 <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a>
-</dt>
-</dl>
+
+<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
+
  
 
  

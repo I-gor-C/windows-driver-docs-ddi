@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : a54902d0-aa07-4cd0-8ef1-a3c17dff2ac9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+ms.keywords : parports.ioctl_par_set_information, IOCTL_PAR_SET_INFORMATION control code [Parallel Ports], IOCTL_PAR_SET_INFORMATION, ntddpar/IOCTL_PAR_SET_INFORMATION, cisspd_950d6397-7eff-4966-a734-0497f1a84257.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PAR_SET_INFORMATION
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_SET_INFORMATION IOCTL
-The IOCTL_PAR_SET_INFORMATION request resets and initializes a parallel device.
-
-
-
 The IOCTL_PAR_SET_INFORMATION request resets and initializes a parallel device.
 
 ### Major Code
@@ -63,22 +63,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to one of the following values:
-
-
-
-<b>Parameters.DeviceIoControl.InputBufferLength</b> is less than the size, in bytes, of a PAR_SET_INFORMATION structure. 
-
-The device is not connected.
-
-The device is offline.
-
-The device is out of paper.
-
-The device is not turned on.
 
 
 ## Requirements
@@ -88,16 +75,12 @@ The device is not turned on.
 | **Header** | ntddpar.h (include Ntddpar.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_information.md">IOCTL_PAR_QUERY_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\ntddpar\ns-ntddpar-_par_set_information.md">PAR_SET_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

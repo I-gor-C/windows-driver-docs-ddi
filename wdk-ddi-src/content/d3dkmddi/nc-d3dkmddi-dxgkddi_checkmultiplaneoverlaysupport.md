@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8332DD64-B75E-40A4-9D98-3406187150F2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddicheckmultiplaneoverlaysupport, DxgkDdiCheckMultiPlaneOverlaySupport callback function [Display Devices], DxgkDdiCheckMultiPlaneOverlaySupport, DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT, DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT, d3dkmddi/DxgkDdiCheckMultiPlaneOverlaySupport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiCheckMultiPlaneOverlaySupport
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -80,14 +84,10 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds; otherwise it returns one of the er
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_checkmultiplaneoverlaysupport.md">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT</a>
-</dt>
-</dl>
+
  
 
  

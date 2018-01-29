@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : f0aeb4ad-17a6-43bb-87bf-0c6766a6ad39
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_SCO_TRANSFER,
+ms.keywords : _BRB_SCO_TRANSFER structure [Bluetooth Devices], bth_structs_2e4ed482-af73-4ca6-997c-53005c4fafc2.xml, _BRB_SCO_TRANSFER, bthddi/_BRB_SCO_TRANSFER, bltooth._brb_sco_transfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _BRB_SCO_TRANSFER
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -54,49 +58,48 @@ struct _BRB_SCO_TRANSFER {
 
 ## Members
 
-        
-            `BtAddress`
 
-            The Bluetooth address of the remote device.
-        
-            `Buffer`
+`BtAddress`
 
-            A pointer to the input buffer. This value should be <b>NULL</b> when the 
+The Bluetooth address of the remote device.
+
+`Buffer`
+
+A pointer to the input buffer. This value should be <b>NULL</b> when the 
      <b>Buffer</b> member is not used.
-        
-            `BufferMDL`
 
-            A pointer to the MDL input buffer. This value should be <b>NULL</b> when the 
+`BufferMDL`
+
+A pointer to the MDL input buffer. This value should be <b>NULL</b> when the 
      <b>BufferMDL</b> member is not used.
-        
-            `BufferSize`
 
-            The size, in bytes, of the input buffer described by the 
+`BufferSize`
+
+The size, in bytes, of the input buffer described by the 
      <b>Buffer</b> member of this structure.
-        
-            `ChannelHandle`
 
-            The SCO channel handle that was returned by Bluetooth driver stack in response to an earlier 
+`ChannelHandle`
+
+The SCO channel handle that was returned by Bluetooth driver stack in response to an earlier 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a> or 
-     <a href="https://social.msdn.microsoft.com/Forums/en-US/0a9a4323-d046-4d27-9d22-4974dbab30a4/windows-bluetooth-sco-brbscoopenchannelresponse?forum=wdk">
-     BRB_SCO_OPEN_CHANNEL_RESPONSE</a> request.
-        
-            `DataTag`
+     <mshelp:link keywords="bltooth.brb_sco_open_channel_response" tabindex="0"><b>
+     BRB_SCO_OPEN_CHANNEL_RESPONSE</b></mshelp:link> request.
 
-            
-        
-            `Hdr`
+`DataTag`
 
-            A 
+
+
+`Hdr`
+
+A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
-        
-            `TransferFlags`
 
-            Flags that specify the basic behavior of the BRB. Valid flag values are listed in the following
+`TransferFlags`
+
+Flags that specify the basic behavior of the BRB. Valid flag values are listed in the following
      table.
      
-
 <table>
 <tr>
 <th>Flag</th>
@@ -125,8 +128,8 @@ If this bit is set, the BRB writes isochronousdata to a remote device through th
 </tr>
 </table>
 
-    ## Remarks
-        To read isochronous data from or write isochronous data to a SCO connection, profile drivers should 
+## Remarks
+To read isochronous data from or write isochronous data to a SCO connection, profile drivers should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536629">BRB_SCO_TRANSFER</a> request.
 
@@ -152,22 +155,16 @@ If both
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a>
-</dt>
-<dt>
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
 <a href="https://social.msdn.microsoft.com/Forums/en-US/0a9a4323-d046-4d27-9d22-4974dbab30a4/windows-bluetooth-sco-brbscoopenchannelresponse?forum=wdk">BRB_SCO_OPEN_CHANNEL_RESPONSE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536629">BRB_SCO_TRANSFER</a>
-</dt>
-</dl>
+
  
 
  

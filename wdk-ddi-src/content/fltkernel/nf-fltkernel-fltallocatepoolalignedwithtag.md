@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ffb1493f-6076-4b93-8431-b3ffd4679f96
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAllocatePoolAlignedWithTag
+ms.keywords : FltAllocatePoolAlignedWithTag function [Installable File System Drivers], FltAllocatePoolAlignedWithTag, fltkernel/FltAllocatePoolAlignedWithTag, FltApiRef_a_to_d_b617aed0-5103-4a1e-aa0d-86247d99e803.xml, ifsk.fltallocatepoolalignedwithtag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltAllocatePoolAlignedWithTag
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -110,20 +114,14 @@ Callers of <b>FltAllocatePoolAlignedWithTag</b> can be running at IRQL DISPATCH_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltfreepoolalignedwithtag.md">FltFreePoolAlignedWithTag</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltfreepoolalignedwithtag.md">FltFreePoolAlignedWithTag</a>
+
  
 
  

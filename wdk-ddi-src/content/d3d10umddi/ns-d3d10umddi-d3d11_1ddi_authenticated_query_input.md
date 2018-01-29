@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f7a4fb53-aa01-4279-a59a-fd92b0ceeab7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_AUTHENTICATED_QUERY_INPUT, D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
+ms.keywords : D3D11_1DDI_AUTHENTICATED_QUERY_INPUT, D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT, display.d3d11_1ddi_authenticated_query_input, D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID, D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS, D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE, D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION, D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION, D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE, D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_INPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID, d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_INPUT, D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
 ---
 
@@ -48,18 +52,18 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 
 ## Members
 
-        
-            `hChannel`
 
-            A handle to the authenticated channel. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.
-        
-            `QueryType`
+`hChannel`
 
-            A GUID that specifies the query. The following GUIDs are defined.
-        
-            `SequenceNumber`
+A handle to the authenticated channel. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a> function.
 
-            The query sequence number. At the start of the session, generate a cryptographically secure 32-bit random number to use as the starting sequence number. For each query, increment the sequence number by 1.
+`QueryType`
+
+A GUID that specifies the query. The following GUIDs are defined.
+
+`SequenceNumber`
+
+The query sequence number. At the start of the session, generate a cryptographically secure 32-bit random number to use as the starting sequence number. For each query, increment the sequence number by 1.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_INPUT {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_queryauthenticatedchannel.md">QueryAuthenticatedChannel(D3D11_1)</a>
-</dt>
-</dl>
+
  
 
  

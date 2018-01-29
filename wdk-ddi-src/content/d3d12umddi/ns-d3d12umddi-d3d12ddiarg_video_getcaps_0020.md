@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3C55B67F-043A-4747-A44A-A162D6391003
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_VIDEO_GETCAPS_0020, D3D12DDIARG_VIDEO_GETCAPS_0020
+ms.keywords : D3D12DDIARG_VIDEO_GETCAPS_0020, display.d3d12ddiarg_video_getcaps, D3D12DDIARG_VIDEO_GETCAPS_0020 structure [Display Devices], d3d12umddi/D3D12DDIARG_VIDEO_GETCAPS_0020
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_VIDEO_GETCAPS_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_VIDEO_GETCAPS_0020
 ---
 
@@ -49,22 +53,22 @@ typedef struct D3D12DDIARG_VIDEO_GETCAPS {
 
 ## Members
 
-        
-            `DataSize`
 
-            The size, in bytes, of the data at <b>pData</b>.
-        
-            `pData`
+`DataSize`
 
-            A pointer to a memory block that contains capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition specified by the <b>pInfo</b> member.
-        
-            `pInfo`
+The size, in bytes, of the data at <b>pData</b>.
 
-            A pointer to a memory block that contains data that specifies the condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
-        
-            `Type`
+`pData`
 
-            A type.
+A pointer to a memory block that contains capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition specified by the <b>pInfo</b> member.
+
+`pInfo`
+
+A pointer to a memory block that contains data that specifies the condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
+
+`Type`
+
+A type.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9D1DA7D6-4200-4B5A-9EA5-0455DF56D6D8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PC_EXIT_LATENCY, PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+ms.keywords : PC_EXIT_LATENCY enumeration [Audio Devices], _PC_EXIT_LATENCY, PC_EXIT_LATENCY, *PPC_EXIT_LATENCY, audio.pc_exit_latency, portcls/PC_EXIT_LATENCY, PcExitLatencyFast, portcls/PcExitLatencyResponsive, portcls/PcExitLatencyInstant, portcls/PcExitLatencyFast, PcExitLatencyInstant, PcExitLatencyResponsive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PC_EXIT_LATENCY
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 

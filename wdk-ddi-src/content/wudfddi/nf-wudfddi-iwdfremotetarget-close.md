@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c24082c4-0c79-4956-8035-79198cb2b7ee
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRemoteTarget, IWDFRemoteTarget::Close, Close
+ms.keywords : IWDFRemoteTarget::Close, IWDFRemoteTarget interface, Close method, UMDFIoTargetObjectRef_1e5aba5f-fd82-4d59-abb6-915e8a49ad22.xml, wdf.iwdfremotetarget_close, Close method, umdf.iwdfremotetarget_close, Close, Close method, IWDFRemoteTarget interface, IWDFRemoteTarget, wudfddi/IWDFRemoteTarget::Close
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFRemoteTarget.Close
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 The <b>Close</b> method always returns S_OK.
 
-The <b>Close</b> method always returns S_OK.
-
-The <b>Close</b> method always returns S_OK.
-
 ## Remarks
 
 If your driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function, the callback function must call <b>Close</b>. 
@@ -68,8 +68,6 @@ The <b>Close</b> method completes or cancels all I/O requests that the driver ha
 After a driver calls <b>Close</b>, the driver cannot send I/O requests to the I/O target. 
 
 For more information about the <b>Close</b> method, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>.
-
-The following code example shows an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function that calls <b>Close</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,14 +83,10 @@ The following code example shows an <a href="https://msdn.microsoft.com/library/
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560259">IWDFRemoteTarget::CloseForQueryRemove</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmMapMdl
+ms.keywords : MmMapMdl function [Kernel-Mode Driver Architecture], wdm/MmMapMdl, kernel.mmmapmdl, MmMapMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmMapMdl
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode)
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -89,11 +93,8 @@ If the callback function pointed to by <i>DriverRoutine</i> was invoked, this fu
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nc-wdm-mm_mdl_routine.md">MM_MDL_ROUTINE</a>
-</dt>
-</dl>
+
  
 
  

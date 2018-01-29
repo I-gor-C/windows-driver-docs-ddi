@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a610f6c5-6627-406e-9b33-f321c6d55a89
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortWriteRegisterBufferUlong
+ms.keywords : storprt_f43e38af-b5f2-4727-990c-dc0cb79bbc09.xml, storage.storportwriteregisterbufferulong, storport/StorPortWriteRegisterBufferUlong, StorPortWriteRegisterBufferUlong, StorPortWriteRegisterBufferUlong routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortWriteRegisterBufferUlong
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -88,11 +92,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportwriteregisterbufferulong.md">StorPortWriteRegisterBufferUlong</a>
-</dt>
-</dl>
+
  
 
  

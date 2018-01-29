@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8d828d7b-2f86-4fe9-864c-9d0ac4b0ed65
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_SETPRIORITY, D3DDDICB_SETPRIORITY
+ms.keywords : d3dumddi/D3DDDICB_SETPRIORITY, D3DDDICB_SETPRIORITY structure [Display Devices], D3D_param_Structs_38d8110c-0d63-4409-9576-ef9892dae2b7.xml, display.d3dddicb_setpriority, D3DDDICB_SETPRIORITY, _D3DDDICB_SETPRIORITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_SETPRIORITY
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_SETPRIORITY
 ---
 
@@ -49,26 +53,26 @@ typedef struct _D3DDDICB_SETPRIORITY {
 
 ## Members
 
-        
-            `HandleList`
 
-            [in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> function returns these handles. Therefore, the user-mode display driver uses these handles to set priority for the allocations.
+`HandleList`
+
+[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. The Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> function returns these handles. Therefore, the user-mode display driver uses these handles to set priority for the allocations.
 
 If the user-mode display driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>HandleList</b> to <b>NULL</b>.
-        
-            `hResource`
 
-            [in] A handle to a resource whose priority must be set. If the user-mode display driver uses the array that is specified by <b>HandleList</b> to set the priority for the list of allocations, it sets <b>hResource</b> to <b>NULL</b>. If the user-mode display driver sets <b>hResource</b> to a non-<b>NULL</b> value, it must set the <b>NumAllocations</b> member to zero and <b>HandleList</b> to <b>NULL</b>. 
+`hResource`
+
+[in] A handle to a resource whose priority must be set. If the user-mode display driver uses the array that is specified by <b>HandleList</b> to set the priority for the list of allocations, it sets <b>hResource</b> to <b>NULL</b>. If the user-mode display driver sets <b>hResource</b> to a non-<b>NULL</b> value, it must set the <b>NumAllocations</b> member to zero and <b>HandleList</b> to <b>NULL</b>. 
 
 If <b>hResource</b> is non-<b>NULL</b>, all of the allocations that belong to the resource are set to the priority that is specified by the first element in the array that <b>pPriorities</b> points to.
-        
-            `NumAllocations`
 
-            [in] The number of allocations in the <b>HandleList</b> array. If the user-mode display driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>NumAllocations</b> to zero.
-        
-            `pPriorities`
+`NumAllocations`
 
-            [in] A pointer to an array of priority levels. If the <b>hResource</b> member is non-<b>NULL</b>, the array must contain a single element. If <b>hResource</b> is <b>NULL</b>, the number of elements in the array is specified by the <b>NumAllocations</b> member, and each allocation in the array that is specified by <b>HandleList</b> is set to the priority level of the corresponding element in <b>pPriorities</b>. For a list of defined priority levels, see the Remarks section of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setprioritycb.md">pfnSetPriorityCb</a> reference page.
+[in] The number of allocations in the <b>HandleList</b> array. If the user-mode display driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>NumAllocations</b> to zero.
+
+`pPriorities`
+
+[in] A pointer to an array of priority levels. If the <b>hResource</b> member is non-<b>NULL</b>, the array must contain a single element. If <b>hResource</b> is <b>NULL</b>, the number of elements in the array is specified by the <b>NumAllocations</b> member, and each allocation in the array that is specified by <b>HandleList</b> is set to the priority level of the corresponding element in <b>pPriorities</b>. For a list of defined priority levels, see the Remarks section of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setprioritycb.md">pfnSetPriorityCb</a> reference page.
 
 
 ## Requirements
@@ -79,16 +83,12 @@ If <b>hResource</b> is non-<b>NULL</b>, all of the allocations that belong to th
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setprioritycb.md">pfnSetPriorityCb</a>
-</dt>
-</dl>
+
  
 
  

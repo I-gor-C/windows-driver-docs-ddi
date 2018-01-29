@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : d96e587e-36e2-475a-a139-040034f8e60b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA
+ms.keywords : powermeter.pmi_measurement_data, PMI_MEASUREMENT_DATA, PPMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA structure [Power Metering and Budgeting Devices], PPMI_MEASUREMENT_DATA structure pointer [Power Metering and Budgeting Devices], PowerMeterRef_6a79b3fc-5943-4ac9-aa02-4584269bb970.xml, _PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA, pmi/PPMI_MEASUREMENT_DATA, pmi/PMI_MEASUREMENT_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PMI_MEASUREMENT_DATA
-req.alt-loc : pmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA
 ---
 
@@ -47,17 +51,17 @@ typedef struct _PMI_MEASUREMENT_DATA {
 
 ## Members
 
-        
-            `CurrentPower`
 
-            A value, in units of milliwatts (mW), that specifies the current power meter measurement.
-        
-            `Version`
+`CurrentPower`
 
-            A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.
+A value, in units of milliwatts (mW), that specifies the current power meter measurement.
 
-    ## Remarks
-        The PMI_MEASUREMENT_DATA structure is returned through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a> I/O control (IOCTL) query request. If the query request completes successfully, the request returns a PMI_MEASUREMENT_DATA structure.
+`Version`
+
+A value that specifies the version of this structure. For Windows 7, Windows Server 2008 R2, and later versions of Windows, this value must be 1.
+
+## Remarks
+The PMI_MEASUREMENT_DATA structure is returned through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a> I/O control (IOCTL) query request. If the query request completes successfully, the request returns a PMI_MEASUREMENT_DATA structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _PMI_MEASUREMENT_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | pmi.h (include Pmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>
-</dt>
-</dl>
+
  
 
  

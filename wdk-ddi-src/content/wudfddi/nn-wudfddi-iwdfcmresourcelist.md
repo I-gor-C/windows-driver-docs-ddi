@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8C03A1A3-1757-4622-9652-0D84DC0AFE59
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.iwdfcmresourcelist, IWDFCmResourceList interface, IWDFCmResourceList interface, described, IWDFCmResourceList, wudfddi/IWDFCmResourceList, umdf.iwdfcmresourcelist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFCmResourceList
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -63,16 +67,12 @@ After a UMDF driver receives a translated resource list in its <a href="https://
 | **Header** | wudfddi.h |
 | **DLL** | WUDFx.dll |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/2361CEA9-A58C-4019-B4F6-BA1D7DEE3A80">Framework Resource-List Object Methods</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
  
 
  

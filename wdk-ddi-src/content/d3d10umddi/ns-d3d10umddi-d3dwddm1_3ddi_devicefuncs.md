@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DE7A88BA-2E59-4E8C-B315-CA6260E3D68E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM1_3DDI_DEVICEFUNCS, D3DWDDM1_3DDI_DEVICEFUNCS
+ms.keywords : D3DWDDM1_3DDI_DEVICEFUNCS, D3D11_1DDI_DEVICEFUNCS structure [Display Devices], D3D11_1DDI_DEVICEFUNCS, display.d3dwddm1_3ddi_devicefuncs, d3d10umddi/D3D11_1DDI_DEVICEFUNCS, D3DWDDM1_3DDI_DEVICEFUNCS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_DEVICEFUNCS
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DWDDM1_3DDI_DEVICEFUNCS
 ---
 
@@ -209,665 +213,673 @@ typedef struct D3D11DDI_DEVICEFUNCS {
 
 ## Members
 
-        
-            `pfnAbandonCommandList`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_abandoncommandlist.md">AbandonCommandList</a> function. The driver is only required to implement <i>AbandonCommandList</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnAssignDebugBinary`
-
-            A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_assigndebugbinary.md">AssignDebugBinary</a> function.
-        
-            `pfnCalcDeferredContextHandleSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcdeferredcontexthandlesize.md">CalcDeferredContextHandleSize</a> function. The driver is only required to implement <i>CalcDeferredContextHandleSize</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnCalcPrivateBlendStateSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivateblendstatesize.md">CalcPrivateBlendStateSize(D3D11_1)</a> function.
-        
-            `pfnCalcPrivateCommandListSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatecommandlistsize.md">CalcPrivateCommandListSize</a> function. The driver is only required to implement <i>CalcPrivateCommandListSize</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnCalcPrivateDeferredContextSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatedeferredcontextsize.md">CalcPrivateDeferredContextSize</a> function. The driver is only required to implement <i>CalcPrivateDeferredContextSize</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnCalcPrivateDepthStencilStateSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedepthstencilstatesize.md">CalcPrivateDepthStencilStateSize</a> function.
-        
-            `pfnCalcPrivateDepthStencilViewSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatedepthstencilviewsize.md">CalcPrivateDepthStencilViewSize(D3D11)</a> function.
-        
-            `pfnCalcPrivateElementLayoutSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateelementlayoutsize.md">CalcPrivateElementLayoutSize</a> function.
-        
-            `pfnCalcPrivateGeometryShaderWithStreamOutput`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivategeometryshaderwithstreamoutput.md">CalcPrivateGeometryShaderWithStreamOutput(D3D11_1)</a> function.
-        
-            `pfnCalcPrivateOpenedResourceSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateopenedresourcesize.md">CalcPrivateOpenedResourceSize</a> function.
-        
-            `pfnCalcPrivateQuerySize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatequerysize.md">CalcPrivateQuerySize</a> function.
-        
-            `pfnCalcPrivateRasterizerStateSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivaterasterizerstatesize.md">CalcPrivateRasterizerStateSize(D3D11_1)</a> function.
-        
-            `pfnCalcPrivateRenderTargetViewSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivaterendertargetviewsize.md">CalcPrivateRenderTargetViewSize</a> function.
-        
-            `pfnCalcPrivateResourceSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateresourcesize.md">CalcPrivateResourceSize(D3D11)</a> function.
-        
-            `pfnCalcPrivateSamplerSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatesamplersize.md">CalcPrivateSamplerSize</a> function.
-        
-            `pfnCalcPrivateShaderResourceViewSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize(D3D11)</a> function.
-        
-            `pfnCalcPrivateShaderSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivateshadersize.md">CalcPrivateShaderSize(D3D11_1)</a> function.
-        
-            `pfnCalcPrivateTessellationShaderSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatetessellationshadersize.md">CalcPrivateTessellationShaderSize(D3D11_1)</a> function.
-        
-            `pfnCalcPrivateUnorderedAccessViewSize`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize.md">CalcPrivateUnorderedAccessViewSize</a> function.
-        
-            `pfnCheckCounter`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounter.md">CheckCounter</a> function.
-        
-            `pfnCheckCounterInfo`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a> function.
-        
-            `pfnCheckDeferredContextHandleSizes`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_checkdeferredcontexthandlesizes.md">CheckDeferredContextHandleSizes</a> function. The driver is only required to implement <i>CheckDeferredContextHandleSizes</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnCheckDirectFlipSupport`
-
-            A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_checkdirectflipsupport.md">CheckDirectFlipSupport(D3D11_1)</a> function.
-        
-            `pfnCheckFormatSupport`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkformatsupport.md">CheckFormatSupport</a> function.
-        
-            `pfnCheckMultisampleQualityLevels`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels</a> function.
-        
-            `pfnClearDepthStencilView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_cleardepthstencilview.md">ClearDepthStencilView</a> function.
-        
-            `pfnClearRenderTargetView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_clearrendertargetview.md">ClearRenderTargetView</a> function.
-        
-            `pfnClearUnorderedAccessViewFloat`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewfloat.md">ClearUnorderedAccessViewFLOAT</a> function.
-        
-            `pfnClearUnorderedAccessViewUint`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewuint.md">ClearUnorderedAccessViewUINT</a> function.
-        
-            `pfnClearView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_clearview.md">ClearView</a>  function.
-        
-            `pfnCommandListExecute`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_commandlistexecute.md">CommandListExecute</a> function. The driver is only required to implement <i>CommandListExecute</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnCopyStructureCount`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_copystructurecount.md">CopyStructureCount</a> function.
-        
-            `pfnCopyTileMappings`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_copytilemappings.md">CopyTileMappings</a>  function.
-        
-            `pfnCopyTiles`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_copytiles.md">CopyTiles</a>  function.
-        
-            `pfnCreateBlendState`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createblendstate.md">CreateBlendState(D3D11_1)</a> function.
-        
-            `pfnCreateCommandList`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createcommandlist.md">CreateCommandList</a> function. The driver is only required to implement <i>CreateCommandList</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnCreateComputeShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createcomputeshader.md">CreateComputeShader</a> function.
-        
-            `pfnCreateDeferredContext`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdeferredcontext.md">CreateDeferredContext</a> function. The driver is only required to implement <i>CreateDeferredContext</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnCreateDepthStencilState`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdepthstencilstate.md">CreateDepthStencilState</a> function.
-        
-            `pfnCreateDepthStencilView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdepthstencilview.md">CreateDepthStencilView(D3D11)</a> function.
-        
-            `pfnCreateDomainShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createdomainshader.md">CreateDomainShader(D3D11_1)</a> function.
-        
-            `pfnCreateElementLayout`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createelementlayout.md">CreateElementLayout</a> function.
-        
-            `pfnCreateGeometryShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_creategeometryshader.md">CreateGeometryShader(D3D11_1)</a> function.
-        
-            `pfnCreateGeometryShaderWithStreamOutput`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_creategeometryshaderwithstreamoutput.md">CreateGeometryShaderWithStreamOutput(D3D11_1)</a> function.
-        
-            `pfnCreateHullShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createhullshader.md">CreateHullShader(D3D11_1)</a> function.
-        
-            `pfnCreatePixelShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createpixelshader.md">CreatePixelShader(D3D11_1)</a> function.
-        
-            `pfnCreateQuery`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a> function.
-        
-            `pfnCreateRasterizerState`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createrasterizerstate.md">CreateRasterizerState(D3D11_1)</a> function.
-        
-            `pfnCreateRenderTargetView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createrendertargetview.md">CreateRenderTargetView</a> function.
-        
-            `pfnCreateResource`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a> function.
-        
-            `pfnCreateSampler`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createsampler.md">CreateSampler</a> function.
-        
-            `pfnCreateShaderResourceView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createshaderresourceview.md">CreateShaderResourceView(D3D11)</a> function.
-        
-            `pfnCreateUnorderedAccessView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a> function.
-        
-            `pfnCreateVertexShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvertexshader.md">CreateVertexShader(D3D11_1)</a> function.
-        
-            `pfnCsSetConstantBuffers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">CsSetConstantBuffers(D3D11_1)</a> function.
-        
-            `pfnCsSetSamplers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">CsSetSamplers</a> function.
-        
-            `pfnCsSetShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">CsSetShader</a> function.
-        
-            `pfnCsSetShaderResources`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">CsSetShaderResources</a> function.
-        
-            `pfnCsSetShaderWithIfaces`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">CsSetShaderWithIfaces</a> function.
-        
-            `pfnCsSetUnorderedAccessViews`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setunorderedaccessviews.md">CsSetUnorderedAccessViews</a> function.
-        
-            `pfnDefaultConstantBufferUpdateSubresourceUP`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourceupdatesubresourceup.md">DefaultConstantBufferUpdateSubresourceUP(D3D11_1)</a> function.
-        
-            `pfnDestroyBlendState`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyblendstate.md">DestroyBlendState</a> function.
-        
-            `pfnDestroyCommandList`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_destroycommandlist.md">DestroyCommandList</a> function. The driver is only required to implement <i>DestroyCommandList</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
-        
-            `pfnDestroyDepthStencilState`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydepthstencilstate.md">DestroyDepthStencilState</a> function.
-        
-            `pfnDestroyDepthStencilView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydepthstencilview.md">DestroyDepthStencilView</a> function.
-        
-            `pfnDestroyDevice`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydevice.md">DestroyDevice(D3D10)</a> function.
-        
-            `pfnDestroyElementLayout`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyelementlayout.md">DestroyElementLayout</a> function.
-        
-            `pfnDestroyQuery`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyquery.md">DestroyQuery(D3D10)</a> function.
-        
-            `pfnDestroyRasterizerState`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyrasterizerstate.md">DestroyRasterizerState</a> function.
-        
-            `pfnDestroyRenderTargetView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyrendertargetview.md">DestroyRenderTargetView</a> function.
-        
-            `pfnDestroyResource`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyresource.md">DestroyResource(D3D10)</a> function.
-        
-            `pfnDestroySampler`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroysampler.md">DestroySampler</a> function.
-        
-            `pfnDestroyShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyshader.md">DestroyShader</a> function.
-        
-            `pfnDestroyShaderResourceView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyshaderresourceview.md">DestroyShaderResourceView</a> function.
-        
-            `pfnDestroyUnorderedAccessView`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_destroyunorderedaccessview.md">DestroyUnorderedAccessView</a> function.
-        
-            `pfnDiscard`
-
-            A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_discard.md">Discard(D3D11_1)</a> function.
-        
-            `pfnDispatch`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_dispatch.md">Dispatch</a> function.
-        
-            `pfnDispatchIndirect`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_dispatchindirect.md">DispatchIndirect</a> function.
-        
-            `pfnDraw`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_draw.md">Draw</a> function.
-        
-            `pfnDrawAuto`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawauto.md">DrawAuto</a> function.
-        
-            `pfnDrawIndexed`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawindexed.md">DrawIndexed</a> function.
-        
-            `pfnDrawIndexedInstanced`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawindexedinstanced.md">DrawIndexedInstanced</a> function.
-        
-            `pfnDrawIndexedInstancedIndirect`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawindexedinstancedindirect.md">DrawIndexedInstancedIndirect</a> function.
-        
-            `pfnDrawInstanced`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawinstanced.md">DrawInstanced</a> function.
-        
-            `pfnDrawInstancedIndirect`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawinstancedindirect.md">DrawInstancedIndirect</a> function.
-        
-            `pfnDsSetConstantBuffers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">DsSetConstantBuffers(D3D11_1)</a> function.
-        
-            `pfnDsSetSamplers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">DsSetSamplers</a> function.
-        
-            `pfnDsSetShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">DsSetShader</a> function.
-        
-            `pfnDsSetShaderResources`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">DsSetShaderResources</a> function.
-        
-            `pfnDsSetShaderWithIfaces`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">DsSetShaderWithIfaces</a> function.
-        
-            `pfnDynamicConstantBufferMapDiscard`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicConstantBufferMapDiscard</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
-        
-            `pfnDynamicConstantBufferMapNoOverwrite`
-
-            A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function.
-        
-            `pfnDynamicConstantBufferUnmap`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>DynamicConstantBufferUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
-        
-            `pfnDynamicIABufferMapDiscard`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicIABufferMapDiscard</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
-        
-            `pfnDynamicIABufferMapNoOverwrite`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicIABufferMapNoOverwrite</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
-        
-            `pfnDynamicIABufferUnmap`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>DynamicIABufferUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
-        
-            `pfnDynamicResourceMapDiscard`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicResourceMapDiscard</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
-        
-            `pfnDynamicResourceUnmap`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>DynamicResourceUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
-        
-            `pfnFlush`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_flush.md">Flush(D3D11_1)</a> function.
-        
-            `pfnGenMips`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_genmips.md">GenMips</a> function.
-        
-            `pfnGetMipPacking`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_getmippacking.md">GetMipPacking</a>  function.
-        
-            `pfnGsSetConstantBuffers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">GsSetConstantBuffers(D3D11_1)</a> function.
-        
-            `pfnGsSetSamplers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">GsSetSamplers</a> function.
-        
-            `pfnGsSetShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">GsSetShader</a> function.
-        
-            `pfnGsSetShaderResources`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">GsSetShaderResources</a> function.
-        
-            `pfnGsSetShaderWithIfaces`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">GsSetShaderWithIfaces</a> function.
-        
-            `pfnHsSetConstantBuffers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">HsSetConstantBuffers(D3D11_1)</a> function.
-        
-            `pfnHsSetSamplers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">HsSetSamplers</a> function.
-        
-            `pfnHsSetShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">HsSetShader</a> function.
-        
-            `pfnHsSetShaderResources`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">HsSetShaderResources</a> function.
-        
-            `pfnHsSetShaderWithIfaces`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">HsSetShaderWithIfaces</a> function.
-        
-            `pfnIaSetIndexBuffer`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setindexbuffer.md">IaSetIndexBuffer</a> function.
-        
-            `pfnIaSetInputLayout`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setinputlayout.md">IaSetInputLayout</a> function.
-        
-            `pfnIaSetTopology`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_settopology.md">IaSetTopology</a> function.
-        
-            `pfnIaSetVertexBuffers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setvertexbuffers.md">IaSetVertexBuffers</a> function.
-        
-            `pfnOpenResource`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_openresource.md">OpenResource(D3D10)</a> function.
-        
-            `pfnPsSetConstantBuffers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">PsSetConstantBuffers(D3D11_1)</a> function.
-        
-            `pfnPsSetSamplers`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">PsSetSamplers</a> function.
-        
-            `pfnPsSetShader`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">PsSetShader</a> function.
-        
-            `pfnPsSetShaderResources`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">PsSetShaderResources</a> function.
-        
-            `pfnPsSetShaderWithIfaces`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">PsSetShaderWithIfaces</a> function.
-        
-            `pfnQueryBegin`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querybegin.md">QueryBegin</a> function.
-        
-            `pfnQueryEnd`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_queryend.md">QueryEnd</a> function.
-        
-            `pfnQueryGetData`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querygetdata.md">QueryGetData</a> function.
-        
-            `pfnRecycleCommandList`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_recyclecommandlist.md">RecycleCommandList</a> function.
-        
-            `pfnRecycleCreateCommandList`
-
-            A pointer to the driver's   <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_recyclecreatecommandlist.md">RecycleCreateCommandList</a> function.
-        
-            `pfnRecycleCreateDeferredContext`
-
-            A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_recyclecreatedeferredcontext.md">RecycleCreateDeferredContext</a> function.
-        
-            `pfnRecycleDestroyCommandList`
-
-            A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_destroycommandlist.md">RecycleDestroyCommandList</a> function.
-        
-            `pfnRelocateDeviceFuncs`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_relocatedevicefuncs.md">RelocateDeviceFuncs(D3D11_1)</a> function.
-        
-            `pfnResizeTilePool`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_resizetilepool.md">ResizeTilePool</a>  function.
-        
-            `pfnResourceConvert`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcecopy.md">ResourceCopy</a> function. For more information about whether to implement a separate <i>ResourceConvert</i> function or to point to the multipurpose <i>ResourceCopy</i>, see the Remarks section of <i>ResourceCopy</i>.
-        
-            `pfnResourceConvertRegion`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourcecopyregion.md">ResourceCopyRegion(D3D11_1)</a> function. For more information about whether to implement a separate <i>ResourceConvertRegion(D3D11_1)</i> function or to point to the multipurpose <i>ResourceCopyRegion(D3D11_1)</i>, see the Remarks section of <i>ResourceCopyRegion(D3D11_1)</i>.
-        
-            `pfnResourceCopy`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcecopy.md">ResourceCopy</a> function.
-        
-            `pfnResourceCopyRegion`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourcecopyregion.md">ResourceCopyRegion(D3D11_1)</a> function.
-        
-            `pfnResourceIsStagingBusy`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceisstagingbusy.md">ResourceIsStagingBusy</a> function.
-        
-            `pfnResourceMap`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function.
-        
-            `pfnResourceReadAfterWriteHazard`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcereadafterwritehazard.md">ResourceReadAfterWriteHazard</a> function.
-        
-            `pfnResourceResolveSubresource`
-
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceresolvesubresource.md">ResourceResolveSubresource</a> function.
-        
-            `pfnResourceUnmap`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function.
-        
-            `pfnResourceUpdateSubresourceUP`
+`pfnAbandonCommandList`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP(D3D11_1)</a> function.
-        
-            `pfnSetBlendState`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_abandoncommandlist.md">AbandonCommandList</a> function. The driver is only required to implement <i>AbandonCommandList</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setblendstate.md">SetBlendState</a> function.
-        
-            `pfnSetDepthStencilState`
+`pfnAssignDebugBinary`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setdepthstencilstate.md">SetDepthStencilState</a> function.
-        
-            `pfnSetMarker`
+A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_assigndebugbinary.md">AssignDebugBinary</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarker.md">SetMarker</a>  function.
-        
-            `pfnSetMarkerMode`
+`pfnCalcDeferredContextHandleSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarkermode.md">SetMarkerMode</a>  function.
-        
-            `pfnSetPredication`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcdeferredcontexthandlesize.md">CalcDeferredContextHandleSize</a> function. The driver is only required to implement <i>CalcDeferredContextHandleSize</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setpredication.md">SetPredication</a> function.
-        
-            `pfnSetRasterizerState`
+`pfnCalcPrivateBlendStateSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setrasterizerstate.md">SetRasterizerState</a> function.
-        
-            `pfnSetRenderTargets`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivateblendstatesize.md">CalcPrivateBlendStateSize(D3D11_1)</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setrendertargets.md">SetRenderTargets(D3D11)</a> function.
-        
-            `pfnSetResourceMinLOD`
+`pfnCalcPrivateCommandListSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setresourceminlod.md">SetResourceMinLOD</a> function.
-        
-            `pfnSetScissorRects`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatecommandlistsize.md">CalcPrivateCommandListSize</a> function. The driver is only required to implement <i>CalcPrivateCommandListSize</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setscissorrects.md">SetScissorRects</a> function.
-        
-            `pfnSetTextFilterSize`
+`pfnCalcPrivateDeferredContextSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_settextfiltersize.md">SetTextFilterSize</a> function.
-        
-            `pfnSetViewports`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatedeferredcontextsize.md">CalcPrivateDeferredContextSize</a> function. The driver is only required to implement <i>CalcPrivateDeferredContextSize</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setviewports.md">SetViewports</a> function.
-        
-            `pfnShaderResourceViewReadAfterWriteHazard`
+`pfnCalcPrivateDepthStencilStateSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_shaderresourceviewreadafterwritehazard.md">ShaderResourceViewReadAfterWriteHazard</a> function.
-        
-            `pfnSoSetTargets`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedepthstencilstatesize.md">CalcPrivateDepthStencilStateSize</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_so_settargets.md">SoSetTargets</a> function.
-        
-            `pfnStagingResourceMap`
+`pfnCalcPrivateDepthStencilViewSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>StagingResourceMap</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
-        
-            `pfnStagingResourceUnmap`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatedepthstencilviewsize.md">CalcPrivateDepthStencilViewSize(D3D11)</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>StagingResourceUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
-        
-            `pfnTiledResourceBarrier`
+`pfnCalcPrivateElementLayoutSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_tiledresourcebarrier.md">TiledResourceBarrier</a>  function.
-        
-            `pfnUpdateTileMappings`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateelementlayoutsize.md">CalcPrivateElementLayoutSize</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_updatetilemappings.md">UpdateTileMappings</a>  function.
-        
-            `pfnUpdateTiles`
+`pfnCalcPrivateGeometryShaderWithStreamOutput`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_updatetiles.md">UpdateTiles</a>  function.
-        
-            `pfnVsSetConstantBuffers`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivategeometryshaderwithstreamoutput.md">CalcPrivateGeometryShaderWithStreamOutput(D3D11_1)</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">VsSetConstantBuffers(D3D11_1)</a> function.
-        
-            `pfnVsSetSamplers`
+`pfnCalcPrivateOpenedResourceSize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">VsSetSamplers</a> function.
-        
-            `pfnVsSetShader`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateopenedresourcesize.md">CalcPrivateOpenedResourceSize</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">VsSetShader</a> function.
-        
-            `pfnVsSetShaderResources`
+`pfnCalcPrivateQuerySize`
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">VsSetShaderResources</a> function.
-        
-            `pfnVsSetShaderWithIfaces`
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatequerysize.md">CalcPrivateQuerySize</a> function.
 
-            A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">VsSetShaderWithIfaces</a> function.
+`pfnCalcPrivateRasterizerStateSize`
 
-    ## Remarks
-        The order of user-mode display driver functions (that is, the order of the members of the <b>D3DWDDM1_3DDI_DEVICEFUNCS</b> structure) is in decreasing order of priority (in regard to performance).
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivaterasterizerstatesize.md">CalcPrivateRasterizerStateSize(D3D11_1)</a> function.
+
+`pfnCalcPrivateRenderTargetViewSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivaterendertargetviewsize.md">CalcPrivateRenderTargetViewSize</a> function.
+
+`pfnCalcPrivateResourceSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateresourcesize.md">CalcPrivateResourceSize(D3D11)</a> function.
+
+`pfnCalcPrivateSamplerSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatesamplersize.md">CalcPrivateSamplerSize</a> function.
+
+`pfnCalcPrivateShaderResourceViewSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize(D3D11)</a> function.
+
+`pfnCalcPrivateShaderSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivateshadersize.md">CalcPrivateShaderSize(D3D11_1)</a> function.
+
+`pfnCalcPrivateTessellationShaderSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatetessellationshadersize.md">CalcPrivateTessellationShaderSize(D3D11_1)</a> function.
+
+`pfnCalcPrivateUnorderedAccessViewSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize.md">CalcPrivateUnorderedAccessViewSize</a> function.
+
+`pfnCheckCounter`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounter.md">CheckCounter</a> function.
+
+`pfnCheckCounterInfo`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a> function.
+
+`pfnCheckDeferredContextHandleSizes`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_checkdeferredcontexthandlesizes.md">CheckDeferredContextHandleSizes</a> function. The driver is only required to implement <i>CheckDeferredContextHandleSizes</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
+
+`pfnCheckDirectFlipSupport`
+
+A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_checkdirectflipsupport.md">CheckDirectFlipSupport(D3D11_1)</a> function.
+
+`pfnCheckFormatSupport`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkformatsupport.md">CheckFormatSupport</a> function.
+
+`pfnCheckMultisampleQualityLevels`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels</a> function.
+
+`pfnClearDepthStencilView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_cleardepthstencilview.md">ClearDepthStencilView</a> function.
+
+`pfnClearRenderTargetView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_clearrendertargetview.md">ClearRenderTargetView</a> function.
+
+`pfnClearUnorderedAccessViewFloat`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewfloat.md">ClearUnorderedAccessViewFLOAT</a> function.
+
+`pfnClearUnorderedAccessViewUint`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_clearunorderedaccessviewuint.md">ClearUnorderedAccessViewUINT</a> function.
+
+`pfnClearView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_clearview.md">ClearView</a>  function.
+
+`pfnCommandListExecute`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_commandlistexecute.md">CommandListExecute</a> function. The driver is only required to implement <i>CommandListExecute</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
+
+`pfnCopyStructureCount`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_copystructurecount.md">CopyStructureCount</a> function.
+
+`pfnCopyTileMappings`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_copytilemappings.md">CopyTileMappings</a>  function.
+
+`pfnCopyTiles`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_copytiles.md">CopyTiles</a>  function.
+
+`pfnCreateBlendState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createblendstate.md">CreateBlendState(D3D11_1)</a> function.
+
+`pfnCreateCommandList`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createcommandlist.md">CreateCommandList</a> function. The driver is only required to implement <i>CreateCommandList</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
+
+`pfnCreateComputeShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createcomputeshader.md">CreateComputeShader</a> function.
+
+`pfnCreateDeferredContext`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdeferredcontext.md">CreateDeferredContext</a> function. The driver is only required to implement <i>CreateDeferredContext</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
+
+`pfnCreateDepthStencilState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdepthstencilstate.md">CreateDepthStencilState</a> function.
+
+`pfnCreateDepthStencilView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdepthstencilview.md">CreateDepthStencilView(D3D11)</a> function.
+
+`pfnCreateDomainShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createdomainshader.md">CreateDomainShader(D3D11_1)</a> function.
+
+`pfnCreateElementLayout`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createelementlayout.md">CreateElementLayout</a> function.
+
+`pfnCreateGeometryShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_creategeometryshader.md">CreateGeometryShader(D3D11_1)</a> function.
+
+`pfnCreateGeometryShaderWithStreamOutput`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_creategeometryshaderwithstreamoutput.md">CreateGeometryShaderWithStreamOutput(D3D11_1)</a> function.
+
+`pfnCreateHullShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createhullshader.md">CreateHullShader(D3D11_1)</a> function.
+
+`pfnCreatePixelShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createpixelshader.md">CreatePixelShader(D3D11_1)</a> function.
+
+`pfnCreateQuery`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a> function.
+
+`pfnCreateRasterizerState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createrasterizerstate.md">CreateRasterizerState(D3D11_1)</a> function.
+
+`pfnCreateRenderTargetView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createrendertargetview.md">CreateRenderTargetView</a> function.
+
+`pfnCreateResource`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a> function.
+
+`pfnCreateSampler`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createsampler.md">CreateSampler</a> function.
+
+`pfnCreateShaderResourceView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createshaderresourceview.md">CreateShaderResourceView(D3D11)</a> function.
+
+`pfnCreateUnorderedAccessView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a> function.
+
+`pfnCreateVertexShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvertexshader.md">CreateVertexShader(D3D11_1)</a> function.
+
+`pfnCsSetConstantBuffers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">CsSetConstantBuffers(D3D11_1)</a> function.
+
+`pfnCsSetSamplers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">CsSetSamplers</a> function.
+
+`pfnCsSetShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">CsSetShader</a> function.
+
+`pfnCsSetShaderResources`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">CsSetShaderResources</a> function.
+
+`pfnCsSetShaderWithIfaces`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">CsSetShaderWithIfaces</a> function.
+
+`pfnCsSetUnorderedAccessViews`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setunorderedaccessviews.md">CsSetUnorderedAccessViews</a> function.
+
+`pfnDefaultConstantBufferUpdateSubresourceUP`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourceupdatesubresourceup.md">DefaultConstantBufferUpdateSubresourceUP(D3D11_1)</a> function.
+
+`pfnDestroyBlendState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyblendstate.md">DestroyBlendState</a> function.
+
+`pfnDestroyCommandList`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_destroycommandlist.md">DestroyCommandList</a> function. The driver is only required to implement <i>DestroyCommandList</i> if the driver supports the D3D11DDICAPS_COMMANDLISTS_BUILD_2 capability.
+
+`pfnDestroyDepthStencilState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydepthstencilstate.md">DestroyDepthStencilState</a> function.
+
+`pfnDestroyDepthStencilView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydepthstencilview.md">DestroyDepthStencilView</a> function.
+
+`pfnDestroyDevice`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroydevice.md">DestroyDevice(D3D10)</a> function.
+
+`pfnDestroyElementLayout`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyelementlayout.md">DestroyElementLayout</a> function.
+
+`pfnDestroyQuery`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyquery.md">DestroyQuery(D3D10)</a> function.
+
+`pfnDestroyRasterizerState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyrasterizerstate.md">DestroyRasterizerState</a> function.
+
+`pfnDestroyRenderTargetView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyrendertargetview.md">DestroyRenderTargetView</a> function.
+
+`pfnDestroyResource`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyresource.md">DestroyResource(D3D10)</a> function.
+
+`pfnDestroySampler`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroysampler.md">DestroySampler</a> function.
+
+`pfnDestroyShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyshader.md">DestroyShader</a> function.
+
+`pfnDestroyShaderResourceView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyshaderresourceview.md">DestroyShaderResourceView</a> function.
+
+`pfnDestroyUnorderedAccessView`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_destroyunorderedaccessview.md">DestroyUnorderedAccessView</a> function.
+
+`pfnDiscard`
+
+A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_discard.md">Discard(D3D11_1)</a> function.
+
+`pfnDispatch`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_dispatch.md">Dispatch</a> function.
+
+`pfnDispatchIndirect`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_dispatchindirect.md">DispatchIndirect</a> function.
+
+`pfnDraw`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_draw.md">Draw</a> function.
+
+`pfnDrawAuto`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawauto.md">DrawAuto</a> function.
+
+`pfnDrawIndexed`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawindexed.md">DrawIndexed</a> function.
+
+`pfnDrawIndexedInstanced`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawindexedinstanced.md">DrawIndexedInstanced</a> function.
+
+`pfnDrawIndexedInstancedIndirect`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawindexedinstancedindirect.md">DrawIndexedInstancedIndirect</a> function.
+
+`pfnDrawInstanced`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_drawinstanced.md">DrawInstanced</a> function.
+
+`pfnDrawInstancedIndirect`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawinstancedindirect.md">DrawInstancedIndirect</a> function.
+
+`pfnDsSetConstantBuffers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">DsSetConstantBuffers(D3D11_1)</a> function.
+
+`pfnDsSetSamplers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">DsSetSamplers</a> function.
+
+`pfnDsSetShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">DsSetShader</a> function.
+
+`pfnDsSetShaderResources`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">DsSetShaderResources</a> function.
+
+`pfnDsSetShaderWithIfaces`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">DsSetShaderWithIfaces</a> function.
+
+`pfnDynamicConstantBufferMapDiscard`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicConstantBufferMapDiscard</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
+
+`pfnDynamicConstantBufferMapNoOverwrite`
+
+A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function.
+
+`pfnDynamicConstantBufferUnmap`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>DynamicConstantBufferUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
+
+`pfnDynamicIABufferMapDiscard`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicIABufferMapDiscard</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
+
+`pfnDynamicIABufferMapNoOverwrite`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicIABufferMapNoOverwrite</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
+
+`pfnDynamicIABufferUnmap`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>DynamicIABufferUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
+
+`pfnDynamicResourceMapDiscard`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>DynamicResourceMapDiscard</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
+
+`pfnDynamicResourceUnmap`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>DynamicResourceUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
+
+`pfnFlush`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_flush.md">Flush(D3D11_1)</a> function.
+
+`pfnGenMips`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_genmips.md">GenMips</a> function.
+
+`pfnGetMipPacking`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_getmippacking.md">GetMipPacking</a>  function.
+
+`pfnGsSetConstantBuffers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">GsSetConstantBuffers(D3D11_1)</a> function.
+
+`pfnGsSetSamplers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">GsSetSamplers</a> function.
+
+`pfnGsSetShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">GsSetShader</a> function.
+
+`pfnGsSetShaderResources`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">GsSetShaderResources</a> function.
+
+`pfnGsSetShaderWithIfaces`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">GsSetShaderWithIfaces</a> function.
+
+`pfnHsSetConstantBuffers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">HsSetConstantBuffers(D3D11_1)</a> function.
+
+`pfnHsSetSamplers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">HsSetSamplers</a> function.
+
+`pfnHsSetShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">HsSetShader</a> function.
+
+`pfnHsSetShaderResources`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">HsSetShaderResources</a> function.
+
+`pfnHsSetShaderWithIfaces`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">HsSetShaderWithIfaces</a> function.
+
+`pfnIaSetIndexBuffer`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setindexbuffer.md">IaSetIndexBuffer</a> function.
+
+`pfnIaSetInputLayout`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setinputlayout.md">IaSetInputLayout</a> function.
+
+`pfnIaSetTopology`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_settopology.md">IaSetTopology</a> function.
+
+`pfnIaSetVertexBuffers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setvertexbuffers.md">IaSetVertexBuffers</a> function.
+
+`pfnOpenResource`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_openresource.md">OpenResource(D3D10)</a> function.
+
+`pfnPsSetConstantBuffers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">PsSetConstantBuffers(D3D11_1)</a> function.
+
+`pfnPsSetSamplers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">PsSetSamplers</a> function.
+
+`pfnPsSetShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">PsSetShader</a> function.
+
+`pfnPsSetShaderResources`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">PsSetShaderResources</a> function.
+
+`pfnPsSetShaderWithIfaces`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">PsSetShaderWithIfaces</a> function.
+
+`pfnQueryBegin`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querybegin.md">QueryBegin</a> function.
+
+`pfnQueryEnd`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_queryend.md">QueryEnd</a> function.
+
+`pfnQueryGetData`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querygetdata.md">QueryGetData</a> function.
+
+`pfnRecycleCommandList`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_recyclecommandlist.md">RecycleCommandList</a> function.
+
+`pfnRecycleCreateCommandList`
+
+A pointer to the driver's   <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_recyclecreatecommandlist.md">RecycleCreateCommandList</a> function.
+
+`pfnRecycleCreateDeferredContext`
+
+A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_recyclecreatedeferredcontext.md">RecycleCreateDeferredContext</a> function.
+
+`pfnRecycleDestroyCommandList`
+
+A pointer to the driver's  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_destroycommandlist.md">RecycleDestroyCommandList</a> function.
+
+`pfnRelocateDeviceFuncs`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_relocatedevicefuncs.md">RelocateDeviceFuncs(D3D11_1)</a> function.
+
+`pfnResetPrimitiveID`
+
+
+
+`pfnResizeTilePool`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_resizetilepool.md">ResizeTilePool</a>  function.
+
+`pfnResourceConvert`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcecopy.md">ResourceCopy</a> function. For more information about whether to implement a separate <i>ResourceConvert</i> function or to point to the multipurpose <i>ResourceCopy</i>, see the Remarks section of <i>ResourceCopy</i>.
+
+`pfnResourceConvertRegion`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourcecopyregion.md">ResourceCopyRegion(D3D11_1)</a> function. For more information about whether to implement a separate <i>ResourceConvertRegion(D3D11_1)</i> function or to point to the multipurpose <i>ResourceCopyRegion(D3D11_1)</i>, see the Remarks section of <i>ResourceCopyRegion(D3D11_1)</i>.
+
+`pfnResourceCopy`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcecopy.md">ResourceCopy</a> function.
+
+`pfnResourceCopyRegion`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourcecopyregion.md">ResourceCopyRegion(D3D11_1)</a> function.
+
+`pfnResourceIsStagingBusy`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceisstagingbusy.md">ResourceIsStagingBusy</a> function.
+
+`pfnResourceMap`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function.
+
+`pfnResourceReadAfterWriteHazard`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcereadafterwritehazard.md">ResourceReadAfterWriteHazard</a> function.
+
+`pfnResourceResolveSubresource`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceresolvesubresource.md">ResourceResolveSubresource</a> function.
+
+`pfnResourceUnmap`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function.
+
+`pfnResourceUpdateSubresourceUP`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_resourceupdatesubresourceup.md">ResourceUpdateSubresourceUP(D3D11_1)</a> function.
+
+`pfnSetBlendState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setblendstate.md">SetBlendState</a> function.
+
+`pfnSetDepthStencilState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setdepthstencilstate.md">SetDepthStencilState</a> function.
+
+`pfnSetMarker`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarker.md">SetMarker</a>  function.
+
+`pfnSetMarkerMode`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarkermode.md">SetMarkerMode</a>  function.
+
+`pfnSetPredication`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setpredication.md">SetPredication</a> function.
+
+`pfnSetRasterizerState`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setrasterizerstate.md">SetRasterizerState</a> function.
+
+`pfnSetRenderTargets`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setrendertargets.md">SetRenderTargets(D3D11)</a> function.
+
+`pfnSetResourceMinLOD`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setresourceminlod.md">SetResourceMinLOD</a> function.
+
+`pfnSetScissorRects`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setscissorrects.md">SetScissorRects</a> function.
+
+`pfnSetTextFilterSize`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_settextfiltersize.md">SetTextFilterSize</a> function.
+
+`pfnSetVertexPipelineOutput`
+
+
+
+`pfnSetViewports`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setviewports.md">SetViewports</a> function.
+
+`pfnShaderResourceViewReadAfterWriteHazard`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_shaderresourceviewreadafterwritehazard.md">ShaderResourceViewReadAfterWriteHazard</a> function.
+
+`pfnSoSetTargets`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_so_settargets.md">SoSetTargets</a> function.
+
+`pfnStagingResourceMap`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function. For more information about whether to implement a separate <i>StagingResourceMap</i> function or to point to the multipurpose <i>ResourceMap</i>, see the Remarks section of <i>ResourceMap</i>.
+
+`pfnStagingResourceUnmap`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> function. For more information about whether to implement a separate <i>StagingResourceUnmap</i> function or to point to the multipurpose <i>ResourceUnmap</i>, see the Remarks section of <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>.
+
+`pfnTiledResourceBarrier`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_tiledresourcebarrier.md">TiledResourceBarrier</a>  function.
+
+`pfnUpdateTileMappings`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_updatetilemappings.md">UpdateTileMappings</a>  function.
+
+`pfnUpdateTiles`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_updatetiles.md">UpdateTiles</a>  function.
+
+`pfnVsSetConstantBuffers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers.md">VsSetConstantBuffers(D3D11_1)</a> function.
+
+`pfnVsSetSamplers`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setsamplers.md">VsSetSamplers</a> function.
+
+`pfnVsSetShader`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshader.md">VsSetShader</a> function.
+
+`pfnVsSetShaderResources`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">VsSetShaderResources</a> function.
+
+`pfnVsSetShaderWithIfaces`
+
+A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">VsSetShaderWithIfaces</a> function.
+
+## Remarks
+The order of user-mode display driver functions (that is, the order of the members of the <b>D3DWDDM1_3DDI_DEVICEFUNCS</b> structure) is in decreasing order of priority (in regard to performance).
 
 The user-mode display driver can use different names for these functions because the address of the function table (this structure) is shared between the Direct3D 11.2 runtime and the driver through the call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function.
 
@@ -881,22 +893,16 @@ The <b>pfnResetPrimitiveID</b> and  <b>pfnSetVertexPipelineOutput</b> members (n
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_devicefuncs.md">D3D11_1DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_relocatedevicefuncs.md">RelocateDeviceFuncs(D3D11_2)</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_devicefuncs.md">D3D11_1DDI_DEVICEFUNCS</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
+
  
 
  

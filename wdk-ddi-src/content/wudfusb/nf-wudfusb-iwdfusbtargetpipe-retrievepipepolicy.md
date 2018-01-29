@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 578f7633-307e-4cda-b8fe-ae73a095976f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe::RetrievePipePolicy, RetrievePipePolicy
+ms.keywords : UMDFUSBref_97c7b2db-213f-4cdd-8901-547af39b087e.xml, RetrievePipePolicy method, wudfusb/IWDFUsbTargetPipe::RetrievePipePolicy, RetrievePipePolicy method, IWDFUsbTargetPipe interface, RetrievePipePolicy, wdf.iwdfusbtargetpipe_retrievepipepolicy, IWDFUsbTargetPipe interface, RetrievePipePolicy method, IWDFUsbTargetPipe, IWDFUsbTargetPipe::RetrievePipePolicy, umdf.iwdfusbtargetpipe_retrievepipepolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbTargetPipe.RetrievePipePolicy
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -69,17 +73,47 @@ A pointer that receives the buffer that contains the WinUsb pipe policy.
 ## Return Value
 
 <b>RetrievePipePolicy</b> returns one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/578f7633-307e-4cda-b8fe-ae73a095976f">RetrievePipePolicy</a> successfully retrieved the WinUsb pipe policy. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/578f7633-307e-4cda-b8fe-ae73a095976f">RetrievePipePolicy</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</dl>
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,17 +139,12 @@ The <b>RetrievePipePolicy</b> method generates a UMDF request and synchronously 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540266">WinUsb_GetPipePolicy</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560421">IWDFUsbTargetPipe::SetPipePolicy</a>
-</dt>
-</dl>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
+
  
 
  

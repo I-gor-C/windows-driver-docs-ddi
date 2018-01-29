@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a385283a-7b24-43aa-b291-541bfd6a91a6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities
+ms.keywords : _MSiSCSI_SecurityCapabilities, storage.msiscsi_securitycapabilities, iscsicfg/MSiSCSI_SecurityCapabilities, PMSiSCSI_SecurityCapabilities structure pointer [Storage Devices], iscsicfg/PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities structure [Storage Devices], PMSiSCSI_SecurityCapabilities, structs-iSCSI_0e8b2bb9-69df-4d36-8002-ac32177b724a.xml, MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_SecurityCapabilities
-req.alt-loc : iscsicfg.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities
 ---
 
@@ -50,29 +54,29 @@ typedef struct _MSiSCSI_SecurityCapabilities {
 
 ## Members
 
-        
-            `CertificatesSupported`
 
-            A Boolean value that indicates whether the initiator supports certificates. If this member is <b>TRUE</b>, the initiator supports certificates. If this member is <b>FALSE</b>, the initiatiator does not support certificates.
-        
-            `EncryptionAvailable`
+`CertificatesSupported`
 
-            A variable length array of <a href="..\iscsicfg\ne-iscsicfg-piscsi_encryption_types.md">ISCSI_ENCRYPTION_TYPES</a> structures, which indicate types of encryption that the initiator supports.
-        
-            `EncryptionAvailableCount`
+A Boolean value that indicates whether the initiator supports certificates. If this member is <b>TRUE</b>, the initiator supports certificates. If this member is <b>FALSE</b>, the initiatiator does not support certificates.
 
-            The number of encryption types that the initiator supports.
-        
-            `ProtectiScsiTraffic`
+`EncryptionAvailable`
 
-            A Boolean value that indicates whether the initiator can use IPsec to protect iSCSI traffic. If this member is <b>TRUE</b>, the initiator can use IPsec to protect iSCSI traffic. If <b>FALSE</b>, the initiator cannot use IPsec.
-        
-            `ProtectiSNSTraffic`
+A variable length array of <a href="..\iscsicfg\ne-iscsicfg-piscsi_encryption_types.md">ISCSI_ENCRYPTION_TYPES</a> structures, which indicate types of encryption that the initiator supports.
 
-            A Boolean value that indicates whether the initiator can use IPsec to protect iSNS traffic. If this member is <b>TRUE</b>, the initiator can use IPsec to protect iSNS traffic. If <b>FALSE</b>, the initiator cannot use IPsec.
+`EncryptionAvailableCount`
 
-    ## Remarks
-        The WMI tool suite automatically generates a declaration of the MSiSCSI_SecurityCapabilities structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a> in <i>Config.mof</i>. 
+The number of encryption types that the initiator supports.
+
+`ProtectiScsiTraffic`
+
+A Boolean value that indicates whether the initiator can use IPsec to protect iSCSI traffic. If this member is <b>TRUE</b>, the initiator can use IPsec to protect iSCSI traffic. If <b>FALSE</b>, the initiator cannot use IPsec.
+
+`ProtectiSNSTraffic`
+
+A Boolean value that indicates whether the initiator can use IPsec to protect iSNS traffic. If this member is <b>TRUE</b>, the initiator can use IPsec to protect iSNS traffic. If <b>FALSE</b>, the initiator cannot use IPsec.
+
+## Remarks
+The WMI tool suite automatically generates a declaration of the MSiSCSI_SecurityCapabilities structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a> in <i>Config.mof</i>. 
 
 Initiators that support IPsec must implement the MSiSCSI_SecurityCapabilities class. 
 
@@ -86,16 +90,12 @@ Initiators must register the MSiSCSI_SecurityCapabilities class using the name o
 | **Minimum UMDF version** |  |
 | **Header** | iscsicfg.h (include Iscsicfg.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\iscsicfg\ne-iscsicfg-piscsi_encryption_types.md">ISCSI_ENCRYPTION_TYPES</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
-</dt>
-</dl>
+
+<a href="..\iscsicfg\ne-iscsicfg-piscsi_encryption_types.md">ISCSI_ENCRYPTION_TYPES</a>
+
  
 
  

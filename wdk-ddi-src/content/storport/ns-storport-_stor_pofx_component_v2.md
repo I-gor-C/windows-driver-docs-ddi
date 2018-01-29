@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2FF6B375-C213-48AC-9497-6CE3F1170BAA
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_POFX_COMPONENT_V2, STOR_POFX_COMPONENT_V2, *PSTOR_POFX_COMPONENT_V2
+ms.keywords : "*PSTOR_POFX_COMPONENT_V2, storage.stor_pofx_component_v2, _STOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2 structure pointer [Storage Devices], storport/PSTOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2, STOR_POFX_COMPONENT_V2, storport/STOR_POFX_COMPONENT, STOR_POFX_COMPONENT_V2 structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_POFX_COMPONENT_V2
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_POFX_COMPONENT_V2, *PSTOR_POFX_COMPONENT_V2
 req.product : Windows 10 or later.
 ---
@@ -54,37 +58,41 @@ typedef struct _STOR_POFX_COMPONENT_V2 {
 
 ## Members
 
-        
-            `DeepestAdapterPowerRequiredFState`
 
-            The deepest F-State that this component can be in where the adapter still requires power. This is only relevant for components whose ID is STOR_POFX_LUN_GUID
-        
-            `DeepestCrashDumpReadyFState`
+`DeepestAdapterPowerRequiredFState`
 
-            The deepest F-State that the component can be in where the miniport can power up the component in the event a crash occurs and a crash dump needs to be written.
-        
-            `FStateCount`
+The deepest F-State that this component can be in where the adapter still requires power. This is only relevant for components whose ID is STOR_POFX_LUN_GUID
 
-            The number of elements in the array that is pointed to by the <b>FStates</b> member. Additionally, this member specifies the number of functional power states (F-state) that the component supports. A component must support at least one F-state (F0).
-        
-            `FStates`
+`DeepestCrashDumpReadyFState`
 
-            A array of  <a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a> structures. The length of this array is specified by the <b>FStateCount</b> member. Each array element specifies the attributes of an F-state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on. When more than one idle state structure is required, the additional structures are allocated at the end of the <b>STOR_ POFX_COMPONENT</b> structure and the <b>FStateCount</b> is set to 1, the value of ANYSIZE_ARRAY, plus the count of the additional structures.
-        
-            `Id`
+The deepest F-State that the component can be in where the miniport can power up the component in the event a crash occurs and a crash dump needs to be written.
 
-            A component ID that uniquely identifies this component with respect to the other components in the device. The driver should specify a nonzero value for this member if the power management framework (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. The component IDs supported by Storport are STORPORT_POFX_ADAPTER_GUID and STORPORT_POFX_LUN_GUID.
-        
-            `Size`
+`DeepestWakeableFState`
 
-            The size of this structure. Set this value to <b>STOR_POFX_COMPONENT_V2_SIZE</b>.
-        
-            `Version`
 
-            The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V2</b>.
 
-    ## Remarks
-        When a miniport driver registers a device with the Storport power management framework, the miniport driver supplies a <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure that holds the registration information. This structure contains an array of <b>STOR_ POFX_COMPONENT</b> structures. The elements in this array describe the power attributes of the individual components in the device. The power settings of these components are managed based on the information in this array.
+`FStateCount`
+
+The number of elements in the array that is pointed to by the <b>FStates</b> member. Additionally, this member specifies the number of functional power states (F-state) that the component supports. A component must support at least one F-state (F0).
+
+`FStates`
+
+A array of  <a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a> structures. The length of this array is specified by the <b>FStateCount</b> member. Each array element specifies the attributes of an F-state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on. When more than one idle state structure is required, the additional structures are allocated at the end of the <b>STOR_ POFX_COMPONENT</b> structure and the <b>FStateCount</b> is set to 1, the value of ANYSIZE_ARRAY, plus the count of the additional structures.
+
+`Id`
+
+A component ID that uniquely identifies this component with respect to the other components in the device. The driver should specify a nonzero value for this member if the power management framework (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. The component IDs supported by Storport are STORPORT_POFX_ADAPTER_GUID and STORPORT_POFX_LUN_GUID.
+
+`Size`
+
+The size of this structure. Set this value to <b>STOR_POFX_COMPONENT_V2_SIZE</b>.
+
+`Version`
+
+The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V2</b>.
+
+## Remarks
+When a miniport driver registers a device with the Storport power management framework, the miniport driver supplies a <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure that holds the registration information. This structure contains an array of <b>STOR_ POFX_COMPONENT</b> structures. The elements in this array describe the power attributes of the individual components in the device. The power settings of these components are managed based on the information in this array.
 
 The <b>Id</b> member contains a component ID that uniquely identifies a component. The component ID is not the same as the component index, which a routine such as <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a> uses to identify a component in a registered device. A component index is an index into the <b>Components</b> array in the <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure that the device driver used to register the device. If the <b>Components</b> array contains N elements, component indexes are integer values in the range 0 to N–1. In contrast, a component ID is a GUID value.
 
@@ -102,19 +110,14 @@ For a unit device component, if an additional F-state is included in the <b>FSta
 | **Minimum UMDF version** |  |
 | **Header** | storport.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a>
-</dt>
-<dt>
 <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
-</dt>
-<dt>
+
+<a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a>
+
 <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
-</dt>
-</dl>
+
  
 
  

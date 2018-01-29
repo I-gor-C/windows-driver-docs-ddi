@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3c20b757-c27c-446c-a138-066fc57ec1bc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDEVINFO_VCACHE, D3DDEVINFO_VCACHE, *LPD3DDEVINFO_VCACHE
+ms.keywords : display.d3ddevinfo_vcache, d3dstrct_19dad044-1780-4c89-a518-328f0dfa3a26.xml, LPD3DDEVINFO_VCACHE structure pointer [Display Devices], LPD3DDEVINFO_VCACHE, _D3DDEVINFO_VCACHE, D3DDEVINFO_VCACHE, *LPD3DDEVINFO_VCACHE, D3DDEVINFO_VCACHE structure [Display Devices], d3d9types/LPD3DDEVINFO_VCACHE, d3d9types/D3DDEVINFO_VCACHE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDEVINFO_VCACHE
-req.alt-loc : d3d9types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDEVINFO_VCACHE, *LPD3DDEVINFO_VCACHE
 ---
 
@@ -52,19 +56,18 @@ typedef struct _D3DDEVINFO_VCACHE {
 
 ## Members
 
-        
-            `CacheSize`
 
-            Specifies the effective size, in entries, for which the driver optimizes the vertex cache. The actual cache size is not required to be the size specified in <b>CacheSize</b> because in most cases the actual cache size turns out to be larger. The driver only specifies an optimized size in <b>CacheSize</b> if it also specifies D3DXMESHOPT_VCACHE in the <b>OptMethod</b> member.
-        
-            `MagicNumber`
+`CacheSize`
 
-            Specifies the number that should be used as part of a trial-and-error procedure when determining when to restart the strips list. This number can be set from 1 to the value in the <b>CacheSize</b> member. Typically, the best values are near <b>CacheSize</b>/2.
-        
-            `OptMethod`
+Specifies the effective size, in entries, for which the driver optimizes the vertex cache. The actual cache size is not required to be the size specified in <b>CacheSize</b> because in most cases the actual cache size turns out to be larger. The driver only specifies an optimized size in <b>CacheSize</b> if it also specifies D3DXMESHOPT_VCACHE in the <b>OptMethod</b> member.
 
-            Specifies the method of mesh optimization. The driver can use one of the following values to specify the mesh optimization that it uses: 
+`MagicNumber`
 
+Specifies the number that should be used as part of a trial-and-error procedure when determining when to restart the strips list. This number can be set from 1 to the value in the <b>CacheSize</b> member. Typically, the best values are near <b>CacheSize</b>/2.
+
+`OptMethod`
+
+Specifies the method of mesh optimization. The driver can use one of the following values to specify the mesh optimization that it uses: 
 <table>
 <tr>
 <th>Value</th>
@@ -91,11 +94,10 @@ Vertex-cache based optimization
 </td>
 </tr>
 </table>
-        
-            `Pattern`
 
-            Specifies the bit pattern. The driver must specify the bit pattern as the CACH four-character code (FOURCC) value. The driver can use the MAKEFOURCC macro as follows to specify the FOURCC value as CACH:
+`Pattern`
 
+Specifies the bit pattern. The driver must specify the bit pattern as the CACH four-character code (FOURCC) value. The driver can use the MAKEFOURCC macro as follows to specify the FOURCC value as CACH:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -107,8 +109,8 @@ Vertex-cache based optimization
 </tr>
 </table></span></div>
 
-    ## Remarks
-        <b>DirectX 8.1 versions only.</b> The Direct3D runtime calls a driver's <a href="https://msdn.microsoft.com/6e1b0bce-1ac5-46e7-ae25-b0d3ce8580a0">D3dGetDriverState</a> function to obtain vertex-cache information from the driver. In this <b>D3dGetDriverState</b> call, the runtime specifies the D3DDEVINFOID_VCACHE flag in the <b>dwFlags</b> member of the DD_GETDRIVERSTATEDATA structure that the runtime passes. The driver specifies vertex-cache information in a D3DDEVINFO_VCACHE structure and returns it at the <b>lpdwStates</b> member of DD_GETDRIVERSTATEDATA.
+## Remarks
+<b>DirectX 8.1 versions only.</b> The Direct3D runtime calls a driver's <a href="https://msdn.microsoft.com/6e1b0bce-1ac5-46e7-ae25-b0d3ce8580a0">D3dGetDriverState</a> function to obtain vertex-cache information from the driver. In this <b>D3dGetDriverState</b> call, the runtime specifies the D3DDEVINFOID_VCACHE flag in the <b>dwFlags</b> member of the DD_GETDRIVERSTATEDATA structure that the runtime passes. The driver specifies vertex-cache information in a D3DDEVINFO_VCACHE structure and returns it at the <b>lpdwStates</b> member of DD_GETDRIVERSTATEDATA.
 
 <b>DirectX 9.0 and later versions only.</b> The Direct3D runtime specifies D3DDP2OP_CREATEQUERY and D3DDP2OP_ISSUEQUERY commands in calls to the driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback to create driver-side resources for the query and then to asynchronously query the driver for vertex-cache information. In the call with the D3DDP2OP_CREATEQUERY command, the runtime specifies the D3DQUERYTYPE_VCACHE query type in the <b>QueryType</b> member of the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2createquery.md">D3DHAL_DP2CREATEQUERY</a> structure. 
 
@@ -122,27 +124,22 @@ When the driver completes a vertex-cache query, the driver sets the total size o
 | **Minimum UMDF version** |  |
 | **Header** | d3d9types.h (include D3d9types.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_CREATEQUERY</dt>
-<dt>D3DDP2OP_ISSUEQUERY</dt>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/6e1b0bce-1ac5-46e7-ae25-b0d3ce8580a0">D3dGetDriverState</a>
-</dt>
-<dt>
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2createquery.md">D3DHAL_DP2CREATEQUERY</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2responsequery.md">D3DHAL_DP2RESPONSEQUERY</a>
-</dt>
-<dt>
+
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/6e1b0bce-1ac5-46e7-ae25-b0d3ce8580a0">D3dGetDriverState</a>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+D3DDP2OP_CREATEQUERY
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2createquery.md">D3DHAL_DP2CREATEQUERY</a>
+
+D3DDP2OP_ISSUEQUERY
+
  
 
  

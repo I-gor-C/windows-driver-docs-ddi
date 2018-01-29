@@ -7,8 +7,8 @@ old-location : netvista\rilsupsvctype.htm
 old-project : netvista
 ms.assetid : 3d9415f7-cc28-4e45-8d88-b8693aa57116
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSUPSVCTYPE, RILSUPSVCTYPE
+ms.date : 1/18/2018
+ms.keywords : RIL_SUPSVCTYPE_COLP, RIL_SUPSVCTYPE_CNAP, ntddrilapitypes/RIL_SUPSVCTYPE_CLIP, ntddrilapitypes/RIL_SUPSVCTYPE_CNAP, RILSUPSVCTYPE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_SUPSVCTYPE_COLP, ntddrilapitypes/RIL_SUPSVCTYPE_MAX, RILSUPSVCTYPE, RIL_SUPSVCTYPE_COLR, netvista.rilsupsvctype, RIL_SUPSVCTYPE_MAX, ntddrilapitypes/RIL_SUPSVCTYPE_CLIR, RIL_SUPSVCTYPE_CLIP, RIL_SUPSVCTYPE_CLIR, ntddrilapitypes/RILSUPSVCTYPE, ntddrilapitypes/RIL_SUPSVCTYPE_COLR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSUPSVCTYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSUPSVCTYPE
 ---
 
@@ -52,6 +56,11 @@ typedef enum _RILSUPSVCTYPE {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_SUPSVCTYPE_CALLWAITING</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_SUPSVCTYPE_CLIP</td>

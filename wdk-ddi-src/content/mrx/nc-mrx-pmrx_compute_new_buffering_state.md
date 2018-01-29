@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d47cbcab-8682-4c7f-b651-3d1e0f78dc0c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
+ms.keywords : ifsk.mrxcomputenewbufferingstate, MRxComputeNewBufferingState routine [Installable File System Drivers], MRxComputeNewBufferingState, PMRX_COMPUTE_NEW_BUFFERING_STATE, PMRX_COMPUTE_NEW_BUFFERING_STATE, mrx/MRxComputeNewBufferingState, mrxref_294ad2d0-2454-437d-818a-6879361f97e5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MRxComputeNewBufferingState
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -69,9 +73,23 @@ A pointer to where the new buffering state is stored when the routine returns.
 ## Return Value
 
 <i>MRxComputeNewBufferingState</i> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>A feature that is requested is not supported.
+</dl>
+</td>
+<td width="60%">
+A feature that is requested is not supported. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,14 +111,10 @@ The Server Message Block (SMB) redirector uses <i>MRxComputeNewBufferingState</i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549850">MRxCompleteBufferingStateChangeRequest</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550687">MRxGetConnectionId</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549850">MRxCompleteBufferingStateChangeRequest</a>
+
  
 
  

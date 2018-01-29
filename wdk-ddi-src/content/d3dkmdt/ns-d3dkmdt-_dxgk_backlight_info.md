@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9008e5e6-e03c-4d34-99bd-3e6624327fcc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_BACKLIGHT_INFO, DXGK_BACKLIGHT_INFO
+ms.keywords : d3dkmdt/DXGK_BACKLIGHT_INFO, display.dxgk_backlight_info, _DXGK_BACKLIGHT_INFO, DXGK_BACKLIGHT_INFO structure [Display Devices], DXGK_BACKLIGHT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_BACKLIGHT_INFO
-req.alt-loc : D3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_BACKLIGHT_INFO
 ---
 
@@ -48,26 +52,26 @@ typedef struct _DXGK_BACKLIGHT_INFO {
 
 ## Members
 
-        
-            `BacklightEffective`
 
-            [out] The absolute brightness level in hardware that is currently set by the display miniport drive for adaptive brightness control.
+`BacklightEffective`
 
-This member can range in value from 0 to 65535.
-        
-            `BacklightUsersetting`
-
-            [out] The absolute brightness level in hardware that corresponds to the current percent brightness level requested by the operating system.
+[out] The absolute brightness level in hardware that is currently set by the display miniport drive for adaptive brightness control.
 
 This member can range in value from 0 to 65535.
-        
-            `GammaRamp`
 
-            [out] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains a description of a gamma lookup table.
+`BacklightUsersetting`
+
+[out] The absolute brightness level in hardware that corresponds to the current percent brightness level requested by the operating system.
+
+This member can range in value from 0 to 65535.
+
+`GammaRamp`
+
+[out] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains a description of a gamma lookup table.
 This lookup table represents the gamma ramp that has been optimized for backlight display by the display miniport driver from a gamma ramp set by an application.
 
-    ## Remarks
-        For more information about the use of this structure, see Remarks of the <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_backlight_reduction.md">DxgkDdiGetBacklightReduction</a> function.
+## Remarks
+For more information about the use of this structure, see Remarks of the <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_backlight_reduction.md">DxgkDdiGetBacklightReduction</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,16 +81,12 @@ This lookup table represents the gamma ramp that has been optimized for backligh
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_backlight_reduction.md">DxgkDdiGetBacklightReduction</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a>
+
  
 
  

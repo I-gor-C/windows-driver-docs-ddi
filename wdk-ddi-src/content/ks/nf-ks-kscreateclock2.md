@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b70d4a57-c687-40b8-bbf2-4a0a2fbf4863
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateClock2
+ms.keywords : KsCreateClock2, stream.kscreateclock2, ks/KsCreateClock2, KsCreateClock2 function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCreateClock2
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -87,14 +91,10 @@ This is a new version of the <a href="..\ks\nf-ks-kscreateclock.md">KsCreateCloc
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-kscreateclock.md">KsCreateClock</a>
-</dt>
-</dl>
+
  
 
  

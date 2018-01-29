@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e37bb3c6-a0b6-409f-8a82-20ec7a931c6a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddigetscanline, DxgkDdiGetScanLine callback function [Display Devices], DxgkDdiGetScanLine, DXGKDDI_GETSCANLINE, DXGKDDI_GETSCANLINE, d3dkmddi/DxgkDdiGetScanLine, DmFunctions_135e90a4-1b44-4cd6-92fe-626dd389af9b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiGetScanLine
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -83,14 +87,10 @@ NTSTATUS DxgkddiGetscanline(
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_getscanline.md">DXGKARG_GETSCANLINE</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_getscanline.md">DXGKARG_GETSCANLINE</a>
+
  
 
  

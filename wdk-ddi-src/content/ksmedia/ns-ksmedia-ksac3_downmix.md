@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d35450ec-5ddc-4312-bd77-ab7e89690f82
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAC3_DOWNMIX, *PKSAC3_DOWNMIX, KSAC3_DOWNMIX
+ms.keywords : audio.ksac3_downmix, KSAC3_DOWNMIX structure [Audio Devices], *PKSAC3_DOWNMIX, ksmedia/PKSAC3_DOWNMIX, PKSAC3_DOWNMIX, ksmedia/KSAC3_DOWNMIX, PKSAC3_DOWNMIX structure pointer [Audio Devices], KSAC3_DOWNMIX, aud-prop_24e957af-1fba-467d-93f6-3b7ca211238e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAC3_DOWNMIX
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSAC3_DOWNMIX, KSAC3_DOWNMIX"
 ---
 
@@ -47,17 +51,17 @@ typedef struct {
 
 ## Members
 
-        
-            `fDolbySurround`
 
-            Specifies how the output channels are encoded. If <b>TRUE</b>, the output channels are first encoded as two Dolby Surround Pro Logic channels, Lt and Rt. If <b>FALSE</b>, the output channels do not use Dolby Surround Pro Logic encoding.
-        
-            `fDownMix`
+`fDolbySurround`
 
-            Specifies whether to downmix. If <b>TRUE</b>, downmixing to fewer channels is enabled. The number of output channels depends on the number of speakers present (as specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537250">KSPROPERTY_AUDIO_CHANNEL_CONFIG</a> property). If <b>FALSE</b>, input and output channels are mapped to speakers on a one-to-one basis. In other words, input channel 0 is mapped to output channel 0, input channel 1 is mapped to output channel 1, and so on, up to the number of encoded channels or speakers, whichever is smaller.
+Specifies how the output channels are encoded. If <b>TRUE</b>, the output channels are first encoded as two Dolby Surround Pro Logic channels, Lt and Rt. If <b>FALSE</b>, the output channels do not use Dolby Surround Pro Logic encoding.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537218">KSPROPERTY_AC3_DOWNMIX</a> property.
+`fDownMix`
+
+Specifies whether to downmix. If <b>TRUE</b>, downmixing to fewer channels is enabled. The number of output channels depends on the number of speakers present (as specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537250">KSPROPERTY_AUDIO_CHANNEL_CONFIG</a> property). If <b>FALSE</b>, input and output channels are mapped to speakers on a one-to-one basis. In other words, input channel 0 is mapped to output channel 0, input channel 1 is mapped to output channel 1, and so on, up to the number of encoded channels or speakers, whichever is smaller.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537218">KSPROPERTY_AC3_DOWNMIX</a> property.
 
 For information about the mapping of output channels to speakers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537250">KSPROPERTY_AUDIO_CHANNEL_CONFIG</a>.
 
@@ -69,16 +73,12 @@ For information about the mapping of output channels to speakers, see <a href="h
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537218">KSPROPERTY_AC3_DOWNMIX</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537250">KSPROPERTY_AUDIO_CHANNEL_CONFIG</a>
-</dt>
-</dl>
+
  
 
  

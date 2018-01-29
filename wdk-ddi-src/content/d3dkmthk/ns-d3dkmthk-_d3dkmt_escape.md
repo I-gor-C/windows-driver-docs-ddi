@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : db57ae5e-7060-4d45-99a5-e54c82b0aa05
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_ESCAPE, D3DKMT_ESCAPE
+ms.keywords : D3DKMT_ESCAPE structure [Display Devices], D3DKMT_ESCAPETYPE, _D3DKMT_ESCAPE, D3DKMT_ESCAPE, display.d3dkmt_escape, d3dkmthk/D3DKMT_ESCAPE, OpenGL_Structs_b17fc4f1-d9cc-4ebe-a29a-66f9a93b9462.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_ESCAPE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_ESCAPE
 ---
 
@@ -52,27 +56,26 @@ typedef struct _D3DKMT_ESCAPE {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information. The OpenGL ICD should specify the <b>HardwareAccess</b> bit-field flag to indicate that the display miniport driver must access graphics hardware in such a way that the operating system must perform the <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level of synchronization</a> into the display miniport driver for the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a> call.
-        
-            `hAdapter`
+`Flags`
 
-            [in] A handle to the graphics adapter that information is exchanged on.
-        
-            `hContext`
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information. The OpenGL ICD should specify the <b>HardwareAccess</b> bit-field flag to indicate that the display miniport driver must access graphics hardware in such a way that the operating system must perform the <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level of synchronization</a> into the display miniport driver for the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a> call.
 
-            [in] A handle to a context that is optionally specified if the information to be exchanged is specific to a particular device context. If the OpenGL ICD sets <b>hContext</b> to a non-NULL value, the ICD must have also set <b>hDevice</b> to a non-NULL value, and <b>hDevice</b> must correspond to the device that owns the context.
-        
-            `hDevice`
+`hAdapter`
 
-            [in] A handle to a display device that is optionally specified if the information to be exchanged is specific to a particular device.
-        
-            `pPrivateDriverData`
+[in] A handle to the graphics adapter that information is exchanged on.
 
-            [in/out] A pointer to a buffer that the OpenGL ICD allocates that contains information that the OpenGL ICD either exchanges with the display miniport driver or uses to control kernel-mode components. The following table describes the content of the buffer that <b>pPrivateDriverData</b> points to, depending on the value of <b>Type</b>.
+`hContext`
 
+[in] A handle to a context that is optionally specified if the information to be exchanged is specific to a particular device context. If the OpenGL ICD sets <b>hContext</b> to a non-NULL value, the ICD must have also set <b>hDevice</b> to a non-NULL value, and <b>hDevice</b> must correspond to the device that owns the context.
+
+`hDevice`
+
+[in] A handle to a display device that is optionally specified if the information to be exchanged is specific to a particular device.
+
+`pPrivateDriverData`
+
+[in/out] A pointer to a buffer that the OpenGL ICD allocates that contains information that the OpenGL ICD either exchanges with the display miniport driver or uses to control kernel-mode components. The following table describes the content of the buffer that <b>pPrivateDriverData</b> points to, depending on the value of <b>Type</b>.
 <table>
 <tr>
 <th>Value of the Type member</th>
@@ -161,15 +164,14 @@ A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_debug_snapshot_escape.md">D3DKMT_DEBU
 </td>
 </tr>
 </table>
-        
-            `PrivateDriverDataSize`
 
-            [in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to. The OpenGL ICD must specify the size of the buffer when it calls the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.
-        
-            `Type`
+`PrivateDriverDataSize`
 
-            [in] A value of type D3DKMT_ESCAPETYPE that indicates either to exchange information with the display miniport driver or to control kernel-mode components. The following table shows the possible values.
+[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to. The OpenGL ICD must specify the size of the buffer when it calls the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.
 
+`Type`
+
+[in] A value of type D3DKMT_ESCAPETYPE that indicates either to exchange information with the display miniport driver or to control kernel-mode components. The following table shows the possible values.
 <table>
 <tr>
 <th>Value</th>
@@ -525,8 +527,8 @@ Supported starting with Windows 8.1.
 </tr>
 </table>
 
-    ## Remarks
-        For testing purposes, the OpenGL ICD can pass a pointer to a D3DKMT_ESCAPE structure in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function to control the video memory manager and GPU scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's TDR process.
+## Remarks
+For testing purposes, the OpenGL ICD can pass a pointer to a D3DKMT_ESCAPE structure in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function to control the video memory manager and GPU scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's TDR process.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -536,31 +538,22 @@ Supported starting with Windows 8.1.
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_debug_snapshot_escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_device_escape.md">D3DKMT_DEVICE_ESCAPE</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dmm_escape.md">D3DKMT_DMM_ESCAPE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_debug_snapshot_escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidmm_escape.md">D3DKMT_VIDMM_ESCAPE</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_device_escape.md">D3DKMT_DEVICE_ESCAPE</a>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidsch_escape.md">D3DKMT_VIDSCH_ESCAPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
-</dt>
-</dl>
+
  
 
  

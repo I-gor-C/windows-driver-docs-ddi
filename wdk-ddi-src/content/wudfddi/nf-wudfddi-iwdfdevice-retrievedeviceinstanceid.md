@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 224277b4-447f-4981-aabf-90a10322c0df
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId
+ms.keywords : IWDFDevice, IWDFDevice::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId, wudfddi/IWDFDevice::RetrieveDeviceInstanceId, UMDFDeviceObjectRef_fef96c70-8877-4c1f-9e05-d4caf9a8ea28.xml, umdf.iwdfdevice_retrievedeviceinstanceid, wdf.iwdfdevice_retrievedeviceinstanceid, RetrieveDeviceInstanceId method, IWDFDevice interface, RetrieveDeviceInstanceId method, RetrieveDeviceInstanceId method, IWDFDevice interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.RetrieveDeviceInstanceId
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -95,11 +99,8 @@ If <i>Buffer</i> is non-<b>NULL</b>, the framework returns the size, in characte
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-</dl>
+
  
 
  

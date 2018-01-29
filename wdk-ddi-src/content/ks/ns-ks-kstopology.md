@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8dbd37ed-5d71-43bd-a3ca-caa5b0d08075
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSTOPOLOGY, *PKSTOPOLOGY, KSTOPOLOGY
+ms.keywords : PKSTOPOLOGY, ks/KSTOPOLOGY, KSTOPOLOGY structure [Streaming Media Devices], ks-struct_1d55c5f9-18d4-43d0-9fe9-291134e84115.xml, stream.kstopology, KSTOPOLOGY, *PKSTOPOLOGY, PKSTOPOLOGY structure pointer [Streaming Media Devices], ks/PKSTOPOLOGY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSTOPOLOGY
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSTOPOLOGY, KSTOPOLOGY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSTOPOLOGY, *PKSTOPOLOGY
 ---
 
 # KSTOPOLOGY structure
@@ -53,49 +57,41 @@ typedef struct {
 
 ## Members
 
-        
-            `Categories`
 
-            Points to the beginning of the array of functional categories that the driver supports.
-        
-            `CategoriesCount`
+`Categories`
 
-            Specifies the number of functional categories that the driver supports.
-        
-            `Reserved`
+Points to the beginning of the array of functional categories that the driver supports.
 
-            Reserved for system use. Drivers should set this to zero.
-        
-            `TopologyConnections`
+`CategoriesCount`
 
-            Points to the beginning of the array of topology connections for this structure.
-        
-            `TopologyConnectionsCount`
+Specifies the number of functional categories that the driver supports.
 
-            Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.
-        
-            `TopologyNodes`
+`Reserved`
 
-            Points to the beginning of the array of GUIDs that describe the type of each node. For a list of video kernel streaming related nodes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560886">Kernel Streaming Topology Nodes</a>. For a list of audio kernel streaming related nodes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536219">Audio Topology Nodes</a>.
-        
-            `TopologyNodesCount`
+Reserved for system use. Drivers should set this to zero.
 
-            Specifies the number of nodes that the driver supports.
-        
-            `TopologyNodesNames`
+`TopologyConnections`
 
-            Specifies the GUID of the localized Unicode string name for the node, stored in the registry.
+Points to the beginning of the array of topology connections for this structure.
 
-    ## Remarks
-        A stream class minidriver creates and passes this structure as part of its <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:
+`TopologyConnectionsCount`
 
+Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.
 
+`TopologyNodes`
 
-Returns the array that begins at the <b>Categories</b> member of KSTOPOLOGY.
+Points to the beginning of the array of GUIDs that describe the type of each node. For a list of video kernel streaming related nodes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560886">Kernel Streaming Topology Nodes</a>. For a list of audio kernel streaming related nodes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536219">Audio Topology Nodes</a>.
 
-Returns the array that begins at the <b>TopologyConnections</b> member of KSTOPOLOGY.
+`TopologyNodesCount`
 
-Returns the array that begins at the <b>Nodes</b> member of KSTOPOLOGY.
+Specifies the number of nodes that the driver supports.
+
+`TopologyNodesNames`
+
+Specifies the GUID of the localized Unicode string name for the node, stored in the registry.
+
+## Remarks
+A stream class minidriver creates and passes this structure as part of its <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,22 +101,16 @@ Returns the array that begins at the <b>Nodes</b> member of KSTOPOLOGY.
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>
-</dt>
-<dt>
-<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
-</dt>
-<dt>
+
+<a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>
+
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
-</dt>
-</dl>
+
+<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
+
  
 
  

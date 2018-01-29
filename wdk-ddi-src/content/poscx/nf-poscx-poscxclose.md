@@ -7,8 +7,8 @@ old-location : pos\poscxclose.htm
 old-project : pos
 ms.assetid : 90D097B9-EE7B-49FA-B0F7-6A255D140C06
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PosCxClose
+ms.date : 1/18/2018
+ms.keywords : PosCxClose function, poscx/PosCxClose, pos.poscxclose, PosCxClose
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosCxClose
-req.alt-loc : poscx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : POS_CX_EVENT_PRIORITY
 req.product : Windows 10 or later.
 ---

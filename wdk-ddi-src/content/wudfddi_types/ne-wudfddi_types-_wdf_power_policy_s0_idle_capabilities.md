@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b4a3611d-5eb6-4fb2-a66a-e563569c4790
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
+ms.keywords : wdfdevice/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wudfddi_types/IdleUsbSelectiveSuspend, IdleUsbSelectiveSuspend, wdf.wdf_power_policy_s0_idle_capabilities, _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wudfddi_types/IdleCannotWakeFromS0, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdfdevice/IdleUsbSelectiveSuspend, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration, DFDeviceObjectGeneralRef_42de97ef-91c2-44e1-9b69-fe92ca5b0edc.xml, IdleCanWakeFromS0, wdfdevice/IdleCannotWakeFromS0, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wudfddi_types/IdleCanWakeFromS0, IdleCannotWakeFromS0, wudfddi_types/IdleCapsInvalid, wdfdevice/IdleCanWakeFromS0, IdleCapsInvalid, kmdf.wdf_power_policy_s0_idle_capabilities, wdfdevice/IdleCapsInvalid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 1.11
-req.alt-api : WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
-req.alt-loc : wdfdevice.h,wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
 req.product : Windows 10 or later.
 ---
@@ -79,13 +83,7 @@ For Windows XP, the framework supports USB selective suspend only if the device'
 
 ## Remarks
 
-The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure. 
-
-The following code examples show how to enable idle support for a USB device. In each case, the STATUS_POWER_STATE_INVALID return value means the bus driver has reported that the device cannot wake itself.
-
-<b>KMDF Example</b>
-
-<b>UMDF Example</b>
+The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,11 +95,8 @@ The following code examples show how to enable idle support for a USB device. In
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
-</dt>
-</dl>
+
  
 
  

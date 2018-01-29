@@ -7,8 +7,8 @@ old-location : debugger\reconstructstack.htm
 old-project : debugger
 ms.assetid : 639A90E8-4B2D-413B-B6F9-078C9DF1B02F
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _DOT4_ACTIVITY, *PDOT4_ACTIVITY, DOT4_ACTIVITY
+ms.date : 1/19/2018
+ms.keywords : debugger.reconstructstack, ReconstructStack, ReconstructStack callback function [Windows Debugging], ReconstructStack, PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK, PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK, dbgeng/ReconstructStack
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ReconstructStack
-req.alt-loc : Dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,28 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 
 # PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK callback function
 The <i>ReconstructStack</i> callback function queries dump stream provider on a per-thread basis.
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre> CALLBACK* PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK ReconstructStack;</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Syntax
 
@@ -88,7 +102,7 @@ New in-line frames may be provided.
 
 Stack dump provider must be enabled.
 
-<i>ReconstructStack</i> is called <b>PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK</b>  in the Dbgeng.h header file.</p>
+<i>ReconstructStack</i> is called <b>PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK</b>  in the Dbgeng.h header file.
 
 ## Requirements
 | &nbsp; | &nbsp; |

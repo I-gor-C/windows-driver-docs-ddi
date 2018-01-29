@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : DE51CB88-E761-40DC-B437-7572CD95FB4A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
+ms.keywords : GNSS_Supl_Cert_Inject, GNSS_SUPL_CERT_ACTION, gnssdriver/GNSS_Supl_Cert_Delete, gnssdriver/GNSS_SUPL_CERT_ACTION, GNSS_Supl_Cert_Purge, GNSS_Supl_Cert_Delete, gnssdriver/GNSS_Supl_Cert_Purge, gnssdriver/GNSS_Supl_Cert_Inject, sensors.gnss_supl_cert_action, GNSS_SUPL_CERT_ACTION enumeration [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_SUPL_CERT_ACTION
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_SUPL_CERT_ACTION
 ---
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4032ec5c-c98a-44f9-9c74-dc5ada308d33
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagDEVCAPS, *PDEVCAPS, DEVCAPS
+ms.keywords : "*PDEVCAPS, DEVCAPS structure [Streaming Media Devices], PDEVCAPS structure pointer [Streaming Media Devices], stream.devcaps, DEVCAPS, PDEVCAPS, ksmedia/DEVCAPS, ksmedia/PDEVCAPS, tagDEVCAPS, vidcapstruct_61cce92e-4f74-48ff-ae84-72579136a64f.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVCAPS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEVCAPS, DEVCAPS"
 ---
 
@@ -68,47 +72,46 @@ typedef struct tagDEVCAPS {
 
 ## Members
 
-        
-            `AudioIn`
 
-            Indicates the external device accepts audio as an input.
-        
-            `Calibrate`
+`AudioIn`
 
-            Indicates if the external device requires calibrating.
-        
-            `CanMonitorSrc`
+Indicates the external device accepts audio as an input.
 
-            Specifies if the external device can monitor source.
-        
-            `CanPreview`
+`Calibrate`
 
-            Specifies if the external device can preview.
-        
-            `CanRecord`
+Indicates if the external device requires calibrating.
 
-            Specifies if the external device can record.
-        
-            `CanRecordStrobe`
+`CanMonitorSrc`
 
-            For multitrack devices. Specifies if the external device can record. Switches currently recording tracks off and selected nonrecording track into record.
-        
-            `CanSave`
+Specifies if the external device can monitor source.
 
-            Specifies if the external device can save.
-        
-            `CanTest`
+`CanPreview`
 
-            Indicates the implementation of the external device allows testing of methods/parameters by setting the high bit of a parameter that makes sense. This is not implemented an always returns FALSE.
-        
-            `CTLRead`
+Specifies if the external device can preview.
 
-            Specifies if the external device can read to a control track (nontimecode) target value.
-        
-            `DeviceType`
+`CanRecord`
 
-            Specifies the type of the external device. See Remarks.
+Specifies if the external device can record.
 
+`CanRecordStrobe`
+
+For multitrack devices. Specifies if the external device can record. Switches currently recording tracks off and selected nonrecording track into record.
+
+`CanSave`
+
+Specifies if the external device can save.
+
+`CanTest`
+
+Indicates the implementation of the external device allows testing of methods/parameters by setting the high bit of a parameter that makes sense. This is not implemented an always returns FALSE.
+
+`CTLRead`
+
+Specifies if the external device can read to a control track (nontimecode) target value.
+
+`DeviceType`
+
+Specifies the type of the external device. See Remarks.
 <table>
 <tr>
 <th>Flag</th>
@@ -175,35 +178,34 @@ Unknown type
 </td>
 </tr>
 </table>
-        
-            `HasAudio`
 
-            Specifies if the external device has audio capabilities.
-        
-            `HasVideo`
+`HasAudio`
 
-            Specifies if the external device has video capabilities.
-        
-            `IndexRead`
+Specifies if the external device has audio capabilities.
 
-            Specifies if the external device can read to an index (nontimecode) target value.
-        
-            `NormRate`
+`HasVideo`
 
-            Specifies the external device's normal frame rate.
-        
-            `Postroll`
+Specifies if the external device has video capabilities.
 
-            Specifies the external device's postroll time in the current time format.
-        
-            `Preroll`
+`IndexRead`
 
-            Specifies the external device's preroll time in the current time format.
-        
-            `SeekType`
+Specifies if the external device can read to an index (nontimecode) target value.
 
-            Specifies the type of seeking the external device is capable of. For example:
+`NormRate`
 
+Specifies the external device's normal frame rate.
+
+`Postroll`
+
+Specifies the external device's postroll time in the current time format.
+
+`Preroll`
+
+Specifies the external device's preroll time in the current time format.
+
+`SeekType`
+
+Specifies the type of seeking the external device is capable of. For example:
 <table>
 <tr>
 <th>Flag</th>
@@ -240,33 +242,33 @@ Indicates slow seeking (like a tape transport).
 </td>
 </tr>
 </table>
-        
-            `SimulatedHardware`
 
-            Must be set to zero.
-        
-            `SyncAcc`
+`SimulatedHardware`
 
-            Indicates the external device's synchronization accuracy.
-        
-            `TCRead`
+Must be set to zero.
 
-            Specifies if the external device can read timecodes.
-        
-            `TCWrite`
+`SyncAcc`
 
-            Specifies if the external device can write timecodes.
-        
-            `UsesFiles`
+Indicates the external device's synchronization accuracy.
 
-            Specifies if the external device uses files.
-        
-            `VideoIn`
+`TCRead`
 
-            Indicates the external device accepts video as an input.
+Specifies if the external device can read timecodes.
 
-    ## Remarks
-        Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
+`TCWrite`
+
+Specifies if the external device can write timecodes.
+
+`UsesFiles`
+
+Specifies if the external device uses files.
+
+`VideoIn`
+
+Indicates the external device accepts video as an input.
+
+## Remarks
+Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 
 All members of the DEVCAPS structure are <b>TRUE</b>/<b>FALSE</b> unless otherwise specified.
 
@@ -280,16 +282,12 @@ The <b>DeviceType</b> member can be used by an application to detect the device 
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-ksproperty_extdevice_s.md">KSPROPERTY_EXTDEVICE_S</a>
-</dt>
-</dl>
+
  
 
  

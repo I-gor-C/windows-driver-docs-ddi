@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 63df4f99-ddc2-4a0b-b19b-63390771d529
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002, SensorConnectionType
+ms.keywords : Sensor_Enums_bca4556b-94f3-4213-9daa-3571f403d556.xml, sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_ATTACHED, sensorsclassextension/SensorConnectionType, SensorConnectionType, __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002, sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_EXTERNAL, SENSOR_CONNECTION_TYPE_PC_ATTACHED, SENSOR_CONNECTION_TYPE_PC_EXTERNAL, SENSOR_CONNECTION_TYPE_PC_INTEGRATED, SensorConnectionType enumeration [Sensor Devices], sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_INTEGRATED, sensors.sensorconnectiontype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 7,Available in Windows 7.
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SensorConnectionType
-req.alt-loc : SensorsClassExtension.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -79,14 +83,10 @@ enum SensorConnectionType {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
+
  
 
  

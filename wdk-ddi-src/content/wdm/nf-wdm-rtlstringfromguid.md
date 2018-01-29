@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 89a3ca92-7c8a-40e3-a818-0127af6f2e91
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlStringFromGUID
+ms.keywords : kernel.rtlstringfromguid, RtlStringFromGUID routine [Kernel-Mode Driver Architecture], wdm/RtlStringFromGUID, RtlStringFromGUID, k109_8a3ac592-7ade-48fc-9536-d8a6c84fb033.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlStringFromGUID
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ If the conversion succeeds, <b>RtlStringFromGUID</b> returns STATUS_SUCCESS. Oth
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-rtlguidfromstring.md">RtlGUIDFromString</a>
-</dt>
-</dl>
+
  
 
  

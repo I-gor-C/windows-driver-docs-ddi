@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2fe73705-4b44-4c75-8677-3325b6be9250
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetFilterFromInstance
+ms.keywords : FltGetFilterFromInstance, ifsk.fltgetfilterfrominstance, FltApiRef_e_to_o_d03cf921-2e64-49de-9929-39650fd7d03d.xml, fltkernel/FltGetFilterFromInstance, FltGetFilterFromInstance routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetFilterFromInstance
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -61,9 +65,23 @@ Pointer to a caller-allocated variable that receives an opaque filter pointer fo
 ## Return Value
 
 <b>FltGetFilterFromInstance</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The minifilter driver is being torn down. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The minifilter driver is being torn down. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -89,20 +107,14 @@ To enumerate instances of all minifilter drivers on all volumes, call <a href=".
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstances.md">FltEnumerateInstances</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumefrominstance.md">FltGetVolumeFromInstance</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumefrominstance.md">FltGetVolumeFromInstance</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a59899e7-baa0-476b-b65e-1d464a14b811
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlDescribeChunk
+ms.keywords : RtlDescribeChunk function [Installable File System Drivers], RtlDescribeChunk, ifsk.rtldescribechunk, ntifs/RtlDescribeChunk, rtlref_03ffe48d-5d72-4f8b-ac88-e79909151d2f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlDescribeChunk
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,23 +54,23 @@ The <b>RtlDescribeChunk</b> routine is reserved for system use.
 
 `CompressionFormat`
 
-
+TBD
 
 `CompressedBuffer`
 
-
+TBD
 
 `EndOfCompressedBufferPlus1`
 
-
+TBD
 
 `ChunkBuffer`
 
-
+TBD
 
 `ChunkSize`
 
-
+TBD
 
 
 ## Return Value

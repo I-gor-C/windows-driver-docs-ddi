@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c3f79350-29e8-4e31-a31d-359c9781777d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_ipaddress, *PHBA_IPADDRESS, HBA_IPADDRESS
+ms.keywords : storage.hba_ipaddress, hbaapi/HBA_ipaddress, HBA_IPADDRESS, PHBA_IPADDRESS, HBA_ipaddress, HBA_ipaddress structure [Storage Devices], HBA_IPADDRESS structure [Storage Devices], structs-Fibre_8ac1972d-ec33-4642-8dfe-3d913913ca66.xml, hbaapi/PHBA_IPADDRESS, *PHBA_IPADDRESS, PHBA_IPADDRESS structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_IPADDRESS
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHBA_IPADDRESS, HBA_IPADDRESS"
 ---
 
@@ -50,14 +54,14 @@ typedef struct HBA_ipaddress {
 
 ## Members
 
-        
-            `ipaddress`
 
-            
-        
-            `ipversion`
+`ipaddress`
 
-            Indicates the version of the IP protocol in use.
+
+
+`ipversion`
+
+Indicates the version of the IP protocol in use.
 
 
 ## Requirements

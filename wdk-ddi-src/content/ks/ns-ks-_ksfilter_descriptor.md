@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c9e3c1ea-a8c9-45db-a31c-7f8e95cf6b2b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSFILTER_DESCRIPTOR, *PKSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR
+ms.keywords : PKSFILTER_DESCRIPTOR, ks/KSFILTER_DESCRIPTOR, stream.ksfilter_descriptor, PKSFILTER_DESCRIPTOR structure pointer [Streaming Media Devices], avstruct_f9b8c041-9001-42a5-989e-3de86daa56fe.xml, *PKSFILTER_DESCRIPTOR, _KSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR structure [Streaming Media Devices], KSFILTER_DESCRIPTOR, ks/PKSFILTER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSFILTER_DESCRIPTOR
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR"
 ---
 
@@ -62,36 +66,84 @@ typedef struct _KSFILTER_DESCRIPTOR {
 ## Members
 
 
-    ## Remarks
-        In laying out the filter descriptor, there are a number of macros that the caller may find useful. Instead of specifying count, size, and a table for pin descriptors, categories, node descriptors, and connections, there are a number of useful macros:
-
+## Remarks
+In laying out the filter descriptor, there are a number of macros that the caller may find useful. Instead of specifying count, size, and a table for pin descriptors, categories, node descriptors, and connections, there are a number of useful macros:
+<table>
+<tr>
+<th>Macro</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 <b>DEFINE_KSFILTER_PIN_DESCRIPTORS</b>(<i>Table</i>)
 
+</td>
+<td>
 Automatically inserts the number of items in table, the size of each item in the table, and the table of pin descriptors itself into the filter descriptor.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>DEFINE_KSFILTER_CATEGORIES</b>(<i>Table</i>)
 
+</td>
+<td>
 Automatically inserts the number of categories in the table and the table itself into the filter descriptor.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>DEFINE_KSFILTER_CATEGORIES_NULL</b>
 
+</td>
+<td>
 Automatically fills in the category members for a filter that defines no categories.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>DEFINE_KSFILTER_NODE_DESCRIPTORS</b>(<i>Table</i>)
 
+</td>
+<td>
 Automatically inserts the number of items in the table, the size of each item in the table, and the table of node descriptors itself into the filter descriptor.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>DEFINE_KSFILTER_NODE_DESCRIPTORS_NULL</b>
 
+</td>
+<td>
 Automatically fills in the node descriptor members for a filter that defines no topology nodes.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>DEFINE_KSFILTER_CONNECTIONS</b>(<i>Table</i>)
 
+</td>
+<td>
 Automatically inserts the number of connections in the table and the table itself into the filter descriptor.
 
+</td>
+</tr>
+<tr>
+<td>
 <b>DEFINE_KSFILTER_DEFAULT_CONNECTIONS</b>
 
+</td>
+<td>
 Automatically fills in the connections table for a filter that defines no explicit connections.
+
+</td>
+</tr>
+</table> 
 
 If you do not use <b>DEFINE_KS_FILTER_PIN_DESCRIPTORS</b> to set <i>PinDescriptorSize</i>, then you must set <i>PinDescriptorSize</i> to <b>sizeof(KSPIN_DESCRIPTOR_EX)</b>.
 
@@ -105,28 +157,20 @@ Similarly, if you do not use <b>DEFINE_KS_FILTER_NODE_DESCRIPTORS</b> to set <i>
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-kscomponentid.md">KSCOMPONENTID</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+
 <a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-kscomponentid.md">KSCOMPONENTID</a>
+
+<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
+
+<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
+
  
 
  

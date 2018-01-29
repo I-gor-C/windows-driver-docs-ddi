@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6b1d6465-83bd-42c4-be1f-d7a2cfb74483
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_QUERYDEPENDENTENGINEGROUP, DXGKARG_QUERYDEPENDENTENGINEGROUP, *INOUT_DXGKARG_QUERYDEPENDENTENGINEGROUP
+ms.keywords : DXGKARG_QUERYDEPENDENTENGINEGROUP structure [Display Devices], d3dkmddi/DXGKARG_QUERYDEPENDENTENGINEGROUP, *INOUT_DXGKARG_QUERYDEPENDENTENGINEGROUP, display.dxgkarg_querydependentenginegroup, _DXGKARG_QUERYDEPENDENTENGINEGROUP, DXGKARG_QUERYDEPENDENTENGINEGROUP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_QUERYDEPENDENTENGINEGROUP
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_QUERYDEPENDENTENGINEGROUP
 ---
 
@@ -48,21 +52,21 @@ typedef struct _DXGKARG_QUERYDEPENDENTENGINEGROUP {
 
 ## Members
 
-        
-            `DependentNodeOrdinalMask`
 
-            [out] The bitmask that describes all dependent nodes that will be affected by a reset operation.
-        
-            `EngineOrdinal`
+`DependentNodeOrdinalMask`
 
-            [in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.
-        
-            `NodeOrdinal`
+[out] The bitmask that describes all dependent nodes that will be affected by a reset operation.
 
-            [in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being queried in a call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_querydependentenginegroup.md">DxgkDdiQueryDependentEngineGroup</a>.
+`EngineOrdinal`
 
-    ## Remarks
-        The index value <b>EngineOrdinal</b> is assumed to be identical for all dependent nodes.
+[in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.
+
+`NodeOrdinal`
+
+[in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being queried in a call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_querydependentenginegroup.md">DxgkDdiQueryDependentEngineGroup</a>.
+
+## Remarks
+The index value <b>EngineOrdinal</b> is assumed to be identical for all dependent nodes.
 
 See Remarks of  <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_querydependentenginegroup.md">DxgkDdiQueryDependentEngineGroup</a> for a discussion of how to compute the bitmask in the <b>DependentNodeOrdinalMask</b> member.
 
@@ -76,16 +80,12 @@ For more information, see <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E2
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_querydependentenginegroup.md">DxgkDdiQueryDependentEngineGroup</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetengine.md">DxgkDdiResetEngine</a>
-</dt>
-</dl>
+
  
 
  

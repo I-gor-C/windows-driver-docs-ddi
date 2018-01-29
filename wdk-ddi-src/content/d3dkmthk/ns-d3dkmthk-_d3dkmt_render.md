@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8e45c4cb-3635-403b-8a91-71af6605c3be
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_RENDER, D3DKMT_RENDER
+ms.keywords : d3dkmthk/D3DKMT_RENDER, OpenGL_Structs_9da3b8d2-479c-4d6d-ba5c-70aa171121e3.xml, display.d3dkmt_render, _D3DKMT_RENDER, D3DKMT_RENDER structure [Display Devices], D3DKMT_RENDER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_RENDER
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_RENDER
 ---
 
@@ -67,104 +71,104 @@ typedef struct _D3DKMT_RENDER {
 
 ## Members
 
-        
-            `AllocationCount`
 
-            [in] The number of elements in the submitted allocation list.
-        
-            `BroadcastContext`
+`AllocationCount`
 
-            [in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the additional contexts to broadcast the current command buffer to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of contexts that the OpenGL ICD can broadcast the current command buffer to.
+[in] The number of elements in the submitted allocation list.
+
+`BroadcastContext`
+
+[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the additional contexts to broadcast the current command buffer to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of contexts that the OpenGL ICD can broadcast the current command buffer to.
 
 The original context that the <b>hContext</b> member specifies and that owns the command buffer is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the OpenGL ICD sends the command buffer to the owning context (<b>hContext</b>) and broadcasts to that one additional context.
-        
-            `BroadcastContextCount`
 
-            [in] The number of additional contexts in the array that <b>BroadcastContext</b> specifies.
-        
-            `CommandLength`
+`BroadcastContextCount`
 
-            [in] The size, in bytes, of the command buffer starting from offset zero.
-        
-            `CommandOffset`
+[in] The number of additional contexts in the array that <b>BroadcastContext</b> specifies.
 
-            [in] The offset, in bytes, to the first command in the command buffer.
-        
-            `Flags`
+`CommandLength`
 
-            [in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_renderflags.md">D3DKMT_RENDERFLAGS</a> structure that indicates the type of command buffer, in bit-field flags, to be rendered.
-        
-            `NewAllocationListSize`
+[in] The size, in bytes, of the command buffer starting from offset zero.
 
-            [in/out] The number of elements that the OpenGL ICD requests for the next allocation list if the <b>ResizeAllocationList</b> bit-field flag is specified in the <b>Flags</b> member. If <b>ResizeAllocationList</b> is not specified, the value in <b>NewAllocationListSize</b> is ignored. On output, the driver receives the number of elements that will be available in an array of allocations when the next command buffer is submitted.
+`CommandOffset`
+
+[in] The offset, in bytes, to the first command in the command buffer.
+
+`Flags`
+
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_renderflags.md">D3DKMT_RENDERFLAGS</a> structure that indicates the type of command buffer, in bit-field flags, to be rendered.
+
+`NewAllocationListSize`
+
+[in/out] The number of elements that the OpenGL ICD requests for the next allocation list if the <b>ResizeAllocationList</b> bit-field flag is specified in the <b>Flags</b> member. If <b>ResizeAllocationList</b> is not specified, the value in <b>NewAllocationListSize</b> is ignored. On output, the driver receives the number of elements that will be available in an array of allocations when the next command buffer is submitted.
 
 Depending on current memory conditions the output size might not match the input size.
-        
-            `NewCommandBuffer`
 
-            [out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+`NewCommandBuffer`
+
+[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
 
 Supported in Windows 7 and later versions:
 
 [in] A pointer to the command buffer to be rendered if the <b>RenderKm</b> flag is set in the <b>Flags</b> member.
-        
-            `NewCommandBufferSize`
 
-            [in/out] The size, in bytes, that the OpenGL ICD requests for the next command buffer if the <b>ResizeCommandBuffer</b> bit-field flag is specified in the <b>Flags</b> member. If <b>ResizeCommandBuffer</b> is not specified, the value in <b>NewCommandBufferSize</b> is ignored. On output, the driver receives the size, in bytes, of the next command buffer to use.
+`NewCommandBufferSize`
 
-Depending on current memory conditions the output size might not match the input size.
-        
-            `NewPatchLocationListSize`
-
-            [in/out] The number of elements that the OpenGL ICD requests for the next patch-location list if the <b>ResizePatchLocationList</b> bit-field flag is specified in the <b>Flags</b> member. If <b>ResizePatchLocationList</b> is not specified, the value in <b>NewPatchLocationListSize</b> is ignored. On output, the driver receives the number of elements that will be available in an array of patch locations when the next command buffer is submitted.
+[in/out] The size, in bytes, that the OpenGL ICD requests for the next command buffer if the <b>ResizeCommandBuffer</b> bit-field flag is specified in the <b>Flags</b> member. If <b>ResizeCommandBuffer</b> is not specified, the value in <b>NewCommandBufferSize</b> is ignored. On output, the driver receives the size, in bytes, of the next command buffer to use.
 
 Depending on current memory conditions the output size might not match the input size.
-        
-            `PatchLocationCount`
 
-            [in] The number of elements in the submitted patch-location list.
-        
-            `pNewAllocationList`
+`NewPatchLocationListSize`
 
-            [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the allocation list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the allocation list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+[in/out] The number of elements that the OpenGL ICD requests for the next patch-location list if the <b>ResizePatchLocationList</b> bit-field flag is specified in the <b>Flags</b> member. If <b>ResizePatchLocationList</b> is not specified, the value in <b>NewPatchLocationListSize</b> is ignored. On output, the driver receives the number of elements that will be available in an array of patch locations when the next command buffer is submitted.
+
+Depending on current memory conditions the output size might not match the input size.
+
+`PatchLocationCount`
+
+[in] The number of elements in the submitted patch-location list.
+
+`pNewAllocationList`
+
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the allocation list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the allocation list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
 
 Supported in Windows 7 and later versions:
 
 [in] A pointer to the allocation list to be rendered if the <b>RenderKm</b> flag is set in the <b>Flags</b> member.
-        
-            `pNewCommandBuffer`
 
-            [out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+`pNewCommandBuffer`
+
+[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
 
 Supported in Windows 7 and later versions:
 
 [in] A pointer to the command buffer to be rendered if the <b>RenderKm</b> flag is set in the <b>Flags</b> member.
-        
-            `pNewPatchLocationList`
 
-            [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the patch-location list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the patch-location list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
-        
-            `pPrivateDriverData`
+`pNewPatchLocationList`
 
-            This member is reserved and should be set to zero.
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the patch-location list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the patch-location list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.
+
+`pPrivateDriverData`
+
+This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
-        
-            `PresentHistoryToken`
 
-            [in] The present history token for redirected calls to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a> function.
+`PresentHistoryToken`
+
+[in] The present history token for redirected calls to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a> function.
 
 A <i>present history token</i> is a data packet that the rendering app submits to inform the Desktop Window Manager (DWM) that rendering is complete and the swap chain back buffer is ready to be presented.
-        
-            `PrivateDriverDataSize`
 
-            This member is reserved and should be set to zero.
+`PrivateDriverDataSize`
+
+This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
-        
-            `QueuedBufferCount`
 
-            [out] The number of DMA buffers that are queued to the context that the <b>hContext</b> member specifies after the submission.
+`QueuedBufferCount`
+
+[out] The number of DMA buffers that are queued to the context that the <b>hContext</b> member specifies after the submission.
 
 
 ## Requirements
@@ -175,19 +179,14 @@ This member is available beginning with Windows 7.
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_renderflags.md">D3DKMT_RENDERFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_renderflags.md">D3DKMT_RENDERFLAGS</a>
+
  
 
  

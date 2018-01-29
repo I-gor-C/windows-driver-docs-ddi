@@ -2,13 +2,13 @@
 UID : NC:hdaudio.PREGISTER_EVENT_CALLBACK
 title : PREGISTER_EVENT_CALLBACK
 author : windows-driver-content
-description : The RegisterEventCallback routine registers a callback routine for an unsolicited response from a codec or codecs.The function pointer type for a RegisterEventCallback routine is defined as
+description : The RegisterEventCallback routine registers a callback routine for an unsolicited response from a codec or codecs.The function pointer type for a RegisterEventCallback routine is defined as:
 old-location : audio\registereventcallback.htm
 old-project : audio
 ms.assetid : 0f94146b-aa60-4106-aba6-0f1cb3e53008
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.registereventcallback, RegisterEventCallback callback function [Audio Devices], RegisterEventCallback, PREGISTER_EVENT_CALLBACK, PREGISTER_EVENT_CALLBACK, hdaudio/RegisterEventCallback, aud-prop2_4ef71e0f-0887-4d20-8198-cb5b9c161647.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RegisterEventCallback
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -76,9 +80,23 @@ NTSTATUS PregisterEventCallback(
 ## Return Value
 
 <i>RegisterEventCallback</i> returns STATUS_SUCCESS if the call succeeds in registering the event. Otherwise, the routine returns an appropriate error code. The following table shows a possible return status code.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates that not enough resources are available to complete the operation.
+</dl>
+</td>
+<td width="60%">
+Indicates that not enough resources are available to complete the operation.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,8 +109,18 @@ The routine assigns a unique tag to each registered callback routine. The unique
 Currently, the bus driver can supply up to 64 unique tags per codec.
 
 The callback parameter is a function pointer to a callback routine in the function driver. The function pointer type for the callback routine is defined as:
-
-The first call parameter is a structure of type <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_response.md">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value. The second call parameter is the <i>callbackContext</i> value that was passed previously to <i>RegisterEventCallback</i>. The HD Audio bus driver calls the callback routine at IRQL DISPATCH_LEVEL.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef VOID
+  (*PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK)
+    (HDAUDIO_CODEC_RESPONSE, PVOID);</pre>
+</td>
+</tr>
+</table></span></div>The first call parameter is a structure of type <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_response.md">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value. The second call parameter is the <i>callbackContext</i> value that was passed previously to <i>RegisterEventCallback</i>. The HD Audio bus driver calls the callback routine at IRQL DISPATCH_LEVEL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,23 +136,16 @@ The first call parameter is a structure of type <a href="..\hdaudio\ns-hdaudio-_
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
-</dt>
-<dt>
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
-</dt>
-<dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-punregister_event_callback.md">UnregisterEventCallback</a>
-</dt>
-<dt>
+
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_response.md">HDAUDIO_CODEC_RESPONSE</a>
-</dt>
-</dl>
+
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
+
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
+
+<a href="..\hdaudio\nc-hdaudio-punregister_event_callback.md">UnregisterEventCallback</a>
+
  
 
  

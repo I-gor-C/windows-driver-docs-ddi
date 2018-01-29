@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : dd849f18-6271-483a-9c00-b7fe50109989
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxScavengeAllFobxs
+ms.keywords : RxScavengeAllFobxs function [Installable File System Drivers], RxScavengeAllFobxs, rxref_d983b334-0cc7-42ab-abc7-79f1bc0876cd.xml, ifsk.rxscavengeallfobxs, rxprocs/RxScavengeAllFobxs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxScavengeAllFobxs
-req.alt-loc : rxprocs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -67,8 +71,12 @@ A network mini-redirectors might call <b>RxPurgeAllFobxs</b> and <b>RxScavengeAl
 The <b>RxScavengeAllFobxs</b> routine acquires the scavenger mutex, traverses the <b>FobxFinalizationList</b> member on the scavenger object, and inserts any entries found at the tail of the <b>ScavengerFinalizationList </b>member, and then releases the scavenger mutex. 
 
 On checked builds, <b>RxScavengeAllFobxs</b> causes the system to ASSERT for the following condition:
-
+<ul>
+<li>
 The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,17 +92,12 @@ The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
-</dt>
-<dt>
-<a href="..\scavengr\nf-scavengr-rxpurgerelatedfobxs.md">RxPurgeRelatedFobxs</a>
-</dt>
-<dt>
 <a href="..\scavengr\nf-scavengr-rxscavengefobxsfornetroot.md">RxScavengeFobxsForNetRoot</a>
-</dt>
-</dl>
+
+<a href="..\scavengr\nf-scavengr-rxpurgerelatedfobxs.md">RxPurgeRelatedFobxs</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
+
  
 
  

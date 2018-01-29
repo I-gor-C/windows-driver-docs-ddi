@@ -7,8 +7,8 @@ old-location : netvista\vmbserverchannelinitsetflags.htm
 old-project : netvista
 ms.assetid : F6DBD055-8B6F-4B2B-B584-3C06979DD6DF
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbServerChannelInitSetFlags
+ms.date : 1/18/2018
+ms.keywords : VmbServerChannelInitSetFlags, VmbServerChannelInitSetFlags function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbServerChannelInitSetFlags, netvista.vmbserverchannelinitsetflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbServerChannelInitSetFlags
-req.alt-loc : VmbusKernelModeClientLibApi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 
@@ -64,12 +68,34 @@ A collection of bit flags to set.
 ## Return Value
 
 <b>VmbServerChannelInitSetFlags</b> returns the following status values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_1</b></dt>
-</dl>The <i>Channel</i> value was invalid or in an invalid state, such as Disabled.
+</dl>
+</td>
+<td width="60%">
+The <i>Channel</i> value was invalid or in an invalid state, such as Disabled.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_2</b></dt>
-</dl>The <i>Flags</i> value has invalid bits set.
+</dl>
+</td>
+<td width="60%">
+The <i>Flags</i> value has invalid bits set.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

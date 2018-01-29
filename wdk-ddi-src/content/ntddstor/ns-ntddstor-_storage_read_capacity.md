@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 891F04C5-277B-4197-942E-68ED21019950
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY, STORAGE_READ_CAPACITY
+ms.keywords : PSTORAGE_READ_CAPACITY, STORAGE_READ_CAPACITY structure [Storage Devices], ntddstor/PSTORAGE_READ_CAPACITY, ntddstor/STORAGE_READ_CAPACITY, STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY structure pointer [Storage Devices], storage.storage_read_capacity, _STORAGE_READ_CAPACITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_READ_CAPACITY
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : PSTORAGE_READ_CAPACITY, STORAGE_READ_CAPACITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY
 ---
 
 # _STORAGE_READ_CAPACITY structure
@@ -50,26 +54,26 @@ typedef struct _STORAGE_READ_CAPACITY {
 
 ## Members
 
-        
-            `BlockLength`
 
-            The number of bytes per block on disk.
-        
-            `DiskLength`
+`BlockLength`
 
-            The total disk size in bytes.
-        
-            `NumberOfBlocks`
+The number of bytes per block on disk.
 
-            The total number of blocks on the disk.
-        
-            `Size`
+`DiskLength`
 
-            The size of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).
-        
-            `Version`
+The total disk size in bytes.
 
-            The version of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).
+`NumberOfBlocks`
+
+The total number of blocks on the disk.
+
+`Size`
+
+The size of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).
+
+`Version`
+
+The version of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _STORAGE_READ_CAPACITY {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_read_capacity.md">IOCTL_STORAGE_READ_CAPACITIY</a>
-</dt>
-</dl>
+
  
 
  

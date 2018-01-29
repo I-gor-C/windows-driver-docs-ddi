@@ -7,8 +7,8 @@ old-location : print\printermessageboxw.htm
 old-project : print
 ms.assetid : F5E7FB7C-A38F-4DBA-9C98-9554FA80CC07
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : PrinterMessageBoxW
+ms.date : 1/18/2018
+ms.keywords : print.printermessageboxw, PrinterMessageBoxW function [Print Devices], winspool/PrinterMessageBoxW, PrinterMessageBoxW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PrinterMessageBoxW
-req.alt-loc : Winspool.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BIDI_TYPE
 req.product : Windows 10 or later.
 ---

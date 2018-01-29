@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe::SetPipePolicy, SetPipePolicy
+ms.keywords : UMDFUSBref_ab486cfe-19aa-440c-a017-e956aa4d2bb1.xml, SetPipePolicy method, umdf.iwdfusbtargetpipe_setpipepolicy, SetPipePolicy, wdf.iwdfusbtargetpipe_setpipepolicy, SetPipePolicy method, IWDFUsbTargetPipe interface, wudfusb/IWDFUsbTargetPipe::SetPipePolicy, IWDFUsbTargetPipe, IWDFUsbTargetPipe::SetPipePolicy, IWDFUsbTargetPipe interface, SetPipePolicy method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbTargetPipe.SetPipePolicy
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -69,17 +73,47 @@ A pointer to the buffer that contains the WinUsb pipe policy.
 ## Return Value
 
 <b>SetPipePolicy</b> returns one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec">SetPipePolicy</a> successfully set the WinUsb pipe policy. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec">SetPipePolicy</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</dl>
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -90,8 +124,6 @@ For more information about valid policy types and values that a UMDF driver can 
 For information about the behavior of the pipe policies, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff728833">WinUSB Functions for Pipe Policy Modification</a>.
 
 The <b>SetPipePolicy</b> method generates a UMDF request and synchronously sends the request to the I/O target.
-
-The following code example sets policy for input and output pipes.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,17 +139,12 @@ The following code example sets policy for input and output pipes.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540304">WinUsb_SetPipePolicy</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560418">IWDFUsbTargetPipe::RetrievePipePolicy</a>
-</dt>
-</dl>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
+
  
 
  

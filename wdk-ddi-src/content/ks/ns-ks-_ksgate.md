@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f6b5169e-2ff1-43da-a207-0c15c75e1367
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSGATE, *PKSGATE, KSGATE
+ms.keywords : ks/KSGATE, PKSGATE structure pointer [Streaming Media Devices], _KSGATE, avstruct_b232aae6-2b0a-44f9-beaf-29fe4b7f8b86.xml, KSGATE structure [Streaming Media Devices], stream.ksgate, PKSGATE, *PKSGATE, ks/PKSGATE, KSGATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSGATE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSGATE, KSGATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSGATE, *PKSGATE
 ---
 
 # _KSGATE structure
@@ -48,8 +52,8 @@ typedef struct _KSGATE {
 ## Members
 
 
-    ## Remarks
-        Conceptually, flow control gates are logical AND and OR gates; in AVStream, they are used as a processing-control mechanism. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.
+## Remarks
+Conceptually, flow control gates are logical AND and OR gates; in AVStream, they are used as a processing-control mechanism. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.
 
 All of the manipulations of <b>Count</b> are done using interlocked functions to provide synchronous state changes. There is no distinction as to whether a given KSGATE represents an AND gate or an OR gate. Thus, clients should be careful not to transition a gate into an invalid state by using <b>KSGATE</b><i>Xxx</i><b>And</b> functions on an OR gate or <b>KSGATE</b><i>Xxx</i><b>Or</b> functions on an AND gate or by using <b>KsGateTurnInput</b><i>Xxx</i> functions invalidly.
 
@@ -61,22 +65,16 @@ All of the manipulations of <b>Count</b> are done using interlocked functions to
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-ksgateinitialize.md">KsGateInitialize</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+
+<a href="..\ks\nf-ks-ksgateinitialize.md">KsGateInitialize</a>
+
  
 
  

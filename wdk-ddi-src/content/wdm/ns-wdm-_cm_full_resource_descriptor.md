@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e405c545-da0c-4b47-84c2-dd26d746da94
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CM_FULL_RESOURCE_DESCRIPTOR, CM_FULL_RESOURCE_DESCRIPTOR, *PCM_FULL_RESOURCE_DESCRIPTOR
+ms.keywords : PCM_FULL_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], CM_FULL_RESOURCE_DESCRIPTOR, CM_FULL_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], _CM_FULL_RESOURCE_DESCRIPTOR, *PCM_FULL_RESOURCE_DESCRIPTOR, PCM_FULL_RESOURCE_DESCRIPTOR, kstruct_a_eb7de4ac-cd02-44cc-9e26-a9c2a99eb8e6.xml, wdm/CM_FULL_RESOURCE_DESCRIPTOR, wdm/PCM_FULL_RESOURCE_DESCRIPTOR, kernel.cm_full_resource_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CM_FULL_RESOURCE_DESCRIPTOR
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : CM_FULL_RESOURCE_DESCRIPTOR, *PCM_FULL_RESOURCE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PCM_FULL_RESOURCE_DESCRIPTOR, CM_FULL_RESOURCE_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _CM_FULL_RESOURCE_DESCRIPTOR {
 
 ## Members
 
-        
-            `BusNumber`
 
-            The system-assigned, driver-supplied, zero-based number of the bus to which the device is connected. (Not used by WDM drivers.)
-        
-            `InterfaceType`
+`BusNumber`
 
-            Specifies the type of bus to which the device is connected. This must be one of the types defined by <a href="..\wdm\ne-wdm-_interface_type.md">INTERFACE_TYPE</a>, in Wdm.h or Ntddk.h. (Not used by WDM drivers.)
-        
-            `PartialResourceList`
+The system-assigned, driver-supplied, zero-based number of the bus to which the device is connected. (Not used by WDM drivers.)
 
-            A <a href="..\wdm\ns-wdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a> structure.
+`InterfaceType`
+
+Specifies the type of bus to which the device is connected. This must be one of the types defined by <a href="..\wdm\ne-wdm-_interface_type.md">INTERFACE_TYPE</a>, in Wdm.h or Ntddk.h. (Not used by WDM drivers.)
+
+`PartialResourceList`
+
+A <a href="..\wdm\ns-wdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a> structure.
 
 
 ## Requirements
@@ -71,16 +75,12 @@ typedef struct _CM_FULL_RESOURCE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
+
  
 
  

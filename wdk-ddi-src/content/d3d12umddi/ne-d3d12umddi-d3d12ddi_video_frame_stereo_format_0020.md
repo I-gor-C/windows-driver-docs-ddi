@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 91C5C387-320C-4ABE-98AB-36D2CDE7428F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020, D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020
+ms.keywords : d3d12umddi/D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_MONO, D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020, d3d12umddi/D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_SEPARATE, d3d12umddi/D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020, d3d12umddi/D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_VERTICAL, D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 enumeration [Display Devices], D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_SEPARATE, display.d3d12ddi_video_frame_stereo_format, D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_MONO, d3d12umddi/D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_HORIZONTAL, D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_HORIZONTAL, D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_VERTICAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020
 ---
 
@@ -54,7 +58,6 @@ typedef enum D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 {
 <tr>
 <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_HORIZONTAL</td>
 <td>Frame 0 and frame 1 are packed side-by-side, as shown in the following diagram:
-
 <table>
 <tr>
 <td>0</td>
@@ -104,7 +107,6 @@ typedef enum D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 {
 <tr>
 <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_VERTICAL</td>
 <td>Frame 0 and frame 1 are packed top-to-bottom, as shown in the following diagram:
-
 <table>
 <tr>
 <td>0</td>
@@ -144,7 +146,7 @@ typedef enum D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 {
 
 ## Remarks
 
-All drivers that support stereo must support all the formats in this enumeration.</p>
+All drivers that support stereo must support all the formats in this enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |

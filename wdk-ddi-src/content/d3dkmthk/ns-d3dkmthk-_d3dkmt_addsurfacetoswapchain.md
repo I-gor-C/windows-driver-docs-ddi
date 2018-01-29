@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f1a2390c-0154-4bd7-954f-ca8725710d61
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_ADDSURFACETOSWAPCHAIN, D3DKMT_ADDSURFACETOSWAPCHAIN
+ms.keywords : d3dkmthk/D3DKMT_ADDSURFACETOSWAPCHAIN, display.d3dkmt-addsurfacetoswapchain, _D3DKMT_ADDSURFACETOSWAPCHAIN, D3DKMT_ADDSURFACETOSWAPCHAIN structure [Display Devices], D3DKMT_ADDSURFACETOSWAPCHAIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_ADDSURFACETOSWAPCHAIN
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_ADDSURFACETOSWAPCHAIN
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMT_ADDSURFACETOSWAPCHAIN {
 
 ## Members
 
-        
-            `bProducer`
 
-            Indicates if the surface is a producer or consumer.
-        
-            `BufferIdx`
+`bProducer`
 
-            Index of were the texture was placed on the surface table.
-        
-            `hNtSurfaceHandle`
+Indicates if the surface is a producer or consumer.
 
-            An NT handle for the surface to be added.
-        
-            `hNtSwapChain`
+`BufferIdx`
 
-            An NT handle for the swapchain in this process.
+Index of were the texture was placed on the surface table.
+
+`hNtSurfaceHandle`
+
+An NT handle for the surface to be added.
+
+`hNtSwapChain`
+
+An NT handle for the swapchain in this process.
 
 
 ## Requirements

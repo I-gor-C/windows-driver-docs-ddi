@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4ADBBBDC-02DD-4D1A-B697-6286D7513B2E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT
+ms.keywords : PFSCTL_OFFLOAD_WRITE_INPUT, ifsk.fsctl_offload_write_input, FSCTL_OFFLOAD_WRITE_INPUT, ntifs/FSCTL_OFFLOAD_WRITE_INPUT, PFSCTL_OFFLOAD_WRITE_INPUT structure pointer [Installable File System Drivers], _FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT, ntifs/PFSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FSCTL_OFFLOAD_WRITE_INPUT
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT"
 ---
 
 # _FSCTL_OFFLOAD_WRITE_INPUT structure
@@ -51,33 +55,33 @@ typedef struct _FSCTL_OFFLOAD_WRITE_INPUT {
 
 ## Members
 
-        
-            `CopyLength`
 
-            The length, in bytes, of data to write, starting at <b>FileOffset</b>. The length  value must align to a logical sector boundary on the volume, except when the length matches end-of-file.
-        
-            `FileOffset`
+`CopyLength`
 
-            The position in the file to begin writing to. The offset value must be aligned to a logical sector boundary on the volume.
-        
-            `Flags`
+The length, in bytes, of data to write, starting at <b>FileOffset</b>. The length  value must align to a logical sector boundary on the volume, except when the length matches end-of-file.
 
-            This member is not used. Set to 0.
-        
-            `Size`
+`FileOffset`
 
-            The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_WRITE_INPUT).
-        
-            `Token`
+The position in the file to begin writing to. The offset value must be aligned to a logical sector boundary on the volume.
 
-            A byte array that contains a token structure, <a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>, representing a file data range to be logically written. The contents of <b>Token</b>  must remain unmodified between offload operations.
-        
-            `TransferOffset`
+`Flags`
 
-            The position in the data associated with <b>Token</b> to begin writing from.
+This member is not used. Set to 0.
 
-    ## Remarks
-        <b>CopyLength</b> can be zero. The value of <b>FileOffset</b> + <b>CopyLength</b> is bounded by both <b>MAXULONGLONG</b> and <b>MAXFILESIZE</b>. <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a> will return with <b>STATUS_INVALID_PARAMETER</b> if these conditions are not met.
+`Size`
+
+The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_WRITE_INPUT).
+
+`Token`
+
+A byte array that contains a token structure, <a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>, representing a file data range to be logically written. The contents of <b>Token</b>  must remain unmodified between offload operations.
+
+`TransferOffset`
+
+The position in the data associated with <b>Token</b> to begin writing from.
+
+## Remarks
+<b>CopyLength</b> can be zero. The value of <b>FileOffset</b> + <b>CopyLength</b> is bounded by both <b>MAXULONGLONG</b> and <b>MAXFILESIZE</b>. <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a> will return with <b>STATUS_INVALID_PARAMETER</b> if these conditions are not met.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,22 +91,16 @@ typedef struct _FSCTL_OFFLOAD_WRITE_INPUT {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_fsctl_offload_write_output.md">FSCTL_OFFLOAD_WRITE_OUTPUT</a>
-</dt>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_fsctl_offload_write_output.md">FSCTL_OFFLOAD_WRITE_OUTPUT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
+
  
 
  

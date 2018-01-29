@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fbf06a28-d6f8-424c-95e0-ce24653cac64
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SecLookupWellKnownSid
+ms.keywords : ifsk.seclookupwellknownsid, ksecddref_4c0053b3-cdaa-4cdc-a4d3-6329ccf64f98.xml, ntifs/SecLookupWellKnownSid, SecLookupWellKnownSid function [Installable File System Drivers], SecLookupWellKnownSid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This SecLookupWellKnownSid function is only availabl
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SecLookupWellKnownSid
-req.alt-loc : Ksecdd.lib,Ksecdd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksecdd.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -65,27 +69,73 @@ A variable that specifies the size of the <i>Sid</i> buffer in bytes.
 
 `OPTIONAL`
 
-
+TBD
 
 
 ## Return Value
 
 <b>SecLookupWellKnownSid</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>SEC_E_INTERNAL_ERROR</b></dt>
-</dl>An internal error occurred while trying to connect to the Local System Authority (LSA) or the local procedure call (LPC) to the security provider failed. 
+</dl>
+</td>
+<td width="60%">
+An internal error occurred while trying to connect to the Local System Authority (LSA) or the local procedure call (LPC) to the security provider failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The process ID associated with the currently executing thread does not match the current process ID. 
+</dl>
+</td>
+<td width="60%">
+The process ID associated with the currently executing thread does not match the current process ID. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer size for the <i>Sid</i>, the <i>SidBufferSize</i> parameter, was too small.
+</dl>
+</td>
+<td width="60%">
+The buffer size for the <i>Sid</i>, the <i>SidBufferSize</i> parameter, was too small.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>A <b>NULL</b> pointer was passed for <i>Sid</i> parameter or a well-known SID could not be found for the <i>SidType</i> specified. 
+</dl>
+</td>
+<td width="60%">
+A <b>NULL</b> pointer was passed for <i>Sid</i> parameter or a well-known SID could not be found for the <i>SidType</i> specified. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PROCESS_IS_TERMINATING</b></dt>
-</dl>This process has terminated so it is not possible to establish a local procedure call (LPC) connection.
+</dl>
+</td>
+<td width="60%">
+This process has terminated so it is not possible to establish a local procedure call (LPC) connection.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -111,17 +161,12 @@ If the function cannot find the well known SID for the <i>SidType</i> specified,
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-seclookupaccountsid.md">SecLookupAccountSid</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
  
 
  

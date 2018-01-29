@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 08951cde-d9d2-4de6-bb63-7c3e7cf1f92f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListBeginScan
+ms.keywords : PFN_WDFCHILDLISTBEGINSCAN, WdfChildListBeginScan method, wdf.wdfchildlistbeginscan, DFDeviceObjectChildListRef_b503df87-d0b1-472d-9981-4896fe81f7d8.xml, wdfchildlist/WdfChildListBeginScan, WdfChildListBeginScan, kmdf.wdfchildlistbeginscan
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfChildListBeginScan
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_RETRIEVE_CHILD_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -72,8 +76,6 @@ After the driver has finished updating the child list, it must call <a href="..\
 
 For more information about child lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">Dynamic Enumeration</a>.
 
-For a code example that uses <b>WdfChildListBeginScan</b>, see <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent.md">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -88,20 +90,14 @@ For a code example that uses <b>WdfChildListBeginScan</b>, see <a href="..\wdfch
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent.md">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
-</dt>
-<dt>
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistendscan.md">WdfChildListEndScan</a>
-</dt>
-<dt>
+
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistupdateallchilddescriptionsaspresent.md">WdfChildListUpdateAllChildDescriptionsAsPresent</a>
-</dt>
-</dl>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistendscan.md">WdfChildListEndScan</a>
+
  
 
  

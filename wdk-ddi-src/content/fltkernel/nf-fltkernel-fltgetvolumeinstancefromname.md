@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25455faa-2197-4b2a-bce8-db9764153e51
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeInstanceFromName
+ms.keywords : FltGetVolumeInstanceFromName routine [Installable File System Drivers], FltApiRef_e_to_o_78e7987d-7f24-4c51-b263-502005595c6d.xml, FltGetVolumeInstanceFromName, ifsk.fltgetvolumeinstancefromname, fltkernel/FltGetVolumeInstanceFromName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetVolumeInstanceFromName
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -71,12 +75,34 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 ## Return Value
 
 <b>FltGetVolumeInstanceFromName</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The instance is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The instance is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_INSTANCE_NOT_FOUND</b></dt>
-</dl>No matching instance was found. This is an error code.
+</dl>
+</td>
+<td width="60%">
+No matching instance was found. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -104,20 +130,14 @@ The string "03333" represents a higher altitude than "100.123456". (Leading and 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

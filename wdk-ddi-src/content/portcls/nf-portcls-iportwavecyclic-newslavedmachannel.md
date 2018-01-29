@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4d20bd03-9fde-4fcf-a90b-5933221cda93
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveCyclic, IPortWaveCyclic::NewSlaveDmaChannel, NewSlaveDmaChannel
+ms.keywords : audmp-routines_63146fe2-162d-4457-9dda-807f1d3931ac.xml, IPortWaveCyclic::NewSlaveDmaChannel, audio.iportwavecyclic_newslavedmachannel, IPortWaveCyclic interface [Audio Devices], NewSlaveDmaChannel method, IPortWaveCyclic, NewSlaveDmaChannel method [Audio Devices], NewSlaveDmaChannel, portcls/IPortWaveCyclic::NewSlaveDmaChannel, NewSlaveDmaChannel method [Audio Devices], IPortWaveCyclic interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWaveCyclic.NewSlaveDmaChannel
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -109,26 +113,18 @@ The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters f
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536900">IPortWaveCyclic::NewMasterDmaChannel</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+
+<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+
+<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536900">IPortWaveCyclic::NewMasterDmaChannel</a>
+
  
 
  

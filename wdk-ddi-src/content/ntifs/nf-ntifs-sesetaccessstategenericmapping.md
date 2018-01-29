@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b9a5ca5c-2d1c-4974-bef8-6003a4d6e864
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeSetAccessStateGenericMapping
+ms.keywords : seref_41bfccdf-c133-4587-9d9e-a328eedbd28b.xml, ifsk.sesetaccessstategenericmapping, ntifs/SeSetAccessStateGenericMapping, SeSetAccessStateGenericMapping routine [Installable File System Drivers], SeSetAccessStateGenericMapping
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeSetAccessStateGenericMapping
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -84,17 +88,12 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_access_state.md">ACCESS_STATE</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-seappendprivileges.md">SeAppendPrivileges</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_access_state.md">ACCESS_STATE</a>
+
+<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
+
  
 
  

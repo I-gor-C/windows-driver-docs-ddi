@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2FA77D7D-E1CC-44BA-8725-7132682A1BD6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021, D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021
+ms.keywords : d3d12umddi/D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021, D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021, D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021 structure [Display Devices], display.d3d12ddiarg_create_video_processor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021
 ---
 
@@ -47,17 +51,17 @@ typedef struct D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021 {
 
 ## Members
 
-        
-            `NodeMask`
 
-            A node mask. For single GPU operation, set this value to zero (0). If there are multiple GPU nodes, set a bit to identify the physical adapter of the device to which the command queue applies. Each bit in the mask corresponds to a single node. Only one  bit may be set.
-        
-            `Usage`
+`NodeMask`
 
-            Specifies a hint for the intended usage for the video processor. For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_usage.md">D3D12DDI_VIDEO_USAGE</a> enumeration.
+A node mask. For single GPU operation, set this value to zero (0). If there are multiple GPU nodes, set a bit to identify the physical adapter of the device to which the command queue applies. Each bit in the mask corresponds to a single node. Only one  bit may be set.
 
-    ## Remarks
-        A video processor holds state for a video processing session. State includes required intermediate memory, cached processing data, or other temporary working space.  A separate video processor must be created for each content stream by the application.
+`Usage`
+
+Specifies a hint for the intended usage for the video processor. For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_usage.md">D3D12DDI_VIDEO_USAGE</a> enumeration.
+
+## Remarks
+A video processor holds state for a video processing session. State includes required intermediate memory, cached processing data, or other temporary working space.  A separate video processor must be created for each content stream by the application.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_usage.md">D3D12DDI_VIDEO_USAGE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8966ea8f-9760-4a09-b9d3-8fd1ac278b12
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_REL_TIMEOUT_IN_US
+ms.keywords : wdf.evtdevicearmwakefromsxwithreason, EvtDeviceArmWakeFromSxWithReason callback function, EvtDeviceArmWakeFromSxWithReason, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON, wdfdevice/EvtDeviceArmWakeFromSxWithReason, DFDeviceObjectGeneralRef_4d1a0d9f-ce8a-465c-afb9-0ded36c70f42.xml, kmdf.evtdevicearmwakefromsxwithreason
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.7
 req.umdf-ver : 2.0
-req.alt-api : EvtDeviceArmWakeFromSxWithReason
-req.alt-loc : Wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -82,28 +86,30 @@ Version 1.7 and later versions of KMDF support the <i>EvtDeviceArmWakeFromSxWith
 To register an <i>EvtDeviceArmWakeFromSxWithReason</i> callback function, a driver must call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks.md">WdfDeviceInitSetPowerPolicyEventCallbacks</a>. Drivers can register either an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx.md">EvtDeviceArmWakeFromSx</a> callback function or an <i>EvtDeviceArmWakeFromSxWithReason</i> callback function, but not both.
 
 The <i>EvtDeviceArmWakeFromSxWithReason</i> callback function provides two parameters that enable the driver to determine why the framework has called it:
-
+<ul>
+<li>
 The framework sets the <i>DeviceWakeEnabled</i> parameter to <b>TRUE</b> if the <b>Enabled</b> member of the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a> structure indicates that the device can wake the system.
 
+</li>
+<li>
 The framework sets the <i>ChildrenArmedForWake</i> parameter to <b>TRUE</b> if one or more of the device's child devices can wake the system and the <b>ArmForWakeIfChildrenAreArmedForWake</b> member of WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS is set to <b>TRUE</b>.
 
-Either one or both of these parameters can be <b>TRUE</b>, because of the following scenarios:
-
+</li>
+</ul>Either one or both of these parameters can be <b>TRUE</b>, because of the following scenarios:
+<ul>
+<li>
 The driver's device is enabled to wake the system.
 
+</li>
+<li>
 One or more of the device's child devices are enabled to wake the system.
 
+</li>
+<li>
 Both the device and one or more of its child devices are enabled to wake the system.
 
-For more information about the <i>EvtDeviceArmWakeFromSxWithReason</i> callback function, see the Remarks section of <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx.md">EvtDeviceArmWakeFromSx</a>.
-
-To define an <i>EvtDeviceArmWakeFromSxWithReason</i> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
-
-For example, to define an <i>EvtDeviceArmWakeFromSxWithReason</i> callback function that is named <i>MyDeviceArmWakeFromSxWithReason</i>, use the <b>EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON</b> type as shown in this code example:
-
-Then, implement your callback function as follows:
-
-The <b>EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
+</li>
+</ul>For more information about the <i>EvtDeviceArmWakeFromSxWithReason</i> callback function, see the Remarks section of <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx.md">EvtDeviceArmWakeFromSx</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -119,17 +125,12 @@ The <b>EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON</b> function type is defined 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_s0.md">EvtDeviceArmWakeFromS0</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx.md">EvtDeviceArmWakeFromSx</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx.md">EvtDeviceDisarmWakeFromSx</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b1b8554f-8d6b-4c2e-b6b8-fcbfc97f5dd9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DESTROYOVERLAY, D3DKMT_DESTROYOVERLAY
+ms.keywords : display.d3dkmt_destroyoverlay, _D3DKMT_DESTROYOVERLAY, OpenGL_Structs_57b46d39-5b2c-4d58-9daa-e1460168fe55.xml, D3DKMT_DESTROYOVERLAY, D3DKMT_DESTROYOVERLAY structure [Display Devices], d3dkmthk/D3DKMT_DESTROYOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DESTROYOVERLAY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DESTROYOVERLAY
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_DESTROYOVERLAY {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the device that the overlay is associated with.
-        
-            `hOverlay`
+`hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to destroy.
+[in] A handle to the device that the overlay is associated with.
+
+`hOverlay`
+
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to destroy.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DKMT_DESTROYOVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyoverlay.md">D3DKMTDestroyOverlay</a>
-</dt>
-</dl>
+
  
 
  

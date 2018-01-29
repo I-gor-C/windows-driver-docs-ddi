@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C7E1996F-E00C-4A89-8CE4-E9B4987AEED1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, *PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
+ms.keywords : _USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION structure pointer [Buses], usbioctl/_USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, *PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, buses.usb_transport_characteristics_change_notification, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION structure [Buses], PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, *PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
 req.product : Windows 10 or later.
 ---
@@ -51,6 +55,14 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION {
 ## Members
 
 
+`Handle`
+
+An opaque handle for this registration.
+
+`UsbTransportCharacteristics`
+
+A <a href="..\usbioctl\ns-usbioctl-_usb_transport_characteristics.md">USB_TRANSPORT_CHARACTERISTICS</a> structure that is filled by the USB driver stack with the initial values of the transport characteristics.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -60,13 +72,10 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_register_for_transport_characteristics_change.md">IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
-</dt>
-</dl>
+
  
 
  

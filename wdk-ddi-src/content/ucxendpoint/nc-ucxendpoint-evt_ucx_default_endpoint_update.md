@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0a67ef0a-07ec-43d3-9a25-b28192677b35
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
+ms.keywords : buses.evt_ucx_default_endpoint_update, EvtUcxDefaultEndpointUpdate callback function [Buses], EvtUcxDefaultEndpointUpdate, EVT_UCX_DEFAULT_ENDPOINT_UPDATE, EVT_UCX_DEFAULT_ENDPOINT_UPDATE, ucxendpoint/EvtUcxDefaultEndpointUpdate, PEVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function pointer [Buses], PEVT_UCX_DEFAULT_ENDPOINT_UPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_DEFAULT_ENDPOINT_UPDATE
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -88,14 +92,10 @@ UCX typically calls this routine to update the default endpoint's maximum packet
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxendpoint\nf-ucxendpoint-ucx_default_endpoint_event_callbacks_init.md">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
-</dt>
-<dt>
+
 <a href="..\ucxendpoint\nf-ucxendpoint-ucxdefaultendpointinitseteventcallbacks.md">UcxDefaultEndpointInitSetEventCallbacks</a>
-</dt>
-</dl>
+
  
 
  

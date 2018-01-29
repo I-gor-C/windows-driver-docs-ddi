@@ -7,8 +7,8 @@ old-location : print\spoolercopyfileevent.htm
 old-project : print
 ms.assetid : 39e9b596-7726-439c-8ad9-a987fdfd3860
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : SpoolerCopyFileEvent
+ms.date : 1/18/2018
+ms.keywords : SpoolerCopyFileEvent function [Print Devices], poprfnc_e85f9707-18cf-4cd5-aece-ebcd5fd09270.xml, print.spoolercopyfileevent, SpoolerCopyFileEvent, winsplp/SpoolerCopyFileEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpoolerCopyFileEvent
-req.alt-loc : Mscms.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mscms.lib
 req.dll : Mscms.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NOTIFICATION_CONFIG_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -62,7 +66,6 @@ Caller-supplied pointer to a string representing a subkey under the printer's <b
 `dwCopyFileEvent`
 
 Caller-supplied flag that identifies the event being reported. Valid flag values are contained in the following table.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -168,13 +171,10 @@ If <i>dwCopyFileEvent</i> is COPYFILE_EVENT_ADD_PRINTER_CONNECTION or COPYFILE_E
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20SpoolerCopyFileEvent function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20SpoolerCopyFileEvent function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

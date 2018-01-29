@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : c9ce383e-277d-4fed-839b-8539554f654c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WINBIO_BIR_DATA, WINBIO_BIR_DATA, *PWINBIO_BIR_DATA
+ms.keywords : _WINBIO_BIR_DATA, winbio_types/WINBIO_BIR_DATA, biometric.winbio_bir_data, WINBIO_BIR_DATA, winbio_types/PWINBIO_BIR_DATA, WINBIO_BIR_DATA structure [Biometric Devices], biometric_ref_8f527949-820e-416e-952d-8dd3bdf543f6.xml, PWINBIO_BIR_DATA structure pointer [Biometric Devices], *PWINBIO_BIR_DATA, PWINBIO_BIR_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WINBIO_BIR_DATA
-req.alt-loc : winbio_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WINBIO_BIR_DATA
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _WINBIO_BIR_DATA {
 
 ## Members
 
-        
-            `Offset`
 
-            Specifies the offset, in bytes, of the block within the BIR.
-        
-            `Size`
+`Offset`
 
-            Specifies the size, in bytes, of a block in the BIR.
+Specifies the offset, in bytes, of the block within the BIR.
+
+`Size`
+
+Specifies the size, in bytes, of a block in the BIR.
 
 
 ## Requirements
@@ -66,19 +70,14 @@ typedef struct _WINBIO_BIR_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | winbio_types.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_data.md">WINBIO_CAPTURE_DATA</a>
-</dt>
-<dt>
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a>
-</dt>
-<dt>
 <a href="..\winbio_types\ns-winbio_types-_winbio_bir_header.md">WINBIO_BIR_HEADER</a>
-</dt>
-</dl>
+
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a>
+
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_data.md">WINBIO_CAPTURE_DATA</a>
+
  
 
  

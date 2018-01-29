@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dacb98cd-46bc-49d0-8ebd-29bb2dd5b713
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KBUGCHECK_SECONDARY_DUMP_DATA, KBUGCHECK_SECONDARY_DUMP_DATA, *PKBUGCHECK_SECONDARY_DUMP_DATA
+ms.keywords : kstruct_c_a9e0d726-41eb-4cf2-b2d4-c977be8750bb.xml, *PKBUGCHECK_SECONDARY_DUMP_DATA, PKBUGCHECK_SECONDARY_DUMP_DATA structure pointer [Kernel-Mode Driver Architecture], KBUGCHECK_SECONDARY_DUMP_DATA structure [Kernel-Mode Driver Architecture], PKBUGCHECK_SECONDARY_DUMP_DATA, KBUGCHECK_SECONDARY_DUMP_DATA, kernel.kbugcheck_secondary_dump_data, wdm/KBUGCHECK_SECONDARY_DUMP_DATA, wdm/PKBUGCHECK_SECONDARY_DUMP_DATA, _KBUGCHECK_SECONDARY_DUMP_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP with Service Pack 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KBUGCHECK_SECONDARY_DUMP_DATA
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KBUGCHECK_SECONDARY_DUMP_DATA, *PKBUGCHECK_SECONDARY_DUMP_DATA
 req.product : Windows 10 or later.
 ---
@@ -52,33 +56,33 @@ typedef struct _KBUGCHECK_SECONDARY_DUMP_DATA {
 
 ## Members
 
-        
-            `Guid`
 
-            Specifies a GUID that identifies the driver's crash dump data. (Drivers must use unique GUIDs to mark their crash dump data. Use the GuidGen.exe tool to generate GUIDs for your driver. This tool is included in the Microsoft Windows SDK.)
-        
-            `InBuffer`
+`Guid`
 
-            Pointer to a buffer that is allocated by the system.
-        
-            `InBufferLength`
+Specifies a GUID that identifies the driver's crash dump data. (Drivers must use unique GUIDs to mark their crash dump data. Use the GuidGen.exe tool to generate GUIDs for your driver. This tool is included in the Microsoft Windows SDK.)
 
-            Specifies the size of the buffer, in bytes, specified by the <b>InBuffer</b> member.
-        
-            `MaximumAllowed`
+`InBuffer`
 
-            Specifies the maximum amount of data that the <i>BugCheckSecondaryDumpDataCallback</i> routine can write to the crash dump file.
-        
-            `OutBuffer`
+Pointer to a buffer that is allocated by the system.
 
-            Pointer to the buffer where the driver writes its crash dump data, or <b>NULL</b>.
-        
-            `OutBufferLength`
+`InBufferLength`
 
-            Specifies the size of the buffer, in bytes, that was specified by the <b>OutBuffer</b> member.
+Specifies the size of the buffer, in bytes, specified by the <b>InBuffer</b> member.
 
-    ## Remarks
-        For more information about how this structure is used, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>.
+`MaximumAllowed`
+
+Specifies the maximum amount of data that the <i>BugCheckSecondaryDumpDataCallback</i> routine can write to the crash dump file.
+
+`OutBuffer`
+
+Pointer to the buffer where the driver writes its crash dump data, or <b>NULL</b>.
+
+`OutBufferLength`
+
+Specifies the size of the buffer, in bytes, that was specified by the <b>OutBuffer</b> member.
+
+## Remarks
+For more information about how this structure is used, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,13 +92,10 @@ typedef struct _KBUGCHECK_SECONDARY_DUMP_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
-</dt>
-</dl>
+
  
 
  

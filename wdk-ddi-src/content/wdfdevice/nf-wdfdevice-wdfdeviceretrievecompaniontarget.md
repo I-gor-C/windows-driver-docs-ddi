@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2ca34fb7-72c1-4253-ad5b-bc829a1ba540
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceRetrieveCompanionTarget
+ms.keywords : wdf.wdfdeviceretrievecompaniontarget, WdfDeviceRetrieveCompanionTarget method, WdfDeviceRetrieveCompanionTarget, wdfdevice/WdfDeviceRetrieveCompanionTarget
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.23
 req.umdf-ver : 
-req.alt-api : WdfDeviceRetrieveCompanionTarget
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---

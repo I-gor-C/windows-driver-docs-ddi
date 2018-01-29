@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 911e1035-4415-43c1-9e9c-cc8feab2bd97
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_SAVE_KEY_INFORMATION, *PREG_SAVE_KEY_INFORMATION, REG_SAVE_KEY_INFORMATION
+ms.keywords : PREG_SAVE_KEY_INFORMATION, REG_SAVE_KEY_INFORMATION, REG_SAVE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/REG_SAVE_KEY_INFORMATION, PREG_SAVE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _REG_SAVE_KEY_INFORMATION, wdm/PREG_SAVE_KEY_INFORMATION, kernel.reg_save_key_information, *PREG_SAVE_KEY_INFORMATION, kstruct_d_7da1ebfa-ae75-4b84-8941-87004f965404.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista SP2.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_SAVE_KEY_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PREG_SAVE_KEY_INFORMATION, REG_SAVE_KEY_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : REG_SAVE_KEY_INFORMATION, *PREG_SAVE_KEY_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -52,19 +56,18 @@ typedef struct _REG_SAVE_KEY_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined starting with Windows Vista.
-        
-            `FileHandle`
+`CallContext`
 
-            A handle to the file to which the hive information will be saved.
-        
-            `Format`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined starting with Windows Vista.
 
-            The format in which the key or hive is saved. This member can have one of the following values.
+`FileHandle`
 
+A handle to the file to which the hive information will be saved.
+
+`Format`
+
+The format in which the key or hive is saved. This member can have one of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -83,21 +86,21 @@ typedef struct _REG_SAVE_KEY_INFORMATION {
 <td>Save with no compression, for faster save operations. The registry key object must represent the root of a hive.</td>
 </tr>
 </table>
-        
-            `Object`
 
-            A pointer to a registry key object for the key whose information is about to be saved.
-        
-            `ObjectContext`
+`Object`
 
-            A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined starting with Windows Vista.
-        
-            `Reserved`
+A pointer to a registry key object for the key whose information is about to be saved.
 
-            This member is reserved for future use. This member is defined starting with Windows Vista.
+`ObjectContext`
 
-    ## Remarks
-        Note that when a key is saved, only the last component of the path can be changed.
+A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined starting with Windows Vista.
+
+`Reserved`
+
+This member is reserved for future use. This member is defined starting with Windows Vista.
+
+## Remarks
+Note that when a key is saved, only the last component of the path can be changed.
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
@@ -109,16 +112,12 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 66365126-d7c3-4886-b14f-a94dc12c1626
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_CAPS, D3DDDI_MULTIPLANE_OVERLAY_CAPS
+ms.keywords : d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_CAPS, D3DDDI_MULTIPLANE_OVERLAY_CAPS, display.d3dddi_multiplane_overlay_caps, D3DDDI_MULTIPLANE_OVERLAY_CAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_MULTIPLANE_OVERLAY_CAPS
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_MULTIPLANE_OVERLAY_CAPS
 ---
 
@@ -47,19 +51,18 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_CAPS {
 
 ## Members
 
-        
-            `MaxPlanes`
 
-            The maximum number of inputs, including the primary surface, to the display hardware that can be supported in the current mode. This value can change if the mode changes.
+`MaxPlanes`
+
+The maximum number of inputs, including the primary surface, to the display hardware that can be supported in the current mode. This value can change if the mode changes.
 
 For example, if the hardware allows one overlay plane and one normal primary surface, the driver should set <b>MaxPlanes</b> to 2.
-        
-            `NumCapabilityGroups`
 
-            The number of different types of overlay planes that can be supported.
+`NumCapabilityGroups`
+
+The number of different types of overlay planes that can be supported.
 
 Here are 2 examples:
-
 <ul>
 <li>If the hardware supports 2 RGB-only planes with limited stretching capabilities, plus 2 YUV planes with more flexible stretching capabilities, then the driver should set <b>NumCapabilityGroups</b> to 2.</li>
 <li>If the hardware supports one RGB-only plane with no stretching capabilities, plus 2 RGB-only planes with full  stretching capabilities, plus 2 RGB/YUV planes with full stretching capabilities, then the driver should set <b>NumCapabilityGroups</b> to 3.</li>

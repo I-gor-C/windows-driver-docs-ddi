@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c994060c-d8b3-4daa-a0dd-a734ffe34229
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
+ms.keywords : ifsk.mrxgetconnectionid, MRxGetConnectionId routine [Installable File System Drivers], MRxGetConnectionId, PMRX_GET_CONNECTION_ID, PMRX_GET_CONNECTION_ID, mrx/MRxGetConnectionId, mrxref_14943242-5da1-4404-bc5b-b86c2a88b347.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MRxGetConnectionId
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -64,9 +68,23 @@ A pointer to the connection ID when the routine returns.
 ## Return Value
 
 <i>MRxGetConnectionId</i> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>This routine is not implemented.
+</dl>
+</td>
+<td width="60%">
+This routine is not implemented. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -88,14 +106,10 @@ If connection IDs are supported by the network mini-redirector, then the returne
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549850">MRxCompleteBufferingStateChangeRequest</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549856">MRxComputeNewBufferingState</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549850">MRxCompleteBufferingStateChangeRequest</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : pos\posbarcodescannererroroccurredeventdata.htm
 old-project : pos
 ms.assetid : c9e18ed0-bc34-49ed-a31e-20c82d43860f
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosBarcodeScannerErrorOccurredEventData, PosBarcodeScannerErrorOccurredEventData
+ms.date : 1/18/2018
+ms.keywords : PosBarcodeScannerErrorOccurredEventData structure, _PosBarcodeScannerErrorOccurredEventData, pointofservicedriverinterface/PosBarcodeScannerErrorOccurredEventData, pos.posbarcodescannererroroccurredeventdata, PosBarcodeScannerErrorOccurredEventData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosBarcodeScannerErrorOccurredEventData
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosBarcodeScannerErrorOccurredEventData
 ---
 
@@ -53,57 +57,87 @@ typedef struct _PosBarcodeScannerErrorOccurredEventData {
 
 ## Members
 
-        
-            `ExtendedReason`
 
-            Contains additional data about the reason for the error.
-        
-            `Header`
+`ExtendedReason`
 
-            The <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_poseventdataheader.md">PosEventDataHeader</a> structure that describes the amount of memory, in bytes, of the <b>PosBarcodeScannerErrorOccurredEventData</b> structure and trailing error message and scan data.
-        
-            `IsRetriable`
+Contains additional data about the reason for the error.
 
-            Indicates whether <a href="http://go.microsoft.com/fwlink/p/?LinkId=314125">ReadFile</a> can be called again to read this event
-        
-            `MessageLength`
+`Header`
 
-            Indicates the length, in bytes, of the error message.
-        
-            `PartialData`
+The <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_poseventdataheader.md">PosEventDataHeader</a> structure that describes the amount of memory, in bytes, of the <b>PosBarcodeScannerErrorOccurredEventData</b> structure and trailing error message and scan data.
 
-            If a scanning error occurs, and some scan data was obtained, the partial scan data will be available in this parameter.
-        
-            `Reason`
+`IsRetriable`
 
-            Contains a value in the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorreason.md">UnifiedPosErrorReason</a> enumeration indicating the reason for the error.
-        
-            `Severity`
+Indicates whether <a href="http://go.microsoft.com/fwlink/p/?LinkId=314125">ReadFile</a> can be called again to read this event
 
-            Contains a value in the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorseverity.md">UnifiedPosErrorSeverity</a> enumeration indicating the severity of the error.
-        
-            `VendorErrorCode`
+`MessageLength`
 
-            Contains a vendor-specific error code.
+Indicates the length, in bytes, of the error message.
 
-    ## Remarks
-        The error data should fill the buffer as shown in the following table (in order).
+`PartialData`
 
+If a scanning error occurs, and some scan data was obtained, the partial scan data will be available in this parameter.
+
+`Reason`
+
+Contains a value in the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorreason.md">UnifiedPosErrorReason</a> enumeration indicating the reason for the error.
+
+`Severity`
+
+Contains a value in the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposerrorseverity.md">UnifiedPosErrorSeverity</a> enumeration indicating the severity of the error.
+
+`VendorErrorCode`
+
+Contains a vendor-specific error code.
+
+## Remarks
+The error data should fill the buffer as shown in the following table (in order).
+<table>
+<tr>
+<th>Data</th>
+<th>Length in bytes</th>
+</tr>
+<tr>
+<td>
 <b>PosBarcodeScannerErrorOccurredEventData</b> structure
 
+</td>
+<td>
 sizeof(<b>PosBarcodeScannerErrorOccurredEventData</b>)
 
+</td>
+</tr>
+<tr>
+<td>
 Error message text
 
+</td>
+<td>
 <b>MessageLength</b>
 
+</td>
+</tr>
+<tr>
+<td>
 Partial scan data
 
+</td>
+<td>
 <b>PartialData.ScanDataLength</b>
 
+</td>
+</tr>
+<tr>
+<td>
 Label data
 
-<b>PartialData.ScanDataLabelLength</b></p>
+</td>
+<td>
+<b>PartialData.ScanDataLabelLength</b>
+
+</td>
+</tr>
+</table>
 
 ## Requirements
 | &nbsp; | &nbsp; |

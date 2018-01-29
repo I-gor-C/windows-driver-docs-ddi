@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 239d0c0a-e78e-40d5-b359-36910bdd9358
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PCI_COMMON_CONFIG, PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG
+ms.keywords : PPCI_COMMON_CONFIG structure pointer [Kernel-Mode Driver Architecture], _PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG, wdm/PPCI_COMMON_CONFIG, kernel.pci_common_config, PCI_COMMON_CONFIG, kstruct_c_42f21057-e812-4a4d-96c5-f1177a03982b.xml, PPCI_COMMON_CONFIG, PCI_COMMON_CONFIG structure [Kernel-Mode Driver Architecture], wdm/PCI_COMMON_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_COMMON_CONFIG
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPCI_COMMON_CONFIG, PCI_COMMON_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -71,13 +75,17 @@ typedef struct _PCI_COMMON_CONFIG {
 
 ## Members
 
-        
-            `DeviceSpecific`
 
-            Contains any device-specific initialization information that is available.
+`DeviceSpecific`
 
-    ## Remarks
-        Certain members of this structure have read-only values, so attempts to reset them are ignored. These members include the following: <b>VendorID</b>, <b>DeviceID</b>, <b>RevisionID</b>, <b>ProgIf</b>, <b>SubClass</b>, <b>BaseClass</b>, <b>HeaderType</b>, <b>InterruptPin</b>, <b>MinimumGrant</b>, and <b>MaximumLatency.</b>
+Contains any device-specific initialization information that is available.
+
+`PCI_COMMON_HEADER`
+
+
+
+## Remarks
+Certain members of this structure have read-only values, so attempts to reset them are ignored. These members include the following: <b>VendorID</b>, <b>DeviceID</b>, <b>RevisionID</b>, <b>ProgIf</b>, <b>SubClass</b>, <b>BaseClass</b>, <b>HeaderType</b>, <b>InterruptPin</b>, <b>MinimumGrant</b>, and <b>MaximumLatency.</b>
 
 Other members are provisionally read-only: that is, the system initializes them to their correct values, so drivers can safely treat them as read-only. However, they can be reset if a bus-master driver finds it necessary. These members include the following: <b>CacheLineSize</b> and <b>LatencyTimer</b>.
 
@@ -89,25 +97,18 @@ Other members are provisionally read-only: that is, the system initializes them 
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546580">HalAssignSlotResources</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
+
  
 
  

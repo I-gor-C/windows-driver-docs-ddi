@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 269bbb79-c730-4b78-bf46-d502f23f039b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSetDevicePnpAndBaseObject
+ms.keywords : KsSetDevicePnpAndBaseObject function [Streaming Media Devices], ksfunc_eff06a34-a458-4426-972c-6a0fbf0f7846.xml, stream.kssetdevicepnpandbaseobject, ks/KsSetDevicePnpAndBaseObject, KsSetDevicePnpAndBaseObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsSetDevicePnpAndBaseObject
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -60,7 +64,7 @@ Specifies the PnP device object to place in the device header, overwriting any p
 
 `BaseObject`
 
-
+TBD
 
 
 ## Return Value
@@ -82,14 +86,10 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 74c62a30-42b9-4ea7-b52a-014e263d886e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamIo
+ms.keywords : KsStreamIo function [Streaming Media Devices], stream.ksstreamio, ksfunc_c2f256a3-f01a-45e1-b7de-1eed5bacde7a.xml, KsStreamIo, ks/KsStreamIo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsStreamIo
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -80,7 +84,7 @@ If <i>CompletionRoutine</i> is specified, this provides a context pointer in the
 
 `OPTIONAL`
 
-
+TBD
 
 `IoStatusBlock`
 
@@ -110,44 +114,105 @@ The <b>KsStreamIo</b> function returns STATUS_SUCCESS if successful, STATUS_PEND
 ## Remarks
 
 The following enumerated values are used for the <i>CompletionInvocationFlags</i> variable and are of type KSCOMPLETION_INVOCATION:
-
+<table>
+<tr>
+<th><i>CompletionInvocationFlags</i>
+       Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 KsInvokeOnSuccess
 
+</td>
+<td>
 Invokes the completion routine on success.
 
+</td>
+</tr>
+<tr>
+<td>
 KsInvokeOnError
 
+</td>
+<td>
 Invokes the completion routine on error.
 
+</td>
+</tr>
+<tr>
+<td>
 KsInvokeOnCancel
 
+</td>
+<td>
 Invokes the completion routine on cancellation.
 
-The following defined values are used for the <i>Flags</i> variable:
+</td>
+</tr>
+</table> 
 
+The following defined values are used for the <i>Flags</i> variable:
+<table>
+<tr>
+<th><i>Flags</i>  Values</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 KSSTREAM_READ
 
+</td>
+<td>
 Specifies that an IOCTL_KS_STREAMREAD IRP is to be built. This is the default.
 
+</td>
+</tr>
+<tr>
+<td>
 KSSTREAM_WRITE
 
+</td>
+<td>
 Specifies that an IOCTL_KS_STREAMWRITE IRP is to be built.
 
+</td>
+</tr>
+<tr>
+<td>
 KSSTREAM_PAGED_DATA
 
+</td>
+<td>
 Specifies that the data is pageable. This is the default and can be used at all times.
 
+</td>
+</tr>
+<tr>
+<td>
 KSSTREAM_NONPAGED_DATA
 
+</td>
+<td>
 Specifies that the data is nonpaged and can be used as a performance enhancement.
 
+</td>
+</tr>
+<tr>
+<td>
 KSSTREAM_SYNCHRONOUS
 
+</td>
+<td>
 Specifies that the IRP is synchronous. This means that if the <i>Event</i> parameter is passed, it is not treated as an object manager event and is not referenced or dereferenced.
+
+</td>
+</tr>
+</table> 
 
 KSSTREAM_READ is equivalent to KSPROBE_STREAMREAD.
 
-Similarly, KSSTREAM_WRITE is equivalent to KSPROBE_STREAMWRITE.</p>
+Similarly, KSSTREAM_WRITE is equivalent to KSPROBE_STREAMWRITE.
 
 ## Requirements
 | &nbsp; | &nbsp; |

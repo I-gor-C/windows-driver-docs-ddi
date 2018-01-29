@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 98d38c84-ed3a-4119-9a05-f8211f220467
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoSetFileOrigin
+ms.keywords : IoSetFileOrigin, ioref_782eeed5-9c44-4572-b929-4e1fb82d8e03.xml, ntddk/IoSetFileOrigin, IoSetFileOrigin routine [Installable File System Drivers], ifsk.iosetfileorigin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows XP an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetFileOrigin
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -86,11 +90,8 @@ File system filter drivers should not call <b>IoSetFileOrigin</b>.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioisfileoriginremote.md">IoIsFileOriginRemote</a>
-</dt>
-</dl>
+
  
 
  

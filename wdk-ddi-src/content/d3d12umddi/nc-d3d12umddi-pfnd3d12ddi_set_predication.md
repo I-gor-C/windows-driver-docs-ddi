@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C5830688-4FC6-4D3F-82EB-15354B28C5F1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_set_predication, pfnSetPredication callback function [Display Devices], pfnSetPredication, PFND3D12DDI_SET_PREDICATION, PFND3D12DDI_SET_PREDICATION, d3d12umddi/pfnSetPredication
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnSetPredication
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
@@ -90,11 +94,8 @@ This callback function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_predication_op.md">D3D12DDI_PREDICATION_OP</a>
-</dt>
-</dl>
+
  
 
  

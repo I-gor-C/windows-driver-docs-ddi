@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 652B92C2-EF04-482A-BB57-9F64F947EE4F
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPnpCallbackHardware2, IPnpCallbackHardware2::OnReleaseHardware, OnReleaseHardware
+ms.keywords : wdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware method, wudfddi/IPnpCallbackHardware2::OnReleaseHardware, IPnpCallbackHardware2 interface, OnReleaseHardware method, IPnpCallbackHardware2::OnReleaseHardware, OnReleaseHardware method, IPnpCallbackHardware2 interface, OnReleaseHardware, umdf.ipnpcallbackhardware2_onreleasehardware, IPnpCallbackHardware2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IPnpCallbackHardware2.OnReleaseHardware
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -76,9 +80,6 @@ For information about deleting an interrupt object, see <a href="https://msdn.mi
 
 For information about parsing hardware resources, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/finding-and-mapping-hardware-resources-in-umdf-1-x-drivers">Finding and Mapping Hardware Resources in a UMDF Driver</a>.
 
-
-See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-32FB3315251F">IWDFDevice3::MapIoSpace</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,14 +94,10 @@ See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware2.md">IPnpCallbackHardware2</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a>
-</dt>
-</dl>
+
  
 
  

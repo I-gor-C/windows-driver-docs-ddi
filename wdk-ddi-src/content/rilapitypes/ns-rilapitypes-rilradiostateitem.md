@@ -7,8 +7,8 @@ old-location : netvista\rilradiostateitem_2.htm
 old-project : netvista
 ms.assetid : 1cfc3e62-3398-435a-b603-fb7638ed8ce9
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEITEM, RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
+ms.date : 1/18/2018
+ms.keywords : netvista.rilradiostateitem_2, rilapitypes/RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM, RILRADIOSTATEITEM, RILRADIOSTATEITEM structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEITEM
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
 req.product : Windows 10 or later.
 ---
@@ -73,34 +77,34 @@ typedef struct _RILRADIOSTATEITEM {
 
 ## Members
 
-        
-            `dwItemAttributes`
 
-            
-        
-            `dwItemFlag`
+`dwItemAttributes`
 
-            
-        
-            `dwItemId`
 
-            
-        
-            `itemValueUnion`
 
-            
-        
-            `RILITEMVALUEUNION`
+`dwItemFlag`
 
-            
-        
-            `wszFriendlyName`
 
-            
-        
-            `wszItemValueOptions`
 
-            
+`dwItemId`
+
+
+
+`itemValueUnion`
+
+
+
+`RILITEMVALUEUNION`
+
+
+
+`wszFriendlyName`
+
+
+
+`wszItemValueOptions`
+
+
 
 
 ## Requirements

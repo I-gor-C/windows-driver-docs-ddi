@@ -7,8 +7,8 @@ old-location : netvista\rilmsgmwisummary.htm
 old-project : netvista
 ms.assetid : 5a718c4d-21c9-4dfd-844a-0053a379196d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGMWISUMMARY, *LPRILMSGMWISUMMARY, RILMSGMWISUMMARY
+ms.date : 1/18/2018
+ms.keywords : RILMSGMWISUMMARY, ntddrilapitypes/RILMSGMWISUMMARY, netvista.rilmsgmwisummary, RILMSGMWISUMMARY structure [Network Drivers Starting with Windows Vista], *LPRILMSGMWISUMMARY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGMWISUMMARY
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILMSGMWISUMMARY, RILMSGMWISUMMARY"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _RILMSGMWISUMMARY {
 
 ## Members
 
-        
-            `dwMwiType`
 
-            
-        
-            `dwNumberOfNewMessages`
+`dwMwiType`
 
-            
-        
-            `dwNumberOfNewUrgentMessages`
 
-            
-        
-            `dwNumberOfOldMessages`
 
-            
-        
-            `dwNumberOfOldUrgentMessages`
+`dwNumberOfNewMessages`
 
-            
+
+
+`dwNumberOfNewUrgentMessages`
+
+
+
+`dwNumberOfOldMessages`
+
+
+
+`dwNumberOfOldUrgentMessages`
+
+
 
 
 ## Requirements

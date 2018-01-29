@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07BFCA6C-4E75-4BB5-9F6A-22E1FFAFFF6F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARGCB_UPDATECONTEXTALLOCATION, DXGKARGCB_UPDATECONTEXTALLOCATION
+ms.keywords : DXGKARGCB_UPDATECONTEXTALLOCATION, display.dxgkargcb_updatecontextallocation, _DXGKARGCB_UPDATECONTEXTALLOCATION, d3dkmddi/DXGKARGCB_UPDATECONTEXTALLOCATION, DXGKARGCB_UPDATECONTEXTALLOCATION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARGCB_UPDATECONTEXTALLOCATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARGCB_UPDATECONTEXTALLOCATION
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGKARGCB_UPDATECONTEXTALLOCATION {
 
 ## Members
 
-        
-            `hAllocation`
 
-            Handle to the context allocation being updated. The allocation defines a physical adapter in a linked display adapter link.
-        
-            `pPrivateDriverData`
+`hAllocation`
 
-            Pointer to a private driver data buffer to be passed to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a> paging operation.
-        
-            `PrivateDriverDataSize`
+Handle to the context allocation being updated. The allocation defines a physical adapter in a linked display adapter link.
 
-            Specify the size of the driver private data.
+`pPrivateDriverData`
+
+Pointer to a private driver data buffer to be passed to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a> paging operation.
+
+`PrivateDriverDataSize`
+
+Specify the size of the driver private data.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _DXGKARGCB_UPDATECONTEXTALLOCATION {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>
-</dt>
-</dl>
+
  
 
  

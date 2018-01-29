@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 57a66b41-f9f6-42e1-95d7-010cacd1374a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_ID_BOTH_DIR_INFORMATION, *PFILE_ID_BOTH_DIR_INFORMATION, FILE_ID_BOTH_DIR_INFORMATION
+ms.keywords : _FILE_ID_BOTH_DIR_INFORMATION, ifsk.file_id_both_dir_information, FILE_ID_BOTH_DIR_INFORMATION, ntifs/FILE_ID_BOTH_DIR_INFORMATION, PFILE_ID_BOTH_DIR_INFORMATION, PFILE_ID_BOTH_DIR_INFORMATION structure pointer [Installable File System Drivers], fileinformationstructures_e4d079c2-5491-4692-bdf2-a6f356bdf431.xml, FILE_ID_BOTH_DIR_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_ID_BOTH_DIR_INFORMATION, *PFILE_ID_BOTH_DIR_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_ID_BOTH_DIR_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFILE_ID_BOTH_DIR_INFORMATION, FILE_ID_BOTH_DIR_INFORMATION"
 ---
 
@@ -60,30 +64,30 @@ typedef struct _FILE_ID_BOTH_DIR_INFORMATION {
 
 ## Members
 
-        
-            `AllocationSize`
 
-            File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
-        
-            `ChangeTime`
+`AllocationSize`
 
-            Last time the file was changed.
-        
-            `CreationTime`
+File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
 
-            Time when the file was created.
-        
-            `EaSize`
+`ChangeTime`
 
-            Combined length, in bytes, of the extended attributes (EA) for the file.
-        
-            `EndOfFile`
+Last time the file was changed.
 
-            Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
-        
-            `FileAttributes`
+`CreationTime`
 
-            File attributes, which can be any valid combination of the following: 
+Time when the file was created.
+
+`EaSize`
+
+Combined length, in bytes, of the extended attributes (EA) for the file.
+
+`EndOfFile`
+
+Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
+
+`FileAttributes`
+
+File attributes, which can be any valid combination of the following: 
 
 
 <dl>
@@ -96,51 +100,55 @@ typedef struct _FILE_ID_BOTH_DIR_INFORMATION {
 <dd>FILE_ATTRIBUTE_TEMPORARY</dd>
 <dd>FILE_ATTRIBUTE_COMPRESSED</dd>
 </dl>
-        
-            `FileId`
 
-            The 8-byte file reference number for the file. This number is generated and assigned to the file by the file system. (Note that the <b>FileId</b> is not the same as the 16-byte "file object ID" that was added to NTFS for Microsoft Windows 2000.)
-        
-            `FileIndex`
+`FileId`
 
-            Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
-        
-            `FileName`
+The 8-byte file reference number for the file. This number is generated and assigned to the file by the file system. (Note that the <b>FileId</b> is not the same as the 16-byte "file object ID" that was added to NTFS for Microsoft Windows 2000.)
 
-            Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
-        
-            `FileNameLength`
+`FileIndex`
 
-            Specifies the length of the file name string.
-        
-            `LastAccessTime`
+Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
 
-            Last time the file was accessed.
-        
-            `LastWriteTime`
+`FileName`
 
-            Last time information was written to the file.
-        
-            `NextEntryOffset`
+Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
 
-            Byte offset of the next FILE_ID_BOTH_DIR_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
-        
-            `ShortName`
+`FileNameLength`
 
-            Unicode string containing the short (8.3) name for the file.
-        
-            `ShortNameLength`
+Specifies the length of the file name string.
 
-            Specifies the length of the short file name string.
+`LastAccessTime`
 
-    ## Remarks
-        This information can be queried in either of the following ways: 
+Last time the file was accessed.
 
+`LastWriteTime`
+
+Last time information was written to the file.
+
+`NextEntryOffset`
+
+Byte offset of the next FILE_ID_BOTH_DIR_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+
+`ShortName`
+
+Unicode string containing the short (8.3) name for the file.
+
+`ShortNameLength`
+
+Specifies the length of the short file name string.
+
+## Remarks
+This information can be queried in either of the following ways: 
+<ul>
+<li>
 Call <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>, passing FileIdBothDirectoryInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_ID_BOTH_DIR_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
+</li>
+<li>
 Create an IRP with major function code IRP_MJ_DIRECTORY_CONTROL and minor function code IRP_MN_QUERY_DIRECTORY. 
 
-No specific access rights are required to query this information. 
+</li>
+</ul>No specific access rights are required to query this information. 
 
 File reference numbers, also called file IDs, are guaranteed to be unique only within a static file system. They are not guaranteed to be unique over time, because file systems are free to reuse them. Nor are they guaranteed to remain constant. For example, the FAT file system generates the file reference number for a file from the byte offset of the file's directory entry record (DIRENT) on the disk. Defragmentation can change this byte offset. Thus a FAT file reference number can change over time. 
 
@@ -156,19 +164,14 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
+
+<a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
+
  
 
  

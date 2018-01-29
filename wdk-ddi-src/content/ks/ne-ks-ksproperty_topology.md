@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9C000B4B-DB21-41E1-9AF0-D3B92EAC070B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_TOPOLOGY, KSPROPERTY_TOPOLOGY
+ms.keywords : stream.ksproperty_topology, ks/KSPROPERTY_TOPOLOGY_CATEGORIES, KSPROPERTY_TOPOLOGY enumeration [Streaming Media Devices], ks/KSPROPERTY_TOPOLOGY_NAME, KSPROPERTY_TOPOLOGY_CATEGORIES, KSPROPERTY_TOPOLOGY_CONNECTIONS, KSPROPERTY_TOPOLOGY, ks/KSPROPERTY_TOPOLOGY, KSPROPERTY_TOPOLOGY_NODES, ks/KSPROPERTY_TOPOLOGY_NODES, ks/KSPROPERTY_TOPOLOGY_CONNECTIONS, KSPROPERTY_TOPOLOGY_NAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_TOPOLOGY
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_TOPOLOGY
 ---
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4D23A651-7231-40CE-B9C2-4382D4E7F683
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFFile3, IWDFFile3::GetInitiatorProcessId, GetInitiatorProcessId
+ms.keywords : umdf.iwdffile3_getinitiatorprocessid, GetInitiatorProcessId method, IWDFFile3 interface, wudfddi/IWDFFile3::GetInitiatorProcessId, GetInitiatorProcessId, IWDFFile3, IWDFFile3::GetInitiatorProcessId, wdf.iwdffile3_getinitiatorprocessid, IWDFFile3 interface, GetInitiatorProcessId method, GetInitiatorProcessId method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFFile3.GetInitiatorProcessId
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -82,11 +86,8 @@ For more information about framework file objects, see <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdffile3.md">IWDFFile3</a>
-</dt>
-</dl>
+
  
 
  

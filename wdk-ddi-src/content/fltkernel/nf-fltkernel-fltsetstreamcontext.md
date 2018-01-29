@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c10e46a5-62e4-4d78-a672-34fc218800eb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSetStreamContext
+ms.keywords : FltApiRef_p_to_z_b304d975-533c-4794-aabc-e706fed09893.xml, fltkernel/FltSetStreamContext, FltSetStreamContext routine [Installable File System Drivers], FltSetStreamContext, ifsk.fltsetstreamcontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Up
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltSetStreamContext
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -76,27 +80,79 @@ A pointer to a caller-allocated variable that receives the address of the existi
 ## Return Value
 
 The <b>FltSetStreamContext</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
-</dl>If FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for <i>Operation</i>, this error code indicates that a stream context is already attached to the file stream.  
+</dl>
+</td>
+<td width="60%">
+If FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for <i>Operation</i>, this error code indicates that a stream context is already attached to the file stream.  
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_LINKED</b></dt>
-</dl>The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of a <b>FltSet</b><i>Xxx</i><b>Context</b> routine. 
+</dl>
+</td>
+<td width="60%">
+The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of a <b>FltSet</b><i>Xxx</i><b>Context</b> routine. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The specified <i>Instance</i> is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The specified <i>Instance</i> is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>This can be one of the following: 
+</dl>
+</td>
+<td width="60%">
+This can be one of the following: 
 
+<ul>
+<li>
 The <i>NewContext</i> parameter does not point to a valid stream context. 
 
+</li>
+<li>
 An invalid value was specified for <i>Operation</i>. 
 
+</li>
+</ul>
 STATUS_INVALID_PARAMETER is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The file system does not support per-stream contexts for this file stream. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The file system does not support per-stream contexts for this file stream. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -132,23 +188,16 @@ For more information about context reference counting, see <a href="https://msdn
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4289406f-dda0-4439-be6e-6e638bb46e1f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPnpCallback, IPnpCallback::OnSurpriseRemoval, OnSurpriseRemoval
+ms.keywords : umdf.ipnpcallback_onsurpriseremoval, OnSurpriseRemoval method, wdf.ipnpcallback_onsurpriseremoval, IPnpCallback, wudfddi/IPnpCallback::OnSurpriseRemoval, IPnpCallback interface, OnSurpriseRemoval method, IPnpCallback::OnSurpriseRemoval, UMDFDeviceObjectRef_92f0661b-48a5-4d85-9bcf-f763c38b08ed.xml, OnSurpriseRemoval, OnSurpriseRemoval method, IPnpCallback interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPnpCallback.OnSurpriseRemoval
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -66,7 +70,7 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallb
 
 The framework does not synchronize the <b>OnSurpriseRemoval</b> callback function with other PnP and power management callback functions.  
 
-For more information about when the framework calls this callback function, and for more information about synchronization issues, see <a href="https://msdn.microsoft.com/85e69401-0128-4641-aa0f-fd7c4f22f395">A User Unplugs a Device</a>.
+For more information about when the framework calls this callback function, and for more information about synchronization issues, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/a-user-unplugs-a-device">A User Unplugs a Device</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,17 +86,12 @@ For more information about when the framework calls this callback function, and 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
  
 
  

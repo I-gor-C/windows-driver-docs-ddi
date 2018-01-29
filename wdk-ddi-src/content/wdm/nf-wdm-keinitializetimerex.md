@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 57ed4f33-6ce6-41ae-b424-147318ba7656
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeTimerEx
+ms.keywords : KeInitializeTimerEx, kernel.keinitializetimerex, wdm/KeInitializeTimerEx, KeInitializeTimerEx routine [Kernel-Mode Driver Architecture], k105_62ca8d08-a87a-4cbd-80fa-18b646b8500d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInitializeTimerEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -91,26 +95,18 @@ Use <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a> or <a href="..\wdm\nf-w
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
+
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
+
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
  
 
  

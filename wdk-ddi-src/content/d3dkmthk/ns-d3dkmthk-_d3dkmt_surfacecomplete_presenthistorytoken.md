@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AF58684E-3516-48F9-B771-63701C00645F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
+ms.keywords : display.d3dkmt_surfacecomplete_presenthistorytoken, D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN structure [Display Devices], _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, d3dkmthk/D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN {
 
 ## Members
 
-        
-            `hLogicalSurface`
 
-            The logical surface that the token is being presented for.
+`hLogicalSurface`
+
+The logical surface that the token is being presented for.
 
 
 ## Requirements

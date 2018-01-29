@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7fdd1d52-c406-4da7-adff-4300e795be00
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES, D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES
+ms.keywords : D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES structure [Display Devices], DmStructs_33f2d82d-dbb3-4d51-bc3c-5c8e334d5113.xml, d3dkmdt/D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES, _D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES, display.d3dkmdt_color_coeff_dynamic_ranges, D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES
 ---
 
@@ -49,25 +53,25 @@ typedef struct _D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES {
 
 ## Members
 
-        
-            `FirstChannel`
 
-            The bit depth of the first color channel.
-        
-            `FourthChannel`
+`FirstChannel`
 
-            Reserved.
-        
-            `SecondChannel`
+The bit depth of the first color channel.
 
-            The bit depth of the second color channel.
-        
-            `ThirdChannel`
+`FourthChannel`
 
-            The bit depth of the third color channel.
+Reserved.
 
-    ## Remarks
-        The <b>VidPnTargetColorCoeffDynamicRanges</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES structure.
+`SecondChannel`
+
+The bit depth of the second color channel.
+
+`ThirdChannel`
+
+The bit depth of the third color channel.
+
+## Remarks
+The <b>VidPnTargetColorCoeffDynamicRanges</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_color_basis.md">D3DKMDT_COLOR_BASIS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4b3c2fc8-d7c3-4223-a88e-5db9ad852618
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA, *PUCMTCPCI_PORT_CONTROLLER_ALERT_DATA, UCMTCPCI_PORT_CONTROLLER_ALERT_DATA
+ms.keywords : UCMTCPCI_PORT_CONTROLLER_ALERT_DATA, PUCMTCPCI_PORT_CONTROLLER_ALERT_DATA structure pointer [Buses], ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_ALERT_DATA, *PUCMTCPCI_PORT_CONTROLLER_ALERT_DATA, UCMTCPCI_PORT_CONTROLLER_ALERT_DATA structure [Buses], ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_ALERT_DATA, buses.ucmtcpci_port_controller_alert_data, _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA, PUCMTCPCI_PORT_CONTROLLER_ALERT_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCMTCPCI_PORT_CONTROLLER_ALERT_DATA
-req.alt-loc : ucmtcpciportcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_ALERT_DATA, UCMTCPCI_PORT_CONTROLLER_ALERT_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_DATA, *PUCMTCPCI_PORT_CONTROLLER_ALERT_DATA
 req.product : Windows 10 or later.
 ---
 
@@ -54,14 +58,14 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
 
 ## Members
 
-        
-            `AlertType`
 
-            A <a href="..\ucmtcpciportcontroller\ne-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_type.md">UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE</a> value that indicates the type of hardware alert.
-        
-            `Size`
+`AlertType`
 
-            Size of this structure.
+A <a href="..\ucmtcpciportcontroller\ne-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_type.md">UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE</a> value that indicates the type of hardware alert.
+
+`Size`
+
+Size of this structure.
 
 
 ## Requirements
@@ -72,13 +76,10 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontroller.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrolleralert.md">UcmTcpciPortControllerAlert</a>
-</dt>
-</dl>
+
  
 
  

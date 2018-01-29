@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9cdcf964-9f2d-437f-8693-de5bb4bb9895
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_TARGET_SENT_IO_ACTION, WDF_IO_TARGET_SENT_IO_ACTION
+ms.keywords : WdfIoTargetCancelSentIo, wudfddi_types/WdfIoTargetLeaveSentIoPending, wudfddi_types/WdfIoTargetCancelSentIo, wudfddi_types/WdfIoTargetSentIoUndefined, wudfddi_types/WDF_IO_TARGET_SENT_IO_ACTION, WdfIoTargetSentIoUndefined, WdfIoTargetWaitForSentIoToComplete, WdfIoTargetSentIoMaximum, WdfIoTargetLeaveSentIoPending, _WDF_IO_TARGET_SENT_IO_ACTION, wudfddi_types/WdfIoTargetWaitForSentIoToComplete, wdf.wdf_io_target_sent_io_action__umdf_, umdfstructs_c5c41acc-35ac-4894-bb1b-af3b3a9b75d1.xml, umdf.wdf_io_target_sent_io_action__umdf_, wudfddi_types/WdfIoTargetSentIoMaximum, WDF_IO_TARGET_SENT_IO_ACTION, WDF_IO_TARGET_SENT_IO_ACTION enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.0
-req.alt-api : WDF_IO_TARGET_SENT_IO_ACTION
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_TARGET_SENT_IO_ACTION
 req.product : Windows 10 or later.
 ---
@@ -100,11 +104,8 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_sent_io_action.md">WDF_IO_TARGET_SENT_IO_ACTION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 86834d99-34bd-487a-bbd4-4c0143d849a0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY
+ms.keywords : WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY structure [WHEA Drivers and Applications], PWHEA_GENERIC_ERROR_DATA_ENTRY structure pointer [WHEA Drivers and Applications], *PWHEA_GENERIC_ERROR_DATA_ENTRY, _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, PWHEA_GENERIC_ERROR_DATA_ENTRY, whearef_9e532654-fd5a-4936-8465-f9d6f9eafad2.xml, ntddk/WHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, whea.whea_generic_error_data_entry, WHEA_GENERIC_ERROR_DATA_ENTRY, ntddk/PWHEA_GENERIC_ERROR_DATA_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_GENERIC_ERROR_DATA_ENTRY
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2
 ---
 
 # _WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure
@@ -54,45 +58,53 @@ typedef struct _WHEA_GENERIC_ERROR_DATA_ENTRY {
 
 ## Members
 
-        
-            `Data`
 
-            A variable-sized buffer that contains the error data for the error data section. The format of the data that is contained in this buffer is determined by the section type that is specified in the <b>SectionType</b> member.
-        
-            `ErrorDataLength`
+`Data`
 
-            The length, in bytes, of the error data that is contained in the <b>Data</b> member.
-        
-            `ErrorSeverity`
+A variable-sized buffer that contains the error data for the error data section. The format of the data that is contained in this buffer is determined by the section type that is specified in the <b>SectionType</b> member.
 
-            A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error data section.
-        
-            `Flags`
+`ErrorDataLength`
 
-            A bitwise OR'ed combination of values that describes the error data section. Possible values are:
-        
-            `FRUId`
+The length, in bytes, of the error data that is contained in the <b>Data</b> member.
 
-            A GUID that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x01</b> bit is set in the <b>ValidBits</b> member.
-        
-            `FRUText`
+`ErrorSeverity`
 
-            A character string that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x02</b> bit is set in the <b>ValidBits</b> member.
-        
-            `Revision`
+A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error data section.
 
-            A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_GENERIC_ERROR_DATA_ENTRY structure.
-        
-            `SectionType`
+`Flags`
 
-            A GUID that identifies the type of error data that is contained in the error data section. The standard section types are defined as follows:
-        
-            `ValidBits`
+A bitwise OR'ed combination of values that describes the error data section. Possible values are:
 
-            A bitwise OR'ed combination of values that specifies which members of this structure contain valid data. Possible values are:
+`FRUId`
 
-    ## Remarks
-        A generic error status block can contain one or more WHEA_GENERIC_ERROR_DATA_ENTRY structures. Each WHEA_GENERIC_ERROR_DATA_ENTRY structure describes a section of error information that is part of the error status data for a generic error source.
+A GUID that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x01</b> bit is set in the <b>ValidBits</b> member.
+
+`FRUText`
+
+A character string that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x02</b> bit is set in the <b>ValidBits</b> member.
+
+`Revision`
+
+A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_GENERIC_ERROR_DATA_ENTRY structure.
+
+`SectionType`
+
+A GUID that identifies the type of error data that is contained in the error data section. The standard section types are defined as follows:
+
+
+
+For error data sections that do not conform to one of the standard section types, this member contains a platform-specific GUID that identifies the type of error data that is contained in the error data section. If a platform-specific GUID is not defined for the type of error data that is contained in the error data section, this member contains GENERIC_SECTION_GUID.
+
+`Timestamp`
+
+
+
+`ValidBits`
+
+A bitwise OR'ed combination of values that specifies which members of this structure contain valid data. Possible values are:
+
+## Remarks
+A generic error status block can contain one or more WHEA_GENERIC_ERROR_DATA_ENTRY structures. Each WHEA_GENERIC_ERROR_DATA_ENTRY structure describes a section of error information that is part of the error status data for a generic error source.
 
 The <b>Data</b> member of the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure contains a generic error status block that contains the WHEA_GENERIC_ERROR_DATA_ENTRY structures. The number of WHEA_GENERIC_ERROR_DATA_ENTRY structures that are included in the generic error status block is specified by the <b>ErrorDataEntryCount</b> member of the <a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a> union.
 
@@ -104,16 +116,12 @@ The <b>Data</b> member of the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md"
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
+
  
 
  

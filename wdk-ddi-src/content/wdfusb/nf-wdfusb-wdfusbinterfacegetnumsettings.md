@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 07de1b64-bafb-4b5b-8ef3-24b87ae0c273
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbInterfaceGetNumSettings
+ms.keywords : wdfusb/WdfUsbInterfaceGetNumSettings, DFUsbRef_5515a8bf-1a43-434c-9806-75393a17fdf5.xml, WdfUsbInterfaceGetNumSettings, WdfUsbInterfaceGetNumSettings method, wdf.wdfusbinterfacegetnumsettings, kmdf.wdfusbinterfacegetnumsettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.5
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbInterfaceGetNumSettings
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -68,8 +72,6 @@ Your driver can call <b>WdfUsbInterfaceGetNumSettings</b> after it has called <a
 
 For more information about the <b>WdfUsbInterfaceGetNumSettings</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example obtains the number of alternate settings that are available for a specified USB interface.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -84,17 +86,12 @@ The following code example obtains the number of alternate settings that are ava
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
-</dt>
-</dl>
+
  
 
  

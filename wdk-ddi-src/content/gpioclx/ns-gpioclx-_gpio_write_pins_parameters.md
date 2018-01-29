@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 5607AFBA-2C8C-4637-81E8-7940CF9E989A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GPIO_WRITE_PINS_PARAMETERS, GPIO_WRITE_PINS_PARAMETERS, *PGPIO_WRITE_PINS_PARAMETERS
+ms.keywords : GPIO.gpio_write_pins_parameters, _GPIO_WRITE_PINS_PARAMETERS, *PGPIO_WRITE_PINS_PARAMETERS, PGPIO_WRITE_PINS_PARAMETERS, PGPIO_WRITE_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_WRITE_PINS_PARAMETERS, gpioclx/PGPIO_WRITE_PINS_PARAMETERS, gpioclx/GPIO_WRITE_PINS_PARAMETERS, GPIO_WRITE_PINS_PARAMETERS structure [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GPIO_WRITE_PINS_PARAMETERS
-req.alt-loc : Gpioclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : GPIO_WRITE_PINS_PARAMETERS, *PGPIO_WRITE_PINS_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PGPIO_WRITE_PINS_PARAMETERS, GPIO_WRITE_PINS_PARAMETERS"
 ---
 
 # _GPIO_WRITE_PINS_PARAMETERS structure
@@ -51,33 +55,33 @@ typedef struct _GPIO_WRITE_PINS_PARAMETERS {
 
 ## Members
 
-        
-            `BankId`
 
-            The identifier for the bank of GPIO pins that contains the pins to write to. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
-        
-            `Buffer`
+`BankId`
 
-            A pointer to a buffer that contains the bit values that this callback function is to write to the GPIO pins that are identified in the <b>PinNumberTable</b> array. The function writes bit 0 (the least significant bit) from the buffer to the GPIO pin that is identified by array element 0, writes bit 1 from the buffer to the pin identified by array element 1, and so on.
-        
-            `Flags`
+The identifier for the bank of GPIO pins that contains the pins to write to. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
 
-            A set of flags to control the GPIO pin write operation. No flags are currently defined for this operation.
-        
-            `PinCount`
+`Buffer`
 
-            The number of elements in the <b>PinNumberTable</b> array.
-        
-            `PinNumberTable`
+A pointer to a buffer that contains the bit values that this callback function is to write to the GPIO pins that are identified in the <b>PinNumberTable</b> array. The function writes bit 0 (the least significant bit) from the buffer to the GPIO pin that is identified by array element 0, writes bit 1 from the buffer to the pin identified by array element 1, and so on.
 
-            A pointer to an array of bank-relative PIN_NUMBER values. Each array element specifies the number of a GPIO pin to write to. If this bank has N pins, the pins are numbered 0 to N–1. The number of elements in this array is specified by the <b>PinCount</b> member.
-        
-            `Reserved`
+`Flags`
 
-            Reserved for system use.
+A set of flags to control the GPIO pin write operation. No flags are currently defined for this operation.
 
-    ## Remarks
-        The <i>WriteParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a> event callback function is a pointer to a caller-allocated <b>GPIO_WRITE_PINS_PARAMETERS</b> structure. All of the pins that this function writes to are part of the same bank of GPIO pins.
+`PinCount`
+
+The number of elements in the <b>PinNumberTable</b> array.
+
+`PinNumberTable`
+
+A pointer to an array of bank-relative PIN_NUMBER values. Each array element specifies the number of a GPIO pin to write to. If this bank has N pins, the pins are numbered 0 to N–1. The number of elements in this array is specified by the <b>PinCount</b> member.
+
+`Reserved`
+
+Reserved for system use.
+
+## Remarks
+The <i>WriteParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a> event callback function is a pointer to a caller-allocated <b>GPIO_WRITE_PINS_PARAMETERS</b> structure. All of the pins that this function writes to are part of the same bank of GPIO pins.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,19 +91,14 @@ typedef struct _GPIO_WRITE_PINS_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | gpioclx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
  
 
  

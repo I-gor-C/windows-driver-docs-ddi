@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5ff63606-ced1-4482-b967-41db4746ac1d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OPENRESOURCE, D3DKMT_OPENRESOURCE
+ms.keywords : OpenGL_Structs_b069a94a-b78c-4fbf-b78d-7c5b0d025655.xml, D3DKMT_OPENRESOURCE, _D3DKMT_OPENRESOURCE, d3dkmthk/D3DKMT_OPENRESOURCE, display.d3dkmt_openresource, D3DKMT_OPENRESOURCE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OPENRESOURCE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OPENRESOURCE
 ---
 
@@ -62,46 +66,46 @@ typedef struct _D3DKMT_OPENRESOURCE {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the device that the resource and allocations are associated with.
-        
-            `hGlobalShare`
+`hDevice`
 
-            [in] A handle to the shared resource to open.
-        
-            `hResource`
+[in] A handle to the device that the resource and allocations are associated with.
 
-            [out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the newly opened shared resource that is associated with the allocations.
-        
-            `NumAllocations`
+`hGlobalShare`
 
-            [in] The number of elements in the array that <b>pOpenAllocationInfo</b> specifies, which represents the number of allocations that are associated with the resource.
-        
-            `pPrivateRuntimeData`
+[in] A handle to the shared resource to open.
 
-            [in] A pointer to a caller-supplied buffer where the OpenGL runtime copies private data that is associated with the resource.
-        
-            `pResourcePrivateDriverData`
+`hResource`
 
-            [in/out] A pointer to a buffer that receives the private data that is associated with the resource. This data is per resource and not per allocation.
-        
-            `PrivateRuntimeDataSize`
+[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the newly opened shared resource that is associated with the allocations.
 
-            [in] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to.
-        
-            `pTotalPrivateDriverDataBuffer`
+`NumAllocations`
 
-            [in/out] A pointer to a buffer that receives the private data for all of the allocations that are associated with the resource. The caller should never access this private data directly.
-        
-            `ResourcePrivateDriverDataSize`
+[in] The number of elements in the array that <b>pOpenAllocationInfo</b> specifies, which represents the number of allocations that are associated with the resource.
 
-            [in] The size, in bytes, of the buffer that <b>pResourcePrivateDriverData</b> points to.
-        
-            `TotalPrivateDriverDataBufferSize`
+`pPrivateRuntimeData`
 
-            [in/out] On input, the size, in bytes, of the buffer that <b>pTotalPrivateDriverDataBuffer</b> points to. On output, this member specifies the size, in bytes, of data that is written to the buffer that <b>pTotalPrivateDriverDataBuffer</b> points to.
+[in] A pointer to a caller-supplied buffer where the OpenGL runtime copies private data that is associated with the resource.
+
+`pResourcePrivateDriverData`
+
+[in/out] A pointer to a buffer that receives the private data that is associated with the resource. This data is per resource and not per allocation.
+
+`PrivateRuntimeDataSize`
+
+[in] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to.
+
+`pTotalPrivateDriverDataBuffer`
+
+[in/out] A pointer to a buffer that receives the private data for all of the allocations that are associated with the resource. The caller should never access this private data directly.
+
+`ResourcePrivateDriverDataSize`
+
+[in] The size, in bytes, of the buffer that <b>pResourcePrivateDriverData</b> points to.
+
+`TotalPrivateDriverDataBufferSize`
+
+[in/out] On input, the size, in bytes, of the buffer that <b>pTotalPrivateDriverDataBuffer</b> points to. On output, this member specifies the size, in bytes, of data that is written to the buffer that <b>pTotalPrivateDriverDataBuffer</b> points to.
 
 
 ## Requirements
@@ -112,16 +116,12 @@ typedef struct _D3DKMT_OPENRESOURCE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
+
  
 
  

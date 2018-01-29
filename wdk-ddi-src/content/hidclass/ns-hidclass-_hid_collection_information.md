@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 47490858-3fe0-4a94-adae-6589cad6a842
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HID_COLLECTION_INFORMATION, HID_COLLECTION_INFORMATION, *PHID_COLLECTION_INFORMATION
+ms.keywords : hidstrct_d61a583e-66c7-4851-ba75-3e5973a95c70.xml, *PHID_COLLECTION_INFORMATION, HID_COLLECTION_INFORMATION, _HID_COLLECTION_INFORMATION, hidclass/HID_COLLECTION_INFORMATION, hid.hid_collection_information, PHID_COLLECTION_INFORMATION structure pointer [Human Input Devices], hidclass/PHID_COLLECTION_INFORMATION, PHID_COLLECTION_INFORMATION, HID_COLLECTION_INFORMATION structure [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HID_COLLECTION_INFORMATION
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HID_COLLECTION_INFORMATION, *PHID_COLLECTION_INFORMATION
 ---
 
@@ -51,33 +55,33 @@ typedef struct _HID_COLLECTION_INFORMATION {
 
 ## Members
 
-        
-            `DescriptorSize`
 
-            Specifies the size, in bytes, of a collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.
-        
-            `Polled`
+`DescriptorSize`
 
-            Indicates, if <b>TRUE</b>, that the HID class driver must poll the device to receive data. Otherwise, if <b>Polled</b> is <b>FALSE</b>, the device uses asynchronous interrupts to signal the host that the device has HID reports to send to the host.
-        
-            `ProductID`
+Specifies the size, in bytes, of a collection's <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.
 
-            Specifies a HID device's product ID.
-        
-            `Reserved1`
+`Polled`
 
-            Reserved for internal system use.
-        
-            `VendorID`
+Indicates, if <b>TRUE</b>, that the HID class driver must poll the device to receive data. Otherwise, if <b>Polled</b> is <b>FALSE</b>, the device uses asynchronous interrupts to signal the host that the device has HID reports to send to the host.
 
-            Specifies a HID device's vendor ID.
-        
-            `VersionNumber`
+`ProductID`
 
-            Specifies the manufacturer's revision number for a HID device.
+Specifies a HID device's product ID.
 
-    ## Remarks
-        Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a> to obtain a collection's <b>HID_COLLECTION_INFORMATION</b> structure.
+`Reserved1`
+
+Reserved for internal system use.
+
+`VendorID`
+
+Specifies a HID device's vendor ID.
+
+`VersionNumber`
+
+Specifies the manufacturer's revision number for a HID device.
+
+## Remarks
+Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a> to obtain a collection's <b>HID_COLLECTION_INFORMATION</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,19 +91,14 @@ typedef struct _HID_COLLECTION_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\hidclass\ns-hidclass-_hid_collection_information.md">HID_COLLECTION_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
+
  
 
  

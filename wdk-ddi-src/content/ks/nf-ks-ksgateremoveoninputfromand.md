@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ee8bf34e-f7f6-4b1a-8089-2f7a7333c403
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGateRemoveOnInputFromAnd
+ms.keywords : avfunc_216ba85c-20fe-4160-a76f-53cab6693641.xml, stream.ksgateremoveoninputfromand, KsGateRemoveOnInputFromAnd function [Streaming Media Devices], ks/KsGateRemoveOnInputFromAnd, KsGateRemoveOnInputFromAnd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGateRemoveOnInputFromAnd
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -79,23 +83,16 @@ This call is an empty function. It should be used for code readability and clari
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoninputtoand.md">KsGateAddOnInputToAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgateaddoninputtoand.md">KsGateAddOnInputToAnd</a>
+
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
+
+<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
+
+<a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
+
  
 
  

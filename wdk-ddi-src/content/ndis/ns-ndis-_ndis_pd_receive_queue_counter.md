@@ -7,8 +7,8 @@ old-location : netvista\ndis_pd_receive_queue_counter.htm
 old-project : netvista
 ms.assetid : E42705A4-D018-435E-BA98-3EE5BA5EDE66
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_PD_RECEIVE_QUEUE_COUNTER, NDIS_PD_RECEIVE_QUEUE_COUNTER
+ms.date : 1/18/2018
+ms.keywords : NDIS_PD_RECEIVE_QUEUE_COUNTER structure [Network Drivers Starting with Windows Vista], _NDIS_PD_RECEIVE_QUEUE_COUNTER, NDIS_PD_RECEIVE_QUEUE_COUNTER, PNDIS_PD_RECEIVE_QUEUE_COUNTER, ndis/NDIS_PD_RECEIVE_QUEUE_COUNTER, PNDIS_PD_RECEIVE_QUEUE_COUNTER structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_PD_RECEIVE_QUEUE_COUNTER, netvista.ndis_pd_receive_queue_counter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_PD_RECEIVE_QUEUE_COUNTER
-req.alt-loc : Ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_PD_RECEIVE_QUEUE_COUNTER
 ---
 
@@ -48,18 +52,18 @@ typedef struct _NDIS_PD_RECEIVE_QUEUE_COUNTER {
 
 ## Members
 
-        
-            `BytesReceived`
 
-            The amount of bytes received.
-        
-            `PacketsDropped`
+`BytesReceived`
 
-            The amount of packets dropped.
-        
-            `PacketsReceived`
+The amount of bytes received.
 
-            The amount of packets received.
+`PacketsDropped`
+
+The amount of packets dropped.
+
+`PacketsReceived`
+
+The amount of packets received.
 
 
 ## Requirements

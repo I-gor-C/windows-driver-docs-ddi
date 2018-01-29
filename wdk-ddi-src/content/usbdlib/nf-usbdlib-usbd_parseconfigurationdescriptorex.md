@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : c14b3cde-b501-4d07-96ae-f0e0e6320966
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_ParseConfigurationDescriptorEx
+ms.keywords : usbfunc_c493d121-9821-4381-b756-fa417c8f5f93.xml, buses.usbd_parseconfigurationdescriptorex, USBD_ParseConfigurationDescriptorEx routine [Buses], usbdlib/USBD_ParseConfigurationDescriptorEx, USBD_ParseConfigurationDescriptorEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_ParseConfigurationDescriptorEx
-req.alt-loc : Usbd.lib,Usbd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbd.lib
 req.dll : 
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -108,12 +112,10 @@ When this routine parses the configuration descriptor looking for the interface 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
-</dt>
-<dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
  
 
  

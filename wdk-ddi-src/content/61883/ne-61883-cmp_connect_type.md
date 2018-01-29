@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 8C206071-2616-4BFB-B7CA-E872CC8D5405
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CMP_CONNECT_TYPE, CMP_CONNECT_TYPE
+ms.keywords : 61883/CMP_Broadcast, CMP_PointToPoint, CMP_CONNECT_TYPE enumeration [Buses], CMP_CONNECT_TYPE, IEEE.cmp_connect_type, 61883/CMP_PointToPoint, CMP_Broadcast, 61883/CMP_CONNECT_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_CONNECT_TYPE
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CMP_CONNECT_TYPE
 ---
 
@@ -71,11 +75,8 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

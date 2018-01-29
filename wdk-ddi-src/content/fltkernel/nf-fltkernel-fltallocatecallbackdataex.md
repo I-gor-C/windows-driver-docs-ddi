@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f03851a4-e1e9-4fee-b264-c2f91c6e8180
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAllocateCallbackDataEx
+ms.keywords : FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml, ifsk.fltallocatecallbackdataex, FltAllocateCallbackDataEx routine [Installable File System Drivers], fltkernel/FltAllocateCallbackDataEx, FltAllocateCallbackDataEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltAllocateCallbackDataEx
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -79,8 +83,8 @@ The <b>FltAllocateCallbackDataEx</b> routine returns STATUS_SUCCESS on success o
 ## Remarks
 
 If the FLT_ALLOCATE_CALLBACK_DATA_PREALLOCATE_ALL_MEMORY flag is set, the routine allocates all the memory needed for additional filter manager structures to be used in a subsequent I/O request. Using this flag enables a minifilter to preallocate one or more callback data structures to be used for issuing I/O requests under low memory conditions or in situations where recovering from a memory allocation failure might be complicated. 
-
-Set <i>FileObject</i> to <b>NULL</b> if this is a CREATE operation.
+<div class="alert"><b>Note</b>   The additional allocated memory is for use by the filter manager. The file system or other filters can still fail the I/O request due to an out-of-memory condition.</div><div> </div>Set <i>FileObject</i> to <b>NULL</b> if this is a CREATE operation.
+<div class="alert"><b>Important</b>    The comments for <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a> apply to <b>FltAllocateCallbackDataEx</b> as well. Review that information in order to select the correct routine for your design. </div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,14 +100,10 @@ Set <i>FileObject</i> to <b>NULL</b> if this is a CREATE operation.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-</dl>
+
  
 
  

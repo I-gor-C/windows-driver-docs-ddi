@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 9F33E535-21C1-446F-93AA-B86157904F68
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERCX2_CONFIG, *PSERCX2_CONFIG, SERCX2_CONFIG
+ms.keywords : _SERCX2_CONFIG, SERCX2_CONFIG, 2/PSERCX2_CONFIG, 2/SERCX2_CONFIG, PSERCX2_CONFIG, SERCX2_CONFIG structure [Serial Ports], PSERCX2_CONFIG structure pointer [Serial Ports], serports.sercx2_config, *PSERCX2_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SERCX2_CONFIG
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any IRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSERCX2_CONFIG, SERCX2_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -56,49 +60,49 @@ typedef struct _SERCX2_CONFIG {
 
 ## Members
 
-        
-            `EvtSerCx2ApplyConfig`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_apply_config.md">EvtSerCx2ApplyConfig</a> event callback function. This member must point to a valid function.
-        
-            `EvtSerCx2Control`
+`EvtSerCx2ApplyConfig`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_control.md">EvtSerCx2Control</a> event callback function. This member must point to a valid function.
-        
-            `EvtSerCx2FileClose`
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_apply_config.md">EvtSerCx2ApplyConfig</a> event callback function. This member must point to a valid function.
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_fileclose.md">EvtSerCx2FileClose</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
-        
-            `EvtSerCx2FileOpen`
+`EvtSerCx2Control`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_fileopen.md">EvtSerCx2FileOpen</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement an <i>EvtSerCx2FileClose</i> function.
-        
-            `EvtSerCx2PurgeFifos`
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_control.md">EvtSerCx2Control</a> event callback function. This member must point to a valid function.
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_purge_fifos.md">EvtSerCx2PurgeFifos</a> event callback function. This member must point to a valid function.
-        
-            `EvtSerCx2SelectNextReceiveTransactionType`
+`EvtSerCx2FileClose`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
-        
-            `EvtSerCx2SelectNextTransmitTransactionType`
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_fileclose.md">EvtSerCx2FileClose</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
-        
-            `EvtSerCx2SetWaitMask`
+`EvtSerCx2FileOpen`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_set_wait_mask.md">EvtSerCx2SetWaitmask</a> event callback function. This member must point to a valid function.
-        
-            `RequestAttributes`
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_fileopen.md">EvtSerCx2FileOpen</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function. However, a driver that implements this function must also implement an <i>EvtSerCx2FileClose</i> function.
 
-            A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes to assign to the framework request objects that SerCx2 passes to the serial controller driver. Before calling the <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method, the caller must call the <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize the structure. This member is optional and can be specified as WDF_NO_OBJECT_ATTRIBUTES if the serial controller driver does not need to assign attributes to the object. For more information, see Remarks.
-        
-            `Size`
+`EvtSerCx2PurgeFifos`
 
-            The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_purge_fifos.md">EvtSerCx2PurgeFifos</a> event callback function. This member must point to a valid function.
 
-    ## Remarks
-        The <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method accepts a pointer to a <b>SERCX2_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2InitializeDevice</b>, call the <a href="..\sercx\nf-sercx-sercx2_config_init.md">SERCX2_CONFIG_INIT</a> function to initialize this structure.
+`EvtSerCx2SelectNextReceiveTransactionType`
+
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
+
+`EvtSerCx2SelectNextTransmitTransactionType`
+
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
+
+`EvtSerCx2SetWaitMask`
+
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_set_wait_mask.md">EvtSerCx2SetWaitmask</a> event callback function. This member must point to a valid function.
+
+`RequestAttributes`
+
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes to assign to the framework request objects that SerCx2 passes to the serial controller driver. Before calling the <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method, the caller must call the <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize the structure. This member is optional and can be specified as WDF_NO_OBJECT_ATTRIBUTES if the serial controller driver does not need to assign attributes to the object. For more information, see Remarks.
+
+`Size`
+
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+
+## Remarks
+The <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method accepts a pointer to a <b>SERCX2_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2InitializeDevice</b>, call the <a href="..\sercx\nf-sercx-sercx2_config_init.md">SERCX2_CONFIG_INIT</a> function to initialize this structure.
 
 If the <b>RequestAttributes</b> member points to a <b>WDF_OBJECT_ATTRIBUTES</b> structure, the caller must not overwrite the values that the <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> initialization function writes to the <b>ParentObject</b>, <b>ExecutionLevel</b>, and <b>SynchronizationScope</b> members of this structure.
 
@@ -114,46 +118,32 @@ A driver that never needs a request context does not need to call <b>WdfDeviceIn
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_apply_config.md">EvtSerCx2ApplyConfig</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_control.md">EvtSerCx2Control</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_fileclose.md">EvtSerCx2FileClose</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_fileopen.md">EvtSerCx2FileOpen</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_purge_fifos.md">EvtSerCx2PurgeFifos</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_set_wait_mask.md">EvtSerCx2SetWaitmask</a>
-</dt>
-<dt>
 <a href="..\sercx\nf-sercx-sercx2_config_init.md">SERCX2_CONFIG_INIT</a>
-</dt>
-<dt>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_apply_config.md">EvtSerCx2ApplyConfig</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_control.md">EvtSerCx2Control</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_set_wait_mask.md">EvtSerCx2SetWaitmask</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a>
+
 <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
-</dt>
-<dt>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_fileclose.md">EvtSerCx2FileClose</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_fileopen.md">EvtSerCx2FileOpen</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_purge_fifos.md">EvtSerCx2PurgeFifos</a>
+
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
+
 <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : A1DCC547-8CAA-46B9-A855-5F591C69A3B0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG
+ms.keywords : PGNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG structure [Sensor Devices], PGNSS_V2UPL_CONFIG structure pointer [Sensor Devices], gnssdriver/GNSS_V2UPL_CONFIG, sensors.gnss_v2upl_config, GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG, gnssdriver/PGNSS_V2UPL_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_V2UPL_CONFIG
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG
 ---
 
 # GNSS_V2UPL_CONFIG structure
@@ -50,18 +54,30 @@ typedef struct {
 
 ## Members
 
-        
-            `ApplicationTypeIndicator_MR`
 
-            Application type indicator for any mobile originated location request to the MPC. It shall be set to the value for Microsoft resident applications based on intelligent platform.
-        
-            `Size`
+`ApplicationTypeIndicator_MR`
 
-            Structure size.
-        
-            `Version`
+Application type indicator for any mobile originated location request to the MPC. It shall be set to the value for Microsoft resident applications based on intelligent platform.
 
-            Version number.
+`MPC`
+
+
+
+`PDE`
+
+
+
+`Size`
+
+Structure size.
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

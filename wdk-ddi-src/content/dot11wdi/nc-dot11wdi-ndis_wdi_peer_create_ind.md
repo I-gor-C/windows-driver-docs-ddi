@@ -7,8 +7,8 @@ old-location : netvista\ndiswdipeercreateindication.htm
 old-project : netvista
 ms.assetid : 58B60160-FE04-4EDE-900F-244D0F76E50D
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.date : 1/18/2018
+ms.keywords : netvista.ndiswdipeercreateindication, NdisWdiPeerCreateIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiPeerCreateIndication, NDIS_WDI_PEER_CREATE_IND, NDIS_WDI_PEER_CREATE_IND, dot11wdi/NdisWdiPeerCreateIndication
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisWdiPeerCreateIndication
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSYNTH_STATS, SYNTH_STATS"
 ---
 
 
@@ -103,25 +107,18 @@ In peer queuing mode, a peer is created with all TIDs paused with <b>WDI_TX_PAUS
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
-</dt>
-<dt>
-<a href="..\dot11wdi\ns-dot11wdi-_wdi_mac_address.md">WDI_MAC_ADDRESS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt297658">WDI_PEER_ID</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt269099">WDI_PORT_ID</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/5B40171C-4E5F-4C35-A6E7-1EA5181C02E8">WDI general datapath interfaces</a>
-</dt>
-</dl>
- 
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt297658">WDI_PEER_ID</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt269099">WDI_PORT_ID</a>
+
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
+
+<a href="..\dot11wdi\ns-dot11wdi-_wdi_mac_address.md">WDI_MAC_ADDRESS</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_PEER_CREATE_IND callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_PEER_CREATE_IND callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

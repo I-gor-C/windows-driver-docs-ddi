@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aaf3d22d-da54-4478-9bf8-aad4b943788a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoResourceListCreate
+ms.keywords : wdfresource/WdfIoResourceListCreate, DFResourceObjectRef_7130ba6a-fc24-4785-9fa3-c8fd159f63fb.xml, kmdf.wdfioresourcelistcreate, WdfIoResourceListCreate, PFN_WDFIORESOURCELISTCREATE, WdfIoResourceListCreate method, wdf.wdfioresourcelistcreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfIoResourceListCreate
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -82,8 +86,6 @@ For more information about resource requirements lists and logical configuration
 
 The caller-specified resource-requirements-list object becomes the parent of the new resource-range-list object. The driver cannot change this parent, and the <b>ParentObject</b> member or the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure must be <b>NULL</b>.
 
-For a code example that uses <b>WdfIoResourceListCreate</b>, see <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistappendioreslist.md">WdfIoResourceRequirementsListAppendIoResList</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -98,11 +100,8 @@ For a code example that uses <b>WdfIoResourceListCreate</b>, see <a href="..\wdf
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

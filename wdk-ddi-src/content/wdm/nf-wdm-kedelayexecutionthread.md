@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe8dc704-3baf-4955-85fe-bba19181dbbf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeDelayExecutionThread
+ms.keywords : KeDelayExecutionThread, kernel.kedelayexecutionthread, wdm/KeDelayExecutionThread, KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeDelayExecutionThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlKeApcLte1, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,17 +71,45 @@ Specifies the absolute or relative time, in units of 100 nanoseconds, for which 
 ## Return Value
 
 <b>KeDelayExecutionThread</b> returns one of the following values that describes how the delay was completed:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The delay completed because the specified interval elapsed.
+</dl>
+</td>
+<td width="60%">
+The delay completed because the specified interval elapsed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ALERTED</b></dt>
-</dl>The delay completed because the thread was alerted.
+</dl>
+</td>
+<td width="60%">
+The delay completed because the thread was alerted.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_USER_APC</b></dt>
-</dl>A user-mode APC was delivered before the specified <i>Interval </i>expired.
+</dl>
+</td>
+<td width="60%">
+A user-mode APC was delivered before the specified <i>Interval </i>expired.
 
- 
+</td>
+</tr>
+</table> 
 
 Note that the NT_SUCCESS macro recognizes all of these status values as "success" values.
 
@@ -113,11 +145,8 @@ Expiration times are measured relative to the system clock, and the accuracy wit
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
-</dt>
-</dl>
+
  
 
  

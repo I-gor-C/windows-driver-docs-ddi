@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d41e0774-54b4-43cc-997d-fbd512440450
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWavePciStream, IMiniportWavePciStream::Service, Service
+ms.keywords : audio.iminiportwavepcistream_service, portcls/IMiniportWavePciStream::Service, Service method [Audio Devices], Service method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::Service, IMiniportWavePciStream interface [Audio Devices], Service method, audmp-routines_c723ca89-3315-43a2-b93b-86c5bce87910.xml, Service, IMiniportWavePciStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWavePciStream.Service
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -74,23 +78,16 @@ When the miniport driver's ISR calls the port driver's <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536735">IMiniportWavePci::NewStream</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536735">IMiniportWavePci::NewStream</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536918">IPortWavePci::Notify</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
  
 
  

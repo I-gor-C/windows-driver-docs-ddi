@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5C6DC011-4032-4DB6-AE17-88E510DF9A3A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFInterrupt, IWDFInterrupt::QueueWorkItemForIsr, QueueWorkItemForIsr
+ms.keywords : IWDFInterrupt, umdf.iwdfinterrupt_queueworkitemforisr, IWDFInterrupt::QueueWorkItemForIsr, IWDFInterrupt interface, QueueWorkItemForIsr method, wudfddi/IWDFInterrupt::QueueWorkItemForIsr, QueueWorkItemForIsr method, QueueWorkItemForIsr, wdf.iwdfinterrupt_queueworkitemforisr, QueueWorkItemForIsr method, IWDFInterrupt interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFInterrupt.QueueWorkItemForIsr
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 The method returns TRUE if a work item was successfully queued. If a work item is already in the queue, the method returns FALSE.
 
-The method returns TRUE if a work item was successfully queued. If a work item is already in the queue, the method returns FALSE.
-
-The method returns TRUE if a work item was successfully queued. If a work item is already in the queue, the method returns FALSE.
-
 ## Remarks
 
 The driver provides a pointer to its <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf_interrupt_workitem.md">OnInterruptWorkItem</a> callback function when it calls  <a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice3::CreateInterrupt</a> to create the interrupt object.
@@ -79,17 +79,12 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf_interrupt_workitem.md">OnInterruptWorkItem</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/B34EABF4-C659-4DB4-AEC6-94F544D79221">IWDFDevice3::CreateWorkItem</a>
-</dt>
-</dl>
+
  
 
  

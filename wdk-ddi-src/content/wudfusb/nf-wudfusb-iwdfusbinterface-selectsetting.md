@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c47b025b-1be9-4fdc-965a-a9a82a394177
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface, IWDFUsbInterface::SelectSetting, SelectSetting
+ms.keywords : SelectSetting, IWDFUsbInterface::SelectSetting, IWDFUsbInterface, UMDFUSBref_2de47773-a511-42e2-b6bb-289cc5fbebb6.xml, SelectSetting method, IWDFUsbInterface interface, wdf.iwdfusbinterface_selectsetting, SelectSetting method, umdf.iwdfusbinterface_selectsetting, wudfusb/IWDFUsbInterface::SelectSetting, IWDFUsbInterface interface, SelectSetting method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbInterface.SelectSetting
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -59,17 +63,47 @@ The setting to select on the USB interface.
 ## Return Value
 
 <b>SelectSetting</b> returns one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/c47b025b-1be9-4fdc-965a-a9a82a394177">SelectSetting</a> successfully selected the setting that the <i>SettingNumber</i> parameter specified. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/c47b025b-1be9-4fdc-965a-a9a82a394177">SelectSetting</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</dl>
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,11 +125,8 @@ For more info <a href="https://msdn.microsoft.com/library/windows/hardware/ff539
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
-</dt>
-</dl>
+
  
 
  

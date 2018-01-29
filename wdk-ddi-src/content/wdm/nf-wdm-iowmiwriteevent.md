@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6b98861c-b108-4b07-b494-e3647d03de4c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMIWriteEvent
+ms.keywords : kernel.iowmiwriteevent, k104_ec484b7e-1653-4054-8a54-021a94303ec4.xml, IoWMIWriteEvent routine [Kernel-Mode Driver Architecture], IoWMIWriteEvent, wdm/IoWMIWriteEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWMIWriteEvent
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -57,18 +61,56 @@ Pointer to a <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_IT
 ## Return Value
 
 <b>IoWMIWriteEvent</b> returns a status code from the following list:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Indicates that WMI has successfully queued the event for delivery to the user-mode WMI components.
+</dl>
+</td>
+<td width="60%">
+Indicates that WMI has successfully queued the event for delivery to the user-mode WMI components.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>Indicates that WMI services are unavailable. 
+</dl>
+</td>
+<td width="60%">
+Indicates that WMI services are unavailable. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>Indicates that the event item specified exceeds the maximum allowed size.
+</dl>
+</td>
+<td width="60%">
+Indicates that the event item specified exceeds the maximum allowed size.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates that insufficient resources were available for WMI to queue the event for delivery.
+</dl>
+</td>
+<td width="60%">
+Indicates that insufficient resources were available for WMI to queue the event for delivery.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -92,14 +134,10 @@ Callers of this routine must be running at IRQL &lt;= APC_LEVEL, with one except
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWmiDeviceObjectToProviderId</a>
-</dt>
-<dt>
 <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWmiDeviceObjectToProviderId</a>
+
  
 
  

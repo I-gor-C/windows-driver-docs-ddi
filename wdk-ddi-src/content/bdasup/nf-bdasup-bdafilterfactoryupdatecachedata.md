@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c4b8220a-bd54-4e41-a00e-3750a3f03cae
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaFilterFactoryUpdateCacheData
+ms.keywords : stream.bdafilterfactoryupdatecachedata, BdaFilterFactoryUpdateCacheData, BdaFilterFactoryUpdateCacheData function [Streaming Media Devices], bdaref_b384500e-7b80-4413-a950-f7cf7aed3f54.xml, bdasup/BdaFilterFactoryUpdateCacheData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaFilterFactoryUpdateCacheData
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -55,7 +59,7 @@ Points to the <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> for 
 
 `OPTIONAL`
 
-
+TBD
 
 
 ## Return Value
@@ -82,20 +86,14 @@ The <a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-</dt>
-<dt>
+
+<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
+
+<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+
 <a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNoKSPins</a>
-</dt>
-</dl>
+
  
 
  

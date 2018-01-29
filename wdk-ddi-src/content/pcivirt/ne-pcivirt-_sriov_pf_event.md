@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : e2b40a9d-57e6-49b1-839a-d34acb108807
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_PF_EVENT, SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+ms.keywords : SRIOV_PF_EVENT enumeration [Buses], SRIOV_PF_EVENT, SriovEventPfRestart, *PSRIOV_PF_EVENT, _SRIOV_PF_EVENT, pcivirt/SriovEventPfQueryStopDevice, pcivirt/SriovEventPfRestart, PCI.sriov_pf_event, pcivirt/SriovEventPfMaximum, SriovEventPfMaximum, SriovEventPfQueryStopDevice, pcivirt/SRIOV_PF_EVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_PF_EVENT
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSRIOV_PF_EVENT, SRIOV_PF_EVENT"
 ---
 
 # _SRIOV_PF_EVENT Enumeration
@@ -77,14 +81,10 @@ typedef enum _SRIOV_PF_EVENT {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/3f2d67e0-abab-40a1-b4a9-cb65e81884e9">IOCTL_SRIOV_NOTIFICATION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/5299ec17-1fcb-4449-9ec4-73a4d818df0d">IOCTL_SRIOV_EVENT_COMPLETE</a>
-</dt>
-</dl>
+
  
 
  

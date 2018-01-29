@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c9cdc0fc-e292-4142-a070-50a25a2a5673
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _AddPort_IN, AddPort_IN, *PAddPort_IN
+ms.keywords : hbapiwmi/PAddPort_IN, *PAddPort_IN, PAddPort_IN, AddPort_IN, PAddPort_IN structure pointer [Storage Devices], _AddPort_IN, AddPort_IN structure [Storage Devices], structs-Fibre_0f7b349b-048b-444c-b8ac-bdf63b00f998.xml, storage.addport_in, hbapiwmi/AddPort_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AddPort_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : AddPort_IN, *PAddPort_IN
 ---
 
@@ -46,10 +50,10 @@ typedef struct _AddPort_IN {
 
 ## Members
 
-        
-            `PortWWN`
 
-            Contains a worldwide name that indicates the port whose events are to be reported.
+`PortWWN`
+
+Contains a worldwide name that indicates the port whose events are to be reported.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _AddPort_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545022">AddPort</a>
-</dt>
-</dl>
+
  
 
  

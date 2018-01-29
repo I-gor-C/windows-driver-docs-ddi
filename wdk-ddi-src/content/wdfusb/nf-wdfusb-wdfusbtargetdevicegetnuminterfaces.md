@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d81bdeeb-07de-483d-9803-3577f1076e28
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceGetNumInterfaces
+ms.keywords : WdfUsbTargetDeviceGetNumInterfaces method, PFN_WDFUSBTARGETDEVICEGETNUMINTERFACES, WdfUsbTargetDeviceGetNumInterfaces, wdf.wdfusbtargetdevicegetnuminterfaces, wdfusb/WdfUsbTargetDeviceGetNumInterfaces, kmdf.wdfusbtargetdevicegetnuminterfaces, DFUsbRef_8819241f-cfcd-49de-8775-4f415ab63593.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbTargetDeviceGetNumInterfaces
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ A bug check occurs if a driver-supplied object handle is invalid.
 
 For more information about the <b>WdfUsbTargetDeviceGetNumInterfaces</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example obtains the number of USB device interfaces that a specified USB device supports.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,11 +84,8 @@ The following code example obtains the number of USB device interfaces that a sp
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-</dt>
-</dl>
+
  
 
  

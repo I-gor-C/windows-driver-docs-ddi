@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 882b47c2-8fbe-4de0-8ef3-206faaf1e990
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsTopology, IKsTopology::CreateNodeInstance, CreateNodeInstance
+ms.keywords : IKsTopology, IKsTopology::CreateNodeInstance, IKsTopology interface [Streaming Media Devices], CreateNodeInstance method, stream.ikstopology_createnodeinstance, ksproxy/IKsTopology::CreateNodeInstance, CreateNodeInstance method [Streaming Media Devices], IKsTopology interface, ksproxy_91ff533c-4aa9-43db-9165-1c0c6f395393.xml, CreateNodeInstance, CreateNodeInstance method [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsTopology.CreateNodeInstance
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -97,17 +101,12 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\ksproxy\nn-ksproxy-ikstopology.md">IKsTopology</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-</dt>
-</dl>
+
+<a href="..\ksproxy\nn-ksproxy-ikstopology.md">IKsTopology</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
  
 
  

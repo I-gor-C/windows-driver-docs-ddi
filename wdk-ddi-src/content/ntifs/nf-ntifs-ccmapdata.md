@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : dccc79ba-68d9-41cf-b86d-37adb83558a0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcMapData
+ms.keywords : CcMapData routine [Installable File System Drivers], ntifs/CcMapData, CcMapData, ccref_1eb788ce-2fb2-40b4-b696-14609a0c8556.xml, ifsk.ccmapdata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcMapData
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -68,7 +72,6 @@ Length of desired data in bytes.
 `Flags`
 
 Bitmask of flags specifying how the mapping operation is to be performed. This is a bitwise OR combination of one or more of the following values: 
-
 <table>
 <tr>
 <th>Value</th>
@@ -94,11 +97,8 @@ Only pages that are already resident in memory are to be mapped.
 
 </td>
 </tr>
-</table>
- 
-
-<div class="alert"><b>Note</b>    In Windows 2000and earlier, this parameter was a BOOLEAN value named <i>Wait</i>: </div>
-<div> </div>
+</table> 
+<div class="alert"><b>Note</b>    In Windows 2000and earlier, this parameter was a BOOLEAN value named <i>Wait</i>: </div><div> </div>
 
 `Bcb`
 
@@ -145,23 +145,16 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
+
 <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
  
 
  

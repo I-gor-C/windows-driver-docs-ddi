@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d3637f5e-d4c1-430c-8511-8aac18fceee2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WdfUsbTargetDeviceSelectConfigType, WdfUsbTargetDeviceSelectConfigType
+ms.keywords : WdfUsbTargetDeviceSelectConfigTypeInvalid, wdfusb/WdfUsbTargetDeviceSelectConfigTypeDeconfig, WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor, WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs, WdfUsbTargetDeviceSelectConfigType enumeration, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs, wdfusb/WdfUsbTargetDeviceSelectConfigTypeSingleInterface, wdfusb/WdfUsbTargetDeviceSelectConfigTypeMultiInterface, wdfusb/WdfUsbTargetDeviceSelectConfigType, WdfUsbTargetDeviceSelectConfigTypeMultiInterface, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInvalid, WdfUsbTargetDeviceSelectConfigType, wdfusb/WdfUsbTargetDeviceSelectConfigTypeUrb, kmdf.wdfusbtargetdeviceselectconfigtype, WdfUsbTargetDeviceSelectConfigTypeSingleInterface, WdfUsbTargetDeviceSelectConfigTypeDeconfig, wdf.wdfusbtargetdeviceselectconfigtype, DFUsbRef_e4ab4d2c-dbca-4d6e-a690-4b362331e53e.xml, _WdfUsbTargetDeviceSelectConfigType, WdfUsbTargetDeviceSelectConfigTypeUrb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbTargetDeviceSelectConfigType
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL  (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WdfUsbTargetDeviceSelectConfigType
 req.product : Windows 10 or later.
 ---
@@ -107,17 +111,12 @@ The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>
-</dt>
-<dt>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
-</dt>
-</dl>
+
  
 
  

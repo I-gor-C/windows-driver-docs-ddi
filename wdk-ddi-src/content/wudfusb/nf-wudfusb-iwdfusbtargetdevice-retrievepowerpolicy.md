@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e15561e3-ba3d-4c65-bb6e-d90f3fab22af
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetDevice, IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy
+ms.keywords : wudfusb/IWDFUsbTargetDevice::RetrievePowerPolicy, IWDFUsbTargetDevice interface, RetrievePowerPolicy method, UMDFUSBref_50da7595-0735-475b-863e-33a689f4fc2b.xml, IWDFUsbTargetDevice, RetrievePowerPolicy method, umdf.iwdfusbtargetdevice_retrievepowerpolicy, RetrievePowerPolicy method, IWDFUsbTargetDevice interface, wdf.iwdfusbtargetdevice_retrievepowerpolicy, IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbTargetDevice.RetrievePowerPolicy
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -69,17 +73,47 @@ A pointer that receives the buffer that contains the WinUsb power policy.
 ## Return Value
 
 <b>RetrievePowerPolicy</b> returns one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/e15561e3-ba3d-4c65-bb6e-d90f3fab22af">RetrievePowerPolicy</a> successfully retrieved the WinUsb power policy. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/e15561e3-ba3d-4c65-bb6e-d90f3fab22af">RetrievePowerPolicy</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</dl>
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,17 +139,12 @@ The <b>RetrievePowerPolicy</b> method generates a UMDF request and synchronously
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540275">WinUsb_GetPowerPolicy</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560385">IWDFUsbTargetDevice::SetPowerPolicy</a>
-</dt>
-</dl>
+
  
 
  

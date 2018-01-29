@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 66fc9bd4-da47-4cd1-baf2-b536272ea28e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _INT10_BIOS_ARGUMENTS, *PINT10_BIOS_ARGUMENTS, INT10_BIOS_ARGUMENTS
+ms.keywords : Video_Structs_986b625a-f1b4-401e-b2db-99463c21e8f9.xml, INT10_BIOS_ARGUMENTS, display.int10_bios_arguments, PINT10_BIOS_ARGUMENTS structure pointer [Display Devices], _INT10_BIOS_ARGUMENTS, video/INT10_BIOS_ARGUMENTS, PINT10_BIOS_ARGUMENTS, INT10_BIOS_ARGUMENTS structure [Display Devices], *PINT10_BIOS_ARGUMENTS, video/PINT10_BIOS_ARGUMENTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : INT10_BIOS_ARGUMENTS
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PINT10_BIOS_ARGUMENTS, INT10_BIOS_ARGUMENTS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : INT10_BIOS_ARGUMENTS, *PINT10_BIOS_ARGUMENTS
 req.product : Windows 10 or later.
 ---
 
@@ -55,45 +59,45 @@ typedef struct _INT10_BIOS_ARGUMENTS {
 
 ## Members
 
-        
-            `Eax`
 
-            
-        
-            `Ebp`
+`Eax`
 
-            Are seven of the x86 microprocessor registers.
-        
-            `Ebx`
 
-            
-        
-            `Ecx`
 
-            
-        
-            `Edi`
+`Ebp`
 
-            
-        
-            `Edx`
+Are seven of the x86 microprocessor registers.
 
-            
-        
-            `Esi`
+`Ebx`
 
-            
-        
-            `SegDs`
 
-            
-        
-            `SegEs`
 
-            Are two of the x86 microprocessor segment registers.
+`Ecx`
 
-    ## Remarks
-        The first seven members of the INT10_BIOS_ARGUMENTS structure are identical to those of the <a href="..\video\ns-video-_video_x86_bios_arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a> structure.
+
+
+`Edi`
+
+
+
+`Edx`
+
+
+
+`Esi`
+
+
+
+`SegDs`
+
+
+
+`SegEs`
+
+Are two of the x86 microprocessor segment registers.
+
+## Remarks
+The first seven members of the INT10_BIOS_ARGUMENTS structure are identical to those of the <a href="..\video\ns-video-_video_x86_bios_arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,16 +107,12 @@ typedef struct _INT10_BIOS_ARGUMENTS {
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\nc-video-pint10_call_bios.md">Int10CallBios</a>
-</dt>
-<dt>
+
 <a href="..\video\ns-video-_video_x86_bios_arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a>
-</dt>
-</dl>
+
  
 
  

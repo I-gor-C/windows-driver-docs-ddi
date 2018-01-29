@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90cec61b-fe49-4fc7-b666-e74f745a00b1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_SampleFormat, DXVA_SampleFormat
+ms.keywords : dxva/DXVA_SampleUnknown, DXVA_SampleFieldSingleEven, dxva/DXVA_SampleFieldInterleavedEvenFirst, dxva/DXVA_SamplePreviousFrame, dxva/DXVA_SampleFormat, dxvaref_342ab3ab-8498-4d6f-a052-aff84c407436.xml, DXVA_SampleFormat, dxva/DXVA_SampleProgressiveFrame, dxva/DXVA_SampleFieldInterleavedOddFirst, display.dxva_sampleformat, DXVA_SampleSubStream, DXVA_SampleFormat enumeration [Display Devices], dxva/DXVA_SampleFieldSingleOdd, DXVA_SampleFieldInterleavedEvenFirst, dxva/DXVA_SampleSubStream, dxva/DXVA_SampleFormatMask, DXVA_SampleFormatMask, DXVA_SamplePreviousFrame, DXVA_SampleFieldInterleavedOddFirst, DXVA_SampleProgressiveFrame, DXVA_SampleFieldSingleOdd, _DXVA_SampleFormat, dxva/DXVA_SampleFieldSingleEven, DXVA_SampleUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_SampleFormat
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_SampleFormat
 ---
 
@@ -115,17 +119,12 @@ Specifies that the sample contains a video substream.</td>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-</dt>
-<dt>
-<a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a>
-</dt>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
-</dt>
-</dl>
+
+<a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a>
+
+<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+
  
 
  

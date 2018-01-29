@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 02fe4216-101e-4ba7-88df-029f8bba9c17
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS
+ms.keywords : display.dxgkarg_commitvidpn_flags, DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS structure [Display Devices], d3dkmddi/DXGKARG_COMMITVIDPN_FLAGS, _DXGKARG_COMMITVIDPN_FLAGS, DmStructs_267e916a-7058-4ce7-892d-9ed9d6f74bce.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_COMMITVIDPN_FLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_COMMITVIDPN_FLAGS
 ---
 
@@ -48,33 +52,33 @@ typedef struct _DXGKARG_COMMITVIDPN_FLAGS {
 
 ## Members
 
-        
-            `PathPoweredOff`
 
-            A UINT value that specifies whether the DirectX graphics kernel subsystem calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> to inform the driver that the user changed modes.
+`PathPoweredOff`
+
+A UINT value that specifies whether the DirectX graphics kernel subsystem calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> to inform the driver that the user changed modes.
 
 If <b>PathPoweredOff</b> is set to <b>TRUE</b>, the display miniport driver should expect present operations that are based on the new topology. The driver cannot perform any operations that would cause the topology path to be powered on again (for example, the driver cannot enable vertical syncs) because the monitor should now be powered off.
 
 If <b>PathPoweredOff</b> is set to <b>FALSE</b>, the topology path is powered on. The display miniport driver should program hardware for present operations that are based on the former topology path, and the driver should commit hardware to support this topology path. Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).
 
 For more information, see the following Remarks section.
-        
-            `PathPowerTransition`
 
-            A UINT value that specifies whether the Microsoft DirectX graphics kernel subsystem calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> function to power off a connected monitor.
+`PathPowerTransition`
+
+A UINT value that specifies whether the Microsoft DirectX graphics kernel subsystem calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> function to power off a connected monitor.
 
 If <b>PathPowerTransition</b> is set to <b>TRUE</b>, the display miniport driver can optimize this call for a power down (for example, the driver might disable vertical syncs). The driver must also be aware that it might still receive calls to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a> function on the affected source.
 
 Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).
 
 For more information, see the following Remarks section.
-        
-            `Reserved`
 
-            This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of a 32-bit value to zeros.
+`Reserved`
 
-    ## Remarks
-        The DXGKARG_COMMITVIDPN_FLAGS structure stores information that the display miniport driver can use to determine how to respond to requested mode changes. With this information, the driver can distinguish between mode changes that occur during regular activity because an application requested a mode change, changes that occur because of power transitions, and changes that occur while monitors are turned off.
+This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of a 32-bit value to zeros.
+
+## Remarks
+The DXGKARG_COMMITVIDPN_FLAGS structure stores information that the display miniport driver can use to determine how to respond to requested mode changes. With this information, the driver can distinguish between mode changes that occur during regular activity because an application requested a mode change, changes that occur because of power transitions, and changes that occur while monitors are turned off.
 
 During regular activity, when the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> function is called, both <b>PathPowerTransition</b> and <b>PathPoweredOff</b> members will be <b>FALSE</b> so that the driver should apply mode changes immediately. Such mode changes are usually performed as isolated events. Therefore, there is no need for the driver to track any state that is associated with the previous mode configuration.
 
@@ -94,19 +98,14 @@ If a system resume operation is triggered after monitors were turned off for a s
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_commitvidpn.md">DXGKARG_COMMITVIDPN</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_set_power_state.md">DxgkDdiSetPowerState</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_commitvidpn.md">DXGKARG_COMMITVIDPN</a>
+
  
 
  

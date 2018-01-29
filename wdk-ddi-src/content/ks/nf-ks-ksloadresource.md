@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a7b9dcca-ce89-4fde-9e58-3c4a675227bc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsLoadResource
+ms.keywords : ks/KsLoadResource, KsLoadResource, stream.ksloadresource, ksfunc_d966a58a-b0f0-411f-a19c-1db726efc56e.xml, KsLoadResource function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsLoadResource
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

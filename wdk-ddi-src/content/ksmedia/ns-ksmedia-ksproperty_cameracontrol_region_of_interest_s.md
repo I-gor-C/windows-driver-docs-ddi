@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0a488d9f-1e34-4482-a2a8-7c160b00766c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, *PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S
+ms.keywords : stream.ksproperty_cameracontrol_region_of_interest_s, ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S structure pointer [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_FOCUS, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_ASYNC, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_EXPOSURE, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONFIG_WB, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_CONVERGEMODE, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, *PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_FLAGS_MANUAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S"
 ---
 
@@ -53,28 +57,28 @@ typedef struct {
 
 ## Members
 
-        
-            `AutoExposureLock`
 
-            If <b>TRUE</b>, the device should lock the exposure to the current value.
+`AutoExposureLock`
 
-This member should be ignored if <b>FocusRect</b> is not a valid value.
-        
-            `AutoFocusLock`
-
-            If <b>TRUE</b>, the device should lock the focus to the current value.
+If <b>TRUE</b>, the device should lock the exposure to the current value.
 
 This member should be ignored if <b>FocusRect</b> is not a valid value.
-        
-            `AutoWhitebalanceLock`
 
-            If <b>TRUE</b>, the device should lock the white balance setting to the current value.
+`AutoFocusLock`
+
+If <b>TRUE</b>, the device should lock the focus to the current value.
 
 This member should be ignored if <b>FocusRect</b> is not a valid value.
-        
-            `FocusRect`
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the rectangular region in which the device should set the focus. This structure is available only to Windows apps.
+`AutoWhitebalanceLock`
+
+If <b>TRUE</b>, the device should lock the white balance setting to the current value.
+
+This member should be ignored if <b>FocusRect</b> is not a valid value.
+
+`FocusRect`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the rectangular region in which the device should set the focus. This structure is available only to Windows apps.
 
 If <b>FocusRect</b> is not a valid value, or if all members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure are zero, the device should focus the center of the image and the remaining members of this structure can be ignored.
 
@@ -89,16 +93,12 @@ The rectangle's coordinates are with respect to the preview video resolution.
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj156041">KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj156041">KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY</a>
+
  
 
  

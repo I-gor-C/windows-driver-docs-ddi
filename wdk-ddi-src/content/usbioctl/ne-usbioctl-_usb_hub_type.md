@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F7516B20-B30F-47BE-BBF3-AB5758D5CF73
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : USB_HUB_TYPE, usbioctl/Usb20Hub, Usb20Hub, _USB_HUB_TYPE, USB_HUB_TYPE enumeration [Buses], Usb30Hub, usbioctl/Usb30Hub, UsbRootHub, usbioctl/USB_HUB_TYPE, buses.usb_hub_type, usbioctl/UsbRootHub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_HUB_TYPE
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,17 +86,12 @@ typedef enum _USB_HUB_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_hub_information_ex.md">USB_HUB_INFORMATION_EX</a>
-</dt>
-<dt>
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_information_ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
-</dt>
-</dl>
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_information_ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
+
  
 
  

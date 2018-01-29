@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 79e8cdb8-8c01-4fed-8490-5adeb52c0ea2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAdapterPowerManagement, IAdapterPowerManagement::QueryDeviceCapabilities, QueryDeviceCapabilities
+ms.keywords : IAdapterPowerManagement, IAdapterPowerManagement interface [Audio Devices], QueryDeviceCapabilities method, QueryDeviceCapabilities, audio.iadapterpowermanagement_querydevicecapabilities, IAdapterPowerManagement::QueryDeviceCapabilities, audmp-routines_e59e3df9-3bfa-4eb0-a7dd-1faa017a48e9.xml, QueryDeviceCapabilities method [Audio Devices], QueryDeviceCapabilities method [Audio Devices], IAdapterPowerManagement interface, portcls/IAdapterPowerManagement::QueryDeviceCapabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IAdapterPowerManagement.QueryDeviceCapabilities
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -66,8 +70,22 @@ Typically, the adapter driver should not change these settings. If the adapter d
 In order to fill in the <i>PowerDeviceCaps</i> structure for a device, the adapter driver should call <a href="..\portcls\nf-portcls-pcregisteradapterpowermanagement.md">PcRegisterAdapterPowerManagement</a> to register the <b>IAdapterPowerManagement</b> interface at device-startup time. The operating system queries devices before calling the adapter driver's device-startup routine.
 
 In order to change the mappings between system power states and device power states, the adapter driver changes the values in the <b>DeviceState</b> array in the <i>PowerDeviceCaps</i> structure. These mappings should be changed only if necessary. The following code example shows how to map D1 mappings to D3:
-
-The code for the <code>QueryDeviceCapabilities</code> method must reside in paged memory.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>  for (i=ULONG(PowerSystemWorking); i&lt;=ULONG(PowerSystemShutdown); i++)
+      {
+          if (PowerDeviceCaps-&gt;DeviceState[i] == PowerDeviceD1)
+          {
+              PowerDeviceCaps-&gt;DeviceState[i] = PowerDeviceD3;
+          }
+      }</pre>
+</td>
+</tr>
+</table></span></div>The code for the <code>QueryDeviceCapabilities</code> method must reside in paged memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,20 +101,14 @@ The code for the <code>QueryDeviceCapabilities</code> method must reside in page
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551664">IRP_MN_QUERY_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
-</dt>
-<dt>
 <a href="..\portcls\nf-portcls-pcregisteradapterpowermanagement.md">PcRegisterAdapterPowerManagement</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551664">IRP_MN_QUERY_CAPABILITIES</a>
+
+<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
+
+<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
+
  
 
  

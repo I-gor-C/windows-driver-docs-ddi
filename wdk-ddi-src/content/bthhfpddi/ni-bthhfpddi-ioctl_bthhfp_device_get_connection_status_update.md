@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 19863998-99AB-427E-BFBD-B8EF42C74DEF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
+ms.keywords : audio.ioctl_bthhfp_device_get_connection_status_update, IOCTL_BTHHFP_DEVICE_GET_CONNECTION_STATUS_UPDATE control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_CONNECTION_STATUS_UPDATE, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_CONNECTION_STATUS_UPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHHFP_DEVICE_GET_CONNECTION_STATUS_UPDATE
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
 ---
 
@@ -60,11 +64,10 @@ The size of a BOOL.
 <text></text>
 
 ### Status Block
-I/O Status block
 If a request is already pending the new request fails and a STATUS_INVALID_DEVICE_REQUEST message is returned.
 
-    ## Remarks
-        This request will complete immediately if the input parameter is TRUE or if the connection status has changed since the last request. Otherwise this request will remain pending until the connection status changes or the request is cancelled.
+## Remarks
+This request will complete immediately if the input parameter is TRUE or if the connection status has changed since the last request. Otherwise this request will remain pending until the connection status changes or the request is cancelled.
 
 The audio driver sends this request to get the initial connection status, and sends subsequent requests to be updated when the status changes. The driver stores the connection status in appropriate context data.
 
@@ -79,22 +82,16 @@ When handling the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 | **Header** | bthhfpddi.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537134">KSEVENT_PINCAPS_JACKINFOCHANGE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537136">KSJACK_DESCRIPTION</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537364">KSPROPERTY_JACK_DESCRIPTION</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537134">KSEVENT_PINCAPS_JACKINFOCHANGE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 070fc2b0-045e-4778-82d4-0850cd2064a5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WRITE_REGISTER_BUFFER_USHORT
+ms.keywords : WRITE_REGISTER_BUFFER_USHORT, wdm/WRITE_REGISTER_BUFFER_USHORT, kernel.write_register_buffer_ushort, WRITE_REGISTER_BUFFER_USHORT routine [Kernel-Mode Driver Architecture], k103_31475540-7ba8-44b6-ad54-e794ffddf8ee.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WRITE_REGISTER_BUFFER_USHORT
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -72,7 +76,7 @@ None
 
 The size of the buffer must be large enough to contain at least the specified number of USHORT values.
 
-Callers of <b>WRITE_REGISTER_BUFFER_USHORT</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Register</i> is resident, mapped device memory.</p>
+Callers of <b>WRITE_REGISTER_BUFFER_USHORT</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Register</i> is resident, mapped device memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |

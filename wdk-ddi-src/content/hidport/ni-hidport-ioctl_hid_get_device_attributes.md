@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : ee68c045-e99a-471d-ae22-396673d68168
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidRegisterMinidriver
+ms.keywords : hid.ioctl_hid_get_device_attributes, IOCTL_HID_GET_DEVICE_ATTRIBUTES control code [Human Input Devices], IOCTL_HID_GET_DEVICE_ATTRIBUTES, hidport/IOCTL_HID_GET_DEVICE_ATTRIBUTES, hidioreq_417c2e10-9ca8-4a9f-8a30-1ff401b65b13.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_GET_DEVICE_ATTRIBUTES
-req.alt-loc : hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_HID_GET_DEVICE_ATTRIBUTES IOCTL
@@ -61,12 +65,17 @@ The size of a HID_DEVICE_ATTRIBUTES structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 The HID minidriver sets the following fields of <b>Irp-&gt;IoStatus</b>:
-
+<ul>
+<li>
 <b>Information</b> is set to the number of bytes transferred from the device.
 
+</li>
+<li>
 <b>Status</b> is set to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
+
+</li>
+</ul>
 
 
 ## Requirements
@@ -76,16 +85,12 @@ The HID minidriver sets the following fields of <b>Irp-&gt;IoStatus</b>:
 | **Header** | hidport.h (include Hidport.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hidport\ns-hidport-_hid_device_attributes.md">HID_DEVICE_ATTRIBUTES</a>
-</dt>
-<dt>
 <a href="..\hidport\ni-hidport-ioctl_hid_get_device_descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\hidport\ns-hidport-_hid_device_attributes.md">HID_DEVICE_ATTRIBUTES</a>
+
  
 
  

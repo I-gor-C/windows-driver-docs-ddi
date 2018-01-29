@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c40b8f20-65e9-4e43-a402-14bd30f15975
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetWrapperLibraryAttributes
+ms.keywords : HBA_GetWrapperLibraryAttributes, storage.hba_getwrapperlibraryattributes, hbaapi/HBA_GetWrapperLibraryAttributes, fibreHBA_rtns_98e62721-8cee-4799-b25f-bf01b52d966c.xml, HBA_GetWrapperLibraryAttributes routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_GetWrapperLibraryAttributes
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -79,14 +83,10 @@ Microsoft supplies both libraries, so currently they return the same information
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_getvendorlibraryattributes.md">HBA_GetVendorLibraryAttributes</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_libraryattributes.md">HBA_LibraryAttributes</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_getvendorlibraryattributes.md">HBA_GetVendorLibraryAttributes</a>
+
  
 
  

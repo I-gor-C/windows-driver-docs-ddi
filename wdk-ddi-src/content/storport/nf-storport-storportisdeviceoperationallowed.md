@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2FA71DC1-8068-42E3-A5C0-903858E496FA
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortIsDeviceOperationAllowed
+ms.keywords : storage.storportisdeviceoperationallowed, StorPortIsDeviceOperationAllowed routine [Storage Devices], storport/StorPortIsDeviceOperationAllowed, STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID, StorPortIsDeviceOperationAllowed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortIsDeviceOperationAllowed
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : IRQL == PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -63,13 +67,22 @@ The address of a storage device unit.
 `DeviceOperation`
 
 A pointer to a GUID specifying a device management operation class. The following GUID is valid.
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID"></a><a id="storport_deviceoperation_secure_reprovision_guid"></a><dl>
+<dt><b>STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID</b></dt>
+</dl>
+</td>
+<td width="60%">
+The device is enabled to receive secured provisioning commands.
+
+</td>
+</tr>
+</table>
 
 `AllowedFlag`
 
@@ -79,12 +92,30 @@ TRUE when the operation specified in <i>DeviceOperation</i> is allowed. Otherwis
 ## Return Value
 
 The <b>StorPortIsDeviceOperationAllowed</b> routine returns one of these status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>A valid value for <i>AllowedFlag</i> was returned.
+</dl>
+</td>
+<td width="60%">
+A valid value for <i>AllowedFlag</i> was returned.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl><i>Address</i> points to an invalid unit address structure.
+</dl>
+</td>
+<td width="60%">
+<i>Address</i> points to an invalid unit address structure.
 
 -or-
 
@@ -93,12 +124,32 @@ The storage device specified by <i>Address</i> is not found.
 -or-
 
 The pointer value in <i>AllowedFlag</i> is NULL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
-</dl>The current IRQL &gt; PASSIVE_LEVEL.
+</dl>
+</td>
+<td width="60%">
+The current IRQL &gt; PASSIVE_LEVEL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>The management class specified in <i>DeviceOperation</i> is not available or invalid.
+</dl>
+</td>
+<td width="60%">
+The management class specified in <i>DeviceOperation</i> is not available or invalid.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements

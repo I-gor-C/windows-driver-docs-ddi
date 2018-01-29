@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d948b69c-c5cd-4614-a646-76acb493e8de
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcNewPort
+ms.keywords : PcNewPort function [Audio Devices], PcNewPort, portcls/PcNewPort, audio.pcnewport, audpc-routines_799c0416-dde0-4818-8da7-a38e4e6d4541.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcNewPort f
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcNewPort
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -55,7 +59,7 @@ Output pointer for the port-driver object created by this function. This paramet
 
 `ClassID`
 
-
+TBD
 
 
 ## Return Value
@@ -65,42 +69,84 @@ Output pointer for the port-driver object created by this function. This paramet
 ## Remarks
 
 The <i>ClassId</i> parameter can be set to one of the GUIDs in the following table.
-
+<table>
+<tr>
+<th>Class GUID</th>
+<th>Port Interface Name</th>
+</tr>
+<tr>
+<td>
 <b>CLSID_PortDMus</b>
 
+</td>
+<td>
 
 <a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
 
 
+</td>
+</tr>
+<tr>
+<td>
 <b>CLSID_PortMidi</b>
 
+</td>
+<td>
 
 <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 
 
+</td>
+</tr>
+<tr>
+<td>
 <b>CLSID_PortTopology</b>
 
+</td>
+<td>
 
 <a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
 
 
+</td>
+</tr>
+<tr>
+<td>
 <b>CLSID_PortWaveCyclic</b>
 
+</td>
+<td>
 
 <a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 
 
+</td>
+</tr>
+<tr>
+<td>
 <b>CLSID_PortWavePci</b>
 
+</td>
+<td>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
 
 
+</td>
+</tr>
+<tr>
+<td>
 <b>CLSID_PortWaveRT</b>
 
+</td>
+<td>
 
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
 
+
+</td>
+</tr>
+</table> 
 
 <b>CLSID_PortDMus</b> is defined in header file dmusicks.h. The other four GUIDs in the preceding table are defined in portcls.h.
 
@@ -124,29 +170,20 @@ The <i>OutPort</i> parameter follows the <a href="https://msdn.microsoft.com/e6b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iport.md">IPort</a>
-</dt>
-<dt>
-<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
+
+<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+
+<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
+
+<a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
+
+<a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a718cf3e-8359-4560-a88e-dd7789b61be6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : USBCAMD_Debug_LogEntry
+ms.keywords : stream.usbcamd_debug_logentry, USBCAMD_Debug_LogEntry function [Streaming Media Devices], USBCAMD_Debug_LogEntry, usbcmdpr_6f6f6419-d845-4488-bd8d-70efa67357fa.xml, usbcamdi/USBCAMD_Debug_LogEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBCAMD_Debug_LogEntry
-req.alt-loc : usbcamd2.lib,usbcamd2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbcamd2.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -75,7 +79,7 @@ Specifies the third information value to be written to the log file.
 
 ## Remarks
 
-The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.</p>
+The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

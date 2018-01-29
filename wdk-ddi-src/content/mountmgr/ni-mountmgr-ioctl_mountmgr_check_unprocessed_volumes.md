@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 39f486b4-a22e-473b-9a0d-ba2c1046995a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.keywords : storage.ioctl_mountmgr_check_unprocessed_volumes, IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES control code [Storage Devices], IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES, mountmgr/IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES, k307_eb4defdf-c3d0-41b6-8bd4-3ef1dbd3f795.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES
-req.alt-loc : Mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES IOCTL
@@ -61,7 +65,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS.
 
 

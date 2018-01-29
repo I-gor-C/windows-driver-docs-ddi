@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e3ce42a6-0d94-46cb-9831-c29f92a677cd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_CD_TRACK_AT_ONCE, *PFEATURE_DATA_CD_TRACK_AT_ONCE, FEATURE_DATA_CD_TRACK_AT_ONCE
+ms.keywords : FEATURE_DATA_CD_TRACK_AT_ONCE, PFEATURE_DATA_CD_TRACK_AT_ONCE structure pointer [Storage Devices], storage.feature_data_cd_track_at_once, *PFEATURE_DATA_CD_TRACK_AT_ONCE, structs-CD-ROM_d2648aa5-b3d5-49f2-98d1-01e90dd72332.xml, PFEATURE_DATA_CD_TRACK_AT_ONCE, ntddmmc/FEATURE_DATA_CD_TRACK_AT_ONCE, _FEATURE_DATA_CD_TRACK_AT_ONCE, FEATURE_DATA_CD_TRACK_AT_ONCE structure [Storage Devices], ntddmmc/PFEATURE_DATA_CD_TRACK_AT_ONCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_CD_TRACK_AT_ONCE
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFEATURE_DATA_CD_TRACK_AT_ONCE, FEATURE_DATA_CD_TRACK_AT_ONCE"
 ---
 
@@ -56,53 +60,53 @@ typedef struct _FEATURE_DATA_CD_TRACK_AT_ONCE {
 
 ## Members
 
-        
-            `BufferUnderrunFree`
 
-            Indicates, when set to 1, that the device is capable of zero-loss linking.
-        
-            `CdRewritable`
+`BufferUnderrunFree`
 
-            Indicates, when set to 1, that the device supports overwriting a Track-at-Once track with another track's information.
-        
-            `DataTypeSupported`
+Indicates, when set to 1, that the device is capable of zero-loss linking.
 
-            Indicates the data types that the device supports. See the <i>SCSI Multimedia 3</i> (<i>MMC-3</i>) specification for a description of the values that this member can take. <b>DataTypeSupported</b>[0] holds the most significant byte of value that indicates the data types. <b>DataTypeSupported</b>[1] holds the least significant byte of that value.
-        
-            `Header`
+`CdRewritable`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `Reserved1`
+Indicates, when set to 1, that the device supports overwriting a Track-at-Once track with another track's information.
 
-            Reserved.
-        
-            `Reserved2`
+`DataTypeSupported`
 
-            Reserved.
-        
-            `Reserved3`
+Indicates the data types that the device supports. See the <i>SCSI Multimedia 3</i> (<i>MMC-3</i>) specification for a description of the values that this member can take. <b>DataTypeSupported</b>[0] holds the most significant byte of value that indicates the data types. <b>DataTypeSupported</b>[1] holds the least significant byte of that value.
 
-            Reserved.
-        
-            `RWSubchannelPackedOk`
+`Header`
 
-            Indicates, when set to 1, that the device supports writing R-W sub code in the packed mode.
-        
-            `RWSubchannelRawOk`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            Indicates, when set to 1, that the device supports writing R-W sub code in the raw mode.
-        
-            `RWSubchannelsRecordable`
+`Reserved1`
 
-            Indicates, when set to 1, that the device can record the read/write subchannels with user-supplied data.
-        
-            `TestWriteOk`
+Reserved.
 
-            Indicates, when set to 1, that the device can perform test writes.
+`Reserved2`
 
-    ## Remarks
-        This structure holds data for the feature named "CD Track at Once" by the <i>MMC-3 </i>specification. Devices that support this feature can write data to a CD track.
+Reserved.
+
+`Reserved3`
+
+Reserved.
+
+`RWSubchannelPackedOk`
+
+Indicates, when set to 1, that the device supports writing R-W sub code in the packed mode.
+
+`RWSubchannelRawOk`
+
+Indicates, when set to 1, that the device supports writing R-W sub code in the raw mode.
+
+`RWSubchannelsRecordable`
+
+Indicates, when set to 1, that the device can record the read/write subchannels with user-supplied data.
+
+`TestWriteOk`
+
+Indicates, when set to 1, that the device can perform test writes.
+
+## Remarks
+This structure holds data for the feature named "CD Track at Once" by the <i>MMC-3 </i>specification. Devices that support this feature can write data to a CD track.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,16 +116,12 @@ typedef struct _FEATURE_DATA_CD_TRACK_AT_ONCE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

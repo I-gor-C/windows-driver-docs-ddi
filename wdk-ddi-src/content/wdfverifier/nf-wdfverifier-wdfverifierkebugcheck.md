@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3fa8ea3d-cca0-402d-a3a8-1281ad4231d4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfVerifierKeBugCheck
+ms.keywords : WdfVerifierKeBugCheck, WdfVerifierKeBugCheck function, DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, kmdf.wdfverifierkebugcheck, wdfverifier/WdfVerifierKeBugCheck, wdf.wdfverifierkebugcheck
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfVerifierKeBugCheck
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_COMPLETION_PARAMS, WDF_USB_REQUEST_COMPLETION_PARAMS"
 req.product : Windows 10 or later.
 ---
@@ -88,8 +92,6 @@ If your  User-Mode Driver Framework (UMDF) driver (version 2.0 or later) calls <
 
 For more information about debugging your driver, see <a href="https://msdn.microsoft.com/e648a7c9-0fdc-477e-b1cd-bec5dd8f5386">Debugging WDF Drivers</a>.
 
-The following code example creates a bug check that uses the <a href="https://msdn.microsoft.com/bc60b4b3-aded-4c67-bbaa-aad1b6b38d30">MULTIPLE_IRP_COMPLETE_REQUESTS</a> bug check code.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -104,11 +106,8 @@ The following code example creates a bug check that uses the <a href="https://ms
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfverifier\nf-wdfverifier-wdfverifierdbgbreakpoint.md">WdfVerifierDbgBreakPoint</a>
-</dt>
-</dl>
+
  
 
  

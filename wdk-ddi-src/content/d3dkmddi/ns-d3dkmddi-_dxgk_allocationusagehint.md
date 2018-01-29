@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 04cceb5e-d185-4f43-a627-71a61a45b8aa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_ALLOCATIONUSAGEHINT, DXGK_ALLOCATIONUSAGEHINT
+ms.keywords : DXGK_ALLOCATIONUSAGEHINT structure [Display Devices], d3dkmddi/DXGK_ALLOCATIONUSAGEHINT, DmStructs_9597c610-bb79-496c-b7b3-9fb5abb30a46.xml, _DXGK_ALLOCATIONUSAGEHINT, DXGK_ALLOCATIONUSAGEHINT, display.dxgk_allocationusagehint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_ALLOCATIONUSAGEHINT
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_ALLOCATIONUSAGEHINT
 ---
 
@@ -47,14 +51,14 @@ typedef struct _DXGK_ALLOCATIONUSAGEHINT {
 
 ## Members
 
-        
-            `v1`
 
-            [out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusageinfo1.md">DXGK_ALLOCATIONUSAGEINFO1</a> structure that describes how an allocation can be used in direct memory access (DMA) buffering.
-        
-            `Version`
+`v1`
 
-            [out] A positive integer that indicates the version of the allocation.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusageinfo1.md">DXGK_ALLOCATIONUSAGEINFO1</a> structure that describes how an allocation can be used in direct memory access (DMA) buffering.
+
+`Version`
+
+[out] A positive integer that indicates the version of the allocation.
 
 
 ## Requirements
@@ -65,22 +69,16 @@ typedef struct _DXGK_ALLOCATIONUSAGEHINT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusageinfo1.md">DXGK_ALLOCATIONUSAGEINFO1</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-</dl>
+
  
 
  

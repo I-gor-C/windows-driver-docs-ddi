@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1e33f284-6cb9-426f-a900-76b827341927
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2, IWDFIoRequest2::Requeue, Requeue
+ms.keywords : wdf.iwdfiorequest2_requeue, UMDFRequestObjectRef_e86bd6e8-ed4b-42e8-a32f-29c4415e1384.xml, umdf.iwdfiorequest2_requeue, wudfddi/IWDFIoRequest2::Requeue, IWDFIoRequest2 interface, Requeue method, Requeue, Requeue method, IWDFIoRequest2, Requeue method, IWDFIoRequest2 interface, IWDFIoRequest2::Requeue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFIoRequest2.Requeue
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -54,69 +58,47 @@ This function has no parameters.
 ## Return Value
 
 <b>Requeue</b> returns S_OK if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_WIN32 (ERROR_INVALID_OPERATION)</b></dt>
-</dl>This value is returned if one of the following occurs:
+</dl>
+</td>
+<td width="60%">
+This value is returned if one of the following occurs:
 
+<ul>
+<li>
 The specified I/O request did not come from an I/O queue.
 
+</li>
+<li>
 The driver does not own the I/O request.
 
+</li>
+<li>
 The request is cancelable.
 
+</li>
+<li>
 The queue's dispatching method is not manual.
 
- 
-
-This method might return one of the other values that Winerror.h contains.
-
-
-
-
-
-<b>Requeue</b> returns S_OK if the operation succeeds. Otherwise, this method might return one of the following values:
-<dl>
-<dt><b>HRESULT_FROM_WIN32 (ERROR_INVALID_OPERATION)</b></dt>
-</dl>This value is returned if one of the following occurs:
-
-The specified I/O request did not come from an I/O queue.
-
-The driver does not own the I/O request.
-
-The request is cancelable.
-
-The queue's dispatching method is not manual.
-
- 
-
-This method might return one of the other values that Winerror.h contains.
-
-
-
-
-
-<b>Requeue</b> returns S_OK if the operation succeeds. Otherwise, this method might return one of the following values:
-<dl>
-<dt><b>HRESULT_FROM_WIN32 (ERROR_INVALID_OPERATION)</b></dt>
-</dl>This value is returned if one of the following occurs:
-
-The specified I/O request did not come from an I/O queue.
-
-The driver does not own the I/O request.
-
-The request is cancelable.
-
-The queue's dispatching method is not manual.
-
- 
+</li>
+</ul>
+</td>
+</tr>
+</table> 
 
 This method might return one of the other values that Winerror.h contains.
 
 ## Remarks
 
 A driver can call <b>Requeue</b> only if it uses the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/configuring-dispatch-mode-for-an-i-o-queue">manual dispatching method</a> for the I/O queue.
-
-The following code example shows a segment of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556880">IQueueCallbackStateChange::OnStateChange</a> callback function. The segment obtains an I/O request from the I/O and then returns the request to the queue.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -132,14 +114,10 @@ The following code example shows a segment of an <a href="https://msdn.microsoft
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : print\propsheetui_info_header.htm
 old-project : print
 ms.assetid : 148c463c-a18b-4f24-b3dc-af74c3de97b7
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _PROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER
+ms.date : 1/18/2018
+ms.keywords : "*PPROPSHEETUI_INFO_HEADER, compstui/PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER, print.propsheetui_info_header, _PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER structure [Print Devices], PPROPSHEETUI_INFO_HEADER, cpsuifnc_21dad179-56e1-478c-8a62-628262ca59a8.xml, PPROPSHEETUI_INFO_HEADER structure pointer [Print Devices], compstui/PROPSHEETUI_INFO_HEADER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PROPSHEETUI_INFO_HEADER
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER"
 ---
 
@@ -54,15 +58,18 @@ typedef struct _PROPSHEETUI_INFO_HEADER {
 
 ## Members
 
-        
-            `cbSize`
 
-            CPSUI-supplied size, in bytes, of the PROPSHEETUI_INFO_HEADER structure.
-        
-            `Flags`
+`cbSize`
 
-            Optional, application-specified bit flags that modify the property sheet page's appearance. The flags listed in the following table can be used in any combination.
+CPSUI-supplied size, in bytes, of the PROPSHEETUI_INFO_HEADER structure.
 
+`DUMMYUNIONNAME`
+
+
+
+`Flags`
+
+Optional, application-specified bit flags that modify the property sheet page's appearance. The flags listed in the following table can be used in any combination.
 <table>
 <tr>
 <th>Flag</th>
@@ -119,18 +126,18 @@ If set, the <b>hIcon</b>/<b>IconID</b> union contains an icon handle. If not set
 </td>
 </tr>
 </table>
-        
-            `hInst`
 
-            Application-supplied instance handle, which CPSUI uses when loading application resources.
-        
-            `hWndParent`
+`hInst`
 
-            Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.
-        
-            `pTitle`
+Application-supplied instance handle, which CPSUI uses when loading application resources.
 
-            String identifier, representing text to be displayed in the property sheet's title bar. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. For printer interface DLLs, the string typically contains the printer's name.
+`hWndParent`
+
+Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.
+
+`pTitle`
+
+String identifier, representing text to be displayed in the property sheet's title bar. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. For printer interface DLLs, the string typically contains the printer's name.
 
 
 ## Requirements

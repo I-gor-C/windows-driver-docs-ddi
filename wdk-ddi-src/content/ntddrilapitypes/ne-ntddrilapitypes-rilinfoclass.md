@@ -7,8 +7,8 @@ old-location : netvista\rilinfoclass.htm
 old-project : netvista
 ms.assetid : 2e4bd8bd-ce7e-4eb4-ac0d-68fb8890eb26
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILINFOCLASS, RILINFOCLASS
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_INFOCLASS_DATACIRCUITASYNC, ntddrilapitypes/RILINFOCLASS, RIL_INFOCLASS_DATA, ntddrilapitypes/RIL_INFOCLASS_SMS, ntddrilapitypes/RIL_INFOCLASS_VOICE, RIL_INFOCLASS_ALL, ntddrilapitypes/RIL_INFOCLASS_DATACIRCUITSYNC, RILINFOCLASS, RIL_INFOCLASS_DATACIRCUITASYNC, RILINFOCLASS enumeration [Network Drivers Starting with Windows Vista], RIL_INFOCLASS_VOICE, RIL_INFOCLASS_FAX, RIL_INFOCLASS_PACKETACCESS, RIL_INFOCLASS_DATACIRCUITSYNC, RIL_INFOCLASS_PADACCESS, ntddrilapitypes/RIL_INFOCLASS_FAX, ntddrilapitypes/RIL_INFOCLASS_DATA, ntddrilapitypes/RIL_INFOCLASS_PACKETACCESS, ntddrilapitypes/RIL_INFOCLASS_PADACCESS, ntddrilapitypes/RIL_INFOCLASS_ALL, netvista.rilinfoclass, RIL_INFOCLASS_SMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILINFOCLASS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILINFOCLASS
 ---
 
@@ -78,6 +82,11 @@ typedef enum _RILINFOCLASS {
 
 <tr>
 <td>RIL_INFOCLASS_FAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_INFOCLASS_NONE</td>
 <td></td>
 </tr>
 

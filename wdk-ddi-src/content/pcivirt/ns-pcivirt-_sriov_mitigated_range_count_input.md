@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 7de35a35-2b90-421d-bbde-4c5cb760070a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_MITIGATED_RANGE_COUNT_INPUT, *PSRIOV_MITIGATED_RANGE_COUNT_INPUT, SRIOV_MITIGATED_RANGE_COUNT_INPUT
+ms.keywords : "*PSRIOV_MITIGATED_RANGE_COUNT_INPUT, SRIOV_MITIGATED_RANGE_COUNT_INPUT, PCI.sriov_mitigated_range_count_input, SRIOV_MITIGATED_RANGE_COUNT_INPUT structure [Buses], _SRIOV_MITIGATED_RANGE_COUNT_INPUT, pcivirt/SRIOV_MITIGATED_RANGE_COUNT_INPUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_MITIGATED_RANGE_COUNT_INPUT
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSRIOV_MITIGATED_RANGE_COUNT_INPUT, SRIOV_MITIGATED_RANGE_COUNT_INPUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SRIOV_MITIGATED_RANGE_COUNT_INPUT, *PSRIOV_MITIGATED_RANGE_COUNT_INPUT
 ---
 
 # _SRIOV_MITIGATED_RANGE_COUNT_INPUT structure
@@ -46,10 +50,10 @@ typedef struct _SRIOV_MITIGATED_RANGE_COUNT_INPUT {
 
 ## Members
 
-        
-            `VfIndex`
 
-            Zero-based index of the virtual function from the first virtual function exposed by this physical function.
+`VfIndex`
+
+Zero-based index of the virtual function from the first virtual function exposed by this physical function.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _SRIOV_MITIGATED_RANGE_COUNT_INPUT {
 | **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/68fd97a5-b7ea-43c0-96ed-b64445fd21dd">IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT</a>
-</dt>
-</dl>
+
  
 
  

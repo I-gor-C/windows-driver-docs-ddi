@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4837b9c2-a3c1-4574-8f5b-4bf7c7d037a0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PROCESSOR_NUMBER, *PPROCESSOR_NUMBER, PROCESSOR_NUMBER
+ms.keywords : storage.tapeminiextensioninit, (*TAPE_EXTENSION_INIT_ROUTINE) routine [Storage Devices], (*TAPE_EXTENSION_INIT_ROUTINE), TAPE_EXTENSION_INIT_ROUTINE, TAPE_EXTENSION_INIT_ROUTINE, minitape/(*TAPE_EXTENSION_INIT_ROUTINE), tapemini_858bcb61-472e-45c4-8438-060eb61f1c4a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*TAPE_EXTENSION_INIT_ROUTINE)
-req.alt-loc : minitape.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPROCESSOR_NUMBER, PROCESSOR_NUMBER"
 ---
 
@@ -92,23 +96,16 @@ The tape class driver allocates the minitape extension and supplies it subsequen
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
-</dt>
-<dt>
-<a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
-</dt>
-<dt>
-<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
-</dt>
-<dt>
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
-</dt>
-<dt>
+
+<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
+
+<a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
+
 <a href="..\minitape\nc-minitape-tape_error_routine.md">TapeMiniTapeError</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
+
  
 
  

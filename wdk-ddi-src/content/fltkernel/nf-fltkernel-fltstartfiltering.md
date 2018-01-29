@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fc24e764-d584-4927-942f-3b8b4b83af79
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltStartFiltering
+ms.keywords : ifsk.fltstartfiltering, FltStartFiltering function [Installable File System Drivers], FltApiRef_p_to_z_f88abc20-f8b7-4399-85be-bd43674fe536.xml, FltStartFiltering, fltkernel/FltStartFiltering
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltStartFiltering
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -56,9 +60,23 @@ Opaque filter pointer returned by <a href="..\fltkernel\nf-fltkernel-fltregister
 ## Return Value
 
 <b>FltStartFiltering</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Filtering was already started for this minifilter driver. This is an error code.
+</dl>
+</td>
+<td width="60%">
+Filtering was already started for this minifilter driver. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -78,11 +96,8 @@ A minifilter driver typically calls <b>FltStartFiltering</b> from its <b>DriverE
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 13a816f9-c41a-49f1-ac79-98106f4630d4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_DVD_RECORDABLE_WRITE, FEATURE_DATA_DVD_RECORDABLE_WRITE, *PFEATURE_DATA_DVD_RECORDABLE_WRITE
+ms.keywords : _FEATURE_DATA_DVD_RECORDABLE_WRITE, *PFEATURE_DATA_DVD_RECORDABLE_WRITE, PFEATURE_DATA_DVD_RECORDABLE_WRITE, FEATURE_DATA_DVD_RECORDABLE_WRITE, FEATURE_DATA_DVD_RECORDABLE_WRITE structure [Storage Devices], storage.feature_data_dvd_recordable_write, structs-CD-ROM_c7d92388-964e-4db2-803a-1a7c10c45cc0.xml, PFEATURE_DATA_DVD_RECORDABLE_WRITE structure pointer [Storage Devices], ntddmmc/PFEATURE_DATA_DVD_RECORDABLE_WRITE, ntddmmc/FEATURE_DATA_DVD_RECORDABLE_WRITE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_DVD_RECORDABLE_WRITE
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FEATURE_DATA_DVD_RECORDABLE_WRITE, *PFEATURE_DATA_DVD_RECORDABLE_WRITE
 ---
 
@@ -54,45 +58,45 @@ typedef struct _FEATURE_DATA_DVD_RECORDABLE_WRITE {
 
 ## Members
 
-        
-            `BufferUnderrunFree`
 
-            Indicates, when set to 1, that the device can perform under-run-free recording.
-        
-            `DVD_RW`
+`BufferUnderrunFree`
 
-            Indicates, when set to 1, that the device supports writing and erasing on DVD-RW media. For more information about this feature see the <i>SCSI Multimedia - 4 (MMC-4)</i> specification.
-        
-            `Header`
+Indicates, when set to 1, that the device can perform under-run-free recording.
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `RDualLayer`
+`DVD_RW`
 
-            
-        
-            `Reserved02`
+Indicates, when set to 1, that the device supports writing and erasing on DVD-RW media. For more information about this feature see the <i>SCSI Multimedia - 4 (MMC-4)</i> specification.
 
-            
-        
-            `Reserved1`
+`Header`
 
-            Reserved.
-        
-            `Reserved3`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            Reserved.
-        
-            `Reserved4`
+`RDualLayer`
 
-            Reserved.
-        
-            `TestWrite`
 
-            Indicates, when set to 1, that the device is capable of performing test writes. When set to zero, the device cannot perform test writes.
 
-    ## Remarks
-        This structure holds data for the feature named "DVD-R Write" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can write data to a write-once DVD media in "Disc-at-Once" mode.
+`Reserved02`
+
+
+
+`Reserved1`
+
+Reserved.
+
+`Reserved3`
+
+Reserved.
+
+`Reserved4`
+
+Reserved.
+
+`TestWrite`
+
+Indicates, when set to 1, that the device is capable of performing test writes. When set to zero, the device cannot perform test writes.
+
+## Remarks
+This structure holds data for the feature named "DVD-R Write" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can write data to a write-once DVD media in "Disc-at-Once" mode.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,16 +106,12 @@ typedef struct _FEATURE_DATA_DVD_RECORDABLE_WRITE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

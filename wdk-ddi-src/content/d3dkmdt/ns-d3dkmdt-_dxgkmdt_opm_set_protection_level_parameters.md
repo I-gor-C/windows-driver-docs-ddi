@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e5b35b0d-c7ad-4a67-8552-13df4c9c2b84
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
+ms.keywords : DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure [Display Devices], d3dkmdt/DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, display.dxgkmdt_opm_set_protection_level_parameters, DmStructs_9d43af01-039a-4f68-8583-b42ae54a5bbe.xml, _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS {
 
 ## Members
 
-        
-            `Reserved`
 
-            Reserved. Must be set to zero.
-        
-            `Reserved2`
+`Reserved`
 
-            Reserved. Must be set to zero.
-        
-            `ulProtectionLevel`
+Reserved. Must be set to zero.
 
-            A value that specifies the protection level to set for one of the following protection types that is specified in the <b>ulProtectionType</b> member:
-        
-            `ulProtectionType`
+`Reserved2`
 
-            A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_type.md">DXGKMDT_OPM_PROTECTION_TYPE</a>-typed value that indicates the protection type to set a protection level for.
+Reserved. Must be set to zero.
+
+`ulProtectionLevel`
+
+A value that specifies the protection level to set for one of the following protection types that is specified in the <b>ulProtectionType</b> member:
+
+`ulProtectionType`
+
+A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_type.md">DXGKMDT_OPM_PROTECTION_TYPE</a>-typed value that indicates the protection type to set a protection level for.
 
 
 ## Requirements
@@ -75,28 +79,20 @@ typedef struct _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_acp_protection_level.md">DXGKMDT_OPM_ACP_PROTECTION_LEVEL</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_cgmsa.md">DXGKMDT_OPM_CGMSA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560861">DXGKMDT_OPM_DPCP_PROTECTION_LEVEL</a>
-</dt>
-<dt>
 <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_hdcp_protection_level.md">DXGKMDT_OPM_HDCP_PROTECTION_LEVEL</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_acp_protection_level.md">DXGKMDT_OPM_ACP_PROTECTION_LEVEL</a>
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_cgmsa.md">DXGKMDT_OPM_CGMSA</a>
+
 <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_type.md">DXGKMDT_OPM_PROTECTION_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560861">DXGKMDT_OPM_DPCP_PROTECTION_LEVEL</a>
+
  
 
  

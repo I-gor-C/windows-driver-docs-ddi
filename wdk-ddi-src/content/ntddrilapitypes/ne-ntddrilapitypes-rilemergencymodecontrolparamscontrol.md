@@ -7,8 +7,8 @@ old-location : netvista\rilemergencymodecontrolparamscontrol.htm
 old-project : netvista
 ms.assetid : ac5a2ae3-3fdc-463f-96df-22b441e38724
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILEMERGENCYMODECONTROLPARAMSCONTROL, RILEMERGENCYMODECONTROLPARAMSCONTROL
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_EMC_MAX, netvista.rilemergencymodecontrolparamscontrol, ntddrilapitypes/RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE, RILEMERGENCYMODECONTROLPARAMSCONTROL enumeration [Network Drivers Starting with Windows Vista], RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE, ntddrilapitypes/RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE, RIL_EMC_MAX, RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE, ntddrilapitypes/RILEMERGENCYMODECONTROLPARAMSCONTROL, RILEMERGENCYMODECONTROLPARAMSCONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILEMERGENCYMODECONTROLPARAMSCONTROL
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILEMERGENCYMODECONTROLPARAMSCONTROL
 ---
 
@@ -52,6 +56,11 @@ typedef enum _RILEMERGENCYMODECONTROLPARAMSCONTROL {
 
 <tr>
 <td>RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_EMC_EXIT_CDMA_ECBM</td>
 <td></td>
 </tr>
 

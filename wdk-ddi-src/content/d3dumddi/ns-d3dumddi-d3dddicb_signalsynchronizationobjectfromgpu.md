@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FF098E63-842F-4D88-A184-BE886E0ED507
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
+ms.keywords : display.d3dddicb_signalsynchronizationobjectfromgpu, d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices], D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
 ---
 
@@ -52,18 +56,18 @@ typedef struct D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
 
 ## Members
 
-        
-            `hContext`
 
-            [in] A kernel-mode handle to the context stream.
-        
-            `ObjectCount`
+`hContext`
 
-            [in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
-        
-            `ObjectHandleArray`
+[in] A kernel-mode handle to the context stream.
 
-            [in] An array of kernel-mode handles to the synchronization events that the <b>hContext</b> member signals.
+`ObjectCount`
+
+[in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
+
+`ObjectHandleArray`
+
+[in] An array of kernel-mode handles to the synchronization events that the <b>hContext</b> member signals.
 
 
 ## Requirements
@@ -74,13 +78,10 @@ typedef struct D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromgpucb.md">pfnSignalSynchronizationObjectFromGpuCb</a>
-</dt>
-</dl>
+
  
 
  

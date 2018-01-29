@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 981f5a33-a4f1-438c-8fcf-03a5ab4c0e44
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxIndicateChangeOfBufferingState
+ms.keywords : rxref_4a7ba539-c0b8-4c3b-b642-c272d262310b.xml, rxprocs/RxIndicateChangeOfBufferingState, ifsk.rxindicatechangeofbufferingstate, RxIndicateChangeOfBufferingState, RxIndicateChangeOfBufferingState routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxIndicateChangeOfBufferingState
-req.alt-loc : rxprocs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -61,7 +65,7 @@ A pointer to the key for the SRV_OPEN structure.
 
 `Context`
 
-
+TBD
 
 
 ## Return Value
@@ -92,20 +96,14 @@ If a buffering state request can be processed immediately instead of being queue
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxchangebufferingstate.md">RxChangeBufferingState</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen.md">RxIndicateChangeOfBufferingStateForSrvOpen</a>
-</dt>
-<dt>
-<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/6cf4c6f6-a21f-4919-92b5-2403b650d8d0">The SRV_OPEN Structure</a>
-</dt>
-</dl>
+
+<a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen.md">RxIndicateChangeOfBufferingStateForSrvOpen</a>
+
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxchangebufferingstate.md">RxChangeBufferingState</a>
+
  
 
  

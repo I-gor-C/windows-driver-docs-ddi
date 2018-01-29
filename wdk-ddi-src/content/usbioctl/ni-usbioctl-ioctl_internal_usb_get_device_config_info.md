@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 518de598-6281-4838-b453-9f699524cbf4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_get_device_config_info, IOCTL_INTERNAL_USB_GET_DEVICE_CONFIG_INFO control code [Buses], IOCTL_INTERNAL_USB_GET_DEVICE_CONFIG_INFO, usbioctl/IOCTL_INTERNAL_USB_GET_DEVICE_CONFIG_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows Vista and later operating systems.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_GET_DEVICE_CONFIG_INFO
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,11 +68,10 @@ The size of a <a href="..\usbioctl\ns-usbioctl-_hub_device_config_info_v1.md">HU
 <text></text>
 
 ### Status Block
-I/O Status block
 The hub or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or the appropriate error status.
 
-    ## Remarks
-        Upon successful completion, the HardwareIds, CompatibleIds, DeviceDescription <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a> structures contained in the <a href="..\usbioctl\ns-usbioctl-_hub_device_config_info_v1.md">HUB_DEVICE_CONFIG_INFO</a> structure  points to string buffers allocated by the hub driver.  The caller driver is responsible for releasing these buffers before the driver unloads.
+## Remarks
+Upon successful completion, the HardwareIds, CompatibleIds, DeviceDescription <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a> structures contained in the <a href="..\usbioctl\ns-usbioctl-_hub_device_config_info_v1.md">HUB_DEVICE_CONFIG_INFO</a> structure  points to string buffers allocated by the hub driver.  The caller driver is responsible for releasing these buffers before the driver unloads.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,16 +80,12 @@ The hub or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or 
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a>
-</dt>
-<dt>
+
 <a href="..\usbioctl\ns-usbioctl-_hub_device_config_info_v1.md">HUB_DEVICE_CONFIG_INFO</a>
-</dt>
-</dl>
+
  
 
  

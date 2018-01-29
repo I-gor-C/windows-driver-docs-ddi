@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 050752CC-FBD6-4EB1-A17F-53C5C569E3FB
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, *PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
+ms.keywords : gpioclx/CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, QueryBankPowerInformation, gpioclx/QueryBankPowerInformation, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, GPIO.client_controller_query_set_request_type, gpioclx/QueryBankInterruptBindingInformation, QueryControllerFunctionBankMappingInformation, QueryBankInterruptBindingInformation, gpioclx/QuerySetRequestMaximumType, _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, *PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE enumeration [Parallel Ports], QuerySetRequestMaximumType, gpioclx/QueryControllerFunctionBankMappingInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
-req.alt-loc : Gpioclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
-req.typenames : CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, *PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE"
 ---
 
 # _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE Enumeration
@@ -86,17 +90,12 @@ The <b>RequestType</b> member of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698241">CLIENT_QuerySetControllerInformation</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a>
+
  
 
  

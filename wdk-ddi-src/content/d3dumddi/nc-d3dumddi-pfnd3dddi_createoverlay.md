@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 761377ff-95a6-426b-8372-3f347870f9c4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.createoverlay, CreateOverlay callback function [Display Devices], CreateOverlay, PFND3DDDI_CREATEOVERLAY, PFND3DDDI_CREATEOVERLAY, d3dumddi/CreateOverlay, UserModeDisplayDriver_Functions_8418bf74-3398-4913-9002-2f0b2a0941fb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CreateOverlay
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,23 +68,69 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CreateOverlay</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The overlay is successfully created.
+</dl>
+</td>
+<td width="60%">
+The overlay is successfully created.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlay.md">CreateOverlay</a> could not complete because of insufficient memory.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_NOTAVAILABLE</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlay.md">CreateOverlay</a> could not complete because insufficient bandwidth was available or the requested overlay hardware was unavailable.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_UNSUPPORTEDOVERLAYFORMAT</b></dt>
-</dl>The specified overlay format is not supported by the overlay hardware. 
+</dl>
+</td>
+<td width="60%">
+The specified overlay format is not supported by the overlay hardware. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_UNSUPPORTEDOVERLAY</b></dt>
-</dl>The overlay hardware is not supported for the specified size and display mode.
+</dl>
+</td>
+<td width="60%">
+The overlay hardware is not supported for the specified size and display mode. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,14 +150,10 @@ Overlays are independent from the resources that are displayed by using the over
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createoverlay.md">D3DDDIARG_CREATEOVERLAY</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createoverlay.md">D3DDDIARG_CREATEOVERLAY</a>
+
  
 
  

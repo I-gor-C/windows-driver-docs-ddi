@@ -7,8 +7,8 @@ old-location : netvista\rilimsfailuremessagetype_2.htm
 old-project : netvista
 ms.assetid : 9a29cc8c-7e46-4b7f-a428-d2f174945654
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILIMSFAILUREMESSAGETYPE, RILIMSFAILUREMESSAGETYPE
+ms.date : 1/18/2018
+ms.keywords : RILIMSFAILUREMESSAGETYPE, RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE, rilapitypes/RIL_IMSFAILUREMESSAGETYPE_MAX, netvista.rilimsfailuremessagetype_2, RIL_IMSFAILUREMESSAGETYPE_MAX, rilapitypes/RILIMSFAILUREMESSAGETYPE, rilapitypes/RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE, RILIMSFAILUREMESSAGETYPE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_IMSFAILUREMESSAGETYPE_INCALL, RIL_IMSFAILUREMESSAGETYPE_INCALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILIMSFAILUREMESSAGETYPE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILIMSFAILUREMESSAGETYPE
 req.product : Windows 10 or later.
 ---
@@ -58,6 +62,11 @@ typedef enum _RILIMSFAILUREMESSAGETYPE {
 
 <tr>
 <td>RIL_IMSFAILUREMESSAGETYPE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_IMSFAILUREMESSAGETYPE_REGISTER</td>
 <td></td>
 </tr>
 

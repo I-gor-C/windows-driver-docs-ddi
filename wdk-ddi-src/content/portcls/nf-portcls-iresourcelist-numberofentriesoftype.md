@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 61645c17-9278-49e0-a0bf-24a8c52e964d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IResourceList, IResourceList::NumberOfEntriesOfType, NumberOfEntriesOfType
+ms.keywords : audio.iresourcelist_numberofentriesoftype, IResourceList interface [Audio Devices], NumberOfEntriesOfType method, NumberOfEntriesOfType method [Audio Devices], IResourceList::NumberOfEntriesOfType, NumberOfEntriesOfType, audmp-routines_eb0c6999-a901-4087-b7bc-12057f91be90.xml, IResourceList, NumberOfEntriesOfType method [Audio Devices], IResourceList interface, portcls/IResourceList::NumberOfEntriesOfType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IResourceList.NumberOfEntriesOfType
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -75,14 +79,10 @@ For each resource type, a macro is defined to call this method. See <a href="..\
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+
  
 
  

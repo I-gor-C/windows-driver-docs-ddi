@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c7015bb6-1dd1-46b7-81b3-1762e5286c74
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KS_DVDCOPY_DISCKEY, KS_DVDCOPY_DISCKEY, *PKS_DVDCOPY_DISCKEY
+ms.keywords : PKS_DVDCOPY_DISCKEY, *PKS_DVDCOPY_DISCKEY, dvdref_125d99fe-df42-4e9a-b21c-198c968ff88b.xml, KS_DVDCOPY_DISCKEY, PKS_DVDCOPY_DISCKEY structure pointer [Streaming Media Devices], ksmedia/PKS_DVDCOPY_DISCKEY, stream.ks_dvdcopy_disckey, ksmedia/KS_DVDCOPY_DISCKEY, KS_DVDCOPY_DISCKEY structure [Streaming Media Devices], _KS_DVDCOPY_DISCKEY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DVDCOPY_DISCKEY
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KS_DVDCOPY_DISCKEY, *PKS_DVDCOPY_DISCKEY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKS_DVDCOPY_DISCKEY, KS_DVDCOPY_DISCKEY"
 ---
 
 # _KS_DVDCOPY_DISCKEY structure
@@ -46,13 +50,13 @@ typedef struct _KS_DVDCOPY_DISCKEY {
 
 ## Members
 
-        
-            `DiscKey`
 
-            Specifies the DVD's disc key.
+`DiscKey`
 
-    ## Remarks
-        The KS_DVDCOPY_DISCKEY structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565144">KSPROPERTY_DVDCOPY_DISC_KEY</a> property.
+Specifies the DVD's disc key.
+
+## Remarks
+The KS_DVDCOPY_DISCKEY structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565144">KSPROPERTY_DVDCOPY_DISC_KEY</a> property.
 
 For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b">DVD Copyright Protection</a>.
 
@@ -64,13 +68,10 @@ For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565144">KSPROPERTY_DVDCOPY_DISC_KEY</a>
-</dt>
-</dl>
+
  
 
  

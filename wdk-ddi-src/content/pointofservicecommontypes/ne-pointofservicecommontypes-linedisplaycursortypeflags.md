@@ -7,8 +7,8 @@ old-location : pos\linedisplaycursortypeflags.htm
 old-project : pos
 ms.assetid : DD09C18C-C2FA-43DD-9E5F-ACA36132DAAD
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : LineDisplayCursorTypeFlags,
+ms.date : 1/18/2018
+ms.keywords : LineDisplayCursorTypeFlags, pointofservicecommontypes/LineDisplayCursorTypeFlags, LineDisplayCursorTypeFlags enumeration, pos.linedisplaycursortypeflags, pointofservicecommontypes/
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LineDisplayCursorTypeFlags
-req.alt-loc : pointofservicecommontypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,6 +51,46 @@ typedef enum _LineDisplayCursorTypeFlags {
 ## Constants
 
 <table>
+
+<tr>
+<td>CursorTypeBlink</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CursorTypeBlock</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CursorTypeFixed</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CursorTypeHalfBlock</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CursorTypeNone</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CursorTypeOther</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CursorTypeReverse</td>
+<td></td>
+</tr>
+
+<tr>
+<td>CursorTypeUnderline</td>
+<td></td>
+</tr>
 </table>
 
 

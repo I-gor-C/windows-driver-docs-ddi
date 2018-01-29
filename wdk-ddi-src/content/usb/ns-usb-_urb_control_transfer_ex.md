@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : b77febb8-6428-4633-85a0-2f8c0409194d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_CONTROL_TRANSFER_EX,
+ms.keywords : buses._urb_control_transfer_ex, _URB_CONTROL_TRANSFER_EX, USBD_DEFAULT_PIPE_TRANSFER, usb/_URB_CONTROL_TRANSFER_EX, _URB_CONTROL_TRANSFER_EX structure [Buses], USBD_TRANSFER_DIRECTION_OUT, USBD_SHORT_TRANSFER_OK, usbstrct_08c90b6d-8b25-4ebe-9131-5d2a0bacd5db.xml, USBD_TRANSFER_DIRECTION_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_CONTROL_TRANSFER_EX
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -56,51 +60,58 @@ struct _URB_CONTROL_TRANSFER_EX {
 
 ## Members
 
-        
-            `hca`
 
-            Reserved. Do not use.
-        
-            `Hdr`
+`_URB_HCD_AREA`
 
-            Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_CONTROL_TRANSFER_EX, and <b>Hdr.Length</b> must be <code>sizeof(_URB_CONTROL_TRANSFER_EX)</code>.
-        
-            `Pad`
 
-            Reserved. Do not use.
-        
-            `PipeHandle`
 
-            Handle for the pipe.
+`_URB_HEADER`
+
+
+
+`hca`
+
+Reserved. Do not use.
+
+`Hdr`
+
+Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_CONTROL_TRANSFER_EX, and <b>Hdr.Length</b> must be <code>sizeof(_URB_CONTROL_TRANSFER_EX)</code>.
+
+`Pad`
+
+Reserved. Do not use.
+
+`PipeHandle`
+
+Handle for the pipe.
 
  If target is the default control endpoint, then  <b>PipeHandle</b> must be <b>NULL</b>.  In this case, the <b>TransferFlags</b> must contain the USBD_DEFAULT_PIPE_TRANSFER flag.
 
 If target is a non-default control endpoint, <b>PipeHandle</b> specifies an opaque handle for the control pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.
-        
-            `SetupPacket`
 
-            Specifies a USB-defined request setup packet. The format of a USB request setup packet is found in the USB core specification.
-        
-            `Timeout`
+`SetupPacket`
 
-            Indicates the time, in milliseconds, before the URB times out. A value of 0 indicates that there is no timeout for this URB.
-        
-            `TransferBuffer`
+Specifies a USB-defined request setup packet. The format of a USB request setup packet is found in the USB core specification.
 
-            Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The contents of this buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified this buffer will contain data read from the device on return from the host controller driver. Otherwise, this buffer contains driver-supplied data for transfer to the device.
-        
-            `TransferBufferLength`
+`Timeout`
 
-            Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.
-        
-            `TransferBufferMDL`
+Indicates the time, in milliseconds, before the URB times out. A value of 0 indicates that there is no timeout for this URB.
 
-            Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The contents of the buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified, the described buffer will contain data read from the device on return from the host controller driver. Otherwise, the buffer contains driver-supplied data for transfer to the device. This MDL must be allocated from nonpaged pool.
-        
-            `TransferFlags`
+`TransferBuffer`
 
-            Specifies zero, one, or a combination of the following flags:
+Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The contents of this buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified this buffer will contain data read from the device on return from the host controller driver. Otherwise, this buffer contains driver-supplied data for transfer to the device.
 
+`TransferBufferLength`
+
+Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.
+
+`TransferBufferMDL`
+
+Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The contents of the buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified, the described buffer will contain data read from the device on return from the host controller driver. Otherwise, the buffer contains driver-supplied data for transfer to the device. This MDL must be allocated from nonpaged pool.
+
+`TransferFlags`
+
+Specifies zero, one, or a combination of the following flags:
 
 
 <table>
@@ -109,9 +120,58 @@ If target is a non-default control endpoint, <b>PipeHandle</b> specifies an opaq
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="USBD_TRANSFER_DIRECTION_IN"></a><a id="usbd_transfer_direction_in"></a><dl>
+<dt><b>USBD_TRANSFER_DIRECTION_IN</b></dt>
+</dl>
+</td>
+<td width="60%">
+Is set to request data from a device. To transfer data to a device, this flag must be clear. 
 
-    ## Remarks
-        This URB structure is identical to <a href="..\usb\ns-usb-_urb_control_transfer.md">_URB_CONTROL_TRANSFER</a>, except that the <b>Timeout</b> member establishes a timeout for the URB. 
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="USBD_TRANSFER_DIRECTION_OUT"></a><a id="usbd_transfer_direction_out"></a><dl>
+<dt><b>USBD_TRANSFER_DIRECTION_OUT</b></dt>
+</dl>
+</td>
+<td width="60%">
+Is set to transfer data to a device. Setting this flag is equivalent to clearing the USBD_TRANSFER_DIRECTION_IN flag. 
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="USBD_SHORT_TRANSFER_OK"></a><a id="usbd_short_transfer_ok"></a><dl>
+<dt><b>USBD_SHORT_TRANSFER_OK</b></dt>
+</dl>
+</td>
+<td width="60%">
+Is set to direct the host controller not to return an error when it receives a packet from the device that is shorter than the maximum packet size for the endpoint. The maximum packet size for the endpoint is reported in the <b>bMaxPacketSize0</b> member  of the <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure (device descriptor) for the default control endpoint. For a non-default control endpoint,  maximum packet size  is set in the <b>wMaxPacketSize</b> member of the <a href="..\usbspec\ns-usbspec-_usb_endpoint_descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure (endpoint descriptor).
+
+When the host controller receives a packet whose length is shorter than the <b>wMaxPacketSize</b> value on a control endpoint, the behavior is as follows depending on the type of host controller:<ul>
+<li>On EHCI host controllers, the host controller proceeds immediately to the status phase of the control transfer.  The transfer completes successfully, regardless of whether USBD_SHORT_TRANSFER_OK is set.
+
+</li>
+<li>On UHCI and OHCI host controllers, if USBD_SHORT_TRANSFER_OK is set, the host controller proceeds to the status phase.  If USBD_SHORT_TRANSFER_OK is not set, the host controller abandons the data and status phases of the control transfer and the transfer completes with an error.
+</li>
+</ul>
+
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="USBD_DEFAULT_PIPE_TRANSFER"></a><a id="usbd_default_pipe_transfer"></a><dl>
+<dt><b>USBD_DEFAULT_PIPE_TRANSFER</b></dt>
+</dl>
+</td>
+<td width="60%">
+Is set to direct the host controller to do a control transfer on the default  control pipe. This allows the caller to send commands to the default control pipe without explicitly specifying the pipe handle. 
+
+</td>
+</tr>
+</table>
+
+## Remarks
+This URB structure is identical to <a href="..\usb\ns-usb-_urb_control_transfer.md">_URB_CONTROL_TRANSFER</a>, except that the <b>Timeout</b> member establishes a timeout for the URB. 
 
 The reserved members of this structure must be treated as opaque and are reserved for system use.
 
@@ -123,22 +183,16 @@ The reserved members of this structure must be treated as opaque and are reserve
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_control_transfer.md">_URB_CONTROL_TRANSFER</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_control_transfer.md">_URB_CONTROL_TRANSFER</a>
+
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

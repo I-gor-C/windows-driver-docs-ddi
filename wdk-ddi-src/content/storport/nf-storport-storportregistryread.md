@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 16f13973-c1c1-4123-8fa4-20187ec2c204
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortRegistryRead
+ms.keywords : StorPortRegistryRead, StorPortRegistryRead routine [Storage Devices], storage.storportregistryread, storport/StorPortRegistryRead, storprt_6eafcbbc-b767-45b3-97d6-86e591a29a19.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortRegistryRead
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : StorPortIrql
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,6 @@ Indicates, when nonzero, that the port driver reads the contents of the registry
 `Type`
 
 Indicates the data type of registry value. This parameter must have one of the values in the following table.
-
 <table>
 <tr>
 <th>Registry value data type</th>
@@ -252,14 +255,10 @@ The buffer used in this routine is allocated by calling <a href="..\storport\nf-
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportfreeregistrybuffer.md">StorPortFreeRegistryBuffer</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a>
+
  
 
  

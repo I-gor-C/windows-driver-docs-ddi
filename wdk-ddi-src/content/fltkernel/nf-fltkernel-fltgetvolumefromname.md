@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 813b914a-05d6-4e5a-9420-f87e94ee9e96
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeFromName
+ms.keywords : FltGetVolumeFromName, FltGetVolumeFromName routine [Installable File System Drivers], ifsk.fltgetvolumefromname, FltApiRef_e_to_o_1132de70-bc75-48a2-b0ae-d5b6d67a0a07.xml, fltkernel/FltGetVolumeFromName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetVolumeFromName
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,18 +70,56 @@ Pointer to a caller-allocated variable that receives an opaque pointer for the v
 ## Return Value
 
 <b>FltGetVolumeFromName</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller did not have FILE_READ_DATA access to the volume. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The caller did not have FILE_READ_DATA access to the volume. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The volume is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The volume is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid value was specified for the <i>VolumeName</i> parameter. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+An invalid value was specified for the <i>VolumeName</i> parameter. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_VOLUME_NOT_FOUND</b></dt>
-</dl>No matching volume was found. This is an error code.
+</dl>
+</td>
+<td width="60%">
+No matching volume was found. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,26 +145,18 @@ To get the volume GUID name for a given volume, call <a href="..\fltkernel\nf-fl
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetfilterfromname.md">FltGetFilterFromName</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetfilterfromname.md">FltGetFilterFromName</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>
+
  
 
  

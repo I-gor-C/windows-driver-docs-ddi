@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 706269d8-123b-48c6-83cb-8ae47fb92efc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_get_media_types_ex, IOCTL_STORAGE_GET_MEDIA_TYPES_EX control code [Storage Devices], IOCTL_STORAGE_GET_MEDIA_TYPES_EX, ntddstor/IOCTL_STORAGE_GET_MEDIA_TYPES_EX, k307_6dad39e5-7a8b-477d-a96d-5f00fe7fee7b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_GET_MEDIA_TYPES_EX
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_MEDIA_TYPES_EX IOCTL
-Returns information about the types of media supported by a device. A storage class driver must handle this IOCTL to control devices to be accessed by the removable storage manager (RSM) either as stand-alone devices or as data transfer elements (drives) in a media library or changer device. 
-
-
-
 Returns information about the types of media supported by a device. A storage class driver must handle this IOCTL to control devices to be accessed by the removable storage manager (RSM) either as stand-alone devices or as data transfer elements (drives) in a media library or changer device.
 
 ### Major Code
@@ -63,7 +63,6 @@ The driver returns an array of <a href="..\ntddstor\ns-ntddstor-_device_media_in
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH or STATUS_INSUFFICIENT_RESOURCES.
 
 
@@ -74,16 +73,12 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
-</dt>
-</dl>
+
  
 
  

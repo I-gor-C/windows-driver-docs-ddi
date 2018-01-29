@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : adc3e8a0-b261-47dc-ada2-bd21cb3ca954
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_EXTENSIONEXECUTE, D3DDDIARG_EXTENSIONEXECUTE
+ms.keywords : display.d3dddiarg_extensionexecute, d3dumddi/D3DDDIARG_EXTENSIONEXECUTE, _D3DDDIARG_EXTENSIONEXECUTE, D3DDDIARG_EXTENSIONEXECUTE structure [Display Devices], UMDisplayDriver_param_Structs_99780923-fb21-4c84-bced-973ebfe44b1a.xml, D3DDDIARG_EXTENSIONEXECUTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_EXTENSIONEXECUTE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_EXTENSIONEXECUTE
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DDDIARG_EXTENSIONEXECUTE {
 
 ## Members
 
-        
-            `Function`
 
-            [in] A specific operation to perform. The possible values for this member are defined by the extension device.
-        
-            `hExtension`
+`Function`
 
-            [in] A handle to the DirectX VA extension device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createextensiondevice.md">CreateExtensionDevice</a> function.
-        
-            `NumBuffers`
+[in] A specific operation to perform. The possible values for this member are defined by the extension device.
 
-            [in] The number of buffers in the list that is pointed to by <b>pBuffers</b>.
-        
-            `pBuffers`
+`hExtension`
 
-            [in] A pointer to a list of <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatebuffer.md">DXVADDI_PRIVATEBUFFER</a> structures that describe private buffers that an extension device uses to perform an extended operation.
-        
-            `pPrivateInput`
+[in] A handle to the DirectX VA extension device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createextensiondevice.md">CreateExtensionDevice</a> function.
 
-            [in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the extension operation.
-        
-            `pPrivateOutput`
+`NumBuffers`
 
-            [in] A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the extension operation that the driver returns.
+[in] The number of buffers in the list that is pointed to by <b>pBuffers</b>.
+
+`pBuffers`
+
+[in] A pointer to a list of <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatebuffer.md">DXVADDI_PRIVATEBUFFER</a> structures that describe private buffers that an extension device uses to perform an extended operation.
+
+`pPrivateInput`
+
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the extension operation.
+
+`pPrivateOutput`
+
+[in] A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the extension operation that the driver returns.
 
 
 ## Requirements
@@ -85,22 +89,16 @@ typedef struct _D3DDDIARG_EXTENSIONEXECUTE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createextensiondevice.md">CreateExtensionDevice</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatebuffer.md">DXVADDI_PRIVATEBUFFER</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatedata.md">DXVADDI_PRIVATEDATA</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createextensiondevice.md">CreateExtensionDevice</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatebuffer.md">DXVADDI_PRIVATEBUFFER</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_extensionexecute.md">ExtensionExecute</a>
-</dt>
-</dl>
+
  
 
  

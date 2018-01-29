@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f21ba9f4-9571-4918-8f10-97bd308c69f3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0
+ms.keywords : buses.usb_bus_interface_usbdi_v0, usbinterKR_2af580ba-2b3f-4f20-808a-5cd5d42b8ada.xml, *PUSB_BUS_INTERFACE_USBDI_V0, usbbusif/USB_BUS_INTERFACE_USBDI_V0, PUSB_BUS_INTERFACE_USBDI_V0 structure pointer [Buses], _USB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0, PUSB_BUS_INTERFACE_USBDI_V0, usbbusif/PUSB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0 structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_BUS_INTERFACE_USBDI_V0
-req.alt-loc : usbbusif.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0"
 req.product : Windows 10 or later.
 ---
@@ -55,43 +59,42 @@ typedef struct _USB_BUS_INTERFACE_USBDI_V0 {
 
 ## Members
 
-        
-            `BusContext`
 
-            Contains information that describes the USB bus and the USB bus driver that exposes this interface. This is an opaque entity that the caller must pass to the interface routines.
-        
-            `GetUSBDIVersion`
+`BusContext`
 
-            Pointer to a routine that returns the USB interface version number, the version number of USB specification that defines the interface, along with host controller capabilities information. This routine returns the highest USBDI interface version that is supported by the port driver. For more information about this routine, see <a href="https://msdn.microsoft.com/05a22049-5165-41a3-aa6f-134c5d1b6c15">GetUSBDIVersion</a>.
-        
-            `InterfaceDereference`
+Contains information that describes the USB bus and the USB bus driver that exposes this interface. This is an opaque entity that the caller must pass to the interface routines.
 
-            Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>.
-        
-            `InterfaceReference`
+`GetUSBDIVersion`
 
-            Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>.
-        
-            `QueryBusInformation`
+Pointer to a routine that returns the USB interface version number, the version number of USB specification that defines the interface, along with host controller capabilities information. This routine returns the highest USBDI interface version that is supported by the port driver. For more information about this routine, see <a href="https://msdn.microsoft.com/05a22049-5165-41a3-aa6f-134c5d1b6c15">GetUSBDIVersion</a>.
 
-            Pointer to a routine that returns information about the bus. The information that is returned depends on the value of the <b>Level </b>member. If <b>Level</b> is 0, this routine returns bus bandwidth information. If <b>Level</b> is 1, it returns bus bandwidth information and the host controller's symbolic name. This routine replaces the <b>USBD_QueryBusInformation</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a>.
-        
-            `QueryBusTime`
+`InterfaceDereference`
 
-            Pointer to a routine that returns the current 32-bit USB frame number. This routine replaces the <b>USBD_QueryBusTime</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/6a0a1953-070d-4335-a906-4ca3fe8a04e1">QueryBusTime</a>.
-        
-            `Size`
+Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>.
 
-            Specifies the size in bytes of the buffer that holds the interface pointers.
-        
-            `SubmitIsoOutUrb`
+`InterfaceReference`
 
-            Reserved. Do not use.
-        
-            `Version`
+Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>.
 
-            Indicates, on input, the version of the interface. This member should have one of the following values:
+`QueryBusInformation`
 
+Pointer to a routine that returns information about the bus. The information that is returned depends on the value of the <b>Level </b>member. If <b>Level</b> is 0, this routine returns bus bandwidth information. If <b>Level</b> is 1, it returns bus bandwidth information and the host controller's symbolic name. This routine replaces the <b>USBD_QueryBusInformation</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a>.
+
+`QueryBusTime`
+
+Pointer to a routine that returns the current 32-bit USB frame number. This routine replaces the <b>USBD_QueryBusTime</b> function provided by usbd.sys. For more information about this routine, see <a href="https://msdn.microsoft.com/6a0a1953-070d-4335-a906-4ca3fe8a04e1">QueryBusTime</a>.
+
+`Size`
+
+Specifies the size in bytes of the buffer that holds the interface pointers.
+
+`SubmitIsoOutUrb`
+
+Reserved. Do not use.
+
+`Version`
+
+Indicates, on input, the version of the interface. This member should have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -139,8 +142,8 @@ Version 3 of the interface.
 </tr>
 </table>
 
-    ## Remarks
-        For information about how to query for these interfaces, see <a href="https://msdn.microsoft.com/1a916e21-3545-4a4e-8309-ba10b3690d63">Querying for USB Interfaces</a>. Callers of the routines in this structure can be running at IRQL &lt;= DISPATCH_LEVEL.
+## Remarks
+For information about how to query for these interfaces, see <a href="https://msdn.microsoft.com/1a916e21-3545-4a4e-8309-ba10b3690d63">Querying for USB Interfaces</a>. Callers of the routines in this structure can be running at IRQL &lt;= DISPATCH_LEVEL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -150,16 +153,12 @@ Version 3 of the interface.
 | **Minimum UMDF version** |  |
 | **Header** | usbbusif.h (include Usbbusif.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/1b571ee0-d47f-40b6-8beb-d57b49ae3ac8">Bus Driver Interface Routines for USB Client Drivers</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

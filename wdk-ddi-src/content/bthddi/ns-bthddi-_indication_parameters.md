@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : fc93ab8a-01d2-4827-8d89-06f09bf10456
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _INDICATION_PARAMETERS, *PINDICATION_PARAMETERS, INDICATION_PARAMETERS
+ms.keywords : INDICATION_PARAMETERS, PINDICATION_PARAMETERS structure pointer [Bluetooth Devices], bltooth.indication_parameters, bthddi/INDICATION_PARAMETERS, *PINDICATION_PARAMETERS, bthddi/PINDICATION_PARAMETERS, PINDICATION_PARAMETERS, bth_structs_8cf076cf-a280-49ee-bbe6-cc54e854905e.xml, INDICATION_PARAMETERS structure [Bluetooth Devices], _INDICATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : INDICATION_PARAMETERS
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames : "*PINDICATION_PARAMETERS, INDICATION_PARAMETERS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : INDICATION_PARAMETERS, *PINDICATION_PARAMETERS
 ---
 
 # _INDICATION_PARAMETERS structure
@@ -83,22 +87,22 @@ typedef struct _INDICATION_PARAMETERS {
 
 ## Members
 
-        
-            `BtAddress`
 
-            The Bluetooth address of the remote device.
-        
-            `ConnectionHandle`
+`BtAddress`
 
-            The L2CAP connection handle to the remote device. This handle is only valid for notifications that
+The Bluetooth address of the remote device.
+
+`ConnectionHandle`
+
+The L2CAP connection handle to the remote device. This handle is only valid for notifications that
      arrive over an established L2CAP connection.
-        
-            `Parameters`
 
-            
+`Parameters`
 
-    ## Remarks
-        A profile driver's 
+
+
+## Remarks
+A profile driver's 
     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a> should
     process this structure differently depending upon the value that the Bluetooth driver stack passes in the
     
@@ -109,6 +113,31 @@ When the Bluetooth driver stack passes
     <b>Connect</b> member of the 
     <b>Parameters</b> union.
 
+When the Bluetooth driver stack passes 
+    <b>IndicationRemoteDisconnect</b>, the callback function should use the 
+    <b>Disconnect</b> member of the 
+    <b>Parameters</b> union.
+
+When the Bluetooth driver stack passes 
+    <b>IndicationRemoteConfigRequest</b>, the callback function should use the 
+    <b>ConfigRequest</b> member of the 
+    <b>Parameters</b> union.
+
+When the Bluetooth driver stack passes 
+    <b>IndicationRemoteConfigResponse</b>, the callback function should use the 
+    <b>ConfigResponse</b> member of the 
+    <b>Parameters</b> union.
+
+When the Bluetooth driver stack passes 
+    <b>IndicationRemoteFreeExtraOptions</b>, the callback function should use the 
+    <b>FreeExtraOptions</b> member of the 
+    <b>Parameters</b> union.
+
+When the Bluetooth driver stack passes 
+    <b>IndicationRemoteRecvPacket</b>, the callback function should use the 
+    <b>RecvPacket</b> member of the 
+    <b>Parameters</b> union.
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -117,25 +146,18 @@ When the Bluetooth driver stack passes
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
-</dt>
-<dt>
-<a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
-</dt>
-<dt>
 <a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
-</dt>
-<dt>
+
+<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
+
 <a href="..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md">L2CAP_DISCONNECT_REASON</a>
-</dt>
-<dt>
+
+<a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
+
 <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
-</dt>
-</dl>
+
  
 
  

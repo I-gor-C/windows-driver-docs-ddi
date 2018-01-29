@@ -7,8 +7,8 @@ old-location : netvista\rilrequestgeolocationdata.htm
 old-project : netvista
 ms.assetid : 814e00c5-7248-4853-a61b-e70be86bca0e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA structure [Network Drivers Starting with Windows Vista], netvista.rilrequestgeolocationdata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILREQUESTGEOLOCATIONDATA
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
 ---
 
 # RILREQUESTGEOLOCATIONDATA structure
@@ -51,30 +55,30 @@ typedef struct _RILREQUESTGEOLOCATIONDATA {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwLocationInformationMask`
 
-            
-        
-            `dwLocationRequestAccuracy`
 
-            
-        
-            `dwParams`
+`dwExecutor`
 
-            
-        
-            `rrRequestInformation`
 
-            
+
+`dwLocationInformationMask`
+
+
+
+`dwLocationRequestAccuracy`
+
+
+
+`dwParams`
+
+
+
+`rrRequestInformation`
+
+
 
 
 ## Requirements

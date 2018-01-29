@@ -7,8 +7,8 @@ old-location : print\ifixedpage_getpagepart.htm
 old-project : print
 ms.assetid : 6ec8d282-eedb-419e-84cb-8f4776ea7650
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IFixedPage, IFixedPage::GetPagePart, GetPagePart
+ms.date : 1/18/2018
+ms.keywords : print.ifixedpage_getpagepart, IFixedPage interface [Print Devices], GetPagePart method, IFixedPage::GetPagePart, filterpipeline_925ca634-7cac-41f6-b80f-cc5c90154ae0.xml, GetPagePart, GetPagePart method [Print Devices], GetPagePart method [Print Devices], IFixedPage interface, filterpipeline/IFixedPage::GetPagePart, IFixedPage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IFixedPage.GetPagePart
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -64,7 +68,7 @@ The object that is to be queried.
 
 ## Remarks
 
-A filter must use QueryInterface on the return value to see what part types reside in the page.</p>
+A filter must use QueryInterface on the return value to see what part types reside in the page.
 
 ## Requirements
 | &nbsp; | &nbsp; |

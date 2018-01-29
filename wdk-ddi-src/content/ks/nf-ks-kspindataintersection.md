@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e4bf090d-35ec-42fd-8b6e-ce51734adba5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinDataIntersection
+ms.keywords : stream.kspindataintersection, ks/KsPinDataIntersection, ksfunc_33b743b3-4045-49cb-a5d4-f6aede715223.xml, KsPinDataIntersection function [Streaming Media Devices], KsPinDataIntersection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinDataIntersection
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -102,14 +106,10 @@ A match can occur under three conditions: if the major format of the range passe
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nc-ks-pfnksintersecthandler.md">KStrIntersectHandler</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-</dl>
+
  
 
  

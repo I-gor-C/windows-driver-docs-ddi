@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8fa26442-66a3-4eeb-89d4-21418d60a1af
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSPROCESSPIN_INDEXENTRY, *PKSPROCESSPIN_INDEXENTRY, KSPROCESSPIN_INDEXENTRY
+ms.keywords : avstruct_c32acda3-bab1-4077-a834-4b44a92524db.xml, stream.ksprocesspin_indexentry, _KSPROCESSPIN_INDEXENTRY, *PKSPROCESSPIN_INDEXENTRY, KSPROCESSPIN_INDEXENTRY, PKSPROCESSPIN_INDEXENTRY structure pointer [Streaming Media Devices], PKSPROCESSPIN_INDEXENTRY, ks/KSPROCESSPIN_INDEXENTRY, KSPROCESSPIN_INDEXENTRY structure [Streaming Media Devices], ks/PKSPROCESSPIN_INDEXENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROCESSPIN_INDEXENTRY
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPROCESSPIN_INDEXENTRY, KSPROCESSPIN_INDEXENTRY"
 ---
 
@@ -48,8 +52,8 @@ typedef struct _KSPROCESSPIN_INDEXENTRY {
 ## Members
 
 
-    ## Remarks
-        This pointer table is indexed in order of the pins described in the pin descriptor table for the corresponding filter. The first pin described in the descriptor table has the first entry in the index table passed to the processing dispatch. See the processing dispatch in <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>.
+## Remarks
+This pointer table is indexed in order of the pins described in the pin descriptor table for the corresponding filter. The first pin described in the descriptor table has the first entry in the index table passed to the processing dispatch. See the processing dispatch in <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>.
 
 For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.
 
@@ -61,13 +65,10 @@ For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a>
-</dt>
-</dl>
+
  
 
  

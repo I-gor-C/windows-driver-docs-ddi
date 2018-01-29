@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a7d69bf8-7aa8-46c2-98f9-769ee174757b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsValidateTopologyNodeCreateRequest
+ms.keywords : KsValidateTopologyNodeCreateRequest function [Streaming Media Devices], stream.ksvalidatetopologynodecreaterequest, ksfunc_f2b7fc56-1bca-4de5-981b-68364aa96fa7.xml, KsValidateTopologyNodeCreateRequest, ks/KsValidateTopologyNodeCreateRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsValidateTopologyNodeCreateRequest
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

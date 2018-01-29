@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e82ab7bf-9585-4c8b-9e1f-2082e2c530b1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_OUTPUT, D3D11_1DDI_VIDEO_OUTPUT
+ms.keywords : display.d3d11_1ddi_video_output, D3D11_1DDI_VIDEO_OUTPUT, d3d10umddi/D3D11_1DDI_VIDEO_OUTPUT, D3D11_1DDI_VIDEO_OUTPUT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_OUTPUT
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_OUTPUT
 ---
 
@@ -46,10 +50,10 @@ typedef struct D3D11_1DDI_VIDEO_OUTPUT {
 
 ## Members
 
-        
-            `Reserved`
 
-            Reserved for system use. Do not use in your driver.
+`Reserved`
+
+Reserved for system use. Do not use in your driver.
 
 
 ## Requirements

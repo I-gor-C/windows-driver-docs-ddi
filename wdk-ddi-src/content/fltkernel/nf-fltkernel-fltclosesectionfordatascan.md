@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2B3C52FD-80D7-4ECA-9B33-7916FB47B0B2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCloseSectionForDataScan
+ms.keywords : FltCloseSectionForDataScan routine [Installable File System Drivers], ifsk.fltclosesectionfordatascan, fltkernel/FltCloseSectionForDataScan, FltCloseSectionForDataScan
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The FltCloseSectionForDataScan routine is available 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltCloseSectionForDataScan
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -56,12 +60,34 @@ A pointer to the section context to close.
 ## Return Value
 
 <b>FltCloseSectionForDataScan</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The section context was not properly created. An allocated section context must first be passed to <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The section context was not properly created. An allocated section context must first be passed to <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>The section context is already closed.
+</dl>
+</td>
+<td width="60%">
+The section context is already closed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -83,17 +109,12 @@ After <b>FltCloseSectionForDataScan</b> returns, operations that conflict with t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
  
 
  

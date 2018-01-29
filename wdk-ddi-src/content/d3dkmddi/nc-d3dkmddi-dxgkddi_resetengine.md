@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9c2097b2-5742-422c-a650-7efff2484970
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiresetengine, DxgkDdiResetEngine callback function [Display Devices], DxgkDdiResetEngine, DXGKDDI_RESETENGINE, DXGKDDI_RESETENGINE, d3dkmddi/DxgkDdiResetEngine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiResetEngine
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -58,8 +62,6 @@ A handle to a context block that is associated with a display adapter. The displ
 
 `pResetEngine`
 
-</i> [in, out]
-<dd>
 A value of type  <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_resetengine.md">DXGKARG_RESETENGINE</a> that specifies nodes that are to be reset and supplies a fence identifier for the last aborted packet.
 
 
@@ -91,14 +93,10 @@ For more information, see  <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_resetengine.md">DXGKARG_RESETENGINE</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_resetengine.md">DXGKARG_RESETENGINE</a>
+
  
 
  

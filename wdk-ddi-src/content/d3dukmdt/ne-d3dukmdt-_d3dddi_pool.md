@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b3f34183-7595-47b6-a2f1-c32650734a04
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_POOL, D3DDDI_POOL
+ms.keywords : d3dukmdt/D3DDDIPOOL_LOCALVIDMEM, d3dukmdt/D3DDDI_POOL, d3dukmdt/D3DDDIPOOL_SYSTEMMEM, D3DDDIPOOL_STAGINGMEM, _D3DDDI_POOL, display.d3dddi_pool, D3DDDI_POOL, D3DDDIPOOL_SYSTEMMEM, d3dukmdt/D3DDDIPOOL_NONLOCALVIDMEM, d3dukmdt/D3DDDIPOOL_VIDEOMEMORY, d3dukmdt/D3DDDIPOOL_STAGINGMEM, D3D_other_Structs_859cbea4-6000-4906-a3f4-3ff6ea4caa7b.xml, D3DDDIPOOL_LOCALVIDMEM, D3DDDIPOOL_NONLOCALVIDMEM, D3DDDI_POOL enumeration [Display Devices], D3DDDIPOOL_VIDEOMEMORY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_POOL
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_POOL
 ---
 
@@ -98,11 +102,8 @@ Note that the D3DDDIPOOL_LOCALVIDMEM and D3DDDIPOOL_NONLOCALVIDMEM values are pr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 8db09aa8-240d-40b6-a28c-77158aff6c39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT
+ms.keywords : SRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT structure [Buses], pcivirt/SRIOV_PROXY_QUERY_LUID_OUTPUT, _SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT, PCI.sriov_proxy_query_luid_output
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_PROXY_QUERY_LUID_OUTPUT
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT"
 ---
 
 # _SRIOV_PROXY_QUERY_LUID_OUTPUT structure
@@ -47,10 +51,10 @@ typedef struct _SRIOV_PROXY_QUERY_LUID_OUTPUT {
 
 ## Members
 
-        
-            `DeviceLuid`
 
-            Local unique
+`DeviceLuid`
+
+Local unique
 identifier of the SR_IOV device implementing the interface.
 
 
@@ -62,13 +66,10 @@ identifier of the SR_IOV device implementing the interface.
 | **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/9f10ed34-f718-4c35-9b6f-29554bf30a0f">IOCTL_SRIOV_PROXY_QUERY_LUID</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 433babb7-9a53-4079-9a65-43a5ed0c201a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddirestartfromtimeout, DxgkDdiRestartFromTimeout callback function [Display Devices], DxgkDdiRestartFromTimeout, DXGKDDI_RESTARTFROMTIMEOUT, DXGKDDI_RESTARTFROMTIMEOUT, d3dkmddi/DxgkDdiRestartFromTimeout, DmFunctions_ba675ea3-7f25-446f-bf13-af2228aa1e65.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiRestartFromTimeout
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -80,14 +84,10 @@ The operating system calls the <i>DxgkDdiRestartFromTimeout</i> function after t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetfromtimeout.md">DxgkDdiResetFromTimeout</a>
-</dt>
-</dl>
+
  
 
  

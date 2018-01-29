@@ -7,8 +7,8 @@ old-location : netvista\rilcbgwlconfiginfo_2.htm
 old-project : netvista
 ms.assetid : 5939b967-bbc7-42e3-af90-a1c20698a934
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCBGWLCONFIGINFO, *LPRILCBGWLCONFIGINFO, RILCBGWLCONFIGINFO
+ms.date : 1/18/2018
+ms.keywords : "*LPRILCBGWLCONFIGINFO, netvista.rilcbgwlconfiginfo_2, rilapitypes/RILCBGWLCONFIGINFO, RILCBGWLCONFIGINFO, RILCBGWLCONFIGINFO structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCBGWLCONFIGINFO
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILCBGWLCONFIGINFO, RILCBGWLCONFIGINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILCBGWLCONFIGINFO, *LPRILCBGWLCONFIGINFO
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _RILCBGWLCONFIGINFO {
 
 ## Members
 
-        
-            `fAccept`
 
-            
-        
-            `rgrrBroadcastMsgID`
+`fAccept`
 
-            
+
+
+`rgrrBroadcastMsgID`
+
+
 
 
 ## Requirements

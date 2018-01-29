@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B79959EC-A064-4B35-98EF-5B032AF5D4B4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddi_getpostcompositioncaps, DXGKDDI_GETPOSTCOMPOSITIONCAPS callback function [Display Devices], DXGKDDI_GETPOSTCOMPOSITIONCAPS, d3dkmddi/DXGKDDI_GETPOSTCOMPOSITIONCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKDDI_GETPOSTCOMPOSITIONCAPS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,16 +68,29 @@ Identifies the adapter containing the overlay hardware.
 ## Return Value
 
 DXGKDDI_GETPOSTCOMPOSITIONCAPS returns the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>If the routine has been successfully completed.
+</dl>
+</td>
+<td width="60%">
+If the routine has been successfully completed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 This function is called at PASSIVE_LEVEL.
 
 The multiplane overlay capabilities are allowed to change due to display configuration changes.
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

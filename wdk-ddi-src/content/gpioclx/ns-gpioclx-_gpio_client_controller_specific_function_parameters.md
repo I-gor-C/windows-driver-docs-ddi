@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 57EE1369-09A5-423F-8025-0863B449A909
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, *PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS
+ms.keywords : gpioclx/GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, *PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, gpioclx/PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure pointer [Parallel Ports], GPIO.gpio_client_controller_specific_function_parameters, _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS
-req.alt-loc : Gpioclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, *PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS"
 ---
 
 # _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure
@@ -50,29 +54,31 @@ typedef struct _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS {
 
 ## Members
 
-        
-            `BytesWritten`
 
-            The number of bytes written to the output buffer. The GPIO controller driver sets the value of this member to indicate how much data was written to the output buffer. If no data was written to the output buffer, or if <b>OutputBuffer</b> = NULL, the driver should set <b>BytesWritten</b> = 0.
-        
-            `InputBuffer`
+`BytesWritten`
 
-            A pointer to an input buffer from which the general-purpose I/O (GPIO) controller driver reads the input parameters for the controller-specific operation. This member can be NULL if the operation does not require input parameters.
-        
-            `InputBufferLength`
+The number of bytes written to the output buffer. The GPIO controller driver sets the value of this member to indicate how much data was written to the output buffer. If no data was written to the output buffer, or if <b>OutputBuffer</b> = NULL, the driver should set <b>BytesWritten</b> = 0.
 
-            The size, in bytes, of the input buffer pointed to by <b>InputBuffer</b>.
-        
-            `OutputBuffer`
+`InputBuffer`
 
-            A pointer to an output buffer to which the GPIO controller driver writes the results for the controller-specific operation. This member can be NULL if the operation does not require output parameters.
-        
-            `OutputBufferLength`
+A pointer to an input buffer from which the general-purpose I/O (GPIO) controller driver reads the input parameters for the controller-specific operation. This member can be NULL if the operation does not require input parameters.
 
-            The size, in bytes, of the output buffer pointed to by <b>OutputBuffer</b>.
+`InputBufferLength`
 
-    ## Remarks
-        The <i>Parameters</i> parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698237">CLIENT_ControllerSpecificFunction</a> function is a pointer to a <b>GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</b> structure. This structure describes the input and output buffers from a custom I/O control request (IOCTL) for a hardware-specific operation that is implemented by the GPIO controller and supported by the GPIO controller driver.
+The size, in bytes, of the input buffer pointed to by <b>InputBuffer</b>.
+
+`OutputBuffer`
+
+A pointer to an output buffer to which the GPIO controller driver writes the results for the controller-specific operation. This member can be NULL if the operation does not require output parameters.
+
+`OutputBufferLength`
+
+The size, in bytes, of the output buffer pointed to by <b>OutputBuffer</b>.
+
+## Remarks
+The <i>Parameters</i> parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698237">CLIENT_ControllerSpecificFunction</a> function is a pointer to a <b>GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</b> structure. This structure describes the input and output buffers from a custom I/O control request (IOCTL) for a hardware-specific operation that is implemented by the GPIO controller and supported by the GPIO controller driver.
+
+The GPIO framework extension (GpioClx) fills in the first four members of the structure before the call to the <i>CLIENT_ControllerSpecificFunction</i> function. This function fills in the last member, <b>BytesWritten</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +88,10 @@ typedef struct _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | gpioclx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698237">CLIENT_ControllerSpecificFunction</a>
-</dt>
-</dl>
+
  
 
  

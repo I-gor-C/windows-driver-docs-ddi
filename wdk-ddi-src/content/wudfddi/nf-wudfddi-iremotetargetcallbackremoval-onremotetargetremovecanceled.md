@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 26a6e9e7-f1bb-4174-a640-f665cecfd191
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled, OnRemoteTargetRemoveCanceled
+ms.keywords : IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled, OnRemoteTargetRemoveCanceled method, OnRemoteTargetRemoveCanceled, IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveCanceled method, umdf.iremotetargetcallbackremoval_onremotetargetremovecanceled, OnRemoteTargetRemoveCanceled method, IRemoteTargetCallbackRemoval interface, UMDFIoTargetObjectRef_aa4d89fd-ad91-46ea-a55d-4c89d65da13e.xml, wdf.iremotetargetcallbackremoval_onremotetargetremovecanceled, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveCanceled
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -63,12 +67,16 @@ None.
 ## Remarks
 
 If your driver provides an <b>OnRemoteTargetRemoveCanceled</b> event callback function, the callback function must do the following:
-
+<ol>
+<li>
 Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560278">IWDFRemoteTarget::Reopen</a>.
 
+</li>
+<li>
 Do any driver-specific actions that your driver requires to restart I/O to the remote I/O target.
 
-If the driver does not provide this callback function, the framework calls <b>IWDFRemoteTarget::Reopen</b> for the driver.
+</li>
+</ol>If the driver does not provide this callback function, the framework calls <b>IWDFRemoteTarget::Reopen</b> for the driver.
 
 For more information about the <b>OnRemoteTargetRemoveCanceled</b> event callback function, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>.
 
@@ -86,17 +94,12 @@ For more information about the <b>OnRemoteTargetRemoveCanceled</b> event callbac
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556897">IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556897">IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove</a>
+
  
 
  

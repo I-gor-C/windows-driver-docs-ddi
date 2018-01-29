@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 045c45fe-c971-4d41-a43d-415c2a4d464b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WmiTraceMessage
+ms.keywords : k902_114717ae-d439-4ddd-b939-913795610dee.xml, kernel.wmitracemessage, WmiTraceMessage routine [Kernel-Mode Driver Architecture], wdm/WmiTraceMessage, WmiTraceMessage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WmiTraceMessage
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -77,52 +81,130 @@ Identifies the message subtype. The meaning of subtypes is specific to the softw
 ## Return Value
 
 <b>WmiTraceMessage</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation completed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl><i>LoggerHandle</i> is not a valid software trace handle.
+</dl>
+</td>
+<td width="60%">
+<i>LoggerHandle</i> is not a valid software trace handle.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl>There is insufficient buffer memory to log the message. See the Remarks section.
+</dl>
+</td>
+<td width="60%">
+There is insufficient buffer memory to log the message. See the Remarks section.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Other NTSTATUS value</b></dt>
-</dl>An internal error occurred.
+</dl>
+</td>
+<td width="60%">
+An internal error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 A caller can use <b>WmiTraceMessage</b> or <a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a> to add a message to the output log of a WPP software tracing session. <b>WmiTraceMessage</b> simplifies a caller's code by handling the variable list mechanism before calling <b>WmiTraceMessageVa</b>.
 
 A caller can set the following message flags:
-
+<table>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 TRACE_MESSAGE_SEQUENCE
 
+</td>
+<td>
 Include a sequence number in the message. Message sequencing can only be used if it is set for the software tracing session specified by <i>LoggerHandle</i>.
 
+</td>
+</tr>
+<tr>
+<td>
 TRACE_MESSAGE_GUID
 
+</td>
+<td>
 <i>MessageGuid</i> specifies a GUID that identifies a software trace class. This flag must be set.
 
+</td>
+</tr>
+<tr>
+<td>
 TRACE_MESSAGE_TIMESTAMP
 
+</td>
+<td>
 Include a time stamp in the message.
 
+</td>
+</tr>
+<tr>
+<td>
 TRACE_MESSAGE_PERFORMANCE_TIMESTAMP
 
+</td>
+<td>
 This flag is not implemented and is <u>obsolete</u>. It must not be used. 
 
+</td>
+</tr>
+<tr>
+<td>
 TRACE_MESSAGE_SYSTEMINFO
 
+</td>
+<td>
 Include the thread identifier (TID) and process identifier (PID) in the message.
 
-A message will not be logged if one of the following is true:
+</td>
+</tr>
+</table> 
 
+A message will not be logged if one of the following is true:
+<ul>
+<li>
 The total size, in bytes, of the message data and the message header is greater than the size of individual message buffers allocated for a software tracing session. (The maximum message header size is 48 bytes.)
 
+</li>
+<li>
 All message buffers allocated to software tracing session are full. 
 
-<b>WmiTraceMessage</b> runs at the IRQL of the caller.
+</li>
+</ul><b>WmiTraceMessage</b> runs at the IRQL of the caller.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -138,23 +220,16 @@ All message buffers allocated to software tracing session are full.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_trace_information_class.md">TRACE_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-wmiquerytraceinformation.md">WmiQueryTraceInformation</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ne-wdm-_trace_information_class.md">TRACE_INFORMATION_CLASS</a>
+
+<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a>
+
 <a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a>
-</dt>
-</dl>
+
+<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8B3E8FE0-9A96-43CD-8C6D-28F302BDF2D7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.enumerateunmaskedinterrupts, EnumerateUnmaskedInterruptsext, EnumerateUnmaskedInterrupts routine [Kernel-Mode Driver Architecture], EnumerateUnmaskedInterrupts, POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS, POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS, pepfx/EnumerateUnmaskedInterrupts
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EnumerateUnmaskedInterrupts
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= HIGH_LEVEL
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -79,9 +83,23 @@ A pointer to a caller-allocated buffer whose size is at least <b>sizeof</b>(<a h
 ## Return Value
 
 <b>EnumerateUnmaskedInterrupts</b> returns STATUS_SUCCESS if the call successfully enumerates the interrupts. Possible error return values include the following status code.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INVALID_PARAMETER</dt>
-</dl>The <b>Size</b> or <b>Version</b> member of the <b>PEP_UNMASKED_INTERRUPT_INFORMATION</b> structure contains an invalid value.
+</dl>
+</td>
+<td width="60%">
+The <b>Size</b> or <b>Version</b> member of the <b>PEP_UNMASKED_INTERRUPT_INFORMATION</b> structure contains an invalid value.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,17 +123,12 @@ The PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186632">EnumerateInterruptSource</a>
-</dt>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186632">EnumerateInterruptSource</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+
  
 
  

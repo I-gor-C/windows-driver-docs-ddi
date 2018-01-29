@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 14d03e6f-d02c-4b39-8f21-b339c65fb036
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsDataTypeHandler, IKsDataTypeHandler::KsQueryExtendedSize, KsQueryExtendedSize
+ms.keywords : KsQueryExtendedSize method [Streaming Media Devices], IKsDataTypeHandler interface [Streaming Media Devices], KsQueryExtendedSize method, ksproxy/IKsDataTypeHandler::KsQueryExtendedSize, IKsDataTypeHandler::KsQueryExtendedSize, IKsDataTypeHandler, ksproxy_b76ac8b2-6bf7-4839-9783-35c865efeb29.xml, KsQueryExtendedSize, stream.iksdatatypehandler_ksqueryextendedsize, KsQueryExtendedSize method [Streaming Media Devices], IKsDataTypeHandler interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsDataTypeHandler.KsQueryExtendedSize
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -75,14 +79,10 @@ If <b>KsQueryExtendedSize</b> returns zero at <i>ExtendedSize</i>, clients shoul
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559811">IKsDataTypeHandler::KsCompleteIoOperation</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559831">IKsDataTypeHandler::KsPrepareIoOperation</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559811">IKsDataTypeHandler::KsCompleteIoOperation</a>
+
  
 
  

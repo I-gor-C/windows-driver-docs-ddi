@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 7FFE7301-1C03-4221-9E3B-412FE89919FB
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidRegisterMinidriver
+ms.keywords : hid.ioctl_umdf_hid_set_feature, IOCTL_UMDF_HID_SET_FEATURE control code, IOCTL_UMDF_HID_SET_FEATURE, hidport/IOCTL_UMDF_HID_SET_FEATURE, umdf.ioctl_umdf_hid_set_feature
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IOCTL_UMDF_HID_SET_FEATURE
-req.alt-loc : Hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_UMDF_HID_SET_FEATURE IOCTL
@@ -76,8 +80,11 @@ The size of the buffer that is retrieved by calling <a href="https://msdn.micros
 <text></text>
 
 ### Status Block
-I/O Status block
 HID minidrivers that carry out the I/O to the device must also:
+<ul>
+<li>Call <a href="https://msdn.microsoft.com/dc2c907c-1e3b-418c-85f8-9902dc83f7ab">IWDFRequest::SetInformation</a> to set the number of bytes transferred to the device.</li>
+<li>Call <a href="https://msdn.microsoft.com/2fa389f8-8277-4795-a89e-ac5d92004310">IWDFRequest::Complete</a> with S_OK to complete the request without error. Otherwise, set the appropriate HRESULT error code.</li>
+</ul>
 
 
 ## Requirements
@@ -87,16 +94,12 @@ HID minidrivers that carry out the I/O to the device must also:
 | **Header** | hidport.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidclass\ni-hidclass-ioctl_hid_set_feature.md">IOCTL_HID_SET_FEATURE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439657">IOCTL_UMDF_HID_GET_FEATURE</a>
-</dt>
-</dl>
+
  
 
  

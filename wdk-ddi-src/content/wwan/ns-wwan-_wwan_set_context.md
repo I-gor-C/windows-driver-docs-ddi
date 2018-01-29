@@ -7,8 +7,8 @@ old-location : netvista\wwan_set_context.htm
 old-project : netvista
 ms.assetid : 00772a37-ef1b-446b-b7bd-1a6aa27d1dad
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_SET_CONTEXT, WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT
+ms.date : 1/18/2018
+ms.keywords : "*PWWAN_SET_CONTEXT, WwanRef_08361ced-712a-464d-b374-7b18a096b8e5.xml, PWWAN_SET_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT, PWWAN_SET_CONTEXT, _WWAN_SET_CONTEXT, netvista.wwan_set_context, WWAN_SET_CONTEXT structure [Network Drivers Starting with Windows Vista], wwan/WWAN_SET_CONTEXT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_SET_CONTEXT
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -55,30 +59,30 @@ typedef struct _WWAN_SET_CONTEXT {
 
 ## Members
 
-        
-            `AccessString`
 
-            A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
+`AccessString`
+
+A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
      Point Name (APN) string such as "data.thephone-company.com". For CDMA-based networks, this might be a
      special dial code such as "#777" or a Network Access Identifier (NAI) such as
      "foo@thephone-company.com". This member can be <b>NULL</b>.
      
 
 The size of the string should not exceed 100 bytes.
-        
-            `AuthType`
 
-            Authentication type to use for the PDP activation.
-        
-            `Compression`
+`AuthType`
 
-            Specifies the compression to be used in the data connection for header and data. This member
+Authentication type to use for the PDP activation.
+
+`Compression`
+
+Specifies the compression to be used in the data connection for header and data. This member
      applies only to GSM-based devices. The MB Service sets this member to 
      <b>WwanCompressionNone</b> for CDMA-based devices.
-        
-            `ContextId`
 
-            A unique ID for this context.
+`ContextId`
+
+A unique ID for this context.
      
 
 For 
@@ -86,29 +90,29 @@ For
      WWAN_CONTEXT_ID_APPEND. If this value is used, the miniport driver should decide the index for storing
      the context information. WWAN_CONTEXT_ID_APPEND should never be returned in response to 
      <i>query</i> OID_WWAN_PROVISIONED_CONTEXT requests.
-        
-            `ContextType`
 
-            Specifies the type of context being represented, for example, Internet connectivity, VPN (a
+`ContextType`
+
+Specifies the type of context being represented, for example, Internet connectivity, VPN (a
      connection to a corporate network), or Voice-over-IP (VOIP). Miniport drivers should specify 
      <b>WwanContextTypeNone</b> for empty or unprovisioned contexts.
-        
-            `Password`
 
-            The password to use for authentication. This member can be <b>NULL</b>.
-        
-            `ProviderId`
+`Password`
 
-            A NULL-terminated string that represents the network provider identification for which the
+The password to use for authentication. This member can be <b>NULL</b>.
+
+`ProviderId`
+
+A NULL-terminated string that represents the network provider identification for which the
      provisioned context should be stored in 
      <i>set</i> OID_WWAN_PROVISIONED_CONTEXT requests. Miniport drivers should return the added provisioned
      context in response to subsequent 
      <i>query</i> operations when a Subscriber Identity Module (SIM card) with this home provider ID is in the
      device.
-        
-            `UserName`
 
-            The username to use for authentication. This member can be <b>NULL</b>.
+`UserName`
+
+The username to use for authentication. This member can be <b>NULL</b>.
 
 
 ## Requirements

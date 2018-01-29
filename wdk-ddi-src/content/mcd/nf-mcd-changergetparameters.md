@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c1f508a3-6aa8-4fed-af14-6466fcae30da
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerGetParameters
+ms.keywords : storage.changergetparameters, chgrmini_d8cfe74e-46ff-4aee-b1a2-2e55be7ed01f.xml, ChangerGetParameters, ChangerGetParameters function [Storage Devices], mcd/ChangerGetParameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerGetParameters
-req.alt-loc : mcd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -95,14 +99,10 @@ The changer class driver checks the output buffer length in the I/O stack locati
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
-</dt>
-<dt>
 <a href="..\ntddchgr\ns-ntddchgr-_changer_product_data.md">IOCTL_CHANGER_GET_PARAMETERS</a>
-</dt>
-</dl>
+
+<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
+
  
 
  

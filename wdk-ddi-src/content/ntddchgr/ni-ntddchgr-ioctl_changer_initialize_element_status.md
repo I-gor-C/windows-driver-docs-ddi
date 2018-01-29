@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 25cbb42a-7263-47b7-84c7-cfcb41a858c8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ELEMENT_TYPE, *PELEMENT_TYPE, ELEMENT_TYPE
+ms.keywords : storage.ioctl_changer_initialize_element_status, IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS control code [Storage Devices], IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS, ntddchgr/IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS, k307_c36a7809-093c-4172-8443-58d178e9dd87.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
-req.alt-loc : Ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ELEMENT_TYPE, *PELEMENT_TYPE
 ---
 
 # IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS IOCTL
-Initializes the status of all elements or of specified number of elements of a particular type. 
-
-
-
 Initializes the status of all elements or of specified number of elements of a particular type.
 
 ### Major Code
@@ -63,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to <b>sizeof</b>(CHANGER_INITIALIZE_ELEMENT_STATUS). The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH, STATUS_INSUFFICIENT_RESOURCES, STATUS_INVALID_ELEMENT_ADDRESS, or STATUS_INVALID_PARAMETER.
 
 
@@ -74,16 +73,12 @@ The <b>Information</b> field is set to <b>sizeof</b>(CHANGER_INITIALIZE_ELEMENT_
 | **Header** | ntddchgr.h (include Ntddchgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddchgr\ns-ntddchgr-_changer_initialize_element_status.md">CHANGER_INITIALIZE_ELEMENT_STATUS</a>
-</dt>
-<dt>
+
 <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
-</dt>
-</dl>
+
  
 
  

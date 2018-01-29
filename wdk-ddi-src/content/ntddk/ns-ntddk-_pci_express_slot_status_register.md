@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 1012abf2-a73b-49d9-8017-b0b1a1c7fbcd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_EXPRESS_SLOT_STATUS_REGISTER, *PPCI_EXPRESS_SLOT_STATUS_REGISTER, PCI_EXPRESS_SLOT_STATUS_REGISTER
+ms.keywords : PCI_EXPRESS_SLOT_STATUS_REGISTER union [Buses], PPCI_EXPRESS_SLOT_STATUS_REGISTER, ntddk/PCI_EXPRESS_SLOT_STATUS_REGISTER, PPCI_EXPRESS_SLOT_STATUS_REGISTER union pointer [Buses], *PPCI_EXPRESS_SLOT_STATUS_REGISTER, PCI_EXPRESS_SLOT_STATUS_REGISTER, pci_struct_2b218675-a1f4-4aec-a115-3046fac70492.xml, ntddk/PPCI_EXPRESS_SLOT_STATUS_REGISTER, PCI.pci_express_slot_status_register, _PCI_EXPRESS_SLOT_STATUS_REGISTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_EXPRESS_SLOT_STATUS_REGISTER
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPCI_EXPRESS_SLOT_STATUS_REGISTER, PCI_EXPRESS_SLOT_STATUS_REGISTER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PCI_EXPRESS_SLOT_STATUS_REGISTER, *PPCI_EXPRESS_SLOT_STATUS_REGISTER
 ---
 
 # _PCI_EXPRESS_SLOT_STATUS_REGISTER structure
@@ -58,13 +62,17 @@ typedef union _PCI_EXPRESS_SLOT_STATUS_REGISTER {
 
 ## Members
 
-        
-            `AsUSHORT`
 
-            A USHORT representation of the contents of the PCI_EXPRESS_SLOT_STATUS_REGISTER structure.
+`AsUSHORT`
 
-    ## Remarks
-        The PCI_EXPRESS_SLOT_STATUS_REGISTER structure is available in Windows Server 2008 and later versions of Windows.
+A USHORT representation of the contents of the PCI_EXPRESS_SLOT_STATUS_REGISTER structure.
+
+`DUMMYSTRUCTNAME`
+
+
+
+## Remarks
+The PCI_EXPRESS_SLOT_STATUS_REGISTER structure is available in Windows Server 2008 and later versions of Windows.
 
 A PCI_EXPRESS_SLOT_STATUS_REGISTER structure is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure.
 
@@ -76,13 +84,10 @@ A PCI_EXPRESS_SLOT_STATUS_REGISTER structure is contained in the <a href="https:
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a>
-</dt>
-</dl>
+
  
 
  

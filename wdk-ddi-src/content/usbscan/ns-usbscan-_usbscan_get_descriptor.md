@@ -7,8 +7,8 @@ old-location : image\usbscan_get_descriptor.htm
 old-project : image
 ms.assetid : 250c0022-ceaa-40c6-8431-9ec53438fdb9
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _USBSCAN_GET_DESCRIPTOR, *PUSBSCAN_GET_DESCRIPTOR, USBSCAN_GET_DESCRIPTOR
+ms.date : 1/18/2018
+ms.keywords : _USBSCAN_GET_DESCRIPTOR, stifnc_1e92e306-420d-47ec-bb8a-8c906c3b62ea.xml, USBSCAN_GET_DESCRIPTOR, *PUSBSCAN_GET_DESCRIPTOR, usbscan/USBSCAN_GET_DESCRIPTOR, USBSCAN_GET_DESCRIPTOR structure [Imaging Devices], PUSBSCAN_GET_DESCRIPTOR, PUSBSCAN_GET_DESCRIPTOR structure pointer [Imaging Devices], image.usbscan_get_descriptor, usbscan/PUSBSCAN_GET_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSCAN_GET_DESCRIPTOR
-req.alt-loc : usbscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUSBSCAN_GET_DESCRIPTOR, USBSCAN_GET_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USBSCAN_GET_DESCRIPTOR, *PUSBSCAN_GET_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _USBSCAN_GET_DESCRIPTOR {
 
 ## Members
 
-        
-            `DescriptorType`
 
-            Same as the <i>DescriptorType</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>.
-        
-            `Index`
+`DescriptorType`
 
-            Same as the <i>Index</i> parameter to <b>UsbBuildGetDescriptorRequest</b>.
-        
-            `LanguageId`
+Same as the <i>DescriptorType</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>.
 
-            Same as the <i>LanguageId</i> parameter to <b>UsbBuildGetDescriptorRequest</b>.
+`Index`
+
+Same as the <i>Index</i> parameter to <b>UsbBuildGetDescriptorRequest</b>.
+
+`LanguageId`
+
+Same as the <i>LanguageId</i> parameter to <b>UsbBuildGetDescriptorRequest</b>.
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : netvista\rilcallinfomultiparty.htm
 old-project : netvista
 ms.assetid : 4a343e55-9150-4411-bf37-f410b94ca0aa
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLINFOMULTIPARTY, RILCALLINFOMULTIPARTY
+ms.date : 1/18/2018
+ms.keywords : RIL_CALL_MAX, ntddrilapitypes/RILCALLINFOMULTIPARTY, ntddrilapitypes/RIL_CALL_MULTIPARTY, RILCALLINFOMULTIPARTY, netvista.rilcallinfomultiparty, ntddrilapitypes/RIL_CALL_MAX, RIL_CALL_MULTIPARTY, RILCALLINFOMULTIPARTY enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLINFOMULTIPARTY
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLINFOMULTIPARTY
 ---
 
@@ -56,6 +60,11 @@ typedef enum _RILCALLINFOMULTIPARTY {
 
 <tr>
 <td>RIL_CALL_MULTIPARTY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALL_SINGLEPARTY</td>
 <td></td>
 </tr>
 </table>

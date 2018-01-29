@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 95f1bbf4-06d8-48b7-a983-bf0b65ec2da3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARGCB_GETCAPTUREADDRESS, DXGKARGCB_GETCAPTUREADDRESS, *INOUT_PDXGKARGCB_GETCAPTUREADDRESS
+ms.keywords : DXGKARGCB_GETCAPTUREADDRESS structure [Display Devices], display.dxgkargcb_getcaptureaddress, _DXGKARGCB_GETCAPTUREADDRESS, *INOUT_PDXGKARGCB_GETCAPTUREADDRESS, d3dkmddi/DXGKARGCB_GETCAPTUREADDRESS, DXGKARGCB_GETCAPTUREADDRESS, DmStructs_24ed27a0-7ad3-44d1-aa93-c22733ebfb34.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARGCB_GETCAPTUREADDRESS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARGCB_GETCAPTUREADDRESS
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGKARGCB_GETCAPTUREADDRESS {
 
 ## Members
 
-        
-            `hAllocation`
 
-            [in] A handle to the allocation that is associated with the capture buffer to retrieve information on.
-        
-            `PhysicalAddress`
+`hAllocation`
 
-            [out] The physical address of the capture buffer.
-        
-            `SegmentId`
+[in] A handle to the allocation that is associated with the capture buffer to retrieve information on.
 
-            [out] The identifier of the segment for the capture buffer. The allocation that is associated with the capture buffer is currently paged in this segment.
+`PhysicalAddress`
+
+[out] The physical address of the capture buffer.
+
+`SegmentId`
+
+[out] The identifier of the segment for the capture buffer. The allocation that is associated with the capture buffer is currently paged in this segment.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _DXGKARGCB_GETCAPTUREADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_getcaptureaddress.md">DxgkCbGetCaptureAddress</a>
-</dt>
-</dl>
+
  
 
  

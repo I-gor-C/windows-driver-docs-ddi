@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 60ec8b38-8ab2-45d8-92ab-5943fd9bba79
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface, IWDFUsbInterface::GetNumEndPoints, GetNumEndPoints
+ms.keywords : GetNumEndPoints method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetNumEndPoints, wdf.iwdfusbinterface_getnumendpoints, IWDFUsbInterface interface, GetNumEndPoints method, IWDFUsbInterface::GetNumEndPoints, umdf.iwdfusbinterface_getnumendpoints, GetNumEndPoints method, GetNumEndPoints, UMDFUSBref_ae1352c4-217e-49fd-9275-6c80103af753.xml, IWDFUsbInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbInterface.GetNumEndPoints
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -55,15 +59,9 @@ This function has no parameters.
 
 <b>GetNumEndPoints</b> returns the number of endpoints on the USB interface.
 
-<b>GetNumEndPoints</b> returns the number of endpoints on the USB interface.
-
-<b>GetNumEndPoints</b> returns the number of endpoints on the USB interface.
-
 ## Remarks
 
-The <b>GetNumEndPoints</b> method is provided for convenience because a UMDF driver can obtain the number of endpoints from the <b>bNumEndpoints</b> member of the <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure that the driver retrieves when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560320">IWDFUsbInterface::GetInterfaceDescriptor</a> method. 
-
-The following code example retrieves the number of pipes on a USB interface and then retrieves particular types of pipes.
+The <b>GetNumEndPoints</b> method is provided for convenience because a UMDF driver can obtain the number of endpoints from the <b>bNumEndpoints</b> member of the <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure that the driver retrieves when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560320">IWDFUsbInterface::GetInterfaceDescriptor</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,17 +77,12 @@ The following code example retrieves the number of pipes on a USB interface and 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560320">IWDFUsbInterface::GetInterfaceDescriptor</a>
-</dt>
-<dt>
+
 <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560320">IWDFUsbInterface::GetInterfaceDescriptor</a>
+
  
 
  

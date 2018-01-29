@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 314dfdeb-1821-444a-84c6-2ee7fa536122
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _EXCLUSIVE_ACCESS_REQUEST_TYPE, *PEXCLUSIVE_ACCESS_REQUEST_TYPE, EXCLUSIVE_ACCESS_REQUEST_TYPE
+ms.keywords : storage.exclusive_access_request_type, ExclusiveAccessLockDevice, _EXCLUSIVE_ACCESS_REQUEST_TYPE, EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration [Storage Devices], PEXCLUSIVE_ACCESS_REQUEST_TYPE enumeration pointer [Storage Devices], ntddcdrm/ExclusiveAccessUnlockDevice, ntddcdrm/EXCLUSIVE_ACCESS_REQUEST_TYPE, EXCLUSIVE_ACCESS_REQUEST_TYPE, PEXCLUSIVE_ACCESS_REQUEST_TYPE, ntddcdrm/PEXCLUSIVE_ACCESS_REQUEST_TYPE, *PEXCLUSIVE_ACCESS_REQUEST_TYPE, ExclusiveAccessQueryState, ntddcdrm/ExclusiveAccessQueryState, ntddcdrm/ExclusiveAccessLockDevice, ExclusiveAccessUnlockDevice, structs-CD-ROM_0b0d7aae-3085-422c-84c4-555d935ca176.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EXCLUSIVE_ACCESS_REQUEST_TYPE
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PEXCLUSIVE_ACCESS_REQUEST_TYPE, EXCLUSIVE_ACCESS_REQUEST_TYPE"
 ---
 
@@ -80,11 +84,8 @@ The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="..\ntddc
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
-</dt>
-</dl>
+
  
 
  

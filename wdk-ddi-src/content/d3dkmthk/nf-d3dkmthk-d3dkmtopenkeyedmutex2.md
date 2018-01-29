@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 33140445-e312-4495-990a-033a87598fa1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTOpenKeyedMutex2
+ms.keywords : D3DKMTOpenKeyedMutex2 function [Display Devices], display.d3dkmtopenkeyedmutex2, D3DKMTOpenKeyedMutex2, PFND3DKMT_OPENKEYEDMUTEX2, d3dkmthk/D3DKMTOpenKeyedMutex2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTOpenKeyedMutex2
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -53,21 +57,57 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The keyed mutex object was successfully opened. 
+</dl>
+</td>
+<td width="60%">
+The keyed mutex object was successfully opened. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DEVICE_REMOVED</b></dt>
-</dl>The graphics adapter was stopped or the display device was reset.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was stopped or the display device was reset.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex2.md">D3DKMTOpenKeyedMutex2</a> could not complete because of insufficient memory.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other NTSTATUS values.
 
@@ -89,14 +129,10 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_openkeyedmutex2.md">D3DKMT_OPENKEYEDMUTEX2</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex.md">D3DKMTOpenKeyedMutex</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0294c840-2912-4137-886f-832e9f21bbea
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwQuerySymbolicLinkObject
+ms.keywords : NtQuerySymbolicLinkObject, ZwQuerySymbolicLinkObject routine [Kernel-Mode Driver Architecture], wdm/ZwQuerySymbolicLinkObject, kernel.zwquerysymboliclinkobject, ZwQuerySymbolicLinkObject, k111_0909b6b6-fa4d-421f-b17f-8201a254990b.xml, wdm/NtQuerySymbolicLinkObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwQuerySymbolicLinkObject,NtQuerySymbolicLinkObject
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -73,8 +77,7 @@ contains the maximum number of bytes to copy into the Unicode string at <i>LinkT
 Before calling this routine, driver writers must ensure that the Unicode string at <i>LinkTarget </i>has been properly initialized and a buffer for the string has been allocated. The <b>MaximumLength</b> and <b>Buffer</b> members of the Unicode string must be set before calling <b>ZwQuerySymbolicLinkObject</b> or the call will fail.
 
 If <b>ZwQuerySymbolicLinkObject</b> returns STATUS_BUFFER_TOO_SMALL drivers should examine the value returned at <i>ReturnedLength</i>. The number returned in this variable indicates the maximum length that the Unicode string for the target of the symbolic link.
-
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
+<div class="alert"><b>Note</b>  If the call to this function occurs in user mode, you should use the name "<b>NtQuerySymbolicLinkObject</b>" instead of "<b>ZwQuerySymbolicLinkObject</b>".</div><div> </div>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,14 +93,10 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwopensymboliclinkobject.md">ZwOpenSymbolicLinkObject</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

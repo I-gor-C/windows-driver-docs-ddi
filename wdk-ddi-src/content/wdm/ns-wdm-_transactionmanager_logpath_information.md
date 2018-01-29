@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 53d7e8a9-fc89-4b11-8bbb-e9b5b0504f5e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _TRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
+ms.keywords : ktm_ref_2e3d26b5-525c-4953-a871-7eb6535d926e.xml, kernel.transactionmanager_logpath_information, _TRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION, wdm/PTRANSACTIONMANAGER_LOGPATH_INFORMATION, PTRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION, wdm/TRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION structure [Kernel-Mode Driver Architecture], PTRANSACTIONMANAGER_LOGPATH_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSACTIONMANAGER_LOGPATH_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
 req.product : Windows 10 or later.
 ---
@@ -48,17 +52,17 @@ typedef struct _TRANSACTIONMANAGER_LOGPATH_INFORMATION {
 
 ## Members
 
-        
-            `LogPath`
 
-            A caller-allocated character array that receives the path and file name of the <a href="https://msdn.microsoft.com/d7ad0e16-d1f2-4c41-b647-95b5445c2708">log file stream</a> that is associated with a transaction manager.
-        
-            `LogPathLength`
+`LogPath`
 
-            The number of elements in the <b>LogPath</b> member's character array.
+A caller-allocated character array that receives the path and file name of the <a href="https://msdn.microsoft.com/d7ad0e16-d1f2-4c41-b647-95b5445c2708">log file stream</a> that is associated with a transaction manager.
 
-    ## Remarks
-        The <b>TRANSACTIONMANAGER_LOGPATH_INFORMATION</b> structure is used with the <a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a> routine.
+`LogPathLength`
+
+The number of elements in the <b>LogPath</b> member's character array.
+
+## Remarks
+The <b>TRANSACTIONMANAGER_LOGPATH_INFORMATION</b> structure is used with the <a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,16 +72,12 @@ typedef struct _TRANSACTIONMANAGER_LOGPATH_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
-</dt>
-</dl>
+
  
 
  

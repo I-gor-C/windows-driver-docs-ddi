@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 295EE3CC-4244-4411-9684-7C5D38B10EA9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PDO_TYPE, PDO_TYPE
+ms.keywords : storage.ioctl_ehstor_driver_update_lba_filter_table, IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE control code [Storage Devices], IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE, ehstorioctl/IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
-req.alt-loc : EhStorIoctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PDO_TYPE
 ---
 
@@ -59,11 +63,36 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 One of the following values can be returned in the <b>Status</b> field.
+<table>
+<tr>
+<th>Status Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STATUS_SUCCESS</td>
+<td>The LBA filter table was successfully updated.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_BUFFER_SIZE</td>
+<td>The input buffer length supplied is of incorrect size.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_PARAMETER</td>
+<td>The LBA filter count or an LBA range is specified incorrectly.</td>
+</tr>
+<tr>
+<td>STATUS_INSUFFICIENT_RESOURCES</td>
+<td>The IOCTL redirection list cannot be copied.</td>
+</tr>
+<tr>
+<td>STATUS_NOT_SUPPORTED</td>
+<td>The sending device is not a silo device or banding is not supported.</td>
+</tr>
+</table>
 
-    ## Remarks
-        The LBA filters cannot overlap or be empty. The LBA filters do not have to be sorted in any way. 
+## Remarks
+The LBA filters cannot overlap or be empty. The LBA filters do not have to be sorted in any way. 
 
 If an LBA range is being unlocked, an <b>IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</b> request should be sent after the LBA range is unlocked on the storage device. Also,
  if an LBA range is currently being locked, <b>IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</b>  must be sent before the LBA range has been locked on the storage device.
@@ -75,16 +104,12 @@ If an LBA range is being unlocked, an <b>IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_T
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ehstorioctl\ns-ehstorioctl-_lba_filter_table.md">LBA_FILTER_TABLE</a>
-</dt>
-<dt>
 <a href="..\ehstorioctl\ns-ehstorioctl-_lba_filter_table_entry.md">LBA_FILTER_TABLE_ENTRY</a>
-</dt>
-</dl>
+
+<a href="..\ehstorioctl\ns-ehstorioctl-_lba_filter_table.md">LBA_FILTER_TABLE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5d8d6665-bfa1-4bc5-8168-7508624845e1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS, USB_TOPOLOGY_ADDRESS
+ms.keywords : buses.usb_topology_address, _USB_TOPOLOGY_ADDRESS, USB_TOPOLOGY_ADDRESS structure [Buses], usbioctl/USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS, USB_TOPOLOGY_ADDRESS, PUSB_TOPOLOGY_ADDRESS, PUSB_TOPOLOGY_ADDRESS structure pointer [Buses], usbioctl/PUSB_TOPOLOGY_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_TOPOLOGY_ADDRESS
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PUSB_TOPOLOGY_ADDRESS, USB_TOPOLOGY_ADDRESS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS
 req.product : Windows 10 or later.
 ---
 
@@ -51,29 +55,37 @@ typedef struct _USB_TOPOLOGY_ADDRESS {
 
 ## Members
 
-        
-            `HubPortNumber`
 
-            An array containing the port number on each external hub (between the root hub and the device) through which the USB device is connected.  The first element of the array indicates the port on the hub that is connected directly to the root hub.  An array containing all zeros indicates that the device is connected directly to the root hub.
-        
-            `PciBusNumber`
+`HubPortNumber`
 
-            Specifies the PCI bus number of the USB host controller to which the USB device is attached.
-        
-            `PciDeviceNumber`
+An array containing the port number on each external hub (between the root hub and the device) through which the USB device is connected.  The first element of the array indicates the port on the hub that is connected directly to the root hub.  An array containing all zeros indicates that the device is connected directly to the root hub.
 
-            Specifies the PCI device number of the USB host controller to which the USB device is attached.
-        
-            `PciFunctionNumber`
+`PciBusNumber`
 
-            Specifies the PCI function number of the USB host controller to which the USB device is attached.
-        
-            `RootHubPortNumber`
+Specifies the PCI bus number of the USB host controller to which the USB device is attached.
 
-            Specifies the root hub port number through which the USB device is connected.  The USB device can be connected to the root port directly, or it can be connected through 1 or more external USB hubs to the port.
+`PciDeviceNumber`
 
-    ## Remarks
-        The reserved members of this structure must be treated as opaque and are reserved for system use.
+Specifies the PCI device number of the USB host controller to which the USB device is attached.
+
+`PciFunctionNumber`
+
+Specifies the PCI function number of the USB host controller to which the USB device is attached.
+
+`Reserved`
+
+
+
+`Reserved2`
+
+
+
+`RootHubPortNumber`
+
+Specifies the root hub port number through which the USB device is connected.  The USB device can be connected to the root port directly, or it can be connected through 1 or more external USB hubs to the port.
+
+## Remarks
+The reserved members of this structure must be treated as opaque and are reserved for system use.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,16 +95,12 @@ typedef struct _USB_TOPOLOGY_ADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_get_topology_address.md">IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

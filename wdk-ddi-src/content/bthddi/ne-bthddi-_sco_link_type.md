@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 6867a88d-6bce-46eb-894a-cc034a1c3ece
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _SCO_LINK_TYPE, *PSCO_LINK_TYPE, SCO_LINK_TYPE
+ms.keywords : ScoLinkType, bthddi/PSCO_LINK_TYPE, bthddi/ScoLinkType, SCO_LINK_TYPE, _SCO_LINK_TYPE, eScoLinkType, bthddi/SCO_LINK_TYPE, bth_enums_c5b9357f-7046-4115-a8a7-add459e59f27.xml, PSCO_LINK_TYPE enumeration pointer [Bluetooth Devices], *PSCO_LINK_TYPE, bltooth.sco_link_type, SCO_LINK_TYPE enumeration [Bluetooth Devices], bthddi/eScoLinkType, PSCO_LINK_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCO_LINK_TYPE
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSCO_LINK_TYPE, SCO_LINK_TYPE"
 ---
 
@@ -77,11 +81,8 @@ The
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

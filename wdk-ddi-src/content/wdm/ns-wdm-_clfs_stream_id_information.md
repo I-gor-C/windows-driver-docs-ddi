@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dc8ea8b0-6aa0-4372-973a-42c545c27e18
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION
+ms.keywords : PCLFS_STREAM_ID_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PCLFS_STREAM_ID_INFORMATION, _CLFS_STREAM_ID_INFORMATION, wdm/PCLFS_STREAM_ID_INFORMATION, wdm/PPCLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION structure [Kernel-Mode Driver Architecture], PPCLFS_STREAM_ID_INFORMATION, kstruct_a_bfefe413-124f-49c3-8742-c1f1a524f5a6.xml, PPCLFS_STREAM_ID_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.clfs_stream_id_information, wdm/CLFS_STREAM_ID_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CLFS_STREAM_ID_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : CLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PPCLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -47,13 +51,13 @@ typedef struct _CLFS_STREAM_ID_INFORMATION {
 
 ## Members
 
-        
-            `StreamIdentifier`
 
-            An 8-bit value that identifies a stream.
+`StreamIdentifier`
 
-    ## Remarks
-        A stream identifier is unique within a given CLFS log.
+An 8-bit value that identifies a stream.
+
+## Remarks
+A stream identifier is unique within a given CLFS log.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -63,13 +67,10 @@ typedef struct _CLFS_STREAM_ID_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a>
-</dt>
-</dl>
+
  
 
  

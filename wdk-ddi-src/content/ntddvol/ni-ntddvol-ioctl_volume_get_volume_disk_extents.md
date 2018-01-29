@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d831ea36-16ee-4723-95b1-f9903106b7c0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+ms.keywords : storage.ioctl_volume_get_volume_disk_extents, IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS control code [Storage Devices], IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS, ntddvol/IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS, k307_8f02f744-6892-4e3f-9b23-158370e6a1e9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows 2000 for volumes on f
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
-req.alt-loc : Ntddvol.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS IOCTL
-Returns the physical location(s) of a volume on one or more disks. Extents are initially stored in the order in which they are created, but remirroring, splitting, or breaking a mirror, or actions taken during disaster recovery, can affect the order of disk extents.
-
-
-
 Returns the physical location(s) of a volume on one or more disks. Extents are initially stored in the order in which they are created, but remirroring, splitting, or breaking a mirror, or actions taken during disaster recovery, can affect the order of disk extents.
 
 ### Major Code
@@ -63,14 +63,21 @@ The length of a VOLUME_DISK_EXTENTS structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 The driver sets <b>Irp-&gt;IoStatus.Information</b> and the <b>Status</b> field as follows:
-
+<ul>
+<li>
 If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is &lt; <b>sizeof</b>(VOLUME_DISK_EXTENTS), the driver sets <b>Irp-&gt;IoStatus.Information</b> to zero and returns STATUS_INVALID_PARAMETER.
 
+</li>
+<li>
 If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is at least <b>sizeof</b>(VOLUME_DISK_EXTENTS) but too small for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) and sets <b>Status</b> to STATUS_BUFFER_OVERFLOW.
 
-If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) + ((NumberOfDiskExtents - 1) * <b>sizeof</b>(DISK_EXTENT)) and sets <b>Status</b> to STATUS_SUCCESS.
+</li>
+<li>
+If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for all data to be returned, the driver sets <b>Irp-&gt;IoStatus.Information</b> to <b>sizeof</b>(VOLUME_DISK_EXTENTS) + ((NumberOfDiskExtents - 1) * <b>sizeof</b>(DISK_EXTENT)) and sets <b>Status</b> to STATUS_SUCCESS. 
+
+</li>
+</ul>
 
 
 ## Requirements
@@ -80,16 +87,12 @@ If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for a
 | **Header** | ntddvol.h (include Ntddvol.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddvol\ns-ntddvol-_volume_disk_extents.md">VOLUME_DISK_EXTENTS</a>
-</dt>
-<dt>
 <a href="..\ntddvol\ns-ntddvol-_disk_extent.md">DISK_EXTENT</a>
-</dt>
-</dl>
+
+<a href="..\ntddvol\ns-ntddvol-_volume_disk_extents.md">VOLUME_DISK_EXTENTS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : de1925ab-e444-4cf6-acd9-8fdab26afcec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddisubmitcommand, DxgkDdiSubmitCommand callback function [Display Devices], DxgkDdiSubmitCommand, DXGKDDI_SUBMITCOMMAND, DXGKDDI_SUBMITCOMMAND, d3dkmddi/DxgkDdiSubmitCommand, DmFunctions_c23ba706-a779-4a0d-9977-1f99cecb5217.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiSubmitCommand
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -74,8 +78,12 @@ However, if the architecture of a particular hardware and driver must have a dev
 The driver can write the value that is supplied in the <b>SubmissionFenceId</b> member of DXGKARG_SUBMITCOMMAND into the fence command in the ring buffer. For more information about fence commands, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.
 
 If the driver returns an error code, the Microsoft DirectX graphics kernel subsystem  causes a system bugcheck to occur. In a crash dump file, the error is noted by the message <b>BugCheck 0x119</b>, which has the following four parameters.
-
-<i>DxgkDdiSubmitCommand</i> should be made nonpageable because it runs at IRQL = DISPATCH_LEVEL.
+<ol>
+<li>0x2</li>
+<li>The NTSTATUS error code returned from the failed driver call</li>
+<li>A pointer to the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommand.md">DXGKARG_SUBMITCOMMAND</a> structure</li>
+<li>A pointer to an internal scheduler data structure</li>
+</ol><i>DxgkDdiSubmitCommand</i> should be made nonpageable because it runs at IRQL = DISPATCH_LEVEL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,14 +99,10 @@ If the driver returns an error code, the Microsoft DirectX graphics kernel subsy
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommand.md">DXGKARG_SUBMITCOMMAND</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-</dl>
+
  
 
  

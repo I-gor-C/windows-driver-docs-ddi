@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6862B0FD-9A7B-40BF-8123-673EE443DE84
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
+ms.keywords : audio.ioctl_bthhfp_device_get_ksnodetypes, IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
 ---
 
 # IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES IOCTL
 The <b>IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES</b> 
    IOCTL Gets the KSNODE types that best describe the Bluetooth device’s input and output.
+<div class="alert"><b>Note</b>  This IOCTL has been deprecated for Windows 8.1, so you should use <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a> instead.</div><div> </div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -48,7 +53,21 @@ None.
 None.
 
 ### Output Buffer
-
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>struct
+{
+    GUID OutputType;
+    GUID InputType;
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ### Output Buffer Length
 The size of the specified structure.
@@ -60,11 +79,10 @@ The size of the specified structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 N/A
 
-    ## Remarks
-        This request completes immediately.
+## Remarks
+This request completes immediately.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,16 +91,12 @@ N/A
 | **Header** | bthhfpddi.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
-</dt>
-<dt>
+
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

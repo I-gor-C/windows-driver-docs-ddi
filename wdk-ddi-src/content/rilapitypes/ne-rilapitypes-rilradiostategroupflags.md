@@ -7,8 +7,8 @@ old-location : netvista\rilradiostategroupflags_2.htm
 old-project : netvista
 ms.assetid : 6374a39f-44c4-4b76-a61d-d2bd22281571
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEGROUPFLAGS, RILRADIOSTATEGROUPFLAGS
+ms.date : 1/18/2018
+ms.keywords : RILRADIOSTATEGROUPFLAGS enumeration [Network Drivers Starting with Windows Vista], netvista.rilradiostategroupflags_2, RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS, rilapitypes/RILRADIOSTATEGROUPFLAGS, rilapitypes/RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS, RILRADIOSTATEGROUPFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEGROUPFLAGS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRADIOSTATEGROUPFLAGS
 req.product : Windows 10 or later.
 ---
@@ -51,6 +55,11 @@ typedef enum _RILRADIOSTATEGROUPFLAGS {
 
 <tr>
 <td>RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RADIOSTATE_GROUPFLAG_NONE</td>
 <td></td>
 </tr>
 </table>

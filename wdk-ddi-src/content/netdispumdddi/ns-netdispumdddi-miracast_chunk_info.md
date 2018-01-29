@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7015cbc5-f8d1-4e06-bb02-2706a26877f0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : MIRACAST_CHUNK_INFO, MIRACAST_CHUNK_INFO
+ms.keywords : MIRACAST_CHUNK_INFO, MIRACAST_CHUNK_INFO structure [Display Devices], netdispumdddi/MIRACAST_CHUNK_INFO, display.miracast_chunk_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MIRACAST_CHUNK_INFO
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MIRACAST_CHUNK_INFO
 ---
 
@@ -49,22 +53,22 @@ typedef struct {
 
 ## Members
 
-        
-            `ChunkId`
 
-            The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>.
-        
-            `ChunkType`
+`ChunkId`
 
-            The type of chunk that is to be processed, specified as a <a href="..\netdispumdddi\ne-netdispumdddi-miracast_chunk_type.md">MIRACAST_CHUNK_TYPE</a> enumeration value.
-        
-            `EncodeRate`
+The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>.
 
-            The encode bit rate, in kilobits per second, that the user-mode driver reported for this chunk.
-        
-            `ProcessingTime`
+`ChunkType`
 
-            The time, in microseconds, that it took to process this chunk.
+The type of chunk that is to be processed, specified as a <a href="..\netdispumdddi\ne-netdispumdddi-miracast_chunk_type.md">MIRACAST_CHUNK_TYPE</a> enumeration value.
+
+`EncodeRate`
+
+The encode bit rate, in kilobits per second, that the user-mode driver reported for this chunk.
+
+`ProcessingTime`
+
+The time, in microseconds, that it took to process this chunk.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>
-</dt>
-<dt>
 <a href="..\netdispumdddi\ne-netdispumdddi-miracast_chunk_type.md">MIRACAST_CHUNK_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>
+
  
 
  

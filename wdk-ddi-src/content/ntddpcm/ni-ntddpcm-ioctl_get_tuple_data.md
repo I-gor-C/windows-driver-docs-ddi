@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : 90bb06c3-2975-4290-b6f1-0c36e7b8678b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
+ms.keywords : PCMCIA.ioctl_get_tuple_data, IOCTL_GET_TUPLE_DATA control code [Buses], IOCTL_GET_TUPLE_DATA, ntddpcm/IOCTL_GET_TUPLE_DATA, memcdref_80c1671e-c0c2-4429-b703-ffb389cc7af5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GET_TUPLE_DATA
-req.alt-loc : ntddpcm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
 ---
 
@@ -59,7 +63,6 @@ The size of the requested tuple data.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes read. 
 
 If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS.
@@ -78,19 +81,14 @@ If there is no card in the indicated socket, the <b>Status</b> field is set to S
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538895">TUPLE_REQUEST</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551769">IRP_MN_WRITE_CONFIG</a>
-</dt>
-</dl>
+
  
 
  

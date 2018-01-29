@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e2b908ce-df40-4d64-b8fd-77da18b4f6bd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDE_DEVICE_PARAMETERS, *PIDE_DEVICE_PARAMETERS, IDE_DEVICE_PARAMETERS
+ms.keywords : PIDE_DEVICE_PARAMETERS structure pointer [Storage Devices], irb/PIDE_DEVICE_PARAMETERS, *PIDE_DEVICE_PARAMETERS, IDE_DEVICE_PARAMETERS structure [Storage Devices], irb/IDE_DEVICE_PARAMETERS, structs-ATA_6cc8412c-2ce1-4261-91db-bc986a6836ff.xml, storage.ide_device_parameters, IDE_DEVICE_PARAMETERS, _IDE_DEVICE_PARAMETERS, PIDE_DEVICE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDE_DEVICE_PARAMETERS
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PIDE_DEVICE_PARAMETERS, IDE_DEVICE_PARAMETERS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : IDE_DEVICE_PARAMETERS, *PIDE_DEVICE_PARAMETERS
 ---
 
 # _IDE_DEVICE_PARAMETERS structure
 The IDE_DEVICE_PARAMETERS structure contains configuration information that the port driver provides to the miniport driver to configure a device.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -67,27 +72,26 @@ typedef struct _IDE_DEVICE_PARAMETERS {
 
 ## Members
 
-        
-            `AddressTranslation`
 
-            Contains an enumeration value of type <a href="..\irb\ne-irb-ata_address_translation.md">ATA_ADDRESS_TRANSLATION</a> that specifies the sort of address translation used during data transfers.
-        
-            `BytesOffsetForSectorAlignment`
+`AddressTranslation`
 
-            This member specifies the location of sector 0 within the first physical sector as defined in the ATA specification represented in bytes.
-        
-            `BytesPerLogicalSector`
+Contains an enumeration value of type <a href="..\irb\ne-irb-ata_address_translation.md">ATA_ADDRESS_TRANSLATION</a> that specifies the sort of address translation used during data transfers.
 
-            This member specifies the number of bytes per logical sector (LBA) for the given device.
-        
-            `BytesPerPhysicalSector`
+`BytesOffsetForSectorAlignment`
 
-            This member specifies the number of bytes per physical sector (that is, the smallest amount of data that the device can physically write internally) for the given device.
-        
-            `DeviceCharacteristics`
+This member specifies the location of sector 0 within the first physical sector as defined in the ATA specification represented in bytes.
 
-            Specifies the device characteristics. The table below lists the characteristics that could be set in this member. The high byte of this member is opaque and shall not be changed by the ATA miniport.
+`BytesPerLogicalSector`
 
+This member specifies the number of bytes per logical sector (LBA) for the given device.
+
+`BytesPerPhysicalSector`
+
+This member specifies the number of bytes per physical sector (that is, the smallest amount of data that the device can physically write internally) for the given device.
+
+`DeviceCharacteristics`
+
+Specifies the device characteristics. The table below lists the characteristics that could be set in this member. The high byte of this member is opaque and shall not be changed by the ATA miniport.
 <table>
 <tr>
 <th>Device Characteristic</th>
@@ -144,41 +148,41 @@ Indicates that the device supports Media Status Notification.
 </td>
 </tr>
 </table>
-        
-            `IdeDeviceType`
 
-            Indicates the type of the device. The allowed device types are <i>DeviceIsAta</i> for ATA devices, <i>DeviceIsAtapi</i> for ATAPI devices, and <i>DeviceNotExist</i> if no device was found at that address. The other fields in this structure are not valid if the <b>IdeDeviceType</b> is set to <i>DeviceNotExist</i>.
-        
-            `MaxBlockXfer`
+`IdeDeviceType`
 
-            Specifies the number of sectors in a block of data to be transferred. This value applies to the data blocks used in ATA block transfer commands such as Read Multiple (0xC4), Write Multiple (0xC5). For more information about the ReadMultiple and WriteMultiple commands, see the <i>ATA Specification</i>.
-        
-            `MaximumLun`
+Indicates the type of the device. The allowed device types are <i>DeviceIsAta</i> for ATA devices, <i>DeviceIsAtapi</i> for ATAPI devices, and <i>DeviceNotExist</i> if no device was found at that address. The other fields in this structure are not valid if the <b>IdeDeviceType</b> is set to <i>DeviceNotExist</i>.
 
-            The miniport driver must update this field to indicate the maximum logical unit number supported by this device. By default, the member is set to 0 indicating the existence of just one LUN.
-        
-            `NumberOfOverlappedRequests`
+`MaxBlockXfer`
 
-            The miniport driver must update this field to specify the number of overlapped requests it can handle for this device. By default, the member is set to 1.
-        
-            `TargetId`
+Specifies the number of sectors in a block of data to be transferred. This value applies to the data blocks used in ATA block transfer commands such as Read Multiple (0xC4), Write Multiple (0xC5). For more information about the ReadMultiple and WriteMultiple commands, see the <i>ATA Specification</i>.
 
-            Specifies the target ID of the device.
-        
-            `TransferModeSelected`
+`MaximumLun`
 
-            Indicates the selected transfer modes on the device. The miniport driver must set this member.
-        
-            `TransferModeSupported`
+The miniport driver must update this field to indicate the maximum logical unit number supported by this device. By default, the member is set to 0 indicating the existence of just one LUN.
 
-            Contains a bitmap that indicates the supported transfer modes.
-        
-            `Version`
+`NumberOfOverlappedRequests`
 
-            Indicates the size of the <i>Device</i> parameters structure. The miniport driver should verify that sizeof(IDE_DEVICE_PARAMETERS) is less than or equal to the <b>Version</b> field.
+The miniport driver must update this field to specify the number of overlapped requests it can handle for this device. By default, the member is set to 1.
 
-    ## Remarks
-        The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>.
+`TargetId`
+
+Specifies the target ID of the device.
+
+`TransferModeSelected`
+
+Indicates the selected transfer modes on the device. The miniport driver must set this member.
+
+`TransferModeSupported`
+
+Contains a bitmap that indicates the supported transfer modes.
+
+`Version`
+
+Indicates the size of the <i>Device</i> parameters structure. The miniport driver should verify that sizeof(IDE_DEVICE_PARAMETERS) is less than or equal to the <b>Version</b> field.
+
+## Remarks
+The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -188,19 +192,14 @@ Indicates that the device supports Media Status Notification.
 | **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\irb\ne-irb-ide_device_type.md">IDE_DEVICE_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\irb\ne-irb-ata_address_translation.md">ATA_ADDRESS_TRANSLATION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
-</dt>
-</dl>
+
  
 
  

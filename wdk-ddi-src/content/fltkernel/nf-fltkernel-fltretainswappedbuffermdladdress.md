@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 80498410-9617-414d-997c-0d55f891ba3c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltRetainSwappedBufferMdlAddress
+ms.keywords : FltRetainSwappedBufferMdlAddress, FltRetainSwappedBufferMdlAddress function [Installable File System Drivers], ifsk.fltretainswappedbuffermdladdress, fltkernel/FltRetainSwappedBufferMdlAddress, FltApiRef_p_to_z_3832baaa-37bc-47cc-9df4-12c92fd0ddd8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltRetainSwappedBufferMdlAddress
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -81,23 +85,16 @@ After calling <b>FltRetainSwappedBufferMdlAddress</b>, the caller is responsible
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetswappedbuffermdladdress.md">FltGetSwappedBufferMdlAddress</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetswappedbuffermdladdress.md">FltGetSwappedBufferMdlAddress</a>
+
  
 
  

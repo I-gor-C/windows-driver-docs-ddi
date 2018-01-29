@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 60702ce0-c15b-49ad-b983-af68086710b2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DMA_ENABLER_CONFIG, WDF_DMA_ENABLER_CONFIG, *PWDF_DMA_ENABLER_CONFIG
+ms.keywords : PWDF_DMA_ENABLER_CONFIG structure pointer, wdf.wdf_dma_enabler_config, wdfdmaenabler/PWDF_DMA_ENABLER_CONFIG, WDF_DMA_ENABLER_CONFIG structure, DFDmaObjectRef_854b91a3-b389-47a9-bc88-d4796025f73e.xml, WDF_DMA_ENABLER_CONFIG, kmdf.wdf_dma_enabler_config, PWDF_DMA_ENABLER_CONFIG, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG, _WDF_DMA_ENABLER_CONFIG, *PWDF_DMA_ENABLER_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_DMA_ENABLER_CONFIG
-req.alt-loc : wdfdmaenabler.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WDF_DMA_ENABLER_CONFIG, *PWDF_DMA_ENABLER_CONFIG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_DMA_ENABLER_CONFIG, WDF_DMA_ENABLER_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -60,57 +64,57 @@ typedef struct _WDF_DMA_ENABLER_CONFIG {
 
 ## Members
 
-        
-            `AddressWidthOverride`
 
-            Set to zero to accept the address width specified in <b>Profile</b>. A driver can override the <b>Profile</b>  address width by setting this member to a value between 24  and 63. If your driver specifies a system-mode DMA profile, <b>AddressWidthOverride</b> must be zero. If your driver specifies a 32-bit DMA profile, <b>AddressWidthOverride</b> cannot be greater than 32. The <b>AddressWidthOverride</b> member is available in version 1.11 and later versions of KMDF. See more information in <b>Remarks</b>.
-        
-            `EvtDmaEnablerDisable`
+`AddressWidthOverride`
 
-            A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_disable.md">EvtDmaEnablerDisable</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDmaEnablerEnable`
+Set to zero to accept the address width specified in <b>Profile</b>. A driver can override the <b>Profile</b>  address width by setting this member to a value between 24  and 63. If your driver specifies a system-mode DMA profile, <b>AddressWidthOverride</b> must be zero. If your driver specifies a 32-bit DMA profile, <b>AddressWidthOverride</b> cannot be greater than 32. The <b>AddressWidthOverride</b> member is available in version 1.11 and later versions of KMDF. See more information in <b>Remarks</b>.
 
-            A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md">EvtDmaEnablerEnable</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDmaEnablerFill`
+`EvtDmaEnablerDisable`
 
-            A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_fill.md">EvtDmaEnablerFill</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDmaEnablerFlush`
+A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_disable.md">EvtDmaEnablerDisable</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_flush.md">EvtDmaEnablerFlush</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDmaEnablerSelfManagedIoStart`
+`EvtDmaEnablerEnable`
 
-            A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_start.md">EvtDmaEnablerSelfManagedIoStart</a> event callback function, or <b>NULL</b>.
-        
-            `EvtDmaEnablerSelfManagedIoStop`
+A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md">EvtDmaEnablerEnable</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop.md">EvtDmaEnablerSelfManagedIoStop</a> event callback function, or <b>NULL</b>.
-        
-            `Flags`
+`EvtDmaEnablerFill`
 
-            A bitwise OR of one or more values from the <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_enabler_config_flags.md">WDF_DMA_ENABLER_CONFIG_FLAGS</a> enumeration. The <b>Flags</b> member is available in version 1.11 and in later versions of KMDF.
-        
-            `MaximumLength`
+A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_fill.md">EvtDmaEnablerFill</a> event callback function, or <b>NULL</b>.
 
-            The default maximum size, in bytes, that the device can handle in a single <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dma-transactions-and-dma-transfers">DMA transfer</a>. (Drivers can override this default value for individual <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dma-transactions-and-dma-transfers">DMA transactions</a> by calling <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetmaximumlength.md">WdfDmaTransactionSetMaximumLength</a>.) If your driver must run on versions of Microsoft Windows operating systems that support a maximum of 16 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554406">map registers</a>, <b>MaximumLength</b> must be less than 65,536.
-        
-            `Profile`
+`EvtDmaEnablerFlush`
 
-            A <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a>-typed value, which identifies the type of bus-master DMA operation that will be associated with the DMA enabler object.
-        
-            `Size`
+A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_flush.md">EvtDmaEnablerFlush</a> event callback function, or <b>NULL</b>.
 
-            The size, in bytes, of this structure.
-        
-            `WdmDmaVersionOverride`
+`EvtDmaEnablerSelfManagedIoStart`
 
-            Set to zero to accept the default DMA version. To request DMA version 3, set to 3. The <b>WdmDmaVersionOverride</b> member is available in version 1.11 and in later versions of KMDF. DMA version 3 is available starting in Windows 8.
+A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_start.md">EvtDmaEnablerSelfManagedIoStart</a> event callback function, or <b>NULL</b>.
 
-    ## Remarks
-        The <b>WDF_DMA_ENABLER_CONFIG</b> structure is used as an input parameter to the <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a> method.
+`EvtDmaEnablerSelfManagedIoStop`
+
+A pointer to the driver's <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop.md">EvtDmaEnablerSelfManagedIoStop</a> event callback function, or <b>NULL</b>.
+
+`Flags`
+
+A bitwise OR of one or more values from the <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_enabler_config_flags.md">WDF_DMA_ENABLER_CONFIG_FLAGS</a> enumeration. The <b>Flags</b> member is available in version 1.11 and in later versions of KMDF.
+
+`MaximumLength`
+
+The default maximum size, in bytes, that the device can handle in a single <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dma-transactions-and-dma-transfers">DMA transfer</a>. (Drivers can override this default value for individual <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dma-transactions-and-dma-transfers">DMA transactions</a> by calling <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetmaximumlength.md">WdfDmaTransactionSetMaximumLength</a>.) If your driver must run on versions of Microsoft Windows operating systems that support a maximum of 16 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554406">map registers</a>, <b>MaximumLength</b> must be less than 65,536.
+
+`Profile`
+
+A <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a>-typed value, which identifies the type of bus-master DMA operation that will be associated with the DMA enabler object.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`WdmDmaVersionOverride`
+
+Set to zero to accept the default DMA version. To request DMA version 3, set to 3. The <b>WdmDmaVersionOverride</b> member is available in version 1.11 and in later versions of KMDF. DMA version 3 is available starting in Windows 8.
+
+## Remarks
+The <b>WDF_DMA_ENABLER_CONFIG</b> structure is used as an input parameter to the <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a> method.
 
 Drivers must call <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf_dma_enabler_config_init.md">WDF_DMA_ENABLER_CONFIG_INIT</a> to initialize the <b>WDF_DMA_ENABLER_CONFIG</b> structure.
 
@@ -126,40 +130,28 @@ On Windows 7 and Windows Vista, when the driver provides a nonzero value for <
 | **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_disable.md">EvtDmaEnablerDisable</a>
-</dt>
-<dt>
-<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md">EvtDmaEnablerEnable</a>
-</dt>
-<dt>
-<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_fill.md">EvtDmaEnablerFill</a>
-</dt>
-<dt>
-<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_flush.md">EvtDmaEnablerFlush</a>
-</dt>
-<dt>
-<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_start.md">EvtDmaEnablerSelfManagedIoStart</a>
-</dt>
-<dt>
-<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop.md">EvtDmaEnablerSelfManagedIoStop</a>
-</dt>
-<dt>
-<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a>
-</dt>
-<dt>
+
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf_dma_enabler_config_init.md">WDF_DMA_ENABLER_CONFIG_INIT</a>
-</dt>
-<dt>
+
+<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_start.md">EvtDmaEnablerSelfManagedIoStart</a>
+
+<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_flush.md">EvtDmaEnablerFlush</a>
+
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-</dt>
-<dt>
+
+<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_fill.md">EvtDmaEnablerFill</a>
+
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetmaximumlength.md">WdfDmaTransactionSetMaximumLength</a>
-</dt>
-</dl>
+
+<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop.md">EvtDmaEnablerSelfManagedIoStop</a>
+
+<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a>
+
+<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md">EvtDmaEnablerEnable</a>
+
  
 
  

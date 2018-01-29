@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2d8789e1-721d-4abe-9864-0f7fdeb24482
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlAreThereCurrentFileLocks
+ms.keywords : ntifs/FsRtlAreThereCurrentFileLocks, FsRtlAreThereCurrentFileLocks function [Installable File System Drivers], ifsk.fsrtlaretherecurrentfilelocks, fsrtlref_c3102eee-b523-418a-8977-a875e0eb76b7.xml, FsRtlAreThereCurrentFileLocks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlAreThereCurrentFileLocks
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ BOOLEAN FsRtlAreThereCurrentFileLocks(
 
 `FL`
 
-
+TBD
 
 
 ## Return Value
@@ -59,7 +63,8 @@ None
 
 ## Remarks
 
-File systems and filter drivers often call <b>FsRtlAreThereCurrentFileLocks</b> from their FastIoCheckIfPossible routines.
+File systems and filter drivers often call <b>FsRtlAreThereCurrentFileLocks</b> from their FastIoCheckIfPossible routines. 
+<div class="alert"><b>Note</b>  If a byte-range lock has existed since the specified file was opened, the <b>FsRtlAreThereCurrentFileLocks </b>routine returns <b>TRUE</b>,  unless the relevant FILE_LOCK is reinitialized. If a lock was established, and then released, the use of <b>FsRtlAreThereCurrentFileLocks</b>  can prevent the assignment of oplocks unnecessarily. Use <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlaretherecurrentorinprogressfilelocks.md">FsRtlAreThereCurrentOrInProgressFileLocks</a> to avoid this problem.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,14 +80,10 @@ File systems and filter drivers often call <b>FsRtlAreThereCurrentFileLocks</b> 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md">FsRtlInitializeFileLock</a>
-</dt>
-</dl>
+
  
 
  

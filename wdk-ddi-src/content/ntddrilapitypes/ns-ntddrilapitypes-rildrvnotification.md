@@ -7,8 +7,8 @@ old-location : netvista\rildrvnotification.htm
 old-project : netvista
 ms.assetid : 15567aae-a8ab-4289-9dd7-5bf7df80bfc9
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDRVNOTIFICATION, *LPRILDRVNOTIFICATION, RILDRVNOTIFICATION
+ms.date : 1/18/2018
+ms.keywords : RILDRVNOTIFICATION structure [Network Drivers Starting with Windows Vista], RILDRVNOTIFICATION, netvista.rildrvnotification, ntddrilapitypes/RILDRVNOTIFICATION, *LPRILDRVNOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDRVNOTIFICATION
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILDRVNOTIFICATION, RILDRVNOTIFICATION"
 ---
 
@@ -51,30 +55,30 @@ typedef struct _RILDRVNOTIFICATION {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `cbSizeNeeded`
+`cbSize`
 
-            
-        
-            `dwCode`
 
-            
-        
-            `dwDataSize`
 
-            
-        
-            `hrCmdID`
+`cbSizeNeeded`
 
-            
-        
-            `pbData`
 
-            
+
+`dwCode`
+
+
+
+`dwDataSize`
+
+
+
+`hrCmdID`
+
+
+
+`pbData`
+
+
 
 
 ## Requirements

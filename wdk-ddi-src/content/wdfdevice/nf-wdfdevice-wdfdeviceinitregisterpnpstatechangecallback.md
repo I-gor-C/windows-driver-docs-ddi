@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a14b790a-28d7-4fb8-823f-f37f05e7529f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitRegisterPnpStateChangeCallback
+ms.keywords : wdfdevice/WdfDeviceInitRegisterPnpStateChangeCallback, DFDeviceObjectGeneralRef_51127783-092b-409d-85ad-e502760b62e7.xml, WdfDeviceInitRegisterPnpStateChangeCallback, WdfDeviceInitRegisterPnpStateChangeCallback method, wdf.wdfdeviceinitregisterpnpstatechangecallback, PFN_WDFDEVICEINITREGISTERPNPSTATECHANGECALLBACK, kmdf.wdfdeviceinitregisterpnpstatechangecallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceInitRegisterPnpStateChangeCallback
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -74,20 +78,40 @@ An ORed combination of <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notificatio
 ## Return Value
 
 If the operation succeeds, <b>WdfDeviceInitRegisterPnpStateChangeCallback</b> returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There is insufficient memory to complete the operation.
+</dl>
+</td>
+<td width="60%">
+There is insufficient memory to complete the operation.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 If your driver calls <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
 
 For more information about <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, see <a href="https://msdn.microsoft.com/5ef307c6-0310-4a83-a63f-3a6d96782013">State Machines in the Framework</a>.
-
-The following code example registers an event callback function that the framework will call when the device's Plug and Play state machine changes state.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,20 +127,14 @@ The following code example registers an event callback function that the framewo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_pnp_state.md">WDF_DEVICE_PNP_STATE</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
+
  
 
  

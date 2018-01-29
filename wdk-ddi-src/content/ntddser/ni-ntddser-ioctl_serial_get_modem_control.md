@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 4b3f52ee-8028-4cba-a8c7-4ba73b1fcab0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serial_get_modem_control, IOCTL_SERIAL_GET_MODEM_CONTROL control code [Serial Ports], IOCTL_SERIAL_GET_MODEM_CONTROL, ntddser/IOCTL_SERIAL_GET_MODEM_CONTROL, serref_063be160-c01f-40c9-aff9-2de802c70bda.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_GET_MODEM_CONTROL
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -61,13 +65,12 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a ULONG. Otherwise, the <b>Information</b> member is set to zero.
 
-The <b>Status</b> member is set to one of the <a href="serial_device_control_requests.htm#generic_status_values_for_serial_device_control_requests">Generic Status Values for Serial Device Control Requests</a>.
+The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/serial-device-control-requests2">Generic Status Values for Serial Device Control Requests</a>.
 
-    ## Remarks
-        The <b>IOCTL_SERIAL_GET_MODEM_CONTROL</b> and <b>IOCTL_SERIAL_SET_MODEM_CONTROL</b> requests are used primarily for hardware testing. No standard register layout is defined for the modem control operations. Peripheral drivers that use these IOCTLs risk making themselves dependent on the hardware features of a particular serial controller.
+## Remarks
+The <b>IOCTL_SERIAL_GET_MODEM_CONTROL</b> and <b>IOCTL_SERIAL_SET_MODEM_CONTROL</b> requests are used primarily for hardware testing. No standard register layout is defined for the modem control operations. Peripheral drivers that use these IOCTLs risk making themselves dependent on the hardware features of a particular serial controller.
 
 For an example layout of a modem control register, see the definition of the MCR bits (SERIAL_MCR_DTR through SERIAL_MCR_LOOP) in the Serial.h header file in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=617962">Serial driver sample</a> on GitHub.
 
@@ -78,13 +81,10 @@ For an example layout of a modem control register, see the definition of the MCR
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_modem_control.md">IOCTL_SERIAL_SET_MODEM_CONTROL</a>
-</dt>
-</dl>
+
  
 
  

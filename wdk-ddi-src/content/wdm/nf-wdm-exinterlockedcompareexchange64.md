@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7d13ca70-e05a-49e0-8dd8-5ab47b4d8169
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExInterlockedCompareExchange64
+ms.keywords : kernel.exinterlockedcompareexchange64, ExInterlockedCompareExchange64, ExInterlockedCompareExchange64 routine [Kernel-Mode Driver Architecture], k102_424c24f9-3965-40fd-b02b-f9bf1f7df4ec.xml, wdm/ExInterlockedCompareExchange64
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExInterlockedCompareExchange64
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,7 +66,7 @@ A pointer to an integer that will replace the one at <i>Destination</i> if the c
 
 `Comperand`
 
-
+TBD
 
 `Lock`
 
@@ -97,17 +101,12 @@ Callers of <b>ExInterlockedCompareExchange64</b> can be running at any IRQL. The
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-interlockedcompareexchange.md">InterlockedCompareExchange</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-interlockedexchangeadd.md">InterlockedExchangeAdd</a>
-</dt>
-</dl>
+
  
 
  

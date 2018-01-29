@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8fa7908c-7ed4-4f85-846c-71fc5c7dc035
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_BRIGHTNESS_INTERFACE, *PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE
+ms.keywords : display.dxgk_brightness_interface, dispmprt/DXGK_BRIGHTNESS_INTERFACE, dispmprt/PDXGK_BRIGHTNESS_INTERFACE, DmStructs_f750f3c3-0754-49b9-8ad5-cd93f84697c4.xml, *PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE structure [Display Devices], PDXGK_BRIGHTNESS_INTERFACE structure pointer [Display Devices], PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_BRIGHTNESS_INTERFACE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE"
 ---
 
@@ -53,41 +57,41 @@ typedef struct {
 
 ## Members
 
-        
-            `Context`
 
-            A pointer to a private context block.
-        
-            `GetBrightness`
+`Context`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get.md">DxgkDdiGetBrightness</a> function.
-        
-            `GetPossibleBrightness`
+A pointer to a private context block.
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_possible.md">DxgkDdiGetPossibleBrightness</a> function.
-        
-            `InterfaceDereference`
+`GetBrightness`
 
-            A pointer to an interface dereference function that is implemented by the display miniport driver.
-        
-            `InterfaceReference`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get.md">DxgkDdiGetBrightness</a> function.
 
-            A pointer to an interface reference function that is implemented by the display miniport driver.
-        
-            `SetBrightness`
+`GetPossibleBrightness`
 
-            A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set.md">DxgkDdiSetBrightness</a> function.
-        
-            `Size`
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_possible.md">DxgkDdiGetPossibleBrightness</a> function.
 
-            The size, in bytes, of this structure.
-        
-            `Version`
+`InterfaceDereference`
 
-            The version number of the brightness interface. Version number constants are defined in Dispmprt.h (for example, <b>DXGK_BRIGHTNESS_INTERFACE_VERSION_1</b>).
+A pointer to an interface dereference function that is implemented by the display miniport driver.
 
-    ## Remarks
-        A kernel-mode component that must use the brightness interface initiates a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function to retrieve the interface and passes GUID_DEVINTERFACE_BRIGHTNESS in the <b>InterfaceType</b> member of the <a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a> structure that the <i>QueryInterface</i> parameter points to.
+`InterfaceReference`
+
+A pointer to an interface reference function that is implemented by the display miniport driver.
+
+`SetBrightness`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set.md">DxgkDdiSetBrightness</a> function.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+The version number of the brightness interface. Version number constants are defined in Dispmprt.h (for example, <b>DXGK_BRIGHTNESS_INTERFACE_VERSION_1</b>).
+
+## Remarks
+A kernel-mode component that must use the brightness interface initiates a call to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function to retrieve the interface and passes GUID_DEVINTERFACE_BRIGHTNESS in the <b>InterfaceType</b> member of the <a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a> structure that the <i>QueryInterface</i> parameter points to.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,28 +101,20 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\dispmprt\ns-dispmprt-dxgk_brightness_interface_2.md">DXGK_BRIGHTNESS_INTERFACE_2</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get.md">DxgkDdiGetBrightness</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_possible.md">DxgkDdiGetPossibleBrightness</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a>
-</dt>
-<dt>
+
+<a href="..\dispmprt\ns-dispmprt-dxgk_brightness_interface_2.md">DXGK_BRIGHTNESS_INTERFACE_2</a>
+
 <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set.md">DxgkDdiSetBrightness</a>
-</dt>
-<dt>
+
 <a href="..\video\ns-video-_query_interface.md">QUERY_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get.md">DxgkDdiGetBrightness</a>
+
  
 
  

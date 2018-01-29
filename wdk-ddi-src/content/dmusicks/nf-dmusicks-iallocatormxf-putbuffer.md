@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 20daf292-9476-4435-915d-f97fba3a6ec2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF, IAllocatorMXF::PutBuffer, PutBuffer
+ms.keywords : PutBuffer, IAllocatorMXF, audio.iallocatormxf_putbuffer, IAllocatorMXF interface [Audio Devices], PutBuffer method, IAllocatorMXF::PutBuffer, dmusicks/IAllocatorMXF::PutBuffer, PutBuffer method [Audio Devices], IAllocatorMXF interface, audmp-routines_8afbc000-69b1-45a5-8fe3-3f6ff8d5518d.xml, PutBuffer method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IAllocatorMXF.PutBuffer
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -75,17 +79,12 @@ The miniport driver does not need to use this method because when the miniport d
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
-</dt>
-<dt>
 <a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
+
+<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
+
  
 
  

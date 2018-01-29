@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 150B1ED3-572A-4986-BED6-628ED6C54CCF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializeSpinlock
+ms.keywords : StorPortInitializeSpinlock routine [Storage Devices], StorPortInitializeSpinlock, storport/StorPortInitializeSpinlock, storage.storportinitializespinlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortInitializeSpinlock
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -64,15 +68,45 @@ Pointer to a spin lock of type <b>STOR_KSPIN_LOCK</b>, for which the caller must
 ## Return Value
 
 <b>StorPortInitializeSpinlock</b> returns one of the following status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>This function is not implemented on the active operating system.
+</dl>
+</td>
+<td width="60%">
+This function is not implemented on the active operating system.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The list items were removed successfully or the list is already empty.
+</dl>
+</td>
+<td width="60%">
+The list items were removed successfully or the list is already empty.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>A pointer in <i>ListHead</i> or <i>Result</i> is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+A pointer in <i>ListHead</i> or <i>Result</i> is <b>NULL</b>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,20 +128,14 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
+
+<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
+
  
 
  

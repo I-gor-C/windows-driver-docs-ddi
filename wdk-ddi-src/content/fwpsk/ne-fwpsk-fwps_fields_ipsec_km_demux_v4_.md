@@ -7,8 +7,8 @@ old-location : netvista\fwps_fields_ipsec_km_demux_v4.htm
 old-project : netvista
 ms.assetid : b8b95aad-7c55-475a-85d9-6a64434d8a5f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_FIELDS_IPSEC_KM_DEMUX_V4_, FWPS_FIELDS_IPSEC_KM_DEMUX_V4
+ms.date : 1/18/2018
+ms.keywords : FWPS_FIELD_IPSEC_KM_DEMUX_V4_QM_MODE, FWPS_FIELD_IPSEC_KM_DEMUX_V4_MAX, FWPS_FIELD_IPSEC_KM_DEMUX_V4_CURRENT_PROFILE_ID, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V4_CURRENT_PROFILE_ID, FWPS_FIELD_IPSEC_KM_DEMUX_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELDS_IPSEC_KM_DEMUX_V4, netvista.fwps_fields_ipsec_km_demux_v4, FWPS_FIELD_IPSEC_KM_DEMUX_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V4_MAX, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V4_QM_MODE, wfp_ref_5_const_3_data_fields_78a7198a-9122-420b-a45d-9b82cbfb16fb.xml, FWPS_FIELDS_IPSEC_KM_DEMUX_V4 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELDS_IPSEC_KM_DEMUX_V4_, FWPS_FIELD_IPSEC_KM_DEMUX_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V4_IP_REMOTE_ADDRESS, FWPS_FIELDS_IPSEC_KM_DEMUX_V4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Unless otherwise noted, supported starting with Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_FIELDS_IPSEC_KM_DEMUX_V4
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_FIELDS_IPSEC_KM_DEMUX_V4
 ---
 
@@ -62,9 +66,7 @@ typedef enum FWPS_FIELDS_IPSEC_KM_DEMUX_V4_ {
 <td>The profile identifier (network category) of the network interface. The possible network category values are: public (1), private (2), or domain (3). 
 
 
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -76,9 +78,7 @@ typedef enum FWPS_FIELDS_IPSEC_KM_DEMUX_V4_ {
 <td>FWPS_FIELD_IPSEC_KM_DEMUX_V4_IP_LOCAL_INTERFACE</td>
 <td>The IP local interface.
      
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -96,9 +96,12 @@ typedef enum FWPS_FIELDS_IPSEC_KM_DEMUX_V4_ {
 <td>FWPS_FIELD_IPSEC_KM_DEMUX_V4_QM_MODE</td>
 <td>The quick mode (QM) mode.
      
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
+</tr>
 
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+<tr>
+<td>FWPS_FIELD_KM_DEMUX_V4_IPSEC_SECURITY_REALM_ID</td>
+<td></td>
 </tr>
 </table>
 

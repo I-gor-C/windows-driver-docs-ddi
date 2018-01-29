@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f28a1ad6-4946-4d1e-b430-2cdee3dfd835
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.clfslogunpinnedcallback, ClfsLogUnpinnedCallback, ClfsLogUnpinnedCallback callback function [Kernel-Mode Driver Architecture], ClfsLogUnpinnedCallback, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK, wdm/ClfsLogUnpinnedCallback, Clfs_management_e82832a3-b4b9-48c7-a706-9d489a55f728.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2003 R2, Windows Vista
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsLogUnpinnedCallback
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at IRQL <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -90,14 +94,10 @@ The <i>ClfsLogGrowthCompleteCallback</i> function is called before the <i>ClfsLo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfsmgmthandlelogfilefull.md">ClfsMgmtHandleLogFileFull</a>
-</dt>
-</dl>
+
  
 
  

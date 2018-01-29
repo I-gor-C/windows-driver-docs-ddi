@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 357C62F3-43FE-4132-9233-7BFAD2CE95C5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_CYCLE_PORT_PARAMS, *PUSB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS
+ms.keywords : buses.usb_cycle_port_params, USB_CYCLE_PORT_PARAMS structure [Buses], PUSB_CYCLE_PORT_PARAMS structure pointer [Buses], *PUSB_CYCLE_PORT_PARAMS, usbioctl/PUSB_CYCLE_PORT_PARAMS, usbioctl/USB_CYCLE_PORT_PARAMS, PUSB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS, _USB_CYCLE_PORT_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_CYCLE_PORT_PARAMS
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PUSB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USB_CYCLE_PORT_PARAMS, *PUSB_CYCLE_PORT_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -50,14 +54,14 @@ typedef struct _USB_CYCLE_PORT_PARAMS {
 
 ## Members
 
-        
-            `ConnectionIndex`
 
-            Specifies the port number starting at 1.
-        
-            `StatusReturned`
+`ConnectionIndex`
 
-            On return, contains the USBD status of the operation.
+Specifies the port number starting at 1.
+
+`StatusReturned`
+
+On return, contains the USBD status of the operation.
 
 
 ## Requirements
@@ -68,16 +72,12 @@ typedef struct _USB_CYCLE_PORT_PARAMS {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include TBD) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-<dt>
+
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_hub_cycle_port.md">IOCTL_USB_HUB_CYCLE_PORT</a>
-</dt>
-</dl>
+
  
 
  

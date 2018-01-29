@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : c4970f78-fa4f-4ce9-a538-332f00e0df28
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MOUSE_STATE, MOUSE_STATE, *PMOUSE_STATE
+ms.keywords : hid.ioctl_internal_i8042_controller_write_buffer, IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER control code [Human Input Devices], IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER, ntdd8042/IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER, i8042ref_5dabcff0-3af4-48ec-9987-36b7bdb736f2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER
-req.alt-loc : ntdd8042.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER IOCTL
-The IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER request is not supported.
-
-
-
 The IOCTL_INTERNAL_I8042_CONTROLLER_WRITE_BUFFER request is not supported.
 
 ### Major Code
@@ -63,7 +63,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Status</b> member is set to STATUS_NOT_SUPPORTED.
 
 

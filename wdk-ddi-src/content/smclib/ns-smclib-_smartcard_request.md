@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : B5FF5B24-12E6-424A-B09A-4B0572621088
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SMARTCARD_REQUEST, *PSMARTCARD_REQUEST, SMARTCARD_REQUEST
+ms.keywords : _SMARTCARD_REQUEST, *PSMARTCARD_REQUEST, smclib/SMARTCARD_REQUEST, SMARTCARD_REQUEST, SMARTCARD_REQUEST structure [Smart Card Reader Devices], smartcrd.smartcard_request, PSMARTCARD_REQUEST structure pointer [Smart Card Reader Devices], PSMARTCARD_REQUEST, smclib/PSMARTCARD_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SMARTCARD_REQUEST
-req.alt-loc : Smclib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSMARTCARD_REQUEST, SMARTCARD_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SMARTCARD_REQUEST, *PSMARTCARD_REQUEST
 req.product : Windows 10 or later.
 ---
 
@@ -49,14 +53,18 @@ typedef struct _SMARTCARD_REPLY {
 
 ## Members
 
-        
-            `BufferLength`
 
-            Number of bytes required for this command.
-        
-            `BufferSize`
+`Buffer`
 
-            Size of the buffer pointed to by <i>Buffer</i>.
+Pointer to a buffer that  contains data to send.
+
+`BufferLength`
+
+Number of bytes required for this command.
+
+`BufferSize`
+
+Size of the buffer pointed to by <i>Buffer</i>.
 
 
 ## Requirements
@@ -67,13 +75,10 @@ typedef struct _SMARTCARD_REPLY {
 | **Minimum UMDF version** |  |
 | **Header** | smclib.h (include Smclib.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946593">SmcCxGetSmartcardRequestBuffer</a>
-</dt>
-</dl>
+
  
 
  

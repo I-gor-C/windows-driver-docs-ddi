@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : aec0655b-7cc0-48b6-828c-b9d39c71e5b6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_INFORMATION_CLASS, *PFILE_INFORMATION_CLASS, FILE_INFORMATION_CLASS
+ms.keywords : ntifs/FilePipeRemoteInformation, FileMaximumInformation, FileFullEaInformation, ntifs/FileRenameInformation, ntifs/FileSfioReserveInformation, wdm/FileNumaNodeInformation, ntifs/FileIdFullDirectoryInformation, wdm/FilePipeInformation, wdm/FileFullEaInformation, wdm/ FileDispositionInformationEx, ntifs/FileCompletionInformation, wdm/FileCompletionInformation, ntifs/FileAllocationInformation, FileSfioVolumeInformation, wdm/FileNameInformation, wdm/FileDirectoryInformation, wdm/FileReparsePointInformation, ntifs/PFILE_INFORMATION_CLASS, wdm/FileIdBothDirectoryInformation, ntifs/FileLinkInformationBypassAccessCheck, *PFILE_INFORMATION_CLASS, ntifs/FileIoPriorityHintInformation, wdm/FileQuotaInformation, ntifs/FileIdInformation, wdm/FileBasicInformation, FileInternalInformation, ntifs/FileObjectIdInformation, ntifs/FileEaInformation, wdm/FileEaInformation, FileAccessInformation, wdm/FileNetworkOpenInformation, ntifs/FilePipeLocalInformation, wdm/FileNamesInformation, ntifs/FileReparsePointInformation, FileAllocationInformation, ntifs/FileNameInformation, ntifs/FileHardLinkFullIdInformation, ntifs/FileNamesInformation, ntifs/FileProcessIdsUsingFileInformation, ntifs/FileMailslotSetInformation, ntifs/FileIoStatusBlockRangeInformation, wdm/FileSfioVolumeInformation, wdm/FileTrackingInformation, wdm/FilePipeLocalInformation, ntifs/FileEndOfFileInformation, ntifs/FileShortNameInformation, ntifs/FileNormalizedNameInformation, wdm/FileIoCompletionNotificationInformation, wdm/FileMailslotQueryInformation, FileRemoteProtocolInformation, FilePipeRemoteInformation, ntifs/FileStandardLinkInformation, FileModeInformation, FileMoveClusterInformation, wdm/ FileIdExtdBothDirectoryInformation, FileRenameInformation, FileAlternateNameInformation, wdm/FileIdFullDirectoryInformation, ntifs/FileMaximumInformation, wdm/FilePipeRemoteInformation, PFILE_INFORMATION_CLASS enumeration pointer [Installable File System Drivers], ntifs/FileCompressionInformation, wdm/FileStandardInformation, ntifs/FileAllInformation, FileCompressionInformation, wdm/FileBothDirectoryInformation, ntifs/FileFullEaInformation, ntifs/FileAccessInformation, wdm/FileAlternateNameInformation, ntifs/FileSfioVolumeInformation, ntifs/FileMailslotQueryInformation, wdm/FileRenameInformationExBypassAccessCheck, ntifs/FileAttributeTagInformation, FileNetworkPhysicalNameInformation, wdm/FileIoPriorityHintInformation, ntifs/FileIdGlobalTxDirectoryInformation, wdm/FileStandardLinkInformation, FileAlignmentInformation, FileQuotaInformation, ntifs/FileRemoteProtocolInformation, FileDirectoryInformation, wdm/FileAllocationInformation, wdm/FileNetworkPhysicalNameInformation, ntifs/FilePositionInformation, FileBasicInformation, wdm/FileIdInformation, ntifs/FileRenameInformationBypassAccessCheck, FileDispositionInformation, FileTrackingInformation, wdm/FileVolumeNameInformation, ntifs/FileIsRemoteDeviceInformation, wdm/FileEndOfFileInformation, ntifs/FileHardLinkInformation, PFILE_INFORMATION_CLASS, wdm/FileLinkInformationBypassAccessCheck, wdm/FileIsRemoteDeviceInformation, FileEaInformation, ntifs/FileModeInformation, ntifs/FILE_INFORMATION_CLASS, FileMailslotSetInformation, ntifs/FileIdBothDirectoryInformation, FileIoStatusBlockRangeInformation, ntifs/FileDirectoryInformation, ntifs/FileFullDirectoryInformation, FileHardLinkInformation, wdm/FileIdExtdDirectoryInformation, wdm/FILE_INFORMATION_CLASS, wdm/FilePositionInformation, FileBothDirectoryInformation, FileNumaNodeInformation, FileLinkInformation, FileReparsePointInformation, ntifs/FileIoCompletionNotificationInformation, wdm/FileAlignmentInformation, wdm/FileHardLinkFullIdInformation, FileSfioReserveInformation, wdm/FileValidDataLengthInformation, ntifs/FileLinkInformation, ntifs/FileValidDataLengthInformation, ntifs/FileIdExtdDirectoryInformation, FileMailslotQueryInformation, FileIdBothDirectoryInformation, wdm/FileMailslotSetInformation, wdm/FileUnusedInformation, ntifs/FileTrackingInformation, wdm/FileRenameInformationEx, FilePipeInformation, FileUnusedInformation, FileStreamInformation, ntifs/FileDispositionInformation, ntifs/FileNumaNodeInformation, wdm/FileSfioReserveInformation, wdm/FileProcessIdsUsingFileInformation, FileLinkInformationBypassAccessCheck, _FILE_INFORMATION_CLASS, wdm/FileLinkInformation, FileAttributeTagInformation, ntifs/FileAlignmentInformation, ntifs/FileNetworkOpenInformation, ntifs/FileStandardInformation, wdm/FileModeInformation, wdm/FileMaximumInformation, ntifs/FileInternalInformation, FileNetworkOpenInformation, wdm/FileInternalInformation, wdm/FileStreamInformation, FileValidDataLengthInformation, ntifs/ FileIdExtdBothDirectoryInformation, FileAllInformation, wdm/FileCompressionInformation, FileRenameInformationEx, wdm/FileAccessInformation, FILE_INFORMATION_CLASS, FileNamesInformation, ntifs/FileUnusedInformation, FileIdInformation, ntifs/ FileDispositionInformationEx, FileIdExtdDirectoryInformation, ntifs/FileRenameInformationExBypassAccessCheck, wdm/FileIdGlobalTxDirectoryInformation, ntifs/FileAlternateNameInformation, ntifs/FileReplaceCompletionInformation, FileStandardLinkInformation, wdm/FileObjectIdInformation, FileNormalizedNameInformation, ntifs/FileQuotaInformation, FileStandardInformation, wdm/FileRenameInformation, wdm/FileAttributeTagInformation, ntifs/FileBasicInformation, wdm/FileNormalizedNameInformation, FileFullDirectoryInformation, FileObjectIdInformation, ntifs/FileNetworkPhysicalNameInformation, wdm/FileHardLinkInformation, wdm/FileReplaceCompletionInformation, wdm/FileMoveClusterInformation, FileIoCompletionNotificationInformation, FileNameInformation, wdm/FileDispositionInformation, FileIsRemoteDeviceInformation, wdm/PFILE_INFORMATION_CLASS, wdm/FileRemoteProtocolInformation, FileIdFullDirectoryInformation, wdm/FileRenameInformationBypassAccessCheck, ntifs/FileBothDirectoryInformation, ntifs/FileMoveClusterInformation, FileProcessIdsUsingFileInformation, wdm/FileAllInformation, wdm/FileShortNameInformation, ifsk.file_information_class, FilePositionInformation, FileEndOfFileInformation, wdm/FileFullDirectoryInformation, FileIoPriorityHintInformation, FileIdGlobalTxDirectoryInformation, FileHardLinkFullIdInformation, FileRenameInformationBypassAccessCheck, ntifs/FileRenameInformationEx, FileShortNameInformation, ntifs/FileVolumeNameInformation, FilePipeLocalInformation, ntifs/FileStreamInformation, FileIdExtdBothDirectoryInformation, ntifs/FilePipeInformation, FileRenameInformationExBypassAccessCheck, FileReplaceCompletionInformation, FileCompletionInformation, FILE_INFORMATION_CLASS enumeration [Installable File System Drivers], FileDispositionInformationEx, FileVolumeNameInformation, wdm/FileIoStatusBlockRangeInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP, Windows Server 2003, and la
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_INFORMATION_CLASS
-req.alt-loc : ntifs.h,wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFILE_INFORMATION_CLASS, FILE_INFORMATION_CLASS"
 req.product : Windows 10 or later.
 ---
@@ -166,6 +170,11 @@ typedef enum _FILE_INFORMATION_CLASS {
 </tr>
 
 <tr>
+<td>FileDesiredStorageClassInformation</td>
+<td></td>
+</tr>
+
+<tr>
 <td>FileDirectoryInformation</td>
 <td>A <a href="..\ntifs\ns-ntifs-_file_directory_information.md">FILE_DIRECTORY_INFORMATION</a> structure.</td>
 </tr>
@@ -173,6 +182,11 @@ typedef enum _FILE_INFORMATION_CLASS {
 <tr>
 <td>FileDispositionInformation</td>
 <td>A <a href="..\ntddk\ns-ntddk-_file_disposition_information.md">FILE_DISPOSITION_INFORMATION</a> structure.</td>
+</tr>
+
+<tr>
+<td>FileDispositionInformationEx</td>
+<td>A <a href="..\ntddk\ns-ntddk-_file_disposition_information_ex.md">FILE_DISPOSITION_INFORMATION_EX</a> structure that indicates how the operating system should delete a file. This value is available starting with Windows 10, version 1709.</td>
 </tr>
 
 <tr>
@@ -208,6 +222,11 @@ typedef enum _FILE_INFORMATION_CLASS {
 <tr>
 <td>FileIdBothDirectoryInformation</td>
 <td>A <a href="..\ntifs\ns-ntifs-_file_id_both_dir_information.md">FILE_ID_BOTH_DIR_INFORMATION</a> structure.</td>
+</tr>
+
+<tr>
+<td>FileIdExtdBothDirectoryInformation</td>
+<td>A <b>FILE_ID_EXTD_BOTH_DIR_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 10.</td>
 </tr>
 
 <tr>
@@ -283,6 +302,11 @@ This is a special version of the <b>FileLinkInformation</b> operation that is us
 <tr>
 <td>FileMaximumInformation</td>
 <td>This value is reserved for system use. This value is available starting with Windows 7.</td>
+</tr>
+
+<tr>
+<td>FileMemoryPartitionInformation</td>
+<td></td>
 </tr>
 
 <tr>
@@ -428,6 +452,11 @@ This is a special version of the <b>FileRenameInformation</b> operation that is 
 <tr>
 <td>FileStandardLinkInformation</td>
 <td>A <b>FILE_STANDARD_LINK_INFORMATION</b> structure. This value is reserved for system use. This value is available starting with Windows 7.</td>
+</tr>
+
+<tr>
+<td>FileStatInformation</td>
+<td></td>
 </tr>
 
 <tr>

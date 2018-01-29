@@ -7,8 +7,8 @@ old-location : netvista\wskdisconnectevent.htm
 old-project : netvista
 ms.assetid : bf12d7b3-080e-46d9-b276-76d42068e7c6
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO
+ms.date : 1/18/2018
+ms.keywords : netvista.wskdisconnectevent, WskDisconnectEvent callback function [Network Drivers Starting with Windows Vista], WskDisconnectEvent, PFN_WSK_DISCONNECT_EVENT, PFN_WSK_DISCONNECT_EVENT, wsk/WskDisconnectEvent, wskref_ec112b8d-f939-456f-9766-e181c7836e2c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WskDisconnectEvent
-req.alt-loc : wsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -60,7 +64,6 @@ NTSTATUS PfnWskDisconnectEvent(
 A pointer to the socket context for the connection-oriented socket that has been disconnected. The
      WSK application provided this pointer to the WSK subsystem in one of the following ways:
      
-
 <ul>
 <li>
 It called the 
@@ -104,8 +107,8 @@ The WSK subsystem calls a WSK application's
     remote application only if the event callback function was previously enabled with the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570834">SO_WSK_EVENT_CALLBACK</a> socket option.
     For more information about enabling a socket's event callback functions, see 
-    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
-    Disabling Event Callback Functions</a>.
+    <mshelp:link keywords="netvista.enabling_and_disabling_event_callback_functions" tabindex="0">Enabling and
+    Disabling Event Callback Functions</mshelp:link>.
 
 If the remote application performed a graceful disconnect of the socket, no further data will be
     received from the socket. However, the WSK application can still send data to the socket until the socket
@@ -135,38 +138,27 @@ A WSK application's <i>WskDisconnectEvent</i> event callback function must not w
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
-</dt>
-<dt>
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
-</dt>
-<dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
-</dt>
-<dt>
-<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
-</dt>
-<dt>
-<a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a>
-</dt>
-<dt>
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
-</dt>
-<dt>
+
+<mshelp:link keywords="netvista.wsk_client_connection_dispatch" tabindex="0"><b>
+   WSK_CLIENT_CONNECTION_DISPATCH</b></mshelp:link>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
-</dt>
-<dt>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
-</dt>
-<dt>
-<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
-   WSK_CLIENT_CONNECTION_DISPATCH</a>
-</dt>
-</dl>
+
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_DISCONNECT_EVENT callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_DISCONNECT_EVENT callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

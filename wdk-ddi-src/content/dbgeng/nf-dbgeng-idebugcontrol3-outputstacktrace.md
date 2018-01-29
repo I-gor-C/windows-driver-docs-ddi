@@ -7,8 +7,8 @@ old-location : debugger\outputstacktrace.htm
 old-project : debugger
 ms.assetid : 207f289c-347c-4ae7-9bbd-7c4a04d19e24
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugControl3, IDebugControl3::OutputStackTrace, OutputStackTrace
+ms.date : 1/19/2018
+ms.keywords : IDebugControl2::OutputStackTrace, OutputStackTrace, OutputStackTrace method [Windows Debugging], IDebugControl2 interface, debugger.outputstacktrace, dbgeng/IDebugControl2::OutputStackTrace, IDebugControl3 interface [Windows Debugging], OutputStackTrace method, OutputStackTrace method [Windows Debugging], IDebugControl3 interface, IDebugControl::OutputStackTrace, IDebugControl3, dbgeng/IDebugControl3::OutputStackTrace, IDebugControl interface [Windows Debugging], OutputStackTrace method, IDebugControl2 interface [Windows Debugging], OutputStackTrace method, IDebugControl_07d53535-7d91-4771-84b1-f4ac4895a158.xml, OutputStackTrace method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::OutputStackTrace, IDebugControl3::OutputStackTrace, OutputStackTrace method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugControl.OutputStackTrace,IDebugControl2.OutputStackTrace,IDebugControl3.OutputStackTrace
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -66,7 +70,6 @@ Specifies the number of frames to output.
 `Flags`
 
 Specifies bit flags that determine what information to output for each frame.  <i>Flags</i> can be any combination of values from the following table.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -188,9 +191,23 @@ Displays each parameter and its type and value on a new line.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -210,28 +227,20 @@ The array of stack frames can be obtained using <a href="https://msdn.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-</dt>
-<dt>
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545748">GetContextStackTrace</a>
-</dt>
-<dt>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548425">GetStackTrace</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/1061015f-cb0c-490b-b256-e0dedb659f22">k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)</a>
-</dt>
-</dl>
- 
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545748">GetContextStackTrace</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OutputStackTrace method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OutputStackTrace method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

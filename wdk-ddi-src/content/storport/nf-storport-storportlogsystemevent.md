@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 720245ff-8c97-4b8d-8406-f6b712fa74c9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortLogSystemEvent
+ms.keywords : StorPortLogSystemEvent routine [Storage Devices], storport/StorPortLogSystemEvent, storage.storportlogsystemevent, StorPortLogSystemEvent, storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortLogSystemEvent
-req.alt-loc : storport.h
 req.ddi-compliance : StorPortIrql
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -66,27 +70,89 @@ Variable to receive maximum combined size of miniport's dump data and strings. O
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>This function is not implemented on the active operating system.
+</dl>
+</td>
+<td width="60%">
+This function is not implemented on the active operating system.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was passed in.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was passed in.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
-</dl>The call was made at IRQL &gt; DISPATCH_LEVEL.
+</dl>
+</td>
+<td width="60%">
+The call was made at IRQL &gt; DISPATCH_LEVEL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There were insufficient system resources to complete the request.
+</dl>
+</td>
+<td width="60%">
+There were insufficient system resources to complete the request.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_UNSUPPORTED_VERSION:</b></dt>
-</dl>An unsupported (for example, more current) version of the STOR_LOG_EVENT_DETAILS structure was specified. When this is returned, LogDetails-&gt;InterfaceRevision is set to the latest supported version.
+</dl>
+</td>
+<td width="60%">
+An unsupported (for example, more current) version of the STOR_LOG_EVENT_DETAILS structure was specified. When this is returned, LogDetails-&gt;InterfaceRevision is set to the latest supported version.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_BUFFER_SIZE</b></dt>
-</dl>The buffers passed to the function were too large. When this value is returned, MaximumSize is set to the maximum combined size of the miniport's dump data and strings.
+</dl>
+</td>
+<td width="60%">
+The buffers passed to the function were too large. When this value is returned, MaximumSize is set to the maximum combined size of the miniport's dump data and strings.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The log operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The log operation completed successfully.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -106,11 +172,8 @@ To understand how you may use custom error codes to best advantage, see  <a href
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a>
-</dt>
-</dl>
+
  
 
  

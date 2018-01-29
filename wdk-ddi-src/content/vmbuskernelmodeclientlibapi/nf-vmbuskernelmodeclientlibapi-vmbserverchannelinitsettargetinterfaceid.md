@@ -7,8 +7,8 @@ old-location : netvista\vmbserverchannelinitsettargetinterfaceid.htm
 old-project : netvista
 ms.assetid : 09123845-F734-48B6-A593-0368CD195379
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbServerChannelInitSetTargetInterfaceId
+ms.date : 1/18/2018
+ms.keywords : VmbServerChannelInitSetTargetInterfaceId function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbServerChannelInitSetTargetInterfaceId, netvista.vmbserverchannelinitsettargetinterfaceid, VmbServerChannelInitSetTargetInterfaceId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbServerChannelInitSetTargetInterfaceId
-req.alt-loc : VmbusKernelModeClientLibApi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 
@@ -81,7 +85,7 @@ ID reported to the PnP Manager.
 
 The <i>InterfaceInstance</i> GUID identifies a specific instance
 of the service.  For instance, If you have two paravirtual network interfaces, they
-have the same interface type, but different interface instance values. </p>
+have the same interface type, but different interface instance values.
 
 ## Requirements
 | &nbsp; | &nbsp; |

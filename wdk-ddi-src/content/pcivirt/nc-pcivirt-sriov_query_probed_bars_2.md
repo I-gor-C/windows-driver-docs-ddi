@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : e0c079aa-8adf-42c9-a4ac-bfc623471964
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PARCLASS_INFORMATION, PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+ms.keywords : PCI.sriov_query_probed_bars_2, SriovQueryProbedBars2 callback function [Buses], SriovQueryProbedBars2, SRIOV_QUERY_PROBED_BARS_2, SRIOV_QUERY_PROBED_BARS_2, pcivirt/SriovQueryProbedBars2, *PSRIOV_QUERY_PROBED_BARS_2 callback function pointer [Buses], *PSRIOV_QUERY_PROBED_BARS_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : "*PSRIOV_QUERY_PROBED_BARS_2"
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
@@ -78,7 +82,7 @@ This callback function is implemented by the physical function (PF) driver. It i
 
 The PF driver registers its implementation by setting the <b>QueryProbedBars_2</b> member of the <a href="https://msdn.microsoft.com/46c9fa94-283c-481e-9fb1-2ed63df00386">SRIOV_DEVICE_INTERFACE_STANDARD_2</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
-This callback is invoked by the virtualization stack (non-privileged) when it wants to find out the VF’s base address register values after the registers are written with the value (-1).  This process is conventional when setting up a PCI device, and the result allows the PCI driver to know the amount of address space that would be decoded by the device after it is enabled.  When a non-privileged VM writes to the VF’s BARs, the privileged VM can stop functioning. Therefore, this routine requires the need for writing to the BARs.</p>
+This callback is invoked by the virtualization stack (non-privileged) when it wants to find out the VF’s base address register values after the registers are written with the value (-1).  This process is conventional when setting up a PCI device, and the result allows the PCI driver to know the amount of address space that would be decoded by the device after it is enabled.  When a non-privileged VM writes to the VF’s BARs, the privileged VM can stop functioning. Therefore, this routine requires the need for writing to the BARs.
 
 ## Requirements
 | &nbsp; | &nbsp; |

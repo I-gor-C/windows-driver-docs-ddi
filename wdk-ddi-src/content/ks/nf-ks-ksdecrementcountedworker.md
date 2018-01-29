@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2b38e4df-e5b6-480b-bd4e-62e059e26411
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDecrementCountedWorker
+ms.keywords : ksfunc_7ddba520-3deb-4160-87e1-a12d2210b5da.xml, ks/KsDecrementCountedWorker, stream.ksdecrementcountedworker, KsDecrementCountedWorker function [Streaming Media Devices], KsDecrementCountedWorker
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDecrementCountedWorker
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,14 +79,10 @@ Returns the current counter. A count of zero implies that the task list has been
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksincrementcountedworker.md">KsIncrementCountedWorker</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksregistercountedworker.md">KsRegisterCountedWorker</a>
-</dt>
-</dl>
+
  
 
  

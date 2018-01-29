@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 84d81ae3-708d-48ee-99c5-b79f085a9592
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : DrmForwardContentToFileObject
+ms.keywords : drmk/DrmForwardContentToFileObject, aud-prop2_f0deebf5-ef63-406b-a424-b084e775333c.xml, DrmForwardContentToFileObject function [Audio Devices], DrmForwardContentToFileObject, audio.drmforwardcontenttofileobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DrmForwardContentToFileObject
-req.alt-loc : Drmk.lib,Drmk.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Drmk.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
@@ -61,9 +65,23 @@ Pointer to a file object that represents the KS audio pin to which the KS audio 
 ## Return Value
 
 <code>DrmForwardContentToFileObject</code> returns STATUS_SUCCESS if the call was successful. The following table shows some of the possible error return values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>Indicates that the KS audio pin that is associated with <i>FileObject</i> does not support the DRM content rights that are assigned to <i>ContentId</i>.
+</dl>
+</td>
+<td width="60%">
+Indicates that the KS audio pin that is associated with <i>FileObject</i> does not support the DRM content rights that are assigned to <i>ContentId</i>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -87,23 +105,16 @@ The <code>DrmForwardContentToFileObject</code> function authenticates the KS aud
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
-</dt>
-<dt>
 <a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a>
-</dt>
-<dt>
+
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
+
 <a href="..\portcls\nf-portcls-pcforwardcontenttofileobject.md">PcForwardContentToFileObject</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536584">IDrmPort::ForwardContentToFileObject</a>
-</dt>
-</dl>
+
  
 
  

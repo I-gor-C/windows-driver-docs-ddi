@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6161bfd3-482c-4571-bd88-2e25d32b34a0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_REQUEST_FORWARD_OPTIONS_FLAGS, WDF_REQUEST_FORWARD_OPTIONS_FLAGS
+ms.keywords : _WDF_REQUEST_FORWARD_OPTIONS_FLAGS, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_FLAGS, WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration, wdf.wdf_request_forward_options_flags, WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET, WDF_REQUEST_FORWARD_OPTIONS_FLAGS, DFRequestObjectRef_cad8f6c6-9c76-4dc3-ac3f-3938e5174563.xml, kmdf.wdf_request_forward_options_flags, wdfrequest/WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.9
 req.umdf-ver : 
-req.alt-api : WDF_REQUEST_FORWARD_OPTIONS_FLAGS
-req.alt-loc : wdfrequest.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_FORWARD_OPTIONS_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -71,11 +75,8 @@ Currently, drivers must set the WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET flag.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a>
-</dt>
-</dl>
+
  
 
  

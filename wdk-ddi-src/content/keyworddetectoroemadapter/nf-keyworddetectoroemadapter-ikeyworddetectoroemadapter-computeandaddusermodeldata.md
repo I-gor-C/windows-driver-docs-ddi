@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4E810EAD-3864-44C1-9845-60DAB288BB48
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData
+ms.keywords : audio.ikeyworddetectoroemadapter_computeandaddusermodeldata, IKeywordDetectorOemAdapter, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, IKeywordDetectorOemAdapter interface [Audio Devices], ComputeAndAddUserModelData method, ComputeAndAddUserModelData method [Audio Devices], ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKeywordDetectorOemAdapter.ComputeAndAddUserModelData
-req.alt-loc : KeywordDetectorOemAdapter.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : KeywordDetectorOemAdapter.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : keyworddetectoroemadapter.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDID
 ---
 
@@ -76,18 +80,56 @@ The number of recordings.
 ## Return Value
 
 This method can return one of these values.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>S_OK</dt>
-</dl>The function exited successfully.
+</dl>
+</td>
+<td width="60%">
+The function exited successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>E_NOTIMPL</dt>
-</dl>User keyword training is not supported by the device.
+</dl>
+</td>
+<td width="60%">
+User keyword training is not supported by the device.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>E_INVALIDARG</dt>
-</dl>Either the <i>KeywordId</i> or <i>LangId</i> parameters are invalid.
+</dl>
+</td>
+<td width="60%">
+Either the <i>KeywordId</i> or <i>LangId</i> parameters are invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>HRESULT_FROM_WIN32(ERROR_GEN_FAILURE)</dt>
-</dl>The processing was unable to complete.
+</dl>
+</td>
+<td width="60%">
+The processing was unable to complete.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -104,14 +146,10 @@ This method can return one of these values.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
-</dt>
-<dt>
 <a href="..\keyworddetectoroemadapter\ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003.md">KEYWORDSELECTOR</a>
-</dt>
-</dl>
+
+<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
+
  
 
  

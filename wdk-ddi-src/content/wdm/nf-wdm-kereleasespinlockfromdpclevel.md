@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5f7a92ee-ebaf-442f-a197-2fb58dd65a25
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeReleaseSpinLockFromDpcLevel
+ms.keywords : KefReleaseSpinLockFromDpcLevel, wdm/KeReleaseSpinLockFromDpcLevel, KeReleaseSpinLockFromDpcLevel, k105_ed15a49d-6903-4f9f-914c-668242701b1e.xml, wdm/KefReleaseSpinLockFromDpcLevel, KeReleaseSpinLockFromDpcLevel routine [Kernel-Mode Driver Architecture], kernel.kereleasespinlockfromdpclevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeReleaseSpinLockFromDpcLevel,KefReleaseSpinLockFromDpcLevel
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs, IrqlDispatch, SpinLockSafe
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -51,7 +55,7 @@ VOID KeReleaseSpinLockFromDpcLevel(
 
 `a`
 
-
+TBD
 
 
 ## Return Value
@@ -80,17 +84,12 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keacquirespinlockatdpclevel.md">KeAcquireSpinLockAtDpcLevel</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keacquirespinlockatdpclevel.md">KeAcquireSpinLockAtDpcLevel</a>
+
+<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
+
  
 
  

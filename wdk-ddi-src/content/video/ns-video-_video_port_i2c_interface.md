@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fcc2679c-9a73-4bd0-ad2d-e7b48df9c7f7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_PORT_I2C_INTERFACE, *PVIDEO_PORT_I2C_INTERFACE, VIDEO_PORT_I2C_INTERFACE
+ms.keywords : VIDEO_PORT_I2C_INTERFACE, PVIDEO_PORT_I2C_INTERFACE, *PVIDEO_PORT_I2C_INTERFACE, display.video_port_i2c_interface, video/VIDEO_PORT_I2C_INTERFACE, video/PVIDEO_PORT_I2C_INTERFACE, PVIDEO_PORT_I2C_INTERFACE structure pointer [Display Devices], VIDEO_PORT_I2C_INTERFACE structure [Display Devices], Video_Structs_2b152aec-acc0-4602-80de-cfdf9c0632a4.xml, _VIDEO_PORT_I2C_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_PORT_I2C_INTERFACE
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PVIDEO_PORT_I2C_INTERFACE, VIDEO_PORT_I2C_INTERFACE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_I2C_INTERFACE, *PVIDEO_PORT_I2C_INTERFACE
 req.product : Windows 10 or later.
 ---
 
 # _VIDEO_PORT_I2C_INTERFACE structure
-The VIDEO_PORT_I2C_INTERFACE structure describes the <a href="wdkgloss.i#wdkgloss.inter_integrated_circuit__i2c_#wdkgloss.inter_integrated_circuit__i2c_"><i>I2C</i></a> service routines provided by the video port driver.
+The VIDEO_PORT_I2C_INTERFACE structure describes the <a href="https://msdn.microsoft.com/5a140cc0-ecc5-46ff-be3f-3c92f0f67dca">I2C</a> service routines provided by the video port driver.
 
 ## Syntax
 ````
@@ -55,45 +59,45 @@ typedef struct _VIDEO_PORT_I2C_INTERFACE {
 
 ## Members
 
-        
-            `Context`
 
-            Pointer to a miniport driver-defined context for the interface.
-        
-            `I2CRead`
+`Context`
 
-            Pointer to the video port driver's <a href="..\video\nc-video-pi2c_read.md">I2CRead</a> routine.
-        
-            `I2CStart`
+Pointer to a miniport driver-defined context for the interface.
 
-            Pointer to the video port driver's <a href="..\video\nc-video-pi2c_start.md">I2CStart</a> routine.
-        
-            `I2CStop`
+`I2CRead`
 
-            Pointer to the video port driver's <a href="..\video\nc-video-pi2c_stop.md">I2CStop</a> routine.
-        
-            `I2CWrite`
+Pointer to the video port driver's <a href="..\video\nc-video-pi2c_read.md">I2CRead</a> routine.
 
-            Pointer to the video port driver's <a href="..\video\nc-video-pi2c_write.md">I2CWrite</a> routine.
-        
-            `InterfaceDereference`
+`I2CStart`
 
-            Pointer to the video port driver-implemented dereference routine for this interface.
-        
-            `InterfaceReference`
+Pointer to the video port driver's <a href="..\video\nc-video-pi2c_start.md">I2CStart</a> routine.
 
-            Pointer to the video port driver-implemented reference routine for this interface.
-        
-            `Size`
+`I2CStop`
 
-            Specifies the size in bytes of this structure.
-        
-            `Version`
+Pointer to the video port driver's <a href="..\video\nc-video-pi2c_stop.md">I2CStop</a> routine.
 
-            Specifies the version of the interface to be returned by the miniport driver. The current interface version is defined in <i>video.h</i>, and has the form VIDEO_PORT_I2C_INTERFACE_<i>N</i>.
+`I2CWrite`
 
-    ## Remarks
-        PnP video miniport drivers that can use I²C should fill in the <b>Size</b> and <b>Version</b> members of this structure, and then call <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>, which initializes the remaining members of this structure.
+Pointer to the video port driver's <a href="..\video\nc-video-pi2c_write.md">I2CWrite</a> routine.
+
+`InterfaceDereference`
+
+Pointer to the video port driver-implemented dereference routine for this interface.
+
+`InterfaceReference`
+
+Pointer to the video port driver-implemented reference routine for this interface.
+
+`Size`
+
+Specifies the size in bytes of this structure.
+
+`Version`
+
+Specifies the version of the interface to be returned by the miniport driver. The current interface version is defined in <i>video.h</i>, and has the form VIDEO_PORT_I2C_INTERFACE_<i>N</i>.
+
+## Remarks
+PnP video miniport drivers that can use I²C should fill in the <b>Size</b> and <b>Version</b> members of this structure, and then call <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>, which initializes the remaining members of this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,16 +107,12 @@ typedef struct _VIDEO_PORT_I2C_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

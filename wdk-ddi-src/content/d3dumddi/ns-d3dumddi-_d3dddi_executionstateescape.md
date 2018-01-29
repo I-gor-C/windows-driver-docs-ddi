@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9BA78743-91AA-4AAC-9FB3-CF8B30FC15AE
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_EXECUTIONSTATEESCAPE, D3DDDI_EXECUTIONSTATEESCAPE
+ms.keywords : D3DDDI_EXECUTIONSTATEESCAPE structure [Display Devices], _D3DDDI_EXECUTIONSTATEESCAPE, display.d3dddi_executionstateescape, d3dumddi/D3DDDI_EXECUTIONSTATEESCAPE, D3DDDI_EXECUTIONSTATEESCAPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_EXECUTIONSTATEESCAPE
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_EXECUTIONSTATEESCAPE
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DDDI_EXECUTIONSTATEESCAPE {
 
 ## Members
 
-        
-            `State`
 
-            [Out] A value of type <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_deviceexecution_state.md">D3DDDI_DEVICEEXECUTION_STATE</a> that indicates the state of the device.
+`State`
+
+[Out] A value of type <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_deviceexecution_state.md">D3DDDI_DEVICEEXECUTION_STATE</a> that indicates the state of the device.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _D3DDDI_EXECUTIONSTATEESCAPE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_deviceexecution_state.md">D3DDDI_DEVICEEXECUTION_STATE</a>
-</dt>
-</dl>
+
  
 
  

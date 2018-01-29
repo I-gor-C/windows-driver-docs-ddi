@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmabroadcastserviceid.htm
 old-project : netvista
 ms.assetid : 71f887ed-ab80-4b5f-bc74-d4333984fdd2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMABROADCASTSERVICEID, RILMSGCDMABROADCASTSERVICEID
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_1xBROADCAST_CMAS_EXTREME, netvista.rilmsgcdmabroadcastserviceid, RILMSGCDMABROADCASTSERVICEID, RIL_1xBROADCAST_CMAS_EXTREME, RIL_1xBROADCAST_CMAS_TEST, RILMSGCDMABROADCASTSERVICEID enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_1xBROADCAST_CMAS_TEST, RIL_1xBROADCAST_CMAS_AMBER, ntddrilapitypes/RIL_1xBROADCAST_CMAS_SEVERE, RIL_1xBROADCAST_CMAS_SEVERE, ntddrilapitypes/RILMSGCDMABROADCASTSERVICEID, ntddrilapitypes/RIL_1xBROADCAST_CMAS_AMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMABROADCASTSERVICEID
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCDMABROADCASTSERVICEID
 ---
 
@@ -58,6 +62,11 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
 
 <tr>
 <td>RIL_1xBROADCAST_CMAS_EXTREME</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_1xBROADCAST_CMAS_PRESIDENTIAL</td>
 <td></td>
 </tr>
 

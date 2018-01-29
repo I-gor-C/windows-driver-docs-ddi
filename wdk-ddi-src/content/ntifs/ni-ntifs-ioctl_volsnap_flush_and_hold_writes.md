@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c9189ca4-8b0e-470b-b027-f629ed243534
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlUpperOplockFsctrl
+ms.keywords : ifsk.ioctl_volsnap_flush_and_hold_writes, IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code [Installable File System Drivers], IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, ntifs/IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, ioctl_ref_f21aed38-5d6d-4b8c-ac8a-6cd1738a3de7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,17 +65,10 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
-The <b>Status</b> member is set to STATUS_SUCCESS on success or an appropriate NTSTATUS value such as one of the following:  
+The <b>Status</b> member is set to STATUS_SUCCESS on success or an appropriate NTSTATUS value such as one of the following:
 
-
-
-The volume was dismounted.
-
-A file lock conflict was encountered. This error can be returned by the filter manager.
-
-    ## Remarks
-        A shadow copy of a volume is a point-in-time copy of that volume. The shadow copy is primarily used by a backup application so that it may backup files in a consistent manner, even though files may really be changing during the time to complete the backup operation. A shadow copy can also be used to prepare a volume for a hibernation resulting from a PNP request and for crash dumps. 
+## Remarks
+A shadow copy of a volume is a point-in-time copy of that volume. The shadow copy is primarily used by a backup application so that it may backup files in a consistent manner, even though files may really be changing during the time to complete the backup operation. A shadow copy can also be used to prepare a volume for a hibernation resulting from a PNP request and for crash dumps. 
 
 Windows XP and later versions of the operating system include a framework for orchestrating the timing for a shadow copy, as well as a storage filter driver (not a file system filter driver) that uses a copy-on-write technique in order to create a shadow copy. The Volume Shadow Copy Service (VSS) orchestrates the shadow copy. The Volume Shadow Copy Driver, volsnap.sys, is a storage filter driver that loads on top of the storage stack below file systems.
 
@@ -100,13 +97,10 @@ If this is a read-only volume, then there is normally nothing that a file system
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>
-</dt>
-</dl>
+
  
 
  

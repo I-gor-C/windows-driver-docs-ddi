@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 70d0efe3-5ba1-4552-8c58-83c3f14e2264
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serial_get_commstatus, IOCTL_SERIAL_GET_COMMSTATUS control code [Serial Ports], IOCTL_SERIAL_GET_COMMSTATUS, ntddser/IOCTL_SERIAL_GET_COMMSTATUS, serref_4c26c2fc-2285-4b46-8791-0fb613e1c05a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_GET_COMMSTATUS
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -59,10 +63,9 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size in bytes of a <b>SERIAL_STATUS</b> structure. Otherwise, the <b>Information</b> member is set to zero.
 
-The <b>Status</b> member is set to one of the <a href="serial_device_control_requests.htm#generic_status_values_for_serial_device_control_requests">Generic Status Values for Serial Device Control Requests</a>.
+The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/serial-device-control-requests2">Generic Status Values for Serial Device Control Requests</a>.
 
 
 ## Requirements
@@ -72,13 +75,10 @@ The <b>Status</b> member is set to one of the <a href="serial_device_control_req
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ns-ntddser-_serial_status.md">SERIAL_STATUS</a>
-</dt>
-</dl>
+
  
 
  

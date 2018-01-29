@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : dc9acd16-c515-4e47-9a0b-9dec46e30f74
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE
+ms.keywords : PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE structure [Audio Devices], PSYNTHVOICEPRIORITY_INSTANCE structure pointer [Audio Devices], audio.synthvoicepriority_instance, _SYNTHVOICEPRIORITY_INSTANCE, dmusprop/SYNTHVOICEPRIORITY_INSTANCE, dmusprop/PSYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, aud-prop_86a44512-a1b5-4380-a96a-5e9184ff71c2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYNTHVOICEPRIORITY_INSTANCE
-req.alt-loc : dmusprop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _SYNTHVOICEPRIORITY_INSTANCE {
 
 ## Members
 
-        
-            `Channel`
 
-            Specifies the channel that the voice is on. This member contains a channel number in the range 0 through 15. It identifies a channel in the channel group.
-        
-            `ChannelGroup`
+`Channel`
 
-            Specifies the channel group that the voice belongs to. Channel groups are numbered beginning at zero. Each channel group contains 16 channels.
+Specifies the channel that the voice is on. This member contains a channel number in the range 0 through 15. It identifies a channel in the channel group.
 
-    ## Remarks
-        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537407">KSPROPERTY_SYNTH_VOICEPRIORITY</a> property request uses the SYNTHVOICEPRIORITY_INSTANCE structure for its property descriptor. The structure specifies which voice gets priority when the miniport driver needs to bump voices from the cache.
+`ChannelGroup`
+
+Specifies the channel group that the voice belongs to. Channel groups are numbered beginning at zero. Each channel group contains 16 channels.
+
+## Remarks
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537407">KSPROPERTY_SYNTH_VOICEPRIORITY</a> property request uses the SYNTHVOICEPRIORITY_INSTANCE structure for its property descriptor. The structure specifies which voice gets priority when the miniport driver needs to bump voices from the cache.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _SYNTHVOICEPRIORITY_INSTANCE {
 | **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537407">KSPROPERTY_SYNTH_VOICEPRIORITY</a>
-</dt>
-</dl>
+
  
 
  

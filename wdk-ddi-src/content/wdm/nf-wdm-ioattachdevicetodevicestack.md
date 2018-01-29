@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6377f980-dd56-4bef-91e7-7557866132d6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoAttachDeviceToDeviceStack
+ms.keywords : wdm/IoAttachDeviceToDeviceStack, IoAttachDeviceToDeviceStack routine [Kernel-Mode Driver Architecture], kernel.ioattachdevicetodevicestack, k104_18c6aeef-4362-49f9-88a3-6d2a970eb0d7.xml, IoAttachDeviceToDeviceStack
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoAttachDeviceToDeviceStack
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : AddDevice, PnpSameDeviceObject, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -91,20 +95,14 @@ A driver that acquired a pointer to the target device by calling <a href="..\wdm
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iodetachdevice.md">IoDetachDevice</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
+
+<a href="..\wdm\nf-wdm-iodetachdevice.md">IoDetachDevice</a>
+
  
 
  

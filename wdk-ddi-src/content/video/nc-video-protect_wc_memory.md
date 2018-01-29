@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0cee4f4d-4d9c-44be-94ad-459000f2adb1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.videoportprotectwcmemory, VideoPortProtectWCMemory callback function [Display Devices], VideoPortProtectWCMemory, PROTECT_WC_MEMORY, PROTECT_WC_MEMORY, video/VideoPortProtectWCMemory, VideoPort_Functions_5aead504-6c27-4b86-95e0-b4ec1b2b3e7d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortProtectWCMemory
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -86,14 +90,10 @@ When WC memory protection is no longer required, the display miniport driver sho
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
-</dt>
-<dt>
+
 <a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a>
-</dt>
-</dl>
+
  
 
  

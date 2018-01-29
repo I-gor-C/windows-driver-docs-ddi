@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 55674946-A2DA-4695-8673-6BF3123FB5FC
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionStopSystemTransfer
+ms.keywords : wdf.wdfdmatransactionstopsystemtransfer, PFN_WDFDMATRANSACTIONSTOPSYSTEMTRANSFER, WdfDmaTransactionStopSystemTransfer method, kmdf.wdfdmatransactionstopsystemtransfer, WdfDmaTransactionStopSystemTransfer, wdfdmatransaction/WdfDmaTransactionStopSystemTransfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 
-req.alt-api : WdfDmaTransactionStopSystemTransfer
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -78,10 +82,6 @@ If your driver calls this method on an operating system earlier than Windows 8,
 
  For more information about canceling DMA transactions, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/canceling-dma-transactions">Canceling DMA Transactions</a>.
 
-The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a> event callback function that it registers to be called if an I/O request times out.
-
-The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_cancel.md">EvtRequestCancel</a> callback function. The driver previously called <a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelableex.md">WdfRequestMarkCancelableEx</a> from its I/O request handler to register the callback.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -96,14 +96,10 @@ The following code example shows how a driver might call <b>WdfDmaTransactionSto
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncancel.md">WdfDmaTransactionCancel</a>
-</dt>
-<dt>
+
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
-</dt>
-</dl>
+
  
 
  

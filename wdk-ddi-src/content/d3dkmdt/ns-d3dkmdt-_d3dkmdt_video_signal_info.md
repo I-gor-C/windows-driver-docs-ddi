@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 38d0a655-265b-46e0-8af3-de6757025588
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO
+ms.keywords : DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, _D3DKMDT_VIDEO_SIGNAL_INFO, display.d3dkmdt_video_signal_info, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices], D3DKMDT_VIDEO_SIGNAL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_VIDEO_SIGNAL_INFO
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_VIDEO_SIGNAL_INFO
 ---
 
@@ -61,30 +65,30 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 
 ## Members
 
-        
-            `ActiveSize`
 
-            A D3DKMDT_2DREGION structure that specifies the width and height (in pixels) of the active portion of the video signal.
-        
-            `HSyncFreq`
+`ActiveSize`
 
-            A D3DDDI_RATIONAL structure that specifies the horizontal refresh rate in Hz.
-        
-            `PixelRate`
+A D3DKMDT_2DREGION structure that specifies the width and height (in pixels) of the active portion of the video signal.
 
-            The pixel clock rate.
-        
-            `TotalSize`
+`HSyncFreq`
 
-            A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_2dregion.md">D3DKMDT_2DREGION</a> structure that specifies the width and height (in pixels) of the entire video signal.
-        
-            `VideoStandard`
+A D3DDDI_RATIONAL structure that specifies the horizontal refresh rate in Hz.
 
-            A constant from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_signal_standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a> enumeration that indicates the video standard (if any) that defines the video signal.
-        
-            `VSyncFreq`
+`PixelRate`
 
-            A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a> structure that specifies the vertical refresh rate in Hz.
+The pixel clock rate.
+
+`TotalSize`
+
+A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_2dregion.md">D3DKMDT_2DREGION</a> structure that specifies the width and height (in pixels) of the entire video signal.
+
+`VideoStandard`
+
+A constant from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_signal_standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a> enumeration that indicates the video standard (if any) that defines the video signal.
+
+`VSyncFreq`
+
+A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a> structure that specifies the vertical refresh rate in Hz.
 
 
 ## Requirements
@@ -95,16 +99,12 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_target_mode.md">D3DKMDT_VIDPN_TARGET_MODE</a>
-</dt>
-<dt>
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_target.md">D3DKMDT_VIDEO_PRESENT_TARGET</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_target_mode.md">D3DKMDT_VIDPN_TARGET_MODE</a>
+
  
 
  

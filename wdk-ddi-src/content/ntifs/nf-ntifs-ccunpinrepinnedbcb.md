@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 96a35574-87dc-4a2f-aaef-616096839f3f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcUnpinRepinnedBcb
+ms.keywords : ccref_72300deb-bf8a-4f2a-b594-69ccb01cff56.xml, CcUnpinRepinnedBcb, ntifs/CcUnpinRepinnedBcb, ifsk.ccunpinrepinnedbcb, CcUnpinRepinnedBcb routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcUnpinRepinnedBcb
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -91,11 +95,8 @@ Because <b>CcUnpinRepinnedBcb</b> acquires the BCB resource exclusively, the cal
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccrepinbcb.md">CcRepinBcb</a>
-</dt>
-</dl>
+
  
 
  

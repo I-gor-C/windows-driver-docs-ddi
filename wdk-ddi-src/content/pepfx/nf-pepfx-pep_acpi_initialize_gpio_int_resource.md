@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : EF8E3D1D-9C87-4083-A022-FD888D370B20
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE
+ms.keywords : pepfx/PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE, PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE function [Kernel-Mode Driver Architecture], PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE, kernel.pep_acpi_initialize_gpio_int_resource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
@@ -137,20 +141,14 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_acpi_gpio_resource.md">PEP_ACPI_GPIO_RESOURCE</a>
-</dt>
-<dt>
+
 <a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
+
  
 
  

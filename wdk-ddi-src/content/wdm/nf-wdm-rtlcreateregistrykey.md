@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2214acc8-b24a-4db4-9ce3-f639291428f2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCreateRegistryKey
+ms.keywords : RtlCreateRegistryKey, RtlCreateRegistryKey routine [Kernel-Mode Driver Architecture], kernel.rtlcreateregistrykey, wdm/RtlCreateRegistryKey, k109_9a163bcc-501d-453b-b426-a4267d04135c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlCreateRegistryKey
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -53,7 +57,6 @@ NTSTATUS RtlCreateRegistryKey(
 `RelativeTo`
 
 Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined key path as one of the following.
-
 <table>
 <tr>
 <th>Value</th>
@@ -148,26 +151,18 @@ Specifies the registry path according to the <i>RelativeTo</i> value.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
+
 <a href="..\wdm\nf-wdm-rtlwriteregistryvalue.md">RtlWriteRegistryValue</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-</dt>
-</dl>
+
  
 
  

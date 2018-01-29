@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6C7AB917-1A98-471C-BA6C-B7C6BFF1AC3F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_COMPONENT_V2, PEP_COMPONENT_V2, *PPEP_COMPONENT_V2, PEP_COMPONENT, *PPEP_COMPONENT
+ms.keywords : pepfx/PPEP_COMPONENT_V2, PPEP_COMPONENT_V2 structure pointer [Kernel-Mode Driver Architecture], PEP_COMPONENT, pepfx/PEP_COMPONENT_V2, PPEP_COMPONENT_V2, _PEP_COMPONENT_V2, PEP_COMPONENT_V2, *PPEP_COMPONENT_V2, PEP_COMPONENT_V2 structure [Kernel-Mode Driver Architecture], kernel.pep_component_v2, *PPEP_COMPONENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_COMPONENT_V2
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_COMPONENT_V2, *PPEP_COMPONENT_V2
 ---
 
@@ -50,29 +54,29 @@ typedef struct _PEP_COMPONENT_V2 {
 
 ## Members
 
-        
-            `DeepestWakeableIdleState`
 
-            The index of the deepest F<i>x</i> state from which the component can wake. Specify 0 for F0, 1 for F1, and so on. This index must be less than <b>IdleStateCount</b>.
-        
-            `Flags`
+`DeepestWakeableIdleState`
 
-            A set of component-power-state flags. No flags are currently defined for this member, which is always zero.
-        
-            `Id`
+The index of the deepest F<i>x</i> state from which the component can wake. Specify 0 for F0, 1 for F1, and so on. This index must be less than <b>IdleStateCount</b>.
 
-            A component ID that uniquely identifies this component with respect to the other components in the device. The PEP should specify a nonzero value for this member if the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. This member is optional. If this member is not used, it must be set to all zeros.
-        
-            `IdleStateCount`
+`Flags`
 
-            The number of elements in the array that is pointed to by the <b>IdleStates</b> member. Additionally, this member specifies the number of F<i>x</i> power states that the component supports. A component must support at least one F<i>x</i> state (F0).
-        
-            `IdleStates`
+A set of component-power-state flags. No flags are currently defined for this member, which is always zero.
 
-            A pointer to an array of <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a> structures. The length of this array is specified by the <b>IdleStateCount</b> member. Each array element specifies the attributes of an F<i>x</i> power state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on.
+`Id`
 
-    ## Remarks
-        This structure
+A component ID that uniquely identifies this component with respect to the other components in the device. The PEP should specify a nonzero value for this member if the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) requires a component ID to distinguish this component from other, similar components in the same device. This member is optional. If this member is not used, it must be set to all zeros.
+
+`IdleStateCount`
+
+The number of elements in the array that is pointed to by the <b>IdleStates</b> member. Additionally, this member specifies the number of F<i>x</i> power states that the component supports. A component must support at least one F<i>x</i> state (F0).
+
+`IdleStates`
+
+A pointer to an array of <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a> structures. The length of this array is specified by the <b>IdleStateCount</b> member. Each array element specifies the attributes of an F<i>x</i> power state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on.
+
+## Remarks
+This structure
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +86,10 @@ typedef struct _PEP_COMPONENT_V2 {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a>
-</dt>
-</dl>
+
  
 
  

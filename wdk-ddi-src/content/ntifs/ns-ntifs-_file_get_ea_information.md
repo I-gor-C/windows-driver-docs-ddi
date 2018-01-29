@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2abaf505-b890-43b6-a277-d930417bdcb8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_GET_EA_INFORMATION, *PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION
+ms.keywords : fileinformationstructures_42834ee3-151e-4844-bd66-a20775e364b4.xml, FILE_GET_EA_INFORMATION structure [Installable File System Drivers], FILE_GET_EA_INFORMATION, ntifs/PFILE_GET_EA_INFORMATION, ifsk.file_get_ea_information, PFILE_GET_EA_INFORMATION, PFILE_GET_EA_INFORMATION structure pointer [Installable File System Drivers], ntifs/FILE_GET_EA_INFORMATION, *PFILE_GET_EA_INFORMATION, _FILE_GET_EA_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_GET_EA_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION"
 ---
 
@@ -48,21 +52,21 @@ typedef struct _FILE_GET_EA_INFORMATION {
 
 ## Members
 
-        
-            `EaName`
 
-            Specifies the first character of the name of the extended attribute to be queried. This is followed in memory by the remainder of the string.
-        
-            `EaNameLength`
+`EaName`
 
-            Length, in bytes, of the <b>EaName</b> array. This value does not include a NULL terminator.
-        
-            `NextEntryOffset`
+Specifies the first character of the name of the extended attribute to be queried. This is followed in memory by the remainder of the string.
 
-            Offset, in bytes, of the next FILE_GET_EA_INFORMATION-typed entry. This member is zero if no other entries follow this one.
+`EaNameLength`
 
-    ## Remarks
-        The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (EA) information. The EA information is returned in a <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer. 
+Length, in bytes, of the <b>EaName</b> array. This value does not include a NULL terminator.
+
+`NextEntryOffset`
+
+Offset, in bytes, of the next FILE_GET_EA_INFORMATION-typed entry. This member is zero if no other entries follow this one.
+
+## Remarks
+The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (EA) information. The EA information is returned in a <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer. 
 
 This structure must be aligned on a LONG (4-byte) boundary.
 
@@ -74,19 +78,14 @@ This structure must be aligned on a LONG (4-byte) boundary.
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iocheckeabuffervalidity.md">IoCheckEaBufferValidity</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-iocheckeabuffervalidity.md">IoCheckEaBufferValidity</a>
+
+<a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
+
  
 
  

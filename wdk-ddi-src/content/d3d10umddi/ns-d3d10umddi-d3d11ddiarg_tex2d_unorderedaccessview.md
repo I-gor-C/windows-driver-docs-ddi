@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2d6a5945-5e30-404c-8ddb-13be781da1b4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW, D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW
+ms.keywords : D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW structure [Display Devices], D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW, d3d10umddi/D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW, UMDisplayDriver_Dx11param_Structs_ca281413-3ae7-472c-acd6-76c8ef97b713.xml, display.d3d11ddiarg_tex2d_unorderedaccessview
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW is supported b
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW
 ---
 
@@ -48,18 +52,18 @@ typedef struct D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW {
 
 ## Members
 
-        
-            `ArraySize`
 
-            [in] The number of array slices for the texture.
-        
-            `FirstArraySlice`
+`ArraySize`
 
-            [in] The identifier of the first array slice.
-        
-            `MipSlice`
+[in] The number of array slices for the texture.
 
-            [in] The identifier of the MIP-map slice.
+`FirstArraySlice`
+
+[in] The identifier of the first array slice.
+
+`MipSlice`
+
+[in] The identifier of the MIP-map slice.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize.md">CalcPrivateUnorderedAccessViewSize</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createunorderedaccessview.md">D3D11DDIARG_CREATEUNORDEREDACCESSVIEW</a>
-</dt>
-</dl>
+
  
 
  

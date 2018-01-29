@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a8e1ea01-2050-413a-991f-55c29977b6dd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETSTREAMSOURCE2, D3DHAL_DP2SETSTREAMSOURCE2, *LPD3DHAL_DP2SETSTREAMSOURCE2
+ms.keywords : LPD3DHAL_DP2SETSTREAMSOURCE2, d3dstrct_81c5d4ff-bd3e-4f52-a062-c30755da9416.xml, _D3DHAL_DP2SETSTREAMSOURCE2, display.d3dhal_dp2setstreamsource2, D3DHAL_DP2SETSTREAMSOURCE2, LPD3DHAL_DP2SETSTREAMSOURCE2 structure pointer [Display Devices], d3dhal/D3DHAL_DP2SETSTREAMSOURCE2, D3DHAL_DP2SETSTREAMSOURCE2 structure [Display Devices], d3dhal/LPD3DHAL_DP2SETSTREAMSOURCE2, *LPD3DHAL_DP2SETSTREAMSOURCE2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETSTREAMSOURCE2
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETSTREAMSOURCE2
 ---
 
@@ -52,22 +56,22 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCE2 {
 
 ## Members
 
-        
-            `dwOffset`
 
-            Specifies the offset of the first vertex size in bytes.
-        
-            `dwStream`
+`dwOffset`
 
-            Specifies the stream being bound. It has a value between zero and the maximum number of streams specified by the driver.
-        
-            `dwStride`
+Specifies the offset of the first vertex size in bytes.
 
-            Specifies the vertex size in bytes.
-        
-            `dwVBHandle`
+`dwStream`
 
-            Specifies the vertex buffer handle. It is legal for the vertex buffer handle to be zero, in which case the stream is no longer bound to a vertex buffer.
+Specifies the stream being bound. It has a value between zero and the maximum number of streams specified by the driver.
+
+`dwStride`
+
+Specifies the vertex size in bytes.
+
+`dwVBHandle`
+
+Specifies the vertex buffer handle. It is legal for the vertex buffer handle to be zero, in which case the stream is no longer bound to a vertex buffer.
 
 
 ## Requirements
@@ -78,14 +82,12 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCE2 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_SETSTREAMSOURCE2</dt>
-<dt>
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-</dl>
+
+D3DDP2OP_SETSTREAMSOURCE2
+
  
 
  

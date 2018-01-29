@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0d813870-10bd-4b41-9f36-1cb45c462697
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _QUERY_INTERFACE, QUERY_INTERFACE, *PQUERY_INTERFACE
+ms.keywords : video/PQUERY_INTERFACE, *PQUERY_INTERFACE, PQUERY_INTERFACE structure pointer [Display Devices], video/QUERY_INTERFACE, _QUERY_INTERFACE, QUERY_INTERFACE, QUERY_INTERFACE structure [Display Devices], Video_Structs_facaef96-c0d9-4695-8541-65e5e430f182.xml, PQUERY_INTERFACE, display.query_interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : QUERY_INTERFACE
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : QUERY_INTERFACE, *PQUERY_INTERFACE
 req.product : Windows 10 or later.
 ---
@@ -51,33 +55,37 @@ typedef struct _QUERY_INTERFACE {
 
 ## Members
 
-        
-            `Interface`
 
-            Pointer to an <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure in which the miniport driver returns the requested interface information. The querying driver is responsible for allocating this structure before calling <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>.
-        
-            `InterfaceSpecificData`
+`DeviceUid`
 
-            Specifies additional information about the interface being requested. Typically, this member is <b>NULL</b>, and the <b>InterfaceType</b> and <b>Version</b> members are sufficient for the parent to identify the interface being requested.
-        
-            `InterfaceType`
 
-            Pointer to a GUID that identifies the interface being requested. If the miniport driver does not support the specified <b>InterfaceType</b>, it should fail the call and return immediately.
+
+`Interface`
+
+Pointer to an <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure in which the miniport driver returns the requested interface information. The querying driver is responsible for allocating this structure before calling <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>.
+
+`InterfaceSpecificData`
+
+Specifies additional information about the interface being requested. Typically, this member is <b>NULL</b>, and the <b>InterfaceType</b> and <b>Version</b> members are sufficient for the parent to identify the interface being requested.
+
+`InterfaceType`
+
+Pointer to a GUID that identifies the interface being requested. If the miniport driver does not support the specified <b>InterfaceType</b>, it should fail the call and return immediately.
 
 The parent generates this GUID with <i>uuidgen.exe</i>. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff542998">Defining and Exporting New GUIDs</a> for details.
-        
-            `Size`
 
-            Specifies the size in bytes of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure to which <b>Interface</b> points. The miniport driver must not return an INTERFACE structure larger than <b>Size</b> bytes.
-        
-            `Version`
+`Size`
 
-            Specifies the version of the interface being requested.
+Specifies the size in bytes of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure to which <b>Interface</b> points. The miniport driver must not return an INTERFACE structure larger than <b>Size</b> bytes.
+
+`Version`
+
+Specifies the version of the interface being requested.
 
 If a parent supports more than one version of an interface, its driver should return the specified version or, if possible, the closest supported version without exceeding the requested version. It is the querying driver's responsibility to examine the returned <b>Version</b> and determine what to do based on that value.
 
-    ## Remarks
-        The <i>QueryInterface</i> parameter of the video miniport driver's <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a> function is a pointer to a QUERY_INTERFACE structure.
+## Remarks
+The <i>QueryInterface</i> parameter of the video miniport driver's <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a> function is a pointer to a QUERY_INTERFACE structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,13 +95,10 @@ If a parent supports more than one version of an interface, its driver should re
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>
-</dt>
-</dl>
+
  
 
  

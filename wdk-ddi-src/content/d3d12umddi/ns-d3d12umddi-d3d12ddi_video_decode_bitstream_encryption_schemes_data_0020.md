@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A028463A-5914-4522-8683-F0A692CF09A3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020, D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020
+ms.keywords : d3d12umddi/D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020, D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020 structure [Display Devices], D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020, display.d3d12ddi_video_decode_bitstream_encryption_schemes_data_0010
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020
 ---
 
@@ -49,22 +53,22 @@ typedef struct D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020 {
 
 ## Members
 
-        
-            `DecodeProfile`
 
-            The decode profile to retrieve bitstream encryption schemes for.
-        
-            `EncryptionSchemeCount`
+`DecodeProfile`
 
-            The number of schemes to retrieve.  The runtime ensures this value matches the value returned from PFND3D12DDI_VIDEO_GETCAPS with D3D12DDI_CAPSTYPE_VIDEO set to D3D12DDICAPS_TYPE_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT.
-        
-            `NodeIndex`
+The decode profile to retrieve bitstream encryption schemes for.
 
-            In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
-        
-            `pEncryptionSchemes`
+`EncryptionSchemeCount`
 
-            A pointer to a list of supported encryption schemes.  The calling application allocates storage for the list before it calls the <a href="https://msdn.microsoft.com/2E986E37-30C7-45FE-BC8B-A6DD5670938F">CheckFeatureSupport</a> method.
+The number of schemes to retrieve.  The runtime ensures this value matches the value returned from PFND3D12DDI_VIDEO_GETCAPS with D3D12DDI_CAPSTYPE_VIDEO set to D3D12DDICAPS_TYPE_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT.
+
+`NodeIndex`
+
+In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
+
+`pEncryptionSchemes`
+
+A pointer to a list of supported encryption schemes.  The calling application allocates storage for the list before it calls the <a href="https://msdn.microsoft.com/2E986E37-30C7-45FE-BC8B-A6DD5670938F">CheckFeatureSupport</a> method.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/2E986E37-30C7-45FE-BC8B-A6DD5670938F">CheckFeatureSupport</a>
-</dt>
-<dt>
 <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_video_get_bitstream_encryption_scheme_count_0020.md">pfnGetBitstreamEncryptionSchemeCount</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/2E986E37-30C7-45FE-BC8B-A6DD5670938F">CheckFeatureSupport</a>
+
  
 
  

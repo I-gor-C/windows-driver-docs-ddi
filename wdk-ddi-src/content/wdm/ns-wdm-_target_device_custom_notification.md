@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fa6530a4-13b7-472b-a571-682323edc64e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _TARGET_DEVICE_CUSTOM_NOTIFICATION, TARGET_DEVICE_CUSTOM_NOTIFICATION, *PTARGET_DEVICE_CUSTOM_NOTIFICATION
+ms.keywords : _TARGET_DEVICE_CUSTOM_NOTIFICATION, PTARGET_DEVICE_CUSTOM_NOTIFICATION structure pointer [Kernel-Mode Driver Architecture], TARGET_DEVICE_CUSTOM_NOTIFICATION structure [Kernel-Mode Driver Architecture], TARGET_DEVICE_CUSTOM_NOTIFICATION, wdm/PTARGET_DEVICE_CUSTOM_NOTIFICATION, PTARGET_DEVICE_CUSTOM_NOTIFICATION, kstruct_d_b83ddfbd-9448-4a91-8a64-ab060ba7614f.xml, *PTARGET_DEVICE_CUSTOM_NOTIFICATION, wdm/TARGET_DEVICE_CUSTOM_NOTIFICATION, kernel.target_device_custom_notification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TARGET_DEVICE_CUSTOM_NOTIFICATION
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TARGET_DEVICE_CUSTOM_NOTIFICATION, *PTARGET_DEVICE_CUSTOM_NOTIFICATION
 req.product : Windows 10 or later.
 ---
@@ -52,33 +56,33 @@ typedef struct _TARGET_DEVICE_CUSTOM_NOTIFICATION {
 
 ## Members
 
-        
-            `CustomDataBuffer`
 
-            A variable-length buffer, optionally containing binary data at the start of the buffer, followed by an optional text buffer (word-aligned).
-        
-            `Event`
+`CustomDataBuffer`
 
-            Specifies a GUID identifying the event. GUIDs for custom event notification are defined by the components that use this mechanism.
-        
-            `FileObject`
+A variable-length buffer, optionally containing binary data at the start of the buffer, followed by an optional text buffer (word-aligned).
 
-            Pointer to a file object for the device.
-        
-            `NameBufferOffset`
+`Event`
 
-            Specifies the offset, in bytes, from beginning of <b>CustomDataBuffer</b> where text begins. A value of -1 indicates that there is no text.
-        
-            `Size`
+Specifies a GUID identifying the event. GUIDs for custom event notification are defined by the components that use this mechanism.
 
-            Specifies the size of the structure, in bytes, including the first three standard members plus the event-specific data.
-        
-            `Version`
+`FileObject`
 
-            Specifies the version of the data structure, currently 1.
+Pointer to a file object for the device.
 
-    ## Remarks
-        Kernel-mode components use this structure for custom event notification:  to signal a custom event (<b>IoReportTargetDeviceChange</b>[<b>Asynchronous</b>]) and when handling a custom event (in a notification callback routine).
+`NameBufferOffset`
+
+Specifies the offset, in bytes, from beginning of <b>CustomDataBuffer</b> where text begins. A value of -1 indicates that there is no text.
+
+`Size`
+
+Specifies the size of the structure, in bytes, including the first three standard members plus the event-specific data.
+
+`Version`
+
+Specifies the version of the data structure, currently 1.
+
+## Remarks
+Kernel-mode components use this structure for custom event notification:  to signal a custom event (<b>IoReportTargetDeviceChange</b>[<b>Asynchronous</b>]) and when handling a custom event (in a notification callback routine).
 
 This structure accommodates both a variable-length binary data buffer and a variable-length Unicode text buffer. The <i>NameBufferOffset</i> must indicate where the text buffer begins, so the data can be delivered in the appropriate format (ANSI or Unicode) to user-mode applications that registered for handle-based notification with <b>RegisterDeviceNotification</b>. See the Microsoft Windows SDK documentation for information about <b>RegisterDeviceNotification</b>.
 
@@ -90,19 +94,14 @@ This structure accommodates both a variable-length binary data buffer and a vari
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioreporttargetdevicechange.md">IoReportTargetDeviceChange</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-ioreporttargetdevicechangeasynchronous.md">IoReportTargetDeviceChangeAsynchronous</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
+
  
 
  

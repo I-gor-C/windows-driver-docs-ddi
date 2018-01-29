@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1645c7e9-5ae7-41d1-92db-1f069f79ac81
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcPreparePinWrite
+ms.keywords : ccref_00b887b5-cd87-44be-b96e-6be96df13a2b.xml, ifsk.ccpreparepinwrite, ntifs/CcPreparePinWrite, CcPreparePinWrite, CcPreparePinWrite routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcPreparePinWrite
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -73,7 +77,6 @@ Set to <b>TRUE</b> if the buffer is to be zeroed on return. This parameter is ig
 `Flags`
 
 Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: 
-
 <table>
 <tr>
 <th>Value</th>
@@ -178,29 +181,20 @@ If any failure occurs, <b>CcPreparePinWrite</b> raises a status exception for th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
+
+<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
+
 <a href="..\ntifs\nf-ntifs-ccsetdirtypinneddata.md">CcSetDirtyPinnedData</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
+
 <a href="..\ntifs\nf-ntifs-mmsetaddressrangemodified.md">MmSetAddressRangeModified</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : fe5b9b54-b1b6-48e2-b464-f0f3e9845917
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_get_more_parallel_port_info, IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO control code [Parallel Ports], IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO, parallel/IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO, cisspd_3f4efeec-5579-44c6-8438-bdb4b4983194.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,14 +65,9 @@ The size of a MORE_PARALLEL_PORT_INFORMATION structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request succeeds, the <b>Information</b> member is set to the size, in bytes, of the MORE_PARALLEL_PORT_INFORMATION structure. Otherwise; the <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to the following value:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is less than the size, in bytes, of a MORE_PARALLEL_PORT_INFORMATION structure.
 
 
 ## Requirements
@@ -78,19 +77,14 @@ The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is 
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
-</dt>
-<dt>
 <a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+
  
 
  

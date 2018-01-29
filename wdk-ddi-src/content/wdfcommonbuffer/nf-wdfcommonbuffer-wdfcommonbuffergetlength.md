@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7ffb818d-7c58-4c84-997b-1703f480aaf0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCommonBufferGetLength
+ms.keywords : wdf.wdfcommonbuffergetlength, kmdf.wdfcommonbuffergetlength, WdfCommonBufferGetLength method, DFCommonBufferObjectRef_cf0ad31e-c159-4cac-846c-52bb280b3d52.xml, wdfcommonbuffer/WdfCommonBufferGetLength, PFN_WDFCOMMONBUFFERGETLENGTH, WdfCommonBufferGetLength
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfCommonBufferGetLength
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -66,9 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about common buffers, see <a href="https://msdn.microsoft.com/81a56f62-917e-4798-b2cc-6469c802fab8">Using Common Buffers</a>
 
-
-The following code example obtains the length of a specified common buffer.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -83,11 +84,8 @@ The following code example obtains the length of a specified common buffer.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>
-</dt>
-</dl>
+
  
 
  

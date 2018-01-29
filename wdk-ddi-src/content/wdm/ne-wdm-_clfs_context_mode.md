@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 35f2b42d-d67f-4fd4-adde-918a2587980b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE
+ms.keywords : wdm/ClfsContextNone, wdm/PPCLFS_CONTEXT_MODE, wdm/ClfsContextUndoNext, sysenum_b51a934c-9174-4607-8da9-22c7ecf56730.xml, PPCLFS_CONTEXT_MODE, ClfsContextUndoNext, CLFS_CONTEXT_MODE enumeration [Kernel-Mode Driver Architecture], PCLFS_CONTEXT_MODE, ClfsContextNone, wdm/ClfsContextForward, wdm/CLFS_CONTEXT_MODE, ClfsContextForward, *PCLFS_CONTEXT_MODE, ClfsContextPrevious, PPCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], wdm/PCLFS_CONTEXT_MODE, wdm/ClfsContextPrevious, _CLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE, kernel.clfs_context_mode, PCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CLFS_CONTEXT_MODE
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PPCLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE
 req.product : Windows 10 or later.
 ---
 
@@ -84,20 +88,14 @@ typedef enum _CLFS_CONTEXT_MODE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
+
+<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
+
+<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
+
  
 
  

@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _SDP_NODE, SDP_NODE, *PSDP_NODE
+ms.keywords : bth_structs_30367149-bffb-4ff9-a6d8-2f73c5198874.xml, PSDP_NODE structure pointer [Bluetooth Devices], *PSDP_NODE, sdpnode/PSDP_NODE, SDP_NODE, SDP_NODE structure [Bluetooth Devices], sdpnode/SDP_NODE, _SDP_NODE, bltooth.sdp_node, PSDP_NODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : sdpnode.h
 req.include-header : Sdpnode.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SDP_NODE
-req.alt-loc : sdpnode.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SDP_NODE, *PSDP_NODE
 req.product : Windows 10 or later.
 ---
@@ -51,29 +55,29 @@ typedef struct _SDP_NODE {
 
 ## Members
 
-        
-            `DataSize`
 
-            The size, in bytes, of the 
+`DataSize`
+
+The size, in bytes, of the 
      <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a> union held in the 
      <b>u</b> member.
-        
-            `hdr`
 
-            An 
+`hdr`
+
+An 
      <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a> structure that contains
      links to peer SDP_NODE structures and the data type of the current node.
-        
-            `Reserved`
 
-            Reserved for future use. Do not use.
-        
-            `u`
+`Reserved`
 
-            An SDP_NODE_DATA union that contains the data associated with the SDP record's node.
+Reserved for future use. Do not use.
 
-    ## Remarks
-        Each SDP_NODE structure in the tree representation of an SDP record contains a SDP_NODE_HEADER
+`u`
+
+An SDP_NODE_DATA union that contains the data associated with the SDP record's node.
+
+## Remarks
+Each SDP_NODE structure in the tree representation of an SDP record contains a SDP_NODE_HEADER
     structure and an SDP_NODE_DATA union.
 
 The header specifies the type of data. Driver developers can access links to peer SDP_NODE structures
@@ -95,19 +99,14 @@ The header specifies the type of data. Driver developers can access links to pee
 | **Minimum UMDF version** |  |
 | **Header** | sdpnode.h (include Sdpnode.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
-</dt>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
-</dt>
-</dl>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
+
  
 
  

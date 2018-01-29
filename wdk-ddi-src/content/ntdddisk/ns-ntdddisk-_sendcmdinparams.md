@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4c02da7e-2d93-4e0c-9666-acb380c6d39a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SENDCMDINPARAMS, *LPSENDCMDINPARAMS, *PSENDCMDINPARAMS, SENDCMDINPARAMS
+ms.keywords : ntdddisk/PSENDCMDINPARAMS, ntdddisk/LPSENDCMDINPARAMS, SENDCMDINPARAMS, LPSENDCMDINPARAMS, _SENDCMDINPARAMS, *LPSENDCMDINPARAMS, storage.sendcmdinparams, PSENDCMDINPARAMS, *PSENDCMDINPARAMS, LPSENDCMDINPARAMS structure pointer [Storage Devices], ntdddisk/SENDCMDINPARAMS, SENDCMDINPARAMS structure [Storage Devices], PSENDCMDINPARAMS structure pointer [Storage Devices], structs-IDE_b80faf9d-dfcf-4eac-b0be-fb18964c4c2b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SENDCMDINPARAMS
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPSENDCMDINPARAMS, *PSENDCMDINPARAMS, SENDCMDINPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSENDCMDINPARAMS, *LPSENDCMDINPARAMS, SENDCMDINPARAMS"
 ---
 
 # _SENDCMDINPARAMS structure
@@ -51,33 +55,33 @@ typedef struct _SENDCMDINPARAMS {
 
 ## Members
 
-        
-            `bBuffer`
 
-            Pointer to the input buffer.
-        
-            `bDriveNumber`
+`bBuffer`
 
-            The <b>bDriveNumber</b> member is opaque. Do not use it. The operating system ignores this member, because the physical drive that receives the request depends on the handle that the caller uses when making the request.
-        
-            `bReserved`
+Pointer to the input buffer.
 
-            Reserved.
-        
-            `cBufferSize`
+`bDriveNumber`
 
-            Contains the buffer size, in bytes.
-        
-            `dwReserved`
+The <b>bDriveNumber</b> member is opaque. Do not use it. The operating system ignores this member, because the physical drive that receives the request depends on the handle that the caller uses when making the request.
 
-            Reserved.
-        
-            `irDriveRegs`
+`bReserved`
 
-            Contains a <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a> structure used to report the contents of the IDE controller registers.
+Reserved.
 
-    ## Remarks
-        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a> is used to send a Self-Monitoring Analysis and Reporting Technology (SMART) commands to a device. 
+`cBufferSize`
+
+Contains the buffer size, in bytes.
+
+`dwReserved`
+
+Reserved.
+
+`irDriveRegs`
+
+Contains a <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a> structure used to report the contents of the IDE controller registers.
+
+## Remarks
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a> is used to send a Self-Monitoring Analysis and Reporting Technology (SMART) commands to a device. 
 
 The SENDCMDINPARAMS structure is also used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a> request.
 
@@ -89,19 +93,14 @@ The SENDCMDINPARAMS structure is also used with the <a href="https://msdn.micros
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
+
 <a href="..\ntdddisk\ns-ntdddisk-_sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
-</dt>
-</dl>
+
  
 
  

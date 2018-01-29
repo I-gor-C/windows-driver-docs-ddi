@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c3e209b5-9925-4911-8c42-0f15c1c710be
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlFastLock
+ms.keywords : FsRtlFastLock, ifsk.fsrtlfastlock, FsRtlFastLock function [Installable File System Drivers], fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ntifs/FsRtlFastLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlFastLock
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -60,47 +64,47 @@ BOOLEAN FsRtlFastLock(
 
 `A1`
 
-
+TBD
 
 `A2`
 
-
+TBD
 
 `A3`
 
-
+TBD
 
 `A4`
 
-
+TBD
 
 `A5`
 
-
+TBD
 
 `A6`
 
-
+TBD
 
 `A7`
 
-
+TBD
 
 `A8`
 
-
+TBD
 
 `A9`
 
-
+TBD
 
 `A10`
 
-
+TBD
 
 `A11`
 
-
+TBD
 
 
 ## Return Value
@@ -127,14 +131,10 @@ A return value of <b>TRUE</b> indicates that the IO_STATUS_BLOCK structure point
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md">FsRtlInitializeFileLock</a>
-</dt>
-</dl>
+
  
 
  

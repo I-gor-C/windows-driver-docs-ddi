@@ -7,8 +7,8 @@ old-location : netvista\rilopenuicclogicalchannelparammask_2.htm
 old-project : netvista
 ms.assetid : abce79d2-1eca-4d62-af4f-434596bfb718
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILOPENUICCLOGICALCHANNELPARAMMASK, RILOPENUICCLOGICALCHANNELPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILOPENUICCLOGICALCHANNELPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILOPENUICCLOGICALCHANNELPARAMMASK, rilapitypes/RILOPENUICCLOGICALCHANNELPARAMMASK, RIL_PARAM_OULC_ALL, RIL_PARAM_OULC_SELECTRESPONSE, rilapitypes/RIL_PARAM_OULC_ALL, RIL_PARAM_OULC_SELECTRESPLENGTH, rilapitypes/RIL_PARAM_OULC_SELECTRESPLENGTH, netvista.rilopenuicclogicalchannelparammask_2, rilapitypes/RIL_PARAM_OULC_SELECTRESPONSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILOPENUICCLOGICALCHANNELPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILOPENUICCLOGICALCHANNELPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -53,6 +57,11 @@ typedef enum _RILOPENUICCLOGICALCHANNELPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_OULC_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_OULC_CHANNELID</td>
 <td></td>
 </tr>
 

@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : 3c98fe7b-e60a-4494-b1f0-847a7cbe9d3a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD
+ms.keywords : PCMCIA_INTERFACE_STANDARD, _PCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD structure [Buses], memcdref_768387a3-0148-4f5e-972a-983b7827a634.xml, ntddpcm/PPCMCIA_INTERFACE_STANDARD, PCMCIA.pcmcia_interface_standard, PPCMCIA_INTERFACE_STANDARD structure pointer [Buses], PPCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD, ntddpcm/PCMCIA_INTERFACE_STANDARD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCMCIA_INTERFACE_STANDARD
-req.alt-loc : ntddpcm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD"
 ---
 
@@ -53,38 +57,38 @@ typedef struct _PCMCIA_INTERFACE_STANDARD {
 
 ## Members
 
-        
-            `Context`
 
-            Pointer to an opaque handle that contains interface context information. Drivers that call routines that belong to the <b>PCMCIA_INTERFACE_STANDARD</b> interface must pass this value to the interface routines when they call them.
-        
-            `InterfaceDereference`
+`Context`
 
-            Pointer to the <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a> implementation.
-        
-            `InterfaceReference`
+Pointer to an opaque handle that contains interface context information. Drivers that call routines that belong to the <b>PCMCIA_INTERFACE_STANDARD</b> interface must pass this value to the interface routines when they call them.
 
-            Pointer to the <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a> implementation.
-        
-            `IsWriteProtected`
+`InterfaceDereference`
 
-            Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a> interface routine.
-        
-            `ModifyMemoryWindow`
+Pointer to the <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a> implementation.
 
-            Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a> interface routine.
-        
-            `SetVpp`
+`InterfaceReference`
 
-            Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a> interface routine.
-        
-            `Size`
+Pointer to the <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a> implementation.
 
-            Indicates the size of the returned interface.
-        
-            `Version`
+`IsWriteProtected`
 
-            Indicates the version of the returned interface.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a> interface routine.
+
+`ModifyMemoryWindow`
+
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a> interface routine.
+
+`SetVpp`
+
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a> interface routine.
+
+`Size`
+
+Indicates the size of the returned interface.
+
+`Version`
+
+Indicates the version of the returned interface.
 
 
 ## Requirements
@@ -95,19 +99,14 @@ typedef struct _PCMCIA_INTERFACE_STANDARD {
 | **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
+
  
 
  

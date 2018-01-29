@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e7be1bb8-eb8a-4ebd-b824-bbaa41b21ca5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAddDevice
+ms.keywords : KsAddDevice function [Streaming Media Devices], stream.ksadddevice, avfunc_8d3f4443-fa48-4484-a2b3-2f3b70cc2ce5.xml, KsAddDevice, ks/KsAddDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAddDevice
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -84,29 +88,20 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksdispatchirp.md">KsDispatchIrp</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
+
+<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
+
+<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+
+<a href="..\ks\nf-ks-ksdispatchirp.md">KsDispatchIrp</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 72D0BEC2-F5D5-4045-AD63-F263993817B0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_DEVICE_ACCEPTANCE_TYPE, *PPEP_DEVICE_ACCEPTANCE_TYPE, PEP_DEVICE_ACCEPTANCE_TYPE
+ms.keywords : pepfx/PEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PepDeviceNotAccepted, PepDeviceAcceptedReserved, *PPEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PepDeviceAcceptedReserved, PEP_DEVICE_ACCEPTANCE_TYPE enumeration [Kernel-Mode Driver Architecture], _PEP_DEVICE_ACCEPTANCE_TYPE, kernel.pep_device_acceptance_type, PepDeviceAcceptedMax, pepfx/PepDeviceAcceptedMax, pepfx/PepDeviceAccepted, PEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceAccepted, PepDeviceNotAccepted
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_DEVICE_ACCEPTANCE_TYPE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_DEVICE_ACCEPTANCE_TYPE, PEP_DEVICE_ACCEPTANCE_TYPE"
 ---
 
@@ -57,6 +61,11 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
 </tr>
 
 <tr>
+<td>PepDeviceAceptedMax</td>
+<td></td>
+</tr>
+
+<tr>
 <td>PepDeviceNotAccepted</td>
 <td>The PEP does not claim ownership of this device.</td>
 </tr>
@@ -76,11 +85,8 @@ This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepf
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a>
-</dt>
-</dl>
+
  
 
  

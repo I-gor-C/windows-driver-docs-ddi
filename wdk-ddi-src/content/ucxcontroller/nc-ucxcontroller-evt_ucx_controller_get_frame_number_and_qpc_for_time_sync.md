@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : A8D666BD-5C2A-416F-901E-5FF7CF38A084
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxInitializeDeviceInit
+ms.keywords : buses.evt_ucx_controller_get_frame_number_and_qpc_for_time_sync, EvtUcxControllerGetFrameNumberAndQpcForTimeSync callback function [Buses], EvtUcxControllerGetFrameNumberAndQpcForTimeSync, EVT_UCX_CONTROLLER_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC, EVT_UCX_CONTROLLER_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC, ucxcontroller/EvtUcxControllerGetFrameNumberAndQpcForTimeSync
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : EvtUcxControllerGetFrameNumberAndQpcForTimeSync
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
@@ -93,11 +97,8 @@ This callback function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_frame_number_and_qpc_for_time_sync.md">IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC</a>
-</dt>
-</dl>
+
  
 
  

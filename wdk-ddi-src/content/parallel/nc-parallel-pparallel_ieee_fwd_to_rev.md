@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : cb7e01e3-7aff-436c-af82-bc7716d2fe1f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.pparallel_ieee_fwd_to_rev, PPARALLEL_IEEE_FWD_TO_REV function pointer [Parallel Ports], PPARALLEL_IEEE_FWD_TO_REV, parallel/PPARALLEL_IEEE_FWD_TO_REV, cisspd_a22a220b-a633-48b8-9e53-434f362d15f0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PPARALLEL_IEEE_FWD_TO_REV
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -53,17 +57,39 @@ NTSTATUS PparallelIeeeFwdToRev(
 
 `Context`
 
-Pointer to a device extension of a parallel device's physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>).
+Pointer to a device extension of a parallel device's physical device object (<a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">PDO</a>).
 
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The transfer mode was changed from forward to reverse.
+</dl>
+</td>
+<td width="60%">
+The transfer mode was changed from forward to reverse.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_<i>Xxx</i></b></dt>
-</dl>An internal operation resulted in an NTSTATUS error.
+</dl>
+</td>
+<td width="60%">
+An internal operation resulted in an NTSTATUS error.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -87,29 +113,20 @@ The PPARALLEL_IEEE_FWD_TO_REV callback runs in the caller's thread at the caller
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
-</dt>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
-</dt>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_par_get_default_modes.md">IOCTL_PAR_GET_DEFAULT_MODES</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pdetermine_ieee_modes.md">PDETERMINE_IEEE_MODES</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pnegotiate_ieee_mode.md">PNEGOTIATE_IEEE_MODE</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a>
-</dt>
-<dt>
 <a href="..\parallel\nc-parallel-pterminate_ieee_mode.md">PTERMINATE_IEEE_MODE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_par_get_default_modes.md">IOCTL_PAR_GET_DEFAULT_MODES</a>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
+
+<a href="..\parallel\nc-parallel-pnegotiate_ieee_mode.md">PNEGOTIATE_IEEE_MODE</a>
+
+<a href="..\parallel\nc-parallel-pdetermine_ieee_modes.md">PDETERMINE_IEEE_MODES</a>
+
  
 
  

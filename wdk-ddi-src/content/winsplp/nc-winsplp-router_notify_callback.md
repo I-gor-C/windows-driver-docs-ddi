@@ -7,8 +7,8 @@ old-location : print\router_notify_callback.htm
 old-project : print
 ms.assetid : 97D8FEEA-B6D7-4AD7-A067-B503AF8F23FF
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _SCARD_IO_REQUEST, SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, *PSCARD_IO_REQUEST
+ms.date : 1/18/2018
+ms.keywords : print.router_notify_callback, ROUTER_NOTIFY_CALLBACK callback function [Print Devices], ROUTER_NOTIFY_CALLBACK, ROUTER_NOTIFY_CALLBACK, ROUTER_NOTIFY_CALLBACK, winsplp/ROUTER_NOTIFY_CALLBACK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ROUTER_NOTIFY_CALLBACK
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, *PSCARD_IO_REQUEST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPSCARD_IO_REQUEST, SCARD_IO_REQUEST, *PSCARD_IO_REQUEST"
 req.product : Windows 10 or later.
 ---
 

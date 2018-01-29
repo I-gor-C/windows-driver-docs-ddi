@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c754f540-19ff-491f-89ec-63d3306c4068
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_DeinterlaceQueryAvailableModes, DXVA_DeinterlaceQueryAvailableModes
+ms.keywords : DXVA_DeinterlaceQueryAvailableModes, DXVA_DeinterlaceQueryAvailableModes structure [Display Devices], _DXVA_DeinterlaceQueryAvailableModes, display.dxva_deinterlacequeryavailablemodes, dxvaref_9c2ffe96-e286-4f0f-bb6b-57bc6ee64b2c.xml, dxva/DXVA_DeinterlaceQueryAvailableModes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_DeinterlaceQueryAvailableModes
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_DeinterlaceQueryAvailableModes
 ---
 
@@ -48,23 +52,23 @@ typedef struct _DXVA_DeinterlaceQueryAvailableModes {
 
 ## Members
 
-        
-            `Guids`
 
-            An array of GUIDs that are returned for the available deinterlace modes.
-        
-            `NumGuids`
+`Guids`
 
-            Indicates the number of GUIDs that are returned in the <b>Guids</b> member for the available modes.
-        
-            `Size`
+An array of GUIDs that are returned for the available deinterlace modes.
 
-            Indicates the size of this structure.
+`NumGuids`
 
-    ## Remarks
-        The driver receives the DXVA_DeinterlaceQueryAvailableModes structure with the <b>Size</b> member assigned, assigns values to the remaining members, and returns DXVA_DeinterlaceQueryAvailableModes to the renderer.
+Indicates the number of GUIDs that are returned in the <b>Guids</b> member for the available modes.
 
-There is a GUID for each deinterlace and frame conversion mode returned by the driver. The GUIDs should be returned in order of descending quality (that is, the highest quality mode should occupy the first element of the GUID array returned). </p>
+`Size`
+
+Indicates the size of this structure.
+
+## Remarks
+The driver receives the DXVA_DeinterlaceQueryAvailableModes structure with the <b>Size</b> member assigned, assigns values to the remaining members, and returns DXVA_DeinterlaceQueryAvailableModes to the renderer.
+
+There is a GUID for each deinterlace and frame conversion mode returned by the driver. The GUIDs should be returned in order of descending quality (that is, the highest quality mode should occupy the first element of the GUID array returned).
 
 ## Requirements
 | &nbsp; | &nbsp; |

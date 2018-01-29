@@ -7,8 +7,8 @@ old-location : netvista\rilhideidsettingsparammask.htm
 old-project : netvista
 ms.assetid : 3ac34302-f56f-424d-b627-f977c4aabfba
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILHIDEIDSETTINGSPARAMMASK, RILHIDEIDSETTINGSPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_HIDS_STATUS, RILHIDEIDSETTINGSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_HIDS_PROVISIONING, ntddrilapitypes/RIL_PARAM_HIDS_ALL, RIL_PARAM_HIDS_PROVISIONING, netvista.rilhideidsettingsparammask, ntddrilapitypes/RIL_PARAM_HIDS_STATUS, ntddrilapitypes/RILHIDEIDSETTINGSPARAMMASK, RILHIDEIDSETTINGSPARAMMASK, RIL_PARAM_HIDS_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILHIDEIDSETTINGSPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILHIDEIDSETTINGSPARAMMASK
 ---
 
@@ -52,6 +56,11 @@ typedef enum _RILHIDEIDSETTINGSPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_HIDS_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_HIDS_EXECUTOR</td>
 <td></td>
 </tr>
 

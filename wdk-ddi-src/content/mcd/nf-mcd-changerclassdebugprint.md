@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 452377f1-a926-4f43-8168-bea11622902e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerClassDebugPrint
+ms.keywords : ChangerClassDebugPrint, mcd/ChangerClassDebugPrint, chgrclas_3372885c-482b-4dab-87ae-e59668e91950.xml, ChangerClassDebugPrint function [Storage Devices], storage.changerclassdebugprint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerClassDebugPrint
-req.alt-loc : Mcd.lib,Mcd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mcd.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 

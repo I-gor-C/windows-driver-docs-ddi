@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmateleservice.htm
 old-project : netvista
 ms.assetid : 01c45c31-2cae-4f9f-a3dc-4a164a3df670
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMATELESERVICE, RILMSGCDMATELESERVICE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_MSGTELESERVICE_SELFREG_OLD, ntddrilapitypes/RIL_MSGTELESERVICE_WAP_CT_OMA, netvista.rilmsgcdmateleservice, RIL_MSGTELESERVICE_WAP_OLD, RILMSGCDMATELESERVICE, ntddrilapitypes/RIL_MSGTELESERVICE_SELFREG, RIL_MSGTELESERVICE_SELFREG_OLD, RIL_MSGTELESERVICE_BROADCAST_OLD, ntddrilapitypes/RIL_MSGTELESERVICE_PAGING, ntddrilapitypes/RILMSGCDMATELESERVICE, RIL_MSGTELESERVICE_WAP_CT_OMA, ntddrilapitypes/RIL_MSGTELESERVICE_WAP, RILMSGCDMATELESERVICE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_MSGTELESERVICE_WEMT, RIL_MSGTELESERVICE_PAGING, RIL_MSGTELESERVICE_WAP, RIL_MSGTELESERVICE_VOICEMAIL_MWI, ntddrilapitypes/RIL_MSGTELESERVICE_MESSAGING_OLD, ntddrilapitypes/RIL_MSGTELESERVICE_VOICEMAIL_OLD, RIL_MSGTELESERVICE_MESSAGING, RIL_MSGTELESERVICE_WAP_CT_MMS, RIL_MSGTELESERVICE_BROADCAST, RIL_MSGTELESERVICE_VOICEMAIL_VMN_95, ntddrilapitypes/RIL_MSGTELESERVICE_BROADCAST, RIL_MSGTELESERVICE_MESSAGING_OLD, ntddrilapitypes/RIL_MSGTELESERVICE_WAP_CT_MMS, ntddrilapitypes/RIL_MSGTELESERVICE_VOICEMAIL_MWI, RIL_MSGTELESERVICE_SELFREG, ntddrilapitypes/RIL_MSGTELESERVICE_BROADCAST_OLD, ntddrilapitypes/RIL_MSGTELESERVICE_VOICEMAIL_VMN_95, ntddrilapitypes/RIL_MSGTELESERVICE_MESSAGING, RIL_MSGTELESERVICE_WEMT, ntddrilapitypes/RIL_MSGTELESERVICE_WAP_OLD, RIL_MSGTELESERVICE_VOICEMAIL_OLD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMATELESERVICE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCDMATELESERVICE
 ---
 
@@ -84,6 +88,11 @@ typedef enum _RILMSGCDMATELESERVICE {
 
 <tr>
 <td>RIL_MSGTELESERVICE_PAGING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGTELESERVICE_PAGING_OLD</td>
 <td></td>
 </tr>
 

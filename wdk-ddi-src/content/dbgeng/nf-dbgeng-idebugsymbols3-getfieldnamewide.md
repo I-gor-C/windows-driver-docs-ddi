@@ -7,8 +7,8 @@ old-location : debugger\getfieldnamewide.htm
 old-project : debugger
 ms.assetid : e27c6af5-c9fa-4fe6-ad39-82ea59a0f27b
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSymbols3, IDebugSymbols3::GetFieldNameWide, GetFieldNameWide
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugSymbols3::GetFieldNameWide, GetFieldNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFieldNameWide, IDebugSymbols3 interface [Windows Debugging], GetFieldNameWide method, IDebugSymbols3, debugger.getfieldnamewide, GetFieldNameWide method [Windows Debugging], GetFieldNameWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSymbols3.GetFieldNameWide
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -81,16 +85,38 @@ Receives the size in characters of the field's name.  If <i>NameSize</i> is <b>N
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_FALSE</b></dt>
-</dl>The method was successful. However, <i>NameBuffer</i> was not large enough to hold the field's name and it was truncated.
+</dl>
+</td>
+<td width="60%">
+The method was successful. However, <i>NameBuffer</i> was not large enough to hold the field's name and it was truncated.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
-For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
+For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

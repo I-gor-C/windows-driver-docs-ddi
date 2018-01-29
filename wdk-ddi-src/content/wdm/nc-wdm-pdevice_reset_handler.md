@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A5AA5E73-3DC1-4977-9B64-9E0FB3E6609E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : ResetDevice routine [Kernel-Mode Driver Architecture], ResetDevice, PDEVICE_RESET_HANDLER, PDEVICE_RESET_HANDLER, wdm/ResetDevice, kernel.devicereset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ResetDevice
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -62,12 +66,10 @@ A pointer to interface-specific context information. The caller passes the value
 `ResetType`
 
 The type of reset being  requested. Set this parameter to one of the following <a href="..\wdm\ne-wdm-_device_reset_type.md">DEVICE_RESET_TYPE</a> enumeration values.
-
 <ul>
 <li><b>FunctionLevelDeviceReset</b>. Specify this value to request a function-level reset, which is restricted to a specific device.</li>
 <li><b>PlatformLevelDeviceReset</b>. Specify this value to request a platform-level reset, which affects a specific device and all other devices that are connected to it via the same power rail or reset line.</li>
-</ul>
-For more information about how function-level and platform-level resets are implemented in the device stack, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn928420">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>.
+</ul>For more information about how function-level and platform-level resets are implemented in the device stack, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn928420">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>.
 
 `Flags`
 
@@ -102,14 +104,10 @@ For more information about function-level and platform-level resets, see <a href
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn928420">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn928420">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 99120A01-4674-465A-BA75-58F1871BB820
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+ms.keywords : buses.evt_ufx_device_addressed, EvtUfxDeviceAddressed callback function [Buses], EvtUfxDeviceAddressed, EVT_UFX_DEVICE_ADDRESSED, EVT_UFX_DEVICE_ADDRESSED, ufxclient/EvtUfxDeviceAddressed, PFN_UFX_DEVICE_ADDRESSED callback function pointer [Buses], PFN_UFX_DEVICE_ADDRESSED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PFN_UFX_DEVICE_ADDRESSED
-req.alt-loc : Ufxclient.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -86,14 +90,10 @@ The client driver indicates completion of this event by calling the <a href="..\
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
-</dt>
-<dt>
+
 <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e5b6c24a-a3a5-4736-b9ee-ebb992070a83
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
+ms.keywords : display.d3dddiarg_checkmultiplaneoverlaysupport, d3dumddi/D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 
 ## Members
 
-        
-            `NumPlanes`
 
-            [out] The number of overlay planes that the hardware supports.
-        
-            `pPlanes`
+`NumPlanes`
 
-            [out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780232">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a> structure that specifies support attributes that the hardware provides for multiplane overlays.
-        
-            `Supported`
+[out] The number of overlay planes that the hardware supports.
 
-            [out] <b>TRUE</b> if the hardware supports multiplane overlays, otherwise <b>FALSE</b>.
-        
-            `VidPnSourceId`
+`pPlanes`
 
-            [in] The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.
+[out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780232">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a> structure that specifies support attributes that the hardware provides for multiplane overlays.
+
+`Supported`
+
+[out] <b>TRUE</b> if the hardware supports multiplane overlays, otherwise <b>FALSE</b>.
+
+`VidPnSourceId`
+
+[in] The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh780232">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/A439E695-D374-439A-8A69-6D4E247FF134">pfnCheckMultiPlaneOverlaySupport (D3D)</a>
-</dt>
-</dl>
+
  
 
  

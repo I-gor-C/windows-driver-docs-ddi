@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c5b34168-b3b8-4559-8b41-982f0a66f01d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFMemory, IWDFMemory::CopyToBuffer, CopyToBuffer
+ms.keywords : IWDFMemory interface, CopyToBuffer method, CopyToBuffer method, IWDFMemory interface, wudfddi/IWDFMemory::CopyToBuffer, IWDFMemory::CopyToBuffer, UMDFMemoryObjectRef_40ff2a7e-f93c-4f95-ba14-b7ade765ab2d.xml, umdf.iwdfmemory_copytobuffer, wdf.iwdfmemory_copytobuffer, CopyToBuffer method, IWDFMemory, CopyToBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFMemory.CopyToBuffer
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ The number of bytes to copy to the buffer that <i>pTargetBuffer</i> points to.
 
 <b>CopyToBuffer</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
-The following code example obtains a memory object from a request object and then copies a specific amount of data from the memory object to a buffer.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,11 +89,8 @@ The following code example obtains a memory object from a request object and the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-</dl>
+
  
 
  

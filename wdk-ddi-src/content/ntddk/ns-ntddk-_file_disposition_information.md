@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a13b5411-a0dd-4a54-98a8-419e2f0e95b8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION, *PFILE_DISPOSITION_INFORMATION
+ms.keywords : kernel.file_disposition_information, *PFILE_DISPOSITION_INFORMATION, PFILE_DISPOSITION_INFORMATION, _FILE_DISPOSITION_INFORMATION, ntddk/FILE_DISPOSITION_INFORMATION, ntddk/PFILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_DISPOSITION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_3796aa61-042a-435d-bfa9-c77c6a0dff98.xml, FILE_DISPOSITION_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_DISPOSITION_INFORMATION
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FILE_DISPOSITION_INFORMATION, *PFILE_DISPOSITION_INFORMATION
 ---
 
@@ -46,13 +50,13 @@ typedef struct _FILE_DISPOSITION_INFORMATION {
 
 ## Members
 
-        
-            `DeleteFile`
 
-            Indicates whether the operating system file should delete the file when the file is closed. Set this member to <b>TRUE</b> to delete the file when it is closed. Otherwise, set to <b>FALSE</b>. Setting this member to <b>FALSE</b> has no effect if the handle was opened with FILE_FLAG_DELETE_ON_CLOSE.
+`DeleteFile`
 
-    ## Remarks
-        The caller must have DELETE access to a given file in order to call <b>ZwSetInformationFile</b> with <b>DeleteFile</b> set to <b>TRUE</b> in this structure. Subsequently, the only legal operation by such a caller is to close the open file handle. 
+Indicates whether the operating system file should delete the file when the file is closed. Set this member to <b>TRUE</b> to delete the file when it is closed. Otherwise, set to <b>FALSE</b>. Setting this member to <b>FALSE</b> has no effect if the handle was opened with FILE_FLAG_DELETE_ON_CLOSE.
+
+## Remarks
+The caller must have DELETE access to a given file in order to call <b>ZwSetInformationFile</b> with <b>DeleteFile</b> set to <b>TRUE</b> in this structure. Subsequently, the only legal operation by such a caller is to close the open file handle. 
 
 A file marked for deletion is not actually deleted until all open handles for the file object have been closed and the link count for the file is zero.
 
@@ -64,16 +68,12 @@ A file marked for deletion is not actually deleted until all open handles for th
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
  
 
  

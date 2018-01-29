@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 98993973-91a4-456a-9343-c744408055ed
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_VALIDATE_INFO, *PCIP_VALIDATE_INFO, CIP_VALIDATE_INFO
+ms.keywords : PCIP_VALIDATE_INFO structure pointer [Buses], PCIP_VALIDATE_INFO, IEEE.cip_validate_info, 61883/CIP_VALIDATE_INFO, CIP_VALIDATE_INFO, _CIP_VALIDATE_INFO, *PCIP_VALIDATE_INFO, 61883/PCIP_VALIDATE_INFO, CIP_VALIDATE_INFO structure [Buses], 61883_structures_9f8bc3f2-ad43-4e0b-a4f9-8d441397f11d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_VALIDATE_INFO
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCIP_VALIDATE_INFO, CIP_VALIDATE_INFO"
 ---
 
@@ -49,25 +53,25 @@ typedef struct _CIP_VALIDATE_INFO {
 
 ## Members
 
-        
-            `Context`
 
-            Points to the context provided by the caller at <b>ValidateContext</b> in the input CIP_FRAME structure.
-        
-            `hConnect`
+`Context`
 
-            A handle to the connection.
-        
-            `Packet`
+Points to the context provided by the caller at <b>ValidateContext</b> in the input CIP_FRAME structure.
 
-            The packet offset for the current source packet.
-        
-            `TimeStamp`
+`hConnect`
 
-            The timestamp of the current source packet.
+A handle to the connection.
 
-    ## Remarks
-        The IEC-61883 protocol driver allocates and initializes this structure from the input CIP_FRAME structure.
+`Packet`
+
+The packet offset for the current source packet.
+
+`TimeStamp`
+
+The timestamp of the current source packet.
+
+## Remarks
+The IEC-61883 protocol driver allocates and initializes this structure from the input CIP_FRAME structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _CIP_VALIDATE_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537045">CIP_FRAME</a>
-</dt>
-</dl>
+
  
 
  

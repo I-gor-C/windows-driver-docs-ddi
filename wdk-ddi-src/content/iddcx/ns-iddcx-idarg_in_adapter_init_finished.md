@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7ff07613-7c40-4310-856a-a44dc97c7f20
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_ADAPTER_INIT_FINISHED,
+ms.keywords : iddcx/IDARG_IN_ADAPTER_INIT_FINISHED, IDARG_IN_ADAPTER_INIT_FINISHED structure [Display Devices], display.idarg_in_adapter_init_finished, IDARG_IN_ADAPTER_INIT_FINISHED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_ADAPTER_INIT_FINISHED
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -46,10 +50,10 @@ typedef struct IDARG_IN_ADAPTER_INIT_FINISHED {
 
 ## Members
 
-        
-            `AdapterInitStatus`
 
-            The initialization status of the adapter.
+`AdapterInitStatus`
+
+The initialization status of the adapter.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3B32F31C-3850-43D4-9C6E-40D35B8AF4D4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortLogTelemetry
+ms.keywords : StorPortLogTelemetry routine [Storage Devices], storport/StorPortLogTelemetry, storage.storportlogtelemetry, StorPortLogTelemetry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortLogTelemetry
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -67,18 +71,56 @@ Pointer to the <a href="..\storport\ns-storport-_storport_telemetry_event.md">ST
 ## Return Value
 
 <b>StorPortLogTelemetry </b>returns one of the following status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_BUFFER_SIZE</b></dt>
-</dl><b>	EventBufferLength</b> is larger than <b>EVENT_BUFFER_MAX_LENGTH</b>.
+</dl>
+</td>
+<td width="60%">
+<b>	EventBufferLength</b> is larger than <b>EVENT_BUFFER_MAX_LENGTH</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>A pointer to one of the parameters is NULL or the EventBufferLength/EventBuffer in Event structure not matching.
+</dl>
+</td>
+<td width="60%">
+A pointer to one of the parameters is NULL or the EventBufferLength/EventBuffer in Event structure not matching.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>This function is not implemented on the active operating system.
+</dl>
+</td>
+<td width="60%">
+This function is not implemented on the active operating system.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The telemetry event data have been successfully logged.
+</dl>
+</td>
+<td width="60%">
+The telemetry event data have been successfully logged.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,11 +142,8 @@ If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\ns-storport-_storport_telemetry_event.md">STORPORT_TELEMETRY_EVENT</a>
-</dt>
-</dl>
+
  
 
  

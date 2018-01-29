@@ -7,8 +7,8 @@ old-location : image\wiasgetitemtype.htm
 old-project : image
 ms.assetid : 9659d669-ccf3-423a-9c81-12232a978d07
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : wiasGetItemType
+ms.date : 1/18/2018
+ms.keywords : wiasFncs_634f945c-e60b-4668-b1a7-19b398a86e7c.xml, wiamdef/wiasGetItemType, wiasGetItemType, wiasGetItemType function [Imaging Devices], image.wiasgetitemtype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : wiasGetItemType
-req.alt-loc : Wiaservc.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wiaservc.lib
 req.dll : Wiaservc.dll
 req.irql : 
-req.typenames : "*PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product : Windows 10 or later.
 ---
 
@@ -56,7 +60,7 @@ Pointer to a WIA item context.
 
 `plType`
 
-
+TBD
 
 
 ## Return Value

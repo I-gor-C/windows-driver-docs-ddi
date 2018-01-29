@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9b7d67a3-2899-47b1-9652-d3696d37ec2d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestGetIoQueue
+ms.keywords : WdfRequestGetIoQueue method, wdf.wdfrequestgetioqueue, WdfRequestGetIoQueue, PFN_WDFREQUESTGETIOQUEUE, wdfrequest/WdfRequestGetIoQueue, DFRequestObjectRef_5ac140be-04cf-480c-a917-9942d23b550f.xml, kmdf.wdfrequestgetioqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfRequestGetIoQueue
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about <b>WdfRequestGetIoQueue</b>, see <a href="https://msdn.microsoft.com/a686ea00-6987-480a-a4ce-892e1efbed87">Obtaining Information About an I/O Request</a>.
 
-The following code example obtains a handle to the device object that represents the device that a request belongs to.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,11 +84,8 @@ The following code example obtains a handle to the device object that represents
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueuegetdevice.md">WdfIoQueueGetDevice</a>
-</dt>
-</dl>
+
  
 
  

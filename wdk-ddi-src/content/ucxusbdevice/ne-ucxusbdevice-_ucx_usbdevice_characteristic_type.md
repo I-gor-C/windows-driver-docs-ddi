@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 86FA72CC-C23F-40B9-9FDD-80C3B0D5EA73
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_USBDEVICE_CHARACTERISTIC_TYPE, UCX_USBDEVICE_CHARACTERISTIC_TYPE
+ms.keywords : ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC_TYPE, UCX_USBDEVICE_CHARACTERISTIC_TYPE, buses.ucx_usbdevice_characteristic_type, UCX_USBDEVICE_CHARACTERISTIC_TYPE enumeration [Buses], ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_TYPE, PUCX_USBDEVICE_CHARACTERISTIC_TYPE enumeration pointer [Buses], ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_TYPE, _UCX_USBDEVICE_CHARACTERISTIC_TYPE, UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_USBDEVICE_CHARACTERISTIC_TYPE
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_USBDEVICE_CHARACTERISTIC_TYPE
 req.product : Windows 10 or later.
 ---
@@ -66,14 +70,10 @@ typedef enum _UCX_USBDEVICE_CHARACTERISTIC_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_ucx_usbdevice_characteristic.md">UCX_USBDEVICE_CHARACTERISTIC</a>
-</dt>
-<dt>
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
-</dt>
-</dl>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_ucx_usbdevice_characteristic.md">UCX_USBDEVICE_CHARACTERISTIC</a>
+
  
 
  

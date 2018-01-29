@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E89DC8B6-9379-4FE2-BF4C-897DA9DFA11C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorTypeCDetach
+ms.keywords : buses.ucmconnectortypecdetach, ucmmanager/UcmConnectorTypeCDetach, UcmConnectorTypeCDetach method [Buses], UcmConnectorTypeCDetach
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmConnectorTypeCDetach
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -51,7 +55,7 @@ NTSTATUS UcmConnectorTypeCDetach(
 
 `Connector`
 
-
+Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
 
 
 ## Return Value
@@ -73,11 +77,8 @@ NTSTATUS UcmConnectorTypeCDetach(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
-</dt>
-</dl>
+
  
 
  

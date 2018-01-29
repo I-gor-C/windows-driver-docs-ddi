@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f1fc6880-23d1-4154-9305-4a918efd4a1d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInsertQueueDpc
+ms.keywords : kernel.keinsertqueuedpc, wdm/KeInsertQueueDpc, k105_7f821e29-508f-4216-92db-a2e18c21d17c.xml, KeInsertQueueDpc, KeInsertQueueDpc routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInsertQueueDpc
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : MarkingQueuedIrps, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,20 +92,14 @@ Note that a particular DPC object and the function that it represents can each b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542976">CustomThreadedDpc</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>
+
 <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keremovequeuedpc.md">KeRemoveQueueDpc</a>
-</dt>
-</dl>
+
  
 
  

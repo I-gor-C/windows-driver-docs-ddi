@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9d032bd1-3ee7-4044-951f-c6730a28f3a1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsGenericTableEmpty
+ms.keywords : ntddk/RtlIsGenericTableEmpty, rtlref_07ea645e-b497-445c-a872-34947a2f7e54.xml, RtlIsGenericTableEmpty routine [Installable File System Drivers], RtlIsGenericTableEmpty, ifsk.rtlisgenerictableempty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIsGenericTableEmpty
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL (see Remarks section)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -81,11 +85,8 @@ Callers of <b>RtlIsGenericTableEmpty</b> must be running at ≤ APC_LEVEL if the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
-</dt>
-</dl>
+
  
 
  

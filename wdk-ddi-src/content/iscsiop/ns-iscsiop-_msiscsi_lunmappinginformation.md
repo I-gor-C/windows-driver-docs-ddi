@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : abe4b0fe-3918-4139-9c35-d9399287ce03
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation, *PMSiSCSI_LUNMappingInformation
+ms.keywords : iscsiop/MSiSCSI_LUNMappingInformation, storage.msiscsi_lunmappinginformation, PMSiSCSI_LUNMappingInformation, structs-iSCSI_390283b1-22d6-4012-834f-1b3ef3328da0.xml, _MSiSCSI_LUNMappingInformation, *PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation, iscsiop/PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation structure [Storage Devices], PMSiSCSI_LUNMappingInformation structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_LUNMappingInformation
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MSiSCSI_LUNMappingInformation, *PMSiSCSI_LUNMappingInformation
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation"
 ---
 
 # _MSiSCSI_LUNMappingInformation structure
@@ -50,29 +54,29 @@ typedef struct _MSiSCSI_LUNMappingInformation {
 
 ## Members
 
-        
-            `OSBus`
 
-            The number that the operating system assigns to the bus that the adapter is attached to.
-        
-            `OSLUN`
+`OSBus`
 
-            The logical unit number (LUN) that the operating system assigns to the logical unit.
-        
-            `OSTarget`
+The number that the operating system assigns to the bus that the adapter is attached to.
 
-            The device number that the operating system assigns to the target.
-        
-            `UniqueAdapterId`
+`OSLUN`
 
-            A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a> structure.
-        
-            `UniqueSessionId`
+The logical unit number (LUN) that the operating system assigns to the logical unit.
 
-            A session ID that uniquely identifies the session for which the LUN mapping is valid. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+`OSTarget`
 
-    ## Remarks
-        You must implement this class.
+The device number that the operating system assigns to the target.
+
+`UniqueAdapterId`
+
+A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a> structure.
+
+`UniqueSessionId`
+
+A session ID that uniquely identifies the session for which the LUN mapping is valid. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+
+## Remarks
+You must implement this class.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,25 +86,18 @@ typedef struct _MSiSCSI_LUNMappingInformation {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-</dt>
-<dt>
 <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563067">MSiSCSI_LUNMappingInformation WMI Class</a>
-</dt>
-<dt>
+
 <a href="..\iscsiop\ns-iscsiop-_msiscsi_targetmappings.md">MSiSCSI_TargetMappings</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563067">MSiSCSI_LUNMappingInformation WMI Class</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
  
 
  

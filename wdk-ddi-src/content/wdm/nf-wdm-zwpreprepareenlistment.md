@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : adf2513c-9a0e-4552-baad-010ab243e9dc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwPrePrepareEnlistment
+ms.keywords : wdm/ZwPrePrepareEnlistment, ZwPrePrepareEnlistment routine [Kernel-Mode Driver Architecture], wdm/NtPrePrepareEnlistment, NtPrePrepareEnlistment, ktm_ref_42a63780-131c-4b65-ad22-ec32b713c0fe.xml, kernel.zwpreprepareenlistment, ZwPrePrepareEnlistment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwPrePrepareEnlistment,NtPrePrepareEnlistment
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,26 +66,78 @@ A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbb
 ## Return Value
 
 <b>ZwPrePrepareEnlistment</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ENLISTMENT_NOT_SUPERIOR</b></dt>
-</dl>The caller is not a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> for the enlistment.
+</dl>
+</td>
+<td width="60%">
+The caller is not a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> for the enlistment.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TRANSACTION_RESPONSE_NOT_ENLISTED</b></dt>
-</dl>The caller did not register to receive TRANSACTION_NOTIFY_PREPREPARE_COMPLETE notifications.
+</dl>
+</td>
+<td width="60%">
+The caller did not register to receive TRANSACTION_NOTIFY_PREPREPARE_COMPLETE notifications.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The specified handle is not a handle to an enlistment object.
+</dl>
+</td>
+<td width="60%">
+The specified handle is not a handle to an enlistment object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>The object handle is invalid.
+</dl>
+</td>
+<td width="60%">
+The object handle is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller does not have appropriate access to the enlistment object.
+</dl>
+</td>
+<td width="60%">
+The caller does not have appropriate access to the enlistment object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TRANSACTION_REQUEST_NOT_VALID</b></dt>
-</dl>The enlistment's transaction is not in a state that allows it to enter the prepare phase.
+</dl>
+</td>
+<td width="60%">
+The enlistment's transaction is not in a state that allows it to enter the prepare phase.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -113,20 +169,14 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-tmpreprepareenlistment.md">TmPrePrepareEnlistment</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
 <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-</dt>
-</dl>
+
  
 
  

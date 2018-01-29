@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6bff18d1-77bf-49c0-af9c-aa1abbfbfa53
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSDS3D_LISTENER_ALL, *PKSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL
+ms.keywords : ksmedia/KSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL structure [Audio Devices], ksmedia/PKSDS3D_LISTENER_ALL, *PKSDS3D_LISTENER_ALL, audio.ksds3d_listener_all, PKSDS3D_LISTENER_ALL structure pointer [Audio Devices], PKSDS3D_LISTENER_ALL, aud-prop_1fd24ba2-9b2d-4ee2-b40c-eb7812597da0.xml, KSDS3D_LISTENER_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDS3D_LISTENER_ALL
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL"
 ---
 
@@ -52,37 +56,37 @@ typedef struct {
 
 ## Members
 
-        
-            `DistanceFactor`
 
-            Specifies the distance factor for the 3D listener.
-        
-            `DopplerFactor`
+`DistanceFactor`
 
-            Specifies the Doppler factor for the 3D listener.
-        
-            `OrientFront`
+Specifies the distance factor for the 3D listener.
 
-            Specifies the front orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.
-        
-            `OrientTop`
+`DopplerFactor`
 
-            Specifies the top orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.
-        
-            `Position`
+Specifies the Doppler factor for the 3D listener.
 
-            Specifies the position vector of the 3D listener. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>.
-        
-            `RolloffFactor`
+`OrientFront`
 
-            Specifies the rolloff factor for the 3D listener.
-        
-            `Velocity`
+Specifies the front orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.
 
-            Specifies the velocity vector of the 3D listener. This member is a structure of type DS3DVECTOR.
+`OrientTop`
 
-    ## Remarks
-        This structure is similar to the DS3DBUFFER structure that is described in the Microsoft Windows SDK documentation. The Windows SDK documentation also discusses the distance, rolloff, and Doppler factors for DirectSound 3D listeners.
+Specifies the top orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.
+
+`Position`
+
+Specifies the position vector of the 3D listener. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>.
+
+`RolloffFactor`
+
+Specifies the rolloff factor for the 3D listener.
+
+`Velocity`
+
+Specifies the velocity vector of the 3D listener. This member is a structure of type DS3DVECTOR.
+
+## Remarks
+This structure is similar to the DS3DBUFFER structure that is described in the Microsoft Windows SDK documentation. The Windows SDK documentation also discusses the distance, rolloff, and Doppler factors for DirectSound 3D listeners.
 
 DirectSound uses this property to implement the <b>IDirectSound3DListener::GetAllParameters</b> and <b>IDirectSound3DListener::SetAllParameters</b> methods, which are described in the Windows SDK documentation.
 
@@ -94,16 +98,12 @@ DirectSound uses this property to implement the <b>IDirectSound3DListener::GetAl
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537334">KSPROPERTY_DIRECTSOUND3DLISTENER_ALL</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>
+
  
 
  

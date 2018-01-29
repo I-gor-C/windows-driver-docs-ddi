@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : c4425ba5-adf7-4734-a400-1a233a441047
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : SdBusSubmitRequestAsync, SD.sdbussubmitrequestasync, SdBusSubmitRequestAsync function [Buses], ntddsd/SdBusSubmitRequestAsync, sd-rtns_69f249eb-f2e8-48fa-8857-b47c732faea6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdBusSubmitRequestAsync
-req.alt-loc : ntddsd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -99,17 +103,12 @@ This request is handled asynchronously and might return STATUS_PENDING.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a>
+
  
 
  

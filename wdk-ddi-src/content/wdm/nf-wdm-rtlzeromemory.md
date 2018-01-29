@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e9e20d9c-0f2f-4ab1-a249-3e09bb6a7a22
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlZeroMemory
+ms.keywords : wdm/RtlZeroMemory, RtlZeroMemory, RtlZeroMemory routine [Kernel-Mode Driver Architecture], k109_63d9f0fb-d698-4707-9018-de2fa851a94b.xml, kernel.rtlzeromemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlZeroMemory
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ Callers of <b>RtlZeroMemory</b> can be running at any IRQL if the destination me
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlsecurezeromemory.md">RtlSecureZeroMemory</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
+
  
 
  

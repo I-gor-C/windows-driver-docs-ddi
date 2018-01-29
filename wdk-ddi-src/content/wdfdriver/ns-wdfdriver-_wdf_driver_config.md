@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 24197846-9664-4fc6-8578-5bcaf0e4a71c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DRIVER_CONFIG, WDF_DRIVER_CONFIG, *PWDF_DRIVER_CONFIG
+ms.keywords : _WDF_DRIVER_CONFIG, wdf.wdf_driver_config, wdfdriver/WDF_DRIVER_CONFIG, WDF_DRIVER_CONFIG structure, PWDF_DRIVER_CONFIG structure pointer, DFDriverObjectRef_89306ddc-557c-4142-a26b-a120acdffed6.xml, *PWDF_DRIVER_CONFIG, WDF_DRIVER_CONFIG, wdfdriver/PWDF_DRIVER_CONFIG, kmdf.wdf_driver_config, PWDF_DRIVER_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_DRIVER_CONFIG
-req.alt-loc : wdfdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DRIVER_CONFIG, *PWDF_DRIVER_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -53,29 +57,29 @@ typedef struct _WDF_DRIVER_CONFIG {
 
 ## Members
 
-        
-            `DriverInitFlags`
 
-            A bitwise OR of one or more <a href="..\wdfdriver\ne-wdfdriver-_wdf_driver_init_flags.md">WDF_DRIVER_INIT_FLAGS</a>-typed values that identify driver initialization flags.
-        
-            `DriverPoolTag`
+`DriverInitFlags`
 
-            (KMDF versions 1.5 and later.) A driver-defined pool tag that the framework will assign to all of the driver's pool allocations. Debuggers display this tag. For more information about specifying a pool tag, see the following Remarks section.
-        
-            `EvtDriverDeviceAdd`
+A bitwise OR of one or more <a href="..\wdfdriver\ne-wdfdriver-_wdf_driver_init_flags.md">WDF_DRIVER_INIT_FLAGS</a>-typed values that identify driver initialization flags.
 
-            A pointer to a driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
-        
-            `EvtDriverUnload`
+`DriverPoolTag`
 
-            A pointer to a driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a> callback function.
-        
-            `Size`
+(KMDF versions 1.5 and later.) A driver-defined pool tag that the framework will assign to all of the driver's pool allocations. Debuggers display this tag. For more information about specifying a pool tag, see the following Remarks section.
 
-            The size, in bytes, of this structure.
+`EvtDriverDeviceAdd`
 
-    ## Remarks
-        Your driver can optionally specify a pool tag that the framework will assign to all of the driver's pool allocations. Drivers typically specify a character string of up to four characters, delimited by single quotation marks, in reverse order (for example, 'dcba'). The ASCII value of each character in the tag must be between 0 and 127.  
+A pointer to a driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
+
+`EvtDriverUnload`
+
+A pointer to a driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a> callback function.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+## Remarks
+Your driver can optionally specify a pool tag that the framework will assign to all of the driver's pool allocations. Drivers typically specify a character string of up to four characters, delimited by single quotation marks, in reverse order (for example, 'dcba'). The ASCII value of each character in the tag must be between 0 and 127.  
 
 If <b>DriverPoolTag</b> is zero, the framework creates a default pool tag by using the first four characters of your driver's kernel-mode service name. If the service name begins with "WDF" (the name is not case sensitive and does not include the quotation marks), the next four characters are used. If fewer than four characters are available, "FxDr" is used. 
 
@@ -89,25 +93,18 @@ To initialize a WDF_DRIVER_CONFIG structure, drivers must call <a href="..\wdfdr
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
+
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a>
-</dt>
-<dt>
-<a href="..\wdfdriver\nf-wdfdriver-wdf_driver_config_init.md">WDF_DRIVER_CONFIG_INIT</a>
-</dt>
-<dt>
-<a href="..\wdfdriver\ne-wdfdriver-_wdf_driver_init_flags.md">WDF_DRIVER_INIT_FLAGS</a>
-</dt>
-<dt>
+
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-</dt>
-</dl>
+
+<a href="..\wdfdriver\ne-wdfdriver-_wdf_driver_init_flags.md">WDF_DRIVER_INIT_FLAGS</a>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdf_driver_config_init.md">WDF_DRIVER_CONFIG_INIT</a>
+
  
 
  

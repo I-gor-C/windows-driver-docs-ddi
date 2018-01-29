@@ -7,8 +7,8 @@ old-location : debugger\ig_get_bus_data.htm
 old-project : debugger
 ms.assetid : aca1fe96-20c7-4a51-a331-583b107f62e0
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _GETSETBUSDATA, BUSDATA, *PBUSDATA
+ms.date : 1/19/2018
+ms.keywords : GETSETBUSDATA structure [Windows Debugging], GETSETBUSDATA, PBUSDATA structure pointer [Windows Debugging], wdbgexts/PBUSDATA, WdbgExts_Ref_090ca26a-5955-40c6-82c3-310a02a9d64d.xml, BUSDATA structure [Windows Debugging], _GETSETBUSDATA, PBUSDATA, BUSDATA, debugger.ig_get_bus_data, *PBUSDATA, wdbgexts/GETSETBUSDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BUSDATA
-req.alt-loc : wdbgexts.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : BUSDATA, *PBUSDATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PBUSDATA, BUSDATA"
 req.product : Windows 10 or later.
 ---
 
@@ -52,35 +56,35 @@ typedef struct _GETSETBUSDATA {
 
 ## Members
 
-        
-            `Buffer`
 
-            Specifies the buffer that contains the memory to write to the bus, or to receive the memory that is read from the bus.
+`Buffer`
+
+Specifies the buffer that contains the memory to write to the bus, or to receive the memory that is read from the bus.
 
 The size of <b>Buffer</b> must be at least the value of <b>Length</b>.
-        
-            `BusDataType`
 
-            Specifies the bus data type to use.  For details of allowed values, see the documentation for the BUS_DATA_TYPE enumeration in the Platform SDK.
-        
-            `BusNumber`
+`BusDataType`
 
-            Specifies the system-assigned number of the bus.  This is usually zero, unless the system has more than one bus of the same bus data type.
-        
-            `Length`
+Specifies the bus data type to use.  For details of allowed values, see the documentation for the BUS_DATA_TYPE enumeration in the Platform SDK.
 
-            Specifies the number of bytes to read from or write to the bus when the <b>Ioctl</b> operation is called.  Upon returning, <b>Length</b> is set to the number of bytes actually read or written.
-        
-            `Offset`
+`BusNumber`
 
-            Specifies the offset in the bus data to start reading from or writing to.
-        
-            `SlotNumber`
+Specifies the system-assigned number of the bus.  This is usually zero, unless the system has more than one bus of the same bus data type.
 
-            Specifies the logical slot number on the bus.
+`Length`
 
-    ## Remarks
-        The parameters for the IG_GET_BUS_DATA and IG_SET_BUS_DATA <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operations are the members of the BUSDATA structure.
+Specifies the number of bytes to read from or write to the bus when the <b>Ioctl</b> operation is called.  Upon returning, <b>Length</b> is set to the number of bytes actually read or written.
+
+`Offset`
+
+Specifies the offset in the bus data to start reading from or writing to.
+
+`SlotNumber`
+
+Specifies the logical slot number on the bus.
+
+## Remarks
+The parameters for the IG_GET_BUS_DATA and IG_SET_BUS_DATA <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operations are the members of the BUSDATA structure.
 
 This operation is only available in kernel-mode debugging.
 
@@ -94,15 +98,12 @@ The properties of the data in the bus depends on the system, bus, and slot.
 | **Minimum UMDF version** |  |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GETSETBUSDATA structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GETSETBUSDATA structure%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

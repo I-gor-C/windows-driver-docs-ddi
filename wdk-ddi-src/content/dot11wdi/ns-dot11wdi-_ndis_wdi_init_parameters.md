@@ -7,8 +7,8 @@ old-location : netvista\ndis_wdi_init_parameters.htm
 old-project : netvista
 ms.assetid : 871D266C-55DF-4113-9714-92AB129303E5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS
+ms.date : 1/18/2018
+ms.keywords : PNDIS_WDI_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, netvista.ndis_wdi_init_parameters, dot11wdi/NDIS_WDI_INIT_PARAMETERS, _NDIS_WDI_INIT_PARAMETERS, dot11wdi/PNDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_WDI_INIT_PARAMETERS
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS"
 ---
 
 # _NDIS_WDI_INIT_PARAMETERS structure
@@ -51,14 +55,14 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 
 ## Members
 
-        
-            `CloseAdapterCompleteHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_close_adapter_complete.md">NdisWdiCloseAdapterComplete</a> callback function.
-        
-            `Header`
+`CloseAdapterCompleteHandler`
 
-            The 
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_close_adapter_complete.md">NdisWdiCloseAdapterComplete</a> callback function.
+
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_WDI_INIT_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
@@ -67,22 +71,22 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 
 To indicate the version of the NDIS_WDI_INIT_PARAMETERS structure, set the 
      <b>Revision</b> member to the following value:
-        
-            `OpenAdapterCompleteHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_open_adapter_complete.md">NdisWdiOpenAdapterComplete</a> callback function.
-        
-            `UeIdleNotificationComplete`
+`OpenAdapterCompleteHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_complete.md">NdisWdiIdleNotificationComplete</a> callback function.
-        
-            `UeIdleNotificationConfirm`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_open_adapter_complete.md">NdisWdiOpenAdapterComplete</a> callback function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_confirm.md">NdisWdiIdleNotificationConfirm</a> callback function.
-        
-            `WdiVersion`
+`UeIdleNotificationComplete`
 
-            The version of WDI used by the driver. Set this member to one of the following values:
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_complete.md">NdisWdiIdleNotificationComplete</a> callback function.
+
+`UeIdleNotificationConfirm`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_confirm.md">NdisWdiIdleNotificationConfirm</a> callback function.
+
+`WdiVersion`
+
+The version of WDI used by the driver. Set this member to one of the following values:
 
 
 ## Requirements

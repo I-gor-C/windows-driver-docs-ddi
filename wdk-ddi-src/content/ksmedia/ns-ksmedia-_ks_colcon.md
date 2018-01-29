@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8328c1b1-e72d-4e34-b69e-e02b3f5850bf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KS_COLCON, KS_COLCON, *PKS_COLCON
+ms.keywords : dvdref_96e0b7a1-6131-445b-9a4f-9157997338aa.xml, stream.ks_colcon, ksmedia/PKS_COLCON, _KS_COLCON, KS_COLCON, KS_COLCON structure [Streaming Media Devices], PKS_COLCON, ksmedia/KS_COLCON, *PKS_COLCON, PKS_COLCON structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_COLCON
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KS_COLCON, *PKS_COLCON
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKS_COLCON, KS_COLCON"
 ---
 
 # _KS_COLCON structure
@@ -53,41 +57,41 @@ typedef struct _KS_COLCON {
 
 ## Members
 
-        
-            `backcol`
 
-            Indicates
-        
-            `backcon`
+`backcol`
 
-            Indicates
-        
-            `emph1col`
+Indicates
 
-            Indicates
-        
-            `emph1con`
+`backcon`
 
-            Indicates
-        
-            `emph2col`
+Indicates
 
-            Indicates
-        
-            `emph2con`
+`emph1col`
 
-            Indicates
-        
-            `patcol`
+Indicates
 
-            Indicates
-        
-            `patcon`
+`emph1con`
 
-            Indicates
+Indicates
 
-    ## Remarks
-        The KS_COLCON structure is used by the <a href="..\ksmedia\ns-ksmedia-_ksproperty_sphli.md">KSPROPERTY_SPHLI</a> structure.
+`emph2col`
+
+Indicates
+
+`emph2con`
+
+Indicates
+
+`patcol`
+
+Indicates
+
+`patcon`
+
+Indicates
+
+## Remarks
+The KS_COLCON structure is used by the <a href="..\ksmedia\ns-ksmedia-_ksproperty_sphli.md">KSPROPERTY_SPHLI</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,13 +101,10 @@ typedef struct _KS_COLCON {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_ksproperty_sphli.md">KSPROPERTY_SPHLI</a>
-</dt>
-</dl>
+
  
 
  

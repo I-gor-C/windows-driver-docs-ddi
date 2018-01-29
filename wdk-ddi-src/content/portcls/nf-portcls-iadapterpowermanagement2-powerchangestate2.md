@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 72068476-5821-4646-88b3-06f3a1917fca
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAdapterPowerManagement2, IAdapterPowerManagement2::PowerChangeState2, PowerChangeState2
+ms.keywords : audio.iadapterpowermanagement2_powerchangestate2, portcls/IAdapterPowerManagement2::PowerChangeState2, audmp-routines_d145e24a-5ef1-44a3-b51b-9ee2c8a89772.xml, IAdapterPowerManagement2 interface [Audio Devices], PowerChangeState2 method, PowerChangeState2, IAdapterPowerManagement2, PowerChangeState2 method [Audio Devices], IAdapterPowerManagement2 interface, PowerChangeState2 method [Audio Devices], IAdapterPowerManagement2::PowerChangeState2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IAdapterPowerManagement2.PowerChangeState2
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,23 +86,16 @@ For more information about system power states, see <a href="https://msdn.micros
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
-</dt>
-<dt>
 <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546941">Handling System Power State Requests</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
+
+<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554397">Managing Power for Individual Devices</a>
-</dt>
-</dl>
+
  
 
  

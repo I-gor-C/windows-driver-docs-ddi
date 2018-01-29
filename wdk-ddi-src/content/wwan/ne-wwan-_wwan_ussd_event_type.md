@@ -7,8 +7,8 @@ old-location : netvista\wwan_ussd_event_type.htm
 old-project : netvista
 ms.assetid : CEBC8A75-03E9-4E2A-9092-2FA3005371FE
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_USSD_EVENT_TYPE, WWAN_USSD_EVENT_TYPE, *PWWAN_USSD_EVENT_TYPE
+ms.date : 1/18/2018
+ms.keywords : wwan/WwanUssdEventActionRequired, _WWAN_USSD_EVENT_TYPE, netvista.wwan_ussd_event_type, *PWWAN_USSD_EVENT_TYPE, WwanUssdEventOtherLocalClient, WwanUssdEventTerminated, wwan/WwanUssdEventNoActionRequired, wwan/WwanUssdEventOtherLocalClient, wwan/WwanUssdEventOperationNotSupported, WWAN_USSD_EVENT_TYPE, WwanUssdEventOperationNotSupported, WwanUssdEventNetworkTimeOut, wwan/WwanUssdEventNetworkTimeOut, wwan/WWAN_USSD_EVENT_TYPE, WwanUssdEventActionRequired, WwanUssdEventNoActionRequired, WWAN_USSD_EVENT_TYPE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanUssdEventTerminated
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_USSD_EVENT_TYPE
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WWAN_USSD_EVENT_TYPE, *PWWAN_USSD_EVENT_TYPE
 req.product : Windows 10 or later.
 ---
@@ -103,13 +107,10 @@ The value of the <a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_EVENT_TYPE enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_EVENT_TYPE enumeration%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

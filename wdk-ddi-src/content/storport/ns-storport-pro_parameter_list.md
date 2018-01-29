@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 96c128e1-c38a-412f-adeb-cde820e1af4e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PRO_PARAMETER_LIST, PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST
+ms.keywords : "*PPRO_PARAMETER_LIST, storport/PRO_PARAMETER_LIST, PRO_PARAMETER_LIST structure [Storage Devices], structs-general_7481edb0-cc60-44b9-abcc-80bf0f79fbae.xml, storage.pro_parameter_list, storport/PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST structure pointer [Storage Devices], PPRO_PARAMETER_LIST, PRO_PARAMETER_LIST"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PRO_PARAMETER_LIST
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPRO_PARAMETER_LIST, PRO_PARAMETER_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -53,11 +57,10 @@ typedef struct {
 
 ## Members
 
-        
-            `ActivatePersistThroughPowerLoss`
 
-            The ActivatePersistThroughPowerLoss (APTPL) bit is valid only for the following service actions:
+`ActivatePersistThroughPowerLoss`
 
+The ActivatePersistThroughPowerLoss (APTPL) bit is valid only for the following service actions:
 <ul>
 <li>
 REGISTER
@@ -68,31 +71,30 @@ REGISTER AND IGNORE EXISTING KEY
 
 </li>
 </ul>
-        
-            `Obsolete`
 
-            Reserved. Must be zero.
-        
-            `ReservationKey`
+`Obsolete`
 
-            The ReservationKey field contains an 8-byte value that is provided by the application client to the device server. This value identifies the initiator that is the source of the Persistent Reserve Out command.
-        
-            `Reserved1`
+Reserved. Must be zero.
 
-            Reserved. Must be zero.
-        
-            `Reserved2`
+`ReservationKey`
 
-            Reserved. Must be zero.
-        
-            `ScopeSpecificAddress`
+The ReservationKey field contains an 8-byte value that is provided by the application client to the device server. This value identifies the initiator that is the source of the Persistent Reserve Out command.
 
-            The ScopeSpecificAddress field contains the element address that has zeros placed in the most significant bits to fit the field. This is true if the scope of a reservation is set to ELEMENT_SCOPE. Otherwise, this field is set to all zeros.
-        
-            `ServiceActionReservationKey`
+`Reserved1`
 
-            The ServiceActionReservationKey field contains information that is needed for the following four service actions:
+Reserved. Must be zero.
 
+`Reserved2`
+
+Reserved. Must be zero.
+
+`ScopeSpecificAddress`
+
+The ScopeSpecificAddress field contains the element address that has zeros placed in the most significant bits to fit the field. This is true if the scope of a reservation is set to ELEMENT_SCOPE. Otherwise, this field is set to all zeros.
+
+`ServiceActionReservationKey`
+
+The ServiceActionReservationKey field contains information that is needed for the following four service actions:
 <ul>
 <li>
 REGISTER
@@ -112,8 +114,8 @@ PREEMPT AND ABORT
 </li>
 </ul>
 
-    ## Remarks
-        The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.
+## Remarks
+The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -123,13 +125,10 @@ PREEMPT AND ABORT
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
-</dt>
-</dl>
+
  
 
  

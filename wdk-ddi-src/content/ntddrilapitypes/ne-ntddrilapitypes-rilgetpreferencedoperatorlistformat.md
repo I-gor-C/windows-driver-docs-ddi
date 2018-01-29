@@ -7,8 +7,8 @@ old-location : netvista\rilgetpreferencedoperatorlistformat.htm
 old-project : netvista
 ms.assetid : 77526649-dc98-4c40-b348-6e5620f6e4eb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILGETPREFERENCEDOPERATORLISTFORMAT, RILGETPREFERENCEDOPERATORLISTFORMAT
+ms.date : 1/18/2018
+ms.keywords : netvista.rilgetpreferencedoperatorlistformat, ntddrilapitypes/RILGETPREFERENCEDOPERATORLISTFORMAT, RIL_OPFORMAT_NUM, RILGETPREFERENCEDOPERATORLISTFORMAT enumeration [Network Drivers Starting with Windows Vista], RIL_OPFORMAT_MAX, RILGETPREFERENCEDOPERATORLISTFORMAT, ntddrilapitypes/RIL_OPFORMAT_NUM, ntddrilapitypes/RIL_OPFORMAT_MAX, ntddrilapitypes/RIL_OPFORMAT_SHORT, RIL_OPFORMAT_SHORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILGETPREFERENCEDOPERATORLISTFORMAT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILGETPREFERENCEDOPERATORLISTFORMAT
 ---
 
@@ -49,6 +53,11 @@ typedef enum _RILGETPREFERENCEDOPERATORLISTFORMAT {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_OPFORMAT_LONG</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_OPFORMAT_MAX</td>

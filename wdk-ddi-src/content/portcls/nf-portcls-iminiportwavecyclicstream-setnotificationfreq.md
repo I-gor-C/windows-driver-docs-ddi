@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b909c11c-de56-43e8-b339-b92249bc7e1c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, IMiniportWaveCyclicStream::SetNotificationFreq, SetNotificationFreq
+ms.keywords : SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream::SetNotificationFreq, SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream interface, audmp-routines_9db148da-326d-4176-a852-83fa1e453246.xml, IMiniportWaveCyclicStream interface [Audio Devices], SetNotificationFreq method, IMiniportWaveCyclicStream, SetNotificationFreq, audio.iminiportwavecyclicstream_setnotificationfreq, portcls/IMiniportWaveCyclicStream::SetNotificationFreq
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveCyclicStream.SetNotificationFreq
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,20 +86,14 @@ In all current Windows releases, the WaveCyclic port driver specifies an <i>Inte
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
  
 
  

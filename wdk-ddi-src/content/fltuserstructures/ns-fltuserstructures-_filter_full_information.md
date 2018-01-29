@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fb592350-76e2-4655-b6db-854fd48aa827
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILTER_FULL_INFORMATION, *PFILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION
+ms.keywords : FltSystemStructures_e72c2545-4938-4a3e-b3c8-95fd7f46239a.xml, _FILTER_FULL_INFORMATION, ifsk.filter_full_information, fltuserstructures/PFILTER_FULL_INFORMATION, *PFILTER_FULL_INFORMATION, PFILTER_FULL_INFORMATION structure pointer [Installable File System Drivers], FILTER_FULL_INFORMATION structure [Installable File System Drivers], fltuserstructures/FILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION, PFILTER_FULL_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILTER_FULL_INFORMATION
-req.alt-loc : fltuserstructures.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_FULL_INFORMATION, *PFILTER_FULL_INFORMATION
 ---
 
 # _FILTER_FULL_INFORMATION structure
@@ -50,29 +54,29 @@ typedef struct _FILTER_FULL_INFORMATION {
 
 ## Members
 
-        
-            `FilterNameBuffer`
 
-            Specifies the first character of the filter name string. This character is followed in memory by the remainder of the string. The length of the string is specified by the <b>FilterNameLength</b> member. The string is Unicode and is not NULL-terminated.
-        
-            `FilterNameLength`
+`FilterNameBuffer`
 
-            Length, in bytes, of the minifilter name.
-        
-            `FrameID`
+Specifies the first character of the filter name string. This character is followed in memory by the remainder of the string. The length of the string is specified by the <b>FilterNameLength</b> member. The string is Unicode and is not NULL-terminated.
 
-            Zero-based index of the current frame.
-        
-            `NextEntryOffset`
+`FilterNameLength`
 
-            Byte offset of the next FILTER_FULL_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
-        
-            `NumberOfInstances`
+Length, in bytes, of the minifilter name.
 
-            Number of instances that currently exist for this minifilter.
+`FrameID`
 
-    ## Remarks
-        The FILTER_FULL_INFORMATION structure is passed as a parameter to routines such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff540485">FilterFindFirst</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540488">FilterFindNext</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540500">FilterGetInformation</a>, <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>, and <a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>. 
+Zero-based index of the current frame.
+
+`NextEntryOffset`
+
+Byte offset of the next FILTER_FULL_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+
+`NumberOfInstances`
+
+Number of instances that currently exist for this minifilter.
+
+## Remarks
+The FILTER_FULL_INFORMATION structure is passed as a parameter to routines such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff540485">FilterFindFirst</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540488">FilterFindNext</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540500">FilterGetInformation</a>, <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>, and <a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>. 
 
 This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary.
 
@@ -84,34 +88,24 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 | **Minimum UMDF version** |  |
 | **Header** | fltuserstructures.h (include FltUser.h, FltKernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_basic_information.md">FILTER_AGGREGATE_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540481">FilterFindClose</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540485">FilterFindFirst</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540488">FilterFindNext</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540500">FilterGetInformation</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540488">FilterFindNext</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540481">FilterFindClose</a>
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_basic_information.md">FILTER_AGGREGATE_BASIC_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540485">FilterFindFirst</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
-</dt>
-</dl>
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540500">FilterGetInformation</a>
+
  
 
  

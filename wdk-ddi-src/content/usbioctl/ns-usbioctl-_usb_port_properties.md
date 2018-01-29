@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : BCADC907-3770-4FBE-AEB3-96F93502E899
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_PORT_PROPERTIES, USB_PORT_PROPERTIES, *PUSB_PORT_PROPERTIES
+ms.keywords : "*PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES union [Buses], usbioctl/USB_PORT_PROPERTIES, USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES, buses.usb_port_properties, usbioctl/PUSB_PORT_PROPERTIES, _USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES union pointer [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_PORT_PROPERTIES
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_PORT_PROPERTIES, *PUSB_PORT_PROPERTIES
 req.product : Windows 10 or later.
 ---
@@ -54,10 +58,10 @@ typedef union _USB_PORT_PROPERTIES {
 
 ## Members
 
-        
-            `ul`
 
-            A bitmask that indicates the properties and capabilities of the port.
+`ul`
+
+A bitmask that indicates the properties and capabilities of the port.
 
 
 ## Requirements
@@ -68,16 +72,12 @@ typedef union _USB_PORT_PROPERTIES {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usbioctl\ns-usbioctl-_usb_port_connector_properties.md">USB_PORT_CONNECTOR_PROPERTIES</a>
-</dt>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_port_connector_properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a>
-</dt>
-</dl>
+
+<a href="..\usbioctl\ns-usbioctl-_usb_port_connector_properties.md">USB_PORT_CONNECTOR_PROPERTIES</a>
+
  
 
  

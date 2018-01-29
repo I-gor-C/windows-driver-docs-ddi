@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3e7d8dd5-4336-472e-a71f-8abb946af8be
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::Start, Start
+ms.keywords : Start method, Start, IWDFIoQueue::Start, wdf.iwdfioqueue_start, UMDFQueueObjectRef_d53b70a8-b022-4e2c-aa3d-d29aac4695ad.xml, Start method, IWDFIoQueue interface, IWDFIoQueue interface, Start method, IWDFIoQueue, umdf.iwdfioqueue_start, wudfddi/IWDFIoQueue::Start
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.Start
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 None
 
-None
-
-None
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,11 +74,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-</dl>
+
  
 
  

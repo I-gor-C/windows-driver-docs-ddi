@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 50126ab8-3094-497e-96f8-e41255d275e3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.maptransfer, MapTransfer, MapTransfer callback function [Kernel-Mode Driver Architecture], MapTransfer, PMAP_TRANSFER, PMAP_TRANSFER, wdm/MapTransfer, kdma_4bc30c1d-1d83-424f-9c58-cd92c5e9d331.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MapTransfer
-req.alt-loc : wdm.h
 req.ddi-compliance : IrqlDispatch
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -113,38 +117,26 @@ The driver of a bus-master device with scatter/gather support can use the return
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540562">ADDRESS_AND_SIZE_TO_SPAN_PAGES</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
+
+<a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540562">ADDRESS_AND_SIZE_TO_SPAN_PAGES</a>
+
+<a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
+
  
 
  

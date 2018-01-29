@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6881ea55-138a-408e-955e-c5c74f777ce8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, IMiniportWaveCyclicStream::SetFormat, SetFormat
+ms.keywords : SetFormat method [Audio Devices], IMiniportWaveCyclicStream interface, portcls/IMiniportWaveCyclicStream::SetFormat, SetFormat, IMiniportWaveCyclicStream::SetFormat, IMiniportWaveCyclicStream, audio.iminiportwavecyclicstream_setformat, IMiniportWaveCyclicStream interface [Audio Devices], SetFormat method, audmp-routines_d23a09d4-7110-425f-b10d-5f7f601179bb.xml, SetFormat method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveCyclicStream.SetFormat
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -77,17 +81,12 @@ For information about specifying wave stream formats, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+
  
 
  

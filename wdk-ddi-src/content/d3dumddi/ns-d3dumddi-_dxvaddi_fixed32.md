@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4188c488-fda4-4596-96f5-f740a5cc9ffc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_FIXED32, DXVADDI_FIXED32
+ms.keywords : DXVA2_Structs_3d19835e-9a75-4d5a-bd6b-451a9978eadb.xml, _DXVADDI_FIXED32, d3dumddi/DXVADDI_FIXED32, DXVADDI_FIXED32 structure [Display Devices], DXVADDI_FIXED32, display.dxvaddi_fixed32
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_FIXED32
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_FIXED32
 ---
 
@@ -62,13 +66,10 @@ typedef struct _DXVADDI_FIXED32 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_procampvalues.md">DXVADDI_PROCAMPVALUES</a>
-</dt>
-</dl>
+
  
 
  

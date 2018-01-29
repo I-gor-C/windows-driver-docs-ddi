@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 72eb23aa-4f0e-4ef5-baee-c0735253684e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryGetFirstChildFilter
+ms.keywords : ks/KsFilterFactoryGetFirstChildFilter, avfunc_1e512072-d270-48d9-8289-feaf8d2bcf35.xml, KsFilterFactoryGetFirstChildFilter function [Streaming Media Devices], stream.ksfilterfactorygetfirstchildfilter, KsFilterFactoryGetFirstChildFilter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterFactoryGetFirstChildFilter
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,20 +79,14 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetfirstchild.md"
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
 <a href="..\ks\nf-ks-ksfiltergetnextsiblingfilter.md">KsFilterGetNextSiblingFilter</a>
-</dt>
-</dl>
+
  
 
  

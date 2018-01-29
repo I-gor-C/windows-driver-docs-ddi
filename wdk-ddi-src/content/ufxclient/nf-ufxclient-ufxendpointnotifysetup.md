@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 147CE46A-315D-4B75-B345-A7C0B01B2078
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UfxEndpointNotifySetup
+ms.keywords : UfxEndpointNotifySetup method [Buses], ufxclient/UfxEndpointNotifySetup, UfxEndpointNotifySetup, buses.ufxendpointnotifysetup
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UfxEndpointNotifySetup
-req.alt-loc : ufxclient.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : DISPATCH_LEVEL
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -52,7 +56,7 @@ VOID UfxEndpointNotifySetup(
 
 `UfxEndpoint`
 
-
+TBD
 
 `SetupInfo`
 
@@ -65,7 +69,26 @@ This method does not return a value.
 
 ## Remarks
 
-The following example shows how to handle setup packet completion.</p>
+The following example shows how to handle setup packet completion.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    if (ControlContext-&gt;SetupRequested) {
+        TRACE_TRANSFER("COMPLETE (Setup)", Endpoint, NULL);
+        
+        ControlContext-&gt;SetupRequested = FALSE;
+        TransferContext-&gt;TransferStarted = FALSE;
+
+        UfxEndpointNotifySetup(Endpoint, ControlContext-&gt;SetupPacket);
+
+    } 
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

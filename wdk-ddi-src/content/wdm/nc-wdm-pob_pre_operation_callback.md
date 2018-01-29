@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 257c6c7d-be79-43bf-b2cd-f561e1741f90
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.objectprecallback, ObjectPreCallback, ObjectPreCallback callback function [Kernel-Mode Driver Architecture], ObjectPreCallback, POB_PRE_OPERATION_CALLBACK, POB_PRE_OPERATION_CALLBACK, wdm/ObjectPreCallback, DrvrRtns_8ccbcf60-457d-4bd7-b059-423a47a44374.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Server 2008.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObjectPreCallback
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL (see Remarks section).
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -86,20 +90,14 @@ This routine is called at PASSIVE_LEVEL in an arbitrary thread context with norm
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a>
-</dt>
-</dl>
+
  
 
  

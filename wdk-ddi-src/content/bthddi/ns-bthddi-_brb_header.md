@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : c6da4cc9-294b-4cb7-80c8-8adee8d4c40b
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_HEADER, BRB_HEADER
+ms.keywords : _BRB_HEADER, bltooth.brb_header, BRB_HEADER structure [Bluetooth Devices], bth_structs_69a21ba7-b425-45ec-bb2d-dd76a6cb8342.xml, BRB_HEADER, bthddi/BRB_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BRB_HEADER
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BRB_HEADER
 ---
 
@@ -57,17 +61,16 @@ typedef struct _BRB_HEADER {
 
 ## Members
 
-        
-            `BthportFlags`
 
-            For internal use only. Do not use.
-        
-            `BtStatus`
+`BthportFlags`
 
-            The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that is passed in the 
+For internal use only. Do not use.
+
+`BtStatus`
+
+The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that is passed in the 
      <b>Status</b> member. Possible values include:
      
-
 <ul>
 <li>BTH_ERROR_SUCCESS</li>
 <li>BTH_ERROR_ACL_CONNECTION_ALREADY_EXISTS</li>
@@ -112,45 +115,44 @@ typedef struct _BRB_HEADER {
 <li>BTH_ERROR_UNSUPPORTED_LMP_PARM_VALUE</li>
 <li>BTH_ERROR_UNSUPPORTED_REMOTE_FEATURE</li>
 </ul>
-        
-            `ClientContext`
 
-            The client context that is associated with the BRB call. The caller can use this member to store a
+`ClientContext`
+
+The client context that is associated with the BRB call. The caller can use this member to store a
      pointer or other information.
-        
-            `Context`
 
-            For internal use only. Do not use.
-        
-            `Length`
+`Context`
 
-            The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
+For internal use only. Do not use.
+
+`Length`
+
+The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
      <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
      <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
      <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
      member.
-        
-            `ListEntry`
 
-            A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.
-        
-            `Reserved`
+`ListEntry`
 
-            Reserved for future use. Do not use.
-        
-            `Status`
+A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.
 
-            The NTSTATUS code that is passed when the BRB call completes.
-        
-            `Type`
+`Reserved`
 
-            The Bluetooth request block type. The 
+Reserved for future use. Do not use.
+
+`Status`
+
+The NTSTATUS code that is passed when the BRB call completes.
+
+`Type`
+
+The Bluetooth request block type. The 
      <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
      <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
      <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
      member.Possible values include:
      
-
 <ul>
 <li>BRB_HCI_GET_LOCAL_BD_ADDR</li>
 <li>BRB_L2CA_REGISTER_SERVER</li>
@@ -176,16 +178,16 @@ typedef struct _BRB_HEADER {
 <li>BRB_ACL_ENTER_ACTIVE_MODE</li>
 <li>BRB_GET_DEVICE_INTERFACE_STRING</li>
 </ul>
-        
-            `Version`
 
-            For internal use only. Do not use.
+`Version`
 
-    ## Remarks
-        The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
+For internal use only. Do not use.
+
+## Remarks
+The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
     structure is used by all BRB structures that are used as the input buffer for 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">
-    IOCTL_INTERNAL_BTH_SUBMIT_BRB</a> IOCTLs.
+    <mshelp:link keywords="bltooth.ioctl_internal_bth_submit_brb" tabindex="0"><b>
+    IOCTL_INTERNAL_BTH_SUBMIT_BRB</b></mshelp:link> IOCTLs.
 
 Profile drivers should not modify any of the members of the BRB_HEADER structure except 
     <b>ClientContext</b>.
@@ -198,19 +200,14 @@ Profile drivers should not modify any of the members of the BRB_HEADER structure
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
-</dt>
-<dt>
-<a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
-</dt>
-<dt>
 <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
-</dt>
-</dl>
+
+<a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
+
+<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+
  
 
  

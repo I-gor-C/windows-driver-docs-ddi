@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 2b8fb604-944d-40fc-be5b-a287ca7e3ea1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PMI_MEASUREMENT_UNIT, PMI_MEASUREMENT_UNIT
+ms.keywords : powermeter.ioctl_pmi_get_capabilities, IOCTL_PMI_GET_CAPABILITIES control code [Power Metering and Budgeting Devices], IOCTL_PMI_GET_CAPABILITIES, pmi/IOCTL_PMI_GET_CAPABILITIES, PowerMeterRef_4328d6ef-f85e-4375-9505-ff9134969d60.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PMI_GET_CAPABILITIES
-req.alt-loc : Pmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_MEASUREMENT_UNIT
 ---
 
@@ -59,31 +63,42 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the IRP's cur
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data.
 
 The <b>Status</b> member is set to one of the following values:
 
-
-
-The WDM driver that supports the PMI interface has completed the IOCTL request successfully. 
-
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure and its variable-length data. 
-
-The initiator-allocated input buffer contains an invalid <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> value.
-
-    ## Remarks
-        The <b>IOCTL_PMI_GET_CAPABILITIES</b> request queries the PMI capabilities or asset information of the power meter. The input <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> enumeration value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.
+## Remarks
+The <b>IOCTL_PMI_GET_CAPABILITIES</b> request queries the PMI capabilities or asset information of the power meter. The input <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> enumeration value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.
 
 The following table describes the type of data that is returned for the specified <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> enumeration value.
-
+<table>
+<tr>
+<th>PMI_CAPABILITIES_TYPE value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 <b>PmiMeteredHardware</b>
 
+</td>
+<td>
 A <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a> structure that specifies the hardware devices that the power meter monitors. 
 
+</td>
+</tr>
+<tr>
+<td>
 <b>PmiReportedCapabilities</b>
 
+</td>
+<td>
 A <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure that specifies the types of PMI capabilities the power meter supports.
+
+<div class="alert"><b>Note</b>  The <b>PMI_REPORTED_CAPABILITIES</b> structure is variable-length. The driver must fail this IOCTL request if the output buffer (referenced by the <b>MdlAddress</b> member of the IRP) is too small.</div>
+<div> </div>
+</td>
+</tr>
+</table>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,28 +107,20 @@ A <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIE
 | **Header** | pmi.h (include Pmi.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
 <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
 <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+
  
 
  

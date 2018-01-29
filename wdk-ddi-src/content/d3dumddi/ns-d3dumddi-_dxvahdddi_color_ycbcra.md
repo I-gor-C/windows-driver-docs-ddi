@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2a624e9-599e-4325-820b-945b3e649323
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_COLOR_YCbCrA, DXVAHDDDI_COLOR_YCbCrA
+ms.keywords : DXVAHDDDI_COLOR_YCbCrA, display.dxvahdddi_color_ycbcra, d3dumddi/DXVAHDDDI_COLOR_YCbCrA, DXVA2_Structs_28a4ec5c-f8e6-414b-ac91-846e3b0fdbf8.xml, DXVAHDDDI_COLOR_YCbCrA structure [Display Devices], _DXVAHDDDI_COLOR_YCbCrA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_COLOR_YCbCrA is supported beginning with t
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_COLOR_YCbCrA
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_COLOR_YCbCrA
 ---
 
@@ -49,25 +53,25 @@ typedef struct _DXVAHDDDI_COLOR_YCbCrA {
 
 ## Members
 
-        
-            `A`
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the YCbCr color.
-        
-            `Cb`
+`A`
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue chroma component of the YCbCr color.
-        
-            `Cr`
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the YCbCr color.
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red chroma component of the YCbCr color.
-        
-            `Y`
+`Cb`
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the luma component of the YCbCr color.
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue chroma component of the YCbCr color.
 
-    ## Remarks
-        The setting of DXVAHDDDI_COLOR_YCbCrA for YCbCr black with opaque alpha is (0.0625, 0.5, 0.5, 1.0), which is (16, 128, 128, 255) when 8-bit presentation is used.
+`Cr`
+
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red chroma component of the YCbCr color.
+
+`Y`
+
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the luma component of the YCbCr color.
+
+## Remarks
+The setting of DXVAHDDDI_COLOR_YCbCrA for YCbCr black with opaque alpha is (0.0625, 0.5, 0.5, 1.0), which is (16, 128, 128, 255) when 8-bit presentation is used.
 
 A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>YCbCr</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color.md">DXVAHDDDI_COLOR</a> union to specify the color in YCbCr terms.
 
@@ -79,13 +83,10 @@ A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>YCbCr</b> member of th
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color.md">DXVAHDDDI_COLOR</a>
-</dt>
-</dl>
+
  
 
  

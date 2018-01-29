@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B9E64163-B338-49C9-8167-C36B110AB710
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _NLSTABLEINFO, NLSTABLEINFO, *PNLSTABLEINFO
+ms.keywords : ntnls/NLSTABLEINFO, ntnls/PNLSTABLEINFO, kernel.nlstableinfo, NLSTABLEINFO, PNLSTABLEINFO structure pointer [Kernel-Mode Driver Architecture], NLSTABLEINFO structure [Kernel-Mode Driver Architecture], _NLSTABLEINFO, *PNLSTABLEINFO, PNLSTABLEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NLSTABLEINFO
-req.alt-loc : Ntnls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NLSTABLEINFO, *PNLSTABLEINFO
 ---
 
@@ -49,18 +53,22 @@ typedef struct _NLSTABLEINFO {
 
 ## Members
 
-        
-            `AnsiTableInfo`
 
-            Specifies an ANSI table.
-        
-            `OemTableInfo`
+`AnsiTableInfo`
 
-            Specifies OEM table.
-        
-            `UpperCaseTable`
+Specifies an ANSI table.
 
-            Specifies an 844 format uppercase table.
+`LowerCaseTable`
+
+
+
+`OemTableInfo`
+
+Specifies OEM table.
+
+`UpperCaseTable`
+
+Specifies an 844 format uppercase table.
 
 
 ## Requirements

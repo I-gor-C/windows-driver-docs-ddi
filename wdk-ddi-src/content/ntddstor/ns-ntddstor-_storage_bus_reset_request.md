@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d2f2d2cc-e96b-475c-96eb-d58244a05788
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_BUS_RESET_REQUEST, STORAGE_BUS_RESET_REQUEST, *PSTORAGE_BUS_RESET_REQUEST
+ms.keywords : _STORAGE_BUS_RESET_REQUEST, structs-general_ffea4f36-cf98-4961-be14-d8a4cde94fad.xml, PSTORAGE_BUS_RESET_REQUEST, *PSTORAGE_BUS_RESET_REQUEST, STORAGE_BUS_RESET_REQUEST, PSTORAGE_BUS_RESET_REQUEST structure pointer [Storage Devices], ntddstor/STORAGE_BUS_RESET_REQUEST, STORAGE_BUS_RESET_REQUEST structure [Storage Devices], storage.storage_bus_reset_request, ntddstor/PSTORAGE_BUS_RESET_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_BUS_RESET_REQUEST
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STORAGE_BUS_RESET_REQUEST, *PSTORAGE_BUS_RESET_REQUEST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTORAGE_BUS_RESET_REQUEST, STORAGE_BUS_RESET_REQUEST"
 ---
 
 # _STORAGE_BUS_RESET_REQUEST structure
@@ -46,10 +50,10 @@ typedef struct _STORAGE_BUS_RESET_REQUEST {
 
 ## Members
 
-        
-            `PathId`
 
-            Indicates the number of the bus to be reset.
+`PathId`
+
+Indicates the number of the bus to be reset.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _STORAGE_BUS_RESET_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_reset_bus.md">IOCTL_STORAGE_RESET_BUS</a>
-</dt>
-</dl>
+
  
 
  

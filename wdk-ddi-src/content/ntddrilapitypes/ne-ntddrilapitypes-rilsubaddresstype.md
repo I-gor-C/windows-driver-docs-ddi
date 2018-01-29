@@ -7,8 +7,8 @@ old-location : netvista\rilsubaddresstype.htm
 old-project : netvista
 ms.assetid : 18c4f26a-6463-4157-bd81-6bbb2100eff2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSUBADDRESSTYPE, RILSUBADDRESSTYPE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILSUBADDRESSTYPE, ntddrilapitypes/RIL_SUBADDRTYPE_MAX, netvista.rilsubaddresstype, ntddrilapitypes/RIL_SUBADDRTYPE_USER, RILSUBADDRESSTYPE, RIL_SUBADDRTYPE_USER, RILSUBADDRESSTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_SUBADDRTYPE_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSUBADDRESSTYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSUBADDRESSTYPE
 ---
 
@@ -51,6 +55,11 @@ typedef enum _RILSUBADDRESSTYPE {
 
 <tr>
 <td>RIL_SUBADDRTYPE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_SUBADDRTYPE_NSAP</td>
 <td></td>
 </tr>
 

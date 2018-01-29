@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 5020212e-9e3f-468f-8f7c-77d70a8f024b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnGetSupportedDataFields, OnGetSupportedDataFields
+ms.keywords : OnGetSupportedDataFields method [Sensor Devices], ISensorDriver::OnGetSupportedDataFields, OnGetSupportedDataFields, ISensorDriver, sensors.isensordriver_ongetsupporteddatafields
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OnGetSupportedDataFields
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,7 @@ Data fields contain sensor-generated data, as opposed to properties, which descr
 
 All drivers must support SENSOR_DATA_TYPE_TIMESTAMP as a required data field.
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> is documented in Windows Portable Devices.</p>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> is documented in Windows Portable Devices.
 
 ## Requirements
 | &nbsp; | &nbsp; |

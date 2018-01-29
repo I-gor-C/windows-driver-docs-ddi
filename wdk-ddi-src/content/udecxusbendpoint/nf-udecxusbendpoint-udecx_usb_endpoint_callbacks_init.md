@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : AE0DA609-90E5-452F-B24E-0902C5E868A8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UDECX_USB_ENDPOINT_CALLBACKS_INIT
+ms.keywords : udecxusbendpoint/UDECX_USB_ENDPOINT_CALLBACKS_INIT, UDECX_USB_ENDPOINT_CALLBACKS_INIT, UDECX_USB_ENDPOINT_CALLBACKS_INIT method [Buses], buses.udecx_usb_endpoint_callbacks_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UDECX_USB_ENDPOINT_CALLBACKS_INIT
-req.alt-loc : Udecxstub.lib,Udecxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Udecxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
 req.product : Windows 10 or later.
 ---
@@ -55,7 +59,7 @@ A pointer to a <a href="..\udecxusbendpoint\ns-udecxusbendpoint-_udecx_usb_endpo
 
 `EvtUsbEndpointReset`
 
-
+TBD
 
 
 ## Return Value
@@ -77,11 +81,8 @@ This method does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
-</dt>
-</dl>
+
  
 
  

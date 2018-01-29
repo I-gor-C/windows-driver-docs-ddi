@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6186dac4-4797-48f2-bb32-40a0d501bac7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_COPY_FLAGS, D3DDDI_COPY_FLAGS
+ms.keywords : D3DDDI_COPY_FLAGS, d3dumddi/D3DDDI_COPY_NO_OVERWRITE, D3DDDI_COPY_FLAGS enumeration [Display Devices], D3DDDI_COPY_DISCARD, d3dumddi/D3DDDI_COPY_FLAGS, d3dumddi/D3DDDI_COPY_DISCARD, display.d3dddi_copy_flags, D3DDDI_COPY_NO_OVERWRITE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_COPY_FLAGS
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_COPY_FLAGS
 ---
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ccc20b5b-0f16-422d-8900-03b57f08b1bc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmIsDriverVerifyingByAddress
+ms.keywords : wdm/MmIsDriverVerifyingByAddress, MmIsDriverVerifyingByAddress routine [Kernel-Mode Driver Architecture], kernel.mmisdriververifyingbyaddress, MmIsDriverVerifyingByAddress, k106_37d22f13-de6a-4423-b148-9a7481570aaf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmIsDriverVerifyingByAddress
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,14 +86,10 @@ For example, if driver A has an import table through which it calls one or more 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmisdriversuspectforverifier.md">MmIsDriverSuspectForVerifier</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-mmisdriververifying.md">MmIsDriverVerifying</a>
-</dt>
-</dl>
+
  
 
  

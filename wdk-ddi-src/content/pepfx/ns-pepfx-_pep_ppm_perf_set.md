@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : BA2495F6-09E8-4AF9-9489-E745B759F999
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_PERF_SET, PEP_PPM_PERF_SET, *PPEP_PPM_PERF_SET
+ms.keywords : PPEP_PPM_PERF_SET structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_PERF_SET, _PEP_PPM_PERF_SET, PPEP_PPM_PERF_SET, *PPEP_PPM_PERF_SET, kernel.pep_ppm_perf_set, PEP_PPM_PERF_SET structure [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_PERF_SET, PEP_PPM_PERF_SET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_PERF_SET
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PEP_PPM_PERF_SET, *PPEP_PPM_PERF_SET
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_PPM_PERF_SET, PEP_PPM_PERF_SET"
 ---
 
 # _PEP_PPM_PERF_SET structure
@@ -50,29 +54,29 @@ typedef struct _PEP_PPM_PERF_SET {
 
 ## Members
 
-        
-            `DesiredPerformance`
 
-            [in] The new desired performance level in platform-specific units. This member is set to a value in the range <b>MinimumPerformance</b> to <b>MaximumPerformance</b>.
-        
-            `MaximumPerformance`
+`DesiredPerformance`
 
-            [in] The new maximum performance level in platform-specific units. This member indicates the absolute maximum performance level that the processor can run at.
-        
-            `MinimumPerformance`
+[in] The new desired performance level in platform-specific units. This member is set to a value in the range <b>MinimumPerformance</b> to <b>MaximumPerformance</b>.
 
-            [in] The new minimum performance level in platform-specific units. This member indicates the absolute minimum performance level that the processor can run at.
-        
-            `PerformanceTolerance`
+`MaximumPerformance`
 
-            [in] The new performance tolerance in platform-specific units. This member contains the minimum performance level that the platform can deliver and still meet the operating system's performance requirements.
-        
-            `TimeWindow`
+[in] The new maximum performance level in platform-specific units. This member indicates the absolute maximum performance level that the processor can run at.
 
-            [in] The width, in milliseconds, of the new time window over which the platform must provide the required average performance. If this time window is nonzero, the instantaneous performance provided by the platform does not need to match the desired performance level, and only needs to fall within the constraints specified by the minimum and maximum performance level.
+`MinimumPerformance`
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186816">PEP_NOTIFY_PPM_PERF_SET</a> notification. All five members of this structure contain input values that PoFx supplies when this notification is sent to the PEP.
+[in] The new minimum performance level in platform-specific units. This member indicates the absolute minimum performance level that the processor can run at.
+
+`PerformanceTolerance`
+
+[in] The new performance tolerance in platform-specific units. This member contains the minimum performance level that the platform can deliver and still meet the operating system's performance requirements.
+
+`TimeWindow`
+
+[in] The width, in milliseconds, of the new time window over which the platform must provide the required average performance. If this time window is nonzero, the instantaneous performance provided by the platform does not need to match the desired performance level, and only needs to fall within the constraints specified by the minimum and maximum performance level.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186816">PEP_NOTIFY_PPM_PERF_SET</a> notification. All five members of this structure contain input values that PoFx supplies when this notification is sent to the PEP.
 
 Processor performance levels are specified in platform-specific units. For example, a hardware platform might use a metric such as the processor clock frequency to provide a rough approximation to the amount of processing work  that is being done. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt629132">Platform Performance Thresholds</a>.
 
@@ -84,16 +88,12 @@ Processor performance levels are specified in platform-specific units. For examp
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186816">PEP_NOTIFY_PPM_PERF_SET</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt629132">Platform Performance Thresholds</a>
-</dt>
-</dl>
+
  
 
  

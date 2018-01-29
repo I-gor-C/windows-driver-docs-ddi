@@ -7,8 +7,8 @@ old-location : netvista\rilgettokenparammask.htm
 old-project : netvista
 ms.assetid : d791b497-3ef3-42f1-a6e6-980992c97f45
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILGETTOKENPARAMMASK, RILDEVSPECIFICPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILDEVSPECIFICPARAMMASK, oemrilapitypes/RIL_PARAM_GETTOKEN_TIMEOUT, RIL_PARAM_GETTOKEN_ALL, oemrilapitypes/RIL_PARAM_GETTOKEN_HEADER, RILGETTOKENPARAMMASK enumeration [Network Drivers Starting with Windows Vista], oemrilapitypes/RILGETTOKENPARAMMASK, netvista.rilgettokenparammask, oemrilapitypes/RIL_PARAM_GETTOKEN_ALL, RIL_PARAM_GETTOKEN_TIMEOUT, RILGETTOKENPARAMMASK, RIL_PARAM_GETTOKEN_HEADER, oemrilapitypes/RIL_PARAM_GETTOKEN_PROTOCOL_ID, RILDEVSPECIFICPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_GETTOKEN_PROTOCOL_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDEVSPECIFICPARAMMASK
-req.alt-loc : oemrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntstrsafe.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILDEVSPECIFICPARAMMASK
 ---
 

@@ -7,8 +7,8 @@ old-location : image\sti_usd_caps.htm
 old-project : image
 ms.assetid : 24dda069-5f93-469d-8ce3-87b488019b88
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _STI_USD_CAPS, STI_USD_CAPS, *PSTI_USD_CAPS
+ms.date : 1/18/2018
+ms.keywords : PSTI_USD_CAPS structure pointer [Imaging Devices], *PSTI_USD_CAPS, STI_USD_CAPS, PSTI_USD_CAPS, image.sti_usd_caps, stifnc_4f136561-e3a7-467d-b8be-a60db8534126.xml, stiusd/STI_USD_CAPS, STI_USD_CAPS structure [Imaging Devices], stiusd/PSTI_USD_CAPS, _STI_USD_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STI_USD_CAPS
-req.alt-loc : stiusd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STI_USD_CAPS, *PSTI_USD_CAPS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTI_USD_CAPS, STI_USD_CAPS"
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _STI_USD_CAPS {
 
 ## Members
 
-        
-            `dwGenericCaps`
 
-            Bit flags indicating driver capabilities. The following flags are defined in <i>Stiusd.h</i>.
-        
-            `dwVersion`
+`dwGenericCaps`
 
-            STI version number. This value must be STI_VERSION, defined in <i>Sti.h</i>.
+Bit flags indicating driver capabilities. The following flags are defined in <i>Stiusd.h</i>.
+
+`dwVersion`
+
+STI version number. This value must be STI_VERSION, defined in <i>Sti.h</i>.
 
 
 ## Requirements

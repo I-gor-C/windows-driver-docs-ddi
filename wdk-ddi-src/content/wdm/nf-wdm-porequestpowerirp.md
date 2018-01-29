@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 99330348-bcc2-4a89-96f8-e1b67d9ebe25
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoRequestPowerIrp
+ms.keywords : PoRequestPowerIrp routine [Kernel-Mode Driver Architecture], portn_d417d88c-2f6d-4af9-b7de-455dfcc1b9df.xml, kernel.porequestpowerirp, PoRequestPowerIrp, wdm/PoRequestPowerIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoRequestPowerIrp
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : MarkDevicePower, PowerDownFail, PowerUpFail, RequestedPowerIrp, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -56,7 +60,7 @@ NTSTATUS PoRequestPowerIrp(
 
 `DeviceObject`
 
-A pointer to the target <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> for the IRP. In Windows 2000 and later versions of Windows, this parameter can point to a physical device object (<a href="wdkgloss.p#wdkgloss.pdo#wdkgloss.pdo"><i>PDO</i></a>) or a functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>). In Windows 98/Me, this parameter must point to the PDO of the underlying device.
+A pointer to the target <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> for the IRP. In Windows 2000 and later versions of Windows, this parameter can point to a physical device object (<a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">PDO</a>) or a functional device object (<a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FDO</a>). In Windows 98/Me, this parameter must point to the PDO of the underlying device.
 
 `MinorFunction`
 
@@ -84,15 +88,45 @@ A pointer to a caller-supplied variable in which <b>PoRequestPowerIrp</b> return
 ## Return Value
 
 <b>PoRequestPowerIrp</b> returns one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>The IRP has been sent.
+</dl>
+</td>
+<td width="60%">
+The IRP has been sent.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The routine could not allocate the IRP.
+</dl>
+</td>
+<td width="60%">
+The routine could not allocate the IRP.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_2</b></dt>
-</dl><i>MinorFunction</i> does not signify a valid minor power IRP code.
+</dl>
+</td>
+<td width="60%">
+<i>MinorFunction</i> does not signify a valid minor power IRP code.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -122,35 +156,24 @@ Drivers can use the returned <i>Irp</i> to cancel an <b>IRP_MN_WAIT_WAKE</b> IRP
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551644">IRP_MN_POWER_SEQUENCE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551766">IRP_MN_WAIT_WAKE</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff961906">PowerCompletion</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551644">IRP_MN_POWER_SEQUENCE</a>
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
  
 
  

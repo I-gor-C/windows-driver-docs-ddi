@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetDeviceType
+ms.keywords : kmdf.wdfdeviceinitsetdevicetype, WdfDeviceInitSetDeviceType, wdf.wdfdeviceinitsetdevicetype, PFN_WDFDEVICEINITSETDEVICETYPE, wdfdevice/WdfDeviceInitSetDeviceType, WdfDeviceInitSetDeviceType method, DFDeviceObjectGeneralRef_872eb4dd-0d40-46ed-a7ed-4eae8ec67240.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceInitSetDeviceType
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -75,8 +79,6 @@ The device type that a driver specifies determines the default priority boost va
 
 
       If you are writing a UMDF driver, you  must modify your driver's INF file or make registry changes to specify a device type. For more information about using the registry, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563759">Setting Device Object Registry Properties During Installation</a>.
-
-The following code example indicates that a device is a serial device.</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 654892eb-96eb-49e4-be1e-d5144b146903
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _HBAScsiID, *PHBAScsiID, HBAScsiID
+ms.keywords : _HBAScsiID, HBAScsiID structure [Storage Devices], hbapiwmi/HBAScsiID, hbapiwmi/PHBAScsiID, PHBAScsiID, *PHBAScsiID, PHBAScsiID structure pointer [Storage Devices], storage.hbascsiid, HBAScsiID, structs-Fibre_11630d2e-f0a6-451d-a0e6-9f3986c0a3f7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBAScsiID
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHBAScsiID, HBAScsiID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HBAScsiID, *PHBAScsiID
 ---
 
 # _HBAScsiID structure
@@ -49,25 +53,25 @@ typedef struct _HBAScsiID {
 
 ## Members
 
-        
-            `OSDeviceName`
 
-            Contains a nonpersistent target name such as "\Device\HarddiskVolume1".
-        
-            `ScsiBusNumber`
+`OSDeviceName`
 
-            Contains the bus number.
-        
-            `ScsiOSLun`
+Contains a nonpersistent target name such as "\Device\HarddiskVolume1".
 
-            Contains the logical unit number (LUN).
-        
-            `ScsiTargetNumber`
+`ScsiBusNumber`
 
-            Contains the target device number.
+Contains the bus number.
 
-    ## Remarks
-        For more information about how this structure is defined, see the discussion of the HBA_ScsiID structure in the T11 committee's <i>Fibre Channel HBA API</i> specification.
+`ScsiOSLun`
+
+Contains the logical unit number (LUN).
+
+`ScsiTargetNumber`
+
+Contains the target device number.
+
+## Remarks
+For more information about how this structure is defined, see the discussion of the HBA_ScsiID structure in the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _HBAScsiID {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554939">GetFCPStatistics</a>
-</dt>
-</dl>
+
  
 
  

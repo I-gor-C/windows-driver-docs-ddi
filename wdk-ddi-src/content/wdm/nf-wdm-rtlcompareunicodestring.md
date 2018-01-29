@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 82567434-be54-4436-a26e-9a89a532addf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCompareUnicodeString
+ms.keywords : wdm/RtlCompareUnicodeString, RtlCompareUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlcompareunicodestring, RtlCompareUnicodeString, k109_ddeef320-7510-446b-af6f-756c3999bec1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlCompareUnicodeString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,15 +71,45 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 ## Return Value
 
 <b>RtlCompareUnicodeString</b> returns a signed value that gives the results of the comparison:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Zero</b></dt>
-</dl><i>String1</i> equals <i>String2</i>.
+</dl>
+</td>
+<td width="60%">
+<i>String1</i> equals <i>String2</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>&lt; Zero</b></dt>
-</dl><i>String1</i> is less than <i>String2</i>.
+</dl>
+</td>
+<td width="60%">
+<i>String1</i> is less than <i>String2</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>&gt; Zero </b></dt>
-</dl><i>String1</i> is greater than <i>String2</i>.
+</dl>
+</td>
+<td width="60%">
+<i>String1</i> is greater than <i>String2</i>.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -92,14 +126,10 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlcomparestring.md">RtlCompareString</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlequalstring.md">RtlEqualString</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlcomparestring.md">RtlCompareString</a>
+
  
 
  

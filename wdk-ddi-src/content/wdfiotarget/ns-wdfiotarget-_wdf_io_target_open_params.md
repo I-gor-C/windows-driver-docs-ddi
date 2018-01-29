@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9539868c-127b-4781-9a73-b56fbfda3233
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS, *PWDF_IO_TARGET_OPEN_PARAMS
+ms.keywords : WDF_IO_TARGET_OPEN_PARAMS, *PWDF_IO_TARGET_OPEN_PARAMS, PWDF_IO_TARGET_OPEN_PARAMS, PWDF_IO_TARGET_OPEN_PARAMS structure pointer, DFIOTargetRef_6363f7be-6768-4c90-88c4-88c5fdea0019.xml, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS structure, _WDF_IO_TARGET_OPEN_PARAMS, wdfiotarget/PWDF_IO_TARGET_OPEN_PARAMS, kmdf.wdf_io_target_open_params, wdf.wdf_io_target_open_params
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_TARGET_OPEN_PARAMS
-req.alt-loc : wdfiotarget.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any level
-req.typenames : WDF_IO_TARGET_OPEN_PARAMS, *PWDF_IO_TARGET_OPEN_PARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -66,32 +70,32 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 
 ## Members
 
-        
-            `AllocationSize`
 
-            This member is not applicable to UMDF drivers.
+`AllocationSize`
+
+This member is not applicable to UMDF drivers.
 
 <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this member specifies the size, in bytes, that the system should initially allocate for the file, if it is creating a new file. This value is optional and can be zero. If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `CreateDisposition`
 
-            <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this value indicates an action for the system to take when opening a file. For a list of possible values, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.
+`CreateDisposition`
+
+<b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this value indicates an action for the system to take when opening a file. For a list of possible values, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.
 
 <b>UMDF </b>For more information about 
     this member, see the <i>dwCreationDisposition</i> parameter of the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> function in the Windows SDK.
 
 If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `CreateOptions`
 
-            This member is not applicable to UMDF drivers.
+`CreateOptions`
+
+This member is not applicable to UMDF drivers.
 
 <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of file option flags. For a list of possible flags, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.
              If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `DesiredAccess`
 
-            If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value. 
+`DesiredAccess`
+
+If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value. 
 
 If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
 
@@ -100,59 +104,59 @@ If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is 
     GENERIC_WRITE, and GENERIC_ALL.
 
 <b>UMDF </b>The most commonly used values are GENERIC_READ, GENERIC_WRITE, or both (GENERIC_READ | GENERIC_WRITE). Note that <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> is a DWORD value. For more information about this member, see the <i>dwDesiredAccess</i> parameter of <a href="http://go.microsoft.com/fwlink/p/?linkid=152795">CreateFile</a> in the Windows SDK.
-        
-            `EaBuffer`
 
-            This member is not applicable to UMDF drivers.
+`EaBuffer`
+
+This member is not applicable to UMDF drivers.
 
 <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this member points to an extended attributes buffer. Typically, drivers supply <b>NULL</b> for this value.
             If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `EaBufferLength`
 
-            This member is not applicable to UMDF drivers.
+`EaBufferLength`
+
+This member is not applicable to UMDF drivers.
 
 <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is the length of the extended attributes buffer. Typically, drivers supply zero for this value. If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `EvtIoTargetQueryRemove`
 
-            A pointer to the driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_query_remove.md">EvtIoTargetQueryRemove</a> event callback function, or <b>NULL</b>.
-        
-            `EvtIoTargetRemoveCanceled`
+`EvtIoTargetQueryRemove`
 
-            A pointer to the driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a> event callback function, or <b>NULL</b>.
-        
-            `EvtIoTargetRemoveComplete`
+A pointer to the driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_query_remove.md">EvtIoTargetQueryRemove</a> event callback function, or <b>NULL</b>.
 
-            A pointer to the driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_complete.md">EvtIoTargetRemoveComplete</a> event callback function, or <b>NULL</b>.
-        
-            `FileAttributes`
+`EvtIoTargetRemoveCanceled`
 
-            <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of the FILE_ATTRIBUTE_<i>Xxxx</i> flags that are defined in <i>Wdm.h</i>. Most drivers specify FILE_ATTRIBUTE_NORMAL. For more information about these flags, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.
+A pointer to the driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a> event callback function, or <b>NULL</b>.
+
+`EvtIoTargetRemoveComplete`
+
+A pointer to the driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_complete.md">EvtIoTargetRemoveComplete</a> event callback function, or <b>NULL</b>.
+
+`FileAttributes`
+
+<b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of the FILE_ATTRIBUTE_<i>Xxxx</i> flags that are defined in <i>Wdm.h</i>. Most drivers specify FILE_ATTRIBUTE_NORMAL. For more information about these flags, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.
 
 <b>UMDF </b>For more information about 
     this member, see the <i>dwFlagsAndAttributes</i> parameter of the <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> function in the Windows SDK.
 
 If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `FileInformation`
 
-            This member is not applicable to UMDF drivers.
+`FileInformation`
+
+This member is not applicable to UMDF drivers.
 
 <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this member receives status information when the call to <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a> returns. The information is one of the following values: FILE_CREATED, FILE_OPENED, FILE_OVERWRITTEN, FILE_SUPERSEDED, FILE_EXISTS, or FILE_DOES_NOT_EXIST. If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `FileName`
 
-            This member is not applicable to KMDF drivers.
+`FileName`
+
+This member is not applicable to KMDF drivers.
 
 <b>UMDF </b>A UNICODE_STRING structure that contains the 
   name of the file from which to create a file object. This member is
   optional, and is applicable only when the value of <b>Type</b> is <b>WdfIoTargetOpenLocalTargetByFile</b>.   Most drivers specify <b>NULL</b> here unless the lower target supports <a href="https://msdn.microsoft.com/e5312297-849f-4b4e-835d-0ce5295c7ce2">Device Namespace Access</a>. If supplied, the string must not contain any path separator characters 
   (forward slash or backslash).
-        
-            `ShareAccess`
 
-            If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
+`ShareAccess`
+
+If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
 
 <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of the following flags (which are defined in <i>Wdm.h</i>), or zero. <table>
 <tr>
@@ -198,52 +202,64 @@ The driver does not require exclusive delete access to the device.
     Windows SDK.
 
 A value of zero in <b>ShareAccess</b> indicates that the driver requires exclusive access to the device.
-        
-            `Size`
 
-            The size, in bytes, of this structure.
-        
-            `TargetDeviceName`
+`Size`
 
-            If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of a device, file, or device interface. For information about the format of this name, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557762">Object Names</a>.
+The size, in bytes, of this structure.
+
+`TargetDeviceName`
+
+If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of a device, file, or device interface. For information about the format of this name, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557762">Object Names</a>.
 
 If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.
-        
-            `TargetDeviceObject`
 
-            This member is not applicable to UMDF drivers.
+`TargetDeviceObject`
+
+This member is not applicable to UMDF drivers.
 
 <b>KMDF </b>
             If the value of <b>Type</b> is <b>WdfIoTargetOpenUseExistingDevice</b>, this is a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the I/O target's device.  If the value of <b>Type</b> is not <b>WdfIoTargetOpenUseExistingDevice</b>, this member is ignored.
-        
-            `TargetFileObject`
 
-            This member is not applicable to UMDF drivers.
+`TargetFileObject`
+
+This member is not applicable to UMDF drivers.
 
 <b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenUseExistingDevice</b>, this is a pointer to a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure. This structure is included in all of the I/O requests that the driver sends to the I/O target (see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>). This member is optional and can be <b>NULL</b>. 
             If the value of <b>Type</b> is not <b>WdfIoTargetOpenUseExistingDevice</b>, this member is ignored.
-        
-            `Type`
 
-            A <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_open_type.md">WDF_IO_TARGET_OPEN_TYPE</a>-typed value, which indicates the type of open operation that <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a> will perform.
+`Type`
 
-    ## Remarks
-        Drivers should initialize the <b>WDF_IO_TARGET_OPEN_PARAMS</b> structure by calling one of the following functions:
+A <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_open_type.md">WDF_IO_TARGET_OPEN_TYPE</a>-typed value, which indicates the type of open operation that <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a> will perform.
 
+## Remarks
+Drivers should initialize the <b>WDF_IO_TARGET_OPEN_PARAMS</b> structure by calling one of the following functions:
+<ul>
+<li>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_existing_device.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_EXISTING_DEVICE</a>, if your driver can identify a target device by supplying a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure. 
 
+</li>
+<li>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_create_by_name.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME</a>, if the I/O target is a device, file, or device interface, and if your driver can supply the name of the device, file, or device interface. If you specify the name of a file that already exists, the system replaces the existing file. If the file does not exist, the system creates it.
 
+</li>
+<li>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_open_by_name.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME</a>, if the I/O target is a device, file, or device interface, and if your driver can supply the name of the device, file, or device interface. If you specify the name of a file that already exists, the system opens the existing file. If the file does not exist, the open operation fails.
 
+</li>
+<li>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_reopen.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN</a>, if your driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a> callback function is reopening a remote I/O target because the device was not removed.
 
+</li>
+<li>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_open_by_file.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE</a>, if your UMDF driver needs to send driver-created requests to lower targets that require an associated file object.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -253,40 +269,28 @@ If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_query_remove.md">EvtIoTargetQueryRemove</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_open_type.md">WDF_IO_TARGET_OPEN_TYPE</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
-</dt>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-</dt>
-</dl>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
+
+<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a>
+
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+
+<a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_open_type.md">WDF_IO_TARGET_OPEN_TYPE</a>
+
  
 
  

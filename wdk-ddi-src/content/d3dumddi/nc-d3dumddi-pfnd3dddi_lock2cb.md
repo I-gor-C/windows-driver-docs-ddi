@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C046F34A-4304-4B96-8D7A-7A951016437F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnlock2cb, pfnLock2Cb callback function [Display Devices], pfnLock2Cb, PFND3DDDI_LOCK2CB, PFND3DDDI_LOCK2CB, d3dumddi/pfnLock2Cb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnLock2Cb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -68,8 +72,17 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 ## Remarks
 
 With the Windows Display Driver Model (WDDM) v2 it is now the user mode driver's responsibility to handle the following tasks:
-
+<ul>
+<li>Support no-overwrite and discard semantics. The video memory manager no longer supports renaming so it is up to the driver to implement renaming itself.</li>
+<li>
 Synchronization of other lock types (not no-overwrite or discard)
+
+<ul>
+<li>Must return <b>WasStillDrawing</b> if the user attempts to lock an allocation while specifying the <b>D3D1X_MAP_FLAG_DO_NOT_WAIT</b> flag.</li>
+<li>The user mode driver must block if synchronization is required (ex. hardware is accessing the allocation). This must be implemented as a non-polling wait and make use of the new monitored fence synchronization objects.</li>
+</ul>
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,11 +98,8 @@ Synchronization of other lock types (not no-overwrite or discard)
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock2.md">D3DDDICB_LOCK2</a>
-</dt>
-</dl>
+
  
 
  

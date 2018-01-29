@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 686D141E-E6EA-4BB6-8556-0ECAC592E8F0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortFreeHostMemoryBuffer
+ms.keywords : storport/StorPortFreeHostMemoryBuffer, storage.storportfreehostmemorybuffer, StorPortFreeHostMemoryBuffer, StorPortFreeHostMemoryBuffer routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortFreeHostMemoryBuffer
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -69,12 +73,34 @@ The number of entries in <b>PhysicalAddressRanges</b>.
 ## Return Value
 
 <b>StorPortFreeHostMemoryBuffer</b> returns one of the following status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The host memory buffer was successfully freed.
+</dl>
+</td>
+<td width="60%">
+The host memory buffer was successfully freed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl>The host memory buffer was not valid (likely already freed).
+</dl>
+</td>
+<td width="60%">
+The host memory buffer was not valid (likely already freed).
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -91,11 +117,8 @@ The number of entries in <b>PhysicalAddressRanges</b>.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/B8413B02-32A6-40AE-9DD2-C25AD2D2D45C">StorPortAllocateHostMemoryBuffer</a>
-</dt>
-</dl>
+
  
 
  

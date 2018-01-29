@@ -7,8 +7,8 @@ old-location : pos\ioctl_point_of_service_msr_authenticate_device.htm
 old-project : pos
 ms.assetid : fc6b719d-3e05-4ff5-9d81-1e9326ff4ad4
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosPropertyId, PosPropertyId
+ms.date : 1/18/2018
+ms.keywords : pos.ioctl_point_of_service_msr_authenticate_device, IOCTL_POINT_OF_SERVICE_MSR_AUTHENTICATE_DEVICE control code, IOCTL_POINT_OF_SERVICE_MSR_AUTHENTICATE_DEVICE, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_MSR_AUTHENTICATE_DEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_POINT_OF_SERVICE_MSR_AUTHENTICATE_DEVICE
-req.alt-loc : pointofservicedriverinterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosPropertyId
 ---
 
@@ -59,17 +63,12 @@ Not used with this operation; set to <b>0</b> (zero).
 <text></text>
 
 ### Status Block
-I/O Status block
 Returns <b>TRUE</b> if successful; otherwise, returns <b>FALSE</b>.
 
 To get extended error information, call <a href="http://go.microsoft.com/fwlink/p/?LinkId=316871">GetLastError</a>. The following are common error values:
 
-
-
-The device is currently claimed by another client.
-
-The device does not support authentication.
-
+## Remarks
+<h3><a id="Parameters"></a><a id="parameters"></a><a id="PARAMETERS"></a>Parameters</h3>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 64bcbc05-8dbd-4f97-afbb-dadd44b60078
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminipindisconnect, AVStrMiniPinDisconnect, AVStrMiniPinReset, MyAVStrMiniPin routine [Streaming Media Devices], MyAVStrMiniPin, PFNKSPINVOID, PFNKSPINVOID, ks/MyAVStrMiniPin, avstclbk_7d4db969-3c67-4f42-9b06-723964af1147.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MyAVStrMiniPin
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,22 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
 
 # PFNKSPINVOID callback function
 An AVStream minidriver's callback routine is called when:
+<ul>
+<li>The relevant <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> is serving as a sink pin and this sink pin is disconnected from an AVStream source pin.</li>
+<li>A <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure's reset state is changed due to the arrival of an IOCTL_KS_RESET_STATE device control. This routine is also called when the queue associated with the given pin is flushed. </li>
+</ul>
 
 ## Syntax
 
@@ -78,6 +86,8 @@ The minidriver specifies this routine's address in the <b>Reset</b> member of it
 
 Typically, this routine is provided by minidrivers that must flush hardware buffers. The filter control mutex may be held during this function. See <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">Filter Control Mutex in AVStream</a>.
 
+This routine is optional.
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -92,11 +102,8 @@ Typically, this routine is provided by minidrivers that must flush hardware buff
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-</dl>
+
  
 
  

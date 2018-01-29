@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6eb56c5b-d198-4542-a239-c54b49561196
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDpcCancel
+ms.keywords : WdfDpcCancel, WdfDpcCancel method, kmdf.wdfdpccancel, wdfdpc/WdfDpcCancel, DFDpcObjectRef_4efcdae1-0c0a-4808-a1d8-640dea3555cb.xml, wdf.wdfdpccancel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDpcCancel
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -73,8 +77,6 @@ If the specified DPC object's <a href="https://msdn.microsoft.com/b934a0da-0709-
 
 If the <i>Wait</i> parameter is <b>TRUE</b>, <b>WdfDpcCancel</b> must be called at IRQL = PASSIVE_LEVEL. If the <i>Wait</i> parameter is <b>FALSE</b>, <b>WdfDpcCancel</b> can be called at any IRQL.
 
-The following code example cancels the execution of the callback function that is associated with the DPC object that the code example in the <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a> topic created.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,11 +91,8 @@ The following code example cancels the execution of the callback function that i
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a>
-</dt>
-</dl>
+
  
 
  

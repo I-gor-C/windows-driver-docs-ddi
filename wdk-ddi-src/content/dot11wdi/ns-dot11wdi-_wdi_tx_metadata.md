@@ -7,8 +7,8 @@ old-location : netvista\wdi_tx_metadata.htm
 old-project : netvista
 ms.assetid : 21833980-0098-43c2-822c-9d8292f7120a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_TX_METADATA, WDI_TX_METADATA, *PWDI_TX_METADATA
+ms.date : 1/18/2018
+ms.keywords : "*PWDI_TX_METADATA, WDI_TX_METADATA structure [Network Drivers Starting with Windows Vista], PWDI_TX_METADATA structure pointer [Network Drivers Starting with Windows Vista], netvista.wifi_tx_metadata, dot11wdi/PWDI_TX_METADATA, dot11wdi/WDI_TX_METADATA, PWDI_TX_METADATA, WDI_TX_METADATA, netvista.wdi_tx_metadata, _WDI_TX_METADATA"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_TX_METADATA
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
@@ -61,66 +65,66 @@ typedef struct _WDI_TX_METADATA {
 
 ## Members
 
-        
-            `bAllowLegacyRates`
 
-            Specifies if legacy rates should be used for transmitting the frame.
-        
-            `bTxCompleteRequired`
+`bAllowLegacyRates`
 
-            Specifies if an <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_complete_ind.md">NdisWdiTxSendCompleteIndication</a> is required for this frame.
-        
-            `Ethertype`
+Specifies if legacy rates should be used for transmitting the frame.
 
-            Specifies the Ethertype of the frame.
-        
-            `ExemptionAction`
+`bTxCompleteRequired`
 
-            Specifies the <a href="..\dot11wdi\ne-dot11wdi-_wdi_exemption_action_type.md">WDI_EXEMPTION_ACTION_TYPE</a> value for this frame.
-        
-            `ExTID`
+Specifies if an <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_complete_ind.md">NdisWdiTxSendCompleteIndication</a> is required for this frame.
 
-            Extended TID of the frame (only if <b>TargetPriorityQueueing</b> is false).
-        
-            `IsUnicast`
+`Ethertype`
 
-            Specifies if the frame is for a unicast recipient address.
-        
-            `MpduPn`
+Specifies the Ethertype of the frame.
 
-            Specifies the MpduPn for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
-        
-            `PeerID`
+`ExemptionAction`
 
-            Peer ID of the frame (only if <b>TargetPriorityQueueing</b> is false).
-        
-            `PnLength`
+Specifies the <a href="..\dot11wdi\ne-dot11wdi-_wdi_exemption_action_type.md">WDI_EXEMPTION_ACTION_TYPE</a> value for this frame.
 
-            Specifies the PnLength for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
-        
-            `PortID`
+`ExTID`
 
-            Port ID of the frame.
-        
-            `ReplayIHVReserved0`
+Extended TID of the frame (only if <b>TargetPriorityQueueing</b> is false).
 
-            Reserved for use by the IHV miniport for Requeued/Replayed TX frames. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
-        
-            `ReplayIHVReserved1`
+`IsUnicast`
 
-            Reserved for use by the IHV miniport for Requeued/Replayed TX frames. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
-        
-            `SeqCtl`
+Specifies if the frame is for a unicast recipient address.
 
-            Specifies the SeqCtl (if necessary). This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
-        
-            `TxCost`
+`MpduPn`
 
-            Specifies the number of credits required to dequeue the frame.
-        
-            `wPad`
+Specifies the MpduPn for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
 
-            Reserved.
+`PeerID`
+
+Peer ID of the frame (only if <b>TargetPriorityQueueing</b> is false).
+
+`PnLength`
+
+Specifies the PnLength for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
+
+`PortID`
+
+Port ID of the frame.
+
+`ReplayIHVReserved0`
+
+Reserved for use by the IHV miniport for Requeued/Replayed TX frames. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
+
+`ReplayIHVReserved1`
+
+Reserved for use by the IHV miniport for Requeued/Replayed TX frames. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
+
+`SeqCtl`
+
+Specifies the SeqCtl (if necessary). This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
+
+`TxCost`
+
+Specifies the number of credits required to dequeue the frame.
+
+`wPad`
+
+Reserved.
 
 
 ## Requirements
@@ -131,18 +135,14 @@ typedef struct _WDI_TX_METADATA {
 | **Minimum UMDF version** |  |
 | **Header** | dot11wdi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dot11wdi\ne-dot11wdi-_wdi_exemption_action_type.md">WDI_EXEMPTION_ACTION_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_capabilities.md">WDI_TXRX_CAPABILITIES</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_METADATA structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_METADATA structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

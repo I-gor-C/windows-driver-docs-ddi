@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 80e43bd7-9ab9-46b0-a7f3-08c3577be4bc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::IsFrom32BitProcess, IsFrom32BitProcess
+ms.keywords : IsFrom32BitProcess method, IWDFIoRequest interface, IWDFIoRequest::IsFrom32BitProcess, IWDFIoRequest, umdf.iwdfiorequest_isfrom32bitprocess, UMDFRequestObjectRef_728bc611-2c40-4a49-b967-77e388072860.xml, wdf.iwdfiorequest_isfrom32bitprocess, IsFrom32BitProcess method, IWDFIoRequest interface, IsFrom32BitProcess method, IsFrom32BitProcess, wudfddi/IWDFIoRequest::IsFrom32BitProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.IsFrom32BitProcess
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 <b>IsFrom32BitProcess</b> returns a BOOL value that indicates whether the request originated from a 32-bit process. <b>TRUE</b> indicates the request originated from a 32-bit process. <b>FALSE</b> indicates the request did not originate from a 32-bit process.
 
-<b>IsFrom32BitProcess</b> returns a BOOL value that indicates whether the request originated from a 32-bit process. <b>TRUE</b> indicates the request originated from a 32-bit process. <b>FALSE</b> indicates the request did not originate from a 32-bit process.
-
-<b>IsFrom32BitProcess</b> returns a BOOL value that indicates whether the request originated from a 32-bit process. <b>TRUE</b> indicates the request originated from a 32-bit process. <b>FALSE</b> indicates the request did not originate from a 32-bit process.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,11 +74,8 @@ This function has no parameters.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-</dl>
+
  
 
  

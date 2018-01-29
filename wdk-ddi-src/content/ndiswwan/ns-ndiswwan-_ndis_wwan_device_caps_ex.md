@@ -7,8 +7,8 @@ old-location : netvista\ndis_wwan_device_caps_ex.htm
 old-project : netvista
 ms.assetid : FC801FA3-699F-4EE5-BED9-35CA696A5E52
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_WWAN_DEVICE_CAPS_EX, *PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX
+ms.date : 1/18/2018
+ms.keywords : PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DEVICE_CAPS_EX, netvista.ndis_wwan_device_caps_ex, *PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX, ndiswwan/PNDIS_WWAN_DEVICE_CAPS_EX, _NDIS_WWAN_DEVICE_CAPS_EX, PNDIS_WWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_WWAN_DEVICE_CAPS_EX
-req.alt-loc : ndiswwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX"
 ---
 
@@ -48,16 +52,19 @@ typedef struct _NDIS_WWAN_DEVICE_CAPS_EX {
 
 ## Members
 
-        
-            `Header`
 
-            The header with type, revision, and size information about the <b>NDIS_WWAN_DEVICE_CAPS_EX</b> structure.
+`DeviceCaps`
+
+
+
+`Header`
+
+The header with type, revision, and size information about the <b>NDIS_WWAN_DEVICE_CAPS_EX</b> structure.
      The MB Service sets the header with the values that are shown in the following table when it sends the
      data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
-
 <table>
 <tr>
 <th>Header submember</th>
@@ -93,18 +100,16 @@ sizeof(NDIS_WWAN_DEVICE_CAPS_EX)
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
-        
-            `uStatus`
 
-            The status of system capability. The following table shows the possible values for
+`uStatus`
+
+The status of system capability. The following table shows the possible values for
      this member.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -173,27 +178,20 @@ The operation failed because the device is in the process of initializing. Retry
 | **Minimum UMDF version** |  |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="..\wwan\ns-wwan-_wwan_device_caps_ex.md">WWAN_DEVICE_CAPS_EX</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
-</dt>
-<dt>
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps.md">NDIS_WWAN_DEVICE_CAPS</a>
-</dt>
-<dt>
 <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
-</dt>
-</dl>
- 
+
+<a href="..\wwan\ns-wwan-_wwan_device_caps_ex.md">WWAN_DEVICE_CAPS_EX</a>
+
+<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
+
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps.md">NDIS_WWAN_DEVICE_CAPS</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fd0bbd6e-bb23-4d0c-9cac-9bb7657876a0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTarget, IWDFIoTarget::FormatRequestForIoctl, FormatRequestForIoctl
+ms.keywords : umdf.iwdfiotarget_formatrequestforioctl, IWDFIoTarget interface, FormatRequestForIoctl method, IWDFIoTarget::FormatRequestForIoctl, UMDFIoTargetObjectRef_9c72ba41-4a3f-4bea-8ca1-bcf04dd033ad.xml, FormatRequestForIoctl method, wudfddi/IWDFIoTarget::FormatRequestForIoctl, IWDFIoTarget, FormatRequestForIoctl, wdf.iwdfiotarget_formatrequestforioctl, FormatRequestForIoctl method, IWDFIoTarget interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoTarget.FormatRequestForIoctl
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -105,23 +109,16 @@ A pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
 <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-</dt>
-</dl>
+
  
 
  

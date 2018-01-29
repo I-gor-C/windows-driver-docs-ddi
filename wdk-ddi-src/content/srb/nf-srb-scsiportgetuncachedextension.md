@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d32da7d9-7f26-4c99-8c10-3b9e1a7c9c22
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortGetUncachedExtension
+ms.keywords : ScsiPortGetUncachedExtension routine [Storage Devices], storage.scsiportgetuncachedextension, ScsiPortGetUncachedExtension, srb/ScsiPortGetUncachedExtension, scsiprt_b3764d3f-3e99-4a2f-b17c-30d6fcafe255.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortGetUncachedExtension
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortGetUncachedExtension function
 The <b>ScsiPortGetUncachedExtension</b> routine allocates memory that can be used by both the CPU and a bus-master HBA for DMA or for shared data.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -98,17 +103,12 @@ The ScsiPort driver will free the memory allocated by <b>ScsiPortGetUncachedExte
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
-</dt>
-<dt>
+
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
 <a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 69a422a1-b878-496e-b1b9-e04b7c3db121
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IQueueCallbackStateChange, IQueueCallbackStateChange::OnStateChange, OnStateChange
+ms.keywords : wdf.iqueuecallbackstatechange_onstatechange, IQueueCallbackStateChange, IQueueCallbackStateChange::OnStateChange, UMDFQueueObjectRef_194f5013-22a2-40c4-8913-9371aa281009.xml, OnStateChange method, OnStateChange method, IQueueCallbackStateChange interface, IQueueCallbackStateChange interface, OnStateChange method, umdf.iqueuecallbackstatechange_onstatechange, wudfddi/IQueueCallbackStateChange::OnStateChange, OnStateChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IQueueCallbackStateChange.OnStateChange
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -83,20 +87,14 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
-</dt>
-</dl>
+
  
 
  

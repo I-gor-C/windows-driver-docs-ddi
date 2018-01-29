@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 71f9d0c2-ffc9-4fe1-ae95-f38a1d1e82df
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords : structs-filter_5efcc842-8111-4808-9b70-14d63dd91ba5.xml, storage.filter_initialization_data, PFILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA structure pointer [Storage Devices], ntdddump/FILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION, DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ, ntdddump/PFILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION_1, FILTER_INITIALIZATION_DATA structure [Storage Devices], _FILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA, DUMP_FILTER_CRITICAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista and Windows S
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILTER_INITIALIZATION_DATA
-req.alt-loc : ntdddump.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 # _FILTER_INITIALIZATION_DATA structure
@@ -55,58 +59,80 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 
 ## Members
 
-        
-            `DumpData`
 
-            The filter driver can pass a pointer to internal context data in this member. This pointer is passed back to the filter driver in a <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a> structure during each callback.
-        
-            `DumpFinish`
+`DumpData`
 
-            A pointer to the dump finish routine.  This routine is called when the crash dump is finished.
-        
-            `DumpRead`
+The filter driver can pass a pointer to internal context data in this member. This pointer is passed back to the filter driver in a <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a> structure during each callback.
 
-            A pointer to the read routine. This routine is called after every crash dump read request. This member is available starting in Windows 8.
-        
-            `DumpStart`
+`DumpFinish`
 
-            A pointer to the dump initialization routine. This routine is called when the crash dump starts.
-        
-            `DumpUnload`
+A pointer to the dump finish routine.  This routine is called when the crash dump is finished.
 
-            A pointer to the dump unload routine. This routine is called before the driver is unloaded.
-        
-            `DumpWrite`
+`DumpRead`
 
-            A pointer to the write routine. This routine is called before every crash dump write request.
-        
-            `Flags`
+A pointer to the read routine. This routine is called after every crash dump read request. This member is available starting in Windows 8.
 
-            A set of flags for  dump filter initialization. This value is set to either 0 or the following:
+`DumpStart`
 
+A pointer to the dump initialization routine. This routine is called when the crash dump starts.
+
+`DumpUnload`
+
+A pointer to the dump unload routine. This routine is called before the driver is unloaded.
+
+`DumpWrite`
+
+A pointer to the write routine. This routine is called before every crash dump write request.
+
+`Flags`
+
+A set of flags for  dump filter initialization. This value is set to either 0 or the following:
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `MajorVersion`
+<td width="40%"><a id="DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ"></a><a id="dump_filter_flag_system_support_read"></a><dl>
+<dt><b>DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ</b></dt>
+</dl>
+</td>
+<td width="60%">
+The dump filter supports filtering reads, and a read callback routine is set for <b>DumpRead</b>. This flag is supported starting in Windows 8.
 
-            Set to one of the following major version values:
-        
-            `MaxPagesPerWrite`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="DUMP_FILTER_CRITICAL"></a><a id="dump_filter_critical"></a><dl>
+<dt><b>DUMP_FILTER_CRITICAL</b></dt>
+</dl>
+</td>
+<td width="60%">
+Fail the filter initialization  immediately if the  dump filter driver's <b>DriverEntry</b> routine does not return STATUS_SUCCESS. This flag is supported starting in Windows 8.
 
-            The maximum number of pages for each dump read or write request.
-        
-            `MinorVersion`
+</td>
+</tr>
+</table>
 
-            Set to <b>DUMP_FILTER_MINOR_VERSION</b>.
+`MajorVersion`
 
-    ## Remarks
-        For a dump filter driver to support read filtering, the following settings are required:
+Set to one of the following major version values:
 
-If any of these members are not set, the dump filter driver will be marked as not supporting dump reads by the crashdump stack.
+`MaxPagesPerWrite`
+
+The maximum number of pages for each dump read or write request.
+
+`MinorVersion`
+
+Set to <b>DUMP_FILTER_MINOR_VERSION</b>.
+
+## Remarks
+For a dump filter driver to support read filtering, the following settings are required:
+<ul>
+<li>The <b>DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ</b> flag is set in <b>Flags</b>.</li>
+<li><b>MajorVersion</b> is set to <b>DUMP_FILTER_MAJOR_VERSION</b> = 2.</li>
+<li>The <b>DumpRead</b> pointer is set to the dump filter driver's read routine.</li>
+</ul>If any of these members are not set, the dump filter driver will be marked as not supporting dump reads by the crashdump stack.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -116,28 +142,20 @@ If any of these members are not set, the dump filter driver will be marked as no
 | **Minimum UMDF version** |  |
 | **Header** | ntdddump.h (include Ntdddump.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddump\nc-ntdddump-dump_finish.md">Dump_Finish</a>
-</dt>
-<dt>
-<a href="..\ntdddump\nc-ntdddump-dump_read.md">Dump_Read</a>
-</dt>
-<dt>
-<a href="..\ntdddump\nc-ntdddump-dump_start.md">Dump_Start</a>
-</dt>
-<dt>
-<a href="..\ntdddump\nc-ntdddump-dump_write.md">Dump_Write</a>
-</dt>
-<dt>
-<a href="..\ntdddump\nc-ntdddump-dump_unload.md">Dump_Unload</a>
-</dt>
-<dt>
+
 <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
-</dt>
-</dl>
+
+<a href="..\ntdddump\nc-ntdddump-dump_start.md">Dump_Start</a>
+
+<a href="..\ntdddump\nc-ntdddump-dump_write.md">Dump_Write</a>
+
+<a href="..\ntdddump\nc-ntdddump-dump_read.md">Dump_Read</a>
+
+<a href="..\ntdddump\nc-ntdddump-dump_unload.md">Dump_Unload</a>
+
  
 
  

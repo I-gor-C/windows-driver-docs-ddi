@@ -7,8 +7,8 @@ old-location : print\ixpsdocumentconsumer.htm
 old-project : print
 ms.assetid : 98e603e6-2786-4bc8-ad8a-0e91b0d444d8
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.date : 1/18/2018
+ms.keywords : print.ixpsdocumentconsumer, IXpsDocumentConsumer interface [Print Devices], IXpsDocumentConsumer interface [Print Devices], described, IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer, filterpipeline_230eb0f6-427a-4986-b8ad-bc1d41853d67.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IXpsDocumentConsumer
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
 # IXpsDocumentConsumer interface
 
-A filter uses the <code>IXpsDocumentConsumer</code> interface when it generates XPS content for the pipeline to consume.
+A filter uses the <code>IXpsDocumentConsumer</code> interface when it generates XPS content for the pipeline to consume. 
+<div class="alert"><b>Note</b>    The XPS print filter pipeline does not preserve digital signatures or story fragments. You may be able to work around this by using stream filters.</div><div> </div>
 
 ## Methods
 

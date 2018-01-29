@@ -7,8 +7,8 @@ old-location : netvista\rildeletemsgparams.htm
 old-project : netvista
 ms.assetid : e87104d2-96e4-4840-8609-8a75247a039a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS, RILDELETEMSGPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILDELETEMSGPARAMS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILDELETEMSGPARAMS, RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS, netvista.rildeletemsgparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDELETEMSGPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILDELETEMSGPARAMS, RILDELETEMSGPARAMS"
 ---
 
@@ -47,14 +51,14 @@ typedef struct _RILDELETEMSGPARAMS {
 
 ## Members
 
-        
-            `dwIndex`
 
-            
-        
-            `hUiccApp`
+`dwIndex`
 
-            
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

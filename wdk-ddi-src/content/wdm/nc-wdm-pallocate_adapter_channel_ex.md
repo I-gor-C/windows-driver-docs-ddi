@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : BF255782-0C3E-4F36-BD38-79CE88E7F37D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.allocateadapterchannelex, AllocateAdapterChannelEx, AllocateAdapterChannelEx callback function [Kernel-Mode Driver Architecture], AllocateAdapterChannelEx, PALLOCATE_ADAPTER_CHANNEL_EX, PALLOCATE_ADAPTER_CHANNEL_EX, wdm/AllocateAdapterChannelEx, DMA_SYNCHRONOUS_CALLBACK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AllocateAdapterChannelEx
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -78,13 +82,24 @@ The number of map registers to use in the DMA transfer. The calling driver shoul
 `Flags`
 
 The adapter channel allocation flags. The following flag is supported.
-
 <table>
 <tr>
 <th>Flag</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="DMA_SYNCHRONOUS_CALLBACK"></a><a id="dma_synchronous_callback"></a><dl>
+<dt><b><b>DMA_SYNCHRONOUS_CALLBACK</b></b></dt>
+</dl>
+</td>
+<td width="60%">
+The <b>AllocateAdapterChannelEx</b> routine is called synchronously. If this flag is set, and the required DMA resources are not immediately available, the call fails and returns STATUS_INSUFFICIENT_RESOURCES.
+
+</td>
+</tr>
+</table> 
+
+If the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag is set, the <i>ExecutionRoutine</i> parameter is optional and can be NULL. For more information about this flag, see the Remarks section.
 
 `ExecutionRoutine`
 
@@ -104,12 +119,34 @@ The driver-determined, adapter-control context. This context is passed to the <a
 ## Return Value
 
 <b>AllocateAdapterChannelEx</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETERS</b></dt>
-</dl>The routine failed due to invalid parameter values passed by the caller.
+</dl>
+</td>
+<td width="60%">
+The routine failed due to invalid parameter values passed by the caller.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The routine failed to allocate resources required for the DMA transfer.
+</dl>
+</td>
+<td width="60%">
+The routine failed to allocate resources required for the DMA transfer.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -120,22 +157,24 @@ The driver-determined, adapter-control context. This context is passed to the <a
 By default, <b>AllocateAdapterChannelEx</b> returns asynchronously, without waiting for the requested resource allocation to complete. After this return, the caller can, if necessary, cancel the pending allocation request by calling the <a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAdapterChannel</a> routine.
 
 If the calling driver sets the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag, the <b>AllocateAdapterChannelEx</b> routine behaves as follows:
-
+<ul>
+<li>
 If the requested DMA resources are not immediately available, <b>AllocateAdapterChannelEx</b> does not wait for resources and does not call the <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine. Instead, <b>AllocateAdapterChannelEx</b> fails and returns STATUS_INSUFFICIENT_RESOURCES.
 
+</li>
+<li>
 The driver is not required to supply an <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine if the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag is set.
 
+</li>
+<li>
 If the driver supplies an <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine, the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag indicates that this routine is to be called in the context of the calling thread, before <b>AllocateAdapterChannelEx</b> returns.
 
+</li>
+<li>
 If the driver does not supply an <a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> routine, the driver can use the allocated resources after <b>AllocateAdapterChannelEx</b> returns. In this case, the driver must call <a href="..\wdm\nc-wdm-pfree_adapter_object.md">FreeAdapterObject</a> after it finishes using the allocated resources.
 
-<b>AllocateAdapterChannelEx</b> is an extended version of the <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a> routine.  The following features are available only in the extended version:
-
-
-
-The driver can call <a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAdapterChannel</a> to cancel a pending allocation request when the DMA adapter is queued to wait for DMA resources.
-
-The driver can set the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag to request that the driver-supplied <i>AdapterControl</i> routine be called in the caller's thread, before <b>AllocateAdapterChannelEx</b> returns.
+</li>
+</ul><b>AllocateAdapterChannelEx</b> is an extended version of the <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a> routine.  The following features are available only in the extended version:
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -151,50 +190,34 @@ The driver can set the <b>DMA_SYNCHRONOUS_CALLBACK</b> flag to request that the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAdapterChannel</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers_ex.md">FlushAdapterBuffersEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pfree_adapter_object.md">FreeAdapterObject</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pinitialize_dma_transfer_context.md">InitializeDmaTransferContext</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>
+
+<a href="..\wdm\nc-wdm-pflush_adapter_buffers_ex.md">FlushAdapterBuffersEx</a>
+
+<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
+
 <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
+
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
+<a href="..\wdm\nc-wdm-pfree_adapter_object.md">FreeAdapterObject</a>
+
+<a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAdapterChannel</a>
+
+<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
+
  
 
  

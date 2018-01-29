@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f8ab3914-c83e-4bfd-94b5-f4c409236b95
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcRegisterPhysicalConnection
+ms.keywords : PcRegisterPhysicalConnection, audpc-routines_d806f159-7b56-428c-8780-f95d3c5f3b14.xml, PcRegisterPhysicalConnection function [Audio Devices], audio.pcregisterphysicalconnection, portcls/PcRegisterPhysicalConnection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcRegisterP
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcRegisterPhysicalConnection
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -103,26 +107,18 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
-</dt>
-<dt>
 <a href="..\portcls\nf-portcls-pcregisterphysicalconnectiontoexternal.md">PcRegisterPhysicalConnectionToExternal</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iport.md">IPort</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537024">IUnregisterPhysicalConnection::UnregisterPhysicalConnection</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
+
  
 
  

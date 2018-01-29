@@ -7,8 +7,8 @@ old-location : netvista\dot11_invitation_request_send_complete_parameters.htm
 old-project : netvista
 ms.assetid : 9E2951DE-083E-43D2-A487-97D0ADD76BE2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS
+ms.date : 1/18/2018
+ms.keywords : windot11/DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_invitation_request_send_complete_parameters, windot11/PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with   Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS
-req.alt-loc : Windot11.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The completion parameters for a sent  inivitation request are specified in a <b>DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. This structure is sent with an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439779">NDIS_STATUS_DOT11_WFD_INVITATION_REQUEST_SEND_COMPLETE</a> request to the miniport.
 
 ## Syntax
 ````
@@ -53,15 +57,14 @@ typedef struct _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 
 ## Members
 
-        
-            `DialogToken`
 
-            The dialog token from the invitation request packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451806">OID_DOT11_WFD_SEND_INVITATION_REQUEST</a> request.
-        
-            `Header`
+`DialogToken`
 
-            The type, revision, and size of the <b>DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
+The dialog token from the invitation request packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451806">OID_DOT11_WFD_SEND_INVITATION_REQUEST</a> request.
 
+`Header`
+
+The type, revision, and size of the <b>DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
 <table>
 <tr>
 <th>Member</th>
@@ -80,26 +83,26 @@ typedef struct _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 <td>DOT11_SIZEOF_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS_REVISION_1</td>
 </tr>
 </table>
-        
-            `PeerDeviceAddress`
 
-            The device address of the Peer-to-Peer (P2P) Wi-Fi Direct (WFD) device that the invitation request was sent to.
-        
-            `ReceiverAddress`
+`PeerDeviceAddress`
 
-            The address of the device that received the invitation request.
-        
-            `Status`
+The device address of the Peer-to-Peer (P2P) Wi-Fi Direct (WFD) device that the invitation request was sent to.
 
-            The status of the request send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted.
-        
-            `uIEsLength`
+`ReceiverAddress`
 
-            The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
-        
-            `uIEsOffset`
+The address of the device that received the invitation request.
 
-            The offset, in bytes,  of the array of additional information elements (IEs) that were included in the invitation request packet. This offset is from the start of the buffer that contains this structure.
+`Status`
+
+The status of the request send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted.
+
+`uIEsLength`
+
+The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+
+`uIEsOffset`
+
+The offset, in bytes,  of the array of additional information elements (IEs) that were included in the invitation request packet. This offset is from the start of the buffer that contains this structure.
 
 
 ## Requirements

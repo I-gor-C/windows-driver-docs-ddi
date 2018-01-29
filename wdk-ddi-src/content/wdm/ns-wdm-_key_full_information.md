@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dd099435-e3e3-4d78-a829-0f12f2db46d9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_FULL_INFORMATION, *PKEY_FULL_INFORMATION, KEY_FULL_INFORMATION
+ms.keywords : "*PKEY_FULL_INFORMATION, kernel.key_full_information, wdm/KEY_FULL_INFORMATION, wdm/PKEY_FULL_INFORMATION, kstruct_c_1b9700b5-eedf-4f0f-8b73-bf4b9cfa0ccd.xml, PKEY_FULL_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PKEY_FULL_INFORMATION, _KEY_FULL_INFORMATION, KEY_FULL_INFORMATION, KEY_FULL_INFORMATION structure [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_FULL_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PKEY_FULL_INFORMATION, KEY_FULL_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KEY_FULL_INFORMATION, *PKEY_FULL_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -57,53 +61,53 @@ typedef struct _KEY_FULL_INFORMATION {
 
 ## Members
 
-        
-            `Class`
 
-            An array of wide characters that contains the name of the class of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_FULL_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.
-        
-            `ClassLength`
+`Class`
 
-            The size, in bytes, of the key class name string in the <b>Class</b> array.
-        
-            `ClassOffset`
+An array of wide characters that contains the name of the class of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_FULL_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.
 
-            The byte offset from the start of this structure to the <b>Class</b> member.
-        
-            `LastWriteTime`
+`ClassLength`
 
-            The last time this key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.
-        
-            `MaxClassLen`
+The size, in bytes, of the key class name string in the <b>Class</b> array.
 
-            The maximum size, in bytes, of a class name.
-        
-            `MaxNameLen`
+`ClassOffset`
 
-            The maximum size, in bytes, of any name for a subkey.
-        
-            `MaxValueDataLen`
+The byte offset from the start of this structure to the <b>Class</b> member.
 
-            The maximum size, in bytes, of a value entry data field.
-        
-            `MaxValueNameLen`
+`LastWriteTime`
 
-            The maximum size, in bytes, of a value entry name.
-        
-            `SubKeys`
+The last time this key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.
 
-            The number of subkeys for this key.
-        
-            `TitleIndex`
+`MaxClassLen`
 
-            Device and intermediate drivers should ignore this member.
-        
-            `Values`
+The maximum size, in bytes, of a class name.
 
-            The number of value entries for this key.
+`MaxNameLen`
 
-    ## Remarks
-        The <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a> and <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routines use the <b>KEY_FULL_INFORMATION</b> structure to contain the full information for a registry key. When the <i>KeyInformationClass</i> parameter of either routine is <b>KeyFullInformation</b>, the <i>KeyInformation</i> buffer is treated as a <b>KEY_FULL_INFORMATION</b> structure.  For more information about the <b>KeyFullInformation</b> enumeration value, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
+The maximum size, in bytes, of any name for a subkey.
+
+`MaxValueDataLen`
+
+The maximum size, in bytes, of a value entry data field.
+
+`MaxValueNameLen`
+
+The maximum size, in bytes, of a value entry name.
+
+`SubKeys`
+
+The number of subkeys for this key.
+
+`TitleIndex`
+
+Device and intermediate drivers should ignore this member.
+
+`Values`
+
+The number of value entries for this key.
+
+## Remarks
+The <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a> and <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routines use the <b>KEY_FULL_INFORMATION</b> structure to contain the full information for a registry key. When the <i>KeyInformationClass</i> parameter of either routine is <b>KeyFullInformation</b>, the <i>KeyInformation</i> buffer is treated as a <b>KEY_FULL_INFORMATION</b> structure.  For more information about the <b>KeyFullInformation</b> enumeration value, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,34 +117,24 @@ typedef struct _KEY_FULL_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
+
+<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
+
 <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+
+<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
+
+<a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a>
+
  
 
  

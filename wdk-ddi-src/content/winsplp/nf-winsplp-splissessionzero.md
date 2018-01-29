@@ -7,8 +7,8 @@ old-location : print\splissessionzero.htm
 old-project : print
 ms.assetid : 9d68a41d-0f2b-4cf0-92c6-8e05ce6b4378
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : SplIsSessionZero
+ms.date : 1/18/2018
+ms.keywords : SplIsSessionZero function [Print Devices], winsplp/SplIsSessionZero, spoolfnc_8fd112f0-f2bf-4a33-8411-c1ce7c620390.xml, SplIsSessionZero, print.splissessionzero
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This function is available in Windows XP and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SplIsSessionZero
-req.alt-loc : Spoolss.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,13 +29,19 @@ req.type-library :
 req.lib : Spoolss.lib
 req.dll : Spoolss.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NOTIFICATION_CONFIG_FLAGS
 req.product : Windows 10 or later.
 ---
 
 
 # SplIsSessionZero function
-The <code>SplIsSessionZero</code> function determines whether a certain print job (print handle plus job ID) was issued in <a href="wdkgloss.s#wdkgloss.session_zero#wdkgloss.session_zero"><i>session zero</i></a>.
+The <code>SplIsSessionZero</code> function determines whether a certain print job (print handle plus job ID) was issued in <a href="https://msdn.microsoft.com/5f6fec1a-1134-4765-81be-9b50939e5e66">session zero</a>.
 
 ## Syntax
 
@@ -57,7 +61,7 @@ Is a handle to the printer.
 
 `JobId`
 
-
+TBD
 
 `pIsSessionZero`
 
@@ -88,13 +92,10 @@ If you plan to use this function in a driver intended to run under Windows 2000,
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\winsplp\nf-winsplp-splpromptuiinuserssession.md">SplPromptUIInUsersSession</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20SplIsSessionZero function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20SplIsSessionZero function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

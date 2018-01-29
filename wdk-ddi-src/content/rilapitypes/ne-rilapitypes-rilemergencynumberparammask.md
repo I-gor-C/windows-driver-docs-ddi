@@ -7,8 +7,8 @@ old-location : netvista\rilemergencynumberparammask_2.htm
 old-project : netvista
 ms.assetid : a59daf60-43d9-4fe4-af72-dc031f259133
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILEMERGENCYNUMBERPARAMMASK, RILEMERGENCYNUMBERPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_ENUM_ALL, RIL_PARAM_ENUM_NUMBER, RIL_PARAM_ENUM_UICC, netvista.rilemergencynumberparammask_2, RILEMERGENCYNUMBERPARAMMASK, rilapitypes/RILEMERGENCYNUMBERPARAMMASK, rilapitypes/RIL_PARAM_ENUM_UICC, RILEMERGENCYNUMBERPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_ENUM_CATEGORY, rilapitypes/RIL_PARAM_ENUM_NUMBER, rilapitypes/RIL_PARAM_ENUM_ALL, RIL_PARAM_ENUM_CATEGORY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILEMERGENCYNUMBERPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILEMERGENCYNUMBERPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -59,6 +63,11 @@ typedef enum _RILEMERGENCYNUMBERPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_ENUM_CATEGORY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_ENUM_EXECUTOR</td>
 <td></td>
 </tr>
 

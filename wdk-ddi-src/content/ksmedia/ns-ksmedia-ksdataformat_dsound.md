@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2b620e4f-8c26-479a-8b06-4e558b0813e5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSDATAFORMAT_DSOUND, *PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND
+ms.keywords : PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND structure [Audio Devices], ksmedia/KSDATAFORMAT_DSOUND, *PKSDATAFORMAT_DSOUND, ksmedia/PKSDATAFORMAT_DSOUND, PKSDATAFORMAT_DSOUND structure pointer [Audio Devices], KSDATAFORMAT_DSOUND, audio.ksdataformat_dsound, aud-prop_2e782d9c-dfeb-4797-b902-e32e947d2542.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDATAFORMAT_DSOUND
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND"
 ---
 
@@ -47,17 +51,17 @@ typedef struct {
 
 ## Members
 
-        
-            `BufferDesc`
 
-            Describes the DirectSound buffer. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-ksdsound_bufferdesc.md">KSDSOUND_BUFFERDESC</a>.
-        
-            `DataFormat`
+`BufferDesc`
 
-            Specifies the stream's data format. This member is a structure of type <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>.
+Describes the DirectSound buffer. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-ksdsound_bufferdesc.md">KSDSOUND_BUFFERDESC</a>.
 
-    ## Remarks
-        In response to an input <i>DataRange</i> parameter that specifies a DirectSound format (see example in <a href="https://msdn.microsoft.com/cc31eb2d-7421-4748-b14c-f4d3d15f9884">DirectSound Stream Data Range</a>), the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536764">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible DirectSound format. If so, the method outputs a KSDATAFORMAT_DSOUND structure (see example in <a href="https://msdn.microsoft.com/41d3d5ad-7336-4ecf-b6e2-a24ee4ec731f">DirectSound Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.
+`DataFormat`
+
+Specifies the stream's data format. This member is a structure of type <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>.
+
+## Remarks
+In response to an input <i>DataRange</i> parameter that specifies a DirectSound format (see example in <a href="https://msdn.microsoft.com/cc31eb2d-7421-4748-b14c-f4d3d15f9884">DirectSound Stream Data Range</a>), the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536764">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible DirectSound format. If so, the method outputs a KSDATAFORMAT_DSOUND structure (see example in <a href="https://msdn.microsoft.com/41d3d5ad-7336-4ecf-b6e2-a24ee4ec731f">DirectSound Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksdsound_bufferdesc.md">KSDSOUND_BUFFERDESC</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536764">IMiniport::DataRangeIntersection</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+
  
 
  

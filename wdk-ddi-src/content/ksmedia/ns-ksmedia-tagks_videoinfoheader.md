@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 402f292c-14f8-4ff3-b1b3-b992578cbcc8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER
+ms.keywords : tagKS_VIDEOINFOHEADER, vidcapstruct_785a83de-3f90-44f1-b20f-9509032e8a06.xml, PKS_VIDEOINFOHEADER structure pointer [Streaming Media Devices], stream.ks_videoinfoheader, PKS_VIDEOINFOHEADER, ksmedia/PKS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER structure [Streaming Media Devices], ksmedia/KS_VIDEOINFOHEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_VIDEOINFOHEADER
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER
 ---
 
@@ -51,33 +55,33 @@ typedef struct tagKS_VIDEOINFOHEADER {
 
 ## Members
 
-        
-            `AvgTimePerFrame`
 
-            Specifies the average time per frame, in 100-nanosecond units.
-        
-            `bmiHeader`
+`AvgTimePerFrame`
 
-            Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
-        
-            `dwBitErrorRate`
+Specifies the average time per frame, in 100-nanosecond units.
 
-            Specifies a value that indicates the video stream's data error rate, in bit errors per second.
-        
-            `dwBitRate`
+`bmiHeader`
 
-            Specifies a value that indicates the video stream's approximate data rate, in bits per second.
-        
-            `rcSource`
+Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
 
-            Specifies a clipping rectangle that selects the portion of the active video signal to use.
-        
-            `rcTarget`
+`dwBitErrorRate`
 
-            Specifies a rectangle that defines the target destination video window.
+Specifies a value that indicates the video stream's data error rate, in bit errors per second.
 
-    ## Remarks
-        To describe a video stream with bob or weave settings, use <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a>.
+`dwBitRate`
+
+Specifies a value that indicates the video stream's approximate data rate, in bits per second.
+
+`rcSource`
+
+Specifies a clipping rectangle that selects the portion of the active video signal to use.
+
+`rcTarget`
+
+Specifies a rectangle that defines the target destination video window.
+
+## Remarks
+To describe a video stream with bob or weave settings, use <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a>.
 
 The KS_VIDEOINFOHEADER structure is identical to the Microsoft DirectShow VIDEOINFOHEADER structure.
 
@@ -95,16 +99,12 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+
  
 
  

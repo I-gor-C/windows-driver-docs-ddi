@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 72935645-0567-4FC9-962C-3E823C08D001
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
+ms.keywords : P_UCX_CONTROLLER_RESET_COMPLETE_INFO structure pointer [Buses], _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, P_UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO structure [Buses], ucxcontroller/P_UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO, ucxcontroller/_UCX_CONTROLLER_RESET_COMPLETE_INFO, buses._ucx_controller_reset_complete_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_CONTROLLER_RESET_COMPLETE_INFO
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _UCX_CONTROLLER_RESET_COMPLETE_INFO {
 
 ## Members
 
-        
-            `Size`
 
-            The size in bytes of this structure.
-        
-            `UcxControllerState`
+`Size`
 
-            The UCX controller state after reset.
-        
-            `UcxCoordinated`
+The size in bytes of this structure.
 
-            Indicates if the reset was coordinated with UCX (TRUE) or not (FALSE).
+`UcxControllerState`
 
-    ## Remarks
-        This structure is populated by a call to <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>.</p>
+The UCX controller state after reset.
+
+`UcxCoordinated`
+
+Indicates if the reset was coordinated with UCX (TRUE) or not (FALSE).
+
+## Remarks
+This structure is populated by a call to <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

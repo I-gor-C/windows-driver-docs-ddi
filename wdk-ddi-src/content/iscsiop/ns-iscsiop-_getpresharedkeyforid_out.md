@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 21d6378e-b93b-4e97-842a-a3157e081f31
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetPresharedKeyForId_OUT, GetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT
+ms.keywords : iscsiop/GetPresharedKeyForId_OUT, GetPresharedKeyForId_OUT structure [Storage Devices], GetPresharedKeyForId_OUT, _GetPresharedKeyForId_OUT, storage.getpresharedkeyforid_out, iscsiop/PGetPresharedKeyForId_OUT, structs-iSCSI_6807c82b-45b4-44c7-a1e0-a99607c1cd4f.xml, PGetPresharedKeyForId_OUT structure pointer [Storage Devices], *PGetPresharedKeyForId_OUT, PGetPresharedKeyForId_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetPresharedKeyForId_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT
 ---
 
@@ -47,17 +51,17 @@ typedef struct _GetPresharedKeyForId_OUT {
 
 ## Members
 
-        
-            `SecurityFlags`
 
-            A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.
-        
-            `Status`
+`SecurityFlags`
 
-            On output from <b>GetPresharedKeyForId</b>, the status of the <b>GetPresharedKeyForId</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.
 
-    ## Remarks
-        You must initiate this method if the initiator supports IKE.
+`Status`
+
+On output from <b>GetPresharedKeyForId</b>, the status of the <b>GetPresharedKeyForId</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+You must initiate this method if the initiator supports IKE.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,25 +71,18 @@ typedef struct _GetPresharedKeyForId_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
-</dt>
-<dt>
-<a href="..\iscsiop\ns-iscsiop-_getpresharedkeyforid_in.md">GetPresharedKeyForId_IN</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
-</dt>
-<dt>
+
+<a href="..\iscsiop\ns-iscsiop-_getpresharedkeyforid_in.md">GetPresharedKeyForId_IN</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
+
  
 
  

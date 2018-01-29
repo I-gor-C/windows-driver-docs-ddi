@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a4bdafeb-310a-4ceb-966e-a1e3660fc5f2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
+ms.keywords : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 structure [Display Devices], display.d3dkmt_signalsynchronizationobject2, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, OpenGL_Structs_ac490d8c-5ab9-4a1f-8908-5c2e7786b65b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 is supported beg
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
 ---
 
@@ -60,32 +64,32 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 {
 
 ## Members
 
-        
-            `BroadcastContext`
 
-            [in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the additional contexts to broadcast the event to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of contexts that the OpenGL ICD can broadcast the event to.
+`BroadcastContext`
+
+[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the additional contexts to broadcast the event to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of contexts that the OpenGL ICD can broadcast the event to.
 
 The original context that the <b>hContext</b> member specifies and that owns the event is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the OpenGL ICD sends the event to the owning context (<b>hContext</b>) and broadcasts to that one additional context.
-        
-            `BroadcastContextCount`
 
-            [in] The number of additional contexts in the array that <b>BroadcastContext</b> specifies.
-        
-            `Flags`
+`BroadcastContextCount`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
-        
-            `hContext`
+[in] The number of additional contexts in the array that <b>BroadcastContext</b> specifies.
 
-            [in] A kernel-mode handle to a context that signals the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies.
-        
-            `ObjectCount`
+`Flags`
 
-            [in] The number of synchronization events in the <b>ObjectHandleArray</b> array.
-        
-            `ObjectHandleArray`
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
 
-            [in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member signals. The D3DDDI_MAX_OBJECT_SIGNALED constant, which is defined as 32, indicates the maximum number of synchronization events that the context can signal.
+`hContext`
+
+[in] A kernel-mode handle to a context that signals the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies.
+
+`ObjectCount`
+
+[in] The number of synchronization events in the <b>ObjectHandleArray</b> array.
+
+`ObjectHandleArray`
+
+[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member signals. The D3DDDI_MAX_OBJECT_SIGNALED constant, which is defined as 32, indicates the maximum number of synchronization events that the context can signal.
 
 
 ## Requirements
@@ -96,16 +100,12 @@ The original context that the <b>hContext</b> member specifies and that owns the
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobject2.md">D3DKMTSignalSynchronizationObject2</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0c4a5eb8-d364-4e5d-9d2f-2605c8c34f63
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "*PPOWER_ACTION, *PPOWER_ACTION, POWER_ACTION"
+ms.keywords : umdf.power_action, PPOWER_ACTION enumeration pointer, PowerActionShutdownReset, wudfddi/PowerActionNone, wudfddi/PowerActionReserved, PowerActionWarmEject, wdf.power_action, wudfddi/PowerActionHibernate, PowerActionSleep, wudfddi/PowerActionWarmEject, wudfddi/PowerActionSleep, PowerActionReserved, wudfddi/POWER_ACTION, wudfddi/PowerActionShutdownOff, PowerActionShutdownOff, PowerActionNone, POWER_ACTION enumeration, wudfddi/PowerActionShutdownReset, PPOWER_ACTION, wudfddi/PPOWER_ACTION, umdfstructs_02db2a83-1907-4aa2-9cdd-af3477e78ddd.xml, *PPOWER_ACTION, PowerActionShutdown, PowerActionHibernate, POWER_ACTION, wudfddi/PowerActionShutdown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : POWER_ACTION
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 ---
 
@@ -56,6 +60,11 @@ typedef enum  {
 ## Constants
 
 <table>
+
+<tr>
+<td>PowerActionDisplayOff</td>
+<td></td>
+</tr>
 
 <tr>
 <td>PowerActionHibernate</td>
@@ -112,11 +121,8 @@ The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
-</dt>
-</dl>
+
  
 
  

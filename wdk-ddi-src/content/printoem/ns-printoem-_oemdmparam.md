@@ -7,8 +7,8 @@ old-location : print\oemdmparam.htm
 old-project : print
 ms.assetid : 625980d1-47eb-4427-a9e8-967b1873bbd6
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _OEMDMPARAM, OEMDMPARAM, *POEMDMPARAM
+ms.date : 1/18/2018
+ms.keywords : "*POEMDMPARAM, _OEMDMPARAM, OEMDMPARAM structure [Print Devices], print.oemdmparam, OEMDMPARAM, printoem/POEMDMPARAM, POEMDMPARAM structure pointer [Print Devices], print_unidrv-pscript_ui_49535272-ec29-4133-8105-0ce9b31808a2.xml, printoem/OEMDMPARAM, POEMDMPARAM"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OEMDMPARAM
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OEMDMPARAM, *POEMDMPARAM
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POEMDMPARAM, OEMDMPARAM"
 req.product : Windows 10 or later.
 ---
 
@@ -55,47 +59,47 @@ typedef struct _OEMDMPARAM {
 
 ## Members
 
-        
-            `cbBufSize`
 
-            On input, contains the caller-supplied size of memory space pointed to by <b>pOEMDMOut</b>. (Not valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)
+`cbBufSize`
+
+On input, contains the caller-supplied size of memory space pointed to by <b>pOEMDMOut</b>. (Not valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)
 
 On output, contains the method-supplied size of the current version of the private DEVMODEW section. (Only used if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)
-        
-            `cbSize`
 
-            Contains the size of the OEMDMPARAM structure. Supplied by the Unidrv or Pscript5 driver.
-        
-            `hModule`
+`cbSize`
 
-            Handle to the user interface plug-in module. Supplied by the Unidrv or Pscript5 driver.
-        
-            `hPrinter`
+Contains the size of the OEMDMPARAM structure. Supplied by the Unidrv or Pscript5 driver.
 
-            Handle to the printer device. Supplied by the Unidrv or Pscript5 driver.
-        
-            `pdriverobj`
+`hModule`
 
-            
-        
-            `pOEMDMIn`
+Handle to the user interface plug-in module. Supplied by the Unidrv or Pscript5 driver.
 
-            Pointer to a set of private DEVMODEW members. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)
-        
-            `pOEMDMOut`
+`hPrinter`
 
-            Pointer to memory allocated to receive modified private DEVMODEW contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT or OEMDM_MERGE.)
-        
-            `pPublicDMIn`
+Handle to the printer device. Supplied by the Unidrv or Pscript5 driver.
 
-            Pointer to the printer device's public DEVMODEW structure. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT, or OEMDM_MERGE.)
-        
-            `pPublicDMOut`
+`pdriverobj`
 
-            Pointer to a location to receive public DEVMODEW structure contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)
 
-    ## Remarks
-        For more information about the use of OEMDMPARAM structure members, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a> method.</p>
+
+`pOEMDMIn`
+
+Pointer to a set of private DEVMODEW members. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)
+
+`pOEMDMOut`
+
+Pointer to memory allocated to receive modified private DEVMODEW contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT or OEMDM_MERGE.)
+
+`pPublicDMIn`
+
+Pointer to the printer device's public DEVMODEW structure. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT, or OEMDM_MERGE.)
+
+`pPublicDMOut`
+
+Pointer to a location to receive public DEVMODEW structure contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)
+
+## Remarks
+For more information about the use of OEMDMPARAM structure members, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |

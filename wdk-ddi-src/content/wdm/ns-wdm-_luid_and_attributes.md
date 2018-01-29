@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d436cd60-d1ff-4a0c-b087-6aa50adfd7fc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _LUID_AND_ATTRIBUTES, LUID_AND_ATTRIBUTES, *PLUID_AND_ATTRIBUTES
+ms.keywords : wdm/LUID_AND_ATTRIBUTES, securitystructures_372f1a20-6582-4904-8de1-8efd9950ab76.xml, LUID_AND_ATTRIBUTES, _LUID_AND_ATTRIBUTES, PLUID_AND_ATTRIBUTES structure pointer [Installable File System Drivers], wdm/PLUID_AND_ATTRIBUTES, *PLUID_AND_ATTRIBUTES, LUID_AND_ATTRIBUTES structure [Installable File System Drivers], PLUID_AND_ATTRIBUTES, ifsk.luid_and_attributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LUID_AND_ATTRIBUTES
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LUID_AND_ATTRIBUTES, *PLUID_AND_ATTRIBUTES
 req.product : Windows 10 or later.
 ---
@@ -48,13 +52,12 @@ typedef struct _LUID_AND_ATTRIBUTES {
 
 ## Members
 
-        
-            `Attributes`
 
-            Specifies attributes of the LUID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the LUID. 
+`Attributes`
+
+Specifies attributes of the LUID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the LUID. 
 
 The following attributes are defined for privileges: 
-
 <table>
 <tr>
 <th>Attribute</th>
@@ -91,17 +94,31 @@ The privilege was used to gain access to an object or service. This flag is used
 </td>
 </tr>
 </table>
-        
-            `Luid`
 
-            An LUID value.
+`Luid`
 
-    ## Remarks
-        An LUID_AND_ATTRIBUTES structure can represent an LUID whose 
+An LUID value.
+
+## Remarks
+An LUID_AND_ATTRIBUTES structure can represent an LUID whose 
 	 attributes change frequently, such as when it is used to represent 
 	 privileges in the PRIVILEGE_SET structure. Privileges are represented by 
 	 LUIDs and have attributes indicating whether they are currently enabled 
-	 or disabled.
+	 or disabled. 
+<div class="alert"><b>Note</b>  Be aware of the following derived types:
+	 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>typedef LUID_AND_ATTRIBUTES LUID_AND_ATTRIBUTES_ARRAY[ANYSIZE_ARRAY];
+typedef LUID_AND_ATTRIBUTES_ARRAY *PLUID_AND_ATTRIBUTES_ARRAY;
+		</pre>
+</td>
+</tr>
+</table></span></div>
+</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,22 +128,16 @@ The privilege was used to gain access to an object or service. This flag is used
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-sefiltertoken.md">SeFilterToken</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-seprivilegecheck.md">SePrivilegeCheck</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
+
+<a href="..\ntifs\nf-ntifs-sefiltertoken.md">SeFilterToken</a>
+
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+
  
 
  

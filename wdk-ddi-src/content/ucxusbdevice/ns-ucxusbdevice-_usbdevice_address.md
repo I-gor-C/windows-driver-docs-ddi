@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2CD37F1E-B96A-4D18-A756-2B9E3CB8613B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBDEVICE_ADDRESS, USBDEVICE_ADDRESS, *PUSBDEVICE_ADDRESS
+ms.keywords : ucxusbdevice/_USBDEVICE_ADDRESS, P_USBDEVICE_ADDRESS structure pointer [Buses], USBDEVICE_ADDRESS structure [Buses], P_USBDEVICE_ADDRESS, ucxusbdevice/P_USBDEVICE_ADDRESS, _USBDEVICE_ADDRESS, *PUSBDEVICE_ADDRESS, buses._usbdevice_address, USBDEVICE_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBDEVICE_ADDRESS
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBDEVICE_ADDRESS, *PUSBDEVICE_ADDRESS
 req.product : Windows 10 or later.
 ---
@@ -53,18 +57,18 @@ typedef struct _USBDEVICE_ADDRESS {
 
 ## Members
 
-        
-            `Address`
 
-            The address of the specified the USB hub or device.
-        
-            `Header`
+`Address`
 
-            A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
-        
-            `Reserved`
+The address of the specified the USB hub or device.
 
-            Do not use.
+`Header`
+
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
+
+`Reserved`
+
+Do not use.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _USBDEVICE_ADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_address.md">EVT_UCX_USBDEVICE_ADDRESS</a>
-</dt>
-</dl>
+
  
 
  

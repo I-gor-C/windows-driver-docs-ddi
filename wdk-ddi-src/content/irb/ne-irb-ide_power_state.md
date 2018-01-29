@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b54655ac-b7ac-4026-9d9d-75dd139ac059
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : IDE_POWER_STATE, IDE_POWER_STATE
+ms.keywords : structs-ATA_82594916-763d-46c4-9a40-e1e4f0c32e13.xml, irb/IDE_POWER_STATE, IdePowerUnSpecified, irb/IdePowerD0, IdePowerD3, irb/IdePowerD3, IdePowerD0, IDE_POWER_STATE enumeration [Storage Devices], IDE_POWER_STATE, storage.ide_power_state, irb/IdePowerUnSpecified
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDE_POWER_STATE
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 # IDE_POWER_STATE Enumeration
 The IDE_POWER_STATE enumeration type indicates that power state of the device.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -80,11 +85,8 @@ The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="..
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a>
-</dt>
-</dl>
+
  
 
  

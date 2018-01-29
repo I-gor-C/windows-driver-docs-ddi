@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 883c561c-0d1b-4a6c-946e-8ca567b12c9a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _TEXTUAL_LEAF, TEXTUAL_LEAF, *PTEXTUAL_LEAF
+ms.keywords : 1394stct_b63840e2-0a05-49e9-a533-9575f46af648.xml, IEEE.textual_leaf, PTEXTUAL_LEAF, TEXTUAL_LEAF, 1394/PTEXTUAL_LEAF, 1394/TEXTUAL_LEAF, _TEXTUAL_LEAF, TEXTUAL_LEAF structure [Buses], PTEXTUAL_LEAF structure pointer [Buses], *PTEXTUAL_LEAF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TEXTUAL_LEAF
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : TEXTUAL_LEAF, *PTEXTUAL_LEAF
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PTEXTUAL_LEAF, TEXTUAL_LEAF"
 ---
 
 # _TEXTUAL_LEAF structure
@@ -50,26 +54,26 @@ typedef struct _TEXTUAL_LEAF {
 
 ## Members
 
-        
-            `TL_CRC`
 
-            Specifies the CRC of the text string.
-        
-            `TL_Data`
+`TL_CRC`
 
-            Specifies a vendor-specified textual description of the device.
-        
-            `TL_Language_Id`
+Specifies the CRC of the text string.
 
-            Specifies the language of the <b>TL_Data</b> member.
-        
-            `TL_Length`
+`TL_Data`
 
-            Specifies the length of the text string, in bytes.
-        
-            `TL_Spec_Id`
+Specifies a vendor-specified textual description of the device.
 
-            Specifies which specification describes the meaning of the <b>TL_Language_ID</b> member.
+`TL_Language_Id`
+
+Specifies the language of the <b>TL_Data</b> member.
+
+`TL_Length`
+
+Specifies the length of the text string, in bytes.
+
+`TL_Spec_Id`
+
+Specifies which specification describes the meaning of the <b>TL_Language_ID</b> member.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _TEXTUAL_LEAF {
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537642">REQUEST_GET_CONFIGURATION_INFO</a>
-</dt>
-</dl>
+
  
 
  

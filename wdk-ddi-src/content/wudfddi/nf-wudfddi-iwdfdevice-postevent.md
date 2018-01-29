@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3df25c91-d421-48fe-958c-48bce3bc78b8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::PostEvent, PostEvent
+ms.keywords : UMDFDeviceObjectRef_7ba57249-59f4-4782-8846-717edf86dde1.xml, umdf.iwdfdevice_postevent, IWDFDevice, IWDFDevice::PostEvent, wdf.iwdfdevice_postevent, PostEvent method, IWDFDevice interface, wudfddi/IWDFDevice::PostEvent, PostEvent method, PostEvent, IWDFDevice interface, PostEvent method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.PostEvent
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -76,21 +80,57 @@ The maximum size of the event data is slightly less than MAXUSHORT (64 KB). The 
 ## Return Value
 
 <b>PostEvent</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The event data was successfully sent to the operating system.
+</dl>
+</td>
+<td width="60%">
+The event data was successfully sent to the operating system.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_WIN32(ERROR_NOT_ENOUGH_MEMORY)</b></dt>
-</dl>The data size that the <i>cbDataSize</i> parameter specifies is larger than the maximum allowable size. 
+</dl>
+</td>
+<td width="60%">
+The data size that the <i>cbDataSize</i> parameter specifies is larger than the maximum allowable size. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The <i>EventType</i> parameter is not set to <b>WdfEventBroadcast</b> (1). 
+</dl>
+</td>
+<td width="60%">
+The <i>EventType</i> parameter is not set to <b>WdfEventBroadcast</b> (1). 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/3df25c91-d421-48fe-958c-48bce3bc78b8">PostEvent</a> could not allocate memory that was required for it to complete.
 
- 
+</td>
+</tr>
+</table> 
 
 <b>PostEvent</b> might also return other HRESULT values.
 
@@ -114,20 +154,14 @@ For information about creating device events, see <a href="https://docs.microsof
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-field_offset.md">FIELD_OFFSET</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+<a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
+
  
 
  

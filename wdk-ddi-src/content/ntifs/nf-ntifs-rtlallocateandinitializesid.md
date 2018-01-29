@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c58f4448-06f5-4eda-a254-e453defd1d6c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlAllocateAndInitializeSid
+ms.keywords : RtlAllocateAndInitializeSid function [Installable File System Drivers], rtlref_74879713-f57f-4d67-a779-995c150bc7ea.xml, ntifs/RtlAllocateAndInitializeSid, ifsk.rtlallocateandinitializesid, RtlAllocateAndInitializeSid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlAllocateAndInitializeSid
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,47 +54,47 @@ The <b>RtlAllocateAndInitializeSid</b> routine is reserved for system use. See <
 
 `IdentifierAuthority`
 
-
+TBD
 
 `SubAuthorityCount`
 
-
+TBD
 
 `SubAuthority0`
 
-
+TBD
 
 `SubAuthority1`
 
-
+TBD
 
 `SubAuthority2`
 
-
+TBD
 
 `SubAuthority3`
 
-
+TBD
 
 `SubAuthority4`
 
-
+TBD
 
 `SubAuthority5`
 
-
+TBD
 
 `SubAuthority6`
 
-
+TBD
 
 `SubAuthority7`
 
-
+TBD
 
 `Sid`
 
-
+TBD
 
 
 ## Return Value

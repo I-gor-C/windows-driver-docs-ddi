@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2600405F-AE07-4284-84AD-D19EEE2058BF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_POFX_COMPONENT_IDLE_STATE, *PSTOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE
+ms.keywords : storage.stor_pofx_component_idle_state, STOR_POFX_COMPONENT_IDLE_STATE structure [Storage Devices], storport/PSTOR_POFX_COMPONENT_IDLE_STATE, *PSTOR_POFX_COMPONENT_IDLE_STATE, storport/STOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE structure pointer [Storage Devices], PSTOR_POFX_COMPONENT_IDLE_STATE, _STOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_POFX_COMPONENT_IDLE_STATE
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE"
 req.product : Windows 10 or later.
 ---
@@ -51,29 +55,29 @@ typedef struct _STOR_POFX_COMPONENT_IDLE_STATE {
 
 ## Members
 
-        
-            `NominalPower`
 
-            The power, in microwatts, that the component consumes in this F-state. Set this member to STOR_PO_FX_UNKNOWN_POWER to indicate that PoFx should ignore (treat as negligible) the component's internal power consumption in this F-state when PoFx evaluates which power state to switch to when the component is idle.
-        
-            `ResidencyRequirement`
+`NominalPower`
 
-            The residency requirement. The residency requirement is the minimum amount of time, in 100-nanosecond units, that the component must spend in this F-state to make a transition to this F-state worthwhile. PoFx uses this member value as a hint to avoid switching a component to an F-state unless the component is likely to remain in this state for at least the amount of time specified by <b>ResidencyRequirement</b>. For a STOR_PO_FX_COMPONENT_IDLE_STATE structure that describes the attributes of the F0 state, set this member to zero. Set this member to STOR_PO_FX_UNKNOWN_TIME to indicate that PoFx should ignore (treat as negligible) the component's residency requirement for this F-state when PoFx evaluates which power state to switch to when the component is idle.
-        
-            `Size`
+The power, in microwatts, that the component consumes in this F-state. Set this member to STOR_PO_FX_UNKNOWN_POWER to indicate that PoFx should ignore (treat as negligible) the component's internal power consumption in this F-state when PoFx evaluates which power state to switch to when the component is idle.
 
-            The size of this structure. Set this value to <b>STOR_POFX_COMPONENT_IDLE_STATE_SIZE</b>.
-        
-            `TransitionLatency`
+`ResidencyRequirement`
 
-            The transition latency. This latency is the amount of time, in 100-nanosecond units, that the component requires to return from this F-state to the F0 state. For a <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structure that specifies the attributes of the F0 state, set this member to zero. Set this member to STOR_PO_FX_UNKNOWN_TIME to indicate that the power management framework (PoFx) should ignore (treat as negligible) the component's transition latency from this F-state when PoFx evaluates which power state to switch to when the component is idle.
-        
-            `Version`
+The residency requirement. The residency requirement is the minimum amount of time, in 100-nanosecond units, that the component must spend in this F-state to make a transition to this F-state worthwhile. PoFx uses this member value as a hint to avoid switching a component to an F-state unless the component is likely to remain in this state for at least the amount of time specified by <b>ResidencyRequirement</b>. For a STOR_PO_FX_COMPONENT_IDLE_STATE structure that describes the attributes of the F0 state, set this member to zero. Set this member to STOR_PO_FX_UNKNOWN_TIME to indicate that PoFx should ignore (treat as negligible) the component's residency requirement for this F-state when PoFx evaluates which power state to switch to when the component is idle.
 
-            The version of this structure. Set this member to <b>STOR_POFX_COMPONENT_IDLE_STATE_VERSION_V1</b>.
+`Size`
 
-    ## Remarks
-        The <a href="..\storport\ns-storport-_stor_pofx_component.md">STOR_POFX_COMPONENT</a> structure contains an array of <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structures. Each array element specifies the attributes of an F-state. Element 0 describes F0, element 1 describes F1, and so on.
+The size of this structure. Set this value to <b>STOR_POFX_COMPONENT_IDLE_STATE_SIZE</b>.
+
+`TransitionLatency`
+
+The transition latency. This latency is the amount of time, in 100-nanosecond units, that the component requires to return from this F-state to the F0 state. For a <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structure that specifies the attributes of the F0 state, set this member to zero. Set this member to STOR_PO_FX_UNKNOWN_TIME to indicate that the power management framework (PoFx) should ignore (treat as negligible) the component's transition latency from this F-state when PoFx evaluates which power state to switch to when the component is idle.
+
+`Version`
+
+The version of this structure. Set this member to <b>STOR_POFX_COMPONENT_IDLE_STATE_VERSION_V1</b>.
+
+## Remarks
+The <a href="..\storport\ns-storport-_stor_pofx_component.md">STOR_POFX_COMPONENT</a> structure contains an array of <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structures. Each array element specifies the attributes of an F-state. Element 0 describes F0, element 1 describes F1, and so on.
 
 When the miniport driver registers a device with the Storport power management framework, the driver supplies an array of <a href="..\storport\ns-storport-_stor_pofx_component.md">STOR_POFX_COMPONENT</a> structures. Each array element describes the power attributes of a component in the device.
 
@@ -85,13 +89,10 @@ When the miniport driver registers a device with the Storport power management f
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\ns-storport-_stor_pofx_component.md">STOR_POFX_COMPONENT</a>
-</dt>
-</dl>
+
  
 
  

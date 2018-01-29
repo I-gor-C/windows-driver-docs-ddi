@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 48F3CB86-5181-4E1E-9E7F-88FB2CD3640A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : MIRACAST_SESSION_INFO, MIRACAST_SESSION_INFO
+ms.keywords : netdispumdddi/MIRACAST_SESSION_INFO, MIRACAST_SESSION_INFO, display.miracast_session_info, MIRACAST_SESSION_INFO union [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MIRACAST_SESSION_INFO
-req.alt-loc : Netdispumdddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MIRACAST_SESSION_INFO
 ---
 
@@ -51,10 +55,10 @@ typedef union {
 
 ## Members
 
-        
-            `Value`
 
-            Holds a 32-bit value that identifies the Miracast connected session.
+`Value`
+
+Holds a 32-bit value that identifies the Miracast connected session.
 
 
 ## Requirements

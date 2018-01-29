@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 398f50ad-4c58-4585-8fb8-c523b74793e9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_BULK_OR_INTERRUPT_TRANSFER,
+ms.keywords : _URB_BULK_OR_INTERRUPT_TRANSFER structure [Buses], USBD_TRANSFER_DIRECTION_OUT, buses._urb_bulk_or_interrupt_transfer, _URB_BULK_OR_INTERRUPT_TRANSFER, usb/_URB_BULK_OR_INTERRUPT_TRANSFER, USBD_SHORT_TRANSFER_OK, usbstrct_3d3da976-5136-4648-850e-c0e3fe0999d8.xml, USBD_TRANSFER_DIRECTION_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_BULK_OR_INTERRUPT_TRANSFER
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -54,35 +58,46 @@ struct _URB_BULK_OR_INTERRUPT_TRANSFER {
 
 ## Members
 
-        
-            `hca`
 
-            Reserved. Do not use.
-        
-            `Hdr`
+`_URB`
 
-            Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER, and <b>Hdr.Length</b> must be set to <code>sizeof(_URB_BULK_OR_INTERRUPT_TRANSFER)</code>.
-        
-            `PipeHandle`
 
-            Specifies an opaque handle to the bulk or interrupt pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.
-        
-            `TransferBuffer`
 
-            Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The contents of this buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified this buffer will contain data read from the device on return from the host controller driver. Otherwise, this buffer contains driver-supplied data for transfer to the device.
-        
-            `TransferBufferLength`
+`_URB_HCD_AREA`
 
-            Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.
-        
-            `TransferBufferMDL`
 
-            Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The contents of the buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified, the described buffer will contain data read from the device on return from the host controller driver. Otherwise, the buffer contains driver-supplied data for transfer to the device. This MDL must be allocated from nonpaged pool.
-        
-            `TransferFlags`
 
-            Specifies zero, one, or a combination of the following flags:
+`_URB_HEADER`
 
+
+
+`hca`
+
+Reserved. Do not use.
+
+`Hdr`
+
+Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER, and <b>Hdr.Length</b> must be set to <code>sizeof(_URB_BULK_OR_INTERRUPT_TRANSFER)</code>.
+
+`PipeHandle`
+
+Specifies an opaque handle to the bulk or interrupt pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.
+
+`TransferBuffer`
+
+Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The contents of this buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified this buffer will contain data read from the device on return from the host controller driver. Otherwise, this buffer contains driver-supplied data for transfer to the device.
+
+`TransferBufferLength`
+
+Specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>. The host controller driver returns the number of bytes sent to or read from the pipe in this member.
+
+`TransferBufferMDL`
+
+Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The contents of the buffer depend on the value of <b>TransferFlags</b>. If USBD_TRANSFER_DIRECTION_IN is specified, the described buffer will contain data read from the device on return from the host controller driver. Otherwise, the buffer contains driver-supplied data for transfer to the device. This MDL must be allocated from nonpaged pool.
+
+`TransferFlags`
+
+Specifies zero, one, or a combination of the following flags:
 
 
 <table>
@@ -91,13 +106,49 @@ struct _URB_BULK_OR_INTERRUPT_TRANSFER {
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `UrbLink`
+<td width="40%"><a id="USBD_TRANSFER_DIRECTION_IN"></a><a id="usbd_transfer_direction_in"></a><dl>
+<dt><b>USBD_TRANSFER_DIRECTION_IN</b></dt>
+</dl>
+</td>
+<td width="60%">
+Is set to request data from a device. To transfer data to a device, this flag must be clear. 
 
-            Reserved. Do not use.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="USBD_TRANSFER_DIRECTION_OUT"></a><a id="usbd_transfer_direction_out"></a><dl>
+<dt><b>USBD_TRANSFER_DIRECTION_OUT</b></dt>
+</dl>
+</td>
+<td width="60%">
+Is set to transfer data to a device. Setting this flag is equivalent to clearing the USBD_TRANSFER_DIRECTION_IN flag. 
 
-    ## Remarks
-        Drivers can use the <b>UsbBuildInterruptOrBulkTransferRequest</b> service routine to format this URB. Buffers specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL </b>must be nonpageable. 
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="USBD_SHORT_TRANSFER_OK"></a><a id="usbd_short_transfer_ok"></a><dl>
+<dt><b>USBD_SHORT_TRANSFER_OK</b></dt>
+</dl>
+</td>
+<td width="60%">
+Is set to direct the host controller not to return an error when it receives a packet from the device that is shorter than the maximum packet size for the endpoint. The maximum packet size for the endpoint is reported in the <b>wMaxPacketSize</b> member of the <a href="..\usbspec\ns-usbspec-_usb_endpoint_descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure (endpoint descriptor). When  the host controller receives a packet shorter than <b>wMaxPacketSize</b> on a bulk or an interrupt endpoint, the host controller immediately stops requesting data from the endpoint and completes the transfer.  If the USBD_SHORT_TRANSFER_OK flag is not set, the host controller completes the transfer  with an error. 
+
+This flag should not be set unless USBD_TRANSFER_DIRECTION_IN is also set. <b>Note</b>  On EHCI host controllers,  USBD_SHORT_TRANSFER_OK is ignored for bulk and interrupt endpoints.  Transfer of short packets on EHCI controllers does not result in an error condition. <p class="note">On UHCI and OHCI host controllers,   if USBD_SHORT_TRANSFER_OK is not set for a bulk or interrupt transfer, a short packet transfer halts the endpoint and an error code is returned for the transfer.  The client driver must resume the endpoint by submitting a URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL request before submitting a transfer request to the endpoint.
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+`UrbLink`
+
+Reserved. Do not use.
+
+## Remarks
+Drivers can use the <b>UsbBuildInterruptOrBulkTransferRequest</b> service routine to format this URB. Buffers specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL </b>must be nonpageable. 
 
 In an <a href="..\usb\ns-usb-_urb.md">URB</a>, both <b>TransferBuffer</b> and <b>TransferBufferMDL</b> parameters can be non-NULL values, at the same time. In that case, the transfer buffer and the MDL pointed to <b>TransferBuffer</b> and <b>TransferBufferMDL</b> must point to the same  buffer.
 
@@ -113,19 +164,14 @@ The reserved members of this structure must be treated as opaque and are reserve
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

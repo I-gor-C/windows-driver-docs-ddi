@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bfac8f91-2367-4194-8e98-e274025c049a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, OnRemoteTargetRemoveComplete
+ms.keywords : IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveComplete method, umdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, OnRemoteTargetRemoveComplete method, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveComplete method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, OnRemoteTargetRemoveComplete, UMDFIoTargetObjectRef_bec0246d-a3e9-41b2-b577-fef78c8e4668.xml, wdf.iremotetargetcallbackremoval_onremotetargetremovecomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveComplete
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -63,12 +67,16 @@ None.
 ## Remarks
 
 If your driver provides an <b>OnRemoteTargetRemoveComplete</b> event callback function, the callback function should do the following:
-
+<ol>
+<li>
 Do any driver-specific actions that your driver requires to close the remote I/O target.
 
+</li>
+<li>
 Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560253">IWDFRemoteTarget::Close</a>.
 
-If the driver does not provide this callback function, the framework calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff560253">IWDFRemoteTarget::Close</a> for the driver.
+</li>
+</ol>If the driver does not provide this callback function, the framework calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff560253">IWDFRemoteTarget::Close</a> for the driver.
 
 For more information about the <b>OnRemoteTargetRemoveComplete</b> event callback function, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>.
 
@@ -86,17 +94,12 @@ For more information about the <b>OnRemoteTargetRemoveComplete</b> event callbac
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556897">IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556899">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556897">IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove</a>
+
  
 
  

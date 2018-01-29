@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7dea199f-ef98-4f7b-a3e4-de52fc23c8ef
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlNumberGenericTableElements
+ms.keywords : RtlNumberGenericTableElements, ifsk.rtlnumbergenerictableelements, RtlNumberGenericTableElements routine [Installable File System Drivers], ntddk/RtlNumberGenericTableElements, rtlref_f12988ba-01c3-4a34-8967-aafaf5b605f8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlNumberGenericTableElements
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL (see Remarks section)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -83,14 +87,10 @@ Callers of <b>RtlNumberGenericTableElements</b> must be running at IRQL &lt; DIS
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableempty.md">RtlIsGenericTableEmpty</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
+
  
 
  

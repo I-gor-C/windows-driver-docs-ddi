@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9DE2AF2D-D6B5-4FC4-8871-246F3661980F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG
+ms.keywords : PUCM_CONNECTOR_PD_CONFIG, ucmmanager/PUCM_CONNECTOR_PD_CONFIG, _UCM_CONNECTOR_PD_CONFIG, ucmmanager/UCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG structure [Buses], *PUCM_CONNECTOR_PD_CONFIG, buses.ucm_connector_pd_config, UCM_CONNECTOR_PD_CONFIG, PUCM_CONNECTOR_PD_CONFIG structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_CONNECTOR_PD_CONFIG
-req.alt-loc : Ucmmanager.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -50,27 +54,27 @@ typedef struct _UCM_CONNECTOR_PD_CONFIG {
 
 ## Members
 
-        
-            `EvtSetPowerRole`
 
-            A pointer to the Policy Manager's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_power_role.md">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a> event callback.
-        
-            `IsSupported`
+`EvtSetPowerRole`
 
-            If TRUE, a PD role is supported. (Default).
+A pointer to the Policy Manager's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_power_role.md">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a> event callback.
+
+`IsSupported`
+
+If TRUE, a PD role is supported. (Default).
 
 If FALSE, a PD role is not supported.
-        
-            `Size`
 
-            Size of the <b>UCM_CONNECTOR_PD_CONFIG</b> structure.
-        
-            `SupportedPowerRoles`
+`Size`
 
-            Indicates the operating mode of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_power_role.md">UCM_POWER_ROLE</a>-typed flags.
+Size of the <b>UCM_CONNECTOR_PD_CONFIG</b> structure.
 
-    ## Remarks
-        Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_pd_config_init.md">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_config.md">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_config.md">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.
+`SupportedPowerRoles`
+
+Indicates the operating mode of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_power_role.md">UCM_POWER_ROLE</a>-typed flags.
+
+## Remarks
+Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_pd_config_init.md">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_config.md">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_config.md">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,13 +84,10 @@ If FALSE, a PD role is not supported.
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-</dl>
+
  
 
  

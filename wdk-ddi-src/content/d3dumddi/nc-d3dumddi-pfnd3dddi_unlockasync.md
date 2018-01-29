@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6af04c22-e559-4328-a20a-034b443fddc6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.unlockasync, UnlockAsync callback function [Display Devices], UnlockAsync, PFND3DDDI_UNLOCKASYNC, PFND3DDDI_UNLOCKASYNC, d3dumddi/UnlockAsync, UserModeDisplayDriver_Functions_f2270e47-4bf2-4486-8e6b-919daabd7c48.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UnlockAsync
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,15 +68,45 @@ A handle to a display device (that is, the graphics context).
 ## Return Value
 
 <i>UnlockAsync</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The resource is successfully unlocked.
+</dl>
+</td>
+<td width="60%">
+The resource is successfully unlocked.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>UnlockAsync</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>UnlockAsync</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The resource that <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlockasync.md">D3DDDIARG_UNLOCKASYNC</a> describes was not locked by a previous call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a> function.
+</dl>
+</td>
+<td width="60%">
+The resource that <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlockasync.md">D3DDDIARG_UNLOCKASYNC</a> describes was not locked by a previous call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a> function. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -98,23 +132,16 @@ If a user-mode display driver exposes a DDI version of 0x0000000B or greater (th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlockasync.md">D3DDDIARG_UNLOCKASYNC</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rename.md">Rename</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlockasync.md">D3DDDIARG_UNLOCKASYNC</a>
+
  
 
  

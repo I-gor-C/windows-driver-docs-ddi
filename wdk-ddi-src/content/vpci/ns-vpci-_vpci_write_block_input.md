@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 57519a7c-7710-4482-82f2-32067b1af22f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
+ms.keywords : kernel.vpci_write_block_input, *PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT, vpci/VPCI_WRITE_BLOCK_INPUT, _VPCI_WRITE_BLOCK_INPUT, PVPCI_WRITE_BLOCK_INPUT, vpci/PVPCI_WRITE_BLOCK_INPUT, PVPCI_WRITE_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], VPCI_WRITE_BLOCK_INPUT structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VPCI_WRITE_BLOCK_INPUT
-req.alt-loc : Vpci.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
-req.typenames : VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT"
 req.product : Windows 10 or later.
 ---
 
@@ -51,29 +55,35 @@ typedef struct _VPCI_WRITE_BLOCK_INPUT {
 
 ## Members
 
-        
-            `BlockId`
 
-            A <b>ULONG</b> value that specifies the VF configuration block to be read.  This value is defined by the driver for the PCIe physical function (PF) of the device.
-        
-            `Data`
+`BlockId`
 
-            A variable-size array that contains the data to be written to the configuration block that is specified by the <b>BlockId</b> member.
-        
-            `DataLength`
+A <b>ULONG</b> value that specifies the VF configuration block to be read.  This value is defined by the driver for the PCIe physical function (PF) of the device.
 
-            The size, in bytes, of the data to be written from the <b>Data</b> member.
+`Data`
 
-    ## Remarks
-        A VF configuration block is used for backchannel communication between the drivers of the PCIe PF and a VF on a device that supports the SR-IOV interface. Data from a VF configuration block can be exchanged between the following drivers:
+A variable-size array that contains the data to be written to the configuration block that is specified by the <b>BlockId</b> member.
 
+`DataLength`
+
+The size, in bytes, of the data to be written from the <b>Data</b> member.
+
+## Remarks
+A VF configuration block is used for backchannel communication between the drivers of the PCIe PF and a VF on a device that supports the SR-IOV interface. Data from a VF configuration block can be exchanged between the following drivers:
+<ul>
+<li>
 The VF driver, which runs in the guest operating system. This operating system runs within a Hyper-V child partition.
 
 
 
+</li>
+<li>
 The PF driver, which runs in the management operating system.
 
 This operating system runs within the Hyper-V parent partition.
+
+</li>
+</ul><div class="alert"><b>Note</b>  The  usage of the VF configuration block and the format of its configuration data are defined by the  independent hardware vendor (IHV) of the device. The configuration data is used only by the drivers of the PF and VF.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,14 +93,12 @@ This operating system runs within the Hyper-V parent partition.
 | **Minimum UMDF version** |  |
 | **Header** | vpci.h (include Vpci.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><b></b></dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439307">IOCTL_VPCI_WRITE_BLOCK</a>
-</dt>
-</dl>
+
+<b></b>
+
  
 
  

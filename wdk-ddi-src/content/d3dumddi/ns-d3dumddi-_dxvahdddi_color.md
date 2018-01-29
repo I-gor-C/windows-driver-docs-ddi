@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac1a2fae-29f1-4143-9d43-b10db300de03
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_COLOR, DXVAHDDDI_COLOR
+ms.keywords : _DXVAHDDDI_COLOR, d3dumddi/DXVAHDDDI_COLOR, DXVAHDDDI_COLOR, DXVA2_Structs_21418f8b-824c-4505-b52a-92437c3ff508.xml, DXVAHDDDI_COLOR union [Display Devices], display.dxvahdddi_color
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_COLOR is supported beginning with the Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_COLOR
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_COLOR
 ---
 
@@ -47,14 +51,14 @@ typedef union _DXVAHDDDI_COLOR {
 
 ## Members
 
-        
-            `RGB`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_rgba.md">DXVAHDDDI_COLOR_RGBA</a> structure that describes color in RGB terms.
-        
-            `YCbCr`
+`RGB`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_ycbcra.md">DXVAHDDDI_COLOR_YCbCrA</a> structure that describes color in a YCbCr terms.
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_rgba.md">DXVAHDDDI_COLOR_RGBA</a> structure that describes color in RGB terms.
+
+`YCbCr`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_ycbcra.md">DXVAHDDDI_COLOR_YCbCrA</a> structure that describes color in a YCbCr terms.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef union _DXVAHDDDI_COLOR {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_rgba.md">DXVAHDDDI_COLOR_RGBA</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_ycbcra.md">DXVAHDDDI_COLOR_YCbCrA</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_rgba.md">DXVAHDDDI_COLOR_RGBA</a>
+
  
 
  

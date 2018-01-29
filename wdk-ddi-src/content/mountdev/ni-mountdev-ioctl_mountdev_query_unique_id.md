@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 866b9383-d73d-4be1-a4de-b78c9558c3ce
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.keywords : storage.ioctl_mountdev_query_unique_id, IOCTL_MOUNTDEV_QUERY_UNIQUE_ID control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_UNIQUE_ID, mountdev/IOCTL_MOUNTDEV_QUERY_UNIQUE_ID, k307_5dd8b350-65b5-4f59-b96f-cae11fe7fb5b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
-req.alt-loc : Mountdev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ---
 
@@ -59,7 +63,6 @@ The device class or volume driver returns the <a href="..\mountdev\ns-mountdev-_
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-mountdev-_mountdev_unique_id.md">MOUNTDEV_UNIQUE_ID</a>, UniqueId) + output-&gt;UniqueIdLength; or alternatively to sizeof(USHORT) + output-&gt;UniqueIdLength, where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
 
 
@@ -70,16 +73,12 @@ The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-moun
 | **Header** | mountdev.h (include Mountdev.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
-</dt>
-<dt>
 <a href="..\mountdev\ns-mountdev-_mountdev_unique_id.md">MOUNTDEV_UNIQUE_ID</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
+
  
 
  

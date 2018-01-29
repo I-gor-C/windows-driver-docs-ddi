@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 358C060B-23A0-4F02-A5D3-07ADC3435849
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
+ms.keywords : DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, display.dxgk_multiplane_overlay_plane_with_source, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
 ---
 
@@ -51,22 +55,22 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE {
 
 ## Members
 
-        
-            `hAllocation`
 
-            A handle to the allocation.
-        
-            `LayerIndex`
+`hAllocation`
 
-            The index of the layer being queried.
-        
-            `PlaneAttributes`
+A handle to the allocation.
 
-            A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> structure that specifies overlay plane attributes.
-        
-            `VidPnSourceId`
+`LayerIndex`
 
-            The zero-based video present network source identification number of the input for which the support levels are queried.
+The index of the layer being queried.
+
+`PlaneAttributes`
+
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> structure that specifies overlay plane attributes.
+
+`VidPnSourceId`
+
+The zero-based video present network source identification number of the input for which the support levels are queried.
 
 
 ## Requirements
@@ -77,13 +81,10 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : de8e262b-bcb9-4549-94cc-0a73df45bddc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _AVCSTRM_FORMAT_INFO, AVCSTRM_FORMAT_INFO, *PAVCSTRM_FORMAT_INFO
+ms.keywords : PAVCSTRM_FORMAT_INFO, PAVCSTRM_FORMAT_INFO structure pointer [Streaming Media Devices], avcstrm/AVCSTRM_FORMAT_INFO, AVCSTRM_FORMAT_INFO structure [Streaming Media Devices], avcstrm/PAVCSTRM_FORMAT_INFO, _AVCSTRM_FORMAT_INFO, avcsref_e41f0bb0-8407-4338-9a68-46c00116ae92.xml, AVCSTRM_FORMAT_INFO, stream.avcstrm_format_info, *PAVCSTRM_FORMAT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVCSTRM_FORMAT_INFO
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : AVCSTRM_FORMAT_INFO, *PAVCSTRM_FORMAT_INFO
 ---
 
@@ -57,43 +61,42 @@ typedef struct _AVCSTRM_FORMAT_INFO {
 
 ## Members
 
-        
-            `AVCStrmFormat`
 
-            Specifies one of the AV/C streaming subunit formats defined in <a href="..\avcstrm\ne-avcstrm-_avcstrm_format.md">AVCSTRM_FORMAT</a>.
-        
-            `AvgTimePerFrame`
+`AVCStrmFormat`
 
-            Specifies the average time per frame in 100 nanosecond units.
-        
-            `BlockPeriod`
+Specifies one of the AV/C streaming subunit formats defined in <a href="..\avcstrm\ne-avcstrm-_avcstrm_format.md">AVCSTRM_FORMAT</a>.
 
-            Specifies the block period. This is used for transmit only. It is calculated from 1/ BlockPerSecond * 1,000,000,000 picoseconds. For SDDV, it transmits one block per 1394 cycle. 1/(29.97 * 250) * 1,000,000,000,000 = 133,466,800 picoseconds.
-        
-            `cipHdr1`
+`AvgTimePerFrame`
 
-            Specifies the definition of the first quadlet of the two quadlet CIP header.
-        
-            `cipHdr2`
+Specifies the average time per frame in 100 nanosecond units.
 
-            Specifies the definition of the second quadlet of the two quadlet CIP header.
-        
-            `FrameSize`
+`BlockPeriod`
 
-            Specifies the data buffer size.
-        
-            `NumOfRcvBuffers`
+Specifies the block period. This is used for transmit only. It is calculated from 1/ BlockPerSecond * 1,000,000,000 picoseconds. For SDDV, it transmits one block per 1394 cycle. 1/(29.97 * 250) * 1,000,000,000,000 = 133,466,800 picoseconds.
 
-            Specifies the number of receiving buffers.
-        
-            `NumOfXmtBuffers`
+`cipHdr1`
 
-            Specifies the number of transmitting buffers.
-        
-            `OptionFlags`
+Specifies the definition of the first quadlet of the two quadlet CIP header.
 
-            Specifies any option flags. Currently, only one flag is defined:
+`cipHdr2`
 
+Specifies the definition of the second quadlet of the two quadlet CIP header.
+
+`FrameSize`
+
+Specifies the data buffer size.
+
+`NumOfRcvBuffers`
+
+Specifies the number of receiving buffers.
+
+`NumOfXmtBuffers`
+
+Specifies the number of transmitting buffers.
+
+`OptionFlags`
+
+Specifies any option flags. Currently, only one flag is defined:
 <table>
 <tr>
 <th>Flag</th>
@@ -101,18 +104,31 @@ typedef struct _AVCSTRM_FORMAT_INFO {
 </tr>
 <tr>
 <td>
-        
-            `Reserved`
 
-            Reserved. Do not use. Must be set to 0.
-        
-            `SizeOfThisBlock`
 
-            Specifies the size of this data structure, in bytes.
-        
-            `SrcPacketsPerFrame`
+<dl>
+<dt><a id="AVCSTRM_FORMAT_OPTION_STRIP_SPH"></a><a id="avcstrm_format_option_strip_sph"></a>AVCSTRM_FORMAT_OPTION_STRIP_SPH</dt>
+<dd></dd>
+</dl>
+</td>
+<td>
+Strip the SPH (source packet header) from the 192-byte data packet for MPEG2TS.
 
-            Specifies the number of source packets to fill a data frame.
+</td>
+</tr>
+</table>
+
+`Reserved`
+
+Reserved. Do not use. Must be set to 0.
+
+`SizeOfThisBlock`
+
+Specifies the size of this data structure, in bytes.
+
+`SrcPacketsPerFrame`
+
+Specifies the number of source packets to fill a data frame.
 
 
 ## Requirements
@@ -123,25 +139,18 @@ typedef struct _AVCSTRM_FORMAT_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\avcstrm\ne-avcstrm-_avcstrm_format.md">AVCSTRM_FORMAT</a>
-</dt>
-<dt>
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
-</dt>
-<dt>
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md">CIP_HDR2_FDF</a>
-</dt>
-<dt>
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr2_mpegts.md">CIP_HDR2_MPEGTS</a>
-</dt>
-<dt>
+
+<a href="..\avcstrm\ne-avcstrm-_avcstrm_format.md">AVCSTRM_FORMAT</a>
+
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr2_syt.md">CIP_HDR2_SYT</a>
-</dt>
-</dl>
+
+<a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
+
+<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md">CIP_HDR2_FDF</a>
+
  
 
  

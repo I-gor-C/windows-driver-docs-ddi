@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B23EDC08-18E4-4826-AC51-163C706D4F43
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkddi_exchangeprestartinfo, DXGKDDI_EXCHANGEPRESTARTINFO callback function [Display Devices], DXGKDDI_EXCHANGEPRESTARTINFO, dispmprt/DXGKDDI_EXCHANGEPRESTARTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKDDI_EXCHANGEPRESTARTINFO
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -76,7 +80,6 @@ This DDI will be called after DxgkDdiAddDevice and before DxgkDdiStartDevice so 
  
 
 This function is always called at PASSIVE level so the supporting code should be made pageable where possible.
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

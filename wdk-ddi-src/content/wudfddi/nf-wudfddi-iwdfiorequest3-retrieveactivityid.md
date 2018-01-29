@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A90FCF3C-B648-4E97-887E-FCE58D7FA13A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest3, IWDFIoRequest3::RetrieveActivityId, RetrieveActivityId
+ms.keywords : IWDFIoRequest3, RetrieveActivityId, wudfddi/IWDFIoRequest3::RetrieveActivityId, RetrieveActivityId method, IWDFIoRequest3::RetrieveActivityId, umdf.iwdfiorequest3_retrieveactivityid, IWDFIoRequest3 interface, RetrieveActivityId method, wdf.iwdfiorequest3_retrieveactivityid, RetrieveActivityId method, IWDFIoRequest3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFIoRequest3.RetrieveActivityId
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -61,9 +65,23 @@ A pointer to a location to store the retrieved GUID.
 ## Return Value
 
 <b>RetrieveActivityId</b> returns returns S_OK if the call is successful. Otherwise, this method might return one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_WIN32   (ERROR_NOT_FOUND)</b></dt>
-</dl>No activity ID is associated with the request.
+</dl>
+</td>
+<td width="60%">
+No activity ID is associated with the request.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -76,8 +94,6 @@ The framework does not clear a request's activity identifier when the driver cal
 For more information about activity identifiers, see <a href="https://msdn.microsoft.com/2B70953F-5192-4654-9506-6A84373D20B4">Using Activity Identifiers</a>.
 
 The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveactivityid.md">WdfRequestRetrieveActivityId</a>.
-
-The following code example shows a driver can retrieve an  activity identifier from one request and then use it to set the activity identifier for another request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,14 +109,10 @@ The following code example shows a driver can retrieve an  activity identifier f
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/57CB3CED-FE46-4A74-9E23-82640B7EF1DC">IWDFIoRequest3::SetActivityId</a>
-</dt>
-</dl>
+
  
 
  

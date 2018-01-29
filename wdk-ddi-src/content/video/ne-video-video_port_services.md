@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ca53536-e847-4c11-a28d-e046e8a392de
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VIDEO_PORT_SERVICES, VIDEO_PORT_SERVICES
+ms.keywords : VideoPortServicesI2C, video/VideoPortServicesI2C, video/VideoPortServicesWCMemoryProtection, VIDEO_PORT_SERVICES enumeration [Display Devices], Video_Structs_f2ede654-971a-4700-a911-8063a2a03ffe.xml, video/VIDEO_PORT_SERVICES, video/VideoPortServicesAGP, video/VideoPortServicesHeadless, VIDEO_PORT_SERVICES, VideoPortServicesHeadless, VideoPortServicesDebugReport, display.video_port_services, video/VideoPortServicesDebugReport, video/VideoPortServicesInt10, VideoPortServicesInt10, VideoPortServicesWCMemoryProtection, VideoPortServicesAGP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_PORT_SERVICES
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ typedef enum  {
 <td>VideoPortServicesDebugReport</td>
 <td>Represents the Debug Report interface, which is available in the following operating systems:
  
-
 
 <ul>
 <li>Windows Server 2003 SP1 and subsequent service packs</li>
@@ -108,23 +111,16 @@ The video miniport driver obtains a set of function pointers by passing a value 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538227">AGP Functions Implemented by the Video Port Driver</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567384">I2C Functions Implemented by the Video Port Driver</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567732">Int10 Functions Implemented by the Video Port Driver</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551792">Debug Report Functions Implemented by the Video Port Driver</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567384">I2C Functions Implemented by the Video Port Driver</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567732">Int10 Functions Implemented by the Video Port Driver</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538227">AGP Functions Implemented by the Video Port Driver</a>
+
  
 
  

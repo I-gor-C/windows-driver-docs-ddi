@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4ECF51C3-D098-49E2-A675-78066A15C221
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_reinitialize_media, IOCTL_STORAGE_REINITIALIZE_MEDIA control code [Storage Devices], IOCTL_STORAGE_REINITIALIZE_MEDIA, ntddstor/IOCTL_STORAGE_REINITIALIZE_MEDIA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_REINITIALIZE_MEDIA
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
@@ -59,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero if the operation completes successfully; otherwise, it is set to a non-zero value.
 
 

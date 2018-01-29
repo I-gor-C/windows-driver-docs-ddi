@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : C83C6086-369D-41DB-BEB5-33B3A0C1C0AE
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : hid.ioctl_hid_get_ms_genre_descriptor, IOCTL_HID_GET_MS_GENRE_DESCRIPTOR control code [Human Input Devices], IOCTL_HID_GET_MS_GENRE_DESCRIPTOR, hidclass/IOCTL_HID_GET_MS_GENRE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_GET_MS_GENRE_DESCRIPTOR
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -60,7 +64,6 @@ The size of a status code.
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-ntstatus-values">NTSTATUS</a> code.
 
 

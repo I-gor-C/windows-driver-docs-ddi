@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a0c46c51-f6c4-4609-9dba-b730f33c3ed6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortIssueDpc
+ms.keywords : storport/StorPortIssueDpc, StorPortIssueDpc, StorPortIssueDpc routine [Storage Devices], storprt_e9cbe677-4d21-4c07-97a2-9db50858321f.xml, storage.storportissuedpc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortIssueDpc
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -93,17 +97,12 @@ If a miniport driver has multiple work-items that must be performed by the same 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
-</dt>
-<dt>
 <a href="..\storport\ns-storport-_stor_dpc.md">STOR_DPC</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
+
+<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
+
  
 
  

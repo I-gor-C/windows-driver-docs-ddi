@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f61be32a-2537-4b7f-8f22-4149b00a15a4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_GetPdoRegistryParameter
+ms.keywords : usbfunc_b85b350e-68ad-4256-b4df-f61ea0367b62.xml, buses.usbd_getpdoregistryparameter, USBD_GetPdoRegistryParameter, USBD_GetPdoRegistryParameter routine [Buses], usbdlib/USBD_GetPdoRegistryParameter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_GetPdoRegistryParameter
-req.alt-loc : usbd.lib,usbd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbd.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -93,9 +97,8 @@ The <b>USBD_GetPdoRegistryParameter</b> returns STATUS_SUCCESS when the operatio
 
 ## See Also
 
-<dl>
-<dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
  
 
  

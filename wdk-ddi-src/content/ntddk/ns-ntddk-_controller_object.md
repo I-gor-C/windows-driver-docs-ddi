@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a5530901-e48c-4f4e-86a8-00d5ed01f933
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CONTROLLER_OBJECT, *PCONTROLLER_OBJECT, CONTROLLER_OBJECT
+ms.keywords : _CONTROLLER_OBJECT, ntddk/PCONTROLLER_OBJECT, PCONTROLLER_OBJECT, ntddk/CONTROLLER_OBJECT, kernel.controller_object, *PCONTROLLER_OBJECT, CONTROLLER_OBJECT structure [Kernel-Mode Driver Architecture], PCONTROLLER_OBJECT structure pointer [Kernel-Mode Driver Architecture], CONTROLLER_OBJECT, kstruct_a_391d0fc2-3a61-4b2b-b571-143d2af7ef9b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CONTROLLER_OBJECT
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCONTROLLER_OBJECT, CONTROLLER_OBJECT"
 ---
 
@@ -48,13 +52,33 @@ typedef struct _CONTROLLER_OBJECT {
 
 ## Members
 
-        
-            `ControllerExtension`
 
-            Pointer to the controller extension. The structure and contents of the controller extension are driver-defined. The size is driver-determined, specified in the driver's call to <b>IoCreateController</b>. Usually, drivers maintain common state about I/O operations in the controller extension and device-specific state about I/O for a target device in the corresponding device extension.
+`ControllerExtension`
 
-    ## Remarks
-        Most driver routines that process IRPs are given a pointer to the target device object. Consequently, device drivers that use controller objects frequently store the controller object pointer returned by <b>IoCreateController</b> in each device extension. 
+Pointer to the controller extension. The structure and contents of the controller extension are driver-defined. The size is driver-determined, specified in the driver's call to <b>IoCreateController</b>. Usually, drivers maintain common state about I/O operations in the controller extension and device-specific state about I/O for a target device in the corresponding device extension.
+
+`DeviceWaitQueue`
+
+
+
+`Size`
+
+
+
+`Spare1`
+
+
+
+`Spare2`
+
+
+
+`Type`
+
+
+
+## Remarks
+Most driver routines that process IRPs are given a pointer to the target device object. Consequently, device drivers that use controller objects frequently store the controller object pointer returned by <b>IoCreateController</b> in each device extension. 
 
 Note that a controller object has no name so it cannot be the target of an I/O request, and higher-level drivers cannot connect or attach their device objects to a device driver's controller object. 
 
@@ -68,13 +92,10 @@ Undocumented fields within a controller object should be considered inaccessible
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-iocreatecontroller.md">IoCreateController</a>
-</dt>
-</dl>
+
  
 
  

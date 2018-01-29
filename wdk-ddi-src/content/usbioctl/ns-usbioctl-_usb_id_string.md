@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e7af07ed-f1a7-4f66-8824-2e12492d037a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_ID_STRING, *PUSB_ID_STRING, USB_ID_STRING
+ms.keywords : USB_ID_STRING, usbioctl/USB_ID_STRING, USB_ID_STRING structure [Buses], _USB_ID_STRING, *PUSB_ID_STRING, buses.usb_id_string, PUSB_ID_STRING, PUSB_ID_STRING structure pointer [Buses], usbioctl/PUSB_ID_STRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_ID_STRING
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSB_ID_STRING, USB_ID_STRING"
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,25 @@ typedef struct _USB_ID_STRING {
 
 ## Members
 
-        
-            `Buffer`
 
-            Pointer to a string or multi-string.
-        
-            `LanguageId`
+`Buffer`
 
-            Indicates that language ID of the string.
-        
-            `LengthInBytes`
+Pointer to a string or multi-string.
 
-            Indicates the length (in bytes) of the string pointed to by <b>Buffer</b>, including the terminating <b>NULL</b>.
+`LanguageId`
 
-    ## Remarks
-        The reserved members of this structure must be treated as opaque and are reserved for system use.
+Indicates that language ID of the string.
+
+`LengthInBytes`
+
+Indicates the length (in bytes) of the string pointed to by <b>Buffer</b>, including the terminating <b>NULL</b>.
+
+`Pad`
+
+
+
+## Remarks
+The reserved members of this structure must be treated as opaque and are reserved for system use.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,13 +81,10 @@ typedef struct _USB_ID_STRING {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 92CEEAF3-BD70-4B1C-8385-00720A195E50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUrbSetBytesCompleted
+ms.keywords : buses.evt_udecx_usb_device_d0_entry, EvtUsbDeviceLinkPowerEntry callback function [Buses], EvtUsbDeviceLinkPowerEntry, EVT_UDECX_USB_DEVICE_D0_ENTRY, EVT_UDECX_USB_DEVICE_D0_ENTRY, udecxusbdevice/EvtUsbDeviceLinkPowerEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : EvtUsbDeviceLinkPowerEntry
-req.alt-loc : udecxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
 req.product : Windows 10 or later.
 ---
 
@@ -88,23 +92,16 @@ The power request may be completed asynchronously by returning STATUS_PENDING, a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicesignalwake.md">UdecxUsbDeviceSignalWake</a>
-</dt>
-<dt>
-<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicelinkpowerexitcomplete.md">UdecxUsbDeviceLinkPowerExitComplete</a>
-</dt>
-<dt>
 <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
+
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicelinkpowerexitcomplete.md">UdecxUsbDeviceLinkPowerExitComplete</a>
+
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicesignalwake.md">UdecxUsbDeviceSignalWake</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

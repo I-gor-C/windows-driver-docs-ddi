@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 62c5f41a-1db2-4777-af86-67d2345a05c0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_Highlight, *LPDXVA_Highlight, DXVA_Highlight
+ms.keywords : dxvaref_509ed85b-59ad-44d2-a686-2b2077542c6d.xml, dxva/DXVA_Highlight, dxva/LPDXVA_Highlight, DXVA_Highlight structure [Display Devices], *LPDXVA_Highlight, LPDXVA_Highlight, display.dxva_highlight, DXVA_Highlight, _DXVA_Highlight, LPDXVA_Highlight structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_Highlight
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPDXVA_Highlight, DXVA_Highlight"
 ---
 
@@ -49,13 +53,12 @@ typedef struct _DXVA_Highlight {
 
 ## Members
 
-        
-            `HighlightRect`
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the area of the highlight rectangle.
+`HighlightRect`
+
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the area of the highlight rectangle.
 
 The following restrictions apply to the RECT dimensions:
-
 <ul>
 <li>
 <b>left</b> and <b>top</b> must be greater than or equal to zero.
@@ -70,17 +73,16 @@ The following restrictions apply to the RECT dimensions:
 
 </li>
 </ul>
-        
-            `wHighlightActive`
 
-            Indicates whether a rectangular highlight area is active. Zero indicates inactive and 1 indicates active. If inactive, the highlight data must have no effect on the content of the blended picture.
-        
-            `wHighlightAlphas`
+`wHighlightActive`
 
-            Contains four opacity values. Each opacity value consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four opacity values. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0.
+Indicates whether a rectangular highlight area is active. Zero indicates inactive and 1 indicates active. If inactive, the highlight data must have no effect on the content of the blended picture.
+
+`wHighlightAlphas`
+
+Contains four opacity values. Each opacity value consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four opacity values. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0.
 
 These 4-bit opacity values are each referred to as a <i>SampleAlpha4</i> variable and are interpreted as follows:
-
 <ul>
 <li>
 The value zero indicates that the graphic content at the corresponding location is transparent (so that the palette entry indexed by the corresponding bits of <b>wHighlightIndices</b> has no effect on the resulting blended picture). For a zero value, the blend specified is to use the video picture content without alteration.
@@ -99,13 +101,14 @@ For nonzero values, the specified blend is found using the following expression:
 
 </li>
 </ul>
-        
-            `wHighlightIndices`
 
-            Contains four palette indexes. Each palette index consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four palette indexes. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0.
+`wHighlightIndices`
 
-    ## Remarks
-        The DXVA_Highlight structure is formulated in a manner compatible with the DVD video specification as specified by the DVD Forum.
+Contains four palette indexes. Each palette index consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four palette indexes. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0.
+
+## Remarks
+The DXVA_Highlight structure is formulated in a manner compatible with the DVD video specification as specified by the DVD Forum.
+<div class="alert"><b>Note</b>    There is a difference between the way the DVD specification defines a subpicture rectangular area and the convention used by Microsoft. This section follows the Microsoft convention so a rectangle of width 10 and height 10 in the upper-left corner of the picture is defined by <b>top</b> = 0, <b>left</b> = 0, <b>right</b> = 10, <b>bottom</b> = 10. The DVD specification defines <b>right</b> = 9 and <b>bottom</b> = 9.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -115,13 +118,10 @@ For nonzero values, the specified blend is found using the following expression:
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

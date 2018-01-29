@@ -7,8 +7,8 @@ old-location : netvista\rilresetmodemkind_2.htm
 old-project : netvista
 ms.assetid : 622f9629-f172-469c-aba5-50a4eec78ab0
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRESETMODEMKIND, RILRESETMODEMKIND
+ms.date : 1/18/2018
+ms.keywords : RIL_RESETMODEMKIND_MAX, netvista.rilresetmodemkind_2, rilapitypes/RIL_RESETMODEMKIND_ABRUPT, RIL_RESETMODEMKIND_ABRUPT, RILRESETMODEMKIND, rilapitypes/RILRESETMODEMKIND, RILRESETMODEMKIND enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_RESETMODEMKIND_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRESETMODEMKIND
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRESETMODEMKIND
 req.product : Windows 10 or later.
 ---
@@ -57,6 +61,11 @@ typedef enum _RILRESETMODEMKIND {
 
 <tr>
 <td>RIL_RESETMODEMKIND_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_RESETMODEMKIND_NORMAL</td>
 <td></td>
 </tr>
 </table>

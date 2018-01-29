@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 61b6d477-5a4c-475c-8605-5ede592e75c1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_FLIPINFOFLAGS, D3DKMT_FLIPINFOFLAGS
+ms.keywords : _D3DKMT_FLIPINFOFLAGS, OpenGL_Structs_2e8d2e1b-7ae8-4ac4-916d-5cace7ef043e.xml, display.d3dkmt_flipinfoflags, d3dkmthk/D3DKMT_FLIPINFOFLAGS, D3DKMT_FLIPINFOFLAGS structure [Display Devices], D3DKMT_FLIPINFOFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_FLIPINFOFLAGS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_FLIPINFOFLAGS
 ---
 
@@ -47,16 +51,16 @@ typedef struct _D3DKMT_FLIPINFOFLAGS {
 
 ## Members
 
-        
-            `FlipInterval`
 
-            A UINT value that specifies whether the display miniport driver natively supports the scheduling of a flip command to take effect after two, three or four vertical syncs occur. Regardless of whether the display miniport driver supports a flip interval of two or greater, the driver must support an immediate flip and a flip interval of one.
+`FlipInterval`
+
+A UINT value that specifies whether the display miniport driver natively supports the scheduling of a flip command to take effect after two, three or four vertical syncs occur. Regardless of whether the display miniport driver supports a flip interval of two or greater, the driver must support an immediate flip and a flip interval of one.
 
 Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).
-        
-            `Reserved`
 
-            This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of a 32-bit value to zeros.
+`Reserved`
+
+This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of a 32-bit value to zeros.
 
 
 ## Requirements
@@ -67,19 +71,14 @@ Setting this member is equivalent to setting the first bit of a 32-bit value (0x
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipqueueinfo.md">D3DKMT_FLIPQUEUEINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipqueueinfo.md">D3DKMT_FLIPQUEUEINFO</a>
+
  
 
  

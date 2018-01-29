@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : de6efd10-7f97-422a-abd4-c21c4cbc1dd7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPin, IKsPin::KsQueryMediums, KsQueryMediums
+ms.keywords : IKsPin::KsQueryMediums, KsQueryMediums method [Streaming Media Devices], stream.ikspin_ksquerymediums, IKsPin interface [Streaming Media Devices], KsQueryMediums method, KsQueryMediums method [Streaming Media Devices], IKsPin interface, ksproxy_88debe31-2dd5-41bc-80c0-164b28dc586f.xml, IKsPin, ksproxy/IKsPin::KsQueryMediums, KsQueryMediums
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPin.KsQueryMediums
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -77,14 +81,10 @@ Applications call <b>KsQueryMediums</b> to retrieve mediums that pins support in
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
-</dt>
-</dl>
+
  
 
  

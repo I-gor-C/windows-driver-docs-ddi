@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 90f2f490-ee29-4e20-94b2-65a9bba3e831
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_QUEUE_DISPATCH_TYPE, WDF_IO_QUEUE_DISPATCH_TYPE
+ms.keywords : wdfio/WdfIoQueueDispatchMax, DFQueueObjectRef_dd3d1037-0355-4f02-b0ec-4bd988df33d2.xml, wdfio/WdfIoQueueDispatchInvalid, WdfIoQueueDispatchInvalid, WDF_IO_QUEUE_DISPATCH_TYPE enumeration, _WDF_IO_QUEUE_DISPATCH_TYPE, wdfio/WdfIoQueueDispatchParallel, kmdf.wdf_io_queue_dispatch_type, WdfIoQueueDispatchMax, WDF_IO_QUEUE_DISPATCH_TYPE, wdf.wdf_io_queue_dispatch_type, WdfIoQueueDispatchParallel, wdfio/WDF_IO_QUEUE_DISPATCH_TYPE, wdfio/WdfIoQueueDispatchManual, WdfIoQueueDispatchManual, WdfIoQueueDispatchSequential, wdfio/WdfIoQueueDispatchSequential
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_QUEUE_DISPATCH_TYPE
-req.alt-loc : wdfio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_DISPATCH_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,7 +87,7 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 
 ## Remarks
 
-For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-methods-for-i-o-requests">Dispatching Methods for I/O Requests</a>.</p>
+For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-methods-for-i-o-requests">Dispatching Methods for I/O Requests</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

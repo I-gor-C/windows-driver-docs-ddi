@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : f65116f6-0a61-4609-993b-d7b2eabf12b5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_PMCSR_BSE, PCI_PMCSR_BSE, *PPCI_PMCSR_BSE
+ms.keywords : "*PPCI_PMCSR_BSE, PCI.pci_pmcsr_bse, pci_struct_8ff8cc6c-91a4-4396-9d4c-8d99967a9417.xml, wdm/PPCI_PMCSR_BSE, PCI_PMCSR_BSE, _PCI_PMCSR_BSE, PPCI_PMCSR_BSE, PPCI_PMCSR_BSE structure pointer [Buses], wdm/PCI_PMCSR_BSE, PCI_PMCSR_BSE structure [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_PMCSR_BSE
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PCI_PMCSR_BSE, *PPCI_PMCSR_BSE
 req.product : Windows 10 or later.
 ---
@@ -49,18 +53,18 @@ typedef struct _PCI_PMCSR_BSE {
 
 ## Members
 
-        
-            `BusPowerClockControlEnabled`
 
-            Indicates, when 1, that the bus's power clock control mechanism is enabled. A value of 0 indicates that the bus power clock control mechanism is disabled.  For a detailed explanation of the meaning of this member, see the <i>PCI Power Management Specification</i>.
-        
-            `D3HotSupportsStopClock`
+`BusPowerClockControlEnabled`
 
-            Indicates how the power state of a secondary bus is affected when the primary bus transitions to a D3 power state. For a detailed explanation of the values in this member and how they affect the relationship between the primary and secondary buses, see the <i>PCI Power Management Specification</i>.
-        
-            `Rsvd1`
+Indicates, when 1, that the bus's power clock control mechanism is enabled. A value of 0 indicates that the bus power clock control mechanism is disabled.  For a detailed explanation of the meaning of this member, see the <i>PCI Power Management Specification</i>.
 
-            Reserved.
+`D3HotSupportsStopClock`
+
+Indicates how the power state of a secondary bus is affected when the primary bus transitions to a D3 power state. For a detailed explanation of the values in this member and how they affect the relationship between the primary and secondary buses, see the <i>PCI Power Management Specification</i>.
+
+`Rsvd1`
+
+Reserved.
 
 
 ## Requirements
@@ -71,13 +75,10 @@ typedef struct _PCI_PMCSR_BSE {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537588">PCI_PM_CAPABILITY</a>
-</dt>
-</dl>
+
  
 
  

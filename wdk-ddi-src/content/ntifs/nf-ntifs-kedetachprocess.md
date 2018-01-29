@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25cb0b53-f5b2-460a-bcab-56196f568d12
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeDetachProcess
+ms.keywords : keref_0038ac90-7d97-45db-9a0d-028238af943d.xml, KeDetachProcess function [Installable File System Drivers], ntifs/KeDetachProcess, ifsk.kedetachprocess, KeDetachProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeDetachProcess
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 

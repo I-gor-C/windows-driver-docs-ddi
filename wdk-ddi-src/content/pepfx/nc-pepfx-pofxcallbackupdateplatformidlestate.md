@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A5E3C5DE-DD76-41CF-8A86-37F25A069E1C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.updateplatformidlestate, UpdatePlatformIdleState, UpdatePlatformIdleState routine [Kernel-Mode Driver Architecture], UpdatePlatformIdleState, POFXCALLBACKUPDATEPLATFORMIDLESTATE, POFXCALLBACKUPDATEPLATFORMIDLESTATE, pepfx/UpdatePlatformIdleState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UpdatePlatformIdleState
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -69,12 +73,34 @@ A pointer to a <a href="..\pepfx\ns-pepfx-_pep_platform_idle_state_update.md">PE
 ## Return Value
 
 <b>UpdatePlatformIdleState</b> returns STATUS_SUCCESS if it successfully updates the properties of the platform idle state. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_NOT_SUPPORTED</dt>
-</dl>The version number in the <b>PEP_PLATFORM_IDLE_STATE_UPDATE</b> structure is not a supported value.
+</dl>
+</td>
+<td width="60%">
+The version number in the <b>PEP_PLATFORM_IDLE_STATE_UPDATE</b> structure is not a supported value.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_NOT_IMPLEMENTED</dt>
-</dl>The <b>UpdatePlatformIdleState</b> routine is not implemented for this processor.
+</dl>
+</td>
+<td width="60%">
+The <b>UpdatePlatformIdleState</b> routine is not implemented for this processor.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -98,23 +124,16 @@ The <b>UpdatePlatformIdleState</b> routine must be called at IRQL = PASSIVE_LEVE
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-</dt>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186826">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186827">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
-</dt>
-<dt>
+
+<a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+
 <a href="..\pepfx\ns-pepfx-_pep_platform_idle_state_update.md">PEP_PLATFORM_IDLE_STATE_UPDATE</a>
-</dt>
-</dl>
+
  
 
  

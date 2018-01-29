@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a84dffce-977e-412a-a12a-e0e156b943ac
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRegistryFreeBuffer
+ms.keywords : storage.ataportregistryfreebuffer, AtaPortRegistryFreeBuffer, atartns_70807844-dbef-4457-bd47-102aeffcc840.xml, AtaPortRegistryFreeBuffer routine [Storage Devices], irb/AtaPortRegistryFreeBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortRegistryFreeBuffer
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortRegistryFreeBuffer function
 The <b>AtaPortRegistryFreeBuffer</b> routine frees the registry buffer that was allocated by using <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -82,17 +87,12 @@ The miniport driver must call <b>AtaPortRegistryFreeBuffer</b> either in its <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
-</dt>
-<dt>
+
 <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
+
  
 
  

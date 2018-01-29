@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d34f6e2c-4227-41bb-a1c0-f6206daa700b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IQueueCallbackIoResume, IQueueCallbackIoResume::OnIoResume, OnIoResume
+ms.keywords : UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml, OnIoResume method, OnIoResume method, IQueueCallbackIoResume interface, wdf.iqueuecallbackioresume_onioresume, wudfddi/IQueueCallbackIoResume::OnIoResume, IQueueCallbackIoResume, IQueueCallbackIoResume::OnIoResume, IQueueCallbackIoResume interface, OnIoResume method, umdf.iqueuecallbackioresume_onioresume, OnIoResume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IQueueCallbackIoResume.OnIoResume
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -83,20 +87,14 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md"
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md">IQueueCallbackIoResume</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md">IQueueCallbackIoResume</a>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-</dl>
+
  
 
  

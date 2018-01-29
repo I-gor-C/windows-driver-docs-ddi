@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmamsgpriority_2.htm
 old-project : netvista
 ms.assetid : 3fc5f220-09ae-4f8e-8616-549a5371e2f0
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMAMSGPRIORITY, RILMSGCDMAMSGPRIORITY
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_MSGPRIORITY_HIGH, rilapitypes/RILMSGCDMAMSGPRIORITY, RIL_MSGPRIORITY_MAX, RIL_MSGPRIORITY_HIGH, RIL_MSGPRIORITY_URGENT, netvista.rilmsgcdmamsgpriority_2, RIL_MSGPRIORITY_EMERGENCY, rilapitypes/RIL_MSGPRIORITY_MAX, RILMSGCDMAMSGPRIORITY, rilapitypes/RIL_MSGPRIORITY_EMERGENCY, rilapitypes/RIL_MSGPRIORITY_URGENT, RILMSGCDMAMSGPRIORITY enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMAMSGPRIORITY
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCDMAMSGPRIORITY
 req.product : Windows 10 or later.
 ---
@@ -64,6 +68,11 @@ typedef enum _RILMSGCDMAMSGPRIORITY {
 
 <tr>
 <td>RIL_MSGPRIORITY_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGPRIORITY_NORMAL</td>
 <td></td>
 </tr>
 

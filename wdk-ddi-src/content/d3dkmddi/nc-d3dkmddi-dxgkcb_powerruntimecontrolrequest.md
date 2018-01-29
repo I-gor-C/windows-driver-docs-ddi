@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 28984c89-a1d9-4720-8c4c-2b2ce34e0899
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcbpowerruntimecontrolrequest, PDXGKCB_POWERRUNTIMECONTROLREQUEST, DxgkCbPowerRuntimeControlRequest callback function [Display Devices], DxgkCbPowerRuntimeControlRequest, DXGKCB_POWERRUNTIMECONTROLREQUEST, DXGKCB_POWERRUNTIMECONTROLREQUEST, d3dkmddi/DxgkCbPowerRuntimeControlRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbPowerRuntimeControlRequest
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -92,7 +96,7 @@ Returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error co
 
 ## Remarks
 
-Although the driver can use any GUID in the <i>PowerControlCode</i> parameter, the following GUIDs that are defined in D3dkmddi.h are recommended. By using these GUIDs, the display port driver can issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.
+<div class="alert"><b>Note</b>  To avoid a possible deadlock, do not call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a> function until this function has returned.</div><div> </div>Although the driver can use any GUID in the <i>PowerControlCode</i> parameter, the following GUIDs that are defined in D3dkmddi.h are recommended. By using these GUIDs, the display port driver can issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.
 
 <dl>
 <dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
@@ -143,26 +147,6 @@ Change the bandwidth, but the driver doesn't know if the change is an increase o
 </dl>
 
 
-
-
-Increase the voltage.
-
-Decrease the voltage.
-
-Change the voltage, but the driver doesn't know if the change is an increase or decrease.
-
-Increase the clock setting.
-
-Decrease the clock setting.
-
-Change the clock setting, but the driver doesn't know if the change is an increase or decrease.
-
-Increase the bandwidth.
-
-Decrease the bandwidth.
-
-Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.
-
 These GUIDs do not imply that there is any communication protocol between the display miniport driver and the PEP, nor do they imply that there are any restrictions on the values that can be passed between the display miniport driver and the PEP.
 
 ## Requirements
@@ -179,17 +163,12 @@ These GUIDs do not imply that there is any communication protocol between the di
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
+
 <a href="..\dispmprt\ns-dispmprt-_dxgkrnl_interface.md">DXGKRNL_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

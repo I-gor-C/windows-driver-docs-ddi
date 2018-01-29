@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 9ec1c4e9-8c98-4772-8657-3392ff0827b5
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : hid.ioctl_hid_enable_secure_read, IOCTL_HID_ENABLE_SECURE_READ control code [Human Input Devices], IOCTL_HID_ENABLE_SECURE_READ, hidclass/IOCTL_HID_ENABLE_SECURE_READ, hidioreq_2d4e5797-33fb-40dd-bf76-8d81a0d26826.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_ENABLE_SECURE_READ
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -63,7 +67,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The HID class driver sets the <b>Status</b> field of <b>Irp-&gt;IoStatus</b> to STATUS_SUCCESS if the requester has SeTcbPrivilege privileges and the file is valid. Otherwise, it sets the <b>Status</b> field to STATUS_PRIVILEGE_NOT_HELD.
 
 
@@ -74,13 +77,10 @@ The HID class driver sets the <b>Status</b> field of <b>Irp-&gt;IoStatus</b> to 
 | **Header** | hidclass.h (include Hidclass.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidclass\ni-hidclass-ioctl_hid_disable_secure_read.md">IOCTL_HID_DISABLE_SECURE_READ</a>
-</dt>
-</dl>
+
  
 
  

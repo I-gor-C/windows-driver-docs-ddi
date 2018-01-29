@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : bf466384-bf13-42cc-a02d-ef880cac4c02
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _SCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT
+ms.keywords : SCO_RETRANSMISSION_DONT_CARE, _SCO_RETRANSMISSION_EFFORT, bthddi/SCO_RETRANSMISSION_MIN1_POWER, bth_enums_00709c56-9596-40d6-a789-840c5c1c7d33.xml, bthddi/SCO_RETRANSMISSION_NONE, PSCO_RETRANSMISSION_EFFORT enumeration pointer [Bluetooth Devices], SCO_RETRANSMISSION_NONE, SCO_RETRANSMISSION_MIN1_POWER, SCO_RETRANSMISSION_MIN1_QUALITY, bthddi/SCO_RETRANSMISSION_EFFORT, bthddi/PSCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT, bthddi/SCO_RETRANSMISSION_DONT_CARE, SCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT enumeration [Bluetooth Devices], bltooth.sco_retransmission_effort, PSCO_RETRANSMISSION_EFFORT, bthddi/SCO_RETRANSMISSION_MIN1_QUALITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCO_RETRANSMISSION_EFFORT
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT
 ---
 

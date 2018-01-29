@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a4781fea-4efc-442d-8503-12be17afa9b1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_SIZE_RANGE_0032, D3D12DDI_VIDEO_SIZE_RANGE_0032
+ms.keywords : d3d12umddi/D3D12DDI_VIDEO_SIZE_RANGE_0032, D3D12DDI_VIDEO_SIZE_RANGE_0032, D3D12DDI_VIDEO_SIZE_RANGE_0032 structure [Display Devices], display.d3d12ddi-video-size-range-0032
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_SIZE_RANGE_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_SIZE_RANGE_0032
 ---
 
@@ -51,22 +55,22 @@ typedef struct _D3D12DDI_VIDEO_SIZE_RANGE_0032 {
 
 ## Members
 
-        
-            `MaxHeight`
 
-            Maximum height.
-        
-            `MaxWidth`
+`MaxHeight`
 
-            Maximum width.
-        
-            `MinHeight`
+Maximum height.
 
-            Minimum height.
-        
-            `MinWidth`
+`MaxWidth`
 
-            Minimum width.
+Maximum width.
+
+`MinHeight`
+
+Minimum height.
+
+`MinWidth`
+
+Minimum width.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 51f2f837-7d67-4a9d-a365-d9d1b24977e5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION
+ms.keywords : "*PFILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION structure [Installable File System Drivers], _FILTER_VOLUME_STANDARD_INFORMATION, ifsk.filter_volume_standard_information, FltSystemStructures_cf6b475f-0334-4d11-8449-f66c611011bf.xml, PFILTER_VOLUME_STANDARD_INFORMATION structure pointer [Installable File System Drivers], fltuserstructures/PFILTER_VOLUME_STANDARD_INFORMATION, fltuserstructures/FILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available starting with Windows Vi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILTER_VOLUME_STANDARD_INFORMATION
-req.alt-loc : fltuserstructures.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : FILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION"
 ---
 
 # _FILTER_VOLUME_STANDARD_INFORMATION structure
@@ -51,23 +55,22 @@ typedef struct _FILTER_VOLUME_STANDARD_INFORMATION {
 
 ## Members
 
-        
-            `FileSystemType`
 
-            Read-only member used to identify the type of file system being used on the volume.  The possible values for this member are listed in <a href="..\fltuserstructures\ne-fltuserstructures-_flt_filesystem_type.md">FLT_FILESYSTEM_TYPE</a>.
-        
-            `FilterVolumeName`
+`FileSystemType`
 
-            Read-only name of the volume of <b>FilterVolumeNameLength</b> length.  This Unicode string is not NULL-terminated.
-        
-            `FilterVolumeNameLength`
+Read-only member used to identify the type of file system being used on the volume.  The possible values for this member are listed in <a href="..\fltuserstructures\ne-fltuserstructures-_flt_filesystem_type.md">FLT_FILESYSTEM_TYPE</a>.
 
-            Read-only length, in bytes, of the volume name.
-        
-            `Flags`
+`FilterVolumeName`
 
-            A read-only bitmask of system-defined flags that describe attributes of the volume. The following are valid flag values.
+Read-only name of the volume of <b>FilterVolumeNameLength</b> length.  This Unicode string is not NULL-terminated.
 
+`FilterVolumeNameLength`
+
+Read-only length, in bytes, of the volume name.
+
+`Flags`
+
+A read-only bitmask of system-defined flags that describe attributes of the volume. The following are valid flag values.
 <table>
 <tr>
 <th>Flag</th>
@@ -84,17 +87,17 @@ The volume in not currently attached to a storage stack.
 </td>
 </tr>
 </table>
-        
-            `FrameID`
 
-            Read-only member used to identify the filter manager frame that the volume is in.
-        
-            `NextEntryOffset`
+`FrameID`
 
-            Read-only offset, in bytes, of the next FILTER_VOLUME_STANDARD_INFORMATION structure if multiple structures are present in the buffer. This member is zero if no other structures follow this one.
+Read-only member used to identify the filter manager frame that the volume is in.
 
-    ## Remarks
-        Filter manager enumeration routines, such as <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>, can fill a buffer with structures of type FILTER_VOLUME_STANDARD_INFORMATION where each structure represents a volume known to filter manager.  This list of structures  can contain multiple volumes with the same name.  For more information, see <a href="https://msdn.microsoft.com/c05982dc-4124-4f9a-93b8-0e56ac296d1b">Understanding Volume Enumerations with Duplicate Volume Names</a>.
+`NextEntryOffset`
+
+Read-only offset, in bytes, of the next FILTER_VOLUME_STANDARD_INFORMATION structure if multiple structures are present in the buffer. This member is zero if no other structures follow this one.
+
+## Remarks
+Filter manager enumeration routines, such as <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>, can fill a buffer with structures of type FILTER_VOLUME_STANDARD_INFORMATION where each structure represents a volume known to filter manager.  This list of structures  can contain multiple volumes with the same name.  For more information, see <a href="https://msdn.microsoft.com/c05982dc-4124-4f9a-93b8-0e56ac296d1b">Understanding Volume Enumerations with Duplicate Volume Names</a>.
 
 The FILTER_VOLUME_STANDARD_INFORMATION structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry falls on an 8-byte boundary.
 
@@ -108,28 +111,20 @@ A FILTER_VOLUME_STANDARD_INFORMATION structure can be allocated from paged or no
 | **Minimum UMDF version** |  |
 | **Header** | fltuserstructures.h (include FltUser.h, FltKernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_basic_information.md">FILTER_VOLUME_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541522">FilterVolumeFindClose</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541525">FilterVolumeFindFirst</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541530">FilterVolumeFindNext</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541522">FilterVolumeFindClose</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumes.md">FltEnumerateVolumes</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541530">FilterVolumeFindNext</a>
+
  
 
  

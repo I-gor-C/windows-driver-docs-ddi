@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bedb6399-8f79-477a-9a90-4a7dec5c5dae
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetThreadHardErrorMode
+ms.keywords : kernel.iosetthreadharderrormode, IoSetThreadHardErrorMode routine [Kernel-Mode Driver Architecture], IoSetThreadHardErrorMode, ntddk/IoSetThreadHardErrorMode, k104_6e0a2c29-8edf-4d7e-b672-11309231c45e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows 2000 and later versio
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetThreadHardErrorMode
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,14 +79,10 @@ If hard errors are disabled for a given thread, calls to <b>IoRaiseHardError</b>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioraiseharderror.md">IoRaiseHardError</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-ioraiseharderror.md">IoRaiseHardError</a>
+
  
 
  

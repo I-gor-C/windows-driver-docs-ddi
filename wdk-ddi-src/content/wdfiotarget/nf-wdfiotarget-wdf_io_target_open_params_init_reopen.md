@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 00f1e870-4c74-44d3-9ee9-c8b9e63e5f3b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN
+ms.keywords : wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN, DFIOTargetRef_f0c123bb-3ecc-401f-ad91-4ed1b359454d.xml, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function, kmdf.wdf_io_target_open_params_init_reopen, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN, wdf.wdf_io_target_open_params_init_reopen
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN
-req.alt-loc : wdfiotarget.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
-req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -68,8 +72,6 @@ The <b>WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN</b> function zeros the specified <a
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
-The following code example is a segment of an <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a> callback function that reopens a remote I/O target.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -84,20 +86,14 @@ The following code example is a segment of an <a href="..\wdfiotarget\nc-wdfiota
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
-</dt>
-<dt>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
-</dt>
-<dt>
+
 <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_open_type.md">WdfIoTargetOpenReopen</a>
-</dt>
-</dl>
+
+<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
+
  
 
  

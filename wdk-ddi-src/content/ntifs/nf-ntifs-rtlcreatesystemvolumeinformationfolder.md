@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bcbbddc7-6675-4555-bd05-588762148554
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlCreateSystemVolumeInformationFolder
+ms.keywords : RtlCreateSystemVolumeInformationFolder routine [Installable File System Drivers], ntifs/RtlCreateSystemVolumeInformationFolder, ifsk.rtlcreatesystemvolumeinformationfolder, RtlCreateSystemVolumeInformationFolder, rtlref_f854cbbb-1aa4-4f0a-8d2d-5b160634a155.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Windows XP and later Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlCreateSystemVolumeInformationFolder
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -56,9 +60,23 @@ A pointer to a path to the root of the volume.
 ## Return Value
 
 The <b>RtlCreateSystemVolumeInformationFolder</b> routine returns STATUS_SUCCESS or an appropriate error status representing the final completion status of the operation. Possible error status codes include the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>A temporary buffer required by this function could not be allocated.
+</dl>
+</td>
+<td width="60%">
+A temporary buffer required by this function could not be allocated. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -84,14 +102,10 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-</dl>
+
  
 
  

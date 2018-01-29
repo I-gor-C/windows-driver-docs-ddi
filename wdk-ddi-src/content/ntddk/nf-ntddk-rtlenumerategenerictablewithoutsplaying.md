@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 28dacbac-99f0-415d-8d4f-954220839078
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlEnumerateGenericTableWithoutSplaying
+ms.keywords : ntddk/RtlEnumerateGenericTableWithoutSplaying, RtlEnumerateGenericTableWithoutSplaying routine [Installable File System Drivers], rtlref_83b2461b-003b-4aee-be45-afb325b15219.xml, ifsk.rtlenumerategenerictablewithoutsplaying, RtlEnumerateGenericTableWithoutSplaying
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XPand later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlEnumerateGenericTableWithoutSplaying
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -58,7 +62,6 @@ A pointer to the generic table (<a href="..\ntddk\ns-ntddk-_rtl_generic_table.md
 An address of the element returned by the previous call to <b>RtlEnumerateGenericTableWithoutSplaying</b>. Should be set to <b>NULL</b> if the enumeration is to start at the first element in the table. 
 
 To enumerate all elements in the table, use <b>RtlEnumerateGenericTableWithoutSplaying</b> as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -110,20 +113,14 @@ Callers of <b>RtlEnumerateGenericTableWithoutSplaying</b> must be running at IRQ
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableempty.md">RtlIsGenericTableEmpty</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
+
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a>
+
 <a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelements.md">RtlNumberGenericTableElements</a>
-</dt>
-</dl>
+
  
 
  

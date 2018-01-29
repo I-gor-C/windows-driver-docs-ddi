@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b7791969-027e-4df7-b720-1eb612597c56
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeTryToAcquireSpinLockAtDpcLevel
+ms.keywords : KeTryToAcquireSpinLockAtDpcLevel, wdm/KeTryToAcquireSpinLockAtDpcLevel, k105_416ac5db-d064-4ced-8cf8-311aca8dae7f.xml, KeTryToAcquireSpinLockAtDpcLevel routine [Kernel-Mode Driver Architecture], kernel.ketrytoacquirespinlockatdpclevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 with Service Pack 1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeTryToAcquireSpinLockAtDpcLevel
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : SpinLock, SpinlockRelease, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,20 +86,14 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-keacquirespinlockatdpclevel.md">KeAcquireSpinLockAtDpcLevel</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
+
  
 
  

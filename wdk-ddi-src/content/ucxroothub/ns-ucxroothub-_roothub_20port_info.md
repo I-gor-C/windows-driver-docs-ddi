@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : AA71D015-B047-497C-A9E1-32E5E73AD0C2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _ROOTHUB_20PORT_INFO, *PROOTHUB_20PORT_INFO, ROOTHUB_20PORT_INFO
+ms.keywords : ucxroothub/P_ROOTHUB_20PORT_INFO, ROOTHUB_20PORT_INFO, ucxroothub/_ROOTHUB_20PORT_INFO, _ROOTHUB_20PORT_INFO, ROOTHUB_20PORT_INFO structure [Buses], P_ROOTHUB_20PORT_INFO, P_ROOTHUB_20PORT_INFO structure pointer [Buses], *PROOTHUB_20PORT_INFO, buses._roothub_20port_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ROOTHUB_20PORT_INFO
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PROOTHUB_20PORT_INFO, ROOTHUB_20PORT_INFO"
 req.product : Windows 10 or later.
 ---
@@ -53,34 +57,34 @@ typedef struct _ROOTHUB_20PORT_INFO {
 
 ## Members
 
-        
-            `ControllerUsb20HardwareLpmFlags`
 
-            A value that indicates Link Power Management (LPM) flags for the controller.
-        
-            `DebugCapable`
+`ControllerUsb20HardwareLpmFlags`
 
-            A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
-        
-            `HubDepth`
+A value that indicates Link Power Management (LPM) flags for the controller.
 
-            The hub depth limit.
-        
-            `IntegratedHubImplemented`
+`DebugCapable`
 
-            A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is implemented.
-        
-            `MinorRevision`
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
 
-            Minor revision number.
-        
-            `PortNumber`
+`HubDepth`
 
-            The USB 2.0 root hub port number.
-        
-            `Removable`
+The hub depth limit.
 
-            A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is removable.
+`IntegratedHubImplemented`
+
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is implemented.
+
+`MinorRevision`
+
+Minor revision number.
+
+`PortNumber`
+
+The USB 2.0 root hub port number.
+
+`Removable`
+
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is removable.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2a2320e6-b114-4ea7-9f2f-27fd47fef770
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxScavengeFobxsForNetRoot
+ms.keywords : rxref_9fac9a87-f068-4ee4-909c-85a41c9884d6.xml, ifsk.rxscavengefobxsfornetroot, RxScavengeFobxsForNetRoot function [Installable File System Drivers], scavengr/RxScavengeFobxsForNetRoot, RxScavengeFobxsForNetRoot
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxScavengeFobxsForNetRoot
-req.alt-loc : scavengr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -60,7 +64,7 @@ A pointer to the FCB for which the scavenging should occur.
 
 `SynchronizeWithScavenger`
 
-
+TBD
 
 
 ## Return Value
@@ -78,8 +82,12 @@ The <b>RxScavengeFobxsForNetRoot</b> routine acquires the scavenger mutex, trave
 If <i>PurgingFcb </i>is not <b>NULL</b>, and this purging FCB structure is not the same as the FCB associated with the FOBX structure on the <b>FobxsToBeFinalized</b> list member of the scavenger object, <b>RxScavengeFobxsForNetRoot</b> will call the <a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a> callback routine provided by the network mini-redirector if it is supported. The call to <b>MRxAreFilesAliased</b> is to determine if the PFCB is an alias for the FCB associated with the FOBX structure.
 
 On checked builds, <b>RxScavengeAllFobxs</b> causes the system to ASSERT for the following condition:
-
+<ul>
+<li>
 The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,20 +103,14 @@ The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
-</dt>
-<dt>
 <a href="..\scavengr\nf-scavengr-rxpurgerelatedfobxs.md">RxPurgeRelatedFobxs</a>
-</dt>
-<dt>
+
 <a href="..\rxprocs\nf-rxprocs-rxscavengeallfobxs.md">RxScavengeAllFobxs</a>
-</dt>
-</dl>
+
+<a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
+
  
 
  

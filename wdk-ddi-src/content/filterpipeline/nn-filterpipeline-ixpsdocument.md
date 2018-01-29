@@ -7,8 +7,8 @@ old-location : print\ixpsdocument.htm
 old-project : print
 ms.assetid : 1d4a9ad3-6ac1-44c3-9ddd-0dc5f996d70d
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.date : 1/18/2018
+ms.keywords : print.ixpsdocument, IXpsDocument interface [Print Devices], IXpsDocument interface [Print Devices], described, IXpsDocument, filterpipeline/IXpsDocument, filterpipeline_d2db5467-7b2d-439c-8ad1-3ffb607a3167.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IXpsDocument
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

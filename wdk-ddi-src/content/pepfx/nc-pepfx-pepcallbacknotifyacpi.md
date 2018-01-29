@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7BC27FD1-CCD8-4ABC-B973-C2242D6C243B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.acceptacpinotification, AcceptAcpiNotification routine [Kernel-Mode Driver Architecture], AcceptAcpiNotification, PEPCALLBACKNOTIFYACPI, PEPCALLBACKNOTIFYACPI, pepfx/AcceptAcpiNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AcceptAcpiNotification
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= HIGH_LEVEL
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -85,17 +89,12 @@ The IRQL at which the PEP's <i>AcceptAcpiNotification</i> routine is called vari
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
-</dt>
-<dt>
 <a href="..\pepfx\nf-pepfx-pofxregisterpluginex.md">PoFxRegisterPluginEx</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
+
  
 
  

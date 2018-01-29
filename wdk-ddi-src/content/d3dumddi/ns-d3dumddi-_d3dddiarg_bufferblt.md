@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1d638aeb-299a-4707-be5d-99291a1605e0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_BUFFERBLT, D3DDDIARG_BUFFERBLT
+ms.keywords : D3DDDIARG_BUFFERBLT, _D3DDDIARG_BUFFERBLT, d3dumddi/D3DDDIARG_BUFFERBLT, display.d3dddiarg_bufferblt, D3DDDIARG_BUFFERBLT structure [Display Devices], UMDisplayDriver_param_Structs_08885ff3-963c-4067-bddc-696b9cc96e1b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_BUFFERBLT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_BUFFERBLT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DDDIARG_BUFFERBLT {
 
 ## Members
 
-        
-            `hDstResource`
 
-            [in] A handle to the destination vertex or index buffer.
-        
-            `hSrcResource`
+`hDstResource`
 
-            [in] A handle to the source vertex or index buffer.
-        
-            `Offset`
+[in] A handle to the destination vertex or index buffer.
 
-            [in] The offset, in bytes, of the destination buffer that the copy should be directed into.
-        
-            `SrcRange`
+`hSrcResource`
 
-            [in] A D3DDDIRANGE structure that indicates what range of the source buffer should be copied. This D3DDDIRANGE specifies an offset and size, in bytes.
+[in] A handle to the source vertex or index buffer.
+
+`Offset`
+
+[in] The offset, in bytes, of the destination buffer that the copy should be directed into.
+
+`SrcRange`
+
+[in] A D3DDDIRANGE structure that indicates what range of the source buffer should be copied. This D3DDDIRANGE specifies an offset and size, in bytes.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _D3DDDIARG_BUFFERBLT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_bufblt.md">BufBlt</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : D4A7F80C-C223-4F92-AD08-C37F0668B292
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_READ_REGISTER_BUFFER_UCHAR
+ms.keywords : WDF_READ_REGISTER_BUFFER_UCHAR, wdf.wdf_read_register_buffer_uchar, wdfhwaccess/WDF_READ_REGISTER_BUFFER_UCHAR, WDF_READ_REGISTER_BUFFER_UCHAR function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.0
-req.alt-api : WDF_READ_REGISTER_BUFFER_UCHAR
-req.alt-loc : Wdfhwaccess.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
 req.product : Windows 10 or later.
 ---
 

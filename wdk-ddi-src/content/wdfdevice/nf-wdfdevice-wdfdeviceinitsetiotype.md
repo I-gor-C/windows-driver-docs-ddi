@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fcad4b8e-4273-43ff-8077-a96d1bd4640a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetIoType
+ms.keywords : PFN_WDFDEVICEINITSETIOTYPE, wdf.wdfdeviceinitsetiotype, DFDeviceObjectGeneralRef_4c821466-f1d7-46fa-a1f0-e8fefd20caab.xml, wdfdevice/WdfDeviceInitSetIoType, kmdf.wdfdeviceinitsetiotype, WdfDeviceInitSetIoType method, WdfDeviceInitSetIoType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceInitSetIoType
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -77,8 +81,6 @@ If the driver does not call <b>WdfDeviceInitSetIoType</b>, the framework sets th
 
 For more information about buffer-access methods, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers</a>.
 
-The following code example indicates that a driver will use the direct I/O method when it accesses the device.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,17 +95,12 @@ The following code example indicates that a driver will use the direct I/O metho
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0"> IWDFDeviceInitialize2::SetIoTypePreference</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
-</dt>
-</dl>
+
  
 
  

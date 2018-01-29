@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ba50fcac-acb1-43de-aacc-b47845f19f44
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlEqualUnicodeString
+ms.keywords : RtlEqualUnicodeString, RtlEqualUnicodeString routine [Kernel-Mode Driver Architecture], wdm/RtlEqualUnicodeString, kernel.rtlequalunicodestring, k109_59d7c507-968a-4cf5-b1f0-91c8cd7ccb64.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlEqualUnicodeString
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlequalstring.md">RtlEqualString</a>
-</dt>
-</dl>
+
  
 
  

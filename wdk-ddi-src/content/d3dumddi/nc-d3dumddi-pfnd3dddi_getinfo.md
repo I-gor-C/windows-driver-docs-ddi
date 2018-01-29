@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dcc0519e-f919-48bc-829f-416648de0b40
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.getinfo, GetInfo callback function [Display Devices], GetInfo, PFND3DDDI_GETINFO, PFND3DDDI_GETINFO, d3dumddi/GetInfo, UserModeDisplayDriver_Functions_21bbab23-9804-468e-80fb-6618f8356ac7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetInfo
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -74,15 +78,45 @@ The size, in bytes, of the buffer that is supplied by <i>pDevInfoStruct</i>.
 ## Return Value
 
 <i>GetInfo</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The device information is successfully retrieved.
+</dl>
+</td>
+<td width="60%">
+The device information is successfully retrieved.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_NOTIMPL</b></dt>
-</dl>The driver does not support the requested type of device information.
+</dl>
+</td>
+<td width="60%">
+The driver does not support the requested type of device information.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -104,14 +138,10 @@ The Direct3D 8 runtime sets the D3DDDIDEVINFOID_VCACHE flag in the <i>DevInfoID<
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddidevinfo_vcache.md">D3DDDIDEVINFO_VCACHE</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
  
 
  

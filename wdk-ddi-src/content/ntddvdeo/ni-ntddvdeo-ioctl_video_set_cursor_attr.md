@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bb1f426e-6a3d-4644-ad3d-26e5a70b534d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_set_cursor_attr, IOCTL_VIDEO_SET_CURSOR_ATTR control code [Display Devices], IOCTL_VIDEO_SET_CURSOR_ATTR, ntddvdeo/IOCTL_VIDEO_SET_CURSOR_ATTR, Video_IOCTLs_7f8f1646-ff57-47fd-afb7-f7ad7e953188.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_SET_CURSOR_ATTR
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SET_CURSOR_ATTR IOCTL
-Sets the cursor size, position, and visibility. Miniport drivers for VGA-compatible adapters are required to support this request, which is modal. Support is optional for other miniport drivers.
-
-
-
 Sets the cursor size, position, and visibility. Miniport drivers for VGA-compatible adapters are required to support this request, which is modal. Support is optional for other miniport drivers.
 
 ### Major Code
@@ -63,7 +63,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure.
 
 

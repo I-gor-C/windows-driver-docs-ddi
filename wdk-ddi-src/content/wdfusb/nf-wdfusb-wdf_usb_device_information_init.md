@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8f4931d7-6b5f-412f-ace9-32f20dfa7c90
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_USB_DEVICE_INFORMATION_INIT
+ms.keywords : wdf.wdf_usb_device_information_init, kmdf.wdf_usb_device_information_init, DFUsbRef_ffde7966-f00b-4614-9845-aaebe2e0488b.xml, wdfusb/WDF_USB_DEVICE_INFORMATION_INIT, WDF_USB_DEVICE_INFORMATION_INIT function, WDF_USB_DEVICE_INFORMATION_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_DEVICE_INFORMATION_INIT
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -64,8 +68,6 @@ None
 
 The <b>WDF_USB_DEVICE_INFORMATION_INIT</b> function zeros the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a> structure and sets its <b>Size</b> member to the size of the structure.
 
-For a code example that uses<b>WDF_USB_DEVICE_INFORMATION_INIT</b>, see <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -80,11 +82,8 @@ For a code example that uses<b>WDF_USB_DEVICE_INFORMATION_INIT</b>, see <a href=
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

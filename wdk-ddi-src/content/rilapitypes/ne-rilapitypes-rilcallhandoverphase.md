@@ -7,8 +7,8 @@ old-location : netvista\rilcallhandoverphase_2.htm
 old-project : netvista
 ms.assetid : 181363b5-08fa-4a6b-aa91-c9827a82b80e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLHANDOVERPHASE, RILCALLHANDOVERPHASE
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_CALLHANDOVERPHASE_FAILED, rilapitypes/RIL_CALLHANDOVERPHASE_COMPLETED, RIL_CALLHANDOVERPHASE_CANCELLED, RILCALLHANDOVERPHASE, netvista.rilcallhandoverphase_2, RIL_CALLHANDOVERPHASE_FAILED, RIL_CALLHANDOVERPHASE_MAX, rilapitypes/RIL_CALLHANDOVERPHASE_MAX, rilapitypes/RIL_CALLHANDOVERPHASE_CANCELLED, RIL_CALLHANDOVERPHASE_COMPLETED, rilapitypes/RILCALLHANDOVERPHASE, RILCALLHANDOVERPHASE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLHANDOVERPHASE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLHANDOVERPHASE
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,11 @@ typedef enum _RILCALLHANDOVERPHASE {
 
 <tr>
 <td>RIL_CALLHANDOVERPHASE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLHANDOVERPHASE_STARTED</td>
 <td></td>
 </tr>
 </table>

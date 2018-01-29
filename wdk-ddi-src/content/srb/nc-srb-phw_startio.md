@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1b177ef5-2b58-425e-9b9a-428bbe15de69
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
+ms.keywords : storage.phw_startio, (*PHW_STARTIO) callback function [Storage Devices], (*PHW_STARTIO), srb/(*PHW_STARTIO), ide_minikr_16fd699a-4cb9-4741-9e50-3fa8177f49f2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PHW_STARTIO)
-req.alt-loc : srb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -88,14 +92,10 @@ For more information about the miniport driver's start I/O routine that is used 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557323">HwScsiStartIo</a>
-</dt>
-<dt>
+
 <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>
-</dt>
-</dl>
+
  
 
  

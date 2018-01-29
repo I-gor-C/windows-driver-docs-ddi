@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f38222e8-f432-4a28-ba2f-2e4f60edd762
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminipinsetdataformat, AVStrMiniPinSetDataFormat, AVStrMiniPinSetDataFormat routine [Streaming Media Devices], AVStrMiniPinSetDataFormat, PFNKSPINSETDATAFORMAT, PFNKSPINSETDATAFORMAT, ks/AVStrMiniPinSetDataFormat, avstclbk_c72cee40-d3d3-45df-8ece-2eb0a8b52e38.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniPinSetDataFormat
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -106,26 +110,18 @@ This routine is optional.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+
+<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
+
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
  
 
  

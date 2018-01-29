@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 746f13f5-c92d-4dae-8fd7-4c9fdfa9e044
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords : ifsk.pflt_filter_unload_callback, FilterUnloadCallback routine [Installable File System Drivers], FilterUnloadCallback, PFLT_FILTER_UNLOAD_CALLBACK, PFLT_FILTER_UNLOAD_CALLBACK, fltkernel/FilterUnloadCallback, FltCallbacks_e28b1a16-b974-493a-8ab5-7b6004d66268.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FilterUnloadCallback
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -54,7 +58,6 @@ NTSTATUS PfltFilterUnloadCallback(
 `Flags`
 
 Bitmask of flags describing the unload request. This parameter can be <b>NULL</b> or the following: 
-
 <table>
 <tr>
 <th>Flag</th>
@@ -76,9 +79,23 @@ The filter manager sets this flag to indicate that the unload operation is manda
 ## Return Value
 
 This callback routine returns STATUS_SUCCESS or an NTSTATUS value such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DO_NOT_DETACH</b></dt>
-</dl>If the unload operation is not mandatory, returning this status value prevents the minifilter driver from being unloaded. This is an error code.
+</dl>
+</td>
+<td width="60%">
+If the unload operation is not mandatory, returning this status value prevents the minifilter driver from being unloaded. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -106,14 +123,10 @@ If the FLTFL_FILTER_UNLOAD_MANDATORY flag is set in the <i>Flags</i> parameter, 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-</dl>
+
  
 
  

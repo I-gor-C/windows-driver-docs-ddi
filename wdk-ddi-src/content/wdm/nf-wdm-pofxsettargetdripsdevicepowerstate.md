@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 435c0731-101c-498b-9041-904001be3f2c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetTargetDripsDevicePowerState
+ms.keywords : PoFxSetTargetDripsDevicePowerState function [Kernel-Mode Driver Architecture], PoFxSetTargetDripsDevicePowerState, wdm/PoFxSetTargetDripsDevicePowerState, kernel.pofxsettargetdripsdevicepowerstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxSetTargetDripsDevicePowerState
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode)
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 5B8C1264-336C-438F-89AC-82B6FCBAE931
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_BREADCRUMBING_ALERT_DATA, GNSS_BREADCRUMBING_ALERT_DATA, *PGNSS_BREADCRUMBING_ALERT_DATA
+ms.keywords : gnssdriver/GNSS_BREADCRUMBING_ALERT_DATA, gnssdriver/PGNSS_BREADCRUMBING_ALERT_DATA, GNSS_BREADCRUMBING_ALERT_DATA, *PGNSS_BREADCRUMBING_ALERT_DATA, GNSS_BREADCRUMBING_ALERT_DATA structure [Sensor Devices], PGNSS_BREADCRUMBING_ALERT_DATA structure pointer [Sensor Devices], sensors.gnss_breadcrumbing_alert_data, PGNSS_BREADCRUMBING_ALERT_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_BREADCRUMBING_ALERT_DATA
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_BREADCRUMBING_ALERT_DATA, *PGNSS_BREADCRUMBING_ALERT_DATA
 ---
 
@@ -48,14 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `Size`
 
-            Structure size.
-        
-            `Version`
+`Size`
 
-            Version number.
+Structure size.
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 75c0f546-1a58-45e8-a3eb-3075f07c426b
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
+ms.keywords : hidstrct_d0f637a8-58c0-4d83-9a2f-2e14761b6183.xml, _HID_MINIDRIVER_REGISTRATION, hidport/HID_MINIDRIVER_REGISTRATION, hidport/PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION structure [Human Input Devices], PHID_MINIDRIVER_REGISTRATION, hid.hid_minidriver_registration, *PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION, PHID_MINIDRIVER_REGISTRATION structure pointer [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HID_MINIDRIVER_REGISTRATION
-req.alt-loc : hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 # _HID_MINIDRIVER_REGISTRATION structure
@@ -51,33 +55,33 @@ typedef struct _HID_MINIDRIVER_REGISTRATION {
 
 ## Members
 
-        
-            `DeviceExtensionSize`
 
-            Specifies the length, in bytes, that the minidriver requests for a device extension.
-        
-            `DevicesArePolled`
+`DeviceExtensionSize`
 
-            Specifies that the devices on the bus that this minidriver supports must be polled in order to obtain data from the device.
-        
-            `DriverObject`
+Specifies the length, in bytes, that the minidriver requests for a device extension.
 
-            Pointer to the minidriver's <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>.
-        
-            `RegistryPath`
+`DevicesArePolled`
 
-            Pointer to the minidriver's registry path.
-        
-            `Reserved`
+Specifies that the devices on the bus that this minidriver supports must be polled in order to obtain data from the device.
 
-            Reserved for internal system use.
-        
-            `Revision`
+`DriverObject`
 
-            Specifies the HID version that this minidriver supports.
+Pointer to the minidriver's <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>.
 
-    ## Remarks
-        When a HID minidriver calls <a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>, it uses this structure to pass information to the HID class driver. The minidriver must must zero-initialize this structure before setting members. A minidriver sets the members <b>DriverObject</b> and <b>RegistryPath</b> to the driver object and registry path parameters that are passed to the minidriver as system-supplied parameters to its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. <b>Revision</b> should be set to HID_REVISION.
+`RegistryPath`
+
+Pointer to the minidriver's registry path.
+
+`Reserved`
+
+Reserved for internal system use.
+
+`Revision`
+
+Specifies the HID version that this minidriver supports.
+
+## Remarks
+When a HID minidriver calls <a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>, it uses this structure to pass information to the HID class driver. The minidriver must must zero-initialize this structure before setting members. A minidriver sets the members <b>DriverObject</b> and <b>RegistryPath</b> to the driver object and registry path parameters that are passed to the minidriver as system-supplied parameters to its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. <b>Revision</b> should be set to HID_REVISION.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,16 +91,12 @@ typedef struct _HID_MINIDRIVER_REGISTRATION {
 | **Minimum UMDF version** |  |
 | **Header** | hidport.h (include Hidport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
-</dt>
-<dt>
+
 <a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>
-</dt>
-</dl>
+
  
 
  

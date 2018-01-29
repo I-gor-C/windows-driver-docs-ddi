@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 22840772-7DFC-4339-9C06-4900E47048B4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords : ifsk.pflt_section_conflict_notification_callback, SectionNotificationCallback routine [Installable File System Drivers], SectionNotificationCallback, PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK, PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK, fltkernel/SectionNotificationCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PFLT_CONTEXT_ALLOCATE_CALLBACK callback routine 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SectionNotificationCallback
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -90,20 +94,14 @@ Certain situations can occur where holding a section open is incompatible with c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
+
  
 
  

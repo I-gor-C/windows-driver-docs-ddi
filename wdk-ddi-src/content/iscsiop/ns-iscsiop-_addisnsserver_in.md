@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5d05eeeb-ab68-4770-88c1-483c56dbc116
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _AddiSNSServer_IN, AddiSNSServer_IN, *PAddiSNSServer_IN
+ms.keywords : structs-iSCSI_2c317c93-3fea-4749-98ef-fba28c0cc93f.xml, AddiSNSServer_IN, PAddiSNSServer_IN structure pointer [Storage Devices], *PAddiSNSServer_IN, _AddiSNSServer_IN, storage.addisnsserver_in, iscsiop/PAddiSNSServer_IN, AddiSNSServer_IN structure [Storage Devices], PAddiSNSServer_IN, iscsiop/AddiSNSServer_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AddiSNSServer_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : AddiSNSServer_IN, *PAddiSNSServer_IN
 ---
 
@@ -46,13 +50,13 @@ typedef struct _AddiSNSServer_IN {
 
 ## Members
 
-        
-            `iSNSServerName`
 
-            The iSNS server name to add to the list of iSNS servers that the iSCSI initiator maintains.
+`iSNSServerName`
 
-    ## Remarks
-        It is optional that you implement this method.
+The iSNS server name to add to the list of iSNS servers that the iSCSI initiator maintains.
+
+## Remarks
+It is optional that you implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _AddiSNSServer_IN {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\iscsiop\ns-iscsiop-_addisnsserver_out.md">AddiSNSServer_OUT</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
-</dt>
-</dl>
+
+<a href="..\iscsiop\ns-iscsiop-_addisnsserver_out.md">AddiSNSServer_OUT</a>
+
  
 
  

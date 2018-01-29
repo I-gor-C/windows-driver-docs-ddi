@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b7791cf7-476c-4319-976d-9da3d96b6a76
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.keywords : storage.ioctl_cdrom_raw_read, IOCTL_CDROM_RAW_READ control code [Storage Devices], IOCTL_CDROM_RAW_READ, ntddcdrm/IOCTL_CDROM_RAW_READ, k307_1c2f1a05-940c-40f8-a280-3a23d3bb4171.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CDROM_RAW_READ
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_RAW_READ IOCTL
-Reads data from the CD-ROM in raw mode.
-
-
-
 Reads data from the CD-ROM in raw mode.
 
 ### Major Code
@@ -65,7 +65,6 @@ Length of an MDL.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the read is successful, the driver sets <b>Status</b> to STATUS_SUCCESS and <b>Information</b> to the number of bytes transferred. If the read is not successful, the driver sets <b>Information</b> to zero and <b>Status</b> to possibly STATUS_INVALID_PARAMETER, STATUS_INSUFFICIENT_RESOURCES, or STATUS_INVALID_DEVICE_REQUEST.
 
 
@@ -76,13 +75,10 @@ If the read is successful, the driver sets <b>Status</b> to STATUS_SUCCESS and <
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-__raw_read_info.md">RAW_READ_INFO</a>
-</dt>
-</dl>
+
  
 
  

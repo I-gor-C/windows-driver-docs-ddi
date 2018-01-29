@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortSetPowerSettingNotificationGuids
+ms.keywords : StorPortSetPowerSettingNotificationGuids routine [Storage Devices], StorPortSetPowerSettingNotificationGuids, Adaptive Setting, storage.storportsetpowersettingnotificationguids, storport/StorPortSetPowerSettingNotificationGuids, HIPM/DIPM Setting
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortSetPowerSettingNotificationGuids
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -63,16 +67,40 @@ The number of GUIDs in the <i>Guid</i> array.
 
 An array of power setting GUIDs to register for notification. A typical use for registering these GUIDs is for SATA miniports to receive notifications for AHCI Link Power Management setting changes. The  AHCI Link Power Management settings defined by the Microsoft AHCI StorPort miniport driver are the following.
 
+Other miniports may define and register their own power setting GUIDs.
+
 
 ## Return Value
 
 The <b>StorPortSetPowerSettingNotificationGuids</b> routine returns one of these status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl> Insufficient resources are available to register for notifications.
+</dl>
+</td>
+<td width="60%">
+ Insufficient resources are available to register for notifications.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The notification GUIDs were registered successfully.
+</dl>
+</td>
+<td width="60%">
+The notification GUIDs were registered successfully.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,14 +124,10 @@ The AHCI Link Power management settings are part of the Disk Settings subgroup (
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
-</dt>
-<dt>
 <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
-</dt>
-</dl>
+
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+
  
 
  

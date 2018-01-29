@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f5bb3af4-c687-47ad-88ce-d56067c78d6d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWorkItemCreate
+ms.keywords : wdfworkitem/WdfWorkItemCreate, PFN_WDFWORKITEMCREATE, kmdf.wdfworkitemcreate, DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml, wdf.wdfworkitemcreate, WdfWorkItemCreate, WdfWorkItemCreate method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfWorkItemCreate
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -69,21 +73,67 @@ A pointer to a variable that receives a handle to the new work-item object.
 ## Return Value
 
 <b>WdfWorkItemCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was supplied.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was supplied.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The work-item object's parent is not a device object or the ancestor of a device object.
+</dl>
+</td>
+<td width="60%">
+The work-item object's parent is not a device object or the ancestor of a device object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There were insufficient system resources to create a work-item object.
+</dl>
+</td>
+<td width="60%">
+There were insufficient system resources to create a work-item object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WDF_INCOMPATIBLE_EXECUTION_LEVEL</b></dt>
-</dl>The <b>AutomaticSerialization</b> member in the <a href="..\wdfworkitem\ns-wdfworkitem-_wdf_workitem_config.md">WDF_WORKITEM_CONFIG</a> structure that the <i>Config</i> parameter points to is <b>TRUE</b>, but the parent object's execution level is not <b>WdfExecutionLevelPassive</b>.
+</dl>
+</td>
+<td width="60%">
+The <b>AutomaticSerialization</b> member in the <a href="..\wdfworkitem\ns-wdfworkitem-_wdf_workitem_config.md">WDF_WORKITEM_CONFIG</a> structure that the <i>Config</i> parameter points to is <b>TRUE</b>, but the parent object's execution level is not <b>WdfExecutionLevelPassive</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WDF_PARENT_NOT_SPECIFIED</b></dt>
-</dl>The <i>Attributes</i> parameter was <b>NULL</b>, or the <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that <i>Attributes</i> specifies was <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+The <i>Attributes</i> parameter was <b>NULL</b>, or the <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that <i>Attributes</i> specifies was <b>NULL</b>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -101,8 +151,6 @@ If your driver provides <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_contex
 
 For more information about work items, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-framework-work-items">Using Framework Work Items</a>.
 
-The following code example initializes a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure, initializes a <a href="..\wdfworkitem\ns-wdfworkitem-_wdf_workitem_config.md">WDF_WORKITEM_CONFIG</a> structure, and calls <b>WdfWorkItemCreate</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -117,11 +165,8 @@ The following code example initializes a <a href="..\wdfobject\ns-wdfobject-_wdf
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemenqueue.md">WdfWorkItemEnqueue</a>
-</dt>
-</dl>
+
  
 
  

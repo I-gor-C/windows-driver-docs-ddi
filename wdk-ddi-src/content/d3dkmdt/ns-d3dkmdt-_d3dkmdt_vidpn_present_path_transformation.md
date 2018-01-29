@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7b2370c8-ea8a-4719-b88a-2401dbafb64c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
+ms.keywords : DmStructs_3c1dd0fd-471f-48e0-9df5-003f98237ac2.xml, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure [Display Devices], _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, display.d3dkmdt_vidpn_present_path_transformation, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
 ---
 
@@ -49,29 +53,30 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION {
 
 ## Members
 
-        
-            `Rotation`
 
-            A value from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration that indicates the type of rotation that is currently set for the path. If this member is equal to <b>D3DKMDT_VPPR_IDENTITY</b>, <b>D3DKMDT_VPPR_ROTATE90</b>, <b>D3DKMDT_VPPR_ROTATE180</b> or <b>D3DKMDT_VPPR_ROTATE270</b>, then the indicated rotation type is considered pinned for the path. If this member is equal to any other value, then no rotation type is pinned for the path.
-        
-            `RotationSupport`
+`Rotation`
 
-            A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation_support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a> structure that holds a set of flags that indicate the types of rotation that are supported by the path.
-        
-            `Scaling`
+A value from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration that indicates the type of rotation that is currently set for the path. If this member is equal to <b>D3DKMDT_VPPR_IDENTITY</b>, <b>D3DKMDT_VPPR_ROTATE90</b>, <b>D3DKMDT_VPPR_ROTATE180</b> or <b>D3DKMDT_VPPR_ROTATE270</b>, then the indicated rotation type is considered pinned for the path. If this member is equal to any other value, then no rotation type is pinned for the path.
 
-            A value from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a> enumeration that indicates the type of scaling (or centering) that is currently set for the path. If this member is equal to <b>D3DKMDT_VPPS_IDENTITY</b>, <b>D3DKMDT_VPPS_CENTERED</b>, <b>D3DKMDT_VPPS_STRETCHED</b>, <b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b>, or <b>D3DKMDT_VPPS_CUSTOM</b>, then the indicated scaling type is considered pinned for the path. If this member is equal to any other value, then no scaling type is pinned for the path.
+`RotationSupport`
+
+A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation_support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a> structure that holds a set of flags that indicate the types of rotation that are supported by the path.
+
+`Scaling`
+
+A value from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a> enumeration that indicates the type of scaling (or centering) that is currently set for the path. If this member is equal to <b>D3DKMDT_VPPS_IDENTITY</b>, <b>D3DKMDT_VPPS_CENTERED</b>, <b>D3DKMDT_VPPS_STRETCHED</b>, <b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b>, or <b>D3DKMDT_VPPS_CUSTOM</b>, then the indicated scaling type is considered pinned for the path. If this member is equal to any other value, then no scaling type is pinned for the path.
 
 For more information on how to use this member, see the Remarks section.
-        
-            `ScalingSupport`
 
-            A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a> structure that holds a set of flags that indicate the types of scaling that are supported by the path.
+`ScalingSupport`
 
-    ## Remarks
-        The <b>ContentTransformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a  <b>D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</b> structure.
+A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a> structure that holds a set of flags that indicate the types of scaling that are supported by the path.
+
+## Remarks
+The <b>ContentTransformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a  <b>D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</b> structure.
 
 If <b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b> or <b>D3DKMDT_VPPS_CUSTOM</b> values are specified in the <b>Scaling</b> member but the path is on a display miniport driver that does not support these values (which are available beginning with Windows 7), the driver's calls to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> should return <b>STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED</b>, and the operating system will apply the system default scaling. If a driver cannot support the requested scaling value on the specified path, its calls to <b>DxgkDdiCommitVidPn</b> should return <b>STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED</b>.
+<div class="alert"><b>Note</b>    A display miniport driver that supports the <b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b> or <b>D3DKMDT_VPPS_CUSTOM</b> values should never set a value of <b>D3DKMDT_VPPS_NOTSPECIFIED</b>.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,31 +86,22 @@ If <b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b> or <b>D3DKMDT_VPPS_CUSTOM</b> valu
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation_support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation_support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a>
+
  
 
  

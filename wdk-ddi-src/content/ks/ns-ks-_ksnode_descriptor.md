@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dfc5760f-fdd6-45f3-aeac-4406892e518a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSNODE_DESCRIPTOR, KSNODE_DESCRIPTOR, *PKSNODE_DESCRIPTOR
+ms.keywords : KSNODE_DESCRIPTOR, ks/PKSNODE_DESCRIPTOR, PKSNODE_DESCRIPTOR, _KSNODE_DESCRIPTOR, ks/KSNODE_DESCRIPTOR, PKSNODE_DESCRIPTOR structure pointer [Streaming Media Devices], avstruct_c4e79318-e112-4f57-ad6f-58e71ec53532.xml, KSNODE_DESCRIPTOR structure [Streaming Media Devices], stream.ksnode_descriptor, *PKSNODE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSNODE_DESCRIPTOR
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSNODE_DESCRIPTOR, *PKSNODE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSNODE_DESCRIPTOR, KSNODE_DESCRIPTOR"
 ---
 
 # _KSNODE_DESCRIPTOR structure
@@ -58,13 +62,10 @@ typedef struct _KSNODE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

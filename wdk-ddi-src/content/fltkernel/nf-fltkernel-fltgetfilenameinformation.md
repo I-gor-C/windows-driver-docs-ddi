@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 707e7e83-31d8-46cf-a2ef-e53a20edaeff
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetFileNameInformation
+ms.keywords : FltApiRef_e_to_o_1ce08fd0-5e23-43de-b012-dd71086282ea.xml, ifsk.fltgetfilenameinformation, FltGetFileNameInformation routine [Installable File System Drivers], fltkernel/FltGetFileNameInformation, FltGetFileNameInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetFileNameInformation
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -59,7 +63,6 @@ A pointer to the callback data structure for the I/O operation (<a href="..\fltk
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a> value containing flags that specify the format of the name information to be returned, as well as the query method that the Filter Manager is to use. (Additional flags can be used by name provider minifilter drivers to specify name query options. For more information, see <b>FLT_FILE_NAME_OPTIONS</b>.) This parameter is required and cannot be <b>NULL</b>. 
 
 Following are the name format flag values. Only one of the following flags can be specified. (For an explanation of these formats, see <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>.) 
-
 <table>
 <tr>
 <th>Value</th>
@@ -97,11 +100,9 @@ Not valid in the pre-create path.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Following are the query method flag values. Only one of the following flags can be specified. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -147,11 +148,9 @@ FLT_FILE_NAME_QUERY_ALWAYS_ALLOW_CACHE_LOOKUP
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Name provider minifilters use the following flags to specify the properties of file name operations. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -199,49 +198,111 @@ A pointer to a caller-allocated variable that receives the address of a system-a
 ## Return Value
 
 If the name information is successfully returned, <b>FltGetFileNameInformation</b> returns STATUS_SUCCESS. Otherwise, it returns an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_INVALID_NAME_REQUEST</b></dt>
-</dl>One of the following: 
+</dl>
+</td>
+<td width="60%">
+One of the following: 
 
+<ul>
+<li>
 <b>FltGetFileNameInformation</b> cannot get file name information if the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information about this issue, see <a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>.) 
 
+</li>
+<li>
 <b>FltGetFileNameInformation</b> cannot get file name information in the paging I/O path. 
 
+</li>
+<li>
 <b>FltGetFileNameInformation</b> cannot get file name information in the post-close path. 
 
+</li>
+<li>
 <b>FltGetFileNameInformation</b> cannot get the short name of a file in the pre-create path. 
 
+</li>
+</ul>
 STATUS_FLT_INVALID_NAME_REQUEST is an error code.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl><b>FltGetFileNameInformation</b> encountered a pool allocation failure. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+<b>FltGetFileNameInformation</b> encountered a pool allocation failure. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the following: 
+</dl>
+</td>
+<td width="60%">
+One of the following: 
 
+<ul>
+<li>
 The <b>FileNameInformation</b> parameter cannot be <b>NULL</b>.
 
+</li>
+<li>
 The <i>CallbackData</i> parameter cannot be <b>NULL</b>.
 
+</li>
+</ul>
 STATUS_INVALID_PARAMETER is an error code.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_NAME_CACHE_MISS</b></dt>
-</dl>The file name information is not found in the name cache and <i>NameOptions</i> includes FLT_FILE_NAME_QUERY_CACHE_ONLY.
+</dl>
+</td>
+<td width="60%">
+The file name information is not found in the name cache and <i>NameOptions</i> includes FLT_FILE_NAME_QUERY_CACHE_ONLY.
 
 -or-
 
 The file name information is not found in the name cache when <i>NameOptions</i> includes FLT_FILE_NAME_QUERY_ALWAYS_ALLOW_CACHE_LOOKUP and the file name information cannot be queried from the file system.
 
 An additional call to <b>FltGetFileNameInformation</b>  with FLT_FILE_NAME_QUERY_FILESYSTEM_ONLY set in <i>NameOptions</i> may return the file name information.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>If the user opened the file by file ID but does not have traverse privileges for the entire path, <b>FltGetFileNameInformation</b> fails with this return value. 
+</dl>
+</td>
+<td width="60%">
+If the user opened the file by file ID but does not have traverse privileges for the entire path, <b>FltGetFileNameInformation</b> fails with this return value. 
 
 STATUS_ACCESS_DENIED is an error code. 
 
 -or-
 
 The file is a system file with all access denied.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -264,18 +325,25 @@ For Windows 8.1 and earlier, <b>FltGetFileNameInformation</b> can include a <a 
  Prior to Windows 8, Filter Manager obtained the normalized name for a file or directory by collecting the name information for each component of  the file path. This required multiple queries to the file system to compile the complete path. Starting with Windows 8, local file systems support the  <b>FileNormalizedNameInformation</b> file information class and only a single query is necessary to obtain the normalized name. Remote file systems may not support the <b>FileNormalizedNameInformation</b> file information class. When this is the case, a query for each component of the file path is still required to assemble the normalized name. Under certain network conditions, a full name query can require a significant amount of time to complete.
 
 For more information about normalized file name information, see <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>. 
-
-The following paired operations can cause the file name <i>name</i> to be tunneled: 
-
+<div class="alert"><b>Note</b>    File name tunneling affects only create, hard-link, and rename operations in this way. It does not affect other I/O operations, such as read and write. </div><div> </div>The following paired operations can cause the file name <i>name</i> to be tunneled: 
+<ul>
+<li>
 delete(<i>name</i>)/create(<i>name</i>)
 
+</li>
+<li>
 delete(<i>name</i>)/rename(<i>source</i>, <i>name</i>)
 
+</li>
+<li>
 rename(<i>name</i>, <i>newname</i>)/create(<i>name</i>)
 
+</li>
+<li>
 rename(<i>name</i>, <i>newname</i>)/rename(<i>source</i>, <i>name</i>)
 
-For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
+</li>
+</ul>For more information about file name tunneling, see <a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;id=172190">Microsoft Knowledge Base Article 172190</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -291,44 +359,30 @@ For more information about file name tunneling, see <a href="http://go.microsoft
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltgettunneledname.md">FltGetTunneledName</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreferencefilenameinformation.md">FltReferenceFileNameInformation</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544636">FLT_FILE_NAME_OPTIONS</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
+
+<a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreferencefilenameinformation.md">FltReferenceFileNameInformation</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9D8E67D1-EB7C-4EED-8BDD-43D5E012B99C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_PHYSICAL_DEVICE_DATA, STORAGE_PHYSICAL_DEVICE_DATA, *PSTORAGE_PHYSICAL_DEVICE_DATA
+ms.keywords : ntddstor/PSTORAGE_PHYSICAL_DEVICE_DATA, STORAGE_PHYSICAL_DEVICE_DATA, PSTORAGE_PHYSICAL_DEVICE_DATA, ntddstor/STORAGE_PHYSICAL_DEVICE_DATA, PSTORAGE_PHYSICAL_DEVICE_DATA structure pointer [Storage Devices], STORAGE_PHYSICAL_DEVICE_DATA structure [Storage Devices], _STORAGE_PHYSICAL_DEVICE_DATA, storage.storage_physical_device_data, *PSTORAGE_PHYSICAL_DEVICE_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_PHYSICAL_DEVICE_DATA
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_PHYSICAL_DEVICE_DATA, *PSTORAGE_PHYSICAL_DEVICE_DATA
 ---
 
@@ -57,34 +61,54 @@ typedef struct _STORAGE_PHYSICAL_DEVICE_DATA {
 
 ## Members
 
-        
-            `Capacity`
 
-            The capacity of the storage device in units of kilobytes (1024 bytes).
-        
-            `CommandProtocol`
+`Capacity`
 
-            Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
-        
-            `DeviceId`
+The capacity of the storage device in units of kilobytes (1024 bytes).
 
-            The hardware ID of the storage device.
-        
-            `FormFactor`
+`CommandProtocol`
 
-            Indicates the form factor of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_device_form_factor.md">STORAGE_DEVICE_FORM_FACTOR</a>.
-        
-            `HealthStatus`
+Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
 
-            Indicates the health status of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
-        
-            `Role`
+`DeviceId`
 
-            The role of the storage device. A bitmask can be use to specify multiple roles, including <b>STORAGE_COMPONENT_ROLE_CACHE</b> (0x00000001), <b>STORAGE_COMPONENT_ROLE_TIERING</b> (0x00000002), and <b>STORAGE_COMPONENT_ROLE_DATA</b> (0x00000004).
-        
-            `SpecVersion`
+The hardware ID of the storage device.
 
-            Indicates the specification of the storage device, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
+`FirmwareRevision`
+
+
+
+`FormFactor`
+
+Indicates the form factor of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_device_form_factor.md">STORAGE_DEVICE_FORM_FACTOR</a>.
+
+`HealthStatus`
+
+Indicates the health status of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
+
+`Model`
+
+
+
+`PhysicalLocation`
+
+
+
+`Reserved`
+
+
+
+`Role`
+
+The role of the storage device. A bitmask can be use to specify multiple roles, including <b>STORAGE_COMPONENT_ROLE_CACHE</b> (0x00000001), <b>STORAGE_COMPONENT_ROLE_TIERING</b> (0x00000002), and <b>STORAGE_COMPONENT_ROLE_DATA</b> (0x00000004).
+
+`SpecVersion`
+
+Indicates the specification of the storage device, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
+
+`Vendor`
+
+
 
 
 ## Requirements

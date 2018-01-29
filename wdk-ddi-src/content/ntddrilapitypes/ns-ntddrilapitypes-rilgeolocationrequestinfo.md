@@ -7,8 +7,8 @@ old-location : netvista\rilgeolocationrequestinfo.htm
 old-project : netvista
 ms.assetid : f3fa5212-66c1-45f8-a96f-78d1f2f01fe8
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO
+ms.date : 1/18/2018
+ms.keywords : RILGEOLOCATIONREQUESTINFO, ntddrilapitypes/RILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO structure [Network Drivers Starting with Windows Vista], netvista.rilgeolocationrequestinfo, *LPRILGEOLOCATIONREQUESTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILGEOLOCATIONREQUESTINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO
 ---
 
 # RILGEOLOCATIONREQUESTINFO structure
@@ -49,22 +53,22 @@ typedef struct _RILGEOLOCATIONREQUESTINFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwAltitude`
+`cbSize`
 
-            
-        
-            `dwLatitude`
 
-            
-        
-            `dwLongitude`
 
-            
+`dwAltitude`
+
+
+
+`dwLatitude`
+
+
+
+`dwLongitude`
+
+
 
 
 ## Requirements

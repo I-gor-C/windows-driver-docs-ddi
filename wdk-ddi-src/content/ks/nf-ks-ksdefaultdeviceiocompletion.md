@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6e466815-aef4-4602-b3cf-66b47b2e3f3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDefaultDeviceIoCompletion
+ms.keywords : ks/KsDefaultDeviceIoCompletion, stream.ksdefaultdeviceiocompletion, ksfunc_ae9df7be-800d-4f4a-a8d9-f39e09653e98.xml, KsDefaultDeviceIoCompletion function [Streaming Media Devices], KsDefaultDeviceIoCompletion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDefaultDeviceIoCompletion
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -64,7 +68,7 @@ The <b>KsDefaultDeviceIoCompletion</b> function returns the default response to 
 
 ## Remarks
 
-Note that this routine will complete the IRP.</p>
+Note that this routine will complete the IRP.
 
 ## Requirements
 | &nbsp; | &nbsp; |

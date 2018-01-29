@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5D1B228D-81D9-47FE-8CF2-41AAD9148667
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceWdmDispatchIrpToIoQueue
+ms.keywords : kmdf.wdfdevicewdmforwardirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue, wdfdevice/WdfDeviceWdmDispatchIrpToIoQueue, WdfDeviceWdmDispatchIrpToIoQueue method, kmdf.wdfdevicewdmdispatchirptoioqueue, wdf.wdfdevicewdmdispatchirptoioqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.17
-req.alt-api : WdfDeviceWdmDispatchIrpToIoQueue
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, FwdIrpToIoQueueValid
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -56,19 +60,19 @@ NTSTATUS WdfDeviceWdmDispatchIrpToIoQueue(
 
 `Device`
 
-
+A handle to a framework device object.
 
 `Irp`
 
-
+A pointer to an IRP structure.
 
 `Queue`
 
-
+A handle to a framework queue object.
 
 `Flags`
 
-
+A bitwise <b>OR</b> of <a href="..\wdfdevice\ne-wdfdevice-_wdf_dispatch_irp_to_io_queue_flags.md">WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS</a>-typed flags.
 
 
 ## Return Value
@@ -101,14 +105,10 @@ If the driver calls <b>WdfDeviceWdmDispatchIrpToIoQueue</b> from within a <a hre
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a>
+
  
 
  

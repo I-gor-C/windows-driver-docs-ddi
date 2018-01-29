@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4619a1aa-0c91-4b77-abbf-077f28437e0f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : __RxFillAndInstallFastIoDispatch
+ms.keywords : __RxFillAndInstallFastIoDispatch, rxref_5898351a-a474-44bb-8ba0-3d2edf81d073.xml, __RxFillAndInstallFastIoDispatch function [Installable File System Drivers], ifsk.__rxfillandinstallfastiodispatch, mrx/__RxFillAndInstallFastIoDispatch
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : __RxFillAndInstallFastIoDispatch
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -89,20 +93,14 @@ For monolithic network mini-redirectors built by developers, the <b>__RxFillAndI
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
-</dt>
-<dt>
 <a href="..\mrx\nf-mrx-rxsetdomainformailslotbroadcast.md">RxSetDomainForMailslotBroadcast</a>
-</dt>
-<dt>
-<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMiniRdr</a>
-</dt>
-<dt>
+
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
+
 <a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMiniRdr</a>
-</dt>
-</dl>
+
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMiniRdr</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 59EE8C41-1951-4EA7-BE49-B39C15B082E9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlEnumerateGenericTableAvl
+ms.keywords : ntddk/RtlEnumerateGenericTableAvl, RtlEnumerateGenericTableAvl routine [Installable File System Drivers], RtlEnumerateGenericTableAvl, ifsk.rtlenumerategenerictableavl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlEnumerateGenericTableAvl
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL (see Remarks section)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -58,7 +62,6 @@ A pointer to the generic table (<a href="..\ntddk\ns-ntddk-_rtl_avl_table.md">RT
 Set to <b>TRUE</b> if the enumeration is to start at the first element in the table. Set to <b>FALSE</b> if resuming the enumeration from a previous call.
 
 To enumerate all elements in the table, use <b>RtlEnumerateGenericTableAvl</b> as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -105,23 +108,16 @@ Callers of <b>RtlEnumerateGenericTableAvl</b> must be running at IRQL &lt; DISPA
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
+
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+
  
 
  

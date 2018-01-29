@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 64343a8a-9629-469e-95a3-b9c140cdd324
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsValidateConnectRequest
+ms.keywords : KsValidateConnectRequest function [Streaming Media Devices], KsValidateConnectRequest, ks/KsValidateConnectRequest, stream.ksvalidateconnectrequest, ksfunc_2df36f34-31c9-48f2-859c-1829b60fbae7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsValidateConnectRequest
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -78,7 +82,7 @@ The <b>KsValidateConnectRequest</b> function returns STATUS_SUCCESS if successfu
 
 The <b>KsValidateConnectRequest</b> function handles basic connection structure access exceptions and validates the communication requirements, medium, protocol, and basic data format. The validation performed on the data format passed is based on the data range list for the specified pin against which a pin instance is to be created. Validation is successful in three instances: if a range major format is a wildcard, the range major format matches and the range subformat is a wildcard, or the range major format, range subformat, and the range specifier all match.
 
-The buffer is passed a copy of the original input buffer, if the originator was not in kernel mode, and is therefore safe to access.</p>
+The buffer is passed a copy of the original input buffer, if the originator was not in kernel mode, and is therefore safe to access.
 
 ## Requirements
 | &nbsp; | &nbsp; |

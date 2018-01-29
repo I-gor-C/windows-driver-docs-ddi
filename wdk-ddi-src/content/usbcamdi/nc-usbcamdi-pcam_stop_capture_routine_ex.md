@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b8b6e3f0-f5c8-449f-9001-3182b3547d8d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camstopcaptureex, CamStopCaptureEx routine [Streaming Media Devices], CamStopCaptureEx, PCAM_STOP_CAPTURE_ROUTINE_EX, PCAM_STOP_CAPTURE_ROUTINE_EX, usbcamdi/CamStopCaptureEx, usbcmdpr_ce30ba35-3109-454c-bef4-30ff5d6805de.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CamStopCaptureEx
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -77,7 +81,7 @@ USBCAMD calls the minidriver's <b>CamStopCaptureEx</b> callback function immedia
 
 The original USBCAMD does not call <b>CamStopCaptureEx</b>.
 
-This function is required.</p>
+This function is required.
 
 ## Requirements
 | &nbsp; | &nbsp; |

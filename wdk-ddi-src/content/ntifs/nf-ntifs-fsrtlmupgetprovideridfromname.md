@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a572398c-1755-4fc6-844b-85059d4d02cb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlMupGetProviderIdFromName
+ms.keywords : FsRtlMupGetProviderIdFromName routine [Installable File System Drivers], FsRtlMupGetProviderIdFromName, ifsk.fsrtlmupgetprovideridfromname, ntifs/FsRtlMupGetProviderIdFromName, fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The FsRtlMupGetProviderIdFromName function is availa
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlMupGetProviderIdFromName
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,15 +65,45 @@ A pointer to a ULONG32-typed variable that receives the provider identifier of t
 ## Return Value
 
 The <b>FsRtlMupGetProviderIdFromName</b> routine returns one of the following NTSTATUS values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The provider identifier of the network redirector was successfully returned in the variable that is pointed to by the <i>pProviderId </i>parameter.
+</dl>
+</td>
+<td width="60%">
+The provider identifier of the network redirector was successfully returned in the variable that is pointed to by the <i>pProviderId </i>parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+One of the parameters is <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>The name of the network redirector specified in the <i>pProviderName </i>parameter does not match the name of any of the UNC providers that are registered with the MUP.
+</dl>
+</td>
+<td width="60%">
+The name of the network redirector specified in the <i>pProviderName </i>parameter does not match the name of any of the UNC providers that are registered with the MUP.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,11 +127,8 @@ To get the provider identifier of a network redirector from a file object, a fil
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md">FsRtlMupGetProviderInfoFromFileObject</a>
-</dt>
-</dl>
+
  
 
  

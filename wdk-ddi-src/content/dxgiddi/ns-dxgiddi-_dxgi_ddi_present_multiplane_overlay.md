@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 18811f98-df57-43ab-b8f7-26301abeb823
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
+ms.keywords : DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY structure [Display Devices], dxgiddi/DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, display.dxgi_ddi_present_multiplane_overlay, _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
-req.alt-loc : Dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
 ---
 
@@ -50,26 +54,26 @@ typedef struct _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY {
 
 ## Members
 
-        
-            `Enabled`
 
-            Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled for display.
-        
-            `hResource`
+`Enabled`
 
-            A handle to the resource that is displayed by using the overlay plane.
-        
-            `LayerIndex`
+Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled for display.
 
-            The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
-        
-            `PlaneAttributes`
+`hResource`
 
-            A structure of type <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_multiplane_overlay_attributes.md">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.
-        
-            `SubResourceIndex`
+A handle to the resource that is displayed by using the overlay plane.
 
-            The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or surface, on which an overlay plane is to be displayed.
+`LayerIndex`
+
+The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
+
+`PlaneAttributes`
+
+A structure of type <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_multiplane_overlay_attributes.md">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.
+
+`SubResourceIndex`
+
+The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or surface, on which an overlay plane is to be displayed.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_multiplane_overlay_attributes.md">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

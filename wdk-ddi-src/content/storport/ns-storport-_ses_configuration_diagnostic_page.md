@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0FD748D6-F598-44D1-A8D3-E63764CB90C6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
+ms.keywords : scsi/PSES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE structure pointer [Storage Devices], SES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE, scsi/SES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE structure [Storage Devices], _SES_CONFIGURATION_DIAGNOSTIC_PAGE, storage.ses_configuration_diagnostic_page
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1709 and later ver
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SES_CONFIGURATION_DIAGNOSTIC_PAGE
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
 req.product : Windows 10 or later.
 ---
@@ -53,27 +57,27 @@ typedef struct _SES_CONFIGURATION_DIAGNOSTIC_PAGE {
 
 ## Members
 
-        
-            `Descriptors`
 
-            Specifies the enclosure descriptors for the primary and secondary enclosures. The primary enclosure is the first index.
-        
-            `GenerationCode`
+`Descriptors`
 
-            Specifies the value of the generation code.
-        
-            `NumberOfSecondarySubEnclosures`
+Specifies the enclosure descriptors for the primary and secondary enclosures. The primary enclosure is the first index.
 
-            Specifies the number of separate subenclosures included in
+`GenerationCode`
+
+Specifies the value of the generation code.
+
+`NumberOfSecondarySubEnclosures`
+
+Specifies the number of separate subenclosures included in
 the enclosure descriptor list, not including the primary subenclosure. If this is set to zero, only the primary subenclosure exists.
-        
-            `PageCode`
 
-            Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x01.
-        
-            `PageLength`
+`PageCode`
 
-            Specifies the length of the diagnostic page, in bytes.
+Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x01.
+
+`PageLength`
+
+Specifies the length of the diagnostic page, in bytes.
 
 
 ## Requirements

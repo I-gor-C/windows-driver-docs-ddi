@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ba1a1fcd-9551-41cb-b1f9-097b51a26380
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_query_color_capabilities, IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES control code [Display Devices], IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES, ntddvdeo/IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES, Video_IOCTLs_26b0d5c4-d7b5-4056-9d78-6b9fa9a8ab72.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES IOCTL
-Returns the color-capabilities information found in the VDDP description file for the adapter. Support for this nonmodal request is optional. However, if a miniport driver supports this request, it cannot return a subset of the color-capabilities information.
-
-
-
 Returns the color-capabilities information found in the VDDP description file for the adapter. Support for this nonmodal request is optional. However, if a miniport driver supports this request, it cannot return a subset of the color-capabilities information.
 
 ### Major Code
@@ -63,7 +63,6 @@ The miniport driver returns all VIDEO_COLOR_CAPABILITIES information in the VRP 
 <text></text>
 
 ### Status Block
-I/O Status block
 If the miniport driver successfully returns the color-capabilities data, it sets the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure to <b>sizeof</b>(VIDEO_COLOR_CAPABILITIES); otherwise, the miniport driver sets this member to zero.
 
 
@@ -74,13 +73,10 @@ If the miniport driver successfully returns the color-capabilities data, it sets
 | **Header** | ntddvdeo.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

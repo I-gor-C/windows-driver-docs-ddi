@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 75144188-728b-4613-ac69-8cadf0f60233
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetCurrentIrpStackLocation
+ms.keywords : IoGetCurrentIrpStackLocation routine [Kernel-Mode Driver Architecture], kernel.iogetcurrentirpstacklocation, wdm/IoGetCurrentIrpStackLocation, IoGetCurrentIrpStackLocation, k104_f92e53c7-8a26-4cb0-859b-b0a7be4dce6a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetCurrentIrpStackLocation
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,23 +82,16 @@ If a driver is passing the same parameters that it received to the next-lower dr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
+
+<a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a>
+
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+
  
 
  

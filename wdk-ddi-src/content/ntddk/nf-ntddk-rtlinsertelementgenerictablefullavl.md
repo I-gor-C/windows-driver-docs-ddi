@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c7d346ab-6990-4636-bafd-2e448a937f3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlInsertElementGenericTableFullAvl
+ms.keywords : RtlInsertElementGenericTableFullAvl, ntddk/RtlInsertElementGenericTableFullAvl, RtlInsertElementGenericTableFullAvl routine [Installable File System Drivers], ifsk.rtlinsertelementgenerictablefullavl, rtlref_425ca8ff-1fa8-4bdf-84ea-a8935cf0df59.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the W
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlInsertElementGenericTableFullAvl
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL (see Remarks section)
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -103,10 +107,16 @@ By default, the operating system uses splay trees to implement generic tables, b
 If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. For example, use the <b>RtlInsertElementGenericTableFullAvl</b> routine instead of <b>RtlInsertElementGenericTableFull</b>. In the call to <b>RtlInsertElementGenericTableFullAvl</b>, the caller must pass a <a href="..\ntddk\ns-ntddk-_rtl_avl_table.md">RTL_AVL_TABLE</a> table structure rather than <a href="..\ntddk\ns-ntddk-_rtl_generic_table.md">RTL_GENERIC_TABLE</a>.
 
 Callers of <b>RtlInsertElementGenericTableFullAvl</b> must be running at IRQL &lt; DISPATCH_LEVEL if either of the following conditions holds:
-
+<ul>
+<li>
 The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable.
 
-The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pageable code.
+</li>
+<li>
+The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pageable code. 
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -122,14 +132,10 @@ The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pag
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
+
  
 
  

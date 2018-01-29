@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : fa0b36bf-0628-4136-9ca7-1d20823969ff
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcCompleteIrp
+ms.keywords : PcCompleteIrp, portcls/PcCompleteIrp, audpc-routines_f61145f8-9e55-4b2a-a3aa-37f7be4f4df3.xml, PcCompleteIrp function [Audio Devices], audio.pccompleteirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcCompleteI
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcCompleteIrp
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -52,15 +56,15 @@ NTSTATUS PcCompleteIrp(
 
 `pDeviceObject`
 
-
+TBD
 
 `pIrp`
 
-
+TBD
 
 `ntStatus`
 
-
+TBD
 
 
 ## Return Value
@@ -87,20 +91,14 @@ The IRP handler should not call this function. An adapter driver's IRP handler i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a>
+
  
 
  

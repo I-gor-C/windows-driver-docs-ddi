@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4434e2cb-af36-446b-b84e-f303ba315cd3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DDRAW_MODE_SPECIFIC_CAPS, DDRAW_MODE_SPECIFIC_CAPS
+ms.keywords : DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices], D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml, display.ddraw_mode_specific_caps, DDRAW_MODE_SPECIFIC_CAPS, _DDRAW_MODE_SPECIFIC_CAPS, d3dumddi/DDRAW_MODE_SPECIFIC_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DDRAW_MODE_SPECIFIC_CAPS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DDRAW_MODE_SPECIFIC_CAPS
 ---
 
@@ -52,11 +56,10 @@ typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
 
 ## Members
 
-        
-            `Caps`
 
-            [out] A valid bitwise OR of the following general capability bits that the driver supports.
+`Caps`
 
+[out] A valid bitwise OR of the following general capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -133,11 +136,10 @@ The driver supports color-control settings for an overlay. For information about
 </td>
 </tr>
 </table>
-        
-            `CKeyCaps`
 
-            [out] A valid bitwise OR of the following color key capability bits that the driver supports.
+`CKeyCaps`
 
+[out] A valid bitwise OR of the following color key capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -204,11 +206,10 @@ Overlaying operations that use the color key for the source with this overlay su
 </td>
 </tr>
 </table>
-        
-            `FxCaps`
 
-            [out] A valid bitwise OR of the following effects capability bits that the driver supports.
+`FxCaps`
 
+[out] A valid bitwise OR of the following effects capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -285,25 +286,25 @@ Deinterlacing of an overlay surface can be performed.
 </td>
 </tr>
 </table>
-        
-            `Head`
 
-            [in] The display device (head) on the multiple-head graphics card to retrieve capabilities about.
-        
-            `MaxOverlayStretch`
+`Head`
 
-            [out] The maximum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the maximum factor to the actual maximum to which the graphics hardware can stretch the overlay. If the graphics hardware has no maximum limitation, set <b>MaxOverlayStretch</b> to 32000.
-        
-            `MaxVisibleOverlays`
+[in] The display device (head) on the multiple-head graphics card to retrieve capabilities about.
 
-            [out] The maximum number of visible overlays.
-        
-            `MinOverlayStretch`
+`MaxOverlayStretch`
 
-            [out] The minimum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the minimum factor to the actual minimum to which the graphics hardware can shrink the overlay. If the graphics hardware has no minimum limitation, set <b>MinOverlayStretch</b> to 1.
+[out] The maximum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the maximum factor to the actual maximum to which the graphics hardware can stretch the overlay. If the graphics hardware has no maximum limitation, set <b>MaxOverlayStretch</b> to 32000.
 
-    ## Remarks
-        Capabilities can change between heads of a multiple-headed graphics card and can change after a display mode change.
+`MaxVisibleOverlays`
+
+[out] The maximum number of visible overlays.
+
+`MinOverlayStretch`
+
+[out] The minimum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the minimum factor to the actual minimum to which the graphics hardware can shrink the overlay. If the graphics hardware has no minimum limitation, set <b>MinOverlayStretch</b> to 1.
+
+## Remarks
+Capabilities can change between heads of a multiple-headed graphics card and can change after a display mode change.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -313,19 +314,14 @@ Deinterlacing of an overlay surface can be performed.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

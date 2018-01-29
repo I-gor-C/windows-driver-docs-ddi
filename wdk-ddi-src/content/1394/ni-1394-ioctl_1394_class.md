@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 88a5f5ab-e85b-4bd6-a2f5-bbcdc8c4f30c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 
+ms.keywords : IEEE.ioctl_1394_class, IOCTL_1394_CLASS control code [Buses], IOCTL_1394_CLASS, 1394/IOCTL_1394_CLASS, 1394irp_fa8ee811-14ee-44a0-9a9c-b53a421497d4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_1394_CLASS
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 ---
 
 # IOCTL_1394_CLASS IOCTL
@@ -187,7 +191,6 @@ Legal requests are as follows:
 <text></text>
 
 ### Status Block
-I/O Status block
 The information the bus driver returns in the I/O Status Block is documented below with each request.
 
 
@@ -198,13 +201,10 @@ The information the bus driver returns in the I/O Status Block is documented bel
 | **Header** | 1394.h (include 1394.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537241">IOCTL_IEEE1394_API_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : D58AB46A-0D87-45B5-8C58-E99ED0F906D2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAddOpenReparseEntry
+ms.keywords : fltkernel/FltAddOpenReparseEntry, FltAddOpenReparseEntry, ifsk.fltaddopenreparseentry, FltAddOpenReparseEntry routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltAddOpenReparseEntry
-req.alt-loc : fltKernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : _IRQL_requires_max_(APC_LEVEL)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,12 +70,34 @@ The open reparse information to add, of type <a href="..\ntifs\ns-ntifs-_open_re
 ## Return Value
 
 The following NT status codes are returned.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_2</b></dt>
-</dl>Status code if <i>Data</i> is not a create operation. This is an error code.
+</dl>
+</td>
+<td width="60%">
+Status code if <i>Data</i> is not a create operation. This is an error code.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation completed successfully.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,11 +121,8 @@ Use <a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOp
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOpenReparseEntry</a>
-</dt>
-</dl>
+
  
 
  

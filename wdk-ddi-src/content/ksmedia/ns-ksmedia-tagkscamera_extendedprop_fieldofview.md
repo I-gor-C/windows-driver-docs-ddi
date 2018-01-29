@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : CC3FFC63-8404-4EA6-9738-F0A3C52585B8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW
+ms.keywords : KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure [Streaming Media Devices], stream.kscamera_extendedprop_fieldofview, ksmedia/KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure pointer [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_EXTENDEDPROP_FIELDOFVIEW
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure
@@ -49,22 +53,22 @@ typedef struct _KSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
 
 ## Members
 
-        
-            `Flag`
 
-            Reserved. Set to 0.
-        
-            `NormalizedFocalLengthX`
+`Flag`
 
-            The horizontal focal length, in millimeters, normalized to a 35mm camera aperture size.
-        
-            `NormalizedFocalLengthY`
+Reserved. Set to 0.
 
-            The vertical focal length, in millimeters, normalized to a 35mm camera aperture size.
-        
-            `Reserved`
+`NormalizedFocalLengthX`
 
-            Reserved. Set to 0.
+The horizontal focal length, in millimeters, normalized to a 35mm camera aperture size.
+
+`NormalizedFocalLengthY`
+
+The vertical focal length, in millimeters, normalized to a 35mm camera aperture size.
+
+`Reserved`
+
+Reserved. Set to 0.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _KSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn567574">KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW</a>
-</dt>
-</dl>
+
  
 
  

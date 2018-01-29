@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4afd8c7a-b7b4-4a02-a270-d4e29f5329f9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+ms.keywords : storage.ioctl_mountdev_query_suggested_link_name, IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME, mountdev/IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME, k307_90b74e7c-57f6-4738-8a5e-d947c29c5aab.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME
-req.alt-loc : Mountdev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ---
 
@@ -61,7 +65,6 @@ The client driver must place a variable-length structure of type <a href="..\mou
 <text></text>
 
 ### Status Block
-I/O Status block
 If the operation is successful, the <b>Information</b> field is set to the total number of bytes returned and the <b>Status</b> field is set to STATUS_SUCCESS.
 
 If <b>OutputBufferLength</b> is less than <b>sizeof</b>(MOUNTDEV_SUGGESTED_LINK_NAME), the <b>Status</b> field is set to STATUS_INVALID_PARAMETER.
@@ -76,13 +79,10 @@ If <b>OutputBufferLength</b> is less than the total length of output data, the <
 | **Header** | mountdev.h (include Mountdev.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountdev\ns-mountdev-_mountdev_suggested_link_name.md">MOUNTDEV_SUGGESTED_LINK_NAME</a>
-</dt>
-</dl>
+
  
 
  

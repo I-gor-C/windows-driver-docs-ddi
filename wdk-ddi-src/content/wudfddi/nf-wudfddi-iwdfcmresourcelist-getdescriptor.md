@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5E870D10-A03B-4CD8-A2DD-54A6AB527DB2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFCmResourceList, IWDFCmResourceList::GetDescriptor, GetDescriptor
+ms.keywords : IWDFCmResourceList, wdf.iwdfcmresourcelist_getdescriptor, wudfddi/IWDFCmResourceList::GetDescriptor, umdf.iwdfcmresourcelist_getdescriptor, GetDescriptor method, IWDFCmResourceList interface, GetDescriptor method, IWDFCmResourceList::GetDescriptor, GetDescriptor, GetDescriptor method, IWDFCmResourceList interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFCmResourceList.GetDescriptor
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -38,10 +42,6 @@ req.product : Windows 10 or later.
 
 # GetDescriptor method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
-
-
-The <b>GetDescriptor</b> method returns a pointer to a resource descriptor that is contained in this interface's resource list.
-
 
 
 The <b>GetDescriptor</b> method returns a pointer to a resource descriptor that is contained in this interface's resource list.
@@ -73,8 +73,6 @@ The <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOUR
 
 For more information about parsing hardware resources, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/finding-and-mapping-hardware-resources-in-umdf-1-x-drivers">Finding and Mapping Hardware Resources in a UMDF Driver</a>.
 
-See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-32FB3315251F">IWDFDevice3::MapIoSpace</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,11 +87,8 @@ See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfcmresourcelist.md">IWDFCmResourceList</a>
-</dt>
-</dl>
+
  
 
  

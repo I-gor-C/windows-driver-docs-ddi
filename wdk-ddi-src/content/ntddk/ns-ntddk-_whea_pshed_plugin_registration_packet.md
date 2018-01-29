@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 9dafa65f-26f6-42a6-a125-013c61a66ccc
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
+ms.keywords : WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure [WHEA Drivers and Applications], _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure pointer [WHEA Drivers and Applications], ntddk/WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, ntddk/PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whearef_9e79e188-a1ce-4d98-a15d-a45c27f9e836.xml, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whea.whea_pshed_plugin_registration_packet
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET
 ---
 
 # _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure
@@ -51,33 +55,33 @@ typedef struct _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET {
 
 ## Members
 
-        
-            `Callbacks`
 
-            A <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.
-        
-            `Context`
+`Callbacks`
 
-            A PSHED plug-in-supplied context area that is passed to the PSHED plug-in's callback functions.
-        
-            `FunctionalAreaMask`
+A <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.
 
-            A bit-wise OR'ed combination of flags that specifies the functional areas in which the PSHED plug-in participates. Possible flags are:
-        
-            `Length`
+`Context`
 
-            The size, in bytes, of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure.
-        
-            `Reserved`
+A PSHED plug-in-supplied context area that is passed to the PSHED plug-in's callback functions.
 
-            Reserved for system use. PSHED plug-ins should set this member to zero.
-        
-            `Version`
+`FunctionalAreaMask`
 
-            The version of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure. PSHED plug-ins must set this member to WHEA_PLUGIN_REGISTRATION_PACKET_VERSION.
+A bit-wise OR'ed combination of flags that specifies the functional areas in which the PSHED plug-in participates. Possible flags are:
 
-    ## Remarks
-        A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure to the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function when it registers itself with the PSHED.
+`Length`
+
+The size, in bytes, of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure.
+
+`Reserved`
+
+Reserved for system use. PSHED plug-ins should set this member to zero.
+
+`Version`
+
+The version of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure. PSHED plug-ins must set this member to WHEA_PLUGIN_REGISTRATION_PACKET_VERSION.
+
+## Remarks
+A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure to the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function when it registers itself with the PSHED.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,16 +91,12 @@ typedef struct _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
  
 
  

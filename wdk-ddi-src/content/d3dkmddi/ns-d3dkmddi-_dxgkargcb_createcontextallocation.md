@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2f5338a9-2a53-4fee-af6a-8a052ef8c423
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARGCB_CREATECONTEXTALLOCATION, DXGKARGCB_CREATECONTEXTALLOCATION, *INOUT_PDXGKARGCB_CREATECONTEXTALLOCATION
+ms.keywords : d3dkmddi/DXGKARGCB_CREATECONTEXTALLOCATION, display.dxgkargcb_createcontextallocation, DXGKARGCB_CREATECONTEXTALLOCATION, _DXGKARGCB_CREATECONTEXTALLOCATION, DXGKARGCB_CREATECONTEXTALLOCATION structure [Display Devices], *INOUT_PDXGKARGCB_CREATECONTEXTALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARGCB_CREATECONTEXTALLOCATION
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARGCB_CREATECONTEXTALLOCATION
 ---
 
@@ -58,71 +62,71 @@ typedef struct _DXGKARGCB_CREATECONTEXTALLOCATION {
 
 ## Members
 
-        
-            `Alignment`
 
-            [in] The required alignment, in bytes, for the allocation.
-        
-            `ContextAllocationFlags`
+`Alignment`
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextallocationflags.md">DXGK_CREATECONTEXTALLOCATIONFLAGS</a> structure that specifies the properties of the allocation.
-        
-            `EvictionSegmentSet`
+[in] The required alignment, in bytes, for the allocation.
 
-            [in] Identifiers of segments that can be used for eviction.
-        
-            `Flags`
+`ContextAllocationFlags`
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a> structure that identifies properties for an allocation in bit-field flags. These properties indicate the type of allocation to create. The display miniport driver specifies these flags for the video memory manager. See Remarks for restrictions on flag values.
-        
-            `hAdapter`
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextallocationflags.md">DXGK_CREATECONTEXTALLOCATIONFLAGS</a> structure that specifies the properties of the allocation.
 
-            [in] A handle to the graphics adapter for which the context allocation is created.
-        
-            `hAllocation`
+`EvictionSegmentSet`
 
-            [out] A handle that has been assigned by the DirectX graphics subsystem to the allocation. This value is subsequently passed as the <b>hAllocation</b> parameter of the  <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_destroycontextallocation.md">DxgkCbDestroyContextAllocation</a> function.
-        
-            `hContext`
+[in] Identifiers of segments that can be used for eviction.
 
-            [in] If <b>ContextAllocationFlags.SharedAcrossContexts</b> is set to a value of 0,
+`Flags`
+
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a> structure that identifies properties for an allocation in bit-field flags. These properties indicate the type of allocation to create. The display miniport driver specifies these flags for the video memory manager. See Remarks for restrictions on flag values.
+
+`hAdapter`
+
+[in] A handle to the graphics adapter for which the context allocation is created.
+
+`hAllocation`
+
+[out] A handle that has been assigned by the DirectX graphics subsystem to the allocation. This value is subsequently passed as the <b>hAllocation</b> parameter of the  <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_destroycontextallocation.md">DxgkCbDestroyContextAllocation</a> function.
+
+`hContext`
+
+[in] If <b>ContextAllocationFlags.SharedAcrossContexts</b> is set to a value of 0,
                                                                 this member contains the value assigned by the DirectX graphics subsystem for the context that was passed to
                                                                 the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a> function.
 
 If <b>ContextAllocationFlags.SharedAcrossContexts</b> is set to a value of 1, this member should be set to <b>NULL</b>.
+<div class="alert"><b>Note</b>  The member is also set to <b>NULL</b> for a system context.</div><div> </div>
 
-<div class="alert"><b>Note</b>  The member is also set to <b>NULL</b> for a system context.</div>
-<div> </div>
-        
-            `hDevice`
+`hDevice`
 
-            [in] A handle to the display device that was originally passed by the DirectX graphics subsystem to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function.
+[in] A handle to the display device that was originally passed by the DirectX graphics subsystem to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function.
+<div class="alert"><b>Note</b>  The member is set to <b>NULL</b> for a system device.</div><div> </div>
 
-<div class="alert"><b>Note</b>  The member is set to <b>NULL</b> for a system device.</div>
-<div> </div>
-        
-            `hDriverAllocation`
+`hDriverAllocation`
 
-            A handle created by the display miniport driver that identifies the created allocation. The value of this member is subsequently passed as the <b>Transfer.hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a> structure that is pointed to by the <i>pBuildPagingBuffer</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> function.
-        
-            `HintedBank`
+A handle created by the display miniport driver that identifies the created allocation. The value of this member is subsequently passed as the <b>Transfer.hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a> structure that is pointed to by the <i>pBuildPagingBuffer</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> function.
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a> structure that indicates the bank ordering preferences that the display miniport driver requests that the video memory manager use to page-in the allocation.
-        
-            `PreferredSegment`
+`HintedBank`
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a> structure that indicates the preferred segment identifiers that the display miniport driver requests that the video memory manager use to page-in the allocation.
-        
-            `Size`
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a> structure that indicates the bank ordering preferences that the display miniport driver requests that the video memory manager use to page-in the allocation.
 
-            [in] The size, in bytes, that is required for the allocation.
-        
-            `SupportedSegmentSet`
+`PhysicalAdapterIndex`
 
-            [in] Segment identifiers that the display miniport driver can set in the <b>PreferredSegment</b> member for read or write operations.
 
-    ## Remarks
-        The display miniport driver calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a> to allocate a GPU context or device-specific context. When the driver calls this function, it passes a pointer to a <b>DXGKARGCB_CREATECONTEXTALLOCATION</b> structure through the <i>ContextAllocation</i> parameter.
+
+`PreferredSegment`
+
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a> structure that indicates the preferred segment identifiers that the display miniport driver requests that the video memory manager use to page-in the allocation.
+
+`Size`
+
+[in] The size, in bytes, that is required for the allocation.
+
+`SupportedSegmentSet`
+
+[in] Segment identifiers that the display miniport driver can set in the <b>PreferredSegment</b> member for read or write operations.
+
+## Remarks
+The display miniport driver calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a> to allocate a GPU context or device-specific context. When the driver calls this function, it passes a pointer to a <b>DXGKARGCB_CREATECONTEXTALLOCATION</b> structure through the <i>ContextAllocation</i> parameter.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -132,25 +136,18 @@ If <b>ContextAllocationFlags.SharedAcrossContexts</b> is set to a value of 1, th
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextallocationflags.md">DXGK_CREATECONTEXTALLOCATIONFLAGS</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextallocationflags.md">DXGK_CREATECONTEXTALLOCATIONFLAGS</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a>
+
  
 
  

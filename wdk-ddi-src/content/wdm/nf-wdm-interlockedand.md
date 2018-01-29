@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3b1ff981-7f87-4a47-81a3-3e323459c333
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InterlockedAnd
+ms.keywords : InterlockedAnd function [Kernel-Mode Driver Architecture], kernel.interlockedand, wdm/InterlockedAnd, InterlockedAnd, k102_839df216-b391-436b-9e33-d60dfbb5dbe9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InterlockedAnd
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ Interlocked operations cannot be used on non-cached memory.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-interlockedor.md">InterlockedOr</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-interlockedxor.md">InterlockedXor</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-interlockedor.md">InterlockedOr</a>
+
  
 
  

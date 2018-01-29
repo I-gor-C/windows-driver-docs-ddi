@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e43f782-c89c-4926-83db-efe737544065
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY
+ms.keywords : D3DDDI_OFFER_PRIORITY_LOW, d3dukmdt/D3DDDI_OFFER_PRIORITY_HIGH, d3dukmdt/D3DDDI_OFFER_PRIORITY_AUTO, D3DDDI_OFFER_PRIORITY_NORMAL, d3dukmdt/D3DDDI_OFFER_PRIORITY_NONE, D3DDDI_OFFER_PRIORITY_NONE, D3DDDI_OFFER_PRIORITY_HIGH, _D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY_AUTO, D3DDDI_OFFER_PRIORITY enumeration [Display Devices], d3dukmdt/D3DDDI_OFFER_PRIORITY_LOW, display.d3dddi_offer_priority, d3dukmdt/D3DDDI_OFFER_PRIORITY_NORMAL, d3dukmdt/D3DDDI_OFFER_PRIORITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_OFFER_PRIORITY
-req.alt-loc : D3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_OFFER_PRIORITY
 ---
 
@@ -70,9 +74,7 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 <tr>
 <td>D3DDDI_OFFER_PRIORITY_NONE</td>
 <td>The allocation should not be offered.
-
-<div class="alert"><b>Note</b>  Do not use this value in the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>  Do not use this value in the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -92,14 +94,10 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
-</dt>
-</dl>
+
  
 
  

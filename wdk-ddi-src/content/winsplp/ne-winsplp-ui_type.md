@@ -7,8 +7,8 @@ old-location : print\ui_type.htm
 old-project : print
 ms.assetid : 99C87D65-C633-4AA2-95DF-6AE74428C71D
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : UI_TYPE, UI_TYPE
+ms.date : 1/18/2018
+ms.keywords : print.ui_type, winsplp/kMessageBox, UI_TYPE enumeration [Print Devices], winsplp/UI_TYPE, kMessageBox, UI_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UI_TYPE
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UI_TYPE
 req.product : Windows 10 or later.
 ---

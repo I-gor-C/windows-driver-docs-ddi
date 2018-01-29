@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 463831c1-d9b2-404d-91f3-78f495668fdf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTPollDisplayChildren
+ms.keywords : OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, display.d3dkmtpolldisplaychildren, d3dkmthk/D3DKMTPollDisplayChildren, D3DKMTPollDisplayChildren, D3DKMTPollDisplayChildren function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTPollDisplayChildren
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,20 +54,40 @@ NTSTATUS APIENTRY D3DKMTPollDisplayChildren(
 
 `D3DKMT_POLLDISPLAYCHILDREN`
 
-
+TBD
 
 
 ## Return Value
 
 <b>D3DKMTPollDisplayChildren</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Connectivity status was successfully retrieved.
+</dl>
+</td>
+<td width="60%">
+Connectivity status was successfully retrieved.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DEVICE_REMOVED</b></dt>
-</dl>The graphics adapter was stopped.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was stopped.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other NTSTATUS values.
 
@@ -87,11 +111,8 @@ New child devices are enumerated to the Plug and Play (PnP) manager when PnP det
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_polldisplaychildren.md">D3DKMT_POLLDISPLAYCHILDREN</a>
-</dt>
-</dl>
+
  
 
  

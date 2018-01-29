@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A107F641-AE30-4F99-9AB6-EC84F52A2B52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_PERF_CHECK_COMPLETE, *PPEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE
+ms.keywords : pepfx/PEP_PPM_PERF_CHECK_COMPLETE, *PPEP_PPM_PERF_CHECK_COMPLETE, kernel.pep_ppm_perf_check_complete, pepfx/PPEP_PPM_PERF_CHECK_COMPLETE, PPEP_PPM_PERF_CHECK_COMPLETE structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE, PPEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_PERF_CHECK_COMPLETE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE"
 ---
 
@@ -46,10 +50,10 @@ typedef struct _PEP_PPM_PERF_CHECK_COMPLETE {
 
 ## Members
 
-        
-            `EvaluationTime`
 
-            [in] The interrupt time of the performance check evaluation that initiated this notification.
+`EvaluationTime`
+
+[in] The interrupt time of the performance check evaluation that initiated this notification.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _PEP_PPM_PERF_CHECK_COMPLETE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186771">PEP_NOTIFY_PPM_PERF_CHECK_COMPLETE notification</a>
-</dt>
-</dl>
+
  
 
  

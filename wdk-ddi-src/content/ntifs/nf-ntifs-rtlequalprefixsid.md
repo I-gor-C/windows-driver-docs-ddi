@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6db96d3b-721f-40d5-8f8d-54cdd33f85c8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlEqualPrefixSid
+ms.keywords : rtlref_67b0c7e1-647f-426a-8d9d-dde2d98b0cc3.xml, ifsk.rtlequalprefixsid, RtlEqualPrefixSid routine [Installable File System Drivers], RtlEqualPrefixSid, ntifs/RtlEqualPrefixSid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlEqualPrefixSid
-req.alt-loc : Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntdll.lib
 req.dll : Ntdll.dll
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -86,20 +90,14 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlcopysid.md">RtlCopySid</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlequalsid.md">RtlEqualSid</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlvalidsid.md">RtlValidSid</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-rtlcopysid.md">RtlCopySid</a>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlvalidsid.md">RtlValidSid</a>
+
  
 
  

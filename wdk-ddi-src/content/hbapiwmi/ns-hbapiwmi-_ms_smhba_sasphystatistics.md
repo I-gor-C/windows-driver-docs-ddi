@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bb2ab242-9002-4760-86b2-1aaf203ff710
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MS_SMHBA_SASPHYSTATISTICS, *PMS_SMHBA_SASPHYSTATISTICS, MS_SMHBA_SASPHYSTATISTICS
+ms.keywords : storage.ms_smhba_sasphystatistics, hbapiwmi/PMS_SMHBA_SASPHYSTATISTICS, PMS_SMHBA_SASPHYSTATISTICS, *PMS_SMHBA_SASPHYSTATISTICS, PMS_SMHBA_SASPHYSTATISTICS structure pointer [Storage Devices], MS_SMHBA_SASPHYSTATISTICS, hbapiwmi/MS_SMHBA_SASPHYSTATISTICS, structs-Fibre_7059d482-c967-4f18-8c03-b113573cff2f.xml, _MS_SMHBA_SASPHYSTATISTICS, MS_SMHBA_SASPHYSTATISTICS structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MS_SMHBA_SASPHYSTATISTICS
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMS_SMHBA_SASPHYSTATISTICS, MS_SMHBA_SASPHYSTATISTICS"
 ---
 
@@ -54,42 +58,42 @@ typedef struct _MS_SMHBA_SASPHYSTATISTICS {
 
 ## Members
 
-        
-            `InvalidDwordCount`
 
-            The number of invalid DWORDs.
-        
-            `LossofDwordSyncCount`
+`InvalidDwordCount`
 
-            The loss of synchronization count.
-        
-            `PhyResetProblemCount`
+The number of invalid DWORDs.
 
-            A count of the number of physical link reset problems.
-        
-            `RunningDisparityErrorCount`
+`LossofDwordSyncCount`
 
-            The number of disparity error counts.
-        
-            `RxFrames`
+The loss of synchronization count.
 
-            The number of received SAS frames across all protocols and classes.
-        
-            `RxWords`
+`PhyResetProblemCount`
 
-            The number of received SAS words across all protocols and classes.
-        
-            `SecondsSinceLastReset`
+A count of the number of physical link reset problems.
 
-            The number of seconds since the statistics were last reset.
-        
-            `TxFrames`
+`RunningDisparityErrorCount`
 
-            The number of transmitted SAS frames across all protocols and classes.
-        
-            `TxWords`
+The number of disparity error counts.
 
-            The number of transmitted SAS words across all protocols and classes.
+`RxFrames`
+
+The number of received SAS frames across all protocols and classes.
+
+`RxWords`
+
+The number of received SAS words across all protocols and classes.
+
+`SecondsSinceLastReset`
+
+The number of seconds since the statistics were last reset.
+
+`TxFrames`
+
+The number of transmitted SAS frames across all protocols and classes.
+
+`TxWords`
+
+The number of transmitted SAS words across all protocols and classes.
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : netvista\rilsendflashparams.htm
 old-project : netvista
 ms.assetid : e45b8f47-4e46-4265-9c56-055e753eb6e6
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS, RILSENDFLASHPARAMS
+ms.date : 1/18/2018
+ms.keywords : "*LPRILSENDFLASHPARAMS, netvista.rilsendflashparams, ntddrilapitypes/RILSENDFLASHPARAMS, RILSENDFLASHPARAMS, RILSENDFLASHPARAMS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSENDFLASHPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILSENDFLASHPARAMS, RILSENDFLASHPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS
 ---
 
 # RILSENDFLASHPARAMS structure
@@ -47,14 +51,14 @@ typedef struct _RILSENDFLASHPARAMS {
 
 ## Members
 
-        
-            `dwExecutor`
 
-            
-        
-            `raAddress`
+`dwExecutor`
 
-            
+
+
+`raAddress`
+
+
 
 
 ## Requirements

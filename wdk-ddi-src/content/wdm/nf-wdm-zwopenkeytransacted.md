@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9fd9aabd-3452-461d-b051-c3130b22ef5c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwOpenKeyTransacted
+ms.keywords : ZwOpenKeyTransacted routine [Kernel-Mode Driver Architecture], kernel.zwopenkeytransacted, ZwOpenKeyTransacted, wdm/ZwOpenKeyTransacted, k111_e4192ee9-7dba-48d2-81be-38b33ff0b1d6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwOpenKeyTransacted
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -72,21 +76,67 @@ A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1
 ## Return Value
 
 <b>ZwOpenKeyTransacted</b> returns STATUS_SUCCESS if the call successfully opens the key. Possible error return values include the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>ObjectAttributes</i> parameter is <b>NULL</b> or points to invalid information.
+</dl>
+</td>
+<td width="60%">
+The <i>ObjectAttributes</i> parameter is <b>NULL</b> or points to invalid information.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_PATH_SYNTAX_BAD</b></dt>
-</dl>The registry path in the object attributes is invalid.
+</dl>
+</td>
+<td width="60%">
+The registry path in the object attributes is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>The registry path in the object attributes was not found.
+</dl>
+</td>
+<td width="60%">
+The registry path in the object attributes was not found.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller did not have the required access rights to open a handle for the named registry key.
+</dl>
+</td>
+<td width="60%">
+The caller did not have the required access rights to open a handle for the named registry key.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>A memory allocation operation failed.
+</dl>
+</td>
+<td width="60%">
+A memory allocation operation failed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,12 +153,16 @@ After a kernel-mode driver obtains a handle to a transaction (for example, by ca
 After the driver successfully completes all registry operations that are part of a transaction, it can call the <a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a> routine to commit to the changes. The driver can call the <a href="..\wdm\nf-wdm-zwrollbacktransaction.md">ZwRollbackTransaction</a> routine to roll back the transaction.
 
 During a transaction, a registry operation is part of the transaction if the system call that performs the operation meets either of the following conditions:
-
+<ul>
+<li>
 The call specifies, as an input parameter, the transaction handle. For example, calls to <b>ZwCreateKeyTransacted</b> and <b>ZwOpenKeyTransacted</b> can associate one or more keys with the transaction. 
 
+</li>
+<li>
 The call specifies, as an input parameter, a registry key handle that was obtained by a call to <b>ZwCreateKeyTransacted</b> or <b>ZwOpenKeyTransacted</b> to which the transaction handle was supplied. For example, a call to the <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a> routine can use a key handle that was obtained in this way to set the value of a registry key as part of a transaction. 
 
-For more information about kernel-mode transactions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565408">Using Kernel Transaction Manager</a>.
+</li>
+</ul>For more information about kernel-mode transactions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565408">Using Kernel Transaction Manager</a>.
 
 <b>ZwOpenKeyTransacted</b> ignores the security information in the structure that the <i>ObjectAttributes</i> parameter points to.
 
@@ -130,47 +184,32 @@ For more information about how to work with registry keys in kernel mode, see <a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-obopenobjectbypointer.md">ObOpenObjectByPointer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatekeytransacted.md">ZwCreateKeyTransacted</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopenkeytransactedex.md">ZwOpenKeyTransactedEx</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwrollbacktransaction.md">ZwRollbackTransaction</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
-</dt>
-</dl>
+
+<a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\ntifs\nf-ntifs-obopenobjectbypointer.md">ObOpenObjectByPointer</a>
+
+<a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekeytransacted.md">ZwCreateKeyTransacted</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wdm\nf-wdm-zwopenkeytransactedex.md">ZwOpenKeyTransactedEx</a>
+
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
+
+<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
  
 
  

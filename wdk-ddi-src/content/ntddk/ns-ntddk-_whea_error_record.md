@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 29ed998c-d833-496f-a728-0eef2cd49ae6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_RECORD, WHEA_ERROR_RECORD, PWHEA_ERROR_RECORD, *PWHEA_ERROR_RECORD
+ms.keywords : ntddk/PWHEA_ERROR_RECORD, ntddk/WHEA_ERROR_RECORD, PWHEA_ERROR_RECORD structure pointer [WHEA Drivers and Applications], PWHEA_ERROR_RECORD, _WHEA_ERROR_RECORD, WHEA_ERROR_RECORD structure [WHEA Drivers and Applications], *PWHEA_ERROR_RECORD, whea.whea_error_record, whearef_dc309156-feee-4cc2-ba75-d39f3f05fa5f.xml, WHEA_ERROR_RECORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_RECORD
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WHEA_ERROR_RECORD, PWHEA_ERROR_RECORD, *PWHEA_ERROR_RECORD
 ---
 
@@ -47,17 +51,17 @@ typedef struct _WHEA_ERROR_RECORD {
 
 ## Members
 
-        
-            `Header`
 
-            A <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure that describes general information about the hardware error condition.
-        
-            `SectionDescriptor`
+`Header`
 
-            A variable sized array of <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe each of the sections of error information that are contained in the error record. The number of structures in the array is specified by the <b>Header.SectionCount</b> member of the WHEA_ERROR_RECORD structure.
+A <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure that describes general information about the hardware error condition.
 
-    ## Remarks
-        When a hardware error occurs, WHEA creates an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> to store the error information associated with the hardware error condition. Each error record is described by a WHEA_ERROR_RECORD structure. The Windows kernel includes the error record with the Event Tracing for Windows (ETW) hardware error event that it raises in response to the error so that the error record is saved in the system event log.
+`SectionDescriptor`
+
+A variable sized array of <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe each of the sections of error information that are contained in the error record. The number of structures in the array is specified by the <b>Header.SectionCount</b> member of the WHEA_ERROR_RECORD structure.
+
+## Remarks
+When a hardware error occurs, WHEA creates an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> to store the error information associated with the hardware error condition. Each error record is described by a WHEA_ERROR_RECORD structure. The Windows kernel includes the error record with the Event Tracing for Windows (ETW) hardware error event that it raises in response to the error so that the error record is saved in the system event log.
 
 The format of the error records that are used by WHEA are based on the <i>Common Platform Error Record</i> as described in Appendix N of version 2.2 of the <a href="http://go.microsoft.com/fwlink/p/?linkid=69484">Unified Extensible Firmware Interface (UEFI) Specification</a>.
 
@@ -71,16 +75,12 @@ A user-mode application can retrieve the error record from the hardware error ev
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

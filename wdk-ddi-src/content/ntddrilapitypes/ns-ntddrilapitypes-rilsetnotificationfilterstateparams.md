@@ -7,8 +7,8 @@ old-location : netvista\rilsetnotificationfilterstateparams.htm
 old-project : netvista
 ms.assetid : bd30a156-0414-486c-92c4-21c33d32f9b8
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILSETNOTIFICATIONFILTERSTATEPARAMS, netvista.rilsetnotificationfilterstateparams, ntddrilapitypes/RILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILSETNOTIFICATIONFILTERSTATEPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSETNOTIFICATIONFILTERSTATEPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS
 ---
 
 # RILSETNOTIFICATIONFILTERSTATEPARAMS structure
@@ -47,14 +51,14 @@ typedef struct _RILSETNOTIFICATIONFILTERSTATEPARAMS {
 
 ## Members
 
-        
-            `dwFilterMask`
 
-            
-        
-            `dwFilterState`
+`dwFilterMask`
 
-            
+
+
+`dwFilterState`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 27551BE5-1260-4F05-9847-97C90ADF7968
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
+ms.keywords : GPIO.client_controllerspecificfunction, CLIENT_ControllerSpecificFunction callback function [Parallel Ports], CLIENT_ControllerSpecificFunction, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION, gpioclx/CLIENT_ControllerSpecificFunction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CLIENT_ControllerSpecificFunction
-req.alt-loc : Gpioclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
 ---
 
 
@@ -64,12 +68,34 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh69
 ## Return Value
 
 The <i>CLIENT_ControllerSpecificFunction</i> function returns <b>STATUS_SUCCESS</b> if the call is successful. Possible return values include the following error codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The GPIO controller does not support the operation specified by the input parameters.
+</dl>
+</td>
+<td width="60%">
+The GPIO controller does not support the operation specified by the input parameters.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The size of the input buffer or output buffer is too small.
+</dl>
+</td>
+<td width="60%">
+The size of the input buffer or output buffer is too small.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -82,14 +108,6 @@ Typically, the <i>CLIENT_ControllerSpecificFunction</i> function programs the GP
 When GpioClx receives an <b>IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</b> request, it checks to see whether the GPIO controller driver has implemented a <i>CLIENT_ControllerSpecificFunction</i> function. If so, GpioClx copies the descriptions of the input and output buffers from the IOCTL to a <b>GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</b> structure and passes a pointer to this structure as a parameter to the <i>CLIENT_ControllerSpecificFunction</i> function. If the parameter values in the <b>GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</b> structure are valid, the function performs the requested operation and returns STATUS_SUCCESS.
 
 If GpioClx receives an <b>IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</b> request, and the GPIO controller driver does not implement a <i>CLIENT_ControllerSpecificFunction</i> function, GpioClx completes the IOCTL with error code STATUS_NOT_IMPLEMENTED.
-
-To define a <i>CLIENT_ControllerSpecificFunction</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
-
-For example, to define a <i>CLIENT_ControllerSpecificFunction</i> callback function that is named <code>MyEvtGpioControllerSpecificFunction</code>, use the GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION function type, as shown in this code example:
-
-Then, implement your callback function as follows:
-
-The GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,14 +123,10 @@ The GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION function type is defined in the Gpi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698248">GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698261">IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</a>
-</dt>
-</dl>
+
  
 
  

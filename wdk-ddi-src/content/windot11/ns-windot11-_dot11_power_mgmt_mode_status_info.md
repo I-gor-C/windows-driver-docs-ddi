@@ -7,20 +7,18 @@ old-location : netvista\dot11_power_mgmt_mode_status_info.htm
 old-project : netvista
 ms.assetid : A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO
+ms.date : 1/18/2018
+ms.keywords : windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, netvista.dot11_power_mgmt_mode_status_info, DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista], PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_POWER_MGMT_MODE_STATUSINFO, windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, _DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : windot11.h
 req.include-header : Windot11.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 8
+req.target-min-winverclnt : Versions: Supported in Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11_POWER_MGMT_MODE_STATUS_INFO
-req.alt-loc : Windot11.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO"
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_POWER_MGMT_MODE_STATUS_INFO structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_POWER_MGMT_MODE_STATUS_INFO structure describes the power mode of the hardware.
 
 ## Syntax
 ````
@@ -50,11 +54,10 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 
 ## Members
 
-        
-            `Header`
 
-            The type, revision, and size of the DOT11_POWER_MGMT_MODE_STATUS_INFO structure. The required settings for the members of <b>Header</b> are the following.
+`Header`
 
+The type, revision, and size of the DOT11_POWER_MGMT_MODE_STATUS_INFO structure. The required settings for the members of <b>Header</b> are the following.
 <table>
 <tr>
 <th>Member</th>
@@ -73,19 +76,18 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 <td>DOT11_SIZEOF_POWER_MGMT_MODE_STATUS_INFO_REVISION_1</td>
 </tr>
 </table>
-        
-            `PowerSaveMode`
 
-            The current power mode of the hardware. The mode may be <b>dot11_power_mode_active</b> or <b>dot11_power_mode_powersave</b>, but should not be <b>dot11_power_mode_unknown</b>.
-        
-            `Reason`
+`PowerSaveMode`
 
-            Reason that the device changed into the current power mode.
-        
-            `uPowerSaveLevel`
+The current power mode of the hardware. The mode may be <b>dot11_power_mode_active</b> or <b>dot11_power_mode_powersave</b>, but should not be <b>dot11_power_mode_unknown</b>.
 
-            One of the following values describing power saving levels:
+`Reason`
 
+Reason that the device changed into the current power mode.
+
+`uPowerSaveLevel`
+
+One of the following values describing power saving levels:
 <table>
 <tr>
 <th>Value</th>
@@ -109,8 +111,8 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 </tr>
 </table>
 
-    ## Remarks
-        At each transition of the mode change, a device should remember the reason it made the last change.</p>
+## Remarks
+At each transition of the mode change, a device should remember the reason it made the last change.
 
 ## Requirements
 | &nbsp; | &nbsp; |

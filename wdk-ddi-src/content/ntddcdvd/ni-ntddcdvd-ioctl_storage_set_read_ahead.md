@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a7ed65f3-40a9-4b08-b59d-7c65c250d5cb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.keywords : storage.ioctl_storage_set_read_ahead, IOCTL_STORAGE_SET_READ_AHEAD control code [Storage Devices], IOCTL_STORAGE_SET_READ_AHEAD, ntddcdvd/IOCTL_STORAGE_SET_READ_AHEAD, k307_0112afc4-1b4b-47c1-9ace-1d82a41b120f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_SET_READ_AHEAD
-req.alt-loc : Ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_STORAGE_SET_READ_AHEAD IOCTL
-Causes the device to skip to the given target address when the device reaches a certain trigger address during read-ahead caching. 
-
-
-
 Causes the device to skip to the given target address when the device reaches a certain trigger address during read-ahead caching.
 
 ### Major Code
@@ -63,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero. The <b>Status</b> field is set to STATUS_SUCCESS.
 
 
@@ -74,13 +73,10 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ns-ntddcdvd-_storage_set_read_ahead.md">STORAGE_SET_READ_AHEAD</a>
-</dt>
-</dl>
+
  
 
  

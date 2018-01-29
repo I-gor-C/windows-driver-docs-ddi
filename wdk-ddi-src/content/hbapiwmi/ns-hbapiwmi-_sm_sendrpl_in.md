@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5d97b852-57ba-4696-879b-d93a8f539304
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_SendRPL_IN, *PSM_SendRPL_IN, SM_SendRPL_IN
+ms.keywords : hbapiwmi/SM_SendRPL_IN, PSM_SendRPL_IN, SM_SendRPL_IN structure [Storage Devices], PSM_SendRPL_IN structure pointer [Storage Devices], hbapiwmi/PSM_SendRPL_IN, *PSM_SendRPL_IN, structs-Fibre_54275ca2-35b3-43f4-a62d-63c296b14663.xml, SM_SendRPL_IN, storage.sm_sendrpl_in, _SM_SendRPL_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_SendRPL_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSM_SendRPL_IN, SM_SendRPL_IN"
 ---
 
@@ -50,29 +54,29 @@ typedef struct _SM_SendRPL_IN {
 
 ## Members
 
-        
-            `AgentDomain`
 
-            The domain number for the domain controller that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
-        
-            `AgentWWN`
+`AgentDomain`
 
-            A worldwide name (WWN) for the port that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification<i>.</i>
-        
-            `HbaPortWWN`
+The domain number for the domain controller that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
-            A worldwide name (WWN) for the local port through which the read port list (RPL) command is sent.
-        
-            `InRespBufferMaxSize`
+`AgentWWN`
 
-            The response buffer size.
-        
-            `PortIndex`
+A worldwide name (WWN) for the port that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification<i>.</i>
 
-            The port index of the first port in the list of ports of type FC_Port to be returned.
+`HbaPortWWN`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM_SendRPL_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.</p>
+A worldwide name (WWN) for the local port through which the read port list (RPL) command is sent.
+
+`InRespBufferMaxSize`
+
+The response buffer size.
+
+`PortIndex`
+
+The port index of the first port in the list of ports of type FC_Port to be returned.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM_SendRPL_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cebeceb1-f845-42cf-9a8b-3414e4a420b6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminipinhandshake, AVStrMiniPinHandshake, AVStrMiniPinHandshake routine [Streaming Media Devices], AVStrMiniPinHandshake, PFNKSPINHANDSHAKE, PFNKSPINHANDSHAKE, ks/AVStrMiniPinHandshake, avstclbk_3a87dcb0-5825-4ba0-b9b3-dfb6a1af20a2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniPinHandshake
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -88,17 +92,12 @@ The minidriver specifies this routine's address in the <i>Handshake</i> paramete
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
-</dt>
-</dl>
+
  
 
  

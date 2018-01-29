@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ba23f4d4-7e3d-4bfc-acf7-68dab01d2f61
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortAllocateContiguousMemory
+ms.keywords : VideoPortAllocateContiguousMemory, VideoPort_Functions_5aed176c-b0d1-4b0d-8d0d-7689bc31d661.xml, video/VideoPortAllocateContiguousMemory, VideoPortAllocateContiguousMemory function [Display Devices], display.videoportallocatecontiguousmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortAllocateContiguousMemory
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -90,11 +94,8 @@ A miniport driver that must use contiguous memory should allocate only what it n
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportallocatebuffer.md">VideoPortAllocateBuffer</a>
-</dt>
-</dl>
+
  
 
  

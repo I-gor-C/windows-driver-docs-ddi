@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2338e583-4491-492e-b7e6-fa4e23485c22
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsEnableEvent
+ms.keywords : KsEnableEvent function [Streaming Media Devices], ks/KsEnableEvent, ksfunc_f6611298-cc8d-40eb-86e6-1287caff3ec0.xml, KsEnableEvent, stream.ksenableevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsEnableEvent
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -100,11 +104,8 @@ Minidrivers do not call <b>KsEnableEvent</b>. Only a pure KS driver or a class d
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
-</dt>
-</dl>
+
  
 
  

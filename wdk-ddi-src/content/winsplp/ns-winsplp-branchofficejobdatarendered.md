@@ -7,8 +7,8 @@ old-location : print\branchofficejobdatarendered.htm
 old-project : print
 ms.assetid : 67A296B3-5D59-475E-9026-EDAB90C8E3DD
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : BranchOfficeJobDataRendered, *PBranchOfficeJobDataRendered, BranchOfficeJobDataRendered
+ms.date : 1/18/2018
+ms.keywords : PBranchOfficeJobDataRendered structure pointer [Print Devices], *PBranchOfficeJobDataRendered, winsplp/PBranchOfficeJobDataRendered, BranchOfficeJobDataRendered, print.branchofficejobdatarendered, BranchOfficeJobDataRendered structure [Print Devices], PBranchOfficeJobDataRendered, winsplp/BranchOfficeJobDataRendered
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BranchOfficeJobDataRendered
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBranchOfficeJobDataRendered, BranchOfficeJobDataRendered"
 req.product : Windows 10 or later.
 ---
@@ -53,34 +57,34 @@ typedef struct {
 
 ## Members
 
-        
-            `Color`
 
-            Describes the <b>short</b> type member <b>Color</b>.
-        
-            `Copies`
+`Color`
 
-            Describes the <b>short</b> type member <b>Copies</b>.
-        
-            `ICMMethod`
+Describes the <b>short</b> type member <b>Color</b>.
 
-            Describes the <b>DWORD</b> type member <b>ICMMethod</b>.
-        
-            `PrintQuality`
+`Copies`
 
-            Describes the <b>short</b> type member <b>PrintQuality</b>.
-        
-            `Size`
+Describes the <b>short</b> type member <b>Copies</b>.
 
-            Specifies the 64-bit size of the job.
-        
-            `TTOption`
+`ICMMethod`
 
-            Describes the <b>short</b> type member <b>TTOption</b>.
-        
-            `YResolution`
+Describes the <b>DWORD</b> type member <b>ICMMethod</b>.
 
-            Describes the <b>short</b> type member <b>YResolution</b>.
+`PrintQuality`
+
+Describes the <b>short</b> type member <b>PrintQuality</b>.
+
+`Size`
+
+Specifies the 64-bit size of the job.
+
+`TTOption`
+
+Describes the <b>short</b> type member <b>TTOption</b>.
+
+`YResolution`
+
+Describes the <b>short</b> type member <b>YResolution</b>.
 
 
 ## Requirements

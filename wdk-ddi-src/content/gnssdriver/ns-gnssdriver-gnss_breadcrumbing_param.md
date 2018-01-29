@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 1EAD5B17-B662-4D97-B045-ED09E4AF6E99
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_BREADCRUMBING_PARAM, *PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM
+ms.keywords : sensors.gnss_breadcrumbing_param, *PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM, PGNSS_BREADCRUMBING_PARAM, gnssdriver/PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM structure [Sensor Devices], PGNSS_BREADCRUMBING_PARAM structure pointer [Sensor Devices], gnssdriver/GNSS_BREADCRUMBING_PARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_BREADCRUMBING_PARAM
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GNSS_BREADCRUMBING_PARAM, *PGNSS_BREADCRUMBING_PARAM
 ---
 
 # GNSS_BREADCRUMBING_PARAM structure
@@ -51,26 +55,30 @@ typedef struct {
 
 ## Members
 
-        
-            `MaximumErrorTimeoutMs`
 
-            Contains the maximum error timeout in milliseconds. If the location of the device is unknown for this duration, an error must be recorded in the breadcrumb data. Errors can be recorded earlier if they were already known.
-        
-            `MaximumHorizontalUncertainty`
+`MaximumErrorTimeoutMs`
 
-            Contains the maximum horizontal uncertainty value. Any fix with an error radius larger than this value shall not be recorded.
-        
-            `MinDistanceBetweenFixes`
+Contains the maximum error timeout in milliseconds. If the location of the device is unknown for this duration, an error must be recorded in the breadcrumb data. Errors can be recorded earlier if they were already known.
 
-            Contains the minimum distance between fixes. Only record a fix if the center of it is at least as  far apart as this value from center of the last fix, using a Haversine distance calculation.
-        
-            `Size`
+`MaximumHorizontalUncertainty`
 
-            Structure size.
-        
-            `Version`
+Contains the maximum horizontal uncertainty value. Any fix with an error radius larger than this value shall not be recorded.
 
-            Version number.
+`MinDistanceBetweenFixes`
+
+Contains the minimum distance between fixes. Only record a fix if the center of it is at least as  far apart as this value from center of the last fix, using a Haversine distance calculation.
+
+`Size`
+
+Structure size.
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

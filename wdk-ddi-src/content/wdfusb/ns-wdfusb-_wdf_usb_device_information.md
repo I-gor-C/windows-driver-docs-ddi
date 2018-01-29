@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5d212a29-22b9-408d-9562-b232fc91cc9f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_DEVICE_INFORMATION, *PWDF_USB_DEVICE_INFORMATION, WDF_USB_DEVICE_INFORMATION
+ms.keywords : PWDF_USB_DEVICE_INFORMATION structure pointer, wdfusb/WDF_USB_DEVICE_INFORMATION, kmdf.wdf_usb_device_information, WDF_USB_DEVICE_INFORMATION, WDF_USB_DEVICE_INFORMATION structure, *PWDF_USB_DEVICE_INFORMATION, PWDF_USB_DEVICE_INFORMATION, wdfusb/PWDF_USB_DEVICE_INFORMATION, _WDF_USB_DEVICE_INFORMATION, wdf.wdf_usb_device_information, DFUsbRef_eb36dfae-7210-4949-acbf-7d0b0edf4061.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_DEVICE_INFORMATION
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_DEVICE_INFORMATION, WDF_USB_DEVICE_INFORMATION"
 req.product : Windows 10 or later.
 ---
@@ -52,25 +56,25 @@ typedef struct _WDF_USB_DEVICE_INFORMATION {
 
 ## Members
 
-        
-            `HcdPortCapabilities`
 
-            This member is reserved for system use.
-        
-            `Size`
+`HcdPortCapabilities`
 
-            The size, in bytes, of this structure.
-        
-            `Traits`
+This member is reserved for system use.
 
-            A set of bit flags that identify device traits. The flags are defined by the <a href="..\wdfusb\ne-wdfusb-_wdf_usb_device_traits.md">WDF_USB_DEVICE_TRAITS</a> enumeration.
-        
-            `UsbdVersionInformation`
+`Size`
 
-            A <a href="..\usb\ns-usb-_usbd_version_information.md">USBD_VERSION_INFORMATION</a> structure that provides version information for the host controller driver (HCD) and the USB specification version that the device supports.
+The size, in bytes, of this structure.
 
-    ## Remarks
-        The <b>WDF_USB_DEVICE_INFORMATION</b> structure is filled in by the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a> method. Before calling <b>WdfUsbTargetDeviceRetrieveInformation</b>, the driver must call <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_information_init.md">WDF_USB_DEVICE_INFORMATION_INIT</a> to initialize the structure.
+`Traits`
+
+A set of bit flags that identify device traits. The flags are defined by the <a href="..\wdfusb\ne-wdfusb-_wdf_usb_device_traits.md">WDF_USB_DEVICE_TRAITS</a> enumeration.
+
+`UsbdVersionInformation`
+
+A <a href="..\usb\ns-usb-_usbd_version_information.md">USBD_VERSION_INFORMATION</a> structure that provides version information for the host controller driver (HCD) and the USB specification version that the device supports.
+
+## Remarks
+The <b>WDF_USB_DEVICE_INFORMATION</b> structure is filled in by the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a> method. Before calling <b>WdfUsbTargetDeviceRetrieveInformation</b>, the driver must call <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_information_init.md">WDF_USB_DEVICE_INFORMATION_INIT</a> to initialize the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,22 +84,16 @@ typedef struct _WDF_USB_DEVICE_INFORMATION {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_usbd_version_information.md">USBD_VERSION_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_information_init.md">WDF_USB_DEVICE_INFORMATION_INIT</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\ne-wdfusb-_wdf_usb_device_traits.md">WDF_USB_DEVICE_TRAITS</a>
-</dt>
-<dt>
+
+<a href="..\usb\ns-usb-_usbd_version_information.md">USBD_VERSION_INFORMATION</a>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a>
-</dt>
-</dl>
+
  
 
  

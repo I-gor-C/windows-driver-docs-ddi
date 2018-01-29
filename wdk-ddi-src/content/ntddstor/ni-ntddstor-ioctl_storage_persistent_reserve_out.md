@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a9863ac9-46e2-4888-879e-7d56e9260142
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_persistent_reserve_out, IOCTL_STORAGE_PERSISTENT_RESERVE_OUT control code [Storage Devices], IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, ntddstor/IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, k307_664b87a0-88f2-42ac-851e-b1fbbf36c66a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_PERSISTENT_RESERVE_OUT
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
@@ -44,38 +48,64 @@ The generic storage class driver (<i>classpnp.sys</i>) exposes an I/O control (I
 The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure. You must allocate the buffer from nonpaged pool and must align it correctly for the  target device and adapter.
 
 PR_OUT.ServiceAction can be one of the following:
-
+<ul>
+<li>
 RESERVATION_ACTION_REGISTER
 
+</li>
+<li>
 RESERVATION_ACTION_RESERVE
 
+</li>
+<li>
 RESERVATION_ACTION_RELEASE
 
+</li>
+<li>
 RESERVATION_ACTION_CLEAR
 
+</li>
+<li>
 RESERVATION_ACTION_PREEMPT
 
+</li>
+<li>
 RESERVATION_ACTION_PREEMPT_ABORT
 
+</li>
+<li>
 RESERVATION_ACTION_REGISTER_IGNORE_EXISTING
 
-PR_OUT.Scope can be one of the following:
-
+</li>
+</ul>PR_OUT.Scope can be one of the following:
+<ul>
+<li>
 RESERVATION_SCOPE_LU
 
+</li>
+<li>
 RESERVATION_SCOPE_ELEMENT
 
-PR_OUT.Type can be one of the following:
-
+</li>
+</ul>PR_OUT.Type can be one of the following:
+<ul>
+<li>
 RESERVATION_TYPE_WRITE_EXCLUSIVE
 
+</li>
+<li>
 RESERVATION_TYPE_EXCLUSIVE
 
+</li>
+<li>
 RESERVATION_TYPE_WRITE_EXCLUSIVE_REGISTRANTS
 
+</li>
+<li>
 RESERVATION_TYPE_EXCLUSIVE_REGISTRANTS
 
-PR_OUT.ParameterList is used to hold the <a href="..\storport\ns-storport-pro_parameter_list.md">PRO_PARAMETER_LIST</a> structure. This structure is required and must be contiguous with the rest of the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.
+</li>
+</ul>PR_OUT.ParameterList is used to hold the <a href="..\storport\ns-storport-pro_parameter_list.md">PRO_PARAMETER_LIST</a> structure. This structure is required and must be contiguous with the rest of the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.
 
 ### Input Buffer Length
 The length of a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.
@@ -93,26 +123,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero.
 
 The <b>Status</b> field is set to one of the following:
-
-
-
-The operation was successful.
-
-The input buffer structure is incorrectly sized or populated.
-
-The I/O control code (IOCTL_STORAGE_PERSISTENT_RESERVE_OUT) is not supported by the storage drivers.
-
-The command failed because of a Reservation Conflict (for more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=153142">SCSI Primary Commands - 2 (SPC-2)</a> specification).
-
-The device does not support the Persistent Reserve Out command.
-
-The input buffer is not aligned correctly for the device or adapter.  This status could only be returned when a driver sends an IOCTL to the storage stack.  This status will not be returned when a user-mode application sends the IOCTL through the DeviceIoControl API as the I/O Manager automatically aligns the buffers.
-
-The input buffer length for the IOCTL is less than sizeof(PERSISTENT_RESERVE_COMMAND) or the size that is specified in the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> data structure is less than sizeof(PERSISTENT_RESERVE_COMMAND).
 
 
 ## Requirements

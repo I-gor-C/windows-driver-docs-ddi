@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2aba049-b51f-49b9-b0bb-c98c318dea86
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS
+ms.keywords : display.dxgk_child_status, DXGK_CHILD_STATUS, PDXGK_CHILD_STATUS structure pointer [Display Devices], *PDXGK_CHILD_STATUS, DmStructs_9a370d5a-9ca8-4c4f-a5cf-3361847d65e7.xml, dispmprt/DXGK_CHILD_STATUS, PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS structure [Display Devices], _DXGK_CHILD_STATUS, dispmprt/PDXGK_CHILD_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_CHILD_STATUS
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS"
 ---
 
@@ -61,14 +65,14 @@ typedef struct _DXGK_CHILD_STATUS {
 
 ## Members
 
-        
-            `ChildUid`
 
-            An integer, created previously by the display miniport driver, that identifies the child device for which status is being requested.
-        
-            `Type`
+`ChildUid`
 
-            A member of the <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXGK_CHILD_STATUS_TYPE</a> enumeration that indicates the type of status being requested.
+An integer, created previously by the display miniport driver, that identifies the child device for which status is being requested.
+
+`Type`
+
+A member of the <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXGK_CHILD_STATUS_TYPE</a> enumeration that indicates the type of status being requested.
 
 
 ## Requirements
@@ -79,25 +83,18 @@ typedef struct _DXGK_CHILD_STATUS {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_indicate_child_status.md">DxgkCbIndicateChildStatus</a>
-</dt>
-<dt>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+
 <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXGK_CHILD_STATUS_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_output_technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a>
-</dt>
-</dl>
+
  
 
  

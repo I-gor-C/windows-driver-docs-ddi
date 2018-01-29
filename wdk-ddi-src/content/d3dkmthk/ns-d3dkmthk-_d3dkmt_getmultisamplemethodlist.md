@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 138f6f75-3986-42f8-840c-d48edb271203
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_GETMULTISAMPLEMETHODLIST, D3DKMT_GETMULTISAMPLEMETHODLIST
+ms.keywords : OpenGL_Structs_ccb62d63-4a70-4fb4-b6db-d8a5e585b222.xml, _D3DKMT_GETMULTISAMPLEMETHODLIST, display.d3dkmt_getmultisamplemethodlist, D3DKMT_GETMULTISAMPLEMETHODLIST, D3DKMT_GETMULTISAMPLEMETHODLIST structure [Display Devices], d3dkmthk/D3DKMT_GETMULTISAMPLEMETHODLIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_GETMULTISAMPLEMETHODLIST
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_GETMULTISAMPLEMETHODLIST
 ---
 
@@ -52,37 +56,37 @@ typedef struct _D3DKMT_GETMULTISAMPLEMETHODLIST {
 
 ## Members
 
-        
-            `Format`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
-        
-            `hAdapter`
+`Format`
 
-            [in] A handle to the graphics adapter.
-        
-            `Height`
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
 
-            [in] The height of the allocation, in pixels.
-        
-            `MethodCount`
+`hAdapter`
 
-            [in/out] On input, the number of elements that the array that is specified by <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the array that is specified by <b>pMethodList</b> should hold.
-        
-            `pMethodList`
+[in] A handle to the graphics adapter.
 
-            [out] An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.
-        
-            `VidPnSourceId`
+`Height`
 
-            [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on.
-        
-            `Width`
+[in] The height of the allocation, in pixels.
 
-            [in] The width of the allocation, in pixels.
+`MethodCount`
 
-    ## Remarks
-        If the runtime returns a non-<b>NULL</b> value in <b>pMethodList</b>, the runtime returns a value in <b>MethodCount</b> that represents the number of elements that the array can hold. If the runtime returns <b>NULL</b> in <b>pMethodList</b>, the runtime returns a value in <b>MethodCount</b> that represents the size of the array buffer that is required, in number of elements.
+[in/out] On input, the number of elements that the array that is specified by <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the array that is specified by <b>pMethodList</b> should hold.
+
+`pMethodList`
+
+[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.
+
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on.
+
+`Width`
+
+[in] The width of the allocation, in pixels.
+
+## Remarks
+If the runtime returns a non-<b>NULL</b> value in <b>pMethodList</b>, the runtime returns a value in <b>MethodCount</b> that represents the number of elements that the array can hold. If the runtime returns <b>NULL</b> in <b>pMethodList</b>, the runtime returns a value in <b>MethodCount</b> that represents the size of the array buffer that is required, in number of elements.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,19 +96,14 @@ typedef struct _D3DKMT_GETMULTISAMPLEMETHODLIST {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetmultisamplemethodlist.md">D3DKMTGetMultisampleMethodList</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a>
+
  
 
  

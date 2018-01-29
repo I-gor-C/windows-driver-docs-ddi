@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d4b443a2-3665-4e7c-b84a-5388a8fe8681
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.hwviddpcroutine, HwVidDpcRoutine callback function [Display Devices], HwVidDpcRoutine, PMINIPORT_DPC_ROUTINE, PMINIPORT_DPC_ROUTINE, video/HwVidDpcRoutine, VideoMiniport_Functions_5d605867-89d7-44a9-b08b-c49ffaa90244.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwVidDpcRoutine
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -86,11 +90,8 @@ Because <i>HwVidDpcRoutine </i>is called at DISPATCH_LEVEL, it must not manipula
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>
-</dt>
-</dl>
+
  
 
  

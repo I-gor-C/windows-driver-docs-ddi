@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a5a3e98b-8f6b-412d-a2eb-a28b5664340d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_persistent_reserve_in, IOCTL_STORAGE_PERSISTENT_RESERVE_IN control code [Storage Devices], IOCTL_STORAGE_PERSISTENT_RESERVE_IN, ntddstor/IOCTL_STORAGE_PERSISTENT_RESERVE_IN, k307_d142d4f6-d2a1-420e-a41d-5bb630445ad2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_PERSISTENT_RESERVE_IN
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
@@ -44,12 +48,16 @@ The generic storage class driver (<i>classpnp.sys</i>) exposes an I/O control (I
 The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure. You must allocate the buffer from nonpaged pool and must align it correctly for the  target device and adapter.
 
 PR_IN.ServiceAction can be one of the following:
-
+<ul>
+<li>
 RESERVATION_ACTION_READ_KEYS
 
+</li>
+<li>
 RESERVATION_ACTION_READ_RESERVATIONS
 
-PR_IN.Allocation length is the size (in bytes) of the buffer allocated for the returned parameter list.
+</li>
+</ul>PR_IN.Allocation length is the size (in bytes) of the buffer allocated for the returned parameter list.
 
 ### Input Buffer Length
 The length of .
@@ -71,28 +79,9 @@ The length of .
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the size of the output buffer. For ServiceAction = RESERVATION_ACTION_READ_KEYS, the output buffer is a <a href="..\storport\ns-storport-pri_registration_list.md">PRI_REGISTRATION_LIST</a> structure. For ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS, the output buffer is a <a href="..\storport\ns-storport-pri_reservation_list.md">PRI_RESERVATION_LIST</a> structure.
 
 The <b>Status</b> field is set to one of the following:
-
-
-
-The operation was successful.
-
-The input buffer structure is incorrectly sized or populated.
-
-The I/O control code (IOCTL_STORAGE_PERSISTENT_RESERVE_IN) is not supported by the storage drivers.
-
-The output buffer is too small to hold the Persistent Reserve In data. The output buffer's <b>AdditionalLength</b> field will contain the size of the data to be returned.
-
-The command failed because of a Reservation Conflict (for more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=153142">SCSI Primary Commands - 2 (SPC-2)</a> specification).
-
-The device does not support the Persistent Reserve In command.
-
-The input or output buffer is not aligned correctly for the device or adapter.  This status could only be returned when a driver sends an IOCTL to the storage stack.  This status will not be returned when a user-mode application sends the IOCTL through the DeviceIoControl API as the I/O Manager automatically aligns the buffers.
-
-The input buffer length for the IOCTL is less than sizeof(PERSISTENT_RESERVE_COMMAND) or the size that is specified in the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> data structure is less than sizeof(PERSISTENT_RESERVE_COMMAND).
 
 
 ## Requirements

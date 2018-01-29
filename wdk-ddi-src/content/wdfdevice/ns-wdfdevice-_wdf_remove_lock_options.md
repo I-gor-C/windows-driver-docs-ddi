@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0A50C1FB-D0C6-47C4-AD71-AD0B7486AA2E
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS, *PWDF_REMOVE_LOCK_OPTIONS
+ms.keywords : PWDF_REMOVE_LOCK_OPTIONS, wdfdevice/WDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS structure, kmdf.wdf_remove_lock_options, *PWDF_REMOVE_LOCK_OPTIONS, wdf.wdf_remove_lock_options, wdfdevice/PWDF_REMOVE_LOCK_OPTIONS, _WDF_REMOVE_LOCK_OPTIONS, PWDF_REMOVE_LOCK_OPTIONS structure pointer, WDF_REMOVE_LOCK_OPTIONS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 
-req.alt-api : WDF_REMOVE_LOCK_OPTIONS
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REMOVE_LOCK_OPTIONS, *PWDF_REMOVE_LOCK_OPTIONS
 req.product : Windows 10 or later.
 ---
@@ -51,14 +55,14 @@ typedef struct _WDF_REMOVE_LOCK_OPTIONS {
 
 ## Members
 
-        
-            `Flags`
 
-            The bitwise <b>OR</b> of values from the <a href="..\wdfdevice\ne-wdfdevice-_wdf_remove_lock_options_flags.md">WDF_REMOVE_LOCK_OPTIONS_FLAGS</a> enumeration.
-        
-            `Size`
+`Flags`
 
-            The size of the structure, in bytes.
+The bitwise <b>OR</b> of values from the <a href="..\wdfdevice\ne-wdfdevice-_wdf_remove_lock_options_flags.md">WDF_REMOVE_LOCK_OPTIONS_FLAGS</a> enumeration.
+
+`Size`
+
+The size of the structure, in bytes.
 
 
 ## Requirements
@@ -69,19 +73,14 @@ typedef struct _WDF_REMOVE_LOCK_OPTIONS {
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdf_remove_lock_options_init.md">WDF_REMOVE_LOCK_OPTIONS_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_remove_lock_options_flags.md">WDF_REMOVE_LOCK_OPTIONS_FLAGS</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdf_remove_lock_options_init.md">WDF_REMOVE_LOCK_OPTIONS_INIT</a>
+
  
 
  

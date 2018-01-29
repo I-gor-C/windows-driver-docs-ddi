@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 192a525e-6a42-4bd0-9c50-d13741469a48
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortReadRegisterUshort
+ms.keywords : ScsiPortReadRegisterUshort routine [Storage Devices], ScsiPortReadRegisterUshort, scsiprt_342c6cc3-090e-4bea-be54-1a52f50d8276.xml, storage.scsiportreadregisterushort, srb/ScsiPortReadRegisterUshort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortReadRegisterUshort
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortReadRegisterUshort function
 The <b>ScsiPortReadRegisterUshort</b> routine reads a USHORT value from the HBA.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -76,11 +81,8 @@ Pointer to the register. The given <i>Register</i> must be in a mapped memory-sp
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
-</dt>
-</dl>
+
  
 
  

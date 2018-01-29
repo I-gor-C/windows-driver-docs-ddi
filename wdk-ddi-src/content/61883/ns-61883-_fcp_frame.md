@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 56a0e888-8048-4774-a46f-8a0beebfb9f2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FCP_FRAME, FCP_FRAME, *PFCP_FRAME
+ms.keywords : "*PFCP_FRAME, FCP_FRAME, 61883/PFCP_FRAME, _FCP_FRAME, 61883_structures_760d5112-e681-4c00-b178-66aadbe95b62.xml, FCP_FRAME structure [Buses], IEEE.fcp_frame, PFCP_FRAME structure pointer [Buses], PFCP_FRAME, 61883/FCP_FRAME"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FCP_FRAME
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : FCP_FRAME, *PFCP_FRAME
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFCP_FRAME, FCP_FRAME"
 ---
 
 # _FCP_FRAME structure
@@ -48,18 +52,18 @@ typedef struct _FCP_FRAME {
 
 ## Members
 
-        
-            `cts`
 
-            The CTS used for this FCP request. The CTS specifies the command set, the structure of the command/response field, and the rules of transactions used for sending FCP commands and responses.
-        
-            `ctype`
+`cts`
 
-            The command or response type as defined by the Command/Transaction Set (CTS) used for this request.
-        
-            `payload`
+The CTS used for this FCP request. The CTS specifies the command set, the structure of the command/response field, and the rules of transactions used for sending FCP commands and responses.
 
-            The FCP request for this frame.
+`ctype`
+
+The command or response type as defined by the Command/Transaction Set (CTS) used for this request.
+
+`payload`
+
+The FCP request for this frame.
 
 
 ## Requirements
@@ -70,22 +74,16 @@ typedef struct _FCP_FRAME {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536974">Av61883_GetFcpRequest</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536989">Av61883_SendFcpRequest</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536989">Av61883_SendFcpRequest</a>
+
  
 
  

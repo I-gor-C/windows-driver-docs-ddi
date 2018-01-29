@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 752451F9-74FC-48A8-B9B8-2CBD381B91D9
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _NFC_CX_SEQUENCE, *PNFC_CX_SEQUENCE, NFC_CX_SEQUENCE
+ms.keywords : nfccx/SequencePreNfceeDisc, SequenceMaximum, SequencePreShutdown, SequenceRecoveryComplete, nfccx/SequencePreRfDiscStop, nfccx/SequencePreShutdown, nfccx/SequenceInitComplete, PNFC_CX_SEQUENCE, SequencePreInit, nfccx/SequenceRecoveryComplete, nfccx/SequenceNfceeDiscComplete, SequencePreRecovery, SequenceInitComplete, SequenceNfceeDiscComplete, NFC_CX_SEQUENCE enumeration [Near-Field Proximity Drivers], nfccx/SequencePreRecovery, SequencePreRfDiscStop, _NFC_CX_SEQUENCE, nfccx/SequencePreInit, SequenceShutdownComplete, nfccx/SequencePreRfDiscStart, nfccx/SequenceRfDiscStartComplete, nfccx/SequenceMaximum, nfccx/SequenceShutdownComplete, SequencePreRfDiscStart, NFC_CX_SEQUENCE, SequenceRfDiscStopComplete, nfccx/SequenceRfDiscStopComplete, *PNFC_CX_SEQUENCE, SequencePreNfceeDisc, SequenceRfDiscStartComplete, nfccx/NFC_CX_SEQUENCE, nfpdrivers.nfc_cx_sequence
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NFC_CX_SEQUENCE
-req.alt-loc : nfccx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Requires same
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PNFC_CX_SEQUENCE, NFC_CX_SEQUENCE"
 ---
 
@@ -137,10 +141,10 @@ typedef enum _NFC_CX_SEQUENCE {
 
 ## See Also
 
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 39cb818e-6219-4d7e-8114-8c0dfdfff76e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_deselect_device, IOCTL_INTERNAL_DESELECT_DEVICE control code [Parallel Ports], IOCTL_INTERNAL_DESELECT_DEVICE, parallel/IOCTL_INTERNAL_DESELECT_DEVICE, cisspd_8ade9861-f2cd-4328-9f8a-92fa4b2d2163.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_DESELECT_DEVICE
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,16 +65,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero.
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.InputBufferLength</b> member is less than the size, in bytes, of a PARALLEL_1284_COMMAND structure.
-
-The specified device is not flagged internally as an end-of-chain device, and the specified ID value is greater than the number of existing daisy-chain devices.
 
 
 ## Requirements
@@ -80,16 +77,12 @@ The specified device is not flagged internally as an end-of-chain device, and th
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C7D7935C-0536-43E6-8924-1DC13B258007
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBFN_INTERFACE_ATTACH, USBFN_INTERFACE_ATTACH, *PUSBFN_INTERFACE_ATTACH
+ms.keywords : usbfnattach/PUSBFN_INTERFACE_ATTACH, PUSBFN_INTERFACE_ATTACH, _USBFN_INTERFACE_ATTACH, PUSBFN_INTERFACE_ATTACH structure pointer [Buses], USBFN_INTERFACE_ATTACH structure [Buses], USBFN_INTERFACE_ATTACH, *PUSBFN_INTERFACE_ATTACH, usbfnattach/USBFN_INTERFACE_ATTACH, buses.usbfn_interface_attach
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBFN_INTERFACE_ATTACH
-req.alt-loc : usbfnattach.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : USBFN_INTERFACE_ATTACH, *PUSBFN_INTERFACE_ATTACH
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSBFN_INTERFACE_ATTACH, USBFN_INTERFACE_ATTACH"
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _USBFN_INTERFACE_ATTACH {
 
 ## Members
 
-        
-            `GetAttachAction`
 
-            A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md">USBFN_GET_ATTACH_ACTION</a> callback function.
-        
-            `GetAttachActionAbortOperation`
+`GetAttachAction`
 
-            A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action_abort.md">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.
-        
-            `InterfaceHeader`
+A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md">USBFN_GET_ATTACH_ACTION</a> callback function.
 
-            The interface version number.
-        
-            `SetDeviceState`
+`GetAttachActionAbortOperation`
 
-            A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_set_device_state.md">USBFN_SET_DEVICE_STATE</a> callback function.
+A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action_abort.md">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.
+
+`InterfaceHeader`
+
+The interface version number.
+
+`SetDeviceState`
+
+A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_set_device_state.md">USBFN_SET_DEVICE_STATE</a> callback function.
 
 
 ## Requirements
@@ -76,13 +80,10 @@ typedef struct _USBFN_INTERFACE_ATTACH {
 | **Minimum UMDF version** |  |
 | **Header** | usbfnattach.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/05D2B46A-282C-4B75-9F5C-2FC0AF344AB9">USB filter driver for supporting proprietary chargers</a>
-</dt>
-</dl>
+
  
 
  

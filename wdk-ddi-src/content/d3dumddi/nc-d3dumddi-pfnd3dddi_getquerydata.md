@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 64daec14-8e16-4df3-bb0c-27760223b86c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.getquerydata, GetQueryData callback function [Display Devices], GetQueryData, PFND3DDDI_GETQUERYDATA, PFND3DDDI_GETQUERYDATA, d3dumddi/GetQueryData, UserModeDisplayDriver_Functions_05870f6b-5971-4201-9910-c8c8c548878a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetQueryData
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,15 +68,45 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>GetQueryData</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The query operation completed and the query result is available.
+</dl>
+</td>
+<td width="60%">
+The query operation completed and the query result is available.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_FALSE</b></dt>
-</dl><i>GetQueryData</i> returned successfully. However, the query operation did not complete, so the query result is not available.
+</dl>
+</td>
+<td width="60%">
+<i>GetQueryData</i> returned successfully. However, the query operation did not complete, so the query result is not available.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>GetQueryData</i> could not allocate the required memory for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>GetQueryData</i> could not allocate the required memory for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -80,7 +114,7 @@ The Microsoft Direct3D runtime can call <i>GetQueryData</i> at any time after ca
 
 If the query is completed, the driver should return S_OK; otherwise, the driver should return S_FALSE. 
 
-If a driver supports <a href="display.supporting_multiple_processors#runtime-handled_multiple-processor_optimizations#runtime-handled_multiple-processor_optimizations">runtime-handled multiple-processor optimizations</a> and exposes a DDI version of 0x0000000B or greater, the runtime will call <i>GetQueryData</i> in a reentrant manner. The driver returns the DDI-version value in the <b>DriverVersion</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_openadapter.md">D3D10DDIARG_OPENADAPTER</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_openadapter.md">OpenAdapter</a> function. When the runtime calls <i>GetQueryData</i> in a reentrant manner, one thread can execute inside <i>GetQueryData</i> while another thread that references the same display device executes inside of another user-mode display driver function.
+If a driver supports <a href="https://msdn.microsoft.com/906d6b31-a447-4a94-b1a5-cd3028722db7">runtime-handled multiple-processor optimizations</a> and exposes a DDI version of 0x0000000B or greater, the runtime will call <i>GetQueryData</i> in a reentrant manner. The driver returns the DDI-version value in the <b>DriverVersion</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_openadapter.md">D3D10DDIARG_OPENADAPTER</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_openadapter.md">OpenAdapter</a> function. When the runtime calls <i>GetQueryData</i> in a reentrant manner, one thread can execute inside <i>GetQueryData</i> while another thread that references the same display device executes inside of another user-mode display driver function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,17 +130,12 @@ If a driver supports <a href="display.supporting_multiple_processors#runtime-han
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getquerydata.md">D3DDDIARG_GETQUERYDATA</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getquerydata.md">D3DDDIARG_GETQUERYDATA</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a>
-</dt>
-</dl>
+
  
 
  

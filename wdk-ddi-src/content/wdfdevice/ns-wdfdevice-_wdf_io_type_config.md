@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : EB3CEC0E-5635-410D-B8D2-031FDB0557C1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG
+ms.keywords : PWDF_IO_TYPE_CONFIG structure pointer, WDF_IO_TYPE_CONFIG, PWDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG structure, wdfdevice/PWDF_IO_TYPE_CONFIG, wdf.wdf_io_type_config, _WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG, wdfdevice/WDF_IO_TYPE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_TYPE_CONFIG
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PWDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -52,38 +56,38 @@ typedef struct _WDF_IO_TYPE_CONFIG {
 
 ## Members
 
-        
-            `DeviceControlIoType`
 
-            This member does not apply to KMDF.
+`DeviceControlIoType`
+
+This member does not apply to KMDF.
 
 <b>UMDF </b>A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use for the data 
     buffers of IOCTL requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
-        
-            `DirectTransferThreshold`
 
-            This member does not apply to KMDF.
+`DirectTransferThreshold`
+
+This member does not apply to KMDF.
 
 <b>UMDF </b>An optional value that specifies the smallest buffer size, in bytes, for which 
     the framework will use direct I/O for a device. For example, set 
     <b>DirectTransferThreshold</b> to 12288 to indicate that the framework should use buffered I/O for all buffers that are smaller than 12 kilobytes, and direct I/O for buffers that are equal to or larger than 12 kilobytes. Typically, you 
     do not need to provide this value because the framework uses settings  that provide
     the best performance.
-        
-            `ReadWriteIoType`
 
-            <b>KMDF </b>A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
+`ReadWriteIoType`
+
+<b>KMDF </b>A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
     that it receives for read and write requests.
 
 
 <b>UMDF </b>A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use to access data buffers of read and write requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
-        
-            `Size`
 
-            Size of this structure in bytes.
+`Size`
 
-    ## Remarks
-        The <b>WDF_IO_TYPE_CONFIG</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a> method.
+Size of this structure in bytes.
+
+## Remarks
+The <b>WDF_IO_TYPE_CONFIG</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a> method.
 
 To initialize a <b>WDF_IO_TYPE_CONFIG</b> structure, your driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf_io_type_config_init.md">WDF_IO_TYPE_CONFIG_INIT</a>.
 
@@ -100,19 +104,14 @@ If you are writing a driver using UMDF version 1.<i>x</i>, your driver calls <a 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdf_io_type_config_init.md">WDF_IO_TYPE_CONFIG_INIT</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
-</dt>
-</dl>
+
  
 
  

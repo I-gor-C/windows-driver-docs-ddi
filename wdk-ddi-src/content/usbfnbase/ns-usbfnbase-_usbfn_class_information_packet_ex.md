@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 373D7CA9-AF1B-46E8-AE6A-F693A9214527
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBFN_CLASS_INFORMATION_PACKET_EX, *PUSBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX
+ms.keywords : PUSBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX, PUSBFN_CLASS_INFORMATION_PACKET_EX structure pointer [Buses], buses.usbfn_class_information_packet_ex, *PUSBFN_CLASS_INFORMATION_PACKET_EX, usbfnbase/PUSBFN_CLASS_INFORMATION_PACKET_EX, _USBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX structure [Buses], usbfnbase/USBFN_CLASS_INFORMATION_PACKET_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBFN_CLASS_INFORMATION_PACKET_EX
-req.alt-loc : usbfnbase.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX"
 req.product : Windows 10 or later.
 ---
@@ -52,10 +56,30 @@ typedef struct _USBFN_CLASS_INFORMATION_PACKET_EX {
 
 ## Members
 
-        
-            `HasInterfaceGuid`
 
-            Determines whether the driver has published a device interface is GUID.
+`FullSpeedClassInterfaceEx`
+
+
+
+`HasInterfaceGuid`
+
+Determines whether the driver has published a device interface is GUID.
+
+`HighSpeedClassInterfaceEx`
+
+
+
+`InterfaceGuid`
+
+
+
+`InterfaceName`
+
+
+
+`SuperSpeedClassInterfaceEx`
+
+
 
 
 ## Requirements
@@ -66,19 +90,14 @@ typedef struct _USBFN_CLASS_INFORMATION_PACKET_EX {
 | **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTERFACE</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
+
  
 
  

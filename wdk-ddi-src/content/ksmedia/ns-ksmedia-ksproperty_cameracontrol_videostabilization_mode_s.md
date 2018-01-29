@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7cbf015c-4756-4d5c-a5fb-9cd8a5e0e3fd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
+ms.keywords : KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO, ksmedia/PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, stream.ksproperty_cameracontrol_videostabilization_mode_s, PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure pointer [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO, PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
 ---
 
 # KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure
@@ -47,17 +51,17 @@ typedef struct {
 
 ## Members
 
-        
-            `Capabilities`
 
-            Indicates whether the device and driver support setting video stabilization control automatically or manually. This member a bitwise <b>OR</b> of these possible values:
-        
-            `VideoStabilizationMode`
+`Capabilities`
 
-            Indicates the selected video stabilization modes. This member has one of these possible values:
+Indicates whether the device and driver support setting video stabilization control automatically or manually. This member a bitwise <b>OR</b> of these possible values:
 
-    ## Remarks
-        The video stabilization settings specified with this structure affect only the device and have no effect on applications' software video stabilization.
+`VideoStabilizationMode`
+
+Indicates the selected video stabilization modes. This member has one of these possible values:
+
+## Remarks
+The video stabilization settings specified with this structure affect only the device and have no effect on applications' software video stabilization.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_video_stabilization_mode.md">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_video_stabilization_mode.md">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE</a>
+
  
 
  

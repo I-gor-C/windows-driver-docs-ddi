@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8378D5F1-92AC-4C59-BA66-68246C011199
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetDeviceIdleTimeout
+ms.keywords : PoFxSetDeviceIdleTimeout routine [Kernel-Mode Driver Architecture], PoFxSetDeviceIdleTimeout, kernel.pofxsetdeviceidletimeout, wdm/PoFxSetDeviceIdleTimeout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxSetDeviceIdleTimeout
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,14 +91,10 @@ The device driver can call <b>PoFxSetDeviceIdleTimeout</b> each time a change in
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450946">DevicePowerNotRequiredCallback</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-</dl>
+
  
 
  

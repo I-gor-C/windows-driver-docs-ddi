@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 260fdda5-bc97-4522-96ca-1c29d41e8542
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_FAILED_ACTION, WDF_DEVICE_FAILED_ACTION
+ms.keywords : WdfDeviceFailedNoRestart, wdfdevice/WdfDeviceFailedNoRestart, _WDF_DEVICE_FAILED_ACTION, wdf.wdf_device_failed_action, WdfDeviceFailedAttemptRestart, wdfdevice/WdfDeviceFailedUndefined, DFDeviceObjectGeneralRef_f23e41aa-e37c-45d0-b83b-0ee86eb24aba.xml, WdfDeviceFailedUndefined, WDF_DEVICE_FAILED_ACTION enumeration, wdfdevice/WDF_DEVICE_FAILED_ACTION, WDF_DEVICE_FAILED_ACTION, wdfdevice/WdfDeviceFailedAttemptRestart, kmdf.wdf_device_failed_action
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_DEVICE_FAILED_ACTION
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_FAILED_ACTION
 req.product : Windows 10 or later.
 ---
@@ -87,11 +91,8 @@ For information about specifying <b>WdfDeviceFailedAttemptRestart</b> in a UMDF 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetfailed.md">WdfDeviceSetFailed</a>
-</dt>
-</dl>
+
  
 
  

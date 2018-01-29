@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : dcbfa8d2-c2ea-43ae-9d77-ce95a430a514
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GETVERSIONINPARAMS, *LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, GETVERSIONINPARAMS
+ms.keywords : "*PGETVERSIONINPARAMS, PGETVERSIONINPARAMS structure pointer [Storage Devices], structs-IDE_5426037d-a75f-4b92-a935-e467d02ec8c7.xml, storage.getversioninparams, _GETVERSIONINPARAMS, ntdddisk/LPGETVERSIONINPARAMS, PGETVERSIONINPARAMS, ntdddisk/GETVERSIONINPARAMS, GETVERSIONINPARAMS, GETVERSIONINPARAMS structure [Storage Devices], LPGETVERSIONINPARAMS structure pointer [Storage Devices], *LPGETVERSIONINPARAMS, ntdddisk/PGETVERSIONINPARAMS, LPGETVERSIONINPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GETVERSIONINPARAMS
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, GETVERSIONINPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GETVERSIONINPARAMS, *PGETVERSIONINPARAMS, *LPGETVERSIONINPARAMS
 ---
 
 # _GETVERSIONINPARAMS structure
@@ -51,11 +55,10 @@ typedef struct _GETVERSIONINPARAMS {
 
 ## Members
 
-        
-            `bIDEDeviceMap`
 
-            Contains the bitmap. The following table explains the meaning of the bitmap:
+`bIDEDeviceMap`
 
+Contains the bitmap. The following table explains the meaning of the bitmap:
 <table>
 <tr>
 <th>Bitmap Flags</th>
@@ -142,27 +145,26 @@ The device is an ATAPI drive, and it is the subordinate device on the secondary 
 </td>
 </tr>
 </table>
-        
-            `bReserved`
 
-            Reserved.
-        
-            `bRevision`
+`bReserved`
 
-            Contains an integer that indicates the revision number of the binary driver.
-        
-            `bVersion`
+Reserved.
 
-            Contains an integer that indicates the version number of the binary driver.
-        
-            `dwReserved`
+`bRevision`
 
-            Reserved.
-        
-            `fCapabilities`
+Contains an integer that indicates the revision number of the binary driver.
 
-            Contains the bitmask of driver capabilities. 
+`bVersion`
 
+Contains an integer that indicates the version number of the binary driver.
+
+`dwReserved`
+
+Reserved.
+
+`fCapabilities`
+
+Contains the bitmask of driver capabilities. 
 <table>
 <tr>
 <th>Bitmask Flags</th>
@@ -209,13 +211,10 @@ The device supports SMART commands.
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566202">SMART_GET_VERSION</a>
-</dt>
-</dl>
+
  
 
  

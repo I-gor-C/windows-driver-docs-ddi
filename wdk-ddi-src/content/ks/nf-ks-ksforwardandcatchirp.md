@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 87a873c2-07d3-4f76-bc26-5fcae4b960e7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsForwardAndCatchIrp
+ms.keywords : stream.ksforwardandcatchirp, ks/KsForwardAndCatchIrp, ksfunc_db5ae1e5-b0c8-4703-866f-a3f060e5ffb3.xml, KsForwardAndCatchIrp, KsForwardAndCatchIrp function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsForwardAndCatchIrp
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,18 +81,42 @@ The <b>KsForwardAndCatchIrp</b> function returns the result of the <b>IoCallDriv
 ## Remarks
 
 The type KSSTACK_USE enumeration specifies how the IRP stack is used when forwarding the IRP to the next driver.
-
+<table>
+<tr>
+<th>Enumeration</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 KsStackCopyToNewLocation
 
+</td>
+<td>
 Indicates that the parameters are to be copied to the next stack location.
 
+</td>
+</tr>
+<tr>
+<td>
 KsStackReuseCurrentLocation
 
+</td>
+<td>
 Indicates that the current stack location is to be reused.
 
+</td>
+</tr>
+<tr>
+<td>
 KsStackUseNewLocation
 
-Indicates that the next stack location is to be used without modification.</p>
+</td>
+<td>
+Indicates that the next stack location is to be used without modification.
+
+</td>
+</tr>
+</table>
 
 ## Requirements
 | &nbsp; | &nbsp; |

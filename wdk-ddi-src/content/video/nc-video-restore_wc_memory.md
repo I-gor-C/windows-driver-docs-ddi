@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8fa0be0c-04ce-41ab-93dd-6dc9e8daa356
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.videoportrestorewcmemory, VideoPortRestoreWCMemory callback function [Display Devices], VideoPortRestoreWCMemory, RESTORE_WC_MEMORY, RESTORE_WC_MEMORY, video/VideoPortRestoreWCMemory, VideoPort_Functions_88c8ebcc-40d1-4883-9e99-eac1aab0c6c7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortRestoreWCMemory
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -84,14 +88,10 @@ After the <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMem
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
-</dt>
-<dt>
+
 <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a>
-</dt>
-</dl>
+
  
 
  

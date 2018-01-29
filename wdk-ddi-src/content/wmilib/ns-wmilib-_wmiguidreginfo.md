@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8bf36e54-5caa-4dc6-b659-ea0c1ac450f0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WMIGUIDREGINFO, *PWMIGUIDREGINFO, WMIGUIDREGINFO
+ms.keywords : WMIGUIDREGINFO, PWMIGUIDREGINFO, wmilib/WMIGUIDREGINFO, WMIGUIDREGINFO structure [Kernel-Mode Driver Architecture], kernel.wmiguidreginfo, kstruct_d_aeedb315-3e08-4af9-9a37-afd06166a662.xml, PWMIGUIDREGINFO structure pointer [Kernel-Mode Driver Architecture], _WMIGUIDREGINFO, wmilib/PWMIGUIDREGINFO, *PWMIGUIDREGINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WMIGUIDREGINFO
-req.alt-loc : Wmilib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PWMIGUIDREGINFO, WMIGUIDREGINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WMIGUIDREGINFO, *PWMIGUIDREGINFO
 req.product : Windows 10 or later.
 ---
 
@@ -49,23 +53,27 @@ typedef struct _WMIGUIDREGINFO {
 
 ## Members
 
-        
-            `Flags`
 
-            Flag bits that indicate characteristics of the block. These flag bits are defined in the Wmistr.h header file. WMI ORs the <b>Flags</b> parameter value with the flag bits set by the driver in the <i>RegFlags</i> parameter of its <a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryReginfo</a> routine, which apply to all of the data blocks and event blocks registered by the driver. <b>Flags</b> therefore supplements the driver's default settings for a given block.
+`Flags`
+
+Flag bits that indicate characteristics of the block. These flag bits are defined in the Wmistr.h header file. WMI ORs the <b>Flags</b> parameter value with the flag bits set by the driver in the <i>RegFlags</i> parameter of its <a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryReginfo</a> routine, which apply to all of the data blocks and event blocks registered by the driver. <b>Flags</b> therefore supplements the driver's default settings for a given block.
 
 A driver might set the following flag bit in <b>Flags</b>:
-        
-            `Guid`
 
-            Pointer to the GUID that identifies the block. The memory that contains the GUID can be paged unless it is also used to call <a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>.
-        
-            `InstanceCount`
 
-            Specifies the number of instances defined for the block.
 
-    ## Remarks
-        A driver that handles WMI IRPs by calling WMI library support routines builds an array of <b>WMIGUIDREGINFO</b> structures, one for each data block and event block to be registered. The driver sets the <b>GuidList</b> member of its <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a> structure to point to the first <b>WMIGUIDREGINFO</b> in the series.
+A driver might also set one or more of the following flag bits:
+
+`Guid`
+
+Pointer to the GUID that identifies the block. The memory that contains the GUID can be paged unless it is also used to call <a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>.
+
+`InstanceCount`
+
+Specifies the number of instances defined for the block.
+
+## Remarks
+A driver that handles WMI IRPs by calling WMI library support routines builds an array of <b>WMIGUIDREGINFO</b> structures, one for each data block and event block to be registered. The driver sets the <b>GuidList</b> member of its <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a> structure to point to the first <b>WMIGUIDREGINFO</b> in the series.
 
 Memory for this structure can be allocated from paged pool.
 
@@ -77,31 +85,22 @@ Memory for this structure can be allocated from paged pool.
 | **Minimum UMDF version** |  |
 | **Header** | wmilib.h (include Wmilib.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryReginfo</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550848">IRP_MN_DISABLE_COLLECTION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550857">IRP_MN_ENABLE_COLLECTION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
-</dt>
-<dt>
-<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550857">IRP_MN_ENABLE_COLLECTION</a>
+
 <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a>
+
+<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550848">IRP_MN_DISABLE_COLLECTION</a>
+
  
 
  

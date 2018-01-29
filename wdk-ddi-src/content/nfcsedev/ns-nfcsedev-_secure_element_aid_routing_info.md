@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 3F9831D1-68A9-4FDB-93C6-6983E6BFE945
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_AID_ROUTING_INFO, *PSECURE_ELEMENT_AID_ROUTING_INFO, SECURE_ELEMENT_AID_ROUTING_INFO
+ms.keywords : _SECURE_ELEMENT_AID_ROUTING_INFO, nfcsedev/_SECURE_ELEMENT_AID_ROUTING_INFO, nfcsedev/P_SECURE_ELEMENT_AID_ROUTING_INFO, SECURE_ELEMENT_AID_ROUTING_INFO structure [Near-Field Proximity Drivers], nfpdrivers._secure_element_aid_routing_info, SECURE_ELEMENT_AID_ROUTING_INFO, *PSECURE_ELEMENT_AID_ROUTING_INFO, P_SECURE_ELEMENT_AID_ROUTING_INFO structure pointer [Near-Field Proximity Drivers], P_SECURE_ELEMENT_AID_ROUTING_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SECURE_ELEMENT_AID_ROUTING_INFO
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSECURE_ELEMENT_AID_ROUTING_INFO, SECURE_ELEMENT_AID_ROUTING_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SECURE_ELEMENT_AID_ROUTING_INFO, *PSECURE_ELEMENT_AID_ROUTING_INFO
 ---
 
 # _SECURE_ELEMENT_AID_ROUTING_INFO structure
@@ -48,14 +52,18 @@ typedef struct _SECURE_ELEMENT_AID_ROUTING_INFO {
 
 ## Members
 
-        
-            `cbAid`
 
-            Length of applet ID buffer.
-        
-            `guidSecureElementId`
+`cbAid`
 
-            Secure element unique identifier returned by enumeration DDI.
+Length of applet ID buffer.
+
+`guidSecureElementId`
+
+Secure element unique identifier returned by enumeration DDI.
+
+`pbAid`
+
+
 
 
 ## Requirements

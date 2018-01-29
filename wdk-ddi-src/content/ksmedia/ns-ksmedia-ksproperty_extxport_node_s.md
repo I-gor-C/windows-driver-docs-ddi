@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e0321fa8-610b-4920-8be8-dd91a3452beb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_EXTXPORT_NODE_S, KSPROPERTY_EXTXPORT_NODE_S, *PKSPROPERTY_EXTXPORT_NODE_S
+ms.keywords : PKSPROPERTY_EXTXPORT_NODE_S structure pointer [Streaming Media Devices], PKSPROPERTY_EXTXPORT_NODE_S, *PKSPROPERTY_EXTXPORT_NODE_S, ksmedia/PKSPROPERTY_EXTXPORT_NODE_S, stream.ksproperty_extxport_node_s, KSPROPERTY_EXTXPORT_NODE_S structure [Streaming Media Devices], KSPROPERTY_EXTXPORT_NODE_S, vidcapstruct_06823ca7-5d41-494c-879e-0835ab0b447f.xml, ksmedia/KSPROPERTY_EXTXPORT_NODE_S
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_EXTXPORT_NODE_S
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSPROPERTY_EXTXPORT_NODE_S, *PKSPROPERTY_EXTXPORT_NODE_S
 ---
 
@@ -65,17 +69,17 @@ typedef struct {
 
 ## Members
 
-        
-            `NodeProperty`
 
-            Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
-        
-            `u`
+`NodeProperty`
 
-            
+Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
 
-    ## Remarks
-        Any ED_TRANSCAP_Xxx or ED_TRANSBASIC_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
+`u`
+
+
+
+## Remarks
+Any ED_TRANSCAP_Xxx or ED_TRANSBASIC_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,22 +89,16 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-medium_info.md">MEDIUM_INFO</a>
-</dt>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-transport_state.md">TRANSPORT_STATE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565168">KSPROPERTY_EXTXPORT_STATE</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="..\ksmedia\ns-ksmedia-transport_state.md">TRANSPORT_STATE</a>
+
  
 
  

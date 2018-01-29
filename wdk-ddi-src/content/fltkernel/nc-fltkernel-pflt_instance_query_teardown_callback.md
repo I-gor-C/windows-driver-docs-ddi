@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5aa41472-cb1d-49ba-a546-ec42bb859552
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords : ifsk.pflt_instance_query_teardown_callback, InstanceQueryTeardownCallback routine [Installable File System Drivers], InstanceQueryTeardownCallback, PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK, PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK, fltkernel/InstanceQueryTeardownCallback, FltCallbacks_2ef837ae-a56a-4e66-a8d3-1f049f7bad45.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InstanceQueryTeardownCallback
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -64,9 +68,23 @@ Bitmask of flags that describe why the given instance query teardown callback ro
 ## Return Value
 
 This callback routine returns <b>STATUS_SUCCESS</b> or an <b>NTSTATUS</b> value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DO_NOT_DETACH</b></dt>
-</dl>Returning this status value prevents the minifilter driver instance from being detached. This is an error code.
+</dl>
+</td>
+<td width="60%">
+Returning this status value prevents the minifilter driver instance from being detached. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,29 +114,20 @@ If a minifilter driver does not define an <i>InstanceQueryTeardownCallback</i> r
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-</dt>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_instance_setup_callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_instance_teardown_callback.md">PFLT_INSTANCE_TEARDOWN_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_instance_setup_callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+
  
 
  

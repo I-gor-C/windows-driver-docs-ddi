@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmalanguage.htm
 old-project : netvista
 ms.assetid : b774fed4-533e-47ec-9e0a-da0e8fe2cfb0
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMALANGUAGE, RILMSGCDMALANGUAGE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_MSGCDMALANG_ENGLISH, ntddrilapitypes/RIL_MSGCDMALANG_JAPANESE, ntddrilapitypes/RIL_MSGCDMALANG_HEBREW, RIL_MSGCDMALANG_FRENCH, RIL_MSGCDMALANG_MAX, ntddrilapitypes/RIL_MSGCDMALANG_CHINESE, ntddrilapitypes/RILMSGCDMALANGUAGE, RIL_MSGCDMALANG_SPANISH, RIL_MSGCDMALANG_ENGLISH, ntddrilapitypes/RIL_MSGCDMALANG_FRENCH, netvista.rilmsgcdmalanguage, RIL_MSGCDMALANG_KOREAN, RIL_MSGCDMALANG_JAPANESE, RIL_MSGCDMALANG_CHINESE, ntddrilapitypes/RIL_MSGCDMALANG_KOREAN, ntddrilapitypes/RIL_MSGCDMALANG_SPANISH, RILMSGCDMALANGUAGE, RILMSGCDMALANGUAGE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_MSGCDMALANG_MAX, RIL_MSGCDMALANG_HEBREW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMALANGUAGE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCDMALANGUAGE
 ---
 
@@ -92,6 +96,11 @@ typedef enum _RILMSGCDMALANGUAGE {
 
 <tr>
 <td>RIL_MSGCDMALANG_SPANISH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGCDMALANG_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

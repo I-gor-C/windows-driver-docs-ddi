@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 6a2ee9be-03bc-436d-91c7-f00222911b19
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_CAPABILITIES_HEADER, *PPCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER
+ms.keywords : PCI_CAPABILITIES_HEADER structure [Buses], PPCI_CAPABILITIES_HEADER, PPCI_CAPABILITIES_HEADER structure pointer [Buses], wdm/PCI_CAPABILITIES_HEADER, wdm/PPCI_CAPABILITIES_HEADER, *PPCI_CAPABILITIES_HEADER, pci_struct_4e7e5552-8a1b-4081-9197-df863319b01d.xml, _PCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER, PCI.pci_capabilities_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_CAPABILITIES_HEADER
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PPCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PCI_CAPABILITIES_HEADER, *PPCI_CAPABILITIES_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -48,11 +52,10 @@ typedef struct _PCI_CAPABILITIES_HEADER {
 
 ## Members
 
-        
-            `CapabilityID`
 
-            Contains an 8-bit integer that indicates the capability ID. The capability ID identifies the type of capability structure that follows this header. The <b>CapabilityID</b> member must have one of the following values:
+`CapabilityID`
 
+Contains an 8-bit integer that indicates the capability ID. The capability ID identifies the type of capability structure that follows this header. The <b>CapabilityID</b> member must have one of the following values:
 <table>
 <tr>
 <th>Capability ID</th>
@@ -229,13 +232,13 @@ Indicates that the capability structure that follows the header defines an optio
 </td>
 </tr>
 </table>
-        
-            `Next`
 
-            Contains an offset into the PCI configuration space that indicates the location of the next item in the capability list. If there are no additional items in the list, this member will contain zero.
+`Next`
 
-    ## Remarks
-        All PCI Capability structures have the header described by PCI_CAPABILITIES_HEADER.
+Contains an offset into the PCI configuration space that indicates the location of the next item in the capability list. If there are no additional items in the list, this member will contain zero.
+
+## Remarks
+All PCI Capability structures have the header described by PCI_CAPABILITIES_HEADER.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -245,19 +248,14 @@ Indicates that the capability structure that follows the header defines an optio
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537581">PCI_PMC</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537583">PCI_PMCSR</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537581">PCI_PMC</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537587">PCI_PMCSR_BSE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7762bf83-82cc-4eef-9699-d093a8c2b986
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NETWORK_OPEN_LOCATION_QUALIFIER, NETWORK_OPEN_LOCATION_QUALIFIER
+ms.keywords : NetworkOpenLocationLoopback, NetworkOpenLocationRemote, NetworkOpenLocationAny, NETWORK_OPEN_LOCATION_QUALIFIER, ntifs/NetworkOpenLocationLoopback, ifsk.network_open_location_qualifier, ntifs/NETWORK_OPEN_LOCATION_QUALIFIER, ntifs/NetworkOpenLocationRemote, NETWORK_OPEN_LOCATION_QUALIFIER enumeration [Installable File System Drivers], ECP_Structures_0e589e5b-5266-429b-acab-236c00a75c1c.xml, ntifs/NetworkOpenLocationAny
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This enumeration type is available starting with Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NETWORK_OPEN_LOCATION_QUALIFIER
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NETWORK_OPEN_LOCATION_QUALIFIER
 ---
 

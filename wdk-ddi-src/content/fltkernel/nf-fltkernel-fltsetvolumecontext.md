@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e1e8605c-b3d1-40db-bb33-fc1f7ed51617
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSetVolumeContext
+ms.keywords : FltApiRef_p_to_z_889de924-a441-479f-9818-da016dd3feb3.xml, ifsk.fltsetvolumecontext, FltSetVolumeContext, FltSetVolumeContext function [Installable File System Drivers], fltkernel/FltSetVolumeContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Up
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltSetVolumeContext
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -71,24 +75,68 @@ Pointer to a caller-allocated variable that receives the address of the existing
 ## Return Value
 
 <b>FltSetVolumeContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
-</dl>IF FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for <i>Operation</i>, this error code indicates that a context is already attached to the volume.  
+</dl>
+</td>
+<td width="60%">
+IF FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for <i>Operation</i>, this error code indicates that a context is already attached to the volume.  
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_LINKED</b></dt>
-</dl>The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of an <b>FltSet</b><i>Xxx</i><b>Context</b> routine.
+</dl>
+</td>
+<td width="60%">
+The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of an <b>FltSet</b><i>Xxx</i><b>Context</b> routine.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The specified <i>Volume</i> is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The specified <i>Volume</i> is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the following: 
+</dl>
+</td>
+<td width="60%">
+One of the following: 
 
+<ul>
+<li>
 The <i>NewContext</i> parameter does not point to a valid volume context. 
 
+</li>
+<li>
 An invalid value was specified for <i>Operation</i>. 
 
-STATUS_INVALID_PARAMETER is an error code.
+</li>
+</ul>
+STATUS_INVALID_PARAMETER is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -120,23 +168,16 @@ For more information about context reference counting, see <a href="https://msdn
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
  
 
  

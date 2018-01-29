@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 29c84529-11f6-429b-81c6-96d6a1773b3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_AMPixAspectRatio, KS_AMPixAspectRatio
+ms.keywords : ksmedia/KS_PixAspectRatio_NTSC16x9, KS_PixAspectRatio_NTSC16x9, KS_PixAspectRatio_PAL4x3, KS_AMPixAspectRatio, ksmedia/KS_PixAspectRatio_PAL4x3, ksmedia/KS_AMPixAspectRatio, KS_PixAspectRatio_PAL16x9, ksmedia/KS_PixAspectRatio_NTSC4x3, KS_PixAspectRatio_NTSC4x3, ksmedia/KS_PixAspectRatio_PAL16x9, KS_AMPixAspectRatio enumeration [Streaming Media Devices], vidcapstruct_d891dbda-a467-4e13-bad6-fef794146717.xml, stream.ks_ampixaspectratio
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_AMPixAspectRatio
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_AMPixAspectRatio
 ---
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 38601573-750f-46fc-ae04-cef0d90d9ea9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExFlushLookasideListEx
+ms.keywords : ExFlushLookasideListEx, kernel.exflushlookasidelistex, k102_bb02a725-bc22-4c22-91f2-0232c1cb0f1f.xml, ExFlushLookasideListEx routine [Kernel-Mode Driver Architecture], wdm/ExFlushLookasideListEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExFlushLookasideListEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
-</dt>
-</dl>
+
  
 
  

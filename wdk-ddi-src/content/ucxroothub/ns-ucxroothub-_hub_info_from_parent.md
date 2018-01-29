@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6259CC70-A54B-4A44-B38B-D24C296C8EA0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
+ms.keywords : ucxroothub/_HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT structure [Buses], *PHUB_INFO_FROM_PARENT, P_HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, ucxroothub/P_HUB_INFO_FROM_PARENT, P_HUB_INFO_FROM_PARENT structure pointer [Buses], _HUB_INFO_FROM_PARENT, buses._hub_info_from_parent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HUB_INFO_FROM_PARENT
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
 req.product : Windows 10 or later.
 ---
@@ -61,68 +65,68 @@ typedef struct _HUB_INFO_FROM_PARENT {
 
 ## Members
 
-        
-            `DepthOfSlowestLinkForU1`
 
-            The depth of the hub based on which the latency
+`DepthOfSlowestLinkForU1`
+
+The depth of the hub based on which the latency
         for the slowest link is calculated for a U1 transition.
-        
-            `DepthOfSlowestLinkForU2`
 
-            The depth of the hub based on which the latency
+`DepthOfSlowestLinkForU2`
+
+The depth of the hub based on which the latency
         for the slowest link is calculated for a U2 transition.
-        
-            `DeviceDescriptor`
 
-            A <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
-        
-            `ExitLatencyOfSlowestLinkForU1`
+`DeviceDescriptor`
 
-            The exit latency for the slowest link for U1 transition.
-        
-            `ExitLatencyOfSlowestLinkForU2`
+A <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
 
-            The exit latency for the slowest link for U2 transition.
-        
-            `HostInitiatedU1ExitLatency`
+`ExitLatencyOfSlowestLinkForU1`
 
-            Host-initiated exit latency to transition from the U1 state.
-        
-            `HostInitiatedU2ExitLatency`
+The exit latency for the slowest link for U1 transition.
 
-            Host-initiated exit latency to transition from the U2 state.
-        
-            `HubFlags`
+`ExitLatencyOfSlowestLinkForU2`
 
-            A bitwise-OR of <a href="..\ucxroothub\ns-ucxroothub-_parent_hub_flags.md">PARENT_HUB_FLAGS</a> flags.
-        
-            `IoTarget`
+The exit latency for the slowest link for U2 transition.
 
-            A pointer to the WDM device object of the parent that represents the I/O target.
-        
-            `SublinkSpeedAttr`
+`HostInitiatedU1ExitLatency`
 
-            A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h
-        
-            `SublinkSpeedAttrCount`
+Host-initiated exit latency to transition from the U1 state.
 
-            The count of sublink speed attributes.
-        
-            `TotalHubDepth`
+`HostInitiatedU2ExitLatency`
 
-            Total hub depth.
-        
-            `TotalTPPropogationDelay`
+Host-initiated exit latency to transition from the U2 state.
 
-            The total TP propagation delay.
-        
-            `U1ExitLatency`
+`HubFlags`
 
-            The time to transition from the U1 state.
-        
-            `U2ExitLatency`
+A bitwise-OR of <a href="..\ucxroothub\ns-ucxroothub-_parent_hub_flags.md">PARENT_HUB_FLAGS</a> flags.
 
-            The time to transition from the U2 state.
+`IoTarget`
+
+A pointer to the WDM device object of the parent that represents the I/O target.
+
+`SublinkSpeedAttr`
+
+A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h
+
+`SublinkSpeedAttrCount`
+
+The count of sublink speed attributes.
+
+`TotalHubDepth`
+
+Total hub depth.
+
+`TotalTPPropogationDelay`
+
+The total TP propagation delay.
+
+`U1ExitLatency`
+
+The time to transition from the U1 state.
+
+`U2ExitLatency`
+
+The time to transition from the U2 state.
 
 
 ## Requirements

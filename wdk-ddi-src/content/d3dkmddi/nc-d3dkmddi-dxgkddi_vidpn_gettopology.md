@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2bc43cd0-97a2-4120-8e6f-425664d3d28c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_vidpn_interface_pfngettopology, pfnGetTopology callback function [Display Devices], pfnGetTopology, DXGKDDI_VIDPN_GETTOPOLOGY, DXGKDDI_VIDPN_GETTOPOLOGY, d3dkmddi/pfnGetTopology, VidPnFunctions_2818281e-102f-4c76-a57d-3b133b0692e6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnGetTopology
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -69,12 +73,34 @@ NTSTATUS DxgkddiVidpnGettopology(
 ## Return Value
 
 The <b>pfnGetTopology</b> function returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN</b></dt>
-</dl>The handle supplied in <i>hVidPn</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hVidPn</i> was invalid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,14 +122,10 @@ The lifetime of the DXGK_VIDPNTOPOLOGY_INTERFACE structure returned in <i>ppVidP
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570560">VidPN Topology Interface</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpntopology_interface.md">DXGK_VIDPNTOPOLOGY_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

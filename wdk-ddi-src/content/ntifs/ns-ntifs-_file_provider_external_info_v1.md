@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 842D7F4A-3352-469A-B7C1-E075432107CA
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_PROVIDER_EXTERNAL_INFO_V1, *PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO
+ms.keywords : FILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1 structure [Installable File System Drivers], ntifs/FILE_PROVIDER_EXTERNAL_INFO_V1, *PFILE_PROVIDER_EXTERNAL_INFO_V1, ifsk.file_provider_external_info_v1, PFILE_PROVIDER_EXTERNAL_INFO_V1 structure pointer [Installable File System Drivers], FILE_PROVIDER_EXTERNAL_INFO, PFILE_PROVIDER_EXTERNAL_INFO_V1, _FILE_PROVIDER_EXTERNAL_INFO_V1, ntifs/PFILE_PROVIDER_EXTERNAL_INFO_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_PROVIDER_EXTERNAL_INFO_V1
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1"
 ---
 
@@ -48,25 +52,24 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 
 ## Members
 
-        
-            `Algorithm`
 
-            Specifies the compression algorithm that is used to compress this file. Currently defined algorithms are: 
+`Algorithm`
 
+Specifies the compression algorithm that is used to compress this file. Currently defined algorithms are: 
 <ul>
 <li>FILE_PROVIDER_COMPRESSION_XPRESS4K: Indicates that the data for the file should be compressed in 4kb chunks with the XPress algorithm. This algorithm is designed to be computationally lightweight, and provides for rapid access to data.</li>
 <li>FILE_PROVIDER_COMPRESSION_LZX: Indicates that the data for the file should be compressed in 32kb chunks with the LZX algorithm. This algorithm is designed to be highly compact, and provides for small footprint for infrequently accessed data.</li>
 <li>FILE_PROVIDER_COMPRESSION_XPRESS8K: Indicates that the data for the file should be compressed in 8kb chunks with the XPress algorithm. </li>
 <li>FILE_PROVIDER_COMPRESSION_XPRESS16K: Indicates that the data for the file should be compressed in 16kb chunks with the XPress algorithm.</li>
 </ul>
-        
-            `Flags`
 
-            Specifies flags for the operation. Reserved for future use, should be 0.
-        
-            `Version`
+`Flags`
 
-            The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.
+Specifies flags for the operation. Reserved for future use, should be 0.
+
+`Version`
+
+The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.
 
 
 ## Requirements
@@ -77,13 +80,10 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntifs\ns-ntifs-_file_provider_external_info_v0.md">FILE_PROVIDER_EXTERNAL_INFO_V0</a>
-</dt>
-</dl>
+
  
 
  

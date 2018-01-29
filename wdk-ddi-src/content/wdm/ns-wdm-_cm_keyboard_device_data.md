@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 928cc1b6-4569-4ca1-9410-d864b5556b86
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CM_KEYBOARD_DEVICE_DATA, *PCM_KEYBOARD_DEVICE_DATA, CM_KEYBOARD_DEVICE_DATA
+ms.keywords : CM_KEYBOARD_DEVICE_DATA structure [Kernel-Mode Driver Architecture], kstruct_a_db7af30d-3698-4c1a-b1ee-9b7e95e7b5fd.xml, wdm/PCM_KEYBOARD_DEVICE_DATA, kernel.cm_keyboard_device_data, PCM_KEYBOARD_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture], PCM_KEYBOARD_DEVICE_DATA, _CM_KEYBOARD_DEVICE_DATA, *PCM_KEYBOARD_DEVICE_DATA, wdm/CM_KEYBOARD_DEVICE_DATA, CM_KEYBOARD_DEVICE_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CM_KEYBOARD_DEVICE_DATA
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCM_KEYBOARD_DEVICE_DATA, CM_KEYBOARD_DEVICE_DATA"
 req.product : Windows 10 or later.
 ---
@@ -51,11 +55,10 @@ typedef struct _CM_KEYBOARD_DEVICE_DATA {
 
 ## Members
 
-        
-            `KeyboardFlags`
 
-            Defined by x86 BIOS INT 16h, function 02 as:
+`KeyboardFlags`
 
+Defined by x86 BIOS INT 16h, function 02 as:
 <table>
 <tr>
 <th>Bit</th>
@@ -142,22 +145,22 @@ Right shift key is down.
 </td>
 </tr>
 </table>
-        
-            `Revision`
 
-            The revision of this structure.
-        
-            `Subtype`
+`Revision`
 
-            The subtype of the keyboard.
-        
-            `Type`
+The revision of this structure.
 
-            The type of the keyboard.
-        
-            `Version`
+`Subtype`
 
-            The version number of this structure.
+The subtype of the keyboard.
+
+`Type`
+
+The type of the keyboard.
+
+`Version`
+
+The version number of this structure.
 
 
 ## Requirements
@@ -168,19 +171,14 @@ Right shift key is down.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
+
 <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

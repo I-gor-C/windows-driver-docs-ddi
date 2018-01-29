@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6E4ADD86-EFC4-4369-83A1-1D2824235310
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH
+ms.keywords : DeviceThermalState, *PKSDEVICE_THERMAL_DISPATCH, Percentage, KsDevice, ks/KSDEVICE_THERMAL_DISPATCH, stream.ksdevice_thermal_dispatch, KSDEVICE_THERMAL_DISPATCH structure [Streaming Media Devices], KSDEVICE_THERMAL_DISPATCH, ks/PKSDEVICE_THERMAL_DISPATCH, PKSDEVICE_THERMAL_DISPATCH structure pointer [Streaming Media Devices], PKSDEVICE_THERMAL_DISPATCH, _KSDEVICE_THERMAL_DISPATCH, Engaged
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDEVICE_THERMAL_DISPATCH
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH"
 ---
 
 # _KSDEVICE_THERMAL_DISPATCH structure
@@ -47,11 +51,10 @@ typedef struct _KSDEVICE_THERMAL_DISPATCH {
 
 ## Members
 
-        
-            `ActiveCooling`
 
-            The active thermal callback notification. The routine is defined as follows:
+`ActiveCooling`
 
+The active thermal callback notification. The routine is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -69,11 +72,10 @@ void
 </td>
 </tr>
 </table></span></div>
-        
-            `PassiveCooling`
 
-            The passive thermal callback notification.. The routine is defined as follows:
+`PassiveCooling`
 
+The passive thermal callback notification.. The routine is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

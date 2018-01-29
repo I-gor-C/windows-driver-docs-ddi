@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : dd678196-62f6-4c27-845f-a9b52c663e2a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
+ms.keywords : storage.phw_initialize, (*PHW_INITIALIZE) callback function [Storage Devices], (*PHW_INITIALIZE), srb/(*PHW_INITIALIZE), ide_minikr_95bb126d-6d4c-4091-b2fa-6b891d587186.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PHW_INITIALIZE)
-req.alt-loc : srb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ For more information about the miniport driver initialization routine that is us
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557302">HwScsiInitialize</a>
-</dt>
-<dt>
 <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557302">HwScsiInitialize</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : ca0eef79-d990-4a82-b2d6-a51e3790cfc2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_PROCINFO_VALIDBITS, *PWHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS
+ms.keywords : WHEA_XPF_PROCINFO_VALIDBITS union [WHEA Drivers and Applications], WHEA_XPF_PROCINFO_VALIDBITS, _WHEA_XPF_PROCINFO_VALIDBITS, whearef_6ebbdab8-0590-4479-a8ab-ea9bacf69399.xml, *PWHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS union pointer [WHEA Drivers and Applications], whea.whea_xpf_procinfo_validbits, ntddk/PWHEA_XPF_PROCINFO_VALIDBITS, ntddk/WHEA_XPF_PROCINFO_VALIDBITS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_PROCINFO_VALIDBITS
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS"
 ---
 
@@ -54,13 +58,17 @@ typedef union _WHEA_XPF_PROCINFO_VALIDBITS {
 
 ## Members
 
-        
-            `ValidBits`
 
-            A ULONGLONG representation of the contents of the WHEA_XPF_PROCINFO_VALIDBITS union.
+`DUMMYSTRUCTNAME`
 
-    ## Remarks
-        A WHEA_XPF_PROCINFO_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure.
+
+
+`ValidBits`
+
+A ULONGLONG representation of the contents of the WHEA_XPF_PROCINFO_VALIDBITS union.
+
+## Remarks
+A WHEA_XPF_PROCINFO_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -70,13 +78,10 @@ typedef union _WHEA_XPF_PROCINFO_VALIDBITS {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
-</dt>
-</dl>
+
  
 
  

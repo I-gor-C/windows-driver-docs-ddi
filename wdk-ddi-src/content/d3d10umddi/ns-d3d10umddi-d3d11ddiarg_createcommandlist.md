@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7d720346-4a68-40bd-816d-c406995b3232
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_CREATECOMMANDLIST, D3D11DDIARG_CREATECOMMANDLIST
+ms.keywords : D3D11DDIARG_CREATECOMMANDLIST, d3d10umddi/D3D11DDIARG_CREATECOMMANDLIST, D3D11DDIARG_CREATECOMMANDLIST structure [Display Devices], display.d3d11ddiarg_createcommandlist, UMDisplayDriver_Dx11param_Structs_fc1a42ad-2d14-44de-abf1-480810b8d080.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDIARG_CREATECOMMANDLIST is supported beginning
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDIARG_CREATECOMMANDLIST
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDIARG_CREATECOMMANDLIST
 ---
 
@@ -46,10 +50,10 @@ typedef struct D3D11DDIARG_CREATECOMMANDLIST {
 
 ## Members
 
-        
-            `hDeferredContext`
 
-            [in] A handle to the deferred context.
+`hDeferredContext`
+
+[in] A handle to the deferred context.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct D3D11DDIARG_CREATECOMMANDLIST {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdeferredcontext.md">CreateDeferredContext</a>
-</dt>
-</dl>
+
  
 
  

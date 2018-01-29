@@ -7,8 +7,8 @@ old-location : netvista\rilsetsystemselectionprefsflag.htm
 old-project : netvista
 ms.assetid : 081f4a23-43d8-4ad4-806c-1b6322e057d5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSETSYSTEMSELECTIONPREFSFLAG, RILSETSYSTEMSELECTIONPREFSFLAG
+ms.date : 1/18/2018
+ms.keywords : netvista.rilsetsystemselectionprefsflag, ntddrilapitypes/RILSETSYSTEMSELECTIONPREFSFLAG, ntddrilapitypes/RIL_SSSPFLAG_APPLYIMMEDIATELY, RIL_SSSPFLAG_ALL, ntddrilapitypes/RIL_SSSPFLAG_ALL, RIL_SSSPFLAG_APPLYIMMEDIATELY, RILSETSYSTEMSELECTIONPREFSFLAG, ntddrilapitypes/RIL_SSSPFLAG_ENFORCESCAN, RIL_SSSPFLAG_ENFORCESCAN, RILSETSYSTEMSELECTIONPREFSFLAG enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSETSYSTEMSELECTIONPREFSFLAG
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSETSYSTEMSELECTIONPREFSFLAG
 ---
 
@@ -62,6 +66,11 @@ typedef enum _RILSETSYSTEMSELECTIONPREFSFLAG {
 
 <tr>
 <td>RIL_SSSPFLAG_ENFORCESCAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_SSSPFLAG_NONE</td>
 <td></td>
 </tr>
 </table>

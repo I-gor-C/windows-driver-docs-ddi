@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b65608f4-de9a-4bed-a966-586e50c50e45
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IDrmPort2, IDrmPort2::AddContentHandlers, AddContentHandlers
+ms.keywords : AddContentHandlers method [Audio Devices], IDrmPort2 interface, AddContentHandlers, IDrmPort2::AddContentHandlers, portcls/IDrmPort2::AddContentHandlers, AddContentHandlers method [Audio Devices], IDrmPort2 interface [Audio Devices], AddContentHandlers method, audio.idrmport2_addcontenthandlers, IDrmPort2, audmp-routines_f2bbb2e7-eed1-4ffd-93d9-050dcb6b0b60.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDrmPort2.AddContentHandlers
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -63,10 +67,6 @@ NTSTATUS AddContentHandlers();
 
 See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
 
-See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
-
-See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
-
 ## Remarks
 
 See comments in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
@@ -85,14 +85,10 @@ See comments in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContent
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-idrmport2.md">IDrmPort2</a>
-</dt>
-<dt>
 <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-idrmport2.md">IDrmPort2</a>
+
  
 
  

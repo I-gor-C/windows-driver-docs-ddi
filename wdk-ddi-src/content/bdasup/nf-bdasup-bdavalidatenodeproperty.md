@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e3a6d757-68c5-49d1-92cc-0ebf6ba6bbec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaValidateNodeProperty
+ms.keywords : stream.bdavalidatenodeproperty, bdaref_a6f1ec2f-9e23-4cbb-a3dc-fab0d2c5ca1c.xml, bdasup/BdaValidateNodeProperty, BdaValidateNodeProperty function [Streaming Media Devices], BdaValidateNodeProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaValidateNodeProperty
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -51,11 +55,11 @@ NTSTATUS BdaValidateNodeProperty(
 
 `pIrp`
 
-
+TBD
 
 `pProperty`
 
-
+TBD
 
 
 ## Return Value
@@ -80,23 +84,16 @@ A pin method in a BDA minidriver calls the <b>BdaValidateNodeProperty</b> functi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564286">KSPROPERTY_BDA_AUTODEMODULATE_START</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564355">KSPROPERTY_BDA_RF_TUNER_FREQUENCY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566533">KSPROPSETID_BdaAutodemodulate</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564355">KSPROPERTY_BDA_RF_TUNER_FREQUENCY</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566542">KSPROPSETID_BdaFrequencyFilter</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564286">KSPROPERTY_BDA_AUTODEMODULATE_START</a>
+
  
 
  

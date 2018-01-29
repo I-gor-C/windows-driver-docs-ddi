@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : eefb8f2c-e460-4f9c-851d-9a97dbcd728f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DxApiGetVersion
+ms.keywords : display.pfnpresentcbdxgi, pfnPresentCbDXGI callback function [Display Devices], pfnPresentCbDXGI, PFNDDXGIDDI_PRESENTCB, PFNDDXGIDDI_PRESENTCB, dxgiddi/pfnPresentCbDXGI, d3d10state_functions_22004360-a0a0-4d54-ac0e-d7fadec2bf67.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnPresentCbDXGI
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DRMRIGHTS, *PDRMRIGHTS
 ---
 
@@ -64,15 +68,45 @@ A handle to a display device (graphics context).
 ## Return Value
 
 <b>pfnPresentCbDXGI</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>Content was successfully copied.
+</dl>
+</td>
+<td width="60%">
+Content was successfully copied.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><b>pfnPresentCbDXGI</b> could not complete because of insufficient memory.
+</dl>
+</td>
+<td width="60%">
+<b>pfnPresentCbDXGI</b> could not complete because of insufficient memory.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,26 +128,18 @@ The Direct3D runtime restricts the set of formats that can be presented through 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_callbacks.md">DXGI_DDI_BASE_CALLBACKS</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a>
-</dt>
-</dl>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_callbacks.md">DXGI_DDI_BASE_CALLBACKS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a>
+
  
 
  

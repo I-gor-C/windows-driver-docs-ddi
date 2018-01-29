@@ -7,8 +7,8 @@ old-location : image\iwiatransfercallback_interface.htm
 old-project : image
 ms.assetid : c85e5faa-b14b-4775-a5cc-cec5e20dc974
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaTransferCallback, IWiaTransferCallback::TransferCallback, TransferCallback
+ms.date : 1/18/2018
+ms.keywords : image.iwiatransfercallback_interface, IWiaTransferCallback interface [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], described, IWiaTransferCallback, wia_lh/IWiaTransferCallback, IWiaTransfercallback_ae8874d9-135f-4627-bbec-51cebd6c3d69.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaTransferCallback
-req.alt-loc : wia_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wia_lh.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product : Windows 10 or later.
 ---

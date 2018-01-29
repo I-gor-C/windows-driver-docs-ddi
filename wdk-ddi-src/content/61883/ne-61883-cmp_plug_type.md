@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 97A19F3D-5669-4E4B-A377-7BE5A84DF63A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CMP_PLUG_TYPE, CMP_PLUG_TYPE
+ms.keywords : IEEE.cmp_plug_type, 61883/CMP_PlugOut, CMP_PlugOut, CMP_PlugIn, 61883/CMP_PlugIn, 61883/CMP_PLUG_TYPE, CMP_PLUG_TYPE, CMP_PLUG_TYPE enumeration [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_PLUG_TYPE
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CMP_PLUG_TYPE
 ---
 
@@ -71,11 +75,8 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

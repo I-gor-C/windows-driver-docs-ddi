@@ -7,8 +7,8 @@ old-location : netvista\rilimssipcause.htm
 old-project : netvista
 ms.assetid : 79a57fc5-1526-4f18-b51c-7d045092fcb4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE, RILIMSSIPCAUSE
+ms.date : 1/18/2018
+ms.keywords : RILIMSSIPCAUSE, ntddrilapitypes/RILIMSSIPCAUSE, RILIMSSIPCAUSE structure [Network Drivers Starting with Windows Vista], netvista.rilimssipcause, *LPRILIMSSIPCAUSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILIMSSIPCAUSE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILIMSSIPCAUSE, RILIMSSIPCAUSE"
 ---
 
@@ -47,14 +51,14 @@ typedef struct _RILIMSSIPCAUSE {
 
 ## Members
 
-        
-            `dwCauseValue`
 
-            
-        
-            `dwReasonValue`
+`dwCauseValue`
 
-            
+
+
+`dwReasonValue`
+
+
 
 
 ## Requirements

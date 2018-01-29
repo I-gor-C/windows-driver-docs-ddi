@@ -7,8 +7,8 @@ old-location : netvista\riluicclockcredential_2.htm
 old-project : netvista
 ms.assetid : bb7b3075-c424-4a8b-bff9-64cdb85218a2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCLOCKCREDENTIAL, *LPRILUICCLOCKCREDENTIAL, RILUICCLOCKCREDENTIAL
+ms.date : 1/18/2018
+ms.keywords : RILUICCLOCKCREDENTIAL structure [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCLOCKCREDENTIAL, RILUICCLOCKCREDENTIAL, netvista.riluicclockcredential_2, *LPRILUICCLOCKCREDENTIAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCLOCKCREDENTIAL
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILUICCLOCKCREDENTIAL, RILUICCLOCKCREDENTIAL"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILUICCLOCKCREDENTIAL, *LPRILUICCLOCKCREDENTIAL
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _RILUICCLOCKCREDENTIAL {
 
 ## Members
 
-        
-            `rilUiccLock`
 
-            
-        
-            `szPassword`
+`rilUiccLock`
 
-            
+
+
+`szPassword`
+
+
 
 
 ## Requirements

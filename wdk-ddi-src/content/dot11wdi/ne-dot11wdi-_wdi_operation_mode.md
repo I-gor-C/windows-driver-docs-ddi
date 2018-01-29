@@ -7,8 +7,8 @@ old-location : netvista\wdi_operation_mode.htm
 old-project : netvista
 ms.assetid : 9838eeb9-6bd6-46a5-9361-6af3aa2d3014
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_OPERATION_MODE, WDI_OPERATION_MODE
+ms.date : 1/18/2018
+ms.keywords : dot11wdi/WDI_OPERATION_MODE_P2P_GO, WDI_OPERATION_MODE enumeration [Network Drivers Starting with Windows Vista], dot11wdi/WDI_OPERATION_MODE_P2P_DEVICE, WDI_OPERATION_MODE_STA, dot11wdi/WDI_OPERATION_MODE_STA, netvista.wdi_operation_mode, WDI_OPERATION_MODE_P2P_CLIENT, netvista.wifi_operation_mode, _WDI_OPERATION_MODE, WDI_OPERATION_MODE, dot11wdi/WDI_OPERATION_MODE_P2P_CLIENT, WDI_OPERATION_MODE_P2P_GO, dot11wdi/WDI_OPERATION_MODE, WDI_OPERATION_MODE_P2P_DEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_OPERATION_MODE
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_OPERATION_MODE
 ---
 

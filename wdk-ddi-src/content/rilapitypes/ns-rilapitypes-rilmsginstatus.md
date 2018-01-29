@@ -7,8 +7,8 @@ old-location : netvista\rilmsginstatus_2.htm
 old-project : netvista
 ms.assetid : 4dcc198f-5e42-4c60-bfec-19702c9ab674
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGINSTATUS, *LPRILMSGINSTATUS, RILMSGINSTATUS
+ms.date : 1/18/2018
+ms.keywords : RILMSGINSTATUS structure [Network Drivers Starting with Windows Vista], netvista.rilmsginstatus_2, rilapitypes/RILMSGINSTATUS, *LPRILMSGINSTATUS, RILMSGINSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGINSTATUS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILMSGINSTATUS, RILMSGINSTATUS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILMSGINSTATUS, *LPRILMSGINSTATUS
 req.product : Windows 10 or later.
 ---
 
@@ -58,54 +62,54 @@ typedef struct _RILMSGINSTATUS {
 
 ## Members
 
-        
-            `cbHdrLength`
 
-            
-        
-            `cchMsgLength`
+`cbHdrLength`
 
-            
-        
-            `dwMsgID`
 
-            
-        
-            `dwProtocolID`
 
-            
-        
-            `dwReserved`
+`cchMsgLength`
 
-            
-        
-            `dwTgtDlvStatus`
 
-            
-        
-            `raTgtRecipAddress`
 
-            
-        
-            `rgbHdr`
+`dwMsgID`
 
-            
-        
-            `rgbMsg`
 
-            
-        
-            `rmdDataCoding`
 
-            
-        
-            `stTgtDischargeTime`
+`dwProtocolID`
 
-            
-        
-            `stTgtSCReceiveTime`
 
-            
+
+`dwReserved`
+
+
+
+`dwTgtDlvStatus`
+
+
+
+`raTgtRecipAddress`
+
+
+
+`rgbHdr`
+
+
+
+`rgbMsg`
+
+
+
+`rmdDataCoding`
+
+
+
+`stTgtDischargeTime`
+
+
+
+`stTgtSCReceiveTime`
+
+
 
 
 ## Requirements

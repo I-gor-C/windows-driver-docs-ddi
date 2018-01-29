@@ -7,8 +7,8 @@ old-location : netvista\rilpositioninfogsm.htm
 old-project : netvista
 ms.assetid : 86b0510b-54ed-463e-b5d4-a34b0a98c00e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPOSITIONINFOGSM, *LPRILPOSITIONINFOGSM, RILPOSITIONINFOGSM
+ms.date : 1/18/2018
+ms.keywords : "*LPRILPOSITIONINFOGSM, netvista.rilpositioninfogsm, rilapitypes/RILPOSITIONINFOGSM, RILPOSITIONINFOGSM, RILPOSITIONINFOGSM structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPOSITIONINFOGSM
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILPOSITIONINFOGSM, RILPOSITIONINFOGSM"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILPOSITIONINFOGSM, *LPRILPOSITIONINFOGSM
 req.product : Windows 10 or later.
 ---
 
 # RILPOSITIONINFOGSM structure
-
+<div class="alert"><b>Warning</b>  The Cellular COM API is deprecated in Windows 10. This content is provided to support maintenance of OEM and mobile operator created Windows Phone 8.1 applications.</div><div> </div>This structure represents RILPOSITIONINFOGSM.
 
 ## Syntax
 ````
@@ -55,48 +59,48 @@ struct RILPOSITIONINFOGSM {
 
 ## Members
 
-        
-            `dwARFCN`
 
-            Absolute radio frequency channel number of serving cell (0...1023)
-        
-            `dwBaseStationID`
+`dwARFCN`
 
-            Radio base station ID of serving cell (0..63)
-        
-            `dwCellID`
+Absolute radio frequency channel number of serving cell (0...1023)
 
-            Cell ID (0...65535)
-        
-            `dwLocationAreaCode`
+`dwBaseStationID`
 
-            Location Area Code (0…65535)
-        
-            `dwMobileCountryCode`
+Radio base station ID of serving cell (0..63)
 
-            Mobile country code (0...999)
-        
-            `dwMobileNetworkCode`
+`dwCellID`
 
-            Mobile Network Code (0...999)
-        
-            `dwParams`
+Cell ID (0...65535)
 
-            A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilpositioninfogsmparammask.md">RILPOSITIONINFOGSMPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
-        
-            `dwRxLevel`
+`dwLocationAreaCode`
 
-            Received signal strength of serving cell (0...63) where:
+Location Area Code (0…65535)
+
+`dwMobileCountryCode`
+
+Mobile country code (0...999)
+
+`dwMobileNetworkCode`
+
+Mobile Network Code (0...999)
+
+`dwParams`
+
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilpositioninfogsmparammask.md">RILPOSITIONINFOGSMPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
+
+`dwRxLevel`
+
+Received signal strength of serving cell (0...63) where:
 
 (x=0, RSS &lt; -110dBm
 
 x=63, RSS &gt; -49dBm
 
 0 &lt;x &lt;63, -110+x &lt; RSS &lt; -109+x)
-        
-            `dwTimingAdvance`
 
-            Timing Advance (0...255) in bit periods, where a bit period is 48/13µs
+`dwTimingAdvance`
+
+Timing Advance (0...255) in bit periods, where a bit period is 48/13µs
 
 
 ## Requirements
@@ -107,15 +111,12 @@ x=63, RSS &gt; -49dBm
 | **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFOGSM structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFOGSM structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

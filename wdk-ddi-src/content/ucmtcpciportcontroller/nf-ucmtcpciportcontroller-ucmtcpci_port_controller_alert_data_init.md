@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7c3276cc-9194-4c18-b1d8-2795efbeb357
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT
+ms.keywords : buses.ucmtcpci_port_controller_alert_data_init, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT, UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT method [Buses], UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT
-req.alt-loc : ucmtcpciportcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
 req.product : Windows 10 or later.
 ---

@@ -7,8 +7,8 @@ old-location : pos\unifiedposerrorseverity.htm
 old-project : pos
 ms.assetid : a8c592fa-2736-49e4-8d4d-8729baef9c49
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DriverUnifiedPosErrorSeverity, DriverUnifiedPosErrorSeverity
+ms.date : 1/18/2018
+ms.keywords : Unrecoverable, DriverUnifiedPosErrorSeverity, pointofservicecommontypes/ AssistanceRequired, Recoverable, pointofservicecommontypes/DriverUnifiedPosErrorSeverity, pos.unifiedposerrorseverity, pointofservicecommontypes/Warning, pointofservicecommontypes/UnknownErrorSeverity, UnknownErrorSeverity, pointofservicecommontypes/Recoverable, pointofservicecommontypes/Fatal, AssistanceRequired, pointofservicecommontypes/Unrecoverable, Fatal, DriverUnifiedPosErrorSeverity enumeration, Warning
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DriverUnifiedPosErrorSeverity
-req.alt-loc : pointofservicecommontypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DriverUnifiedPosErrorSeverity
 ---
 
@@ -52,6 +56,11 @@ typedef enum _DriverUnifiedPosErrorSeverity {
 ## Constants
 
 <table>
+
+<tr>
+<td>AssistanceRequired</td>
+<td>Intervention is needed to respond to the error.</td>
+</tr>
 
 <tr>
 <td>Fatal</td>

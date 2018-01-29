@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2AA3098D-B3CA-4515-AC53-C78E2060D798
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
+ms.keywords : audio.ioctl_bthhfp_device_get_nrecdisable_status_update, IOCTL_BTHHFP_DEVICE_GET_NRECDISABLE_STATUS_UPDATE control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_NRECDISABLE_STATUS_UPDATE, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_NRECDISABLE_STATUS_UPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHHFP_DEVICE_GET_NRECDISABLE_STATUS_UPDATE
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
 ---
 
@@ -62,11 +66,10 @@ The size of a BOOL.
 <text></text>
 
 ### Status Block
-I/O Status block
 If a request is already pending, then the new request fails with an error code of STATUS_INVALID_DEVICE_REQUEST.
 
-    ## Remarks
-        When the NREC Disable status is TRUE, it shows that the remote Bluetooth device has disabled  any system-based NREC processing, implying that the remote device has enabled its own NREC signal processing. In this scenario, the audio driver should disable any of its own NREC processing, regardless of whether the processing is being done within the driver code itself, in its digital signal processing (DSP) module, or its audio processing object (APO). 
+## Remarks
+When the NREC Disable status is TRUE, it shows that the remote Bluetooth device has disabled  any system-based NREC processing, implying that the remote device has enabled its own NREC signal processing. In this scenario, the audio driver should disable any of its own NREC processing, regardless of whether the processing is being done within the driver code itself, in its digital signal processing (DSP) module, or its audio processing object (APO). 
 
 Additionally, in this scenario where NREC is enabled in the remote Bluetooth device, the driver’s APO should return "NREC" in its list of effects, to let applications know that NREC processing is enabled.
 
@@ -77,13 +80,10 @@ Additionally, in this scenario where NREC is enabled in the remote Bluetooth dev
 | **Header** | bthhfpddi.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
-</dt>
-</dl>
+
  
 
  

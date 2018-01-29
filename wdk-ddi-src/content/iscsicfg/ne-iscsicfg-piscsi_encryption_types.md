@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f1c7a13b-511a-4e9d-a0e6-9fb27126b1d2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PISCSI_ENCRYPTION_TYPES, ISCSI_ENCRYPTION_TYPES, *PISCSI_ENCRYPTION_TYPES"
+ms.keywords : storage.iscsi_encryption_types, structs-iSCSI_64fe17d0-9efb-447c-82f1-19f6d954eb1e.xml, iscsicfg/PISCSI_ENCRYPTION_TYPES, iscsicfg/ISCSI_ENCRYPT_NONE, ISCSI_ENCRYPTION_TYPES enumeration [Storage Devices], iscsicfg/ISCSI_ENCRYPT_AES_CTR, PISCSI_ENCRYPTION_TYPES, ISCSI_ENCRYPT_NONE, iscsicfg/ISCSI_ENCRYPTION_TYPES, iscsicfg/ISCSI_ENCRYPT_3DES_HMAC_SHA1, ISCSI_ENCRYPTION_TYPES, ISCSI_ENCRYPT_3DES_HMAC_SHA1, *PISCSI_ENCRYPTION_TYPES, ISCSI_ENCRYPT_AES_CTR, PISCSI_ENCRYPTION_TYPES enumeration pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_ENCRYPTION_TYPES
-req.alt-loc : iscsicfg.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ISCSI_ENCRYPTION_TYPES, *PISCSI_ENCRYPTION_TYPES
 ---
 
@@ -80,14 +84,10 @@ The ISCSI_ENCRYPTION_TYPES enumeration is used with the <a href="https://msdn.mi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\iscsicfg\ns-iscsicfg-_msiscsi_securitycapabilities.md">MSiSCSI_SecurityCapabilities</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
-</dt>
-</dl>
+
+<a href="..\iscsicfg\ns-iscsicfg-_msiscsi_securitycapabilities.md">MSiSCSI_SecurityCapabilities</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4A63AAEF-8DBD-4969-8D05-EA06A17D4B61
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.freeadapterobject, FreeAdapterObject, FreeAdapterObject callback function [Kernel-Mode Driver Architecture], FreeAdapterObject, PFREE_ADAPTER_OBJECT, PFREE_ADAPTER_OBJECT, wdm/FreeAdapterObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FreeAdapterObject
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -97,44 +101,30 @@ The <a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a> rout
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
+
+<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
+
+<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
+
 <a href="..\wdm\ne-wdm-_io_allocation_action.md">IO_ALLOCATION_ACTION</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+
+<a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
+
+<a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
+
+<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
+
  
 
  

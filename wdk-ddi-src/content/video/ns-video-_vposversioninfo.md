@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b6335df5-81d9-4a00-8e97-0ebebb987d32
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VPOSVERSIONINFO, VPOSVERSIONINFO, *PVPOSVERSIONINFO
+ms.keywords : Video_Structs_893105be-4f14-4903-aae1-85ffe8ef8a2b.xml, display.vposversioninfo, _VPOSVERSIONINFO, video/VPOSVERSIONINFO, *PVPOSVERSIONINFO, PVPOSVERSIONINFO structure pointer [Display Devices], VPOSVERSIONINFO structure [Display Devices], PVPOSVERSIONINFO, VPOSVERSIONINFO, video/PVPOSVERSIONINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VPOSVERSIONINFO
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : VPOSVERSIONINFO, *PVPOSVERSIONINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPOSVERSIONINFO, VPOSVERSIONINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -52,33 +56,33 @@ typedef struct _VPOSVERSIONINFO {
 
 ## Members
 
-        
-            `BuildNumber`
 
-            Specifies the build number of the operating system.
-        
-            `MajorVersion`
+`BuildNumber`
 
-            Specifies the major version number of the operating system. For example, for Windows 2000, the major version number is five. For Windows XP, the major version number is six.
-        
-            `MinorVersion`
+Specifies the build number of the operating system.
 
-            Specifies the minor version number of the operating system. For example, for Windows 2000, the minor version number is zero.
-        
-            `ServicePackMajor`
+`MajorVersion`
 
-            Specifies the major version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the major version number is three.
-        
-            `ServicePackMinor`
+Specifies the major version number of the operating system. For example, for Windows 2000, the major version number is five. For Windows XP, the major version number is six.
 
-            Specifies the minor version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the minor version number is zero.
-        
-            `Size`
+`MinorVersion`
 
-            Specifies the size, in bytes, of the VPOSVERSIONINFO structure.
+Specifies the minor version number of the operating system. For example, for Windows 2000, the minor version number is zero.
 
-    ## Remarks
-        This structure is available in Windows XP and later.
+`ServicePackMajor`
+
+Specifies the major version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the major version number is three.
+
+`ServicePackMinor`
+
+Specifies the minor version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the minor version number is zero.
+
+`Size`
+
+Specifies the size, in bytes, of the VPOSVERSIONINFO structure.
+
+## Remarks
+This structure is available in Windows XP and later.
 
 To obtain version information about the currently running operating system, a video miniport driver would call the <a href="..\video\nf-video-videoportgetversion.md">VideoPortGetVersion</a> function, which fills in this structure.
 
@@ -90,13 +94,10 @@ To obtain version information about the currently running operating system, a vi
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\nf-video-videoportgetversion.md">VideoPortGetVersion</a>
-</dt>
-</dl>
+
  
 
  

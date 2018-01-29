@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : C50F45EC-433C-421D-BD02-4C86CB44D5A4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ST_PARAMETER_DATA, ST_PARAMETER_DATA, *PST_PARAMETER_DATA
+ms.keywords : ST_PARAMETER_DATA, PST_PARAMETER_DATA structure pointer [Storage Devices], scsi/PST_PARAMETER_DATA, storage.st_parameter_data, scsi/ST_PARAMETER_DATA, PST_PARAMETER_DATA, *PST_PARAMETER_DATA, ST_PARAMETER_DATA structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1709 and later ver
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ST_PARAMETER_DATA
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ST_PARAMETER_DATA, *PST_PARAMETER_DATA
 ---
 
@@ -50,18 +54,18 @@ typedef struct _ST_PARAMETER_DATA {
 
 ## Members
 
-        
-            `Reserved1`
 
-            Reserved for future use.
-        
-            `Reserved2`
+`Reserved1`
 
-            Reserved for future use.
-        
-            `Timestamp`
+Reserved for future use.
 
-            Specifies the value to which a device clock shall be initialized. The timestamp
+`Reserved2`
+
+Reserved for future use.
+
+`Timestamp`
+
+Specifies the value to which a device clock shall be initialized. The timestamp
 should be the number of milliseconds that have elapsed since midnight, 1 January 1970 UT.
 
 
@@ -73,13 +77,10 @@ should be the number of milliseconds that have elapsed since midnight, 1 January
 | **Minimum UMDF version** |  |
 | **Header** | minitape.h (include Minitape.h, Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\scsi\ns-scsi-rt_parameter_data.md">RT_PARAMETER_DATA</a>
-</dt>
-</dl>
+<a href="..\storport\ns-storport-rt_parameter_data.md">RT_PARAMETER_DATA</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 42e5340e-0be4-49d1-a219-88b7425a41ef
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlNotifyFullChangeDirectory
+ms.keywords : FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], rxprocs/FsRtlNotifyFullChangeDirectory, FsRtlNotifyFullChangeDirectory, ifsk.fsrtlnotifyfullchangedirectory, fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlNotifyFullChangeDirectory
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -60,43 +64,43 @@ VOID FsRtlNotifyFullChangeDirectory(
 
 `A1`
 
-
+TBD
 
 `A2`
 
-
+TBD
 
 `A3`
 
-
+TBD
 
 `A4`
 
-
+TBD
 
 `A5`
 
-
+TBD
 
 `A6`
 
-
+TBD
 
 `A7`
 
-
+TBD
 
 `A8`
 
-
+TBD
 
 `A9`
 
-
+TBD
 
 `A10`
 
-
+TBD
 
 
 ## Return Value
@@ -110,10 +114,16 @@ None
 If <i>NotifyIrp</i> is <b>NULL</b>, <b>FsRtlNotifyFullChangeDirectory</b> checks whether the notify list contains a pending IRP that refers to this file object and, if so, completes it with STATUS_DELETE_PENDING.
 
 If <i>NotifyIrp</i> is not <b>NULL</b>, <b>FsRtlNotifyFullChangeDirectory</b> does the following:
-
+<ul>
+<li>
 Checks whether the file object has undergone cleanup. If so, <b>FsRtlNotifyFullChangeDirectory</b> completes the notify IRP with status STATUS_NOTIFY_CLEANUP.
 
-If the file object has not undergone cleanup, <b>FsRtlNotifyFullChangeDirectory</b> checks whether the notify list for this volume already contains a notify structure for this change. If so, <b>FsRtlNotifyFullChangeDirectory</b> completes any pending IRPs. If not, <b>FsRtlNotifyFullChangeDirectory</b> marks the notify IRP as pending, creates a notify structure, and inserts it into the list.
+</li>
+<li>
+If the file object has not undergone cleanup, <b>FsRtlNotifyFullChangeDirectory</b> checks whether the notify list for this volume already contains a notify structure for this change. If so, <b>FsRtlNotifyFullChangeDirectory</b> completes any pending IRPs. If not, <b>FsRtlNotifyFullChangeDirectory</b> marks the notify IRP as pending, creates a notify structure, and inserts it into the list. 
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -129,17 +139,12 @@ If the file object has not undergone cleanup, <b>FsRtlNotifyFullChangeDirectory<
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange~r8.md">FsRtlNotifyFullReportChange</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange~r8.md">FsRtlNotifyFullReportChange</a>
+
  
 
  

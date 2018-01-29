@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b9cc78f3-b8b5-4a54-87b2-321b75ed9a21
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PRESENTMULTIPLANEOVERLAYINFO, DXGK_PRESENTMULTIPLANEOVERLAYINFO
+ms.keywords : DXGK_PRESENTMULTIPLANEOVERLAYINFO structure [Display Devices], display.dxgk_presentmultiplaneoverlayinfo, _DXGK_PRESENTMULTIPLANEOVERLAYINFO, DXGK_PRESENTMULTIPLANEOVERLAYINFO, d3dkmddi/DXGK_PRESENTMULTIPLANEOVERLAYINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_PRESENTMULTIPLANEOVERLAYINFO
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PRESENTMULTIPLANEOVERLAYINFO
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGK_PRESENTMULTIPLANEOVERLAYINFO {
 
 ## Members
 
-        
-            `PlaneListCount`
 
-            [in] The number of overlay planes that are available to display.
-        
-            `pPlaneList`
+`PlaneListCount`
 
-            [in] A pointer to a structure of type <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentmultiplaneoverlaylist.md">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a> that describes the overlay plane to display.
-        
-            `VidPnSourceId`
+[in] The number of overlay planes that are available to display.
 
-            [in] The zero-based video present network (VidPN) source identification number of the input that is to be displayed.
+`pPlaneList`
+
+[in] A pointer to a structure of type <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentmultiplaneoverlaylist.md">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a> that describes the overlay plane to display.
+
+`VidPnSourceId`
+
+[in] The zero-based video present network (VidPN) source identification number of the input that is to be displayed.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _DXGK_PRESENTMULTIPLANEOVERLAYINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentmultiplaneoverlaylist.md">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a>
-</dt>
-</dl>
+
  
 
  

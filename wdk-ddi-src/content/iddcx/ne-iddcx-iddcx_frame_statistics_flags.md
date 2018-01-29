@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 85ae47d8-228c-4fff-9be0-bf56868b9319
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_FRAME_STATISTICS_FLAGS,
+ms.keywords : IDDCX_FRAME_STATISTICS_FLAGS_NONE, IDDCX_FRAME_STATISTICS_FLAGS, IDDCX_FRAME_STATISTICS_FLAGS_REDUCED_COLOR_FIDELITY, iddcx/IDDCX_FRAME_STATISTICS_FLAGS, IDDCX_FRAME_STATISTICS_FLAGS enumeration [Display Devices], display.iddcx_frame_statistics_flags, iddcx/IDDCX_FRAME_STATISTICS_FLAGS_REDUCED_COLOR_FIDELITY, iddcx/IDDCX_FRAME_STATISTICS_FLAGS_NONE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_FRAME_STATISTICS_FLAGS
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -57,6 +61,11 @@ typedef enum _IDDCX_FRAME_STATISTICS_FLAGS {
 <tr>
 <td>IDDCX_FRAME_STATISTICS_FLAGS_REDUCED_COLOR_FIDELITY</td>
 <td>If set indicates that the driver reduced the color fidelity of the desktop image while processing and transmitting this frame.</td>
+</tr>
+
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 

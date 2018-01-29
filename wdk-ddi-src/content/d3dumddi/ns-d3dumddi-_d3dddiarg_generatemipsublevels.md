@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 19c08206-cde8-4ec2-bbd1-92eadeecdb90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_GENERATEMIPSUBLEVELS, D3DDDIARG_GENERATEMIPSUBLEVELS
+ms.keywords : D3DDDIARG_GENERATEMIPSUBLEVELS, display.d3dddiarg_generatemipsublevels, d3dumddi/D3DDDIARG_GENERATEMIPSUBLEVELS, _D3DDDIARG_GENERATEMIPSUBLEVELS, UMDisplayDriver_param_Structs_4000d18b-18c0-4499-bfbe-a3f5e866553b.xml, D3DDDIARG_GENERATEMIPSUBLEVELS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_GENERATEMIPSUBLEVELS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_GENERATEMIPSUBLEVELS
 ---
 
@@ -47,11 +51,10 @@ typedef struct _D3DDDIARG_GENERATEMIPSUBLEVELS {
 
 ## Members
 
-        
-            `Filter`
 
-            [in] A D3DDDITEXTUREFILTERTYPE-typed value that indicates the texture magnification or minification filter type that is used in generating the sublevels of the MIP-map texture. This member can be one of the following values.
+`Filter`
 
+[in] A D3DDDITEXTUREFILTERTYPE-typed value that indicates the texture magnification or minification filter type that is used in generating the sublevels of the MIP-map texture. This member can be one of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -118,10 +121,10 @@ Four-sample Gaussian filtering.
 </td>
 </tr>
 </table>
-        
-            `hResource`
 
-            [in] A handle to the MIP-map texture surface.
+`hResource`
+
+[in] A handle to the MIP-map texture surface.
 
 
 ## Requirements
@@ -132,13 +135,10 @@ Four-sample Gaussian filtering.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_generatemipsublevels.md">GenerateMipSubLevels</a>
-</dt>
-</dl>
+
  
 
  

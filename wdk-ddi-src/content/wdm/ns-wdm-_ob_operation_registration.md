@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 06da3ec0-b8d3-4bd8-8270-ead38b7deada
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _OB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION
+ms.keywords : POB_OPERATION_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], kstruct_c_257b9aaa-a8cc-49b2-b51e-16fcf5eb8084.xml, _OB_OPERATION_REGISTRATION, wdm/POB_OPERATION_REGISTRATION, PsProcessType, wdm/OB_OPERATION_REGISTRATION, PsThreadType, OB_OPERATION_REGISTRATION, kernel.ob_operation_registration, POB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Server 2008.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OB_OPERATION_REGISTRATION,PsProcessType,PsThreadType
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*POB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : OB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION
 req.product : Windows 10 or later.
 ---
 
@@ -50,31 +54,30 @@ typedef struct _OB_OPERATION_REGISTRATION {
 
 ## Members
 
-        
-            `ObjectType`
 
-            A pointer to the object type that triggers the callback routine. Specify one of the following values:
+`ObjectType`
 
+A pointer to the object type that triggers the callback routine. Specify one of the following values:
 <ul>
 <li><b>PsProcessType</b> for process handle operations</li>
 <li><b>PsThreadType</b> for thread handle operations</li>
 <li><b>ExDesktopObjectType</b> for desktop handle operations. This value is supported in Windows 10 and not in the earlier versions of the operating system.</li>
 </ul>
-        
-            `Operations`
 
-            Specify one or more of the following flags:
-        
-            `PostOperation`
+`Operations`
 
-            A pointer to an <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a> routine. The system calls this routine after the requested operation occurs.
-        
-            `PreOperation`
+Specify one or more of the following flags:
 
-            A pointer to an <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> routine. The system calls this routine before the requested operation occurs.
+`PostOperation`
 
-    ## Remarks
-        This structure is used by the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine. The <i>CallBackRegistration</i> parameter to this routine is a pointer to a buffer that contains an <a href="..\wdm\ns-wdm-_ob_callback_registration.md">OB_CALLBACK_REGISTRATION</a> structure that is followed by an array of one or more <b>OB_OPERATION_REGISTRATION</b> structures.
+A pointer to an <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a> routine. The system calls this routine after the requested operation occurs.
+
+`PreOperation`
+
+A pointer to an <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> routine. The system calls this routine before the requested operation occurs.
+
+## Remarks
+This structure is used by the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine. The <i>CallBackRegistration</i> parameter to this routine is a pointer to a buffer that contains an <a href="..\wdm\ns-wdm-_ob_callback_registration.md">OB_CALLBACK_REGISTRATION</a> structure that is followed by an array of one or more <b>OB_OPERATION_REGISTRATION</b> structures.
 
 In each <b>OB_OPERATION_REGISTRATION</b> structure passed to <b>ObRegisterCallback</b>, the caller must supply one or both callback routines. If the <b>PreOperation</b> and <b>PostOperation</b> members of this structure are both <b>NULL</b>, the callback registration operation fails.
 
@@ -86,22 +89,16 @@ In each <b>OB_OPERATION_REGISTRATION</b> structure passed to <b>ObRegisterCallba
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_ob_callback_registration.md">OB_CALLBACK_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
+
+<a href="..\wdm\ns-wdm-_ob_callback_registration.md">OB_CALLBACK_REGISTRATION</a>
+
 <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a>
-</dt>
-</dl>
+
  
 
  

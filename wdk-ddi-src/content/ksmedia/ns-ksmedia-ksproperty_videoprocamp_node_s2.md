@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 767ea5d2-4c11-4ba8-bb1f-c5f6038244f5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_VIDEOPROCAMP_NODE_S2, *PKSPROPERTY_VIDEOPROCAMP_NODE_S2, KSPROPERTY_VIDEOPROCAMP_NODE_S2
+ms.keywords : PKSPROPERTY_VIDEOPROCAMP_NODE_S2, KSPROPERTY_VIDEOPROCAMP_NODE_S2, KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure [Streaming Media Devices], PKSPROPERTY_VIDEOPROCAMP_NODE_S2 structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_VIDEOPROCAMP_NODE_S2, vidcapstruct_1876d4f4-15ae-4bcb-9f57-ed08ddf15411.xml, ksmedia/KSPROPERTY_VIDEOPROCAMP_NODE_S2, *PKSPROPERTY_VIDEOPROCAMP_NODE_S2, stream.ksproperty_videoprocamp_node_s2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_VIDEOPROCAMP_NODE_S2
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPROPERTY_VIDEOPROCAMP_NODE_S2, KSPROPERTY_VIDEOPROCAMP_NODE_S2"
 ---
 
@@ -50,11 +54,10 @@ typedef struct {
 
 ## Members
 
-        
-            `Capabilities`
 
-            Specifies the capabilities of a property. This member has meaning only for get requests. The minidriver should return the capabilities of the video processing amplifier with respect to the property specified in <b>Property</b>. This member should be set to one of the following values:
+`Capabilities`
 
+Specifies the capabilities of a property. This member has meaning only for get requests. The minidriver should return the capabilities of the video processing amplifier with respect to the property specified in <b>Property</b>. This member should be set to one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -81,11 +84,10 @@ The device supports automatic setting of the specified property
 </td>
 </tr>
 </table>
-        
-            `Flags`
 
-            Specifies the flags of a request. For set requests, this value indicates the desired setting. For get requests, this value contains the current setting. This member can be set to one of the values that are defined in <i>ksmedia.h</i>:
+`Flags`
 
+Specifies the flags of a request. For set requests, this value indicates the desired setting. For get requests, this value contains the current setting. This member can be set to one of the values that are defined in <i>ksmedia.h</i>:
 <table>
 <tr>
 <th>Flag</th>
@@ -112,21 +114,21 @@ Indicates that the property is to be adjusted automatically
 </td>
 </tr>
 </table>
-        
-            `NodeProperty`
 
-            Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
-        
-            `Value1`
+`NodeProperty`
 
-            Specifies the first value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.
-        
-            `Value2`
+Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
 
-            Specifies the second value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.
+`Value1`
 
-    ## Remarks
-        This structure is used by <a href="https://msdn.microsoft.com/library/windows/hardware/ff566097">KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT</a>.</p>
+Specifies the first value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.
+
+`Value2`
+
+Specifies the second value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.
+
+## Remarks
+This structure is used by <a href="https://msdn.microsoft.com/library/windows/hardware/ff566097">KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

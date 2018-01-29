@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac62a738-bde1-49e7-9c18-519471ec1092
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, *PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE
+ms.keywords : video/PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, video/VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, *PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE structure [Display Devices], PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, display.video_port_wcmemoryprotection_interface, PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE structure pointer [Display Devices], Video_Structs_15076908-e598-4025-8884-a9ed60b1668c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, *PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE
 req.product : Windows 10 or later.
 ---
 
@@ -53,34 +57,34 @@ typedef struct _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE {
 
 ## Members
 
-        
-            `Context`
 
-            Pointer to a miniport driver-defined context for the interface.
-        
-            `InterfaceDereference`
+`Context`
 
-            Pointer to the video port driver-implemented dereference routine for this interface.
-        
-            `InterfaceReference`
+Pointer to a miniport driver-defined context for the interface.
 
-            Pointer to the video port driver-implemented reference routine for this interface.
-        
-            `Size`
+`InterfaceDereference`
 
-            Specifies the size in bytes of this structure.
-        
-            `Version`
+Pointer to the video port driver-implemented dereference routine for this interface.
 
-            Specifies the version of the interface to be returned by the miniport driver. The current interface version is defined in <i>video.h</i>, and has the form VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE_VERSION_<i>N</i>.
-        
-            `VideoPortProtectWCMemory`
+`InterfaceReference`
 
-            Pointer to the video port driver's <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a> callback routine.
-        
-            `VideoPortRestoreWCMemory`
+Pointer to the video port driver-implemented reference routine for this interface.
 
-            Pointer to the video port driver's <a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a> callback routine.
+`Size`
+
+Specifies the size in bytes of this structure.
+
+`Version`
+
+Specifies the version of the interface to be returned by the miniport driver. The current interface version is defined in <i>video.h</i>, and has the form VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE_VERSION_<i>N</i>.
+
+`VideoPortProtectWCMemory`
+
+Pointer to the video port driver's <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a> callback routine.
+
+`VideoPortRestoreWCMemory`
+
+Pointer to the video port driver's <a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a> callback routine.
 
 
 ## Requirements
@@ -91,22 +95,16 @@ typedef struct _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a>
-</dt>
-<dt>
+
+<a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a>
+
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6d25f2fb-be77-480f-b07c-294ab8a4272e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetDeviceBase
+ms.keywords : storage.storportgetdevicebase, StorPortGetDeviceBase, storprt_8be3e3d9-dae5-49cb-aa44-31d3be745045.xml, StorPortGetDeviceBase routine [Storage Devices], storport/StorPortGetDeviceBase
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortGetDeviceBase
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -103,11 +107,8 @@ This routine supports only those addresses that were assigned to the driver by t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportfreedevicebase.md">StorPortFreeDeviceBase</a>
-</dt>
-</dl>
+
  
 
  

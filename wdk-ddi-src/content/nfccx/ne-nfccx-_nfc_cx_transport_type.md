@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : CC8BEC9A-87F6-4C50-A8FA-ED2A2A5D2934
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE
+ms.keywords : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_I2C, NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE enumeration [Near-Field Proximity Drivers], nfccx/NFC_CX_TRANSPORT_TYPE, nfpdrivers.nfc_cx_transport_type, nfccx/NFC_CX_TRANSPORT_UART, nfccx/NFC_CX_TRANSPORT_CUSTOM, nfccx/NFC_CX_TRANSPORT_I2C, NFC_CX_TRANSPORT_TYPE enumeration [Near-Field Proximity Drivers], NFC_CX_TRANSPORT_SPI, nfccx/NFC_CX_TRANSPORT_SPI, _NFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_CUSTOM, NFC_CX_TRANSPORT_UART
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
-req.alt-loc : nfccx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Requires same
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE"
 ---
 
@@ -83,10 +87,10 @@ typedef enum _NFC_CX_TRANSPORT_TYPE {
 
 ## See Also
 
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

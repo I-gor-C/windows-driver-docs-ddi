@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 53e5e234-c256-4581-b109-307f2f17522f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortReleaseRequestSenseIrb
+ms.keywords : AtaPortReleaseRequestSenseIrb, atartns_b46ae59d-b5b8-49fb-9458-742eefacd197.xml, irb/AtaPortReleaseRequestSenseIrb, AtaPortReleaseRequestSenseIrb routine [Storage Devices], storage.ataportreleaserequestsenseirb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortReleaseRequestSenseIrb
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortReleaseRequestSenseIrb function
-The <b>AtaPortReleaseRequestSenseIrb</b> routine frees the request sense IRB tha is allocated by using <a href="..\irb\nf-irb-ataportbuildrequestsenseirb.md">AtaPortBuildRequestSenseIrb</a>.
+The <b>AtaPortReleaseRequestSenseIrb</b> routine frees the request sense IRB tha is allocated by using <a href="..\irb\nf-irb-ataportbuildrequestsenseirb.md">AtaPortBuildRequestSenseIrb</a>. 
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -82,14 +87,10 @@ The miniport driver must call <b>AtaPortReleaseRequestSenseIrb</b> for every all
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\irb\nf-irb-ataportbuildrequestsenseirb.md">AtaPortBuildRequestSenseIrb</a>
-</dt>
-<dt>
 <a href="..\irb\nf-irb-ataportcompleterequest.md">AtaPortCompleteRequest</a>
-</dt>
-</dl>
+
+<a href="..\irb\nf-irb-ataportbuildrequestsenseirb.md">AtaPortBuildRequestSenseIrb</a>
+
  
 
  

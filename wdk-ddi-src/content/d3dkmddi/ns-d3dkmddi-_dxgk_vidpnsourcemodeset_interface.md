@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c608643f-e791-44b8-8719-4e98e10fa7b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_VIDPNSOURCEMODESET_INTERFACE, DXGK_VIDPNSOURCEMODESET_INTERFACE
+ms.keywords : DXGK_VIDPNSOURCEMODESET_INTERFACE structure [Display Devices], DXGK_VIDPNSOURCEMODESET_INTERFACE, DmStructs_8e8b4b99-8121-4cff-9d1b-f88a9041e7cd.xml, display.dxgk_vidpnsourcemodeset_interface, _DXGK_VIDPNSOURCEMODESET_INTERFACE, d3dkmddi/DXGK_VIDPNSOURCEMODESET_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_VIDPNSOURCEMODESET_INTERFACE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_VIDPNSOURCEMODESET_INTERFACE
 ---
 
@@ -53,41 +57,41 @@ typedef struct _DXGK_VIDPNSOURCEMODESET_INTERFACE {
 
 ## Members
 
-        
-            `pfnAcquireFirstModeInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> function.
-        
-            `pfnAcquireNextModeInfo`
+`pfnAcquireFirstModeInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a> function.
-        
-            `pfnAcquirePinnedModeInfo`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirepinnedmodeinfo.md">pfnAcquirePinnedModeInfo</a> function.
-        
-            `pfnAddMode`
+`pfnAcquireNextModeInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_addmode.md">pfnAddMode</a> function.
-        
-            `pfnCreateNewModeInfo`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_createnewmodeinfo.md">pfnCreateNewModeInfo</a> function.
-        
-            `pfnGetNumModes`
+`pfnAcquirePinnedModeInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_getnummodes.md">pfnGetNumModes</a> function.
-        
-            `pfnPinMode`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirepinnedmodeinfo.md">pfnAcquirePinnedModeInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_pinmode.md">pfnPinMode</a> function.
-        
-            `pfnReleaseModeInfo`
+`pfnAddMode`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_releasemodeinfo.md">pfnReleaseModeInfo</a> function.
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_addmode.md">pfnAddMode</a> function.
 
-    ## Remarks
-        The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset.md">pfnAcquireSourceModeSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a> to obtain a handle to a VidPN source mode set object and a pointer to a DXGK_VIDPNSOURCEMODESET_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN source mode set object.
+`pfnCreateNewModeInfo`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_createnewmodeinfo.md">pfnCreateNewModeInfo</a> function.
+
+`pfnGetNumModes`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_getnummodes.md">pfnGetNumModes</a> function.
+
+`pfnPinMode`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_pinmode.md">pfnPinMode</a> function.
+
+`pfnReleaseModeInfo`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_releasemodeinfo.md">pfnReleaseModeInfo</a> function.
+
+## Remarks
+The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset.md">pfnAcquireSourceModeSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a> to obtain a handle to a VidPN source mode set object and a pointer to a DXGK_VIDPNSOURCEMODESET_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN source mode set object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,22 +101,16 @@ typedef struct _DXGK_VIDPNSOURCEMODESET_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset.md">pfnAcquireSourceModeSet</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpntargetmodeset_interface.md">DXGK_VIDPNTARGETMODESET_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset.md">pfnAcquireSourceModeSet</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
+
  
 
  

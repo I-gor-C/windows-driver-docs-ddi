@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B6F8663C-3A13-45DA-80FE-CC8B9194D083
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WdmlibIoDisconnectInterruptEx
+ms.keywords : WdmlibIoDisconnectInterruptEx, kernel.wdmlibiodisconnectinterruptex, IoDisconnectInterruptEx, iointex/WdmlibIoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx function [Kernel-Mode Driver Architecture], iointex/IoDisconnectInterruptEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista. Drivers that 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WdmlibIoDisconnectInterruptEx,IoDisconnectInterruptEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib; Iointex.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LUID
 ---
 
@@ -75,14 +79,10 @@ The driver should configure the device to issue interrupts only when these inter
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_io_disconnect_interrupt_parameters.md">IO_DISCONNECT_INTERRUPT_PARAMETERS</a>
-</dt>
-<dt>
+
 <a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a>
-</dt>
-</dl>
+
  
 
  

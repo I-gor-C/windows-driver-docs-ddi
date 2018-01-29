@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d11a6be1-f723-47eb-b131-e1b02451e18a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_VIDEODECODEREXTENSION, D3D11_1DDIARG_VIDEODECODEREXTENSION
+ms.keywords : display.d3d11_1ddiarg_videodecoderextension, d3d10umddi/D3D11_1DDIARG_VIDEODECODEREXTENSION, D3D11_1DDIARG_VIDEODECODEREXTENSION structure [Display Devices], D3D11_1DDIARG_VIDEODECODEREXTENSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDIARG_VIDEODECODEREXTENSION
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDIARG_VIDEODECODEREXTENSION
 ---
 
@@ -52,37 +56,37 @@ typedef struct D3D11_1DDIARG_VIDEODECODEREXTENSION {
 
 ## Members
 
-        
-            `Function`
 
-            The function number. This number identifies the operation to perform. Currently no function numbers are defined.
-        
-            `pPrivateInputData`
+`Function`
 
-            A pointer to a buffer that contains input data for the driver.
-        
-            `pPrivateOutputData`
+The function number. This number identifies the operation to perform. Currently no function numbers are defined.
 
-            A pointer to a buffer that the driver can use to write output data.
-        
-            `pResourceList`
+`pPrivateInputData`
 
-            A pointer to an array of resource handles. Use this member to pass Direct3D resources to the driver.
-        
-            `PrivateInputDataSize`
+A pointer to a buffer that contains input data for the driver.
 
-            The size of the buffer pointed to by <b>pPrivateInputData</b>, in bytes.
-        
-            `PrivateOutputDataSize`
+`pPrivateOutputData`
 
-            The size of the buffer pointed to by <b>pPrivateOutputData</b>, in bytes.
-        
-            `ResourceCount`
+A pointer to a buffer that the driver can use to write output data.
 
-            The number of elements in the <b>pResourceList</b> array. If <b>pResourceList</b> is <b>NULL</b>, set <b>ResourceCount</b> to zero.
+`pResourceList`
 
-    ## Remarks
-        The exact meaning of each structure member depends on the value of <b>Function</b>.
+A pointer to an array of resource handles. Use this member to pass Direct3D resources to the driver.
+
+`PrivateInputDataSize`
+
+The size of the buffer pointed to by <b>pPrivateInputData</b>, in bytes.
+
+`PrivateOutputDataSize`
+
+The size of the buffer pointed to by <b>pPrivateOutputData</b>, in bytes.
+
+`ResourceCount`
+
+The number of elements in the <b>pResourceList</b> array. If <b>pResourceList</b> is <b>NULL</b>, set <b>ResourceCount</b> to zero.
+
+## Remarks
+The exact meaning of each structure member depends on the value of <b>Function</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,13 +96,10 @@ typedef struct D3D11_1DDIARG_VIDEODECODEREXTENSION {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videodecoderextension.md">VideoDecoderExtension</a>
-</dt>
-</dl>
+
  
 
  

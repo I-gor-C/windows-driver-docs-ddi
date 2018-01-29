@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 10CAB3CA-83BF-421B-81F5-2B42790B8928
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE
+ms.keywords : PPEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE, pep_x/PPEP_PROCESSOR_IDLE_STATE, kernel.pep_processor_idle_state, PEP_PROCESSOR_IDLE_STATE, PPEP_PROCESSOR_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], pep_x/PEP_PROCESSOR_IDLE_STATE, _PEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PROCESSOR_IDLE_STATE
-req.alt-loc : pep_x.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE
 ---
 
 # _PEP_PROCESSOR_IDLE_STATE structure
@@ -56,8 +60,8 @@ typedef struct _PEP_PROCESSOR_IDLE_STATE {
 ## Members
 
 
-    ## Remarks
-        The <b>IdleStates</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_query_idle_states.md">PEP_PPM_QUERY_IDLE_STATES</a> structure is the first element in an array of <b>PEP_PROCESSOR_IDLE_STATE</b> structures.
+## Remarks
+The <b>IdleStates</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_query_idle_states.md">PEP_PPM_QUERY_IDLE_STATES</a> structure is the first element in an array of <b>PEP_PROCESSOR_IDLE_STATE</b> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _PEP_PROCESSOR_IDLE_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | pep_x.h (include Pepfx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\pep_x\ns-pep_x-_pep_ppm_query_idle_states.md">PEP_PPM_QUERY_IDLE_STATES</a>
-</dt>
-</dl>
+
  
 
  

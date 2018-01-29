@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e5b7b014-3e06-49f2-8ccd-45d74592e349
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryGetDevice
+ms.keywords : KsFilterFactoryGetDevice, avfunc_1e2ec536-69a1-4606-9d99-ebdebd25c89a.xml, stream.ksfilterfactorygetdevice, ks/KsFilterFactoryGetDevice, KsFilterFactoryGetDevice function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterFactoryGetDevice
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,17 +81,12 @@ For more information about the AVStream object hierarchy, see  <a href="https://
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7679d4f2-55c6-458c-afd3-020c3b7fd7e2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_PRESENT_DISPLAYONLY, DXGKARG_PRESENT_DISPLAYONLY
+ms.keywords : DXGKARG_PRESENT_DISPLAYONLY structure [Display Devices], d3dkmddi/DXGKARG_PRESENT_DISPLAYONLY, _DXGKARG_PRESENT_DISPLAYONLY, display.dxgkarg_present_displayonly, DXGKARG_PRESENT_DISPLAYONLY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_PRESENT_DISPLAYONLY
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_PRESENT_DISPLAYONLY
 ---
 
@@ -55,46 +59,46 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 
 ## Members
 
-        
-            `BytesPerPixel`
 
-            The number of bytes per pixel in the source image.
-        
-            `Flags`
+`BytesPerPixel`
 
-            A <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkmt_present_display_only_flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a> structure that identifies how to display the source image in the present operation.
-        
-            `NumDirtyRects`
+The number of bytes per pixel in the source image.
 
-            The number of dirty rectangles that are pointed to by the <b>pDirtyRect</b> member.
-        
-            `NumMoves`
+`Flags`
 
-            The number of screen-to-screen moves that are pointed to by the <b>pMoves</b> member.
-        
-            `pDirtyRect`
+A <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkmt_present_display_only_flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a> structure that identifies how to display the source image in the present operation.
 
-            A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> dirty rectangles.
-        
-            `pfnPresentDisplayOnlyProgress`
+`NumDirtyRects`
 
-            Reserved for system use. The operating system sets this member to <b>NULL</b>.
-        
-            `Pitch`
+The number of dirty rectangles that are pointed to by the <b>pDirtyRect</b> member.
 
-            The pitch, in bytes, of each line in the source image—that is, the distance, in bytes, to the start of the next line.
-        
-            `pMoves`
+`NumMoves`
 
-            A pointer to a list of <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmt_move_rect.md">D3DKMT_MOVE_RECT</a> screen-to-screen moves.
-        
-            `pSource`
+The number of screen-to-screen moves that are pointed to by the <b>pMoves</b> member.
 
-            The virtual start address of the source image.
-        
-            `VidPnSourceId`
+`pDirtyRect`
 
-            The zero-based identification number of the video present source in a path of a video present network (VidPN) topology on which to restrict displaying.
+A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> dirty rectangles.
+
+`pfnPresentDisplayOnlyProgress`
+
+Reserved for system use. The operating system sets this member to <b>NULL</b>.
+
+`Pitch`
+
+The pitch, in bytes, of each line in the source image—that is, the distance, in bytes, to the start of the next line.
+
+`pMoves`
+
+A pointer to a list of <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmt_move_rect.md">D3DKMT_MOVE_RECT</a> screen-to-screen moves.
+
+`pSource`
+
+The virtual start address of the source image.
+
+`VidPnSourceId`
+
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology on which to restrict displaying.
 
 
 ## Requirements
@@ -105,25 +109,18 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmt_move_rect.md">D3DKMT_MOVE_RECT</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_d3dkmt_present_display_only_flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/8970246b-b46f-464f-93b2-973cc351ed07">DxgkCbPresentDisplayOnlyProgress</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_presentdisplayonly.md">DxgkDdiPresentDisplayOnly</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_presentdisplayonly.md">DxgkDdiPresentDisplayOnly</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmt_move_rect.md">D3DKMT_MOVE_RECT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_d3dkmt_present_display_only_flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a>
+
  
 
  

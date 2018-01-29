@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7d580d5c-b97f-4d26-9eec-165c5db66a0b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION, VIDEO_MEMORY_INFORMATION
+ms.keywords : Video_Structs_efc1abe7-c8bb-403f-ae5d-136b25881929.xml, VIDEO_MEMORY_INFORMATION structure [Display Devices], PVIDEO_MEMORY_INFORMATION, _VIDEO_MEMORY_INFORMATION, display.video_memory_information, ntddvdeo/PVIDEO_MEMORY_INFORMATION, ntddvdeo/VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION structure pointer [Display Devices], VIDEO_MEMORY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_MEMORY_INFORMATION
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVIDEO_MEMORY_INFORMATION, VIDEO_MEMORY_INFORMATION"
 ---
 
@@ -49,29 +53,29 @@ typedef struct _VIDEO_MEMORY_INFORMATION {
 
 ## Members
 
-        
-            `FrameBufferBase`
 
-            Pointer to the virtual address of the <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a> in the caller's address space. The frame buffer is the actively displayed part of video RAM.
-        
-            `FrameBufferLength`
+`FrameBufferBase`
 
-            Specifies the linear length of the frame buffer in the caller's virtual address space. Memory accessible through a bank switch mechanism is not described by this value.
+Pointer to the virtual address of the <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">frame buffer</a> in the caller's address space. The frame buffer is the actively displayed part of video RAM.
+
+`FrameBufferLength`
+
+Specifies the linear length of the frame buffer in the caller's virtual address space. Memory accessible through a bank switch mechanism is not described by this value.
 
 This value must be equal to the product <b>VisScreenWidth</b> * <b>ScreenStride</b>, where each term in this product is a member of the <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a> structure.
-        
-            `VideoRamBase`
 
-            Virtual address of the video RAM in system space or in the address space of the user-mode process that initiated the request.
-        
-            `VideoRamLength`
+`VideoRamBase`
 
-            The size, in bytes, of the virtual address range that is mapped to video RAM. Memory accessible through a bank switch mechanism is not described by this value.
+Virtual address of the video RAM in system space or in the address space of the user-mode process that initiated the request.
+
+`VideoRamLength`
+
+The size, in bytes, of the virtual address range that is mapped to video RAM. Memory accessible through a bank switch mechanism is not described by this value.
 
 This value must be equal to the product <b>VideoMemoryBitmapHeight</b> * <b>ScreenStride</b>, where each factor in the product is a member of the <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a> structure.
 
-    ## Remarks
-        In the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> request, <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory.md">VIDEO_MEMORY</a> serves as an input structure, while VIDEO_MEMORY_INFORMATION serves as an output structure.
+## Remarks
+In the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> request, <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory.md">VIDEO_MEMORY</a> serves as an input structure, while VIDEO_MEMORY_INFORMATION serves as an output structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,22 +85,16 @@ This value must be equal to the product <b>VideoMemoryBitmapHeight</b> * <b>Scre
 | **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory.md">VIDEO_MEMORY</a>
-</dt>
-<dt>
+
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
-</dt>
-<dt>
+
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>
-</dt>
-</dl>
+
  
 
  

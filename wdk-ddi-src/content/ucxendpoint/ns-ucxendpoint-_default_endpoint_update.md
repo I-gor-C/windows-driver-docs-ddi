@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3E85D9AE-F8D3-4763-B1A2-51F95D00422D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _DEFAULT_ENDPOINT_UPDATE, *PDEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE
+ms.keywords : P_DEFAULT_ENDPOINT_UPDATE structure pointer [Buses], ucxendpoint/_DEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE structure [Buses], ucxendpoint/P_DEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE, _DEFAULT_ENDPOINT_UPDATE, *PDEFAULT_ENDPOINT_UPDATE, P_DEFAULT_ENDPOINT_UPDATE, buses._default_endpoint_update
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEFAULT_ENDPOINT_UPDATE
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DEFAULT_ENDPOINT_UPDATE, *PDEFAULT_ENDPOINT_UPDATE
 req.product : Windows 10 or later.
 ---
 
@@ -53,18 +57,18 @@ typedef struct _DEFAULT_ENDPOINT_UPDATE {
 
 ## Members
 
-        
-            `DefaultEndpoint`
 
-            A handle to the  default endpoint to update.
-        
-            `Header`
+`DefaultEndpoint`
 
-            A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains header information related to the USB device or hub endpoint.
-        
-            `MaxPacketSize`
+A handle to the  default endpoint to update.
 
-            The maximum packet size of the default endpoint.
+`Header`
+
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains header information related to the USB device or hub endpoint.
+
+`MaxPacketSize`
+
+The maximum packet size of the default endpoint.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _DEFAULT_ENDPOINT_UPDATE {
 | **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_default_endpoint_update.md">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>
-</dt>
-</dl>
+
  
 
  

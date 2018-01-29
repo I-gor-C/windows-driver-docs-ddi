@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a08cb12a-c574-4871-9bba-f8f3a766f377
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCharToInteger
+ms.keywords : RtlCharToInteger, RtlCharToInteger routine [Kernel-Mode Driver Architecture], ntddk/RtlCharToInteger, kernel.rtlchartointeger, k109_0c8d9b78-6363-4884-a475-4f402ea3643a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlCharToInteger
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -85,14 +89,10 @@ Pointer to a location to which the converted value is returned.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlinitstring.md">RtlInitString</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlinitstring.md">RtlInitString</a>
+
  
 
  

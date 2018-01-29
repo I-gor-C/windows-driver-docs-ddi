@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : af81a053-8c09-411c-a437-21859ea867b2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_VIDEODECODER_CAPS_S, KSPROPERTY_VIDEODECODER_CAPS_S, *PKSPROPERTY_VIDEODECODER_CAPS_S
+ms.keywords : ksmedia/KSPROPERTY_VIDEODECODER_CAPS_S, KSPROPERTY_VIDEODECODER_CAPS_S, PKSPROPERTY_VIDEODECODER_CAPS_S, *PKSPROPERTY_VIDEODECODER_CAPS_S, stream.ksproperty_videodecoder_caps_s, PKSPROPERTY_VIDEODECODER_CAPS_S structure pointer [Streaming Media Devices], vidcapstruct_091e360d-7c9a-4ffc-a7b5-aa634847bbed.xml, KSPROPERTY_VIDEODECODER_CAPS_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_VIDEODECODER_CAPS_S
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_VIDEODECODER_CAPS_S
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSPROPERTY_VIDEODECODER_CAPS_S, *PKSPROPERTY_VIDEODECODER_CAPS_S
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSPROPERTY_VIDEODECODER_CAPS_S, KSPROPERTY_VIDEODECODER_CAPS_S"
 ---
 
 # KSPROPERTY_VIDEODECODER_CAPS_S structure
@@ -50,26 +54,26 @@ typedef struct {
 
 ## Members
 
-        
-            `Capabilities`
 
-            Specifies video decoder capabilities. This member must be set to zero or one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_videodecoder_flags.md">KS_VIDEODECODER_FLAGS</a> enumeration.
-        
-            `HSyncPerVSync`
+`Capabilities`
 
-            Specifies the number of horizontal sync pulses the video decoder produces during the vertical sync period. Decoders that follow the ITU_656 should set this value to six.
-        
-            `Property`
+Specifies video decoder capabilities. This member must be set to zero or one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_videodecoder_flags.md">KS_VIDEODECODER_FLAGS</a> enumeration.
 
-            Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
-        
-            `SettlingTime`
+`HSyncPerVSync`
 
-            Specifies the settling time when changing input video sources. This value is expressed in milliseconds.
-        
-            `StandardsSupported`
+Specifies the number of horizontal sync pulses the video decoder produces during the vertical sync period. Decoders that follow the ITU_656 should set this value to six.
 
-            Specifies the video standards supported by the device. This member may be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
+`Property`
+
+Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+
+`SettlingTime`
+
+Specifies the settling time when changing input video sources. This value is expressed in milliseconds.
+
+`StandardsSupported`
+
+Specifies the video standards supported by the device. This member may be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
 
 
 ## Requirements
@@ -80,25 +84,18 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ne-ksmedia-ks_videodecoder_flags.md">KS_VIDEODECODER_FLAGS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568121">PROPSETID_VIDCAP_VIDEODECODER</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566046">KSPROPERTY_VIDEODECODER_CAPS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568121">PROPSETID_VIDCAP_VIDEODECODER</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
  
 
  

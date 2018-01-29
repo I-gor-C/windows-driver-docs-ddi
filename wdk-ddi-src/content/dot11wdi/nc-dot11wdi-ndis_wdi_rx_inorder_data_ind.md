@@ -7,8 +7,8 @@ old-location : netvista\ndiswdirxinorderdataindication.htm
 old-project : netvista
 ms.assetid : F2F92DAE-6C13-4EE6-9DE7-B77F5FAFAE60
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.date : 1/18/2018
+ms.keywords : netvista.ndiswdirxinorderdataindication, NdisWdiRxInorderDataIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiRxInorderDataIndication, NDIS_WDI_RX_INORDER_DATA_IND, NDIS_WDI_RX_INORDER_DATA_IND, dot11wdi/NdisWdiRxInorderDataIndication
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisWdiRxInorderDataIndication
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSYNTH_STATS, SYNTH_STATS"
 ---
 
 
@@ -122,37 +126,26 @@ The RxMgr tracks the number of frames indicated to NDIS against the limit specif
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
-</dt>
-<dt>
-<a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_get_mpdus.md">MiniportWdiRxGetMpdus</a>
-</dt>
-<dt>
-<a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_resume.md">MiniportWdiRxResume</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ndis_receive_throttle_parameters.md">NDIS_RECEIVE_THROTTLE_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt297640">WDI_EXTENDED_TID</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt297658">WDI_PEER_ID</a>
-</dt>
-<dt>
-<a href="..\dot11wdi\ne-dot11wdi-_wdi_rx_indication_level.md">WDI_RX_INDICATION_LEVEL</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/EEEA7181-4A24-4F40-8A44-65EC38D1A867">WDI RX path</a>
-</dt>
-</dl>
- 
+
+<a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_resume.md">MiniportWdiRxResume</a>
+
+<a href="..\dot11wdi\ne-dot11wdi-_wdi_rx_indication_level.md">WDI_RX_INDICATION_LEVEL</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
+
+<a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_get_mpdus.md">MiniportWdiRxGetMpdus</a>
+
+<a href="..\ndis\ns-ndis-_ndis_receive_throttle_parameters.md">NDIS_RECEIVE_THROTTLE_PARAMETERS</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_RX_INORDER_DATA_IND callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WDI_RX_INORDER_DATA_IND callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

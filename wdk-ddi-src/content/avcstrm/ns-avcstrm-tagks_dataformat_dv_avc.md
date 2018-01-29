@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fe545ee3-8004-46fc-a49a-4274f8d1a6a7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC
+ms.keywords : PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC, PKS_DATAFORMAT_DV_AVC structure pointer [Streaming Media Devices], stream.ks_dataformat_dv_avc, tagKS_DATAFORMAT_DV_AVC, avcsref_36d913e1-7071-46db-849d-2493fa30aad8.xml, avcstrm/KS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC structure [Streaming Media Devices], avcstrm/PKS_DATAFORMAT_DV_AVC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATAFORMAT_DV_AVC
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC"
 ---
 
@@ -48,18 +52,18 @@ typedef struct tagKS_DATAFORMAT_DV_AVC {
 
 ## Members
 
-        
-            `ConnectInfo`
 
-            Specifies the AV/C connection information.
-        
-            `DataFormat`
+`ConnectInfo`
 
-            Specifies the data format of the digital video connection.
-        
-            `DVVideoInfo`
+Specifies the AV/C connection information.
 
-            Specifies the digital video information, for example, sound tracks and video information.
+`DataFormat`
+
+Specifies the data format of the digital video connection.
+
+`DVVideoInfo`
+
+Specifies the digital video information, for example, sound tracks and video information.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct tagKS_DATAFORMAT_DV_AVC {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-</dt>
-<dt>
-<a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>
-</dt>
-<dt>
+
 <a href="..\avc\ns-avc-_avcconnectinfo.md">AVCCONNECTINFO</a>
-</dt>
-</dl>
+
+<a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>
+
  
 
  

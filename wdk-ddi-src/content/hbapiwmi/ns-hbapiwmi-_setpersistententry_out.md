@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c2089ae9-e872-4bbb-8e7b-fe11082d2b46
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SetPersistentEntry_OUT, SetPersistentEntry_OUT, *PSetPersistentEntry_OUT
+ms.keywords : hbapiwmi/PSetPersistentEntry_OUT, PSetPersistentEntry_OUT, structs-Fibre_3dbfc9dd-6c90-4908-bb5d-c331a2e0334c.xml, SetPersistentEntry_OUT structure [Storage Devices], PSetPersistentEntry_OUT structure pointer [Storage Devices], storage.setpersistententry_out, SetPersistentEntry_OUT, _SetPersistentEntry_OUT, hbapiwmi/SetPersistentEntry_OUT, *PSetPersistentEntry_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetPersistentEntry_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SetPersistentEntry_OUT, *PSetPersistentEntry_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSetPersistentEntry_OUT, SetPersistentEntry_OUT"
 ---
 
 # _SetPersistentEntry_OUT structure
@@ -46,13 +50,13 @@ typedef struct _SetPersistentEntry_OUT {
 
 ## Members
 
-        
-            `HBAStatus`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+`HBAStatus`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SetPersistentEntry_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+## Remarks
+The WMI tool suite generates a declaration of the SetPersistentEntry_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,13 +66,10 @@ typedef struct _SetPersistentEntry_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565783">SetPersistentEntry</a>
-</dt>
-</dl>
+
  
 
  

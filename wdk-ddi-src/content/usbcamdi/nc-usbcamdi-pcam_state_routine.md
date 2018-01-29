@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9a69cace-11cc-4671-9e7c-df510cbdd16d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camrestorestate, CamRestoreState, CamSaveState, MyCamState callback function [Streaming Media Devices], MyCamState, PCAM_STATE_ROUTINE, PCAM_STATE_ROUTINE, usbcamdi/MyCamState, usbcmdpr_74c8ba54-9be6-4512-a498-b49635db1760.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Windows operating system versions prior
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MyCamState
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -90,6 +94,8 @@ USBCAMD ignores the return value from the minidriver's <b>CamSaveState</b> callb
 
 <b>CamSaveState</b> is called by both versions 1.0 and 2.0 of USBCAMD.
 
+This function is optional.
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -104,11 +110,8 @@ USBCAMD ignores the return value from the minidriver's <b>CamSaveState</b> callb
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568157">SRB_CHANGE_POWER_STATE</a>
-</dt>
-</dl>
+
  
 
  

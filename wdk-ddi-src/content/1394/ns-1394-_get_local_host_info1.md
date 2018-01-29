@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 49ec5322-2caa-4e95-85d0-74b9137d9bcd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GET_LOCAL_HOST_INFO1, *PGET_LOCAL_HOST_INFO1, GET_LOCAL_HOST_INFO1
+ms.keywords : 1394/PGET_LOCAL_HOST_INFO1, GET_LOCAL_HOST_INFO1, 1394stct_17301961-cba0-4966-851a-bd92fec75bc7.xml, GET_LOCAL_HOST_INFO1 structure [Buses], 1394/GET_LOCAL_HOST_INFO1, IEEE.get_local_host_info1, PGET_LOCAL_HOST_INFO1 structure pointer [Buses], PGET_LOCAL_HOST_INFO1, _GET_LOCAL_HOST_INFO1, *PGET_LOCAL_HOST_INFO1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GET_LOCAL_HOST_INFO1
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGET_LOCAL_HOST_INFO1, GET_LOCAL_HOST_INFO1"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GET_LOCAL_HOST_INFO1, *PGET_LOCAL_HOST_INFO1
 ---
 
 # _GET_LOCAL_HOST_INFO1 structure
@@ -46,10 +50,10 @@ typedef struct _GET_LOCAL_HOST_INFO1 {
 
 ## Members
 
-        
-            `UniqueId`
 
-            The bus driver fills in this member with the IEEE 1394 globally unique device ID for the host controller.
+`UniqueId`
+
+The bus driver fills in this member with the IEEE 1394 globally unique device ID for the host controller.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _GET_LOCAL_HOST_INFO1 {
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
-</dt>
-</dl>
+
  
 
  

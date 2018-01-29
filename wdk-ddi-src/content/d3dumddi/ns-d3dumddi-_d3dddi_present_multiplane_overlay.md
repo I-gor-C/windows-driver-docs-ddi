@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 45db9dbb-d1e1-4ed3-bf4d-99b6ac7542ae
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_PRESENT_MULTIPLANE_OVERLAY, D3DDDI_PRESENT_MULTIPLANE_OVERLAY
+ms.keywords : display.d3dddi_present_multiplane_overlay, _D3DDDI_PRESENT_MULTIPLANE_OVERLAY, D3DDDI_PRESENT_MULTIPLANE_OVERLAY structure [Display Devices], D3DDDI_PRESENT_MULTIPLANE_OVERLAY, d3dumddi/D3DDDI_PRESENT_MULTIPLANE_OVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_PRESENT_MULTIPLANE_OVERLAY
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_PRESENT_MULTIPLANE_OVERLAY
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DDDI_PRESENT_MULTIPLANE_OVERLAY {
 
 ## Members
 
-        
-            `Enabled`
 
-            Indicates if the overlay plane specified by <b>LayerIndex</b> is enabled for display.
-        
-            `hResource`
+`Enabled`
 
-            A handle to the resource that is displayed by using the overlay plane.
-        
-            `LayerIndex`
+Indicates if the overlay plane specified by <b>LayerIndex</b> is enabled for display.
 
-            The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
-        
-            `PlaneAttributes`
+`hResource`
 
-            A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_multiplane_overlay_attributes.md">D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.
-        
-            `SubResourceIndex`
+A handle to the resource that is displayed by using the overlay plane.
 
-            The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or surface, on which an overlay plane is to be displayed.
+`LayerIndex`
+
+The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
+
+`PlaneAttributes`
+
+A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_multiplane_overlay_attributes.md">D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.
+
+`SubResourceIndex`
+
+The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or surface, on which an overlay plane is to be displayed.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _D3DDDI_PRESENT_MULTIPLANE_OVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_multiplane_overlay_attributes.md">D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

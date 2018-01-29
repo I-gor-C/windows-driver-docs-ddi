@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 53baa93a-bd71-4975-86cc-51eb31c2f430
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtRenameTransactionManager
+ms.keywords : NtRenameTransactionManager, wdm/NtRenameTransactionManager, NtRenameTransactionManager routine [Kernel-Mode Driver Architecture], kernel.ntrenametransactionmanager, ntx_299b8860-3b7b-4bc7-8f33-c3805fd0a38f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NtRenameTransactionManager
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -75,3 +79,7 @@ None
 | **Library** |  |
 | **IRQL** | <=APC_LEVEL |
 | **DDI compliance rules** |  |
+
+## See Also
+
+<a href="..\wdm\nf-wdm-tmrenametransactionmanager.md">TmRenameTransactionManager</a>

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 04e3bac6-c905-4c95-bd1b-e85b46c4296d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.hwvidsynchronizeexecutioncallback, HwVidSynchronizeExecutionCallback callback function [Display Devices], HwVidSynchronizeExecutionCallback, PMINIPORT_SYNCHRONIZE_ROUTINE, PMINIPORT_SYNCHRONIZE_ROUTINE, video/HwVidSynchronizeExecutionCallback, VideoMiniport_Functions_98ebe64f-4ba9-475b-8095-b97dceaaf946.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwVidSynchronizeExecutionCallback
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -83,17 +87,12 @@ The miniport driver of an adapter that does not generate interrupts also can hav
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : FC05C59C-F8B5-4573-A1F0-722A25BDA151
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_CP_NI_INFO, GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO
+ms.keywords : sensors.gnss_cp_ni_info, GNSS_CP_NI_INFO structure [Sensor Devices], GNSS_CP_NI_INFO, PGNSS_CP_NI_INFO, gnssdriver/PGNSS_CP_NI_INFO, gnssdriver/GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO, PGNSS_CP_NI_INFO structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_CP_NI_INFO
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PGNSS_CP_NI_INFO, GNSS_CP_NI_INFO"
 ---
 
 # GNSS_CP_NI_INFO structure
@@ -49,14 +53,22 @@ typedef struct {
 
 ## Members
 
-        
-            `Size`
 
-            Structure size.
-        
-            `Version`
+`NotificationText`
 
-            Version number.
+
+
+`RequestorId`
+
+
+
+`Size`
+
+Structure size.
+
+`Version`
+
+Version number.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bbe60db6-85ae-480c-8852-80935a52697e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION, REG_REPLACE_KEY_INFORMATION
+ms.keywords : kernel.reg_replace_key_information, PREG_REPLACE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_29e33c32-67fc-48e0-a976-9830278009bc.xml, REG_REPLACE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_REPLACE_KEY_INFORMATION, _REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION, wdm/PREG_REPLACE_KEY_INFORMATION, REG_REPLACE_KEY_INFORMATION, wdm/REG_REPLACE_KEY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Windows Vista SP2 and later versions of
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_REPLACE_KEY_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PREG_REPLACE_KEY_INFORMATION, REG_REPLACE_KEY_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -52,33 +56,33 @@ typedef struct _REG_REPLACE_KEY_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `NewFileName`
+`CallContext`
 
-            The name of the file with the registry information. This file is typically created by using the <b>RegSaveKey</b> function.
-        
-            `Object`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
 
-            A pointer to a registry key object for the key whose metadata is about to be replaced.
-        
-            `ObjectContext`
+`NewFileName`
 
-            A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `OldFileName`
+The name of the file with the registry information. This file is typically created by using the <b>RegSaveKey</b> function.
 
-            The name of the file that receives a backup copy of the registry information being replaced.
-        
-            `Reserved`
+`Object`
 
-            This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+A pointer to a registry key object for the key whose metadata is about to be replaced.
 
-    ## Remarks
-        The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to replace the metadata for a key.
+`ObjectContext`
+
+A pointer to driver-defined context information, which the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`OldFileName`
+
+The name of the file that receives a backup copy of the registry information being replaced.
+
+`Reserved`
+
+This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+## Remarks
+The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to replace the metadata for a key.
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
@@ -90,16 +94,12 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
  
 
  

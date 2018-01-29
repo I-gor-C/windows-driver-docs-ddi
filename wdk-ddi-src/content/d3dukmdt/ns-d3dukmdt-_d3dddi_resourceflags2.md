@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2edf2104-ad17-4c84-b991-57e64565029f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_RESOURCEFLAGS2, D3DDDI_RESOURCEFLAGS2
+ms.keywords : _D3DDDI_RESOURCEFLAGS2, D3DDDI_RESOURCEFLAGS2 structure [Display Devices], D3DDDI_RESOURCEFLAGS2, display.d3dddi_resourceflags2, d3dukmdt/D3DDDI_RESOURCEFLAGS2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_RESOURCEFLAGS2
-req.alt-loc : D3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_RESOURCEFLAGS2
 ---
 
@@ -69,16 +73,12 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dukmdt.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource2.md">CreateResource2</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_formatop.md">FORMATOP</a>
-</dt>
-</dl>
+
  
 
  

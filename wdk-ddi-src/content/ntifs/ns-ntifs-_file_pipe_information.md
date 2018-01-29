@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION
+ms.keywords : ifsk.file_pipe_information, FILE_PIPE_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_PIPE_INFORMATION, _FILE_PIPE_INFORMATION, ntifs/FILE_PIPE_INFORMATION, PFILE_PIPE_INFORMATION structure pointer [Installable File System Drivers], PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_PIPE_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION
 ---
 
 # _FILE_PIPE_INFORMATION structure
@@ -47,11 +51,10 @@ typedef struct _FILE_PIPE_INFORMATION {
 
 ## Members
 
-        
-            `CompletionMode`
 
-            One of the following values.
+`CompletionMode`
 
+One of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -68,11 +71,10 @@ typedef struct _FILE_PIPE_INFORMATION {
 <td>Non-blocking mode </td>
 </tr>
 </table>
-        
-            `ReadMode`
 
-            One of the following values.
+`ReadMode`
 
+One of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -90,14 +92,13 @@ typedef struct _FILE_PIPE_INFORMATION {
 </tr>
 </table>
 
-    ## Remarks
-        If <b>ReadMode</b> is set to FILE_PIPE_BYTE_STREAM_MODE, any attempt to change it must fail with a STATUS_INVALID_PARAMETER error code.
+## Remarks
+If <b>ReadMode</b> is set to FILE_PIPE_BYTE_STREAM_MODE, any attempt to change it must fail with a STATUS_INVALID_PARAMETER error code.
 
 When <b>CompletionMode</b> is set to FILE_PIPE_QUEUE_OPERATION, if the pipe is connected to, read to, or written from, the operation is not completed until there is data to read, all data is written, or a client is connected. 
+<div class="alert"><b>Note</b>  A value of FILE_PIPE_QUEUE_OPERATION for <b>CompletionMode</b> can result in waiting indefinitely for a client process to perform an action.</div><div> </div>When <b>CompletionMode</b> is set to FILE_PIPE_COMPLETE_OPERATION, if the pipe is being connected to, read to, or written from, the operation is completed immediately. 
 
-When <b>CompletionMode</b> is set to FILE_PIPE_COMPLETE_OPERATION, if the pipe is being connected to, read to, or written from, the operation is completed immediately. 
-
-For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.</p>
+For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : af8126cd-e931-4106-b543-9c84ee110901
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortWriteRegisterBufferUchar
+ms.keywords : storport/StorPortWriteRegisterBufferUchar, StorPortWriteRegisterBufferUchar routine [Storage Devices], storage.storportwriteregisterbufferuchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml, StorPortWriteRegisterBufferUchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortWriteRegisterBufferUchar
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -61,7 +65,7 @@ Pointer to a buffer containing the data to be written.
 
 `Buffer`
 
-
+TBD
 
 `Count`
 
@@ -87,11 +91,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\nf-srb-scsiportwriteregisterbufferuchar.md">ScsiPortWriteRegisterBufferUchar</a>
-</dt>
-</dl>
+
  
 
  

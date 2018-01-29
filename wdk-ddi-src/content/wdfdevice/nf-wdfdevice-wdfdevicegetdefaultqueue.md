@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 914c4ef8-2210-468c-8720-11f8adf9dce7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetDefaultQueue
+ms.keywords : kmdf.wdfdevicegetdefaultqueue, DFDeviceObjectGeneralRef_17d2efb6-80ae-4045-baa4-68d610b9e0c3.xml, WdfDeviceGetDefaultQueue, PFN_WDFDEVICEGETDEFAULTQUEUE, WdfDeviceGetDefaultQueue method, wdf.wdfdevicegetdefaultqueue, wdfdevice/WdfDeviceGetDefaultQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceGetDefaultQueue
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -65,8 +69,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Remarks
 
 For more information about default I/O queues, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-i-o-queues">Creating I/O Queues</a>.
-
-The following code example obtains a handle to a device's default I/O queue.</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

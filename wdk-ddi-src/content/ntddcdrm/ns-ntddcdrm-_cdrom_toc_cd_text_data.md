@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 92e87c1d-17c4-4ac8-af9d-08863ce84c9e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_TOC_CD_TEXT_DATA, CDROM_TOC_CD_TEXT_DATA, *PCDROM_TOC_CD_TEXT_DATA
+ms.keywords : PCDROM_TOC_CD_TEXT_DATA, *PCDROM_TOC_CD_TEXT_DATA, storage.cdrom_toc_cd_text_data, _CDROM_TOC_CD_TEXT_DATA, structs-CD-ROM_7c78a819-dd2b-45bf-ba44-b8115fe1b998.xml, CDROM_TOC_CD_TEXT_DATA structure [Storage Devices], ntddcdrm/PCDROM_TOC_CD_TEXT_DATA, ntddcdrm/CDROM_TOC_CD_TEXT_DATA, PCDROM_TOC_CD_TEXT_DATA structure pointer [Storage Devices], CDROM_TOC_CD_TEXT_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_TOC_CD_TEXT_DATA
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CDROM_TOC_CD_TEXT_DATA, *PCDROM_TOC_CD_TEXT_DATA
 ---
 
@@ -49,22 +53,22 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA {
 
 ## Members
 
-        
-            `Descriptors`
 
-            Contains zero or more text data block descriptors of type <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data_block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>.
-        
-            `Length`
+`Descriptors`
 
-            Indicates the number of bytes to be transferred in response to the IOCTL_CDROM_READ_TOC_EX IOCTL. This length value does not include the length of the <b>Length </b>member itself.
-        
-            `Reserved1`
+Contains zero or more text data block descriptors of type <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data_block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>.
 
-            Reserved.
-        
-            `Reserved2`
+`Length`
 
-            Reserved.
+Indicates the number of bytes to be transferred in response to the IOCTL_CDROM_READ_TOC_EX IOCTL. This length value does not include the length of the <b>Length </b>member itself.
+
+`Reserved1`
+
+Reserved.
+
+`Reserved2`
+
+Reserved.
 
 
 ## Requirements
@@ -75,19 +79,14 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data_block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
+
  
 
  

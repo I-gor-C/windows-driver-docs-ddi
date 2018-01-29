@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 964009ab-5f90-4f23-b22a-4c3e03d2449e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _INTERRUPT_SYNCHRONIZATION_MODE, INTERRUPT_SYNCHRONIZATION_MODE
+ms.keywords : InterruptSynchronizePerMessage, INTERRUPT_SYNCHRONIZATION_MODE enumeration [Storage Devices], InterruptSupportNone, storage.interrupt_synchronization_mode, storport/InterruptSynchronizePerMessage, INTERRUPT_SYNCHRONIZATION_MODE, structs-storport_036aa424-5b04-4bf5-8418-8da008834c5b.xml, storport/InterruptSynchronizeAll, storport/InterruptSupportNone, storport/INTERRUPT_SYNCHRONIZATION_MODE, _INTERRUPT_SYNCHRONIZATION_MODE, InterruptSynchronizeAll
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : INTERRUPT_SYNCHRONIZATION_MODE
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : INTERRUPT_SYNCHRONIZATION_MODE
 req.product : Windows 10 or later.
 ---
@@ -81,20 +85,14 @@ Miniport drivers define the HBA's interrupt synchronization mode by assigning on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a>
-</dt>
-<dt>
-<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
+
+<a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a>
+
+<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+
  
 
  

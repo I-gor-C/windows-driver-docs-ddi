@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 87B34452-DC2C-4FD4-B0F8-51EFAF2D4AA6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsSetPoHandle
+ms.keywords : buses.urssetpohandle, ursdevice/UrsSetPoHandle, UrsSetPoHandle, UrsSetPoHandle function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UrsSetPoHandle
-req.alt-loc : Urscxstub.lib,Urscxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Urscxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_USAGE
 req.product : Windows 10 or later.
 ---
@@ -83,15 +87,10 @@ In the client driver's implementation of the <a href="..\wdfdevice\nc-wdfdevice-
 
 ## See Also
 
-<dl>
-<dt>
+<i>EvtDeviceWdmPrePoFxUnregisterDevice</i>
+
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_pre_po_fx_unregister_device.md">EvtDeviceWdmPrePoFxUnregisterDevice</a>
-</dt>
-<dt><i>EvtDeviceWdmPrePoFxUnregisterDevice</i></dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 242eb066-4b2e-4abe-b082-5bfd814c5774
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetVersion
+ms.keywords : VideoPortGetVersion function [Display Devices], VideoPort_Functions_b616e0f2-430a-43ca-a43f-44cdcaec757f.xml, display.videoportgetversion, VideoPortGetVersion, video/VideoPortGetVersion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortGetVersion
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ Pointer to a <a href="..\video\ns-video-_vposversioninfo.md">VPOSVERSIONINFO</a>
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\ns-video-_vposversioninfo.md">VPOSVERSIONINFO</a>
-</dt>
-</dl>
+
  
 
  

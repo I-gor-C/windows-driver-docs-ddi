@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 87906511-7bcb-4f4d-9383-44b0501536e3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO
+ms.keywords : _DEVICE_MEDIA_INFO, MEDIA_READ_ONLY, ntddstor/DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO, PDEVICE_MEDIA_INFO structure pointer [Storage Devices], MEDIA_READ_WRITE, MEDIA_ERASEABLE, MEDIA_WRITE_ONCE, DEVICE_MEDIA_INFO structure [Storage Devices], MEDIA_WRITE_PROTECTED, PDEVICE_MEDIA_INFO, ntddstor/PDEVICE_MEDIA_INFO, MEDIA_CURRENTLY_MOUNTED, storage.device_media_info, DEVICE_MEDIA_INFO, structs-general_e2c363ff-f053-45be-a807-f90480c0ae1f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_MEDIA_INFO
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO"
 ---
 
 # _DEVICE_MEDIA_INFO structure
@@ -77,13 +81,13 @@ typedef struct _DEVICE_MEDIA_INFO {
 
 ## Members
 
-        
-            `DeviceSpecific`
 
-            
+`DeviceSpecific`
 
-    ## Remarks
-        This structure is used by a storage driver to indicate the types of media supported by a device and which type is currently mounted, if any. A driver must provide this information if it might control drives in a media library or changer or if its device might be accessed by the Removable Storage Manager (RSM). 
+
+
+## Remarks
+This structure is used by a storage driver to indicate the types of media supported by a device and which type is currently mounted, if any. A driver must provide this information if it might control drives in a media library or changer or if its device might be accessed by the Removable Storage Manager (RSM). 
 
 The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for each medium type supported by the device, embedded in a <a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a> structure.
 
@@ -95,16 +99,12 @@ The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for eac
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567939">TapeMiniGetMediaTypes</a>
-</dt>
-<dt>
 <a href="..\ntddstor\ne-ntddstor-_storage_media_type.md">STORAGE_MEDIA_TYPE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567939">TapeMiniGetMediaTypes</a>
+
  
 
  

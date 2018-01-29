@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 60216196-f8c7-4555-a461-4862ce6bc376
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_VENDOR_SPECIFIC_COMMAND, *PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND
+ms.keywords : bltooth.sdpgetnextelement, SdpGetNextElement callback function [Bluetooth Devices], SdpGetNextElement, PGETNEXTELEMENT, PGETNEXTELEMENT, sdplib/SdpGetNextElement, bth_funcs_344a59cb-6151-4634-bc5f-cb23c58eb329.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
 req.header : bthsdpddi.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpGetNextElement
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
@@ -100,8 +104,8 @@ Calling this function with the
     <i>CurrentElement</i> parameter set to <b>NULL</b> returns the first entry in the container stream.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">
-    BTHDDI_SDP_PARSE_INTERFACE</a> structure.
+    <mshelp:link keywords="bltooth.bthddi_sdp_parse_interface" tabindex="0"><b>
+    BTHDDI_SDP_PARSE_INTERFACE</b></mshelp:link> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -117,11 +121,8 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

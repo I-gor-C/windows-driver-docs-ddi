@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : c7bbba08-e9d0-4f78-93d8-e451e4dc2573
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : HwNProcessAddDevicePreDeviceCreate
+ms.keywords : HwNProcessAddDevicePreDeviceCreate, HwNProcessAddDevicePreDeviceCreate function, hwnclx/HwNProcessAddDevicePreDeviceCreate, gpiobtn.hwnprocessadddevicepredevicecreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwNProcessAddDevicePreDeviceCreate
-req.alt-loc : Mshwnclxstub.lib,Mshwnclxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mshwnclxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX"
 ---
 
@@ -82,12 +86,10 @@ Returns STATUS_SUCCESS if function succeeds. Returns STATUS_INVALID_PARAMETER if
 
 ## See Also
 
-<dl>
-<dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
-<dt>
 <a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
  
 
  

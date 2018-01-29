@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : CB0DD6C8-DFB3-42E0-B38F-341677A72E29
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode, IMiniportAudioEngineNode::GetMixFormat, GetMixFormat
+ms.keywords : GetMixFormat method [Audio Devices], audio.iminiportaudioenginenode_getmixformat, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode::GetMixFormat, IMiniportAudioEngineNode::GetMixFormat, GetMixFormat, GetMixFormat method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices], GetMixFormat method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportAudioEngineNode.GetMixFormat
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -82,14 +86,10 @@ The data buffer size.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
-</dt>
-</dl>
+
  
 
  

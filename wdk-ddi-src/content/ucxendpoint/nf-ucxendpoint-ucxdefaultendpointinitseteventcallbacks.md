@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5CE3F1B5-9C6D-4061-ADF4-B388C81C0674
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxDefaultEndpointInitSetEventCallbacks
+ms.keywords : UcxDefaultEndpointInitSetEventCallbacks, buses._ucxdefaultendpointinitseteventcallbacks, UcxDefaultEndpointInitSetEventCallbacks method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxDefaultEndpointInitSetEventCallbacks
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_ENDPOINT_CHARACTERISTIC_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,14 +85,10 @@ The client driver calls this method to set function pointers to its event callba
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add.md">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a>
-</dt>
-<dt>
 <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
-</dt>
-</dl>
+
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add.md">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a>
+
  
 
  

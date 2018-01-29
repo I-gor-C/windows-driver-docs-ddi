@@ -7,8 +7,8 @@ old-location : pos\posbarcodescannerimageprevieweventdata.htm
 old-project : pos
 ms.assetid : dc542e81-9078-4e14-8c8d-9cfaeb5b5495
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosEventDataHeader, PosBarcodeScannerImagePreviewEventData, PosEventDataHeader
+ms.date : 1/18/2018
+ms.keywords : PosBarcodeScannerImagePreviewEventData, _PosEventDataHeader, pointofservicedriverinterface/PosBarcodeScannerImagePreviewEventData, PosBarcodeScannerImagePreviewEventData structure, PosEventDataHeader structure, PosEventDataHeader, pos.posbarcodescannerimageprevieweventdata, pointofservicedriverinterface/PosEventDataHeader
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosEventDataHeader
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosBarcodeScannerImagePreviewEventData, PosEventDataHeader
 ---
 
@@ -47,17 +51,17 @@ typedef struct _PosEventDataHeader {
 
 ## Members
 
-        
-            `DataLength`
 
-            The length, in bytes, of the image preview data.
-        
-            `EventType`
+`DataLength`
 
-            The type of event. For the <a href="https://msdn.microsoft.com/library/windows/hardware/dn757466">BarcodeScannerImagePreviewReceived</a> event the value of this field is <b>BarcodeScannerImagePreviewReceived</b>.
+The length, in bytes, of the image preview data.
 
-    ## Remarks
-        The image preview bitmap data immediately follows after this structure in memory for <i>DataLength</i> bytes.</p>
+`EventType`
+
+The type of event. For the <a href="https://msdn.microsoft.com/library/windows/hardware/dn757466">BarcodeScannerImagePreviewReceived</a> event the value of this field is <b>BarcodeScannerImagePreviewReceived</b>.
+
+## Remarks
+The image preview bitmap data immediately follows after this structure in memory for <i>DataLength</i> bytes.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F4C385C8-00A2-44AB-A7E6-4C9AA19CFFB0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_DEVICE_FUNCS_VIDEO_0021, D3D12DDI_DEVICE_FUNCS_VIDEO_0021
+ms.keywords : display.d3d12ddi_device_funcs_video, D3D12DDI_DEVICE_FUNCS_VIDEO_0021 structure [Display Devices], D3D12DDI_DEVICE_FUNCS_VIDEO_0021, d3d12umddi/D3D12DDI_DEVICE_FUNCS_VIDEO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_DEVICE_FUNCS_VIDEO_0021
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_DEVICE_FUNCS_VIDEO_0021
 ---
 
@@ -63,78 +67,78 @@ typedef struct D3D12DDI_DEVICE_FUNCS_VIDEO_0021 {
 
 ## Members
 
-        
-            `pfnCalcPrivateContentProtectionSessionSize`
 
-            A function that calculates the size of a private content protection session.
-        
-            `pfnCalcPrivateVideoDecoderSize`
+`pfnCalcPrivateContentProtectionSessionSize`
 
-            A function that calculates the size of a private decoder.
-        
-            `pfnCalcPrivateVideoProcessorSize`
+A function that calculates the size of a private content protection session.
 
-            A function that calculates the size of a private video processor.
-        
-            `pfnContentProtectionSessionGetStatus`
+`pfnCalcPrivateVideoDecoderSize`
 
-            A function that gets the status of a content protection session.
-        
-            `pfnContentProtectionSessionInvokeFunction`
+A function that calculates the size of a private decoder.
 
-            A function that invokes a function in a content protection session.
-        
-            `pfnContentProtectionSessionSetupHardwareKey`
+`pfnCalcPrivateVideoProcessorSize`
 
-            A function that sets up a hardware key for a content protection session.
-        
-            `pfnCreateContentProtectionSession`
+A function that calculates the size of a private video processor.
 
-            A function that creates a content protection system.
-        
-            `pfnCreateVideoDecoder`
+`pfnContentProtectionSessionGetStatus`
 
-            A function that creates a video decoder.
-        
-            `pfnCreateVideoProcessor`
+A function that gets the status of a content protection session.
 
-            A function that creates a video processor.
-        
-            `pfnDecoderTrimAllocations`
+`pfnContentProtectionSessionInvokeFunction`
 
-            A function that trims decoder allocations.
-        
-            `pfnDestroyContentProtectionSession`
+A function that invokes a function in a content protection session.
 
-            A function that destroys a content protection system.
-        
-            `pfnDestroyVideoDecoder`
+`pfnContentProtectionSessionSetupHardwareKey`
 
-            A function that destroys a video decoder.
-        
-            `pfnDestroyVideoProcessor`
+A function that sets up a hardware key for a content protection session.
 
-            A function that destroys a video processor.
-        
-            `pfnGetBitstreamEncryptionSchemeCount`
+`pfnCreateContentProtectionSession`
 
-            A function that gets the count of bitstream encryption schemes.
-        
-            `pfnGetCaps`
+A function that creates a content protection system.
 
-            A function that gets video capabilities.
-        
-            `pfnGetDecodeFormatCount`
+`pfnCreateVideoDecoder`
 
-            A function that gets the decode format count.
-        
-            `pfnGetDecodeProfileCount`
+A function that creates a video decoder.
 
-            A function that gets the decode profile count.
-        
-            `pfnProcessorTrimAllocations`
+`pfnCreateVideoProcessor`
 
-            A function that trims processor allocations.
+A function that creates a video processor.
+
+`pfnDecoderTrimAllocations`
+
+A function that trims decoder allocations.
+
+`pfnDestroyContentProtectionSession`
+
+A function that destroys a content protection system.
+
+`pfnDestroyVideoDecoder`
+
+A function that destroys a video decoder.
+
+`pfnDestroyVideoProcessor`
+
+A function that destroys a video processor.
+
+`pfnGetBitstreamEncryptionSchemeCount`
+
+A function that gets the count of bitstream encryption schemes.
+
+`pfnGetCaps`
+
+A function that gets video capabilities.
+
+`pfnGetDecodeFormatCount`
+
+A function that gets the decode format count.
+
+`pfnGetDecodeProfileCount`
+
+A function that gets the decode profile count.
+
+`pfnProcessorTrimAllocations`
+
+A function that trims processor allocations.
 
 
 ## Requirements
@@ -145,13 +149,10 @@ typedef struct D3D12DDI_DEVICE_FUNCS_VIDEO_0021 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_device_funcs_core_0010.md">D3D12DDI_DEVICE_FUNCS_CORE_0010</a>
-</dt>
-</dl>
+
  
 
  

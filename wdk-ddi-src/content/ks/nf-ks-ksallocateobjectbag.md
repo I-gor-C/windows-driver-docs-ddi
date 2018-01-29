@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2fc5689f-e1d6-481d-b137-301f10b386e8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAllocateObjectBag
+ms.keywords : ks/KsAllocateObjectBag, KsAllocateObjectBag, KsAllocateObjectBag function [Streaming Media Devices], stream.ksallocateobjectbag, avfunc_a76be7a0-6dfa-4428-8317-4a8df31dec6e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAllocateObjectBag
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -82,23 +86,16 @@ For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
+
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+
 <a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5F0729DB-C991-4745-9550-9D25D6836A1F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcUnregisterIoTimeout
+ms.keywords : audio.iadapterpowermanagement3, IAdapterPowerManagement3 interface [Audio Devices], IAdapterPowerManagement3 interface [Audio Devices], described, IAdapterPowerManagement3, portcls/IAdapterPowerManagement3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IAdapterPowerManagement3
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -39,6 +43,7 @@ req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 The IAdapterPowerManagement3 interface inherits from <b>IUnknown</b>, and it is used for receiving power management messages.
 
 To register this interface with PortCls, the adapter driver must call  <a href="..\portcls\nf-portcls-pcregisteradapterpowermanagement.md">PcRegisterAdapterPowerManagement</a>.
+<div class="alert"><b>Note</b>  If you want to fill the <a href="http://go.microsoft.com/fwlink/p/?linkid=143127">caps structure</a> for your device, your adapter driver can call <b>PcRegisterAdapterPowerManagement</b> from within the <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff540521(v=vs.85).aspx">AddDevice</a> routine, or before your driver calls <b>AddDevice.</b></div><div> </div>
 
 ## Methods
 
@@ -61,16 +66,12 @@ To register this interface with PortCls, the adapter driver must call  <a href="
 | **Header** | portcls.h |
 | **DLL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
-</dt>
-<dt>
 <a href="..\portcls\nf-portcls-pcregisteradapterpowermanagement.md">PcRegisterAdapterPowerManagement</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
+
  
 
  

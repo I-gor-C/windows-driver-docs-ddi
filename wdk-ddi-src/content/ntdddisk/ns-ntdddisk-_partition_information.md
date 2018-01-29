@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 06c3ed56-3640-431d-a4f0-bf3228a02cc2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PARTITION_INFORMATION, *PPARTITION_INFORMATION, PARTITION_INFORMATION
+ms.keywords : storage.partition_information, structs-disk_19ff49c5-6929-46fb-a9c2-4850969a99a8.xml, PARTITION_INFORMATION structure [Storage Devices], PPARTITION_INFORMATION structure pointer [Storage Devices], ntdddisk/PPARTITION_INFORMATION, _PARTITION_INFORMATION, PPARTITION_INFORMATION, ntdddisk/PARTITION_INFORMATION, *PPARTITION_INFORMATION, PARTITION_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PARTITION_INFORMATION
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PPARTITION_INFORMATION, PARTITION_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PARTITION_INFORMATION, *PPARTITION_INFORMATION
 ---
 
 # _PARTITION_INFORMATION structure
@@ -53,41 +57,41 @@ typedef struct _PARTITION_INFORMATION {
 
 ## Members
 
-        
-            `BootIndicator`
 
-            Indicates, when <b>TRUE</b>, that this partition is a bootable (active) partition for this device. When <b>FALSE</b>, this partition is not bootable. This member is set according to the partition list entry boot indicator returned by <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>.
-        
-            `HiddenSectors`
+`BootIndicator`
 
-            Specifies the number of hidden sectors.
-        
-            `PartitionLength`
+Indicates, when <b>TRUE</b>, that this partition is a bootable (active) partition for this device. When <b>FALSE</b>, this partition is not bootable. This member is set according to the partition list entry boot indicator returned by <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>.
 
-            Specifies the length in bytes of the partition.
-        
-            `PartitionNumber`
+`HiddenSectors`
 
-            Specifies the number of the partition.
-        
-            `PartitionType`
+Specifies the number of hidden sectors.
 
-            
-        
-            `RecognizedPartition`
+`PartitionLength`
 
-            Indicates, when <b>TRUE</b>, that the system recognized the type of the partition. When <b>FALSE</b>, the system did not recognize the type of the partition.
-        
-            `RewritePartition`
+Specifies the length in bytes of the partition.
 
-            Indicates, when <b>TRUE</b>, that the partition information has changed. When <b>FALSE</b>, the partition information has not changed. This member has a value of <b>TRUE</b> when the partition has changed as a result of an <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_set_drive_layout.md">IOCTL_DISK_SET_DRIVE_LAYOUT</a> IOCTL. This informs the system that the partition information needs to be rewritten.
-        
-            `StartingOffset`
+`PartitionNumber`
 
-            Specifies the offset in bytes on drive where the partition begins.
+Specifies the number of the partition.
 
-    ## Remarks
-        The partition entry data in PARTITION_INFORMATION forms part of the drive layout information reported by the legacy routine <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a> in the <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information.md">DRIVE_LAYOUT_INFORMATION</a> structure. DRIVE_LAYOUT_INFORMATION contains an array of PARTITION_INFORMATION structures pointed to by its <b>PartitionEntry</b> member. Each partition entry contains information for a partition on the drive. PARTITION_INFORMATION is also used with the legacy routine <a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a> to change the properties of the partition, such as its type, recorded on the disk. 
+`PartitionType`
+
+
+
+`RecognizedPartition`
+
+Indicates, when <b>TRUE</b>, that the system recognized the type of the partition. When <b>FALSE</b>, the system did not recognize the type of the partition.
+
+`RewritePartition`
+
+Indicates, when <b>TRUE</b>, that the partition information has changed. When <b>FALSE</b>, the partition information has not changed. This member has a value of <b>TRUE</b> when the partition has changed as a result of an <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_set_drive_layout.md">IOCTL_DISK_SET_DRIVE_LAYOUT</a> IOCTL. This informs the system that the partition information needs to be rewritten.
+
+`StartingOffset`
+
+Specifies the offset in bytes on drive where the partition begins.
+
+## Remarks
+The partition entry data in PARTITION_INFORMATION forms part of the drive layout information reported by the legacy routine <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a> in the <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information.md">DRIVE_LAYOUT_INFORMATION</a> structure. DRIVE_LAYOUT_INFORMATION contains an array of PARTITION_INFORMATION structures pointed to by its <b>PartitionEntry</b> member. Each partition entry contains information for a partition on the drive. PARTITION_INFORMATION is also used with the legacy routine <a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a> to change the properties of the partition, such as its type, recorded on the disk. 
 
 In Windows 2000 and later operating systems, disk drivers should use structures <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a> and <a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a> along with routines <a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a> and <a href="..\ntddk\nf-ntddk-iosetpartitioninformationex.md">IoSetPartitionInformationEx</a> to read and alter partition information on the disk.
 
@@ -99,31 +103,22 @@ In Windows 2000 and later operating systems, disk drivers should use structures 
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-iosetpartitioninformationex.md">IoSetPartitionInformationEx</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information.md">DRIVE_LAYOUT_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a>
+
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
+
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
+
 <a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information.md">DRIVE_LAYOUT_INFORMATION</a>
+
+<a href="..\ntddk\nf-ntddk-iosetpartitioninformationex.md">IoSetPartitionInformationEx</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f5ae426a-9d9d-4391-b87f-c4281dc9cadc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassRegisterFilterWithNoKSPins
+ms.keywords : strclass-routines_d338a3be-7760-46b6-aeba-e9cbac45afe3.xml, StreamClassRegisterFilterWithNoKSPins routine [Streaming Media Devices], StreamClassRegisterFilterWithNoKSPins, strmini/StreamClassRegisterFilterWithNoKSPins, stream.streamclassregisterfilterwithnokspins
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassRegisterFilterWithNoKSPins
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -98,11 +102,8 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
-</dt>
-</dl>
+
  
 
  

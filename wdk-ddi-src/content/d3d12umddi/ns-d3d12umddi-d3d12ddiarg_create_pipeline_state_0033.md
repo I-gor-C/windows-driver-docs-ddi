@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2a9108ab-5852-4053-9a7a-266ae1b1dced
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_CREATE_PIPELINE_STATE_0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033
+ms.keywords : D3D12DDIARG_CREATE_PIPELINE_STATE_0033 structure [Display Devices], D3D12DDIARG_CREATE_PIPELINE_STATE_0033, display.d3d12ddiarg-create-pipeline-state-0033, d3d12umddi/D3D12DDIARG_CREATE_PIPELINE_STATE_0033
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_CREATE_PIPELINE_STATE_0033
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_CREATE_PIPELINE_STATE_0033
 ---
 
@@ -68,90 +72,90 @@ typedef struct _D3D12DDIARG_CREATE_PIPELINE_STATE_0033 {
 
 ## Members
 
-        
-            `DSVFormat`
 
-            The DSV format.
-        
-            `hBlendState`
+`DSVFormat`
 
-            The blend state.
-        
-            `hComputeShader`
+The DSV format.
 
-            The compute shader.
-        
-            `hDepthStencilState`
+`hBlendState`
 
-            The depth stencil state.
-        
-            `hDomainShader`
+The blend state.
 
-            The domain shader.
-        
-            `hElementLayout`
+`hComputeShader`
 
-            The element layout.
-        
-            `hGeometryShader`
+The compute shader.
 
-            The geometry shader.
-        
-            `hHullShader`
+`hDepthStencilState`
 
-            The hull shader.
-        
-            `hPixelShader`
+The depth stencil state.
 
-            The pixel shader.
-        
-            `hRasterizerState`
+`hDomainShader`
 
-            The rasterizer state.
-        
-            `hRootSignature`
+The domain shader.
 
-            The root signature.
-        
-            `hVertexShader`
+`hElementLayout`
 
-            The vertex shader.
-        
-            `IBStripCutValue`
+The element layout.
 
-            The index buffer strip cut value.
-        
-            `LibraryReference`
+`hGeometryShader`
 
-            The library reference.
-        
-            `NodeMask`
+The geometry shader.
 
-            Represents the set of nodes.
-        
-            `NumRenderTargets`
+`hHullShader`
 
-            The number of render targets.
-        
-            `PrimitiveTopologyType`
+The hull shader.
 
-            The primitive topology type.
-        
-            `RTVFormats`
+`hPixelShader`
 
-            The RTV formats.
-        
-            `SampleDesc`
+The pixel shader.
 
-            The sample description.
-        
-            `SampleMask`
+`hRasterizerState`
 
-            The sample mask.
-        
-            `ViewInstancingDesc`
+The rasterizer state.
 
-            The view instancing description.
+`hRootSignature`
+
+The root signature.
+
+`hVertexShader`
+
+The vertex shader.
+
+`IBStripCutValue`
+
+The index buffer strip cut value.
+
+`LibraryReference`
+
+The library reference.
+
+`NodeMask`
+
+Represents the set of nodes.
+
+`NumRenderTargets`
+
+The number of render targets.
+
+`PrimitiveTopologyType`
+
+The primitive topology type.
+
+`RTVFormats`
+
+The RTV formats.
+
+`SampleDesc`
+
+The sample description.
+
+`SampleMask`
+
+The sample mask.
+
+`ViewInstancingDesc`
+
+The view instancing description.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 48f80c80-49af-4cda-961b-8967e8d4897a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_SELECT_INTERFACE,
+ms.keywords : _URB_SELECT_INTERFACE, usbstrct_c23c108d-422b-4dee-a1de-a5e341fc1800.xml, usb/_URB_SELECT_INTERFACE, buses._urb_select_interface, _URB_SELECT_INTERFACE structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_SELECT_INTERFACE
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,25 @@ struct _URB_SELECT_INTERFACE {
 
 ## Members
 
-        
-            `ConfigurationHandle`
 
-            Specifies the handle to the configuration that this interface belongs to. The host controller driver returns this handle when the client selects the configuration with an URB_FUNCTION_SELECT_CONFIGURATION request.
-        
-            `Hdr`
+`_URB_HEADER`
 
-            Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_INTERFACE, and <b>Hdr.Length</b> must be the size of the entire URB.
-        
-            `Interface`
 
-            A variable-length <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure that specifies the interface and the new alternate setting for that interface, and if required, the new maximum packet sizes for the corresponding pipes. For more information, see Remarks.
 
-    ## Remarks
-        You can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537164">GET_SELECT_INTERFACE_REQUEST_SIZE</a> macro to determine the size of the URB_FUNCTION_SELECT_INTERFACE URB, and the <b>UsbBuildSelectInterfaceRequest</b> routine to format the URB.
+`ConfigurationHandle`
+
+Specifies the handle to the configuration that this interface belongs to. The host controller driver returns this handle when the client selects the configuration with an URB_FUNCTION_SELECT_CONFIGURATION request.
+
+`Hdr`
+
+Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_INTERFACE, and <b>Hdr.Length</b> must be the size of the entire URB.
+
+`Interface`
+
+A variable-length <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure that specifies the interface and the new alternate setting for that interface, and if required, the new maximum packet sizes for the corresponding pipes. For more information, see Remarks.
+
+## Remarks
+You can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537164">GET_SELECT_INTERFACE_REQUEST_SIZE</a> macro to determine the size of the URB_FUNCTION_SELECT_INTERFACE URB, and the <b>UsbBuildSelectInterfaceRequest</b> routine to format the URB.
 
 The <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure contains information about the interface and its alternate setting.  The <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b> points to an array of <a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a> structures. The array stores information about the  pipes associated with the endpoints of the interface. You can override certain default settings for a pipe, such as its maximum packet size. To alter the maximum packet size, set the USBD_PF_CHANGE_MAX_PACKET flag in <code>Pipes[i].PipeFlags</code>, and then specify the new value in <code>Pipes[i].MaximumPacketSize</code>. 
 
@@ -77,25 +85,18 @@ The <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORM
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/710b4f96-eeee-4313-b068-b2f2e718f8d2">Configuring USB Devices</a>
-</dt>
-<dt>
+
+<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

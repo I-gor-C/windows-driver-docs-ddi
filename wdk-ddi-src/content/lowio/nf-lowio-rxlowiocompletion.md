@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d9018a68-e72c-4149-a6a5-095654d0363c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxLowIoCompletion
+ms.keywords : RxLowIoCompletion, lowio/RxLowIoCompletion, ifsk.rxlowiocompletion, RxLowIoCompletion routine [Installable File System Drivers], rxref_9a8f198a-0177-42f5-9039-3f5d6a3fa14d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxLowIoCompletion
-req.alt-loc : lowio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -77,20 +81,14 @@ If the <i>RxContext</i> parameter indicates this is asynchronous I/O, then <b>Rx
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\lowio\nf-lowio-rxlowiogetbufferaddress.md">RxLowIoGetBufferAddress</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxmapsystembuffer.md">RxMapSystemBuffer</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554591">RxNewMapUserBuffer</a>
-</dt>
-<dt>
+
 <a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
-</dt>
-</dl>
+
+<a href="..\rxprocs\nf-rxprocs-rxmapsystembuffer.md">RxMapSystemBuffer</a>
+
  
 
  

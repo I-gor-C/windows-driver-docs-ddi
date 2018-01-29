@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 649ce7fc-6852-43f3-b944-b2b64fcba874
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcbqueryvidpninterface, DxgkCbQueryVidPnInterface callback function [Display Devices], DxgkCbQueryVidPnInterface, DXGKCB_QUERYVIDPNINTERFACE, DXGKCB_QUERYVIDPNINTERFACE, d3dkmddi/DxgkCbQueryVidPnInterface, DpFunctions_0bbf993b-c05b-402b-af4a-cf1a3ec4d4b8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbQueryVidPnInterface
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -69,22 +73,56 @@ NTSTATUS DxgkcbQueryvidpninterface(
 ## Return Value
 
 <b>DxgkCbQueryVidPnInterface </b>returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The value passed to <i>ppVidPnInterface</i> is not valid.
+</dl>
+</td>
+<td width="60%">
+The value passed to <i>ppVidPnInterface</i> is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN</b></dt>
-</dl>The handle passed to <i>hVidPn</i> is not valid.
+</dl>
+</td>
+<td width="60%">
+The handle passed to <i>hVidPn</i> is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The interface version specified by <i>VidPnInterfaceVersion</i> is not supported.
+</dl>
+</td>
+<td width="60%">
+The interface version specified by <i>VidPnInterfaceVersion</i> is not supported.
 
- 
-
-The following code example shows how to acquire the VidPN-object-management interface from the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>).
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -101,23 +139,16 @@ The following code example shows how to acquire the VidPN-object-management inte
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPN Interface</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570560">VidPN Topology Interface</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570559">VidPN Target Mode Set Interface</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPN Interface</a>
+
  
 
  

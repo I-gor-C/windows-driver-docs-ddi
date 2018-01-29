@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d5b56926-bcfb-4411-b24d-cc0758852510
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF, IAllocatorMXF::GetMessage, GetMessage
+ms.keywords : IAllocatorMXF interface [Audio Devices], GetMessage method, IAllocatorMXF, IAllocatorMXF::GetMessage, GetMessage method [Audio Devices], dmusicks/IAllocatorMXF::GetMessage, GetMessage, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, GetMessage method [Audio Devices], IAllocatorMXF interface, audio.iallocatormxf_getmessage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IAllocatorMXF.GetMessage
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -79,17 +83,12 @@ For more information about the allocator, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
-</dt>
-<dt>
 <a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
-</dt>
-</dl>
+
+<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
+
  
 
  

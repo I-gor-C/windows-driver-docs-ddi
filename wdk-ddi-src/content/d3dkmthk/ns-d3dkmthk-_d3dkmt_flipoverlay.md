@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7e224009-dccb-41e5-99e8-01f1479aa79f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_FLIPOVERLAY, D3DKMT_FLIPOVERLAY
+ms.keywords : OpenGL_Structs_a7694ad8-b12e-41ad-b7e3-159d26fe2f41.xml, D3DKMT_FLIPOVERLAY, _D3DKMT_FLIPOVERLAY, display.d3dkmt_flipoverlay, D3DKMT_FLIPOVERLAY structure [Display Devices], d3dkmthk/D3DKMT_FLIPOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_FLIPOVERLAY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_FLIPOVERLAY
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DKMT_FLIPOVERLAY {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
-        
-            `hOverlay`
+`hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to be flipped.
-        
-            `hSource`
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
-        
-            `pPrivateDriverData`
+`hOverlay`
 
-            [in] A pointer to a block of private data, which is passed from the OpenGL ICD to the display miniport driver.
-        
-            `PrivateDriverDataSize`
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to be flipped.
 
-            [in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
+`hSource`
+
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
+
+`pPrivateDriverData`
+
+[in] A pointer to a block of private data, which is passed from the OpenGL ICD to the display miniport driver.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _D3DKMT_FLIPOVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtflipoverlay.md">D3DKMTFlipOverlay</a>
-</dt>
-</dl>
+
  
 
  

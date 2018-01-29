@@ -2,13 +2,13 @@
 UID : NC:ks.PFNKSPIN
 title : PFNKSPIN
 author : windows-driver-content
-description : An AVStream minidriver's callback routine is called when There is data available for a KSPIN structure to process. Use this routine to perform Pin-Centric Processing.The relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin.
+description : An AVStream minidriver's callback routine is called when: There is data available for a KSPIN structure to process. Use this routine to perform Pin-Centric Processing.The relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin.
 old-location : stream\avstrminipinprocess.htm
 old-project : stream
 ms.assetid : d2315dd9-1643-4b8e-a010-8fccc582ca2b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminipinprocess, AVStrMiniPinProcess, AVStrMiniPinConnect, MyAVStrMiniPin routine [Streaming Media Devices], MyAVStrMiniPin, PFNKSPIN, PFNKSPIN, ks/MyAVStrMiniPin, avstclbk_9c9fb1b9-d592-41de-8190-b8b2808ea35b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MyAVStrMiniPin
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,22 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
 
 # PFNKSPIN callback function
-An AVStream minidriver's callback routine is called when:
+An AVStream minidriver's callback routine is called when: 
+<ul>
+<li>There is data available for a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure to process. Use this routine to perform <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a890-491c721ec3a7">Pin-Centric Processing</a>.</li>
+<li>The relevant <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> is serving as a sink pin and is connected to an AVStream source pin.</li>
+</ul>
 
 ## Syntax
 
@@ -82,6 +90,8 @@ The minidriver specifies this routine's address in the <b>Connect</b> member of 
 
 Return STATUS_SUCCESS or the error returned from the attempt to establish an intra-connection. Do not return STATUS_PENDING. 
 
+This routine is optional.
+
 Also see <a href="https://msdn.microsoft.com/04d0d17b-c326-417d-b2e8-58b33420455a">KS Pins</a>.
 
 ## Requirements
@@ -98,23 +108,16 @@ Also see <a href="https://msdn.microsoft.com/04d0d17b-c326-417d-b2e8-58b33420455
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a890-491c721ec3a7">Pin-Centric Processing</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+
 <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a890-491c721ec3a7">Pin-Centric Processing</a>
+
  
 
  

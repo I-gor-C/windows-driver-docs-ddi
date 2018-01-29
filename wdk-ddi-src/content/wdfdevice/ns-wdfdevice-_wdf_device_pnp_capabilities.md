@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0857e32e-9962-44ca-9d61-b98b09073c16
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES
+ms.keywords : DFDeviceObjectGeneralRef_58325ea6-665b-4cf2-bf99-d47636013ee1.xml, wdfdevice/PWDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES, kmdf.wdf_device_pnp_capabilities, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES, PWDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES structure, _WDF_DEVICE_PNP_CAPABILITIES, wdf.wdf_device_pnp_capabilities, PWDF_DEVICE_PNP_CAPABILITIES structure pointer, *PWDF_DEVICE_PNP_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_DEVICE_PNP_CAPABILITIES
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES
 req.product : Windows 10 or later.
 ---
@@ -60,61 +64,61 @@ typedef struct _WDF_DEVICE_PNP_CAPABILITIES {
 
 ## Members
 
-        
-            `Address`
 
-            An address that indicates where the device is located on its bus. 
+`Address`
+
+An address that indicates where the device is located on its bus. 
 
 The interpretation of this number is bus-specific. If the address is unknown or the bus driver does not support an address, the bus driver leaves the <b>Address</b> member at its default value of 0xFFFFFFFF (-1).
 
 The following list describes the information that certain bus drivers store in the <b>Address</b> member for their child devices:
-        
-            `DockDevice`
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device is a docking station.
-        
-            `EjectSupported`
+`DockDevice`
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be ejected from its slot. (This capability enables ejecting a device from its slot, not ejecting media from a device.)
-        
-            `HardwareDisabled`
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device is a docking station.
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device is disabled.
-        
-            `LockSupported`
+`EjectSupported`
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be locked in its slot to prevent ejection. (This capability disables ejecting a device from its slot, not ejecting media from a device.) For more information about WDF_TRI_STATE-typed values, see the following Remarks section.
-        
-            `NoDisplayInUI`
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be ejected from its slot. (This capability enables ejecting a device from its slot, not ejecting media from a device.)
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that Device Manager should not display the device.
-        
-            `Removable`
+`HardwareDisabled`
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be removed while the system is running. If <b>Removable</b> is set to <b>WdfTrue</b> and <b>SurpriseRemovalOK</b> is set to <b>WdfFalse</b>, users should use the system's Unplug or Eject Hardware program.
-        
-            `SilentInstall`
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device is disabled.
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that Device Manager should not display dialog boxes during installation of the device.
-        
-            `Size`
+`LockSupported`
 
-            The size, in bytes, of this structure.
-        
-            `SurpriseRemovalOK`
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be locked in its slot to prevent ejection. (This capability disables ejecting a device from its slot, not ejecting media from a device.) For more information about WDF_TRI_STATE-typed values, see the following Remarks section.
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b> (and if <b>Removable</b> is also set to <b>WdfTrue</b>), that users can remove the device without using the system's Unplug or Eject Hardware program.
-        
-            `UINumber`
+`NoDisplayInUI`
 
-            A number that is associated with the device and can be displayed in user interfaces. This number is typically a user-perceived slot number, such as a number printed next to the slot on the board or some other number that helps the user locate the device. If <b>UINumber</b> is unknown, or if supplying a number would not assist the user in identifying the device's location, the driver sets this value to -1.
-        
-            `UniqueID`
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that Device Manager should not display the device.
 
-            A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device's instance ID is unique to the entire system. If <b>UniqueID</b> is set to <b>WdfFalse</b>, the instance ID is unique only to the device's bus. For more information about instance IDs, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identification-strings">Device Identification Strings</a>.
+`Removable`
 
-    ## Remarks
-        Several members use the <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a> type. For these members, a value of <b>WdfTrue</b> indicates that the device supports the capability and a value of <b>WdfFalse</b> indicates it does not. A value of <b>WdfUseDefault</b> indicates the framework will use the value that a driver lower in the stack provided. For example, if a bus driver specifies <b>WdfTrue</b> for <b>LockSupported</b> and the device's function driver specifies <b>WdfUseDefault</b>, the framework stores <b>WdfTrue</b> for the capability.
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be removed while the system is running. If <b>Removable</b> is set to <b>WdfTrue</b> and <b>SurpriseRemovalOK</b> is set to <b>WdfFalse</b>, users should use the system's Unplug or Eject Hardware program.
+
+`SilentInstall`
+
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that Device Manager should not display dialog boxes during installation of the device.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`SurpriseRemovalOK`
+
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b> (and if <b>Removable</b> is also set to <b>WdfTrue</b>), that users can remove the device without using the system's Unplug or Eject Hardware program.
+
+`UINumber`
+
+A number that is associated with the device and can be displayed in user interfaces. This number is typically a user-perceived slot number, such as a number printed next to the slot on the board or some other number that helps the user locate the device. If <b>UINumber</b> is unknown, or if supplying a number would not assist the user in identifying the device's location, the driver sets this value to -1.
+
+`UniqueID`
+
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device's instance ID is unique to the entire system. If <b>UniqueID</b> is set to <b>WdfFalse</b>, the instance ID is unique only to the device's bus. For more information about instance IDs, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-identification-strings">Device Identification Strings</a>.
+
+## Remarks
+Several members use the <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a> type. For these members, a value of <b>WdfTrue</b> indicates that the device supports the capability and a value of <b>WdfFalse</b> indicates it does not. A value of <b>WdfUseDefault</b> indicates the framework will use the value that a driver lower in the stack provided. For example, if a bus driver specifies <b>WdfTrue</b> for <b>LockSupported</b> and the device's function driver specifies <b>WdfUseDefault</b>, the framework stores <b>WdfTrue</b> for the capability.
 
 The WDF_DEVICE_PNP_CAPABILITIES structure is used as input to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpnpcapabilities.md">WdfDeviceSetPnpCapabilities</a>.
 
@@ -128,16 +132,12 @@ To initialize a WDF_DEVICE_PNP_CAPABILITIES structure, a driver should call <a h
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>
-</dt>
-<dt>
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassignrawdevice.md">WdfPdoInitAssignRawDevice</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>
+
  
 
  

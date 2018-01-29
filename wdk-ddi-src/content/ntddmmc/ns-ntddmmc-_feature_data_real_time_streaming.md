@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3b1b54cc-52a5-48ce-a637-70e289c1944e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING, *PFEATURE_DATA_REAL_TIME_STREAMING
+ms.keywords : FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/PFEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING structure pointer [Storage Devices], *PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING structure [Storage Devices], storage.feature_data_real_time_streaming, _FEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING, structs-CD-ROM_2bd0a42c-a5b8-4a5b-958e-56e1a47a6499.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_REAL_TIME_STREAMING
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FEATURE_DATA_REAL_TIME_STREAMING, *PFEATURE_DATA_REAL_TIME_STREAMING
 ---
 
@@ -53,41 +57,41 @@ typedef struct _FEATURE_DATA_REAL_TIME_STREAMING {
 
 ## Members
 
-        
-            `Header`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `ReadBufferCapacityBlock`
+`Header`
 
-            Indicates, when set to 1, that the device supports the READ BUFFERCAPACITY command.
-        
-            `Reserved1`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            Reserved.
-        
-            `Reserved2`
+`ReadBufferCapacityBlock`
 
-            Reserved.
-        
-            `SetCDSpeed`
+Indicates, when set to 1, that the device supports the READ BUFFERCAPACITY command.
 
-            Indicates, when set to 1, that the device supports the SET CD SPEED command. When set to zero, it indicates that the device does not support the SET CD SPEED command.
-        
-            `StreamRecording`
+`Reserved1`
 
-            Indicates, when set to 1, that the device supports the stream recording operation. When set to zero, this bit indicates that the device might not support the stream recording operation.
-        
-            `WriteSpeedInGetPerf`
+Reserved.
 
-            Indicates, when set to 1, that the device supports the write speed data of the GET PERFORMANCE command and the WRC field of the SETSTREAMING command.
-        
-            `WriteSpeedInMP2A`
+`Reserved2`
 
-            Indicates, when set to 1, that the device supports CD/DVD capabilities &amp; mechanical status mode page.
+Reserved.
 
-    ## Remarks
-        This structure holds data for the feature named "Real Time Streaming" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature allow the initiator to specify the performance level of the device within certain limits allowed by the device. These devices must also indicate to the initiator whether they support stream playback operations. 
+`SetCDSpeed`
+
+Indicates, when set to 1, that the device supports the SET CD SPEED command. When set to zero, it indicates that the device does not support the SET CD SPEED command.
+
+`StreamRecording`
+
+Indicates, when set to 1, that the device supports the stream recording operation. When set to zero, this bit indicates that the device might not support the stream recording operation.
+
+`WriteSpeedInGetPerf`
+
+Indicates, when set to 1, that the device supports the write speed data of the GET PERFORMANCE command and the WRC field of the SETSTREAMING command.
+
+`WriteSpeedInMP2A`
+
+Indicates, when set to 1, that the device supports CD/DVD capabilities &amp; mechanical status mode page.
+
+## Remarks
+This structure holds data for the feature named "Real Time Streaming" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature allow the initiator to specify the performance level of the device within certain limits allowed by the device. These devices must also indicate to the initiator whether they support stream playback operations. 
 
 When queried, devices supporting this feature must return the information indicated in <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>. No other feature-specific information is required.
 
@@ -99,16 +103,12 @@ When queried, devices supporting this feature must return the information indica
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 124184ef-7410-4e04-abb2-e07db4ae2cbf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_DEVICE_DESCRIPTOR, USB_DEVICE_DESCRIPTOR, *PUSB_DEVICE_DESCRIPTOR
+ms.keywords : usbspec/PUSB_DEVICE_DESCRIPTOR, usbspec/USB_DEVICE_DESCRIPTOR, *PUSB_DEVICE_DESCRIPTOR, PUSB_DEVICE_DESCRIPTOR structure pointer [Buses], PUSB_DEVICE_DESCRIPTOR, usbstrct_40e68471-a1e1-4e2e-8bea-77c8f7085589.xml, USB_DEVICE_DESCRIPTOR structure [Buses], buses.usb_device_descriptor, _USB_DEVICE_DESCRIPTOR, USB_DEVICE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_DEVICE_DESCRIPTOR
-req.alt-loc : usbspec.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USB_DEVICE_DESCRIPTOR, *PUSB_DEVICE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_DEVICE_DESCRIPTOR, USB_DEVICE_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -60,65 +64,65 @@ typedef struct _USB_DEVICE_DESCRIPTOR {
 
 ## Members
 
-        
-            `bcdDevice`
 
-            Identifies the version of the device. This value is a binary-coded decimal number.
-        
-            `bcdUSB`
+`bcdDevice`
 
-            Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
-        
-            `bDescriptorType`
+Identifies the version of the device. This value is a binary-coded decimal number.
 
-            Specifies the descriptor type. Must be set to <b>USB_DEVICE_DESCRIPTOR_TYPE</b>.
-        
-            `bDeviceClass`
+`bcdUSB`
 
-            Specifies the class code of the device as assigned by the USB specification group.
-        
-            `bDeviceProtocol`
+Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
 
-            Specifies the protocol code of the device as assigned by the USB specification group.
-        
-            `bDeviceSubClass`
+`bDescriptorType`
 
-            Specifies the subclass code of the device as assigned by the USB specification group.
-        
-            `bLength`
+Specifies the descriptor type. Must be set to <b>USB_DEVICE_DESCRIPTOR_TYPE</b>.
 
-            Specifies the length, in bytes, of this descriptor.
-        
-            `bMaxPacketSize0`
+`bDeviceClass`
 
-            Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.
-        
-            `bNumConfigurations`
+Specifies the class code of the device as assigned by the USB specification group.
 
-            Specifies the total number of possible configurations for the device.
-        
-            `idProduct`
+`bDeviceProtocol`
 
-            Specifies the product identifier. This value is assigned by the manufacturer and is device-specific.
-        
-            `idVendor`
+Specifies the protocol code of the device as assigned by the USB specification group.
 
-            Specifies the vendor identifier for the device as assigned by the USB specification committee.
-        
-            `iManufacturer`
+`bDeviceSubClass`
 
-            Specifies a device-defined index of the string descriptor that provides a string containing the name of the manufacturer of this device.
-        
-            `iProduct`
+Specifies the subclass code of the device as assigned by the USB specification group.
 
-            Specifies a device-defined index of the string descriptor that provides a string that contains a description of the device.
-        
-            `iSerialNumber`
+`bLength`
 
-            Specifies a device-defined index of the string descriptor that provides a string that contains a manufacturer-determined serial number for the device.
+Specifies the length, in bytes, of this descriptor.
 
-    ## Remarks
-        This structure is used to hold a retrieved USB-defined device descriptor. This information can then be used to further configure or retrieve information about the device. Device descriptors are retrieved by submitting a get-descriptor URB.
+`bMaxPacketSize0`
+
+Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.
+
+`bNumConfigurations`
+
+Specifies the total number of possible configurations for the device.
+
+`idProduct`
+
+Specifies the product identifier. This value is assigned by the manufacturer and is device-specific.
+
+`idVendor`
+
+Specifies the vendor identifier for the device as assigned by the USB specification committee.
+
+`iManufacturer`
+
+Specifies a device-defined index of the string descriptor that provides a string containing the name of the manufacturer of this device.
+
+`iProduct`
+
+Specifies a device-defined index of the string descriptor that provides a string that contains a description of the device.
+
+`iSerialNumber`
+
+Specifies a device-defined index of the string descriptor that provides a string that contains a manufacturer-determined serial number for the device.
+
+## Remarks
+This structure is used to hold a retrieved USB-defined device descriptor. This information can then be used to further configure or retrieve information about the device. Device descriptors are retrieved by submitting a get-descriptor URB.
 
 The <b>iManufacturer</b>, <b>iProduct</b>, and <b>iSerialNumber</b> values, when returned from the host controller driver, contain index values into an array of string descriptors maintained by the device. To retrieve these strings, a string descriptor request can be sent to the device using these index values.
 
@@ -130,19 +134,14 @@ The <b>iManufacturer</b>, <b>iProduct</b>, and <b>iSerialNumber</b> values, when
 | **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usb100.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
+
  
 
  

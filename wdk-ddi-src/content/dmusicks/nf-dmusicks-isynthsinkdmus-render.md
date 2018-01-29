@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 731abdaf-f84b-4d4b-a6e0-ee11899fba27
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISynthSinkDMus, ISynthSinkDMus::Render, Render
+ms.keywords : audio.isynthsinkdmus_render, audmp-routines_ada0270e-6234-4508-a323-f4bdaee295ce.xml, Render method [Audio Devices], ISynthSinkDMus::Render, ISynthSinkDMus interface [Audio Devices], Render method, ISynthSinkDMus, Render, dmusicks/ISynthSinkDMus::Render, Render method [Audio Devices], ISynthSinkDMus interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISynthSinkDMus.Render
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -69,7 +73,7 @@ None
 
 ## Remarks
 
-The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.</p>
+The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.
 
 ## Requirements
 | &nbsp; | &nbsp; |

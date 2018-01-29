@@ -7,8 +7,8 @@ old-location : netvista\rilsetexecutorconfigparams_2.htm
 old-project : netvista
 ms.assetid : b8dcfd30-e7fc-45ab-b407-a0719f624c8e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS, *LPRILSETEXECUTORCONFIGPARAMS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILSETEXECUTORCONFIGPARAMS, *LPRILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetexecutorconfigparams_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSETEXECUTORCONFIGPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSETEXECUTORCONFIGPARAMS, *LPRILSETEXECUTORCONFIGPARAMS
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _RILSETEXECUTORCONFIGPARAMS {
 
 ## Members
 
-        
-            `dwExecutor`
 
-            
-        
-            `rilExecutorConfig`
+`dwExecutor`
 
-            
+
+
+`rilExecutorConfig`
+
+
 
 
 ## Requirements

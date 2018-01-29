@@ -7,8 +7,8 @@ old-location : netvista\npi_registration_instance.htm
 old-project : netvista
 ms.assetid : a368f9d9-a7e0-4b35-ba14-b0919f74029d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE
+ms.date : 1/18/2018
+ms.keywords : NPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE, netioddk/PNPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE structure pointer [Network Drivers Starting with Windows Vista], nmrref_a31a8531-bab8-47d5-b79e-a239dcde475f.xml, netioddk/NPI_REGISTRATION_INSTANCE, _NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE structure [Network Drivers Starting with Windows Vista], netvista.npi_registration_instance
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NPI_REGISTRATION_INSTANCE
-req.alt-loc : netioddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NPI_REGISTRATION_INSTANCE
 ---
 
@@ -52,21 +56,20 @@ typedef struct _NPI_REGISTRATION_INSTANCE {
 
 ## Members
 
-        
-            `ModuleId`
 
-            A pointer to an 
+`ModuleId`
+
+A pointer to an 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568813">NPI_MODULEID</a> structure that uniquely
      identifies the network module.
-        
-            `NpiId`
 
-            A pointer to the 
+`NpiId`
+
+A pointer to the 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">NPI</a> identifier for the specific 
      NPI to which the network module
      is registering as either a client or a provider. The NPIID data type is defined as:
      
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -78,10 +81,10 @@ typedef CONST NPIID *PNPIID;</pre>
 </td>
 </tr>
 </table></span></div>
-        
-            `Number`
 
-            The implementation number of the 
+`Number`
+
+The implementation number of the 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">NPI</a> for which the network module
      is registering as either a client or a provider. A network module can support multiple implementations
      of the same 
@@ -91,21 +94,25 @@ typedef CONST NPIID *PNPIID;</pre>
      implementation of an 
      NPI, this member is set to
      zero.
-        
-            `Size`
 
-            The size, in bytes, of the NPI_REGISTRATION_INSTANCE structure.
-        
-            `Version`
+`OPTIONAL`
 
-            The version of the NMR with which the network module is registering. A network module should set
+
+
+`Size`
+
+The size, in bytes, of the NPI_REGISTRATION_INSTANCE structure.
+
+`Version`
+
+The version of the NMR with which the network module is registering. A network module should set
      this member to zero.
 
-    ## Remarks
-        An NPI_REGISTRATION_INSTANCE structure is a member of the 
+## Remarks
+An NPI_REGISTRATION_INSTANCE structure is a member of the 
     <a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a> and 
-    <a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">
-    NPI_PROVIDER_CHARACTERISTICS</a> structures. These structures are used for registering network modules
+    <mshelp:link keywords="netvista.npi_provider_characteristics" tabindex="0"><b>
+    NPI_PROVIDER_CHARACTERISTICS</b></mshelp:link> structures. These structures are used for registering network modules
     with the NMR.
 
 When the NMR calls a cleint module's 
@@ -133,27 +140,20 @@ A network module must make sure that the memory for the NPIID pointed to by the
 | **Minimum UMDF version** |  |
 | **Header** | netioddk.h (include Wsk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
-</dt>
-<dt>
-<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
-</dt>
-<dt>
-<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568813">NPI_MODULEID</a>
-</dt>
-<dt>
 <a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
-</dt>
-</dl>
- 
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568813">NPI_MODULEID</a>
+
+<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
+
+<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
+
+<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

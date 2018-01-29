@@ -7,8 +7,8 @@ old-location : netvista\wwan_context_type.htm
 old-project : netvista
 ms.assetid : 73a18050-fc89-41df-82ce-0f29c5716496
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE, *PWWAN_CONTEXT_TYPE
+ms.date : 1/18/2018
+ms.keywords : wwan/WwanContextTypeMax, WwanContextTypeNone, WWAN_CONTEXT_TYPE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanContextTypeNone, WwanContextTypeVideoShare, wwan/WwanContextTypeVoice, wwan/WwanContextTypePurchase, wwan/WWAN_CONTEXT_TYPE, WwanContextTypeVoice, WWAN_CONTEXT_TYPE, *PWWAN_CONTEXT_TYPE, WwanRef_2f94e3ef-ec5c-47cc-8fe0-295c517ad43a.xml, WwanContextTypeCustom, PWWAN_CONTEXT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanContextTypeCustom, wwan/WwanContextTypeInternet, WwanContextTypePurchase, wwan/PWWAN_CONTEXT_TYPE, WwanContextTypeVpn, wwan/WwanContextTypeVideoShare, netvista.wwan_context_type, _WWAN_CONTEXT_TYPE, PWWAN_CONTEXT_TYPE, WwanContextTypeInternet, WwanContextTypeMax, wwan/WwanContextTypeVpn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_CONTEXT_TYPE
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WWAN_CONTEXT_TYPE, *PWWAN_CONTEXT_TYPE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE"
 req.product : Windows 10 or later.
 ---
 
@@ -58,8 +62,28 @@ typedef enum _WWAN_CONTEXT_TYPE {
 <table>
 
 <tr>
+<td>WwanContextTypeAdmin</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WwanContextTypeApp</td>
+<td></td>
+</tr>
+
+<tr>
 <td>WwanContextTypeCustom</td>
 <td>The context represents a connection to a custom service.</td>
+</tr>
+
+<tr>
+<td>WwanContextTypeEmergencyCall</td>
+<td></td>
+</tr>
+
+<tr>
+<td>WwanContextTypeIms</td>
+<td></td>
 </tr>
 
 <tr>
@@ -68,8 +92,18 @@ typedef enum _WWAN_CONTEXT_TYPE {
 </tr>
 
 <tr>
+<td>WwanContextTypeLteAttach</td>
+<td></td>
+</tr>
+
+<tr>
 <td>WwanContextTypeMax</td>
 <td>The total number of supported context types.</td>
+</tr>
+
+<tr>
+<td>WwanContextTypeMms</td>
+<td></td>
 </tr>
 
 <tr>
@@ -80,6 +114,11 @@ typedef enum _WWAN_CONTEXT_TYPE {
 <tr>
 <td>WwanContextTypePurchase</td>
 <td>Purchase a connection. For example, a walled garden, hot-lining or captive portal.</td>
+</tr>
+
+<tr>
+<td>WwanContextTypeTethering</td>
+<td></td>
 </tr>
 
 <tr>
@@ -96,6 +135,11 @@ typedef enum _WWAN_CONTEXT_TYPE {
 <td>WwanContextTypeVpn</td>
 <td>The context represents a connection to virtual private network (VPN to a corporate
      network).</td>
+</tr>
+
+<tr>
+<td>WwanContextTypeXcap</td>
+<td></td>
 </tr>
 </table>
 
@@ -115,13 +159,10 @@ This enumeration indicates the usage of the provisioned context. For example, wh
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_TYPE enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_TYPE enumeration%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

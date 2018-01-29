@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fc8e4484-4059-4274-bb61-5d3b2f965b19
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoInitAllowForwardingRequestToParent
+ms.keywords : WdfPdoInitAllowForwardingRequestToParent method, wdf.wdfpdoinitallowforwardingrequesttoparent, WdfPdoInitAllowForwardingRequestToParent, kmdf.wdfpdoinitallowforwardingrequesttoparent, PFN_WDFPDOINITALLOWFORWARDINGREQUESTTOPARENT, DFDeviceObjectFdoPdoRef_1c47c0f6-2474-419b-8a6e-1105351ab1d7.xml, wdfpdo/WdfPdoInitAllowForwardingRequestToParent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.9
 req.umdf-ver : 
-req.alt-api : WdfPdoInitAllowForwardingRequestToParent
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ If your driver uses <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtopare
 
 For more information about <b>WdfPdoInitAllowForwardingRequestToParent</b> and <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/requeuing-i-o-requests">Requeuing I/O Requests</a>.
 
-The following code example enables a driver's ability to call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,11 +84,8 @@ The following code example enables a driver's ability to call <a href="..\wdfreq
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>
-</dt>
-</dl>
+
  
 
  

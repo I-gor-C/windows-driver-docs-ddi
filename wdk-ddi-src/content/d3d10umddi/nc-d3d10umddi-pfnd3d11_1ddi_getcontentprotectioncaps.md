@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 51024d63-f58c-45a7-bd6f-9f24a6805878
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.getcontentprotectioncaps, pfnGetContentProtectionCaps callback function [Display Devices], pfnGetContentProtectionCaps, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, d3d10umddi/pfnGetContentProtectionCaps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnGetContentProtectionCaps
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -74,24 +78,54 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>GetContentProtectionCaps</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The content protection capabilities were queried successfully.
+</dl>
+</td>
+<td width="60%">
+The content protection capabilities were queried successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DERR_INVALID_CRYPTO</b></dt>
-</dl>The encryption algorithm specified by the <i>pCryptoType</i> parameter is not supported.
+</dl>
+</td>
+<td width="60%">
+The encryption algorithm specified by the <i>pCryptoType</i> parameter is not supported.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The <i>pCryptoType</i> parameter can contain one of the following values:
-
+<ul>
+<li>
 <b>D3DCRYPTOTYPE_AES128_CTR</b> if the driver is configured to use the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher.
 
 
+</li>
+<li>
 <b>D3DCRYPTOTYPE_PROPRIETARY</b> if the driver is configured to use a proprietary encryption algorithm.
 
 
+</li>
+<li>
 <b>NULL_GUID</b> if the driver is not configured to use any encryption algorithm.
+
+</li>
+</ul><div class="alert"><b>Note</b>  The Microsoft Direct3D runtime verifies that the  <i>pDecodeProfile</i> and <i>pCryptoType</i> parameter data is valid before it calls the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getcapturehandle.md">GetContentProtectionCaps</a> function.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,11 +141,8 @@ The <i>pCryptoType</i> parameter can contain one of the following values:
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
-</dt>
-</dl>
+
  
 
  

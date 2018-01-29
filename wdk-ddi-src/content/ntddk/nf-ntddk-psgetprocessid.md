@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9e1f6a57-bc48-41c6-815c-6a44e8d01699
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetProcessId
+ms.keywords : kernel.psgetprocessid, PsGetProcessId, k108_b0733011-4102-4e10-83e3-e7e9d7172d08.xml, PsGetProcessId routine [Kernel-Mode Driver Architecture], ntddk/PsGetProcessId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsGetProcessId
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,14 +79,10 @@ The EPROCESS-typed process object structure is an opaque data structure that the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
  
 
  

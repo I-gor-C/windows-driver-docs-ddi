@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f5b17648-cd6e-4a6d-a00e-b4dfdcbcf0ea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_QUOTA_INFORMATION, *PFILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION
+ms.keywords : FILE_QUOTA_INFORMATION structure [Installable File System Drivers], *PFILE_QUOTA_INFORMATION, _FILE_QUOTA_INFORMATION, ntifs/FILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION, PFILE_QUOTA_INFORMATION structure pointer [Installable File System Drivers], PFILE_QUOTA_INFORMATION, ntifs/PFILE_QUOTA_INFORMATION, fileinformationstructures_38604040-0780-47f3-88b3-aef3e3eab993.xml, ifsk.file_quota_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_QUOTA_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION"
 ---
 
@@ -52,37 +56,37 @@ typedef struct _FILE_QUOTA_INFORMATION {
 
 ## Members
 
-        
-            `ChangeTime`
 
-            Time when this quota entry was last changed.
-        
-            `NextEntryOffset`
+`ChangeTime`
 
-            Offset, in bytes, of the next quota entry in the list. If there are no more entries after the current one, this member is zero.
-        
-            `QuotaLimit`
+Time when this quota entry was last changed.
 
-            Maximum amount of disk space on this volume that can be used by the user.
-        
-            `QuotaThreshold`
+`NextEntryOffset`
 
-            Maximum mount of disk space on this volume that can be used by the user without triggering an event. For more information, see <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>.
-        
-            `QuotaUsed`
+Offset, in bytes, of the next quota entry in the list. If there are no more entries after the current one, this member is zero.
 
-            Amount of disk space on this volume that is currently being used by the user.
-        
-            `Sid`
+`QuotaLimit`
 
-            Security identifier (SID) of the user.
-        
-            `SidLength`
+Maximum amount of disk space on this volume that can be used by the user.
 
-            Length, in bytes, of the <b>Sid</b> member.
+`QuotaThreshold`
 
-    ## Remarks
-        No specific access rights are required to query this information. To perform this query, create an IRP with major function code IRP_MJ_QUERY_QUOTA. 
+Maximum mount of disk space on this volume that can be used by the user without triggering an event. For more information, see <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>.
+
+`QuotaUsed`
+
+Amount of disk space on this volume that is currently being used by the user.
+
+`Sid`
+
+Security identifier (SID) of the user.
+
+`SidLength`
+
+Length, in bytes, of the <b>Sid</b> member.
+
+## Remarks
+No specific access rights are required to query this information. To perform this query, create an IRP with major function code IRP_MJ_QUERY_QUOTA. 
 
 FILE_WRITE_DATA access to the volume is required to set this information. To perform this operation, create an IRP with major function code IRP_MJ_SET_QUOTA. 
 
@@ -100,22 +104,16 @@ On 64-bit platforms, this structure must be aligned on a LONGLONG (8-byte) bound
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+
  
 
  

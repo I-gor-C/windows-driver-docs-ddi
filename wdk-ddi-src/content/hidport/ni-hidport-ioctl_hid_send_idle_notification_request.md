@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : AD653C7C-7C43-4258-98F8-3D9EDB51AE44
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidRegisterMinidriver
+ms.keywords : hid.ioctl_hid_send_idle_notification_request, IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST control code [Human Input Devices], IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST, hidport/IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST
-req.alt-loc : Hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST IOCTL
@@ -62,7 +66,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The bus or port driver sets Irp-&gt;IoStatus.Status to STATUS_SUCCESS or the appropriate error status.
 
 

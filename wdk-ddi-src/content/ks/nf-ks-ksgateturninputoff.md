@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cbcbb49a-8c45-4843-8c21-6c4d8c7bc6c6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGateTurnInputOff
+ms.keywords : ks/KsGateTurnInputOff, KsGateTurnInputOff function [Streaming Media Devices], stream.ksgateturninputoff, avfunc_ba116904-80e2-4288-a8d1-d03c0194ef51.xml, KsGateTurnInputOff
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGateTurnInputOff
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,38 +81,26 @@ Furthermore, if turning an input off would cause <i>Gate</i> to transition from 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgateaddoninputtoand.md">KsGateAddOnInputToAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoninputtoor.md">KsGateAddOnInputToOr</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateaddoffinputtoor.md">KsGateAddOffInputToOr</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoninputfromor.md">KsGateRemoveOnInputFromOr</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgateremoveoffinputfromor.md">KsGateRemoveOffInputFromOr</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgateremoveoffinputfromor.md">KsGateRemoveOffInputFromOr</a>
+
+<a href="..\ks\nf-ks-ksgateaddoninputtoor.md">KsGateAddOnInputToOr</a>
+
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
+
+<a href="..\ks\nf-ks-ksgateaddoffinputtoor.md">KsGateAddOffInputToOr</a>
+
+<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
+
+<a href="..\ks\nf-ks-ksgateremoveoninputfromor.md">KsGateRemoveOnInputFromOr</a>
+
+<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
+
+<a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
+
  
 
  

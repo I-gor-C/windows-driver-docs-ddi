@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 505276EE-5D41-4AB2-82FB-FBDEF994F372
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.processoridleveto, ProcessorIdleVetoreadv, ProcessorIdleVeto routine [Kernel-Mode Driver Architecture], ProcessorIdleVeto, POFXCALLBACKPROCESSORIDLEVETO, POFXCALLBACKPROCESSORIDLEVETO, pepfx/ProcessorIdleVeto
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ProcessorIdleVeto
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -70,6 +74,8 @@ A PEP-defined veto code that indicates why the processor idle state cannot be en
 
 Whether to increment or decrement the veto count. Set to TRUE to increment the veto count for this veto reason, or to FALSE to decrement the count.
 
+Whether to increment or decrement the veto count. Set to TRUE to increment the veto count for this veto reason, or to FALSE to decrement the count.
+
 
 ## Return Value
 
@@ -93,11 +99,8 @@ This routine is implemented by the power management framework (PoFx) and is call
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
-</dt>
-</dl>
+
  
 
  

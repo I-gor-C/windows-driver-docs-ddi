@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 2bd4f3f6-94a4-47a6-8c15-a8f9bef5d2b5
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_VERSION, BRB_VERSION
+ms.keywords : BRB_VERSION, bthddi/BRB_VERSION, BLUETOOTH_V1, _BRB_VERSION, bth_enums_d14431ac-24e9-4a27-90b9-a8aef7e38769.xml, bthddi/BLUETOOTH_V1, bltooth.brb_version, BRB_VERSION enumeration [Bluetooth Devices], BLUETOOTH_V2, bthddi/BLUETOOTH_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BRB_VERSION
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BRB_VERSION
 ---
 
@@ -72,23 +76,16 @@ enum BRB_VERSION {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\bthddi\ns-bthddi-_brb.md">BRB</a>
-</dt>
-<dt>
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-</dt>
-<dt>
-<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
-</dt>
-<dt>
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
-</dt>
-<dt>
+
+<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+
 <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
-</dt>
-</dl>
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
+<a href="..\bthddi\ns-bthddi-_brb.md">BRB</a>
+
  
 
  

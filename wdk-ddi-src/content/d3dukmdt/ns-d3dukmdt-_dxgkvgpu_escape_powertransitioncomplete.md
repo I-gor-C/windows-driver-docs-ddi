@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 39800C47-95EB-4867-8FEE-E94EA3F6F68C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE, DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE
+ms.keywords : DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE, display.dxgkvgpu_escape_powertransitioncomplete, DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE structure [Display Devices], _DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE, d3dukmdt/DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE
 ---
 
@@ -49,14 +53,14 @@ typedef struct _DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE {
 
 ## Members
 
-        
-            `Header`
 
-            The header that is being operated over.
-        
-            `PowerState`
+`Header`
 
-            Indicates the power state to transition to.
+The header that is being operated over.
+
+`PowerState`
+
+Indicates the power state to transition to.
 
 
 ## Requirements

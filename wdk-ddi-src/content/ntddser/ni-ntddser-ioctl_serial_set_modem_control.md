@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 3ec5c4ab-d5da-44c7-9a62-c25d04dbef41
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serial_set_modem_control, IOCTL_SERIAL_SET_MODEM_CONTROL control code [Serial Ports], IOCTL_SERIAL_SET_MODEM_CONTROL, ntddser/IOCTL_SERIAL_SET_MODEM_CONTROL, serref_a7d7db4d-c889-4a99-b21b-9efb533901a9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_SET_MODEM_CONTROL
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
@@ -61,13 +65,12 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero.
 
-The <b>Status</b> member is set to one of the <a href="serial_device_control_requests.htm#generic_status_values_for_serial_device_control_requests">Generic Status Values for Serial Device Control Requests</a>.
+The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/serial-device-control-requests2">Generic Status Values for Serial Device Control Requests</a>.
 
-    ## Remarks
-        The implementation of this I/O control request (IOCTL) is hardware-specific because no standard layout is defined for the modem control register (MCR) across 16550-compatible UART devices. The drivers for peripheral devices that connect to serial ports should avoid using this IOCTL, which might work with some UARTs but not with others. This IOCTL is primarily used to configure the UART into loopback mode for testing, but only if the UART has an MCR that supports loopback mode.
+## Remarks
+The implementation of this I/O control request (IOCTL) is hardware-specific because no standard layout is defined for the modem control register (MCR) across 16550-compatible UART devices. The drivers for peripheral devices that connect to serial ports should avoid using this IOCTL, which might work with some UARTs but not with others. This IOCTL is primarily used to configure the UART into loopback mode for testing, but only if the UART has an MCR that supports loopback mode.
 
 For an example layout of an MCR, see the definition of the MCR bits (SERIAL_MCR_DTR through SERIAL_MCR_LOOP) in the Serial.h header file in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=617962">Serial driver sample</a> on GitHub.
 
@@ -78,13 +81,10 @@ For an example layout of an MCR, see the definition of the MCR bits (SERIAL_MCR_
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_modem_control.md">IOCTL_SERIAL_GET_MODEM_CONTROL</a>
-</dt>
-</dl>
+
  
 
  

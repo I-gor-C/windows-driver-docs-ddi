@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 65e57147-f8a1-4b9b-b856-51f89bcba149
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_REQUEST_SEND_OPTIONS_INIT
+ms.keywords : wdfrequest/WDF_REQUEST_SEND_OPTIONS_INIT, WDF_REQUEST_SEND_OPTIONS_INIT function, wdf.wdf_request_send_options_init, DFRequestObjectRef_9a31e96a-4cb1-43ea-b429-591f820838d8.xml, kmdf.wdf_request_send_options_init, WDF_REQUEST_SEND_OPTIONS_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_REQUEST_SEND_OPTIONS_INIT
-req.alt-loc : wdfrequest.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -69,8 +73,6 @@ None
 
 The <b>WDF_REQUEST_SEND_OPTIONS_INIT</b> function zeros the specified <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a> structure, sets the structure's <b>Size</b> member, and sets the <b>Flag</b> member to the specified <i>Flags</i> value.
 
-The following code example initializes a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a> structure and then calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -85,17 +87,12 @@ The following code example initializes a <a href="..\wdfrequest\ns-wdfrequest-_w
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_send_options_flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_send_options_set_timeout.md">WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT</a>
-</dt>
-</dl>
+
  
 
  

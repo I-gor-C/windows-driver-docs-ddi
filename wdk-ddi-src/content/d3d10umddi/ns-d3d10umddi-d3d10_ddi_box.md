@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b09ea915-070d-4ebb-a40d-d60add5df3d8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_BOX, D3D10_DDI_BOX
+ms.keywords : d3d10umddi/D3D10_DDI_BOX, D3D10_DDI_BOX, display.d3d10_ddi_box, UMDisplayDriver_Dx10param_Structs_11ac8e3e-48db-469b-a6e6-d42fd491d56e.xml, D3D10_DDI_BOX structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_DDI_BOX
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_DDI_BOX
 ---
 
@@ -51,30 +55,30 @@ typedef struct D3D10_DDI_BOX {
 
 ## Members
 
-        
-            `back`
 
-            [in] The position of the back of the box on the z-axis. Note that the depth of the volume equals the value in the <b>back</b> member minus the value in the <b>front</b> member (that is, depth = back – front).
-        
-            `bottom`
+`back`
 
-            [in] The position of the bottom of the box on the y-axis. Note that the height of the volume equals the value in the <b>bottom</b> member minus the value in the <b>top</b> member (that is, height = bottom – top).
-        
-            `front`
+[in] The position of the back of the box on the z-axis. Note that the depth of the volume equals the value in the <b>back</b> member minus the value in the <b>front</b> member (that is, depth = back – front).
 
-            [in] The position of the front of the box on the z-axis.
-        
-            `left`
+`bottom`
 
-            [in] The position of the left side of the box on the x-axis.
-        
-            `right`
+[in] The position of the bottom of the box on the y-axis. Note that the height of the volume equals the value in the <b>bottom</b> member minus the value in the <b>top</b> member (that is, height = bottom – top).
 
-            [in] The position of the right side of the box on the x-axis. Note that the width of the volume equals the value in the <b>right</b> member minus the value in the <b>left</b> member (that is, width = right – left).
-        
-            `top`
+`front`
 
-            [in] The position of the top of the box on the y-axis.
+[in] The position of the front of the box on the z-axis.
+
+`left`
+
+[in] The position of the left side of the box on the x-axis.
+
+`right`
+
+[in] The position of the right side of the box on the x-axis. Note that the width of the volume equals the value in the <b>right</b> member minus the value in the <b>left</b> member (that is, width = right – left).
+
+`top`
+
+[in] The position of the top of the box on the y-axis.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct D3D10_DDI_BOX {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcecopyregion.md">ResourceCopyRegion</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 971bbd30-5bde-4cf6-9b94-7c21c29590d5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_BootInformation, *PMSiSCSI_BootInformation, MSiSCSI_BootInformation
+ms.keywords : PMSiSCSI_BootInformation, MSiSCSI_BootInformation, structs-iSCSI_a33678de-f559-4c7a-8007-55ab0381b613.xml, iscsiop/PMSiSCSI_BootInformation, _MSiSCSI_BootInformation, *PMSiSCSI_BootInformation, MSiSCSI_BootInformation structure [Storage Devices], iscsiop/MSiSCSI_BootInformation, storage.msiscsi_bootinformation, PMSiSCSI_BootInformation structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_BootInformation
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMSiSCSI_BootInformation, MSiSCSI_BootInformation"
 ---
 
@@ -48,21 +52,21 @@ typedef struct _MSiSCSI_BootInformation {
 
 ## Members
 
-        
-            `NodeName`
 
-            The name of the initiator node that contains the boot device.
-        
-            `SharedSecret`
+`NodeName`
 
-            The shared secret for the initiator node.
-        
-            `SharedSecretLength`
+The name of the initiator node that contains the boot device.
 
-            The length, in bytes, of the shared secret for the initiator node.
+`SharedSecret`
 
-    ## Remarks
-        You must implement this class if the adapter supports iSCSI boot.
+The shared secret for the initiator node.
+
+`SharedSecretLength`
+
+The length, in bytes, of the shared secret for the initiator node.
+
+## Remarks
+You must implement this class if the adapter supports iSCSI boot.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct _MSiSCSI_BootInformation {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/a6ed673a-b5c1-4857-803a-4f0f3cf798d8">MSiSCSI_BootInformationWMI Class</a>
-</dt>
-</dl>
+
  
 
  

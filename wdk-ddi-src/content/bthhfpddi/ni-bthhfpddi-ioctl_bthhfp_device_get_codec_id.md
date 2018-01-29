@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 38B67F0E-46A4-4AB5-B122-F5DE282FE52D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
+ms.keywords : audio.ioctl_bthhfp_device_get_codec_id, IOCTL_BTHHFP_DEVICE_GET_CODEC_ID control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_CODEC_ID, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_CODEC_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHHFP_DEVICE_GET_CODEC_ID
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
 ---
 
@@ -60,7 +64,6 @@ The size of a codec ID structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the routine succeeds, then Status is set to STATUS_SUCCESS and the <i>Information</i> member is the codec ID.
 
 
@@ -71,13 +74,10 @@ If the routine succeeds, then Status is set to STATUS_SUCCESS and the <i>Informa
 | **Header** | bthhfpddi.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
-</dt>
-</dl>
+
  
 
  

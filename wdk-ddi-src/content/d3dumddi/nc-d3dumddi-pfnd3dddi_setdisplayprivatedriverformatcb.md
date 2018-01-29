@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 499e6de7-67cc-4834-bcec-4f3907b180f7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnsetdisplayprivatedriverformatcb, pfnSetDisplayPrivateDriverFormatCb callback function [Display Devices], pfnSetDisplayPrivateDriverFormatCb, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB, d3dumddi/pfnSetDisplayPrivateDriverFormatCb, D3Druntime_Functions_36bd86e3-96bb-4c68-85a1-a678a54daed4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnSetDisplayPrivateDriverFormatCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,17 +68,45 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>pfnSetDisplayPrivateDriverFormatCb</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The video present source was successfully changed.
+</dl>
+</td>
+<td width="60%">
+The video present source was successfully changed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_FAIL</b></dt>
-</dl><b>pfnSetDisplayPrivateDriverFormatCb</b> could not change the private-format attribute of the video present source. 
+</dl>
+</td>
+<td width="60%">
+<b>pfnSetDisplayPrivateDriverFormatCb</b> could not change the private-format attribute of the video present source. 
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other HRESULT values.
 
@@ -85,12 +117,16 @@ Changing the private-format attribute of a video present source is useful to acc
 If the call to <b>pfnSetDisplayPrivateDriverFormatCb</b> fails, the user-mode display driver should continue without changing the private-format attribute of the video present source. In the preceding example, the driver can either leave the shared primary as un-swizzled and have the back buffers swizzled or the driver can change the back buffers to the un-swizzled format.
 
 If the user-mode display driver receives the D3DDDIERR_INCOMPATIBLEPRIVATEFORMAT error from a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a> function, the driver can do one of the following:
-
+<ul>
+<li>
 Change the private-format attribute of the primary surface and call <b>pfnSetDisplayModeCb</b> again.
 
+</li>
+<li>
 Call <b>pfnSetDisplayPrivateDriverFormatCb</b> and attempt to change the private-format attribute of the video present source. The driver can then call <b>pfnSetDisplayModeCb</b> again. 
 
-The user-mode display driver can call <b>pfnSetDisplayPrivateDriverFormatCb</b> only if the <b>Version</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a> structure was set to greater than seven when the display device (specified by the <i>hDevice</i> parameter) was created in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function.
+</li>
+</ul>The user-mode display driver can call <b>pfnSetDisplayPrivateDriverFormatCb</b> only if the <b>Version</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a> structure was set to greater than seven when the display device (specified by the <i>hDevice</i> parameter) was created in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,23 +142,16 @@ The user-mode display driver can call <b>pfnSetDisplayPrivateDriverFormatCb</b> 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplayprivatedriverformat.md">D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplayprivatedriverformat.md">D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
+
  
 
  

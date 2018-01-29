@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8178A279-96FE-40DC-A292-4551FA153F45
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_CREATE_VIDEO_DECODER_0021, D3D12DDIARG_CREATE_VIDEO_DECODER_0021
+ms.keywords : D3D12DDIARG_CREATE_VIDEO_DECODER_0021 structure [Display Devices], display.d3d12ddiarg_create_video_decoder, D3D12DDIARG_CREATE_VIDEO_DECODER_0021, d3d12umddi/D3D12DDIARG_CREATE_VIDEO_DECODER_0021
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_CREATE_VIDEO_DECODER_0021
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_CREATE_VIDEO_DECODER_0021
 ---
 
@@ -53,37 +57,41 @@ typedef struct D3D12DDIARG_CREATE_VIDEO_DECODER_0021 {
 
 ## Members
 
-        
-            `Configuration`
 
-            The decode profile and bitstream encryption.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_configuration_flags_0020.md">D3D12DDI_VIDEO_DECODE_CONFIGURATION</a> enumeration.
-        
-            `DecodeHeight`
+`BitRate`
 
-            The decode height of the bitstream to be decoded.
-        
-            `DecodeWidth`
 
-            The decode width of the bitstream to be decoded.
-        
-            `FrameRate`
 
-            The frame rate of the input video stream.
-        
-            `MaxDecodePictureBufferCount`
+`Configuration`
 
-            The maximum number of decode picture buffers this stream can have.
-        
-            `NodeMask`
+The decode profile and bitstream encryption.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_configuration_flags_0020.md">D3D12DDI_VIDEO_DECODE_CONFIGURATION</a> enumeration.
 
-            A node mask. For single GPU operation, set this value to zero (0). If there are multiple GPU nodes, set a bit to identify the physical adapter of the device to which the command queue applies. Each bit in the mask corresponds to a single node. Only one  bit may be set.
-        
-            `Usage`
+`DecodeHeight`
 
-            A hint for the intended usage for the decoder stream. For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_usage.md">D3D12DDI_VIDEO_USAGE</a> enumeration.
+The decode height of the bitstream to be decoded.
 
-    ## Remarks
-        Drivers can use the <i>Bitrate</i> and <i>FrameRate</i> parameters to inform heuristics such as intermediate allocation sizes or performance optimizations.  
+`DecodeWidth`
+
+The decode width of the bitstream to be decoded.
+
+`FrameRate`
+
+The frame rate of the input video stream.
+
+`MaxDecodePictureBufferCount`
+
+The maximum number of decode picture buffers this stream can have.
+
+`NodeMask`
+
+A node mask. For single GPU operation, set this value to zero (0). If there are multiple GPU nodes, set a bit to identify the physical adapter of the device to which the command queue applies. Each bit in the mask corresponds to a single node. Only one  bit may be set.
+
+`Usage`
+
+A hint for the intended usage for the decoder stream. For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_usage.md">D3D12DDI_VIDEO_USAGE</a> enumeration.
+
+## Remarks
+Drivers can use the <i>Bitrate</i> and <i>FrameRate</i> parameters to inform heuristics such as intermediate allocation sizes or performance optimizations.  
 
 Decoding a frame is allowed to fail if the <i>Bitrate</i> and <i>FrameRate</i> values are insufficient for the video stream.  If decode fails for this reason, the query <b>D3D12DDI_QUERY_TYPE_VIDEO_DECODE_STATISTICS</b> must return a status of <b>D3D12DDI_VIDEO_DECODE_STATUS_RATE_EXCEEDED</b>.    
 
@@ -97,16 +105,12 @@ The <i>Bitrate</i> and <i>FrameRate</i> parameters may also be set to zero.  Whe
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_configuration_flags_0020.md">D3D12DDI_VIDEO_DECODE_CONFIGURATION</a>
-</dt>
-<dt>
+
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_usage.md">D3D12DDI_VIDEO_USAGE</a>
-</dt>
-</dl>
+
  
 
  

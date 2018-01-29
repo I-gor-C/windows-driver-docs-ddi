@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 65289123-46b8-4a4b-985a-8087f4afd250
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _LINKED_DEVICE, LINKED_DEVICE, *PLINKED_DEVICE
+ms.keywords : LINKED_DEVICE, dispmprt/LINKED_DEVICE, _LINKED_DEVICE, dispmprt/PLINKED_DEVICE, PLINKED_DEVICE structure pointer [Display Devices], LINKED_DEVICE structure [Display Devices], PLINKED_DEVICE, display.linked_device, *PLINKED_DEVICE, DmStructs_3491af70-72fe-471c-b0f1-c00d6bffb242.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LINKED_DEVICE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LINKED_DEVICE, *PLINKED_DEVICE
 ---
 
@@ -48,21 +52,21 @@ typedef struct _LINKED_DEVICE {
 
 ## Members
 
-        
-            `ChainUid`
 
-            A unique identifier for this chain of display adapters.
-        
-            `LeadLink`
+`ChainUid`
 
-            A value that indicates the leading link in the chain of linked adapters. The value is <b>TRUE</b> only for the adapter that will be allowed to enumerate child adapters. Otherwise, the value is <b>FALSE</b>.
-        
-            `NumberOfLinksInChain`
+A unique identifier for this chain of display adapters.
 
-            The expected number of linked adapters that the operating system should enumerate.
+`LeadLink`
 
-    ## Remarks
-        Prior to a call to <a href="..\dispmprt\nc-dispmprt-dxgkddi_link_device.md">DxgkDdiLinkDevice</a>, the display miniport driver should fill the LINKED_DEVICE structure with information about the linked adapter configuration.
+A value that indicates the leading link in the chain of linked adapters. The value is <b>TRUE</b> only for the adapter that will be allowed to enumerate child adapters. Otherwise, the value is <b>FALSE</b>.
+
+`NumberOfLinksInChain`
+
+The expected number of linked adapters that the operating system should enumerate.
+
+## Remarks
+Prior to a call to <a href="..\dispmprt\nc-dispmprt-dxgkddi_link_device.md">DxgkDdiLinkDevice</a>, the display miniport driver should fill the LINKED_DEVICE structure with information about the linked adapter configuration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct _LINKED_DEVICE {
 | **Minimum UMDF version** |  |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_link_device.md">DxgkDdiLinkDevice</a>
-</dt>
-</dl>
+
  
 
  

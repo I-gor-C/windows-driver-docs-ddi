@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : E29E6F8B-F708-493B-94C3-A9DEE691ED3C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _tagKSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL
+ms.keywords : KSAUDIOENGINE_VOLUMELEVEL, ksmedia/KSAUDIOENGINE_VOLUMELEVEL, audio.ksaudioengine_volumelevel, ksmedia/PKSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL structure [Audio Devices], PKSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL, PKSAUDIOENGINE_VOLUMELEVEL structure pointer [Audio Devices], _tagKSAUDIOENGINE_VOLUMELEVEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAUDIOENGINE_VOLUMELEVEL
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL
 ---
 
@@ -48,18 +52,18 @@ typedef struct _KSAUDIOENGINE_VOLUMELEVEL {
 
 ## Members
 
-        
-            `CurveDuration`
 
-            Specifies the duration, in hundreds of nanoseconds, over which the volume curve must take effect.
-        
-            `CurveType`
+`CurveDuration`
 
-            Uses the <a href="..\ksmedia\ne-ksmedia-audio_curve_type.md">AUDIO_CURVE_TYPE</a> enumeration to specify the curve algorithm to apply over the duration specified, in order to reach the desired level.  The curve begins at the current volume level and ends at the target volume level specified in the <b>TargetVolume</b> parameter.
-        
-            `TargetVolume`
+Specifies the duration, in hundreds of nanoseconds, over which the volume curve must take effect.
 
-            Specifies the desired final volume level using the scale defined for the <b>KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</b> property.
+`CurveType`
+
+Uses the <a href="..\ksmedia\ne-ksmedia-audio_curve_type.md">AUDIO_CURVE_TYPE</a> enumeration to specify the curve algorithm to apply over the duration specified, in order to reach the desired level.  The curve begins at the current volume level and ends at the target volume level specified in the <b>TargetVolume</b> parameter.
+
+`TargetVolume`
+
+Specifies the desired final volume level using the scale defined for the <b>KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</b> property.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _KSAUDIOENGINE_VOLUMELEVEL {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ne-ksmedia-audio_curve_type.md">AUDIO_CURVE_TYPE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ne-ksmedia-audio_curve_type.md">AUDIO_CURVE_TYPE</a>
+
  
 
  

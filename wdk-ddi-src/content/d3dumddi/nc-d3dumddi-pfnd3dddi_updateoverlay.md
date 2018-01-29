@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 80d7cc5c-51d8-4b91-9581-b073f9b0e68a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.updateoverlay, UpdateOverlay callback function [Display Devices], UpdateOverlay, PFND3DDDI_UPDATEOVERLAY, PFND3DDDI_UPDATEOVERLAY, d3dumddi/UpdateOverlay, UserModeDisplayDriver_Functions_58c588ce-de18-4aa0-bb22-0c33d053e22f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UpdateOverlay
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,21 +68,67 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>UpdateOverlay</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The overlay is successfully modified.
+</dl>
+</td>
+<td width="60%">
+The overlay is successfully modified.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl><i>UpdateOverlay</i> could not complete because of insufficient memory.
+</dl>
+</td>
+<td width="60%">
+<i>UpdateOverlay</i> could not complete because of insufficient memory.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_NOTAVAILABLE</b></dt>
-</dl><i>UpdateOverlay</i> could not complete because insufficient bandwidth was available or the requested overlay hardware was unavailable.
+</dl>
+</td>
+<td width="60%">
+<i>UpdateOverlay</i> could not complete because insufficient bandwidth was available or the requested overlay hardware was unavailable.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_UNSUPPORTEDOVERLAYFORMAT</b></dt>
-</dl>The specified overlay format is not supported by the overlay hardware. 
+</dl>
+</td>
+<td width="60%">
+The specified overlay format is not supported by the overlay hardware. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_UNSUPPORTEDOVERLAY</b></dt>
-</dl>The overlay hardware is not supported for the specified size and display mode.
+</dl>
+</td>
+<td width="60%">
+The overlay hardware is not supported for the specified size and display mode. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -98,14 +148,10 @@ Overlays are independent from the resources that are displayed by using the over
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_updateoverlay.md">D3DDDIARG_UPDATEOVERLAY</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

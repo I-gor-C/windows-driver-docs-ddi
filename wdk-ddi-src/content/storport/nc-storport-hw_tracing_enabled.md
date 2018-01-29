@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2B56A2D3-1FA6-4212-A83C-3C20D826353B
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.keywords : storage.hwstortracingenabled, HwStorTracingEnabled routine [Storage Devices], HwStorTracingEnabled, HW_TRACING_ENABLED, HW_TRACING_ENABLED, storport/HwStorTracingEnabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwStorTracingEnabled
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,21 @@ None.
 ## Remarks
 
 The name <i>HwStorTracingEnabled</i> is placeholder text for the actual routine name. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+VOID
+HW_TRACING_ENABLED (
+    _In_ PVOID HwDeviceExtension,
+    _In_ BOOLEAN Enabled
+    );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,11 +103,8 @@ The name <i>HwStorTracingEnabled</i> is placeholder text for the actual routine 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
-</dt>
-</dl>
+
  
 
  

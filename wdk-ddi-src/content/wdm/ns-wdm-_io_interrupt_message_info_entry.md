@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e5007381-2436-4eb6-85cd-7145361ab793
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_INTERRUPT_MESSAGE_INFO_ENTRY, *PIO_INTERRUPT_MESSAGE_INFO_ENTRY, IO_INTERRUPT_MESSAGE_INFO_ENTRY
+ms.keywords : kernel.io_interrupt_message_info_entry, kstruct_b_eb31dbfa-458d-47c4-b1df-96c315bd3ff6.xml, IO_INTERRUPT_MESSAGE_INFO_ENTRY structure [Kernel-Mode Driver Architecture], _IO_INTERRUPT_MESSAGE_INFO_ENTRY, IO_INTERRUPT_MESSAGE_INFO_ENTRY, wdm/PIO_INTERRUPT_MESSAGE_INFO_ENTRY, wdm/IO_INTERRUPT_MESSAGE_INFO_ENTRY, *PIO_INTERRUPT_MESSAGE_INFO_ENTRY, PIO_INTERRUPT_MESSAGE_INFO_ENTRY, PIO_INTERRUPT_MESSAGE_INFO_ENTRY structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_INTERRUPT_MESSAGE_INFO_ENTRY
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIO_INTERRUPT_MESSAGE_INFO_ENTRY, IO_INTERRUPT_MESSAGE_INFO_ENTRY"
 req.product : Windows 10 or later.
 ---
@@ -54,38 +58,38 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO_ENTRY {
 
 ## Members
 
-        
-            `InterruptObject`
 
-            Pointer to the interrupt object that represents the interrupt.
-        
-            `Irql`
+`InterruptObject`
 
-            Specifies the device IRQL (DIRQL) for the interrupt.
-        
-            `MessageAddress`
+Pointer to the interrupt object that represents the interrupt.
 
-            Specifies the physical address that triggers the interrupt message.
-        
-            `MessageData`
+`Irql`
 
-            Specifies the value to be written to the address specified by <b>MessageAddress</b> to trigger the interrupt.
-        
-            `Mode`
+Specifies the device IRQL (DIRQL) for the interrupt.
 
-            Specifies a <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> value that determines whether the interrupt is level-sensitive or latched.
-        
-            `Polarity`
+`MessageAddress`
 
-            Specifies a <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> value that determines whether the interrupt is active-high or active-low.
-        
-            `TargetProcessorSet`
+Specifies the physical address that triggers the interrupt message.
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value that determines the set of processors that can receive the interrupt.
-        
-            `Vector`
+`MessageData`
 
-            Specifies the interrupt vector for the interrupt.
+Specifies the value to be written to the address specified by <b>MessageAddress</b> to trigger the interrupt.
+
+`Mode`
+
+Specifies a <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> value that determines whether the interrupt is level-sensitive or latched.
+
+`Polarity`
+
+Specifies a <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> value that determines whether the interrupt is active-high or active-low.
+
+`TargetProcessorSet`
+
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value that determines the set of processors that can receive the interrupt.
+
+`Vector`
+
+Specifies the interrupt vector for the interrupt.
 
 
 ## Requirements
@@ -96,13 +100,10 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO_ENTRY {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
-</dt>
-</dl>
+
  
 
  

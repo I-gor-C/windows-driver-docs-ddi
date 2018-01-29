@@ -7,8 +7,8 @@ old-location : pos\unifiedposhealthchecklevel.htm
 old-project : pos
 ms.assetid : 101a74c8-a0c2-4820-b9a1-41e39ee4cf11
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DriverUnifiedPosHealthCheckLevel, DriverUnifiedPosHealthCheckLevel
+ms.date : 1/18/2018
+ms.keywords : DriverUnifiedPosHealthCheckLevel, pos.unifiedposhealthchecklevel, DriverUnifiedPosHealthCheckLevel enumeration, Interactive, POSInternal, pointofservicecommontypes/External, pointofservicecommontypes/POSInternal, pointofservicecommontypes/Interactive, UnknownHealthCheckLevel, External, pointofservicecommontypes/UnknownHealthCheckLevel, pointofservicecommontypes/DriverUnifiedPosHealthCheckLevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DriverUnifiedPosHealthCheckLevel
-req.alt-loc : pointofservicecommontypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DriverUnifiedPosHealthCheckLevel
 ---
 

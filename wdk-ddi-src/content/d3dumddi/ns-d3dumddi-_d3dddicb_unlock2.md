@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ACE32ED-75C5-440D-BAA1-470C4E043299
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_UNLOCK2, D3DDDICB_UNLOCK2
+ms.keywords : D3DDDICB_UNLOCK2 structure [Display Devices], _D3DDDICB_UNLOCK2, d3dumddi/D3DDDICB_UNLOCK2, display.d3dddicb_unlock2, D3DDDICB_UNLOCK2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_UNLOCK2
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_UNLOCK2
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DDDICB_UNLOCK2 {
 
 ## Members
 
-        
-            `hAllocation`
 
-            [in] A driver specified <b>D3DKMT_HANDLE</b> to the allocation to unlock.
+`hAllocation`
+
+[in] A driver specified <b>D3DKMT_HANDLE</b> to the allocation to unlock.
 
 
 ## Requirements

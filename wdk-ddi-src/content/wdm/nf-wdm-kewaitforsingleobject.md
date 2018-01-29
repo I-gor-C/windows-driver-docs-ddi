@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 65a1aa46-571b-46f7-b60e-ef8c6dc14d39
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeWaitForSingleObject
+ms.keywords : kernel.kewaitforsingleobject, KeWaitForMutexObject, wdm/KeWaitForSingleObject, KeWaitForSingleObject routine [Kernel-Mode Driver Architecture], k105_de338bec-f7ef-4780-85e6-592a24314145.xml, KeWaitForSingleObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeWaitForSingleObject
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : CompleteRequestStatusCheck, IoAllocateIrpSignalEventInCompletionTimeout, IoBuildDeviceControlWait, IoBuildDeviceControlWaitTimeout, IoBuildFsdIrpSignalEventInCompletionTimeout, IoBuildSynchronousFsdRequestWait, IoBuildSynchronousFsdRequestWaitTimeout, IrpProcessingComplete, IrqlKeWaitForMutexObject, LowerDriverReturn, MarkIrpPending2, PendedCompletedRequest, PendedCompletedRequest2, PendedCompletedRequest3, PendedCompletedRequestEx, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControlInternal, RemoveLockForwardRead, RemoveLockForwardWrite, StartDeviceWait, StartDeviceWait2, StartDeviceWait3, StartDeviceWait4, HwStorPortProhibitedDDIs, SpNoWait
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,20 +85,56 @@ If *<i>Timeout</i> = 0, the routine returns without waiting. If the caller suppl
 ## Return Value
 
 <b>KeWaitForSingleObject</b> can return one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The dispatcher object specified by the <i>Object</i> parameter satisfied the wait.
+</dl>
+</td>
+<td width="60%">
+The dispatcher object specified by the <i>Object</i> parameter satisfied the wait.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ALERTED</b></dt>
-</dl>The wait was interrupted to deliver an alert to the calling thread.
+</dl>
+</td>
+<td width="60%">
+The wait was interrupted to deliver an alert to the calling thread.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_USER_APC</b></dt>
-</dl>The wait was interrupted to deliver a user asynchronous procedure call (APC) to the calling thread.
+</dl>
+</td>
+<td width="60%">
+The wait was interrupted to deliver a user asynchronous procedure call (APC) to the calling thread.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TIMEOUT</b></dt>
-</dl>A time-out occurred before the object was set to a signaled state. This value can be returned when the specified set of wait conditions cannot be immediately met and <i>Timeout</i> is set to zero.
+</dl>
+</td>
+<td width="60%">
+A time-out occurred before the object was set to a signaled state. This value can be returned when the specified set of wait conditions cannot be immediately met and <i>Timeout</i> is set to zero.
 
- 
+</td>
+</tr>
+</table> 
 
 Note that the NT_SUCCESS macro recognizes all of these status values as "success" values.
 
@@ -132,6 +172,8 @@ For more information about how to use this routine, see <b>KeWaitForSingleObject
 
 For more information about mutex objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556417">Mutex Objects</a>.
 
+A mutex can be recursively acquired only MINLONG times. If this limit is exceeded, the routine raises a STATUS_MUTANT_LIMIT_EXCEEDED exception.
+
 Callers of <b>KeWaitForMutexObject</b> must be running at IRQL &lt;= DISPATCH_LEVEL. However, if <i>Timeout</i> = <b>NULL</b> or *<i>Timeout</i> != 0, the caller must be running at IRQL &lt;= APC_LEVEL and in a nonarbitrary thread context. (If <i>Timeout</i> != <b>NULL</b> and *<i>Timeout</i> = 0, the caller must be running at IRQL &lt;= DISPATCH_LEVEL.)
 
 ## Requirements
@@ -148,29 +190,20 @@ Callers of <b>KeWaitForMutexObject</b> must be running at IRQL &lt;= DISPATCH_LE
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
+
 <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
+
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+
  
 
  

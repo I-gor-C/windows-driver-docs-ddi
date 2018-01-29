@@ -7,8 +7,8 @@ old-location : debugger\idebugoutputcallbackswide_output.htm
 old-project : debugger
 ms.assetid : b57661c3-a18f-45ed-b7fc-f6471753566e
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugOutputCallbacksWide, IDebugOutputCallbacksWide::Output, Output
+ms.date : 1/19/2018
+ms.keywords : Output method [Windows Debugging], Output method [Windows Debugging], IDebugOutputCallbacksWide interface, Output, IDebugOutputCallbacksWide::Output, debugger.idebugoutputcallbackswide_output, dbgeng/IDebugOutputCallbacksWide::Output, IDebugOutputCallbacksWide, IDebugOutputCallbacksWide interface [Windows Debugging], Output method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugOutputCallbacksWide.Output
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -66,7 +70,7 @@ The return value is ignored by the engine unless it indicates a remote procedure
 
 The engine calls this method only if the supplied value of <i>Mask</i> is allowed by the client's output control.
 
-For more information about debugger engine output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
+For more information about debugger engine output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

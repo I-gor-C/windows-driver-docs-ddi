@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5AED6B9E-5DB8-44AF-925C-4B587D100040
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_WORK_TYPE, *PPEP_WORK_TYPE, PEP_WORK_TYPE
+ms.keywords : PepWorkAcpiNotify, PepWorkRequestIdleState, pepfx/PepWorkRequestPowerControl, *PPEP_WORK_TYPE, _PEP_WORK_TYPE, PepWorkCompleteIdleState, pepfx/PepWorkDeviceIdle, pepfx/PepWorkCompletePerfState, pepfx/PepWorkCompleteIdleState, PepWorkDevicePower, pepfx/PepWorkActiveComplete, pepfx/PepWorkAcpiEvaluateControlMethodComplete, PepWorkAcpiEvaluateControlMethodComplete, PEP_WORK_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepWorkAcpiNotify, pepfx/PEP_WORK_TYPE, PEP_WORK_TYPE, PepWorkRequestPowerControl, pepfx/PepWorkRequestIdleState, pepfx/PepWorkMax, PepWorkCompletePerfState, pepfx/PepWorkDevicePower, kernel.pep_work_type, PepWorkActiveComplete, PepWorkDeviceIdle, PepWorkMax
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_WORK_TYPE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
@@ -102,23 +106,16 @@ This enumeration is used by the <a href="..\pepfx\ns-pepfx-_pep_work_information
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186759">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186759">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a>
+
  
 
  

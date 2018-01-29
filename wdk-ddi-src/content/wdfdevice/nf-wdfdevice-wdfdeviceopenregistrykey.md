@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0ccae1e9-23d4-44cd-ae5a-985490db1d86
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceOpenRegistryKey
+ms.keywords : WdfDeviceOpenRegistryKey, wdfdevice/WdfDeviceOpenRegistryKey, WdfDeviceOpenRegistryKey method, wdf.wdfdeviceopenregistrykey, DFDeviceObjectGeneralRef_ab116304-7951-4b19-b197-3943a4a415db.xml, kmdf.wdfdeviceopenregistrykey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceOpenRegistryKey
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : AccessHardwareKey, DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,7 +66,6 @@ A handle to a framework device object.
 `DeviceInstanceKeyType`
 
 Specifies which key or subkey to open.  This is a bitwise OR of the following flags (which are defined in <i>Wdm.h</i>).
-
 <table>
 <tr>
 <th>DeviceInstanceKeyType flag</th>
@@ -133,7 +136,6 @@ An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS
 A KMDF driver typically requests <b>KEY_READ</b>, <b>KEY_WRITE</b>, or <b>KEY_READ | KEY_WRITE</b>.
 
 If you are writing a UMDF driver, use the following table.
-
 <table>
 <tr>
 <th>DeviceInstanceKeyType</th>
@@ -179,8 +181,7 @@ If you are writing a UMDF driver, use the following table.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 As a best practice, ask for only the types of access that your driver needs.
 
@@ -196,21 +197,57 @@ A pointer to a location that receives a handle to the new registry-key object.
 ## Return Value
 
 <b>WdfDeviceOpenRegistryKey</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, the method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a> was not called at IRQL = PASSIVE_LEVEL. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was specified. For UMDF, this return value can indicate insufficient access rights.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was specified. For UMDF, this return value can indicate insufficient access rights.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>A registry-key object could not be allocated.
+</dl>
+</td>
+<td width="60%">
+A registry-key object could not be allocated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>The specified registry key does not exist.
+</dl>
+</td>
+<td width="60%">
+The specified registry key does not exist.
 
- 
+</td>
+</tr>
+</table> 
 
 For a list of other return values that the <b>WdfDeviceOpenRegistryKey</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -226,8 +263,6 @@ When the driver has finished using the registry key that it opened with <b>WdfDe
 
 For more information about the registry, hardware and software keys, and registry objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in Framework-Based Drivers</a>.
 
-For code examples that use <b>WdfDeviceOpenRegistryKey</b>, see <a href="..\wdfregistry\nf-wdfregistry-wdfregistrycreatekey.md">WdfRegistryCreateKey</a>, <a href="..\wdfregistry\nf-wdfregistry-wdfregistryopenkey.md">WdfRegistryOpenKey</a>, and <a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryvalue.md">WdfRegistryQueryValue</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -242,11 +277,8 @@ For code examples that use <b>WdfDeviceOpenRegistryKey</b>, see <a href="..\wdfr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>
-</dt>
-</dl>
+
  
 
  

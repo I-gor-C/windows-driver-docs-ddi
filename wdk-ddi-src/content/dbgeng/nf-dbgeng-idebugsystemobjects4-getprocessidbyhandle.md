@@ -7,8 +7,8 @@ old-location : debugger\getprocessidbyhandle.htm
 old-project : debugger
 ms.assetid : 6920cbd3-0a20-4d38-8538-85f46d0f0d5b
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::GetProcessIdByHandle, GetProcessIdByHandle
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugSystemObjects4::GetProcessIdByHandle, GetProcessIdByHandle, IDebugSystemObjects::GetProcessIdByHandle, dbgeng/IDebugSystemObjects::GetProcessIdByHandle, GetProcessIdByHandle method [Windows Debugging], IDebugSystemObjects interface, GetProcessIdByHandle method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2::GetProcessIdByHandle, IDebugSystemObjects2 interface [Windows Debugging], GetProcessIdByHandle method, IDebugSystemObjects4 interface [Windows Debugging], GetProcessIdByHandle method, debugger.getprocessidbyhandle, IDebugSystemObjects_92e69c0f-a50c-498b-8352-74f0c28ea0d8.xml, IDebugSystemObjects4::GetProcessIdByHandle, IDebugSystemObjects4, GetProcessIdByHandle method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetProcessIdByHandle method, GetProcessIdByHandle method [Windows Debugging], IDebugSystemObjects2 interface, GetProcessIdByHandle method [Windows Debugging], dbgeng/IDebugSystemObjects3::GetProcessIdByHandle, IDebugSystemObjects3::GetProcessIdByHandle, dbgeng/IDebugSystemObjects2::GetProcessIdByHandle, IDebugSystemObjects interface [Windows Debugging], GetProcessIdByHandle method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSystemObjects.GetProcessIdByHandle,IDebugSystemObjects2.GetProcessIdByHandle,IDebugSystemObjects3.GetProcessIdByHandle,IDebugSystemObjects4.GetProcessIdByHandle
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -61,13 +65,27 @@ Receives the engine process ID.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
-For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="wdkgloss.h#wdkgloss.handle#wdkgloss.handle"><i>Handles</i></a>.</p>
+For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="https://msdn.microsoft.com/3be5c842-d1b6-4c34-8990-e23e2d08dd23">Handles</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

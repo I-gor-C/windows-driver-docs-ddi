@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ec080043-a147-4002-8d0c-ed383182ec40
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_KEY_TYPE, DVD_KEY_TYPE
+ms.keywords : DvdDiskKey, DvdChallengeKey, ntddcdvd/DvdChallengeKey, ntddcdvd/DvdBusKey2, DvdSetRpcKey, DvdAsf, DVD_KEY_TYPE enumeration [Storage Devices], ntddcdvd/DVD_KEY_TYPE, ntddcdvd/DvdAsf, ntddcdvd/DvdTitleKey, DvdBusKey2, ntddcdvd/DvdBusKey1, DvdBusKey1, structs-DVD_922c1979-c628-441b-b8e9-5818f6ed737d.xml, ntddcdvd/DvdSetRpcKey, ntddcdvd/DvdDiskKey, DVD_KEY_TYPE, ntddcdvd/DvdInvalidateAGID, DvdTitleKey, storage.dvd_key_type, DvdInvalidateAGID, DvdGetRpcKey, ntddcdvd/DvdGetRpcKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_KEY_TYPE
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DVD_KEY_TYPE
 ---
 
@@ -118,17 +122,12 @@ Drivers can issue a report key command to retrieve key data by means of an <a hr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copy_protect_key.md">DVD_COPY_PROTECT_KEY</a>
-</dt>
-<dt>
-<a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_key.md">IOCTL_DVD_READ_KEY</a>
-</dt>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_send_key.md">IOCTL_DVD_SEND_KEY</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_key.md">IOCTL_DVD_READ_KEY</a>
+
+<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copy_protect_key.md">DVD_COPY_PROTECT_KEY</a>
+
  
 
  

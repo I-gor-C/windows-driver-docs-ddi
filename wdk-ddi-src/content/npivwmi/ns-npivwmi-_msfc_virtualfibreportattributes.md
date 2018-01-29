@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FD8D6063-E6DD-4EA6-9675-774C58C08B40
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
+ms.keywords : PMSFC_VirtualFibrePortAttributes, npivwmi/MSFC_VirtualFibrePortAttributes, npivwmi/PMSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, _MSFC_VirtualFibrePortAttributes, storage.msfc_virtualfibreportattributes, MSFC_VirtualFibrePortAttributes structure [Storage Devices], PMSFC_VirtualFibrePortAttributes structure pointer [Storage Devices], MSFC_VirtualFibrePortAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSFC_VirtualFibrePortAttributes
-req.alt-loc : npivwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 # _MSFC_VirtualFibrePortAttributes structure
@@ -52,34 +56,34 @@ typedef struct _MSFC_VirtualFibrePortAttributes {
 
 ## Members
 
-        
-            `FabricWWN`
 
-            The world wide port name of the fabric.
-        
-            `FCId`
+`FabricWWN`
 
-            The fabric ID of the virtual port.
-        
-            `Status`
+The world wide port name of the fabric.
 
-            The virtual port status.
-        
-            `Tag`
+`FCId`
 
-            A value for identifying the virtual port. This member provides a 128-bit width to accommodate a unique identifier.
-        
-            `VirtualName`
+The fabric ID of the virtual port.
 
-            The symbolic name of the virtual port.
-        
-            `WWNN`
+`Status`
 
-            The world wide node name of the physical port.
-        
-            `WWPN`
+The virtual port status.
 
-            The world wide port name of the physical port.
+`Tag`
+
+A value for identifying the virtual port. This member provides a 128-bit width to accommodate a unique identifier.
+
+`VirtualName`
+
+The symbolic name of the virtual port.
+
+`WWNN`
+
+The world wide node name of the physical port.
+
+`WWPN`
+
+The world wide port name of the physical port.
 
 
 ## Requirements
@@ -90,13 +94,10 @@ typedef struct _MSFC_VirtualFibrePortAttributes {
 | **Minimum UMDF version** |  |
 | **Header** | npivwmi.h (include Npivwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh127629">MSFC_VirtualFibrePortAttributes WMI Class</a>
-</dt>
-</dl>
+
  
 
  

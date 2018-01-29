@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f7a08e0e-cbb1-4ec5-96c6-dade9d298d0a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SendSRL_OUT, SendSRL_OUT, *PSendSRL_OUT
+ms.keywords : structs-Fibre_4cef4091-719d-457e-aeca-d3ab10b23344.xml, hbapiwmi/SendSRL_OUT, storage.sendsrl_out, PSendSRL_OUT, SendSRL_OUT structure [Storage Devices], *PSendSRL_OUT, SendSRL_OUT, _SendSRL_OUT, PSendSRL_OUT structure pointer [Storage Devices], hbapiwmi/PSendSRL_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SendSRL_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SendSRL_OUT, *PSendSRL_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSendSRL_OUT, SendSRL_OUT"
 ---
 
 # _SendSRL_OUT structure
@@ -49,25 +53,25 @@ typedef struct _SendSRL_OUT {
 
 ## Members
 
-        
-            `ActualRspBufferSize`
 
-            Contains the size in bytes of the data that was actually retrieved.
-        
-            `HBAStatus`
+`ActualRspBufferSize`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `RspBuffer`
+Contains the size in bytes of the data that was actually retrieved.
 
-            Contains the results of the SRL command.
-        
-            `TotalRspBufferSize`
+`HBAStatus`
 
-            Contains the size in bytes of the results of the SRL command.
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SendSRL_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`RspBuffer`
+
+Contains the results of the SRL command.
+
+`TotalRspBufferSize`
+
+Contains the size in bytes of the results of the SRL command.
+
+## Remarks
+The WMI tool suite generates a declaration of the SendSRL_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _SendSRL_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565522">SendSRL</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 336dbbc1-0f3c-4a3f-b3b4-017f4d158bda
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGenerateEventList
+ms.keywords : stream.ksgenerateeventlist, ks/KsGenerateEventList, ksfunc_d4a351ab-f750-4486-99ae-72c42794bee0.xml, KsGenerateEventList, KsGenerateEventList function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGenerateEventList
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : Any level (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -95,20 +99,14 @@ This function can be called at any IRQL level if the locking mechanism permits i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
+
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 225da110-cd59-4803-bde8-26e275b3ddbd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_VideoProcessCaps, DXVA_VideoProcessCaps
+ms.keywords : DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_AlphaBlendExtended, dxva/DXVA_VideoProcessCaps, DXVA_VideoProcess_YUV2RGB, display.dxva_videoprocesscaps, dxva/DXVA_VideoProcess_AlphaBlend, DXVA_VideoProcess_StretchX, dxva/DXVA_VideoProcess_SubStreams, dxva/DXVA_VideoProcess_YUV2RGBExtended, DXVA_VideoProcess_SubStreams, DXVA_VideoProcess_AlphaBlendExtended, DXVA_VideoProcess_None, DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcess_StretchX, _DXVA_VideoProcessCaps, DXVA_VideoProcess_StretchY, DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_SubStreamsExtended, DXVA_VideoProcess_SubStreamsExtended, DXVA_VideoProcess_YUV2RGBExtended, dxvaref_4298738a-dc13-47b4-bb3d-84e90661542b.xml, dxva/DXVA_VideoProcess_None, DXVA_VideoProcessCaps enumeration [Display Devices], dxva/DXVA_VideoProcess_StretchY, dxva/DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_YUV2RGB
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_VideoProcessCaps
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoProcessCaps
 ---
 
@@ -156,14 +160,10 @@ Color space conversion performed by <b>DXVA_VideoProcess_YUV2RGB</b> is particul
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
-</dt>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
+
  
 
  

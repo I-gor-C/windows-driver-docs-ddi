@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 94797515-3440-46A9-ACBD-09D005A33CE3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION, DXGKARG_DESTROYPERIODICFRAMENOTIFICATION
+ms.keywords : DXGKARG_DESTROYPERIODICFRAMENOTIFICATION structure [Display Devices], d3dkmddi/DXGKARG_DESTROYPERIODICFRAMENOTIFICATION, _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION, DXGKARG_DESTROYPERIODICFRAMENOTIFICATION, display.dxgkarg_destroyperiodicframenotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_DESTROYPERIODICFRAMENOTIFICATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_DESTROYPERIODICFRAMENOTIFICATION
 ---
 
@@ -47,14 +51,14 @@ typedef struct _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION {
 
 ## Members
 
-        
-            `hAdapter`
 
-            A handle to the adapter that the notification object was created for.
-        
-            `hNotification`
+`hAdapter`
 
-            A handle to the notification object created by the KMD.
+A handle to the adapter that the notification object was created for.
+
+`hNotification`
+
+A handle to the notification object created by the KMD.
 
 
 ## Requirements

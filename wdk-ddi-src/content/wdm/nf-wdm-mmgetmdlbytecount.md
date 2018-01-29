@@ -8,7 +8,7 @@ old-project : Benchmark
 ms.assetid : a0493418-2ce2-4917-bf9f-e4dc726a3847
 ms.author : windowsdriverdev
 ms.date : 1/12/2018
-ms.keywords : MmGetMdlByteCount
+ms.keywords : MmGetMdlByteCount macro [Tools], wdm/MmGetMdlByteCount, kernel.mmgetmdlbytecount, k106_f750d750-c5ca-44cf-b8f1-f52d2eb8bc27.xml, MmGetMdlByteCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmGetMdlByteCount
-req.alt-loc : Wdm.h
 req.ddi-compliance : MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wdm.h
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,6 @@ Callers of <b>MmGetMdlByteCount</b> can be running at any IRQL. Usually, callers
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>

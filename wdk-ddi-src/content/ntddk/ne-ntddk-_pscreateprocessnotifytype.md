@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5DD02CF1-50E8-45F2-9035-E0AA48F1470C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PSCREATEPROCESSNOTIFYTYPE, PSCREATEPROCESSNOTIFYTYPE
+ms.keywords : PSCREATEPROCESSNOTIFYTYPE, ntddk/PsCreateProcessNotifySubsystems, kernel.pscreateprocessnotifytype, _PSCREATEPROCESSNOTIFYTYPE, ntddk/PSCREATEPROCESSNOTIFYTYPE, PsCreateProcessNotifySubsystems, PSCREATEPROCESSNOTIFYTYPE enumeration [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PSCREATEPROCESSNOTIFYTYPE
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PSCREATEPROCESSNOTIFYTYPE
 ---
 
@@ -65,17 +69,12 @@ typedef enum _PSCREATEPROCESSNOTIFYTYPE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex2.md">PsSetCreateProcessNotifyRoutineEx2</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ne-ntddk-_subsystem_information_type.md">SUBSYSTEM_INFORMATION_TYPE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/0eae7899-c40b-4a5f-9e9c-adae021885e7">NtQueryInformationProcess</a>
-</dt>
-</dl>
+
  
 
  

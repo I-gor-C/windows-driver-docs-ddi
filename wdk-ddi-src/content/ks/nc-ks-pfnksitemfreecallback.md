@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c97bb216-a53b-47c7-9be2-2364604b4cf8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstritemfreecallback, KStrItemFreeCallback routine [Streaming Media Devices], KStrItemFreeCallback, PFNKSITEMFREECALLBACK, PFNKSITEMFREECALLBACK, ks/KStrItemFreeCallback, ksfunc_3d98c1cb-4984-4d82-8e58-181445f1feca.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrItemFreeCallback
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -80,14 +84,10 @@ The <i>Flags</i> member of the KSOBJECT_CREATE_ITEM structure indicates if it is
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
-</dt>
-</dl>
+
  
 
  

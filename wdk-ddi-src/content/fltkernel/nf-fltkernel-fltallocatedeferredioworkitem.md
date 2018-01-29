@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25c03114-8e50-40a2-869a-08b11b7490be
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAllocateDeferredIoWorkItem
+ms.keywords : FltAllocateDeferredIoWorkItem function [Installable File System Drivers], fltkernel/FltAllocateDeferredIoWorkItem, FltAllocateDeferredIoWorkItem, FltApiRef_a_to_d_2fd5a055-2bcb-47a5-af89-5a34a92982f1.xml, ifsk.fltallocatedeferredioworkitem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltAllocateDeferredIoWorkItem
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -49,10 +53,6 @@ PFLT_DEFERRED_IO_WORKITEM FltAllocateDeferredIoWorkItem(void);
 This function has no parameters.
 
 ## Return Value
-
-<b>FltAllocateDeferredIoWorkItem</b> returns <b>NULL</b> if there is insufficient memory in nonpaged pool to satisfy the request. Otherwise, it returns a pointer to the allocated work item. 
-
-<b>FltAllocateDeferredIoWorkItem</b> returns <b>NULL</b> if there is insufficient memory in nonpaged pool to satisfy the request. Otherwise, it returns a pointer to the allocated work item. 
 
 <b>FltAllocateDeferredIoWorkItem</b> returns <b>NULL</b> if there is insufficient memory in nonpaged pool to satisfy the request. Otherwise, it returns a pointer to the allocated work item.
 
@@ -78,14 +78,10 @@ To free the work item, a minifilter driver typically calls <a href="..\fltkernel
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltfreedeferredioworkitem.md">FltFreeDeferredIoWorkItem</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltqueuedeferredioworkitem.md">FltQueueDeferredIoWorkItem</a>
-</dt>
-</dl>
+
  
 
  

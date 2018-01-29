@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 123434fd-4e83-4042-834b-1eb4cf13dd10
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InitializeListHead
+ms.keywords : InitializeListHead, k109_2e5e02a0-26d3-4c8a-b712-ee3d515b8a23.xml, wdm/InitializeListHead, InitializeListHead routine [Kernel-Mode Driver Architecture], kernel.initializelisthead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InitializeListHead
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,50 +84,34 @@ Callers of <b>InitializeListHead</b> can be running at any IRQL. If <b>Initializ
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedinsertheadlist.md">ExInterlockedInsertHeadList</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedremoveheadlist.md">ExInterlockedRemoveHeadList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedpopentrylist.md">ExInterlockedPopEntryList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedpushentrylist.md">ExInterlockedPushEntryList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-popentrylist.md">PopEntryList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-pushentrylist.md">PushEntryList</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-exinterlockedpushentrylist.md">ExInterlockedPushEntryList</a>
+
+<a href="..\wdm\nf-wdm-exinterlockedremoveheadlist.md">ExInterlockedRemoveHeadList</a>
+
 <a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-popentrylist.md">PopEntryList</a>
+
+<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
+
 <a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-pushentrylist.md">PushEntryList</a>
+
+<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+
 <a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+
+<a href="..\wdm\nf-wdm-exinterlockedpopentrylist.md">ExInterlockedPopEntryList</a>
+
+<a href="..\wdm\nf-wdm-exinterlockedinsertheadlist.md">ExInterlockedInsertHeadList</a>
+
  
 
  

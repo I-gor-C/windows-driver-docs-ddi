@@ -7,8 +7,8 @@ old-location : debugger\removeflags.htm
 old-project : debugger
 ms.assetid : 60538544-6baf-4d23-a65f-5c5e82bd6f11
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugBreakpoint2, IDebugBreakpoint2::RemoveFlags, RemoveFlags
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugBreakpoint::RemoveFlags, IDebugBreakpoint2::RemoveFlags, dbgeng/IDebugBreakpoint2::RemoveFlags, IDebugBreakpoint2, IDebugBreakpoint interface [Windows Debugging], RemoveFlags method, IDebugBreakpoint::RemoveFlags, debugger.removeflags, RemoveFlags method [Windows Debugging], RemoveFlags method [Windows Debugging], IDebugBreakpoint2 interface, RemoveFlags method [Windows Debugging], IDebugBreakpoint interface, RemoveFlags, ComOther_15793582-5533-4f63-8278-9556b160e6d2.xml, IDebugBreakpoint2 interface [Windows Debugging], RemoveFlags method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugBreakpoint.RemoveFlags,IDebugBreakpoint2.RemoveFlags
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -56,17 +60,29 @@ Flags to remove from the breakpoint.  <i>Flags</i> is a bit field. The new value
 ## Return Value
 
 <b>RemoveFlags</b> might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
 
- 
+</td>
+</tr>
+</table> 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
 ## Remarks
 
-For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
+For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

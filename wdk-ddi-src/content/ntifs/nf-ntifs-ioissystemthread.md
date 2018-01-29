@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1f3dc15f-14b5-4797-83be-ba3a01a1551b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoIsSystemThread
+ms.keywords : IoIsSystemThread, ntifs/IoIsSystemThread, IoIsSystemThread routine [Installable File System Drivers], ifsk.ioissystemthread, ioref_3e14f3af-c985-43a4-bc57-927483597c79.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoIsSystemThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -75,14 +79,10 @@ For more information about using system threads and managing synchronization wit
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-psissystemthread.md">PsIsSystemThread</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a4142380-1596-49dc-a18d-ac5c3cef73fe
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTMGR_MOUNT_POINT, *PMOUNTMGR_MOUNT_POINT, MOUNTMGR_MOUNT_POINT
+ms.keywords : _MOUNTMGR_MOUNT_POINT, mountmgr/MOUNTMGR_MOUNT_POINT, structs-mntmgr_88136173-0786-4d4e-80b7-77f523e8d125.xml, *PMOUNTMGR_MOUNT_POINT, mountmgr/PMOUNTMGR_MOUNT_POINT, PMOUNTMGR_MOUNT_POINT structure pointer [Storage Devices], MOUNTMGR_MOUNT_POINT, PMOUNTMGR_MOUNT_POINT, MOUNTMGR_MOUNT_POINT structure [Storage Devices], storage.mountmgr_mount_point
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MOUNTMGR_MOUNT_POINT
-req.alt-loc : mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTMGR_MOUNT_POINT, MOUNTMGR_MOUNT_POINT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTMGR_MOUNT_POINT, *PMOUNTMGR_MOUNT_POINT
 ---
 
 # _MOUNTMGR_MOUNT_POINT structure
@@ -51,33 +55,45 @@ typedef struct _MOUNTMGR_MOUNT_POINT {
 
 ## Members
 
-        
-            `DeviceNameLength`
 
-            Contains the length, in bytes, of the nonpersistent device name.
-        
-            `DeviceNameOffset`
+`DeviceNameLength`
 
-            Contains an offset, in bytes, into the output buffer where the nonpersistent device name is located.
-        
-            `SymbolicLinkNameLength`
+Contains the length, in bytes, of the nonpersistent device name.
 
-            Contains the length, in bytes, of the symbolic link.
-        
-            `SymbolicLinkNameOffset`
+`DeviceNameOffset`
 
-            Contains an offset, in bytes, into the output buffer where the symbolic link is located.
-        
-            `UniqueIdLength`
+Contains an offset, in bytes, into the output buffer where the nonpersistent device name is located.
 
-            Contains the length, in bytes, of the unique ID.
-        
-            `UniqueIdOffset`
+`Reserved1`
 
-            Contains an offset, in bytes, into the output buffer where the unique ID is located.
 
-    ## Remarks
-        None of the names returned are <b>NULL</b> terminated, nor do the buffers require terminating <b>NULL</b> characters. The caller of <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a> is not required to provide data in all of the members of the MOUNTMGR_MOUNT_POINT structure, but empty members must have an offset of zero.
+
+`Reserved2`
+
+
+
+`Reserved3`
+
+
+
+`SymbolicLinkNameLength`
+
+Contains the length, in bytes, of the symbolic link.
+
+`SymbolicLinkNameOffset`
+
+Contains an offset, in bytes, into the output buffer where the symbolic link is located.
+
+`UniqueIdLength`
+
+Contains the length, in bytes, of the unique ID.
+
+`UniqueIdOffset`
+
+Contains an offset, in bytes, into the output buffer where the unique ID is located.
+
+## Remarks
+None of the names returned are <b>NULL</b> terminated, nor do the buffers require terminating <b>NULL</b> characters. The caller of <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a> is not required to provide data in all of the members of the MOUNTMGR_MOUNT_POINT structure, but empty members must have an offset of zero.
 
 On input, offsets are from the beginning of the MOUNTMGR_MOUNT_POINT structure. On output offsets are from the beginning of the buffer. This is usually the same as the beginning of the <a href="..\mountmgr\ns-mountmgr-_mountmgr_mount_points.md">MOUNTMGR_MOUNT_POINTS</a> container structure (as opposed to the embedded MOUNTMGR_MOUNT_POINT array instance).
 
@@ -93,13 +109,10 @@ For a discussion of the different between symbolic links, unique IDs, and nonper
 | **Minimum UMDF version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>
-</dt>
-</dl>
+
  
 
  

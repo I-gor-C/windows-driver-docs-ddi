@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 265912e2-2076-4435-811f-70a3dd1a0bd7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE
+ms.keywords : UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, display.d3dddiarg_setpalette, d3dumddi/D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE structure [Display Devices], _D3DDDIARG_SETPALETTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETPALETTE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETPALETTE
 ---
 
@@ -48,15 +52,14 @@ typedef struct _D3DDDIARG_SETPALETTE {
 
 ## Members
 
-        
-            `hResource`
 
-            [in] A handle to the surface (texture) with which the palette that is identified by <b>PaletteHandle</b> is associated.
-        
-            `PaletteFlags`
+`hResource`
 
-            [in] A valid bitwise OR of the following flags that specify the attributes of the palette.
+[in] A handle to the surface (texture) with which the palette that is identified by <b>PaletteHandle</b> is associated.
 
+`PaletteFlags`
+
+[in] A valid bitwise OR of the following flags that specify the attributes of the palette.
 <table>
 <tr>
 <th>Flag</th>
@@ -93,13 +96,13 @@ The palette's alpha data channel is valid and should be used.
 </td>
 </tr>
 </table>
-        
-            `PaletteHandle`
 
-            [in] A handle to the palette to be set up. If the value of <b>PaletteHandle</b> is zero, the surface that is specified by <b>hResource</b> should be uncoupled from any palette that it might have been associated with previously.
+`PaletteHandle`
 
-    ## Remarks
-        The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpalette.md">SetPalette</a> function associates the palette that is specified by the <b>PaletteHandle</b> member with the surface that is specified by the <b>hResource</b> member and uses the <b>PaletteFlags</b> member to specify the characteristics of the palette.
+[in] A handle to the palette to be set up. If the value of <b>PaletteHandle</b> is zero, the surface that is specified by <b>hResource</b> should be uncoupled from any palette that it might have been associated with previously.
+
+## Remarks
+The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpalette.md">SetPalette</a> function associates the palette that is specified by the <b>PaletteHandle</b> member with the surface that is specified by the <b>hResource</b> member and uses the <b>PaletteFlags</b> member to specify the characteristics of the palette.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -109,13 +112,10 @@ The palette's alpha data channel is valid and should be used.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpalette.md">SetPalette</a>
-</dt>
-</dl>
+
  
 
  

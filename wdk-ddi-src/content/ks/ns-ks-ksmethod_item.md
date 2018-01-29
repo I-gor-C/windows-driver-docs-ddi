@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 79119458-a6a7-433e-9306-d7a56ca056c2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSMETHOD_ITEM, KSMETHOD_ITEM, *PKSMETHOD_ITEM
+ms.keywords : "*PKSMETHOD_ITEM, ks-struct_e3c7b451-337f-4cc5-a5b8-a28aa9bea679.xml, PKSMETHOD_ITEM, PKSMETHOD_ITEM structure pointer [Streaming Media Devices], stream.ksmethod_item, ks/KSMETHOD_ITEM, ks/PKSMETHOD_ITEM, KSMETHOD_ITEM, KSMETHOD_ITEM structure [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSMETHOD_ITEM
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSMETHOD_ITEM, *PKSMETHOD_ITEM
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSMETHOD_ITEM, KSMETHOD_ITEM"
 ---
 
 # KSMETHOD_ITEM structure
@@ -54,11 +58,10 @@ typedef struct {
 
 ## Members
 
-        
-            `Flags`
 
-            Specifies the request type of this method request.
+`Flags`
 
+Specifies the request type of this method request.
 <table>
 <tr>
 <th>Value</th>
@@ -115,25 +118,25 @@ Indicates that the method is to be processed in source mode. An MDL is allocated
 </td>
 </tr>
 </table>
-        
-            `MethodId`
 
-            Specifies the identifier of this method within its method set.
-        
-            `MinData`
+`MethodId`
 
-            Specifies the minimum size buffer required to specify the method data buffer. This buffer is used to read and/or write information related to the method.
-        
-            `MinMethod`
+Specifies the identifier of this method within its method set.
 
-            Specifies the minimum size of buffer required to specify the method completely. This size is at least <b>sizeof</b>(KSMETHOD) bytes.
-        
-            `SupportHandler`
+`MinData`
 
-            Pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnkshandler.md">KStrSupportHandler</a> callback routine.
+Specifies the minimum size buffer required to specify the method data buffer. This buffer is used to read and/or write information related to the method.
 
-    ## Remarks
-        A minidriver uses the KSMETHOD_ITEM structure to define methods in a method set. The minidriver implements methods and uses the <b>MethodHandler</b> member to point to these methods. A client can then use the IOCTL_KS_METHOD request along with the KSMETHOD structure to execute methods on a kernel streaming object that the minidriver handles. For more information, see <a href="https://msdn.microsoft.com/1d7bd6f4-0aaf-4d77-8132-f551fd2ecbd2">KS Methods</a>.
+`MinMethod`
+
+Specifies the minimum size of buffer required to specify the method completely. This size is at least <b>sizeof</b>(KSMETHOD) bytes.
+
+`SupportHandler`
+
+Pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnkshandler.md">KStrSupportHandler</a> callback routine.
+
+## Remarks
+A minidriver uses the KSMETHOD_ITEM structure to define methods in a method set. The minidriver implements methods and uses the <b>MethodHandler</b> member to point to these methods. A client can then use the IOCTL_KS_METHOD request along with the KSMETHOD structure to execute methods on a kernel streaming object that the minidriver handles. For more information, see <a href="https://msdn.microsoft.com/1d7bd6f4-0aaf-4d77-8132-f551fd2ecbd2">KS Methods</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -143,19 +146,14 @@ Indicates that the method is to be processed in source mode. An MDL is allocated
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nc-ks-pfnkshandler.md">KStrSupportHandler</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-</dt>
-</dl>
+
+<a href="..\ks\nc-ks-pfnkshandler.md">KStrSupportHandler</a>
+
  
 
  

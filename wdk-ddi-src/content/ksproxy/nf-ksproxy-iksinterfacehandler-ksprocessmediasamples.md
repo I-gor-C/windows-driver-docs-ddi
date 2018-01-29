@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3f0982d8-4ac3-40f6-8587-624c26d25510
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsInterfaceHandler, IKsInterfaceHandler::KsProcessMediaSamples, KsProcessMediaSamples
+ms.keywords : ksproxy/IKsInterfaceHandler::KsProcessMediaSamples, ksproxy_929792a7-d5c4-4568-9178-866b9738079b.xml, IKsInterfaceHandler::KsProcessMediaSamples, IKsInterfaceHandler, stream.iksinterfacehandler_ksprocessmediasamples, KsProcessMediaSamples method [Streaming Media Devices], IKsInterfaceHandler interface, KsProcessMediaSamples method [Streaming Media Devices], KsProcessMediaSamples, IKsInterfaceHandler interface [Streaming Media Devices], KsProcessMediaSamples method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsInterfaceHandler.KsProcessMediaSamples
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -67,7 +71,6 @@ Pointer to a variable that initially contains the number of samples in the list 
 `IoOperation`
 
 Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:
-
 <table>
 <tr>
 <th>Value</th>
@@ -126,17 +129,12 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a>
-</dt>
-<dt>
+
 <a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a>
+
  
 
  

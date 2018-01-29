@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 37da9699-2edb-4a32-a865-2bf3b1cef157
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_FS_OBJECTID_INFORMATION, FILE_FS_OBJECTID_INFORMATION, *PFILE_FS_OBJECTID_INFORMATION
+ms.keywords : PFILE_FS_OBJECTID_INFORMATION, ifsk.file_fs_objectid_information, ntddk/PFILE_FS_OBJECTID_INFORMATION, *PFILE_FS_OBJECTID_INFORMATION, PFILE_FS_OBJECTID_INFORMATION structure pointer [Installable File System Drivers], ntddk/FILE_FS_OBJECTID_INFORMATION, FILE_FS_OBJECTID_INFORMATION structure [Installable File System Drivers], _FILE_FS_OBJECTID_INFORMATION, FILE_FS_OBJECTID_INFORMATION, fileinformationstructures_6a17f2c2-0aae-44a7-a65c-02c1ed2a9ed4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_FS_OBJECTID_INFORMATION
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : FILE_FS_OBJECTID_INFORMATION, *PFILE_FS_OBJECTID_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFILE_FS_OBJECTID_INFORMATION, FILE_FS_OBJECTID_INFORMATION"
 ---
 
 # _FILE_FS_OBJECTID_INFORMATION structure
@@ -47,31 +51,39 @@ typedef struct _FILE_FS_OBJECTID_INFORMATION {
 
 ## Members
 
-        
-            `ExtendedInfo`
 
-            Additional information about the file system volume.
-        
-            `ObjectId`
+`ExtendedInfo`
 
-            Object ID for the file system volume.
+Additional information about the file system volume.
 
-    ## Remarks
-        This information can be queried in either of the following ways: 
+`ObjectId`
 
+Object ID for the file system volume.
+
+## Remarks
+This information can be queried in either of the following ways: 
+<ul>
+<li>
 Call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>, passing FileFsObjectIdInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_FS_OBJECTID_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
+</li>
+<li>
 Create an IRP with major function code IRP_MJ_QUERY_VOLUME_INFORMATION. 
 
-No specific access rights are required to query this information. Thus this information is available as long as the volume is accessed through an open handle to the volume itself, or to a file or directory on the volume. 
+</li>
+</ul>No specific access rights are required to query this information. Thus this information is available as long as the volume is accessed through an open handle to the volume itself, or to a file or directory on the volume. 
 
 This information can be set in either of the following ways: 
-
+<ul>
+<li>
 Call <a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a> or <b>FltSetVolumeInformation</b>, passing FileFsObjectIdInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_FS_OBJECTID_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
+</li>
+<li>
 Create an IRP with major function code IRP_MJ_SET_VOLUME_INFORMATION. 
 
-FILE_WRITE_DATA access to the volume is required to set this information. 
+</li>
+</ul>FILE_WRITE_DATA access to the volume is required to set this information. 
 
 Support for volume object IDs is file-system-specific. In NTFS, volume object IDs are used extensively by the distributed link tracking service. 
 
@@ -91,31 +103,22 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-zwsetvolumeinformationfile.md">ZwSetVolumeInformationFile</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
+
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+
  
 
  

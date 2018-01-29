@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 252dc455-e2d9-40db-83ea-a53e5ff8eda0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsAddLogContainerSet
+ms.keywords : wdm/ClfsAddLogContainerSet, Clfs_f112becb-a913-4d1a-8e58-d7365468be18.xml, ClfsAddLogContainerSet, kernel.clfsaddlogcontainerset, ClfsAddLogContainerSet routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsAddLogContainerSet
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ The number of containers in the set. This is the number of elements in the <i>rg
 `pcbContainer`
 
 A pointer to a ULONGLONG-typed variable. The role of this parameter depends on whether the log currently has at least one container.
-
 <ul>
 <li>
 If the log currently has no containers, the caller supplies a positive integer that is the requested size, in bytes, of an individual container. CLFS creates containers that are the requested size rounded up to a multiple of 512KB (for a dedicated log) or 1MB (for a multiplexed log). 
@@ -116,14 +119,10 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-clfsremovelogcontainerset.md">ClfsRemoveLogContainerSet</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-clfsremovelogcontainerset.md">ClfsRemoveLogContainerSet</a>
+
  
 
  

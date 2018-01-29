@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 373788d8-4963-4319-82ae-3a0675c9fff4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_FS_ATTRIBUTE_INFORMATION, FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION
+ms.keywords : FILE_FS_ATTRIBUTE_INFORMATION structure [Installable File System Drivers], FILE_FS_ATTRIBUTE_INFORMATION, _FILE_FS_ATTRIBUTE_INFORMATION, PFILE_FS_ATTRIBUTE_INFORMATION structure pointer [Installable File System Drivers], ntifs/PFILE_FS_ATTRIBUTE_INFORMATION, fileinformationstructures_d3a65f15-7f98-492d-a65e-65db56c4c58d.xml, *PFILE_FS_ATTRIBUTE_INFORMATION, PFILE_FS_ATTRIBUTE_INFORMATION, ntifs/FILE_FS_ATTRIBUTE_INFORMATION, ifsk.file_fs_attribute_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_FS_ATTRIBUTE_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION
 ---
 
@@ -50,12 +54,11 @@ typedef struct _FILE_FS_ATTRIBUTE_INFORMATION {
 
 ## Members
 
-        
-            `FileSystemAttributes`
 
-            Bitmask of flags specifying attributes of the specified file system, as a compatible combination of the 
+`FileSystemAttributes`
+
+Bitmask of flags specifying attributes of the specified file system, as a compatible combination of the 
        following flags.
-
 <table>
 <tr>
 <th>Value</th>
@@ -205,23 +208,24 @@ The file system supports per-user quotas.
 </td>
 </tr>
 </table>
-        
-            `FileSystemName`
 
-            File system name.
-        
-            `FileSystemNameLength`
+`FileSystemName`
 
-            Length, in bytes, of the file system name.
-        
-            `MaximumComponentNameLength`
+File system name.
 
-            Maximum file name component length, in bytes, supported by the specified file system. A file name component 
+`FileSystemNameLength`
+
+Length, in bytes, of the file system name.
+
+`MaximumComponentNameLength`
+
+Maximum file name component length, in bytes, supported by the specified file system. A file name component 
       is that portion of a file name between backslashes.
 
-    ## Remarks
-        This information can be queried in either of the following ways:
-
+## Remarks
+This information can be queried in either of the following ways:
+<ul>
+<li>
 Call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or 
        <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>, passing 
        <b>FileFsAttributeInformation</b> as the value of 
@@ -235,10 +239,13 @@ On CSVFS <b>FileFsAttributeInformation</b> returns
        system CSVFS is layered on then you should use 
        <a href="https://msdn.microsoft.com/1AC3FD47-70B8-4735-9B25-A8B2BAEE5A83">FSCTL_CSV_QUERY_DOWN_LEVEL_FILE_SYSTEM_CHARACTERISTICS</a>.
 
+</li>
+<li>
 Create an IRP with major function code 
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>.
 
-No specific access rights are required to query this information. Thus this information is available as long as 
+</li>
+</ul>No specific access rights are required to query this information. Thus this information is available as long as 
      the volume is accessed through an open handle to the volume itself, or to a file or directory on the volume.
 
 The size of the buffer passed in the <i>FileInformation</i> parameter to 
@@ -256,22 +263,16 @@ This structure must be aligned on a <b>LONG</b> (4-byte) boundary.
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

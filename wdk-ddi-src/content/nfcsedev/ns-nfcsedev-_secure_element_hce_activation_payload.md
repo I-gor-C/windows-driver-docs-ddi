@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 2FFEB2DB-7506-4CDB-BD5F-41D2E4212017
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, *PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
+ms.keywords : nfpdrivers.secure_element_hce_activation_payload, nfcsedev/SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD structure pointer [Near-Field Proximity Drivers], _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, nfcsedev/PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD structure [Near-Field Proximity Drivers], SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, *PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, *PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
 ---
 
 # _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD structure
@@ -48,19 +52,19 @@ typedef struct _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD {
 
 ## Members
 
-        
-            `bConnectionId`
 
-            Unique identifer for current connection.
-        
-            `eRfProtocolType`
+`bConnectionId`
 
-            NFC Forum RF protocol
+Unique identifer for current connection.
+
+`eRfProtocolType`
+
+NFC Forum RF protocol
 type.
-        
-            `eRfTechType`
 
-            NFC Forum RF technology type.
+`eRfTechType`
+
+NFC Forum RF technology type.
 
 
 ## Requirements

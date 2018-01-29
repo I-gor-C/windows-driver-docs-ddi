@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : af697ccd-a748-45f8-97bb-fe595d81b693
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxpTrackReference
+ms.keywords : fcb/RxpTrackReference, RxpTrackReference, rxref_12b9266b-6cd9-4011-b764-b62376e0a5fb.xml, RxpTrackReference function [Installable File System Drivers], ifsk.rxptrackreference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxpTrackReference
-req.alt-loc : fcb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FA_ENTRY, *PFA_ENTRY
 ---
 
@@ -65,7 +69,7 @@ The line number in the source file where this routine was called.
 
 `Instance`
 
-
+TBD
 
 
 ## Return Value
@@ -98,26 +102,18 @@ For retail builds, this function does nothing.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554385">RxDbgBreakPoint</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
-</dt>
-<dt>
 <a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
-</dt>
-<dt>
-<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
-</dt>
-<dt>
+
 <a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
-</dt>
-</dl>
+
+<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554385">RxDbgBreakPoint</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 15450f33-cb86-4c1d-87d7-2d77a1d66a81
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _CIP_HDR1, CIP_HDR1, *PCIP_HDR1
+ms.keywords : avcstrm/PCIP_HDR1, *PCIP_HDR1, CIP_HDR1, stream.cip_hdr1, PCIP_HDR1, avcstrm/CIP_HDR1, _CIP_HDR1, CIP_HDR1 structure [Streaming Media Devices], avcsref_bfb761c5-6eb2-459a-b75f-32c5e2d11700.xml, PCIP_HDR1 structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_HDR1
-req.alt-loc : avcstrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : CIP_HDR1, *PCIP_HDR1
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PCIP_HDR1, CIP_HDR1"
 ---
 
 # _CIP_HDR1 structure
@@ -53,38 +57,38 @@ typedef struct _CIP_HDR1 {
 
 ## Members
 
-        
-            `Bit00`
 
-            Must be set to 0:0.
-        
-            `DBC`
+`Bit00`
 
-            Data block counter. This is not used by subunit driver. It must be set to 0.
-        
-            `DBS`
+Must be set to 0:0.
 
-            Specifies the data block size in quadlets.
-        
-            `FN`
+`DBC`
 
-            Specifies the fractional number.
-        
-            `QPC`
+Data block counter. This is not used by subunit driver. It must be set to 0.
 
-            Quadlet padding count (0..7 quadlets).
-        
-            `Rsv00`
+`DBS`
 
-            Reserved bits. Do not use this. It must be 0:0.
-        
-            `SID`
+Specifies the data block size in quadlets.
 
-            Specifies the source node ID (ID of transmitter). Not used by the subunit driver. Must be set to 0.
-        
-            `SPH`
+`FN`
 
-            Specifies a source packet header. A value of 1 indicates the presence of a source packet header. A value of 0 indicates no source packet header.
+Specifies the fractional number.
+
+`QPC`
+
+Quadlet padding count (0..7 quadlets).
+
+`Rsv00`
+
+Reserved bits. Do not use this. It must be 0:0.
+
+`SID`
+
+Specifies the source node ID (ID of transmitter). Not used by the subunit driver. Must be set to 0.
+
+`SPH`
+
+Specifies a source packet header. A value of 1 indicates the presence of a source packet header. A value of 0 indicates no source packet header.
 
 
 ## Requirements
@@ -95,19 +99,14 @@ typedef struct _CIP_HDR1 {
 | **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md">CIP_HDR2_FDF</a>
-</dt>
-<dt>
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr2_mpegts.md">CIP_HDR2_MPEGTS</a>
-</dt>
-<dt>
+
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr2_syt.md">CIP_HDR2_SYT</a>
-</dt>
-</dl>
+
+<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md">CIP_HDR2_FDF</a>
+
  
 
  

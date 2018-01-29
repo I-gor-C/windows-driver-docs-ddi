@@ -7,8 +7,8 @@ old-location : netvista\netdmapnpeventnotify.htm
 old-project : netvista
 ms.assetid : a0f0fdbc-089c-4bfb-ba5f-eaff6042621c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NetDmaPnPEventNotify
+ms.date : 1/18/2018
+ms.keywords : NetDmaPnPEventNotify function [Network Drivers Starting with Windows Vista], netdma_ref_406452bc-e56a-47da-9e7a-09fb4aebe1eb.xml, netvista.netdmapnpeventnotify, NetDmaPnPEventNotify, netdma/NetDmaPnPEventNotify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NetDMA 2.0 and NetDMA 1.1 drivers in W
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NetDmaPnPEventNotify
-req.alt-loc : netdma.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,24 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 
 # NetDmaPnPEventNotify function
+<div class="alert"><b>Note</b>  The NetDMA interface is not supported 
 
+in Windows 8 and later.</div><div> </div>The 
+  <b>NetDmaPnPEventNotify</b> function indicates a power state change for a NetDMA provider device.
 
 ## Syntax
 
@@ -53,8 +60,8 @@ VOID NetDmaPnPEventNotify(
 
 A handle that identifies a DMA provider. A DMA provider driver receives this handle from the
      NetDMA interface in a call to the 
-     <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
-     NetDmaRegisterProvider</a> function.
+     <mshelp:link keywords="netvista.netdmaregisterprovider" tabindex="0"><b>
+     NetDmaRegisterProvider</b></mshelp:link> function.
 
 `PnPEvent`
 
@@ -95,16 +102,12 @@ A NetDMA provider driver calls
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
-</dt>
-<dt>
 <a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">NET_DMA_PNP_NOTIFICATION</a>
-</dt>
-</dl>
- 
+
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaPnPEventNotify function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaPnPEventNotify function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

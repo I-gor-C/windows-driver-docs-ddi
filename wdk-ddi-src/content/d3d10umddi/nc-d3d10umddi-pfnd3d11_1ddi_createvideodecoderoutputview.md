@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a5a32b4e-799c-4d18-995d-f804e6dff85c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.createvideodecoderoutputview, CreateVideoDecoderOutputView callback function [Display Devices], CreateVideoDecoderOutputView, PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW, PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW, d3d10umddi/CreateVideoDecoderOutputView
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CreateVideoDecoderOutputView
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -74,16 +78,46 @@ HRESULT Pfnd3d111DdiCreatevideodecoderoutputview(
 ## Return Value
 
 <b>CreateVideoDecoderOutputView</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The video decoder output view was created successfully.
+</dl>
+</td>
+<td width="60%">
+The video decoder output view was created successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
-</dl>The graphics adapter was removed.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was removed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         Memory was not available to complete the operation.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,20 +139,14 @@ When the runtime  calls <i>CreateVideoDecoderOutputView</i>, it passes the handl
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessoroutputviewsize.md">CalcPrivateVideoProcessorOutputViewSize</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_negotiatecryptosessionkeyeschange.md">NegotiateCryptoSessionKeyExchange</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideodecoder.md">D3D11_1DDIARG_CREATEVIDEODECODER</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe.md">VideoDecoderBeginFrame</a>
-</dt>
-</dl>
+
  
 
  

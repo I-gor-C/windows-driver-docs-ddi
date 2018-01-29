@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2e027ac5-7b5d-43cc-8d37-c0a3e77e68c9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR
+ms.keywords : _ATA_ZONE_DESCRIPTOR, PATA_ZONE_DESCRIPTOR structure pointer [Storage Devices], PATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR, storage.ata_zone_descriptor, ATA_ZONE_DESCRIPTOR structure [Storage Devices], ata/ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR, ata/PATA_ZONE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ATA_ZONE_DESCRIPTOR
-req.alt-loc : Ata.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR
 ---
 
 # _ATA_ZONE_DESCRIPTOR structure
@@ -59,64 +63,62 @@ typedef struct _ATA_ZONE_DESCRIPTOR {
 
 ## Members
 
-        
-            `NonSeq`
 
-            N/A
-        
-            `Reserved0`
+`NonSeq`
 
-            N/A
-        
-            `Reserved1`
 
-            N/A
-        
-            `Reserved2`
 
-            N/A
-        
-            `Reserved3`
+`Reserved0`
 
-            N/A
+
+
+`Reserved1`
+
+
+
+`Reserved2`
 
 N/A
-        
-            `Reserved4`
 
-            N/A
-        
-            `Reserved5`
+`Reserved3`
 
-            N/A
-        
-            `Reserved6`
 
-            N/A
-        
-            `Reset`
 
-            N/A
-        
-            `WritePointerLBA`
+`Reserved4`
 
-            N/A
-        
-            `ZoneCondition`
 
-            N/A
-        
-            `ZoneLength`
 
-            N/A
-        
-            `ZoneStartLBA`
+`Reserved5`
 
-            N/A
-        
-            `ZoneType`
 
-            N/A
+
+`Reserved6`
+
+N/A
+
+`Reset`
+
+
+
+`WritePointerLBA`
+
+
+
+`ZoneCondition`
+
+
+
+`ZoneLength`
+
+
+
+`ZoneStartLBA`
+
+
+
+`ZoneType`
+
+
 
 
 ## Requirements

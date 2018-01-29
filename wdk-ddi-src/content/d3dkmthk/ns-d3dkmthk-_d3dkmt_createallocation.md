@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3e698027-23f8-4765-a4ac-955cd4b24a70
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEALLOCATION, D3DKMT_CREATEALLOCATION
+ms.keywords : D3DKMT_CREATEALLOCATION structure [Display Devices], OpenGL_Structs_983d37f8-47ad-40ea-b3da-2a211e9f0967.xml, D3DKMT_CREATEALLOCATION, _D3DKMT_CREATEALLOCATION, display.d3dkmt_createallocation, d3dkmthk/D3DKMT_CREATEALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEALLOCATION
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEALLOCATION
 ---
 
@@ -62,50 +66,48 @@ typedef struct _D3DKMT_CREATEALLOCATION {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a> structure that identifies  attributes for creating the allocation, in bit-field flags.
+`Flags`
 
-<div class="alert"><b>Note</b>  If  you set the <b>CreateShared</b> bit-field flag in <b>Flags</b>, you must also set the <b>CreateResource</b> bit-field flag.</div>
-<div> </div>
-        
-            `hDevice`
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a> structure that identifies  attributes for creating the allocation, in bit-field flags.
+<div class="alert"><b>Note</b>  If  you set the <b>CreateShared</b> bit-field flag in <b>Flags</b>, you must also set the <b>CreateResource</b> bit-field flag.</div><div> </div>
 
-            [in] A handle to the device that the resource or allocation is associated with.
-        
-            `hGlobalShare`
+`hDevice`
 
-            [out] A handle to the shared resource. The driver should always set the value in <b>hGlobalShare</b> to zero. 
+[in] A handle to the device that the resource or allocation is associated with.
+
+`hGlobalShare`
+
+[out] A handle to the shared resource. The driver should always set the value in <b>hGlobalShare</b> to zero. 
 
 When the driver sets the <b>CreateShared</b> bit-field flag in <b>Flags</b> to create a shared resource, the OpenGL runtime generates a shared handle that is unique across all of the devices and passes it back to the driver in <b>hGlobalShare</b>.<div class="alert"><b>Note</b>  If you set  <b>CreateShared</b>, you must also set the <b>CreateResource</b> bit-field flag.</div>
 <div> </div>
-        
-            `hPrivateRuntimeResourceHandle`
 
-            [in] An opaque handle that you can use in event tracing. This handle can be used to associate kernel-mode allocations with user-mode surface pointers when you analyze Event Tracing for Windows (ETW) event logs.
-        
-            `hResource`
+`hPrivateRuntimeResourceHandle`
 
-            [in/out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the resource that is associated with the allocations. The value in <b>hResource</b> should always be zero unless an allocation will be added to an existing resource, in which case <b>hResource</b> contains the resource handle. 
+[in] An opaque handle that you can use in event tracing. This handle can be used to associate kernel-mode allocations with user-mode surface pointers when you analyze Event Tracing for Windows (ETW) event logs.
+
+`hResource`
+
+[in/out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the resource that is associated with the allocations. The value in <b>hResource</b> should always be zero unless an allocation will be added to an existing resource, in which case <b>hResource</b> contains the resource handle. 
 
 When the <b>CreateResource</b> bit-field flag is set in the <b>Flags</b> member, the OpenGL runtime generates a unique handle and passes it back to the driver. On output from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a> function, <b>hResource</b> specifies the handle that the driver should use in subsequent OpenGL runtime calls to identify the resource. The resource handle that is returned is device-specific and is valid only when used with the device that it was created on.
-        
-            `NumAllocations`
 
-            [in] The number of elements in the array that <b>pAllocationInfo</b> specifies, which represents the number of allocations to create. Note that creating a resource without any allocations initially associated with it is valid; therefore, <b>NumAllocations</b> can be set to 0.
-        
-            `pPrivateRuntimeData`
+`NumAllocations`
 
-            [in] A pointer to optional private data that can be attached to a resource for debugging purposes. This data is per resource and not per allocation.
-        
-            `PrivateDriverDataSize`
+[in] The number of elements in the array that <b>pAllocationInfo</b> specifies, which represents the number of allocations to create. Note that creating a resource without any allocations initially associated with it is valid; therefore, <b>NumAllocations</b> can be set to 0.
 
-            [in/out] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
-        
-            `PrivateRuntimeDataSize`
+`pPrivateRuntimeData`
 
-            [in] The size, in bytes, of the private data that <b>pPrivateRuntimeData</b> points to.
+[in] A pointer to optional private data that can be attached to a resource for debugging purposes. This data is per resource and not per allocation.
+
+`PrivateDriverDataSize`
+
+[in/out] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+
+`PrivateRuntimeDataSize`
+
+[in] The size, in bytes, of the private data that <b>pPrivateRuntimeData</b> points to.
 
 
 ## Requirements
@@ -116,19 +118,14 @@ When the <b>CreateResource</b> bit-field flag is set in the <b>Flags</b> member,
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
+
  
 
  

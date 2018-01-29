@@ -7,8 +7,8 @@ old-location : netvista\ril_setcellbroadcastmsgconfig.htm
 old-project : netvista
 ms.assetid : c2b7b9b7-a76f-4bd9-bf25-edb5c103a578
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL_SetCellBroadcastMsgConfig
+ms.date : 1/18/2018
+ms.keywords : rilapi/RIL_SetCellBroadcastMsgConfig, RIL_SetCellBroadcastMsgConfig method [Network Drivers Starting with Windows Vista], RIL_SetCellBroadcastMsgConfig, netvista.ril_setcellbroadcastmsgconfig
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL_SetCellBroadcastMsgConfig
-req.alt-loc : rilapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6009d11b-4f44-4591-bcb8-66e0c42d5689
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ACCESS_RANGE, ACCESS_RANGE, *PACCESS_RANGE
+ms.keywords : storage.access_range, PACCESS_RANGE, structs-scsiport_353ffdeb-4d30-4df8-9422-ea3a9e662104.xml, _ACCESS_RANGE, ACCESS_RANGE, srb/PACCESS_RANGE, ACCESS_RANGE structure [Storage Devices], PACCESS_RANGE structure pointer [Storage Devices], srb/ACCESS_RANGE, *PACCESS_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACCESS_RANGE
-req.alt-loc : srb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ACCESS_RANGE, *PACCESS_RANGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PACCESS_RANGE, ACCESS_RANGE"
 req.product : Windows 10 or later.
 ---
 
 # _ACCESS_RANGE structure
 An ACCESS_RANGE describes a memory or I/O port range used by an HBA.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -49,21 +54,21 @@ typedef struct _ACCESS_RANGE {
 
 ## Members
 
-        
-            `RangeInMemory`
 
-            Indicates the range is in memory when <b>TRUE</b>, rather than in I/O space. When <b>FALSE</b>, the range is in I/O space.
-        
-            `RangeLength`
+`RangeInMemory`
 
-            Specifies the size, in bytes, or number of ports in the range. A miniport driver must ensure that this value matches the range actually decoded by the adapter. For example, if the HBA uses seven registers but responds to eight, this member should be set to 8.
-        
-            `RangeStart`
+Indicates the range is in memory when <b>TRUE</b>, rather than in I/O space. When <b>FALSE</b>, the range is in I/O space.
 
-            Contains an address of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff565350">SCSI_PHYSICAL_ADDRESS</a> that specifies the bus-relative base address of the range. This is an address that can be passed into <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>.
+`RangeLength`
 
-    ## Remarks
-        Each ACCESS_RANGE is an <b>AccessRanges</b> array element within the PORT_CONFIGURATION_INFORMATION structure that is passed to a miniport driver's HwScsiFindAdapter routine.
+Specifies the size, in bytes, or number of ports in the range. A miniport driver must ensure that this value matches the range actually decoded by the adapter. For example, if the HBA uses seven registers but responds to eight, this member should be set to 8.
+
+`RangeStart`
+
+Contains an address of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff565350">SCSI_PHYSICAL_ADDRESS</a> that specifies the bus-relative base address of the range. This is an address that can be passed into <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>.
+
+## Remarks
+Each ACCESS_RANGE is an <b>AccessRanges</b> array element within the PORT_CONFIGURATION_INFORMATION structure that is passed to a miniport driver's HwScsiFindAdapter routine.
 
 If possible, the OS-specific port driver sets up each access range element with a bus-relative HBA range for the miniport driver before calling the miniport driver's HwScsiFindAdapter routine. Otherwise, the port driver zeros range elements for which it cannot supply configuration information.
 
@@ -83,28 +88,20 @@ The corresponding base logical address returned by <b>ScsiPortGetDeviceBase</b> 
 | **Minimum UMDF version** |  |
 | **Header** | srb.h (include Srb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
-</dt>
-<dt>
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
-</dt>
-<dt>
-<a href="..\srb\nf-srb-scsiportconvertulongtophysicaladdress.md">ScsiPortConvertUlongToPhysicalAddress</a>
-</dt>
-<dt>
-<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
-</dt>
-<dt>
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
-</dt>
-<dt>
 <a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-</dt>
-</dl>
+
+<a href="..\srb\nf-srb-scsiportconvertulongtophysicaladdress.md">ScsiPortConvertUlongToPhysicalAddress</a>
+
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+
+<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
  
 
  

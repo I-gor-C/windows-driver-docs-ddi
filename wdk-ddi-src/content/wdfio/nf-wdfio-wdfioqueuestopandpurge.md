@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3A9CF1BD-77F1-4F4C-AEB5-0E77B67C45D3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoQueueStopAndPurge
+ms.keywords : wdfio/WdfIoQueueStopAndPurge, WdfIoQueueStopAndPurge method, kmdf.wdfioqueuestopandpurge, WdfIoQueueStopAndPurge, wdf.wdfioqueuestopandpurge, PFN_WDFIOQUEUESTOPANDPURGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.0
-req.alt-api : WdfIoQueueStopAndPurge
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, NoCancelFromEvtSurpriseRemove
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -60,11 +64,11 @@ A handle to a framework queue object.
 
 `StopAndPurgeComplete`
 
-
+A pointer to a driver-supplied <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function. This parameter is optional and can be NULL.
 
 `Context`
 
-
+An untyped pointer to driver-supplied context information that the framework passes to the <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function. This parameter is optional and can be NULL.
 
 
 ## Return Value
@@ -90,8 +94,6 @@ In contrast, <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a> 
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-The following code example stops and purges a specified I/O queue. After all requests that were delivered to the driver have been completed or canceled, the framework calls a driver's EvtIoQueueStateStopAndPurge function.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -106,20 +108,14 @@ The following code example stops and purges a specified I/O queue. After all req
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurgesynchronously.md">WdfIoQueueStopAndPurgeSynchronously</a>
-</dt>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
-</dt>
-<dt>
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
-</dt>
-<dt>
+
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a>
-</dt>
-</dl>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurgesynchronously.md">WdfIoQueueStopAndPurgeSynchronously</a>
+
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
+
  
 
  

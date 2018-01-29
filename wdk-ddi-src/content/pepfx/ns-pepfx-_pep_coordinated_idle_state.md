@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0B3B53F8-2D1E-430B-9C51-E35465899811
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE, *PPEP_COORDINATED_IDLE_STATE
+ms.keywords : PPEP_COORDINATED_IDLE_STATE, pepfx/PEP_COORDINATED_IDLE_STATE, *PPEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE structure [Kernel-Mode Driver Architecture], kernel.pep_coordinated_idle_state, pepfx/PPEP_COORDINATED_IDLE_STATE, PPEP_COORDINATED_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_COORDINATED_IDLE_STATE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_COORDINATED_IDLE_STATE, *PPEP_COORDINATED_IDLE_STATE
 ---
 
@@ -49,22 +53,22 @@ typedef struct _PEP_COORDINATED_IDLE_STATE {
 
 ## Members
 
-        
-            `BreakEvenDuration`
 
-            Supplies the minimum time the state must be entered to amortize the cost of entering/exiting the state. Idle durations longer than this period should save power when compared to entering a lighter state for the same period.
-        
-            `DependencyCount`
+`BreakEvenDuration`
 
-            Supplies the number of dependencies this coordinated state has on other coordinated states or on processors.
-        
-            `Latency`
+Supplies the minimum time the state must be entered to amortize the cost of entering/exiting the state. Idle durations longer than this period should save power when compared to entering a lighter state for the same period.
 
-            The latency of waking from this idle state, in 100ns units.
-        
-            `MaximumDependencySize`
+`DependencyCount`
 
-            Supplies the maximum size of a single dependency.
+Supplies the number of dependencies this coordinated state has on other coordinated states or on processors.
+
+`Latency`
+
+The latency of waking from this idle state, in 100ns units.
+
+`MaximumDependencySize`
+
+Supplies the maximum size of a single dependency.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _PEP_COORDINATED_IDLE_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186776">PEP_NOTIFY_PPM_QUERY_COORDINATED_STATES notification</a>
-</dt>
-<dt>
+
 <a href="..\pepfx\ns-pepfx-_pep_coordinated_idle_state.md">PEP_COORDINATED_IDLE_STATE structure</a>
-</dt>
-</dl>
+
  
 
  

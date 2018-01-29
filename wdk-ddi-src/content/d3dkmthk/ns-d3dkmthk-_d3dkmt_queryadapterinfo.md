@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2bc9afc3-2fcf-4f62-85d4-67f824733904
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_QUERYADAPTERINFO, D3DKMT_QUERYADAPTERINFO
+ms.keywords : _D3DKMT_QUERYADAPTERINFO, D3DKMT_QUERYADAPTERINFO, d3dkmthk/D3DKMT_QUERYADAPTERINFO, display.d3dkmt_queryadapterinfo, KMTQUERYADAPTERINFOTYPE, D3DKMT_QUERYADAPTERINFO structure [Display Devices], OpenGL_Structs_10a338e9-c5a8-44e0-9ad7-87d5a3ab742e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported  starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_QUERYADAPTERINFO
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_QUERYADAPTERINFO
 ---
 
@@ -49,23 +53,22 @@ typedef struct _D3DKMT_QUERYADAPTERINFO {
 
 ## Members
 
-        
-            `hAdapter`
 
-            [in] A handle to the graphics adapter that information is retrieved about.
-        
-            `pPrivateDriverData`
+`hAdapter`
 
-            [out] A pointer to a buffer that the display miniport driver can fill with the requested information.
-        
-            `PrivateDriverDataSize`
+[in] A handle to the graphics adapter that information is retrieved about.
 
-            [in/out] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
-        
-            `Type`
+`pPrivateDriverData`
 
-            [in] A value of type KMTQUERYADAPTERINFOTYPE that indicates the type of information to retrieve. The following table lists the possible values.
+[out] A pointer to a buffer that the display miniport driver can fill with the requested information.
 
+`PrivateDriverDataSize`
+
+[in/out] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
+
+`Type`
+
+[in] A value of type KMTQUERYADAPTERINFOTYPE that indicates the type of information to retrieve. The following table lists the possible values.
 <table>
 <tr>
 <th>Value</th>
@@ -322,58 +325,40 @@ Supported starting with  Windows 8.1.
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapteraddress.md">D3DKMT_ADAPTERADDRESS</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapterregistryinfo.md">D3DKMT_ADAPTERREGISTRYINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adaptertype.md">D3DKMT_ADAPTERTYPE</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_currentdisplaymode.md">D3DKMT_CURRENTDISPLAYMODE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_directflip_support.md">D3DKMT_DIRECTFLIP_SUPPORT</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_displaymode.md">D3DKMT_DISPLAYMODE</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ne-d3dkmthk-_qai_driverversion.md">D3DKMT_DRIVERVERSION</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipqueueinfo.md">D3DKMT_FLIPQUEUEINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_openglinfo.md">D3DKMT_OPENGLINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_outputduplcontextscount.md">D3DKMT_OUTPUTDUPLCONTEXTSCOUNT</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_segmentsizeinfo.md">D3DKMT_SEGMENTSIZEINFO</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_directflip_support.md">D3DKMT_DIRECTFLIP_SUPPORT</a>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_umd_driver_version.md">D3DKMT_UMD_DRIVER_VERSION</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapterregistryinfo.md">D3DKMT_ADAPTERREGISTRYINFO</a>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_umdfilenameinfo.md">D3DKMT_UMDFILENAMEINFO</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406678">D3DKMT_WDDM_1_2_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_workingsetinfo.md">D3DKMT_WORKINGSETINFO</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adaptertype.md">D3DKMT_ADAPTERTYPE</a>
+
+<a href="..\d3dkmthk\ne-d3dkmthk-_qai_driverversion.md">D3DKMT_DRIVERVERSION</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_outputduplcontextscount.md">D3DKMT_OUTPUTDUPLCONTEXTSCOUNT</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapteraddress.md">D3DKMT_ADAPTERADDRESS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406678">D3DKMT_WDDM_1_2_CAPS</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_displaymode.md">D3DKMT_DISPLAYMODE</a>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_openglinfo.md">D3DKMT_OPENGLINFO</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipqueueinfo.md">D3DKMT_FLIPQUEUEINFO</a>
+
  
 
  

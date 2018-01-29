@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 668c4d1a-52e8-49ea-bd19-e789dfa8dfa5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SendRNID_IN, *PSendRNID_IN, SendRNID_IN
+ms.keywords : "*PSendRNID_IN, _SendRNID_IN, hbapiwmi/PSendRNID_IN, SendRNID_IN, storage.sendrnid_in, PSendRNID_IN structure pointer [Storage Devices], PSendRNID_IN, structs-Fibre_506226e9-45f1-40d3-bd41-7b30fe16673e.xml, SendRNID_IN structure [Storage Devices], hbapiwmi/SendRNID_IN"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SendRNID_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSendRNID_IN, SendRNID_IN"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _SendRNID_IN {
 
 ## Members
 
-        
-            `wwn`
 
-            Contains a worldwide name for the port to which the request node identification data (RNID) command is sent.
-        
-            `wwntype`
+`wwn`
 
-            Deprecated. Do not use.
+Contains a worldwide name for the port to which the request node identification data (RNID) command is sent.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SendRNID_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`wwntype`
+
+Deprecated. Do not use.
+
+## Remarks
+The WMI tool suite generates a declaration of the SendRNID_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _SendRNID_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DBD99353-4798-4540-89DB-EA08521B276E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEHWQUEUE, D3DKMT_CREATEHWQUEUE
+ms.keywords : D3DKMT_CREATEHWQUEUE, display.d3dkmt_createhwqueue, d3dkmthk/D3DKMT_CREATEHWQUEUE, _D3DKMT_CREATEHWQUEUE, D3DKMT_CREATEHWQUEUE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEHWQUEUE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEHWQUEUE
 ---
 
@@ -53,38 +57,38 @@ typedef struct _D3DKMT_CREATEHWQUEUE {
 
 ## Members
 
-        
-            `Flags`
 
-            Hardware queue creation flags.
-        
-            `hHwContext`
+`Flags`
 
-            Handle to the hardware context the queue is associated with.
-        
-            `hHwQueue`
+Hardware queue creation flags.
 
-            Handle to the hardware queue object to submit work to.
-        
-            `hHwQueueProgressFence`
+`hHwContext`
 
-            Handle to the monitored fence object used to monitor the queue progress.
-        
-            `HwQueueProgressFenceCPUVirtualAddress`
+Handle to the hardware context the queue is associated with.
 
-            Read-only mapping of the queue progress fence value for the CPU.
-        
-            `HwQueueProgressFenceGPUVirtualAddress`
+`hHwQueue`
 
-            Read/write mapping of the queue progress fence value for the GPU.
-        
-            `pPrivateDriverData`
+Handle to the hardware queue object to submit work to.
 
-            Private driver data.
-        
-            `PrivateDriverDataSize`
+`hHwQueueProgressFence`
 
-            Size of private driver data.
+Handle to the monitored fence object used to monitor the queue progress.
+
+`HwQueueProgressFenceCPUVirtualAddress`
+
+Read-only mapping of the queue progress fence value for the CPU.
+
+`HwQueueProgressFenceGPUVirtualAddress`
+
+Read/write mapping of the queue progress fence value for the GPU.
+
+`pPrivateDriverData`
+
+Private driver data.
+
+`PrivateDriverDataSize`
+
+Size of private driver data.
 
 
 ## Requirements

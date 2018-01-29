@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bc403fc7-7862-4c4c-8a82-bd5c740b270e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoAttachDeviceToDeviceStackSafe
+ms.keywords : ifsk.ioattachdevicetodevicestacksafe, ntddk/IoAttachDeviceToDeviceStackSafe, IoAttachDeviceToDeviceStackSafe, IoAttachDeviceToDeviceStackSafe routine [Installable File System Drivers], ioref_1db91288-e8ad-4796-9052-333bf37f01d1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Update Rollup for Windo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoAttachDeviceToDeviceStackSafe
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -95,14 +99,10 @@ At the moment immediately after it is attached to the top of the stack, the <i>S
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
+
  
 
  

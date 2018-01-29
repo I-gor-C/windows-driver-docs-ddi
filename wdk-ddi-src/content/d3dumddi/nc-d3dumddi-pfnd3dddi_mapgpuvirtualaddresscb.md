@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DA67A98C-BE9C-412D-9382-CAC5B05FEE3B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnmapgpuvirtualaddresscb, pfnMapGpuVirtualAddressCb callback function [Display Devices], pfnMapGpuVirtualAddressCb, PFND3DDDI_MAPGPUVIRTUALADDRESSCB, PFND3DDDI_MAPGPUVIRTUALADDRESSCB, d3dumddi/pfnMapGpuVirtualAddressCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnMapGpuVirtualAddressCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -67,14 +71,34 @@ A handle to the display device.
 ## Return Value
 
 <b>pfnMapGpuVirtualAddressCb</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation completed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_PENDING </b></dt>
-</dl>The call was successful, but the operation is not finished. The caller must wait for the returned fence value before accessing the allocation.
+</dl>
+</td>
+<td width="60%">
+The call was successful, but the operation is not finished. The caller must wait for the returned fence value before accessing the allocation.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other values.
 
@@ -93,14 +117,10 @@ This function might also return other values.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_mapgpuvirtualaddress.md">D3DDDI_MAPGPUVIRTUALADDRESS</a>
-</dt>
-</dl>
+
  
 
  

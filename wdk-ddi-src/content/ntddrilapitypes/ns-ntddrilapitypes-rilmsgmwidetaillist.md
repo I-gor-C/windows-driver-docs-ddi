@@ -7,8 +7,8 @@ old-location : netvista\rilmsgmwidetaillist.htm
 old-project : netvista
 ms.assetid : 026cf4d6-2f34-4911-8ec6-0b4170463e4d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGMWIDETAILLIST, RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST
+ms.date : 1/18/2018
+ms.keywords : RILMSGMWIDETAILLIST, RILMSGMWIDETAILLIST structure [Network Drivers Starting with Windows Vista], netvista.rilmsgmwidetaillist, ntddrilapitypes/RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGMWIDETAILLIST
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGMWIDETAILLIST, *LPRILMSGMWIDETAILLIST
 ---
 
@@ -51,30 +55,30 @@ typedef struct _RILMSGMWIDETAILLIST {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwNumberOfDetailItems`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwReferenceNumber`
+`dwExecutor`
 
-            
-        
-            `stMwiDetail`
 
-            
+
+`dwNumberOfDetailItems`
+
+
+
+`dwParams`
+
+
+
+`dwReferenceNumber`
+
+
+
+`stMwiDetail`
+
+
 
 
 ## Requirements

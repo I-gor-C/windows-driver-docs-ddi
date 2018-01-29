@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 23184d88-2c84-4fba-9d17-c4014d0eaea5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGetDaclSecurityDescriptor
+ms.keywords : rtlref_c851a07b-d480-47a7-b0f7-a3f21161dfaa.xml, ifsk.rtlgetdaclsecuritydescriptor, RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor routine [Installable File System Drivers], ntifs/RtlGetDaclSecurityDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows Serve
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlGetDaclSecurityDescriptor
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -71,9 +75,23 @@ Pointer to a Boolean variable that receives the value of the SE_DACL_DEFAULTED f
 ## Return Value
 
 <b>RtlGetDaclSecurityDescriptor</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNKNOWN_REVISION</b></dt>
-</dl>The security descriptor's revision level is unknown or is not supported. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The security descriptor's revision level is unknown or is not supported. This is an error code.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,26 +113,18 @@ For more information about security and access control, see the documentation fo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

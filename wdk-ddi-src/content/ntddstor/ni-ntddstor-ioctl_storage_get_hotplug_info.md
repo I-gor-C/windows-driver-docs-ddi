@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e549aa75-d847-4276-ab40-29214b0475cf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_get_hotplug_info, IOCTL_STORAGE_GET_HOTPLUG_INFO control code [Storage Devices], IOCTL_STORAGE_GET_HOTPLUG_INFO, ntddstor/IOCTL_STORAGE_GET_HOTPLUG_INFO, k307_06a9c82a-ee57-421f-befc-0a9da3543b40.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_GET_HOTPLUG_INFO
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_HOTPLUG_INFO IOCTL
-Retrieves the hotplug configuration of the specified device. 
-
-
-
 Retrieves the hotplug configuration of the specified device.
 
 ### Major Code
@@ -63,7 +63,6 @@ The driver returns the hotplug configuration data in a <a href="..\ntddstor\ns-n
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to <b>sizeof</b>(STORAGE_HOTPLUG_INFO). The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_TOO_SMALL if the output buffer is too small.
 
 
@@ -74,16 +73,12 @@ The <b>Information</b> field is set to <b>sizeof</b>(STORAGE_HOTPLUG_INFO). The 
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_set_hotplug_info.md">IOCTL_STORAGE_SET_HOTPLUG_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_hotplug_info.md">STORAGE_HOTPLUG_INFO</a>
-</dt>
-</dl>
+
  
 
  

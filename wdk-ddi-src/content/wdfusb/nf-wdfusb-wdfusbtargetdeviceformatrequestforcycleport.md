@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f27dae6e-2fc7-4e26-84fb-4ce48da3db6b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceFormatRequestForCyclePort
+ms.keywords : WdfUsbTargetDeviceFormatRequestForCyclePort method, WdfUsbTargetDeviceFormatRequestForCyclePort, PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORCYCLEPORT, wdfusb/WdfUsbTargetDeviceFormatRequestForCyclePort, DFUsbRef_cc92bdd0-b899-41be-b9c6-c44e385ee001.xml, kmdf.wdfusbtargetdeviceformatrequestforcycleport, wdf.wdfusbtargetdeviceformatrequestforcycleport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfUsbTargetDeviceFormatRequestForCyclePort
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -64,14 +68,34 @@ A handle to a framework request object. For more information, see the following 
 ## Return Value
 
 <b>WdfUsbTargetDeviceFormatRequestForCyclePort</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl>The device's USB device was unavailable.
+</dl>
+</td>
+<td width="60%">
+The device's USB device was unavailable.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Insufficient memory was available.
+</dl>
+</td>
+<td width="60%">
+Insufficient memory was available.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -95,8 +119,6 @@ Multiple calls to <b>WdfUsbTargetDeviceFormatRequestForCyclePort</b> that use th
 
 For more information about the <b>WdfUsbTargetDeviceFormatRequestForCyclePort</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example formats a power-cycle request, registers a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, and sends the request to an I/O target.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -111,23 +133,16 @@ The following code example formats a power-cycle request, registers a <a href=".
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecycleportsynchronously.md">WdfUsbTargetDeviceCyclePortSynchronously</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+
  
 
  

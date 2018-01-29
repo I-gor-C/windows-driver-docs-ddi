@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bac1e5ec-0e0c-4d7a-b260-2e73addd0abf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_check_verify2, IOCTL_STORAGE_CHECK_VERIFY2 control code [Storage Devices], IOCTL_STORAGE_CHECK_VERIFY2, ntddstor/IOCTL_STORAGE_CHECK_VERIFY2, k307_81e9c9dd-6905-4d07-9da0-f54997bc8640.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_CHECK_VERIFY2
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_CHECK_VERIFY2 IOCTL
-Determines whether the media has changed on a removable-media device - the caller has opened with FILE_READ_ATTRIBUTES. Because no file system is mounted when a device is opened in this way, this request can be processed much more quickly than an IOCTL_STORAGE_CHECK_VERIFY request.
-
-
-
 Determines whether the media has changed on a removable-media device - the caller has opened with FILE_READ_ATTRIBUTES. Because no file system is mounted when a device is opened in this way, this request can be processed much more quickly than an IOCTL_STORAGE_CHECK_VERIFY request.
 
 ### Major Code
@@ -63,7 +63,6 @@ Output length is identical to output length for <a href="..\ntddstor\ni-ntddstor
 <text></text>
 
 ### Status Block
-I/O Status block
 I/O status is identical to the I/O status for <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>.
 
 
@@ -74,13 +73,10 @@ I/O status is identical to the I/O status for <a href="..\ntddstor\ni-ntddstor-i
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>
-</dt>
-</dl>
+
  
 
  

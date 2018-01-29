@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1846e6b7-5b98-4850-86d6-ef6a29ce050b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_MPEG2Profile, KS_MPEG2Profile
+ms.keywords : ksmedia/KS_MPEG2Profile_Simple, KS_MPEG2Profile_SpatiallyScalable, KS_MPEG2Profile enumeration [Streaming Media Devices], KS_MPEG2Profile_High, KS_MPEG2Profile_Main, stream.ks_mpeg2profile, ksmedia/KS_MPEG2Profile, ksmedia/KS_MPEG2Profile_Main, ksmedia/KS_MPEG2Profile_High, KS_MPEG2Profile, KS_MPEG2Profile_Simple, vidcapstruct_25932d29-3acc-415e-a13f-f02298c12c1d.xml, KS_MPEG2Profile_SNRScalable, ksmedia/KS_MPEG2Profile_SNRScalable, ksmedia/KS_MPEG2Profile_SpatiallyScalable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_MPEG2Profile
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_MPEG2Profile
 ---
 
@@ -89,11 +93,8 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_mpegvideoinfo2.md">KS_MPEGVIDEOINFO2</a>
-</dt>
-</dl>
+
  
 
  

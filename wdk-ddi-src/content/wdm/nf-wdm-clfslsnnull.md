@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 858fb84a-8df8-4748-ab09-3f7c4aca905c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsLsnNull
+ms.keywords : wdm/ClfsLsnNull, kernel.clfslsnnull, Clfs_26a9c0db-2336-4151-9de0-81a58ed9e2f0.xml, ClfsLsnNull, ClfsLsnNull routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsLsnNull
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,17 +80,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfslsnequal.md">ClfsLsnEqual</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
+
  
 
  

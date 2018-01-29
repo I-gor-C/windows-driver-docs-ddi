@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1e196ad1-5804-4d41-a273-18eb40e8f265
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlInitializeBitMap
+ms.keywords : RtlInitializeBitMap routine [Kernel-Mode Driver Architecture], kernel.rtlinitializebitmap, RtlInitializeBitMap, k109_2c98c30e-fc9f-422d-bfa8-e0d765677664.xml, wdm/RtlInitializeBitMap
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlInitializeBitMap
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : <= APC_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -92,65 +96,44 @@ Callers of <b>RtlInitializeBitMap</b>, and callers of other <b>Rtl<i>Xxx</i></b>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlcheckbit.md">RtlCheckBit</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlclearallbits.md">RtlClearAllBits</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlclearbits.md">RtlClearBits</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindclearbits.md">RtlFindClearBits</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindclearbitsandset.md">RtlFindClearBitsAndSet</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindclearruns.md">RtlFindClearRuns</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindfirstrunclear.md">RtlFindFirstRunClear</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindlastbackwardrunclear.md">RtlFindLastBackwardRunClear</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindlongestrunclear.md">RtlFindLongestRunClear</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindnextforwardrunclear.md">RtlFindNextForwardRunClear</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlfindsetbitsandclear.md">RtlFindSetBitsAndClear</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlnumberofclearbits.md">RtlNumberOfClearBits</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlnumberofsetbits.md">RtlNumberOfSetBits</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlsetallbits.md">RtlSetAllBits</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-rtlfindclearruns.md">RtlFindClearRuns</a>
+
+<a href="..\wdm\nf-wdm-rtlnumberofclearbits.md">RtlNumberOfClearBits</a>
+
+<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+
+<a href="..\wdm\nf-wdm-rtlfindlastbackwardrunclear.md">RtlFindLastBackwardRunClear</a>
+
+<a href="..\wdm\nf-wdm-rtlclearbits.md">RtlClearBits</a>
+
+<a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
+
+<a href="..\wdm\nf-wdm-rtlclearallbits.md">RtlClearAllBits</a>
+
+<a href="..\wdm\nf-wdm-rtlfindlongestrunclear.md">RtlFindLongestRunClear</a>
+
+<a href="..\wdm\nf-wdm-rtlfindsetbitsandclear.md">RtlFindSetBitsAndClear</a>
+
+<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
+
+<a href="..\wdm\nf-wdm-rtlfindclearbitsandset.md">RtlFindClearBitsAndSet</a>
+
+<a href="..\wdm\nf-wdm-rtlfindfirstrunclear.md">RtlFindFirstRunClear</a>
+
 <a href="..\wdm\nf-wdm-rtlsetbits.md">RtlSetBits</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlsetallbits.md">RtlSetAllBits</a>
+
+<a href="..\wdm\nf-wdm-rtlfindclearbits.md">RtlFindClearBits</a>
+
+<a href="..\wdm\nf-wdm-rtlcheckbit.md">RtlCheckBit</a>
+
+<a href="..\wdm\nf-wdm-rtlfindnextforwardrunclear.md">RtlFindNextForwardRunClear</a>
+
  
 
  

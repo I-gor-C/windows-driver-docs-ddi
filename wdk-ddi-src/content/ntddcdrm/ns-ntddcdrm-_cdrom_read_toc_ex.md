@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 17dbc843-dc65-40d7-9cda-916127e4cfa4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_READ_TOC_EX, CDROM_READ_TOC_EX, *PCDROM_READ_TOC_EX
+ms.keywords : ntddcdrm/CDROM_READ_TOC_EX, PCDROM_READ_TOC_EX structure pointer [Storage Devices], *PCDROM_READ_TOC_EX, ntddcdrm/PCDROM_READ_TOC_EX, _CDROM_READ_TOC_EX, storage.cdrom_read_toc_ex, CDROM_READ_TOC_EX, structs-CD-ROM_b12c5d5a-b319-4122-be7f-721bd384dbf2.xml, CDROM_READ_TOC_EX structure [Storage Devices], PCDROM_READ_TOC_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_READ_TOC_EX
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : CDROM_READ_TOC_EX, *PCDROM_READ_TOC_EX
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PCDROM_READ_TOC_EX, CDROM_READ_TOC_EX"
 ---
 
 # _CDROM_READ_TOC_EX structure
@@ -51,33 +55,33 @@ typedef struct _CDROM_READ_TOC_EX {
 
 ## Members
 
-        
-            `Format`
 
-            Specifies table of contents read operation, as follows:
-        
-            `Msf`
+`Format`
 
-            Indicates the minute-second-frame bit. When set to one, this bit indicates that minute-second-frame (MSF) addressing must be used. When zero, it indicates that logical block addressing (LBA) must be used.
-        
-            `Reserved1`
+Specifies table of contents read operation, as follows:
 
-            Reserved.
-        
-            `Reserved2`
+`Msf`
 
-            Reserved
-        
-            `Reserved3`
+Indicates the minute-second-frame bit. When set to one, this bit indicates that minute-second-frame (MSF) addressing must be used. When zero, it indicates that logical block addressing (LBA) must be used.
 
-            Reserved
-        
-            `SessionTrack`
+`Reserved1`
 
-            Specifies the starting track number for which the data will be returned, the session for which the command is targeted, or a reserved field that drivers should set to zero. Which of these values <b>SessionTrack</b> takes depends on the value of the <b>Format</b> member.
+Reserved.
 
-    ## Remarks
-        For further information and definitions of terms used in this reference page and in the reference pages of related structures, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
+`Reserved2`
+
+Reserved
+
+`Reserved3`
+
+Reserved
+
+`SessionTrack`
+
+Specifies the starting track number for which the data will be returned, the session for which the command is targeted, or a reserved field that drivers should set to zero. Which of these values <b>SessionTrack</b> takes depends on the value of the <b>Format</b> member.
+
+## Remarks
+For further information and definitions of terms used in this reference page and in the reference pages of related structures, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,37 +91,26 @@ typedef struct _CDROM_READ_TOC_EX {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data.md">CDROM_TOC_FULL_TOC_DATA</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_pma_data.md">CDROM_TOC_PMA_DATA</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_atip_data.md">CDROM_TOC_ATIP_DATA</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data.md">CDROM_TOC_CD_TEXT_DATA</a>
-</dt>
-<dt>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data.md">CDROM_TOC_FULL_TOC_DATA</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_atip_data.md">CDROM_TOC_ATIP_DATA</a>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data_block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_pma_data.md">CDROM_TOC_PMA_DATA</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a>
+
  
 
  

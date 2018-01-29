@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxRegisterCoreDevice
+ms.keywords : kernel.pofxregistercoredevice, pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice, PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxRegisterCoreDevice
-req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
@@ -66,12 +70,34 @@ A pointer to a location to which the routine writes a POHANDLE value. This handl
 ## Return Value
 
 <b>PoFxRegisterCoreDevice</b> returns STATUS_SUCCESS if the call successfully registers the PEP. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INVALID_PARAMETER</dt>
-</dl>The component count for this device is zero, or the <b>PO_FX_CORE_DEVICE</b> structure contains an invalid version number, or the <b>ComponentCriticalTransitionCallback</b> member of this structure contains an invalid function pointer.
+</dl>
+</td>
+<td width="60%">
+The component count for this device is zero, or the <b>PO_FX_CORE_DEVICE</b> structure contains an invalid version number, or the <b>ComponentCriticalTransitionCallback</b> member of this structure contains an invalid function pointer.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INSUFFICIENT_RESOURCES</dt>
-</dl>Unable to allocate the resources required to complete the requested registration.
+</dl>
+</td>
+<td width="60%">
+Unable to allocate the resources required to complete the requested registration.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,14 +121,10 @@ The <b>PoFxRegisterCoreDevice</b> routine should be called at IRQL = PASSIVE_LEV
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
-</dt>
-<dt>
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
+
  
 
  

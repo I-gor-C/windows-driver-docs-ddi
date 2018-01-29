@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a19eea7f-ceaf-47e0-b2dd-46511fcae66f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_RESETENGINE, DXGKARG_RESETENGINE, *INOUT_PDXGKARG_RESETENGINE
+ms.keywords : DXGKARG_RESETENGINE structure [Display Devices], d3dkmddi/DXGKARG_RESETENGINE, display.dxgkarg_resetengine, *INOUT_PDXGKARG_RESETENGINE, DXGKARG_RESETENGINE, _DXGKARG_RESETENGINE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_RESETENGINE
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_RESETENGINE
 ---
 
@@ -48,21 +52,21 @@ typedef struct _DXGKARG_RESETENGINE {
 
 ## Members
 
-        
-            `EngineOrdinal`
 
-            [in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.
-        
-            `LastAbortedFenceId`
+`EngineOrdinal`
 
-            [out] The fence identifier for the last packet that was aborted in the middle of execution.
-        
-            `NodeOrdinal`
+[in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.
 
-            [in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being reset in a call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetengine.md">DxgkDdiResetEngine</a>.
+`LastAbortedFenceId`
 
-    ## Remarks
-        For more information, see <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E2-8BBF-B455BB864A29">TDR changes in Windows 8</a>.
+[out] The fence identifier for the last packet that was aborted in the middle of execution.
+
+`NodeOrdinal`
+
+[in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being reset in a call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetengine.md">DxgkDdiResetEngine</a>.
+
+## Remarks
+For more information, see <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E2-8BBF-B455BB864A29">TDR changes in Windows 8</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct _DXGKARG_RESETENGINE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetengine.md">DxgkDdiResetEngine</a>
-</dt>
-</dl>
+
  
 
  

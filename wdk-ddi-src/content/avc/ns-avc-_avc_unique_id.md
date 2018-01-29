@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d2a355e2-e5ff-4d20-ae8c-cdee3f5ddb76
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _AVC_UNIQUE_ID, *PAVC_UNIQUE_ID, AVC_UNIQUE_ID
+ms.keywords : stream.avc_unique_id, avcref_c7dadbdc-3227-4462-b2e3-5064e8f96e1a.xml, PAVC_UNIQUE_ID structure pointer [Streaming Media Devices], AVC_UNIQUE_ID structure [Streaming Media Devices], PAVC_UNIQUE_ID, _AVC_UNIQUE_ID, AVC_UNIQUE_ID, avc/PAVC_UNIQUE_ID, avc/AVC_UNIQUE_ID, *PAVC_UNIQUE_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVC_UNIQUE_ID
-req.alt-loc : avc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PAVC_UNIQUE_ID, AVC_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : AVC_UNIQUE_ID, *PAVC_UNIQUE_ID
 ---
 
 # _AVC_UNIQUE_ID structure
@@ -46,13 +50,13 @@ typedef struct _AVC_UNIQUE_ID {
 
 ## Members
 
-        
-            `DeviceID`
 
-            A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.
+`DeviceID`
 
-    ## Remarks
-        This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554166">AVC_FUNCTION_GET_UNIQUE_ID</a> function code.
+A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.
+
+## Remarks
+This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554166">AVC_FUNCTION_GET_UNIQUE_ID</a> function code.
 
 This structure is used only as a member inside the AVC_MULTIFUNC_IRB structure. It is not used by itself.
 
@@ -66,19 +70,14 @@ See <a href="https://msdn.microsoft.com/3b4ec139-ff01-40bd-8e29-92f554180585">Ho
 | **Minimum UMDF version** |  |
 | **Header** | avc.h (include Avc.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\avc\ns-avc-_avc_multifunc_irb.md">AVC_MULTIFUNC_IRB</a>
-</dt>
-<dt>
+
 <a href="..\avc\ne-avc-_tagavc_function.md">AVC_FUNCTION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554166">AVC_FUNCTION_GET_UNIQUE_ID</a>
-</dt>
-</dl>
+
  
 
  

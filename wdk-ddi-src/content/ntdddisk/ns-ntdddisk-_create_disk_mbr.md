@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : afc0e705-ae98-486b-82d3-4f21fca89e70
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CREATE_DISK_MBR, CREATE_DISK_MBR, *PCREATE_DISK_MBR
+ms.keywords : CREATE_DISK_MBR structure [Storage Devices], ntdddisk/CREATE_DISK_MBR, *PCREATE_DISK_MBR, CREATE_DISK_MBR, PCREATE_DISK_MBR structure pointer [Storage Devices], storage.create_disk_mbr, PCREATE_DISK_MBR, ntdddisk/PCREATE_DISK_MBR, structs-disk_680fcaf9-080c-4e38-be53-ed9899539d9b.xml, _CREATE_DISK_MBR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CREATE_DISK_MBR
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CREATE_DISK_MBR, *PCREATE_DISK_MBR
 ---
 
@@ -46,10 +50,10 @@ typedef struct _CREATE_DISK_MBR {
 
 ## Members
 
-        
-            `Signature`
 
-            Specifies the disk signature value, which uniquely identifies the disk.
+`Signature`
+
+Specifies the disk signature value, which uniquely identifies the disk.
 
 
 ## Requirements
@@ -60,16 +64,12 @@ typedef struct _CREATE_DISK_MBR {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_create_disk.md">IOCTL_DISK_CREATE_DISK</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
+
  
 
  

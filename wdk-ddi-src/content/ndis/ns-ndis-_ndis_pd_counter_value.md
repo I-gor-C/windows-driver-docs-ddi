@@ -7,8 +7,8 @@ old-location : netvista\ndis_pd_counter_value.htm
 old-project : netvista
 ms.assetid : 0C2424C5-F6EE-4D07-B5C3-CEC3520AFFDC
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_PD_COUNTER_VALUE, NDIS_PD_COUNTER_VALUE, *PNDIS_PD_COUNTER_VALUE
+ms.date : 1/18/2018
+ms.keywords : NDIS_PD_COUNTER_VALUE union [Network Drivers Starting with Windows Vista], ndis/NDIS_PD_COUNTER_VALUE, NDIS_PD_COUNTER_VALUE, _NDIS_PD_COUNTER_VALUE, PNDIS_PD_COUNTER_VALUE, PNDIS_PD_COUNTER_VALUE union pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_PD_COUNTER_VALUE, *PNDIS_PD_COUNTER_VALUE, netvista.ndis_pd_counter_value
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_PD_COUNTER_VALUE
-req.alt-loc : Ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_PD_COUNTER_VALUE, *PNDIS_PD_COUNTER_VALUE
 ---
 
@@ -48,18 +52,18 @@ typedef union _NDIS_PD_COUNTER_VALUE {
 
 ## Members
 
-        
-            `Filter`
 
-            See <a href="..\ndis\ns-ndis-_ndis_pd_filter_counter.md">NDIS_PD_FILTER_COUNTER</a>.
-        
-            `ReceiveQueue`
+`Filter`
 
-            See <a href="..\ndis\ns-ndis-_ndis_pd_receive_queue_counter.md">NDIS_PD_RECEIVE_QUEUE_COUNTER</a>.
-        
-            `TransmitQueue`
+See <a href="..\ndis\ns-ndis-_ndis_pd_filter_counter.md">NDIS_PD_FILTER_COUNTER</a>.
 
-            See <a href="..\ndis\ns-ndis-_ndis_pd_transmit_queue_counter.md">NDIS_PD_TRANSMIT_QUEUE_COUNTER</a>.
+`ReceiveQueue`
+
+See <a href="..\ndis\ns-ndis-_ndis_pd_receive_queue_counter.md">NDIS_PD_RECEIVE_QUEUE_COUNTER</a>.
+
+`TransmitQueue`
+
+See <a href="..\ndis\ns-ndis-_ndis_pd_transmit_queue_counter.md">NDIS_PD_TRANSMIT_QUEUE_COUNTER</a>.
 
 
 ## Requirements

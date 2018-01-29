@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 5861FC4E-9902-4839-9829-B04F6AED61FE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETERS, GPIO_WRITE_PINS_MASK_PARAMETERS
+ms.keywords : PGPIO_WRITE_PINS_MASK_PARAMETERS, _GPIO_WRITE_PINS_MASK_PARAMETERS, GPIO.gpio_write_pins_mask_parameters, GPIO_WRITE_PINS_MASK_PARAMETERS structure [Parallel Ports], gpioclx/GPIO_WRITE_PINS_MASK_PARAMETERS, GPIO_WRITE_PINS_MASK_PARAMETERS, gpioclx/PGPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETERS, PGPIO_WRITE_PINS_MASK_PARAMETERS structure pointer [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GPIO_WRITE_PINS_MASK_PARAMETERS
-req.alt-loc : Gpioclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGPIO_WRITE_PINS_MASK_PARAMETERS, GPIO_WRITE_PINS_MASK_PARAMETERS"
 ---
 
@@ -50,29 +54,29 @@ typedef struct _GPIO_WRITE_PINS_MASK_PARAMETERS {
 
 ## Members
 
-        
-            `BankId`
 
-            The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
-        
-            `ClearMask`
+`BankId`
 
-            A mask that specifies the GPIO pins to clear in this bank. If a bit in this mask is set to 1, the GPIO controller driver sets the corresponding GPIO pin to the value 0. If bit 0 of the mask is 1, the function clears pin 0; if bit 1 of the mask is 1, the function clears pin 1; and so on.
-        
-            `Flags`
+The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
 
-            A set of flags to control the GPIO pin write operation. No flags are currently defined for this operation.
-        
-            `Reserved`
+`ClearMask`
 
-            Reserved for system use.
-        
-            `SetMask`
+A mask that specifies the GPIO pins to clear in this bank. If a bit in this mask is set to 1, the GPIO controller driver sets the corresponding GPIO pin to the value 0. If bit 0 of the mask is 1, the function clears pin 0; if bit 1 of the mask is 1, the function clears pin 1; and so on.
 
-            A mask that specifies the GPIO pins to set in this bank. If a bit in this mask is set to 1, the GPIO controller driver sets the corresponding GPIO pin to the value 1. If N is the number of pins in this bank, the pins are numbered 0 to N–1. If bit 0 (the least significant bit) of the mask is 1, the function sets pin number 0; if bit 1 of the mask is 1, the function sets pin number 1; and so on.
+`Flags`
 
-    ## Remarks
-        The <i>WriteParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a> event callback function is a pointer to a caller-allocated <b>GPIO_WRITE_PINS_MASK_PARAMETERS</b> structure.
+A set of flags to control the GPIO pin write operation. No flags are currently defined for this operation.
+
+`Reserved`
+
+Reserved for system use.
+
+`SetMask`
+
+A mask that specifies the GPIO pins to set in this bank. If a bit in this mask is set to 1, the GPIO controller driver sets the corresponding GPIO pin to the value 1. If N is the number of pins in this bank, the pins are numbered 0 to N–1. If bit 0 (the least significant bit) of the mask is 1, the function sets pin number 0; if bit 1 of the mask is 1, the function sets pin number 1; and so on.
+
+## Remarks
+The <i>WriteParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a> event callback function is a pointer to a caller-allocated <b>GPIO_WRITE_PINS_MASK_PARAMETERS</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,19 +86,14 @@ typedef struct _GPIO_WRITE_PINS_MASK_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | gpioclx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
  
 
  

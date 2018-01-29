@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 95c0433f-e4da-4566-b128-34cb758b8001
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.finishsessionkeyrefresh1, pfnFinishSessionKeyRefresh callback function [Display Devices], pfnFinishSessionKeyRefresh, PFND3D11_1DDI_FINISHSESSIONKEYREFRESH, PFND3D11_1DDI_FINISHSESSIONKEYREFRESH, d3d10umddi/pfnFinishSessionKeyRefresh
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnFinishSessionKeyRefresh
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -83,11 +87,8 @@ This callback function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a>
-</dt>
-</dl>
+
  
 
  

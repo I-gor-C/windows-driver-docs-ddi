@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ecfce692-7dac-4f55-8a8a-1f51c27cce41
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceSetBusInformationForChildren
+ms.keywords : PFN_WDFDEVICESETBUSINFORMATIONFORCHILDREN, WdfDeviceSetBusInformationForChildren, wdf.wdfdevicesetbusinformationforchildren, WdfDeviceSetBusInformationForChildren method, wdfdevice/WdfDeviceSetBusInformationForChildren, kmdf.wdfdevicesetbusinformationforchildren, DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceSetBusInformationForChildren
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 Child devices can obtain the information that <b>WdfDeviceSetBusInformationForChildren</b> supplies by calling <a href="..\wdffdo\nf-wdffdo-wdffdoinitqueryproperty.md">WdfFdoInitQueryProperty</a> or <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>.
 
-The following code example initializes a PNP_BUS_INFORMATION structure and then calls <b>WdfDeviceSetBusInformationForChildren</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,11 +89,8 @@ The following code example initializes a PNP_BUS_INFORMATION structure and then 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_pnp_bus_information.md">PNP_BUS_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

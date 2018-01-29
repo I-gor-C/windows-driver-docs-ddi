@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c8d76d5b-f388-4e22-ba57-d299ab3dee80
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe::GetType, GetType
+ms.keywords : UMDFUSBref_792b0720-a0c3-45da-b5e8-7b2f3a0c3770.xml, GetType, GetType method, IWDFUsbTargetPipe interface, umdf.iwdfusbtargetpipe_gettype, wudfusb/IWDFUsbTargetPipe::GetType, IWDFUsbTargetPipe interface, GetType method, IWDFUsbTargetPipe, wdf.iwdfusbtargetpipe_gettype, GetType method, IWDFUsbTargetPipe::GetType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbTargetPipe.GetType
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 <b>GetType</b> returns a USBD_PIPE_TYPE value that identifies the type of the USB pipe.
 
-<b>GetType</b> returns a USBD_PIPE_TYPE value that identifies the type of the USB pipe.
-
-<b>GetType</b> returns a USBD_PIPE_TYPE value that identifies the type of the USB pipe.
-
 ## Remarks
 
 The <b>GetType</b> method is provided for convenience because a UMDF driver can obtain the type of the USB pipe from the <b>PipeType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540285">WINUSB_PIPE_INFORMATION</a> structure that the driver retrieves when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560403">IWDFUsbTargetPipe::GetInformation</a> method. 
@@ -79,14 +79,10 @@ For a code example of how to use the <b>GetType</b> method, see <a href="https:/
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560403">IWDFUsbTargetPipe::GetInformation</a>
-</dt>
-</dl>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
+
  
 
  

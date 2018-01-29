@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fd833d0b-2f81-4002-8280-38e17e528af6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPin, IKsPin::KsPeekAllocator, KsPeekAllocator
+ms.keywords : KsPeekAllocator method [Streaming Media Devices], IKsPin interface, IKsPin interface [Streaming Media Devices], KsPeekAllocator method, KsPeekAllocator, ksproxy_46ab9e52-a477-4fca-bddc-af1848484f84.xml, KsPeekAllocator method [Streaming Media Devices], IKsPin::KsPeekAllocator, ksproxy/IKsPin::KsPeekAllocator, IKsPin, stream.ikspin_kspeekallocator
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPin.KsPeekAllocator
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -51,7 +55,6 @@ IMemAllocator* KsPeekAllocator(
 `Operation`
 
 A value that specifies the type of operation. This value can be one of the following values from the KSPEEKOPERATION enumerated type.
-
 <table>
 <tr>
 <th>Value</th>
@@ -104,11 +107,8 @@ This method is for proxy use and is not recommended for application use.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspin.md">IKsPin</a>
-</dt>
-</dl>
+
  
 
  

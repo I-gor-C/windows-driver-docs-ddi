@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 93EC2651-3C52-4810-9F7A-A81BC7DA20AF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsNotifications, IPortClsNotifications::FreeNotificationBuffer, FreeNotificationBuffer
+ms.keywords : IPortClsNotifications, IPortClsNotifications::FreeNotificationBuffer, IPortClsNotifications interface [Audio Devices], FreeNotificationBuffer method, portcls/IPortClsNotifications::FreeNotificationBuffer, FreeNotificationBuffer, audio.iportclsnotifications_freenotification, FreeNotificationBuffer method [Audio Devices], FreeNotificationBuffer method [Audio Devices], IPortClsNotifications interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1703 and later ve
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortClsNotifications.FreeNotificationBuffer
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -74,11 +78,8 @@ This function returns void.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportclsnotifications.md">IPortClsNotifications</a>
-</dt>
-</dl>
+
  
 
  

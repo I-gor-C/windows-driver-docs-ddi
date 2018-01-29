@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c382689e-907c-473c-9ab1-da963d7f3ba3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMIAllocateInstanceIds
+ms.keywords : IoWMIAllocateInstanceIds routine [Kernel-Mode Driver Architecture], IoWMIAllocateInstanceIds, wdm/IoWMIAllocateInstanceIds, k104_52b2c9a6-e9c2-4c9f-b6f1-43ec8c72056a.xml, kernel.iowmiallocateinstanceids
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWMIAllocateInstanceIds
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,15 +71,45 @@ Pointer to the first instance identifier that the driver should use.
 ## Return Value
 
 <b>IoWMIAllocateInstanceIds</b> returns a status code from the following list:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Indicates that WMI successfully provided unique instance identifiers for the GUID specified.
+</dl>
+</td>
+<td width="60%">
+Indicates that WMI successfully provided unique instance identifiers for the GUID specified.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>Indicates that the WMI services are not available. 
+</dl>
+</td>
+<td width="60%">
+Indicates that the WMI services are not available. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates that insufficient resources were available to provide the caller with instance IDs.
+</dl>
+</td>
+<td width="60%">
+Indicates that insufficient resources were available to provide the caller with instance IDs.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,11 +129,8 @@ If greater than one instance was requested in <i>InstanceCount</i> and the routi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-iowmisuggestinstancename.md">IoWmiSuggestInstanceName</a>
-</dt>
-</dl>
+
  
 
  

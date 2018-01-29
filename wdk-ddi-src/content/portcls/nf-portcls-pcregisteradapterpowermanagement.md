@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a9e2537d-4d67-4495-b391-55f885b7041a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcRegisterAdapterPowerManagement
+ms.keywords : PcRegisterAdapterPowerManagement function [Audio Devices], PcRegisterAdapterPowerManagement, portcls/PcRegisterAdapterPowerManagement, audio.pcregisteradapterpowermanagement, audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting in Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcRegisterAdapterPowerManagement
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -51,11 +55,11 @@ NTSTATUS PcRegisterAdapterPowerManagement(
 
 `Unknown`
 
-
+TBD
 
 `pvContext1`
 
-Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter is a pointer to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> but is cast to type PVOID.
+Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">functional device object (FDO)</a>. This parameter is a pointer to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> but is cast to type PVOID.
 
 
 ## Return Value
@@ -77,14 +81,10 @@ Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
-</dt>
-</dl>
+
  
 
  

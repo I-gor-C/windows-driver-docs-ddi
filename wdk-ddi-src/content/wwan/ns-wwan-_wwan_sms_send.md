@@ -7,8 +7,8 @@ old-location : netvista\wwan_sms_send.htm
 old-project : netvista
 ms.assetid : 2d2e5d13-56ca-452c-86fd-4a48b11d53ab
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_SMS_SEND, *PWWAN_SMS_SEND, WWAN_SMS_SEND
+ms.date : 1/18/2018
+ms.keywords : WWAN_SMS_SEND structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_send, wwan/WWAN_SMS_SEND, *PWWAN_SMS_SEND, wwan/PWWAN_SMS_SEND, WwanRef_5212cb88-8eeb-4aef-8ecd-8a0634db962c.xml, _WWAN_SMS_SEND, PWWAN_SMS_SEND structure pointer [Network Drivers Starting with Windows Vista], PWWAN_SMS_SEND, WWAN_SMS_SEND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_SMS_SEND
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWWAN_SMS_SEND, WWAN_SMS_SEND"
 req.product : Windows 10 or later.
 ---
@@ -51,14 +55,14 @@ typedef struct _WWAN_SMS_SEND {
 
 ## Members
 
-        
-            `SmsFormat`
 
-            The format of the SMS text message.
-        
-            `u`
+`SmsFormat`
 
-            Container union for the different SMS formats.
+The format of the SMS text message.
+
+`u`
+
+Container union for the different SMS formats.
 
 
 ## Requirements
@@ -69,21 +73,16 @@ typedef struct _WWAN_SMS_SEND {
 | **Minimum UMDF version** |  |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wwan\ns-wwan-_wwan_sms_send_pdu.md">WWAN_SMS_SEND_PDU</a>
-</dt>
-<dt>
 <a href="..\wwan\ns-wwan-_wwan_sms_send_cdma.md">WWAN_SMS_SEND_CDMA</a>
-</dt>
-<dt>
+
+<a href="..\wwan\ns-wwan-_wwan_sms_send_pdu.md">WWAN_SMS_SEND_PDU</a>
+
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_sms_send.md">NDIS_WWAN_SMS_SEND</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

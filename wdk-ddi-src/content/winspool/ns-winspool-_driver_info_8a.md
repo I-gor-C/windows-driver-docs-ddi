@@ -7,8 +7,8 @@ old-location : print\driver_info_8.htm
 old-project : print
 ms.assetid : 95f62d57-300a-4179-868b-f14f29c58b4d
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _DRIVER_INFO_8A, *LPDRIVER_INFO_8A, DRIVER_INFO_8A, *PDRIVER_INFO_8A, DRIVER_INFO_8
+ms.date : 1/18/2018
+ms.keywords : _DRIVER_INFO_8A, *PDRIVER_INFO_8A, DRIVER_INFO_8 structure [Print Devices], LPDRIVER_INFO_8, PDRIVER_INFO_8 structure pointer [Print Devices], PDRIVER_INFO_8, *LPDRIVER_INFO_8A, winspool/PDRIVER_INFO_8, LPDRIVER_INFO_8 structure pointer [Print Devices], DRIVER_INFO_8A, print.driver_info_8, winspool/LPDRIVER_INFO_8, print_ticket-package_dba844e8-6e97-4eaf-8de4-1003562e01d5.xml, DRIVER_INFO_8, winspool/DRIVER_INFO_8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DRIVER_INFO_8
-req.alt-loc : winspool.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPDRIVER_INFO_8A, DRIVER_INFO_8A, *PDRIVER_INFO_8A"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDRIVER_INFO_8A, *LPDRIVER_INFO_8A, DRIVER_INFO_8A"
 req.product : Windows 10 or later.
 ---
 
@@ -71,11 +75,10 @@ typedef struct _DRIVER_INFO_8 {
 
 ## Members
 
-        
-            `cVersion`
 
-            This member specifies the operating system version for which the driver was written. Currently it can be the following.
+`cVersion`
 
+This member specifies the operating system version for which the driver was written. Currently it can be the following.
 <table>
 <tr>
 <th>Value</th>
@@ -92,20 +95,19 @@ Driver for Microsoft Windows 2000, XP, or Windows Vista.
 </td>
 </tr>
 </table>
-        
-            `dwlDriverVersion`
 
-            The version number of the driver. This comes out of the version structure of the driver.
-        
-            `dwlMinInboxDriverVerVersion`
+`dwlDriverVersion`
 
-            The earliest allowed version of any drivers that shipped with Windows and on which this driver depends.
-        
-            `dwPrinterDriverAttributes`
+The version number of the driver. This comes out of the version structure of the driver.
 
-            This member specifies printer driver related properties. Must be zero if using the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183346(v=vs.85).aspx">AddPrinterDriver</a> or <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183347(v=vs.85).aspx">AddPrinterDriverEx</a> functions with DRIVER_INFO_8. The following table shows the flags that have been defined for the <i>dwPrinterDriverAttributes</i> parameter.
+`dwlMinInboxDriverVerVersion`
+
+The earliest allowed version of any drivers that shipped with Windows and on which this driver depends.
+
+`dwPrinterDriverAttributes`
+
+This member specifies printer driver related properties. Must be zero if using the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183346(v=vs.85).aspx">AddPrinterDriver</a> or <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183347(v=vs.85).aspx">AddPrinterDriverEx</a> functions with DRIVER_INFO_8. The following table shows the flags that have been defined for the <i>dwPrinterDriverAttributes</i> parameter.
 	  
-
 <table>
 <tr>
 <th>Flag name/value</th>
@@ -129,7 +131,7 @@ PRINTER_DRIVER_XPS
 0x00000002
 
 </td>
-<td>The printer driver supports the Microsoft XPS format described in the <a href="http://msdn.microsoft.com/en-us/windows/hardware/gg463373.aspx">XML Paper Specification: Overview</a>, and also in <a href="http://msdn.microsoft.com/en-us/library/e81cbc09-ab05-4a32-ae4a-8ec57b436c43(v=prot.10)#id27">Product Behavior, section &lt;27&gt;</a>.</td>
+<td>The printer driver supports the Microsoft XPS format described in the <a href="http://msdn.microsoft.com/en-us/windows/hardware/gg463373.aspx">XML Paper Specification: Overview</a>, and also in <a href="http://msdn.microsoft.com/en-us/library/e81cbc09-ab05-4a32-ae4a-8ec57b436c43(v=prot.10)">Product Behavior, section <27></a>.</td>
 <td>
 Windows 8
 
@@ -144,7 +146,7 @@ PRINTER_DRIVER_SANDBOX_ENABLED
 0x00000004
 
 </td>
-<td>The printer driver is compatible with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)#printer_driver_isolation">printer driver isolation</a>. For more information, see <a href="http://msdn.microsoft.com/en-us/library/e81cbc09-ab05-4a32-ae4a-8ec57b436c43(v=prot.10)#id28">Product Behavior, section &lt;28&gt;</a>.</td>
+<td>The printer driver is compatible with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)">printer driver isolation</a>. For more information, see <a href="http://msdn.microsoft.com/en-us/library/e81cbc09-ab05-4a32-ae4a-8ec57b436c43(v=prot.10)">Product Behavior, section <28></a>.</td>
 <td>
 Windows 7
 
@@ -159,7 +161,7 @@ PRINTER_DRIVER_CLASS
 0x00000008
 
 </td>
-<td>The printer driver is a <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)#class_printer_driver">class printer driver</a>.</td>
+<td>The printer driver is a <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)">class printer driver</a>.</td>
 <td>
 Windows 8
 
@@ -174,7 +176,7 @@ PRINTER_DRIVER_DERIVED
 0x00000010
 
 </td>
-<td>The printer driver is a <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)#derived_printer_driver">derived printer driver</a>.</td>
+<td>The printer driver is a <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)">derived printer driver</a>.</td>
 <td>
 Windows 8
 
@@ -204,7 +206,7 @@ PRINTER_DRIVER_CATEGORY_FAX
 0x00000040
 
 </td>
-<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)#fax_printer">fax printers</a>.</td>
+<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)">fax printers</a>.</td>
 <td>
 Windows 8
 
@@ -219,7 +221,7 @@ PRINTER_DRIVER_CATEGORY_FILE
 0x00000080
 
 </td>
-<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)#file_printer">file printers</a>.</td>
+<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)">file printers</a>.</td>
 <td>
 Windows 8
 
@@ -234,7 +236,7 @@ PRINTER_DRIVER_CATEGORY_VIRTUAL
 0x00000100
 
 </td>
-<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)#virtual_printer">virtual printers</a>.</td>
+<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)">virtual printers</a>.</td>
 <td>
 Windows 8
 
@@ -249,7 +251,7 @@ PRINTER_DRIVER_CATEGORY_SERVICE
 0x00000200
 
 </td>
-<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)#service_printer">service printers</a>.</td>
+<td>The printer driver is intended for use with <a href="http://msdn.microsoft.com/en-us/library/831cd729-be7c-451e-b729-bd8d84ce4d24(v=prot.10)">service printers</a>.</td>
 <td>
 Windows 8
 
@@ -264,7 +266,7 @@ PRINTER_DRIVER_SOFT_RESET_REQUIRED
 0x00000400
 
 </td>
-<td>Printers that use this printer driver should follow the guidelines outlined in <a href="http://go.microsoft.com/fwlink/p/?linkid=517016">USB Device Class Definition</a>. For more information, see <a href="http://msdn.microsoft.com/en-us/library/e81cbc09-ab05-4a32-ae4a-8ec57b436c43(v=prot.10)#id36">Product Behavior, section &lt;36&gt;</a></td>
+<td>Printers that use this printer driver should follow the guidelines outlined in <a href="http://go.microsoft.com/fwlink/p/?linkid=517016">USB Device Class Definition</a>. For more information, see <a href="http://msdn.microsoft.com/en-us/library/e81cbc09-ab05-4a32-ae4a-8ec57b436c43(v=prot.10)">Product Behavior, section <36></a></td>
 <td>
 Windows 8
 
@@ -291,97 +293,97 @@ Windows Server 2012
 </td>
 </tr>
 </table>
-        
-            `ftDriverDate`
 
-            The date of the driver package, as coded in the driver files.
-        
-            `ftMinInboxDriverVerDate`
+`ftDriverDate`
 
-            The earliest allowed date of any drivers that shipped with Windows and on which this driver depends.
-        
-            `pConfigFile`
+The date of the driver package, as coded in the driver files.
 
-            A pointer to a null-terminated string that specifies a file name or a full path and file name for the device driver's configuration dynamic-link library (for example, C:\DRIVERS\Pscrptui.dll).
-        
-            `pDataFile`
+`ftMinInboxDriverVerDate`
 
-            A pointer to a null-terminated string that specifies a file name or a full path and file name for the file that contains driver data (for example, C:\DRIVERS\Qms810.ppd).
-        
-            `pDefaultDataType`
+The earliest allowed date of any drivers that shipped with Windows and on which this driver depends.
 
-            A pointer to a null-terminated string that specifies the default data type of the print job (for example, "EMF").
-        
-            `pDependentFiles`
+`pConfigFile`
 
-            Pointer to a Multi-SZ string that contains the names of the files on which the driver depends. The file names are stored as a contiguous series of zero-terminated strings followed by an empty string. For example, Pscript.dll\0QMS810.ppd\0Pscriptui.dll\0Pscriptui.hlp\0Pstest.txt\0\0, where \0 represents the terminating null character.
-        
-            `pDriverPath`
+A pointer to a null-terminated string that specifies a file name or a full path and file name for the device driver's configuration dynamic-link library (for example, C:\DRIVERS\Pscrptui.dll).
 
-            A pointer to a null-terminated string that specifies a file name or a full path and file name for the file that contains the device driver (for example, C:\DRIVERS\Pscript.dll).
-        
-            `pEnvironment`
+`pDataFile`
 
-            A pointer to a null-terminated string that specifies the environment for which the driver was written (for example, Microsoft Windows NT x86, Windows NT R4000, Windows NT Alpha_AXP, or Windows 4.0).
-        
-            `pHelpFile`
+A pointer to a null-terminated string that specifies a file name or a full path and file name for the file that contains driver data (for example, C:\DRIVERS\Qms810.ppd).
 
-            A pointer to a null-terminated string that specifies a file name or a full path and file name for the device driver's help file (for example, C:\DRIVERS\Pscrptui.hlp).
-        
-            `pMonitorName`
+`pDefaultDataType`
 
-            A pointer to a null-terminated string that specifies a language monitor (for example, "PJL monitor"). This member can be <b>NULL</b> and should be specified only for printers capable of bidirectional communication.
-        
-            `pName`
+A pointer to a null-terminated string that specifies the default data type of the print job (for example, "EMF").
 
-            A pointer to a null-terminated string that specifies the name of the driver (for example, QMS 810).
-        
-            `pszHardwareID`
+`pDependentFiles`
 
-            A pointer to a null-terminated string that specifies the hardware ID for the printer driver.
-        
-            `pszInfPath`
+Pointer to a Multi-SZ string that contains the names of the files on which the driver depends. The file names are stored as a contiguous series of zero-terminated strings followed by an empty string. For example, Pscript.dll\0QMS810.ppd\0Pscriptui.dll\0Pscriptui.hlp\0Pstest.txt\0\0, where \0 represents the terminating null character.
 
-            A pointer to a null-terminated string that specifies the path of the INF file inside the driver store from which the printer driver was installed. Must be <b>NULL</b> if using the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183346(v=vs.85).aspx">AddPrinterDriver</a> or <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183347(v=vs.85).aspx">AddPrinterDriverEx</a> functions with DRIVER_INFO_8.
-        
-            `pszMfgName`
+`pDriverPath`
 
-            A pointer to a null-terminated string that specifies the manufacturer's name.
-        
-            `pszOEMUrl`
+A pointer to a null-terminated string that specifies a file name or a full path and file name for the file that contains the device driver (for example, C:\DRIVERS\Pscript.dll).
 
-            A pointer to a null-terminated string that specifies the URL for the manufacturer.
-        
-            `pszPrintProcessor`
+`pEnvironment`
 
-            A pointer to a null-terminated string that specifies the name of the print processor associated with the printer driver.
-        
-            `pszProvider`
+A pointer to a null-terminated string that specifies the environment for which the driver was written (for example, Microsoft Windows NT x86, Windows NT R4000, Windows NT Alpha_AXP, or Windows 4.0).
 
-            A pointer to a null-terminated string that specifies the provider of the printer driver (for example, "Microsoft Windows 2000").
-        
-            `pszVendorSetup`
+`pHelpFile`
 
-            A pointer to a null-terminated string that specifies the vendor setup DLL and entry point for vendor setup that is associated with the printer driver.
-        
-            `pszzColorProfiles`
+A pointer to a null-terminated string that specifies a file name or a full path and file name for the device driver's help file (for example, C:\DRIVERS\Pscrptui.hlp).
 
-            A pointer to a null-terminated string that specifies all color profiles that are associated with the printer driver.
-        
-            `pszzCoreDriverDependencies`
+`pMonitorName`
 
-            A pointer to a null-terminated string that contains all the core printer driver dependencies for the driver package that are defined by <i>pszInfPath</i>. Must be <b>NULL</b> if using the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183346(v=vs.85).aspx">AddPrinterDriver</a> or <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183347(v=vs.85).aspx">AddPrinterDriverEx</a> functions with DRIVER_INFO_8.
-        
-            `pszzPreviousNames`
+A pointer to a null-terminated string that specifies a language monitor (for example, "PJL monitor"). This member can be <b>NULL</b> and should be specified only for printers capable of bidirectional communication.
 
-            A pointer to a null-terminated string that specifies any previous printer driver names that are compatible with this driver (for example, OldName1\0OldName2\0\0).
+`pName`
 
-    ## Remarks
-        The strings for these members are contained in the INF file that is used to add the driver.
+A pointer to a null-terminated string that specifies the name of the driver (for example, QMS 810).
+
+`pszHardwareID`
+
+A pointer to a null-terminated string that specifies the hardware ID for the printer driver.
+
+`pszInfPath`
+
+A pointer to a null-terminated string that specifies the path of the INF file inside the driver store from which the printer driver was installed. Must be <b>NULL</b> if using the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183346(v=vs.85).aspx">AddPrinterDriver</a> or <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183347(v=vs.85).aspx">AddPrinterDriverEx</a> functions with DRIVER_INFO_8.
+
+`pszMfgName`
+
+A pointer to a null-terminated string that specifies the manufacturer's name.
+
+`pszOEMUrl`
+
+A pointer to a null-terminated string that specifies the URL for the manufacturer.
+
+`pszPrintProcessor`
+
+A pointer to a null-terminated string that specifies the name of the print processor associated with the printer driver.
+
+`pszProvider`
+
+A pointer to a null-terminated string that specifies the provider of the printer driver (for example, "Microsoft Windows 2000").
+
+`pszVendorSetup`
+
+A pointer to a null-terminated string that specifies the vendor setup DLL and entry point for vendor setup that is associated with the printer driver.
+
+`pszzColorProfiles`
+
+A pointer to a null-terminated string that specifies all color profiles that are associated with the printer driver.
+
+`pszzCoreDriverDependencies`
+
+A pointer to a null-terminated string that contains all the core printer driver dependencies for the driver package that are defined by <i>pszInfPath</i>. Must be <b>NULL</b> if using the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183346(v=vs.85).aspx">AddPrinterDriver</a> or <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183347(v=vs.85).aspx">AddPrinterDriverEx</a> functions with DRIVER_INFO_8.
+
+`pszzPreviousNames`
+
+A pointer to a null-terminated string that specifies any previous printer driver names that are compatible with this driver (for example, OldName1\0OldName2\0\0).
+
+## Remarks
+The strings for these members are contained in the INF file that is used to add the driver.
 
 If you call <b>AddPrinterDriver</b> or <b>AddPrinterDriverEx</b> with Level not equal to 6 or 8, and then you call <b>GetPrinterDriver</b> or <b>EnumPrinterDrivers</b> with Level equal to 6 or 8, the <b>DRIVER_INFO_8</b> structure is returned with pszMfgName, pszOEMUrl, pszHardwareID, and pszProvider set to <b>NULL</b>, dwlDriverVersion set to zero, and ftDriverDate set to (0,0).
 
-This structure is available in Windows Vista.</p>
+This structure is available in Windows Vista.
 
 ## Requirements
 | &nbsp; | &nbsp; |

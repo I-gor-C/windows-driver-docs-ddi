@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A75AE18F-802F-462B-BF96-5C03408F53CA
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WUDF_WORKITEM_CONFIG_INIT
+ms.keywords : WUDF_WORKITEM_CONFIG_INIT, wudfworkitem/WUDF_WORKITEM_CONFIG_INIT, wdf.wudf_workitem_config_init, WUDF_WORKITEM_CONFIG_INIT function, umdf.wudf_workitem_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WUDF_WORKITEM_CONFIG_INIT
-req.alt-loc : wudfworkitem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UNICODE_STRING
 req.product : Windows 10 or later.
 ---
@@ -86,14 +90,10 @@ The <b>WUDF_WORKITEM_CONFIG_INIT</b> function stores the pointer that the <i>OnW
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfworkitem\ns-wudfworkitem-_wudf_workitem_config.md">WUDF_WORKITEM_CONFIG</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/B34EABF4-C659-4DB4-AEC6-94F544D79221">IWDFDevice3::CreateWorkItem</a>
-</dt>
-</dl>
+
  
 
  

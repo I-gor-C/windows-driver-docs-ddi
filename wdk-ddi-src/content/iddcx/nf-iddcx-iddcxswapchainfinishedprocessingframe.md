@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 46c4a592-b3d4-479d-b5db-06202b5be290
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxSwapChainFinishedProcessingFrame
+ms.keywords : IddCxSwapChainFinishedProcessingFrame method [Display Devices], IddCxSwapChainFinishedProcessingFrame, iddcx/IddCxSwapChainFinishedProcessingFrame, display.iddcxswapchainfinishedprocessingframe
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IddCxSwapChainFinishedProcessingFrame
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : _Must_inspect_result_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -59,7 +63,7 @@ The swap-chain object whose current frame is being queried.
 
 ## Remarks
 
-If the driver copies the buffer to a staging surface so it can lock and copy the pixel data to the CPU, then the driver should call this callback once the copy from surface to staging surface has been submitted. If the driver does not call this callback the desktop will not update. It is invalid to call <a href="..\iddcx\nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md">IddCxSwapChainReleaseAndAcquireBuffer</a> before calling <b>IddCxSwapChainFinishedProcessingFrame</b></p>
+If the driver copies the buffer to a staging surface so it can lock and copy the pixel data to the CPU, then the driver should call this callback once the copy from surface to staging surface has been submitted. If the driver does not call this callback the desktop will not update. It is invalid to call <a href="..\iddcx\nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md">IddCxSwapChainReleaseAndAcquireBuffer</a> before calling <b>IddCxSwapChainFinishedProcessingFrame</b>
 
 ## Requirements
 | &nbsp; | &nbsp; |

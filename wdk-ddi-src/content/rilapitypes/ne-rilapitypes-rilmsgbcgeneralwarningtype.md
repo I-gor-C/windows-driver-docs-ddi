@@ -7,8 +7,8 @@ old-location : netvista\rilmsgbcgeneralwarningtype_2.htm
 old-project : netvista
 ms.assetid : 0e556cab-87af-4b3d-8c8c-d0815323a002
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGBCGENERALWARNINGTYPE, RILMSGBCGENERALWARNINGTYPE
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_WARNINGTYPE_TEST, RIL_WARNINGTYPE_RESERVED, rilapitypes/RILMSGBCGENERALWARNINGTYPE, RIL_WARNINGTYPE_TSUNAMI, netvista.rilmsgbcgeneralwarningtype_2, RILMSGBCGENERALWARNINGTYPE, RIL_WARNINGTYPE_MAX, RILMSGBCGENERALWARNINGTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_WARNINGTYPE_TEST, RIL_WARNINGTYPE_EARTHQUAKETSUNAMI, rilapitypes/RIL_WARNINGTYPE_OTHER, rilapitypes/RIL_WARNINGTYPE_EARTHQUAKETSUNAMI, rilapitypes/RIL_WARNINGTYPE_MAX, rilapitypes/RIL_WARNINGTYPE_RESERVED, RIL_WARNINGTYPE_OTHER, rilapitypes/RIL_WARNINGTYPE_TSUNAMI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGBCGENERALWARNINGTYPE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGBCGENERALWARNINGTYPE
 req.product : Windows 10 or later.
 ---
@@ -53,6 +57,11 @@ typedef enum _RILMSGBCGENERALWARNINGTYPE {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_WARNINGTYPE_EARTHQUAKE</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_WARNINGTYPE_EARTHQUAKETSUNAMI</td>

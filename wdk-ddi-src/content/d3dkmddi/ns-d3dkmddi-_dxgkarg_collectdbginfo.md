@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f0dd72b5-9ab4-4511-b913-b0e456ea8950
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_COLLECTDBGINFO, DXGKARG_COLLECTDBGINFO
+ms.keywords : display.dxgkarg_collectdbginfo, DmStructs_c3c19a4c-8536-474b-bca4-8b5af32fc4c8.xml, VIDEO_TDR_TIMEOUT_DETECTED, DXGKARG_COLLECTDBGINFO, DXGKARG_COLLECTDBGINFO structure [Display Devices], _DXGKARG_COLLECTDBGINFO, VIDEO_ENGINE_TIMEOUT_DETECTED, d3dkmddi/DXGKARG_COLLECTDBGINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_COLLECTDBGINFO
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_COLLECTDBGINFO
 ---
 
@@ -49,29 +53,52 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 
 ## Members
 
-        
-            `BufferSize`
 
-            [in] The maximum size, in bytes, to copy to the buffer that <b>pBuffer</b> points to.
-        
-            `pBuffer`
+`BufferSize`
 
-            [out] A pointer to a buffer that receives the debug information that <b>Reason</b> specifies.
-        
-            `pExtension`
+[in] The maximum size, in bytes, to copy to the buffer that <b>pBuffer</b> points to.
 
-            [out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.
-        
-            `Reason`
+`pBuffer`
 
-            [in] The <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug-check code</a> for which to return debug information in the buffer that <b>pBuffer</b> points to. These are possible values:
+[out] A pointer to a buffer that receives the debug information that <b>Reason</b> specifies.
 
+`pExtension`
+
+[out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.
+
+`Reason`
+
+[in] The <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug-check code</a> for which to return debug information in the buffer that <b>pBuffer</b> points to. These are possible values:
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="VIDEO_TDR_TIMEOUT_DETECTED"></a><a id="video_tdr_timeout_detected"></a><dl>
+<dt><b>VIDEO_TDR_TIMEOUT_DETECTED</b></dt>
+<dt>0x117</dt>
+</dl>
+</td>
+<td width="60%">
+A <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetengine.md">DxgkDdiResetEngine</a> operation has reset a logical adapter.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="VIDEO_ENGINE_TIMEOUT_DETECTED"></a><a id="video_engine_timeout_detected"></a><dl>
+<dt><b>VIDEO_ENGINE_TIMEOUT_DETECTED</b></dt>
+<dt>0x141</dt>
+</dl>
+</td>
+<td width="60%">
+A <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetengine.md">DxgkDdiResetEngine</a> operation has reset one or more nodes within a physical adapter.
+
+Available starting in Windows 8.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -82,19 +109,14 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md">DXGKARG_COLLECTDBGINFO_EXT</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_collectdbginfo.md">DxgkDdiCollectDbgInfo</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_resetengine.md">DxgkDdiResetEngine</a>
-</dt>
-</dl>
+
  
 
  

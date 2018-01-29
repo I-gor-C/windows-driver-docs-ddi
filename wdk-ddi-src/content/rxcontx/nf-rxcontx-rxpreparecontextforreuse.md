@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 16b4bd82-0ffc-40c7-8cd2-f73a2a588ac8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxPrepareContextForReuse
+ms.keywords : RxPrepareContextForReuse, ifsk.rxpreparecontextforreuse, rxref_34eae0cd-faff-47e7-8313-aca1361edc68.xml, RxPrepareContextForReuse function [Installable File System Drivers], rxcontx/RxPrepareContextForReuse
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxPrepareContextForReuse
-req.alt-loc : rxcontx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -61,12 +65,16 @@ None
 ## Remarks
 
 The <b>RxPrepareContextForReuse</b> routine checks that several operation-specific members in the RX_CONTEXT structure are <b>NULL</b> before setting the <b>ReferenceCount</b> member to zero. These operation-specific tests that must be met include the following:
-
+<ul>
+<li>
 If the <b>MajorFunction</b> member of the associated IRP is IRP_MJ_CREATE, then the <b>Create.CanonicalNameBuffer</b> member must be <b>NULL</b>.
 
+</li>
+<li>
 If the <b>MajorFunction</b> member of the associated IRP is IRP_MJ_READ or IRP_MJ_WRITE, then the <b>RxContextSerializationQLinks.Flink</b> and <b>RxContextSerializationQLinks.Blink</b> members must be <b>NULL</b>.
 
-If either of the above conditions are not met, <b>RxPrepareContextForReuse</b> causes the system to ASSERT on checked builds.
+</li>
+</ul>If either of the above conditions are not met, <b>RxPrepareContextForReuse</b> causes the system to ASSERT on checked builds.
 
 The <b>RxPrepareContextForReuse </b>routine would normally only be used by network mini-redirector drivers that reinitialize RX_CONTEXT structures directly.
 
@@ -84,35 +92,24 @@ The <b>RxPrepareContextForReuse </b>routine would normally only be used by netwo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxcompleterequest_real.md">RxCompleteRequest_Real</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext_real.md">RxDereferenceAndDeleteRxContext_Real</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
-</dt>
-<dt>
 <a href="..\rxcontx\nf-rxcontx-rxresumeblockedoperations_serially.md">RxResumeBlockedOperations_Serially</a>
-</dt>
-<dt>
-<a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
-</dt>
-<dt>
+
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest_real.md">RxCompleteRequest_Real</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
+
+<a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext_real.md">RxDereferenceAndDeleteRxContext_Real</a>
+
+<a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557382">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
-</dt>
-</dl>
+
+<a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+
+<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
+
  
 
  

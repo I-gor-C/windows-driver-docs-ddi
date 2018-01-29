@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 911d8b07-1313-4c4b-8d16-188857943327
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeGuidName
+ms.keywords : fltkernel/FltGetVolumeGuidName, ifsk.fltgetvolumeguidname, FltApiRef_e_to_o_b3c6abed-dbf8-44a2-92d6-470806b9a80f.xml, FltGetVolumeGuidName, FltGetVolumeGuidName routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetVolumeGuidName
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,18 +70,56 @@ Pointer to a caller-allocated variable that receives the size, in bytes, of the 
 ## Return Value
 
 <b>FltGetVolumeGuidName</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer pointed to by the <i>VolumeGuidName</i> parameter is too small to hold the volume GUID. If the caller provides a non-<b>NULL</b> value for the <i>BufferSizeNeeded</i> parameter, this parameter receives the required buffer size. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The buffer pointed to by the <i>VolumeGuidName</i> parameter is too small to hold the volume GUID. If the caller provides a non-<b>NULL</b> value for the <i>BufferSizeNeeded</i> parameter, this parameter receives the required buffer size. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl><b>FltGetVolumeGuidName</b> encountered a pool allocation failure. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+<b>FltGetVolumeGuidName</b> encountered a pool allocation failure. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The <i>Volume</i> parameter is a handle for a network volume. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The <i>Volume</i> parameter is a handle for a network volume. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_VOLUME_NOT_FOUND</b></dt>
-</dl>No matching volume was found. This is an error code.
+</dl>
+</td>
+<td width="60%">
+No matching volume was found. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -115,20 +157,14 @@ To get the volume object ID for a volume, call <a href="..\ntifs\nf-ntifs-zwquer
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_instance_setup_callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_instance_setup_callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a>
+
+<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
  
 
  

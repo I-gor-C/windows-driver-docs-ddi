@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5340DB05-12D9-4965-B207-BA113F3801A7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPinPipe, IKsPinPipe::KsSetPinBusCache, KsSetPinBusCache
+ms.keywords : ksproxy/IKsPinPipe::KsSetPinBusCache, KsSetPinBusCache method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe, KsSetPinBusCache method [Streaming Media Devices], IKsPinPipe interface [Streaming Media Devices], KsSetPinBusCache method, stream.ikspinpipe_kssetpinbuscache, KsSetPinBusCache, IKsPinPipe::KsSetPinBusCache
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPinPipe.KsSetPinBusCache
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -59,10 +63,6 @@ HRESULT KsSetPinBusCache(
 
 If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
 
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
-If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,11 +78,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspinpipe.md">IKsPinPipe</a>
-</dt>
-</dl>
+
  
 
  

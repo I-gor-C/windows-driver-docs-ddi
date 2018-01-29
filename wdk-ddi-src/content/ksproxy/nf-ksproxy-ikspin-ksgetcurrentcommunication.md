@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3fca9bf5-5430-4877-846e-e796e54991a2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPin, IKsPin::KsGetCurrentCommunication, KsGetCurrentCommunication
+ms.keywords : stream.ikspin_ksgetcurrentcommunication, IKsPin::KsGetCurrentCommunication, KsGetCurrentCommunication method [Streaming Media Devices], IKsPin interface, KsGetCurrentCommunication method [Streaming Media Devices], ksproxy_2619bbb1-bc7d-4a69-99fb-2e35a36c4f02.xml, IKsPin, KsGetCurrentCommunication, ksproxy/IKsPin::KsGetCurrentCommunication, IKsPin interface [Streaming Media Devices], KsGetCurrentCommunication method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPin.KsGetCurrentCommunication
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -53,7 +57,6 @@ HRESULT KsGetCurrentCommunication(
 `Communication`
 
 Pointer to a variable that receives one of the following values from the KSPIN_COMMUNICATION enumerated type describing the current communication direction for a pin: 
-
 <table>
 <tr>
 <th>Value</th>
@@ -144,17 +147,12 @@ The current communication direction, interface, and medium of a pin are a subset
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
-</dt>
-</dl>
+
  
 
  

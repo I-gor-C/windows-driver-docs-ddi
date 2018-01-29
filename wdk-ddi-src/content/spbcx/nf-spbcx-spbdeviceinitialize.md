@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 2EB57066-164F-445C-8621-7B65E6715E97
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbDeviceInitialize
+ms.keywords : SpbDeviceInitialize method [Buses], SPB.spbdeviceinitialize, spbcx/SpbDeviceInitialize, SpbDeviceInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpbDeviceInitialize
-req.alt-loc : spbcxstubs.lib,spbcxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Spbcxstubs.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -87,20 +91,14 @@ If the structure pointed to by <i>Config</i> is not filled out correctly, <a hre
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a>
-</dt>
-<dt>
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406207">SPB_CONTROLLER_CONFIG_INIT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a>
+
  
 
  

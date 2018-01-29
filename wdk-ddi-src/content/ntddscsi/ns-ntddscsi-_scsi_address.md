@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2b3acd3d-b5da-4dd3-89f1-0b8a7d68e54c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SCSI_ADDRESS, *PSCSI_ADDRESS, SCSI_ADDRESS
+ms.keywords : ntddscsi/PSCSI_ADDRESS, PSCSI_ADDRESS structure pointer [Storage Devices], ntddscsi/SCSI_ADDRESS, *PSCSI_ADDRESS, structs-scsibus_6b7a15bf-09f3-4fe2-bbef-77e1fd6e1744.xml, _SCSI_ADDRESS, SCSI_ADDRESS structure [Storage Devices], storage.scsi_address, SCSI_ADDRESS, PSCSI_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCSI_ADDRESS
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSCSI_ADDRESS, SCSI_ADDRESS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCSI_ADDRESS, *PSCSI_ADDRESS
 ---
 
 # _SCSI_ADDRESS structure
-The SCSI_ADDRESS structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_address.md">IOCTL_SCSI_GET_ADDRESS</a> request to retrieve the address information, such as the target ID (TID) and the logical unit number (LUN) of a particular SCSI target.
+The SCSI_ADDRESS structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_address.md">IOCTL_SCSI_GET_ADDRESS</a> request to retrieve the address information, such as the target ID (TID) and the logical unit number (LUN) of a particular SCSI target. 
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -50,29 +55,29 @@ typedef struct _SCSI_ADDRESS {
 
 ## Members
 
-        
-            `Length`
 
-            Contains the length of this structure in bytes.
-        
-            `Lun`
+`Length`
 
-            Contains the logical unit number.
-        
-            `PathId`
+Contains the length of this structure in bytes.
 
-            Contains the number of the bus.
-        
-            `PortNumber`
+`Lun`
 
-            Contains the number of the SCSI adapter.
-        
-            `TargetId`
+Contains the logical unit number.
 
-            Contains the number of the target device.
+`PathId`
 
-    ## Remarks
-        Legacy class drivers issue the <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_address.md">IOCTL_SCSI_GET_ADDRESS</a> request to the port driver to obtain the address of their devices.
+Contains the number of the bus.
+
+`PortNumber`
+
+Contains the number of the SCSI adapter.
+
+`TargetId`
+
+Contains the number of the target device.
+
+## Remarks
+Legacy class drivers issue the <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_address.md">IOCTL_SCSI_GET_ADDRESS</a> request to the port driver to obtain the address of their devices.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +87,10 @@ typedef struct _SCSI_ADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_address.md">IOCTL_SCSI_GET_ADDRESS</a>
-</dt>
-</dl>
+
  
 
  

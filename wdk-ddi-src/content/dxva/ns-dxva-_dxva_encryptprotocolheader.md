@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 924da940-f609-4302-b454-87243200808e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_EncryptProtocolHeader, DXVA_EncryptProtocolHeader, *LPDXVA_EncryptProtocolHeader
+ms.keywords : DXVA_EncryptProtocolHeader structure [Display Devices], LPDXVA_EncryptProtocolHeader, *LPDXVA_EncryptProtocolHeader, display.dxva_encryptprotocolheader, _DXVA_EncryptProtocolHeader, dxva/DXVA_EncryptProtocolHeader, LPDXVA_EncryptProtocolHeader structure pointer [Display Devices], dxva/LPDXVA_EncryptProtocolHeader, DXVA_EncryptProtocolHeader, dxvaref_19bd4a66-c03f-44c3-98b6-875da968fa50.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_EncryptProtocolHeader
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_EncryptProtocolHeader, *LPDXVA_EncryptProtocolHeader
 ---
 
@@ -48,23 +52,23 @@ typedef struct _DXVA_EncryptProtocolHeader {
 
 ## Members
 
-        
-            `dwFunction`
 
-            Indicates whether encryption is being used and the operation to which encryption applies. The 24 most significant bits of <b>dwFunction</b> indicate that an encryption protocol is being used. These bits must be 0xFFFF00 when sent by the host software decoder, and 0xFFFF08 when sent by the accelerator. The 8 least significant bits of <b>dwFunction</b> contain a <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func</a> variable that indicates the operation to which the encryption protocol applies. Currently, the only relevant defined value of <i>bDXVA_Func</i> for use in these bits is 1, which indicates that the encryption protocol applies to compressed picture decoding.
+`dwFunction`
+
+Indicates whether encryption is being used and the operation to which encryption applies. The 24 most significant bits of <b>dwFunction</b> indicate that an encryption protocol is being used. These bits must be 0xFFFF00 when sent by the host software decoder, and 0xFFFF08 when sent by the accelerator. The 8 least significant bits of <b>dwFunction</b> contain a <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func</a> variable that indicates the operation to which the encryption protocol applies. Currently, the only relevant defined value of <i>bDXVA_Func</i> for use in these bits is 1, which indicates that the encryption protocol applies to compressed picture decoding.
 
 There are only two possible values for <b>dwFunction</b> in this structure: 0xFFFF0001 when sent by a host software decoder, and 0xFFFF0801 when sent by the hardware accelerator.
-        
-            `guidEncryptProtocol`
 
-            Contains the GUID associated with the encryption protocol.
-        
-            `ReservedBits`
+`guidEncryptProtocol`
 
-            Reserved bits used for packing and alignment. This must be zero.
+Contains the GUID associated with the encryption protocol.
 
-    ## Remarks
-        The encryption protocol in use is externally defined and operates as described in <a href="https://msdn.microsoft.com/d5ce9c02-7126-4775-bb87-dae45b93b652">Encryption Support</a>.</p>
+`ReservedBits`
+
+Reserved bits used for packing and alignment. This must be zero.
+
+## Remarks
+The encryption protocol in use is externally defined and operates as described in <a href="https://msdn.microsoft.com/d5ce9c02-7126-4775-bb87-dae45b93b652">Encryption Support</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

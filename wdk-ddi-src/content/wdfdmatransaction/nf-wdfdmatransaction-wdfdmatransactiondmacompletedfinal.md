@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : de16eaf4-11f0-428b-8833-1d1e6ef78853
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionDmaCompletedFinal
+ms.keywords : DFDmaObjectRef_ceac647e-264e-416b-947f-61cc95e6d4ab.xml, PFN_WDFDMATRANSACTIONDMACOMPLETEDFINAL, WdfDmaTransactionDmaCompletedFinal method, wdf.wdfdmatransactiondmacompletedfinal, wdfdmatransaction/WdfDmaTransactionDmaCompletedFinal, WdfDmaTransactionDmaCompletedFinal, kmdf.wdfdmatransactiondmacompletedfinal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDmaTransactionDmaCompletedFinal
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -82,9 +86,7 @@ The <b>WdfDmaTransactionDmaCompletedFinal</b> method behaves the same as <a href
 
 When your driver calls <b>WdfDmaTransactionDmaCompletedFinal</b>, the driver supplies the number of bytes that were transferred. The return value is always <b>TRUE</b>, because the framework will not attempt to transfer any more bytes for the specified transaction. 
 
-For more information about completing DMA transfers, see <a href="https://msdn.microsoft.com/86383b9f-9b82-4afa-81ac-2ab09bd8778b">Completing a DMA Transfer</a>. 
-
-The following code example notifies the framework that a device's DMA transfer operation has completed with an underrun condition.
+For more information about completing DMA transfers, see <a href="https://msdn.microsoft.com/86383b9f-9b82-4afa-81ac-2ab09bd8778b">Completing a DMA Transfer</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,17 +102,12 @@ The following code example notifies the framework that a device's DMA transfer o
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
-</dt>
-<dt>
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
-</dt>
-<dt>
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompletedwithlength.md">WdfDmaTransactionDmaCompletedWithLength</a>
-</dt>
-</dl>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+
  
 
  

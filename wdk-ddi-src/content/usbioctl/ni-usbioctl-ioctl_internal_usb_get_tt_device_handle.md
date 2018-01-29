@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1ea77cc4-bee4-4e0a-92a4-6413d3e5871a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_get_tt_device_handle, IOCTL_INTERNAL_USB_GET_TT_DEVICE_HANDLE control code [Buses], IOCTL_INTERNAL_USB_GET_TT_DEVICE_HANDLE, usbioctl/IOCTL_INTERNAL_USB_GET_TT_DEVICE_HANDLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_GET_TT_DEVICE_HANDLE
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---

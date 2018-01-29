@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ca259e03-4770-48ce-a4c0-a26159a172aa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeMarkLogonSessionForTerminationNotification
+ms.keywords : ifsk.semarklogonsessionforterminationnotification, SeMarkLogonSessionForTerminationNotification routine [Installable File System Drivers], ntifs/SeMarkLogonSessionForTerminationNotification, seref_417d6aa1-b506-463d-9506-3a3651873c4a.xml, SeMarkLogonSessionForTerminationNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeMarkLogonSessionForTerminationNotification
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -55,12 +59,34 @@ Pointer to the logon ID of the logon session.
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The logon session was successfully marked.
+</dl>
+</td>
+<td width="60%">
+The logon session was successfully marked.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>The logon session was not found.
+</dl>
+</td>
+<td width="60%">
+The logon session was not found.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -82,17 +108,12 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-seregisterlogonsessionterminatedroutine.md">SeRegisterLogonSessionTerminatedRoutine</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-seunregisterlogonsessionterminatedroutine.md">SeUnregisterLogonSessionTerminatedRoutine</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-seregisterlogonsessionterminatedroutine.md">SeRegisterLogonSessionTerminatedRoutine</a>
+
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+ms.keywords : storage.vpd_zoned_block_device_characteristics_page, scsi/PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure pointer [Storage Devices], PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, scsi/VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
 ---
 
@@ -57,50 +61,50 @@ typedef struct _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE {
 
 ## Members
 
-        
-            `DeviceType`
 
-            N/A
-        
-            `DeviceTypeQualifier`
+`DeviceType`
 
-            N/A
-        
-            `MaxNumberOfOpenSequentialWriteRequiredZone`
+N/A
 
-            N/A
-        
-            `OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone`
+`DeviceTypeQualifier`
 
-            N/A
-        
-            `OptimalNumberOfOpenSequentialWritePreferredZone`
+N/A
 
-            N/A
-        
-            `PageCode`
+`MaxNumberOfOpenSequentialWriteRequiredZone`
 
-            N/A
-        
-            `PageLength`
+N/A
 
-            N/A
-        
-            `Reserved1`
+`OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone`
 
-            N/A
-        
-            `Reserved2`
+N/A
 
-            N/A
-        
-            `Reserved3`
+`OptimalNumberOfOpenSequentialWritePreferredZone`
 
-            N/A
-        
-            `URSWRZ`
+N/A
 
-            N/A
+`PageCode`
+
+N/A
+
+`PageLength`
+
+N/A
+
+`Reserved1`
+
+N/A
+
+`Reserved2`
+
+N/A
+
+`Reserved3`
+
+N/A
+
+`URSWRZ`
+
+N/A
 
 
 ## Requirements

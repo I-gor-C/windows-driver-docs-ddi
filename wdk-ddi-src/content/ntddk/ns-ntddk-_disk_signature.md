@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f3fdb436-53b6-4fb3-8746-1f852f7d928a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_SIGNATURE, DISK_SIGNATURE, *PDISK_SIGNATURE
+ms.keywords : storage.disk_signature, _DISK_SIGNATURE, ntddk/PDISK_SIGNATURE, structs-disk_6ea56db7-c886-43f2-b9ed-24b0f7e1cb6e.xml, PDISK_SIGNATURE, ntddk/DISK_SIGNATURE, *PDISK_SIGNATURE, PDISK_SIGNATURE structure pointer [Storage Devices], DISK_SIGNATURE structure [Storage Devices], DISK_SIGNATURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is only available on Windows XP and l
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISK_SIGNATURE
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : DISK_SIGNATURE, *PDISK_SIGNATURE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDISK_SIGNATURE, DISK_SIGNATURE"
 ---
 
 # _DISK_SIGNATURE structure
@@ -55,10 +59,10 @@ typedef struct _DISK_SIGNATURE {
 
 ## Members
 
-        
-            `PartitionStyle`
 
-            Specifies the type of partition.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> for a description of the possible values.
+`PartitionStyle`
+
+Specifies the type of partition.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> for a description of the possible values.
 
 
 ## Requirements
@@ -69,13 +73,10 @@ typedef struct _DISK_SIGNATURE {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioreaddisksignature.md">IoReadDiskSignature</a>
-</dt>
-</dl>
+
  
 
  

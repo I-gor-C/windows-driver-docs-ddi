@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 9759ed77-d91a-466b-9678-4ed4fb4359e4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : VPCI_PNP_ID, PCI.vpci_pnp_id, *PVPCI_PNP_ID, _VPCI_PNP_ID, pcivirt/VPCI_PNP_ID, VPCI_PNP_ID structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VPCI_PNP_ID
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 # _VPCI_PNP_ID structure
@@ -53,38 +57,38 @@ typedef struct _VPCI_PNP_ID {
 
 ## Members
 
-        
-            `BaseClass`
 
-            Vendor-defined base class code from the configuration space.
-        
-            `DeviceID`
+`BaseClass`
 
-            Vendor-defined identifier for the device.
-        
-            `ProgIf`
+Vendor-defined base class code from the configuration space.
 
-            Programming Interface code.
-        
-            `RevisionID`
+`DeviceID`
 
-            Vendor-defined revision number.
-        
-            `SubClass`
+Vendor-defined identifier for the device.
 
-            Vendor-defined subclass code.
-        
-            `SubSystemID`
+`ProgIf`
 
-            Vendor-defined subsystem identifier.
-        
-            `SubVendorID`
+Programming Interface code.
 
-            PCI SIG-assigned identifier for the vendor of the subsystem.
-        
-            `VendorID`
+`RevisionID`
 
-            PCI SIG-assigned identifier for the vendor of the device.
+Vendor-defined revision number.
+
+`SubClass`
+
+Vendor-defined subclass code.
+
+`SubSystemID`
+
+Vendor-defined subsystem identifier.
+
+`SubVendorID`
+
+PCI SIG-assigned identifier for the vendor of the subsystem.
+
+`VendorID`
+
+PCI SIG-assigned identifier for the vendor of the device.
 
 
 ## Requirements
@@ -95,11 +99,10 @@ typedef struct _VPCI_PNP_ID {
 | **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/identifiers-for-pci-devices">Identifiers for PCI Devices</a></dt>
-</dl>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/identifiers-for-pci-devices">Identifiers for PCI Devices</a>
+
  
 
  

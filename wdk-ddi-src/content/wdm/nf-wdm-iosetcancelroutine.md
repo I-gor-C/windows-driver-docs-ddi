@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5bc81897-6463-4588-9348-78a1954216bd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetCancelRoutine
+ms.keywords : wdm/IoSetCancelRoutine, k104_a9ac44bc-fe8a-4392-b9f8-d9a90a03fbc0.xml, IoSetCancelRoutine routine [Kernel-Mode Driver Architecture], IoSetCancelRoutine, kernel.iosetcancelroutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetCancelRoutine
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrpCancelField, StartIoCancel
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -57,7 +61,6 @@ Pointer to the IRP being put into or removed from a cancelable state.
 `CancelRoutine`
 
 Specifies the entry point of the caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">Cancel</a> routine to be called if the specified IRP is canceled or is <b>NULL</b> if the given IRP is being removed from the cancelable state. This routine is declared as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -102,14 +105,10 @@ Driver <i>Cancel</i> routines are called at IRQL = DISPATCH_LEVEL with the cance
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548196">IoAcquireCancelSpinLock</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549550">IoReleaseCancelSpinLock</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548196">IoAcquireCancelSpinLock</a>
+
  
 
  

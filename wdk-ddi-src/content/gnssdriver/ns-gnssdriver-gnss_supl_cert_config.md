@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : F974D5E2-7230-4F85-9C1A-7CE7E240DBE1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
+ms.keywords : GNSS_SUPL_CERT_CONFIG structure [Sensor Devices], gnssdriver/PGNSS_SUPL_CERT_CONFIG, sensors.gnss_supl_cert_config, *PGNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG, PGNSS_SUPL_CERT_CONFIG structure pointer [Sensor Devices], gnssdriver/GNSS_SUPL_CERT_CONFIG, PGNSS_SUPL_CERT_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_SUPL_CERT_CONFIG
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
 ---
 
@@ -53,14 +57,11 @@ typedef struct {
 
 ## Members
 
-        
-            `CertAction`
 
-            A <a href="..\gnssdriver\ne-gnssdriver-gnss_supl_cert_action.md">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.
+`CertAction`
 
-<table></table>
- 
-
+A <a href="..\gnssdriver\ne-gnssdriver-gnss_supl_cert_action.md">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.
+<table></table> 
 <table>
 <tr>
 <td>
@@ -93,18 +94,30 @@ Delete all the certificates injected to the GNSS driver previously. The values o
 </td>
 </tr>
 </table>
-        
-            `CertSize`
 
-            The size of the certificate in bytes.
-        
-            `Size`
+`CertData`
 
-            Structure size.
-        
-            `Version`
 
-            Version number.
+
+`CertSize`
+
+The size of the certificate in bytes.
+
+`Size`
+
+Structure size.
+
+`SuplCertName`
+
+
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3b96076f-a7f7-4705-bbee-595ee4d9f789
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InterlockedCompareExchangePointer
+ms.keywords : InterlockedCompareExchangePointer routine [Kernel-Mode Driver Architecture], kernel.interlockedcompareexchangepointer, wdm/InterlockedCompareExchangePointer, k102_ffaadb46-ece2-40fb-9e87-1c7ea3af275e.xml, InterlockedCompareExchangePointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InterlockedCompareExchangePointer
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -61,7 +65,7 @@ Specifies the PVOID value to set (*<i>Destination</i>) to.
 
 `Comperand`
 
-
+TBD
 
 
 ## Return Value
@@ -94,17 +98,12 @@ Interlocked operations cannot be used on non-cached memory.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-interlockedcompareexchange.md">InterlockedCompareExchange</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-interlockedexchangepointer.md">InterlockedExchangePointer</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
+
  
 
  

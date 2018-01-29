@@ -7,8 +7,8 @@ old-location : print\ipartfont_setfontcontent.htm
 old-project : print
 ms.assetid : bd77d32f-97fd-4f80-945d-9fff7553fcc5
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPartFont, IPartFont::SetFontContent, SetFontContent
+ms.date : 1/18/2018
+ms.keywords : print.ipartfont_setfontcontent, filterpipeline_1639cc2b-b1b6-4fa3-997b-3c98e32d2783.xml, SetFontContent method [Print Devices], IPartFont, IPartFont::SetFontContent, filterpipeline/IPartFont::SetFontContent, SetFontContent, IPartFont interface [Print Devices], SetFontContent method, SetFontContent method [Print Devices], IPartFont interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPartFont.SetFontContent
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

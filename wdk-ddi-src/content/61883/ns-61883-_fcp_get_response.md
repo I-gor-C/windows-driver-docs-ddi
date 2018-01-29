@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 1CE962A4-7F99-4F81-8B85-265A4225B88A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FCP_GET_RESPONSE, FCP_RESPONSE, *PFCP_RESPONSE, *PFCP_GET_RESPONSE, FCP_GET_RESPONSE
+ms.keywords : FCP_GET_RESPONSE, PFCP_GET_RESPONSE structure pointer [Buses], FCP_GET_RESPONSE structure [Buses], 61883/FCP_GET_RESPONSE, FCP_RESPONSE, PFCP_GET_RESPONSE, *PFCP_GET_RESPONSE, *PFCP_RESPONSE, IEEE.fcp_get_response, _FCP_GET_RESPONSE, 61883/PFCP_GET_RESPONSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FCP_GET_RESPONSE
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : FCP_RESPONSE, *PFCP_RESPONSE, *PFCP_GET_RESPONSE, FCP_GET_RESPONSE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFCP_GET_RESPONSE, FCP_GET_RESPONSE, *PFCP_RESPONSE, FCP_RESPONSE"
 ---
 
 # _FCP_GET_RESPONSE structure
@@ -48,25 +52,25 @@ typedef struct _FCP_GET_RESPONSE {
 
 ## Members
 
-        
-            `Frame`
 
-            On input a pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff537113">FCP_FRAME</a> structure to receive the FCP response.
+`Frame`
+
+On input a pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff537113">FCP_FRAME</a> structure to receive the FCP response.
 
 The FCP frame written to the caller-allocated FCP_FRAME structure by the protocol driver.
-        
-            `Length`
 
-            On input, the maximum available length, in bytes, of the frame payload, including FCP header. 
+`Length`
+
+On input, the maximum available length, in bytes, of the frame payload, including FCP header. 
 
 On completion, this field will contain the actual length of the response in bytes.
-        
-            `NodeAddress`
 
-            On output, if the protocol driver is being used to control a virtual device, the protocol driver supplies the node address of the device that sent the response obtained with this <b>Av61883_GetFcpResponse</b> IRP. If the protocol driver is being used to control a physical device, <b>NodeAddress</b> is not used.
+`NodeAddress`
 
-    ## Remarks
-        If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
+On output, if the protocol driver is being used to control a virtual device, the protocol driver supplies the node address of the device that sent the response obtained with this <b>Av61883_GetFcpResponse</b> IRP. If the protocol driver is being used to control a physical device, <b>NodeAddress</b> is not used.
+
+## Remarks
+If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If the request is queued, the protocol driver sets a status of STATUS_PENDING. If the request has been previously canceled, the driver sets a status of STATUS_CANCELLED.
 
@@ -80,13 +84,10 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

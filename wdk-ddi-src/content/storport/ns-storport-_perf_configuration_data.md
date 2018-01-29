@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 47db8f0f-9f3b-44d9-8110-dc0b79d0e26a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA, PERF_CONFIGURATION_DATA
+ms.keywords : storport/PERF_CONFIGURATION_DATA, PPERF_CONFIGURATION_DATA structure pointer [Storage Devices], *PPERF_CONFIGURATION_DATA, _PERF_CONFIGURATION_DATA, storage.perf_configuration_data, PPERF_CONFIGURATION_DATA, PERF_CONFIGURATION_DATA, PERF_CONFIGURATION_DATA structure [Storage Devices], structs-storport_3ff35217-29b1-43ab-a6e4-72aeaf90e931.xml, storport/PPERF_CONFIGURATION_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PERF_CONFIGURATION_DATA
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PPERF_CONFIGURATION_DATA, PERF_CONFIGURATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA
 req.product : Windows 10 or later.
 ---
 
@@ -55,24 +59,23 @@ typedef struct _PERF_CONFIGURATION_DATA {
 
 ## Members
 
-        
-            `ConcurrentChannels`
 
-            The number of concurrent calls to the <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine that the miniport driver and the device  support. This member is only accessed when the STOR_PERF_CONCURRENT_CHANNELS flag has been set. Prior to Windows 8, miniports must not set this value.
-        
-            `DeviceNode`
+`ConcurrentChannels`
 
-            When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes this field to contain the NUMA node number in which the miniport driver's device resides.
-        
-            `FirstRedirectionMessageNumber`
+The number of concurrent calls to the <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine that the miniport driver and the device  support. This member is only accessed when the STOR_PERF_CONCURRENT_CHANNELS flag has been set. Prior to Windows 8, miniports must not set this value.
 
-            When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to begin with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.
-        
-            `Flags`
+`DeviceNode`
 
-            A bitwise-OR of supported flags. Currently, the following flags are supported:
+When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes this field to contain the NUMA node number in which the miniport driver's device resides.
+
+`FirstRedirectionMessageNumber`
+
+When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to begin with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.
+
+`Flags`
+
+A bitwise-OR of supported flags. Currently, the following flags are supported:
 	  
-
 <table>
 <tr>
 <th>Flag</th>
@@ -165,29 +168,29 @@ This flag is valid when <b>Version</b> is set to 5.
 </td>
 </tr>
 </table>
-        
-            `LastRedirectionMessageNumber`
 
-            When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to end with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.
-        
-            `MessageTargets`
+`LastRedirectionMessageNumber`
 
-            When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes the fields of in the structures of a <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> array. These structures correspond to the redirection messages that are currently in use. The array itself is zero-based, but <b>FirstRedirectionMessageNumber</b> is not required to be zero. The miniport allocates this array and sets <b>MessageTargets</b> to point to it. The miniport driver must allocate a <b>GROUP_AFFINITY</b> array large enough to hold all the returned affinity masks.
-        
-            `Reserved`
+When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to end with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.
 
-            Reserved for system use.
-        
-            `Size`
+`MessageTargets`
 
-            The size of the structure, set to <b>sizeof(PERF_CONFIGURATION_DATA)</b>.
-        
-            `Version`
+When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes the fields of in the structures of a <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> array. These structures correspond to the redirection messages that are currently in use. The array itself is zero-based, but <b>FirstRedirectionMessageNumber</b> is not required to be zero. The miniport allocates this array and sets <b>MessageTargets</b> to point to it. The miniport driver must allocate a <b>GROUP_AFFINITY</b> array large enough to hold all the returned affinity masks.
 
-            The version number of the structure. Set this member when querying and initializing optimizations.
+`Reserved`
 
-    ## Remarks
-        The current version of this structure is defined by <b>STOR_PERF_VERSION</b>. Setting <b>Version</b> to this value will allow <b>Flags</b> to specify all  supported optimizations.
+Reserved for system use.
+
+`Size`
+
+The size of the structure, set to <b>sizeof(PERF_CONFIGURATION_DATA)</b>.
+
+`Version`
+
+The version number of the structure. Set this member when querying and initializing optimizations.
+
+## Remarks
+The current version of this structure is defined by <b>STOR_PERF_VERSION</b>. Setting <b>Version</b> to this value will allow <b>Flags</b> to specify all  supported optimizations.
 
 The purpose of the STOR_PERF_DPC_REDIRECTION flag is to ensure that individual CPUs are not overwhelmed with DPC processing. When this flag is set, DPC processing is spread over multiple CPUs. If STOR_PERF_DPC_REDIRECTION_CURRENT_CPU is not set, StorPort will attempt to schedule I/O completion DPCs on the same CPU that originated the I/O.
 
@@ -203,13 +206,10 @@ For information about enabling message-signaled interrupts for a device, see <a 
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\nf-storport-storportinitializeperfopts.md">StorPortInitializePerfOpts</a>
-</dt>
-</dl>
+
  
 
  

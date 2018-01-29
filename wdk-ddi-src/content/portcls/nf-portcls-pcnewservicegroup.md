@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9fcc8cee-61a1-417c-9e69-5c658dab80b2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcNewServiceGroup
+ms.keywords : PcNewServiceGroup function [Audio Devices], audpc-routines_2164b9cd-1bb5-4e51-aa07-6ed9cb40e3fb.xml, audio.pcnewservicegroup, portcls/PcNewServiceGroup, PcNewServiceGroup
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcNewServic
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcNewServiceGroup
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -80,11 +84,8 @@ The <i>OutServiceGroup</i> and <i>OuterUnknown</i> parameters follow the <a href
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 52829c1e-31df-4a53-8cd1-5050e564aa2e
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpCreateNodeInt8
+ms.keywords : bth_funcs_445898ae-3a2a-49f7-bfff-30e8c0773227.xml, SdpCreateNodeInt8, SdpCreateNodeInt8 function [Bluetooth Devices], bltooth.sdpcreatenodeint8, sdplib/SdpCreateNodeInt8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpCreateNodeInt8
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -106,20 +110,14 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
-</dt>
-<dt>
 <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
-</dt>
-<dt>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
 <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
-</dt>
-<dt>
+
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

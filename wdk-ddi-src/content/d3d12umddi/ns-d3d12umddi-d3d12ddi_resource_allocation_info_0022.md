@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 71CDBF47-B32D-4084-B2F6-9F8C037FCB79
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_RESOURCE_ALLOCATION_INFO_0022, D3D12DDI_RESOURCE_ALLOCATION_INFO_0022
+ms.keywords : D3D12DDI_RESOURCE_ALLOCATION_INFO_0022 structure [Display Devices], display.d3d12ddi_resource_allocation_info_0022, d3d12umddi/D3D12DDI_RESOURCE_ALLOCATION_INFO_0022, D3D12DDI_RESOURCE_ALLOCATION_INFO_0022
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_RESOURCE_ALLOCATION_INFO_0022
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_RESOURCE_ALLOCATION_INFO_0022
 ---
 
@@ -54,38 +58,42 @@ typedef struct D3D12DDI_RESOURCE_ALLOCATION_INFO_0022 {
 
 ## Members
 
-        
-            `AdditionalDataAlignment`
 
-            The additional data alignment.
-        
-            `AdditionalDataHeaderAlignment`
+`AdditionalDataAlignment`
 
-            The data alignment of the additional header.
-        
-            `AdditionalDataSize`
+The additional data alignment.
 
-            The additional data size.
-        
-            `Layout`
+`AdditionalDataHeaderAlignment`
 
-            The texture layout as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_texture_layout.md">D3D12DDI_TEXTURE_LAYOUT</a> value.
-        
-            `MipLevelSwizzleTransition`
+The data alignment of the additional header.
 
-            The MIP level for a swizzle transition.
-        
-            `PlaneSliceSwizzleTransition`
+`AdditionalDataHeaderSize`
 
-            The plane slice for a swizzle transition.
-        
-            `ResourceDataAlignment`
 
-            The data alignment of the resource.
-        
-            `ResourceDataSize`
 
-            The data size of  the resource.
+`AdditionalDataSize`
+
+The additional data size.
+
+`Layout`
+
+The texture layout as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_texture_layout.md">D3D12DDI_TEXTURE_LAYOUT</a> value.
+
+`MipLevelSwizzleTransition`
+
+The MIP level for a swizzle transition.
+
+`PlaneSliceSwizzleTransition`
+
+The plane slice for a swizzle transition.
+
+`ResourceDataAlignment`
+
+The data alignment of the resource.
+
+`ResourceDataSize`
+
+The data size of  the resource.
 
 
 ## Requirements
@@ -96,13 +104,10 @@ typedef struct D3D12DDI_RESOURCE_ALLOCATION_INFO_0022 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_texture_layout.md">D3D12DDI_TEXTURE_LAYOUT</a>
-</dt>
-</dl>
+
  
 
  

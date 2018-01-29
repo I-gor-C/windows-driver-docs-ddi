@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8C3C1A62-A838-436E-B8CC-ACE70FEAE8EA
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_COMPLETION_INFORMATION, *PFILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION
+ms.keywords : FILE_COMPLETION_INFORMATION structure [Installable File System Drivers], ifsk.file_completion_information, PFILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION, ntifs/FILE_COMPLETION_INFORMATION, _FILE_COMPLETION_INFORMATION, *PFILE_COMPLETION_INFORMATION, ntifs/PFILE_COMPLETION_INFORMATION, PFILE_COMPLETION_INFORMATION structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_COMPLETION_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PFILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _FILE_COMPLETION_INFORMATION {
 
 ## Members
 
-        
-            `Key`
 
-            An custom defined value which is included in every I/O completion packet for <b>Port</b>.
-        
-            `Port`
+`Key`
 
-            The handle to the completion port created for an associated file handle.
+An custom defined value which is included in every I/O completion packet for <b>Port</b>.
 
-    ## Remarks
-        The <b>FILE_COMPLETION_INFORMATION</b> structure is used to replace the completion information for a port handle set in <b>Port</b>. Completion information is replaced with the <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a> routine with the <i>FileInformationClass</i> parameter set to <b>FileReplaceCompletionInformation</b>.   The <b>Port</b> and <b>Key</b> members of <b>FILE_COMPLETION_INFORMATION</b> are set to their new values. To remove an existing completion port for a file handle, <b>Port</b> is set to NULL.
+`Port`
+
+The handle to the completion port created for an associated file handle.
+
+## Remarks
+The <b>FILE_COMPLETION_INFORMATION</b> structure is used to replace the completion information for a port handle set in <b>Port</b>. Completion information is replaced with the <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a> routine with the <i>FileInformationClass</i> parameter set to <b>FileReplaceCompletionInformation</b>.   The <b>Port</b> and <b>Key</b> members of <b>FILE_COMPLETION_INFORMATION</b> are set to their new values. To remove an existing completion port for a file handle, <b>Port</b> is set to NULL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _FILE_COMPLETION_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-</dt>
-</dl>
+
  
 
  

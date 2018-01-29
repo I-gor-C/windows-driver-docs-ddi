@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c46aee6e-f31d-4b8d-8244-3c364aa79ae4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendRNIDV2
+ms.keywords : fibreHBA_rtns_8e5796fe-6cfa-42e8-9855-9ab89752bfec.xml, hbaapi/HBA_SendRNIDV2, HBA_SendRNIDV2 routine [Storage Devices], HBA_SendRNIDV2, storage.hba_sendrnidv2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SendRNIDV2
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -56,19 +60,19 @@ HBA_STATUS HBA_API HBA_SendRNIDV2(
 
 `Handle`
 
-
+TBD
 
 `HbaPortWWN`
 
-
+TBD
 
 `DestWWN`
 
-
+TBD
 
 `DestFCID`
 
-
+TBD
 
 `NodeIdDataFormat`
 
@@ -80,7 +84,7 @@ Pointer to a buffer that contains the payload data, in big-endian (wire) format,
 
 `pRspBufferSize`
 
-
+TBD
 
 
 ## Return Value
@@ -107,17 +111,12 @@ The <b>HBA_SendRNIDV2</b> library routine serves a purpose very similar to the <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

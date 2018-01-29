@@ -7,8 +7,8 @@ old-location : netvista\riluicccardinfo.htm
 old-project : netvista
 ms.assetid : 761f1ab6-75e6-4c40-b79c-01f2e92df495
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCCARDINFO, *LPRILUICCCARDINFO, RILUICCCARDINFO
+ms.date : 1/18/2018
+ms.keywords : RILUICCCARDINFO, ntddrilapitypes/RILUICCCARDINFO, netvista.riluicccardinfo, RILUICCCARDINFO structure [Network Drivers Starting with Windows Vista], *LPRILUICCCARDINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCCARDINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILUICCCARDINFO, RILUICCCARDINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILUICCCARDINFO, *LPRILUICCCARDINFO
 ---
 
 # RILUICCCARDINFO structure
@@ -51,30 +55,30 @@ typedef struct _RILUICCCARDINFO {
 
 ## Members
 
-        
-            `AppInfo`
 
-            
-        
-            `cbSize`
+`AppInfo`
 
-            
-        
-            `dwNumApps`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `fIsVirtualCard`
+`cbSize`
 
-            
-        
-            `IccId`
 
-            
+
+`dwNumApps`
+
+
+
+`dwParams`
+
+
+
+`fIsVirtualCard`
+
+
+
+`IccId`
+
+
 
 
 ## Requirements

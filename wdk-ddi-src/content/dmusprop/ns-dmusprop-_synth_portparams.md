@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 94c953ae-519b-4659-a4c9-a97db7dc31e9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS
+ms.keywords : aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS structure [Audio Devices], audio.synth_portparams, SYNTH_PORTPARAMS, _SYNTH_PORTPARAMS, dmusprop/PSYNTH_PORTPARAMS, dmusprop/SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYNTH_PORTPARAMS
-req.alt-loc : dmusprop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS"
 ---
 
@@ -52,37 +56,41 @@ typedef struct _SYNTH_PORTPARAMS {
 
 ## Members
 
-        
-            `AudioChannels`
 
-            Specifies the number of audio channels.
-        
-            `ChannelGroups`
+`AudioChannels`
 
-            Specifies the number of channel groups requested for this port. Each channel group contains 16 channels.
-        
-            `EffectsFlags`
+Specifies the number of audio channels.
 
-            Specifies the type of effects produced for audio output from this port. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:
-        
-            `SampleRate`
+`ChannelGroups`
 
-            Specifies the number of samples per second for the audio data produced by the port.
-        
-            `Share`
+Specifies the number of channel groups requested for this port. Each channel group contains 16 channels.
 
-            Specifies whether the port's channel groups are shared. When this member is <b>TRUE</b>, all ports use the channel groups assigned to this port. When this member is <b>FALSE</b>, the port is opened in exclusive mode and the use of the same channel groups by other ports is not allowed.
-        
-            `ValidParams`
+`EffectsFlags`
 
-            Specifies which of the SYNTH_PORTPARAMS structure members contain valid data. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:
-        
-            `Voices`
+Specifies the type of effects produced for audio output from this port. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:
 
-            Specifies the maximum number of simultaneous voices that the application wishes to play on this port.
 
-    ## Remarks
-        A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> get-property request uses the SYNTH_PORTPARAMS structure for both its property descriptor and its property value.
+
+If no effects are enabled, this member is set to SYNTH_EFFECT_NONE, which is zero.
+
+`SampleRate`
+
+Specifies the number of samples per second for the audio data produced by the port.
+
+`Share`
+
+Specifies whether the port's channel groups are shared. When this member is <b>TRUE</b>, all ports use the channel groups assigned to this port. When this member is <b>FALSE</b>, the port is opened in exclusive mode and the use of the same channel groups by other ports is not allowed.
+
+`ValidParams`
+
+Specifies which of the SYNTH_PORTPARAMS structure members contain valid data. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:
+
+`Voices`
+
+Specifies the maximum number of simultaneous voices that the application wishes to play on this port.
+
+## Remarks
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> get-property request uses the SYNTH_PORTPARAMS structure for both its property descriptor and its property value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,13 +100,10 @@ typedef struct _SYNTH_PORTPARAMS {
 | **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : D1703D6F-A453-4E3E-8705-344469D61412
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SET_BAND_SECURITY_PARAMETERS, *PSET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS
+ms.keywords : SET_BAND_SECURITY_PARAMETERS structure [Storage Devices], SETBANDSEC_AUTHKEY_CACHING_ENABLED, PSET_BAND_SECURITY_PARAMETERS, ehstorbandmgmt/SET_BAND_SECURITY_PARAMETERS, *PSET_BAND_SECURITY_PARAMETERS, ehstorbandmgmt/PSET_BAND_SECURITY_PARAMETERS, storage.set_band_security_parameters, PSET_BAND_SECURITY_PARAMETERS structure pointer [Storage Devices], _SET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SET_BAND_SECURITY_PARAMETERS
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS"
 ---
 
@@ -52,23 +56,22 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 
 ## Members
 
-        
-            `BandId`
 
-            The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
-        
-            `BandSecurityInfoOffset`
+`BandId`
 
-            The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_security_info.md">BAND_SECURITY_INFO</a> structure. The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>.
-        
-            `BandStart`
+The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
 
-            The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
-        
-            `CurrentAuthKeyOffset`
+`BandSecurityInfoOffset`
 
-            The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the current authentication key for the band. This authentication key is required and must be present following this structure. The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_security_info.md">BAND_SECURITY_INFO</a> structure. The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>.
 
+`BandStart`
+
+The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
+
+`CurrentAuthKeyOffset`
+
+The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the current authentication key for the band. This authentication key is required and must be present following this structure. The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -83,22 +86,32 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 </td>
 </tr>
 </table></span></div>
-        
-            `Flags`
 
-            Security parameter flags. This value is a bitwise OR combination of the following.
+To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>.
 
+`Flags`
+
+Security parameter flags. This value is a bitwise OR combination of the following.
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `NewAuthKeyOffset`
+<td width="40%"><a id="SETBANDSEC_AUTHKEY_CACHING_ENABLED"></a><a id="setbandsec_authkey_caching_enabled"></a><dl>
+<dt><b>SETBANDSEC_AUTHKEY_CACHING_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The new authentication key can be cached to automate some band operations.
 
-            The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the new authentication key for the band.  The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+</td>
+</tr>
+</table>
 
+`NewAuthKeyOffset`
+
+The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the new authentication key for the band.  The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -113,13 +126,19 @@ typedef struct _SET_BAND_SECURITY_PARAMETERS {
 </td>
 </tr>
 </table></span></div>
-        
-            `StructSize`
 
-            The size of this structure in bytes. Set to <b>sizeof</b>(SET_BAND_SECURITY_PARAMETERS).
+To assign a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>. If <b>NewAuthKeyOffset</b> == <b>CurrentAuthKeyOffset</b>, the authentication key for the band is left unchanged.
 
-    ## Remarks
-        Precedence is given to <b>BandID</b> for band selection.  If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_security.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY</a>.
+`Reserved`
+
+
+
+`StructSize`
+
+The size of this structure in bytes. Set to <b>sizeof</b>(SET_BAND_SECURITY_PARAMETERS).
+
+## Remarks
+Precedence is given to <b>BandID</b> for band selection.  If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_security.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY</a>.
 
 If <b>BandID</b> and <b>BandStart</b> are both set to –1,  then the <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_security.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY</a> request will change the properties of the global band.
 
@@ -135,19 +154,14 @@ The <b>CryptoAlgoIdType</b> and <b>CryptoAlgoOidString</b> members of the <a hre
 | **Minimum UMDF version** |  |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
-</dt>
-<dt>
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>
-</dt>
-</dl>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
+
  
 
  

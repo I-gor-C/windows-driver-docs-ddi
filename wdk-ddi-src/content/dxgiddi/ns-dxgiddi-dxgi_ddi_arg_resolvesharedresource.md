@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : adc4bd3a-fbff-4a63-b818-b778762956ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_RESOLVESHAREDRESOURCE, DXGI_DDI_ARG_RESOLVESHAREDRESOURCE
+ms.keywords : display.dxgi_ddi_arg_resolvesharedresource, UMDisplayDriver_Dx10param_Structs_16bbb236-75b5-4d2c-a6ca-b61010d5e08d.xml, DXGI_DDI_ARG_RESOLVESHAREDRESOURCE, DXGI_DDI_ARG_RESOLVESHAREDRESOURCE structure [Display Devices], dxgiddi/DXGI_DDI_ARG_RESOLVESHAREDRESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXGI_DDI_ARG_RESOLVESHAREDRESOURCE is supported begi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_ARG_RESOLVESHAREDRESOURCE
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_ARG_RESOLVESHAREDRESOURCE
 ---
 
@@ -47,14 +51,14 @@ typedef struct DXGI_DDI_ARG_RESOLVESHAREDRESOURCE {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the display device (graphics context) that is associated with the shared surface or GDI interoperable surface. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
-        
-            `hResource`
+`hDevice`
 
-            [in] A handle to the surface that the driver uses as a shared surface or in GDI interoperability.
+[in] A handle to the display device (graphics context) that is associated with the shared surface or GDI interoperable surface. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function to create the display device.
+
+`hResource`
+
+[in] A handle to the surface that the driver uses as a shared surface or in GDI interoperability.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct DXGI_DDI_ARG_RESOLVESHAREDRESOURCE {
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a>
-</dt>
-</dl>
+
  
 
  

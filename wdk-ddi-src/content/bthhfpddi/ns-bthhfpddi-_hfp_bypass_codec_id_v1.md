@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : FB618271-A1E9-4F47-97DC-F4ACAA01028C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.keywords : HFP_BYPASS_CODEC_ID_V1 structure [Audio Devices], *PHFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1, bthhfpddi/PHFP_BYPASS_CODEC_ID_V1, _HFP_BYPASS_CODEC_ID_V1, bthhfpddi/HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1 structure pointer [Audio Devices], audio.hfp_bypass_codec_id_v1, HFP_BYPASS_CODEC_ID_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HFP_BYPASS_CODEC_ID_V1
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1"
 ---
 
@@ -46,11 +50,10 @@ typedef struct _HFP_BYPASS_CODEC_ID_V1 {
 
 ## Members
 
-        
-            `CodecId`
 
-            The codec ID can be any of the values in the following table.
+`CodecId`
 
+The codec ID can be any of the values in the following table.
 <table>
 <tr>
 <th>Value</th>
@@ -79,16 +82,12 @@ typedef struct _HFP_BYPASS_CODEC_ID_V1 {
 | **Minimum UMDF version** |  |
 | **Header** | bthhfpddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthhfpddi\ne-bthhfpddi-_hfp_bypass_codec_id_version.md">HFP_BYPASS_CODEC_ID_VERSION</a>
-</dt>
-<dt>
+
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_codec_id.md">IOCTL_BTHHFP_DEVICE_GET_CODEC_ID</a>
-</dt>
-</dl>
+
  
 
  

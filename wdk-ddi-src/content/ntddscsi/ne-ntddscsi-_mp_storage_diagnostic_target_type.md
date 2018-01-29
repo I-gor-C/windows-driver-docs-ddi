@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1A48FC0F-7ED2-4F9F-8B61-A498B0D13FE8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+ms.keywords : ntddscsi/StorageDiagnosticTargetTypeHbaFirmware, ntddscsi/MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddscsi/StorageDiagnosticTargetTypeMiniport, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypeUndefined, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddscsi/StorageDiagnosticTargetTypeUndefined, ntddscsi/StorageDiagnosticTargetTypePort, StorageDiagnosticTargetTypeHbaFirmware, StorageDiagnosticTargetTypeMax, ntddscsi/StorageDiagnosticTargetTypeMax, _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, storage.mp_storage_diagnostic_target_type, StorageDiagnosticTargetTypePort, ntddscsi/PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration pointer [Storage Devices], StorageDiagnosticTargetTypeMiniport, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE Enumeration
@@ -51,6 +55,26 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE {
 ## Constants
 
 <table>
+
+<tr>
+<td>MpStorageDiagnosticTargetTypeHbaFirmware</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MpStorageDiagnosticTargetTypeMax</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MpStorageDiagnosticTargetTypeMiniport</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MpStorageDiagnosticTargetTypeUndefined</td>
+<td></td>
+</tr>
 </table>
 
 

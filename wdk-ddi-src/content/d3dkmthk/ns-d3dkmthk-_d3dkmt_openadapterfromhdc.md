@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : db425b8c-4abd-4998-89bb-f6d9f066a3f6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OPENADAPTERFROMHDC, D3DKMT_OPENADAPTERFROMHDC
+ms.keywords : D3DKMT_OPENADAPTERFROMHDC, D3DKMT_OPENADAPTERFROMHDC structure [Display Devices], d3dkmthk/D3DKMT_OPENADAPTERFROMHDC, _D3DKMT_OPENADAPTERFROMHDC, OpenGL_Structs_a4c2aa1b-b17c-4e81-a0d2-9776cec61112.xml, display.d3dkmt_openadapterfromhdc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OPENADAPTERFROMHDC
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OPENADAPTERFROMHDC
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMT_OPENADAPTERFROMHDC {
 
 ## Members
 
-        
-            `AdapterLuid`
 
-            [out] The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) of the graphics adapter for the HDC that <b>hDc</b> specifies. The LUID is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> call.
-        
-            `hAdapter`
+`AdapterLuid`
 
-            [out] A handle to the graphics adapter for the HDC that <b>hDc</b> specifies. The adapter handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> function.
-        
-            `hDc`
+[out] The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) of the graphics adapter for the HDC that <b>hDc</b> specifies. The LUID is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> call.
 
-            [in] The HDC for the graphics adapter and monitor output that are retrieved.
-        
-            `VidPnSourceId`
+`hAdapter`
 
-            [out] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the HDC that <b>hDc</b> specifies. The identification number is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> call.
+[out] A handle to the graphics adapter for the HDC that <b>hDc</b> specifies. The adapter handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> function.
+
+`hDc`
+
+[in] The HDC for the graphics adapter and monitor output that are retrieved.
+
+`VidPnSourceId`
+
+[out] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the HDC that <b>hDc</b> specifies. The identification number is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> call.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _D3DKMT_OPENADAPTERFROMHDC {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a>
-</dt>
-</dl>
+
  
 
  

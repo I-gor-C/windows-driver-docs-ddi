@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9f092940-b8be-4d28-b82c-d169abefe5d9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BOOT_AREA_INFO, BOOT_AREA_INFO, *PBOOT_AREA_INFO
+ms.keywords : ifsk.boot_area_info, ntifs/BOOT_AREA_INFO, PBOOT_AREA_INFO, _BOOT_AREA_INFO, BOOT_AREA_INFO structure [Installable File System Drivers], BOOT_AREA_INFO, ntifs/PBOOT_AREA_INFO, PBOOT_AREA_INFO structure pointer [Installable File System Drivers], *PBOOT_AREA_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows Server 2008 R2, Windows 7
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BOOT_AREA_INFO
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BOOT_AREA_INFO, *PBOOT_AREA_INFO
 ---
 
@@ -49,14 +53,14 @@ typedef struct _BOOT_AREA_INFO {
 
 ## Members
 
-        
-            `BootSectorCount`
 
-            The number of elements in the <b>BootSectors</b> array.
-        
-            `BootSectors`
+`BootSectorCount`
 
-            A variable length array of structures. Each structure contains an <b>Offset</b> member.
+The number of elements in the <b>BootSectors</b> array.
+
+`BootSectors`
+
+A variable length array of structures. Each structure contains an <b>Offset</b> member.
 
 
 ## Requirements
@@ -67,13 +71,10 @@ typedef struct _BOOT_AREA_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff728858">FSCTL_GET_BOOT_AREA_INFO</a>
-</dt>
-</dl>
+
  
 
  

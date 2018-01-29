@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0ba40b4e-2e1d-45fa-9222-e162a39eea33
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_RELEASEKEYEDMUTEX, D3DKMT_RELEASEKEYEDMUTEX
+ms.keywords : display.d3dkmt_releasekeyedmutex, D3DKMT_RELEASEKEYEDMUTEX, _D3DKMT_RELEASEKEYEDMUTEX, d3dkmthk/D3DKMT_RELEASEKEYEDMUTEX, OpenGL_Structs_6f167c25-afb8-4ddc-9441-be713bba78f4.xml, D3DKMT_RELEASEKEYEDMUTEX structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_RELEASEKEYEDMUTEX is supported beginning with
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_RELEASEKEYEDMUTEX
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_RELEASEKEYEDMUTEX
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX {
 
 ## Members
 
-        
-            `FenceValue`
 
-            [in] A 64-bit value that specifies the current fence value of the GPU synchronization object.
-        
-            `hKeyedMutex`
+`FenceValue`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to release.
-        
-            `Key`
+[in] A 64-bit value that specifies the current fence value of the GPU synchronization object.
 
-            [in] A 64-bit value that specifies the key value to release the mutex to.
+`hKeyedMutex`
+
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to release.
+
+`Key`
+
+[in] A 64-bit value that specifies the key value to release the mutex to.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex.md">D3DKMTReleaseKeyedMutex</a>
-</dt>
-</dl>
+
  
 
  

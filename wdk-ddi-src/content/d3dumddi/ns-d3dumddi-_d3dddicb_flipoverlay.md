@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 709583a5-5367-4187-a560-29b2c8eedbf4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_FLIPOVERLAY, D3DDDICB_FLIPOVERLAY
+ms.keywords : D3DDDICB_FLIPOVERLAY structure [Display Devices], D3D_param_Structs_cb3914df-9c6b-43f0-a8fa-a2f06f5b2abd.xml, _D3DDDICB_FLIPOVERLAY, display.d3dddicb_flipoverlay, D3DDDICB_FLIPOVERLAY, d3dumddi/D3DDDICB_FLIPOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_FLIPOVERLAY
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_FLIPOVERLAY
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DDDICB_FLIPOVERLAY {
 
 ## Members
 
-        
-            `hKernelOverlay`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlaycb.md">pfnCreateOverlayCb</a> function and that identifies the kernel-mode overlay object to be flipped.
-        
-            `hSource`
+`hKernelOverlay`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
-        
-            `pPrivateDriverData`
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlaycb.md">pfnCreateOverlayCb</a> function and that identifies the kernel-mode overlay object to be flipped.
 
-            [in] A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
-        
-            `PrivateDriverDataSize`
+`hSource`
 
-            [in] The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
+
+`pPrivateDriverData`
+
+[in] A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _D3DDDICB_FLIPOVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlaycb.md">pfnCreateOverlayCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flipoverlaycb.md">pfnFlipOverlayCb</a>
-</dt>
-</dl>
+
  
 
  

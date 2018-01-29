@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5873b627-6ef4-4e2c-8a53-921f37b729bc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlTimeFieldsToTime
+ms.keywords : k109_9b5d67de-92c3-4fb7-bcd7-4e045ae9ada4.xml, RtlTimeFieldsToTime routine [Kernel-Mode Driver Architecture], RtlTimeFieldsToTime, kernel.rtltimefieldstotime, wdm/RtlTimeFieldsToTime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlTimeFieldsToTime
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -53,7 +57,6 @@ BOOLEAN RtlTimeFieldsToTime(
 `TimeFields`
 
 Pointer to the following structure, containing the time information to be converted:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -103,20 +106,14 @@ Callers of <b>RtlTimeFieldsToTime</b> can be running at any IRQL if both input b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exlocaltimetosystemtime.md">ExLocalTimeToSystemTime</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-exlocaltimetosystemtime.md">ExLocalTimeToSystemTime</a>
+
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtltimetotimefields.md">RtlTimeToTimeFields</a>
-</dt>
-</dl>
+
  
 
  

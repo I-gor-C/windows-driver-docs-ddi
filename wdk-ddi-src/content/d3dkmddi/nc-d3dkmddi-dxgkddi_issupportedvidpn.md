@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 96e96366-6306-4d20-8752-e942f2ed4069
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiissupportedvidpn, DxgkDdiIsSupportedVidPn callback function [Display Devices], DxgkDdiIsSupportedVidPn, DXGKDDI_ISSUPPORTEDVIDPN, DXGKDDI_ISSUPPORTEDVIDPN, d3dkmddi/DxgkDdiIsSupportedVidPn, DmFunctions_222f2c38-00c6-466f-b653-3c9529f93849.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiIsSupportedVidPn
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,15 +68,45 @@ A handle to a context block associated with a display adapter. The display minip
 ## Return Value
 
 <i>DxgkDdiIsSupportedVidPn</i> returns one of the following values
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The topology of the VidPN is valid. The <b>IsVidPnSupported</b> structure member is set to either <b>TRUE</b> or <b>FALSE</b>.
+</dl>
+</td>
+<td width="60%">
+The topology of the VidPN is valid. The <b>IsVidPnSupported</b> structure member is set to either <b>TRUE</b> or <b>FALSE</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN_TOPOLOGY</b></dt>
-</dl>The topology of the VidPN implementation is invalid. The <b>IsVidPnSupported</b> structure member is set to <b>FALSE</b>.
+</dl>
+</td>
+<td width="60%">
+The topology of the VidPN implementation is invalid. The <b>IsVidPnSupported</b> structure member is set to <b>FALSE</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl>The function failed because it was unable to allocate memory.
+</dl>
+</td>
+<td width="60%">
+The function failed because it was unable to allocate memory.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,11 +130,8 @@ If pIsSupportedVidPnArg-&gt;hDesiredVidPn is zero, <i>DxgkDdiIsSupportedVidPn</i
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 8c7f378c-b4e6-4074-8b6a-571068b5ab80
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnGetProperties, OnGetProperties
+ms.keywords : ISensorDriver::OnGetProperties, OnGetProperties method [Sensor Devices], sensors.isensordriver_ongetproperties, ISensorDriver, OnGetProperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OnGetProperties
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -78,18 +82,22 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 Properties describe the sensor device, as opposed to data fields, which contain sensor-generated data. Platform-defined properties are defined in sensors.h.
 
 Applications can access some sensor property information before the user grants permission for the sensor. These items are limited to the following IDs defined in sensors.h:
-
+<ul>
+<li>
 Any <b>PROPERTYKEY</b> that starts with "SENSOR_PROPERTY_".
 
+</li>
+<li>
 Any category <b>GUID</b> that starts with "SENSOR_CATEGORY_".
 
-Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned in this collection must contain values for the required properties, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a> reference section.
+</li>
+</ul>Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned in this collection must contain values for the required properties, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a> reference section.
 
 The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.
 
 Sensor properties must not contain information that can be used to identify the user. For more information about user privacy, see <a href="https://msdn.microsoft.com/9defb163-4de6-46cc-b817-d3e6291137be">Privacy and Security in the Sensor and Location Platform</a>.
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> are documented in Windows Portable Devices.</p>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> are documented in Windows Portable Devices.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 635a4a47-11b8-4d78-871e-21ee438880df
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_CONTENT_DESC, DXVAHDDDI_CONTENT_DESC
+ms.keywords : display.dxvahdddi_content_desc, d3dumddi/DXVAHDDDI_CONTENT_DESC, DXVAHDDDI_CONTENT_DESC, DXVAHDDDI_CONTENT_DESC structure [Display Devices], _DXVAHDDDI_CONTENT_DESC, DXVA2_Structs_8b90044d-bce5-49b0-b6ff-be34ab09a62e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_CONTENT_DESC is supported beginning with t
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_CONTENT_DESC
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_CONTENT_DESC
 ---
 
@@ -52,37 +56,37 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
 
 ## Members
 
-        
-            `InputFrameFormat`
 
-            [in] A <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_frame_format.md">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input video stream.
-        
-            `InputFrameRate`
+`InputFrameFormat`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the input video stream.
-        
-            `InputHeight`
+[in] A <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_frame_format.md">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input video stream.
 
-            [in] The height, in pixels, of the input video stream.
-        
-            `InputWidth`
+`InputFrameRate`
 
-            [in] The width, in pixels, of the input video stream.
-        
-            `OutputFrameRate`
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the input video stream.
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the output.
-        
-            `OutputHeight`
+`InputHeight`
 
-            [in] The height, in pixels, of the output video stream.
-        
-            `OutputWidth`
+[in] The height, in pixels, of the input video stream.
 
-            [in] The width, in pixels, of the output video stream.
+`InputWidth`
 
-    ## Remarks
-        The driver can use the information in the members of DXVAHDDDI_CONTENT_DESC to optimize its capabilities. For example, the driver might not require to expose costly capabilities for high-definition content and the de-interlacing capability for progressive content.
+[in] The width, in pixels, of the input video stream.
+
+`OutputFrameRate`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the output.
+
+`OutputHeight`
+
+[in] The height, in pixels, of the output video stream.
+
+`OutputWidth`
+
+[in] The width, in pixels, of the output video stream.
+
+## Remarks
+The driver can use the information in the members of DXVAHDDDI_CONTENT_DESC to optimize its capabilities. For example, the driver might not require to expose costly capabilities for high-definition content and the de-interlacing capability for progressive content.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,16 +96,12 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_frame_format.md">DXVAHDDDI_FRAME_FORMAT</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_frame_format.md">DXVAHDDDI_FRAME_FORMAT</a>
+
  
 
  

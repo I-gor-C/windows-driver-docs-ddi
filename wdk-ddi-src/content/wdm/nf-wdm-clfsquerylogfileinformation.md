@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a907f219-9e4a-415f-821c-d419b7fde729
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsQueryLogFileInformation
+ms.keywords : ClfsQueryLogFileInformation routine [Kernel-Mode Driver Architecture], ClfsQueryLogFileInformation, wdm/ClfsQueryLogFileInformation, Clfs_ff89b511-dc33-4407-b967-170b82cb70c3.xml, kernel.clfsquerylogfileinformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsQueryLogFileInformation
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,16 +66,15 @@ A value from the <a href="..\wdm\ne-wdm-_cls_log_information_class.md">CLFS_LOG_
 
 `pinfoInputBuffer`
 
-
+TBD
 
 `cbinfoInputBuffer`
 
-
+TBD
 
 `pinfoBuffer`
 
 A pointer to a buffer that receives the log information. The structure of this buffer depends on the value of <i>eInformationClass</i>. The following table shows the relationship between the information class and the data type of the buffer.
-
 <table>
 <tr>
 <th>Value of <i>eInformationClass</i></th>
@@ -141,7 +144,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 
 `pcbInfoBuffer`
 
-
+TBD
 
 
 ## Return Value
@@ -166,11 +169,8 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-clfssetlogfileinformation.md">ClfsSetLogFileInformation</a>
-</dt>
-</dl>
+
  
 
  

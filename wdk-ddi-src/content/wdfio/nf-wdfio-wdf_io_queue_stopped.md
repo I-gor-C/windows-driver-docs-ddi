@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8257c636-824d-4909-b0cb-76d72ac980fa
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_STOPPED
+ms.keywords : DFQueueObjectRef_55457efd-0074-4be5-b078-bb223963bfca.xml, wdfio/WDF_IO_QUEUE_STOPPED, kmdf.wdf_io_queue_stopped, WDF_IO_QUEUE_STOPPED function, WDF_IO_QUEUE_STOPPED, wdf.wdf_io_queue_stopped
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_IO_QUEUE_STOPPED
-req.alt-loc : None,None.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : None
 req.dll : 
 req.irql : Any IRQL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -68,8 +72,6 @@ Your driver can call <b>WDF_IO_QUEUE_STOPPED</b> after it has called <a href="..
 
 For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
 
-The following code example is a routine that returns <b>TRUE</b> if a specified I/O queue is stopped.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -84,20 +86,14 @@ The following code example is a routine that returns <b>TRUE</b> if a specified 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_drained.md">WDF_IO_QUEUE_DRAINED</a>
-</dt>
-<dt>
+
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
-</dt>
-<dt>
+
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>
-</dt>
-<dt>
+
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 991208ee-d245-41d1-a5e6-0e79368e37a8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_TVAUDIO_CAPS_S, KSPROPERTY_TVAUDIO_CAPS_S, *PKSPROPERTY_TVAUDIO_CAPS_S
+ms.keywords : "*PKSPROPERTY_TVAUDIO_CAPS_S, PKSPROPERTY_TVAUDIO_CAPS_S, ksmedia/PKSPROPERTY_TVAUDIO_CAPS_S, vidcapstruct_dd4243d2-9778-4dae-99e2-0d32a73ab0d4.xml, ksmedia/KSPROPERTY_TVAUDIO_CAPS_S, stream.ksproperty_tvaudio_caps_s, PKSPROPERTY_TVAUDIO_CAPS_S structure pointer [Streaming Media Devices], KSPROPERTY_TVAUDIO_CAPS_S, KSPROPERTY_TVAUDIO_CAPS_S structure [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_TVAUDIO_CAPS_S
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSPROPERTY_TVAUDIO_CAPS_S, *PKSPROPERTY_TVAUDIO_CAPS_S
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSPROPERTY_TVAUDIO_CAPS_S, KSPROPERTY_TVAUDIO_CAPS_S"
 ---
 
 # KSPROPERTY_TVAUDIO_CAPS_S structure
@@ -49,11 +53,10 @@ typedef struct {
 
 ## Members
 
-        
-            `Capabilities`
 
-            Specifies the capabilities of the TV audio device. The minidriver returns the capabilities of the TV audio device by setting this member to one or more (logically ORed) values that are defined in <i>ksmedia.h</i>:
+`Capabilities`
 
+Specifies the capabilities of the TV audio device. The minidriver returns the capabilities of the TV audio device by setting this member to one or more (logically ORed) values that are defined in <i>ksmedia.h</i>:
 <table>
 <tr>
 <th>Flag</th>
@@ -110,18 +113,18 @@ Indicates the device supports a third language.
 </td>
 </tr>
 </table>
-        
-            `InputMedium`
 
-            Reserved for system use.
-        
-            `OutputMedium`
+`InputMedium`
 
-            Reserved for system use.
-        
-            `Property`
+Reserved for system use.
 
-            Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+`OutputMedium`
+
+Reserved for system use.
+
+`Property`
+
+Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 
 ## Requirements
@@ -132,19 +135,14 @@ Indicates the device supports a third language.
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567811">PROPSETID_VIDCAP_TVAUDIO</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565933">KSPROPERTY_TVAUDIO_CAPS</a>
-</dt>
-</dl>
+
  
 
  

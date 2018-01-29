@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : af5f4a1b-232c-4192-96b4-8fa31dfe3019
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_monitor_interface_pfnreleasemonitorsourcemodeset, pfnReleaseMonitorSourceModeSet callback function [Display Devices], pfnReleaseMonitorSourceModeSet, DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET, DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET, d3dkmddi/pfnReleaseMonitorSourceModeSet, VidPnFunctions_5f8e1fd8-b807-4da2-901e-0284e21d858e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnReleaseMonitorSourceModeSet
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,17 +68,45 @@ NTSTATUS DxgkddiMonitorReleasemonitorsourcemodeset(
 ## Return Value
 
 The <b>pfnReleaseMonitorSourceModeSet</b> function returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_DISPLAY_ADAPTER</b></dt>
-</dl>The handle supplied in <i>hAdapter</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hAdapter</i> was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_MONITOR_SOURCEMODESET</b></dt>
-</dl>The handle supplied in <i>hMonitorSourceModeSet</i> was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hMonitorSourceModeSet</i> was invalid.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other error codes that are defined in <i>Ntstatus.h</i>.
 
@@ -98,11 +130,8 @@ This function is also available in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_mo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitor_interface_v2.md">DXGK_MONITOR_INTERFACE_V2</a>
-</dt>
-</dl>
+
  
 
  

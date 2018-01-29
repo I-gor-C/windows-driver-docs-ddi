@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 3a0a8fa3-2d23-412c-ad54-d8ba5809cbe4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : hid.ioctl_get_num_device_input_buffers, IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS control code [Human Input Devices], IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS, hidclass/IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS, hidioreq_4d76e323-5cc1-40d2-aa56-ca5427f15e6f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -63,12 +67,17 @@ The size of the buffer is <b>sizeof</b>(ULONG).
 <text></text>
 
 ### Status Block
-I/O Status block
 The HID class driver sets the following fields of <b>Irp-&gt;IoStatus</b>:
-
+<ul>
+<li>
 <b>Information</b> is set to <b>sizeof</b>(ULONG) if the size of the report input queue is successfully retrieved. 
 
+</li>
+<li>
 <b>Status</b> is set to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
+
+</li>
+</ul>
 
 
 ## Requirements
@@ -78,13 +87,10 @@ The HID class driver sets the following fields of <b>Irp-&gt;IoStatus</b>:
 | **Header** | hidclass.h (include Hidclass.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidsdi\nf-hidsdi-hidd_setnuminputbuffers.md">HidD_SetNumInputBuffers</a>
-</dt>
-</dl>
+
  
 
  

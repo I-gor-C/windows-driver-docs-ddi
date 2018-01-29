@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1a4787da-2813-4a7a-820a-5c078175aba5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IRequestCallbackRequestCompletion, IRequestCallbackRequestCompletion::OnCompletion, OnCompletion
+ms.keywords : UMDFRequestObjectRef_b3ec1892-f32f-4c52-80f6-8699a358ea8d.xml, wudfddi/IRequestCallbackRequestCompletion::OnCompletion, IRequestCallbackRequestCompletion::OnCompletion, wdf.irequestcallbackrequestcompletion_oncompletion, umdf.irequestcallbackrequestcompletion_oncompletion, OnCompletion, IRequestCallbackRequestCompletion, IRequestCallbackRequestCompletion interface, OnCompletion method, OnCompletion method, OnCompletion method, IRequestCallbackRequestCompletion interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRequestCallbackRequestCompletion.OnCompletion
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -93,23 +97,16 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcom
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
+
  
 
  

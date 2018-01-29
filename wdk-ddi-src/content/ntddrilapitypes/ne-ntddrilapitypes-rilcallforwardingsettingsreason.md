@@ -7,8 +7,8 @@ old-location : netvista\rilcallforwardingsettingsreason.htm
 old-project : netvista
 ms.assetid : d1c39f60-15fb-450d-b879-fb5d236fcf45
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLFORWARDINGSETTINGSREASON, RILCALLFORWARDINGSETTINGSREASON
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILCALLFORWARDINGSETTINGSREASON, RIL_FWDREASON_MAX, RIL_FWDREASON_ALLFORWARDING, ntddrilapitypes/RIL_FWDREASON_ALLFORWARDING, ntddrilapitypes/RIL_FWDREASON_NOREPLY, RIL_FWDREASON_ALLCONDITIONAL, ntddrilapitypes/RIL_FWDREASON_ALLCONDITIONAL, ntddrilapitypes/RIL_FWDREASON_UNREACHABLE, ntddrilapitypes/RIL_FWDREASON_MAX, RIL_FWDREASON_NOREPLY, ntddrilapitypes/RIL_FWDREASON_MOBILEBUSY, RILCALLFORWARDINGSETTINGSREASON enumeration [Network Drivers Starting with Windows Vista], netvista.rilcallforwardingsettingsreason, RIL_FWDREASON_UNREACHABLE, RILCALLFORWARDINGSETTINGSREASON, RIL_FWDREASON_MOBILEBUSY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLFORWARDINGSETTINGSREASON
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLFORWARDINGSETTINGSREASON
 ---
 
@@ -75,6 +79,11 @@ typedef enum _RILCALLFORWARDINGSETTINGSREASON {
 
 <tr>
 <td>RIL_FWDREASON_NOREPLY</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_FWDREASON_UNCONDITIONAL</td>
 <td></td>
 </tr>
 

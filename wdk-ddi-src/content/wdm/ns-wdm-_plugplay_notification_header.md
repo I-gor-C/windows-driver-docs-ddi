@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b2245810-8f3c-4955-b341-46df4a71707c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PLUGPLAY_NOTIFICATION_HEADER, *PPLUGPLAY_NOTIFICATION_HEADER, PLUGPLAY_NOTIFICATION_HEADER
+ms.keywords : PLUGPLAY_NOTIFICATION_HEADER, kernel.plugplay_notification_header, wdm/PPLUGPLAY_NOTIFICATION_HEADER, PPLUGPLAY_NOTIFICATION_HEADER, wdm/PLUGPLAY_NOTIFICATION_HEADER, PLUGPLAY_NOTIFICATION_HEADER structure [Kernel-Mode Driver Architecture], PPLUGPLAY_NOTIFICATION_HEADER structure pointer [Kernel-Mode Driver Architecture], _PLUGPLAY_NOTIFICATION_HEADER, kstruct_c_3b18984d-35cf-4787-b887-a8916a89569b.xml, *PPLUGPLAY_NOTIFICATION_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PLUGPLAY_NOTIFICATION_HEADER
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPLUGPLAY_NOTIFICATION_HEADER, PLUGPLAY_NOTIFICATION_HEADER"
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _PLUGPLAY_NOTIFICATION_HEADER {
 
 ## Members
 
-        
-            `Event`
 
-            Specifies a GUID identifying the event.
-        
-            `Size`
+`Event`
 
-            Specifies the size of the structure, in bytes.
-        
-            `Version`
+Specifies a GUID identifying the event.
 
-            Specifies the version of the data structure, currently set to 1.
+`Size`
 
-    ## Remarks
-        Drivers can cast a PnP notification structure to this type to access the <b>Event</b> field and identify the exact type of the structure.
+Specifies the size of the structure, in bytes.
+
+`Version`
+
+Specifies the version of the data structure, currently set to 1.
+
+## Remarks
+Drivers can cast a PnP notification structure to this type to access the <b>Event</b> field and identify the exact type of the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,25 +77,18 @@ typedef struct _PLUGPLAY_NOTIFICATION_HEADER {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_interface_change_notification.md">DEVICE_INTERFACE_CHANGE_NOTIFICATION</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_hwprofile_change_notification.md">HWPROFILE_CHANGE_NOTIFICATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_device_interface_change_notification.md">DEVICE_INTERFACE_CHANGE_NOTIFICATION</a>
+
 <a href="..\wdm\ns-wdm-_target_device_removal_notification.md">TARGET_DEVICE_REMOVAL_NOTIFICATION</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
+
+<a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
+
  
 
  

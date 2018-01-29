@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 206D74F6-09D5-4C04-8A0A-A7765E64BB27
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetLinkShareAccess
+ms.keywords : IoSetLinkShareAccess function [Kernel-Mode Driver Architecture], kernel.iosetlinkshareaccess, IoSetLinkShareAccess, wdm/IoSetLinkShareAccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetLinkShareAccess
-req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,20 +66,11 @@ Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff5404
 
 Specifies the desired type of shared access to the file object for the current open request. The value of this parameter is usually the same as the <i>ShareAccess</i> parameter that is passed to the file system or highest-level driver by the I/O manager when the open request was made. This value can be zero, or any combination of the following:
 
-<dl>
-<dd>
 FILE_SHARE_READ
 
-</dd>
-<dd>
 FILE_SHARE_WRITE
 
-</dd>
-<dd>
 FILE_SHARE_DELETE
-
-</dd>
-</dl>
 
 `FileObject`
 
@@ -119,17 +114,12 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioupdatelinkshareaccess.md">IoUpdateLinkShareAccess</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioremovelinkshareaccess.md">IoRemoveLinkShareAccess</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioupdatelinkshareaccess.md">IoUpdateLinkShareAccess</a>
+
+<a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
+
  
 
  

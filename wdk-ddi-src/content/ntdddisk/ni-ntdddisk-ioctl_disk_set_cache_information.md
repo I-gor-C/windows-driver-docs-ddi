@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ae1ca621-4862-4345-bb51-4a1c31e00542
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_set_cache_information, IOCTL_DISK_SET_CACHE_INFORMATION control code [Storage Devices], IOCTL_DISK_SET_CACHE_INFORMATION, ntdddisk/IOCTL_DISK_SET_CACHE_INFORMATION, k307_4f1b855c-4788-48e9-bc26-7addf3c7e3a9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_SET_CACHE_INFORMATION
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_SET_CACHE_INFORMATION IOCTL
-Sets disk cache configuration data.
-
-
-
 Sets disk cache configuration data.
 
 ### Major Code
@@ -63,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero. The <b>Status</b> field can be set to STATUS_SUCCESS or STATUS_INFO_LENGTH_MISMATCH if the input buffer is not large enough.
 
 
@@ -74,13 +73,10 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field can be set 
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

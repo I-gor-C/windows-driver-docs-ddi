@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d77dfcc7-a7a7-4027-9831-42b1b79738d0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltQueryDirectoryFile
+ms.keywords : ifsk.fltquerydirectoryfile, FltQueryDirectoryFile, FltQueryDirectoryFile routine [Installable File System Drivers], FltApiRef_p_to_z_d91e48f4-f6a2-4f36-a5f6-9e39821446c2.xml, fltkernel/FltQueryDirectoryFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available starting with Windows Vist
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltQueryDirectoryFile
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -75,7 +79,6 @@ Size, in bytes, of the buffer pointed to by <i>FileInformation</i>. The caller s
 `FileInformationClass`
 
 Type of information to be returned about files in the directory. One of the values in the following table can be used.
-
 <table>
 <tr>
 <th>Value</th>
@@ -193,16 +196,24 @@ Receives the number of bytes actually written to the given <i>FileInformation</i
 The first call to <b>FltQueryDirectoryFile</b> determines the set of entries to be included in the directory scan for all subsequent calls, based on the values of <i>ReturnSingleEntry</i>, <i>FileName</i>, and <i>RestartScan</i>. If there is at least one matching entry, <b>FltQueryDirectoryFile</b> creates a FILE_<i>XXX</i>_INFORMATION structure (see the above table) for each entry in turn and stores the structure into the buffer. 
 
 Assuming that at least one matching directory entry is found, the number of entries for which information is returned is the smallest of the following: 
-
+<ul>
+<li>
  One entry, if <i>ReturnSingleEntry</i> is <b>TRUE</b> and <i>FileName</i> is <b>NULL</b>.  
 
+</li>
+<li>
  The number of entries that match the <i>FileName</i> string, if <i>FileName</i> is not <b>NULL</b>. (Note that if the string contains no wildcards, there can be at most one matching entry.)
 
+</li>
+<li>
  The number of entries whose information fits into the specified buffer.
 
+</li>
+<li>
  The number of entries contained in the directory.
 
-On the first call to <b>FltQueryDirectoryFile</b>, if the structure created for the first entry found too large to fit into the output buffer, only the fixed portion of the structure is returned. The fixed portion consists of all fields of the structure except the final <i>FileName</i> string. On the first call, but not on subsequent ones, the I/O system ensures that the buffer is large enough to hold the fixed portion of the appropriate FILE_<i>XXX</i>_INFORMATION structure. When this happens, <b>FltQueryDirectoryFile</b> returns an appropriate status value such as STATUS_BUFFER_OVERFLOW.  Also on the first call to <b>FltQueryDirectoryFile</b>, if there is no file in the <i>FileObject</i> directory that matches the <i>FileName</i> parameter, <b>FltQueryDirectoryFile</b> returns an appropriate status value such as STATUS_NO_SUCH_FILE.
+</li>
+</ul>On the first call to <b>FltQueryDirectoryFile</b>, if the structure created for the first entry found too large to fit into the output buffer, only the fixed portion of the structure is returned. The fixed portion consists of all fields of the structure except the final <i>FileName</i> string. On the first call, but not on subsequent ones, the I/O system ensures that the buffer is large enough to hold the fixed portion of the appropriate FILE_<i>XXX</i>_INFORMATION structure. When this happens, <b>FltQueryDirectoryFile</b> returns an appropriate status value such as STATUS_BUFFER_OVERFLOW.  Also on the first call to <b>FltQueryDirectoryFile</b>, if there is no file in the <i>FileObject</i> directory that matches the <i>FileName</i> parameter, <b>FltQueryDirectoryFile</b> returns an appropriate status value such as STATUS_NO_SUCH_FILE.
 
 On each call, <b>FltQueryDirectoryFile</b> returns as many FILE_<i>XXX</i>_INFORMATION structures (one per directory entry) as can be contained entirely in the buffer pointed to by <i>FileInformation</i>. As long as the output buffer contains at least one complete structure, the status value returned is STATUS_SUCCESS. No information about any remaining entries is reported. Thus, except in the cases listed above where only one entry is returned, <b>FltQueryDirectoryFile</b> must be called at least twice to enumerate the contents of an entire directory (for example, when the <i>FileName</i> parameter contains one or more wildcard characters or is <b>NULL</b>). 
 
@@ -233,44 +244,30 @@ Callers of <b>FltQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_both_dir_information.md">FILE_BOTH_DIR_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_directory_information.md">FILE_DIRECTORY_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_full_dir_information.md">FILE_FULL_DIR_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_id_both_dir_information.md">FILE_ID_BOTH_DIR_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_id_full_dir_information.md">FILE_ID_FULL_DIR_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_names_information.md">FILE_NAMES_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_objectid_information.md">FILE_OBJECTID_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_file_id_full_dir_information.md">FILE_ID_FULL_DIR_INFORMATION</a>
+
+<a href="..\ntifs\ns-ntifs-_file_full_dir_information.md">FILE_FULL_DIR_INFORMATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
+
+<a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a>
+
+<a href="..\ntifs\ns-ntifs-_file_names_information.md">FILE_NAMES_INFORMATION</a>
+
+<a href="..\ntifs\ns-ntifs-_file_objectid_information.md">FILE_OBJECTID_INFORMATION</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\ntifs\ns-ntifs-_file_both_dir_information.md">FILE_BOTH_DIR_INFORMATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
+
+<a href="..\ntifs\ns-ntifs-_file_id_both_dir_information.md">FILE_ID_BOTH_DIR_INFORMATION</a>
+
+<a href="..\ntifs\ns-ntifs-_file_directory_information.md">FILE_DIRECTORY_INFORMATION</a>
+
  
 
  

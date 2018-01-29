@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5ba625f5-5bc0-4e2b-a7a9-5014746086c8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_DEVICE_TRAITS, WDF_USB_DEVICE_TRAITS
+ms.keywords : WDF_USB_DEVICE_TRAITS enumeration, wdfusb/WDF_USB_DEVICE_TRAIT_SELF_POWERED, wdfusb/WDF_USB_DEVICE_TRAITS, wdfusb/WDF_USB_DEVICE_TRAIT_REMOTE_WAKE_CAPABLE, wdfusb/WDF_USB_DEVICE_TRAIT_AT_HIGH_SPEED, WDF_USB_DEVICE_TRAIT_SELF_POWERED, DFUsbRef_504c0bd9-3ba7-47cc-a99d-ab54d46cbdc4.xml, wdf.wdf_usb_device_traits, WDF_USB_DEVICE_TRAIT_REMOTE_WAKE_CAPABLE, WDF_USB_DEVICE_TRAIT_AT_HIGH_SPEED, _WDF_USB_DEVICE_TRAITS, kmdf.wdf_usb_device_traits, WDF_USB_DEVICE_TRAITS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_DEVICE_TRAITS
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL  (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_USB_DEVICE_TRAITS
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ The <b>WDF_USB_DEVICE_TRAITS</b> enumeration is used in the <a href="..\wdfusb\n
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

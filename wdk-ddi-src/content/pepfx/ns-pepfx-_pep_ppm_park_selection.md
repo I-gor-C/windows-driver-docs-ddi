@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1957D03D-7C85-4A58-A5CC-94D3C9913F5A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PPM_PARK_SELECTION, *PPEP_PPM_PARK_SELECTION, PEP_PPM_PARK_SELECTION
+ms.keywords : "*PPEP_PPM_PARK_SELECTION, PPEP_PPM_PARK_SELECTION structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_PARK_SELECTION, pepfx/PEP_PPM_PARK_SELECTION, PPEP_PPM_PARK_SELECTION, PEP_PPM_PARK_SELECTION structure [Kernel-Mode Driver Architecture], _PEP_PPM_PARK_SELECTION, kernel.pep_ppm_park_selection, PEP_PPM_PARK_SELECTION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PPM_PARK_SELECTION
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_PPM_PARK_SELECTION, PEP_PPM_PARK_SELECTION"
 ---
 
@@ -48,25 +52,29 @@ typedef struct _PEP_PPM_PARK_SELECTION {
 
 ## Members
 
-        
-            `AdditionalUnparkedProcessors`
 
-            [in] The number of additional processors that need to be parked.
+`AdditionalUnparkedProcessors`
+
+[in] The number of additional processors that need to be parked.
 
 This number includes all processors in the <b>Processors</b> array for which the PEP sets <b>PepPreference</b> to PROCESSOR_PARK_PREFERENCE_PARKED but the operating system sets <b>PoPreference</b> to either PROCESSOR_PARK_PREFERENCE_UNPARKED or PROCESSOR_PARK_PREFERENCE_NONE. For more information about these values, see <a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a>.
 
 This number does <u>not</u> include processors in the <b>Processors</b> array for which the operating system sets the <b>PoPreference</b> value to PROCESSOR_PARK_PREFERENCE_PARKED.
-        
-            `Count`
 
-            [in] The number of elements in the array pointed to by the <b>Processors</b> member.
-        
-            `Processors`
+`Count`
 
-            [in/out] A pointer to an array of <a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a> structures. The <b>Count</b> member specifies the number of elements in the array.
+[in] The number of elements in the array pointed to by the <b>Processors</b> member.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186812">PEP_NOTIFY_PPM_PARK_SELECTION</a> notification. All three members of the structure contain input values that are set by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) before this notification is sent to the PEP.
+`Processors`
+
+[in/out] A pointer to an array of <a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a> structures. The <b>Count</b> member specifies the number of elements in the array.
+
+
+
+The Processors array is guaranteed to contain the processors in increasing order by processor index.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186812">PEP_NOTIFY_PPM_PARK_SELECTION</a> notification. All three members of the structure contain input values that are set by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) before this notification is sent to the PEP.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,16 +84,12 @@ This number does <u>not</u> include processors in the <b>Processors</b> array fo
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186812">PEP_NOTIFY_PPM_PARK_SELECTION</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186812">PEP_NOTIFY_PPM_PARK_SELECTION</a>
+
  
 
  

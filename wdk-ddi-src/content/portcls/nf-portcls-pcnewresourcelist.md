@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 80576db6-38de-46c6-89f1-a3dde613fed1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcNewResourceList
+ms.keywords : audio.pcnewresourcelist, PcNewResourceList function [Audio Devices], portcls/PcNewResourceList, PcNewResourceList, audpc-routines_b9e7a222-20ac-482b-ae30-083765ecf5b7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcNewResour
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcNewResourceList
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -97,17 +101,12 @@ The <i>OutResourceList</i> and <i>OuterUnknown</i> parameters follow the <a href
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-</dt>
-<dt>
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+
 <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
-</dt>
-</dl>
+
  
 
  

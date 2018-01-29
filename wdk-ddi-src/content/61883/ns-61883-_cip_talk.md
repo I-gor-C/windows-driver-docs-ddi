@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : DD5EB79D-122B-4D17-9109-37473AC49C4A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _CIP_TALK, CIP_TALK, *PCIP_TALK
+ms.keywords : 61883/PCIP_TALK, 61883/CIP_TALK, PCIP_TALK structure pointer [Buses], CIP_TALK, _CIP_TALK, IEEE.cip_talk, CIP_TALK structure [Buses], PCIP_TALK, *PCIP_TALK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CIP_TALK
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CIP_TALK, *PCIP_TALK
 ---
 
@@ -46,13 +50,13 @@ typedef struct _CIP_TALK {
 
 ## Members
 
-        
-            `hConnect`
 
-            On input, the handle of the connection to begin isochronous transmission.
+`hConnect`
 
-    ## Remarks
-        In the request, Flags can have these values:
+On input, the handle of the connection to begin isochronous transmission.
+
+## Remarks
+In the request, Flags can have these values:
 
 
 
@@ -71,12 +75,6 @@ Indicates that when transmitting the attached frames should be double-buffered.
 </dl>
 
 
-
-
-Indicates that the timestamp within the SPH should be used to calculate the timing of transmission of isochronous packets.
-
-Indicates that when transmitting the attached frames should be double-buffered.
-
 If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
@@ -91,13 +89,10 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C8829785-1EB7-4F29-9279-F2FC2A3C0ABD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _DEVICE_WAKE_DEPTH, *PDEVICE_WAKE_DEPTH, DEVICE_WAKE_DEPTH
+ms.keywords : DEVICE_WAKE_DEPTH enumeration [Kernel-Mode Driver Architecture], wdm/DeviceWakeDepthD3hot, DeviceWakeDepthD0, DeviceWakeDepthD2, DeviceWakeDepthD3cold, DEVICE_WAKE_DEPTH, wdm/DeviceWakeDepthD0, DeviceWakeDepthD1, wdm/DeviceWakeDepthD2, DeviceWakeDepthD3hot, wdm/DeviceWakeDepthMaximum, wdm/DeviceWakeDepthNotWakeable, *PDEVICE_WAKE_DEPTH, wdm/DeviceWakeDepthD3cold, _DEVICE_WAKE_DEPTH, DeviceWakeDepthNotWakeable, DeviceWakeDepthMaximum, wdm/DeviceWakeDepthD1, wdm/DEVICE_WAKE_DEPTH, kernel.device_wake_depth
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_WAKE_DEPTH
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEVICE_WAKE_DEPTH, DEVICE_WAKE_DEPTH"
 req.product : Windows 10 or later.
 ---
@@ -107,11 +111,8 @@ The drivers for most devices have no reason to arm a wake signal when the device
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nc-wdm-get_idle_wake_info.md">GetIdleWakeInfo</a>
-</dt>
-</dl>
+
  
 
  

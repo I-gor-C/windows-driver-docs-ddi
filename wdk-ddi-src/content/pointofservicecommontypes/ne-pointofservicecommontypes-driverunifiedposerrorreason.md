@@ -7,8 +7,8 @@ old-location : pos\unifiedposerrorreason.htm
 old-project : pos
 ms.assetid : 2bbf5fcf-666e-4265-95cf-7e04670d59da
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DriverUnifiedPosErrorReason, DriverUnifiedPosErrorReason
+ms.date : 1/18/2018
+ms.keywords : Offline, pointofservicecommontypes/Extended, DriverUnifiedPosErrorReason, Illegal, pointofservicecommontypes/Busy, Timeout, pointofservicecommontypes/UnknownErrorReason, NoService, pointofservicecommontypes/NoService, pos.unifiedposerrorreason, Busy, DriverUnifiedPosErrorReason enumeration, pointofservicecommontypes/Timeout, Extended, pointofservicecommontypes/Disabled, Closed, Disabled, pointofservicecommontypes/Illegal, pointofservicecommontypes/ NoHardware, Failure, NoHardware, pointofservicecommontypes/Offline, UnknownErrorReason, pointofservicecommontypes/Failure, pointofservicecommontypes/Closed, pointofservicecommontypes/DriverUnifiedPosErrorReason
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DriverUnifiedPosErrorReason
-req.alt-loc : pointofservicecommontypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DriverUnifiedPosErrorReason
 ---
 
@@ -86,6 +90,11 @@ typedef enum _DriverUnifiedPosErrorReason {
 <tr>
 <td>Illegal</td>
 <td>The function is not available or is not supported on this device.</td>
+</tr>
+
+<tr>
+<td>NoHardware</td>
+<td>The physical device is not connected or not powered on.</td>
 </tr>
 
 <tr>

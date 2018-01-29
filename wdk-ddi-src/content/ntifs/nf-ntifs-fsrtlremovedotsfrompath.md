@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : af6ecdb7-8713-460d-8fd9-ef027ac15b39
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlRemoveDotsFromPath
+ms.keywords : FsRtlRemoveDotsFromPath, ifsk.fsrtlremovedotsfrompath, ntifs/FsRtlRemoveDotsFromPath, fsrtlref_93b15313-3292-4122-9852-731b995e9d20.xml, FsRtlRemoveDotsFromPath routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlRemoveDotsFromPath
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -70,10 +74,38 @@ The<b> FsRtlRemoveDotsFromPath</b> routine returns either STATUS_SUCCESS value f
 ## Remarks
 
 This routine would take a path as <i>OriginalString</i> like the following example:
-
-The routine would modify <i>OriginalString</i> as follows:
-
-The routine will fail with STATUS_IO_REPARSE_DATA_INVALID if any of the following strings are passed as <i>OriginalString</i>:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>\dir1\dir2\..\dir3\.\file.txt</pre>
+</td>
+</tr>
+</table></span></div>The routine would modify <i>OriginalString</i> as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>\dir1\dir3\file.txt</pre>
+</td>
+</tr>
+</table></span></div>The routine will fail with STATUS_IO_REPARSE_DATA_INVALID if any of the following strings are passed as <i>OriginalString</i>:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>\..
+..
+..\anyOtherContent</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

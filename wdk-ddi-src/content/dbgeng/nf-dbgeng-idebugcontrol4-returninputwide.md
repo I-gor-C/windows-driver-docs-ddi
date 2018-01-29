@@ -7,8 +7,8 @@ old-location : debugger\returninputwide.htm
 old-project : debugger
 ms.assetid : 6e7f0995-14d0-4dd3-b598-2f988a2ec4fd
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugControl4, IDebugControl4::ReturnInputWide, ReturnInputWide
+ms.date : 1/19/2018
+ms.keywords : debugger.returninputwide, ReturnInputWide method [Windows Debugging], IDebugControl4 interface, ReturnInputWide method [Windows Debugging], IDebugControl4, IDebugControl4 interface [Windows Debugging], ReturnInputWide method, IDebugControl4::ReturnInputWide, dbgeng/IDebugControl4::ReturnInputWide, ReturnInputWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugControl4.ReturnInputWide
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -55,20 +59,40 @@ Specifies the input string being sent to the engine.
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_FALSE</b></dt>
-</dl>The engine had already received the input it requested. The input string in <i>Buffer</i> was not received by the engine.
+</dl>
+</td>
+<td width="60%">
+The engine had already received the input it requested. The input string in <i>Buffer</i> was not received by the engine.
 
- 
+</td>
+</tr>
+</table> 
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
 ## Remarks
 
-For an overview of input in the debugger engine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
+For an overview of input in the debugger engine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

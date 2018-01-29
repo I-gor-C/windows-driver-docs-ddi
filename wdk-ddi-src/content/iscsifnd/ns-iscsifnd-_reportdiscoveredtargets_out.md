@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cecef33a-a192-41f4-8006-b5d8b8c73e8d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT, *PReportDiscoveredTargets_OUT
+ms.keywords : structs-iSCSI_77e4d614-2993-45b7-8716-cc6eea197e22.xml, PReportDiscoveredTargets_OUT, iscsifnd/PReportDiscoveredTargets_OUT, storage.reportdiscoveredtargets_out, ReportDiscoveredTargets_OUT structure [Storage Devices], PReportDiscoveredTargets_OUT structure pointer [Storage Devices], *PReportDiscoveredTargets_OUT, _ReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT, iscsifnd/ReportDiscoveredTargets_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ReportDiscoveredTargets_OUT
-req.alt-loc : iscsifnd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ReportDiscoveredTargets_OUT, *PReportDiscoveredTargets_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT"
 ---
 
 # _ReportDiscoveredTargets_OUT structure
@@ -48,21 +52,21 @@ typedef struct _ReportDiscoveredTargets_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
-        
-            `TargetCount`
+`Status`
 
-            On output, the number of targets that are discovered.
-        
-            `Targets`
+On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
 
-            On output, an array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a> structures, which provide information that is related to discovered targets.
+`TargetCount`
 
-    ## Remarks
-        You must implement this method.
+On output, the number of targets that are discovered.
+
+`Targets`
+
+On output, an array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a> structures, which provide information that is related to discovered targets.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,22 +76,16 @@ typedef struct _ReportDiscoveredTargets_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsifnd.h (include Iscsifnd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564046">ReportDiscoveredTargets</a>
-</dt>
-<dt>
+
 <a href="..\iscsifnd\ns-iscsifnd-_reportdiscoveredtargets2_out.md">ReportDiscoveredTargets2_OUT</a>
-</dt>
-</dl>
+
  
 
  

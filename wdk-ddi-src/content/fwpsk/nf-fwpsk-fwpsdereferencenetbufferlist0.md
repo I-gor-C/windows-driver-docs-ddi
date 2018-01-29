@@ -7,8 +7,8 @@ old-location : netvista\fwpsdereferencenetbufferlist0.htm
 old-project : netvista
 ms.assetid : e327fe9d-9425-4cc3-9552-88e9c4c3bdbe
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FwpsDereferenceNetBufferList0
+ms.date : 1/18/2018
+ms.keywords : fwpsk/FwpsDereferenceNetBufferList0, FwpsDereferenceNetBufferList0, netvista.fwpsdereferencenetbufferlist0, FwpsDereferenceNetBufferList0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_D-H_c55180f3-4575-4279-8481-99b17215fc11.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FwpsDereferenceNetBufferList0
-req.alt-loc : fwpkclnt.lib,fwpkclnt.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fwpkclnt.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_VSWITCH_EVENT_TYPE
 ---
 
@@ -41,6 +45,7 @@ The
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that a callout
   driver had acquired earlier using the 
   <a href="..\fwpsk\nf-fwpsk-fwpsreferencenetbufferlist0.md">FwpsReferenceNetBufferList0</a> function.
+<div class="alert"><b>Note</b>  <b>FwpsDereferenceNetBufferList0</b> is a specific version of <b>FwpsDereferenceNetBufferList</b>. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div><div> </div>
 
 ## Syntax
 
@@ -96,16 +101,12 @@ A callout driver calls the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsreferencenetbufferlist0.md">FwpsReferenceNetBufferList0</a>
-</dt>
-<dt>
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-</dl>
- 
+
+<a href="..\fwpsk\nf-fwpsk-fwpsreferencenetbufferlist0.md">FwpsReferenceNetBufferList0</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsDereferenceNetBufferList0 function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsDereferenceNetBufferList0 function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

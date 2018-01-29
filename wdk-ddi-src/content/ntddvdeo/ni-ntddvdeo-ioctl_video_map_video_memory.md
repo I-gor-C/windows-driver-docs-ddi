@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9e17502a-b5bf-4f17-8e74-1974f7e65e01
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_map_video_memory, IOCTL_VIDEO_MAP_VIDEO_MEMORY control code [Display Devices], IOCTL_VIDEO_MAP_VIDEO_MEMORY, ntddvdeo/IOCTL_VIDEO_MAP_VIDEO_MEMORY, Video_IOCTLs_8a343fc8-9ebe-4079-a175-94d39222adee.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_MAP_VIDEO_MEMORY
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,17 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_MAP_VIDEO_MEMORY IOCTL
-Maps the video hardware <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a> and video RAM into the virtual address space of the requester. Miniport drivers are required to handle this IOCTL and to map all video memory in the caller's address space with <a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>. 
-
-This request is both modal and nonmodal: the miniport driver must return the location size of the frame buffer within video memory, and the frame buffer size and location can vary from mode to mode (modal characteristic). However, a subsequent set-mode operation (to the same mode) must not cause the video memory to change location (nonmodal characteristic).
-
-
-
-Maps the video hardware <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a> and video RAM into the virtual address space of the requester. Miniport drivers are required to handle this IOCTL and to map all video memory in the caller's address space with <a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>. 
+Maps the video hardware <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">frame buffer</a> and video RAM into the virtual address space of the requester. Miniport drivers are required to handle this IOCTL and to map all video memory in the caller's address space with <a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>. 
 
 This request is both modal and nonmodal: the miniport driver must return the location size of the frame buffer within video memory, and the frame buffer size and location can vary from mode to mode (modal characteristic). However, a subsequent set-mode operation (to the same mode) must not cause the video memory to change location (nonmodal characteristic).
 
@@ -67,7 +65,6 @@ The miniport driver returns a <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_inf
 <text></text>
 
 ### Status Block
-I/O Status block
 If the miniport driver successfully maps the memory, it sets the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure to <b>sizeof</b>(VIDEO_MEMORY_INFORMATION); otherwise, it sets this member to zero.
 
 
@@ -78,22 +75,16 @@ If the miniport driver successfully maps the memory, it sets the <b>Information<
 | **Header** | ntddvdeo.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory.md">VIDEO_MEMORY</a>
-</dt>
-<dt>
+
+<a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>
+
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7631baa9-6d5a-44b6-ac19-2b3ecaac9293
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsQueryObjectAccessMask
+ms.keywords : KsQueryObjectAccessMask, ks/KsQueryObjectAccessMask, KsQueryObjectAccessMask function [Streaming Media Devices], stream.ksqueryobjectaccessmask, ksfunc_f79d4971-874e-4efd-ab73-d88cdd573991.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsQueryObjectAccessMask
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -72,11 +76,8 @@ The <b>KsQueryObjectAccessMask</b> function returns an access mask.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>
-</dt>
-</dl>
+
  
 
  

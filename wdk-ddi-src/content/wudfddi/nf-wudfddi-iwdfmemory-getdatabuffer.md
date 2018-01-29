@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 136aa2af-e3bf-48b6-9511-348510eedfb5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFMemory, IWDFMemory::GetDataBuffer, GetDataBuffer
+ms.keywords : UMDFMemoryObjectRef_910791a8-4fd9-47ff-93f9-f8f496e95272.xml, umdf.iwdfmemory_getdatabuffer, IWDFMemory interface, GetDataBuffer method, wdf.iwdfmemory_getdatabuffer, GetDataBuffer method, GetDataBuffer, wudfddi/IWDFMemory::GetDataBuffer, GetDataBuffer method, IWDFMemory interface, IWDFMemory, IWDFMemory::GetDataBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFMemory.GetDataBuffer
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ For a code example of how to use the <b>GetDataBuffer</b> method, see <a href="h
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-</dl>
+
  
 
  

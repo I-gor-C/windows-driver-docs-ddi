@@ -7,8 +7,8 @@ old-location : netvista\wdi_exemption_action_type.htm
 old-project : netvista
 ms.assetid : 46640961-828c-411b-b1b9-bcceb04bdf17
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPTION_ACTION_TYPE
+ms.date : 1/18/2018
+ms.keywords : dot11wdi/WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, WDI_EXEMPTION_ACTION_TYPE enumeration [Network Drivers Starting with Windows Vista], WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, dot11wdi/WDI_EXEMPT_NO_EXEMPTION, WDI_EXEMPT_NO_EXEMPTION, WDI_EXEMPT_ALWAYS, netvista.wifi_exemption_action_type, netvista.wdi_exemption_action_type, dot11wdi/WDI_EXEMPTION_ACTION_TYPE, dot11wdi/WDI_EXEMPT_ALWAYS, WDI_EXEMPTION_ACTION_TYPE, _WDI_EXEMPTION_ACTION_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_EXEMPTION_ACTION_TYPE
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_EXEMPTION_ACTION_TYPE
 ---
 

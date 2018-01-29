@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 068ac200-55bb-4d7b-bc69-ad57d466a36b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _WORK_QUEUE_ITEM, WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM
+ms.keywords : WORK_QUEUE_ITEM structure [Installable File System Drivers], wdm/PWORK_QUEUE_ITEM, PWORK_QUEUE_ITEM structure pointer [Installable File System Drivers], wdm/WORK_QUEUE_ITEM, PWORK_QUEUE_ITEM, othersystemstructures_52486f79-e8f4-4fb3-9b41-564bbd78f5d5.xml, WORK_QUEUE_ITEM, ifsk.work_queue_item, *PWORK_QUEUE_ITEM, _WORK_QUEUE_ITEM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WORK_QUEUE_ITEM
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM"
 req.product : Windows 10 or later.
 ---
 
@@ -49,22 +53,18 @@ typedef struct _WORK_QUEUE_ITEM {
 
 ## Members
 
-        
-            `List`
 
-            Doubly linked list structure. This structure is used to add the work item to the system work queue.
-        
-            `Parameter`
+`List`
 
-            Context information pointer specified in the <b>Parameter</b> member. 
+Doubly linked list structure. This structure is used to add the work item to the system work queue.
 
-</dd>
-</dl>
-        
-            `WorkerRoutine`
+`Parameter`
 
-            Pointer to a callback routine that processes this work item when the work item is dequeued. This callback routine is declared as follows: 
+Pointer to context information to be passed to the callback routine specified in the <b>WorkerRoutine</b> member.
 
+`WorkerRoutine`
+
+Pointer to a callback routine that processes this work item when the work item is dequeued. This callback routine is declared as follows: 
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -79,8 +79,8 @@ typedef struct _WORK_QUEUE_ITEM {
 </tr>
 </table></span></div>
 
-    ## Remarks
-        To initialize a WORK_QUEUE_ITEM structure, call <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>. 
+## Remarks
+To initialize a WORK_QUEUE_ITEM structure, call <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>. 
 
 To post the initialized work item to a system work queue, call <a href="..\wdm\nf-wdm-exqueueworkitem.md">ExQueueWorkItem</a>. 
 
@@ -94,25 +94,18 @@ To post the initialized work item to a system work queue, call <a href="..\wdm\n
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exqueueworkitem.md">ExQueueWorkItem</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>
+
+<a href="..\wdm\nf-wdm-exqueueworkitem.md">ExQueueWorkItem</a>
+
+<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
+
  
 
  

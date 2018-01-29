@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3c540410-6478-4da1-8ef5-b6d21d322b32
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ObQueryNameString
+ms.keywords : ntifs/ObQueryNameString, ObQueryNameString, ObQueryNameString routine [Installable File System Drivers], obref_3d52f727-edc5-4bea-b7c1-24a3aced1079.xml, ifsk.obquerynamestring
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later operating system
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObQueryNameString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -58,7 +62,6 @@ A pointer to the object for which the name is requested. This parameter is requi
 `ObjectNameInfo`
 
 A pointer to a caller-allocated buffer, of the following type, that receives the object name information: 
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -70,8 +73,7 @@ A pointer to a caller-allocated buffer, of the following type, that receives the
 } OBJECT_NAME_INFORMATION, *POBJECT_NAME_INFORMATION;</pre>
 </td>
 </tr>
-</table></span></div>
-This parameter is optional and can be <b>NULL</b>. If <i>ObjectNameInfo</i> is <b>NULL</b>, <i>Length</i> must be zero.
+</table></span></div>This parameter is optional and can be <b>NULL</b>. If <i>ObjectNameInfo</i> is <b>NULL</b>, <i>Length</i> must be zero.
 
 `Length`
 
@@ -85,9 +87,23 @@ A pointer to a caller-allocated variable that receives the size, in bytes, of th
 ## Return Value
 
 <b>ObQueryNameString</b> returns STATUS_SUCCESS or an NTSTATUS value such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>The buffer that is pointed to by <i>ObjectNameInfo</i> is too small to hold the requested object name information. <i>ReturnLength</i> points to the required buffer size. In this case, no object name information is returned. This is an error code. Be aware that if <i>Length</i> is set to zero, <b>STATUS_INFO_LENGTH_MISMATCH</b> is returned.
+</dl>
+</td>
+<td width="60%">
+The buffer that is pointed to by <i>ObjectNameInfo</i> is too small to hold the requested object name information. <i>ReturnLength</i> points to the required buffer size. In this case, no object name information is returned. This is an error code. Be aware that if <i>Length</i> is set to zero, <b>STATUS_INFO_LENGTH_MISMATCH</b> is returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -111,11 +127,8 @@ The storage for <i>ObjectNameInfo</i> can be allocated from paged or nonpaged po
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

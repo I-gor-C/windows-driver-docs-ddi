@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f9d441a5-46b5-4da8-aa7e-f4f45eb733d4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DxApiGetVersion
+ms.keywords : DxApiGetVersion function [Display Devices], ddfncs_72fbedfa-d63f-462a-a6c4-862c6815f1c1.xml, DxApiGetVersion, dxapi/DxApiGetVersion, display.dxapigetversion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxApiGetVersion
-req.alt-loc : Dxapi.lib,Dxapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Dxapi.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DRMRIGHTS, *PDRMRIGHTS
 ---
 
@@ -54,10 +58,6 @@ This function has no parameters.
 
 Returns the major and minor version numbers of Direct Sound as 4 and 2 respectively.
 
-Returns the major and minor version numbers of Direct Sound as 4 and 2 respectively.
-
-Returns the major and minor version numbers of Direct Sound as 4 and 2 respectively.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,17 +73,12 @@ Returns the major and minor version numbers of Direct Sound as 4 and 2 respectiv
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550637">DD_DXAPI_GETVERSIONNUMBER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549530">DDGETVERSIONNUMBER</a>
-</dt>
-<dt>
+
 <a href="..\dxapi\nf-dxapi-dxapi.md">DxApi</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549530">DDGETVERSIONNUMBER</a>
+
  
 
  

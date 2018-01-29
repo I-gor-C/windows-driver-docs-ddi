@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0d290872-0944-4599-9deb-9a4f7b2df0e5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSPIN, *PKSPIN, KSPIN
+ms.keywords : stream.kspin, PKSPIN, ks/PKSPIN, KSPIN, KSPIN structure [Streaming Media Devices], PKSPIN structure pointer [Streaming Media Devices], _KSPIN, avstruct_9453feff-ba40-4f54-bdb6-07f4f31548aa.xml, *PKSPIN, ks/KSPIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPIN
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPIN, KSPIN"
 ---
 
@@ -62,8 +66,8 @@ typedef struct _KSPIN {
 ## Members
 
 
-    ## Remarks
-        In many ways, pins are the focus of filter behavior. This is reflected in the fact that the pin structure has a large number of members. Many minidrivers need to refine pin behavior and maintain additional pin-associated context. For filters with fairly conventional pin behavior, no additional refinement or context is required. In many cases, default pin behavior is sufficient; the pins are accessed using <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.
+## Remarks
+In many ways, pins are the focus of filter behavior. This is reflected in the fact that the pin structure has a large number of members. Many minidrivers need to refine pin behavior and maintain additional pin-associated context. For filters with fairly conventional pin behavior, no additional refinement or context is required. In many cases, default pin behavior is sufficient; the pins are accessed using <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.
 
 For synchronization purposes, the lifetime of this object is the interval starting when the minidriver's PreCreate dispatch function is called and ending when the minidriver's Close dispatch function returns, assuming the function does not return STATUS_PENDING. If it does return STATUS_PENDING, the object's lifetime ends when the client indicates completion of the close request by calling <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>.
 
@@ -79,25 +83,18 @@ Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+
+<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
+
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+
  
 
  

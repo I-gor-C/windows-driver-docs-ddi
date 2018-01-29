@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bf66a04d-0892-4813-9615-845054526125
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : CompareStorageDuids
+ms.keywords : storage.comparestorageduids, storertns-general_86f18b5a-ed33-48e8-b13c-76bd2422418d.xml, CompareStorageDuids, CompareStorageDuids routine [Storage Devices], storduid/CompareStorageDuids
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CompareStorageDuids
-req.alt-loc : storduid.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DUID_MATCH_STATUS
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ A pointer to a DUID to compare with the DUID that <i>Duid1</i> points to.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storduid\ne-storduid-_duid_match_status.md">DUID_MATCH_STATUS</a>
-</dt>
-</dl>
+
  
 
  

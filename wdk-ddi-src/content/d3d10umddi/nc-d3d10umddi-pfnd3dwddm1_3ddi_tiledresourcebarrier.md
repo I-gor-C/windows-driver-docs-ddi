@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9A2E9B3F-13E4-48D7-A3F3-E7CDCDD1E0CC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.tiledresourcebarrier, TiledResourceBarrier callback function [Display Devices], TiledResourceBarrier, PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER, PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER, d3d10umddi/TiledResourceBarrier
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TiledResourceBarrier
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -110,14 +114,10 @@ If no calls are made to <i>TiledResourceBarrier</i>,
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>
+
  
 
  

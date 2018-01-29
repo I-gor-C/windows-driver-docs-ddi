@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c405771c-726f-4003-b3c6-f063dd74187e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PsChargePoolQuota
+ms.keywords : psref_690f1550-4753-4f39-bcf2-bdcf7b80112d.xml, ntifs/PsChargePoolQuota, PsChargePoolQuota routine [Installable File System Drivers], ifsk.pschargepoolquota, PsChargePoolQuota
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PsChargePoolQuota
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -57,14 +61,12 @@ Pointer to the process whose quota is to be charged.
 `PoolType`
 
 Type of pool quota to charge, which can be one of the following: 
-
 <ul>
 <li><b>NonPagedPool</b></li>
 <li><b>PagedPool</b></li>
 <li><b>NonPagedPoolCacheAligned</b></li>
 <li><b>PagedPoolCacheAligned</b></li>
 </ul>
-
 
 <b>Note</b>: The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used.
 
@@ -99,11 +101,8 @@ For more information about memory management, see <a href="https://msdn.microsof
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-psreturnpoolquota.md">PsReturnPoolQuota</a>
-</dt>
-</dl>
+
  
 
  

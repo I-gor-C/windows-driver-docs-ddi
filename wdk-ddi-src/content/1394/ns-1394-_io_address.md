@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : db703d46-d37f-442a-a543-ce9e9c5ea3cb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IO_ADDRESS, *PIO_ADDRESS, IO_ADDRESS
+ms.keywords : IEEE.io_address, IO_ADDRESS structure [Buses], 1394/IO_ADDRESS, 1394stct_1683915b-161d-4741-91b9-32f632b56e59.xml, 1394/PIO_ADDRESS, IO_ADDRESS, PIO_ADDRESS, *PIO_ADDRESS, _IO_ADDRESS, PIO_ADDRESS structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_ADDRESS
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PIO_ADDRESS, IO_ADDRESS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : IO_ADDRESS, *PIO_ADDRESS
 ---
 
 # _IO_ADDRESS structure
@@ -47,14 +51,14 @@ typedef struct _IO_ADDRESS {
 
 ## Members
 
-        
-            `IA_Destination_ID`
 
-            Holds a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537435">NODE_ADDRESS</a> containing the destination node address.
-        
-            `IA_Destination_Offset`
+`IA_Destination_ID`
 
-            Holds a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536906">ADDRESS_OFFSET</a> that specifies the index of the 1394 address within the address array.
+Holds a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537435">NODE_ADDRESS</a> containing the destination node address.
+
+`IA_Destination_Offset`
+
+Holds a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536906">ADDRESS_OFFSET</a> that specifies the index of the 1394 address within the address array.
 
 
 ## Requirements
@@ -65,28 +69,20 @@ typedef struct _IO_ADDRESS {
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537642">REQUEST_GET_CONFIGURATION_INFO</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537633">REQUEST_ASYNC_LOCK</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537634">REQUEST_ASYNC_READ</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537636">REQUEST_ASYNC_WRITE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537435">NODE_ADDRESS</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537642">REQUEST_GET_CONFIGURATION_INFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537634">REQUEST_ASYNC_READ</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536906">ADDRESS_OFFSET</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537633">REQUEST_ASYNC_LOCK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537435">NODE_ADDRESS</a>
+
  
 
  

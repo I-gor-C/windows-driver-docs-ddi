@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 68753690-A6DC-46BE-9981-F395B98C3245
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxRegisterPluginEx
+ms.keywords : PoFxRegisterPluginEx routine [Kernel-Mode Driver Architecture], kernel.pofxregisterpluginex, pepfx/PoFxRegisterPluginEx, PoFxRegisterPluginEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxRegisterPluginEx
-req.alt-loc : ntoskrnl.lib,ntoskrnl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
@@ -57,7 +61,6 @@ A pointer to a <a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</
 `Flags`
 
 A set of flag bits for configuring the PEP interface. Set this member to zero or to the following value.
-
 <table>
 <tr>
 <th>Flag bit</th>
@@ -77,15 +80,45 @@ A pointer to a <a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">
 ## Return Value
 
 <b>PoFxRegisterPluginEx</b> returns STATUS_SUCCESS if the call successfully registers the PEP. Possible error return values include the following status codes.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INVALID_PARAMETER</dt>
-</dl>The <b>Version</b> or <b>Size</b> member of the <b>PEP_KERNEL_INFORMATION</b> structure is set to an invalid value; or the <b>AcceptDeviceNotification</b> member of this structure is set to NULL.
+</dl>
+</td>
+<td width="60%">
+The <b>Version</b> or <b>Size</b> member of the <b>PEP_KERNEL_INFORMATION</b> structure is set to an invalid value; or the <b>AcceptDeviceNotification</b> member of this structure is set to NULL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INVALID_PEP_INFO_VERSION</dt>
-</dl>The <b>Version</b> member of the <b>PEP_INFORMATION</b> structure is set to an invalid value.
+</dl>
+</td>
+<td width="60%">
+The <b>Version</b> member of the <b>PEP_INFORMATION</b> structure is set to an invalid value.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_INSUFFICIENT_RESOURCES</dt>
-</dl>Unable to allocate the resources required to complete the requested registration.
+</dl>
+</td>
+<td width="60%">
+Unable to allocate the resources required to complete the requested registration.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -111,17 +144,12 @@ The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">PEP_KERNEL_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
+
+<a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">PEP_KERNEL_INFORMATION</a>
+
  
 
  

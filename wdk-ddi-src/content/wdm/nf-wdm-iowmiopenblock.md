@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c23d1861-59df-4bd4-a005-173ccac53049
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMIOpenBlock
+ms.keywords : wdm/IoWMIOpenBlock, k104_19f378c4-3729-4668-aef0-0e675d2e1ae4.xml, kernel.iowmiopenblock, IoWMIOpenBlock, IoWMIOpenBlock routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWMIOpenBlock
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -53,7 +57,7 @@ NTSTATUS IoWMIOpenBlock(
 
 `Guid`
 
-
+TBD
 
 `DesiredAccess`
 
@@ -92,35 +96,24 @@ Use <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> to cl
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiexecutemethod.md">IoWMIExecuteMethod</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiqueryalldata.md">IoWMIQueryAllData</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiqueryalldatamultiple.md">IoWMIQueryAllDataMultiple</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iowmisetnotificationcallback.md">IoWMISetNotificationCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iowmisetsingleitem.md">IoWMISetSingleItem</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
+
+<a href="..\wdm\nf-wdm-iowmisetsingleitem.md">IoWMISetSingleItem</a>
+
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a>
+
+<a href="..\wdm\nf-wdm-iowmisetnotificationcallback.md">IoWMISetNotificationCallback</a>
+
+<a href="..\wdm\nf-wdm-iowmiqueryalldata.md">IoWMIQueryAllData</a>
+
+<a href="..\wdm\nf-wdm-iowmiqueryalldatamultiple.md">IoWMIQueryAllDataMultiple</a>
+
+<a href="..\wdm\nf-wdm-iowmiexecutemethod.md">IoWMIExecuteMethod</a>
+
  
 
  

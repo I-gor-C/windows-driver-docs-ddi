@@ -7,8 +7,8 @@ old-location : netvista\rilcapslockingpwdlength.htm
 old-project : netvista
 ms.assetid : 99f21862-5cd6-4bf9-abde-d5d24332a147
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH
+ms.date : 1/18/2018
+ms.keywords : RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCAPSLOCKINGPWDLENGTH, netvista.rilcapslockingpwdlength
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCAPSLOCKINGPWDLENGTH
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH
 ---
 
@@ -49,22 +53,22 @@ typedef struct _RILCAPSLOCKINGPWDLENGTH {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `dwPasswordLength`
 
-            
-        
-            `dwPersoFeature`
 
-            
+`dwParams`
+
+
+
+`dwPasswordLength`
+
+
+
+`dwPersoFeature`
+
+
 
 
 ## Requirements

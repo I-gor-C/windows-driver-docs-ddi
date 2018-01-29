@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 99D075A0-4483-47D1-BA24-80C45BFF407A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnupdategpuvirtualaddresscb, pfnUpdateGpuVirtualAddressCb callback function [Display Devices], pfnUpdateGpuVirtualAddressCb, PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB, PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB, d3dumddi/pfnUpdateGpuVirtualAddressCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnUpdateGpuVirtualAddressCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -75,8 +79,11 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 The virtual address ranges in the update operations are allowed to intersect. The operations will be applied in the order they are submitted.
 
 In a single <b>pfnUpdateVirtualAddressCb</b> call:
-
-The user mode driver can submit many <b>pfnUpdateGpuVirtualAddressCb</b> calls and operations will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the pervious operations are processed by the video memory manager.
+<ul>
+<li>All virtual address ranges in mapping operations and the destination range in copy operations must belong to the same reserved (zero) range.</li>
+<li>The source virtual address range in copy operations is allowed to be from a different reserved (zero) range.</li>
+<li>The source virtual address range in all copy operations must belong to the same reserved (zero) range.</li>
+</ul>The user mode driver can submit many <b>pfnUpdateGpuVirtualAddressCb</b> calls and operations will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the pervious operations are processed by the video memory manager.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,14 +99,10 @@ The user mode driver can submit many <b>pfnUpdateGpuVirtualAddressCb</b> calls a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_updategpuvirtualaddress.md">D3DDDICB_UPDATEGPUVIRTUALADDRESS</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_updategpuvirtualaddress.md">D3DDDICB_UPDATEGPUVIRTUALADDRESS</a>
+
  
 
  

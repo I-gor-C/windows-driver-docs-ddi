@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 22AA35D4-D287-443B-A49D-87C20BD436AA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
+ms.keywords : D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE structure [Display Devices], display.d3dddicb_submitsignalsyncobjectstohwqueue, _D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE, d3dumddi/D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE {
 
 ## Members
 
-        
-            `BroadcastHwQueueArray`
 
-            Specifies hardware queue handles to broadcast to.
-        
-            `BroadcastHwQueueCount`
+`BroadcastHwQueueArray`
 
-            Specifies the number of hardware queues to broadcast this signal to.
-        
-            `FenceValueArray`
+Specifies hardware queue handles to broadcast to.
 
-            monitored fence values to signal.
-        
-            `Flags`
+`BroadcastHwQueueCount`
 
-            Specifies signal behavior.
-        
-            `ObjectCount`
+Specifies the number of hardware queues to broadcast this signal to.
 
-            Number of objects to signal.
-        
-            `ObjectHandleArray`
+`FenceValueArray`
 
-            Handles to monitored fence synchronization objects to signal.
+monitored fence values to signal.
+
+`Flags`
+
+Specifies signal behavior.
+
+`ObjectCount`
+
+Number of objects to signal.
+
+`ObjectHandleArray`
+
+Handles to monitored fence synchronization objects to signal.
 
 
 ## Requirements

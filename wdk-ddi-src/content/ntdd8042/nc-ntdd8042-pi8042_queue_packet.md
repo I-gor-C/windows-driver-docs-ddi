@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : f5d42701-b418-4bda-b936-3e0a1f57ac9d
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
+ms.keywords : hid.pi8042_queue_packet, QueuePacket callback function [Human Input Devices], QueuePacket, PI8042_QUEUE_PACKET, PI8042_QUEUE_PACKET, ntdd8042/QueuePacket, i8042ref_44eb4361-586b-4390-8aea-4e1470a70691.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : QueuePacket
-req.alt-loc : ntdd8042.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 
@@ -84,20 +88,14 @@ The PI8042_QUEUE_PACKET callback runs in kernel mode at the same IRQL as the I80
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_hook_keyboard.md">INTERNAL_I8042_HOOK_KEYBOARD</a>
-</dt>
-<dt>
 <a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_hook_mouse.md">INTERNAL_I8042_HOOK_MOUSE</a>
-</dt>
-<dt>
-<a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_hook_keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
-</dt>
-<dt>
+
 <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_hook_mouse.md">IOCTL_INTERNAL_I8042_HOOK_MOUSE</a>
-</dt>
-</dl>
+
+<a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_hook_keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
+
+<a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_hook_keyboard.md">INTERNAL_I8042_HOOK_KEYBOARD</a>
+
  
 
  

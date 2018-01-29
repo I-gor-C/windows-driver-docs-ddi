@@ -7,8 +7,8 @@ old-location : netvista\ndisallocatecloneoidrequest.htm
 old-project : netvista
 ms.assetid : 426ff4f4-7924-4115-9f66-b4152e2ba5bb
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisAllocateCloneOidRequest
+ms.date : 1/18/2018
+ms.keywords : ndis/NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndisallocatecloneoidrequest, ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, NdisAllocateCloneOidRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisAllocateCloneOidRequest
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_OID_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -61,7 +65,7 @@ An NDIS handle that identifies a filter module or an intermediate driver's proto
 
 `OidRequest`
 
-
+TBD
 
 `PoolTag`
 
@@ -70,28 +74,66 @@ A kernel pool tag. The tag is a string, delimited by single quotation marks, wit
 
 `ClonedOidRequest`
 
-
+TBD
 
 
 ## Return Value
 
 <b>NdisAllocateClonedRequest</b> can return one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
-</dl>NDIS successfully allocated an NDIS_OID_REQUEST structure. The 
+</dl>
+</td>
+<td width="60%">
+NDIS successfully allocated an NDIS_OID_REQUEST structure. The 
        <i>CloneRequest</i> parameter contains a pointer to the NDIS_OID_REQUEST structure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_INVALID_PARAMETER</b></dt>
-</dl>The allocation request failed because the NDIS handle specified at 
+</dl>
+</td>
+<td width="60%">
+The allocation request failed because the NDIS handle specified at 
        <i>SourceHandle</i> is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
-</dl>The allocation request failed because NDIS did not have sufficient resources to complete the
+</dl>
+</td>
+<td width="60%">
+The allocation request failed because NDIS did not have sufficient resources to complete the
        allocation request.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
-</dl>The driver failed to allocate the cloned structure for reasons other than those in the preceding
+</dl>
+</td>
+<td width="60%">
+The driver failed to allocate the cloned structure for reasons other than those in the preceding
        list.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -123,16 +165,12 @@ The driver must subsequently call the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nf-ndis-ndisfreecloneoidrequest.md">NdisFreeCloneOidRequest</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneOidRequest function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneOidRequest function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

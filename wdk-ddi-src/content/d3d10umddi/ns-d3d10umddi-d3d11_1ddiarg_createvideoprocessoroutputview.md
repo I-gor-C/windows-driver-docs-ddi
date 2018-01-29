@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3545AE6F-3D9E-4C3B-8C22-B823A18CC700
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW, D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW
+ms.keywords : d3d10umddi/D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW, D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW structure [Display Devices], display.d3d11_1ddiarg_createvideoprocessoroutputview, d3d10umddi/PD3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW, D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW, PD3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW structure pointer [Display Devices], PD3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW {
 
 ## Members
 
-        
-            `ArraySize`
 
-            The number of array slices for the texture.
-        
-            `FirstArraySlice`
+`ArraySize`
 
-            The identifier of the first array slice.
-        
-            `hDrvResource`
+The number of array slices for the texture.
 
-            A handle to the video decoder output resource.
-        
-            `hDrvVideoProcessorEnum`
+`FirstArraySlice`
 
-            A handle to the video processor enumeration.
-        
-            `MipSlice`
+The identifier of the first array slice.
 
-            The identifier of the MIP-map slice.
+`hDrvResource`
+
+A handle to the video decoder output resource.
+
+`hDrvVideoProcessorEnum`
+
+A handle to the video processor enumeration.
+
+`MipSlice`
+
+The identifier of the MIP-map slice.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessorinputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a>
-</dt>
-</dl>
+
  
 
  

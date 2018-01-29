@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 71e2f946-706d-41bc-9d9c-d63230877e48
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidD_FreePreparsedData
+ms.keywords : HidD_FreePreparsedData routine [Human Input Devices], hidfunc_2ca8b6ee-b391-40ac-bd0e-491089d7ed06.xml, HidD_FreePreparsedData, hidsdi/HidD_FreePreparsedData, hid.hidd_freepreparseddata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HidD_FreePreparsedData
-req.alt-loc : Hid.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Hid.lib
 req.dll : Hid.dll
 req.irql : 
-req.typenames : HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 
@@ -79,14 +83,10 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-</dt>
-<dt>
 <a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
  
 
  

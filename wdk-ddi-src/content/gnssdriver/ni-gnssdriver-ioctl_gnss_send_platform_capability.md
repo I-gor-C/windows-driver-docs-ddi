@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : EF979267-BDF3-4C42-B18E-C77E2584BC2D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
+ms.keywords : sensors.ioctl_gnss_send_platform_capability, IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code [Sensor Devices], IOCTL_GNSS_SEND_PLATFORM_CAPABILITY, gnssdriver/IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_SUPL_CERT_ACTION
 ---
 
@@ -59,21 +63,25 @@ Set to 0.
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code.
 
-    ## Remarks
-        The driver sets one of the following NTSTATUS values to indicate result.
-
+## Remarks
+The driver sets one of the following NTSTATUS values to indicate result.
+<ul>
+<li>
 <b>STATUS_SUCCESS</b>, when the driver processes the capability information successfully.
 
+</li>
+<li>
 <b>Failed</b>, when the driver does not process the capability information successfully.
 
+</li>
+<li>
 <b>Ignored</b>, when the driver ignores the capability information.
 
-This is a void fire-and-forget style call to the driver. The GNSS adapter does not do any special error handling even when the call fails.
-
-The driver can record the capability information in state variables and pass on to the engine as needed. The I/O should be completed as soon as the configuration information is copied.
+</li>
+</ul><h3><a id="GNSS_adapter_notes"></a><a id="gnss_adapter_notes"></a><a id="GNSS_ADAPTER_NOTES"></a>GNSS adapter notes</h3>This is a void fire-and-forget style call to the driver. The GNSS adapter does not do any special error handling even when the call fails.
+<h3><a id="GNSS_driver_notes"></a><a id="gnss_driver_notes"></a><a id="GNSS_DRIVER_NOTES"></a>GNSS driver notes</h3>The driver can record the capability information in state variables and pass on to the engine as needed. The I/O should be completed as soon as the configuration information is copied.
 
 This should be called when the GNSS adapter is initializing the GNSS driver.
 
@@ -84,22 +92,16 @@ This should be called when the GNSS adapter is initializing the GNSS driver.
 | **Header** | gnssdriver.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
-</dt>
-<dt>
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
-</dt>
-</dl>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+
  
 
  

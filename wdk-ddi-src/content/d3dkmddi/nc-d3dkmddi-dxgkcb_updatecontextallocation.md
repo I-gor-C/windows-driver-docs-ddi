@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 708A33C2-9620-4259-845A-2F862B6F209B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcbupdatecontextallocation, DxgkCbUpdateContextAllocation callback function [Display Devices], DxgkCbUpdateContextAllocation, DXGKCB_UPDATECONTEXTALLOCATION, DXGKCB_UPDATECONTEXTALLOCATION, d3dkmddi/DxgkCbUpdateContextAllocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbUpdateContextAllocation
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -82,14 +86,10 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the e
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_updatecontextallocation.md">DXGKARGCB_UPDATECONTEXTALLOCATION</a>
-</dt>
-</dl>
+
  
 
  

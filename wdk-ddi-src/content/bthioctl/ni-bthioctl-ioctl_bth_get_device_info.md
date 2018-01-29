@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 99bc222f-9c27-45b7-ade1-2401dfa41d7c
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.keywords : bltooth.ioctl_bth_get_device_info, IOCTL_BTH_GET_DEVICE_INFO control code [Bluetooth Devices], IOCTL_BTH_GET_DEVICE_INFO, bthioctl/IOCTL_BTH_GET_DEVICE_INFO, bth_ioctls_427504e3-7414-4d2c-b835-b612ed73ce01.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTH_GET_DEVICE_INFO
-req.alt-loc : Bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1"
 ---
 
 # IOCTL_BTH_GET_DEVICE_INFO IOCTL
-The IOCTL_BTH_GET_DEVICE_INFO request returns information about all cached, previously discovered
-     remote radios that are Bluetooth-enabled.
-
-
-
 The IOCTL_BTH_GET_DEVICE_INFO request returns information about all cached, previously discovered
      remote radios that are Bluetooth-enabled.
 
@@ -74,7 +73,6 @@ If the size of the passed output buffer is not exactly <code>sizeof(BTH_DEVICE_I
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the buffer that
       holds information about the array of devices. The BTH_DEVICE_INFO_LIST structure contains storage for
@@ -83,21 +81,45 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_PARAMETER
 
+</td>
+<td>
 The input buffer passed in was <b>NULL</b>.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_BUFFER_SIZE
 
+</td>
+<td>
 The output buffer was not sized correctly.
 
-    ## Remarks
-        The IOCTL_BTH_GET_DEVICE_INFO IOCTL provides information about all previously discovered remote
+</td>
+</tr>
+</table>
+
+## Remarks
+The IOCTL_BTH_GET_DEVICE_INFO IOCTL provides information about all previously discovered remote
     radios.
 
 The 
@@ -121,14 +143,12 @@ The BTH_DEVICE_INFO_LIST structure includes storage for the first BTH_DEVICE_INF
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | <= PASSIVE_LEVEL |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a>
-</dt>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a></dt>
-</dl>
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a>
+
  
 
  

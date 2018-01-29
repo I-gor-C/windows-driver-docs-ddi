@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F57FA113-F664-4B10-8457-DF6D266264E9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _ALTERNATE_INTERFACE, ALTERNATE_INTERFACE, *PALTERNATE_INTERFACE
+ms.keywords : _ALTERNATE_INTERFACE, ALTERNATE_INTERFACE, buses.alternate_interface, PALTERNATE_INTERFACE structure pointer [Buses], ALTERNATE_INTERFACE structure [Buses], *PALTERNATE_INTERFACE, usbfnbase/PALTERNATE_INTERFACE, usbfnbase/ALTERNATE_INTERFACE, PALTERNATE_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ALTERNATE_INTERFACE
-req.alt-loc : usbfnbase.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : ALTERNATE_INTERFACE, *PALTERNATE_INTERFACE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PALTERNATE_INTERFACE, ALTERNATE_INTERFACE"
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _ALTERNATE_INTERFACE {
 
 ## Members
 
-        
-            `AlternateInterfaceNumber`
 
-            The index number for the alternate USB interface setting.
-        
-            `InterfaceNumber`
+`AlternateInterfaceNumber`
 
-            The index number for theUSB interface setting.
+The index number for the alternate USB interface setting.
+
+`InterfaceNumber`
+
+The index number for theUSB interface setting.
 
 
 ## Requirements
@@ -66,13 +70,10 @@ typedef struct _ALTERNATE_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h (include Usbfnbase.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbfnbase\ns-usbfnbase-_usbfn_notification.md">USBFN_NOTIFICATION</a>
-</dt>
-</dl>
+
  
 
  

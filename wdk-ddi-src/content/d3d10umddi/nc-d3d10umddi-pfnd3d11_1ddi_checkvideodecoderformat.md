@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6bde6e00-70ba-4fa5-9cc0-9884ce7381ed
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.checkvideodecoderformat, CheckVideoDecoderFormat callback function [Display Devices], CheckVideoDecoderFormat, PFND3D11_1DDI_CHECKVIDEODECODERFORMAT, PFND3D11_1DDI_CHECKVIDEODECODERFORMAT, d3d10umddi/CheckVideoDecoderFormat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CheckVideoDecoderFormat
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -77,7 +81,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-This function is not expected to fail.</p>
+This function is not expected to fail.
 
 ## Requirements
 | &nbsp; | &nbsp; |

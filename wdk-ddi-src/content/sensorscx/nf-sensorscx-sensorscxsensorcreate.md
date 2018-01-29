@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : A365381B-3456-47B6-93C7-81C8963CB183
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SensorsCxSensorCreate
+ms.keywords : SensorsCxSensorCreate function [Sensor Devices], sensors.sensorscxsensorcreate, SensorsCxSensorCreate, sensorscx/SensorsCxSensorCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SensorsCxSensorCreate
-req.alt-loc : SensorsCx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -67,20 +71,27 @@ A reference to a sensor object that is used within the class extension.
 ## Return Value
 
 This function returns NTSTATUS with different values. Some values that may be returned are the following:
-
+<ul>
+<li>
 STATUS_SUCCESS is returned when the function completes successfully.
 
+</li>
+<li>
 STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL.
 
+</li>
+<li>
 STATUS_INSUFFICIENT_RESOURCES is returned if there were insufficient resources to allocate memory for this function.
+
+</li>
+</ul>
 
 ## Remarks
 
 SensorsCxSensorCreate is implemented by the class extension and must be called by the driver. 
 
 
-
- 
+<div class="alert"><b>Note</b>  If pSensorAttributes-&gt;ParentObject is not set to NULL or FxDevice, then SensorsCxSensorCreate will fail. If pSensorAttributes-&gt;ParentObject is NULL, then the class extension (CX) will set it to FxDevice.</div><div> </div> 
 
 The sensors class extension writes a set of properties for each sensor when SensorsCxSensorCreate. For information about these properties, see Enumeration properties.
 
@@ -98,12 +109,10 @@ The sensors class extension writes a set of properties for each sensor when Sens
 
 ## See Also
 
-<dl>
-<dt>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=313456">WDF_OBJECT_ATTRIBUTES</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>
-</dt>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=313456">WDF_OBJECT_ATTRIBUTES</a></dt>
-</dl>
+
  
 
  

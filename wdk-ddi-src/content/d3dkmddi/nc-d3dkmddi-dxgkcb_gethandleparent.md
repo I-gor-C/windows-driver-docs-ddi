@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : db8e7a91-d62a-4d2f-ac21-266e365a352c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcbgethandleparent, DxgkCbGetHandleParent callback function [Display Devices], DxgkCbGetHandleParent, DXGKCB_GETHANDLEPARENT, DXGKCB_GETHANDLEPARENT, d3dkmddi/DxgkCbGetHandleParent, DpFunctions_7094d9b1-3262-45b9-88de-e834878b6b2d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbGetHandleParent
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -63,12 +67,14 @@ D3DKMT_HANDLE DxgkcbGethandleparent(
 If <i>DxgkCbGetHandleParent</i> returns a <b>NULL</b> handle, the DirectX graphics kernel subsystem was unable to resolve the handle to the parent resource because, for example, of the following possible reasons:
 
 
-
-If a <b>NULL</b> handle is returned, the display miniport driver should fail its currently running DDI function with STATUS_INVALID_HANDLE.
+<ul>
+<li>An invalid handle was received from the user-mode display driver because of a malicious attack or some other bug.</li>
+<li>Allocations had lifetime issues. </li>
+</ul>If a <b>NULL</b> handle is returned, the display miniport driver should fail its currently running DDI function with STATUS_INVALID_HANDLE.
 
 ## Remarks
 
-For <b>DxgkCbGetHandleParent</b> to return a resource handle, the handle in <i>hAllocation</i> must be an allocation handle that is associated with a resource; otherwise, <b>DxgkCbGetHandleParent</b> returns <b>NULL</b>.</p>
+For <b>DxgkCbGetHandleParent</b> to return a resource handle, the handle in <i>hAllocation</i> must be an allocation handle that is associated with a resource; otherwise, <b>DxgkCbGetHandleParent</b> returns <b>NULL</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

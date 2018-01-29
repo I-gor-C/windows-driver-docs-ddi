@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5B910D0B-0D1D-45D8-B418-13DC00B3398A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR, *PUSB_30_HUB_DESCRIPTOR
+ms.keywords : USB_30_HUB_DESCRIPTOR structure [Buses], usbspec/PUSB_30_HUB_DESCRIPTOR, buses.usb_30_hub_descriptor, *PUSB_30_HUB_DESCRIPTOR, PUSB_30_HUB_DESCRIPTOR, PUSB_30_HUB_DESCRIPTOR structure pointer [Buses], _USB_30_HUB_DESCRIPTOR, usbspec/USB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_30_HUB_DESCRIPTOR
-req.alt-loc : Usbspec.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USB_30_HUB_DESCRIPTOR, *PUSB_30_HUB_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -55,42 +59,42 @@ typedef struct _USB_30_HUB_DESCRIPTOR {
 
 ## Members
 
-        
-            `bDescriptorType`
 
-            The descriptor type. For SuperSpeed hub descriptors, the value must be USB_30_HUB_DESCRIPTOR_TYPE (0x2A).
-        
-            `bHubControlCurrent`
+`bDescriptorType`
 
-            The maximum current requirements, in milliamperes, of the controller component of the hub.
-        
-            `bHubHdrDecLat`
+The descriptor type. For SuperSpeed hub descriptors, the value must be USB_30_HUB_DESCRIPTOR_TYPE (0x2A).
 
-            The    hub packet header decode latency.
-        
-            `bLength`
+`bHubControlCurrent`
 
-            The length, in bytes, of the descriptor.
-        
-            `bNumberOfPorts`
+The maximum current requirements, in milliamperes, of the controller component of the hub.
 
-            The number of ports on the hub.
-        
-            `bPowerOnToPowerGood`
+`bHubHdrDecLat`
 
-            The time, in 2-millisecond intervals, that it takes the device to turn on completely.
-        
-            `DeviceRemovable`
+The    hub packet header decode latency.
 
-            Indicates whether a removable device is attached to each port.
-        
-            `wHubCharacteristics`
+`bLength`
 
-            The hub characteristics.
-        
-            `wHubDelay`
+The length, in bytes, of the descriptor.
 
-            The average delay, in nanoseconds, that is introduced by the hub.
+`bNumberOfPorts`
+
+The number of ports on the hub.
+
+`bPowerOnToPowerGood`
+
+The time, in 2-millisecond intervals, that it takes the device to turn on completely.
+
+`DeviceRemovable`
+
+Indicates whether a removable device is attached to each port.
+
+`wHubCharacteristics`
+
+The hub characteristics.
+
+`wHubDelay`
+
+The average delay, in nanoseconds, that is introduced by the hub.
 
 
 ## Requirements
@@ -101,16 +105,12 @@ typedef struct _USB_30_HUB_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | usbspec.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_hub_information_ex.md">USB_HUB_INFORMATION_EX</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ee54b382-7b69-4d8d-8728-fe2bff7884cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaStartChanges
+ms.keywords : bdasup/BdaStartChanges, BdaStartChanges, bdaref_16498957-566e-405d-b573-3a2eb75a6bcb.xml, stream.bdastartchanges, BdaStartChanges function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaStartChanges
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -50,7 +54,7 @@ NTSTATUS BdaStartChanges(
 
 `pIrp`
 
-
+TBD
 
 
 ## Return Value
@@ -77,23 +81,16 @@ Calling the <b>BdaStartChanges</b> function causes any previously requested topo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a>
-</dt>
-<dt>
-<a href="..\bdasup\nf-bdasup-bdacommitchanges.md">BdaCommitChanges</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563418">KSMETHOD_BDA_START_CHANGES</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
-</dt>
-<dt>
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563418">KSMETHOD_BDA_START_CHANGES</a>
+
+<a href="..\bdasup\nf-bdasup-bdacommitchanges.md">BdaCommitChanges</a>
+
  
 
  

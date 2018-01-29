@@ -7,8 +7,8 @@ old-location : netvista\rilcallinfostatus_2.htm
 old-project : netvista
 ms.assetid : 16ecddf7-6c79-4e95-957d-19f27c3e3cf5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLINFOSTATUS, RILCALLINFOSTATUS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_CPISTAT_MEDIA, RIL_CPISTAT_ONHOLD, RIL_CPISTAT_MEDIA, RIL_CPISTAT_NEW_INCOMING, rilapitypes/RIL_CPISTAT_MAX, RIL_CPISTAT_NEW_OUTGOING, RILCALLINFOSTATUS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_CPISTAT_NEW_OUTGOING, RIL_CPISTAT_HANDOVER, rilapitypes/RIL_CPISTAT_HANDOVER, RILCALLINFOSTATUS, rilapitypes/RIL_CPISTAT_ONHOLD, RIL_CPISTAT_MAX, rilapitypes/RIL_CPISTAT_CONNECTED, RIL_CPISTAT_CONNECTED, rilapitypes/RIL_CPISTAT_NEW_INCOMING, RIL_CPISTAT_DISCONNECTED, rilapitypes/RIL_CPISTAT_DISCONNECTED, netvista.rilcallinfostatus_2, rilapitypes/RILCALLINFOSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLINFOSTATUS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLINFOSTATUS
 req.product : Windows 10 or later.
 ---
@@ -93,6 +97,11 @@ typedef enum _RILCALLINFOSTATUS {
 
 <tr>
 <td>RIL_CPISTAT_ONHOLD</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CPISTAT_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

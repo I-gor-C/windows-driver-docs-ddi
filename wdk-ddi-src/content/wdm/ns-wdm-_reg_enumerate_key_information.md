@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fdae9130-b33e-4714-9e8c-f4faf21ee8c8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_ENUMERATE_KEY_INFORMATION, *PREG_ENUMERATE_KEY_INFORMATION, REG_ENUMERATE_KEY_INFORMATION
+ms.keywords : _REG_ENUMERATE_KEY_INFORMATION, kstruct_d_e20923be-cb64-43a0-b3d0-a28290fadc07.xml, PREG_ENUMERATE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PREG_ENUMERATE_KEY_INFORMATION, kernel.reg_enumerate_key_information, REG_ENUMERATE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_ENUMERATE_KEY_INFORMATION, wdm/REG_ENUMERATE_KEY_INFORMATION, REG_ENUMERATE_KEY_INFORMATION, wdm/PREG_ENUMERATE_KEY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_ENUMERATE_KEY_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PREG_ENUMERATE_KEY_INFORMATION, REG_ENUMERATE_KEY_INFORMATION"
 req.product : Windows 10 or later.
 ---
@@ -55,45 +59,45 @@ typedef struct _REG_ENUMERATE_KEY_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Index`
+`CallContext`
 
-            The zero-based index of the subkey within the key.
-        
-            `KeyInformation`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
 
-            A pointer to a buffer that contains the information to be returned by the system. The format of the buffer depends on the value of <b>KeyInformationClass</b>. For more information, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
-        
-            `KeyInformationClass`
+`Index`
 
-            The <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a> value that indicates the type of information to be returned by the system in the <b>KeyInformation</b> buffer.
-        
-            `Length`
+The zero-based index of the subkey within the key.
 
-            The size, in bytes, of the <b>KeyInformation</b> buffer.
-        
-            `Object`
+`KeyInformation`
 
-            A pointer to the registry key object for the key whose subkeys are being enumerated.
-        
-            `ObjectContext`
+A pointer to a buffer that contains the information to be returned by the system. The format of the buffer depends on the value of <b>KeyInformationClass</b>. For more information, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
 
-            A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `Reserved`
+`KeyInformationClass`
 
-            This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
-        
-            `ResultLength`
+The <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a> value that indicates the type of information to be returned by the system in the <b>KeyInformation</b> buffer.
 
-            A pointer to a ULONG that receives (from the system) the amount of valid data, in bytes, in the <b>KeyInformation</b> buffer.
+`Length`
 
-    ## Remarks
-        The system passes this structure to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to enumerate the subkeys of a key—for example, when a user-mode thread calls <b>RegEnumKey</b> or <b>RegEnumKeyEx</b> or when a driver calls <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>.
+The size, in bytes, of the <b>KeyInformation</b> buffer.
+
+`Object`
+
+A pointer to the registry key object for the key whose subkeys are being enumerated.
+
+`ObjectContext`
+
+A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`Reserved`
+
+This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`ResultLength`
+
+A pointer to a ULONG that receives (from the system) the amount of valid data, in bytes, in the <b>KeyInformation</b> buffer.
+
+## Remarks
+The system passes this structure to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to enumerate the subkeys of a key—for example, when a user-mode thread calls <b>RegEnumKey</b> or <b>RegEnumKeyEx</b> or when a driver calls <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>.
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
@@ -105,22 +109,16 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
+<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
+
  
 
  

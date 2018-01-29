@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F986A431-A70D-4488-A792-F37128902C7E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WdmlibIoValidateDeviceIoControlAccess
+ms.keywords : wdmsec/WdmlibIoValidateDeviceIoControlAccess, wdmsec/IoValidateDeviceIoControlAccess, FILE_READ_ACCESS, FILE_WRITE_ACCESS, IoValidateDeviceIoControlAccess, WdmlibIoValidateDeviceIoControlAccess function [Kernel-Mode Driver Architecture], WdmlibIoValidateDeviceIoControlAccess, kernel.wdmlibiovalidatedeviceiocontrolaccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WdmlibIoValidateDeviceIoControlAccess,IoValidateDeviceIoControlAccess
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM"
 req.product : Windows 10 or later.
 ---
 
@@ -57,27 +61,76 @@ Specifies the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> on which to perform the ac
 `RequiredAccess`
 
 Specifies the type of access to the device object that the request sender must have. The caller can specify one or more of the following flags.
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="FILE_READ_ACCESS"></a><a id="file_read_access"></a><dl>
+<dt><b>FILE_READ_ACCESS</b></dt>
+</dl>
+</td>
+<td width="60%">
+The request sender must have read access to the device object
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="FILE_WRITE_ACCESS"></a><a id="file_write_access"></a><dl>
+<dt><b>FILE_WRITE_ACCESS</b></dt>
+</dl>
+</td>
+<td width="60%">
+The request sender must have write access to the device object.
+
+</td>
+</tr>
+</table>
 
 
 ## Return Value
 
 <b>WdmlibIoValidateDeviceIoControlAccess</b> returns an NTSTATUS value. Possible return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The request sender has the necessary access to the device object. 
+</dl>
+</td>
+<td width="60%">
+The request sender has the necessary access to the device object. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The request sender does not have the necessary access to the device object.
+</dl>
+</td>
+<td width="60%">
+The request sender does not have the necessary access to the device object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The specified parameters are invalid. For example, if the routine is passed an IRP that is not an <b>IRP_MJ_DEVICE_CONTROL</b> or <b>IRP_MJ_FILE_SYSTEM_CONTROL</b> IRP, it returns STATUS_INVALID_PARAMETER.
+</dl>
+</td>
+<td width="60%">
+The specified parameters are invalid. For example, if the routine is passed an IRP that is not an <b>IRP_MJ_DEVICE_CONTROL</b> or <b>IRP_MJ_FILE_SYSTEM_CONTROL</b> IRP, it returns STATUS_INVALID_PARAMETER. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -102,11 +155,8 @@ The access checks are only performed if the <b>RequestorMode</b> member of the <
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-</dl>
+
  
 
  

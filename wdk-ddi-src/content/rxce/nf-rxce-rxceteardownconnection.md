@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 71b48983-af12-4361-8cf9-adec1afffb65
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeTearDownConnection
+ms.keywords : rxref_bf951adb-b63e-49f6-8325-f67adb2cdbf0.xml, rxce/RxCeTearDownConnection, RxCeTearDownConnection, ifsk.rxceteardownconnection, RxCeTearDownConnection function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeTearDownConnection
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -57,12 +61,34 @@ A pointer to an connection to be torn down.
 ## Return Value
 
 <b>RxCeTearDownConnection</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The allocation of nonpaged pool memory needed by this routine failed. 
+</dl>
+</td>
+<td width="60%">
+The allocation of nonpaged pool memory needed by this routine failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters passed to this routine was invalid.
+</dl>
+</td>
+<td width="60%">
+One of the parameters passed to this routine was invalid. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -82,11 +108,8 @@ When <b>RxCeTearDownConnection</b> is successful, the data members in the RXCE_C
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilumtskind_2.htm
 old-project : netvista
 ms.assetid : 66322f97-e249-4337-b228-826ab4728220
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUMTSKIND, RILUMTSKIND
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_UMTSKIND_HSPAPLUS, RIL_UMTSKIND_HSDPA, RIL_UMTSKIND_HSUPA, rilapitypes/RIL_UMTSKIND_HSUPA, RIL_UMTSKIND_HSPAPLUS, RILUMTSKIND, rilapitypes/RILUMTSKIND, RILUMTSKIND enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_UMTSKIND_HSDPA, rilapitypes/RIL_UMTSKIND_HSPAPLUS_64QAM, RIL_UMTSKIND_MAX, rilapitypes/RIL_UMTSKIND_DC_HSPAPLUS, rilapitypes/RIL_UMTSKIND_MAX, RIL_UMTSKIND_HSPAPLUS_64QAM, RIL_UMTSKIND_DC_HSPAPLUS, netvista.rilumtskind_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUMTSKIND
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUMTSKIND
 req.product : Windows 10 or later.
 ---
@@ -81,6 +85,11 @@ typedef enum _RILUMTSKIND {
 
 <tr>
 <td>RIL_UMTSKIND_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_UMTSKIND_UMTS</td>
 <td></td>
 </tr>
 </table>

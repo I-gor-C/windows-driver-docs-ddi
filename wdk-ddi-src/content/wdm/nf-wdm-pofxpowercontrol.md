@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B821AF54-AF2C-4E19-BC70-2E0A8F172D93
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxPowerControl
+ms.keywords : PoFxPowerControl routine [Kernel-Mode Driver Architecture], PoFxPowerControl, kernel.pofxpowercontrol, wdm/PoFxPowerControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxPowerControl
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,12 +91,34 @@ A pointer to a location into which the routine writes the number of bytes of dat
 ## Return Value
 
 <b>PoFxPowerControl</b> returns <b>STATUS_SUCCESS</b> if the requested operation succeeds. Possible error return values include the following status code.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>The requested power control operation is not implemented.
+</dl>
+</td>
+<td width="60%">
+The requested power control operation is not implemented.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The power engine plug-in (PEP) does not acknowledge support for this device.
+</dl>
+</td>
+<td width="60%">
+The power engine plug-in (PEP) does not acknowledge support for this device.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -116,14 +142,10 @@ PoFx delegates the handling of all power control requests to the power engine pl
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
-</dt>
-</dl>
+
  
 
  

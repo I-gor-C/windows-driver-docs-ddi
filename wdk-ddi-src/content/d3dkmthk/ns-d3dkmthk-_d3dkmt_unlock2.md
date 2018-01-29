@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8651297B-BCF7-42A2-9175-D9D072E052D6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_UNLOCK2, D3DKMT_UNLOCK2
+ms.keywords : D3DKMT_UNLOCK2, d3dkmthk/D3DKMT_UNLOCK2, D3DKMT_UNLOCK2 structure [Display Devices], display.d3dkmt_unlock2, _D3DKMT_UNLOCK2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_UNLOCK2
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_UNLOCK2
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DKMT_UNLOCK2 {
 
 ## Members
 
-        
-            `hAllocation`
 
-            The handle to the allocation to unlock.
-        
-            `hDevice`
+`hAllocation`
 
-            The handle to the device.
+The handle to the allocation to unlock.
+
+`hDevice`
+
+The handle to the device.
 
 
 ## Requirements

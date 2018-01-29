@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f1f99725-4110-49b4-9149-1f6d03faeb0e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE, D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
+ms.keywords : D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE, display.d3dddiarg_dxvahd_setvideoprocessstreamstate, D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE structure [Display Devices], _D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE, UMDisplayDriver_param_Structs_6b11ff68-267b-47f0-aa04-17d3eea71e20.xml, d3dumddi/D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE is suppo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE {
 
 ## Members
 
-        
-            `DataSize`
 
-            [in] The size, in bytes, of the data that is used to change the stream state.
-        
-            `hVideoProcessor`
+`DataSize`
 
-            [in] A handle to the video processor whose stream state is changed.
-        
-            `pData`
+[in] The size, in bytes, of the data that is used to change the stream state.
 
-            [in] A pointer to the data that is used to change the stream state. For more information about the types of data that <b>pData</b> can point to, see the values of the <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_stream_state.md">DXVAHDDDI_STREAM_STATE</a> enumeration.
-        
-            `State`
+`hVideoProcessor`
 
-            [in] A <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_stream_state.md">DXVAHDDDI_STREAM_STATE</a>-typed value that indicates the stream state to modify.
-        
-            `StreamNumber`
+[in] A handle to the video processor whose stream state is changed.
 
-            [in] A zero-based stream index number. This number must be less than the number that the driver set in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.
+`pData`
+
+[in] A pointer to the data that is used to change the stream state. For more information about the types of data that <b>pData</b> can point to, see the values of the <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_stream_state.md">DXVAHDDDI_STREAM_STATE</a> enumeration.
+
+`State`
+
+[in] A <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_stream_state.md">DXVAHDDDI_STREAM_STATE</a>-typed value that indicates the stream state to modify.
+
+`StreamNumber`
+
+[in] A zero-based stream index number. This number must be less than the number that the driver set in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.
 
 
 ## Requirements
@@ -80,19 +84,14 @@ typedef struct _D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_stream_state.md">DXVAHDDDI_STREAM_STATE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessstreamstate.md">SetVideoProcessStreamState</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_stream_state.md">DXVAHDDDI_STREAM_STATE</a>
+
  
 
  

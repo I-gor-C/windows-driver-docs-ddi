@@ -7,8 +7,8 @@ old-location : netvista\rilcallmediaofferaction_2.htm
 old-project : netvista
 ms.assetid : 2acfaeab-c196-46a9-87a4-c44306b46ad1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMEDIAOFFERACTION, RILCALLMEDIAOFFERACTION
+ms.date : 1/18/2018
+ms.keywords : RIL_CALLMEDIAOFFERACTION_MAX, netvista.rilcallmediaofferaction_2, RILCALLMEDIAOFFERACTION, rilapitypes/RIL_CALLMEDIAOFFERACTION_ASK, rilapitypes/RILCALLMEDIAOFFERACTION, rilapitypes/RIL_CALLMEDIAOFFERACTION_REJECT, RIL_CALLMEDIAOFFERACTION_CANCEL, RIL_CALLMEDIAOFFERACTION_ERROR, RIL_CALLMEDIAOFFERACTION_ACCEPT, RILCALLMEDIAOFFERACTION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_CALLMEDIAOFFERACTION_ACCEPT, rilapitypes/RIL_CALLMEDIAOFFERACTION_CANCEL, rilapitypes/RIL_CALLMEDIAOFFERACTION_MAX, rilapitypes/RIL_CALLMEDIAOFFERACTION_ERROR, RIL_CALLMEDIAOFFERACTION_REJECT, RIL_CALLMEDIAOFFERACTION_ASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMEDIAOFFERACTION
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLMEDIAOFFERACTION
 req.product : Windows 10 or later.
 ---
@@ -76,6 +80,11 @@ typedef enum _RILCALLMEDIAOFFERACTION {
 
 <tr>
 <td>RIL_CALLMEDIAOFFERACTION_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMEDIAOFFERACTION_NONE</td>
 <td></td>
 </tr>
 

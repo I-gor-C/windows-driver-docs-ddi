@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : DC495EFB-3522-4220-87F8-3DB501831D6E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : MagnetometerAccuracy, MagnetometerAccuracy
+ms.keywords : sensorsclassextension/Unknown, sensorsclassextension/Approximate, Approximate, MagnetometerAccuracy, MagnetometerAccuracy enumeration [Sensor Devices], sensorsclassextension/Unreliable, High, sensorsclassextension/MagnetometerAccuracy, sensorsclassextension/High, sensors.magnetometeraccuracy, Unknown, Unreliable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,Available in Windows 8.1.
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MagnetometerAccuracy
-req.alt-loc : SensorsClassExtension.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MagnetometerAccuracy
 req.product : Windows 10 or later.
 ---
@@ -51,6 +55,26 @@ typedef enum _MagnetometerAccuracy {
 ## Constants
 
 <table>
+
+<tr>
+<td>MAGNETOMETER_ACCURACY_APPROXIMATE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MAGNETOMETER_ACCURACY_HIGH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MAGNETOMETER_ACCURACY_UNKNOWN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MAGNETOMETER_ACCURACY_UNRELIABLE</td>
+<td></td>
+</tr>
 </table>
 
 ## Remarks
@@ -69,11 +93,8 @@ Apps that need calibration may periodically ask the user to calibrate the device
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A385FBF9-2222-49E0-A708-1638C0D2FF7A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS
+ms.keywords : "*PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS, pepfx/PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture], _PEP_UNMASKED_INTERRUPT_FLAGS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_UNMASKED_INTERRUPT_FLAGS
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS
 ---
 
@@ -50,13 +54,13 @@ typedef union _PEP_UNMASKED_INTERRUPT_FLAGS {
 
 ## Members
 
-        
-            `AsUSHORT`
 
-            A USHORT value that contains all of the unmasked interrupt flags.
+`AsUSHORT`
 
-    ## Remarks
-        The <b>Flags</b> member of the <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a> structure is a <b>PEP_UNMASKED_INTERRUPT_FLAGS</b> union.
+A USHORT value that contains all of the unmasked interrupt flags.
+
+## Remarks
+The <b>Flags</b> member of the <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a> structure is a <b>PEP_UNMASKED_INTERRUPT_FLAGS</b> union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -66,13 +70,10 @@ typedef union _PEP_UNMASKED_INTERRUPT_FLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d18f1da0-0cd0-48bf-bf01-a80887b6b2ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_UPDATEMODES,
+ms.keywords : IDARG_IN_UPDATEMODES, display.idarg_in_updatemodes, iddcx/IDARG_IN_UPDATEMODES, IDARG_IN_UPDATEMODES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_UPDATEMODES
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -48,18 +52,18 @@ typedef struct IDARG_IN_UPDATEMODES {
 
 ## Members
 
-        
-            `pTargetModes`
 
-            [in] Pointer to the buffer that the driver should copy the target modes it supports for this monitor into.
-        
-            `Reason`
+`pTargetModes`
 
-            Indicates the reason why the driver is updating the modes.
-        
-            `TargetModeCount`
+[in] Pointer to the buffer that the driver should copy the target modes it supports for this monitor into.
 
-            [in] Number of target modes in the <b>pTargetModes</b> buffer.  This cannot be zero.
+`Reason`
+
+Indicates the reason why the driver is updating the modes.
+
+`TargetModeCount`
+
+[in] Number of target modes in the <b>pTargetModes</b> buffer.  This cannot be zero.
 
 
 ## Requirements

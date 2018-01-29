@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0356e8a7-de44-4b0f-9067-ca3bb04260d8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::Drain, Drain
+ms.keywords : wudfddi/IWDFIoQueue::Drain, IWDFIoQueue::Drain, UMDFQueueObjectRef_cb7bdc3f-3280-4949-a60a-b78f13492da9.xml, umdf.iwdfioqueue_drain, Drain method, wdf.iwdfioqueue_drain, Drain method, IWDFIoQueue interface, IWDFIoQueue, Drain, IWDFIoQueue interface, Drain method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.Drain
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -63,18 +67,24 @@ None
 ## Remarks
 
 A driver should ensure that only one of the following methods is in progress at any given time: 
-
+<ul>
+<li>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
 
 
+</li>
+<li>
 <b>IWDFIoQueue::Drain</b>
 
+</li>
+<li>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558962">IWDFIoQueue::Purge</a>
 
 
-For example, if the driver previously called <b>Drain</b>, it should wait for notification from the method of the interface that the <i>pDrainComplete</i> parameter points to before the driver calls either <a href="https://msdn.microsoft.com/library/windows/hardware/dn927275">Stop</a> or <a href="https://msdn.microsoft.com/c7863713-850f-4516-aec5-9e851c36cf52">Purge</a>. Violating this rule results in termination of the host process.
+</li>
+</ul>For example, if the driver previously called <b>Drain</b>, it should wait for notification from the method of the interface that the <i>pDrainComplete</i> parameter points to before the driver calls either <a href="https://msdn.microsoft.com/library/windows/hardware/dn927275">Stop</a> or <a href="https://msdn.microsoft.com/c7863713-850f-4516-aec5-9e851c36cf52">Purge</a>. Violating this rule results in termination of the host process.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,20 +100,14 @@ For example, if the driver previously called <b>Drain</b>, it should wait for no
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558962">IWDFIoQueue::Purge</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
-</dt>
-</dl>
+
  
 
  

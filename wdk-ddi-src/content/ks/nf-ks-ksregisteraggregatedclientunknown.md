@@ -2,13 +2,13 @@
 UID : NF:ks.KsRegisterAggregatedClientUnknown
 title : KsRegisterAggregatedClientUnknown function
 author : windows-driver-content
-description : In a manner very similar to COM, the KsRegisterAggregatedClientUnknown function aggregates two objects the specified AVStream object and a client unknown object.
+description : In a manner very similar to COM, the KsRegisterAggregatedClientUnknown function aggregates two objects: the specified AVStream object and a client unknown object.
 old-location : stream\ksregisteraggregatedclientunknown.htm
 old-project : stream
 ms.assetid : b0e18e39-2435-4823-aab4-ba52d218294a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsRegisterAggregatedClientUnknown
+ms.keywords : KsRegisterAggregatedClientUnknown function [Streaming Media Devices], avfunc_1b7f6d25-4aae-4580-b8d2-5050c9ffede1.xml, stream.ksregisteraggregatedclientunknown, ks/KsRegisterAggregatedClientUnknown, KsRegisterAggregatedClientUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsRegisterAggregatedClientUnknown
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -86,23 +90,16 @@ Minidrivers do not need to be running in a C++ environment to use this function.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksdeviceregisteraggregatedclientunknown.md">KsDeviceRegisterAggregatedClientUnknown</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilterfactoryregisteraggregatedclientunknown.md">KsFilterFactoryRegisterAggregatedClientUnknown</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspinregisteraggregatedclientunknown.md">KsPinRegisterAggregatedClientUnknown</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksdeviceregisteraggregatedclientunknown.md">KsDeviceRegisterAggregatedClientUnknown</a>
+
 <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinregisteraggregatedclientunknown.md">KsPinRegisterAggregatedClientUnknown</a>
+
+<a href="..\ks\nf-ks-ksfilterfactoryregisteraggregatedclientunknown.md">KsFilterFactoryRegisterAggregatedClientUnknown</a>
+
  
 
  

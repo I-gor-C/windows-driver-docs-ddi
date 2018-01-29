@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2d5c1f3e-69a6-4f7f-9c99-bbaf94e6401b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.dxgk_pte, DXGK_PTE structure [Display Devices], _DXGK_PTE, DXGK_PTE, DmStructs_701e980c-29dc-46d2-8f03-ce8485a4cc70.xml, d3dukmdt/DXGK_PTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_PTE
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 

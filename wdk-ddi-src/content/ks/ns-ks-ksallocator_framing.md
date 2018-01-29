@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : db96eccd-6747-458b-9a9e-ec909146f3fa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSALLOCATOR_FRAMING, *PKSALLOCATOR_FRAMING, KSALLOCATOR_FRAMING
+ms.keywords : PKSALLOCATOR_FRAMING, ks/KSALLOCATOR_FRAMING, KSALLOCATOR_FRAMING, *PKSALLOCATOR_FRAMING, KSALLOCATOR_FRAMING structure [Streaming Media Devices], ks-struct_cc2d8d16-75d5-4ef4-b8de-63197e61424b.xml, PKSALLOCATOR_FRAMING structure pointer [Streaming Media Devices], stream.ksallocator_framing, ks/PKSALLOCATOR_FRAMING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSALLOCATOR_FRAMING
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSALLOCATOR_FRAMING, KSALLOCATOR_FRAMING"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSALLOCATOR_FRAMING, *PKSALLOCATOR_FRAMING
 ---
 
 # KSALLOCATOR_FRAMING structure
@@ -54,21 +58,21 @@ typedef struct {
 
 ## Members
 
-        
-            `Frames`
 
-            Specifies the total number of allowable outstanding frames. Zero indicates that the filter has no requirement for this member.
-        
-            `FrameSize`
+`Frames`
 
-            Specifies the total size of the frame, including prefix and postfix. Zero indicates that the filter has no requirement for this member.
-        
-            `Reserved`
+Specifies the total number of allowable outstanding frames. Zero indicates that the filter has no requirement for this member.
 
-            Reserved for system use. Set to zero.
+`FrameSize`
 
-    ## Remarks
-        Use KSALLOCATOR_FRAMING to submit an allocator creation request to a handle of a sink by using IRP_MJ_CREATE.
+Specifies the total size of the frame, including prefix and postfix. Zero indicates that the filter has no requirement for this member.
+
+`Reserved`
+
+Reserved for system use. Set to zero.
+
+## Remarks
+Use KSALLOCATOR_FRAMING to submit an allocator creation request to a handle of a sink by using IRP_MJ_CREATE.
 
 When you specify a value for the <b>FileAlignment</b> member, the smallest allocation alignment is 1 byte (FILE_BYTE_ALIGNMENT). Software that functions as an allocation should support 4-byte alignment (FILE_LONG_ALIGNMENT), if possible.
 
@@ -80,13 +84,10 @@ When you specify a value for the <b>FileAlignment</b> member, the smallest alloc
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\nf-ks-kscreateallocator.md">KsCreateAllocator</a>
-</dt>
-</dl>
+
  
 
  

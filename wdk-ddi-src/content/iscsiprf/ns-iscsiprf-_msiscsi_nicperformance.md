@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 921e6e44-adc2-4257-b11e-941121f5bfd7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_NICPerformance, MSiSCSI_NICPerformance, *PMSiSCSI_NICPerformance
+ms.keywords : iscsiprf/PMSiSCSI_NICPerformance, MSiSCSI_NICPerformance structure [Storage Devices], PMSiSCSI_NICPerformance structure pointer [Storage Devices], *PMSiSCSI_NICPerformance, storage.msiscsi_nicperformance, iscsiprf/MSiSCSI_NICPerformance, MSiSCSI_NICPerformance, PMSiSCSI_NICPerformance, structs-iSCSI_a4d4dddd-24f6-4aa5-9b2c-61c0f1604fdb.xml, _MSiSCSI_NICPerformance
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_NICPerformance
-req.alt-loc : iscsiprf.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MSiSCSI_NICPerformance, *PMSiSCSI_NICPerformance
 ---
 
@@ -49,25 +53,25 @@ typedef struct _MSiSCSI_NICPerformance {
 
 ## Members
 
-        
-            `BytesReceived`
 
-            The number of bytes that are received through the Ethernet port.
-        
-            `BytesTransmitted`
+`BytesReceived`
 
-            The number of bytes that are transmitted through the Ethernet port.
-        
-            `PDUReceived`
+The number of bytes that are received through the Ethernet port.
 
-            The number of PDUs that are received through the Ethernet port.
-        
-            `PDUTransmitted`
+`BytesTransmitted`
 
-            The number of PDUs that are transmitted through the Ethernet port.
+The number of bytes that are transmitted through the Ethernet port.
 
-    ## Remarks
-        It is optional that you implement this class.
+`PDUReceived`
+
+The number of PDUs that are received through the Ethernet port.
+
+`PDUTransmitted`
+
+The number of PDUs that are transmitted through the Ethernet port.
+
+## Remarks
+It is optional that you implement this class.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _MSiSCSI_NICPerformance {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiprf.h (include Iscsiprf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563089">MSiSCSI_NICPerformance WMI Class</a>
-</dt>
-</dl>
+
  
 
  

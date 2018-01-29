@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : E21E2FEC-8733-4A8A-A0C4-899F10824F9B
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SENSOR_CONFIG, SENSOR_CONFIG, *PSENSOR_CONFIG
+ms.keywords : PSENSOR_CONFIG, _SENSOR_CONFIG, SENSOR_CONFIG, PSENSOR_CONFIG structure pointer [Sensor Devices], SENSOR_CONFIG structure [Sensor Devices], sensorscx/SENSOR_CONFIG, sensorscx/PSENSOR_CONFIG, sensors.sensor_config, *PSENSOR_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SENSOR_CONFIG
-req.alt-loc : SensorsCx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SENSOR_CONFIG, *PSENSOR_CONFIG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSENSOR_CONFIG, SENSOR_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -48,17 +52,22 @@ typedef struct _SENSOR_CONFIG {
 
 ## Members
 
-        
-            `pEnumerationList`
 
-            The list of enumerations. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
-        
-            `Size`
+`pEnumerationList`
 
-            The allocated size of this structure (in bytes).
+The list of enumerations. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
 
-    ## Remarks
-        The SENSOR_CONFIG structure works with the following helper function:</p>
+`Size`
+
+The allocated size of this structure (in bytes).
+
+## Remarks
+The SENSOR_CONFIG structure works with the following helper function:
+<ul>
+<li>
+<a href="..\sensorscx\nf-sensorscx-sensor_config_init.md">SENSOR_CONFIG_INIT</a>
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b057ae2e-53ae-4da9-8668-1ebca3c80998
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRequestTimer
+ms.keywords : atartns_604a8d41-c918-4121-97ef-10d3a7fbf3b4.xml, irb/AtaPortRequestTimer, AtaPortRequestTimer, AtaPortRequestTimer routine [Storage Devices], storage.ataportrequesttimer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortRequestTimer
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortRequestTimer function
 The <b>AtaPortRequestTimer</b> routine requests a timer callback.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -56,7 +61,7 @@ A pointer to the channel extension.
 
 `CallBackRoutine`
 
-
+TBD
 
 `TimerValue`
 
@@ -87,11 +92,8 @@ The ATA port driver passes a pointer to the channel extension to the timer routi
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportstallexecution.md">AtaPortStallExecution</a>
-</dt>
-</dl>
+
  
 
  

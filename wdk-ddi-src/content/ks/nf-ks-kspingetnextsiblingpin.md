@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e6eb5998-50ad-4ad9-8368-4cd29e4f7777
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGetNextSiblingPin
+ms.keywords : KsPinGetNextSiblingPin, stream.kspingetnextsiblingpin, ks/KsPinGetNextSiblingPin, avfunc_a5363c0a-af05-43a6-aa4d-edd43e076eb7.xml, KsPinGetNextSiblingPin function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinGetNextSiblingPin
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,17 +79,12 @@ A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
  
 
  

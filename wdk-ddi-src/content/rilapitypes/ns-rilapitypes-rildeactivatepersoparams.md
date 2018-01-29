@@ -7,8 +7,8 @@ old-location : netvista\rildeactivatepersoparams_2.htm
 old-project : netvista
 ms.assetid : 525c0861-3537-4175-8415-7db13686dd7a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDEACTIVATEPERSOPARAMS, *LPRILDEACTIVATEPERSOPARAMS, RILDEACTIVATEPERSOPARAMS
+ms.date : 1/18/2018
+ms.keywords : "*LPRILDEACTIVATEPERSOPARAMS, RILDEACTIVATEPERSOPARAMS, netvista.rildeactivatepersoparams_2, rilapitypes/RILDEACTIVATEPERSOPARAMS, RILDEACTIVATEPERSOPARAMS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDEACTIVATEPERSOPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILDEACTIVATEPERSOPARAMS, RILDEACTIVATEPERSOPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILDEACTIVATEPERSOPARAMS, *LPRILDEACTIVATEPERSOPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _RILDEACTIVATEPERSOPARAMS {
 
 ## Members
 
-        
-            `dwPersoFeature`
 
-            
-        
-            `szPassword`
+`dwPersoFeature`
 
-            
+
+
+`szPassword`
+
+
 
 
 ## Requirements

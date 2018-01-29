@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 362C6F7C-7B92-43A8-9BD0-F647FDD266E4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceWdmDispatchIrp
+ms.keywords : wdf.wdfdevicewdmdispatchirp, kmdf.wdfdevicewdmdispatchirp, wdfdevice/WdfDeviceWdmDispatchIrp, WdfDeviceWdmDispatchIrp method, WdfDeviceWdmDispatchIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.17
-req.alt-api : WdfDeviceWdmDispatchIrp
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -55,15 +59,15 @@ NTSTATUS WdfDeviceWdmDispatchIrp(
 
 `Device`
 
-
+A handle to a framework device object.
 
 `Irp`
 
-
+A pointer to an IRP structure.
 
 `DispatchContext`
 
-
+The dispatch context parameter the driver received in <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>  callback.
 
 
 ## Return Value
@@ -92,14 +96,10 @@ If your driver provides an <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
-</dt>
-</dl>
+
  
 
  

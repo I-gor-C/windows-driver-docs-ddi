@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 74245a8b-1b52-4336-a744-1aedaca0eef5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
+ms.keywords : display.dxgi_ddi_multiplane_overlay_flags, dxgiddi/DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS enumeration [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
-req.alt-loc : Dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
 ---
 
@@ -49,6 +53,11 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS {
 ## Constants
 
 <table>
+
+<tr>
+<td>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION</td>
+<td></td>
+</tr>
 
 <tr>
 <td>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP</td>

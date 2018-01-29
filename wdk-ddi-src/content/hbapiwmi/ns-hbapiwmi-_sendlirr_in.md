@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 774acafb-c929-483a-82b0-2a358054dc7f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SendLIRR_IN, SendLIRR_IN, *PSendLIRR_IN
+ms.keywords : hbapiwmi/PSendLIRR_IN, hbapiwmi/SendLIRR_IN, SendLIRR_IN structure [Storage Devices], PSendLIRR_IN, SendLIRR_IN, structs-Fibre_6f0fd3c1-9eb5-4042-b12e-8dd225d966b1.xml, storage.sendlirr_in, *PSendLIRR_IN, _SendLIRR_IN, PSendLIRR_IN structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SendLIRR_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SendLIRR_IN, *PSendLIRR_IN
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSendLIRR_IN, SendLIRR_IN"
 ---
 
 # _SendLIRR_IN structure
@@ -49,25 +53,25 @@ typedef struct _SendLIRR_IN {
 
 ## Members
 
-        
-            `DestWWN`
 
-            Contains a worldwide name for the destination port.
-        
-            `Function`
+`DestWWN`
 
-            Contains the code that identifies which registration function is to be performed. For an explanation of which values can be assigned to this member, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification.
-        
-            `SourceWWN`
+Contains a worldwide name for the destination port.
 
-            Contains a worldwide name for the local port through which the link incident record registration (LIRR) command is sent.
-        
-            `Type`
+`Function`
 
-            Indicates the device type for which link information is requested. For an explanation of which values can be assigned to this member, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification.
+Contains the code that identifies which registration function is to be performed. For an explanation of which values can be assigned to this member, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SendLIRR_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`SourceWWN`
+
+Contains a worldwide name for the local port through which the link incident record registration (LIRR) command is sent.
+
+`Type`
+
+Indicates the device type for which link information is requested. For an explanation of which values can be assigned to this member, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification.
+
+## Remarks
+The WMI tool suite generates a declaration of the SendLIRR_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _SendLIRR_IN {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565419">SendLIRR</a>
-</dt>
-</dl>
+
  
 
  

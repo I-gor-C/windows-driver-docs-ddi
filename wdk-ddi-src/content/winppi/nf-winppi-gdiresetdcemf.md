@@ -7,8 +7,8 @@ old-location : print\gdiresetdcemf.htm
 old-project : print
 ms.assetid : ea97cc22-6057-427d-90c1-4f23ced932aa
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : GdiResetDCEMF
+ms.date : 1/18/2018
+ms.keywords : GdiResetDCEMF, winppi/GdiResetDCEMF, GdiResetDCEMF function [Print Devices], gdifnc_ff066b35-7062-430e-a8b9-bbdef46494a6.xml, print.gdiresetdcemf
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GdiResetDCEMF
-req.alt-loc : Gdi32.dll,Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll,GDI32Full.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Gdi32.Lib
 req.dll : Gdi32.dll
 req.irql : 
-req.typenames : DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -69,7 +73,7 @@ The <b>GdiResetDCEMF</b> function is exported by gdi32.dll for use within a prin
 
 Print processors must call <b>GdiResetDCEMF</b> whenever it is necessary to reset the printer's device context. The function must be called whenever the <a href="..\winppi\nf-winppi-gdigetdevmodeforpage.md">GdiGetDevmodeForPage</a> function indicates that the current document page's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure is not identical to that of the previous document page.
 
-For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.</p>
+For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

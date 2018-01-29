@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8ccf24a4-f087-4d61-8a9e-4bc05d7ec7bf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterReleaseProcessingMutex
+ms.keywords : ks/KsFilterReleaseProcessingMutex, KsFilterReleaseProcessingMutex, avfunc_35026563-e7aa-4305-a4fc-2558c1b21aa7.xml, KsFilterReleaseProcessingMutex function [Streaming Media Devices], stream.ksfilterreleaseprocessingmutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterReleaseProcessingMutex
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,11 +79,8 @@ For more AVStream-specific information about mutexes, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksfilteracquireprocessingmutex.md">KsFilterAcquireProcessingMutex</a>
-</dt>
-</dl>
+
  
 
  

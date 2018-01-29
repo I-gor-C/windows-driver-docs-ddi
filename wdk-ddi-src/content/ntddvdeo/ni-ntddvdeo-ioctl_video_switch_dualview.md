@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09fe033f-7876-4b23-baf6-5afe0866bb1d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_switch_dualview, IOCTL_VIDEO_SWITCH_DUALVIEW control code [Display Devices], IOCTL_VIDEO_SWITCH_DUALVIEW, ntddvdeo/IOCTL_VIDEO_SWITCH_DUALVIEW, Video_IOCTLs_424b313b-2f68-4284-97d6-596f1407ee96.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_SWITCH_DUALVIEW
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SWITCH_DUALVIEW IOCTL
@@ -42,24 +46,37 @@ Windows XP and later send this request to the video miniport driver to notify it
 <div class="alert"><b>Note</b>    This request, which is available in Windows XP and later, can only be used to manage video memory.</div>
 <div> </div>
 
-
-Notifies the video miniport that a secondary view is about to be enabled or disabled. A secondary view is enabled by a call to the video port driver's <a href="..\video\nf-video-videoportcreatesecondarydisplay.md">VideoPortCreateSecondaryDisplay</a>.
-
-Windows XP and later send this request to the video miniport driver to notify it of a secondary view change of status. Video miniport drivers can use this notification to make video memory arrangements in advance. For example, when the display driver sets the mode of the primary view, it can reserve video memory for one or more secondary views.
-
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
 The VRP <b>InputBuffer</b> contains a pointer to a ULONG, which can be one of the two following values:
-
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
 0
 
+</td>
+<td>
 The device is about to be detached.
 
+</td>
+</tr>
+<tr>
+<td>
 1
 
+</td>
+<td>
 The device is about to be attached.
+
+</td>
+</tr>
+</table>
 
 ### Input Buffer Length
 <text></text>
@@ -77,7 +94,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The miniport driver does not set the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure.
 
 
@@ -88,13 +104,10 @@ The miniport driver does not set the <b>Information</b> member of the <a href=".
 | **Header** | ntddvdeo.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\video\nf-video-videoportcreatesecondarydisplay.md">VideoPortCreateSecondaryDisplay</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 804263ec-8b3b-4a7c-9db4-ad524b807313
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetSwappedBufferMdlAddress
+ms.keywords : fltkernel/FltGetSwappedBufferMdlAddress, FltGetSwappedBufferMdlAddress, ifsk.fltgetswappedbuffermdladdress, FltApiRef_e_to_o_7ebd2be1-79a1-4a5a-a9ab-7ca5023eb8fc.xml, FltGetSwappedBufferMdlAddress routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetSwappedBufferMdlAddress
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -55,7 +59,12 @@ Pointer to the callback data structure for the operation.
 
 ## Return Value
 
-<b>FltGetSwappedBufferMdlAddress</b> returns the MDL address for the buffer that was swapped in by the caller. <b>FltGetSwappedBufferMdlAddress</b> returns <b>NULL</b> in the following cases:
+<b>FltGetSwappedBufferMdlAddress</b> returns the MDL address for the buffer that was swapped in by the caller. <b>FltGetSwappedBufferMdlAddress</b> returns <b>NULL</b> in the following cases: 
+<ul>
+<li>The operation is a fast I/O operation. In a fast I/O operation, the buffer cannot have an MDL. </li>
+<li>The buffer that was swapped in by the caller does not have an MDL. </li>
+<li>The minifilter driver did not swap buffers in the preoperation callback routine. </li>
+</ul>
 
 ## Remarks
 
@@ -85,14 +94,10 @@ The MDL for the buffer that was swapped in by the caller is automatically freed 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltretainswappedbuffermdladdress.md">FltRetainSwappedBufferMdlAddress</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
+
  
 
  

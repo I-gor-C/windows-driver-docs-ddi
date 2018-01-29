@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : dd981cc1-ab82-49de-8cf1-ba2b7451c7ef
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR
+ms.keywords : storage.dvd_layer_descriptor, ntddcdvd/PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR structure [Storage Devices], ntddcdvd/DVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR structure pointer [Storage Devices], structs-DVD_94f08da1-fe98-47cd-989a-b3f574874d6b.xml, _DVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_LAYER_DESCRIPTOR
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR
 ---
 
 # _DVD_LAYER_DESCRIPTOR structure
@@ -60,15 +64,14 @@ typedef struct _DVD_LAYER_DESCRIPTOR {
 
 ## Members
 
-        
-            `BCAFlag`
 
-            Indicates, if set to 1, the presence of data in the burst cutting area (BCA). If set to zero, it indicates that there is no BCA data.
-        
-            `BookType`
+`BCAFlag`
 
-            Specifies the DVD book this media complies with. This member can have one of the following values:
+Indicates, if set to 1, the presence of data in the burst cutting area (BCA). If set to zero, it indicates that there is no BCA data.
 
+`BookType`
+
+Specifies the DVD book this media complies with. This member can have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -125,27 +128,26 @@ DVD+RW
 </td>
 </tr>
 </table>
-        
-            `BookVersion`
 
-            Specifies the version of the specified book that this media complies with.
-        
-            `DiskSize`
+`BookVersion`
 
-            Specifies the physical size of the media. A value of zero indicates 120 mm. A value of 1 indicates a size of 80 mm.
-        
-            `EndDataSector`
+Specifies the version of the specified book that this media complies with.
 
-            Specifies the last sector of the user data in the last layer of the media.
-        
-            `EndLayerZeroSector`
+`DiskSize`
 
-            Specifies the last sector of the user data in layer zero. If this media does not use the opposite track path method and contains multiple layers, this value is set to zero.
-        
-            `LayerType`
+Specifies the physical size of the media. A value of zero indicates 120 mm. A value of 1 indicates a size of 80 mm.
 
-            Indicates the type of layer. This member can have one of the following values:
+`EndDataSector`
 
+Specifies the last sector of the user data in the last layer of the media.
+
+`EndLayerZeroSector`
+
+Specifies the last sector of the user data in layer zero. If this media does not use the opposite track path method and contains multiple layers, this value is set to zero.
+
+`LayerType`
+
+Indicates the type of layer. This member can have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -182,11 +184,10 @@ Rewritable layer
 </td>
 </tr>
 </table>
-        
-            `LinearDensity`
 
-            Indicates the minimum/maximum pit length used for this layer in units of micrometers per bit. This member can have one of the following values:
+`LinearDensity`
 
+Indicates the minimum/maximum pit length used for this layer in units of micrometers per bit. This member can have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -243,11 +244,10 @@ Rewritable layer
 </td>
 </tr>
 </table>
-        
-            `MinimumRate`
 
-            Specifies the read rate to use for the media. This member can have one of the following values:
+`MinimumRate`
 
+Specifies the read rate to use for the media. This member can have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -304,23 +304,22 @@ DVD+RW
 </td>
 </tr>
 </table>
-        
-            `NumberOfLayers`
 
-            Specifies the number of layers present on the side of the media being read. A value of zero indicates that the media has one layer. A value of 1 indicates that the media has two layers.
-        
-            `Reserved1`
+`NumberOfLayers`
 
-            Reserved.
-        
-            `Reserved5`
+Specifies the number of layers present on the side of the media being read. A value of zero indicates that the media has one layer. A value of 1 indicates that the media has two layers.
 
-            Reserved.
-        
-            `StartingDataSector`
+`Reserved1`
 
-            Specifies the first block that contains user data. This member can have one of the following values:
+Reserved.
 
+`Reserved5`
+
+Reserved.
+
+`StartingDataSector`
+
+Specifies the first block that contains user data. This member can have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -347,11 +346,10 @@ An initial block value of 0x30000 indicates that the media type is DVD-RAM or DV
 </td>
 </tr>
 </table>
-        
-            `TrackDensity`
 
-            Indicates the track width used for this media in units of micrometers per track. This member can have one of the following values:
+`TrackDensity`
 
+Indicates the track width used for this media in units of micrometers per track. This member can have one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -388,13 +386,13 @@ An initial block value of 0x30000 indicates that the media type is DVD-RAM or DV
 </td>
 </tr>
 </table>
-        
-            `TrackPath`
 
-            Specifies the direction of the layers when more than one layer is used. If the <b>TrackPath</b> member is zero, this media uses a parallel track path (PTP). With PTP, each layer is independent and has its own lead-in and lead-out areas. If <b>TrackPath</b> is 1, the media uses opposite track path (OTP). With opposite track path, the two layers are united, and there is only one lead-in and lead-out area. For further details, see the <i>SCSI Multimedia Commands - 3 (MMC-3) </i>specification.
+`TrackPath`
 
-    ## Remarks
-        For more information, see the <i>SCSI Multimedia Commands - 3 (MMC-3) </i>specification.
+Specifies the direction of the layers when more than one layer is used. If the <b>TrackPath</b> member is zero, this media uses a parallel track path (PTP). With PTP, each layer is independent and has its own lead-in and lead-out areas. If <b>TrackPath</b> is 1, the media uses opposite track path (OTP). With opposite track path, the two layers are united, and there is only one lead-in and lead-out area. For further details, see the <i>SCSI Multimedia Commands - 3 (MMC-3) </i>specification.
+
+## Remarks
+For more information, see the <i>SCSI Multimedia Commands - 3 (MMC-3) </i>specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -404,13 +402,10 @@ An initial block value of 0x30000 indicates that the media type is DVD-RAM or DV
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
-</dt>
-</dl>
+
  
 
  

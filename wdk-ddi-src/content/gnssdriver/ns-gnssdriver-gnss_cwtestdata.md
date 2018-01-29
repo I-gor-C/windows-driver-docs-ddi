@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 7F1C8574-8891-4ACB-BB25-2666148E3D02
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_CWTESTDATA, GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
+ms.keywords : GNSS_CWTESTDATA structure [Sensor Devices], sensors.gnss_cwtestdata, PGNSS_CWTESTDATA, *PGNSS_CWTESTDATA, gnssdriver/GNSS_CWTESTDATA, gnssdriver/PGNSS_CWTESTDATA, GNSS_CWTESTDATA, PGNSS_CWTESTDATA structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_CWTESTDATA
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PGNSS_CWTESTDATA, GNSS_CWTESTDATA"
 ---
 
 # GNSS_CWTESTDATA structure
@@ -51,25 +55,24 @@ typedef struct {
 
 ## Members
 
-        
-            `Frequency`
 
-            Frequency of the carrier wave detected in the measurement band.
+`Frequency`
+
+Frequency of the carrier wave detected in the measurement band.
 
 This frequency is provided as a difference to GPS frequency (1575.42 MHz) in kHz.
-        
-            `SignalToNoiseRatio`
 
-            Signal to noise ratio in the carrier wave in dB-Hz.
-        
-            `Size`
+`SignalToNoiseRatio`
 
-            Structure size.
-        
-            `TestResultStatus`
+Signal to noise ratio in the carrier wave in dB-Hz.
 
-            NTSTATUS value indicating whether this fix contains a valid data, or if the GNSS engine or driver encountered any errors in getting the measurements for the carrier wave test.
+`Size`
 
+Structure size.
+
+`TestResultStatus`
+
+NTSTATUS value indicating whether this fix contains a valid data, or if the GNSS engine or driver encountered any errors in getting the measurements for the carrier wave test.
 <ul>
 <li>
 Success - carrier wave test successfully started.
@@ -80,10 +83,14 @@ Failed - with error code: test not implemented, carrier wave test already in pro
 
 </li>
 </ul>
-        
-            `Version`
 
-            Version number.
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

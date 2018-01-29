@@ -7,8 +7,8 @@ old-location : netvista\rilpsmediaconfigurationset_2.htm
 old-project : netvista
 ms.assetid : cdaa161e-2481-497c-8a9b-4c07a3d99d1f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
+ms.date : 1/18/2018
+ms.keywords : netvista.rilpsmediaconfigurationset_2, rilapitypes/RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPSMEDIACONFIGURATIONSET
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET"
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _RILPSMEDIACONFIGURATIONSET {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwNumMediaConfiguration`
 
-            
-        
-            `stMediaConfiguration`
 
-            
+`dwExecutor`
+
+
+
+`dwNumMediaConfiguration`
+
+
+
+`stMediaConfiguration`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 38a9859f-ed9f-41a5-9bf1-c734480499ea
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddigetstandardallocationdriverdata, DxgkDdiGetStandardAllocationDriverData callback function [Display Devices], DxgkDdiGetStandardAllocationDriverData, DXGKDDI_GETSTANDARDALLOCATIONDRIVERDATA, DXGKDDI_GETSTANDARDALLOCATIONDRIVERDATA, d3dkmddi/DxgkDdiGetStandardAllocationDriverData, DmFunctions_e28fa3aa-909e-4dd0-8ae7-1355e0aa69cf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiGetStandardAllocationDriverData
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,12 +68,34 @@ NTSTATUS DxgkddiGetstandardallocationdriverdata(
 ## Return Value
 
 <i>DxgkDdiGetStandardAllocationDriverData</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><i>DxgkDdiGetStandardAllocationDriverData</i> successfully returned a description of the standard allocation type.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiGetStandardAllocationDriverData</i> successfully returned a description of the standard allocation type.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl><i>DxgkDdiGetStandardAllocationDriverData</i> could not allocate memory that was required for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiGetStandardAllocationDriverData</i> could not allocate memory that was required for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,17 +119,12 @@ Beginning with Windows 7, if a display miniport driver processes a call to the <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_getstandardallocationdriverdata.md">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_getstandardallocationdriverdata.md">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4779E943-5C13-4DE2-AF8F-37657F0F99C0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCM_TYPEC_PARTNER, UCM_TYPEC_PARTNER
+ms.keywords : UcmTypeCPartnerStateDebugAccessory, _UCM_TYPEC_PARTNER, ucmtypes/UcmTypeCPartnerStateInvalid, UCM_TYPEC_PARTNER, ucmtypes/UcmTypeCPartnerStateUfp, UcmTypeCPartnerStateDfp, ucmtypes/UcmTypeCPartnerStatePoweredCableWithUfp, UcmTypeCPartnerStateAudioAccessory, ucmtypes/UcmTypeCPartnerStatePoweredCableNoUfp, buses.ucm_type_c_port_state, ucmtypes/UCM_TYPEC_PARTNER, ucmtypes/UcmTypeCPartnerStateDfp, ucmtypes/UcmTypeCPartnerStateDebugAccessory, UcmTypeCPartnerStateInvalid, UcmTypeCPartnerStatePoweredCableNoUfp, UCM_TYPEC_PARTNER enumeration [Buses], UcmTypeCPartnerStatePoweredCableWithUfp, ucmtypes/UcmTypeCPartnerStateAudioAccessory, UcmTypeCPartnerStateUfp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_TYPEC_PARTNER
-req.alt-loc : Ucmtypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCM_TYPEC_PARTNER
 req.product : Windows 10 or later.
 ---
@@ -54,6 +58,41 @@ typedef enum _UCM_TYPEC_PARTNER {
 ## Constants
 
 <table>
+
+<tr>
+<td>UcmTypeCPartnerAudioAccessory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UcmTypeCPartnerDebugAccessory</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UcmTypeCPartnerDfp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UcmTypeCPartnerInvalid</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UcmTypeCPartnerPoweredCableNoUfp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UcmTypeCPartnerPoweredCableWithUfp</td>
+<td></td>
+</tr>
+
+<tr>
+<td>UcmTypeCPartnerUfp</td>
+<td></td>
+</tr>
 </table>
 
 
@@ -67,14 +106,10 @@ typedef enum _UCM_TYPEC_PARTNER {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
-</dt>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
-</dt>
-</dl>
+
+<a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
+
  
 
  

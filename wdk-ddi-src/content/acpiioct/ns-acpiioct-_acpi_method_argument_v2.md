@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 10DD32ED-96F2-43BF-BBF4-85851BC9A377
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _ACPI_METHOD_ARGUMENT_V2, ACPI_METHOD_ARGUMENT_V2, *PACPI_METHOD_ARGUMENT_V2
+ms.keywords : ACPI_METHOD_ARGUMENT_V2, acpiioct/ACPI_METHOD_ARGUMENT_V2, ACPI_METHOD_ARGUMENT_V2 structure [ACPI Devices], _ACPI_METHOD_ARGUMENT_V2, *PACPI_METHOD_ARGUMENT_V2, PACPI_METHOD_ARGUMENT_V2 structure pointer [ACPI Devices], PACPI_METHOD_ARGUMENT_V2, acpiioct/PACPI_METHOD_ARGUMENT_V2, acpi.acpi_method_argument_v2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709 and later versions.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACPI_METHOD_ARGUMENT_V2
-req.alt-loc : Acpiioct.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ACPI_METHOD_ARGUMENT_V2
 ---
 
@@ -51,18 +55,18 @@ typedef struct _ACPI_METHOD_ARGUMENT_V2 {
 
 ## Members
 
-        
-            `DataLength`
 
-            Defines the <b>USHORT</b> member <b>DataLength</b>.
-        
-            `DUMMYUNIONNAME`
+`DataLength`
 
-            Defines the members of <b>DUMMYUNIONNAME</b>.
-        
-            `Type`
+Defines the <b>USHORT</b> member <b>DataLength</b>.
 
-            Defines the <b>USHORT</b> member <b>Type</b>.
+`DUMMYUNIONNAME`
+
+Defines the members of <b>DUMMYUNIONNAME</b>.
+
+`Type`
+
+Defines the <b>USHORT</b> member <b>Type</b>.
 
 
 ## Requirements

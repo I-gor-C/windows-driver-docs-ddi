@@ -7,8 +7,8 @@ old-location : image\wiasformatargs.htm
 old-project : image
 ms.assetid : 409c4ff6-3a0e-408a-879d-2875ac245fb8
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : wiasFormatArgs
+ms.date : 1/18/2018
+ms.keywords : wiasFormatArgs, wiasFormatArgs function [Imaging Devices], wiasFncs_c4e9a1bd-3760-47fb-b828-1f0c521717c5.xml, wiamdef/wiasFormatArgs, image.wiasformatargs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : wiasFormatArgs
-req.alt-loc : Wiaservc.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wiaservc.lib
 req.dll : Wiaservc.dll
 req.irql : 
-req.typenames : "*PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product : Windows 10 or later.
 ---
 
@@ -51,7 +55,7 @@ BSTR __cdecl wiasFormatArgs(
 
 `lpszFormat`
 
-
+TBD
 
 ``
 

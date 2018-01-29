@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 68551AD7-AC0C-4138-948F-33773F02DA41
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.offerresources, OfferResources callback function [Display Devices], OfferResources, PFND3DDDI_OFFERRESOURCES, PFND3DDDI_OFFERRESOURCES, d3dumddi/OfferResources
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OfferResources
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -64,15 +68,37 @@ A handle to the display device (graphics context).
 ## Return Value
 
 Returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The video memory resources were successfully offered.
+</dl>
+</td>
+<td width="60%">
+The video memory resources were successfully offered.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
 </dl>
+</td>
+<td width="60%">
+
          The driver detected that the display adapter was removed, so the driver did not complete the operation.
 
 If the driver is not aware of the adapter removal, the driver is not required to return this error code.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,23 +120,16 @@ If the driver uses the <a href="https://msdn.microsoft.com/f22e19ba-9ff3-4aa1-a3
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">D3DDDIARG_OFFERRESOURCES</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md">Flush</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_present.md">Present</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reclaimresources.md">ReclaimResources</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_present.md">Present</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md">Flush</a>
+
  
 
  

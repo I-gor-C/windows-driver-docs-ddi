@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7bed6940-3f69-4cc0-b746-98cd7441f4b8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_FEATURE_IMPLEMENTATION,
+ms.keywords : IDDCX_FEATURE_IMPLEMENTATION_SOFTWARE, IDDCX_FEATURE_IMPLEMENTATION_HARDWARE, IDDCX_FEATURE_IMPLEMENTATION_UNINITIALIZED, iddcx/IDDCX_FEATURE_IMPLEMENTATION_HARDWARE, display.iddcx_feature_implementation, IDDCX_FEATURE_IMPLEMENTATION, iddcx/IDDCX_FEATURE_IMPLEMENTATION_UNINITIALIZED, iddcx/IDDCX_FEATURE_IMPLEMENTATION, IDDCX_FEATURE_IMPLEMENTATION_NONE, iddcx/IDDCX_FEATURE_IMPLEMENTATION_SOFTWARE, iddcx/IDDCX_FEATURE_IMPLEMENTATION_NONE, IDDCX_FEATURE_IMPLEMENTATION enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_FEATURE_IMPLEMENTATION
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -69,6 +73,11 @@ typedef enum _IDDCX_FEATURE_IMPLEMENTATION {
 <tr>
 <td>IDDCX_FEATURE_IMPLEMENTATION_UNINITIALIZED</td>
 <td>Indicates that an <b>IDDCX_FEATURE_IMPLEMENTATION</b> variable has not yet been assigned a meaningful value.</td>
+</tr>
+
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 

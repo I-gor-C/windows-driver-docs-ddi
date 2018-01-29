@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 107b55f5-0c06-45cc-9cbb-ba9e2fbca1e4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_PROPERTY_STORE_DISPOSITION, WDF_PROPERTY_STORE_DISPOSITION
+ms.keywords : wudfddi_types/WDF_PROPERTY_STORE_DISPOSITION, WDF_PROPERTY_STORE_DISPOSITION, umdfstructs_a25f5c08-88c9-41c0-9bab-023ea91d0a22.xml, wudfddi_types/OpenedExistingStore, wdf.wdf_property_store_disposition, umdf.wdf_property_store_disposition, CreatedNewStore, wudfddi_types/CreatedNewStore, _WDF_PROPERTY_STORE_DISPOSITION, OpenedExistingStore, WDF_PROPERTY_STORE_DISPOSITION enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDF_PROPERTY_STORE_DISPOSITION
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_PROPERTY_STORE_DISPOSITION
 req.product : Windows 10 or later.
 ---
@@ -77,17 +81,12 @@ The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration is used as output from the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
+
  
 
  

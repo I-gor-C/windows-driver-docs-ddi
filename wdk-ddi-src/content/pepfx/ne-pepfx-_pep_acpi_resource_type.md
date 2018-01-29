@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C67FA5DF-D2E4-4F00-B22F-9218F0012708
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_RESOURCE_TYPE, PEP_ACPI_RESOURCE_TYPE
+ms.keywords : kernel.pep_acpi_resource_type, pepfx/PepAcpiExtendedMemory, _PEP_ACPI_RESOURCE_TYPE, pepfx/PepAcpiIoPort, PepAcpiIoPort, PepAcpiGpioIo, PepAcpiExtendedIo, PEP_ACPI_RESOURCE_TYPE, PepAcpiSpbI2c, pepfx/PepAcpiInterrupt, pepfx/PepAcpiSpbSpi, PepAcpiGpioInt, PepAcpiExtendedMemory, pepfx/PepAcpiGpioInt, PepAcpiMemory, pepfx/PepAcpiMemory, pepfx/PepAcpiSpbI2c, PEP_ACPI_RESOURCE_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepAcpiExtendedIo, PepAcpiInterrupt, PepAcpiSpbUart, pepfx/PepAcpiSpbUart, pepfx/PepAcpiGpioIo, pepfx/PEP_ACPI_RESOURCE_TYPE, PepAcpiSpbSpi
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_RESOURCE_TYPE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_ACPI_RESOURCE_TYPE
 ---
 
@@ -119,14 +123,10 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_acpi_request_convert_to_bios_resources.md">PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a>
+
  
 
  

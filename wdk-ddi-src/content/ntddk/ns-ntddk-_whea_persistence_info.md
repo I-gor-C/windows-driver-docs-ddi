@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : ab429d1b-0b4d-4897-b5f0-73113d16758e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO
+ms.keywords : ntddk/WHEA_PERSISTENCE_INFO, PWHEA_PERSISTENCE_INFO union pointer [WHEA Drivers and Applications], PWHEA_PERSISTENCE_INFO, _WHEA_PERSISTENCE_INFO, whearef_0c5f7bbf-fc55-4667-b97a-9b28ec014bb5.xml, WHEA_PERSISTENCE_INFO, whea.whea_persistence_info, *PWHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO union [WHEA Drivers and Applications], ntddk/PWHEA_PERSISTENCE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_PERSISTENCE_INFO
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO"
 ---
 
 # _WHEA_PERSISTENCE_INFO structure
@@ -54,13 +58,17 @@ typedef union _WHEA_PERSISTENCE_INFO {
 
 ## Members
 
-        
-            `AsULONGLONG`
 
-            A ULONGLONG representation of the contents of the WHEA_PERSISTENCE_INFO union.
+`AsULONGLONG`
 
-    ## Remarks
-        A WHEA_PERSISTENCE_INFO union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
+A ULONGLONG representation of the contents of the WHEA_PERSISTENCE_INFO union.
+
+`DUMMYSTRUCTNAME`
+
+
+
+## Remarks
+A WHEA_PERSISTENCE_INFO union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -70,13 +78,10 @@ typedef union _WHEA_PERSISTENCE_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
-</dt>
-</dl>
+
  
 
  

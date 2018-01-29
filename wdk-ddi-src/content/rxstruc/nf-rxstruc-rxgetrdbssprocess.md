@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2d3717c2-c809-48b9-a84b-1e69a04b767e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxGetRDBSSProcess
+ms.keywords : rxstruc/RxGetRDBSSProcess, ifsk.rxgetrdbssprocess, rxref_7eee8a99-f7c3-41d3-8b16-1906ef301f47.xml, RxGetRDBSSProcess function [Installable File System Drivers], RxGetRDBSSProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxGetRDBSSProcess
-req.alt-loc : rxstruc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -53,10 +57,6 @@ This function has no parameters.
 
 <b>RxGetRDBSSProcess</b> returns a pointer to the kernel process of the main thread used by RDBSS.
 
-<b>RxGetRDBSSProcess</b> returns a pointer to the kernel process of the main thread used by RDBSS.
-
-<b>RxGetRDBSSProcess</b> returns a pointer to the kernel process of the main thread used by RDBSS.
-
 ## Remarks
 
 When <b>RxDriverEntry</b> is called to initialize RDBSS, a pointer to the kernel process that is running is retreived by calling <b>PsGetCurrentProcess</b> and stored in an internal RDBSS data structure. This value is returned when <b>RxGetRDBSSProcess</b> is called. This value is sometimes called the file system process.
@@ -75,14 +75,10 @@ When <b>RxDriverEntry</b> is called to initialize RDBSS, a pointer to the kernel
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
-</dt>
-<dt>
+
 <a href="..\rxprocs\nf-rxprocs-rxdriverentry.md">RxDriverEntry</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b195cd68-fedc-436d-8afd-5e33ccb96344
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : WcsTranslateColors
+ms.keywords : display.evt_idd_cx_parse_monitor_description, EvtIddCxParseMonitorDescription callback function [Display Devices], EvtIddCxParseMonitorDescription, EVT_IDD_CX_PARSE_MONITOR_DESCRIPTION, EVT_IDD_CX_PARSE_MONITOR_DESCRIPTION, iddcx/EvtIddCxParseMonitorDescription, PFN_IDD_CX_PARSE_MONITOR_DESCRIPTION callback function pointer [Display Devices], PFN_IDD_CX_PARSE_MONITOR_DESCRIPTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFN_IDD_CX_PARSE_MONITOR_DESCRIPTION
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 

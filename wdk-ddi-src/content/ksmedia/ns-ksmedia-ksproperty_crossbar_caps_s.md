@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 65c0b401-e437-485a-99bc-75ce5296ef34
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CROSSBAR_CAPS_S, *PKSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S
+ms.keywords : KSPROPERTY_CROSSBAR_CAPS_S, stream.ksproperty_crossbar_caps_s, *PKSPROPERTY_CROSSBAR_CAPS_S, ksmedia/PKSPROPERTY_CROSSBAR_CAPS_S, PKSPROPERTY_CROSSBAR_CAPS_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_CROSSBAR_CAPS_S, PKSPROPERTY_CROSSBAR_CAPS_S, vidcapstruct_db0a7a6a-8f6f-45d8-9d05-c520c8396858.xml, KSPROPERTY_CROSSBAR_CAPS_S structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_CROSSBAR_CAPS_S
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSPROPERTY_CROSSBAR_CAPS_S, *PKSPROPERTY_CROSSBAR_CAPS_S
 ---
 
 # KSPROPERTY_CROSSBAR_CAPS_S structure
@@ -48,18 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `NumberOfInputs`
 
-            Indicates the number of audio and video input pins on the crossbar.
-        
-            `NumberOfOutputs`
+`NumberOfInputs`
 
-            Indicates the number of audio and video output pins on the crossbar.
-        
-            `Property`
+Indicates the number of audio and video input pins on the crossbar.
 
-            Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+`NumberOfOutputs`
+
+Indicates the number of audio and video output pins on the crossbar.
+
+`Property`
+
+Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567804">PROPSETID_VIDCAP_CROSSBAR</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565118">KSPROPERTY_CROSSBAR_CAPS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567804">PROPSETID_VIDCAP_CROSSBAR</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7ec2c54d-3974-43e9-9ef8-63393b2d02cd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportMidi, IMiniportMidi::Service, Service
+ms.keywords : Service method [Audio Devices], IMiniportMidi interface, portcls/IMiniportMidi::Service, IMiniportMidi, audio.iminiportmidi_service, IMiniportMidi interface [Audio Devices], Service method, Service method [Audio Devices], IMiniportMidi::Service, Service, audmp-routines_e37a9a63-eaeb-4827-b534-4d73dead44fb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportMidi.Service
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -74,23 +78,16 @@ When the miniport driver's ISR calls the port driver's <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536709">IMiniportMidi::Init</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536709">IMiniportMidi::Init</a>
+
  
 
  

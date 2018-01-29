@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 205936c3-fb5a-48e7-8f13-328563c2f0d2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DDICERTIFICATEINFO, DDICERTIFICATEINFO
+ms.keywords : display.ddicertificateinfo, d3dumddi/DDICERTIFICATEINFO, D3D_other_Structs_99ca6ef3-fba8-4f57-b0bf-16be3c4f8a77.xml, _DDICERTIFICATEINFO, DDICERTIFICATEINFO structure [Display Devices], DDICERTIFICATEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DDICERTIFICATEINFO is supported beginning with the W
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DDICERTIFICATEINFO
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DDICERTIFICATEINFO
 ---
 
@@ -48,21 +52,21 @@ typedef struct _DDICERTIFICATEINFO {
 
 ## Members
 
-        
-            `CertificateType`
 
-            [in] A <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_certificatetype.md">D3DDDI_CERTIFICATETYPE</a>-typed value that indicates the certificate type.
-        
-            `ChannelType`
+`CertificateType`
 
-            [in] A <a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the authenticated-channel type.
-        
-            `CryptoSessionType`
+[in] A <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_certificatetype.md">D3DDDI_CERTIFICATETYPE</a>-typed value that indicates the certificate type.
 
-            [in] A GUID that indicates the encryption session.
+`ChannelType`
 
-    ## Remarks
-        The runtime specifies a pointer to a DDICERTIFICATEINFO structure in the <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure--along with the D3DDDICAPS_GETCERTIFICATE value in the <b>Type</b> member of D3DDDIARG_GETCAPS--in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to retrieve the certificate. The runtime also supplies a buffer in the <b>pData</b> member of D3DDDIARG_GETCAPS to hold the certificate. The runtime receives information about the size of the buffer when the runtime calls the driver's <b>GetCaps</b> with the D3DDDICAPS_GETCERTIFICATESIZE value set in the <b>Type</b> member of D3DDDIARG_GETCAPS. The driver returns a pointer to the certificate in the supplied buffer.
+[in] A <a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the authenticated-channel type.
+
+`CryptoSessionType`
+
+[in] A GUID that indicates the encryption session.
+
+## Remarks
+The runtime specifies a pointer to a DDICERTIFICATEINFO structure in the <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure--along with the D3DDDICAPS_GETCERTIFICATE value in the <b>Type</b> member of D3DDDIARG_GETCAPS--in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to retrieve the certificate. The runtime also supplies a buffer in the <b>pData</b> member of D3DDDIARG_GETCAPS to hold the certificate. The runtime receives information about the size of the buffer when the runtime calls the driver's <b>GetCaps</b> with the D3DDDICAPS_GETCERTIFICATESIZE value set in the <b>Type</b> member of D3DDDIARG_GETCAPS. The driver returns a pointer to the certificate in the supplied buffer.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,22 +76,16 @@ typedef struct _DDICERTIFICATEINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_certificatetype.md">D3DDDI_CERTIFICATETYPE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_certificatetype.md">D3DDDI_CERTIFICATETYPE</a>
+
  
 
  

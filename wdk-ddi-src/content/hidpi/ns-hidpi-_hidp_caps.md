@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : ec4d4b7b-acf6-4839-9a61-1883eddce3f4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HIDP_CAPS, HIDP_CAPS, *PHIDP_CAPS
+ms.keywords : HIDP_CAPS, hid.hidp_caps, PHIDP_CAPS structure pointer [Human Input Devices], hidstrct_2ef93e42-2fd2-4dff-87fb-11f1d1342b07.xml, hidpi/PHIDP_CAPS, HIDP_CAPS structure [Human Input Devices], PHIDP_CAPS, hidpi/HIDP_CAPS, _HIDP_CAPS, *PHIDP_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HIDP_CAPS
-req.alt-loc : hidpi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : HIDP_CAPS, *PHIDP_CAPS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHIDP_CAPS, HIDP_CAPS"
 ---
 
 # _HIDP_CAPS structure
@@ -61,73 +65,73 @@ typedef struct _HIDP_CAPS {
 
 ## Members
 
-        
-            `FeatureReportByteLength`
 
-            Specifies the maximum length, in bytes, of all the feature reports (including the report ID, if report IDs are used, which is prepended to the report data).
-        
-            `InputReportByteLength`
+`FeatureReportByteLength`
 
-            Specifies the maximum size, in bytes, of all the input reports (including the report ID, if report IDs are used, which is prepended to the report data).
-        
-            `NumberFeatureButtonCaps`
+Specifies the maximum length, in bytes, of all the feature reports (including the report ID, if report IDs are used, which is prepended to the report data).
 
-            Specifies the total number of feature HIDP_BUTTONS_CAPS structures that <b>HidP_GetButtonCaps</b> returns.
-        
-            `NumberFeatureDataIndices`
+`InputReportByteLength`
 
-            Specifies the number of data indices assigned to buttons and values in all feature reports.
-        
-            `NumberFeatureValueCaps`
+Specifies the maximum size, in bytes, of all the input reports (including the report ID, if report IDs are used, which is prepended to the report data).
 
-            Specifies the total number of feature HIDP_VALUE_CAPS structures that <b>HidP_GetValueCaps</b> returns.
-        
-            `NumberInputButtonCaps`
+`NumberFeatureButtonCaps`
 
-            Specifies the number of input <a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp_getbuttoncaps.md">HidP_GetButtonCaps</a> returns.
-        
-            `NumberInputDataIndices`
+Specifies the total number of feature HIDP_BUTTONS_CAPS structures that <b>HidP_GetButtonCaps</b> returns.
 
-            Specifies the number of <a href="https://msdn.microsoft.com/84577544-515a-4fdc-86e5-518182c6c461">data indices</a> assigned to buttons and values in all input reports.
-        
-            `NumberInputValueCaps`
+`NumberFeatureDataIndices`
 
-            Specifies the number of input <a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a> returns.
-        
-            `NumberLinkCollectionNodes`
+Specifies the number of data indices assigned to buttons and values in all feature reports.
 
-            Specifies the number of <a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a> structures that are returned for this top-level collection by <a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>.
-        
-            `NumberOutputButtonCaps`
+`NumberFeatureValueCaps`
 
-            Specifies the number of output HIDP_BUTTON_CAPS structures that <b>HidP_GetButtonCaps</b> returns.
-        
-            `NumberOutputDataIndices`
+Specifies the total number of feature HIDP_VALUE_CAPS structures that <b>HidP_GetValueCaps</b> returns.
 
-            Specifies the number of data indices assigned to buttons and values in all output reports.
-        
-            `NumberOutputValueCaps`
+`NumberInputButtonCaps`
 
-            Specifies the number of output HIDP_VALUE_CAPS structures that <b>HidP_GetValueCaps</b> returns.
-        
-            `OutputReportByteLength`
+Specifies the number of input <a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp_getbuttoncaps.md">HidP_GetButtonCaps</a> returns.
 
-            Specifies the maximum size, in bytes, of all the output reports (including the report ID, if report IDs are used, which is prepended to the report data).
-        
-            `Reserved`
+`NumberInputDataIndices`
 
-            Reserved for internal system use.
-        
-            `Usage`
+Specifies the number of <a href="https://msdn.microsoft.com/84577544-515a-4fdc-86e5-518182c6c461">data indices</a> assigned to buttons and values in all input reports.
 
-            Specifies a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="hid.hid_usages#usage_id#usage_id">usage ID</a>.
-        
-            `UsagePage`
+`NumberInputValueCaps`
 
-            Specifies the top-level collection's <a href="hid.hid_usages#usage_page#usage_page">usage page</a>.
+Specifies the number of input <a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a> returns.
 
-    ## Remarks
-        Callers of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538865">HIDClass support routines</a> use the information provided in this structure when a called routine requires, as input, the size of a report type, the number of link collection nodes, the number of control capabilities, or the number of data indices.
+`NumberLinkCollectionNodes`
+
+Specifies the number of <a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a> structures that are returned for this top-level collection by <a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>.
+
+`NumberOutputButtonCaps`
+
+Specifies the number of output HIDP_BUTTON_CAPS structures that <b>HidP_GetButtonCaps</b> returns.
+
+`NumberOutputDataIndices`
+
+Specifies the number of data indices assigned to buttons and values in all output reports.
+
+`NumberOutputValueCaps`
+
+Specifies the number of output HIDP_VALUE_CAPS structures that <b>HidP_GetValueCaps</b> returns.
+
+`OutputReportByteLength`
+
+Specifies the maximum size, in bytes, of all the output reports (including the report ID, if report IDs are used, which is prepended to the report data).
+
+`Reserved`
+
+Reserved for internal system use.
+
+`Usage`
+
+Specifies a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage ID</a>.
+
+`UsagePage`
+
+Specifies the top-level collection's <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage page</a>.
+
+## Remarks
+Callers of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538865">HIDClass support routines</a> use the information provided in this structure when a called routine requires, as input, the size of a report type, the number of link collection nodes, the number of control capabilities, or the number of data indices.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -137,37 +141,26 @@ typedef struct _HIDP_CAPS {
 | **Minimum UMDF version** |  |
 | **Header** | hidpi.h (include Hidpi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
-</dt>
-<dt>
 <a href="..\hidpi\nf-hidpi-hidp_getbuttoncaps.md">HidP_GetButtonCaps</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>
-</dt>
-<dt>
+
 <a href="..\hidpi\nf-hidpi-hidp_getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>
-</dt>
-<dt>
-<a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a>
-</dt>
-<dt>
-<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
-</dt>
-<dt>
+
+<a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>
+
 <a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a>
-</dt>
-<dt>
+
+<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a>
+
 <a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
-</dt>
-</dl>
+
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>
+
  
 
  

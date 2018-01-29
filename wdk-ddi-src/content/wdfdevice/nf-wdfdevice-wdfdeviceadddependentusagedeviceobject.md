@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 025046e2-ffa1-4210-b4aa-ab3d6b211066
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceAddDependentUsageDeviceObject
+ms.keywords : wdf.wdfdeviceadddependentusagedeviceobject, WdfDeviceAddDependentUsageDeviceObject method, WdfDeviceAddDependentUsageDeviceObject, DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml, kmdf.wdfdeviceadddependentusagedeviceobject, PFN_WDFDEVICEADDDEPENDENTUSAGEDEVICEOBJECT, wdfdevice/WdfDeviceAddDependentUsageDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceAddDependentUsageDeviceObject
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,14 +68,34 @@ A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_
 ## Return Value
 
 If the operation succeeds, <b>WdfDeviceAddDependentUsageDeviceObject</b> method returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl><i>DependentDevice</i> is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+<i>DependentDevice</i> is <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>A memory allocation failed.
+</dl>
+</td>
+<td width="60%">
+A memory allocation failed.
 
- 
+</td>
+</tr>
+</table> 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -85,9 +109,7 @@ Your driver can call <b>WdfDeviceAddDependentUsageDeviceObject</b> multiple time
 
 After a driver has called <b>WdfDeviceAddDependentUsageDeviceObject</b>, it can call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceremovedependentusagedeviceobject.md">WdfDeviceRemoveDependentUsageDeviceObject</a> to remove the device identified by <i>DependentDevice</i> from the list of devices that <i>Device</i> depends on.
 
-For more information about special files, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>. 
-
-The following code example adds a device (<b>pDeviceObject</b>) to the list of devices that another device (<b>Device</b>) depends on.
+For more information about special files, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,14 +125,10 @@ The following code example adds a device (<b>pDeviceObject</b>) to the list of d
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification.md">EvtDeviceUsageNotification</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceremovedependentusagedeviceobject.md">WdfDeviceRemoveDependentUsageDeviceObject</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification.md">EvtDeviceUsageNotification</a>
+
  
 
  

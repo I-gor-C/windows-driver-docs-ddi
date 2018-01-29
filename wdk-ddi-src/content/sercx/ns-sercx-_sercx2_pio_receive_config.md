@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : D95B1E7F-1966-4130-A410-3975B0438608
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERCX2_PIO_RECEIVE_CONFIG, SERCX2_PIO_RECEIVE_CONFIG, *PSERCX2_PIO_RECEIVE_CONFIG
+ms.keywords : PSERCX2_PIO_RECEIVE_CONFIG structure pointer [Serial Ports], *PSERCX2_PIO_RECEIVE_CONFIG, 2/SERCX2_PIO_RECEIVE_CONFIG, _SERCX2_PIO_RECEIVE_CONFIG, serports.sercx2_pio_receive_config, SERCX2_PIO_RECEIVE_CONFIG structure [Serial Ports], 2/PSERCX2_PIO_RECEIVE_CONFIG, SERCX2_PIO_RECEIVE_CONFIG, PSERCX2_PIO_RECEIVE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SERCX2_PIO_RECEIVE_CONFIG
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any IRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX2_PIO_RECEIVE_CONFIG, *PSERCX2_PIO_RECEIVE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -52,33 +56,33 @@ typedef struct _SERCX2_PIO_RECEIVE_CONFIG {
 
 ## Members
 
-        
-            `EvtSerCx2PioReceiveCancelReadyNotification`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cancel_ready_notification.md">EvtSerCx2PioReceiveCancelReadyNotification</a> event callback function. This member must point to a valid function.
-        
-            `EvtSerCx2PioReceiveCleanupTransaction`
+`EvtSerCx2PioReceiveCancelReadyNotification`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
-        
-            `EvtSerCx2PioReceiveEnableReadyNotification`
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cancel_ready_notification.md">EvtSerCx2PioReceiveCancelReadyNotification</a> event callback function. This member must point to a valid function.
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_enable_ready_notification.md">EvtSerCx2PioReceiveEnableReadyNotification</a> event callback function. This member must point to a valid function.
-        
-            `EvtSerCx2PioReceiveInitializeTransaction`
+`EvtSerCx2PioReceiveCleanupTransaction`
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_initialize_transaction.md">EvtSerCx2PioReceiveInitializeTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
-        
-            `EvtSerCx2PioReceiveReadBuffer`
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
 
-            A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_read_buffer.md">EvtSerCx2PioReceiveReadBuffer</a> event callback function. This member must point to a valid function.
-        
-            `Size`
+`EvtSerCx2PioReceiveEnableReadyNotification`
 
-            The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_enable_ready_notification.md">EvtSerCx2PioReceiveEnableReadyNotification</a> event callback function. This member must point to a valid function.
 
-    ## Remarks
-        The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method accepts a pointer to a <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioReceiveCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize this structure.
+`EvtSerCx2PioReceiveInitializeTransaction`
+
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_initialize_transaction.md">EvtSerCx2PioReceiveInitializeTransaction</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
+
+`EvtSerCx2PioReceiveReadBuffer`
+
+A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_read_buffer.md">EvtSerCx2PioReceiveReadBuffer</a> event callback function. This member must point to a valid function.
+
+`Size`
+
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+
+## Remarks
+The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method accepts a pointer to a <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioReceiveCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,31 +92,22 @@ typedef struct _SERCX2_PIO_RECEIVE_CONFIG {
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cancel_ready_notification.md">EvtSerCx2PioReceiveCancelReadyNotification</a>
-</dt>
-<dt>
-<a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a>
-</dt>
-<dt>
-<a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
-</dt>
-<dt>
+
 <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
-</dt>
-<dt>
+
+<a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
+
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_enable_ready_notification.md">EvtSerCx2PioReceiveEnableReadyNotification</a>
-</dt>
-<dt>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a>
+
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_initialize_transaction.md">EvtSerCx2PioReceiveInitializeTransaction</a>
-</dt>
-<dt>
+
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_read_buffer.md">EvtSerCx2PioReceiveReadBuffer</a>
-</dt>
-</dl>
+
  
 
  

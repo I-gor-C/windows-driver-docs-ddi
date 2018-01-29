@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b6eafa0c-1b5e-4723-9317-60f1507f12ea
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032, D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032
+ms.keywords : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032 structure [Display Devices], d3d12umddi/D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032, D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032, display.d3d12ddiarg-video-process-input-stream-arguments-0032
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032
 ---
 
@@ -53,30 +57,30 @@ typedef struct _D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032 {
 
 ## Members
 
-        
-            `AlphaBlending`
 
-            The video process alpha blending.
-        
-            `FilterLevels`
+`AlphaBlending`
 
-            The video process filter levels.
-        
-            `Flags`
+The video process alpha blending.
 
-            The video process input stream flags.
-        
-            `InputStream`
+`FilterLevels`
 
-            The input stream of bytes.
-        
-            `RateInfo`
+The video process filter levels.
 
-            The rate of the video process input stream.
-        
-            `Transform`
+`Flags`
 
-            The video process transform.
+The video process input stream flags.
+
+`InputStream`
+
+The input stream of bytes.
+
+`RateInfo`
+
+The rate of the video process input stream.
+
+`Transform`
+
+The video process transform.
 
 
 ## Requirements

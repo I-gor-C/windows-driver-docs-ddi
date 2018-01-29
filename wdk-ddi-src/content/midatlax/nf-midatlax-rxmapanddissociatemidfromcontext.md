@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e9021983-8a01-4262-ae3f-c265948d5a2c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxMapAndDissociateMidFromContext
+ms.keywords : rxref_919dabed-ac8c-4495-8709-8fb45280e16f.xml, ifsk.rxmapanddissociatemidfromcontext, midatlax/RxMapAndDissociateMidFromContext, RxMapAndDissociateMidFromContext, RxMapAndDissociateMidFromContext function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxMapAndDissociateMidFromContext
-req.alt-loc : midatlax.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : MCD_INIT_DATA, *PMCD_INIT_DATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 
@@ -52,7 +56,7 @@ NTSTATUS RxMapAndDissociateMidFromContext(
 
 `MidAtlas`
 
-
+TBD
 
 `Mid`
 
@@ -60,7 +64,7 @@ The multiplex ID to be mapped.
 
 `ContextPointer`
 
-
+TBD
 
 
 ## Return Value
@@ -88,23 +92,16 @@ RDBSS defines a Multiplex ID (MID), a 16-bit value, that can be used by both the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
-</dt>
-<dt>
-<a href="..\midatlax\nf-midatlax-rxcreatemidatlas.md">RxCreateMidAtlas</a>
-</dt>
-<dt>
-<a href="..\midatlax\nf-midatlax-rxdestroymidatlas.md">RxDestroyMidAtlas</a>
-</dt>
-<dt>
 <a href="..\midatlax\nf-midatlax-rxmapmidtocontext.md">RxMapMidToContext</a>
-</dt>
-<dt>
+
+<a href="..\midatlax\nf-midatlax-rxcreatemidatlas.md">RxCreateMidAtlas</a>
+
 <a href="..\midatlax\nf-midatlax-rxreassociatemid.md">RxReassociateMid</a>
-</dt>
-</dl>
+
+<a href="..\midatlax\nf-midatlax-rxdestroymidatlas.md">RxDestroyMidAtlas</a>
+
+<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
+
  
 
  

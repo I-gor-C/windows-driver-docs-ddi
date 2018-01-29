@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3E510E2D-AC9B-4F00-B7FD-A67B1F3FEBA7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.canceladapterchannel, CancelAdapterChannel, CancelAdapterChannel callback function [Kernel-Mode Driver Architecture], CancelAdapterChannel, PCANCEL_ADAPTER_CHANNEL, PCANCEL_ADAPTER_CHANNEL, wdm/CancelAdapterChannel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CancelAdapterChannel
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -78,18 +82,26 @@ A pointer to a DMA transfer context. This parameter value must be the same DMA t
 <b>CancelAdapterChannel</b> tries to cancel a pending allocation request that was made by an asynchronous call to an allocation routine  such as <a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>, <a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>, or <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>. When called asynchronously, the allocation routine can return while the allocation request is still pending and before the driver-supplied execution routine (<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a> or <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>) is called. If <b>CancelAdapterChannel</b> successfully cancels the pending allocation request, the resources are not allocated and the execution routine is not called.
 
 If a driver calls <b>AllocateAdapterChannelEx</b> to request resources for a driver-supplied <i>AdapterControl</i> routine, and then calls <b>CancelAdapterChannel</b> to cancel the request, <b>CancelAdapterChannel</b> can return one of the following values:
-
+<ul>
+<li>
 <b>TRUE</b>, if the adapter object is waiting for the requested allocation when the <b>CancelAdapterChannel</b> call occurs. In this case, <b>CancelAdapterChannel</b> cancels the pending allocation request, and the driver's <i>AdapterControl</i> routine is not called.
 
+</li>
+<li>
 <b>FALSE</b>, if the <i>AdapterControl</i> routine was already called or is about to be called.
 
-Similarly, if a driver calls <b>GetScatterGatherListEx</b> or <b>BuildScatterGatherListEx</b> to request resources for a driver-supplied <i>AdapterListControl</i> routine, and then calls <b>CancelAdapterChannel</b> to cancel the request, <b>CancelAdapterChannel</b> can return one of the following values:
-
+</li>
+</ul>Similarly, if a driver calls <b>GetScatterGatherListEx</b> or <b>BuildScatterGatherListEx</b> to request resources for a driver-supplied <i>AdapterListControl</i> routine, and then calls <b>CancelAdapterChannel</b> to cancel the request, <b>CancelAdapterChannel</b> can return one of the following values:
+<ul>
+<li>
 <b>TRUE</b>, if the adapter object is waiting for the requested allocation when the <b>CancelAdapterChannel</b> call occurs. In this case, <b>CancelAdapterChannel</b> cancels the pending allocation request, and the driver's <i>AdapterListControl</i> routine is not called.
 
+</li>
+<li>
 <b>FALSE</b>, if the <i>AdapterListControl</i> routine was already called or is about to be called.
 
-<b>CancelAdapterChannel</b> can preemptively cancel future channel allocation requests that use the specified DMA transfer context. For example, if the caller supplies the same DMA transfer context to <b>CancelAdapterChannel</b> and <b>AllocateAdapterChannelEx</b>, and the <b>CancelAdapterChannel</b> call is successful and occurs before the <b>AllocateAdapterChannelEx</b> call, the allocation requested by the <b>AllocateAdapterChannelEx</b> call is automatically canceled.
+</li>
+</ul><b>CancelAdapterChannel</b> can preemptively cancel future channel allocation requests that use the specified DMA transfer context. For example, if the caller supplies the same DMA transfer context to <b>CancelAdapterChannel</b> and <b>AllocateAdapterChannelEx</b>, and the <b>CancelAdapterChannel</b> call is successful and occurs before the <b>AllocateAdapterChannelEx</b> call, the allocation requested by the <b>AllocateAdapterChannelEx</b> call is automatically canceled.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,35 +117,24 @@ Similarly, if a driver calls <b>GetScatterGatherListEx</b> or <b>BuildScatterGat
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAdapterChannel</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
+
+<a href="..\wdm\nc-wdm-pcancel_adapter_channel.md">CancelAdapterChannel</a>
+
+<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6339a8bf-ab32-48bc-aae6-2cce2a6a648d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey, IRegistryKey::QueryValueKey, QueryValueKey
+ms.keywords : QueryValueKey, portcls/IRegistryKey::QueryValueKey, IRegistryKey interface [Audio Devices], QueryValueKey method, QueryValueKey method [Audio Devices], IRegistryKey::QueryValueKey, IRegistryKey, audio.iregistrykey_queryvaluekey, audmp-routines_2b41aa08-8b71-45af-bcfa-c33723c82c13.xml, QueryValueKey method [Audio Devices], IRegistryKey interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRegistryKey.QueryValueKey
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -59,7 +63,6 @@ Pointer to the manufacturer-supplied name of the value entry. The name string is
 `KeyValueInformationClass`
 
 Specifies the type of information to be returned in the buffer. Set this parameter to one of the following KEY_VALUE_INFORMATION_CLASS enumeration values:
-
 <ul>
 <li>
 <b>KeyValueBasicInformation</b>
@@ -91,12 +94,34 @@ Output pointer for the length of the resulting data. This parameter points to a 
 ## Return Value
 
 <code>QueryValueKey</code> returns STATUS_SUCCESS if the call was successful in copying the requested information to the <i>KeyValueInformation</i> buffer. If the specified buffer size is too small to receive all of the requested information, the method returns STATUS_BUFFER_OVERFLOW. If the specified buffer size is too small to receive any of the requested information, the method returns STATUS_BUFFER_TOO_SMALL. Otherwise, the method returns an appropriate error status code. The following table shows some of the possible error codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Indicates that one of the parameters passed to the method is not valid.
+</dl>
+</td>
+<td width="60%">
+Indicates that one of the parameters passed to the method is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>Indicates that the value entry with the specified name was not found.
+</dl>
+</td>
+<td width="60%">
+Indicates that the value entry with the specified name was not found.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -116,26 +141,18 @@ If the <i>KeyValueInformation</i> buffer is too small to hold the requested info
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
+
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 41F60807-5A00-4B0E-A57D-70D25C73F575
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords : serports.evtsercxwaitmask, EvtSerCxWaitmask callback function [Serial Ports], EvtSerCxWaitmask, EVT_SERCX_WAITMASK, EVT_SERCX_WAITMASK, 1/EvtSerCxWaitmask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EvtSerCxWaitmask
-req.alt-loc : 1.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at IRQL <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
 req.product : Windows 10 or later.
 ---
@@ -75,14 +79,6 @@ Initially, after a client opens a connection to the serial port and before the f
 
 To register an <i>EvtSerCxWaitmask</i> callback function, the controller driver calls the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback.
 
-The function type for this callback is declared in Sercx.h, as follows.
-
-To define an <i>EvtSerCxWaitmask</i> callback function that is named <code>MyEvtSerCxWaitmask</code>, you must first provide a function declaration that <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.
-
-Then, implement your callback function as follows.
-
-For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,26 +93,18 @@ For more information about SDV requirements for function declarations, see <a hr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
-</dt>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
-</dt>
-<dt>
-<a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
-</dt>
-<dt>
+
 <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
-</dt>
-<dt>
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/peripheral-drivers-for-devices-on-sercx2-managed-serial-ports">SERIAL_EV_XXX</a>
-</dt>
-</dl>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
+
+<a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
+
  
 
  

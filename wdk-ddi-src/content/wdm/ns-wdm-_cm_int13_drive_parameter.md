@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eee1070f-c821-42bd-a0c9-d429fac6305b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER
+ms.keywords : PCM_INT13_DRIVE_PARAMETER structure pointer [Kernel-Mode Driver Architecture], CM_INT13_DRIVE_PARAMETER structure [Kernel-Mode Driver Architecture], wdm/PCM_INT13_DRIVE_PARAMETER, PCM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER, _CM_INT13_DRIVE_PARAMETER, kernel.cm_int13_drive_parameter, wdm/CM_INT13_DRIVE_PARAMETER, kstruct_a_4d629962-92d1-446d-890b-196893ea37a0.xml, CM_INT13_DRIVE_PARAMETER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CM_INT13_DRIVE_PARAMETER
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER
 req.product : Windows 10 or later.
 ---
 
@@ -51,26 +55,26 @@ typedef struct _CM_INT13_DRIVE_PARAMETER {
 
 ## Members
 
-        
-            `DriveSelect`
 
-            The drive selected value.
-        
-            `MaxCylinders`
+`DriveSelect`
 
-            The maximum number of cylinders.
-        
-            `MaxHeads`
+The drive selected value.
 
-            The maximum number of heads.
-        
-            `NumberDrives`
+`MaxCylinders`
 
-            The number of drives.
-        
-            `SectorsPerTrack`
+The maximum number of cylinders.
 
-            The number of sectors per track.
+`MaxHeads`
+
+The maximum number of heads.
+
+`NumberDrives`
+
+The number of drives.
+
+`SectorsPerTrack`
+
+The number of sectors per track.
 
 
 ## Requirements
@@ -81,16 +85,12 @@ typedef struct _CM_INT13_DRIVE_PARAMETER {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 92c75e9c-ea29-40f5-84b2-bfe406075717
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSetStreamHandleContext
+ms.keywords : FltSetStreamHandleContext routine [Installable File System Drivers], FltApiRef_p_to_z_371045bc-91b4-4695-a44a-7ef4fd5c1bd7.xml, fltkernel/FltSetStreamHandleContext, ifsk.fltsetstreamhandlecontext, FltSetStreamHandleContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Up
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltSetStreamHandleContext
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fltmgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -76,27 +80,79 @@ A pointer to a caller-allocated variable that receives the address of the existi
 ## Return Value
 
 The <b>FltSetStreamHandleContext</b> routine returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_DEFINED</b></dt>
-</dl>If FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for <i>Operation</i>, this error code indicates that a context is already attached to the stream handle.  
+</dl>
+</td>
+<td width="60%">
+If FLT_SET_CONTEXT_KEEP_IF_EXISTS was specified for <i>Operation</i>, this error code indicates that a context is already attached to the stream handle.  
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_CONTEXT_ALREADY_LINKED</b></dt>
-</dl>The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of a  <b>FltSet</b><i>Xxx</i><b>Context</b> routine. 
+</dl>
+</td>
+<td width="60%">
+The context pointed to by the <i>NewContext</i> parameter is already linked to an object.  In other words, this error code indicates that <i>NewContext</i> is already in use due to a successful prior call of a  <b>FltSet</b><i>Xxx</i><b>Context</b> routine. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The specified <i>Instance</i> is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The specified <i>Instance</i> is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the following: 
+</dl>
+</td>
+<td width="60%">
+One of the following: 
 
+<ul>
+<li>
 The <i>NewContext</i> parameter does not point to a valid stream handle context. 
 
+</li>
+<li>
 An invalid value was specified for <i>Operation</i>. 
 
+</li>
+</ul>
 STATUS_INVALID_PARAMETER is an error code.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The file system does not support per-stream contexts for this file stream. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The file system does not support per-stream contexts for this file stream. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -107,6 +163,8 @@ A successful call to <b>FltSetStreamHandleContext</b> increments the reference c
 
 
 If <b>FltSetStreamHandleContext</b> fails, the reference count remains unchanged. In this case, the filter calling <b>FltSetStreamHandleContext</b> must call <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> for the <i>NewContext</i> object that was allocated and referenced in <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. If <b>FltSetStreamHandleContext</b> fails and if the <i>OldContext</i> parameter is not <b>NULL</b> and does not point to NULL_CONTEXT then <i>OldContext</i> is a referenced pointer to the context currently associated with the transaction. The filter calling <b>FltSetStreamHandleContext</b> must call <b>FltReleaseContext</b> for <i>OldContext</i> as well.
+
+
 
 Note that the <i>OldContext</i> pointer returned by <b>FltSetStreamHandleContext</b> must also be released by calling <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> when it is no longer needed. For more information, see <a href="https://msdn.microsoft.com/3daa23e6-14d7-4d35-8bc8-695296cd289d">Setting Contexts</a> and <a href="https://msdn.microsoft.com/29d855cd-cca6-486b-86d9-f74810ae12c1">Releasing Contexts</a>. 
 
@@ -134,23 +192,16 @@ For more information about context reference counting, see <a href="https://msdn
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
+
  
 
  

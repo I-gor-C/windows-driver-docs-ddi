@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3cbae037-6205-4315-8ff7-0c67a91c4c69
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIsLeadDbcsCharacter
+ms.keywords : FsRtlIsLeadDbcsCharacter function [Installable File System Drivers], fsrtlref_758a5e18-3446-43c4-8cce-baecdf727f98.xml, ntifs/FsRtlIsLeadDbcsCharacter, ifsk.fsrtlisleaddbcscharacter, FsRtlIsLeadDbcsCharacter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlIsLeadDbcsCharacter
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ BOOLEAN FsRtlIsLeadDbcsCharacter(
 
 `DBCS_CHAR`
 
-
+TBD
 
 
 ## Return Value
@@ -77,17 +81,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldissectdbcs~r2.md">FsRtlDissectDbcs</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldoesdbcscontainwildcards.md">FsRtlDoesDbcsContainWildCards</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtldissectdbcs~r2.md">FsRtlDissectDbcs</a>
+
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlisdbcsinexpression~r1.md">FsRtlIsDbcsInExpression</a>
-</dt>
-</dl>
+
  
 
  

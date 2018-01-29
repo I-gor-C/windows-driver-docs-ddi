@@ -7,8 +7,8 @@ old-location : netvista\protocoltcpoffloadevent.htm
 old-project : netvista
 ms.assetid : b64c0f9e-aa3d-43c5-bdf5-c40cae3929e3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
+ms.date : 1/18/2018
+ms.keywords : netvista.protocoltcpoffloadevent, ProtocolTcpOffloadEvent callback function [Network Drivers Starting with Windows Vista], ProtocolTcpOffloadEvent, TCP_OFFLOAD_EVENT_HANDLER, TCP_OFFLOAD_EVENT_HANDLER, ndischimney/ProtocolTcpOffloadEvent, tcp_chim_protocol_func_8cc440e3-7686-42dc-8fff-baf397394951.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ProtocolTcpOffloadEvent
-req.alt-loc : Ndischimney.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
@@ -41,8 +45,8 @@ req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 NDIS calls a protocol driver's or intermediate driver's 
   <i>ProtocolIndicateOffloadEvent</i> function to post an indication that was initiated by an underlying
   driver's or offload target's call to the 
-  <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
-  NdisTcpOffloadEventHandler</a> function.
+  <mshelp:link keywords="netvista.ndistcpoffloadeventhandler" tabindex="0"><b>
+  NdisTcpOffloadEventHandler</b></mshelp:link> function.
 
 ## Syntax
 
@@ -87,20 +91,28 @@ To propagate the indication to the overlying driver or host stack, the intermedi
     <b>NdisTcpOffloadEventHandler</b> function. The intermediate driver passes the following parameters to the
     
     <b>NdisTcpOffloadEventHandler</b> function:
-
+<ul>
+<li>
 The 
       <b>NdisOffloadHandle</b> that the offload target stored in its context for the offloaded TCP connection.
       For more information, see 
-      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/referencing-offloaded-state-through-an-intermediate-driver">
-      Referencing Offloaded State Through an Intermediate Driver</a>.
+      <mshelp:link keywords="netvista.referencing_offloaded_state_through_an_intermediate_driver" tabindex="0">
+      Referencing Offloaded State Through an Intermediate Driver</mshelp:link>.
 
+</li>
+<li>
 The 
       <i>EventType</i> that NDIS passed to the intermediate driver's 
       <i>ProtocolTcpOffloadEvent</i> function.
 
+</li>
+<li>
 The 
       <i>EventSpecificInformation</i> that NDIS passed to the intermediate driver's 
       <i>ProtocolTcpOffloadEvent</i> function.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -116,13 +128,10 @@ The
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

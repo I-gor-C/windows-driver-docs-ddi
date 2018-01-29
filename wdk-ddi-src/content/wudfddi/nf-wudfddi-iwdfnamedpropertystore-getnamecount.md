@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9891e360-ca09-4ebb-8cf4-d08b3456910c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFNamedPropertyStore, IWDFNamedPropertyStore::GetNameCount, GetNameCount
+ms.keywords : wdf.iwdfnamedpropertystore_getnamecount, UMDFPropertyStoreObjectRef_94f4d4d8-43e9-4901-a2bb-613761069daf.xml, IWDFNamedPropertyStore::GetNameCount, GetNameCount method, umdf.iwdfnamedpropertystore_getnamecount, wudfddi/IWDFNamedPropertyStore::GetNameCount, IWDFNamedPropertyStore, GetNameCount, GetNameCount method, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, GetNameCount method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFNamedPropertyStore.GetNameCount
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -78,11 +82,8 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfnamedpropertystore.md">IWDFNamedPropertyStore</a>
-</dt>
-</dl>
+
  
 
  

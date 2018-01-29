@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ae74d58c-3b36-4298-aa6f-4c272e7ff61c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetPowerPolicyEventCallbacks
+ms.keywords : WdfDeviceInitSetPowerPolicyEventCallbacks method, wdfdevice/WdfDeviceInitSetPowerPolicyEventCallbacks, PFN_WDFDEVICEINITSETPOWERPOLICYEVENTCALLBACKS, wdf.wdfdeviceinitsetpowerpolicyeventcallbacks, WdfDeviceInitSetPowerPolicyEventCallbacks, DFDeviceObjectGeneralRef_7a73b769-9408-4349-b269-53dff2261d3d.xml, kmdf.wdfdeviceinitsetpowerpolicyeventcallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceInitSetPowerPolicyEventCallbacks
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI, PdoDeviceInitAPI
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ If your driver calls <b>WdfDeviceInitSetPowerPolicyEventCallbacks</b>, it must d
 
 For more information about <b>WdfDeviceInitSetPowerPolicyEventCallbacks</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/power-policy-ownership">Power Policy Ownership</a>.
 
-The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_power_policy_event_callbacks.md">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure and then calls <b>WdfDeviceInitSetPowerPolicyEventCallbacks</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,14 +89,10 @@ The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdf_power_policy_event_callbacks_init.md">WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A51C5F98-5979-436A-9E7E-EA54A1469940
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DESTROYALLOCATION2, D3DKMT_DESTROYALLOCATION2
+ms.keywords : _D3DKMT_DESTROYALLOCATION2, D3DKMT_DESTROYALLOCATION2 structure [Display Devices], display.d3dkmt_destroyallocation2, d3dkmthk/D3DKMT_DESTROYALLOCATION2, D3DKMT_DESTROYALLOCATION2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DESTROYALLOCATION2
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DESTROYALLOCATION2
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DKMT_DESTROYALLOCATION2 {
 
 ## Members
 
-        
-            `AllocationCount`
 
-            [in] The number of allocations in the array that <b>phAllocationList</b> specifies. If the OpenGL installable client driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the <b>AllocationCount</b> member is ignored by the OpenGL runtime.
-        
-            `Flags`
+`AllocationCount`
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a> structure that contains additional details about the operation.
-        
-            `hDevice`
+[in] The number of allocations in the array that <b>phAllocationList</b> specifies. If the OpenGL installable client driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the <b>AllocationCount</b> member is ignored by the OpenGL runtime.
 
-            [in] A <b>D3DKMT_HANDLE</b> data type that represents a kernel-mode handle to the device that the resource, allocations, or both are associated with.
-        
-            `hResource`
+`Flags`
 
-            [in] A <b>D3DKMT_HANDLE</b> data type that represents a kernel-mode handle to the resource that is associated with the allocations when releasing a resource. If a resource handle is specified, all of the allocations that are associated with it are automatically released.
-        
-            `phAllocationList`
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a> structure that contains additional details about the operation.
 
-            [in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations. If any allocation in the list is associated with a resource, all of the allocations in the list must also be associated with the same resource. If the OpenGL installable client driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the installable client driver must set <b>phAllocationList</b> to <b>NULL</b>.
+`hDevice`
+
+[in] A <b>D3DKMT_HANDLE</b> data type that represents a kernel-mode handle to the device that the resource, allocations, or both are associated with.
+
+`hResource`
+
+[in] A <b>D3DKMT_HANDLE</b> data type that represents a kernel-mode handle to the resource that is associated with the allocations when releasing a resource. If a resource handle is specified, all of the allocations that are associated with it are automatically released.
+
+`phAllocationList`
+
+[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations. If any allocation in the list is associated with a resource, all of the allocations in the list must also be associated with the same resource. If the OpenGL installable client driver sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, the installable client driver must set <b>phAllocationList</b> to <b>NULL</b>.
 
 
 ## Requirements
@@ -80,16 +84,12 @@ typedef struct _D3DKMT_DESTROYALLOCATION2 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation2.md">D3DKMTDestroyAllocation2</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
-</dt>
-</dl>
+
  
 
  

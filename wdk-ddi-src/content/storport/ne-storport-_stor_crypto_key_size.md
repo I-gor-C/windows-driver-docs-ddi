@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5CBE8A2B-E2E1-4B76-A76F-51DA9F301DAA
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_CRYPTO_KEY_SIZE, STOR_CRYPTO_KEY_SIZE, *PSTOR_CRYPTO_KEY_SIZE
+ms.keywords : STOR_CRYPTO_KEY_SIZE, PSTOR_CRYPTO_KEY_SIZE, *PSTOR_CRYPTO_KEY_SIZE, STOR_CRYPTO_KEY_SIZE enumeration [Storage Devices], storage.stor_crypto_key_size, storport/PSTOR_CRYPTO_KEY_SIZE, PSTOR_CRYPTO_KEY_SIZE enumeration pointer [Storage Devices], _STOR_CRYPTO_KEY_SIZE, storport/, storport/STOR_CRYPTO_KEY_SIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_CRYPTO_KEY_SIZE
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STOR_CRYPTO_KEY_SIZE, *PSTOR_CRYPTO_KEY_SIZE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTOR_CRYPTO_KEY_SIZE, STOR_CRYPTO_KEY_SIZE"
 req.product : Windows 10 or later.
 ---
 
@@ -48,6 +52,36 @@ typedef enum _STOR_CRYPTO_KEY_SIZE {
 ## Constants
 
 <table>
+
+<tr>
+<td>StorCryptoKeySize128Bits</td>
+<td></td>
+</tr>
+
+<tr>
+<td>StorCryptoKeySize192Bits</td>
+<td></td>
+</tr>
+
+<tr>
+<td>StorCryptoKeySize256Bits</td>
+<td></td>
+</tr>
+
+<tr>
+<td>StorCryptoKeySize512Bits</td>
+<td></td>
+</tr>
+
+<tr>
+<td>StorCryptoKeySizeMax</td>
+<td></td>
+</tr>
+
+<tr>
+<td>StorCryptoKeySizeUnknown</td>
+<td></td>
+</tr>
 </table>
 
 

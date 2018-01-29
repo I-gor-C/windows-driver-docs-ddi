@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1EBA2124-F5D3-4683-B967-8179CCCD3102
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_H264VIDEOINFO, *PKS_H264VIDEOINFO, KS_H264VIDEOINFO
+ms.keywords : KS_H264VIDEOINFO structure [Streaming Media Devices], ksmedia/PKS_H264VIDEOINFO, PKS_H264VIDEOINFO, ksmedia/KS_H264VIDEOINFO, PKS_H264VIDEOINFO structure pointer [Streaming Media Devices], tagKS_H264VIDEOINFO, *PKS_H264VIDEOINFO, stream.ks_h264videoinfo, KS_H264VIDEOINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_H264VIDEOINFO
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_H264VIDEOINFO, KS_H264VIDEOINFO"
 ---
 
@@ -79,15 +83,11 @@ typedef struct _KS_H264VIDEOINFO {
 
 ## Members
 
-        
-            `bLevelIDC`
 
-            Specifies the level as described by the level_idc flag.
+`bLevelIDC`
 
-<div class="alert"><b>Note</b>  This member indicates the minimum level that supports the resolution and the maximum bit rate for this frame descriptor.</div>
-<div> </div>
-The following are examples of allowed values:
-
+Specifies the level as described by the level_idc flag.
+<div class="alert"><b>Note</b>  This member indicates the minimum level that supports the resolution and the maximum bit rate for this frame descriptor.</div><div> </div>The following are examples of allowed values:
 <table>
 <tr>
 <th>Value</th>
@@ -102,15 +102,14 @@ The following are examples of allowed values:
 <td>Level 4.0.</td>
 </tr>
 </table>
-        
-            `bMaxCodecConfigDelay`
 
-            Specifies the maximum number of frames the encoder takes to respond to a command.
-        
-            `bmCapabilities`
+`bMaxCodecConfigDelay`
 
-            Defines the bitmap that specifies the capabilities for this frame descriptor.
+Specifies the maximum number of frames the encoder takes to respond to a command.
 
+`bmCapabilities`
+
+Defines the bitmap that specifies the capabilities for this frame descriptor.
 <table>
 <tr>
 <th>Bits</th>
@@ -145,11 +144,10 @@ The following are examples of allowed values:
 <td>Reserved; set to 0.</td>
 </tr>
 </table>
-        
-            `bmMVCCapabilities`
 
-            Defines the bitmap that specifies the Multicast Video Coding (MVC) capabilities. 
+`bmMVCCapabilities`
 
+Defines the bitmap that specifies the Multicast Video Coding (MVC) capabilities. 
 <table>
 <tr>
 <th>Bits</th>
@@ -168,11 +166,10 @@ The following are examples of allowed values:
 <td>Reserved.</td>
 </tr>
 </table>
-        
-            `bmSupportedRateControlModes`
 
-            Defines the bitmap that specifies the rate control modes. 
+`bmSupportedRateControlModes`
 
+Defines the bitmap that specifies the rate control modes. 
 <table>
 <tr>
 <th>Bits</th>
@@ -203,11 +200,10 @@ The following are examples of allowed values:
 <td>Global VBR with underflow allowed (H.264 low_delay_hrd_flag = 1).</td>
 </tr>
 </table>
-        
-            `bmSupportedSliceModes`
 
-            Defines the bitmap that specifies the slice modes.
+`bmSupportedSliceModes`
 
+Defines the bitmap that specifies the slice modes.
 <table>
 <tr>
 <th>Bits</th>
@@ -226,15 +222,14 @@ The following are examples of allowed values:
 <td>Reserved.</td>
 </tr>
 </table>
-        
-            `bmSupportedSyncFrameTypes`
 
-            
-        
-            `bmSupportedUsages`
+`bmSupportedSyncFrameTypes`
 
-            Defines the bitmap that specifies the supported usages.
 
+
+`bmSupportedUsages`
+
+Defines the bitmap that specifies the supported usages.
 <table>
 <tr>
 <th>Bits</th>
@@ -297,11 +292,10 @@ The following are examples of allowed values:
 <td>Reserved; set to 0.</td>
 </tr>
 </table>
-        
-            `bmSVCCapabilities`
 
-            Defines the bitmap that specifies the Scalable Video Coding (SVC) capabilities.
+`bmSVCCapabilities`
 
+Defines the bitmap that specifies the Scalable Video Coding (SVC) capabilities.
 <table>
 <tr>
 <th>Bits</th>
@@ -336,11 +330,14 @@ The following are examples of allowed values:
 <td>Reserved.</td>
 </tr>
 </table>
-        
-            `bSimulcastSupport`
 
-            Specifies the number of H.264 video streaming endpoints and the number of streams this endpoint supports.
+`bResolutionScaling`
 
+
+
+`bSimulcastSupport`
+
+Specifies the number of H.264 video streaming endpoints and the number of streams this endpoint supports.
 <table>
 <tr>
 <th>Value</th>
@@ -355,18 +352,15 @@ The following are examples of allowed values:
 <td>One endpoint and multiple streams.</td>
 </tr>
 </table>
-        
-            `dwFrameInterval`
 
-            Specifies the supported frame interval.
+`dwFrameInterval`
 
-<div class="alert"><b>Note</b>  This is the shortest frame interval supported, at the highest frame rate, in 100-nanoseconds units. </div>
-<div> </div>
-        
-            `wConstrainedToolset`
+Specifies the supported frame interval.
+<div class="alert"><b>Note</b>  This is the shortest frame interval supported, at the highest frame rate, in 100-nanoseconds units. </div><div> </div>
 
-            Constrains the features allowed by <b>wProfile</b>.
+`wConstrainedToolset`
 
+Constrains the features allowed by <b>wProfile</b>.
 <table>
 <tr>
 <th>Value</th>
@@ -393,22 +387,96 @@ The following are examples of allowed values:
 <td>Reserved.</td>
 </tr>
 </table>
-        
-            `wHeight`
 
-            Specifies the height in pixels of pictures output from the decoding process.
+`wHeight`
 
-<div class="alert"><b>Note</b>   The value for this member must be a multiple of 2. When field coding or frame/field adaptive coding is used, it must be a multiple of 4. It does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active SPS.</div>
-<div> </div>
-        
-            `wProfile`
+Specifies the height in pixels of pictures output from the decoding process.
+<div class="alert"><b>Note</b>   The value for this member must be a multiple of 2. When field coding or frame/field adaptive coding is used, it must be a multiple of 4. It does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active SPS.</div><div> </div>
 
-            Specifies the first two bytes of the sequence parameter set as described by profile_idc and constraint flags in the H.264 specification. 
+`wMaxMBperSecFourResolutionsFullScalability`
 
-<div class="alert"><b>Note</b>  This member indicates the profile and applicable constraints to be used. </div>
-<div> </div>
-The following are examples of allowed values:
 
+
+`wMaxMBperSecFourResolutionsNoScalability`
+
+
+
+`wMaxMBperSecFourResolutionsTemporalQualityScalability`
+
+
+
+`wMaxMBperSecFourResolutionsTemporalScalability`
+
+
+
+`wMaxMBperSecFourResolutionsTemporalSpatialScalability`
+
+
+
+`wMaxMBperSecOneResolutionFullScalability`
+
+
+
+`wMaxMBperSecOneResolutionNoScalability`
+
+
+
+`wMaxMBperSecOneResolutionTemporalQualityScalability`
+
+
+
+`wMaxMBperSecOneResolutionTemporalScalability`
+
+
+
+`wMaxMBperSecOneResolutionTemporalSpatialScalability`
+
+
+
+`wMaxMBperSecThreeResolutionsFullScalability`
+
+
+
+`wMaxMBperSecThreeResolutionsNoScalability`
+
+
+
+`wMaxMBperSecThreeResolutionsTemporalQualityScalablity`
+
+
+
+`wMaxMBperSecThreeResolutionsTemporalScalability`
+
+
+
+`wMaxMBperSecThreeResolutionsTemporalSpatialScalablity`
+
+
+
+`wMaxMBperSecTwoResolutionsFullScalability`
+
+
+
+`wMaxMBperSecTwoResolutionsNoScalability`
+
+
+
+`wMaxMBperSecTwoResolutionsTemporalQualityScalability`
+
+
+
+`wMaxMBperSecTwoResolutionsTemporalScalablility`
+
+
+
+`wMaxMBperSecTwoResolutionsTemporalSpatialScalability`
+
+
+
+`wProfile`
+
+Specifies the first two bytes of the sequence parameter set as described by profile_idc and constraint flags in the H.264 specification. 
+<div class="alert"><b>Note</b>  This member indicates the profile and applicable constraints to be used. </div><div> </div>The following are examples of allowed values:
 <table>
 <tr>
 <th>Value</th>
@@ -447,30 +515,24 @@ The following are examples of allowed values:
 <td>Stereo High Profile.</td>
 </tr>
 </table>
-        
-            `wSARheight`
 
-            Specifies the sample aspect ratio height as defined in the H.264 Annex E. 
+`wSARheight`
 
-<div class="alert"><b>Note</b>  It must be relatively prime with respect to <b>bSARwidth</b>.</div>
-<div> </div>
-        
-            `wSARwidth`
+Specifies the sample aspect ratio height as defined in the H.264 Annex E. 
+<div class="alert"><b>Note</b>  It must be relatively prime with respect to <b>bSARwidth</b>.</div><div> </div>
 
-            Specifies the sample aspect ratio width as defined in the H.264 Annex E. 
+`wSARwidth`
 
-<div class="alert"><b>Note</b>  It must  be relatively prime with respect to <b>wSARheight</b>.</div>
-<div> </div>
-        
-            `wWidth`
+Specifies the sample aspect ratio width as defined in the H.264 Annex E. 
+<div class="alert"><b>Note</b>  It must  be relatively prime with respect to <b>wSARheight</b>.</div><div> </div>
 
-            Specifies the width in pixels of pictures output from the decoding process. 
+`wWidth`
 
-<div class="alert"><b>Note</b>  The value for this member must be a multiple of 2, but it does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active Sequence Parameter Set (SPS).</div>
-<div> </div>
+Specifies the width in pixels of pictures output from the decoding process. 
+<div class="alert"><b>Note</b>  The value for this member must be a multiple of 2, but it does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active Sequence Parameter Set (SPS).</div><div> </div>
 
-    ## Remarks
-        The KS_H264VIDEOINFO structure contains the frame and the format descriptor information.
+## Remarks
+The KS_H264VIDEOINFO structure contains the frame and the format descriptor information.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -480,16 +542,12 @@ The following are examples of allowed values:
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_dataformat_h264videoinfo.md">KS_DATAFORMAT_H264VIDEOINFO</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-tagks_datarange_h264_video.md">KS_DATARANGE_H264_VIDEO</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 40ccd895-d01f-4057-a5d1-5274e9d9b913
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG
+ms.keywords : wdf.evt_wdf_companion_post_d0_exit, EVT_WDF_COMPANION_POST_D0_EXIT callback function, EVT_WDF_COMPANION_POST_D0_EXIT, EVT_WDF_COMPANION_POST_D0_EXIT, EVT_WDF_COMPANION_POST_D0_EXIT, wdfcompanion/EVT_WDF_COMPANION_POST_D0_EXIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.23
-req.alt-api : EVT_WDF_COMPANION_POST_D0_EXIT
-req.alt-loc : wdfcompanion.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG"
 req.product : Windows 10 or later.
 ---

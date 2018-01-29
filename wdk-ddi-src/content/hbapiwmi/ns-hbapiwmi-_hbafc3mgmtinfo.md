@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 96236605-36b0-48f5-85d6-512160692b5f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _HBAFC3MgmtInfo, *PHBAFC3MgmtInfo, HBAFC3MgmtInfo
+ms.keywords : structs-Fibre_b128f553-eb08-4077-9dcb-7a7238ec220f.xml, _HBAFC3MgmtInfo, hbapiwmi/HBAFC3MgmtInfo, PHBAFC3MgmtInfo structure pointer [Storage Devices], hbapiwmi/PHBAFC3MgmtInfo, HBAFC3MgmtInfo structure [Storage Devices], HBAFC3MgmtInfo, PHBAFC3MgmtInfo, *PHBAFC3MgmtInfo, storage.hbafc3mgmtinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBAFC3MgmtInfo
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHBAFC3MgmtInfo, HBAFC3MgmtInfo"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HBAFC3MgmtInfo, *PHBAFC3MgmtInfo
 ---
 
 # _HBAFC3MgmtInfo structure
@@ -56,53 +60,53 @@ typedef struct _HBAFC3MgmtInfo {
 
 ## Members
 
-        
-            `IPAddress`
 
-            Indicates the value of the IP address field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
-        
-            `IPVersion`
+`IPAddress`
 
-            Contains the concatenated node management and IP version fields of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
-        
-            `NumberOfAttachedNodes`
+Indicates the value of the IP address field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
 
-            Contains the number of nodes attached to the topology as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
-        
-            `PortId`
+`IPVersion`
 
-            Contains a value corresponding to the physical port number field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
-        
-            `reserved`
+Contains the concatenated node management and IP version fields of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
 
-            Reserved.
-        
-            `reserved1`
+`NumberOfAttachedNodes`
 
-            Reserved.
-        
-            `TopologyDiscoveryFlags`
+Contains the number of nodes attached to the topology as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
 
-            Indicates the value of the vendor specific field in word 12 of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
-        
-            `UDPPort`
+`PortId`
 
-            Indicates the value of the UDP/TCP port number field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
-        
-            `UniqueAdapterId`
+Contains a value corresponding to the physical port number field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
 
-            Contains a unique identifier for the adapter.
-        
-            `unittype`
+`reserved`
 
-            Describes the type of HBA, as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
-        
-            `wwn`
+Reserved.
 
-            Contains a worldwide name for the adapter, as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
+`reserved1`
 
-    ## Remarks
-        FC-3 refers to the common services layer of the fibre channel protocol. It defines a set of services which are common across multiple ports of a node. For an explanation of the common services layer, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+Reserved.
+
+`TopologyDiscoveryFlags`
+
+Indicates the value of the vendor specific field in word 12 of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
+
+`UDPPort`
+
+Indicates the value of the UDP/TCP port number field of the specific identification data as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
+
+`UniqueAdapterId`
+
+Contains a unique identifier for the adapter.
+
+`unittype`
+
+Describes the type of HBA, as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
+
+`wwn`
+
+Contains a worldwide name for the adapter, as described in the T11 committee's <i>Fibre Channel HBA API </i>specification.
+
+## Remarks
+FC-3 refers to the common services layer of the fibre channel protocol. It defines a set of services which are common across multiple ports of a node. For an explanation of the common services layer, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
 The WMI tool suite generates a declaration of this structure automatically when it compiles the <b>HBAFC3MgmtInfo</b> WMI Class in <i>hbaapi.mof</i>.
 
@@ -114,13 +118,10 @@ The WMI tool suite generates a declaration of this structure automatically when 
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a>
-</dt>
-</dl>
+
  
 
  

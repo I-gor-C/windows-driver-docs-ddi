@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 82b1fe8e-054c-4710-9a32-d620a62a070e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_EXECUTION_LEVEL, WDF_EXECUTION_LEVEL
+ms.keywords : WDF_EXECUTION_LEVEL enumeration, WDF_EXECUTION_LEVEL, wdfobject/WDF_EXECUTION_LEVEL, WdfExecutionLevelPassive, wdfobject/WdfExecutionLevelDispatch, DFGenObjectRef_f9a9ae20-9dba-4c23-910b-04c60e1f9539.xml, wdf.wdf_execution_level, WdfExecutionLevelDispatch, kmdf.wdf_execution_level, _WDF_EXECUTION_LEVEL, WdfExecutionLevelInheritFromParent, wdfobject/WdfExecutionLevelInvalid, wdfobject/WdfExecutionLevelInheritFromParent, wdfobject/WdfExecutionLevelPassive, WdfExecutionLevelInvalid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_EXECUTION_LEVEL
-req.alt-loc : wdfobject.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_EXECUTION_LEVEL
 req.product : Windows 10 or later.
 ---
@@ -80,20 +84,32 @@ typedef enum _WDF_EXECUTION_LEVEL {
 Drivers use the WDF_EXECUTION_LEVEL enumeration type to specify the <b>ExecutionLevel</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
 
 You can specify an <b>ExecutionLevel</b> value for the following objects:
-
+<ul>
+<li>
 Framework driver objects
 
+</li>
+<li>
 Framework device objects
 
+</li>
+<li>
 Framework file objects
 
+</li>
+<li>
 Framework general objects
 
+</li>
+<li>
 Framework queue objects (Framework versions 1.9 and later)
 
+</li>
+<li>
 Framework timer objects (Framework versions 1.9 and later)
 
-<b>KMDF </b>By default, the framework sets the <b>ExecutionLevel</b> value of framework driver objects to <b>WdfExecutionLevelDispatch.</b>
+</li>
+</ul><b>KMDF </b>By default, the framework sets the <b>ExecutionLevel</b> value of framework driver objects to <b>WdfExecutionLevelDispatch.</b>
 
 <b>UMDF </b>By default, the framework sets the <b>ExecutionLevel</b> value of framework driver objects to <b>WdfExecutionLevelPassive.</b>
 
@@ -111,11 +127,8 @@ For more information about execution levels for event callback functions, see <a
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

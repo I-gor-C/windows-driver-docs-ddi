@@ -7,8 +7,8 @@ old-location : netvista\rilradiostategroups_2.htm
 old-project : netvista
 ms.assetid : 6ef17ba4-2e87-44d6-904c-609030fe9b9b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEGROUPS, *LPRILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS
+ms.date : 1/18/2018
+ms.keywords : netvista.rilradiostategroups_2, *LPRILRADIOSTATEGROUPS, rilapitypes/RILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS structure [Network Drivers Starting with Windows Vista], RILRADIOSTATEGROUPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEGROUPS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS"
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _RILRADIOSTATEGROUPS {
 
 ## Members
 
-        
-            `dwCntGroups`
 
-            
-        
-            `rilGroups`
+`dwCntGroups`
 
-            
+
+
+`rilGroups`
+
+
 
 
 ## Requirements

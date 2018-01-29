@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ab30d24f-4f14-4a84-a6e1-1a2506b4ba87
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSOBJECTTYPE, KSOBJECTTYPE
+ms.keywords : KSOBJECTTYPE, KSOBJECTTYPE enumeration [Streaming Media Devices], ks/KsObjectTypeDevice, KsObjectTypeFilterFactory, ks/KsObjectTypePin, ks/KsObjectTypeFilterFactory, KsObjectTypeFilter, KsObjectTypePin, stream.ksobjecttype, ks-struct_b8010334-0906-4d4b-8c65-b3919b7b8257.xml, ks/KsObjectTypeFilter, ks/KSOBJECTTYPE, KsObjectTypeDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSOBJECTTYPE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSOBJECTTYPE
 ---
 
@@ -83,23 +87,16 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksgetobjecttypefromfileobject.md">KsGetObjectTypeFromFileObject</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgetfilterfromfileobject.md">KsGetFilterFromFileObject</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgetpinfromfileobject.md">KsGetPinFromFileObject</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-kspingetconnectedpinfileobject.md">KsPinGetConnectedPinFileObject</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
+
+<a href="..\ks\nf-ks-ksgetfilterfromfileobject.md">KsGetFilterFromFileObject</a>
+
  
 
  

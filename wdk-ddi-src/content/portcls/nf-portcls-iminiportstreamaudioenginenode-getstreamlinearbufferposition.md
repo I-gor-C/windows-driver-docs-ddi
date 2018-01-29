@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : C1C91ECE-7AFF-468B-84AE-9D289EECE1E1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition, GetStreamLinearBufferPosition
+ms.keywords : IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamLinearBufferPosition method, audio.iminiportstreamaudioenginenode_getstreamlinearbufferposition, GetStreamLinearBufferPosition, IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition, portcls/IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition, IMiniportStreamAudioEngineNode, GetStreamLinearBufferPosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, GetStreamLinearBufferPosition method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportStreamAudioEngineNode.GetStreamLinearBufferPosition
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -72,11 +76,8 @@ The number of bytes that the DMA has fetched.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\rilmsgmwidetail.htm
 old-project : netvista
 ms.assetid : 69371414-9f4a-46a6-8622-5750db7a0c5b
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGMWIDETAIL, *LPRILMSGMWIDETAIL, RILMSGMWIDETAIL
+ms.date : 1/18/2018
+ms.keywords : netvista.rilmsgmwidetail, *LPRILMSGMWIDETAIL, RILMSGMWIDETAIL, RILMSGMWIDETAIL structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILMSGMWIDETAIL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGMWIDETAIL
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILMSGMWIDETAIL, RILMSGMWIDETAIL"
 ---
 
@@ -52,34 +56,34 @@ typedef struct _RILMSGMWIDETAIL {
 
 ## Members
 
-        
-            `dwMwiPriority`
 
-            
-        
-            `dwMwiType`
+`dwMwiPriority`
 
-            
-        
-            `raFromAddress`
 
-            
-        
-            `raToAddress`
 
-            
-        
-            `stDateSent`
+`dwMwiType`
 
-            
-        
-            `wszMessageId`
 
-            
-        
-            `wszSubject`
 
-            
+`raFromAddress`
+
+
+
+`raToAddress`
+
+
+
+`stDateSent`
+
+
+
+`wszMessageId`
+
+
+
+`wszSubject`
+
+
 
 
 ## Requirements

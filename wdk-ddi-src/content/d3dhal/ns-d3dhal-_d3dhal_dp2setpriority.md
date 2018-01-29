@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5101c150-b294-4bf4-b33c-f0fe0f54d727
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETPRIORITY, D3DHAL_DP2SETPRIORITY, *LPD3DHAL_DP2SETPRIORITY
+ms.keywords : D3DHAL_DP2SETPRIORITY structure [Display Devices], d3dstrct_e6462000-a8f1-4181-ba23-4cda08b1edce.xml, d3dhal/D3DHAL_DP2SETPRIORITY, _D3DHAL_DP2SETPRIORITY, d3dhal/LPD3DHAL_DP2SETPRIORITY, D3DHAL_DP2SETPRIORITY, LPD3DHAL_DP2SETPRIORITY structure pointer [Display Devices], LPD3DHAL_DP2SETPRIORITY, *LPD3DHAL_DP2SETPRIORITY, display.d3dhal_dp2setpriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETPRIORITY
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETPRIORITY
 ---
 
@@ -47,19 +51,19 @@ typedef struct _D3DHAL_DP2SETPRIORITY {
 
 ## Members
 
-        
-            `dwDDSurface`
 
-            Specifies the handle of the texture.
-        
-            `dwPriority`
+`dwDDSurface`
 
-            Specifies the priority of the <b>dwDDDestSurface</b> texture. A texture's priority value can be set anywhere in the range from 0 to 0xFFFFFFFF.
+Specifies the handle of the texture.
 
-    ## Remarks
-        Drivers are notified of handles at texture creation time. The driver can expect to receive priority notifications only for driver-managed textures.
+`dwPriority`
 
-Priorities determine when managed textures are to be evicted from memory. A texture assigned a low priority is evicted before a texture with a high priority. If two textures have the same priority, the texture that was used more recently is kept in memory; the other texture is evicted. </p>
+Specifies the priority of the <b>dwDDDestSurface</b> texture. A texture's priority value can be set anywhere in the range from 0 to 0xFFFFFFFF.
+
+## Remarks
+Drivers are notified of handles at texture creation time. The driver can expect to receive priority notifications only for driver-managed textures.
+
+Priorities determine when managed textures are to be evicted from memory. A texture assigned a low priority is evicted before a texture with a high priority. If two textures have the same priority, the texture that was used more recently is kept in memory; the other texture is evicted.
 
 ## Requirements
 | &nbsp; | &nbsp; |

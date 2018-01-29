@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 33B0C9EF-B40A-4BE7-A5AB-81FFF4698F3F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbRequestGetTransferParameters
+ms.keywords : SpbRequestGetTransferParameters method [Buses], SpbRequestGetTransferParameters, spbcx/SpbRequestGetTransferParameters, SPB.spbrequestgettransferparameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpbRequestGetTransferParameters
-req.alt-loc : spbcxstubs.lib,spbcxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Spbcxstubs.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -97,23 +101,16 @@ If <i>TransferDescriptor</i> is non-NULL, the caller must call the <a href="http
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
-</dt>
-<dt>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
-</dt>
-<dt>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
+
  
 
  

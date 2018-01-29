@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d971e866-3049-4722-bfec-ca3364f291fd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DRAWPRIMITIVES2DATA, D3DHAL_DRAWPRIMITIVES2DATA, *LPD3DHAL_DRAWPRIMITIVES2DATA
+ms.keywords : d3dstrct_c9c3dea2-965c-4e98-8ff7-2928afe049fb.xml, LPD3DHAL_DRAWPRIMITIVES2DATA, d3dhal/D3DHAL_DRAWPRIMITIVES2DATA, d3dhal/LPD3DHAL_DRAWPRIMITIVES2DATA, D3DHAL_DRAWPRIMITIVES2DATA, _D3DHAL_DRAWPRIMITIVES2DATA, display.d3dhal_drawprimitives2data, LPD3DHAL_DRAWPRIMITIVES2DATA structure pointer [Display Devices], D3DHAL_DRAWPRIMITIVES2DATA structure [Display Devices], *LPD3DHAL_DRAWPRIMITIVES2DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DRAWPRIMITIVES2DATA
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DRAWPRIMITIVES2DATA
 ---
 
@@ -65,23 +69,22 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 
 ## Members
 
-        
-            `dwCommandLength`
 
-            Specifies the number of bytes of valid command data in the surface that <b>lpDDCommands</b> points to starting at <b>dwCommandOffset</b>.
-        
-            `dwCommandOffset`
+`dwCommandLength`
 
-            
-        
-            `dwErrorOffset`
+Specifies the number of bytes of valid command data in the surface that <b>lpDDCommands</b> points to starting at <b>dwCommandOffset</b>.
 
-            
-        
-            `dwFlags`
+`dwCommandOffset`
 
-            Specifies flags that provide additional instructions to the driver or provide information from the driver. This member can be a bitwise OR of the following values:
 
+
+`dwErrorOffset`
+
+
+
+`dwFlags`
+
+Specifies flags that provide additional instructions to the driver or provide information from the driver. This member can be a bitwise OR of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -168,31 +171,30 @@ The vertex buffer allocated by the driver as a swap buffer is not in system memo
 </td>
 </tr>
 </table>
-        
-            `dwhContext`
 
-            Specifies the context handle of the Direct3D device.
-        
-            `dwReqCommandBufSize`
+`dwhContext`
 
-            Specifies the minimum number of bytes that the driver must increase the swap command buffer by. This member is valid only when the D3DHALDP2_REQCOMMANDBUFSIZE flag is set. Drivers that do not support multibuffering of command buffers should ignore this member.
-        
-            `dwReqVertexBufSize`
+Specifies the context handle of the Direct3D device.
 
-            Specifies the minimum number of bytes that the driver must allocate for the swap vertex buffer. This member is valid only when the D3DHALDP2_REQVERTEXBUFSIZE flag is set. Drivers that do not support multibuffering of vertex buffers should ignore this member.
-        
-            `dwVertexLength`
+`dwReqCommandBufSize`
 
-            Specifies the number of vertices for which valid data exists in the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b>. This valid data starts at <b>dwVertexOffset</b>.
-        
-            `dwVertexOffset`
+Specifies the minimum number of bytes that the driver must increase the swap command buffer by. This member is valid only when the D3DHALDP2_REQCOMMANDBUFSIZE flag is set. Drivers that do not support multibuffering of command buffers should ignore this member.
 
-            Specifies the number of bytes into the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b> where the vertex data starts.
-        
-            `dwVertexType`
+`dwReqVertexBufSize`
 
-            Identifies the <a href="https://msdn.microsoft.com/206f4275-bcb8-4e8e-9c11-c6fb5d9c561d">FVF</a> of the data in the vertex buffer; that is, <b>dwVertexType</b> specifies which per-vertex data fields are present in the vertex buffer that <b>lpDDVertex</b> or <b>lpVertices</b> points to. This member can be a bitwise OR of the values in the following table. Only one of the <i>D3DFVF_TEXx</i> flags is set.
+Specifies the minimum number of bytes that the driver must allocate for the swap vertex buffer. This member is valid only when the D3DHALDP2_REQVERTEXBUFSIZE flag is set. Drivers that do not support multibuffering of vertex buffers should ignore this member.
 
+`dwVertexLength`
+
+Specifies the number of vertices for which valid data exists in the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b>. This valid data starts at <b>dwVertexOffset</b>.
+
+`dwVertexOffset`
+
+Specifies the number of bytes into the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b> where the vertex data starts.
+
+`dwVertexType`
+
+Identifies the <a href="https://msdn.microsoft.com/206f4275-bcb8-4e8e-9c11-c6fb5d9c561d">FVF</a> of the data in the vertex buffer; that is, <b>dwVertexType</b> specifies which per-vertex data fields are present in the vertex buffer that <b>lpDDVertex</b> or <b>lpVertices</b> points to. This member can be a bitwise OR of the values in the following table. Only one of the <i>D3DFVF_TEXx</i> flags is set.
 <table>
 <tr>
 <th>Value</th>
@@ -319,17 +321,17 @@ Each vertex has <i>x, y, z,</i> and <i>w</i> coordinates. This flag is always se
 </td>
 </tr>
 </table>
-        
-            `lpDDCommands`
 
-            
-        
-            `lpdwRStates`
+`lpDDCommands`
 
-            Points to a render state array that the driver should update when it parses render state commands from the command buffer. The driver should update this array only when the D3DHALDP2_EXECUTEBUFFER flag is set in <b>dwFlags</b>. The driver should use the <a href="..\d3d9types\ne-d3d9types-_d3drenderstatetype.md">D3DRENDERSTATETYPE</a> enumerated types to update the appropriate element of the render state array.
 
-    ## Remarks
-        Note that the <b>dwVertexOffset</b> member specifies values in bytes; the <b>dwVertexLength</b> member specifies values in vertices. 
+
+`lpdwRStates`
+
+Points to a render state array that the driver should update when it parses render state commands from the command buffer. The driver should update this array only when the D3DHALDP2_EXECUTEBUFFER flag is set in <b>dwFlags</b>. The driver should use the <a href="..\d3d9types\ne-d3d9types-_d3drenderstatetype.md">D3DRENDERSTATETYPE</a> enumerated types to update the appropriate element of the render state array.
+
+## Remarks
+Note that the <b>dwVertexOffset</b> member specifies values in bytes; the <b>dwVertexLength</b> member specifies values in vertices. 
 
 To calculate the valid data, in bytes, that exists in the surface at <b>lpDDVertex</b> or <b>lpVertices</b>, multiply the value in <b>dwVertexLength</b> by the value in <b>dwVertexSize</b>.
 
@@ -341,25 +343,18 @@ To calculate the valid data, in bytes, that exists in the surface at <b>lpDDVert
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-<dt>
 <a href="..\d3d9types\ne-d3d9types-_d3drenderstatetype.md">D3DRENDERSTATETYPE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551726">DD_SURFACE_GLOBAL</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
-</dt>
-</dl>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551726">DD_SURFACE_GLOBAL</a>
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
  
 
  

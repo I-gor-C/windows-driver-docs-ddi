@@ -7,8 +7,8 @@ old-location : netvista\vmbchannelrestorefrombuffer.htm
 old-project : netvista
 ms.assetid : 5A063585-AC45-44DF-BE21-FA1BB6283E6F
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbChannelRestoreFromBuffer
+ms.date : 1/18/2018
+ms.keywords : netvista.vmbchannelrestorefrombuffer, vmbuskernelmodeclientlibapi/VmbChannelRestoreFromBuffer, VmbChannelRestoreFromBuffer function [Network Drivers Starting with Windows Vista], VmbChannelRestoreFromBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbChannelRestoreFromBuffer
-req.alt-loc : VmbusKernelModeClientLibApi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 
@@ -70,20 +74,50 @@ The size, in bytes, of the buffer.
 ## Return Value
 
 <b>VmbChannelRestoreFromBuffer</b> returns one of the following status values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function finished successfully.
+</dl>
+</td>
+<td width="60%">
+The function finished successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_MORE_PROCESSING_REQUIRED</b></dt>
-</dl>State was restored successfully,     but more chunks were saved.
+</dl>
+</td>
+<td width="60%">
+State was restored successfully,     but more chunks were saved.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Other status code for which NT_SUCCESS is FALSE</b></dt>
-</dl>The function failed.
+</dl>
+</td>
+<td width="60%">
+The function failed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The caller is expected to call this function with buffers that contain whole
-"chunks" of stored data.</p>
+"chunks" of stored data.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 80450bfb-ae3a-46cd-8cf2-905df5adf70d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlDecompressFragment
+ms.keywords : RtlDecompressFragment function [Installable File System Drivers], ifsk.rtldecompressfragment, rtlref_40a25add-c5bc-40f5-bb79-d5dcd6c11d69.xml, RtlDecompressFragment, ntifs/RtlDecompressFragment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of all W
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlDecompressFragment
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -58,7 +62,6 @@ NTSTATUS RtlDecompressFragment(
 `CompressionFormat`
 
 Bitmask specifying the compression format of the compressed buffer. This parameter must be set to COMPRESSION_FORMAT_LZNT1. The meaning of this and other related compression format values are as follows:
-
 <table>
 <tr>
 <th>Value</th>
@@ -128,18 +131,61 @@ A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressFr
 ## Return Value
 
 <b>RtlDecompressFragment</b>returns an appropriate error status, such as one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The <i>CompressedBuffer</i> buffer was successfully decompressed into <i>UncompressedFragment</i>.
+</dl>
+</td>
+<td width="60%">
+The <i>CompressedBuffer</i> buffer was successfully decompressed into <i>UncompressedFragment</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid compression format was specified via the <i>CompressionFormat</i> parameter. If <i>CompressionFormat</i> is either COMPRESSION_FORMAT_NONE or COMPRESSION_FORMAT_DEFAULT (but not both), this value is returned.
+</dl>
+</td>
+<td width="60%">
+An invalid compression format was specified via the <i>CompressionFormat</i> parameter. If <i>CompressionFormat</i> is either COMPRESSION_FORMAT_NONE or COMPRESSION_FORMAT_DEFAULT (but not both), this value is returned.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUPPORTED_COMPRESSION</b></dt>
-</dl>An invalid compression format was specified via the <i>CompressionFormat</i> parameter. If <i>CompressionFormat</i> is not one of the following, STATUS_UNSUPPORTED_COMPRESSION is returned:
+</dl>
+</td>
+<td width="60%">
+An invalid compression format was specified via the <i>CompressionFormat</i> parameter. If <i>CompressionFormat</i> is not one of the following, STATUS_UNSUPPORTED_COMPRESSION is returned:
+
+<ul>
+<li>COMPRESSION_FORMAT_LZNT1</li>
+<li>COMPRESSION_FORMAT_NONE (in this case, STATUS_INVALID_PARAMETER is returned).</li>
+<li>COMPRESSION_FORMAT_DEFAULT (in this case, STATUS_INVALID_PARAMETER is returned). </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BAD_COMPRESSION_BUFFER</b></dt>
-</dl><i>UncompressedFragment</i> is not large enough to contain the uncompressed data.
+</dl>
+</td>
+<td width="60%">
+<i>UncompressedFragment</i> is not large enough to contain the uncompressed data.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -165,26 +211,18 @@ To decompress an entire compressed buffer, use the <a href="..\ntifs\nf-ntifs-rt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtldecompressbuffer.md">RtlDecompressBuffer</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtldecompressbufferex.md">RtlDecompressBufferEx</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtldecompressbufferex2.md">RtlDecompressBufferEx2</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtldecompressfragmentex.md">RtlDecompressFragmentEx</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
+
+<a href="..\ntifs\nf-ntifs-rtldecompressbufferex.md">RtlDecompressBufferEx</a>
+
+<a href="..\ntifs\nf-ntifs-rtldecompressbufferex2.md">RtlDecompressBufferEx2</a>
+
+<a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
+
  
 
  

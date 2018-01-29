@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a462734c-cac6-4de0-95c1-810766ef1644
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : READ_REGISTER_ULONG
+ms.keywords : k103_c2da9866-18ac-438b-aa32-991d1bda139f.xml, wdm/READ_REGISTER_ULONG, READ_REGISTER_ULONG, kernel.read_register_ulong, READ_REGISTER_ULONG routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : READ_REGISTER_ULONG
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ Pointer to the register address, which must be a mapped range in memory space.
 
 ## Remarks
 
-Callers of <b>READ_REGISTER_ULONG</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
+Callers of <b>READ_REGISTER_ULONG</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |

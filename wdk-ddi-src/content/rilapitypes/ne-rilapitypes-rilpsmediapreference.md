@@ -7,8 +7,8 @@ old-location : netvista\rilpsmediapreference_2.htm
 old-project : netvista
 ms.assetid : 607c00a2-6f7e-4a68-87da-f54b8dd73b88
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPSMEDIAPREFERENCE, RILPSMEDIAPREFERENCE
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILPSMEDIAPREFERENCE, rilapitypes/RIL_PSMPREF_WIFIPREFERRED, RIL_PSMPREF_CELLPREFERRED, RIL_PSMPREF_NUMBER_OF_VALUES, RIL_PSMPREF_CELLONLY, RILPSMEDIAPREFERENCE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PSMPREF_NUMBER_OF_VALUES, rilapitypes/RIL_PSMPREF_CELLPREFERRED, RIL_PSMPREF_WIFIPREFERRED, RIL_PSMPREF_WIFIONLY, rilapitypes/RIL_PSMPREF_WIFIONLY, netvista.rilpsmediapreference_2, RILPSMEDIAPREFERENCE, rilapitypes/RIL_PSMPREF_CELLONLY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPSMEDIAPREFERENCE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPSMEDIAPREFERENCE
 req.product : Windows 10 or later.
 ---
@@ -65,6 +69,11 @@ typedef enum _RILPSMEDIAPREFERENCE {
 
 <tr>
 <td>RIL_PSMPREF_NUMBER_OF_VALUES</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PSMPREF_UNKNOWN</td>
 <td></td>
 </tr>
 

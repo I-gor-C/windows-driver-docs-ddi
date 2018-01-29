@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 01654107-29a1-4f34-bb9a-a17fe36a84fe
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagTIMECODE_SAMPLE, TIMECODE_SAMPLE, *PTIMECODE_SAMPLE
+ms.keywords : stream.timecode_sample, tagTIMECODE_SAMPLE, *PTIMECODE_SAMPLE, TIMECODE_SAMPLE structure [Streaming Media Devices], TIMECODE_SAMPLE, vidcapstruct_518cf1af-a1e2-43a6-b97f-115c4fe8cb6d.xml, ksmedia/TIMECODE_SAMPLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TIMECODE_SAMPLE
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TIMECODE_SAMPLE
 ---
 
@@ -49,11 +53,10 @@ typedef struct tagTIMECODE_SAMPLE {
 
 ## Members
 
-        
-            `dwFlags`
 
-            Specifies any optional timecode flag masks.
+`dwFlags`
 
+Specifies any optional timecode flag masks.
 <table>
 <tr>
 <th>Flag</th>
@@ -160,21 +163,21 @@ Read the relative time counter (RTC); applies to MPEG camcorders.
 </td>
 </tr>
 </table>
-        
-            `dwUser`
 
-            Specifies packed SMPTE user-bits.
-        
-            `qwTick`
+`dwUser`
 
-            Specifies a reference time, in 100-nanosecond units.
-        
-            `timecode`
+Specifies packed SMPTE user-bits.
 
-            Specifies the <a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a> structure.
+`qwTick`
 
-    ## Remarks
-        Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the DirectX SDK.
+Specifies a reference time, in 100-nanosecond units.
+
+`timecode`
+
+Specifies the <a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a> structure.
+
+## Remarks
+Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the DirectX SDK.
 
 The upper 16 bits in <b>dwFlags</b> are reserved for future use and must be set to zero.
 
@@ -186,13 +189,10 @@ The upper 16 bits in <b>dwFlags</b> are reserved for future use and must be set 
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a>
-</dt>
-</dl>
+
  
 
  

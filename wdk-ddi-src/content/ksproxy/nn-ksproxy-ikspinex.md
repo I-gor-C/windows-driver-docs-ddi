@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9e6fd96d-c78e-44f3-ae4c-3688da48a494
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSynchronousDeviceControl
+ms.keywords : stream.ikspinex, IKsPinEx interface [Streaming Media Devices], IKsPinEx interface [Streaming Media Devices], described, IKsPinEx, ksproxy/IKsPinEx, ksproxy_3c92d570-f22f-4165-bafd-9a22f5516137.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPinEx
-req.alt-loc : Ksproxy.lib,Ksproxy.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -61,16 +65,12 @@ An interface handler (<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKs
 | **Header** | ksproxy.h |
 | **DLL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
-</dt>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspin.md">IKsPin</a>
-</dt>
-</dl>
+
+<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
+
  
 
  

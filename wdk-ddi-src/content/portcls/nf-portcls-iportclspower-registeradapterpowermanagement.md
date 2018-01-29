@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f4eb9d18-4352-47e2-bd5f-256e1fa831d3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsPower, IPortClsPower::RegisterAdapterPowerManagement, RegisterAdapterPowerManagement
+ms.keywords : IPortClsPower interface [Audio Devices], RegisterAdapterPowerManagement method, IPortClsPower::RegisterAdapterPowerManagement, portcls/IPortClsPower::RegisterAdapterPowerManagement, audio.iportclspower_registeradapterpowermanagement, RegisterAdapterPowerManagement, RegisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, RegisterAdapterPowerManagement method [Audio Devices], audmp-routines_9c179fd9-d332-478d-a114-469dc1c746fc.xml, IPortClsPower
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortClsPower.RegisterAdapterPowerManagement
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -80,20 +84,14 @@ When the <code>RegisterAdapterPowerManagement</code> method registers the power 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
+
+<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
+
  
 
  

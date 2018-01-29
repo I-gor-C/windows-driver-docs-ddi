@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6b9fd47f-c6b6-4541-a014-0cd6604eb3b3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.pfnperformamortizedprocessingcb, pfnPerformAmortizedProcessingCb callback function [Display Devices], pfnPerformAmortizedProcessingCb, PFND3D11DDI_PERFORM_AMORTIZED_PROCESSING_CB, PFND3D11DDI_PERFORM_AMORTIZED_PROCESSING_CB, d3d10umddi/pfnPerformAmortizedProcessingCb, d3d11state_functions_7da0e622-fd33-44b6-a096-143ff6c47953.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : pfnPerformAmortizedProcessingCb is supported beginni
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnPerformAmortizedProcessingCb
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -78,14 +82,10 @@ For more information about amortized processing, see <a href="https://msdn.micro
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_corelayer_devicecallbacks.md">D3D11DDI_CORELAYER_DEVICECALLBACKS</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : print\optparam.htm
 old-project : print
 ms.assetid : d0cd2867-783c-4a41-a819-e919d4ffc1e3
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _OPTPARAM, OPTPARAM, *POPTPARAM
+ms.date : 1/18/2018
+ms.keywords : "*POPTPARAM, compstui/POPTPARAM, POPTPARAM structure pointer [Print Devices], print.optparam, _OPTPARAM, POPTPARAM, compstui/OPTPARAM, OPTPARAM structure [Print Devices], OPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OPTPARAM
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OPTPARAM, *POPTPARAM
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POPTPARAM, OPTPARAM"
 ---
 
 # _OPTPARAM structure
@@ -52,37 +56,37 @@ typedef struct _OPTPARAM {
 
 ## Members
 
-        
-            `cbSize`
 
-            Size, in bytes, of the OPTPARAM structure.
-        
-            `dwReserved`
+`cbSize`
 
-            Reserved, must be initialized to zero.
-        
-            `Flags`
+Size, in bytes, of the OPTPARAM structure.
 
-            Optional bit flags that modify the parameter's characteristics. The following flags can be set in any combination:
-        
-            `IconID`
+`dwReserved`
 
-            Usually identifies the icon to be associated with the option parameter, but is sometimes used for other purposes. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-        
-            `lParam`
+Reserved, must be initialized to zero.
 
-            Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-        
-            `pData`
+`Flags`
 
-            Pointer to the parameter's value. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-        
-            `Style`
+Optional bit flags that modify the parameter's characteristics. The following flags can be set in any combination:
 
-            Push button style, used only for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562844">TVOT_PUSHBUTTON</a> option type.
+`IconID`
 
-    ## Remarks
-        If the OPTPF_HIDE flag is set in all the OPTPARAM structures associated with an option, CPSUI hides the entire option.</p>
+Usually identifies the icon to be associated with the option parameter, but is sometimes used for other purposes. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
+
+`lParam`
+
+Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
+
+`pData`
+
+Pointer to the parameter's value. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
+
+`Style`
+
+Push button style, used only for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562844">TVOT_PUSHBUTTON</a> option type.
+
+## Remarks
+If the OPTPF_HIDE flag is set in all the OPTPARAM structures associated with an option, CPSUI hides the entire option.
 
 ## Requirements
 | &nbsp; | &nbsp; |

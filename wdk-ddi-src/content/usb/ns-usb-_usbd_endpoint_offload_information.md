@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F2A8E966-269E-447F-9467-EB2E877FFAA2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBD_ENDPOINT_OFFLOAD_INFORMATION, *PUSBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION
+ms.keywords : USBD_ENDPOINT_OFFLOAD_INFORMATION, usb/USBD_ENDPOINT_OFFLOAD_INFORMATION, usb/PUSBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION, _USBD_ENDPOINT_OFFLOAD_INFORMATION, *PUSBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION structure [Buses], buses.usbd_endpoint_offload_information, PUSBD_ENDPOINT_OFFLOAD_INFORMATION structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_ENDPOINT_OFFLOAD_INFORMATION
-req.alt-loc : Usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION"
 req.product : Windows 10 or later.
 ---
@@ -66,50 +70,86 @@ typedef struct _USBD_ENDPOINT_OFFLOAD_INFORMATION {
 
 ## Members
 
-        
-            `EndpointAddress`
 
-            Specifies the USB-defined endpoint address.
-        
-            `Mode`
+`EndpointAddress`
 
-            A <a href="..\usb\ne-usb-_usbd_endpoint_offload_mode.md">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
-        
-            `MultiTT`
+Specifies the USB-defined endpoint address.
 
-            Transaction Translator (TT) hub.
-        
-            `Reserved0`
+`EventRingInitialCycleBit`
 
-            Reserved.
-        
-            `ResourceId`
 
-            The resource identifier.
-        
-            `RootHubPortNumber`
 
-            The port number of the root hub.
-        
-            `RouteString`
+`EventRingSegmentLA`
 
-            The route string.
-        
-            `Size`
 
-            The size of this structure.
-        
-            `SlotId`
 
-            The slot identifier.
-        
-            `Speed`
+`EventRingSegmentVA`
 
-            The route string.
-        
-            `UsbDeviceAddress`
 
-            The USB device address.
+
+`EventRingSize`
+
+
+
+`MessageNumber`
+
+
+
+`Mode`
+
+A <a href="..\usb\ne-usb-_usbd_endpoint_offload_mode.md">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
+
+`MultiTT`
+
+Transaction Translator (TT) hub.
+
+`Reserved0`
+
+Reserved.
+
+`ResourceId`
+
+The resource identifier.
+
+`RootHubPortNumber`
+
+The port number of the root hub.
+
+`RouteString`
+
+The route string.
+
+`Size`
+
+The size of this structure.
+
+`SlotId`
+
+The slot identifier.
+
+`Speed`
+
+The route string.
+
+`TransferRingInitialCycleBit`
+
+
+
+`TransferRingSize`
+
+
+
+`TransferSegmentLA`
+
+
+
+`TransferSegmentVA`
+
+
+
+`UsbDeviceAddress`
+
+The USB device address.
 
 
 ## Requirements

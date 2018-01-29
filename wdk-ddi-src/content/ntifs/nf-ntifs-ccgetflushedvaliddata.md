@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a0e3700a-768f-4025-b5f2-715e25e1d10d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcGetFlushedValidData
+ms.keywords : ntifs/CcGetFlushedValidData, ccref_021f04d4-537c-49a3-bfac-8eeea908c100.xml, CcGetFlushedValidData, CcGetFlushedValidData routine [Installable File System Drivers], ifsk.ccgetflushedvaliddata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows 2000 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcGetFlushedValidData
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -80,14 +84,10 @@ The file system is responsible for ensuring that the value of <i>SectionObjectPo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
+
  
 
  

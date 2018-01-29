@@ -7,8 +7,8 @@ old-location : debugger\flushcallbacks.htm
 old-project : debugger
 ms.assetid : 2ca4ea3b-befd-424d-a4a8-81436d0ffc1c
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugClient5, IDebugClient5::FlushCallbacks, FlushCallbacks
+ms.date : 1/19/2018
+ms.keywords : debugger.flushcallbacks, IDebugClient::FlushCallbacks, IDebugClient_e808ca3a-5762-419b-96de-4c49984c1ccd.xml, IDebugClient2 interface [Windows Debugging], FlushCallbacks method, IDebugClient5, IDebugClient4::FlushCallbacks, FlushCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient3 interface [Windows Debugging], FlushCallbacks method, IDebugClient5::FlushCallbacks, dbgeng/IDebugClient5::FlushCallbacks, IDebugClient5 interface [Windows Debugging], FlushCallbacks method, FlushCallbacks method [Windows Debugging], IDebugClient4 interface, FlushCallbacks method [Windows Debugging], IDebugClient interface, FlushCallbacks, dbgeng/IDebugClient4::FlushCallbacks, FlushCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient3::FlushCallbacks, dbgeng/IDebugClient::FlushCallbacks, dbgeng/IDebugClient3::FlushCallbacks, FlushCallbacks method [Windows Debugging], IDebugClient4 interface [Windows Debugging], FlushCallbacks method, FlushCallbacks method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient2::FlushCallbacks, IDebugClient2::FlushCallbacks, IDebugClient interface [Windows Debugging], FlushCallbacks method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugClient.FlushCallbacks,IDebugClient2.FlushCallbacks,IDebugClient3.FlushCallbacks,IDebugClient4.FlushCallbacks,IDebugClient5.FlushCallbacks
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -51,23 +55,23 @@ This function has no parameters.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
 
- 
-
-This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
-<dl>
-<dt><b>S_OK</b></dt>
-</dl>The method was successful.
-
- 
-
-This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
-<dl>
-<dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -89,34 +93,24 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
-</dt>
-<dt>
 <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550815">IDebugOutputCallbacks::Output</a>
-</dt>
-<dt>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541970">DispatchCallbacks</a>
-</dt>
-</dl>
- 
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550815">IDebugOutputCallbacks::Output</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::FlushCallbacks method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::FlushCallbacks method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

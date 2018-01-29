@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3a875a1e-ef4f-4851-9329-f1fd2aca261f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_GAMMA_RAMP, D3DKMDT_GAMMA_RAMP
+ms.keywords : DmStructs_bb8721fc-b604-45e4-b3c8-ff27bda95e5b.xml, D3DKMDT_GAMMA_RAMP structure [Display Devices], d3dkmdt/D3DKMDT_GAMMA_RAMP, D3DKMDT_GAMMA_RAMP, _D3DKMDT_GAMMA_RAMP, display.d3dkmdt_gamma_ramp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_GAMMA_RAMP
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_GAMMA_RAMP
 ---
 
@@ -53,21 +57,21 @@ typedef struct _D3DKMDT_GAMMA_RAMP {
 
 ## Members
 
-        
-            `Data`
 
-            [in] A union that contains one of the following ways to access the lookup table data depending on the value in the Type member:
-        
-            `DataSize`
+`Data`
 
-            The size, in bytes, of the lookup table pointed to by <i>Data</i>.
-        
-            `Type`
+[in] A union that contains one of the following ways to access the lookup table data depending on the value in the Type member:
 
-            A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_gammaramp_type.md">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table.
+`DataSize`
 
-    ## Remarks
-        The <b>GammaRamp</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_GAMMA_RAMP structure.</p>
+The size, in bytes, of the lookup table pointed to by <i>Data</i>.
+
+`Type`
+
+A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_gammaramp_type.md">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table.
+
+## Remarks
+The <b>GammaRamp</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_GAMMA_RAMP structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

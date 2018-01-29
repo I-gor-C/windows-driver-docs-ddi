@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 97bcd205-ffc0-4645-87d4-659651ed579a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlWriteRegistryValue
+ms.keywords : k109_e0c16f81-5256-472b-9270-fe48d6a49893.xml, kernel.rtlwriteregistryvalue, wdm/RtlWriteRegistryValue, RtlWriteRegistryValue routine [Kernel-Mode Driver Architecture], RtlWriteRegistryValue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlWriteRegistryValue
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -57,7 +61,6 @@ NTSTATUS RtlWriteRegistryValue(
 `RelativeTo`
 
 Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined path as one of the following.
-
 <table>
 <tr>
 <th>Value</th>
@@ -188,29 +191,20 @@ If the specified key does not exist, the routine attempts to create the key. For
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlcreateregistrykey.md">RtlCreateRegistryKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
+
+<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wdm\nf-wdm-rtlcreateregistrykey.md">RtlCreateRegistryKey</a>
+
+<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
+
  
 
  

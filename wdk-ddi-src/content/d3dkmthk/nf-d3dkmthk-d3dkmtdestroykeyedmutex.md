@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5905035f-25e1-49df-bf59-bef81e724c49
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyKeyedMutex
+ms.keywords : OpenGL_Functions_de5400f1-6ef8-431c-a838-8c82cb03d7f1.xml, d3dkmthk/D3DKMTDestroyKeyedMutex, D3DKMTDestroyKeyedMutex, D3DKMTDestroyKeyedMutex function [Display Devices], display.d3dkmtdestroykeyedmutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMTDestroyKeyedMutex is supported beginning with 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTDestroyKeyedMutex
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,20 +54,40 @@ NTSTATUS D3DKMTDestroyKeyedMutex(
 
 `D3DKMT_DESTROYKEYEDMUTEX`
 
-
+TBD
 
 
 ## Return Value
 
 <b>D3DKMTDestroyKeyedMutex</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The keyed mutex object was successfully destroyed. 
+</dl>
+</td>
+<td width="60%">
+The keyed mutex object was successfully destroyed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -82,11 +106,8 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_destroykeyedmutex.md">D3DKMT_DESTROYKEYEDMUTEX</a>
-</dt>
-</dl>
+
  
 
  

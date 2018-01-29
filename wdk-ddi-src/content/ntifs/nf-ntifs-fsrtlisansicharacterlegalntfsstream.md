@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2bcfa3b3-8a83-460b-9b44-1188fceb3849
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIsAnsiCharacterLegalNtfsStream
+ms.keywords : fsrtlref_0dc6f0d3-6f38-4861-89d6-15cab783a959.xml, FsRtlIsAnsiCharacterLegalNtfsStream, ntifs/FsRtlIsAnsiCharacterLegalNtfsStream, ifsk.fsrtlisansicharacterlegalntfsstream, FsRtlIsAnsiCharacterLegalNtfsStream function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows XP an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlIsAnsiCharacterLegalNtfsStream
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -51,11 +55,11 @@ BOOLEAN FsRtlIsAnsiCharacterLegalNtfsStream(
 
 `C`
 
-
+TBD
 
 `WILD_OK`
 
-
+TBD
 
 
 ## Return Value
@@ -80,20 +84,14 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md">FsRtlIsAnsiCharacterLegalFat</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md">FsRtlIsAnsiCharacterLegalHpfs</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md">FsRtlIsAnsiCharacterLegalNtfs</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md">FsRtlIsAnsiCharacterLegalFat</a>
+
  
 
  

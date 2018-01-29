@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7dcb4b17-3aac-46df-9aed-d2145ed3034a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIRECT, D3DDDIRECT
+ms.keywords : _D3DDDIRECT, D3D_other_Structs_0b4f8354-6a1e-49fa-85aa-681b20e7d072.xml, display.d3dddirect, D3DDDIRECT, d3dukmdt/D3DDDIRECT, D3DDDIRECT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIRECT
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIRECT
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DDDIRECT {
 
 ## Members
 
-        
-            `bottom`
 
-            [in] The y-coordinate of the lower-right corner of the rectangle.
-        
-            `left`
+`bottom`
 
-            [in] The x-coordinate of the upper-left corner of the rectangle.
-        
-            `right`
+[in] The y-coordinate of the lower-right corner of the rectangle.
 
-            [in] The x-coordinate of the lower-right corner of the rectangle.
-        
-            `top`
+`left`
 
-            [in] The y-coordinate of the upper-left corner of the rectangle.
+[in] The x-coordinate of the upper-left corner of the rectangle.
+
+`right`
+
+[in] The x-coordinate of the lower-right corner of the rectangle.
+
+`top`
+
+[in] The y-coordinate of the upper-left corner of the rectangle.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _D3DDDIRECT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dukmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
-</dt>
-</dl>
+
  
 
  

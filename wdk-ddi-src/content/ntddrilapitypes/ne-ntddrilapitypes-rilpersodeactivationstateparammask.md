@@ -7,8 +7,8 @@ old-location : netvista\rilpersodeactivationstateparammask.htm
 old-project : netvista
 ms.assetid : 11c4388b-5c0d-4133-9c68-059d1af5c2ca
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPERSODEACTIVATIONSTATEPARAMMASK, RILPERSODEACTIVATIONSTATEPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILPERSODEACTIVATIONSTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILPERSODEACTIVATIONSTATEPARAMMASK, RIL_PARAM_PDS_CK_ATTEMPTS, netvista.rilpersodeactivationstateparammask, ntddrilapitypes/RIL_PARAM_PDS_ALL, RIL_PARAM_PDS_PUK_ATTEMPTS, ntddrilapitypes/RIL_PARAM_PDS_CK_ATTEMPTS, ntddrilapitypes/RILPERSODEACTIVATIONSTATEPARAMMASK, ntddrilapitypes/RIL_PARAM_PDS_PUK_ATTEMPTS, RIL_PARAM_PDS_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPERSODEACTIVATIONSTATEPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPERSODEACTIVATIONSTATEPARAMMASK
 ---
 
@@ -62,6 +66,11 @@ typedef enum _RILPERSODEACTIVATIONSTATEPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_PDS_PUK_ATTEMPTS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_PDS_STATE</td>
 <td></td>
 </tr>
 </table>

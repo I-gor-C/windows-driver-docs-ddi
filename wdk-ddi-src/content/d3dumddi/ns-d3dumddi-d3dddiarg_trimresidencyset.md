@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DEF219B9-115A-4B61-8014-266730CEBD30
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_TRIMRESIDENCYSET, D3DDDIARG_TRIMRESIDENCYSET
+ms.keywords : d3dumddi/D3DDDIARG_TRIMRESIDENCYSET, D3DDDIARG_TRIMRESIDENCYSET structure [Display Devices], display.d3dddiarg_trimresidencyset, D3DDDIARG_TRIMRESIDENCYSET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_TRIMRESIDENCYSET
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_TRIMRESIDENCYSET
 ---
 
@@ -47,14 +51,14 @@ typedef struct D3DDDIARG_TRIMRESIDENCYSET {
 
 ## Members
 
-        
-            `NumBytesToTrim`
 
-            When <b>TrimToBudget</b> is set, this value specifies how much the application should evict in order to meet its current memory budget.
-        
-            `TrimFlags`
+`NumBytesToTrim`
 
-            The trimming behavior flags.
+When <b>TrimToBudget</b> is set, this value specifies how much the application should evict in order to meet its current memory budget.
+
+`TrimFlags`
+
+The trimming behavior flags.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct D3DDDIARG_TRIMRESIDENCYSET {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_trimresidencyset.md">pfnTrimResidencySet</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84417629-5C12-4CB5-B147-0A558A4F9090
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiformathistorybuffer, DxgkDdiFormatHistoryBuffer callback function [Display Devices], DxgkDdiFormatHistoryBuffer, DXGKDDI_FORMATHISTORYBUFFER, DXGKDDI_FORMATHISTORYBUFFER, d3dkmddi/DxgkDdiFormatHistoryBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiFormatHistoryBuffer
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -80,11 +84,8 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds; otherwise, it returns one of the e
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_formathistorybuffer.md">DXGKARG_FORMATHISTORYBUFFER</a>
-</dt>
-</dl>
+
  
 
  

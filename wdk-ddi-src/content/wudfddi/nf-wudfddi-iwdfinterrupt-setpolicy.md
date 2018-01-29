@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : EDBCBB37-41A4-4234-BE8C-4C8739BC287B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFInterrupt, IWDFInterrupt::SetPolicy, SetPolicy
+ms.keywords : IWDFInterrupt interface, SetPolicy method, IWDFInterrupt, SetPolicy method, SetPolicy, umdf.iwdfinterrupt_setpolicy, SetPolicy method, IWDFInterrupt interface, IWDFInterrupt::SetPolicy, wdf.iwdfinterrupt_setpolicy, wudfddi/IWDFInterrupt::SetPolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFInterrupt.SetPolicy
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -85,8 +89,6 @@ If a driver calls <b>SetPolicy</b>, it must do so in its <a href="https://msdn.m
 
 For more information about handling interrupts in UMDF drivers, see <a href="https://msdn.microsoft.com/25D526CF-7C37-4D10-B099-352933F92F98">Accessing Hardware and Handling Interrupts</a>.
 
-The following code example assigns a device interrupt to processor 0, with normal priority.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -101,20 +103,14 @@ The following code example assigns a device interrupt to processor 0, with norma
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
-</dt>
-<dt>
-<a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_policy.md">WDF_INTERRUPT_POLICY</a>
-</dt>
-<dt>
-<a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
-</dt>
-</dl>
+
+<a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_policy.md">WDF_INTERRUPT_POLICY</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+
+<a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>
+
  
 
  

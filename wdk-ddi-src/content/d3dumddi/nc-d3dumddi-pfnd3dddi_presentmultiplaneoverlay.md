@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3AC47977-A5F3-44A6-8F89-A1EA5E0BB6E4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnpresentmultiplaneoverlay__d3d_, pfnPresentMultiPlaneOverlay callback function [Display Devices], pfnPresentMultiPlaneOverlay, PFND3DDDI_PRESENTMULTIPLANEOVERLAY, PFND3DDDI_PRESENTMULTIPLANEOVERLAY, d3dumddi/pfnPresentMultiPlaneOverlay
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnPresentMultiPlaneOverlay
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,14 +87,10 @@ When the user-mode display driver successfully completes its processing of a cal
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_presentmultiplaneoverlay.md">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a>
-</dt>
-</dl>
+
  
 
  

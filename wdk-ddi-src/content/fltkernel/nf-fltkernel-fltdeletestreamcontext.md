@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 49f7d633-3e8b-4c9c-b14a-7ae8f997ad2f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltDeleteStreamContext
+ms.keywords : fltkernel/FltDeleteStreamContext, FltDeleteStreamContext function [Installable File System Drivers], ifsk.fltdeletestreamcontext, FltApiRef_a_to_d_8339a254-56eb-4f75-b294-006286f3ff10.xml, FltDeleteStreamContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltDeleteStreamContext
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -66,15 +70,45 @@ Pointer to a caller-allocated variable that receives the address of the deleted 
 ## Return Value
 
 <b>FltDeleteStreamContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The specified <i>Instance</i> is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The specified <i>Instance</i> is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>No matching context was found. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+No matching context was found. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The file system does not support per-stream contexts for this file stream. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The file system does not support per-stream contexts for this file stream. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -102,23 +136,16 @@ To set a stream context, call <a href="..\fltkernel\nf-fltkernel-fltsetstreamcon
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
  
 
  

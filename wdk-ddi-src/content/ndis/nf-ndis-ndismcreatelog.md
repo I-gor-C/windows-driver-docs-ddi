@@ -7,8 +7,8 @@ old-location : netvista\ndismcreatelog.htm
 old-project : netvista
 ms.assetid : 804112cf-fc59-4a04-b848-4239b32e35d7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisMCreateLog
+ms.date : 1/18/2018
+ms.keywords : NdisMCreateLog, ndis/NdisMCreateLog, miniport_logging_ref_e6ca8197-b4f0-4eb9-bfe4-f4b957a124c8.xml, netvista.ndismcreatelog, NdisMCreateLog function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisMCreateLog
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_Miniport_Driver_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -71,17 +75,47 @@ Pointer to a caller-supplied variable in which this function returns a handle to
 ## Return Value
 
 <b>NdisMCreateLog</b> can return one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
-</dl>The miniport driver can use the handle returned at 
+</dl>
+</td>
+<td width="60%">
+The miniport driver can use the handle returned at 
        <i>LogHandle</i> to write data to the NDIS-allocated log file.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_RESOURCES</b></dt>
-</dl>A log file of the specified size could not be allocated.
+</dl>
+</td>
+<td width="60%">
+A log file of the specified size could not be allocated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
-</dl>The driver already called 
+</dl>
+</td>
+<td width="60%">
+The driver already called 
        <b>NdisMCreateLog</b> successfully.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -117,22 +151,16 @@ Whatever size of log file is allocated, subsequent calls to
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCreateLog function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCreateLog function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

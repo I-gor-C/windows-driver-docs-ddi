@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 583263fc-8b95-47d9-9f20-306b2200b573
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MOUSE_STATE, MOUSE_STATE, *PMOUSE_STATE
+ms.keywords : hid.ioctl_internal_i8042_keyboard_write_buffer, IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER control code [Human Input Devices], IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER, ntdd8042/IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER, i8042ref_a981431f-38cd-4cc4-899e-a79799da0e01.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER
-req.alt-loc : ntdd8042.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,16 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER IOCTL
-The IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER request writes data to the i8042 port controller to control operation of a keyboard device. A filter driver can use this request to control the operation of a keyboard.
-
-I8042prt synchronizes write buffer requests and other keyboard requests that write to the i8042 port controller, including <a href="https://msdn.microsoft.com/library/windows/hardware/ff542067">IOCTL_KEYBOARD_SET_INDICATORS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542076">IOCTL_KEYBOARD_SET_TYPEMATIC</a>. I8042prt synchronizes the actual write of data with the keyboard ISR.
-
-
-
 The IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER request writes data to the i8042 port controller to control operation of a keyboard device. A filter driver can use this request to control the operation of a keyboard.
 
 I8042prt synchronizes write buffer requests and other keyboard requests that write to the i8042 port controller, including <a href="https://msdn.microsoft.com/library/windows/hardware/ff542067">IOCTL_KEYBOARD_SET_INDICATORS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542076">IOCTL_KEYBOARD_SET_TYPEMATIC</a>. I8042prt synchronizes the actual write of data with the keyboard ISR.
@@ -67,18 +65,7 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Status</b> member is set to one of the following values:
-
-
-
-The request completed successfully.
-
-The keyboard interrupt is not initialized.
-
-The input parameters are not valid.
-
-The request timed out.
 
 
 ## Requirements
@@ -88,16 +75,12 @@ The request timed out.
 | **Header** | ntdd8042.h (include Ntdd8042.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542067">IOCTL_KEYBOARD_SET_INDICATORS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542076">IOCTL_KEYBOARD_SET_TYPEMATIC</a>
-</dt>
-</dl>
+
  
 
  

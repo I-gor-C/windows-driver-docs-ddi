@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bc5f98da-1e2e-421b-9c76-97359e51b526
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES, *PVIDEO_POINTER_CAPABILITIES
+ms.keywords : display.video_pointer_capabilities, Video_Structs_03a35602-adfd-4485-a155-866b578fa807.xml, VIDEO_POINTER_CAPABILITIES structure [Display Devices], VIDEO_POINTER_CAPABILITIES, ntddvdeo/PVIDEO_POINTER_CAPABILITIES, PVIDEO_POINTER_CAPABILITIES structure pointer [Display Devices], ntddvdeo/VIDEO_POINTER_CAPABILITIES, *PVIDEO_POINTER_CAPABILITIES, _VIDEO_POINTER_CAPABILITIES, PVIDEO_POINTER_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_POINTER_CAPABILITIES
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_POINTER_CAPABILITIES, *PVIDEO_POINTER_CAPABILITIES
 ---
 
@@ -50,11 +54,10 @@ typedef struct _VIDEO_POINTER_CAPABILITIES {
 
 ## Members
 
-        
-            `Flags`
 
-            A set of flags that specify certain capabilities of the pointer. Flags can be a combination of the following values.
+`Flags`
 
+A set of flags that specify certain capabilities of the pointer. Flags can be a combination of the following values.
 <table>
 <tr>
 <th>Flag</th>
@@ -111,22 +114,22 @@ The current pointer has the same hotspot as the previous pointer.
 </td>
 </tr>
 </table>
-        
-            `HWPtrBitmapEnd`
 
-            Specifies the last offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
-        
-            `HWPtrBitmapStart`
+`HWPtrBitmapEnd`
 
-            Specifies the first offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
-        
-            `MaxHeight`
+Specifies the last offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
 
-            Specifies the maximum height of the pointer, in pixels.
-        
-            `MaxWidth`
+`HWPtrBitmapStart`
 
-            Specifies the maximum width of the pointer, in pixels.
+Specifies the first offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
+
+`MaxHeight`
+
+Specifies the maximum height of the pointer, in pixels.
+
+`MaxWidth`
+
+Specifies the maximum width of the pointer, in pixels.
 
 
 ## Requirements

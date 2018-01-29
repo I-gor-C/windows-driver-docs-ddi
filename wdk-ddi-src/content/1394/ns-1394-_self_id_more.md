@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : d3c164a6-4830-4f1f-9fa5-5cd61e796e31
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SELF_ID_MORE, *PSELF_ID_MORE, SELF_ID_MORE
+ms.keywords : PSELF_ID_MORE structure pointer [Buses], _SELF_ID_MORE, 1394/SELF_ID_MORE, 1394/PSELF_ID_MORE, SELF_ID_MORE structure [Buses], *PSELF_ID_MORE, IEEE.self_id_more, 1394stct_cbfa017d-065b-45ce-ae08-6a6589c6b477.xml, PSELF_ID_MORE, SELF_ID_MORE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SELF_ID_MORE
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSELF_ID_MORE, SELF_ID_MORE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SELF_ID_MORE, *PSELF_ID_MORE
 ---
 
 # _SELF_ID_MORE structure
@@ -60,229 +64,149 @@ typedef struct _SELF_ID_MORE {
 
 ## Members
 
-        
-            `SID_More_Packets`
 
-            One if this packet will be followed by more SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self ID packet.
-        
-            `SID_One`
+`SID_More_Packets`
 
-            Always a 1. This member contains bit 6 of byte 1 of the self ID packet.
-        
-            `SID_Packet_ID`
+One if this packet will be followed by more SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self ID packet.
 
-            Must be PHY_PACKET_ID_SELF_ID. This member specifies bits 0-10 of the node address. This member contains bits 6-7 of byte 0 of the self ID packet.
-        
-            `SID_Phys_ID`
+`SID_One`
 
-            Specifies the device node number. This member specifies bits 0-10 of the node address. This member contains bits 0-5 of byte 0 of the self ID packet.
-        
-            `SID_PortA`
+Always a 1. This member contains bit 6 of byte 1 of the self ID packet.
 
-            Specifies port status. Possible values are:
+`SID_Packet_ID`
 
-<dl>
-<dd>
+Must be PHY_PACKET_ID_SELF_ID. This member specifies bits 0-10 of the node address. This member contains bits 6-7 of byte 0 of the self ID packet.
+
+`SID_Phys_ID`
+
+Specifies the device node number. This member specifies bits 0-10 of the node address. This member contains bits 0-5 of byte 0 of the self ID packet.
+
+`SID_PortA`
+
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member contains bits 0-1 of byte 1 of the self ID packet.
-        
-            `SID_PortB`
 
-            Specifies port status. Possible values are:
+`SID_PortB`
 
-<dl>
-<dd>
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member contains bits 6-7 of byte 2 of the self ID packet.
-        
-            `SID_PortC`
 
-            Specifies port status. Possible values are:
+`SID_PortC`
 
-<dl>
-<dd>
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member contains bits 4-5 of byte 2 of the self ID packet.
-        
-            `SID_PortD`
 
-            Specifies port status. Possible values are:
+`SID_PortD`
 
-<dl>
-<dd>
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member specifies bits 2-3 of byte 2 of the self ID packet.
-        
-            `SID_PortE`
 
-            Specifies port status. Possible values are:
+`SID_PortE`
 
-<dl>
-<dd>
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member specifies bits 0-1 of byte 2 of the self ID packet.
-        
-            `SID_PortF`
 
-            Specifies port status. Possible values are:
+`SID_PortF`
 
-<dl>
-<dd>
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member contains bits 6-7 of byte 3 of the self ID packet.
-        
-            `SID_PortG`
 
-            Specifies port status. Possible values are:
+`SID_PortG`
 
-<dl>
-<dd>
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member contains bits 4-5 of byte 3 of the self ID packet.
-        
-            `SID_PortH`
 
-            Specifies port status. Possible values are:
+`SID_PortH`
 
-<dl>
-<dd>
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 This member contains bits 2-3 of byte 3 of the self ID packet.
-        
-            `SID_Reserved2`
 
-            Reserved. This member contains bits 2-3 of byte 1 of the self ID packet.
-        
-            `SID_Reserved3`
+`SID_Reserved2`
 
-            Reserved. This member contains bit 1 of byte 3 of the self ID packet.
-        
-            `SID_Sequence`
+Reserved. This member contains bits 2-3 of byte 1 of the self ID packet.
 
-            Specifies the packet number in sequence (the first SELF_ID_MORE packet is packet zero). This member contains bits 4-5 of byte 1 of the self ID packet.
+`SID_Reserved3`
 
-    ## Remarks
-        This structure corresponds to self ID packet 1, as described in the <i>P1394a</i> specification. Note that type 2 self ID packets are identical to type 1 packets, except that the last five fields are replaced by a reserved area. The SELF_ID_MORE structure can be used to access all of the significant information in both type 1 and type 2 self ID packets.
+Reserved. This member contains bit 1 of byte 3 of the self ID packet.
+
+`SID_Sequence`
+
+Specifies the packet number in sequence (the first SELF_ID_MORE packet is packet zero). This member contains bits 4-5 of byte 1 of the self ID packet.
+
+## Remarks
+This structure corresponds to self ID packet 1, as described in the <i>P1394a</i> specification. Note that type 2 self ID packets are identical to type 1 packets, except that the last five fields are replaced by a reserved area. The SELF_ID_MORE structure can be used to access all of the significant information in both type 1 and type 2 self ID packets.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -292,13 +216,10 @@ This member contains bits 2-3 of byte 3 of the self ID packet.
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538877">TOPOLOGY_MAP</a>
-</dt>
-</dl>
+
  
 
  

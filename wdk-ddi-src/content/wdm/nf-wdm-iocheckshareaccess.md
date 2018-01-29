@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a249c76b-7389-467f-bfb0-befe06df2fa4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCheckShareAccess
+ms.keywords : k104_0411033a-da5d-4803-a970-f6e7289a6200.xml, IoCheckShareAccess, kernel.iocheckshareaccess, wdm/IoCheckShareAccess, IoCheckShareAccess routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCheckShareAccess
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive2, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -61,20 +65,11 @@ Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff5404
 
 Specifies the desired type of shared access to <i>FileObject</i> for the current open request. The value of this parameter is usually the same as the <i>ShareAccess</i> passed to the file system or highest-level driver by the I/O manager when the open request was made. This value can be zero, or any combination of the following:
 
-<dl>
-<dd>
 FILE_SHARE_READ
 
-</dd>
-<dd>
 FILE_SHARE_WRITE
 
-</dd>
-<dd>
 FILE_SHARE_DELETE
-
-</dd>
-</dl>
 
 `FileObject`
 
@@ -115,29 +110,20 @@ File systems maintain state about files through structures called file control b
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iogetrelateddeviceobject.md">IoGetRelatedDeviceObject</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioremoveshareaccess.md">IoRemoveShareAccess</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iosetshareaccess.md">IoSetShareAccess</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-ioupdateshareaccess.md">IoUpdateShareAccess</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iogetrelateddeviceobject.md">IoGetRelatedDeviceObject</a>
+
+<a href="..\wdm\nf-wdm-ioremoveshareaccess.md">IoRemoveShareAccess</a>
+
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
+
+<a href="..\wdm\nf-wdm-iosetshareaccess.md">IoSetShareAccess</a>
+
+<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
+
  
 
  

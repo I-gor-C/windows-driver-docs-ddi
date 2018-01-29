@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 16c6fda5-c2e1-4ee4-80f7-e970b1da0e01
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : WcsTranslateColors
+ms.keywords : display.evt_idd_cx_monitor_opm_create_protected_output, EvtIddCxMonitorOpmCreateProtectedOutput callback function [Display Devices], EvtIddCxMonitorOpmCreateProtectedOutput, EVT_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT, EVT_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT, iddcx/EvtIddCxMonitorOpmCreateProtectedOutput, PFN_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFN_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 

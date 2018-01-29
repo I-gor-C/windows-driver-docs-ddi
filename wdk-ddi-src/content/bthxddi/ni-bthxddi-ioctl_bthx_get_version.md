@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : F4FD760B-551C-4738-A13D-444E08215D59
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords : bltooth.ioctl_bthx_get_version, IOCTL_BTHX_GET_VERSION control code [Bluetooth Devices], IOCTL_BTHX_GET_VERSION, bthxddi/IOCTL_BTHX_GET_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHX_GET_VERSION
-req.alt-loc : BthXDDI.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
 # IOCTL_BTHX_GET_VERSION IOCTL
-Profile drivers use IOCTL_BTHX_GET_VERSION to get the version supported by the transport driver.
-
-
-
 Profile drivers use IOCTL_BTHX_GET_VERSION to get the version supported by the transport driver.
 
 ### Major Code
@@ -69,25 +69,34 @@ The length of the buffer is the size of the <b>BTHX_VERSION</b> structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 The 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the buffer that holds the BTHX_VERSION structure.
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
- 
+</td>
+</tr>
+</table> 
 
 Any unsuccessful NT status code prevents the driver from loading.
 
-    ## Remarks
-        IOCTL_BTHX_GET_VERSION is a synchronous operation.
+## Remarks
+IOCTL_BTHX_GET_VERSION is a synchronous operation.
 
-A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>
+A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.
 
 ## Requirements
 | &nbsp; | &nbsp; |

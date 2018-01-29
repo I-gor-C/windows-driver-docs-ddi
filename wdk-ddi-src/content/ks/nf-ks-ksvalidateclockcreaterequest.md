@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ec10c10e-4604-47fc-a2e7-4df9d90acf0b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsValidateClockCreateRequest
+ms.keywords : KsValidateClockCreateRequest function [Streaming Media Devices], ks/KsValidateClockCreateRequest, ksfunc_e681d03e-44fb-43fb-b317-dc7e63fe6cb2.xml, stream.ksvalidateclockcreaterequest, KsValidateClockCreateRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsValidateClockCreateRequest
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -53,7 +57,7 @@ NTSTATUS KsValidateClockCreateRequest(
 
 `Irp`
 
-
+TBD
 
 `ClockCreate`
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 45D60409-EAE5-43A0-9E90-0B2F9FC31840
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_TYPE_CONFIG_INIT
+ms.keywords : WDF_IO_TYPE_CONFIG_INIT function, wdf.wdf_io_type_config_init, WDF_IO_TYPE_CONFIG_INIT, wdfdevice/WDF_IO_TYPE_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_TYPE_CONFIG_INIT
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,8 +68,6 @@ This function does not return a value.
 
 The <b>WDF_IO_TYPE_CONFIG_INIT</b> function zeros the specified <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a> structure and sets the  structure's <b>Size</b> member. It then sets the <b>ReadWriteIoType</b> member to <b>WdfDeviceIoBuffered</b>, and the <b>DeviceControlIoType</b> member to <b>WdfDeviceIoBuffered</b>.
 
-For a code example that uses <b>WDF_IO_TYPE_CONFIG_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -80,14 +82,10 @@ For a code example that uses <b>WDF_IO_TYPE_CONFIG_INIT</b>, see <a href="..\wdf
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
-</dt>
-</dl>
+
  
 
  

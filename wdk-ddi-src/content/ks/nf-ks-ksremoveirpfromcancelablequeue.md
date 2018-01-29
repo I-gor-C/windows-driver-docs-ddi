@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6bc23364-07c9-4a01-b475-e4620f62a674
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsRemoveIrpFromCancelableQueue
+ms.keywords : KsRemoveIrpFromCancelableQueue function [Streaming Media Devices], ks/KsRemoveIrpFromCancelableQueue, stream.ksremoveirpfromcancelablequeue, KsRemoveIrpFromCancelableQueue, ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsRemoveIrpFromCancelableQueue
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,6 +79,25 @@ The <b>KsRemoveIrpFromCancelableQueue</b> function returns the next noncanceled 
 ## Remarks
 
 These enumerations are used in the previous parameters to control where the IRP is removed from and how.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef enum {
+    KsListEntryTail,
+    KsListEntryHead
+} KSLIST_ENTRY_LOCATION;
+
+typedef enum {
+    KsAcquireOnly,
+    KsAcquireAndRemove
+} KSIRP_REMOVAL_OPERATION;
+ </pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,14 +113,10 @@ These enumerations are used in the previous parameters to control where the IRP 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksreleaseirponcancelablequeue.md">KsReleaseIrpOnCancelableQueue</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksremovespecificirpfromcancelablequeue.md">KsRemoveSpecificIrpFromCancelableQueue</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 55FBE72C-E74E-4116-9602-6D491592350F
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3, IWDFDevice3::WriteToHardware, WriteToHardware
+ms.keywords : umdf.iwdfdevice3_writetohardware, wdf.iwdfdevice3_writetohardware, IWDFDevice3, WriteToHardware method, IWDFDevice3 interface, WriteToHardware method, WriteToHardware method, IWDFDevice3 interface, wudfddi/IWDFDevice3::WriteToHardware, IWDFDevice3::WriteToHardware, WriteToHardware
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFDevice3.WriteToHardware
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -100,11 +104,8 @@ This method does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
-</dt>
-</dl>
+
  
 
  

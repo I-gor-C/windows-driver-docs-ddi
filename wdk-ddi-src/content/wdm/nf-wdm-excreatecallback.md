@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a8532a6d-2b7f-4ed6-a2e4-6157d5e842ff
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExCreateCallback
+ms.keywords : kernel.excreatecallback, ExCreateCallback, ExCreateCallback routine [Kernel-Mode Driver Architecture], wdm/ExCreateCallback, k102_7c7f1024-8ae7-4925-91f3-add4fcb452b7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExCreateCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlExPassive, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,14 +86,32 @@ Before calling <b>ExCreateCallback</b>, the driver must call <a href="..\wudfwdm
 When all operations have been completed with the callback object, the driver must delete the object to prevent a memory leak. For information about deleting an object  that was created with the OBJ_PERMANENT object attribute, see <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>.
 
 The following table shows the callback objects that the operating system creates for use by drivers.
-
+<table>
+<tr>
+<th>Callback object name</th>
+<th>Usage</th>
+</tr>
+<tr>
+<td>
 \Callback\SetSystemTime
 
+</td>
+<td>
 The operating system calls any callback routines registered for this object whenever the system time changes.
 
+</td>
+</tr>
+<tr>
+<td>
 \Callback\PowerState
 
+</td>
+<td>
 The operating system calls any callback routines registered for this object  whenever certain system power characteristics change. When a driver registers for callback notification (by calling <b>ExRegisterCallback</b>), it can specify the changes for which it should be notified.
+
+</td>
+</tr>
+</table> 
 
 For more information about callback objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540718">Callback Objects</a>.
 
@@ -107,20 +129,14 @@ For more information about callback objects, see <a href="https://msdn.microsoft
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exregistercallback.md">ExRegisterCallback</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
-</dt>
-<dt>
 <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
+
+<a href="..\wdm\nf-wdm-exregistercallback.md">ExRegisterCallback</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c7eda6a7-a1ce-43a3-b0e4-41f5afc61be6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VERIFY_INFORMATION, VERIFY_INFORMATION, *PVERIFY_INFORMATION
+ms.keywords : storage.dump_write, Dump_Write routine [Storage Devices], Dump_Write, PDUMP_WRITE, PDUMP_WRITE, ntdddump/Dump_Write, filter_rtns_acfeabaa-fc01-494a-b344-c47d1fccd1ee.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista and Windows S
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : Dump_Write
-req.alt-loc : ntdddump.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVERIFY_INFORMATION, VERIFY_INFORMATION"
 ---
 
 
@@ -90,17 +94,12 @@ To safely modify the data for the dump write, a filter driver should allocate a 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntdddump\nc-ntdddump-dump_read.md">Dump_Read</a>
-</dt>
-<dt>
-<a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
-</dt>
-<dt>
+
 <a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a>
-</dt>
-</dl>
+
+<a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
+
  
 
  

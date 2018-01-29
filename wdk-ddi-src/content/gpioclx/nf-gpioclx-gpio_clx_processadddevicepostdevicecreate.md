@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 4B88820F-32B9-4AA2-867A-316A3796BE86
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO_CLX_ProcessAddDevicePostDeviceCreate
+ms.keywords : gpioclx/GPIO_CLX_ProcessAddDevicePostDeviceCreate, GPIO.gpio_clx_processadddevicepostdevicecreate, GPIO_CLX_ProcessAddDevicePostDeviceCreate, GPIO_CLX_ProcessAddDevicePostDeviceCreate method [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GPIO_CLX_ProcessAddDevicePostDeviceCreate
-req.alt-loc : Msgpioclxstub.lib,Msgpioclxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Msgpioclxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
 ---
 
@@ -61,15 +65,45 @@ A WDFDEVICE handle to the framework device object that represents the GPIO contr
 ## Return Value
 
 <b>GPIO_CLX_ProcessAddDevicePostDeviceCreate</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The caller is not a registered client of GpioClx.
+</dl>
+</td>
+<td width="60%">
+The caller is not a registered client of GpioClx.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The framework failed to find the device name of the GPIO controller.
+</dl>
+</td>
+<td width="60%">
+The framework failed to find the device name of the GPIO controller.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Out of memory.
+</dl>
+</td>
+<td width="60%">
+Out of memory.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,17 +125,12 @@ For a code example that contains a call to <b>GPIO_CLX_ProcessAddDevicePostDevic
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439487">GPIO_CLX_ProcessAddDevicePreDeviceCreate</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439487">GPIO_CLX_ProcessAddDevicePreDeviceCreate</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
  
 
  

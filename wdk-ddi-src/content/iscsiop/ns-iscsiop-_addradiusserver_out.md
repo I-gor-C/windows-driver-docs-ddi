@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 512e66f6-d91f-4351-ba55-02ae3e84102e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _AddRADIUSServer_OUT, *PAddRADIUSServer_OUT, AddRADIUSServer_OUT
+ms.keywords : _AddRADIUSServer_OUT, storage.addradiusserver_out, PAddRADIUSServer_OUT, *PAddRADIUSServer_OUT, structs-iSCSI_4dd737cb-21a3-4f49-acbe-d40b5b172f3f.xml, iscsiop/AddRADIUSServer_OUT, AddRADIUSServer_OUT, PAddRADIUSServer_OUT structure pointer [Storage Devices], iscsiop/PAddRADIUSServer_OUT, AddRADIUSServer_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AddRADIUSServer_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PAddRADIUSServer_OUT, AddRADIUSServer_OUT"
 ---
 
@@ -46,13 +50,13 @@ typedef struct _AddRADIUSServer_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            On output from <b>AddRADIUSServer</b>, the status of the <b>AddRADIUSServer</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`Status`
 
-    ## Remarks
-        It is optional that you implement this method.
+On output from <b>AddRADIUSServer</b>, the status of the <b>AddRADIUSServer</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+It is optional that you implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,22 +66,16 @@ typedef struct _AddRADIUSServer_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550133">AddRADIUSServer</a>
-</dt>
-<dt>
-<a href="..\iscsiop\ns-iscsiop-_addradiusserver_in.md">AddRADIUSServer_IN</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
+<a href="..\iscsiop\ns-iscsiop-_addradiusserver_in.md">AddRADIUSServer_IN</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550133">AddRADIUSServer</a>
+
  
 
  

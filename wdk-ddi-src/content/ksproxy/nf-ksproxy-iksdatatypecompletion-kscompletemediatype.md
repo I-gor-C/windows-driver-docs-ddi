@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0a6157cf-09ae-4640-9c54-3e9b91fd93a9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsDataTypeCompletion, IKsDataTypeCompletion::KsCompleteMediaType, KsCompleteMediaType
+ms.keywords : stream.iksdatatypecompletion_kscompletemediatype, KsCompleteMediaType method [Streaming Media Devices], IKsDataTypeCompletion interface [Streaming Media Devices], KsCompleteMediaType method, ksproxy_950cbba2-9512-46d0-ac08-133195e4370f.xml, ksproxy/IKsDataTypeCompletion::KsCompleteMediaType, IKsDataTypeCompletion, IKsDataTypeCompletion::KsCompleteMediaType, KsCompleteMediaType method [Streaming Media Devices], IKsDataTypeCompletion interface, KsCompleteMediaType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsDataTypeCompletion.KsCompleteMediaType
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -89,14 +93,10 @@ For more information about <b>IAMStreamConfig::SetFormat</b> and AM_MEDIA_TYPE, 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559844">IKsDataTypeHandler::KsSetMediaType</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
-</dt>
-</dl>
+
  
 
  

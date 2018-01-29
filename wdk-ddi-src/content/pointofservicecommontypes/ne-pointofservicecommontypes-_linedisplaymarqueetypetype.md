@@ -7,8 +7,8 @@ old-location : pos\linedisplaymarqueetypetype.htm
 old-project : pos
 ms.assetid : 051A9254-42B4-4698-AFF4-0A27D83719F0
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _LineDisplayMarqueeTypeType, LineDisplayMarqueeTypeType
+ms.date : 1/18/2018
+ms.keywords : pointofservicecommontypes/PLineDisplayMarqueeTypeType, _LineDisplayMarqueeTypeType, PLineDisplayMarqueeTypeType, PLineDisplayMarqueeTypeType enumeration pointer, LineDisplayMarqueeTypeType enumeration, LineDisplayMarqueeTypeType, pos.linedisplaymarqueetypetype, pointofservicecommontypes/, pointofservicecommontypes/LineDisplayMarqueeTypeType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LineDisplayMarqueeTypeType
-req.alt-loc : pointofservicecommontypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LineDisplayMarqueeTypeType
 ---
 
@@ -47,6 +51,36 @@ typedef enum _LineDisplayMarqueeTypeType {
 ## Constants
 
 <table>
+
+<tr>
+<td>MarqueeTypeDown</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MarqueeTypeInit</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MarqueeTypeLeft</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MarqueeTypeNone</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MarqueeTypeRight</td>
+<td></td>
+</tr>
+
+<tr>
+<td>MarqueeTypeUp</td>
+<td></td>
+</tr>
 </table>
 
 

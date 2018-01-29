@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a172f53c-9993-4d52-ae3f-35a8ab5745f6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetAdapterAttributes
+ms.keywords : fibreHBA_rtns_f7675f0c-2f71-428e-871b-90c51a1b5bc4.xml, hbaapi/HBA_GetAdapterAttributes, HBA_GetAdapterAttributes routine [Storage Devices], HBA_GetAdapterAttributes, storage.hba_getadapterattributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_GetAdapterAttributes
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -51,11 +55,11 @@ HBA_STATUS HBA_API HBA_GetAdapterAttributes(
 
 `Handle`
 
-
+TBD
 
 `HbaAttributes`
 
-
+TBD
 
 
 ## Return Value
@@ -77,14 +81,10 @@ The <b>HBA_GetAdapterAttributes</b> routine returns a value of type <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_adapterattributes.md">HBA_AdapterAttributes</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
  
 
  

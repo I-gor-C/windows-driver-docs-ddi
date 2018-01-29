@@ -7,8 +7,8 @@ old-location : netvista\wwan_sms_cdma_record.htm
 old-project : netvista
 ms.assetid : 4138be92-1f54-4478-8fbb-951f1d06cb66
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_SMS_CDMA_RECORD, WWAN_SMS_CDMA_RECORD, *PWWAN_SMS_CDMA_RECORD
+ms.date : 1/18/2018
+ms.keywords : wwan/PWWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD structure pointer [Network Drivers Starting with Windows Vista], WwanRef_3356fcf9-99f2-4c07-89d5-fa73019f9a27.xml, WWAN_SMS_CDMA_RECORD, netvista.wwan_sms_cdma_record, WWAN_SMS_CDMA_RECORD structure [Network Drivers Starting with Windows Vista], *PWWAN_SMS_CDMA_RECORD, wwan/WWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD, _WWAN_SMS_CDMA_RECORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_SMS_CDMA_RECORD
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WWAN_SMS_CDMA_RECORD, *PWWAN_SMS_CDMA_RECORD
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWWAN_SMS_CDMA_RECORD, WWAN_SMS_CDMA_RECORD"
 req.product : Windows 10 or later.
 ---
 
@@ -55,13 +59,12 @@ typedef struct _WWAN_SMS_CDMA_RECORD {
 
 ## Members
 
-        
-            `Address`
 
-            A NULL-terminated string with a maximum length of 15 digits that represents a mobile number. The
+`Address`
+
+A NULL-terminated string with a maximum length of 15 digits that represents a mobile number. The
      number can be in any of the following formats:
      
-
 <ul>
 <li>
 "+ &lt;International Country Code&gt; &lt;Mobile Number&gt;\0"
@@ -71,8 +74,7 @@ typedef struct _WWAN_SMS_CDMA_RECORD {
 "&lt;Mobile Number&gt;\0"
 
 </li>
-</ul>
-If 
+</ul>If 
      <b>MsgStatus</b> is 
      <b>WwanMsgStatusDraft</b> or 
      <b>WwanMsgStatusSent</b>, miniport drivers should specify the receiver's mobile number in the previous
@@ -80,39 +82,38 @@ If
      <b>MsgStatus</b> is 
      <b>WwanMsgStatusNew</b> or 
      <b>WwanMsgStatusOld</b>, miniport drivers should specify the sender's mobile number.
-        
-            `EncodedMsg`
 
-            The encoded content of the record that represents the SMS text message.
-        
-            `EncodingId`
+`EncodedMsg`
 
-            The encoding that is used in the CDMA message. 
+The encoded content of the record that represents the SMS text message.
+
+`EncodingId`
+
+The encoding that is used in the CDMA message. 
      <b>EncodedMsg</b> message should be interpreted based on the value of this member.
-        
-            `LanguageId`
 
-            The language that is used in the SMS text message.
-        
-            `MessageIndex`
+`LanguageId`
 
-            An index into the virtual message store that is maintained by the miniport driver. This index is
+The language that is used in the SMS text message.
+
+`MessageIndex`
+
+An index into the virtual message store that is maintained by the miniport driver. This index is
      1-based and the maximum index is 
      <b>ulMaxMessageIndex</b> as returned in WWAN_SMS_CONFIGURATION_STATUS. Be aware that the specification
      does not differentiate between physically available data stores. If the message is a Class 0
      (flash/alert) message, this must be set to WWAN_MESSAGE_INDEX_NONE.
-        
-            `MsgStatus`
 
-            The status of the record that represents whether the SMS message is new (unread), old (read), a
+`MsgStatus`
+
+The status of the record that represents whether the SMS message is new (unread), old (read), a
      draft, or sent.
-        
-            `ScTimeStamp`
 
-            A string that represent the Service Center (SC) timestamp, in the following format: "
+`ScTimeStamp`
+
+A string that represent the Service Center (SC) timestamp, in the following format: "
       <i>YY</i>/<i>MM</i>/<i>DD</i>,
       <i>HH</i>:<i>mm</i>:<i>SS</i>±<i>ZZ</i>" where:
-
 <ul>
 <li>
 <i>YY</i> represents the last two digits of the year. For example, 07 corresponds to 2007. Valid range
@@ -150,19 +151,18 @@ If
         when combined with the Â± symbol).
 
 </li>
-</ul>
-For example, to represent October 2nd, 1996, 20:01:54 GMT+2 hours use the following string timestamp
+</ul>For example, to represent October 2nd, 1996, 20:01:54 GMT+2 hours use the following string timestamp
       "96/10/02,20:01:54+02"
-        
-            `SizeInBytes`
 
-            The size, in bytes, of 
+`SizeInBytes`
+
+The size, in bytes, of 
      <b>EncodedMsg</b> . The encoded message can have a maximum length of WWAN_SMS_CDMA_MAX_BUF_LEN. Miniport
      drivers must specify a value for this member for all encoding types.
-        
-            `SizeInCharacters`
 
-            Size of 
+`SizeInCharacters`
+
+Size of 
      <b>EncodedMsg</b> in number of characters represented by the encoded data. Miniport drivers should
      specify 0 for this member when 
      <b>EncodingId</b> is set to 
@@ -178,21 +178,16 @@ For example, to represent October 2nd, 1996, 20:01:54 GMT+2 hours use the follow
 | **Minimum UMDF version** |  |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wwan\ne-wwan-_wwan_msg_status.md">WWAN_MSG_STATUS</a>
-</dt>
-<dt>
-<a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
-</dt>
-<dt>
+
 <a href="..\wwan\ne-wwan-_wwan_sms_cdma_lang.md">WWAN_SMS_CDMA_LANG</a>
-</dt>
-</dl>
- 
+
+<a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_RECORD structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_RECORD structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

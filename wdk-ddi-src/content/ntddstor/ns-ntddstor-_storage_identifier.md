@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f2b0610a-dffa-48fb-bc5a-355fa9f05770
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_IDENTIFIER, *PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER
+ms.keywords : PSTORAGE_IDENTIFIER, ntddstor/STORAGE_IDENTIFIER, *PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER, structs-general_29c666d7-3e61-44fe-a36e-979418dbb958.xml, PSTORAGE_IDENTIFIER structure pointer [Storage Devices], _STORAGE_IDENTIFIER, STORAGE_IDENTIFIER structure [Storage Devices], storage.storage_identifier, ntddstor/PSTORAGE_IDENTIFIER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_IDENTIFIER
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_IDENTIFIER, *PSTORAGE_IDENTIFIER
 ---
 
 # _STORAGE_IDENTIFIER structure
@@ -51,33 +55,33 @@ typedef struct _STORAGE_IDENTIFIER {
 
 ## Members
 
-        
-            `Association`
 
-            Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.
-        
-            `CodeSet`
+`Association`
 
-            Specifies the code set used by a SCSI identification descriptor to identify a logical unit.
-        
-            `Identifier`
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.
 
-            Contains the identifier associated with this descriptor.
-        
-            `IdentifierSize`
+`CodeSet`
 
-            Specifies the size in bytes of the identifier.
-        
-            `NextOffset`
+Specifies the code set used by a SCSI identification descriptor to identify a logical unit.
 
-            Specifies the offset in bytes from the current descriptor to the next descriptor.
-        
-            `Type`
+`Identifier`
 
-            Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.
+Contains the identifier associated with this descriptor.
 
-    ## Remarks
-        Every device identification page (page code 0x83) of SCSI vital product data contains a series of identification descriptors. The STORAGE_IDENTIFIER structure represents a SCSI identification descriptor.
+`IdentifierSize`
+
+Specifies the size in bytes of the identifier.
+
+`NextOffset`
+
+Specifies the offset in bytes from the current descriptor to the next descriptor.
+
+`Type`
+
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.
+
+## Remarks
+Every device identification page (page code 0x83) of SCSI vital product data contains a series of identification descriptors. The STORAGE_IDENTIFIER structure represents a SCSI identification descriptor.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,16 +91,12 @@ typedef struct _STORAGE_IDENTIFIER {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a>
+
  
 
  

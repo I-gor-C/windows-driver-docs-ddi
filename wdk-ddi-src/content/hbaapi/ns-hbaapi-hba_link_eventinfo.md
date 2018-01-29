@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : be682bc7-61cb-40bd-920d-bc2224d6e426
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_Link_EventInfo, HBA_LINK_EVENTINFO, *PHBA_LINK_EVENTINFO
+ms.keywords : hbaapi/HBA_Link_EventInfo, HBA_Link_EventInfo structure [Storage Devices], hbaapi/PHBA_LINK_EVENTINFO, HBA_LINK_EVENTINFO structure [Storage Devices], *PHBA_LINK_EVENTINFO, HBA_LINK_EVENTINFO, HBA_Link_EventInfo, structs-Fibre_eb994375-ebac-41f5-af82-341f14400b1f.xml, PHBA_LINK_EVENTINFO structure pointer [Storage Devices], PHBA_LINK_EVENTINFO, storage.hba_link_eventinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_LINK_EVENTINFO
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : HBA_LINK_EVENTINFO, *PHBA_LINK_EVENTINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHBA_LINK_EVENTINFO, HBA_LINK_EVENTINFO"
 ---
 
 # HBA_Link_EventInfo structure
@@ -47,14 +51,14 @@ typedef struct HBA_Link_EventInfo {
 
 ## Members
 
-        
-            `PortFcId`
 
-            Indicates the port of type Nx_Port through which the event occurred. For a definition of Nx_Port, see the T11 committee's <i>Fibre Channel HBA API</i>.specification.
-        
-            `Reserved`
+`PortFcId`
 
-            Reserved.
+Indicates the port of type Nx_Port through which the event occurred. For a definition of Nx_Port, see the T11 committee's <i>Fibre Channel HBA API</i>.specification.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements
@@ -65,19 +69,14 @@ typedef struct HBA_Link_EventInfo {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
-</dt>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_rscn_eventinfo.md">HBA_RSCN_EventInfo</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
+
  
 
  

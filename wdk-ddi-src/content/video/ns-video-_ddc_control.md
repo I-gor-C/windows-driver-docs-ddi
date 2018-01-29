@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 993c4913-1613-4ffb-86dd-fd8846139a46
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DDC_CONTROL, *PDDC_CONTROL, DDC_CONTROL
+ms.keywords : DDC_CONTROL structure [Display Devices], Video_Structs_d3006e08-ed2e-471d-b9c1-326a35aaf8bf.xml, video/DDC_CONTROL, DDC_CONTROL, PDDC_CONTROL, video/PDDC_CONTROL, display.ddc_control, PDDC_CONTROL structure pointer [Display Devices], *PDDC_CONTROL, _DDC_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DDC_CONTROL
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDDC_CONTROL, DDC_CONTROL"
 req.product : Windows 10 or later.
 ---
 
 # _DDC_CONTROL structure
-The DDC_CONTROL structure holds function pointers and <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> segment information needed by the <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a> function, which is exported by the video port driver. The <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a> function, implemented by the video miniport driver, can call <b>VideoPortDDCMonitorHelper</b> for assistance in reading the EDID blocks from its child monitor devices.
+The DDC_CONTROL structure holds function pointers and <a href="https://msdn.microsoft.com/0dd010e7-3e10-422a-adcb-8fe7df9e29ab">EDID</a> segment information needed by the <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a> function, which is exported by the video port driver. The <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a> function, implemented by the video miniport driver, can call <b>VideoPortDDCMonitorHelper</b> for assistance in reading the EDID blocks from its child monitor devices.
 
 ## Syntax
 ````
@@ -49,18 +53,18 @@ typedef struct _DDC_CONTROL {
 
 ## Members
 
-        
-            `EdidSegment`
 
-            Specifies the particular EDID segment. Currently, this member is meaningful only for EEDID (EDID Version 1.3); for other EDID versions, this member should always be set to 0. For EEDID (EDID Version 1.3), segment numbers can range from 0 through 127, where each segment is 256 bytes in length. Since the EDID version number is in segment 0, this member must be set to 0 the first time  the video miniport driver calls <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a> regarding a particular monitor.
-        
-            `I2CCallbacks`
+`EdidSegment`
 
-            Is an <a href="..\video\ns-video-_i2c_callbacks.md">I2C_CALLBACKS</a> structure that contains pointers to functions, implemented by the video miniport driver, that read and write individual data bits to the I2C serial clock and data lines.
-        
-            `Size`
+Specifies the particular EDID segment. Currently, this member is meaningful only for EEDID (EDID Version 1.3); for other EDID versions, this member should always be set to 0. For EEDID (EDID Version 1.3), segment numbers can range from 0 through 127, where each segment is 256 bytes in length. Since the EDID version number is in segment 0, this member must be set to 0 the first time  the video miniport driver calls <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a> regarding a particular monitor.
 
-            Specifies the size, in bytes, of this DDC_CONTROL structure.
+`I2CCallbacks`
+
+Is an <a href="..\video\ns-video-_i2c_callbacks.md">I2C_CALLBACKS</a> structure that contains pointers to functions, implemented by the video miniport driver, that read and write individual data bits to the I2C serial clock and data lines.
+
+`Size`
+
+Specifies the size, in bytes, of this DDC_CONTROL structure.
 
 
 ## Requirements
@@ -71,25 +75,18 @@ typedef struct _DDC_CONTROL {
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a>
-</dt>
-<dt>
+
 <a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
-</dt>
-<dt>
+
 <a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a>
+
+<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
+
  
 
  

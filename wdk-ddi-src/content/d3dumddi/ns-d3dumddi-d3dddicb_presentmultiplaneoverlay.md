@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4161418c-4f56-4daf-bf3d-e76899ccd1b2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_PRESENTMULTIPLANEOVERLAY, D3DDDICB_PRESENTMULTIPLANEOVERLAY
+ms.keywords : D3DDDICB_PRESENTMULTIPLANEOVERLAY, d3dumddi/D3DDDICB_PRESENTMULTIPLANEOVERLAY, D3DDDICB_PRESENTMULTIPLANEOVERLAY structure [Display Devices], display.d3dddicb_presentmultiplaneoverlay
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_PRESENTMULTIPLANEOVERLAY
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_PRESENTMULTIPLANEOVERLAY
 ---
 
@@ -50,30 +54,30 @@ typedef struct D3DDDICB_PRESENTMULTIPLANEOVERLAY {
 
 ## Members
 
-        
-            `AllocationInfo`
 
-            An array of structures of type <a href="..\d3dumddi\ns-d3dumddi-d3dddi_multiplane_overlay_allocation_info.md">D3DDDI_MULTIPLANE_ALLOCATION_INFO</a> that specify info about the multiplane overlay allocations.
-        
-            `AllocationInfoCount`
+`AllocationInfo`
 
-            [in] The number of allocations in the array that the <b>AllocationInfo</b> member specifies. The maximum number is 16, the value of the <b>D3DDDI_MAX_MULTIPLANE_OVERLAY_ALLOCATIONS</b> constant.
-        
-            `BroadcastContext`
+An array of structures of type <a href="..\d3dumddi\ns-d3dumddi-d3dddi_multiplane_overlay_allocation_info.md">D3DDDI_MULTIPLANE_ALLOCATION_INFO</a> that specify info about the multiplane overlay allocations.
 
-            [in] An array of handles to the additional contexts to broadcast the current present operation to. The <b>D3DDDI_MAX_BROADCAST_CONTEXT</b> constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current present operation to. 
+`AllocationInfoCount`
+
+[in] The number of allocations in the array that the <b>AllocationInfo</b> member specifies. The maximum number is 16, the value of the <b>D3DDDI_MAX_MULTIPLANE_OVERLAY_ALLOCATIONS</b> constant.
+
+`BroadcastContext`
+
+[in] An array of handles to the additional contexts to broadcast the current present operation to. The <b>D3DDDI_MAX_BROADCAST_CONTEXT</b> constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current present operation to. 
 
 Broadcasting is supported only for flip operations. To broadcast a flip operation, the display miniport driver must support memory mapped I/O (MMIO)-based flips. To indicate support of MMIO flips, the display miniport driver sets the <b>FlipOnVSyncMmIo</b> bit-field flag in the <b>FlipCaps</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a> structure when its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> function is called.
 
 The original context that the <b>hContext</b> member specifies and that the user-mode display driver presents to is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the user-mode display driver sends the present operation to the owning context (<b>hContext</b>) and broadcasts to that one additional context.
-        
-            `BroadcastContextCount`
 
-            [in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.
-        
-            `hContext`
+`BroadcastContextCount`
 
-            [in] A handle to the context that the driver submits the copy operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.
+[in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.
+
+`hContext`
+
+[in] A handle to the context that the driver submits the copy operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.
 
 
 ## Requirements
@@ -84,22 +88,16 @@ The original context that the <b>hContext</b> member specifies and that the user
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-d3dddi_multiplane_overlay_allocation_info.md">D3DDDI_MULTIPLANE_ALLOCATION_INFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-d3dddi_multiplane_overlay_allocation_info.md">D3DDDI_MULTIPLANE_ALLOCATION_INFO</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
+
  
 
  

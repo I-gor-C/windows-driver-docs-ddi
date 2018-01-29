@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 994b4a75-4581-423b-8b8f-17a64600fb74
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltWriteFile
+ms.keywords : FltApiRef_p_to_z_8d4d2b16-fa86-4084-8dad-879d4908f2fe.xml, fltkernel/FltWriteFile, ifsk.fltwritefile, FltWriteFile function [Installable File System Drivers], FltWriteFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltWriteFile
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -89,7 +93,6 @@ Pointer to a buffer that contains the data to be written to the file. If the fil
 `Flags`
 
 Bitmask of flags specifying the type of write operation to be performed. 
-
 <table>
 <tr>
 <th>Flag</th>
@@ -164,20 +167,30 @@ A minifilter driver calls <b>FltWriteFile</b> to write data to an open file.
 <b>FltWriteFile</b> causes a write request to be sent to the minifilter driver instances attached below the initiating instance and to the file system. The specified instance and the instances attached above it do not receive the write request. 
 
 <b>FltWriteFile</b> performs noncached I/O if either of the following is true: 
-
+<ul>
+<li>
 The caller set the FLTFL_IO_OPERATION_NON_CACHED flag in the <i>Flags</i> parameter. 
 
+</li>
+<li>
 The file object was opened for noncached I/O. Usually, this is done by specifying the FILE_NO_INTERMEDIATE_BUFFERING <b>CreateOptions</b> flag in the preceding call to <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>, <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>, or <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>. 
 
-Noncached I/O imposes the following restrictions on the parameter values passed to <b>FltWriteFile</b>: 
-
+</li>
+</ul>Noncached I/O imposes the following restrictions on the parameter values passed to <b>FltWriteFile</b>: 
+<ul>
+<li>
 The buffer that the <i>Buffer</i> parameter points to must be aligned in accordance with the alignment requirement of the underlying storage device. To allocate such an aligned buffer, call <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>. 
 
+</li>
+<li>
 The byte offset that the <i>ByteOffset</i> parameter points to must be a nonnegative multiple of the volume's sector size. 
 
+</li>
+<li>
 The length specified in the <i>Length</i> parameter must be a nonnegative multiple of the volume's sector size. 
 
-If the value of the <i>CallbackRoutine</i> parameter is not <b>NULL</b>, the write operation is performed asynchronously. 
+</li>
+</ul>If the value of the <i>CallbackRoutine</i> parameter is not <b>NULL</b>, the write operation is performed asynchronously. 
 
 If the value of the <i>CallbackRoutine</i> parameter is <b>NULL</b>, the write operation is performed synchronously. That is, <b>FltWriteFile</b> waits until the write operation is complete before returning. This is true even if the file object that <i>FileObject</i> points to was opened for asynchronous I/O. 
 
@@ -197,32 +210,22 @@ If multiple threads call <b>FltWriteFile</b> for the same file object, and the f
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>
+
 <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
+
  
 
  

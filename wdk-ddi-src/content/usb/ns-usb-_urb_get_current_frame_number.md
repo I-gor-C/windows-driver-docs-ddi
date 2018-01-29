@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4c6e5064-83b4-4d3c-ab08-041070128f3c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_GET_CURRENT_FRAME_NUMBER,
+ms.keywords : usb/_URB_GET_CURRENT_FRAME_NUMBER, _URB_GET_CURRENT_FRAME_NUMBER, buses._urb_get_current_frame_number, _URB_GET_CURRENT_FRAME_NUMBER structure [Buses], usbstrct_b767de1b-63fd-4ac4-b696-78e4d0d83661.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_GET_CURRENT_FRAME_NUMBER
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,18 @@ struct _URB_GET_CURRENT_FRAME_NUMBER {
 
 ## Members
 
-        
-            `FrameNumber`
 
-            Contains the current 32-bit frame number, on the USB bus, on return from the host controller driver.
-        
-            `Hdr`
+`_URB_HEADER`
 
-            Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_GET_CURRENT_FRAME_NUMBER, and <b>Hdr.Length</b> must be <code>sizeof(_URB_GET_CURRENT_FRAME_NUMBER)</code>.
+
+
+`FrameNumber`
+
+Contains the current 32-bit frame number, on the USB bus, on return from the host controller driver.
+
+`Hdr`
+
+Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_GET_CURRENT_FRAME_NUMBER, and <b>Hdr.Length</b> must be <code>sizeof(_URB_GET_CURRENT_FRAME_NUMBER)</code>.
 
 
 ## Requirements
@@ -66,19 +74,14 @@ struct _URB_GET_CURRENT_FRAME_NUMBER {
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

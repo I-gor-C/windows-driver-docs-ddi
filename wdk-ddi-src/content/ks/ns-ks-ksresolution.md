@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fbd6222c-6d54-4e2a-aa5b-8051f0838886
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSRESOLUTION, KSRESOLUTION, *PKSRESOLUTION
+ms.keywords : ks/KSRESOLUTION, KSRESOLUTION, stream.ksresolution, ks-struct_eb48cf83-0b80-4955-89a4-0b363497bef5.xml, KSRESOLUTION structure [Streaming Media Devices], PKSRESOLUTION structure pointer [Streaming Media Devices], ks/PKSRESOLUTION, *PKSRESOLUTION, PKSRESOLUTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSRESOLUTION
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSRESOLUTION, *PKSRESOLUTION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSRESOLUTION, KSRESOLUTION"
 ---
 
 # KSRESOLUTION structure
@@ -47,17 +51,17 @@ typedef struct {
 
 ## Members
 
-        
-            `Error`
 
-            Specifies the +/- notification error of the clock in 100-nanosecond units, where 0 is the best, meaning the event notification granularity is as good as the increment granularity.
-        
-            `Granularity`
+`Error`
 
-            Specifies the increment granularity of the clock in 100-nanosecond units, where 1 is the best.
+Specifies the +/- notification error of the clock in 100-nanosecond units, where 0 is the best, meaning the event notification granularity is as good as the increment granularity.
 
-    ## Remarks
-        Vendors can supply a structure of type KSRESOLUTION in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a> property request.
+`Granularity`
+
+Specifies the increment granularity of the clock in 100-nanosecond units, where 1 is the best.
+
+## Remarks
+Vendors can supply a structure of type KSRESOLUTION in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a> property request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
-</dt>
-</dl>
+
  
 
  

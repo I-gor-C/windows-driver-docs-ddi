@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9E36B02F-2292-416C-AA09-1968EECE5A3D
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_CREATEPAGINGQUEUE, D3DDDICB_CREATEPAGINGQUEUE
+ms.keywords : D3DDDICB_CREATEPAGINGQUEUE, D3DDDICB_CREATEPAGINGQUEUE structure [Display Devices], display.d3dddicb_createpagingqueue, d3dumddi/D3DDDICB_CREATEPAGINGQUEUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_CREATEPAGINGQUEUE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_CREATEPAGINGQUEUE
 ---
 
@@ -50,29 +54,29 @@ typedef struct D3DDDICB_CREATEPAGINGQUEUE {
 
 ## Members
 
-        
-            `FenceValueCPUVirtualAddress`
 
-            [out] A read-only mapping of the paging fence object value for the CPU. This is a user mode address readable from the process that created the monitored fence object.
-        
-            `hPagingQueue`
+`FenceValueCPUVirtualAddress`
 
-            [out] A paging queue handle that will be used to synchronize paging operations.
-        
-            `hSyncObject`
+[out] A read-only mapping of the paging fence object value for the CPU. This is a user mode address readable from the process that created the monitored fence object.
 
-            [out] Handle to the monitored fence object used to synchronize paging operations for this paging queue. Destroying the paging queue (either implicitly or explicitly) will automatically destroy this sync object.
-        
-            `PhysicalAdapterIndex`
+`hPagingQueue`
 
-            [in] Physical adapter index (engine ordinal) for the queue.
-        
-            `Priority`
+[out] A paging queue handle that will be used to synchronize paging operations.
 
-            [in] Scheduling priority relative to other paging queues on this device. Paging queues with higher priority values will be processed ahead of paging queues with lower priority values.
+`hSyncObject`
 
-    ## Remarks
-        A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroypagingqueuecb.md">pfnDestroyPagingQueueCb</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.
+[out] Handle to the monitored fence object used to synchronize paging operations for this paging queue. Destroying the paging queue (either implicitly or explicitly) will automatically destroy this sync object.
+
+`PhysicalAdapterIndex`
+
+[in] Physical adapter index (engine ordinal) for the queue.
+
+`Priority`
+
+[in] Scheduling priority relative to other paging queues on this device. Paging queues with higher priority values will be processed ahead of paging queues with lower priority values.
+
+## Remarks
+A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroypagingqueuecb.md">pfnDestroyPagingQueueCb</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,16 +86,12 @@ typedef struct D3DDDICB_CREATEPAGINGQUEUE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createpagingqueuecb.md">pfnCreatePagingQueueCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroypagingqueuecb.md">pfnDestroyPagingQueueCb</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : debugger\getcurrentpasscount.htm
 old-project : debugger
 ms.assetid : ff9b9988-6790-48d1-8423-60c63b0a90cf
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugBreakpoint2, IDebugBreakpoint2::GetCurrentPassCount, GetCurrentPassCount
+ms.date : 1/19/2018
+ms.keywords : IDebugBreakpoint2 interface [Windows Debugging], GetCurrentPassCount method, IDebugBreakpoint2::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint::GetCurrentPassCount, dbgeng/IDebugBreakpoint2::GetCurrentPassCount, ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], dbgeng/IDebugBreakpoint::GetCurrentPassCount, debugger.getcurrentpasscount, IDebugBreakpoint2, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetCurrentPassCount method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugBreakpoint.GetCurrentPassCount,IDebugBreakpoint2.GetCurrentPassCount
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -55,11 +59,23 @@ The remaining number of times that the target must hit the breakpoint before it 
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
 
- 
+</td>
+</tr>
+</table> 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -73,7 +89,7 @@ If the debugger executes the code at the breakpoint location while stepping thro
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the information that is returned in <i>Count</i>.
 
-For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
+For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

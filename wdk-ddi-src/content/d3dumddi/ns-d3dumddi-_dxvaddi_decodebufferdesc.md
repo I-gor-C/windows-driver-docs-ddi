@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 809b4cf8-e4c5-4cb6-b58f-8b6b98111361
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_DECODEBUFFERDESC, DXVADDI_DECODEBUFFERDESC
+ms.keywords : DXVADDI_DECODEBUFFERDESC structure [Display Devices], DXVADDI_DECODEBUFFERDESC, _DXVADDI_DECODEBUFFERDESC, display.dxvaddi_decodebufferdesc, d3dumddi/DXVADDI_DECODEBUFFERDESC, DXVA2_Structs_0946584e-3d1f-4bb4-95d5-7ae2c669814a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_DECODEBUFFERDESC
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_DECODEBUFFERDESC
 ---
 
@@ -57,27 +61,26 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 
 ## Members
 
-        
-            `BufferIndex`
 
-            [in] Reserved. Do not use this member. For more information, see the Remarks section.
-        
-            `CompressedBufferType`
+`BufferIndex`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.
-        
-            `DataOffset`
+[in] Reserved. Do not use this member. For more information, see the Remarks section.
 
-            [in] The offset of the relevant data from the beginning of the buffer, in bytes. The use of this member is currently restricted to the value zero.
-        
-            `DataSize`
+`CompressedBufferType`
 
-            [in] The amount of relevant data in the buffer, in bytes. The location of the last byte of content in the buffer is the value of <b>DataOffset</b> plus the value of <b>DataSize</b> minus 1.
-        
-            `FirstMBaddress`
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.
 
-            [in] The macroblock address of the first macroblock in the buffer that is passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of the <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a> structure. The following table shows examples of macroblock addresses.
+`DataOffset`
 
+[in] The offset of the relevant data from the beginning of the buffer, in bytes. The use of this member is currently restricted to the value zero.
+
+`DataSize`
+
+[in] The amount of relevant data in the buffer, in bytes. The location of the last byte of content in the buffer is the value of <b>DataOffset</b> plus the value of <b>DataSize</b> minus 1.
+
+`FirstMBaddress`
+
+[in] The macroblock address of the first macroblock in the buffer that is passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of the <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a> structure. The following table shows examples of macroblock addresses.
 <table>
 <tr>
 <th>Macroblock</th>
@@ -123,27 +126,25 @@ Bottom-right
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The <b>FirstMBaddress</b> member must be zero if the data buffer is one of the following types: picture decoding parameters, inverse-quantization matrix, slice control, bitstream data, AYUV, IA44/AI44, DPXD, Highlight, and DCCMD.
 
 If the data buffer is a residual difference block data buffer, <b>FirstMBaddress</b> must have the same value as for the corresponding macroblock control command buffer.
-        
-            `hBuffer`
 
-            [in] A handle to the buffer.
-        
-            `Height`
+`hBuffer`
 
-            [in] Reserved. Do not use this member. For more information, see the Remarks section.
-        
-            `NumMBsInBuffer`
+[in] A handle to the buffer.
 
-            [in] The number of macroblocks of data in the buffer, including skipped macroblocks. This member must be zero if the data buffer is one of the following types: picture decoding parameters, inverse-quantization matrix, AYUV, IA44/AI44, DPXD, Highlight, or DCCMD.
+`Height`
+
+[in] Reserved. Do not use this member. For more information, see the Remarks section.
+
+`NumMBsInBuffer`
+
+[in] The number of macroblocks of data in the buffer, including skipped macroblocks. This member must be zero if the data buffer is one of the following types: picture decoding parameters, inverse-quantization matrix, AYUV, IA44/AI44, DPXD, Highlight, or DCCMD.
 
 The value for <b>NumMBsInBuffer</b> depends on the type of data buffer that is being used, as shown in the following table.
-
 <table>
 <tr>
 <th>Buffer type</th>
@@ -190,25 +191,25 @@ The same value as for the corresponding slice-control command buffer.
 </td>
 </tr>
 </table>
-        
-            `pCipherCounter`
 
-            [in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a> structure that contains a 128-bit protected video path (PVP) value.
-        
-            `ReservedBits`
+`pCipherCounter`
 
-            [in] Reserved bits that are used for packing and alignment. This member must be zero.
-        
-            `Stride`
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a> structure that contains a 128-bit protected video path (PVP) value.
 
-            [in] Reserved. Do not use this member. For more information, see the Remarks section.
-        
-            `Width`
+`ReservedBits`
 
-            [in] Reserved. Do not use this member. For more information, see the Remarks section.
+[in] Reserved bits that are used for packing and alignment. This member must be zero.
 
-    ## Remarks
-        An array of DXVADDI_DECODEBUFFERDESC structures is referred to as a <i>buffer description list</i>. When a set of buffers is sent from the host decoder to the hardware accelerator, a buffer description list is sent to describe the buffers. The buffer description list contains one DXVADDI_DECODEBUFFERDESC structure for each buffer in this set. The buffer description list starts with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the first type, followed by a DXVADDI_DECODEBUFFERDESC structure for the next buffer of the same type, and so on. The buffer description list then continues with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the next type, and so on. This entire list is contained in a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a> structure.
+`Stride`
+
+[in] Reserved. Do not use this member. For more information, see the Remarks section.
+
+`Width`
+
+[in] Reserved. Do not use this member. For more information, see the Remarks section.
+
+## Remarks
+An array of DXVADDI_DECODEBUFFERDESC structures is referred to as a <i>buffer description list</i>. When a set of buffers is sent from the host decoder to the hardware accelerator, a buffer description list is sent to describe the buffers. The buffer description list contains one DXVADDI_DECODEBUFFERDESC structure for each buffer in this set. The buffer description list starts with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the first type, followed by a DXVADDI_DECODEBUFFERDESC structure for the next buffer of the same type, and so on. The buffer description list then continues with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the next type, and so on. This entire list is contained in a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a> structure.
 
 Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Direct3D surfaces rather than the private surfaces that DirectX VA 1.0 uses, the user-mode display driver obtains values for the index, width, height, and stride from the given compressed buffer type rather than from the values in the <b>BufferIndex</b>, <b>Width</b>, <b>Height</b>, and <b>Stride</b> members. In fact, the Microsoft Direct3D runtime sets these members to zero.
 
@@ -220,22 +221,16 @@ Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Dir
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
-</dt>
-<dt>
-<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
-</dt>
-<dt>
+
 <a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a>
-</dt>
-<dt>
+
+<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
+
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a>
-</dt>
-</dl>
+
  
 
  

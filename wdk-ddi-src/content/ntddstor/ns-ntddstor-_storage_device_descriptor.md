@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 99b270a0-0634-41a8-9de7-d2a2d4c3059f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DEVICE_DESCRIPTOR, STORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR
+ms.keywords : STORAGE_DEVICE_DESCRIPTOR structure [Storage Devices], PSTORAGE_DEVICE_DESCRIPTOR structure pointer [Storage Devices], PSTORAGE_DEVICE_DESCRIPTOR, STORAGE_DEVICE_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_DESCRIPTOR, storage.storage_device_descriptor, _STORAGE_DEVICE_DESCRIPTOR, ntddstor/STORAGE_DEVICE_DESCRIPTOR, structs-general_3c393126-f5c8-47d8-bfb5-6127ce656e9a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_DEVICE_DESCRIPTOR
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PSTORAGE_DEVICE_DESCRIPTOR, STORAGE_DEVICE_DESCRIPTOR
 ---
 
 # _STORAGE_DEVICE_DESCRIPTOR structure
@@ -61,78 +65,78 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
 
 ## Members
 
-        
-            `BusType`
 
-            Specifies an enumerator value of type 
+`BusType`
+
+Specifies an enumerator value of type 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566356">STORAGE_BUS_TYPE</a> that indicates the type of bus to 
       which the device is connected. This should be used to interpret the raw device properties at the end of this 
       structure (if any).
-        
-            `CommandQueueing`
 
-            Indicates when <b>TRUE</b> that the device supports multiple outstanding commands (SCSI 
+`CommandQueueing`
+
+Indicates when <b>TRUE</b> that the device supports multiple outstanding commands (SCSI 
       tagged queuing or equivalent). When <b>FALSE</b>, the device does not support SCSI-tagged 
       queuing or the equivalent. The STORPORT driver is responsible for synchronizing the commands.
-        
-            `DeviceType`
 
-            Specifies the device type as defined by the Small Computer Systems Interface (SCSI) specification.
-        
-            `DeviceTypeModifier`
+`DeviceType`
 
-            Specifies the device type modifier, if any, as defined by the SCSI specification. If no device type 
+Specifies the device type as defined by the Small Computer Systems Interface (SCSI) specification.
+
+`DeviceTypeModifier`
+
+Specifies the device type modifier, if any, as defined by the SCSI specification. If no device type 
       modifier exists, this member is zero.
-        
-            `ProductIdOffset`
 
-            Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
+`ProductIdOffset`
+
+Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
       contains the device's product ID. If the device has no product ID, this member is zero.
-        
-            `ProductRevisionOffset`
 
-            Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
+`ProductRevisionOffset`
+
+Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
       contains the device's product revision string. If the device has no product revision string, this member is 
       zero.
-        
-            `RawDeviceProperties`
 
-            Contains an array of length one that serves as a place holder for the first byte of the bus specific 
+`RawDeviceProperties`
+
+Contains an array of length one that serves as a place holder for the first byte of the bus specific 
       property data.
-        
-            `RawPropertiesLength`
 
-            Indicates the number of bytes of bus-specific data that have been appended to this descriptor.
-        
-            `RemovableMedia`
+`RawPropertiesLength`
 
-            Indicates when <b>TRUE</b> that the device's media (if any) is removable. If the device 
+Indicates the number of bytes of bus-specific data that have been appended to this descriptor.
+
+`RemovableMedia`
+
+Indicates when <b>TRUE</b> that the device's media (if any) is removable. If the device 
       has no media, this member should be ignored. When <b>FALSE</b> the device's media is not 
       removable.
-        
-            `SerialNumberOffset`
 
-            Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
+`SerialNumberOffset`
+
+Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
       contains the device's serial number. If the device has no serial number, this member is zero.
-        
-            `Size`
 
-            Specifies the total size of the descriptor in bytes, including ID strings which are appended to the 
+`Size`
+
+Specifies the total size of the descriptor in bytes, including ID strings which are appended to the 
       structure.
-        
-            `VendorIdOffset`
 
-            Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
+`VendorIdOffset`
+
+Specifies the byte offset from the beginning of the structure to a <b>NULL</b>-terminated ASCII string that 
       contains the device's vendor ID. If the device has no vendor ID, this member is zero.
-        
-            `Version`
 
-            Indicates the size of the 
+`Version`
+
+Indicates the size of the 
       <b>STORAGE_DEVICE_DESCRIPTOR</b> structure. The 
       value of this member will change as members are added to the structure.
 
-    ## Remarks
-        Applications and storage class drivers issue a device-control request with the I/O control code 
+## Remarks
+Applications and storage class drivers issue a device-control request with the I/O control code 
      <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve 
      this structure, which contains information about a target device. The structure can be retrieved only from an 
      FDO; attempting to retrieve device properties from an adapter causes an error.
@@ -150,28 +154,20 @@ An application or driver can determine the required buffer size by casting the r
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
-</dt>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_storage_adapter_descriptor.md">STORAGE_ADAPTER_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_descriptor_header.md">STORAGE_DESCRIPTOR_HEADER</a>
-</dt>
-<dt>
+
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

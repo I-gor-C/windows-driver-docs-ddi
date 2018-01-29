@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2CADC0BF-D8C0-48EC-8206-E1BD61DF4AD7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSMETHOD_STREAMALLOCATOR, KSMETHOD_STREAMALLOCATOR
+ms.keywords : stream.ksmethod_streamallocator, KSMETHOD_STREAMALLOCATOR enumeration [Streaming Media Devices], KSMETHOD_STREAMALLOCATOR_ALLOC, ks/KSMETHOD_STREAMALLOCATOR_FREE, KSMETHOD_STREAMALLOCATOR_FREE, ks/KSMETHOD_STREAMALLOCATOR, ks/KSMETHOD_STREAMALLOCATOR_ALLOC, KSMETHOD_STREAMALLOCATOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSMETHOD_STREAMALLOCATOR
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSMETHOD_STREAMALLOCATOR
 ---
 

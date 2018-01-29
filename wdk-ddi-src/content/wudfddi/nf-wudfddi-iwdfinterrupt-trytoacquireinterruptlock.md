@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4A109CDF-C5DE-4BAE-AA4E-294EA5CE86C5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFInterrupt, IWDFInterrupt::TryToAcquireInterruptLock, TryToAcquireInterruptLock
+ms.keywords : wdf.iwdfinterrupt_trytoacquireinterruptlock, IWDFInterrupt, TryToAcquireInterruptLock, TryToAcquireInterruptLock method, IWDFInterrupt interface, TryToAcquireInterruptLock method, umdf.iwdfinterrupt_trytoacquireinterruptlock, wudfddi/IWDFInterrupt::TryToAcquireInterruptLock, IWDFInterrupt::TryToAcquireInterruptLock, TryToAcquireInterruptLock method, IWDFInterrupt interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFInterrupt.TryToAcquireInterruptLock
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -52,10 +56,6 @@ BOOLEAN TryToAcquireInterruptLock();
 This function has no parameters.
 
 ## Return Value
-
-The method returns TRUE if the interrupt lock was successfully acquired. Otherwise, the method returns FALSE.
-
-The method returns TRUE if the interrupt lock was successfully acquired. Otherwise, the method returns FALSE.
 
 The method returns TRUE if the interrupt lock was successfully acquired. Otherwise, the method returns FALSE.
 
@@ -85,17 +85,12 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/2ED55AEC-2446-4E66-AAFD-A22BAB3FC9C7">IWDFInterrupt::AcquireInterruptLock</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterrupttrytoacquirelock.md">WdfInterruptTryToAcquireLock</a>
-</dt>
-</dl>
+
  
 
  

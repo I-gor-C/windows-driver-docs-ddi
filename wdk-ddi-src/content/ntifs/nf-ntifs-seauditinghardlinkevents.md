@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3d90be4f-83bf-45c6-9a74-03a9b19c431a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeAuditingHardLinkEvents
+ms.keywords : ifsk.seauditinghardlinkevents, SeAuditingHardLinkEvents function [Installable File System Drivers], SeAuditingHardLinkEvents, ntifs/SeAuditingHardLinkEvents, seref_b63ee159-df1c-405e-9ac2-44e56b2bd51c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeAuditingHardLinkEvents
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,11 +54,11 @@ This routine is reserved for system use.
 
 `AccessGranted`
 
-
+TBD
 
 `SecurityDescriptor`
 
-
+TBD
 
 
 ## Return Value

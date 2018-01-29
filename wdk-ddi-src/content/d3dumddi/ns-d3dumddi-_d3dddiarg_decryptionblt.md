@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cc11e153-6be6-4fbc-9535-98bab7ed2b90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_DECRYPTIONBLT, D3DDDIARG_DECRYPTIONBLT
+ms.keywords : display.d3dddiarg_decryptionblt, _D3DDDIARG_DECRYPTIONBLT, D3DDDIARG_DECRYPTIONBLT structure [Display Devices], D3DDDIARG_DECRYPTIONBLT, d3dumddi/D3DDDIARG_DECRYPTIONBLT, UMDisplayDriver_param_Structs_1d0c0adb-cfde-47fd-b17c-1acc15de25cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIARG_DECRYPTIONBLT is supported beginning with 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_DECRYPTIONBLT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_DECRYPTIONBLT
 ---
 
@@ -54,45 +58,45 @@ typedef struct _D3DDDIARG_DECRYPTIONBLT {
 
 ## Members
 
-        
-            `DstSubResourceIndex`
 
-            [in] The index to the destination surface within the resource.
-        
-            `hCryptoSession`
+`DstSubResourceIndex`
 
-            [in] A handle to the encryption session.
-        
-            `hDstResource`
+[in] The index to the destination surface within the resource.
 
-            [in] A handle to the destination resource.
-        
-            `hSrcResource`
+`hCryptoSession`
 
-            [in] A handle to the source resource.
-        
-            `pContentKey`
+[in] A handle to the encryption session.
 
-            [in] A pointer to a block of memory that contains the content key that is required to decrypt the bitblt data. If <b>pContentKey</b> is <b>NULL</b>, hardware does not require a separate content key to decrypt the data. That is, the session key is used to encrypt the data.
-        
-            `pEncryptedBlockInfo`
+`hDstResource`
 
-            [in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiencrypted_block_info.md">D3DDDIENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted.
-        
-            `pIV`
+[in] A handle to the destination resource.
 
-            [in] A pointer to a block of memory that contains the initialization vector that is required to decrypt the bitblt data. If <b>pIV</b> is <b>NULL</b>, hardware does not require a separate initialization vector to decrypt the data. That is, the session key is used to encrypt the data.
-        
-            `SrcResourceSize`
+`hSrcResource`
 
-            [in] The size, in bytes, of the source resource.
-        
-            `SrcSubResourceIndex`
+[in] A handle to the source resource.
 
-            [in] The index to the source surface within the resource.
+`pContentKey`
 
-    ## Remarks
-        A pointer to a populated D3DDDIARG_DECRYPTIONBLT structure is passed to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a> function to write data to a protected surface.
+[in] A pointer to a block of memory that contains the content key that is required to decrypt the bitblt data. If <b>pContentKey</b> is <b>NULL</b>, hardware does not require a separate content key to decrypt the data. That is, the session key is used to encrypt the data.
+
+`pEncryptedBlockInfo`
+
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiencrypted_block_info.md">D3DDDIENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted.
+
+`pIV`
+
+[in] A pointer to a block of memory that contains the initialization vector that is required to decrypt the bitblt data. If <b>pIV</b> is <b>NULL</b>, hardware does not require a separate initialization vector to decrypt the data. That is, the session key is used to encrypt the data.
+
+`SrcResourceSize`
+
+[in] The size, in bytes, of the source resource.
+
+`SrcSubResourceIndex`
+
+[in] The index to the source surface within the resource.
+
+## Remarks
+A pointer to a populated D3DDDIARG_DECRYPTIONBLT structure is passed to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a> function to write data to a protected surface.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,16 +106,12 @@ typedef struct _D3DDDIARG_DECRYPTIONBLT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiencrypted_block_info.md">D3DDDIENCRYPTED_BLOCK_INFO</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiencrypted_block_info.md">D3DDDIENCRYPTED_BLOCK_INFO</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0f3fd5ae-f8ce-4a2f-b8c0-4ac101569e09
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_reset_state, IOCTL_KS_RESET_STATE control code [Streaming Media Devices], IOCTL_KS_RESET_STATE, ks/IOCTL_KS_RESET_STATE, ks-ioctl_ce7c174b-952d-4b08-ab05-f8843155af33.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_RESET_STATE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -59,11 +63,10 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
-    ## Remarks
-        Initiate a reset on a pin by sending IOCTL_KS_RESET_STATE with a value of KSRESET_BEGIN in the InBuffer parameter of <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>. 
+## Remarks
+Initiate a reset on a pin by sending IOCTL_KS_RESET_STATE with a value of KSRESET_BEGIN in the InBuffer parameter of <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>. 
 
 When the reset state is initiated, existing read and write requests are canceled. While in the reset state, any new read or write requests are rejected with STATUS_DEVICE_NOT_READY.
 
@@ -80,22 +83,16 @@ When the reset state is terminated, the pin can again accept new data and pass d
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-ksacquireresetvalue.md">KsAcquireResetValue</a>
-</dt>
-<dt>
 <a href="..\ks\nc-ks-pfnksfiltervoid.md">AVStrMiniFilterReset</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksacquireresetvalue.md">KsAcquireResetValue</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556354">AVStrMiniPinReset</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
-</dt>
-</dl>
+
  
 
  

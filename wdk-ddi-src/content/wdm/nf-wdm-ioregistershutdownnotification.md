@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fd9a612b-b0a7-4bef-9fab-8212a3b594b6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRegisterShutdownNotification
+ms.keywords : k104_dd357e39-68b4-4cc2-b7c7-34f16c74a4a0.xml, wdm/IoRegisterShutdownNotification, kernel.ioregistershutdownnotification, IoRegisterShutdownNotification routine [Kernel-Mode Driver Architecture], IoRegisterShutdownNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoRegisterShutdownNotification
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,17 +92,12 @@ A PnP driver might register a shutdown routine to perform certain tasks before s
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterlastchanceshutdownnotification.md">IoRegisterLastChanceShutdownNotification</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
+
+<a href="..\wdm\nf-wdm-ioregisterlastchanceshutdownnotification.md">IoRegisterLastChanceShutdownNotification</a>
+
  
 
  

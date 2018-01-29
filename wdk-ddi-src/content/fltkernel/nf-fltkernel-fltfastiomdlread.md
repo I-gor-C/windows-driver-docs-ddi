@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1DF810B5-D4C3-4F67-B913-C2B2132DFDE2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFastIoMdlRead
+ms.keywords : ifsk.fltfastiomdlread, FltFastIoMdlRead, fltkernel/FsRtlMdlReadDev, FsRtlMdlReadDev, FsRtlMdlReadDev routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlMdlReadDev
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -107,17 +111,12 @@ The routine is similar to <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltfastiomdlreadcomplete.md">FltFastIoMdlReadComplete</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreaddev~r6.md">FsRtlMdlReadDev</a>
-</dt>
-</dl>
+
  
 
  

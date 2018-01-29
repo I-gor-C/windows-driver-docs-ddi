@@ -7,8 +7,8 @@ old-location : netvista\rilimssipreason_2.htm
 old-project : netvista
 ms.assetid : 45cee356-e05e-4f3a-bccf-4d95a64587d4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILIMSSIPREASON, RILIMSSIPREASON
+ms.date : 1/18/2018
+ms.keywords : RIL_IMSSIPREASON_NOT_AUTHORIZED_FOR_SERVICE, netvista.rilimssipreason_2, rilapitypes/RILIMSSIPREASON, rilapitypes/RIL_IMSSIPREASON_NOT_AUTHORIZED_FOR_SERVICE, RIL_IMSSIPREASON_MAX, rilapitypes/RIL_IMSSIPREASON_MAX, RILIMSSIPREASON, RILIMSSIPREASON enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILIMSSIPREASON
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILIMSSIPREASON
 req.product : Windows 10 or later.
 ---
@@ -52,6 +56,11 @@ typedef enum _RILIMSSIPREASON {
 
 <tr>
 <td>RIL_IMSSIPREASON_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_IMSSIPREASON_NONE</td>
 <td></td>
 </tr>
 

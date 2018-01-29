@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8BAAB861-677D-4945-92B7-BDBE7A29695E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : LAMP_MODE, LAMP_MODE
+ms.keywords : stream.ioctl_lamp_get_intensity_color, IOCTL_LAMP_GET_INTENSITY_COLOR control code [Streaming Media Devices], IOCTL_LAMP_GET_INTENSITY_COLOR, lamp/IOCTL_LAMP_GET_INTENSITY_COLOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_LAMP_GET_INTENSITY_COLOR
-req.alt-loc : lamp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,29 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_MODE
 ---
 
 # IOCTL_LAMP_GET_INTENSITY_COLOR IOCTL
 The <b>IOCTL_LAMP_GET_INTENSITY_COLOR</b> 
    control code queries the light intensity when the lamp is configured to emit color light.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define IOCTL_LAMP_GET_INTENSITY_COLOR \
+    CTL_CODE(IOCTL_LAMP_BASE, 0x0006, METHOD_BUFFERED, FILE_ANY_ACCESS)</pre>
+</td>
+</tr>
+</table></span></div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -60,13 +75,12 @@ Length of a <a href="..\lamp\ns-lamp-lamp_intensity_color.md">LAMP_INTENSITY_COL
 <text></text>
 
 ### Status Block
-I/O Status block
 The driver sets <code>Irp-&gt;IoStatus.Status</code> to <b>STATUS_SUCCESS</b> or the appropriate error status.
 
 If the device has been acquired by a camera driver, the lamp driver should return a error <b>STATUS_RESOURCE_IN_USE</b> via <code>Irp-&gt;IoStatus.Status</code>.
 
-    ## Remarks
-        The payload type of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_intensity_color.md">LAMP_INTENSITY_COLOR</a> structure.</p>
+## Remarks
+The payload type of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_intensity_color.md">LAMP_INTENSITY_COLOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

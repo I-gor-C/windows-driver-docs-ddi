@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a3a9b862-872e-4a1e-bb80-1831db983b28
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030, D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030
+ms.keywords : d3d12umddi/D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030, D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030, display.d3d12ddi-content-protection-callbacks-0030, D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030 {
 
 ## Members
 
-        
-            `pfnCreateProtectedSessionCB`
 
-            Create protected session callback.
+`pfnCreateProtectedSessionCB`
+
+Create protected session callback.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ea05cb82-8a50-48d8-a15c-b7ab58c01b30
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::StopSynchronously, StopSynchronously
+ms.keywords : StopSynchronously, StopSynchronously method, IWDFIoQueue interface, UMDFQueueObjectRef_18e42c5a-ade3-4d81-8af1-bd19655650e7.xml, wdf.iwdfioqueue_stopsynchronously, umdf.iwdfioqueue_stopsynchronously, IWDFIoQueue::StopSynchronously, StopSynchronously method, IWDFIoQueue, wudfddi/IWDFIoQueue::StopSynchronously, IWDFIoQueue interface, StopSynchronously method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.StopSynchronously
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 None
 
-None
-
-None
-
 ## Remarks
 
 The <b>StopSynchronously</b> method is the synchronous version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a> method. That is, <b>StopSynchronously</b> does not return to the driver until the queue stops.
@@ -79,14 +79,10 @@ The <b>StopSynchronously</b> method enables the queue to receive new requests, e
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
-</dt>
-</dl>
+
  
 
  

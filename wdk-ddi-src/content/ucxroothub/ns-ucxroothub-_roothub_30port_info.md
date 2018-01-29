@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5C39C0EB-AC7F-44E5-95EB-9F067DBE0801
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _ROOTHUB_30PORT_INFO, *PROOTHUB_30PORT_INFO, ROOTHUB_30PORT_INFO
+ms.keywords : ucxroothub/_ROOTHUB_30PORT_INFO, P_ROOTHUB_30PORT_INFO structure pointer [Buses], ROOTHUB_30PORT_INFO structure [Buses], buses._roothub_30port_info, ROOTHUB_30PORT_INFO, ucxroothub/P_ROOTHUB_30PORT_INFO, *PROOTHUB_30PORT_INFO, P_ROOTHUB_30PORT_INFO, _ROOTHUB_30PORT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ROOTHUB_30PORT_INFO
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PROOTHUB_30PORT_INFO, ROOTHUB_30PORT_INFO"
 req.product : Windows 10 or later.
 ---
@@ -51,26 +55,26 @@ typedef struct _ROOTHUB_30PORT_INFO {
 
 ## Members
 
-        
-            `DebugCapable`
 
-            A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
-        
-            `HubDepth`
+`DebugCapable`
 
-            The hub depth limit.
-        
-            `MinorRevision`
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
 
-            Revision number.
-        
-            `PortNumber`
+`HubDepth`
 
-            The USB 3.0 port number connected to the root hub.
-        
-            `Removable`
+The hub depth limit.
 
-            A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is removable.
+`MinorRevision`
+
+Revision number.
+
+`PortNumber`
+
+The USB 3.0 port number connected to the root hub.
+
+`Removable`
+
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is removable.
 
 
 ## Requirements

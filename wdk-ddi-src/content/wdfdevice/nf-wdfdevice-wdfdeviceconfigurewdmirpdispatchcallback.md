@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 594E0FF1-A965-4CE4-A2EA-C9098685FCED
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceConfigureWdmIrpDispatchCallback
+ms.keywords : PFN_WDFDEVICECONFIGUREWDMIRPDISPATCHCALLBACK, WdfDeviceConfigureWdmIrpDispatchCallback method, wdfdevice/WdfDeviceConfigureWdmIrpDispatchCallback, WdfDeviceConfigureWdmIrpDispatchCallback, kmdf.wdfdeviceconfigurewdmirpdispatchcallback, wdf.wdfdeviceconfigurewdmirpdispatchcallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 2.17
-req.alt-api : WdfDeviceConfigureWdmIrpDispatchCallback
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,7 @@ One of the following IRP major function codes: IRP_MJ_DEVICE_CONTROL, IRP_MJ_INT
 
 `EvtDeviceWdmIrpDisptach`
 
-
+TBD
 
 `DriverContext`
 
@@ -79,12 +83,34 @@ An untyped pointer to driver-defined context information that the framework pass
 ## Return Value
 
 If the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid <i>MajorFunction</i> value was supplied.
+</dl>
+</td>
+<td width="60%">
+An invalid <i>MajorFunction</i> value was supplied.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Insufficient memory was available.
+</dl>
+</td>
+<td width="60%">
+Insufficient memory was available.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -116,17 +142,12 @@ A driver might call the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method f
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirp.md">WdfDeviceWdmDispatchIrp</a>
-</dt>
-<dt>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c4968449-eba0-4f7a-98e6-6955d3333495
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoResourceListRemoveByDescriptor
+ms.keywords : wdfresource/WdfIoResourceListRemoveByDescriptor, kmdf.wdfioresourcelistremovebydescriptor, DFResourceObjectRef_4bd88d52-ea6d-43c1-9477-8338e6bf1cdb.xml, WdfIoResourceListRemoveByDescriptor method, wdf.wdfioresourcelistremovebydescriptor, WdfIoResourceListRemoveByDescriptor, PFN_WDFIORESOURCELISTREMOVEBYDESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfIoResourceListRemoveByDescriptor
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -75,8 +79,6 @@ When <b>WdfIoResourceListRemoveByDescriptor</b> removes the resource descriptor 
 
 For more information about resource requirements lists and logical configurations, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
-The following code example searches a logical configuration for a resource descriptor that contains a specified port address, and it removes that resource descriptor.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,14 +93,10 @@ The following code example searches a logical configuration for a resource descr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcelistremove.md">WdfIoResourceListRemove</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
  
 
  

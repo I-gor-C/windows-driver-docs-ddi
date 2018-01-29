@@ -7,8 +7,8 @@ old-location : netvista\ndisgetprocessorinformationex.htm
 old-project : netvista
 ms.assetid : 9af21f56-d93d-4130-888c-c7009dc2854d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisGetProcessorInformationEx
+ms.date : 1/18/2018
+ms.keywords : netvista.ndisgetprocessorinformationex, NdisGetProcessorInformationEx function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_f387710b-fb49-4202-9ff5-496021972695.xml, ndis/NdisGetProcessorInformationEx, NdisGetProcessorInformationEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.20 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisGetProcessorInformationEx
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -56,44 +60,32 @@ NDIS_STATUS NdisGetProcessorInformationEx(
 
 An NDIS driver or instance handle that was obtained during caller initialization. For example, a
      miniport driver can use the NDIS handle that it obtained from the 
-     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
-     NdisMRegisterMiniportDriver</a> or 
+     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
+     NdisMRegisterMiniportDriver</b></mshelp:link> or 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> functions.
      Other NDIS drivers can use the handles from the following functions:
      
 
-<dl>
-<dd>
 
 <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
 
-</dd>
-<dd>
 
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 
-</dd>
-<dd>
 
 <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 
-</dd>
-<dd>
 
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-
-</dd>
-</dl>
 
 `SystemProcessorInfo`
 
 A pointer to a caller-allocated buffer where NDIS puts the 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">
-     NDIS_SYSTEM_PROCESSOR_INFO_EX</a> structure and an array of 
+     <mshelp:link keywords="netvista.ndis_system_processor_info_ex" tabindex="0"><b>
+     NDIS_SYSTEM_PROCESSOR_INFO_EX</b></mshelp:link> structure and an array of 
      <a href="..\ntddndis\ns-ntddndis-_ndis_processor_info_ex.md">NDIS_PROCESSOR_INFO_EX</a> structures
      that contain information about the CPU topology of the local computer. The caller provides the length of
      the buffer in the 
@@ -109,14 +101,36 @@ A pointer to a value that is the size, in bytes, of the buffer that the caller p
 ## Return Value
 
 <b>NdisGetProcessorInformationEx</b> can return one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
-</dl>The operation completed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation completed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
-</dl>The size of the buffer at the 
+</dl>
+</td>
+<td width="60%">
+The size of the buffer at the 
        <i>Size</i> parameter was too small. In this case, NDIS provides the required buffer size in the 
        <i>Size</i> member.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -138,31 +152,22 @@ NDIS drivers call the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
-</dt>
-<dt>
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
+
 <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetProcessorInformationEx function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetProcessorInformationEx function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

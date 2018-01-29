@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 12bbc77b-c1cd-4899-aff2-e18e0d58b6b9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFdoQueryForInterface
+ms.keywords : PFN_WDFFDOQUERYFORINTERFACE, kmdf.wdffdoqueryforinterface, WdfFdoQueryForInterface, WdfFdoQueryForInterface method, DFDeviceObjectFdoPdoRef_949fcc50-3604-4970-9516-666da06e3c9e.xml, wdffdo/WdfFdoQueryForInterface, wdf.wdffdoqueryforinterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfFdoQueryForInterface
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
@@ -58,7 +62,7 @@ NTSTATUS WdfFdoQueryForInterface(
 
 `Fdo`
 
-
+TBD
 
 `InterfaceType`
 
@@ -84,15 +88,35 @@ Additional interface-specific information. This parameter is optional and can be
 ## Return Value
 
 If the operation succeeds, the method returns STATUS_SUCCESS. Additional return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The device object is invalid or if the <i>Device</i>, <i>InterfaceType</i>, or <i>Interface</i> parameter is <b>NULL</b>. 
+</dl>
+</td>
+<td width="60%">
+The device object is invalid or if the <i>Device</i>, <i>InterfaceType</i>, or <i>Interface</i> parameter is <b>NULL</b>. 
 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The framework could not allocate a request to send to another driver. 
+</dl>
+</td>
+<td width="60%">
+The framework could not allocate a request to send to another driver. 
 
- 
+</td>
+</tr>
+</table> 
 
 The method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -105,8 +129,6 @@ Your driver can call <b>WdfFdoQueryForInterface</b> to obtain access to a driver
 Framework-based drivers define interfaces by calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>. 
 
 For more information about <b>WdfFdoQueryForInterface</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-driver-defined-interfaces">Using Driver-Defined Interfaces</a>.
-
-The following code example is from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">Toaster</a> sample function driver. This example obtains access to an interface that the toaster sample bus driver defines.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -122,11 +144,8 @@ The following code example is from the <a href="https://docs.microsoft.com/en-us
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetqueryforinterface.md">WdfIoTargetQueryForInterface</a>
-</dt>
-</dl>
+
  
 
  

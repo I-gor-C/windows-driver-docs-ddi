@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : F4F3A591-B4BE-4367-A76A-820552F9B3B5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCreateNamedPipeFile
+ms.keywords : FILE_PIPE_BYTE_STREAM_TYPE, fltkernel/FltCreateNamedPipeFile, FltCreateNamedPipeFile, ifsk.fltcreatenamedpipefile, FILE_PIPE_BYTE_STREAM_MODE, FILE_PIPE_MESSAGE_TYPE, FILE_PIPE_MESSAGE_MODE, FILE_PIPE_QUEUE_COMPLETION, FILE_PIPE_COMPLETE_OPERATION, FltCreateNamedPipeFile function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltCreateNamedPipeFile
-req.alt-loc : Fltmgr.lib,Fltmgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fltmgr.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -84,7 +88,6 @@ A pointer to a caller-allocated variable that receives the file object pointer i
 `DesiredAccess`
 
 A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. 
-
 <table>
 <tr>
 <th>DesiredAccess Flags</th>
@@ -190,11 +193,9 @@ The caller can synchronize the completion of an I/O operation by waiting for the
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 Alternatively, for any file object that does not represent a directory, you can specify one or more of the following generic <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags. (The STANDARD_RIGHTS_<i>XXX</i> flags are predefined system values that are used to enforce security on system objects.) You can also combine these generic flags with additional flags from the preceding table. 
-
 <table>
 <tr>
 <th>DesiredAccess to File Values</th>
@@ -225,7 +226,6 @@ STANDARD_RIGHTS_WRITE, FILE_WRITE_DATA, FILE_APPEND_DATA, and SYNCHRONIZE.
 `ObjectAttributes`
 
 A pointer to an opaque <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that is already initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object are listed in the following table. 
-
 <table>
 <tr>
 <th>Member</th>
@@ -287,21 +287,13 @@ A set of flags that controls the file object attributes. If the caller is runnin
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateNamedPipeFile</b>, the <b>Information</b> member of the variable contains one of the following values:
 
-<dl>
-<dd>
 FILE_CREATED
 
-</dd>
-<dd>
 FILE_OPENED
-
-</dd>
-</dl>
 
 `ShareAccess`
 
 The type of share access to the file that the caller requires as one or a combination of the following flags. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. 
-
 <table>
 <tr>
 <th><i>ShareAccess</i> flags</th>
@@ -332,7 +324,6 @@ The file can be opened for write access by other threads' calls to <b>FltCreateN
 `CreateDisposition`
 
 A value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described in the following table. 
-
 <table>
 <tr>
 <th><i>CreateDisposition</i> values</th>
@@ -373,7 +364,6 @@ If the file already exists, open it. If it does not, create the file.
 `CreateOptions`
 
 The options to be applied when creating or opening the pipe, as a compatible combination of the following flags. 
-
 <table>
 <tr>
 <th><i>CreateOptions</i> flags</th>
@@ -414,35 +404,92 @@ All operations on the pipe are performed synchronously. Waits in the system to s
 `NamedPipeType`
 
 The mode to read from the pipe.
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="FILE_PIPE_BYTE_STREAM_TYPE"></a><a id="file_pipe_byte_stream_type"></a><dl>
+<dt><b>FILE_PIPE_BYTE_STREAM_TYPE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The data is written to the pipe as a stream of bytes. To use this type, <i>ReadMode</i> must not be FILE_PIPE_MESSAGE_MODE.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="FILE_PIPE_MESSAGE_TYPE"></a><a id="file_pipe_message_type"></a><dl>
+<dt><b>FILE_PIPE_MESSAGE_TYPE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The data is written to the pipe as a message.
+
+</td>
+</tr>
+</table>
 
 `ReadMode`
 
 The mode to read from the pipe.
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="FILE_PIPE_BYTE_STREAM_MODE"></a><a id="file_pipe_byte_stream_mode"></a><dl>
+<dt><b>FILE_PIPE_BYTE_STREAM_MODE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The pipe data is read as a stream of bytes.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="FILE_PIPE_MESSAGE_MODE"></a><a id="file_pipe_message_mode"></a><dl>
+<dt><b>FILE_PIPE_MESSAGE_MODE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The pipe data is read as messages. To use this mode, <i>NamedPipeType</i> must be  FILE_PIPE_MESSAGE_TYPE.
+
+</td>
+</tr>
+</table>
 
 `CompletionMode`
 
 The completion mode for pipe reads and writes.
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="FILE_PIPE_QUEUE_COMPLETION"></a><a id="file_pipe_queue_completion"></a><dl>
+<dt><b>FILE_PIPE_QUEUE_COMPLETION</b></dt>
+</dl>
+</td>
+<td width="60%">
+The pipe read and write requests are  queued and can block until completed.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="FILE_PIPE_COMPLETE_OPERATION"></a><a id="file_pipe_complete_operation"></a><dl>
+<dt><b>FILE_PIPE_COMPLETE_OPERATION</b></dt>
+</dl>
+</td>
+<td width="60%">
+The pipe read and write requests are completed immediately.
+
+</td>
+</tr>
+</table>
 
 `MaximumInstances`
 
@@ -450,11 +497,11 @@ The maximum number of instances allowed for this named pipe.
 
 `InboundQuota`
 
-
+TBD
 
 `OutboundQuota`
 
-
+TBD
 
 `DefaultTimeout`
 
@@ -468,12 +515,34 @@ An optional pointer to an <a href="..\ntddk\ns-ntddk-_io_driver_create_context.m
 ## Return Value
 
 <b>FltCreateNamedPipeFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The filter or instance specified in the <i>Filter</i> or <i>Instance</i> parameters is being torn down. This status code can be received if the open request crosses a volume mount point and the <i>Instance</i> parameter is non-<b>NULL</b>. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The filter or instance specified in the <i>Filter</i> or <i>Instance</i> parameters is being torn down. This status code can be received if the open request crosses a volume mount point and the <i>Instance</i> parameter is non-<b>NULL</b>. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_PATH_SYNTAX_BAD</b></dt>
-</dl>The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path.
+</dl>
+</td>
+<td width="60%">
+The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the OBJECT_ATTRIBUTES structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This error code indicates incorrect syntax for the object path. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -500,23 +569,16 @@ To specify an extra create parameter (ECP) as part of a create operation, initia
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>
-</dt>
-</dl>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
+
+<a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ee2951e0-2632-44b0-870d-33d4d48ac8e8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation, MSiSCSI_HBAInformation
+ms.keywords : MSiSCSI_HBAInformation structure [Storage Devices], PMSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation, iscsimgt/MSiSCSI_HBAInformation, _MSiSCSI_HBAInformation, iscsimgt/PMSiSCSI_HBAInformation, storage.msiscsi_hbainformation, structs-iSCSI_f6de2645-3ba4-444e-97a8-3115eb109a95.xml, PMSiSCSI_HBAInformation structure pointer [Storage Devices], MSiSCSI_HBAInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_HBAInformation
-req.alt-loc : iscsimgt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMSiSCSI_HBAInformation, MSiSCSI_HBAInformation"
 ---
 
@@ -66,31 +70,30 @@ typedef struct _MSiSCSI_HBAInformation {
 
 ## Members
 
-        
-            `AsicVersion`
 
-            A string that specifies the Asic version. The manufacturer defines this string.
-        
-            `BiDiScsiCommands`
+`AsicVersion`
 
-            A Boolean value that indicates if the HBA supports bidirectional SCSI commands. If this member is <b>TRUE</b>, the HBA supports bidirectional SCSI commands. If this member is <b>FALSE</b>, the HBA does not support bidirectional commands.
-        
-            `CacheValid`
+A string that specifies the Asic version. The manufacturer defines this string.
 
-            A Boolean value that indicates if the adapter caches are value. If this member is <b>TRUE</b>, the adapter caches are valid. If this member is <b>FALSE</b>, the caches are invalid or the adapter does not cache data.
-        
-            `DriverName`
+`BiDiScsiCommands`
 
-            A string that specifies the name of the driver for the HBA.
-        
-            `FirmwareVersion`
+A Boolean value that indicates if the HBA supports bidirectional SCSI commands. If this member is <b>TRUE</b>, the HBA supports bidirectional SCSI commands. If this member is <b>FALSE</b>, the HBA does not support bidirectional commands.
 
-            A string that specifies the version of the firmware in the HBA. The manufacturer defines this string.
-        
-            `FunctionalitySupported`
+`CacheValid`
 
-            A bitwise OR of the flags that define the functionality that the HBA supports. The following table describes the possible flags.
+A Boolean value that indicates if the adapter caches are value. If this member is <b>TRUE</b>, the adapter caches are valid. If this member is <b>FALSE</b>, the caches are invalid or the adapter does not cache data.
 
+`DriverName`
+
+A string that specifies the name of the driver for the HBA.
+
+`FirmwareVersion`
+
+A string that specifies the version of the firmware in the HBA. The manufacturer defines this string.
+
+`FunctionalitySupported`
+
+A bitwise OR of the flags that define the functionality that the HBA supports. The following table describes the possible flags.
 <table>
 <tr>
 <th>Flags</th>
@@ -157,43 +160,42 @@ The HBA supports SLP discovery.
 </td>
 </tr>
 </table>
-        
-            `GenerationalGuid`
 
-            The generational GUID. This GUID is the GUID value that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a> method in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a> last set.
-        
-            `IntegratedTCPIP`
+`GenerationalGuid`
 
-            A Boolean value that indicates if the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>TRUE</b>, the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>FALSE</b>, the Windows TCP/IP stack does not manage TCP/IP traffic for the HBA. A miniport driver for an adapter with its own TCP/IP stack should set this member to <b>FALSE</b>.
-        
-            `MaxCDBLength`
+The generational GUID. This GUID is the GUID value that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a> method in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a> last set.
 
-            The maximum CDB length, in bytes, that the HBA supports.
-        
-            `MultifunctionDevice`
+`IntegratedTCPIP`
 
-            A Boolean value that indicates whether the HBA is a multifunction device. If this member is <b>TRUE</b>, the HBA is a multifunction device, and it exposes a netcard interface. If this member <b>FALSE</b>, the HBA is not a multifunction device.
-        
-            `NumberOfPorts`
+A Boolean value that indicates if the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>TRUE</b>, the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>FALSE</b>, the Windows TCP/IP stack does not manage TCP/IP traffic for the HBA. A miniport driver for an adapter with its own TCP/IP stack should set this member to <b>FALSE</b>.
 
-            The number of ports (or TCP/IP addresses on the adapter).
-        
-            `OptionRomVersion`
+`MaxCDBLength`
 
-            A string that specifies the option ROM version of the HBA. The manufacturer defines this string.
-        
-            `RequiresBinaryIpAddresses`
+The maximum CDB length, in bytes, that the HBA supports.
 
-            A Boolean value that indicates whether the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. If this member is <b>TRUE</b>, the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. For the iSCSI initiator service to honor this request, the HBA must be on the same network as the Windows TCP/IP stack. If <b>RequiresBinaryIpAddresses</b> is <b>FALSE</b>, the HBA and its miniport driver have direct access to DNS.
-        
-            `SerialNumber`
+`MultifunctionDevice`
 
-            A string that specifies the serial number of the HBA. The manufacturer defines this string.
-        
-            `Status`
+A Boolean value that indicates whether the HBA is a multifunction device. If this member is <b>TRUE</b>, the HBA is a multifunction device, and it exposes a netcard interface. If this member <b>FALSE</b>, the HBA is not a multifunction device.
 
-            The current status of HBA. This member can hold any of the following values:
+`NumberOfPorts`
 
+The number of ports (or TCP/IP addresses on the adapter).
+
+`OptionRomVersion`
+
+A string that specifies the option ROM version of the HBA. The manufacturer defines this string.
+
+`RequiresBinaryIpAddresses`
+
+A Boolean value that indicates whether the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. If this member is <b>TRUE</b>, the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. For the iSCSI initiator service to honor this request, the HBA must be on the same network as the Windows TCP/IP stack. If <b>RequiresBinaryIpAddresses</b> is <b>FALSE</b>, the HBA and its miniport driver have direct access to DNS.
+
+`SerialNumber`
+
+A string that specifies the serial number of the HBA. The manufacturer defines this string.
+
+`Status`
+
+The current status of HBA. This member can hold any of the following values:
 <table>
 <tr>
 <th>Status</th>
@@ -240,33 +242,33 @@ The HBA is not functioning at all.
 </td>
 </tr>
 </table>
-        
-            `UniqueAdapterId`
 
-            A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID).
-        
-            `VendorID`
+`UniqueAdapterId`
 
-            The manufacturer of the HBA.
-        
-            `VendorModel`
+A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID).
 
-            A string that specifies the model of the HBA. The manufacturer defines this string.
-        
-            `VendorVersion`
+`VendorID`
 
-            A string that specifies the version of the HBA. The manufacturer defines this string.
-        
-            `VersionMax`
+The manufacturer of the HBA.
 
-            The most recent version of the iSCSI specification that the HBA and its miniport driver support.
-        
-            `VersionMin`
+`VendorModel`
 
-            The earliest version of the iSCSI specification that the HBA and its miniport driver support.
+A string that specifies the model of the HBA. The manufacturer defines this string.
 
-    ## Remarks
-        You must implement this class.
+`VendorVersion`
+
+A string that specifies the version of the HBA. The manufacturer defines this string.
+
+`VersionMax`
+
+The most recent version of the iSCSI specification that the HBA and its miniport driver support.
+
+`VersionMin`
+
+The earliest version of the iSCSI specification that the HBA and its miniport driver support.
+
+## Remarks
+You must implement this class.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -276,19 +278,14 @@ The HBA is not functioning at all.
 | **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563017">MSiSCSI_HBAInformation WMI Class</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563017">MSiSCSI_HBAInformation WMI Class</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a>
-</dt>
-</dl>
+
  
 
  

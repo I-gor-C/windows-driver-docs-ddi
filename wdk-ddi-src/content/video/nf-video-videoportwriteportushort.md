@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c0431b2a-c075-48e4-9476-42c42a86f8ed
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortWritePortUshort
+ms.keywords : video/VideoPortWritePortUshort, display.videoportwriteportushort, VideoPortWritePortUshort, VideoPort_Functions_919dd8ab-f319-4071-b375-b269823adb31.xml, VideoPortWritePortUshort function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortWritePortUshort
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ Callers of <b>VideoPortWritePortUshort</b> can be running at any IRQL, provided 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-</dl>
+
  
 
  

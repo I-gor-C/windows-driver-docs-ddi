@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3683735d-ce00-4615-9782-dee9f4753cc7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCPROPERTY_REQUEST, PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST
+ms.keywords : audio.pcproperty_request, portcls/PPCPROPERTY_REQUEST, portcls/PCPROPERTY_REQUEST, audpc-struct_f153c6fb-8b21-4a81-ab9b-d7b7fef9f9db.xml, PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST, _PCPROPERTY_REQUEST, PCPROPERTY_REQUEST structure [Audio Devices], PPCPROPERTY_REQUEST, PPCPROPERTY_REQUEST structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCPROPERTY_REQUEST
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST"
 ---
 
 # _PCPROPERTY_REQUEST structure
@@ -55,47 +59,46 @@ typedef struct _PCPROPERTY_REQUEST {
 
 ## Members
 
-        
-            `Instance`
 
-            Pointer to the property-instance buffer
-        
-            `InstanceSize`
+`Instance`
 
-            Specifies the size in bytes of the property-instance buffer.
-        
-            `Irp`
+Pointer to the property-instance buffer
 
-            Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> containing the client's original property request
-        
-            `MajorTarget`
+`InstanceSize`
 
-            <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> parameter value that the adapter driver previously passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> method.
-        
-            `MinorTarget`
+Specifies the size in bytes of the property-instance buffer.
 
-            <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to a stream object that is associated with the <b>MajorTarget</b> miniport object. If the target for the property request is a pin instance, this member contains the stream-object pointer that the IMiniport <i>Xxx</i>::NewStream method previously output to the port driver (for example, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter). Otherwise (if the target for the property request is a filter instance), this member is <b>NULL</b>.
-        
-            `Node`
+`Irp`
 
-            Specifies a node ID. This member identifies the target node for the request. If the target is not a node, this member is set to ULONG(-1).
-        
-            `PropertyItem`
+Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> containing the client's original property request
 
-            Pointer to the property item, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a>.
-        
-            `Value`
+`MajorTarget`
 
-            Pointer to the property-value buffer
-        
-            `ValueSize`
+<a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> parameter value that the adapter driver previously passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> method.
 
-            Specifies the size in bytes of the property-value buffer.
-        
-            `Verb`
+`MinorTarget`
 
-            Specifies the type of property request. <b>Verb</b> is set to the bitwise OR of one or more of the following flag bits from header file ks.h:
+<a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to a stream object that is associated with the <b>MajorTarget</b> miniport object. If the target for the property request is a pin instance, this member contains the stream-object pointer that the IMiniport <i>Xxx</i>::NewStream method previously output to the port driver (for example, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter). Otherwise (if the target for the property request is a filter instance), this member is <b>NULL</b>.
 
+`Node`
+
+Specifies a node ID. This member identifies the target node for the request. If the target is not a node, this member is set to ULONG(-1).
+
+`PropertyItem`
+
+Pointer to the property item, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a>.
+
+`Value`
+
+Pointer to the property-value buffer
+
+`ValueSize`
+
+Specifies the size in bytes of the property-value buffer.
+
+`Verb`
+
+Specifies the type of property request. <b>Verb</b> is set to the bitwise OR of one or more of the following flag bits from header file ks.h:
 <ul>
 <li>
 KSPROPERTY_TYPE_GET
@@ -145,11 +148,10 @@ KSPROPERTY_TYPE_DEFAULTVALUES
 KSPROPERTY_TYPE_TOPOLOGY
 
 </li>
-</ul>
-These flags are described in <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
+</ul>These flags are described in <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
 
-    ## Remarks
-        This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
+## Remarks
+This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
 In WDM audio, the target of a property request can be either a filter instance or a pin instance. The target can also include a node ID.
 
@@ -158,12 +160,16 @@ In the client's original property request, the property-instance data always beg
 The <b>MajorTarget</b> and <b>MinorTarget</b> members are <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointers to the main miniport object and an associated stream object, respectively. The property handler can query these objects for their miniport and stream interfaces. If the target for the property request is a filter instance, <b>MajorTarget</b> points to the miniport object for that filter instance, and <b>MinorTarget</b> is <b>NULL</b>. If the target is a pin instance, <b>MinorTarget</b> points to the stream object for that pin, and <b>MajorTarget</b> points to the miniport object for the filter that the pin is attached to.
 
 For example, if the target for the property request is a pin instance on a WaveCyclic filter:
-
+<ul>
+<li>
 The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636-f93ac053146d">QueryInterface</a> on the <b>MajorTarget</b> object's <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a> interface.
 
+</li>
+<li>
 The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636-f93ac053146d">QueryInterface</a> on the <b>MinorTarget</b> object's <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a> interface.
 
-For background information about audio properties, see <a href="https://msdn.microsoft.com/ffc5834f-30c8-40b5-b57b-fe784331690c">Audio Endpoints, Properties and Events</a>. For a list of the available audio-specific properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536197">Audio Drivers Property Sets</a>.
+</li>
+</ul>For background information about audio properties, see <a href="https://msdn.microsoft.com/ffc5834f-30c8-40b5-b57b-fe784331690c">Audio Endpoints, Properties and Events</a>. For a list of the available audio-specific properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536197">Audio Drivers Property Sets</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -173,22 +179,16 @@ For background information about audio properties, see <a href="https://msdn.mic
 | **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-ksnodeproperty_audio_channel.md">KSNODEPROPERTY_AUDIO_CHANNEL</a>
-</dt>
-</dl>
+
+<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
+
  
 
  

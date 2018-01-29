@@ -7,8 +7,8 @@ old-location : netvista\wwan_ipv4_address.htm
 old-project : netvista
 ms.assetid : D75EAC9E-8E65-437E-83AA-59B422527C6C
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
+ms.date : 1/18/2018
+ms.keywords : WWAN_IPV4_ADDRESS, wwan/WWAN_IPV4_ADDRESS, PWWAN_IPV4_ADDRESS, PWWAN_IPV4_ADDRESS structure pointer [Network Drivers Starting with Windows Vista], _WWAN_IPV4_ADDRESS, netvista.wwan_ipv4_address, *PWWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_IPV4_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8.1 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_IPV4_ADDRESS
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS"
 req.product : Windows 10 or later.
 ---
 
@@ -48,10 +52,14 @@ typedef struct _WWAN_IPV4_ADDRESS {
 
 ## Members
 
-        
-            `OnLinkPrefixLength`
 
-            The length of the prefix or network part of the IP address of the PDP context.
+`IPV4Address`
+
+
+
+`OnLinkPrefixLength`
+
+The length of the prefix or network part of the IP address of the PDP context.
 
 
 ## Requirements

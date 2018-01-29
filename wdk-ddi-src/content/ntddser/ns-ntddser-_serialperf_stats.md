@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 47CAAF39-40C6-4D7F-B8DA-5A60768E4CB0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERIALPERF_STATS, SERIALPERF_STATS, *PSERIALPERF_STATS
+ms.keywords : _SERIALPERF_STATS, PSERIALPERF_STATS structure pointer [Serial Ports], ntddser/SERIALPERF_STATS, SERIALPERF_STATS, SERIALPERF_STATS structure [Serial Ports], ntddser/PSERIALPERF_STATS, serports.serialperf_stats, PSERIALPERF_STATS, *PSERIALPERF_STATS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SERIALPERF_STATS
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SERIALPERF_STATS, *PSERIALPERF_STATS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSERIALPERF_STATS, SERIALPERF_STATS"
 ---
 
 # _SERIALPERF_STATS structure
@@ -51,33 +55,33 @@ typedef struct _SERIALPERF_STATS {
 
 ## Members
 
-        
-            `BufferOverrunErrorCount`
 
-            The number of buffer overrun errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
-        
-            `FrameErrorCount`
+`BufferOverrunErrorCount`
 
-            The number of frame errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
-        
-            `ParityErrorCount`
+The number of buffer overrun errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
 
-            The number of parity errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
-        
-            `ReceivedCount`
+`FrameErrorCount`
 
-            The number of characters received since either the serial port was opened or the last <a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a> request was processed.
-        
-            `SerialOverrunErrorCount`
+The number of frame errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
 
-            The number of serial overrun errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
-        
-            `TransmittedCount`
+`ParityErrorCount`
 
-            The number of characters transmitted since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
+The number of parity errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
 
-    ## Remarks
-        This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_stats.md">IOCTL_SERIAL_GET_STATS</a> request.
+`ReceivedCount`
+
+The number of characters received since either the serial port was opened or the last <a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a> request was processed.
+
+`SerialOverrunErrorCount`
+
+The number of serial overrun errors detected since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
+
+`TransmittedCount`
+
+The number of characters transmitted since either the serial port was opened or the last <b>IOCTL_SERIAL_CLEAR_STATS</b> request was processed.
+
+## Remarks
+This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_stats.md">IOCTL_SERIAL_GET_STATS</a> request.
 
 To reset the performance statistics to zero, send an <a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a> request.
 
@@ -89,16 +93,12 @@ To reset the performance statistics to zero, send an <a href="..\ntddser\ni-ntdd
 | **Minimum UMDF version** |  |
 | **Header** | ntddser.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a>
-</dt>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_stats.md">IOCTL_SERIAL_GET_STATS</a>
-</dt>
-</dl>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a>
+
  
 
  

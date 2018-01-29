@@ -7,8 +7,8 @@ old-location : netvista\ndismgetdeviceproperty.htm
 old-project : netvista
 ms.assetid : caef96b6-1b94-475d-9f78-66ae6d6ac979
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisMGetDeviceProperty
+ms.date : 1/18/2018
+ms.keywords : miniport_ndis_functions_ref_849a967a-d488-4440-a9b5-9c7fbc247acd.xml, NdisMGetDeviceProperty function [Network Drivers Starting with Windows Vista], netvista.ndismgetdeviceproperty, NdisMGetDeviceProperty, ndis/NdisMGetDeviceProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 5.1, and NDIS 6.0 and later. For N
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisMGetDeviceProperty
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_Miniport_Driver_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -58,8 +62,8 @@ VOID NdisMGetDeviceProperty(
 `MiniportAdapterHandle`
 
 The NDIS handle that identifies the miniport adapter. This handle was originally passed to the 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">
-     MiniportInitializeEx</a> function.
+     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
+     MiniportInitializeEx</i></mshelp:link> function.
 
 `PhysicalDeviceObject`
 
@@ -140,16 +144,12 @@ Miniport drivers can call
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

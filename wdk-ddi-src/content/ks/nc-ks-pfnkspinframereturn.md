@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 842ed1ac-4043-41ce-90e5-94c9098e9da4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminiframereturn, AVStrMiniFrameReturn, AVStrMiniFrameReturn routine [Streaming Media Devices], AVStrMiniFrameReturn, PFNKSPINFRAMERETURN, PFNKSPINFRAMERETURN, ks/AVStrMiniFrameReturn, avstclbk_e7edb74a-8c38-4e7d-9978-849e5d88c153.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniFrameReturn
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -103,14 +107,10 @@ The minidriver specifies this routine's address in the <i>FrameReturn</i> parame
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspinsubmitframemdl.md">KsPinSubmitFrameMdl</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
+
  
 
  

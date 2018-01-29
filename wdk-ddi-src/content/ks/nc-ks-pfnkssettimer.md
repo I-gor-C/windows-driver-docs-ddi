@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c9150c02-a53e-4ffc-8cf1-ca668680cdd9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstrsettimer, KStrSetTimer routine [Streaming Media Devices], KStrSetTimer, PFNKSSETTIMER, PFNKSSETTIMER, ks/KStrSetTimer, ksfunc_a1a590b8-ea16-45bd-8517-45e4bfc46ad3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrSetTimer
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -101,20 +105,14 @@ The minidriver supplied <i>KStrSetTimer</i> must have the same characteristics a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
+
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
  
 
  

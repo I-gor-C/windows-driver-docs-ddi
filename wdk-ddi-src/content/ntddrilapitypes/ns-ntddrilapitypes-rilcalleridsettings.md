@@ -7,8 +7,8 @@ old-location : netvista\rilcalleridsettings.htm
 old-project : netvista
 ms.assetid : 3ba2cd72-4678-4ada-9777-12cbb6032628
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLERIDSETTINGS, RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS
+ms.date : 1/18/2018
+ms.keywords : netvista.rilcalleridsettings, RILCALLERIDSETTINGS, ntddrilapitypes/RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS, RILCALLERIDSETTINGS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLERIDSETTINGS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS
 ---
 
@@ -50,26 +54,26 @@ typedef struct _RILCALLERIDSETTINGS {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwProvisioning`
 
-            
-        
-            `dwStatus`
+`dwExecutor`
 
-            
+
+
+`dwParams`
+
+
+
+`dwProvisioning`
+
+
+
+`dwStatus`
+
+
 
 
 ## Requirements

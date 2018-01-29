@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 22afd9b9-9bed-45b0-afd8-1a5a34b9e6ad
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcGetTimeInterval
+ms.keywords : audpc-routines_a68c0cf5-01b7-4e01-a719-f0bdea2d367f.xml, PcGetTimeInterval, audio.pcgettimeinterval, portcls/PcGetTimeInterval, PcGetTimeInterval function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcGetTimeIn
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcGetTimeInterval
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -70,8 +74,26 @@ GTI_MILLISECONDS
 GTI_MICROSECONDS
 
 This function can be used for timing purposes by first saving the current time,
-
-and then checking to see whether the required interval has passed
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>  ULONGLONG ullTime = PcGetTimeInterval(0);</pre>
+</td>
+</tr>
+</table></span></div>and then checking to see whether the required interval has passed
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>  if (PcGetTimeInterval(ullTime) &gt;= GTI_MILLISECONDS(5))</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,11 +109,8 @@ and then checking to see whether the required interval has passed
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
-</dt>
-</dl>
+
  
 
  

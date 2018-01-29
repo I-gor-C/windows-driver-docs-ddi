@@ -7,8 +7,8 @@ old-location : debugger\getvalue.htm
 old-project : debugger
 ms.assetid : 227d7b4f-bf94-4763-bb1f-32efbc087bb1
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugRegisters2, IDebugRegisters2::GetValue, GetValue
+ms.date : 1/19/2018
+ms.keywords : IDebugRegisters interface [Windows Debugging], GetValue method, debugger.getvalue, IDebugRegisters_f3e89ca1-7516-476e-8c85-560d8f28f0a8.xml, GetValue method [Windows Debugging], GetValue method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2, GetValue method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::GetValue, IDebugRegisters2 interface [Windows Debugging], GetValue method, dbgeng/IDebugRegisters2::GetValue, GetValue, IDebugRegisters::GetValue, IDebugRegisters2::GetValue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugRegisters.GetValue,IDebugRegisters2.GetValue
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,21 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 
 # GetValue method
-The <b>GetValue</b> method gets the value of one of the target's <a href="debugger.x86_architecture#registers#registers">registers</a>.
+The <b>GetValue</b> method gets the value of one of the target's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">registers</a>.
 
 ## Syntax
 
@@ -61,15 +65,45 @@ Receives the value of the register.  See <a href="..\dbgeng\ns-dbgeng-_debug_val
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_UNEXPECTED</b></dt>
-</dl>The target is not accessible, or the register could not be accessed.
+</dl>
+</td>
+<td width="60%">
+The target is not accessible, or the register could not be accessed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The value of Register is greater than the number of registers on the target machine.
+</dl>
+</td>
+<td width="60%">
+The value of Register is greater than the number of registers on the target machine.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,22 +125,16 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
-</dt>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549480">GetValues</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549487">GetValues2</a>
-</dt>
-</dl>
- 
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters::GetValue method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters::GetValue method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

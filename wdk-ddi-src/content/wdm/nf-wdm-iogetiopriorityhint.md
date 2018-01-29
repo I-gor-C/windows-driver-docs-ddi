@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eddb6cea-74fc-4faf-85fa-3a35d6890802
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetIoPriorityHint
+ms.keywords : wdm/IoGetIoPriorityHint, kernel.iogetiopriorityhint, k104_7d622ea7-68a8-4029-96d4-5c40d4f348de.xml, IoGetIoPriorityHint routine [Kernel-Mode Driver Architecture], IoGetIoPriorityHint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetIoPriorityHint
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,14 +80,10 @@ For more information about priority hints, see <a href="https://msdn.microsoft.c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ne-wdm-_io_priority_hint.md">IO_PRIORITY_HINT</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iosetiopriorityhint.md">IoSetIoPriorityHint</a>
-</dt>
-</dl>
+
  
 
  

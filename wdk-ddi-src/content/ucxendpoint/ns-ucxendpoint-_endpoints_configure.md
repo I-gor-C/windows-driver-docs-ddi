@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C24B7D85-AEA9-43B3-9BEE-262CAA255834
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _ENDPOINTS_CONFIGURE, ENDPOINTS_CONFIGURE, *PENDPOINTS_CONFIGURE
+ms.keywords : buses._endpoints_configure, _ENDPOINTS_CONFIGURE, ucxendpoint/P_ENDPOINTS_CONFIGURE, ucxendpoint/_ENDPOINTS_CONFIGURE, *PENDPOINTS_CONFIGURE, ENDPOINTS_CONFIGURE structure [Buses], ENDPOINTS_CONFIGURE, P_ENDPOINTS_CONFIGURE, P_ENDPOINTS_CONFIGURE structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ENDPOINTS_CONFIGURE
-req.alt-loc : ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ENDPOINTS_CONFIGURE, *PENDPOINTS_CONFIGURE
 req.product : Windows 10 or later.
 ---
@@ -62,54 +66,62 @@ typedef struct _ENDPOINTS_CONFIGURE {
 
 ## Members
 
-        
-            `AlternateSetting`
 
-            The setting number of the alternate setting that contains the endpoints.
-        
-            `ConfigurationValue`
+`AlternateSetting`
 
-            The configuration number of the USB configuration that contains the endpoints.
-        
-            `EndpointsEnabledAndUnchanged`
+The setting number of the alternate setting that contains the endpoints.
 
-            A pointer to the first endpoint handle in the array of endpoints that have not been changed.
-        
-            `EndpointsEnabledAndUnchangedCount`
+`ConfigurationValue`
 
-            The number of endpoints that were enabled and unchanged.
-        
-            `EndpointsToDisable`
+The configuration number of the USB configuration that contains the endpoints.
 
-            A pointer to the first endpoint handle in the array of endpoints to  enable.
-        
-            `EndpointsToDisableCount`
+`EndpointsEnabledAndUnchanged`
 
-            The number of endpoints to configure.
-        
-            `EndpointsToEnable`
+A pointer to the first endpoint handle in the array of endpoints that have not been changed.
 
-            A pointer to the first endpoint handle in the array of endpoints to  enable.
-        
-            `EndpointsToEnableCount`
+`EndpointsEnabledAndUnchangedCount`
 
-            The number of endpoints to configure.
-        
-            `ExitLatencyDelta`
+The number of endpoints that were enabled and unchanged.
 
-            The Exit Latency Delta (ELD) value. For more information see section 4.6.6.1 of the eXtensible Host Controller Interface specification.
-        
-            `FailureFlags`
+`EndpointsToDisable`
 
-            The errors, if any, that might occur when attempting to configure endpoints for the USB device or hub.
-        
-            `Header`
+A pointer to the first endpoint handle in the array of endpoints to  enable.
 
-            A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.
-        
-            `InterfaceNumber`
+`EndpointsToDisableCount`
 
-            The interface number of the USB interface that contains the endpoints.
+The number of endpoints to configure.
+
+`EndpointsToEnable`
+
+A pointer to the first endpoint handle in the array of endpoints to  enable.
+
+`EndpointsToEnableCount`
+
+The number of endpoints to configure.
+
+`ExitLatencyDelta`
+
+The Exit Latency Delta (ELD) value. For more information see section 4.6.6.1 of the eXtensible Host Controller Interface specification.
+
+`FailureFlags`
+
+The errors, if any, that might occur when attempting to configure endpoints for the USB device or hub.
+
+`Header`
+
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.
+
+`InterfaceNumber`
+
+The interface number of the USB interface that contains the endpoints.
+
+`Reserved1`
+
+
+
+`Reserved2`
+
+
 
 
 ## Requirements
@@ -120,13 +132,10 @@ typedef struct _ENDPOINTS_CONFIGURE {
 | **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>
-</dt>
-</dl>
+
  
 
  

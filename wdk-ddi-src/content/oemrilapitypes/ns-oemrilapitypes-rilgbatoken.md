@@ -7,8 +7,8 @@ old-location : netvista\rilgbatoken.htm
 old-project : netvista
 ms.assetid : f842d945-1d1e-4f0b-9cc9-82a8401c170a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILGBATOKEN, *LPRILGBATOKEN, RILGBATOKEN
+ms.date : 1/18/2018
+ms.keywords : LPRILGBATOKEN structure pointer [Network Drivers Starting with Windows Vista], netvista.rilgbatoken, oemrilapitypes/LPRILGBATOKEN, RILGBATOKEN structure [Network Drivers Starting with Windows Vista], oemrilapitypes/RILGBATOKEN, *LPRILGBATOKEN, RILGBATOKEN, LPRILGBATOKEN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILGBATOKEN
-req.alt-loc : oemrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -53,38 +57,38 @@ typedef struct _RILGBATOKEN {
 
 ## Members
 
-        
-            `bData`
 
-            
-        
-            `cbBTIDSize`
+`bData`
 
-            
-        
-            `cbNAFKeyLifetimeSize`
 
-            
-        
-            `cbNAFKeySize`
 
-            
-        
-            `cbSize`
+`cbBTIDSize`
 
-            
-        
-            `dwBTIDOffset`
 
-            
-        
-            `dwNAFKeyLifetimeOffset`
 
-            
-        
-            `dwNAFKeyOffset`
+`cbNAFKeyLifetimeSize`
 
-            
+
+
+`cbNAFKeySize`
+
+
+
+`cbSize`
+
+
+
+`dwBTIDOffset`
+
+
+
+`dwNAFKeyLifetimeOffset`
+
+
+
+`dwNAFKeyOffset`
+
+
 
 
 ## Requirements

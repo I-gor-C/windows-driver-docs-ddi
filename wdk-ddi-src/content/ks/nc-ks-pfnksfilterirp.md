@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c654e822-a932-4da0-ab11-4669bd8ba4b4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminifiltercreate, AVStrMiniFilterCreate, AVStrMiniFilterClose, MyAVStrMiniFilterIRPHandler routine [Streaming Media Devices], MyAVStrMiniFilterIRPHandler, PFNKSFILTERIRP, PFNKSFILTERIRP, ks/MyAVStrMiniFilterIRPHandler, avstclbk_76b73509-587e-47bd-9de7-92eac4237706.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MyAVStrMiniFilterIRPHandler
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -74,23 +78,45 @@ If the routine succeeds, return STATUS_SUCCESS or the error code.
 
 ## Remarks
 
+<table>
+<tr>
+<th>IRP</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+</td>
+<td>
 Typically, this routine is used by minidrivers that want to initialize the context and resources associated with the filter.
 
 The minidriver specifies this routine's address in the <b>Create</b> member of its <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a> structure.
 
 At the point at which the routine is called, the file object has an associated context, and the KS object header has been allocated.
 
-This routine is called at IRQL = PASSIVE_LEVEL with the device mutex held.
+This routine is called at IRQL = PASSIVE_LEVEL with the device mutex held.</p>If the routine succeeds, the create operation is guaranteed to succeed. Return STATUS_SUCCESS or the error code that was returned from the attempt to create the filter. STATUS_PENDING is also a legal return code. If a minidriver returns STATUS_PENDING, AVStream will not complete the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> immediately. Before returning STATUS_PENDING, the minidriver must call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>. When the processing of the create is complete, the minidriver must set the IRP's status code and then call <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>.
+        This routine is optional.
 
-This routine is optional.
-
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
+</td>
+<td>
 The minidriver specifies this routine's address in the <b>Close</b> member of its <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a> structure.
 
 At the point at which the routine is called, any registered events on the filter have been freed, but the object is otherwise intact.
 
 This routine is called at IRQL = PASSIVE_LEVEL with the device mutex held. For more information about mutexes, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
+This routine is optional.
+
 Return STATUS_SUCCESS or STATUS_PENDING. If a minidriver returns STATUS_PENDING, AVStream will not complete the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> immediately. Before returning STATUS_PENDING, however, the minidriver must call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>. Once the processing of the close is complete, the minidriver must set the IRP's status code and then call <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>.
+
+</td>
+</tr>
+</table>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,17 +132,12 @@ Return STATUS_SUCCESS or STATUS_PENDING. If a minidriver returns STATUS_PENDING,
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
+
 <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
-</dt>
-</dl>
+
  
 
  

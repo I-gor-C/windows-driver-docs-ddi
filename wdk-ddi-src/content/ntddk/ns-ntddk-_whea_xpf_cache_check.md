@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 61dd30b9-5290-4c72-b053-586066c58108
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_CACHE_CHECK, WHEA_XPF_CACHE_CHECK, *PWHEA_XPF_CACHE_CHECK
+ms.keywords : PWHEA_XPF_CACHE_CHECK, PWHEA_XPF_CACHE_CHECK union pointer [WHEA Drivers and Applications], whea.whea_xpf_cache_check, WHEA_XPF_CACHE_CHECK, *PWHEA_XPF_CACHE_CHECK, ntddk/PWHEA_XPF_CACHE_CHECK, _WHEA_XPF_CACHE_CHECK, WHEA_XPF_CACHE_CHECK union [WHEA Drivers and Applications], ntddk/WHEA_XPF_CACHE_CHECK, whearef_354fb32d-8724-4d6e-acc4-6d1a4cfd77a0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_CACHE_CHECK
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WHEA_XPF_CACHE_CHECK, *PWHEA_XPF_CACHE_CHECK
 ---
 
@@ -66,13 +70,17 @@ typedef union _WHEA_XPF_CACHE_CHECK {
 
 ## Members
 
-        
-            `XpfCacheCheck`
 
-            A ULONGLONG representation of the contents of the WHEA_XPF_CACHE_CHECK union.
+`DUMMYSTRUCTNAME`
 
-    ## Remarks
-        If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_CACHECHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_CACHE_CHECK union.
+
+
+`XpfCacheCheck`
+
+A ULONGLONG representation of the contents of the WHEA_XPF_CACHE_CHECK union.
+
+## Remarks
+If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_CACHECHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_CACHE_CHECK union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +90,10 @@ typedef union _WHEA_XPF_CACHE_CHECK {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
-</dt>
-</dl>
+
  
 
  

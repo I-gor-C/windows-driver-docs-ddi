@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 558F652C-6D1A-4BAF-9C2C-3F4FE24651D2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortAsyncNotificationDetected
+ms.keywords : RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, StorPortAsyncNotificationDetected, RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION, storport/StorPortAsyncNotificationDetected, storage.storportasyncnotificationdetected, StorPortAsyncNotificationDetected routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortAsyncNotificationDetected
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -69,24 +73,71 @@ The status notifications to indicate to Storport.
 The Flags parameter contains a bitwise OR combination of status notifications. All status values can be set with the single <b>RAID_ASYNC_NOTIFY_SUPPORTED_FLAGS</b> value.
 
 
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS"></a><a id="raid_async_notify_flag_media_status"></a><dl>
+<dt><b>RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS</b></dt>
+</dl>
+</td>
+<td width="60%">
+Notify Storport that a media change occurred.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS"></a><a id="raid_async_notify_flag_device_status"></a><dl>
+<dt><b>RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS</b></dt>
+</dl>
+</td>
+<td width="60%">
+Notify Storport that the functional status of the storage device has changed.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION"></a><a id="raid_async_notify_flag_device_operation"></a><dl>
+<dt><b>RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION</b></dt>
+</dl>
+</td>
+<td width="60%">
+Notify Storport that an operational role of the storage device has changed.
+
+</td>
+</tr>
+</table>
 
 
 ## Return Value
 
 A status value indicating the result of the notification. This can be one of these values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The state change notification is scheduled for processing.
+</dl>
+</td>
+<td width="60%">
+The state change notification is scheduled for processing.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>The address type invalid.
+</dl>
+</td>
+<td width="60%">
+The address type invalid.
 
 -or-
 
@@ -95,16 +146,36 @@ A status value indicating the result of the notification. This can be one of the
 -or-
 
 <i>Flags</i> contains an undefined value.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The storage device unit cannot be found at <i>address</i>.
+</dl>
+</td>
+<td width="60%">
+The storage device unit cannot be found at <i>address</i>.
 
 -or-
 
 The storage device does not support asynchronous notifications.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_BUSY</b></dt>
-</dl>A prior notification is in process and this one cannot be scheduled.
+</dl>
+</td>
+<td width="60%">
+A prior notification is in process and this one cannot be scheduled.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -112,7 +183,7 @@ A miniport can detect status events in its <a href="..\storport\nc-storport-hw_i
 
 When processed by Storport, the status event notification is forwarded to the storage class driver to initiate any necessary system response actions.
 
-If the <i>Flags</i> parameter is 0, Storport will indicate all status values in its notification to the storage class driver.</p>
+If the <i>Flags</i> parameter is 0, Storport will indicate all status values in its notification to the storage class driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : 60f35000-c62d-4d1b-8592-862c2d74b7a2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WINBIO_CAPTURE_PARAMETERS, *PWINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS
+ms.keywords : WINBIO_CAPTURE_PARAMETERS, PWINBIO_CAPTURE_PARAMETERS, biometric.winbio_capture_parameters, _WINBIO_CAPTURE_PARAMETERS, winbio_ioctl/PWINBIO_CAPTURE_PARAMETERS, PWINBIO_CAPTURE_PARAMETERS structure pointer [Biometric Devices], biometric_ref_fbd581b2-ced0-4c0d-b76c-be5a469252fd.xml, winbio_ioctl/WINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS structure [Biometric Devices], *PWINBIO_CAPTURE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WINBIO_CAPTURE_PARAMETERS
-req.alt-loc : winbio_ioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PWINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WINBIO_CAPTURE_PARAMETERS, *PWINBIO_CAPTURE_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -51,13 +55,12 @@ typedef struct _WINBIO_CAPTURE_PARAMETERS {
 
 ## Members
 
-        
-            `Flags`
 
-            Specifies the WINBIO_BIR_DATA_FLAGS level of processing and other attributes for the data to be returned.  If format owner and type are the Windows standard, this must be WINBIO_DATA_FLAG_RAW.
+`Flags`
+
+Specifies the WINBIO_BIR_DATA_FLAGS level of processing and other attributes for the data to be returned.  If format owner and type are the Windows standard, this must be WINBIO_DATA_FLAG_RAW.
 
 The following code example shows the possible bitmask values for WINBIO_BIR_DATA_FLAGS:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -76,21 +79,20 @@ The following code example shows the possible bitmask values for WINBIO_BIR_DATA
 </td>
 </tr>
 </table></span></div>
-        
-            `Format`
 
-            Specifies the <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.
-        
-            `PayloadSize`
+`Format`
 
-            The total size of the payload.
-        
-            `Purpose`
+Specifies the <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.
 
-            A WINBIO_BIR_PURPOSE purpose, that specifies how captured data is to be used, and as a result, how it should be optimized.  Some sensors will go into a different mode depending on the reason for the data capture.
+`PayloadSize`
+
+The total size of the payload.
+
+`Purpose`
+
+A WINBIO_BIR_PURPOSE purpose, that specifies how captured data is to be used, and as a result, how it should be optimized.  Some sensors will go into a different mode depending on the reason for the data capture.
 
 The following code example shows the possible bitmask values for WINBIO_BIR_PURPOSE:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -107,10 +109,10 @@ The following code example shows the possible bitmask values for WINBIO_BIR_PURP
 </td>
 </tr>
 </table></span></div>
-        
-            `VendorFormat`
 
-            An optional WINBIO_UUID vendor GUID.  This indicates the preferred format of the vendor-specific data in the BIR.
+`VendorFormat`
+
+An optional WINBIO_UUID vendor GUID.  This indicates the preferred format of the vendor-specific data in the BIR.
 
 
 ## Requirements
@@ -121,13 +123,10 @@ The following code example shows the possible bitmask values for WINBIO_BIR_PURP
 | **Minimum UMDF version** |  |
 | **Header** | winbio_ioctl.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_capture_data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a>
-</dt>
-</dl>
+
  
 
  

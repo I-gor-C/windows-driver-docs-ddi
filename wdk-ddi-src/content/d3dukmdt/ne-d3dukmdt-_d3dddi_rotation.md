@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c167b958-bd09-441e-9680-f193da5ad77f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_ROTATION, D3DDDI_ROTATION
+ms.keywords : D3DDDI_ROTATION_180, D3DDDI_ROTATION_270, D3DDDI_ROTATION_90, D3DDDI_ROTATION_IDENTITY, d3dukmdt/D3DDDI_ROTATION_IDENTITY, d3dukmdt/D3DDDI_ROTATION_90, d3dukmdt/D3DDDI_ROTATION_270, d3dukmdt/D3DDDI_ROTATION, d3dukmdt/D3DDDI_ROTATION_180, _D3DDDI_ROTATION, D3DDDI_ROTATION enumeration [Display Devices], D3D_other_Structs_0f55b4dd-2156-4590-a2c7-1daebcc16ba3.xml, display.d3dddi_rotation, D3DDDI_ROTATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_ROTATION
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_ROTATION
 ---
 
@@ -83,11 +87,8 @@ typedef enum _D3DDDI_ROTATION {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5e465c90-3290-4c89-bf47-521280c0fe5c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : wdf.iobjectcleanup, IObjectCleanup interface, IObjectCleanup interface, described, IObjectCleanup, wudfddi/IObjectCleanup, UMDFBaseObjectRef_4e434f46-a62e-4410-b8ed-663ab59c89dd.xml, umdf.iobjectcleanup
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IObjectCleanup
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -53,7 +57,7 @@ Any driver that stores a reference-counted COM interface to a WDF object must su
 
 The framework calls the method of the <b>IObjectCleanup</b> interface when the associated framework object is about to be released.
 
-A driver can register the <b>IObjectCleanup</b> interface when the driver calls any method that creates a WDF object. </p>
+A driver can register the <b>IObjectCleanup</b> interface when the driver calls any method that creates a WDF object.
 
 ## Requirements
 | &nbsp; | &nbsp; |

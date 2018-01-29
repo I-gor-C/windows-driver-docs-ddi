@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b3318695-e9f2-480a-9133-9008ef0002b7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::ConfigureRequestDispatching, ConfigureRequestDispatching
+ms.keywords : IWDFDevice, ConfigureRequestDispatching, wdf.iwdfdevice_configurerequestdispatching, IWDFDevice::ConfigureRequestDispatching, umdf.iwdfdevice_configurerequestdispatching, ConfigureRequestDispatching method, IWDFDevice interface, UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, wudfddi/IWDFDevice::ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFDevice interface, ConfigureRequestDispatching method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.ConfigureRequestDispatching
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ A BOOL value that specifies whether requests of the specified type are queued. <
 
 <b>ConfigureRequestDispatching</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
-The following code example shows how to configure a queue.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,17 +89,12 @@ The following code example shows how to configure a queue.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4EC3E99B-C73C-4EAC-9EBD-BB45ABFCE8EC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPersistDeviceProfile
+ms.keywords : KsPersistDeviceProfile function [Streaming Media Devices], KsPersistDeviceProfile, ks/KsPersistDeviceProfile, stream.kspersistdeviceprofile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPersistDeviceProfile
-req.alt-loc : ks.lib,ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

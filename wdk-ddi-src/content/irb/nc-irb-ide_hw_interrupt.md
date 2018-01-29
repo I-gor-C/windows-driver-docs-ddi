@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a061d993-78fc-45d8-857b-7269c3593847
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : WdmlibIoGetAffinityInterrupt
+ms.keywords : storage.idehwinterrupt, IdeHwInterrupt routine [Storage Devices], IdeHwInterrupt, IDE_HW_INTERRUPT, IDE_HW_INTERRUPT, irb/IdeHwInterrupt, atartns_6568f61d-e6f7-4d16-98ed-72c13aac0fe7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IdeHwInterrupt
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LUID
 ---
 
 
 # IDE_HW_INTERRUPT callback function
-The <b><i>IdeHwInterrupt</i></b> miniport driver routine handles interrupts from the host bus adapter (HBA) to which the controller for the miniport driver is connected.
+The <b><i>IdeHwInterrupt</i></b> miniport driver routine handles interrupts from the host bus adapter (HBA) to which the controller for the miniport driver is connected. 
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -67,28 +72,42 @@ The <b><i>IdeHwInterrupt</i></b> routine completes interrupt-driven I/O operatio
 If the indicated channel did not generate the interrupt, the miniport driver should make a second (recursive) call to the <b><i>IdeHwInterrupt</i></b> routine to handle interrupts that are intended for the controller's other channel.
 
 If the miniport driver requires a large amount of time to process the interrupt, it must follow these steps:
-
+<ol>
+<li>
 Dismiss the interrupt on the HBA.
 
+</li>
+<li>
 Disable interrupts on the channel that is indicated by the <i>ChannelExtension</i> parameter. 
 
+</li>
+<li>
 Request a worker routine by using <a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>. 
 
+</li>
+<li>
 Complete additional processing in the worker routine.
 
+</li>
+<li>
 Enable interrupts on the channel.
 
-The following ATA port routines must not be called from the <b><i>IdeHwInterrupt</i></b> routine:
-
+</li>
+</ol>The following ATA port routines must not be called from the <b><i>IdeHwInterrupt</i></b> routine:
+<ul>
+<li>
 
 <a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
 
 
+</li>
+<li>
 
 <a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
 
 
-However, the miniport driver can request a worker routine and make calls in the worker routine.
+</li>
+</ul>However, the miniport driver can request a worker routine and make calls in the worker routine.
 
 The worker routine must clear the interrupt on the HBA before it returns <b>TRUE</b>.
 
@@ -106,17 +125,12 @@ The worker routine must clear the interrupt on the HBA before it returns <b>TRUE
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
-</dt>
-<dt>
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
-</dt>
-<dt>
 <a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
-</dt>
-</dl>
+
+<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
+
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d9babef4-c41a-4458-8072-eb562ef4d997
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsClockPropertySet, IKsClockPropertySet::KsGetCorrelatedPhysicalTime, KsGetCorrelatedPhysicalTime
+ms.keywords : IKsClockPropertySet::KsGetCorrelatedPhysicalTime, ksproxy_bab50759-78be-43b2-8346-2e1c88529899.xml, KsGetCorrelatedPhysicalTime method [Streaming Media Devices], ksproxy/IKsClockPropertySet::KsGetCorrelatedPhysicalTime, stream.iksclockpropertyset_ksgetcorrelatedphysicaltime, IKsClockPropertySet, KsGetCorrelatedPhysicalTime, KsGetCorrelatedPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface, IKsClockPropertySet interface [Streaming Media Devices], KsGetCorrelatedPhysicalTime method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsClockPropertySet.KsGetCorrelatedPhysicalTime
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -75,17 +79,12 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559753">IKsClockPropertySet::KsSetCorrelatedPhysicalTime</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564461">KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559753">IKsClockPropertySet::KsSetCorrelatedPhysicalTime</a>
+
  
 
  

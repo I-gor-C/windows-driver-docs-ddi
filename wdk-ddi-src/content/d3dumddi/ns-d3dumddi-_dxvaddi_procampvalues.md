@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bce6931d-af45-42aa-9be2-ded07f98c300
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_PROCAMPVALUES, DXVADDI_PROCAMPVALUES
+ms.keywords : d3dumddi/DXVADDI_PROCAMPVALUES, _DXVADDI_PROCAMPVALUES, display.dxvaddi_procampvalues, DXVA2_Structs_b731e88e-8f64-4199-9f75-9b5cba380aa8.xml, DXVADDI_PROCAMPVALUES structure [Display Devices], DXVADDI_PROCAMPVALUES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_PROCAMPVALUES
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_PROCAMPVALUES
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXVADDI_PROCAMPVALUES {
 
 ## Members
 
-        
-            `Brightness`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the brightness of the output image, as it is written to the destination surface.
-        
-            `Contrast`
+`Brightness`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the contrast of the output image, as it is written to the destination surface.
-        
-            `Hue`
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the brightness of the output image, as it is written to the destination surface.
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the hue of the output image, as it is written to the destination surface.
-        
-            `Saturation`
+`Contrast`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the saturation of the output image, as it is written to the destination surface.
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the contrast of the output image, as it is written to the destination surface.
+
+`Hue`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the hue of the output image, as it is written to the destination surface.
+
+`Saturation`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the saturation of the output image, as it is written to the destination surface.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _DXVADDI_PROCAMPVALUES {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
-</dt>
-</dl>
+
  
 
  

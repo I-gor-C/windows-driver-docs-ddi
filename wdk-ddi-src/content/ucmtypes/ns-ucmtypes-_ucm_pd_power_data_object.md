@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C54750A9-EE64-4FE7-9ED6-EC9709A82C43
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
+ms.keywords : PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], _UCM_PD_POWER_DATA_OBJECT, ucmtypes/PUCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, buses.ucm_pd_power_data_object, UCM_PD_POWER_DATA_OBJECT union [Buses], UCM_PD_POWER_DATA_OBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_PD_POWER_DATA_OBJECT
-req.alt-loc : ucmtypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT
 req.product : Windows 10 or later.
 ---
 
 # _UCM_PD_POWER_DATA_OBJECT structure
-Describes a Power Data Object. For information about these members, see the <a href="http://www.usb.org/developers/docs/usb20_docs/#usb20spec">Power Delivery specification</a>.
+Describes a Power Data Object. For information about these members, see the <a href="http://www.usb.org/developers/docs/usb20_docs/">Power Delivery specification</a>.
 
 ## Syntax
 ````
@@ -75,26 +79,26 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 
 ## Members
 
-        
-            `BatterySupplyPdo`
 
-            Contains bitfields describing a battery supply PD object.
-        
-            `Common`
+`BatterySupplyPdo`
 
-            
-        
-            `FixedSupplyPdo`
+Contains bitfields describing a battery supply PD object.
 
-            Describing a Fixed Supply type Power Data Object.
-        
-            `Ul`
+`Common`
 
-            Size of the structure.
-        
-            `VariableSupplyNonBatteryPdo`
 
-            Contains bitfields describing a variable-supply non-battery PD object.
+
+`FixedSupplyPdo`
+
+Describing a Fixed Supply type Power Data Object.
+
+`Ul`
+
+Size of the structure.
+
+`VariableSupplyNonBatteryPdo`
+
+Contains bitfields describing a variable-supply non-battery PD object.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : EB23D502-87E4-48B1-B1DC-0B215AB361C8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : RT_PARAMETER_DATA, *PRT_PARAMETER_DATA, RT_PARAMETER_DATA
+ms.keywords : RT_PARAMETER_DATA, scsi/RT_PARAMETER_DATA, RT_PARAMETER_DATA structure [Storage Devices], scsi/PRT_PARAMETER_DATA, PRT_PARAMETER_DATA structure pointer [Storage Devices], *PRT_PARAMETER_DATA, PRT_PARAMETER_DATA, storage.rt_parameter_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1709 and later ver
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RT_PARAMETER_DATA
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PRT_PARAMETER_DATA, RT_PARAMETER_DATA"
 req.product : Windows 10 or later.
 ---
@@ -54,11 +58,10 @@ typedef struct _RT_PARAMETER_DATA {
 
 ## Members
 
-        
-            `Origin`
 
-            Indicates the most recent event that initialized the returned device clock.
+`Origin`
 
+Indicates the most recent event that initialized the returned device clock.
 <table>
 <tr>
 <th>Value</th>
@@ -66,22 +69,80 @@ typedef struct _RT_PARAMETER_DATA {
 </tr>
 <tr>
 <td width="40%">
-        
-            `Reserved1`
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Device clock initialized to zero at power on or as the result of a hard reset.
 
-            Reserved for future use.
-        
-            `Reserved2`
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Reserved for future use.
 
-            Reserved for future use.
-        
-            `Reserved3`
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>2</dt>
+</dl>
+</td>
+<td width="60%">
+Device clock initialized by the SET TIMESTAMP command.
 
-            Reserved for future use.
-        
-            `Timestamp`
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>3</dt>
+</dl>
+</td>
+<td width="60%">
+Device clock initialized by an unknown method.
 
-            Contains the current value of a device clock.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id=""></a><dl>
+<dt><b></b></dt>
+<dt>4 to 7</dt>
+</dl>
+</td>
+<td width="60%">
+Reserved for future use.
+
+</td>
+</tr>
+</table>
+
+`ParameterDataLength`
+
+Indicates the number of bytes that follow in the parameter data.
+
+`Reserved1`
+
+Reserved for future use.
+
+`Reserved2`
+
+Reserved for future use.
+
+`Reserved3`
+
+Reserved for future use.
+
+`Timestamp`
+
+Contains the current value of a device clock.
 
 
 ## Requirements
@@ -92,13 +153,10 @@ typedef struct _RT_PARAMETER_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Minitape.h, Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\scsi\ns-scsi-st_parameter_data.md">ST_PARAMETER_DATA</a>
-</dt>
-</dl>
+<a href="..\storport\ns-storport-st_parameter_data.md">ST_PARAMETER_DATA</a>
+
  
 
  

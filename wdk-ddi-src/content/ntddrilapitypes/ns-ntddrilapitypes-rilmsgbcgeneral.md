@@ -7,8 +7,8 @@ old-location : netvista\rilmsgbcgeneral.htm
 old-project : netvista
 ms.assetid : d1570dc0-1587-4d02-a655-724c999d10a2
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGBCGENERAL, *LPRILMSGBCGENERAL, RILMSGBCGENERAL
+ms.date : 1/18/2018
+ms.keywords : netvista.rilmsgbcgeneral, *LPRILMSGBCGENERAL, RILMSGBCGENERAL structure [Network Drivers Starting with Windows Vista], RILMSGBCGENERAL, ntddrilapitypes/RILMSGBCGENERAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGBCGENERAL
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILMSGBCGENERAL, RILMSGBCGENERAL"
 ---
 
@@ -60,66 +64,66 @@ typedef struct _RILMSGBCGENERAL {
 
 ## Members
 
-        
-            `bEmergencyUserAlert`
 
-            
-        
-            `bMessagePopup`
+`bEmergencyUserAlert`
 
-            
-        
-            `cchMsgLength`
 
-            
-        
-            `digSig`
 
-            
-        
-            `dwGeoScope`
+`bMessagePopup`
 
-            
-        
-            `dwID`
 
-            
-        
-            `dwMsgCode`
 
-            
-        
-            `dwPageNumber`
+`cchMsgLength`
 
-            
-        
-            `dwSerialNumber`
 
-            
-        
-            `dwTotalPages`
 
-            
-        
-            `dwUpdateNumber`
+`digSig`
 
-            
-        
-            `dwWarningType`
 
-            
-        
-            `rgbMsg`
 
-            
-        
-            `rmdDataCoding`
+`dwGeoScope`
 
-            
-        
-            `stSCReceiveTime`
 
-            
+
+`dwID`
+
+
+
+`dwMsgCode`
+
+
+
+`dwPageNumber`
+
+
+
+`dwSerialNumber`
+
+
+
+`dwTotalPages`
+
+
+
+`dwUpdateNumber`
+
+
+
+`dwWarningType`
+
+
+
+`rgbMsg`
+
+
+
+`rmdDataCoding`
+
+
+
+`stSCReceiveTime`
+
+
 
 
 ## Requirements

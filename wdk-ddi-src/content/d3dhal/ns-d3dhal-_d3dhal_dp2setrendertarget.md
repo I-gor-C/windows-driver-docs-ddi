@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0ececf46-23a4-456b-8305-b9cd0ffba4b6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETRENDERTARGET, D3DHAL_DP2SETRENDERTARGET, *LPD3DHAL_DP2SETRENDERTARGET
+ms.keywords : D3DHAL_DP2SETRENDERTARGET structure [Display Devices], d3dhal/D3DHAL_DP2SETRENDERTARGET, d3dstrct_d3f81bd9-d8fd-4560-b8b3-61af41d4a13b.xml, display.d3dhal_dp2setrendertarget, _D3DHAL_DP2SETRENDERTARGET, LPD3DHAL_DP2SETRENDERTARGET structure pointer [Display Devices], LPD3DHAL_DP2SETRENDERTARGET, d3dhal/LPD3DHAL_DP2SETRENDERTARGET, D3DHAL_DP2SETRENDERTARGET, *LPD3DHAL_DP2SETRENDERTARGET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETRENDERTARGET
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETRENDERTARGET
 ---
 
@@ -47,23 +51,27 @@ typedef struct _D3DHAL_DP2SETRENDERTARGET {
 
 ## Members
 
-        
-            `hRenderTarget`
 
-            Specifies a handle to the rendering target.
-        
-            `hZBuffer`
+`hRenderTarget`
 
-            Specifies a handle to the depth buffer.
+Specifies a handle to the rendering target.
 
-    ## Remarks
-        The driver should carry out the following tasks in response to a D3DDP2OP_SETRENDERTARGET opcode in the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> command stream:
+`hZBuffer`
 
+Specifies a handle to the depth buffer.
+
+## Remarks
+The driver should carry out the following tasks in response to a D3DDP2OP_SETRENDERTARGET opcode in the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> command stream:
+<ol>
+<li>
 Store the rendering target identified by <b>hRenderTarget</b> in the driver's context. 
 
+</li>
+<li>
 Store the depth buffer identified by <b>hZBuffer</b> in the driver's context. 
 
-See the <i>p3samp</i> sample driver that ships with the Microsoft Windows Driver Development Kit (DDK) for more implementation details.
+</li>
+</ol>See the <i>p3samp</i> sample driver that ships with the Microsoft Windows Driver Development Kit (DDK) for more implementation details.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,14 +81,12 @@ See the <i>p3samp</i> sample driver that ships with the Microsoft Windows Driver
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_SETRENDERTARGET</dt>
-<dt>
+D3DDP2OP_SETRENDERTARGET
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-</dl>
+
  
 
  

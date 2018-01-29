@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DFFDDF13-B8C7-4AB0-B2C9-9F34D19B21AE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY, *PPEP_WORK_ACPI_NOTIFY
+ms.keywords : PPEP_WORK_ACPI_NOTIFY, pepfx/PPEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY structure [Kernel-Mode Driver Architecture], PPEP_WORK_ACPI_NOTIFY structure pointer [Kernel-Mode Driver Architecture], *PPEP_WORK_ACPI_NOTIFY, kernel.pep_work_acpi_notify, _PEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY, pepfx/PEP_WORK_ACPI_NOTIFY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_WORK_ACPI_NOTIFY
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : PEP_WORK_ACPI_NOTIFY, *PPEP_WORK_ACPI_NOTIFY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY"
 ---
 
 # _PEP_WORK_ACPI_NOTIFY structure
@@ -47,17 +51,17 @@ typedef struct _PEP_WORK_ACPI_NOTIFY {
 
 ## Members
 
-        
-            `DeviceHandle`
 
-            A POHANDLE value that represents the registration of the device with PoFx. The platform extension plug-in (PEP) previously received this handle from the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) during the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification in which the PEP elected to provide ACPI services for the device.
-        
-            `NotifyCode`
+`DeviceHandle`
 
-            The Notify code. For a list of Notify codes and their meanings, see section 5.6.6, "Device Object Notifications", of the Advanced Configuration and Power Interface Specification, Revision 5.0 (<a href="http://www.acpi.info">ACPI 5.0 specification</a>).
+A POHANDLE value that represents the registration of the device with PoFx. The platform extension plug-in (PEP) previously received this handle from the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) during the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification in which the PEP elected to provide ACPI services for the device.
 
-    ## Remarks
-        The <b>AcpiNotify</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure is a <b>PEP_WORK_ACPI_NOTIFY</b> structure.
+`NotifyCode`
+
+The Notify code. For a list of Notify codes and their meanings, see section 5.6.6, "Device Object Notifications", of the Advanced Configuration and Power Interface Specification, Revision 5.0 (<a href="http://www.acpi.info">ACPI 5.0 specification</a>).
+
+## Remarks
+The <b>AcpiNotify</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure is a <b>PEP_WORK_ACPI_NOTIFY</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _PEP_WORK_ACPI_NOTIFY {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
+
  
 
  

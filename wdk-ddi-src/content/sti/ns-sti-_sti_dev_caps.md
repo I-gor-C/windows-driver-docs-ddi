@@ -7,8 +7,8 @@ old-location : image\sti_dev_caps.htm
 old-project : image
 ms.assetid : 99e0f896-19d2-4895-8b01-deaf30ec5fe9
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _STI_DEV_CAPS, STI_DEV_CAPS, *PSTI_DEV_CAPS
+ms.date : 1/18/2018
+ms.keywords : stifnc_34efd7cf-944e-474e-8ed5-5ba24be9bf2e.xml, sti/STI_DEV_CAPS, STI_DEV_CAPS, STI_DEV_CAPS structure [Imaging Devices], PSTI_DEV_CAPS, _STI_DEV_CAPS, PSTI_DEV_CAPS structure pointer [Imaging Devices], sti/PSTI_DEV_CAPS, *PSTI_DEV_CAPS, image.sti_dev_caps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STI_DEV_CAPS
-req.alt-loc : sti.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STI_DEV_CAPS, *PSTI_DEV_CAPS
 req.product : Windows 10 or later.
 ---
@@ -47,10 +51,24 @@ typedef struct _STI_DEV_CAPS {
 
 ## Members
 
-        
-            `dwGeneric`
 
-            Contains bit flags identifying device capabilities. The following flags are defined.
+`dwGeneric`
+
+Contains bit flags identifying device capabilities. The following flags are defined.
+
+
+
+
+
+
+
+
+
+
+
+
+
+The values assigned to these flags are based on registry contents that the <b>Capabilities</b> entry for the device's setup information (INF) file supplies. See <a href="https://msdn.microsoft.com/f68ba904-9049-4f7e-9903-fdf6f413a1a5">INF Files for Still Image Devices</a>.
 
 
 ## Requirements

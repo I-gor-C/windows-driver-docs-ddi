@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8db0e6fe-1dfc-4f26-8fd7-7d170c33da0a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.keywords : storage.ioctl_dvd_send_key, IOCTL_DVD_SEND_KEY control code [Storage Devices], IOCTL_DVD_SEND_KEY, ntddcdvd/IOCTL_DVD_SEND_KEY, k307_9c0512f6-da79-4da0-a779-5a870ffe4b91.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DVD_SEND_KEY
-req.alt-loc : Ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,20 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_SEND_KEY IOCTL
-Sends the specified key to a DVD device to complete the related step in an authentication sequence.
-
-This IOCTL has only read access to the device and cannot send keys that make alterations to the hardware configuration. Therefore, this request is limited to sending key types <b>DvdChallengeKey</b>, <b>DvdBusKey2</b>, and <b>DvdInvalidateAGID</b>. 
-
-The <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_send_key2.md">IOCTL_DVD_SEND_KEY2</a> request has write access to the device and is not limited to these three key types. 
-
-For more information, see <a href="..\ntddcdvd\ne-ntddcdvd-dvd_key_type.md">DVD_KEY_TYPE</a>.
-
-
-
 Sends the specified key to a DVD device to complete the related step in an authentication sequence.
 
 This IOCTL has only read access to the device and cannot send keys that make alterations to the hardware configuration. Therefore, this request is limited to sending key types <b>DvdChallengeKey</b>, <b>DvdBusKey2</b>, and <b>DvdInvalidateAGID</b>. 
@@ -75,7 +69,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to zero. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INSUFFICIENT_RESOURCES.
 
 
@@ -86,13 +79,10 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copy_protect_key.md">DVD_COPY_PROTECT_KEY</a>
-</dt>
-</dl>
+
  
 
  

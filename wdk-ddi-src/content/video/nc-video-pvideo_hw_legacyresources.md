@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 015086e9-70b4-4756-9945-c9da17829e90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.hwvidlegacyresources, HwVidLegacyResources callback function [Display Devices], HwVidLegacyResources, PVIDEO_HW_LEGACYRESOURCES, PVIDEO_HW_LEGACYRESOURCES, video/HwVidLegacyResources, VideoMiniport_Functions_a629bf4d-8f16-4d71-ab88-c691160a5df7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwVidLegacyResources
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -98,11 +102,8 @@ The resources returned by <i>HwVidLegacyResources </i> are added to the list of 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
-</dt>
-</dl>
+
  
 
  

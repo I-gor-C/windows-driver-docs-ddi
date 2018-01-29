@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ac3ec079-61a5-42fe-a1c0-b7626e5f32d2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ScsiInquiry_OUT, ScsiInquiry_OUT, *PScsiInquiry_OUT
+ms.keywords : structs-iSCSI_0c90b572-8a05-4a75-86ce-5b12d82a1c2f.xml, PScsiInquiry_OUT, *PScsiInquiry_OUT, storage.scsiinquiry_out, iscsiop/PScsiInquiry_OUT, ScsiInquiry_OUT structure [Storage Devices], ScsiInquiry_OUT, _ScsiInquiry_OUT, iscsiop/ScsiInquiry_OUT, PScsiInquiry_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiInquiry_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ScsiInquiry_OUT, *PScsiInquiry_OUT
 ---
 
@@ -50,29 +54,29 @@ typedef struct _ScsiInquiry_OUT {
 
 ## Members
 
-        
-            `ResponseBuffer`
 
-            A buffer that holds the response data that the SCSI INQUIRY command received.
-        
-            `ResponseBufferSize`
+`ResponseBuffer`
 
-            The response buffer size, in bytes<i>.</i>
-        
-            `ScsiStatus`
+A buffer that holds the response data that the SCSI INQUIRY command received.
 
-            The status of the SCSI INQUIRY command.
-        
-            `SenseBuffer`
+`ResponseBufferSize`
 
-            A buffer that holds the SCSI sense data that the SCSI INQUIRY command received.
-        
-            `Status`
+The response buffer size, in bytes<i>.</i>
 
-            The status of the <b>ScsiInquiry</b> operation. This member will contain 0 if the INQUIRY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the INQUIRY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`ScsiStatus`
 
-    ## Remarks
-        You must implement this method.
+The status of the SCSI INQUIRY command.
+
+`SenseBuffer`
+
+A buffer that holds the SCSI sense data that the SCSI INQUIRY command received.
+
+`Status`
+
+The status of the <b>ScsiInquiry</b> operation. This member will contain 0 if the INQUIRY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the INQUIRY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,19 +86,14 @@ typedef struct _ScsiInquiry_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
+<a href="..\iscsiop\ns-iscsiop-_scsiinquiry_in.md">ScsiInquiry_IN</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
-</dt>
-<dt>
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsiinquiry_in.md">ScsiInquiry_IN</a>
-</dt>
-</dl>
+
  
 
  

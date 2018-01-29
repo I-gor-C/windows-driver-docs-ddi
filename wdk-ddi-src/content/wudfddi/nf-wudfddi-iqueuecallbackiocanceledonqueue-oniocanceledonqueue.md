@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 901ff312-d1bb-46bf-b8e6-6abc47fa3c7f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IQueueCallbackIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, OnIoCanceledOnQueue
+ms.keywords : UMDFQueueObjectRef_e80a1257-b51e-46f8-8e9f-0fff3b830587.xml, wudfddi/IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, umdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, OnIoCanceledOnQueue method, IQueueCallbackIoCanceledOnQueue interface, IQueueCallbackIoCanceledOnQueue interface, OnIoCanceledOnQueue method, wdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, IQueueCallbackIoCanceledOnQueue, OnIoCanceledOnQueue, OnIoCanceledOnQueue method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -93,17 +97,12 @@ For more information about the <b>OnIoCanceledOnQueue</b> callback function, see
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackiocanceledonqueue.md">IQueueCallbackIoCanceledOnQueue</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackiocanceledonqueue.md">IQueueCallbackIoCanceledOnQueue</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
+
  
 
  

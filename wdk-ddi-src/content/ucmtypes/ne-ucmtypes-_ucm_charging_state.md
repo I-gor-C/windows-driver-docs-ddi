@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : DDC3532A-0084-4C56-B540-C638AB7F7080
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCM_CHARGING_STATE, *PUCM_CHARGING_STATE, UCM_CHARGING_STATE
+ms.keywords : buses.ucm_charging_state, *PUCM_CHARGING_STATE, UcmChargingStateNotCharging, UCM_CHARGING_STATE enumeration [Buses], ucmtypes/UcmChargingStateNotCharging, ucmtypes/ UcmChargingStateTrickleCharging, _UCM_CHARGING_STATE, UcmChargingStateNominalCharging, UCM_CHARGING_STATE, ucmtypes/UCM_CHARGING_STATE, UcmChargingStateSlowCharging, UcmChargingStateTrickleCharging, ucmtypes/UcmChargingStateInvalid, ucmtypes/UcmChargingStateNominalCharging, ucmtypes/UcmChargingStateSlowCharging, UcmChargingStateInvalid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_CHARGING_STATE
-req.alt-loc : Ucmtypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUCM_CHARGING_STATE, UCM_CHARGING_STATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCM_CHARGING_STATE, *PUCM_CHARGING_STATE
 req.product : Windows 10 or later.
 ---
 
@@ -73,6 +77,11 @@ typedef enum _UCM_CHARGING_STATE {
 <td>UcmChargingStateSlowCharging</td>
 <td>Indicates the port is drawing a slow charge.</td>
 </tr>
+
+<tr>
+<td>UcmChargingStateTrickleCharging</td>
+<td>Indicates the port is drawing a trickle charge.</td>
+</tr>
 </table>
 
 
@@ -86,20 +95,14 @@ typedef enum _UCM_CHARGING_STATE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
-</dt>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
-</dt>
-<dt>
-<a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_pd_conn_state_changed_params.md">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a>
-</dt>
-<dt>
+
+<a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
+
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
-</dt>
-</dl>
+
+<a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_pd_conn_state_changed_params.md">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a>
+
  
 
  

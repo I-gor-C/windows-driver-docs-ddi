@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3eebda5e-72c6-4167-a886-58e877551923
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.destroyauthenticatedchannel1, pfnDestroyAuthenticatedChannel callback function [Display Devices], pfnDestroyAuthenticatedChannel, PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL, PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL, d3d10umddi/pfnDestroyAuthenticatedChannel, display.pfndestroyauthenticatedchannel1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnDestroyAuthenticatedChannel
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -80,11 +84,8 @@ This callback function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a>
-</dt>
-</dl>
+
  
 
  

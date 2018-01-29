@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : e6ec18a3-2da6-4b3a-afe3-17435463fd39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_PMC, PCI_PMC, *PPCI_PMC
+ms.keywords : _PCI_PMC, PPCI_PMC structure pointer [Buses], *PPCI_PMC, PCI_PMC, PCI_PMC structure [Buses], PCI.pci_pmc, wdm/PPCI_PMC, wdm/PCI_PMC, pci_struct_5ac33692-66a0-4c2e-89dc-e5ace757e06b.xml, PPCI_PMC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_PMC
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PCI_PMC, *PPCI_PMC
 req.product : Windows 10 or later.
 ---
@@ -61,33 +65,37 @@ typedef struct _PCI_PMC {
 
 ## Members
 
-        
-            `DeviceSpecificInitialization`
 
-            Indicates when 1 that the device requires a special initialization. For more information about this value, see the <i>PCI Local Bus Specification</i>.
-        
-            `PMEClock`
+`_PM_SUPPORT`
 
-            Indicates, when 1, that the device relies on the presence of the PCI clock for operation of the PME signal. When this member is a "0", no PCI clock is required to generate the PME signal.
-        
-            `Rsvd1`
 
-            Reserved.
-        
-            `Rsvd2`
 
-            Reserved.
-        
-            `Support`
+`DeviceSpecificInitialization`
 
-            
-        
-            `Version`
+Indicates when 1 that the device requires a special initialization. For more information about this value, see the <i>PCI Local Bus Specification</i>.
 
-            Contains a 3-bit integer that indicates the version of the <i>PCI Power Management Interface Specification </i>that the device complies with. For a list of values that can be assigned to this member, see the <i>PCI Local Bus Specification</i>.
+`PMEClock`
 
-    ## Remarks
-        The power management capabilities register, whose contents are reported in the PCI_PMC structure, provides information about the power management capabilities of the device.
+Indicates, when 1, that the device relies on the presence of the PCI clock for operation of the PME signal. When this member is a "0", no PCI clock is required to generate the PME signal.
+
+`Rsvd1`
+
+Reserved.
+
+`Rsvd2`
+
+Reserved.
+
+`Support`
+
+
+
+`Version`
+
+Contains a 3-bit integer that indicates the version of the <i>PCI Power Management Interface Specification </i>that the device complies with. For a list of values that can be assigned to this member, see the <i>PCI Local Bus Specification</i>.
+
+## Remarks
+The power management capabilities register, whose contents are reported in the PCI_PMC structure, provides information about the power management capabilities of the device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,13 +105,10 @@ typedef struct _PCI_PMC {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537588">PCI_PM_CAPABILITY</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e3ffbf18-151b-42da-8fc1-ae07c152738c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsReserveAndAppendLog
+ms.keywords : ClfsReserveAndAppendLog routine [Kernel-Mode Driver Architecture], Clfs_4378f8c9-0765-48af-9309-2bc0a1af1da5.xml, kernel.clfsreserveandappendlog, wdm/ClfsReserveAndAppendLog, ClfsReserveAndAppendLog
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsReserveAndAppendLog
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,7 +92,6 @@ A pointer to an array of LONGLONG-typed variables. The caller sets each element 
 `fFlags`
 
 This parameter can be zero or any combination of the following flags.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -138,15 +141,27 @@ A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that r
 ## Remarks
 
 The <b>ClfsReserveAndAppendLog</b> routine changes its fundamental behavior based on the presence of optional parameters and the state of the CLFS_USE_RESERVATION flag. The following table summarizes common scenarios.
-
+<table>
+<tr>
+<th>Parameter and flag values</th>
+<th>Actions performed</th>
+</tr>
+<tr>
+<td>
 <i>cWriteEntries</i> = 0.
 
 <i>rgWriteEntries</i> = <b>NULL</b>.
 
 <i>plsn</i> = <b>NULL</b>.
 
+</td>
+<td>
 Reserves space for a set of records, but does not append the records to the marshalling area. The <i>rgcbReservation</i> parameter gives the size of the data portion of each record that needs space reserved.
 
+</td>
+</tr>
+<tr>
+<td>
 <i>cWriteEntries</i> &gt; 0.
 
 <i>rgWriteEntries</i> is not <b>NULL</b>.
@@ -159,11 +174,39 @@ Reserves space for a set of records, but does not append the records to the mars
 
 CLFS_USE_RESERVATION is set.
 
+</td>
+<td>
 Appends a record to the marshalling area by using space that has already been reserved. Reduces the number of reserved record spaces by one.
+
+</td>
+</tr>
+<tr>
+<td>
+<i>cWriteEntries</i> &gt; 0.
+
+<i>rgWriteEntries</i> is not <b>NULL</b>.
+
+<i>plsn</i> is not <b>NULL</b>.
+
+<i>cReserveRecords</i> = 0.
+
+<i>rgcbReservation</i> is <b>NULL</b>.
 
 CLFS_USE_RESERVATION is cleared.
 
+</td>
+<td>
 Appends a record to the marshalling area by reserving new space. Leaves the number of reserved record spaces unchanged.
+
+</td>
+</tr>
+<tr>
+<td>
+<i>cWriteEntries</i> &gt; 0.
+
+<i>rgWriteEntries</i> is not <b>NULL</b>.
+
+<i>plsn</i> is not <b>NULL</b>.
 
 <i>cReserveRecords</i> &gt; 0.
 
@@ -171,7 +214,13 @@ rgcbReservation is not <b>NULL</b>.
 
 CLFS_USE_RESERVATION flag is cleared.
 
+</td>
+<td>
 Appends a record to the marshalling area by reserving new space. Also reserves space for a set of records that are not appended at this time. The <i>rgcbReservation</i> parameter gives the size of each record that needs space reserved. Increases the number of reserved record spaces by the value of <i>cReserveRecords</i>.
+
+</td>
+</tr>
+</table> 
 
 Calling <b>ClfsReserveAndAppendLog</b> is equivalent to calling <a href="..\wdm\nf-wdm-clfsreserveandappendlogaligned.md">ClfsReserveAndAppendLogAligned</a> with the <i>cbEntryAlignment</i> parameter set to one.
 
@@ -191,20 +240,14 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfsreserveandappendlogaligned.md">ClfsReserveAndAppendLogAligned</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a>
+
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
  
 
  

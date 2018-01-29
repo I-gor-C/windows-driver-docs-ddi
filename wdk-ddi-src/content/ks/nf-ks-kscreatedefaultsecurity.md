@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2992a62b-7c3c-4bf5-ba3a-26c26c419f98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateDefaultSecurity
+ms.keywords : ksfunc_ab036f47-0a15-4983-98b0-7277782f29e6.xml, KsCreateDefaultSecurity function [Streaming Media Devices], KsCreateDefaultSecurity, ks/KsCreateDefaultSecurity, stream.kscreatedefaultsecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCreateDefaultSecurity
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -64,7 +68,7 @@ Points to the place in which to put the returned default security descriptor.
 
 ## Remarks
 
-<b>KsCreateDefaultSecurity</b> is used to initialize subobjects that do not have any stored security. </p>
+<b>KsCreateDefaultSecurity</b> is used to initialize subobjects that do not have any stored security.
 
 ## Requirements
 | &nbsp; | &nbsp; |

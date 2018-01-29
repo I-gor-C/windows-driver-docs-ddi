@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5c49bf4f-acc6-4c0f-bbc2-bafb68ea1a74
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsRemoveLogContainer
+ms.keywords : kernel.clfsremovelogcontainer, wdm/ClfsRemoveLogContainer, ClfsRemoveLogContainer, ClfsRemoveLogContainer routine [Kernel-Mode Driver Architecture], Clfs_f797d534-9c7e-4871-81d1-aff9ccedccf5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsRemoveLogContainer
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -88,26 +92,18 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfsaddlogcontainerset.md">ClfsAddLogContainerSet</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-clfsremovelogcontainerset.md">ClfsRemoveLogContainerSet </a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-clfsremovelogcontainerset.md">ClfsRemoveLogContainerSet </a>
+
+<a href="..\wdm\nf-wdm-clfsaddlogcontainerset.md">ClfsAddLogContainerSet</a>
+
+<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
+
  
 
  

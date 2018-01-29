@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 510f8cda-922e-48de-b95e-daf972e906fa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CREATEVERTEXSHADERDECL, D3DDDIARG_CREATEVERTEXSHADERDECL
+ms.keywords : d3dumddi/D3DDDIARG_CREATEVERTEXSHADERDECL, display.d3dddiarg_createvertexshaderdecl, UMDisplayDriver_param_Structs_0f0f9192-2505-4b0f-99ee-7b0d64e8e340.xml, D3DDDIARG_CREATEVERTEXSHADERDECL, D3DDDIARG_CREATEVERTEXSHADERDECL structure [Display Devices], _D3DDDIARG_CREATEVERTEXSHADERDECL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CREATEVERTEXSHADERDECL
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CREATEVERTEXSHADERDECL
 ---
 
@@ -47,17 +51,17 @@ typedef struct _D3DDDIARG_CREATEVERTEXSHADERDECL {
 
 ## Members
 
-        
-            `NumVertexElements`
 
-            [in] The number of vertex elements in the array that is passed to the <i>pVertexElements</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderdecl.md">CreateVertexShaderDecl</a> function.
-        
-            `ShaderHandle`
+`NumVertexElements`
 
-            [out] A handle to the vertex shader declaration.
+[in] The number of vertex elements in the array that is passed to the <i>pVertexElements</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderdecl.md">CreateVertexShaderDecl</a> function.
 
-    ## Remarks
-        The handle value in the <b>ShaderHandle</b> member is guaranteed to be nonzero. 
+`ShaderHandle`
+
+[out] A handle to the vertex shader declaration.
+
+## Remarks
+The handle value in the <b>ShaderHandle</b> member is guaranteed to be nonzero. 
 
 For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.
 
@@ -69,13 +73,10 @@ For more information about programming shader assemblers, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderdecl.md">CreateVertexShaderDecl</a>
-</dt>
-</dl>
+
  
 
  

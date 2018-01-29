@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2EC0C859-5479-4A55-9180-DB9938400DF7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, GetStreamAttributeSteppings
+ms.keywords : IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamAttributeSteppings method, GetStreamAttributeSteppings, audio.iminiportstreamaudioenginenode_getstreamattributesteppings, GetStreamAttributeSteppings method [Audio Devices], portcls/IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, IMiniportStreamAudioEngineNode, GetStreamAttributeSteppings method [Audio Devices], IMiniportStreamAudioEngineNode interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportStreamAudioEngineNode.GetStreamAttributeSteppings
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -84,15 +88,12 @@ code.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
-</dt>
-<dt>
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a>
+
 <a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
-</dt>
-<dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a></dt>
-</dl>
+
+<a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
+
  
 
  

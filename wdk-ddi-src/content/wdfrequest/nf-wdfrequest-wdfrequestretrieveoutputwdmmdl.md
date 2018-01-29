@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3f95caad-92e5-4d0f-bd9e-8873b05f2aaa
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestRetrieveOutputWdmMdl
+ms.keywords : kmdf.wdfrequestretrieveoutputwdmmdl, PFN_WDFREQUESTRETRIEVEOUTPUTWDMMDL, wdf.wdfrequestretrieveoutputwdmmdl, DFRequestObjectRef_e3ef5371-4d09-406c-9a72-c420822e9fdd.xml, WdfRequestRetrieveOutputWdmMdl method, wdfrequest/WdfRequestRetrieveOutputWdmMdl, WdfRequestRetrieveOutputWdmMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfRequestRetrieveOutputWdmMdl
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, MdlAfterReqCompletedIntIoctl, MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctl, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedRead, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWrite, OutputBufferAPI
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,23 +68,67 @@ A pointer to a location that receives a pointer to an MDL.
 ## Return Value
 
 <b>WdfRequestRetrieveOutputWdmMdl</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An input parameter is invalid.
+</dl>
+</td>
+<td width="60%">
+An input parameter is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The request type is not valid or the request is using <a href="https://msdn.microsoft.com/f95a0aec-65f9-44c9-8ae5-11bb4d832752">neither buffered nor direct I/O</a>. For more information about supported methods for accessing data buffers, see the following Remarks section.
+</dl>
+</td>
+<td width="60%">
+The request type is not valid or the request is using <a href="https://msdn.microsoft.com/f95a0aec-65f9-44c9-8ae5-11bb4d832752">neither buffered nor direct I/O</a>. For more information about supported methods for accessing data buffers, see the following Remarks section.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INTERNAL_ERROR</b></dt>
-</dl>The request has already been completed.
+</dl>
+</td>
+<td width="60%">
+The request has already been completed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The input buffer's length is zero.
+</dl>
+</td>
+<td width="60%">
+The input buffer's length is zero.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There is insufficient memory.
+</dl>
+</td>
+<td width="60%">
+There is insufficient memory.
 
- 
+</td>
+</tr>
+</table> 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -101,8 +149,6 @@ The driver must not access a request's MDL after <a href="https://docs.microsoft
 
 For more information about <b>WdfRequestRetrieveOutputWdmMdl</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers in Framework-Based Drivers</a>.
 
-The following code example is part of an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_read.md">EvtIoRead</a> callback function that obtains an MDL for an I/O request's input buffer. If the call to <b>WdfRequestRetrieveOutputWdmMdl</b> fails, the driver completes the request with the error status that <b>WdfRequestRetrieveOutputWdmMdl</b> returns.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -117,11 +163,8 @@ The following code example is part of an <a href="..\wdfio\nc-wdfio-evt_wdf_io_q
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputwdmmdl.md">WdfRequestRetrieveInputWdmMdl</a>
-</dt>
-</dl>
+
  
 
  

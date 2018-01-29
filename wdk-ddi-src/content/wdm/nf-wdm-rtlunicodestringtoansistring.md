@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d05b366c-0b09-4a82-8727-e5c39b82bf7f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringToAnsiString
+ms.keywords : k109_50e549a0-61fa-4a0f-b43f-de2f4c6dba31.xml, RtlUnicodeStringToAnsiString, RtlUnicodeStringToAnsiString routine [Kernel-Mode Driver Architecture], wdm/RtlUnicodeStringToAnsiString, kernel.rtlunicodestringtoansistring
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUnicodeStringToAnsiString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -86,20 +90,14 @@ The translation is done in accord with the current system-locale information.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtlfreeansistring.md">RtlFreeAnsiString</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1be555a5-9fa7-4179-8a36-803b8792db86
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAllocateGenericWorkItem
+ms.keywords : FltAllocateGenericWorkItem, FltApiRef_a_to_d_06bae00e-f41d-4cc9-8664-94e06d004458.xml, FltAllocateGenericWorkItem function [Installable File System Drivers], ifsk.fltallocategenericworkitem, fltkernel/FltAllocateGenericWorkItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltAllocateGenericWorkItem
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -49,10 +53,6 @@ PFLT_GENERIC_WORKITEM FltAllocateGenericWorkItem(void);
 This function has no parameters.
 
 ## Return Value
-
-<b>FltAllocateGenericWorkItem</b> returns <b>NULL</b> if there is insufficient memory in nonpaged pool to satisfy the request. Otherwise, it returns a pointer to the allocated work item. 
-
-<b>FltAllocateGenericWorkItem</b> returns <b>NULL</b> if there is insufficient memory in nonpaged pool to satisfy the request. Otherwise, it returns a pointer to the allocated work item. 
 
 <b>FltAllocateGenericWorkItem</b> returns <b>NULL</b> if there is insufficient memory in nonpaged pool to satisfy the request. Otherwise, it returns a pointer to the allocated work item.
 
@@ -78,14 +78,10 @@ To free the work item, a minifilter driver typically calls <a href="..\fltkernel
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltqueuegenericworkitem.md">FltQueueGenericWorkItem</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8f38616e-498b-485e-84c8-de62477b5871
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequestCompletionParams, IWDFIoRequestCompletionParams::GetReadParameters, GetReadParameters
+ms.keywords : GetReadParameters, IWDFIoRequestCompletionParams interface, GetReadParameters method, UMDFRequestObjectRef_008ca4d6-ddbe-4288-9b5d-d6ccb35518db.xml, umdf.iwdfiorequestcompletionparams_getreadparameters, GetReadParameters method, IWDFIoRequestCompletionParams interface, IWDFIoRequestCompletionParams, wdf.iwdfiorequestcompletionparams_getreadparameters, IWDFIoRequestCompletionParams::GetReadParameters, GetReadParameters method, wudfddi/IWDFIoRequestCompletionParams::GetReadParameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequestCompletionParams.GetReadParameters
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -91,14 +95,10 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequestcompletionparams.md">IWDFIoRequestCompletionParams</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-</dl>
+
  
 
  

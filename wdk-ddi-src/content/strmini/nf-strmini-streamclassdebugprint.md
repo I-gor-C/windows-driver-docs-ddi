@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a8b7efd2-7773-44dc-92de-85b03c31ada8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassDebugPrint
+ms.keywords : StreamClassDebugPrint routine [Streaming Media Devices], strmini/StreamClassDebugPrint, strclass-routines_858a2dd4-ee74-44de-9293-05bd804c315d.xml, StreamClassDebugPrint, stream.streamclassdebugprint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassDebugPrint
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -86,14 +90,10 @@ For more information, see <a href="https://msdn.microsoft.com/544b922b-58e4-4cbb
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
-</dt>
-<dt>
 <a href="..\strmini\nf-strmini-streamclassdebugassert.md">StreamClassDebugAssert</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
+
  
 
  

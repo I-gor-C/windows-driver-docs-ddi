@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6e85eaa7-d622-4b05-9efd-c1b6b7789c03
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CHANGER_ELEMENT_LIST, *PCHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST
+ms.keywords : PCHANGER_ELEMENT_LIST, _CHANGER_ELEMENT_LIST, ntddchgr/PCHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST structure [Storage Devices], storage.changer_element_list, *PCHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST, PCHANGER_ELEMENT_LIST structure pointer [Storage Devices], ntddchgr/CHANGER_ELEMENT_LIST, structs-changer_e1782d96-458d-49a5-9885-c853d835ba0a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CHANGER_ELEMENT_LIST
-req.alt-loc : ntddchgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _CHANGER_ELEMENT_LIST {
 
 ## Members
 
-        
-            `Element`
 
-            Describes the first element of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> in a range <b>NumberOfElements</b> long.
-        
-            `NumberOfElements`
+`Element`
 
-            Specifies the number of elements in the range.
+Describes the first element of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> in a range <b>NumberOfElements</b> long.
 
-    ## Remarks
-        A changer class driver uses CHANGER_ELEMENT_LIST to indicate a range of elements of a single type, typically for an operation such as getting or initializing the status of multiple elements.
+`NumberOfElements`
+
+Specifies the number of elements in the range.
+
+## Remarks
+A changer class driver uses CHANGER_ELEMENT_LIST to indicate a range of elements of a single type, typically for an operation such as getting or initializing the status of multiple elements.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct _CHANGER_ELEMENT_LIST {
 | **Minimum UMDF version** |  |
 | **Header** | ntddchgr.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
-</dt>
-<dt>
-<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
-</dt>
-<dt>
 <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
-</dt>
-</dl>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
+
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
+
  
 
  

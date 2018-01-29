@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 4F29E9BD-F534-45EC-99C3-F006A0E03B31
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : PCI.getresources, GetResources routine, GetResources, GET_VIRTUAL_DEVICE_RESOURCES, GET_VIRTUAL_DEVICE_RESOURCES, wdm/GetResources
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2012 and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetResources
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -93,14 +97,6 @@ The device supports ARI and has more than 256 functions, and the upstream bridge
 <div> </div>
 
 
-The device has more than eight total functions (PFs and VFs) and the device does not support the Alternative Routing Interpretation (ARI) option of the PCI Express 3.0 specification.
-
-
-The device supports ARI and has more than eight total functions, but the upstream bridge port does not support ARI.
-
-
-The device supports ARI and has more than 256 functions, and the upstream bridge port does  support ARI.
-
 If the device needs more PCIe Requestor IDs (RIDs) in order to enable all  of its VFs, the PCI bus driver does the following:<ol>
 <li>
 Writes the device’s bus number into the PCIe Secondary Bus Number register.
@@ -113,10 +109,6 @@ Writes a value that is larger than the device’s bus number into the PCIe Subor
 </ol>The difference between these two register values represents the number of captured bus numbers.
 
 
-
-Writes the device’s bus number into the PCIe Secondary Bus Number register.
-
-Writes a value that is larger than the device’s bus number into the PCIe Subordinate Bus Number register.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451131">GetResources</a> routine is provided by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface.
 
@@ -134,15 +126,12 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451131">GetRe
 
 ## See Also
 
-<dl>
-<dt><b></b></dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406642">PCI_VIRTUALIZATION_INTERFACE</a>
-</dt>
-</dl>
+
+<b></b>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : print\splclient_info_2_w2k.htm
 old-project : print
 ms.assetid : 713246FE-355B-4C01-A8DF-535BDBA0FCB8
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K, SPLCLIENT_INFO_2, *PSPLCLIENT_INFO_2, *LPSPLCLIENT_INFO_2
+ms.date : 1/18/2018
+ms.keywords : winsplp/SPLCLIENT_INFO_2_W2K, *PSPLCLIENT_INFO_2, print.splclient_info_2_w2k, SPLCLIENT_INFO_2, _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K, SPLCLIENT_INFO_2_W2K structure [Print Devices], *LPSPLCLIENT_INFO_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPLCLIENT_INFO_2_W2K
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SPLCLIENT_INFO_2_W2K
 req.product : Windows 10 or later.
 ---
@@ -47,10 +51,10 @@ typedef struct _SPLCLIENT_INFO_2_V1 {
 
 ## Members
 
-        
-            `hSplPrinter`
 
-            Specifies the server-side handle to be used for direct calls.
+`hSplPrinter`
+
+Specifies the server-side handle to be used for direct calls.
 
 
 ## Requirements

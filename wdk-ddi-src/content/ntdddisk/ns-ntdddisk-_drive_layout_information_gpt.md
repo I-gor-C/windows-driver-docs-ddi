@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d99180e0-d989-470c-b330-23372938ab25
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DRIVE_LAYOUT_INFORMATION_GPT, *PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT
+ms.keywords : _DRIVE_LAYOUT_INFORMATION_GPT, *PDRIVE_LAYOUT_INFORMATION_GPT, structs-disk_eca2e047-5de8-4960-9066-28eb0dfedb95.xml, DRIVE_LAYOUT_INFORMATION_GPT structure [Storage Devices], ntdddisk/DRIVE_LAYOUT_INFORMATION_GPT, PDRIVE_LAYOUT_INFORMATION_GPT structure pointer [Storage Devices], PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT, storage.drive_layout_information_gpt, ntdddisk/PDRIVE_LAYOUT_INFORMATION_GPT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DRIVE_LAYOUT_INFORMATION_GPT
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DRIVE_LAYOUT_INFORMATION_GPT, *PDRIVE_LAYOUT_INFORMATION_GPT
 ---
 
 # _DRIVE_LAYOUT_INFORMATION_GPT structure
@@ -49,25 +53,25 @@ typedef struct _DRIVE_LAYOUT_INFORMATION_GPT {
 
 ## Members
 
-        
-            `DiskId`
 
-            Contains a GUID that uniquely identifies the drive. The GUID data type is described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> reference page.
-        
-            `MaxPartitionCount`
+`DiskId`
 
-            Indicates the maximum number of partitions allowed on the drive.
-        
-            `StartingUsableOffset`
+Contains a GUID that uniquely identifies the drive. The GUID data type is described on the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565392">Using GUIDs in Drivers</a> reference page.
 
-            Contains an offset in bytes to the location immediately following the primary partition table. This offset begins the region on the drive where partitions reside, but partition one is not necessarily located precisely at this offset.
-        
-            `UsableLength`
+`MaxPartitionCount`
 
-            Indicates the total usable space in bytes available on the drive.
+Indicates the maximum number of partitions allowed on the drive.
 
-    ## Remarks
-        This structure contains the drive layout information that is specific to a drive with a GUID Partition Table partition. It is encapsulated within the <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a> structure. For further information see Intel's <i>Extensible Firmware Interface</i> specification.
+`StartingUsableOffset`
+
+Contains an offset in bytes to the location immediately following the primary partition table. This offset begins the region on the drive where partitions reside, but partition one is not necessarily located precisely at this offset.
+
+`UsableLength`
+
+Indicates the total usable space in bytes available on the drive.
+
+## Remarks
+This structure contains the drive layout information that is specific to a drive with a GUID Partition Table partition. It is encapsulated within the <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a> structure. For further information see Intel's <i>Extensible Firmware Interface</i> specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,19 +81,14 @@ typedef struct _DRIVE_LAYOUT_INFORMATION_GPT {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-iowritepartitiontable.md">IoWritePartitionTable</a>
-</dt>
-</dl>
+
  
 
  

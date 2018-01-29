@@ -7,8 +7,8 @@ old-location : netvista\wwan_pin_list.htm
 old-project : netvista
 ms.assetid : 7ddea69c-db40-4fae-9ca9-5eadc9b40b0c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_PIN_LIST, *PWWAN_PIN_LIST, WWAN_PIN_LIST
+ms.date : 1/18/2018
+ms.keywords : wwan/WWAN_PIN_LIST, *PWWAN_PIN_LIST, netvista.wwan_pin_list, WWAN_PIN_LIST, WwanRef_b23c520d-20ea-4597-8dd2-2a1f9cd68938.xml, WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_PIN_LIST, PWWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista], _WWAN_PIN_LIST, PWWAN_PIN_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_PIN_LIST
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWWAN_PIN_LIST, WWAN_PIN_LIST"
 req.product : Windows 10 or later.
 ---
@@ -57,58 +61,58 @@ typedef struct _WWAN_PIN_LIST {
 
 ## Members
 
-        
-            `WwanPinDescCorporatePin`
 
-            Description for corporate personalization PIN. This is a PIN that allows the device to be
+`WwanPinDescCorporatePin`
+
+Description for corporate personalization PIN. This is a PIN that allows the device to be
      personalized to a specific company. For more information about this PIN type, see section 22.022 of the
      3GPP specification.
-        
-            `WwanPinDescCustom`
 
-            Description for custom PIN. This is a custom vendor-defined PIN type. It is not included in the
+`WwanPinDescCustom`
+
+Description for custom PIN. This is a custom vendor-defined PIN type. It is not included in the
      above list.
-        
-            `WwanPinDescDeviceFirstSimPin`
 
-            Description for the device-to-very-first-SIM-card PIN. This is a PIN that locks the device to the
+`WwanPinDescDeviceFirstSimPin`
+
+Description for the device-to-very-first-SIM-card PIN. This is a PIN that locks the device to the
      very first inserted SIM.
-        
-            `WwanPinDescDeviceSimPin`
 
-            Description for the device-to-SIM-card PIN. This is a PIN that locks the device to a specific
+`WwanPinDescDeviceSimPin`
+
+Description for the device-to-SIM-card PIN. This is a PIN that locks the device to a specific
      SIM.
-        
-            `WwanPinDescNetworkPin`
 
-            Description for the network personalization PIN. This is a PIN that allows the device to be
+`WwanPinDescNetworkPin`
+
+Description for the network personalization PIN. This is a PIN that allows the device to be
      personalized to a network. For more information about this PIN type, see section 22.022 of the 3GPP
      specification.
-        
-            `WwanPinDescNetworkSubsetPin`
 
-            Description for network subset personalization PIN. This is a PIN that allows the device to be
+`WwanPinDescNetworkSubsetPin`
+
+Description for network subset personalization PIN. This is a PIN that allows the device to be
      personalized to a subset of a network. For more information about this PIN type, see section 22.022 of
      the 3GPP specification.
-        
-            `WwanPinDescPin1`
 
-            Description for PIN1. For GSM-based devices, this is a Subscriber Identity Module (SIM) PIN. For
+`WwanPinDescPin1`
+
+Description for PIN1. For GSM-based devices, this is a Subscriber Identity Module (SIM) PIN. For
      CDMA-based devices, power-on device lock is reported as PIN1.
-        
-            `WwanPinDescPin2`
 
-            Description for PIN2. This is a SIM PIN2 that protects certain SIM functionality.
-        
-            `WwanPinDescSubsidyLock`
+`WwanPinDescPin2`
 
-            Description for subsidy unlock PIN. This is a PIN that allows the device to be restricted to
+Description for PIN2. This is a SIM PIN2 that protects certain SIM functionality.
+
+`WwanPinDescSubsidyLock`
+
+Description for subsidy unlock PIN. This is a PIN that allows the device to be restricted to
      operate on a specific network. For more information about this PIN type, see section 22.022 of the 3GPP
      specification.
-        
-            `WwanPinDescSvcProviderPin`
 
-            Description for Service Provider (SP) personalization PIN. This is a PIN that allows the device to
+`WwanPinDescSvcProviderPin`
+
+Description for Service Provider (SP) personalization PIN. This is a PIN that allows the device to
      be personalized to a service provider. For more information about this PIN type, see section 22.022 of
      the 3GPP specification.
 
@@ -121,18 +125,14 @@ typedef struct _WWAN_PIN_LIST {
 | **Minimum UMDF version** |  |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wwan\ns-wwan-_wwan_pin_desc.md">WWAN_PIN_DESC</a>
-</dt>
-<dt>
+
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_pin_list.md">NDIS_WWAN_PIN_LIST</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_LIST structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_LIST structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

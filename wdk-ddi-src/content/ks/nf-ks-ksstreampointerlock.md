@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : eb960301-2afa-42f7-a2ea-129d85c49db9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamPointerLock
+ms.keywords : ks/KsStreamPointerLock, avfunc_c7a4d7fb-9708-480d-a452-f398637bc82a.xml, KsStreamPointerLock, KsStreamPointerLock function [Streaming Media Devices], stream.ksstreampointerlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsStreamPointerLock
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -79,11 +83,8 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
-</dt>
-</dl>
+
  
 
  

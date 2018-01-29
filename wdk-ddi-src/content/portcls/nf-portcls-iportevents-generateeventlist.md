@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 99c9d60d-5f19-4b31-a8f3-aff69bc3a2a6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortEvents, IPortEvents::GenerateEventList, GenerateEventList
+ms.keywords : GenerateEventList method [Audio Devices], IPortEvents interface, IPortEvents interface [Audio Devices], GenerateEventList method, audmp-routines_cc4243f5-90e9-471f-b8f0-aaf0945bddf5.xml, IPortEvents, GenerateEventList, portcls/IPortEvents::GenerateEventList, audio.iportevents_generateeventlist, GenerateEventList method [Audio Devices], IPortEvents::GenerateEventList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortEvents.GenerateEventList
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Any level. (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -102,17 +106,12 @@ Although callers of <code>GenerateEventList</code> can be running at any IRQL, t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
-</dt>
-</dl>
+
  
 
  

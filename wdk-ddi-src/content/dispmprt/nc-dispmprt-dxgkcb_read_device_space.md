@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 118ea0b9-6463-4050-9f33-192a3d42fdce
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbreaddevicespace, DxgkCbReadDeviceSpace callback function [Display Devices], DxgkCbReadDeviceSpace, DXGKCB_READ_DEVICE_SPACE, DXGKCB_READ_DEVICE_SPACE, dispmprt/DxgkCbReadDeviceSpace, DpFunctions_54853b5b-487d-410e-a08d-eb777b3686e9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbReadDeviceSpace
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -84,19 +88,45 @@ A pointer to a ULONG-typed variable that receives the number of bytes actually r
 ## Return Value
 
 <b>DxgkCbReadDeviceSpace</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>  STATUS_SUCCESS</b></dt>
-</dl>  The function succeeded.
+</dl>
+</td>
+<td width="60%">
+  The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>  STATUS_INVALID_PARAMETER</b></dt>
-</dl>  The <i>DeviceHandle</i>, <i>DataType</i>, or <i>Buffer</i> parameter is invalid.
+</dl>
+</td>
+<td width="60%">
+  The <i>DeviceHandle</i>, <i>DataType</i>, or <i>Buffer</i> parameter is invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>  STATUS_UNSUCCESSFUL</b></dt>
-</dl>  The function was unable to read the data.
+</dl>
+</td>
+<td width="60%">
+  The function was unable to read the data.
 
- 
-
-The following code example reads a value of a specific size from the PCI configuration space.
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -113,11 +143,8 @@ The following code example reads a value of a specific size from the PCI configu
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_write_device_space.md">DxgkCbWriteDeviceSpace</a>
-</dt>
-</dl>
+
  
 
  

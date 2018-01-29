@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cd7dbcfa-f339-421a-9cc6-f4c494f13a41
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATARANGE_BDA_TRANSPORT, KS_DATARANGE_BDA_TRANSPORT, *PKS_DATARANGE_BDA_TRANSPORT
+ms.keywords : stream.ks_datarange_bda_transport, bdaref_89717b68-2829-4f7a-bcdb-10e0b790308c.xml, bdamedia/KS_DATARANGE_BDA_TRANSPORT, bdamedia/PKS_DATARANGE_BDA_TRANSPORT, KS_DATARANGE_BDA_TRANSPORT, PKS_DATARANGE_BDA_TRANSPORT structure pointer [Streaming Media Devices], *PKS_DATARANGE_BDA_TRANSPORT, KS_DATARANGE_BDA_TRANSPORT structure [Streaming Media Devices], PKS_DATARANGE_BDA_TRANSPORT, tagKS_DATARANGE_BDA_TRANSPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATARANGE_BDA_TRANSPORT
-req.alt-loc : bdamedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KS_DATARANGE_BDA_TRANSPORT, *PKS_DATARANGE_BDA_TRANSPORT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKS_DATARANGE_BDA_TRANSPORT, KS_DATARANGE_BDA_TRANSPORT"
 ---
 
 # tagKS_DATARANGE_BDA_TRANSPORT structure
@@ -47,17 +51,17 @@ typedef struct tagKS_DATARANGE_BDA_TRANSPORT {
 
 ## Members
 
-        
-            `BdaTransportInfo`
 
-            BDA_TRANSPORT_INFO structure that describes formatting for a BDA transport stream connection.
-        
-            `DataRange`
+`BdaTransportInfo`
 
-            KSDATARANGE structure that describes a range of data formats.
+BDA_TRANSPORT_INFO structure that describes formatting for a BDA transport stream connection.
 
-    ## Remarks
-        A BDA_TRANSPORT_INFO structure in conjunction with a KSDATARANGE structure makes up a KS_DATARANGE_BDA_TRANSPORT data range. A data range describes a range of data formats. 
+`DataRange`
+
+KSDATARANGE structure that describes a range of data formats.
+
+## Remarks
+A BDA_TRANSPORT_INFO structure in conjunction with a KSDATARANGE structure makes up a KS_DATARANGE_BDA_TRANSPORT data range. A data range describes a range of data formats. 
 
 Pins of filters specify the data ranges they support to enable stream connections to pins of other filters that also support those data ranges.
 
@@ -69,22 +73,16 @@ Pins of filters specify the data ranges they support to enable stream connection
 | **Minimum UMDF version** |  |
 | **Header** | bdamedia.h (include Bdamedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556552">BDA Stream Format GUIDs</a>
-</dt>
-<dt>
 <a href="..\bdamedia\ns-bdamedia-tagbda_transport_info.md">BDA_TRANSPORT_INFO</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556552">BDA Stream Format GUIDs</a>
+
  
 
  

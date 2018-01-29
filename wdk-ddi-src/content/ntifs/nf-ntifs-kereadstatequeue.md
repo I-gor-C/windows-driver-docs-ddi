@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 02bcc901-91f4-40fc-ab4b-de958e00f862
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeReadStateQueue
+ms.keywords : ntifs/KeReadStateQueue, KeReadStateQueue, keref_ae112949-4020-4501-8403-da1075d854c6.xml, KeReadStateQueue function [Installable File System Drivers], ifsk.kereadstatequeue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeReadStateQueue
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ The <b>KeReadStateQueue</b> routine is reserved for system use.
 
 `Queue`
 
-
+TBD
 
 
 ## Return Value

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ADC0145D-135F-46E6-91C9-B545DBE1D83B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PMI_THRESHOLD_CONFIGURATION, PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
+ms.keywords : kernel.activecooling, ActiveCooling routine [Kernel-Mode Driver Architecture], ActiveCooling, DEVICE_ACTIVE_COOLING, DEVICE_ACTIVE_COOLING, poclass/ActiveCooling
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ActiveCooling
-req.alt-loc : Poclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
 ---
 
@@ -91,11 +95,8 @@ For more information about active cooling, see <a href="https://msdn.microsoft.c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\poclass\ns-poclass-_thermal_cooling_interface.md">THERMAL_COOLING_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

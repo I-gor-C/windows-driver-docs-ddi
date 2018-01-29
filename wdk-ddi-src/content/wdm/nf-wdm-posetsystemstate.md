@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b62db582-381a-457f-9755-d8667c7561af
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoSetSystemState
+ms.keywords : kernel.posetsystemstate, wdm/PoSetSystemState, portn_f20a5d5b-d863-4ff7-8837-6a7e625271d7.xml, PoSetSystemState routine [Kernel-Mode Driver Architecture], PoSetSystemState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoSetSystemState
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ None
 
 ## Remarks
 
-A driver calls <b>PoSetSystemState</b> to set flags indicating that system activity is occurring. Unlike <a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>, this routine does not allow the driver to set a persistent busy state. 
+A driver calls <b>PoSetSystemState</b> to set flags indicating that system activity is occurring. Unlike <a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>, this routine does not allow the driver to set a persistent busy state. 
 
 The <i>Flags</i> parameter specifies the type of activity occurring. Drivers can specify any combination of the flags.
 
@@ -80,14 +84,10 @@ Drivers can set the system busy state to request that the system avoid leaving o
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
-</dt>
-</dl>
+<a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>
+
+<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
+
  
 
  

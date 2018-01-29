@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ed652b52-33c9-4961-af29-b5fc54cf29b8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_TESSELLATION_IO_SIGNATURES, D3D11DDIARG_TESSELLATION_IO_SIGNATURES
+ms.keywords : UMDisplayDriver_Dx11param_Structs_5fb8a2b5-8291-4c80-a529-303f50f34cac.xml, display.d3d11ddiarg_tessellation_io_signatures, D3D11DDIARG_TESSELLATION_IO_SIGNATURES, d3d10umddi/D3D11DDIARG_TESSELLATION_IO_SIGNATURES, D3D11DDIARG_TESSELLATION_IO_SIGNATURES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D11DDIARG_TESSELLATION_IO_SIGNATURES is supported 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11DDIARG_TESSELLATION_IO_SIGNATURES
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11DDIARG_TESSELLATION_IO_SIGNATURES
 ---
 
@@ -51,33 +55,33 @@ typedef struct D3D11DDIARG_TESSELLATION_IO_SIGNATURES {
 
 ## Members
 
-        
-            `NumInputSignatureEntries`
 
-            [in] The number of entries in the array that the <b>pInputSignature</b> member specifies.
-        
-            `NumOutputSignatureEntries`
+`NumInputSignatureEntries`
 
-            [in] The number of entries in the array that the <b>pOutputSignature</b> member specifies.
-        
-            `NumPatchConstantSignatureEntries`
+[in] The number of entries in the array that the <b>pInputSignature</b> member specifies.
 
-            [in] The number of entries in the array that the <b>pPatchConstantSignature</b> member specifies.
-        
-            `pInputSignature`
+`NumOutputSignatureEntries`
 
-            [in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature.
-        
-            `pOutputSignature`
+[in] The number of entries in the array that the <b>pOutputSignature</b> member specifies.
 
-            [in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature.
-        
-            `pPatchConstantSignature`
+`NumPatchConstantSignatureEntries`
 
-            [in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the signature patches.
+[in] The number of entries in the array that the <b>pPatchConstantSignature</b> member specifies.
 
-    ## Remarks
-        A signature is basically the union of all registers that are input and output by any shader that shares the signature. Therefore, a signature might be a superset of what a given shader might actually input or output. 
+`pInputSignature`
+
+[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature.
+
+`pOutputSignature`
+
+[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature.
+
+`pPatchConstantSignature`
+
+[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the signature patches.
+
+## Remarks
+A signature is basically the union of all registers that are input and output by any shader that shares the signature. Therefore, a signature might be a superset of what a given shader might actually input or output. 
 
 Hardware should determine that the upstream stage in the pipeline might provide some or all of the data in the signature that is laid out as the <b>pInputSignature</b> and <b>NumInputSignatureEntries</b> members specify. Similarly, hardware should determine that the downstream stage in the pipeline might consume some or all of the data in the signature that is laid out as the <b>pOutputSignature</b> and <b>NumInputSignatureEntries</b> members specify.
 
@@ -93,13 +97,10 @@ The declarations within the shader code itself also show which registers are act
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_signature_entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a>
-</dt>
-</dl>
+
  
 
  

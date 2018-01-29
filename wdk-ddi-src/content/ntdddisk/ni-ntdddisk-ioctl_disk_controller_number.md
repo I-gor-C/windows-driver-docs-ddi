@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : dbf7829b-c5b9-4428-a296-34199a726ec5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_controller_number, IOCTL_DISK_CONTROLLER_NUMBER control code [Storage Devices], IOCTL_DISK_CONTROLLER_NUMBER, ntdddisk/IOCTL_DISK_CONTROLLER_NUMBER, k307_227ab511-78ff-4aba-be29-3429329d05e5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_CONTROLLER_NUMBER
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_CONTROLLER_NUMBER IOCTL
-Retrieves the controller number and disk number for an IDE disk.
-
-
-
 Retrieves the controller number and disk number for an IDE disk.
 
 ### Major Code
@@ -63,7 +63,6 @@ The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the <a href="..
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to <b>sizeof</b>(DISK_CONTROLLER_NUMBER).
 
 The <b>Status</b> field is set to STATUS_SUCCESS if the operation is successful. One possible status value is STATUS_BUFFER_TOO_SMALL if the output buffer provided by the caller is too small.
@@ -76,13 +75,10 @@ The <b>Status</b> field is set to STATUS_SUCCESS if the operation is successful.
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_controller_number.md">DISK_CONTROLLER_NUMBER</a>
-</dt>
-</dl>
+
  
 
  

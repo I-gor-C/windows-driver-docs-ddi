@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6bd7e722-6603-4d3b-9f18-1b7eb531f5fb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_format_tracks_ex, IOCTL_DISK_FORMAT_TRACKS_EX control code [Storage Devices], IOCTL_DISK_FORMAT_TRACKS_EX, ntdddisk/IOCTL_DISK_FORMAT_TRACKS_EX, k307_b3ebee51-e107-493e-b2dc-1457b4b39670.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_FORMAT_TRACKS_EX
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_FORMAT_TRACKS_EX IOCTL
-Is similar to <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_format_tracks.md">IOCTL_DISK_FORMAT_TRACKS</a>, except that it allows the caller to specify several more parameters. The additional extended parameters are the format gap length, the number of sectors per track, and an array whose element size is equal to the number of sectors per track. This array represents the track layout.
-
-
-
 Is similar to <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_format_tracks.md">IOCTL_DISK_FORMAT_TRACKS</a>, except that it allows the caller to specify several more parameters. The additional extended parameters are the format gap length, the number of sectors per track, and an array whose element size is equal to the number of sectors per track. This array represents the track layout.
 
 ### Major Code
@@ -63,7 +63,6 @@ Length of the buffer.
 <text></text>
 
 ### Status Block
-I/O Status block
 The driver sets the <b>Status</b> field to STATUS_SUCCESS. Otherwise, the driver sets the <b>Status</b> field to STATUS_INVALID_PARAMETER if the input buffer length is &lt; <b>sizeof</b>(FORMAT_EX_PARAMETERS) or if the format parameters supplied by the caller will not work on the drive to be formatted.
 
 
@@ -74,16 +73,12 @@ The driver sets the <b>Status</b> field to STATUS_SUCCESS. Otherwise, the driver
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_format_tracks.md">IOCTL_DISK_FORMAT_TRACKS</a>
-</dt>
-<dt>
+
 <a href="..\ntdddisk\ns-ntdddisk-_format_ex_parameters.md">FORMAT_EX_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

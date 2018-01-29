@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ef0da533-4514-4de4-a4d2-8a0f1b5de12f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_set_drive_layout_ex, IOCTL_DISK_SET_DRIVE_LAYOUT_EX control code [Storage Devices], IOCTL_DISK_SET_DRIVE_LAYOUT_EX, ntdddisk/IOCTL_DISK_SET_DRIVE_LAYOUT_EX, k307_4f25801a-eda0-42b1-9969-47f01f39c3fb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_SET_DRIVE_LAYOUT_EX
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_SET_DRIVE_LAYOUT_EX IOCTL
-Repartitions a disk as specified. (Floppy drivers need not handle this request.)
-
-
-
 Repartitions a disk as specified. (Floppy drivers need not handle this request.)
 
 ### Major Code
@@ -63,7 +63,6 @@ Length of a <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DR
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the size, in bytes, of the returned information. The <b>Status</b> field can be set to STATUS_SUCCESS, or possibly to STATUS_INVALID_PARAMETER, STATUS_INFO_LENGTH_MISMATCH, STATUS_INSUFFICIENT_RESOURCES, or STATUS_BUFFER_TOO_SMALL.
 
 
@@ -74,13 +73,10 @@ The <b>Information</b> field is set to the size, in bytes, of the returned infor
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a>
-</dt>
-</dl>
+
  
 
  

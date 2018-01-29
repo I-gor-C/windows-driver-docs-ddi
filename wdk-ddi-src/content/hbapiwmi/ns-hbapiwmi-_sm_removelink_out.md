@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f3b82d62-8596-4bb9-b20b-39f232527d7a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_RemoveLink_OUT, SM_RemoveLink_OUT, *PSM_RemoveLink_OUT
+ms.keywords : hbapiwmi/SM_RemoveLink_OUT, PSM_RemoveLink_OUT, *PSM_RemoveLink_OUT, storage.sm_removelink_out, PSM_RemoveLink_OUT structure pointer [Storage Devices], _SM_RemoveLink_OUT, structs-Fibre_5355f5b8-47ea-4c71-880d-08891533bf29.xml, SM_RemoveLink_OUT structure [Storage Devices], hbapiwmi/PSM_RemoveLink_OUT, SM_RemoveLink_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_RemoveLink_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_RemoveLink_OUT, *PSM_RemoveLink_OUT
 ---
 
@@ -46,13 +50,13 @@ typedef struct _SM_RemoveLink_OUT {
 
 ## Members
 
-        
-            `HBAStatus`
 
-            The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+`HBAStatus`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM_RemoveLink_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.</p>
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM_RemoveLink_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3390A01D-BD4B-4399-AA3E-91BB32264A13
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTUpdateGpuVirtualAddress
+ms.keywords : D3DKMTUpdateGpuVirtualAddress function [Display Devices], display.d3dkmtupdategpuvirtualaddress, d3dkmthk/D3DKMTUpdateGpuVirtualAddress, D3DKMTUpdateGpuVirtualAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTUpdateGpuVirtualAddress
-req.alt-loc : GDI32.dll,API-MS-Win-DX-D3DKMT-L1-1-1.dll,GDI32.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : GDI32.lib
 req.dll : GDI32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,19 +54,39 @@ NTSTATUS APIENTRY D3DKMTUpdateGpuVirtualAddress(
 
 `D3DKMT_UPDATEGPUVIRTUALADDRESS`
 
-
+TBD
 
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The device context was successfully created.
+</dl>
+</td>
+<td width="60%">
+The device context was successfully created.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -75,8 +99,11 @@ The page table updates are executed on a paging context, dedicated to the render
 The virtual address ranges in the update operations are allowed to intersect. The operations will be applied in the order they are submitted.
 
 In a single <b>UpdateVirtualAddress</b> call:
-
-Drivers can submit many <b>UpdateGpuVirtualAddress</b> calls, which will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the pervious operations are processed by the video memory manager.
+<ul>
+<li>All virtual address ranges in mapping operations and the destination range in copy operations must belong to the same reserved (zero) range.</li>
+<li>The source virtual address range in copy operations is allowed to be from a different reserved (zero) range.</li>
+<li>The source virtual address range in all copy operations must belong to the same reserved (zero) range.</li>
+</ul>Drivers can submit many <b>UpdateGpuVirtualAddress</b> calls, which will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the pervious operations are processed by the video memory manager.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,14 +119,10 @@ Drivers can submit many <b>UpdateGpuVirtualAddress</b> calls, which will be queu
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_updategpuvirtualaddress.md">D3DKMT_UPDATEGPUVIRTUALADDRESS</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_reservegpuvirtualaddressrange.md">ReserveGpuVirtualAddressRange</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_updategpuvirtualaddress.md">D3DKMT_UPDATEGPUVIRTUALADDRESS</a>
+
  
 
  

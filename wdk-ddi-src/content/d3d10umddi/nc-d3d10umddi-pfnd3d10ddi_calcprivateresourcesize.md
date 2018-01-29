@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2c4eb002-4788-46ab-92b9-3bb2dcb44ee3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.calcprivateresourcesize, CalcPrivateResourceSize callback function [Display Devices], CalcPrivateResourceSize, PFND3D10DDI_CALCPRIVATERESOURCESIZE, PFND3D10DDI_CALCPRIVATERESOURCESIZE, d3d10umddi/CalcPrivateResourceSize, UserModeDisplayDriverDx10_Functions_bc7bb9a2-6fe2-49fb-b7d2-81297a828418.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CalcPrivateResourceSize
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -80,14 +84,10 @@ SIZE_T Pfnd3d10ddiCalcprivateresourcesize(
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
-</dt>
-</dl>
+
  
 
  

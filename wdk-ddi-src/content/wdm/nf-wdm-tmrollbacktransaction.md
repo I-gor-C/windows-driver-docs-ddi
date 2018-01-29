@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5626a92e-bd26-41a3-8475-916efb2292ff
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmRollbackTransaction
+ms.keywords : TmRollbackTransaction, ktm_ref_5ea93853-7ca0-4db2-b5ca-3329b5c7f0f0.xml, wdm/TmRollbackTransaction, TmRollbackTransaction routine [Kernel-Mode Driver Architecture], kernel.tmrollbacktransaction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TmRollbackTransaction
-req.alt-loc : NtosKrnl.exe,Ext-MS-Win-ntos-tm-l1-1-0.dll,tm.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,17 +66,45 @@ A Boolean value that the caller sets to <b>TRUE</b> for synchronous operation or
 ## Return Value
 
 <b>TmRollbackTransaction</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TRANSACTION_ALREADY_COMMITTED</b></dt>
-</dl>The transaction cannot be rolled back because it has already been committed.
+</dl>
+</td>
+<td width="60%">
+The transaction cannot be rolled back because it has already been committed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TRANSACTION_REQUEST_NOT_VALID</b></dt>
-</dl>The transaction has not been committed but its current state does not permit rollback.
+</dl>
+</td>
+<td width="60%">
+The transaction has not been committed but its current state does not permit rollback.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>Rollback notifications have been queued to resource managers, and the caller specified <b>FALSE</b> for the <i>Wait</i> parameter.
+</dl>
+</td>
+<td width="60%">
+Rollback notifications have been queued to resource managers, and the caller specified <b>FALSE</b> for the <i>Wait</i> parameter.
 
- 
+</td>
+</tr>
+</table> 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -96,20 +128,14 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwrollbacktransaction.md">ZwRollbackTransaction</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
+<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
+
  
 
  

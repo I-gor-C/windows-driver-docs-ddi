@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : c0134541-2e17-41e5-b30a-493b1bb42d07
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1
+ms.keywords : bltooth.ioctl_internal_bthenum_get_devinfo, IOCTL_INTERNAL_BTHENUM_GET_DEVINFO control code [Bluetooth Devices], IOCTL_INTERNAL_BTHENUM_GET_DEVINFO, bthioctl/IOCTL_INTERNAL_BTHENUM_GET_DEVINFO, bth_ioctls_08047b17-31ae-4497-b83d-21e42058765f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_BTHENUM_GET_DEVINFO
-req.alt-loc : Bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,15 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1"
 ---
 
 # IOCTL_INTERNAL_BTHENUM_GET_DEVINFO IOCTL
-The IOCTL_INTERNAL_BTHENUM_GET_DEVINFO request returns information about the remote device that
-     caused the Plug and Play (PnP) manager to load the current instance of the profile driver.
-
-
-
 The IOCTL_INTERNAL_BTHENUM_GET_DEVINFO request returns information about the remote device that
      caused the Plug and Play (PnP) manager to load the current instance of the profile driver.
 
@@ -69,7 +68,6 @@ The length of a
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the 
       <b>Information</b> member of the STATUS_BLOCK structure is set to the size, in bytes, of the output
       buffer. Otherwise, the 
@@ -77,14 +75,32 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_INVALID_BUFFER_SIZE
 
+</td>
+<td>
 The output buffer was sized incorrectly.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -94,11 +110,10 @@ The output buffer was sized incorrectly.
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | <= PASSIVE_LEVEL |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a></dt>
-</dl>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a>
+
  
 
  

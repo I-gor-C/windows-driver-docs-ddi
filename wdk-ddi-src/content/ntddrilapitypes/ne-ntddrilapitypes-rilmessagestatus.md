@@ -7,8 +7,8 @@ old-location : netvista\rilmessagestatus.htm
 old-project : netvista
 ms.assetid : 8c111231-f94b-4e52-9887-59d07fe70937
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMESSAGESTATUS, RILMESSAGESTATUS
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_MSGSTATUS_RECUNREAD, RILMESSAGESTATUS, ntddrilapitypes/RIL_MSGSTATUS_STOSENT, ntddrilapitypes/RIL_MSGSTATUS_MAX, netvista.rilmessagestatus, ntddrilapitypes/RILMESSAGESTATUS, RIL_MSGSTATUS_RECUNREAD, ntddrilapitypes/RIL_MSGSTATUS_STOUNSENT, RIL_MSGSTATUS_MAX, RIL_MSGSTATUS_RECREAD, ntddrilapitypes/RIL_MSGSTATUS_RECREAD, RIL_MSGSTATUS_STOSENT, RILMESSAGESTATUS enumeration [Network Drivers Starting with Windows Vista], RIL_MSGSTATUS_STOUNSENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMESSAGESTATUS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMESSAGESTATUS
 ---
 
@@ -74,6 +78,11 @@ typedef enum _RILMESSAGESTATUS {
 
 <tr>
 <td>RIL_MSGSTATUS_STOUNSENT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGSTATUS_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 098fe3b9-1169-4ff6-8822-0eb277cb73f9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
+ms.keywords : _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE structure [Display Devices], display.d3dkmt_queryresourceinfofromnthandle, d3dkmthk/D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
 ---
 
@@ -52,36 +56,36 @@ typedef struct _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device.
-        
-            `hNtHandle`
+`hDevice`
 
-            [in] A global NT handle to the resource that is to be queried.
-        
-            `NumAllocations`
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device.
 
-            [out] The number of allocations associated with the resource.
-        
-            `pPrivateRuntimeData`
+`hNtHandle`
 
-            [in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource will be copied to.
-        
-            `PrivateRuntimeDataSize`
+[in] A global NT handle to the resource that is to be queried.
 
-            [in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
+`NumAllocations`
+
+[out] The number of allocations associated with the resource.
+
+`pPrivateRuntimeData`
+
+[in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource will be copied to.
+
+`PrivateRuntimeDataSize`
+
+[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
 
 [out] If <b>pPrivateRuntimeData</b> is <b>NULL</b>, this member is the size, in bytes, of the buffer required to receive the runtime private data. Otherwise, this member is the size, in bytes, of runtime private data copied into the buffer.
-        
-            `ResourcePrivateDriverDataSize`
 
-            [out] The size, in bytes, of the driver's resource private data.
-        
-            `TotalPrivateDriverDataSize`
+`ResourcePrivateDriverDataSize`
 
-            [out] The size, in bytes, of the buffer that is required to hold all the driver private data for all allocations associated with the resource.
+[out] The size, in bytes, of the driver's resource private data.
+
+`TotalPrivateDriverDataSize`
+
+[out] The size, in bytes, of the buffer that is required to hold all the driver private data for all allocations associated with the resource.
 
 
 ## Requirements
@@ -92,13 +96,10 @@ typedef struct _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfofromnthandle.md">D3DKMTQueryResourceInfoFromNtHandle</a>
-</dt>
-</dl>
+
  
 
  

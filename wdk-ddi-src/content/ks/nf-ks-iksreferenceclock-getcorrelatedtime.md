@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3f4a47bb-460e-4ca0-9aee-4bcfdb88dd30
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsReferenceClock, IKsReferenceClock::GetCorrelatedTime, GetCorrelatedTime
+ms.keywords : GetCorrelatedTime method [Streaming Media Devices], stream.iksreferenceclock_getcorrelatedtime, GetCorrelatedTime, avintfc_9bb8180e-a8e6-4b89-a615-0516470a7dd8.xml, IKsReferenceClock, IKsReferenceClock::GetCorrelatedTime, IKsReferenceClock interface [Streaming Media Devices], GetCorrelatedTime method, ks/IKsReferenceClock::GetCorrelatedTime, GetCorrelatedTime method [Streaming Media Devices], IKsReferenceClock interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsReferenceClock.GetCorrelatedTime
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -83,11 +87,8 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 470563BD-F185-4CA2-B4AD-06E1AABD36AD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyPagingQueue
+ms.keywords : d3dkmthk/D3DKMTDestroyPagingQueue, D3DKMTDestroyPagingQueue, display.d3dkmtdestroypagingqueue, D3DKMTDestroyPagingQueue function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTDestroyPagingQueue
-req.alt-loc : GDI32.dll,API-MS-Win-DX-D3DKMT-L1-1-1.dll,GDI32.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : GDI32.lib
 req.dll : GDI32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -53,11 +57,23 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation was performed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation was performed successfully.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -79,14 +95,10 @@ In addition to <b>hPagingQueue</b>, this device driver interface (DDI) invalidat
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_destroypagingqueue.md">D3DDDI_DESTROYPAGINGQUEUE</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatepagingqueue.md">D3DKMTCreatePagingQueue</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_destroypagingqueue.md">D3DDDI_DESTROYPAGINGQUEUE</a>
+
  
 
  

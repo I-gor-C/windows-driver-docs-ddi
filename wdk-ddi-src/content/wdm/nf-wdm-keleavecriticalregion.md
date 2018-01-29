@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d3e90c3b-5ead-40d1-9143-a2b1fc8c255d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeLeaveCriticalRegion
+ms.keywords : KeLeaveCriticalRegion routine [Kernel-Mode Driver Architecture], k105_f9344044-a57f-4ee4-800c-a03edcc27196.xml, kernel.keleavecriticalregion, KeLeaveCriticalRegion, wdm/KeLeaveCriticalRegion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeLeaveCriticalRegion
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : CriticalRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -53,10 +57,6 @@ This function has no parameters.
 
 None
 
-None
-
-None
-
 ## Remarks
 
 Highest-level drivers can call this routine while running in the context of the thread that requested the current I/O operation.
@@ -75,14 +75,10 @@ Highest-level drivers can call this routine while running in the context of the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
-</dt>
-</dl>
+<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
+
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
+
  
 
  

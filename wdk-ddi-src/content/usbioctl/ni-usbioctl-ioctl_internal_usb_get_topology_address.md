@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 15a196de-7d6a-408a-97e1-58d6756433db
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_get_topology_address, IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS control code [Buses], IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS, usbioctl/IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows Vista and later operating systems.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ The size of a <a href="..\usbioctl\ns-usbioctl-_usb_topology_address.md">USB_TOP
 <text></text>
 
 ### Status Block
-I/O Status block
 The hub or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or the appropriate error status.
 
 
@@ -74,11 +77,10 @@ The hub or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or 
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><b>USB_TOPOLOGY_ADDRESS</b></dt>
-</dl>
+<b>USB_TOPOLOGY_ADDRESS</b>
+
  
 
  

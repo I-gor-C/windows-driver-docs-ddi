@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1dd7415d-bfbc-4dea-bac9-bc5b8531a47f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : MEDIUM_INFO, *PMEDIUM_INFO, MEDIUM_INFO
+ms.keywords : "*PMEDIUM_INFO, MEDIUM_INFO structure [Streaming Media Devices], ksmedia/PMEDIUM_INFO, ksmedia/MEDIUM_INFO, stream.medium_info, MEDIUM_INFO, PMEDIUM_INFO, PMEDIUM_INFO structure pointer [Streaming Media Devices], vidcapstruct_f83c29e1-51a8-4784-a785-4e5dc9956634.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MEDIUM_INFO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMEDIUM_INFO, MEDIUM_INFO"
 ---
 
@@ -48,15 +52,14 @@ typedef struct {
 
 ## Members
 
-        
-            `MediaPresent`
 
-            Specifies if media is present in the external device. <b>TRUE</b> if media is loaded, <b>FALSE</b> otherwise.
-        
-            `MediaType`
+`MediaPresent`
 
-            Indicates the type of the media loaded in an external device.
+Specifies if media is present in the external device. <b>TRUE</b> if media is loaded, <b>FALSE</b> otherwise.
 
+`MediaType`
+
+Indicates the type of the media loaded in an external device.
 <table>
 <tr>
 <th>Flag</th>
@@ -93,13 +96,13 @@ Hi-8 cassette
 </td>
 </tr>
 </table>
-        
-            `RecordInhibit`
 
-            Specifies if recording is inhibited on the media. <b>TRUE</b> if recording onto the media is inhibited, <b>FALSE</b> otherwise.
+`RecordInhibit`
 
-    ## Remarks
-        Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.</p>
+Specifies if recording is inhibited on the media. <b>TRUE</b> if recording onto the media is inhibited, <b>FALSE</b> otherwise.
+
+## Remarks
+Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 751bf70d-0602-487a-82c7-efca075b8968
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_SERIAL, *PKSPROPERTY_SERIAL, KSPROPERTY_SERIAL
+ms.keywords : PKSPROPERTY_SERIAL, *PKSPROPERTY_SERIAL, ks/KSPROPERTY_SERIAL, ks/PKSPROPERTY_SERIAL, PKSPROPERTY_SERIAL structure pointer [Streaming Media Devices], stream.ksproperty_serial, ks-struct_1d2733c1-6b2a-48e2-ae94-d108a011754e.xml, KSPROPERTY_SERIAL structure [Streaming Media Devices], KSPROPERTY_SERIAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_SERIAL
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSPROPERTY_SERIAL, KSPROPERTY_SERIAL"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSPROPERTY_SERIAL, *PKSPROPERTY_SERIAL
 ---
 
 # KSPROPERTY_SERIAL structure
@@ -48,21 +52,21 @@ typedef struct {
 
 ## Members
 
-        
-            `Id`
 
-            Specifies the identifier for this property.
-        
-            `PropertyLength`
+`Id`
 
-            Specifies the length, in bytes, of the following property data. This does not include any alignment buffering that may be appended to the property data before the next property in the serialization.
-        
-            `PropTypeSet`
+Specifies the identifier for this property.
 
-            A structure of type <a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a> that specifies the type of property data. This is the same information obtained from querying Basic Support.
+`PropertyLength`
 
-    ## Remarks
-        A KSPROPERTY_SERIAL structure is followed by the property data, with the start of each property on FILE_LONG_ALIGNMENT. Note that the serial header structure itself is also defined to be on FILE_LONG_ALIGNMENT.
+Specifies the length, in bytes, of the following property data. This does not include any alignment buffering that may be appended to the property data before the next property in the serialization.
+
+`PropTypeSet`
+
+A structure of type <a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a> that specifies the type of property data. This is the same information obtained from querying Basic Support.
+
+## Remarks
+A KSPROPERTY_SERIAL structure is followed by the property data, with the start of each property on FILE_LONG_ALIGNMENT. Note that the serial header structure itself is also defined to be on FILE_LONG_ALIGNMENT.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksproperty_serialhdr.md">KSPROPERTY_SERIALHDR</a>
-</dt>
-</dl>
+
  
 
  

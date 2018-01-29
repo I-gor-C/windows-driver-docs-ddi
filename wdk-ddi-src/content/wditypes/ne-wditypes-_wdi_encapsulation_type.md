@@ -7,8 +7,8 @@ old-location : netvista\wdi_encapsulation_type.htm
 old-project : netvista
 ms.assetid : 6EDCC69B-F156-416B-9824-5E26F9834D14
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_TYPE
+ms.date : 1/18/2018
+ms.keywords : WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_802_1H, netvista.wdi_encapsulation_type, WDI_ENCAPSULATION_RFC_1042, wditypes/WDI_ENCAPSULATION_RFC_1042, wditypes/WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_TYPE enumeration [Device and Driver Installation], _WDI_ENCAPSULATION_TYPE, netvista.wifi_encapsulation_type, wditypes/WDI_ENCAPSULATION_802_1H
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_ENCAPSULATION_TYPE
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_ENCAPSULATION_TYPE
 req.product : Windows 10 or later.
 ---

@@ -7,8 +7,8 @@ old-location : debugger\debug_symbol_source_entry.htm
 old-project : debugger
 ms.assetid : 595d5a90-6ec8-4841-a38b-c0cbf26ed082
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _DEBUG_SYMBOL_SOURCE_ENTRY, *PDEBUG_SYMBOL_SOURCE_ENTRY, DEBUG_SYMBOL_SOURCE_ENTRY
+ms.date : 1/19/2018
+ms.keywords : dbgeng/PDEBUG_SYMBOL_SOURCE_ENTRY, *PDEBUG_SYMBOL_SOURCE_ENTRY, DEBUG_SYMBOL_SOURCE_ENTRY structure [Windows Debugging], DEBUG_SYMBOL_SOURCE_ENTRY, dbgeng/DEBUG_SYMBOL_SOURCE_ENTRY, PDEBUG_SYMBOL_SOURCE_ENTRY, debugger.debug_symbol_source_entry, _DEBUG_SYMBOL_SOURCE_ENTRY, PDEBUG_SYMBOL_SOURCE_ENTRY structure pointer [Windows Debugging], Structures_9f8ab4b6-98b2-4a10-a450-bb73e655dd32.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEBUG_SYMBOL_SOURCE_ENTRY
-req.alt-loc : DbgEng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEBUG_SYMBOL_SOURCE_ENTRY, DEBUG_SYMBOL_SOURCE_ENTRY"
 ---
 
@@ -57,54 +61,54 @@ typedef struct _DEBUG_SYMBOL_SOURCE_ENTRY {
 
 ## Members
 
-        
-            `EndColumn`
 
-            The column number of the end of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
-        
-            `EndLine`
+`EndColumn`
 
-            The line number of the end of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
-        
-            `EngineInternal`
+The column number of the end of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
 
-            Reserved for internal debugger engine use.
-        
-            `FileNameId`
+`EndLine`
 
-            Identifier for the source code file name. If this information is not available, <b>FieldNameId</b> is set to zero.
-        
-            `FileNameSize`
+The line number of the end of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
 
-            The number of characters in the source filename, including the terminator.
-        
-            `Flags`
+`EngineInternal`
 
-            Set to zero.
-        
-            `ModuleBase`
+Reserved for internal debugger engine use.
 
-            The base address, in the target's virtual address space, of the module that the source symbol came from.
-        
-            `Offset`
+`FileNameId`
 
-            The location of the memory corresponding to the source code in the target's virtual address space.
-        
-            `Reserved`
+Identifier for the source code file name. If this information is not available, <b>FieldNameId</b> is set to zero.
 
-            Reserved for future use.
-        
-            `Size`
+`FileNameSize`
 
-            The size of the region of memory corresponding to the source code. If this information is not available, <b>Size</b> is set to one.
-        
-            `StartColumn`
+The number of characters in the source filename, including the terminator.
 
-            The column number of the start of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
-        
-            `StartLine`
+`Flags`
 
-            The line number of the start of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
+Set to zero.
+
+`ModuleBase`
+
+The base address, in the target's virtual address space, of the module that the source symbol came from.
+
+`Offset`
+
+The location of the memory corresponding to the source code in the target's virtual address space.
+
+`Reserved`
+
+Reserved for future use.
+
+`Size`
+
+The size of the region of memory corresponding to the source code. If this information is not available, <b>Size</b> is set to one.
+
+`StartColumn`
+
+The column number of the start of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
+
+`StartLine`
+
+The line number of the start of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
 
 
 ## Requirements

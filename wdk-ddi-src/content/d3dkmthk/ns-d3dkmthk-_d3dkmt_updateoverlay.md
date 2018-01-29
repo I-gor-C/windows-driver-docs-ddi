@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4e7d4d09-067b-4658-ab2a-319dc9e6d8db
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_UPDATEOVERLAY, D3DKMT_UPDATEOVERLAY
+ms.keywords : D3DKMT_UPDATEOVERLAY structure [Display Devices], d3dkmthk/D3DKMT_UPDATEOVERLAY, D3DKMT_UPDATEOVERLAY, display.d3dkmt_updateoverlay, OpenGL_Structs_763acbbf-27ad-4d91-903f-7200b7d7e0cf.xml, _D3DKMT_UPDATEOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_UPDATEOVERLAY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_UPDATEOVERLAY
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_UPDATEOVERLAY {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
-        
-            `hOverlay`
+`hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to modify.
-        
-            `OverlayInfo`
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a> structure that describes modification information for the kernel-mode overlay object.
+`hOverlay`
+
+[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to modify.
+
+`OverlayInfo`
+
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a> structure that describes modification information for the kernel-mode overlay object.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DKMT_UPDATEOVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdateoverlay.md">D3DKMTUpdateOverlay</a>
-</dt>
-</dl>
+
  
 
  

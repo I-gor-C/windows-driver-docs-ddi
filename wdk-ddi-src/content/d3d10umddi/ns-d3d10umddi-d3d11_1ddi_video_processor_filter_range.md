@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9dc93d92-ccdc-488b-a5dd-a2efe783cbb3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
+ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE structure [Display Devices], display.d3d11_1ddi_video_processor_filter_range
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 ---
 
@@ -49,25 +53,25 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE {
 
 ## Members
 
-        
-            `Default`
 
-            The default value of the filter.
-        
-            `Maximum`
+`Default`
 
-            The maximum value of the filter.
-        
-            `Minimum`
+The default value of the filter.
 
-            The minimum value of the filter.
-        
-            `Multiplier`
+`Maximum`
 
-            A multiplier. Use the following formula to translate the filter setting into the actual filter value: <i>Actual Value</i> = <i>Set Value</i> Ã— <i>Multiplier</i>.
+The maximum value of the filter.
 
-    ## Remarks
-        The multiplier enables the filter range to have a fractional step value.
+`Minimum`
+
+The minimum value of the filter.
+
+`Multiplier`
+
+A multiplier. Use the following formula to translate the filter setting into the actual filter value: <i>Actual Value</i> = <i>Set Value</i> Ã— <i>Multiplier</i>.
+
+## Remarks
+The multiplier enables the filter range to have a fractional step value.
 
 For example, a hue filter might have an actual range of [â€“180.0 … +180.0] with a step size of 0.25. The device would report the following range and multiplier:<ul>
 <li>Minimum: â€“720</li>
@@ -78,7 +82,7 @@ For example, a hue filter might have an actual range of [â€“180.0 … +180.
 
 In this case, a filter value of 2 would be interpreted by the device as 0.50 (or 2 Ã— 0.25).
 
-The device should use a multiplier that can be represented exactly as a base-2 fraction.</p>
+The device should use a multiplier that can be represented exactly as a base-2 fraction.
 
 ## Requirements
 | &nbsp; | &nbsp; |

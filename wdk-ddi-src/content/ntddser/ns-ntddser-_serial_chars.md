@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : D9146B9F-5AE4-436B-B223-0A61400FE9AC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERIAL_CHARS, SERIAL_CHARS, *PSERIAL_CHARS
+ms.keywords : SERIAL_CHARS, *PSERIAL_CHARS, SERIAL_CHARS structure [Serial Ports], ntddser/SERIAL_CHARS, ntddser/PSERIAL_CHARS, PSERIAL_CHARS structure pointer [Serial Ports], PSERIAL_CHARS, serports.serial_chars, _SERIAL_CHARS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SERIAL_CHARS
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERIAL_CHARS, *PSERIAL_CHARS
 ---
 
@@ -51,33 +55,33 @@ typedef struct _SERIAL_CHARS {
 
 ## Members
 
-        
-            `BreakChar`
 
-            The break character. Receipt of this character indicates that a break (temporary pause) occurred in the input stream.
-        
-            `EofChar`
+`BreakChar`
 
-            The EOF (end of file) character. Receipt of this character marks the end of the input stream.
-        
-            `ErrorChar`
+The break character. Receipt of this character indicates that a break (temporary pause) occurred in the input stream.
 
-            The parity error replacement character. Bytes received with parity errors are replaced by this character.
-        
-            `EventChar`
+`EofChar`
 
-            The event character. Receipt of this character signals a serial communication event if the SERIAL_EV_RXFLAG flag bit is set in the current wait mask. The wait mask is set by the <a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a> request. The <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a> request initiates a wait for the events in the wait mask.
-        
-            `XoffChar`
+The EOF (end of file) character. Receipt of this character marks the end of the input stream.
 
-            The XOFF (transmit off) character to use for both transmit and receive operations.
-        
-            `XonChar`
+`ErrorChar`
 
-            The XON (transmit on) character to use for both transmit and receive operations. The XON and XOFF characters are used for software flow control.
+The parity error replacement character. Bytes received with parity errors are replaced by this character.
 
-    ## Remarks
-        This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_get_chars.md">IOCTL_SERIAL_GET_CHARS</a> requests.
+`EventChar`
+
+The event character. Receipt of this character signals a serial communication event if the SERIAL_EV_RXFLAG flag bit is set in the current wait mask. The wait mask is set by the <a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a> request. The <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a> request initiates a wait for the events in the wait mask.
+
+`XoffChar`
+
+The XOFF (transmit off) character to use for both transmit and receive operations.
+
+`XonChar`
+
+The XON (transmit on) character to use for both transmit and receive operations. The XON and XOFF characters are used for software flow control.
+
+## Remarks
+This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_get_chars.md">IOCTL_SERIAL_GET_CHARS</a> requests.
 
 An <b>IOCTL_SERIAL_SET_CHARS</b> request to set the XON and XOFF characters to the same value will fail.
 
@@ -89,22 +93,16 @@ An <b>IOCTL_SERIAL_SET_CHARS</b> request to set the XON and XOFF characters to t
 | **Minimum UMDF version** |  |
 | **Header** | ntddser.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_get_chars.md">IOCTL_SERIAL_GET_CHARS</a>
-</dt>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a>
-</dt>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
-</dt>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
-</dt>
-</dl>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_get_chars.md">IOCTL_SERIAL_GET_CHARS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E019CCED-3511-4B7B-B6C9-09FF31B0547A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URS_HOST_INTERFACE_TYPE, URS_HOST_INTERFACE_TYPE
+ms.keywords : URS_HOST_INTERFACE_TYPE, urstypes/URS_HOST_INTERFACE_TYPE, UrsHostInterfaceTypeEhci, _URS_HOST_INTERFACE_TYPE, buses.urs_host_interface_type, urstypes/UrsHostInterfaceTypeEhci, UrsHostInterfaceTypeOther, urstypes/UrsHostInterfaceTypeXhci, UrsHostInterfaceTypeXhci, urstypes/UrsHostInterfaceTypeOther, URS_HOST_INTERFACE_TYPE enumeration [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : URS_HOST_INTERFACE_TYPE
-req.alt-loc : urstypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : URS_HOST_INTERFACE_TYPE
 req.product : Windows 10 or later.
 ---

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 37cf1552-2cbe-4b80-b220-cfa853674e1b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRequestPowerStateChange
+ms.keywords : AtaPortRequestPowerStateChange, AtaPortRequestPowerStateChange routine [Storage Devices], irb/AtaPortRequestPowerStateChange, storage.ataportrequestpowerstatechange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortRequestPowerStateChange
-req.alt-loc : Irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortRequestPowerStateChange function
 The <b>AtaPortRequestPowerStateChange</b> routine requests a power state transition for the indicated device.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -74,7 +79,8 @@ None
 
 ## Remarks
 
-The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver might have to initiate a power state change, such as when a hot-plug operation occurs.
+The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver might have to initiate a power state change, such as when a hot-plug operation occurs. 
+<div class="alert"><b>Note</b>   The practice of doing idle detection from an ATA miniport driver is discouraged. </div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,11 +96,8 @@ The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\ne-irb-ide_power_state.md">IDE_POWER_STATE</a>
-</dt>
-</dl>
+
  
 
  

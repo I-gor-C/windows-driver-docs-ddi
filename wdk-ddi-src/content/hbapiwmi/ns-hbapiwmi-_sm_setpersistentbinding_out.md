@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 42d451ab-51dc-4b59-b6e9-42e02ec1b500
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_SetPersistentBinding_OUT, SM_SetPersistentBinding_OUT, *PSM_SetPersistentBinding_OUT
+ms.keywords : _SM_SetPersistentBinding_OUT, hbapiwmi/PSM_SetPersistentBinding_OUT, SM_SetPersistentBinding_OUT structure [Storage Devices], SM_SetPersistentBinding_OUT, PSM_SetPersistentBinding_OUT, storage.sm_setpersistentbinding_out, structs-Fibre_efdd2145-a966-477a-a896-71adb1c9a1f0.xml, *PSM_SetPersistentBinding_OUT, PSM_SetPersistentBinding_OUT structure pointer [Storage Devices], hbapiwmi/SM_SetPersistentBinding_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_SetPersistentBinding_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetPersistentBinding_OUT, *PSM_SetPersistentBinding_OUT
 ---
 
@@ -48,21 +52,21 @@ typedef struct _SM_SetPersistentBinding_OUT {
 
 ## Members
 
-        
-            `EntryStatus`
 
-            The status of each entry.
-        
-            `HBAStatus`
+`EntryStatus`
 
-            The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `OutStatusCount`
+The status of each entry.
 
-            The number of entries.
+`HBAStatus`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM__SetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+`OutStatusCount`
+
+The number of entries.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM__SetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

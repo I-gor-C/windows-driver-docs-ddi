@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bdd9f304-b26e-401e-81c7-da7d1e4f5635
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCompletePendedPreOperation
+ms.keywords : FltCompletePendedPreOperation routine [Installable File System Drivers], FLT_PREOP_SUCCESS_WITH_CALLBACK, ifsk.fltcompletependedpreoperation, FltApiRef_a_to_d_170adc13-ea3d-4346-99b2-85d5c1c464b8.xml, FLT_PREOP_SUCCESS_NO_CALLBACK, FLT_PREOP_COMPLETE, fltkernel/FltCompletePendedPreOperation, FltCompletePendedPreOperation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltCompletePendedPreOperation
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -52,7 +56,7 @@ VOID FltCompletePendedPreOperation(
 
 `CallbackData`
 
-
+TBD
 
 `CallbackStatus`
 
@@ -87,23 +91,16 @@ If the <i>CallbackStatus</i> parameter is FLT_PREOP_COMPLETE, <b>FltCompletePend
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltqueuedeferredioworkitem.md">FltQueueDeferredIoWorkItem</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a>
+
  
 
  

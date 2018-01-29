@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 340e9675-9d07-4224-ac1b-86e7586c0738
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_CD_MASTERING, FEATURE_DATA_CD_MASTERING, *PFEATURE_DATA_CD_MASTERING
+ms.keywords : _FEATURE_DATA_CD_MASTERING, FEATURE_DATA_CD_MASTERING, structs-CD-ROM_f803f10f-2ef7-4e3b-9c16-1ed2f3c5b2a5.xml, PFEATURE_DATA_CD_MASTERING, storage.feature_data_cd_mastering, ntddmmc/FEATURE_DATA_CD_MASTERING, PFEATURE_DATA_CD_MASTERING structure pointer [Storage Devices], FEATURE_DATA_CD_MASTERING structure [Storage Devices], *PFEATURE_DATA_CD_MASTERING, ntddmmc/PFEATURE_DATA_CD_MASTERING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_CD_MASTERING
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : FEATURE_DATA_CD_MASTERING, *PFEATURE_DATA_CD_MASTERING
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFEATURE_DATA_CD_MASTERING, FEATURE_DATA_CD_MASTERING"
 ---
 
 # _FEATURE_DATA_CD_MASTERING structure
@@ -55,49 +59,49 @@ typedef struct _FEATURE_DATA_CD_MASTERING {
 
 ## Members
 
-        
-            `BufferUnderrunFree`
 
-            Indicates, when set to 1, that the device is capable of zero-loss linking.
-        
-            `CdRewritable`
+`BufferUnderrunFree`
 
-            Indicates, when set to 1, that the device can do mastering and TAO recording on rewritable media.
-        
-            `Header`
+Indicates, when set to 1, that the device is capable of zero-loss linking.
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `MaximumCueSheetLength`
+`CdRewritable`
 
-            Indicates the maximum length of a Cue Sheet that can be accepted by the device for Session at Once recording. <b>MaximumCueSheetLength</b>[0] holds the most significant byte of the 3-byte value for the length. <b>MaximumCueSheetLength</b>[2] holds the least significant byte.
-        
-            `RawMultiSessionOk`
+Indicates, when set to 1, that the device can do mastering and TAO recording on rewritable media.
 
-            Indicates, when set to 1, that the device can record multisession in raw mode.
-        
-            `RawRecordingOk`
+`Header`
 
-            Indicates, when set to 1, that the device can record using the raw write type.
-        
-            `Reserved1`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            Reserved.
-        
-            `RWSubchannelsRecordable`
+`MaximumCueSheetLength`
 
-            Indicates, when set to 1, that the device can record the R-W subchannels with user-supplied information.
-        
-            `SessionAtOnceOk`
+Indicates the maximum length of a Cue Sheet that can be accepted by the device for Session at Once recording. <b>MaximumCueSheetLength</b>[0] holds the most significant byte of the 3-byte value for the length. <b>MaximumCueSheetLength</b>[2] holds the least significant byte.
 
-            Indicates, when set to 1, that the device can record using the Session-at-Once recording mode.
-        
-            `TestWriteOk`
+`RawMultiSessionOk`
 
-            Indicates, when set to 1, that the device can perform test writes.
+Indicates, when set to 1, that the device can record multisession in raw mode.
 
-    ## Remarks
-        This structure holds data for the feature named "CD Mastering" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can write to a CD in either "Session-at-Once" mode or Raw mode.
+`RawRecordingOk`
+
+Indicates, when set to 1, that the device can record using the raw write type.
+
+`Reserved1`
+
+Reserved.
+
+`RWSubchannelsRecordable`
+
+Indicates, when set to 1, that the device can record the R-W subchannels with user-supplied information.
+
+`SessionAtOnceOk`
+
+Indicates, when set to 1, that the device can record using the Session-at-Once recording mode.
+
+`TestWriteOk`
+
+Indicates, when set to 1, that the device can perform test writes.
+
+## Remarks
+This structure holds data for the feature named "CD Mastering" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can write to a CD in either "Session-at-Once" mode or Raw mode.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,16 +111,12 @@ typedef struct _FEATURE_DATA_CD_MASTERING {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 118B63D1-713A-4F8C-B97A-53BB6D0B819E
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.keywords : nfcsedev/External, nfcsedev/DeviceHost, DeviceHost, _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, _SECURE_ELEMENT_TYPE enumeration [Near-Field Proximity Drivers], SECURE_ELEMENT_TYPE, nfpdrivers._secure_element_type, nfcsedev/_SECURE_ELEMENT_TYPE, External, nfcsedev/Integrated, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE enumeration [Near-Field Proximity Drivers], Integrated, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # _SECURE_ELEMENT_TYPE Enumeration

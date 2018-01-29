@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 98B8EE79-18D2-4C57-964B-74DB550C1330
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfncheckcounterinfo, pfnCheckCounterInfo callback function [Display Devices], pfnCheckCounterInfo, PFND3DDDI_CHECKCOUNTERINFO, PFND3DDDI_CHECKCOUNTERINFO, d3dumddi/pfnCheckCounterInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnCheckCounterInfo
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -89,17 +93,12 @@ The driver's <i>pfnCheckCounterInfo</i> function cannot call the <a href="..\d3d
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_counter_info.md">D3DDDIARG_COUNTER_INFO</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_counter_info.md">D3DDDIARG_COUNTER_INFO</a>
+
  
 
  

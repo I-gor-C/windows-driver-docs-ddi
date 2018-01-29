@@ -7,8 +7,8 @@ old-location : image\wia_micr.htm
 old-project : image
 ms.assetid : CAD08405-698C-4C3A-A03F-827837199CC8
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _WIA_MICR, WIA_MICR
+ms.date : 1/18/2018
+ms.keywords : image.wia_micr, wiadef/WIA_MICR, WIA_MICR structure [Imaging Devices], _WIA_MICR, WIA_MICR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WIA_MICR
-req.alt-loc : wiadef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WIA_MICR
 req.product : Windows 10 or later.
 ---
@@ -52,33 +56,37 @@ typedef struct _WIA_MICR {
 
 ## Members
 
-        
-            `Count`
 
-            Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
-        
-            `Micr`
+`Count`
 
-            Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> structures.
-        
-            `Placeholder`
+Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
 
-            Placeholder for unrecognized characters.
-        
-            `Size`
+`Micr`
 
-            The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> list.
-        
-            `Tag`
+Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> structures.
 
-            Must be the literal 'WMIC', 4 single byte ASCII characters.
-        
-            `Version`
+`Placeholder`
 
-            Must be the value 0x00010000 (Version 1.0).
+Placeholder for unrecognized characters.
 
-    ## Remarks
-        The header must be followed by a sequence of MICR information structures, one for each decoded MICR code, in the order the MICR codes were found and decoded.</p>
+`Reserved`
+
+
+
+`Size`
+
+The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> list.
+
+`Tag`
+
+Must be the literal 'WMIC', 4 single byte ASCII characters.
+
+`Version`
+
+Must be the value 0x00010000 (Version 1.0).
+
+## Remarks
+The header must be followed by a sequence of MICR information structures, one for each decoded MICR code, in the order the MICR codes were found and decoded.
 
 ## Requirements
 | &nbsp; | &nbsp; |

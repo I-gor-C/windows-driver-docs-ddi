@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4f3f01f2-d5ef-4b41-8733-ac44952dc9a9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_CAP_FLAGS, *PUSB_HUB_CAP_FLAGS, USB_HUB_CAP_FLAGS
+ms.keywords : USB_HUB_CAP_FLAGS, usbioctl/USB_HUB_CAP_FLAGS, USB_HUB_CAP_FLAGS union [Buses], _USB_HUB_CAP_FLAGS, usbstrct_0c0ca119-db83-4486-9b65-f16c70716c14.xml, *PUSB_HUB_CAP_FLAGS, PUSB_HUB_CAP_FLAGS union pointer [Buses], buses.usb_hub_cap_flags, PUSB_HUB_CAP_FLAGS, usbioctl/PUSB_HUB_CAP_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_HUB_CAP_FLAGS
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PUSB_HUB_CAP_FLAGS, USB_HUB_CAP_FLAGS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USB_HUB_CAP_FLAGS, *PUSB_HUB_CAP_FLAGS
 req.product : Windows 10 or later.
 ---
 
@@ -57,10 +61,10 @@ typedef union _USB_HUB_CAP_FLAGS {
 
 ## Members
 
-        
-            `ul`
 
-            A bitmask that represents the hub capabilities.
+`ul`
+
+A bitmask that represents the hub capabilities.
 
 
 ## Requirements
@@ -71,16 +75,12 @@ typedef union _USB_HUB_CAP_FLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_hub_capabilities_ex.md">USB_HUB_CAPABILITIES_EX</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

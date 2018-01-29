@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1ed699a3-20e5-4a1c-bce0-5a681bac9c39
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFMemory, IWDFMemory::GetSize, GetSize
+ms.keywords : umdf.iwdfmemory_getsize, wdf.iwdfmemory_getsize, GetSize method, IWDFMemory interface, GetSize method, IWDFMemory interface, GetSize method, wudfddi/IWDFMemory::GetSize, UMDFMemoryObjectRef_24a9b921-5760-41fd-8b01-6a21e6be71ed.xml, GetSize, IWDFMemory::GetSize, IWDFMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFMemory.GetSize
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 <b>GetSize</b> returns the size, in bytes, of the data buffer for the memory object.
 
-<b>GetSize</b> returns the size, in bytes, of the data buffer for the memory object.
-
-<b>GetSize</b> returns the size, in bytes, of the data buffer for the memory object.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,11 +74,8 @@ This function has no parameters.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-</dl>
+
  
 
  

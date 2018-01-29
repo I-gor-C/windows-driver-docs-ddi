@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 01EAF66D-F4E8-4D0F-A52C-900EF338FCA1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _DMA_TRANSFER_INFO_V1, DMA_TRANSFER_INFO_V1, *PDMA_TRANSFER_INFO_V1
+ms.keywords : wdm/ DMA_ TRANSFER _INFO_V1, _DMA_TRANSFER_INFO_V1, DMA_ TRANSFER _INFO_V1 structure [Kernel-Mode Driver Architecture], wdm/PDMA_ TRANSFER _INFO_V1, PDMA_ TRANSFER _INFO_V1, PDMA_ TRANSFER _INFO_V1 structure pointer [Kernel-Mode Driver Architecture], *PDMA_TRANSFER_INFO_V1, DMA_TRANSFER_INFO_V1, DMA_TRANSFER_INFO_V1 structure [Kernel-Mode Driver Architecture], kernel.dma_transfer_info_v1, DMA_ TRANSFER _INFO_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DMA_ TRANSFER _INFO_V1
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMA_TRANSFER_INFO_V1, *PDMA_TRANSFER_INFO_V1
 req.product : Windows 10 or later.
 ---
@@ -49,21 +53,21 @@ typedef struct _DMA_TRANSFER_INFO_V1 {
 
 ## Members
 
-        
-            `MapRegisterCount`
 
-            The number of map registers required to translate all the physical addresses in the scatter/gather list to logical addresses.
-        
-            `ScatterGatherElementCount`
+`MapRegisterCount`
 
-            The number of scatter/gather elements in the scatter/gather list. Each element is a structure of type <b>SCATTER_GATHER_ELEMENT</b>.
-        
-            `ScatterGatherListSize`
+The number of map registers required to translate all the physical addresses in the scatter/gather list to logical addresses.
 
-            The required size, in bytes, of the scatter/gather buffer. This buffer contains the scatter/gather list that describes the memory that is used to buffer I/O data during the DMA transfer. The scatter/gather buffer must be large enough to contain a <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure and an array of <b>SCATTER_GATHER_ELEMENT</b> structures, plus additional data that is used internally by the operating system.
+`ScatterGatherElementCount`
 
-    ## Remarks
-        The <b>V1</b> member of the <a href="..\wdm\ns-wdm-_dma_transfer_info.md">DMA_TRANSFER_INFO</a> structure is a structure of type <b>DMA_TRANSFER_INFO_V1</b>.
+The number of scatter/gather elements in the scatter/gather list. Each element is a structure of type <b>SCATTER_GATHER_ELEMENT</b>.
+
+`ScatterGatherListSize`
+
+The required size, in bytes, of the scatter/gather buffer. This buffer contains the scatter/gather list that describes the memory that is used to buffer I/O data during the DMA transfer. The scatter/gather buffer must be large enough to contain a <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure and an array of <b>SCATTER_GATHER_ELEMENT</b> structures, plus additional data that is used internally by the operating system.
+
+## Remarks
+The <b>V1</b> member of the <a href="..\wdm\ns-wdm-_dma_transfer_info.md">DMA_TRANSFER_INFO</a> structure is a structure of type <b>DMA_TRANSFER_INFO_V1</b>.
 
 The <i>Mdl</i>, <i>Offset</i>, and <i>Length</i> parameters to the <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a> routine together describe the I/O data buffer for a DMA transfer. For the purpose of programming a DMA controller, this buffer can more conveniently be described by a scatter/gather list. (A scatter/gather list describes the memory in an I/O data buffer but does not contain this memory.) A driver calls <b>GetDmaTransferInfo</b> to obtain the allocation requirements for this scatter/gather list. <b>GetDmaTransferInfo</b> writes the allocation requirements into the <b>V1</b> member of a caller-supplied <b>DMA_TRANSFER_INFO</b> structure.
 
@@ -75,19 +79,14 @@ The <i>Mdl</i>, <i>Offset</i>, and <i>Length</i> parameters to the <a href="..\w
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_dma_transfer_info.md">DMA_TRANSFER_INFO</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>
+
  
 
  

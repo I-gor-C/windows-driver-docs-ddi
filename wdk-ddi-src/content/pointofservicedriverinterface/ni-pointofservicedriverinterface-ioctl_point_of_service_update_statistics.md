@@ -7,8 +7,8 @@ old-location : pos\ioctl_point_of_service_update_statistics.htm
 old-project : pos
 ms.assetid : 94c8d49a-5136-49f3-a313-74c032502f1f
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosPropertyId, PosPropertyId
+ms.date : 1/18/2018
+ms.keywords : pos.ioctl_point_of_service_update_statistics, IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS control code, IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS
-req.alt-loc : pointofservicedriverinterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosPropertyId
 ---
 
@@ -59,15 +63,12 @@ Not used with this operation; set to <b>0</b> (zero).
 <text></text>
 
 ### Status Block
-I/O Status block
 Returns <b>TRUE</b> if successful; otherwise, returns <b>FALSE</b>.
 
 To get extended error information, call <a href="http://go.microsoft.com/fwlink/p/?LinkId=316871">GetLastError</a>. The following list shows common error values:
 
-
-
-Statistic updating or reporting is not supported.
-
+## Remarks
+<h3><a id="Parameters"></a><a id="parameters"></a><a id="PARAMETERS"></a>Parameters</h3>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 154EAF9B-4B30-4124-B31D-6C7D09B52674
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializePoFxPower
+ms.keywords : storage.storportinitializepofxpower, StorPortInitializePoFxPower, StorPortInitializePoFxPower routine [Storage Devices], storport/StorPortInitializePoFxPower
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortInitializePoFxPower
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -72,9 +76,19 @@ A pointer to a <b>BOOLEAN</b> value which the Storport driver will set to indica
 ## Return Value
 
 The <b>StorPortInitializePoFxPower</b> routine returns one of these status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>Either <i>HwDeviceExtension</i> or <i>Device</i> is NULL.
+</dl>
+</td>
+<td width="60%">
+Either <i>HwDeviceExtension</i> or <i>Device</i> is NULL.
 
 -or-
 
@@ -87,19 +101,47 @@ The storage device specified by <i>Address</i> is not found.
 -or-
 
 The <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure pointed to by  <i>Device</i> is formatted incorrectly or contains invalid data.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The storage device was successfully registered with PoFx.
+</dl>
+</td>
+<td width="60%">
+The storage device was successfully registered with PoFx.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Sufficient resources are not available to register the storage device with PoFx.
+</dl>
+</td>
+<td width="60%">
+Sufficient resources are not available to register the storage device with PoFx.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl>The storage device was not successfully registered with PoFx.
+</dl>
+</td>
+<td width="60%">
+The storage device was not successfully registered with PoFx.
 
 -or-
 
 The storage device is already registered with PoFx.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -121,11 +163,8 @@ If the <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b> flag is set in the <b>Flags</
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
-</dt>
-</dl>
+
  
 
  

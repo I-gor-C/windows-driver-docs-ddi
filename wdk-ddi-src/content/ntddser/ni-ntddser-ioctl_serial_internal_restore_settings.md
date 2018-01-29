@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 55c56436-ac59-4095-a9f3-f36092db19c0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SdBusSubmitRequestAsync
+ms.keywords : serports.ioctl_serial_internal_restore_settings, IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS control code [Serial Ports], IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS, ntddser/IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS, serref_bb81345f-080d-4de6-bc36-34a32f934fc7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS
-req.alt-loc : ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS IOCTL
-The IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS request restores the specified operating mode of a serial device. The specified operating mode should be a mode that was returned by an <a href="..\ntddser\ni-ntddser-ioctl_serial_internal_basic_settings.md">IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS</a> request. The operating mode settings should be treated as opaque. Serial does not verify the settings when the settings are restored. Note also that a replacement for Serial might implement a different set of parameters.
-
-
-
 The IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS request restores the specified operating mode of a serial device. The specified operating mode should be a mode that was returned by an <a href="..\ntddser\ni-ntddser-ioctl_serial_internal_basic_settings.md">IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS</a> request. The operating mode settings should be treated as opaque. Serial does not verify the settings when the settings are restored. Note also that a replacement for Serial might implement a different set of parameters.
 
 ### Major Code
@@ -63,10 +63,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the <b>Information</b> member is set to the size, in bytes, of SERIAL_BASIC_SETTINGS structure. Otherwise, the <b>Information</b> member is set to zero.
 
-The <b>Status</b> member is set to one of the <a href="serial_device_control_requests.htm#generic_status_values_for_serial_device_control_requests">Generic Status Values for Serial Device Control Requests</a>. If Status is set to STATUS_BUFFER_TOO_SMALL, the <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IO_STACK_LOCATION structure is less than the size, in bytes, of a SERIAL_BASIC_SETTINGS structure.
+The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/serial-device-control-requests2">Generic Status Values for Serial Device Control Requests</a>. If Status is set to STATUS_BUFFER_TOO_SMALL, the <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IO_STACK_LOCATION structure is less than the size, in bytes, of a SERIAL_BASIC_SETTINGS structure.
 
 
 ## Requirements
@@ -76,13 +75,10 @@ The <b>Status</b> member is set to one of the <a href="serial_device_control_req
 | **Header** | ntddser.h (include Ntddser.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_internal_basic_settings.md">IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS</a>
-</dt>
-</dl>
+
  
 
  

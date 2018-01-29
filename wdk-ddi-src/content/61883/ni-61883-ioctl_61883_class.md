@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : c73472ee-aa27-4256-aa58-9331312ad513
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CMP_PLUG_TYPE, CMP_PLUG_TYPE
+ms.keywords : IEEE.ioctl_61883_class, IOCTL_61883_CLASS control code [Buses], IOCTL_61883_CLASS, 61883/IOCTL_61883_CLASS, 61883_requests_a47ccc46-e231-4e3e-8a71-97e4a79143e4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_61883_CLASS
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CMP_PLUG_TYPE
 ---
 
@@ -59,7 +63,6 @@ An IEC-61883 client driver uses the <a href="https://msdn.microsoft.com/library/
 <text></text>
 
 ### Status Block
-I/O Status block
 The information the IEC-61883 protocol driver returns in the I/O Status Block is documented with each request.
 
 
@@ -70,13 +73,10 @@ The information the IEC-61883 protocol driver returns in the I/O Status Block is
 | **Header** | 61883.h (include 61883.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

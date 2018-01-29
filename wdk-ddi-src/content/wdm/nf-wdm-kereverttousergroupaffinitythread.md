@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 13a1a106-0c5c-4c0e-964d-27e549e1c699
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRevertToUserGroupAffinityThread
+ms.keywords : wdm/KeRevertToUserGroupAffinityThread, k105_be46d681-835f-40ba-8120-b8699e16ea0b.xml, KeRevertToUserGroupAffinityThread, kernel.kereverttousergroupaffinitythread, KeRevertToUserGroupAffinityThread routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRevertToUserGroupAffinityThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section).
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -71,14 +75,20 @@ A thread can change the group to which it is assigned by calling the <a href="..
 After the thread is created, a call to <b>KeRevertToUserGroupAffinityThread</b> has no effect (that is, the group number and affinity mask of the thread remain unchanged) unless the thread first calls <b>KeSetSystemGroupAffinityThread</b>. Following a call to <b>KeRevertToUserGroupAffinityThread</b>, a second call to <b>KeRevertToUserGroupAffinityThread</b> has no effect unless the thread first calls <b>KeSetSystemGroupAffinityThread</b>.
 
 The routine changes the group number and affinity mask to the values that are specified in *<i>PreviousAffinity</i> only if the following are true:
-
+<ul>
+<li>
 The group number is valid.
 
+</li>
+<li>
 The affinity mask is valid (that is, only mask bits that correspond to logical processors in the group are set).
 
+</li>
+<li>
 At least one of the processors that is specified in the affinity mask is active.
 
-If any of these conditions is not met, the call to <b>KeRevertToUserGroupAffinityThread</b> has no effect.
+</li>
+</ul>If any of these conditions is not met, the call to <b>KeRevertToUserGroupAffinityThread</b> has no effect.
 
 A related routine, <a href="..\wdm\nf-wdm-kereverttouseraffinitythreadex.md">KeRevertToUserAffinityThreadEx</a>, changes the affinity mask of the calling thread, but this routine, unlike <b>KeRevertToUserGroupAffinityThread</b>, does not accept a group number as an input parameter. In Windows 7 and later versions of the Windows operating system, <b>KeRevertToUserAffinityThreadEx</b> assumes that the affinity mask refers to processors in group 0, which is compatible with the behavior of this routine in earlier versions of Windows that do not support groups. This behavior ensures that existing drivers that call <b>KeRevertToUserAffinityThreadEx</b> and that use no group-oriented features will run correctly in multiprocessor systems that have two or more groups. However, drivers that use any group-oriented features in Windows 7 and later versions of the Windows operating system should call <b>KeRevertToUserGroupAffinityThread</b> instead of <b>KeRevertToUserAffinityThreadEx</b>.
 
@@ -98,17 +108,12 @@ If <b>KeRevertToUserGroupAffinityThread</b> is called at IRQL &lt;= APC_LEVEL an
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kereverttouseraffinitythreadex.md">KeRevertToUserAffinityThreadEx</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-kesetsystemgroupaffinitythread.md">KeSetSystemGroupAffinityThread</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kereverttouseraffinitythreadex.md">KeRevertToUserAffinityThreadEx</a>
+
  
 
  

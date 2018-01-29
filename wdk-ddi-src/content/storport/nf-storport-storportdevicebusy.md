@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9b774f05-f2f6-4148-8fee-0efe209f7e4d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortDeviceBusy
+ms.keywords : storport/StorPortDeviceBusy, StorPortDeviceBusy routine [Storage Devices], storage.storportdevicebusy, StorPortDeviceBusy, storprt_c1496cbe-e4b0-4b2b-8947-587b2467c57f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortDeviceBusy
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -98,14 +102,10 @@ The port driver will not issue any new requests to the logical unit until the lo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nf-storport-storportbusy.md">StorPortBusy</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportready.md">StorPortReady</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportbusy.md">StorPortBusy</a>
+
  
 
  

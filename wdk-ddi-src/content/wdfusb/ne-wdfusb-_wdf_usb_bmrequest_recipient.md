@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0749d03d-8174-4f6e-816e-4689594c0c84
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_USB_BMREQUEST_RECIPIENT, WDF_USB_BMREQUEST_RECIPIENT
+ms.keywords : wdfusb/WDF_USB_BMREQUEST_RECIPIENT, wdfusb/BmRequestToDevice, _WDF_USB_BMREQUEST_RECIPIENT, BmRequestToOther, wdfusb/BmRequestToEndpoint, wdf.wdf_usb_bmrequest_recipient, BmRequestToInterface, wdfusb/BmRequestToInterface, WDF_USB_BMREQUEST_RECIPIENT enumeration, WDF_USB_BMREQUEST_RECIPIENT, BmRequestToDevice, BmRequestToEndpoint, kmdf.wdf_usb_bmrequest_recipient, wdfusb/BmRequestToOther, DFUsbRef_646fa8bb-2b05-4247-b3e8-01daad8b204e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_USB_BMREQUEST_RECIPIENT
-req.alt-loc : wdfusb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL  (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_USB_BMREQUEST_RECIPIENT
 req.product : Windows 10 or later.
 ---
@@ -91,11 +95,8 @@ For more information about the data transfer recipient for a USB control transfe
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
-</dt>
-</dl>
+
  
 
  

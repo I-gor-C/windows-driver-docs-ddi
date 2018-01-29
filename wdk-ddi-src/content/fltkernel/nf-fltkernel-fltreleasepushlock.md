@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 34d1b945-329c-47ff-913d-5576eef665b8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltReleasePushLock
+ms.keywords : fltkernel/FltReleasePushLock, FltReleasePushLock, FltReleasePushLock routine [Installable File System Drivers], ifsk.fltreleasepushlock, FltApiRef_p_to_z_31e736a4-7790-443f-a6bf-e43d3823ad27.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows XP SP
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltReleasePushLock
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -50,7 +54,7 @@ VOID FltReleasePushLock(
 
 `Lock`
 
-
+TBD
 
 
 ## Return Value
@@ -61,7 +65,7 @@ None
 
 <b>FltReleasePushLock</b> releases a push lock that was previously acquired by calling <a href="..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md">FltAcquirePushLockExclusive</a> or <a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>. 
 
-Because <b>FltReleasePushLock</b> reenables normal kernel APC delivery, it is not necessary to call <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a> after calling <b>FltReleasePushLock</b>. 
+Because <b>FltReleasePushLock</b> reenables normal kernel APC delivery, it is not necessary to call <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a> after calling <b>FltReleasePushLock</b>. 
 
 For more information about push locks, see the reference entry for <a href="..\fltkernel\nf-fltkernel-fltinitializepushlock.md">FltInitializePushLock</a>. 
 
@@ -87,26 +91,18 @@ To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md">FltAcquirePushLockExclusive</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock.md">FltDeletePushLock</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltinitializepushlock.md">FltInitializePushLock</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md">FltAcquirePushLockExclusive</a>
+
  
 
  

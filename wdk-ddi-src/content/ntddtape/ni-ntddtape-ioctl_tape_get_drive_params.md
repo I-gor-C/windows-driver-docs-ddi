@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 05e45364-3544-477e-a06d-3aae93518b00
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _TAPE_DRIVE_PROBLEM_TYPE, TAPE_DRIVE_PROBLEM_TYPE
+ms.keywords : storage.ioctl_tape_get_drive_params, IOCTL_TAPE_GET_DRIVE_PARAMS control code [Storage Devices], IOCTL_TAPE_GET_DRIVE_PARAMS, ntddtape/IOCTL_TAPE_GET_DRIVE_PARAMS, k307_c6390200-5ccf-4a13-9b96-9f5aa5adee32.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_TAPE_GET_DRIVE_PARAMS
-req.alt-loc : Ntddtape.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TAPE_DRIVE_PROBLEM_TYPE
 ---
 
@@ -59,7 +63,6 @@ The driver returns the <a href="..\ntddtape\ns-ntddtape-_tape_get_drive_paramete
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_INFO_LENGTH_MISMATCH, STATUS_IO_DEVICE_ERROR, STATUS_DEVICE_DATA_ERROR, STATUS_NO_SUCH_DEVICE, STATUS_IO_TIMEOUT, or STATUS_DEVICE_NOT_READY.
 
 
@@ -70,19 +73,14 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 | **Header** | ntddtape.h (include Ntddtape.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddtape\ns-ntddtape-_tape_get_drive_parameters.md">TAPE_GET_DRIVE_PARAMETERS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567936">TapeMiniGetDriveParameters</a>
-</dt>
-<dt>
+
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567936">TapeMiniGetDriveParameters</a>
+
  
 
  

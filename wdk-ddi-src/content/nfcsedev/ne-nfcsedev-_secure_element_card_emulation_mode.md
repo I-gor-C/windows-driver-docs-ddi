@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : E8A53836-95D1-4CE4-AF55-5AD732211A55
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_CARD_EMULATION_MODE, SECURE_ELEMENT_CARD_EMULATION_MODE, *PSECURE_ELEMENT_CARD_EMULATION_MODE
+ms.keywords : EmulationOnPowerDependent, SECURE_ELEMENT_CARD_EMULATION_MODE enumeration [Near-Field Proximity Drivers], nfcsedev/SECURE_ELEMENT_CARD_EMULATION_MODE, EmulationOff, _SECURE_ELEMENT_CARD_EMULATION_MODE, nfpdrivers.secure_element_set_card_emulation_mode, SECURE_ELEMENT_CARD_EMULATION_MODE, nfcsedev/EmulationOff, *PSECURE_ELEMENT_CARD_EMULATION_MODE, EmulationOnPowerIndependent, nfcsedev/EmulationOnPowerDependent, nfcsedev/EmulationOnPowerIndependent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SECURE_ELEMENT_CARD_EMULATION_MODE
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SECURE_ELEMENT_CARD_EMULATION_MODE, *PSECURE_ELEMENT_CARD_EMULATION_MODE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSECURE_ELEMENT_CARD_EMULATION_MODE, SECURE_ELEMENT_CARD_EMULATION_MODE"
 ---
 
 # _SECURE_ELEMENT_CARD_EMULATION_MODE Enumeration

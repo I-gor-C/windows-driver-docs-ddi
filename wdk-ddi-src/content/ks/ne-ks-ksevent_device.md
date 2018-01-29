@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 92594bdd-a458-4262-ac4c-013cffb7a725
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENT_DEVICE, KSEVENT_DEVICE
+ms.keywords : KSEVENT_DEVICE, KSEVENT_DEVICE_PREEMPTED, ks/KSEVENT_DEVICE, KSEVENT_DEVICE_LOST, KSEVENT_DEVICE enumeration [Streaming Media Devices], stream.ksevent_device, ks/KSEVENT_DEVICE_PREEMPTED, ks/KSEVENT_DEVICE_LOST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSEVENT_DEVICE
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSEVENT_DEVICE
 ---
 
@@ -58,6 +62,16 @@ typedef enum  {
 <td>KSEVENT_DEVICE_PREEMPTED</td>
 <td>A camera device has been preempted by a new Windows app. See <a href="https://msdn.microsoft.com/library/windows/hardware/jj156040">KSEVENT_DEVICE_PREEMPTED</a>.</td>
 </tr>
+
+<tr>
+<td>KSEVENT_DEVICE_THERMAL_HIGH</td>
+<td></td>
+</tr>
+
+<tr>
+<td>KSEVENT_DEVICE_THERMAL_LOW</td>
+<td></td>
+</tr>
 </table>
 
 
@@ -71,14 +85,10 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj156039">KSEVENT_DEVICE_LOST</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj156040">KSEVENT_DEVICE_PREEMPTED</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj156039">KSEVENT_DEVICE_LOST</a>
+
  
 
  

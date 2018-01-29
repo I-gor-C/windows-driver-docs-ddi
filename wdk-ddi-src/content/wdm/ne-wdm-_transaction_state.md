@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b97bedc5-6393-49bd-b803-e70e3a3d49df
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _TRANSACTION_STATE, TRANSACTION_STATE
+ms.keywords : wdm/TRANSACTION_STATE, wdm/TransactionStateIndoubt, TransactionStateNormal, ktm_ref_051131c5-e3a5-430e-afca-053fcb68f746.xml, _TRANSACTION_STATE, wdm/TransactionStateNormal, TRANSACTION_STATE enumeration [Kernel-Mode Driver Architecture], wdm/TransactionStateCommittedNotify, TransactionStateIndoubt, TransactionStateCommittedNotify, TRANSACTION_STATE, kernel.transaction_state
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSACTION_STATE
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TRANSACTION_STATE
 req.product : Windows 10 or later.
 ---
@@ -81,11 +85,8 @@ The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

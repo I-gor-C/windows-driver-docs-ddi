@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e79ed9a1-b271-4c0a-a82f-9fecab930569
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoSetSystemWake
+ms.keywords : kernel.posetsystemwake, PoSetSystemWake routine [Kernel-Mode Driver Architecture], portn_09bfa419-5a6c-4305-87ee-58a0e032d0c4.xml, PoSetSystemWake, wdm/PoSetSystemWake
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoSetSystemWake
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,11 +86,8 @@ The power manager logs an Event Tracing for Windows (ETW) event (viewable in the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-pogetsystemwake.md">PoGetSystemWake</a>
-</dt>
-</dl>
+
  
 
  

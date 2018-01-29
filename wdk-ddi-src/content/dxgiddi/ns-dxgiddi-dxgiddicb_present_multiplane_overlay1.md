@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AA716307-C235-47B2-BEB6-586FD6013280
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1, DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1
+ms.keywords : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1, display.dxgiddicb_present_multiplane_overlay1, DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1 structure [Display Devices], dxgiddi/DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1
-req.alt-loc : dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1 {
 
 ## Members
 
-        
-            `pDXGIContext`
 
-            A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle from the pDXGIContext member DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY1 structure that the driver received in a call to its pfnPresentMultiplaneOverlay function to this member.
-        
-            `ppPresentPlanes`
+`pDXGIContext`
 
-            An array of pointers to a structure of type DXGIDDI_MULTIPLANE_OVERLAY_PLANE_INFO that specify information about the multiplane overlay planes.
-        
-            `PresentPlaneCount`
+A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle from the pDXGIContext member DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY1 structure that the driver received in a call to its pfnPresentMultiplaneOverlay function to this member.
 
-            The number of planes in the array that the ppPresentPlanes member specifies.
+`ppPresentPlanes`
+
+An array of pointers to a structure of type DXGIDDI_MULTIPLANE_OVERLAY_PLANE_INFO that specify information about the multiplane overlay planes.
+
+`PresentPlaneCount`
+
+The number of planes in the array that the ppPresentPlanes member specifies.
 
 
 ## Requirements

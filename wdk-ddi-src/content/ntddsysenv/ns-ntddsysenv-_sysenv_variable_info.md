@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D9C7BB96-1E26-4D89-9CBE-074232FD0752
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _SYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO, *PSYSENV_VARIABLE_INFO
+ms.keywords : "*PSYSENV_VARIABLE_INFO, kernel.sysenv_variable_info, ntddsysenv/PSYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO structure [Kernel-Mode Driver Architecture], _SYSENV_VARIABLE_INFO, PSYSENV_VARIABLE_INFO, PSYSENV_VARIABLE_INFO structure pointer [Kernel-Mode Driver Architecture], ntddsysenv/SYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYSENV_VARIABLE_INFO
-req.alt-loc : Ntddsysenv.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SYSENV_VARIABLE_INFO, *PSYSENV_VARIABLE_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO"
 ---
 
 # _SYSENV_VARIABLE_INFO structure
@@ -49,18 +53,18 @@ typedef struct _SYSENV_VARIABLE_INFO {
 
 ## Members
 
-        
-            `MaximumVariableSize`
 
-            The maximum size of the variable.
-        
-            `MaximumVariableStorageSize`
+`MaximumVariableSize`
 
-            The size of the variable.
-        
-            `RemainingVariableStorageSize`
+The maximum size of the variable.
 
-            The remaining size of the variable.
+`MaximumVariableStorageSize`
+
+The size of the variable.
+
+`RemainingVariableStorageSize`
+
+The remaining size of the variable.
 
 
 ## Requirements
@@ -71,13 +75,10 @@ typedef struct _SYSENV_VARIABLE_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntddsysenv.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddsysenv\ni-ntddsysenv-ioctl_sysenv_query_variable_info.md">IOCTL_SYSENV_QUERY_VARIABLE_INFO</a>
-</dt>
-</dl>
+
  
 
  

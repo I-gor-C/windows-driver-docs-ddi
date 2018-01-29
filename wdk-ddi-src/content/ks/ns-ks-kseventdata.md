@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 83503353-e4f7-47ba-9a0c-71264798e983
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENTDATA, KSEVENTDATA, *PKSEVENTDATA
+ms.keywords : PKSEVENTDATA, *PKSEVENTDATA, stream.kseventdata, KSEVENTDATA structure [Streaming Media Devices], KSEVENTDATA, ks/PKSEVENTDATA, ks/KSEVENTDATA, ks-struct_e9669775-4fb9-465a-bd2b-fd02f718d7a3.xml, PKSEVENTDATA structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSEVENTDATA
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSEVENTDATA, *PKSEVENTDATA
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSEVENTDATA, KSEVENTDATA"
 ---
 
 # KSEVENTDATA structure
@@ -61,11 +65,10 @@ typedef struct {
 
 ## Members
 
-        
-            `NotificationType`
 
-            Contains flags indicating what type of notification should be performed. The following table lists all the possible values for the NotificationType member.
+`NotificationType`
 
+Contains flags indicating what type of notification should be performed. The following table lists all the possible values for the NotificationType member.
 <table>
 <tr>
 <th>NotificationType Flag</th>
@@ -143,8 +146,8 @@ Indicates that a pointer to a kernel streaming work item structure is being pass
 </tr>
 </table>
 
-    ## Remarks
-        For more information, see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>.
+## Remarks
+For more information, see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -154,28 +157,20 @@ Indicates that a pointer to a kernel streaming work item structure is being pass
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_work_queue_item.md">WORK_QUEUE_ITEM</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
+
 <a href="..\ks\nf-ks-ksincrementcountedworker.md">KsIncrementCountedWorker</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7F91DDA1-AF01-4DA9-AB3B-AA5CA87C5FD6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlULongLongToLongLong
+ms.keywords : RtlULongLongToLongLong function [Kernel-Mode Driver Architecture], RtlULongLongToLongLong, kernel.rtlulonglongtolonglong, ntintsafe/RtlULongLongToLongLong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlULongLongToLongLong
-req.alt-loc : Ntintsafe.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
@@ -66,7 +70,43 @@ None
 
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
-This function uses the following alternate name:</p>
+This function uses the following alternate name:
+<ul>
+<li>RtlUIntPtrToLongLong
+</li>
+<li>RtlULongPtrToLongLong
+</li>
+<li>RtlULongLongToIntPtr
+</li>
+<li>RtlULongLongToInt64
+</li>
+<li>RtlULongLongToLong64
+</li>
+<li>RtlDWordLongToLongLong
+</li>
+<li>RtlDWordLongToLong64
+</li>
+<li>RtlDWordLongToInt64
+</li>
+<li>RtlULong64ToLongLong
+</li>
+<li>RtlULong64ToLong64
+</li>
+<li>RtlULong64ToInt64
+</li>
+<li>RtlDWord64ToLongLong
+</li>
+<li>RtlDWord64ToLong64
+</li>
+<li>RtlDWord64ToInt64
+</li>
+<li>RtlUInt64ToLongLong
+</li>
+<li>RtlUInt64ToLong64
+</li>
+<li>RtlUInt64ToInt64
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

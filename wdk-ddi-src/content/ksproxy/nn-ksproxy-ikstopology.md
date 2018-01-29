@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 418a415c-b4db-41a1-825e-66704c45e134
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSynchronousDeviceControl
+ms.keywords : stream.ikstopology, IKsTopology interface [Streaming Media Devices], IKsTopology interface [Streaming Media Devices], described, IKsTopology, ksproxy/IKsTopology, ksproxy_521e5b73-c9cc-4cb2-acf5-746e470678cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsTopology
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -50,7 +54,7 @@ The <b>IKsTopology</b> interface provides a method that opens topology node obje
 
 The IID for this interface is IID_IKsTopology.
 
-The <b>IKsTopology</b> interface is supported by filters. </p>
+The <b>IKsTopology</b> interface is supported by filters.
 
 ## Requirements
 | &nbsp; | &nbsp; |

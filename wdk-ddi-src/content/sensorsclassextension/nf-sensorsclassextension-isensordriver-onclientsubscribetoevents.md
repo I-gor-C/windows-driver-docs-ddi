@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : b0528932-d7a8-46d7-bd94-6fd729a9d7f2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, ISensorDriver::OnClientSubscribeToEvents, OnClientSubscribeToEvents
+ms.keywords : ISensorDriver::OnClientSubscribeToEvents, OnClientSubscribeToEvents method [Sensor Devices], ISensorDriver, OnClientSubscribeToEvents, sensors.isensordriver_onclientsubscribetoevents
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OnClientSubscribeToEvents
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -71,7 +75,7 @@ You can maintain a reference count of connected applications for each sensor to 
 
 Platform-defined events are defined in sensors.h.
 
-For more information about how to use this method, see <a href="https://msdn.microsoft.com/1895EC5C-08C1-4976-83F2-CD5A2B55338D">Filtering data</a>.</p>
+For more information about how to use this method, see <a href="https://msdn.microsoft.com/1895EC5C-08C1-4976-83F2-CD5A2B55338D">Filtering data</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

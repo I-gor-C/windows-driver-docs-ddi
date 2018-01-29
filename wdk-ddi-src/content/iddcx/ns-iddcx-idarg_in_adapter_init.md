@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2db324c8-69b1-4497-b6a7-76047baeca19
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_ADAPTER_INIT,
+ms.keywords : iddcx/IDARG_IN_ADAPTER_INIT, IDARG_IN_ADAPTER_INIT, display.idarg_in_adapter_init, IDARG_IN_ADAPTER_INIT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_ADAPTER_INIT
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -48,18 +52,18 @@ typedef struct IDARG_IN_ADAPTER_INIT {
 
 ## Members
 
-        
-            `ObjectAttributes`
 
-            [in][optional] Object attributes that are used to initialize the WDF adapter object.
-        
-            `pCaps`
+`ObjectAttributes`
 
-            [in] A reference  to the capabilities of the adapter.
-        
-            `WdfDevice`
+[in][optional] Object attributes that are used to initialize the WDF adapter object.
 
-            The WDF device that will be hosting this WDDM adapter object.
+`pCaps`
+
+[in] A reference  to the capabilities of the adapter.
+
+`WdfDevice`
+
+The WDF device that will be hosting this WDDM adapter object.
 
 
 ## Requirements

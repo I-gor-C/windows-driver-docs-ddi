@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 58031257-5363-4e4f-b95f-aa3cd603c113
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_RECOMMENDFUNCTIONALVIDPN, DXGKARG_RECOMMENDFUNCTIONALVIDPN
+ms.keywords : _DXGKARG_RECOMMENDFUNCTIONALVIDPN, DXGKARG_RECOMMENDFUNCTIONALVIDPN, DmStructs_15342273-6bfe-4cee-8f8e-1d89c7683e4b.xml, DXGKARG_RECOMMENDFUNCTIONALVIDPN structure [Display Devices], d3dkmddi/DXGKARG_RECOMMENDFUNCTIONALVIDPN, display.dxgkarg_recommendfunctionalvidpn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_RECOMMENDFUNCTIONALVIDPN
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_RECOMMENDFUNCTIONALVIDPN
 ---
 
@@ -51,30 +55,30 @@ typedef struct _DXGKARG_RECOMMENDFUNCTIONALVIDPN {
 
 ## Members
 
-        
-            `hRecommendedFunctionalVidPn`
 
-            A handle, provided by the caller, to an empty VidPN object. <i>DxgkDdiRecommendFunctionalVidPn</i> must add a path (source-target pair) to the VidPN's topology and must pin modes on the path's source and target. For information about adding paths to a topology and creating mode sets for video present sources and targets, see <a href="https://msdn.microsoft.com/5dedac8c-9a99-4b3a-81be-39819135cd97">VidPN Objects and Interfaces</a>.
-        
-            `NumberOfVidPnTargets`
+`hRecommendedFunctionalVidPn`
 
-            Reserved for future use.
-        
-            `pPrivateDriverData`
+A handle, provided by the caller, to an empty VidPN object. <i>DxgkDdiRecommendFunctionalVidPn</i> must add a path (source-target pair) to the VidPN's topology and must pin modes on the path's source and target. For information about adding paths to a topology and creating mode sets for video present sources and targets, see <a href="https://msdn.microsoft.com/5dedac8c-9a99-4b3a-81be-39819135cd97">VidPN Objects and Interfaces</a>.
 
-            A pointer to a buffer that contains private data that is passed from a user-mode application to the display miniport driver.
-        
-            `PrivateDriverDataSize`
+`NumberOfVidPnTargets`
 
-            The size, in bytes, of the data block pointed to by <i>pPrivateDriverData</i>.
-        
-            `pVidPnTargetPrioritizationVector`
+Reserved for future use.
 
-            Reserved for future use.
-        
-            `RequestReason`
+`pPrivateDriverData`
 
-            A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendfunctionalvidpn_reason.md">DXGK_RECOMMENDFUNCTIONALVIDPN_REASON</a> value that indicates why the caller is requesting a functional VidPN.
+A pointer to a buffer that contains private data that is passed from a user-mode application to the display miniport driver.
+
+`PrivateDriverDataSize`
+
+The size, in bytes, of the data block pointed to by <i>pPrivateDriverData</i>.
+
+`pVidPnTargetPrioritizationVector`
+
+Reserved for future use.
+
+`RequestReason`
+
+A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendfunctionalvidpn_reason.md">DXGK_RECOMMENDFUNCTIONALVIDPN_REASON</a> value that indicates why the caller is requesting a functional VidPN.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct _DXGKARG_RECOMMENDFUNCTIONALVIDPN {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn.md">DxgkDdiRecommendFunctionalVidPn</a>
-</dt>
-</dl>
+
  
 
  

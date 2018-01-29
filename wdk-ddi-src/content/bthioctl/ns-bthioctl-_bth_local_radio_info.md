@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 288863ca-1a11-456f-8d6b-b429668c2bf2
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_LOCAL_RADIO_INFO, BTH_LOCAL_RADIO_INFO, *PBTH_LOCAL_RADIO_INFO
+ms.keywords : PBTH_LOCAL_RADIO_INFO, *PBTH_LOCAL_RADIO_INFO, bltooth.bth_local_radio_info, bthioctl/BTH_LOCAL_RADIO_INFO, bth_structs_8d140abe-9333-4e54-b55b-4ebbd3e1fca3.xml, BTH_LOCAL_RADIO_INFO, _BTH_LOCAL_RADIO_INFO, BTH_LOCAL_RADIO_INFO structure [Bluetooth Devices], PBTH_LOCAL_RADIO_INFO structure pointer [Bluetooth Devices], bthioctl/PBTH_LOCAL_RADIO_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_LOCAL_RADIO_INFO
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BTH_LOCAL_RADIO_INFO, *PBTH_LOCAL_RADIO_INFO
 ---
 
@@ -51,52 +55,43 @@ typedef struct _BTH_LOCAL_RADIO_INFO {
 
 ## Members
 
-        
-            `flags`
 
-            A flag that indicates the state of the local radio. Both flags can be set at the same time.
+`flags`
+
+A flag that indicates the state of the local radio. Both flags can be set at the same time.
      Possible values include:
      
 
-<dl>
-<dd>
 LOCAL_RADIO_DISCOVERABLE
 
-</dd>
-<dd>
 
 
 
 
-</dd>
-<dd>
 LOCAL_RADIO_CONNECTABLE
 
-</dd>
-</dl>
-        
-            `hciRevision`
+`hciRevision`
 
-            The minor version of the host controller interface (HCI).
-        
-            `hciVersion`
+The minor version of the host controller interface (HCI).
 
-            The major version of the HCI.
-        
-            `localInfo`
+`hciVersion`
 
-            A 
+The major version of the HCI.
+
+`localInfo`
+
+A 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a> structure that contains
      information about the local radio.
-        
-            `radioInfo`
 
-            A 
+`radioInfo`
+
+A 
      <a href="..\bthioctl\ns-bthioctl-_bth_radio_info.md">BTH_RADIO_INFO</a> structure that contains
      information about the local radio device.
 
-    ## Remarks
-        The 
+## Remarks
+The 
     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_local_info.md">IOCTL_BTH_GET_LOCAL_INFO</a> call's
     output buffer contains the information about the local Bluetooth system and radio.
 
@@ -108,17 +103,14 @@ LOCAL_RADIO_CONNECTABLE
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a></dt>
-<dt>
-<a href="..\bthioctl\ns-bthioctl-_bth_radio_info.md">BTH_RADIO_INFO</a>
-</dt>
-<dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_local_info.md">IOCTL_BTH_GET_LOCAL_INFO</a>
-</dt>
-</dl>
+
+<a href="..\bthioctl\ns-bthioctl-_bth_radio_info.md">BTH_RADIO_INFO</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a>
+
  
 
  

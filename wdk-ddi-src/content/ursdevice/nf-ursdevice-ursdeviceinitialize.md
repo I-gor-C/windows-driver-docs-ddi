@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 8A9C76C0-70F5-4F65-A460-CCFCD236A242
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsDeviceInitialize
+ms.keywords : ursdevice/UrsDeviceInitialize, UrsDeviceInitialize, buses.ursdeviceinitialize, UrsDeviceInitialize function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UrsDeviceInitialize
-req.alt-loc : Urscxstub.lib,Urscxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Urscxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_USAGE
 req.product : Windows 10 or later.
 ---
@@ -87,14 +91,10 @@ The method creates resource lists for host and function roles and the queues req
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a>
-</dt>
-<dt>
 <a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
-</dt>
-</dl>
+
+<a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a>
+
  
 
  

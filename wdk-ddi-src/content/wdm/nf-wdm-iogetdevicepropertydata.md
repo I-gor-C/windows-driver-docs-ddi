@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3ca026b8-abed-409c-8be4-01553cfadca3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetDevicePropertyData
+ms.keywords : IoGetDevicePropertyData routine [Kernel-Mode Driver Architecture], kernel.iogetdevicepropertydata, IoGetDevicePropertyData, k104_85cb50ca-43cc-401a-8ed1-32ff0c381ed8.xml, wdm/IoGetDevicePropertyData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDevicePropertyData
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -92,15 +96,45 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff54
 ## Return Value
 
 <b>IoGetDevicePropertyData</b> returns an NTSTATUS value. This routine might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation succeeded. The <i>Data</i> buffer contains the retrieved data. *<i>Type</i> contains the type of the retrieved data.
+</dl>
+</td>
+<td width="60%">
+The operation succeeded. The <i>Data</i> buffer contains the retrieved data. *<i>Type</i> contains the type of the retrieved data.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The <i>Data</i> buffer is too small. *<i>RequiredSize</i> contains the required buffer length.
+</dl>
+</td>
+<td width="60%">
+The <i>Data</i> buffer is too small. *<i>RequiredSize</i> contains the required buffer length.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_NOT_FOUND</b></dt>
-</dl>The specified device property was not found.
+</dl>
+</td>
+<td width="60%">
+The specified device property was not found.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -124,17 +158,12 @@ Callers of <b>IoGetDevicePropertyData</b> must be running at IRQL &lt;= APC_LEVE
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
+
 <a href="..\wdm\nf-wdm-iosetdevicepropertydata.md">IoSetDevicePropertyData</a>
-</dt>
-</dl>
+
  
 
  

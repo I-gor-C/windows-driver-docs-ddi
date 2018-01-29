@@ -7,8 +7,8 @@ old-location : netvista\ndisfreturnnetbufferlists.htm
 old-project : netvista
 ms.assetid : 083cf25d-7436-4c4e-b29a-c9a2702b136d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisFReturnNetBufferLists
+ms.date : 1/18/2018
+ms.keywords : NdisFReturnNetBufferLists, ndis/NdisFReturnNetBufferLists, filter_ndis_functions_ref_3473c0c3-077c-4df7-b9d4-8392cf1ed918.xml, netvista.ndisfreturnnetbufferlists, NdisFReturnNetBufferLists function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisFReturnNetBufferLists
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_Filter_Driver_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -64,8 +68,8 @@ The NDIS handle that identifies this filter module. NDIS passed the handle to th
 
 A pointer to a linked list of NET_BUFFER_LIST structures that are to be returned to the underlying
      driver. The linked list can contain NET_BUFFER_LIST structures from multiple previous calls to the 
-     <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">
-     FilterReceiveNetBufferLists</a> function.
+     <mshelp:link keywords="netvista.filterreceivenetbufferlists" tabindex="0"><i>
+     FilterReceiveNetBufferLists</i></mshelp:link> function.
 
 `ReturnFlags`
 
@@ -81,8 +85,8 @@ None
 
 If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the 
     <i>ReceiveFlags</i> parameter that NDIS passed to the 
-    <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">
-    FilterReceiveNetBufferLists</a> function was not set, the filter driver must call the 
+    <mshelp:link keywords="netvista.filterreceivenetbufferlists" tabindex="0"><i>
+    FilterReceiveNetBufferLists</i></mshelp:link> function was not set, the filter driver must call the 
     <b>NdisFReturnNetBufferLists</b> function to return the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures and associated
     data. After the filter driver calls 
@@ -102,22 +106,16 @@ If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-</dt>
-<dt>
 <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">FilterReceiveNetBufferLists</a>
-</dt>
-<dt>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFReturnNetBufferLists function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFReturnNetBufferLists function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

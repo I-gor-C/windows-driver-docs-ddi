@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 05dae212-62b8-4cd3-9fd1-495ae56dfada
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_parclass_disconnect, IOCTL_INTERNAL_PARCLASS_DISCONNECT control code [Parallel Ports], IOCTL_INTERNAL_PARCLASS_DISCONNECT, parallel/IOCTL_INTERNAL_PARCLASS_DISCONNECT, cisspd_6459be75-4a0e-4a38-9bc4-b862766951fb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_PARCLASS_DISCONNECT
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,7 +65,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel devices.
@@ -74,13 +77,10 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_parclass_connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a>
-</dt>
-</dl>
+
  
 
  

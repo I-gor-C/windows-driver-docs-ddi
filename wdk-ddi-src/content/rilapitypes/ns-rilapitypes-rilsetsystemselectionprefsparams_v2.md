@@ -7,8 +7,8 @@ old-location : netvista\rilsetsystemselectionprefsparams_v2_2.htm
 old-project : netvista
 ms.assetid : d6284633-1f56-412c-a97a-b6c740129cce
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS, *LPRILSETSYSTEMSELECTIONPREFSPARAMS
+ms.date : 1/18/2018
+ms.keywords : "*LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2, netvista.rilsetsystemselectionprefsparams_v2_2, RILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS_V2 structure [Network Drivers Starting with Windows Vista], RILSETSYSTEMSELECTIONPREFSPARAMS, *LPRILSETSYSTEMSELECTIONPREFSPARAMS, rilapitypes/RILSETSYSTEMSELECTIONPREFSPARAMS_V2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSETSYSTEMSELECTIONPREFSPARAMS_V2
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2, RILSETSYSTEMSELECTIONPREFSPARAMS, *LPRILSETSYSTEMSELECTIONPREFSPARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILSETSYSTEMSELECTIONPREFSPARAMS, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V2, *LPRILSETSYSTEMSELECTIONPREFSPARAMS, RILSETSYSTEMSELECTIONPREFSPARAMS_V2
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _RILSETSYSTEMSELECTIONPREFSPARAMS_V2 {
 
 ## Members
 
-        
-            `dwFlags`
 
-            
-        
-            `rilSystemSelectionPrefs`
+`dwFlags`
 
-            
+
+
+`rilSystemSelectionPrefs`
+
+
 
 
 ## Requirements

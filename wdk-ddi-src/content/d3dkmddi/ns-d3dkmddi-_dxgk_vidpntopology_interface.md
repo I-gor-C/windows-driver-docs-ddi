@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 293103cc-217c-4dcb-82c1-971adba564a0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_VIDPNTOPOLOGY_INTERFACE, DXGK_VIDPNTOPOLOGY_INTERFACE
+ms.keywords : _DXGK_VIDPNTOPOLOGY_INTERFACE, DmStructs_6e2f92a1-beaa-4485-bb27-aff719a693b4.xml, display.dxgk_vidpntopology_interface, d3dkmddi/DXGK_VIDPNTOPOLOGY_INTERFACE, DXGK_VIDPNTOPOLOGY_INTERFACE, DXGK_VIDPNTOPOLOGY_INTERFACE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_VIDPNTOPOLOGY_INTERFACE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_VIDPNTOPOLOGY_INTERFACE
 ---
 
@@ -57,57 +61,57 @@ typedef struct _DXGK_VIDPNTOPOLOGY_INTERFACE {
 
 ## Members
 
-        
-            `pfnAcquireFirstPathInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_acquirefirstpathinfo.md">pfnAcquireFirstPathInfo</a> function.
-        
-            `pfnAcquireNextPathInfo`
+`pfnAcquireFirstPathInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_acquirenextpathinfo.md">pfnAcquireNextPathInfo</a> function.
-        
-            `pfnAcquirePathInfo`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_acquirefirstpathinfo.md">pfnAcquireFirstPathInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_acquirepathinfo.md">pfnAcquirePathInfo</a> function.
-        
-            `pfnAddPath`
+`pfnAcquireNextPathInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_addpath.md">pfnAddPath</a> function.
-        
-            `pfnCreateNewPathInfo`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_acquirenextpathinfo.md">pfnAcquireNextPathInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_createnewpathinfo.md">pfnCreateNewPathInfo</a> function.
-        
-            `pfnEnumPathTargetsFromSource`
+`pfnAcquirePathInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_enumpathtargetsfromsource.md">pfnEnumPathTargetsFromSource</a> function.
-        
-            `pfnGetNumPaths`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_acquirepathinfo.md">pfnAcquirePathInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpaths.md">pfnGetNumPaths</a> function.
-        
-            `pfnGetNumPathsFromSource`
+`pfnAddPath`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpathsfromsource.md">pfnGetNumPathsFromSource</a> function.
-        
-            `pfnGetPathSourceFromTarget`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_addpath.md">pfnAddPath</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getpathsourcefromtarget.md">pfnGetPathSourceFromTarget</a> function.
-        
-            `pfnReleasePathInfo`
+`pfnCreateNewPathInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_releasepathinfo.md">pfnReleasePathInfo</a> function.
-        
-            `pfnRemovePath`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_createnewpathinfo.md">pfnCreateNewPathInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_removepath.md">pfnRemovePath</a> function.
-        
-            `pfnUpdatePathSupportInfo`
+`pfnEnumPathTargetsFromSource`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_updatepathsupportinfo.md">pfnUpdatePathSupportInfo</a> function.
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_enumpathtargetsfromsource.md">pfnEnumPathTargetsFromSource</a> function.
 
-    ## Remarks
-        The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a> to obtain a handle to a VidPN topology object and a pointer to a DXGK_VIDPNTOPOLOGY_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN topology object.</p>
+`pfnGetNumPaths`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpaths.md">pfnGetNumPaths</a> function.
+
+`pfnGetNumPathsFromSource`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpathsfromsource.md">pfnGetNumPathsFromSource</a> function.
+
+`pfnGetPathSourceFromTarget`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getpathsourcefromtarget.md">pfnGetPathSourceFromTarget</a> function.
+
+`pfnReleasePathInfo`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_releasepathinfo.md">pfnReleasePathInfo</a> function.
+
+`pfnRemovePath`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_removepath.md">pfnRemovePath</a> function.
+
+`pfnUpdatePathSupportInfo`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_updatepathsupportinfo.md">pfnUpdatePathSupportInfo</a> function.
+
+## Remarks
+The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a> to obtain a handle to a VidPN topology object and a pointer to a DXGK_VIDPNTOPOLOGY_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN topology object.
 
 ## Requirements
 | &nbsp; | &nbsp; |

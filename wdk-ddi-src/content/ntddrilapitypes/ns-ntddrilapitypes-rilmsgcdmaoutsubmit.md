@@ -7,8 +7,8 @@ old-location : netvista\rilmsgcdmaoutsubmit.htm
 old-project : netvista
 ms.assetid : 3ed93cff-7974-4cf9-9b89-f4a8e52c4c3d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT
+ms.date : 1/18/2018
+ms.keywords : netvista.rilmsgcdmaoutsubmit, RILMSGCDMAOUTSUBMIT structure [Network Drivers Starting with Windows Vista], *LPRILMSGCDMAOUTSUBMIT, ntddrilapitypes/RILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCDMAOUTSUBMIT
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT"
 ---
 
 # RILMSGCDMAOUTSUBMIT structure
@@ -68,98 +72,98 @@ typedef struct _RILMSGCDMAOUTSUBMIT {
 
 ## Members
 
-        
-            `bBearerReplyRequest`
 
-            
-        
-            `bDeliveryAckRequest`
+`bBearerReplyRequest`
 
-            
-        
-            `bDigit`
 
-            
-        
-            `bUserAckRequest`
 
-            
-        
-            `cbHdrLength`
+`bDeliveryAckRequest`
 
-            
-        
-            `cchMsgLength`
 
-            
-        
-            `dwMsgDisplayMode`
 
-            
-        
-            `dwMsgEncoding`
+`bDigit`
 
-            
-        
-            `dwMsgID`
 
-            
-        
-            `dwMsgLang`
 
-            
-        
-            `dwMsgPriority`
+`bUserAckRequest`
 
-            
-        
-            `dwMsgPrivacy`
 
-            
-        
-            `dwReplySeqNumber`
 
-            
-        
-            `dwTeleservice`
+`cbHdrLength`
 
-            
-        
-            `raCallBackNumber`
 
-            
-        
-            `raDestAddress`
 
-            
-        
-            `rgbHdr`
+`cchMsgLength`
 
-            
-        
-            `rgbMsg`
 
-            
-        
-            `rsaDestSubaddr`
 
-            
-        
-            `stDeferredDelTimeAbs`
+`dwMsgDisplayMode`
 
-            
-        
-            `stDeferredDelTimeRel`
 
-            
-        
-            `stValidityPeriodAbs`
 
-            
-        
-            `stValidityPeriodRel`
+`dwMsgEncoding`
 
-            
+
+
+`dwMsgID`
+
+
+
+`dwMsgLang`
+
+
+
+`dwMsgPriority`
+
+
+
+`dwMsgPrivacy`
+
+
+
+`dwReplySeqNumber`
+
+
+
+`dwTeleservice`
+
+
+
+`raCallBackNumber`
+
+
+
+`raDestAddress`
+
+
+
+`rgbHdr`
+
+
+
+`rgbMsg`
+
+
+
+`rsaDestSubaddr`
+
+
+
+`stDeferredDelTimeAbs`
+
+
+
+`stDeferredDelTimeRel`
+
+
+
+`stValidityPeriodAbs`
+
+
+
+`stValidityPeriodRel`
+
+
 
 
 ## Requirements

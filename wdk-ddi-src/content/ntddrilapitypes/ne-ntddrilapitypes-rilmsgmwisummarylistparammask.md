@@ -7,8 +7,8 @@ old-location : netvista\rilmsgmwisummarylistparammask.htm
 old-project : netvista
 ms.assetid : f7b9d558-7c95-40d5-9740-ae1b9f7595c1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGMWISUMMARYLISTPARAMMASK, RILMSGMWISUMMARYLISTPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_MWISUMMARY_ACCTADDR, RIL_PARAM_MWISUMMARY_TOTALNUMDETAILITEMS, ntddrilapitypes/RIL_PARAM_MWISUMMARY_REFNUM, RILMSGMWISUMMARYLISTPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_MWISUMMARY_REFNUM, ntddrilapitypes/RIL_PARAM_MWISUMMARY_ACCTADDR, RIL_PARAM_MWISUMMARY_NUMSUMMARYITEMS, netvista.rilmsgmwisummarylistparammask, RIL_PARAM_MWISUMMARY_ALL, RILMSGMWISUMMARYLISTPARAMMASK, ntddrilapitypes/RIL_PARAM_MWISUMMARY_TOTALNUMDETAILITEMS, ntddrilapitypes/RIL_PARAM_MWISUMMARY_ALL, RIL_PARAM_MWISUMMARY_SUMMARYITEMS, ntddrilapitypes/RILMSGMWISUMMARYLISTPARAMMASK, ntddrilapitypes/RIL_PARAM_MWISUMMARY_NUMSUMMARYITEMS, ntddrilapitypes/RIL_PARAM_MWISUMMARY_SUMMARYITEMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGMWISUMMARYLISTPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGMWISUMMARYLISTPARAMMASK
 ---
 
@@ -60,6 +64,11 @@ typedef enum _RILMSGMWISUMMARYLISTPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_MWISUMMARY_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_MWISUMMARY_EXECUTOR</td>
 <td></td>
 </tr>
 

@@ -7,8 +7,8 @@ old-location : netvista\riladdcallforwardingparams_2.htm
 old-project : netvista
 ms.assetid : 96adad09-fe54-469a-b57d-4df68750968c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILADDCALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILADDCALLFORWARDINGPARAMS, netvista.riladdcallforwardingparams_2, RILADDCALLFORWARDINGPARAMS, rilapitypes/RILADDCALLFORWARDINGPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILADDCALLFORWARDINGPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _RILADDCALLFORWARDINGPARAMS {
 
 ## Members
 
-        
-            `dwExecutor`
 
-            
-        
-            `dwReason`
+`dwExecutor`
 
-            
-        
-            `rcfsSettings`
 
-            
+
+`dwReason`
+
+
+
+`rcfsSettings`
+
+
 
 
 ## Requirements

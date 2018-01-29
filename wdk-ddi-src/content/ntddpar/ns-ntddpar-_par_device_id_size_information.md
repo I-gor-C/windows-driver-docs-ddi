@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : b48624cd-e8fb-4152-8e34-9cb1e542f62b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PAR_DEVICE_ID_SIZE_INFORMATION, PAR_DEVICE_ID_SIZE_INFORMATION, *PPAR_DEVICE_ID_SIZE_INFORMATION
+ms.keywords : PPAR_DEVICE_ID_SIZE_INFORMATION, parports.par_device_id_size_information, PAR_DEVICE_ID_SIZE_INFORMATION structure [Parallel Ports], PAR_DEVICE_ID_SIZE_INFORMATION, ntddpar/PPAR_DEVICE_ID_SIZE_INFORMATION, PPAR_DEVICE_ID_SIZE_INFORMATION structure pointer [Parallel Ports], cisspd_388a088d-9dd7-4a6c-99ad-b1e725d91f72.xml, _PAR_DEVICE_ID_SIZE_INFORMATION, *PPAR_DEVICE_ID_SIZE_INFORMATION, ntddpar/PAR_DEVICE_ID_SIZE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PAR_DEVICE_ID_SIZE_INFORMATION
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PAR_DEVICE_ID_SIZE_INFORMATION, *PPAR_DEVICE_ID_SIZE_INFORMATION
 ---
 
@@ -46,10 +50,10 @@ typedef struct _PAR_DEVICE_ID_SIZE_INFORMATION {
 
 ## Members
 
-        
-            `DeviceIdSize`
 
-            Specifies the size, in bytes, of a buffer that can hold the IEEE 1284 device ID of a parallel device and a <b>NULL</b> terminator.
+`DeviceIdSize`
+
+Specifies the size, in bytes, of a buffer that can hold the IEEE 1284 device ID of a parallel device and a <b>NULL</b> terminator.
 
 
 ## Requirements
@@ -60,16 +64,12 @@ typedef struct _PAR_DEVICE_ID_SIZE_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ntddpar.h (include Ntddpar.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id.md">IOCTL_PAR_QUERY_DEVICE_ID</a>
-</dt>
-<dt>
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id_size.md">IOCTL_PAR_QUERY_DEVICE_ID_SIZE</a>
-</dt>
-</dl>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id.md">IOCTL_PAR_QUERY_DEVICE_ID</a>
+
  
 
  

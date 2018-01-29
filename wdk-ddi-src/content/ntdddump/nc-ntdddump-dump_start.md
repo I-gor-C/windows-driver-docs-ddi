@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a315f51f-069a-4c3d-bedc-2378b0996022
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _VERIFY_INFORMATION, VERIFY_INFORMATION, *PVERIFY_INFORMATION
+ms.keywords : storage.dump_start, Dump_Start routine [Storage Devices], Dump_Start, PDUMP_START, PDUMP_START, ntdddump/Dump_Start, filter_rtns_071f1e6c-9471-47ef-bf40-6429a798b792.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista and Windows S
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : Dump_Start
-req.alt-loc : ntdddump.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVERIFY_INFORMATION, VERIFY_INFORMATION"
 ---
 
 
@@ -75,11 +79,8 @@ If the routine succeeds, it must return STATUS_SUCCESS. Otherwise, it must retur
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
-</dt>
-</dl>
+
  
 
  

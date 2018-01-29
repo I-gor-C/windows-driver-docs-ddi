@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 50D52380-1FBE-4046-A7DC-8415501D7FA6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDA_IPv6_ADDRESS, *PBDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS
+ms.keywords : _BDA_IPv6_ADDRESS, stream.bda_ipv6_address, PBDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS, bdatypes/PBDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS structure [Streaming Media Devices], bdatypes/BDA_IPv6_ADDRESS, *PBDA_IPv6_ADDRESS, PBDA_IPv6_ADDRESS structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_IPv6_ADDRESS
-req.alt-loc : Bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS"
 ---
 
@@ -46,10 +50,10 @@ typedef struct _BDA_IPv6_ADDRESS {
 
 ## Members
 
-        
-            `rgbAddress`
 
-            
+`rgbAddress`
+
+
 
 
 ## Requirements

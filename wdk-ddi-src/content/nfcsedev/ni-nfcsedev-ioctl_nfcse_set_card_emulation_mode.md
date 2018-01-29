@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : B7E55FDE-573C-4F45-869C-A3EE253BD777
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.keywords : nfpdrivers.ioctl_nfcse_set_card_emulation_mode, IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code [Near-Field Proximity Drivers], IOCTL_NFCSE_SET_CARD_EMULATION_MODE, nfcsedev/IOCTL_NFCSE_SET_CARD_EMULATION_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_NFCSE_SET_CARD_EMULATION_MODE
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_SET_CARD_EMULATION_MODE IOCTL
@@ -60,18 +64,30 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<table>
+<tr>
+<th>Return Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_PARAMETER</b></td>
+<td>If the secure element GUID is invalid or output buffer is non-zero.</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_DEVICE_STATE</b></td>
+<td>  If the IOCTL is sent on a handle other than with the relative name 'SEManage'.</td>
+</tr>
+</table>
 
-    ## Remarks
-        The following are requirements that the driver must adhere to. <ul>
+## Remarks
+The following are requirements that the driver must adhere to. <ul>
 <li>This IOCTL must be called on a handle that has an SEEvents relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE.</li>
 <li>If card emulation mode is set to EmulationOff for all the secure elements that are attached to the NFC controller, the emulation mode of the polling loop must be disabled. If proximity features are also disabled, the driver should transition to a low power mode.</li>
 <li>If card emulation mode is set to a value other than EmulationOff, then the driver must continue to be in the D0 state and the emulation mode of the polling loop should be enabled (detectable to external readers).</li>
 <li>When the SEManage opened file handle is closed, the driver must set the card emulation mode settings of all secure elements to be EmulationOff except when the last set card emulation mode state is EmulationOnPowerIndependent. If the last set card emulation mode state is EmulationOnPowerIndependent, the driver must remain with the card emulation mode setting to On with the PbF option for the specific secure elements.</li>
 <li>The driver must grant exclusive access to the client to manage card emulation mode. Subsequent calls to open a file handle using relative filename SEManage would fail with STATUS_ACCCESS_DENIED until the client with exclusive access closes its file handle.</li>
 </ul>
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

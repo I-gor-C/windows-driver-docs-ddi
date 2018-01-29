@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9715ff37-397b-4102-a363-443b8076f881
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortQueueDpc
+ms.keywords : VideoPortQueueDpc function [Display Devices], VideoPortQueueDpc, video/VideoPortQueueDpc, display.videoportqueuedpc, VideoPort_Functions_133e8c8b-e445-4f83-ad93-7eb560047f3f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortQueueDpc
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -30,7 +28,13 @@ req.assembly :
 req.type-library : 
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
-req.irql : ">= DISPATCH_LEVEL"
+req.irql : >= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -86,11 +90,8 @@ The deferred procedure is run when the IRQL on the current processor drops below
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nc-video-pminiport_dpc_routine.md">HwVidDpcRoutine</a>
-</dt>
-</dl>
+
  
 
  

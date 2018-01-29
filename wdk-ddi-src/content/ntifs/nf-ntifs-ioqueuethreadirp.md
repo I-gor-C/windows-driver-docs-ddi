@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 165eaae5-ce68-462e-902c-64120fba91c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoQueueThreadIrp
+ms.keywords : ioref_e5906bb2-1a02-4405-92b6-64848786b3f0.xml, IoQueueThreadIrp function [Installable File System Drivers], ntifs/IoQueueThreadIrp, IoQueueThreadIrp, ifsk.ioqueuethreadirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoQueueThreadIrp
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ The <b>IoQueueThreadIrp</b> routine is reserved for system use. See <a href="..\
 
 `Irp`
 
-
+TBD
 
 
 ## Return Value

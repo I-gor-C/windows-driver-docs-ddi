@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : e5360f75-53cf-4025-9a1c-665c098329dd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR
+ms.keywords : whearef_9f1970bd-6dbf-4104-9525-2018ab2f766e.xml, ntddk/WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR, _WHEA_XPF_MC_BANK_DESCRIPTOR, PWHEA_XPF_MC_BANK_DESCRIPTOR structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR structure [WHEA Drivers and Applications], whea.whea_xpf_mc_bank_descriptor, PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_MC_BANK_DESCRIPTOR
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR"
 ---
 
 # _WHEA_XPF_MC_BANK_DESCRIPTOR structure
@@ -54,31 +58,30 @@ typedef struct _WHEA_XPF_MC_BANK_DESCRIPTOR {
 
 ## Members
 
-        
-            `AddressMsr`
 
-            The model-specific register address of the register bank's IA32_MCi_ADDR register. For more information about the IA32_MCi_ADDR register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
-        
-            `BankNumber`
+`AddressMsr`
 
-            The processor machine check register bank number.
-        
-            `ClearOnInitialization`
+The model-specific register address of the register bank's IA32_MCi_ADDR register. For more information about the IA32_MCi_ADDR register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
 
-            A Boolean value that indicates that the status registers for the bank are to be cleared by the operating system during initialization.
-        
-            `ControlData`
+`BankNumber`
 
-            The value that the operating system writes to the register bank's control register during initialization.
-        
-            `ControlMsr`
+The processor machine check register bank number.
 
-            The model-specific register address of the register bank's IA32_MCi_CTL register. For more information about the IA32_MCi_CTL register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
-        
-            `Flags`
+`ClearOnInitialization`
 
-            An XPF_MC_BANK_FLAGS union that indicates which of the members of the WHEA_XPF_MC_BANK_DESCRIPTOR structure can be written to by the operating system. The XPF_MC_BANK_FLAGS union is defined as follows:
+A Boolean value that indicates that the status registers for the bank are to be cleared by the operating system during initialization.
 
+`ControlData`
+
+The value that the operating system writes to the register bank's control register during initialization.
+
+`ControlMsr`
+
+The model-specific register address of the register bank's IA32_MCi_CTL register. For more information about the IA32_MCi_CTL register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
+
+`Flags`
+
+An XPF_MC_BANK_FLAGS union that indicates which of the members of the WHEA_XPF_MC_BANK_DESCRIPTOR structure can be written to by the operating system. The XPF_MC_BANK_FLAGS union is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -96,21 +99,21 @@ typedef struct _WHEA_XPF_MC_BANK_DESCRIPTOR {
 </td>
 </tr>
 </table></span></div>
-        
-            `MiscMsr`
 
-            The model-specific register address of the register bank's IA32_MCi_MISC register. For more information about the IA32_MCi_MISC register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
-        
-            `StatusDataFormat`
+`MiscMsr`
 
-            The format of the data in the register bank's status register. Possible values are:
-        
-            `StatusMsr`
+The model-specific register address of the register bank's IA32_MCi_MISC register. For more information about the IA32_MCi_MISC register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
 
-            The model-specific register address of the register bank's IA32_MCi_STATUS register. For more information about the IA32_MCi_STATUS register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
+`StatusDataFormat`
 
-    ## Remarks
-        An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a> and <a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a> structures.
+The format of the data in the register bank's status register. Possible values are:
+
+`StatusMsr`
+
+The model-specific register address of the register bank's IA32_MCi_STATUS register. For more information about the IA32_MCi_STATUS register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
+
+## Remarks
+An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a> and <a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -120,16 +123,12 @@ typedef struct _WHEA_XPF_MC_BANK_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

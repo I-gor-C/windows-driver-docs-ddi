@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 0e317aea-3625-4511-94e1-355c476c0da6
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_VENDOR_SPECIFIC_COMMAND, *PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND
+ms.keywords : bltooth.sdpretrieveuuid128, SdpRetrieveUuid128 callback function [Bluetooth Devices], SdpRetrieveUuid128, PRETRIEVEUUID128, PRETRIEVEUUID128, sdplib/SdpRetrieveUuid128, bth_funcs_a4149063-722b-45c0-a86b-ffce73b94b0d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
 req.header : bthsdpddi.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SdpRetrieveUuid128
-req.alt-loc : sdplib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
@@ -86,8 +90,8 @@ The
 This function has no effect on byte order.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">
-    BTHDDI_SDP_PARSE_INTERFACE</a> structure.
+    <mshelp:link keywords="bltooth.bthddi_sdp_parse_interface" tabindex="0"><b>
+    BTHDDI_SDP_PARSE_INTERFACE</b></mshelp:link> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,11 +107,8 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

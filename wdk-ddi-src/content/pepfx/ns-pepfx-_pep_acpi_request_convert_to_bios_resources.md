@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DF9FD748-88E8-4E32-B698-0E8A3BE319DB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, *PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
+ms.keywords : PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure [Kernel-Mode Driver Architecture], PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, *PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, kernel.pep_acpi_request_convert_to_bios_resources, PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, pepfx/PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, *PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
 ---
 
 # _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure
@@ -51,30 +55,30 @@ typedef struct _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES {
 
 ## Members
 
-        
-            `Flags`
 
-            The value contained in the <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure.
-        
-            `InputBuffer`
+`Flags`
 
-            A pointer to a <a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a> containing the input buffer.
-        
-            `InputBufferSize`
+The value contained in the <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure.
 
-            The size of the input buffer.
-        
-            `OutputBuffer`
+`InputBuffer`
 
-            A pointer to the output buffer containing the translated structure.
-        
-            `OutputBufferSize`
+A pointer to a <a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a> containing the input buffer.
 
-            The size of the output buffer.
-        
-            `TranslationStatus`
+`InputBufferSize`
 
-            The result code from the resource translation call.
+The size of the input buffer.
+
+`OutputBuffer`
+
+A pointer to the output buffer containing the translated structure.
+
+`OutputBufferSize`
+
+The size of the output buffer.
+
+`TranslationStatus`
+
+The result code from the resource translation call.
 
 
 ## Requirements
@@ -85,19 +89,14 @@ typedef struct _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/1FBF406C-22C7-4D46-840C-9966C3515B63">PEP initialization functions</a>
-</dt>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a>
+
+<a href="https://msdn.microsoft.com/1FBF406C-22C7-4D46-840C-9966C3515B63">PEP initialization functions</a>
+
  
 
  

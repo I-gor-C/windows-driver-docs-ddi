@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 570a1dfa-d6dc-4886-ad13-0f3e1f88ddde
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_IPF_CMC_DESCRIPTOR, *PWHEA_IPF_CMC_DESCRIPTOR, WHEA_IPF_CMC_DESCRIPTOR
+ms.keywords : whearef_825e6302-2ef1-4277-9fd5-4855d64fce9d.xml, ntddk/WHEA_IPF_CMC_DESCRIPTOR, PWHEA_IPF_CMC_DESCRIPTOR structure pointer [WHEA Drivers and Applications], _WHEA_IPF_CMC_DESCRIPTOR, whea.whea_ipf_cmc_descriptor, PWHEA_IPF_CMC_DESCRIPTOR, *PWHEA_IPF_CMC_DESCRIPTOR, WHEA_IPF_CMC_DESCRIPTOR, WHEA_IPF_CMC_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_IPF_CMC_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_IPF_CMC_DESCRIPTOR
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWHEA_IPF_CMC_DESCRIPTOR, WHEA_IPF_CMC_DESCRIPTOR"
 ---
 
@@ -48,21 +52,21 @@ typedef struct _WHEA_IPF_CMC_DESCRIPTOR {
 
 ## Members
 
-        
-            `Enabled`
 
-            A Boolean value that indicates if the error source is enabled.
-        
-            `Reserved`
+`Enabled`
 
-            Reserved for system use.
-        
-            `Type`
+A Boolean value that indicates if the error source is enabled.
 
-            The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_IPFCMC.
+`Reserved`
 
-    ## Remarks
-        A WHEA_IPF_CMC_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+Reserved for system use.
+
+`Type`
+
+The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_IPFCMC.
+
+## Remarks
+A WHEA_IPF_CMC_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct _WHEA_IPF_CMC_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

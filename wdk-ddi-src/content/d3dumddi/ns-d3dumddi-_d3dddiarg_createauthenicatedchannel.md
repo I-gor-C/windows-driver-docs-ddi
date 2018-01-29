@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 00f8fbbc-1a4d-4cfe-8b87-fd70bf5a2d48
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_CREATEAUTHENICATEDCHANNEL, D3DDDIARG_CREATEAUTHENTICATEDCHANNEL
+ms.keywords : UMDisplayDriver_param_Structs_3cdac44d-7cac-43f6-80f5-dd601183fa8b.xml, D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure [Display Devices], d3dumddi/D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, _D3DDDIARG_CREATEAUTHENICATEDCHANNEL, display.d3dddiarg_createauthenticatedchannel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDIARG_CREATEAUTHENTICATEDCHANNEL is supported be
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_CREATEAUTHENTICATEDCHANNEL
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_CREATEAUTHENTICATEDCHANNEL
 ---
 
@@ -47,11 +51,10 @@ typedef struct _D3DDDIARG_CREATEAUTHENTICATEDCHANNEL {
 
 ## Members
 
-        
-            `ChannelType`
 
-            [in] A <a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.
+`ChannelType`
 
+[in] A <a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.
 <table>
 <tr>
 <th>Value</th>
@@ -78,10 +81,10 @@ The authenticated-channel type is hardware.
 </td>
 </tr>
 </table>
-        
-            `hChannel`
 
-            [out] A handle to the channel. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function returns this handle to the Microsoft Direct3D runtime.
+`hChannel`
+
+[out] A handle to the channel. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function returns this handle to the Microsoft Direct3D runtime.
 
 
 ## Requirements
@@ -92,16 +95,12 @@ The authenticated-channel type is hardware.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6dc10c3a-b47e-42c3-a209-34977fb219f1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SCSI_WMI_REQUEST_BLOCK, SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK
+ms.keywords : storage.scsi_wmi_request_block, PSCSI_WMI_REQUEST_BLOCK structure pointer [Storage Devices], SCSI_WMI_REQUEST_BLOCK, _SCSI_WMI_REQUEST_BLOCK, structs-scsibus_6188bca6-990b-4471-b8ea-2cd5b2b27d51.xml, srb/SCSI_WMI_REQUEST_BLOCK, SCSI_WMI_REQUEST_BLOCK structure [Storage Devices], PSCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK, srb/PSCSI_WMI_REQUEST_BLOCK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCSI_WMI_REQUEST_BLOCK
-req.alt-loc : srb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK
 req.product : Windows 10 or later.
 ---
 
 # _SCSI_WMI_REQUEST_BLOCK structure
-This structure is a special version of a <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> for use with WMI commands.
+This structure is a special version of a <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> for use with WMI commands. 
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -69,93 +74,93 @@ typedef struct _SCSI_WMI_REQUEST_BLOCK {
 
 ## Members
 
-        
-            `DataBuffer`
 
-            Points to the data buffer. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>Buffer</i> set to this value. Miniport drivers can use this value as a data pointer regardless of the value of <b>MapBuffers</b> in the PORT_CONFIGURATION_INFORMATION for the HBA. A miniport driver cannot transfer data directly into the buffer using DMA.
-        
-            `DataPath`
+`DataBuffer`
 
-            Specifies the WMI data path for this request. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>DataPath</i> set to this value.
-        
-            `DataTransferLength`
+Points to the data buffer. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>Buffer</i> set to this value. Miniport drivers can use this value as a data pointer regardless of the value of <b>MapBuffers</b> in the PORT_CONFIGURATION_INFORMATION for the HBA. A miniport driver cannot transfer data directly into the buffer using DMA.
 
-            Indicates the size in bytes of the data buffer. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>BufferSize</i> set to this value. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred.
-        
-            `Function`
+`DataPath`
 
-            SRB_FUNCTION_WMI, which specifies that the request is a WMI request. If this member is not set to SRB_FUNCTION_WMI, the miniport driver should fail the request.
-        
-            `Length`
+Specifies the WMI data path for this request. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>DataPath</i> set to this value.
 
-            Specifies the size in bytes of this structure.
-        
-            `Lun`
+`DataTransferLength`
 
-            Indicates the logical unit number of the device. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.
-        
-            `OriginalRequest`
+Indicates the size in bytes of the data buffer. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>BufferSize</i> set to this value. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred.
 
-            Points to the IRP for this request. This member is irrelevant to miniport drivers.
-        
-            `PathId`
+`Function`
 
-            Indicates the SCSI port or bus for the request. This value is zero-based. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.
-        
-            `Reserved1`
+SRB_FUNCTION_WMI, which specifies that the request is a WMI request. If this member is not set to SRB_FUNCTION_WMI, the miniport driver should fail the request.
 
-            Reserved for system use and not available for use by miniport drivers.
-        
-            `Reserved2`
+`Length`
 
-            Reserved for system use and not available for use by miniport drivers.
-        
-            `Reserved3`
+Specifies the size in bytes of this structure.
 
-            Reserved for system use and not available for use by miniport drivers.
-        
-            `Reserved4`
+`Lun`
 
-            Reserved for system use and not available for use by miniport drivers.
-        
-            `Reserved5`
+Indicates the logical unit number of the device. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.
 
-            Reserved for system use and not available for use by miniport drivers.
-        
-            `Reserved6`
+`OriginalRequest`
 
-            Reserved for system use and not available for use by miniport drivers. This member is valid starting with Windows Server 2003 with SP1.
-        
-            `SrbExtension`
+Points to the IRP for this request. This member is irrelevant to miniport drivers.
 
-            Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the HW_INITIALIZATION_DATA. The memory at <b>SrbExtension</b> is not initialized by the OS-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a> with the <b>SrbExtension</b> pointer.
-        
-            `SrbFlags`
+`PathId`
 
-            Indicates various parameters and options about the request. <b>SrbFlags</b> is read-only. This member will be set to one or more of the following flags ORed together:
-        
-            `SrbStatus`
+Indicates the SCSI port or bus for the request. This value is zero-based. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.
 
-            Returns the status of the completed request. This member should be set by the miniport driver before it notifies the OS-specific driver that the request has completed by calling <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a> with <b>RequestComplete</b>. The value of this member can be any value listed for <b>SrbStatus</b> in SCSI_REQUEST_BLOCK.
-        
-            `TargetId`
+`Reserved1`
 
-            Indicates the target controller or device on the bus. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.
-        
-            `TimeOutValue`
+Reserved for system use and not available for use by miniport drivers.
 
-            Indicates the interval in seconds that the request can execute before the OS-specific port driver might consider it timed out. Miniport drivers are not required to time requests because the port driver already does.
-        
-            `WMIFlags`
+`Reserved2`
 
-            Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b> are reserved. Otherwise, <b>WMIFlags</b> will be <b>NULL</b>, indicating that the request is for the device specified by <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.
-        
-            `WMISubFunction`
+Reserved for system use and not available for use by miniport drivers.
 
-            Indicates the WMI action to be performed. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>MinorFunction</i> set to this value. The subfunction value corresponds to the WMI minor IRP number that identifies the WMI operation.
+`Reserved3`
 
-    ## Remarks
-        Windows NT storage class and filter drivers can send WMI SRBs to the system port driver. The system port driver will handle certain WMI requests on behalf of miniport drivers. If the port driver cannot handle a WMI request, it forwards the request to the miniport driver. 
+Reserved for system use and not available for use by miniport drivers.
+
+`Reserved4`
+
+Reserved for system use and not available for use by miniport drivers.
+
+`Reserved5`
+
+Reserved for system use and not available for use by miniport drivers.
+
+`Reserved6`
+
+Reserved for system use and not available for use by miniport drivers. This member is valid starting with Windows Server 2003 with SP1.
+
+`SrbExtension`
+
+Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the HW_INITIALIZATION_DATA. The memory at <b>SrbExtension</b> is not initialized by the OS-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a> with the <b>SrbExtension</b> pointer.
+
+`SrbFlags`
+
+Indicates various parameters and options about the request. <b>SrbFlags</b> is read-only. This member will be set to one or more of the following flags ORed together:
+
+`SrbStatus`
+
+Returns the status of the completed request. This member should be set by the miniport driver before it notifies the OS-specific driver that the request has completed by calling <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a> with <b>RequestComplete</b>. The value of this member can be any value listed for <b>SrbStatus</b> in SCSI_REQUEST_BLOCK.
+
+`TargetId`
+
+Indicates the target controller or device on the bus. If SRB_WMI_FLAGS_ADAPTER_REQUEST is set in <b>WMIFlags</b>, this member is reserved.
+
+`TimeOutValue`
+
+Indicates the interval in seconds that the request can execute before the OS-specific port driver might consider it timed out. Miniport drivers are not required to time requests because the port driver already does.
+
+`WMIFlags`
+
+Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b> are reserved. Otherwise, <b>WMIFlags</b> will be <b>NULL</b>, indicating that the request is for the device specified by <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.
+
+`WMISubFunction`
+
+Indicates the WMI action to be performed. A miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with <i>MinorFunction</i> set to this value. The subfunction value corresponds to the WMI minor IRP number that identifies the WMI operation.
+
+## Remarks
+Windows NT storage class and filter drivers can send WMI SRBs to the system port driver. The system port driver will handle certain WMI requests on behalf of miniport drivers. If the port driver cannot handle a WMI request, it forwards the request to the miniport driver. 
 
 A miniport driver receives WMI requests from the port driver only if the miniport driver set <b>WmiDataProvider</b> in the PORT_CONFIGURATION_INFORMATION structure. If the miniport driver supports a request, it should process it and complete the request by calling <b>ScsiPortNotification</b> twice, first with <b>RequestComplete</b> and then with <b>NextRequest</b> (or <b>NextLuRequest</b>). 
 
@@ -169,25 +174,18 @@ For information about supporting WMI in miniport drivers, see the <a href="https
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h, Srb.h, Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
-</dt>
-<dt>
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
-</dt>
-<dt>
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-</dt>
-<dt>
+
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
+
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
 <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
-</dt>
-<dt>
+
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
-</dt>
-</dl>
+
  
 
  

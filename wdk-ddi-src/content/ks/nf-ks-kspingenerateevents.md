@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c2137849-aff0-4bf7-abab-b92e17aaef70
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGenerateEvents
+ms.keywords : KsPinGenerateEvents, KsPinGenerateEvents function [Streaming Media Devices], avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, stream.kspingenerateevents, ks/KsPinGenerateEvents
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinGenerateEvents
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL (See Remarks)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,7 +81,6 @@ A pointer to a data buffer. Specify if generating a data event.
 `CallBack`
 
 A pointer to a caller-specified function that is called to determine whether a given event should be generated. If <b>NULL</b>, no callback verification is performed to determine whether an event should be generated (only <i>EventSet </i>and <i>EventId</i> are used). Prototype as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -89,8 +92,7 @@ A pointer to a caller-specified function that is called to determine whether a g
     IN PKSEVENT_ENTRY EventEntry); </pre>
 </td>
 </tr>
-</table></span></div>
-<b>KsPinGenerateEvents</b> passes the <i>CallBackContext</i> parameter unchanged as the <i>Context</i> parameter for the callback. The callback function returns <b>TRUE</b> if <i>EventEntry</i> should be generated. Otherwise, it returns <b>FALSE</b>.
+</table></span></div><b>KsPinGenerateEvents</b> passes the <i>CallBackContext</i> parameter unchanged as the <i>Context</i> parameter for the callback. The callback function returns <b>TRUE</b> if <i>EventEntry</i> should be generated. Otherwise, it returns <b>FALSE</b>.
 
 `CallBackContext`
 
@@ -108,14 +110,20 @@ When calling this function, a minidriver must place <i>Data</i> and <i>CallBackC
 This is an inline function call to <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>, which performs the necessary typecasting. Minidrivers should usually call this version instead of directly calling <b>KsGenerateEvents</b>.
 
 An event is generated if the following three conditions hold:
-
+<ul>
+<li>
 The event is present in <i>Pin's </i>event list and <i>EventId </i>matches the event's ID.
 
+</li>
+<li>
 <i>EventSet</i> either matches the event's set GUID or is <b>NULL</b>.
 
+</li>
+<li>
 <i>CallBack </i>is either <b>NULL</b> or authorizes the match.
 
-For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> and <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>.
+</li>
+</ul>For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> and <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -131,20 +139,14 @@ For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-</dl>
+
  
 
  

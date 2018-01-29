@@ -7,8 +7,8 @@ old-location : netvista\ndis_miniport_wdi_data_handlers.htm
 old-project : netvista
 ms.assetid : DBDB5F08-9988-4D9B-A731-DA65BBA67813
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS
+ms.date : 1/18/2018
+ms.keywords : NDIS_MINIPORT_WDI_DATA_HANDLERS structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_WDI_DATA_HANDLERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_MINIPORT_WDI_DATA_HANDLERS, dot11wdi/PNDIS_MINIPORT_WDI_DATA_HANDLERS, dot11wdi/NDIS_MINIPORT_WDI_DATA_HANDLERS, PNDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS, _NDIS_MINIPORT_WDI_DATA_HANDLERS, netvista.ndis_miniport_wdi_data_handlers
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_MINIPORT_WDI_DATA_HANDLERS
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS"
 ---
 
 # _NDIS_MINIPORT_WDI_DATA_HANDLERS structure
@@ -70,10 +74,10 @@ typedef struct _NDIS_MINIPORT_WDI_DATA_HANDLERS {
 
 ## Members
 
-        
-            `Header`
 
-            The 
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_WDI_DATA_HANDLERS structure. Set the 
      <b>Type</b> member of the structure that 
@@ -82,102 +86,106 @@ typedef struct _NDIS_MINIPORT_WDI_DATA_HANDLERS {
 
 To indicate the version of the NDIS_MINIPORT_WDI_DATA_HANDLERS structure, set the 
      <b>Revision</b> member to the following value:
-        
-            `RxFlushHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_flush.md">MiniportWdiRxFlush</a> handler function.
-        
-            `RxGetMpdusHandler`
+`RxFlushHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_get_mpdus.md">MiniportWdiRxGetMpdus</a> handler function.
-        
-            `RxPpduRssiHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_flush.md">MiniportWdiRxFlush</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_ppdu_rssi.md">MiniportWdiRxPpduRssi</a> handler function.
-        
-            `RxRestartHandler`
+`RxGetMpdusHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_restart.md">MiniportWdiRxRestart</a> handler function.
-        
-            `RxResumeHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_get_mpdus.md">MiniportWdiRxGetMpdus</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_resume.md">MiniportWdiRxResume</a> handler function.
-        
-            `RxReturnFramesHandler`
+`RxPpduRssiHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_return_frames.md">MiniportWdiRxReturnFrames</a> handler function.
-        
-            `RxStopHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_ppdu_rssi.md">MiniportWdiRxPpduRssi</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_stop.md">MiniportWdiRxStop</a> handler function.
-        
-            `RxThrottleHandler`
+`RxRestartHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_throttle.md">MiniportWdiRxThrottle</a> handler function.
-        
-            `TalTxRxAddPortHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_restart.md">MiniportWdiRxRestart</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_add_port.md">MiniportWdiTalTxRxAddPort</a> handler function.
-        
-            `TalTxRxDeletePortHandler`
+`RxResumeHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_delete_port.md">MiniportWdiTalTxRxDeletePort</a> handler function.
-        
-            `TalTxRxPeerConfigHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_resume.md">MiniportWdiRxResume</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_peer_config.md">MiniportWdiTalTxRxPeerConfig</a> handler function.
-        
-            `TalTxRxPeerDeleteConfirmHandler`
+`RxReturnFramesHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_peer_delete_confirm.md">MiniportWdiTalTxRxPeerDeleteConfirm</a> handler function.
-        
-            `TalTxRxResetPortHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_return_frames.md">MiniportWdiRxReturnFrames</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_reset_port.md">MiniportWdiTalTxRxResetPort</a> handler function.
-        
-            `TalTxRxSetPortOpModeHandler`
+`RxStopHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_set_port_opmode.md">MiniportWdiTalTxRxSetPortOpMode</a> handler function.
-        
-            `TalTxRxStartHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_stop.md">MiniportWdiRxStop</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_start.md">MiniportWdiTalTxRxStart</a> handler function.
-        
-            `TalTxRxStopHandler`
+`RxThrottleHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_stop.md">MiniportWdiTalTxRxStop</a> handler function.
-        
-            `TxAbortHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_throttle.md">MiniportWdiRxThrottle</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_abort.md">MiniportWdiTxAbort</a> handler function.
-        
-            `TxDataSendHandler`
+`TalTxRxAddPortHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_data_send.md">MiniportWdiTxDataSend</a> handler function.
-        
-            `TxPeerBacklogHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_add_port.md">MiniportWdiTalTxRxAddPort</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_peer_backlog.md">MiniportWdiTxPeerBacklog</a> handler function.
-        
-            `TxTalQueueInOrderHandler`
+`TalTxRxDeletePortHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_tal_queue_in_order.md">MiniportWdiTxTalQueueInOrder</a> handler function.
-        
-            `TxTalSendCompleteHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_delete_port.md">MiniportWdiTalTxRxDeletePort</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_tal_send_complete.md">MiniportWdiTxTalSendComplete</a> handler function.
-        
-            `TxTalSendHandler`
+`TalTxRxPeerConfigHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_tal_send.md">MiniportWdiTxTalSend</a> handler function.
-        
-            `TxTargetDescDeInitHandler`
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_peer_config.md">MiniportWdiTalTxRxPeerConfig</a> handler function.
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_target_desc_deinit.md">MiniportWdiTxTargetDescDeInit</a> handler function.
-        
-            `TxTargetDescInitHandler`
+`TalTxRxPeerDeleteConfirmHandler`
 
-            The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_target_desc_init.md">MiniportWdiTxTargetDescInit</a> handler function.
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_peer_delete_confirm.md">MiniportWdiTalTxRxPeerDeleteConfirm</a> handler function.
+
+`TalTxRxResetPortHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_reset_port.md">MiniportWdiTalTxRxResetPort</a> handler function.
+
+`TalTxRxSetPortOpModeHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_set_port_opmode.md">MiniportWdiTalTxRxSetPortOpMode</a> handler function.
+
+`TalTxRxStartHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_start.md">MiniportWdiTalTxRxStart</a> handler function.
+
+`TalTxRxStopHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_stop.md">MiniportWdiTalTxRxStop</a> handler function.
+
+`TxAbortHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_abort.md">MiniportWdiTxAbort</a> handler function.
+
+`TxDataSendHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_data_send.md">MiniportWdiTxDataSend</a> handler function.
+
+`TxPeerBacklogHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_peer_backlog.md">MiniportWdiTxPeerBacklog</a> handler function.
+
+`TxSuspectFrameAbortHandler`
+
+
+
+`TxTalQueueInOrderHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_tal_queue_in_order.md">MiniportWdiTxTalQueueInOrder</a> handler function.
+
+`TxTalSendCompleteHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_tal_send_complete.md">MiniportWdiTxTalSendComplete</a> handler function.
+
+`TxTalSendHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_tal_send.md">MiniportWdiTxTalSend</a> handler function.
+
+`TxTargetDescDeInitHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_target_desc_deinit.md">MiniportWdiTxTargetDescDeInit</a> handler function.
+
+`TxTargetDescInitHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_target_desc_init.md">MiniportWdiTxTargetDescInit</a> handler function.
 
 
 ## Requirements

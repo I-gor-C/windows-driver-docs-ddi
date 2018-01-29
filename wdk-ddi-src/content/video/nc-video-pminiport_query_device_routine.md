@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 81c3f484-427e-43b8-b7dd-12017533560b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.hwvidquerydevicecallback, HwVidQueryDeviceCallback callback function [Display Devices], HwVidQueryDeviceCallback, PMINIPORT_QUERY_DEVICE_ROUTINE, PMINIPORT_QUERY_DEVICE_ROUTINE, video/HwVidQueryDeviceCallback, VideoMiniport_Functions_9da236b0-f97f-410d-a0e7-c65499d7db8b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwVidQueryDeviceCallback
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -72,28 +76,16 @@ Pointer to the context value set up by <a href="..\video\nc-video-pvideo_hw_find
 
 Specifies the type of configuration information that was requested, which is one of the following:
 
-<dl>
-<dd>
 <b>VpBusData</b>
 
-</dd>
-<dd>
 <b><b>VpCmosData</b></b>
 
-</dd>
-<dd>
 <b><b>VpControllerData</b></b>
 
-</dd>
-<dd>
 <b><b>VpMachineData</b></b>
 
-</dd>
-<dd>
 <b><b>VpMonitorData</b></b>
 
-</dd>
-</dl>
 Miniport drivers of x86-type video adapters usually specify <b>VpBusData</b>, particularly for adapters on EISA buses. The <b>VpControllerData</b> and <b>VpMonitorData</b> values have meaning only on ARC-compliant platforms. The <b>VpCmosData</b> and <b>VpMachineData</b> values are seldom used.
 
 `Identifier`
@@ -155,23 +147,16 @@ If it cannot get bus-relative access ranges values by calling <b>VideoPortGetDev
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
-</dt>
-</dl>
+
+<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
+
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
+
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+
  
 
  

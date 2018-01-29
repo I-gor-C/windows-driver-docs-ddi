@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 598d2b4f-9b49-480a-9cf8-25661c24483f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListUpdateAllChildDescriptionsAsPresent
+ms.keywords : WdfChildListUpdateAllChildDescriptionsAsPresent, WdfChildListUpdateAllChildDescriptionsAsPresent method, PFN_WDFCHILDLISTUPDATEALLCHILDDESCRIPTIONSASPRESENT, kmdf.wdfchildlistupdateallchilddescriptionsaspresent, DFDeviceObjectChildListRef_55956590-2843-4486-acfb-0e85c01702a0.xml, wdf.wdfchildlistupdateallchilddescriptionsaspresent, wdfchildlist/WdfChildListUpdateAllChildDescriptionsAsPresent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfChildListUpdateAllChildDescriptionsAsPresent
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_RETRIEVE_CHILD_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -67,8 +71,6 @@ A system bug check occurs if the driver supplies an invalid object handle.
 The <b>WdfChildListUpdateAllChildDescriptionsAsPresent</b> method is available in version 1.0 and later versions of KMDF.
 
 For more information about child lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">Dynamic Enumeration</a>.
-
-The following code example informs the framework that all of the devices that a device list represents are plugged in and available.</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

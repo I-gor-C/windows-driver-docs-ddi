@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A8BAD8D4-1009-43D0-B82F-8252062A029C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS, DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+ms.keywords : dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS, display.dxgi_ddi_multiplane_overlay_group_caps, DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
-req.alt-loc : Dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
 ---
 
@@ -50,34 +54,34 @@ typedef struct _DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 
 ## Members
 
-        
-            `MaxShrinkFactor`
 
-            Specifies the maximum shrink factor that is supported by the overlay planes within the capability group.
+`MaxShrinkFactor`
+
+Specifies the maximum shrink factor that is supported by the overlay planes within the capability group.
 
 The shrink factor is the ratio of the final, shrunk overlay plane size to the original size. For example, if the original overlay plane is 100 x 100 pixels, a value of 0.25 means that it can be shrunk to 25 x 25 pixels.
 
 It's not guaranteed that this shrink factor can be applied in all scenarios. For example, it might be possible to shrink only one overlay plane out of several using this factor.
-        
-            `MaxStretchFactor`
 
-            Specifies the maximum stretch factor that is supported by the overlay planes within the capability group.
+`MaxStretchFactor`
+
+Specifies the maximum stretch factor that is supported by the overlay planes within the capability group.
 
 The stretch factor is the ratio of the final, stretched overlay plane size to the original size. For example, if the original overlay plane is 100 x 100 pixels, a value of 2.5 means that it can be stretched to 250 x 250 pixels.
 
 It's not guaranteed that this stretch factor can be applied in all scenarios. For example, it might be possible to stretch only one overlay plane out of several using this factor.
-        
-            `NumPlanes`
 
-            Specifies the number of overlay planes that are supported by the overlay planes within the capability group.
-        
-            `OverlayCaps`
+`NumPlanes`
 
-            The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_feature_caps.md">DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a> enumeration.
-        
-            `StereoCaps`
+Specifies the number of overlay planes that are supported by the overlay planes within the capability group.
 
-            Reserved for system use. Set this value to zero.
+`OverlayCaps`
+
+The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_feature_caps.md">DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a> enumeration.
+
+`StereoCaps`
+
+Reserved for system use. Set this value to zero.
 
 
 ## Requirements

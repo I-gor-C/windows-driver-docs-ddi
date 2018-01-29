@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : A8945F1C-56CF-494F-9E50-11C7A713E5F0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcCopyWriteEx
+ms.keywords : ntifs/CcCopyWriteEx, CcCopyWriteEx routine [Installable File System Drivers], ifsk.cccopywriteex, CcCopyWriteEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcCopyWriteEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -106,11 +110,8 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3dd5b8f7-d8f8-4c02-80d1-76d0dbe06cd3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeUnstackDetachProcess
+ms.keywords : keref_47d45f58-d264-4633-8808-2172646df566.xml, ntifs/KeUnstackDetachProcess, KeUnstackDetachProcess routine [Installable File System Drivers], KeUnstackDetachProcess, ifsk.keunstackdetachprocess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeUnstackDetachProcess
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
 
 # KeUnstackDetachProcess function
-The <b>KeUnstackDetachProcess</b> routine detaches the current thread from the address space of a process and restores the previous attach state.
+The <b>KeUnstackDetachProcess</b> routine detaches the current thread from the address space of a process and restores the previous attach state. 
+<div class="alert"><b>Caution</b>  Use this routine with extreme caution. (See the following Remarks section.)</div><div> </div>
 
 ## Syntax
 
@@ -86,32 +91,22 @@ For more information about using system threads and managing synchronization wit
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iothreadtoprocess.md">IoThreadToProcess</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-kestackattachprocess.md">KeStackAttachProcess</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-kestackattachprocess.md">KeStackAttachProcess</a>
+
+<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
+
+<a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
+
+<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
+
+<a href="..\ntifs\nf-ntifs-iothreadtoprocess.md">IoThreadToProcess</a>
+
+<a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
+
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+
  
 
  

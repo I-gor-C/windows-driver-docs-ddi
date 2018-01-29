@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 55ED21D9-D704-4E38-AFCF-B1D1FDB67DB3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFInterrupt, IWDFInterrupt::ReleaseInterruptLock, ReleaseInterruptLock
+ms.keywords : ReleaseInterruptLock method, ReleaseInterruptLock method, IWDFInterrupt interface, IWDFInterrupt, wudfddi/IWDFInterrupt::ReleaseInterruptLock, IWDFInterrupt::ReleaseInterruptLock, umdf.iwdfinterrupt_releaseinterruptlock, ReleaseInterruptLock, wdf.iwdfinterrupt_releaseinterruptlock, IWDFInterrupt interface, ReleaseInterruptLock method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFInterrupt.ReleaseInterruptLock
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 This method does not return a value.
 
-This method does not return a value.
-
-This method does not return a value.
-
 ## Remarks
 
 For more information about handling interrupts in UMDF drivers, see <a href="https://msdn.microsoft.com/25D526CF-7C37-4D10-B099-352933F92F98">Accessing Hardware and Handling Interrupts</a>.
@@ -77,14 +77,10 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/2ED55AEC-2446-4E66-AAFD-A22BAB3FC9C7">IWDFInterrupt::AcquireInterruptLock</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7ec7d9a4-3c6f-4b67-abbb-1e0dcbf6fb90
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CmRegisterCallbackEx
+ms.keywords : wdm/CmRegisterCallbackEx, ConfigMgrRef_60ae8a2c-45c7-4b5e-ae19-916402b47903.xml, CmRegisterCallbackEx routine [Kernel-Mode Driver Architecture], CmRegisterCallbackEx, kernel.cmregistercallbackex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CmRegisterCallbackEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff
 
 `Altitude`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure. This structure must contain a string that represents the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/load-order-groups-and-altitudes-for-minifilter-drivers">altitude</a> of the calling <a href="https://blogs.msdn.microsoft.com/erick/2006/03/27/file-system-minifilter-drivers-part-1/">minifilter driver</a>. For more information, see Remarks.
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure. This structure must contain a string that represents the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/load-order-groups-and-altitudes-for-minifilter-drivers">altitude</a> of the calling <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/file-system-minifilter-drivers">minifilter driver</a>. For more information, see Remarks.
 
 `Driver`
 
@@ -82,12 +86,34 @@ This parameter is reserved for future use.
 ## Return Value
 
 <b>CmRegisterCallbackEx</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NTSTATUS</a> values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_INSTANCE_ALTITUDE_COLLISION</b></dt>
-</dl>The calling driver or another driver has already registered a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine for the specified altitude.
+</dl>
+</td>
+<td width="60%">
+The calling driver or another driver has already registered a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine for the specified altitude.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>An attempt to allocate memory failed.
+</dl>
+</td>
+<td width="60%">
+An attempt to allocate memory failed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -115,23 +141,16 @@ For more information about <b>CmRegisterCallbackEx</b> and filtering registry op
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+
  
 
  

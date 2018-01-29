@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4edaae35-8ac4-4a7a-949b-8a86b45ff391
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.allocatecommonbuffer, AllocateCommonBuffer, AllocateCommonBuffer callback function [Kernel-Mode Driver Architecture], AllocateCommonBuffer, PALLOCATE_COMMON_BUFFER, PALLOCATE_COMMON_BUFFER, wdm/AllocateCommonBuffer, kdma_0e4a27db-db3e-48db-81c2-d83a342a0cbc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AllocateCommonBuffer
-req.alt-loc : Wdm.h
 req.ddi-compliance : IrqlDispatch
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -94,14 +98,20 @@ On computers with ARM or ARM 64-based processors, the operating system does not 
 <b>AllocateCommonBuffer</b> also supports subordinate devices whose drivers use a system DMA controller's autoinitialize mode.
 
 <b>AllocateCommonBuffer</b> does the following:
-
+<ul>
+<li>
 Allocates memory that can be reached from both the processor and the device. This memory appears contiguous to the device.
 
+</li>
+<li>
 Allocates map registers to map the buffer, if required by the system.
 
+</li>
+<li>
 Sets up a translation for the device, including loading map registers if necessary.
 
-To use resident system memory economically, drivers should allocate as few of these buffers per device as possible. <b>AllocateCommonBuffer</b> allocates at least a page of memory, regardless of the requested <i>Length</i>. After a successful allocation requesting fewer than PAGE_SIZE bytes, the caller can access only the requested <i>Length</i>. After a successful allocation requesting more than an integral multiple of PAGE_SIZE bytes, any remaining bytes on the last allocated page are inaccessible to the caller.
+</li>
+</ul>To use resident system memory economically, drivers should allocate as few of these buffers per device as possible. <b>AllocateCommonBuffer</b> allocates at least a page of memory, regardless of the requested <i>Length</i>. After a successful allocation requesting fewer than PAGE_SIZE bytes, the caller can access only the requested <i>Length</i>. After a successful allocation requesting more than an integral multiple of PAGE_SIZE bytes, any remaining bytes on the last allocated page are inaccessible to the caller.
 
 If a driver needs several pages of common buffer space, but the pages need not be contiguous, the driver should make several one-page requests to <b>AllocateCommonBuffer</b> instead of one large request. This approach conserves contiguous memory.
 
@@ -121,20 +131,14 @@ Drivers typically call <b>AllocateCommonBuffer</b> as part of device start-up, d
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pfree_common_buffer.md">FreeCommonBuffer</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
+<a href="..\wdm\nc-wdm-pfree_common_buffer.md">FreeCommonBuffer</a>
+
  
 
  

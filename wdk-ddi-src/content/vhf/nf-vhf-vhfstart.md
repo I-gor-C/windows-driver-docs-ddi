@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : F3DA4CBB-5749-4E7D-828F-398714575173
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : VhfStart
+ms.keywords : VhfStart, vhf/VhfStart, VhfStart method [Human Input Devices], hid.vhfstart
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VhfStart
-req.alt-loc : VhfKm.lib,VhfKm.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : VhfKm.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ If the <b>VhfStart</b> call succeeds, the method returns STATUS_SUCCESS. Otherwi
 
 ## Remarks
 
-Virtual HID Framework (VHF) does not invoke any callback functions implemented by the HID source driver until the source driver calls <b>VhfStart</b>. A callback can get invoked before <b>VhfStart</b> returns.  After this call succeeds, the driver can  submit reports. The HID source driver must not invoke any VHF method until after <b>VhfStart</b> returns successfully</p>
+Virtual HID Framework (VHF) does not invoke any callback functions implemented by the HID source driver until the source driver calls <b>VhfStart</b>. A callback can get invoked before <b>VhfStart</b> returns.  After this call succeeds, the driver can  submit reports. The HID source driver must not invoke any VHF method until after <b>VhfStart</b> returns successfully
 
 ## Requirements
 | &nbsp; | &nbsp; |

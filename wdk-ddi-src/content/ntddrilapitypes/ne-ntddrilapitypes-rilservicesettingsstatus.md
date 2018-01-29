@@ -7,8 +7,8 @@ old-location : netvista\rilservicesettingsstatus.htm
 old-project : netvista
 ms.assetid : 69340d17-900f-4c46-aafb-866edcb03d77
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSERVICESETTINGSSTATUS, RILSERVICESETTINGSSTATUS
+ms.date : 1/18/2018
+ms.keywords : RIL_SVCSTAT_MAX, RIL_SVCSTAT_DISABLED, ntddrilapitypes/RILSERVICESETTINGSSTATUS, RILSERVICESETTINGSSTATUS enumeration [Network Drivers Starting with Windows Vista], RIL_SVCSTAT_DEFAULT, netvista.rilservicesettingsstatus, ntddrilapitypes/RIL_SVCSTAT_MAX, RIL_SVCSTAT_ENABLED, RILSERVICESETTINGSSTATUS, ntddrilapitypes/RIL_SVCSTAT_DEFAULT, ntddrilapitypes/RIL_SVCSTAT_DISABLED, ntddrilapitypes/RIL_SVCSTAT_ENABLED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSERVICESETTINGSSTATUS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSERVICESETTINGSSTATUS
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILSERVICESETTINGSSTATUS {
 
 <tr>
 <td>RIL_SVCSTAT_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_SVCSTAT_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

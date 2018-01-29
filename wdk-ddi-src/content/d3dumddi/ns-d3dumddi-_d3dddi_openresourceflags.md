@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f65fda13-3d05-4e1b-b0c7-01e43a9bf09e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_OPENRESOURCEFLAGS, D3DDDI_OPENRESOURCEFLAGS
+ms.keywords : D3DDDI_OPENRESOURCEFLAGS, d3dumddi/D3DDDI_OPENRESOURCEFLAGS, display.d3dddi_openresourceflags, _D3DDDI_OPENRESOURCEFLAGS, D3DDDI_OPENRESOURCEFLAGS structure [Display Devices], D3D_other_Structs_918a41c9-09de-4916-a0d6-fd69f7c431c2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_OPENRESOURCEFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_OPENRESOURCEFLAGS
 ---
 
@@ -63,13 +67,10 @@ typedef struct _D3DDDI_OPENRESOURCEFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_openresource.md">D3DDDIARG_OPENRESOURCE</a>
-</dt>
-</dl>
+
  
 
  

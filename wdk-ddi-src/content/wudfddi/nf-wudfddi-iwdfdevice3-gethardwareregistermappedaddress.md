@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 94852404-301F-4C09-81D2-CEDEECFCD6BD
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3, IWDFDevice3::GetHardwareRegisterMappedAddress, GetHardwareRegisterMappedAddress
+ms.keywords : IWDFDevice3::GetHardwareRegisterMappedAddress, umdf.iwdfdevice3_gethardwareregistermappedaddress, IWDFDevice3, wdf.iwdfdevice3_gethardwareregistermappedaddress, wudfddi/IWDFDevice3::GetHardwareRegisterMappedAddress, GetHardwareRegisterMappedAddress method, IWDFDevice3 interface, GetHardwareRegisterMappedAddress, GetHardwareRegisterMappedAddress method, IWDFDevice3 interface, GetHardwareRegisterMappedAddress method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFDevice3.GetHardwareRegisterMappedAddress
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -84,11 +88,8 @@ If you do use <b>GetHardwareRegisterMappedAddress</b>, you must set the <b>UmdfR
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
-</dt>
-</dl>
+
  
 
  

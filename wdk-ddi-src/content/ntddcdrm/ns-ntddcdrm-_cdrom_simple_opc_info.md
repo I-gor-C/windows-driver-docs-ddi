@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : CE6D2C98-C4C3-4D76-B49E-1B9344B88666
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO
+ms.keywords : _CDROM_SIMPLE_OPC_INFO, storage.cdrom_simple_opc_info, *PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO structure [Storage Devices], ntddcdrm/CDROM_SIMPLE_OPC_INFO, ntddcdrm/PCDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_SIMPLE_OPC_INFO
-req.alt-loc : Ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO
 ---
 
@@ -48,21 +52,21 @@ typedef struct _CDROM_SIMPLE_OPC_INFO {
 
 ## Members
 
-        
-            `Exclude0`
 
-            Exclude layer 0 from OPC.
-        
-            `Exclude1`
+`Exclude0`
 
-            Exclude layer 1 from OPC.
-        
-            `RequestType`
+Exclude layer 0 from OPC.
 
-            The request type defined in the <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_opc_info_type.md">CDROM_OPC_INFO_TYPE</a> enumeration.
+`Exclude1`
 
-    ## Remarks
-        The  <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a> IOCTL is a wrapper for the SEND OPC INFORMATION command of the Multimedia Commands (MMC) specification. The <b>Exclude0</b> and <b>Exclude1</b> fields of the <b>CDROM_SIMPLE_OPC_INFO</b> structure map directly to the corresponding SEND OPC INFORMATION fields.
+Exclude layer 1 from OPC.
+
+`RequestType`
+
+The request type defined in the <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_opc_info_type.md">CDROM_OPC_INFO_TYPE</a> enumeration.
+
+## Remarks
+The  <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a> IOCTL is a wrapper for the SEND OPC INFORMATION command of the Multimedia Commands (MMC) specification. The <b>Exclude0</b> and <b>Exclude1</b> fields of the <b>CDROM_SIMPLE_OPC_INFO</b> structure map directly to the corresponding SEND OPC INFORMATION fields.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,19 +76,14 @@ typedef struct _CDROM_SIMPLE_OPC_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_opc_info_type.md">CDROM_OPC_INFO_TYPE</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_simple_opc_info.md">CDROM_SIMPLE_OPC_INFO</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_opc_info_type.md">CDROM_OPC_INFO_TYPE</a>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
+
  
 
  

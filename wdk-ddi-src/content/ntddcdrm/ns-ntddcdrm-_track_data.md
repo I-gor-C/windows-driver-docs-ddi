@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f412ff4e-6c65-40f8-9747-dc5059e588f6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _TRACK_DATA, *PTRACK_DATA, TRACK_DATA
+ms.keywords : _TRACK_DATA, PTRACK_DATA, storage.track_data, structs-CD-ROM_37ea4578-82b7-4b8e-be1b-28c27de349d9.xml, ntddcdrm/TRACK_DATA, TRACK_DATA structure [Storage Devices], ntddcdrm/PTRACK_DATA, TRACK_DATA, PTRACK_DATA structure pointer [Storage Devices], *PTRACK_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRACK_DATA
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTRACK_DATA, TRACK_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TRACK_DATA, *PTRACK_DATA
 ---
 
 # _TRACK_DATA structure
@@ -51,33 +55,33 @@ typedef struct _TRACK_DATA {
 
 ## Members
 
-        
-            `Address`
 
-            Indicates the starting address of the track.
-        
-            `Adr`
+`Address`
 
-            Indicates the type of information encoded in the Q subchannel of the track where this table of contents entry was found. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
-        
-            `Control`
+Indicates the starting address of the track.
 
-            Indicates the attributes of the track. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
-        
-            `Reserved`
+`Adr`
 
-            Reserved.
-        
-            `Reserved1`
+Indicates the type of information encoded in the Q subchannel of the track where this table of contents entry was found. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
 
-            Reserved.
-        
-            `TrackNumber`
+`Control`
 
-            Indicates the number of the track.
+Indicates the attributes of the track. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
 
-    ## Remarks
-        This structure contains table of contents information for a track.
+`Reserved`
+
+Reserved.
+
+`Reserved1`
+
+Reserved.
+
+`TrackNumber`
+
+Indicates the number of the track.
+
+## Remarks
+This structure contains table of contents information for a track.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,16 +91,12 @@ typedef struct _TRACK_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a>
-</dt>
-<dt>
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a>
+
  
 
  

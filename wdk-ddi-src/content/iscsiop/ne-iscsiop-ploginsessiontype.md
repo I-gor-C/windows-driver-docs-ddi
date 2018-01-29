@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 838c2371-c1f3-4415-a624-fab1d8c15d0d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PLOGINSESSIONTYPE, *PLOGINSESSIONTYPE, LOGINSESSIONTYPE"
+ms.keywords : iscsiop/ISCSI_LOGINTARGET_DISCOVERY, storage.loginsessiontype, ISCSI_LOGINTARGET_INFORMATIONAL, ISCSI_LOGINTARGET_DATA, PLOGINSESSIONTYPE enumeration pointer [Storage Devices], ISCSI_LOGINTARGET_DISCOVERY, PLOGINSESSIONTYPE, iscsiop/LOGINSESSIONTYPE, LOGINSESSIONTYPE, structs-iSCSI_4af9bc0f-391e-442a-9d45-6819d130cfc0.xml, LOGINSESSIONTYPE enumeration [Storage Devices], *PLOGINSESSIONTYPE, iscsiop/ISCSI_LOGINTARGET_INFORMATIONAL, iscsiop/ISCSI_LOGINTARGET_DATA, iscsiop/PLOGINSESSIONTYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LOGINSESSIONTYPE
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PLOGINSESSIONTYPE, LOGINSESSIONTYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : LOGINSESSIONTYPE, *PLOGINSESSIONTYPE
 ---
 
 # *PLOGINSESSIONTYPE Enumeration
@@ -79,11 +83,8 @@ This type of session does not support transmission of user data, and the Plug an
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-</dt>
-</dl>
+
  
 
  

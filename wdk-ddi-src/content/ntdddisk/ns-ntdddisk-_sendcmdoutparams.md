@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e9fb6d5c-258c-46eb-ba3a-3f10008fdf68
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS
+ms.keywords : _SENDCMDOUTPARAMS, SENDCMDOUTPARAMS, ntdddisk/SENDCMDOUTPARAMS, structs-IDE_d1a70016-0e77-465a-9368-665975369bdc.xml, PSENDCMDOUTPARAMS structure pointer [Storage Devices], ntdddisk/PSENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS, LPSENDCMDOUTPARAMS structure pointer [Storage Devices], storage.sendcmdoutparams, ntdddisk/LPSENDCMDOUTPARAMS, LPSENDCMDOUTPARAMS, PSENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SENDCMDOUTPARAMS
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS
 ---
 
 # _SENDCMDOUTPARAMS structure
@@ -48,21 +52,21 @@ typedef struct _SENDCMDOUTPARAMS {
 
 ## Members
 
-        
-            `bBuffer`
 
-            Pointer to a buffer in which to store the data read from the drive.
-        
-            `cBufferSize`
+`bBuffer`
 
-            Contains the size in bytes of the buffer pointed to by <b>bBuffer</b>.
-        
-            `DriverStatus`
+Pointer to a buffer in which to store the data read from the drive.
 
-            Contains a <a href="..\ntdddisk\ns-ntdddisk-_driverstatus.md">DRIVERSTATUS</a> structure that indicates the driver status.
+`cBufferSize`
 
-    ## Remarks
-        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a> is used to send SMART commands to a device. 
+Contains the size in bytes of the buffer pointed to by <b>bBuffer</b>.
+
+`DriverStatus`
+
+Contains a <a href="..\ntdddisk\ns-ntdddisk-_driverstatus.md">DRIVERSTATUS</a> structure that indicates the driver status.
+
+## Remarks
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a> is used to send SMART commands to a device. 
 
 The SENDCMDOUTPARAMS structure is also used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a> request.
 
@@ -74,19 +78,14 @@ The SENDCMDOUTPARAMS structure is also used with the <a href="https://msdn.micro
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
-</dt>
-<dt>
+
 <a href="..\ntdddisk\ns-ntdddisk-_sendcmdinparams.md">SENDCMDINPARAMS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
+
  
 
  

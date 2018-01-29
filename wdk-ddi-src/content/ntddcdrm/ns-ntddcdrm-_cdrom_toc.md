@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 84312199-5055-41a1-9aa2-4ee91a15d5bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_TOC, *PCDROM_TOC, CDROM_TOC
+ms.keywords : CDROM_TOC, storage.cdrom_toc, *PCDROM_TOC, PCDROM_TOC, PCDROM_TOC structure pointer [Storage Devices], ntddcdrm/PCDROM_TOC, ntddcdrm/CDROM_TOC, _CDROM_TOC, CDROM_TOC structure [Storage Devices], structs-CD-ROM_943f0104-ee61-4f40-a1a1-8392a15f3fd1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_TOC
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCDROM_TOC, CDROM_TOC"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CDROM_TOC, *PCDROM_TOC
 ---
 
 # _CDROM_TOC structure
@@ -49,25 +53,25 @@ typedef struct _CDROM_TOC {
 
 ## Members
 
-        
-            `FirstTrack`
 
-            Indicates the first track number of the table of contents of the first complete session.
-        
-            `LastTrack`
+`FirstTrack`
 
-            Indicates the last track number of the table of contents of the last complete session.
-        
-            `Length`
+Indicates the first track number of the table of contents of the first complete session.
 
-            Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
-        
-            `TrackData`
+`LastTrack`
 
-            Pointer to an array of structures of type <a href="..\ntddcdrm\ns-ntddcdrm-_track_data.md">TRACK_DATA</a> that contain table of contents information for all the sessions on the disc.
+Indicates the last track number of the table of contents of the last complete session.
 
-    ## Remarks
-        The output data contains table of contents information for one or more of the specified sessions.
+`Length`
+
+Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
+
+`TrackData`
+
+Pointer to an array of structures of type <a href="..\ntddcdrm\ns-ntddcdrm-_track_data.md">TRACK_DATA</a> that contain table of contents information for all the sessions on the disc.
+
+## Remarks
+The output data contains table of contents information for one or more of the specified sessions.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,19 +81,14 @@ typedef struct _CDROM_TOC {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_track_data.md">TRACK_DATA</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
+
  
 
  

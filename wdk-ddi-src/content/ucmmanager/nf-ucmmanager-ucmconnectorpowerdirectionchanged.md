@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D1DB20DF-C0FD-4215-8227-CBBB18AF8BE3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorPowerDirectionChanged
+ms.keywords : UcmConnectorPowerDirectionChanged, ucmmanager/UcmConnectorPowerDirectionChanged, buses.ucmconnectorpowerdirectionchanged, UcmConnectorPowerDirectionChanged method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmConnectorPowerDirectionChanged
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -53,15 +57,17 @@ NTSTATUS UcmConnectorPowerDirectionChanged(
 
 `Connector`
 
-
+Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
 
 `Success`
 
+Used to indicate failure of a power-role swap that was initiated by UcmCx using <a href="..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_power_role.md">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a>. 
 
+If TRUE, the operation was successful. FALSE, otherwise.
 
 `CurrentPowerRole`
 
-
+One of the <a href="..\ucmtypes\ne-ucmtypes-_ucm_power_role.md">UCM_POWER_ROLE</a>-typed flags that indicates the new data role.
 
 
 ## Return Value
@@ -90,11 +96,8 @@ Alternatively, the client driver might choose to perform a role-swap autonomousl
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-</dt>
-</dl>
+
  
 
  

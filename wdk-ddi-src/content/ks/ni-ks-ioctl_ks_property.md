@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 66f29543-9677-4bae-baa4-6be8ebc52b66
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_property, IOCTL_KS_PROPERTY control code [Streaming Media Devices], IOCTL_KS_PROPERTY, ks/IOCTL_KS_PROPERTY, ks-ioctl_58152402-30ed-4938-af47-9e6a1838fec1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_PROPERTY
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
 # IOCTL_KS_PROPERTY IOCTL
-An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a> function.
-
-
-
 An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a> function.
 
 ### Major Code
@@ -63,11 +63,10 @@ The application places the size, in bytes, of the output buffer in the <b>OutLen
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
-    ## Remarks
-        For more information about input and output buffers and their sizes, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.
+## Remarks
+For more information about input and output buffers and their sizes, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88-aaf9-ff1ddbfd30f7">KS Properties</a>.
 
 Filters and pins support property sets using the <b>IOCTL_KS_PROPERTY</b> device I/O control. Although this IOCTL is defined with the METHOD_NEITHER flag, the property data is passed as the output buffer to the IOCTL and probed for read access. The <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a> function handles properties requested through <b>IOCTL_KS_PROPERTY</b>.
 
@@ -80,28 +79,20 @@ For a list of valid flags and corresponding descriptions, see the reference page
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksproperty_description.md">KSPROPERTY_DESCRIPTION</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksproperty_values.md">KSPROPERTY_VALUES</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
+
+<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
+
+<a href="..\ks\ns-ks-ksproperty_description.md">KSPROPERTY_DESCRIPTION</a>
+
+<a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a>
+
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-</dl>
+
  
 
  

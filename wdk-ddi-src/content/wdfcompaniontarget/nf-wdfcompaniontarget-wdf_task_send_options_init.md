@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ba10c012-f64c-42cd-bedc-72f620818aa5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_TASK_SEND_OPTIONS_INIT
+ms.keywords : wdf.wdf_task_send_options_init, WDF_TASK_SEND_OPTIONS_INIT, wdfcompaniontarget/WDF_TASK_SEND_OPTIONS_INIT, WDF_TASK_SEND_OPTIONS_INIT method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.23
 req.umdf-ver : 
-req.alt-api : WDF_TASK_SEND_OPTIONS_INIT
-req.alt-loc : wdfcompaniontarget.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_TASK_SEND_OPTIONS_FLAGS
 req.product : Windows 10 or later.
 ---

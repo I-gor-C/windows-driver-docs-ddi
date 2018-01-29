@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 28b54f80-9268-4ccb-ac19-b1b4bfef4192
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT, SetLoadBalancePolicy_OUT
+ms.keywords : _SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT, iscsimgt/PSetLoadBalancePolicy_OUT, PSetLoadBalancePolicy_OUT structure pointer [Storage Devices], structs-iSCSI_32a19db4-8102-4e39-b9be-30a8a03d2732.xml, SetLoadBalancePolicy_OUT, PSetLoadBalancePolicy_OUT, SetLoadBalancePolicy_OUT structure [Storage Devices], iscsimgt/SetLoadBalancePolicy_OUT, storage.setloadbalancepolicy_out
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetLoadBalancePolicy_OUT
-req.alt-loc : iscsimgt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSetLoadBalancePolicy_OUT, SetLoadBalancePolicy_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT
 ---
 
 # _SetLoadBalancePolicy_OUT structure
@@ -46,13 +50,13 @@ typedef struct _SetLoadBalancePolicy_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            A value that provides the status of the SetLoadBalancePolicy operation.
+`Status`
 
-    ## Remarks
-        You must implement this class. For a list of possible status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+A value that provides the status of the SetLoadBalancePolicy operation.
+
+## Remarks
+You must implement this class. For a list of possible status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,16 +66,12 @@ typedef struct _SetLoadBalancePolicy_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563062">MSiSCSI_LB_Operations WMI Class</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563062">MSiSCSI_LB_Operations WMI Class</a>
+
  
 
  

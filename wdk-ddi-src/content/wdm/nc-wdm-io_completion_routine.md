@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 53fc5265-5d8e-4794-942b-de81b93e81da
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.iocompletion, IoCompletion routine [Kernel-Mode Driver Architecture], IoCompletion, IO_COMPLETION_ROUTINE, IO_COMPLETION_ROUTINE, wdm/IoCompletion, DrvrRtns_aa2b6363-e3c1-4243-87d8-8a1bb575974b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCompletion
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at IRQL <= DISPATCH_LEVEL (see Remarks section).
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -84,14 +88,6 @@ When you create the IRP, allocate a stack location for the current driver as wel
 If an <i>IoCompletion</i> routine returns STATUS_MORE_PROCESSING_REQUIRED, the lower driver's call to <b>IoCompleteRequest</b> immediately returns. In this case, a higher-level driver will have to call <b>IoCompleteRequest</b> to complete the IRP.
 
 For more information about implementing <i>IoCompletion</i> routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542018">Completing IRPs</a>.
-
-To define an <i>IoCompletion</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
-
-For example, to define an <i>IoCompletion</i> callback routine that is named <code>MyIoCompletion</code>, use the IO_COMPLETION_ROUTINE type as shown in this code example:
-
-Then, implement your callback routine as follows:
-
-The IO_COMPLETION_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the IO_COMPLETION_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

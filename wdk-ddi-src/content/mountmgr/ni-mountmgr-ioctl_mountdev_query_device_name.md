@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3df96552-d4f6-4d1c-bc07-3eff5f3eabfb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.keywords : storage.ioctl_mountdev_query_device_name, IOCTL_MOUNTDEV_QUERY_DEVICE_NAME control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_DEVICE_NAME, mountmgr/IOCTL_MOUNTDEV_QUERY_DEVICE_NAME, k307_4a0b9087-3740-4467-aa0f-ca7f56b8ae13.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
-req.alt-loc : Mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTDEV_QUERY_DEVICE_NAME IOCTL
@@ -59,7 +63,6 @@ The mount manager client returns a variable-length structure of type <a href="..
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountmgr\ns-mountmgr-_mountdev_name.md">MOUNTDEV_NAME</a>, Name) + output-&gt;NameLength, or alternatively, output-&gt;NameLength + sizeof(USHORT), where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>
 
 If the operation is successful, the mount manager client must set the <b>Information</b> field to the length of the <b>NULL</b>-terminated string containing the device name and the <b>Status</b> field to STATUS_SUCCESS. 
@@ -74,13 +77,10 @@ If the output buffer is too small to hold the device name, the mount manager cli
 | **Header** | mountmgr.h (include Mountmgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountmgr\ns-mountmgr-_mountdev_name.md">MOUNTDEV_NAME</a>
-</dt>
-</dl>
+
  
 
  

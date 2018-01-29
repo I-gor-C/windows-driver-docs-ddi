@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7e8f84c4-c251-4f80-a8fc-465e44c14405
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGenerate8dot3Name
+ms.keywords : RtlGenerate8dot3Name routine [Installable File System Drivers], ifsk.rtlgenerate8dot3name, rtlref_e28a5c45-d430-43a7-89f8-4f193971715c.xml, RtlGenerate8dot3Name, ntifs/RtlGenerate8dot3Name
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlGenerate8dot3Name
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -83,16 +87,24 @@ Two calls to <b>RtlGenerate8dot3Name</b> with the same <i>Name</i> and <i>Contex
 <b>RtlGenerate8dot3Name</b> translates the given long name using the current system code page, discarding any invalid or superfluous characters in the input long name. When <i>AllowExtendedCharacters</i> is set to <b>TRUE</b>, ANSI or double-byte character set (DBCS) characters that map to uppercase OEM characters can become part of a returned short name. 
 
 <b>RtlGenerate8dot3Name</b> returns a short file name with uppercase alphabetic characters. It returns underscores in the generated short name for any of the following characters that it encounters in the given long name:
-
+<ul>
+<li>
 Colons and semicolons 
 
+</li>
+<li>
 Commas 
 
+</li>
+<li>
 Plus and equal signs 
 
+</li>
+<li>
 Square brackets 
 
-For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>.
+</li>
+</ul>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,17 +120,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlisnamelegaldos8dot3.md">RtlIsNameLegalDOS8Dot3</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlisvalidoemcharacter.md">RtlIsValidOemCharacter</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

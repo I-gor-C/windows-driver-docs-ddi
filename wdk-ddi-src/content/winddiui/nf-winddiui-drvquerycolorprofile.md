@@ -7,8 +7,8 @@ old-location : print\drvquerycolorprofile.htm
 old-project : print
 ms.assetid : f6eec5a1-7d73-415f-84d9-1ec3f512abaf
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : DrvQueryColorProfile
+ms.date : 1/18/2018
+ms.keywords : print.drvquerycolorprofile, DrvQueryColorProfile function [Print Devices], print_interface-graphics_fce84759-2add-41bc-b4e5-c2b66e3abf04.xml, DrvQueryColorProfile, winddiui/DrvQueryColorProfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DrvQueryColorProfile
-req.alt-loc : winddiui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +69,6 @@ Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows
 `ulQueryMode`
 
 One of the following caller-supplied bit flags, indicating the type of profile to be specified.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -104,7 +107,6 @@ Caller-supplied pointer to a value representing the size, in bytes, of the buffe
 `pflProfileData`
 
 One of the following function-supplied bit flags, indicating the type of information the function is returning.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -143,7 +145,7 @@ A <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">prin
 
 If a driver's printer interface DLL does not provide a <b>DrvQueryColorProfile</b> function, or if the function returns <b>FALSE</b>, GDI attempts to find a profile. For more information, see <a href="https://msdn.microsoft.com/828b53cd-452a-4c4d-bfbb-45ea674ef49a">Locating ICC Profiles</a>.
 
-If the output buffer size specified by <i>pcbProfileData</i> is too small, the driver should overwrite the size value supplied by <i>pcbProfileData</i> with the required buffer size, call SetLastError(ERROR_INSUFFICIENT_BUFFER), and return <b>FALSE</b>.</p>
+If the output buffer size specified by <i>pcbProfileData</i> is too small, the driver should overwrite the size value supplied by <i>pcbProfileData</i> with the required buffer size, call SetLastError(ERROR_INSUFFICIENT_BUFFER), and return <b>FALSE</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

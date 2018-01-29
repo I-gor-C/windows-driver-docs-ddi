@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 43e92a9e-e486-46d9-9eca-3db4ceeb24f1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT, D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
+ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT enumeration [Display Devices], d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST, d3dumddi/D3DDDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT, display.d3dddi_multiplane_overlay_video_frame_format, D3DDDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE, D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT, D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST, D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
 ---
 

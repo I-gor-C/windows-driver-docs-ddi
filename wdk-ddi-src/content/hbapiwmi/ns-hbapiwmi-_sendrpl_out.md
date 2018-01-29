@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 36ca3d6e-7012-4bbb-a2a0-e19708aa1058
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SendRPL_OUT, SendRPL_OUT, *PSendRPL_OUT
+ms.keywords : _SendRPL_OUT, PSendRPL_OUT structure pointer [Storage Devices], hbapiwmi/PSendRPL_OUT, structs-Fibre_aef41c84-1718-4e82-aeae-d0280d6cf3b1.xml, SendRPL_OUT, PSendRPL_OUT, SendRPL_OUT structure [Storage Devices], *PSendRPL_OUT, storage.sendrpl_out, hbapiwmi/SendRPL_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SendRPL_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SendRPL_OUT, *PSendRPL_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSendRPL_OUT, SendRPL_OUT"
 ---
 
 # _SendRPL_OUT structure
@@ -49,25 +53,25 @@ typedef struct _SendRPL_OUT {
 
 ## Members
 
-        
-            `ActualRspBufferSize`
 
-            Contains the size in bytes of the data that was actually retrieved.
-        
-            `HBAStatus`
+`ActualRspBufferSize`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `RspBuffer`
+Contains the size in bytes of the data that was actually retrieved.
 
-            Contains the results of the read port list (RPL) command.
-        
-            `TotalRspBufferSize`
+`HBAStatus`
 
-            Contains the size in bytes of the results of the read port list (RPL) command.
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SendRPL_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`RspBuffer`
+
+Contains the results of the read port list (RPL) command.
+
+`TotalRspBufferSize`
+
+Contains the size in bytes of the results of the read port list (RPL) command.
+
+## Remarks
+The WMI tool suite generates a declaration of the SendRPL_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _SendRPL_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565488">SendRPL</a>
-</dt>
-</dl>
+
  
 
  

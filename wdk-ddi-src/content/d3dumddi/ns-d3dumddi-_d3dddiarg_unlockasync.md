@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 27d4a7fa-ac2a-4049-8c9f-5ac9338c70b3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_UNLOCKASYNC, D3DDDIARG_UNLOCKASYNC
+ms.keywords : D3DDDIARG_UNLOCKASYNC, display.d3dddiarg_unlockasync, _D3DDDIARG_UNLOCKASYNC, UMDisplayDriver_param_Structs_1b08f2e6-73cd-4390-a9a2-54e604ca5012.xml, d3dumddi/D3DDDIARG_UNLOCKASYNC, D3DDDIARG_UNLOCKASYNC structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_UNLOCKASYNC
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_UNLOCKASYNC
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DDDIARG_UNLOCKASYNC {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_unlockasyncflags.md">D3DDDI_UNLOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.
-        
-            `hResource`
+`Flags`
 
-            [in] A handle to the resource to be unlocked.
-        
-            `SubResourceIndex`
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_unlockasyncflags.md">D3DDDI_UNLOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.
 
-            [in] The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be unlocked.
+`hResource`
+
+[in] A handle to the resource to be unlocked.
+
+`SubResourceIndex`
+
+[in] The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be unlocked.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DDDIARG_UNLOCKASYNC {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockasync.md">UnlockAsync</a>
-</dt>
-</dl>
+
  
 
  

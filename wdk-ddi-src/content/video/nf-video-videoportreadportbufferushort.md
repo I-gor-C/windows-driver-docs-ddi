@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ad19dc0-f301-4367-b867-6bc714fd3d5e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortReadPortBufferUshort
+ms.keywords : video/VideoPortReadPortBufferUshort, VideoPortReadPortBufferUshort, VideoPort_Functions_598e11ff-25be-4b55-a86f-130100ed0972.xml, VideoPortReadPortBufferUshort function [Display Devices], display.videoportreadportbufferushort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortReadPortBufferUshort
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -90,17 +94,12 @@ Callers of <b>VideoPortReadPortBufferUshort</b> can be running at any IRQL, prov
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
+
+<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
+
  
 
  

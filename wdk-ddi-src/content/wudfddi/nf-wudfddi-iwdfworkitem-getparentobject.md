@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : D965D8D3-B78C-4126-A675-D6D8A85AA158
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
+ms.keywords : GetParentObject method, IWDFWorkItem interface, wdf.iwdfworkitem_getparentobject, IWDFWorkItem interface, GetParentObject method, GetParentObject, IWDFWorkItem, wudfddi/IWDFWorkItem::GetParentObject, umdf.iwdfworkitem_getparentobject, IWDFWorkItem::GetParentObject, GetParentObject method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFWorkItem.GetParentObject
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 A pointer to the parent object interface.
 
-A pointer to the parent object interface.
-
-A pointer to the parent object interface.
-
 ## Remarks
 
 For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF-9CC2-7215423E6D35">Using Work Items</a>.
@@ -77,11 +77,8 @@ For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
-</dt>
-</dl>
+
  
 
  

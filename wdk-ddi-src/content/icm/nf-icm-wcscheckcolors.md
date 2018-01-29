@@ -7,8 +7,8 @@ old-location : print\wcscheckcolors.htm
 old-project : print
 ms.assetid : 1254b0d4-cb72-4171-b09d-f0bca58a137a
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : WcsCheckColors
+ms.date : 1/18/2018
+ms.keywords : WcsCheckColors, print.wcscheckcolors, icm/WcsCheckColors, colorfnc_abd03c7d-c516-4c81-a0ff-df351cac753e.xml, WcsCheckColors function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Included in Windows Vista and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WcsCheckColors
-req.alt-loc : Mscms.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mscms.lib
 req.dll : Mscms.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
@@ -91,7 +95,7 @@ None
 
 If the input and the output color data types are not compatible with the color transform, this function will convert the input color data as required.
 
-This function will fail if an ICC transform is used.</p>
+This function will fail if an ICC transform is used.
 
 ## Requirements
 | &nbsp; | &nbsp; |

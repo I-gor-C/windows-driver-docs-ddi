@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0836a969-e484-485f-9b65-202c177b4f43
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbInterfaceGetConfiguredPipe
+ms.keywords : kmdf.wdfusbinterfacegetconfiguredpipe, wdfusb/WdfUsbInterfaceGetConfiguredPipe, WdfUsbInterfaceGetConfiguredPipe, DFUsbRef_65a97d99-39c5-4750-95e1-6c9c20c169bb.xml, PFN_WDFUSBINTERFACEGETCONFIGUREDPIPE, WdfUsbInterfaceGetConfiguredPipe method, wdf.wdfusbinterfacegetconfiguredpipe
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbInterfaceGetConfiguredPipe
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -78,8 +82,6 @@ Your driver can call <b>WdfUsbInterfaceGetConfiguredPipe</b> after it has called
 
 For more information about the <b>WdfUsbInterfaceGetConfiguredPipe</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example sends a USB abort request to each configured pipe of a specified USB interface.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,20 +96,14 @@ The following code example sends a USB abort request to each configured pipe of 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetnumconfiguredpipes.md">WdfUsbInterfaceGetNumConfiguredPipes</a>
-</dt>
-<dt>
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
-</dt>
-<dt>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
-</dt>
-</dl>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+
  
 
  

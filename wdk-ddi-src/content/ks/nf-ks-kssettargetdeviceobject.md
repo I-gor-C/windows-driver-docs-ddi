@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0d90f70d-8cbe-4c95-ae54-494ff404631a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSetTargetDeviceObject
+ms.keywords : KsSetTargetDeviceObject, ks/KsSetTargetDeviceObject, KsSetTargetDeviceObject function [Streaming Media Devices], stream.kssettargetdeviceobject, ksfunc_f5e0140d-a6f3-49a1-a319-f55bdd5f0734.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsSetTargetDeviceObject
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -82,20 +86,14 @@ If <b>KsSetDevicePnpAndBaseObject</b> is also used to assign the PnP object stac
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-kssetdevicepnpandbaseobject.md">KsSetDevicePnpAndBaseObject</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a>
+
+<a href="..\ks\nf-ks-kssetdevicepnpandbaseobject.md">KsSetDevicePnpAndBaseObject</a>
+
  
 
  

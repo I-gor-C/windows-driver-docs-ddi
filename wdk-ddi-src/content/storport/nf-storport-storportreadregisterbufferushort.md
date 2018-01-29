@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 169f1089-ac17-4d4c-b989-018ff087aa39
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReadRegisterBufferUshort
+ms.keywords : StorPortReadRegisterBufferUshort, StorPortReadRegisterBufferUshort routine [Storage Devices], storprt_9ba740e5-78b0-464d-903c-6bb4c22788fd.xml, storage.storportreadregisterbufferushort, storport/StorPortReadRegisterBufferUshort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortReadRegisterBufferUshort
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -91,14 +95,10 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterbufferushor
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\nf-srb-scsiportreadregisterbufferushort.md">ScsiPortReadRegisterBufferUshort</a>
-</dt>
-<dt>
+
 <a href="..\storport\nf-storport-storportreadregisterushort.md">StorPortReadRegisterUshort</a>
-</dt>
-</dl>
+
  
 
  

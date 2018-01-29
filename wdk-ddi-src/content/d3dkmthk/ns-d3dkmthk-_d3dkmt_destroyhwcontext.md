@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DFFFE90A-C505-466A-B415-AA6C6352421B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DESTROYHWCONTEXT, D3DKMT_DESTROYHWCONTEXT
+ms.keywords : display.d3dkmt_destroyhwcontext, D3DKMT_DESTROYHWCONTEXT, _D3DKMT_DESTROYHWCONTEXT, d3dkmthk/D3DKMT_DESTROYHWCONTEXT, D3DKMT_DESTROYHWCONTEXT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DESTROYHWCONTEXT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DESTROYHWCONTEXT
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DKMT_DESTROYHWCONTEXT {
 
 ## Members
 
-        
-            `hHwContext`
 
-            A handle that identifies the context being destroyed.
+`hHwContext`
+
+A handle that identifies the context being destroyed.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1b2384c3-6438-4456-b4fc-44211b8a3fb1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_DRAINED
+ms.keywords : WDF_IO_QUEUE_DRAINED function, wdfio/WDF_IO_QUEUE_DRAINED, kmdf.wdf_io_queue_drained, wdf.wdf_io_queue_drained, DFQueueObjectRef_ddc761b3-266a-4942-94ed-8ecca07575d1.xml, WDF_IO_QUEUE_DRAINED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WDF_IO_QUEUE_DRAINED
-req.alt-loc : None,None.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : None
 req.dll : 
 req.irql : Any IRQL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -68,8 +72,6 @@ Your driver can call <b>WDF_IO_QUEUE_DRAINED</b> after it has called <a href="..
 
 For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
 
-The following code example is a routine that returns <b>TRUE</b> if a specified I/O queue is drained.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -84,20 +86,14 @@ The following code example is a routine that returns <b>TRUE</b> if a specified 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
-</dt>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>
-</dt>
-<dt>
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>
-</dt>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
-</dt>
-</dl>
+
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
+
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>
+
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>
+
  
 
  

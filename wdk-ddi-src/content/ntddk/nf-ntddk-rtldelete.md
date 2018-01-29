@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ca73b7cf-56c0-4e83-8804-59f73fbd4714
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlDelete
+ms.keywords : ifsk.rtldelete, RtlDelete, rtlref_637fb420-7027-4426-a4a0-7ae887ad1950.xml, RtlDelete routine [Installable File System Drivers], ntddk/RtlDelete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlDelete
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -79,23 +83,16 @@ Callers of <b>RtlDelete</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtldeletenosplay.md">RtlDeleteNoSplay</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlinsertasrightchild.md">RtlInsertAsRightChild</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
+
 <a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-rtldeletenosplay.md">RtlDeleteNoSplay</a>
+
  
 
  

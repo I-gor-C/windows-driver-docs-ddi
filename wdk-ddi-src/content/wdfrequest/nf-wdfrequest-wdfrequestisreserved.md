@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8cbf75c4-d54c-45e0-9abb-bef8e76fb9fe
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestIsReserved
+ms.keywords : wdfrequest/WdfRequestIsReserved, kmdf.wdfrequestisreserved, DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml, PFN_WDFREQUESTISRESERVED, wdf.wdfrequestisreserved, WdfRequestIsReserved method, WdfRequestIsReserved
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.9
 req.umdf-ver : 
-req.alt-api : WdfRequestIsReserved
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,8 +68,6 @@ A handle to a framework request object.
 
 For more information about the <b>WdfRequestIsReserved</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/guaranteeing-forward-progress-of-i-o-operations">Guaranteeing Forward Progress of I/O Operations</a>.
 
-The following code example determines whether a request object that a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_read.md">EvtIoRead</a> callback function has received is one that the driver created for low-memory situations.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -80,11 +82,8 @@ The following code example determines whether a request object that a driver's <
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
-</dt>
-</dl>
+
  
 
  

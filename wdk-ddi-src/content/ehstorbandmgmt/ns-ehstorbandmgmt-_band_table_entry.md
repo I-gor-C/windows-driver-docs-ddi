@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6956327E-5407-4771-9BB9-F59D752A5410
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _BAND_TABLE_ENTRY, BAND_TABLE_ENTRY, *PBAND_TABLE_ENTRY
+ms.keywords : PBAND_TABLE_ENTRY, BAND_TABLE_ENTRY structure [Storage Devices], BAND_TABLE_ENTRY, _BAND_TABLE_ENTRY, *PBAND_TABLE_ENTRY, ehstorbandmgmt/PBAND_TABLE_ENTRY, ehstorbandmgmt/BAND_TABLE_ENTRY, PBAND_TABLE_ENTRY structure pointer [Storage Devices], storage.band_table_entry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BAND_TABLE_ENTRY
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BAND_TABLE_ENTRY, *PBAND_TABLE_ENTRY
 ---
 
@@ -48,18 +52,18 @@ typedef struct _BAND_TABLE_ENTRY {
 
 ## Members
 
-        
-            `BandId`
 
-            The band identifier for a configured band on a storage device.
-        
-            `LocationInfo`
+`BandId`
 
-            The band location information.
-        
-            `SecurityInfo`
+The band identifier for a configured band on a storage device.
 
-            The band security information. This includes encryption algorithm information when selected in <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>.
+`LocationInfo`
+
+The band location information.
+
+`SecurityInfo`
+
+The band security information. This includes encryption algorithm information when selected in <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>.
 
 
 ## Requirements
@@ -70,22 +74,16 @@ typedef struct _BAND_TABLE_ENTRY {
 | **Minimum UMDF version** |  |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_security_info.md">BAND_SECURITY_INFO</a>
-</dt>
-<dt>
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table.md">BAND_TABLE</a>
-</dt>
-<dt>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_security_info.md">BAND_SECURITY_INFO</a>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
+
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 469896b3-3ae0-4edd-9fb0-ee5869633872
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MESSAGE_INTERRUPT_INFORMATION, *PMESSAGE_INTERRUPT_INFORMATION, MESSAGE_INTERRUPT_INFORMATION
+ms.keywords : storage.message_interrupt_information, PMESSAGE_INTERRUPT_INFORMATION, storport/PMESSAGE_INTERRUPT_INFORMATION, MESSAGE_INTERRUPT_INFORMATION structure [Storage Devices], *PMESSAGE_INTERRUPT_INFORMATION, _MESSAGE_INTERRUPT_INFORMATION, PMESSAGE_INTERRUPT_INFORMATION structure pointer [Storage Devices], storport/MESSAGE_INTERRUPT_INFORMATION, structs-storport_a918acbf-24eb-4112-8bab-bb2ee441064e.xml, MESSAGE_INTERRUPT_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MESSAGE_INTERRUPT_INFORMATION
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMESSAGE_INTERRUPT_INFORMATION, MESSAGE_INTERRUPT_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MESSAGE_INTERRUPT_INFORMATION, *PMESSAGE_INTERRUPT_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -52,33 +56,33 @@ typedef struct _MESSAGE_INTERRUPT_INFORMATION {
 
 ## Members
 
-        
-            `InterruptLevel`
 
-            The interrupt level associated with the message.
-        
-            `InterruptMode`
+`InterruptLevel`
 
-            A value of type <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> that specifies the interrupt mode associated with the message.
-        
-            `InterruptVector`
+The interrupt level associated with the message.
 
-            The interrupt vector associated with the message.
-        
-            `MessageAddress`
+`InterruptMode`
 
-            The physical address associated with the message.
-        
-            `MessageData`
+A value of type <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> that specifies the interrupt mode associated with the message.
 
-            The data associated with the message.
-        
-            `MessageId`
+`InterruptVector`
 
-            An identifier identifies the MSI interrupt. A miniport driver can pass this value to <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a> in the <i>MessageId</i> parameter to obtain a spin lock for synchronization purposes.
+The interrupt vector associated with the message.
 
-    ## Remarks
-        Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMATION</b> structure by calling the <a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a> routine.
+`MessageAddress`
+
+The physical address associated with the message.
+
+`MessageData`
+
+The data associated with the message.
+
+`MessageId`
+
+An identifier identifies the MSI interrupt. A miniport driver can pass this value to <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a> in the <i>MessageId</i> parameter to obtain a spin lock for synchronization purposes.
+
+## Remarks
+Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMATION</b> structure by calling the <a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,13 +92,10 @@ typedef struct _MESSAGE_INTERRUPT_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a>
-</dt>
-</dl>
+
  
 
  

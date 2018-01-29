@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 35149395-4238-41fd-ae96-6491534e3cc1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WheaIsValidErrorRecordSignature
+ms.keywords : whea.wheaisvaliderrorrecordsignature, WheaIsValidErrorRecordSignature, whearef2_6ba74e00-cc1f-49e9-b6ee-b300571eb412.xml, ntddk/WheaIsValidErrorRecordSignature, WheaIsValidErrorRecordSignature function [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WheaIsValidErrorRecordSignature
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,17 +79,12 @@ The <b>WheaIsValidErrorRecordSignature </b>function verifies that the specified 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">Error record</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
+
  
 
  

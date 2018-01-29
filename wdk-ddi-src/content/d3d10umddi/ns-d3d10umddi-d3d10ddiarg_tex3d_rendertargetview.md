@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2feff5f5-a104-4738-94be-add08fd99037
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_TEX3D_RENDERTARGETVIEW, D3D10DDIARG_TEX3D_RENDERTARGETVIEW
+ms.keywords : D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure [Display Devices], d3d10umddi/D3D10DDIARG_TEX3D_RENDERTARGETVIEW, UMDisplayDriver_Dx10param_Structs_705e661d-890a-45db-a805-60d2c2cbde6f.xml, display.d3d10ddiarg_tex3d_rendertargetview, D3D10DDIARG_TEX3D_RENDERTARGETVIEW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10DDIARG_TEX3D_RENDERTARGETVIEW
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10DDIARG_TEX3D_RENDERTARGETVIEW
 ---
 
@@ -48,18 +52,18 @@ typedef struct D3D10DDIARG_TEX3D_RENDERTARGETVIEW {
 
 ## Members
 
-        
-            `FirstW`
 
-            [in] The identifier of the first array slice.
-        
-            `MipSlice`
+`FirstW`
 
-            [in] The identifier of the MIP-map slice.
-        
-            `WSize`
+[in] The identifier of the first array slice.
 
-            [in] The number of array slices for the texture.
+`MipSlice`
+
+[in] The identifier of the MIP-map slice.
+
+`WSize`
+
+[in] The number of array slices for the texture.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct D3D10DDIARG_TEX3D_RENDERTARGETVIEW {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivaterendertargetviewsize.md">CalcPrivateRenderTargetViewSize</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createrendertargetview.md">CreateRenderTargetView</a>
-</dt>
-<dt>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivaterendertargetviewsize.md">CalcPrivateRenderTargetViewSize</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createrendertargetview.md">D3D10DDIARG_CREATERENDERTARGETVIEW</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6765d7d5-528f-42c5-98c3-0484608a020b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerClassSendSrbSynchronous
+ms.keywords : mcd/ChangerClassSendSrbSynchronous, chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, ChangerClassSendSrbSynchronous routine [Storage Devices], ChangerClassSendSrbSynchronous, storage.changerclasssendsrbsynchronous
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerClassSendSrbSynchronous
-req.alt-loc : Mcd.lib,Mcd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mcd.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -99,11 +103,8 @@ If the IRP fails and the sense request data indicates that the IRP should be ret
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

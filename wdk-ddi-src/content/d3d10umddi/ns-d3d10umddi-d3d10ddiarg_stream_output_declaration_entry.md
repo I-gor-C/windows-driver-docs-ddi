@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 42d01b63-ca3b-4348-bf50-a1d648548266
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
+ms.keywords : D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure [Display Devices], display.d3d10ddiarg_stream_output_declaration_entry, d3d10umddi/D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, UMDisplayDriver_Dx10param_Structs_bdfafade-cf99-4cbb-9ae1-d1bd57997dac.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 ---
 
@@ -48,18 +52,18 @@ typedef struct D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 
 ## Members
 
-        
-            `OutputSlot`
 
-            [in] The number of the slot for the portion of the stream output.
-        
-            `RegisterIndex`
+`OutputSlot`
 
-            [in] The number of the register for the portion of the stream output.
-        
-            `RegisterMask`
+[in] The number of the slot for the portion of the stream output.
 
-            [in] The xyzw register mask for the portion of the stream output. That is, the four least signifigant bits (LSBs) of the mask represent xyzw respectively.
+`RegisterIndex`
+
+[in] The number of the register for the portion of the stream output.
+
+`RegisterMask`
+
+[in] The xyzw register mask for the portion of the stream output. That is, the four least signifigant bits (LSBs) of the mask represent xyzw respectively.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_creategeometryshaderwithstreamoutput.md">D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
-</dt>
-</dl>
+
  
 
  

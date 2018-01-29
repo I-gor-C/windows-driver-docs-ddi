@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : e13b7a7e-4acb-4a77-ac46-94af2ebccc20
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY
+ms.keywords : spb/SPB_TRANSFER_LIST_ENTRY, PSPB_TRANSFER_LIST_ENTRY structure pointer [Buses], SPB.spb_transfer_list_entry, SPB_TRANSFER_LIST_ENTRY, spb/PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY structure [Buses], PSPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPB_TRANSFER_LIST_ENTRY
-req.alt-loc : Spb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY"
 req.product : Windows 10 or later.
 ---
@@ -49,26 +53,25 @@ typedef struct SPB_TRANSFER_LIST_ENTRY {
 
 ## Members
 
-        
-            `Buffer`
 
-            The buffer for this transfer. This member uses one of the following buffer formats: simple buffer, scatter-gather list, or (for kernel-mode clients) MDL. For more information about buffer formats, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406215">SPB_TRANSFER_BUFFER</a>.
-        
-            `DelayInUs`
+`Buffer`
 
-            An optional delay, in microseconds, before this transfer begins. For more information, see the description of the <b>DelayInUs</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>.
-        
-            `Direction`
+The buffer for this transfer. This member uses one of the following buffer formats: simple buffer, scatter-gather list, or (for kernel-mode clients) MDL. For more information about buffer formats, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406215">SPB_TRANSFER_BUFFER</a>.
 
-            The direction of the transfer.  This member is set to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a> enumeration values:
+`DelayInUs`
 
+An optional delay, in microseconds, before this transfer begins. For more information, see the description of the <b>DelayInUs</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>.
+
+`Direction`
+
+The direction of the transfer.  This member is set to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a> enumeration values:
 <ul>
 <li><b>SpbTransferDirectionFromDevice</b></li>
 <li><b>SpbTransferDirectionToDevice</b></li>
 </ul>
 
-    ## Remarks
-        To request an I/O transfer sequence for a target device on the bus, a client (peripheral driver) of the SPB controller driver sends an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> request that describes the sequence. The transfers in the sequence are described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a> structure that is followed by an array of one or more <b>SPB_TRANSFER_LIST_ENTRY</b> structures. Each element in this array describes an individual transfer in the sequence.
+## Remarks
+To request an I/O transfer sequence for a target device on the bus, a client (peripheral driver) of the SPB controller driver sends an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> request that describes the sequence. The transfers in the sequence are described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a> structure that is followed by an array of one or more <b>SPB_TRANSFER_LIST_ENTRY</b> structures. Each element in this array describes an individual transfer in the sequence.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,25 +81,18 @@ typedef struct SPB_TRANSFER_LIST_ENTRY {
 | **Minimum UMDF version** |  |
 | **Header** | spb.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406215">SPB_TRANSFER_BUFFER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406215">SPB_TRANSFER_BUFFER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a>
-</dt>
-</dl>
+
  
 
  

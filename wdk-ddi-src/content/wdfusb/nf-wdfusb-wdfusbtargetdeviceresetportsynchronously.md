@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4f0941ea-ccbb-4345-82c0-ec5d88862b05
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceResetPortSynchronously
+ms.keywords : WdfUsbTargetDeviceResetPortSynchronously method, wdfusb/WdfUsbTargetDeviceResetPortSynchronously, wdf.wdfusbtargetdeviceresetportsynchronously, DFUsbRef_423196d9-8f58-462a-91b3-9d747a12d6df.xml, WdfUsbTargetDeviceResetPortSynchronously, PFN_WDFUSBTARGETDEVICERESETPORTSYNCHRONOUSLY, kmdf.wdfusbtargetdeviceresetportsynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfUsbTargetDeviceResetPortSynchronously
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -59,11 +63,23 @@ A handle to a USB device object that was obtained from a previous call to <a hre
 ## Return Value
 
 <b>WdfUsbTargetDeviceResetPortSynchronously</b> returns the USB I/O target's completion status value if the operation succeeds. Otherwise, this method can return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The caller's IRQL was invalid.
+</dl>
+</td>
+<td width="60%">
+The caller's IRQL was invalid.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -81,8 +97,6 @@ After a successful reset operation, the bus driver reselects the configuration a
 
 For more information about the <b>WdfUsbTargetDeviceResetPortSynchronously</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example resets a specified device's USB port.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,11 +111,8 @@ The following code example resets a specified device's USB port.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-</dt>
-</dl>
+
  
 
  

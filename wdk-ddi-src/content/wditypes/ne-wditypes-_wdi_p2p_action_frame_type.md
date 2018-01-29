@@ -7,8 +7,8 @@ old-location : netvista\wdi_p2p_action_frame_type.htm
 old-project : netvista
 ms.assetid : 3E1C92D2-FFE0-402F-BE14-18AFB03F3FE4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_P2P_ACTION_FRAME_TYPE, WDI_P2P_ACTION_FRAME_TYPE
+ms.date : 1/18/2018
+ms.keywords : WDI_P2P_ACTION_FRAME_INVITATION_REQUEST, wditypes/WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_RESPONSE, _WDI_P2P_ACTION_FRAME_TYPE, WDI_P2P_ACTION_FRAME_TYPE, netvista.wdi_p2p_action_frame_type, wditypes/WDI_P2P_ACTION_FRAME_TYPE, wditypes/WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM, WDI_P2P_ACTION_FRAME_INVITATION_RESPONSE, WDI_P2P_ACTION_FRAME_TYPE enumeration [Device and Driver Installation], WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM, wditypes/WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_RESPONSE, wditypes/WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_REQUEST, wditypes/WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_REQUEST, WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_RESPONSE, netvista.wifi_p2p_action_frame_type, wditypes/WDI_P2P_ACTION_FRAME_INVITATION_RESPONSE, WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_REQUEST, WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_RESPONSE, wditypes/WDI_P2P_ACTION_FRAME_INVITATION_REQUEST, WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_P2P_ACTION_FRAME_TYPE
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_P2P_ACTION_FRAME_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,6 +82,11 @@ typedef enum _WDI_P2P_ACTION_FRAME_TYPE {
 <tr>
 <td>WDI_P2P_ACTION_FRAME_INVITATION_RESPONSE</td>
 <td>Wi-Fi Direct Invitation Response.</td>
+</tr>
+
+<tr>
+<td>WDI_P2P_ACTION_FRAME_MAX_VALUE</td>
+<td></td>
 </tr>
 
 <tr>

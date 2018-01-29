@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 829bb05b-5e2d-4aba-ab34-127812235f46
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, *PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES
+ms.keywords : PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES structure pointer [Buses], UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, _UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES structure [Buses], buses.ucmtcpci_port_controller_capabilities, *PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCMTCPCI_PORT_CONTROLLER_CAPABILITIES
-req.alt-loc : ucmtcpciportcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES"
 req.product : Windows 10 or later.
 ---
@@ -54,33 +58,33 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_CAPABILITIES {
 
 ## Members
 
-        
-            `DeviceCapabilities1`
 
-            A 
+`DeviceCapabilities1`
+
+A 
                  <b>UCMTCPCI_PORT_CONTROLLER_DEVICE_CAPABILITIES_1</b> structure that describes the  DEVICE_CAPABILITIES_1 Register as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.
-        
-            `DeviceCapabilities2`
 
-            A 
+`DeviceCapabilities2`
+
+A 
                  <b>UCMTCPCI_PORT_CONTROLLER_DEVICE_CAPABILITIES_2</b> structure that describes the  DEVICE_CAPABILITIES_2 Register as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.
-        
-            `IsPowerDeliveryCapable`
 
-            Indicates whether the port controller supports <a href="http://go.microsoft.com/fwlink/p/?LinkID=623310">USB Power Delivery</a>.
-        
-            `Size`
+`IsPowerDeliveryCapable`
 
-            The size of this structure.
-        
-            `StandardInputCapabilities`
+Indicates whether the port controller supports <a href="http://go.microsoft.com/fwlink/p/?LinkID=623310">USB Power Delivery</a>.
 
-            A 
+`Size`
+
+The size of this structure.
+
+`StandardInputCapabilities`
+
+A 
                  <b>UCMTCPCI_PORT_CONTROLLER_STANDARD_INPUT_CAPABILITIES</b> structure that describes the  STANDARD_INPUT_CAPABILITIES Register as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.
-        
-            `StandardOutputCapabilities`
 
-            A 
+`StandardOutputCapabilities`
+
+A 
                  <b>UCMTCPCI_PORT_CONTROLLER_STANDARD_OUTPUT_CAPABILITIES</b> structure that describes the  STANDARD_OUTPUT_CAPABILITIES Register as per the Universal Serial Bus Type-C Port Controller Interface Specification. This structure is declared in UcmTcpciSpec.h.
 
 
@@ -92,16 +96,12 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_CAPABILITIES {
 | **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontroller.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
-</dt>
-<dt>
 <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpci_port_controller_capabilities_init.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT</a>
-</dt>
-</dl>
+
+<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
+
  
 
  

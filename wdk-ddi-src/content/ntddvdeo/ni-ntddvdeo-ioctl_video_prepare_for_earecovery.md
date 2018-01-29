@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 71cd4559-9cb3-468e-a53e-fb40b97a90b6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_prepare_for_earecovery, IOCTL_VIDEO_PREPARE_FOR_EARECOVERY control code [Display Devices], IOCTL_VIDEO_PREPARE_FOR_EARECOVERY, ntddvdeo/IOCTL_VIDEO_PREPARE_FOR_EARECOVERY, Video_IOCTLs_72bcebdd-6335-4953-9a23-00061760b4a4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_PREPARE_FOR_EARECOVERY
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_PREPARE_FOR_EARECOVERY IOCTL
-This IOCTL is for internal use only.
-
-
-
 This IOCTL is for internal use only.
 
 ### Major Code

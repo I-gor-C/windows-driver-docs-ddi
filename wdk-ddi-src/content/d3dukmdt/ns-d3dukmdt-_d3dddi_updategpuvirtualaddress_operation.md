@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BCA741A8-2294-43C1-8B9C-3724274D637B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION
+ms.keywords : D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION structure [Display Devices], d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, display.d3dddi_updategpuvirtualaddress_operation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION
 ---
 
@@ -74,10 +78,10 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 
 ## Members
 
-        
-            `OperationType`
 
-            
+`OperationType`
+
+
 
 
 ## Requirements
@@ -88,16 +92,12 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
-</dt>
-</dl>
+
  
 
  

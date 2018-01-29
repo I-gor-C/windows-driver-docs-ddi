@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a066d78b-f6c7-484a-9d62-3578bbd063a2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlLookupPerFileObjectContext
+ms.keywords : FsRtlLookupPerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlLookupPerFileObjectContext, FsRtlLookupPerFileObjectContext, ifsk.fsrtllookupperfileobjectcontext, fsrtlref_1b9542db-9037-400a-97e2-1bcfddcd1957.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlLookupPerFileObjectContext
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -78,6 +82,7 @@ To initialize a per-file-object context structure, use the <a href="https://msdn
 To associate an initialized per-file-object context structure with a file object, use the <b>FsRtlInsertPerFileObjectContext</b> function.
 
 To remove a per-file-object context structure that is associated with a file object, use the <a href="..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md">FsRtlRemovePerFileObjectContext</a> function.
+<div class="alert"><b>Note</b>  File system minifilter drivers must not use the <b>FsRtl</b><i>Xxx</i><b>PerFileObjectContext</b> functions. Instead, minifilters can use the <b>Flt</b><i>Xxx</i><b>Context</b> functions to associate context information with a file object. For a complete list, see the <a href="..\ntifs\ns-ntifs-_fsrtl_per_fileobject_context.md">FSRTL_PER_FILEOBJECT_CONTEXT</a> topic.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,20 +98,14 @@ To remove a per-file-object context structure that is associated with a file obj
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_fsrtl_per_fileobject_context.md">FSRTL_PER_FILEOBJECT_CONTEXT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md">FsRtlLookupPerFileObjectContext</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
+
 <a href="..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md">FsRtlRemovePerFileObjectContext</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_fsrtl_per_fileobject_context.md">FSRTL_PER_FILEOBJECT_CONTEXT</a>
+
  
 
  

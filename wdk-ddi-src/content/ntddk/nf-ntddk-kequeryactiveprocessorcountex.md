@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3884eb16-56a0-4b48-abf3-a74794b2c996
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryActiveProcessorCountEx
+ms.keywords : wdm/KeQueryActiveProcessorCountEx, k105_7cd9a091-c100-4b0c-9ea0-9b831407d5a1.xml, KeQueryActiveProcessorCountEx, kernel.kequeryactiveprocessorcountex, KeQueryActiveProcessorCountEx routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeQueryActiveProcessorCountEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -79,14 +83,10 @@ For a code example that uses <b>KeQueryActiveProcessorCountEx</b>, see <a href="
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kequeryactiveprocessorcount.md">KeQueryActiveProcessorCount</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
+
  
 
  

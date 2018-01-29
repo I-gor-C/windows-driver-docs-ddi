@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FCF9DCD1-2C04-47E3-97C5-7ACC28B28C6C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : UFS_POWER_DESCRIPTOR, *PUFS_POWER_DESCRIPTOR, UFS_POWER_DESCRIPTOR
+ms.keywords : UFS_POWER_DESCRIPTOR structure [Storage Devices], ufs/UFS_POWER_DESCRIPTOR, ufs/PUFS_POWER_DESCRIPTOR, PUFS_POWER_DESCRIPTOR, storage.ufs_power_descriptor, UFS_POWER_DESCRIPTOR, PUFS_POWER_DESCRIPTOR structure pointer [Storage Devices], *PUFS_POWER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UFS_POWER_DESCRIPTOR
-req.alt-loc : Ufs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUFS_POWER_DESCRIPTOR, UFS_POWER_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UFS_POWER_DESCRIPTOR, *PUFS_POWER_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -51,28 +55,28 @@ typedef struct _UFS_POWER_DESCRIPTOR {
 
 ## Members
 
-        
-            `bDescriptorIDN`
 
-            Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_POWER_IDN</b>.
-        
-            `bLength`
+`bDescriptorIDN`
 
-            Specifies the length, in bytes, of this descriptor.
-        
-            `wActiveICCLevelsVCC`
+Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_POWER_IDN</b>.
 
-            Specifies the maximum VCC current value for
+`bLength`
+
+Specifies the length, in bytes, of this descriptor.
+
+`wActiveICCLevelsVCC`
+
+Specifies the maximum VCC current value for
 each UFS_bActiveICCLevel, based on the index value.
-        
-            `wActiveICCLevelsVCCQ`
 
-            Specifies the maximum VCCQ current value for
+`wActiveICCLevelsVCCQ`
+
+Specifies the maximum VCCQ current value for
 each UFS_bActiveICCLevel, based on the index value.
-        
-            `wActiveICCLevelsVCCQ2`
 
-            Specifies the maximum VCCQ current value for
+`wActiveICCLevelsVCCQ2`
+
+Specifies the maximum VCCQ current value for
 each UFS_bActiveICCLevel, based on the index value.
 
 

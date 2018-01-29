@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3A8B040D-7B48-4CDB-985B-906AE1762E22
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfncheckcounter, D3DDDI_COUNTER_TYPE, pfnCheckCounter callback function [Display Devices], pfnCheckCounter, PFND3DDDI_CHECKCOUNTER, PFND3DDDI_CHECKCOUNTER, d3dumddi/pfnCheckCounter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnCheckCounter
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -104,11 +108,25 @@ A handle to the display device (graphics context).
 ## Return Value
 
 If this routine succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HRESULT</b> error code, including the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>An out-of-range device-dependent counter is requested, or a string length is not large enough for a buffer to contain the entire string.
+</dl>
+</td>
+<td width="60%">
+An out-of-range device-dependent counter is requested, or a string length is not large enough for a buffer to contain the entire string.
 
 Even though all strings used in this function are based on Unicode, they are always in the English locale and are not localized to other locales.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -135,14 +153,10 @@ If a counter ID can always be monitored (and it doesn't interfere with monitorin
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounter.md">CheckCounter</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createquery.md">D3DDDIQUERYTYPE</a>
-</dt>
-</dl>
+
  
 
  

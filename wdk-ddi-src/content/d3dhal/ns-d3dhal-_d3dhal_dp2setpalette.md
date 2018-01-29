@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8c472869-028e-41f5-93df-94e91c47b76e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETPALETTE, D3DHAL_DP2SETPALETTE, *LPD3DHAL_DP2SETPALETTE
+ms.keywords : LPD3DHAL_DP2SETPALETTE, D3DHAL_DP2SETPALETTE structure [Display Devices], _D3DHAL_DP2SETPALETTE, display.d3dhal_dp2setpalette, d3dhal/LPD3DHAL_DP2SETPALETTE, LPD3DHAL_DP2SETPALETTE structure pointer [Display Devices], *LPD3DHAL_DP2SETPALETTE, D3DHAL_DP2SETPALETTE, d3dstrct_da8023c8-d0a5-4793-a433-6f8860f0f11f.xml, d3dhal/D3DHAL_DP2SETPALETTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETPALETTE
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETPALETTE
 ---
 
@@ -48,11 +52,10 @@ typedef struct _D3DHAL_DP2SETPALETTE {
 
 ## Members
 
-        
-            `dwPaletteFlags`
 
-            Specifies a set of flags that specify the attributes of the palette.
+`dwPaletteFlags`
 
+Specifies a set of flags that specify the attributes of the palette.
 <table>
 <tr>
 <th>Flag</th>
@@ -199,17 +202,17 @@ The palette is stored as an 8-bit index into a destination palette. Currently un
 </td>
 </tr>
 </table>
-        
-            `dwPaletteHandle`
 
-            Specifies a handle to the palette to be set up. If the value is zero, the surface specified by <b>dwSurfaceHandle</b> should be uncoupled from any palette it might have been associated with previously.
-        
-            `dwSurfaceHandle`
+`dwPaletteHandle`
 
-            Specifies a handle to the Direct3D surface (texture) that this palette (identified by <b>dwPaletteHandle</b>) is associated to.
+Specifies a handle to the palette to be set up. If the value is zero, the surface specified by <b>dwSurfaceHandle</b> should be uncoupled from any palette it might have been associated with previously.
 
-    ## Remarks
-        The number of D3DHAL_DP2SETPALETTE structures to follow is specified by the <b>wStateCount</b> member of the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure that precedes them in the command stream.
+`dwSurfaceHandle`
+
+Specifies a handle to the Direct3D surface (texture) that this palette (identified by <b>dwPaletteHandle</b>) is associated to.
+
+## Remarks
+The number of D3DHAL_DP2SETPALETTE structures to follow is specified by the <b>wStateCount</b> member of the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure that precedes them in the command stream.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -219,17 +222,14 @@ The palette is stored as an 8-bit index into a destination palette. Currently un
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_SETPALETTE</dt>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-</dl>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+D3DDP2OP_SETPALETTE
+
  
 
  

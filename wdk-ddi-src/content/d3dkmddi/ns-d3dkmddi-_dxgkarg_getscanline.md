@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 92138511-46cf-4c8b-84d0-a11fe9208be5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_GETSCANLINE, DXGKARG_GETSCANLINE, *INOUT_PDXGKARG_GETSCANLINE
+ms.keywords : "*INOUT_PDXGKARG_GETSCANLINE, display.dxgkarg_getscanline, DmStructs_9e2cdcde-c2ca-4474-9c96-ee66a80f0295.xml, DXGKARG_GETSCANLINE, DXGKARG_GETSCANLINE structure [Display Devices], d3dkmddi/DXGKARG_GETSCANLINE, _DXGKARG_GETSCANLINE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_GETSCANLINE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_GETSCANLINE
 ---
 
@@ -48,21 +52,21 @@ typedef struct _DXGKARG_GETSCANLINE {
 
 ## Members
 
-        
-            `InVerticalBlank`
 
-            [out] A Boolean variable that receives <b>TRUE</b> if the video present target is in vertical blanking mode and <b>FALSE</b> if the video present target is not in vertical blanking mode.
-        
-            `ScanLine`
+`InVerticalBlank`
 
-            [out] The video present target's current scan line.
-        
-            `VidPnTargetId`
+[out] A Boolean variable that receives <b>TRUE</b> if the video present target is in vertical blanking mode and <b>FALSE</b> if the video present target is not in vertical blanking mode.
 
-            [in] The identifier of a display adapter's video present target.
+`ScanLine`
 
-    ## Remarks
-        A video present path represents a connection between a video present source (view) and a video present target (output) on a display adapter. For more information about video present networks, paths, sources, and targets, see <a href="https://msdn.microsoft.com/62a92f00-b1da-41c2-99af-eef8140b064e">Introduction to Video Present Networks</a>.
+[out] The video present target's current scan line.
+
+`VidPnTargetId`
+
+[in] The identifier of a display adapter's video present target.
+
+## Remarks
+A video present path represents a connection between a video present source (view) and a video present target (output) on a display adapter. For more information about video present networks, paths, sources, and targets, see <a href="https://msdn.microsoft.com/62a92f00-b1da-41c2-99af-eef8140b064e">Introduction to Video Present Networks</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,13 +76,10 @@ typedef struct _DXGKARG_GETSCANLINE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getscanline.md">DxgkDdiGetScanLine</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 03ebdeed-10f0-4633-a9cd-4db683a8c3a7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords : kernel.pnpgetlocationstring, PnpGetLocationString routine [Kernel-Mode Driver Architecture], PnpGetLocationString, PGET_LOCATION_STRING, PGET_LOCATION_STRING, ntddk/PnpGetLocationString, drvr_interface_86bd2a9c-408f-430f-9ab7-5c368600de1e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Server 2003.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PnpGetLocationString
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 
@@ -75,7 +79,7 @@ The routine must return a string that is unique to the device relative to its bu
 
 By convention, the location string takes the form <i>ServiceName(BusSpecificLocation)</i>. For example, PCI devices use PCI(<i>XXYY</i>), where <i>XX</i> is the device number, and <i>YY</i> is the function number.
 
-The <i>PnpGetLocationString</i> routine calls a routine such as <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> to allocate the memory for the location string. The caller is responsible for calling the <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> routine to free the memory pointed to by <i>LocationStrings</i> when the location string is no longer needed.
+The <i>PnpGetLocationString</i> routine calls a routine such as <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> to allocate the memory for the location string. The caller is responsible for calling the <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> routine to free the memory pointed to by <i>LocationStrings</i> when the location string is no longer needed.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,17 +95,12 @@ The <i>PnpGetLocationString</i> routine calls a routine such as <a href="..\wdm\
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_pnp_location_interface.md">PNP_LOCATION_INTERFACE</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7a5043b9-2517-454a-a8d3-1ea09143c81a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeImpersonateClientEx
+ms.keywords : ifsk.seimpersonateclientex, SeImpersonateClientEx routine [Installable File System Drivers], ntifs/SeImpersonateClientEx, SeImpersonateClientEx, seref_557d14bb-0d77-4bc8-8c75-57bb3c789963.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeImpersonateClientEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,15 +65,45 @@ Pointer to the thread that is to impersonate the user. If not specified, the cal
 ## Return Value
 
 <b>SeImpersonateClientEx</b> returns an appropriate NTSTATUS value, such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The impersonation attempt succeeded.
+</dl>
+</td>
+<td width="60%">
+The impersonation attempt succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The thread specified in <i>ServerThread</i> parameter did not have sufficient access rights to impersonate the user whose security client context is specified in the <i>ClientContext</i> parameter.
+</dl>
+</td>
+<td width="60%">
+The thread specified in <i>ServerThread</i> parameter did not have sufficient access rights to impersonate the user whose security client context is specified in the <i>ClientContext</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl><b>SeImpersonateClientEx</b> encountered a pool allocation failure when allocating memory for the impersonation information structure.
+</dl>
+</td>
+<td width="60%">
+<b>SeImpersonateClientEx</b> encountered a pool allocation failure when allocating memory for the impersonation information structure.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -99,20 +133,14 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-secreateclientsecurityfromsubjectcontext.md">SeCreateClientSecurityFromSubjectContext</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556717">SeStopImpersonatingClient</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-secreateclientsecurityfromsubjectcontext.md">SeCreateClientSecurityFromSubjectContext</a>
+
+<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
+
+<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
+
  
 
  

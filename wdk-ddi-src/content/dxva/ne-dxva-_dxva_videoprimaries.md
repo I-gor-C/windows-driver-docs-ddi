@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8aa6ba31-aec0-4a92-ad0e-6c19b796e398
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_VideoPrimaries, DXVA_VideoPrimaries
+ms.keywords : DXVA_VideoPrimaries_BT470_2_SysBG, dxva/DXVA_VideoPrimariesShift, dxva/DXVA_VideoPrimaries_BT470_2_SysM, DXVA_VideoPrimariesMask, dxva/DXVA_VideoPrimaries_BT470_2_SysBG, dxva/DXVA_VideoPrimaries_BT709, DXVA_VideoPrimaries_Unknown, DXVA_VideoPrimaries_reserved, display.dxva_videoprimaries, dxva/DXVA_VideoPrimaries_Unknown, dxva/DXVA_VideoPrimaries, DXVA_VideoPrimariesShift, dxva/DXVA_VideoPrimaries_EBU3213, DXVA_VideoPrimaries, dxva/DXVA_VideoPrimariesMask, DXVA_VideoPrimaries_SMPTE170M, DXVA_VideoPrimaries_BT709, DXVA_VideoPrimaries_EBU3213, DXVA_VideoPrimaries enumeration [Display Devices], dxva/DXVA_VideoPrimaries_SMPTE170M, DXVA_VideoPrimaries_SMPTE240M, dxva/DXVA_VideoPrimaries_SMPTE_C, _DXVA_VideoPrimaries, DXVA_VideoPrimaries_BT470_2_SysM, dxva/DXVA_VideoPrimaries_SMPTE240M, dxva/DXVA_VideoPrimaries_reserved, dxvaref_c0e5c7be-4039-438c-a883-30bb242a5c50.xml, DXVA_VideoPrimaries_SMPTE_C
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This enumeration type applies only to Windows Server
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_VideoPrimaries
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoPrimaries
 ---
 
@@ -128,11 +132,8 @@ One of the enumerators of DXVA_VideoPrimaries can be specified in the <b>VideoPr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-</dt>
-</dl>
+
  
 
  

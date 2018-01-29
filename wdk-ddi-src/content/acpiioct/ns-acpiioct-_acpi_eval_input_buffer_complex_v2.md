@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : EAF78C14-7BE1-4441-B372-5AB0711E1F19
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2
+ms.keywords : "*PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2 structure [ACPI Devices], acpi.acpi_eval_input_buffer_complex_v2, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2 structure pointer [ACPI Devices], acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709 and later versions.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2
-req.alt-loc : Acpiioct.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2 structure
@@ -53,22 +57,26 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2 {
 
 ## Members
 
-        
-            `ArgumentCount`
 
-            Defines the <b>ULONG</b> member <b>ArgumentCount</b>.
-        
-            `DUMMYUNIONNAME`
+`Argument`
 
-            Defines the method name member of <b>DUMMYUNIONNAME</b>.
-        
-            `Signature`
 
-            Defines the <b>ULONG</b> member <b>Signature</b>.
-        
-            `Size`
 
-            Defines the <b>ULONG</b> member <b>Size</b>.
+`ArgumentCount`
+
+Defines the <b>ULONG</b> member <b>ArgumentCount</b>.
+
+`DUMMYUNIONNAME`
+
+Defines the method name member of <b>DUMMYUNIONNAME</b>.
+
+`Signature`
+
+Defines the <b>ULONG</b> member <b>Signature</b>.
+
+`Size`
+
+Defines the <b>ULONG</b> member <b>Size</b>.
 
 
 ## Requirements

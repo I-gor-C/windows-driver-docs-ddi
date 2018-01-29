@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5ba5cfe7-a745-497e-b5ce-8c7b3d4929f5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoEndDeviceBusy
+ms.keywords : wdm/PoEndDeviceBusy, kernel.poenddevicebusy, PoEndDeviceBusy routine [Kernel-Mode Driver Architecture], PoEndDeviceBusy, portn_edd72e85-e155-4a0c-9d6a-836ad448bb61.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoEndDeviceBusy
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ VOID PoEndDeviceBusy(
 
 `IdlePointer`
 
-A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoEndDeviceBusy</b>.
+A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoEndDeviceBusy</b>.
 
 
 ## Return Value
@@ -59,7 +63,7 @@ None
 
 ## Remarks
 
-The <a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a> and <b>PoEndDeviceBusy</b> routines mark the start and end of a time period in which a device is busy. Each call to <b>PoStartDeviceBusy</b> must be followed by a corresponding call to <b>PoEndDeviceBusy</b>. For more information about how these routines work together, see <a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a>.
+The <a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a> and <b>PoEndDeviceBusy</b> routines mark the start and end of a time period in which a device is busy. Each call to <b>PoStartDeviceBusy</b> must be followed by a corresponding call to <b>PoEndDeviceBusy</b>. For more information about how these routines work together, see <a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,14 +79,10 @@ The <a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a> and <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-postartdevicebusy.md">PoStartDeviceBusy</a>
-</dt>
-</dl>
+<a href="..\wdm\nf-wdm-poregisterdeviceforidledetection.md">PoRegisterDeviceForIdleDetection</a>
+
+<a href="..\wdm\nf-wdm-postartdevicebusy.md">PoStartDeviceBusy</a>
+
  
 
  

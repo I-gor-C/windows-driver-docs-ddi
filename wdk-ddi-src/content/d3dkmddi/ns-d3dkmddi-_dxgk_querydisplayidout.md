@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BF528089-0194-4A3F-B8BA-85F80974C4C2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_QUERYDISPLAYIDOUT, DXGK_QUERYDISPLAYIDOUT
+ms.keywords : DXGK_QUERYDISPLAYIDOUT structure [Display Devices], DXGK_QUERYDISPLAYIDOUT, _DXGK_QUERYDISPLAYIDOUT, display.dxgk_querydisplayidout, d3dkmddi/DXGK_QUERYDISPLAYIDOUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_QUERYDISPLAYIDOUT
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_QUERYDISPLAYIDOUT
 ---
 
@@ -47,14 +51,14 @@ typedef struct _DXGK_QUERYDISPLAYIDOUT {
 
 ## Members
 
-        
-            `Length`
 
-            The length of the Display ID.
-        
-            `pDescriptor`
+`Length`
 
-            A pointer to the descriptor of the ID.
+The length of the Display ID.
+
+`pDescriptor`
+
+A pointer to the descriptor of the ID.
 
 
 ## Requirements

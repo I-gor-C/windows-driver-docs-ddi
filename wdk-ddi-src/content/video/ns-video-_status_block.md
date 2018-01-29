@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8e3126df-d081-4545-a5db-8637ee27f15b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _STATUS_BLOCK, *PSTATUS_BLOCK, STATUS_BLOCK
+ms.keywords : _STATUS_BLOCK, STATUS_BLOCK, PSTATUS_BLOCK, *PSTATUS_BLOCK, display.status_block, video/STATUS_BLOCK, Video_Structs_90f8dc6a-a666-4976-bc71-edf43b31b6e4.xml, video/PSTATUS_BLOCK, PSTATUS_BLOCK structure pointer [Display Devices], STATUS_BLOCK structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STATUS_BLOCK
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTATUS_BLOCK, STATUS_BLOCK"
 req.product : Windows 10 or later.
 ---
 
 # _STATUS_BLOCK structure
-The STATUS_BLOCK structure is a substructure within the VIDEO_REQUEST_PACKET structure. A miniport driver's <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a> function must set the status block of each <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> that it gets.
+The STATUS_BLOCK structure is a substructure within the VIDEO_REQUEST_PACKET structure. A miniport driver's <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a> function must set the status block of each <a href="https://msdn.microsoft.com/a1de1905-09f3-4689-ace9-06690a1f930a">VRP</a> that it gets.
 
 ## Syntax
 ````
@@ -51,10 +55,10 @@ typedef struct _STATUS_BLOCK {
 
 ## Members
 
-        
-            `Information`
 
-            Supplies additional information about the completed operation. The meaning of the value varies according to VRP. Generally, this member is used to return the minimum size required for the input buffer if the VRP passes data in the <b>InputBuffer</b>. Alternatively, it contains the number of bytes of data transferred if the requested operation returns data in the VRP <b>OutputBuffer</b>.
+`Information`
+
+Supplies additional information about the completed operation. The meaning of the value varies according to VRP. Generally, this member is used to return the minimum size required for the input buffer if the VRP passes data in the <b>InputBuffer</b>. Alternatively, it contains the number of bytes of data transferred if the requested operation returns data in the VRP <b>OutputBuffer</b>.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct _STATUS_BLOCK {
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
-</dt>
-<dt>
 <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
+
  
 
  

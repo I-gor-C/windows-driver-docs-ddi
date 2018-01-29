@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3b5cc1af-ab3b-4583-9ef9-39132789e74f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoInitializeIrp
+ms.keywords : k104_5c9dc7a8-747c-4832-a31b-5936e2d3361d.xml, IoInitializeIrp, kernel.ioinitializeirp, wdm/IoInitializeIrp, IoInitializeIrp routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoInitializeIrp
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IoReuseIrp, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -92,35 +96,24 @@ An intermediate or highest-level driver also can call <b>IoBuildDeviceIoControlR
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iosizeofirp.md">IoSizeOfIrp</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>
+
+<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+
+<a href="..\wdm\nf-wdm-iosizeofirp.md">IoSizeOfIrp</a>
+
+<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
  
 
  

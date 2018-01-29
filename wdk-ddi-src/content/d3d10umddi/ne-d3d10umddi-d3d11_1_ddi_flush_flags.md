@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0786c63d-ce4e-47c1-b54f-47f1da90cb64
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1_DDI_FLUSH_FLAGS, D3D11_1_DDI_FLUSH_FLAGS
+ms.keywords : D3D11_1_DDI_FLUSH_FLAGS, d3d10umddi/D3DWDDM1_3DDI_TRIM_MEMORY, d3d10umddi/D3D11_1DDI_FLUSH_UNLESS_NO_COMMANDS, display.d3d11_1_ddi_flush_flags, D3D11_1DDI_FLUSH_UNLESS_NO_COMMANDS, d3d10umddi/D3D11_1_DDI_FLUSH_FLAGS, D3DWDDM1_3DDI_TRIM_MEMORY, D3D11_1_DDI_FLUSH_FLAGS enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1_DDI_FLUSH_FLAGS
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1_DDI_FLUSH_FLAGS
 ---
 
@@ -77,11 +81,8 @@ Supported starting with Windows 8.1 for WDDM 1.3 and later user-mode display dr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_flush.md">Flush(D3D11_1)</a>
-</dt>
-</dl>
+
  
 
  

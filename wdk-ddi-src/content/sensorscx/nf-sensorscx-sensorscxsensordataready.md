@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 9F01D093-226E-4CB4-8085-812115EBA671
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SensorsCxSensorDataReady
+ms.keywords : sensorscx/SensorsCxSensorDataReady, SensorsCxSensorDataReady function [Sensor Devices], sensors.sensorscxsensordataready, SensorsCxSensorDataReady
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SensorsCxSensorDataReady
-req.alt-loc : SensorsCx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -62,12 +66,21 @@ A list of <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698"
 ## Return Value
 
 This function returns NTSTATUS with different values. Some values that may be returned are the following:
-
+<ul>
+<li>
 STATUS_SUCCESS is returned if the function completes successfully.
 
+</li>
+<li>
 STATUS_UNSUCCESSFUL is returned if the function does not complete successfully.
 
+</li>
+<li>
 STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL.
+
+</li>
+</ul><div class="alert"><b>Note</b>  Any client that calls  SensorsCxSensorDataReady must make sure that SensorsCxSensorDataReady is Started, before the call is made.
+        Calling SensorsCxSensorDataReady before it is Started can cause the sensor class extension to become unresponsive.</div><div> </div>
 
 ## Remarks
 
@@ -89,17 +102,12 @@ This function is implemented by the class extension and the driver must call it.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt219125">EvtSensorSetBatchLatency</a>
-</dt>
-<dt>
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor properties</a>
-</dt>
-</dl>
+
+<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
+
  
 
  

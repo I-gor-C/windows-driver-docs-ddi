@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A4DB93FE-96ED-4E6D-B912-31C53AD000FF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, *PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR
+ms.keywords : WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR structure [Storage Devices], PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR structure pointer [Storage Devices], _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, scsi/WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, *PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, scsi/PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, storage.windows_block_device_token_limits_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, *PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR, WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -54,41 +58,41 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 
 ## Members
 
-        
-            `DefaultInactivityTimer`
 
-            The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure is set to 0.
-        
-            `DescriptorLength`
+`DefaultInactivityTimer`
 
-            The length of this structure starting with the <b>VendorSpecific</b> member.
-        
-            `DescriptorType`
+The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure is set to 0.
 
-            The descriptor type identifying this structure. The descriptor type is defined in <i>storport.h</i> as <b>BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR_TYPE_WINDOWS</b>.
-        
-            `MaximumInactivityTimer`
+`DescriptorLength`
 
-            The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure.
-        
-            `MaximumRangeDescriptors`
+The length of this structure starting with the <b>VendorSpecific</b> member.
 
-            The maximum number of range descriptors that may be included along with the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\scsi\ns-scsi-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
-        
-            `MaximumTokenTransferSize`
+`DescriptorType`
 
-            The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\scsi\ns-scsi-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
-        
-            `OptimalTransferCount`
+The descriptor type identifying this structure. The descriptor type is defined in <i>storport.h</i> as <b>BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR_TYPE_WINDOWS</b>.
 
-            The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\scsi\ns-scsi-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.
-        
-            `VendorSpecific`
+`MaximumInactivityTimer`
 
-            Vendor specific bytes included in the descriptor. Windows applications must treat this member as reserved and ignore the reported value.
+The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure.
 
-    ## Remarks
-        All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
+`MaximumRangeDescriptors`
+
+The maximum number of range descriptors that may be included along with the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\scsi\ns-scsi-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
+
+`MaximumTokenTransferSize`
+
+The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\scsi\ns-scsi-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
+
+`OptimalTransferCount`
+
+The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\scsi\ns-scsi-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.
+
+`VendorSpecific`
+
+Vendor specific bytes included in the descriptor. Windows applications must treat this member as reserved and ignore the reported value.
+
+## Remarks
+All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,19 +102,14 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Scsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
-</dt>
-<dt>
+
 <a href="..\scsi\ns-scsi-_vpd_third_party_copy_page.md">VPD_THIRD_PARTY_COPY_PAGE</a>
-</dt>
-<dt>
+
 <a href="..\scsi\ns-scsi-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a>
-</dt>
-</dl>
+
  
 
  

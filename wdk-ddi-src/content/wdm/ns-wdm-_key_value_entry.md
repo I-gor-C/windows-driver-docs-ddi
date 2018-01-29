@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8a0e819e-6da7-4006-a276-9bfd324800d8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_VALUE_ENTRY, *PKEY_VALUE_ENTRY, KEY_VALUE_ENTRY
+ms.keywords : KEY_VALUE_ENTRY, wdm/KEY_VALUE_ENTRY, kernel.key_value_entry, _KEY_VALUE_ENTRY, kstruct_c_750eac86-0e41-4623-8404-8c198c1ee96c.xml, KEY_VALUE_ENTRY structure [Kernel-Mode Driver Architecture], PKEY_VALUE_ENTRY, wdm/PKEY_VALUE_ENTRY, *PKEY_VALUE_ENTRY, PKEY_VALUE_ENTRY structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_VALUE_ENTRY
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PKEY_VALUE_ENTRY, KEY_VALUE_ENTRY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KEY_VALUE_ENTRY, *PKEY_VALUE_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -50,25 +54,25 @@ typedef struct _KEY_VALUE_ENTRY {
 
 ## Members
 
-        
-            `DataLength`
 
-            Specifies the size, in bytes, of the data for the value entry.
-        
-            `DataOffset`
+`DataLength`
 
-            Specifies the offset, in bytes, of the value entry's data within the buffer that is pointed to by the <b>ValueBuffer</b> member of <a href="..\wdm\ns-wdm-_reg_query_multiple_value_key_information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>.
-        
-            `Type`
+Specifies the size, in bytes, of the data for the value entry.
 
-            Specifies the type of the value entry's data. For a description of the possible values for <b>Type</b>, see the <i>Type</i> parameter of <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.
-        
-            `ValueName`
+`DataOffset`
 
-            Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of the value entry.
+Specifies the offset, in bytes, of the value entry's data within the buffer that is pointed to by the <b>ValueBuffer</b> member of <a href="..\wdm\ns-wdm-_reg_query_multiple_value_key_information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>.
 
-    ## Remarks
-        The <b>ValueEntries</b> member of <a href="..\wdm\ns-wdm-_reg_query_multiple_value_key_information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a> points to an array of KEY_VALUE_ENTRY structures.
+`Type`
+
+Specifies the type of the value entry's data. For a description of the possible values for <b>Type</b>, see the <i>Type</i> parameter of <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.
+
+`ValueName`
+
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of the value entry.
+
+## Remarks
+The <b>ValueEntries</b> member of <a href="..\wdm\ns-wdm-_reg_query_multiple_value_key_information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a> points to an array of KEY_VALUE_ENTRY structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,16 +82,12 @@ typedef struct _KEY_VALUE_ENTRY {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_reg_query_multiple_value_key_information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_reg_query_multiple_value_key_information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>
+
  
 
  

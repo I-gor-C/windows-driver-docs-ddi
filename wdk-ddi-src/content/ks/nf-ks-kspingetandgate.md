@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : abd4da69-c0c3-442f-af58-e77362c637da
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGetAndGate
+ms.keywords : KsPinGetAndGate function [Streaming Media Devices], ks/KsPinGetAndGate, stream.kspingetandgate, avfunc_a4159ef9-1a69-4716-96ce-4fabd1ee6218.xml, KsPinGetAndGate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinGetAndGate
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,14 +79,10 @@ For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksfiltergetandgate.md">KsFilterGetAndGate</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksfiltergetandgate.md">KsFilterGetAndGate</a>
+
  
 
  

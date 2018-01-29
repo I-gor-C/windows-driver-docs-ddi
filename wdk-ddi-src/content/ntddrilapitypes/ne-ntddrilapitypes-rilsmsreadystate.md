@@ -7,8 +7,8 @@ old-location : netvista\rilsmsreadystate.htm
 old-project : netvista
 ms.assetid : f37b1e31-d0fa-4b0a-bab6-131b3bf1bdcd
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSMSREADYSTATE, RILSMSREADYSTATE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILSMSREADYSTATE, ntddrilapitypes/RIL_SMSREADY_SERVICEREADY_3GPP2, RIL_SMSREADY_UICCREADY, RILSMSREADYSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_SMSREADYSTATE_ALL, netvista.rilsmsreadystate, RILSMSREADYSTATE, RIL_SMSREADY_SERVICEREADY_3GPP2, ntddrilapitypes/RIL_SMSREADY_UICCREADY, ntddrilapitypes/RIL_SMSREADYSTATE_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSMSREADYSTATE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSMSREADYSTATE
 ---
 
@@ -49,6 +53,11 @@ typedef enum _RILSMSREADYSTATE {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_SMSREADY_SERVICEREADY_3GPP</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_SMSREADY_SERVICEREADY_3GPP2</td>

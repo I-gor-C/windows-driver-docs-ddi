@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 82b702ae-ea62-4bc1-ad92-467eba027e3d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _DEVICE_INSTALL_STATE, DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE
+ms.keywords : PDEVICE_INSTALL_STATE enumeration pointer [Kernel-Mode Driver Architecture], *PDEVICE_INSTALL_STATE, InstallStateNeedsReinstall, PDEVICE_INSTALL_STATE, DEVICE_INSTALL_STATE, wdm/DEVICE_INSTALL_STATE, wdm/PDEVICE_INSTALL_STATE, _DEVICE_INSTALL_STATE, wdm/InstallStateFinishInstall, kernel.device_install_state, wdm/InstallStateNeedsReinstall, wdm/InstallStateInstalled, InstallStateFinishInstall, InstallStateFailedInstall, wdm/InstallStateFailedInstall, InstallStateInstalled, DEVICE_INSTALL_STATE enumeration [Kernel-Mode Driver Architecture], sysenum_ba359e9d-17fd-43c7-8efd-ce6c61f46be6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_INSTALL_STATE
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDEVICE_INSTALL_STATE, DEVICE_INSTALL_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -87,14 +91,10 @@ The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/a17b4a88-45e8-45e7-b879-2f41b97be368">DEVICE_REGISTRY_PROPERTY</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/a17b4a88-45e8-45e7-b879-2f41b97be368">DEVICE_REGISTRY_PROPERTY</a>
+
  
 
  

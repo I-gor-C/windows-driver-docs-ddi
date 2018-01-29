@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : d4d51366-4d04-47fe-8c44-09c9c6ccf35f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST
+ms.keywords : "*PUSB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST structure pointer [Buses], usbstrct_b5a96c38-53d8-4d08-849b-d6c8c4b69c72.xml, usbioctl/PUSB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST structure [Buses], _USB_DESCRIPTOR_REQUEST, buses.usb_descriptor_request, USB_DESCRIPTOR_REQUEST, usbioctl/USB_DESCRIPTOR_REQUEST"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_DESCRIPTOR_REQUEST
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PUSB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST
 req.product : Windows 10 or later.
 ---
 
@@ -55,21 +59,21 @@ typedef struct _USB_DESCRIPTOR_REQUEST {
 
 ## Members
 
-        
-            `ConnectionIndex`
 
-            The port whose descriptors are retrieved.
-        
-            `Data`
+`ConnectionIndex`
 
-            On output from the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_descriptor_from_node_connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a> I/O control request, this member contains the retrieved descriptors.
-        
-            `SetupPacket`
+The port whose descriptors are retrieved.
 
-            The members of the <b>SetupPacket</b> structure are as follows:
+`Data`
 
-    ## Remarks
-        If the caller specifies a value of USB_CONFIGURATION_DESCRIPTOR_TYPE in the <b>wValue</b> member, the output buffer must be large enough to hold all of the descriptors that are associated with the current configuration, or the request will fail.
+On output from the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_descriptor_from_node_connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a> I/O control request, this member contains the retrieved descriptors.
+
+`SetupPacket`
+
+The members of the <b>SetupPacket</b> structure are as follows:
+
+## Remarks
+If the caller specifies a value of USB_CONFIGURATION_DESCRIPTOR_TYPE in the <b>wValue</b> member, the output buffer must be large enough to hold all of the descriptors that are associated with the current configuration, or the request will fail.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,16 +83,12 @@ typedef struct _USB_DESCRIPTOR_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_descriptor_from_node_connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_descriptor_from_node_connection.md">IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION</a>
+
  
 
  

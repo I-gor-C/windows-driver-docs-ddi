@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2732ea9-4fd6-416d-8fb0-1ccf1d1ad0df
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_OVERLAYINFO, D3DDDI_OVERLAYINFO
+ms.keywords : D3DDDI_OVERLAYINFO structure [Display Devices], display.d3dddi_overlayinfo, d3dumddi/D3DDDI_OVERLAYINFO, D3D_other_Structs_b9046736-50b8-46b1-92c9-5d879ee7c64d.xml, _D3DDDI_OVERLAYINFO, D3DDDI_OVERLAYINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_OVERLAYINFO
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_OVERLAYINFO
 ---
 
@@ -54,45 +58,45 @@ typedef struct _D3DDDI_OVERLAYINFO {
 
 ## Members
 
-        
-            `DstColorKeyHigh`
 
-            [in] The high end of the destination color key range when the <b>DstColorKeyRange</b> bit-field flag is set in <b>Flags</b>. The value is in the native format of the primary surface that is overlayed.
-        
-            `DstColorKeyLow`
+`DstColorKeyHigh`
 
-            [in] A value for the destination color key when the <b>DstColorKey</b> bit-field flag is set in the <b>Flags</b> member. If the color key is a range, <b>DstColorKeyLow</b> contains the low end of the range. The value is in the native format of the primary surface that is overlayed.
-        
-            `DstRect`
+[in] The high end of the destination color key range when the <b>DstColorKeyRange</b> bit-field flag is set in <b>Flags</b>. The value is in the native format of the primary surface that is overlayed.
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle, which contains the output coordinates for the display.
-        
-            `Flags`
+`DstColorKeyLow`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfoflags.md">D3DDDI_OVERLAYINFOFLAGS</a> structure that identifies the type of overlay operation to perform. Note that some flags are mutually exclusive with other flags. For more information, see the following Remarks section.
-        
-            `hResource`
+[in] A value for the destination color key when the <b>DstColorKey</b> bit-field flag is set in the <b>Flags</b> member. If the color key is a range, <b>DstColorKeyLow</b> contains the low end of the range. The value is in the native format of the primary surface that is overlayed.
 
-            [in] A handle to the resource that is displayed by using the overlay. The resource is created through a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a> function with the <b>Overlay</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a> structure that is pointed to by the <i>pResource</i> parameter.
-        
-            `SrcColorKeyHigh`
+`DstRect`
 
-            [in] The high end of the source color key range when the <b>SrcColorKeyRange</b> bit-field flag is set in <b>Flags</b>. The value is in the native format of the overlay resource that is displayed.
-        
-            `SrcColorKeyLow`
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle, which contains the output coordinates for the display.
 
-            [in] A value for the source color key when the <b>SrcColorKey</b> bit-field flag is set in the <b>Flags</b> member. If the color key is a range, <b>SrcColorKeyLow</b> contains the low end of the range. The value is in the native format of the overlay resource that is displayed.
-        
-            `SrcRect`
+`Flags`
 
-            [in] A RECT structure for the source rectangle that is displayed.
-        
-            `SubResourceIndex`
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfoflags.md">D3DDDI_OVERLAYINFOFLAGS</a> structure that identifies the type of overlay operation to perform. Note that some flags are mutually exclusive with other flags. For more information, see the following Remarks section.
 
-            [in] The index to the subresource if the resource that is specified by the <b>hResource</b> member contains a list of allocations.
+`hResource`
 
-    ## Remarks
-        The <b>SrcColorKey</b>, <b>SrcColorKeyRange</b>, <b>DstColorKey</b>, and <b>DstColorKeyRange</b> bit-field flags are never set simultaneously in the <b>Flags</b> member.
+[in] A handle to the resource that is displayed by using the overlay. The resource is created through a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a> function with the <b>Overlay</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a> structure that is pointed to by the <i>pResource</i> parameter.
+
+`SrcColorKeyHigh`
+
+[in] The high end of the source color key range when the <b>SrcColorKeyRange</b> bit-field flag is set in <b>Flags</b>. The value is in the native format of the overlay resource that is displayed.
+
+`SrcColorKeyLow`
+
+[in] A value for the source color key when the <b>SrcColorKey</b> bit-field flag is set in the <b>Flags</b> member. If the color key is a range, <b>SrcColorKeyLow</b> contains the low end of the range. The value is in the native format of the overlay resource that is displayed.
+
+`SrcRect`
+
+[in] A RECT structure for the source rectangle that is displayed.
+
+`SubResourceIndex`
+
+[in] The index to the subresource if the resource that is specified by the <b>hResource</b> member contains a list of allocations.
+
+## Remarks
+The <b>SrcColorKey</b>, <b>SrcColorKeyRange</b>, <b>DstColorKey</b>, and <b>DstColorKeyRange</b> bit-field flags are never set simultaneously in the <b>Flags</b> member.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,28 +106,20 @@ typedef struct _D3DDDI_OVERLAYINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlay.md">CreateOverlay</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfoflags.md">D3DDDI_OVERLAYINFOFLAGS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-<dt>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfoflags.md">D3DDDI_OVERLAYINFOFLAGS</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updateoverlay.md">UpdateOverlay</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlay.md">CreateOverlay</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 7f0e6295-9c96-4167-8414-6f7b7b171f37
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidRegisterMinidriver
+ms.keywords : hid.ioctl_hid_get_report_descriptor, IOCTL_HID_GET_REPORT_DESCRIPTOR control code [Human Input Devices], IOCTL_HID_GET_REPORT_DESCRIPTOR, hidport/IOCTL_HID_GET_REPORT_DESCRIPTOR, hidioreq_01b638bd-f2d5-4acc-8527-9fd98bde8144.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_GET_REPORT_DESCRIPTOR
-req.alt-loc : hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_HID_GET_REPORT_DESCRIPTOR IOCTL
@@ -61,14 +65,17 @@ The size of the report descriptor.
 <text></text>
 
 ### Status Block
-I/O Status block
 HID minidrivers that carry out the I/O to the device set the following fields of <b>Irp-&gt;IoStatus</b>:
-
+<ul>
+<li>
 <b>Information</b> is set to the number of bytes transferred from the device.
 
+</li>
+<li>
 <b>Status</b> is set to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
 
-HID minidrivers that call other drivers with this IOCTL to carry out the I/O to their device, should ensure that the <b>Information</b> field of the status block is correct and not change the contents of the <b>Status</b> field.
+</li>
+</ul>HID minidrivers that call other drivers with this IOCTL to carry out the I/O to their device, should ensure that the <b>Information</b> field of the status block is correct and not change the contents of the <b>Status</b> field.
 
 
 ## Requirements
@@ -78,16 +85,12 @@ HID minidrivers that call other drivers with this IOCTL to carry out the I/O to 
 | **Header** | hidport.h (include Hidport.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidport\ni-hidport-ioctl_hid_get_device_descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\hidclass\ni-hidclass-ioctl_get_physical_descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

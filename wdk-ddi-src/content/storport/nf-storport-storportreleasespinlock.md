@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ed91d41a-575d-4b26-a7e0-f3ce43db76b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReleaseSpinLock
+ms.keywords : StorPortReleaseSpinLock routine [Storage Devices], storport/StorPortReleaseSpinLock, StorPortReleaseSpinLock, storage.storportreleasespinlock, storprt_5f3bd7a7-ffdd-4d7b-992b-70c2cea3acec.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortReleaseSpinLock
-req.alt-loc : storport.h
 req.ddi-compliance : StorPortSpinLock, StorPortSpinLock4
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -52,7 +56,7 @@ VOID StorPortReleaseSpinLock(
 
 `DeviceExtension`
 
-
+TBD
 
 `LockHandle`
 
@@ -78,11 +82,8 @@ None.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
-</dt>
-</dl>
+
  
 
  

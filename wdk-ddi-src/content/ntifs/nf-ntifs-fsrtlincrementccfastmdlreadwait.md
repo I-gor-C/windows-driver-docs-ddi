@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a3a811dc-1dbf-4656-b7ec-bad818f6d1f1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIncrementCcFastMdlReadWait
+ms.keywords : fsrtlref_6ab13976-a131-41bf-970c-f2a554d87d92.xml, ifsk.fsrtlincrementccfastmdlreadwait, ntifs/FsRtlIncrementCcFastMdlReadWait, FsRtlIncrementCcFastMdlReadWait, FsRtlIncrementCcFastMdlReadWait routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlIncrementCcFastMdlReadWait
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
 
 # FsRtlIncrementCcFastMdlReadWait function
-The <b>FsRtlIncrementCcFastMdlReadWait </b>routine increments the cache manager's <b>CcFastMdlReadWait</b> performance counter member in a processor control block (<a href="wdkgloss.p#wdkgloss.prcb#wdkgloss.prcb"><i>PRCB</i></a>) object.
+The <b>FsRtlIncrementCcFastMdlReadWait </b>routine increments the cache manager's <b>CcFastMdlReadWait</b> performance counter member in a processor control block (<a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">PRCB</a>) object.
 
 ## Syntax
 
@@ -78,14 +82,10 @@ File system drivers should not increment the <b>CcFastMdlReadWait</b> performanc
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-</dt>
-</dl>
+
  
 
  

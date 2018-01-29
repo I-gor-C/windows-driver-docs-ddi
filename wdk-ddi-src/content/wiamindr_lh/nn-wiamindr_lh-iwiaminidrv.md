@@ -7,8 +7,8 @@ old-location : image\iwiaminidrv_interface.htm
 old-project : image
 ms.assetid : 15068d10-5e24-427c-9684-24ce67b75ada
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaMiniDrvTransferCallback, IWiaMiniDrvTransferCallback::SendMessage, SendMessage
+ms.date : 1/18/2018
+ms.keywords : image.iwiaminidrv_interface, IWiaMiniDrv interface [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], described, IWiaMiniDrv, wiamindr_lh/IWiaMiniDrv, MiniDrv_8a22bfee-13f8-4efc-b31d-8dd9fabfe131.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : interface
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaMiniDrv
-req.alt-loc : wiamindr_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wiamindr_lh.h
 req.dll : 
 req.irql : 
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 

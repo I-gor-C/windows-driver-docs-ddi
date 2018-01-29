@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cd322d64-4005-426c-b3ce-0fe8f6ce868e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExInterlockedInsertTailList
+ms.keywords : k102_a6d47e7b-63d2-48e9-9f6a-99f733194c1b.xml, ExInterlockedInsertTailList routine [Kernel-Mode Driver Architecture], kernel.exinterlockedinserttaillist, wdm/ExInterlockedInsertTailList, ExInterlockedInsertTailList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExInterlockedInsertTailList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IoAllocateFree, IoReuseIrp, MarkingInterlockedQueuedIrps, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -90,20 +94,14 @@ The <b>ExInterlockedInsertTailList</b> routine can be called at any IRQL. The st
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinterlockedinsertheadlist.md">ExInterlockedInsertHeadList</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exinterlockedinsertheadlist.md">ExInterlockedInsertHeadList</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2ca906d4-6d09-4624-a985-a47794acc959
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_2DDICAPS_TYPE, D3D10_2DDICAPS_TYPE
+ms.keywords : D3D11DDICAPS_THREADING, D3DWDDM1_3DDICAPS_D3D11_OPTIONS1, d3d10umddi/D3DWDDM1_3DDICAPS_D3D11_OPTIONS1, d3d10umddi/D3D11_1DDICAPS_SHADER_MIN_PRECISION_SUPPORT, display.d3d10_2ddicaps_type, D3D11_1DDICAPS_SHADER_MIN_PRECISION_SUPPORT, D3D11_1DDICAPS_ARCHITECTURE_INFO, D3D10_2DDICAPS_TYPE enumeration [Display Devices], D3DWDDM1_3DDICAPS_MARKER, d3d10umddi/D3D11_1DDICAPS_ARCHITECTURE_INFO, d3d10umddi/D3DWDDM1_3DDICAPS_MARKER, D3D11_1DDICAPS_D3D11_OPTIONS, d3d10umddi/D3D10_2DDICAPS_TYPE, d3d10umddi/D3D11DDICAPS_SHADER, d3d10umddi/D3D11DDICAPS_3DPIPELINESUPPORT, D3D11DDICAPS_3DPIPELINESUPPORT, D3D11DDICAPS_SHADER, UMDisplayDriver_Dx11param_Structs_cde2c336-2e65-43c4-970c-83b83765df38.xml, D3D10_2DDICAPS_TYPE, d3d10umddi/D3D11DDICAPS_THREADING, d3d10umddi/D3D11_1DDICAPS_D3D11_OPTIONS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3D10_2DDICAPS_TYPE is supported beginning with the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_2DDICAPS_TYPE
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_2DDICAPS_TYPE
 ---
 
@@ -107,6 +111,61 @@ Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.</td>
 <td>D3DWDDM1_3DDICAPS_MARKER</td>
 <td>Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.</td>
 </tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_D3D11_OPTIONS2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_D3D11_OPTIONS3</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_GPUVA_CAPS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_MEMORY_ARCHITECTURE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_SWIZZLE_PATTERN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_TEXTURE_LAYOUT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_TEXTURE_LAYOUT_SETS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_0DDICAPS_TEXTURE_LAYOUT1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_2DDICAPS_SHADERCACHE</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_2DDICAPS_SWIZZLE_PATTERN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>D3DWDDM2_2DDICAPS_TEXTURE_LAYOUT</td>
+<td></td>
+</tr>
 </table>
 
 ## Remarks
@@ -123,29 +182,20 @@ To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_d3d11_options_data.md">D3D11_1DDI_D3D11_OPTIONS_DATA</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_3dpipelinesupport_caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_shader_caps.md">D3D11DDI_SHADER_CAPS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a>
-</dt>
-<dt>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_d3d11_options_data.md">D3D11_1DDI_D3D11_OPTIONS_DATA</a>
+
 <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps_shader_min_precision_support.md">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_3dpipelinesupport_caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_d3d11_options_data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e93649d1-4ad0-4873-99c7-b2f3ed48aac6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
+ms.keywords : D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA structure [Display Devices], D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, display.d3d11_ddi_shader_min_precision_support_data, d3d10umddi/D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
 ---
 
@@ -47,14 +51,14 @@ typedef struct D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA {
 
 ## Members
 
-        
-            `AllOtherStagesMinPrecision`
 
-            A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_shader_min_precision.md">D3D11_DDI_SHADER_MIN_PRECISION</a> that are combined by using a bitwise <b>OR</b> operation. The resulting value specifies minimum precision levels that the driver supports for all other stages in the video processing pipeline that are not pixel shaders. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.
-        
-            `PixelShaderMinPrecision`
+`AllOtherStagesMinPrecision`
 
-            A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_shader_min_precision.md">D3D11_DDI_SHADER_MIN_PRECISION</a> that are combined by using a bitwise <b>OR</b> operation. The resulting value specifies minimum precision levels that the driver supports for the pixel shader. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.
+A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_shader_min_precision.md">D3D11_DDI_SHADER_MIN_PRECISION</a> that are combined by using a bitwise <b>OR</b> operation. The resulting value specifies minimum precision levels that the driver supports for all other stages in the video processing pipeline that are not pixel shaders. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.
+
+`PixelShaderMinPrecision`
+
+A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_shader_min_precision.md">D3D11_DDI_SHADER_MIN_PRECISION</a> that are combined by using a bitwise <b>OR</b> operation. The resulting value specifies minimum precision levels that the driver supports for the pixel shader. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.
 
 
 ## Requirements

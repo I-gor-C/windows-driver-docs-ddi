@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1fd075c9-7d0e-4670-bac0-b7b8ba0a714f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFNamedPropertyStore, IWDFNamedPropertyStore::SetNamedValue, SetNamedValue
+ms.keywords : wudfddi/IWDFNamedPropertyStore::SetNamedValue, SetNamedValue, UMDFPropertyStoreObjectRef_00f9168d-5017-4b48-929c-fc9acfee5d24.xml, SetNamedValue method, IWDFNamedPropertyStore interface, umdf.iwdfnamedpropertystore_setnamedvalue, wdf.iwdfnamedpropertystore_setnamedvalue, IWDFNamedPropertyStore::SetNamedValue, SetNamedValue method, IWDFNamedPropertyStore interface, SetNamedValue method, IWDFNamedPropertyStore
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFNamedPropertyStore.SetNamedValue
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -68,38 +72,100 @@ A pointer to the value that the property is set to.
 ## Remarks
 
 The following variant types are supported for property values. The following table shows the types of values that the framework writes for particular variant types.
-
+<table>
+<tr>
+<th>Variant type</th>
+<th>Write</th>
+</tr>
+<tr>
+<td>
 VT_BSTR
 
+</td>
+<td rowspan="3">
 Writes a string value.
 
+</td>
+</tr>
+<tr>
+<td>
 VT_LPWSTR
 
+</td>
+</tr>
+<tr>
+<td>
 VT_LPSTR
 
+</td>
+</tr>
+<tr>
+<td>
 VT_I1
 
+</td>
+<td rowspan="7">
 Writes an integer value.
 
+</td>
+</tr>
+<tr>
+<td>
 VT_UI1
 
+</td>
+</tr>
+<tr>
+<td>
 VT_I2
 
+</td>
+</tr>
+<tr>
+<td>
 VT_UI2
 
+</td>
+</tr>
+<tr>
+<td>
 VT_I4
 
+</td>
+</tr>
+<tr>
+<td>
 VT_UI4
 
+</td>
+</tr>
+<tr>
+<td>
 VT_UINT
 
+</td>
+</tr>
+<tr>
+<td>
 VT_BLOB
 
+</td>
+<td>
 Writes a binary value.
 
+</td>
+</tr>
+<tr>
+<td>
 VT_VECTOR | VT_LPWSTR
 
+</td>
+<td>
 Writes a string array.
+
+</td>
+</tr>
+</table> 
 
 For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in UMDF-based Drivers</a>.
 
@@ -117,11 +183,8 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfnamedpropertystore.md">IWDFNamedPropertyStore</a>
-</dt>
-</dl>
+
  
 
  

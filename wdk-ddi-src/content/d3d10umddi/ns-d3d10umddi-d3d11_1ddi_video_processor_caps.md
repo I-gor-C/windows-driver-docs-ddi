@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d825a0d1-fa58-4525-bf90-eb7eaee0cfba
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_CAPS
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_CAPS structure [Display Devices], display.d3d11_1ddi_video_processor_caps, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_CAPS
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_CAPS
 ---
 
@@ -54,45 +58,45 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CAPS {
 
 ## Members
 
-        
-            `AutoStreamCaps`
 
-            A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_auto_stream_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a> enumeration.
-        
-            `DeviceCaps`
+`AutoStreamCaps`
 
-            A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a> enumeration.
-        
-            `FeatureCaps`
+A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_auto_stream_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a> enumeration.
 
-            A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_feature_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a> enumeration.
-        
-            `FilterCaps`
+`DeviceCaps`
 
-            A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_filter_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a> enumeration.
-        
-            `InputFormatCaps`
+A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a> enumeration.
 
-            A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_format_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a> enumeration.
-        
-            `MaxInputStreams`
+`FeatureCaps`
 
-            The maximum number of input streams that can be enabled at the same time.
-        
-            `MaxStreamStates`
+A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_feature_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a> enumeration.
 
-            The maximum number of input streams for which the device can store state data.
-        
-            `RateConversionCapsCount`
+`FilterCaps`
 
-            The number of frame-rate conversion capabilities. To enumerate the frame-rate conversion capabilities, call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps.md">GetVideoProcessorRateConversionCaps</a> function.
-        
-            `StereoCaps`
+A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_filter_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a> enumeration.
 
-            A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a> enumeration.
+`InputFormatCaps`
 
-    ## Remarks
-        The video processor stores state information for each input stream. These states persist between blits. With each blit, the application selects which streams to enable or disable. Disabling a stream does not affect the state information for that stream.
+A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_format_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a> enumeration.
+
+`MaxInputStreams`
+
+The maximum number of input streams that can be enabled at the same time.
+
+`MaxStreamStates`
+
+The maximum number of input streams for which the device can store state data.
+
+`RateConversionCapsCount`
+
+The number of frame-rate conversion capabilities. To enumerate the frame-rate conversion capabilities, call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps.md">GetVideoProcessorRateConversionCaps</a> function.
+
+`StereoCaps`
+
+A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a> enumeration.
+
+## Remarks
+The video processor stores state information for each input stream. These states persist between blits. With each blit, the application selects which streams to enable or disable. Disabling a stream does not affect the state information for that stream.
 
 The <b>MaxStreamStates</b> member gives the maximum number of stream states that can be saved. The <b>MaxInputStreams</b> member gives the maximum number of streams that can be enabled during a blit. These two values can differ.
 
@@ -104,31 +108,22 @@ The <b>MaxStreamStates</b> member gives the maximum number of stream states that
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_auto_stream_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_feature_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_filter_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_format_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps.md">GetVideoProcessorRateConversionCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_auto_stream_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a>
+
  
 
  

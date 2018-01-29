@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3857CA53-6992-410A-96D1-EEA9CC586EDF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URS_CONFIG, *PURS_CONFIG, URS_CONFIG
+ms.keywords : "*PURS_CONFIG, buses.urs_config, _URS_CONFIG, URS_CONFIG structure [Buses], URS_CONFIG, PURS_CONFIG structure pointer [Buses], ursdevice/URS_CONFIG, ursdevice/PURS_CONFIG, PURS_CONFIG"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : URS_CONFIG
-req.alt-loc : Ursdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PURS_CONFIG, URS_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : URS_CONFIG, *PURS_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _URS_CONFIG {
 
 ## Members
 
-        
-            `EvtUrsFilterRemoveResourceRequirements`
 
-            A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595921">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> callback function.
-        
-            `EvtUrsSetRole`
+`EvtUrsFilterRemoveResourceRequirements`
 
-            A pointer to an <a href="..\ursdevice\nc-ursdevice-evt_urs_set_role.md">EVT_URS_SET_ROLE</a> callback function.
-        
-            `HostInterfaceType`
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595921">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> callback function.
 
-            A <a href="..\urstypes\ne-urstypes-_urs_host_interface_type.md">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of USB host controller: EHCI, xHCI, or other.
-        
-            `Size`
+`EvtUrsSetRole`
 
-            The size of this structure.
+A pointer to an <a href="..\ursdevice\nc-ursdevice-evt_urs_set_role.md">EVT_URS_SET_ROLE</a> callback function.
+
+`HostInterfaceType`
+
+A <a href="..\urstypes\ne-urstypes-_urs_host_interface_type.md">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of USB host controller: EHCI, xHCI, or other.
+
+`Size`
+
+The size of this structure.
 
 
 ## Requirements
@@ -76,16 +80,12 @@ typedef struct _URS_CONFIG {
 | **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
-</dt>
-<dt>
 <a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
-</dt>
-</dl>
+
+<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
+
  
 
  

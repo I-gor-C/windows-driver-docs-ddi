@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4ad11a15-ba72-4921-a00a-6d3bfb443b51
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : TapeClassLogicalBlockToPhysicalBlock
+ms.keywords : tapeclas_6d45358d-68a6-4f00-991e-714a489fd78d.xml, minitape/TapeClassLogicalBlockToPhysicalBlock, storage.tapeclasslogicalblocktophysicalblock, TapeClassLogicalBlockToPhysicalBlock routine [Storage Devices], TapeClassLogicalBlockToPhysicalBlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TapeClassLogicalBlockToPhysicalBlock
-req.alt-loc : Tape.lib,Tape.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Tape.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TAPE_STATUS, *PTAPE_STATUS
 ---
 
@@ -103,11 +107,8 @@ If a tape miniclass driver calls this routine with an unsupported tape density c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\minitape\nf-minitape-tapeclassphysicalblocktologicalblock.md">TapeClassPhysicalBlockToLogicalBlock</a>
-</dt>
-</dl>
+
  
 
  

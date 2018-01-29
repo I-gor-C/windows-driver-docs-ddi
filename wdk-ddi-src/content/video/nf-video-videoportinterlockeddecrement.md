@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b72e3b7d-000b-4827-aa06-699a0bcc1840
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortInterlockedDecrement
+ms.keywords : video/VideoPortInterlockedDecrement, display.videoportinterlockeddecrement, VideoPortInterlockedDecrement function [Display Devices], VideoPort_Functions_907ed72b-de68-432d-a9e4-b7c072628f9a.xml, VideoPortInterlockedDecrement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortInterlockedDecrement
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ This function is atomic only with respect to other <b>VideoPortInterlocked</b><i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nf-video-videoportinterlockedincrement.md">VideoPortInterlockedIncrement</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportinterlockedexchange.md">VideoPortInterlockedExchange</a>
-</dt>
-</dl>
+
+<a href="..\video\nf-video-videoportinterlockedincrement.md">VideoPortInterlockedIncrement</a>
+
  
 
  

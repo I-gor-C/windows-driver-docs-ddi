@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : af608197-fa2b-474f-aa87-eb933a57b8cc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION
+ms.keywords : mpiowmi/MPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION structure [Storage Devices], PMPIO_CONTROLLER_CONFIGURATION, PMPIO_CONTROLLER_CONFIGURATION structure pointer [Storage Devices], structs-scsibus_1859c081-42ae-47f9-a4fb-a55db52b6752.xml, *PMPIO_CONTROLLER_CONFIGURATION, mpiowmi/PMPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION, _MPIO_CONTROLLER_CONFIGURATION, storage.mpio_controller_configuration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MPIO_CONTROLLER_CONFIGURATION
-req.alt-loc : mpiowmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION
 ---
 
@@ -47,14 +51,14 @@ typedef struct _MPIO_CONTROLLER_CONFIGURATION {
 
 ## Members
 
-        
-            `ControllerInfo`
 
-            An array with information about all the controllers and all targets in the system. The number of elements of the array is given by <i>NumberControllers</i> and each element of the array is an instance of an MPIO_CONTROLLER_INFO structure.
-        
-            `NumberControllers`
+`ControllerInfo`
 
-            An unsigned 32-bitfield that represents the total number of controllers on the system that are known to MPIO.
+An array with information about all the controllers and all targets in the system. The number of elements of the array is given by <i>NumberControllers</i> and each element of the array is an instance of an MPIO_CONTROLLER_INFO structure.
+
+`NumberControllers`
+
+An unsigned 32-bitfield that represents the total number of controllers on the system that are known to MPIO.
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : debugger\debug_thread_basic_information.htm
 old-project : debugger
 ms.assetid : e964ed63-6c00-4308-955c-f8a99490a248
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _DEBUG_THREAD_BASIC_INFORMATION, *PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION
+ms.date : 1/19/2018
+ms.keywords : PDEBUG_THREAD_BASIC_INFORMATION, dbgeng/DEBUG_THREAD_BASIC_INFORMATION, Structures_e48c9daa-ce4f-4131-9ca6-cb1a7a129fcc.xml, *PDEBUG_THREAD_BASIC_INFORMATION, _DEBUG_THREAD_BASIC_INFORMATION, PDEBUG_THREAD_BASIC_INFORMATION structure pointer [Windows Debugging], DEBUG_THREAD_BASIC_INFORMATION structure [Windows Debugging], dbgeng/PDEBUG_THREAD_BASIC_INFORMATION, debugger.debug_thread_basic_information, DEBUG_THREAD_BASIC_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEBUG_THREAD_BASIC_INFORMATION
-req.alt-loc : DbgEng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION"
 ---
 
@@ -55,65 +59,64 @@ typedef struct _DEBUG_THREAD_BASIC_INFORMATION {
 
 ## Members
 
-        
-            `Affinity`
 
-            The thread affinity mask for the thread in a Symmetric Multiple Processor (SMP) computer. For more information about the thread affinity mask, see the Platform SDK.
+`Affinity`
+
+The thread affinity mask for the thread in a Symmetric Multiple Processor (SMP) computer. For more information about the thread affinity mask, see the Platform SDK.
 
 <b>Affinity</b> is only valid if the DEBUG_TBINFO_AFFINITY bit flag is set in <b>Valid</b>.
-        
-            `CreateTime`
 
-            The creation time of the thread.
+`CreateTime`
+
+The creation time of the thread.
 
 <b>CreateTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.
-        
-            `ExitStatus`
 
-            The exit code of the thread. If the thread is still running, <b>ExitStatus</b> is set to STILL_ACTIVE.
+`ExitStatus`
+
+The exit code of the thread. If the thread is still running, <b>ExitStatus</b> is set to STILL_ACTIVE.
 
 <b>ExitStatus</b> is only valid if the  DEBUG_TBINFO_EXIT_STATUS bit flag is set in <b>Valid</b>.
-        
-            `ExitTime`
 
-            The exit time of the thread.
+`ExitTime`
+
+The exit time of the thread.
 
 <b>ExitTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.
-        
-            `KernelTime`
 
-            The amount of time the thread has executed in kernel mode.
+`KernelTime`
+
+The amount of time the thread has executed in kernel mode.
 
 <b>KernelTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.
-        
-            `Priority`
 
-            The priority of the thread relative to the priority class. Some thread priorities are defined by the THREAD_PRIORITY_<i>XXX</i> constants in WinBase.h.  For more information about thread priorities,  see the Platform SDK.
+`Priority`
+
+The priority of the thread relative to the priority class. Some thread priorities are defined by the THREAD_PRIORITY_<i>XXX</i> constants in WinBase.h.  For more information about thread priorities,  see the Platform SDK.
 
 <b>Priority</b> is only valid if the DEBUG_TBINFO_PRIORITY bit flag is set in <b>Valid</b>.
-        
-            `PriorityClass`
 
-            The priority class of the thread. The priority classes are defined by the <i>XXX</i>_PRIORITY_CLASS constants in WinBase.h. For more information about thread priority classes, see the Platform SDK.
+`PriorityClass`
+
+The priority class of the thread. The priority classes are defined by the <i>XXX</i>_PRIORITY_CLASS constants in WinBase.h. For more information about thread priority classes, see the Platform SDK.
 
 <b>PriorityClass</b> is only valid if the DEBUG_TBINFO_PRIORITY_CLASS bit flag is set in <b>Valid</b>.
-        
-            `StartOffset`
 
-            The starting address of the thread.
+`StartOffset`
+
+The starting address of the thread.
 
 <b>StartOffset</b> is only valid if the DEBUG_TBINFO_START_OFFSET bit flag is set in <b>Valid</b>.
-        
-            `UserTime`
 
-            The amount of time the thread has executed in user-mode.
+`UserTime`
+
+The amount of time the thread has executed in user-mode.
 
 <b>UserTime</b> is only valid if the DEBUG_TBINFO_TIMES bit flag is set in <b>Valid</b>.
-        
-            `Valid`
 
-            A bitset that specifies which other members of the structure contain valid information. A member of the structure is valid if the corresponding bit flag is set in <b>Valid</b>.
+`Valid`
 
+A bitset that specifies which other members of the structure contain valid information. A member of the structure is valid if the corresponding bit flag is set in <b>Valid</b>.
 <table>
 <tr>
 <th>Flag</th>

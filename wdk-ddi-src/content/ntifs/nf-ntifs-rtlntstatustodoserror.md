@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9ba6f693-b0b7-4176-b951-7bb259bec391
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlNtStatusToDosError
+ms.keywords : RtlNtStatusToDosError routine [Installable File System Drivers], RtlNtStatusToDosError, ntifs/RtlNtStatusToDosError, ifsk.rtlntstatustodoserror, rtlref_8afdfe24-1071-4bab-b935-b1b91eb52766.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The RtlNtStatusToDosError routine is available on Mi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlNtStatusToDosError
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -61,7 +65,7 @@ The NTSTATUS code to be converted.
 
 ## Remarks
 
-There is no function that provides the inverse functionality of <b>RtlNtStatusToDosError</b>, converting a system error code to its corresponding NTSTATUS code. </p>
+There is no function that provides the inverse functionality of <b>RtlNtStatusToDosError</b>, converting a system error code to its corresponding NTSTATUS code.
 
 ## Requirements
 | &nbsp; | &nbsp; |

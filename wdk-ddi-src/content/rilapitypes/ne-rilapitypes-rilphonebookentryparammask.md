@@ -7,8 +7,8 @@ old-location : netvista\rilphonebookentryparammask_2.htm
 old-project : netvista
 ms.assetid : c7c82022-b82d-4f8e-a736-3912d3286189
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILPHONEBOOKENTRYPARAMMASK, RILPHONEBOOKENTRYPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_PARAM_PBE_ADDRESS, netvista.rilphonebookentryparammask_2, RIL_PARAM_PBE_EMAILSIZE, rilapitypes/RIL_PARAM_PBE_SECONDNAME, RIL_PARAM_PBE_ADDRESS, rilapitypes/RIL_PARAM_PBE_GROUPID, RIL_PARAM_PBE_SECONDNAME, rilapitypes/RIL_PARAM_PBE_ADDITIONALNUMSIZE, RIL_PARAM_PBE_ALL, RIL_PARAM_PBE_GROUPID, rilapitypes/RIL_PARAM_PBE_TEXT, RIL_PARAM_PBE_ADDITIONALNUMOFFSET, RIL_PARAM_PBE_EMAILOFFSET, RIL_PARAM_PBE_TEXT, rilapitypes/RIL_PARAM_PBE_GROUPIDCOUNT, rilapitypes/RIL_PARAM_PBE_ADDITIONALNUMCOUNT, RIL_PARAM_PBE_GROUPIDCOUNT, rilapitypes/RIL_PARAM_PBE_EMAILSIZE, RIL_PARAM_PBE_ADDITIONALNUMCOUNT, rilapitypes/RIL_PARAM_PBE_ADDITIONALNUMOFFSET, RIL_PARAM_PBE_EMAILCOUNT, rilapitypes/RIL_PARAM_PBE_ALL, RILPHONEBOOKENTRYPARAMMASK, RIL_PARAM_PBE_ADDITIONALNUMSIZE, RILPHONEBOOKENTRYPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILPHONEBOOKENTRYPARAMMASK, rilapitypes/RIL_PARAM_PBE_EMAILCOUNT, rilapitypes/RIL_PARAM_PBE_EMAILOFFSET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILPHONEBOOKENTRYPARAMMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILPHONEBOOKENTRYPARAMMASK
 req.product : Windows 10 or later.
 ---
@@ -107,6 +111,11 @@ typedef enum _RILPHONEBOOKENTRYPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_PBE_GROUPIDCOUNT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_PBE_INDEX</td>
 <td></td>
 </tr>
 

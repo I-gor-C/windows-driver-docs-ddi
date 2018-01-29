@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 995a1d2f-8e2b-426e-a08c-283124ce905e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagBDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO
+ms.keywords : PBDA_TRANSPORT_INFO structure pointer [Streaming Media Devices], bdaref_3ee17c26-da8b-4d04-87fc-6c9912de349d.xml, tagBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO structure [Streaming Media Devices], bdamedia/PBDA_TRANSPORT_INFO, stream.bda_transport_info, PBDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO, bdamedia/BDA_TRANSPORT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_TRANSPORT_INFO
-req.alt-loc : bdamedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : BDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO
 ---
 
 # tagBDA_TRANSPORT_INFO structure
@@ -49,25 +53,25 @@ typedef struct tagBDA_TRANSPORT_INFO {
 
 ## Members
 
-        
-            `AvgTimePerFrame`
 
-            REFERENCE TIME value that indicates the video frame's average display time, in 100-nanosecond units.
-        
-            `ulcbPhyiscalFrame`
+`AvgTimePerFrame`
 
-            Size, in bytes, of each physical frame (0 indicates no hardware requirement).
-        
-            `ulcbPhyiscalFrameAlignment`
+REFERENCE TIME value that indicates the video frame's average display time, in 100-nanosecond units.
 
-            Capture buffer alignment in bytes (0 and 1 indicate no alignment requirements).
-        
-            `ulcbPhyiscalPacket`
+`ulcbPhyiscalFrame`
 
-            Size, in bytes, of a physical packet (for example, the size of a satellite link payload).
+Size, in bytes, of each physical frame (0 indicates no hardware requirement).
 
-    ## Remarks
-        A BDA_TRANSPORT_INFO structure in conjunction with a KSDATARANGE structure makes up a KS_DATARANGE_BDA_TRANSPORT data range. A data range describes a range of data formats. 
+`ulcbPhyiscalFrameAlignment`
+
+Capture buffer alignment in bytes (0 and 1 indicate no alignment requirements).
+
+`ulcbPhyiscalPacket`
+
+Size, in bytes, of a physical packet (for example, the size of a satellite link payload).
+
+## Remarks
+A BDA_TRANSPORT_INFO structure in conjunction with a KSDATARANGE structure makes up a KS_DATARANGE_BDA_TRANSPORT data range. A data range describes a range of data formats. 
 
 Pins of filters specify the data ranges they support to enable stream connections to pins of other filters that also support those data ranges.
 
@@ -79,19 +83,14 @@ Pins of filters specify the data ranges they support to enable stream connection
 | **Minimum UMDF version** |  |
 | **Header** | bdamedia.h (include Bdamedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\bdamedia\ns-bdamedia-tagks_datarange_bda_transport.md">KS_DATARANGE_BDA_TRANSPORT</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

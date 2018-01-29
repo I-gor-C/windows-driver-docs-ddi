@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5D76C266-875A-40AC-9B26-F17978971783
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : UFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR, *PUFS_UNIT_DESCRIPTOR
+ms.keywords : storage.ufs_unit_descriptor, ufs/UFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR structure pointer [Storage Devices], *PUFS_UNIT_DESCRIPTOR, ufs/PUFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR structure [Storage Devices], PUFS_UNIT_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UFS_UNIT_DESCRIPTOR
-req.alt-loc : Ufs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UFS_UNIT_DESCRIPTOR, *PUFS_UNIT_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
@@ -63,35 +67,42 @@ typedef struct _UFS_UNIT_DESCRIPTOR {
 
 ## Members
 
-        
-            `bDataReliability`
 
-            Specifies if the device is protected against a power failure during a write operation to the logical unit.
-        
-            `bDescriptorIDN`
+`bBootLunID`
 
-            Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_UNIT_IDN</b>.
-        
-            `bLargeUnitGranularity_M1`
 
-            Specifies the Large Unit granularity, minus one.
-        
-            `bLength`
 
-            Specifies the length, in bytes, of this descriptor.
-        
-            `bLUEnable`
+`bDataReliability`
 
-            Specifies if the logic unit number (LUN) is enabled. If <b>bLUEnable</b> is equal to 0x00, the logical unit is disabled.
-        
-            `bLUQueueDepth`
+Specifies if the device is protected against a power failure during a write operation to the logical unit.
 
-            Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.
-        
-            `bLUWriteProtect`
+`bDescriptorIDN`
 
-            Specifies if the logical unit is write-protected. Contains one of the following values:
+Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_UNIT_IDN</b>.
 
+`bLargeUnitGranularity_M1`
+
+Specifies the Large Unit granularity, minus one.
+
+`bLength`
+
+Specifies the length, in bytes, of this descriptor.
+
+`bLogicalBlockSize`
+
+Specifies the logical block size of the descriptor. Set the value of this equal to the corresponding value in <b>dOptimalLogicalBlockSize</b> of <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a> for the specific logical unit memory type.
+
+`bLUEnable`
+
+Specifies if the logic unit number (LUN) is enabled. If <b>bLUEnable</b> is equal to 0x00, the logical unit is disabled.
+
+`bLUQueueDepth`
+
+Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.
+
+`bLUWriteProtect`
+
+Specifies if the logical unit is write-protected. Contains one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -110,19 +121,18 @@ typedef struct _UFS_UNIT_DESCRIPTOR {
 <td>The logical unit is permanently write protected.</td>
 </tr>
 </table>
-        
-            `bMemoryType`
 
-            Specifies the desired memory type. The <b>wSupportedMemoryTypes</b> parameter in the <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a> indicates which memory types are supported by the device
-        
-            `bProvisioningType`
+`bMemoryType`
 
-            Specifies the provisioning type.
-        
-            `bPSASensitive`
+Specifies the desired memory type. The <b>wSupportedMemoryTypes</b> parameter in the <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a> indicates which memory types are supported by the device
 
-            Specifies if the logical unit is sensitive to soldering. Contains one of the following values:
+`bProvisioningType`
 
+Specifies the provisioning type.
+
+`bPSASensitive`
+
+Specifies if the logical unit is sensitive to soldering. Contains one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -137,29 +147,29 @@ typedef struct _UFS_UNIT_DESCRIPTOR {
 <td>The logical unit is sensitive to soldering.</td>
 </tr>
 </table>
-        
-            `bUnitIndex`
 
-            Specifies unit index
-        
-            `dEraseBlockSize`
+`bUnitIndex`
 
-            Specifies the erase block size.
-        
-            `qLogicalBlockCount`
+Specifies unit index
 
-            Specifies the total number of addressable logical blocks in the logical unit.
-        
-            `qPhyMemResourceCount`
+`dEraseBlockSize`
 
-            Specifies the total physical memory resources available in the logical unit.
-        
-            `wContextCapabilities`
+Specifies the erase block size.
 
-            Specifies the number of contexts to be supported in each logical unit.
+`qLogicalBlockCount`
 
-    ## Remarks
-        <b>bPSASensitive</b> and<b> dEraseBlockSize</b> are updated automatically after device configuration.
+Specifies the total number of addressable logical blocks in the logical unit.
+
+`qPhyMemResourceCount`
+
+Specifies the total physical memory resources available in the logical unit.
+
+`wContextCapabilities`
+
+Specifies the number of contexts to be supported in each logical unit.
+
+## Remarks
+<b>bPSASensitive</b> and<b> dEraseBlockSize</b> are updated automatically after device configuration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -169,16 +179,12 @@ typedef struct _UFS_UNIT_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ufs.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a8b22839-6a5d-48e2-a0e5-dae811d729ef
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PHYSICAL_COUNTER_RESOURCE_LIST, PHYSICAL_COUNTER_RESOURCE_LIST, *PPHYSICAL_COUNTER_RESOURCE_LIST
+ms.keywords : PPHYSICAL_COUNTER_RESOURCE_LIST, *PPHYSICAL_COUNTER_RESOURCE_LIST, PHYSICAL_COUNTER_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], PPHYSICAL_COUNTER_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], ntddk/PPHYSICAL_COUNTER_RESOURCE_LIST, kernel.physical_counter_resource_list, PHYSICAL_COUNTER_RESOURCE_LIST, _PHYSICAL_COUNTER_RESOURCE_LIST, ntddk/PHYSICAL_COUNTER_RESOURCE_LIST, kstruct_c_17d0a58a-6ac5-4360-a481-d33f0942b521.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PHYSICAL_COUNTER_RESOURCE_LIST
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PHYSICAL_COUNTER_RESOURCE_LIST, *PPHYSICAL_COUNTER_RESOURCE_LIST
 ---
 
@@ -47,17 +51,17 @@ typedef struct _PHYSICAL_COUNTER_RESOURCE_LIST {
 
 ## Members
 
-        
-            `Count`
 
-            The number of elements in the <b>Descriptors</b> array.
-        
-            `Descriptors`
+`Count`
 
-            The first element in an array of <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structures. If the array contains more than one element, the remaining elements immediately follow the first element.
+The number of elements in the <b>Descriptors</b> array.
 
-    ## Remarks
-        This structure describes a set of counter resources. Most processors have performance monitor units (PMUs) that contain a number of hardware counters to measure various aspects of system performance. A counter resource is a single hardware counter, a block of contiguous counters, or a counter overflow interrupt in a PMU.
+`Descriptors`
+
+The first element in an array of <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structures. If the array contains more than one element, the remaining elements immediately follow the first element.
+
+## Remarks
+This structure describes a set of counter resources. Most processors have performance monitor units (PMUs) that contain a number of hardware counters to measure various aspects of system performance. A counter resource is a single hardware counter, a block of contiguous counters, or a counter overflow interrupt in a PMU.
 
 The buffer allocated to contain a <b>PHYSICAL_COUNTER_RESOURCE_LIST</b> structure must be large enough to contain the structure plus any <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> array elements that follow the structure.
 
@@ -71,16 +75,12 @@ The <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwa
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
+
  
 
  

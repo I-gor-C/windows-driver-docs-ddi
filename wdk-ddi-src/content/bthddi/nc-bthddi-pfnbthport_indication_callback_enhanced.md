@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.keywords : bltooth.enhanced_l2cap_callback_function, BluetoothPortIndicationCallbackEnhanced callback function [Bluetooth Devices], BluetoothPortIndicationCallbackEnhanced, PFNBTHPORT_INDICATION_CALLBACK_ENHANCED, PFNBTHPORT_INDICATION_CALLBACK_ENHANCED, bthddi/BluetoothPortIndicationCallbackEnhanced
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BluetoothPortIndicationCallbackEnhanced
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
@@ -96,7 +100,7 @@ The
     <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> enumeration that the Bluetooth
     driver stack passes to the profile driver's enhanced L2CAP callback function through the 
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS_ENHANCED union member that
-    corresponds to the event and contains event-specific parameters.</p>
+    corresponds to the event and contains event-specific parameters.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 97C92A85-BE00-4B95-80D1-20FE7A31BCA9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::ParseDetectionResultData, ParseDetectionResultData
+ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::ParseDetectionResultData, audio.ikeyworddetectoroemadapter_parsedetectionresultdata, ParseDetectionResultData method [Audio Devices], ParseDetectionResultData, ParseDetectionResultData method [Audio Devices], IKeywordDetectorOemAdapter interface, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ParseDetectionResultData, IKeywordDetectorOemAdapter interface [Audio Devices], ParseDetectionResultData method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKeywordDetectorOemAdapter.ParseDetectionResultData
-req.alt-loc : KeywordDetectorOemAdapter.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : KeywordDetectorOemAdapter.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : keyworddetectoroemadapter.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDID
 ---
 
@@ -86,21 +90,67 @@ Indicates if the user matched.
 ## Return Value
 
 This method can return one of these values.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>S_OK</dt>
-</dl>The function exited successfully. 
+</dl>
+</td>
+<td width="60%">
+The function exited successfully. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>E_POINTER</dt>
-</dl> The <i>ModelData</i> pointer is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+ The <i>ModelData</i> pointer is <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>E_INVALIDARG</dt>
-</dl> The <i>KeywordId</i> or <i>LangId</i> parameters are invalid.
+</dl>
+</td>
+<td width="60%">
+ The <i>KeywordId</i> or <i>LangId</i> parameters are invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>HRESULT_FROM_WIN32(ERROR_GEN_FAILURE)</dt>
-</dl> The processing was unable to complete.
+</dl>
+</td>
+<td width="60%">
+ The processing was unable to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>E_HW_RESET</dt>
-</dl>The hardware reset due to an internal fault.
+</dl>
+</td>
+<td width="60%">
+The hardware reset due to an internal fault.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -129,26 +179,18 @@ If the caller receives <b>E_HW_RESET</b>, no keyword was detected by the hardwar
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932150">KSPROPERTY_SOUNDDETECTOR_MATCHRESULT</a>
-</dt>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-sounddetector_patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/c4cb588d-9482-4f90-a92e-75b604540d5c">CoTaskMemAlloc</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/3d0af12e-fc74-4ef7-b2dd-e9da5d0483c7">CoTaskMemFree</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932150">KSPROPERTY_SOUNDDETECTOR_MATCHRESULT</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946533">IMiniportWaveRTInputStream::GetReadPacket</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/3d0af12e-fc74-4ef7-b2dd-e9da5d0483c7">CoTaskMemFree</a>
+
+<a href="..\ksmedia\ns-ksmedia-sounddetector_patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a>
+
+<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
+
  
 
  

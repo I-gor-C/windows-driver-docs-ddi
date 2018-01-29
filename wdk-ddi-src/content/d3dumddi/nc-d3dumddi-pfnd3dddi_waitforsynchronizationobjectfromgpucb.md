@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 49023D25-D57E-418F-AD10-133377B90493
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnwaitforsynchronizationobjectfromgpucb, pfnWaitForSynchronizationObjectFromGpuCb callback function [Display Devices], pfnWaitForSynchronizationObjectFromGpuCb, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB, d3dumddi/pfnWaitForSynchronizationObjectFromGpuCb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnWaitForSynchronizationObjectFromGpuCb
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,18 +87,12 @@ This function semantics are similar to existing <a href="..\d3dumddi\nc-d3dumddi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobject2cb.md">pfnWaitForSynchronizationObject2Cb</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-d3dddicb_waitforsynchronizationobjectfromgpu.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectcb.md">pfnWaitForSynchronizationObjectCb</a>
-</dt>
-<dt><i>pfnWaitForSynchronizationObject2Cb</i></dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-d3dddicb_waitforsynchronizationobjectfromgpu.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
+
+<i>pfnWaitForSynchronizationObject2Cb</i>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 15AE3B05-1FD4-4ADB-B92F-9098225A920B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_HDR_METADATA, DXGK_HDR_METADATA
+ms.keywords : DXGK_HDR_METADATA structure [Display Devices], _DXGK_HDR_METADATA, display.dxgk_hdr_metadata, d3dkmddi/DXGK_HDR_METADATA, DXGK_HDR_METADATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_HDR_METADATA
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_HDR_METADATA
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXGK_HDR_METADATA {
 
 ## Members
 
-        
-            `pMetaData`
 
-            Pointer to the HDR metadata.
-        
-            `Size`
+`pMetaData`
 
-            Indicates the size of the HDR metadata.
-        
-            `Type`
+Pointer to the HDR metadata.
 
-            Indicates the type of the HDR metadata.
+`Size`
+
+Indicates the size of the HDR metadata.
+
+`Type`
+
+Indicates the type of the HDR metadata.
 
 
 ## Requirements

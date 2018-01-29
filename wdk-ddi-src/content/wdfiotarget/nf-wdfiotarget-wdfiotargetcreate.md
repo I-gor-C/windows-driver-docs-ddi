@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 21a2fa9c-24c1-4964-aaa7-96ac86b8c078
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetCreate
+ms.keywords : WdfIoTargetCreate method, PFN_WDFIOTARGETCREATE, kmdf.wdfiotargetcreate, wdfiotarget/WdfIoTargetCreate, wdf.wdfiotargetcreate, WdfIoTargetCreate, DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfIoTargetCreate
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -69,17 +73,45 @@ A pointer to a location that receives a handle to an I/O target object.
 ## Return Value
 
 <b>WdfIoTargetCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There was insufficient memory to create a new I/O target object.
+</dl>
+</td>
+<td width="60%">
+There was insufficient memory to create a new I/O target object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that <i>IoTargetAttributes</i> specified did not specify the framework device object that <i>Device</i> specified, or an object whose chain of parents leads to that object.
+</dl>
+</td>
+<td width="60%">
+The <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that <i>IoTargetAttributes</i> specified did not specify the framework device object that <i>Device</i> specified, or an object whose chain of parents leads to that object.
 
- 
+</td>
+</tr>
+</table> 
 
 For a list of other return values that WdfIoTargetCreate can return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -99,8 +131,6 @@ If your driver provides <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_contex
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
-For a code example that uses <b>WdfIoTargetCreate</b>, see <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -115,14 +145,10 @@ For a code example that uses <b>WdfIoTargetCreate</b>, see <a href="..\wdfiotarg
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
-</dt>
-</dl>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
  
 
  

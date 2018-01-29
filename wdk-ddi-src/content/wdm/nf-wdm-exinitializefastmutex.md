@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : edd189f9-1089-470f-95a9-670bdba9c210
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExInitializeFastMutex
+ms.keywords : ExInitializeFastMutex, k102_b340d108-2e1c-4fa5-9bd0-d174452b125c.xml, wdm/ExInitializeFastMutex, kernel.exinitializefastmutex, ExInitializeFastMutex routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExInitializeFastMutex
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,29 +86,20 @@ For more information about fast mutexes, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545715">FAST_MUTEX</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544337">ExAcquireFastMutex</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544340">ExAcquireFastMutexUnsafe</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545549">ExReleaseFastMutex</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545567">ExReleaseFastMutexUnsafe</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545647">ExTryToAcquireFastMutex</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545549">ExReleaseFastMutex</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545715">FAST_MUTEX</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544340">ExAcquireFastMutexUnsafe</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544337">ExAcquireFastMutex</a>
+
 <a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545567">ExReleaseFastMutexUnsafe</a>
+
  
 
  

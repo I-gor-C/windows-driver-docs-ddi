@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 274bdd80-e898-42c7-8adc-8eae4e895b5f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DEVICE_ESCAPE, D3DKMT_DEVICE_ESCAPE
+ms.keywords : D3DKMT_DEVICE_ESCAPE, OpenGL_Structs_38febe04-ae75-475a-ab69-81995acb567b.xml, D3DKMT_DEVICE_ESCAPE structure [Display Devices], display.d3dkmt_device_escape, _D3DKMT_DEVICE_ESCAPE, d3dkmthk/D3DKMT_DEVICE_ESCAPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DEVICE_ESCAPE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DEVICE_ESCAPE
 ---
 
@@ -55,10 +59,10 @@ typedef struct _D3DKMT_DEVICE_ESCAPE {
 
 ## Members
 
-        
-            `Type`
 
-            
+`Type`
+
+
 
 
 ## Requirements
@@ -69,16 +73,12 @@ typedef struct _D3DKMT_DEVICE_ESCAPE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
-</dt>
-</dl>
+
  
 
  

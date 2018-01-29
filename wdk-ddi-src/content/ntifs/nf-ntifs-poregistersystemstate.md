@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 851c694f-6c47-498c-8035-132a63c0fa62
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoRegisterSystemState
+ms.keywords : portn_477a2d72-00f7-45a1-b7ca-504b741c5fe0.xml, kernel.poregistersystemstate, wdm/PoRegisterSystemState, PoRegisterSystemState routine [Kernel-Mode Driver Architecture], PoRegisterSystemState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoRegisterSystemState
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -64,7 +68,7 @@ Indicates the type of activity, as specified by a bitwise OR of one or more of t
 
 ## Remarks
 
-<b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>.
+<b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>.
 
 The <i>Flags</i> parameter specifies the type of activity in progress. Drivers can specify any combination of the flags.
 
@@ -88,14 +92,10 @@ To set the system power state, call <a href="..\wdm\nf-wdm-posetsystemstate.md">
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
+
  
 
  

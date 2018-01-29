@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b7e52667-b4ef-4807-867c-37b80af03b6b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPropertyHandlerWithAllocator
+ms.keywords : KsPropertyHandlerWithAllocator, ks/KsPropertyHandlerWithAllocator, ksfunc_bad2a764-641a-4f28-a7e6-7d9a03d300f3.xml, KsPropertyHandlerWithAllocator function [Streaming Media Devices], stream.kspropertyhandlerwithallocator
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPropertyHandlerWithAllocator
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -70,7 +74,7 @@ Optionally points to an allocation function used to allocate memory to store the
 
 `OPTIONAL`
 
-
+TBD
 
 
 ## Return Value
@@ -97,14 +101,10 @@ On 64-bit platforms, if the <i>PropertyItemSize</i> parameter is not a multiple 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksfastpropertyhandler.md">KsFastPropertyHandler</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a>
-</dt>
-</dl>
+
  
 
  

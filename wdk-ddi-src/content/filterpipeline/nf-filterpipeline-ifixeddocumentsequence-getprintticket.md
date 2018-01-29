@@ -7,8 +7,8 @@ old-location : print\ifixeddocumentsequence_getprintticket.htm
 old-project : print
 ms.assetid : dba0ac90-a895-4daf-ba7c-b7a8a32fed19
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IFixedDocumentSequence, IFixedDocumentSequence::GetPrintTicket, GetPrintTicket
+ms.date : 1/18/2018
+ms.keywords : GetPrintTicket, GetPrintTicket method [Print Devices], GetPrintTicket method [Print Devices], IFixedDocumentSequence interface, IFixedDocumentSequence interface [Print Devices], GetPrintTicket method, IFixedDocumentSequence, print.ifixeddocumentsequence_getprintticket, IFixedDocumentSequence::GetPrintTicket, filterpipeline_f94c6c29-91ba-4820-ad22-12cc9604993c.xml, filterpipeline/IFixedDocumentSequence::GetPrintTicket
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IFixedDocumentSequence.GetPrintTicket
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

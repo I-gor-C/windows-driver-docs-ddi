@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 308e6401-9726-4333-bde8-1aec9558c5fb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReadRegisterUlong
+ms.keywords : StorPortReadRegisterUlong, storprt_dd719ccb-d625-4820-a371-dff748037a99.xml, storage.storportreadregisterulong, storport/StorPortReadRegisterUlong, StorPortReadRegisterUlong routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortReadRegisterUlong
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -81,14 +85,10 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterulong.md">S
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\srb\nf-srb-scsiportreadregisterulong.md">ScsiPortReadRegisterUlong</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportreadregisterbufferulong.md">StorPortReadRegisterBufferUlong</a>
-</dt>
-</dl>
+
+<a href="..\srb\nf-srb-scsiportreadregisterulong.md">ScsiPortReadRegisterUlong</a>
+
  
 
  

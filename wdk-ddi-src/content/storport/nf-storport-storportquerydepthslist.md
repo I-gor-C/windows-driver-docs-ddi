@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5E1CE999-8173-49B6-8CF7-F3A5B193A230
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortQueryDepthSList
+ms.keywords : StorPortQueryDepthSList routine [Storage Devices], storport/StorPortQueryDepthSList, storage.storportquerydepthslist, StorPortQueryDepthSList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortQueryDepthSList
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -67,15 +71,45 @@ A pointer to a <b>SHORT</b> value which receives the  list depth count.
 ## Return Value
 
 <b>StorPortQueryDepthSList</b> returns one of the following status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>This function is not implemented on the active operating system.
+</dl>
+</td>
+<td width="60%">
+This function is not implemented on the active operating system.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The list depth  was successfully returned.
+</dl>
+</td>
+<td width="60%">
+The list depth  was successfully returned.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>A pointer in <i>SListHead</i> or <i>Result</i> is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+A pointer in <i>SListHead</i> or <i>Result</i> is <b>NULL</b>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -95,20 +129,14 @@ Since <b>StorPortQueryDepthSList</b> is not interlocked, the list  depth value p
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
+
+<a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
+
+<a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
+
  
 
  

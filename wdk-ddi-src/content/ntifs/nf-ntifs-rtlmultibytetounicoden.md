@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c0cc4fba-01ba-4745-8dee-fc4c43f570cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlMultiByteToUnicodeN
+ms.keywords : RtlMultiByteToUnicodeN routine [Installable File System Drivers], ntifs/RtlMultiByteToUnicodeN, ifsk.rtlmultibytetounicoden, RtlMultiByteToUnicodeN, rtlref_c9245403-e17c-479b-ac16-07deb29a56d1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlMultiByteToUnicodeN
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -105,14 +109,10 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlmultibytetounicodesize.md">RtlMultiByteToUnicodeSize</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlunicodetomultibyten.md">RtlUnicodeToMultiByteN</a>
-</dt>
-</dl>
+
  
 
  

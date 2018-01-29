@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0c27c49e-a06c-4781-9d7f-50f15f9715ac
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.keywords : storage.ioctl_mountmgr_volume_arrival_notification, IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION control code [Storage Devices], IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION, mountmgr/IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION, k307_7a15b0f1-9be7-476f-936c-225e39ef53c0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION
-req.alt-loc : Mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION IOCTL
@@ -63,7 +67,6 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS.
 
 The input buffer size, indicated by <b>InputBufferLength</b>, must be large enough to hold the structure MOUNTMGR_TARGET_NAME and the symbolic link name that follows it. If it is not large enough, the <b>Status</b> field is set to STATUS_INVALID_PARAMETER.
@@ -76,13 +79,10 @@ The input buffer size, indicated by <b>InputBufferLength</b>, must be large enou
 | **Header** | mountmgr.h (include Mountmgr.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_target_name.md">MOUNTMGR_TARGET_NAME</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : 53881aca-e49c-43e9-b68e-b91a1868e3f5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION, *PPCMCIA_SOCKET_INFORMATION
+ms.keywords : PPCMCIA_SOCKET_INFORMATION structure pointer [Buses], PCMCIA.pcmcia_socket_information, PCMCIA_SOCKET_INFORMATION structure [Buses], ntddpcm/PCMCIA_SOCKET_INFORMATION, ntddpcm/PPCMCIA_SOCKET_INFORMATION, PPCMCIA_SOCKET_INFORMATION, memcdref_b118ae5c-5dc5-4919-809d-5cfe5b25598f.xml, PCMCIA_SOCKET_INFORMATION, *PPCMCIA_SOCKET_INFORMATION, _PCMCIA_SOCKET_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCMCIA_SOCKET_INFORMATION
-req.alt-loc : ntddpcm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : PCMCIA_SOCKET_INFORMATION, *PPCMCIA_SOCKET_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION"
 ---
 
 # _PCMCIA_SOCKET_INFORMATION structure
@@ -55,23 +59,22 @@ typedef struct _PCMCIA_SOCKET_INFORMATION {
 
 ## Members
 
-        
-            `CardEnabled`
 
-            Indicates that the card is enabled.
-        
-            `CardInSocket`
+`CardEnabled`
 
-            Indicates that there is a card present in the socket.
-        
-            `ControllerType`
+Indicates that the card is enabled.
 
-            Indicates the controller type. Some common controller types are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537600">PCMCIA_CONTROLLER_CLASS</a> enumeration.
-        
-            `DeviceFunctionId`
+`CardInSocket`
 
-            Indicates the type of PC Card or CardBus card. This value can be one of the following.
+Indicates that there is a card present in the socket.
 
+`ControllerType`
+
+Indicates the controller type. Some common controller types are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537600">PCMCIA_CONTROLLER_CLASS</a> enumeration.
+
+`DeviceFunctionId`
+
+Indicates the type of PC Card or CardBus card. This value can be one of the following.
 <table>
 <tr>
 <th>PC Card Type</th>
@@ -208,30 +211,30 @@ Modem card.
 </td>
 </tr>
 </table>
-        
-            `DriverName`
 
-            Contains the name of the PC Card or CardBus card device driver.
-        
-            `Identifier`
+`DriverName`
 
-            Contains the device ID of the PC Card or CardBus card.
-        
-            `Manufacturer`
+Contains the name of the PC Card or CardBus card device driver.
 
-            Indicates the manufacturer of the PC Card or CardBus card.
-        
-            `Reserved`
+`Identifier`
 
-            Reserved.
-        
-            `Socket`
+Contains the device ID of the PC Card or CardBus card.
 
-            Indicates the socket number.
-        
-            `TupleCrc`
+`Manufacturer`
 
-            Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="https://msdn.microsoft.com/7eaf6372-a9cc-4714-8955-52653ec57141">Identifiers for PCMCIA Devices</a>.
+Indicates the manufacturer of the PC Card or CardBus card.
+
+`Reserved`
+
+Reserved.
+
+`Socket`
+
+Indicates the socket number.
+
+`TupleCrc`
+
+Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="https://msdn.microsoft.com/7eaf6372-a9cc-4714-8955-52653ec57141">Identifiers for PCMCIA Devices</a>.
 
 
 ## Requirements
@@ -242,13 +245,10 @@ Modem card.
 | **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537275">IOCTL_SOCKET_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

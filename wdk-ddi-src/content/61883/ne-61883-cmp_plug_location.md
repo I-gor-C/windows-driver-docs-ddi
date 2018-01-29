@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : C46822B9-2263-4424-853B-32C726D83950
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CMP_PLUG_LOCATION, CMP_PLUG_LOCATION
+ms.keywords : 61883/CMP_PlugLocal, CMP_PLUG_LOCATION enumeration [Buses], CMP_PlugLocal, 61883/CMP_PLUG_LOCATION, CMP_PLUG_LOCATION, IEEE.cmp_plug_location, CMP_PlugRemote, 61883/CMP_PlugRemote
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CMP_PLUG_LOCATION
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CMP_PLUG_LOCATION
 ---
 
@@ -71,11 +75,8 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c91b9ea0-8c42-4199-b161-2b43ba4a1833
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_QUEUE_STATE, *PWDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE
+ms.keywords : WDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE enumeration, _WDF_IO_QUEUE_STATE, WdfIoQueuePnpHeld, wudfddi/WDF_IO_QUEUE_STATE, WdfIoQueueAcceptRequests, wudfddi/WdfIoQueueAcceptRequests, wdf.wdf_io_queue_state_umdf, wudfddi/WdfIoQueueNoRequests, umdf.wdf_io_queue_state, wudfddi/WdfIoQueueDispatchRequests, wudfddi/WdfIoQueuePnpHeld, umdfstructs_b0fa52c7-c536-43d3-b9a7-f63977ccb619.xml, wudfddi/WdfIoQueueDriverNoRequests, WdfIoQueueDriverNoRequests, *PWDF_IO_QUEUE_STATE, WdfIoQueueNoRequests, WdfIoQueueDispatchRequests
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDF_IO_QUEUE_STATE
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE"
 req.product : Windows 10 or later.
 ---
@@ -97,20 +101,14 @@ If this value is set to 0, the queue does not automatically dispatch requests to
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558946">IWDFIoQueue::ConfigureRequestDispatching</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558946">IWDFIoQueue::ConfigureRequestDispatching</a>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
+
  
 
  

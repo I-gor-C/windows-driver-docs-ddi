@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A54E56A6-9A6C-435D-83FD-84BB0E072C74
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUnifiedPropertyStoreFactory, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore
+ms.keywords : wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, umdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, wudfddi/IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory, IWDFUnifiedPropertyStoreFactory interface, RetrieveUnifiedDevicePropertyStore method, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory interface, RetrieveUnifiedDevicePropertyStore method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFUnifiedPropertyStoreFactory.RetrieveUnifiedDevicePropertyStore
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -64,14 +68,34 @@ The address of a location that receives a pointer to an <a href="..\wudfddi\nn-w
 ## Return Value
 
 <b>RetrieveUnifiedDevicePropertyStore</b> returns S_OK if the operation succeeds. Otherwise, the method might return one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The caller provided an invalid input argument.
+</dl>
+</td>
+<td width="60%">
+The caller provided an invalid input argument.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
-</dl>An attempt to allocate memory failed.
+</dl>
+</td>
+<td width="60%">
+An attempt to allocate memory failed.
 
- 
+</td>
+</tr>
+</table> 
 
 This method might return one of the other values that <i>Winerror.h</i> contains.
 
@@ -84,8 +108,6 @@ The <b>RootClass</b> member of the <a href="..\wudfddi_types\ns-wudfddi_types-_w
 In addition, if <b>RootClass</b> is set to <b>WdfPropertyStoreRootClassHardwareKey</b>, then the <b>Qualifier.HardwareKey.ServiceName</b> member of <i>RootSpecifier</i> must be NULL.
 
 For more information about accessing the registry, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in UMDF-based Drivers</a>.
-
-The following code example retrieves a unified property store interface.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,14 +123,10 @@ The following code example retrieves a unified property store interface.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystorefactory.md">IWDFUnifiedPropertyStoreFactory</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystore.md">IWDFUnifiedPropertyStore</a>
-</dt>
-</dl>
+
  
 
  

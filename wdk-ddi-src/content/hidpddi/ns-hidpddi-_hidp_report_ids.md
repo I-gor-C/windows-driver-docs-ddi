@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : C88B77C3-01CB-4E8C-83A4-EB9AFB122327
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HIDP_REPORT_IDS, HIDP_REPORT_IDS, *PHIDP_REPORT_IDS
+ms.keywords : HIDP_REPORT_IDS, hid.hidp_report_ids, HIDP_REPORT_IDS structure [Human Input Devices], _HIDP_REPORT_IDS, hidpddi/PHIDP_REPORT_IDS, hidpddi/HIDP_REPORT_IDS, PHIDP_REPORT_IDS structure pointer [Human Input Devices], PHIDP_REPORT_IDS, *PHIDP_REPORT_IDS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HIDP_REPORT_IDS
-req.alt-loc : Hidpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : HIDP_REPORT_IDS, *PHIDP_REPORT_IDS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHIDP_REPORT_IDS, HIDP_REPORT_IDS"
 ---
 
 # _HIDP_REPORT_IDS structure
@@ -50,26 +54,26 @@ typedef struct _HIDP_REPORT_IDS {
 
 ## Members
 
-        
-            `CollectionNumber`
 
-            The index of the collection in the array of  <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> structure.
-        
-            `FeatureLength`
+`CollectionNumber`
 
-            The length of a feature report of this report ID.
-        
-            `InputLength`
+The index of the collection in the array of  <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> structure.
 
-            The length of an input report of this report ID.
-        
-            `OutputLength`
+`FeatureLength`
 
-            The length of an output report of this report ID. An input report, an output report, and a feature report can use the same report.
-        
-            `ReportID`
+The length of a feature report of this report ID.
 
-            The report ID of the top-level collection.
+`InputLength`
+
+The length of an input report of this report ID.
+
+`OutputLength`
+
+The length of an output report of this report ID. An input report, an output report, and a feature report can use the same report.
+
+`ReportID`
+
+The report ID of the top-level collection.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _HIDP_REPORT_IDS {
 | **Minimum UMDF version** |  |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidpddi\nf-hidpddi-hidp_getcollectiondescription.md">HidP_GetCollectionDescription</a>
-</dt>
-</dl>
+
  
 
  

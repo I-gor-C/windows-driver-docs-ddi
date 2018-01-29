@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b79f15d8-b777-43dc-82b9-fcd1ba19aebd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _REASSIGN_BLOCKS, REASSIGN_BLOCKS, *PREASSIGN_BLOCKS
+ms.keywords : ntdddisk/PREASSIGN_BLOCKS, PREASSIGN_BLOCKS, storage.reassign_blocks, REASSIGN_BLOCKS structure [Storage Devices], REASSIGN_BLOCKS, *PREASSIGN_BLOCKS, PREASSIGN_BLOCKS structure pointer [Storage Devices], structs-disk_dbe1fcc8-083e-41c4-8620-b216cdbecd34.xml, _REASSIGN_BLOCKS, ntdddisk/REASSIGN_BLOCKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REASSIGN_BLOCKS
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : REASSIGN_BLOCKS, *PREASSIGN_BLOCKS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PREASSIGN_BLOCKS, REASSIGN_BLOCKS"
 ---
 
 # _REASSIGN_BLOCKS structure
@@ -48,18 +52,18 @@ typedef struct _REASSIGN_BLOCKS {
 
 ## Members
 
-        
-            `BlockNumber`
 
-            Contains an array of block numbers corresponding to damaged blocks. These numbers will be reassigned to good blocks taken from the device's spare block pool.
-        
-            `Count`
+`BlockNumber`
 
-            Contains the number of blocks in the array pointed to by <b>BlockNumber</b> to reassign.
-        
-            `Reserved`
+Contains an array of block numbers corresponding to damaged blocks. These numbers will be reassigned to good blocks taken from the device's spare block pool.
 
-            Reserved for system use.
+`Count`
+
+Contains the number of blocks in the array pointed to by <b>BlockNumber</b> to reassign.
+
+`Reserved`
+
+Reserved for system use.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _REASSIGN_BLOCKS {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_reassign_blocks.md">IOCTL_DISK_REASSIGN_BLOCKS</a>
-</dt>
-</dl>
+
  
 
  

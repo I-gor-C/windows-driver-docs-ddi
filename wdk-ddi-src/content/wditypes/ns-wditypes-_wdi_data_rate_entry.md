@@ -7,8 +7,8 @@ old-location : netvista\wdi_data_rate_entry.htm
 old-project : netvista
 ms.assetid : 16A4B49B-9912-40BE-80E8-68416B966B71
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_DATA_RATE_ENTRY, WDI_DATA_RATE_ENTRY, *PWDI_DATA_RATE_ENTRY
+ms.date : 1/18/2018
+ms.keywords : netvista.wdi_data_rate_entry, wditypes/PWDI_DATA_RATE_ENTRY, *PWDI_DATA_RATE_ENTRY, wditypes/WDI_DATA_RATE_ENTRY, PWDI_DATA_RATE_ENTRY, WDI_DATA_RATE_ENTRY structure [Device and Driver Installation], netvista.wifi_data_rate_entry, _WDI_DATA_RATE_ENTRY, PWDI_DATA_RATE_ENTRY structure pointer [Device and Driver Installation], WDI_DATA_RATE_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_DATA_RATE_ENTRY
-req.alt-loc : wditypes.hpp
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_DATA_RATE_ENTRY, *PWDI_DATA_RATE_ENTRY
 req.product : Windows 10 or later.
 ---
@@ -49,14 +53,14 @@ typedef struct _WDI_DATA_RATE_ENTRY {
 
 ## Members
 
-        
-            `DataRateFlag`
 
-            Specifies data rate flags as defined in WDI_DATA_RATE_FLAGS.
-        
-            `DataRateValue`
+`DataRateFlag`
 
-            Specifies the data rate in units of 500 kilobits per second. The value is in the range from 0x0002 through 0xffff.
+Specifies data rate flags as defined in WDI_DATA_RATE_FLAGS.
+
+`DataRateValue`
+
+Specifies the data rate in units of 500 kilobits per second. The value is in the range from 0x0002 through 0xffff.
 
 
 ## Requirements

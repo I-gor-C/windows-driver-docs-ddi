@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 1d96a799-6e52-49e0-b440-a8643111176f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_PCIEXPRESS_ERROR_SECTION, WHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR, WHEA_PCIEXPRESS_ERROR
+ms.keywords : whea.whea_pciexpress_error_section, WHEA_PCIEXPRESS_ERROR, PWHEA_PCIEXPRESS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], _WHEA_PCIEXPRESS_ERROR_SECTION, WHEA_PCIEXPRESS_ERROR_SECTION structure [WHEA Drivers and Applications], PWHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR_SECTION, WHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR, ntddk/WHEA_PCIEXPRESS_ERROR_SECTION, ntddk/PWHEA_PCIEXPRESS_ERROR_SECTION, whearef_77796d60-3376-4d78-9b24-9ddb1e3d6132.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_PCIEXPRESS_ERROR_SECTION
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR_SECTION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_PCIEXPRESS_ERROR_SECTION, WHEA_PCIEXPRESS_ERROR_SECTION"
 ---
 
 # _WHEA_PCIEXPRESS_ERROR_SECTION structure
@@ -55,17 +59,16 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 
 ## Members
 
-        
-            `AerInfo`
 
-            A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure that describes the PCIe advanced error reporting (AER) extended capability structure for the device where the error occurred.
+`AerInfo`
+
+A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure that describes the PCIe advanced error reporting (AER) extended capability structure for the device where the error occurred.
 
 This member contains valid data only if the <b>ValidBits.AerInfo</b> bit is set.
-        
-            `BridgeControlStatus`
 
-            A WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union that contains the contents of the PCI control and secondary status registers of the bridge device where the error occurred. The WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union is defined as follows:
+`BridgeControlStatus`
 
+A WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union that contains the contents of the PCI control and secondary status registers of the bridge device where the error occurred. The WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -82,11 +85,12 @@ This member contains valid data only if the <b>ValidBits.AerInfo</b> bit is set.
 </td>
 </tr>
 </table></span></div>
-        
-            `CommandStatus`
 
-            A WHEA_PCIEXPRESS_COMMAND_STATUS union that contains the contents of the PCI command and status registers of the PCIe device where the error occurred. The WHEA_PCIEXPRESS_COMMAND_STATUS union is defined as follows:
+This member contains valid data only if the <b>ValidBits.BridgeControlStatus</b> bit is set.
 
+`CommandStatus`
+
+A WHEA_PCIEXPRESS_COMMAND_STATUS union that contains the contents of the PCI command and status registers of the PCIe device where the error occurred. The WHEA_PCIEXPRESS_COMMAND_STATUS union is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -103,11 +107,12 @@ This member contains valid data only if the <b>ValidBits.AerInfo</b> bit is set.
 </td>
 </tr>
 </table></span></div>
-        
-            `DeviceId`
 
-            A WHEA_PCIEXPRESS_DEVICE_ID structure that contains data that identifies the PCIe device where the error occurred. The WHEA_PCIEXPRESS_DEVICE_ID structure is defined as follows:
+This member contains valid data only if the <b>ValidBits.CommandStatus</b> bit is set.
 
+`DeviceId`
+
+A WHEA_PCIEXPRESS_DEVICE_ID structure that contains data that identifies the PCIe device where the error occurred. The WHEA_PCIEXPRESS_DEVICE_ID structure is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -129,35 +134,40 @@ This member contains valid data only if the <b>ValidBits.AerInfo</b> bit is set.
 </td>
 </tr>
 </table></span></div>
-        
-            `DeviceSerialNumber`
 
-            The serial number of the PCIe device where the error occurred.
+This member contains valid data only if the <b>ValidBits.DeviceId</b> bit is set.
+
+`DeviceSerialNumber`
+
+The serial number of the PCIe device where the error occurred.
 
 This member contains valid data only if the <b>ValidBits.DeviceSerialNumber</b> bit is set.
-        
-            `ExpressCapability`
 
-            A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure that describes the PCIe capability structure for the device where the error occurred.
+`ExpressCapability`
+
+A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure that describes the PCIe capability structure for the device where the error occurred.
 
 This member contains valid data only if the <b>ValidBits.ExpressCapability</b> bit is set.
-        
-            `PortType`
 
-            The device type or port type of the PCIe component where the error occurred. Possible values are:
-        
-            `Reserved`
+`PortType`
 
-            Reserved for system use.
-        
-            `ValidBits`
+The device type or port type of the PCIe component where the error occurred. Possible values are:
 
-            A <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section_validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
-        
-            `Version`
 
-            A WHEA_PCIEXPRESS_VERSION union that contains the version of the PCIe specification that is supported by the hardware platform. The WHEA_PCIEXPRESS_VERSION union is defined as follows:
 
+This member contains valid data only if the <b>ValidBits.PortType</b> bit is set.
+
+`Reserved`
+
+Reserved for system use.
+
+`ValidBits`
+
+A <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section_validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
+
+`Version`
+
+A WHEA_PCIEXPRESS_VERSION union that contains the version of the PCIe specification that is supported by the hardware platform. The WHEA_PCIEXPRESS_VERSION union is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -176,8 +186,10 @@ This member contains valid data only if the <b>ValidBits.ExpressCapability</b> b
 </tr>
 </table></span></div>
 
-    ## Remarks
-        The WHEA_PCIEXPRESS_ERROR_SECTION structure describes the error data that is contained in a PCI Express (PCIe) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCIe error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIEXPRESS_ERROR_SECTION_GUID.
+This member contains valid data only if the <b>ValidBits.Version</b> bit is set.
+
+## Remarks
+The WHEA_PCIEXPRESS_ERROR_SECTION structure describes the error data that is contained in a PCI Express (PCIe) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCIe error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIEXPRESS_ERROR_SECTION_GUID.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -187,25 +199,18 @@ This member contains valid data only if the <b>ValidBits.ExpressCapability</b> b
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section_validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+
  
 
  

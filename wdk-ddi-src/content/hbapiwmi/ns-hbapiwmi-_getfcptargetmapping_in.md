@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a07a97ea-17f0-4e24-89c5-1b24600ac497
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetFcpTargetMapping_IN, GetFcpTargetMapping_IN, *PGetFcpTargetMapping_IN
+ms.keywords : GetFcpTargetMapping_IN, structs-Fibre_1c84c265-fc0a-4d56-bdb9-7a10ef80b707.xml, GetFcpTargetMapping_IN structure [Storage Devices], _GetFcpTargetMapping_IN, *PGetFcpTargetMapping_IN, storage.getfcptargetmapping_in, PGetFcpTargetMapping_IN, hbapiwmi/GetFcpTargetMapping_IN, hbapiwmi/PGetFcpTargetMapping_IN, PGetFcpTargetMapping_IN structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFcpTargetMapping_IN
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : GetFcpTargetMapping_IN, *PGetFcpTargetMapping_IN
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PGetFcpTargetMapping_IN, GetFcpTargetMapping_IN"
 ---
 
 # _GetFcpTargetMapping_IN structure
@@ -47,17 +51,17 @@ typedef struct _GetFcpTargetMapping_IN {
 
 ## Members
 
-        
-            `HbaPortWWN`
 
-            Contains a worldwide name for the port whose table of mappings is to be retrieved.
-        
-            `InEntryCount`
+`HbaPortWWN`
 
-            Indicates the total number of persistent bindings associated with the HBA.
+Contains a worldwide name for the port whose table of mappings is to be retrieved.
 
-    ## Remarks
-        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method queries a WMI provider for mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for the logical units.
+`InEntryCount`
+
+Indicates the total number of persistent bindings associated with the HBA.
+
+## Remarks
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method queries a WMI provider for mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for the logical units.
 
 The WMI tool suite generates a declaration of the GetFcpTargetMapping_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
@@ -69,16 +73,12 @@ The WMI tool suite generates a declaration of the GetFcpTargetMapping_IN structu
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : pos\linedisplayverticalbitmapalignment.htm
 old-project : pos
 ms.assetid : ADB42318-BE2F-4D70-912C-79D29DF12D72
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : LineDisplayVerticalBitmapAlignment,
+ms.date : 1/18/2018
+ms.keywords : LineDisplayVerticalBitmapAlignment, pointofservicecommontypes/LineDisplayVerticalBitmapAlignment, LineDisplayVerticalBitmapAlignment enumeration, pos.linedisplayverticalbitmapalignment, pointofservicecommontypes/
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LineDisplayVerticalBitmapAlignment
-req.alt-loc : pointofservicecommontypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,6 +51,21 @@ typedef enum _LineDisplayVerticalBitmapAlignment {
 ## Constants
 
 <table>
+
+<tr>
+<td>VerticalAlignmentBottom</td>
+<td></td>
+</tr>
+
+<tr>
+<td>VerticalAlignmentCenter</td>
+<td></td>
+</tr>
+
+<tr>
+<td>VerticalAlignmentTop</td>
+<td></td>
+</tr>
 </table>
 
 

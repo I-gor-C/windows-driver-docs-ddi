@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : aed86b34-4a9e-4c39-be0f-fa57829fa926
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCompareInstanceAltitudes
+ms.keywords : ifsk.fltcompareinstancealtitudes, FltCompareInstanceAltitudes, fltkernel/FltCompareInstanceAltitudes, FltCompareInstanceAltitudes function [Installable File System Drivers], FltApiRef_a_to_d_5f6cccb8-671c-495a-9c18-c262d4845105.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltCompareInstanceAltitudes
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -61,15 +65,45 @@ Pointer to the second instance.
 ## Return Value
 
 <b>FltCompareInstanceAltitudes</b> returns a signed value that gives the results of the comparison as follows: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Zero</b></dt>
-</dl><i>Instance1</i> is attached at the same altitude as <i>Instance2</i>. This can only occur if <i>Instance1</i> and <i>Instance2</i> are attached to different volumes or if <i>Instance1</i> and <i>Instance2</i> are pointers to the same instance. 
+</dl>
+</td>
+<td width="60%">
+<i>Instance1</i> is attached at the same altitude as <i>Instance2</i>. This can only occur if <i>Instance1</i> and <i>Instance2</i> are attached to different volumes or if <i>Instance1</i> and <i>Instance2</i> are pointers to the same instance. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Less than zero</b></dt>
-</dl><i>Instance1</i> is attached at a lower altitude than <i>Instance2</i>. 
+</dl>
+</td>
+<td width="60%">
+<i>Instance1</i> is attached at a lower altitude than <i>Instance2</i>. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Greater than zero</b></dt>
-</dl><i>Instance1</i> is attached at a higher altitude than <i>Instance2</i>.
+</dl>
+</td>
+<td width="60%">
+<i>Instance1</i> is attached at a higher altitude than <i>Instance2</i>. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -99,20 +133,14 @@ To detach a minifilter driver instance from a volume, call <a href="..\fltkernel
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : bb117f9d-a288-4db6-8f28-96ab5152289c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateBusEnumObject
+ms.keywords : KsCreateBusEnumObject function [Streaming Media Devices], KsCreateBusEnumObject, swenum/KsCreateBusEnumObject, ksfunc_c2f2d2fb-fea1-40af-8a0b-358b96bae705.xml, stream.kscreatebusenumobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCreateBusEnumObject
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 req.product : Windows 10 or later.
 ---
@@ -90,6 +94,7 @@ Returns STATUS_SUCCESS if successful, or a memory error if unsuccessful.
 ## Remarks
 
 The demand-load bus enumerator object extends a Plug and Play device by servicing bus enumerator queries through the <b>KsServiceBusEnumPnpRequest</b> function for the given functional device object.
+<div class="alert"><b>Note</b>  : The first PVOID of the device extension of the FDO pointed to in <i>BusDeviceObject</i> must be reserved for the resultant demand-load bus enumerator object.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,11 +110,8 @@ The demand-load bus enumerator object extends a Plug and Play device by servicin
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\swenum\nf-swenum-ksservicebusenumpnprequest.md">KsServiceBusEnumPnpRequest</a>
-</dt>
-</dl>
+
  
 
  

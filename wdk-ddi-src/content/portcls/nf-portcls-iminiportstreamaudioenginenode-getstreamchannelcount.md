@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : D39376D8-CD1D-4E07-8017-0B552A4D2E59
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::GetStreamChannelCount, GetStreamChannelCount
+ms.keywords : audio.iminiportstreamaudioenginenode_getstreamchannelcount, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamChannelCount method, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelCount, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::GetStreamChannelCount, GetStreamChannelCount method [Audio Devices], IMiniportStreamAudioEngineNode interface, GetStreamChannelCount, GetStreamChannelCount method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportStreamAudioEngineNode.GetStreamChannelCount
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -79,14 +83,10 @@ code.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
-</dt>
-</dl>
+
+<a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
+
  
 
  

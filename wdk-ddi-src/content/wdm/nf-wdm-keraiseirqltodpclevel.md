@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ac82e003-ec05-4b8b-a4fb-64498fb17f9b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRaiseIrqlToDpcLevel
+ms.keywords : wdm/KeRaiseIrqlToDpcLevel, k105_64c33a5b-8efa-4d97-9569-2ea68a227d17.xml, KeRaiseIrqlToDpcLevel routine [Kernel-Mode Driver Architecture], KeRaiseIrqlToDpcLevel, kernel.keraiseirqltodpclevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRaiseIrqlToDpcLevel
-req.alt-loc : Hal.lib,Hal.dll
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hal.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -50,10 +54,6 @@ KIRQL KeRaiseIrqlToDpcLevel(void);
 This function has no parameters.
 
 ## Return Value
-
-<b>KeRaiseIrqlToDpcLevel</b> returns the IRQL at which the call occurred.
-
-<b>KeRaiseIrqlToDpcLevel</b> returns the IRQL at which the call occurred.
 
 <b>KeRaiseIrqlToDpcLevel</b> returns the IRQL at which the call occurred.
 
@@ -77,17 +77,12 @@ Callers of <b>KeRaiseIrqlToDpcLevel</b> must be running at IRQL &lt;= DISPATCH_L
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
+
+<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
+
  
 
  

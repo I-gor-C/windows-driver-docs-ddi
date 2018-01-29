@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 74de7f2a-8738-472b-8a22-983a82e29fcb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
+ms.keywords : buses.ucmtcpci_device_config, _UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG structure [Buses], ucmtcpcidevice/PUCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG structure pointer [Buses], ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCMTCPCI_DEVICE_CONFIG
-req.alt-loc : ucmtcpcidevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -48,10 +52,10 @@ typedef struct _UCMTCPCI_DEVICE_CONFIG {
 
 ## Members
 
-        
-            `Size`
 
-            Size of this structure.
+`Size`
+
+Size of this structure.
 
 
 ## Requirements
@@ -62,13 +66,10 @@ typedef struct _UCMTCPCI_DEVICE_CONFIG {
 | **Minimum UMDF version** |  |
 | **Header** | ucmtcpcidevice.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpcideviceinitialize.md">UcmTcpciDeviceInitialize</a>
-</dt>
-</dl>
+
  
 
  

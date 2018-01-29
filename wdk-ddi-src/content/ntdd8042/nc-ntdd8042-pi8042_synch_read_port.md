@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 970bb5ed-2ddd-4d91-a90f-3df3bb7fa3f9
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
+ms.keywords : hid.pi8042_synch_read_port, SynchReadPort callback function [Human Input Devices], SynchReadPort, PI8042_SYNCH_READ_PORT, PI8042_SYNCH_READ_PORT, ntdd8042/SynchReadPort, i8042ref_be606020-f80b-4347-883d-71378e5fa59d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SynchReadPort
-req.alt-loc : ntdd8042.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 
@@ -69,12 +73,34 @@ Not used.
 ## Return Value
 
 The PI8042_SYNCH_READ_PORT callback returns one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The routine successfully returned a byte.
+</dl>
+</td>
+<td width="60%">
+The routine successfully returned a byte.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_IO_TIMEOUT</b></dt>
-</dl>The hardware was not ready for a read access.
+</dl>
+</td>
+<td width="60%">
+The hardware was not ready for a read access.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,14 +122,10 @@ The routine polls the hardware until a read is returned by the hardware or an in
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_initialization_routine.md">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a>
-</dt>
-<dt>
+
 <a href="..\ntdd8042\nc-ntdd8042-pi8042_synch_write_port.md">PI8042_SYNCH_WRITE_PORT</a>
-</dt>
-</dl>
+
  
 
  

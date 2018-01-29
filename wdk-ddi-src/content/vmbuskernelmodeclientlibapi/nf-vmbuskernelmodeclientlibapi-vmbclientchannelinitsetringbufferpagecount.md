@@ -7,8 +7,8 @@ old-location : netvista\vmbclientchannelinitsetringbufferpagecount.htm
 old-project : netvista
 ms.assetid : 560A7CD9-5D9D-434B-ACEE-5852CC9A2CC3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbClientChannelInitSetRingBufferPageCount
+ms.date : 1/18/2018
+ms.keywords : netvista.vmbclientchannelinitsetringbufferpagecount, VmbClientChannelInitSetRingBufferPageCount function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbClientChannelInitSetRingBufferPageCount, VmbClientChannelInitSetRingBufferPageCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbClientChannelInitSetRingBufferPageCount
-req.alt-loc : vmbkmcl.lib,vmbkmcl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Vmbkmcl.lib
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 
@@ -76,7 +80,7 @@ None
 ## Remarks
 
 Because the client virtual machine donates the pages for both the incoming and the outgoing ring
-buffers, this function can only be invoked on the client endpoint.</p>
+buffers, this function can only be invoked on the client endpoint.
 
 ## Requirements
 | &nbsp; | &nbsp; |

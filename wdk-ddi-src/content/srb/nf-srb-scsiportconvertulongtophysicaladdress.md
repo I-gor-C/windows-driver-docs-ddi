@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 98d491f8-eeb5-4152-9bb6-fffabcba0360
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortConvertUlongToPhysicalAddress
+ms.keywords : srb/ScsiPortConvertUlongToPhysicalAddress, ScsiPortConvertUlongToPhysicalAddress routine [Storage Devices], storage.scsiportconvertulongtophysicaladdress, ScsiPortConvertUlongToPhysicalAddress, scsiprt_9dc27865-55c2-4599-913c-babe77c62af9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortConvertUlongToPhysicalAddress
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortConvertUlongToPhysicalAddress function
 The <b>ScsiPortConvertUlongToPhysicalAddress</b> routine extends a given ULONG address into a value of type SCSI_PHYSICAL_ADDRESS.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -73,17 +78,12 @@ Specifies a value of type ULONG.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
-</dt>
-<dt>
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
-</dt>
-<dt>
 <a href="..\srb\nf-srb-scsiportgetvirtualaddress.md">ScsiPortGetVirtualAddress</a>
-</dt>
-</dl>
+
+<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
+
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+
  
 
  

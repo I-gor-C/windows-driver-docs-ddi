@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e3669f11-7284-4f65-b814-624337e7fa7f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGetAvailableByteCount
+ms.keywords : stream.kspingetavailablebytecount, KsPinGetAvailableByteCount routine [Streaming Media Devices], ks/KsPinGetAvailableByteCount, avfunc_2ba6a7f8-59b4-45bf-989a-97f8a494b4bc.xml, KsPinGetAvailableByteCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinGetAvailableByteCount
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -93,38 +97,26 @@ For additional information, see <a href="https://msdn.microsoft.com/73ab974f-803
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-<dt>
-<a href="..\ks\nc-ks-pfnkspin.md">AVStrMiniPinProcess</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksfilteracquireprocessingmutex.md">KsFilterAcquireProcessingMutex</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilterreleaseprocessingmutex.md">KsFilterReleaseProcessingMutex</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
+
+<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
+
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+
 <a href="..\ks\nf-ks-kspinreleaseprocessingmutex.md">KsPinReleaseProcessingMutex</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
+
+<a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
+
+<a href="..\ks\nc-ks-pfnkspin.md">AVStrMiniPinProcess</a>
+
+<a href="..\ks\nf-ks-ksfilterreleaseprocessingmutex.md">KsFilterReleaseProcessingMutex</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2b71c48a-a028-4bfa-a8bd-ad612aa800ff
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_DEVICE_FUNCS_VIDEO_0032, D3D12DDI_DEVICE_FUNCS_VIDEO_0032
+ms.keywords : d3d12umddi/D3D12DDI_DEVICE_FUNCS_VIDEO_0032, display.d3d12ddi-device-funcs-video-0032, D3D12DDI_DEVICE_FUNCS_VIDEO_0032, D3D12DDI_DEVICE_FUNCS_VIDEO_0032 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_DEVICE_FUNCS_VIDEO_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_DEVICE_FUNCS_VIDEO_0032
 ---
 
@@ -55,46 +59,46 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0032 {
 
 ## Members
 
-        
-            `pfnCalcPrivateVideoDecoderHeapSize`
 
-            Calculate private video decoder heap size.
-        
-            `pfnCalcPrivateVideoDecoderSize`
+`pfnCalcPrivateVideoDecoderHeapSize`
 
-            Calculate private video decoder size.
-        
-            `pfnCalcPrivateVideoProcessorSize`
+Calculate private video decoder heap size.
 
-            Calculate private video processor size.
-        
-            `pfnCreateVideoDecoder`
+`pfnCalcPrivateVideoDecoderSize`
 
-            Create video decoder.
-        
-            `pfnCreateVideoDecoderHeap`
+Calculate private video decoder size.
 
-            Create video decoder heap.
-        
-            `pfnCreateVideoProcessor`
+`pfnCalcPrivateVideoProcessorSize`
 
-            Create video processor.
-        
-            `pfnDestroyVideoDecoder`
+Calculate private video processor size.
 
-            Destroy video decoder.
-        
-            `pfnDestroyVideoDecoderHeap`
+`pfnCreateVideoDecoder`
 
-            Destroy video decoder heap.
-        
-            `pfnDestroyVideoProcessor`
+Create video decoder.
 
-            Destroy video processor.
-        
-            `pfnGetCaps`
+`pfnCreateVideoDecoderHeap`
 
-            Get caps.
+Create video decoder heap.
+
+`pfnCreateVideoProcessor`
+
+Create video processor.
+
+`pfnDestroyVideoDecoder`
+
+Destroy video decoder.
+
+`pfnDestroyVideoDecoderHeap`
+
+Destroy video decoder heap.
+
+`pfnDestroyVideoProcessor`
+
+Destroy video processor.
+
+`pfnGetCaps`
+
+Get caps.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d352785b-982f-4469-bee8-6274c0ce1cd6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SetCHAPSharedSecret_IN, *PSetCHAPSharedSecret_IN, SetCHAPSharedSecret_IN
+ms.keywords : SetCHAPSharedSecret_IN, SetCHAPSharedSecret_IN structure [Storage Devices], *PSetCHAPSharedSecret_IN, structs-iSCSI_e0aefea0-989e-4834-b812-ae02da2e6f34.xml, PSetCHAPSharedSecret_IN, _SetCHAPSharedSecret_IN, PSetCHAPSharedSecret_IN structure pointer [Storage Devices], storage.setchapsharedsecret_in, iscsiop/PSetCHAPSharedSecret_IN, iscsiop/SetCHAPSharedSecret_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetCHAPSharedSecret_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSetCHAPSharedSecret_IN, SetCHAPSharedSecret_IN"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _SetCHAPSharedSecret_IN {
 
 ## Members
 
-        
-            `SharedSecret`
 
-            A variable-length array that contains the shared secret.
-        
-            `SharedSecretSize`
+`SharedSecret`
 
-            The size, in bytes, of the shared secret.
+A variable-length array that contains the shared secret.
 
-    ## Remarks
-        You must implement this method.
+`SharedSecretSize`
+
+The size, in bytes, of the shared secret.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _SetCHAPSharedSecret_IN {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565585">SetCHAPSharedSecret</a>
-</dt>
-<dt>
+
 <a href="..\iscsiop\ns-iscsiop-_setchapsharedsecret_out.md">SetCHAPSharedSecret_OUT</a>
-</dt>
-</dl>
+
  
 
  

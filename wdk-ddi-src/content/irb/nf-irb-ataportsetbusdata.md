@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5cc65ef9-7447-4775-bf5d-6dadd78f166c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortSetBusData
+ms.keywords : atartns_85424997-1f6e-4f48-98f0-e92a7312e62a.xml, AtaPortSetBusData, storage.ataportsetbusdata, AtaPortSetBusData routine [Storage Devices], irb/AtaPortSetBusData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortSetBusData
-req.alt-loc : Pciidex.lib,Pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortSetBusData function
 The <b>AtaPortSetBusData</b> routine stores the data at <i>Buffer </i>in the indicated device's PCI configuration space at an offset that is specified in <i>ConfigDataOffset</i>.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -76,6 +81,18 @@ Specifies the length, in bytes, of the buffer.
 ## Remarks
 
 <b>AtaPortSetBusData</b> completes a bitwise OR, one byte at a time, of the current PCI configuration space data with the new data in <i>Buffer</i>. Only those bits not indicated by <i>DataMask</i> are left untouched. The byte of data that follows <i>ConfigDataOffset</i>, therefore, is updated as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>ConfigDataOffest[i] = 
+    (ConfigDataOffest[i] &amp; ~DataMask[i]) | 
+    (DataMask[i] &amp; Buffer[i])</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,11 +108,8 @@ Specifies the length, in bytes, of the buffer.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportgetbusdata.md">AtaPortGetBusData</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 43F60B45-A587-49FE-BB59-DC1215A46F04
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SET_BAND_LOCATION_PARAMETERS, *PSET_BAND_LOCATION_PARAMETERS, SET_BAND_LOCATION_PARAMETERS
+ms.keywords : ehstorbandmgmt/PSET_BAND_LOCATION_PARAMETERS, PSET_BAND_LOCATION_PARAMETERS, SET_BAND_LOCATION_PARAMETERS, _SET_BAND_LOCATION_PARAMETERS, storage.set_band_location_parameters, *PSET_BAND_LOCATION_PARAMETERS, ehstorbandmgmt/SET_BAND_LOCATION_PARAMETERS, PSET_BAND_LOCATION_PARAMETERS structure pointer [Storage Devices], SET_BAND_LOCATION_PARAMETERS structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SET_BAND_LOCATION_PARAMETERS
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSET_BAND_LOCATION_PARAMETERS, SET_BAND_LOCATION_PARAMETERS"
 ---
 
@@ -50,11 +54,10 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 
 ## Members
 
-        
-            `AuthKeyOffset`
 
-            The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_create_band_parameters.md">SET_BAND_LOCATION_PARAMETERS</a>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+`AuthKeyOffset`
 
+The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_create_band_parameters.md">SET_BAND_LOCATION_PARAMETERS</a>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -69,25 +72,27 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 </td>
 </tr>
 </table></span></div>
-        
-            `BandId`
 
-            The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
-        
-            `BandLocationInfoOffset`
+To specify a default authorization key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>.
 
-            The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a> structure. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_create_band_parameters.md">SET_BAND_LOCATION_PARAMETERS</a>.
-        
-            `BandStart`
+`BandId`
 
-            The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
-        
-            `StructSize`
+The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
 
-            The size of this structure in bytes. Set to <b>sizeof</b>(SET_BAND_LOCATION_PARAMETERS).
+`BandLocationInfoOffset`
 
-    ## Remarks
-        Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>.
+The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a> structure. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_create_band_parameters.md">SET_BAND_LOCATION_PARAMETERS</a>.
+
+`BandStart`
+
+The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
+
+`StructSize`
+
+The size of this structure in bytes. Set to <b>sizeof</b>(SET_BAND_LOCATION_PARAMETERS).
+
+## Remarks
+Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>.
 
 If <b>BandID</b> and <b>BandStart </b> are both set to –1,  then the <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a> request will change the properties of the global band.
 
@@ -99,19 +104,14 @@ If <b>BandID</b> and <b>BandStart </b> are both set to –1,  then the <a href="
 | **Minimum UMDF version** |  |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
-</dt>
-<dt>
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>
-</dt>
-</dl>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
+
  
 
  

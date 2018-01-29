@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9154848b-ecbe-4f21-9d27-9013f97c5dde
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SETVIDPNSOURCEOWNER, D3DKMT_SETVIDPNSOURCEOWNER
+ms.keywords : D3DKMT_SETVIDPNSOURCEOWNER, _D3DKMT_SETVIDPNSOURCEOWNER, display.d3dkmt_setvidpnsourceowner, d3dkmthk/D3DKMT_SETVIDPNSOURCEOWNER, OpenGL_Structs_942045f1-1a3a-4c4a-b533-ec70fcad6d8f.xml, D3DKMT_SETVIDPNSOURCEOWNER structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SETVIDPNSOURCEOWNER
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SETVIDPNSOURCEOWNER
 ---
 
@@ -49,15 +53,14 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that acquires or releases the VidPN source owner.
-        
-            `pType`
+`hDevice`
 
-            [in] An array of owner types. Elements of the array can contain the following values from the D3DKMT_VIDPNSOURCEOWNER_TYPE enumeration type.
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that acquires or releases the VidPN source owner.
 
+`pType`
+
+[in] An array of owner types. Elements of the array can contain the following values from the D3DKMT_VIDPNSOURCEOWNER_TYPE enumeration type.
 <table>
 <tr>
 <th>Value</th>
@@ -104,14 +107,14 @@ An exclusive owner with shared GDI primary. This owner must exclusively own all 
 </td>
 </tr>
 </table>
-        
-            `pVidPnSourceId`
 
-            [in] An array of zero-based identification numbers of the video present sources in paths of a video present network (VidPN) topology.
-        
-            `VidPnSourceCount`
+`pVidPnSourceId`
 
-            The number of valid entries in the array that <b>pVidPnSourceId</b> specifies.
+[in] An array of zero-based identification numbers of the video present sources in paths of a video present network (VidPN) topology.
+
+`VidPnSourceCount`
+
+The number of valid entries in the array that <b>pVidPnSourceId</b> specifies.
 
 
 ## Requirements
@@ -122,13 +125,10 @@ An exclusive owner with shared GDI primary. This owner must exclusively own all 
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner.md">D3DKMTSetVidPnSourceOwner</a>
-</dt>
-</dl>
+
  
 
  

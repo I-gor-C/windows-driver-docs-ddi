@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : EB5AFAF3-D75C-4B91-823C-E1C6784CB13B
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR
+ms.keywords : usbsidebandaudio/PUSBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR, PUSBSIDEBANDAUDIO_DEVICE_ERROR, audio.usbsidebandaudio_device_error, USBSIDEBANDAUDIO_DEVICE_ERROR structure [Audio Devices], _USBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, PUSBSIDEBANDAUDIO_DEVICE_ERROR structure pointer [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_DEVICE_ERROR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSIDEBANDAUDIO_DEVICE_ERROR
-req.alt-loc : 
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR"
 req.product : Windows 10 or later.
 ---
@@ -50,6 +54,18 @@ typedef struct _USBSIDEBANDAUDIO_DEVICE_ERROR {
 ````
 
 ## Members
+
+
+`EpIndex`
+
+
+
+`Immediate`
+
+
+
+`Status`
+
 
 
 

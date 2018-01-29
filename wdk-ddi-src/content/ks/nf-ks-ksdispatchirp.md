@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6ee88b2d-4086-4e6d-b80b-eff6868ce784
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDispatchIrp
+ms.keywords : KsDispatchIrp, stream.ksdispatchirp, ksfunc_ed03b195-fcb3-41ca-9794-c9b9f04ce8c9.xml, ks/KsDispatchIrp, KsDispatchIrp routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDispatchIrp
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -80,11 +84,8 @@ A <a href="..\ks\ns-ks-ksdispatch_table.md">KSDISPATCH_TABLE</a> can be containe
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kssetmajorfunctionhandler.md">KsSetMajorFunctionHandler</a>
-</dt>
-</dl>
+
  
 
  

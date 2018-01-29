@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C675431E-6213-4FA8-86DB-65FE6EE90853
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_HWACCESS_TARGET_SIZE, WDF_DEVICE_HWACCESS_TARGET_SIZE, *PWDF_DEVICE_HWACCESS_TARGET_SIZE
+ms.keywords : wudfddi_types/WdfDeviceHwAccessTargetSizeMaximum, *PWDF_DEVICE_HWACCESS_TARGET_SIZE, wdfdevice/WdfDeviceHwAccessTargetSizeUshort, WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration, WDF_DEVICE_HWACCESS_TARGET_SIZE, wdfdevice/WdfDeviceHwAccessTargetSizeInvalid, wdf.wdf_device_hwaccess_target_size, WdfDeviceHwAccessTargetSizeUshort, wudfddi_types/WdfDeviceHwAccessTargetSizeInvalid, WDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetSizeUchar, PWDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong64, _WDF_DEVICE_HWACCESS_TARGET_SIZE, WdfDeviceHwAccessTargetSizeUlong, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong, wudfddi_types/WdfDeviceHwAccessTargetSizeUshort, PWDF_DEVICE_HWACCESS_TARGET_TYPE enumeration pointer, wdfdevice/WDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WdfDeviceHwAccessTargetSizeUlong, WdfDeviceHwAccessTargetSizeInvalid, wudfddi_types/WdfDeviceHwAccessTargetSizeUchar, wdfdevice/WdfDeviceHwAccessTargetSizeUchar, wudfddi_types/WDF_DEVICE_HWACCESS_TARGET_TYPE, umdf.wdf_device_hwaccess_target_size, WdfDeviceHwAccessTargetSizeUlong64, wdfdevice/PWDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetSizeMaximum, wdfdevice/WdfDeviceHwAccessTargetSizeUlong64, wdfdevice/WdfDeviceHwAccessTargetSizeMaximum
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WDF_DEVICE_HWACCESS_TARGET_TYPE
-req.alt-loc : wdfdevice.h,wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_HWACCESS_TARGET_SIZE, *PWDF_DEVICE_HWACCESS_TARGET_SIZE
 req.product : Windows 10 or later.
 ---
@@ -98,11 +102,8 @@ typedef enum __WDF_IO_TARGET_STATE {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
-</dt>
-</dl>
+
  
 
  

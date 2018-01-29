@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : c4374b79-5143-4a35-aa4f-07fee7ea4fd3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_usb_get_node_connection_name, IOCTL_USB_GET_NODE_CONNECTION_NAME control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_NAME, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_NAME, usbirp_d571c9e6-0caf-4746-bd69-b55fa6a3a407.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_USB_GET_NODE_CONNECTION_NAME
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,17 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_CONNECTION_NAME IOCTL
-The <b>IOCTL_USB_GET_NODE_CONNECTION_NAME</b> I/O control request is used with the <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_name.md">USB_NODE_CONNECTION_NAME</a> structure to retrieve the symbolic link name of the hub that is attached to the downstream port.
-
-<b>IOCTL_USB_GET_NODE_CONNECTION_NAME</b> is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
-
-
-
 The <b>IOCTL_USB_GET_NODE_CONNECTION_NAME</b> I/O control request is used with the <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_name.md">USB_NODE_CONNECTION_NAME</a> structure to retrieve the symbolic link name of the hub that is attached to the downstream port.
 
 <b>IOCTL_USB_GET_NODE_CONNECTION_NAME</b> is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
@@ -68,7 +66,6 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member contains the siz
 <text></text>
 
 ### Status Block
-I/O Status block
 The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. The request reports success, even if no hub is attached, the attached hub has no symbolic link, or the attached device is not a hub.
 
 Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
@@ -81,13 +78,10 @@ Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, 
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_name.md">USB_NODE_CONNECTION_NAME</a>
-</dt>
-</dl>
+
  
 
  

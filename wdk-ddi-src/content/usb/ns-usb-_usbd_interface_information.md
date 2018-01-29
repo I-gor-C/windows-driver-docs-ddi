@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : dde09937-14fb-423b-8905-8a398a9c5902
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBD_INTERFACE_INFORMATION, USBD_INTERFACE_INFORMATION, *PUSBD_INTERFACE_INFORMATION
+ms.keywords : PUSBD_INTERFACE_INFORMATION structure pointer [Buses], USBD_INTERFACE_INFORMATION structure [Buses], USBD_INTERFACE_INFORMATION, PUSBD_INTERFACE_INFORMATION, usb/USBD_INTERFACE_INFORMATION, _USBD_INTERFACE_INFORMATION, usbstrct_1d2a2627-f530-4ccb-8473-0f028ab44acc.xml, buses.usbd_interface_information, *PUSBD_INTERFACE_INFORMATION, usb/PUSBD_INTERFACE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_INTERFACE_INFORMATION
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBD_INTERFACE_INFORMATION, *PUSBD_INTERFACE_INFORMATION
 req.product : Windows 10 or later.
 ---
@@ -56,49 +60,49 @@ typedef struct _USBD_INTERFACE_INFORMATION {
 
 ## Members
 
-        
-            `AlternateSetting`
 
-            Specifies a device-defined index identifier that indicates which alternate setting this interface is using, should use, or describes.
-        
-            `Class`
+`AlternateSetting`
 
-            Contains a USB-assigned identifier that specifies a USB-defined class that this interface conforms to.
-        
-            `InterfaceHandle`
+Specifies a device-defined index identifier that indicates which alternate setting this interface is using, should use, or describes.
 
-            Contains a host controller driver-defined handle that is used to access this interface. This member should be treated as opaque.
-        
-            `InterfaceNumber`
+`Class`
 
-            Specifies the device-defined index identifier for this interface.
-        
-            `Length`
+Contains a USB-assigned identifier that specifies a USB-defined class that this interface conforms to.
 
-            Specifies the length, in bytes, of this structure.
-        
-            `NumberOfPipes`
+`InterfaceHandle`
 
-            Specifies the number of pipes (endpoints) in this interface.
-        
-            `Pipes`
+Contains a host controller driver-defined handle that is used to access this interface. This member should be treated as opaque.
 
-            Pointer to the first element in the array of <a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a> structures. The length of the array depends on the number of endpoints in the interface descriptor.
-        
-            `Protocol`
+`InterfaceNumber`
 
-            Contains a USB-assigned identifier that specifies a USB-defined protocol that this interface conforms to. This code is specific to the codes in <b>Class</b> and <b>SubClass</b>.
-        
-            `Reserved`
+Specifies the device-defined index identifier for this interface.
 
-            Reserved.
-        
-            `SubClass`
+`Length`
 
-            Contains a USB-assigned identifier that specifies a USB-defined subclass that this interface conforms to. This code is specific to the code in <b>Class</b>.
+Specifies the length, in bytes, of this structure.
 
-    ## Remarks
-        Members that are part of this structure, but not described here, should be treated as opaque and considered to be reserved for system use.
+`NumberOfPipes`
+
+Specifies the number of pipes (endpoints) in this interface.
+
+`Pipes`
+
+Pointer to the first element in the array of <a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a> structures. The length of the array depends on the number of endpoints in the interface descriptor.
+
+`Protocol`
+
+Contains a USB-assigned identifier that specifies a USB-defined protocol that this interface conforms to. This code is specific to the codes in <b>Class</b> and <b>SubClass</b>.
+
+`Reserved`
+
+Reserved.
+
+`SubClass`
+
+Contains a USB-assigned identifier that specifies a USB-defined subclass that this interface conforms to. This code is specific to the code in <b>Class</b>.
+
+## Remarks
+Members that are part of this structure, but not described here, should be treated as opaque and considered to be reserved for system use.
 
 The reserved members of this structure must be treated as opaque and are reserved for system use.
 
@@ -110,16 +114,12 @@ The reserved members of this structure must be treated as opaque and are reserve
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
+
  
 
  

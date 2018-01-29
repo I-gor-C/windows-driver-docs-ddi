@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fa5cf57e-826b-43f6-881d-caf2aecb2dde
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATESYNCHRONIZATIONOBJECT2, D3DKMT_CREATESYNCHRONIZATIONOBJECT2
+ms.keywords : D3DKMT_CREATESYNCHRONIZATIONOBJECT2, OpenGL_Structs_a2f18286-355e-4a93-9692-344fbb2bd5a2.xml, d3dkmthk/D3DKMT_CREATESYNCHRONIZATIONOBJECT2, display.d3dkmt_createsynchronizationobject2, D3DKMT_CREATESYNCHRONIZATIONOBJECT2 structure [Display Devices], _D3DKMT_CREATESYNCHRONIZATIONOBJECT2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_CREATESYNCHRONIZATIONOBJECT2 is supported beg
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATESYNCHRONIZATIONOBJECT2
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATESYNCHRONIZATIONOBJECT2
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_CREATESYNCHRONIZATIONOBJECT2 {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the device that the synchronization object is associated with.
-        
-            `hSyncObject`
+`hDevice`
 
-            [out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object.
-        
-            `Info`
+[in] A handle to the device that the synchronization object is associated with.
 
-            [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure that describes information about the kernel-mode synchronization object.
+`hSyncObject`
+
+[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object.
+
+`Info`
+
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure that describes information about the kernel-mode synchronization object.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DKMT_CREATESYNCHRONIZATIONOBJECT2 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a>
-</dt>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject2.md">D3DKMTCreateSynchronizationObject2</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a>
+
  
 
  

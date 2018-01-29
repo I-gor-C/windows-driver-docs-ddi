@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : 8cc223be-a692-4141-81f6-4cca9e2fccf1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES
+ms.keywords : SCARD_CARD_CAPABILITIES, smartcrd.scard_card_capabilities, smclib/SCARD_CARD_CAPABILITIES, smclib/PSCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES, scstruct_b60c574d-a6db-4d15-a974-dc15ba375b5b.xml, *PSCARD_CARD_CAPABILITIES, _SCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES structure pointer [Smart Card Reader Devices], SCARD_CARD_CAPABILITIES structure [Smart Card Reader Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCARD_CARD_CAPABILITIES
-req.alt-loc : smclib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES
 req.product : Windows 10 or later.
 ---
@@ -83,81 +87,81 @@ typedef struct _SCARD_CARD_CAPABILITIES {
 
 ## Members
 
-        
-            `ATR`
 
-            A structure with the following members:
-        
-            `BitRateAdjustment`
+`ATR`
 
-            Contains the bit rate adjustment table. Using the bit rate adjustment factor, D1, as an index into this array yields the maximum bit rate that is allowed. t rate. For more information about the bit rate adjustment factor, see the <i>ISO 7816-3 specification</i>.  (This resource may not be available in some languages 
+A structure with the following members:
 
-and countries.)
-        
-            `ClockRateConversion`
+`BitRateAdjustment`
 
-            Contains the clock conversion rate table. Using the clock rate conversion factor, F1, as an index in this array yields the maximum frequency that is allowed. For more information about clock conversion rate, see the <i>ISO 7816-3 specification</i>. (This resource may not be available in some languages 
+Contains the bit rate adjustment table. Using the bit rate adjustment factor, D1, as an index into this array yields the maximum bit rate that is allowed. t rate. For more information about the bit rate adjustment factor, see the <i>ISO 7816-3 specification</i>.  (This resource may not be available in some languages 
 
 and countries.)
-        
-            `Dl`
 
-            Contains the bit rate adjustment. When the smart card is reset, the smart card driver library uses this value to calculate a new data bit rate.
-        
-            `etu`
+`ClockRateConversion`
 
-            Contains the elementary time unit (ETU). The ETU indicates the space of transmission time occupied by a single bit of data.
-        
-            `Fl`
+Contains the clock conversion rate table. Using the clock rate conversion factor, F1, as an index in this array yields the maximum frequency that is allowed. For more information about clock conversion rate, see the <i>ISO 7816-3 specification</i>. (This resource may not be available in some languages 
 
-            Contains the clock rate conversion. This factor is used as an index into a table of maximum operating frequencies. When the smart card is reset, the smart card driver library uses this value to calculate a new clock frequency.
-        
-            `GT`
+and countries.)
 
-            Contains the guard time, in units of microseconds (including the extra guard time), which is the minimum delay between two consecutive characters.
-        
-            `HistoricalChars`
+`Dl`
 
-            A structure with the following members:
-        
-            `II`
+Contains the bit rate adjustment. When the smart card is reset, the smart card driver library uses this value to calculate a new data bit rate.
 
-            Contains the maximum programming current.
-        
-            `InversConvention`
+`etu`
 
-            Contains a flag to indicate that the current smart card uses the inverse convention.
-        
-            `N`
+Contains the elementary time unit (ETU). The ETU indicates the space of transmission time occupied by a single bit of data.
 
-            Contains the extra guard time in units of the ETU. The ETU indicates the space of transmission time occupied by a single bit of data. The guard time is the minimum space of transmission time that separates two consecutive characters.
-        
-            `P`
+`Fl`
 
-            Contains the programming voltage in units of 0.1 volts.
-        
-            `Protocol`
+Contains the clock rate conversion. This factor is used as an index into a table of maximum operating frequencies. When the smart card is reset, the smart card driver library uses this value to calculate a new clock frequency.
 
-            A structure with the following members:
-        
-            `PtsData`
+`GT`
 
-            Contains a PTS_DATA structure that holds all the information that is required to perform a protocol type selection (PTS) request for the inserted smart card.art card.
-        
-            `Reserved`
+Contains the guard time, in units of microseconds (including the extra guard time), which is the minimum delay between two consecutive characters.
 
-            Reserved.
-        
-            `T0`
+`HistoricalChars`
 
-            A structure with the following members:
-        
-            `T1`
+A structure with the following members:
 
-            A structure with the following members:
+`II`
 
-    ## Remarks
-        The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="..\winsmcrd\ni-winsmcrd-ioctl_smartcard_set_protocol.md">IOCTL_SMARTCARD_SET_PROTOCOL</a> request. </p>
+Contains the maximum programming current.
+
+`InversConvention`
+
+Contains a flag to indicate that the current smart card uses the inverse convention.
+
+`N`
+
+Contains the extra guard time in units of the ETU. The ETU indicates the space of transmission time occupied by a single bit of data. The guard time is the minimum space of transmission time that separates two consecutive characters.
+
+`P`
+
+Contains the programming voltage in units of 0.1 volts.
+
+`Protocol`
+
+A structure with the following members:
+
+`PtsData`
+
+Contains a PTS_DATA structure that holds all the information that is required to perform a protocol type selection (PTS) request for the inserted smart card.art card.
+
+`Reserved`
+
+Reserved.
+
+`T0`
+
+A structure with the following members:
+
+`T1`
+
+A structure with the following members:
+
+## Remarks
+The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="..\winsmcrd\ni-winsmcrd-ioctl_smartcard_set_protocol.md">IOCTL_SMARTCARD_SET_PROTOCOL</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |

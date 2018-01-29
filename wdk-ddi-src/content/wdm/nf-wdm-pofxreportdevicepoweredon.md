@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3138F5D7-CF7E-47B4-817C-AFF00C310AD5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxReportDevicePoweredOn
+ms.keywords : kernel.pofxreportdevicepoweredon, wdm/PoFxReportDevicePoweredOn, PoFxReportDevicePoweredOn routine [Kernel-Mode Driver Architecture], PoFxReportDevicePoweredOn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxReportDevicePoweredOn
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -61,8 +65,10 @@ None.
 ## Remarks
 
 The driver for a registered device must call <b>PoFxReportDevicePoweredOn</b> after either of the following occurrences:
-
-In response to either occurrence, the driver sends D0 IRP (an <b>IRP_MN_SET_POWER</b> request) down its device stack to initiate a transition to the D0 power state, if the device is not already in the D0 state. After the driver completes (and all lower drivers complete) the transition to the D0 state, the driver calls <b>PoFxReportDevicePoweredOn</b> to notify PoFx.
+<ul>
+<li>PoFx calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a> callback routine to notify the driver that the device must enter the D0 power state.</li>
+<li>PoFx sends the driver an S0 IRP (an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request) to notify the driver of a pending system transition to the S0 power state.</li>
+</ul>In response to either occurrence, the driver sends D0 IRP (an <b>IRP_MN_SET_POWER</b> request) down its device stack to initiate a transition to the D0 power state, if the device is not already in the D0 state. After the driver completes (and all lower drivers complete) the transition to the D0 state, the driver calls <b>PoFxReportDevicePoweredOn</b> to notify PoFx.
 
 Each time the <i>DevicePowerRequiredCallback</i> routine is called, the driver must respond by calling <b>PoFxReportDevicePoweredOn</b>. The <b>PoFxReportDevicePoweredOn</b> call can occur either during or after the <i>DevicePowerRequiredCallback</i> call. The driver must call <b>PoFxReportDevicePoweredOn</b> regardless of whether no D0 IRP is required, the D0 IRP request fails, or the dispatched D0 IRP succeeds or fails.
 
@@ -84,17 +90,12 @@ On entry to <b>PoFxReportDevicePoweredOn</b>, the device might be in an uninitia
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-</dl>
+
  
 
  

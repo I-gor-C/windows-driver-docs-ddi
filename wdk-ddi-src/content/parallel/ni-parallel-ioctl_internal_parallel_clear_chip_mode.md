@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : bca93bca-96f6-46bb-ba24-9f39b5ad1ab4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterOpRegionHandler
+ms.keywords : parports.ioctl_internal_parallel_clear_chip_mode, IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE, parallel/IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE, cisspd_912d58fe-f6f8-40c5-b4fe-e8237ea64c04.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,16 +65,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:
-
-
-
-The value of the <b>Parameters.DeviceIoControl.InputBufferLength</b> member is less than the size, in bytes, of a PARALLEL_CHIP_MODE structure.
-
-The specified operating mode is not the same as the current operating mode of the parallel port.
 
 
 ## Requirements
@@ -80,16 +77,12 @@ The specified operating mode is not the same as the current operating mode of th
 | **Header** | parallel.h (include Parallel.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_set_chip_mode.md">IOCTL_INTERNAL_PARALLEL_SET_CHIP_MODE</a>
-</dt>
-<dt>
+
 <a href="..\parallel\ns-parallel-_parallel_chip_mode.md">PARALLEL_CHIP_MODE</a>
-</dt>
-</dl>
+
  
 
  

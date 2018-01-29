@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e89e9108-28a1-46ac-8694-047a656dcb74
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATARANGE_ANALOGVIDEO, *PKS_DATARANGE_ANALOGVIDEO, KS_DATARANGE_ANALOGVIDEO
+ms.keywords : KS_DATARANGE_ANALOGVIDEO, ksmedia/KS_DATARANGE_ANALOGVIDEO, tagKS_DATARANGE_ANALOGVIDEO, *PKS_DATARANGE_ANALOGVIDEO, KS_DATARANGE_ANALOGVIDEO structure [Streaming Media Devices], stream.ks_datarange_analogvideo, PKS_DATARANGE_ANALOGVIDEO structure pointer [Streaming Media Devices], vidcapstruct_43f72b11-2ac7-4b68-b595-c37022d956c7.xml, PKS_DATARANGE_ANALOGVIDEO, ksmedia/PKS_DATARANGE_ANALOGVIDEO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_DATARANGE_ANALOGVIDEO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_DATARANGE_ANALOGVIDEO, KS_DATARANGE_ANALOGVIDEO"
 ---
 
@@ -47,14 +51,14 @@ typedef struct tagKS_DATARANGE_ANALOGVIDEO {
 
 ## Members
 
-        
-            `AnalogVideoInfo`
 
-            Specifies the details of the analog video stream.
-        
-            `DataRange`
+`AnalogVideoInfo`
 
-            Specifies the major identifier for the format.
+Specifies the details of the analog video stream.
+
+`DataRange`
+
+Specifies the major identifier for the format.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct tagKS_DATARANGE_ANALOGVIDEO {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_analogvideoinfo.md">KS_ANALOGVIDEOINFO</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+
  
 
  

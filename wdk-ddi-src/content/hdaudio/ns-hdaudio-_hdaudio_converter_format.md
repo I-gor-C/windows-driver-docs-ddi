@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 623f58f6-db82-4a4a-bac3-cc821babfe99
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HDAUDIO_CONVERTER_FORMAT, *PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT
+ms.keywords : PHDAUDIO_CONVERTER_FORMAT structure pointer [Audio Devices], *PHDAUDIO_CONVERTER_FORMAT, hdaudio/HDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT structure [Audio Devices], HDAUDIO_CONVERTER_FORMAT, hdaudio/PHDAUDIO_CONVERTER_FORMAT, audio.hdaudio_converter_format, aud-prop2_fbc3cdcb-94a1-43ef-bf23-4b1cca37e99d.xml, PHDAUDIO_CONVERTER_FORMAT, _HDAUDIO_CONVERTER_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HDAUDIO_CONVERTER_FORMAT
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT"
 ---
 
@@ -56,8 +60,8 @@ typedef struct _HDAUDIO_CONVERTER_FORMAT {
 ## Members
 
 
-    ## Remarks
-        For information about the encoding of the individual bitfields in the structure definition, see the discussion of the stream descriptor in the Intel High Definition Audio Specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=42508">Intel HD Audio</a> website.
+## Remarks
+For information about the encoding of the individual bitfields in the structure definition, see the discussion of the stream descriptor in the Intel High Definition Audio Specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=42508">Intel HD Audio</a> website.
 
 The HD Audio bus driver sets the unnamed bitfield in the structure definition to zero.
 
@@ -73,22 +77,16 @@ Each valid HDAUDIO_CONVERTER_FORMAT encoding has a one-to-one correspondence to 
 | **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a>
-</dt>
-<dt>
+
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_stream_format.md">HDAUDIO_STREAM_FORMAT</a>
-</dt>
-</dl>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
+
+<a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a>
+
  
 
  

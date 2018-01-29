@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3eea8ee2-1ad5-4e00-b0c3-0710b58a2518
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_TUNER_STANDARD_S, *PKSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S
+ms.keywords : KSPROPERTY_TUNER_STANDARD_S structure [Streaming Media Devices], KSPROPERTY_TUNER_STANDARD_S, ksmedia/PKSPROPERTY_TUNER_STANDARD_S, ksmedia/KSPROPERTY_TUNER_STANDARD_S, vidcapstruct_b7568a5f-0825-495b-97ff-c8cee17ab8d3.xml, *PKSPROPERTY_TUNER_STANDARD_S, PKSPROPERTY_TUNER_STANDARD_S, PKSPROPERTY_TUNER_STANDARD_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_standard_s
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_TUNER_STANDARD_S
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSPROPERTY_TUNER_STANDARD_S, *PKSPROPERTY_TUNER_STANDARD_S
 ---
 
 # KSPROPERTY_TUNER_STANDARD_S structure
@@ -47,14 +51,14 @@ typedef struct {
 
 ## Members
 
-        
-            `Property`
 
-            Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
-        
-            `Standard`
+`Property`
 
-            Describes an analog video standard. This member may be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
+Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+
+`Standard`
+
+Describes an analog video standard. This member may be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
 
 
 ## Requirements
@@ -65,22 +69,16 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565907">KSPROPERTY_TUNER_STANDARD</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
+
  
 
  

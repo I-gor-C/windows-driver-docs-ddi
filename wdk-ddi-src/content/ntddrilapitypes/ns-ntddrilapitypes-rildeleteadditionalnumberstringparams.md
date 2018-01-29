@@ -7,8 +7,8 @@ old-location : netvista\rildeleteadditionalnumberstringparams.htm
 old-project : netvista
 ms.assetid : 89ae70b9-56d9-4169-8bbd-0eb2d916a928
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILDELETEADDITIONALNUMBERSTRINGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rildeleteadditionalnumberstringparams, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS, ntddrilapitypes/RILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDELETEADDITIONALNUMBERSTRINGPARAMS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS
 ---
 
 # RILDELETEADDITIONALNUMBERSTRINGPARAMS structure
@@ -47,14 +51,14 @@ typedef struct _RILDELETEADDITIONALNUMBERSTRINGPARAMS {
 
 ## Members
 
-        
-            `dwNumId`
 
-            
-        
-            `hUiccApp`
+`dwNumId`
 
-            
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

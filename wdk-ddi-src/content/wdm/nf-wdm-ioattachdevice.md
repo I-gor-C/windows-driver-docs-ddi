@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0227751d-739b-4e0c-84bd-9135f117ec9b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoAttachDevice
+ms.keywords : IoAttachDevice routine [Kernel-Mode Driver Architecture], k104_a4f21237-9d2c-4336-9956-5e24da79f4b2.xml, IoAttachDevice, wdm/IoAttachDevice, kernel.ioattachdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoAttachDevice
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive1, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,13 +71,6 @@ Pointer to caller-allocated storage for a pointer. On return, contains a pointer
 ## Return Value
 
 <b>IoAttachDevice</b> can return one of the following NTSTATUS values:
-<dl>
-<dt><b>STATUS_SUCCESS</b></dt>
-<dt><b>STATUS_INVALID_PARAMETER</b></dt>
-<dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-<dt><b>STATUS_OBJECT_NAME_INVALID</b></dt>
-<dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>
 
 ## Remarks
 
@@ -86,6 +83,8 @@ The caller can be layered only at the top of an existing chain of layered driver
 Note that for file system drivers and drivers in the storage stack, <b>IoAttachDevice</b> opens the target device with FILE_READ_ATTRIBUTES and then calls <a href="..\wdm\nf-wdm-iogetrelateddeviceobject.md">IoGetRelatedDeviceObject</a>. This does not cause a file system to be mounted. Thus, a successful call to <b>IoAttachDevice</b> returns the device object of the storage driver, not that of the file system driver.
 
 This routine sets the <b>AlignmentRequirement</b> in <i>SourceDevice</i> to the value in the next-lower device object and sets the <b>StackSize</b> to the value in the next-lower object plus one.
+<div class="alert"><b>Warning</b>  <i>AttachedDevice</i>
+      must point to a global memory location, such as the driver's device extension. <b>IoAttachDevice</b> opens the file object for the target device, updates <i>AttachedDevice</i>, performs the attach, and then closes the file object. Thus, the source device receives the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> requests for the file object before <b>IoAttachDevice</b> returns. The driver must forward these requests to the target device, and <i>AttachedDevice</i> must be a memory location accessible to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543233">DispatchCleanup</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543255">DispatchClose</a> routines.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,26 +100,18 @@ This routine sets the <b>AlignmentRequirement</b> in <i>SourceDevice</i> to the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioattachdevicetodevicestacksafe.md">IoAttachDeviceToDeviceStackSafe</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iogetrelateddeviceobject.md">IoGetRelatedDeviceObject</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\ntddk\nf-ntddk-ioattachdevicetodevicestacksafe.md">IoAttachDeviceToDeviceStackSafe</a>
+
 <a href="..\wdm\nf-wdm-iodetachdevice.md">IoDetachDevice</a>
-</dt>
-</dl>
+
  
 
  

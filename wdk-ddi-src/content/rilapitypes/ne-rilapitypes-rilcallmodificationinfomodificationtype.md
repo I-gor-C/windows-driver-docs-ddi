@@ -7,8 +7,8 @@ old-location : netvista\rilcallmodificationinfomodificationtype_2.htm
 old-project : netvista
 ms.assetid : e73abe84-1688-40f1-9b8c-e4e34cc87b78
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMODIFICATIONINFOMODIFICATIONTYPE, RILCALLMODIFICATIONINFOMODIFICATIONTYPE
+ms.date : 1/18/2018
+ms.keywords : RIL_CALLMODIFICATIONTYPE_MODIFIED, RIL_CALLMODIFICATIONTYPE_BLOCKED, RILCALLMODIFICATIONINFOMODIFICATIONTYPE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_CALLMODIFICATIONTYPE_BLOCKED, rilapitypes/RIL_CALLMODIFICATIONTYPE_MODIFIED, RIL_CALLMODIFICATIONTYPE_MAX, rilapitypes/RIL_CALLMODIFICATIONTYPE_MAX, netvista.rilcallmodificationinfomodificationtype_2, rilapitypes/RILCALLMODIFICATIONINFOMODIFICATIONTYPE, RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMODIFICATIONINFOMODIFICATIONTYPE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 req.product : Windows 10 or later.
 ---
@@ -63,6 +67,11 @@ typedef enum _RILCALLMODIFICATIONINFOMODIFICATIONTYPE {
 
 <tr>
 <td>RIL_CALLMODIFICATIONTYPE_MODIFIED</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLMODIFICATIONTYPE_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

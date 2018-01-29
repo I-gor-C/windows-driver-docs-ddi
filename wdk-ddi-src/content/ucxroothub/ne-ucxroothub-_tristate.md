@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 16D8981B-53D3-4886-A85F-B487701ED172
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _TRISTATE, TRISTATE
+ms.keywords : ucxroothub/TriStateTrue, TRISTATE, _TRISTATE, TRISTATE enumeration [Buses], buses.tristate, TriStateTrue, ucxroothub/TriStateFalse, TriStateFalse, TriStateUnknown, ucxroothub/TRISTATE, ucxroothub/TriStateUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRISTATE
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TRISTATE
 req.product : Windows 10 or later.
 ---

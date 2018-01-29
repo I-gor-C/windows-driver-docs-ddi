@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cc2ce023-ebb1-4a8e-a06a-e2f11a89d258
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_CONTAINER_NOTIFICATION_CLASS, IO_CONTAINER_NOTIFICATION_CLASS
+ms.keywords : IO_CONTAINER_NOTIFICATION_CLASS, wdm/IO_CONTAINER_NOTIFICATION_CLASS, IoSessionStateNotification, IO_CONTAINER_NOTIFICATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/IoMaxContainerNotificationClass, wdm/IoSessionStateNotification, kernel.io_container_notification_class, _IO_CONTAINER_NOTIFICATION_CLASS, sysenum_c77c6805-11ce-4368-9c82-085ce99a2a97.xml, IoMaxContainerNotificationClass
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_CONTAINER_NOTIFICATION_CLASS
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IO_CONTAINER_NOTIFICATION_CLASS
 req.product : Windows 10 or later.
 ---
@@ -75,11 +79,8 @@ To register for notifications, a driver calls the <a href="..\wdm\nf-wdm-ioregis
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a>
-</dt>
-</dl>
+
  
 
  

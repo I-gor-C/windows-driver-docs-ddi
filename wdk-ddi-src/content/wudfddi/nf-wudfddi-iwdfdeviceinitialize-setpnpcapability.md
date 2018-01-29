@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 82892740-12f6-469b-a65c-6905d32c0b0d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDeviceInitialize, IWDFDeviceInitialize::SetPnpCapability, SetPnpCapability
+ms.keywords : SetPnpCapability method, IWDFDeviceInitialize interface, SetPnpCapability method, wudfddi/IWDFDeviceInitialize::SetPnpCapability, umdf.iwdfdeviceinitialize_setpnpcapability, IWDFDeviceInitialize, UMDFDeviceObjectRef_516aeba5-c0c2-40a0-a9e6-d1a983835a94.xml, SetPnpCapability method, IWDFDeviceInitialize interface, SetPnpCapability, wdf.iwdfdeviceinitialize_setpnpcapability, IWDFDeviceInitialize::SetPnpCapability
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDeviceInitialize.SetPnpCapability
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -59,7 +63,6 @@ A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAP
 `Value`
 
 A WDF_TRI_STATE-typed value that identifies how to set the PnP capability that is specified by <i>Capability</i>. The following table shows the possible values.
-
 <table>
 <tr>
 <th>Value</th>
@@ -117,17 +120,12 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556974">IWDFDeviceInitialize::GetPnpCapability</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAPABILITY</a>
-</dt>
-</dl>
+
  
 
  

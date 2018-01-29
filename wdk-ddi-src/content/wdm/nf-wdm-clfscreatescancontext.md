@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f3392e43-8463-4d21-9206-34d09f3c7f59
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsCreateScanContext
+ms.keywords : kernel.clfscreatescancontext, ClfsCreateScanContext, wdm/ClfsCreateScanContext, Clfs_475944a4-914e-4532-a066-ee7ff9109756.xml, ClfsCreateScanContext routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsCreateScanContext
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -68,7 +72,6 @@ The number of containers to be scanned with each call to <a href="..\wdm\nf-wdm-
 `eScanMode`
 
 A set of flags that specify whether the scan context is set up for scanning forward or backward and whether the scan context should be reinitialized. The following three flags are available for callers of this routine.
-
 <table>
 <tr>
 <th>Value</th>
@@ -104,8 +107,7 @@ Reinitialize the scan context. The next time <b>ClfsScanLogContainers</b> is cal
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 If <i>pcxScan</i> points to a CLFS_SCAN_CONTEXT structure that is being passed to this routine for the first time, one of the direction flags (CLFS_SCAN_FORWARD or CLFS_SCAN_BACKWARD) must be set. The CLFS_SCAN_INIT flag must not be set.
 
@@ -138,11 +140,8 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>
-</dt>
-</dl>
+
  
 
  

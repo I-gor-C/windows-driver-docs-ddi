@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a62f6db3-baca-492a-b485-062fcc69f563
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK
+ms.keywords : fltkernel/PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK structure [Installable File System Drivers], FltSystemStructures_8abf39e5-b9d1-4c44-8137-80ee1b35c0a3.xml, PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK, PFLT_IO_PARAMETER_BLOCK structure pointer [Installable File System Drivers], _FLT_IO_PARAMETER_BLOCK, fltkernel/FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK, ifsk.flt_io_parameter_block
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FLT_IO_PARAMETER_BLOCK
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK
 ---
 
 # _FLT_IO_PARAMETER_BLOCK structure
@@ -53,11 +57,10 @@ typedef struct _FLT_IO_PARAMETER_BLOCK {
 
 ## Members
 
-        
-            `IrpFlags`
 
-            A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The following table shows flag values. 
+`IrpFlags`
 
+A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The following table shows flag values. 
 <table>
 <tr>
 <th>Value</th>
@@ -234,19 +237,18 @@ The operation originated from a user mode driver.
 </td>
 </tr>
 </table>
-        
-            `MajorFunction`
 
-            The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
-        
-            `MinorFunction`
+`MajorFunction`
 
-            The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
-        
-            `OperationFlags`
+The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
 
-            A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The following table shows the most commonly used flag values.
+`MinorFunction`
 
+The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
+
+`OperationFlags`
+
+A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The following table shows the most commonly used flag values.
 <table>
 <tr>
 <th>Value</th>
@@ -383,25 +385,25 @@ Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">
 </td>
 </tr>
 </table>
-        
-            `Parameters`
 
-            An <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members.
-        
-            `Reserved`
+`Parameters`
 
-            Reserved for system use. Do not use.
-        
-            `TargetFileObject`
+An <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members.
 
-            A file object pointer for the file or directory that is the target for this I/O operation.
-        
-            `TargetInstance`
+`Reserved`
 
-            An opaque instance pointer for the minifilter that is the target for this I/O operation.
+Reserved for system use. Do not use.
 
-    ## Remarks
-        The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure. The callback data structure contains a pointer to the FLT_IO_PARAMETER_BLOCK structure in its  <b>Iopb</b> member. 
+`TargetFileObject`
+
+A file object pointer for the file or directory that is the target for this I/O operation.
+
+`TargetInstance`
+
+An opaque instance pointer for the minifilter that is the target for this I/O operation.
+
+## Remarks
+The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure. The callback data structure contains a pointer to the FLT_IO_PARAMETER_BLOCK structure in its  <b>Iopb</b> member. 
 
 A minifilter receives a pointer to the callback data structure as the <i>Data</i> or <i>CallbackData</i> input parameter to the following callback routine types: 
 
@@ -430,16 +432,24 @@ The modified parameters are not received by the minifilter's own postoperation c
 A minifilter can change the value of the <b>TargetInstance</b> member. However, the new value must be a pointer to an instance of the same minifilter at the same altitude on a different volume. In addition, the new volume's device object must have a stack size that is greater than or equal to that of the original volume's device object. 
 
 To get the stack size for a volume device object, given an opaque instance pointer for an instance that is attached to the volume, do the following: 
-
+<ul>
+<li>
 Call <b>FltGetVolumeFromInstance</b> to get the volume pointer. 
 
+</li>
+<li>
 Call <b>FltGetDeviceObject</b> to get a pointer to the volume device object. This pointer is returned in the <i>DeviceObject</i> parameter. The device object's stack size can be found in <b>DeviceObject-&gt;StackSize</b>. 
 
+</li>
+<li>
 When the volume pointer is no longer needed, call <b>FltObjectDereference</b> to decrement its reference count. 
 
+</li>
+<li>
 When the volume device object pointer is no longer needed, call <b>ObDereferenceObject</b> to decrement its reference count. 
 
-A minifilter can change the value of the <b>TargetFileObject</b> member. However, the new value must be a pointer to a file object for a file that resides on the same volume as the instance specified by the <b>TargetInstance</b> member. 
+</li>
+</ul>A minifilter can change the value of the <b>TargetFileObject</b> member. However, the new value must be a pointer to a file object for a file that resides on the same volume as the instance specified by the <b>TargetInstance</b> member. 
 
 A minifilter cannot safely change the value of the <b>MajorFunction</b> member. Instead, it must initiate a new I/O operation. 
 
@@ -454,124 +464,84 @@ A minifilter can initiate an I/O operation by calling a support routine such as 
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltclearcallbackdatadirty.md">FltClearCallbackDataDirty</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltiscallbackdatadirty.md">FltIsCallbackDataDirty</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550751">IRP_MJ_FILE_SYSTEM_CONTROL</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549268">IRP_MJ_PNP</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549346">IRP_MJ_SET_EA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549423">IRP_MJ_SHUTDOWN</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_generate_file_name.md">PFLT_GENERATE_FILE_NAME</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549268">IRP_MJ_PNP</a>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltiscallbackdatadirty.md">FltIsCallbackDataDirty</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>
+
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549423">IRP_MJ_SHUTDOWN</a>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550751">IRP_MJ_FILE_SYSTEM_CONTROL</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_generate_file_name.md">PFLT_GENERATE_FILE_NAME</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltclearcallbackdatadirty.md">FltClearCallbackDataDirty</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
+
  
 
  

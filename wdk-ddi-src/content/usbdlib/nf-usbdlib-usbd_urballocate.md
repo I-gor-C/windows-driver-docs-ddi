@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 384E04BE-794F-4F87-81E5-35B974EB6172
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_UrbAllocate
+ms.keywords : usbdlib/USBD_UrbAllocate, USBD_UrbAllocate routine [Buses], USBD_UrbAllocate, buses.usbd_urballocate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista a
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_UrbAllocate
-req.alt-loc : Usbdex.lib,Usbdex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbdex.lib
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -72,12 +76,12 @@ The <b>USBD_UrbAllocate</b> routine enables the underlying USB driver stack to a
 Regardless of the USB protocol version of the host controller, the underlying USB driver stack, the target operating system, the client driver must always call <b>USBD_UrbAllocate</b> to allocate an <a href="..\usb\ns-usb-_urb.md">URB</a> structure.  <b>USBD_UrbAllocate</b> replaces earlier allocation mechanisms, such as  <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>, or allocating them on the stack. 
 
 The client driver must <i>not</i> use <b>USBD_UrbAllocate</b>, 
+<ul>
+<li>To allocate an URB that has variable length, such as an URB for an isochronous transfer. Instead the client driver must call <a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>. </li>
+<li>If the target operating system is Windows XP with Service Pack 2 (SP2) or an earlier version of Windows.</li>
+</ul>For more information about replacement routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>.
 
-For more information about replacement routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>.
-
-You must call <a href="..\usbdlib\nf-usbdlib-usbd_urbfree.md">USBD_UrbFree</a> to release the URB allocated by <b>USBD_UrbAllocate</b>. 
-
-The following code example shows how to allocate, submit, and release a URB. The example submits the URB synchronously.
+You must call <a href="..\usbdlib\nf-usbdlib-usbd_urbfree.md">USBD_UrbFree</a> to release the URB allocated by <b>USBD_UrbAllocate</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,17 +97,12 @@ The following code example shows how to allocate, submit, and release a URB. The
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbdlib\nf-usbdlib-usbd_urbfree.md">USBD_UrbFree</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/15be1e51-5ab2-40c4-95a8-8555c92523aa">Sending Requests to a USB Device</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
+
  
 
  

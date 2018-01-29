@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 07b5d7ed-fc4c-45e5-8748-2630c91d912a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceSetCharacteristics
+ms.keywords : wdfdevice/WdfDeviceSetCharacteristics, DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, kmdf.wdfdevicesetcharacteristics, WdfDeviceSetCharacteristics method, PFN_WDFDEVICESETCHARACTERISTICS, WdfDeviceSetCharacteristics, wdf.wdfdevicesetcharacteristics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceSetCharacteristics
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -73,8 +77,6 @@ You should set device characteristics by calling the <a href="..\wdfdevice\nf-wd
 
 Each call to <b>WdfDeviceSetCharacteristics</b> overwrites the settings of any previous call.
 
-The following code example sets the FILE_REMOVABLE_MEDIA characteristic for a specified device.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,14 +91,10 @@ The following code example sets the FILE_REMOVABLE_MEDIA characteristic for a sp
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetcharacteristics.md">WdfDeviceGetCharacteristics</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4b1028a1-8c86-4958-a19f-32c490dda790
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstrclockgettime, KStrClockGetTime, KStrClockGetTime routine [Streaming Media Devices], KStrClockGetTime, PFNKSCLOCK_GETTIME, PFNKSCLOCK_GETTIME, ks/KStrClockGetTime, ksfunc_a60a332c-ffc8-4969-9e81-cccaac9b5c0a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrClockGetTime
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -78,14 +82,10 @@ You can obtain an entry point for this routine by supplying a driver-allocated <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksclock_functiontable.md">KSCLOCK_FUNCTIONTABLE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 50125022-7450-4582-b98d-1d597e4e96d4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : WdmlibIoGetAffinityInterrupt
+ms.keywords : storage.ataadaptercontrol, AtaAdapterControl routine [Storage Devices], AtaAdapterControl, IDE_ADAPTER_CONTROL, IDE_ADAPTER_CONTROL, irb/AtaAdapterControl, atartns_6460976d-3415-4cda-b128-f74baefd075f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaAdapterControl
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LUID
 ---
 
 
 # IDE_ADAPTER_CONTROL callback function
 The <i>AtaAdapterControl</i> miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -61,7 +66,6 @@ A pointer to the controller extension.
 
 One of five actions that the miniport driver must perform as defined in the following table.
   
-
 <table>
 <tr>
 <th>ControlAction</th>
@@ -167,11 +171,8 @@ The port driver guarantees that there is no outstanding I/O on the adapter befor
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\ns-irb-_ide_controller_configuration.md">IDE_CONTROLLER_CONFIGURATION</a>
-</dt>
-</dl>
+
  
 
  

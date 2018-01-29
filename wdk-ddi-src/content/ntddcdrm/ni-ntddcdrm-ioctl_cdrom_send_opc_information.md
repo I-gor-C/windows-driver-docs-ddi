@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 77289AB6-7733-4DA1-B4E9-585AA73D137C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.keywords : storage.ioctl_cdrom_send_opc_information, IOCTL_CDROM_SEND_OPC_INFORMATION control code [Storage Devices], IOCTL_CDROM_SEND_OPC_INFORMATION, ntddcdrm/IOCTL_CDROM_SEND_OPC_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CDROM_SEND_OPC_INFORMATION
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
@@ -64,21 +68,12 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. 
 
 Because of  status code propagation from other APIs, the <b>Status</b> field can be set to (but is not limited to) the following:
 
-
-
-The request completed successfully.
-
-The input buffer length is smaller than required.
-
-The request type is not <b>SimpleOpcInfo</b>.
-
-    ## Remarks
-        The <b>IOCTL_CDROM_SEND_OPC_INFORMATION</b> IOCTL is a wrapper over the SEND OPC INFORMATION command of the MMC specification. The <b>Exclude0</b> and <b>Exclude1</b> fields directly map to the SEND OPC INFORMATION fields with the same names.
+## Remarks
+The <b>IOCTL_CDROM_SEND_OPC_INFORMATION</b> IOCTL is a wrapper over the SEND OPC INFORMATION command of the MMC specification. The <b>Exclude0</b> and <b>Exclude1</b> fields directly map to the SEND OPC INFORMATION fields with the same names.
 
 On failures, this IOCTL returns standard errors, such as STATUS_DEVICE_NOT_READY, STATUS_IO_TIMEOUT, STATUS_IO_DEVICE_ERROR.
 
@@ -89,19 +84,14 @@ On failures, this IOCTL returns standard errors, such as STATUS_DEVICE_NOT_READY
 | **Header** | ntddcdrm.h (include Winioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_simple_opc_info.md">CDROM_SIMPLE_OPC_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

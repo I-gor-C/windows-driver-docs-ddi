@@ -7,8 +7,8 @@ old-location : print\devqueryprintex.htm
 old-project : print
 ms.assetid : f4cd0fe6-acdc-43e6-8dd7-7b547b1ec7cc
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : DevQueryPrintEx
+ms.date : 1/18/2018
+ms.keywords : DevQueryPrintEx function [Print Devices], winddiui/DevQueryPrintEx, DevQueryPrintEx, print.devqueryprintex, print_interface-graphics_37504c69-c747-4758-928c-1ebd60e64c94.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DevQueryPrintEx
-req.alt-loc : WinSpool.drv
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Winspool.lib
 req.dll : WinSpool.drv
 req.irql : 
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
 req.product : Windows 10 or later.
 ---
 
@@ -66,7 +70,7 @@ The received <a href="..\winddiui\ns-winddiui-_devqueryprint_info.md">DEVQUERYPR
 
 If the job can be printed, the function should just return <b>TRUE</b>. If the job should be held until later, the function should return <b>FALSE</b> after supplying a displayable text string (in the buffer pointed to by the DEVQUERYPRINT_INFO structure's <b>pszErrorStr</b> member) describing the reason the job cannot be printed.
 
-Displayable text strings should be defined as string resources in a resource file.</p>
+Displayable text strings should be defined as string resources in a resource file.
 
 ## Requirements
 | &nbsp; | &nbsp; |

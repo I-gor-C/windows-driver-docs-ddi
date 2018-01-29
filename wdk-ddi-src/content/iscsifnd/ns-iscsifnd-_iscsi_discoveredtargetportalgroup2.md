@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d852f062-3090-4a7a-bdb8-9dde93257a90
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ISCSI_DiscoveredTargetPortalGroup2, *PISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2
+ms.keywords : storage.iscsi_discoveredtargetportalgroup2, PISCSI_DiscoveredTargetPortalGroup2 structure pointer [Storage Devices], iscsifnd/PISCSI_DiscoveredTargetPortalGroup2, _ISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2 structure [Storage Devices], structs-iSCSI_2135fea1-a4b9-401e-a7b3-9a1b1896fe28.xml, iscsifnd/ISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2, PISCSI_DiscoveredTargetPortalGroup2, *PISCSI_DiscoveredTargetPortalGroup2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISCSI_DiscoveredTargetPortalGroup2
-req.alt-loc : iscsifnd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ISCSI_DiscoveredTargetPortalGroup2, *PISCSI_DiscoveredTargetPortalGroup2
 ---
 
 # _ISCSI_DiscoveredTargetPortalGroup2 structure
@@ -48,21 +52,21 @@ typedef struct _ISCSI_DiscoveredTargetPortalGroup2 {
 
 ## Members
 
-        
-            `PortalCount`
 
-            The number of portals in the group.
-        
-            `Portals`
+`PortalCount`
 
-            An array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a> structures, which describe target portals.
-        
-            `Tag`
+The number of portals in the group.
 
-            A tag number that identifies the portal group.
+`Portals`
 
-    ## Remarks
-        The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortalGroup2 structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561520">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a> in <i>Discover.mof</i>.
+An array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a> structures, which describe target portals.
+
+`Tag`
+
+A tag number that identifies the portal group.
+
+## Remarks
+The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortalGroup2 structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561520">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a> in <i>Discover.mof</i>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,22 +76,16 @@ typedef struct _ISCSI_DiscoveredTargetPortalGroup2 {
 | **Minimum UMDF version** |  |
 | **Header** | iscsifnd.h (include Iscsifnd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a>
-</dt>
-<dt>
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561523">ISCSI_DiscoveredTargetPortalGroup WMI Class</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561520">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a>
-</dt>
-</dl>
+
+<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a>
+
+<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561523">ISCSI_DiscoveredTargetPortalGroup WMI Class</a>
+
  
 
  

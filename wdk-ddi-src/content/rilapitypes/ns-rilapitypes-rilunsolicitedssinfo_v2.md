@@ -7,8 +7,8 @@ old-location : netvista\rilunsolicitedssinfo_v2_2.htm
 old-project : netvista
 ms.assetid : 1c59c4fa-610e-4200-a94a-2c28754dfe43
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO, RILUNSOLICITEDSSINFO
+ms.date : 1/18/2018
+ms.keywords : RILUNSOLICITEDSSINFO_V2 structure [Network Drivers Starting with Windows Vista], RILUNSOLICITEDSSINFO, RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO_V2, netvista.rilunsolicitedssinfo_v2_2, rilapitypes/RILUNSOLICITEDSSINFO_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUNSOLICITEDSSINFO_V2
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO, RILUNSOLICITEDSSINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO, RILUNSOLICITEDSSINFO_V2
 req.product : Windows 10 or later.
 ---
 
@@ -56,46 +60,46 @@ typedef struct _RILUNSOLICITEDSSINFO_V2 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwCUGIndex`
+`cbSize`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwHistorynfoLength`
 
-            
-        
-            `dwID`
+`dwCUGIndex`
 
-            
-        
-            `dwNotificationCode`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `raAddress`
+`dwExecutor`
 
-            
-        
-            `rsaSubAddress`
 
-            
-        
-            `wszHistoryInfo`
 
-            
+`dwHistorynfoLength`
+
+
+
+`dwID`
+
+
+
+`dwNotificationCode`
+
+
+
+`dwParams`
+
+
+
+`raAddress`
+
+
+
+`rsaSubAddress`
+
+
+
+`wszHistoryInfo`
+
+
 
 
 ## Requirements

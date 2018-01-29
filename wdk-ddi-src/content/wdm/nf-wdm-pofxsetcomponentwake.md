@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : BE2E35B0-1C34-4740-ABED-4E96F8908174
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetComponentWake
+ms.keywords : PoFxSetComponentWake, wdm/PoFxSetComponentWake, kernel.pofxsetcomponentwake, PoFxSetComponentWake routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxSetComponentWake
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -93,11 +97,8 @@ If a component is in the idle condition when <b>PoFxSetComponentWake</b> is call
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">PO_FX_COMPONENT</a>
-</dt>
-</dl>
+
  
 
  

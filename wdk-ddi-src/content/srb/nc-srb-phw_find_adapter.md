@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 265dce25-cecb-4bd1-8f5f-1646779da296
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
+ms.keywords : storage.phw_find_adapter, (*PHW_FIND_ADAPTER) callback function [Storage Devices], (*PHW_FIND_ADAPTER), srb/(*PHW_FIND_ADAPTER), ide_minikr_dcd06c33-80a8-417c-acf6-5c38fa4d62ed.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PHW_FIND_ADAPTER)
-req.alt-loc : srb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -85,18 +89,56 @@ Reserved member when used by one of the Storport driver's miniport drivers. With
 ## Return Value
 
 The routine declared by this prototype must return one of the following status values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>SP_RETURN_FOUND</b></dt>
-</dl>Indicates a supported HBA was found and that the HBA-relevant configuration information was successfully determined and set in the PORT_CONFIGURATION_INFORMATION structure.
+</dl>
+</td>
+<td width="60%">
+Indicates a supported HBA was found and that the HBA-relevant configuration information was successfully determined and set in the PORT_CONFIGURATION_INFORMATION structure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>SP_RETURN_ERROR</b></dt>
-</dl>Indicates an HBA was found but there was error obtaining the configuration information. If possible, such an error should be logged with <a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>.
+</dl>
+</td>
+<td width="60%">
+Indicates an HBA was found but there was error obtaining the configuration information. If possible, such an error should be logged with <a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>SP_RETURN_BAD_CONFIG</b></dt>
-</dl>Indicates the supplied configuration information was invalid for the adapter.
+</dl>
+</td>
+<td width="60%">
+Indicates the supplied configuration information was invalid for the adapter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>SP_RETURN_NOT_FOUND</b></dt>
-</dl>Indicates no supported HBA was found for the supplied configuration information.
+</dl>
+</td>
+<td width="60%">
+Indicates no supported HBA was found for the supplied configuration information.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -120,14 +162,10 @@ For more information about the Storport driver's version of the routine associat
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
-</dt>
-<dt>
+
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 20EE0017-760E-48A1-8658-2A0278843074
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CPTABLEINFO, *PCPTABLEINFO, CPTABLEINFO
+ms.keywords : PCPTABLEINFO, kernel.cptableinfo, ntnls/CPTABLEINFO, ntnls/PCPTABLEINFO, CPTABLEINFO, *PCPTABLEINFO, PCPTABLEINFO structure pointer [Kernel-Mode Driver Architecture], CPTABLEINFO structure [Kernel-Mode Driver Architecture], _CPTABLEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CPTABLEINFO
-req.alt-loc : Ntnls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PCPTABLEINFO, CPTABLEINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : CPTABLEINFO, *PCPTABLEINFO
 ---
 
 # _CPTABLEINFO structure
@@ -57,54 +61,54 @@ typedef struct _CPTABLEINFO {
 
 ## Members
 
-        
-            `CodePage`
 
-            Specifies the code page number.
-        
-            `DBCSCodePage`
+`CodePage`
 
-            Specifies non-zero for DBCS code pages.
-        
-            `DBCSOffsets`
+Specifies the code page number.
 
-            Specifies a pointer to DBCS offsets.
-        
-            `DBCSRanges`
+`DBCSCodePage`
 
-            Specifies a pointer to DBCS ranges.
-        
-            `DefaultChar`
+Specifies non-zero for DBCS code pages.
 
-            Specifies the default character (MB).
-        
-            `LeadByte`
+`DBCSOffsets`
 
-            Specifies the lead byte ranges.
-        
-            `MaximumCharacterSize`
+Specifies a pointer to DBCS offsets.
 
-            Specifies the maximum length in bytes of a character.
-        
-            `MultiByteTable`
+`DBCSRanges`
 
-            Specifies a pointer to a MB translation table.
-        
-            `TransDefaultChar`
+Specifies a pointer to DBCS ranges.
 
-            Specifies the translation of the default character (Unicode).
-        
-            `TransUniDefaultChar`
+`DefaultChar`
 
-            Specifies the translation of the Unicode default character (MB).
-        
-            `UniDefaultChar`
+Specifies the default character (MB).
 
-            Specifies the default character (Unicode).
-        
-            `WideCharTable`
+`LeadByte`
 
-            Specifies a pointer to a WC translation table.
+Specifies the lead byte ranges.
+
+`MaximumCharacterSize`
+
+Specifies the maximum length in bytes of a character.
+
+`MultiByteTable`
+
+Specifies a pointer to a MB translation table.
+
+`TransDefaultChar`
+
+Specifies the translation of the default character (Unicode).
+
+`TransUniDefaultChar`
+
+Specifies the translation of the Unicode default character (MB).
+
+`UniDefaultChar`
+
+Specifies the default character (Unicode).
+
+`WideCharTable`
+
+Specifies a pointer to a WC translation table.
 
 
 ## Requirements

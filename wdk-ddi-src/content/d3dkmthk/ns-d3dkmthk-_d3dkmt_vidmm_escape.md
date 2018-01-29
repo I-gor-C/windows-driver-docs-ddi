@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b9fb9960-9e6a-4c41-9c40-8ad307f83f0e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE
+ms.keywords : _D3DKMT_VIDMM_ESCAPE, display.d3dkmt_vidmm_escape, d3dkmthk/D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE structure [Display Devices], OpenGL_Structs_9a9c243b-b99e-43f2-a749-afbb839fb7c0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_VIDMM_ESCAPE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_VIDMM_ESCAPE
 ---
 
@@ -84,10 +88,10 @@ typedef struct _D3DKMT_VIDMM_ESCAPE {
 
 ## Members
 
-        
-            `Type`
 
-            
+`Type`
+
+
 
 
 ## Requirements
@@ -98,16 +102,12 @@ typedef struct _D3DKMT_VIDMM_ESCAPE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
-</dt>
-</dl>
+
  
 
  

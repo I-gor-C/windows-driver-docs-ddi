@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6691AB8B-EC6E-483B-A10A-6F9C5A97FEC9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _tagKSAUDIOENGINE_DESCRIPTOR, KSAUDIOENGINE_DESCRIPTOR, *PKSAUDIOENGINE_DESCRIPTOR
+ms.keywords : PKSAUDIOENGINE_DESCRIPTOR structure pointer [Audio Devices], ksmedia/KSAUDIOENGINE_DESCRIPTOR, audio.ksaudioengine_descriptor, KSAUDIOENGINE_DESCRIPTOR structure [Audio Devices], KSAUDIOENGINE_DESCRIPTOR, *PKSAUDIOENGINE_DESCRIPTOR, ksmedia/PKSAUDIOENGINE_DESCRIPTOR, PKSAUDIOENGINE_DESCRIPTOR, _tagKSAUDIOENGINE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAUDIOENGINE_DESCRIPTOR
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSAUDIOENGINE_DESCRIPTOR, *PKSAUDIOENGINE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSAUDIOENGINE_DESCRIPTOR, KSAUDIOENGINE_DESCRIPTOR"
 ---
 
 # _tagKSAUDIOENGINE_DESCRIPTOR structure
@@ -48,18 +52,18 @@ typedef struct _KSAUDIOENGINE_DESCRIPTOR {
 
 ## Members
 
-        
-            `nHostPinId`
 
-            Specifies the ID of the pin factory that is connected to the audio engine node that handles host-processed audio data.  This is the pin factory on which a software audio engine will run.
-        
-            `nLoopbackPinId`
+`nHostPinId`
 
-            Specifies the ID of the pin factory that is connected to the audio engine node that supplies a post-mix loopback or reference stream.
-        
-            `nOffloadPinId`
+Specifies the ID of the pin factory that is connected to the audio engine node that handles host-processed audio data.  This is the pin factory on which a software audio engine will run.
 
-            Specifies the ID of the pin factory that is connected to the audio engine node that handles offloaded streams.
+`nLoopbackPinId`
+
+Specifies the ID of the pin factory that is connected to the audio engine node that supplies a post-mix loopback or reference stream.
+
+`nOffloadPinId`
+
+Specifies the ID of the pin factory that is connected to the audio engine node that handles offloaded streams.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _KSAUDIOENGINE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265074">GetAudioEngineDescriptor</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450870">KSPROPERTY_AUDIOENGINE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

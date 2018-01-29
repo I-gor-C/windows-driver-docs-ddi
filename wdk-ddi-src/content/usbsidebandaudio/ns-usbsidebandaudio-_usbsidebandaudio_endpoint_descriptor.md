@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 552986F7-AEE9-4CBF-A932-629885F99487
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, *PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
+ms.keywords : usbsidebandaudio/PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure [Audio Devices], PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, audio.usbsidebandaudio_endpoint_descriptor, *PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, usbsidebandaudio/USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
-req.alt-loc : 
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -54,6 +58,34 @@ typedef struct _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR {
 ````
 
 ## Members
+
+
+`Capabilities`
+
+
+
+`Category`
+
+
+
+`CbSize`
+
+
+
+`Direction`
+
+
+
+`FriendlyName`
+
+
+
+`SidetoneVolumePropertyValueSize`
+
+
+
+`VolumePropertyValuesSize`
+
 
 
 

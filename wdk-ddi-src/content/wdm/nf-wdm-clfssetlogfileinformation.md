@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9f44b1ce-25d4-438f-b4eb-cff7bbfb5e0a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsSetLogFileInformation
+ms.keywords : Clfs_15ad655b-ee70-4ee8-9868-4e7ab96dfb3a.xml, kernel.clfssetlogfileinformation, ClfsSetLogFileInformation, wdm/ClfsSetLogFileInformation, ClfsSetLogFileInformation routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsSetLogFileInformation
-req.alt-loc : Clfs.sys,Ext-MS-Win-fs-clfs-l1-1-0.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Clfs.lib
 req.dll : Clfs.sys
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ A <a href="..\wdm\ne-wdm-_cls_log_information_class.md">CLFS_LOG_INFORMATION_CLA
 `pinfoBuffer`
 
 A pointer to a buffer that supplies the log information. The structure of this buffer varies according to the class of information specified by <i>eInformationClass</i>. The following table shows the relationship between the information class and the buffer type.
-
 <table>
 <tr>
 <th>Value of eInformationClass</th>
@@ -158,26 +161,18 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_cls_information.md">CLFS_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_cls_log_information_class.md">CLFS_LOG_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_clfs_stream_id_information.md">CLFS_STREAM_ID_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ne-wdm-_cls_log_information_class.md">CLFS_LOG_INFORMATION_CLASS</a>
+
+<a href="..\wdm\ns-wdm-_cls_information.md">CLFS_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_clfs_stream_id_information.md">CLFS_STREAM_ID_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a>
-</dt>
-</dl>
+
  
 
  

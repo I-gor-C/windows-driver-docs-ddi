@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : c702d3aa-d586-4206-93be-30537c55edcf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
+ms.keywords : _TUPLE_REQUEST, TUPLE_REQUEST, PTUPLE_REQUEST, PTUPLE_REQUEST structure pointer [Buses], *PTUPLE_REQUEST, memcdref_9d88760a-943f-4537-ad46-738d5f41421e.xml, TUPLE_REQUEST structure [Buses], PCMCIA.tuple_request, ntddpcm/TUPLE_REQUEST, ntddpcm/PTUPLE_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TUPLE_REQUEST
-req.alt-loc : ntddpcm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TUPLE_REQUEST, *PTUPLE_REQUEST
 ---
 
@@ -46,10 +50,10 @@ typedef struct _TUPLE_REQUEST {
 
 ## Members
 
-        
-            `Socket`
 
-            Indicates the socket number.
+`Socket`
+
+Indicates the socket number.
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _TUPLE_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537238">IOCTL_GET_TUPLE_DATA</a>
-</dt>
-</dl>
+
  
 
  

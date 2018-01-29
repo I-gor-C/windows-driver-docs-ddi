@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 977868D1-02E1-4460-9194-2079B986045E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDICB_DEALLOCATE_0022, D3D12DDICB_DEALLOCATE_0022
+ms.keywords : display.d3d12ddicb_deallocate_0022, D3D12DDICB_DEALLOCATE_0022 structure [Display Devices], D3D12DDICB_DEALLOCATE_0022, d3d12umddi/D3D12DDICB_DEALLOCATE_0022
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDICB_DEALLOCATE_0022
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDICB_DEALLOCATE_0022
 ---
 
@@ -49,22 +53,22 @@ typedef struct D3D12DDICB_DEALLOCATE_0022 {
 
 ## Members
 
-        
-            `Flags`
 
-            Flags to use for deallocation, as specified in the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_deallocate_flags_0022.md">D3D12DDI_DEALLOCATE_FLAGS_0022</a> enumeration.
-        
-            `HandleList`
+`Flags`
 
-            A pointer to a list of kernel handles.
-        
-            `hResource`
+Flags to use for deallocation, as specified in the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_deallocate_flags_0022.md">D3D12DDI_DEALLOCATE_FLAGS_0022</a> enumeration.
 
-            The handle of a resource.
-        
-            `NumAllocations`
+`HandleList`
 
-            
+A pointer to a list of kernel handles.
+
+`hResource`
+
+The handle of a resource.
+
+`NumAllocations`
+
+
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct D3D12DDICB_DEALLOCATE_0022 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_deallocate_flags_0022.md">D3D12DDI_DEALLOCATE_FLAGS_0022</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\fwps_fields_outbound_mac_frame_native.htm
 old-project : netvista
 ms.assetid : 71244290-3DCD-45AF-9EF0-AD1C9103A69C
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_, FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE
+ms.date : 1/18/2018
+ms.keywords : FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_NDIS_PHYSICAL_MEDIA_TYPE, FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_NDIS_MEDIA_TYPE, FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_NDIS_MEDIA_TYPE, FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_NDIS_PORT, FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE, FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_NDIS_PORT, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_FLAGS, FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE_INDEX, FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_MAX, FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE_, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_MAX, netvista.fwps_fields_outbound_mac_frame_native, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_NDIS_PHYSICAL_MEDIA_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE_INDEX, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE, fwpsk/FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE, FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_FLAGS, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_FIELDS_OUTBOUND_MAC_FRAME_NATIVE
 ---
 
@@ -58,6 +62,11 @@ typedef enum  {
 <table>
 
 <tr>
+<td>FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_COMPARTMENT_ID</td>
+<td></td>
+</tr>
+
+<tr>
 <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE</td>
 <td>The outbound MAC frame native interface field.</td>
 </tr>
@@ -70,6 +79,11 @@ typedef enum  {
 <tr>
 <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE</td>
 <td>The outbound MAC frame native interface type field.</td>
+</tr>
+
+<tr>
+<td>FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_L2_FLAGS</td>
+<td></td>
 </tr>
 
 <tr>

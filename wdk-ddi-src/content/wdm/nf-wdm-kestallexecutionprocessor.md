@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9f03af94-0a29-42f4-84f1-09d8d1c97dd6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeStallExecutionProcessor
+ms.keywords : k105_47405815-7368-4100-b39d-43f5a242f5c1.xml, KeStallExecutionProcessor routine [Kernel-Mode Driver Architecture], KeStallExecutionProcessor, kernel.kestallexecutionprocessor, wdm/KeStallExecutionProcessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeStallExecutionProcessor
-req.alt-loc : Hal.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hal.lib
 req.dll : Hal.dll
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,17 +82,12 @@ This routine is for use by device drivers and other software that must wait for 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kedelayexecutionthread.md">KeDelayExecutionThread</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-kedelayexecutionthread.md">KeDelayExecutionThread</a>
+
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
  
 
  

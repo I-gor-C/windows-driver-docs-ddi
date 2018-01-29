@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1fc71718-a1fb-4e82-9805-7830e761cd6d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstrclockgetcorrelatedtime, KStrClockGetCorrelatedTime, KStrClockGetCorrelatedTime routine [Streaming Media Devices], KStrClockGetCorrelatedTime, PFNKSCLOCK_CORRELATEDTIME, PFNKSCLOCK_CORRELATEDTIME, ks/KStrClockGetCorrelatedTime, ksfunc_dd229adf-e2be-44ac-bda2-f947b0f559a3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrClockGetCorrelatedTime
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -69,7 +73,7 @@ This routine returns the current system time as a value of type LONGLONG. This v
 
 You can obtain an entry point for this routine by supplying a driver-allocated <a href="..\ks\ns-ks-ksclock_functiontable.md">KSCLOCK_FUNCTIONTABLE</a> structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a> request.
 
-The system time is acquired from <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.
+The system time is acquired from <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.
 
 Both time values are specified in 100 nanosecond units.
 
@@ -87,20 +91,14 @@ Both time values are specified in 100 nanosecond units.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksclock_functiontable.md">KSCLOCK_FUNCTIONTABLE</a>
-</dt>
-<dt>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+
 <a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksclock_functiontable.md">KSCLOCK_FUNCTIONTABLE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a>
+
  
 
  

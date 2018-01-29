@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9a4d04de-2c44-4f13-ac6f-32e2fe879e4e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT
+ms.keywords : hbapiwmi/PGetPortAttributesByWWN_OUT, PGetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT, storage.getportattributesbywwn_out, GetPortAttributesByWWN_OUT structure [Storage Devices], structs-Fibre_bf13c322-2b55-4113-8e04-5cacfecbea8e.xml, _GetPortAttributesByWWN_OUT, hbapiwmi/GetPortAttributesByWWN_OUT, PGetPortAttributesByWWN_OUT structure pointer [Storage Devices], *PGetPortAttributesByWWN_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetPortAttributesByWWN_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PGetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
 ---
 
 # _GetPortAttributesByWWN_OUT structure
@@ -47,17 +51,17 @@ typedef struct _GetPortAttributesByWWN_OUT {
 
 ## Members
 
-        
-            `HBAStatus`
 
-            Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
-        
-            `PortAttributes`
+`HBAStatus`
 
-            Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that holds the port attributes to be reported.
+Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the GetPortAttributesByWWN_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`PortAttributes`
+
+Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that holds the port attributes to be reported.
+
+## Remarks
+The WMI tool suite generates a declaration of the GetPortAttributesByWWN_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct _GetPortAttributesByWWN_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554965">GetPortAttributesByWWN</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-<dt>
 <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554965">GetPortAttributesByWWN</a>
+
  
 
  

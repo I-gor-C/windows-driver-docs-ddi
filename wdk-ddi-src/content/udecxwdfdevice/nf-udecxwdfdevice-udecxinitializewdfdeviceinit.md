@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6FF62F6B-D83D-45DB-BE83-7A6D61A6AC92
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxInitializeWdfDeviceInit
+ms.keywords : udecxwdfdevice/UdecxInitializeWdfDeviceInit, UdecxInitializeWdfDeviceInit, buses.udecxinitializewdfdeviceinit, UdecxInitializeWdfDeviceInit function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : UdecxInitializeWdfDeviceInit
-req.alt-loc : Udecxstub.lib,Udecxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Udecxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION
 req.product : Windows 10 or later.
 ---
@@ -51,7 +55,7 @@ FORCEINLINE NTSTATUS UdecxInitializeWdfDeviceInit(
 
 `WdfDeviceInit`
 
-
+TBD
 
 
 ## Return Value
@@ -76,20 +80,14 @@ The client driver for the emulated host controller device calls this method in i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
+
  
 
  

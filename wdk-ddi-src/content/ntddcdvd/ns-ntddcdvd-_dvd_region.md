@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a2e31a1a-59e4-4a83-b866-944ef1693f65
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DVD_REGION, *PDVD_REGION, DVD_REGION
+ms.keywords : "*PDVD_REGION, DVD_REGION structure [Storage Devices], ntddcdvd/DVD_REGION, _DVD_REGION, DVD_REGION, storage.dvd_region, PDVD_REGION structure pointer [Storage Devices], PDVD_REGION, ntddcdvd/PDVD_REGION, structs-DVD_b1569a34-c55e-482b-b87e-30becd20e2c1.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_REGION
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDVD_REGION, DVD_REGION"
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DVD_REGION {
 
 ## Members
 
-        
-            `CopySystem`
 
-            Indicates the copyright protection type. For more information about copyright protection types, see the <i>SCSI Multimedia Commands - 3</i> (MMC-3) specification.
-        
-            `RegionData`
+`CopySystem`
 
-            Indicates the region code of the currently mounted DVD media. This is an eight-bit bitmask, with one bit for each DVD region. A value of 0x00 means that no region is specified.
-        
-            `ResetCount`
+Indicates the copyright protection type. For more information about copyright protection types, see the <i>SCSI Multimedia Commands - 3</i> (MMC-3) specification.
 
-            Indicates the remaining number of times the DVD device's region code can be changed by the user. This member can hold a value between 0 and 7.
-        
-            `SystemRegion`
+`RegionData`
 
-            Indicates the region code of the DVD player. This is an eight-bit bitmask, with one bit for each system region. A value of 0x00 means that no region is specified.
+Indicates the region code of the currently mounted DVD media. This is an eight-bit bitmask, with one bit for each DVD region. A value of 0x00 means that no region is specified.
+
+`ResetCount`
+
+Indicates the remaining number of times the DVD device's region code can be changed by the user. This member can hold a value between 0 and 7.
+
+`SystemRegion`
+
+Indicates the region code of the DVD player. This is an eight-bit bitmask, with one bit for each system region. A value of 0x00 means that no region is specified.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _DVD_REGION {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_get_region.md">IOCTL_DVD_GET_REGION</a>
-</dt>
-</dl>
+
  
 
  

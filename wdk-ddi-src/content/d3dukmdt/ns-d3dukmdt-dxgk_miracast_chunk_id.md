@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4D350666-B103-4421-A25A-22A7BF41558E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MIRACAST_CHUNK_ID, DXGK_MIRACAST_CHUNK_ID
+ms.keywords : DXGK_MIRACAST_CHUNK_ID, display.dxgk_miracast_chunk_id, DXGK_MIRACAST_CHUNK_ID union [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MIRACAST_CHUNK_ID
-req.alt-loc : D3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MIRACAST_CHUNK_ID
 ---
 
@@ -50,10 +54,10 @@ typedef union {
 
 ## Members
 
-        
-            `Value`
 
-            Holds a 64-bit value that identifies the encode chunk.
+`Value`
+
+Holds a 64-bit value that identifies the encode chunk.
 
 
 ## Requirements

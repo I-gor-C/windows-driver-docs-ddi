@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0ef0d242-4ed6-4c48-85b8-0fc87d3fe39b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CM_FLOPPY_DEVICE_DATA, *PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA
+ms.keywords : _CM_FLOPPY_DEVICE_DATA, kernel.cm_floppy_device_data, *PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA, wdm/PCM_FLOPPY_DEVICE_DATA, PCM_FLOPPY_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture], PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA structure [Kernel-Mode Driver Architecture], kstruct_a_7ec8badb-4d88-479e-b0dc-ce88660b8449.xml, wdm/CM_FLOPPY_DEVICE_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CM_FLOPPY_DEVICE_DATA
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA"
 req.product : Windows 10 or later.
 ---
@@ -64,78 +68,78 @@ typedef struct _CM_FLOPPY_DEVICE_DATA {
 
 ## Members
 
-        
-            `DataTransferLength`
 
-            The data transfer length, in bytes, not including the synchronization field.
-        
-            `DataTransferRate`
+`DataTransferLength`
 
-            The value written to the Datarate register before accessing the media.
-        
-            `FormatFillCharacter`
+The data transfer length, in bytes, not including the synchronization field.
 
-            The format fill character.
-        
-            `FormatGapLength`
+`DataTransferRate`
 
-            The format gap length, in bytes.
-        
-            `HeadLoadTime`
+The value written to the Datarate register before accessing the media.
 
-            The head load time in milliseconds.
-        
-            `HeadSettleTime`
+`FormatFillCharacter`
 
-            The head settle time in milliseconds.
-        
-            `MaxDensity`
+The format fill character.
 
-            The maximum density.
-        
-            `MaximumTrackValue`
+`FormatGapLength`
 
-            The maximum track number on the media. Track numbers are zero-based values.
-        
-            `MotorOffTime`
+The format gap length, in bytes.
 
-            The motor off time in seconds.
-        
-            `MotorSettleTime`
+`HeadLoadTime`
 
-            The motor settle time in milliseconds.
-        
-            `MountDensity`
+The head load time in milliseconds.
 
-            The mount density.
-        
-            `ReadWriteGapLength`
+`HeadSettleTime`
 
-            The read/write gap length, in bytes.
-        
-            `Revision`
+The head settle time in milliseconds.
 
-            The revision of this structure.
-        
-            `SectorLengthCode`
+`MaxDensity`
 
-            Indicates the sector size as an exponent in the formula ((2**<i>code</i>) * 128).
-        
-            `SectorPerTrack`
+The maximum density.
 
-            The number of sectors per track.
-        
-            `Size`
+`MaximumTrackValue`
 
-            The floppy disk density size.
-        
-            `StepRateHeadUnloadTime`
+The maximum track number on the media. Track numbers are zero-based values.
 
-            The step rate head unload time in milliseconds.
-        
-            `Version`
+`MotorOffTime`
 
-            The version number of this structure.
+The motor off time in seconds.
+
+`MotorSettleTime`
+
+The motor settle time in milliseconds.
+
+`MountDensity`
+
+The mount density.
+
+`ReadWriteGapLength`
+
+The read/write gap length, in bytes.
+
+`Revision`
+
+The revision of this structure.
+
+`SectorLengthCode`
+
+Indicates the sector size as an exponent in the formula ((2**<i>code</i>) * 128).
+
+`SectorPerTrack`
+
+The number of sectors per track.
+
+`Size`
+
+The floppy disk density size.
+
+`StepRateHeadUnloadTime`
+
+The step rate head unload time in milliseconds.
+
+`Version`
+
+The version number of this structure.
 
 
 ## Requirements
@@ -146,19 +150,14 @@ typedef struct _CM_FLOPPY_DEVICE_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
+
 <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

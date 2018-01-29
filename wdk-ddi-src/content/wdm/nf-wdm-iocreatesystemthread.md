@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B2879353-3917-46AA-89CC-A20F0BB78BC4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateSystemThread
+ms.keywords : IoCreateSystemThread, kernel.iocreatesystemthread, wdm/IoCreateSystemThread, IoCreateSystemThread routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCreateSystemThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -92,15 +96,45 @@ A context pointer that is passed as the <i>StartContext</i> parameter to the <a 
 ## Return Value
 
 <b>IoCreateSystemThread</b> returns STATUS_SUCCESS if the new thread was successfully created. Possible return values include the following error status codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl><i>ProcessHandle</i> is not a valid process handle.
+</dl>
+</td>
+<td width="60%">
+<i>ProcessHandle</i> is not a valid process handle.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PROCESS_IS_TERMINATING</b></dt>
-</dl>The process specified by <i>ProcessHandle</i> is terminating.
+</dl>
+</td>
+<td width="60%">
+The process specified by <i>ProcessHandle</i> is terminating.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Insufficient system resources are available to perform the requested operation.
+</dl>
+</td>
+<td width="60%">
+Insufficient system resources are available to perform the requested operation.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -112,8 +146,18 @@ Typically, the driver calls <b>IoCreateSystemThread</b> either when it starts th
 If the <i>ProcessHandle</i> parameter is <b>NULL</b>, the created thread is associated with the system process. Such a thread continues running until either the system is shut down or the thread exits.
 
 Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE attribute for the <i>ObjectAttributes</i> parameter of <b>IoCreateSystemThread</b>. This attribute restricts the use of the handle returned by <b>IoCreateSystemThread</b> to processes running in kernel mode. Otherwise, the thread handle could be accessed by the process in whose context the driver is running. Drivers can call the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro to set the OBJ_KERNEL_HANDLE attribute in the object attributes, as shown in the following code example.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>OBJECT_ATTRIBUTES ObjectAttributes;
 
-<b>IoCreateSystemThread</b> is similar to the <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a> routine, but has an additional parameter, <i>IoObject</i>, which is a pointer to the caller's driver object or device object. <b>IoCreateSystemThread</b> uses this parameter to ensure that the driver cannot unload while the created thread exists. Before scheduling <i>StartRoutine</i> to run in this thread, <b>IoCreateSystemThread</b> takes a counted reference to the <i>IoObject</i> object. The I/O manager releases this reference after the created thread exits. Thus, this object persists for the lifetime of the created thread.
+InitializeObjectAttributes(&amp;ObjectAttributes, NULL, OBJ_KERNEL_HANDLE, NULL, NULL);</pre>
+</td>
+</tr>
+</table></span></div><b>IoCreateSystemThread</b> is similar to the <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a> routine, but has an additional parameter, <i>IoObject</i>, which is a pointer to the caller's driver object or device object. <b>IoCreateSystemThread</b> uses this parameter to ensure that the driver cannot unload while the created thread exists. Before scheduling <i>StartRoutine</i> to run in this thread, <b>IoCreateSystemThread</b> takes a counted reference to the <i>IoObject</i> object. The I/O manager releases this reference after the created thread exits. Thus, this object persists for the lifetime of the created thread.
 
 In contrast to a system thread that is created by the <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a> routine, a thread created by <b>IoCreateSystemThread</b> does not call the <a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a> routine to terminate itself. Instead, the I/O manager calls <b>PsTerminateSystemThread</b> on behalf of the created thread when the thread exits.
 
@@ -131,35 +175,24 @@ In contrast to a system thread that is created by the <a href="..\wdm\nf-wdm-psc
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-</dt>
-<dt>
 <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564627">ThreadStart</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
+<a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564627">ThreadStart</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
+
  
 
  

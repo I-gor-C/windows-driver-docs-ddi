@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3d8b3b45-90d9-4e64-a52d-253c9cb86588
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_MEMORY, VIDEO_MEMORY, *PVIDEO_MEMORY
+ms.keywords : VIDEO_MEMORY, Video_Structs_85973586-1583-46cb-93a7-c8d37ba4ef5f.xml, PVIDEO_MEMORY structure pointer [Display Devices], PVIDEO_MEMORY, _VIDEO_MEMORY, VIDEO_MEMORY structure [Display Devices], *PVIDEO_MEMORY, ntddvdeo/VIDEO_MEMORY, display.video_memory, ntddvdeo/PVIDEO_MEMORY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_MEMORY
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : VIDEO_MEMORY, *PVIDEO_MEMORY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVIDEO_MEMORY, VIDEO_MEMORY"
 ---
 
 # _VIDEO_MEMORY structure
@@ -46,13 +50,13 @@ typedef struct _VIDEO_MEMORY {
 
 ## Members
 
-        
-            `RequestedVirtualAddress`
 
-            Pointer to the requested virtual address for either the video memory, or the base of video memory, depending on whether <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> or <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a> is using this structure.
+`RequestedVirtualAddress`
 
-    ## Remarks
-        VIDEO_MEMORY is used as an input structure to two IOCTLs: <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>, and <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>.
+Pointer to the requested virtual address for either the video memory, or the base of video memory, depending on whether <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> or <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a> is using this structure.
+
+## Remarks
+VIDEO_MEMORY is used as an input structure to two IOCTLs: <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>, and <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>.
 
 When VIDEO_MEMORY is used with IOCTL_VIDEO_MAP_VIDEO_MEMORY, <b>RequestedVirtualAddress</b> points to the requested virtual address for the video memory. In this case, the value is optional. If zero is specified, the operating system will choose an appropriate location.
 
@@ -68,19 +72,14 @@ For structures used in mapping into user-mode video memory, see <a href="..\ntdd
 | **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
-</dt>
-<dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>
+
  
 
  

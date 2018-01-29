@@ -7,8 +7,8 @@ old-location : netvista\rilopenuicclogicalchannelinfo.htm
 old-project : netvista
 ms.assetid : 5001f623-5b53-4ae7-9b5b-dc3bd5bdcc70
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO
+ms.date : 1/18/2018
+ms.keywords : "*LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO structure [Network Drivers Starting with Windows Vista], netvista.rilopenuicclogicalchannelinfo, ntddrilapitypes/RILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILOPENUICCLOGICALCHANNELINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO
 ---
 
 # RILOPENUICCLOGICALCHANNELINFO structure
@@ -50,26 +54,26 @@ typedef struct _RILOPENUICCLOGICALCHANNELINFO {
 
 ## Members
 
-        
-            `bSelectResponse`
 
-            
-        
-            `cbSize`
+`bSelectResponse`
 
-            
-        
-            `dwChannelId`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwSelectResponseLength`
+`cbSize`
 
-            
+
+
+`dwChannelId`
+
+
+
+`dwParams`
+
+
+
+`dwSelectResponseLength`
+
+
 
 
 ## Requirements

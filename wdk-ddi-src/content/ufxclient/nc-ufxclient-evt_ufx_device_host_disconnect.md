@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 01E66957-BB9B-4C35-920F-2DC0F01123E5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+ms.keywords : buses.evt_ufx_device_host_disconnect, EvtUfxDeviceHostDisconnect callback function [Buses], EvtUfxDeviceHostDisconnect, EVT_UFX_DEVICE_HOST_DISCONNECT, EVT_UFX_DEVICE_HOST_DISCONNECT, ufxclient/EvtUfxDeviceHostDisconnect, PFN_UFX_DEVICE_HOST_DISCONNECT callback function pointer [Buses], PFN_UFX_DEVICE_HOST_DISCONNECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PFN_UFX_DEVICE_HOST_DISCONNECT
-req.alt-loc : Ufxclient.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -80,14 +84,10 @@ The client driver indicates completion of this event by calling the <a href="..\
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
-</dt>
-<dt>
+
 <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
-</dt>
-</dl>
+
  
 
  

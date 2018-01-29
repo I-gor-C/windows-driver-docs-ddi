@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fb85aa34-5983-405b-85d3-7ebc4be49c51
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetDiskDeviceObject
+ms.keywords : FltGetDiskDeviceObject, ifsk.fltgetdiskdeviceobject, FltApiRef_e_to_o_830212f4-ac53-41e1-8f66-48673bdaf9e2.xml, fltkernel/FltGetDiskDeviceObject, FltGetDiskDeviceObject routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetDiskDeviceObject
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fltmgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -61,9 +65,23 @@ Pointer to a caller-allocated variable that receives the device object pointer. 
 ## Return Value
 
 <b>FltGetDiskDeviceObject</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_NO_DEVICE_OBJECT</b></dt>
-</dl>The requested device object does not exist for the given volume. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The requested device object does not exist for the given volume. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -93,17 +111,12 @@ For more information about volume device objects, see <a href="https://msdn.micr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetdeviceobject.md">FltGetDeviceObject</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumefromdeviceobject.md">FltGetVolumeFromDeviceObject</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetdeviceobject.md">FltGetDeviceObject</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumefromdeviceobject.md">FltGetVolumeFromDeviceObject</a>
+
  
 
  

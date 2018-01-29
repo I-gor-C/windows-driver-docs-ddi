@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : B8965A1A-4EF9-4FCA-8ED0-60F720331AC4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSINTERFACE_FILEIO, KSINTERFACE_FILEIO
+ms.keywords : ks/KSINTERFACE_FILEIO, stream.ksinterface_fileio, KSINTERFACE_FILEIO, KSINTERFACE_FILEIO_STREAMING, KSINTERFACE_FILEIO enumeration [Streaming Media Devices], ks/KSINTERFACE_FILEIO_STREAMING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSINTERFACE_FILEIO
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSINTERFACE_FILEIO
 ---
 

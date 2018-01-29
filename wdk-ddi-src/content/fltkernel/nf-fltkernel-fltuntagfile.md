@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 728a9879-681b-4244-b931-7945a05e3d40
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltUntagFile
+ms.keywords : FltApiRef_p_to_z_c1e51b69-c780-46bd-b3f0-b78cdc9c3b3f.xml, ifsk.fltuntagfile, FltUntagFile function [Installable File System Drivers], FltUntagFile, fltkernel/FltUntagFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltUntagFile
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : Fltmgr.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -71,12 +75,34 @@ Globally unique identifier (GUID) that uniquely identifies the type of reparse p
 ## Return Value
 
 <b>FltUntagFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_IO_REPARSE_TAG_MISMATCH</b></dt>
-</dl>The reparse tag specified by the caller did not match the tag of the reparse point to be deleted. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The reparse tag specified by the caller did not match the tag of the reparse point to be deleted. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_REPARSE_ATTRIBUTE_CONFLICT</b></dt>
-</dl>The reparse GUID specified by the caller did not match the GUID of the reparse point to be deleted. This is an error code.
+</dl>
+</td>
+<td width="60%">
+The reparse GUID specified by the caller did not match the GUID of the reparse point to be deleted. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,29 +126,20 @@ For more information about reparse points, see the Microsoft Windows SDK documen
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_tag_data_buffer.md">FLT_TAG_DATA_BUFFER</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-isreparsetagmicrosoft.md">IsReparseTagMicrosoft</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-isreparsetagnamesurrogate.md">IsReparseTagNameSurrogate</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_tag_data_buffer.md">FLT_TAG_DATA_BUFFER</a>
+
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
+
+<a href="..\ntifs\nf-ntifs-isreparsetagmicrosoft.md">IsReparseTagMicrosoft</a>
+
  
 
  

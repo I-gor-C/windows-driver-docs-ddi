@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 32a823e2-324a-45f3-82ad-e9f99749dc85
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_COMPARISON_FUNC, D3D10_DDI_COMPARISON_FUNC
+ms.keywords : D3D10_DDI_COMPARISON_ALWAYS, d3d10umddi/D3D10_DDI_COMPARISON_GREATER, d3d10umddi/D3D10_DDI_COMPARISON_LESS_EQUAL, D3D10_DDI_COMPARISON_FUNC enumeration [Display Devices], D3D10_DDI_COMPARISON_NOT_EQUAL, d3d10umddi/D3D10_DDI_COMPARISON_LESS, d3d10umddi/D3D10_DDI_COMPARISON_ALWAYS, d3d10umddi/D3D10_DDI_COMPARISON_NOT_EQUAL, d3d10umddi/D3D10_DDI_COMPARISON_NEVER, d3d10umddi/D3D10_DDI_COMPARISON_FUNC, D3D10_DDI_COMPARISON_NEVER, d3d10umddi/D3D10_DDI_COMPARISON_EQUAL, display.d3d10_ddi_comparison_func, D3D10_DDI_COMPARISON_LESS, D3D10_DDI_COMPARISON_LESS_EQUAL, D3D10_DDI_COMPARISON_GREATER_EQUAL, D3D10_DDI_COMPARISON_GREATER, d3d10umddi/D3D10_DDI_COMPARISON_GREATER_EQUAL, D3D10_DDI_COMPARISON_EQUAL, D3D10_DDI_COMPARISON_FUNC, UMDisplayDriver_Dx10param_Structs_f2be7dda-a0b6-4e03-8115-0ee00ec9dad2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_DDI_COMPARISON_FUNC
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_DDI_COMPARISON_FUNC
 ---
 
@@ -107,14 +111,10 @@ typedef enum D3D10_DDI_COMPARISON_FUNC {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_depth_stencil_desc.md">D3D10_DDI_DEPTH_STENCIL_DESC</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_depth_stencilop_desc.md">D3D10_DDI_DEPTH_STENCILOP_DESC</a>
-</dt>
-</dl>
+
  
 
  

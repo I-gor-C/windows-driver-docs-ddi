@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6a4dfb93-4044-4a7a-a993-38c91f84cae2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_ScsiReportLUNsV2
+ms.keywords : HBA_ScsiReportLUNsV2 routine [Storage Devices], storage.hba_scsireportlunsv2, hbaapi/HBA_ScsiReportLUNsV2, fibreHBA_rtns_ca5de2ac-67e1-49e0-9397-c5e987854154.xml, HBA_ScsiReportLUNsV2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_ScsiReportLUNsV2
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -57,7 +61,7 @@ HBA_STATUS HBA_API HBA_ScsiReportLUNsV2(
 
 `Hbahandle`
 
-
+TBD
 
 `HbaPortWWN`
 
@@ -65,7 +69,7 @@ Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA po
 
 `DiscoveredPortWWN`
 
-
+TBD
 
 `pRespBuffer`
 
@@ -91,24 +95,78 @@ On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On
 ## Return Value
 
 The <b>HBA_ScsiReportLUNsV2</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_ScsiReportLUNsV2</b> returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
-</dl>Returned if the complete payload of a reply to the SCSI report LUNs command was successfully retrieved. 
+</dl>
+</td>
+<td width="60%">
+Returned if the complete payload of a reply to the SCSI report LUNs command was successfully retrieved. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
-</dl>Returned if the HBA referenced by <i>handle</i> does not contain a port with a name that matches <i>HbaPortWWN</i>. 
+</dl>
+</td>
+<td width="60%">
+Returned if the HBA referenced by <i>handle</i> does not contain a port with a name that matches <i>HbaPortWWN</i>. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_NOT_A_TARGET</b></dt>
-</dl>Returned if the specified remote port referenced by <i>discoveredPortWWN </i>does not have SCSI target functionality.
+</dl>
+</td>
+<td width="60%">
+Returned if the specified remote port referenced by <i>discoveredPortWWN </i>does not have SCSI target functionality.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_TARGET_BUSY</b></dt>
-</dl>Returned if the SCSI report LUNs command could not be delivered without causing a SCSI overlapped command condition.
+</dl>
+</td>
+<td width="60%">
+Returned if the SCSI report LUNs command could not be delivered without causing a SCSI overlapped command condition.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_SCSI_CHECK_CONDITION</b></dt>
-</dl>Returned if a SCSI check condition occurred and SCSI send data is provided in the buffer at <i>pSenseBuffer</i>.
+</dl>
+</td>
+<td width="60%">
+Returned if a SCSI check condition occurred and SCSI send data is provided in the buffer at <i>pSenseBuffer</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
-</dl>Returned if an unspecified error occurred that prevented the execution of the SCSI report LUNs command.
+</dl>
+</td>
+<td width="60%">
+Returned if an unspecified error occurred that prevented the execution of the SCSI report LUNs command. 
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -125,14 +183,10 @@ The <b>HBA_ScsiReportLUNsV2</b> routine returns a value of type <a href="https:/
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : dc2c907c-1e3b-418c-85f8-9902dc83f7ab
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::SetInformation, SetInformation
+ms.keywords : IWDFIoRequest::SetInformation, SetInformation, SetInformation method, IWDFIoRequest interface, wudfddi/IWDFIoRequest::SetInformation, IWDFIoRequest, wdf.iwdfiorequest_setinformation, UMDFRequestObjectRef_6b29fa48-7024-44de-ab4f-68907515483a.xml, IWDFIoRequest interface, SetInformation method, SetInformation method, umdf.iwdfiorequest_setinformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.SetInformation
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -60,8 +64,6 @@ A ULONG_PTR value that specifies the size of information to set for the request.
 
 None
 
-The following code example sets the size of a request's information.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,11 +79,8 @@ The following code example sets the size of a request's information.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-</dl>
+
  
 
  

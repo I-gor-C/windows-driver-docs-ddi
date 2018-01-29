@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3A991D49-B873-4C03-8A5B-D91EB5E63192
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR, *PKSAUDIOMODULE_DESCRIPTOR
+ms.keywords : PKSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR, PKSAUDIOMODULE_DESCRIPTOR structure pointer [Audio Devices], *PKSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR structure [Audio Devices], ksmedia/PKSAUDIOMODULE_DESCRIPTOR, audio.ksaudiomodule_descriptor, ksmedia/KSAUDIOMODULE_DESCRIPTOR, _KSAUDIOMODULE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1703
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAUDIOMODULE_DESCRIPTOR
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSAUDIOMODULE_DESCRIPTOR, *PKSAUDIOMODULE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR"
 ---
 
 # _KSAUDIOMODULE_DESCRIPTOR structure
@@ -50,25 +54,29 @@ typedef struct _KSAUDIOMODULE_DESCRIPTOR {
 
 ## Members
 
-        
-            `ClassId`
 
-            The ClassId of the audio module. The ClassId is an identifier that establishes what type of module this is. The value and mapping is established by the ISV and IHV.
-        
-            `InstanceId`
+`ClassId`
 
-            The InstanceId of the audio module.  The InstanceId is a unique identifier that distinguishes this instance of a module from another instance of a module.
-        
-            `VersionMajor`
+The ClassId of the audio module. The ClassId is an identifier that establishes what type of module this is. The value and mapping is established by the ISV and IHV.
 
-            The major version of the audio module. Usage is defined by the implementer.
-        
-            `VersionMinor`
+`InstanceId`
 
-            The minor version of the audio module.  Usage is defined by the implementer.
+The InstanceId of the audio module.  The InstanceId is a unique identifier that distinguishes this instance of a module from another instance of a module.
 
-    ## Remarks
-        For more information about audio modules, see  <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>.
+`Name`
+
+
+
+`VersionMajor`
+
+The major version of the audio module. Usage is defined by the implementer.
+
+`VersionMinor`
+
+The minor version of the audio module.  Usage is defined by the implementer.
+
+## Remarks
+For more information about audio modules, see  <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,13 +86,10 @@ typedef struct _KSAUDIOMODULE_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/EAD613AA-005B-4751-B60E-212853CA40B4">KSPROPERTY_AUDIOMODULE_DESCRIPTORS</a>
-</dt>
-</dl>
+
  
 
  

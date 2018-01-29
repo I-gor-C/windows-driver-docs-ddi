@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 2e6476c7-d096-4756-bebb-56fe559dce6d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER
+ms.keywords : ntddk/PWHEA_ERROR_RECORD_HEADER, _WHEA_ERROR_RECORD_HEADER, PWHEA_ERROR_RECORD_HEADER structure pointer [WHEA Drivers and Applications], WHEA_ERROR_RECORD_HEADER structure [WHEA Drivers and Applications], *PWHEA_ERROR_RECORD_HEADER, ntddk/WHEA_ERROR_RECORD_HEADER, PWHEA_ERROR_RECORD_HEADER, whearef_25871c17-6a61-422d-ba94-d63b633c7f5a.xml, whea.whea_error_record_header, WHEA_ERROR_RECORD_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_RECORD_HEADER
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER
 ---
 
 # _WHEA_ERROR_RECORD_HEADER structure
@@ -61,15 +65,14 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 
 ## Members
 
-        
-            `CreatorId`
 
-            A GUID that identifies the entity that created the error record. When the Windows kernel creates an error record, it sets this member to WHEA_RECORD_CREATOR_GUID.
-        
-            `Flags`
+`CreatorId`
 
-            A WHEA_ERROR_RECORD_HEADER_FLAGS union that describes the error condition. The WHEA_ERROR_RECORD_HEADER_FLAGS union is defined as follows:
+A GUID that identifies the entity that created the error record. When the Windows kernel creates an error record, it sets this member to WHEA_RECORD_CREATOR_GUID.
 
+`Flags`
+
+A WHEA_ERROR_RECORD_HEADER_FLAGS union that describes the error condition. The WHEA_ERROR_RECORD_HEADER_FLAGS union is defined as follows:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -88,65 +91,69 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 </td>
 </tr>
 </table></span></div>
-        
-            `Length`
 
-            The length, in bytes, of the error record.
-        
-            `NotifyType`
+`Length`
 
-            A GUID that identifies the notification mechanism by which an error condition is reported to the operating system. The following are the GUIDs for the standard notification types:
-        
-            `PartitionId`
+The length, in bytes, of the error record.
 
-            A GUID that identifies the partition on which the hardware error occurred. This member contains valid data only if the <b>ValidBits.PartitionId</b> bit is set.
-        
-            `PersistenceInfo`
+`NotifyType`
 
-            A <a href="..\ntddk\ns-ntddk-_whea_persistence_info.md">WHEA_PERSISTENCE_INFO</a> union that is used by the error record persistence interface.
-        
-            `PlatformId`
+A GUID that identifies the notification mechanism by which an error condition is reported to the operating system. The following are the GUIDs for the standard notification types:
 
-            A GUID that identifies the platform on which the hardware error occurred. This member contains valid data only if the <b>ValidBits.PlatformId</b> bit is set.
-        
-            `RecordId`
 
-            The identifier of the error record. This identifier is unique only on the system that created the error record.
-        
-            `Reserved`
 
-            Reserved for system use.
-        
-            `Revision`
+For error notification types that do not conform to one of the standard types in the previous list, a platform-specific GUID can be defined to identify the notification mechanism. If the notification type does not correspond to any of the standard notification types or any platform-specific notification types, this member is set to GENERIC_NOTIFY_TYPE_GUID.
 
-            A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_HEADER structure.
-        
-            `SectionCount`
+`PartitionId`
 
-            The number of sections of error information that are contained in the error record.
-        
-            `Severity`
+A GUID that identifies the partition on which the hardware error occurred. This member contains valid data only if the <b>ValidBits.PartitionId</b> bit is set.
 
-            A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition described by the error record.
-        
-            `Signature`
+`PersistenceInfo`
 
-            The signature of the error record. This member contains the value 'REPC'.
-        
-            `SignatureEnd`
+A <a href="..\ntddk\ns-ntddk-_whea_persistence_info.md">WHEA_PERSISTENCE_INFO</a> union that is used by the error record persistence interface.
 
-            The end of the signature of the error record. This member contains the value 0xFFFFFFFF.
-        
-            `Timestamp`
+`PlatformId`
 
-            A <a href="..\ntddk\ns-ntddk-_whea_timestamp.md">WHEA_TIMESTAMP</a> union that indicates the time that the error was reported to the operating system. This member contains valid data only if the <b>ValidBits.Timestamp</b> bit is set.
-        
-            `ValidBits`
+A GUID that identifies the platform on which the hardware error occurred. This member contains valid data only if the <b>ValidBits.PlatformId</b> bit is set.
 
-            A <a href="..\ntddk\ns-ntddk-_whea_error_record_header_validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a> union that specifies which members of the WHEA_ERROR_RECORD_HEADER structure contain valid data.
+`RecordId`
 
-    ## Remarks
-        A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.
+The identifier of the error record. This identifier is unique only on the system that created the error record.
+
+`Reserved`
+
+Reserved for system use.
+
+`Revision`
+
+A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_HEADER structure.
+
+`SectionCount`
+
+The number of sections of error information that are contained in the error record.
+
+`Severity`
+
+A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition described by the error record.
+
+`Signature`
+
+The signature of the error record. This member contains the value 'REPC'.
+
+`SignatureEnd`
+
+The end of the signature of the error record. This member contains the value 0xFFFFFFFF.
+
+`Timestamp`
+
+A <a href="..\ntddk\ns-ntddk-_whea_timestamp.md">WHEA_TIMESTAMP</a> union that indicates the time that the error was reported to the operating system. This member contains valid data only if the <b>ValidBits.Timestamp</b> bit is set.
+
+`ValidBits`
+
+A <a href="..\ntddk\ns-ntddk-_whea_error_record_header_validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a> union that specifies which members of the WHEA_ERROR_RECORD_HEADER structure contain valid data.
+
+## Remarks
+A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -156,28 +163,20 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_record_header_validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a>
-</dt>
-<dt>
-<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_persistence_info.md">WHEA_PERSISTENCE_INFO</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
+
 <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
+
 <a href="..\ntddk\ns-ntddk-_whea_timestamp.md">WHEA_TIMESTAMP</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_whea_persistence_info.md">WHEA_PERSISTENCE_INFO</a>
+
  
 
  

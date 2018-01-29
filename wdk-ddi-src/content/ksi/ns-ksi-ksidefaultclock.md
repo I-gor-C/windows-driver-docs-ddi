@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 08509C28-DDD4-4060-A16A-857A6BF6F6E1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
+ms.keywords : PKSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, ksi/KSIDEFAULTCLOCK, stream.ksidefaultclock, PKSIDEFAULTCLOCK structure pointer [Streaming Media Devices], ksi/PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSIDEFAULTCLOCK
-req.alt-loc : Ksi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ---
 
@@ -67,94 +71,94 @@ typedef struct {
 
 ## Members
 
-        
-            `CancelTimer`
 
-            
-        
-            `Context`
+`CancelTimer`
 
-            
-        
-            `CorrelatedTime`
 
-            
-        
-            `EventQueue`
 
-            
-        
-            `EventQueueLock`
+`Context`
 
-            
-        
-            `ExternalTimeReferenceCount`
 
-            
-        
-            `ExternalTimeValid`
 
-            
-        
-            `FreeEvent`
+`CorrelatedTime`
 
-            
-        
-            `Frequency`
 
-            
-        
-            `LastDueTime`
 
-            
-        
-            `LastRunningTime`
+`EventQueue`
 
-            
-        
-            `LastStreamTime`
 
-            
-        
-            `QueueDpc`
 
-            
-        
-            `QueueTimer`
+`EventQueueLock`
 
-            
-        
-            `ReferenceCount`
 
-            
-        
-            `Resolution`
 
-            
-        
-            `RunningTimeDelta`
+`ExternalTimeReferenceCount`
 
-            
-        
-            `SetTimer`
 
-            
-        
-            `State`
 
-            
-        
-            `SuspendDelta`
+`ExternalTimeValid`
 
-            
-        
-            `SuspendTime`
 
-            
-        
-            `TimeAccessLock`
 
-            
+`FreeEvent`
+
+
+
+`Frequency`
+
+
+
+`LastDueTime`
+
+
+
+`LastRunningTime`
+
+
+
+`LastStreamTime`
+
+
+
+`QueueDpc`
+
+
+
+`QueueTimer`
+
+
+
+`ReferenceCount`
+
+
+
+`Resolution`
+
+
+
+`RunningTimeDelta`
+
+
+
+`SetTimer`
+
+
+
+`State`
+
+
+
+`SuspendDelta`
+
+
+
+`SuspendTime`
+
+
+
+`TimeAccessLock`
+
+
 
 
 ## Requirements

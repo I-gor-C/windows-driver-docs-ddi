@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cc6cbda8-4056-41e7-98f9-927a99e66081
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
+ms.keywords : mountdev/PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID structure [Storage Devices], _MOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID structure pointer [Storage Devices], MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, mountdev/MOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID, structs-mntmgr_424fff73-7b72-4068-b25b-00225f69b159.xml, storage.mountdev_unique_id
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MOUNTDEV_UNIQUE_ID
-req.alt-loc : mountdev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
 ---
 
 # _MOUNTDEV_UNIQUE_ID structure
@@ -47,17 +51,17 @@ typedef struct _MOUNTDEV_UNIQUE_ID {
 
 ## Members
 
-        
-            `UniqueId`
 
-            Contains the unique volume ID as an array of bytes.
-        
-            `UniqueIdLength`
+`UniqueId`
 
-            Contains the length of the unique volume ID.
+Contains the unique volume ID as an array of bytes.
 
-    ## Remarks
-        For a discussion of unique volume IDs and how the mount manager uses them, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>.
+`UniqueIdLength`
+
+Contains the length of the unique volume ID.
+
+## Remarks
+For a discussion of unique volume IDs and how the mount manager uses them, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _MOUNTDEV_UNIQUE_ID {
 | **Minimum UMDF version** |  |
 | **Header** | mountdev.h (include Mountmgr.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
-</dt>
-</dl>
+
  
 
  

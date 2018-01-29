@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1F43EEDC-5DB4-4ABE-BBC6-A4A51FCAF0B6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializeTimer
+ms.keywords : StorPortInitializeTimer routine [Storage Devices], storage.storportinitializetimer, StorPortInitializeTimer, storport/StorPortInitializeTimer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8 and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortInitializeTimer
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -62,21 +66,67 @@ A pointer to an opaque buffer that holds context information for the timer.
 ## Return Value
 
 The <b>StorPortInitializeTimer</b> routine returns one of these status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
-</dl>Current IRQL &gt; DISPATCH_LEVEL.
+</dl>
+</td>
+<td width="60%">
+Current IRQL &gt; DISPATCH_LEVEL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>Either <i>HwDeviceExtension</i> or <i>TimerHandle</i> is NULL.
+</dl>
+</td>
+<td width="60%">
+Either <i>HwDeviceExtension</i> or <i>TimerHandle</i> is NULL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl> Insufficient resources are available to initialize the timer context.
+</dl>
+</td>
+<td width="60%">
+ Insufficient resources are available to initialize the timer context.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The timer context was successfully initialized.
+</dl>
+</td>
+<td width="60%">
+The timer context was successfully initialized.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl>The number of supported timers is exceeded.
+</dl>
+</td>
+<td width="60%">
+The number of supported timers is exceeded.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,20 +153,14 @@ Starting with Windows 8, there is no maximum timers limitation.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportfreetimer.md">StorPortFreeTimer</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
-</dt>
-<dt>
+
 <a href="..\storport\nf-storport-storportrequesttimer.md">StorPortRequestTimer</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
+
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4792107C-BAAA-48B5-AC9A-829C05795303
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_GETMULTIPLANEOVERLAYCAPS, DXGKARG_GETMULTIPLANEOVERLAYCAPS, *IN_OUT_PDXGKARG_GETMULTIPLANEOVERLAYCAPS
+ms.keywords : _DXGKARG_GETMULTIPLANEOVERLAYCAPS, DXGKARG_GETMULTIPLANEOVERLAYCAPS, d3dkmddi/DXGKARG_GETMULTIPLANEOVERLAYCAPS, *IN_OUT_PDXGKARG_GETMULTIPLANEOVERLAYCAPS, display.dxgkarg_getmultiplaneoverlaycaps, DXGKARG_GETMULTIPLANEOVERLAYCAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_GETMULTIPLANEOVERLAYCAPS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_GETMULTIPLANEOVERLAYCAPS
 ---
 
@@ -52,30 +56,34 @@ typedef struct _DXGKARG_GETMULTIPLANEOVERLAYCAPS {
 
 ## Members
 
-        
-            `MaxRGBPlanes`
 
-            [out] Indicates the total number of RGB planes, including the DWM’s primary, that can be supported simultaneously.
-        
-            `MaxShrinkFactor`
+`MaxPlanes`
 
-            [out] Indicates the maximum shrink factor that can be applied to a plane.
-        
-            `MaxStretchFactor`
 
-            [out] Indicates the maximum stretch factor that can be applied to a plane.
-        
-            `MaxYUVPlanes`
 
-            [out] Indicates the total number of YUV planes that can be supported simultaneously.
-        
-            `OverlayCaps`
+`MaxRGBPlanes`
 
-            [out] A DXGK_MULTIPLANEOVERLAYCAPS structure indicating the plane capabilities.
-        
-            `VidPnSourceId`
+[out] Indicates the total number of RGB planes, including the DWM’s primary, that can be supported simultaneously.
 
-            [in] Indicates the VidPn source for which we are querying multiplane overlay capabilities.
+`MaxShrinkFactor`
+
+[out] Indicates the maximum shrink factor that can be applied to a plane.
+
+`MaxStretchFactor`
+
+[out] Indicates the maximum stretch factor that can be applied to a plane.
+
+`MaxYUVPlanes`
+
+[out] Indicates the total number of YUV planes that can be supported simultaneously.
+
+`OverlayCaps`
+
+[out] A DXGK_MULTIPLANEOVERLAYCAPS structure indicating the plane capabilities.
+
+`VidPnSourceId`
+
+[in] Indicates the VidPn source for which we are querying multiplane overlay capabilities.
 
 
 ## Requirements

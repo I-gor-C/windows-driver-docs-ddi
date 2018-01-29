@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 71351CB7-1295-4797-802C-23A6B1C2C53F
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR
+ms.keywords : STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure [Storage Devices], storage.storage_device_resiliency_descriptor, ntddstor/STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR
 ---
 
@@ -53,41 +57,41 @@ typedef struct _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR {
 
 ## Members
 
-        
-            `Interleave`
 
-            Size of a stripe unit of the storage device, in bytes. This is also referred to as the stripe width or 
+`Interleave`
+
+Size of a stripe unit of the storage device, in bytes. This is also referred to as the stripe width or 
       interleave of the storage device.
-        
-            `NameOffset`
 
-            Byte offset to the null-terminated ASCII string containing the resiliency properties Name. For devices with 
+`NameOffset`
+
+Byte offset to the null-terminated ASCII string containing the resiliency properties Name. For devices with 
       no Name property, this will be zero.
-        
-            `NumberOfColumns`
 
-            Number of columns in the storage device.
-        
-            `NumberOfLogicalCopies`
+`NumberOfColumns`
 
-            Number of logical copies of data that are available.
-        
-            `NumberOfPhysicalCopies`
+Number of columns in the storage device.
 
-            Number of complete copies of data that are stored.
-        
-            `PhysicalDiskRedundancy`
+`NumberOfLogicalCopies`
 
-            Number of disks that can fail without leading to data loss.
-        
-            `Size`
+Number of logical copies of data that are available.
 
-            Specifies the total size of the data returned, in bytes. This may include data that follows this 
+`NumberOfPhysicalCopies`
+
+Number of complete copies of data that are stored.
+
+`PhysicalDiskRedundancy`
+
+Number of disks that can fail without leading to data loss.
+
+`Size`
+
+Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.
-        
-            `Version`
 
-            Contains the size of this structure, in bytes. The value of this member will change as members are added to 
+`Version`
+
+Contains the size of this structure, in bytes. The value of this member will change as members are added to 
       the structure. Set to 
       <code>sizeof(STORAGE_DEVICE_RESILIENCY_DESCRIPTOR)</code>.
 
@@ -100,13 +104,10 @@ typedef struct _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-</dt>
-</dl>
+
  
 
  

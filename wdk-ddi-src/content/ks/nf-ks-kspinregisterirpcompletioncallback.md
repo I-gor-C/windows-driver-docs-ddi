@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d2872ea2-565b-47db-8054-876fd3c8fc4d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinRegisterIrpCompletionCallback
+ms.keywords : stream.kspinregisterirpcompletioncallback, KsPinRegisterIrpCompletionCallback function [Streaming Media Devices], KsPinRegisterIrpCompletionCallback, ks/KsPinRegisterIrpCompletionCallback, avfunc_ab906fd4-c863-467e-828e-34316fb65269.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsPinRegisterIrpCompletionCallback
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -55,12 +59,7 @@ A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which t
 
 `IrpCompletion`
 
-<dl>
-<dd>
 This parameter supplies the address of a <a href="..\ks\nc-ks-pfnkspinirpcompletion.md">AVStrMiniPinIrpCompletion</a> routine to be called when an IRP completes its traversal of the circuit and is about to be recycled or retired.
-
-</dd>
-</dl>
 
 
 ## Return Value
@@ -91,26 +90,18 @@ This function is frequently called from the pin creation dispatch. See <a href="
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnkspinirp.md">AVStrMiniPinCreate</a>
-</dt>
-<dt>
-<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnkspinirpcompletion.md">AVStrMiniPinIrpCompletion</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
+
  
 
  

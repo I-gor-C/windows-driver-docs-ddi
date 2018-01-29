@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4dd4c02f-af44-4b02-a646-b7648b430b89
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETDISPLAYMODE, D3DDDIARG_SETDISPLAYMODE
+ms.keywords : UMDisplayDriver_param_Structs_89fc526d-719f-43b5-b195-47a199a290ec.xml, _D3DDDIARG_SETDISPLAYMODE, d3dumddi/D3DDDIARG_SETDISPLAYMODE, D3DDDIARG_SETDISPLAYMODE structure [Display Devices], D3DDDIARG_SETDISPLAYMODE, display.d3dddiarg_setdisplaymode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETDISPLAYMODE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETDISPLAYMODE
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DDDIARG_SETDISPLAYMODE {
 
 ## Members
 
-        
-            `hResource`
 
-            [in] A handle to the resource that contains the display surface.
-        
-            `SubResourceIndex`
+`hResource`
 
-            [in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the display surface.
+[in] A handle to the resource that contains the display surface.
+
+`SubResourceIndex`
+
+[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the display surface.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _D3DDDIARG_SETDISPLAYMODE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymode.md">SetDisplayMode</a>
-</dt>
-</dl>
+
  
 
  

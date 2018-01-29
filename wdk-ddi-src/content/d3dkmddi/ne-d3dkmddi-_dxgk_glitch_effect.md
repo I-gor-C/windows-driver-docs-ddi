@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EACD5B8D-B579-4EB0-93C7-0B356A67CA8F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_GLITCH_EFFECT, DXGK_GLITCH_EFFECT
+ms.keywords : d3dkmddi/DXGK_GLITCH_EFFECT_BLACK_CONTENT, d3dkmddi/DXGK_GLITCH_EFFECT_SYNC_LOSS, display.dxgk_glitch_effect, DXGK_GLITCH_EFFECT enumeration [Display Devices], DXGK_GLITCH_EFFECT_GARBAGE_CONTENT, d3dkmddi/DXGK_GLITCH_EFFECT_GARBAGE_CONTENT, DXGK_GLITCH_EFFECT_BLACK_CONTENT, DXGK_GLITCH_EFFECT_SYNC_LOSS, d3dkmddi/DXGK_GLITCH_EFFECT_DEGRADED_CONTENT, DXGK_GLITCH_EFFECT_DEGRADED_CONTENT, _DXGK_GLITCH_EFFECT, DXGK_GLITCH_EFFECT, d3dkmddi/DXGK_GLITCH_EFFECT_SEAMLESS, d3dkmddi/DXGK_GLITCH_EFFECT, DXGK_GLITCH_EFFECT_SEAMLESS, DXGK_GLITCH_EFFECT_STALE_CONTENT, d3dkmddi/DXGK_GLITCH_EFFECT_STALE_CONTENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_GLITCH_EFFECT
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_GLITCH_EFFECT
 ---
 
@@ -81,6 +85,11 @@ typedef enum _DXGK_GLITCH_EFFECT {
 <tr>
 <td>DXGK_GLITCH_EFFECT_SYNC_LOSS</td>
 <td>Indicates that the display connected to the target lost sync due to a glitch.  Even a short sync loss will likely lead to the user seeing a black screen while the display device re-syncs.</td>
+</tr>
+
+<tr>
+<td>UINT8</td>
+<td></td>
 </tr>
 </table>
 

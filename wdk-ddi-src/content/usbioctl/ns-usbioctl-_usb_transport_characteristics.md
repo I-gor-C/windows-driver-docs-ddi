@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 56394A88-7231-4693-8DD1-C5C7586E490C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_TRANSPORT_CHARACTERISTICS, *PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS
+ms.keywords : USB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS structure [Buses], PUSB_TRANSPORT_CHARACTERISTICS, usbioctl/USB_TRANSPORT_CHARACTERISTICS, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS, PUSB_TRANSPORT_CHARACTERISTICS structure pointer [Buses], buses.usb_transport_characteristics, *PUSB_TRANSPORT_CHARACTERISTICS, _USB_TRANSPORT_CHARACTERISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_TRANSPORT_CHARACTERISTICS
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USB_TRANSPORT_CHARACTERISTICS, *PUSB_TRANSPORT_CHARACTERISTICS
 req.product : Windows 10 or later.
 ---
 
@@ -51,6 +55,40 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS {
 ## Members
 
 
+`CurrentRoundtripLatencyInMilliSeconds`
+
+Contains the current round-trip delay in milliseconds from the time a non-isochronous transfer is received by the USB driver stack to the time that the transfer is completed.  
+
+For MA-USB, the underlying network could be WiFi, WiGig, Ethernet etc. The delay can vary depending on the underlying network conditions. A client driver should query the latency periodically or whenever it is notified of a change.
+
+`MaxPotentialBandwidth`
+
+Contains the total bandwidth of the host controller’s shared transport. 
+
+For MA-USB, the underlying network transport could be WiFi, WiGig, Ethernet etc. The total available bandwidth can vary depending on several factors such as the negotiation WiFi channel. A client driver should query the total bandwidth periodically or whenever it is notified of a change.
+
+`TransportCharacteristicsFlags`
+
+A bitmask that indicates to the client driver the transport characteristics that are available and are returned in this structure. 
+
+
+
+
+If USB_TRANSPORT_CHARACTERISTICS_LATENCY_AVAILABLE 
+
+is set, <b>CurrentRoundtripLatencyInMilliSeconds</b> contains valid information. Otherwise , it must not be used by the client driver. 
+
+
+
+
+If USB_TRANSPORT_CHARACTERISTICS_BANDWIDTH_AVAILABLE 
+
+is set, <b>MaxPotentialBandwidth</b> contains valid information. Otherwise, it must not be used by the client driver.
+
+`Version`
+
+The version is set to  USB_TRANSPORT_CHARACTERISTICS_VERSION_1.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -60,13 +98,10 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_transport_characteristics.md">IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS</a>
-</dt>
-</dl>
+
  
 
  

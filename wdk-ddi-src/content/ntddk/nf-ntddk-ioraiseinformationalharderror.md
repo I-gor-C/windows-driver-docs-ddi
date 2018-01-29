@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 14e9a28c-65cc-4e90-8220-85f1981c8cd7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRaiseInformationalHardError
+ms.keywords : IoRaiseInformationalHardError, IoRaiseInformationalHardError routine [Kernel-Mode Driver Architecture], kernel.ioraiseinformationalharderror, k104_7af16dc2-0500-411e-962a-7d8c1fe40ba0.xml, ntddk/IoRaiseInformationalHardError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoRaiseInformationalHardError
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoApcLte, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -72,8 +76,12 @@ A pointer to the thread whose IRP was failed due to the error specified by the <
 <b>IoRaiseInformationalHardError</b> takes a system-defined NT error value as a parameter. Driver writers can use the event log APIs to communicate driver-defined event strings to the user.
 
 <b>IoRaiseInformationalHardError</b> behaves as follows:
-
-If a previous call to the <a href="..\ntddk\nf-ntddk-iosetthreadharderrormode.md">IoSetThreadHardErrorMode</a> routine disabled hard errors for the specified thread, <b>IoRaiseInformationalHardError</b> returns <b>FALSE</b>.
+<ul>
+<li>If the caller-supplied <i>ErrorStatus</i> value is not defined in the Ntstatus.h header file, the dialog box always shows the text "Unknown Hard Error", regardless of the <i>String</i> parameter value.</li>
+<li>If the caller-supplied <i>ErrorStatus</i> value is defined in the Ntstatus.h header file, the dialog box shows the text in the corresponding MessageText string in Ntstatus.h, regardless of the <i>String</i> parameter value.</li>
+<li>If the <i>Thread</i> parameter specifies a thread that is running in the context of an application, the text shown in the dialog box is "ApplicationName.exe - System Error".</li>
+<li>If the <i>Thread</i> parameter is NULL or if it specifies a thread that is running in an arbitrary system context, the text shown in the dialog box is "System Process - System Error". Additionally, if the <i>ErrorStatus</i> value is defined in Ntstatus.h, the corresponding MessageText string is written to the event log.</li>
+</ul>If a previous call to the <a href="..\ntddk\nf-ntddk-iosetthreadharderrormode.md">IoSetThreadHardErrorMode</a> routine disabled hard errors for the specified thread, <b>IoRaiseInformationalHardError</b> returns <b>FALSE</b>.
 
 Starting with Windows Vista, if the routine is called from a thread in session 0 (that is, from any system thread), no dialog box appears when the routine succeeds and returns <b>TRUE</b>.
 
@@ -91,17 +99,12 @@ Starting with Windows Vista, if the routine is called from a thread in session 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
-</dt>
-<dt>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+
 <a href="..\ntddk\nf-ntddk-iosetthreadharderrormode.md">IoSetThreadHardErrorMode</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
+
  
 
  

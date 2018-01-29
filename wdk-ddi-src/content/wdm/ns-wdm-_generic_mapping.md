@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 54524c7e-12eb-46c7-b96d-67e49821e7a8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _GENERIC_MAPPING, GENERIC_MAPPING, *PGENERIC_MAPPING
+ms.keywords : kstruct_b_488ee84c-2f22-4682-8b90-56e892f07f7b.xml, GENERIC_MAPPING, *PGENERIC_MAPPING, wdm/GENERIC_MAPPING, PGENERIC_MAPPING structure pointer [Kernel-Mode Driver Architecture], wdm/PGENERIC_MAPPING, kernel.generic_mapping, PGENERIC_MAPPING, _GENERIC_MAPPING, GENERIC_MAPPING structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GENERIC_MAPPING
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GENERIC_MAPPING
 req.product : Windows 10 or later.
 ---
@@ -50,25 +54,25 @@ typedef struct _GENERIC_MAPPING {
 
 ## Members
 
-        
-            `GenericAll`
 
-            Describes the specific access rights corresponding to the GENERIC_ALL access right.
-        
-            `GenericExecute`
+`GenericAll`
 
-            Describes the specific access rights corresponding to the GENERIC_EXECUTE access right.
-        
-            `GenericRead`
+Describes the specific access rights corresponding to the GENERIC_ALL access right.
 
-            Describes the specific access rights corresponding to the GENERIC_READ access right.
-        
-            `GenericWrite`
+`GenericExecute`
 
-            Describes the specific access rights corresponding to the GENERIC_WRITE access right.
+Describes the specific access rights corresponding to the GENERIC_EXECUTE access right.
 
-    ## Remarks
-        Use the <a href="..\ntddk\nf-ntddk-iogetfileobjectgenericmapping.md">IoGetFileObjectGenericMapping</a> routine to get the specific access rights corresponding to generic access rights for file objects. Use <a href="..\ntddk\nf-ntddk-rtlmapgenericmask.md">RtlMapGenericMask</a> to subtract off the access rights within an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> that do not derive from generic access rights.
+`GenericRead`
+
+Describes the specific access rights corresponding to the GENERIC_READ access right.
+
+`GenericWrite`
+
+Describes the specific access rights corresponding to the GENERIC_WRITE access right.
+
+## Remarks
+Use the <a href="..\ntddk\nf-ntddk-iogetfileobjectgenericmapping.md">IoGetFileObjectGenericMapping</a> routine to get the specific access rights corresponding to generic access rights for file objects. Use <a href="..\ntddk\nf-ntddk-rtlmapgenericmask.md">RtlMapGenericMask</a> to subtract off the access rights within an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> that do not derive from generic access rights.
 
 For more information about generic access rights, see the reference page for <b>GENERIC_MAPPING</b> in the Microsoft Windows SDK documentation.
 
@@ -80,19 +84,14 @@ For more information about generic access rights, see the reference page for <b>
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-iogetfileobjectgenericmapping.md">IoGetFileObjectGenericMapping</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-rtlmapgenericmask.md">RtlMapGenericMask</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
  
 
  

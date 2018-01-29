@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8e286cb2-87f4-483b-bc55-f174e7de5989
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDD_CX_CLIENT_CONFIG,
+ms.keywords : IDD_CX_CLIENT_CONFIG structure [Display Devices], IDD_CX_CLIENT_CONFIG, display.idd_cx_client_config, iddcx/IDD_CX_CLIENT_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDD_CX_CLIENT_CONFIG
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -65,86 +69,86 @@ typedef struct IDD_CX_CLIENT_CONFIG {
 
 ## Members
 
-        
-            `EvtIddCxAdapterCommitModes`
 
-            A pointer to the  <b>PFN_IDD_CX_ADAPTER_COMMIT_MODES</b> function.
-        
-            `EvtIddCxAdapterInitFinished`
+`EvtIddCxAdapterCommitModes`
 
-            A pointer to the  <b>PFN_IDD_CX_ADAPTER_INIT_FINISHED</b> function.
-        
-            `EvtIddCxDeviceIoControl`
+A pointer to the  <b>PFN_IDD_CX_ADAPTER_COMMIT_MODES</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_DEVICE_IO_CONTROL</b> function.
-        
-            `EvtIddCxMonitorAssignSwapChain`
+`EvtIddCxAdapterInitFinished`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN</b> function.
-        
-            `EvtIddCxMonitorGetDefaultDescriptionModes`
+A pointer to the  <b>PFN_IDD_CX_ADAPTER_INIT_FINISHED</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES</b> function.
-        
-            `EvtIddCxMonitorI2CReceive`
+`EvtIddCxDeviceIoControl`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_I2C_RECEIVE</b> function.
-        
-            `EvtIddCxMonitorI2CTransmit`
+A pointer to the  <b>PFN_IDD_CX_DEVICE_IO_CONTROL</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_I2C_TRANSMIT</b> function.
-        
-            `EvtIddCxMonitorOPMConfigureProtectedOutput`
+`EvtIddCxMonitorAssignSwapChain`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_CONFIGURE_PROTECTED_OUTPUT</b> function.
-        
-            `EvtIddCxMonitorOPMCreateProtectedOutput`
+A pointer to the  <b>PFN_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT</b> function.
-        
-            `EvtIddCxMonitorOPMDestroyProtectedOutput`
+`EvtIddCxMonitorGetDefaultDescriptionModes`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_DESTROY_PROTECTED_OUTPUT</b> function.
-        
-            `EvtIddCxMonitorOPMGetCertificate`
+A pointer to the  <b>PFN_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE</b> function.
-        
-            `EvtIddCxMonitorOPMGetCertificateSize`
+`EvtIddCxMonitorI2CReceive`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE</b> function.
-        
-            `EvtIddCxMonitorOPMGetInformation`
+A pointer to the  <b>PFN_IDD_CX_MONITOR_I2C_RECEIVE</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_INFOMATION</b> function.
-        
-            `EvtIddCxMonitorOPMGetRandomNumber`
+`EvtIddCxMonitorI2CTransmit`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER</b> function.
-        
-            `EvtIddCxMonitorOPMSetSigningKeyAndSequenceNumbers`
+A pointer to the  <b>PFN_IDD_CX_MONITOR_I2C_TRANSMIT</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS</b> function.
-        
-            `EvtIddCxMonitorQueryTargetModes`
+`EvtIddCxMonitorOPMConfigureProtectedOutput`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_QUERY_TARGET_MODES</b> function.
-        
-            `EvtIddCxMonitorSetGammaRamp`
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_CONFIGURE_PROTECTED_OUTPUT</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_SET_GAMMA_RAMP</b> function.
-        
-            `EvtIddCxMonitorUnassignSwapChain`
+`EvtIddCxMonitorOPMCreateProtectedOutput`
 
-            A pointer to the  <b>PFN_IDD_CX_MONITOR_UNASSIGN_SWAPCHAIN</b> function.
-        
-            `EvtIddCxParseMonitorDescription`
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT</b> function.
 
-            A pointer to the  <b>PFN_IDD_CX_PARSE_MONITOR_DESCRIPTION</b> function.
-        
-            `Size`
+`EvtIddCxMonitorOPMDestroyProtectedOutput`
 
-            The total size of the structure.
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_DESTROY_PROTECTED_OUTPUT</b> function.
+
+`EvtIddCxMonitorOPMGetCertificate`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE</b> function.
+
+`EvtIddCxMonitorOPMGetCertificateSize`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE</b> function.
+
+`EvtIddCxMonitorOPMGetInformation`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_INFOMATION</b> function.
+
+`EvtIddCxMonitorOPMGetRandomNumber`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER</b> function.
+
+`EvtIddCxMonitorOPMSetSigningKeyAndSequenceNumbers`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS</b> function.
+
+`EvtIddCxMonitorQueryTargetModes`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_QUERY_TARGET_MODES</b> function.
+
+`EvtIddCxMonitorSetGammaRamp`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_SET_GAMMA_RAMP</b> function.
+
+`EvtIddCxMonitorUnassignSwapChain`
+
+A pointer to the  <b>PFN_IDD_CX_MONITOR_UNASSIGN_SWAPCHAIN</b> function.
+
+`EvtIddCxParseMonitorDescription`
+
+A pointer to the  <b>PFN_IDD_CX_PARSE_MONITOR_DESCRIPTION</b> function.
+
+`Size`
+
+The total size of the structure.
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : netvista\ndis_net_buffer_list_filtering_info.htm
 old-project : netvista
 ms.assetid : 992a4c77-e22f-4123-81e8-86c8030accfa
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_NET_BUFFER_LIST_FILTERING_INFO, NDIS_NET_BUFFER_LIST_FILTERING_INFO, *PNDIS_NET_BUFFER_LIST_FILTERING_INFO
+ms.date : 1/18/2018
+ms.keywords : ndis/PNDIS_NET_BUFFER_LIST_FILTERING_INFO, *PNDIS_NET_BUFFER_LIST_FILTERING_INFO, NDIS_NET_BUFFER_LIST_FILTERING_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_NET_BUFFER_LIST_FILTERING_INFO, PNDIS_NET_BUFFER_LIST_FILTERING_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis_netbuf_macros_media_specific_ad9f53c1-d93a-4b73-9903-76aa54acd563.xml, netvista.ndis_net_buffer_list_filtering_info, PNDIS_NET_BUFFER_LIST_FILTERING_INFO, ndis/NDIS_NET_BUFFER_LIST_FILTERING_INFO, NDIS_NET_BUFFER_LIST_FILTERING_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.20 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_NET_BUFFER_LIST_FILTERING_INFO
-req.alt-loc : Ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_NET_BUFFER_LIST_FILTERING_INFO, *PNDIS_NET_BUFFER_LIST_FILTERING_INFO
 ---
 
@@ -62,8 +66,8 @@ typedef struct _NDIS_NET_BUFFER_LIST_FILTERING_INFO {
 ## Members
 
 
-    ## Remarks
-        Starting with NDIS 6.20, miniport drivers  use the <b>NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure to specify receive
+## Remarks
+Starting with NDIS 6.20, miniport drivers  use the <b>NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure to specify receive
     filter information that accompanies the 
     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures that are associated with a 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
@@ -75,10 +79,10 @@ To access the <b>NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure from the NET_
     <b>NetBufferListFilteringInfo</b>  information type.
 
 To access the identifier values directly, use the 
-    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568406">
-    NET_BUFFER_LIST_RECEIVE_FILTER_ID</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh439946">NET_BUFFER_LIST_RECEIVE_FILTER_VPORT_ID</a>, or 
-    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568407">
-    NET_BUFFER_LIST_RECEIVE_QUEUE_ID</a> macros.
+    <mshelp:link keywords="netvista.net_buffer_list_receive_filter_id" tabindex="0"><b>
+    NET_BUFFER_LIST_RECEIVE_FILTER_ID</b></mshelp:link>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh439946">NET_BUFFER_LIST_RECEIVE_FILTER_VPORT_ID</a>, or 
+    <mshelp:link keywords="netvista.net_buffer_list_receive_queue_id" tabindex="0"><b>
+    NET_BUFFER_LIST_RECEIVE_QUEUE_ID</b></mshelp:link> macros.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,32 +92,24 @@ To access the identifier values directly, use the
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-</dt>
-<dt>
+
+<mshelp:link keywords="netvista.net_buffer_list_receive_queue_id" tabindex="0"><b>
+   NET_BUFFER_LIST_RECEIVE_QUEUE_ID</b></mshelp:link>
+
+<mshelp:link keywords="netvista.net_buffer_list_receive_filter_id" tabindex="0"><b>
+   NET_BUFFER_LIST_RECEIVE_FILTER_ID</b></mshelp:link>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568406">
-   NET_BUFFER_LIST_RECEIVE_FILTER_ID</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439946">NET_BUFFER_LIST_RECEIVE_FILTER_VPORT_ID</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568407">
-   NET_BUFFER_LIST_RECEIVE_QUEUE_ID</a>
-</dt>
-</dl>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_FILTERING_INFO structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_FILTERING_INFO structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

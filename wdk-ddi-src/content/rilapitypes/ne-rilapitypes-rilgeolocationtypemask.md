@@ -7,8 +7,8 @@ old-location : netvista\rilgeolocationtypemask_2.htm
 old-project : netvista
 ms.assetid : ffbd2c6d-537a-44f7-a071-21c073d96264
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILGEOLOCATIONTYPEMASK, RILGEOLOCATIONTYPEMASK
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILGEOLOCATIONTYPEMASK, RIL_GEOLOCATION_ALL, rilapitypes/RIL_GEOLOCATION_ALL, rilapitypes/RIL_GEOLOCATION_LATLONG, RILGEOLOCATIONTYPEMASK enumeration [Network Drivers Starting with Windows Vista], RILGEOLOCATIONTYPEMASK, RIL_GEOLOCATION_CIVIC, rilapitypes/RIL_GEOLOCATION_CIVIC, RIL_GEOLOCATION_LATLONG, netvista.rilgeolocationtypemask_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILGEOLOCATIONTYPEMASK
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILGEOLOCATIONTYPEMASK
 req.product : Windows 10 or later.
 ---
@@ -63,6 +67,11 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
 
 <tr>
 <td>RIL_GEOLOCATION_LATLONG</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_GEOLOCATION_NONE</td>
 <td></td>
 </tr>
 </table>

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 954a4811-4515-4ed4-a4f1-df598d08fc77
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxpDereferenceAndFinalizeNetFcb
+ms.keywords : RxpDereferenceAndFinalizeNetFcb, rxref_474f30d3-858e-4179-8236-3068a2325818.xml, RxpDereferenceAndFinalizeNetFcb function [Installable File System Drivers], ifsk.rxpdereferenceandfinalizenetfcb, fcb/RxpDereferenceAndFinalizeNetFcb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The RxpDereferenceAndFinalizeNetFcb routine is only 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxpDereferenceAndFinalizeNetFcb
-req.alt-loc : fcb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FA_ENTRY, *PFA_ENTRY
 ---
 
@@ -53,7 +57,7 @@ BOOLEAN RxpDereferenceAndFinalizeNetFcb(
 
 `ThisFcb`
 
-
+TBD
 
 `RxContext`
 
@@ -92,17 +96,12 @@ On checked builds, <b>RxpDereferenceAndFinalizeNetFcb</b> causes the system to A
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
-</dt>
-<dt>
-<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
-</dt>
-<dt>
 <a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
-</dt>
-</dl>
+
+<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
+
+<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+
  
 
  

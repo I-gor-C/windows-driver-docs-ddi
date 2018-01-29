@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2104BF68-DF35-44DE-AD83-3026FF9314B4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_PRESENTSURFACE, D3DDDIARG_PRESENTSURFACE
+ms.keywords : D3DDDIARG_PRESENTSURFACE, display.d3dddiarg_presentsurface, d3dumddi/D3DDDIARG_PRESENTSURFACE, D3DDDIARG_PRESENTSURFACE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_PRESENTSURFACE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_PRESENTSURFACE
 ---
 
@@ -47,14 +51,14 @@ typedef struct D3DDDIARG_PRESENTSURFACE {
 
 ## Members
 
-        
-            `hResource`
 
-            [in] A handle to the resource that contains the surface. <b>hResource</b> can be <b>NULL</b> if the user-mode display driver should perform a color-fill operation to the screen.
-        
-            `SubResourceIndex`
+`hResource`
 
-            [in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource or surface to display.
+[in] A handle to the resource that contains the surface. <b>hResource</b> can be <b>NULL</b> if the user-mode display driver should perform a color-fill operation to the screen.
+
+`SubResourceIndex`
+
+[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource or surface to display.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct D3DDDIARG_PRESENTSURFACE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_present.md">Present</a>
-</dt>
-</dl>
+
  
 
  

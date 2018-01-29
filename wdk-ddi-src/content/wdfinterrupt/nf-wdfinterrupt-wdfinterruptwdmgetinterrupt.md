@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b301e9f6-264d-43d9-a344-b34dcd659d04
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfInterruptWdmGetInterrupt
+ms.keywords : WdfInterruptWdmGetInterrupt method, DFInterruptObjectRef_72a56280-07d3-43c1-99f9-68dc3323fe86.xml, wdf.wdfinterruptwdmgetinterrupt, wdfinterrupt/WdfInterruptWdmGetInterrupt, WdfInterruptWdmGetInterrupt, kmdf.wdfinterruptwdmgetinterrupt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfInterruptWdmGetInterrupt
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DIRQL
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -68,8 +72,6 @@ The pointer that the <b>WdfInterruptWdmGetInterrupt</b> method returns is valid 
 
 For more information about handling interrupts in framework-based drivers, see <a href="https://msdn.microsoft.com/08460510-6e5f-4c02-8086-9caa9b4b4c2d">Handling Hardware Interrupts</a>.
 
-The following code example obtains a pointer to the KINTERRUPT structure that is associated with a specified framework interrupt object.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -84,11 +86,8 @@ The following code example obtains a pointer to the KINTERRUPT structure that is
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a>
-</dt>
-</dl>
+
  
 
  

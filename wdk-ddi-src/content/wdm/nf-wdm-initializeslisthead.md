@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 258addec-7231-494c-aa70-5966e9a57132
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InitializeSListHead
+ms.keywords : wdm/InitializeSListHead, InitializeSListHead, k102_6d3b712b-2dd5-4962-ad16-a296bdc4de2b.xml, kernel.exinitializeslisthead, ExInitializeSListHead, InitializeSListHead routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InitializeSListHead
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,29 +82,20 @@ Callers of <b>InitializeSListHead or ExInitializeSListHead</b> can be running at
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-exinterlockedpopentryslist.md">ExInterlockedPopEntrySList</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
+
 <a href="..\wdm\nf-wdm-exinterlockedpushentryslist.md">ExInterlockedPushEntrySList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exquerydepthslist.md">ExQueryDepthSList</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exquerydepthslist.md">ExQueryDepthSList</a>
+
+<a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>
+
  
 
  

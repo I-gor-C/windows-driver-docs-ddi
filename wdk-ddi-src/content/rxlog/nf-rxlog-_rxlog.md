@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 00f6c2d9-7521-46c8-b37e-2be304d8a045
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _RxLog
+ms.keywords : rxref_2c140100-e24e-4fe0-935a-81fa6840db24.xml, ifsk._rxlog, _RxLog function [Installable File System Drivers], _RxLog, rxlog/_RxLog
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _RxLog
-req.alt-loc : rxlog.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -51,7 +55,7 @@ VOID _RxLog(
 
 `format`
 
-
+TBD
 
 ``
 
@@ -98,17 +102,12 @@ It is recommended that the <b>RxLog</b> macro be used to call this routine. On c
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
-</dt>
-<dt>
 <a href="..\rxprocs\nf-rxprocs-rxlogeventwithannotation.md">RxLogEventWithAnnotation</a>
-</dt>
-<dt>
+
+<a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
+
 <a href="..\rxprocs\nf-rxprocs-rxlogeventwithbufferdirect.md">RxLogEventWithBufferDirect</a>
-</dt>
-</dl>
+
  
 
  

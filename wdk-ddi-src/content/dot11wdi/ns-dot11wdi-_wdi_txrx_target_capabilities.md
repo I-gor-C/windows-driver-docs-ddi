@@ -7,8 +7,8 @@ old-location : netvista\wdi_txrx_capabilities.htm
 old-project : netvista
 ms.assetid : 7a1d3ffd-6f5e-429d-8c2f-a141f98ccad8
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_TXRX_TARGET_CAPABILITIES, WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
+ms.date : 1/18/2018
+ms.keywords : PWDI_TXRX_CAPABILITIES, PWDI_TXRX_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], dot11wdi/WDI_TXRX_TARGET_CAPABILITIES, netvista.wdi_txrx_capabilities, *PWDI_TXRX_CAPABILITIES, netvista.wifi_txrx_target_capabilities, netvista.wdi_txrx_target_capabilities, _WDI_TXRX_TARGET_CAPABILITIES, WDI_TXRX_CAPABILITIES, WDI_TXRX_CAPABILITIES structure [Network Drivers Starting with Windows Vista], dot11wdi/PWDI_TXRX_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_TXRX_CAPABILITIES
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDI_TXRX_CAPABILITIES, WDI_TXRX_CAPABILITIES"
 ---
 
 # _WDI_TXRX_TARGET_CAPABILITIES structure
@@ -59,18 +63,18 @@ typedef struct _WDI_TXRX_CAPABILITIES {
 
 ## Members
 
-        
-            `InterconnectType`
 
-            Interconnect type of the target.
-        
-            `ReceiveCapabilities`
+`InterconnectType`
 
-            Receive capabilities.
-        
-            `TransmitCapabilities`
+Interconnect type of the target.
 
-            Transmit capabilities.
+`ReceiveCapabilities`
+
+Receive capabilities.
+
+`TransmitCapabilities`
+
+Transmit capabilities.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG
+ms.keywords : "*PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], PSENSOR_CONTROLLER_CONFIG, sensors.sensor_controller_config, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], SENSOR_CONTROLLER_CONFIG, _SENSOR_CONTROLLER_CONFIG, sensorscx/PSENSOR_CONTROLLER_CONFIG, sensorscx/SENSOR_CONTROLLER_CONFIG"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SENSOR_CONTROLLER_CONFIG
-req.alt-loc : SensorsCx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -97,14 +101,22 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 
 ## Members
 
-        
-            `DriverIsPowerPolicyOwner`
 
-            Indicates whether or not driver owns the power policy. This value must be either WdfFalse, WdfUseDefault, or WdfTrue. For partners to take advantage of pep-based power management, they must set this flag to WdfFalse or WdfUseDefault and remove any _PSx method in their ACPI tables.
-        
-            `EvtSensorDeviceIoControl`
+`DriverIsPowerPolicyOwner`
 
-            This callback function handles IOCTLs outside of the class extension.<div class="alert"><b>Note</b>  If the driver needs to queue the IRP, it must copy the IRP to an IoQueue that the driver owns. This will prevent all IRPs for the driver to be stalled until completion.</div>
+Indicates whether or not driver owns the power policy. This value must be either WdfFalse, WdfUseDefault, or WdfTrue. For partners to take advantage of pep-based power management, they must set this flag to WdfFalse or WdfUseDefault and remove any _PSx method in their ACPI tables.
+
+`EvtSensorCancelHistoryRetrieval`
+
+
+
+`EvtSensorClearHistory`
+
+
+
+`EvtSensorDeviceIoControl`
+
+This callback function handles IOCTLs outside of the class extension.<div class="alert"><b>Note</b>  If the driver needs to queue the IRP, it must copy the IRP to an IoQueue that the driver owns. This will prevent all IRPs for the driver to be stalled until completion.</div>
 <div> </div>
 
 
@@ -115,10 +127,18 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
     _In_ size_t OutputBufferLength,
     _In_ size_t InputBufferLength,
     _In_ ULONG IoControlCode);</pre>
-        
-            `EvtSensorGetDataFieldProperties`
 
-            This callback function returns the properties of a given data field associated with a sensor.
+`EvtSensorDisableWake`
+
+
+
+`EvtSensorEnableWake`
+
+
+
+`EvtSensorGetDataFieldProperties`
+
+This callback function returns the properties of a given data field associated with a sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES(
@@ -126,49 +146,49 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
     _In_ const PROPERTYKEY *pDataField,
     _Inout_opt_ PSENSOR_COLLECTION_LIST pProperties,
     _Out_ PULONG pSize);</pre>
-        
-            `EvtSensorGetDataInterval`
 
-            This callback function returns the data interval for a specified sensor.
+`EvtSensorGetDataInterval`
+
+This callback function returns the data interval for a specified sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_GET_DATA_INTERVAL(
     _In_ SENSOROBJECT Sensor,
     _Out_ PULONG pDataRateMs);</pre>
-        
-            `EvtSensorGetDataThresholds`
 
-            This callback function returns the thresholds that are associated with a sensor.
+`EvtSensorGetDataThresholds`
+
+This callback function returns the thresholds that are associated with a sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_GET_DATA_THRESHOLDS(
     _In_ SENSOROBJECT Sensor,
     _Inout_opt_ PSENSOR_COLLECTION_LIST pThresholds,
     _Out_ PULONG pSize);</pre>
-        
-            `EvtSensorGetProperties`
 
-            This callback function returns the properties for a given sensor.
+`EvtSensorGetProperties`
+
+This callback function returns the properties for a given sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_GET_PROPERTIES(
     _In_ SENSOROBJECT Sensor,
     _Inout_opt_ PSENSOR_COLLECTION_LIST pProperties,
     _Out_ PULONG pSize);</pre>
-        
-            `EvtSensorGetSupportedDataFields`
 
-            This callback function returns a list of data fields supported by the specified sensor.
+`EvtSensorGetSupportedDataFields`
+
+This callback function returns a list of data fields supported by the specified sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS(
     _In_ SENSOROBJECT Sensor,
     _Inout_opt_ PSENSOR_PROPERTY_LIST pDataFields,
     _Out_ PULONG pSize);</pre>
-        
-            `EvtSensorSetBatchLatency`
 
-            This callback function sets the batch latency for a specified sensor.<pre class="syntax">typedef _Function_class_(EVT_SENSOR_DRIVER_SET_BATCH_LATENCY)
+`EvtSensorSetBatchLatency`
+
+This callback function sets the batch latency for a specified sensor.<pre class="syntax">typedef _Function_class_(EVT_SENSOR_DRIVER_SET_BATCH_LATENCY)
 _IRQL_requires_same_
 _Check_return_
 NTSTATUS EVT_SENSOR_DRIVER_SET_BATCH_LATENCY(
@@ -176,55 +196,83 @@ NTSTATUS EVT_SENSOR_DRIVER_SET_BATCH_LATENCY(
     _In_ ULONG BatchLatencyMs );
 
 typedef EVT_SENSOR_DRIVER_SET_BATCH_LATENCY *PFN_SENSOR_DRIVER_SET_BATCH_LATENCY;</pre>
-        
-            `EvtSensorSetDataInterval`
 
-            This callback function sets the data interval for a specified sensor.
+`EvtSensorSetDataInterval`
+
+This callback function sets the data interval for a specified sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_SET_DATA_INTERVAL(
     _In_ SENSOROBJECT Sensor,
     _In_ ULONG DataRateMs);</pre>
-        
-            `EvtSensorSetDataThresholds`
 
-            This callback function stops the sensor.
+`EvtSensorSetDataThresholds`
+
+This callback function stops the sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_SET_DATA_THRESHOLDS(
     _In_ SENSOROBJECT Sensor,
     _In_ PSENSOR_COLLECTION_LIST pThresholds);</pre>
-        
-            `EvtSensorStart`
 
-            This callback function starts the sensor based on the default properties specified by the driver, or properties set by the class extension.
+`EvtSensorStart`
+
+This callback function starts the sensor based on the default properties specified by the driver, or properties set by the class extension.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_START_SENSOR(
     _In_ SENSOROBJECT Sensor);</pre>
-        
-            `EvtSensorStop`
 
-            This callback function stops the sensor.
+`EvtSensorStartHistory`
+
+
+
+`EvtSensorStartHistoryRetrieval`
+
+
+
+`EvtSensorStartStateChangeNotification`
+
+
+
+`EvtSensorStop`
+
+This callback function stops the sensor.
 
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_STOP_SENSOR(
     _In_ SENSOROBJECT Sensor);</pre>
-        
-            `Size`
 
-            The allocated size of this structure (in bytes).
+`EvtSensorStopHistory`
 
-    ## Remarks
-        This structure is given to the class extension using the <a href="..\sensorscx\nf-sensorscx-sensorscxdeviceinitialize.md">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:
 
-Each function returns STATUS_SUCCESS when completed successfully.
+
+`EvtSensorStopStateChangeNotification`
+
+
+
+`Size`
+
+The allocated size of this structure (in bytes).
+
+## Remarks
+This structure is given to the class extension using the <a href="..\sensorscx\nf-sensorscx-sensorscxdeviceinitialize.md">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:
+<ul>
+<li>EvtSensorStart</li>
+<li>EvtSensorStop</li>
+<li>EvtSensorGetSupportedDataFields</li>
+<li>EvtSensorGetDataFieldProperties</li>
+<li>EvtSensorGetDataInterval</li>
+<li>EvtSensorSetDataInterval</li>
+<li>EvtSensorGetDataThresholds</li>
+<li>EvtSensorSetDataThresholds</li>
+<li>EvtSensorGetProperties</li>
+</ul>Each function returns STATUS_SUCCESS when completed successfully.
 
 <div class="alert"><b>Note</b>  The class extension (CX) only uses the NT_SUCCESS macro to determine if the call to the driver’s Evt function was successful, but does not take any action if the function failed or does not return STATUS_SUCCESS.
 
 </div>
 <div> </div>
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

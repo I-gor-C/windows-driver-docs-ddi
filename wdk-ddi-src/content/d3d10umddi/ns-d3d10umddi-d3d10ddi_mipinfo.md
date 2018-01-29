@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5f00ff32-5ecf-40ca-91bb-aacc542bb7f4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDI_MIPINFO, D3D10DDI_MIPINFO
+ms.keywords : D3D10DDI_MIPINFO, UMDisplayDriver_Dx10param_Structs_67768e5f-a18d-4bd9-a1be-96587f267c36.xml, D3D10DDI_MIPINFO structure [Display Devices], d3d10umddi/D3D10DDI_MIPINFO, display.d3d10ddi_mipinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10DDI_MIPINFO
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10DDI_MIPINFO
 ---
 
@@ -51,30 +55,30 @@ typedef struct D3D10DDI_MIPINFO {
 
 ## Members
 
-        
-            `PhysicalDepth`
 
-            [in] The depth, in pixels, of the volume.
-        
-            `PhysicalHeight`
+`PhysicalDepth`
 
-            [in] The height, in pixels, of the surface or volume.
-        
-            `PhysicalWidth`
+[in] The depth, in pixels, of the volume.
 
-            [in] The width, in pixels, of the surface or volume, or the length, in pixels, of the linear resource.
-        
-            `TexelDepth`
+`PhysicalHeight`
 
-            [in] The depth, in texels, of the volume.
-        
-            `TexelHeight`
+[in] The height, in pixels, of the surface or volume.
 
-            [in] The height, in texels, of the surface or volume.
-        
-            `TexelWidth`
+`PhysicalWidth`
 
-            [in] The width, in texels, of the surface or volume, or the length, in texels, of the linear resource.
+[in] The width, in pixels, of the surface or volume, or the length, in pixels, of the linear resource.
+
+`TexelDepth`
+
+[in] The depth, in texels, of the volume.
+
+`TexelHeight`
+
+[in] The height, in texels, of the surface or volume.
+
+`TexelWidth`
+
+[in] The width, in texels, of the surface or volume, or the length, in texels, of the linear resource.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct D3D10DDI_MIPINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
-</dt>
-</dl>
+
  
 
  

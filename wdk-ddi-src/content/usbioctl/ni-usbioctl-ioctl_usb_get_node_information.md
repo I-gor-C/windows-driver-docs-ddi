@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : b779cbf9-3021-4310-ae2e-e716bcc7b4c4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_usb_get_node_information, IOCTL_USB_GET_NODE_INFORMATION control code [Buses], IOCTL_USB_GET_NODE_INFORMATION, usbioctl/IOCTL_USB_GET_NODE_INFORMATION, usbirp_123647fe-f02f-4961-aef8-1036be8727b8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_USB_GET_NODE_INFORMATION
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,17 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_INFORMATION IOCTL
-The <b>IOCTL_USB_GET_NODE_INFORMATION</b> I/O control request is used with the <a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NODE_INFORMATION</a> structure to retrieve information about a parent device.
-
-<b>IOCTL_USB_GET_NODE_INFORMATION</b> is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
-
-
-
 The <b>IOCTL_USB_GET_NODE_INFORMATION</b> I/O control request is used with the <a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NODE_INFORMATION</a> structure to retrieve information about a parent device.
 
 <b>IOCTL_USB_GET_NODE_INFORMATION</b> is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
@@ -68,7 +66,6 @@ The size of a <a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NOD
 <text></text>
 
 ### Status Block
-I/O Status block
 The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
 
 
@@ -79,13 +76,10 @@ The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the reque
 | **Header** | usbioctl.h (include Usbioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NODE_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 45273541-0638-4e8e-b6b7-5183b481ccc4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_FILTERVALUES, DXVADDI_FILTERVALUES
+ms.keywords : d3dumddi/DXVADDI_FILTERVALUES, DXVA2_Structs_1425eb3e-586d-4777-be61-8a73148286d4.xml, _DXVADDI_FILTERVALUES, DXVADDI_FILTERVALUES, display.dxvaddi_filtervalues, DXVADDI_FILTERVALUES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_FILTERVALUES
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_FILTERVALUES
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DXVADDI_FILTERVALUES {
 
 ## Members
 
-        
-            `Level`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the level of the filter.
-        
-            `Radius`
+`Level`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the radius of the filter.
-        
-            `Threshold`
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the level of the filter.
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the threshold of the filter.
+`Radius`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the radius of the filter.
+
+`Threshold`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the threshold of the filter.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _DXVADDI_FILTERVALUES {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
-</dt>
-</dl>
+
  
 
  

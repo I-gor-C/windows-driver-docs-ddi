@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b060bd22-113f-4f78-8763-d1d19cf198b8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeBuildVC
+ms.keywords : ifsk.rxcebuildvc, rxce/RxCeBuildVC, RxCeBuildVC function [Installable File System Drivers], RxCeBuildVC, rxref_4f4f58c7-5970-4a86-883e-359e92bddaa3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeBuildVC
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -56,18 +60,40 @@ On input, this parameter contains a pointer to a handle for an uninitialized vir
 
 `Connection`
 
-
+TBD
 
 
 ## Return Value
 
 <b>RxCeBuildVC</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The allocation of nonpaged pool memory needed by this routine failed. 
+</dl>
+</td>
+<td width="60%">
+The allocation of nonpaged pool memory needed by this routine failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters passed to this routine was invalid.
+</dl>
+</td>
+<td width="60%">
+One of the parameters passed to this routine was invalid. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -87,11 +113,8 @@ When <b>RxCeBuildVC</b> is successful, the data members in the RXCE_VC structure
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxce\nf-rxce-rxceteardownvc.md">RxCeTearDownVC</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0512a825-9cec-4ca0-9686-df5b3d2b216b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_DeinterlaceBlt, DXVA_DeinterlaceBlt
+ms.keywords : display.dxva_deinterlaceblt, dxvaref_69a3b788-495c-42a0-acae-8d8242d963c6.xml, dxva/DXVA_DeinterlaceBlt, _DXVA_DeinterlaceBlt, DXVA_DeinterlaceBlt structure [Display Devices], DXVA_DeinterlaceBlt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_DeinterlaceBlt
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_DeinterlaceBlt
 ---
 
@@ -53,43 +57,43 @@ typedef struct _DXVA_DeinterlaceBlt {
 
 ## Members
 
-        
-            `Alpha`
 
-            Specifies the transparency of the output image as it is written to the destination surface. A value of  0.0F indicates transparent. A value of 1.0F indicates opaque.
-        
-            `DstRect`
+`Alpha`
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.
-        
-            `NumSourceSurfaces`
+Specifies the transparency of the output image as it is written to the destination surface. A value of  0.0F indicates transparent. A value of 1.0F indicates opaque.
 
-            Specifies the number of valid surfaces passed in the <b>Source</b> array.
-        
-            `Reserved`
+`DstRect`
 
-            
-        
-            `rtTarget`
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.
 
-            Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a reference sample, as defined in the <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a> structure, or the midpoint between the starting display time and the ending display time. For more information, see Remarks.
+`NumSourceSurfaces`
+
+Specifies the number of valid surfaces passed in the <b>Source</b> array.
+
+`Reserved`
+
+
+
+`rtTarget`
+
+Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a reference sample, as defined in the <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a> structure, or the midpoint between the starting display time and the ending display time. For more information, see Remarks.
 
 If a frame rate conversion is requested, the <b>rtTarget</b> time can be different from any of the <b>rtStart</b> times of the reference samples.
-        
-            `Size`
 
-            Specifies the size of this structure in bytes.
-        
-            `Source`
+`Size`
 
-            An array of <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a> structures that specify the reference input samples needed for this deinterlacing or frame-rate conversion operation.
-        
-            `SrcRect`
+Specifies the size of this structure in bytes.
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the upper left and lower right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.
+`Source`
 
-    ## Remarks
-        When creating a single frame from one field in a sample, as defined in the <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a> structure, <b>rtTarget</b> should be the starting display time for that field. If you have two fields in one sample and want to deinterlace both, <a href="https://msdn.microsoft.com/0aa68d0c-8c2b-41fe-9e46-a41b157fbd98">DeinterlaceBlt</a> will be called twice. The first time <i>DeinterlaceBlt</i> is called, <b>rtTarget</b> will be the starting display time. The second time <i>DeinterlaceBlt</i> is called, <b>rtTarget</b> will be the midpoint between the starting display time and the ending display time. In other words, for the first call, <b>rtTarget</b> = <b>rtStart</b>. For the second call, <b>rtTarget</b> = (<b>rtStart</b> + <b>rtEnd</b>) / 2.
+An array of <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a> structures that specify the reference input samples needed for this deinterlacing or frame-rate conversion operation.
+
+`SrcRect`
+
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the upper left and lower right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.
+
+## Remarks
+When creating a single frame from one field in a sample, as defined in the <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a> structure, <b>rtTarget</b> should be the starting display time for that field. If you have two fields in one sample and want to deinterlace both, <a href="https://msdn.microsoft.com/0aa68d0c-8c2b-41fe-9e46-a41b157fbd98">DeinterlaceBlt</a> will be called twice. The first time <i>DeinterlaceBlt</i> is called, <b>rtTarget</b> will be the starting display time. The second time <i>DeinterlaceBlt</i> is called, <b>rtTarget</b> will be the midpoint between the starting display time and the ending display time. In other words, for the first call, <b>rtTarget</b> = <b>rtStart</b>. For the second call, <b>rtTarget</b> = (<b>rtStart</b> + <b>rtEnd</b>) / 2.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,19 +103,14 @@ If a frame rate conversion is requested, the <b>rtTarget</b> time can be differe
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/0aa68d0c-8c2b-41fe-9e46-a41b157fbd98">DeinterlaceBlt</a>
-</dt>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/0aa68d0c-8c2b-41fe-9e46-a41b157fbd98">DeinterlaceBlt</a>
+
 <a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
-</dt>
-</dl>
+
  
 
  

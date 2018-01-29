@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9e88a94d-ce25-43ee-8187-30b406e8d9e4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMasterClock, IMasterClock::GetTime, GetTime
+ms.keywords : IMasterClock, GetTime, GetTime method [Audio Devices], audio.imasterclock_gettime, IMasterClock interface [Audio Devices], GetTime method, dmusicks/IMasterClock::GetTime, audmp-routines_08af6e05-c432-4560-91fb-f17687291fc0.xml, GetTime method [Audio Devices], IMasterClock interface, IMasterClock::GetTime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMasterClock.GetTime
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -72,14 +76,10 @@ NTSTATUS GetTime(
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536701">IMiniportDMus::NewStream</a>
-</dt>
-</dl>
+
+<a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
+
  
 
  

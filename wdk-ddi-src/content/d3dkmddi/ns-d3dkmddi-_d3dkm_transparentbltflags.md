@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8ac87e6e-bc24-45fe-b0c5-d253dd03da16
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKM_TRANSPARENTBLTFLAGS, D3DKM_TRANSPARENTBLTFLAGS
+ms.keywords : display.d3dkm_transparentbltflags, _D3DKM_TRANSPARENTBLTFLAGS, d3dkmddi/D3DKM_TRANSPARENTBLTFLAGS, D3DKM_TRANSPARENTBLTFLAGS structure [Display Devices], DmStructs_7190815e-5610-4c97-823f-8bdaae16c005.xml, D3DKM_TRANSPARENTBLTFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKM_TRANSPARENTBLTFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKM_TRANSPARENTBLTFLAGS
 ---
 
@@ -52,8 +56,8 @@ typedef struct _D3DKM_TRANSPARENTBLTFLAGS {
 ## Members
 
 
-    ## Remarks
-        For more information about how to use the members of this structure, see <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>.
+## Remarks
+For more information about how to use the members of this structure, see <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -63,13 +67,10 @@ typedef struct _D3DKM_TRANSPARENTBLTFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>
-</dt>
-</dl>
+
  
 
  

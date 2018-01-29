@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e9daafb1-16ec-4ffe-b863-6f07c4b2a9b7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmIsThisAnNtAsSystem
+ms.keywords : MmIsThisAnNtAsSystem, MmIsThisAnNtAsSystem routine [Kernel-Mode Driver Architecture], k106_3f6077c8-2ce9-4dce-b29e-afd262be1e80.xml, kernel.mmisthisanntassystem, ntddk/MmIsThisAnNtAsSystem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Obsolete for Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmIsThisAnNtAsSystem
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -51,10 +55,6 @@ BOOLEAN MmIsThisAnNtAsSystem(void);
 This function has no parameters.
 
 ## Return Value
-
-If the current platform is a server, <b>MmIsThisAnNtAsSystem</b> returns <b>TRUE</b>. 
-
-If the current platform is a server, <b>MmIsThisAnNtAsSystem</b> returns <b>TRUE</b>. 
 
 If the current platform is a server, <b>MmIsThisAnNtAsSystem</b> returns <b>TRUE</b>.
 
@@ -76,11 +76,8 @@ Drivers can use this routine during initialization, along with <b>MmQuerySystemS
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmquerysystemsize.md">MmQuerySystemSize</a>
-</dt>
-</dl>
+
  
 
  

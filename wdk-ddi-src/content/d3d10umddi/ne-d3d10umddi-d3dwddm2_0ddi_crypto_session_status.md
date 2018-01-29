@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DBAFEAE2-66B6-4F2F-801D-21B7792BCA60
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS, D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
+ms.keywords : D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST, d3d10umddi/D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_LOST, d3d10umddi/D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_OK, D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS, D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_LOST, d3d10umddi/D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST, D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_OK, D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS enumeration [Display Devices], d3d10umddi/D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS, display.d3dwddm2_0ddi_crypto_session_status
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS
 ---
 

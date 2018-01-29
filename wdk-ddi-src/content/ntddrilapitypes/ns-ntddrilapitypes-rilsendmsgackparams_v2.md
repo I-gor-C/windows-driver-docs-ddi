@@ -7,8 +7,8 @@ old-location : netvista\rilsendmsgackparams_v2.htm
 old-project : netvista
 ms.assetid : 3c05c1a0-339e-447f-b0df-18303ee63f98
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2 structure [Network Drivers Starting with Windows Vista], RILSENDMSGACKPARAMS, netvista.rilsendmsgackparams_v2, RILSENDMSGACKPARAMS_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSENDMSGACKPARAMS_V2
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS"
 ---
 
 # RILSENDMSGACKPARAMS_V2 structure
@@ -52,34 +56,34 @@ typedef struct _RILSENDMSGACKPARAMS_V2 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwAckID`
+`cbSize`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwMsgStatus`
 
-            
-        
-            `dwOptions`
+`dwAckID`
 
-            
-        
-            `dwSmsFormat`
 
-            
-        
-            `hUiccApp`
 
-            
+`dwExecutor`
+
+
+
+`dwMsgStatus`
+
+
+
+`dwOptions`
+
+
+
+`dwSmsFormat`
+
+
+
+`hUiccApp`
+
+
 
 
 ## Requirements

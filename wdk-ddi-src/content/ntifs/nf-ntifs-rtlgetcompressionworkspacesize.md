@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f0e856f8-9c01-4219-b521-ab4a5c9bc35c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGetCompressionWorkSpaceSize
+ms.keywords : ifsk.rtlgetcompressionworkspacesize, ntifs/RtlGetCompressionWorkSpaceSize, rtlref_26332738-6278-49f9-b948-87bcb7e68c83.xml, RtlGetCompressionWorkSpaceSize function [Installable File System Drivers], RtlGetCompressionWorkSpaceSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and all later versions of Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlGetCompressionWorkSpaceSize
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -53,7 +57,6 @@ NTSTATUS RtlGetCompressionWorkSpaceSize(
 `CompressionFormatAndEngine`
 
 Bitmask specifying the compression format and engine type. This parameter must be set to one of the following bitwise OR combinations:
-
 <ul>
 <li>
 COMPRESSION_FORMAT_LZNT1 | COMPRESSION_ENGINE_STANDARD
@@ -63,9 +66,7 @@ COMPRESSION_FORMAT_LZNT1 | COMPRESSION_ENGINE_STANDARD
 COMPRESSION_FORMAT_LZNT1 | COMPRESSION_ENGINE_MAXIMUM
 
 </li>
-</ul>
-The meanings of these, and other related values, are as follows:
-
+</ul>The meanings of these, and other related values, are as follows:
 <table>
 <tr>
 <th>Value</th>
@@ -145,20 +146,64 @@ A pointer to a caller-allocated buffer receiving the size, in bytes, required to
 ## Return Value
 
 <b>RtlGetCompressionWorkSpaceSize</b>returns an appropriate error status, such as one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The required buffer sizes, in bytes, were successfully returned.
+</dl>
+</td>
+<td width="60%">
+The required buffer sizes, in bytes, were successfully returned.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid compression format was specified via the <i>CompressionFormatAndEngine</i> parameter. If <i>CompressionFormatAndEngine</i> is either COMPRESSION_FORMAT_NONE or COMPRESSION_FORMAT_DEFAULT (but not both), this value is returned.
+</dl>
+</td>
+<td width="60%">
+An invalid compression format was specified via the <i>CompressionFormatAndEngine</i> parameter. If <i>CompressionFormatAndEngine</i> is either COMPRESSION_FORMAT_NONE or COMPRESSION_FORMAT_DEFAULT (but not both), this value is returned.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUPPORTED_COMPRESSION</b></dt>
-</dl>An invalid compression format was specified via the <i>CompressionFormatAndEngine</i> parameter. If <i>CompressionFormatAndEngine</i> is not one of the following, STATUS_UNSUPPORTED_COMPRESSION is returned:
+</dl>
+</td>
+<td width="60%">
+An invalid compression format was specified via the <i>CompressionFormatAndEngine</i> parameter. If <i>CompressionFormatAndEngine</i> is not one of the following, STATUS_UNSUPPORTED_COMPRESSION is returned:
 
 
+
+<ul>
+<li>COMPRESSION_FORMAT_LZNT1 </li>
+<li>COMPRESSION_FORMAT_NONE (in this case, STATUS_INVALID_PARAMETER is returned) 
+</li>
+<li>COMPRESSION_FORMAT_DEFAULT (in this case, STATUS_INVALID_PARAMETER is returned) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>An invalid compression engine was specified via the <i>CompressionFormatAndEngine</i> parameter. If <i>CompressionFormatAndEngine</i> is not COMPRESSION_ENGINE_STANDARD or COMPRESSION_ENGINE_MAXIMUM (but not both), this value is returned.
+</dl>
+</td>
+<td width="60%">
+An invalid compression engine was specified via the <i>CompressionFormatAndEngine</i> parameter. If <i>CompressionFormatAndEngine</i> is not COMPRESSION_ENGINE_STANDARD or COMPRESSION_ENGINE_MAXIMUM (but not both), this value is returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -186,20 +231,14 @@ To decompress only a portion of a compressed buffer (that is, a "fragment" of th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtldecompressbuffer.md">RtlDecompressBuffer</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
+
 <a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>
-</dt>
-</dl>
+
  
 
  

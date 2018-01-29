@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 64c6ed50-a4b9-4a8c-b38c-b2fcdf5ccee9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetDiscoveredPortAttributes
+ms.keywords : hbaapi/HBA_GetDiscoveredPortAttributes, storage.hba_getdiscoveredportattributes, HBA_GetDiscoveredPortAttributes, HBA_GetDiscoveredPortAttributes routine [Storage Devices], fibreHBA_rtns_3f74a187-728d-4534-8ad8-29e1a9b0add5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_GetDiscoveredPortAttributes
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -53,7 +57,7 @@ HBA_STATUS HBA_API HBA_GetDiscoveredPortAttributes(
 
 `Handle`
 
-
+TBD
 
 `PortIndex`
 
@@ -65,7 +69,7 @@ Indicates the index of the remote port to query.
 
 `PortAttributes`
 
-
+TBD
 
 
 ## Return Value
@@ -90,17 +94,12 @@ The <b>HBA_GetDiscoveredPortAttributes</b> library routine corresponds to the <a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
-</dt>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_portattributes.md">HBA_PortAttributes</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

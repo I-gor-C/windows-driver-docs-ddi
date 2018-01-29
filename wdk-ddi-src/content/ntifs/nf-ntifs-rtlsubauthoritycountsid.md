@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 11e825ad-3d8f-46cf-a08a-4027ff38ab90
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlSubAuthorityCountSid
+ms.keywords : rtlref_a90cc5aa-161f-466b-975f-16ec42b70539.xml, RtlSubAuthorityCountSid function [Installable File System Drivers], ifsk.rtlsubauthoritycountsid, ntifs/RtlSubAuthorityCountSid, RtlSubAuthorityCountSid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlSubAuthorityCountSid
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ The <b>RtlSubAuthorityCountSid</b> routine is reserved for system use. See <a hr
 
 `Sid`
 
-
+TBD
 
 
 ## Return Value

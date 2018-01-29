@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f7ff16ac-fe20-4998-a8b3-d1d02c418938
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetFirstChild
+ms.keywords : KsGetFirstChild function [Streaming Media Devices], KsGetFirstChild, stream.ksgetfirstchild, avfunc_cfdde7e3-bc8b-46df-abf4-fe43ac9b0bfc.xml, ks/KsGetFirstChild
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetFirstChild
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,20 +81,14 @@ Minidrivers rarely call this function directly. Those that do must manually perf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksdevicegetfirstchildfilterfactory.md">KsDeviceGetFirstChildFilterFactory</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilterfactorygetfirstchildfilter.md">KsFilterFactoryGetFirstChildFilter</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>
+
+<a href="..\ks\nf-ks-ksfilterfactorygetfirstchildfilter.md">KsFilterFactoryGetFirstChildFilter</a>
+
+<a href="..\ks\nf-ks-ksdevicegetfirstchildfilterfactory.md">KsDeviceGetFirstChildFilterFactory</a>
+
  
 
  

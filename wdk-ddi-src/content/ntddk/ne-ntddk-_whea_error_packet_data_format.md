@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 612fbfb7-2f10-45e8-8f99-1aba8fe79a5a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_PACKET_DATA_FORMAT, *PWHEA_ERROR_PACKET_DATA_FORMAT, WHEA_ERROR_PACKET_DATA_FORMAT
+ms.keywords : ntddk/WheaDataFormatMemory, WheaDataFormatIPFSalRecord, ntddk/PWHEA_ERROR_PACKET_DATA_FORMAT, *PWHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WHEA_ERROR_PACKET_DATA_FORMAT, WheaDataFormatPCIXBus, ntddk/WheaDataFormatNMIPort, ntddk/WheaDataFormatXPFMCA, PWHEA_ERROR_PACKET_DATA_FORMAT enumeration pointer [WHEA Drivers and Applications], WheaDataFormatMemory, ntddk/WheaDataFormatPCIExpress, WHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WheaDataFormatPCIXBus, ntddk/WheaDataFormatMax, WheaDataFormatNMIPort, WheaDataFormatGeneric, ntddk/WheaDataFormatGeneric, WheaDataFormatMax, WheaDataFormatXPFMCA, WheaDataFormatPCIExpress, WheaDataFormatPCIXDevice, _WHEA_ERROR_PACKET_DATA_FORMAT, whearef_19f75c8f-94d0-4837-ab44-e9ba9fbe51f7.xml, whea.whea_error_packet_data_format, WHEA_ERROR_PACKET_DATA_FORMAT enumeration [WHEA Drivers and Applications], PWHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WheaDataFormatPCIXDevice, ntddk/WheaDataFormatIPFSalRecord
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_PACKET_DATA_FORMAT
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWHEA_ERROR_PACKET_DATA_FORMAT, WHEA_ERROR_PACKET_DATA_FORMAT"
 ---
 
@@ -116,17 +120,12 @@ The <a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a>
+
  
 
  

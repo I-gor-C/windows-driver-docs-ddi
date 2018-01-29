@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c06cb000-837d-4ee9-baa1-0217ad8b14cb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoAllocateMdl
+ms.keywords : k104_8f4336cd-03b0-4ca2-9538-182970594ba3.xml, wdm/IoAllocateMdl, kernel.ioallocatemdl, IoAllocateMdl, IoAllocateMdl routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoAllocateMdl
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -102,17 +106,12 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+
+<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
+
  
 
  

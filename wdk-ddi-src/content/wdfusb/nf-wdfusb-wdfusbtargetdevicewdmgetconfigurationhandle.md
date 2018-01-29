@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7f501e5c-13dd-418d-9b9f-f984aed45cc0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceWdmGetConfigurationHandle
+ms.keywords : WdfUsbTargetDeviceWdmGetConfigurationHandle method, WdfUsbTargetDeviceWdmGetConfigurationHandle, kmdf.wdfusbtargetdevicewdmgetconfigurationhandle, PFN_WDFUSBTARGETDEVICEWDMGETCONFIGURATIONHANDLE, wdf.wdfusbtargetdevicewdmgetconfigurationhandle, wdfusb/WdfUsbTargetDeviceWdmGetConfigurationHandle, DFUsbRef_503d3873-7148-4084-b56e-199b7437511b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfUsbTargetDeviceWdmGetConfigurationHandle
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ The driver can call <b>WdfUsbTargetDeviceWdmGetConfigurationHandle</b> after it 
 
 For more information about the <b>WdfUsbTargetDeviceWdmGetConfigurationHandle</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
-The following code example obtains a handle to the current configuration of a specified USB device.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -86,17 +88,12 @@ The following code example obtains a handle to the current configuration of a sp
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\usb\ns-usb-_urb_select_interface.md">_URB_SELECT_INTERFACE</a>
-</dt>
-<dt>
 <a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
+
+<a href="..\usb\ns-usb-_urb_select_interface.md">_URB_SELECT_INTERFACE</a>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 984a8584-ebdd-4e93-868b-1537a3615c1b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS, *PSTARTIO_PERFORMANCE_PARAMETERS
+ms.keywords : _STARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS structure [Storage Devices], *PSTARTIO_PERFORMANCE_PARAMETERS, storport/PSTARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS, PSTARTIO_PERFORMANCE_PARAMETERS, storage.startio_performance_parameters, PSTARTIO_PERFORMANCE_PARAMETERS structure pointer [Storage Devices], structs-storport_6f0f3ae8-51e3-4c3e-91e1-4603b04b6f08.xml, storport/STARTIO_PERFORMANCE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STARTIO_PERFORMANCE_PARAMETERS
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STARTIO_PERFORMANCE_PARAMETERS, *PSTARTIO_PERFORMANCE_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _STARTIO_PERFORMANCE_PARAMETERS {
 
 ## Members
 
-        
-            `ChannelNumber`
 
-            Denotes the concurrent channel in which Storport is passing the I/O. If the miniport driver did not set up concurrent channels, this member will be zero.
-        
-            `MessageNumber`
+`ChannelNumber`
 
-            The offset in the device's MSI-X table for the optimal MSI-X message with which to interrupt. If the device does not support MSI-X messages, this member will be zero.
-        
-            `Size`
+Denotes the concurrent channel in which Storport is passing the I/O. If the miniport driver did not set up concurrent channels, this member will be zero.
 
-            The size of the structure.
-        
-            `Version`
+`MessageNumber`
 
-            The version number of the structure. This member is valid starting with Windows 8.
+The offset in the device's MSI-X table for the optimal MSI-X message with which to interrupt. If the device does not support MSI-X messages, this member will be zero.
+
+`Size`
+
+The size of the structure.
+
+`Version`
+
+The version number of the structure. This member is valid starting with Windows 8.
 
 
 ## Requirements
@@ -76,13 +80,10 @@ typedef struct _STARTIO_PERFORMANCE_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\storport\nf-storport-storportgetstartioperfparams.md">StorPortGetStartIoPerfParams</a>
-</dt>
-</dl>
+
  
 
  

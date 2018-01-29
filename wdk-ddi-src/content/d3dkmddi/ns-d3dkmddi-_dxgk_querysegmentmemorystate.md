@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 565D8D8D-6EBB-4303-8F7E-E2A4B1DAE4EA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_SEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE
+ms.keywords : DXGK_SEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE structure [Display Devices], d3dkmddi/DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE, _DXGK_QUERYSEGMENTMEMORYSTATE, display.dxgk_querysegmentmemorystate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_QUERYSEGMENTMEMORYSTATE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : DXGK_SEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_SEGMENTMEMORYSTATE
 ---
 
 # _DXGK_QUERYSEGMENTMEMORYSTATE structure
@@ -49,22 +53,22 @@ typedef struct _DXGK_QUERYSEGMENTMEMORYSTATE {
 
 ## Members
 
-        
-            `DriverSegmentId`
 
-            A  1-based segment identifier of a local GPU memory segment.
-        
-            `NumInvalidMemoryRanges`
+`DriverSegmentId`
 
-            The number of entries in the <b>pMemoryRanges</b> array. This is the value returned by the kernel mode driver in <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>.
-        
-            `PhysicalAdapterIndex`
+A  1-based segment identifier of a local GPU memory segment.
 
-            Physical adapter index in a linked display adapter link.
-        
-            `pMemoryRanges`
+`NumInvalidMemoryRanges`
 
-            Array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_memoryrange.md">DXGK_MEMORYRANGE</a> structures for the invalid memory ranges.
+The number of entries in the <b>pMemoryRanges</b> array. This is the value returned by the kernel mode driver in <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>.
+
+`PhysicalAdapterIndex`
+
+Physical adapter index in a linked display adapter link.
+
+`pMemoryRanges`
+
+Array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_memoryrange.md">DXGK_MEMORYRANGE</a> structures for the invalid memory ranges.
 
 
 ## Requirements
@@ -75,19 +79,14 @@ typedef struct _DXGK_QUERYSEGMENTMEMORYSTATE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_memoryrange.md">DXGK_MEMORYRANGE</a>
-</dt>
-</dl>
+
  
 
  

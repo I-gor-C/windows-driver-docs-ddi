@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 12084f07-5b6a-44d4-8ab3-325309e69372
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminidevicequerycapabilities, AVStrMiniDeviceQueryCapabilities, AVStrMiniDeviceQueryCapabilities routine [Streaming Media Devices], AVStrMiniDeviceQueryCapabilities, PFNKSDEVICEQUERYCAPABILITIES, PFNKSDEVICEQUERYCAPABILITIES, ks/AVStrMiniDeviceQueryCapabilities, avstclbk_6078ead8-c11e-4f25-9742-21740e9a9da8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniDeviceQueryCapabilities
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -90,14 +94,10 @@ This routine is called when an <a href="https://msdn.microsoft.com/library/windo
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+
  
 
  

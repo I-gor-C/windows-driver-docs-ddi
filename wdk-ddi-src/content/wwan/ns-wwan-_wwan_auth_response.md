@@ -7,8 +7,8 @@ old-location : netvista\wwan_auth_response.htm
 old-project : netvista
 ms.assetid : CD0B90A1-032D-4F09-827F-E80607AE4EA7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WWAN_AUTH_RESPONSE, *PWWAN_AUTH_RESPONSE, WWAN_AUTH_RESPONSE
+ms.date : 1/18/2018
+ms.keywords : WWAN_AUTH_RESPONSE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_RESPONSE, netvista.wwan_auth_response, wwan/WWAN_AUTH_RESPONSE, *PWWAN_AUTH_RESPONSE, WWAN_AUTH_RESPONSE, PWWAN_AUTH_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_AUTH_RESPONSE, _WWAN_AUTH_RESPONSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WWAN_AUTH_RESPONSE
-req.alt-loc : wwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PWWAN_AUTH_RESPONSE, WWAN_AUTH_RESPONSE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WWAN_AUTH_RESPONSE, *PWWAN_AUTH_RESPONSE
 req.product : Windows 10 or later.
 ---
 
@@ -52,17 +56,17 @@ typedef struct _WWAN_AUTH_RESPONSE {
 
 ## Members
 
-        
-            `AuthMethod`
 
-            The authentication challenge method used.
-        
-            `u`
+`AuthMethod`
 
-            The container union for the different authentication challenge methods.
+The authentication challenge method used.
 
-    ## Remarks
-        The <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_auth_response.md">NDIS_WWAN_AUTH_RESPONSE</a> structure uses this structure.
+`u`
+
+The container union for the different authentication challenge methods.
+
+## Remarks
+The <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_auth_response.md">NDIS_WWAN_AUTH_RESPONSE</a> structure uses this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,27 +76,20 @@ typedef struct _WWAN_AUTH_RESPONSE {
 | **Minimum UMDF version** |  |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wwan\ne-wwan-_wwan_auth_method.md">WWAN_AUTH_METHOD</a>
-</dt>
-<dt>
-<a href="..\wwan\ns-wwan-_wwan_auth_sim_response.md">WWAN_AUTH_SIM_RESPONSE</a>
-</dt>
-<dt>
-<a href="..\wwan\ns-wwan-_wwan_auth_aka_response.md">WWAN_AUTH_AKA_RESPONSE</a>
-</dt>
-<dt>
+
 <a href="..\wwan\ns-wwan-_wwan_auth_akap_response.md">WWAN_AUTH_AKAP_RESPONSE</a>
-</dt>
-<dt>
+
+<a href="..\wwan\ns-wwan-_wwan_auth_aka_response.md">WWAN_AUTH_AKA_RESPONSE</a>
+
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_auth_response.md">NDIS_WWAN_AUTH_RESPONSE</a>
-</dt>
-</dl>
- 
+
+<a href="..\wwan\ns-wwan-_wwan_auth_sim_response.md">WWAN_AUTH_SIM_RESPONSE</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_RESPONSE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_RESPONSE structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

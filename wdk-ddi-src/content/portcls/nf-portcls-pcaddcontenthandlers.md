@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c3ae9de0-3c21-498b-a29c-4ec54677826a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcAddContentHandlers
+ms.keywords : audpc-routines_11505f52-36d9-4b58-b1f8-44083705f9b5.xml, PcAddContentHandlers function [Audio Devices], PcAddContentHandlers, audio.pcaddcontenthandlers, portcls/PcAddContentHandlers
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting in Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcAddContentHandlers
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -48,22 +52,18 @@ PORTCLASSAPI NTSTATUS NTAPI PcAddContentHandlers(void);
 
 `ContentId`
 
-
+TBD
 
 `paHandlers`
 
-
+TBD
 
 `NumHandlers`
 
-
+TBD
 
 
 ## Return Value
-
-See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
-
-See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
 
 See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
 
@@ -85,11 +85,8 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmaddcontent
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
-</dt>
-</dl>
+
  
 
  

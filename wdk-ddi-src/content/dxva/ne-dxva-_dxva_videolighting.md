@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09adfa3f-443b-4500-bb08-27f91da20778
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_VideoLighting, DXVA_VideoLighting
+ms.keywords : DXVA_VideoLighting_bright, dxva/DXVA_VideoLighting_bright, DXVA_VideoLighting_office, dxva/DXVA_VideoLighting_Unknown, dxva/DXVA_VideoLighting_office, DXVA_VideoLighting enumeration [Display Devices], dxva/DXVA_VideoLighting, DXVA_VideoLighting_dim, DXVA_VideoLighting_dark, dxvaref_c223ad8d-6e70-4672-b286-292a7e36d6f7.xml, DXVA_VideoLightingMask, DXVA_VideoLighting_Unknown, dxva/DXVA_VideoLighting_dark, _DXVA_VideoLighting, dxva/DXVA_VideoLightingMask, dxva/DXVA_VideoLightingShift, DXVA_VideoLightingShift, display.dxva_videolighting, DXVA_VideoLighting, dxva/DXVA_VideoLighting_dim
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This enumeration type applies only to Windows Server
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_VideoLighting
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoLighting
 ---
 
@@ -106,11 +110,8 @@ The video lighting enumerators can be used to alter the gamma to generate a comp
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-</dt>
-</dl>
+
  
 
  

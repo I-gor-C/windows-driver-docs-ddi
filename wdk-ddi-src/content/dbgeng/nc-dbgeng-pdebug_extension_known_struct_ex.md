@@ -7,8 +7,8 @@ old-location : debugger\debugextensionknownstructex.htm
 old-project : debugger
 ms.assetid : 830BCD4C-0C3A-45F8-84E9-4F8596B8E1E8
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _DOT4_ACTIVITY, *PDOT4_ACTIVITY, DOT4_ACTIVITY
+ms.date : 1/19/2018
+ms.keywords : debugger.debugextensionknownstructex, DebugExtensionKnownStructEx, DebugExtensionKnownStructEx callback function [Windows Debugging], DebugExtensionKnownStructEx, PDEBUG_EXTENSION_KNOWN_STRUCT_EX, PDEBUG_EXTENSION_KNOWN_STRUCT_EX, dbgeng/DebugExtensionKnownStructEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DebugExtensionKnownStructEx
-req.alt-loc : Dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,28 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 
 # PDEBUG_EXTENSION_KNOWN_STRUCT_EX callback function
-The <i>DebugExtensionKnownStructEx</i> callback function is called by extensions in order to dump structures that are well known to them.
+The <i>DebugExtensionKnownStructEx</i> callback function is called by extensions in order to dump structures that are well known to them. 
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre> CALLBACK* PDEBUG_EXTENSION_KNOWN_STRUCT_EX DebugExtensionKnownStructEx;</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Syntax
 
@@ -87,7 +101,7 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## Remarks
 
-<i>DebugExtensionKnownStructEx</i> is called <b>PDEBUG_EXTENSION_KNOWN_STRUCT_EX</b> in the Dbgeng.h header file.</p>
+<i>DebugExtensionKnownStructEx</i> is called <b>PDEBUG_EXTENSION_KNOWN_STRUCT_EX</b> in the Dbgeng.h header file.
 
 ## Requirements
 | &nbsp; | &nbsp; |

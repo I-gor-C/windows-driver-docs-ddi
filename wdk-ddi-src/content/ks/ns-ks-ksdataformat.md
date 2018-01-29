@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e39a59f4-6ec2-402d-8f8e-12324d6cbfa8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSDATAFORMAT, *PKSDATARANGE, KSDATARANGE, *PKSDATAFORMAT, KSDATAFORMAT
+ms.keywords : PKSDATARANGE, KSDATARANGE, *PKSDATARANGE, ks/KSDATARANGE, ks/KSDATAFORMAT, KSDATAFORMAT, ks/PKSDATAFORMAT, ks/PKSDATARANGE, PKSDATAFORMAT structure pointer [Streaming Media Devices], KSDATARANGE structure [Streaming Media Devices], ks-struct_787a73ee-98dd-4e97-b7ea-2ed38ff564c7.xml, PKSDATAFORMAT, *PKSDATAFORMAT, KSDATAFORMAT structure [Streaming Media Devices], PKSDATARANGE structure pointer [Streaming Media Devices], stream.ksdataformat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSDATAFORMAT
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSDATARANGE, KSDATARANGE, *PKSDATAFORMAT, KSDATAFORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSDATARANGE, KSDATAFORMAT, KSDATARANGE, *PKSDATAFORMAT"
 ---
 
 # KSDATAFORMAT structure
@@ -52,40 +56,40 @@ typedef struct {
 
 ## Members
 
-        
-            `Flags`
 
-            Set Flags to KSDATAFORMAT_ATTRIBUTES (0x2) to indicate that the KSDATAFORMAT is followed in memory by a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> of <a href="..\ks\ns-ks-ksattribute.md">KSATTRIBUTE</a> structures.
-        
-            `FormatSize`
+`Flags`
 
-            Specifies the size, in bytes, of the KSDATAFORMAT structure. This must be at least <b>sizeof</b>(KSDATAFORMAT), but can be larger for specific settings of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b>. See the descriptions for these members for more information.
-        
-            `MajorFormat`
+Set Flags to KSDATAFORMAT_ATTRIBUTES (0x2) to indicate that the KSDATAFORMAT is followed in memory by a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> of <a href="..\ks\ns-ks-ksattribute.md">KSATTRIBUTE</a> structures.
 
-            Specifies the general format type. The data formats that are currently supported can be found in the KSDATAFORMAT_TYPE_XXX symbolic constants in the <i>ksmedia.h</i> header file that is included in the Windows Driver Kit (WDK). A data stream that has no particular format should use KSDATAFORMAT_TYPE_STREAM (defined in <i>ks.h</i>) as the value for its <b>MajorFormat</b>. For more information about this member, see <b>Remarks</b>.
-        
-            `Reserved`
+`FormatSize`
 
-            Reserved for system use. Drivers must set this member to zero.
-        
-            `SampleSize`
+Specifies the size, in bytes, of the KSDATAFORMAT structure. This must be at least <b>sizeof</b>(KSDATAFORMAT), but can be larger for specific settings of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b>. See the descriptions for these members for more information.
 
-            Specifies the sample size of the data, for fixed sample sizes, or zero, if the format has a variable sample size.
-        
-            `Specifier`
+`MajorFormat`
 
-            Specifies additional data format type information for a specific setting of <b>MajorFormat</b> and <b>SubFormat</b>. 
+Specifies the general format type. The data formats that are currently supported can be found in the KSDATAFORMAT_TYPE_XXX symbolic constants in the <i>ksmedia.h</i> header file that is included in the Windows Driver Kit (WDK). A data stream that has no particular format should use KSDATAFORMAT_TYPE_STREAM (defined in <i>ks.h</i>) as the value for its <b>MajorFormat</b>. For more information about this member, see <b>Remarks</b>.
+
+`Reserved`
+
+Reserved for system use. Drivers must set this member to zero.
+
+`SampleSize`
+
+Specifies the sample size of the data, for fixed sample sizes, or zero, if the format has a variable sample size.
+
+`Specifier`
+
+Specifies additional data format type information for a specific setting of <b>MajorFormat</b> and <b>SubFormat</b>. 
 	  The significance of this field is determined by the major format (and subformat, if the major format supports subformats). For example, <b>Specifier</b> can represent a particular encoding of a subformat, or it can be used to specify what type of data structure follows KSDATAFORMAT in memory.
 
 The following specifiers (defined in <i>ks.h</i>) are of general use:
-        
-            `SubFormat`
 
-            Specifies the subformat of a general format type. The data subformats that are currently supported can be found in the KSDATAFORMAT_SUBTYPE_XXX symbolic constants in the <i>ksmedia.h</i> header file that is included in the WDK. Major formats that do not support subformats should use the KSDATAFORMAT_SUBTYPE_NONE value for this member. For more information about this member, see <b>Remarks</b>.
+`SubFormat`
 
-    ## Remarks
-        At the minimum, a data format is specified by the <b>MajorFormat</b>, the <b>SubFormat</b>, and the <b>Specifier</b> members. A family of similar data formats can share the same values for <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b>. In that case, the specific data format is distinguished by additional data that follows the <b>Specifier</b> member in memory.
+Specifies the subformat of a general format type. The data subformats that are currently supported can be found in the KSDATAFORMAT_SUBTYPE_XXX symbolic constants in the <i>ksmedia.h</i> header file that is included in the WDK. Major formats that do not support subformats should use the KSDATAFORMAT_SUBTYPE_NONE value for this member. For more information about this member, see <b>Remarks</b>.
+
+## Remarks
+At the minimum, a data format is specified by the <b>MajorFormat</b>, the <b>SubFormat</b>, and the <b>Specifier</b> members. A family of similar data formats can share the same values for <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b>. In that case, the specific data format is distinguished by additional data that follows the <b>Specifier</b> member in memory.
 
 For a list of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b> combinations, see <a href="https://msdn.microsoft.com/dc2af282-4976-42d8-b07b-13b2a6dfb7d5">Stream Categories</a> and its subtopics.
 
@@ -97,13 +101,10 @@ For a list of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b> combina
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/dc2af282-4976-42d8-b07b-13b2a6dfb7d5">Stream Categories</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : FE572606-8F47-4C40-BF74-24D5F667D2EC
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords : bltooth.ioctl_bthx_set_version, IOCTL_BTHX_SET_VERSION control code [Bluetooth Devices], IOCTL_BTHX_SET_VERSION, bthxddi/IOCTL_BTHX_SET_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHX_SET_VERSION
-req.alt-loc : BthXDDI.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
 # IOCTL_BTHX_SET_VERSION IOCTL
-IOCTL_BTHX_SET_VERSION is used to inform the transport driver of the version of the extensibility interface being used.
-
-
-
 IOCTL_BTHX_SET_VERSION is used to inform the transport driver of the version of the extensibility interface being used.
 
 ### Major Code
@@ -69,26 +69,35 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The 
       <b>Information</b> member of the STATUS_BLOCK structure is set to zero because the Bluetooth driver
       stack returns no data with this IOCTL.
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
- 
+</td>
+</tr>
+</table> 
 
 Any unsuccessful NT status code prevents the driver from loading.
 
-    ## Remarks
-        IOCTL_BTHX_SET_VERSION is a synchronous operation.
+## Remarks
+IOCTL_BTHX_SET_VERSION is a synchronous operation.
 
-Only one version will be selected and set.</p>
+Only one version will be selected and set.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6F7DE233-D002-4927-80FC-307A3A33653A
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES
+ms.keywords : STORAGE_LB_PROVISIONING_MAP_RESOURCES structure [Storage Devices], STORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES structure pointer [Storage Devices], ntddstor/STORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN, storage.storage_lb_provisioning_map_resources, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, _STORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_LB_PROVISIONING_MAP_RESOURCES
-req.alt-loc : Ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES
 ---
 
 # _STORAGE_LB_PROVISIONING_MAP_RESOURCES structure
@@ -57,73 +61,57 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 
 ## Members
 
-        
-            `AvailableMappingResources`
 
-            The count, in bytes, of the available mapping resources for a disk.
-        
-            `AvailableMappingResourcesScope`
+`AvailableMappingResources`
 
-            Resources scope available to a LUN or a LUN pool.
+The count, in bytes, of the available mapping resources for a disk.
 
+`AvailableMappingResourcesScope`
+
+Resources scope available to a LUN or a LUN pool.
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `AvailableMappingResourcesValid`
+<td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED"></a><a id="log_page_lbp_resource_scope_not_reported"></a><dl>
+<dt><b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED</b></dt>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Mapping resources are not reported.
 
-            The validity of the <b>AvailableMappingResources</b> member.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
+</td>
 </tr>
 <tr>
-<td width="40%">
-        
-            `Reserved0`
+<td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_dedicated_to_lun"></a><dl>
+<dt><b>LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN</b></dt>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Mapping resources dedicated to a LUN.
 
-            Reserved.
-        
-            `Reserved1`
-
-            Reserved.
-        
-            `Reserved2`
-
-            Reserved.
-        
-            `Reserved3`
-
-            Reserved.
-        
-            `Size`
-
-            The size of this structure. This is set to <b>sizeof</b>(STORAGE_LB_PROVISIONING_MAP_RESOURCES).
-        
-            `UsedMappingResources`
-
-            The count, in bytes, of the used mapping resources for a disk.
-        
-            `UsedMappingResourcesScope`
-
-            Resources scope used by a LUN or LUN pool.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
+</td>
 </tr>
 <tr>
-        
-            `UsedMappingResourcesValid`
+<td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_not_dedicated_to_lun"></a><dl>
+<dt><b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN</b></dt>
+<dt>2</dt>
+</dl>
+</td>
+<td width="60%">
+Mapping resources dedicated to a LUN pool.
 
-            The validity of the <b>UsedMappingResources</b> member.
+</td>
+</tr>
+</table>
 
+`AvailableMappingResourcesValid`
+
+The validity of the <b>AvailableMappingResources</b> member.
 <table>
 <tr>
 <th>Value</th>
@@ -131,13 +119,133 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 </tr>
 <tr>
 <td width="40%">
-        
-            `Version`
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+<b>AvailableMappingResources</b> is not valid.
 
-            The version of this structure.
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+<b>AvailableMappingResources</b> is valid.
 
-    ## Remarks
-        As a managed storage element, resource usage for a thinly provisioned LUN is tracked. Resource allocation is logged for the device by the storage subsystem. A storage application can query for this resource usage  information using the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_lb_provisioning_map_resources.md"> IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a> request.
+</td>
+</tr>
+</table>
+
+`Reserved0`
+
+Reserved.
+
+`Reserved1`
+
+Reserved.
+
+`Reserved2`
+
+Reserved.
+
+`Reserved3`
+
+Reserved.
+
+`Size`
+
+The size of this structure. This is set to <b>sizeof</b>(STORAGE_LB_PROVISIONING_MAP_RESOURCES).
+
+`UsedMappingResources`
+
+The count, in bytes, of the used mapping resources for a disk.
+
+`UsedMappingResourcesScope`
+
+Resources scope used by a LUN or LUN pool.
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED"></a><a id="log_page_lbp_resource_scope_not_reported"></a><dl>
+<dt><b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED</b></dt>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Mapping resources are not reported.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_dedicated_to_lun"></a><dl>
+<dt><b>LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN</b></dt>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Mapping resources dedicated to a LUN.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN"></a><a id="log_page_lbp_resource_scope_not_dedicated_to_lun"></a><dl>
+<dt><b>LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN</b></dt>
+<dt>2</dt>
+</dl>
+</td>
+<td width="60%">
+Mapping resources dedicated to a LUN pool.
+
+</td>
+</tr>
+</table>
+
+`UsedMappingResourcesValid`
+
+The validity of the <b>UsedMappingResources</b> member.
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+<b>UsedMappingResources</b> is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+<b>UsedMappingResources</b> is valid.
+
+</td>
+</tr>
+</table>
+
+`Version`
+
+The version of this structure.
+
+## Remarks
+As a managed storage element, resource usage for a thinly provisioned LUN is tracked. Resource allocation is logged for the device by the storage subsystem. A storage application can query for this resource usage  information using the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_lb_provisioning_map_resources.md"> IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a> request.
 
 Logging of mapped resource counts is dependent on support from the storage device. The <b>AvailableMappingResources</b> and <b>UsedMappingResources</b> members contain resource counts when their respective validity fields are set.
 
@@ -151,13 +259,10 @@ Resource counts are in bytes instead of totals of blocks or slabs.
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h, Scsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_lb_provisioning_map_resources.md"> IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ee1dbd20-5502-4448-b39a-4629ddc73d01
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryPerformanceCounter
+ms.keywords : KeQueryPerformanceCounter, KeQueryPerformanceCounter routine [Kernel-Mode Driver Architecture], wdm/KeQueryPerformanceCounter, k105_39f70923-56fe-42b1-bec3-fe23ae62904d.xml, kernel.kequeryperformancecounter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeQueryPerformanceCounter
-req.alt-loc : Hal.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hal.lib
 req.dll : Hal.dll
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,26 +86,18 @@ For more info about this function and its usage, see <a href="https://msdn.micro
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kequeryinterrupttime.md">KeQueryInterruptTime</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/08169390-940b-4110-813a-249d107cc953">QueryPerformanceCounter</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-kequeryinterrupttime.md">KeQueryInterruptTime</a>
+
 <a href="https://msdn.microsoft.com/f69367a4-0516-4033-81e3-90d4c5270a1e">QueryPerformanceFrequency</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
+
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
+
+<a href="https://msdn.microsoft.com/08169390-940b-4110-813a-249d107cc953">QueryPerformanceCounter</a>
+
  
 
  

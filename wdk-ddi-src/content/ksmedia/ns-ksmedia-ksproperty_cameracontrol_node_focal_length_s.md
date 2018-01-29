@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7562f84d-aac2-48b6-bae2-518d1f58f71f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, *PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S
+ms.keywords : "*PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, ksmedia/PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, vidcapstruct_0eb477eb-b320-4055-b4aa-1e378ae202b1.xml, stream.ksproperty_cameracontrol_node_focal_length_s, PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure pointer [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, *PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S, KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S"
 ---
 
 # KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure
@@ -49,25 +53,25 @@ typedef struct {
 
 ## Members
 
-        
-            `lObjectiveFocalLengthMax`
 
-            Specifies a value of type LONG containing the maximum focal length of the lens closest to the camera subject.
-        
-            `lObjectiveFocalLengthMin`
+`lObjectiveFocalLengthMax`
 
-            Specifies a value of type LONG containing the minimum focal length of the lens closest to the camera subject.
-        
-            `lOcularFocalLength`
+Specifies a value of type LONG containing the maximum focal length of the lens closest to the camera subject.
 
-            Specifies a value of type LONG containing the focal length of the lens closest to the camera user.
-        
-            `NodeProperty`
+`lObjectiveFocalLengthMin`
 
-            Specifies both the target node and the property to <i>get</i>. This member is an initialized structure of type <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>.
+Specifies a value of type LONG containing the minimum focal length of the lens closest to the camera subject.
 
-    ## Remarks
-        If the camera has only one lens, these values can be used to represent zoom ratios. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff564406">KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH</a>.
+`lOcularFocalLength`
+
+Specifies a value of type LONG containing the focal length of the lens closest to the camera user.
+
+`NodeProperty`
+
+Specifies both the target node and the property to <i>get</i>. This member is an initialized structure of type <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>.
+
+## Remarks
+If the camera has only one lens, these values can be used to represent zoom ratios. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff564406">KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,22 +81,16 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567802">PROPSETID_VIDCAP_CAMERACONTROL</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564406">KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_focal_length_s.md">KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567802">PROPSETID_VIDCAP_CAMERACONTROL</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564406">KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH</a>
+
  
 
  

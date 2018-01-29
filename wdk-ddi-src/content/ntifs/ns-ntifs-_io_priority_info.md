@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1161b239-3ad1-4a0c-9d11-4a3a88d361b3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _IO_PRIORITY_INFO, *PIO_PRIORITY_INFO, IO_PRIORITY_INFO
+ms.keywords : ntifs/IO_PRIORITY_INFO, PIO_PRIORITY_INFO, ntifs/PIO_PRIORITY_INFO, ifsk.io_priority_info, othersystemstructures_19a36a9e-6950-4a52-b1e3-e25977777952.xml, IO_PRIORITY_INFO structure [Installable File System Drivers], _IO_PRIORITY_INFO, *PIO_PRIORITY_INFO, IO_PRIORITY_INFO, PIO_PRIORITY_INFO structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available starting with Windows Vi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_PRIORITY_INFO
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PIO_PRIORITY_INFO, IO_PRIORITY_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : IO_PRIORITY_INFO, *PIO_PRIORITY_INFO
 ---
 
 # _IO_PRIORITY_INFO structure
@@ -49,25 +53,25 @@ typedef struct _IO_PRIORITY_INFO {
 
 ## Members
 
-        
-            `IoPriority`
 
-            Read-only member used to hold a thread's I/O priority.
-        
-            `PagePriority`
+`IoPriority`
 
-            Read-only member used to hold a thread's paging priority.
-        
-            `Size`
+Read-only member used to hold a thread's I/O priority.
 
-            Read-only member initialized by the <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a> routine.
-        
-            `ThreadPriority`
+`PagePriority`
 
-            Read-only member used to hold a thread's priority.
+Read-only member used to hold a thread's paging priority.
 
-    ## Remarks
-        The IO_PRIORITY_INFO structure is used by the <a href="..\fltkernel\nf-fltkernel-fltretrieveiopriorityinfo.md">FltRetrieveIoPriorityInfo</a> and <a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a> routines to save and set a thread's priority state.
+`Size`
+
+Read-only member initialized by the <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a> routine.
+
+`ThreadPriority`
+
+Read-only member used to hold a thread's priority.
+
+## Remarks
+The IO_PRIORITY_INFO structure is used by the <a href="..\fltkernel\nf-fltkernel-fltretrieveiopriorityinfo.md">FltRetrieveIoPriorityInfo</a> and <a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a> routines to save and set a thread's priority state.
 
 A structure of type IO_PRIORITY_INFO must be initialized before first use by calling either the <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a> routine or the <a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a> routine.
 
@@ -79,40 +83,28 @@ A structure of type IO_PRIORITY_INFO must be initialized before first use by cal
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhint.md">FltGetIoPriorityHint</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhintfromcallbackdata.md">FltGetIoPriorityHintFromCallbackData</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhintfromfileobject.md">FltGetIoPriorityHintFromFileObject</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhintfromthread.md">FltGetIoPriorityHintFromThread</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltretrieveiopriorityinfo.md">FltRetrieveIoPriorityInfo</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltsetiopriorityhintintocallbackdata.md">FltSetIoPriorityHintIntoCallbackData</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltsetiopriorityhintintofileobject.md">FltSetIoPriorityHintIntoFileObject</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltsetiopriorityhintintothread.md">FltSetIoPriorityHintIntoThread</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltretrieveiopriorityinfo.md">FltRetrieveIoPriorityInfo</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhintfromfileobject.md">FltGetIoPriorityHintFromFileObject</a>
+
 <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhintfromcallbackdata.md">FltGetIoPriorityHintFromCallbackData</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhintfromthread.md">FltGetIoPriorityHintFromThread</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhint.md">FltGetIoPriorityHint</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetiopriorityhintintofileobject.md">FltSetIoPriorityHintIntoFileObject</a>
+
  
 
  

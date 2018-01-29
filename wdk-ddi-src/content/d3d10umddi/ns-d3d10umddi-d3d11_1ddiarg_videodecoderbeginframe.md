@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2664aec-dc96-4cf6-921b-ccd4ee6cf04e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_VIDEODECODERBEGINFRAME, D3D11_1DDIARG_VIDEODECODERBEGINFRAME
+ms.keywords : D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure [Display Devices], D3D11_1DDIARG_VIDEODECODERBEGINFRAME, display.d3d11_1ddiarg_videodecoderbeginframe, d3d10umddi/D3D11_1DDIARG_VIDEODECODERBEGINFRAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDIARG_VIDEODECODERBEGINFRAME
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDIARG_VIDEODECODERBEGINFRAME
 ---
 
@@ -48,18 +52,18 @@ typedef struct D3D11_1DDIARG_VIDEODECODERBEGINFRAME {
 
 ## Members
 
-        
-            `ContentKeySize`
 
-            The size, in bytes, of the content key that is specified in the <b>pContentKey</b> member.
-        
-            `hOutputView`
+`ContentKeySize`
 
-            A handle to the driver's private data for the video decoder output view. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessoroutputview.md">CreateVideoProcessorOutputView</a> function.
-        
-            `pContentKey`
+The size, in bytes, of the content key that is specified in the <b>pContentKey</b> member.
 
-            A pointer to a content key that was used to encrypt the video frame data. If no content key was used, set this member to <b>NULL</b>. If the caller provides a content key, the caller must use the session key to encrypt the content key.
+`hOutputView`
+
+A handle to the driver's private data for the video decoder output view. This handle was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessoroutputview.md">CreateVideoProcessorOutputView</a> function.
+
+`pContentKey`
+
+A pointer to a content key that was used to encrypt the video frame data. If no content key was used, set this member to <b>NULL</b>. If the caller provides a content key, the caller must use the session key to encrypt the content key.
 
 For more information, see the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe.md">VideoDecoderBeginFrame</a> function.
 
@@ -72,16 +76,12 @@ For more information, see the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessoroutputview.md">CreateVideoProcessorOutputView</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe.md">VideoDecoderBeginFrame</a>
-</dt>
-</dl>
+
  
 
  

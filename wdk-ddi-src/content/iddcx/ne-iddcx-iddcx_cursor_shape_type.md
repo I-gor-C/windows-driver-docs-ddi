@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8aced7c9-e1be-4ec0-8b59-77cee011a71e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_CURSOR_SHAPE_TYPE,
+ms.keywords : IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR, iddcx/IDDCX_CURSOR_SHAPE_TYPE, display.iddcx_cursor_shape_type, iddcx/IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED, IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED, IDDCX_CURSOR_SHAPE_TYPE enumeration [Display Devices], IDDCX_CURSOR_SHAPE_TYPE_ALPHA, iddcx/IDDCX_CURSOR_SHAPE_TYPE_ALPHA, iddcx/IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR, IDDCX_CURSOR_SHAPE_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_CURSOR_SHAPE_TYPE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -63,6 +67,11 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
 <tr>
 <td>IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED</td>
 <td>Indicates that the cursor shape is uninitialized</td>
+</tr>
+
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 

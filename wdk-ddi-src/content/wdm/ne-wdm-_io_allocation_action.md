@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 245d35a1-e877-4446-a0da-e50ece3656b1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION
+ms.keywords : IO_ALLOCATION_ACTION, KeepObject, wdm/DeallocateObjectKeepRegisters, wdm/PIO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, DeallocateObject, _IO_ALLOCATION_ACTION, PIO_ALLOCATION_ACTION, kernel.io_allocation_action, wdm/DeallocateObject, IO_ALLOCATION_ACTION enumeration [Kernel-Mode Driver Architecture], DeallocateObjectKeepRegisters, wdm/IO_ALLOCATION_ACTION, sysenum_26c04e01-0e17-4f1b-93c9-b9ad8d9ca4d5.xml, wdm/KeepObject, PIO_ALLOCATION_ACTION enumeration pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_ALLOCATION_ACTION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION
 req.product : Windows 10 or later.
 ---
@@ -73,7 +77,7 @@ If an <i>AdapterControl</i> or <i>ControllerControl</i> routine completes an IRP
 
 If a driver uses packet-based bus-master DMA, its <i>AdapterControl</i> routine should return <b>DeallocateObjectKeepRegisters</b>.
 
-Otherwise, the driver should return <b>KeepObject</b>.</p>
+Otherwise, the driver should return <b>KeepObject</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

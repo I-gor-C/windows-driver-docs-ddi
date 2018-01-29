@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d013aeb9-43a9-460f-a670-5b7bc9d3753d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortLogError
+ms.keywords : display.videoportlogerror, VideoPort_Functions_18666bd9-b871-4e4c-9f31-bd5cbd505d52.xml, VideoPortLogError function [Display Devices], VideoPortLogError, video/VideoPortLogError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortLogError
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : <= DIRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -58,7 +62,7 @@ Pointer to the miniport driver's device extension.
 
 `OPTIONAL`
 
-
+TBD
 
 `ErrorCode`
 
@@ -95,11 +99,8 @@ However, miniport drivers should <i>not</i> log errors, such as "failed to detec
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570170">VideoDebugPrint</a>
-</dt>
-</dl>
+
  
 
  

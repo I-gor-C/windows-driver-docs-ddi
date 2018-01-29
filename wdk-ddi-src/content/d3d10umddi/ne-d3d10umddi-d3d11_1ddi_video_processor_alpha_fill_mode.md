@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 22b50f49-821a-407e-89c0-fe7d637664fa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE
+ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND, display.d3d11_1ddi_video_processor_alpha_fill_mode, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE enumeration [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE
 ---
 
@@ -85,14 +89,10 @@ If the input stream does not have alpha data, the video processor sets the alpha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputalphafillmode.md">VideoProcessorSetOutputAlphaFillMode</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputbackgroundcolor.md">VideoProcessorSetOutputBackgroundColor</a>
-</dt>
-</dl>
+
  
 
  

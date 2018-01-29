@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 586820c5-5662-4f2d-9413-d06b9794173a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerSetAccess
+ms.keywords : storage.changersetaccess, chgrmini_3b7a1ae3-1724-464a-942a-54ecbae6329d.xml, ChangerSetAccess, mcd/ChangerSetAccess, ChangerSetAccess function [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerSetAccess
-req.alt-loc : mcd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -99,17 +103,12 @@ Finally, <b>ChangerSetAccess</b> builds an SRB with a CDB for the given operatio
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_set_access.md">CHANGER_SET_ACCESS</a>
-</dt>
-<dt>
 <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_access.md">IOCTL_CHANGER_SET_ACCESS</a>
-</dt>
-</dl>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_set_access.md">CHANGER_SET_ACCESS</a>
+
+<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
+
  
 
  

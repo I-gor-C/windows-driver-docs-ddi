@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 11126cc9-43a1-41b1-adc9-13af57157d74
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWavePciStream, IMiniportWavePciStream::MappingAvailable, MappingAvailable
+ms.keywords : audio.iminiportwavepcistream_mappingavailable, audmp-routines_931efc43-ec71-4b60-905a-47ec374da31e.xml, MappingAvailable, MappingAvailable method [Audio Devices], MappingAvailable method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::MappingAvailable, IMiniportWavePciStream interface [Audio Devices], MappingAvailable method, IMiniportWavePciStream, portcls/IMiniportWavePciStream::MappingAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWavePciStream.MappingAvailable
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -76,14 +80,10 @@ See the discussion of allocator framing in <a href="https://msdn.microsoft.com/6
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
-</dt>
-</dl>
+
  
 
  

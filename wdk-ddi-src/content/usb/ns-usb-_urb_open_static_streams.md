@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B3C329D6-541B-410D-A9AB-AF91F1141DFD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_OPEN_STATIC_STREAMS,
+ms.keywords : usb/_URB_OPEN_STATIC_STREAMS, buses._urb_open_basic_streams, _URB_OPEN_STATIC_STREAMS structure [Buses], _URB_OPEN_STATIC_STREAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_OPEN_STATIC_STREAMS
-req.alt-loc : Usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -54,36 +58,40 @@ struct _URB_OPEN_STATIC_STREAMS {
 
 ## Members
 
-        
-            `Hdr`
 
-            The <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_OPEN_STATIC_STREAMS, and <b>Hdr.Length</b> must be <code>sizeof(_URB_OPEN_STATIC_STREAMS)</code>.
-        
-            `NumberOfStreams`
+`_URB_HEADER`
 
-            The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the USB driver stack, the host controller, and the endpoint in the device. For more information, see Remarks.
-        
-            `PipeHandle`
 
-            An opaque handle for the pipe associated with the endpoint that supports the streams to open.
+
+`Hdr`
+
+The <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_OPEN_STATIC_STREAMS, and <b>Hdr.Length</b> must be <code>sizeof(_URB_OPEN_STATIC_STREAMS)</code>.
+
+`NumberOfStreams`
+
+The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the USB driver stack, the host controller, and the endpoint in the device. For more information, see Remarks.
+
+`PipeHandle`
+
+An opaque handle for the pipe associated with the endpoint that supports the streams to open.
 
 The client driver obtains <b>PipeHandle</b> from the    URB_FUNCTION_SELECT_CONFIGURATION or URB_FUNCTION_SELECT_INTERFACE request.
-        
-            `StreamInfoSize`
 
-            Size of the <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structure.  <b>StreamInfoSize</b> must be <code>sizeof(USBD_STREAM_INFORMATION)</code>;
+`StreamInfoSize`
+
+Size of the <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structure.  <b>StreamInfoSize</b> must be <code>sizeof(USBD_STREAM_INFORMATION)</code>;
 otherwise, the request fails and the URB status is  USBD_STATUS_INFO_LENGTH_MISMATCH.
-        
-            `StreamInfoVersion`
 
-            Version of the <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structure.  Must be set to URB_OPEN_STATIC_STREAMS_VERSION_100; otherwise, the request fails and the URB status is  USBD_STATUS_INVALID_PARAMETER.
-        
-            `Streams`
+`StreamInfoVersion`
 
-            Pointer to a caller-allocated, initialized array of <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.   For more information, see Remarks.
+Version of the <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structure.  Must be set to URB_OPEN_STATIC_STREAMS_VERSION_100; otherwise, the request fails and the URB status is  USBD_STATUS_INVALID_PARAMETER.
 
-    ## Remarks
-        To use  streams (other than the default stream) in the endpoint for I/O operations, the client driver opens the required streams by sending an open-stream request (URB_FUNCTION_OPEN_STATIC_STREAMS) to the USB driver stack. For the request, the client driver must format the URB by  initializing the  <b>_URB_OPEN_STATIC_STREAMS</b> structure. To format the URB, call the <a href="..\usbdlib\nf-usbdlib-usbbuildopenstaticstreamsrequest.md">UsbBuildOpenStaticStreamsRequest</a>  function.
+`Streams`
+
+Pointer to a caller-allocated, initialized array of <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.   For more information, see Remarks.
+
+## Remarks
+To use  streams (other than the default stream) in the endpoint for I/O operations, the client driver opens the required streams by sending an open-stream request (URB_FUNCTION_OPEN_STATIC_STREAMS) to the USB driver stack. For the request, the client driver must format the URB by  initializing the  <b>_URB_OPEN_STATIC_STREAMS</b> structure. To format the URB, call the <a href="..\usbdlib\nf-usbdlib-usbbuildopenstaticstreamsrequest.md">UsbBuildOpenStaticStreamsRequest</a>  function.
 
 The maximum number of streams that can be opened by a client driver, must be less than or equal to the maximum number of streams supported by the USB driver stack, the host controller, and the bulk endpoint. To get the maximum number of streams supported by the host controller, call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>. The USB driver stack supports up to 255 streams.  If the client driver requests more than 255 streams, <b>USBD_QueryUsbCapability</b> fails the request. To get the maximum number of streams supported by the endpoint, inspect the endpoint companion descriptor (see <a href="..\usbspec\ns-usbspec-_usb_superspeed_endpoint_companion_descriptor.md">USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</a> in Usbspec.h).
 
@@ -99,22 +107,16 @@ When the client driver is finished using the streams, the driver can close all s
 | **Minimum UMDF version** |  |
 | **Header** | usb.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>
+
  
 
  

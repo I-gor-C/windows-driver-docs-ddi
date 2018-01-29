@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3135b9fa-17f0-410a-b563-57fd1548f495
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SETALLOCATIONPRIORITY, D3DKMT_SETALLOCATIONPRIORITY
+ms.keywords : OpenGL_Structs_9afc3b7a-fcd5-4fb4-bfb9-5e752b225a4e.xml, D3DKMT_SETALLOCATIONPRIORITY structure [Display Devices], display.d3dkmt_setallocationpriority, _D3DKMT_SETALLOCATIONPRIORITY, d3dkmthk/D3DKMT_SETALLOCATIONPRIORITY, D3DKMT_SETALLOCATIONPRIORITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SETALLOCATIONPRIORITY
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SETALLOCATIONPRIORITY
 ---
 
@@ -50,31 +54,30 @@ typedef struct _D3DKMT_SETALLOCATIONPRIORITY {
 
 ## Members
 
-        
-            `AllocationCount`
 
-            [in] The number of allocations in the array that <b>phAllocationList</b> specifies. If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>AllocationCount</b> to zero.
-        
-            `hDevice`
+`AllocationCount`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the resource or list of allocations are associated with.
-        
-            `hResource`
+[in] The number of allocations in the array that <b>phAllocationList</b> specifies. If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>AllocationCount</b> to zero.
 
-            [in] A handle to a resource whose priority must be set. If the OpenGL ICD uses the array that <b>phAllocationList</b> specifies to set the priority for the list of allocations, it sets <b>hResource</b> to <b>NULL</b>. If the OpenGL ICD sets <b>hResource</b> to a non-<b>NULL</b> value, it must set the <b>AllocationCount</b> member to zero and <b>phAllocationList</b> to <b>NULL</b>. 
+`hDevice`
+
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the resource or list of allocations are associated with.
+
+`hResource`
+
+[in] A handle to a resource whose priority must be set. If the OpenGL ICD uses the array that <b>phAllocationList</b> specifies to set the priority for the list of allocations, it sets <b>hResource</b> to <b>NULL</b>. If the OpenGL ICD sets <b>hResource</b> to a non-<b>NULL</b> value, it must set the <b>AllocationCount</b> member to zero and <b>phAllocationList</b> to <b>NULL</b>. 
 
 If <b>hResource</b> is non-<b>NULL</b>, all of the allocations that belong to the resource are set to the priority that is specified by the first element in the array that <b>pPriorities</b> points to.
-        
-            `phAllocationList`
 
-            [in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>phAllocationList</b> to <b>NULL</b>.
-        
-            `pPriorities`
+`phAllocationList`
 
-            [in] A pointer to an array of priority levels. If the <b>hResource</b> member is non-<b>NULL</b>, the array must contain a single element. If <b>hResource</b> is <b>NULL</b>, the number of elements in the array is specified by the <b>AllocationCount</b> member, and each allocation in the array that <b>phAllocationList</b> specifies is set to the priority level of the corresponding element in <b>pPriorities</b>.
+[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. If the OpenGL ICD sets the handle in the <b>hResource</b> member to a non-<b>NULL</b> value, it must set <b>phAllocationList</b> to <b>NULL</b>.
+
+`pPriorities`
+
+[in] A pointer to an array of priority levels. If the <b>hResource</b> member is non-<b>NULL</b>, the array must contain a single element. If <b>hResource</b> is <b>NULL</b>, the number of elements in the array is specified by the <b>AllocationCount</b> member, and each allocation in the array that <b>phAllocationList</b> specifies is set to the priority level of the corresponding element in <b>pPriorities</b>.
 
 Each element in <b>pPriorities</b> can be set to one of the following values.
-
 <table>
 <tr>
 <th>Enumerator</th>
@@ -130,8 +133,7 @@ Maximum priority
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about the meanings of the preceding values, see the Remarks section of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setprioritycb.md">pfnSetPriorityCb</a> function.
 
@@ -144,13 +146,10 @@ For more information about the meanings of the preceding values, see the Remarks
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetallocationpriority.md">D3DKMTSetAllocationPriority</a>
-</dt>
-</dl>
+
  
 
  

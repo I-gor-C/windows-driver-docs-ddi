@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7c6d61c6-40e5-46fd-8c18-1f9d89c58515
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortWritePortUlong
+ms.keywords : storport/StorPortWritePortUlong, storage.storportwriteportulong, StorPortWritePortUlong, storprt_4f568f62-adb7-4176-9229-e2af5d4453cb.xml, StorPortWritePortUlong routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortWritePortUlong
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -86,14 +90,10 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportulong.md">Scsi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\srb\nf-srb-scsiportwriteportulong.md">ScsiPortWritePortUlong</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportwriteportbufferulong.md">StorPortWritePortBufferUlong</a>
-</dt>
-</dl>
+
+<a href="..\srb\nf-srb-scsiportwriteportulong.md">ScsiPortWritePortUlong</a>
+
  
 
  

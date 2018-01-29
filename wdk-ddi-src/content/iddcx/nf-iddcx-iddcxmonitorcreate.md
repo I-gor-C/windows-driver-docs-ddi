@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e089827-dd50-43cb-9e1a-34c439780831
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxMonitorCreate
+ms.keywords : IddCxMonitorCreate method [Display Devices], display.iddcxmonitorcreate, IddCxMonitorCreate, iddcx/IddCxMonitorCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IddCxMonitorCreate
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

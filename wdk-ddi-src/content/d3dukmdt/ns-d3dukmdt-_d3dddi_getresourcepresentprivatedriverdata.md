@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4473E808-D22E-47C4-8619-7427C8BA682E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA
+ms.keywords : _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, d3dukmdt/D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, display.d3dddi_getresourcepresentprivatedriverdata, D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA
 ---
 
@@ -48,21 +52,19 @@ typedef struct _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA {
 
 ## Members
 
-        
-            `hResource`
 
-            [in] A DirectX graphics kernel resource handle.
-        
-            `pPrivateDriverData`
+`hResource`
 
-            [in, out] The buffer where the private data will be written to.
-        
-            `PrivateDriverDataSize`
+[in] A DirectX graphics kernel resource handle.
 
-            [in, out] The size of the <b>pPrivateDriverData</b> buffer in bytes. When zero or when there is insufficient space, the size of the required buffer is returned back to the caller along with a <b>STATUS_INVALID_BUFFER_SIZE</b><b>HRESULT</b> value from the calling method. 
+`pPrivateDriverData`
 
-<div class="alert"><b>Note</b>  By the time another call is made with the new buffer size, the resource could be associated with a different sized buffer.</div>
-<div> </div>
+[in, out] The buffer where the private data will be written to.
+
+`PrivateDriverDataSize`
+
+[in, out] The size of the <b>pPrivateDriverData</b> buffer in bytes. When zero or when there is insufficient space, the size of the required buffer is returned back to the caller along with a <b>STATUS_INVALID_BUFFER_SIZE</b><b>HRESULT</b> value from the calling method. 
+<div class="alert"><b>Note</b>  By the time another call is made with the new buffer size, the resource could be associated with a different sized buffer.</div><div> </div>
 
 
 ## Requirements
@@ -73,13 +75,10 @@ typedef struct _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getresourcepresentprivatedriverdatacb.md">pfnGetResourcePresentPrivateDriverDataCb</a>
-</dt>
-</dl>
+
  
 
  

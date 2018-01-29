@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cdfe1932-ee3d-41ea-8d7b-85c17c0f1722
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceCreateDeviceInterface
+ms.keywords : WdfDeviceCreateDeviceInterface, wdf.wdfdevicecreatedeviceinterface, kmdf.wdfdevicecreatedeviceinterface, wdfdevice/WdfDeviceCreateDeviceInterface, WdfDeviceCreateDeviceInterface method, DFDeviceObjectGeneralRef_467c4866-4ba7-4450-9aec-e63c3172d604.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfDeviceCreateDeviceInterface
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,8 +86,6 @@ Drivers can use the <i>ReferenceString</i> parameter to differentiate different 
 
 For more information about device interfaces and the <b>WdfDeviceCreateDeviceInterface</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces">Using Device Interfaces</a>.
 
-The following example registers the COM port interface class for a device.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -98,14 +100,10 @@ The following example registers the COM port interface class for a device.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
-</dt>
-</dl>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
  
 
  

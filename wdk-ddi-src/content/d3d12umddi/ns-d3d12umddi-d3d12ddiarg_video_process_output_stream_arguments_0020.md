@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F8D7A87D-FFE6-4846-A902-2A686D78F0C1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020, D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020
+ms.keywords : D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 structure [Display Devices], display.d3d12ddiarg_video_process_output_stream_parameters, D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020, d3d12umddi/D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020
 ---
 
@@ -53,19 +57,18 @@ typedef struct D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 {
 
 ## Members
 
-        
-            `AlphaFillMode`
 
-            The alpha fill mode for data that the video processor writes to the render target.  For more information, see <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_alpha_fill_mode_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE</a> enumeration.
-        
-            `AlphaFillModeSourceStreamIndex`
+`AlphaFillMode`
 
-            The zero-based index of an input stream. If the <b>AlphaFillMode</b> member has the value <b>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_SOURCE_STREAM</b>, this value is used. Otherwise, it is ignored.
-        
-            `BackgroundColor`
+The alpha fill mode for data that the video processor writes to the render target.  For more information, see <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_alpha_fill_mode_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE</a> enumeration.
 
-            The background color, which the video processor uses to fill areas of the target rectangle that do not contain a video image. Areas outside the target rectangle are not affected.  The meaning of the values are specified by the <b>ColorSpace</b> member
+`AlphaFillModeSourceStreamIndex`
 
+The zero-based index of an input stream. If the <b>AlphaFillMode</b> member has the value <b>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_SOURCE_STREAM</b>, this value is used. Otherwise, it is ignored.
+
+`BackgroundColor`
+
+The background color, which the video processor uses to fill areas of the target rectangle that do not contain a video image. Areas outside the target rectangle are not affected.  The meaning of the values are specified by the <b>ColorSpace</b> member
 <table>
 <tr>
 <th></th>
@@ -93,26 +96,26 @@ typedef struct D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 {
 <td>A</td>
 </tr>
 </table>
-        
-            `ColorSpace`
 
-            The colorspace for the video processor output surface as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
-        
-            `EnableStereo`
+`ColorSpace`
 
-            If true, stereo output is enabled. If false, the video processor produces mono video frames.
-        
-            `FrameRate`
+The colorspace for the video processor output surface as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
 
-            The frame rate of the output video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
-        
-            `OutputStream`
+`EnableStereo`
 
-            The output surfaces for the video process command.  If stereo output is enabled, index 0 contains the left output while index  1 contains the right input.  If stereo output is not enabled, only index 0 is used to specify the output. Index 1 should be a null pointer.
-        
-            `TargetRectangle`
+If true, stereo output is enabled. If false, the video processor produces mono video frames.
 
-            The target rectangle, which is the area within the destination surface where the output is drawn. The target rectangle is given in pixel coordinates, relative to the destination surface.
+`FrameRate`
+
+The frame rate of the output video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
+
+`OutputStream`
+
+The output surfaces for the video process command.  If stereo output is enabled, index 0 contains the left output while index  1 contains the right input.  If stereo output is not enabled, only index 0 is used to specify the output. Index 1 should be a null pointer.
+
+`TargetRectangle`
+
+The target rectangle, which is the area within the destination surface where the output is drawn. The target rectangle is given in pixel coordinates, relative to the destination surface.
 
 
 ## Requirements
@@ -123,19 +126,14 @@ typedef struct D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 {
 | **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_alpha_fill_mode_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a>
-</dt>
-</dl>
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_alpha_fill_mode_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE</a>
+
+<a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a>
+
  
 
  

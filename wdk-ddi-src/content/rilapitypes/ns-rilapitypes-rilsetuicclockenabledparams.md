@@ -7,8 +7,8 @@ old-location : netvista\rilsetuicclockenabledparams_2.htm
 old-project : netvista
 ms.assetid : c29aa1f0-d274-4782-9b56-31a84e2686e4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS, *LPRILSETUICCLOCKENABLEDPARAMS
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILSETUICCLOCKENABLEDPARAMS, *LPRILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetuicclockenabledparams_2, RILSETUICCLOCKENABLEDPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSETUICCLOCKENABLEDPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSETUICCLOCKENABLEDPARAMS, *LPRILSETUICCLOCKENABLEDPARAMS
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _RILSETUICCLOCKENABLEDPARAMS {
 
 ## Members
 
-        
-            `fEnable`
 
-            
-        
-            `lockCredential`
+`fEnable`
 
-            
+
+
+`lockCredential`
+
+
 
 
 ## Requirements

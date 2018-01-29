@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 49B03A5F-9F96-4F0B-AC52-ADBDC8ED03B2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3, *PSTOR_POFX_DEVICE_V3
+ms.keywords : STOR_POFX_DEVICE_FLAG_NO_D3, storport/PSTOR_POFX_DEVICE_V3, *PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT, PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE, STOR_POFX_DEVICE_FLAG_NO_D0, STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD, PSTOR_POFX_DEVICE_V3 structure pointer [Storage Devices], STOR_POFX_DEVICE_V3 structure [Storage Devices], STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT, storport/STOR_POFX_DEVICE_V2, _STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION, storage.stor_pofx_device_v3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_POFX_DEVICE_V3
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : STOR_POFX_DEVICE_V3, *PSTOR_POFX_DEVICE_V3
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3"
 req.product : Windows 10 or later.
 ---
 
@@ -56,22 +60,21 @@ typedef struct _STOR_POFX_DEVICE_V3 {
 
 ## Members
 
-        
-            `ComponentCount`
 
-            The number of elements in the <b>Components</b> array. Set this member to 1. Currently, only a single component is supported for either a storage adapter or logical unit.
-        
-            `Components`
+`ComponentCount`
 
-            This member is the first element in an array of one or more <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">STOR_POFX_COMPONENT</a> elements. If the array contains more than one element, the additional elements immediately follow the <b>STOR_POFX_DEVICE</b> structure. The array contains one element for each component in the device.  Currently, storage devices have only  one component so additional component structures are unnecessary.
-        
-            `Flags`
+The number of elements in the <b>Components</b> array. Set this member to 1. Currently, only a single component is supported for either a storage adapter or logical unit.
 
-            The device power state capabilities flags. The miniport sets one or more of the PoFx device flags to enable or disable power state capabilities.
+`Components`
+
+This member is the first element in an array of one or more <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">STOR_POFX_COMPONENT</a> elements. If the array contains more than one element, the additional elements immediately follow the <b>STOR_POFX_DEVICE</b> structure. The array contains one element for each component in the device.  Currently, storage devices have only  one component so additional component structures are unnecessary.
+
+`Flags`
+
+The device power state capabilities flags. The miniport sets one or more of the PoFx device flags to enable or disable power state capabilities.
 
 
 <b>Flags</b> is a bitwise OR combination of the following.
-
 
 
 <table>
@@ -80,21 +83,93 @@ typedef struct _STOR_POFX_DEVICE_V3 {
 <th>Meaning</th>
 </tr>
 <tr>
-        
-            `MinimumPowerCyclePeriodInMS`
+<td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_D0"></a><a id="stor_pofx_device_flag_no_d0"></a><dl>
+<dt><b>STOR_POFX_DEVICE_FLAG_NO_D0</b></dt>
+</dl>
+</td>
+<td width="60%">
+Requests that a  power up IRP not be sent to the device object for the adapter or unit.
 
-            Indicates that the device should not be power cycled (D0 -&gt; D3 -&gt; D0) more than once per the given period in Milliseconds. This member is only valid when the STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT flag has been set.
-        
-            `Size`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_D3"></a><a id="stor_pofx_device_flag_no_d3"></a><dl>
+<dt><b>STOR_POFX_DEVICE_FLAG_NO_D3</b></dt>
+</dl>
+</td>
+<td width="60%">
+Requests that a  power down IRP not be sent to the device object for the adapter or unit.
 
-            The size of this structure. Set this value to <b>STOR_POFX_DEVICE_V3_SIZE</b>.
-        
-            `Version`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD"></a><a id="stor_pofx_device_flag_enable_d3_cold"></a><dl>
+<dt><b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b></dt>
+</dl>
+</td>
+<td width="60%">
+Enables Storport to set the D3 Cold state for the adapter if
+  it supports it. This flag applies to adapters only.
 
-            The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V3</b>.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE"></a><a id="stor_pofx_device_flag_no_dump_active"></a><dl>
+<dt><b>STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The miniport is not able to bring the storage device active in dump mode if the device has entered the idle state or the power off when idle state.
+This flag indicates whether a device is available for dump when it is idle.
 
-    ## Remarks
-        To register a storage adapter for Storport PoFx support, the miniport driver calls <a href="..\storport\nf-storport-storportenablepassiveinitialization.md">StorPortEnablePassiveInitialization</a> in its <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine and implements a <a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>. The miniport calls <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a> within it's <b>HwStorPassiveInitializeRoutine</b> to provide information about the adapter component.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT"></a><a id="stor_pofx_device_flag_idle_timeout"></a><dl>
+<dt><b>STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT</b></dt>
+</dl>
+</td>
+<td width="60%">
+If the <b>STOR_POFX_DEVICE_V3</b> represents a unit, this indicates the UnitMinIdleTimeoutInMS field should be honored. If the <b>STOR_POFX_DEVICE_V3</b> represents an adapter, this indicates the AdapterIdleTimeoutInMS field should be honored.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT"></a><a id="stor_pofx_device_flag_adaptive_d3_idle_timeout"></a><dl>
+<dt><b>STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT</b></dt>
+</dl>
+</td>
+<td width="60%">
+Indicates that Storport should dynamically adjust the D3 idle timeout such that the device can aggressively enter D3 when necessary. This is valid only when <b>STOR_POFX_DEVICE_V3</b> is used.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION"></a><a id="stor_pofx_device_flag_no_unit_registration"></a><dl>
+<dt><b>STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION</b></dt>
+</dl>
+</td>
+<td width="60%">
+Specifies that none of the units exposed by this adapter should be registered for runtime power management. This is valid only for STOR_POFX_DEVICE structures that represent an adapter.
+
+</td>
+</tr>
+</table>
+
+`MinimumPowerCyclePeriodInMS`
+
+Indicates that the device should not be power cycled (D0 -&gt; D3 -&gt; D0) more than once per the given period in Milliseconds. This member is only valid when the STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT flag has been set.
+
+`Size`
+
+The size of this structure. Set this value to <b>STOR_POFX_DEVICE_V3_SIZE</b>.
+
+`Version`
+
+The version number of this structure. Set this member to <b>STOR_POFX_DEVICE_VERSION_V3</b>.
+
+## Remarks
+To register a storage adapter for Storport PoFx support, the miniport driver calls <a href="..\storport\nf-storport-storportenablepassiveinitialization.md">StorPortEnablePassiveInitialization</a> in its <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine and implements a <a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>. The miniport calls <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a> within it's <b>HwStorPassiveInitializeRoutine</b> to provide information about the adapter component.
 
 To register a storage unit for Storport PoFx support, the miniport driver implements the <a href="..\storport\nc-storport-hw_unit_control.md">HwStorUnitControl</a> callback routine and provides handling of the <b>ScsiUnitPoFxPowerInfo</b> unit control code. When the handling the <b>ScsiUnitPoFxPowerInfo</b> control code, the miniport calls <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a> if idle power management for the unit component is enabled.
 
@@ -108,25 +183,18 @@ The component for the storage device identified by its <b>Components</b> array i
 | **Minimum UMDF version** |  |
 | **Header** | storport.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">STOR_POFX_COMPONENT</a>
-</dt>
-<dt>
-<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
-</dt>
-<dt>
+
 <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
-</dt>
-<dt>
+
+<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
+
+<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
+
 <a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 98d0b8ce-5485-4584-b164-a1bc698b08ba
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamPointerAdvance
+ms.keywords : KsStreamPointerAdvance function [Streaming Media Devices], avfunc_1c66466d-2144-4d67-ac1f-31156bc3b07d.xml, stream.ksstreampointeradvance, ks/KsStreamPointerAdvance, KsStreamPointerAdvance
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsStreamPointerAdvance
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -79,23 +83,16 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsets.md">KsStreamPointerAdvanceOffsets</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsets.md">KsStreamPointerAdvanceOffsets</a>
+
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fe2f4a93-3fdd-422b-afce-8def3ed6688e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_DiscoveryConfig, MSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig
+ms.keywords : iscsicfg/PMSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig, structs-iSCSI_b27b8a7d-40bd-40a7-b9d8-3e49bbc8497f.xml, _MSiSCSI_DiscoveryConfig, MSiSCSI_DiscoveryConfig structure [Storage Devices], *PMSiSCSI_DiscoveryConfig, MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig structure pointer [Storage Devices], iscsicfg/MSiSCSI_DiscoveryConfig, storage.msiscsi_discoveryconfig
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_DiscoveryConfig
-req.alt-loc : iscsicfg.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMSiSCSI_DiscoveryConfig, MSiSCSI_DiscoveryConfig"
 ---
 
 # _MSiSCSI_DiscoveryConfig structure
@@ -50,29 +54,29 @@ typedef struct _MSiSCSI_DiscoveryConfig {
 
 ## Members
 
-        
-            `AutomaticiSNSDiscovery`
 
-            A Boolean value that indicates whether the initiator should automatically search for an iSNS server and then perform target discovery by using iSNS. If this member is <b>TRUE</b>, the initiator should automatically search for an iSNS server and then perform target discovery by using iSNS.
-        
-            `InitiatorName`
+`AutomaticiSNSDiscovery`
 
-            The default initiator name to register with the iSNS server.
-        
-            `iSNSServer`
+A Boolean value that indicates whether the initiator should automatically search for an iSNS server and then perform target discovery by using iSNS. If this member is <b>TRUE</b>, the initiator should automatically search for an iSNS server and then perform target discovery by using iSNS.
 
-            If <b>AutomaticiSNSDiscovery</b> is <b>FALSE</b>, <b>iSNSServer</b> contains a <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that provides a fixed address of the iSNS server that is independent of the version of the IP protocol in use.
-        
-            `PerformiSNSDiscovery`
+`InitiatorName`
 
-            A Boolean value that indicates whether the initiator performs target discovery by using iSNS and a predetermined iSNS server. If this member is <b>TRUE</b>, the initiator performs target discovery by using iSNS and a predetermined iSNS server. If this member is <b>FALSE</b>, the initiator does not do discovery with iSNS.
-        
-            `PerformSLPDiscovery`
+The default initiator name to register with the iSNS server.
 
-            A Boolean value that indicates whether the initiator performs target discovery by using SLP. If this member is <b>TRUE</b>, the initiator performs target discovery by using SLP.
+`iSNSServer`
 
-    ## Remarks
-        The WMI tool suite automatically generates a declaration of the MSiSCSI_DiscoveryConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562995">MSiSCSI_DiscoveryConfig WMI Class</a> in <i>Config.mof</i>. 
+If <b>AutomaticiSNSDiscovery</b> is <b>FALSE</b>, <b>iSNSServer</b> contains a <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that provides a fixed address of the iSNS server that is independent of the version of the IP protocol in use.
+
+`PerformiSNSDiscovery`
+
+A Boolean value that indicates whether the initiator performs target discovery by using iSNS and a predetermined iSNS server. If this member is <b>TRUE</b>, the initiator performs target discovery by using iSNS and a predetermined iSNS server. If this member is <b>FALSE</b>, the initiator does not do discovery with iSNS.
+
+`PerformSLPDiscovery`
+
+A Boolean value that indicates whether the initiator performs target discovery by using SLP. If this member is <b>TRUE</b>, the initiator performs target discovery by using SLP.
+
+## Remarks
+The WMI tool suite automatically generates a declaration of the MSiSCSI_DiscoveryConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562995">MSiSCSI_DiscoveryConfig WMI Class</a> in <i>Config.mof</i>. 
 
 Initiators are required to implement the MSiSCSI_DiscoveryConfig class. You must implement this class.
 
@@ -84,16 +88,12 @@ Initiators are required to implement the MSiSCSI_DiscoveryConfig class. You must
 | **Minimum UMDF version** |  |
 | **Header** | iscsicfg.h (include Iscsicfg.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562995">MSiSCSI_DiscoveryConfig WMI Class</a>
-</dt>
-</dl>
+
  
 
  

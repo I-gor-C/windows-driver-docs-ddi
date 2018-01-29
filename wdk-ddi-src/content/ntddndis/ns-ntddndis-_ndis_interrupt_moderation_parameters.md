@@ -7,8 +7,8 @@ old-location : netvista\ndis_interrupt_moderation_parameters.htm
 old-project : netvista
 ms.assetid : e2270dbc-0bc3-4bef-9e11-26006d8f0d71
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_INTERRUPT_MODERATION_PARAMETERS, *PNDIS_INTERRUPT_MODERATION_PARAMETERS, NDIS_INTERRUPT_MODERATION_PARAMETERS
+ms.date : 1/18/2018
+ms.keywords : _NDIS_INTERRUPT_MODERATION_PARAMETERS, NDIS_INTERRUPT_MODERATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_interrupt_moderation_parameters, oid_structures_ref_448cef08-e024-4e5b-a370-fb6e8d78c9cd.xml, NDIS_INTERRUPT_MODERATION_PARAMETERS, PNDIS_INTERRUPT_MODERATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_INTERRUPT_MODERATION_PARAMETERS, *PNDIS_INTERRUPT_MODERATION_PARAMETERS, PNDIS_INTERRUPT_MODERATION_PARAMETERS, ntddndis/NDIS_INTERRUPT_MODERATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_INTERRUPT_MODERATION_PARAMETERS
-req.alt-loc : ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PNDIS_INTERRUPT_MODERATION_PARAMETERS, NDIS_INTERRUPT_MODERATION_PARAMETERS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_INTERRUPT_MODERATION_PARAMETERS, *PNDIS_INTERRUPT_MODERATION_PARAMETERS
 ---
 
 # _NDIS_INTERRUPT_MODERATION_PARAMETERS structure
@@ -49,31 +53,31 @@ typedef struct _NDIS_INTERRUPT_MODERATION_PARAMETERS {
 
 ## Members
 
-        
-            `Flags`
 
-            A bitwise OR of the following flags:
-        
-            `Header`
+`Flags`
 
-            The 
+A bitwise OR of the following flags:
+
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_INTERRUPT_MODERATION_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
      <b>Revision</b> member to NDIS_INTERRUPT_MODERATION_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_INTERRUPT_MODERATION_PARAMETERS_REVISION_1.
-        
-            `InterruptModeration`
 
-            An NDIS_INTERRUPT_MODERATION-typed value that indicates or specifies the current interrupt
+`InterruptModeration`
+
+An NDIS_INTERRUPT_MODERATION-typed value that indicates or specifies the current interrupt
      moderation status.
      
 
 The following values are supported:
 
-    ## Remarks
-        The NDIS_INTERRUPT_MODERATION_PARAMETERS structure defines interrupt parameters for the 
+## Remarks
+The NDIS_INTERRUPT_MODERATION_PARAMETERS structure defines interrupt parameters for the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569590">OID_GEN_INTERRUPT_MODERATION</a> OID
     query and set operations. Only the 
     <b>NdisInterruptModerationEnabled</b> and 
@@ -88,18 +92,14 @@ The following values are supported:
 | **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569590">OID_GEN_INTERRUPT_MODERATION</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_INTERRUPT_MODERATION_PARAMETERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_INTERRUPT_MODERATION_PARAMETERS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

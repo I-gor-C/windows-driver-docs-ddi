@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0720635c-77a2-4391-ba75-b276c0d457d5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SURFACEBLT, D3DHAL_DP2SURFACEBLT, *LPD3DHAL_DP2SURFACEBLT
+ms.keywords : _D3DHAL_DP2SURFACEBLT, *LPD3DHAL_DP2SURFACEBLT, d3dhal/LPD3DHAL_DP2SURFACEBLT, LPD3DHAL_DP2SURFACEBLT structure pointer [Display Devices], d3dstrct_705cb760-39d7-4953-b249-0b9a9358f0df.xml, D3DHAL_DP2SURFACEBLT, LPD3DHAL_DP2SURFACEBLT, D3DHAL_DP2SURFACEBLT structure [Display Devices], d3dhal/D3DHAL_DP2SURFACEBLT, display.d3dhal_dp2surfaceblt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SURFACEBLT
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SURFACEBLT
 ---
 
@@ -55,37 +59,37 @@ typedef struct _D3DHAL_DP2SURFACEBLT {
 
 ## Members
 
-        
-            `dwDest`
 
-            Specifies the handle to the destination surface.
-        
-            `dwDestMipLevel`
+`dwDest`
 
-            Specifies the sublevel of a MIP-map texture that is the destination for the blt.
-        
-            `dwSource`
+Specifies the handle to the destination surface.
 
-            Specifies the handle to the source surface.
-        
-            `dwSourceMipLevel`
+`dwDestMipLevel`
 
-            Specifies the sublevel of a MIP-map texture that is the source of the blt.
-        
-            `Flags`
+Specifies the sublevel of a MIP-map texture that is the destination for the blt.
 
-            Unused
-        
-            `rDest`
+`dwSource`
 
-            Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the blit should occur and its position on the destination surface.
-        
-            `rSource`
+Specifies the handle to the source surface.
 
-            Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the source surface. These points define the area of the source blit data and its position on the source surface.
+`dwSourceMipLevel`
 
-    ## Remarks
-        The D3DDP2OP_SURFACEBLT operation code is identical to the D3DDP2OP_BLT operation code except that D3DDP2OP_SURFACEBLT is only used to copy system memory to video memory and is never used for stretch blts or color conversion. Because D3DDP2OP_SURFACEBLT is not used for stretch blts, no flags are currently defined.
+Specifies the sublevel of a MIP-map texture that is the source of the blt.
+
+`Flags`
+
+Unused
+
+`rDest`
+
+Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the blit should occur and its position on the destination surface.
+
+`rSource`
+
+Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the source surface. These points define the area of the source blit data and its position on the source surface.
+
+## Remarks
+The D3DDP2OP_SURFACEBLT operation code is identical to the D3DDP2OP_BLT operation code except that D3DDP2OP_SURFACEBLT is only used to copy system memory to video memory and is never used for stretch blts or color conversion. Because D3DDP2OP_SURFACEBLT is not used for stretch blts, no flags are currently defined.
 
 The <b>dwSource</b> or <b>dwDest</b> member specifies the kernel handle to the top-level surface and the <b>dwSourceMipLevel</b> or <b>dwDestMiplevel</b> member specifies the sublevel for the MIP-map chain where the blt occurs.
 
@@ -97,18 +101,16 @@ The <b>dwSource</b> or <b>dwDest</b> member specifies the kernel handle to the t
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_BLT</dt>
-<dt>D3DDP2OP_SURFACEBLT</dt>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-</dl>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+D3DDP2OP_SURFACEBLT
+
+D3DDP2OP_BLT
+
  
 
  

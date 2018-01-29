@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a12c1082-c3ff-40b8-b756-be320ab98b30
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_update_drive_size, IOCTL_DISK_UPDATE_DRIVE_SIZE control code [Storage Devices], IOCTL_DISK_UPDATE_DRIVE_SIZE, ntdddisk/IOCTL_DISK_UPDATE_DRIVE_SIZE, k307_52e1c8fb-a16b-41a6-a9bc-e0daec91f639.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_UPDATE_DRIVE_SIZE
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_UPDATE_DRIVE_SIZE IOCTL
-Updates device extension with drive size information for current media.
-
-
-
 Updates device extension with drive size information for current media.
 
 ### Major Code
@@ -65,7 +65,6 @@ The device driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code.
 
 
@@ -76,13 +75,10 @@ I/O Status block
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
-</dt>
-</dl>
+
  
 
  

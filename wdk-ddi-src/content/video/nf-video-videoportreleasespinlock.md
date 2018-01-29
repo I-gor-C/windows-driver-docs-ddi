@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8ce2006e-e66c-4b2d-8d26-2eba8d8e2864
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortReleaseSpinLock
+ms.keywords : video/VideoPortReleaseSpinLock, VideoPortReleaseSpinLock function [Display Devices], display.videoportreleasespinlock, VideoPortReleaseSpinLock, VideoPort_Functions_43cceda5-f5eb-4567-97f5-d53d0bf93c0b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortReleaseSpinLock
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -88,11 +92,8 @@ Callers of <b>VideoPortReleaseSpinLock</b> must be running at IRQL = DISPATCH_LE
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
-</dt>
-</dl>
+
  
 
  

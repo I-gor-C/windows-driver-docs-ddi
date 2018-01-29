@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 93E3D03B-6FA1-49D5-AF38-6C2FEA3FC95D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportStreamAudioEngineNode2, IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer, SetStreamCurrentWritePositionForLastBuffer
+ms.keywords : IMiniportStreamAudioEngineNode2, SetStreamCurrentWritePositionForLastBuffer method [Audio Devices], audio.iminiportstreamaudioenginenode2_setstreamcurrentwritepositionforlastbuffer, IMiniportStreamAudioEngineNode2 interface [Audio Devices], SetStreamCurrentWritePositionForLastBuffer method, SetStreamCurrentWritePositionForLastBuffer method [Audio Devices], IMiniportStreamAudioEngineNode2 interface, SetStreamCurrentWritePositionForLastBuffer, portcls/IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer, IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportStreamAudioEngineNode2.SetStreamCurrentWritePositionForLastBuffer
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -77,14 +81,10 @@ If the buffer is only partially filled, then the audio driver needs to notify th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode2.md">IMiniportStreamAudioEngineNode2</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn292492">KSPROPERTY_AUDIO_WAVERT_CURRENT_WRITE_LASTBUFFER_POSITION</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode2.md">IMiniportStreamAudioEngineNode2</a>
+
  
 
  

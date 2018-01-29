@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A6E6439A-8151-4953-B78A-3141A9EA59F2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_RENDER_PIPELINE_STAGE, DXGK_RENDER_PIPELINE_STAGE
+ms.keywords : d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_STREAM_OUTPUT, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_INPUT_ASSEMBLER, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE, display.dxgk_render_pipeline_stage, DXGK_RENDER_PIPELINE_STAGE enumeration [Display Devices], _DXGK_RENDER_PIPELINE_STAGE, DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER, DXGK_RENDER_PIPELINE_STAGE_RASTERIZER, DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER, DXGK_RENDER_PIPELINE_STAGE_STREAM_OUTPUT, DXGK_RENDER_PIPELINE_STAGE, DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER, DXGK_RENDER_PIPELINE_STAGE_UNKNOWN, DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER, DXGK_RENDER_PIPELINE_STAGE_INPUT_ASSEMBLER, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_RASTERIZER, d3dkmdt/DXGK_RENDER_PIPELINE_STAGE_UNKNOWN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_RENDER_PIPELINE_STAGE
-req.alt-loc : D3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_RENDER_PIPELINE_STAGE
 ---
 

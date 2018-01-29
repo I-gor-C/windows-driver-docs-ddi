@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlSetKernelEaFile
+ms.keywords : FsRtlSetKernelEaFile routine [Installable File System Drivers], FsRtlSetKernelEaFile, ntifs/FsRtlSetKernelEaFile, ifsk.fsrtlsetkerneleafile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlSetKernelEaFile
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -69,24 +73,78 @@ Specifies the length of the EA buffer.
 ## Return Value
 
 The routine <b>FsRtlSetKernelEaFile</b> receives the status of the operation and returns one of the status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_EA_LIST_INCONSISTENT </b></dt>
-</dl>The <b>EaList</b> parameter is not formatted correctly.
+</dl>
+</td>
+<td width="60%">
+The <b>EaList</b> parameter is not formatted correctly.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_EAS_NOT_SUPPORTED  </b></dt>
-</dl>The file system does not support extended attributes.
+</dl>
+</td>
+<td width="60%">
+The file system does not support extended attributes.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The  I/O request packet (IRP) could not be allocated for this request.
+</dl>
+</td>
+<td width="60%">
+The  I/O request packet (IRP) could not be allocated for this request.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INTERMIXED_KERNEL_EA_OPERATION</b></dt>
-</dl>The request cannot intermix normal and kernel EA’s in the same call.
+</dl>
+</td>
+<td width="60%">
+The request cannot intermix normal and kernel EA’s in the same call.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The request failed as it was a direct device open.
+</dl>
+</td>
+<td width="60%">
+The request failed as it was a direct device open.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The request was successful.
+</dl>
+</td>
+<td width="60%">
+The request was successful. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -109,17 +167,12 @@ You delete EA’s by specifying an <b>EAName</b> with an <b>EaValueLength</b> of
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlquerykerneleafile.md">FsRtlQueryKernelEaFile</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-zwseteafile.md">ZwSetEaFile</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a>
+
  
 
  

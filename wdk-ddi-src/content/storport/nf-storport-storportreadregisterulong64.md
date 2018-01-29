@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 73A9E645-0B71-429F-9033-032BB83E60E4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReadRegisterUlong64
+ms.keywords : storport/StorPortReadRegisterUlong64, StorPortReadRegisterUlong64 routine [Storage Devices], storage.storportreadregisterulong64, StorPortReadRegisterUlong64
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortReadRegisterUlong64
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : storport.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -51,11 +55,11 @@ The <b>StorPortReadRegisterUlong64</b> routine reads a 64-bit value from a speci
 
 `h`
 
-
+TBD
 
 `r`
 
-
+TBD
 
 
 ## Return Value
@@ -80,11 +84,8 @@ The <b>StorPortReadRegisterUlong64</b> routine is only available on the 64-bit v
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\storport\nf-storport-storportwriteregisterulong64.md">StorPortWriteRegisterUlong64</a>
-</dt>
-</dl>
+
  
 
  

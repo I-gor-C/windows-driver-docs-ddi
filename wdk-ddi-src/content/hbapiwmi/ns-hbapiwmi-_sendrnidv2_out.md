@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2d8f1b49-5add-4dd9-998f-d0c1e79f3e7d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SendRNIDV2_OUT, *PSendRNIDV2_OUT, SendRNIDV2_OUT
+ms.keywords : "*PSendRNIDV2_OUT, structs-Fibre_78855dda-228d-432f-8189-8be83df6d2ea.xml, PSendRNIDV2_OUT, SendRNIDV2_OUT structure [Storage Devices], SendRNIDV2_OUT, _SendRNIDV2_OUT, PSendRNIDV2_OUT structure pointer [Storage Devices], hbapiwmi/PSendRNIDV2_OUT, storage.sendrnidv2_out, hbapiwmi/SendRNIDV2_OUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SendRNIDV2_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSendRNIDV2_OUT, SendRNIDV2_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SendRNIDV2_OUT, *PSendRNIDV2_OUT
 ---
 
 # _SendRNIDV2_OUT structure
@@ -49,25 +53,25 @@ typedef struct _SendRNIDV2_OUT {
 
 ## Members
 
-        
-            `ActualRspBufferSize`
 
-            Contains the size in bytes of the data that was actually retrieved.
-        
-            `HBAStatus`
+`ActualRspBufferSize`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `RspBuffer`
+Contains the size in bytes of the data that was actually retrieved.
 
-            Contains the results of the RNIDV2 command.
-        
-            `TotalRspBufferSize`
+`HBAStatus`
 
-            Contains the size in bytes of the results of the version 2 request node identification data (RNIDV2) command.
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SendRNIDV2_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
+`RspBuffer`
+
+Contains the results of the RNIDV2 command.
+
+`TotalRspBufferSize`
+
+Contains the size in bytes of the results of the version 2 request node identification data (RNIDV2) command.
+
+## Remarks
+The WMI tool suite generates a declaration of the SendRNIDV2_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _SendRNIDV2_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565463">SendRNIDV2</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8959fc25-2477-485a-aa40-10d6228cb476
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRequestCompletionParams, IWDFRequestCompletionParams::GetCompletionStatus, GetCompletionStatus
+ms.keywords : GetCompletionStatus method, IWDFRequestCompletionParams interface, IWDFRequestCompletionParams, IWDFRequestCompletionParams::GetCompletionStatus, umdf.iwdfrequestcompletionparams_getcompletionstatus, IWDFRequestCompletionParams interface, GetCompletionStatus method, GetCompletionStatus method, wdf.iwdfrequestcompletionparams_getcompletionstatus, GetCompletionStatus, UMDFRequestObjectRef_b3664f4d-fdb1-425f-be0a-3b4150762b9d.xml, wudfddi/IWDFRequestCompletionParams::GetCompletionStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFRequestCompletionParams.GetCompletionStatus
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,16 +59,6 @@ This function has no parameters.
 
 <b>GetCompletionStatus</b> returns S_OK for a successful completion status. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
-For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>.
-
-<b>GetCompletionStatus</b> returns S_OK for a successful completion status. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
-
-For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>.
-
-<b>GetCompletionStatus</b> returns S_OK for a successful completion status. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
-
-For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,11 +74,8 @@ For a code example of how to use the <b>GetCompletionStatus</b> method, see <a h
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
-</dt>
-</dl>
+
  
 
  

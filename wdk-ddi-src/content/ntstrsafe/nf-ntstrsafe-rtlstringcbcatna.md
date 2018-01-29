@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 60ecabb1-5607-4962-82c6-8081916b507d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlStringCbCatNA
+ms.keywords : safestrings_3f453d8e-bae5-466f-a55a-2b6a68d5cb57.xml, RtlStringCbCatNW, kernel.rtlstringcbcatn, RtlStringCbCatNA, ntstrsafe/RtlStringCbCatNA, RtlStringCbCatN, RtlStringCbCatNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatNW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlStringCbCatNW,RtlStringCbCatNA,RtlStringCbCatNW
-req.alt-loc : Ntstrsafe.lib,Ntstrsafe.dll
 req.ddi-compliance : 
 req.unicode-ansi : RtlStringCbCatNW (Unicode) and RtlStringCbCatNA (ANSI)
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntstrsafe.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
 ---
 
@@ -69,47 +73,110 @@ Pointer to a null-terminated string. This string will be concatenated to the end
 
 `cbToAppend`
 
-
+TBD
 
 
 ## Return Value
 
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>This <i>success</i> status means source data was present, the strings were concatenated without truncation, and the resultant destination buffer is null-terminated.
+</dl>
+</td>
+<td width="60%">
+This <i>success</i> status means source data was present, the strings were concatenated without truncation, and the resultant destination buffer is null-terminated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>This <i>warning</i> status means the concatenation operation did not complete due to insufficient buffer space. The destination buffer contains a truncated, null-terminated version of the intended result.
+</dl>
+</td>
+<td width="60%">
+This <i>warning</i> status means the concatenation operation did not complete due to insufficient buffer space. The destination buffer contains a truncated, null-terminated version of the intended result.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>This <i>error</i> status means the function received an invalid input parameter. For more information, see the following paragraph.
+</dl>
+</td>
+<td width="60%">
+This <i>error</i> status means the function received an invalid input parameter. For more information, see the following paragraph.
 
 The function returns the STATUS_INVALID_PARAMETER value when:
+
+<ul>
+<li>The value in <i>cbDest</i> is larger than the maximum buffer size.</li>
+<li>The destination buffer was already full.</li>
+<li>A <b>NULL</b> pointer was present.</li>
+<li>The destination buffer's length was zero, but a nonzero length source string was present.</li>
+</ul>
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 <b>RtlStringCbCatNW</b> and <b>RtlStringCbCatNA</b> should be used instead of the following functions: 
-
+<ul>
+<li>
 <b>strncat</b>
 
+</li>
+<li>
 <b>wcsncat</b>
 
-The size, in bytes, of the destination buffer is provided to <b>RtlStringCbCatNW</b> and <b>RtlStringCbCatNA</b> to ensure that they do not write past the end of the buffer.
+</li>
+</ul>The size, in bytes, of the destination buffer is provided to <b>RtlStringCbCatNW</b> and <b>RtlStringCbCatNA</b> to ensure that they do not write past the end of the buffer.
 
 Use <b>RtlStringCbCatNW</b> to handle Unicode strings and <b>RtlStringCbCatNA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table
-
+<table>
+<tr>
+<th>String data type</th>
+<th>String literal</th>
+<th>Function</th>
+</tr>
+<tr>
+<td>
 WCHAR
 
+</td>
+<td>
 L"string"
 
+</td>
+<td>
 <b>RtlStringCbCatNW</b>
 
+</td>
+</tr>
+<tr>
+<td>
 <b>char</b>
 
+</td>
+<td>
 "string"
 
+</td>
+<td>
 <b>RtlStringCbCatNA</b>
+
+</td>
+</tr>
+</table> 
 
 If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.
 
@@ -131,17 +198,12 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatw.md">RtlStringCbCat</a>
-</dt>
-<dt>
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>
-</dt>
-<dt>
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnw.md">RtlStringCchCatN</a>
-</dt>
-</dl>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatw.md">RtlStringCbCat</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>
+
  
 
  

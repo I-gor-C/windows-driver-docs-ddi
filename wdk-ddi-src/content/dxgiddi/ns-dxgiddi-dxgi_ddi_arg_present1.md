@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F8575652-CA6D-472E-A314-91B07C48558B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_PRESENT1, DXGI_DDI_ARG_PRESENT1
+ms.keywords : dxgiddi/DXGI_DDI_ARG_PRESENT1, DXGI_DDI_ARG_PRESENT1, display.dxgi_ddi_arg_present1, DXGI_DDI_ARG_PRESENT1 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_ARG_PRESENT1
-req.alt-loc : Dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_ARG_PRESENT1
 ---
 
@@ -56,50 +60,58 @@ typedef struct DXGI_DDI_ARG_PRESENT1 {
 
 ## Members
 
-        
-            `DirtyRects`
 
-            [in] The number of dirty rectangles in the array pointed to by <b>pDirtyRects</b>.
-        
-            `DstSubResourceIndex`
+`BackBufferMultiplicity`
 
-            [in] The zero-based index into the destination resource, which the handle in the <b>hDstResource</b> member specifies. The <b>DstSubResourceIndex</b> index indicates the subresource or surface to display to.
-        
-            `Flags`
 
-            [in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_present_flags.md">DXGI_DDI_PRESENT_FLAGS</a> structure that identifies, in bit-field flags, how to perform the present operation.
-        
-            `FlipInterval`
 
-            [in] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_flip_interval_type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
-        
-            `hDstResource`
+`DirtyRects`
 
-            [in] A handle to the destination resource to display to. <b>hDstResource</b> can be <b>NULL</b> if the destination is unknown; kernel mode will determine the destination just before sending the hardware command stream through DMA to the graphics processor.
+[in] The number of dirty rectangles in the array pointed to by <b>pDirtyRects</b>.
+
+`DstSubResourceIndex`
+
+[in] The zero-based index into the destination resource, which the handle in the <b>hDstResource</b> member specifies. The <b>DstSubResourceIndex</b> index indicates the subresource or surface to display to.
+
+`Flags`
+
+[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_present_flags.md">DXGI_DDI_PRESENT_FLAGS</a> structure that identifies, in bit-field flags, how to perform the present operation.
+
+`FlipInterval`
+
+[in] A <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_flip_interval_type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
+
+`hDevice`
+
+
+
+`hDstResource`
+
+[in] A handle to the destination resource to display to. <b>hDstResource</b> can be <b>NULL</b> if the destination is unknown; kernel mode will determine the destination just before sending the hardware command stream through DMA to the graphics processor.
 
 When many resource are being presented, <b>hDstResource</b> will be <b>NULL</b>, and the driver must only translate the last source resource handle for use with the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_presentcb.md">pfnPresentCb</a> function.
-        
-            `pDirtyRects`
 
-            [in] A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s), relative to the source rectangle <b>SrcRect</b>, that indicate the portion of the overlay plane that has changed.
+`pDirtyRects`
+
+[in] A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s), relative to the source rectangle <b>SrcRect</b>, that indicate the portion of the overlay plane that has changed.
 
 The driver can use this member to perform optimizations, though it's not required to use the dirty rectangle info. However, the driver should never fail a function call based on the provided dirty rectangles.
-        
-            `pDXGIContext`
 
-            [in] A handle to the DXGI context. This handle is opaque to the driver. The driver must pass the handle in this member as the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a> structure when the driver calls the <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a> function.
-        
-            `phSurfacesToPresent`
+`pDXGIContext`
 
-            [in] An array of non-<b>NULL</b> handles and zero-based indices to the source resource to display or to release. <b>phSurfacesToPresent</b> is always a valid handle for a resource to display.
-        
-            `Reserved`
+[in] A handle to the DXGI context. This handle is opaque to the driver. The driver must pass the handle in this member as the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a> structure when the driver calls the <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a> function.
 
-            This member is reserved and should be set to zero.
-        
-            `SurfacesToPresent`
+`phSurfacesToPresent`
 
-            [in] The array of surfaces to be presented. Must not be zero.
+[in] An array of non-<b>NULL</b> handles and zero-based indices to the source resource to display or to release. <b>phSurfacesToPresent</b> is always a valid handle for a resource to display.
+
+`Reserved`
+
+This member is reserved and should be set to zero.
+
+`SurfacesToPresent`
+
+[in] The array of surfaces to be presented. Must not be zero.
 
 
 ## Requirements
@@ -110,34 +122,24 @@ The driver can use this member to perform optimizations, though it's not require
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_flip_interval_type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_present_flags.md">DXGI_DDI_PRESENT_FLAGS</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn469267">pfnPresent1(DXGI)</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_presentcb.md">pfnPresentCb</a>
-</dt>
-<dt>
-<a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
+<a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a>
+
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_flip_interval_type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_present_flags.md">DXGI_DDI_PRESENT_FLAGS</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_presentcb.md">pfnPresentCb</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn469267">pfnPresent1(DXGI)</a>
+
  
 
  

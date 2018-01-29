@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 396DA33D-46E0-456C-9FCF-85A7D9915F48
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME
+ms.keywords : wdm/PREG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME structure [Kernel-Mode Driver Architecture], PREG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME, _REG_QUERY_KEY_NAME, kernel.reg_query_key_name, PREG_QUERY_KEY_NAME structure pointer [Kernel-Mode Driver Architecture], wdm/REG_QUERY_KEY_NAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows 10 and later version
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REG_QUERY_KEY_NAME
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PREG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -54,33 +58,37 @@ typedef struct _REG_QUERY_KEY_NAME {
 
 ## Members
 
-        
-            `CallContext`
 
-            Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply.
-        
-            `Length`
+`CallContext`
 
-            Specifies the size, in bytes, of the <b>ObjectNameInfo</b> buffer.
-        
-            `Object`
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply.
 
-            A pointer to the registry key object for the key whose metadata is about to be queried.
-        
-            `ObjectContext`
+`Length`
 
-            A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. It contains the key context for the key that is being queried.
-        
-            `ObjectNameInfo`
+Specifies the size, in bytes, of the <b>ObjectNameInfo</b> buffer.
 
-            A pointer to an <b>OBJECT_NAME_INFORMATION</b> structure (see wdm.h) that contains the full registry key name to be returned by the system, as a Unicode string.
-        
-            `Reserved`
+`Object`
 
-            This member is reserved for future use.
+A pointer to the registry key object for the key whose metadata is about to be queried.
 
-    ## Remarks
-        The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to query the full name of the registry key. 
+`ObjectContext`
+
+A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. It contains the key context for the key that is being queried.
+
+`ObjectNameInfo`
+
+A pointer to an <b>OBJECT_NAME_INFORMATION</b> structure (see wdm.h) that contains the full registry key name to be returned by the system, as a Unicode string.
+
+`Reserved`
+
+This member is reserved for future use.
+
+`ReturnLength`
+
+
+
+## Remarks
+The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to query the full name of the registry key. 
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
@@ -92,16 +100,12 @@ For more information about registry filtering operations, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ne-wdm-_reg_notify_class.md">REG_NOTIFY_CLASS</a>
-</dt>
-</dl>
+
  
 
  

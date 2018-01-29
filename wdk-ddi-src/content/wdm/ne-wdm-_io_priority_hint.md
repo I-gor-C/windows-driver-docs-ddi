@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 38d19398-b34f-4934-b643-df119ebd9711
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_PRIORITY_HINT, IO_PRIORITY_HINT
+ms.keywords : sysenum_0b8187d9-c762-45d2-a310-294c3c696608.xml, wdm/IoPriorityNormal, wdm/IoPriorityLow, IoPriorityVeryLow, IoPriorityHigh, MaxIoPriorityTypes, IO_PRIORITY_HINT, kernel.io_priority_hint, wdm/IO_PRIORITY_HINT, wdm/IoPriorityVeryLow, IoPriorityCritical, wdm/MaxIoPriorityTypes, IoPriorityNormal, wdm/IoPriorityHigh, wdm/IoPriorityCritical, _IO_PRIORITY_HINT, IO_PRIORITY_HINT enumeration [Kernel-Mode Driver Architecture], IoPriorityLow
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_PRIORITY_HINT
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IO_PRIORITY_HINT
 req.product : Windows 10 or later.
 ---
@@ -99,14 +103,10 @@ For more information about priority hints, see <a href="https://msdn.microsoft.c
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iogetiopriorityhint.md">IoGetIoPriorityHint</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iosetiopriorityhint.md">IoSetIoPriorityHint</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iogetiopriorityhint.md">IoGetIoPriorityHint</a>
+
  
 
  

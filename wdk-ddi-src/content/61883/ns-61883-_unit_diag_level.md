@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 2759486f-7eaa-4af4-b9a9-2e44354f411b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _UNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL
+ms.keywords : UNIT_DIAG_LEVEL, 61883/PUNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL, PUNIT_DIAG_LEVEL structure pointer [Buses], IEEE.unit_diag_level, UNIT_DIAG_LEVEL structure [Buses], 61883/UNIT_DIAG_LEVEL, _UNIT_DIAG_LEVEL, PUNIT_DIAG_LEVEL, 61883_structures_02b60b1d-45d1-474b-901c-4346b23c8d25.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UNIT_DIAG_LEVEL
-req.alt-loc : 61883.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL"
 ---
 
@@ -46,10 +50,10 @@ typedef struct _UNIT_DIAG_LEVEL {
 
 ## Members
 
-        
-            `DiagLevel`
 
-            The bitmask representing the diaglevel. Possible settings are:
+`DiagLevel`
+
+The bitmask representing the diaglevel. Possible settings are:
 
 
 ## Requirements
@@ -60,13 +64,10 @@ typedef struct _UNIT_DIAG_LEVEL {
 | **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536983">Av61883_GetUnitInfo</a>
-</dt>
-</dl>
+
  
 
  

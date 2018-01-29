@@ -7,8 +7,8 @@ old-location : netvista\rildialedidsettingsparammask.htm
 old-project : netvista
 ms.assetid : 8883e9fc-9f2a-4367-ae2d-30260f2d2de6
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDIALEDIDSETTINGSPARAMMASK, RILDIALEDIDSETTINGSPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_DIDS_PROVISIONING, RILDIALEDIDSETTINGSPARAMMASK, ntddrilapitypes/RIL_PARAM_DIDS_ALL, ntddrilapitypes/RIL_PARAM_DIDS_STATUS, RIL_PARAM_DIDS_ALL, netvista.rildialedidsettingsparammask, RILDIALEDIDSETTINGSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILDIALEDIDSETTINGSPARAMMASK, RIL_PARAM_DIDS_STATUS, ntddrilapitypes/RIL_PARAM_DIDS_PROVISIONING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDIALEDIDSETTINGSPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILDIALEDIDSETTINGSPARAMMASK
 ---
 
@@ -52,6 +56,11 @@ typedef enum _RILDIALEDIDSETTINGSPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_DIDS_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_DIDS_EXECUTOR</td>
 <td></td>
 </tr>
 

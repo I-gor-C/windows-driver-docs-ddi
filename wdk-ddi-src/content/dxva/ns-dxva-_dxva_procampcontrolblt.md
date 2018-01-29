@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 93f321e1-a38b-43a2-bfbd-35411a62194e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_ProcAmpControlBlt, DXVA_ProcAmpControlBlt
+ms.keywords : dxva/DXVA_ProcAmpControlBlt, DXVA_ProcAmpControlBlt, dxvaref_aaac59e6-334e-49a3-a599-facef11960e3.xml, display.dxva_procampcontrolblt, _DXVA_ProcAmpControlBlt, DXVA_ProcAmpControlBlt structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DirectX 9.0 and later versions only.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_ProcAmpControlBlt
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_ProcAmpControlBlt
 ---
 
@@ -53,38 +57,38 @@ typedef struct _DXVA_ProcAmpControlBlt {
 
 ## Members
 
-        
-            `Alpha`
 
-            Specifies the transparency of the output image as it is written to the destination surface. A value of 0.0F indicates transparent. A value of 1.0F indicates opaque.
-        
-            `Brightness`
+`Alpha`
 
-            Specifies the brightness of the output image as it is written to the destination surface.
-        
-            `Contrast`
+Specifies the transparency of the output image as it is written to the destination surface. A value of 0.0F indicates transparent. A value of 1.0F indicates opaque.
 
-            Specifies the contrast of the output image as it is written to the destination surface.
-        
-            `DstRect`
+`Brightness`
 
-            Specifies the destination rectangle as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure. The destination rectangle is required for subrectangle stretching. Support for stretching is optional and is reported by the <a href="..\dxva\ns-dxva-_dxva_procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a> structure. Support for subrectangles is optional.
-        
-            `Hue`
+Specifies the brightness of the output image as it is written to the destination surface.
 
-            Specifies the hue of the output image as it is written to the destination surface.
-        
-            `Saturation`
+`Contrast`
 
-            Specifies the saturation of the output image as it is written to the destination surface.
-        
-            `Size`
+Specifies the contrast of the output image as it is written to the destination surface.
 
-            Specifies the size of this structure in bytes.
-        
-            `SrcRect`
+`DstRect`
 
-            Specifies the source rectangle as a RECT structure. The source rectangle is required for subrectangle stretching.sub Support for stretching is optional and is reported by the DXVA_ProcAmpControlCaps structure. Support for subrectangles is also optional.
+Specifies the destination rectangle as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure. The destination rectangle is required for subrectangle stretching. Support for stretching is optional and is reported by the <a href="..\dxva\ns-dxva-_dxva_procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a> structure. Support for subrectangles is optional.
+
+`Hue`
+
+Specifies the hue of the output image as it is written to the destination surface.
+
+`Saturation`
+
+Specifies the saturation of the output image as it is written to the destination surface.
+
+`Size`
+
+Specifies the size of this structure in bytes.
+
+`SrcRect`
+
+Specifies the source rectangle as a RECT structure. The source rectangle is required for subrectangle stretching.sub Support for stretching is optional and is reported by the DXVA_ProcAmpControlCaps structure. Support for subrectangles is also optional.
 
 
 ## Requirements
@@ -95,16 +99,12 @@ typedef struct _DXVA_ProcAmpControlBlt {
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a>
-</dt>
-<dt>
+
 <a href="..\dxva\ns-dxva-_dxva_procampcontrolqueryrange.md">DXVA_ProcAmpControlQueryRange</a>
-</dt>
-</dl>
+
  
 
  

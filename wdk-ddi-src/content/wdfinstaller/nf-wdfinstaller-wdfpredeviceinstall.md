@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2da4b4ea-1cbb-43f7-9001-44b07a3e9ef7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPreDeviceInstall
+ms.keywords : WdfPreDeviceInstall function, DFCoinstallerRef_0d1aca8b-f318-42c4-a74d-bd69d272ceec.xml, WdfPreDeviceInstall, wdfinstaller/WdfPreDeviceInstall, wdf.wdfpredeviceinstall, PFN_WDFPREDEVICEINSTALL, kmdf.wdfpredeviceinstall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfPreDeviceInstall
-req.alt-loc : N/A,N/A.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
 req.dll : 
 req.irql : 
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
 req.product : Windows 10 or later.
 ---
 
@@ -75,8 +79,6 @@ If the co-installer determines that the computer must be restarted to complete t
 
 For more information about the <b>WdfPreDeviceInstall</b> function and installers for framework-based drivers of non-PnP devices, see <a href="https://msdn.microsoft.com/99676d85-feb2-482c-a91b-cfc48be5904c">Installing a Non-PnP Driver</a>. For more information about <a href="https://msdn.microsoft.com/47288924-3294-4a50-b27d-7df80d5c957c">CreateService</a>, <a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a>, and <a href="https://msdn.microsoft.com/d936b4dd-058c-48e1-834b-b47ef6d8ef65">LoadLibrary</a>, see the Microsoft Windows SDK documentation.
 
-For a code example that uses the <b>WdfPreDeviceInstall</b> function, see the installer for the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">NONPNP</a> sample.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,11 +93,8 @@ For a code example that uses the <b>WdfPreDeviceInstall</b> function, see the in
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfinstaller\nf-wdfinstaller-wdfpostdeviceinstall.md">WdfPostDeviceInstall</a>
-</dt>
-</dl>
+
  
 
  

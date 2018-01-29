@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b9e3ea22-be24-4f36-abde-339495b9ed1c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_REQUEST_STOP_ACTION_FLAGS, WDF_REQUEST_STOP_ACTION_FLAGS
+ms.keywords : WdfRequestStopActionSuspend, wdf.wdf_request_stop_action_flags_umdf, wudfddi_types/WdfRequestStopActionInvalid, wudfddi_types/WdfRequestStopRequestCancelable, umdf.wdf_request_stop_action_flags, wudfddi_types/WdfRequestStopActionPurge, wudfddi_types/WdfRequestStopActionSuspend, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, WdfRequestStopActionPurge, umdfstructs_ecbf4eac-7d5f-4c44-a8c3-96731737264b.xml, WDF_REQUEST_STOP_ACTION_FLAGS, wudfddi_types/WDF_REQUEST_STOP_ACTION_FLAGS, _WDF_REQUEST_STOP_ACTION_FLAGS, WdfRequestStopActionInvalid, WdfRequestStopRequestCancelable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDF_REQUEST_STOP_ACTION_FLAGS
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_STOP_ACTION_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -87,11 +91,8 @@ typedef enum _WDF_REQUEST_STOP_ACTION_FLAGS {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556871">IQueueCallbackIoStop::OnIoStop</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 62ce7a36-87ce-40d1-bdd4-8a4f4bc60b00
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPIN_CONNECT, *PKSPIN_CONNECT, KSPIN_CONNECT
+ms.keywords : ks-struct_07642f18-c766-4649-b97a-12582aa0fffb.xml, ks/PKSPIN_CONNECT, *PKSPIN_CONNECT, KSPIN_CONNECT, PKSPIN_CONNECT structure pointer [Streaming Media Devices], stream.kspin_connect, KSPIN_CONNECT structure [Streaming Media Devices], PKSPIN_CONNECT, ks/KSPIN_CONNECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPIN_CONNECT
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPIN_CONNECT, KSPIN_CONNECT"
 ---
 
@@ -50,29 +54,29 @@ typedef struct {
 
 ## Members
 
-        
-            `Interface`
 
-            Specifies the <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> to use for this connection.
-        
-            `Medium`
+`Interface`
 
-            A structure of type <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> that specifies the medium to use for this connection.
-        
-            `PinId`
+Specifies the <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> to use for this connection.
 
-            Specifies the pin type ID number. If the PinToHandle field is not <b>NULL</b>, this field contains the identifier of the source pin to which the request is being sent. Otherwise this field refers to the sink pin that is being connected to. If a pin can support being both a source and sink in communications, then this is the implicit method of telling it how it should act in the connection.
-        
-            `PinToHandle`
+`Medium`
 
-            Specifies what type of destination pin the create is intended for, and in the case of a source destination, what pin to connect to. This member is <b>NULL</b> when a client requests a connection to itself. Otherwise, it is the target of the connection request. In the case of a source destination, this contains the handle of the pin instance to establish a connection to. In the case of a sink destination, this field contains <b>NULL</b>, and is not otherwise used.
-        
-            `Priority`
+A structure of type <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> that specifies the medium to use for this connection.
 
-            A structure of type <a href="..\ks\ns-ks-kspriority.md">KSPRIORITY</a> that specifies the priority for the connection, usually KSPRIORITY_NORMAL. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a> property for details.
+`PinId`
 
-    ## Remarks
-        If the KSPIN_CONNECT.PinToHandle element is not <b>NULL</b>, IRP_MJ_CREATE instructs the device to connect the source KSPIN_CONNECT.PinId pin to the KSPIN_CONNECT.PinToHandle pin instance. Otherwise, this is a request from a client for connection to the KSPIN_CONNECT.PinId pin using the KSPIN_CONNECT.Medium method and a specific data format specified after the connection structure. In either case, the device driver may fail this request if this connection cannot be accepted.
+Specifies the pin type ID number. If the PinToHandle field is not <b>NULL</b>, this field contains the identifier of the source pin to which the request is being sent. Otherwise this field refers to the sink pin that is being connected to. If a pin can support being both a source and sink in communications, then this is the implicit method of telling it how it should act in the connection.
+
+`PinToHandle`
+
+Specifies what type of destination pin the create is intended for, and in the case of a source destination, what pin to connect to. This member is <b>NULL</b> when a client requests a connection to itself. Otherwise, it is the target of the connection request. In the case of a source destination, this contains the handle of the pin instance to establish a connection to. In the case of a sink destination, this field contains <b>NULL</b>, and is not otherwise used.
+
+`Priority`
+
+A structure of type <a href="..\ks\ns-ks-kspriority.md">KSPRIORITY</a> that specifies the priority for the connection, usually KSPRIORITY_NORMAL. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a> property for details.
+
+## Remarks
+If the KSPIN_CONNECT.PinToHandle element is not <b>NULL</b>, IRP_MJ_CREATE instructs the device to connect the source KSPIN_CONNECT.PinId pin to the KSPIN_CONNECT.PinToHandle pin instance. Otherwise, this is a request from a client for connection to the KSPIN_CONNECT.PinId pin using the KSPIN_CONNECT.Medium method and a specific data format specified after the connection structure. In either case, the device driver may fail this request if this connection cannot be accepted.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,19 +86,14 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
+
+<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
+
  
 
  

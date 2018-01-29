@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 12d9b0c1-6dce-4dc6-a8df-706408e1fbe1
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _L2CAP_CONFIG_VALUE_RANGE, *PL2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE
+ms.keywords : PL2CAP_CONFIG_VALUE_RANGE, _L2CAP_CONFIG_VALUE_RANGE, PL2CAP_CONFIG_VALUE_RANGE structure pointer [Bluetooth Devices], bth_structs_3af526a5-d36e-432f-9d2e-fa31bee0effe.xml, bthddi/L2CAP_CONFIG_VALUE_RANGE, bltooth.l2cap_config_value_range, L2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE structure [Bluetooth Devices], bthddi/PL2CAP_CONFIG_VALUE_RANGE, *PL2CAP_CONFIG_VALUE_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : L2CAP_CONFIG_VALUE_RANGE
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PL2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE"
 ---
 
@@ -51,21 +55,21 @@ typedef struct _L2CAP_CONFIG_VALUE_RANGE {
 
 ## Members
 
-        
-            `Max`
 
-            The maximum value that the local system will accept.
-        
-            `Min`
+`Max`
 
-            The minimum value that the local system will accept.
-        
-            `Preferred`
+The maximum value that the local system will accept.
 
-            The ideal value that the local system requests that the remote device accept.
+`Min`
 
-    ## Remarks
-        For 
+The minimum value that the local system will accept.
+
+`Preferred`
+
+The ideal value that the local system requests that the remote device accept.
+
+## Remarks
+For 
     <b>FlushTO</b> member settings, the L2CAP_CONFIG_VALUE_RANGE structure contains the profile driver's ideal
     flush timeout value in the 
     <b>Preferred</b> member, along with a range of acceptable values as specified by the 
@@ -111,13 +115,10 @@ For
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
-</dt>
-</dl>
+
  
 
  

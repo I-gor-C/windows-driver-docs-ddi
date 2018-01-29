@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7648c486-181a-45c8-9c4b-e3158428046a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceSetSpecialFileSupport
+ms.keywords : WdfDeviceSetSpecialFileSupport method, kmdf.wdfdevicesetspecialfilesupport, wdf.wdfdevicesetspecialfilesupport, PFN_WDFDEVICESETSPECIALFILESUPPORT, WdfDeviceSetSpecialFileSupport, DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, wdfdevice/WdfDeviceSetSpecialFileSupport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceSetSpecialFileSupport
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,8 +84,6 @@ Each driver's support for special files is initially disabled until the driver c
 
 For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
 
-The following code example enables support for paging, hibernation, and dump files on a device.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -96,14 +98,10 @@ The following code example enables support for paging, hibernation, and dump fil
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_special_file_type.md">WDF_SPECIAL_FILE_TYPE</a>
-</dt>
-</dl>
+
  
 
  

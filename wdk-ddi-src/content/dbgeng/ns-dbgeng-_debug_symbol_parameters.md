@@ -7,8 +7,8 @@ old-location : debugger\debug_symbol_parameters.htm
 old-project : debugger
 ms.assetid : c73ea2b0-e87a-4fb1-9164-ff14d43f1426
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS
+ms.date : 1/19/2018
+ms.keywords : debugger.debug_symbol_parameters, PDEBUG_SYMBOL_PARAMETERS structure pointer [Windows Debugging], dbgeng/PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS structure [Windows Debugging], dbgeng/DEBUG_SYMBOL_PARAMETERS, Structures_d79dd552-1acf-4023-99e0-418639a54782.xml, *PDEBUG_SYMBOL_PARAMETERS, PDEBUG_SYMBOL_PARAMETERS, _DEBUG_SYMBOL_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEBUG_SYMBOL_PARAMETERS
-req.alt-loc : DbgEng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS"
 ---
 
@@ -51,30 +55,30 @@ typedef struct _DEBUG_SYMBOL_PARAMETERS {
 
 ## Members
 
-        
-            `Flags`
 
-            The symbol flags.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541692">DEBUG_SYMBOL_XXX</a> for details.
-        
-            `Module`
+`Flags`
 
-            The location in the target's virtual address space of the base of the module to which the symbol belongs.
-        
-            `ParentSymbol`
+The symbol flags.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541692">DEBUG_SYMBOL_XXX</a> for details.
 
-            The index within the symbol group of the symbol's parent symbol.  If the parent symbol is not known, <b>ParentSymbol</b> is DEBUG_ANY_ID.
-        
-            `Reserved`
+`Module`
 
-            Set to zero.
-        
-            `SubElements`
+The location in the target's virtual address space of the base of the module to which the symbol belongs.
 
-            The number of children of the symbol.  If this symbol has never been expanded within this symbol group, this number will be an estimate that is based on the symbol's type.
-        
-            `TypeId`
+`ParentSymbol`
 
-            The type ID of the symbol.
+The index within the symbol group of the symbol's parent symbol.  If the parent symbol is not known, <b>ParentSymbol</b> is DEBUG_ANY_ID.
+
+`Reserved`
+
+Set to zero.
+
+`SubElements`
+
+The number of children of the symbol.  If this symbol has never been expanded within this symbol group, this number will be an estimate that is based on the symbol's type.
+
+`TypeId`
+
+The type ID of the symbol.
 
 
 ## Requirements

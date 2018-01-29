@@ -7,8 +7,8 @@ old-location : netvista\rilumtskind.htm
 old-project : netvista
 ms.assetid : aedabb82-73d5-4953-bb7a-4ed526bff5a1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUMTSKIND, RILUMTSKIND
+ms.date : 1/18/2018
+ms.keywords : RIL_UMTSKIND_HSDPA, RIL_UMTSKIND_HSUPA, RIL_UMTSKIND_HSPAPLUS, RILUMTSKIND, ntddrilapitypes/RIL_UMTSKIND_DC_HSPAPLUS, RILUMTSKIND enumeration [Network Drivers Starting with Windows Vista], RIL_UMTSKIND_MAX, ntddrilapitypes/RIL_UMTSKIND_HSPAPLUS, ntddrilapitypes/RILUMTSKIND, ntddrilapitypes/RIL_UMTSKIND_HSUPA, ntddrilapitypes/RIL_UMTSKIND_HSPAPLUS_64QAM, netvista.rilumtskind, RIL_UMTSKIND_HSPAPLUS_64QAM, ntddrilapitypes/RIL_UMTSKIND_MAX, RIL_UMTSKIND_DC_HSPAPLUS, ntddrilapitypes/RIL_UMTSKIND_HSDPA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUMTSKIND
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUMTSKIND
 ---
 
@@ -80,6 +84,11 @@ typedef enum _RILUMTSKIND {
 
 <tr>
 <td>RIL_UMTSKIND_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_UMTSKIND_UMTS</td>
 <td></td>
 </tr>
 </table>

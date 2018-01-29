@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6b20db9e-807d-40f5-844f-f9726e3a854f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ObDereferenceObjectDeferDelete
+ms.keywords : ObDereferenceObjectDeferDelete, ObDereferenceObjectDeferDelete routine [Kernel-Mode Driver Architecture], kernel.obdereferenceobjectdeferdelete, k107_d20a8bd1-feff-4c48-8c6f-ccf8a119281b.xml, wdm/ObDereferenceObjectDeferDelete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObDereferenceObjectDeferDelete
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,6 +71,7 @@ Use <b>ObDereferenceObjectDeferDelete</b> for any object when the immediate dele
 For example, such a deadlock can occur if <b>ObDereferenceObject</b> is used to dereference a <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">Kernel Transaction Manager</a> (KTM) object when a higher level driver on the driver stack is holding a lock.
 
 To avoid such deadlocks, use <b>ObDereferenceObjectDeferDelete</b> instead of <b>ObDereferenceObject</b> to dereference KTM objects.
+<div class="alert"><b>Note</b>  For information about object permanence and attributes, see <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,14 +87,10 @@ To avoid such deadlocks, use <b>ObDereferenceObjectDeferDelete</b> instead of <b
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
  
 
  

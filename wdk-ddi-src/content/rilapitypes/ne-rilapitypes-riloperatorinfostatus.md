@@ -7,8 +7,8 @@ old-location : netvista\riloperatorinfostatus_2.htm
 old-project : netvista
 ms.assetid : 8b17ae4a-b3ea-48b6-8269-f947e1d74b86
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILOPERATORINFOSTATUS, RILOPERATORINFOSTATUS
+ms.date : 1/18/2018
+ms.keywords : RIL_OPSTATUS_MAX, netvista.riloperatorinfostatus_2, rilapitypes/RILOPERATORINFOSTATUS, rilapitypes/RIL_OPSTATUS_AVAILABLE, rilapitypes/RIL_OPSTATUS_MAX, rilapitypes/RIL_OPSTATUS_FORBIDDEN, RILOPERATORINFOSTATUS enumeration [Network Drivers Starting with Windows Vista], RIL_OPSTATUS_CURRENT, rilapitypes/RIL_OPSTATUS_CURRENT, RIL_OPSTATUS_FORBIDDEN, RILOPERATORINFOSTATUS, RIL_OPSTATUS_AVAILABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILOPERATORINFOSTATUS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILOPERATORINFOSTATUS
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,11 @@ typedef enum _RILOPERATORINFOSTATUS {
 
 <tr>
 <td>RIL_OPSTATUS_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_OPSTATUS_UNKNOWN</td>
 <td></td>
 </tr>
 </table>

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a52cde43-f440-4e58-97b7-b2aac5fb5f6a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_FRAMING_RANGE_WEIGHTED, KS_FRAMING_RANGE_WEIGHTED, *PKS_FRAMING_RANGE_WEIGHTED
+ms.keywords : PKS_FRAMING_RANGE_WEIGHTED structure pointer [Streaming Media Devices], ks/PKS_FRAMING_RANGE_WEIGHTED, KS_FRAMING_RANGE_WEIGHTED, ks-struct_9bc7dcda-b095-4f53-9446-40ec43d6397b.xml, stream.ks_framing_range_weighted, KS_FRAMING_RANGE_WEIGHTED structure [Streaming Media Devices], *PKS_FRAMING_RANGE_WEIGHTED, ks/KS_FRAMING_RANGE_WEIGHTED, PKS_FRAMING_RANGE_WEIGHTED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_FRAMING_RANGE_WEIGHTED
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KS_FRAMING_RANGE_WEIGHTED, *PKS_FRAMING_RANGE_WEIGHTED
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKS_FRAMING_RANGE_WEIGHTED, KS_FRAMING_RANGE_WEIGHTED"
 ---
 
 # KS_FRAMING_RANGE_WEIGHTED structure
@@ -48,18 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `InPlaceWeight`
 
-            Not currently supported. Drivers should set to zero.
-        
-            `NotInPlaceWeight`
+`InPlaceWeight`
 
-            Not currently supported. Drivers should set to zero.
-        
-            `Range`
+Not currently supported. Drivers should set to zero.
 
-            Specifies the framing range.
+`NotInPlaceWeight`
+
+Not currently supported. Drivers should set to zero.
+
+`Range`
+
+Specifies the framing range.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a>
-</dt>
-</dl>
+
  
 
  

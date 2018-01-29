@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e3993202-c49d-4de9-8881-9e3786575e17
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_REQUEST_COMPLETION_PARAMS, WDF_REQUEST_COMPLETION_PARAMS, *PWDF_REQUEST_COMPLETION_PARAMS
+ms.keywords : "*PWDF_REQUEST_COMPLETION_PARAMS, wdfrequest/WDF_REQUEST_COMPLETION_PARAMS, wdf.wdf_request_completion_params, kmdf.wdf_request_completion_params, WDF_REQUEST_COMPLETION_PARAMS structure, PWDF_REQUEST_COMPLETION_PARAMS, DFRequestObjectRef_e8277b90-7e1e-4d00-9f6b-012b189c153f.xml, WDF_REQUEST_COMPLETION_PARAMS, _WDF_REQUEST_COMPLETION_PARAMS, wdfrequest/PWDF_REQUEST_COMPLETION_PARAMS, PWDF_REQUEST_COMPLETION_PARAMS structure pointer"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_REQUEST_COMPLETION_PARAMS
-req.alt-loc : wdfrequest.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WDF_REQUEST_COMPLETION_PARAMS, *PWDF_REQUEST_COMPLETION_PARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_REQUEST_COMPLETION_PARAMS, WDF_REQUEST_COMPLETION_PARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -96,25 +100,25 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 
 ## Members
 
-        
-            `IoStatus`
 
-            An <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure for the request.
-        
-            `Parameters`
+`IoStatus`
 
-            Request-specific values for the request.
-        
-            `Size`
+An <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure for the request.
 
-            The size, in bytes, of this structure.
-        
-            `Type`
+`Parameters`
 
-            A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a> value that identifies the request type.
+Request-specific values for the request.
 
-    ## Remarks
-        The <b>WDF_REQUEST_COMPLETION_PARAMS</b> structure is used as input to the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a> method and a driver's <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function.
+`Size`
+
+The size, in bytes, of this structure.
+
+`Type`
+
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a> value that identifies the request type.
+
+## Remarks
+The <b>WDF_REQUEST_COMPLETION_PARAMS</b> structure is used as input to the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a> method and a driver's <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function.
 
  In both cases, the completion parameters structure contains valid information only if the driver has formatted the request by calling one of the <b>WdfIoTargetFormat</b><i>Xxx</i> methods. For example, see <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetformatrequestforread.md">WdfIoTargetFormatRequestForRead</a>.
 
@@ -130,25 +134,18 @@ The <b>Parameters.Others.Argument</b>  members are custom arguments that a drive
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a>
-</dt>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
+
  
 
  

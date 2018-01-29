@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 96dd78f1-8b71-4707-8b66-20d80c198f81
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoMakeAssociatedIrp
+ms.keywords : k104_35615730-15a8-4959-8c4d-8e9b4a186e10.xml, IoMakeAssociatedIrp routine [Kernel-Mode Driver Architecture], IoMakeAssociatedIrp, kernel.iomakeassociatedirp, ntddk/IoMakeAssociatedIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoMakeAssociatedIrp
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -84,29 +88,20 @@ Only the master IRP is associated with a thread; associated IRPs are not. For th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
+
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
+
+<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
  
 
  

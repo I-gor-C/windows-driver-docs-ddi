@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : eaff92d2-d866-4096-8528-0672255ced60
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxpTrackDereference
+ms.keywords : RxpTrackDereference function [Installable File System Drivers], fcb/RxpTrackDereference, RxpTrackDereference, ifsk.rxptrackdereference, rxref_60f3cce5-bd6b-47b9-a6cc-85b5ee027934.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxpTrackDereference
-req.alt-loc : fcb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FA_ENTRY, *PFA_ENTRY
 ---
 
@@ -65,7 +69,7 @@ The line number in the source file where this routine was called.
 
 `Instance`
 
-
+TBD
 
 
 ## Return Value
@@ -96,26 +100,18 @@ A number of macros are defined in <i>fcb.h</i> for debugging that are the prefer
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554385">RxDbgBreakPoint</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
-</dt>
-<dt>
 <a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
-</dt>
-<dt>
-<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
-</dt>
-<dt>
+
 <a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
-</dt>
-</dl>
+
+<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554385">RxDbgBreakPoint</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+
  
 
  

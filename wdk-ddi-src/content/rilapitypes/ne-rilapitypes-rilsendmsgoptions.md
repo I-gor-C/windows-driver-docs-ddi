@@ -7,8 +7,8 @@ old-location : netvista\rilsendmsgoptions_2.htm
 old-project : netvista
 ms.assetid : 84d13b43-06c4-4454-9853-80b1fe65d29d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSENDMSGOPTIONS, RILSENDMSGOPTIONS
+ms.date : 1/18/2018
+ms.keywords : netvista.rilsendmsgoptions_2, rilapitypes/RIL_SENDOPT_PERSISTLINK, rilapitypes/RILSENDMSGOPTIONS, RIL_SENDOPT_PERSISTLINK, rilapitypes/RIL_SENDOPT_IMS, RIL_SENDOPT_IMS, RILSENDMSGOPTIONS, RILSENDMSGOPTIONS enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSENDMSGOPTIONS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSENDMSGOPTIONS
 req.product : Windows 10 or later.
 ---
@@ -52,6 +56,11 @@ typedef enum _RILSENDMSGOPTIONS {
 
 <tr>
 <td>RIL_SENDOPT_IMS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_SENDOPT_NONE</td>
 <td></td>
 </tr>
 

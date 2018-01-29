@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 94239501-2eeb-479a-851a-14ae665c5887
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_CREATECONTEXT, DXGKARG_CREATECONTEXT, *INOUT_PDXGKARG_CREATECONTEXT
+ms.keywords : d3dkmddi/DXGKARG_CREATECONTEXT, *INOUT_PDXGKARG_CREATECONTEXT, _DXGKARG_CREATECONTEXT, DXGKARG_CREATECONTEXT structure [Display Devices], DmStructs_f88f9027-046c-482e-93c6-882c325d1a09.xml, display.dxgkarg_createcontext, DXGKARG_CREATECONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_CREATECONTEXT
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_CREATECONTEXT
 ---
 
@@ -52,34 +56,34 @@ typedef struct _DXGKARG_CREATECONTEXT {
 
 ## Members
 
-        
-            `ContextInfo`
 
-            [out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a> structure that the display miniport driver populates to describe the device context.
-        
-            `EngineAffinity`
+`ContextInfo`
 
-            [in] The engine within the node that <b>NodeOrdinal</b> specifies that the context is created for.
-        
-            `Flags`
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a> structure that the display miniport driver populates to describe the device context.
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a> structure that identifies how to create the context.
-        
-            `hContext`
+`EngineAffinity`
 
-            [out] A handle to the context that a display miniport driver returns from a call to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function. This handle represents the context in subsequent calls to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>, <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>, and <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_destroycontext.md">DxgkDdiDestroyContext</a> functions.
-        
-            `NodeOrdinal`
+[in] The engine within the node that <b>NodeOrdinal</b> specifies that the context is created for.
 
-            [in] The node that the context is created for.
-        
-            `pPrivateDriverData`
+`Flags`
 
-            [in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver.
-        
-            `PrivateDriverDataSize`
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a> structure that identifies how to create the context.
 
-            [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+`hContext`
+
+[out] A handle to the context that a display miniport driver returns from a call to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function. This handle represents the context in subsequent calls to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>, <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>, and <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_destroycontext.md">DxgkDdiDestroyContext</a> functions.
+
+`NodeOrdinal`
+
+[in] The node that the context is created for.
+
+`pPrivateDriverData`
+
+[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -90,28 +94,20 @@ typedef struct _DXGKARG_CREATECONTEXT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_destroycontext.md">DxgkDdiDestroyContext</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_destroycontext.md">DxgkDdiDestroyContext</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6f50b520-244e-4848-8696-969de82aa8ff
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB_CONTROL_GET_CONFIGURATION_REQUEST,
+ms.keywords : _URB_CONTROL_GET_CONFIGURATION_REQUEST, usbstrct_77d89ae2-eb81-48f0-b399-85d39a5feb6a.xml, _URB_CONTROL_GET_CONFIGURATION_REQUEST structure [Buses], usb/_URB_CONTROL_GET_CONFIGURATION_REQUEST, buses._urb_control_get_configuration_request
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : _URB_CONTROL_GET_CONFIGURATION_REQUEST
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 req.product : Windows 10 or later.
 ---
@@ -55,47 +59,59 @@ struct _URB_CONTROL_GET_CONFIGURATION_REQUEST {
 
 ## Members
 
-        
-            `hca`
 
-            Reserved. Do not use.
-        
-            `Hdr`
+`_URB`
 
-            Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be set to URB_FUNCTION_GET_CONFIGURATION.
+
+
+`_URB_HCD_AREA`
+
+
+
+`_URB_HEADER`
+
+
+
+`hca`
+
+Reserved. Do not use.
+
+`Hdr`
+
+Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be set to URB_FUNCTION_GET_CONFIGURATION.
 
 <b>Hdr.Length</b> must equal <code>sizeof(_URB_CONTROL_GET_CONFIGURATION_REQUEST)</code>.
-        
-            `Reserved`
 
-            Reserved. Do not use.
-        
-            `Reserved0`
+`Reserved`
 
-            Reserved. Do not use.
-        
-            `Reserved1`
+Reserved. Do not use.
 
-            Reserved. Do not use.
-        
-            `TransferBuffer`
+`Reserved0`
 
-            Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The bus driver returns a single byte that specifies the index of the current configuration.
-        
-            `TransferBufferLength`
+Reserved. Do not use.
 
-            Must be 1. This member specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>.
-        
-            `TransferBufferMDL`
+`Reserved1`
 
-            Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The bus driver returns a single byte that specifies the index of the current configuration. This MDL must be allocated from nonpaged pool.
-        
-            `UrbLink`
+Reserved. Do not use.
 
-            Reserved. Do not use.
+`TransferBuffer`
 
-    ## Remarks
-        The reserved members of this structure must be treated as opaque and are reserved for system use.
+Pointer to a resident buffer for the transfer or is <b>NULL</b> if an MDL is supplied in <b>TransferBufferMDL</b>. The bus driver returns a single byte that specifies the index of the current configuration.
+
+`TransferBufferLength`
+
+Must be 1. This member specifies the length, in bytes, of the buffer specified in <b>TransferBuffer</b> or described in <b>TransferBufferMDL</b>.
+
+`TransferBufferMDL`
+
+Pointer to an MDL that describes a resident buffer or is <b>NULL</b> if a buffer is supplied in <b>TransferBuffer</b>. The bus driver returns a single byte that specifies the index of the current configuration. This MDL must be allocated from nonpaged pool.
+
+`UrbLink`
+
+Reserved. Do not use.
+
+## Remarks
+The reserved members of this structure must be treated as opaque and are reserved for system use.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,19 +121,14 @@ struct _URB_CONTROL_GET_CONFIGURATION_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
  
 
  

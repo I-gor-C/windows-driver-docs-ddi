@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 0C1CEDD8-EA78-4188-AD05-99608B400C84
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2SystemDmaReceiveGetDmaEnabler
+ms.keywords : SerCx2SystemDmaReceiveGetDmaEnabler method [Serial Ports], SerCx2SystemDmaReceiveGetDmaEnabler, 2/SerCx2SystemDmaReceiveGetDmaEnabler, serports.sercx2systemdmareceivegetdmaenabler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SerCx2SystemDmaReceiveGetDmaEnabler
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX_STATUS, *PSERCX_STATUS
 req.product : Windows 10 or later.
 ---
@@ -78,17 +82,12 @@ For more information about DMA enabler objects, see <a href="https://msdn.micros
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a>
-</dt>
-<dt>
-<a href="..\sercx\ns-sercx-_sercx2_system_dma_receive_config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>
-</dt>
-<dt>
 <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a>
-</dt>
-</dl>
+
+<a href="..\sercx\ns-sercx-_sercx2_system_dma_receive_config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a>
+
  
 
  

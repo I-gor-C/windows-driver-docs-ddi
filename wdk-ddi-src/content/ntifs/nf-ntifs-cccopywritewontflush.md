@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ad2b3372-f8b4-49dc-ba20-2ee89d60f41f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcCopyWriteWontFlush
+ms.keywords : ccref_a8540235-ac2e-4d04-8153-95e2dae5a650.xml, ifsk.cccopywritewontflush, CcCopyWriteWontFlush function [Installable File System Drivers], ntifs/CcCopyWriteWontFlush, CcCopyWriteWontFlush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcCopyWriteWontFlush
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -82,17 +86,12 @@ Length in bytes of the data to be copied.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccdeferwrite.md">CcDeferWrite</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
+
  
 
  

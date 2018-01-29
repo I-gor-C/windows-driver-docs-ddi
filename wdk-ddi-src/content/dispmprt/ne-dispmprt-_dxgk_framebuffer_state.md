@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 911E04E4-A9B9-4354-8EAB-CEEF87D56852
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_FRAMEBUFFER_STATE, DXGK_FRAMEBUFFER_STATE
+ms.keywords : FrameBufferStateInitializedByDriver, display.dxgk_framebuffer_state, FrameBufferStateUnknown, dispmprt/FrameBufferStateInitializedByDriver, dispmprt/DXGK_FRAMEBUFFER_STATE, dispmprt/FrameBufferStateUnknown, DXGK_FRAMEBUFFER_STATE, DXGK_FRAMEBUFFER_STATE enumeration [Display Devices], _DXGK_FRAMEBUFFER_STATE, FrameBufferStateInitializedByFirmware, dispmprt/FrameBufferStateInitializedByFirmware
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_FRAMEBUFFER_STATE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_FRAMEBUFFER_STATE
 ---
 
@@ -68,7 +72,7 @@ typedef enum _DXGK_FRAMEBUFFER_STATE {
 
 ## Remarks
 
-FrameBufferStateUnknown will be reported if the frame buffer state is undefined, or if the frame buffer has been initialized but may have been changed by the Basic Display Driver.  The other two states should only be reported if that state is reliable.</p>
+FrameBufferStateUnknown will be reported if the frame buffer state is undefined, or if the frame buffer has been initialized but may have been changed by the Basic Display Driver.  The other two states should only be reported if that state is reliable.
 
 ## Requirements
 | &nbsp; | &nbsp; |

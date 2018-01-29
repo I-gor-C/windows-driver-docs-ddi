@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d6f5c6e5-d944-42a6-bfc2-decc7606cba1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaInitFilter
+ms.keywords : BdaInitFilter function [Streaming Media Devices], bdasup/BdaInitFilter, BdaInitFilter, stream.bdainitfilter, bdaref_9ad4e7ef-1880-4233-83c5-4d066c8f26e5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BdaInitFilter
-req.alt-loc : Bdasup.lib,Bdasup.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Bdasup.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -82,20 +86,14 @@ When a BDA minidriver calls <b>BdaInitFilter</b>, the BDA support driver (<i>Bda
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
-</dt>
-<dt>
-<a href="..\bdasup\nf-bdasup-bdacreatepin.md">BdaCreatePin</a>
-</dt>
-<dt>
-<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-</dt>
-</dl>
+
+<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
+
+<a href="..\bdasup\nf-bdasup-bdacreatepin.md">BdaCreatePin</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 21FE4E54-5B7D-4068-AC83-A7AFFA739169
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+ms.keywords : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 structure [Display Devices], _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, display.dxgkarg_checkmultiplaneoverlaysupport3, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
 ---
 
@@ -51,30 +55,30 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 {
 
 ## Members
 
-        
-            `PlaneCount`
 
-            The number of input planes to be enabled.
-        
-            `PostCompositionCount`
+`PlaneCount`
 
-            The number of VidPnSources for which we want to apply post composition transforms.
-        
-            `ppPlanes`
+The number of input planes to be enabled.
 
-            An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE3 structure that specifies support attributes that the hardware provides for multi-plane overlays.
-        
-            `ppPostComposition`
+`PostCompositionCount`
 
-            An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_POST_COMPSOTION_WITH_SOURCE structure that specifies transforms that should be applied after the planes are composed.
-        
-            `ReturnInfo`
+The number of VidPnSources for which we want to apply post composition transforms.
 
-            Specifies additional information
-        
-            `Supported`
+`ppPlanes`
 
-            TRUE if the multi-plane overlay configuration can be supported, otherwise FALSE.
+An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE3 structure that specifies support attributes that the hardware provides for multi-plane overlays.
+
+`ppPostComposition`
+
+An array of pointers pointing to a DXGK_CHECK_MULTIPLANE_OVERLAY_POST_COMPSOTION_WITH_SOURCE structure that specifies transforms that should be applied after the planes are composed.
+
+`ReturnInfo`
+
+Specifies additional information
+
+`Supported`
+
+TRUE if the multi-plane overlay configuration can be supported, otherwise FALSE.
 
 
 ## Requirements

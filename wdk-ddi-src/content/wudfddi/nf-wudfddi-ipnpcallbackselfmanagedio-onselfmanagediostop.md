@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 490c95f5-ea93-4521-8fa5-4ca1f83ff19d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoStop, OnSelfManagedIoStop
+ms.keywords : OnSelfManagedIoStop method, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo, OnSelfManagedIoStop method, OnSelfManagedIoStop, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoStop, UMDFDeviceObjectRef_d9eba21f-f9a7-48d2-a8e7-f71a735246bc.xml, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoStop method, IPnpCallbackSelfManagedIo::OnSelfManagedIoStop, umdf.ipnpcallbackselfmanagedio_onselfmanagediostop, wdf.ipnpcallbackselfmanagedio_onselfmanagediostop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPnpCallbackSelfManagedIo.OnSelfManagedIoStop
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---

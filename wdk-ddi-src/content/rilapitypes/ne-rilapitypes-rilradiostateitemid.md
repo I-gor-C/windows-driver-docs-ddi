@@ -7,8 +7,8 @@ old-location : netvista\rilradiostateitemid_2.htm
 old-project : netvista
 ms.assetid : 55c75583-945d-45f5-ac69-b6019b82aead
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEITEMID, RILRADIOSTATEITEMID
+ms.date : 1/18/2018
+ms.keywords : netvista.rilradiostateitemid_2, rilapitypes/RILRADIOSTATEITEMID, RILRADIOSTATEITEMID enumeration [Network Drivers Starting with Windows Vista], RILRADIOSTATEITEMID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEITEMID
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILRADIOSTATEITEMID
 req.product : Windows 10 or later.
 ---

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 976f7e83-9b2a-4e1b-ab76-76d8e9711bff
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream, IPortWaveRTStream::AllocateContiguousPagesForMdl, AllocateContiguousPagesForMdl
+ms.keywords : IPortWaveRTStream interface [Audio Devices], AllocateContiguousPagesForMdl method, IPortWaveRTStream::AllocateContiguousPagesForMdl, audio.iportwavertstream_allocatecontiguouspagesformdl, audmp-routines_92ff395d-072b-4a11-b856-3afc1a024289.xml, IPortWaveRTStream, AllocateContiguousPagesForMdl, AllocateContiguousPagesForMdl method [Audio Devices], AllocateContiguousPagesForMdl method [Audio Devices], IPortWaveRTStream interface, portcls/IPortWaveRTStream::AllocateContiguousPagesForMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortWaveRTStream.AllocateContiguousPagesForMdl
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -89,17 +93,12 @@ The <code>AllocateContiguousPagesforMdl</code> method allocates memory pages tha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
+
  
 
  

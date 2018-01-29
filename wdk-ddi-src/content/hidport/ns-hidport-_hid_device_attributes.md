@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : ba874c8a-b0df-475c-b34d-56ad0a3472db
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HID_DEVICE_ATTRIBUTES, *PHID_DEVICE_ATTRIBUTES, HID_DEVICE_ATTRIBUTES
+ms.keywords : hidport/PHID_DEVICE_ATTRIBUTES, hid.hid_device_attributes, PHID_DEVICE_ATTRIBUTES, HID_DEVICE_ATTRIBUTES, PHID_DEVICE_ATTRIBUTES structure pointer [Human Input Devices], hidstrct_2ba6111b-4231-40eb-9b08-0b3b396079d8.xml, hidport/HID_DEVICE_ATTRIBUTES, *PHID_DEVICE_ATTRIBUTES, HID_DEVICE_ATTRIBUTES structure [Human Input Devices], _HID_DEVICE_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HID_DEVICE_ATTRIBUTES
-req.alt-loc : hidport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHID_DEVICE_ATTRIBUTES, HID_DEVICE_ATTRIBUTES"
 ---
 
@@ -50,29 +54,29 @@ typedef struct _HID_DEVICE_ATTRIBUTES {
 
 ## Members
 
-        
-            `ProductID`
 
-            Specifies a HID device's product ID.
-        
-            `Reserved`
+`ProductID`
 
-            Reserved for internal system use.
-        
-            `Size`
+Specifies a HID device's product ID.
 
-            Specifies the size of the structure. This member should be treated as read-only when a HID minidriver uses this structure to complete an <a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request.
-        
-            `VendorID`
+`Reserved`
 
-            Specifies a HID device's vendor ID.
-        
-            `VersionNumber`
+Reserved for internal system use.
 
-            Specifies the manufacturer's revision number for a HID device.
+`Size`
 
-    ## Remarks
-        The HID class driver uses this structure to obtain device attributes when it sends an <a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request to a HID minidriver.
+Specifies the size of the structure. This member should be treated as read-only when a HID minidriver uses this structure to complete an <a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request.
+
+`VendorID`
+
+Specifies a HID device's vendor ID.
+
+`VersionNumber`
+
+Specifies the manufacturer's revision number for a HID device.
+
+## Remarks
+The HID class driver uses this structure to obtain device attributes when it sends an <a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request to a HID minidriver.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,13 +86,10 @@ typedef struct _HID_DEVICE_ATTRIBUTES {
 | **Minimum UMDF version** |  |
 | **Header** | hidport.h (include Hidport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

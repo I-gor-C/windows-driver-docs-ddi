@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a0d59215-5201-4e1a-9cb2-d9ff6109c3bb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, IMiniportWaveCyclicStream::GetPosition, GetPosition
+ms.keywords : GetPosition, audio.iminiportwavecyclicstream_getposition, audmp-routines_016da0e2-bc56-4c06-9755-a13b75d6c5c9.xml, IMiniportWaveCyclicStream, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface [Audio Devices], GetPosition method, portcls/IMiniportWaveCyclicStream::GetPosition, IMiniportWaveCyclicStream::GetPosition, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveCyclicStream.GetPosition
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -66,12 +70,16 @@ The position is zero immediately following initialization of the stream. A trans
 <code>GetPosition</code> specifies the position as an offset into the cyclic buffer. When the position reaches the end of the cyclic buffer, it wraps around to the beginning of the buffer. Hence, the position never exceeds the buffer size.
 
 Note that the offset value retrieved by a <code>GetPosition</code> call is one of the following:
-
+<ul>
+<li>
 For a render stream, the <code>GetPosition</code> method retrieves the play position, which is the byte offset of the sample that is currently being played through the DAC and transmitted through the speaker jack.
 
+</li>
+<li>
 For a capture stream, the <code>GetPosition</code> method retrieves the record position, which is the byte offset of the latest sample to be received through the microphone jack and captured by the ADC.
 
-It is not the offset of the sample that the DMA engine in the audio device is currently reading from or writing to the audio buffer.
+</li>
+</ul>It is not the offset of the sample that the DMA engine in the audio device is currently reading from or writing to the audio buffer.
 
 Some audio hardware contains a position register to keep track of the byte offset of the sample currently in each DAC or ADC, in which case the <code>GetPosition</code> method simply retrieves the contents of the position register for the appropriate stream. Other audio hardware can only supply the driver with DMA pointers into the audio buffers, in which case the <code>GetPosition</code> method must provide a best estimate of the byte offset in the DAC or ADC based on the current DMA position and the buffering delays internal to the device.
 
@@ -93,17 +101,12 @@ The WaveCyclic port driver implements a property handler for <a href="https://ms
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
-</dt>
-<dt>
+
 <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
-</dt>
-</dl>
+
  
 
  

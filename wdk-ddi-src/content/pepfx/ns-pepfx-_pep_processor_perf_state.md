@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 46231ac0-2c34-4154-8b3e-f34c40cbff4a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PROCESSOR_PERF_STATE, PEP_PROCESSOR_PERF_STATE, *PPEP_PROCESSOR_PERF_STATE
+ms.keywords : PEP_PROCESSOR_PERF_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PROCESSOR_PERF_STATE, _PEP_PROCESSOR_PERF_STATE, kernel.pep_processor_perf_state, *PPEP_PROCESSOR_PERF_STATE, PEP_PROCESSOR_PERF_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PROCESSOR_PERF_STATE
-req.alt-loc : Pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_PROCESSOR_PERF_STATE, *PPEP_PROCESSOR_PERF_STATE
 ---
 
@@ -48,18 +52,18 @@ typedef struct _PEP_PROCESSOR_PERF_STATE {
 
 ## Members
 
-        
-            `Frequency`
 
-            On output, the frequency (in MHz) of this performance state.
-        
-            `Performance`
+`Frequency`
 
-            On output, the performance level (on the scale returned by the <a href="..\pepfx\ns-pepfx-_pep_query_component_perf_capabilities.md">PEP_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification) of this performance state.
-        
-            `Reserved`
+On output, the frequency (in MHz) of this performance state.
 
-            Reserved.
+`Performance`
+
+On output, the performance level (on the scale returned by the <a href="..\pepfx\ns-pepfx-_pep_query_component_perf_capabilities.md">PEP_QUERY_COMPONENT_PERF_CAPABILITIES</a> notification) of this performance state.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _PEP_PROCESSOR_PERF_STATE {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/506b3d8e-4aba-4e70-a6db-52a52d717c6b">PEP_PPM_QUERY_DISCRETE_PERF_STATES</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186881">Processor power management (PPM) notifications</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/506b3d8e-4aba-4e70-a6db-52a52d717c6b">PEP_PPM_QUERY_DISCRETE_PERF_STATES</a>
+
  
 
  

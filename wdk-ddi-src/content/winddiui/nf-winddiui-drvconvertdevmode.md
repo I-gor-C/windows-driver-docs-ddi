@@ -7,8 +7,8 @@ old-location : print\drvconvertdevmode.htm
 old-project : print
 ms.assetid : eb0402a8-22ce-417f-9b19-25b357451307
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : DrvConvertDevMode
+ms.date : 1/18/2018
+ms.keywords : DrvConvertDevMode function [Print Devices], DrvConvertDevMode, print_interface-graphics_ceabaf66-f730-4243-85a7-ffcee065192b.xml, print.drvconvertdevmode, winddiui/DrvConvertDevMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DrvConvertDevMode
-req.alt-loc : winddiui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
 req.product : Windows 10 or later.
 ---
 
@@ -90,7 +94,7 @@ The function should verify that both <i>pdmIn</i> and <i>pdmOut</i> (if applicab
 
 The <b>DrvConvertDevMode</b> function runs in the spooler's context and must therefore not display a user interface.
 
-When <b>DrvConvertDevMode</b> is called with a <b>NULL</b> DEVMODEW structure pointer in the <i>pdmOut </i>parameter to get the buffer size, the driver is expected to set the last error to ERROR_INSUFFICIENT_BUFFER. If the last error is not set to this value, the spooler assumes a general error.</p>
+When <b>DrvConvertDevMode</b> is called with a <b>NULL</b> DEVMODEW structure pointer in the <i>pdmOut </i>parameter to get the buffer size, the driver is expected to set the last error to ERROR_INSUFFICIENT_BUFFER. If the last error is not set to this value, the spooler assumes a general error.
 
 ## Requirements
 | &nbsp; | &nbsp; |

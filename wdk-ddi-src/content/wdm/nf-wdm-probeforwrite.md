@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8f435a52-f087-4d36-bf95-e82f5ab061e4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ProbeForWrite
+ms.keywords : kernel.probeforwrite, ProbeForWrite, k102_62889c29-62cb-43c2-ac19-e8b933783443.xml, ProbeForWrite routine [Kernel-Mode Driver Architecture], wdm/ProbeForWrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ProbeForWrite
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -96,11 +100,8 @@ If <i>Length</i> = 0, <b>ProbeForWrite</b> does no checking of the address. In t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-probeforread.md">ProbeForRead</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : print\notification_config_1.htm
 old-project : print
 ms.assetid : 4A33F3EB-9A2E-40F4-B5BC-EDEA5085301E
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _NOTIFICATION_CONFIG_1, *PNOTIFICATION_CONFIG_1, NOTIFICATION_CONFIG_1
+ms.date : 1/18/2018
+ms.keywords : PNOTIFICATION_CONFIG_1, winsplp/PNOTIFICATION_CONFIG_1, print.notification_config_1, NOTIFICATION_CONFIG_1 structure [Print Devices], winsplp/NOTIFICATION_CONFIG_1, NOTIFICATION_CONFIG_1, PNOTIFICATION_CONFIG_1 structure pointer [Print Devices], _NOTIFICATION_CONFIG_1, *PNOTIFICATION_CONFIG_1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NOTIFICATION_CONFIG_1
-req.alt-loc : Winsplp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PNOTIFICATION_CONFIG_1, NOTIFICATION_CONFIG_1"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NOTIFICATION_CONFIG_1, *PNOTIFICATION_CONFIG_1
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _NOTIFICATION_CONFIG_1 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `fdwFlags`
+`cbSize`
 
-            
-        
-            `pContext`
 
-            
-        
-            `pfnNotifyCallback`
 
-            
+`fdwFlags`
+
+
+
+`pContext`
+
+
+
+`pfnNotifyCallback`
+
+
 
 
 ## Requirements

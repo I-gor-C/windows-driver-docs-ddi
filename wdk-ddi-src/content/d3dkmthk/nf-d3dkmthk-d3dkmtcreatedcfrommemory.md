@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c02f53d9-7cf2-4420-9aea-4dba916be786
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateDCFromMemory
+ms.keywords : PFND3DKMT_CREATEDCFROMMEMORY, d3dkmthk/D3DKMTCreateDCFromMemory, display.d3dkmtcreatedcfrommemory, OpenGL_Functions_676f0d3e-5a5a-48d5-9092-88ac897a73b8.xml, D3DKMTCreateDCFromMemory, D3DKMTCreateDCFromMemory function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTCreateDCFromMemory
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -53,14 +57,34 @@ This function has no parameters.
 ## Return Value
 
 <b>D3DKMTCreateDCFromMemory</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The display context was successfully created.
+</dl>
+</td>
+<td width="60%">
+The display context was successfully created.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -84,11 +108,8 @@ During the execution of the <b>D3DKMTCreateDCFromMemory</b> function, the kernel
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createdcfrommemory.md">D3DKMT_CREATEDCFROMMEMORY</a>
-</dt>
-</dl>
+
  
 
  

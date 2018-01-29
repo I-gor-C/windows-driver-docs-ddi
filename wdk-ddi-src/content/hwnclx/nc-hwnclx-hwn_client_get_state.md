@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : c472b4bf-4c7f-4c30-ad03-2017d26d52b4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+ms.keywords : gpiobtn.hwn_client_get_state, HwnClientGetState callback function, HwnClientGetState, HWN_CLIENT_GET_STATE, HWN_CLIENT_GET_STATE, hwnclx/HwnClientGetState, *PHWN_CLIENT_GET_STATE callback function pointer, *PHWN_CLIENT_GET_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : "*PHWN_CLIENT_GET_STATE"
-req.alt-loc : Hwnclx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE"
 ---
 
 
@@ -63,11 +67,9 @@ Pointer to the client driver's context information. This memory space is availab
 `OutputBuffer`
 
 Buffer of <i>OutputBufferLength</i> bytes for writing hardware notification status. If the function succeeds, the buffer will contain a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_HEADER</a> structure including one or more <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_SETTINGS</a> structures.
-
 <div class="alert"><b>Note</b>  <p class="note"><b>OutputBufferLength</b> must be large enough to contain all of the requested settings. For more information, see Remarks.
 
-</div>
-<div> </div>
+</div><div> </div>
 
 `OutputBufferLength`
 
@@ -93,14 +95,22 @@ Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriat
 ## Remarks
 
 Register your implementation of this callback function by setting the appropriate member of <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_CLIENT_REGISTRATION_PACKET</a> and then calling <a href="..\hwnclx\nf-hwnclx-hwnregisterclient.md">HwNRegisterClient</a>.
-
+<ul>
+<li>
 If <i>InputBuffer</i> is NULL, the output buffer will be used to store a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_HEADER</a> structure that contains all of the settings for the hardware notifications implemented by the driver. 
 
 The Settings for a hardware notification component are stored in a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_SETTINGS</a> structure. The <b>HwNSettingsInfo</b> field of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_HEADER</a> structure contains an array of <b>HWN_SETTINGS</b> structures.
 
+</li>
+<li>
 If <i>InputBuffer</i> is not null and is correctly formatted, it will contain a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_HEADER</a> with one or more <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_SETTINGS</a> structures. The IDs for the requested hardware notification components are stored in the <b>HwNId</b> field of the <b>HWN_SETTINGS</b> structure. The remaining settings should be valid settings or zero.
 
+</li>
+<li>
 If <i>OutputBuffer</i> is not large enough to contain all of the settings requested, this function should not write anything to <i>OutputBuffer</i>. Additionally, it should set <i>BytesRead</i> to 0 and return an error.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -116,12 +126,10 @@ If <i>OutputBuffer</i> is not large enough to contain all of the settings reques
 
 ## See Also
 
-<dl>
-<dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
-<dt>
 <a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
  
 
  

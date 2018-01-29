@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8a003d78-3b7d-44af-a7cf-a2a516c2cc20
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoCheckQuotaBufferValidity
+ms.keywords : IoCheckQuotaBufferValidity, ifsk.iocheckquotabuffervalidity, IoCheckQuotaBufferValidity routine [Installable File System Drivers], ntifs/IoCheckQuotaBufferValidity, ioref_b4dc2b93-aaf1-450b-8240-b92792182057.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCheckQuotaBufferValidity
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -70,24 +74,38 @@ A variable to receive the offset of the offending entry in the quota buffer if a
 ## Remarks
 
 <b>IoCheckQuotaBufferValidity</b> checks each FILE_QUOTA_INFORMATION entry in the specified quota buffer to ensure that the following conditions are met:
-
+<ul>
+<li>
 The entire entry must fall within the buffer.
 
+</li>
+<li>
 The value of <b>Sid</b> must be a security identifier (SID).
 
+</li>
+<li>
 The value of <b>SidLength</b> must match the length in bytes of the value of <b>Sid</b>.
 
+</li>
+<li>
 For all entries except the last, the value of <b>NextEntryOffset</b> must be greater than zero and must fall on a ULONG boundary.
 
-In addition, <b>IoCheckQuotaBufferValidity</b> checks the quota buffer to ensure that the following conditions are met:
-
+</li>
+</ul>In addition, <b>IoCheckQuotaBufferValidity</b> checks the quota buffer to ensure that the following conditions are met:
+<ul>
+<li>
 The buffer must be ULONG-aligned.
 
+</li>
+<li>
 The length passed in <i>QuotaLength</i> matches the actual length of the buffer.
 
+</li>
+<li>
 The actual buffer length is nonnegative.
 
-To be valid, the quota buffer must meet all of these conditions.
+</li>
+</ul>To be valid, the quota buffer must meet all of these conditions.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,17 +121,12 @@ To be valid, the quota buffer must meet all of these conditions.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+
+<a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>
+
  
 
  

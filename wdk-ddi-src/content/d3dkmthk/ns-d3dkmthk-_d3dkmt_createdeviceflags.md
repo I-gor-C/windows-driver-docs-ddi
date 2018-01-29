@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90d4ce0a-1f36-4f2e-bdbe-5f80c8dfb92a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEDEVICEFLAGS, D3DKMT_CREATEDEVICEFLAGS
+ms.keywords : D3DKMT_CREATEDEVICEFLAGS structure [Display Devices], display.d3dkmt_createdeviceflags, _D3DKMT_CREATEDEVICEFLAGS, OpenGL_Structs_7cb495c3-44aa-46cb-8bca-87b66c5d422f.xml, d3dkmthk/D3DKMT_CREATEDEVICEFLAGS, D3DKMT_CREATEDEVICEFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEDEVICEFLAGS
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEDEVICEFLAGS
 ---
 
@@ -53,24 +57,24 @@ typedef struct _D3DKMT_CREATEDEVICEFLAGS {
 
 ## Members
 
-        
-            `DisableGpuTimeout`
 
-            Supported in Windows 8 and later versions.A UINT value that specifies whether the device has disabled <a href="https://msdn.microsoft.com/f410eec7-026f-41e0-8c60-72f651659ead">Timeout Detection and Recovery (TDR)</a>.
+`DisableGpuTimeout`
+
+Supported in Windows 8 and later versions.A UINT value that specifies whether the device has disabled <a href="https://msdn.microsoft.com/f410eec7-026f-41e0-8c60-72f651659ead">Timeout Detection and Recovery (TDR)</a>.
 
 Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000004).
-        
-            `LegacyMode`
 
-            A UINT value that specifies whether the device should imitate several behaviors of legacy devices (that is, from Microsoft DirectDraw through Microsoft Direct3D 9.0 device types).
+`LegacyMode`
+
+A UINT value that specifies whether the device should imitate several behaviors of legacy devices (that is, from Microsoft DirectDraw through Microsoft Direct3D 9.0 device types).
 
 When legacy mode is enabled, the video memory manager does not allow the device to allocate more video memory than can fit in the combined GPU segment. Primaries are allocated in place in video memory and not preserved across mode switches. 
 
 Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).
-        
-            `RequestVSync`
 
-            A UINT value that specifies whether the device requires vertical sync to operate. If <b>RequestVSync</b> is set, the operating system will enable vertical sync on the graphics hardware until the display device is released. 
+`RequestVSync`
+
+A UINT value that specifies whether the device requires vertical sync to operate. If <b>RequestVSync</b> is set, the operating system will enable vertical sync on the graphics hardware until the display device is released. 
 
 Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).
 
@@ -83,13 +87,10 @@ Setting this member is equivalent to setting the second bit of a 32-bit value (0
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createdevice.md">D3DKMT_CREATEDEVICE</a>
-</dt>
-</dl>
+
  
 
  

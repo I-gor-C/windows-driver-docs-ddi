@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1314ffb5-e6e2-4c22-bc67-388da3bcbe79
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIsServicePackVersionInstalled
+ms.keywords : kernel.rtlisservicepackversioninstalled, RtlIsServicePackVersionInstalled, RtlIsServicePackVersionInstalled routine [Kernel-Mode Driver Architecture], wdm/RtlIsServicePackVersionInstalled, k109_1552acd9-7036-45d2-bd1c-57b7a2154ecb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIsServicePackVersionInstalled
-req.alt-loc : Rtlver.lib,Rtlver.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Rtlver.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -52,7 +56,6 @@ BOOLEAN RtlIsServicePackVersionInstalled(
 `Version`
 
 The service pack version of the Windows DDI that is available. The following table lists the possible values for <i>Version</i>.
-
 <table>
 <tr>
 <th>Constant</th>
@@ -238,8 +241,7 @@ Windows 2000
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The NTDDI_<i>XXX</i> constants are defined in the Sdkddkver.h header file. The preceding table does not contain an entry for Windows Server 2008 with SP1. The first service pack to become available for Windows Server 2008 is SP2.
 
@@ -272,17 +274,12 @@ The Windows kernel implements <b>RtlIsServicePackVersionInstalled</b> only in Wi
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-psgetversion.md">PsGetVersion</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a>
+
+<a href="..\wdm\nf-wdm-psgetversion.md">PsGetVersion</a>
+
  
 
  

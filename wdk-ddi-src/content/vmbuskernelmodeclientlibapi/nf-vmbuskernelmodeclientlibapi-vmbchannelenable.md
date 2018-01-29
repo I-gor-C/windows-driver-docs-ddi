@@ -7,8 +7,8 @@ old-location : netvista\vmbchannelenable.htm
 old-project : netvista
 ms.assetid : A0256B3F-C35C-45AB-A825-0A82189F08DC
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : VmbChannelEnable
+ms.date : 1/18/2018
+ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelEnable, VmbChannelEnable, VmbChannelEnable function [Network Drivers Starting with Windows Vista], netvista.vmbchannelenable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 1.13
 req.umdf-ver : 2.0
-req.alt-api : VmbChannelEnable
-req.alt-loc : vmbkmcl.lib,vmbkmcl.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Vmbkmcl.lib
 req.dll : 
 req.irql : 
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 

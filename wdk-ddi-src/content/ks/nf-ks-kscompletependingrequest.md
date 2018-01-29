@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9bde557e-0759-4f5b-989e-a34a701d2ebd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCompletePendingRequest
+ms.keywords : KsCompletePendingRequest function [Streaming Media Devices], KsCompletePendingRequest, stream.kscompletependingrequest, avfunc_e01e61fc-ec10-4781-aee2-0aa7e24ca31a.xml, ks/KsCompletePendingRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCompletePendingRequest
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -77,20 +81,14 @@ If the dispatch function in question does not pass an IRP, it <b>cannot</b> retu
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
+
 <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+
  
 
  

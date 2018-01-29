@@ -7,8 +7,8 @@ old-location : netvista\ndis_wwan_provisioned_contexts.htm
 old-project : netvista
 ms.assetid : ee4ba781-9adf-4eb0-8c3d-b11aac86c943
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_WWAN_PROVISIONED_CONTEXTS, *PNDIS_WWAN_PROVISIONED_CONTEXTS, NDIS_WWAN_PROVISIONED_CONTEXTS
+ms.date : 1/18/2018
+ms.keywords : ndiswwan/NDIS_WWAN_PROVISIONED_CONTEXTS, netvista.ndis_wwan_provisioned_contexts, ndiswwan/PNDIS_WWAN_PROVISIONED_CONTEXTS, WwanRef_ad7bfe2b-eb11-45f9-a49d-a602df06b97f.xml, PNDIS_WWAN_PROVISIONED_CONTEXTS, _NDIS_WWAN_PROVISIONED_CONTEXTS, NDIS_WWAN_PROVISIONED_CONTEXTS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PROVISIONED_CONTEXTS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_PROVISIONED_CONTEXTS, *PNDIS_WWAN_PROVISIONED_CONTEXTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_WWAN_PROVISIONED_CONTEXTS
-req.alt-loc : ndiswwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PNDIS_WWAN_PROVISIONED_CONTEXTS, NDIS_WWAN_PROVISIONED_CONTEXTS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_WWAN_PROVISIONED_CONTEXTS, *PNDIS_WWAN_PROVISIONED_CONTEXTS
 ---
 
 # _NDIS_WWAN_PROVISIONED_CONTEXTS structure
@@ -49,22 +53,21 @@ typedef struct _NDIS_WWAN_PROVISIONED_CONTEXTS {
 
 ## Members
 
-        
-            `ContextListHeader`
 
-            A formatted 
+`ContextListHeader`
+
+A formatted 
      <a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a> object that represents a
      list of provisioned contexts and the number of provisioned contexts in the list.
-        
-            `Header`
 
-            The header with type, revision, and size information about the NDIS_WWAN_PROVISIONED_CONTEXTS
+`Header`
+
+The header with type, revision, and size information about the NDIS_WWAN_PROVISIONED_CONTEXTS
      structure. The MB Service sets the header with the values that are shown in the following table when it
      sends the data structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
-
 <table>
 <tr>
 <th>Header submember</th>
@@ -100,18 +103,16 @@ sizeof(NDIS_WWAN_PROVISIONED_CONTEXTS)
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
-        
-            `uStatus`
 
-            The status of the provisioned context query or set operation. The following table shows the possible values for
+`uStatus`
+
+The status of the provisioned context query or set operation. The following table shows the possible values for
      this member.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -219,13 +220,11 @@ The operation failed because the update request was unsuccessful.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The status of provisioned context set operation. The following table shows the possible value for
      this member.
      
-
 <table>
 <tr>
 <th>Value</th>
@@ -243,8 +242,8 @@ The operation failed because the update request was unsuccessful.
 </tr>
 </table>
 
-    ## Remarks
-        Miniport drivers should specify zero elements in the context list when they respond to
+## Remarks
+Miniport drivers should specify zero elements in the context list when they respond to
     OID_WWAN_PROVISIONED_CONTEXT 
     <i>set</i> requests.
 
@@ -256,18 +255,14 @@ The operation failed because the update request was unsuccessful.
 | **Minimum UMDF version** |  |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
+
 <a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PROVISIONED_CONTEXTS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PROVISIONED_CONTEXTS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

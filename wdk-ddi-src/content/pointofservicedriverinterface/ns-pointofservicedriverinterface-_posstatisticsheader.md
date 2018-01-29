@@ -7,8 +7,8 @@ old-location : pos\posstatisticsheader.htm
 old-project : pos
 ms.assetid : 75567f14-07fe-4861-9f78-e4de6d0bb023
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosStatisticsHeader, PosStatisticsHeader
+ms.date : 1/18/2018
+ms.keywords : pointofservicedriverinterface/PosStatisticsHeader, PosStatisticsHeader, pos.posstatisticsheader, PosStatisticsHeader structure, _PosStatisticsHeader
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosStatisticsHeader
-req.alt-loc : PointOfServiceDriverInterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosStatisticsHeader
 ---
 
@@ -48,18 +52,18 @@ typedef struct _PosStatisticsHeader {
 
 ## Members
 
-        
-            `DataLength`
 
-            Indicates the length, in bytes, of the <b>PosStatisticsHeader</b> and the buffer of <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posvaluestatisticsentry.md">PosValueStatisticsEntry</a> that follow this structure in memory.
-        
-            `DeviceInformation`
+`DataLength`
 
-            A <a href="..\pointofservicecommontypes\ns-pointofservicecommontypes-_posdeviceinformation.md">PosDeviceInformation</a> structure that contains UPOS standard information about the device, such as its category, manufacturer, and firmware revision.
-        
-            `EntryCount`
+Indicates the length, in bytes, of the <b>PosStatisticsHeader</b> and the buffer of <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posvaluestatisticsentry.md">PosValueStatisticsEntry</a> that follow this structure in memory.
 
-            Indicates the number of statistics that follow this header.
+`DeviceInformation`
+
+A <a href="..\pointofservicecommontypes\ns-pointofservicecommontypes-_posdeviceinformation.md">PosDeviceInformation</a> structure that contains UPOS standard information about the device, such as its category, manufacturer, and firmware revision.
+
+`EntryCount`
+
+Indicates the number of statistics that follow this header.
 
 
 ## Requirements

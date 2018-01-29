@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3f361f50-3ca2-4fb6-828c-27928b50cf55
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortNotification
+ms.keywords : storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml, storport/StorPortNotification, storage.storportnotification, StorPortNotification routine [Storage Devices], StorPortNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortNotification
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : StorPortNotification2, StorPortStatusPending, StorPortTimer
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -56,7 +60,6 @@ VOID StorPortNotification(
 `NotificationType`
 
 Specifies the notification type, which can be one of the following values.
-
 <table>
 <tr>
 <th>Notification type</th>
@@ -149,7 +152,7 @@ QueryTickCount
 
 </td>
 <td>
-This notification type returns a LARGE_INTEGER that holds the value from <a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>. The value returned in TickCount is the count of the interval timer interrupts that have occurred since the system was booted
+This notification type returns a LARGE_INTEGER that holds the value from <a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>. The value returned in TickCount is the count of the interval timer interrupts that have occurred since the system was booted
 
 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
 <tr>
@@ -313,41 +316,28 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567434">StorPortNotification for BufferOverrunDetected</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567437">StorPortNotification for BusChangeDetected</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567439">StorPortNotification for LinkDown</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567441">StorPortNotification for LinkUp</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567445">StorPortNotification for QueryTickCount</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567446">StorPortNotification for RequestComplete</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567447">StorPortNotification for RequestTimerCall</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567450">StorPortNotification for ResetDetected</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567452">StorPortNotification for WMIEvent</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567447">StorPortNotification for RequestTimerCall</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567446">StorPortNotification for RequestComplete</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567434">StorPortNotification for BufferOverrunDetected</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567456">StorPortNotification for WMIReregister</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567437">StorPortNotification for BusChangeDetected</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567450">StorPortNotification for ResetDetected</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567445">StorPortNotification for QueryTickCount</a>
+
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567441">StorPortNotification for LinkUp</a>
+
  
 
  

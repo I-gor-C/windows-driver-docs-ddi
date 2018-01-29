@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : d0466569-7c9d-40d2-8794-b1d877a52458
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_SDP_DISCONNECT, BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT
+ms.keywords : _BTH_SDP_DISCONNECT, bltooth.bth_sdp_disconnect, bth_structs_049df802-3bad-49b0-b80e-f3b0a1579b72.xml, bthioctl/PBTH_SDP_DISCONNECT, PBTH_SDP_DISCONNECT structure pointer [Bluetooth Devices], *PBTH_SDP_DISCONNECT, PBTH_SDP_DISCONNECT, BTH_SDP_DISCONNECT, BTH_SDP_DISCONNECT structure [Bluetooth Devices], bthioctl/BTH_SDP_DISCONNECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_SDP_DISCONNECT
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT
 ---
 
@@ -49,6 +53,10 @@ typedef struct _BTH_SDP_DISCONNECT {
 ## Members
 
 
+`HANDLE_SDP_FIELD_NAME`
+
+
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -58,19 +66,14 @@ typedef struct _BTH_SDP_DISCONNECT {
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_disconnect.md">IOCTL_BTH_SDP_DISCONNECT</a>
-</dt>
-<dt>
-<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
-</dt>
-<dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
-</dt>
-</dl>
+
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_disconnect.md">IOCTL_BTH_SDP_DISCONNECT</a>
+
+<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
+
  
 
  

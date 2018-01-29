@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 76040e0d-a43c-4e3d-aaaa-b84fc2613603
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsValidOemCharacter
+ms.keywords : RtlIsValidOemCharacter, ifsk.rtlisvalidoemcharacter, RtlIsValidOemCharacter routine [Installable File System Drivers], rtlref_ebbaa5fc-63da-4eef-b8ac-be10a6e062a0.xml, ntifs/RtlIsValidOemCharacter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlIsValidOemCharacter
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -77,17 +81,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodestring.md">RtlOemStringToCountedUnicodeString</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtloemstringtounicodestring.md">RtlOemStringToUnicodeString</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-rtlunicodetooemn.md">RtlUnicodeToOemN</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodestring.md">RtlOemStringToCountedUnicodeString</a>
+
  
 
  

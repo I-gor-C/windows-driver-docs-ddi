@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c7debd93-0fcd-43c5-a950-8154b62175bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND
+ms.keywords : ntddstor/PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND, PPERSISTENT_RESERVE_COMMAND structure pointer [Storage Devices], PPERSISTENT_RESERVE_COMMAND, ntddstor/PERSISTENT_RESERVE_COMMAND, storage.persistent_reserve_command, PERSISTENT_RESERVE_COMMAND structure [Storage Devices], _PERSISTENT_RESERVE_COMMAND, structs-general_4fe3d6f6-6e9f-41f5-915c-2636707f429c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PERSISTENT_RESERVE_COMMAND
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : PERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND"
 ---
 
 # _PERSISTENT_RESERVE_COMMAND structure
@@ -61,17 +65,21 @@ typedef struct _PERSISTENT_RESERVE_COMMAND {
 
 ## Members
 
-        
-            `Size`
 
-            The size of this structure.
-        
-            `Version`
+`DUMMYUNIONNAME`
 
-            The version of this structure.
 
-    ## Remarks
-        The behavior of the storage device when a SCSI Persistent Reserve In command or a SCSI Persistent Reserve Out command is received is described in the <a href="http://go.microsoft.com/fwlink/p/?linkid=153142">SCSI Primary Commands - 2 (SPC-2)</a> specification.
+
+`Size`
+
+The size of this structure.
+
+`Version`
+
+The version of this structure.
+
+## Remarks
+The behavior of the storage device when a SCSI Persistent Reserve In command or a SCSI Persistent Reserve Out command is received is described in the <a href="http://go.microsoft.com/fwlink/p/?linkid=153142">SCSI Primary Commands - 2 (SPC-2)</a> specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,16 +89,12 @@ typedef struct _PERSISTENT_RESERVE_COMMAND {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
-</dt>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
-</dt>
-</dl>
+
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
+
  
 
  

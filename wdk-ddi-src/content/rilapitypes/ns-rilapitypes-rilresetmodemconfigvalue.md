@@ -7,8 +7,8 @@ old-location : netvista\rilresetmodemconfigvalue_2.htm
 old-project : netvista
 ms.assetid : 8749345c-a1a6-43f6-8cb7-f69a6734839f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE
+ms.date : 1/18/2018
+ms.keywords : netvista.rilresetmodemconfigvalue_2, rilapitypes/RILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE structure [Network Drivers Starting with Windows Vista], *LPRILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRESETMODEMCONFIGVALUE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE"
 req.product : Windows 10 or later.
 ---
@@ -61,22 +65,22 @@ typedef struct _RILRESETMODEMCONFIGVALUE {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `configValueUnion`
+`cbSize`
 
-            
-        
-            `dwType`
 
-            
-        
-            `RILRESETMODEMCONFIGVALUEUNION`
 
-            
+`configValueUnion`
+
+
+
+`dwType`
+
+
+
+`RILRESETMODEMCONFIGVALUEUNION`
+
+
 
 
 ## Requirements

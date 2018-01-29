@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EC08022F-319E-4E49-A003-B98EEADAA0CC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION, D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION
+ms.keywords : D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION, d3d10umddi/D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION, display.d3d11_video_decoder_begin_frame_crypto_session, D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION structure [Display Devices], D3D11_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION, D3D11_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION
 ---
 
@@ -51,33 +55,33 @@ typedef struct D3D11_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION {
 
 ## Members
 
-        
-            `BlobSize`
 
-            Size of the IHV-defined blob referenced in the <b>pBlob</b> member.
-        
-            `hCryptoSession`
+`BlobSize`
 
-            A handle to a cryptographic session object created using <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>.
-        
-            `pBlob`
+Size of the IHV-defined blob referenced in the <b>pBlob</b> member.
 
-            A pointer to an IHV-defined blob allocated by an upstream DRM component.  The blob identifies the sealed decryption key to be used for the current frame.
-        
-            `pKeyInfoId`
+`hCryptoSession`
 
-            A pointer to a <b>GUID</b> identifying the hardware key.
-        
-            `pPrivateData`
+A handle to a cryptographic session object created using <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>.
 
-            The definition of this buffer is dependent on the implementation of the secure environment. It may contain data specific to the current frame.
-        
-            `PrivateDataSize`
+`pBlob`
 
-            Contains the size of the memory buffer referenced by the <b>pPrivateData</b> member.
+A pointer to an IHV-defined blob allocated by an upstream DRM component.  The blob identifies the sealed decryption key to be used for the current frame.
 
-    ## Remarks
-        A pointer to this structure is passed in the <b>pContentKey</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_videodecoderbeginframe.md">D3D11_1DDIARG_VIDEODECODERBEGINFRAME</a> structure when <b>D3DWDDM2_0DDI_DECODER_ENCRYPTION_HW_CENC</b> is specified in the <b>guidConfigBitstreamEncryption</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure when creating the video decoder object.
+`pKeyInfoId`
+
+A pointer to a <b>GUID</b> identifying the hardware key.
+
+`pPrivateData`
+
+The definition of this buffer is dependent on the implementation of the secure environment. It may contain data specific to the current frame.
+
+`PrivateDataSize`
+
+Contains the size of the memory buffer referenced by the <b>pPrivateData</b> member.
+
+## Remarks
+A pointer to this structure is passed in the <b>pContentKey</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_videodecoderbeginframe.md">D3D11_1DDIARG_VIDEODECODERBEGINFRAME</a> structure when <b>D3DWDDM2_0DDI_DECODER_ENCRYPTION_HW_CENC</b> is specified in the <b>guidConfigBitstreamEncryption</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure when creating the video decoder object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,19 +91,14 @@ typedef struct D3D11_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_videodecoderbeginframe.md">D3D11_1DDIARG_VIDEODECODERBEGINFRAME</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a>
-</dt>
-</dl>
+
  
 
  

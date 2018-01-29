@@ -7,8 +7,8 @@ old-location : netvista\rilsignalquality_2.htm
 old-project : netvista
 ms.assetid : cc5bf370-3996-46de-b27d-8a390a6f407e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSIGNALQUALITY, RILSIGNALQUALITY, *LPRILSIGNALQUALITY
+ms.date : 1/18/2018
+ms.keywords : RILSIGNALQUALITY structure [Network Drivers Starting with Windows Vista], *LPRILSIGNALQUALITY, RILSIGNALQUALITY, rilapitypes/RILSIGNALQUALITY, netvista.rilsignalquality_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSIGNALQUALITY
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILSIGNALQUALITY, *LPRILSIGNALQUALITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILSIGNALQUALITY, RILSIGNALQUALITY"
 req.product : Windows 10 or later.
 ---
 
@@ -53,34 +57,34 @@ typedef struct _RILSIGNALQUALITY {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwSystemType`
 
-            
-        
-            `nNumSignalBars`
+`dwExecutor`
 
-            
-        
-            `nSignalStrength`
 
-            
-        
-            `nSNRStrength`
 
-            
+`dwParams`
+
+
+
+`dwSystemType`
+
+
+
+`nNumSignalBars`
+
+
+
+`nSignalStrength`
+
+
+
+`nSNRStrength`
+
+
 
 
 ## Requirements

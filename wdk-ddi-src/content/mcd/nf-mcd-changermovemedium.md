@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7532c8b5-e77b-4fd0-bac2-78254f6eb9f6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerMoveMedium
+ms.keywords : ChangerMoveMedium function [Storage Devices], mcd/ChangerMoveMedium, ChangerMoveMedium, chgrmini_a74d85d9-1b7c-45bc-a826-e60257192a09.xml, storage.changermovemedium
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ChangerMoveMedium
-req.alt-loc : mcd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -103,20 +107,14 @@ The changer class driver checks the input buffer length in the I/O stack locatio
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
-</dt>
-<dt>
-<a href="..\mcd\nf-mcd-changerexchangemedium.md">ChangerExchangeMedium</a>
-</dt>
-<dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_move_medium.md">CHANGER_MOVE_MEDIUM</a>
-</dt>
-<dt>
 <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_move_medium.md">,</a>
-</dt>
-</dl>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_move_medium.md">CHANGER_MOVE_MEDIUM</a>
+
+<a href="..\mcd\nf-mcd-changerexchangemedium.md">ChangerExchangeMedium</a>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
+
  
 
  

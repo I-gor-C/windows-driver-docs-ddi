@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ba190f01-428a-4574-8032-c800ce19ba3e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CONFIGURESHAREDRESOURCE, D3DKMT_CONFIGURESHAREDRESOURCE
+ms.keywords : D3DKMT_CONFIGURESHAREDRESOURCE structure [Display Devices], d3dkmthk/D3DKMT_CONFIGURESHAREDRESOURCE, OpenGL_Structs_ae687fae-f425-4a9b-8426-ee3cc02c8170.xml, _D3DKMT_CONFIGURESHAREDRESOURCE, D3DKMT_CONFIGURESHAREDRESOURCE, display.d3dkmt_configuresharedresource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_CONFIGURESHAREDRESOURCE is supported beginnin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CONFIGURESHAREDRESOURCE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CONFIGURESHAREDRESOURCE
 ---
 
@@ -50,26 +54,26 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 
 ## Members
 
-        
-            `AllowAccess`
 
-            [in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access.
-        
-            `hDevice`
+`AllowAccess`
 
-            [in] A handle to the device that the resource is associated with.
-        
-            `hProcess`
+[in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access.
 
-            [in] A handle to the process for the non-DWM situation.
-        
-            `hResource`
+`hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the shared resource to configure.
-        
-            `IsDwm`
+[in] A handle to the device that the resource is associated with.
 
-            [in] A Boolean value that specifies whether the current process is the Desktop Windows Manager (DWM). <b>TRUE</b> indicates DWM; <b>FALSE</b> indicates that the current process is non-DWM and is specified by the <b>hProcess</b> member.
+`hProcess`
+
+[in] A handle to the process for the non-DWM situation.
+
+`hResource`
+
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the shared resource to configure.
+
+`IsDwm`
+
+[in] A Boolean value that specifies whether the current process is the Desktop Windows Manager (DWM). <b>TRUE</b> indicates DWM; <b>FALSE</b> indicates that the current process is non-DWM and is specified by the <b>hProcess</b> member.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a>
-</dt>
-</dl>
+
  
 
  

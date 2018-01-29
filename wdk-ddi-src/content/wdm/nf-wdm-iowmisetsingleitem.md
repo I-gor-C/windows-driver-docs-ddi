@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 73c6ddaa-f090-430a-86b5-61b33cb8ffc8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMISetSingleItem
+ms.keywords : k104_cc50cf7d-a35a-42d6-86e2-4fb6a6183323.xml, IoWMISetSingleItem routine [Kernel-Mode Driver Architecture], IoWMISetSingleItem, wdm/IoWMISetSingleItem, kernel.iowmisetsingleitem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoWMISetSingleItem
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,24 +86,78 @@ Pointer to the buffer that contains the new value for the property specified by 
 ## Return Value
 
 The routine returns an NTSTATUS code. Possible return values include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation succeeded. The value of the property within WMI data block instance is updated to the contents of the buffer pointed to by the <i>ValueBuffer</i> parameter.
+</dl>
+</td>
+<td width="60%">
+The operation succeeded. The value of the property within WMI data block instance is updated to the contents of the buffer pointed to by the <i>ValueBuffer</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WMI_GUID_NOT_FOUND</b></dt>
-</dl>No drivers implement the WMI class.
+</dl>
+</td>
+<td width="60%">
+No drivers implement the WMI class.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WMI_INSTANCE_NOT_FOUND</b></dt>
-</dl>No driver implements an instance of the WMI data block with <b>InstanceName</b> property equal to the value specified in the <i>InstanceName</i> parameter.
+</dl>
+</td>
+<td width="60%">
+No driver implements an instance of the WMI data block with <b>InstanceName</b> property equal to the value specified in the <i>InstanceName</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WMI_ITEMID_NOT_FOUND</b></dt>
-</dl>The WMI class does not contain a property with data item ID equal to the value of <i>DataItemId</i>.
+</dl>
+</td>
+<td width="60%">
+The WMI class does not contain a property with data item ID equal to the value of <i>DataItemId</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WMI_READ_ONLY</b></dt>
-</dl>The data item ID in the data block is read-only.
+</dl>
+</td>
+<td width="60%">
+The data item ID in the data block is read-only.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_WMI_SET_FAILURE</b></dt>
-</dl>The driver that implements the WMI data block instance is unable to update the property specified by <i>DataItemId</i>.
+</dl>
+</td>
+<td width="60%">
+The driver that implements the WMI data block instance is unable to update the property specified by <i>DataItemId</i>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -121,20 +179,14 @@ Drivers can also use <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetS
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
+
+<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
+
  
 
  

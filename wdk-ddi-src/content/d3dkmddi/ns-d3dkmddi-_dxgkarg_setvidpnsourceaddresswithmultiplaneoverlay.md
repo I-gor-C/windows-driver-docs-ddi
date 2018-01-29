@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 12266cb0-20c1-4077-b3c5-fb902f3805d3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
+ms.keywords : d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY structure [Display Devices], _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
-req.alt-loc : D3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
 ---
 
@@ -54,38 +58,38 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY {
 
 ## Members
 
-        
-            `Context`
 
-            [in] An array of handles to the contexts that contributed to a display operation.
-        
-            `ContextCount`
+`Context`
 
-            [in] The number of contexts in the array that the <b>Context</b> member specifies.
-        
-            `Duration`
+[in] An array of handles to the contexts that contributed to a display operation.
 
-            The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.
+`ContextCount`
+
+[in] The number of contexts in the array that the <b>Context</b> member specifies.
+
+`Duration`
+
+The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.
 
 If zero, the refresh rate should be the default rate based on the current mode.
 
 Must be supported by WDDM 1.3 and later drivers. Available starting with Windows 8.1.
-        
-            `Flags`
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
-        
-            `PlaneCount`
+`Flags`
 
-            The number of overlay planes that the hardware supports.
-        
-            `pPlanes`
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
 
-            A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_plane.md">DXGK_MULTIPLANE_OVERLAY_PLANE</a> structure that specifies the first overlay plane to display.
-        
-            `VidPnSourceId`
+`PlaneCount`
 
-            An integer that identifies a video present source on the display adapter.
+The number of overlay planes that the hardware supports.
+
+`pPlanes`
+
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_plane.md">DXGK_MULTIPLANE_OVERLAY_PLANE</a> structure that specifies the first overlay plane to display.
+
+`VidPnSourceId`
+
+An integer that identifies a video present source on the display adapter.
 
 
 ## Requirements
@@ -96,16 +100,12 @@ Must be supported by WDDM 1.3 and later drivers. Available starting with Windows
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay.md">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a>
+
  
 
  

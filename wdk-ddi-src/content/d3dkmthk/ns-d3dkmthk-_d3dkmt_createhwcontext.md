@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9B6EA552-B576-45F3-A0BD-7EB721638D7F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEHWCONTEXT, D3DKMT_CREATEHWCONTEXT
+ms.keywords : display.d3dkmt_createhwcontext, D3DKMT_CREATEHWCONTEXT, _D3DKMT_CREATEHWCONTEXT, D3DKMT_CREATEHWCONTEXT structure [Display Devices], d3dkmthk/D3DKMT_CREATEHWCONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEHWCONTEXT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEHWCONTEXT
 ---
 
@@ -52,30 +56,34 @@ typedef struct _D3DKMT_CREATEHWCONTEXT {
 
 ## Members
 
-        
-            `EngineAffinity`
 
-            Engine affinity within the specified node.
-        
-            `Flags`
+`EngineAffinity`
 
-            Context creation flags.
-        
-            `hDevice`
+Engine affinity within the specified node.
 
-            Handle to the device owning this context.
-        
-            `hHwContext`
+`Flags`
 
-            Handle of the created context.
-        
-            `NodeOrdinal`
+Context creation flags.
 
-            Identifier for the node targetted by this context.
-        
-            `PrivateDriverDataSize`
+`hDevice`
 
-            Size of private driver data.
+Handle to the device owning this context.
+
+`hHwContext`
+
+Handle of the created context.
+
+`NodeOrdinal`
+
+Identifier for the node targetted by this context.
+
+`pPrivateDriverData`
+
+Private driver data.
+
+`PrivateDriverDataSize`
+
+Size of private driver data.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6316acfa-c19c-4705-becb-b89c3feed6a3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION, *PFLT_CONTEXT_REGISTRATION
+ms.keywords : "*PFLT_CONTEXT_REGISTRATION, PFLT_CONTEXT_REGISTRATION structure pointer [Installable File System Drivers], fltkernel/FLT_CONTEXT_REGISTRATION, FltSystemStructures_534c1657-6f7c-42fa-b8df-2a64ed6edf3a.xml, FLT_CONTEXT_REGISTRATION, PFLT_CONTEXT_REGISTRATION, _FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION structure [Installable File System Drivers], ifsk.flt_context_registration, fltkernel/PFLT_CONTEXT_REGISTRATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FLT_CONTEXT_REGISTRATION
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FLT_CONTEXT_REGISTRATION, *PFLT_CONTEXT_REGISTRATION
 ---
 
@@ -53,58 +57,40 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 
 ## Members
 
-        
-            `ContextAllocateCallback`
 
-            Pointer to a minifilter-defined <b>ContextAllocateCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt_context_allocate_callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored.
-        
-            `ContextCleanupCallback`
+`ContextAllocateCallback`
 
-            A pointer to a minifilter-defined <b>ContextCleanupCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt_context_cleanup_callback.md">PFLT_CONTEXT_CLEANUP_CALLBACK</a>. The filter manager calls this routine immediately before it deletes the context. If the minifilter has no memory or pointers to clean up inside the context, this member is optional and can be <b>NULL</b>.
-        
-            `ContextFreeCallback`
+Pointer to a minifilter-defined <b>ContextAllocateCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt_context_allocate_callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored.
 
-            A pointer to a minifilter-defined <b>ContextFreeCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt_context_free_callback.md">PFLT_CONTEXT_FREE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored.
-        
-            `ContextType`
+`ContextCleanupCallback`
 
-            The type of context. This member is required and must be one of the following values: 
+A pointer to a minifilter-defined <b>ContextCleanupCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt_context_cleanup_callback.md">PFLT_CONTEXT_CLEANUP_CALLBACK</a>. The filter manager calls this routine immediately before it deletes the context. If the minifilter has no memory or pointers to clean up inside the context, this member is optional and can be <b>NULL</b>.
 
-<dl>
-<dd>
+`ContextFreeCallback`
+
+A pointer to a minifilter-defined <b>ContextFreeCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt_context_free_callback.md">PFLT_CONTEXT_FREE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored.
+
+`ContextType`
+
+The type of context. This member is required and must be one of the following values: 
+
 FLT_FILE_CONTEXT (Windows Vista and later only.)
 
-</dd>
-<dd>
 FLT_INSTANCE_CONTEXT
 
-</dd>
-<dd>
 FLT_STREAM_CONTEXT
 
-</dd>
-<dd>
 FLT_STREAMHANDLE_CONTEXT
 
-</dd>
-<dd>
 FLT_SECTION_CONTEXT (Windows 8 and later only.)
 
-</dd>
-<dd>
 FLT_TRANSACTION_CONTEXT (Windows Vista and later only.) 
 
-</dd>
-<dd>
 FLT_VOLUME_CONTEXT
 
-</dd>
-</dl>
-        
-            `Flags`
+`Flags`
 
-            A bitmask of flags that specify how the filter manager allocates a new context from a lookaside list of fixed-size contexts. This member can be zero or the following value. 
-
+A bitmask of flags that specify how the filter manager allocates a new context from a lookaside list of fixed-size contexts. This member can be zero or the following value. 
 <table>
 <tr>
 <th>Flag</th>
@@ -121,33 +107,43 @@ If the minifilter uses fixed-size contexts and this flag is specified, the filte
 </td>
 </tr>
 </table>
-        
-            `PoolTag`
 
-            A pool tag value to be used for the context. This tag, which is specified as a string of one to four 7-bit ASCII characters, appears in any crash dump of the system that occurs. If the <b>ContextAllocateCallback</b> member is <b>NULL</b>, this member is required and cannot be zero.
-        
-            `Reserved1`
+`PoolTag`
 
-            Reserved for system use. Minifilters must set this member to <b>NULL</b>.
-        
-            `Size`
+A pool tag value to be used for the context. This tag, which is specified as a string of one to four 7-bit ASCII characters, appears in any crash dump of the system that occurs. If the <b>ContextAllocateCallback</b> member is <b>NULL</b>, this member is required and cannot be zero.
 
-            The size, in bytes, of the minifilter-defined portion of the context, if the minifilter uses fixed-size contexts. Zero is a valid size value. If the minifilter uses variable-size contexts, this member is required and must be set to FLT_VARIABLE_SIZED_CONTEXTS.
+`Reserved1`
 
-    ## Remarks
-        When a minifilter calls <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. 
+Reserved for system use. Minifilters must set this member to <b>NULL</b>.
+
+`Size`
+
+The size, in bytes, of the minifilter-defined portion of the context, if the minifilter uses fixed-size contexts. Zero is a valid size value. If the minifilter uses variable-size contexts, this member is required and must be set to FLT_VARIABLE_SIZED_CONTEXTS.
+
+## Remarks
+When a minifilter calls <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. 
 
 To register these context types, the minifilter creates a variable-length array of FLT_CONTEXT_REGISTRATION structures and stores a pointer to the array in the <b>ContextRegistration</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> structure that the minifilter passes as the <i>Registration</i> parameter of <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. The last element of this array must be {FLT_CONTEXT_END}. 
 
 For each context type that the minifilter uses, the minifilter must supply at least one FLT_CONTEXT_REGISTRATION structure, according to the following rules: 
-
+<ul>
+<li>
 If the minifilter supplies an FLT_CONTEXT_REGISTRATION structure with a non-<b>NULL</b><b> ContextAllocateCallback</b> member, it cannot supply any additional FLT_CONTEXT_REGISTRATION structures for that context type. 
 
+</li>
+<li>
 If the minifilter supplies two or more identical FLT_CONTEXT_REGISTRATION structures, only the first one will be used. The others will be ignored. 
 
+</li>
+<li>
 Only one FLT_CONTEXT_REGISTRATION structure with a <b>Size</b> member of FLT_VARIABLE_SIZED_CONTEXTS can be supplied for each context type. 
 
-No more than three FLT_CONTEXT_REGISTRATION structures with a <b>Size</b> member other than FLT_VARIABLE_SIZED_CONTEXTS can be supplied for each context type.
+</li>
+<li>
+No more than three FLT_CONTEXT_REGISTRATION structures with a <b>Size</b> member other than FLT_VARIABLE_SIZED_CONTEXTS can be supplied for each context type. 
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -157,25 +153,18 @@ No more than three FLT_CONTEXT_REGISTRATION structures with a <b>Size</b> member
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_context_allocate_callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_context_cleanup_callback.md">PFLT_CONTEXT_CLEANUP_CALLBACK</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_context_allocate_callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_context_free_callback.md">PFLT_CONTEXT_FREE_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+
  
 
  

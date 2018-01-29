@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac492a44-f14e-4b66-9ec1-4f1b04806646
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MONITORDESCRIPTORSET_INTERFACE, DXGK_MONITORDESCRIPTORSET_INTERFACE
+ms.keywords : d3dkmddi/DXGK_MONITORDESCRIPTORSET_INTERFACE, _DXGK_MONITORDESCRIPTORSET_INTERFACE, DmStructs_da0cca60-6df0-480b-8e02-0affe5eb5cfd.xml, display.dxgk_monitordescriptorset_interface, DXGK_MONITORDESCRIPTORSET_INTERFACE structure [Display Devices], DXGK_MONITORDESCRIPTORSET_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MONITORDESCRIPTORSET_INTERFACE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MONITORDESCRIPTORSET_INTERFACE
 ---
 
@@ -49,22 +53,22 @@ typedef struct _DXGK_MONITORDESCRIPTORSET_INTERFACE {
 
 ## Members
 
-        
-            `pfnAcquireFirstDescriptorInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a> function.
-        
-            `pfnAcquireNextDescriptorInfo`
+`pfnAcquireFirstDescriptorInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a> function.
-        
-            `pfnGetNumDescriptors`
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a> function.
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_getnumdescriptors.md">pfnGetNumDescriptors</a> function.
-        
-            `pfnReleaseDescriptorInfo`
+`pfnAcquireNextDescriptorInfo`
 
-            A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a> function.
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a> function.
+
+`pfnGetNumDescriptors`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_getnumdescriptors.md">pfnGetNumDescriptors</a> function.
+
+`pfnReleaseDescriptorInfo`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a> function.
 
 
 ## Requirements
@@ -75,22 +79,16 @@ typedef struct _DXGK_MONITORDESCRIPTORSET_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_getnumdescriptors.md">pfnGetNumDescriptors</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_getnumdescriptors.md">pfnGetNumDescriptors</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e8d5fea6-d0fd-4dc4-b8ec-10c72381285b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmAllocateMappingAddress
+ms.keywords : k106_3ef2863e-218c-4546-a934-152cbd0133e9.xml, MmAllocateMappingAddress, kernel.mmallocatemappingaddress, MmAllocateMappingAddress routine [Kernel-Mode Driver Architecture], wdm/MmAllocateMappingAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmAllocateMappingAddress
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,17 +85,12 @@ Specifies a four-character tag used to identify the buffer. Use a distinct <i>Po
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
+
+<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
+
  
 
  

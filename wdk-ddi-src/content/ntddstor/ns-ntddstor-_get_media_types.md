@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e803505f-37a0-4b20-bd6f-ce0f79eead03
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GET_MEDIA_TYPES, *PGET_MEDIA_TYPES, GET_MEDIA_TYPES
+ms.keywords : ntddstor/PGET_MEDIA_TYPES, structs-general_68f75a58-b2a5-4d6a-b9ba-0019e36034ef.xml, PGET_MEDIA_TYPES, _GET_MEDIA_TYPES, storage.get_media_types, GET_MEDIA_TYPES, GET_MEDIA_TYPES structure [Storage Devices], ntddstor/GET_MEDIA_TYPES, PGET_MEDIA_TYPES structure pointer [Storage Devices], *PGET_MEDIA_TYPES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GET_MEDIA_TYPES
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGET_MEDIA_TYPES, GET_MEDIA_TYPES"
 ---
 
@@ -48,21 +52,21 @@ typedef struct _GET_MEDIA_TYPES {
 
 ## Members
 
-        
-            `DeviceType`
 
-            Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants indicating the type of device (such as FILE_DEVICE_DISK, FILE_DEVICE_KEYBOARD, and so forth) or a vendor-defined value for a new type of device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.
-        
-            `MediaInfo`
+`DeviceType`
 
-            Contains an array whose first element holds the first DEVICE_MEDIA_INFO structure in the array.
-        
-            `MediaInfoCount`
+Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants indicating the type of device (such as FILE_DEVICE_DISK, FILE_DEVICE_KEYBOARD, and so forth) or a vendor-defined value for a new type of device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.
 
-            Contains the number of <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.
+`MediaInfo`
 
-    ## Remarks
-        A storage class driver must handle the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to support any device that the Removable Storage Manager (RSM) accesses, whether the device is a stand-alone device or a data transfer element (drive) in a media library or changer.
+Contains an array whose first element holds the first DEVICE_MEDIA_INFO structure in the array.
+
+`MediaInfoCount`
+
+Contains the number of <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.
+
+## Remarks
+A storage class driver must handle the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to support any device that the Removable Storage Manager (RSM) accesses, whether the device is a stand-alone device or a data transfer element (drive) in a media library or changer.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,16 +76,12 @@ typedef struct _GET_MEDIA_TYPES {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
-</dt>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
-</dt>
-</dl>
+
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
+
  
 
  

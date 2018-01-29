@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5fa4b7e2-8215-49d8-9d70-b45c972b39b4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE, *PDXGK_CHILD_STATUS_TYPE
+ms.keywords : _DXGK_CHILD_STATUS_TYPE, dispmprt/StatusRotation, dispmprt/StatusConnection, StatusMiracast, DXGK_CHILD_STATUS_TYPE enumeration [Display Devices], StatusConnection, DXGK_CHILD_STATUS_TYPE, PDXGK_CHILD_STATUS_TYPE, DmEnums_684c935e-6fd5-4743-a196-d6674b8f2e56.xml, *PDXGK_CHILD_STATUS_TYPE, PDXGK_CHILD_STATUS_TYPE enumeration pointer [Display Devices], display.dxgk_child_status_type, dispmprt/PDXGK_CHILD_STATUS_TYPE, dispmprt/DXGK_CHILD_STATUS_TYPE, StatusRotation, StatusUninitialized, dispmprt/StatusMiracast, dispmprt/StatusUninitialized
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_CHILD_STATUS_TYPE
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : DXGK_CHILD_STATUS_TYPE, *PDXGK_CHILD_STATUS_TYPE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE"
 ---
 
 # _DXGK_CHILD_STATUS_TYPE Enumeration
@@ -59,6 +63,11 @@ typedef enum _DXGK_CHILD_STATUS_TYPE {
 </tr>
 
 <tr>
+<td>StatusMiracastConnection</td>
+<td></td>
+</tr>
+
+<tr>
 <td>StatusRotation</td>
 <td>Indicates that the request or report pertains to the rotation angle of the monitor (or other display device) that is connected to the child device.</td>
 </tr>
@@ -83,14 +92,10 @@ The <b>Type</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_child_status.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_indicate_child_status.md">DxgkCbIndicateChildStatus</a>
-</dt>
-</dl>
+
  
 
  

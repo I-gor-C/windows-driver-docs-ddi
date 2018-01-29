@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e242b62a-7a4f-491b-b1a7-3388cf9c5a40
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTargetStateManagement, IWDFIoTargetStateManagement::Start, Start
+ms.keywords : wudfddi/IWDFIoTargetStateManagement::Start, umdf.iwdfiotargetstatemanagement_start, Start method, IWDFIoTargetStateManagement interface, Start method, Start, IWDFIoTargetStateManagement::Start, IWDFIoTargetStateManagement interface, Start method, IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_931a0267-704f-44f7-8f52-0344afb86f81.xml, wdf.iwdfiotargetstatemanagement_start
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoTargetStateManagement.Start
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -54,29 +58,23 @@ This function has no parameters.
 ## Return Value
 
 <b>Start</b> returns S_OK if the operation succeeds. Otherwise, this method might return one of the error codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_NT (STATUS_INVALID_DEVICE_STATE)</b></dt>
-</dl>The device has been removed.
+</dl>
+</td>
+<td width="60%">
+The device has been removed.
 
- 
-
-This method might return one of the other error codes that Winerror.h defines.
-
-<b>Start</b> returns S_OK if the operation succeeds. Otherwise, this method might return one of the error codes:
-<dl>
-<dt><b>HRESULT_FROM_NT (STATUS_INVALID_DEVICE_STATE)</b></dt>
-</dl>The device has been removed.
-
- 
-
-This method might return one of the other error codes that Winerror.h defines.
-
-<b>Start</b> returns S_OK if the operation succeeds. Otherwise, this method might return one of the error codes:
-<dl>
-<dt><b>HRESULT_FROM_NT (STATUS_INVALID_DEVICE_STATE)</b></dt>
-</dl>The device has been removed.
-
- 
+</td>
+</tr>
+</table> 
 
 This method might return one of the other error codes that Winerror.h defines.
 
@@ -90,9 +88,7 @@ Your driver must call <b>Start</b> and <a href="https://msdn.microsoft.com/libra
 
 For more information about <b>Start</b>, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>. 
 
-For more information about I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-i-o-targets-in-umdf">Using I/O Targets in UMDF</a>. 
-
-The following code example first shows how a driver can obtain the <a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a> interface for a USB pipe object. The code example then  shows how an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556799">IPnpCallback::OnD0Entry</a> callback function can call <b>Start</b>, if the driver uses a continuous reader for the USB pipe.
+For more information about I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-i-o-targets-in-umdf">Using I/O Targets in UMDF</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,14 +104,10 @@ The following code example first shows how a driver can obtain the <a href="..\w
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
+
  
 
  

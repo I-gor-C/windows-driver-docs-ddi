@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4888e6a7-be44-4ed9-80be-9dd7641653ef
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.usbcamd_bulkreadwrite, USBCAMD_BulkReadWrite routine [Streaming Media Devices], USBCAMD_BulkReadWrite, PFNUSBCAMD_BulkReadWrite, PFNUSBCAMD_BulkReadWrite, usbcamdi/USBCAMD_BulkReadWrite, usbcmdpr_6044cfed-1a8c-48a5-ac28-16c8ac151fcc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBCAMD_BulkReadWrite
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -85,12 +89,30 @@ Pointer to a block of memory, that is passed as an argument to the camera minidr
 ## Return Value
 
 <b>USBCAMD_BulkReadWrite</b> returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FILE_CLOSED</b></dt>
-</dl>The device has been removed.
+</dl>
+</td>
+<td width="60%">
+The device has been removed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>USBCAMD may return STATUS_INVALID_PARAMETER for a number of reasons, including:
+</dl>
+</td>
+<td width="60%">
+USBCAMD may return STATUS_INVALID_PARAMETER for a number of reasons, including:
 
 The value passed in the <i>PipeIndex</i> argument is invalid.
 
@@ -99,9 +121,21 @@ The type of the pipe specified by the <i>PipeIndex</i> argument represents an in
 A bulk read/write request already exists.
 
 The <i>Buffer</i> argument is <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>There are insufficient resources to schedule a transfer.
+</dl>
+</td>
+<td width="60%">
+There are insufficient resources to schedule a transfer.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -123,14 +157,10 @@ USBCAMD can accept one read and one write request at a time.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
-</dt>
-<dt>
+
 <a href="..\usbcamdi\nc-usbcamdi-pcommand_complete_function.md">CommandCompleteFunction</a>
-</dt>
-</dl>
+
  
 
  

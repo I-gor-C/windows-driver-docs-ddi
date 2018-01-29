@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 1D477E7B-E4EA-46E7-872C-3BEBFBD31702
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+ms.keywords : hid.evtvhfcleanup, EvtVhfCleanup callback function [Human Input Devices], EvtVhfCleanup, EVT_VHF_CLEANUP, EVT_VHF_CLEANUP, vhf/EvtVhfCleanup
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EvtVhfCleanup
-req.alt-loc : vhf.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ The HID source driver must not use the VHFHANDLE for the virtual HID device (cre
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : b882b401-f806-4334-a8c5-fa65382fb9d3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
+ms.keywords : buses.evt_ucx_roothub_get_info, EvtUcxRootHubGetInfo callback function [Buses], EvtUcxRootHubGetInfo, EVT_UCX_ROOTHUB_GET_INFO, EVT_UCX_ROOTHUB_GET_INFO, ucxroothub/EvtUcxRootHubGetInfo, PEVT_UCX_ROOTHUB_GET_INFO callback function pointer [Buses], PEVT_UCX_ROOTHUB_GET_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : PEVT_UCX_ROOTHUB_GET_INFO
-req.alt-loc : ucxroothub.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
 req.product : Windows 10 or later.
 ---
@@ -92,11 +96,8 @@ The client driver returns completion status in <i>Request</i>.  The driver can c
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxroothub\ns-ucxroothub-_roothub_info.md">_ROOTHUB_INFO</a>
-</dt>
-</dl>
+
  
 
  

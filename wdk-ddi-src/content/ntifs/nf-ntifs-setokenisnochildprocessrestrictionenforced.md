@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6D214346-8CE6-4E9C-B054-1C72B928ED2B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeTokenIsNoChildProcessRestrictionEnforced
+ms.keywords : SeTokenIsNoChildProcessRestrictionEnforced function [Installable File System Drivers], SeTokenIsNoChildProcessRestrictionEnforced, ntifs/SeTokenIsNoChildProcessRestrictionEnforced, ifsk.setokenisnochildprocessrestrictionenforced
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeTokenIsNoChildProcessRestrictionEnforced
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D2CD2457-8DDF-4449-9DC1-F1E7472C87CA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IMAGE_INFO, IMAGE_INFO, *PIMAGE_INFO
+ms.keywords : IMAGE_INFO, kernel.image_info, ntddk/PIMAGE_INFO, PIMAGE_INFO structure pointer [Kernel-Mode Driver Architecture], ntddk/IMAGE_INFO, IMAGE_INFO structure [Kernel-Mode Driver Architecture], PIMAGE_INFO, *PIMAGE_INFO, _IMAGE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMAGE_INFO
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : IMAGE_INFO, *PIMAGE_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PIMAGE_INFO, IMAGE_INFO"
 ---
 
 # _IMAGE_INFO structure
@@ -63,25 +67,25 @@ typedef struct _IMAGE_INFO {
 
 ## Members
 
-        
-            `ImageBase`
 
-            Set to the virtual base address of the image.
-        
-            `ImageSectionNumber`
+`ImageBase`
 
-            Always set to zero.
-        
-            `ImageSelector`
+Set to the virtual base address of the image.
 
-            Always set to zero.
-        
-            `ImageSize`
+`ImageSectionNumber`
 
-            Set to the virtual size, in bytes, of the image.
+Always set to zero.
 
-    ## Remarks
-        If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure, <a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>.
+`ImageSelector`
+
+Always set to zero.
+
+`ImageSize`
+
+Set to the virtual size, in bytes, of the image.
+
+## Remarks
+If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure, <a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,19 +95,14 @@ typedef struct _IMAGE_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\nc-ntddk-pload_image_notify_routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
+
  
 
  

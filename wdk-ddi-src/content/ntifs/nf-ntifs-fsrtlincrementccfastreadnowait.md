@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 14a1b22a-5d1b-4da6-9610-396fa128ce01
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIncrementCcFastReadNoWait
+ms.keywords : FsRtlIncrementCcFastReadNoWait, ifsk.fsrtlincrementccfastreadnowait, FsRtlIncrementCcFastReadNoWait routine [Installable File System Drivers], ntifs/FsRtlIncrementCcFastReadNoWait, fsrtlref_f72704ce-84b6-4201-a727-b97fd70accfd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows XP an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlIncrementCcFastReadNoWait
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -74,20 +78,14 @@ File system drivers should call this function to update the performance counter 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-fsrtlincrementccfastreadnotpossible.md">FsRtlIncrementCcFastReadNotPossible</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlincrementccfastreadresourcemiss.md">FsRtlIncrementCcFastReadResourceMiss</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-fsrtlincrementccfastreadnotpossible.md">FsRtlIncrementCcFastReadNotPossible</a>
+
 <a href="..\ntifs\nf-ntifs-fsrtlincrementccfastreadwait.md">FsRtlIncrementCcFastReadWait</a>
-</dt>
-</dl>
+
  
 
  

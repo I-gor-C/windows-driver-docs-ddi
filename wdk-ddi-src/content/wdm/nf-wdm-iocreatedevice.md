@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 54ca9dc8-8095-4b62-9ebc-f297abb429ca
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateDevice
+ms.keywords : k104_1e38a631-7e65-4b4b-8d51-3150a8073511.xml, wdm/IoCreateDevice, IoCreateDevice routine [Kernel-Mode Driver Architecture], IoCreateDevice, kernel.iocreatedevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCreateDevice
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : AddDevice, CheckDeviceObjectFlags, IrqlIoPassive1, MiniportOnlyWdmDevice, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,9 +71,7 @@ Specifies the driver-determined number of bytes to be allocated for the <a href=
 
 Optionally points to a buffer containing a null-terminated Unicode string that names the device object. The string must be a full path name. WDM filter and function drivers do not name their device objects. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556420">Named Device Objects</a>.
      
-
-<div class="alert"><b>Note</b>  If a device name is not supplied (that is, <i>DeviceName</i> is <b>NULL</b>), the device object created by <b>IoCreateDevice</b> will not (and cannot) have a discretionary access control list (DACL) associated with it. For additional information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563698">Security Descriptors</a>.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  If a device name is not supplied (that is, <i>DeviceName</i> is <b>NULL</b>), the device object created by <b>IoCreateDevice</b> will not (and cannot) have a discretionary access control list (DACL) associated with it. For additional information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563698">Security Descriptors</a>.</div><div> </div>
 
 `DeviceType`
 
@@ -81,7 +83,7 @@ Specifies one or more system-defined constants, ORed together, that provide addi
 
 `Exclusive`
 
-Specifies if the device object represents an <a href="wdkgloss.e#wdkgloss.exclusive_device#wdkgloss.exclusive_device"><i>exclusive device</i></a>. Most drivers set this value to <b>FALSE</b>. For more information about exclusive access, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563827">Specifying Exclusive Access to Device Objects</a>.
+Specifies if the device object represents an <a href="https://msdn.microsoft.com/0dd010e7-3e10-422a-adcb-8fe7df9e29ab">exclusive device</a>. Most drivers set this value to <b>FALSE</b>. For more information about exclusive access, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563827">Specifying Exclusive Access to Device Objects</a>.
 
 `DeviceObject`
 
@@ -91,10 +93,6 @@ Pointer to a variable that receives a pointer to the newly created <a href="..\w
 ## Return Value
 
 <b>IoCreateDevice</b> returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on failure. A partial list of the failure codes returned by this function includes:
-<dl>
-<dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-<dt><b>STATUS_OBJECT_NAME_COLLISION</b></dt>
-</dl>
 
 ## Remarks
 
@@ -124,29 +122,20 @@ If a driver's call to <b>IoCreateDevice</b> returns an error, the driver should 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_device_object.md"> DEVICE_OBJECT</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iocreatesymboliclink.md">IoCreateSymbolicLink</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_device_object.md"> DEVICE_OBJECT</a>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
+
 <a href="..\wdm\nf-wdm-iodeletedevice.md">IoDeleteDevice</a>
-</dt>
-</dl>
+
  
 
  

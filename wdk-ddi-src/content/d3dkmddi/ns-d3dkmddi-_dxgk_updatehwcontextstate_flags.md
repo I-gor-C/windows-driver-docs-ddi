@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 23F0679A-05BB-4988-AF83-B6CC91C4CB79
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_UPDATEHWCONTEXTSTATE_FLAGS, DXGK_UPDATEHWCONTEXTSTATE_FLAGS
+ms.keywords : DXGK_UPDATEHWCONTEXTSTATE_FLAGS, _DXGK_UPDATEHWCONTEXTSTATE_FLAGS, d3dkmddi/DXGK_UPDATEHWCONTEXTSTATE_FLAGS, DXGK_UPDATEHWCONTEXTSTATE_FLAGS structure [Display Devices], display.dxgk_updatehwcontextstate_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_UPDATEHWCONTEXTSTATE_FLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_UPDATEHWCONTEXTSTATE_FLAGS
 ---
 

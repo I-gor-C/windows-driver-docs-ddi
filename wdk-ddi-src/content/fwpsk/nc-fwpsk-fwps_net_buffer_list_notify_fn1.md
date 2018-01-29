@@ -7,8 +7,8 @@ old-location : netvista\fwps_net_buffer_list_notify_fn1.htm
 old-project : netvista
 ms.assetid : fe9ab4b2-5692-4b6e-a7fc-11e9ac8280bc
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FwpmEngineOpen0
+ms.date : 1/18/2018
+ms.keywords : netvista.fwps_net_buffer_list_notify_fn1, FwpsNetBufferListNotifyFN1 callback function [Network Drivers Starting with Windows Vista], FwpsNetBufferListNotifyFN1, FWPS_NET_BUFFER_LIST_NOTIFY_FN1, FWPS_NET_BUFFER_LIST_NOTIFY_FN1, fwpsk/FwpsNetBufferListNotifyFN1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FwpsNetBufferListNotifyFN1
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 ---
 
@@ -64,8 +68,8 @@ NTSTATUS FwpsNetBufferListNotifyFn1(
 
 A value that indicates the type of notification that the filter engine is sending to the callout.
      This parameter will be set to one of the values of the 
-     <a href="..\fwpsk\ne-fwpsk-fwps_net_buffer_list_event_type0_.md">
-     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</a> enumeration.
+     <mshelp:link keywords="netvista.fwps_net_buffer_list_event_type0" tabindex="0"><b>
+     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</b></mshelp:link> enumeration.
 
 `*netBufferList`
 
@@ -95,12 +99,34 @@ The context tag used to associate the packets of interest with the context of th
 A callout's 
   <i>
   FWPS_NET_BUFFER_LIST_NOTIFY_FN1</i> function returns one of the following NTSTATUS codes.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The callout driver accepts the notification from the filter engine.
+</dl>
+</td>
+<td width="60%">
+The callout driver accepts the notification from the filter engine.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>Other status codes</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -124,26 +150,19 @@ This function is identical to <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_no
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fwpsk\ne-fwpsk-fwps_net_buffer_list_event_type0_.md">
-     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>
-</dt>
-<dt>
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
-</dt>
-</dl>
- 
+
+<mshelp:link keywords="netvista.fwps_net_buffer_list_event_type0" tabindex="0"><b>
+     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</b></mshelp:link>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_NOTIFY_FN1 callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_NOTIFY_FN1 callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

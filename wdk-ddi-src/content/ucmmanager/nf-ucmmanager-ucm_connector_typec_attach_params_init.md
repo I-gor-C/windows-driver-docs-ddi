@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C360556B-5A28-4FC3-9304-6000061A1D69
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT
+ms.keywords : buses.ucm_connector_typec_attach_params_init, UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT, ucmmanager/UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT, UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT
-req.alt-loc : Ucmmanager.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -52,11 +56,11 @@ FORCEINLINE void UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
 
 `Params`
 
-
+TBD
 
 `Partner`
 
-
+TBD
 
 
 ## Return Value
@@ -78,11 +82,8 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
-</dt>
-</dl>
+
  
 
  

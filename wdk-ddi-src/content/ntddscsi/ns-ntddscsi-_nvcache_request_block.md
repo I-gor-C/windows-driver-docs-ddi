@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 25ca2d81-72a5-47ae-bdfd-0ec63e1ca39a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _NVCACHE_REQUEST_BLOCK, *PNVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK
+ms.keywords : NVCACHE_REQUEST_BLOCK structure [Storage Devices], PNVCACHE_REQUEST_BLOCK structure pointer [Storage Devices], storage.nvcache_request_block, ntddscsi/PNVCACHE_REQUEST_BLOCK, structs-nvcache_1886905c-1d48-4cc9-b74c-3b52dc65b279.xml, *PNVCACHE_REQUEST_BLOCK, ntddscsi/NVCACHE_REQUEST_BLOCK, PNVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK, _NVCACHE_REQUEST_BLOCK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NVCACHE_REQUEST_BLOCK
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PNVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NVCACHE_REQUEST_BLOCK, *PNVCACHE_REQUEST_BLOCK
 ---
 
 # _NVCACHE_REQUEST_BLOCK structure
@@ -54,45 +58,45 @@ typedef struct _NVCACHE_REQUEST_BLOCK {
 
 ## Members
 
-        
-            `Count`
 
-            Number of 512-byte blocks to be transferred with the specified function.
-        
-            `DataBufSize`
+`Count`
 
-            Size of the data buffer, in bytes.
-        
-            `Function`
+Number of 512-byte blocks to be transferred with the specified function.
 
-            Specifies the operation to be performed, which can be one of the following values:
-        
-            `LBA`
+`DataBufSize`
 
-            Starting LBA of the device for the specified function.
-        
-            `NRBFlags`
+Size of the data buffer, in bytes.
 
-            Reserved for future use.
-        
-            `NRBSize`
+`Function`
 
-            The <b>sizeof</b>(NVCACHE_REQUEST_BLOCK).
-        
-            `NRBStatus`
+Specifies the operation to be performed, which can be one of the following values:
 
-            Indicates the NV Cache Manager function request status from the driver. There are seven possible values for this field:
-        
-            `NVCacheStatus`
+`LBA`
 
-            Status returned from the device. For an ATA device, this value is the contents of the Status Register in its Task File. For a SCSI device, this value is the Sense Code returned from the device.
-        
-            `NVCacheSubStatus`
+Starting LBA of the device for the specified function.
 
-            The error code returned from the device. For an ATA device, this value is the contents of the Error Register in its Task File. For a SCSI device, this value is the Sense key returned from the device.
+`NRBFlags`
 
-    ## Remarks
-        For more information on function behavior, see section 7.20 of the <a href="http://go.microsoft.com/fwlink/p/?linkid=74996">ATA8-ACS specification</a>.
+Reserved for future use.
+
+`NRBSize`
+
+The <b>sizeof</b>(NVCACHE_REQUEST_BLOCK).
+
+`NRBStatus`
+
+Indicates the NV Cache Manager function request status from the driver. There are seven possible values for this field:
+
+`NVCacheStatus`
+
+Status returned from the device. For an ATA device, this value is the contents of the Status Register in its Task File. For a SCSI device, this value is the Sense Code returned from the device.
+
+`NVCacheSubStatus`
+
+The error code returned from the device. For an ATA device, this value is the contents of the Error Register in its Task File. For a SCSI device, this value is the Sense key returned from the device.
+
+## Remarks
+For more information on function behavior, see section 7.20 of the <a href="http://go.microsoft.com/fwlink/p/?linkid=74996">ATA8-ACS specification</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,16 +106,12 @@ typedef struct _NVCACHE_REQUEST_BLOCK {
 | **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport.md">IOCTL_SCSI_MINIPORT</a>
-</dt>
-<dt>
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_nvcache.md">IOCTL_SCSI_MINIPORT_NVCACHE</a>
-</dt>
-</dl>
+
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport.md">IOCTL_SCSI_MINIPORT</a>
+
  
 
  

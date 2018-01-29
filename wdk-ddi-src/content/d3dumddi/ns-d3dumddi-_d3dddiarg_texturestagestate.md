@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4810ec13-ec58-4ed6-ae4f-6690bd72cd8a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_TEXTURESTAGESTATE, D3DDDIARG_TEXTURESTAGESTATE
+ms.keywords : display.d3dddiarg_texturestagestate, D3DDDIARG_TEXTURESTAGESTATE structure [Display Devices], d3dumddi/D3DDDIARG_TEXTURESTAGESTATE, D3DDDIARG_TEXTURESTAGESTATE, _D3DDDIARG_TEXTURESTAGESTATE, UMDisplayDriver_param_Structs_320d722f-2fbb-4fca-a06c-02e1be6e0190.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_TEXTURESTAGESTATE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_TEXTURESTAGESTATE
 ---
 
@@ -48,21 +52,20 @@ typedef struct _D3DDDIARG_TEXTURESTAGESTATE {
 
 ## Members
 
-        
-            `Stage`
 
-            [in] The stage in a multiple-texture group that indicates the texture to be updated. This member can be an integer in the range from 0 through 7, with the highest numbered texture being closest to the frame buffer.
-        
-            `State`
+`Stage`
 
-            [in] A D3DDDITEXTURESTAGESTATETYPE-typed value that indicates the texture state to be updated. 
+[in] The stage in a multiple-texture group that indicates the texture to be updated. This member can be an integer in the range from 0 through 7, with the highest numbered texture being closest to the frame buffer.
+
+`State`
+
+[in] A D3DDDITEXTURESTAGESTATETYPE-typed value that indicates the texture state to be updated. 
 
 Microsoft DirectX 9.0 and later applications can use values in the D3DSAMPLERSTATETYPE enumeration type to control the characteristics of sampler texture-related render states. In DirectX 8.0 and earlier, these sampler states were included in the D3DTEXTURESTAGESTATETYPE enumeration. The runtime maps sampler states (D3DSAMP_<i>Xxx</i>) to D3DDDITSS_<i>Xxx</i> values so that drivers are not required to process sampler states. For more information about D3DTEXTURESTAGESTATETYPE and D3DSAMPLERSTATETYPE, see the DirectX SDK documentation.
 
 For a definition of each value, see the corresponding value of D3DTEXTURESTAGESTATETYPE or D3DSAMPLERSTATETYPE.
 
 The following texture states are used exclusively by user-mode display drivers for texture colorkeying:
-
 <table>
 <tr>
 <th>Value</th>
@@ -89,10 +92,10 @@ Update the colorkey for the current texture. The <b>Value</b> member is set to t
 </td>
 </tr>
 </table>
-        
-            `Value`
 
-            [in] The value to which the driver should update the texture state that is identified by the <b>Stage</b> and <b>State</b> members. For more information about values that can be updated for each texture state, see the definitions of the corresponding texture state in the D3DTEXTURESTAGESTATETYPE or D3DSAMPLERSTATETYPE enumeration type in the DirectX SDK documentation.
+`Value`
+
+[in] The value to which the driver should update the texture state that is identified by the <b>Stage</b> and <b>State</b> members. For more information about values that can be updated for each texture state, see the definitions of the corresponding texture state in the D3DTEXTURESTAGESTATETYPE or D3DSAMPLERSTATETYPE enumeration type in the DirectX SDK documentation.
 
 
 ## Requirements
@@ -103,13 +106,10 @@ Update the colorkey for the current texture. The <b>Value</b> member is set to t
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_settexturestagestate.md">SetTextureStageState</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4c8734b1-d7f5-476b-a85f-1d3f4df888b9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsPower, IPortClsPower::UnregisterAdapterPowerManagement, UnregisterAdapterPowerManagement
+ms.keywords : UnregisterAdapterPowerManagement, portcls/IPortClsPower::UnregisterAdapterPowerManagement, IPortClsPower interface [Audio Devices], UnregisterAdapterPowerManagement method, audmp-routines_3dca5fa9-542d-437d-a2d9-9eef51b5f2ea.xml, IPortClsPower::UnregisterAdapterPowerManagement, UnregisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, IPortClsPower, UnregisterAdapterPowerManagement method [Audio Devices], audio.iportclspower_unregisteradapterpowermanagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windwow
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortClsPower.UnregisterAdapterPowerManagement
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -75,17 +79,12 @@ The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
+<a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536874">IPortClsPower::RegisterAdapterPowerManagement</a>
-</dt>
-</dl>
+
  
 
  

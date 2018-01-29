@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : d9935605-dc5f-4987-8a5b-b2c2b358dbbf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PshedIsSystemWheaEnabled
+ms.keywords : PshedIsSystemWheaEnabled function [WHEA Drivers and Applications], whea.pshedissystemwheaenabled, ntddk/PshedIsSystemWheaEnabled, PshedIsSystemWheaEnabled, whearef_492a4370-81bf-411b-bd87-2408f4551b18.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PshedIsSystemWheaEnabled
-req.alt-loc : Pshed.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Pshed.lib
 req.dll : Pshed.dll
 req.irql : Any
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -49,10 +53,6 @@ BOOLEAN PshedIsSystemWheaEnabled(void);
 This function has no parameters.
 
 ## Return Value
-
-A Boolean value that indicates whether the system is WHEA-enabled.
-
-A Boolean value that indicates whether the system is WHEA-enabled.
 
 A Boolean value that indicates whether the system is WHEA-enabled.
 
@@ -74,11 +74,8 @@ A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
-</dt>
-</dl>
+
  
 
  

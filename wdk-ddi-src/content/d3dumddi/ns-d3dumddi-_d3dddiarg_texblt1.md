@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e11fd9b5-c3ad-4f8f-890c-30ca5ce4a57f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_TEXBLT1, D3DDDIARG_TEXBLT1
+ms.keywords : D3DDDIARG_TEXBLT1 structure [Display Devices], d3dumddi/D3DDDIARG_TEXBLT1, display.d3dddiarg_texblt1, _D3DDDIARG_TEXBLT1, D3DDDIARG_TEXBLT1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_TEXBLT1
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_TEXBLT1
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DDDIARG_TEXBLT1 {
 
 ## Members
 
-        
-            `CopyFlags`
 
-            A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.
-        
-            `CubeMapFace`
+`CopyFlags`
 
-            The face of a cube map.
-        
-            `DstPoint`
+A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure that describes the destination point where the source texture is copied.
-        
-            `hDstResource`
+`CubeMapFace`
 
-            A handle to the destination resource.
-        
-            `hSrcResource`
+The face of a cube map.
 
-            A handle to the source resource.
-        
-            `SrcRect`
+`DstPoint`
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the source texture to copy to the destination point.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure that describes the destination point where the source texture is copied.
+
+`hDstResource`
+
+A handle to the destination resource.
+
+`hSrcResource`
+
+A handle to the source resource.
+
+`SrcRect`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the source texture to copy to the destination point.
 
 
 ## Requirements
@@ -85,19 +89,14 @@ typedef struct _D3DDDIARG_TEXBLT1 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

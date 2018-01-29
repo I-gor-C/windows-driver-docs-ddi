@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fdbb5d74-25d5-4920-849c-8d4adce1d216
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnicodeToUTF8N
+ms.keywords : RtlUnicodeToUTF8N, wdm/RtlUnicodeToUTF8N, RtlUnicodeToUTF8N routine [Kernel-Mode Driver Architecture], kernel.rtlunicodetoutf8n, k109_8c33089a-9b47-4c33-9468-56a16caea229.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUnicodeToUTF8N
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -77,18 +81,56 @@ Specifies the number of bytes in the Unicode source string that the <i>UnicodeSt
 ## Return Value
 
 <b>RtlUnicodeToUTF8N</b> returns STATUS_SUCCESS if the call is successful and all Unicode character codes in the input string were converted to the corresponding UTF-8 character codes in the output string. It returns STATUS_SOME_NOT_MAPPED if the call is successful but one or more input characters were invalid and were replaced by the Unicode replacement character, U+FFFD, before they were converted to UTF-8. Possible error return values include the following error codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The <i>UTF8StringMaxByteCount</i> parameter specifies a buffer size that is too small to contain the entire output string. 
+</dl>
+</td>
+<td width="60%">
+The <i>UTF8StringMaxByteCount</i> parameter specifies a buffer size that is too small to contain the entire output string. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>UTF8StringDestination</i> and <i>UTF8StringActualByteCount</i> parameters are both <b>NULL</b>. 
+</dl>
+</td>
+<td width="60%">
+The <i>UTF8StringDestination</i> and <i>UTF8StringActualByteCount</i> parameters are both <b>NULL</b>. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_4</b></dt>
-</dl>The <i>UnicodeStringSource</i> parameter is <b>NULL</b>. 
+</dl>
+</td>
+<td width="60%">
+The <i>UnicodeStringSource</i> parameter is <b>NULL</b>. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_5</b></dt>
-</dl><i>UnicodeStringByteCount</i> is not an integer multiple of <b>sizeof</b>(WCHAR).
+</dl>
+</td>
+<td width="60%">
+<i>UnicodeStringByteCount</i> is not an integer multiple of <b>sizeof</b>(WCHAR). 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -102,7 +144,7 @@ You can make an initial call to <b>RtlUnicodeToUTF8N</b> to obtain the required 
 
 <b>RtlUnicodeToUTF8N</b> continues to convert the input string to an output string until it reaches the end of the source buffer or the end of the destination buffer, whichever occurs first. The routine converts any null characters in the input string to null characters in the output string. If the input string contains a terminating null character, but the null character is not located at the end of the source buffer, the routine continues past the terminating null character until it reaches the end of the available buffer space.
 
-The <a href="..\ntifs\nf-ntifs-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a> routine converts a UTF-8 string to a Unicode string.
+The <a href="..\wdm\nf-wdm-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a> routine converts a UTF-8 string to a Unicode string.
 
 You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to perform a lossless conversion of valid text strings between the Unicode and UTF-8 formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string.
 
@@ -120,11 +162,8 @@ You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to per
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a>
-</dt>
-</dl>
+<a href="..\wdm\nf-wdm-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a>
+
  
 
  

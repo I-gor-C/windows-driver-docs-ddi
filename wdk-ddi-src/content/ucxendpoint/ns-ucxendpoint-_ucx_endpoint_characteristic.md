@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4785D94B-271C-4F8E-B95B-87401E32CE42
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_ENDPOINT_CHARACTERISTIC, *PUCX_ENDPOINT_CHARACTERISTIC, UCX_ENDPOINT_CHARACTERISTIC
+ms.keywords : PUCX_ENDPOINT_CHARACTERISTIC, *PUCX_ENDPOINT_CHARACTERISTIC, buses.ucx_endpoint_characteristic, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC, ucxendpoint/PUCX_ENDPOINT_CHARACTERISTIC, _UCX_ENDPOINT_CHARACTERISTIC, UCX_ENDPOINT_CHARACTERISTIC structure [Buses], UCX_ENDPOINT_CHARACTERISTIC, PUCX_ENDPOINT_CHARACTERISTIC structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_ENDPOINT_CHARACTERISTIC
-req.alt-loc : Ucxendpoint.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUCX_ENDPOINT_CHARACTERISTIC, UCX_ENDPOINT_CHARACTERISTIC"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCX_ENDPOINT_CHARACTERISTIC, *PUCX_ENDPOINT_CHARACTERISTIC
 req.product : Windows 10 or later.
 ---
 
@@ -51,14 +55,14 @@ typedef struct _UCX_ENDPOINT_CHARACTERISTIC {
 
 ## Members
 
-        
-            `CharacteristicType`
 
-            A <a href="..\ucxendpoint\ne-ucxendpoint-_ucx_endpoint_characteristic_type.md">UCX_ENDPOINT_CHARACTERISTIC_TYPE</a>-type value that indicates the type of endpoint characteristic.
-        
-            `Size`
+`CharacteristicType`
 
-            Size of this structure.
+A <a href="..\ucxendpoint\ne-ucxendpoint-_ucx_endpoint_characteristic_type.md">UCX_ENDPOINT_CHARACTERISTIC_TYPE</a>-type value that indicates the type of endpoint characteristic.
+
+`Size`
+
+Size of this structure.
 
 
 ## Requirements
@@ -69,16 +73,12 @@ typedef struct _UCX_ENDPOINT_CHARACTERISTIC {
 | **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_set_characteristic.md">EVT_UCX_ENDPOINT_SET_CHARACTERISTIC</a>
-</dt>
-<dt>
+
 <a href="..\ucxendpoint\ne-ucxendpoint-_ucx_endpoint_characteristic_priority.md">UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY</a>
-</dt>
-</dl>
+
  
 
  

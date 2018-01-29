@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 019cc9b7-13f7-4925-af98-5df0e8556e1c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeBuildTransport
+ms.keywords : RxCeBuildTransport function [Installable File System Drivers], rxref_8251916d-7a85-4e6d-8ca1-2deacf4a389a.xml, RxCeBuildTransport, rxce/RxCeBuildTransport, ifsk.rxcebuildtransport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeBuildTransport
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -53,7 +57,7 @@ NTSTATUS RxCeBuildTransport(
 
 `pRxCeTransport`
 
-
+TBD
 
 `pTransportName`
 
@@ -67,12 +71,34 @@ The quality of service desired from the transport.
 ## Return Value
 
 <b>RxCeBuildTransport</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The allocation of nonpaged pool memory needed by this routine failed. 
+</dl>
+</td>
+<td width="60%">
+The allocation of nonpaged pool memory needed by this routine failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters passed to this routine was invalid.
+</dl>
+</td>
+<td width="60%">
+One of the parameters passed to this routine was invalid. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -94,11 +120,8 @@ The connection engine routines in RDBSS do not participate in the computation of
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxce\nf-rxce-rxceteardowntransport.md">RxCeTearDownTransport</a>
-</dt>
-</dl>
+
  
 
  

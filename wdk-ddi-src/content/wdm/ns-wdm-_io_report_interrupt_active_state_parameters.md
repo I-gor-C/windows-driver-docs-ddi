@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 430B8951-37F0-4173-ACC6-89DB542B4081
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, *PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS
+ms.keywords : IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure [Kernel-Mode Driver Architecture], PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], wdm/PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, wdm/IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, *PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, kernel.io_report_interrupt_active_state_parameters, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, *PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -52,27 +56,25 @@ typedef struct _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS {
 
 ## Members
 
-        
-            `ConnectionContext`
 
-            A union that contains the connection context associated with the interrupt. Each union member is a pointer to a connection context of a particular type. If <b>Version</b> = CONNECT_MESSAGE_BASED, the <b>InterruptMessageTable</b> member of this union contains a pointer to an <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure. For all other <b>Version</b> values, the <b>InterruptObject</b> member of this union contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure. Use the <b>Generic</b> member of this union to treat the connection context pointer as a PVOID value (and avoid casting).
+`ConnectionContext`
+
+A union that contains the connection context associated with the interrupt. Each union member is a pointer to a connection context of a particular type. If <b>Version</b> = CONNECT_MESSAGE_BASED, the <b>InterruptMessageTable</b> member of this union contains a pointer to an <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure. For all other <b>Version</b> values, the <b>InterruptObject</b> member of this union contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> structure. Use the <b>Generic</b> member of this union to treat the connection context pointer as a PVOID value (and avoid casting).
 
 For more information, see Remarks.
-        
-            `Version`
 
-            The interrupt connection type described by this structure. This member must match the connection type the caller obtained from the <b>IoConnectInterruptEx</b> call that connected the interrupt. The following are valid values for this member:
+`Version`
 
+The interrupt connection type described by this structure. This member must match the connection type the caller obtained from the <b>IoConnectInterruptEx</b> call that connected the interrupt. The following are valid values for this member:
 <ul>
 <li>CONNECT_FULLY_SPECIFIED</li>
 <li>CONNECT_LINE_BASED</li>
 <li>CONNECT_MESSAGE_BASED</li>
 <li>CONNECT_FULLY_SPECIFIED_GROUP</li>
-</ul>
-For more information, see Remarks.
+</ul>For more information, see Remarks.
 
-    ## Remarks
-        This structure is supplied as a parameter to the <a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a> and <a href="..\wdm\nf-wdm-ioreportinterruptinactive.md">IoReportInterruptInactive</a> routines.
+## Remarks
+This structure is supplied as a parameter to the <a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a> and <a href="..\wdm\nf-wdm-ioreportinterruptinactive.md">IoReportInterruptInactive</a> routines.
 
 The <b>Version</b> member indicates the type of the connection context specified in the <b>ConnectionContext</b> member. Set this member to the <i>Parameters-</i>&gt;<b>Version</b> value obtained from the <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> call that connected the interrupt.
 
@@ -92,19 +94,14 @@ If the <i>Parameters-</i>&gt;<b>Version</b> value obtained from <b>IoConnectInte
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
+
 <a href="..\wdm\nf-wdm-ioreportinterruptinactive.md">IoReportInterruptInactive</a>
-</dt>
-</dl>
+
  
 
  

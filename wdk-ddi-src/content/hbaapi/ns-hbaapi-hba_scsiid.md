@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c2acb40c-cb6e-45b4-b0be-911f6b37094e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_ScsiId, HBA_SCSIID, *PHBA_SCSIID
+ms.keywords : structs-Fibre_855aa506-19ff-469d-8b32-3fc7f9e84ade.xml, HBA_SCSIID structure [Storage Devices], *PHBA_SCSIID, HBA_SCSIID, HBA_ScsiId structure [Storage Devices], hbaapi/PHBA_SCSIID, hbaapi/HBA_ScsiId, storage.hba_scsiid, HBA_ScsiId, PHBA_SCSIID, PHBA_SCSIID structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SCSIID
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_SCSIID, *PHBA_SCSIID
 ---
 
@@ -49,25 +53,25 @@ typedef struct HBA_ScsiId {
 
 ## Members
 
-        
-            `OSDeviceName`
 
-            Contains a name assigned to the device by the operating system. For example: "\device\ScsiPort3."
-        
-            `ScsiBusNumber`
+`OSDeviceName`
 
-            Contains the number assigned by the operating system to SCSI bus that the device is on.
-        
-            `ScsiOSLun`
+Contains a name assigned to the device by the operating system. For example: "\device\ScsiPort3."
 
-            Contains the logical unit number assigned by the operating system to the logical unit.
-        
-            `ScsiTargetNumber`
+`ScsiBusNumber`
 
-            Contains the target ID number assigned by the operating system to the target device.
+Contains the number assigned by the operating system to SCSI bus that the device is on.
 
-    ## Remarks
-        For a detailed discussion of how the data assigned to members of this structure should be formatted, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+`ScsiOSLun`
+
+Contains the logical unit number assigned by the operating system to the logical unit.
+
+`ScsiTargetNumber`
+
+Contains the target ID number assigned by the operating system to the target device.
+
+## Remarks
+For a detailed discussion of how the data assigned to members of this structure should be formatted, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct HBA_ScsiId {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_getfcpstatistics.md">HBA_GetFCPStatistics</a>
-</dt>
-</dl>
+
  
 
  

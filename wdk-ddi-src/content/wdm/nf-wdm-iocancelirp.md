@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8d991192-2df8-4b4d-a4c5-df5091492e67
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCancelIrp
+ms.keywords : k104_b43eae94-7d4e-4649-b56c-498285b5033f.xml, IoCancelIrp, kernel.iocancelirp, wdm/IoCancelIrp, IoCancelIrp routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCancelIrp
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -82,11 +86,8 @@ An intermediate driver should not arbitrarily call <b>IoCancelIrp</b> unless tha
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-iosetcancelroutine.md">IoSetCancelRoutine</a>
-</dt>
-</dl>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : image\drv_version.htm
 old-project : image
 ms.assetid : 61b6dbd3-7565-4d63-bcc0-007df9793398
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _DRV_VERSION, DRV_VERSION, *PDRV_VERSION
+ms.date : 1/18/2018
+ms.keywords : PDRV_VERSION structure pointer [Imaging Devices], _DRV_VERSION, stifnc_99059efa-8e64-49f6-bebe-560d33fca145.xml, *PDRV_VERSION, usbscan/DRV_VERSION, usbscan/PDRV_VERSION, DRV_VERSION, DRV_VERSION structure [Imaging Devices], PDRV_VERSION, image.drv_version
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DRV_VERSION
-req.alt-loc : usbscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DRV_VERSION, *PDRV_VERSION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PDRV_VERSION, DRV_VERSION"
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _DRV_VERSION {
 
 ## Members
 
-        
-            `internal`
 
-            Internal, vendor-specific version number.
-        
-            `major`
+`internal`
 
-            Major version number.
-        
-            `minor`
+Internal, vendor-specific version number.
 
-            Minor version number.
+`major`
+
+Major version number.
+
+`minor`
+
+Minor version number.
 
 
 ## Requirements

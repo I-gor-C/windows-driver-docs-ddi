@@ -7,8 +7,8 @@ old-location : netvista\rilregstatusinfoparammask.htm
 old-project : netvista
 ms.assetid : 7857f845-d695-4b0f-9e52-8871c0140a74
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILREGSTATUSINFOPARAMMASK, RILREGSTATUSINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : netvista.rilregstatusinfoparammask, RIL_PARAM_REGSI_NETWORKCODE, ntddrilapitypes/RIL_PARAM_REGSI_REGSTATUS, RIL_PARAM_REGSI_REGREJECTREASON, RIL_PARAM_REGSI_SYSTEMCAPS, RIL_PARAM_REGSI_VOICEDOMAIN, RIL_PARAM_REGSI_REGSTATUS, RILREGSTATUSINFOPARAMMASK, ntddrilapitypes/RILREGSTATUSINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_REGSI_HUICCAPP, RIL_PARAM_REGSI_HUICCAPP, ntddrilapitypes/RIL_PARAM_REGSI_SYSTEMCAPS, RIL_PARAM_REGSI_CURRENTOPERATOR, RIL_PARAM_REGSI_ACCESSTECHNOLOGY, ntddrilapitypes/RIL_PARAM_REGSI_REGREJECTREASON, ntddrilapitypes/RIL_PARAM_REGSI_CURRENTOPERATOR, RIL_PARAM_REGSI_ALL, ntddrilapitypes/RIL_PARAM_REGSI_ACCESSTECHNOLOGY, RILREGSTATUSINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_REGSI_ALL, ntddrilapitypes/RIL_PARAM_REGSI_NETWORKCODE, ntddrilapitypes/RIL_PARAM_REGSI_VOICEDOMAIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILREGSTATUSINFOPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILREGSTATUSINFOPARAMMASK
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_REGSI_CURRENTOPERATOR</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_REGSI_EXECUTOR</td>
 <td></td>
 </tr>
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 337E5450-8C90-48B7-B344-FB9420498D4F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlGetSectorSizeInformation
+ms.keywords : ntifs/FsRtlGetSectorSizeInformation, ifsk.fsrtlgetsectorsizeinformation, FsRtlGetSectorSizeInformation, FsRtlGetSectorSizeInformation routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlGetSectorSizeInformation
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -51,7 +55,7 @@ NTSTATUS FsRtlGetSectorSizeInformation(
 
 `DeviceObject`
 
-
+TBD
 
 `SectorSizeInfo`
 
@@ -61,9 +65,23 @@ A pointer to a caller supplied <a href="..\ntddk\ns-ntddk-_file_fs_sector_size_i
 ## Return Value
 
 <b>FsRtlGetSectorSizeInformation</b> returns <b>STATUS_SUCCESS</b> if the sector size information is returned in <i>SectorSizeInfo</i>. Otherwise, another appropriate <b>NTSTATUS</b> value is returned such as the following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BAD_DEVICE_TYPE</b></dt>
-</dl>The storage device reported an invalid sector size.
+</dl>
+</td>
+<td width="60%">
+The storage device reported an invalid sector size.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -85,20 +103,14 @@ Drivers other than file system drivers, can query sector size information using 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_file_fs_sector_size_information.md">FILE_FS_SECTOR_SIZE_INFORMATION</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ns-ntddk-_file_fs_sector_size_information.md">FILE_FS_SECTOR_SIZE_INFORMATION</a>
+
  
 
  

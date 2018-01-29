@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d7800ab6-9d8f-47a7-b919-8b6b0197d163
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.hwvidsetpowerstate, HwVidSetPowerState callback function [Display Devices], HwVidSetPowerState, PVIDEO_HW_POWER_SET, PVIDEO_HW_POWER_SET, video/HwVidSetPowerState, VideoMiniport_Functions_22a6c5ae-0c31-48a6-8882-06edfea32c1a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HwVidSetPowerState
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -60,7 +64,7 @@ Pointer to the miniport driver's per-adapter storage area. For more information,
 
 `HwId`
 
-Pointer to a 32-bit <a href="wdkgloss.d#wdkgloss.device_id#wdkgloss.device_id"><i>device ID</i></a> that uniquely identifies the device for which the miniport driver should set the power state. This parameter is the value returned by the miniport driver's <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a> function. A value of DISPLAY_ADAPTER_HW_ID indicates that the miniport driver should set the power state of the adapter itself.
+Pointer to a 32-bit <a href="https://msdn.microsoft.com/86688b5d-575d-42e1-9158-7ffba1aaf1d3">device ID</a> that uniquely identifies the device for which the miniport driver should set the power state. This parameter is the value returned by the miniport driver's <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a> function. A value of DISPLAY_ADAPTER_HW_ID indicates that the miniport driver should set the power state of the adapter itself.
 
 `VideoPowerControl`
 
@@ -93,17 +97,12 @@ The driver should check the ID specified in <i>HwId</i> to determine the device 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_POWER_MANAGEMENT</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
+
+<a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
+
  
 
  

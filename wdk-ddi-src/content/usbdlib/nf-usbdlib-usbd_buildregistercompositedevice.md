@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6683C688-CCDD-498B-AA60-81430DC3BCA4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_BuildRegisterCompositeDevice
+ms.keywords : usbdlib/ USBD_BuildRegisterCompositeDevice, USBD_BuildRegisterCompositeDevice routine [Buses], USBD_BuildRegisterCompositeDevice, buses.usbd_buildregistercompositedriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista a
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_BuildRegisterCompositeDevice
-req.alt-loc : Usbdex.lib,Usbdex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbdex.lib
 req.dll : 
 req.irql : < = DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -90,14 +94,10 @@ This routine does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbdlib\ns-usbdlib-_register_composite_device.md">REGISTER_COMPOSITE_DEVICE</a>
-</dt>
-<dt>
+
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
-</dt>
-</dl>
+
  
 
  

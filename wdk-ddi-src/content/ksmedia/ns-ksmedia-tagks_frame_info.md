@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7c2ebe5d-ecb0-41d2-a1bb-7e131ea350a7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_FRAME_INFO, *PKS_FRAME_INFO, KS_FRAME_INFO
+ms.keywords : ksmedia/KS_FRAME_INFO, KS_FRAME_INFO structure [Streaming Media Devices], *PKS_FRAME_INFO, PKS_FRAME_INFO structure pointer [Streaming Media Devices], vidcapstruct_1ce3f0b4-3032-4956-83a3-2a92039eb7a0.xml, tagKS_FRAME_INFO, stream.ks_frame_info, PKS_FRAME_INFO, KS_FRAME_INFO, ksmedia/PKS_FRAME_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_FRAME_INFO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_FRAME_INFO, KS_FRAME_INFO"
 ---
 
@@ -64,19 +68,18 @@ typedef struct tagKS_FRAME_INFO {
 
 ## Members
 
-        
-            `DirectDrawRect`
 
-            Specifies the portion of the DirectDraw surface that has been locked. This is normally the entire surface.
-        
-            `DropCount`
+`DirectDrawRect`
 
-            Specifies the number of pictures that were not captured. During capture, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.
-        
-            `dwFrameFlags`
+Specifies the portion of the DirectDraw surface that has been locked. This is normally the entire surface.
 
-            Specifies flags indicating additional information about the frame captured. During capture, the minidriver sets this member to one of the following values that are defined in <i>ksmedia.h</i>:
+`DropCount`
 
+Specifies the number of pictures that were not captured. During capture, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+
+`dwFrameFlags`
+
+Specifies flags indicating additional information about the frame captured. During capture, the minidriver sets this member to one of the following values that are defined in <i>ksmedia.h</i>:
 <table>
 <tr>
 <th>Flag</th>
@@ -143,37 +146,43 @@ Indicates that this is a bidirectional frame.
 </td>
 </tr>
 </table>
-        
-            `ExtendedHeaderSize`
 
-            Specifies the size of this structure, in bytes.
-        
-            `hDirectDraw`
+`ExtendedHeaderSize`
 
-            Specifies the user-mode handle to DirectDraw. This handle is only provided to the minidriver when capturing to a DirectDraw surface for preview or overlay purposes.
-        
-            `hSurfaceHandle`
+Specifies the size of this structure, in bytes.
 
-            Specifies the user-mode handle to the DirectDraw surface. This handle is only provided to the minidriver when capturing to a DirectDraw surface for preview or overlay purposes.
-        
-            `PictureNumber`
+`hDirectDraw`
 
-            Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.
-        
-            `Reserved2`
+Specifies the user-mode handle to DirectDraw. This handle is only provided to the minidriver when capturing to a DirectDraw surface for preview or overlay purposes.
 
-            Reserved and should not be used by the minidriver.
+`hSurfaceHandle`
 
-    ## Remarks
-        The KS_FRAME_INFO structure provides a way to return information about the frame captured, as well as a way to pass Microsoft DirectDraw handles used when capturing to a DirectDraw surface.
+Specifies the user-mode handle to the DirectDraw surface. This handle is only provided to the minidriver when capturing to a DirectDraw surface for preview or overlay purposes.
+
+`PictureNumber`
+
+Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+
+`Reserved2`
+
+Reserved and should not be used by the minidriver.
+
+## Remarks
+The KS_FRAME_INFO structure provides a way to return information about the frame captured, as well as a way to pass Microsoft DirectDraw handles used when capturing to a DirectDraw surface.
 
 The <b>PictureNumber</b> member count represents the count of the current picture, which is calculated in one of two ways depending on the device:
-
+<ul>
+<li>
 Measure the time since the stream was started and divide by the frame duration. This method is appropriate for devices that do not provide their own clock. For example: 
 
+<pre class="syntax" xml:space="preserve"><code>PictureNumber = ElapsedTime / FrameDuration;</code></pre>
+</li>
+<li>
 Add together the count of frames captured and the count of frame dropped. This method is appropriate for devices that provide their own clock. For example: 
 
-When calculating <b>PictureNumber</b> and <b>DropCount</b>, it is important to use the frame duration specified when the stream was opened, which may not necessarily match the rate at which the device is actually producing images. For example, a USB camera may only produce images at 7.5 fps, but a client could open the stream at 8 fps. In this case, all calculations should use the 8 fps number. 
+<pre class="syntax" xml:space="preserve"><code>PictureNumber = FramesCaptured + FramesDropped;</code></pre>
+</li>
+</ul>When calculating <b>PictureNumber</b> and <b>DropCount</b>, it is important to use the frame duration specified when the stream was opened, which may not necessarily match the rate at which the device is actually producing images. For example, a USB camera may only produce images at 7.5 fps, but a client could open the stream at 8 fps. In this case, all calculations should use the 8 fps number. 
 
 For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="https://msdn.microsoft.com/0adea8fe-1669-4daf-a858-05e014f00a72">Capturing Video</a>.
 
@@ -185,13 +194,10 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7ae789dd-2454-4ed6-bd26-5ebfd9c33768
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_GDISURFACEDATA, D3DKMDT_GDISURFACEDATA
+ms.keywords : display.d3dkmdt_gdisurfacedata, _D3DKMDT_GDISURFACEDATA, DmStructs_91525c19-9d84-4406-b456-c6d80cb0f1d3.xml, d3dkmdt/D3DKMDT_GDISURFACEDATA, D3DKMDT_GDISURFACEDATA structure [Display Devices], D3DKMDT_GDISURFACEDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_GDISURFACEDATA
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_GDISURFACEDATA
 ---
 
@@ -51,57 +55,45 @@ typedef struct _D3DKMDT_GDISURFACEDATA {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] Reserved for future use. Must be zero.
-        
-            `Format`
+`Flags`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The following formats are supported:
+[in] Reserved for future use. Must be zero.
 
-<dl>
-<dd>
+`Format`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The following formats are supported:
+
 D3DDDIFMT_A8B8G8R8
 
-</dd>
-<dd>
 D3DDDIFMT_X8B8G8R8
 
-</dd>
-<dd>
 D3DDDIFMT_A8R8G8B8
 
-</dd>
-<dd>
 D3DDDIFMT_X8R8G8B8
 
-</dd>
-<dd>
 D3DDDIFMT_A8
 
-</dd>
-</dl>
 The D3DDDIFMT_A8 format is used only for D3DKMDT_GDISURFACE_STAGING and D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE staging surface types from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a> enumeration.
-        
-            `Height`
 
-            [in] The height of the surface, in pixels.
-        
-            `Pitch`
+`Height`
 
-            [out] The width of the surface, which includes padding, in bytes. The display miniport driver must return the pitch value for all allocations of <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a> type D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE,  D3DKMDT_GDISURFACE_EXISTINGSYSMEM, and D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER.
-        
-            `Type`
+[in] The height of the surface, in pixels.
 
-            [in] A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>-typed value that indicates the surface type.
-        
-            `Width`
+`Pitch`
 
-            [in] The width of the surface, in pixels.
+[out] The width of the surface, which includes padding, in bytes. The display miniport driver must return the pitch value for all allocations of <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a> type D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE,  D3DKMDT_GDISURFACE_EXISTINGSYSMEM, and D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER.
 
-    ## Remarks
-        The D3DKMDT_GDISURFACEDATA structure is passed by the Microsoft DirectX graphics kernel subsystem in a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md">DxgkDdiGetStandardAllocationDriverData</a> function. This call generates a description of a surface that can be used for redirection by GDI hardware acceleration and the DWM.
+`Type`
+
+[in] A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>-typed value that indicates the surface type.
+
+`Width`
+
+[in] The width of the surface, in pixels.
+
+## Remarks
+The D3DKMDT_GDISURFACEDATA structure is passed by the Microsoft DirectX graphics kernel subsystem in a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md">DxgkDdiGetStandardAllocationDriverData</a> function. This call generates a description of a surface that can be used for redirection by GDI hardware acceleration and the DWM.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,22 +103,16 @@ The D3DDDIFMT_A8 format is used only for D3DKMDT_GDISURFACE_STAGING and D3DKMDT_
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md">DxgkDdiGetStandardAllocationDriverData</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md">DxgkDdiGetStandardAllocationDriverData</a>
+
  
 
  

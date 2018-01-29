@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : C2D7C955-B63E-4D99-BC20-F7684C8D61F8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2CustomReceiveTransactionInitializeComplete
+ms.keywords : serports.sercx2customreceivetransactioninitializecomplete, SerCx2CustomReceiveTransactionInitializeComplete method [Serial Ports], SerCx2CustomReceiveTransactionInitializeComplete, 2/SerCx2CustomReceiveTransactionInitializeComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SerCx2CustomReceiveTransactionInitializeComplete
-req.alt-loc : 2.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX_STATUS, *PSERCX_STATUS
 req.product : Windows 10 or later.
 ---
@@ -85,17 +89,12 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_initialize.md">EvtSerCx2CustomReceiveTransactionInitialize</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
-</dt>
-<dt>
+
 <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
-</dt>
-</dl>
+
  
 
  

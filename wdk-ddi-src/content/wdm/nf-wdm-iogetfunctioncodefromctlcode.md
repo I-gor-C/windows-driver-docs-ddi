@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8bbde78d-49f4-4181-9d92-312010322a7a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetFunctionCodeFromCtlCode
+ms.keywords : wdm/IoGetFunctionCodeFromCtlCode, kernel.iogetfunctioncodefromctlcode, k104_211d730a-0df4-45f4-af58-25d2609c7696.xml, IoGetFunctionCodeFromCtlCode, IoGetFunctionCodeFromCtlCode function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetFunctionCodeFromCtlCode
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wdm.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ For information about the layout of IOCTL codes, see <a href="https://msdn.micro
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
-</dt>
-</dl>
+
  
 
  

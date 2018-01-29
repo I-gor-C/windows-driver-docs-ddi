@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : da5ef8dd-2ec1-4728-aef9-05a842f9b5d8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENT_SET_IRP_STORAGE
+ms.keywords : KSEVENT_SET_IRP_STORAGE, KSEVENT_SET_IRP_STORAGE macro [Streaming Media Devices], ks/KSEVENT_SET_IRP_STORAGE, stream.ksevent_set_irp_storage, ksfunc_d0511067-dd15-4e5d-9adf-acc73885a248.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSEVENT_SET_IRP_STORAGE
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

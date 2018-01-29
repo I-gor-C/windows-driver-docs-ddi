@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6D705DA8-7F45-4C7A-813F-5AE4F5A1D8ED
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_DIAGNOSTIC_LEVEL, STORAGE_DIAGNOSTIC_LEVEL, *PSTORAGE_DIAGNOSTIC_LEVEL
+ms.keywords : storage.storage_diagnostic_level, ntddstor/StorageDiagnosticLevelDefault, PSTORAGE_DIAGNOSTIC_LEVEL, ntddstor/PSTORAGE_DIAGNOSTIC_LEVEL, *PSTORAGE_DIAGNOSTIC_LEVEL, STORAGE_DIAGNOSTIC_LEVEL, STORAGE_DIAGNOSTIC_LEVEL enumeration [Storage Devices], PSTORAGE_DIAGNOSTIC_LEVEL enumeration pointer [Storage Devices], ntddstor/StorageDiagnosticLevelMax, StorageDiagnosticLevelMax, StorageDiagnosticLevelDefault, _STORAGE_DIAGNOSTIC_LEVEL, ntddstor/STORAGE_DIAGNOSTIC_LEVEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_DIAGNOSTIC_LEVEL
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_DIAGNOSTIC_LEVEL, *PSTORAGE_DIAGNOSTIC_LEVEL
 ---
 

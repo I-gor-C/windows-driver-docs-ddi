@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 46a58007-16bf-422b-8408-30a7b65dbee6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsDataTypeHandler, IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation
+ms.keywords : KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler::KsCompleteIoOperation, ksproxy/IKsDataTypeHandler::KsCompleteIoOperation, ksproxy_04136093-03d0-4490-bf5c-5e83bddc23c7.xml, KsCompleteIoOperation, KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler interface [Streaming Media Devices], KsCompleteIoOperation method, stream.iksdatatypehandler_kscompleteiooperation, IKsDataTypeHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsDataTypeHandler.KsCompleteIoOperation
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -62,7 +66,6 @@ Pointer to a buffer that contains the extended header information.
 `IoOperation`
 
 Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:
-
 <table>
 <tr>
 <th>Value</th>
@@ -119,11 +122,8 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a>
-</dt>
-</dl>
+
  
 
  

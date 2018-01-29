@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3ea9a473-606d-4021-89af-5f895020d054
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDispatchSpecificProperty
+ms.keywords : ks/KsDispatchSpecificProperty, KsDispatchSpecificProperty function [Streaming Media Devices], stream.ksdispatchspecificproperty, KsDispatchSpecificProperty, ksfunc_b12751b9-b486-4b57-809b-1f3daa8a1c30.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDispatchSpecificProperty
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -50,18 +54,14 @@ KSDDKAPI NTSTATUS NTAPI KsDispatchSpecificProperty(void);
 
 `Irp`
 
-
+TBD
 
 `Handler`
 
-
+TBD
 
 
 ## Return Value
-
-The <b>KsDispatchSpecificProperty</b> function returns STATUS_SUCCESS if successful, or if unsuccessful it returns an error.
-
-The <b>KsDispatchSpecificProperty</b> function returns STATUS_SUCCESS if successful, or if unsuccessful it returns an error.
 
 The <b>KsDispatchSpecificProperty</b> function returns STATUS_SUCCESS if successful, or if unsuccessful it returns an error.
 
@@ -83,11 +83,8 @@ The <b>KsDispatchSpecificProperty</b> function is intended for additional proces
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a>
-</dt>
-</dl>
+
  
 
  

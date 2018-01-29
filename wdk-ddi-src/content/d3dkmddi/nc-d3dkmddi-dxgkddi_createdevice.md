@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a7027735-0ec4-4fad-81fb-1c3aca4ebf2d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddicreatedevice, DxgkDdiCreateDevice callback function [Display Devices], DxgkDdiCreateDevice, DXGKDDI_CREATEDEVICE, DXGKDDI_CREATEDEVICE, d3dkmddi/DxgkDdiCreateDevice, DmFunctions_15d9141a-ec58-41f7-a925-768079604525.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiCreateDevice
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,18 +68,39 @@ NTSTATUS DxgkddiCreatedevice(
 ## Return Value
 
 <i>DxgkDdiCreateDevice</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><i>DxgkDdiCreateDevice</i> successfully created the graphics context device.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiCreateDevice</i> successfully created the graphics context device.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl><i>DxgkDdiCreateDevice</i> could not allocate memory that was required for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiCreateDevice</i> could not allocate memory that was required for it to complete.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 The DirectX graphics kernel subsystem calls the display miniport driver's <i>DxgkDdiCreateDevice</i> function to create a graphics context device that the graphics subsystem subsequently passes in calls to the display miniport driver. The driver uses a device to hold a collection of rendering state. The graphics subsystem can create multiple devices in the same process on a given graphics processing unit (GPU) adapter. 
-
-Generally, devices are independent of each other; in other words, resources that are created in one device cannot be referenced or accessed by resources that are created in another device. However, cross-process resources are an exception to this rule. 
+<div class="alert"><b>Note</b>  The number of devices that can simultaneously exist is limited only by available system memory. That is, a driver cannot have a hard-coded maximum device limit.</div><div> </div>Generally, devices are independent of each other; in other words, resources that are created in one device cannot be referenced or accessed by resources that are created in another device. However, cross-process resources are an exception to this rule. 
 
 <i>DxgkDdiCreateDevice</i> should be made pageable.
 
@@ -93,14 +118,10 @@ Generally, devices are independent of each other; in other words, resources that
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createdevice.md">DXGKARG_CREATEDEVICE</a>
-</dt>
-<dt>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-</dl>
+
  
 
  

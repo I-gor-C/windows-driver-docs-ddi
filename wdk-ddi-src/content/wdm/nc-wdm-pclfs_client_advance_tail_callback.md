@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e5c3ac56-9e9f-40b8-b8a8-2eb4d41bca52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.clfsadvancetailcallback, ClfsAdvanceTailCallback, ClfsAdvanceTailCallback callback function [Kernel-Mode Driver Architecture], ClfsAdvanceTailCallback, PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK, PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK, wdm/ClfsAdvanceTailCallback, Clfs_management_86e7d14f-866d-4023-9f97-d495ac16989f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2003 R2, Windows Vista, 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ClfsAdvanceTailCallback
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at IRQL <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -76,12 +80,16 @@ The <i>ClfsAdvanceTailCallback</i> function should return either STATUS_PENDING 
 The <i>ClfsAdvanceTailCallback</i> function is called when CLFS management requests that the client advance its log tail.
 
 The <i>ClfsAdvanceTailCallback</i> function must only perform a minimal amount of processing before returning. For example, the <i>ClfsAdvanceTailCallback</i> function might follow this procedure:
-
+<ol>
+<li>
 If the request cannot be processed, return an error status.
 
+</li>
+<li>
 If the request can be processed, create and queue a work item to perform the actions that are required to move the client's tail, and then return STATUS_PENDING. For more information on queuing a worker thread, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564587">System Worker Threads</a>.
 
-When a client calls the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine to register with CLFS management, the client provides both a pointer to the <i>ClfsAdvanceTailCallback</i> function and the custom data that will be passed as a parameter to the <i>ClfsAdvanceTailCallback</i> function when this function is called.
+</li>
+</ol>When a client calls the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine to register with CLFS management, the client provides both a pointer to the <i>ClfsAdvanceTailCallback</i> function and the custom data that will be passed as a parameter to the <i>ClfsAdvanceTailCallback</i> function when this function is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,20 +105,14 @@ When a client calls the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md"
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfsmgmttailadvancefailure.md">ClfsMgmtTailAdvanceFailure</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfsadvancelogbase.md">ClfsAdvanceLogBase</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
+
  
 
  

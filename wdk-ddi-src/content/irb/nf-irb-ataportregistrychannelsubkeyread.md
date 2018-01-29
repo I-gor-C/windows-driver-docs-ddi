@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 50fc7a8c-64ee-4a0c-9106-a071a7cefc34
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRegistryChannelSubkeyRead
+ms.keywords : atartns_35b220a8-6f27-43c3-90b7-fc0ef628b270.xml, storage.ataportregistrychannelsubkeyread, AtaPortRegistryChannelSubkeyRead routine [Storage Devices], irb/AtaPortRegistryChannelSubkeyRead, AtaPortRegistryChannelSubkeyRead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortRegistryChannelSubkeyRead
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortRegistryChannelSubkeyRead function
-The <b>AtaPortRegistryChannelSubKeyRead</b> routine reads the data that is associated with the indicated value name under the registry key <b>HKLM\CurrentControlSet\Services\</b><i>&lt;service name&gt;</i><b>\Controller</b><i>N</i>\<b>Channel</b><i>M</i>, where <i>N </i>is the number of the controller and <i>M </i>is the number of the channel.
+The <b>AtaPortRegistryChannelSubKeyRead</b> routine reads the data that is associated with the indicated value name under the registry key <b>HKLM\CurrentControlSet\Services\</b><i>&lt;service name&gt;</i><b>\Controller</b><i>N</i>\<b>Channel</b><i>M</i>, where <i>N </i>is the number of the controller and <i>M </i>is the number of the channel. 
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -68,7 +73,6 @@ Contains the name of the registry value from which to read.
 `ValueType`
 
 Indicates the type of data that is contained in the registry value. This member should be assigned one of values indicated in the following table. 
-
 <table>
 <tr>
 <th>Value</th>
@@ -112,7 +116,7 @@ A pointer to the destination buffer where the data that is read from the registr
 
 `BufferLength`
 
-
+TBD
 
 
 ## Return Value
@@ -139,20 +143,14 @@ The miniport driver must call <b>AtaPortRegistryChannelSubKeyRead</b> either dur
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
-</dt>
-<dt>
+
 <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
-</dt>
-<dt>
+
 <a href="..\irb\nf-irb-ataportregistrychannelsubkeywrite.md">AtaPortRegistryChannelSubKeyWrite</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
+
  
 
  

@@ -7,8 +7,8 @@ old-location : netvista\fwps_fields_ale_resource_release_v4.htm
 old-project : netvista
 ms.assetid : ad3d3099-58eb-4a34-b15c-a323dcedba84
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4_, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4
+ms.date : 1/18/2018
+ms.keywords : fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_PORT, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_PACKAGE_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_PROTOCOL, netvista.fwps_fields_ale_resource_release_v4, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_USER_ID, wfp_ref_5_const_3_data_fields_09378323-ec5f-4db4-89d3-8398e4b76fac.xml, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_PACKAGE_ID, fwpsk/FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_APP_ID, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_FLAGS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_FLAGS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_PROTOCOL, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4_, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_APP_ID, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_MAX, FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_IP_LOCAL_INTERFACE, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4
 ---
 
@@ -69,14 +73,22 @@ typedef enum FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4_ {
 <tr>
 <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_PACKAGE_ID</td>
 <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
+</tr>
 
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+<tr>
+<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
+<td></td>
 </tr>
 
 <tr>
 <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_ALE_USER_ID</td>
 <td>The identifier of the local user.</td>
+</tr>
+
+<tr>
+<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V4_COMPARTMENT_ID</td>
+<td></td>
 </tr>
 
 <tr>
@@ -131,16 +143,12 @@ typedef enum FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4_ {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4 enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4 enumeration%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

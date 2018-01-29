@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : bba3b9f4-cabb-496b-80c6-cdb51bd71ace
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_usb_hcd_enable_port, IOCTL_USB_HCD_ENABLE_PORT control code [Buses], IOCTL_USB_HCD_ENABLE_PORT, usbioctl/IOCTL_USB_HCD_ENABLE_PORT, usbirp_fc5909f4-17b5-455c-b635-5c53b9de816e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Microsoft Windows Server 2003, Windows 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_USB_HCD_ENABLE_PORT
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0E05233D-79B0-4FC7-B13C-91B6B1F57E89
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortSetUnitAttributes
+ms.keywords : StorPortSetUnitAttributes, storport/StorPortSetUnitAttributes, storage.storportsetunitattributes, StorPortSetUnitAttributes routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortSetUnitAttributes
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -67,12 +71,30 @@ A set of bitfields indicating the attributes supported for the unit device.
 ## Return Value
 
 <b>StorPortSetUnitAttributes</b> returns one of the following status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>Indicates that the routine set the unit attributes successfully.
+</dl>
+</td>
+<td width="60%">
+Indicates that the routine set the unit attributes successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>HwDeviceExtension</i> pointer is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+The <i>HwDeviceExtension</i> pointer is <b>NULL</b>.
 
 -or-
 
@@ -85,6 +107,10 @@ The unit address in <i>Address</i> is formatted incorrectly.
 -or-
 
 A unit device is not found for the address given in <i>Address</i>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -104,14 +130,10 @@ A miniport driver will call this routine to register the unit attributes with St
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\scsi\ns-scsi-_stor_address.md">STOR_ADDRESS</a>
-</dt>
-<dt>
+<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
+
 <a href="..\storport\ns-storport-_stor_unit_attributes.md">STOR_UNIT_ATTRIBUTES</a>
-</dt>
-</dl>
+
  
 
  

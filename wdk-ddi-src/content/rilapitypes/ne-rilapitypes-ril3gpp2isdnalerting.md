@@ -7,8 +7,8 @@ old-location : netvista\ril3gpp2isdnalerting_2.htm
 old-project : netvista
 ms.assetid : 9fff629b-ad85-4158-b8c4-f5f6abe8e3f5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL3GPP2ISDNALERTING, RIL3GPP2ISDNALERTING
+ms.date : 1/18/2018
+ms.keywords : RIL_3GPP2ISDNALERTING_PINGRING, rilapitypes/RIL_3GPP2ISDNALERTING_PINGRING, RIL_3GPP2ISDNALERTING_SPECIAL, RIL_3GPP2ISDNALERTING_INTERGROUP, rilapitypes/RIL_3GPP2ISDNALERTING_SPECIAL, RIL3GPP2ISDNALERTING, netvista.ril3gpp2isdnalerting_2, rilapitypes/RIL_3GPP2ISDNALERTING_NORMAL, rilapitypes/RIL_3GPP2ISDNALERTING_MAX, RIL3GPP2ISDNALERTING enumeration [Network Drivers Starting with Windows Vista], RIL_3GPP2ISDNALERTING_NORMAL, rilapitypes/RIL3GPP2ISDNALERTING, rilapitypes/RIL_3GPP2ISDNALERTING_INTERGROUP, RIL_3GPP2ISDNALERTING_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL3GPP2ISDNALERTING
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RIL3GPP2ISDNALERTING
 req.product : Windows 10 or later.
 ---
@@ -52,6 +56,11 @@ typedef enum _RIL3GPP2ISDNALERTING {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_3GPP2ISDNALERTING_ALERTINGOFF</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_3GPP2ISDNALERTING_INTERGROUP</td>

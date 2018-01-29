@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9fff319e-0428-4185-a792-d3842ab9feb8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoSetPowerState
+ms.keywords : kernel.posetpowerstate, portn_b6d6559d-e4c7-4fa8-b0f2-556b840391f9.xml, wdm/PoSetPowerState, PoSetPowerState routine [Kernel-Mode Driver Architecture], PoSetPowerState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoSetPowerState
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -70,14 +74,20 @@ On Windows 2000 and later versions of the operating system, <b>PoSetPowerState</
 ## Remarks
 
 <b>PoSetPowerState</b> notifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> of the new power state for a device. Each driver in a device stack (filter, function, and bus drivers) must call <b>PoSetPowerState</b> to inform the power manager of a change in the power state of its corresponding device object. For example:
+<ul>
+<li>
+A driver calls this routine after receiving a device set-power request and before calling <a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.
 
-A driver calls this routine after receiving a device set-power request and before calling <a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.
-
+</li>
+<li>
 If the device is powering down, the driver must call <b>PoSetPowerState</b> before leaving the D0 state. In addition, the driver must be able to process client requests before <b>PoSetPowerState</b> returns.
 
+</li>
+<li>
 If the device is powering up, the driver must call <b>PoSetPowerState</b> after the device is successfully put into the D0 state.
 
-For more information about powering a device up and down, see <a href="https://msdn.microsoft.com/b4a19995-7933-41f7-b951-15ce0e4627da">Handling IRP_MN_SET_POWER for Device Power States</a>.
+</li>
+</ul>For more information about powering a device up and down, see <a href="https://msdn.microsoft.com/b4a19995-7933-41f7-b951-15ce0e4627da">Handling IRP_MN_SET_POWER for Device Power States</a>.
 
 Callers of <b>PoSetPowerState</b> must be running at IRQL &lt;= APC_LEVEL except when setting state to D0. When setting state to D0, callers can be running at IRQL &lt;= DISPATCH_LEVEL.
 
@@ -95,14 +105,10 @@ Callers of <b>PoSetPowerState</b> must be running at IRQL &lt;= APC_LEVEL except
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
+
  
 
  

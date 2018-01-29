@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2cc24024-75ec-45ba-867c-efc8e7da7587
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_RegisterHcFilter
+ms.keywords : usbdlib/USBD_RegisterHcFilter, USBD_RegisterHcFilter routine [Buses], USBD_RegisterHcFilter, usbfunc_de494163-188c-4356-bd91-c6fa38693d55.xml, buses.usbd_registerhcfilter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Deprecated.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_RegisterHcFilter
-req.alt-loc : Usbd.lib,Usbd.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbd.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -83,12 +87,10 @@ USB bus filter drivers must call this routine after attaching their device objec
 
 ## See Also
 
-<dl>
-<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
 <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
-</dt>
-<dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e5d0d58c-f2dd-4c8a-9b15-967d0be89788
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MS_SMHBA_FC_Port, MS_SMHBA_FC_Port, *PMS_SMHBA_FC_Port
+ms.keywords : PMS_SMHBA_FC_Port, structs-Fibre_74bec0b8-c7eb-4866-8fef-ab9a7c3d5950.xml, storage.ms_smhba_fc_port, hbapiwmi/MS_SMHBA_FC_Port, PMS_SMHBA_FC_Port structure pointer [Storage Devices], hbapiwmi/PMS_SMHBA_FC_Port, MS_SMHBA_FC_Port, *PMS_SMHBA_FC_Port, MS_SMHBA_FC_Port structure [Storage Devices], _MS_SMHBA_FC_Port
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MS_SMHBA_FC_Port
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MS_SMHBA_FC_Port, *PMS_SMHBA_FC_Port
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMS_SMHBA_FC_Port, MS_SMHBA_FC_Port"
 ---
 
 # _MS_SMHBA_FC_Port structure
@@ -55,46 +59,46 @@ typedef struct _MS_SMHBA_FC_Port {
 
 ## Members
 
-        
-            `FabricName`
 
-            The name identifier for the fabric to which PortWWN is attached.
-        
-            `FcId`
+`FabricName`
 
-            The current fibre channel address of PortWWN. The high order byte of this member contains the first byte of the address. Successively lower order bytes of this member contain successively lower bytes of the address. The lowest order byte of this member must be zero.
-        
-            `NodeWWN`
+The name identifier for the fabric to which PortWWN is attached.
 
-            A 64-bit world-wide name (WWN) that uniquely identifies the fibre channel node that is associated with PortWWN. For more information about worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
-        
-            `NumberofDiscoveredPorts`
+`FcId`
 
-            The number of ports that are visible to PortWWN. For more information about the types of ports that this number takes into consideration, see the T11 committee's specification for <i>Fibre Channel HBA API (FC-HBA).</i>
-        
-            `NumberofPhys`
+The current fibre channel address of PortWWN. The high order byte of this member contains the first byte of the address. Successively lower order bytes of this member contain successively lower bytes of the address. The lowest order byte of this member must be zero.
 
-            The number of physical fibre channel ports.
-        
-            `PortActiveFc4Types`
+`NodeWWN`
 
-            The FC-4 types that are currently available on PortWWN. For more information about FC-4 types, see the ANSI standard for Fibre Channel Generic Services 4th Generation (FC-GS-4).
-        
-            `PortSupportedClassofService`
+A 64-bit world-wide name (WWN) that uniquely identifies the fibre channel node that is associated with PortWWN. For more information about worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
-            The class of service that is supported by PortWWN. For a list of the different classes of service and the values that must be assigned to this member for each class, see the ANSI standard for Fibre Channel Generic Services 4th Generation (FC-GS-4).
-        
-            `PortSupportedFc4Types`
+`NumberofDiscoveredPorts`
 
-            The FC-4 types that are supported by PortWWN. For more information about FC-4 types, see the ANSI standard for Fibre Channel Generic Services 4th Generation (FC-GS-4).
-        
-            `PortSymbolicName`
+The number of ports that are visible to PortWWN. For more information about the types of ports that this number takes into consideration, see the T11 committee's specification for <i>Fibre Channel HBA API (FC-HBA).</i>
 
-            An ASCII string that is less than or equal to 256 bytes in length and that indicates the symbolic name for the fibre channel node.
-        
-            `PortWWN`
+`NumberofPhys`
 
-            A 64-bit world-wide name (WWN) that uniquely identifies the fibre channel port. For more information about worldwide names, see the T11 committee's <i>Fibre Channel HBA API </i>specification.
+The number of physical fibre channel ports.
+
+`PortActiveFc4Types`
+
+The FC-4 types that are currently available on PortWWN. For more information about FC-4 types, see the ANSI standard for Fibre Channel Generic Services 4th Generation (FC-GS-4).
+
+`PortSupportedClassofService`
+
+The class of service that is supported by PortWWN. For a list of the different classes of service and the values that must be assigned to this member for each class, see the ANSI standard for Fibre Channel Generic Services 4th Generation (FC-GS-4).
+
+`PortSupportedFc4Types`
+
+The FC-4 types that are supported by PortWWN. For more information about FC-4 types, see the ANSI standard for Fibre Channel Generic Services 4th Generation (FC-GS-4).
+
+`PortSymbolicName`
+
+An ASCII string that is less than or equal to 256 bytes in length and that indicates the symbolic name for the fibre channel node.
+
+`PortWWN`
+
+A 64-bit world-wide name (WWN) that uniquely identifies the fibre channel port. For more information about worldwide names, see the T11 committee's <i>Fibre Channel HBA API </i>specification.
 
 
 ## Requirements

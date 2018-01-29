@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : da45810a-12f2-4242-8428-a1717ecf8af3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy
+ms.keywords : storage.msiscsi_querylbpolicy, iscsimgt/MSiSCSI_QueryLBPolicy, PMSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy, _MSiSCSI_QueryLBPolicy, iscsimgt/PMSiSCSI_QueryLBPolicy, PMSiSCSI_QueryLBPolicy structure pointer [Storage Devices], structs-iSCSI_d978106a-8fb4-4b42-8277-8ac767c54d06.xml, MSiSCSI_QueryLBPolicy structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSiSCSI_QueryLBPolicy
-req.alt-loc : iscsimgt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy"
 ---
 
 # _MSiSCSI_QueryLBPolicy structure
@@ -49,25 +53,25 @@ typedef struct _MSiSCSI_QueryLBPolicy {
 
 ## Members
 
-        
-            `LoadBalancePolicies`
 
-            This is an enumeration that contains information required to set the load balance policy. For more information about how to set the load balance policy, see <a href="..\iscsimgt\ns-iscsimgt-_iscsi_supported_lb_policies.md">ISCSI_Supported_LB_Policies</a>. There will be as many of these structures as the number of sessions available for this adapter.
-        
-            `Reserved`
+`LoadBalancePolicies`
 
-            Reserved for Microsoft use only.
-        
-            `SessionCount`
+This is an enumeration that contains information required to set the load balance policy. For more information about how to set the load balance policy, see <a href="..\iscsimgt\ns-iscsimgt-_iscsi_supported_lb_policies.md">ISCSI_Supported_LB_Policies</a>. There will be as many of these structures as the number of sessions available for this adapter.
 
-            This specifies the number of active sessions for this adapater ID.
-        
-            `UniqueAdapterId`
+`Reserved`
 
-            This is a unique connection identifier that the initiator uses to identify a connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter.
+Reserved for Microsoft use only.
 
-    ## Remarks
-        You must implement this class only if the adapter supports MCS. Otherwise, it is optional.
+`SessionCount`
+
+This specifies the number of active sessions for this adapater ID.
+
+`UniqueAdapterId`
+
+This is a unique connection identifier that the initiator uses to identify a connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter.
+
+## Remarks
+You must implement this class only if the adapter supports MCS. Otherwise, it is optional.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,19 +81,14 @@ typedef struct _MSiSCSI_QueryLBPolicy {
 | **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-</dt>
-<dt>
 <a href="..\iscsimgt\ns-iscsimgt-_iscsi_supported_lb_policies.md">ISCSI_Supported_LB_Policies</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-</dt>
-</dl>
+
  
 
  

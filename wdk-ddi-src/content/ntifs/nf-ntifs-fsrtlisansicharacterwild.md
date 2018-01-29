@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : badbc73a-44aa-4917-83a8-2ebd9f9ec576
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIsAnsiCharacterWild
+ms.keywords : FsRtlIsAnsiCharacterWild function [Installable File System Drivers], FsRtlIsAnsiCharacterWild, ntifs/FsRtlIsAnsiCharacterWild, fsrtlref_f5a31572-36b5-4bc3-8224-a4a7d8b74c65.xml, ifsk.fsrtlisansicharacterwild
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlIsAnsiCharacterWild
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ BOOLEAN FsRtlIsAnsiCharacterWild(
 
 `C`
 
-
+TBD
 
 
 ## Return Value
@@ -75,14 +79,10 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-fsrtlisunicodecharacterwild.md">FsRtlIsUnicodeCharacterWild</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 011BE902-5ED3-4AD8-B825-6850A72C1D5F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtQueryVirtualMemory
+ms.keywords : ZwQueryVirtualMemory routine [Kernel-Mode Driver Architecture], ntifs/NtQueryVirtualMemory, kernel.zwqueryvirtualmemory, NtQueryVirtualMemory, ZwQueryVirtualMemory, ntifs/ZwQueryVirtualMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwQueryVirtualMemory,NtQueryVirtualMemory
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -90,18 +94,56 @@ An optional pointer which, if specified, receives the
 ## Return Value
 
 Returns STATUS_SUCCESS if the call is successful. If the call fails, possible error codes include the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The specified base address is outside the range of accessible addresses.
+</dl>
+</td>
+<td width="60%">
+The specified base address is outside the range of accessible addresses.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller had insufficient access rights to perform the requested action.
+</dl>
+</td>
+<td width="60%">
+The caller had insufficient access rights to perform the requested action.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>The <i>MemoryInformation</i> buffer is larger than <i>MemoryInformationLength.</i>
+</dl>
+</td>
+<td width="60%">
+The <i>MemoryInformation</i> buffer is larger than <i>MemoryInformationLength.</i>
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
-</dl>A value other than <b>MemoryBasicInformation</b> was passed to the <i>MemoryInformationClass</i>  parameter.
+</dl>
+</td>
+<td width="60%">
+A value other than <b>MemoryBasicInformation</b> was passed to the <i>MemoryInformationClass</i>  parameter.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -137,14 +179,10 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_power_platform_information.md">POWER_PLATFORM_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-</dl>
+
  
 
  

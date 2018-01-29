@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14ba3307-753f-4dca-8d4d-c87b3fee00a5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSetVidPnSourceOwner2
+ms.keywords : display.d3dkmtsetvidpnsourceowner2, D3DKMTSetVidPnSourceOwner2 method [Display Devices], d3dkmthk/D3DKMTSetVidPnSourceOwner2, D3DKMTSetVidPnSourceOwner2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTSetVidPnSourceOwner2
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,7 +54,7 @@ NTSTATUS  D3DKMTSetVidPnSourceOwner2(
 
 `D3DKMT_SETVIDPNSOURCEOWNER2`
 
-
+TBD
 
 
 ## Return Value

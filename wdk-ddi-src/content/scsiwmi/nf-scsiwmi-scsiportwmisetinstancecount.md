@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0de2c766-cd3c-46ff-bb78-f1e4c37af2c0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortWmiSetInstanceCount
+ms.keywords : scsiprt_9451dca5-cc2f-43fa-91c6-3c22f6377a13.xml, storage.scsiportwmisetinstancecount, scsiwmi/ScsiPortWmiSetInstanceCount, ScsiPortWmiSetInstanceCount, ScsiPortWmiSetInstanceCount function [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortWmiSetInstanceCount
-req.alt-loc : scsiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,16 +26,23 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
 req.product : Windows 10 or later.
 ---
 
 
 # ScsiPortWmiSetInstanceCount function
-The <b>ScsiPortWmiSetInstanceCount</b> specifies the number of instances for which data buffers must be set aside within the <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a> structure in the request context.
+The <b>ScsiPortWmiSetInstanceCount</b> specifies the number of instances for which data buffers must be set aside within the <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a> structure in the request context. 
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -99,17 +104,12 @@ The memory allocated for the request context must remain valid until after the m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
-</dt>
-<dt>
+
 <a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a>
-</dt>
-<dt>
+
 <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a>
-</dt>
-</dl>
+
  
 
  

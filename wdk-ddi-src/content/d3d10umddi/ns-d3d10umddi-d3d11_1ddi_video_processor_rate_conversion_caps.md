@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1b66f203-1c74-4b5e-82ae-7dfdc88da2b4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS
+ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS structure [Display Devices], display.d3d11_1ddi_video_processor_rate_conversion_caps, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS
 ---
 
@@ -50,26 +54,26 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS {
 
 ## Members
 
-        
-            `ConversionCaps`
 
-            A bitwise <b>OR</b> of zero or more member values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_conversion_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS</a> structure.
-        
-            `CustomRateCount`
+`ConversionCaps`
 
-            The number of custom frame rates that the driver supports. To get the list of custom frame rates, call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcustomrate.md">GetVideoProcessorCustomRate</a> function.
-        
-            `FutureFrames`
+A bitwise <b>OR</b> of zero or more member values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_conversion_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS</a> structure.
 
-            The number of future reference frames required to perform the optimal video processing.
-        
-            `ITelecineCaps`
+`CustomRateCount`
 
-            A bitwise <b>OR</b> of zero or more constant values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_itelecine_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS</a> enumeration.
-        
-            `PastFrames`
+The number of custom frame rates that the driver supports. To get the list of custom frame rates, call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcustomrate.md">GetVideoProcessorCustomRate</a> function.
 
-            The number of past reference frames required to perform the optimal video processing.
+`FutureFrames`
+
+The number of future reference frames required to perform the optimal video processing.
+
+`ITelecineCaps`
+
+A bitwise <b>OR</b> of zero or more constant values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_itelecine_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS</a> enumeration.
+
+`PastFrames`
+
+The number of past reference frames required to perform the optimal video processing.
 
 
 ## Requirements
@@ -80,22 +84,16 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_conversion_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_itelecine_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_rate_conversion_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcustomrate.md">GetVideoProcessorCustomRate</a>
-</dt>
-</dl>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_itelecine_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS</a>
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_conversion_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS</a>
+
  
 
  

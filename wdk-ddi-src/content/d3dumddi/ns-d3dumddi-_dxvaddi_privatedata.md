@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 51e520db-fbec-4c6b-a23c-4d401de9ae63
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_PRIVATEDATA, DXVADDI_PRIVATEDATA
+ms.keywords : display.dxvaddi_privatedata, d3dumddi/DXVADDI_PRIVATEDATA, DXVADDI_PRIVATEDATA, DXVADDI_PRIVATEDATA structure [Display Devices], DXVA2_Structs_8d49dc5e-8eff-4b7a-aa44-20b4f784a70f.xml, _DXVADDI_PRIVATEDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_PRIVATEDATA
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_PRIVATEDATA
 ---
 
@@ -47,14 +51,14 @@ typedef struct _DXVADDI_PRIVATEDATA {
 
 ## Members
 
-        
-            `DataSize`
 
-            [in] The size, in bytes, of the buffer that is pointed to by <b>pData</b>.
-        
-            `pData`
+`DataSize`
 
-            [in] A pointer to a buffer that contains decoder data.
+[in] The size, in bytes, of the buffer that is pointed to by <b>pData</b>.
+
+`pData`
+
+[in] A pointer to a buffer that contains decoder data.
 
 
 ## Requirements
@@ -65,19 +69,14 @@ typedef struct _DXVADDI_PRIVATEDATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdecodedevice.md">D3DDDIARG_CREATEDECODEDEVICE</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdecodedevice.md">D3DDDIARG_CREATEDECODEDEVICE</a>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
-</dt>
-</dl>
+
  
 
  

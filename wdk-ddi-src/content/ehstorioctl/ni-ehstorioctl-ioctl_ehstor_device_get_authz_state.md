@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 20322156-316B-4FE5-A804-14506C8CEB49
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PDO_TYPE, PDO_TYPE
+ms.keywords : storage.ioctl_ehstor_device_get_authz_state, IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE control code [Storage Devices], IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE, ehstorioctl/IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
-req.alt-loc : EhStorIoctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PDO_TYPE
 ---
 
@@ -59,7 +63,6 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 One of the following values may be returned in the Status field:
 
 
@@ -71,8 +74,6 @@ STATUS_SUCCESS - The authorization state for the ACT was successfully set accord
 </dl>
 
 
-STATUS_SUCCESS - The authorization state for the ACT was successfully set according to the data contained in the input buffer.
-
 
 <dl>
 <dd>
@@ -80,9 +81,6 @@ STATUS_INVALID_BUFFER_SIZE - The input buffer length supplied is of incorrect si
 
 </dd>
 </dl>
-
-
-STATUS_INVALID_BUFFER_SIZE - The input buffer length supplied is of incorrect size.
 
 
 ## Requirements

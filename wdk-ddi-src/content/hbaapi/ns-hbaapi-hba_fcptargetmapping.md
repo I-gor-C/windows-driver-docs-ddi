@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 666f4aea-2fcb-46cf-8d25-d1322c0517c9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FCPTargetMapping, *PHBA_FCPTARGETMAPPING, HBA_FCPTARGETMAPPING
+ms.keywords : HBA_FCPTargetMapping, PHBA_FCPTARGETMAPPING, HBA_FCPTARGETMAPPING, *PHBA_FCPTARGETMAPPING, HBA_FCPTARGETMAPPING structure [Storage Devices], HBA_FCPTargetMapping structure [Storage Devices], PHBA_FCPTARGETMAPPING structure pointer [Storage Devices], structs-Fibre_ac1d3ea4-8e4f-4164-833f-dde1c0eaa30a.xml, hbaapi/PHBA_FCPTARGETMAPPING, hbaapi/HBA_FCPTargetMapping, storage.hba_fcptargetmapping
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_FCPTARGETMAPPING
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHBA_FCPTARGETMAPPING, HBA_FCPTARGETMAPPING"
 ---
 
@@ -47,14 +51,14 @@ typedef struct HBA_FCPTargetMapping {
 
 ## Members
 
-        
-            `entry`
 
-            Contains a variable length array of structures of type <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a> each of which defines a mapping between an operating system identifier for a logical unit and the corresponding fibre channel protocol (FCP) identifier for the logical unit.
-        
-            `NumberOfEntries`
+`entry`
 
-            Indicates the number of bindings.
+Contains a variable length array of structures of type <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a> each of which defines a mapping between an operating system identifier for a logical unit and the corresponding fibre channel protocol (FCP) identifier for the logical unit.
+
+`NumberOfEntries`
+
+Indicates the number of bindings.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct HBA_FCPTargetMapping {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a>
-</dt>
-</dl>
+
  
 
  

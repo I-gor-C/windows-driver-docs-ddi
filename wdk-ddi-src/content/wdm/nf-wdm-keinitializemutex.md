@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dca6c4a7-66e0-4bdd-9fdd-a32d49836980
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeMutex
+ms.keywords : KeInitializeMutex, wdm/KeInitializeMutex, kernel.keinitializemutex, KeInitializeMutex routine [Kernel-Mode Driver Architecture], k105_0e268ff3-6e9d-41ab-acfd-0bb71e973115.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInitializeMutex
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,26 +91,18 @@ For more information about mutex objects, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kereadstatemutex.md">KeReadStateMutex</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kereleasemutex.md">KeReleaseMutex</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kereadstatemutex.md">KeReadStateMutex</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
+
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+
+<a href="..\wdm\nf-wdm-kereleasemutex.md">KeReleaseMutex</a>
+
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+
  
 
  

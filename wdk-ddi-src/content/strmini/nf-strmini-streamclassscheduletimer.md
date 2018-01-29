@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 83271c19-911b-481a-bc25-c0b3816cf800
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassScheduleTimer
+ms.keywords : StreamClassScheduleTimer, strclass-routines_73f92fc4-e9bf-40af-8dff-9c2e740dba20.xml, strmini/StreamClassScheduleTimer, stream.streamclassscheduletimer, StreamClassScheduleTimer routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassScheduleTimer
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -68,7 +72,6 @@ Specifies the amount of time, in microseconds, before the timer expires.
 `TimerRoutine`
 
 Specifies the routine called when the timer expires. The routine's prototype must be of the form:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

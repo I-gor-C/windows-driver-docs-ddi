@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c3df50a0-2388-4760-b6e2-ef6af650d0e2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_VIDMMCAPS, DXGK_VIDMMCAPS
+ms.keywords : d3dkmddi/DXGK_VIDMMCAPS, DmStructs_0ec3e7bb-c14e-41b8-a148-7f77153972e8.xml, DXGK_VIDMMCAPS, display.dxgk_vidmmcaps, _DXGK_VIDMMCAPS, DXGK_VIDMMCAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_VIDMMCAPS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_VIDMMCAPS
 ---
 
@@ -73,10 +77,10 @@ typedef struct _DXGK_VIDMMCAPS {
 
 ## Members
 
-        
-            `PagingNode`
 
-            The zero-based index of the node to use for paging operations. If the driver does not set the <b>MultiEngineAware</b> bit-field member of the <b>SchedulingCaps</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a> structure, the DirectX graphics kernel subsystem ignores the setting of <b>PagingNode</b>.
+`PagingNode`
+
+The zero-based index of the node to use for paging operations. If the driver does not set the <b>MultiEngineAware</b> bit-field member of the <b>SchedulingCaps</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a> structure, the DirectX graphics kernel subsystem ignores the setting of <b>PagingNode</b>.
 
 
 ## Requirements
@@ -87,13 +91,10 @@ typedef struct _DXGK_VIDMMCAPS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 18ae8ec2-a9e9-40e2-8b11-93fd163a801d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS
+ms.keywords : d3dumddi/D3DDDICB_RENDERFLAGS, D3D_other_Structs_559cfa58-5c9b-470e-aa4b-6c145045ed82.xml, display.d3dddicb_renderflags, D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS structure [Display Devices], _D3DDDICB_RENDERFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_RENDERFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_RENDERFLAGS
 ---
 
@@ -65,16 +69,12 @@ typedef struct _D3DDDICB_RENDERFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_render.md">D3DDDICB_RENDER</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-</dt>
-</dl>
+
  
 
  

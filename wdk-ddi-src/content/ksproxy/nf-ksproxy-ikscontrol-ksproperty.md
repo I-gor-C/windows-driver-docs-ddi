@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cc43f704-e1f8-4d62-8cdf-11575ec0b473
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsControl, IKsControl::KsProperty, KsProperty
+ms.keywords : KsProperty method [Streaming Media Devices], IKsControl interface, IKsControl, IKsControl::KsProperty, KsProperty, IKsControl interface [Streaming Media Devices], KsProperty method, KsProperty method [Streaming Media Devices], ksproxy_463b7e97-4356-4d2e-b005-6f81219bda64.xml, ksproxy/IKsControl::KsProperty, stream.ikscontrol_ksproperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsControl.KsProperty
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -95,14 +99,10 @@ To determine the buffer size that is required for a specific property request, y
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a>
-</dt>
-</dl>
+
  
 
  

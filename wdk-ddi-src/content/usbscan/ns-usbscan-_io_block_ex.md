@@ -7,8 +7,8 @@ old-location : image\io_block_ex.htm
 old-project : image
 ms.assetid : 2474a49b-e275-4b4d-b762-c296b92bab4c
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _IO_BLOCK_EX, *PIO_BLOCK_EX, IO_BLOCK_EX
+ms.date : 1/18/2018
+ms.keywords : IO_BLOCK_EX structure [Imaging Devices], PIO_BLOCK_EX, stifnc_6b21356d-4f1a-4b8d-a54e-767f46e5b1b3.xml, *PIO_BLOCK_EX, PIO_BLOCK_EX structure pointer [Imaging Devices], _IO_BLOCK_EX, usbscan/PIO_BLOCK_EX, usbscan/IO_BLOCK_EX, IO_BLOCK_EX, image.io_block_ex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IO_BLOCK_EX
-req.alt-loc : usbscan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIO_BLOCK_EX, IO_BLOCK_EX"
 req.product : Windows 10 or later.
 ---
@@ -53,34 +57,34 @@ typedef struct _IO_BLOCK_EX {
 
 ## Members
 
-        
-            `bmRequestType`
 
-            Used as the <b>bmRequestType</b> field of a USB Device Request.
-        
-            `bRequest`
+`bmRequestType`
 
-            Used as the <b>bRequest</b> field of a USB Device Request.
-        
-            `fTransferDirectionIn`
+Used as the <b>bmRequestType</b> field of a USB Device Request.
 
-            <b>TRUE</b> for transfers from device to host; <b>FALSE</b> for transfers from host to device.
-        
-            `pbyData`
+`bRequest`
 
-            Pointer to a data buffer with a length of <b>uLength</b>.
-        
-            `uIndex`
+Used as the <b>bRequest</b> field of a USB Device Request.
 
-            Used as the <b>Index</b> field of a USB Device Request.
-        
-            `uLength`
+`fTransferDirectionIn`
 
-            Length of the buffer to transfer.
-        
-            `uOffset`
+<b>TRUE</b> for transfers from device to host; <b>FALSE</b> for transfers from host to device.
 
-            Used as the <b>Value</b> field of a USB Device Request.
+`pbyData`
+
+Pointer to a data buffer with a length of <b>uLength</b>.
+
+`uIndex`
+
+Used as the <b>Index</b> field of a USB Device Request.
+
+`uLength`
+
+Length of the buffer to transfer.
+
+`uOffset`
+
+Used as the <b>Value</b> field of a USB Device Request.
 
 
 ## Requirements

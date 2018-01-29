@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9987ed83-7aa1-4e07-a85b-26607000ecba
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2POINTS, *LPD3DHAL_DP2POINTS, D3DHAL_DP2POINTS
+ms.keywords : LPD3DHAL_DP2POINTS, d3dhal/LPD3DHAL_DP2POINTS, LPD3DHAL_DP2POINTS structure pointer [Display Devices], display.d3dhal_dp2points, _D3DHAL_DP2POINTS, d3dstrct_ab7299b5-74b9-43bb-8784-6c1249e23f2f.xml, D3DHAL_DP2POINTS, d3dhal/D3DHAL_DP2POINTS, *LPD3DHAL_DP2POINTS, D3DHAL_DP2POINTS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2POINTS
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPD3DHAL_DP2POINTS, D3DHAL_DP2POINTS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : D3DHAL_DP2POINTS, *LPD3DHAL_DP2POINTS
 ---
 
 # _D3DHAL_DP2POINTS structure
@@ -47,21 +51,22 @@ typedef struct _D3DHAL_DP2POINTS {
 
 ## Members
 
-        
-            `wCount`
 
-            Specifies the number of points to render.
-        
-            `wVStart`
+`wCount`
 
-            Specifies the index into the vertex buffer containing coordinate data for the initial point.
+Specifies the number of points to render.
 
-    ## Remarks
-        <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> should process <b>wPrimitiveCount</b> D3DHAL_DP2POINTS structures from the command buffer. The value of <b>wPrimitiveCount</b> is specified in the D3DHAL_DP2COMMAND structure.
+`wVStart`
+
+Specifies the index into the vertex buffer containing coordinate data for the initial point.
+
+## Remarks
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> should process <b>wPrimitiveCount</b> D3DHAL_DP2POINTS structures from the command buffer. The value of <b>wPrimitiveCount</b> is specified in the D3DHAL_DP2COMMAND structure.
 
 For each D3DHAL_DP2POINTS structure, <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> should sequentially process <b>wCount</b> vertices from the vertex buffer. Starting from the vertex buffer offset, the sequence of points rendered is <b>wVStart</b>, (<b>wVStart</b>+1), ..., (<b>wVStart</b>+(<b>wCount</b>-1)).
 
 The following figure shows a portion of a sample command buffer containing a D3DDP2OP_POINTS command and two D3DHAL_DP2POINTS structures. The driver should draw a total of seven points using the following vertices from the vertex buffer: v[2], v[3], v[4], v[7], v[8], v[9], v[10].
+<img alt="Figure showing a command buffer with a D3DDP2OP_POINTS command and two D3DHAL_DP2POINTS structures" src="images/dp2pnts.png"/>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -71,17 +76,14 @@ The following figure shows a portion of a sample command buffer containing a D3D
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_POINTS</dt>
-<dt>
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-</dt>
-</dl>
+
+D3DDP2OP_POINTS
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e3305a9c-8107-4631-974b-fe85779ec8dc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+ms.keywords : wdfinterrupt/WdfIrqPriorityUndefined, wdfinterrupt/WdfIrqPriorityHigh, WDF_INTERRUPT_PRIORITY enumeration, wdfinterrupt/WDF_INTERRUPT_PRIORITY, wdfinterrupt/PWDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY, wdfinterrupt/WdfIrqPriorityLow, PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY, _WDF_INTERRUPT_PRIORITY, wdf.wdf_interrupt_priority, WdfIrqPriorityUndefined, WdfIrqPriorityLow, WdfIrqPriorityHigh, WdfIrqPriorityNormal, DFInterruptObjectRef_924e187c-58f4-4616-a505-6d1c03779f02.xml, kmdf.wdf_interrupt_priority, PWDF_INTERRUPT_PRIORITY enumeration pointer, wdfinterrupt/WdfIrqPriorityNormal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_INTERRUPT_PRIORITY
-req.alt-loc : wdfinterrupt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -89,11 +93,8 @@ The <b>WDF_INTERRUPT_PRIORITY</b> enumeration type is used as input to the <a hr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a>
-</dt>
-</dl>
+
  
 
  

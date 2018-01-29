@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 035ce56c-b2a0-4ee0-83ce-4a45f05e5ff4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDIARG_SUBRESOURCE_UP, D3D10_DDIARG_SUBRESOURCE_UP
+ms.keywords : D3D10_DDIARG_SUBRESOURCE_UP, d3d10umddi/D3D10_DDIARG_SUBRESOURCE_UP, display.d3d10_ddiarg_subresource_up, D3D10_DDIARG_SUBRESOURCE_UP structure [Display Devices], UMDisplayDriver_Dx10param_Structs_4bc98700-ad44-4b40-9fc2-b40eeae79626.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10_DDIARG_SUBRESOURCE_UP
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10_DDIARG_SUBRESOURCE_UP
 ---
 
@@ -48,18 +52,18 @@ typedef struct D3D10_DDIARG_SUBRESOURCE_UP {
 
 ## Members
 
-        
-            `pSysMem`
 
-            [in] A pointer to a buffer that contains the contents of the subresource to copy from.
-        
-            `SysMemPitch`
+`pSysMem`
 
-            [in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next row.
-        
-            `SysMemSlicePitch`
+[in] A pointer to a buffer that contains the contents of the subresource to copy from.
 
-            [in] The pitch, in bytes, of the depth slice--that is, the distance, in bytes, to the start of the next depth, where a 3-D subresource is composed of width x rows x depth.
+`SysMemPitch`
+
+[in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next row.
+
+`SysMemSlicePitch`
+
+[in] The pitch, in bytes, of the depth slice--that is, the distance, in bytes, to the start of the next depth, where a 3-D subresource is composed of width x rows x depth.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct D3D10_DDIARG_SUBRESOURCE_UP {
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
-</dt>
-</dl>
+
  
 
  

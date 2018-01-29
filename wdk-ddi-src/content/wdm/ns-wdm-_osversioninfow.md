@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 04e50a2c-eb85-4fc8-9751-798397eddf95
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _OSVERSIONINFOW, *PRTL_OSVERSIONINFOW, *POSVERSIONINFOW, OSVERSIONINFOW, RTL_OSVERSIONINFOW, *LPOSVERSIONINFOW, OSVERSIONINFO
+ms.keywords : wdm/RTL_OSVERSIONINFOW, kstruct_d_61d86312-0550-4bce-81c8-bb29551cc586.xml, PRTL_OSVERSIONINFOW structure pointer [Kernel-Mode Driver Architecture], OSVERSIONINFOW, *POSVERSIONINFOW, RTL_OSVERSIONINFOW, _OSVERSIONINFOW, kernel.rtl_osversioninfow, *PRTL_OSVERSIONINFOW, RTL_OSVERSIONINFOW structure [Kernel-Mode Driver Architecture], wdm/PRTL_OSVERSIONINFOW, PRTL_OSVERSIONINFOW, OSVERSIONINFO, *LPOSVERSIONINFOW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RTL_OSVERSIONINFOW
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PRTL_OSVERSIONINFOW, *POSVERSIONINFOW, OSVERSIONINFOW, RTL_OSVERSIONINFOW, *LPOSVERSIONINFOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : OSVERSIONINFOW, *LPOSVERSIONINFOW, *PRTL_OSVERSIONINFOW, RTL_OSVERSIONINFOW, *POSVERSIONINFOW
 req.product : Windows 10 or later.
 ---
 
@@ -52,33 +56,33 @@ typedef struct _OSVERSIONINFOW {
 
 ## Members
 
-        
-            `dwBuildNumber`
 
-            The build number of the operating system.
-        
-            `dwMajorVersion`
+`dwBuildNumber`
 
-            The major version number of the operating system. For example, for Windows 2000, the major version number is five. For more information, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
-        
-            `dwMinorVersion`
+The build number of the operating system.
 
-            The minor version number of the operating system. For example, for Windows 2000 the minor version number is zero. For more information, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
-        
-            `dwOSVersionInfoSize`
+`dwMajorVersion`
 
-            The size in bytes of an <b>RTL_OSVERSIONINFOW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.
-        
-            `dwPlatformId`
+The major version number of the operating system. For example, for Windows 2000, the major version number is five. For more information, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
 
-            The operating system platform. For Microsoft Win32 on NT-based operating systems, <b>RtlGetVersion</b> returns the value VER_PLATFORM_WIN32_NT.
-        
-            `szCSDVersion`
+`dwMinorVersion`
 
-            The service-pack version string. This member contains a null-terminated string, such as "Service Pack 3", which indicates the latest service pack installed on the system. If no service pack is installed, <b>RtlGetVersion</b> might not initialize this string. Initialize <i>szCSDVersion</i> to zero (empty string) before the call to <b>RtlGetVersion</b>.
+The minor version number of the operating system. For example, for Windows 2000 the minor version number is zero. For more information, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
 
-    ## Remarks
-        For a list of the major and minor version numbers for the various versions of Windows, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
+`dwOSVersionInfoSize`
+
+The size in bytes of an <b>RTL_OSVERSIONINFOW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.
+
+`dwPlatformId`
+
+The operating system platform. For Microsoft Win32 on NT-based operating systems, <b>RtlGetVersion</b> returns the value VER_PLATFORM_WIN32_NT.
+
+`szCSDVersion`
+
+The service-pack version string. This member contains a null-terminated string, such as "Service Pack 3", which indicates the latest service pack installed on the system. If no service pack is installed, <b>RtlGetVersion</b> might not initialize this string. Initialize <i>szCSDVersion</i> to zero (empty string) before the call to <b>RtlGetVersion</b>.
+
+## Remarks
+For a list of the major and minor version numbers for the various versions of Windows, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,19 +92,14 @@ typedef struct _OSVERSIONINFOW {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
+
  
 
  

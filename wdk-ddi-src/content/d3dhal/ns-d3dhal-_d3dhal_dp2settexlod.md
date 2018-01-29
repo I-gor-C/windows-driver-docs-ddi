@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 89fc8319-64ec-4e9d-8863-e5140e9f7a44
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DHAL_DP2SETTEXLOD, D3DHAL_DP2SETTEXLOD, *LPD3DHAL_DP2SETTEXLOD
+ms.keywords : d3dstrct_8b7c348f-b058-4cd8-ac49-788765e4fa15.xml, D3DHAL_DP2SETTEXLOD, D3DHAL_DP2SETTEXLOD structure [Display Devices], *LPD3DHAL_DP2SETTEXLOD, display.d3dhal_dp2settexlod, _D3DHAL_DP2SETTEXLOD, d3dhal/D3DHAL_DP2SETTEXLOD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DHAL_DP2SETTEXLOD
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DHAL_DP2SETTEXLOD
 ---
 
@@ -47,17 +51,17 @@ typedef struct _D3DHAL_DP2SETTEXLOD {
 
 ## Members
 
-        
-            `dwDDSurface`
 
-            Specifies a handle to a surface chain.
-        
-            `dwLOD`
+`dwDDSurface`
 
-            Controls the maximum MIP level loaded into video memory. Therefore, if the most detailed MIP map in the chain has dimensions 256x256, setting the maximum level to 2 means that the largest MIP map ever present in video memory has dimensions 64x64.
+Specifies a handle to a surface chain.
 
-    ## Remarks
-        Used only for driver-managed textures. This structure contains a surface handle to the MIP map and the maximum level of detail to set.
+`dwLOD`
+
+Controls the maximum MIP level loaded into video memory. Therefore, if the most detailed MIP map in the chain has dimensions 256x256, setting the maximum level to 2 means that the largest MIP map ever present in video memory has dimensions 64x64.
+
+## Remarks
+Used only for driver-managed textures. This structure contains a surface handle to the MIP map and the maximum level of detail to set.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,14 +71,12 @@ typedef struct _D3DHAL_DP2SETTEXLOD {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>D3DDP2OP_SETTEXLOD</dt>
-<dt>
+D3DDP2OP_SETTEXLOD
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-</dt>
-</dl>
+
  
 
  

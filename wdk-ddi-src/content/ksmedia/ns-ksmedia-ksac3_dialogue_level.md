@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c29d5cbc-ddcc-42e9-ac2d-e442a489adfd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL, *PKSAC3_DIALOGUE_LEVEL
+ms.keywords : PKSAC3_DIALOGUE_LEVEL structure pointer [Audio Devices], *PKSAC3_DIALOGUE_LEVEL, ksmedia/PKSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL structure [Audio Devices], audio.ksac3_dialogue_level, PKSAC3_DIALOGUE_LEVEL, aud-prop_223d9fe5-3b60-46b4-a157-7ddab97a75f8.xml, KSAC3_DIALOGUE_LEVEL, ksmedia/KSAC3_DIALOGUE_LEVEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAC3_DIALOGUE_LEVEL
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSAC3_DIALOGUE_LEVEL, *PKSAC3_DIALOGUE_LEVEL
 ---
 
@@ -46,13 +50,13 @@ typedef struct {
 
 ## Members
 
-        
-            `DialogueLevel`
 
-            Specifies how far the average dialog level is below digital 100 percent. Valid values are 1 through 31. The values 1 through 31 are interpreted as -1 decibels through -31 decibels with respect to digital 100 percent.
+`DialogueLevel`
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537212">KSPROPERTY_AC3_BIT_STREAM_MODE</a> property.
+Specifies how far the average dialog level is below digital 100 percent. Valid values are 1 through 31. The values 1 through 31 are interpreted as -1 decibels through -31 decibels with respect to digital 100 percent.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537212">KSPROPERTY_AC3_BIT_STREAM_MODE</a> property.
 
 For more information about dialog levels, see the AC-3 specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8730">Dolby Laboratories</a> website. The specification is titled Digital Audio Compression Standard (AC-3).
 
@@ -64,13 +68,10 @@ For more information about dialog levels, see the AC-3 specification at the <a h
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537212">KSPROPERTY_AC3_BIT_STREAM_MODE</a>
-</dt>
-</dl>
+
  
 
  

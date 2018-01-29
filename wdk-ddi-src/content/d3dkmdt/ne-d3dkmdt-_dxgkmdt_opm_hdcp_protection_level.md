@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e0d38f3b-19da-4118-a1d9-7d5a00bcad26
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKMDT_OPM_HDCP_PROTECTION_LEVEL, DXGKMDT_OPM_HDCP_PROTECTION_LEVEL
+ms.keywords : DXGKMDT_OPM_HDCP_PROTECTION_LEVEL enumeration [Display Devices], display.dxgkmdt_opm_hdcp_protection_level, DXGKMDT_OPM_HDCP_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_HDCP_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_HDCP_PROTECTION_LEVEL, DXGKMDT_OPM_HDCP_OFF, d3dkmdt/DXGKMDT_OPM_HDCP_ON, _DXGKMDT_OPM_HDCP_PROTECTION_LEVEL, DmEnums_5df35ab3-a367-45c3-b03c-12b3d733f244.xml, DXGKMDT_OPM_HDCP_ON, d3dkmdt/DXGKMDT_OPM_HDCP_OFF, DXGKMDT_OPM_HDCP_PROTECTION_LEVEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKMDT_OPM_HDCP_PROTECTION_LEVEL
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKMDT_OPM_HDCP_PROTECTION_LEVEL
 ---
 
@@ -80,23 +84,16 @@ HDCP protects digital video signals from digital video output connectors. Curren
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
-</dt>
-<dt>
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-</dt>
-<dt>
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_protection_level_parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_standard_information.md">DXGKMDT_OPM_STANDARD_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_protection_level_parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
+
  
 
  

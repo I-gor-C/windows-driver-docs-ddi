@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 394343A5-10E4-4F64-AD3C-1D2114422B39
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS
+ms.keywords : buses.evt_udecx_wdf_device_reset, EvtUdecxWdfDeviceReset callback function [Buses], EvtUdecxWdfDeviceReset, EVT_UDECX_WDF_DEVICE_RESET, EVT_UDECX_WDF_DEVICE_RESET, udecxwdfdevice/EvtUdecxWdfDeviceReset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : EvtUdecxWdfDeviceReset
-req.alt-loc : UdecxWdfDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS
 req.product : Windows 10 or later.
 ---
@@ -81,14 +85,10 @@ If the client specified <b>UdeWdfDeviceResetActionResetEachUsbDevice</b> in <a h
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

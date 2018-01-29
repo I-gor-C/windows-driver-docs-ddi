@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac3c4609-094d-4003-a5ee-b609f7ec13e1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETVERTEXSHADERCONST, D3DDDIARG_SETVERTEXSHADERCONST, D3DDDIARG_SETVERTEXSHADERCONSTI, D3DDDIARG_SETVERTEXSHADERCONSTB
+ms.keywords : D3DDDIARG_SETVERTEXSHADERCONSTI, display.d3dddiarg_setvertexshaderconst, D3DDDIARG_SETVERTEXSHADERCONST, D3DDDIARG_SETVERTEXSHADERCONSTB, D3DDDIARG_SETVERTEXSHADERCONST structure [Display Devices], d3dumddi/D3DDDIARG_SETVERTEXSHADERCONST, UMDisplayDriver_param_Structs_1d6878e5-ecbe-493c-bcbc-58eabc4b0972.xml, _D3DDDIARG_SETVERTEXSHADERCONST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETVERTEXSHADERCONST
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETVERTEXSHADERCONST
 ---
 
@@ -47,25 +51,42 @@ typedef struct _D3DDDIARG_SETVERTEXSHADERCONST {
 
 ## Members
 
-        
-            `Count`
 
-            [in] The number of constant registers to set and, therefore, the number of values in the array that is passed in the <i>pRegisters</i> parameter in the call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConst</a>, <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConstI</a>, or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconstb.md">SetVertexShaderConstB</a> function.
-        
-            `Register`
+`Count`
 
-            [in] The index of the first vertex shader constant register whose value is set.
+[in] The number of constant registers to set and, therefore, the number of values in the array that is passed in the <i>pRegisters</i> parameter in the call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConst</a>, <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConstI</a>, or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconstb.md">SetVertexShaderConstB</a> function.
 
-    ## Remarks
-        The <b>Count</b> member specifies the following values, depending on the structure type that is used in the call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConst</a>, <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConstI</a>, or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconstb.md">SetVertexShaderConstB</a> function: 
+`Register`
 
+[in] The index of the first vertex shader constant register whose value is set.
+
+## Remarks
+The <b>Count</b> member specifies the following values, depending on the structure type that is used in the call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConst</a>, <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConstI</a>, or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconstb.md">SetVertexShaderConstB</a> function: 
+<ul>
+<li>
 Four-element, single-precision float vectors for the D3DDDIARG_SETVERTEXSHADERCONST structure in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConst</a> call.
 
+</li>
+<li>
 Four-integer vectors for the D3DDDIARG_SETVERTEXSHADERCONSTI structure in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConstI</a> call.
 
+</li>
+<li>
 Boolean values for the D3DDDIARG_SETVERTEXSHADERCONSTB structure in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconstb.md">SetVertexShaderConstB</a> call.
 
-The preceding structures are identical, as the following definitions show:
+</li>
+</ul>The preceding structures are identical, as the following definitions show:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef D3DDDIARG_SETVERTEXSHADERCONST D3DDDIARG_SETVERTEXSHADERCONSTI;
+typedef D3DDDIARG_SETVERTEXSHADERCONST D3DDDIARG_SETVERTEXSHADERCONSTB;</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,19 +96,14 @@ The preceding structures are identical, as the following definitions show:
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConst</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconstb.md">SetVertexShaderConstB</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConstI</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconst.md">SetVertexShaderConst</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvertexshaderconstb.md">SetVertexShaderConstB</a>
+
  
 
  

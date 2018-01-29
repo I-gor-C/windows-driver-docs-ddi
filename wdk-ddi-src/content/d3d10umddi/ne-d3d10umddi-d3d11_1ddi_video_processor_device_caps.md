@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ce2bdf90-45c1-4a4b-bc6e-276536460324
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS
+ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_RGB_RANGE_CONVERSION, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_LINEAR_SPACE, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_RGB_RANGE_CONVERSION, display.d3d11_1ddi_video_processor_device_caps, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_LINEAR_SPACE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS
 ---
 

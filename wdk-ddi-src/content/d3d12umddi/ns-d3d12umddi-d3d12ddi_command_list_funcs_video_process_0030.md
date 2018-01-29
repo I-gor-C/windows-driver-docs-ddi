@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b45b79bd-90d6-4bc5-b56a-99d2b71e216a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030
+ms.keywords : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030 structure [Display Devices], d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030, display.d3d12ddi-command-list-funcs-video-process-0030
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030
 ---
 
@@ -56,50 +60,50 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030 {
 
 ## Members
 
-        
-            `pfnBeginQuery`
 
-            Begin query.
-        
-            `pfnCloseCommandList`
+`pfnBeginQuery`
 
-            Close command list.
-        
-            `pfnDiscardResource`
+Begin query.
 
-            Discard resource.
-        
-            `pfnEndQuery`
+`pfnCloseCommandList`
 
-            End query.
-        
-            `pfnProcessFrame`
+Close command list.
 
-            Process frame.
-        
-            `pfnResetCommandList`
+`pfnDiscardResource`
 
-            Reset command list.
-        
-            `pfnResolveQueryData`
+Discard resource.
 
-            Resolve query data.
-        
-            `pfnResourceBarrier`
+`pfnEndQuery`
 
-            Resource barrier.
-        
-            `pfnSetMarker`
+End query.
 
-            Set marker.
-        
-            `pfnSetPredication`
+`pfnProcessFrame`
 
-            Set predication.
-        
-            `pfnSetProtectedResourceSession`
+Process frame.
 
-            Set protected resource session.
+`pfnResetCommandList`
+
+Reset command list.
+
+`pfnResolveQueryData`
+
+Resolve query data.
+
+`pfnResourceBarrier`
+
+Resource barrier.
+
+`pfnSetMarker`
+
+Set marker.
+
+`pfnSetPredication`
+
+Set predication.
+
+`pfnSetProtectedResourceSession`
+
+Set protected resource session.
 
 
 ## Requirements

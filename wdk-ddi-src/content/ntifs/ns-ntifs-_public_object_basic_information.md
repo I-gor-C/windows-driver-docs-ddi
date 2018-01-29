@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2190f88e-6905-4e58-9523-2b6d4864c776
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _PUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION, PUBLIC_OBJECT_BASIC_INFORMATION
+ms.keywords : PPUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION, objectstructures_f0dec604-d95c-47b4-aedc-168a3ae1dedc.xml, ntifs/PUBLIC_OBJECT_BASIC_INFORMATION, _PUBLIC_OBJECT_BASIC_INFORMATION, ifsk.public_object_basic_information, PUBLIC_OBJECT_BASIC_INFORMATION, PPUBLIC_OBJECT_BASIC_INFORMATION structure pointer [Installable File System Drivers], PUBLIC_OBJECT_BASIC_INFORMATION structure [Installable File System Drivers], ntifs/PPUBLIC_OBJECT_BASIC_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure is available starting with Microsoft 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PUBLIC_OBJECT_BASIC_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPUBLIC_OBJECT_BASIC_INFORMATION, PUBLIC_OBJECT_BASIC_INFORMATION"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _PUBLIC_OBJECT_BASIC_INFORMATION {
 
 ## Members
 
-        
-            `Attributes`
 
-            Specifies the attributes of the object.
-        
-            `GrantedAccess`
+`Attributes`
 
-            Specifies a mask that represents the granted access to the object.
-        
-            `HandleCount`
+Specifies the attributes of the object.
 
-            Specifies the number of handles to the object.
-        
-            `PointerCount`
+`GrantedAccess`
 
-            Specifies the number of pointers at an object.
-        
-            `Reserved`
+Specifies a mask that represents the granted access to the object.
 
-            Reserved for system use.
+`HandleCount`
+
+Specifies the number of handles to the object.
+
+`PointerCount`
+
+Specifies the number of pointers at an object.
+
+`Reserved`
+
+Reserved for system use.
 
 
 ## Requirements

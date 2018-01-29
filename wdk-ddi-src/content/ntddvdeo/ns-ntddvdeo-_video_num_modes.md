@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d4ca1276-c0f6-46c6-bf86-3cd2a0c5f194
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_NUM_MODES, VIDEO_NUM_MODES, *PVIDEO_NUM_MODES
+ms.keywords : ntddvdeo/VIDEO_NUM_MODES, Video_Structs_9e999162-309a-4902-8854-172c672bf1ea.xml, PVIDEO_NUM_MODES structure pointer [Display Devices], PVIDEO_NUM_MODES, _VIDEO_NUM_MODES, display.video_num_modes, ntddvdeo/PVIDEO_NUM_MODES, VIDEO_NUM_MODES, *PVIDEO_NUM_MODES, VIDEO_NUM_MODES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_NUM_MODES
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : VIDEO_NUM_MODES, *PVIDEO_NUM_MODES
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVIDEO_NUM_MODES, VIDEO_NUM_MODES"
 ---
 
 # _VIDEO_NUM_MODES structure
@@ -47,17 +51,17 @@ typedef struct _VIDEO_NUM_MODES {
 
 ## Members
 
-        
-            `ModeInformationLength`
 
-            Is the length, in bytes, of the <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a> structure that describes each of the modes supported by the device.
-        
-            `NumModes`
+`ModeInformationLength`
 
-            Specifies the number of modes supported by the device.
+Is the length, in bytes, of the <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a> structure that describes each of the modes supported by the device.
 
-    ## Remarks
-        The miniport driver returns a VIDEO_NUM_MODES structure in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_num_avail_modes.md">IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES</a> request.
+`NumModes`
+
+Specifies the number of modes supported by the device.
+
+## Remarks
+The miniport driver returns a VIDEO_NUM_MODES structure in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_num_avail_modes.md">IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _VIDEO_NUM_MODES {
 | **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_num_avail_modes.md">IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES</a>
-</dt>
-</dl>
+
  
 
  

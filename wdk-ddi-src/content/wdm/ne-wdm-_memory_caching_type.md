@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 14cde545-e9bb-4b96-ba10-a63595e8a107
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _MEMORY_CACHING_TYPE, MEMORY_CACHING_TYPE
+ms.keywords : wdm/MmNonCached, sysenum_8e18fde8-a812-4d6a-a203-1c87d4d825cf.xml, wdm/MmNonCachedUnordered, wdm/MmHardwareCoherentCached, MEMORY_CACHING_TYPE, MmNonCachedUnordered, wdm/MmWriteCombined, wdm/MmMaximumCacheType, wdm/MEMORY_CACHING_TYPE, MEMORY_CACHING_TYPE enumeration [Kernel-Mode Driver Architecture], MmCached, MmWriteCombined, MmHardwareCoherentCached, kernel.memory_caching_type, MmUSWCCached, MmNonCached, MmMaximumCacheType, _MEMORY_CACHING_TYPE, wdm/MmCached, wdm/MmUSWCCached
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MEMORY_CACHING_TYPE
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : MEMORY_CACHING_TYPE
 req.product : Windows 10 or later.
 ---
@@ -81,6 +85,11 @@ typedef enum _MEMORY_CACHING_TYPE {
 </tr>
 
 <tr>
+<td>MmNotMapped</td>
+<td></td>
+</tr>
+
+<tr>
 <td>MmUSWCCached</td>
 <td>Reserved for system use.</td>
 </tr>
@@ -105,23 +114,16 @@ Processor translation buffers cache virtual to physical address translations. Th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmfreecontiguousmemoryspecifycache.md">MmFreeContiguousMemorySpecifyCache</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
+
+<a href="..\wdm\nf-wdm-mmfreecontiguousmemoryspecifycache.md">MmFreeContiguousMemorySpecifyCache</a>
+
+<a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>
+
 <a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
-</dt>
-</dl>
+
  
 
  

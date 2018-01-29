@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d797b377-6c27-41f9-932d-264d0e8b5dd0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_AM_SimpleRateChange, *PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange
+ms.keywords : KS_AM_SimpleRateChange structure [Streaming Media Devices], stream.ks_am_simpleratechange, ksmedia/KS_AM_SimpleRateChange, *PKS_AM_SimpleRateChange, ksmedia/PKS_AM_SimpleRateChange, PKS_AM_SimpleRateChange, dvdref_8c318967-5f7d-4597-ab40-924e95b86dd7.xml, KS_AM_SimpleRateChange, PKS_AM_SimpleRateChange structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_AM_SimpleRateChange
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange"
 ---
 
@@ -47,14 +51,14 @@ typedef struct {
 
 ## Members
 
-        
-            `Rate`
 
-            Specifies the new rate. This value is multiplied by 10000 (decimal).
-        
-            `StartTime`
+`Rate`
 
-            Indicates the stream time at which to start this rate.
+Specifies the new rate. This value is multiplied by 10000 (decimal).
+
+`StartTime`
+
+Indicates the stream time at which to start this rate.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567288">KS_AM_RATE_SimpleRateChange</a>
-</dt>
-</dl>
+
  
 
  

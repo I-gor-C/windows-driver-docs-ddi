@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 82f0cb12-fc0e-4627-af50-df4697f6764f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
+ms.keywords : DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, DXVA2_Structs_3b88b3f0-9b31-46c6-8725-514f227b12a1.xml, display.dxvahdddi_stream_state_destination_rect_data, d3dumddi/DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA is supp
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
 ---
 
@@ -47,17 +51,17 @@ typedef struct _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA {
 
 ## Members
 
-        
-            `DestinationRect`
 
-            [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the coordinates of the destination rectangle relevant to the target rectangle. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is empty (0,0,0,0).
-        
-            `Enable`
+`DestinationRect`
 
-            [in] A Boolean value that specifies whether the driver should use the <b>DestinationRect</b> member or the entire target rectangle as the destination. The default value is <b>FALSE</b>, which indicates that the entire target rectangle is the destination.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the coordinates of the destination rectangle relevant to the target rectangle. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is empty (0,0,0,0).
 
-    ## Remarks
-        If the <b>Enable</b> member is set to <b>TRUE</b> and the destination rectangle that the <b>DestinationRect</b> member specifies is not within the target rectangle, the intersection of the destination rectangle and the target rectangle is used as the destination rectangle. 
+`Enable`
+
+[in] A Boolean value that specifies whether the driver should use the <b>DestinationRect</b> member or the entire target rectangle as the destination. The default value is <b>FALSE</b>, which indicates that the entire target rectangle is the destination.
+
+## Remarks
+If the <b>Enable</b> member is set to <b>TRUE</b> and the destination rectangle that the <b>DestinationRect</b> member specifies is not within the target rectangle, the intersection of the destination rectangle and the target rectangle is used as the destination rectangle. 
 
 The application can use the destination rectangle to specify the active rectangle (dirty region) of the destination surface.
 
@@ -69,13 +73,10 @@ The application can use the destination rectangle to specify the active rectangl
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
  
 
  

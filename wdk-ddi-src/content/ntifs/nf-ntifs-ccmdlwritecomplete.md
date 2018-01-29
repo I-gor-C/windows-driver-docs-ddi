@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : dcd13afa-1467-407c-b843-ff88bd6526c3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcMdlWriteComplete
+ms.keywords : CcMdlWriteComplete, ifsk.ccmdlwritecomplete, ccref_fe5a4900-c0bc-4100-b3e9-e2b7d780a9d2.xml, CcMdlWriteComplete routine [Installable File System Drivers], ntifs/CcMdlWriteComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcMdlWriteComplete
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -93,14 +97,10 @@ Each call to <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite<
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a>
+
  
 
  

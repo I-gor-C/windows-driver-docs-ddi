@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8644b5eb-e038-4cdb-b461-d643ff929736
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsRemoveItemFromObjectBag
+ms.keywords : avfunc_dbc6f0e3-7e24-4147-99d2-28e64a6a1ff9.xml, KsRemoveItemFromObjectBag function [Streaming Media Devices], stream.ksremoveitemfromobjectbag, ks/KsRemoveItemFromObjectBag, KsRemoveItemFromObjectBag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsRemoveItemFromObjectBag
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -95,26 +99,18 @@ Note that the mutex associated with the bag must be held. For more  information,
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+
+<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
+
 <a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
-</dt>
-<dt>
+
 <a href="..\ks\nf-ks-ksmergeautomationtables.md">KsMergeAutomationTables</a>
-</dt>
-</dl>
+
  
 
  

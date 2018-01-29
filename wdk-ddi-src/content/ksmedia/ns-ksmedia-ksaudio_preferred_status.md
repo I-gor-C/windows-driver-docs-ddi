@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3191aeff-7324-4c2b-9b64-ddc50a561df5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAUDIO_PREFERRED_STATUS, KSAUDIO_PREFERRED_STATUS, *PKSAUDIO_PREFERRED_STATUS
+ms.keywords : "*PKSAUDIO_PREFERRED_STATUS, KSAUDIO_PREFERRED_STATUS, PKSAUDIO_PREFERRED_STATUS, ksmedia/KSAUDIO_PREFERRED_STATUS, PKSAUDIO_PREFERRED_STATUS structure pointer [Audio Devices], aud-prop_a1287dc0-98ad-4071-be11-41e51b6b4846.xml, audio.ksaudio_preferred_status, KSAUDIO_PREFERRED_STATUS structure [Audio Devices], ksmedia/PKSAUDIO_PREFERRED_STATUS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSAUDIO_PREFERRED_STATUS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSAUDIO_PREFERRED_STATUS, *PKSAUDIO_PREFERRED_STATUS
 ---
 
@@ -49,11 +53,10 @@ typedef struct {
 
 ## Members
 
-        
-            `DeviceType`
 
-            Specifies the type of preferred device. This parameter is set to one of the following constants:
+`DeviceType`
 
+Specifies the type of preferred device. This parameter is set to one of the following constants:
 <table>
 <tr>
 <th>Value</th>
@@ -109,25 +112,24 @@ Preferred mixer topology device.
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The driver uses this member to determine what aspect or aspects of the audio adapter are currently selected as preferred. A driver might use this information to decide how to configure itself or decide what system resources to request.
-        
-            `Enable`
 
-            Specifies whether the target device is the new preferred device. If <b>TRUE</b>, the target device is selected as the new preferred device. If <b>FALSE</b>, the target device was previously the preferred device, but is now deselected.
-        
-            `Flags`
+`Enable`
 
-            No flags are currently defined. Set to zero.
-        
-            `Reserved`
+Specifies whether the target device is the new preferred device. If <b>TRUE</b>, the target device is selected as the new preferred device. If <b>FALSE</b>, the target device was previously the preferred device, but is now deselected.
 
-            Reserved for future use. Set to zero.
+`Flags`
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537299">KSPROPERTY_AUDIO_PREFERRED_STATUS</a> property.
+No flags are currently defined. Set to zero.
+
+`Reserved`
+
+Reserved for future use. Set to zero.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537299">KSPROPERTY_AUDIO_PREFERRED_STATUS</a> property.
 
 For information about the preferred device, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537899">SetupPreferredAudioDevices</a>.
 
@@ -139,16 +141,12 @@ For information about the preferred device, see <a href="https://msdn.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537299">KSPROPERTY_AUDIO_PREFERRED_STATUS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537899">SetupPreferredAudioDevices</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537299">KSPROPERTY_AUDIO_PREFERRED_STATUS</a>
+
  
 
  

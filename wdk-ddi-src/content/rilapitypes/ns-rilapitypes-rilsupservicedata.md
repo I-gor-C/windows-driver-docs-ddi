@@ -7,8 +7,8 @@ old-location : netvista\rilsupservicedata_2.htm
 old-project : netvista
 ms.assetid : e9faa47e-56f7-464b-ad6a-fbb543ca9d1d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA, RILSUPSERVICEDATA
+ms.date : 1/18/2018
+ms.keywords : RILSUPSERVICEDATA, netvista.rilsupservicedata_2, rilapitypes/RILSUPSERVICEDATA, RILSUPSERVICEDATA structure [Network Drivers Starting with Windows Vista], *LPRILSUPSERVICEDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSUPSERVICEDATA
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILSUPSERVICEDATA, RILSUPSERVICEDATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA
 req.product : Windows 10 or later.
 ---
 
@@ -55,42 +59,42 @@ typedef struct _RILSUPSERVICEDATA {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwDataSize`
+`cbSize`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwNetworkCCErrorCause`
 
-            
-        
-            `dwNetworkSSErrorCause`
+`dwDataSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwStatus`
 
-            
-        
-            `dwVendorErrorCause`
+`dwExecutor`
 
-            
-        
-            `wszData`
 
-            
+
+`dwNetworkCCErrorCause`
+
+
+
+`dwNetworkSSErrorCause`
+
+
+
+`dwParams`
+
+
+
+`dwStatus`
+
+
+
+`dwVendorErrorCause`
+
+
+
+`wszData`
+
+
 
 
 ## Requirements

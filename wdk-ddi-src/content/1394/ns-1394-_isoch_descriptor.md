@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4f508af6-942b-4d48-8874-4b6d9918f01f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR
+ms.keywords : 1394stct_ceca99ed-2075-42d4-9be7-31e659e2b654.xml, 1394/ISOCH_DESCRIPTOR, IEEE.isoch_descriptor, 1394/PISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR structure [Buses], _ISOCH_DESCRIPTOR, PISOCH_DESCRIPTOR, PISOCH_DESCRIPTOR structure pointer [Buses], ISOCH_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ISOCH_DESCRIPTOR
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR"
 ---
 
@@ -59,15 +63,14 @@ typedef struct _ISOCH_DESCRIPTOR {
 
 ## Members
 
-        
-            `BusReserved`
 
-            Reserved.
-        
-            `Callback`
+`BusReserved`
 
-            Pointer to a callback routine. If non-NULL, the bus driver calls this routine to indicate that the associated attached buffers are ready to be detached. The callback executes at IRQL DISPATCH_LEVEL. The callback is of the following type:
+Reserved.
 
+`Callback`
+
+Pointer to a callback routine. If non-NULL, the bus driver calls this routine to indicate that the associated attached buffers are ready to be detached. The callback executes at IRQL DISPATCH_LEVEL. The callback is of the following type:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -78,31 +81,30 @@ typedef struct _ISOCH_DESCRIPTOR {
 </td>
 </tr>
 </table></span></div>
-        
-            `Context1`
 
-            Specifies the first parameter when the bus driver calls the routine passed in <b>Callback</b>.
-        
-            `Context2`
+`Context1`
 
-            Specifies the second parameter when the bus driver calls the routine passed in <b>Callback</b>.
-        
-            `CycleTime`
+Specifies the first parameter when the bus driver calls the routine passed in <b>Callback</b>.
 
-            If the DESCRIPTOR_SYNCH_ON_TIME flag is set, this member specifies the isochronous cycle time to synchronize on. (The timing resolution is per isochronous cycle. The <b>CycleOffset</b> member of the cycle time is not used.) If the DESCRIPTOR_TIME_STAMP_ON_COMPLETION flag is set, the bus driver fills this member with the isochronous cycle time on completion of the operation that used this buffer.
-        
-            `DeviceReserved`
+`Context2`
 
-            Reserved.
-        
-            `fulFlags`
+Specifies the second parameter when the bus driver calls the routine passed in <b>Callback</b>.
 
-            Specifies various flags for this isochronous descriptor. Each attached buffer on the channel has an associated isoch descriptor. 
+`CycleTime`
+
+If the DESCRIPTOR_SYNCH_ON_TIME flag is set, this member specifies the isochronous cycle time to synchronize on. (The timing resolution is per isochronous cycle. The <b>CycleOffset</b> member of the cycle time is not used.) If the DESCRIPTOR_TIME_STAMP_ON_COMPLETION flag is set, the bus driver fills this member with the isochronous cycle time on completion of the operation that used this buffer.
+
+`DeviceReserved`
+
+Reserved.
+
+`fulFlags`
+
+Specifies various flags for this isochronous descriptor. Each attached buffer on the channel has an associated isoch descriptor. 
 
 Before using a particular buffer for an I/O operation, the host controller examines the flags in the buffer's isoch descriptor for instructions on how to handle the data. In some cases, the host controller will continue to observe the behavior specified by these flags during I/O operations with subsequent buffers. For instance, if the isoch descriptor flags indicate that the host controller should filter out packets that do not have a certain Sy value recorded in <b>ulSynch</b>, the host controller will continue this filtering operation with the data in the buffers that follow, even if the isoch descriptors associated with these buffers do not have the same flags set. 
 
 The following table describes the flags that can be assigned to this member.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -208,49 +210,65 @@ The host controller treats the data in this buffer as a sequence of headers. The
 </td>
 </tr>
 </table>
-        
-            `Mdl`
 
-            Specifies the MDL representing a buffer in which the data is, or will be, contained.
-        
-            `nMaxBytesPerFrame`
+`Mdl`
 
-            Specifies the maximum bytes contained in each isochronous frame. On writes, the data in the buffer is split into isochronous packets of this size.
-        
-            `PortReserved`
+Specifies the MDL representing a buffer in which the data is, or will be, contained.
 
-            Reserved.
-        
-            `status`
+`nMaxBytesPerFrame`
 
-            For <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> requests, this member specifies the status of the attach operation on this buffer.   If an error occurs during the processing of the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request, the bus driver fills in the <b>status</b> member with an appropriate error code.
+Specifies the maximum bytes contained in each isochronous frame. On writes, the data in the buffer is split into isochronous packets of this size.
 
+`PortReserved`
 
-<div class="alert"><b>Note</b>  The <b>status</b> member must be initialized to STATUS_SUCCESS before the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request is made.</div>
-<div> </div>
-        
-            `ulLength`
+Reserved.
 
-            Specifies the length of the <b>Mdl</b>.
-        
-            `ulSynch`
+`status`
 
-            For IsochTalk requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the Sy field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the value the host controller will match against the Sy field in isochronous packet headers.
-        
-            `ulTag`
+For <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> requests, this member specifies the status of the attach operation on this buffer.   If an error occurs during the processing of the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request, the bus driver fills in the <b>status</b> member with an appropriate error code.
 
-            For IsochTalk requests, this member specifies the Tag field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_TAG flag is set, this member specifies the value the host controller will match against the Tag field in isochronous packet headers.
+<div class="alert"><b>Note</b>  The <b>status</b> member must be initialized to STATUS_SUCCESS before the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request is made.</div><div> </div>
 
-    ## Remarks
-        Not all DESCRIPTOR_XXX flags are supported on all hardware. The device driver can use the REQUEST_GET_LOCAL_HOST_INFO request, with <b>nLevel</b> = GET_HOST_CAPABILITIES, to determine which DESCRIPTOR_XXX flags are supported. The bus driver returns a pointer to a GET_LOCAL_HOST_INFO2 structure, whose <b>HostCapabilities</b> member contains flags that determine which flags the host controller supports. The following table lists which DESCRIPTOR_XXX flags require hardware support, and the corresponding <b>HostCapabilities</b> flag the driver should check.
+`ulLength`
 
+Specifies the length of the <b>Mdl</b>.
+
+`ulSynch`
+
+For IsochTalk requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the Sy field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the value the host controller will match against the Sy field in isochronous packet headers.
+
+`ulTag`
+
+For IsochTalk requests, this member specifies the Tag field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_TAG flag is set, this member specifies the value the host controller will match against the Tag field in isochronous packet headers.
+
+## Remarks
+Not all DESCRIPTOR_XXX flags are supported on all hardware. The device driver can use the REQUEST_GET_LOCAL_HOST_INFO request, with <b>nLevel</b> = GET_HOST_CAPABILITIES, to determine which DESCRIPTOR_XXX flags are supported. The bus driver returns a pointer to a GET_LOCAL_HOST_INFO2 structure, whose <b>HostCapabilities</b> member contains flags that determine which flags the host controller supports. The following table lists which DESCRIPTOR_XXX flags require hardware support, and the corresponding <b>HostCapabilities</b> flag the driver should check.
+<table>
+<tr>
+<th>DESCRIPTOR_XXX flags</th>
+<th>HostCapabilities</th>
+</tr>
+<tr>
+<td>
 DESCRIPTOR_SYNCH_ON_TIME
 
+</td>
+<td>
 HOST_INFO_SUPPORTS_START_ON_CYCLE
 
+</td>
+</tr>
+<tr>
+<td>
 DESCRIPTOR_HEADER_SCATTER_GATHER
 
+</td>
+<td>
 HOST_INFO_SUPPORTS_ISO_HDR_INSERTION
+
+</td>
+</tr>
+</table> 
 
 If the driver sets the DESCRIPTOR_HEADER_SCATTER_GATHER flag, the host controller combines the data of the buffer specified in <b>Mdl</b> with the data of the next buffer attached. (Subsequent buffers are unaffected.) Each frame of the buffer is prepended to a frame of the next buffer (in the order the data in the buffer is split into frames), and sent as the data of the next isochronous packet. The number of frames of each buffer must match, or the bus driver returns STATUS_INVALID_PARAMETER for the next REQUEST_ISOCH_ATTACH_BUFFER request.
 
@@ -264,28 +282,20 @@ The DESCRIPTOR_HEADER_SCATTER_GATHER flag is not supported on Windows 98/Me. It 
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537651">REQUEST_ISOCH_DETACH_BUFFERS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537147">GET_LOCAL_HOST_INFO2</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537651">REQUEST_ISOCH_DETACH_BUFFERS</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537655">REQUEST_ISOCH_LISTEN</a>
-</dt>
-</dl>
+
  
 
  

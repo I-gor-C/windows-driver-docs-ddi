@@ -7,8 +7,8 @@ old-location : netvista\rilradiostategroup_2.htm
 old-project : netvista
 ms.assetid : ce8cf743-4386-4afb-87d3-93f9a83bd632
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILRADIOSTATEGROUP, *LPRILRADIOSTATEGROUP, RILRADIOSTATEGROUP
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILRADIOSTATEGROUP, RILRADIOSTATEGROUP, netvista.rilradiostategroup_2, RILRADIOSTATEGROUP structure [Network Drivers Starting with Windows Vista], *LPRILRADIOSTATEGROUP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILRADIOSTATEGROUP
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILRADIOSTATEGROUP, RILRADIOSTATEGROUP"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILRADIOSTATEGROUP, *LPRILRADIOSTATEGROUP
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _RILRADIOSTATEGROUP {
 
 ## Members
 
-        
-            `dwGroupFlags`
 
-            
-        
-            `dwGroupId`
+`dwGroupFlags`
 
-            
-        
-            `dwGroupType`
 
-            
-        
-            `wszGroupText`
 
-            
+`dwGroupId`
+
+
+
+`dwGroupType`
+
+
+
+`wszGroupText`
+
+
 
 
 ## Requirements

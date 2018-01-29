@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B5A0E067-E91B-4B35-A355-36E15665CF43
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032, D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032
+ms.keywords : D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032 structure [Display Devices], display.d3d12ddi_video_processor_size_data_0032, D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032, d3d12umddi/D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032
 ---
 
@@ -50,18 +54,18 @@ typedef struct _D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032 {
 
 ## Members
 
-        
-            `MemoryPoolL0Size`
 
-            The L0 size of the heap object.  Memory Pool L0 is the memory pool “closest” to the GPU.  In the case of UMA adapters, this is the amount of system memory used.  For discrete adapters, this is the amount of discrete memory used.
-        
-            `MemoryPoolL1Size`
+`MemoryPoolL0Size`
 
-            The L1 size of the heap object.  Memory Pool L1 is the memory pool “second closest” to the GPU.  In the case of UMA adapters, this value is zero.  In the case of discrete adapters, this is the amount of system memory used.
-        
-            `VideoProcessorDesc`
+The L0 size of the heap object.  Memory Pool L0 is the memory pool “closest” to the GPU.  In the case of UMA adapters, this is the amount of system memory used.  For discrete adapters, this is the amount of discrete memory used.
 
-            The creation properties for a video processor heap.  Driver should map these creation properties to size.
+`MemoryPoolL1Size`
+
+The L1 size of the heap object.  Memory Pool L1 is the memory pool “second closest” to the GPU.  In the case of UMA adapters, this value is zero.  In the case of discrete adapters, this is the amount of system memory used.
+
+`VideoProcessorDesc`
+
+The creation properties for a video processor heap.  Driver should map these creation properties to size.
 
 
 ## Requirements

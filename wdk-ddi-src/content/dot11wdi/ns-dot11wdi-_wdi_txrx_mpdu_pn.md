@@ -7,8 +7,8 @@ old-location : netvista\wdi_txrx_mpdu_pn.htm
 old-project : netvista
 ms.assetid : F03F5BE6-B2F2-4A9A-8D6D-1ACC9F08C890
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _WDI_TXRX_MPDU_PN, WDI_TXRX_MPDU_PN
+ms.date : 1/18/2018
+ms.keywords : _WDI_TXRX_MPDU_PN, netvista.wdi_txrx_mpdu_pn, WDI_TXRX_MPDU_PN, dot11wdi/WDI_TXRX_MPDU_PN, WDI_TXRX_MPDU_PN union [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDI_TXRX_MPDU_PN
-req.alt-loc : dot11wdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TXRX_MPDU_PN
 ---
 
@@ -49,18 +53,18 @@ typedef union _WDI_TXRX_MPDU_PN {
 
 ## Members
 
-        
-            `Pn128`
 
-            WAPI: 128-bit PN
-        
-            `Pn24`
+`Pn128`
 
-            WEP: 24-bit PN
-        
-            `Pn48`
+WAPI: 128-bit PN
 
-            TKIP or CCMP: 48-bit PN
+`Pn24`
+
+WEP: 24-bit PN
+
+`Pn48`
+
+TKIP or CCMP: 48-bit PN
 
 
 ## Requirements

@@ -7,8 +7,8 @@ old-location : netvista\rilnetworkcode.htm
 old-project : netvista
 ms.assetid : b0fa761c-8e28-4067-ae9e-d39e2853fb05
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILNETWORKCODE, RILNETWORKCODE, *LPRILNETWORKCODE
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILNETWORKCODE, RILNETWORKCODE, *LPRILNETWORKCODE, netvista.rilnetworkcode, RILNETWORKCODE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILNETWORKCODE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILNETWORKCODE, *LPRILNETWORKCODE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILNETWORKCODE, RILNETWORKCODE"
 req.product : Windows 10 or later.
 ---
 
 # RILNETWORKCODE structure
-
+<div class="alert"><b>Warning</b>  The Cellular COM API is deprecated in Windows 10. This content is provided to support maintenance of OEM and mobile operator created Windows Phone 8.1 applications.</div><div> </div>This structure represents a RILNETWORKCODE.
 
 ## Syntax
 ````
@@ -54,38 +58,38 @@ struct RILNETWORKCODE {
 
 ## Members
 
-        
-            `cbSize`
 
-            The size of the structure in bytes.
-        
-            `dwExecutor`
+`cbSize`
 
-            This field is unused.
-        
-            `dwMCC`
+The size of the structure in bytes.
 
-            Mobile Country Code, if applicable. For RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO it is network-dependent whether this value is available; further, the MCC provided by some 3GPP2 networks may not be accurate.
-        
-            `dwMNC`
+`dwExecutor`
 
-            Mobile Network Code. For RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO it is network-dependent whether this value is available; further, the MCC provided by some 3GPP2 networks may not be accurate.
-        
-            `dwNID`
+This field is unused.
 
-            Network ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
-        
-            `dwParams`
+`dwMCC`
 
-            A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilnetworkcodeparammask.md">RILNETWORKCODEPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
-        
-            `dwRI`
+Mobile Country Code, if applicable. For RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO it is network-dependent whether this value is available; further, the MCC provided by some 3GPP2 networks may not be accurate.
 
-            Roaming indicator, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO.
-        
-            `dwSID`
+`dwMNC`
 
-            System ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
+Mobile Network Code. For RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO it is network-dependent whether this value is available; further, the MCC provided by some 3GPP2 networks may not be accurate.
+
+`dwNID`
+
+Network ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
+
+`dwParams`
+
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilnetworkcodeparammask.md">RILNETWORKCODEPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
+
+`dwRI`
+
+Roaming indicator, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO.
+
+`dwSID`
+
+System ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
 
 
 ## Requirements
@@ -96,15 +100,12 @@ struct RILNETWORKCODE {
 | **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILNETWORKCODE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILNETWORKCODE structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

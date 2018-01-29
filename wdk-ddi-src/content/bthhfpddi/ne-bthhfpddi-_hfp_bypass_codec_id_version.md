@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A16980CD-3F2F-4A67-902A-F3D72AA042D9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION
+ms.keywords : bthhfpddi/REQ_HFP_BYPASS_CODEC_ID_V1, bthhfpddi/HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION, audio.hfp_bypass_codec_id_version, _HFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION, REQ_HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_VERSION enumeration [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HFP_BYPASS_CODEC_ID_VERSION
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
 ---
 
@@ -65,14 +69,10 @@ typedef enum _HFP_BYPASS_CODEC_ID_VERSION {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_codec_id.md">IOCTL_BTHHFP_DEVICE_GET_CODEC_ID</a>
-</dt>
-<dt>
 <a href="..\bthhfpddi\ns-bthhfpddi-_hfp_bypass_codec_id_v1.md">HFP_BYPASS_CODEC_ID_V1</a>
-</dt>
-</dl>
+
+<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_codec_id.md">IOCTL_BTHHFP_DEVICE_GET_CODEC_ID</a>
+
  
 
  

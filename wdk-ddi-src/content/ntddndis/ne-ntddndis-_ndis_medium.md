@@ -7,8 +7,8 @@ old-location : netvista\ndis_medium.htm
 old-project : netvista
 ms.assetid : 3e4aa7fb-0dd4-4c45-ab5e-21342e9fb4d8
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_MEDIUM, NDIS_MEDIUM, *PNDIS_MEDIUM
+ms.date : 1/18/2018
+ms.keywords : NdisMediumInfiniBand, _NDIS_MEDIUM, ntddndis/NdisMediumBpc, NdisMediumWirelessWan, ntddndis/NdisMediumLoopback, NDIS_MEDIUM enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisMediumAtm, ntddndis/NDIS_MEDIUM, ntddndis/NdisMedium802_3, ntddndis/NdisMediumLocalTalk, NdisMediumLocalTalk, NdisMediumMax, ntddndis/NdisMedium802_5, NdisMediumCoWan, ntddndis/NdisMediumDix, NdisMediumBpc, NdisMediumNative802_11, PNDIS_MEDIUM enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_MEDIUM, NdisMediumWan, NdisMedium1394, NDIS_MEDIUM, NdisMedium802_5, NdisMediumIP, ntddndis/NdisMediumIP, NdisMediumDix, ntddndis/NdisMediumArcnetRaw, ntddndis/NdisMediumInfiniBand, ntddndis/NdisMediumTunnel, NdisMediumIrda, NdisMedium802_3, NdisMediumAtm, protocol_structures_ref_3b154721-1574-4855-9028-704ce215eb91.xml, NdisMediumTunnel, netvista.ndis_medium, ntddndis/NdisMediumWirelessWan, ntddndis/NdisMediumCoWan, NdisMediumArcnet878_2, ntddndis/NdisMediumMax, ntddndis/NdisMedium1394, ntddndis/NdisMediumWan, NdisMediumFddi, ntddndis/NdisMediumFddi, PNDIS_MEDIUM, ntddndis/NdisMediumNative802_11, NdisMediumLoopback, ntddndis/NdisMediumIrda, ntddndis/NdisMediumArcnet878_2, *PNDIS_MEDIUM, NdisMediumArcnetRaw
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 5.1, and NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_MEDIUM
-req.alt-loc : ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_MEDIUM, *PNDIS_MEDIUM
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_MEDIUM, NDIS_MEDIUM"
 ---
 
 # _NDIS_MEDIUM Enumeration
@@ -74,9 +78,7 @@ typedef enum _NDIS_MEDIUM {
 <tr>
 <td>NdisMedium1394</td>
 <td>Specifies an IEEE 1394 (fire wire) network. 
-
-<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -87,25 +89,19 @@ typedef enum _NDIS_MEDIUM {
 <tr>
 <td>NdisMedium802_5</td>
 <td>Specifies a Token Ring (802.5) network.
-
-<div class="alert"><b>Note</b>   Not supported in Windows 8 or later.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>   Not supported in Windows 8 or later.</div><div> </div></td>
 </tr>
 
 <tr>
 <td>NdisMediumArcnet878_2</td>
 <td>Specifies an ARCNET (878.2) network.
-
-<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div><div> </div></td>
 </tr>
 
 <tr>
 <td>NdisMediumArcnetRaw</td>
 <td>Specifies an ARCNET network.
-
-<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -136,9 +132,7 @@ typedef enum _NDIS_MEDIUM {
 <tr>
 <td>NdisMediumFddi</td>
 <td>Specifies a Fiber Distributed Data Interface (FDDI) network.
-
-<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
-<div> </div></td>
+<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -186,6 +180,11 @@ typedef enum _NDIS_MEDIUM {
 <td>Specifies a wide area network. This type covers various forms of point-to-point and WAN NICs, as
      well as variant address/header formats that must be negotiated between the protocol driver and the
      underlying driver after the binding is established.</td>
+</tr>
+
+<tr>
+<td>NdisMediumWiMAX</td>
+<td></td>
 </tr>
 
 <tr>

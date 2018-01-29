@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5481ae5e-c28a-478e-96be-c6ec8d7f163e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortMoveMemory
+ms.keywords : storage.storportmovememory, StorPortMoveMemory routine [Storage Devices], StorPortMoveMemory, storprt_7af1ec0d-f1c4-4335-9b80-1aaef26afa35.xml, storport/StorPortMoveMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortMoveMemory
-req.alt-loc : Storport.lib,Storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\srb\nf-srb-scsiportmovememory.md">ScsiPortMoveMemory</a>
-</dt>
-</dl>
+
  
 
  

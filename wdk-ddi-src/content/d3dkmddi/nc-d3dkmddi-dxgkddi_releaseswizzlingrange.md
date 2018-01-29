@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6c583a48-baa4-429f-b2fc-5f86859617cc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddireleaseswizzlingrange, DxgkDdiReleaseSwizzlingRange callback function [Display Devices], DxgkDdiReleaseSwizzlingRange, DXGKDDI_RELEASESWIZZLINGRANGE, DXGKDDI_RELEASESWIZZLINGRANGE, d3dkmddi/DxgkDdiReleaseSwizzlingRange, DmFunctions_7dab2ff4-4f37-4b56-a15c-29dcf54f8b8d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiReleaseSwizzlingRange
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -91,17 +95,12 @@ All calls to <i>DxgkDdiReleaseSwizzlingRange</i> are serialized among themselves
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_releaseswizzlingrange.md">DXGKARG_RELEASESWIZZLINGRANGE</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
-</dt>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_releaseswizzlingrange.md">DXGKARG_RELEASESWIZZLINGRANGE</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
+
  
 
  

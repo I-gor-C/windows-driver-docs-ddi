@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : da85c8d6-a74c-4a87-88b3-fb6dc01dd0f9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAttachVolume
+ms.keywords : FltAttachVolume function [Installable File System Drivers], ifsk.fltattachvolume, FltAttachVolume, FltApiRef_a_to_d_f4ac8b0d-55c2-45b1-8f3b-3a09bee7bb23.xml, fltkernel/FltAttachVolume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltAttachVolume
-req.alt-loc : FltMgr.lib,FltMgr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : FltMgr.lib
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -71,21 +75,67 @@ Pointer to a caller-allocated variable that receives an opaque instance pointer 
 ## Return Value
 
 <b>FltAttachVolume</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
-</dl>The specified <i>Filter</i> or <i>Volume</i> is being torn down. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The specified <i>Filter</i> or <i>Volume</i> is being torn down. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_FILTER_NOT_READY</b></dt>
-</dl>The minifilter driver has not started filtering. For more information, see <a href="..\fltkernel\nf-fltkernel-fltstartfiltering.md">FltStartFiltering</a>. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+The minifilter driver has not started filtering. For more information, see <a href="..\fltkernel\nf-fltkernel-fltstartfiltering.md">FltStartFiltering</a>. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_FLT_INSTANCE_NAME_COLLISION</b></dt>
-</dl>An instance already exists with this name on the volume specified. 
+</dl>
+</td>
+<td width="60%">
+An instance already exists with this name on the volume specified. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl><b>FltAttachVolume</b> encountered a pool allocation failure. This is an error code. 
+</dl>
+</td>
+<td width="60%">
+<b>FltAttachVolume</b> encountered a pool allocation failure. This is an error code. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_COLLISION</b></dt>
-</dl>Another instance was already attached at the altitude specified in the instance attributes that were read from the registry. This is an error code.
+</dl>
+</td>
+<td width="60%">
+Another instance was already attached at the altitude specified in the instance attributes that were read from the registry. This is an error code. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -119,29 +169,20 @@ To detach a minifilter driver instance from a volume, call <a href="..\fltkernel
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltstartfiltering.md">FltStartFiltering</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
+
  
 
  

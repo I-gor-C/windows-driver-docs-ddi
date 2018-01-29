@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b264fac0-61d9-4789-b60b-c0b309eb25f1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWorkItemEnqueue
+ms.keywords : wdfworkitem/WdfWorkItemEnqueue, WdfWorkItemEnqueue method, DFWorkItemObjectRef_f2f5dbe5-20e0-4cb8-aeca-663934d0fc92.xml, wdf.wdfworkitemenqueue, kmdf.wdfworkitemenqueue, PFN_WDFWORKITEMENQUEUE, WdfWorkItemEnqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfWorkItemEnqueue
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -76,20 +80,6 @@ In versions of KMDF prior to version 1.7, if your driver reuses its work-item ob
 
 For more information about work items, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-framework-work-items">Using Framework Work Items</a>.
 
-This section contains two examples. The first example shows how to add work items to a queue for KMDF versions 1.7 and later. The second example shows how to add work items to a queue for KMDF versions prior to version 1.7 
-
-<b>Example 1: KMDF versions 1.7 and later</b>
-
-The following code example calls a local routine that returns a pointer to a work-item object's context memory. The example sets information in the object's context memory and then calls <b>WdfWorkItemEnqueue</b>. The driver's <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function will later retrieve the information from the work-item object.
-
-The driver's <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function contains the following code. 
-
-<b>Example 2: KMDF versions prior to 1.7</b>
-
-The following code example calls a local routine that returns a pointer to a work-item object's context memory. The example sets information in the object's context memory, sets a state variable to "busy", and then calls <b>WdfWorkItemEnqueue</b>. The driver's <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function will later retrieve the information from the work-item object.
-
-The driver's <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a> callback function contains the following code. Just before the <b>return</b> statement, the code sets the work-item object's state variable to "free" so that the driver can queue the object again.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -104,20 +94,14 @@ The driver's <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca41
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-interlockedcompareexchange.md">InterlockedCompareExchange</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a>
-</dt>
-<dt>
+
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a>
+
+<a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
+
  
 
  

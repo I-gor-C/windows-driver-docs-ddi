@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90f0a38d-f50e-4da0-b98f-2f3068f03b2e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords : display.i2cstart, I2CStart callback function [Display Devices], I2CStart, PI2C_START, PI2C_START, video/I2CStart, VideoPort_Functions_287e51cf-dce0-47c5-b743-c6fb401bb74e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : I2CStart
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,13 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VHF_CONFIG, *PVHF_CONFIG
 req.product : Windows 10 or later.
 ---
 
 
 # PI2C_START callback function
-The <i>I2CStart</i> function starts <a href="wdkgloss.i#wdkgloss.inter_integrated_circuit__i2c_#wdkgloss.inter_integrated_circuit__i2c_"><i>I2C</i></a> communication.
+The <i>I2CStart</i> function starts <a href="https://msdn.microsoft.com/5a140cc0-ecc5-46ff-be3f-3c92f0f67dca">I2C</a> communication.
 
 ## Syntax
 
@@ -84,11 +88,8 @@ The video port implements this function, which can be accessed through a pointer
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\ns-video-_video_port_i2c_interface.md">VIDEO_PORT_I2C_INTERFACE</a>
-</dt>
-</dl>
+
  
 
  

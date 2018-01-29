@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : be503505-fb20-4a8d-b395-7e807cde9fb6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_DeinterlaceCaps, DXVA_DeinterlaceCaps, *LPDXVA_DeinterlaceCaps
+ms.keywords : DXVA_DeinterlaceCaps, LPDXVA_DeinterlaceCaps, dxva/LPDXVA_DeinterlaceCaps, _DXVA_DeinterlaceCaps, LPDXVA_DeinterlaceCaps structure pointer [Display Devices], *LPDXVA_DeinterlaceCaps, DXVA_DeinterlaceCaps structure [Display Devices], display.dxva_deinterlacecaps, dxva/DXVA_DeinterlaceCaps, dxvaref_daa1a58d-aec2-4370-9baa-7a3b8cbcacf8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_DeinterlaceCaps
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DXVA_DeinterlaceCaps, *LPDXVA_DeinterlaceCaps
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPDXVA_DeinterlaceCaps, DXVA_DeinterlaceCaps"
 ---
 
 # _DXVA_DeinterlaceCaps structure
@@ -53,43 +57,43 @@ typedef struct _DXVA_DeinterlaceCaps {
 
 ## Members
 
-        
-            `d3dOutputFormat`
 
-            Indicates the Direct3D surface format of the output frames. Usually a deinterlace algorithm outputs frames in a surface format that matches the input sample format. This member ensures that the VMR or other video renderer will be able to supply the correct output frame surfaces to the deinterlace hardware.
+`d3dOutputFormat`
+
+Indicates the Direct3D surface format of the output frames. Usually a deinterlace algorithm outputs frames in a surface format that matches the input sample format. This member ensures that the VMR or other video renderer will be able to supply the correct output frame surfaces to the deinterlace hardware.
 
 Note that if the <b>DXVA_Deinterlace_YUV2RGB</b> enumerator is returned in the <a href="..\dxva\ne-dxva-_dxva_videoprocesscaps.md">DXVA_VideoProcessCaps</a> enumeration, the VMR will assume that valid output formats are specified by this member, in addition to a D3DFMT_X8R8G8B8 format.
-        
-            `DeinterlaceTechnology`
 
-            Specifies a <a href="..\dxva\ne-dxva-_dxva_deinterlacetech.md">DXVA_DeinterlaceTech</a> enumeration indicating the deinterlacing technology used by this deinterlacing device.
-        
-            `InputPool`
+`DeinterlaceTechnology`
 
-            Indicates the memory pool from which the interlaced source surfaces should be allocated. For more information, see the D3DPOOL enumeration type in the Microsoft Window SDK documentation.
-        
-            `NumBackwardRefSamples`
+Specifies a <a href="..\dxva\ne-dxva-_dxva_deinterlacetech.md">DXVA_DeinterlaceTech</a> enumeration indicating the deinterlacing technology used by this deinterlacing device.
 
-            Indicates the required backward reference samples for the defined deinterlace mode. The samples are in past fields. This value is zero for bob, 1 for line blending, and can be several values for adaptive deinterlacing and frame-rate conversion.
-        
-            `NumForwardRefSamples`
+`InputPool`
 
-            Indicates the required number of forward reference samples for the defined deinterlace mode. These samples will be in future fields. This value is zero for bob and line blending, and can be several values for adaptive deinterlacing and frame-rate conversion.
-        
-            `NumPreviousOutputFrames`
+Indicates the memory pool from which the interlaced source surfaces should be allocated. For more information, see the D3DPOOL enumeration type in the Microsoft Window SDK documentation.
 
-            Indicates the number of required frames previously output by the deinterlace algorithm. This member is used by recursive deinterlace algorithms.
-        
-            `Size`
+`NumBackwardRefSamples`
 
-            Indicates the size of this structure.
-        
-            `VideoProcessingCaps`
+Indicates the required backward reference samples for the defined deinterlace mode. The samples are in past fields. This value is zero for bob, 1 for line blending, and can be several values for adaptive deinterlacing and frame-rate conversion.
 
-            Specifies a <a href="..\dxva\ne-dxva-_dxva_videoprocesscaps.md">DXVA_VideoProcessCaps</a> enumeration indicating the operation that can be performed concurrently with the requested deinterlace.
+`NumForwardRefSamples`
 
-    ## Remarks
-        The driver receives the DXVA_DeinterlaceCaps structure with the <b>Size</b> member assigned, assigns values to the remaining members, and returns DXVA_DeinterlaceCaps to the renderer.
+Indicates the required number of forward reference samples for the defined deinterlace mode. These samples will be in future fields. This value is zero for bob and line blending, and can be several values for adaptive deinterlacing and frame-rate conversion.
+
+`NumPreviousOutputFrames`
+
+Indicates the number of required frames previously output by the deinterlace algorithm. This member is used by recursive deinterlace algorithms.
+
+`Size`
+
+Indicates the size of this structure.
+
+`VideoProcessingCaps`
+
+Specifies a <a href="..\dxva\ne-dxva-_dxva_videoprocesscaps.md">DXVA_VideoProcessCaps</a> enumeration indicating the operation that can be performed concurrently with the requested deinterlace.
+
+## Remarks
+The driver receives the DXVA_DeinterlaceCaps structure with the <b>Size</b> member assigned, assigns values to the remaining members, and returns DXVA_DeinterlaceCaps to the renderer.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,16 +103,12 @@ Note that if the <b>DXVA_Deinterlace_YUV2RGB</b> enumerator is returned in the <
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxva\ne-dxva-_dxva_videoprocesscaps.md">DXVA_VideoProcessCaps</a>
-</dt>
-<dt>
+
 <a href="..\dxva\ne-dxva-_dxva_deinterlacetech.md">DXVA_DeinterlaceTech</a>
-</dt>
-</dl>
+
  
 
  

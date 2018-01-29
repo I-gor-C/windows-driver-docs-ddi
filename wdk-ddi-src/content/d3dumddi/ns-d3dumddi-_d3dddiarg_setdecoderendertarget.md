@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8903b579-8a63-42a5-9115-251f4e77ebb4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_SETDECODERENDERTARGET, D3DDDIARG_SETDECODERENDERTARGET
+ms.keywords : D3DDDIARG_SETDECODERENDERTARGET structure [Display Devices], d3dumddi/D3DDDIARG_SETDECODERENDERTARGET, _D3DDDIARG_SETDECODERENDERTARGET, D3DDDIARG_SETDECODERENDERTARGET, display.d3dddiarg_setdecoderendertarget, UMDisplayDriver_param_Structs_1638f20c-2243-4b24-8373-d5e310aa10a0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_SETDECODERENDERTARGET
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_SETDECODERENDERTARGET
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DDDIARG_SETDECODERENDERTARGET {
 
 ## Members
 
-        
-            `hDecode`
 
-            [in] A handle to the Microsoft DirectX Video Acceleration (DirectX VA) decode device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a> function.
-        
-            `hRenderTarget`
+`hDecode`
 
-            [in] A handle to the decode render target surface.
-        
-            `SubResourceIndex`
+[in] A handle to the Microsoft DirectX Video Acceleration (DirectX VA) decode device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a> function.
 
-            [in] An index into the resource for the decode render target surface.
+`hRenderTarget`
+
+[in] A handle to the decode render target surface.
+
+`SubResourceIndex`
+
+[in] An index into the resource for the decode render target surface.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DDDIARG_SETDECODERENDERTARGET {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdecoderendertarget.md">SetDecodeRenderTarget</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
+
  
 
  

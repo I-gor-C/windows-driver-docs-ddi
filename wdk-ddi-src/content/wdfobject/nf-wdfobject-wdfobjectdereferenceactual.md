@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ff96ea2b-a1f9-417c-98e6-fbf9cc9f6827
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfObjectDereferenceActual
+ms.keywords : DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml, wdfobject/WdfObjectDereferenceActual, WdfObjectDereferenceActual method, kmdf.wdfobjectdereferenceactual, WdfObjectDereferenceActual, wdf.wdfobjectdereferenceactual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfObjectDereferenceActual
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_SYNCHRONIZATION_SCOPE
 req.product : Windows 10 or later.
 ---
@@ -87,8 +91,6 @@ You can view the tag, line number, and file name values by using the <b>!wdftagt
 
 For more information about object reference counts, see <a href="https://msdn.microsoft.com/33efc3a8-ac46-4626-ba0f-beb1eaa9ee47">Framework Object Life Cycle</a>.
 
-The following code example decrements an object's reference count and assigns a tag value, line number, and file name to the reference.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -103,14 +105,10 @@ The following code example decrements an object's reference count and assigns a 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>
-</dt>
-<dt>
+
 <a href="..\wdfobject\nf-wdfobject-wdfobjectreferenceactual.md">WdfObjectReferenceActual</a>
-</dt>
-</dl>
+
  
 
  

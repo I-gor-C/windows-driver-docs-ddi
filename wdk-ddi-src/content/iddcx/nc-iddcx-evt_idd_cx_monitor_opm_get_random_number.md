@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 330dc0a1-d9a9-44c1-9d29-752c2567e745
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : WcsTranslateColors
+ms.keywords : display.evt_idd_cx_monitor_opm_get_random_number, EvtIddCxMonitorOpmGetRandomNumber callback function [Display Devices], EvtIddCxMonitorOpmGetRandomNumber, EVT_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER, EVT_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER, iddcx/EvtIddCxMonitorOpmGetRandomNumber, PFN_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFN_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 

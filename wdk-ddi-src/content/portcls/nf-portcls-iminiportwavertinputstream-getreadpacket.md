@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : F26F6820-B761-4DF3-B7D7-9C1B174DEEA2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTInputStream, IMiniportWaveRTInputStream::GetReadPacket, GetReadPacket
+ms.keywords : GetReadPacket, GetReadPacket method [Audio Devices], portcls/IMiniportWaveRTInputStream::GetReadPacket, IMiniportWaveRTInputStream, IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface, IMiniportWaveRTInputStream::GetReadPacket, audio.iminiportwavertinputstream_getreadpacket
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRTInputStream.GetReadPacket
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -98,11 +102,8 @@ The packet size is the WaveRT buffer size divided by the NotificationCount passe
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavertinputstream.md">IMiniportWaveRTInputStream</a>
-</dt>
-</dl>
+
  
 
  

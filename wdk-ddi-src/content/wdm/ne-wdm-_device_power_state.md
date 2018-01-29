@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d3166685-2aec-4874-a5a9-8cc293a96a2c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _DEVICE_POWER_STATE, DEVICE_POWER_STATE, *PDEVICE_POWER_STATE
+ms.keywords : wdm/PowerDeviceD0, PDEVICE_POWER_STATE, wdm/PDEVICE_POWER_STATE, PowerDeviceD3, PowerDeviceMaximum, PowerDeviceD2, wdm/PowerDeviceD3, wdm/PowerDeviceD2, PowerDeviceD1, wdm/DEVICE_POWER_STATE, DEVICE_POWER_STATE, sysenum_4f65cc59-f3a2-42ef-a8bb-7a2d178a6be7.xml, PowerDeviceD0, _DEVICE_POWER_STATE, wdm/PowerDeviceD1, wdm/PowerDeviceUnspecified, wdm/PowerDeviceMaximum, DEVICE_POWER_STATE enumeration [Kernel-Mode Driver Architecture], kernel.device_power_state, PowerDeviceUnspecified, PDEVICE_POWER_STATE enumeration pointer [Kernel-Mode Driver Architecture], *PDEVICE_POWER_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_POWER_STATE
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DEVICE_POWER_STATE, *PDEVICE_POWER_STATE
 req.product : Windows 10 or later.
 ---
@@ -101,11 +105,8 @@ For more information about system power states, see <a href="https://msdn.micros
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
-</dt>
-</dl>
+
  
 
  

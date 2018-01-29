@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeBuildConnectionOverMultipleTransports
+ms.keywords : rxce/RxCeBuildConnectionOverMultipleTransports, ifsk.rxcebuildconnectionovermultipletransports, rxref_813ee01b-f378-4598-813a-4f2f3c47189f.xml, RxCeBuildConnectionOverMultipleTransports routine [Installable File System Drivers], RxCeBuildConnectionOverMultipleTransports
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeBuildConnectionOverMultipleTransports
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -64,7 +68,7 @@ A pointer to the mini-redirector device object.
 
 `CreateOption`
 
-
+TBD
 
 `NumberOfAddresses`
 
@@ -102,18 +106,56 @@ On input, this parameter contains a pointer to an uninitialized RXCE_CONNECTION_
 ## Return Value
 
 <b>RxCeBuildConnectionOverMultipleTransports</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The allocation of nonpaged pool memory needed by this routine failed. 
+</dl>
+</td>
+<td width="60%">
+The allocation of nonpaged pool memory needed by this routine failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>It was not possible to initialize a connection and a virtual circuit with any of the multiple transports. This error can occur if all of the RDBSS transports or the RBDSS connection engine addresses pointed to in the <i>pLocalAddressPointers</i> array are invalid.
+</dl>
+</td>
+<td width="60%">
+It was not possible to initialize a connection and a virtual circuit with any of the multiple transports. This error can occur if all of the RDBSS transports or the RBDSS connection engine addresses pointed to in the <i>pLocalAddressPointers</i> array are invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>One of the parameters passed to this routine was invalid. 
+</dl>
+</td>
+<td width="60%">
+One of the parameters passed to this routine was invalid. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl>One of the asynchronous calls to the different transports passed as input parameters to the routine is still outstanding and has not been completed.
+</dl>
+</td>
+<td width="60%">
+One of the asynchronous calls to the different transports passed as input parameters to the routine is still outstanding and has not been completed. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -139,17 +181,12 @@ When <b>RxCeBuildConnectionOverMultipleTransports</b> is successful, the virtual
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>
-</dt>
-<dt>
-<a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>
+
+<a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
+
  
 
  

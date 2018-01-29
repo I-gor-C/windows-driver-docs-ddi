@@ -7,8 +7,8 @@ old-location : pos\ioctl_point_of_service_msr_update_key.htm
 old-project : pos
 ms.assetid : 7ac830d3-6a75-4d82-9123-cd7ad9c2cdea
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosPropertyId, PosPropertyId
+ms.date : 1/18/2018
+ms.keywords : pos.ioctl_point_of_service_msr_update_key, IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY control code, IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY
-req.alt-loc : pointofservicedriverinterface.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosPropertyId
 ---
 
@@ -59,11 +63,12 @@ Not used with this operation; set to <b>0</b> (zero).
 <text></text>
 
 ### Status Block
-I/O Status block
 Returns <b>TRUE</b> if successful; otherwise, returns <b>FALSE</b>.
 
 To get extended error information, call <a href="http://go.microsoft.com/fwlink/p/?LinkId=316871">GetLastError</a>
 
+## Remarks
+<h3><a id="Parameters"></a><a id="parameters"></a><a id="PARAMETERS"></a>Parameters</h3>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : cec501d9-17e3-46a1-929e-4f9ba35ba721
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : DrmCreateContentMixed
+ms.keywords : aud-prop2_19a8815e-db9d-43a9-ad5a-c081a1af4f99.xml, audio.drmcreatecontentmixed, DrmCreateContentMixed, drmk/DrmCreateContentMixed, DrmCreateContentMixed function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DrmCreateContentMixed
-req.alt-loc : Drmk.lib,Drmk.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Drmk.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
@@ -95,29 +99,20 @@ After a KS audio filter finishes using a content ID that it created using <code>
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536254">DEFINE_DRMRIGHTS_DEFAULT</a>
-</dt>
-<dt>
-<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
-</dt>
-<dt>
 <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
-</dt>
-<dt>
+
+<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536254">DEFINE_DRMRIGHTS_DEFAULT</a>
+
 <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
-</dt>
-<dt>
-<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536581">IDrmPort::CreateContentMixed</a>
-</dt>
-</dl>
+
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
+
  
 
  

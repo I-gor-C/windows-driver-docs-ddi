@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e1464561-b9f2-41aa-921e-84f3a855130f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_CREATEALLOCATION, DXGKARG_CREATEALLOCATION, *INOUT_PDXGKARG_CREATEALLOCATION
+ms.keywords : DXGKARG_CREATEALLOCATION structure [Display Devices], d3dkmddi/DXGKARG_CREATEALLOCATION, DXGKARG_CREATEALLOCATION, display.dxgkarg_createallocation, DmStructs_751430a9-4161-4230-bb97-d09600d48d62.xml, *INOUT_PDXGKARG_CREATEALLOCATION, _DXGKARG_CREATEALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_CREATEALLOCATION
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_CREATEALLOCATION
 ---
 
@@ -51,30 +55,30 @@ typedef struct _DXGKARG_CREATEALLOCATION {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createallocationflags.md">DXGK_CREATEALLOCATIONFLAGS</a> structure that identifies how to create allocations. Setting all of the bit-field flags to 0 indicates that allocations belong to the device and not to a particular resource.
-        
-            `hResource`
+`Flags`
 
-            [in/out] A handle to a resource. The display miniport driver can set this handle to a value that the Microsoft DirectX graphics kernel subsystem can subsequently pass in driver calls and that refers to information for the allocations. If the resource was already created by a previous <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> call, this member contains the handle that the driver previously returned.
-        
-            `NumAllocations`
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createallocationflags.md">DXGK_CREATEALLOCATIONFLAGS</a> structure that identifies how to create allocations. Setting all of the bit-field flags to 0 indicates that allocations belong to the device and not to a particular resource.
 
-            [in] The number of elements in the array that <b>pAllocationInfo</b> specifies, which represents the number of allocations to create.
-        
-            `pAllocationInfo`
+`hResource`
 
-            [in/out] An array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a> structures that describe the allocations to create.
-        
-            `pPrivateDriverData`
+[in/out] A handle to a resource. The display miniport driver can set this handle to a value that the Microsoft DirectX graphics kernel subsystem can subsequently pass in driver calls and that refers to information for the allocations. If the resource was already created by a previous <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> call, this member contains the handle that the driver previously returned.
 
-            [in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This member is typically used to provide data for a group of allocations. Note that this member is distinct from the <b>pPrivateDriverData</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a> structures in the array that <b>pAllocationInfo</b> specifies. You can set private data for this member in addition to private data for each allocation.
-        
-            `PrivateDriverDataSize`
+`NumAllocations`
 
-            [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+[in] The number of elements in the array that <b>pAllocationInfo</b> specifies, which represents the number of allocations to create.
+
+`pAllocationInfo`
+
+[in/out] An array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a> structures that describe the allocations to create.
+
+`pPrivateDriverData`
+
+[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This member is typically used to provide data for a group of allocations. Note that this member is distinct from the <b>pPrivateDriverData</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a> structures in the array that <b>pAllocationInfo</b> specifies. You can set private data for this member in addition to private data for each allocation.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -85,19 +89,14 @@ typedef struct _DXGKARG_CREATEALLOCATION {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createallocationflags.md">DXGK_CREATEALLOCATIONFLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createallocationflags.md">DXGK_CREATEALLOCATIONFLAGS</a>
+
  
 
  

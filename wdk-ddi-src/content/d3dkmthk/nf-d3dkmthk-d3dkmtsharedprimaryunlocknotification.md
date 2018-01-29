@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1d602d09-cd80-4079-9132-1caced4d1eee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSharedPrimaryUnLockNotification
+ms.keywords : OpenGL_Functions_311a1879-e3f7-44e2-aa1a-0c070e45bf85.xml, D3DKMTSharedPrimaryUnLockNotification function [Display Devices], d3dkmthk/D3DKMTSharedPrimaryUnLockNotification, display.d3dkmtsharedprimaryunlocknotification, D3DKMTSharedPrimaryUnLockNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTSharedPrimaryUnLockNotification
-req.alt-loc : Gdi32.dll,API-MS-Win-dx-d3dkmt-l1-1-0.dll,API-MS-Win-dx-d3dkmt-l1-1-1.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Gdi32.lib
 req.dll : Gdi32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -50,20 +54,40 @@ NTSTATUS APIENTRY D3DKMTSharedPrimaryUnLockNotification(
 
 `D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION`
 
-
+TBD
 
 
 ## Return Value
 
 <b>D3DKMTSharedPrimaryUnLockNotification</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Notification about unlocking a shared primary surface was successfully performed.
+</dl>
+</td>
+<td width="60%">
+Notification about unlocking a shared primary surface was successfully performed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters were validated and determined to be incorrect.
+</dl>
+</td>
+<td width="60%">
+Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other NTSTATUS values.
 
@@ -85,14 +109,10 @@ The OpenGL ICD calls the <b>D3DKMTSharedPrimaryUnLockNotification</b> function t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_sharedprimaryunlocknotification.md">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunlock.md">D3DKMTUnlock</a>
-</dt>
-</dl>
+
  
 
  

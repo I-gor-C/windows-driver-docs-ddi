@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e588a844-0b20-418c-9c65-e85f3a992d5c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_VIDEOINFO, *PKS_VIDEOINFO, KS_VIDEOINFO
+ms.keywords : stream.ks_videoinfo, ksmedia/KS_VIDEOINFO, PKS_VIDEOINFO, vidcapstruct_66265491-9578-4165-941b-432184388ea2.xml, ksmedia/PKS_VIDEOINFO, KS_VIDEOINFO structure [Streaming Media Devices], tagKS_VIDEOINFO, *PKS_VIDEOINFO, PKS_VIDEOINFO structure pointer [Streaming Media Devices], KS_VIDEOINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_VIDEOINFO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_VIDEOINFO, KS_VIDEOINFO"
 ---
 
@@ -56,33 +60,33 @@ typedef struct tagKS_VIDEOINFO {
 
 ## Members
 
-        
-            `AvgTimePerFrame`
 
-            Specifies the average time per frame in 100-nanosecond units.
-        
-            `bmiHeader`
+`AvgTimePerFrame`
 
-            Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
-        
-            `dwBitErrorRate`
+Specifies the average time per frame in 100-nanosecond units.
 
-            Specifies a value that indicates the video stream's data error rate, in bit errors per second.
-        
-            `dwBitRate`
+`bmiHeader`
 
-            Specifies a value that indicates the video stream's approximate data rate, in bits per second.
-        
-            `rcSource`
+Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
 
-            Specifies a clipping rectangle that selects the portion of the active video signal to use.
-        
-            `rcTarget`
+`dwBitErrorRate`
 
-            Specifies a rectangle that indicates which part of the target buffer to use.
+Specifies a value that indicates the video stream's data error rate, in bit errors per second.
 
-    ## Remarks
-        This structure must not be used unless the <b>biSize</b> member of the KS_BITMAPINFOHEADER member is set to <b>sizeof</b>(KS_BITMAPINFOHEADER).
+`dwBitRate`
+
+Specifies a value that indicates the video stream's approximate data rate, in bits per second.
+
+`rcSource`
+
+Specifies a clipping rectangle that selects the portion of the active video signal to use.
+
+`rcTarget`
+
+Specifies a rectangle that indicates which part of the target buffer to use.
+
+## Remarks
+This structure must not be used unless the <b>biSize</b> member of the KS_BITMAPINFOHEADER member is set to <b>sizeof</b>(KS_BITMAPINFOHEADER).
 
 A source filter can request that the sink filter take only a section of the video by providing values that effectively define a clipping rectangle in the <b>rcSource</b> member. However, if the sink filter does not check for the clipping rectangle on connection, the sink filter simply renders all of the video, effectively ignoring any clipping information passed from the source filter to the sink filter.
 
@@ -98,19 +102,14 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_rgbquad.md">KS_RGBQUAD</a>
-</dt>
-<dt>
+
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+
 <a href="..\ksmedia\ns-ksmedia-tag_ks_truecolorinfo.md">KS_TRUECOLORINFO</a>
-</dt>
-</dl>
+
  
 
  

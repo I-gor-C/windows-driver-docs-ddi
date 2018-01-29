@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : CC7B1824-E397-414A-8EB6-130AEC031304
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : LAMP_MODE, LAMP_MODE
+ms.keywords : stream.ioctl_lamp_get_capabilities_color, IOCTL_LAMP_GET_CAPABILITIES_COLOR control code [Streaming Media Devices], IOCTL_LAMP_GET_CAPABILITIES_COLOR, lamp/IOCTL_LAMP_GET_CAPABILITIES_COLOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_LAMP_GET_CAPABILITIES_COLOR
-req.alt-loc : lamp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,29 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_MODE
 ---
 
 # IOCTL_LAMP_GET_CAPABILITIES_COLOR IOCTL
 The <b>IOCTL_LAMP_GET_CAPABILITIES_COLOR</b> 
    control code queries the capabilities of the lamp when the device is configured to emit color light.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define IOCTL_LAMP_GET_CAPABILITIES_COLOR \
+    CTL_CODE(IOCTL_LAMP_BASE, 0x0001, METHOD_BUFFERED, FILE_ANY_ACCESS)</pre>
+</td>
+</tr>
+</table></span></div>
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -60,15 +75,14 @@ Length of the buffer.
 <text></text>
 
 ### Status Block
-I/O Status block
 The driver sets <code>Irp-&gt;IoStatus.Status</code> to <b>STATUS_SUCCESS</b> or the appropriate error status. It will set <code>Irp-&gt;IoStatus.Information</code> to the number of bytes required to hold the buffer.
 
-    ## Remarks
-        The payload of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_capabilities_color.md">LAMP_CAPABILITIES_COLOR</a> structure.
+## Remarks
+The payload of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_capabilities_color.md">LAMP_CAPABILITIES_COLOR</a> structure.
 
 The <b>IsSupported</b> field indicates whether the lamp can emit color light. If the hardware does not support color light, the driver should set this field to <b>FALSE</b>.
 
-The <b>IsLightIntensityAdjustable</b> field indicates whether the luminance level can be programmed. If the lamp does not support color light (<b>IsSupported</b> evaluates to <b>FALSE</b>), a client should discard the value of <b>IsLightIntensityAdjustable</b>.</p>
+The <b>IsLightIntensityAdjustable</b> field indicates whether the luminance level can be programmed. If the lamp does not support color light (<b>IsSupported</b> evaluates to <b>FALSE</b>), a client should discard the value of <b>IsLightIntensityAdjustable</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

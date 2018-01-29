@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c94473b4-b898-456d-944d-8879adea16d1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddisetvidpnsourcevisibility, DxgkDdiSetVidPnSourceVisibility callback function [Display Devices], DxgkDdiSetVidPnSourceVisibility, DXGKDDI_SETVIDPNSOURCEVISIBILITY, DXGKDDI_SETVIDPNSOURCEVISIBILITY, d3dkmddi/DxgkDdiSetVidPnSourceVisibility, DmFunctions_6a3bb1aa-8bc1-4672-8028-ea3299809a37.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiSetVidPnSourceVisibility
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -85,11 +89,8 @@ See requirements on calling this function with multiplane overlays in <a href="h
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/488c929b-3816-457f-b5c2-c176b93d5546">DxgkDdiSetVidPnSourceAddress</a>
-</dt>
-</dl>
+
  
 
  

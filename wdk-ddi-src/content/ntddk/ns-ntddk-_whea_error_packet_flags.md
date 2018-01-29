@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : e1dae7df-7d81-42cc-9a01-44345f53ba4e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS
+ms.keywords : WHEA_ERROR_PACKET_FLAGS, _WHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS union [WHEA Drivers and Applications], whearef_c193e4e7-f233-4de0-93ac-5e7b841a6c6e.xml, whea.whea_error_packet_flags, PWHEA_ERROR_PACKET_FLAGS union pointer [WHEA Drivers and Applications], *PWHEA_ERROR_PACKET_FLAGS, ntddk/WHEA_ERROR_PACKET_FLAGS, ntddk/PWHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_PACKET_FLAGS
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS"
 ---
 
@@ -55,13 +59,17 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 
 ## Members
 
-        
-            `AsULONG`
 
-            A ULONG representation of the contents of the WHEA_ERROR_PACKET_FLAGS union.
+`AsULONG`
 
-    ## Remarks
-        The WHEA_ERROR_PACKET_FLAGS union describes the error condition reported by using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.
+A ULONG representation of the contents of the WHEA_ERROR_PACKET_FLAGS union.
+
+`DUMMYSTRUCTNAME`
+
+
+
+## Remarks
+The WHEA_ERROR_PACKET_FLAGS union describes the error condition reported by using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -71,16 +79,12 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/d2ded330-edcc-4bdd-9b52-73c1961d8ef2">Predictive Failure Analysis (PFA)</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
-</dt>
-</dl>
+
  
 
  

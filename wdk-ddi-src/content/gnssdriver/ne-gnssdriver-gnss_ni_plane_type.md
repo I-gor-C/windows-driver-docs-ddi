@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : F06FFABA-D7AB-4301-9F73-CE4BBB0B8AA6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_NI_PLANE_TYPE, GNSS_NI_PLANE_TYPE
+ms.keywords : sensors.gnss_ni_plane_type, GNSS_NI_SUPL, gnssdriver/GNSS_NI_CP, gnssdriver/GNSS_NI_V2UPL, gnssdriver/GNSS_NI_PLANE_TYPE, GNSS_NI_V2UPL, gnssdriver/GNSS_NI_SUPL, GNSS_NI_CP, GNSS_NI_PLANE_TYPE, GNSS_NI_PLANE_TYPE enumeration [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_NI_PLANE_TYPE
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_NI_PLANE_TYPE
 ---
 

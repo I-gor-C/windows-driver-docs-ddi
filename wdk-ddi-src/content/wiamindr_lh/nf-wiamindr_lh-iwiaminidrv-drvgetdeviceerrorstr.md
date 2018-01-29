@@ -7,8 +7,8 @@ old-location : image\iwiaminidrv_drvgetdeviceerrorstr.htm
 old-project : image
 ms.assetid : c34a6834-8875-400c-9634-6c2b9b68164f
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : IWiaMiniDrv, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr
+ms.date : 1/18/2018
+ms.keywords : wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr, IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr, image.iwiaminidrv_drvgetdeviceerrorstr, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IWiaMiniDrv.drvGetDeviceErrorStr
-req.alt-loc : wiamindr_lh.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wiamindr_lh.h
 req.dll : 
 req.irql : 
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -75,7 +79,7 @@ On success, the method should return S_OK and clear the device error value point
 
 ## Remarks
 
-To obtain an error string that describes a device-specific minidriver-generated error value, the WIA service calls the <b>IWiaMiniDrv::drvGetDeviceErrorStr</b> method. In response to this call, the minidriver should use <b>CoTaskMemAlloc</b> (described in the Microsoft Windows SDK documentation) to allocate memory that will contain a localized Unicode string corresponding to the error code passed to the minidriver. The WIA service (or an application) will free the memory. It is likely that an application will display the string, so it should be meaningful to an end user. The string should be loaded from a resource file, so that it can be localized into a variety of languages.</p>
+To obtain an error string that describes a device-specific minidriver-generated error value, the WIA service calls the <b>IWiaMiniDrv::drvGetDeviceErrorStr</b> method. In response to this call, the minidriver should use <b>CoTaskMemAlloc</b> (described in the Microsoft Windows SDK documentation) to allocate memory that will contain a localized Unicode string corresponding to the error code passed to the minidriver. The WIA service (or an application) will free the memory. It is likely that an application will display the string, so it should be meaningful to an end user. The string should be loaded from a resource file, so that it can be localized into a variety of languages.
 
 ## Requirements
 | &nbsp; | &nbsp; |

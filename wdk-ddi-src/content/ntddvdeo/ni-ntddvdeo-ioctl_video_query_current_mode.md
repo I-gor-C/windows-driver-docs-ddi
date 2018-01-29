@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 16ce3db9-0295-4adc-9dc3-492b711adf2e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS
+ms.keywords : display.ioctl_video_query_current_mode, IOCTL_VIDEO_QUERY_CURRENT_MODE control code [Display Devices], IOCTL_VIDEO_QUERY_CURRENT_MODE, ntddvdeo/IOCTL_VIDEO_QUERY_CURRENT_MODE, Video_IOCTLs_18538d0f-5243-4326-850d-9fedf30e17cb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_VIDEO_QUERY_CURRENT_MODE
-req.alt-loc : Ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_CURRENT_MODE IOCTL
-Returns information about the current adapter mode. Miniport drivers are required to support this modal request.
-
-
-
 Returns information about the current adapter mode. Miniport drivers are required to support this modal request.
 
 ### Major Code
@@ -63,7 +63,6 @@ The miniport driver returns the mode information in a <a href="..\ntddvdeo\ns-nt
 <text></text>
 
 ### Status Block
-I/O Status block
 If the miniport driver successfully returns the mode data, it sets the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure to <b>sizeof</b>(VIDEO_MODE_INFORMATION); otherwise, the miniport driver sets this member to zero.
 
 
@@ -74,16 +73,12 @@ If the miniport driver successfully returns the mode data, it sets the <b>Inform
 | **Header** | ntddvdeo.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

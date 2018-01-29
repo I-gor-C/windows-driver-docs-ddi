@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : BDE53311-589F-4458-9510-1B02F1BD0289
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : LAMP_INTENSITY_WHITE, LAMP_INTENSITY_WHITE
+ms.keywords : LAMP_INTENSITY_WHITE, stream.lamp_intensity_white, LAMP_INTENSITY_WHITE structure [Streaming Media Devices], lamp/LAMP_INTENSITY_WHITE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : LAMP_INTENSITY_WHITE
-req.alt-loc : lamp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : LAMP_INTENSITY_WHITE
 ---
 
@@ -46,10 +50,10 @@ typedef struct LAMP_INTENSITY_WHITE {
 
 ## Members
 
-        
-            `Value`
 
-            White light intensity in percentage (0-100).
+`Value`
+
+White light intensity in percentage (0-100).
 
 
 ## Requirements

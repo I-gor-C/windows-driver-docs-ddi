@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2D02D43F-495E-45EE-B932-C8924ADF05DC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSALLOCATORMODE, KSALLOCATORMODE
+ms.keywords : stream.ksallocatormode, ksproxy/KsAllocatorMode_User, KsAllocatorMode_User, KSALLOCATORMODE, ksproxy/KSALLOCATORMODE, KsAllocatorMode_Kernel, ksproxy/KsAllocatorMode_Kernel, KSALLOCATORMODE enumeration [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSALLOCATORMODE
-req.alt-loc : Ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSALLOCATORMODE
 ---
 

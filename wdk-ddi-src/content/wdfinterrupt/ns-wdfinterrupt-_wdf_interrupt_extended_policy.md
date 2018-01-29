@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 28cc79e8-7078-4b29-ab2a-2eeca5c5b8b3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_INTERRUPT_EXTENDED_POLICY, *PWDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY
+ms.keywords : _WDF_INTERRUPT_EXTENDED_POLICY, PWDF_INTERRUPT_EXTENDED_POLICY, wdf.wdf_interrupt_extended_policy, WDF_INTERRUPT_EXTENDED_POLICY structure, PWDF_INTERRUPT_EXTENDED_POLICY structure pointer, WDF_INTERRUPT_EXTENDED_POLICY, wdfinterrupt/PWDF_INTERRUPT_EXTENDED_POLICY, *PWDF_INTERRUPT_EXTENDED_POLICY, kmdf.wdf_interrupt_extended_policy, DFInterruptObjectRef_db1feccc-0171-4163-b95f-6be057430176.xml, wdfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.9
 req.umdf-ver : 
-req.alt-api : WDF_INTERRUPT_EXTENDED_POLICY
-req.alt-loc : wdfinterrupt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY"
 req.product : Windows 10 or later.
 ---
@@ -52,25 +56,25 @@ typedef struct _WDF_INTERRUPT_EXTENDED_POLICY {
 
 ## Members
 
-        
-            `Policy`
 
-            A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_policy.md">WDF_INTERRUPT_POLICY</a>-typed enumerator that specifies a processor affinity policy for the interrupt.
-        
-            `Priority`
+`Policy`
 
-            A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>-typed enumerator that specifies a priority for the interrupt.
-        
-            `Size`
+A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_policy.md">WDF_INTERRUPT_POLICY</a>-typed enumerator that specifies a processor affinity policy for the interrupt.
 
-            The size, in bytes, of this structure.
-        
-            `TargetProcessorSetAndGroup`
+`Priority`
 
-            A GROUP_AFFINITY structure that specifies a processor group and a processor affinity mask within the group, if the <i>Policy</i> parameter is set to <b>WdfIrqPolicySpecifiedProcessors</b>. The GROUP_AFFINITY structure is defined in <i>Winnt.h</i>.
+A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>-typed enumerator that specifies a priority for the interrupt.
 
-    ## Remarks
-        The <b>WDF_INTERRUPT_EXTENDED_POLICY</b> structure is used as input the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetextendedpolicy.md">WdfInterruptSetExtendedPolicy</a>. 
+`Size`
+
+The size, in bytes, of this structure.
+
+`TargetProcessorSetAndGroup`
+
+A GROUP_AFFINITY structure that specifies a processor group and a processor affinity mask within the group, if the <i>Policy</i> parameter is set to <b>WdfIrqPolicySpecifiedProcessors</b>. The GROUP_AFFINITY structure is defined in <i>Winnt.h</i>.
+
+## Remarks
+The <b>WDF_INTERRUPT_EXTENDED_POLICY</b> structure is used as input the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetextendedpolicy.md">WdfInterruptSetExtendedPolicy</a>. 
 
 To initialize a <b>WDF_INTERRUPT_EXTENDED_POLICY</b> structure, your driver must call <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a>.
 
@@ -82,16 +86,12 @@ To initialize a <b>WDF_INTERRUPT_EXTENDED_POLICY</b> structure, your driver must
 | **Minimum UMDF version** |  |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a>
-</dt>
-<dt>
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetextendedpolicy.md">WdfInterruptSetExtendedPolicy</a>
-</dt>
-</dl>
+
+<a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a>
+
  
 
  

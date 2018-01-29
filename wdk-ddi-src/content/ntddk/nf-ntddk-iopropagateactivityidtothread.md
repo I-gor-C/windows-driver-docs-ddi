@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8E824793-53DF-4573-81B0-6FE925CCB4C4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoPropagateActivityIdToThread
+ms.keywords : IoPropagateActivityIdToThread routine [Kernel-Mode Driver Architecture], ntddk/IoPropagateActivityIdToThread, IoPropagateActivityIdToThread, kernel.iopropagateactivityidtothread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoPropagateActivityIdToThread
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -60,21 +64,35 @@ A pointer to memory allocated by the caller to store the ID in the thread.
 
 `OriginalId`
 
-
+TBD
 
 
 ## Return Value
 
 <b>IoPropagateActivityIdToThread</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>The IRP does not have an ID associated with it.
+</dl>
+</td>
+<td width="60%">
+The IRP does not have an ID associated with it.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 This routine should be used by drivers that are tracing aware and are issuing I/O on a worker thread. Note that such drivers must call <a href="..\ntddk\nf-ntddk-ioclearactivityidthread.md">IoClearActivityIdThread</a> with the <i>OriginalId</i> before they return control from the thread, if the call was successful.
 
-Drivers that use I/O work items do not need to call this routine because the I/O subsystem takes care of propagating activity IDs to threads in that case.</p>
+Drivers that use I/O work items do not need to call this routine because the I/O subsystem takes care of propagating activity IDs to threads in that case.
 
 ## Requirements
 | &nbsp; | &nbsp; |

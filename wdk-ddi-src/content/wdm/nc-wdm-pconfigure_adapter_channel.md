@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 964B305F-5B9E-4705-89BA-DBAE43464FB1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.configureadapterchannel, ConfigureAdapterChannel, ConfigureAdapterChannel callback function [Kernel-Mode Driver Architecture], ConfigureAdapterChannel, PCONFIGURE_ADAPTER_CHANNEL, PCONFIGURE_ADAPTER_CHANNEL, wdm/ConfigureAdapterChannel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ConfigureAdapterChannel
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -70,9 +74,23 @@ A pointer to the configuration parameters for the custom function that is specif
 ## Return Value
 
 <b>ConfigureAdapterChannel</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following status code.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_NOT_IMPLEMENTED</dt>
-</dl>The  DMA extension does not implement the function specified by <i>FunctionNumber</i>.
+</dl>
+</td>
+<td width="60%">
+The  DMA extension does not implement the function specified by <i>FunctionNumber</i>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -99,17 +117,12 @@ Typically, a custom function sets state information in the DMA controller to con
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
-</dt>
-<dt>
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-</dt>
-</dl>
+
  
 
  

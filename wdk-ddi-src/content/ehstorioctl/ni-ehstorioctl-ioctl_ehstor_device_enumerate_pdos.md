@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 900A8CAB-287D-4D92-B4CB-2959E87C8E67
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PDO_TYPE, PDO_TYPE
+ms.keywords : storage.ioctl_ehstor_device_enumerate_pdos, IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS control code [Storage Devices], IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS, ehstorioctl/IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
-req.alt-loc : EhStorIoctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PDO_TYPE
 ---
 
@@ -61,10 +65,6 @@ This only works because STATUS_BUFFER_OVERFLOW (0x80000005) is an NT_WARNING() v
 
 Caution is required here because IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS is defined with METHOD_BUFFERED, therefore I/O manager will attempt to copy this number of bytes into the output buffer.
 
-
-
-This IOCTL returns a result set containing the enumeration of all active storage Physical Device Objects (PDOs) associated with the given Addressable Command Target (ACT). The client may first probe for the required buffer size by issuing this IOCTL in the following manner:
-
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
@@ -91,7 +91,6 @@ OutputBufferLength indicates a buffer size of sufficient length to include the e
 <text></text>
 
 ### Status Block
-I/O Status block
 One of the following values may be returned in the Status field:
 
 
@@ -103,8 +102,6 @@ STATUS_SUCCESS - The output buffer contains the enumeration of the requested PDO
 </dl>
 
 
-STATUS_SUCCESS - The output buffer contains the enumeration of the requested PDOs.
-
 
 <dl>
 <dd>
@@ -114,8 +111,6 @@ STATUS_BUFFER_OVERFLOW - The Information field is set to the required buffer siz
 </dl>
 
 
-STATUS_BUFFER_OVERFLOW - The Information field is set to the required buffer size to contain the entire enumeration result set output.
-
 
 <dl>
 <dd>
@@ -123,9 +118,6 @@ STATUS_INVALID_BUFFER_SIZE - The output buffer length supplied is insufficient t
 
 </dd>
 </dl>
-
-
-STATUS_INVALID_BUFFER_SIZE - The output buffer length supplied is insufficient to contain the entire enumeration result set output.
 
 
 ## Requirements

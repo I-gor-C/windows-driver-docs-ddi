@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 93BAAF88-3F82-4E32-B403-4028ECF21F9A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPIN_MDL_CACHING_NOTIFICATION, *PKSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION
+ms.keywords : ks/KSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION, PKSPIN_MDL_CACHING_NOTIFICATION structure pointer [Streaming Media Devices], ks/PKSPIN_MDL_CACHING_NOTIFICATION, PKSPIN_MDL_CACHING_NOTIFICATION, *PKSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION structure [Streaming Media Devices], stream.kspin_mdl_caching_notification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPIN_MDL_CACHING_NOTIFICATION
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION"
 ---
 
@@ -47,14 +51,14 @@ typedef struct {
 
 ## Members
 
-        
-            `Buffer`
 
-            This member is used internally by the operating system.
-        
-            `Event`
+`Buffer`
 
-            This member is used internally by the operating system.
+This member is used internally by the operating system.
+
+`Event`
+
+This member is used internally by the operating system.
 
 
 ## Requirements

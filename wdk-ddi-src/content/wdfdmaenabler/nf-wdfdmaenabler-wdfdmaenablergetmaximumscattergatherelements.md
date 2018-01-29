@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : de02d40d-3438-4a34-9e2b-07a7d9c4c8ac
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaEnablerGetMaximumScatterGatherElements
+ms.keywords : wdfdmaenabler/WdfDmaEnablerGetMaximumScatterGatherElements, kmdf.wdfdmaenablergetmaximumscattergatherelements, wdf.wdfdmaenablergetmaximumscattergatherelements, WdfDmaEnablerGetMaximumScatterGatherElements, PFN_WDFDMAENABLERGETMAXIMUMSCATTERGATHERELEMENTS, WdfDmaEnablerGetMaximumScatterGatherElements method, DFDmaObjectRef_34ec0aef-b846-4b23-b9b3-01e8834821f7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDmaEnablerGetMaximumScatterGatherElements
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_PROFILE
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about this method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enabling-dma-transactions">Enabling DMA Transactions</a>.
 
-The following code example obtains the maximum number of scatter/gather elements for a specified DMA enabler object.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,14 +84,10 @@ The following code example obtains the maximum number of scatter/gather elements
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-</dt>
-<dt>
+
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements.md">WdfDmaEnablerSetMaximumScatterGatherElements</a>
-</dt>
-</dl>
+
  
 
  

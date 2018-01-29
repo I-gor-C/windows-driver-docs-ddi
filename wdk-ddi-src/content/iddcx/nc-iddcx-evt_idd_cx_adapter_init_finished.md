@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cbce9e1b-2f84-4653-8d3d-e5243a1f0eee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : WcsTranslateColors
+ms.keywords : display.evt_idd_cx_adapter_init_finished, EvtIddCxAdapterInitFinished callback function [Display Devices], EvtIddCxAdapterInitFinished, EVT_IDD_CX_ADAPTER_INIT_FINISHED, EVT_IDD_CX_ADAPTER_INIT_FINISHED, iddcx/EvtIddCxAdapterInitFinished, PFN_IDD_CX_ADAPTER_INIT_FINISHED callback function pointer [Display Devices], PFN_IDD_CX_ADAPTER_INIT_FINISHED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFN_IDD_CX_ADAPTER_INIT_FINISHED
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 

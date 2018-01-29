@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 79d63b5e-78b0-452a-aa84-695c59a7d4a5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetPortAttributesByWWN
+ms.keywords : fibreHBA_rtns_2cd8e0da-90d5-41bb-8bd9-ab2ee26ec772.xml, HBA_GetPortAttributesByWWN, storage.hba_getportattributesbywwn, hbaapi/HBA_GetPortAttributesByWWN, HBA_GetPortAttributesByWWN routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_GetPortAttributesByWWN
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -52,7 +56,7 @@ HBA_STATUS HBA_API HBA_GetPortAttributesByWWN(
 
 `Handle`
 
-
+TBD
 
 `PortWWN`
 
@@ -60,7 +64,7 @@ Contains the worldwide name (WWN) of the port whose attributes to retrieve. For 
 
 `PortAttributes`
 
-
+TBD
 
 
 ## Return Value
@@ -85,20 +89,14 @@ The <b>HBA_GetPortAttributesByWWN</b> routine serves a purpose very similar to t
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
-</dt>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_portattributes.md">HBA_PortAttributes</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

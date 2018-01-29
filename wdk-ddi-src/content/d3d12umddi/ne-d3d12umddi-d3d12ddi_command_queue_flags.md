@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A5EFE133-6F63-4EA4-8F7F-B2B6A4E1838C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_COMMAND_QUEUE_FLAGS, D3D12DDI_COMMAND_QUEUE_FLAGS
+ms.keywords : d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_PROCESS, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAG_PAGING, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAG_3D, display.d3d12ddi_command_queue_flags, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAG_COPY, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAG_NONE, D3D12DDI_COMMAND_QUEUE_FLAG_3D, D3D12DDI_COMMAND_QUEUE_FLAG_COMPUTE, D3D12DDI_COMMAND_QUEUE_FLAGS, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAG_COMPUTE, D3D12DDI_COMMAND_QUEUE_FLAG_COPY, D3D12DDI_COMMAND_QUEUE_FLAG_PAGING, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAGS, D3D12DDI_COMMAND_QUEUE_FLAGS enumeration [Display Devices], D3D12DDI_COMMAND_QUEUE_FLAG_NONE, D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE, d3d12umddi/D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE, D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_PROCESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_COMMAND_QUEUE_FLAGS
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_COMMAND_QUEUE_FLAGS
 ---
 
@@ -53,6 +57,11 @@ typedef enum D3D12DDI_COMMAND_QUEUE_FLAGS {
 ## Constants
 
 <table>
+
+<tr>
+<td>D3D12DDI_COMMAND_QUEUE_FLAG_0020_VIDEO_LEGACY</td>
+<td></td>
+</tr>
 
 <tr>
 <td>D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE</td>

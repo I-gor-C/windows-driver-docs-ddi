@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f2798729-98a2-44b6-94a6-180bb4db96cb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _OB_PRE_DUPLICATE_HANDLE_INFORMATION, *POB_PRE_DUPLICATE_HANDLE_INFORMATION, OB_PRE_DUPLICATE_HANDLE_INFORMATION
+ms.keywords : POB_PRE_DUPLICATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], OB_PRE_DUPLICATE_HANDLE_INFORMATION, kernel.ob_pre_duplicate_handle_information, OB_PRE_DUPLICATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/POB_PRE_DUPLICATE_HANDLE_INFORMATION, POB_PRE_DUPLICATE_HANDLE_INFORMATION, kstruct_c_5511a4ac-ea2e-412f-8514-021853d5abfd.xml, *POB_PRE_DUPLICATE_HANDLE_INFORMATION, wdm/OB_PRE_DUPLICATE_HANDLE_INFORMATION, _OB_PRE_DUPLICATE_HANDLE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2008 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OB_PRE_DUPLICATE_HANDLE_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*POB_PRE_DUPLICATE_HANDLE_INFORMATION, OB_PRE_DUPLICATE_HANDLE_INFORMATION"
 req.product : Windows 10 or later.
 ---
@@ -50,25 +54,25 @@ typedef struct _OB_PRE_DUPLICATE_HANDLE_INFORMATION {
 
 ## Members
 
-        
-            `DesiredAccess`
 
-            An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the access rights to grant for the handle. By default, this member equals <i>OriginalDesiredAccess</i>, but the <i>ObjectPreCallback</i> routine can modify this value to restrict the access that is granted. For a description of the access rights that drivers can use, see <a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a>.
-        
-            `OriginalDesiredAccess`
+`DesiredAccess`
 
-            An ACCESS_MASK value that specifies the original access that was requested for the handle.
-        
-            `SourceProcess`
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the access rights to grant for the handle. By default, this member equals <i>OriginalDesiredAccess</i>, but the <i>ObjectPreCallback</i> routine can modify this value to restrict the access that is granted. For a description of the access rights that drivers can use, see <a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a>.
 
-            A pointer to the process object for the process that is the source of the handle.
-        
-            `TargetProcess`
+`OriginalDesiredAccess`
 
-            A pointer to the process object for the process that receives the duplicated handle.
+An ACCESS_MASK value that specifies the original access that was requested for the handle.
 
-    ## Remarks
-        You can never add access rights beyond what is specified in the <b>DesiredAccess</b> member. If the access right is listed as a modifiable flag, the access right can be removed.
+`SourceProcess`
+
+A pointer to the process object for the process that is the source of the handle.
+
+`TargetProcess`
+
+A pointer to the process object for the process that receives the duplicated handle.
+
+## Remarks
+You can never add access rights beyond what is specified in the <b>DesiredAccess</b> member. If the access right is listed as a modifiable flag, the access right can be removed.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,16 +82,12 @@ typedef struct _OB_PRE_DUPLICATE_HANDLE_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
  
 
  

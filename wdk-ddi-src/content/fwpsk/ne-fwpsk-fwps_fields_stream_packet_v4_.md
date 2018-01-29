@@ -7,8 +7,8 @@ old-location : netvista\fwps_fields_stream_packet_v4.htm
 old-project : netvista
 ms.assetid : 454d9cb6-f4a8-406b-8cc4-39d96796ffc4
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FWPS_FIELDS_STREAM_PACKET_V4_, FWPS_FIELDS_STREAM_PACKET_V4
+ms.date : 1/18/2018
+ms.keywords : FWPS_FIELD_STREAM_PACKET_V4_IP_REMOTE_PORT, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELDS_STREAM_PACKET_V4, FWPS_FIELD_STREAM_PACKET_V4_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_DIRECTION, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_INTERFACE_TYPE, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_TUNNEL_TYPE, FWPS_FIELD_STREAM_PACKET_V4_INTERFACE_INDEX, netvista.fwps_fields_stream_packet_v4, FWPS_FIELD_STREAM_PACKET_V4_INTERFACE_TYPE, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_IP_REMOTE_PORT, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_SUB_INTERFACE_INDEX, FWPS_FIELDS_STREAM_PACKET_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_STREAM_PACKET_V4_FLAGS, FWPS_FIELDS_STREAM_PACKET_V4_, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_MAX, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_IP_LOCAL_PORT, FWPS_FIELD_STREAM_PACKET_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_STREAM_PACKET_V4_TUNNEL_TYPE, FWPS_FIELDS_STREAM_PACKET_V4, FWPS_FIELD_STREAM_PACKET_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_STREAM_PACKET_V4_INTERFACE_INDEX, FWPS_FIELD_STREAM_PACKET_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_STREAM_PACKET_V4_FLAGS, wfp_ref_5_const_3_data_fields_c752002f-ca36-435a-9abb-5119e247258a.xml, FWPS_FIELD_STREAM_PACKET_V4_MAX, FWPS_FIELD_STREAM_PACKET_V4_IP_REMOTE_ADDRESS, FWPS_FIELD_STREAM_PACKET_V4_DIRECTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FWPS_FIELDS_STREAM_PACKET_V4
-req.alt-loc : fwpsk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FWPS_FIELDS_STREAM_PACKET_V4
 ---
 
@@ -60,6 +64,11 @@ typedef enum FWPS_FIELDS_STREAM_PACKET_V4_ {
 ## Constants
 
 <table>
+
+<tr>
+<td>FWPS_FIELD_STREAM_PACKET_V4_COMPARTMENT_ID</td>
+<td></td>
+</tr>
 
 <tr>
 <td>FWPS_FIELD_STREAM_PACKET_V4_DIRECTION</td>
@@ -143,13 +152,10 @@ typedef enum FWPS_FIELDS_STREAM_PACKET_V4_ {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_STREAM_PACKET_V4 enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_STREAM_PACKET_V4 enumeration%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

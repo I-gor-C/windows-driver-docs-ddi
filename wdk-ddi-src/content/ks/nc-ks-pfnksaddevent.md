@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ff80bbc7-93b1-4319-a549-f896ce0f4611
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.avstrminiaddevent, AVStrMiniAddEvent, AVStrMiniAddEvent routine [Streaming Media Devices], AVStrMiniAddEvent, PFNKSADDEVENT, PFNKSADDEVENT, ks/AVStrMiniAddEvent, avstclbk_31147072-c3de-4b02-9fb1-b7f67765acc4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVStrMiniAddEvent
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -94,35 +98,24 @@ If an AVStream minidriver specifies <b>AddHandler</b> as non-NULL, AVStream does
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
-</dt>
-<dt>
+
 <a href="..\ks\nc-ks-pfnksremoveevent.md">AVStrMiniRemoveEvent</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a>
+
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
+
+<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
+
+<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
+
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
+
+<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
+
  
 
  

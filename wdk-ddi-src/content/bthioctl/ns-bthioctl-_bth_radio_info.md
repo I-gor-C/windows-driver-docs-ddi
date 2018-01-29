@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 24e28912-13d1-460f-8d32-78bb3715adc6
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_RADIO_INFO, *PBTH_RADIO_INFO, BTH_RADIO_INFO
+ms.keywords : bthioctl/BTH_RADIO_INFO, BTH_RADIO_INFO, _BTH_RADIO_INFO, *PBTH_RADIO_INFO, bthioctl/PBTH_RADIO_INFO, bltooth.bth_radio_info, PBTH_RADIO_INFO structure pointer [Bluetooth Devices], PBTH_RADIO_INFO, BTH_RADIO_INFO structure [Bluetooth Devices], bth_structs_5fa8e736-47a7-4ba5-bd40-f375ac6db8af.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTH_RADIO_INFO
-req.alt-loc : bthioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTH_RADIO_INFO, BTH_RADIO_INFO"
 ---
 
@@ -49,25 +53,25 @@ typedef struct _BTH_RADIO_INFO {
 
 ## Members
 
-        
-            `lmpSubversion`
 
-            The minor version number for the LMP that is used by the local radio.
-        
-            `lmpSupportedFeatures`
+`lmpSubversion`
 
-            A bitmap of Link Management Protocol (LMP) features that are supported by the local radio.
-        
-            `lmpVersion`
+The minor version number for the LMP that is used by the local radio.
 
-            The major version number for the LMP that is used by the local radio.
-        
-            `mfg`
+`lmpSupportedFeatures`
 
-            The identification of the manufacturer.
+A bitmap of Link Management Protocol (LMP) features that are supported by the local radio.
 
-    ## Remarks
-        The BTH_RADIO_INFO structure is returned as part of the output buffer of 
+`lmpVersion`
+
+The major version number for the LMP that is used by the local radio.
+
+`mfg`
+
+The identification of the manufacturer.
+
+## Remarks
+The BTH_RADIO_INFO structure is returned as part of the output buffer of 
     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_local_info.md">IOCTL_BTH_GET_LOCAL_INFO</a>. The local
     radio information is returned in the 
     <b>radioInfo</b> member of the 
@@ -81,16 +85,12 @@ typedef struct _BTH_RADIO_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_local_info.md">IOCTL_BTH_GET_LOCAL_INFO</a>
-</dt>
-<dt>
+
 <a href="..\bthioctl\ns-bthioctl-_bth_local_radio_info.md">BTH_LOCAL_RADIO_INFO</a>
-</dt>
-</dl>
+
  
 
  

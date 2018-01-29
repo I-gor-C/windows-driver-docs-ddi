@@ -7,8 +7,8 @@ old-location : netvista\ril3gpptone_2.htm
 old-project : netvista
 ms.assetid : 05981a37-ce5c-4214-82b7-c8705102bd6a
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL3GPPTONE, RIL3GPPTONE
+ms.date : 1/18/2018
+ms.keywords : RIL_3GPPTONE_BUSY, rilapitypes/RIL_3GPPTONE_CALLDROPPED, RIL3GPPTONE, RIL_3GPPTONE_NUMBERUNOBTAINABLE, rilapitypes/RIL_3GPPTONE_BUSY, rilapitypes/RIL_3GPPTONE_MAX, rilapitypes/RIL_3GPPTONE_NUMBERUNOBTAINABLE, rilapitypes/RIL3GPPTONE, RIL3GPPTONE enumeration [Network Drivers Starting with Windows Vista], RIL_3GPPTONE_AUTHENTICATIONFAILURE, RIL_3GPPTONE_CONGESTION, netvista.ril3gpptone_2, rilapitypes/RIL_3GPPTONE_RINGBACK, RIL_3GPPTONE_CALLDROPPED, rilapitypes/RIL_3GPPTONE_AUTHENTICATIONFAILURE, rilapitypes/RIL_3GPPTONE_CONGESTION, RIL_3GPPTONE_RINGBACK, RIL_3GPPTONE_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL3GPPTONE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RIL3GPPTONE
 req.product : Windows 10 or later.
 ---
@@ -87,6 +91,11 @@ typedef enum _RIL3GPPTONE {
 
 <tr>
 <td>RIL_3GPPTONE_RINGBACK</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_3GPPTONE_TONEOFF</td>
 <td></td>
 </tr>
 </table>

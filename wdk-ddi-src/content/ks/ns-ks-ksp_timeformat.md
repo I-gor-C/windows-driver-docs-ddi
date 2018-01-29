@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 18ce5fc5-927c-4261-8966-bb12849b95c9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSP_TIMEFORMAT, *PKSP_TIMEFORMAT, KSP_TIMEFORMAT
+ms.keywords : PKSP_TIMEFORMAT structure pointer [Streaming Media Devices], *PKSP_TIMEFORMAT, ks/PKSP_TIMEFORMAT, KSP_TIMEFORMAT, stream.ksp_timeformat, ks/KSP_TIMEFORMAT, KSP_TIMEFORMAT structure [Streaming Media Devices], ks-struct_086a975b-f249-44e9-b1fa-4a945509722e.xml, PKSP_TIMEFORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSP_TIMEFORMAT
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSP_TIMEFORMAT, KSP_TIMEFORMAT"
 ---
 
@@ -49,25 +53,25 @@ typedef struct {
 
 ## Members
 
-        
-            `Property`
 
-            Specifies a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure.
-        
-            `SourceFormat`
+`Property`
 
-            Pointer to a GUID that specifies the format to convert. If <b>NULL</b>, the current format is used.
-        
-            `TargetFormat`
+Specifies a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure.
 
-            Pointer to a GUID that specifies the target format. If <b>NULL</b>, the current format is used.
-        
-            `Time`
+`SourceFormat`
 
-            Specifies the time value to convert.
+Pointer to a GUID that specifies the format to convert. If <b>NULL</b>, the current format is used.
 
-    ## Remarks
-        The fields of the structure correspond one to one with DirectShow's IMediaSeeking::ConvertTimeFormat.
+`TargetFormat`
+
+Pointer to a GUID that specifies the target format. If <b>NULL</b>, the current format is used.
+
+`Time`
+
+Specifies the time value to convert.
+
+## Remarks
+The fields of the structure correspond one to one with DirectShow's IMediaSeeking::ConvertTimeFormat.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565181">KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT</a>
-</dt>
-</dl>
+
  
 
  

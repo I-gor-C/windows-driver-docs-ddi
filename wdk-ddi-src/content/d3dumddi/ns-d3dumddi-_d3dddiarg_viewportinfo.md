@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 37e69980-fb3a-4abe-a76b-b2bd6827ae64
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_VIEWPORTINFO, D3DDDIARG_VIEWPORTINFO
+ms.keywords : display.d3dddiarg_viewportinfo, d3dumddi/D3DDDIARG_VIEWPORTINFO, D3DDDIARG_VIEWPORTINFO, _D3DDDIARG_VIEWPORTINFO, UMDisplayDriver_param_Structs_ece888d8-61e4-4e7f-b052-c6e0169a6a97.xml, D3DDDIARG_VIEWPORTINFO structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_VIEWPORTINFO
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_VIEWPORTINFO
 ---
 
@@ -49,25 +53,25 @@ typedef struct _D3DDDIARG_VIEWPORTINFO {
 
 ## Members
 
-        
-            `Height`
 
-            [in] The height, in screen coordinates, of the view-clipping rectangle where the application is rendering.
-        
-            `Width`
+`Height`
 
-            [in] The width, in screen coordinates, of the view-clipping rectangle where the application is rendering.
-        
-            `X`
+[in] The height, in screen coordinates, of the view-clipping rectangle where the application is rendering.
 
-            [in] The x coordinate, in screen coordinates, for the upper-left corner of the view-clipping rectangle.
-        
-            `Y`
+`Width`
 
-            [in] The y coordinate, in screen coordinates, for the upper-left corner of the view-clipping rectangle.
+[in] The width, in screen coordinates, of the view-clipping rectangle where the application is rendering.
 
-    ## Remarks
-        The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setviewport.md">SetViewport</a> function should update the viewport portion of its internal rendering context with the location and size values that are specified in the D3DDDIARG_VIEWPORTINFO structure. The driver can use this information to perform guard band clipping.
+`X`
+
+[in] The x coordinate, in screen coordinates, for the upper-left corner of the view-clipping rectangle.
+
+`Y`
+
+[in] The y coordinate, in screen coordinates, for the upper-left corner of the view-clipping rectangle.
+
+## Remarks
+The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setviewport.md">SetViewport</a> function should update the viewport portion of its internal rendering context with the location and size values that are specified in the D3DDDIARG_VIEWPORTINFO structure. The driver can use this information to perform guard band clipping.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _D3DDDIARG_VIEWPORTINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setviewport.md">SetViewport</a>
-</dt>
-</dl>
+
  
 
  

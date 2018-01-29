@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 23DBA3D8-FC27-4F5D-9F1C-A22B6C2856D2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsNotifications, IPortClsNotifications::AllocNotificationBuffer, AllocNotificationBuffer
+ms.keywords : AllocNotificationBuffer method [Audio Devices], IPortClsNotifications interface, portcls/IPortClsNotifications::AllocNotificationBuffer, IPortClsNotifications, AllocNotificationBuffer method [Audio Devices], IPortClsNotifications::AllocNotificationBuffer, AllocNotificationBuffer, IPortClsNotifications interface [Audio Devices], AllocNotificationBuffer method, audio.iportclsnotifications_allocnotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1703 and later ve
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPortClsNotifications.AllocNotificationBuffer
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -97,11 +101,8 @@ Callers of <b>AllocNotificationBuffer</b> must be running at IRQL &lt;= DISPATCH
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iportclsnotifications.md">IPortClsNotifications</a>
-</dt>
-</dl>
+
  
 
  

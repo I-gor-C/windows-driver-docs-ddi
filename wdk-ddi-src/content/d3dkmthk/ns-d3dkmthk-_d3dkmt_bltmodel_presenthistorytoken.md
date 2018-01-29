@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 841c1e6f-4561-4c37-a509-d9c0e9054022
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN, D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN
+ms.keywords : display.d3dkmt_bltmodel_presenthistorytoken, D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN, _D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN, D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN structure [Display Devices], d3dkmthk/D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN, OpenGL_Structs_45310e71-a7c5-42c6-be41-e48e30203c42.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN is supported beg
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN {
 
 ## Members
 
-        
-            `DirtyRegions`
 
-            [in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the bitblt surface.
-        
-            `EventId`
+`DirtyRegions`
 
-            [in] A 64-bit value that identifies the bitblt event.
-        
-            `hLogicalSurface`
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the bitblt surface.
 
-            [in] A 64-bit value that specifies the handle to a logical surface to copy from.
-        
-            `hPhysicalSurface`
+`EventId`
 
-            [in] A 64-bit value that specifies the handle to a physical surface to copy to.
+[in] A 64-bit value that identifies the bitblt event.
+
+`hLogicalSurface`
+
+[in] A 64-bit value that specifies the handle to a logical surface to copy from.
+
+`hPhysicalSurface`
+
+[in] A 64-bit value that specifies the handle to a physical surface to copy to.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : CE8160C5-8C64-4BA5-864E-EC634754E062
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _GET_BAND_METADATA_PARAMETERS, *PGET_BAND_METADATA_PARAMETERS, GET_BAND_METADATA_PARAMETERS
+ms.keywords : PGET_BAND_METADATA_PARAMETERS structure pointer [Storage Devices], PGET_BAND_METADATA_PARAMETERS, ehstorbandmgmt/PGET_BAND_METADATA_PARAMETERS, *PGET_BAND_METADATA_PARAMETERS, _GET_BAND_METADATA_PARAMETERS, GET_BAND_METADATA_PARAMETERS structure [Storage Devices], GET_BAND_METADATA_PARAMETERS, storage.get_band_metadata_parameters, ehstorbandmgmt/GET_BAND_METADATA_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GET_BAND_METADATA_PARAMETERS
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGET_BAND_METADATA_PARAMETERS, GET_BAND_METADATA_PARAMETERS"
 ---
 
@@ -50,29 +54,29 @@ typedef struct _GET_BAND_METADATA_PARAMETERS {
 
 ## Members
 
-        
-            `BandId`
 
-            The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
-        
-            `BandStart`
+`BandId`
 
-            The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
-        
-            `MetadataOffset`
+The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
 
-            The offset from the start of the band metadata property  to retrieve  data from.
-        
-            `MetadataSize`
+`BandStart`
 
-            The length of metadata bytes to retrieve.
-        
-            `StructSize`
+The starting byte location on the storage device to begin a band search. An attempt is made to match a band at or after <b>BandStart</b>.
 
-            The size of this structure in bytes. Set to <b>sizeof</b>(GET_BAND_METADATA_PARAMETERS).
+`MetadataOffset`
 
-    ## Remarks
-        Precedence is given to <b>BandID</b> for band selection.  If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_get_band_metadata.md">IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA</a>.
+The offset from the start of the band metadata property  to retrieve  data from.
+
+`MetadataSize`
+
+The length of metadata bytes to retrieve.
+
+`StructSize`
+
+The size of this structure in bytes. Set to <b>sizeof</b>(GET_BAND_METADATA_PARAMETERS).
+
+## Remarks
+Precedence is given to <b>BandID</b> for band selection.  If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_get_band_metadata.md">IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA</a>.
 
 If <b>BandID</b> and <b>BandStart</b> are both set to –1,  then the <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_get_band_metadata.md">IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA</a> returns metadata for the global band.
 
@@ -86,16 +90,12 @@ If <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_get_band_m
 | **Minimum UMDF version** |  |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
-</dt>
-<dt>
+
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_get_band_metadata.md">IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7da30e14-7df4-41e2-b2e3-081c55d68db6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_STREAM_STATE_FILTER_DATA, DXVAHDDDI_STREAM_STATE_FILTER_DATA
+ms.keywords : DXVA2_Structs_e20d3d19-75a9-4539-888f-4c3c73cc02c8.xml, d3dumddi/DXVAHDDDI_STREAM_STATE_FILTER_DATA, DXVAHDDDI_STREAM_STATE_FILTER_DATA, display.dxvahdddi_stream_state_filter_data, DXVAHDDDI_STREAM_STATE_FILTER_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_FILTER_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_FILTER_DATA is supported begi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_STREAM_STATE_FILTER_DATA
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_STREAM_STATE_FILTER_DATA
 ---
 
@@ -47,17 +51,17 @@ typedef struct _DXVAHDDDI_STREAM_STATE_FILTER_DATA {
 
 ## Members
 
-        
-            `Enable`
 
-            [in] A Boolean value that specifies whether the filter is enabled. The default value is <b>FALSE</b>, which indicates that the filter is disabled.
-        
-            `Level`
+`Enable`
 
-            [in] An INT value that specifies the filter level. The default value is the value from the <b>Default</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure.
+[in] A Boolean value that specifies whether the filter is enabled. The default value is <b>FALSE</b>, which indicates that the filter is disabled.
 
-    ## Remarks
-        The level that is specified in the <b>Level</b> member must be within the range that the driver supplies in the members of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPFILTERRANGE value set.
+`Level`
+
+[in] An INT value that specifies the filter level. The default value is the value from the <b>Default</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure.
+
+## Remarks
+The level that is specified in the <b>Level</b> member must be within the range that the driver supplies in the members of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPFILTERRANGE value set.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,16 +71,12 @@ typedef struct _DXVAHDDDI_STREAM_STATE_FILTER_DATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a>
+
  
 
  

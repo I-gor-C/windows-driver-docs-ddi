@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8bad169a-3a89-460d-9e6e-e8c1994970a8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest, IWDFIoRequest::GetRequestorProcessId, GetRequestorProcessId
+ms.keywords : IWDFIoRequest interface, GetRequestorProcessId method, umdf.iwdfiorequest_getrequestorprocessid, wudfddi/IWDFIoRequest::GetRequestorProcessId, GetRequestorProcessId method, GetRequestorProcessId method, IWDFIoRequest interface, IWDFIoRequest::GetRequestorProcessId, UMDFRequestObjectRef_9464f328-c7a7-4126-896c-69bc4ab0b5ba.xml, IWDFIoRequest, wdf.iwdfiorequest_getrequestorprocessid, GetRequestorProcessId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoRequest.GetRequestorProcessId
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 <b>GetRequestorProcessId</b> returns the identifier of the process that sent the I/O request.
 
-<b>GetRequestorProcessId</b> returns the identifier of the process that sent the I/O request.
-
-<b>GetRequestorProcessId</b> returns the identifier of the process that sent the I/O request.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,11 +74,8 @@ This function has no parameters.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-</dl>
+
  
 
  

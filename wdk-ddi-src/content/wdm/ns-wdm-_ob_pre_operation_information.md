@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2fe0f1aa-cf9f-4b45-8c34-a6d810fd461a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _OB_PRE_OPERATION_INFORMATION, *POB_PRE_OPERATION_INFORMATION, OB_PRE_OPERATION_INFORMATION
+ms.keywords : wdm/POB_PRE_OPERATION_INFORMATION, _OB_PRE_OPERATION_INFORMATION, OB_PRE_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/OB_PRE_OPERATION_INFORMATION, kernel.ob_pre_operation_information, OB_PRE_OPERATION_INFORMATION, POB_PRE_OPERATION_INFORMATION, *POB_PRE_OPERATION_INFORMATION, POB_PRE_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_c_36dbceed-ec59-4fe7-885f-93386ea7b3e9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2008 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OB_PRE_OPERATION_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*POB_PRE_OPERATION_INFORMATION, OB_PRE_OPERATION_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : OB_PRE_OPERATION_INFORMATION, *POB_PRE_OPERATION_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -58,26 +62,26 @@ typedef struct _OB_PRE_OPERATION_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            A pointer to driver-specific context information for the operation. By default, the Filter Manager sets this member to <b>NULL</b>, but the <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> routine can reset the <b>CallContext</b> member in a driver-specific manner. The Filter Manager passes this value to the matching <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a> routine.
-        
-            `Object`
+`CallContext`
 
-            A pointer to the process or thread object that is the target of the handle operation.
-        
-            `ObjectType`
+A pointer to driver-specific context information for the operation. By default, the Filter Manager sets this member to <b>NULL</b>, but the <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> routine can reset the <b>CallContext</b> member in a driver-specific manner. The Filter Manager passes this value to the matching <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a> routine.
 
-            A pointer to the object type of the object. This member is <b>PsProcessType</b> for a process or <b>PsThreadType</b> for a thread.
-        
-            `Operation`
+`Object`
 
-            The type of handle operation. This member might be one of the following values:
-        
-            `Parameters`
+A pointer to the process or thread object that is the target of the handle operation.
 
-            A pointer to an <a href="..\wdm\ns-wdm-_ob_pre_operation_parameters.md">OB_PRE_OPERATION_PARAMETERS</a> union that contains operation-specific information. The <b>Operation</b> member determines which member of the union is valid.
+`ObjectType`
+
+A pointer to the object type of the object. This member is <b>PsProcessType</b> for a process or <b>PsThreadType</b> for a thread.
+
+`Operation`
+
+The type of handle operation. This member might be one of the following values:
+
+`Parameters`
+
+A pointer to an <a href="..\wdm\ns-wdm-_ob_pre_operation_parameters.md">OB_PRE_OPERATION_PARAMETERS</a> union that contains operation-specific information. The <b>Operation</b> member determines which member of the union is valid.
 
 
 ## Requirements
@@ -88,19 +92,14 @@ typedef struct _OB_PRE_OPERATION_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_ob_pre_operation_parameters.md">OB_PRE_OPERATION_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
+
+<a href="..\wdm\ns-wdm-_ob_pre_operation_parameters.md">OB_PRE_OPERATION_PARAMETERS</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 26ce460f-b12d-4e5e-994a-047a1853325d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PDO_INFORMATION, *PPDO_INFORMATION, PDO_INFORMATION
+ms.keywords : mpiodisk/PDO_INFORMATION, mpiodisk/PPDO_INFORMATION, *PPDO_INFORMATION, PPDO_INFORMATION structure pointer [Storage Devices], storage.pdo_information, PPDO_INFORMATION, PDO_INFORMATION structure [Storage Devices], _PDO_INFORMATION, PDO_INFORMATION, structs-scsibus_da7fe7ec-475b-4779-b4ed-7cf903fe2525.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PDO_INFORMATION
-req.alt-loc : mpiodisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PPDO_INFORMATION, PDO_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PDO_INFORMATION, *PPDO_INFORMATION
 ---
 
 # _PDO_INFORMATION structure
@@ -52,34 +56,34 @@ typedef struct _PDO_INFORMATION {
 
 ## Members
 
-        
-            `DeviceState`
 
-            An unsigned 32-bitfield that represents whether the path, through which this instance of the LUN was exposed, is usable.
-        
-            `Identifier`
+`DeviceState`
 
-            An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.
-        
-            `IdentifierLength`
+An unsigned 32-bitfield that represents whether the path, through which this instance of the LUN was exposed, is usable.
 
-            An unsigned 32-bitfield that represents the length of the identifier of the LUN's controller.
-        
-            `IdentifierType`
+`Identifier`
 
-            An unsigned 32-bitfield that represents the identifier type of the LUN's controller.
-        
-            `Pad`
+An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.
 
-            Should be zero.
-        
-            `PathIdentifier`
+`IdentifierLength`
 
-            An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.
-        
-            `ScsiAddress`
+An unsigned 32-bitfield that represents the length of the identifier of the LUN's controller.
 
-            A PDOSCSI_ADDR structure that represents the SCSI address of the LUN's instance that corresponds to a particular path.
+`IdentifierType`
+
+An unsigned 32-bitfield that represents the identifier type of the LUN's controller.
+
+`Pad`
+
+Should be zero.
+
+`PathIdentifier`
+
+An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.
+
+`ScsiAddress`
+
+A PDOSCSI_ADDR structure that represents the SCSI address of the LUN's instance that corresponds to a particular path.
 
 
 ## Requirements

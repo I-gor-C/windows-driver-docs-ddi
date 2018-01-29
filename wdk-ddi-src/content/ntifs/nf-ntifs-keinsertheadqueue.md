@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 82e0bf14-b751-4919-b8d0-26fc7c5598a8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeInsertHeadQueue
+ms.keywords : KeInsertHeadQueue routine [Installable File System Drivers], keref_a3279265-434b-42d6-95d9-5a8a12f54c9b.xml, KeInsertHeadQueue, ifsk.keinsertheadqueue, ntifs/KeInsertHeadQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeInsertHeadQueue
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -52,7 +56,6 @@ LONG KeInsertHeadQueue(
 `Queue`
 
 Pointer to an initialized queue object for which the caller provides resident storage in nonpaged pool. This structure is defined as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -68,8 +71,7 @@ Pointer to an initialized queue object for which the caller provides resident st
 } KQUEUE, *PKQUEUE, *RESTRICTED_POINTER PRKQUEUE;</pre>
 </td>
 </tr>
-</table></span></div>
-<table>
+</table></span></div><table>
 <tr>
 <th>Member</th>
 <th>Meaning</th>
@@ -159,26 +161,18 @@ For more information about using driver-managed internal queues, see <a href="ht
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-keinitializequeue.md">KeInitializeQueue</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-keinsertqueue.md">KeInsertQueue</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
+
 <a href="..\ntifs\nf-ntifs-keremovequeue.md">KeRemoveQueue</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-keinitializequeue.md">KeInitializeQueue</a>
+
  
 
  

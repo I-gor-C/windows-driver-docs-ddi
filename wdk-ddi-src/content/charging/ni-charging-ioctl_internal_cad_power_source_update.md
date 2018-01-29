@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 9D49DA3A-D19E-4834-B5B4-CEF0F235F954
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _POWERSOURCEID, POWERSOURCEID, *PPOWERSOURCEID
+ms.keywords : battery.ioctl_internal_cad_power_source_update, IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE control code [Battery Devices], IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE, charging/IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE
-req.alt-loc : charging.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : POWERSOURCEID, *PPOWERSOURCEID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPOWERSOURCEID, POWERSOURCEID"
 ---
 
 # IOCTL_INTERNAL_CAD_POWER_SOURCE_UPDATE IOCTL

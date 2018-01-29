@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d726d974-a877-464d-9721-6caf8a8402bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_RSCN_EventInfo, HBA_RSCN_EVENTINFO, *PHBA_RSCN_EVENTINFO
+ms.keywords : hbaapi/HBA_RSCN_EventInfo, HBA_RSCN_EVENTINFO structure [Storage Devices], storage.hba_rscn_eventinfo, PHBA_RSCN_EVENTINFO structure pointer [Storage Devices], HBA_RSCN_EventInfo structure [Storage Devices], hbaapi/PHBA_RSCN_EVENTINFO, HBA_RSCN_EventInfo, PHBA_RSCN_EVENTINFO, structs-Fibre_c0cb4c14-5ff5-44cb-abb4-08673227f193.xml, *PHBA_RSCN_EVENTINFO, HBA_RSCN_EVENTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_RSCN_EVENTINFO
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : HBA_RSCN_EVENTINFO, *PHBA_RSCN_EVENTINFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHBA_RSCN_EVENTINFO, HBA_RSCN_EVENTINFO"
 ---
 
 # HBA_RSCN_EventInfo structure
@@ -48,18 +52,18 @@ typedef struct HBA_RSCN_EventInfo {
 
 ## Members
 
-        
-            `NPortPage`
 
-            Contains port page information. For information about what values this member can have, see section entitled "Affected N-Port Pages" in the <i>FC-FS </i>specification for RSCN ELS.
-        
-            `PortFcId`
+`NPortPage`
 
-            Indicates the port of type Nx_Port through which the event occurred. For a definition of Nx_Port, see the T11 committee's <i>Fibre Channel HBA API</i>.specification.
-        
-            `Reserved`
+Contains port page information. For information about what values this member can have, see section entitled "Affected N-Port Pages" in the <i>FC-FS </i>specification for RSCN ELS.
 
-            Reserved.
+`PortFcId`
+
+Indicates the port of type Nx_Port through which the event occurred. For a definition of Nx_Port, see the T11 committee's <i>Fibre Channel HBA API</i>.specification.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct HBA_RSCN_EventInfo {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
-</dt>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_link_eventinfo.md">HBA_Link_EventInfo</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_link_eventinfo.md">HBA_Link_EventInfo</a>
+
  
 
  

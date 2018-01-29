@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7AF6C9AF-8955-4F09-A42C-097B4AD1CD3A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode, IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings
+ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetDeviceAttributeSteppings method, GetDeviceAttributeSteppings, portcls/IMiniportAudioEngineNode::GetDeviceAttributeSteppings, IMiniportAudioEngineNode, IMiniportAudioEngineNode::GetDeviceAttributeSteppings, audio.iminiportaudioenginenode_getdeviceattributesteppings, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceAttributeSteppings method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportAudioEngineNode.GetDeviceAttributeSteppings
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -89,15 +93,12 @@ returns an appropriate error code.
 
 ## See Also
 
-<dl>
-<dt>
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a>
+
 <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
-</dt>
-<dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a></dt>
-</dl>
+
  
 
  

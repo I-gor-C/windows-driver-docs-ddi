@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f27b7622-614b-4c9e-8253-51f4638e5eb0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmMapLockedPages
+ms.keywords : kernel.mmmaplockedpages, MmMapLockedPages routine [Kernel-Mode Driver Architecture], wdm/MmMapLockedPages, k106_009bdc6a-6bbc-4a7f-927e-ea5c6de8fa95.xml, MmMapLockedPages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Obsolete for Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmMapLockedPages
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,23 +91,16 @@ Callers of <b>MmMapLockedPages</b> must be running at IRQL &lt;= DISPATCH_LEVEL 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-mmgetsystemaddressformdl.md">MmGetSystemAddressForMdl</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
+<a href="..\wdm\nf-wdm-mmgetsystemaddressformdl.md">MmGetSystemAddressForMdl</a>
+
 <a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
-</dt>
-</dl>
+
  
 
  

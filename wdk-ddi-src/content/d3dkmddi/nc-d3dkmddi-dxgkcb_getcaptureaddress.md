@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f87a5a5f-20d3-48cb-93f0-114eafe7238b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcbgetcaptureaddress, DxgkCbGetCaptureAddress callback function [Display Devices], DxgkCbGetCaptureAddress, DXGKCB_GETCAPTUREADDRESS, DXGKCB_GETCAPTUREADDRESS, d3dkmddi/DxgkCbGetCaptureAddress, DpFunctions_a8e4882c-a196-4cdf-826f-fa4cf44ba8f8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbGetCaptureAddress
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -56,14 +60,34 @@ This function has no parameters.
 ## Return Value
 
 <b>DxgkCbGetCaptureAddress</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><b>DxgkCbGetCaptureAddress</b> successfully retrieved the capture buffer information.
+</dl>
+</td>
+<td width="60%">
+<b>DxgkCbGetCaptureAddress</b> successfully retrieved the capture buffer information.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The allocation handle that is specified in the <b>hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a> structure that the <i>pData</i> parameter pointed to was either invalid or did not represent a capture buffer. 
+</dl>
+</td>
+<td width="60%">
+The allocation handle that is specified in the <b>hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a> structure that the <i>pData</i> parameter pointed to was either invalid or did not represent a capture buffer. 
 
- 
+</td>
+</tr>
+</table> 
 
 <i>DxgkCbGetCaptureAddress</i> might also return other error codes that are defined in Ntstatus.h.
 
@@ -82,11 +106,8 @@ This function has no parameters.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a>
-</dt>
-</dl>
+
  
 
  

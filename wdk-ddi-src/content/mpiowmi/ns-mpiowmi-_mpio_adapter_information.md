@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bcf159a7-75a5-46aa-897a-2c5eb00f51d8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION
+ms.keywords : structs-scsibus_bcdbb143-5a91-4a69-83e5-82e32c23b404.xml, _MPIO_ADAPTER_INFORMATION, PMPIO_ADAPTER_INFORMATION structure pointer [Storage Devices], mpiowmi/MPIO_ADAPTER_INFORMATION, *PMPIO_ADAPTER_INFORMATION, storage.mpio_adapter_information, PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION, mpiowmi/PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MPIO_ADAPTER_INFORMATION
-req.alt-loc : mpiowmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION"
 ---
 
@@ -51,30 +55,30 @@ typedef struct _MPIO_ADAPTER_INFORMATION {
 
 ## Members
 
-        
-            `AdapterName`
 
-            A string field that returns the friendly name of the host bus adapter through which this path is exposed.
-        
-            `BusNumber`
+`AdapterName`
 
-            An unsigned 8-bitfield that corresponds to the bus number that is assigned by PCI to the host bus adapter through which this path is exposed.
-        
-            `DeviceNumber`
+A string field that returns the friendly name of the host bus adapter through which this path is exposed.
 
-            An unsigned 8-bitfield that corresponds to the device number that is assigned by PCI to the host bus adapter through which this path is exposed.
-        
-            `FunctionNumber`
+`BusNumber`
 
-            An unsigned 8-bitfield that corresponds to the function number that is assigned by PCI to the host bus adapter through which this path is exposed.
-        
-            `Pad`
+An unsigned 8-bitfield that corresponds to the bus number that is assigned by PCI to the host bus adapter through which this path is exposed.
 
-            Should be zero.
-        
-            `PathId`
+`DeviceNumber`
 
-            An unsigned 64-bitfield that represents an identifier that is assigned to a particular path. This field will match the PathIdentifier field in the instance(s) of the PDO_INFORMATION class that represent device(s) exposed via this path.
+An unsigned 8-bitfield that corresponds to the device number that is assigned by PCI to the host bus adapter through which this path is exposed.
+
+`FunctionNumber`
+
+An unsigned 8-bitfield that corresponds to the function number that is assigned by PCI to the host bus adapter through which this path is exposed.
+
+`Pad`
+
+Should be zero.
+
+`PathId`
+
+An unsigned 64-bitfield that represents an identifier that is assigned to a particular path. This field will match the PathIdentifier field in the instance(s) of the PDO_INFORMATION class that represent device(s) exposed via this path.
 
 
 ## Requirements

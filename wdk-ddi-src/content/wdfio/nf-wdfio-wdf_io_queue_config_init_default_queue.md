@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c7d0c483-b534-471b-8172-174abdbb3c6a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE
+ms.keywords : WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE, DFQueueObjectRef_e566e464-d9a3-44bf-a5a6-bb9b741ffe0f.xml, wdfio/WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE, WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE function, kmdf.wdf_io_queue_config_init_default_queue, wdf.wdf_io_queue_config_init_default_queue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE
-req.alt-loc : wdfio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_QUEUE_STATE
 req.product : Windows 10 or later.
 ---
@@ -87,20 +91,14 @@ For a code example that uses <b>WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</b>, see 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a>
-</dt>
-<dt>
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
-</dt>
-<dt>
+
+<a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a>
+
 <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
-</dt>
-</dl>
+
  
 
  

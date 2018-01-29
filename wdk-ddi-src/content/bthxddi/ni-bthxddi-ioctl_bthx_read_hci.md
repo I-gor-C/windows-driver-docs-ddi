@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 02CC3534-D319-40C1-A73C-DEFC1F5709F7
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords : bltooth.ioctl_bthx_hci_read, IOCTL_BTHX_READ_HCI control code [Bluetooth Devices], IOCTL_BTHX_READ_HCI, bthxddi/IOCTL_BTHX_READ_HCI, bltooth.ioctl_bthx_read_hci
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHX_READ_HCI
-req.alt-loc : BthXDDI.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
@@ -72,23 +76,40 @@ For an ACL Data packet, it is FIELD_OFFSET(BTHX_HCI_READ_WRITE_CONTEXT, Data) + 
 <text></text>
 
 ### Status Block
-I/O Status block
 The 
        <b>Information</b>  member of the STATUS_BLOCK structure is set to the number of bytes of data returned.
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
-
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
 STATUS_SUCCESS
 
+</td>
+<td>
 The IOCTL completed successfully.
 
+</td>
+</tr>
+<tr>
+<td>
 STATUS_CANCELLED
 
+</td>
+<td>
 The IOCTL has been canceled.
 
-    ## Remarks
-        The input buffer points to the type of packet that is being read.
+</td>
+</tr>
+</table>
+
+## Remarks
+The input buffer points to the type of packet that is being read.
 
 The output buffer points to a BTHX_HCI_READ_WRITE_CONTEXT structure whose <b>DataLen</b> member specifies the number of bytes in the <b>Data</b> member. The <b>Type</b> member must be set to the same as the Input packet type.
 
@@ -96,7 +117,7 @@ The <b>Information</b> member of the STATUS_BLOCK should be set to FIELD_OFFSET(
 
 The maximum size of the <b>Data</b> member for an ACL read is determined by <b>MaxAclTransferInSize</b>, specified in the BTHX_CAPABILITIES structure.  The maximum size of the <b>Data</b> member for an event is 255.
 
-This IOCTL should return STATUS_SUCCESS only under normal operation. Transport-specific errors should not be returned.  The IOCTL should return STATUS_CANCELLED only if this IOCTL has been canceled.</p>
+This IOCTL should return STATUS_SUCCESS only under normal operation. Transport-specific errors should not be returned.  The IOCTL should return STATUS_CANCELLED only if this IOCTL has been canceled.
 
 ## Requirements
 | &nbsp; | &nbsp; |

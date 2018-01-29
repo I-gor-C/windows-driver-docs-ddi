@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 73779eb1-514e-4103-9af2-0dc0c86cb04e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVAHDDDI_COLOR_RGBA, DXVAHDDDI_COLOR_RGBA
+ms.keywords : DXVAHDDDI_COLOR_RGBA, display.dxvahdddi_color_rgba, d3dumddi/DXVAHDDDI_COLOR_RGBA, DXVA2_Structs_ecf8ab79-edb1-42c8-b873-39cc1f7a1ef8.xml, _DXVAHDDDI_COLOR_RGBA, DXVAHDDDI_COLOR_RGBA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DXVAHDDDI_COLOR_RGBA is supported beginning with the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVAHDDDI_COLOR_RGBA
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVAHDDDI_COLOR_RGBA
 ---
 
@@ -49,25 +53,25 @@ typedef struct _DXVAHDDDI_COLOR_RGBA {
 
 ## Members
 
-        
-            `A`
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the RGB color.
-        
-            `B`
+`A`
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue component of the RGB color.
-        
-            `G`
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the RGB color.
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the green component of the RGB color.
-        
-            `R`
+`B`
 
-            [in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red component of the RGB color.
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue component of the RGB color.
 
-    ## Remarks
-        The setting of DXVAHDDDI_COLOR_RGBA for full range RGB black with opaque alpha is (0.0, 0.0, 0.0, 1.0). The setting of DXVAHDDDI_COLOR_RGBA for limited range RGB black with half transparent alpha is (0.0625, 0.0625, 0.0625, 0.5), which is (0, 0, 0, 255) and (16, 16, 16, 128) respectively when 8-bit presentation is used.
+`G`
+
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the green component of the RGB color.
+
+`R`
+
+[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red component of the RGB color.
+
+## Remarks
+The setting of DXVAHDDDI_COLOR_RGBA for full range RGB black with opaque alpha is (0.0, 0.0, 0.0, 1.0). The setting of DXVAHDDDI_COLOR_RGBA for limited range RGB black with half transparent alpha is (0.0625, 0.0625, 0.0625, 0.5), which is (0, 0, 0, 255) and (16, 16, 16, 128) respectively when 8-bit presentation is used.
 
 R, G, and B values can be out of the [0.0, 1.0] range for wide gamut format (for example, for XR_BIAS, FP16, and FP32 formats).
 
@@ -81,13 +85,10 @@ A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>RGB</b> member of the 
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color.md">DXVAHDDDI_COLOR</a>
-</dt>
-</dl>
+
  
 
  

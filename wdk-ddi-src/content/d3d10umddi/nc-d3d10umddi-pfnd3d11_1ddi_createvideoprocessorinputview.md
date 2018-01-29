@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3942c53-e366-41c5-9f43-d093fa6b6ed6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.createvideoprocessorinputview, CreateVideoProcessorInputView callback function [Display Devices], CreateVideoProcessorInputView, PFND3D11_1DDI_CREATEVIDEOPROCESSORINPUTVIEW, PFND3D11_1DDI_CREATEVIDEOPROCESSORINPUTVIEW, d3d10umddi/CreateVideoProcessorInputView
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CreateVideoProcessorInputView
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -74,19 +78,57 @@ HRESULT Pfnd3d111DdiCreatevideoprocessorinputview(
 ## Return Value
 
 <b>CreateVideoProcessorInputView</b> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The video processor input view was created successfully.
+</dl>
+</td>
+<td width="60%">
+The video processor input view was created successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
-</dl>The graphics adapter was removed.
+</dl>
+</td>
+<td width="60%">
+The graphics adapter was removed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>DXGI_ERROR_UNSUPPORTED</b></dt>
-</dl>The D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW contained incorrect or unsupported data. For example, the driver should return <b>DXGI_ERROR_UNSUPPORTED</b> if the <b>FourCC</b> member specified an unsupported code value.
+</dl>
+</td>
+<td width="60%">
+The D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW contained incorrect or unsupported data. For example, the driver should return <b>DXGI_ERROR_UNSUPPORTED</b> if the <b>FourCC</b> member specified an unsupported code value.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl>
+</td>
+<td width="60%">
+
         Memory was not available to complete the operation.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -108,14 +150,10 @@ When the runtime  calls <i>CreateVideoProcessorInputView</i>, it passes the hand
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessorinputviewsize.md">CalcPrivateVideoProcessorInputViewSize</a>
-</dt>
-<dt>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessorinputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a>
-</dt>
-</dl>
+
  
 
  

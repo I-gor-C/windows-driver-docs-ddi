@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6a4ab5a4-4d09-4fd5-bc7b-0a8e5a634eb3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRegisterBugCheckCallback
+ms.keywords : k105_42736e68-1f5a-47df-976a-df3bfa9a356e.xml, KeRegisterBugCheckCallback routine [Kernel-Mode Driver Architecture], kernel.keregisterbugcheckcallback, wdm/KeRegisterBugCheckCallback, KeRegisterBugCheckCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRegisterBugCheckCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -102,26 +106,18 @@ The <i>Component</i> string is used to identify the driver during crash-dump deb
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kederegisterbugcheckcallback.md">KeDeregisterBugCheckCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
+
 <a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+
+<a href="..\wdm\nf-wdm-kederegisterbugcheckcallback.md">KeDeregisterBugCheckCallback</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
-</dt>
-</dl>
+
  
 
  

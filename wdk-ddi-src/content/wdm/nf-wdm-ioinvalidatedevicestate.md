@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ca27e8d3-80ee-467c-9c88-19770cd86d94
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoInvalidateDeviceState
+ms.keywords : IoInvalidateDeviceState routine [Kernel-Mode Driver Architecture], IoInvalidateDeviceState, k104_05ef79e6-a7d1-4de4-aefa-5aa7d9121f04.xml, wdm/IoInvalidateDeviceState, kernel.ioinvalidatedevicestate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoInvalidateDeviceState
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -92,14 +96,10 @@ In response to this routine, the PnP manager sends an <a href="https://msdn.micr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551698">IRP_MN_QUERY_PNP_DEVICE_STATE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559618">PNP_DEVICE_STATE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551698">IRP_MN_QUERY_PNP_DEVICE_STATE</a>
+
  
 
  

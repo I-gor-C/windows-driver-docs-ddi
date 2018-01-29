@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 404c7f82-02dd-4145-91e3-8820f6cbf781
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_CloseAdapter
+ms.keywords : storage.hba_closeadapter, fibreHBA_rtns_dcbe3983-fc4d-4a50-886b-6fdb138296a7.xml, HBA_CloseAdapter, hbaapi/HBA_CloseAdapter, HBA_CloseAdapter routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_CloseAdapter
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -50,7 +54,7 @@ void HBA_API HBA_CloseAdapter(
 
 `handle`
 
-
+TBD
 
 
 ## Return Value
@@ -72,11 +76,8 @@ None.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-</dl>
+
  
 
  

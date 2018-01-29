@@ -7,8 +7,8 @@ old-location : print\iprintpipelinepropertybag_addproperty.htm
 old-project : print
 ms.assetid : ba994342-c203-443e-a9fd-60fd29721dae
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : IPrintPipelinePropertyBag, IPrintPipelinePropertyBag::AddProperty, AddProperty
+ms.date : 1/18/2018
+ms.keywords : AddProperty method [Print Devices], print.iprintpipelinepropertybag_addproperty, filterpipeline_03ee8efb-3b2b-460a-9b95-e806dad5bb96.xml, AddProperty method [Print Devices], IPrintPipelinePropertyBag interface, IPrintPipelinePropertyBag interface [Print Devices], AddProperty method, IPrintPipelinePropertyBag, AddProperty, filterpipeline/IPrintPipelinePropertyBag::AddProperty, IPrintPipelinePropertyBag::AddProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPrintPipelinePropertyBag.AddProperty
-req.alt-loc : filterpipeline.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : Filterpipeline.idl
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : filterpipeline.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

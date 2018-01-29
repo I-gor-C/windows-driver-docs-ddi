@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6876E96D-E249-4B7C-A496-27E3F4A7F7E2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_CloseHandle
+ms.keywords : USBD_CloseHandle, USBD_CloseHandle routine [Buses], buses.usbd_unregister, usbdlib/USBD_CloseHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Requires DDK for Windows 8. Targets Windows Vista a
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBD_CloseHandle
-req.alt-loc : Usbdex.lib,Usbdex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Usbdex.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -76,14 +80,10 @@ A client driver should call <b>USBD_CloseHandle</b> in the driver's routine that
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
-</dt>
-</dl>
+
  
 
  

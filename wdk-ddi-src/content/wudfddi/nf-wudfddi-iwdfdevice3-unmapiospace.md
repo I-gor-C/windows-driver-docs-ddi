@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3, IWDFDevice3::UnmapIoSpace, UnmapIoSpace
+ms.keywords : UnmapIoSpace method, IWDFDevice3 interface, umdf.iwdfdevice3_unmapiospace, UnmapIoSpace method, UnmapIoSpace, IWDFDevice3, IWDFDevice3::UnmapIoSpace, wdf.iwdfdevice3_unmapiospace, wudfddi/IWDFDevice3::UnmapIoSpace, IWDFDevice3 interface, UnmapIoSpace method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : IWDFDevice3.UnmapIoSpace
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -71,8 +75,6 @@ If a driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/h
 
 For an example, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/finding-and-mapping-hardware-resources-in-umdf-1-x-drivers">Finding and Mapping Hardware Resources in a UMDF Driver</a>.
 
-See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-32FB3315251F">IWDFDevice3::MapIoSpace</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,11 +89,8 @@ See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
-</dt>
-</dl>
+
  
 
  

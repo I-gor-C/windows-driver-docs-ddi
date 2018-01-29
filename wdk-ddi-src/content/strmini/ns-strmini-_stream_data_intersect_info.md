@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 92a37945-4b7c-4d10-a071-ae1584590692
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _STREAM_DATA_INTERSECT_INFO, *PSTREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO
+ms.keywords : PSTREAM_DATA_INTERSECT_INFO structure pointer [Streaming Media Devices], PSTREAM_DATA_INTERSECT_INFO, *PSTREAM_DATA_INTERSECT_INFO, strclass-struct_28443f9e-3daf-4a83-be5e-de1868590510.xml, _STREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO, stream.stream_data_intersect_info, strmini/PSTREAM_DATA_INTERSECT_INFO, strmini/STREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STREAM_DATA_INTERSECT_INFO
-req.alt-loc : strmini.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO"
 req.product : Windows 10 or later.
 ---
@@ -50,25 +54,25 @@ typedef struct _STREAM_DATA_INTERSECT_INFO {
 
 ## Members
 
-        
-            `DataFormatBuffer`
 
-            Pointer to the buffer the minidriver fills in with the matching data format.
-        
-            `DataRange`
+`DataFormatBuffer`
 
-            Pointer to the data ranges to be examined for a match.
-        
-            `SizeOfDataFormatBuffer`
+Pointer to the buffer the minidriver fills in with the matching data format.
 
-            Specifies the size in bytes of the <b>DataFormatBuffer</b>.
-        
-            `StreamNumber`
+`DataRange`
 
-            Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.
+Pointer to the data ranges to be examined for a match.
 
-    ## Remarks
-        The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a>.</p>
+`SizeOfDataFormatBuffer`
+
+Specifies the size in bytes of the <b>DataFormatBuffer</b>.
+
+`StreamNumber`
+
+Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.
+
+## Remarks
+The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

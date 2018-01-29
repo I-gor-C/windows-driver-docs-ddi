@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : abfaad6b-be42-4547-aa26-5b44e53118bc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface, IWDFUsbInterface::RetrieveUsbPipeObject, RetrieveUsbPipeObject
+ms.keywords : wudfusb/IWDFUsbInterface::RetrieveUsbPipeObject, IWDFUsbInterface::RetrieveUsbPipeObject, RetrieveUsbPipeObject method, RetrieveUsbPipeObject method, IWDFUsbInterface interface, UMDFUSBref_84f2ac72-965e-4fd4-a127-f153a5fc54f7.xml, IWDFUsbInterface interface, RetrieveUsbPipeObject method, umdf.iwdfusbinterface_retrieveusbpipeobject, RetrieveUsbPipeObject, wdf.iwdfusbinterface_retrieveusbpipeobject, IWDFUsbInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbInterface.RetrieveUsbPipeObject
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -64,23 +68,51 @@ A pointer to a variable that receives a pointer to the <a href="..\wudfusb\nn-wu
 ## Return Value
 
 <b>RetrieveUsbPipeObject</b> returns one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/abfaad6b-be42-4547-aa26-5b44e53118bc">RetrieveUsbPipeObject</a> successfully retrieved the USB pipe object. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/abfaad6b-be42-4547-aa26-5b44e53118bc">RetrieveUsbPipeObject</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</dl>
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 A UMDF driver can call the methods of the <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a> interface that the <b>RetrieveUsbPipeObject</b> method retrieves to obtain the type of pipe and other information.
-
-For a code example of how to use the<b>RetrieveUsbPipeObject</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560334">IWDFUsbInterface::GetNumEndPoints</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,14 +128,10 @@ For a code example of how to use the<b>RetrieveUsbPipeObject</b> method, see <a 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
-</dt>
-<dt>
+
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-</dt>
-</dl>
+
  
 
  

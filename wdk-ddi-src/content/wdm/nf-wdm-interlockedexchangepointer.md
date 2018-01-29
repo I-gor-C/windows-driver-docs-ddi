@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8c39a62d-0c05-4d26-b104-90c436e821cb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InterlockedExchangePointer
+ms.keywords : InterlockedExchangePointer, kernel.interlockedexchangepointer, k102_4959af35-65d8-4768-94f7-a2dad0a2db46.xml, InterlockedExchangePointer routine [Kernel-Mode Driver Architecture], wdm/InterlockedExchangePointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InterlockedExchangePointer
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -89,17 +93,12 @@ Interlocked operations cannot be used on non-cached memory.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-interlockedcompareexchange.md">InterlockedCompareExchange</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-interlockedcompareexchangepointer.md">InterlockedCompareExchangePointer</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-interlockedcompareexchangepointer.md">InterlockedCompareExchangePointer</a>
+
  
 
  

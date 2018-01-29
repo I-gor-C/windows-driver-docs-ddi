@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5f15743a-1ea7-4260-b2cb-f2871acb27f9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DDICHECKOVERLAYSUPPORTINPUT, DDICHECKOVERLAYSUPPORTINPUT
+ms.keywords : _DDICHECKOVERLAYSUPPORTINPUT, d3dumddi/DDICHECKOVERLAYSUPPORTINPUT, D3D_other_Structs_194edebf-9bbd-465b-a731-ad3e10f6e809.xml, DDICHECKOVERLAYSUPPORTINPUT, display.ddicheckoverlaysupportinput, DDICHECKOVERLAYSUPPORTINPUT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DDICHECKOVERLAYSUPPORTINPUT is supported beginning w
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DDICHECKOVERLAYSUPPORTINPUT
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DDICHECKOVERLAYSUPPORTINPUT
 ---
 
@@ -54,45 +58,45 @@ typedef struct _DDICHECKOVERLAYSUPPORTINPUT {
 
 ## Members
 
-        
-            `DisplayFormat`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the display.
-        
-            `DisplayHeight`
+`DisplayFormat`
 
-            [in] The screen height of the display in pixels.
-        
-            `DisplayRefreshRate`
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the display.
 
-            [in] The refresh rate of the display.
-        
-            `DisplayRotation`
+`DisplayHeight`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>-typed value that indicates how the display is oriented.
-        
-            `DisplayScanLineOrdering`
+[in] The screen height of the display in pixels.
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_scanlineordering.md">D3DDDI_SCANLINEORDERING</a>-typed value that indicates how the scan lines are drawn on the display.
-        
-            `DisplayWidth`
+`DisplayRefreshRate`
 
-            [in] The screen width of the display in pixels.
-        
-            `OverlayFormat`
+[in] The refresh rate of the display.
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the overlay.
-        
-            `OverlayHeight`
+`DisplayRotation`
 
-            [in] The height of the overlay in pixels.
-        
-            `OverlayWidth`
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>-typed value that indicates how the display is oriented.
 
-            [in] The width of the overlay in pixels.
+`DisplayScanLineOrdering`
 
-    ## Remarks
-        The runtime specifies a pointer to a DDICHECKOVERLAYSUPPORTINPUT structure in the <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure. The runtime also specifies the D3DDDICAPS_CHECKOVERLAYSUPPORT value in the <b>Type</b> member of D3DDDIARG_GETCAPS. The runtime specifies these values in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to determine if the driver supports the overlay that DDICHECKOVERLAYSUPPORTINPUT describes. The driver's <i>GetCaps</i> returns a pointer to a D3DOVERLAYCAPS structure that contains information about the capabilities of the overlay through the <b>pData</b> member of D3DDDIARG_GETCAPS if the driver supports the overlay.
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_scanlineordering.md">D3DDDI_SCANLINEORDERING</a>-typed value that indicates how the scan lines are drawn on the display.
+
+`DisplayWidth`
+
+[in] The screen width of the display in pixels.
+
+`OverlayFormat`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the overlay.
+
+`OverlayHeight`
+
+[in] The height of the overlay in pixels.
+
+`OverlayWidth`
+
+[in] The width of the overlay in pixels.
+
+## Remarks
+The runtime specifies a pointer to a DDICHECKOVERLAYSUPPORTINPUT structure in the <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure. The runtime also specifies the D3DDDICAPS_CHECKOVERLAYSUPPORT value in the <b>Type</b> member of D3DDDIARG_GETCAPS. The runtime specifies these values in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to determine if the driver supports the overlay that DDICHECKOVERLAYSUPPORTINPUT describes. The driver's <i>GetCaps</i> returns a pointer to a D3DOVERLAYCAPS structure that contains information about the capabilities of the overlay through the <b>pData</b> member of D3DDDIARG_GETCAPS if the driver supports the overlay.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,25 +106,18 @@ typedef struct _DDICHECKOVERLAYSUPPORTINPUT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
-</dt>
-<dt>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
 <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_scanlineordering.md">D3DDDI_SCANLINEORDERING</a>
-</dt>
-<dt>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
  
 
  

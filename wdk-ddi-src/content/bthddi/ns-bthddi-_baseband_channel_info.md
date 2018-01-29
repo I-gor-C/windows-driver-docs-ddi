@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : c9328791-898e-48f2-acfd-30c8a36fcd29
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO
+ms.keywords : BASEBAND_CHANNEL_INFO, bth_structs_849b4363-4e7e-4fee-b5c1-86b32431a6dd.xml, bltooth.baseband_channel_info, bthddi/PBASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO, _BASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO structure [Bluetooth Devices], PBASEBAND_CHANNEL_INFO structure pointer [Bluetooth Devices], bthddi/BASEBAND_CHANNEL_INFO, PBASEBAND_CHANNEL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BASEBAND_CHANNEL_INFO
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO
 ---
 
@@ -51,36 +55,48 @@ typedef struct _BASEBAND_CHANNEL_INFO {
 
 ## Members
 
-        
-            `AirMode`
 
-            The air mode data format used by the baseband channel. Possible values include:
-        
-            `Retransmission_Window`
+`AirMode`
 
-            The length of time, in slots, that an eSCO channel can use to retransmit a request. This member
+The air mode data format used by the baseband channel. Possible values include:
+     
+
+
+<dl>
+<dt>A-LAW LOG
+     </dt>
+<dt>CVSD
+     </dt>
+<dt>MU-LAW LOG
+     </dt>
+<dt>TRANSPARENT DATA</dt>
+</dl>
+
+`Retransmission_Window`
+
+The length of time, in slots, that an eSCO channel can use to retransmit a request. This member
      will return zero for SCO links.
-        
-            `Rx_Packet_Length`
 
-            The size, in bytes, of the eSCO payload in the receive direction. This member will return zero for
+`Rx_Packet_Length`
+
+The size, in bytes, of the eSCO payload in the receive direction. This member will return zero for
      SCO links.
-        
-            `Transmission_Interval`
 
-            The elapsed time, in slots, between two consecutive SCO instants. This member will return zero for
+`Transmission_Interval`
+
+The elapsed time, in slots, between two consecutive SCO instants. This member will return zero for
      SCO links.
-        
-            `Tx_Packet_Length`
 
-            The size, in bytes, of the eSCO payload in the transmit direction. This member will return zero
+`Tx_Packet_Length`
+
+The size, in bytes, of the eSCO payload in the transmit direction. This member will return zero
      for SCO links.
 
-    ## Remarks
-        Profile drivers access the BASEBAND_CHANNEL_INFO structure through the 
+## Remarks
+Profile drivers access the BASEBAND_CHANNEL_INFO structure through the 
     <b>BasebandInfo</b> member of the 
-    <a href="..\bthddi\ns-bthddi-_brb_sco_get_channel_info.md">
-    _BRB_SCO_GET_CHANNEL_INFO</a> structure.
+    <mshelp:link keywords="bltooth._brb_sco_get_channel_info" tabindex="0"><b>
+    _BRB_SCO_GET_CHANNEL_INFO</b></mshelp:link> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,13 +106,10 @@ typedef struct _BASEBAND_CHANNEL_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\bthddi\ns-bthddi-_brb_sco_get_channel_info.md">_BRB_SCO_GET_CHANNEL_INFO</a>
-</dt>
-</dl>
+
  
 
  

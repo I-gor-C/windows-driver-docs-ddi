@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 706a5749-e288-4275-84fc-e500a848d541
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : DrmGetContentRights
+ms.keywords : drmk/DrmGetContentRights, DrmGetContentRights function [Audio Devices], audio.drmgetcontentrights, aud-prop2_9f836831-bb65-45d1-8701-4aaa77999b81.xml, DrmGetContentRights
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DrmGetContentRights
-req.alt-loc : Drmk.lib,Drmk.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Drmk.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
@@ -84,35 +88,24 @@ A module that lies downstream from the KS filter that creates the content ID typ
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a>
-</dt>
-<dt>
-<a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536570">IDrmAudioStream::SetContentId</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
-</dt>
-<dt>
-<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
-</dt>
-<dt>
-<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
-</dt>
-<dt>
-<a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
-</dt>
-<dt>
+
 <a href="..\portcls\nf-portcls-pcgetcontentrights.md">PcGetContentRights</a>
-</dt>
-<dt>
+
+<a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
+
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536570">IDrmAudioStream::SetContentId</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
+
+<a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536588">IDrmPort::GetContentRights</a>
-</dt>
-</dl>
+
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
+
  
 
  

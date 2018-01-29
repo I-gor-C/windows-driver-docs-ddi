@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 74f24296-cd42-402b-a61f-0199c4a07fd0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeUnregisterLogonSessionTerminatedRoutine
+ms.keywords : SeUnregisterLogonSessionTerminatedRoutine, SeUnregisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], ntifs/SeUnregisterLogonSessionTerminatedRoutine, seref_dbf0d7bc-c252-4805-99e1-075ce9e08ddc.xml, ifsk.seunregisterlogonsessionterminatedroutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeUnregisterLogonSessionTerminatedRoutine
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -56,15 +60,45 @@ Address of routine that was originally passed in to <b>SeRegisterLogonSessionTer
 ## Return Value
 
 <b>SeUnregisterLogonSessionTerminatedRoutine</b> can return one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The callback routine was successfully removed.
+</dl>
+</td>
+<td width="60%">
+The callback routine was successfully removed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The value of <i>CallbackRoutine</i> is <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+The value of <i>CallbackRoutine</i> is <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>A list entry could not be found for the callback routine.
+</dl>
+</td>
+<td width="60%">
+A list entry could not be found for the callback routine.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -86,14 +120,10 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-semarklogonsessionforterminationnotification.md">SeMarkLogonSessionForTerminationNotification</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-seregisterlogonsessionterminatedroutine.md">SeRegisterLogonSessionTerminatedRoutine</a>
-</dt>
-</dl>
+
  
 
  

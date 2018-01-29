@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9f69b2f0-6e55-440f-98ab-35d8faddf933
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camprocessusbpacketex, CamProcessUSBPacketEx, CamProcessUSBPacketEx routine [Streaming Media Devices], CamProcessUSBPacketEx, PCAM_PROCESS_PACKET_ROUTINE_EX, PCAM_PROCESS_PACKET_ROUTINE_EX, usbcamdi/CamProcessUSBPacketEx, usbcmdpr_bd37e77c-386b-4b94-ad7c-8b1c5c26799a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CamProcessUSBPacketEx
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -96,7 +100,6 @@ Pointer to a BOOLEAN value that the camera minidriver sets to indicate whether t
 `PacketFlag`
 
 Pointer to a value that the minidriver sets to indicate the contents of the current frame. It should be set to one of the following values:
-
 <table>
 <tr>
 <th>Flag</th>
@@ -167,14 +170,10 @@ This function is optional.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\usb\ns-usb-_usbd_iso_packet_descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a>
-</dt>
-</dl>
+
  
 
  

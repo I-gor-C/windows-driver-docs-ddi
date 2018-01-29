@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c3f5cc8e-a600-4ca1-8745-d74943feb2c7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY, ENUM_PDO_ENTRY
+ms.keywords : PENUM_PDO_ENTRY structure pointer [Storage Devices], ehstorioctl/ENUM_PDO_ENTRY, structs-silo_8303b6a6-8f4f-4f0c-91ce-9d70ea72f4f2.xml, PENUM_PDO_ENTRY, *PENUM_PDO_ENTRY, ehstorioctl/PENUM_PDO_ENTRY, ENUM_PDO_ENTRY structure [Storage Devices], ENUM_PDO_ENTRY, _ENUM_PDO_ENTRY, storage.enum_pdo_entry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ENUM_PDO_ENTRY
-req.alt-loc : EhStorIoctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PENUM_PDO_ENTRY, ENUM_PDO_ENTRY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY
 ---
 
 # _ENUM_PDO_ENTRY structure
@@ -54,42 +58,42 @@ typedef struct _ENUM_PDO_ENTRY {
 
 ## Members
 
-        
-            `bImplementationMajor`
 
-            
-        
-            `bImplementationMinor`
+`bImplementationMajor`
 
-            
-        
-            `bSpecificationMajor`
 
-            
-        
-            `bSpecificationMinor`
 
-            
-        
-            `capabilities`
+`bImplementationMinor`
 
-            This member contains a bitmask with bits indicating information about the silo represented by the PDO in question, as defined by PDO_CAPS.
-        
-            `state`
 
-            This member contains information about the current PnP state of the PDO, as defined by PDO_STATE.
-        
-            `type`
 
-            This member indicates the type of the PDO that is being identified, as defined by PDO_TYPE.
-        
-            `ulSTID`
+`bSpecificationMajor`
 
-            This member contains the silo type identifier, as defined and assigned by the IEEE 1667 working group.
-        
-            `wszDeviceInstancePath`
 
-            The string contained in this member is the device instance path in a form suitable for use with the Win32 API CreateFile routine.
+
+`bSpecificationMinor`
+
+
+
+`capabilities`
+
+This member contains a bitmask with bits indicating information about the silo represented by the PDO in question, as defined by PDO_CAPS.
+
+`state`
+
+This member contains information about the current PnP state of the PDO, as defined by PDO_STATE.
+
+`type`
+
+This member indicates the type of the PDO that is being identified, as defined by PDO_TYPE.
+
+`ulSTID`
+
+This member contains the silo type identifier, as defined and assigned by the IEEE 1667 working group.
+
+`wszDeviceInstancePath`
+
+The string contained in this member is the device instance path in a form suitable for use with the Win32 API CreateFile routine.
 
 
 ## Requirements
@@ -100,13 +104,10 @@ typedef struct _ENUM_PDO_ENTRY {
 | **Minimum UMDF version** |  |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
-</dt>
-</dl>
+
  
 
  

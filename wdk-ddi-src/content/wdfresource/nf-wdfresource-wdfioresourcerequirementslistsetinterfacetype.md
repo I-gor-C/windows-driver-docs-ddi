@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c229eb9e-cf1f-43ea-b701-fb8fb6196b40
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoResourceRequirementsListSetInterfaceType
+ms.keywords : wdf.wdfioresourcerequirementslistsetinterfacetype, kmdf.wdfioresourcerequirementslistsetinterfacetype, WdfIoResourceRequirementsListSetInterfaceType method, wdfresource/WdfIoResourceRequirementsListSetInterfaceType, PFN_WDFIORESOURCEREQUIREMENTSLISTSETINTERFACETYPE, DFResourceObjectRef_3ce545f1-cdad-4ddb-8b65-236461296d21.xml, WdfIoResourceRequirementsListSetInterfaceType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfIoResourceRequirementsListSetInterfaceType
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -73,8 +77,6 @@ Your driver must provide a bus type if your device does not support Plug and Pla
 
 For more information about resource requirements lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
-The following code example shows how an <a href="..\wdfpdo\nc-wdfpdo-evt_wdf_device_resource_requirements_query.md">EvtDeviceResourceRequirementsQuery</a> callback function for a nonPnP device calls <b>WdfIoResourceRequirementsListSetInterfaceType</b> to assign a bus type to a device.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,11 +91,8 @@ The following code example shows how an <a href="..\wdfpdo\nc-wdfpdo-evt_wdf_dev
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ne-wdm-_interface_type.md">INTERFACE_TYPE</a>
-</dt>
-</dl>
+
  
 
  

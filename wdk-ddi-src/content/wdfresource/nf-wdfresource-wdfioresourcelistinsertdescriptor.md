@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 604182ea-3712-4670-bab8-edc3cb2fcd06
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoResourceListInsertDescriptor
+ms.keywords : wdfresource/WdfIoResourceListInsertDescriptor, DFResourceObjectRef_6f8fc17d-c5db-47fa-854a-5536dfc11705.xml, wdf.wdfioresourcelistinsertdescriptor, WdfIoResourceListInsertDescriptor, kmdf.wdfioresourcelistinsertdescriptor, WdfIoResourceListInsertDescriptor method, PFN_WDFIORESOURCELISTINSERTDESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfIoResourceListInsertDescriptor
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
 req.product : Windows 10 or later.
 ---
@@ -69,20 +73,56 @@ A zero-based value that is used as an index into the set of resource descriptors
 ## Return Value
 
 <b>WdfIoResourceListInsertDescriptor</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was specified.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was specified.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The driver was not allowed to add descriptors to the logical configuration.
+</dl>
+</td>
+<td width="60%">
+The driver was not allowed to add descriptors to the logical configuration.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The framework could not allocate space to store the descriptor.
+</dl>
+</td>
+<td width="60%">
+The framework could not allocate space to store the descriptor.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ARRAY_BOUNDS_EXCEEDED</b></dt>
-</dl>The value that the <i>Index</i> parameter specifies was too large.
+</dl>
+</td>
+<td width="60%">
+The value that the <i>Index</i> parameter specifies was too large.
 
- 
+</td>
+</tr>
+</table> 
 
 A system bug check occurs if the driver supplies an invalid object handle.
 
@@ -95,8 +135,6 @@ To add a resource descriptor to the end of a logical configuration, specify WDF_
 The framework copies the contents of the <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure into internal storage, so the driver routine that calls <b>WdfIoResourceListInsertDescriptor</b> can allocate the structure locally. After the driver calls <b>WdfIoResourceListInsertDescriptor</b>, the driver can reuse the <b>IO_RESOURCE_DESCRIPTOR</b> structure.
 
 For more information about resource requirements lists and logical configurations, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
-
-The following code example initializes a resource descriptor and adds the descriptor to the end of a logical configuration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,14 +150,10 @@ The following code example initializes a resource descriptor and adds the descri
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcelistappenddescriptor.md">WdfIoResourceListAppendDescriptor</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
  
 
  

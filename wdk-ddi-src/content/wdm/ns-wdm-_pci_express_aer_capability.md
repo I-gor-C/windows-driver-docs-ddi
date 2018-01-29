@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : c389952b-2dc8-4c59-8543-633127a5a5f6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _PCI_EXPRESS_AER_CAPABILITY, *PPCI_EXPRESS_AER_CAPABILITY, PCI_EXPRESS_AER_CAPABILITY
+ms.keywords : PPCI_EXPRESS_AER_CAPABILITY structure pointer [Buses], wdm/PCI_EXPRESS_AER_CAPABILITY, wdm/PPCI_EXPRESS_AER_CAPABILITY, _PCI_EXPRESS_AER_CAPABILITY, pci_struct_b9447d2e-502f-45f0-8851-ced834748798.xml, *PPCI_EXPRESS_AER_CAPABILITY, PPCI_EXPRESS_AER_CAPABILITY, PCI.pci_express_aer_capability, PCI_EXPRESS_AER_CAPABILITY structure [Buses], PCI_EXPRESS_AER_CAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCI_EXPRESS_AER_CAPABILITY
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPCI_EXPRESS_AER_CAPABILITY, PCI_EXPRESS_AER_CAPABILITY"
 req.product : Windows 10 or later.
 ---
@@ -59,64 +63,62 @@ typedef struct _PCI_EXPRESS_AER_CAPABILITY {
 
 ## Members
 
-        
-            `CapabilitiesAndControl`
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537456">PCI_EXPRESS_AER_CAPABILITIES</a> structure that describes the PCIe advanced error capabilities and control register of the PCIe AER capability structure.
-        
-            `CorrectableErrorMask`
+`CapabilitiesAndControl`
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.
-        
-            `CorrectableErrorStatus`
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537456">PCI_EXPRESS_AER_CAPABILITIES</a> structure that describes the PCIe advanced error capabilities and control register of the PCIe AER capability structure.
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.
-        
-            `Header`
+`CorrectableErrorMask`
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537466">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a> structure that describes the header for this structure.
-        
-            `HeaderLog`
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.
 
-            An array of four 32-bit values that together contain the header for the transaction layer packet (TLP) that corresponds to a detected error.
+`CorrectableErrorStatus`
 
-<div class="alert"><b>Note</b>    Within each 32-bit value in the array, the bytes of the TLP are in big-endian byte order.</div>
-<div> </div>
-        
-            `SecCapabilitiesAndControl`
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537478">PCI_EXPRESS_SEC_AER_CAPABILITIES</a> structure that describes the PCIe secondary error capabilities and control register of the PCIe AER capability structure.
-        
-            `SecHeaderLog`
+`Header`
 
-            An array of four 32-bit values that together contain the header for the transaction on the secondary interface that generated an error.
-        
-            `SecUncorrectableErrorMask`
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537466">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a> structure that describes the header for this structure.
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537479">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe secondary uncorrectable error mask register of the PCIe AER capability structure.
-        
-            `SecUncorrectableErrorSeverity`
+`HeaderLog`
 
-            A <a href="https://msdn.microsoft.com/b00aeced-037b-4bc5-97b7-96501262700f">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERIT</a>Y structure that describes the PCIe secondary uncorrectable error severity register of the PCIe AER capability structure.
-        
-            `SecUncorrectableErrorStatus`
+An array of four 32-bit values that together contain the header for the transaction layer packet (TLP) that corresponds to a detected error.
+<div class="alert"><b>Note</b>    Within each 32-bit value in the array, the bytes of the TLP are in big-endian byte order.</div><div> </div>
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537556">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe secondary uncorrectable error status register of the PCIe AER capability structure.
-        
-            `UncorrectableErrorMask`
+`SecCapabilitiesAndControl`
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.
-        
-            `UncorrectableErrorSeverity`
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537478">PCI_EXPRESS_SEC_AER_CAPABILITIES</a> structure that describes the PCIe secondary error capabilities and control register of the PCIe AER capability structure.
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537570">PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY</a> structure that describes the PCIe uncorrectable error severity register of the PCIe AER capability structure.
-        
-            `UncorrectableErrorStatus`
+`SecHeaderLog`
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.
+An array of four 32-bit values that together contain the header for the transaction on the secondary interface that generated an error.
 
-    ## Remarks
-        The PCI_EXPRESS_AER_CAPABILITY structure is available in Windows Server 2008 and later versions of Windows.
+`SecUncorrectableErrorMask`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537479">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe secondary uncorrectable error mask register of the PCIe AER capability structure.
+
+`SecUncorrectableErrorSeverity`
+
+A <a href="https://msdn.microsoft.com/b00aeced-037b-4bc5-97b7-96501262700f">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERIT</a>Y structure that describes the PCIe secondary uncorrectable error severity register of the PCIe AER capability structure.
+
+`SecUncorrectableErrorStatus`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537556">PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe secondary uncorrectable error status register of the PCIe AER capability structure.
+
+`UncorrectableErrorMask`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a> structure that describes the PCIe uncorrectable error mask register of the PCIe AER capability structure.
+
+`UncorrectableErrorSeverity`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537570">PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY</a> structure that describes the PCIe uncorrectable error severity register of the PCIe AER capability structure.
+
+`UncorrectableErrorStatus`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a> structure that describes the PCIe uncorrectable error status register of the PCIe AER capability structure.
+
+## Remarks
+The PCI_EXPRESS_AER_CAPABILITY structure is available in Windows Server 2008 and later versions of Windows.
 
 PCIe bridge devices use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a> structure instead of the PCI_EXPRESS_AER_CAPABILITY structure to describe the PCIe advanced error reporting capability structure.
 
@@ -132,37 +134,26 @@ For additional information about the PCIe advanced error reporting capability st
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537456">PCI_EXPRESS_AER_CAPABILITIES</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537461">PCI_EXPRESS_CORRECTABLE_ERROR_MASK</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537462">PCI_EXPRESS_CORRECTABLE_ERROR_STATUS</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537466">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537472">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537466">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537462">PCI_EXPRESS_CORRECTABLE_ERROR_STATUS</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537570">PCI_EXPRESS_UNCORRECTABLE_ERROR_SEVERITY</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537572">PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537456">PCI_EXPRESS_AER_CAPABILITIES</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537567">PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537461">PCI_EXPRESS_CORRECTABLE_ERROR_MASK</a>
+
  
 
  

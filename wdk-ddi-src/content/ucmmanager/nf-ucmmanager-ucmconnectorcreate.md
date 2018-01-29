@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1376CB84-05F6-4903-B245-A00CFA9B228E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorCreate
+ms.keywords : buses.ucmconnectorcreate, UcmConnectorCreate, UcmConnectorCreate method [Buses], ucmmanager/UcmConnectorCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmConnectorCreate
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -83,8 +87,6 @@ The parent object is WdfDevice. You can set the <b>ParentObject</b> member of <a
 
 An appropriate place for a UCM client driver to call <b>UcmConnectorCreate</b> is in <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>  or <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>. Conversely, the driver should release the UCMCONNECTOR  handle in  <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> or <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>.
 
-This example code shows how to create a Type-C connector that is PD-capable.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,14 +101,10 @@ This example code shows how to create a Type-C connector that is PD-capable.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_config.md">UCM_CONNECTOR_CONFIG</a>
-</dt>
-<dt>
+
 <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_config_init.md">UCM_CONNECTOR_CONFIG_INIT</a>
-</dt>
-</dl>
+
  
 
  

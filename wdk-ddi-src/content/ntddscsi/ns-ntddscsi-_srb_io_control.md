@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 754d2a4c-6a22-4c25-87e2-e30e87b9c1ba
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SRB_IO_CONTROL, SRB_IO_CONTROL, *PSRB_IO_CONTROL
+ms.keywords : _SRB_IO_CONTROL, PSRB_IO_CONTROL structure pointer [Storage Devices], *PSRB_IO_CONTROL, ntddscsi/PSRB_IO_CONTROL, SRB_IO_CONTROL structure [Storage Devices], storage.srb_io_control, ntddscsi/SRB_IO_CONTROL, structs-scsibus_d7cd0432-d4be-4609-a3f9-91ef842caf7e.xml, PSRB_IO_CONTROL, SRB_IO_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRB_IO_CONTROL
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SRB_IO_CONTROL, *PSRB_IO_CONTROL
 ---
 
 # _SRB_IO_CONTROL structure
-
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -51,33 +55,33 @@ typedef struct _SRB_IO_CONTROL {
 
 ## Members
 
-        
-            `ControlCode`
 
-            Indicates the operation to be performed. There are no system-defined operations. Values must be defined by the driver as a set of private I/O control codes with which the application can make requests by calling the Win32 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function. For more information about defining private I/O control codes for device control requests, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565406">Using I/O Control Codes</a>.
-        
-            `HeaderLength`
+`ControlCode`
 
-            Is <b>sizeof</b>(SRB_IO_CONTROL).
-        
-            `Length`
+Indicates the operation to be performed. There are no system-defined operations. Values must be defined by the driver as a set of private I/O control codes with which the application can make requests by calling the Win32 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function. For more information about defining private I/O control codes for device control requests, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565406">Using I/O Control Codes</a>.
 
-            Indicates the size in bytes of the immediately following data area. This area can be divided for the particular operation into input and output areas. For input requests, the contents of the DataBuffer will be copied to the requester up to the returned value of DataTransferLength.
-        
-            `ReturnCode`
+`HeaderLength`
 
-            Returns a status code for examination by the requesting application.
-        
-            `Signature`
+Is <b>sizeof</b>(SRB_IO_CONTROL).
 
-            Identifies the application-dedicated, target HBA for this request. This signature is used to prevent conflicts in <b>ControlCode</b> values between vendors. It should be a string of ASCII characters. If a miniport driver does not recognize the input <b>Signature</b> value, it must complete the request with a status of SRB_STATUS_INVALID_REQUEST.
-        
-            `Timeout`
+`Length`
 
-            Indicates the interval in seconds that the request can execute before the OS-specific port driver might consider it timed out. Miniport drivers should be enforcing timeouts for SRB_IO_CONTROL, especially for any privately defined SRB_IO_CONTROL.
+Indicates the size in bytes of the immediately following data area. This area can be divided for the particular operation into input and output areas. For input requests, the contents of the DataBuffer will be copied to the requester up to the returned value of DataTransferLength.
 
-    ## Remarks
-        This structure is used by applications to send requests directly to an application-dedicated HBA. Note that such an application also must set up requests to program its dedicated HBA.
+`ReturnCode`
+
+Returns a status code for examination by the requesting application.
+
+`Signature`
+
+Identifies the application-dedicated, target HBA for this request. This signature is used to prevent conflicts in <b>ControlCode</b> values between vendors. It should be a string of ASCII characters. If a miniport driver does not recognize the input <b>Signature</b> value, it must complete the request with a status of SRB_STATUS_INVALID_REQUEST.
+
+`Timeout`
+
+Indicates the interval in seconds that the request can execute before the OS-specific port driver might consider it timed out. Miniport drivers should be enforcing timeouts for SRB_IO_CONTROL, especially for any privately defined SRB_IO_CONTROL.
+
+## Remarks
+This structure is used by applications to send requests directly to an application-dedicated HBA. Note that such an application also must set up requests to program its dedicated HBA.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,17 +91,12 @@ typedef struct _SRB_IO_CONTROL {
 | **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565367">SCSI Port I/O Control Codes</a>
-</dt>
-<dt>SCSI Port I/O Control Codes</dt>
-<dt>
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-</dt>
-</dl>
+
+SCSI Port I/O Control Codes
+
  
 
  

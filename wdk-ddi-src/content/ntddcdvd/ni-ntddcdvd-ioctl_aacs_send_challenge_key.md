@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 762776f1-5423-4d02-8b59-de1e9ada8044
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.keywords : storage.ioctl_aacs_send_challenge_key, IOCTL_AACS_SEND_CHALLENGE_KEY control code [Storage Devices], IOCTL_AACS_SEND_CHALLENGE_KEY, ntddcdvd/IOCTL_AACS_SEND_CHALLENGE_KEY, k307_064ac0c8-c4f9-4232-a41a-72159ff13fd2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_AACS_SEND_CHALLENGE_KEY
-req.alt-loc : Ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_SEND_CHALLENGE_KEY IOCTL
@@ -50,24 +54,19 @@ Length of an <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_send_challenge_key.md">AACS_
 None.
 
 ### Output Buffer Length
-None. 
-
-TBD
-
-TBD
+None.
 
 ### Input / Output Buffer
-<text></text>
+TBD
 
 ### Input / Output Buffer Length
-<text></text>
+TBD
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes transferred. The <b>Status</b> field is set to STATUS_SUCCESS or possibly STATUS_INSUFFICIENT_RESOURCES.
 
-    ## Remarks
-        The IOCTL_AACS_SEND_CHALLENGE_KEY request corresponds to the step in the Advanced Access Content System (AACS) authentication algorithm (AACS-Auth) in which the host provides the drive a point on the curve. For a complete description of AACS-Auth, see the <i>Advanced Access Content System, Introduction and Common Cryptographic Elements</i> specification that is published by Advanced Access Content System Licensing Administrator (AACS LA). </p>
+## Remarks
+The IOCTL_AACS_SEND_CHALLENGE_KEY request corresponds to the step in the Advanced Access Content System (AACS) authentication algorithm (AACS-Auth) in which the host provides the drive a point on the curve. For a complete description of AACS-Auth, see the <i>Advanced Access Content System, Introduction and Common Cryptographic Elements</i> specification that is published by Advanced Access Content System Licensing Administrator (AACS LA).
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2339da67-78cd-49d4-a70c-fd774706fe3f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_SHARE_MEMORY, *PVIDEO_SHARE_MEMORY, VIDEO_SHARE_MEMORY
+ms.keywords : PVIDEO_SHARE_MEMORY structure pointer [Display Devices], _VIDEO_SHARE_MEMORY, ntddvdeo/PVIDEO_SHARE_MEMORY, ntddvdeo/VIDEO_SHARE_MEMORY, VIDEO_SHARE_MEMORY, Video_Structs_11e49bfc-ee25-48cd-9327-f09c6218ed72.xml, display.video_share_memory, PVIDEO_SHARE_MEMORY, *PVIDEO_SHARE_MEMORY, VIDEO_SHARE_MEMORY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_SHARE_MEMORY
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVIDEO_SHARE_MEMORY, VIDEO_SHARE_MEMORY"
 ---
 
@@ -49,25 +53,25 @@ typedef struct _VIDEO_SHARE_MEMORY {
 
 ## Members
 
-        
-            `ProcessHandle`
 
-            Is a handle to the current process. This member is usually set to <b>NtCurrentProcess</b>, a macro defined in <i>Ntddk.h</i>.
-        
-            `RequestedVirtualAddress`
+`ProcessHandle`
 
-            Indicates the location of the requested frame buffer in the process's memory. This member is normally set to <b>NULL</b>, which means the display driver writer does not care about the precise location of the requested memory. If this member is set to a non-<b>NULL</b> value, the display driver writer intends that the frame buffer be located at that address. In this case, the display driver writer must be certain that the location specified is not already in use for another purpose.
-        
-            `ViewOffset`
+Is a handle to the current process. This member is usually set to <b>NtCurrentProcess</b>, a macro defined in <i>Ntddk.h</i>.
 
-            Indicates the byte offset from the beginning of the <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a>. This member is usually set to 0.
-        
-            `ViewSize`
+`RequestedVirtualAddress`
 
-            Indicates the size, in bytes, of the frame buffer.
+Indicates the location of the requested frame buffer in the process's memory. This member is normally set to <b>NULL</b>, which means the display driver writer does not care about the precise location of the requested memory. If this member is set to a non-<b>NULL</b> value, the display driver writer intends that the frame buffer be located at that address. In this case, the display driver writer must be certain that the location specified is not already in use for another purpose.
 
-    ## Remarks
-        VIDEO_SHARE_MEMORY is provided so that applications such as Direct Draw can have a view of video memory. Although the display driver is unable to directly provide such access to video memory, it can call into the video miniport driver for this purpose. The display driver does this by sending an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_share_video_memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a> request to the miniport driver. When the miniport driver fulfills this request, it uses the information in the VIDEO_SHARE_MEMORY structure, and fills in a <a href="..\ntddvdeo\ns-ntddvdeo-_video_share_memory_information.md">VIDEO_SHARE_MEMORY_INFORMATION</a> structure with the actual location of the requested memory, if no location was specified. When the application no longer needs the shared memory, the display driver can release this memory by making an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unshare_video_memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a> request, which also uses a VIDEO_SHARE_MEMORY structure as an input buffer.
+`ViewOffset`
+
+Indicates the byte offset from the beginning of the <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">frame buffer</a>. This member is usually set to 0.
+
+`ViewSize`
+
+Indicates the size, in bytes, of the frame buffer.
+
+## Remarks
+VIDEO_SHARE_MEMORY is provided so that applications such as Direct Draw can have a view of video memory. Although the display driver is unable to directly provide such access to video memory, it can call into the video miniport driver for this purpose. The display driver does this by sending an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_share_video_memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a> request to the miniport driver. When the miniport driver fulfills this request, it uses the information in the VIDEO_SHARE_MEMORY structure, and fills in a <a href="..\ntddvdeo\ns-ntddvdeo-_video_share_memory_information.md">VIDEO_SHARE_MEMORY_INFORMATION</a> structure with the actual location of the requested memory, if no location was specified. When the application no longer needs the shared memory, the display driver can release this memory by making an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unshare_video_memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a> request, which also uses a VIDEO_SHARE_MEMORY structure as an input buffer.
 
 For structures used in mapping into kernel-mode video memory, see <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory.md">VIDEO_MEMORY</a> and <a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>.
 
@@ -79,19 +83,14 @@ For structures used in mapping into kernel-mode video memory, see <a href="..\nt
 | **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_share_memory_information.md">VIDEO_SHARE_MEMORY_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_share_video_memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
-</dt>
-<dt>
+
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_share_memory_information.md">VIDEO_SHARE_MEMORY_INFORMATION</a>
+
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unshare_video_memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a>
-</dt>
-</dl>
+
  
 
  

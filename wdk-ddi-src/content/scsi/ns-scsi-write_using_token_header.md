@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A46ED23A-7DB0-4792-B903-F748BCDAD55E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : WRITE_USING_TOKEN_HEADER, *PWRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER
+ms.keywords : PWRITE_USING_TOKEN_HEADER structure pointer [Storage Devices], storage.write_using_token_header, WRITE_USING_TOKEN_HEADER structure [Storage Devices], scsi/PWRITE_USING_TOKEN_HEADER, scsi/WRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER, *PWRITE_USING_TOKEN_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WRITE_USING_TOKEN_HEADER
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PWRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WRITE_USING_TOKEN_HEADER, *PWRITE_USING_TOKEN_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -55,45 +59,45 @@ typedef struct _WRITE_USING_TOKEN_HEADER {
 
 ## Members
 
-        
-            `BlockDeviceRangeDescriptor`
 
-            An array of <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the destination data blocks for the offload write data transfer.
-        
-            `BlockDeviceRangeDescriptorListLength`
+`BlockDeviceRangeDescriptor`
 
-            The length, in bytes, for all  of the <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
-        
-            `BlockOffsetIntoToken`
+An array of <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the destination data blocks for the offload write data transfer.
 
-            The offset, in logical blocks,  in the ROD for <b>Token</b> indicating the start of the source data for the offload write data operation.
-        
-            `Immediate`
+`BlockDeviceRangeDescriptorListLength`
 
-            If set, the status of the WRITE USING TOKEN command is returned immediately after receipt and validation of the token ROD and range descriptors. Otherwise, status is returned after all command processing is complete.
-        
-            `Reserved1`
+The length, in bytes, for all  of the <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
 
-            Reserved bits.
-        
-            `Reserved2`
+`BlockOffsetIntoToken`
 
-            Reserved.
-        
-            `Reserved3`
+The offset, in logical blocks,  in the ROD for <b>Token</b> indicating the start of the source data for the offload write data operation.
 
-            Reserved.
-        
-            `Token`
+`Immediate`
 
-            A token created by a previous the POPULATE TOKEN command operation.
-        
-            `WriteUsingTokenDataLength`
+If set, the status of the WRITE USING TOKEN command is returned immediately after receipt and validation of the token ROD and range descriptors. Otherwise, status is returned after all command processing is complete.
 
-            The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.
+`Reserved1`
 
-    ## Remarks
-        All multibyte values are in big endian format. Prior to setting, these values must be converted from the endian format of the current platform.
+Reserved bits.
+
+`Reserved2`
+
+Reserved.
+
+`Reserved3`
+
+Reserved.
+
+`Token`
+
+A token created by a previous the POPULATE TOKEN command operation.
+
+`WriteUsingTokenDataLength`
+
+The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.
+
+## Remarks
+All multibyte values are in big endian format. Prior to setting, these values must be converted from the endian format of the current platform.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,16 +107,12 @@ typedef struct _WRITE_USING_TOKEN_HEADER {
 | **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Scsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
-</dt>
-<dt>
 <a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
-</dt>
-</dl>
+
+<a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
+
  
 
  

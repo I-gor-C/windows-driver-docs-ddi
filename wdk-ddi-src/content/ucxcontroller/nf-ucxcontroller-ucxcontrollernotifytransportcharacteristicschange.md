@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : DB49DF98-8A5B-4528-B312-63CE3DFABEF2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxControllerNotifyTransportCharacteristicsChange
+ms.keywords : UcxControllerNotifyTransportCharacteristicsChange function [Buses], buses.ucxcontrollernotifytransportcharacteristicschange, UcxControllerNotifyTransportCharacteristicsChange, ucxcontroller/UcxControllerNotifyTransportCharacteristicsChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : UcxControllerNotifyTransportCharacteristicsChange
-req.alt-loc : Ucxstubs.lib,Ucxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ucxstubs.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCX_CONTROLLER_STATE
 req.product : Windows 10 or later.
 ---
@@ -52,7 +56,7 @@ void UcxControllerNotifyTransportCharacteristicsChange(
 
 `Controller`
 
-
+TBD
 
 `UcxControllerTransportCharacteristics`
 
@@ -78,11 +82,8 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_get_transport_characteristics.md">EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS</a>
-</dt>
-</dl>
+
  
 
  

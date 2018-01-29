@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84e4f178-87d3-4f40-b4fc-7959818305fd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortFreePool
+ms.keywords : VideoPortFreePool function [Display Devices], VideoPortFreePool, display.videoportfreepool, VideoPort_Functions_a2b1e2c4-9f8d-455b-8484-c51e0669d526.xml, video/VideoPortFreePool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortFreePool
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -83,14 +87,10 @@ Callers of <b>VideoPortFreePool</b> must be running at IRQL &lt;= DISPATCH_LEVEL
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportallocatepool.md">VideoPortAllocatePool</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>
-</dt>
-</dl>
+
  
 
  

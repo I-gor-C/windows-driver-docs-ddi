@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bd64ef0d-b2e7-4f82-87a8-77fe98677fd9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_PROPERTY_STORE_RETRIEVE_FLAGS, WDF_PROPERTY_STORE_RETRIEVE_FLAGS
+ms.keywords : umdf.wdf_property_store_retrieve_flags, wudfddi_types/WdfPropertyStoreCreateVolatile, WdfPropertyStoreRetrieveFlagsMask, wudfddi_types/WdfPropertyStoreRetrieveFlagsMask, wudfddi_types/WDF_PROPERTY_STORE_RETRIEVE_FLAGS, WDF_PROPERTY_STORE_RETRIEVE_FLAGS enumeration, wdf.wdf_property_store_retrieve_flags, WdfPropertyStoreCreateIfMissing, umdfstructs_c11a65c3-e37f-4adb-b480-1682d8e51700.xml, WdfPropertyStoreCreateVolatile, _WDF_PROPERTY_STORE_RETRIEVE_FLAGS, WDF_PROPERTY_STORE_RETRIEVE_FLAGS, wudfddi_types/WdfPropertyStoreNormal, wudfddi_types/WdfPropertyStoreCreateIfMissing, WdfPropertyStoreNormal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDF_PROPERTY_STORE_RETRIEVE_FLAGS
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_PROPERTY_STORE_RETRIEVE_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -92,17 +96,12 @@ typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
+
  
 
  

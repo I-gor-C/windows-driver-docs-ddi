@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 398AFAEF-D0A9-4BBE-8884-1854C95AA878
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE
+ms.keywords : nfpdrivers.ioctl_nfcse_hce_remote_recv, IOCTL_NFCSE_HCE_REMOTE_RECV control code [Near-Field Proximity Drivers], IOCTL_NFCSE_HCE_REMOTE_RECV, nfcsedev/IOCTL_NFCSE_HCE_REMOTE_RECV
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_NFCSE_HCE_REMOTE_RECV
-req.alt-loc : nfcsedev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_HCE_REMOTE_RECV IOCTL
@@ -59,11 +63,28 @@ A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev-_secu
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<table>
+<tr>
+<th>Return Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>STATUS_BUFFER_OVERFLOW</b></td>
+<td>The buffer supplied was too small to receive the notification, the first DWORD will contain the expected buffer size.</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_PARAMETER</b></td>
+<td> If the input buffer is non-zero.</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_DEVICE_STATE</b></td>
+<td>If the IOCTL is sent on a handle other than with the relative name 'SEManage'.</td>
+</tr>
+</table>
 
-    ## Remarks
-        The following are requirements that the driver must adhere to.
+## Remarks
+The following are requirements that the driver must adhere to.
 
 <ul>
 <li>This IOCTL is sent on an existing connection after HCE Activated event is triggered.</li>
@@ -79,7 +100,6 @@ I/O Status block
 <li>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain the size of the SECURE_ELEMENT_HCE_DATA_PACKET structure plus its payload.</li>
 <li>If a received APDU data is too large to be copied into this IOCTL's output buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL's information field to sizeof(DWORD), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The APDU data must be left in the "Received" queue.</li>
 </ul>
-</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

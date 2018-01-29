@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : a9027cda-0851-46e2-9006-0d757109fc3a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCMTCPCI_PORT_CONTROLLER_CONFIG, *PUCMTCPCI_PORT_CONTROLLER_CONFIG, UCMTCPCI_PORT_CONTROLLER_CONFIG
+ms.keywords : ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_CONFIG, UCMTCPCI_PORT_CONTROLLER_CONFIG structure [Buses], buses.ucmtcpci_port_controller_config, UCMTCPCI_PORT_CONTROLLER_CONFIG, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CONFIG, PUCMTCPCI_PORT_CONTROLLER_CONFIG structure pointer [Buses], PUCMTCPCI_PORT_CONTROLLER_CONFIG, _UCMTCPCI_PORT_CONTROLLER_CONFIG, *PUCMTCPCI_PORT_CONTROLLER_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCMTCPCI_PORT_CONTROLLER_CONFIG
-req.alt-loc : ucmtcpciportcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_CONFIG, UCMTCPCI_PORT_CONTROLLER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCMTCPCI_PORT_CONTROLLER_CONFIG, *PUCMTCPCI_PORT_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -49,19 +53,19 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_CONFIG {
 
 ## Members
 
-        
-            `Capabilities`
 
-            A pointer to the 
+`Capabilities`
+
+A pointer to the 
                  <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_capabilities.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
-        
-            `Identification`
 
-            A pointer to the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_identification.md">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.
-        
-            `Size`
+`Identification`
 
-            Size of this structure.
+A pointer to the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_identification.md">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.
+
+`Size`
+
+Size of this structure.
 
 
 ## Requirements
@@ -72,13 +76,10 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_CONFIG {
 | **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontroller.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
-</dt>
-</dl>
+
  
 
  

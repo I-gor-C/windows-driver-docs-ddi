@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c486351a-b5a6-4a67-826d-6f66d04518b3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAcquireDevice
+ms.keywords : stream.ksacquiredevice, ks/KsAcquireDevice, KsAcquireDevice function [Streaming Media Devices], KsAcquireDevice, avfunc_396e6da2-9423-43ae-8a2b-24655a43037b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAcquireDevice
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,14 +79,10 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksreleasedevice.md">KsReleaseDevice</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-</dt>
-</dl>
+
  
 
  

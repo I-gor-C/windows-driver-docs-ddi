@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3bd92999-07f3-43bb-a826-4fea3e19168a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_CURSOR_CAPS,
+ms.keywords : iddcx/IDDCX_CURSOR_CAPS, IDDCX_CURSOR_CAPS, IDDCX_CURSOR_CAPS structure [Display Devices], display.iddcx_cursor_caps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_CURSOR_CAPS
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -50,29 +54,27 @@ typedef struct IDDCX_CURSOR_CAPS {
 
 ## Members
 
-        
-            `AlphaCursorSupport`
 
-            Indicates if the adapter supports the 32-bit alpha cursor format. Most cursors are alpha format.
-        
-            `ColorXorCursorSupport`
+`AlphaCursorSupport`
 
-            Indicates what level of support the driver has for XOR masks in the 32-bit masked color cursor format.
+Indicates if the adapter supports the 32-bit alpha cursor format. Most cursors are alpha format.
 
-<div class="alert"><b>Note</b>  The OS first converts any monochrome cursor to a color mask cursor.</div>
-<div> </div>
-        
-            `MaxX`
+`ColorXorCursorSupport`
 
-            The maximum width supported for all supported cursor types.
-        
-            `MaxY`
+Indicates what level of support the driver has for XOR masks in the 32-bit masked color cursor format.
+<div class="alert"><b>Note</b>  The OS first converts any monochrome cursor to a color mask cursor.</div><div> </div>
 
-            The maximum height support for all cursor types.
-        
-            `Size`
+`MaxX`
 
-            Total size of the structure.
+The maximum width supported for all supported cursor types.
+
+`MaxY`
+
+The maximum height support for all cursor types.
+
+`Size`
+
+Total size of the structure.
 
 
 ## Requirements

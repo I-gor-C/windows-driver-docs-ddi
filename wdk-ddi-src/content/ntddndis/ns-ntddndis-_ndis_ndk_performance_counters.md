@@ -7,8 +7,8 @@ old-location : netvista\ndis_ndk_performance_counters.htm
 old-project : netvista
 ms.assetid : DA752989-B49B-4832-8821-8B45AB3304CD
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_NDK_PERFORMANCE_COUNTERS, *PNDIS_NDK_PERFORMANCE_COUNTERS, NDIS_NDK_PERFORMANCE_COUNTERS
+ms.date : 1/18/2018
+ms.keywords : NDIS_NDK_PERFORMANCE_COUNTERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NDK_PERFORMANCE_COUNTERS, ntddndis/NDIS_NDK_PERFORMANCE_COUNTERS, *PNDIS_NDK_PERFORMANCE_COUNTERS, PNDIS_NDK_PERFORMANCE_COUNTERS, NDIS_NDK_PERFORMANCE_COUNTERS, netvista.ndis_ndk_performance_counters, _NDIS_NDK_PERFORMANCE_COUNTERS, PNDIS_NDK_PERFORMANCE_COUNTERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_NDK_PERFORMANCE_COUNTERS
-req.alt-loc : ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PNDIS_NDK_PERFORMANCE_COUNTERS, NDIS_NDK_PERFORMANCE_COUNTERS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NDIS_NDK_PERFORMANCE_COUNTERS, *PNDIS_NDK_PERFORMANCE_COUNTERS
 ---
 
 # _NDIS_NDK_PERFORMANCE_COUNTERS structure
@@ -75,129 +79,129 @@ typedef struct _NDIS_NDK_PERFORMANCE_COUNTERS {
 
 ## Members
 
-        
-            `Accept`
 
-            The number of inbound <i>RDMA</i> connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 1.
-        
-            `ActiveConnection`
+`Accept`
 
-            The number of  active <i>RDMA</i> connections. In a bitmask of counters, this is counter 4.
-        
-            `Connect`
+The number of inbound <i>RDMA</i> connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 1.
 
-            The number of outbound connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 0.
-        
-            `ConnectFailure`
+`ActiveConnection`
 
-            The  number of inbound and outbound <i>RDMA</i> connect attempts that  failed. In a bitmask of counters, this is counter 2.
-        
-            `ConnectionError`
+The number of  active <i>RDMA</i> connections. In a bitmask of counters, this is counter 4.
 
-            The number of established connections with  an error before a consumer disconnected the connection. In a bitmask of counters, this is counter 3.
-        
-            `CQError`
+`Connect`
 
-            The number of <i>RDMA</i> completion queue (CQs) that went into an error state. In a bitmask of counters, this is counter 25.
-        
-            `RDMAInFrames`
+The number of outbound connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 0.
 
-            The number, in frames,  of layer two frames that carry incoming <i>RDMA</i> traffic. In a bitmask of counters, this is counter 28.
-        
-            `RDMAInOctets`
+`ConnectFailure`
 
-            The number of bytes  for all incoming <i>RDMA</i> traffic. This should include additional layer two protocol overhead.  In a bitmask of counters, this is counter 26.
-        
-            `RDMAOutFrames`
+The  number of inbound and outbound <i>RDMA</i> connect attempts that  failed. In a bitmask of counters, this is counter 2.
 
-            The number, in frames,  of layer two frames that carry outgoing <i>RDMA</i> traffic. In a bitmask of counters, this is counter 29.
-        
-            `RDMAOutOctets`
+`ConnectionError`
 
-            The number of bytes  for all outgoing <i>RDMA</i> traffic.  This should include additional layer two protocol overhead.  In a bitmask of counters, this is counter 27.
-        
-            `Reserved01`
+The number of established connections with  an error before a consumer disconnected the connection. In a bitmask of counters, this is counter 3.
 
-            Reserved.
-        
-            `Reserved02`
+`CQError`
 
-            Reserved.
-        
-            `Reserved03`
+The number of <i>RDMA</i> completion queue (CQs) that went into an error state. In a bitmask of counters, this is counter 25.
 
-            Reserved.
-        
-            `Reserved04`
+`RDMAInFrames`
 
-            Reserved.
-        
-            `Reserved05`
+The number, in frames,  of layer two frames that carry incoming <i>RDMA</i> traffic. In a bitmask of counters, this is counter 28.
 
-            Reserved.
-        
-            `Reserved06`
+`RDMAInOctets`
 
-            Reserved.
-        
-            `Reserved07`
+The number of bytes  for all incoming <i>RDMA</i> traffic. This should include additional layer two protocol overhead.  In a bitmask of counters, this is counter 26.
 
-            Reserved.
-        
-            `Reserved08`
+`RDMAOutFrames`
 
-            Reserved.
-        
-            `Reserved09`
+The number, in frames,  of layer two frames that carry outgoing <i>RDMA</i> traffic. In a bitmask of counters, this is counter 29.
 
-            Reserved.
-        
-            `Reserved10`
+`RDMAOutOctets`
 
-            Reserved.
-        
-            `Reserved11`
+The number of bytes  for all outgoing <i>RDMA</i> traffic.  This should include additional layer two protocol overhead.  In a bitmask of counters, this is counter 27.
 
-            Reserved.
-        
-            `Reserved12`
+`Reserved01`
 
-            Reserved.
-        
-            `Reserved13`
+Reserved.
 
-            Reserved.
-        
-            `Reserved14`
+`Reserved02`
 
-            Reserved.
-        
-            `Reserved15`
+Reserved.
 
-            Reserved.
-        
-            `Reserved16`
+`Reserved03`
 
-            Reserved.
-        
-            `Reserved17`
+Reserved.
 
-            Reserved.
-        
-            `Reserved18`
+`Reserved04`
 
-            Reserved.
-        
-            `Reserved19`
+Reserved.
 
-            Reserved.
-        
-            `Reserved20`
+`Reserved05`
 
-            Reserved.
+Reserved.
 
-    ## Remarks
-        The <b>NDIS_NDK_PERFORMANCE_COUNTERS</b> structure is used in the <b>CounterSet</b>  member of the <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_statistics_info.md">NDIS_NDK_STATISTICS_INFO</a> structure. 
+`Reserved06`
+
+Reserved.
+
+`Reserved07`
+
+Reserved.
+
+`Reserved08`
+
+Reserved.
+
+`Reserved09`
+
+Reserved.
+
+`Reserved10`
+
+Reserved.
+
+`Reserved11`
+
+Reserved.
+
+`Reserved12`
+
+Reserved.
+
+`Reserved13`
+
+Reserved.
+
+`Reserved14`
+
+Reserved.
+
+`Reserved15`
+
+Reserved.
+
+`Reserved16`
+
+Reserved.
+
+`Reserved17`
+
+Reserved.
+
+`Reserved18`
+
+Reserved.
+
+`Reserved19`
+
+Reserved.
+
+`Reserved20`
+
+Reserved.
+
+## Remarks
+The <b>NDIS_NDK_PERFORMANCE_COUNTERS</b> structure is used in the <b>CounterSet</b>  member of the <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_statistics_info.md">NDIS_NDK_STATISTICS_INFO</a> structure. 
 
 NDK providers are required to support all the performance counters that are included
     in the <b>NDIS_NDK_PERFORMANCE_COUNTERS</b> structure. However, in the rare case that
@@ -215,18 +219,14 @@ All <b>ReservedXX</b> counters must be set to zero by providers and are ignored 
 | **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_capabilities.md">NDIS_NDK_CAPABILITIES</a>
-</dt>
-<dt>
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_statistics_info.md">NDIS_NDK_STATISTICS_INFO</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_PERFORMANCE_COUNTERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_PERFORMANCE_COUNTERS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

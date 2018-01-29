@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FA6EA2BA-938C-4377-A85A-2168C4C1F3C6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SUBMITCOMMAND, D3DKMT_SUBMITCOMMAND
+ms.keywords : D3DKMT_SUBMITCOMMAND, _D3DKMT_SUBMITCOMMAND, D3DKMT_SUBMITCOMMAND structure [Display Devices], display.d3dkmt_submitcommand, d3dkmthk/D3DKMT_SUBMITCOMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SUBMITCOMMAND
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SUBMITCOMMAND
 ---
 
@@ -57,54 +61,54 @@ typedef struct _D3DKMT_SUBMITCOMMAND {
 
 ## Members
 
-        
-            `BroadcastContext`
 
-            Specifies the handle of the context to execute the specified commands.
-        
-            `BroadcastContextCount`
+`BroadcastContext`
 
-            Specifies the number of context these command should be submitted to. This count must be at least 1.
-        
-            `CommandLength`
+Specifies the handle of the context to execute the specified commands.
 
-            Specifies the length, in bytes, of the commands being submitted to the GPU.
-        
-            `Commands`
+`BroadcastContextCount`
 
-            The GPU virtual address for the commands being submitted to the context for execution. This information is provided to the driver during command submission and is also used for debugging purposes.
-        
-            `Flags`
+Specifies the number of context these command should be submitted to. This count must be at least 1.
 
-            An instance of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.
-        
-            `HistoryBufferArray`
+`CommandLength`
 
-            This member is reserved for future use.
-        
-            `NumHistoryBuffers`
+Specifies the length, in bytes, of the commands being submitted to the GPU.
 
-            This member is reserved for future use.
-        
-            `NumPrimaries`
+`Commands`
 
-            Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
-        
-            `pPrivateDriverData`
+The GPU virtual address for the commands being submitted to the context for execution. This information is provided to the driver during command submission and is also used for debugging purposes.
 
-            Pointer to the driver private data to submitted by the user mode driver.
-        
-            `PresentHistoryToken`
+`Flags`
 
-            This member is reserved for future use.
-        
-            `PrivateDriverDataSize`
+An instance of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.
 
-            Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode  driver for submission private driver data or the call will fail.
-        
-            `WrittenPrimaries`
+`HistoryBufferArray`
 
-            Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.
+This member is reserved for future use.
+
+`NumHistoryBuffers`
+
+This member is reserved for future use.
+
+`NumPrimaries`
+
+Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
+
+`pPrivateDriverData`
+
+Pointer to the driver private data to submitted by the user mode driver.
+
+`PresentHistoryToken`
+
+This member is reserved for future use.
+
+`PrivateDriverDataSize`
+
+Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode  driver for submission private driver data or the call will fail.
+
+`WrittenPrimaries`
+
+Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.
 
 
 ## Requirements
@@ -115,13 +119,10 @@ typedef struct _D3DKMT_SUBMITCOMMAND {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a>
-</dt>
-</dl>
+
  
 
  

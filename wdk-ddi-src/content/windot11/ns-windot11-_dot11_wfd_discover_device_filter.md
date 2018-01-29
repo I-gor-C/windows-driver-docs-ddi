@@ -7,20 +7,18 @@ old-location : netvista\dot11_wfd_discover_device_filter.htm
 old-project : netvista
 ms.assetid : B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11_WFD_DISCOVER_DEVICE_FILTER, *PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER
+ms.date : 1/18/2018
+ms.keywords : windot11/DOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER structure [Network Drivers Starting with Windows Vista], netvista.dot11_wfd_discover_device_filter, PDOT11_WFD_DISCOVER_DEVICE_FILTER, _DOT11_WFD_DISCOVER_DEVICE_FILTER, PDOT11_WFD_DISCOVER_DEVICE_FILTER structure pointer [Network Drivers Starting with Windows Vista], DOT11_WFD_DISCOVER_DEVICE_FILTER, *PDOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/PDOT11_WFD_DISCOVER_DEVICE_FILTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : windot11.h
 req.include-header : Windot11.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 8
+req.target-min-winverclnt : Versions: Supported in Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11_WFD_DISCOVER_DEVICE_FILTER
-req.alt-loc : Windot11.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DOT11_WFD_DISCOVER_DEVICE_FILTER, *PDOT11_WFD_DISCOVER_DEVICE_FILTER
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_WFD_DISCOVER_DEVICE_FILTER structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_DISCOVER _DEVICE_FILTER</b> structure describes a P2P device and Group Owner filter when responding to OID_DOT11_WFD_DISCOVERY_REQUEST requests.
 
 ## Syntax
 ````
@@ -49,19 +53,18 @@ typedef struct _DOT11_WFD_DISCOVER_DEVICE_FILTER {
 
 ## Members
 
-        
-            `DeviceID`
 
-            The device address of a P2P Device or Group Owner to be discovered by the local P2P device.
-        
-            `GroupSSID`
+`DeviceID`
 
-            If GroupSSID is not a zero-length SSID, this member specifies the SSID of a P2P group that the local P2P device discovers. If this is the P2P wildcard SSID ("DIRECT-"), the local P2P device discovers all groups with P2P Group ID matching the desired device ID.
-        
-            `ucBitmask`
+The device address of a P2P Device or Group Owner to be discovered by the local P2P device.
 
-            Filters which instances of the P2P device to discover. Possible values include:
+`GroupSSID`
 
+If GroupSSID is not a zero-length SSID, this member specifies the SSID of a P2P group that the local P2P device discovers. If this is the P2P wildcard SSID ("DIRECT-"), the local P2P device discovers all groups with P2P Group ID matching the desired device ID.
+
+`ucBitmask`
+
+Filters which instances of the P2P device to discover. Possible values include:
 
 
 <table>
@@ -101,10 +104,10 @@ The local P2P device discovers a group with P2P group ID matching the specified 
 </tr>
 </table>
 
-    ## Remarks
-        The local P2P device should not extend the discovery operation to find additional instances.
+## Remarks
+The local P2P device should not extend the discovery operation to find additional instances.
 
-Note that if the value of <b>ucBitmask</b> is FILTER_BITMASK_DEVICE | FILTER_BITMASK_GO, the local P2P device should discover only one instance of the P2P device - either the P2P device or a GO with the desired P2P <b>DeviceID</b> and <b>GroupSSID</b>.</p>
+Note that if the value of <b>ucBitmask</b> is FILTER_BITMASK_DEVICE | FILTER_BITMASK_GO, the local P2P device should discover only one instance of the P2P device - either the P2P device or a GO with the desired P2P <b>DeviceID</b> and <b>GroupSSID</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

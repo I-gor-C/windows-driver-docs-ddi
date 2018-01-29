@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e78fa9ba-7573-47db-b4d8-9b7584d5b432
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_VideoPropertyRange, DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange
+ms.keywords : dxva/LPDXVA_VideoPropertyRange, LPDXVA_VideoPropertyRange structure pointer [Display Devices], dxvaref_0e7bc2aa-0404-4025-908a-5d4c528e020b.xml, dxva/DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange, _DXVA_VideoPropertyRange, display.dxva_videopropertyrange, DXVA_VideoPropertyRange structure [Display Devices], LPDXVA_VideoPropertyRange, DXVA_VideoPropertyRange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : DirectX 9.0 and later versions only.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_VideoPropertyRange
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPDXVA_VideoPropertyRange, DXVA_VideoPropertyRange"
 ---
 
 # _DXVA_VideoPropertyRange structure
@@ -49,22 +53,22 @@ typedef struct _DXVA_VideoPropertyRange {
 
 ## Members
 
-        
-            `DefaultValue`
 
-            Specifies the default value for a given property.
-        
-            `MaxValue`
+`DefaultValue`
 
-            Specifies the maximum value allowed for a given property.
-        
-            `MinValue`
+Specifies the default value for a given property.
 
-            Specifies the minimum value allowed for a given property.
-        
-            `StepSize`
+`MaxValue`
 
-            Specifies the step size increment for a given property.
+Specifies the maximum value allowed for a given property.
+
+`MinValue`
+
+Specifies the minimum value allowed for a given property.
+
+`StepSize`
+
+Specifies the step size increment for a given property.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _DXVA_VideoPropertyRange {
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_videodesc.md">DXVA_VideoDesc</a>
-</dt>
-</dl>
+
  
 
  

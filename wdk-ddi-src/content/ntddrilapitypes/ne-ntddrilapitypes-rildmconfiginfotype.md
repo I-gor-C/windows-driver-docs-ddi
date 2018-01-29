@@ -7,8 +7,8 @@ old-location : netvista\rildmconfiginfotype.htm
 old-project : netvista
 ms.assetid : c6dc14a5-59de-42dd-9e45-99f632bf6a57
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDMCONFIGINFOTYPE, RILDMCONFIGINFOTYPE
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILDMCONFIGINFOTYPE, RIL_DMCV_TYPE_STRING, RILDMCONFIGINFOTYPE, RIL_DMCV_TYPE_DWORD, ntddrilapitypes/RIL_DMCV_TYPE_MAX, ntddrilapitypes/RIL_DMCV_TYPE_BOOLEAN, RIL_DMCV_TYPE_BOOLEAN, ntddrilapitypes/RIL_DMCV_TYPE_STRING, ntddrilapitypes/RIL_DMCV_TYPE_DWORD, RIL_DMCV_TYPE_MAX, netvista.rildmconfiginfotype, RILDMCONFIGINFOTYPE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDMCONFIGINFOTYPE
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILDMCONFIGINFOTYPE
 ---
 
@@ -63,6 +67,11 @@ typedef enum _RILDMCONFIGINFOTYPE {
 
 <tr>
 <td>RIL_DMCV_TYPE_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DMCV_TYPE_NONE</td>
 <td></td>
 </tr>
 

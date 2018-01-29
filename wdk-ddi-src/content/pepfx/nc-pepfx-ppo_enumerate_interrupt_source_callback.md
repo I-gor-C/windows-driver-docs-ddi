@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1E6841D8-88A0-4EDB-89EF-3878AF8B0072
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.enumerateinterruptsource, EnumerateInterruptSource routine [Kernel-Mode Driver Architecture], EnumerateInterruptSource, PO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK, PO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK, pepfx/EnumerateInterruptSource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EnumerateInterruptSource
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -87,14 +91,10 @@ An <i>EnumerateInterruptSource</i> callback routine is called at the same IRQL a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md">EnumerateUnmaskedInterrupts</a>
-</dt>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md">EnumerateUnmaskedInterrupts</a>
+
  
 
  

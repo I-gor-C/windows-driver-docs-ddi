@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ab90ab40-7b45-4658-b11b-cf46f91f8699
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoCheckDesiredAccess
+ms.keywords : IoCheckDesiredAccess, IoCheckDesiredAccess function [Installable File System Drivers], ioref_f8879d66-0bad-4c92-b2a3-853b7eb65ac6.xml, ifsk.iocheckdesiredaccess, ntifs/IoCheckDesiredAccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCheckDesiredAccess
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,11 +54,11 @@ The <b>IoCheckDesiredAccess</b> routine is reserved for system use. See <a href=
 
 `DesiredAccess`
 
-
+TBD
 
 `GrantedAccess`
 
-
+TBD
 
 
 ## Return Value

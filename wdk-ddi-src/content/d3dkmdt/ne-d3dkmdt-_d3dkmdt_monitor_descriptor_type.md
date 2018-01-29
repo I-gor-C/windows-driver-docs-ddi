@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f5ec761f-fc20-4baf-a012-c32356644a6c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_MONITOR_DESCRIPTOR_TYPE, D3DKMDT_MONITOR_DESCRIPTOR_TYPE
+ms.keywords : d3dkmdt/D3DKMDT_MDT_VESA_EDID_V1_BLOCKMAP, DmEnums_9d9ed4df-33cf-403a-96dd-c0745426daf1.xml, D3DKMDT_MONITOR_DESCRIPTOR_TYPE enumeration [Display Devices], d3dkmdt/D3DKMDT_MDT_VESA_EDID_V1_BASEBLOCK, d3dkmdt/D3DKMDT_MDT_OTHER, d3dkmdt/D3DKMDT_MONITOR_DESCRIPTOR_TYPE, D3DKMDT_MDT_VESA_EDID_V1_BLOCKMAP, display.d3dkmdt_monitor_descriptor_type, D3DKMDT_MDT_VESA_EDID_V1_BASEBLOCK, D3DKMDT_MONITOR_DESCRIPTOR_TYPE, D3DKMDT_MDT_OTHER, D3DKMDT_MDT_UNINITIALIZED, d3dkmdt/D3DKMDT_MDT_UNINITIALIZED, _D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_MONITOR_DESCRIPTOR_TYPE
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 ---
 

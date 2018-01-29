@@ -7,8 +7,8 @@ old-location : netvista\rilhideconnectedidsettings.htm
 old-project : netvista
 ms.assetid : a0445969-b4b5-43f3-a8dc-a8d61bf44d94
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILHIDECONNECTEDIDSETTINGS, *LPRILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS structure [Network Drivers Starting with Windows Vista], RILHIDECONNECTEDIDSETTINGS, netvista.rilhideconnectedidsettings, *LPRILHIDECONNECTEDIDSETTINGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILHIDECONNECTEDIDSETTINGS
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _RILHIDECONNECTEDIDSETTINGS {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwExecutor`
+`cbSize`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwProvisioning`
 
-            
-        
-            `dwStatus`
+`dwExecutor`
 
-            
+
+
+`dwParams`
+
+
+
+`dwProvisioning`
+
+
+
+`dwStatus`
+
+
 
 
 ## Requirements

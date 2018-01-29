@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 67f41d3e-d306-400b-9970-88c62f0f7a7f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetHardErrorOrVerifyDevice
+ms.keywords : IoSetHardErrorOrVerifyDevice, k104_60c33e0c-64d3-404b-85a3-57e7da269404.xml, IoSetHardErrorOrVerifyDevice routine [Kernel-Mode Driver Architecture], ntddk/IoSetHardErrorOrVerifyDevice, kernel.iosetharderrororverifydevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetHardErrorOrVerifyDevice
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=DISPATCH_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -84,17 +88,12 @@ The IRP passed to <b>IoSetHardErrorOrVerifyDevice</b> must be associated with a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioraiseharderror.md">IoRaiseHardError</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nf-ntddk-ioraiseharderror.md">IoRaiseHardError</a>
+
+<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
+
  
 
  

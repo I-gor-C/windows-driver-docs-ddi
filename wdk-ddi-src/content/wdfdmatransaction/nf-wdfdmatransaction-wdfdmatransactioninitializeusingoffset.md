@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 896343A8-0C72-47D4-8465-A029EDCD66A0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionInitializeUsingOffset
+ms.keywords : wdf.wdfdmatransactioninitializeusingoffset, kmdf.wdfdmatransactioninitializeusingoffset, WdfDmaTransactionInitializeUsingOffset method, WdfDmaTransactionInitializeUsingOffset, wdfdmatransaction/WdfDmaTransactionInitializeUsingOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 
-req.alt-api : WdfDmaTransactionInitializeUsingOffset
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product : Windows 10 or later.
 ---
@@ -110,11 +114,8 @@ The driver can specify an MDL chain in the <i>Mdl</i> parameter of this method. 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
-</dt>
-</dl>
+
  
 
  

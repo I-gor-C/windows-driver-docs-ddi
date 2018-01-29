@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e1e37d2c-5688-4528-9cc5-62e70a7561fe
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FC4Statistics, *PHBA_FC4STATISTICS, HBA_FC4STATISTICS
+ms.keywords : hbaapi/PHBA_FC4STATISTICS, HBA_FC4STATISTICS structure [Storage Devices], storage.hba_fc4statistics, hbaapi/HBA_FC4Statistics, PHBA_FC4STATISTICS structure pointer [Storage Devices], HBA_FC4Statistics, structs-Fibre_1ab7a8f5-1b91-44ea-82b7-9c9ee92ce0e5.xml, HBA_FC4Statistics structure [Storage Devices], PHBA_FC4STATISTICS, *PHBA_FC4STATISTICS, HBA_FC4STATISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_FC4STATISTICS
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHBA_FC4STATISTICS, HBA_FC4STATISTICS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HBA_FC4STATISTICS, *PHBA_FC4STATISTICS
 ---
 
 # HBA_FC4Statistics structure
@@ -50,26 +54,26 @@ typedef struct HBA_FC4Statistics {
 
 ## Members
 
-        
-            `ControlRequests`
 
-            Contains the number of control requests that a port has received.
-        
-            `InputMegabytes`
+`ControlRequests`
 
-            Contains the number of megabytes of input data that a port has received.
-        
-            `InputRequests`
+Contains the number of control requests that a port has received.
 
-            Contains the number of input requests that a port has received.
-        
-            `OutputMegabytes`
+`InputMegabytes`
 
-            Contains the number of megabytes of output data that a port has transmitted.
-        
-            `OutputRequests`
+Contains the number of megabytes of input data that a port has received.
 
-            Contains the number of output requests that a port has received.
+`InputRequests`
+
+Contains the number of input requests that a port has received.
+
+`OutputMegabytes`
+
+Contains the number of megabytes of output data that a port has transmitted.
+
+`OutputRequests`
+
+Contains the number of output requests that a port has received.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct HBA_FC4Statistics {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hbaapi\nf-hbaapi-hba_getfc4statistics.md">HBA_GetFC4Statistics</a>
-</dt>
-</dl>
+
  
 
  

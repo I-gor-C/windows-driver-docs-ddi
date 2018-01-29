@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 58a34fe6-6e63-4022-81b5-2bfc10a75372
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DSHADER_INSTRUCTION_OPCODE_TYPE, D3DSHADER_INSTRUCTION_OPCODE_TYPE
+ms.keywords : d3d9types/D3DSIO_DEFI, d3d9types/D3DSIO_REP, d3d9types/D3DSIO_DP3, D3DSIO_IF, D3DSIO_CALL, D3DSIO_M3x4, D3DSIO_TEXDP3, d3d9types/D3DSIO_DEF, D3DSIO_DP2ADD, d3d9types/D3DSIO_ENDIF, d3d9types/D3DSIO_ENDLOOP, D3DSHADER_INSTRUCTION_OPCODE_TYPE enumeration [Display Devices], d3d9types/D3DSIO_NOP, D3DSIO_LOGP, D3DSIO_DCL, d3d9types/D3DSIO_LRP, D3DSIO_SUB, d3d9types/D3DSIO_M3x3, d3d9types/D3DSIO_DP4, d3d9types/D3DSIO_M4x4, D3DSIO_CRS, D3DSIO_LOOP, D3DSIO_IFC, D3DSIO_NRM, d3d9types/D3DSIO_BREAKC, D3DSIO_ENDIF, D3DSIO_EXP, D3DSIO_TEXDEPTH, d3d9types/D3DSIO_LOOP, D3DSIO_BREAKC, d3d9types/D3DSIO_COMMENT, d3d9types/D3DSIO_DP2ADD, d3d9types/D3DSIO_DSX, d3d9types/D3DSIO_BREAKP, D3DSIO_RET, d3d9types/D3DSIO_RCP, d3d9types/D3DSIO_FORCE_DWORD, d3d9types/D3DSIO_NRM, d3d9types/D3DSIO_SUB, D3DSIO_TEXLDL, d3d9types/D3DSIO_MAX, D3DSIO_TEXM3x3SPEC, D3DSIO_TEX, d3d9types/D3DSIO_TEXM3x3TEX, D3DSIO_SGN, d3d9types/D3DSIO_CRS, D3DSIO_BREAKP, D3DSIO_DP3, d3d9types/D3DSIO_M3x2, d3d9types/D3DSIO_MOVA, d3d9types/D3DSIO_SGN, D3DSIO_TEXLDD, D3DSIO_MAX, d3d9types/D3DSIO_TEXCOORD, D3DSIO_LRP, d3d9types/D3DSIO_MUL, d3d9types/D3DSIO_M4x3, d3d9types/D3DSIO_DEFB, d3d9types/D3DSIO_TEXLDL, d3d9types/D3DSIO_SINCOS, D3DSIO_TEXBEM, UserModeDisplayDriver_Shader_a344517d-f568-4577-9ef2-cd7c11cb471c.xml, d3d9types/D3DSIO_CALL, D3DSIO_EXPP, D3DSIO_M4x3, D3DSIO_REP, d3d9types/D3DSIO_TEXDP3TEX, d3d9types/D3DSIO_MAD, d3d9types/D3DSIO_TEXM3x3SPEC, D3DSIO_TEXM3x3VSPEC, D3DSIO_DSX, d3d9types/D3DSIO_IFC, d3d9types/D3DSIO_ABS, d3d9types/D3DSIO_TEXM3x3VSPEC, d3d9types/D3DSIO_TEXREG2GB, D3DSIO_SETP, _D3DSHADER_INSTRUCTION_OPCODE_TYPE, D3DSIO_LOG, D3DSIO_M3x3, D3DSIO_CMP, D3DSIO_MAD, D3DSIO_CALLNZ, D3DSIO_FRC, d3d9types/D3DSIO_END, d3d9types/D3DSIO_TEXREG2RGB, d3d9types/D3DSIO_ENDREP, D3DSIO_DEF, D3DSIO_DSY, d3d9types/D3DSIO_SETP, d3d9types/D3DSIO_BREAK, D3DSIO_SLT, d3d9types/D3DSIO_MIN, D3DSIO_TEXREG2AR, D3DSIO_ADD, D3DSIO_ELSE, d3d9types/D3DSIO_CND, D3DSIO_M3x2, D3DSIO_LABEL, D3DSIO_TEXM3x3, D3DSIO_CND, d3d9types/D3DSIO_EXPP, d3d9types/D3DSIO_PHASE, D3DSIO_RCP, d3d9types/D3DSIO_CALLNZ, D3DSIO_TEXM3x3TEX, d3d9types/D3DSIO_CMP, d3d9types/D3DSIO_LIT, D3DSHADER_INSTRUCTION_OPCODE_TYPE, D3DSIO_TEXBEML, D3DSIO_ABS, D3DSIO_TEXDP3TEX, d3d9types/D3DSIO_EXP, D3DSIO_TEXM3x2PAD, D3DSIO_TEXREG2RGB, D3DSIO_BEM, d3d9types/D3DSIO_MOV, D3DSIO_DST, d3d9types/D3DSIO_FRC, d3d9types/D3DSIO_TEXKILL, d3d9types/D3DSIO_BEM, D3DSIO_LIT, d3d9types/D3DSIO_TEXM3x3, D3DSIO_RSQ, d3d9types/D3DSIO_LABEL, d3d9types/D3DSIO_TEXDP3, d3d9types/D3DSIO_TEXM3x2TEX, d3d9types/D3DSIO_TEXBEM, d3d9types/D3DSIO_TEXDEPTH, D3DSIO_TEXM3x2DEPTH, D3DSIO_MIN, D3DSIO_TEXREG2GB, D3DSIO_M4x4, d3d9types/D3DSIO_DCL, D3DSIO_DEFI, d3d9types/D3DSIO_DSY, d3d9types/D3DSIO_SLT, d3d9types/D3DSIO_RET, D3DSIO_DP4, D3DSIO_BREAK, D3DSIO_FORCE_DWORD, d3d9types/D3DSIO_M3x4, d3d9types/D3DSIO_DST, D3DSIO_COMMENT, D3DSIO_MOVA, d3d9types/D3DSIO_RSQ, d3d9types/D3DSIO_TEX, D3DSIO_MOV, D3DSIO_ENDLOOP, D3DSIO_SINCOS, D3DSIO_END, D3DSIO_TEXCOORD, d3d9types/D3DSIO_POW, d3d9types/D3DSIO_TEXM3x2PAD, d3d9types/D3DSIO_TEXM3x3PAD, display.shader_operation_codes, d3d9types/D3DSIO_LOGP, D3DSIO_TEXM3x3PAD, d3d9types/D3DSIO_TEXLDD, d3d9types/D3DSIO_TEXREG2AR, d3d9types/D3DSIO_ADD, D3DSIO_TEXM3x2TEX, D3DSIO_ENDREP, D3DSIO_NOP, d3d9types/D3DSIO_LOG, D3DSIO_TEXKILL, d3d9types/D3DSIO_SGE, d3d9types/D3DSIO_IF, D3DSIO_POW, d3d9types/D3DSIO_TEXBEML, d3d9types/D3DSIO_TEXM3x2DEPTH, D3DSIO_DEFB, d3d9types/D3DSIO_ELSE, D3DSIO_MUL, D3DSIO_PHASE, d3d9types/D3DSHADER_INSTRUCTION_OPCODE_TYPE, D3DSIO_SGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DSHADER_INSTRUCTION_OPCODE_TYPE
-req.alt-loc : d3d9types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DSHADER_INSTRUCTION_OPCODE_TYPE
 ---
 
@@ -481,6 +485,11 @@ Instruction length is 2. Requires explicit use of replicate swizzle, that is, th
 </tr>
 
 <tr>
+<td>D3DSIO_RESERVED0</td>
+<td></td>
+</tr>
+
+<tr>
 <td>D3DSIO_RET</td>
 <td>The RET instruction returns from a subroutine or marks the end of the main function. If a shader contains no subroutines, using RET at the end of the main program is optional.</td>
 </tr>
@@ -535,13 +544,11 @@ The second and third sources could be used as temporary registers.</td>
 second source parameter token using the D3DSPR_SAMPLER register type. The second source parameter token identifies the texture sampler number to sample. 
 
 
-
 <div class="alert"><b>Note</b>  The tex and texld assembler instructions both use the D3DSIO_TEX operation code. 
 
 The tex instruction applies to pixel shader versions 1_0 through 1_3; it has one destination parameter token and no source parameter tokens associated with it. 
 
-The texld instruction applies to pixel shader version 1_4 and later; it has one destination parameter token and two source parameter tokens associated with it.</div>
-<div> </div></td>
+The texld instruction applies to pixel shader version 1_4 and later; it has one destination parameter token and two source parameter tokens associated with it.</div><div> </div></td>
 </tr>
 
 <tr>
@@ -557,7 +564,6 @@ The texld instruction applies to pixel shader version 1_4 and later; it has one 
 <tr>
 <td>D3DSIO_TEXCOORD</td>
 <td>The TEXCOORD instruction copies texture coordinate data (UVW1) as color data (RGBA). 
-
 <div class="alert"><b>Note</b>  The source parameter token is for pixel shader version 1_4 only.
 
 The texcoord and texcrd assembler instructions both use the D3DSIO_TEXCOORD operation code. 
@@ -565,8 +571,7 @@ The texcoord and texcrd assembler instructions both use the D3DSIO_TEXCOORD oper
 The texcoord instruction applies to pixel shader versions 1_0 through 1_3; it has one destination parameter token and no source parameter token associated with it. 
 
 The texcrd instruction applies to pixel shader version 1_4; it has one destination parameter token and one source parameter token associated with it. 
-</div>
-<div> </div></td>
+</div><div> </div></td>
 </tr>
 
 <tr>
@@ -591,7 +596,6 @@ The texcrd instruction applies to pixel shader version 1_4; it has one destinati
 If any of the components of the destination token is less than zero, terminate the pixel shader and discard the outputs.
 
 The following features apply to the destination token:
-
 <ul>
 <li>A temporary (D3DSPR_TEMP) or texture (D3DSPR_TEXTURE) register type must be used.</li>
 <li>If a temporary register is used, all components must have been previously written.</li>
@@ -605,12 +609,10 @@ The following features apply to the destination token:
 <td>The TEXLDD instruction samples a texture using the texture coordinates in the first source token, the sampler specified by the second source token, and the gradients (DSX and DSY) from the third and fourth source tokens. Instruction length is 5. Format a second source parameter token that must use the D3DSPR_SAMPLER register type. The sampler states that are supported are D3DSAMP_MAXMIPLEVEL and D3DSAMP_MIPMAPLODBIAS.
 
 
-
 <div class="alert"><b>Note</b>  All sources support arbitrary swizzles. 
 
 All write masks are valid on the destination. 
-</div>
-<div> </div></td>
+</div><div> </div></td>
 </tr>
 
 <tr>
@@ -620,7 +622,6 @@ All write masks are valid on the destination.
 The first source parameter token must provide the texture coordinates for the texture sample.
 
 Format the second source parameter token using the D3DSPR_SAMPLER register type. It identifies the texture sampler number to sample. The Negate source modifier cannot be specified. Swizzle can be specified. The sampler number must be declared at the beginning of the shader.
-
 
 <div class="alert"><b>Note</b>  <ul>
 <li>The default values for missing components of the destination token's write mask are either 0 or 1, and depend on the texture format.</li>
@@ -632,8 +633,7 @@ Format the second source parameter token using the D3DSPR_SAMPLER register type.
 the Float32 to Max range of pipeline being preserved. 
 </li>
 </ul>
-</div>
-<div> </div></td>
+</div><div> </div></td>
 </tr>
 
 <tr>

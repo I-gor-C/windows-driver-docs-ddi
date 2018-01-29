@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : a0cdf40e-627e-4d39-9c7b-6defcc2f29c3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _GET_LOCAL_HOST_INFO5, GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5
+ms.keywords : IEEE.get_local_host_info5, 1394/PGET_LOCAL_HOST_INFO5, 1394stct_7be8f02e-9734-40ae-9337-91d9026ec65d.xml, 1394/GET_LOCAL_HOST_INFO5, GET_LOCAL_HOST_INFO5 structure [Buses], PGET_LOCAL_HOST_INFO5 structure pointer [Buses], _GET_LOCAL_HOST_INFO5, GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5, PGET_LOCAL_HOST_INFO5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GET_LOCAL_HOST_INFO5
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5
 ---
 
@@ -47,17 +51,17 @@ typedef struct _GET_LOCAL_HOST_INFO5 {
 
 ## Members
 
-        
-            `ConfigRom`
 
-            Pointer to the beginning of the buffer to be filled with the local host's configuration ROM.
-        
-            `ConfigRomLength`
+`ConfigRom`
 
-            Specifies the length of the buffer pointed to by <b>ConfigRom</b>.
+Pointer to the beginning of the buffer to be filled with the local host's configuration ROM.
 
-    ## Remarks
-        When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>ConfigRomLength</b> is smaller than the size of the Configuration ROM, a status code of STATUS_INVALID_BUFFER_SIZE is returned. In this case, the correct buffer size is filled in the <b>ConfigRomLength</b> member.
+`ConfigRomLength`
+
+Specifies the length of the buffer pointed to by <b>ConfigRom</b>.
+
+## Remarks
+When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>ConfigRomLength</b> is smaller than the size of the Configuration ROM, a status code of STATUS_INVALID_BUFFER_SIZE is returned. In this case, the correct buffer size is filled in the <b>ConfigRomLength</b> member.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _GET_LOCAL_HOST_INFO5 {
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
-</dt>
-</dl>
+
  
 
  

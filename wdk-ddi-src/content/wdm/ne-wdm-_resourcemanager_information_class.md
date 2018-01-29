@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5ffaad89-b3c0-4fe6-bc2c-2b1f3b1bcfd2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _RESOURCEMANAGER_INFORMATION_CLASS, RESOURCEMANAGER_INFORMATION_CLASS
+ms.keywords : ResourceManagerCompletionInformation, RESOURCEMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/RESOURCEMANAGER_INFORMATION_CLASS, kernel.resourcemanager_information_class, ResourceManagerBasicInformation, wdm/ResourceManagerCompletionInformation, _RESOURCEMANAGER_INFORMATION_CLASS, ktm_ref_72b34c92-3548-4148-94c2-49f4a66ad4bf.xml, wdm/ResourceManagerBasicInformation, RESOURCEMANAGER_INFORMATION_CLASS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RESOURCEMANAGER_INFORMATION_CLASS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RESOURCEMANAGER_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
@@ -72,17 +76,12 @@ typedef enum _RESOURCEMANAGER_INFORMATION_CLASS {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_resourcemanager_basic_information.md">RESOURCEMANAGER_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_resourcemanager_completion_information.md">RESOURCEMANAGER_COMPLETION_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-zwqueryinformationresourcemanager.md">ZwQueryInformationResourceManager</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_resourcemanager_basic_information.md">RESOURCEMANAGER_BASIC_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_resourcemanager_completion_information.md">RESOURCEMANAGER_COMPLETION_INFORMATION</a>
+
  
 
  

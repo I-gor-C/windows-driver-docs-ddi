@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a2f83163-4529-4627-8959-2b4cd6b88828
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassGetNextEvent
+ms.keywords : StreamClassGetNextEvent routine [Streaming Media Devices], strclass-routines_5a606366-379b-400b-b039-8722f084e3c6.xml, strmini/StreamClassGetNextEvent, StreamClassGetNextEvent, stream.streamclassgetnextevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StreamClassGetNextEvent
-req.alt-loc : Stream.lib,Stream.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Stream.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -55,7 +59,7 @@ PKSEVENT_ENTRY StreamClassGetNextEvent(
 
 `HwInstanceExtension_OR_HwDeviceExtension`
 
-
+TBD
 
 `HwStreamObject`
 
@@ -82,7 +86,7 @@ If <i>CurrentEvent</i> is not <b>NULL</b>, <b>StreamClassGetNextEvent</b> return
 
 The minidriver can call <b>StreamClassGetNextEvent</b> successively to loop through the event queue, examining one event at a time.
 
-The caller may specify additional search criteria to match events on the event queue.</p>
+The caller may specify additional search criteria to match events on the event queue.
 
 ## Requirements
 | &nbsp; | &nbsp; |

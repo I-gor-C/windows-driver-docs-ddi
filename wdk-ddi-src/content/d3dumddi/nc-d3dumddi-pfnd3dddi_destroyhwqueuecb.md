@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F3578E0E-2249-4BC2-B776-E6356D523059
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnd3dddi_destroyhwqueuecb, PFND3DDDI_DESTROYHWQUEUECB callback function [Display Devices], PFND3DDDI_DESTROYHWQUEUECB, d3dumddi/PFND3DDDI_DESTROYHWQUEUECB
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFND3DDDI_DESTROYHWQUEUECB
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -63,11 +67,23 @@ A handle to the device.
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The call was successfully completed.
+</dl>
+</td>
+<td width="60%">
+The call was successfully completed.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other HRESULT values.
 

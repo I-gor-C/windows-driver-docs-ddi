@@ -7,8 +7,8 @@ old-location : netvista\rilsupsvcaction_2.htm
 old-project : netvista
 ms.assetid : 776db7b4-aa53-489d-9358-387e29e4e3e1
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSUPSVCACTION, RILSUPSVCACTION
+ms.date : 1/18/2018
+ms.keywords : RIL_SUPSVCACTION_USSD, rilapitypes/RIL_SUPSVCACTION_REGISTER_PW, rilapitypes/RIL_SUPSVCACTION_USSD, RIL_SUPSVCACTION_ERASE, RIL_SUPSVCACTION_DEACTIVATE, rilapitypes/RILSUPSVCACTION, netvista.rilsupsvcaction_2, RIL_SUPSVCACTION_REGISTER, rilapitypes/RIL_SUPSVCACTION_ERASE, RILSUPSVCACTION, RIL_SUPSVCACTION_MAX, RIL_SUPSVCACTION_INTERROGATE, rilapitypes/RIL_SUPSVCACTION_MAX, rilapitypes/RIL_SUPSVCACTION_REGISTER, rilapitypes/RIL_SUPSVCACTION_DEACTIVATE, RIL_SUPSVCACTION_REGISTER_PW, RILSUPSVCACTION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_SUPSVCACTION_INTERROGATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSUPSVCACTION
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSUPSVCACTION
 req.product : Windows 10 or later.
 ---
@@ -54,6 +58,11 @@ typedef enum _RILSUPSVCACTION {
 ## Constants
 
 <table>
+
+<tr>
+<td>RIL_SUPSVCACTION_ACTIVATE</td>
+<td></td>
+</tr>
 
 <tr>
 <td>RIL_SUPSVCACTION_DEACTIVATE</td>

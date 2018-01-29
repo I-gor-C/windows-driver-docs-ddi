@@ -7,8 +7,8 @@ old-location : debugger\getthreadidbyprocessor.htm
 old-project : debugger
 ms.assetid : c771a581-53ac-44a7-b307-b8a22ac97496
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSystemObjects4, IDebugSystemObjects4::GetThreadIdByProcessor, GetThreadIdByProcessor
+ms.date : 1/19/2018
+ms.keywords : GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects4::GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects interface, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects3::GetThreadIdByProcessor, IDebugSystemObjects2::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects2::GetThreadIdByProcessor, GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects_59fff866-93b2-48fb-8f49-bf778e2f0f7f.xml, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByProcessor method, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4, IDebugSystemObjects3::GetThreadIdByProcessor, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByProcessor method, debugger.getthreadidbyprocessor, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects::GetThreadIdByProcessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugSystemObjects.GetThreadIdByProcessor,IDebugSystemObjects2.GetThreadIdByProcessor,IDebugSystemObjects3.GetThreadIdByProcessor,IDebugSystemObjects4.GetThreadIdByProcessor
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -61,15 +65,29 @@ Receives the engine thread ID.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 This method is only available in kernel-mode debugging.
 
-For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
+For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

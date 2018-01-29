@@ -7,8 +7,8 @@ old-location : netvista\filterreceivenetbufferlists.htm
 old-project : netvista
 ms.assetid : 6359c2a7-1208-41ea-bbf9-015c91b6e8f6
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RxNameCacheInitialize
+ms.date : 1/18/2018
+ms.keywords : netvista.filterreceivenetbufferlists, FilterReceiveNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterReceiveNetBufferLists, FILTER_RECEIVE_NET_BUFFER_LISTS, FILTER_RECEIVE_NET_BUFFER_LISTS, ndis/FilterReceiveNetBufferLists, filter_functions_ref_c78036bd-cb6a-4898-b8b3-2d8585c7cfde.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.0 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FilterReceiveNetBufferLists
-req.alt-loc : Ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
@@ -39,6 +43,8 @@ req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 NDIS calls the 
   <i>FilterReceiveNetBufferLists</i> function to request a filter driver to process a receive
   indication.
+<div class="alert"><b>Note</b>  You must declare the function by using the <b>FILTER_RECEIVE_NET_BUFFER_LISTS</b> type. For more
+   information, see the following Examples section.</div><div> </div>
 
 ## Syntax
 
@@ -96,10 +102,11 @@ None
 
 <i>FilterReceiveNetBufferLists</i> is an optional function. If a filter driver does not filter receive
     indications, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
-    NdisFRegisterFilterDriver</a> function.
-
-The filter driver can call the 
+    <mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
+    NdisFRegisterFilterDriver</b></mshelp:link> function.
+<div class="alert"><b>Note</b>  A filter driver that does provide a 
+    <i>FilterReceiveNetBufferLists</i> function must provide a 
+    <a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a> function.</div><div> </div>The filter driver can call the 
     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function,
     from the 
     <a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a> function,
@@ -114,14 +121,14 @@ If the filter driver did not specify a
     <i>FilterReceiveNetBufferLists</i> function, NDIS calls the next higher filter driver in the stack that did specify a 
     <i>FilterReceiveNetBufferLists</i> function. If there is no such filter driver, NDIS calls an overlying
     driver's 
-    <a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
-    ProtocolReceiveNetBufferLists</a> function.
+    <mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><i>
+    ProtocolReceiveNetBufferLists</i></mshelp:link> function.
 
 If the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag in the 
     <i>ReceiveFlags</i> parameter is not set, the filter driver retains ownership of the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
     structures until it calls the 
-    <a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">
-    NdisFReturnNetBufferLists</a> function.
+    <mshelp:link keywords="netvista.ndisfreturnnetbufferlists" tabindex="0"><b>
+    NdisFReturnNetBufferLists</b></mshelp:link> function.
 
 If the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag in the 
     <i>ReceiveFlags</i> parameter is set, the filter driver cannot keep the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure and
@@ -130,16 +137,19 @@ If the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag in the
     <i>FilterReceiveNetBufferLists</i> function should return as quickly as possible. Before returning, the 
     <i>FilterReceiveNetBufferLists</i> function can copy the received data into filter-driver-allocated
     storage or pass the buffer on by calling the 
-    <a href="..\ndis\nf-ndis-ndisfindicatereceivenetbufferlists.md">
-    NdisFIndicateReceiveNetBufferLists</a> function.
-
-Filter drivers can filter received data before indicating the data to overlying drivers. For each
+    <mshelp:link keywords="netvista.ndisfindicatereceivenetbufferlists" tabindex="0"><b>
+    NdisFIndicateReceiveNetBufferLists</b></mshelp:link> function.
+<div class="alert"><b>Note</b>  If the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag is set, the filter driver must retain the
+    original set of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in the linked list. For example, when this flag is set the
+    driver might process the structures and indicate them up the stack one at a time but before the function
+    returns it must restore the original linked list.</div><div> </div>Filter drivers can filter received data before indicating the data to overlying drivers. For each
     buffer that is submitted to its 
     <i>FilterReceiveNetBufferLists</i> function, a filter driver can do the following:
-
+<ul>
+<li>
 Pass the buffer on to the next overlying driver by calling the 
-      <a href="..\ndis\nf-ndis-ndisfindicatereceivenetbufferlists.md">
-      NdisFIndicateReceiveNetBufferLists</a> function.
+      <mshelp:link keywords="netvista.ndisfindicatereceivenetbufferlists" tabindex="0"><b>
+      NdisFIndicateReceiveNetBufferLists</b></mshelp:link> function.
 
 The driver can modify the contents of the buffer before calling 
       <b>NdisFIndicateReceiveNetBufferLists</b>.
@@ -148,25 +158,32 @@ The driver can change the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag setting that 
       <i>FilterReceiveNetBufferLists</i> or simply pass it on to 
       <b>NdisFIndicateReceiveNetBufferLists</b>.
 
+</li>
+<li>
 Discard the buffer. If NDIS cleared the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag, call the 
       <b>NdisFReturnNetBufferLists</b> function to discard the buffer. If NDIS set the
       <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag, take no action and return from 
       <i>FilterReceiveNetBufferLists</i> to discard the buffer.
 
+</li>
+<li>
 Queue the buffer in a local data structure for later processing. If NDIS set the
       <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag of 
       <i>FilterReceiveNetBufferLists</i>, the filter driver must create a copy before returning from 
       <i>FilterReceiveNetBufferLists</i>.
 
+</li>
+<li>
 Copy the buffer and originate a receive indication with the copy. The receive indication is similar
       to a filter-driver-initiated receive indication. In this case, the driver must return the original
       buffer to the underlying driver.
 
-If the filter driver called 
+</li>
+</ul>If the filter driver called 
     <b>NdisFIndicateReceiveNetBufferLists</b> and did not set the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag, NDIS
     calls the 
-    <a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">
-    FilterReturnNetBufferLists</a> function for the filter module. In its 
+    <mshelp:link keywords="netvista.filterreturnnetbufferlists" tabindex="0"><i>
+    FilterReturnNetBufferLists</i></mshelp:link> function for the filter module. In its 
     <i>FilterReturnNetBufferLists</i> function, the filter driver will undo the operations that it performed
     on the buffer on the receive indication path.
 
@@ -178,14 +195,38 @@ If a filter module is in the
 
 NDIS calls 
     <i>FilterReceiveNetBufferLists</i> at IRQL &lt;= DISPATCH_LEVEL.
-
-To define a <i>FilterReceiveNetBufferLists</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
+<h3><a id="Examples"></a><a id="examples"></a><a id="EXAMPLES"></a>Examples</h3>To define a <i>FilterReceiveNetBufferLists</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
 
 For example, to define a <i>FilterReceiveNetBufferLists</i> function that is named "MyReceiveNetBufferLists", use the <b>FILTER_RECEIVE_NET_BUFFER_LISTS</b> type as shown in this code example:
-
-Then, implement your function as follows:
-
-The <b>FILTER_RECEIVE_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>FILTER_RECEIVE_NET_BUFFER_LISTS</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>FILTER_RECEIVE_NET_BUFFER_LISTS MyReceiveNetBufferLists;</pre>
+</td>
+</tr>
+</table></span></div>Then, implement your function as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>_Use_decl_annotations_
+VOID
+ MyReceiveNetBufferLists(
+    NDIS_HANDLE  FilterModuleContext,
+    PNET_BUFFER_LIST  NetBufferLists,
+    NDIS_PORT_NUMBER  PortNumber,
+    ULONG  NumberOfNetBufferLists,
+    ULONG  ReceiveFlags
+    )
+  {...}</pre>
+</td>
+</tr>
+</table></span></div>The <b>FILTER_RECEIVE_NET_BUFFER_LISTS</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>FILTER_RECEIVE_NET_BUFFER_LISTS</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/232c4272-0bf0-4a4e-9560-3bceeca8a3e3">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
@@ -203,48 +244,34 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">FilterReturnNetBufferLists</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a>
-</dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_parameters.md">NDIS_RECEIVE_QUEUE_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndisfindicatereceivenetbufferlists.md">
-   NdisFIndicateReceiveNetBufferLists</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">NdisFReturnNetBufferLists</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
-</dt>
-<dt>
+<mshelp:link keywords="netvista.ndisfindicatereceivenetbufferlists" tabindex="0"><b>
+   NdisFIndicateReceiveNetBufferLists</b></mshelp:link>
+
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
-</dt>
-<dt>
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+
+<a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">FilterReturnNetBufferLists</a>
+
+<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-</dt>
-<dt>
+
+<mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><i>
+   ProtocolReceiveNetBufferLists</i></mshelp:link>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-</dt>
-<dt>
-<a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
-   ProtocolReceiveNetBufferLists</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_parameters.md">NDIS_RECEIVE_QUEUE_PARAMETERS</a>
+
+<a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">NdisFReturnNetBufferLists</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_RECEIVE_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_RECEIVE_NET_BUFFER_LISTS callback function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

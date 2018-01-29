@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cb1fc590-3d3a-4b06-b467-28c3adb43706
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfMemoryCopyToBuffer
+ms.keywords : wdfmemory/WdfMemoryCopyToBuffer, PFN_WDFMEMORYCOPYTOBUFFER, DFMemoryObjectRef_8668c3aa-f5f0-4a1a-9290-27cf78fbcd24.xml, WdfMemoryCopyToBuffer method, wdf.wdfmemorycopytobuffer, WdfMemoryCopyToBuffer, kmdf.wdfmemorycopytobuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfMemoryCopyToBuffer
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
 req.product : Windows 10 or later.
 ---
@@ -74,14 +78,34 @@ The number of bytes to copy from the source buffer to the destination buffer. Th
 ## Return Value
 
 <b>WdfMemoryCopyToBuffer</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The byte offset that the <i>SourceOffset</i> parameter specified was too large, or the <i>NumBytesToCopyTo</i> parameter was greater than the size of the source buffer.
+</dl>
+</td>
+<td width="60%">
+The byte offset that the <i>SourceOffset</i> parameter specified was too large, or the <i>NumBytesToCopyTo</i> parameter was greater than the size of the source buffer.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -94,8 +118,6 @@ The framework does not allow the driver to copy more bytes than the source buffe
 For more information about framework memory objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-memory-buffers">Using Memory Buffers</a>.
 
 If the source or destination buffer was allocated from the pageable memory pool, the <b>WdfMemoryCopyToBuffer</b> method must be called at IRQL &lt;= APC_LEVEL. Otherwise, the method can be called at any IRQL.
-
-The following code example allocates a new buffer and copies the contents of a memory object's buffer into the new buffer.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,11 +133,8 @@ The following code example allocates a new buffer and copies the contents of a m
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycopyfrombuffer.md">WdfMemoryCopyFromBuffer</a>
-</dt>
-</dl>
+
  
 
  

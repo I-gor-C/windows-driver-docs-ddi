@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B4B6C5F0-AB67-4D30-B6A5-76B7596D22B6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay3, DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 callback function [Display Devices], DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, d3dkmddi/DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,18 +68,40 @@ A pointer to a DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 structure tha
 ## Return Value
 
 DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 returns the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>If the routine has completed successfully.
+</dl>
+</td>
+<td width="60%">
+If the routine has completed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_RETRY</b></dt>
-</dl>If the driver needs to be called at the PASSIVE_LEVEL. The driver should also set the DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS.PrePresentNeeded flag.
+</dl>
+</td>
+<td width="60%">
+If the driver needs to be called at the PASSIVE_LEVEL. The driver should also set the DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS.PrePresentNeeded flag.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
 This function is typically called at interrupt level, but if the driver needs to perform hardware configuration that can only be performed at PASSIVE_LEVEL, the driver can request that this function be recalled at PASSIVE level by returning STATUS_RETRY and setting the DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS.PrePresentNeeded flag.
 
-Even when called at PASSIVE_LEVEL, the driver should avoid spending a significant amount of time in this call because the call blocks the main GPU scheduler thread and delay could lead to present glitches. Time intensive actions should be queued as separate work items by driver and handled in background. In this scenario, any conflicts between the queued item and hardware changes demanded by future pre/post calls should be managed by the driver. </p>
+Even when called at PASSIVE_LEVEL, the driver should avoid spending a significant amount of time in this call because the call blocks the main GPU scheduler thread and delay could lead to present glitches. Time intensive actions should be queued as separate work items by driver and handled in background. In this scenario, any conflicts between the queued item and hardware changes demanded by future pre/post calls should be managed by the driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |

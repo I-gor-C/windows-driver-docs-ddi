@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 869d3a3f-e2f8-4c23-864b-d40f3e67a9ec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_POSITIONS, KSPROPERTY_POSITIONS, *PKSPROPERTY_POSITIONS
+ms.keywords : PKSPROPERTY_POSITIONS structure pointer [Streaming Media Devices], ks/PKSPROPERTY_POSITIONS, stream.ksproperty_positions, PKSPROPERTY_POSITIONS, KSPROPERTY_POSITIONS structure [Streaming Media Devices], ks-struct_97829290-4c01-4a03-b56b-3e5915941094.xml, *PKSPROPERTY_POSITIONS, ks/KSPROPERTY_POSITIONS, KSPROPERTY_POSITIONS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSPROPERTY_POSITIONS
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSPROPERTY_POSITIONS, *PKSPROPERTY_POSITIONS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSPROPERTY_POSITIONS, KSPROPERTY_POSITIONS"
 ---
 
 # KSPROPERTY_POSITIONS structure
@@ -49,25 +53,25 @@ typedef struct {
 
 ## Members
 
-        
-            `Current`
 
-            Specifies the current position as a 64-bit value.
-        
-            `CurrentFlags`
+`Current`
 
-            A structure of type <a href="..\ks\ne-ks-ks_seeking_flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Current</b> parameter.
-        
-            `Stop`
+Specifies the current position as a 64-bit value.
 
-            Specifies the stop position as a 64-bit value.
-        
-            `StopFlags`
+`CurrentFlags`
 
-            A structure of type <a href="..\ks\ne-ks-ks_seeking_flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Stop</b> parameter.
+A structure of type <a href="..\ks\ne-ks-ks_seeking_flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Current</b> parameter.
 
-    ## Remarks
-        The KSPROPERTY_POSITIONS structure is used with positioning properties in the KSPROPSETID_MediaSeeking property set. These properties correspond to DirectShow's <b>IMediaSeeking::GetPositions</b> and <b>IMediaSeeking::SetPositions</b>.
+`Stop`
+
+Specifies the stop position as a 64-bit value.
+
+`StopFlags`
+
+A structure of type <a href="..\ks\ne-ks-ks_seeking_flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Stop</b> parameter.
+
+## Remarks
+The KSPROPERTY_POSITIONS structure is used with positioning properties in the KSPROPSETID_MediaSeeking property set. These properties correspond to DirectShow's <b>IMediaSeeking::GetPositions</b> and <b>IMediaSeeking::SetPositions</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct {
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a>
-</dt>
-</dl>
+
  
 
  

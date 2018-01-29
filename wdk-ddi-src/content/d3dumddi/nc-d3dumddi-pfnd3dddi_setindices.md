@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5348b3f9-78c5-4915-ba68-296d6f9f916c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.setindices, SetIndices callback function [Display Devices], SetIndices, PFND3DDDI_SETINDICES, PFND3DDDI_SETINDICES, d3dumddi/SetIndices, UserModeDisplayDriver_Functions_c51c5796-e271-4b76-a013-88038767d356.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetIndices
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,14 +87,10 @@ The Microsoft Direct3D runtime supplies a handle value of zero in the <b>hIndexB
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setindices.md">D3DDDIARG_SETINDICES</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setindices.md">D3DDDIARG_SETINDICES</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 83a5e9b7-1731-422f-a0df-c1efbc8cad81
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetNewSystemBufferAddress
+ms.keywords : FltGetNewSystemBufferAddress, FltGetNewSystemBufferAddress function [Installable File System Drivers], ifsk.fltgetnewsystembufferaddress, FltApiRef_e_to_o_a9a2a8aa-92e5-4843-a1e9-5b1a15d870fa.xml, fltkernel/FltGetNewSystemBufferAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows 7 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltGetNewSystemBufferAddress
-req.alt-loc : fltmgr.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Fltmgr.lib
 req.dll : Fltmgr.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -79,11 +83,8 @@ If the FLTFL_CALLBACK_DATA_NEW_SYSTEM_BUFFER flag is not set, then this routine 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-</dt>
-</dl>
+
  
 
  

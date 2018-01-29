@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 08111f70-d0cc-4abc-8bcd-86683af3eb32
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportDMus, IMiniportDMus::Init, Init
+ms.keywords : IMiniportDMus, audmp-routines_016b2aed-13f3-4d9a-86c0-fbdbcbf55341.xml, dmusicks/IMiniportDMus::Init, Init method [Audio Devices], IMiniportDMus interface, IMiniportDMus interface [Audio Devices], Init method, Init method [Audio Devices], audio.iminiportdmus_init, IMiniportDMus::Init, Init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportDMus.Init
-req.alt-loc : dmusicks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dmusicks.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DMUS_STREAM_TYPE
 ---
 
@@ -75,12 +79,16 @@ NTSTATUS Init(
 ## Remarks
 
 The <i>pUnknownAdapter</i> parameter is optional:
-
+<ul>
+<li>
 If <i>pUnknownAdapter</i> is non-<b>NULL</b>, the <code>Init</code> method queries the <i>pUnknownAdapter</i> object for its <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a> interface.
 
+</li>
+<li>
 If <i>pUnknownAdapter</i> is <b>NULL</b>, the <code>Init</code> method calls <a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a> to create a new <b>IInterruptSync</b> object. In this case, the resource list that <i>pResourceList</i> points to supplies the interrupt resource that the new <b>IInterruptSync</b> object uses.
 
-In either case, the <code>Init</code> method and calls the <b>RegisterServiceRoutine</b> method on the <b>IInterruptSync</b> object in order to add the miniport driver's interrupt service routine (ISR) to the list of ISRs. When the adapter driver later frees the port object, the port driver releases its reference to the <b>IInterruptSync</b> object.
+</li>
+</ul>In either case, the <code>Init</code> method and calls the <b>RegisterServiceRoutine</b> method on the <b>IInterruptSync</b> object in order to add the miniport driver's interrupt service routine (ISR) to the list of ISRs. When the adapter driver later frees the port object, the port driver releases its reference to the <b>IInterruptSync</b> object.
 
 The <i>pUnknownAdapter</i> and <i>pResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortDMus</b> object's <code>Init</code> method (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>).
 
@@ -100,32 +108,22 @@ The <i>pUnknownAdapter</i>, <i>pResourceList</i>, <i>pPort</i>, and <i>ppService
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-</dt>
-<dt>
-<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
-</dt>
-<dt>
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>
-</dt>
-<dt>
 <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
-</dt>
-<dt>
-<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+
+<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
+
+<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
+
  
 
  

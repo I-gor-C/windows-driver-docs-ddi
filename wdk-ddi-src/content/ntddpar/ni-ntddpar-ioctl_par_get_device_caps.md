@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 6446d667-1a35-4055-b9e7-41d372df9db2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+ms.keywords : parports.ioctl_par_get_device_caps, IOCTL_PAR_GET_DEVICE_CAPS control code [Parallel Ports], IOCTL_PAR_GET_DEVICE_CAPS, ntddpar/IOCTL_PAR_GET_DEVICE_CAPS, cisspd_ea215140-7641-4554-bf95-362942d13143.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PAR_GET_DEVICE_CAPS
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_GET_DEVICE_CAPS IOCTL
@@ -47,16 +51,6 @@ Returns the operating protocols that the parallel device supports
 
 </li>
 </ul>
-For more information, see <a href="https://msdn.microsoft.com/2ff53ed0-dbb7-4c8f-b6e4-5f7d20124a7c">Setting and Clearing a Communication Mode for a Parallel Device</a>.
-
-
-
-The IOCTL_PAR_GET_DEVICE_CAPS request does the following:
-
-Specifies the protocols that the system-supplied bus driver for parallel ports must not use with a parallel device
-
-Returns the operating protocols that the parallel device supports
-
 For more information, see <a href="https://msdn.microsoft.com/2ff53ed0-dbb7-4c8f-b6e4-5f7d20124a7c">Setting and Clearing a Communication Mode for a Parallel Device</a>.
 
 ### Major Code
@@ -81,14 +75,9 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to the size, in bytes, of a USHORT. 
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to the following value:
-
-
-
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is less than the size, in bytes, of a USHORT.
 
 
 ## Requirements
@@ -98,16 +87,12 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is less than the
 | **Header** | ntddpar.h (include Ntddpar.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
-</dt>
-<dt>
 <a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
-</dt>
-</dl>
+
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
+
  
 
  

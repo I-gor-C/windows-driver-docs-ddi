@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fc52e06d-c826-43c2-ac61-4f56fd808d43
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _OB_POST_OPERATION_INFORMATION, *POB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION
+ms.keywords : wdm/OB_POST_OPERATION_INFORMATION, wdm/POB_POST_OPERATION_INFORMATION, POB_POST_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.ob_post_operation_information, _OB_POST_OPERATION_INFORMATION, POB_POST_OPERATION_INFORMATION, *POB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_c_6ef8c6e1-d537-47e0-875f-08f884362459.xml, OB_POST_OPERATION_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2008 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OB_POST_OPERATION_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*POB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : OB_POST_OPERATION_INFORMATION, *POB_POST_OPERATION_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -59,33 +63,33 @@ typedef struct _OB_POST_OPERATION_INFORMATION {
 
 ## Members
 
-        
-            `CallContext`
 
-            A pointer to driver-specific context information for the operation. This value is the value that the <i>OperationInformation</i>-&gt;<b>CallContext</b> member specifies to the <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> routine.
-        
-            `Object`
+`CallContext`
 
-            A pointer to the process or thread object that is the target of the handle operation.
-        
-            `ObjectType`
+A pointer to driver-specific context information for the operation. This value is the value that the <i>OperationInformation</i>-&gt;<b>CallContext</b> member specifies to the <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> routine.
 
-            A pointer to the object type of the object. This type can be <b>PsProcessType</b> for a process or <b>PsThreadType</b> for a thread.
-        
-            `Operation`
+`Object`
 
-            The type of handle operation. This member might be one of the following values:
-        
-            `Parameters`
+A pointer to the process or thread object that is the target of the handle operation.
 
-            A pointer to an <a href="..\wdm\ns-wdm-_ob_post_operation_parameters.md">OB_POST_OPERATION_PARAMETERS</a> union that contains operation-specific information. The <b>Operation</b> member determines which member of the union is valid. The pointer is valid only when <b>ReturnStatus</b> is a success code.
-        
-            `ReturnStatus`
+`ObjectType`
 
-            The NTSTATUS value for the handle operation.
+A pointer to the object type of the object. This type can be <b>PsProcessType</b> for a process or <b>PsThreadType</b> for a thread.
 
-    ## Remarks
-        Unlike the <a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a> structure, the members of the <b>OB_POST_OPERATION_INFORMATION</b> structure are purely informational; you cannot modify them.
+`Operation`
+
+The type of handle operation. This member might be one of the following values:
+
+`Parameters`
+
+A pointer to an <a href="..\wdm\ns-wdm-_ob_post_operation_parameters.md">OB_POST_OPERATION_PARAMETERS</a> union that contains operation-specific information. The <b>Operation</b> member determines which member of the union is valid. The pointer is valid only when <b>ReturnStatus</b> is a success code.
+
+`ReturnStatus`
+
+The NTSTATUS value for the handle operation.
+
+## Remarks
+Unlike the <a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a> structure, the members of the <b>OB_POST_OPERATION_INFORMATION</b> structure are purely informational; you cannot modify them.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,19 +99,14 @@ typedef struct _OB_POST_OPERATION_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
+
+<a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a>
+
  
 
  

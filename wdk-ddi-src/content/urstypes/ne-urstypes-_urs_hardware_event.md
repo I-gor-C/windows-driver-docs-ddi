@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 985A7725-1EE1-4419-B8BE-FEE2306E93A7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URS_HARDWARE_EVENT, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT
+ms.keywords : UrsHardwareEventDetach, UrsHardwareEventNone, urstypes/UrsHardwareEventIdGround, UrsHardwareEventPortTypeDfp, urstypes/UrsHardwareEventPortTypeUfp, _URS_HARDWARE_EVENT, urstypes/UrsHardwareEventPortTypeDfp, urstypes/UrsHardwareEventIdFloat, urstypes/UrsHardwareEventNone, URS_HARDWARE_EVENT enumeration [Buses], urstypes/URS_HARDWARE_EVENT, UrsHardwareEventPortTypeUfp, UrsHardwareEventIdGround, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT, URS_HARDWARE_EVENT, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT enumeration [Buses], UrsHardwareEventIdFloat, urstypes/UrsHardwareEventDetach, *PURS_HARDWARE_EVENT, buses.urs_hardware_event
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT
-req.alt-loc : Urstypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT
 req.product : Windows 10 or later.
 ---
@@ -87,7 +91,7 @@ typedef enum _URS_HARDWARE_EVENT {
 
 ## Remarks
 
-Values defined for USB Type-C systems should not be directly used by the client driver. Instead the driver should report that it does not support hardware event reporting by calling <a href="..\ursdevice\nf-ursdevice-urssethardwareeventsupport.md">UrsSetHardwareEventSupport</a>. These hardware events are detected by a USB Type-C connector driver, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt188011">USB Type-C connector driver programming reference</a>. </p>
+Values defined for USB Type-C systems should not be directly used by the client driver. Instead the driver should report that it does not support hardware event reporting by calling <a href="..\ursdevice\nf-ursdevice-urssethardwareeventsupport.md">UrsSetHardwareEventSupport</a>. These hardware events are detected by a USB Type-C connector driver, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt188011">USB Type-C connector driver programming reference</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 66EDD6E5-F6EB-42C9-8B68-3A19DED7DCB8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
+ms.keywords : usbsidebandaudio/PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, audio.usbsidebandaudio_device_descriptor, PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR structure pointer [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR structure [Audio Devices], *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
-req.alt-loc : 
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -52,8 +56,20 @@ typedef struct _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR {
 ## Members
 
 
-    ## Remarks
-        TBD</p>
+`CbSize`
+
+
+
+`ContainerId`
+
+
+
+`NumberOfEndpoints`
+
+
+
+## Remarks
+TBD
 
 ## Requirements
 | &nbsp; | &nbsp; |

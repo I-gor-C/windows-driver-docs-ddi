@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 676A458E-A6E0-4F09-AAF2-21EA122EF74D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceWdmAssignPowerFrameworkSettings
+ms.keywords : wdfdevice/WdfDeviceWdmAssignPowerFrameworkSettings, kmdf.wdfdevicewdmassignpowerframeworksettings, WdfDeviceWdmAssignPowerFrameworkSettings method, PFN_WDFDEVICEWDMASSIGNPOWERFRAMEWORKSETTINGS, WdfDeviceWdmAssignPowerFrameworkSettings, wdf.wdfdevicewdmassignpowerframeworksettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 1.11
 req.umdf-ver : 
-req.alt-api : WdfDeviceWdmAssignPowerFrameworkSettings
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -55,7 +59,7 @@ NTSTATUS WdfDeviceWdmAssignPowerFrameworkSettings(
 
 `Device`
 
-
+A handle to the framework device object for which PoFx settings are being specified.
 
 `PowerFrameworkSettings`
 
@@ -65,17 +69,45 @@ A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_power_framework_settings.
 ## Return Value
 
 The <b>WdfDeviceWdmAssignPowerFrameworkSettings</b> method returns an NTSTATUS value that indicates success or failure of the operation.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>The size of the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a> structure is incorrect. 
+</dl>
+</td>
+<td width="60%">
+The size of the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a> structure is incorrect. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The calling driver is not the device's power policy owner.
+</dl>
+</td>
+<td width="60%">
+The calling driver is not the device's power policy owner.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid <i>Settings</i> value is detected.
+</dl>
+</td>
+<td width="60%">
+An invalid <i>Settings</i> value is detected.
 
- 
+</td>
+</tr>
+</table> 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -95,8 +127,6 @@ The power management framework (PoFx) is available only on Windows 8 and later.
 
 For more information, see <a href="https://msdn.microsoft.com/F96214C9-702D-402E-B873-5DF57C521B34">Supporting Functional Power States</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh406637">Overview of the Power Management Framework</a>.
 
-In the following code example, the driver initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_power_framework_settings.md">WDF_POWER_FRAMEWORK_SETTINGS</a> structure by calling the <a href="..\wdfdevice\nf-wdfdevice-wdf_power_framework_settings_init.md">WDF_POWER_FRAMEWORK_SETTINGS_INIT</a>  function. The driver then manually sets some of the members of the structure, and then calls <b>WdfDeviceWdmAssignPowerFrameworkSettings</b>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -111,20 +141,14 @@ In the following code example, the driver initializes a <a href="..\wdfdevice\ns
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_power_framework_settings.md">WDF_POWER_FRAMEWORK_SETTINGS</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdf_power_framework_settings_init.md">WDF_POWER_FRAMEWORK_SETTINGS_INIT</a>
-</dt>
-<dt>
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_pre_po_fx_unregister_device.md">EvtDeviceWdmPrePoFxUnregisterDevice</a>
-</dt>
-</dl>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_power_framework_settings.md">WDF_POWER_FRAMEWORK_SETTINGS</a>
+
  
 
  

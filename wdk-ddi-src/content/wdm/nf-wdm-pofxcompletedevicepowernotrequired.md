@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7DCAFA7C-6F13-4020-BCB6-D36EE164BDAA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxCompleteDevicePowerNotRequired
+ms.keywords : PoFxCompleteDevicePowerNotRequired, PoFxCompleteDevicePowerNotRequired routine [Kernel-Mode Driver Architecture], wdm/PoFxCompleteDevicePowerNotRequired, kernel.pofxcompletedevicepowernotrequired
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxCompleteDevicePowerNotRequired
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ PoFx calls the driver's <i>DevicePowerNotRequiredCallback</i> routine to inform 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450946">DevicePowerNotRequiredCallback</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-</dl>
+
  
 
  

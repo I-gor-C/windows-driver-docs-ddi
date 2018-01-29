@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a7f651c0-fcd5-4271-9452-b6ac41cd33cc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _TOKEN_STATISTICS, TOKEN_STATISTICS, *PTOKEN_STATISTICS
+ms.keywords : ifsk.token_statistics, ntifs/PTOKEN_STATISTICS, TOKEN_STATISTICS structure [Installable File System Drivers], *PTOKEN_STATISTICS, _TOKEN_STATISTICS, TOKEN_STATISTICS, ntifs/TOKEN_STATISTICS, PTOKEN_STATISTICS, securitystructures_5934a44f-c54e-44fe-a1c8-50b656b2b1f5.xml, PTOKEN_STATISTICS structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TOKEN_STATISTICS
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_STATISTICS, *PTOKEN_STATISTICS
 ---
 
@@ -55,46 +59,46 @@ typedef struct _TOKEN_STATISTICS {
 
 ## Members
 
-        
-            `AuthenticationId`
 
-            Specifies an LUID assigned to the session this token represents. There can be many tokens representing a single logon session.
-        
-            `DynamicAvailable`
+`AuthenticationId`
 
-            Specifies the portion of the memory allocated for storing a DACL and primary group identifier that is not already in use. This value is returned as a count of free bytes.
-        
-            `DynamicCharged`
+Specifies an LUID assigned to the session this token represents. There can be many tokens representing a single logon session.
 
-            Specifies the amount, in bytes, of memory allocated for storing a default access-control list (DACL) and primary group identifier.
-        
-            `ExpirationTime`
+`DynamicAvailable`
 
-            Specifies the time at which this token expires. Expiration times for access tokens are not currently supported.
-        
-            `GroupCount`
+Specifies the portion of the memory allocated for storing a DACL and primary group identifier that is not already in use. This value is returned as a count of free bytes.
 
-            Specifies the number of supplemental group security identifiers (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>) included in the token.
-        
-            `ImpersonationLevel`
+`DynamicCharged`
 
-            Specifies a <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a> enumerated type indicating the impersonation level of the token. This member is valid only if the <b>TokenType</b> is TokenImpersonation.
-        
-            `ModifiedId`
+Specifies the amount, in bytes, of memory allocated for storing a default access-control list (DACL) and primary group identifier.
 
-            Specifies an LUID that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used.
-        
-            `PrivilegeCount`
+`ExpirationTime`
 
-            Specifies the number of privileges included in the token.
-        
-            `TokenId`
+Specifies the time at which this token expires. Expiration times for access tokens are not currently supported.
 
-            Specifies a locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) that identifies this instance of the token object.
-        
-            `TokenType`
+`GroupCount`
 
-            Specifies a <a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a> enumerated type indicating whether the token is a primary or impersonation token.
+Specifies the number of supplemental group security identifiers (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>) included in the token.
+
+`ImpersonationLevel`
+
+Specifies a <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a> enumerated type indicating the impersonation level of the token. This member is valid only if the <b>TokenType</b> is TokenImpersonation.
+
+`ModifiedId`
+
+Specifies an LUID that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used.
+
+`PrivilegeCount`
+
+Specifies the number of privileges included in the token.
+
+`TokenId`
+
+Specifies a locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) that identifies this instance of the token object.
+
+`TokenType`
+
+Specifies a <a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a> enumerated type indicating whether the token is a primary or impersonation token.
 
 
 ## Requirements
@@ -105,37 +109,26 @@ typedef struct _TOKEN_STATISTICS {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-<dt>
-<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-<dt>
-<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
+
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
+<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
+
+<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
  
 
  

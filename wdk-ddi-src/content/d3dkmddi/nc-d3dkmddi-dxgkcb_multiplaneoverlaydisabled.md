@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EA9FAB26-1EAF-4E67-B240-094BC2B03DEF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkcb_multiplaneoverlaydisabled, DXGKCB_MULTIPLANEOVERLAYDISABLED callback function [Display Devices], DXGKCB_MULTIPLANEOVERLAYDISABLED, d3dkmddi/DXGKCB_MULTIPLANEOVERLAYDISABLED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKCB_MULTIPLANEOVERLAYDISABLED
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : requires_max_(PASSIVE_LEVEL)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,9 +68,23 @@ Indicates the VidPnSourceId on which the current multiplane overlay hardware con
 ## Return Value
 
 DXGKCB_MULTIPLANEOVERLAYDISABLED returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>If the call has been successfully completed.
+</dl>
+</td>
+<td width="60%">
+If the call has been successfully completed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -77,7 +95,14 @@ This callback can only be called at passive level.
 
 This callback can be used in the following scenarios:
 
-</p>
+
+<ul>
+<li>A display change or hot plug event on one output makes it no longer possible to continue supporting an MPO configuration that is committed to a different monitor. In this case, the driver can disable the overlay planes on the monitor. The user will see a visible artifact but it should be corrected eventually by the DWM.
+
+</li>
+<li>MPO should be disabled due to thermal issues. In this case, the driver does not need to immediately disable MPO, but can wait until the DWM receives the notification and requires MPO support (which the KMD should indicate is not supported due to the thermal issue). At that time, the DWM will disable MPO and start composing.
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

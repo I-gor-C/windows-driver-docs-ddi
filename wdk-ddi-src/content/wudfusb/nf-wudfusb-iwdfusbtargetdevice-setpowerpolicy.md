@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e1b31df0-d383-43a3-bf9f-8874689cbf58
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetDevice, IWDFUsbTargetDevice::SetPowerPolicy, SetPowerPolicy
+ms.keywords : wdf.iwdfusbtargetdevice_setpowerpolicy, SetPowerPolicy method, IWDFUsbTargetDevice interface, umdf.iwdfusbtargetdevice_setpowerpolicy, SetPowerPolicy method, IWDFUsbTargetDevice interface, SetPowerPolicy method, wudfusb/IWDFUsbTargetDevice::SetPowerPolicy, IWDFUsbTargetDevice, UMDFUSBref_fb6e31cc-0db6-4733-baea-d73514fb5160.xml, IWDFUsbTargetDevice::SetPowerPolicy, SetPowerPolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFUsbTargetDevice.SetPowerPolicy
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfusb.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -69,17 +73,47 @@ A pointer to the buffer that contains the WinUsb power policy.
 ## Return Value
 
 <b>SetPowerPolicy</b> returns one of the following values: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/e1b31df0-d383-43a3-bf9f-8874689cbf58">SetPowerPolicy</a> successfully set the WinUsb power policy. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
+</td>
+<td width="60%">
+
 <a href="https://msdn.microsoft.com/e1b31df0-d383-43a3-bf9f-8874689cbf58">SetPowerPolicy</a> encountered an allocation failure.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
-</dl>This value corresponds to the error code that the WinUsb API returned.
+</dl>
+</td>
+<td width="60%">
+This value corresponds to the error code that the WinUsb API returned.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,17 +139,12 @@ The <b>SetPowerPolicy</b> method generates a UMDF request and synchronously send
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540309">WinUsb_SetPowerPolicy</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560379">IWDFUsbTargetDevice::RetrievePowerPolicy</a>
-</dt>
-</dl>
+
  
 
  

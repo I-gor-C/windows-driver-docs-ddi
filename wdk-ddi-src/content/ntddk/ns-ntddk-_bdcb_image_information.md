@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9D0A4D67-3284-4BCC-AC81-F0BCCC2DB9B7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _BDCB_IMAGE_INFORMATION, *PBDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION
+ms.keywords : _BDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION, ntddk/PBDCB_IMAGE_INFORMATION, PBDCB_IMAGE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.bdcb_image_information, *PBDCB_IMAGE_INFORMATION, PBDCB_IMAGE_INFORMATION, ntddk/BDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDCB_IMAGE_INFORMATION
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PBDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : BDCB_IMAGE_INFORMATION, *PBDCB_IMAGE_INFORMATION
 ---
 
 # _BDCB_IMAGE_INFORMATION structure
@@ -59,32 +63,31 @@ typedef struct _BDCB_IMAGE_INFORMATION {
 
 ## Members
 
-        
-            `CertificateIssuer`
 
-            The issuer of the image's certificate. If the image is not signed, the string is empty ("").
-        
-            `CertificatePublisher`
+`CertificateIssuer`
 
-            The publisher of the image's certificate. If the image is not signed, the string is empty ("").
-        
-            `CertificateThumbprint`
+The issuer of the image's certificate. If the image is not signed, the string is empty ("").
 
-            The hash of the certificate of the signer to be signed. Run <b>certutil –dump x,cer</b> to view this value as  "Signature Hash".
-        
-            `CertificateThumbprintLength`
+`CertificatePublisher`
 
-            The length of data pointed to by the <b>CertificateThumbprint</b> member.
-        
-            `Classification`
+The publisher of the image's certificate. If the image is not signed, the string is empty ("").
 
-            The classification of the boot start image.
-        
-            `ImageFlags`
+`CertificateThumbprint`
 
-            Bit flags that describe the image. The following values are defined.
+The hash of the certificate of the signer to be signed. Run <b>certutil –dump x,cer</b> to view this value as  "Signature Hash".
+
+`CertificateThumbprintLength`
+
+The length of data pointed to by the <b>CertificateThumbprint</b> member.
+
+`Classification`
+
+The classification of the boot start image.
+
+`ImageFlags`
+
+Bit flags that describe the image. The following values are defined.
       
-
 <table>
 <tr>
 <th>Value</th>
@@ -121,16 +124,15 @@ Do not use. Reserved.
 </td>
 </tr>
 </table>
-        
-            `ImageHash`
 
-            The Authenticode hash of the image, which can be calculated by  using SignTool.exe (Sign Tool).
-        
-            `ImageHashAlgorithm`
+`ImageHash`
 
-            The algorithm of the image hash. The following values are listed for reference.
+The Authenticode hash of the image, which can be calculated by  using SignTool.exe (Sign Tool).
+
+`ImageHashAlgorithm`
+
+The algorithm of the image hash. The following values are listed for reference.
       
-
 <table>
 <tr>
 <th>Value</th>
@@ -208,22 +210,22 @@ CALG_SHA_512
 </td>
 </tr>
 </table>
-        
-            `ImageHashLength`
 
-            The length of data pointed to by the <b>ImageHash</b> member.
-        
-            `ImageName`
+`ImageHashLength`
 
-            The name of the boot-start driver's binary image.
-        
-            `RegistryPath`
+The length of data pointed to by the <b>ImageHash</b> member.
 
-            The path in the registry where the boot-start driver is registered.
-        
-            `ThumbprintHashAlgorithm`
+`ImageName`
 
-            The algorithm of the certificate thumbprint. This member should be ignored if <b>CertificateThumbprint</b> is NULL.
+The name of the boot-start driver's binary image.
+
+`RegistryPath`
+
+The path in the registry where the boot-start driver is registered.
+
+`ThumbprintHashAlgorithm`
+
+The algorithm of the certificate thumbprint. This member should be ignored if <b>CertificateThumbprint</b> is NULL.
 
 
 ## Requirements
@@ -234,16 +236,12 @@ CALG_SHA_512
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\ne-ntddk-_bdcb_classification.md">BDCB_CLASSIFICATION</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">BOOT_DRIVER_CALLBACK_FUNCTION</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\ne-ntddk-_bdcb_classification.md">BDCB_CLASSIFICATION</a>
+
  
 
  

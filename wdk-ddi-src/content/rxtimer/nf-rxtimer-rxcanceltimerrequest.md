@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b5aeb972-3e52-4cdc-842b-7848bb2f8dc7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCancelTimerRequest
+ms.keywords : RxCancelTimerRequest routine [Installable File System Drivers], rxref_f9950992-18a5-4418-a18d-e105ecdc74ff.xml, rxtimer/RxCancelTimerRequest, RxCancelTimerRequest, ifsk.rxcanceltimerrequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCancelTimerRequest
-req.alt-loc : rxtimer.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -88,14 +92,10 @@ If the recurrent timer is not found, this routine will return STATUS_NOT_FOUND.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxtimer\nf-rxtimer-rxpostoneshottimerrequest.md">RxPostOneShotTimerRequest</a>
-</dt>
-<dt>
+
 <a href="..\rxtimer\nf-rxtimer-rxpostrecurrenttimerrequest.md">RxPostRecurrentTimerRequest</a>
-</dt>
-</dl>
+
  
 
  

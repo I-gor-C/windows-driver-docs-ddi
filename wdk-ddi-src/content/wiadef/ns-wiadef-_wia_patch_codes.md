@@ -7,8 +7,8 @@ old-location : image\wia_patch_codes.htm
 old-project : image
 ms.assetid : CFD2403B-DDD4-4318-9084-1B3E3462FBDC
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : _WIA_PATCH_CODES, WIA_PATCH_CODES
+ms.date : 1/18/2018
+ms.keywords : image.wia_patch_codes, wiadef/WIA_PATCH_CODES, _WIA_PATCH_CODES, WIA_PATCH_CODES, WIA_PATCH_CODES structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WIA_PATCH_CODES
-req.alt-loc : wiadef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WIA_PATCH_CODES
 req.product : Windows 10 or later.
 ---
@@ -51,29 +55,29 @@ typedef struct _WIA_PATCH_CODES {
 
 ## Members
 
-        
-            `Count`
 
-            Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> elements in the PatchCodes sequence.
-        
-            `PatchCodes`
+`Count`
 
-            Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> structures.
-        
-            `Size`
+Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> elements in the PatchCodes sequence.
 
-            The complete size of this <b>WIA_PATCH_CODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> list.
-        
-            `Tag`
+`PatchCodes`
 
-            Must be the literal 'WBAT', 4 single byte ASCII characters.
-        
-            `Version`
+Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> structures.
 
-            Must be the value 0x00010000 (Version 1.0).
+`Size`
 
-    ## Remarks
-        The header must be followed by a sequence of patch code information structures, one for each detected patch code, in the order the patch codes were found and decoded.</p>
+The complete size of this <b>WIA_PATCH_CODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> list.
+
+`Tag`
+
+Must be the literal 'WBAT', 4 single byte ASCII characters.
+
+`Version`
+
+Must be the value 0x00010000 (Version 1.0).
+
+## Remarks
+The header must be followed by a sequence of patch code information structures, one for each detected patch code, in the order the patch codes were found and decoded.
 
 ## Requirements
 | &nbsp; | &nbsp; |

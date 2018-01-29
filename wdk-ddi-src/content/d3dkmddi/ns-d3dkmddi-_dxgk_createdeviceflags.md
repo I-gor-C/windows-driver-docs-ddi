@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 31dc1493-a7c9-4ca0-b718-98224d9c5675
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_CREATEDEVICEFLAGS, DXGK_CREATEDEVICEFLAGS
+ms.keywords : DmStructs_f8513fe3-ce39-4555-a667-20ff383583fc.xml, display.dxgk_createdeviceflags, DXGK_CREATEDEVICEFLAGS structure [Display Devices], DXGK_CREATEDEVICEFLAGS, _DXGK_CREATEDEVICEFLAGS, d3dkmddi/DXGK_CREATEDEVICEFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_CREATEDEVICEFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_CREATEDEVICEFLAGS
 ---
 
@@ -64,16 +68,12 @@ typedef struct _DXGK_CREATEDEVICEFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createdevice.md">DXGKARG_CREATEDEVICE</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createdevice.md">DXGKARG_CREATEDEVICE</a>
+
  
 
  

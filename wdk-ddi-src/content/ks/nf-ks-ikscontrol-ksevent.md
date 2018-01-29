@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9e4b86cf-308f-4d9b-be28-966312dc4e43
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsControl, IKsControl::KsEvent, KsEvent
+ms.keywords : KsEvent method [Streaming Media Devices], IKsControl interface, avintfc_359de56d-5fcc-47ea-838c-cd110493856c.xml, IKsControl, stream.ikscontrol_ksevent2, KsEvent, IKsControl interface [Streaming Media Devices], KsEvent method, KsEvent method [Streaming Media Devices], IKsControl::KsEvent, ks/IKsControl::KsEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsControl.KsEvent
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ks.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,7 +79,7 @@ Pointer to a variable that receives the size, in bytes, of the data that <b>KsEv
 
 ## Return Value
 
-None
+The <b>IKsControl::KsEvent</b> method returns the same value that would be returned if the event had been sent by IOCTL.
 
 ## Remarks
 
@@ -95,14 +99,10 @@ To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EBA976B0-3B44-4482-B1B0-31A84150C056
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_SHADERCACHE_CALLBACKS_0021, D3D12DDI_SHADERCACHE_CALLBACKS_0021
+ms.keywords : D3D12DDI_SHADERCACHE_CALLBACKS_0021, display.d3d12ddi_shadercache_callbacks_0021, d3d12umddi/D3D12DDI_SHADERCACHE_CALLBACKS_0021, D3D12DDI_SHADERCACHE_CALLBACKS_0021 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_SHADERCACHE_CALLBACKS_0021
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_SHADERCACHE_CALLBACKS_0021
 ---
 
@@ -47,14 +51,14 @@ typedef struct D3D12DDI_SHADERCACHE_CALLBACKS_0021 {
 
 ## Members
 
-        
-            `pfnShaderCacheGetValueCb`
 
-            A callback function that gets a shader cache value.
-        
-            `pfnShaderCacheStoreValueCb`
+`pfnShaderCacheGetValueCb`
 
-            A callback function that stores a shader cache value.
+A callback function that gets a shader cache value.
+
+`pfnShaderCacheStoreValueCb`
+
+A callback function that stores a shader cache value.
 
 
 ## Requirements

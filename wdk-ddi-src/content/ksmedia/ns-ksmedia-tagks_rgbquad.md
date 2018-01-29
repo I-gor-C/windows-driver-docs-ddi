@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 49231293-286b-486d-b8f9-b44bdb845e7b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_RGBQUAD, KS_RGBQUAD, *PKS_RGBQUAD
+ms.keywords : ksmedia/KS_RGBQUAD, vidcapstruct_c081668e-9e81-4c30-89d1-b4c26dc9a300.xml, ksmedia/PKS_RGBQUAD, PKS_RGBQUAD structure pointer [Streaming Media Devices], KS_RGBQUAD structure [Streaming Media Devices], tagKS_RGBQUAD, stream.ks_rgbquad, PKS_RGBQUAD, *PKS_RGBQUAD, KS_RGBQUAD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_RGBQUAD
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_RGBQUAD, *PKS_RGBQUAD
 ---
 
@@ -49,22 +53,22 @@ typedef struct tagKS_RGBQUAD {
 
 ## Members
 
-        
-            `rgbBlue`
 
-            Specifies the intensity of blue in the color.
-        
-            `rgbGreen`
+`rgbBlue`
 
-            Specifies the intensity of green in the color.
-        
-            `rgbRed`
+Specifies the intensity of blue in the color.
 
-            Specifies the intensity of red in the color.
-        
-            `rgbReserved`
+`rgbGreen`
 
-            Reserved. This member must be zero.
+Specifies the intensity of green in the color.
+
+`rgbRed`
+
+Specifies the intensity of red in the color.
+
+`rgbReserved`
+
+Reserved. This member must be zero.
 
 
 ## Requirements

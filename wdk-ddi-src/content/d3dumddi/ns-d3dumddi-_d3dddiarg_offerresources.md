@@ -48,21 +48,21 @@ typedef struct _D3DDDIARG_OFFERRESOURCES {
 
 ## Members
 
-        
-            `pResources`
 
-            [in] A pointer to an array of handles to the video memory resources that the driver offers.
-        
-            `Priority`
+`pResources`
 
-            [in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.
-        
-            `Resources`
+[in] A pointer to an array of handles to the video memory resources that the driver offers.
 
-            [in] The number of elements in the array pointed to by <b>pResources</b>.
+`Priority`
 
-    ## Remarks
-        This structure is pointed to by  the <i>pData</i> parameter of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_offerresources.md">OfferResources</a> routine.
+[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.
+
+`Resources`
+
+[in] The number of elements in the array pointed to by <b>pResources</b>.
+
+## Remarks
+This structure is pointed to by  the <i>pData</i> parameter of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_offerresources.md">OfferResources</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,9 +72,9 @@ typedef struct _D3DDDIARG_OFFERRESOURCES {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
+<dl>
 <dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
 </dt>

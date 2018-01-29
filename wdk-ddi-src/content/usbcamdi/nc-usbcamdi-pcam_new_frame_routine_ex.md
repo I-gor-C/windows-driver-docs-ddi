@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 739e434e-9621-4927-bf1d-2e7c3b2828d7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camnewvideoframeex, CamNewVideoFrameEx, CamNewVideoFrameEx routine [Streaming Media Devices], CamNewVideoFrameEx, PCAM_NEW_FRAME_ROUTINE_EX, PCAM_NEW_FRAME_ROUTINE_EX, usbcamdi/CamNewVideoFrameEx, usbcmdpr_e7d56a12-73a6-4778-91be-24962683c475.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CamNewVideoFrameEx
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : DISPATCH_LEVEL (See Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -82,7 +86,7 @@ USBCAMD calls the camera minidriver's <b>CamNewVideoFrameEx</b> callback functio
 
 The original USBCAMD does not call <b>CamNewVideoFrameEx</b>.
 
-This function is optional.</p>
+This function is optional.
 
 ## Requirements
 | &nbsp; | &nbsp; |

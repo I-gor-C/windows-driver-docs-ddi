@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8ac8d3ff-68ec-4e23-bbf9-0a9b7fa13ce3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ObGetObjectSecurity
+ms.keywords : wdm/ObGetObjectSecurity, kernel.obgetobjectsecurity, k107_a0c800de-984a-427f-b308-415f831e5d34.xml, ObGetObjectSecurity routine [Kernel-Mode Driver Architecture], ObGetObjectSecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObGetObjectSecurity
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlApcLte, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -90,17 +94,12 @@ If <b>ObGetObjectSecurity</b> returns STATUS_SUCCESS, the caller must save the v
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-obreleaseobjectsecurity.md">ObReleaseObjectSecurity</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
  
 
  

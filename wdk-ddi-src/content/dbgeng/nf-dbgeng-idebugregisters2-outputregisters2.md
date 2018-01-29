@@ -7,8 +7,8 @@ old-location : debugger\outputregisters2.htm
 old-project : debugger
 ms.assetid : 444f7264-6072-4ee2-b3fd-030affa502b7
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugRegisters2, IDebugRegisters2::OutputRegisters2, OutputRegisters2
+ms.date : 1/19/2018
+ms.keywords : IDebugRegisters_ecc2b40a-622b-4f1f-867b-2eb6b575559d.xml, OutputRegisters2 method [Windows Debugging], IDebugRegisters2 interface, OutputRegisters2 method [Windows Debugging], dbgeng/IDebugRegisters2::OutputRegisters2, OutputRegisters2, IDebugRegisters2, IDebugRegisters2::OutputRegisters2, debugger.outputregisters2, IDebugRegisters2 interface [Windows Debugging], OutputRegisters2 method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugRegisters2.OutputRegisters2
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,21 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 
 # OutputRegisters2 method
-The <b>OutputRegisters2</b> method formats and outputs the target's <a href="debugger.x86_architecture#registers#registers">registers</a>.
+The <b>OutputRegisters2</b> method formats and outputs the target's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">registers</a>.
 
 ## Syntax
 
@@ -59,7 +63,6 @@ Specifies which clients should be sent the output of the formatted registers.  S
 Specifies the register source to query.
 
 The possible values are listed in the following table.
-
 <table>
 <tr>
 <th>Value</th>
@@ -81,7 +84,7 @@ DEBUG_REGSRC_EXPLICIT
 
 </td>
 <td>
-Fetch register information from the current explicit <a href="debugger.changing_contexts#register_context#register_context">register context</a>.
+Fetch register information from the current explicit <a href="https://msdn.microsoft.com/3690903c-4281-4c65-98b0-00ca22206168">register context</a>.
 
 </td>
 </tr>
@@ -102,7 +105,6 @@ Fetch register information from the current scope's register context.
 `Flags`
 
 Specifies which register sets to print.  This can either be DEBUG_REGISTERS_DEFAULT to print commonly used registers, DEBUG_REGISTERS_ALL to print all of the register sets, or a combination of the values listed in the following table.
-
 <table>
 <tr>
 <th>Value</th>
@@ -144,9 +146,23 @@ Print the floating-point register set.
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -170,16 +186,12 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553242">OutputRegisters</a>
-</dt>
-</dl>
- 
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2::OutputRegisters2 method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2::OutputRegisters2 method%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

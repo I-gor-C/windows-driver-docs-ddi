@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 786934f5-b0ec-4ee9-8bf0-f32b64295b96
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3DDDI_SYNCHRONIZATIONOBJECTINFO
+ms.keywords : _D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3DDDI_SYNCHRONIZATIONOBJECTINFO, display.d3dddi_synchronizationobjectinfo, D3D_other_Structs_86538364-14f8-4e40-bf0e-2e9f836729b8.xml, D3DDDI_SYNCHRONIZATIONOBJECTINFO structure [Display Devices], d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_SYNCHRONIZATIONOBJECTINFO
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_SYNCHRONIZATIONOBJECTINFO
 ---
 
@@ -58,10 +62,10 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 
 ## Members
 
-        
-            `Type`
 
-            [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_synchronizationobject_type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>-typed value that indicates the type of synchronization object.
+`Type`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_synchronizationobject_type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>-typed value that indicates the type of synchronization object.
 
 
 ## Requirements
@@ -72,16 +76,12 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 | **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_synchronizationobject_type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createsynchronizationobject.md">D3DDDICB_CREATESYNCHRONIZATIONOBJECT</a>
-</dt>
-</dl>
+
  
 
  

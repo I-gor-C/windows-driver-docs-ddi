@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 140de330-7e6d-4f23-96cb-ea1228c8036c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExConvertExclusiveToSharedLite
+ms.keywords : ExConvertExclusiveToSharedLite, wdm/ExConvertExclusiveToSharedLite, kernel.exconvertexclusivetosharedlite, k102_3c58f8e7-3da6-413d-9662-89a29928a6c1.xml, ExConvertExclusiveToSharedLite routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExConvertExclusiveToSharedLite
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlExApcLte3, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,11 +80,8 @@ The caller must have exclusive access to the given resource. During this convers
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exisresourceacquiredexclusivelite.md">ExIsResourceAcquiredExclusiveLite</a>
-</dt>
-</dl>
+
  
 
  

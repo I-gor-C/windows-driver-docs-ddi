@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 194a99f4-900f-44d1-bbc3-64953e4dce21
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KsEdit
+ms.keywords : stream.ioctl_ks_enable_event, IOCTL_KS_ENABLE_EVENT control code [Streaming Media Devices], IOCTL_KS_ENABLE_EVENT, ks/IOCTL_KS_ENABLE_EVENT, ks-ioctl_7cc1eab4-2a30-4998-8f7d-122150800c9a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_KS_ENABLE_EVENT
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
 # IOCTL_KS_ENABLE_EVENT IOCTL
-An application can use IOCTL_KS_ENABLE_EVENT to request notification of a KS event type, or to determine the events supported by a KS object. The application specifies IOCTL_KS_ENABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>.
-
-
-
 An application can use IOCTL_KS_ENABLE_EVENT to request notification of a KS event type, or to determine the events supported by a KS object. The application specifies IOCTL_KS_ENABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>.
 
 ### Major Code
@@ -63,11 +63,10 @@ Length of <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>.
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
-    ## Remarks
-        To determine events supported by a KS object, specify <b>NULL</b> and 0 respectively for <b>InBuffer</b> and <b>InLength</b>.
+## Remarks
+To determine events supported by a KS object, specify <b>NULL</b> and 0 respectively for <b>InBuffer</b> and <b>InLength</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,34 +75,24 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 | **Header** | ks.h (include Ks.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-ksdpc_item.md">KSDPC_ITEM</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
-</dt>
-<dt>
+
+<a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
+
 <a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
+
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
+<a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
+
+<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
+
  
 
  

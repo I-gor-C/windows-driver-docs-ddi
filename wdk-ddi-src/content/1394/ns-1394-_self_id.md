@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : c168ca19-e4a7-484d-8aed-0b7e7033b760
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SELF_ID, *PSELF_ID, SELF_ID
+ms.keywords : "*PSELF_ID, PSELF_ID, 1394/PSELF_ID, _SELF_ID, SELF_ID structure [Buses], 1394stct_43f63a99-a4c6-4960-93c4-98bb65d242bd.xml, PSELF_ID structure pointer [Buses], SELF_ID, 1394/SELF_ID, IEEE.self_id"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SELF_ID
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSELF_ID, SELF_ID"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SELF_ID, *PSELF_ID
 ---
 
 # _SELF_ID structure
@@ -59,115 +63,86 @@ typedef struct _SELF_ID {
 
 ## Members
 
-        
-            `SID_Contender`
 
-            One if this node is a contender for bus or isochronous resource manager, zero otherwise. This member contains bit 3 of byte 2 of the self-ID packet.
-        
-            `SID_Delay`
+`SID_Contender`
 
-            Currently always zero. This member contains bits 4-5 of byte 2 of the self-ID packet.
-        
-            `SID_Gap_Count`
+One if this node is a contender for bus or isochronous resource manager, zero otherwise. This member contains bit 3 of byte 2 of the self-ID packet.
 
-            Specifies the current value of the node's PHY_CONFIGURATION register's gap_count member. This member contains bits 0-5 of byte 1 of the self-ID packet.
-        
-            `SID_Initiated_Rst`
+`SID_Delay`
 
-            One if this node initiated the most recent bus reset, zero otherwise. This member contains bit 1 of byte 3 of the self-ID packet.
-        
-            `SID_Link_Active`
+Currently always zero. This member contains bits 4-5 of byte 2 of the self-ID packet.
 
-            One if the device's link and transaction layers are active, zero otherwise. This member contains bit 6 of byte 1 of the self-ID packet.
-        
-            `SID_More_Packets`
+`SID_Gap_Count`
 
-            One if this packet will be followed by SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self-ID packet.
-        
-            `SID_Packet_ID`
+Specifies the current value of the node's PHY_CONFIGURATION register's gap_count member. This member contains bits 0-5 of byte 1 of the self-ID packet.
 
-            Must be PHY_PACKET_ID_SELF_ID. This member contains bits 6-7 of byte 0 of the self-ID packet.
-        
-            `SID_Phys_ID`
+`SID_Initiated_Rst`
 
-            Specifies the device node number. This member contains bits 0-5 of byte 0 of the self-ID packet.
-        
-            `SID_Port1`
+One if this node initiated the most recent bus reset, zero otherwise. This member contains bit 1 of byte 3 of the self-ID packet.
 
-            Specifies port status. Possible values are:
+`SID_Link_Active`
 
-<dl>
-<dd>
+One if the device's link and transaction layers are active, zero otherwise. This member contains bit 6 of byte 1 of the self-ID packet.
+
+`SID_More_Packets`
+
+One if this packet will be followed by SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self-ID packet.
+
+`SID_Packet_ID`
+
+Must be PHY_PACKET_ID_SELF_ID. This member contains bits 6-7 of byte 0 of the self-ID packet.
+
+`SID_Phys_ID`
+
+Specifies the device node number. This member contains bits 0-5 of byte 0 of the self-ID packet.
+
+`SID_Port1`
+
+Specifies port status. Possible values are:
+
 SELF_ID_CONNECTED_TO_CHILD
 
-</dd>
-<dd>
 SELF_ID_CONNECTED_TO_PARENT
 
-</dd>
-<dd>
 SELF_ID_NOT_CONNECTED
 
-</dd>
-<dd>
 SELF_ID_NOT_PRESENT
 
-</dd>
-</dl>
 Member <b>SID_Port1</b> contains bits 2-3 of byte 3 of the self-ID packet. Member <b>SID_Port2</b> contains bits 4-5 of byte 3 of the self-ID packet. Member <b>SID_Port3</b> contains bits 6-7 of byte 3 of the self-ID packet.
-        
-            `SID_Port2`
 
-            Byte 3 - Bits 4-5
-        
-            `SID_Port3`
+`SID_Port2`
 
-            Byte 3 - Bits 2-3
-        
-            `SID_Power_Class`
+Byte 3 - Bits 4-5
 
-            The possible power classes are:
+`SID_Port3`
 
-<dl>
-<dd>
+Byte 3 - Bits 2-3
+
+`SID_Power_Class`
+
+The possible power classes are:
+
 POWER_CLASS_NOT_NEED_NOT_REPEAT
 
-</dd>
-<dd>
 POWER_CLASS_SELF_POWER_PROVIDE_15W
 
-</dd>
-<dd>
 POWER_CLASS_SELF_POWER_PROVIDE_30W
 
-</dd>
-<dd>
 POWER_CLASS_SELF_POWER_PROVIDE_45W
 
-</dd>
-<dd>
 POWER_CLASS_MAYBE_POWERED_UPTO_1W
 
-</dd>
-<dd>
 POWER_CLASS_IS_POWERED_UPTO_1W_NEEDS_2W
 
-</dd>
-<dd>
 POWER_CLASS_IS_POWERED_UPTO_1W_NEEDS_5W
 
-</dd>
-<dd>
 POWER_CLASS_IS_POWERED_UPTO_1W_NEEDS_9W
 
-</dd>
-</dl>
 This member contains bits 0-2 of byte 2 of the self-ID packet.
-        
-            `SID_Speed`
 
-            Specifies the maximum data transfer rate that is supported by the node. This member must have one of the values specified in the following table.
+`SID_Speed`
 
+Specifies the maximum data transfer rate that is supported by the node. This member must have one of the values specified in the following table.
 <table>
 <tr>
 <th>Value</th>
@@ -214,13 +189,13 @@ Reserved (generally treated as S400/S800 speed)
 </td>
 </tr>
 </table>
-        
-            `SID_Zero`
 
-            Always zero. This member contains bit 7 of byte 1 of the self-ID packet.
+`SID_Zero`
 
-    ## Remarks
-        This structure corresponds to self ID packet 0, as described in the <i>P1394a</i> specification.
+Always zero. This member contains bit 7 of byte 1 of the self-ID packet.
+
+## Remarks
+This structure corresponds to self ID packet 0, as described in the <i>P1394a</i> specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -230,13 +205,10 @@ Reserved (generally treated as S400/S800 speed)
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538877">TOPOLOGY_MAP</a>
-</dt>
-</dl>
+
  
 
  

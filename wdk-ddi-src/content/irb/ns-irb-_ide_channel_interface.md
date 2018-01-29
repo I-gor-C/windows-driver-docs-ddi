@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0a742dc2-fa1a-4b93-a136-52f4571bde22
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE
+ms.keywords : structs-ATA_8641c5e5-fe37-4576-a500-1f6a2cdbb23b.xml, storage.ide_channel_interface, irb/IDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE structure pointer [Storage Devices], IDE_CHANNEL_INTERFACE structure [Storage Devices], irb/PIDE_CHANNEL_INTERFACE, _IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDE_CHANNEL_INTERFACE
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,11 +29,18 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE
 ---
 
 # _IDE_CHANNEL_INTERFACE structure
 The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 ````
@@ -55,49 +60,46 @@ typedef struct _IDE_CHANNEL_INTERFACE {
 
 ## Members
 
-        
-            `ChannelNumber`
 
-            The port driver sets this field to the number assigned for this channel. For non-native mode controllers, the primary channel will always be assigned 0 and the secondary channel will always be assigned 1.
-        
-            `IdeHwBuildIo`
+`ChannelNumber`
 
-            
-        
-            `IdeHwControl`
+The port driver sets this field to the number assigned for this channel. For non-native mode controllers, the primary channel will always be assigned 0 and the secondary channel will always be assigned 1.
 
-            
-        
-            `IdeHwInitialize`
-
-            
-        
-            `IdeHwInterrupt`
-
-            
-        
-            `IdeHwReset`
-
-            
-        
-            `IdeHwStartIo`
-
-            
-        
-            `Reserved`
-
-            Reserved for future use. The miniport driver must not use this field.
-        
-            `ReservedUlong`
-
-            <dl>
+`IdeHwBuildIo`
 
 
-</dl>
-        
-            `Version`
 
-            The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
+`IdeHwControl`
+
+
+
+`IdeHwInitialize`
+
+
+
+`IdeHwInterrupt`
+
+
+
+`IdeHwReset`
+
+
+
+`IdeHwStartIo`
+
+
+
+`Reserved`
+
+Reserved for future use. The miniport driver must not use this field.
+
+`ReservedUlong`
+
+
+
+`Version`
+
+The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
 
 
 ## Requirements
@@ -108,28 +110,20 @@ typedef struct _IDE_CHANNEL_INTERFACE {
 | **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558998">IdeHwReset</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
+
  
 
  

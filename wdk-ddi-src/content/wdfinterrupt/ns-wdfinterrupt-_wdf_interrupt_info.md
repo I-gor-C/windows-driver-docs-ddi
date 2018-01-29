@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7e626306-6ad9-4d99-a578-60bf69a3e73d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
+ms.keywords : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO structure, _WDF_INTERRUPT_INFO, wdfinterrupt/PWDF_INTERRUPT_INFO, wdfinterrupt/WDF_INTERRUPT_INFO, PWDF_INTERRUPT_INFO, DFInterruptObjectRef_3f4ade63-40f9-4d5a-96a0-e4f7013171d5.xml, wdf.wdf_interrupt_info, PWDF_INTERRUPT_INFO structure pointer, kmdf.wdf_interrupt_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_INTERRUPT_INFO
-req.alt-loc : wdfinterrupt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any level
-req.typenames : "*PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -60,57 +64,57 @@ typedef struct _WDF_INTERRUPT_INFO {
 
 ## Members
 
-        
-            `Group`
 
-            A value that identifies the processor group that the <b>TargetProcessorSet</b> member applies to. This value is zero if the computer has only one processor group or if the operating system does not support processor groups. The <b>Group</b> member is available in version 1.9 and later versions of KMDF.
-        
-            `Irql`
+`Group`
 
-            The IRQL at which the device interrupts.
-        
-            `MessageNumber`
+A value that identifies the processor group that the <b>TargetProcessorSet</b> member applies to. This value is zero if the computer has only one processor group or if the operating system does not support processor groups. The <b>Group</b> member is available in version 1.9 and later versions of KMDF.
 
-            If the <b>MessageSignaled</b> member is <b>TRUE</b>, this is the interrupt's message number.
-        
-            `MessageSignaled`
+`Irql`
 
-            A Boolean value that, if <b>TRUE</b>, indicates that the interrupt is message-signaled. If <b>FALSE</b>, the interrupt is not message-signaled.
-        
-            `Mode`
+The IRQL at which the device interrupts.
 
-            A <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>-typed enumerator that indicates whether the interrupt is level-triggered or edge-triggered.
-        
-            `Polarity`
+`MessageNumber`
 
-            A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_INTERRUPT_POLARITY</a>-typed enumerator that identifies the interrupt signal's polarity.
-        
-            `Reserved1`
+If the <b>MessageSignaled</b> member is <b>TRUE</b>, this is the interrupt's message number.
 
-            This member is reserved for future use.
-        
-            `Reserved2`
+`MessageSignaled`
 
-            This member is reserved for future use.
-        
-            `ShareDisposition`
+A Boolean value that, if <b>TRUE</b>, indicates that the interrupt is message-signaled. If <b>FALSE</b>, the interrupt is not message-signaled.
 
-            A CM_SHARE_DISPOSITION-typed enumerator that indicates whether the interrupt is being shared. The value is <b>CmResourceShareShared</b> if the interrupt is being shared or <b>CmResourceShareDeviceExclusive</b> if the interrupt is not being shared. The CM_SHARE_DISPOSITION enumeration type is defined in <i>Wdm.h</i>.
-        
-            `Size`
+`Mode`
 
-            The size, in bytes, of this structure.
-        
-            `TargetProcessorSet`
+A <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>-typed enumerator that indicates whether the interrupt is level-triggered or edge-triggered.
 
-            A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>-typed value that specifies the interrupt's processor affinity.
-        
-            `Vector`
+`Polarity`
 
-            The interrupt vector.
+A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_INTERRUPT_POLARITY</a>-typed enumerator that identifies the interrupt signal's polarity.
 
-    ## Remarks
-        The <b>WDF_INTERRUPT_INFO</b> structure is used as input to the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a> method. To initialize a <b>WDF_INTERRUPT_INFO</b> structure, your driver should call <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a> before calling <b>WdfInterruptGetInfo</b>.
+`Reserved1`
+
+This member is reserved for future use.
+
+`Reserved2`
+
+This member is reserved for future use.
+
+`ShareDisposition`
+
+A CM_SHARE_DISPOSITION-typed enumerator that indicates whether the interrupt is being shared. The value is <b>CmResourceShareShared</b> if the interrupt is being shared or <b>CmResourceShareDeviceExclusive</b> if the interrupt is not being shared. The CM_SHARE_DISPOSITION enumeration type is defined in <i>Wdm.h</i>.
+
+`Size`
+
+The size, in bytes, of this structure.
+
+`TargetProcessorSet`
+
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>-typed value that specifies the interrupt's processor affinity.
+
+`Vector`
+
+The interrupt vector.
+
+## Remarks
+The <b>WDF_INTERRUPT_INFO</b> structure is used as input to the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a> method. To initialize a <b>WDF_INTERRUPT_INFO</b> structure, your driver should call <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a> before calling <b>WdfInterruptGetInfo</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -120,25 +124,18 @@ typedef struct _WDF_INTERRUPT_INFO {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
-</dt>
-<dt>
-<a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>
-</dt>
-<dt>
 <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_INTERRUPT_POLARITY</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
+
+<a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>
+
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
+
  
 
  

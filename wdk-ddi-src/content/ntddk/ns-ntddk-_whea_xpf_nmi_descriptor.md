@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 4ffacbd6-dcdf-48a2-bf1e-6923d825bb09
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_NMI_DESCRIPTOR, *PWHEA_XPF_NMI_DESCRIPTOR, WHEA_XPF_NMI_DESCRIPTOR
+ms.keywords : whea.whea_xpf_nmi_descriptor, PWHEA_XPF_NMI_DESCRIPTOR, _WHEA_XPF_NMI_DESCRIPTOR, whearef_47fae29e-d302-4028-961c-358ac647c0cc.xml, *PWHEA_XPF_NMI_DESCRIPTOR, PWHEA_XPF_NMI_DESCRIPTOR structure pointer [WHEA Drivers and Applications], WHEA_XPF_NMI_DESCRIPTOR, ntddk/WHEA_XPF_NMI_DESCRIPTOR, ntddk/PWHEA_XPF_NMI_DESCRIPTOR, WHEA_XPF_NMI_DESCRIPTOR structure [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_NMI_DESCRIPTOR
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWHEA_XPF_NMI_DESCRIPTOR, WHEA_XPF_NMI_DESCRIPTOR"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _WHEA_XPF_NMI_DESCRIPTOR {
 
 ## Members
 
-        
-            `Enabled`
 
-            A Boolean value that indicates if the error source is enabled.
-        
-            `Type`
+`Enabled`
 
-            The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_XPFNMI.
+A Boolean value that indicates if the error source is enabled.
 
-    ## Remarks
-        A WHEA_XPF_NMI_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+`Type`
+
+The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_XPFNMI.
+
+## Remarks
+A WHEA_XPF_NMI_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,13 +71,10 @@ typedef struct _WHEA_XPF_NMI_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

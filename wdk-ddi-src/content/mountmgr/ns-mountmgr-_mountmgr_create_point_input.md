@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b53d5163-612d-4bfb-89f4-21457629e365
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT, *PMOUNTMGR_CREATE_POINT_INPUT
+ms.keywords : mountmgr/MOUNTMGR_CREATE_POINT_INPUT, PMOUNTMGR_CREATE_POINT_INPUT, PMOUNTMGR_CREATE_POINT_INPUT structure pointer [Storage Devices], structs-mntmgr_24dea6c0-cfff-4f87-a8d3-c019aa5b46c3.xml, mountmgr/PMOUNTMGR_CREATE_POINT_INPUT, *PMOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT, storage.mountmgr_create_point_input, MOUNTMGR_CREATE_POINT_INPUT structure [Storage Devices], _MOUNTMGR_CREATE_POINT_INPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MOUNTMGR_CREATE_POINT_INPUT
-req.alt-loc : mountmgr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : MOUNTMGR_CREATE_POINT_INPUT, *PMOUNTMGR_CREATE_POINT_INPUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PMOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT"
 ---
 
 # _MOUNTMGR_CREATE_POINT_INPUT structure
@@ -49,25 +53,25 @@ typedef struct _MOUNTMGR_CREATE_POINT_INPUT {
 
 ## Members
 
-        
-            `DeviceNameLength`
 
-            Contains the length in bytes of the nonpersistent (target) device name.
-        
-            `DeviceNameOffset`
+`DeviceNameLength`
 
-            Contains an offset in bytes into the output buffer where the nonpersistent (target) device name is located.
-        
-            `SymbolicLinkNameLength`
+Contains the length in bytes of the nonpersistent (target) device name.
 
-            Contains the length in bytes of the symbolic link name stored in the output buffer.
-        
-            `SymbolicLinkNameOffset`
+`DeviceNameOffset`
 
-            Contains an offset in bytes into the output buffer where the symbolic link name is located.
+Contains an offset in bytes into the output buffer where the nonpersistent (target) device name is located.
 
-    ## Remarks
-        The name given for purposes of identifying the volume can be of any type: a unique volume name, a symbolic link name, or a nonpersistent device name. For a discussion of the difference between symbolic link names and nonpersistent target device names, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>.
+`SymbolicLinkNameLength`
+
+Contains the length in bytes of the symbolic link name stored in the output buffer.
+
+`SymbolicLinkNameOffset`
+
+Contains an offset in bytes into the output buffer where the symbolic link name is located.
+
+## Remarks
+The name given for purposes of identifying the volume can be of any type: a unique volume name, a symbolic link name, or a nonpersistent device name. For a discussion of the difference between symbolic link names and nonpersistent target device names, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,13 +81,10 @@ typedef struct _MOUNTMGR_CREATE_POINT_INPUT {
 | **Minimum UMDF version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_create_point.md">IOCTL_MOUNTMGR_CREATE_POINT</a>
-</dt>
-</dl>
+
  
 
  

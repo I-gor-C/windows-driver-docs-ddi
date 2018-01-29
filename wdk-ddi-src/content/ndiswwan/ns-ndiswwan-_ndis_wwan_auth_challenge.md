@@ -7,8 +7,8 @@ old-location : netvista\ndis_wwan_auth_challenge.htm
 old-project : netvista
 ms.assetid : 7C5CE666-D8C9-4A01-A38E-612B69E3A5FB
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_WWAN_AUTH_CHALLENGE, NDIS_WWAN_AUTH_CHALLENGE, *PNDIS_WWAN_AUTH_CHALLENGE
+ms.date : 1/18/2018
+ms.keywords : PNDIS_WWAN_AUTH_CHALLENGE, NDIS_WWAN_AUTH_CHALLENGE, ndiswwan/PNDIS_WWAN_AUTH_CHALLENGE, netvista.ndis_wwan_auth_challenge, _NDIS_WWAN_AUTH_CHALLENGE, ndiswwan/NDIS_WWAN_AUTH_CHALLENGE, *PNDIS_WWAN_AUTH_CHALLENGE, PNDIS_WWAN_AUTH_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_AUTH_CHALLENGE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_WWAN_AUTH_CHALLENGE
-req.alt-loc : ndiswwan.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_WWAN_AUTH_CHALLENGE, *PNDIS_WWAN_AUTH_CHALLENGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_WWAN_AUTH_CHALLENGE, NDIS_WWAN_AUTH_CHALLENGE"
 ---
 
 # _NDIS_WWAN_AUTH_CHALLENGE structure
@@ -47,20 +51,19 @@ typedef struct _NDIS_WWAN_AUTH_CHALLENGE {
 
 ## Members
 
-        
-            `AuthChallenge`
 
-            A formatted <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a> object that represents the challenge posed by one of the authentication methods.
-        
-            `Header`
+`AuthChallenge`
 
-            The header with type, revision, and size information about the NDIS_WWAN_AUTH_CHALLENGE structure. The
+A formatted <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a> object that represents the challenge posed by one of the authentication methods.
+
+`Header`
+
+The header with type, revision, and size information about the NDIS_WWAN_AUTH_CHALLENGE structure. The
      MB service sets the header with the values that are shown in the following table when it sends the data
      structure to the miniport driver for 
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
-
 <table>
 <tr>
 <th>Header submember</th>
@@ -96,8 +99,7 @@ sizeof(NDIS_WWAN_AUTH_CHALLENGE)
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
@@ -111,15 +113,12 @@ For more information about these members, see
 | **Minimum UMDF version** |  |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_AUTH_CHALLENGE structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_AUTH_CHALLENGE structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

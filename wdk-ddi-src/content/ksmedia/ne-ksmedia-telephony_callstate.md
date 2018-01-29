@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8191418A-7139-4BF4-9869-F21AA54EA8B3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : TELEPHONY_CALLSTATE, TELEPHONY_CALLSTATE
+ms.keywords : TELEPHONY_CALLSTATE_DISABLED, TELEPHONY_CALLSTATE_HOLD, audio.telephony_callstate, ksmedia/TELEPHONY_CALLSTATE, ksmedia/TELEPHONY_CALLSTATE_DISABLED, TELEPHONY_CALLSTATE enumeration [Audio Devices], TELEPHONY_CALLSTATE, ksmedia/TELEPHONY_CALLSTATE_PROVIDERTRANSITION, ksmedia/TELEPHONY_CALLSTATE_HOLD, TELEPHONY_CALLSTATE_ENABLED, ksmedia/TELEPHONY_CALLSTATE_ENABLED, TELEPHONY_CALLSTATE_PROVIDERTRANSITION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10,Windows 10 Mobile
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TELEPHONY_CALLSTATE
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TELEPHONY_CALLSTATE
 ---
 
@@ -83,14 +87,10 @@ typedef enum  {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callinfo.md">KSTELEPHONY_CALLINFO</a>
-</dt>
-<dt>
+
 <a href="..\ksmedia\ne-ksmedia-telephony_providerchangeop.md">TELEPHONY_PROVIDERCHANGEOP</a>
-</dt>
-</dl>
+
  
 
  

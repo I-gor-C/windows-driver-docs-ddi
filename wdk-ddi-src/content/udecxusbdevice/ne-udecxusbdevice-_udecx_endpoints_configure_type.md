@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F13C7D8D-C134-432A-904B-7435894B07E5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UDECX_ENDPOINTS_CONFIGURE_TYPE, *PUDECX_ENDPOINTS_CONFIGURE_TYPE, UDECX_ENDPOINTS_CONFIGURE_TYPE
+ms.keywords : UdecxEndpointsConfigureTypeEndpointsReleasedOnly, UdecxEndpointsConfigureTypeInterfaceSettingChange, buses.udecx_endpoints_configure_type, UDECX_ENDPOINTS_CONFIGURE_TYPE, udecxusbdevice/UDECX_ENDPOINTS_CONFIGURE_TYPE, UdecxEndpointsConfigureTypeDeviceInitialize, udecxusbdevice/UdecxEndpointsConfigureTypeDeviceConfigurationChange, PUDECX_ENDPOINTS_CONFIGURE_TYPE, *PUDECX_ENDPOINTS_CONFIGURE_TYPE, UdecxEndpointsConfigureTypeDeviceConfigurationChange, _UDECX_ENDPOINTS_CONFIGURE_TYPE, udecxusbdevice/PUDECX_ENDPOINTS_CONFIGURE_TYPE, UDECX_ENDPOINTS_CONFIGURE_TYPE enumeration [Buses], udecxusbdevice/UdecxEndpointsConfigureTypeInterfaceSettingChange, udecxusbdevice/UdecxEndpointsConfigureTypeDeviceInitialize, udecxusbdevice/UdecxEndpointsConfigureTypeEndpointsReleasedOnly, PUDECX_ENDPOINTS_CONFIGURE_TYPE enumeration pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UDECX_ENDPOINTS_CONFIGURE_TYPE
-req.alt-loc : udecxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUDECX_ENDPOINTS_CONFIGURE_TYPE, UDECX_ENDPOINTS_CONFIGURE_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -84,14 +88,10 @@ typedef enum _UDECX_ENDPOINTS_CONFIGURE_TYPE {
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
-</dt>
-<dt>
 <a href="..\udecxusbdevice\ns-udecxusbdevice-_udecx_endpoints_configure_params.md">UDECX_ENDPOINTS_CONFIGURE_PARAMS</a>
-</dt>
-</dl>
+
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
+
  
 
  

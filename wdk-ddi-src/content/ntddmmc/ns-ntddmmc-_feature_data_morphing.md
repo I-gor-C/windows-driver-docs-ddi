@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b3eaabdf-0163-4679-9b22-d8ec53abed59
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_MORPHING, *PFEATURE_DATA_MORPHING, FEATURE_DATA_MORPHING
+ms.keywords : _FEATURE_DATA_MORPHING, storage.feature_data_morphing, PFEATURE_DATA_MORPHING structure pointer [Storage Devices], FEATURE_DATA_MORPHING, FEATURE_DATA_MORPHING structure [Storage Devices], ntddmmc/PFEATURE_DATA_MORPHING, PFEATURE_DATA_MORPHING, *PFEATURE_DATA_MORPHING, ntddmmc/FEATURE_DATA_MORPHING, structs-CD-ROM_f159fbd8-73db-440b-a4f3-2429181c6836.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_MORPHING
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFEATURE_DATA_MORPHING, FEATURE_DATA_MORPHING"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FEATURE_DATA_MORPHING, *PFEATURE_DATA_MORPHING
 ---
 
 # _FEATURE_DATA_MORPHING structure
@@ -50,29 +54,29 @@ typedef struct _FEATURE_DATA_MORPHING {
 
 ## Members
 
-        
-            `Asynchronous`
 
-            Indicates, when set to 1, that the initiator can request device status asynchronously. If set to zero, the initiator must use polling to request status.
-        
-            `Header`
+`Asynchronous`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `OCEvent`
+Indicates, when set to 1, that the initiator can request device status asynchronously. If set to zero, the initiator must use polling to request status.
 
-            
-        
-            `Reserved01`
+`Header`
 
-            
-        
-            `Reserved2`
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-            Reserved.
+`OCEvent`
 
-    ## Remarks
-        This structure holds data for the feature named "Morphing" by the <i>MMC-3 </i>specification. Devices that support this feature can notify the initiator of operational changes and allow the initiator to prevent operational changes.
+
+
+`Reserved01`
+
+
+
+`Reserved2`
+
+Reserved.
+
+## Remarks
+This structure holds data for the feature named "Morphing" by the <i>MMC-3 </i>specification. Devices that support this feature can notify the initiator of operational changes and allow the initiator to prevent operational changes.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,16 +86,12 @@ typedef struct _FEATURE_DATA_MORPHING {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

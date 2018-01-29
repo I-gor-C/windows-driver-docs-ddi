@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7024d611-533c-43d3-91cf-a678b8359793
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCbdqDisable
+ms.keywords : FltCbdqDisable function [Installable File System Drivers], ifsk.fltcbdqdisable, FltApiRef_a_to_d_12682977-5b03-4656-ad7b-8f37bb8da66b.xml, fltkernel/FltCbdqDisable, FltCbdqDisable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltCbdqDisable
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -87,29 +91,20 @@ If the queue is protected by a <a href="https://msdn.microsoft.com/0585fc2a-0d0b
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data_queue.md">FLT_CALLBACK_DATA_QUEUE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltcbdqenable.md">FltCbdqEnable</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcbdqinsertio.md">FltCbdqInsertIo</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcbdqremoveio.md">FltCbdqRemoveIo</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nf-fltkernel-fltcbdqremovenextio.md">FltCbdqRemoveNextIo</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqremoveio.md">FltCbdqRemoveIo</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqinsertio.md">FltCbdqInsertIo</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
+
  
 
  

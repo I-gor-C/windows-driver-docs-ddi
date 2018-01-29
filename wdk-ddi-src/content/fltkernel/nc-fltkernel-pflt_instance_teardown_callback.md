@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d2f87c47-7f26-4c22-a5b8-2be8f309d1ba
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords : ifsk.pflt_instance_teardown_callback, PFLT_INSTANCE_TEARDOWN_CALLBACK function pointer [Installable File System Drivers], PFLT_INSTANCE_TEARDOWN_CALLBACK, fltkernel/PFLT_INSTANCE_TEARDOWN_CALLBACK, FltCallbacks_2bec09ed-3009-465c-842b-67e0cd7d734f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFLT_INSTANCE_TEARDOWN_CALLBACK
-req.alt-loc : fltkernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 
@@ -59,7 +63,6 @@ Pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RE
 `Reason`
 
 Flag that indicates why the minifilter driver instance is being torn down. One of the following: 
-
 <table>
 <tr>
 <th>Flag</th>
@@ -133,24 +136,38 @@ The <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback
 The <i>InstanceTeardownStartCallback</i> routine is called when the filter manager starts tearing down a minifilter driver instance to allow the minifilter driver to complete any pended I/O operations and save state information. 
 
 The <i>InstanceTeardownStartCallback</i> routine must: 
-
+<ul>
+<li>
 Call <a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a> for each I/O operation that was pended in the minifilter driver's preoperation callback routine to complete the operation or return control of the operation to the filter manager. 
 
+</li>
+<li>
 Not pend any new I/O operations. If the minifilter driver uses a callback data queue, it must call <a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a> to disable it. 
 
+</li>
+<li>
 Call <a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a> for each I/O operation that was pended in the minifilter driver's postoperation callback routine to return control of the operation to the filter manager. 
 
-The <i>InstanceTeardownStartCallback</i> routine can optionally do the following to allow the minifilter driver to unload as quickly as possible: 
-
+</li>
+</ul>The <i>InstanceTeardownStartCallback</i> routine can optionally do the following to allow the minifilter driver to unload as quickly as possible: 
+<ul>
+<li>
 Close any opened files. 
 
+</li>
+<li>
 Ensure that worker threads perform only the minimum necessary to complete processing of outstanding work items. 
 
+</li>
+<li>
 Call <a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a> to cancel any I/O operations that were initiated by the minifilter driver. 
 
+</li>
+<li>
 Stop queuing new work items. 
 
-Once the minifilter driver's <i>InstanceTeardownStartCallback</i> routine is called, the minifilter driver's preoperation and postoperation callback routines are not called for any new I/O operations. However, they may be called for I/O operations that were started before instance teardown was initiated. 
+</li>
+</ul>Once the minifilter driver's <i>InstanceTeardownStartCallback</i> routine is called, the minifilter driver's preoperation and postoperation callback routines are not called for any new I/O operations. However, they may be called for I/O operations that were started before instance teardown was initiated. 
 
 The <i>InstanceTeardownCompleteCallback</i> routine is called when the teardown process is complete to allow the minifilter driver to close open files and perform any other necessary cleanup processing. 
 
@@ -159,12 +176,16 @@ The <i>InstanceTeardownCompleteCallback</i> routine must close any files that we
 The filter manager calls the minifilter driver's <i>InstanceTeardownCompleteCallback</i> routine only after all outstanding I/O operations have been completed or drained. 
 
 <b>Warning</b>: The <i>InstanceTeardownCompleteCallback</i> routine will not be called if any of the following conditions are true: 
-
+<ul>
+<li>
 There are outstanding pended I/O operations. 
 
+</li>
+<li>
 There are any outstanding I/O operations that were initiated by the minifilter driver. 
 
-If the minifilter driver instance is being torn down because the minifilter driver is being unloaded, the unload operation appears to hang until the <i>InstanceTeardownCompleteCallback</i> routine returns. To debug these kinds of problems, you should enable the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> on your minifilter driver. The Filter Verifier <a href="https://msdn.microsoft.com/41b77bba-fae8-453b-9872-911f5d5be3e6">I/O Verification</a> option can help identify possible causes, such as unreleased references, that would prevent the minifilter driver from unloading. For more information, see <a href="ifsk.development_and_testing_tools#filter_verifier#filter_verifier">Filter Verifier</a>. 
+</li>
+</ul>If the minifilter driver instance is being torn down because the minifilter driver is being unloaded, the unload operation appears to hang until the <i>InstanceTeardownCompleteCallback</i> routine returns. To debug these kinds of problems, you should enable the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> on your minifilter driver. The Filter Verifier <a href="https://msdn.microsoft.com/41b77bba-fae8-453b-9872-911f5d5be3e6">I/O Verification</a> option can help identify possible causes, such as unreleased references, that would prevent the minifilter driver from unloading. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/development-and-testing-tools">Filter Verifier</a>. 
 
 Note that referencing the instance (by calling <a href="..\fltkernel\nf-fltkernel-fltobjectreference.md">FltObjectReference</a>) does not prevent the <i>InstanceTeardownCompleteCallback</i> routine from being called. 
 
@@ -184,41 +205,28 @@ The filter manager calls the <i>InstanceTeardownStartCallback</i> and <i>Instanc
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-</dt>
-<dt>
-<a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
-</dt>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>
-</dt>
-<dt>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nc-fltkernel-pflt_instance_query_teardown_callback.md">PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</a>
-</dt>
-<dt>
+
 <a href="..\fltkernel\nc-fltkernel-pflt_instance_setup_callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_instance_query_teardown_callback.md">PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</a>
+
  
 
  

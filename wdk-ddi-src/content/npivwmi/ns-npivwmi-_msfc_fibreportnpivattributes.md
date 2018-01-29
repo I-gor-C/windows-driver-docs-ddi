@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1641C3A0-E6D9-4E30-9E3C-3C09A14F591F
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_FibrePortNPIVAttributes, *PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes
+ms.keywords : PMSFC_FibrePortNPIVAttributes structure pointer [Storage Devices], storage.msfc_fibreportnpivattributes, MSFC_FibrePortNPIVAttributes structure [Storage Devices], npivwmi/PMSFC_FibrePortNPIVAttributes, _MSFC_FibrePortNPIVAttributes, PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes, npivwmi/MSFC_FibrePortNPIVAttributes, *PMSFC_FibrePortNPIVAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MSFC_FibrePortNPIVAttributes
-req.alt-loc : npivwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_FibrePortNPIVAttributes, *PMSFC_FibrePortNPIVAttributes
 ---
 
 # _MSFC_FibrePortNPIVAttributes structure
@@ -49,22 +53,22 @@ typedef struct _MSFC_FibrePortNPIVAttributes {
 
 ## Members
 
-        
-            `NumberVirtualPorts`
 
-            The number of virtual ports on the adapter.
-        
-            `VirtualPorts`
+`NumberVirtualPorts`
 
-            An array of virtual ports. The array length is specified in the <b>NumberVirtualPorts</b> member.
-        
-            `WWNN`
+The number of virtual ports on the adapter.
 
-            The world wide node name of the physical port.
-        
-            `WWPN`
+`VirtualPorts`
 
-            The world wide port name of the physical port.
+An array of virtual ports. The array length is specified in the <b>NumberVirtualPorts</b> member.
+
+`WWNN`
+
+The world wide node name of the physical port.
+
+`WWPN`
+
+The world wide port name of the physical port.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _MSFC_FibrePortNPIVAttributes {
 | **Minimum UMDF version** |  |
 | **Header** | npivwmi.h (include Npivwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh127624">MSFC_FibrePortNPIVAttributes WMI Class</a>
-</dt>
-</dl>
+
  
 
  

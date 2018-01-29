@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 689296FA-E28A-4F9C-8E09-2CAC8A189808
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
+ms.keywords : audio.ioctl_bthhfp_stream_close, IOCTL_BTHHFP_STREAM_CLOSE control code [Audio Devices], IOCTL_BTHHFP_STREAM_CLOSE, bthhfpddi/IOCTL_BTHHFP_STREAM_CLOSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_BTHHFP_STREAM_CLOSE
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
 ---
 
@@ -60,11 +64,10 @@ N/A
 <text></text>
 
 ### Status Block
-I/O Status block
 N/A
 
-    ## Remarks
-        The request completes immediately.
+## Remarks
+The request completes immediately.
 
 The audio driver starts this request when the KS pin transitions to the KSSTATE_STOP state, and should not finish the pin state transition until this request completes.
 
@@ -75,13 +78,10 @@ The audio driver starts this request when the KS pin transitions to the KSSTATE_
 | **Header** | bthhfpddi.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
-</dt>
-</dl>
+
  
 
  

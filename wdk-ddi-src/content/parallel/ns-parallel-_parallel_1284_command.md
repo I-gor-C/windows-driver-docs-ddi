@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 5b46253c-c111-4675-898e-78b81ecbddb8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND
+ms.keywords : PARALLEL_1284_COMMAND structure [Parallel Ports], PARALLEL_1284_COMMAND, PPARALLEL_1284_COMMAND structure pointer [Parallel Ports], *PPARALLEL_1284_COMMAND, _PARALLEL_1284_COMMAND, parallel/PPARALLEL_1284_COMMAND, PPARALLEL_1284_COMMAND, cisspd_082268fb-79fd-46df-85a7-89dd56098ed0.xml, parallel/PARALLEL_1284_COMMAND, parports.parallel_1284_command
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PARALLEL_1284_COMMAND
-req.alt-loc : parallel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND"
 ---
 
@@ -48,21 +52,21 @@ typedef struct _PARALLEL_1284_COMMAND {
 
 ## Members
 
-        
-            `CommandFlags`
 
-            Specifies a bitwise OR of zero or more of the following flags:
-        
-            `ID`
+`CommandFlags`
 
-            Specifies the IEEE 1284.3 device ID.
-        
-            `Port`
+Specifies a bitwise OR of zero or more of the following flags:
 
-            Reserved (set to zero).
+`ID`
 
-    ## Remarks
-        The system-supplied function driver for parallel ports supports the simultaneous connection of zero to two IEEE 1284.3 daisy-chain devices and an IEEE 1284 end-of-chain device. In Windows XP, the parallel port function driver supports the simultaneous connection of zero to four IEEE 1284.3 daisy-chain devices and an IEEE 1284 end-of-chain device. The end-of-chain device must be an IEEE 1284 device, but does not have to be an IEEE 1284.3 device. 
+Specifies the IEEE 1284.3 device ID.
+
+`Port`
+
+Reserved (set to zero).
+
+## Remarks
+The system-supplied function driver for parallel ports supports the simultaneous connection of zero to two IEEE 1284.3 daisy-chain devices and an IEEE 1284 end-of-chain device. In Windows XP, the parallel port function driver supports the simultaneous connection of zero to four IEEE 1284.3 daisy-chain devices and an IEEE 1284 end-of-chain device. The end-of-chain device must be an IEEE 1284 device, but does not have to be an IEEE 1284.3 device. 
 
 For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71-8740-70c6fbe9a885">Selecting and Deselecting an IEEE 1284 Device Attached to a ParallelPort</a>.
 
@@ -74,22 +78,16 @@ For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71
 | **Minimum UMDF version** |  |
 | **Header** | parallel.h (include Parallel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
-</dt>
-<dt>
-<a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
-</dt>
-<dt>
-<a href="..\parallel\nc-parallel-pparallel_deselect_routine.md">PPARALLEL_DESELECT_ROUTINE</a>
-</dt>
-<dt>
 <a href="..\parallel\nc-parallel-pparallel_try_select_routine.md">PPARALLEL_TRY_SELECT_ROUTINE</a>
-</dt>
-</dl>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+
+<a href="..\parallel\nc-parallel-pparallel_deselect_routine.md">PPARALLEL_DESELECT_ROUTINE</a>
+
+<a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
+
  
 
  

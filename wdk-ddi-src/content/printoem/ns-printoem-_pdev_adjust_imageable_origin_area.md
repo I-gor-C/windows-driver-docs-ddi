@@ -7,8 +7,8 @@ old-location : print\pdev_adjust_imageable_origin_area.htm
 old-project : print
 ms.assetid : 7b66ed24-64c2-49bc-a417-05fe11178b9f
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
+ms.date : 1/18/2018
+ms.keywords : PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure pointer [Print Devices], print.pdev_adjust_imageable_origin_area, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure [Print Devices], printoem/PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, printoem/PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, print_unidrv-pscript_rendering_64db57fb-903d-411f-8106-b4c9a4c2a04e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
-req.alt-loc : printoem.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
 req.product : Windows 10 or later.
 ---
 
@@ -48,17 +52,17 @@ typedef struct _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA {
 
 ## Members
 
-        
-            `ptImageOrigin`
 
-            A POINT structure that specifies the origin of the imageable area, in graphics device units (pixels).
-        
-            `szlImageableArea`
+`ptImageOrigin`
 
-            A SIZEL structure that specifies the size of the image area, in graphics device units (pixels).
+A POINT structure that specifies the origin of the imageable area, in graphics device units (pixels).
 
-    ## Remarks
-        The PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure is available in Windows Vista and later operating systems. </p>
+`szlImageableArea`
+
+A SIZEL structure that specifies the size of the image area, in graphics device units (pixels).
+
+## Remarks
+The PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure is available in Windows Vista and later operating systems.
 
 ## Requirements
 | &nbsp; | &nbsp; |

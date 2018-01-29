@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6a1a2c3e-a120-4b5e-bd25-02cb3ab11e9c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030
+ms.keywords : d3d12umddi/D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030, D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030 structure [Display Devices], D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030, display.d3d12ddi-video-crypto-session-support-data-0030
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030
-req.alt-loc : d3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030
 ---
 
@@ -52,34 +56,34 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030 {
 
 ## Members
 
-        
-            `BitstreamEncryption`
 
-            Bitstream encryption.
-        
-            `ContentProtectionSystem`
+`BitstreamEncryption`
 
-            Content protection system.
-        
-            `DecodeProfile`
+Bitstream encryption.
 
-            Decode profile.
-        
-            `Flags`
+`ContentProtectionSystem`
 
-            Flags.
-        
-            `KeyBaseDataSize`
+Content protection system.
 
-            Key base data size.
-        
-            `NodeIndex`
+`DecodeProfile`
 
-            Node index.
-        
-            `Support`
+Decode profile.
 
-            Support.
+`Flags`
+
+Flags.
+
+`KeyBaseDataSize`
+
+Key base data size.
+
+`NodeIndex`
+
+Node index.
+
+`Support`
+
+Support.
 
 
 ## Requirements

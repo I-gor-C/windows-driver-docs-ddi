@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a55f9aee-c6a5-4391-aad1-4003e58692cd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDI_MAPPED_SUBRESOURCE, D3D10DDI_MAPPED_SUBRESOURCE
+ms.keywords : D3D10DDI_MAPPED_SUBRESOURCE structure [Display Devices], d3d10umddi/D3D10DDI_MAPPED_SUBRESOURCE, display.d3d10ddi_mapped_subresource, D3D10DDI_MAPPED_SUBRESOURCE, UMDisplayDriver_Dx10param_Structs_19502bf4-94a6-48d5-8294-c058c254540f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D10DDI_MAPPED_SUBRESOURCE
-req.alt-loc : d3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D10DDI_MAPPED_SUBRESOURCE
 ---
 
@@ -48,21 +52,21 @@ typedef struct D3D10DDI_MAPPED_SUBRESOURCE {
 
 ## Members
 
-        
-            `DepthPitch`
 
-            [out] The deptch pitch,  width, or physical size (in bytes) of the data.
-        
-            `pData`
+`DepthPitch`
 
-            [out] A pointer to a buffer that contains the contents of the subresource.
-        
-            `RowPitch`
+[out] The deptch pitch,  width, or physical size (in bytes) of the data.
 
-            [out] The row pitch,  width, or physical size (in bytes) of the data.
+`pData`
 
-    ## Remarks
-        The <b>pData</b> member points to row 0 and slice 0.
+[out] A pointer to a buffer that contains the contents of the subresource.
+
+`RowPitch`
+
+[out] The row pitch,  width, or physical size (in bytes) of the data.
+
+## Remarks
+The <b>pData</b> member points to row 0 and slice 0.
 
 The <b>RowPitch</b> member is the value that is added to <b>pData</b> to move from row to row. Each row should contain multiple pixels.
 
@@ -71,6 +75,10 @@ The <b>DepthPitch</b> member is the value that is added to <b>pData</b> to move 
 It is not advisable to assign a value of zero to the <b>RowPitch</b> and <b>DepthPitch</b> members.
 
 To avoid zero values for these members, it helps to think of all  resources as being three-dimensional, as in these two examples:
+<ul>
+<li>If the <a href="https://msdn.microsoft.com/e9cd2bc7-99c1-4aca-91b0-9faefa4a856d">resource attribute</a> is Buffer or Texture1D and contains  8 bytes, then appropriate values  for <b>RowPitch</b> and <b>DepthPitch</b> would be 8 or more.</li>
+<li>If the <a href="https://msdn.microsoft.com/e9cd2bc7-99c1-4aca-91b0-9faefa4a856d">resource attribute</a> is Texture2d, even if <b>DepthPitch</b> is not used, <b>DepthPitch</b> must not be assigned a value of zero.</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,13 +88,10 @@ To avoid zero values for these members, it helps to think of all  resources as b
 | **Minimum UMDF version** |  |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>
-</dt>
-</dl>
+
  
 
  

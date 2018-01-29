@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d4579703-0d51-4e23-b458-b2be43951dac
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlValidSid
+ms.keywords : RtlValidSid, RtlValidSid routine [Installable File System Drivers], rtlref_8d79344c-bb78-433f-be34-84e314b232a0.xml, ntifs/RtlValidSid, ifsk.rtlvalidsid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlValidSid
-req.alt-loc : NtosKrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -75,29 +79,20 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlequalprefixsid.md">RtlEqualPrefixSid</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlequalsid.md">RtlEqualSid</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtlinitializesid.md">RtlInitializeSid</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtllengthrequiredsid.md">RtlLengthRequiredSid</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-rtlequalprefixsid.md">RtlEqualPrefixSid</a>
+
 <a href="..\ntifs\nf-ntifs-rtllengthsid.md">RtlLengthSid</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\nf-ntifs-rtllengthrequiredsid.md">RtlLengthRequiredSid</a>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
+
+<a href="..\ntifs\nf-ntifs-rtlequalsid.md">RtlEqualSid</a>
+
  
 
  

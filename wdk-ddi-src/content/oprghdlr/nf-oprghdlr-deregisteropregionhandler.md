@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : b50a63cd-69eb-46a8-9d0b-660795c7047f
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : DeRegisterOpRegionHandler
+ms.keywords : DeRegisterOpRegionHandler, acpi.deregisteropregionhandler, opregref_e991e152-6162-4d45-9418-282afb447d18.xml, oprghdlr/DeRegisterOpRegionHandler, DeRegisterOpRegionHandler routine [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DeRegisterOpRegionHandler
-req.alt-loc : Oprghdlr.lib,Oprghdlr.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Oprghdlr.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
@@ -61,15 +65,45 @@ Specifies the operation region object returned by <a href="..\oprghdlr\nf-oprghd
 ## Return Value
 
 Returns one of the following status values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operating region handler was successfully registered.
+</dl>
+</td>
+<td width="60%">
+The operating region handler was successfully registered.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The routine could not allocate the necessary system resources.
+</dl>
+</td>
+<td width="60%">
+The routine could not allocate the necessary system resources.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_Xxx</b></dt>
-</dl>An internal error occurred.
+</dl>
+</td>
+<td width="60%">
+An internal error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -91,14 +125,10 @@ For more information about operation regions, see <a href="https://msdn.microsof
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
-</dt>
-<dt>
+
 <a href="..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md">ACPI_OP_REGION_HANDLER</a>
-</dt>
-</dl>
+
  
 
  

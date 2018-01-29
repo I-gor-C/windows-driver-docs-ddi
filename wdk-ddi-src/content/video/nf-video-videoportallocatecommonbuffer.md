@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 950c2509-688e-4aaa-a12d-4106bb722bbc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortAllocateCommonBuffer
+ms.keywords : VideoPort_Functions_bd747ea0-7963-4008-a91c-eb5598fc6bdd.xml, display.videoportallocatecommonbuffer, VideoPortAllocateCommonBuffer, VideoPortAllocateCommonBuffer function [Display Devices], video/VideoPortAllocateCommonBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortAllocateCommonBuffer
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -101,20 +105,14 @@ When the buffer is no longer needed, the video miniport driver should release it
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
+
+<a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
+
  
 
  

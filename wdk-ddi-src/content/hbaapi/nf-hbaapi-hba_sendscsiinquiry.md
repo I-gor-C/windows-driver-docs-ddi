@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6239f9b5-99e9-4ed7-b2a8-863c1784692b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendScsiInquiry
+ms.keywords : HBA_SendScsiInquiry, storage.hba_sendscsiinquiry, hbaapi/HBA_SendScsiInquiry, HBA_SendScsiInquiry routine [Storage Devices], fibreHBA_rtns_7a60c4a4-d9d4-408f-b5c9-6cb593f510fb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SendScsiInquiry
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -58,15 +62,15 @@ HBA_STATUS HBA_API HBA_SendScsiInquiry(
 
 `Handle`
 
-
+TBD
 
 `PortWWN`
 
-
+TBD
 
 `FcLUN`
 
-
+TBD
 
 `EVPD`
 
@@ -82,7 +86,7 @@ Pointer to a buffer that receives the output data of the SCSI inquiry command.
 
 `RspBufferSize`
 
-
+TBD
 
 `pSenseBuffer`
 
@@ -96,21 +100,67 @@ On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On
 ## Return Value
 
 The <b>HBA_SendScsiInquiry</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendScsiInquiry</b> returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
-</dl>Returned if the complete payload of a reply to the SCSI inquiry command was successfully retrieved. 
+</dl>
+</td>
+<td width="60%">
+Returned if the complete payload of a reply to the SCSI inquiry command was successfully retrieved. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_NOT_A_TARGET</b></dt>
-</dl>Returned if the specified remote port specified by <i>portWWN </i>does not have SCSI target functionality.
+</dl>
+</td>
+<td width="60%">
+Returned if the specified remote port specified by <i>portWWN </i>does not have SCSI target functionality.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_TARGET_BUSY</b></dt>
-</dl>Returned if the SCSI inquiry command could not be delivered without causing a SCSI overlapped command condition.
+</dl>
+</td>
+<td width="60%">
+Returned if the SCSI inquiry command could not be delivered without causing a SCSI overlapped command condition.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_SCSI_CHECK_CONDITION</b></dt>
-</dl>Returned if a SCSI check condition occurred and SCSI send data is provided in the buffer at <i>pSenseBuffer</i>.
+</dl>
+</td>
+<td width="60%">
+Returned if a SCSI check condition occurred and SCSI send data is provided in the buffer at <i>pSenseBuffer</i>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
-</dl>Returned if an unspecified error occurred that prevented the execution of the SCSI inquiry command.
+</dl>
+</td>
+<td width="60%">
+Returned if an unspecified error occurred that prevented the execution of the SCSI inquiry command. 
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -127,14 +177,10 @@ The <b>HBA_SendScsiInquiry</b> routine returns a value of type <a href="https://
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 059bef5a-1db7-4fd7-a19b-c34df81f4447
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPin, IKsPin::KsPropagateAcquire, KsPropagateAcquire
+ms.keywords : stream.ikspin_kspropagateacquire, ksproxy_c3ce0cef-0366-4233-afa5-723f9d3bb4e9.xml, IKsPin interface [Streaming Media Devices], KsPropagateAcquire method, ksproxy/IKsPin::KsPropagateAcquire, IKsPin::KsPropagateAcquire, KsPropagateAcquire method [Streaming Media Devices], IKsPin interface, KsPropagateAcquire method [Streaming Media Devices], IKsPin, KsPropagateAcquire
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IKsPin.KsPropagateAcquire
-req.alt-loc : ksproxy.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ksproxy.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -49,10 +53,6 @@ HRESULT KsPropagateAcquire();
 This function has no parameters.
 
 ## Return Value
-
-Returns NOERROR if successful; otherwise, returns an error code.
-
-Returns NOERROR if successful; otherwise, returns an error code.
 
 Returns NOERROR if successful; otherwise, returns an error code.
 
@@ -76,11 +76,8 @@ This method is for proxy use and is not recommended for application use.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspin.md">IKsPin</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f378a30f-7e6b-4c81-b98b-a5b40e9a1a17
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSynchronizeExecution
+ms.keywords : k105_2abf2438-6849-4069-8571-7d24d348056f.xml, wdm/KeSynchronizeExecution, KeSynchronizeExecution routine [Kernel-Mode Driver Architecture], KeSynchronizeExecution, kernel.kesynchronizeexecution
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeSynchronizeExecution
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DIRQL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -71,14 +75,20 @@ A pointer to a caller-supplied context value to be passed to the <a href="https:
 ## Remarks
 
 When this routine is called, the following occurs:
-
+<ol>
+<li>
 The IRQL is raised to the <i>SynchronizeIrql</i> value specified in the call to <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> or <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>.
 
+</li>
+<li>
 Access to <i>SynchronizeContext</i> is synchronized with the assigned ISR by acquiring the associated interrupt object spin lock (or system event object, in the case of an ISR that runs at PASSIVE_LEVEL).
 
+</li>
+<li>
 The specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff563928">SynchCritSection</a> routine is called with the <i>SynchronizeContext</i> value as its parameter.
 
-If the ISR runs at DIRQL &gt;= DISPATCH_LEVEL, the <i>SynchCritSection</i> routine runs at the same DIRQL and must therefore run for as brief a time as possible to avoid delaying other high-priority tasks.
+</li>
+</ol>If the ISR runs at DIRQL &gt;= DISPATCH_LEVEL, the <i>SynchCritSection</i> routine runs at the same DIRQL and must therefore run for as brief a time as possible to avoid delaying other high-priority tasks.
 
 Callers of <b>KeSynchronizeExecution</b> must be running at IRQL &lt;= DIRQL; that is, at an IRQL that is less than or equal to the value of the <b>SynchronizeIrql</b> value that the caller specified when it registered its ISR with <b>IoConnectInterrupt</b> or <b>IoConnectInterruptEx</b>.
 
@@ -98,14 +108,10 @@ Starting with Windows 8, a driver can call <b>KeSynchronizeExecution</b> to syn
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
-</dt>
-</dl>
+
  
 
  

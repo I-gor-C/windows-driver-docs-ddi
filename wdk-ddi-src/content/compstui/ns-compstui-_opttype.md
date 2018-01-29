@@ -7,8 +7,8 @@ old-location : print\opttype.htm
 old-project : print
 ms.assetid : 041dd438-e837-4912-bda7-de654204198b
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _OPTTYPE, *POPTTYPE, OPTTYPE
+ms.date : 1/18/2018
+ms.keywords : print.opttype, POPTTYPE, compstui/POPTTYPE, POPTTYPE structure pointer [Print Devices], cpsuifnc_de1ff2db-9eea-4daf-bc9e-2e24a2dd5271.xml, OPTTYPE structure [Print Devices], compstui/OPTTYPE, OPTTYPE, _OPTTYPE, *POPTTYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OPTTYPE
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*POPTTYPE, OPTTYPE"
 ---
 
@@ -54,44 +58,44 @@ typedef struct _OPTTYPE {
 
 ## Members
 
-        
-            `BegCtrlID`
 
-            If <b>pDlgPage</b> in <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> identifies a CPSUI-supplied page, or if <b>DlgTemplateID</b> in <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> identifies a CPSUI-supplied template, <b>BegCtrlID</b> is not used.
+`BegCtrlID`
+
+If <b>pDlgPage</b> in <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> identifies a CPSUI-supplied page, or if <b>DlgTemplateID</b> in <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> identifies a CPSUI-supplied template, <b>BegCtrlID</b> is not used.
 
 Otherwise, <b>BegCtrlID</b> must contain the first of a sequentially numbered set of Windows control identifiers. Control identifier usage is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-        
-            `cbSize`
 
-            Size, in bytes, of the OPTTYPE structure.
-        
-            `Count`
+`cbSize`
 
-            Specifies the number of <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures to which <b>pOptParam</b> points. This member's value is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-        
-            `dwReserved`
+Size, in bytes, of the OPTTYPE structure.
 
-            Reserved, must be initialized to zero.
-        
-            `Flags`
+`Count`
 
-            Optional bit flags that modify the option's characteristics. The following flags can be set in any combination.
-        
-            `pOptParam`
+Specifies the number of <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures to which <b>pOptParam</b> points. This member's value is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
 
-            Pointer to an array of <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures describing the parameter values that a user can select for the option.
-        
-            `Style`
+`dwReserved`
 
-            Specifies flags that can be used to modify the option's display characteristics. The flags that can be specified are dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-        
-            `Type`
+Reserved, must be initialized to zero.
 
-            Specifies the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-        
-            `wReserved`
+`Flags`
 
-            Reserved, must be initialized to zero.
+Optional bit flags that modify the option's characteristics. The following flags can be set in any combination.
+
+`pOptParam`
+
+Pointer to an array of <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures describing the parameter values that a user can select for the option.
+
+`Style`
+
+Specifies flags that can be used to modify the option's display characteristics. The flags that can be specified are dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
+
+`Type`
+
+Specifies the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
+
+`wReserved`
+
+Reserved, must be initialized to zero.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 8D582EF9-B9D1-498B-AE20-337F3A33250C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _POWERSOURCEID, POWERSOURCEID, *PPOWERSOURCEID
+ms.keywords : battery.ioctl_cad_power_source_update_ex, IOCTL_CAD_POWER_SOURCE_UPDATE_EX control code [Battery Devices], IOCTL_CAD_POWER_SOURCE_UPDATE_EX, charging/IOCTL_CAD_POWER_SOURCE_UPDATE_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CAD_POWER_SOURCE_UPDATE_EX
-req.alt-loc : charging.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : POWERSOURCEID, *PPOWERSOURCEID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPOWERSOURCEID, POWERSOURCEID"
 ---
 
 # IOCTL_CAD_POWER_SOURCE_UPDATE_EX IOCTL

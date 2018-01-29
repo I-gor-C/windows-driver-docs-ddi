@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 10088043-fc0b-4df9-a5bf-fdee9740b88a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortGetLogicalUnit
+ms.keywords : ScsiPortGetLogicalUnit routine [Storage Devices], ScsiPortGetLogicalUnit, scsiprt_2b4c797a-4fbb-4c0c-913a-628bfb6dab3d.xml, storage.scsiportgetlogicalunit, srb/ScsiPortGetLogicalUnit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiPortGetLogicalUnit
-req.alt-loc : Scsiport.lib,Scsiport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Scsiport.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -38,6 +42,7 @@ req.product : Windows 10 or later.
 
 # ScsiPortGetLogicalUnit function
 The <b>ScsiPortGetLogicalUnit</b> routine returns a pointer to the miniport driver's per-LU storage area for a given peripheral.
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -95,20 +100,14 @@ The operating system-specific port driver can consider a logical unit to be none
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
-</dt>
-<dt>
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
-</dt>
-<dt>
-<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
-</dt>
-<dt>
 <a href="..\srb\nf-srb-scsiportmovememory.md">ScsiPortMoveMemory</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
+
+<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
+
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
+
  
 
  

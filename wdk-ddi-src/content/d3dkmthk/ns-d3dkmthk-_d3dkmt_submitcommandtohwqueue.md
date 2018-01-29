@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3807BD27-FAE4-4E12-A825-A9FAFB7A6ACA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_SUBMITCOMMANDTOHWQUEUE, D3DKMT_SUBMITCOMMANDTOHWQUEUE
+ms.keywords : D3DKMT_SUBMITCOMMANDTOHWQUEUE, d3dkmthk/D3DKMT_SUBMITCOMMANDTOHWQUEUE, display.d3dkmt_submitcommandtohwqueue, _D3DKMT_SUBMITCOMMANDTOHWQUEUE, D3DKMT_SUBMITCOMMANDTOHWQUEUE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_SUBMITCOMMANDTOHWQUEUE
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_SUBMITCOMMANDTOHWQUEUE
 ---
 
@@ -53,34 +57,38 @@ typedef struct _D3DKMT_SUBMITCOMMANDTOHWQUEUE {
 
 ## Members
 
-        
-            `CommandLength`
 
-            Length in bytes of the command buffer.
-        
-            `hHwQueue`
+`CommandBuffer`
 
-            Context queue to submit the command to.
-        
-            `HwQueueProgressFenceId`
+GPU VA of the command buffer to be executed on the GPU.
 
-            Hardware queue progress fence value that will be signaled once the command is finished.
-        
-            `NumPrimaries`
+`CommandLength`
 
-            The number of primaries written by this command buffer.
-        
-            `pPrivateDriverData`
+Length in bytes of the command buffer.
 
-            Pointer to the private driver data.
-        
-            `PrivateDriverDataSize`
+`hHwQueue`
 
-            Size of private driver data in bytes.
-        
-            `WrittenPrimaries`
+Context queue to submit the command to.
 
-            The array of primaries written by this command buffer.
+`HwQueueProgressFenceId`
+
+Hardware queue progress fence value that will be signaled once the command is finished.
+
+`NumPrimaries`
+
+The number of primaries written by this command buffer.
+
+`pPrivateDriverData`
+
+Pointer to the private driver data.
+
+`PrivateDriverDataSize`
+
+Size of private driver data in bytes.
+
+`WrittenPrimaries`
+
+The array of primaries written by this command buffer.
 
 
 ## Requirements

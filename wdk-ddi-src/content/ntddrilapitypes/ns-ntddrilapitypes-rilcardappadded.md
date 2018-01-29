@@ -7,8 +7,8 @@ old-location : netvista\rilcardappadded.htm
 old-project : netvista
 ms.assetid : f0488502-8c0c-4e2d-81d0-98b206c74d78
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCARDAPPADDED, RILCARDAPPADDED, *LPRILCARDAPPADDED
+ms.date : 1/18/2018
+ms.keywords : RILCARDAPPADDED, netvista.rilcardappadded, RILCARDAPPADDED structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCARDAPPADDED, *LPRILCARDAPPADDED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCARDAPPADDED
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILCARDAPPADDED, *LPRILCARDAPPADDED
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILCARDAPPADDED, RILCARDAPPADDED"
 ---
 
 # RILCARDAPPADDED structure
@@ -49,22 +53,22 @@ typedef struct _RILCARDAPPADDED {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `dwSlotIndex`
 
-            
-        
-            `rilUiccAppInfo`
 
-            
+`dwParams`
+
+
+
+`dwSlotIndex`
+
+
+
+`rilUiccAppInfo`
+
+
 
 
 ## Requirements

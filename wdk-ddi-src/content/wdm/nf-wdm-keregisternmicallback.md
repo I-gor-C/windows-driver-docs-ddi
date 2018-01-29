@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 46e666a6-be4c-40fb-b9e1-00ced9fb4d05
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRegisterNmiCallback
+ms.keywords : KeRegisterNmiCallback routine [Kernel-Mode Driver Architecture], kernel.keregisternmicallback, KeRegisterNmiCallback, wdm/KeRegisterNmiCallback, k105_4abdb9bc-8548-42f3-8305-c116ce15e0a4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows  Server 2003 and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRegisterNmiCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlKeApcLte2, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -53,7 +57,6 @@ PVOID KeRegisterNmiCallback(
 `CallbackRoutine`
 
 Pointer to a function of the form:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -98,11 +101,8 @@ The callback routine must be able to be run at IRQL = HIGH_LEVEL.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-kederegisternmicallback.md">KeDeregisterNmiCallback</a>
-</dt>
-</dl>
+
  
 
  

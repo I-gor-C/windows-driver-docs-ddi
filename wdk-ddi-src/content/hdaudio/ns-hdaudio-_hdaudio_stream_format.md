@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 475b7774-51ce-410d-aba8-a2317f44ce03
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : _HDAUDIO_STREAM_FORMAT, hdaudio/PHDAUDIO_STREAM_FORMAT, hdaudio/HDAUDIO_STREAM_FORMAT, audio.hdaudio_stream_format, HDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT structure pointer [Audio Devices], HDAUDIO_STREAM_FORMAT structure [Audio Devices], aud-prop2_80d1ef47-903a-4f6e-95c7-e30f07b105fe.xml, PHDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HDAUDIO_STREAM_FORMAT
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -49,25 +53,25 @@ typedef struct _HDAUDIO_STREAM_FORMAT {
 
 ## Members
 
-        
-            `ContainerSize`
 
-            Specifies the size in bits of a sample container. Valid values for this member are 8, 16, 24, and 32.
-        
-            `NumberOfChannels`
+`ContainerSize`
 
-            Specifies the number of channels of audio data. For monophonic audio, set this member to 1. For stereo, set this member to 2.
-        
-            `SampleRate`
+Specifies the size in bits of a sample container. Valid values for this member are 8, 16, 24, and 32.
 
-            Specifies the sample rate in samples per second. This member indicates the rate at which each channel should be played or recorded.
-        
-            `ValidBitsPerSample`
+`NumberOfChannels`
 
-            Specifies the number of valid bits per sample. The valid bits are left justified within the container. Any unused bits to the right of the valid bits must be set to zero.
+Specifies the number of channels of audio data. For monophonic audio, set this member to 1. For stereo, set this member to 2.
 
-    ## Remarks
-        The <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>, <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>, and <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routines take as an input parameter an HDAUDIO_STREAM_FORMAT structure and output the corresponding <a href="..\hdaudio\ns-hdaudio-_hdaudio_converter_format.md">HDAUDIO_CONVERTER_FORMAT</a> structure. The information in a valid HDAUDIO_STREAM_FORMAT value can be encoded as an HDAUDIO_CONVERTER_FORMAT value.
+`SampleRate`
+
+Specifies the sample rate in samples per second. This member indicates the rate at which each channel should be played or recorded.
+
+`ValidBitsPerSample`
+
+Specifies the number of valid bits per sample. The valid bits are left justified within the container. Any unused bits to the right of the valid bits must be set to zero.
+
+## Remarks
+The <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>, <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>, and <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routines take as an input parameter an HDAUDIO_STREAM_FORMAT structure and output the corresponding <a href="..\hdaudio\ns-hdaudio-_hdaudio_converter_format.md">HDAUDIO_CONVERTER_FORMAT</a> structure. The information in a valid HDAUDIO_STREAM_FORMAT value can be encoded as an HDAUDIO_CONVERTER_FORMAT value.
 
 This structure is similar to the <a href="..\ksmedia\ns-ksmedia-waveformatextensible.md">WAVEFORMATEXTENSIBLE</a> structure, but it omits certain parameters that are in WAVEFORMATEXTENSIBLE but are not relevant to the task of managing codecs that are connected to an HD Audio controller.
 
@@ -79,22 +83,16 @@ This structure is similar to the <a href="..\ksmedia\ns-ksmedia-waveformatextens
 | **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
-</dt>
-<dt>
-<a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a>
-</dt>
-<dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_converter_format.md">HDAUDIO_CONVERTER_FORMAT</a>
-</dt>
-</dl>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
+
+<a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a>
+
  
 
  

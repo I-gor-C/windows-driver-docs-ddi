@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2ea6f764-b884-4764-a2ff-19d0170f9b31
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwOpenProcessTokenEx
+ms.keywords : ntifs/ZwOpenProcessTokenEx, ntifs/NtOpenProcessTokenEx, ZwOpenProcessTokenEx, ZwOpenProcessTokenEx routine [Kernel-Mode Driver Architecture], k111_ab983257-9c27-4f73-af7c-d903de3a33d3.xml, NtOpenProcessTokenEx, kernel.zwopenprocesstokenex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ZwOpenProcessTokenEx,NtOpenProcessTokenEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -71,30 +75,100 @@ Pointer to a caller-allocated variable that receives a handle to the newly opene
 ## Return Value
 
 <b>ZwOpenProcessTokenEx</b> returns STATUS_SUCCESS or an appropriate error status. Possible error status codes include the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl><i>ProcessHandle</i> did not have PROCESS_QUERY_INFORMATION access. 
+</dl>
+</td>
+<td width="60%">
+<i>ProcessHandle</i> did not have PROCESS_QUERY_INFORMATION access. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>A new token handle could not be allocated. 
+</dl>
+</td>
+<td width="60%">
+A new token handle could not be allocated. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl><i>ProcessHandle</i> was not a valid handle. 
+</dl>
+</td>
+<td width="60%">
+<i>ProcessHandle</i> was not a valid handle. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The specified <i>HandleAttributes</i> did not include OBJ_KERNEL_HANDLE. 
+</dl>
+</td>
+<td width="60%">
+The specified <i>HandleAttributes</i> did not include OBJ_KERNEL_HANDLE. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl><i>ProcessHandle</i> was not a process handle. 
+</dl>
+</td>
+<td width="60%">
+<i>ProcessHandle</i> was not a process handle. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_PRIVILEGE_NOT_HELD</b></dt>
-</dl>The caller does not have the privilege (SeSecurityPrivilege) necessary to create a token handle with the access specified in the <i>DesiredAccess</i> parameter. 
+</dl>
+</td>
+<td width="60%">
+The caller does not have the privilege (SeSecurityPrivilege) necessary to create a token handle with the access specified in the <i>DesiredAccess</i> parameter. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_QUOTA_EXCEEDED</b></dt>
-</dl>The process's memory quota is not sufficient to allocate the token handle. 
+</dl>
+</td>
+<td width="60%">
+The process's memory quota is not sufficient to allocate the token handle. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The token handle could not be created.
+</dl>
+</td>
+<td width="60%">
+The token handle could not be created. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,8 +179,7 @@ Any handle obtained by calling <b>ZwOpenProcessTokenEx</b> must eventually be re
 Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE attribute for the <i>HandleAttributes</i> parameter of <b>ZwOpenProcessTokenEx</b>. This restricts the use of the handle returned by <b>ZwOpenProcessTokenEx</b> to processes running in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running. 
 
 For more information about security and access control, see the documentation on these topics in the Windows SDK. 
-
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
+<div class="alert"><b>Note</b>  If the call to the <b>ZwOpenProcessTokenEx</b> function occurs in user mode, you should use the name "<b>NtOpenProcessTokenEx</b>" instead of "<b>ZwOpenProcessTokenEx</b>".</div><div> </div>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -122,26 +195,18 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-zwopenthreadtokenex.md">ZwOpenThreadTokenEx</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
  
 
  

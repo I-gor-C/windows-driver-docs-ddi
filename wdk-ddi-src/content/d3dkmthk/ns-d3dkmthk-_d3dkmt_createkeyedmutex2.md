@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6c4c07ff-5e37-4094-9dc3-57082dec8edf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2
+ms.keywords : display.d3dkmt_createkeyedmutex2, _D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_CREATEKEYEDMUTEX2
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_CREATEKEYEDMUTEX2
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 
 ## Members
 
-        
-            `Flags`
 
-            [in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.
-        
-            `hKeyedMutex`
+`Flags`
 
-            [out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object in the current process.
-        
-            `hSharedHandle`
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.
 
-            [out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode shared global handle to the keyed mutex object.
-        
-            `InitialValue`
+`hKeyedMutex`
 
-            [in] A 64-bit value that specifies the initial value to create the keyed mutex for.
-        
-            `pPrivateRuntimeData`
+[out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object in the current process.
 
-            [in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource is stored.
-        
-            `PrivateRuntimeDataSize`
+`hSharedHandle`
 
-            [in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
+[out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode shared global handle to the keyed mutex object.
+
+`InitialValue`
+
+[in] A 64-bit value that specifies the initial value to create the keyed mutex for.
+
+`pPrivateRuntimeData`
+
+[in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource is stored.
+
+`PrivateRuntimeDataSize`
+
+[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
 
 
 ## Requirements
@@ -85,16 +89,12 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
-</dt>
-</dl>
+
  
 
  

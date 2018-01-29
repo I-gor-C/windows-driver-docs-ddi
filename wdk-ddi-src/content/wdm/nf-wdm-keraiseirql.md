@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ee340d85-5a66-4773-b325-831257e9bfd8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRaiseIrql
+ms.keywords : wdm/KeRaiseIrql, KeRaiseIrql, kernel.keraiseirql, k105_66b09c47-8f95-41ee-8432-5784f306ad62.xml, KeRaiseIrql routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeRaiseIrql
-req.alt-loc : Hal.lib,Hal.dll
 req.ddi-compliance : IrqlKeRaiseLower, IrqlKeRaiseLower2, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hal.lib
 req.dll : 
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -52,11 +56,11 @@ VOID KeRaiseIrql(
 
 `a`
 
-
+TBD
 
 `b`
 
-
+TBD
 
 
 ## Return Value
@@ -85,14 +89,10 @@ A call to <b>KeLowerIrql</b> is valid if it specifies <i>NewIrql</i> &lt;= <i>Cu
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
+
  
 
  

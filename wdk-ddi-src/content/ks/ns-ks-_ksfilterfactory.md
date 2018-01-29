@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c40e25f8-e6e5-43bc-895d-a6b247d07470
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSFILTERFACTORY, *PKSFILTERFACTORY, KSFILTERFACTORY
+ms.keywords : KSFILTERFACTORY structure [Streaming Media Devices], _KSFILTERFACTORY, ks/PKSFILTERFACTORY, avstruct_def7ad6b-4cda-4677-abbc-3f8a458fbc87.xml, PKSFILTERFACTORY, stream.ksfilterfactory, ks/KSFILTERFACTORY, PKSFILTERFACTORY structure pointer [Streaming Media Devices], *PKSFILTERFACTORY, KSFILTERFACTORY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSFILTERFACTORY
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSFILTERFACTORY, KSFILTERFACTORY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSFILTERFACTORY, *PKSFILTERFACTORY
 ---
 
 # _KSFILTERFACTORY structure
@@ -49,8 +53,8 @@ typedef struct _KSFILTERFACTORY {
 ## Members
 
 
-    ## Remarks
-        A filter factory explicitly represents a device's ability to instantiate a given type of filter as described by a filter descriptor.
+## Remarks
+A filter factory explicitly represents a device's ability to instantiate a given type of filter as described by a filter descriptor.
 
 Drivers for hardware typically use this structure to manage a particular function of the hardware that is exposed as a type of filter. Software filters generally do not need to manage the device at this level.
 
@@ -68,19 +72,14 @@ Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+
+<a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
+
  
 
  

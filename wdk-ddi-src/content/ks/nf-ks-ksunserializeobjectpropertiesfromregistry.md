@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e08ddef7-5942-4943-9dbe-9658279892f0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsUnserializeObjectPropertiesFromRegistry
+ms.keywords : stream.ksunserializeobjectpropertiesfromregistry, KsUnserializeObjectPropertiesFromRegistry, ksfunc_09710ce5-9236-47cc-84b2-4ced36aa654b.xml, ks/KsUnserializeObjectPropertiesFromRegistry, KsUnserializeObjectPropertiesFromRegistry function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsUnserializeObjectPropertiesFromRegistry
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 

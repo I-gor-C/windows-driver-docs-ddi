@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f96e4305-ec07-4df8-8fdf-f840598dd938
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_DEVICE_QUALIFIER_DESCRIPTOR, USB_DEVICE_QUALIFIER_DESCRIPTOR, *PUSB_DEVICE_QUALIFIER_DESCRIPTOR
+ms.keywords : "*PUSB_DEVICE_QUALIFIER_DESCRIPTOR, _USB_DEVICE_QUALIFIER_DESCRIPTOR, PUSB_DEVICE_QUALIFIER_DESCRIPTOR structure pointer [Buses], buses.usb_device_qualifier_descriptor, usbspec/USB_DEVICE_QUALIFIER_DESCRIPTOR, usbstrct_af615085-b822-4342-b1dd-950a0ff61d99.xml, USB_DEVICE_QUALIFIER_DESCRIPTOR structure [Buses], PUSB_DEVICE_QUALIFIER_DESCRIPTOR, usbspec/PUSB_DEVICE_QUALIFIER_DESCRIPTOR, USB_DEVICE_QUALIFIER_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_DEVICE_QUALIFIER_DESCRIPTOR
-req.alt-loc : usbspec.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_DEVICE_QUALIFIER_DESCRIPTOR, *PUSB_DEVICE_QUALIFIER_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
@@ -55,45 +59,45 @@ typedef struct _USB_DEVICE_QUALIFIER_DESCRIPTOR {
 
 ## Members
 
-        
-            `bcdUSB`
 
-            Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
-        
-            `bDescriptorType`
+`bcdUSB`
 
-            Specifies the descriptor type. Must be set to <b>USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE</b>.
-        
-            `bDeviceClass`
+Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
 
-            Specifies the class code of the device as assigned by the USB specification group.
-        
-            `bDeviceProtocol`
+`bDescriptorType`
 
-            Specifies the protocol code of the device as assigned by the USB specification group.
-        
-            `bDeviceSubClass`
+Specifies the descriptor type. Must be set to <b>USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE</b>.
 
-            Specifies the subclass code of the device as assigned by the USB specification group.
-        
-            `bLength`
+`bDeviceClass`
 
-            Specifies the length, in bytes, of this descriptor.
-        
-            `bMaxPacketSize0`
+Specifies the class code of the device as assigned by the USB specification group.
 
-            Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.
-        
-            `bNumConfigurations`
+`bDeviceProtocol`
 
-            Specifies the total number of possible configurations for the device.
-        
-            `bReserved`
+Specifies the protocol code of the device as assigned by the USB specification group.
 
-            Reserved.
+`bDeviceSubClass`
 
-    ## Remarks
-        This structure is similar to <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>, but it contains only those members that can change when the device switches from full-speed operation to high-speed operation or vice versa. If the device is operating at full speed, querying for this descriptor will contain information about how the device would operate at high-speed. If, on the other hand, the device is operating at high-speed, this descriptor will contain information about how the device would operate at full-speed.
+Specifies the subclass code of the device as assigned by the USB specification group.
+
+`bLength`
+
+Specifies the length, in bytes, of this descriptor.
+
+`bMaxPacketSize0`
+
+Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.
+
+`bNumConfigurations`
+
+Specifies the total number of possible configurations for the device.
+
+`bReserved`
+
+Reserved.
+
+## Remarks
+This structure is similar to <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>, but it contains only those members that can change when the device switches from full-speed operation to high-speed operation or vice versa. If the device is operating at full speed, querying for this descriptor will contain information about how the device would operate at high-speed. If, on the other hand, the device is operating at high-speed, this descriptor will contain information about how the device would operate at full-speed.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,19 +107,14 @@ typedef struct _USB_DEVICE_QUALIFIER_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usb200.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
-</dt>
-<dt>
-<a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
+
  
 
  

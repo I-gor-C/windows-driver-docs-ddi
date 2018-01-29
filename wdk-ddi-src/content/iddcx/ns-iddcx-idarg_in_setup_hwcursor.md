@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1e2c959c-0ebd-4464-ad47-96f432cb5c6b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_SETUP_HWCURSOR,
+ms.keywords : IDARG_IN_SETUP_HWCURSOR, IDARG_IN_SETUP_HWCURSOR structure [Display Devices], display.idarg_in_setup_hwcursor, iddcx/IDARG_IN_SETUP_HWCURSOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDARG_IN_SETUP_HWCURSOR
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -47,14 +51,14 @@ typedef struct IDARG_IN_SETUP_HWCURSOR {
 
 ## Members
 
-        
-            `CursorInfo`
 
-            [in] Cursor information for this path.
-        
-            `hNewCursorDataAvailable`
+`CursorInfo`
 
-            [in] An event handle that will be triggered when new cursor data is available.
+[in] Cursor information for this path.
+
+`hNewCursorDataAvailable`
+
+[in] An event handle that will be triggered when new cursor data is available.
 
 
 ## Requirements

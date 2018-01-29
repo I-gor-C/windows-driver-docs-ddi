@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : bd9697ce-bd05-4169-9b0f-13877307c0d7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_ROOT_HUB_NAME, USB_ROOT_HUB_NAME, *PUSB_ROOT_HUB_NAME
+ms.keywords : USB_ROOT_HUB_NAME, usbstrct_a285af0b-6144-46a0-bfbf-640b3073047a.xml, buses.usb_root_hub_name, *PUSB_ROOT_HUB_NAME, usbioctl/USB_ROOT_HUB_NAME, _USB_ROOT_HUB_NAME, PUSB_ROOT_HUB_NAME structure pointer [Buses], USB_ROOT_HUB_NAME structure [Buses], usbioctl/PUSB_ROOT_HUB_NAME, PUSB_ROOT_HUB_NAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USB_ROOT_HUB_NAME
-req.alt-loc : usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : USB_ROOT_HUB_NAME, *PUSB_ROOT_HUB_NAME
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSB_ROOT_HUB_NAME, USB_ROOT_HUB_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _USB_ROOT_HUB_NAME {
 
 ## Members
 
-        
-            `ActualLength`
 
-            Size of the entire data structure in bytes.
-        
-            `RootHubName`
+`ActualLength`
 
-            Specifies the Unicode string containing the root hub's symbolic device name.
+Size of the entire data structure in bytes.
+
+`RootHubName`
+
+Specifies the Unicode string containing the root hub's symbolic device name.
 
 
 ## Requirements
@@ -66,16 +70,12 @@ typedef struct _USB_ROOT_HUB_NAME {
 | **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_get_hub_name.md">IOCTL_INTERNAL_USB_GET_HUB_NAME</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_get_hub_name.md">IOCTL_INTERNAL_USB_GET_HUB_NAME</a>
+
  
 
  

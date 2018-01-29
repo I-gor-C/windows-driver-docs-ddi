@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FAF30768-5DE4-4284-8CB5-2E518A2E37E7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA
+ms.keywords : PBDA_CAS_OPENMMIDATA structure pointer [Streaming Media Devices], *PBDA_CAS_OPENMMIDATA, stream.bda_cas_openmmidata, bdatypes/PBDA_CAS_OPENMMIDATA, bdatypes/BDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA structure [Streaming Media Devices], BDA_CAS_OPENMMIDATA, PBDA_CAS_OPENMMIDATA, _BDA_CAS_OPENMMIDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_CAS_OPENMMIDATA
-req.alt-loc : Bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA
 ---
 
@@ -50,26 +54,26 @@ typedef struct _BDA_CAS_OPENMMIDATA {
 
 ## Members
 
-        
-            `argbDialogData`
 
-            
-        
-            `ulDialogNumber`
+`argbDialogData`
 
-            
-        
-            `ulDialogRequest`
 
-            
-        
-            `usDialogDataLength`
 
-            
-        
-            `uuidDialogType`
+`ulDialogNumber`
 
-            
+
+
+`ulDialogRequest`
+
+
+
+`usDialogDataLength`
+
+
+
+`uuidDialogType`
+
+
 
 
 ## Requirements

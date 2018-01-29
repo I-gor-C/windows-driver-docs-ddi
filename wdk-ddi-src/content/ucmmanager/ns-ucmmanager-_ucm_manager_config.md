@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2B9539D7-6125-4912-9572-13FA7CA671D9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG
+ms.keywords : ucmmanager/UCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG structure [Buses], buses.ucm_manager_config, PUCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG, _UCM_MANAGER_CONFIG, ucmmanager/PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG, PUCM_MANAGER_CONFIG structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UCM_MANAGER_CONFIG
-req.alt-loc : Ucmmanager.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -48,6 +52,10 @@ typedef struct _UCM_MANAGER_CONFIG {
 ## Members
 
 
+`Size`
+
+Size of the <b>UCM_MANAGER_CONFIG</b> structure. Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -57,13 +65,10 @@ typedef struct _UCM_MANAGER_CONFIG {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>
-</dt>
-</dl>
+
  
 
  

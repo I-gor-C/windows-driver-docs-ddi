@@ -7,8 +7,8 @@ old-location : print\extdevicemode.htm
 old-project : print
 ms.assetid : dade9d25-7143-4566-adc1-0c97cb508c07
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : ExtDeviceMode
+ms.date : 1/18/2018
+ms.keywords : spoolfnc_56c49c94-99f4-43b9-90eb-189041a1dd3a.xml, winspool/ExtDeviceMode, ExtDeviceMode, ExtDeviceMode function [Print Devices], print.extdevicemode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExtDeviceMode
-req.alt-loc : WinSpool.drv
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Winspool.lib
 req.dll : WinSpool.drv
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BIDI_TYPE
 req.product : Windows 10 or later.
 ---
@@ -91,7 +95,6 @@ Not used. Pointer to a NULL-terminated string that contains the name of the init
 `fMode`
 
 Specifies the operations that the function performs. If this parameter is zero, the <b>ExtDeviceMode</b> function returns the number of bytes required by the printer driver's DEVMODE structure. Otherwise, this parameter can be set to one or more of the following flag values.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -136,7 +139,7 @@ If the <i>wMode</i> parameter is zero, the function returns the size, in bytes, 
 
 ## Remarks
 
-The <b>ExtDeviceMode</b> function calls the <b>DocumentProperties</b> function (described in the Windows SDK documentation) to display a property sheet that allows a user to select printer options such as paper size, paper orientation, and output quality. Printer drivers written for Windows 3.x and Windows 9x use this function. </p>
+The <b>ExtDeviceMode</b> function calls the <b>DocumentProperties</b> function (described in the Windows SDK documentation) to display a property sheet that allows a user to select printer options such as paper size, paper orientation, and output quality. Printer drivers written for Windows 3.x and Windows 9x use this function.
 
 ## Requirements
 | &nbsp; | &nbsp; |

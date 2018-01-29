@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 36caaea9-2354-4ed8-9649-5eb102def8d5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSQUALITY, KSQUALITY, *PKSQUALITY
+ms.keywords : KSQUALITY, ks/PKSQUALITY, KSQUALITY structure [Streaming Media Devices], PKSQUALITY structure pointer [Streaming Media Devices], ks/KSQUALITY, stream.ksquality, PKSQUALITY, ks-struct_a2b63e1c-e5b4-437d-a5ba-0746f8388eef.xml, *PKSQUALITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSQUALITY
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSQUALITY, *PKSQUALITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSQUALITY, KSQUALITY"
 ---
 
 # KSQUALITY structure
@@ -48,18 +52,18 @@ typedef struct {
 
 ## Members
 
-        
-            `Context`
 
-            Specifies a context parameter that was originally passed to the connection.
-        
-            `DeltaTime`
+`Context`
 
-            Indicates the delta in native units (as indicated by the Interface) from optimal time at which the frames are being delivered, where a positive number means too late, and a negative number means too early. Zero indicates a correct delta.
-        
-            `Proportion`
+Specifies a context parameter that was originally passed to the connection.
 
-            Indicates the percentage of frames currently being received that are actually being used. This is expressed in units of one-tenth of a percent, where 1000 is optimal.
+`DeltaTime`
+
+Indicates the delta in native units (as indicated by the Interface) from optimal time at which the frames are being delivered, where a positive number means too late, and a negative number means too early. Zero indicates a correct delta.
+
+`Proportion`
+
+Indicates the percentage of frames currently being received that are actually being used. This is expressed in units of one-tenth of a percent, where 1000 is optimal.
 
 
 ## Requirements

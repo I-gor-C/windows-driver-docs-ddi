@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E5B7FDB6-3351-489E-B0BB-8B8DD605FCF4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_CORELAYER_DEVICECALLBACKS_0022, D3D12DDI_CORELAYER_DEVICECALLBACKS_0022
+ms.keywords : display.d3d12ddi_corelayer_devicecallbacks_0022, D3D12DDI_CORELAYER_DEVICECALLBACKS_0022, D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 structure [Display Devices], d3d12umddi/D3D12DDI_CORELAYER_DEVICECALLBACKS_0022
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_CORELAYER_DEVICECALLBACKS_0022
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_CORELAYER_DEVICECALLBACKS_0022
 ---
 
@@ -59,62 +63,62 @@ typedef struct D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 {
 
 ## Members
 
-        
-            `pfnAllocateCb`
 
-            A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022.md">pfnAllocateCb</a> function.
-        
-            `pfnCreateContextCb`
+`pfnAllocateCb`
 
-            A pointer to the pfnCreateContextCb function.
-        
-            `pfnCreateContextVirtualCb`
+A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022.md">pfnAllocateCb</a> function.
 
-            A pointer to the pfnCreateContextVirtualCb function.
-        
-            `pfnCreatePagingQueueCb`
+`pfnCreateContextCb`
 
-            A pointer to the pfnCreatePagingQueueCb function.
-        
-            `pfnDeallocateCb`
+A pointer to the pfnCreateContextCb function.
 
-            A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022.md">pfnDeallocateCb</a> function.
-        
-            `pfnDestroyContextCb`
+`pfnCreateContextVirtualCb`
 
-            A pointer to the pfnDestroyContextCb function.
-        
-            `pfnDestroyPagingQueueCb`
+A pointer to the pfnCreateContextVirtualCb function.
 
-            A pointer to the pfnDestroyPagingQueueCb function.
-        
-            `pfnEvictCb`
+`pfnCreatePagingQueueCb`
 
-            A pointer to the pfnEvictCb function.
-        
-            `pfnMakeResidentCb`
+A pointer to the pfnCreatePagingQueueCb function.
 
-            A pointer to the pfnMakeResidentCb function.
-        
-            `pfnOfferAllocationsCb`
+`pfnDeallocateCb`
 
-            A pointer to the pfnOfferAllocationsCb function.
-        
-            `pfnReclaimAllocations2Cb`
+A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022.md">pfnDeallocateCb</a> function.
 
-            A pointer to the pfnReclaimAllocations2Cb function.
-        
-            `pfnSetCommandListDDITableCb`
+`pfnDestroyContextCb`
 
-            A pointer to the pfnSetCommandListErrorCb function.
-        
-            `pfnSetCommandListErrorCb`
+A pointer to the pfnDestroyContextCb function.
 
-            A pointer to the function.
-        
-            `pfnSetErrorCb`
+`pfnDestroyPagingQueueCb`
 
-            A pointer to the pfnSetErrorCb function.
+A pointer to the pfnDestroyPagingQueueCb function.
+
+`pfnEvictCb`
+
+A pointer to the pfnEvictCb function.
+
+`pfnMakeResidentCb`
+
+A pointer to the pfnMakeResidentCb function.
+
+`pfnOfferAllocationsCb`
+
+A pointer to the pfnOfferAllocationsCb function.
+
+`pfnReclaimAllocations2Cb`
+
+A pointer to the pfnReclaimAllocations2Cb function.
+
+`pfnSetCommandListDDITableCb`
+
+A pointer to the pfnSetCommandListErrorCb function.
+
+`pfnSetCommandListErrorCb`
+
+A pointer to the function.
+
+`pfnSetErrorCb`
+
+A pointer to the pfnSetErrorCb function.
 
 
 ## Requirements

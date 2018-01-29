@@ -7,8 +7,8 @@ old-location : netvista\riluicctoolkitprofile_2.htm
 old-project : netvista
 ms.assetid : 8d8a6c85-474c-4e86-99a9-ac113edbe7b3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILUICCTOOLKITPROFILE, netvista.riluicctoolkitprofile_2, RILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE structure [Network Drivers Starting with Windows Vista], *LPRILUICCTOOLKITPROFILE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCTOOLKITPROFILE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE"
 req.product : Windows 10 or later.
 ---
@@ -49,18 +53,18 @@ typedef struct _RILUICCTOOLKITPROFILE {
 
 ## Members
 
-        
-            `bProfile`
 
-            
-        
-            `cbSize`
+`bProfile`
 
-            
-        
-            `dwProfileSize`
 
-            
+
+`cbSize`
+
+
+
+`dwProfileSize`
+
+
 
 
 ## Requirements

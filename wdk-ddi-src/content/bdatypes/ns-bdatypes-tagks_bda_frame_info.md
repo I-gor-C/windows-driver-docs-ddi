@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : df261323-f372-49e7-990a-03c1c5cb743d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_BDA_FRAME_INFO, *PKS_BDA_FRAME_INFO, KS_BDA_FRAME_INFO
+ms.keywords : PKS_BDA_FRAME_INFO structure pointer [Streaming Media Devices], tagKS_BDA_FRAME_INFO, KS_BDA_FRAME_INFO structure [Streaming Media Devices], bdatypes/PKS_BDA_FRAME_INFO, KS_BDA_FRAME_INFO, *PKS_BDA_FRAME_INFO, bdatypes/KS_BDA_FRAME_INFO, bdaref_62fe9ca5-dca5-4287-83e8-59667d70d953.xml, PKS_BDA_FRAME_INFO, stream.ks_bda_frame_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_BDA_FRAME_INFO
-req.alt-loc : bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKS_BDA_FRAME_INFO, KS_BDA_FRAME_INFO"
 ---
 
@@ -51,30 +55,30 @@ typedef struct tagKS_BDA_FRAME_INFO {
 
 ## Members
 
-        
-            `dwFrameFlags`
 
-            Flags specific to BDA extensions.
-        
-            `ExtendedHeaderSize`
+`dwFrameFlags`
 
-            Size, in bytes, of the BDA extensions described in this extended header structure.
-        
-            `ulChannelNumber`
+Flags specific to BDA extensions.
 
-            Channel number of a television program.
-        
-            `ulEvent`
+`ExtendedHeaderSize`
 
-            Identifier of an event.
-        
-            `ulReason`
+Size, in bytes, of the BDA extensions described in this extended header structure.
 
-            Identifies the reason the packet was transferred.
-        
-            `ulSubchannelNumber`
+`ulChannelNumber`
 
-            Subchannel number of a television program.
+Channel number of a television program.
+
+`ulEvent`
+
+Identifier of an event.
+
+`ulReason`
+
+Identifies the reason the packet was transferred.
+
+`ulSubchannelNumber`
+
+Subchannel number of a television program.
 
 
 ## Requirements
@@ -85,13 +89,10 @@ typedef struct tagKS_BDA_FRAME_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | bdatypes.h (include Bdamedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-</dt>
-</dl>
+
  
 
  

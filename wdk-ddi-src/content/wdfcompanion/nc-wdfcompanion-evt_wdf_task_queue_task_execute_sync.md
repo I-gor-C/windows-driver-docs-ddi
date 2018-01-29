@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c45d1873-fb29-49ee-b99b-09861478ac89
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG
+ms.keywords : wdf.evt_wdf_task_queue_task_execute_sync, EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC callback function, EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC, EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC, EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC, wdfcompanion/EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 2.23
-req.alt-api : EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC
-req.alt-loc : wdfcompanion.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG"
 req.product : Windows 10 or later.
 ---

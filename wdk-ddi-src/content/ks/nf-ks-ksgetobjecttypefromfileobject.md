@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b963cf53-68ea-49b6-bbda-a93216fb10a5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetObjectTypeFromFileObject
+ms.keywords : ks/KsGetObjectTypeFromFileObject, KsGetObjectTypeFromFileObject function [Streaming Media Devices], avfunc_51a9a4d6-1481-45f9-918e-582907e8513c.xml, KsGetObjectTypeFromFileObject, stream.ksgetobjecttypefromfileobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetObjectTypeFromFileObject
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -72,20 +76,14 @@ A pointer to the <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structu
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksgetfilterfromfileobject.md">KsGetFilterFromFileObject</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ksgetpinfromfileobject.md">KsGetPinFromFileObject</a>
-</dt>
-<dt>
+
+<a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
+
 <a href="..\ks\nf-ks-kspingetconnectedpinfileobject.md">KsPinGetConnectedPinFileObject</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksgetpinfromfileobject.md">KsGetPinFromFileObject</a>
+
  
 
  

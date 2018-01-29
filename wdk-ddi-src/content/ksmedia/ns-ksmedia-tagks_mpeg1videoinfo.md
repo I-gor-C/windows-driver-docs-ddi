@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 301b954a-4e50-4a04-a575-17d7d54fa691
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_MPEG1VIDEOINFO, KS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO
+ms.keywords : KS_MPEG1VIDEOINFO, ksmedia/PKS_MPEG1VIDEOINFO, tagKS_MPEG1VIDEOINFO, stream.ks_mpeg1videoinfo, PKS_MPEG1VIDEOINFO, KS_MPEG1VIDEOINFO structure [Streaming Media Devices], PKS_MPEG1VIDEOINFO structure pointer [Streaming Media Devices], vidcapstruct_5c9e7f76-f279-49fb-9ad8-f23b7741d685.xml, *PKS_MPEG1VIDEOINFO, ksmedia/KS_MPEG1VIDEOINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KS_MPEG1VIDEOINFO
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO
 ---
 
@@ -49,22 +53,22 @@ typedef struct tagKS_MPEG1VIDEOINFO {
 
 ## Members
 
-        
-            `bSequenceHeader`
 
-            The length of the <b>bSequenceHeader</b> member, in bytes.
-        
-            `cbSequenceHeader`
+`bSequenceHeader`
 
-            The length of the <b>bSequenceHeader</b> member, in bytes.
-        
-            `dwStartTimeCode`
+The length of the <b>bSequenceHeader</b> member, in bytes.
 
-            A 25-bit "group-of-pictures" time code at the start of data.
-        
-            `hdr`
+`cbSequenceHeader`
 
-            Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure that describes the details of the video stream.
+The length of the <b>bSequenceHeader</b> member, in bytes.
+
+`dwStartTimeCode`
+
+A 25-bit "group-of-pictures" time code at the start of data.
+
+`hdr`
+
+Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure that describes the details of the video stream.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct tagKS_MPEG1VIDEOINFO {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : DE670712-2F11-4BB0-ADC7-B68C94EF0759
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _SCARD_IO_REQUEST, SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, *PSCARD_IO_REQUEST
+ms.keywords : winsmcrd/PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, nfpdrivers.scard_io_request_structure, _SCARD_IO_REQUEST, SCARD_IO_REQUEST structure [Near-Field Proximity Drivers], PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, SCARD_IO_REQUEST, PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST structure pointer [Near-Field Proximity Drivers], winsmcrd/SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, *PSCARD_IO_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SCARD_IO_REQUEST
-req.alt-loc : winsmcrd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, *PSCARD_IO_REQUEST
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPSCARD_IO_REQUEST, SCARD_IO_REQUEST, *PSCARD_IO_REQUEST"
 req.product : Windows 10 or later.
 ---
 
@@ -48,14 +52,14 @@ typedef struct _SCARD_IO_REQUEST {
 
 ## Members
 
-        
-            `cbPciLength`
 
-            Specifies the protocol control information length.
-        
-            `dwProtocol`
+`cbPciLength`
 
-            Specifies the protocol ID.
+Specifies the protocol control information length.
+
+`dwProtocol`
+
+Specifies the protocol ID.
 
 
 ## Requirements
@@ -66,12 +70,12 @@ typedef struct _SCARD_IO_REQUEST {
 | **Minimum UMDF version** |  |
 | **Header** | winsmcrd.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

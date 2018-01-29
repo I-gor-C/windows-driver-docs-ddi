@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6CF06E9A-D6A1-42A7-9C34-44BC52713621
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tag_video_geterrortext_parms, *LPVIDEO_GETERRORTEXT_PARMS, VIDEO_GETERRORTEXT_PARMS
+ms.keywords : msviddrv/LPVIDEO_GETERRORTEXT_PARMS, *LPVIDEO_GETERRORTEXT_PARMS, VIDEO_GETERRORTEXT_PARMS, LPVIDEO_GETERRORTEXT_PARMS structure pointer [Streaming Media Devices], LPVIDEO_GETERRORTEXT_PARMS, tag_video_geterrortext_parms, stream.video_geterrortext_parms, VIDEO_GETERRORTEXT_PARMS structure [Streaming Media Devices], msviddrv/VIDEO_GETERRORTEXT_PARMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_GETERRORTEXT_PARMS
-req.alt-loc : Msviddrv.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : "*LPVIDEO_GETERRORTEXT_PARMS, VIDEO_GETERRORTEXT_PARMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_GETERRORTEXT_PARMS, *LPVIDEO_GETERRORTEXT_PARMS
 ---
 
 # tag_video_geterrortext_parms structure
@@ -52,14 +56,14 @@ typedef struct tag_video_geterrortext_parms {
 
 ## Members
 
-        
-            `dwError`
 
-            Specifies the error number to identify.
-        
-            `dwLength`
+`dwError`
 
-            Specifies the size of the text buffer in characters.
+Specifies the error number to identify.
+
+`dwLength`
+
+Specifies the size of the text buffer in characters.
 
 
 ## Requirements

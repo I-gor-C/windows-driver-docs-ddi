@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 63d14667-7409-40c8-af03-e4ffedd73e7e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_GETOVERLAYCOLORCONTROLS, D3DDDIARG_GETOVERLAYCOLORCONTROLS
+ms.keywords : D3DDDIARG_GETOVERLAYCOLORCONTROLS, _D3DDDIARG_GETOVERLAYCOLORCONTROLS, UMDisplayDriver_param_Structs_eedf1607-a208-42ba-8d05-6151e489ee8f.xml, display.d3dddiarg_getoverlaycolorcontrols, d3dumddi/D3DDDIARG_GETOVERLAYCOLORCONTROLS, D3DDDIARG_GETOVERLAYCOLORCONTROLS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_GETOVERLAYCOLORCONTROLS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_GETOVERLAYCOLORCONTROLS
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DDDIARG_GETOVERLAYCOLORCONTROLS {
 
 ## Members
 
-        
-            `ColorControls`
 
-            [out] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a> structure that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getoverlaycolorcontrols.md">GetOverlayColorControls</a> populates with color-control settings.
-        
-            `hOverlay`
+`ColorControls`
 
-            [in] A handle to the overlay that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getoverlaycolorcontrols.md">GetOverlayColorControls</a> retrieves color-control settings for.
-        
-            `hResource`
+[out] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a> structure that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getoverlaycolorcontrols.md">GetOverlayColorControls</a> populates with color-control settings.
 
-            [in] A handle to the resource that is associated with the overlay that <b>hOverlay</b> specifies.
+`hOverlay`
+
+[in] A handle to the overlay that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getoverlaycolorcontrols.md">GetOverlayColorControls</a> retrieves color-control settings for.
+
+`hResource`
+
+[in] A handle to the resource that is associated with the overlay that <b>hOverlay</b> specifies.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _D3DDDIARG_GETOVERLAYCOLORCONTROLS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getoverlaycolorcontrols.md">GetOverlayColorControls</a>
-</dt>
-</dl>
+
  
 
  

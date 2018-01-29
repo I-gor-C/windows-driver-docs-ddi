@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ef58c005-e5e5-409d-9010-59635fd4da02
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
+ms.keywords : storage.phw_adapter_control, (*PHW_ADAPTER_CONTROL) callback function [Storage Devices], (*PHW_ADAPTER_CONTROL), srb/(*PHW_ADAPTER_CONTROL), ide_minikr_fb5a2e9f-b755-417e-b152-ef680c85c16a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : (*PHW_ADAPTER_CONTROL)
-req.alt-loc : srb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product : Windows 10 or later.
 ---
@@ -93,14 +97,10 @@ For more information about the adapter control routine that is used with the Sto
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>
-</dt>
-<dt>
 <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6CD02F5B-0E34-46F5-8AEA-3B30293E1875
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_INTERRUPT_EXTENDED_POLICY_INIT
+ms.keywords : WDF_INTERRUPT_EXTENDED_POLICY_INIT, wdf.wdf_interrupt_extended_policy_init_umdf, wudfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY_INIT, umdf.wdf_interrupt_extended_policy_init, WDF_INTERRUPT_EXTENDED_POLICY_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.11
-req.alt-api : WDF_INTERRUPT_EXTENDED_POLICY_INIT
-req.alt-loc : Wudfinterrupt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -54,7 +58,7 @@ VOID WDF_INTERRUPT_EXTENDED_POLICY_INIT(
 
 `ExtendedPolicy`
 
-
+TBD
 
 
 ## Return Value
@@ -64,8 +68,6 @@ None
 ## Remarks
 
 The <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a> function zeros the specified <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure and sets the structure's <b>Size</b> member. It also sets the structure's <b>Policy</b> member to <b>WdfIrqPolicyMachineDefault</b> and sets the structure's <b>Priority</b> member to <b>WdfIrqPriorityUndefined</b>.
-
-For a code example that uses <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a>, see <a href="https://msdn.microsoft.com/6637E939-010E-4462-92CE-50C4DB867694">IWDFInterrupt::SetExtendedPolicy</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,11 +83,8 @@ For a code example that uses <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_inte
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a>
-</dt>
-</dl>
+
  
 
  

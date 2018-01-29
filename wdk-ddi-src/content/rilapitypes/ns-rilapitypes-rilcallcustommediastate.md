@@ -7,8 +7,8 @@ old-location : netvista\rilcallcustommediastate_2.htm
 old-project : netvista
 ms.assetid : 3c385208-992d-4a74-8382-4312f468300f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLCUSTOMMEDIASTATE, *LPRILCALLCUSTOMMEDIASTATE, RILCALLCUSTOMMEDIASTATE
+ms.date : 1/18/2018
+ms.keywords : netvista.rilcallcustommediastate_2, rilapitypes/RILCALLCUSTOMMEDIASTATE, RILCALLCUSTOMMEDIASTATE structure [Network Drivers Starting with Windows Vista], *LPRILCALLCUSTOMMEDIASTATE, RILCALLCUSTOMMEDIASTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLCUSTOMMEDIASTATE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILCALLCUSTOMMEDIASTATE, RILCALLCUSTOMMEDIASTATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILCALLCUSTOMMEDIASTATE, *LPRILCALLCUSTOMMEDIASTATE
 req.product : Windows 10 or later.
 ---
 
@@ -47,10 +51,10 @@ typedef struct _RILCALLCUSTOMMEDIASTATE {
 
 ## Members
 
-        
-            `dwCustomStateSpecific`
 
-            
+`dwCustomStateSpecific`
+
+
 
 
 ## Requirements

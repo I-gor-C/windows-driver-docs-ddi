@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4eeb543b-0c23-4119-8e42-ff086b4b7682
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _ADDRESS_RANGE, ADDRESS_RANGE, *PADDRESS_RANGE
+ms.keywords : _ADDRESS_RANGE, 1394stct_e03538df-3b91-483d-99da-95645f017bef.xml, IEEE.address_range, *PADDRESS_RANGE, PADDRESS_RANGE, 1394/PADDRESS_RANGE, ADDRESS_RANGE structure [Buses], PADDRESS_RANGE structure pointer [Buses], ADDRESS_RANGE, 1394/ADDRESS_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ADDRESS_RANGE
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ADDRESS_RANGE, *PADDRESS_RANGE
 ---
 
@@ -48,18 +52,18 @@ typedef struct _ADDRESS_RANGE {
 
 ## Members
 
-        
-            `AR_Length`
 
-            Specifies the length, in bytes, of a 1394 address buffer.
-        
-            `AR_Off_High`
+`AR_Length`
 
-            Specifies the high order bits of the 1394 address within the buffer.
-        
-            `AR_Off_Low`
+Specifies the length, in bytes, of a 1394 address buffer.
 
-            Specifies the low order bits of the 1394 address within the buffer.
+`AR_Off_High`
+
+Specifies the high order bits of the 1394 address within the buffer.
+
+`AR_Off_Low`
+
+Specifies the low order bits of the 1394 address within the buffer.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct _ADDRESS_RANGE {
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537640">REQUEST_FREE_ADDRESS_RANGE</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+
  
 
  

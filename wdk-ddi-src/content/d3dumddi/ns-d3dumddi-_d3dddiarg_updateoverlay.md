@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e49f48fd-f2e8-4ccc-813f-f624e06ab365
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_UPDATEOVERLAY, D3DDDIARG_UPDATEOVERLAY
+ms.keywords : _D3DDDIARG_UPDATEOVERLAY, d3dumddi/D3DDDIARG_UPDATEOVERLAY, D3DDDIARG_UPDATEOVERLAY, UMDisplayDriver_param_Structs_6c415566-a5f5-4efc-820b-7eb466b59149.xml, display.d3dddiarg_updateoverlay, D3DDDIARG_UPDATEOVERLAY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDIARG_UPDATEOVERLAY
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDIARG_UPDATEOVERLAY
 ---
 
@@ -47,14 +51,14 @@ typedef struct _D3DDDIARG_UPDATEOVERLAY {
 
 ## Members
 
-        
-            `hOverlay`
 
-            [in] A handle to the overlay to modify.
-        
-            `OverlayInfo`
+`hOverlay`
 
-            [in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfo.md">D3DDDI_OVERLAYINFO</a> structure that describes the modification for the overlay.
+[in] A handle to the overlay to modify.
+
+`OverlayInfo`
+
+[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfo.md">D3DDDI_OVERLAYINFO</a> structure that describes the modification for the overlay.
 
 
 ## Requirements
@@ -65,16 +69,12 @@ typedef struct _D3DDDIARG_UPDATEOVERLAY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updateoverlay.md">UpdateOverlay</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfo.md">D3DDDI_OVERLAYINFO</a>
-</dt>
-</dl>
+
  
 
  

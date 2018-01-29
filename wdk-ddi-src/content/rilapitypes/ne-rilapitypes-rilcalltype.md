@@ -7,8 +7,8 @@ old-location : netvista\rilcalltype_2.htm
 old-project : netvista
 ms.assetid : 16688917-77d4-4ca1-a4e0-357da16b55c0
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLTYPE, RILCALLTYPE
+ms.date : 1/18/2018
+ms.keywords : netvista.rilcalltype_2, rilapitypes/RIL_CALLTYPE_VT, RIL_CALLTYPE_PTT, rilapitypes/RIL_CALLTYPE_SUPSVC, rilapitypes/RIL_CALLTYPE_DATA, rilapitypes/RIL_CALLTYPE_USSD, RILCALLTYPE, RIL_CALLTYPE_DATA, RIL_CALLTYPE_VT, RIL_CALLTYPE_SUPSVC, rilapitypes/RIL_CALLTYPE_VOICE, RIL_CALLTYPE_VOICE, rilapitypes/RIL_CALLTYPE_IMS, RIL_CALLTYPE_IMS, rilapitypes/RIL_CALLTYPE_PTT, RILCALLTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLTYPE_USSD, RIL_CALLTYPE_MAX, RIL_CALLTYPE_FAX, rilapitypes/RILCALLTYPE, rilapitypes/RIL_CALLTYPE_MAX, rilapitypes/RIL_CALLTYPE_FAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLTYPE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILCALLTYPE
 req.product : Windows 10 or later.
 ---
@@ -84,6 +88,11 @@ typedef enum _RILCALLTYPE {
 
 <tr>
 <td>RIL_CALLTYPE_SUPSVC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_CALLTYPE_UNKNOWN</td>
 <td></td>
 </tr>
 

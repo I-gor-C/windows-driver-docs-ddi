@@ -7,8 +7,8 @@ old-location : netvista\riluicccommand.htm
 old-project : netvista
 ms.assetid : 1c2ded31-9d2d-46e4-a23f-a48528fd448f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCCOMMAND, RILUICCCOMMAND
+ms.date : 1/18/2018
+ms.keywords : RIL_UICCCMD_UPDATERECORD, RIL_UICCCMD_READRECORD, RILUICCCOMMAND enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILUICCCOMMAND, ntddrilapitypes/RIL_UICCCMD_MAX, RIL_UICCCMD_MAX, RIL_UICCCMD_UPDATEBINARY, ntddrilapitypes/RIL_UICCCMD_UPDATERECORD, ntddrilapitypes/RIL_UICCCMD_UPDATEBINARY, RILUICCCOMMAND, ntddrilapitypes/RIL_UICCCMD_READRECORD, netvista.riluicccommand
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCCOMMAND
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUICCCOMMAND
 ---
 
@@ -53,6 +57,11 @@ typedef enum _RILUICCCOMMAND {
 
 <tr>
 <td>RIL_UICCCMD_MAX</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_UICCCMD_READBINARY</td>
 <td></td>
 </tr>
 

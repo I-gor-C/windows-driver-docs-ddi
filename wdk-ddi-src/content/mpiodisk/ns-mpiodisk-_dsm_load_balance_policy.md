@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4338e496-99e8-47d2-ba97-ce661c9cb025
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DSM_Load_Balance_Policy, DSM_Load_Balance_Policy, *PDSM_Load_Balance_Policy
+ms.keywords : _DSM_Load_Balance_Policy, structs-scsibus_f6e03429-a591-41f0-9890-e513479f8896.xml, mpiodisk/PDSM_Load_Balance_Policy, storage.dsm_load_balance_policy, DSM_Load_Balance_Policy, PDSM_Load_Balance_Policy structure pointer [Storage Devices], PDSM_Load_Balance_Policy, DSM_Load_Balance_Policy structure [Storage Devices], mpiodisk/DSM_Load_Balance_Policy, *PDSM_Load_Balance_Policy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DSM_Load_Balance_Policy
-req.alt-loc : mpiodisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DSM_Load_Balance_Policy, *PDSM_Load_Balance_Policy
 ---
 
@@ -50,26 +54,26 @@ typedef struct _DSM_Load_Balance_Policy {
 
 ## Members
 
-        
-            `DSM_Paths`
 
-            An array of MPIO_DSM_Path structures that represent path attributes for each of the LUN's instances.
-        
-            `DSMPathCount`
+`DSM_Paths`
 
-            An unsigned 32-bitfield that represents the number of paths that expose the LUN's instances.
-        
-            `LoadBalancePolicy`
+An array of MPIO_DSM_Path structures that represent path attributes for each of the LUN's instances.
 
-            An unsigned 32-bitfield that represents the load balance policy type that is currently being applied to the LUN if the LUN is queried, or the new policy to apply to the LUN if the LUN is being set.
-        
-            `Reserved`
+`DSMPathCount`
 
-            Should be zero.
-        
-            `Version`
+An unsigned 32-bitfield that represents the number of paths that expose the LUN's instances.
 
-            The version of WMI class supported. Set to 1.
+`LoadBalancePolicy`
+
+An unsigned 32-bitfield that represents the load balance policy type that is currently being applied to the LUN if the LUN is queried, or the new policy to apply to the LUN if the LUN is being set.
+
+`Reserved`
+
+Should be zero.
+
+`Version`
+
+The version of WMI class supported. Set to 1.
 
 
 ## Requirements

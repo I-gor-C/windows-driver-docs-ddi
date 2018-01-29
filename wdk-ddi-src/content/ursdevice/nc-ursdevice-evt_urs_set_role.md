@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 287B674F-9692-47FA-AB92-F101270F7FC4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UPSWaitForStateChange
+ms.keywords : buses.evt_urs_set_role, EvtUrsSetRole callback function [Buses], EvtUrsSetRole, EVT_URS_SET_ROLE, EVT_URS_SET_ROLE, ursdevice/EvtUrsSetRole, PFN_URS_SET_ROLE callback function pointer [Buses], PFN_URS_SET_ROLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : PFN_URS_SET_ROLE
-req.alt-loc : ursdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UMDETW_ALLOCATION_USAGE
 req.product : Windows 10 or later.
 ---
@@ -84,11 +88,8 @@ To register the client driver's implementation of the event callback the driver 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
-</dt>
-</dl>
+
  
 
  

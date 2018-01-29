@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 3B84B227-7155-4FA2-A224-1317D103F5C3
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS
+ms.keywords : nfccx/NFCCX_DRIVER_GLOBALS, nfccx/PNFCCX_DRIVER_GLOBALS, _NFCCX_DRIVER_GLOBALS, PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS structure [Near-Field Proximity Drivers], PNFCCX_DRIVER_GLOBALS structure pointer [Near-Field Proximity Drivers], nfpdrivers.nfccx_driver_globals, NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NFCCX_DRIVER_GLOBALS
-req.alt-loc : nfccx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS"
 ---
 
@@ -46,10 +50,10 @@ typedef struct _NFCCX_DRIVER_GLOBALS {
 
 ## Members
 
-        
-            `Reserved`
 
-            
+`Reserved`
+
+
 
 
 ## Requirements
@@ -60,12 +64,12 @@ typedef struct _NFCCX_DRIVER_GLOBALS {
 | **Minimum UMDF version** |  |
 | **Header** | nfccx.h (include Ncidef.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

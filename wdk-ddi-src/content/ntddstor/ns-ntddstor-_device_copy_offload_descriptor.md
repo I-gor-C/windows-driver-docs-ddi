@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 192684D1-3D01-4EAA-989F-2E21E7187B3B
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DEVICE_COPY_OFFLOAD_DESCRIPTOR, *PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR
+ms.keywords : ntddstor/DEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR structure [Storage Devices], ntddstor/PDEVICE_COPY_OFFLOAD_DESCRIPTOR, storage.device_copy_offload_descriptor, *PDEVICE_COPY_OFFLOAD_DESCRIPTOR, PDEVICE_COPY_OFFLOAD_DESCRIPTOR structure pointer [Storage Devices], PDEVICE_COPY_OFFLOAD_DESCRIPTOR, _DEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DEVICE_COPY_OFFLOAD_DESCRIPTOR
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DEVICE_COPY_OFFLOAD_DESCRIPTOR, *PDEVICE_COPY_OFFLOAD_DESCRIPTOR
 ---
 
 # _DEVICE_COPY_OFFLOAD_DESCRIPTOR structure
@@ -57,52 +61,52 @@ typedef struct _DEVICE_COPY_OFFLOAD_DESCRIPTOR {
 
 ## Members
 
-        
-            `DefaultTokenLifetime`
 
-            The default lifetime of the token, in seconds.
-        
-            `MaximumDataDescriptors`
+`DefaultTokenLifetime`
 
-            The maximum number of data descriptors.
-        
-            `MaximumTokenLifetime`
+The default lifetime of the token, in seconds.
 
-            The maximum lifetime of the token, in seconds.
-        
-            `MaximumTransferLengthPerDescriptor`
+`MaximumDataDescriptors`
 
-            The maximum transfer length, in blocks, per descriptor.
-        
-            `MaximumTransferSize`
+The maximum number of data descriptors.
 
-            The maximum transfer size, in bytes.
-        
-            `OptimalTransferCount`
+`MaximumTokenLifetime`
 
-            The optimal transfer size, in bytes.
-        
-            `OptimalTransferLengthGranularity`
+The maximum lifetime of the token, in seconds.
 
-            The granularity of the optimal transfer length, in blocks. Transfer lengths that are not an even multiple 
+`MaximumTransferLengthPerDescriptor`
+
+The maximum transfer length, in blocks, per descriptor.
+
+`MaximumTransferSize`
+
+The maximum transfer size, in bytes.
+
+`OptimalTransferCount`
+
+The optimal transfer size, in bytes.
+
+`OptimalTransferLengthGranularity`
+
+The granularity of the optimal transfer length, in blocks. Transfer lengths that are not an even multiple 
       of this length may be delayed.
-        
-            `OptimalTransferLengthPerDescriptor`
 
-            The optimal transfer length, in blocks, per descriptor.
-        
-            `Reserved`
+`OptimalTransferLengthPerDescriptor`
 
-            Reserved for future use.
-        
-            `Size`
+The optimal transfer length, in blocks, per descriptor.
 
-            Specifies the total size of the data returned, in bytes. This may include data that follows this 
+`Reserved`
+
+Reserved for future use.
+
+`Size`
+
+Specifies the total size of the data returned, in bytes. This may include data that follows this 
       structure.
-        
-            `Version`
 
-            Contains the size of this structure, in bytes. The value of this member will change as members are added to 
+`Version`
+
+Contains the size of this structure, in bytes. The value of this member will change as members are added to 
       the structure.
 
 
@@ -114,13 +118,10 @@ typedef struct _DEVICE_COPY_OFFLOAD_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-</dt>
-</dl>
+
  
 
  

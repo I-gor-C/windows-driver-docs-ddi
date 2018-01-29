@@ -7,8 +7,8 @@ old-location : debugger\getdebuggerdata.htm
 old-project : debugger
 ms.assetid : a07afa2e-1f7d-4685-9ede-8b7805dd6583
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : GetDebuggerData
+ms.date : 1/19/2018
+ms.keywords : GetDebuggerData function [Windows Debugging], WdbgExts_Ref_a9b54b49-d8ac-4bee-a837-3986a250403a.xml, GetDebuggerData, debugger.getdebuggerdata, wdbgexts/GetDebuggerData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetDebuggerData
-req.alt-loc : wdbgexts.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wdbgexts.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXT_TDOP
 req.product : Windows 10 or later.
 ---
@@ -53,15 +57,15 @@ ULONG GetDebuggerData(
 
 `TAG`
 
-
+TBD
 
 `BUF`
 
-
+TBD
 
 `SIZE`
 
-
+TBD
 
 
 ## Return Value

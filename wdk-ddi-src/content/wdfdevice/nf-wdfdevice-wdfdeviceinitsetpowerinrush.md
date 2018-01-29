@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 91b29a5b-8bc0-44c0-8c48-2d023da12dcb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetPowerInrush
+ms.keywords : DFDeviceObjectGeneralRef_07e58947-78a3-4864-924c-8bd11dfd8af5.xml, kmdf.wdfdeviceinitsetpowerinrush, WdfDeviceInitSetPowerInrush, wdfdevice/WdfDeviceInitSetPowerInrush, PFN_WDFDEVICEINITSETPOWERINRUSH, WdfDeviceInitSetPowerInrush method, wdf.wdfdeviceinitsetpowerinrush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfDeviceInitSetPowerInrush
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_STATE_NOTIFICATION_TYPE
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ Your driver must call <b>WdfDeviceInitSetPowerInrush</b> before it calls <a href
 
 Calling <b>WdfDeviceInitSetPowerInrush</b> from a filter driver has no effect. For filter drivers, the framework uses the setting that the next-lower driver in the driver stack specifies.
 
-The following code example informs the power manager that a device requires an inrush of current when it starts.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -86,14 +88,10 @@ The following code example informs the power manager that a device requires an i
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-</dt>
-<dt>
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-</dt>
-</dl>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
  
 
  

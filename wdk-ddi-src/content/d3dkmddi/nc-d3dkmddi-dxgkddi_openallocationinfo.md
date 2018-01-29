@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 551154d7-950d-40e5-810b-8d803c1731ca
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgkddiopenallocation, DxgkDdiOpenAllocation callback function [Display Devices], DxgkDdiOpenAllocation, DXGKDDI_OPENALLOCATIONINFO, DXGKDDI_OPENALLOCATIONINFO, d3dkmddi/DxgkDdiOpenAllocation, DmFunctions_e27ad0cd-ae79-4207-abb0-68f048452101.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkDdiOpenAllocation
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -64,18 +68,56 @@ NTSTATUS DxgkddiOpenallocationinfo(
 ## Return Value
 
 <i>DxgkDdiOpenAllocation</i> returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><i>DxgkDdiOpenAllocation</i> successfully bound allocations to the graphics context device that the <i>hDevice</i> parameter specified.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiOpenAllocation</i> successfully bound allocations to the graphics context device that the <i>hDevice</i> parameter specified.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>Parameters that were passed to <i>DxgkDdiOpenAllocation</i> contained errors that prevented it from completing.
+</dl>
+</td>
+<td width="60%">
+Parameters that were passed to <i>DxgkDdiOpenAllocation</i> contained errors that prevented it from completing.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
-</dl><i>DxgkDdiOpenAllocation</i> could not allocate memory that was required for it to complete.
+</dl>
+</td>
+<td width="60%">
+<i>DxgkDdiOpenAllocation</i> could not allocate memory that was required for it to complete.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_DRIVER_MISMATCH</b></dt>
-</dl>The display miniport driver is not compatible with the user-mode display driver that initiated the call to <i>DxgkDdiOpenAllocation</i> (that is, supplied private data to the display miniport driver).
+</dl>
+</td>
+<td width="60%">
+The display miniport driver is not compatible with the user-mode display driver that initiated the call to <i>DxgkDdiOpenAllocation</i> (that is, supplied private data to the display miniport driver). 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,23 +145,16 @@ The driver can modify the allocation private driver data that is passed in the <
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
-</dt>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createdevice.md">DXGKARG_CREATEDEVICE</a>
-</dt>
-<dt>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_openallocation.md">DXGKARG_OPENALLOCATION</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 11CDA6DA-6B26-41BC-8F0B-2F18FC03B3C2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UfxFdoInit
+ms.keywords : UfxFdoInit method [Buses], buses.ufxfdoinit, UfxFdoInit, ufxclient/UfxFdoInit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UfxFdoInit
-req.alt-loc : ufxclient.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -74,7 +78,60 @@ The client driver receives a pointer to a framework-allocated <a href="https://m
 
 By default, for WDF drivers, the device's function driver is the power policy owner.
 
-The following code snippet shows how to call <b>UfxFdoInit</b>.</p>
+The following code snippet shows how to call <b>UfxFdoInit</b>.
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS
+UfxClientDeviceCreate(
+    _In_ WDFDRIVER Driver,
+    _In_ PWDFDEVICE_INIT DeviceInit
+    )
+/*++
+
+Routine Description:
+
+    Worker routine called to create a device and its software resources.
+
+Arguments:
+
+    Driver - WDF driver object
+
+    DeviceInit - Pointer to an opaque init structure. Memory for this
+                 structure will be freed by the framework when WdfDeviceCreate
+                 succeeds. So don't access the structure after that point.
+
+Return Value:
+
+    Appropriate NTSTATUS value
+
+--*/
+{
+    WDF_OBJECT_ATTRIBUTES DeviceAttributes;
+    WDFDEVICE WdfDevice;
+
+    PAGED_CODE();
+
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;DeviceAttributes, CONTROLLER_CONTEXT);
+
+    //
+    // Do UFX-specific initialization
+    //
+    Status = UfxFdoInit(Driver, DeviceInit, &amp;DeviceAttributes);
+
+    //
+    // Proceed to WdfDeviceCreate
+    //
+    
+    ...
+
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

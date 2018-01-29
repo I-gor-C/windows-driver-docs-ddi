@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 06d6b4db-293d-409e-a725-bb86bc6b3d11
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_DeinterlaceTech, DXVA_DeinterlaceTech
+ms.keywords : DXVA_DeinterlaceTech_EdgeFiltering, dxva/DXVA_DeinterlaceTech, dxvaref_ce829a5b-1e09-43e6-b90c-f7501476f280.xml, dxva/DXVA_DeinterlaceTech_MotionVectorSteered, DXVA_DeinterlaceTech_BOBVerticalStretch4Tap, DXVA_DeinterlaceTech_FieldAdaptive, DXVA_DeinterlaceTech_Unknown, _DXVA_DeinterlaceTech, dxva/DXVA_DeinterlaceTech_PixelAdaptive, DXVA_DeinterlaceTech, dxva/DXVA_DeinterlaceTech_BOBLineReplicate, DXVA_DeinterlaceTech enumeration [Display Devices], dxva/DXVA_DeinterlaceTech_BOBVerticalStretch, dxva/DXVA_DeinterlaceTech_MedianFiltering, DXVA_DeinterlaceTech_MotionVectorSteered, DXVA_DeinterlaceTech_MedianFiltering, dxva/DXVA_DeinterlaceTech_Unknown, DXVA_DeinterlaceTech_BOBLineReplicate, DXVA_DeinterlaceTech_BOBVerticalStretch, display.dxva_deinterlacetech, dxva/DXVA_DeinterlaceTech_BOBVerticalStretch4Tap, dxva/DXVA_DeinterlaceTech_FieldAdaptive, dxva/DXVA_DeinterlaceTech_EdgeFiltering, DXVA_DeinterlaceTech_PixelAdaptive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_DeinterlaceTech
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_DeinterlaceTech
 ---
 
@@ -113,11 +117,8 @@ typedef enum _DXVA_DeinterlaceTech {
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09146e6b-3ac0-422a-addb-831394a15c08
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_FLIPOVERLAYFLAGS, D3DDDI_FLIPOVERLAYFLAGS
+ms.keywords : D3DDDI_FLIPOVERLAYFLAGS structure [Display Devices], display.d3dddi_flipoverlayflags, D3D_other_Structs_a62b399d-d553-4325-9f5a-ceb08287d4f4.xml, _D3DDDI_FLIPOVERLAYFLAGS, D3DDDI_FLIPOVERLAYFLAGS, d3dumddi/D3DDDI_FLIPOVERLAYFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_FLIPOVERLAYFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_FLIPOVERLAYFLAGS
 ---
 
@@ -63,13 +67,10 @@ typedef struct _D3DDDI_FLIPOVERLAYFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_flipoverlay.md">D3DDDIARG_FLIPOVERLAY</a>
-</dt>
-</dl>
+
  
 
  

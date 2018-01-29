@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 79e56363-1098-42bb-8e6a-c4b4c76e7e7c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlInitializeExtraCreateParameterList
+ms.keywords : ifsk.fsrtlinitializeextracreateparameterlist, ntifs/FsRtlInitializeExtraCreateParameterList, FsRtlInitializeExtraCreateParameterList routine [Installable File System Drivers], FsRtlInitializeExtraCreateParameterList, fsrtlref_785d3f11-f568-491e-9cdb-abba70ae3eeb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The FsRtlInitializeExtraCreateParameterList routine 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlInitializeExtraCreateParameterList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -72,11 +76,8 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff54
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
-</dt>
-</dl>
+
  
 
  

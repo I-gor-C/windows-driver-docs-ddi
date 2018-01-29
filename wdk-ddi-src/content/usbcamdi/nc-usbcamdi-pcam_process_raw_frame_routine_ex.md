@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 07b0d1ea-c099-474e-8dc8-cddec44836e2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : stream.camprocessrawvideoframeex, CamProcessRawVideoFrameEx, CamProcessRawVideoFrameEx routine [Streaming Media Devices], CamProcessRawVideoFrameEx, PCAM_PROCESS_RAW_FRAME_ROUTINE_EX, PCAM_PROCESS_RAW_FRAME_ROUTINE_EX, usbcamdi/CamProcessRawVideoFrameEx, usbcmdpr_7ca6e89a-089c-4cf0-83e3-6324357a8566.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CamProcessRawVideoFrameEx
-req.alt-loc : usbcamdi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product : Windows 10 or later.
 ---
@@ -125,7 +129,7 @@ USBCAMD clears the stream header options flag before passing the raw frame to th
 
 The original USBCAMD does not call <b>CamProcessRawVideoFrameEx</b>.
 
-This function is optional.</p>
+This function is optional.
 
 ## Requirements
 | &nbsp; | &nbsp; |

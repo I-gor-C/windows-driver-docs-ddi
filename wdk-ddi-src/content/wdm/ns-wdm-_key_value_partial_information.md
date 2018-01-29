@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8f8fc935-3d60-4159-8928-006b0b6c0b3d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_VALUE_PARTIAL_INFORMATION, *PKEY_VALUE_PARTIAL_INFORMATION, KEY_VALUE_PARTIAL_INFORMATION
+ms.keywords : _KEY_VALUE_PARTIAL_INFORMATION, wdm/KEY_VALUE_PARTIAL_INFORMATION, kstruct_c_d96b4d6b-abe9-4ac0-af16-80c7edd25df8.xml, kernel.key_value_partial_information, *PKEY_VALUE_PARTIAL_INFORMATION, PKEY_VALUE_PARTIAL_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PKEY_VALUE_PARTIAL_INFORMATION, KEY_VALUE_PARTIAL_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PKEY_VALUE_PARTIAL_INFORMATION, KEY_VALUE_PARTIAL_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_VALUE_PARTIAL_INFORMATION
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PKEY_VALUE_PARTIAL_INFORMATION, KEY_VALUE_PARTIAL_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KEY_VALUE_PARTIAL_INFORMATION, *PKEY_VALUE_PARTIAL_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _KEY_VALUE_PARTIAL_INFORMATION {
 
 ## Members
 
-        
-            `Data`
 
-            A value entry of the key.
-        
-            `DataLength`
+`Data`
 
-            The size in bytes of the <b>Data</b> member.
-        
-            `TitleIndex`
+A value entry of the key.
 
-            Device and intermediate drivers should ignore this member.
-        
-            `Type`
+`DataLength`
 
-            Specifies the system-defined type for the registry value in the <b>Data</b> member. For a summary of these types, see <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>.
+The size in bytes of the <b>Data</b> member.
+
+`TitleIndex`
+
+Device and intermediate drivers should ignore this member.
+
+`Type`
+
+Specifies the system-defined type for the registry value in the <b>Data</b> member. For a summary of these types, see <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>.
 
 
 ## Requirements
@@ -76,25 +80,18 @@ typedef struct _KEY_VALUE_PARTIAL_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\ne-wdm-_key_value_information_class.md">KEY_VALUE_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
+
 <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 28f0118b-8c16-4075-8dc9-78e1e2636f02
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FcpScsiEntryV2, HBA_FCPSCSIENTRYV2, *PHBA_FCPSCSIENTRYV2
+ms.keywords : HBA_FcpScsiEntryV2, PHBA_FCPSCSIENTRYV2, HBA_FCPSCSIENTRYV2 structure [Storage Devices], PHBA_FCPSCSIENTRYV2 structure pointer [Storage Devices], hbaapi/HBA_FcpScsiEntryV2, structs-Fibre_b450dd9b-aeb7-4ba1-86df-4bdc6ef34e5a.xml, *PHBA_FCPSCSIENTRYV2, HBA_FCPSCSIENTRYV2, storage.hba_fcpscsientryv2, HBA_FcpScsiEntryV2 structure [Storage Devices], hbaapi/PHBA_FCPSCSIENTRYV2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_FCPSCSIENTRYV2
-req.alt-loc : hbaapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_FCPSCSIENTRYV2, *PHBA_FCPSCSIENTRYV2
 ---
 
@@ -48,21 +52,21 @@ typedef struct HBA_FcpScsiEntryV2 {
 
 ## Members
 
-        
-            `FcpId`
 
-            Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network.
-        
-            `LUID`
+`FcpId`
 
-            Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_luid.md">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data.
-        
-            `ScsiId`
+Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network.
 
-            Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device.
+`LUID`
 
-    ## Remarks
-        The HBA_FcpScsiEntryV2 structure includes all of the information contained in the <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a> structure and, in addition, contains the identification descriptor for the logical unit derived from SCSI inquiry data.
+Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_luid.md">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data.
+
+`ScsiId`
+
+Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device.
+
+## Remarks
+The HBA_FcpScsiEntryV2 structure includes all of the information contained in the <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a> structure and, in addition, contains the identification descriptor for the logical unit derived from SCSI inquiry data.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,22 +76,16 @@ typedef struct HBA_FcpScsiEntryV2 {
 | **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
-</dt>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a>
-</dt>
-<dt>
-<a href="..\hbaapi\ns-hbaapi-hba_luid.md">HBA_LUID</a>
-</dt>
-<dt>
 <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_luid.md">HBA_LUID</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
+
  
 
  

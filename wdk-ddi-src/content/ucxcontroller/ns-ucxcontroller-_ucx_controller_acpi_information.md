@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : BB5C69FF-166A-4A38-BF5E-FD644FCD1285
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UCX_CONTROLLER_ACPI_INFORMATION, *PUCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION
+ms.keywords : P_UCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION structure [Buses], buses._ucx_controller_acpi_information, ucxcontroller/_UCX_CONTROLLER_ACPI_INFORMATION, _UCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION, ucxcontroller/P_UCX_CONTROLLER_ACPI_INFORMATION, *PUCX_CONTROLLER_ACPI_INFORMATION, P_UCX_CONTROLLER_ACPI_INFORMATION structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UCX_CONTROLLER_ACPI_INFORMATION
-req.alt-loc : Ucxcontroller.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : UCX_CONTROLLER_ACPI_INFORMATION, *PUCX_CONTROLLER_ACPI_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -49,18 +53,18 @@ typedef struct _UCX_CONTROLLER_ACPI_INFORMATION {
 
 ## Members
 
-        
-            `DeviceId`
 
-            The device ID of the ACPI USB controller.
-        
-            `RevisionId`
+`DeviceId`
 
-            The revision ID of the ACPI USB controller.
-        
-            `VendorId`
+The device ID of the ACPI USB controller.
 
-            The vendor ID of the ACPI USB controller.
+`RevisionId`
+
+The revision ID of the ACPI USB controller.
+
+`VendorId`
+
+The vendor ID of the ACPI USB controller.
 
 
 ## Requirements
@@ -71,16 +75,12 @@ typedef struct _UCX_CONTROLLER_ACPI_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a>
-</dt>
-<dt>
+
 <a href="..\ucxcontroller\nf-ucxcontroller-ucx_controller_config_set_acpi_info.md">UCX_CONTROLLER_CONFIG_SET_ACPI_INFO</a>
-</dt>
-</dl>
+
  
 
  

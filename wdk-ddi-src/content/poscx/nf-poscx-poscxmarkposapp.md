@@ -7,8 +7,8 @@ old-location : pos\poscxmarkposapp.htm
 old-project : pos
 ms.assetid : 6BFFD014-E9DC-495C-9810-0D23BD93C41A
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PosCxMarkPosApp
+ms.date : 1/18/2018
+ms.keywords : pos.poscxmarkposapp, PosCxMarkPosApp, PosCxMarkPosApp function, poscx/PosCxMarkPosApp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosCxMarkPosApp
-req.alt-loc : poscx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : POS_CX_EVENT_PRIORITY
 req.product : Windows 10 or later.
 ---
@@ -69,6 +73,16 @@ Specifies if the open instance is associated with a point-of-service application
 ## Return Value
 
 Possible return values are:
+<table>
+<tr>
+<td><b>STATUS_SUCCESS</b></td>
+<td>Completed successfully.</td>
+</tr>
+<tr>
+<td><b>INVALID_PARAMETER</b></td>
+<td>The specified <i>fileObject</i> is invalid.</td>
+</tr>
+</table>
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 94e7c36a-e45c-4d98-aeb7-f23769347ca5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerStart
+ms.keywords : ucmtcpciportcontroller/UcmTcpciPortControllerStart, UcmTcpciPortControllerStart, buses.ucmtcpciportcontrollerstart, UcmTcpciPortControllerStart method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UcmTcpciPortControllerStart
-req.alt-loc : ucmtcpcicxstub.lib,ucmtcpcicxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ucmtcpcicxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
 req.product : Windows 10 or later.
 ---
@@ -58,12 +62,34 @@ Handle to the port controller  object that the client driver received in the pre
 
 (NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
                     
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The port controller is already in Start state.
+</dl>
+</td>
+<td width="60%">
+The port controller is already in Start state.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>Hardware request queue has not been set by calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollersethardwarerequestqueue.md">UcmTcpciPortControllerSetHardwareRequestQueue</a>.
+</dl>
+</td>
+<td width="60%">
+Hardware request queue has not been set by calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollersethardwarerequestqueue.md">UcmTcpciPortControllerSetHardwareRequestQueue</a>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -92,11 +118,8 @@ On boot, if the BIOS had already negotiated a PD contract, UcmTcpciCx starts fro
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstop.md">UcmTcpciPortControllerStop</a>
-</dt>
-</dl>
+
  
 
  

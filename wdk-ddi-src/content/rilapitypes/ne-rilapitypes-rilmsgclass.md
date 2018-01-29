@@ -7,8 +7,8 @@ old-location : netvista\rilmsgclass_2.htm
 old-project : netvista
 ms.assetid : 95818f9a-9053-4fb3-8bcb-6e318ed6bae5
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILMSGCLASS, RILMSGCLASS
+ms.date : 1/18/2018
+ms.keywords : RIL_MSGCLASS_BROADCAST, rilapitypes/RIL_MSGCLASS_ALL, RILMSGCLASS, RIL_MSGCLASS_INCOMING, rilapitypes/RIL_MSGCLASS_BROADCAST, RIL_MSGCLASS_OUTGOING, rilapitypes/RIL_MSGCLASS_INCOMING, rilapitypes/RILMSGCLASS, RIL_MSGCLASS_ALL, netvista.rilmsgclass_2, RILMSGCLASS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_MSGCLASS_OUTGOING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILMSGCLASS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILMSGCLASS
 req.product : Windows 10 or later.
 ---
@@ -64,6 +68,11 @@ typedef enum _RILMSGCLASS {
 
 <tr>
 <td>RIL_MSGCLASS_INCOMING</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_MSGCLASS_NONE</td>
 <td></td>
 </tr>
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3e0d41f4-4918-4768-a341-25d27f0a8af0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _TOKEN_CONTROL, TOKEN_CONTROL, *PTOKEN_CONTROL
+ms.keywords : TOKEN_CONTROL, ntifs/PTOKEN_CONTROL, _TOKEN_CONTROL, ntifs/TOKEN_CONTROL, TOKEN_CONTROL structure [Installable File System Drivers], *PTOKEN_CONTROL, PTOKEN_CONTROL, PTOKEN_CONTROL structure pointer [Installable File System Drivers], ifsk.token_control, securitystructures_26958d39-4a12-4979-b0cc-7a880e3d2384.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TOKEN_CONTROL
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : TOKEN_CONTROL, *PTOKEN_CONTROL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PTOKEN_CONTROL, TOKEN_CONTROL"
 ---
 
 # _TOKEN_CONTROL structure
@@ -49,22 +53,22 @@ typedef struct _TOKEN_CONTROL {
 
 ## Members
 
-        
-            `AuthenticationId`
 
-            Specifies an LUID assigned to the session this token represents. There can be many tokens representing a single logon session.
-        
-            `ModifiedId`
+`AuthenticationId`
 
-            Specifies an LUID that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used.
-        
-            `TokenId`
+Specifies an LUID assigned to the session this token represents. There can be many tokens representing a single logon session.
 
-            Specifies a locally unique identifier (LUID) identifying this instance of the token object.
-        
-            `TokenSource`
+`ModifiedId`
 
-            Specifies a <a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a> structure identifying the source that issued the token. This information is used in audit logging.
+Specifies an LUID that changes each time the token is modified. An application can use this value as a test of whether a security context has changed since it was last used.
+
+`TokenId`
+
+Specifies a locally unique identifier (LUID) identifying this instance of the token object.
+
+`TokenSource`
+
+Specifies a <a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a> structure identifying the source that issued the token. This information is used in audit logging.
 
 
 ## Requirements
@@ -75,46 +79,32 @@ typedef struct _TOKEN_CONTROL {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
-</dt>
-<dt>
-<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_privileges.md">TOKEN_PRIVILEGES</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
-</dt>
-<dt>
-<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a>
+
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+
+<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
+
+<a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a>
+
+<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
+
+<a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a>
+
+<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
+
+<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
+
+<a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
+
+<a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
+
+<a href="..\ntifs\ns-ntifs-_token_privileges.md">TOKEN_PRIVILEGES</a>
+
  
 
  

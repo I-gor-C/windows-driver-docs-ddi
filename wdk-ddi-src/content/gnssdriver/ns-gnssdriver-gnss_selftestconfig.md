@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : DE0D4A9A-F85D-4AA4-8A21-1BEC86837444
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SELFTESTCONFIG, GNSS_SELFTESTCONFIG, *PGNSS_SELFTESTCONFIG
+ms.keywords : gnssdriver/GNSS_SELFTESTCONFIG, *PGNSS_SELFTESTCONFIG, sensors.gnss_selftestconfig, PGNSS_SELFTESTCONFIG structure pointer [Sensor Devices], GNSS_SELFTESTCONFIG structure [Sensor Devices], gnssdriver/PGNSS_SELFTESTCONFIG, PGNSS_SELFTESTCONFIG, GNSS_SELFTESTCONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_SELFTESTCONFIG
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_SELFTESTCONFIG, *PGNSS_SELFTESTCONFIG
 ---
 
@@ -51,22 +55,30 @@ typedef struct {
 
 ## Members
 
-        
-            `InBufLen`
 
-            The length of the buffer for passing in any additional information about the self-test.
-        
-            `Size`
+`InBuffer`
 
-            Structure size.
-        
-            `TestType`
 
-            The type of self-test requested.
-        
-            `Version`
 
-            Version number.
+`InBufLen`
+
+The length of the buffer for passing in any additional information about the self-test.
+
+`Size`
+
+Structure size.
+
+`TestType`
+
+The type of self-test requested.
+
+`Unused`
+
+
+
+`Version`
+
+Version number.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 86567fc1-cf66-4709-a6e1-6b24408df963
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.generatemipsublevels, GenerateMipSubLevels callback function [Display Devices], GenerateMipSubLevels, PFND3DDDI_GENERATEMIPSUBLEVELS, PFND3DDDI_GENERATEMIPSUBLEVELS, d3dumddi/GenerateMipSubLevels, UserModeDisplayDriver_Functions_795601cd-37d8-4268-8e41-38806c5961e6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GenerateMipSubLevels
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -83,14 +87,10 @@ After the user-mode display driver performs an operation that accesses only the 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_generatemipsublevels.md">D3DDDIARG_GENERATEMIPSUBLEVELS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-</dt>
-</dl>
+
  
 
  

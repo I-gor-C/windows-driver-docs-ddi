@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : bdfe0fc3-1b25-493f-9d70-3b6d680fde50
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstrcanceltimer, KStrCancelTimer routine [Streaming Media Devices], KStrCancelTimer, PFNKSCANCELTIMER, PFNKSCANCELTIMER, ks/KStrCancelTimer, ksfunc_10ed86a1-d424-45d1-a420-3e4ce3a95a05.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrCancelTimer
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -87,17 +91,12 @@ If a minidriver supplies a <i>KStrCancelTimer</i> callback function, the minidri
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
+
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C9F2331F-0C16-47F3-9FDE-2719E179513F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBDEVICE_DISABLE, *PUSBDEVICE_DISABLE, USBDEVICE_DISABLE
+ms.keywords : P_USBDEVICE_DISABLE, buses._usbdevice_disable, USBDEVICE_DISABLE, P_USBDEVICE_DISABLE structure pointer [Buses], *PUSBDEVICE_DISABLE, USBDEVICE_DISABLE structure [Buses], ucxusbdevice/P_USBDEVICE_DISABLE, ucxusbdevice/_USBDEVICE_DISABLE, _USBDEVICE_DISABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBDEVICE_DISABLE
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUSBDEVICE_DISABLE, USBDEVICE_DISABLE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USBDEVICE_DISABLE, *PUSBDEVICE_DISABLE
 req.product : Windows 10 or later.
 ---
 
@@ -52,14 +56,14 @@ typedef struct _USBDEVICE_DISABLE {
 
 ## Members
 
-        
-            `DefaultEndpoint`
 
-            A handle to the default endpoint of the USB device or hub to disable.
-        
-            `Header`
+`DefaultEndpoint`
 
-            A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
+A handle to the default endpoint of the USB device or hub to disable.
+
+`Header`
+
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
 
 ## Requirements
@@ -70,19 +74,14 @@ typedef struct _USBDEVICE_DISABLE {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
-</dt>
-<dt>
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_enable.md">USBDEVICE_ENABLE</a>
-</dt>
-<dt>
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_disable.md">EVT_UCX_USBDEVICE_DISABLE</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_enable.md">USBDEVICE_ENABLE</a>
+
  
 
  

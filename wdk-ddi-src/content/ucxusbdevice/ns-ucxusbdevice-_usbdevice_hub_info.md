@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F403179A-B339-432D-AAF9-E7D9965F8B00
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBDEVICE_HUB_INFO, *PUSBDEVICE_HUB_INFO, USBDEVICE_HUB_INFO
+ms.keywords : USBDEVICE_HUB_INFO, ucxusbdevice/P_USBDEVICE_HUB_INFO, buses._usbdevice_hub_info, *PUSBDEVICE_HUB_INFO, P_USBDEVICE_HUB_INFO, _USBDEVICE_HUB_INFO, USBDEVICE_HUB_INFO structure [Buses], ucxusbdevice/_USBDEVICE_HUB_INFO, P_USBDEVICE_HUB_INFO structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : USBDEVICE_HUB_INFO
-req.alt-loc : ucxusbdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PUSBDEVICE_HUB_INFO, USBDEVICE_HUB_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : USBDEVICE_HUB_INFO, *PUSBDEVICE_HUB_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -54,22 +58,22 @@ typedef struct _USBDEVICE_HUB_INFO {
 
 ## Members
 
-        
-            `Header`
 
-            A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
-        
-            `NumberOfPorts`
+`Header`
 
-            The count of ports available for the USB hub, filled by the client driver.
-        
-            `NumberOfTTs`
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
-            The count of TT hubs, filled by the client driver.
-        
-            `TTThinkTime`
+`NumberOfPorts`
 
-            The ThinkTime property of the TT hub, filled by the client driver.
+The count of ports available for the USB hub, filled by the client driver.
+
+`NumberOfTTs`
+
+The count of TT hubs, filled by the client driver.
+
+`TTThinkTime`
+
+The ThinkTime property of the TT hub, filled by the client driver.
 
 
 ## Requirements
@@ -80,13 +84,10 @@ typedef struct _USBDEVICE_HUB_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_hub_info.md">EVT_UCX_USBDEVICE_HUB_INFO</a>
-</dt>
-</dl>
+
  
 
  

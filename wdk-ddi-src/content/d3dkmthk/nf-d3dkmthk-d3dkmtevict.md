@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 010F7CB0-F930-47FF-91DF-D95B21FC76A0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTEvict
+ms.keywords : D3DKMTEvict function [Display Devices], display.d3dkmtevict, D3DKMTEvict, d3dkmthk/D3DKMTEvict
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMTEvict
-req.alt-loc : GDI32.dll,API-MS-Win-DX-D3DKMT-L1-1-1.dll,GDI32.dll,API-MS-Win-DX-D3DKMT-L1-1-2.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : GDI32.lib
 req.dll : GDI32.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DRIVERVERSION
 ---
 
@@ -53,15 +57,35 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The operation was performed successfully.
+</dl>
+</td>
+<td width="60%">
+The operation was performed successfully.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER </b></dt>
 </dl>
+</td>
+<td width="60%">
+
          Parameters were validated and determined to be incorrect.
 
- 
+</td>
+</tr>
+</table> 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -83,11 +107,8 @@ Once the eviction request is queued, it is illegal to access the underlying allo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_evict.md">D3DKMT_EVICT</a>
-</dt>
-</dl>
+
  
 
  

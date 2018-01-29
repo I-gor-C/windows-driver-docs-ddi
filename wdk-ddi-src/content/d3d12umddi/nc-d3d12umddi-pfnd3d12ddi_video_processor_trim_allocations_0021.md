@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 505B3502-FC2D-47FB-B8CD-3D7DE9ED4770
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.keywords : display.pfnd3d12ddi_video_processor_trim_allocations, pfnProcessorTrimAllocations callback function [Display Devices], pfnProcessorTrimAllocations, PFND3D12DDI_VIDEO_PROCESSOR_TRIM_ALLOCATIONS_0021, PFND3D12DDI_VIDEO_PROCESSOR_TRIM_ALLOCATIONS_0021, d3d12umddi/pfnProcessorTrimAllocations
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnProcessorTrimAllocations
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
@@ -72,7 +76,7 @@ None
 
 ## Remarks
 
-Applications track command completion.  To allow driver to manage memory, an application calls this method with a <i>SubmissionID</i> parameter to indicate which submissions are complete.</p>
+Applications track command completion.  To allow driver to manage memory, an application calls this method with a <i>SubmissionID</i> parameter to indicate which submissions are complete.
 
 ## Requirements
 | &nbsp; | &nbsp; |

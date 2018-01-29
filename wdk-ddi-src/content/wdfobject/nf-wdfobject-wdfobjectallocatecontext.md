@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : dbabd045-4f18-4103-b3c0-5405173628d6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfObjectAllocateContext
+ms.keywords : WdfObjectAllocateContext method, wdfobject/WdfObjectAllocateContext, kmdf.wdfobjectallocatecontext, PFN_WDFOBJECTALLOCATECONTEXT, DFGenObjectRef_9b172283-f4b6-4ade-9cd2-38f10c0ff9bd.xml, WdfObjectAllocateContext, wdf.wdfobjectallocatecontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfObjectAllocateContext
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_SYNCHRONIZATION_SCOPE
 req.product : Windows 10 or later.
 ---
@@ -69,23 +73,67 @@ A pointer to a location that receives a pointer to the allocated context space.
 ## Return Value
 
 <b>WdfObjectAllocateContext</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>An invalid parameter was detected.
+</dl>
+</td>
+<td width="60%">
+An invalid parameter was detected.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_INVALID</b></dt>
-</dl>The <b>ContextTypeInfo</b> member of the WDF_OBJECT_ATTRIBUTES structure that the <i>ContextAttributes</i> parameter specified was invalid.
+</dl>
+</td>
+<td width="60%">
+The <b>ContextTypeInfo</b> member of the WDF_OBJECT_ATTRIBUTES structure that the <i>ContextAttributes</i> parameter specified was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Context space could not be allocated.
+</dl>
+</td>
+<td width="60%">
+Context space could not be allocated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_NAME_EXISTS</b></dt>
-</dl>The driver has already allocated context space that matches the <b>ContextTypeInfo</b> member of the WDF_OBJECT_ATTRIBUTES structure that <i>ContextAttributes</i> specifies. In this situation, the pointer in the <i>Context</i> parameter receives a pointer to the existing context space and does not allocate duplicate context space.
+</dl>
+</td>
+<td width="60%">
+The driver has already allocated context space that matches the <b>ContextTypeInfo</b> member of the WDF_OBJECT_ATTRIBUTES structure that <i>ContextAttributes</i> specifies. In this situation, the pointer in the <i>Context</i> parameter receives a pointer to the existing context space and does not allocate duplicate context space.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_DELETE_PENDING</b></dt>
-</dl>The object that the <i>Handle</i> parameter specifies is being deleted. In this situation, the framework does not allocate context space.
+</dl>
+</td>
+<td width="60%">
+The object that the <i>Handle</i> parameter specifies is being deleted. In this situation, the framework does not allocate context space.
 
- 
+</td>
+</tr>
+</table> 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -105,8 +153,6 @@ When the framework allocates context space for an object, it also zero-initializ
 
 For more information about object context space, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.
 
-The following code example creates context space for a request object. The context space is based on the example's REQUEST_CONTEXT structure.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -121,17 +167,12 @@ The following code example creates context space for a request object. The conte
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
+
  
 
  

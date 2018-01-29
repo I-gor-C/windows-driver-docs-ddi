@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f92d1f63-4361-4775-88f8-be1c9bf781ef
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_GEOMETRY, *PDISK_GEOMETRY, DISK_GEOMETRY
+ms.keywords : DISK_GEOMETRY structure [Storage Devices], structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml, storage.disk_geometry, PDISK_GEOMETRY structure pointer [Storage Devices], *PDISK_GEOMETRY, DISK_GEOMETRY, ntdddisk/DISK_GEOMETRY, PDISK_GEOMETRY, ntdddisk/PDISK_GEOMETRY, _DISK_GEOMETRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISK_GEOMETRY
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDISK_GEOMETRY, DISK_GEOMETRY"
 ---
 
@@ -50,29 +54,29 @@ typedef struct _DISK_GEOMETRY {
 
 ## Members
 
-        
-            `BytesPerSector`
 
-            Indicates the number of bytes in a disk sector.
-        
-            `Cylinders`
+`BytesPerSector`
 
-            Indicates the number of cylinders on the disk device.
-        
-            `MediaType`
+Indicates the number of bytes in a disk sector.
 
-            Indicates the type of disk. The enumeration <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a> lists the values that can be assigned to this member.
-        
-            `SectorsPerTrack`
+`Cylinders`
 
-            Indicates the number of sectors in each track.
-        
-            `TracksPerCylinder`
+Indicates the number of cylinders on the disk device.
 
-            Indicates the number of tracks in a cylinder.
+`MediaType`
 
-    ## Remarks
-        <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a> must be used with new drivers, in order to accommodate GUID Partition Table (GPT) partitions. The DISK_GEOMETRY structure is nested within the DISK_GEOMETRY_EX structure.
+Indicates the type of disk. The enumeration <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a> lists the values that can be assigned to this member.
+
+`SectorsPerTrack`
+
+Indicates the number of sectors in each track.
+
+`TracksPerCylinder`
+
+Indicates the number of tracks in a cylinder.
+
+## Remarks
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a> must be used with new drivers, in order to accommodate GUID Partition Table (GPT) partitions. The DISK_GEOMETRY structure is nested within the DISK_GEOMETRY_EX structure.
 
 
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> causes an array of these structures to be returned.
@@ -85,19 +89,14 @@ typedef struct _DISK_GEOMETRY {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
-</dt>
-<dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 51fb1993-b9f3-436a-9a6d-7d4f9bf26083
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_INVALIDATEACTIVEVIDPN, D3DKMT_INVALIDATEACTIVEVIDPN
+ms.keywords : D3DKMT_INVALIDATEACTIVEVIDPN structure [Display Devices], _D3DKMT_INVALIDATEACTIVEVIDPN, d3dkmthk/D3DKMT_INVALIDATEACTIVEVIDPN, display.d3dkmt_invalidateactivevidpn, OpenGL_Structs_6610529b-39db-4fc4-981a-96a6b3bf7543.xml, D3DKMT_INVALIDATEACTIVEVIDPN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_INVALIDATEACTIVEVIDPN
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_INVALIDATEACTIVEVIDPN
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_INVALIDATEACTIVEVIDPN {
 
 ## Members
 
-        
-            `hAdapter`
 
-            [in] A handle to the graphics adapter that the VidPN exists on.
-        
-            `pPrivateDriverData`
+`hAdapter`
 
-            [in] A pointer to a buffer that contains the display mode (for example, clone-view mode) that the OpenGL installable client driver (ICD) requests for the new VidPN.
-        
-            `PrivateDriverDataSize`
+[in] A handle to the graphics adapter that the VidPN exists on.
 
-            [in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
+`pPrivateDriverData`
+
+[in] A pointer to a buffer that contains the display mode (for example, clone-view mode) that the OpenGL installable client driver (ICD) requests for the new VidPN.
+
+`PrivateDriverDataSize`
+
+[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_INVALIDATEACTIVEVIDPN {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPn</a>
-</dt>
-</dl>
+
  
 
  

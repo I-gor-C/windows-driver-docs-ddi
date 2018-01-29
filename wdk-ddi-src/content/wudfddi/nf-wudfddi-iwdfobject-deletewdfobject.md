@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a777b8df-e255-402a-aa55-14e5861b215f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject, IWDFObject::DeleteWdfObject, DeleteWdfObject
+ms.keywords : wudfddi/IWDFObject::DeleteWdfObject, UMDFBaseObjectRef_e8c4d75a-eed6-4da3-9cce-79d863a01cd6.xml, DeleteWdfObject, IWDFObject interface, DeleteWdfObject method, IWDFObject::DeleteWdfObject, umdf.iwdfobject_deletewdfobject, DeleteWdfObject method, DeleteWdfObject method, IWDFObject interface, IWDFObject, wdf.iwdfobject_deletewdfobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFObject.DeleteWdfObject
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -53,10 +57,6 @@ This function has no parameters.
 
 ## Return Value
 
-<b>DeleteWdfObject</b> returns S_OK if the operation succeeds. Otherwise, this method returns HRESULT_FROM_WIN32(ERROR_ACCESS_DENIED) or one of the other error codes that are defined in Winerror.h. 
-
-<b>DeleteWdfObject</b> returns S_OK if the operation succeeds. Otherwise, this method returns HRESULT_FROM_WIN32(ERROR_ACCESS_DENIED) or one of the other error codes that are defined in Winerror.h. 
-
 <b>DeleteWdfObject</b> returns S_OK if the operation succeeds. Otherwise, this method returns HRESULT_FROM_WIN32(ERROR_ACCESS_DENIED) or one of the other error codes that are defined in Winerror.h.
 
 ## Remarks
@@ -66,8 +66,6 @@ A driver is unable to delete some WDF objects. For example, the driver cannot de
 The driver typically deletes only WDF objects that it creates and owns. For more information about deleting framework objects, see <a href="https://msdn.microsoft.com/55ad8133-a70a-462f-87cd-6aeaffb0aec8">Managing the Lifetime of Objects</a>. 
 
 However, when a parent object is deleted, all child objects are automatically deleted. For example, if the driver called <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> to create an I/O queue object, the newly created I/O queue becomes a child of the device object. The I/O queue object is then automatically deleted when the device object is deleted without the driver explicitly calling <b>DeleteWdfObject</b>.
-
-For a code example of how to use the <b>DeleteWdfObject</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,14 +81,10 @@ For a code example of how to use the <b>DeleteWdfObject</b> method, see <a href=
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
-</dt>
-</dl>
+
  
 
  

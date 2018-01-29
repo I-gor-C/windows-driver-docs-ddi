@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7ac67110-bc92-457a-88f4-a21f2fa38174
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoEnumerateRegisteredFiltersList
+ms.keywords : ntifs/IoEnumerateRegisteredFiltersList, ifsk.ioenumerateregisteredfilterslist, ioref_b1530889-7d8a-4fd7-a7d3-954b1c7012ca.xml, IoEnumerateRegisteredFiltersList routine [Installable File System Drivers], IoEnumerateRegisteredFiltersList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Update Rollup for Windo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoEnumerateRegisteredFiltersList
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -66,12 +70,34 @@ Actual number of driver objects found. Note that if the array at <i>DriverObject
 ## Return Value
 
 <b>IoEnumerateRegisteredFiltersList</b> can return one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The call to <b>IoEnumerateRegisteredFiltersList</b> was successful. 
+</dl>
+</td>
+<td width="60%">
+The call to <b>IoEnumerateRegisteredFiltersList</b> was successful. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The array at <i>DriverObjectList</i> is too small to hold the entire driver object list. In this case, <b>IoEnumerateRegisteredFiltersList</b> copies as many driver object pointers into the array as possible.
+</dl>
+</td>
+<td width="60%">
+The array at <i>DriverObjectList</i> is too small to hold the entire driver object list. In this case, <b>IoEnumerateRegisteredFiltersList</b> copies as many driver object pointers into the array as possible. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -101,20 +127,14 @@ Minifilters should call <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinf
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
-</dt>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
+
  
 
  

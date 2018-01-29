@@ -7,8 +7,8 @@ old-location : debugger\idebugeventcallbackswide_systemerror.htm
 old-project : debugger
 ms.assetid : 938eacb5-7939-43ed-a854-046708fc9c79
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugEventCallbacksWide, IDebugEventCallbacksWide::SystemError, SystemError
+ms.date : 1/19/2018
+ms.keywords : SystemError, dbgeng/IDebugEventCallbacksWide::SystemError, SystemError method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide, IDebugEventCallbacksWide interface [Windows Debugging], SystemError method, IDebugEventCallbacksWide::SystemError, debugger.idebugeventcallbackswide_systemerror, SystemError method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugEventCallbacksWide.SystemError
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -66,7 +70,7 @@ This method returns a <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 This method is only called by the engine if the DEBUG_EVENT_SYSTEM_ERROR flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.
 
-For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
+For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

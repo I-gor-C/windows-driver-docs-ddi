@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f28b2c97-61ee-4843-b3c5-b3a55f172c50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _URB, PURB, URB
+ms.keywords : URB, usb/URB, PURB, buses.urb, URB structure [Buses], usbstrct_20441a98-258d-44d2-b414-67b336a44fac.xml, PURB structure pointer [Buses], usb/PURB, _URB
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : URB
-req.alt-loc : usb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : PURB, URB
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : URB, PURB
 req.product : Windows 10 or later.
 ---
 
@@ -71,8 +75,8 @@ typedef struct _URB {
 ## Members
 
 
-    ## Remarks
-        For information about the function codes to set in each structure, see <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>.
+## Remarks
+For information about the function codes to set in each structure, see <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,16 +86,12 @@ typedef struct _URB {
 | **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_submit_urb.md">IOCTL_INTERNAL_USB_SUBMIT_URB</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-</dt>
-</dl>
+
  
 
  

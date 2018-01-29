@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : C9563635-66F3-4835-8153-DECB04580544
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PcStreamResourceType, *PPcStreamResourceType, PcStreamResourceType
+ms.keywords : PcStreamResourceType enumeration [Audio Devices], portcls/PcStreamResourceType, ePcStreamResourceThread, PcStreamResourceType, *PPcStreamResourceType, ePcStreamResourceInterrupt, PcStreamResourceType, portcls/ePcStreamResourceSet, ePcStreamResourceSet, audio.pcstreamresourcetype, _PcStreamResourceType, *PPcStreamResourceType, portcls/ePcStreamResourceInterrupt, portcls/ePcStreamResourceThread, PcStreamResourceType, *PPcStreamResourceType enumeration [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcStreamResourceType, *PPcStreamResourceType
-req.alt-loc : Portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PPcStreamResourceType, PcStreamResourceType"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PcStreamResourceType, *PPcStreamResourceType
 ---
 
 # _PcStreamResourceType Enumeration
@@ -68,8 +72,7 @@ typedef enum PcStreamResourceType {
 
 ## Remarks
 
-Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it. 
-</p>
+Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it.
 
 ## Requirements
 | &nbsp; | &nbsp; |

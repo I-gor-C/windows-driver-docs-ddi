@@ -7,8 +7,8 @@ old-location : netvista\rilcallinfo_v5_2.htm
 old-project : netvista
 ms.assetid : a2cadee5-40e4-4044-b631-1824099e2fd7
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLINFO_V5, RILCALLINFO_V5, RILCALLINFO, *LPRILCALLINFO, *LPRILCALLINFO_V5
+ms.date : 1/18/2018
+ms.keywords : RILCALLINFO_V5 structure [Network Drivers Starting with Windows Vista], *LPRILCALLINFO_V5, rilapitypes/RILCALLINFO_V5, RILCALLINFO_V5, netvista.rilcallinfo_v5_2, RILCALLINFO, *LPRILCALLINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLINFO_V5
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILCALLINFO_V5, RILCALLINFO, *LPRILCALLINFO, *LPRILCALLINFO_V5
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILCALLINFO, *LPRILCALLINFO_V5, RILCALLINFO_V5, RILCALLINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -67,90 +71,90 @@ typedef struct _RILCALLINFO_V5 {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwCallModificationCauseCode`
+`cbSize`
 
-            
-        
-            `dwDirection`
 
-            
-        
-            `dwDisconnectInitiator`
 
-            
-        
-            `dwDisconnectReason`
+`dwCallModificationCauseCode`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `dwFlags`
 
-            
-        
-            `dwID`
+`dwDirection`
 
-            
-        
-            `dwMultiparty`
 
-            
-        
-            `dwNamePresentationIndicator`
 
-            
-        
-            `dwNumberPresentationIndicator`
+`dwDisconnectInitiator`
 
-            
-        
-            `dwParams`
 
-            
-        
-            `dwStatus`
 
-            
-        
-            `dwType`
+`dwDisconnectReason`
 
-            
-        
-            `raAddress`
 
-            
-        
-            `rchsHandoverState`
 
-            
-        
-            `rcmOfferAnswer`
+`dwExecutor`
 
-            
-        
-            `rsaSubAddress`
 
-            
-        
-            `stDisconnectDetails`
 
-            
-        
-            `stRTTInfo`
+`dwFlags`
 
-            
-        
-            `wszDescription`
 
-            
+
+`dwID`
+
+
+
+`dwMultiparty`
+
+
+
+`dwNamePresentationIndicator`
+
+
+
+`dwNumberPresentationIndicator`
+
+
+
+`dwParams`
+
+
+
+`dwStatus`
+
+
+
+`dwType`
+
+
+
+`raAddress`
+
+
+
+`rchsHandoverState`
+
+
+
+`rcmOfferAnswer`
+
+
+
+`rsaSubAddress`
+
+
+
+`stDisconnectDetails`
+
+
+
+`stRTTInfo`
+
+
+
+`wszDescription`
+
+
 
 
 ## Requirements

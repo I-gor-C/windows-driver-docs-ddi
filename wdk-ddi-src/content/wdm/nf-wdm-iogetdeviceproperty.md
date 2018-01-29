@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8c3b7f81-ea6e-47ae-a396-58826d097f1f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetDeviceProperty
+ms.keywords : kernel.iogetdeviceproperty, IoGetDeviceProperty routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceProperty, k104_b6185e0d-5e39-4671-ab50-07fe5eda3606.xml, IoGetDeviceProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetDeviceProperty
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -77,15 +81,45 @@ Pointer to a ULONG to receive the size of the property information returned at <
 ## Return Value
 
 <b>IoGetDeviceProperty</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl>The buffer at <i>PropertyBuffer</i> was too small. <i>ResultLength</i> points to the required buffer length.
+</dl>
+</td>
+<td width="60%">
+The buffer at <i>PropertyBuffer</i> was too small. <i>ResultLength</i> points to the required buffer length.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_2</b></dt>
-</dl>The given <i>DeviceProperty</i> is not one of the properties handled by this routine.
+</dl>
+</td>
+<td width="60%">
+The given <i>DeviceProperty</i> is not one of the properties handled by this routine.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>Possibly indicates that the given <i>DeviceObject</i> was not a valid PDO pointer.
+</dl>
+</td>
+<td width="60%">
+Possibly indicates that the given <i>DeviceObject</i> was not a valid PDO pointer.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -109,24 +143,18 @@ Function drivers that support devices on a legacy bus and a PnP bus can use the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_device_removal_policy.md">DEVICE_REMOVAL_POLICY</a>
-</dt>
-<dt><a href="wdkgloss.g#wdkgloss.guid#wdkgloss.guid"><b>GUID</b></a></dt>
-<dt>
 <a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
+
 <a href="..\wdm\ne-wdm-_interface_type.md">INTERFACE_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\ne-wdm-_device_removal_policy.md">DEVICE_REMOVAL_POLICY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn922935">GUID</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3b3b12b8-05f7-40e6-909c-b99bf18cc299
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeCreateClientSecurityFromSubjectContext
+ms.keywords : SeCreateClientSecurityFromSubjectContext routine [Installable File System Drivers], seref_fac27935-a941-48f6-a27b-7ca56bd1f9e2.xml, ifsk.secreateclientsecurityfromsubjectcontext, SeCreateClientSecurityFromSubjectContext, ntifs/SeCreateClientSecurityFromSubjectContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeCreateClientSecurityFromSubjectContext
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -70,16 +74,44 @@ Pointer to a caller-allocated SECURITY_CLIENT_CONTEXT structure to be initialize
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The security client context was successfully initialized.
+</dl>
+</td>
+<td width="60%">
+The security client context was successfully initialized.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BAD_IMPERSONATION_LEVEL</b></dt>
-</dl>The client to be impersonated is currently impersonating a client of its own, and one of the following is true:
+</dl>
+</td>
+<td width="60%">
+The client to be impersonated is currently impersonating a client of its own, and one of the following is true:
 
+<ul>
+<li>
 The client's effective token cannot be passed on for use by another server, because its impersonation level is <b>SecurityAnonymous</b> or <b>SecurityIdentification</b>. 
 
+</li>
+<li>
 <i>ServerIsRemote</i> is <b>TRUE</b>, and the client thread is impersonating its client at other than <b>SecurityDelegation</b> level.
+
+</li>
+</ul>
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -105,17 +137,12 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-sedeleteclientsecurity.md">SeDeleteClientSecurity</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
+
  
 
  

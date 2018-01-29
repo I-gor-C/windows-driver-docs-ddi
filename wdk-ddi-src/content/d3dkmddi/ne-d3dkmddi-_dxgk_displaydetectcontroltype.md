@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D777342E-439E-4BEF-9DCC-7962B1AF8EAB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_DISPLAYDETECTCONTROLTYPE, DXGK_DISPLAYDETECTCONTROLTYPE
+ms.keywords : _DXGK_DISPLAYDETECTCONTROLTYPE, DXGK_DISPLAYDETECTCONTROLTYPE, d3dkmddi/DXGK_DDCT_POLLONE, DXGK_DDCT_POLLALL, DXGK_DDCT_ENABLEHPD, d3dkmddi/DXGK_DDCT_DISABLEHPD, DXGK_DDCT_UNINITIALIZED, d3dkmddi/DXGK_DDCT_POLLALL, d3dkmddi/DXGK_DDCT_ENABLEHPD, d3dkmddi/DXGK_DISPLAYDETECTCONTROLTYPE, DXGK_DDCT_POLLONE, DXGK_DDCT_DISABLEHPD, display.dxgk_displaydetectcontroltype, DXGK_DISPLAYDETECTCONTROLTYPE enumeration [Display Devices], d3dkmddi/DXGK_DDCT_UNINITIALIZED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_DISPLAYDETECTCONTROLTYPE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_DISPLAYDETECTCONTROLTYPE
 ---
 
@@ -76,6 +80,11 @@ As status of each target is discovered, if it is not the same as the previously 
 <tr>
 <td>DXGK_DDCT_UNINITIALIZED</td>
 <td>Indicates that a variable of type DXGK_DISPLAYDETECTCONTROLTYPE has not yet been assigned a meaningful value.</td>
+</tr>
+
+<tr>
+<td>UINT</td>
+<td></td>
 </tr>
 </table>
 

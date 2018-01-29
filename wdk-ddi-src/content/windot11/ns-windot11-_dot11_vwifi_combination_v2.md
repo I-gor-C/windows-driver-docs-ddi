@@ -7,8 +7,8 @@ old-location : netvista\dot11_vwifi_combination_v2.htm
 old-project : netvista
 ms.assetid : b30b868d-3012-4bdc-80f4-ffae2ebaa4d6
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2, *PDOT11_VWIFI_COMBINATION_V2
+ms.date : 1/18/2018
+ms.keywords : windot11/PDOT11_VWIFI_COMBINATION_V2, netvista.dot11_vwifi_combination_v2, DOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2, Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml, _DOT11_VWIFI_COMBINATION_V2, windot11/DOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_COMBINATION_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11_VWIFI_COMBINATION_V2
-req.alt-loc : windot11.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DOT11_VWIFI_COMBINATION_V2, *PDOT11_VWIFI_COMBINATION_V2
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_VWIFI_COMBINATION_V2 structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_VWIFI_COMBINATION_V2 structure specifies the combination of 802.11 MAC entities that an
+  802.11 miniport driver can simultaneously support when it is virtualized.
 
 ## Syntax
 ````
@@ -51,56 +56,85 @@ typedef struct _DOT11_VWIFI_COMBINATION_V2 {
 
 ## Members
 
-        
-            `Header`
 
-            The type, revision, and size of the DOT11_VWIFI_COMBINATION_V2 structure. This member is formatted
+`Header`
+
+The type, revision, and size of the DOT11_VWIFI_COMBINATION_V2 structure. This member is formatted
      as an 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
-        
-            `uNumAdhoc`
 
-            The number of Adhoc Stations supported. For more information, see the following Remarks
+
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+`uNumAdhoc`
+
+The number of Adhoc Stations supported. For more information, see the following Remarks
      section.
-        
-            `uNumInfrastructure`
 
-            The number of 802.11 infrastructure stations supported. For more information, see the following
+`uNumInfrastructure`
+
+The number of 802.11 infrastructure stations supported. For more information, see the following
      Remarks section.
-        
-            `uNumSoftAP`
 
-            The number of Soft AP Stations supported. For more information, see the following Remarks
-     section.
-        
-            `uNumVirtualStation`
+`uNumSoftAP`
 
-            The number of Virtual Stations supported. For more information, see the following Remarks
+The number of Soft AP Stations supported. For more information, see the following Remarks
      section.
 
-    ## Remarks
-        Starting with Windows 7, the 802.11 miniport driver must only report one or more of the following
+`uNumVirtualStation`
+
+The number of Virtual Stations supported. For more information, see the following Remarks
+     section.
+
+## Remarks
+Starting with Windows 7, the 802.11 miniport driver must only report one or more of the following
     combinations of member values.
 
 <b>No 802.11 Virtual Station
      </b>
-
+<ul>
+<li>
 <b>uNumInfrastructure</b> = 1
 
+</li>
+<li>
 <b>uNumAdhoc</b> = 0
 
+</li>
+<li>
 <b>uNumSoftAP</b> = 1
 
+</li>
+<li>
 <b>uNumVirtualStation</b> = 0
 
-<b>One 802.11 Virtual Station
+</li>
+</ul><b>One 802.11 Virtual Station
      </b>
+<ul>
+<li>
+<b>uNumInfrastructure</b> = 1
 
+</li>
+<li>
+<b>uNumAdhoc</b> = 0
+
+</li>
+<li>
+<b>uNumSoftAP</b> = 1
+
+</li>
+<li>
 <b>uNumVirtualStation</b> = 1
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,15 +144,12 @@ The miniport driver must set the members of
 | **Minimum UMDF version** |  |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_COMBINATION_V2 structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_VWIFI_COMBINATION_V2 structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

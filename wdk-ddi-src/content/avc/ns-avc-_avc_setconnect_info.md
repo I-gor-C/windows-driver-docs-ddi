@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 16672908-6f1f-471b-b82e-d548e3efeb20
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _AVC_SETCONNECT_INFO, AVC_SETCONNECT_INFO, *PAVC_SETCONNECT_INFO
+ms.keywords : avc/AVC_SETCONNECT_INFO, AVC_SETCONNECT_INFO structure [Streaming Media Devices], _AVC_SETCONNECT_INFO, avc/PAVC_SETCONNECT_INFO, PAVC_SETCONNECT_INFO structure pointer [Streaming Media Devices], PAVC_SETCONNECT_INFO, stream.avc_setconnect_info, avcref_eec9cff7-6ae3-49d3-a649-349b8284630b.xml, *PAVC_SETCONNECT_INFO, AVC_SETCONNECT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AVC_SETCONNECT_INFO
-req.alt-loc : avc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : AVC_SETCONNECT_INFO, *PAVC_SETCONNECT_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PAVC_SETCONNECT_INFO, AVC_SETCONNECT_INFO"
 ---
 
 # _AVC_SETCONNECT_INFO structure
@@ -47,17 +51,17 @@ typedef struct _AVC_SETCONNECT_INFO {
 
 ## Members
 
-        
-            `ConnectInfo`
 
-            The AVCCONNECTINFO values for the specified pin.
-        
-            `PinId`
+`ConnectInfo`
 
-            Specifies the offset (or ID) of the pin for which information is to be set.
+The AVCCONNECTINFO values for the specified pin.
 
-    ## Remarks
-        This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554171">AVC_FUNCTION_SET_CONNECTINFO</a> function code.
+`PinId`
+
+Specifies the offset (or ID) of the pin for which information is to be set.
+
+## Remarks
+This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554171">AVC_FUNCTION_SET_CONNECTINFO</a> function code.
 
 This structure is used only as a member inside the AVC_MULTIFUNC_IRB structure. It is not used by itself.
 
@@ -71,19 +75,14 @@ See <a href="https://msdn.microsoft.com/3b4ec139-ff01-40bd-8e29-92f554180585">Ho
 | **Minimum UMDF version** |  |
 | **Header** | avc.h (include Avc.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\avc\ns-avc-_avc_multifunc_irb.md">AVC_MULTIFUNC_IRB</a>
-</dt>
-<dt>
+
 <a href="..\avc\ne-avc-_tagavc_function.md">AVC_FUNCTION</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554171">AVC_FUNCTION_SET_CONNECTINFO</a>
-</dt>
-</dl>
+
  
 
  

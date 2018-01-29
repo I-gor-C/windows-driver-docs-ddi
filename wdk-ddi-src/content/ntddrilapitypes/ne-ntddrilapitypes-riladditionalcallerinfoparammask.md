@@ -7,8 +7,8 @@ old-location : netvista\riladditionalcallerinfoparammask.htm
 old-project : netvista
 ms.assetid : b37246ed-37b8-4d5f-aace-41053ea839da
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILADDITIONALCALLERINFOPARAMMASK, RILADDITIONALCALLERINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RIL_PARAM_ADDTLCI_CALLERINFO, RIL_PARAM_ADDTLCI_ALL, ntddrilapitypes/RIL_PARAM_ADDTLCI_CALLID, RIL_PARAM_ADDTLCI_CALLERINFOLENGTH, RIL_PARAM_ADDTLCI_CALLID, RILADDITIONALCALLERINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_ADDTLCI_CALLERINFO, netvista.riladditionalcallerinfoparammask, ntddrilapitypes/RIL_PARAM_ADDTLCI_ALL, ntddrilapitypes/RILADDITIONALCALLERINFOPARAMMASK, RILADDITIONALCALLERINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_ADDTLCI_CALLERINFOLENGTH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILADDITIONALCALLERINFOPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILADDITIONALCALLERINFOPARAMMASK
 ---
 
@@ -68,6 +72,11 @@ typedef enum _RILADDITIONALCALLERINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_ADDTLCI_CALLID</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_ADDTLCI_EXECUTOR</td>
 <td></td>
 </tr>
 </table>

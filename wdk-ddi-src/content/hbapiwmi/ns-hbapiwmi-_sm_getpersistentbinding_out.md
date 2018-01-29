@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : aa80e05c-e322-4350-80e7-28d53821c510
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _SM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT
+ms.keywords : SM_GetPersistentBinding_OUT, PSM_GetPersistentBinding_OUT structure pointer [Storage Devices], hbapiwmi/SM_GetPersistentBinding_OUT, PSM_GetPersistentBinding_OUT, structs-Fibre_51ba485a-c18a-4d45-a77a-859d55acc4c6.xml, SM_GetPersistentBinding_OUT structure [Storage Devices], hbapiwmi/PSM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT, storage.sm_getpersistentbinding_out, _SM_GetPersistentBinding_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SM_GetPersistentBinding_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT"
 ---
 
 # _SM_GetPersistentBinding_OUT structure
@@ -49,25 +53,25 @@ typedef struct _SM_GetPersistentBinding_OUT {
 
 ## Members
 
-        
-            `Entry`
 
-            An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.
-        
-            `HBAStatus`
+`Entry`
 
-            The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
-        
-            `OutEntryCount`
+An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.
 
-            The total number of mappings that are retrieved. This value will be less than or equal to TotalEntryCount.
-        
-            `TotalEntryCount`
+`HBAStatus`
 
-            The total number of persistent bindings that are associated with the HBA.
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the SM_GetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>
+`OutEntryCount`
+
+The total number of mappings that are retrieved. This value will be less than or equal to TotalEntryCount.
+
+`TotalEntryCount`
+
+The total number of persistent bindings that are associated with the HBA.
+
+## Remarks
+The WMI tool suite generates a declaration of the SM_GetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
 
 ## Requirements
 | &nbsp; | &nbsp; |

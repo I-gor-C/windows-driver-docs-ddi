@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 80F7546C-3683-460B-A0D9-AD41386E6195
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DXVA_VideoSample32, DXVA_VideoSample32
+ms.keywords : storage.ioctl_ehstor_bandmgmt_enumerate_bands, IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoSample32
 ---
 
@@ -59,11 +63,48 @@ The length of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_pa
 <text></text>
 
 ### Status Block
-I/O Status block
-The <b>Information</b> field contains the number of bytes returned in the output buffer. One of the following values can be returned in the <b>Status</b> field.
+The <b>Information</b> field contains the number of bytes returned in the output buffer. One of the following values can be returned in the <b>Status</b> field. 
+<table>
+<tr>
+<th>Status Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STATUS_SUCCESS</td>
+<td>Security features on the storage device were deactivated.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_DEVICE_REQUEST</td>
+<td>The storage device does not support band management.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_BUFFER_SIZE</td>
+<td>The input buffer size is invalid.</td>
+</tr>
+<tr>
+<td>STATUS_INVALID_PARAMETER</td>
+<td>Information in the input buffer is invalid.</td>
+</tr>
+<tr>
+<td>STATUS_NOT_FOUND</td>
+<td>No bands are configured for the enumeration parameters provided.</td>
+</tr>
+<tr>
+<td>STATUS_BUFFER_OVERFLOW</td>
+<td>A buffer is not provided or its size set to zero. The required size is returned in the <b>Information</b> field.</td>
+</tr>
+<tr>
+<td>STATUS_IO_DEVICE_ERROR</td>
+<td>Communication failed. The storage device might be incompatible with security protocols. </td>
+</tr>
+<tr>
+<td>STATUS_BUFFER_TOO_SMALL</td>
+<td>The output buffer supplied is not large enough to hold the output data returned.</td>
+</tr>
+</table>
 
-    ## Remarks
-        A driver or application can query for the necessary output buffer size by setting the output buffer for the request to NULL and the output size to 0. The <b>IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</b> request will return with the <b>Status</b> field of the <i>IoStatus</i> block set to STATUS_BUFFER_OVERFLOW and the <b>Information</b> field will contain the required buffer size.
+## Remarks
+A driver or application can query for the necessary output buffer size by setting the output buffer for the request to NULL and the output size to 0. The <b>IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</b> request will return with the <b>Status</b> field of the <i>IoStatus</i> block set to STATUS_BUFFER_OVERFLOW and the <b>Information</b> field will contain the required buffer size.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,14 +113,12 @@ The <b>Information</b> field contains the number of bytes returned in the output
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">BAND_TABLE</a>
-</dt>
-<dt><b>ENUMERATE_BANDS_PARAMETERS</b></dt>
-</dl>
+
+<b>ENUMERATE_BANDS_PARAMETERS</b>
+
  
 
  

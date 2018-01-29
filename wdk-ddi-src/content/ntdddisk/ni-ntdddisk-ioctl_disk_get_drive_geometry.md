@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 571308bc-1e8e-437a-8819-8b28251a3f03
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DETECTION_TYPE, DETECTION_TYPE
+ms.keywords : storage.ioctl_disk_get_drive_geometry, IOCTL_DISK_GET_DRIVE_GEOMETRY control code [Storage Devices], IOCTL_DISK_GET_DRIVE_GEOMETRY, ntdddisk/IOCTL_DISK_GET_DRIVE_GEOMETRY, k307_e6bc4a05-f2cf-40f7-9632-b78da2087662.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_DISK_GET_DRIVE_GEOMETRY
-req.alt-loc : Ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_DRIVE_GEOMETRY IOCTL
-Returns information about the physical disk's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
-
-
-
 Returns information about the physical disk's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
 
 ### Major Code
@@ -63,7 +63,6 @@ The driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the size, in bytes, of the returned data. The <b>Status</b> field can be set to STATUS_SUCCESS, or possibly to STATUS_UNRECOGNIZED_MEDIA, STATUS_INVALID_PARAMETER, STATUS_INVALID_DEVICE_REQUEST, STATUS_INFO_LENGTH_MISMATCH, STATUS_INSUFFICIENT_RESOURCES, or STATUS_BUFFER_TOO_SMALL.
 
 
@@ -74,13 +73,10 @@ The <b>Information</b> field is set to the size, in bytes, of the returned data.
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9e998e54-b4c9-41ed-bba8-6f11c013f681
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, IWDFDevice::GetDefaultIoQueue, GetDefaultIoQueue
+ms.keywords : GetDefaultIoQueue method, IWDFDevice interface, umdf.iwdfdevice_getdefaultioqueue, IWDFDevice::GetDefaultIoQueue, wudfddi/IWDFDevice::GetDefaultIoQueue, IWDFDevice, GetDefaultIoQueue, wdf.iwdfdevice_getdefaultioqueue, GetDefaultIoQueue method, IWDFDevice interface, GetDefaultIoQueue method, UMDFDeviceObjectRef_b4c10b3b-eba4-4e6c-8f9e-80c32705f43d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFDevice.GetDefaultIoQueue
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ For more information about queue objects, see <a href="https://docs.microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
  
 
  

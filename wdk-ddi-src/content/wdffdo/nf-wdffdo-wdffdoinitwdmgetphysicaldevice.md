@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : eba64244-50ff-4c59-a30f-46874c683e63
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFdoInitWdmGetPhysicalDevice
+ms.keywords : DFDeviceObjectFdoPdoRef_49386e60-3427-449c-8c36-fe2e8bc7fabb.xml, WdfFdoInitWdmGetPhysicalDevice, wdf.wdffdoinitwdmgetphysicaldevice, kmdf.wdffdoinitwdmgetphysicaldevice, wdffdo/WdfFdoInitWdmGetPhysicalDevice, WdfFdoInitWdmGetPhysicalDevice method, PFN_WDFFDOINITWDMGETPHYSICALDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 
-req.alt-api : WdfFdoInitWdmGetPhysicalDevice
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll
 req.ddi-compliance : DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
@@ -65,8 +69,6 @@ If the operation succeeds, the method returns a pointer to a <a href="..\wdm\ns-
 The driver must call <b>WdfFdoInitWdmGetPhysicalDevice</b> before calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
 
 For more information about the <b>WdfFdoInitWdmGetPhysicalDevice</b> method, see <a href="https://msdn.microsoft.com/3b988f6d-c50e-412d-85cb-031746535ff4">Creating Device Objects in a Function Driver</a>.
-
-The following code example obtains a pointer to a DEVICE_OBJECT structure that represents a device's WDM PDO.</p>
 
 ## Requirements
 | &nbsp; | &nbsp; |

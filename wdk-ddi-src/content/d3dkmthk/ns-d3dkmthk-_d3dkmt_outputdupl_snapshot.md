@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bec6a398-34e8-4c03-ac15-c3f00645eac7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OUTPUTDUPL_SNAPSHOT, D3DKMT_OUTPUTDUPL_SNAPSHOT
+ms.keywords : d3dkmthk/D3DKMT_OUTPUTDUPL_SNAPSHOT, _D3DKMT_OUTPUTDUPL_SNAPSHOT, display.d3dkmt_outputdupl_snapshot, D3DKMT_OUTPUTDUPL_SNAPSHOT structure [Display Devices], D3DKMT_OUTPUTDUPL_SNAPSHOT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OUTPUTDUPL_SNAPSHOT
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OUTPUTDUPL_SNAPSHOT
 ---
 
@@ -51,30 +55,30 @@ typedef struct _D3DKMT_OUTPUTDUPL_SNAPSHOT {
 
 ## Members
 
-        
-            `NumOutputDuplContexts`
 
-            [out] The number of contexts in which output duplication is occurring.
-        
-            `NumVidPnSources`
+`NumOutputDuplContexts`
 
-            [out] The number of video present network (VidPN) sources.
-        
-            `OutputDuplDebugInfos`
+[out] The number of contexts in which output duplication is occurring.
 
-            Reserved for system use. Set to zero.
-        
-            `SessionActiveConnectionsCount`
+`NumVidPnSources`
 
-            [out] The total number of active contexts in this session. The value may be more than the number of active contexts in the 2-D array, which are per adapter.
-        
-            `SessionProcessCount`
+[out] The number of video present network (VidPN) sources.
 
-            [out] The number of processes in this session that are currently duplicating output. The value of <b>NumOutputDuplContexts</b> specifies the maximum possible number of processes.
-        
-            `Size`
+`OutputDuplDebugInfos`
 
-            [in/out] The size, in bytes, of the entire structure.
+Reserved for system use. Set to zero.
+
+`SessionActiveConnectionsCount`
+
+[out] The total number of active contexts in this session. The value may be more than the number of active contexts in the 2-D array, which are per adapter.
+
+`SessionProcessCount`
+
+[out] The number of processes in this session that are currently duplicating output. The value of <b>NumOutputDuplContexts</b> specifies the maximum possible number of processes.
+
+`Size`
+
+[in/out] The size, in bytes, of the entire structure.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 11181574-b329-4182-8d17-93d44cb3b839
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortGetScatterGatherList
+ms.keywords : AtaPortGetScatterGatherList routine [Storage Devices], irb/AtaPortGetScatterGatherList, storage.ataportgetscattergatherlist, atartns_ef8ff0f5-2d1c-47e1-bf1a-2b554de3969d.xml, AtaPortGetScatterGatherList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortGetScatterGatherList
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortGetScatterGatherList function
 The <b>AtaPortGetScatterGatherList</b> routine retrieves the scatter/gather list that is associated with this request.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -82,11 +87,8 @@ The miniport driver must not modify the scatter/gather list.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

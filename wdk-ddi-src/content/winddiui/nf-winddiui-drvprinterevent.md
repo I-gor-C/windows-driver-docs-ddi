@@ -7,8 +7,8 @@ old-location : print\drvprinterevent.htm
 old-project : print
 ms.assetid : 7566f92d-0e25-44bf-a2b3-587bb11a7d03
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : DrvPrinterEvent
+ms.date : 1/18/2018
+ms.keywords : winddiui/DrvPrinterEvent, print.drvprinterevent, DrvPrinterEvent function [Print Devices], print_interface-graphics_5bfc5cb2-1835-4659-afa7-7b3bbb7ee051.xml, DrvPrinterEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DrvPrinterEvent
-req.alt-loc : winddiui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
 req.product : Windows 10 or later.
 ---
 
@@ -59,7 +63,6 @@ Caller-supplied pointer to a NULL-terminated printer name string. The string for
 `DriverEvent`
 
 Caller-supplied event code identifying the event. The following event codes are defined:
-
 <table>
 <tr>
 <th>Event Code</th>
@@ -164,7 +167,6 @@ The PRINTER_EVENT_INITIALIZE event specifies a <b>NULL</b> lParam parameter valu
 `Flags`
 
 Caller-supplied bit flag, defined as follows:
-
 <table>
 <tr>
 <th>Value</th>
@@ -205,7 +207,7 @@ For the PRINTER_EVENT_ADD_CONNECTION and PRINTER_EVENT_DELETE_CONNECTION event c
 
 An example of a driver that might display a user interface when a connection is made is a FAX driver, which could prompt the user for the name and telephone number of the user (FAX sender), and save the information until the connection is deleted.
 
-An example of the type of file that might be stored in a client cache is a large font-metrics file that contains too much information to be written to the registry. When the <b>DrvPrinterEvent</b> function's event code is PRINTER_EVENT_CACHE_REFRESH, the printer interface DLL can reload the file from the server to ensure the cache is up to date.</p>
+An example of the type of file that might be stored in a client cache is a large font-metrics file that contains too much information to be written to the registry. When the <b>DrvPrinterEvent</b> function's event code is PRINTER_EVENT_CACHE_REFRESH, the printer interface DLL can reload the file from the server to ensure the cache is up to date.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 721AE7FE-927C-4EBA-B33D-C5A5A986951C
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _NFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
+ms.keywords : nfpdrivers.ioctl_nfcserm_set_radio_state, IOCTL_NFCSERM_SET_RADIO_STATE control code [Near-Field Proximity Drivers], IOCTL_NFCSERM_SET_RADIO_STATE, nfcradiodev/IOCTL_NFCSERM_SET_RADIO_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_NFCSERM_SET_RADIO_STATE
-req.alt-loc : nfcradiodev.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG"
 ---
 
 # IOCTL_NFCSERM_SET_RADIO_STATE IOCTL
@@ -59,8 +63,21 @@ None
 <text></text>
 
 ### Status Block
-I/O Status block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<table>
+<tr>
+<th>Return Code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_DEVICE_STATE</b></td>
+<td>This code is returned when the device is already in the proximity radio power state that is being set by the client.</td>
+</tr>
+<tr>
+<td><b>STATUS_INVALID_PARAMETER</b></td>
+<td>This code is returned when the output buffer is non-zero.</td>
+</tr>
+</table>
 
 
 ## Requirements

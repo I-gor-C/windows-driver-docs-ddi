@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 425239C1-4FBE-4703-B7DB-9DCC17562A6C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords : kernel.halt, Halt routine [Kernel-Mode Driver Architecture], Halt, PROCESSOR_HALT_ROUTINE, PROCESSOR_HALT_ROUTINE, wdm/Halt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : Halt
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
@@ -81,14 +85,10 @@ The PEP's <i>Halt</i> routine is called at the same IRQL at which the PEP called
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\pepfx\nc-pepfx-pofxcallbackprocessorhalt.md">ProcessorHalt</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
+
  
 
  

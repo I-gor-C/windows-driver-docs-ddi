@@ -7,8 +7,8 @@ old-location : netvista\riluiccslotinfoparammask.htm
 old-project : netvista
 ms.assetid : f99fc76e-a569-4a7e-9f8d-3f604ccfa6a3
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILUICCSLOTINFOPARAMMASK, RILUICCSLOTINFOPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : ntddrilapitypes/RIL_PARAM_SLOTINFO_ALL, ntddrilapitypes/RIL_PARAM_SLOTINFO_SLOTSTATE, RIL_PARAM_SLOTINFO_SLOTSTATE, RILUICCSLOTINFOPARAMMASK, RIL_PARAM_SLOTINFO_ALL, RILUICCSLOTINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILUICCSLOTINFOPARAMMASK, netvista.riluiccslotinfoparammask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILUICCSLOTINFOPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILUICCSLOTINFOPARAMMASK
 ---
 
@@ -51,6 +55,11 @@ typedef enum _RILUICCSLOTINFOPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_SLOTINFO_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SLOTINFO_NUMSLOTS</td>
 <td></td>
 </tr>
 

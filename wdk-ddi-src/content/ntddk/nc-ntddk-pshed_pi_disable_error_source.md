@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 062927db-9581-447a-820b-82687710ea8d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords : whea.disableerrorsource, DisableErrorSource callback function [WHEA Drivers and Applications], DisableErrorSource, PSHED_PI_DISABLE_ERROR_SOURCE, PSHED_PI_DISABLE_ERROR_SOURCE, ntddk/DisableErrorSource, whearef_41df46d2-6f6e-47aa-8296-cdc9223a9f26.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DisableErrorSource
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 
@@ -64,15 +68,45 @@ A pointer to a <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA
 ## Return Value
 
 A PSHED plug-in's <i>DisableErrorSource</i> callback function returns one of the following NTSTATUS codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The error source was successfully disabled.
+</dl>
+</td>
+<td width="60%">
+The error source was successfully disabled.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The PSHED plug-in does not support disabling the specified error source.
+</dl>
+</td>
+<td width="60%">
+The PSHED plug-in does not support disabling the specified error source.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>An error occurred.
+</dl>
+</td>
+<td width="60%">
+An error occurred.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -96,23 +130,16 @@ If the PSHED plug-in successfully disables the error source, the PSHED will upda
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
-</dt>
-<dt>
-<a href="..\ntddk\nc-ntddk-pshed_pi_enable_error_source.md">EnableErrorSource</a>
-</dt>
-<dt>
 <a href="..\ntddk\nc-ntddk-pshed_pi_set_error_source_info.md">SetErrorSourceInfo</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
-</dt>
-</dl>
+
+<a href="..\ntddk\nc-ntddk-pshed_pi_enable_error_source.md">EnableErrorSource</a>
+
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
  
 
  

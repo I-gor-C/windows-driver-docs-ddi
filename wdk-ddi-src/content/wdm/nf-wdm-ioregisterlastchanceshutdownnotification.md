@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9ee590ce-e822-4c15-bb01-6f726268f163
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRegisterLastChanceShutdownNotification
+ms.keywords : wdm/IoRegisterLastChanceShutdownNotification, k104_233a75d7-252b-45e3-a980-bda55edd3fdc.xml, IoRegisterLastChanceShutdownNotification routine [Kernel-Mode Driver Architecture], IoRegisterLastChanceShutdownNotification, kernel.ioregisterlastchanceshutdownnotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoRegisterLastChanceShutdownNotification
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -67,14 +71,20 @@ For any device that is registered with this routine, the system sends the <b>IRP
 If the driver ceases to require shutdown notification for that device, use <a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a> to remove the driver from the shutdown notification queue.
 
 A driver that calls <b>IoRegisterLastChanceShutdownNotification</b> must satisfy the following restrictions in its <i>DispatchShutdown</i> routine:
-
+<ul>
+<li>
 The <i>DispatchShutdown</i> routine must not call any pageable routines.
 
+</li>
+<li>
 The <i>DispatchShutdown</i> routine must not access pageable memory.
 
+</li>
+<li>
 The <i>DispatchShutdown</i> routine must not perform any file I/O operations.
 
-Most drivers that require shutdown notification should call the <a href="..\wdm\nf-wdm-ioregistershutdownnotification.md">IoRegisterShutdownNotification</a> routine, which does not impose these limitations on the <i>DispatchShutdown</i> routine, and which causes the <i>DispatchShutdown</i> routine to be called before the file systems are flushed. Only drivers that must do some cleanup after the file systems are flushed, such as a driver for a mass storage device, should use <b>IoRegisterLastChanceShutdownNotification</b>.
+</li>
+</ul>Most drivers that require shutdown notification should call the <a href="..\wdm\nf-wdm-ioregistershutdownnotification.md">IoRegisterShutdownNotification</a> routine, which does not impose these limitations on the <i>DispatchShutdown</i> routine, and which causes the <i>DispatchShutdown</i> routine to be called before the file systems are flushed. Only drivers that must do some cleanup after the file systems are flushed, such as a driver for a mass storage device, should use <b>IoRegisterLastChanceShutdownNotification</b>.
 
 The registered <i>DispatchShutdown</i> routine is called before the power manager sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request for <b>PowerSystemShutdown</b>. The <i>DispatchShutdown</i> routine is not called for transitions to any other power states.
 
@@ -92,17 +102,12 @@ The registered <i>DispatchShutdown</i> routine is called before the power manage
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioregistershutdownnotification.md">IoRegisterShutdownNotification</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioregistershutdownnotification.md">IoRegisterShutdownNotification</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
+
  
 
  

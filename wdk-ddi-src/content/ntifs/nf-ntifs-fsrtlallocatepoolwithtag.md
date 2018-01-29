@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a9ea59d1-1d51-4332-b497-7d2b7f39e686
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlAllocatePoolWithTag
+ms.keywords : ifsk.fsrtlallocatepoolwithtag, FsRtlAllocatePoolWithTag, fsrtlref_1137174c-fe54-4575-98a6-64a569f91b96.xml, ntifs/FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlAllocatePoolWithTag
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -62,9 +66,7 @@ Type of pool to allocate. One of the following:
 <li><b>PagedPoolCacheAligned</b></li>
 </ul>
 
-
-<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div>
-<div> </div>
+<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div><div> </div>
 
 `NumberOfBytes`
 
@@ -103,14 +105,10 @@ Callers of <b>FsRtlAllocatePoolWithTag</b> must be running at IRQL &lt;= DISPATC
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
  
 
  

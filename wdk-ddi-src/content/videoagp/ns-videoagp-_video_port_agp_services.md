@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3e7d8f8e-a213-48ca-8a90-5d861271f6a2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
+ms.keywords : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES structure [Display Devices], VIDEO_PORT_AGP_SERVICES, videoagp/VIDEO_PORT_AGP_SERVICES, PVIDEO_PORT_AGP_SERVICES structure pointer [Display Devices], display.video_port_agp_services, videoagp/PVIDEO_PORT_AGP_SERVICES, _VIDEO_PORT_AGP_SERVICES, Video_Structs_a667f879-7c09-4f48-9b23-920bb68a08cb.xml, PVIDEO_PORT_AGP_SERVICES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_PORT_AGP_SERVICES
-req.alt-loc : videoagp.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product : Windows 10 or later.
 ---
 
@@ -57,42 +61,42 @@ typedef struct _VIDEO_PORT_AGP_SERVICES {
 
 ## Members
 
-        
-            `AgpCommitPhysical`
 
-            
-        
-            `AgpCommitVirtual`
+`AgpCommitPhysical`
 
-            
-        
-            `AgpFreePhysical`
 
-            
-        
-            `AgpFreeVirtual`
 
-            
-        
-            `AgpReleasePhysical`
+`AgpCommitVirtual`
 
-            
-        
-            `AgpReleaseVirtual`
 
-            
-        
-            `AgpReservePhysical`
 
-            
-        
-            `AgpReserveVirtual`
+`AgpFreePhysical`
 
-            
-        
-            `AllocationLimit`
 
-            
+
+`AgpFreeVirtual`
+
+
+
+`AgpReleasePhysical`
+
+
+
+`AgpReleaseVirtual`
+
+
+
+`AgpReservePhysical`
+
+
+
+`AgpReserveVirtual`
+
+
+
+`AllocationLimit`
+
+
 
 
 ## Requirements

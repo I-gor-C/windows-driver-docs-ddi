@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1d577588-72cf-44f2-b1bb-ebab0ee52fd6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetConfigurationInformation
+ms.keywords : IoGetConfigurationInformation routine [Kernel-Mode Driver Architecture], kernel.iogetconfigurationinformation, IoGetConfigurationInformation, k104_5f9c4d01-9724-4e1d-8154-3737f0809068.xml, ntddk/IoGetConfigurationInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoGetConfigurationInformation
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -51,10 +55,56 @@ This function has no parameters.
 ## Return Value
 
 <b>IoGetConfigurationInformation</b> returns a pointer to the configuration information structure. This structure is defined as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _CONFIGURATION_INFORMATION {
 
-<b>IoGetConfigurationInformation</b> returns a pointer to the configuration information structure. This structure is defined as follows:
+    //
+    // This field indicates the total number of disks in the system. This
+    // number should be used by the driver to determine the names of new
+    // disks. This field should be updated by the driver as it finds new
+    // disks.
+    //
 
-<b>IoGetConfigurationInformation</b> returns a pointer to the configuration information structure. This structure is defined as follows:
+    ULONG DiskCount;                // Count of hard disks thus far
+    ULONG FloppyCount;              // Count of floppy disks thus far
+    ULONG CdRomCount;               // Count of CD-ROM drives thus far
+    ULONG TapeCount;                // Count of tape drives thus far
+    ULONG ScsiPortCount;            // Count of SCSI port adapters thus far
+    ULONG SerialCount;              // Count of serial devices thus far
+    ULONG ParallelCount;            // Count of parallel devices thus far
+
+    //
+    // These next two fields indicate ownership of the two I/O address
+    // spaces that are used by WD1003-compatible disk controllers.
+    //
+
+    BOOLEAN AtDiskPrimaryAddressClaimed;    // 0x1F0 - 0x1FF
+    BOOLEAN AtDiskSecondaryAddressClaimed;  // 0x170 - 0x17F
+
+    //
+    // Indicates the structure version, as anything value beyond this will have been added.
+    // Use the structure size as the version.
+    //
+
+    ULONG Version;
+
+    //
+    // Indicates the total number of medium changer devices in the system.
+    // This field will be updated by the drivers as it determines that
+    // new devices have been found and will be supported.
+    //
+
+    ULONG MediumChangerCount;
+
+} CONFIGURATION_INFORMATION, *PCONFIGURATION_INFORMATION;</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Remarks
 
@@ -80,26 +130,18 @@ The configuration information structure also contains a value indicating whether
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546580">HalAssignSlotResources</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546580">HalAssignSlotResources</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
+
  
 
  

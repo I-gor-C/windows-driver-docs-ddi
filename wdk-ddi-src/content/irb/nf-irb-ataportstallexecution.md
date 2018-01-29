@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5dae484f-fb79-4291-bae5-dba0be7f9b97
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortStallExecution
+ms.keywords : AtaPortStallExecution function [Storage Devices], atartns_3a78519d-4ee5-4a4a-9564-1d2bbd256300.xml, AtaPortStallExecution, irb/AtaPortStallExecution, storage.ataportstallexecution
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortStallExecution
-req.alt-loc : ataport.lib,ataport.dll,pciidex.lib,pciidex.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,19 @@ req.type-library :
 req.lib : Ataport.lib; Pciidex.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortStallExecution function
 The <b>AtaPortStallExecution</b> stalls in the miniport driver.
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -79,11 +84,8 @@ Miniport drivers should use the <a href="..\irb\nf-irb-ataportrequesttimer.md">A
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportrequesttimer.md">AtaPortRequestTimer</a>
-</dt>
-</dl>
+
  
 
  

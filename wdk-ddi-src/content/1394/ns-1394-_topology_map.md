@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 0a4c7ffc-94f9-4068-b650-1da43e45d0ad
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _TOPOLOGY_MAP, TOPOLOGY_MAP, *PTOPOLOGY_MAP
+ms.keywords : _TOPOLOGY_MAP, 1394stct_4afaf64f-e60c-4521-91c7-82abefd49b55.xml, 1394/PTOPOLOGY_MAP, TOPOLOGY_MAP structure [Buses], 1394/TOPOLOGY_MAP, IEEE.topology_map, PTOPOLOGY_MAP, TOPOLOGY_MAP, *PTOPOLOGY_MAP, PTOPOLOGY_MAP structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TOPOLOGY_MAP
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : TOPOLOGY_MAP, *PTOPOLOGY_MAP
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PTOPOLOGY_MAP, TOPOLOGY_MAP"
 ---
 
 # _TOPOLOGY_MAP structure
@@ -51,33 +55,33 @@ typedef struct _TOPOLOGY_MAP {
 
 ## Members
 
-        
-            `TOP_CRC`
 
-            Specifies the CRC value for the topology map.
-        
-            `TOP_Generation`
+`TOP_CRC`
 
-            Specifies the bus reset generation for which the topology map was created.
-        
-            `TOP_Length`
+Specifies the CRC value for the topology map.
 
-            Specifies the length in quadlets of the topology map.
-        
-            `TOP_Node_Count`
+`TOP_Generation`
 
-            Specifies the number of nodes in the topology map.
-        
-            `TOP_Self_ID_Array`
+Specifies the bus reset generation for which the topology map was created.
 
-            Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff538073">SELF_ID</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff538080">SELF_ID_MORE</a> structures (the two structures are the same size).
-        
-            `TOP_Self_ID_Count`
+`TOP_Length`
 
-            Specifies the number of entries in <b>TOP_Self_ID_Array</b>.
+Specifies the length in quadlets of the topology map.
 
-    ## Remarks
-        All data will be in big-endian format.
+`TOP_Node_Count`
+
+Specifies the number of nodes in the topology map.
+
+`TOP_Self_ID_Array`
+
+Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff538073">SELF_ID</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff538080">SELF_ID_MORE</a> structures (the two structures are the same size).
+
+`TOP_Self_ID_Count`
+
+Specifies the number of entries in <b>TOP_Self_ID_Array</b>.
+
+## Remarks
+All data will be in big-endian format.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,13 +91,10 @@ typedef struct _TOPOLOGY_MAP {
 | **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537646">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
-</dt>
-</dl>
+
  
 
  

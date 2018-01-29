@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 684a0b26-0e25-44fb-bca9-c86ac029b3b8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+ms.keywords : PKSP_BDA_NODE_PIN, bdamedia/KSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN, bdamedia/PKSP_BDA_NODE_PIN, bdaref_5e3a84db-906c-4d12-863d-9a77b2f7d78c.xml, PKSP_BDA_NODE_PIN structure pointer [Streaming Media Devices], _KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN structure [Streaming Media Devices], stream.ksp_bda_node_pin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSP_BDA_NODE_PIN
-req.alt-loc : bdamedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
@@ -49,22 +53,22 @@ typedef struct _KSP_BDA_NODE_PIN {
 
 ## Members
 
-        
-            `Property`
 
-            KSPROPERTY structure that describes the property and request type of the property request.
-        
-            `ulInputPinId`
+`Property`
 
-            Identifier of an input pin of the filter.
-        
-            `ulNodeType`
+KSPROPERTY structure that describes the property and request type of the property request.
 
-            Index of the element in the zero-based array of internal node types (KSNODE_DESCRIPTOR array) that specifies the node type for which to retrieve the controlling pin.
-        
-            `ulOutputPinId`
+`ulInputPinId`
 
-            Identifier of an output pin of the filter.
+Identifier of an input pin of the filter.
+
+`ulNodeType`
+
+Index of the element in the zero-based array of internal node types (KSNODE_DESCRIPTOR array) that specifies the node type for which to retrieve the controlling pin.
+
+`ulOutputPinId`
+
+Identifier of an output pin of the filter.
 
 
 ## Requirements
@@ -75,22 +79,16 @@ typedef struct _KSP_BDA_NODE_PIN {
 | **Minimum UMDF version** |  |
 | **Header** | bdamedia.h (include Bdamedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\bdasup\nf-bdasup-bdapropertygetcontrollingpinid.md">BdaPropertyGetControllingPinId</a>
-</dt>
-<dt>
-<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
+
+<a href="..\bdasup\nf-bdasup-bdapropertygetcontrollingpinid.md">BdaPropertyGetControllingPinId</a>
+
  
 
  

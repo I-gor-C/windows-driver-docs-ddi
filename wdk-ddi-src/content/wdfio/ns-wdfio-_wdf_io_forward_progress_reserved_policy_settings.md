@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 28ffe82f-79b6-4a00-b4fa-36df5df303a6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS
+ms.keywords : wdfio/WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, wdf.wdf_io_forward_progress_reserved_policy_settings, kmdf.wdf_io_forward_progress_reserved_policy_settings, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS structure, DFQueueObjectRef_47fb2461-dada-4f4e-aba8-91759b3092ea.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.9
 req.umdf-ver : 
-req.alt-api : WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS
-req.alt-loc : wdfio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any IRQL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS
 req.product : Windows 10 or later.
 ---
@@ -53,13 +57,13 @@ typedef struct _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS {
 
 ## Members
 
-        
-            `Policy`
 
-            
+`Policy`
 
-    ## Remarks
-        The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
+
+
+## Remarks
+The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

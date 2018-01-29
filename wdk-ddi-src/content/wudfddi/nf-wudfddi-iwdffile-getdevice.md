@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 914cc125-076e-40e1-baef-a12cba427b37
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFFile, IWDFFile::GetDevice, GetDevice
+ms.keywords : wdf.iwdffile_getdevice, UMDFFileObjectRef_67417dd5-53be-487b-a93f-711bbcd6b0dd.xml, GetDevice method, IWDFFile interface, GetDevice method, IWDFFile::GetDevice, umdf.iwdffile_getdevice, IWDFFile, wudfddi/IWDFFile::GetDevice, GetDevice, IWDFFile interface, GetDevice method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFFile.GetDevice
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -60,8 +64,6 @@ A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wu
 
 None
 
-The following code example shows how to get the device object that a file object is associated with.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,14 +79,10 @@ The following code example shows how to get the device object that a file object
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-</dl>
+
  
 
  

@@ -50,22 +50,22 @@ typedef union _PCW_CALLBACK_INFORMATION {
 
 ## Members
 
-        
-            `AddCounter`
 
-            The PCW_COUNTER_INFORMATION structure that identifies the counter being added.
-        
-            `CollectData`
+`AddCounter`
 
-            The PCW_MASK_INFORMATION structure that identifies the instance of the counter set and its buffer.
-        
-            `EnumerateInstances`
+The PCW_COUNTER_INFORMATION structure that identifies the counter being added.
 
-            The PCW_MASK_INFORMATION structure that identifies the instances of the counter set.
-        
-            `RemoveCounter`
+`CollectData`
 
-            The PCW_COUNTER_INFORMATION structure that identifies the counter being removed.
+The PCW_MASK_INFORMATION structure that identifies the instance of the counter set and its buffer.
+
+`EnumerateInstances`
+
+The PCW_MASK_INFORMATION structure that identifies the instances of the counter set.
+
+`RemoveCounter`
+
+The PCW_COUNTER_INFORMATION structure that identifies the counter being removed.
 
 
 ## Requirements
@@ -76,9 +76,9 @@ typedef union _PCW_CALLBACK_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
+<dl>
 <dt>
 <a href="..\wdm\ns-wdm-_pcw_counter_information.md">PCW_COUNTER_INFORMATION</a>
 </dt>

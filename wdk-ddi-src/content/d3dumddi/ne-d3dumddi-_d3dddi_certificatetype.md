@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0e3835af-0ccf-4f41-96e3-beff5fdecd36
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_CERTIFICATETYPE, D3DDDI_CERTIFICATETYPE
+ms.keywords : display.d3dddi_certificatetype, d3dumddi/D3DDDI_CERTTYPE_CRYPTOSESSION, d3dumddi/D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL, D3D_other_Structs_88de08de-61df-4401-9a7c-8cace88a545a.xml, D3DDDI_CERTIFICATETYPE, _D3DDDI_CERTIFICATETYPE, D3DDDI_CERTIFICATETYPE enumeration [Display Devices], d3dumddi/D3DDDI_CERTIFICATETYPE, D3DDDI_CERTTYPE_CRYPTOSESSION, D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DDDI_CERTIFICATETYPE is supported beginning with t
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_CERTIFICATETYPE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_CERTIFICATETYPE
 ---
 
@@ -74,17 +78,12 @@ The user-mode display driver receives a D3DDDI_CERTIFICATETYPE-typed value in th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
  
 
  

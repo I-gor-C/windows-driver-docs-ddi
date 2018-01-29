@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 50F5C1AD-BA51-4376-8093-E8596265FDAF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE
+ms.keywords : PowerMonitorOn, *PMONITOR_DISPLAY_STATE, kernel.monitor_display_state, MONITOR_DISPLAY_STATE enumeration [Kernel-Mode Driver Architecture], wdm/PowerMonitorOn, wdm/PowerMonitorOff, wdm/PowerMonitorDim, _MONITOR_DISPLAY_STATE, PowerMonitorOff, MONITOR_DISPLAY_STATE, wdm/MONITOR_DISPLAY_STATE, PowerMonitorDim
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MONITOR_DISPLAY_STATE
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PMONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE
 req.product : Windows 10 or later.
 ---
 

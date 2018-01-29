@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8E52A10E-5666-41B5-B342-491E5AF9DD38
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTOutputStream, IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, GetOutputStreamPresentationPosition
+ms.keywords : GetOutputStreamPresentationPosition method [Audio Devices], IMiniportWaveRTOutputStream interface, portcls/IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, IMiniportWaveRTOutputStream interface [Audio Devices], GetOutputStreamPresentationPosition method, IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, audio.iminiportwavertoutputstream_getoutputstreampresentationposition, GetOutputStreamPresentationPosition method [Audio Devices], GetOutputStreamPresentationPosition, IMiniportWaveRTOutputStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IMiniportWaveRTOutputStream.GetOutputStreamPresentationPosition
-req.alt-loc : portcls.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : portcls.h
 req.dll : 
 req.irql : Passive level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -81,11 +85,8 @@ This does not mean that GetPacketCount and GetOutputStreamPresentationPosition, 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\portcls\nn-portcls-iminiportwavertoutputstream.md">IMiniportWaveRTOutputStream</a>
-</dt>
-</dl>
+
  
 
  

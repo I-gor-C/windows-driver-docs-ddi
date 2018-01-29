@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3bb6232c-b87e-4358-ba0c-8854d641bfd8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCollectionGetItem
+ms.keywords : wdf.wdfcollectiongetitem, DFCollectionObjectRef_8476d0ef-d5e3-4dbc-95de-bbabd04c22bc.xml, wdfcollection/WdfCollectionGetItem, WdfCollectionGetItem, WdfCollectionGetItem method, kmdf.wdfcollectiongetitem, PFN_WDFCOLLECTIONGETITEM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfCollectionGetItem
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -73,8 +77,6 @@ Index values represent the order in which objects are added to a collection. An 
 
 For more information about object collections, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-collections">Framework Object Collections</a>.
 
-For a code example that uses <b>WdfCollectionGetItem</b>, see <a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetcount.md">WdfCollectionGetCount</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,14 +91,10 @@ For a code example that uses <b>WdfCollectionGetItem</b>, see <a href="..\wdfcol
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetfirstitem.md">WdfCollectionGetFirstItem</a>
-</dt>
-<dt>
 <a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetlastitem.md">WdfCollectionGetLastItem</a>
-</dt>
-</dl>
+
+<a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetfirstitem.md">WdfCollectionGetFirstItem</a>
+
  
 
  

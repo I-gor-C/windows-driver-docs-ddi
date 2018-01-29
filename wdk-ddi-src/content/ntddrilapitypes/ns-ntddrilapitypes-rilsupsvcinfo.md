@@ -7,8 +7,8 @@ old-location : netvista\rilsupsvcinfo.htm
 old-project : netvista
 ms.assetid : 1f8f7c8c-f09a-4bf5-a15b-42f210122b54
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSUPSVCINFO, RILSUPSVCINFO, *LPRILSUPSVCINFO
+ms.date : 1/18/2018
+ms.keywords : RILSUPSVCINFO structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILSUPSVCINFO, *LPRILSUPSVCINFO, RILSUPSVCINFO, netvista.rilsupsvcinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSUPSVCINFO
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSUPSVCINFO, *LPRILSUPSVCINFO
 ---
 
@@ -64,82 +68,82 @@ typedef struct _RILSUPSVCINFO {
 
 ## Members
 
-        
-            `aiIdentifier`
 
-            
-        
-            `callerIdSettings`
+`aiIdentifier`
 
-            
-        
-            `callForwardSettings`
 
-            
-        
-            `cbSize`
 
-            
-        
-            `dialedIdSettings`
+`callerIdSettings`
 
-            
-        
-            `dwCallBarringType`
 
-            
-        
-            `dwCallForwardingReason`
 
-            
-        
-            `dwExecutor`
+`callForwardSettings`
 
-            
-        
-            `dwFailureReason`
 
-            
-        
-            `dwInfoClasses`
 
-            
-        
-            `dwParams`
+`cbSize`
 
-            
-        
-            `dwSupSvcAction`
 
-            
-        
-            `dwSupSvcType`
 
-            
-        
-            `fFromNetwork`
+`dialedIdSettings`
 
-            
-        
-            `hideConnectedIdSettings`
 
-            
-        
-            `hideIdSettings`
 
-            
-        
-            `supServiceData`
+`dwCallBarringType`
 
-            
-        
-            `szCallBarringPassword`
 
-            
-        
-            `szNewCallBarringPassword`
 
-            
+`dwCallForwardingReason`
+
+
+
+`dwExecutor`
+
+
+
+`dwFailureReason`
+
+
+
+`dwInfoClasses`
+
+
+
+`dwParams`
+
+
+
+`dwSupSvcAction`
+
+
+
+`dwSupSvcType`
+
+
+
+`fFromNetwork`
+
+
+
+`hideConnectedIdSettings`
+
+
+
+`hideIdSettings`
+
+
+
+`supServiceData`
+
+
+
+`szCallBarringPassword`
+
+
+
+`szNewCallBarringPassword`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 72f1622f-a364-4d93-9c49-c4c7bcda6488
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ObDereferenceObjectDeferDeleteWithTag
+ms.keywords : k107_c6da92e4-6a70-4f19-bd09-4308964b1e14.xml, ObDereferenceObjectDeferDeleteWithTag routine [Kernel-Mode Driver Architecture], ObDereferenceObjectDeferDeleteWithTag, kernel.obdereferenceobjectdeferdeletewithtag, wdm/ObDereferenceObjectDeferDeleteWithTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObDereferenceObjectDeferDeleteWithTag
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -91,17 +95,12 @@ To view an object reference trace in the <a href="http://go.microsoft.com/fwlink
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobjectdeferdelete.md">ObDereferenceObjectDeferDelete</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-obdereferenceobjectdeferdelete.md">ObDereferenceObjectDeferDelete</a>
+
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandlewithtag.md">ObReferenceObjectByHandleWithTag</a>
-</dt>
-</dl>
+
  
 
  

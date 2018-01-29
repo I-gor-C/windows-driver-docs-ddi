@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8A8F938D-8F6B-47E0-963F-8E8B14033802
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FSINFOCLASS, FS_INFORMATION_CLASS, *PFS_INFORMATION_CLASS
+ms.keywords : wdm/FileFsVolumeInformation, FS_INFORMATION_CLASS, FileFsDriverPathInformation, FileFsDeviceInformation, wdm/FileFsFullSizeInformation, wdm/FileFsDeviceInformation, wdm/FileFsSectorSizeInformation, wdm/FileFsControlInformation, ifsk.fs_information_class, FileFsSizeInformation, wdm/FileFsDriverPathInformation, wdm/FS_INFORMATION_CLASS, wdm/FileFsAttributeInformation, FileFsVolumeFlagsInformation, FileFsSectorSizeInformation, *PFS_INFORMATION_CLASS, wdm/FileFsObjectIdInformation, wdm/FileFsSizeInformation, FS_INFORMATION_CLASS enumeration [Installable File System Drivers], FileFsAttributeInformation, _FSINFOCLASS, FileFsFullSizeInformation, FileFsControlInformation, wdm/FileFsLabelInformation, FileFsLabelInformation, wdm/FileFsVolumeFlagsInformation, FileFsVolumeInformation, FileFsObjectIdInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FS_INFORMATION_CLASS
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FS_INFORMATION_CLASS, *PFS_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
@@ -70,6 +74,11 @@ typedef enum  {
 </tr>
 
 <tr>
+<td>FileFsDataCopyInformation</td>
+<td></td>
+</tr>
+
+<tr>
 <td>FileFsDeviceInformation</td>
 <td>Return a <a href="..\wdm\ns-wdm-_file_fs_device_information.md">FILE_FS_DEVICE_INFORMATION</a> structure that contains device information for the volume.</td>
 </tr>
@@ -87,6 +96,16 @@ typedef enum  {
 <tr>
 <td>FileFsLabelInformation</td>
 <td>Use a <a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a> structure to set information a volume label.</td>
+</tr>
+
+<tr>
+<td>FileFsMaximumInformation</td>
+<td></td>
+</tr>
+
+<tr>
+<td>FileFsMetadataSizeInformation</td>
+<td></td>
 </tr>
 
 <tr>

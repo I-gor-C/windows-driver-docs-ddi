@@ -7,8 +7,8 @@ old-location : netvista\ipsec_offload_v2_add_sa.htm
 old-project : netvista
 ms.assetid : 78c5e765-40e5-47f0-8460-a86124fb43d8
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _IPSEC_OFFLOAD_V2_ADD_SA, *PIPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA
+ms.date : 1/18/2018
+ms.keywords : ndis/PIPSEC_OFFLOAD_V2_ADD_SA, netvista.ipsec_offload_v2_add_sa, PIPSEC_OFFLOAD_V2_ADD_SA, task_offload_IPsecv2_ref_0358b0f6-783e-4466-8615-12bd95ce4638.xml, _IPSEC_OFFLOAD_V2_ADD_SA, *PIPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA structure [Network Drivers Starting with Windows Vista], ndis/IPSEC_OFFLOAD_V2_ADD_SA, PIPSEC_OFFLOAD_V2_ADD_SA structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.1 and 6.20. For NDIS 6.30 and la
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IPSEC_OFFLOAD_V2_ADD_SA
-req.alt-loc : ndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PIPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA"
 ---
 
@@ -67,50 +71,49 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA {
 
 ## Members
 
-        
-            `Flags`
 
-            A bitmask that indicates whether the SA that is being added is an inbound or outbound SA as
+`Flags`
+
+A bitmask that indicates whether the SA that is being added is an inbound or outbound SA as
      follows:
-        
-            `Header`
 
-            The 
+`Header`
+
+The 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      IPSEC_OFFLOAD_V2_ADD_SA structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
      <b>Revision</b> member to NDIS_IPSEC_OFFLOAD_V2_ADD_SA_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_IPSEC_OFFLOAD_V2_ADD_SA_REVISION_1.
-        
-            `KeyData`
 
-            A variable-length array that contains keys for the SAs that are specified at 
+`KeyData`
+
+A variable-length array that contains keys for the SAs that are specified at 
      <b>SecAssoc</b> . If both an encryption algorithm and an authentication algorithm are specified by the 
      <b>EncryptionAlgorithm</b> and 
      <b>AuthenticationAlgorithm</b> members of an 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
-     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, the buffer at 
+     <mshelp:link keywords="netvista.ipsec_offload_v2_security_association" tabindex="0"><b>
+     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</b></mshelp:link> structure, the buffer at 
      <b>KeyData</b> contains key information for one followed by the other. The beginning and the length of
      the key are specified by the 
      <b>KeyOffsetBytes</b> and 
      <b>KeyLength</b> members, respectively.
-        
-            `KeyLength`
 
-            The length, in bytes, of the buffer at 
+`KeyLength`
+
+The length, in bytes, of the buffer at 
      <b>KeyData</b> .
-        
-            `Next`
 
-            A pointer to an IPSEC_OFFLOAD_V2_ADD_SA structure that is the next structure in a linked list. If
+`Next`
+
+A pointer to an IPSEC_OFFLOAD_V2_ADD_SA structure that is the next structure in a linked list. If
      the pointer is <b>NULL</b>, the current structure is the last structure in the list.
-        
-            `NumExtHdrs`
 
-            The number of IPsec extension headers. This member can be one of the following values.
+`NumExtHdrs`
+
+The number of IPsec extension headers. This member can be one of the following values.
      
-
 <table>
 <tr>
 <th>Type of security</th>
@@ -177,29 +180,29 @@ UDP ESP
 </td>
 </tr>
 </table>
-        
-            `OffloadHandle`
 
-            The handle to the newly created SA. The miniport driver supplies this handle before completing the
+`OffloadHandle`
+
+The handle to the newly created SA. The miniport driver supplies this handle before completing the
      
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
-     OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a> request. The TCP/IP transport must specify this handle in the
+     <mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_add_sa" tabindex="0">
+     OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</mshelp:link> request. The TCP/IP transport must specify this handle in the
      
-     <a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">
-     NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a> or 
-     <a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_tunnel_net_buffer_list_info.md">
-     NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</a> structure before passing a send packet to the
+     <mshelp:link keywords="netvista.ndis_ipsec_offload_v2_net_buffer_list_info" tabindex="0"><b>
+     NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</b></mshelp:link> or 
+     <mshelp:link keywords="netvista.ndis_ipsec_offload_v2_tunnel_net_buffer_list_info" tabindex="0"><b>
+     NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</b></mshelp:link> structure before passing a send packet to the
      miniport driver. The TCP/IP transport must also specify this handle when deleting the SA with an 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
-     OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a> request.
-        
-            `SecAssoc`
+     <mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa" tabindex="0">
+     OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</mshelp:link> request.
 
-            An array with two elements that contain the information about the IPsec operations (AH, ESP, or
+`SecAssoc`
+
+An array with two elements that contain the information about the IPsec operations (AH, ESP, or
      both) for the SA. The number of provided elements is specified in the 
      <b>NumExtHdrs</b> member. The information for each IPsec operations is formatted as an 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
-     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, which is described below.
+     <mshelp:link keywords="netvista.ipsec_offload_v2_security_association" tabindex="0"><b>
+     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</b></mshelp:link> structure, which is described below.
      
 
 The TCP/IP transport specifies one or two IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structures in the
@@ -209,19 +212,19 @@ The TCP/IP transport specifies one or two IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION 
      used. The order of the IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structures in the array indicates the order
      in which the miniport driver should perform the operations for each SA. Only one combination of
      operations is supported: encryption/decryption (ESP) followed by authentication (AH).
-        
-            `UdpEspEncapsulation`
 
-            The UDP ESP encapsulation type. This member can be one or more of the following flags:
+`UdpEspEncapsulation`
 
-    ## Remarks
-        This structure is obsolete, use <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa_ex.md">IPSEC_OFFLOAD_V2_ADD_SA_EX</a> instead.
+The UDP ESP encapsulation type. This member can be one or more of the following flags:
+
+## Remarks
+This structure is obsolete, use <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa_ex.md">IPSEC_OFFLOAD_V2_ADD_SA_EX</a> instead.
 
 The IPSEC_OFFLOAD_V2_ADD_SA structure specifies a security SA that should be added and a pointer to
     the next IPSEC_OFFLOAD_V2_ADD_SA structure in a linked list. The IPSEC_OFFLOAD_V2_ADD_SA structure is
     used with the 
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
-    OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a> OID.
+    <mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_add_sa" tabindex="0">
+    OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</mshelp:link> OID.
 
 The IPSEC_OFFLOAD_V2_ADD_SA structure specifies the source and destination, as well as the IP
     protocols, to which the SAs apply. This filter pertains to a transport-mode connection--that is, an
@@ -242,42 +245,32 @@ If a member is set to zero, that parameter is not used to filter packets for the
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
+<mshelp:link keywords="netvista.ipsec_offload_v2_algorithm_info" tabindex="0"><b>
+   IPSEC_OFFLOAD_V2_ALGORITHM_INFO</b></mshelp:link>
+
+<mshelp:link keywords="netvista.ndis_ipsec_offload_v2_net_buffer_list_info" tabindex="0"><b>
+   NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</b></mshelp:link>
+
+<mshelp:link keywords="netvista.ipsec_offload_v2_security_association" tabindex="0"><b>
+   IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</b></mshelp:link>
+
+<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_add_sa" tabindex="0">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</mshelp:link>
+
+<mshelp:link keywords="netvista.ndis_ipsec_offload_v2_tunnel_net_buffer_list_info" tabindex="0"><b>
+   NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</b></mshelp:link>
+
 <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa_ex.md">IPSEC_OFFLOAD_V2_ADD_SA_EX</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
-   IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
-   IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">
-   NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>
-</dt>
-<dt>
-<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_tunnel_net_buffer_list_info.md">
-   NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</a>
-</dt>
-<dt>
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
-</dt>
-<dt>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-</dt>
-</dl>
+
+<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa" tabindex="0">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</mshelp:link>
+
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 81c05f47-e75a-4d67-8e77-33ebe1750c67
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
+ms.keywords : MS_SM_AdapterInformationQuery structure [Storage Devices], hbapiwmi/MS_SM_AdapterInformationQuery, _MS_SM_AdapterInformationQuery, PMS_SM_AdapterInformationQuery structure pointer [Storage Devices], PMS_SM_AdapterInformationQuery, hbapiwmi/PMS_SM_AdapterInformationQuery, storage.ms_sm_adapterinformationquery, structs-Fibre_feda1502-e2b9-4392-a3bd-9c10ab0fab52.xml, *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MS_SM_AdapterInformationQuery
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery"
 ---
 
@@ -62,74 +66,74 @@ typedef struct _MS_SM_AdapterInformationQuery {
 
 ## Members
 
-        
-            `DriverName`
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
-        
-            `DriverVersion`
+`DriverName`
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
-        
-            `FirmwareVersion`
+An ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
-        
-            `HardwareVersion`
+`DriverVersion`
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
-        
-            `HBAStatus`
+An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
 
-            The status of the operation.
-        
-            `HBASymbolicName`
+`FirmwareVersion`
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
-        
-            `Manufacturer`
+An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
 
-            An ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
-        
-            `MfgDomain`
+`HardwareVersion`
 
-            The name of the HBA manufacturer.
-        
-            `Model`
+An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
 
-            An ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.
-        
-            `ModelDescription`
+`HBAStatus`
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the model description.
-        
-            `NumberOfPorts`
+The status of the operation.
 
-            The number of ports on the HBA.
-        
-            `OptionROMVersion`
+`HBASymbolicName`
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
-        
-            `RedundantFirmwareVersion`
+An ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
-        
-            `RedundantOptionROMVersion`
+`Manufacturer`
 
-            An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
-        
-            `SerialNumber`
+An ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
 
-            An ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
-        
-            `UniqueAdapterId`
+`MfgDomain`
 
-            The unique adapter ID.
-        
-            `VendorSpecificID`
+The name of the HBA manufacturer.
 
-            A vendor-specific ID.
+`Model`
+
+An ASCII string that is 256 bytes or fewer in length and that identifies the vendor-specific name of the HBA model.
+
+`ModelDescription`
+
+An ASCII string that is 256 bytes or fewer in length and that indicates the model description.
+
+`NumberOfPorts`
+
+The number of ports on the HBA.
+
+`OptionROMVersion`
+
+An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
+
+`RedundantFirmwareVersion`
+
+An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
+
+`RedundantOptionROMVersion`
+
+An ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
+
+`SerialNumber`
+
+An ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
+
+`UniqueAdapterId`
+
+The unique adapter ID.
+
+`VendorSpecificID`
+
+A vendor-specific ID.
 
 
 ## Requirements

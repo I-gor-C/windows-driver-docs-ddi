@@ -7,8 +7,8 @@ old-location : netvista\rilsenddtmfparams_2.htm
 old-project : netvista
 ms.assetid : 0e8c8fa7-35e8-429c-b6e5-c01aba3c6746
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSENDDTMFPARAMS, RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS
+ms.date : 1/18/2018
+ms.keywords : RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS, RILSENDDTMFPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsenddtmfparams_2, rilapitypes/RILSENDDTMFPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSENDDTMFPARAMS
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*LPRILSENDDTMFPARAMS, RILSENDDTMFPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,22 @@ typedef struct _RILSENDDTMFPARAMS {
 
 ## Members
 
-        
-            `dwDigitOffTimeMs`
 
-            
-        
-            `dwDigitOnTimeMs`
+`dwDigitOffTimeMs`
 
-            
-        
-            `dwExecutor`
 
-            
-        
-            `szDTMF`
 
-            
+`dwDigitOnTimeMs`
+
+
+
+`dwExecutor`
+
+
+
+`szDTMF`
+
+
 
 
 ## Requirements

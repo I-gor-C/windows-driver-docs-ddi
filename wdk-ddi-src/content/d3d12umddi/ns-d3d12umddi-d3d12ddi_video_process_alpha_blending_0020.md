@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 58E7A600-1CA9-40F8-8F37-CA7A0834B3F4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020, D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020
+ms.keywords : display.d3d12ddi_video_process_alpha_blending, d3d12umddi/D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020, D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020 structure [Display Devices], D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020
-req.alt-loc : D3d12umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020
 ---
 
@@ -47,30 +51,42 @@ typedef struct D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020 {
 
 ## Members
 
-        
-            `Alpha`
 
-            The planar alpha value. The value can range from 0.0 (transparent) to 1.0 (opaque). If the <b>Enable</b> member is false, this value is ignored.
-        
-            `Enable`
+`Alpha`
 
-            Specifies whether alpha blending is enabled.
+The planar alpha value. The value can range from 0.0 (transparent) to 1.0 (opaque). If the <b>Enable</b> member is false, this value is ignored.
 
-    ## Remarks
-        For each pixel, the destination color value is computed as the following: <pre class="syntax" xml:space="preserve"><code>Cd = Cs * (As * Ap * Ae) + Cd * (1.0 - As * Ap * Ae)</code></pre>
+`Enable`
+
+Specifies whether alpha blending is enabled.
+
+## Remarks
+For each pixel, the destination color value is computed as the following: <pre class="syntax" xml:space="preserve"><code>Cd = Cs * (As * Ap * Ae) + Cd * (1.0 - As * Ap * Ae)</code></pre>
 
 
 The variables in this equation are as follows:
-
+<ul>
+<li>
 Cd. The color value of the destination pixel.
 
+</li>
+<li>
 Cs. The color value of the source pixel.
 
+</li>
+<li>
 As. The per-pixel source alpha.
 
+</li>
+<li>
 Ap. The planar alpha value.
 
-Ae. The palette-entry alpha value, or 1.0.</p>
+</li>
+<li>
+Ae. The palette-entry alpha value, or 1.0.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |

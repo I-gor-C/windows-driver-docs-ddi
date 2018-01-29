@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ee89a9af-0bdf-476e-b4e3-eb60662e160d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InitializeObjectAttributes
+ms.keywords : k107_f7e00cf9-9598-4835-b51a-3df9e003587e.xml, wudfwdm/InitializeObjectAttributes, kernel.initializeobjectattributes, InitializeObjectAttributes macro [Kernel-Mode Driver Architecture], InitializeObjectAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : InitializeObjectAttributes
-req.alt-loc : wudfwdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfwdm.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -55,23 +59,23 @@ VOID InitializeObjectAttributes(
 
 `p`
 
-
+TBD
 
 `n`
 
-
+TBD
 
 `a`
 
-
+TBD
 
 `r`
 
-
+TBD
 
 `s`
 
-
+TBD
 
 
 ## Return Value
@@ -100,50 +104,34 @@ Note that <b>InitializeObjectAttributes</b> always sets the <b>SecurityQualityOf
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
-</dt>
-<dt>
 <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
-</dt>
-<dt>
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatedirectoryobject.md">ZwCreateDirectoryObject</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwmaketemporaryobject.md">ZwMakeTemporaryObject</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
 <a href="..\wdm\nf-wdm-zwopensymboliclinkobject.md">ZwOpenSymbolicLinkObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwmaketemporaryobject.md">ZwMakeTemporaryObject</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>
+
+<a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
+
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
+
+<a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
+
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
+
+<a href="..\wdm\nf-wdm-zwcreatedirectoryobject.md">ZwCreateDirectoryObject</a>
+
+<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
+
  
 
  

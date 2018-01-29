@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 846f3a1c-ee0a-42d2-bdf1-7bf09406c955
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _PARTITION_INFORMATION_MBR, *PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR
+ms.keywords : _PARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR structure [Storage Devices], PPARTITION_INFORMATION_MBR, ntdddisk/PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR, *PPARTITION_INFORMATION_MBR, ntdddisk/PARTITION_INFORMATION_MBR, storage.partition_information_mbr, PPARTITION_INFORMATION_MBR structure pointer [Storage Devices], structs-disk_c386ea16-c8d7-4a5e-8e61-d8e8ddead136.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PARTITION_INFORMATION_MBR
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR"
 ---
 
@@ -49,22 +53,26 @@ typedef struct _PARTITION_INFORMATION_MBR {
 
 ## Members
 
-        
-            `BootIndicator`
 
-            Indicates, when <b>TRUE</b>, that the partition is bootable. When <b>FALSE</b>, the partition is not bootable.
-        
-            `HiddenSectors`
+`BootIndicator`
 
-            Contains the number of hidden sectors in the partition.
-        
-            `PartitionType`
+Indicates, when <b>TRUE</b>, that the partition is bootable. When <b>FALSE</b>, the partition is not bootable.
 
-            Specifies the partition type. See <a href="..\ntdddisk\ns-ntdddisk-_partition_information.md">PARTITION_INFORMATION</a> for a list of system-defined partition types.
-        
-            `RecognizedPartition`
+`HiddenSectors`
 
-            Indicates, when <b>TRUE</b>, that this is a partition with a recognized partition type. When <b>FALSE</b> this is a not a partition with a recognized partition.
+Contains the number of hidden sectors in the partition.
+
+`PartitionId`
+
+
+
+`PartitionType`
+
+Specifies the partition type. See <a href="..\ntdddisk\ns-ntdddisk-_partition_information.md">PARTITION_INFORMATION</a> for a list of system-defined partition types.
+
+`RecognizedPartition`
+
+Indicates, when <b>TRUE</b>, that this is a partition with a recognized partition type. When <b>FALSE</b> this is a not a partition with a recognized partition.
 
 
 ## Requirements
@@ -75,19 +83,14 @@ typedef struct _PARTITION_INFORMATION_MBR {
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntddk.h, Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_partition_information_gpt.md">PARTITION_INFORMATION_GPT</a>
-</dt>
-<dt>
+
 <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a>
+
  
 
  

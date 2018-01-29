@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 78609b64-38fa-4431-bc74-8a83fe687a45
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVA_VideoSample32, DXVA_VideoSample32
+ms.keywords : _DXVA_VideoSample32, dxvaref_3e581191-6878-4daa-87e6-62188fa4708e.xml, DXVA_VideoSample32, dxva/DXVA_VideoSample32, DXVA_VideoSample32 structure [Display Devices], display.dxva_videosample32
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : This structure applies only to Windows Server 2003 w
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVA_VideoSample32
-req.alt-loc : dxva.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVA_VideoSample32
 ---
 
@@ -53,41 +57,41 @@ typedef struct _DXVA_VideoSample32 {
 
 ## Members
 
-        
-            `lpDDSSrcSurface`
 
-            Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure that represents the sample.
-        
-            `Palette`
+`lpDDSSrcSurface`
 
-            Specifies an array of <a href="..\dxva\ns-dxva-_dxva_ayuvsample2.md">DXVA_AYUVsample2</a> structures that represent a complete 16-color palette for palletized video substream pixel formats. The driver uses this palette to composite the substream sample. For nonpalletized pixel formats, the palette is zero and can be ignored.
-        
-            `rcDst`
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure that represents the sample.
 
-            Specifies a RECT structure that describes the upper-left and lower-right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.
-        
-            `rcSrc`
+`Palette`
 
-            Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the upper-left and lower-right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.
-        
-            `rtEnd`
+Specifies an array of <a href="..\dxva\ns-dxva-_dxva_ayuvsample2.md">DXVA_AYUVsample2</a> structures that represent a complete 16-color palette for palletized video substream pixel formats. The driver uses this palette to composite the substream sample. For nonpalletized pixel formats, the palette is zero and can be ignored.
 
-            Specifies the end time of the sample.
-        
-            `rtStart`
+`rcDst`
 
-            Specifies the start time of the sample.
-        
-            `SampleFlags`
+Specifies a RECT structure that describes the upper-left and lower-right points of a rectangle on the destination surface. These points define the area in which the bit-block transfer should occur and its position on the destination surface.
 
-            Specifies a collection of flags that indicate changes in the current sample frame from the previous sample frame. This member is a bitwise-OR of one or more of the flags in the <a href="..\dxva\ne-dxva-_dxva_sampleflags.md">DXVA_SampleFlags</a> enumeration type.
-        
-            `SampleFormat`
+`rcSrc`
 
-            Specifies the format of the sample as defined by values of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> enumeration type.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the upper-left and lower-right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.
 
-    ## Remarks
-        The compiler adds 4 bytes of padding to align the structure to 8 bytes.
+`rtEnd`
+
+Specifies the end time of the sample.
+
+`rtStart`
+
+Specifies the start time of the sample.
+
+`SampleFlags`
+
+Specifies a collection of flags that indicate changes in the current sample frame from the previous sample frame. This member is a bitwise-OR of one or more of the flags in the <a href="..\dxva\ne-dxva-_dxva_sampleflags.md">DXVA_SampleFlags</a> enumeration type.
+
+`SampleFormat`
+
+Specifies the format of the sample as defined by values of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> enumeration type.
+
+## Remarks
+The compiler adds 4 bytes of padding to align the structure to 8 bytes.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,31 +101,22 @@ typedef struct _DXVA_VideoSample32 {
 | **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\dxva\ns-dxva-_dxva_ayuvsample2.md">DXVA_AYUVsample2</a>
-</dt>
-<dt>
+
 <a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
-</dt>
-<dt>
-<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-</dt>
-<dt>
+
 <a href="..\dxva\ne-dxva-_dxva_sampleflags.md">DXVA_SampleFlags</a>
-</dt>
-<dt>
-<a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-</dt>
-</dl>
+
+<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
+
+<a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
+
  
 
  

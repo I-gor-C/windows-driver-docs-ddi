@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 737EDB43-FAFF-4EFD-A7A1-206D646F23E1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords : buses.ioctl_internal_usbfn_bus_event_notification, IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION control code [Buses], IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION, usbfnioctl/IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
-req.alt-loc : usbfnioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PUSBFN_USB_STRING, USBFN_USB_STRING"
 req.product : Windows 10 or later.
 ---
@@ -63,11 +67,10 @@ The size of a <a href="..\usbfnbase\ns-usbfnbase-_usbfn_notification.md">USBFN_N
 <text></text>
 
 ### Status Block
-I/O Status block
 If the request is successful, the USB function class extension (UFX) returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE.
 
-    ## Remarks
-        UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed.
+## Remarks
+UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,16 +79,12 @@ If the request is successful, the USB function class extension (UFX) returns STA
 | **Header** | usbfnioctl.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbfnbase\ne-usbfnbase-_usbfn_event.md">USBFN_EVENT</a>
-</dt>
-<dt>
+
 <a href="..\usbfnbase\ns-usbfnbase-_usbfn_notification.md">USBFN_NOTIFICATION</a>
-</dt>
-</dl>
+
  
 
  

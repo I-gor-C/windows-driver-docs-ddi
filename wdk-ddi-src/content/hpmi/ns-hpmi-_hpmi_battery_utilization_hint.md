@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : A974998F-C9AF-496E-88B1-510413C17C4A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _HPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT
+ms.keywords : PHPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT, hpmi/PHPMI_BATTERY_UTILIZATION_HINT, powermeter.hpmi_battery_utilization_hint, HPMI_BATTERY_UTILIZATION_HINT structure [Power Metering and Budgeting Devices], _HPMI_BATTERY_UTILIZATION_HINT, hpmi/HPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT, PHPMI_BATTERY_UTILIZATION_HINT structure pointer [Power Metering and Budgeting Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 10, version 1709 and later ver
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HPMI_BATTERY_UTILIZATION_HINT
-req.alt-loc : hpmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PHPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : HPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT
 ---
 
 # _HPMI_BATTERY_UTILIZATION_HINT structure
@@ -52,26 +56,28 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 
 ## Members
 
-        
-            `PreserveNonHotSwappableBatteries`
 
-            Interpretation of values:
+`PreserveNonHotSwappableBatteries`
+
+Interpretation of values:
 
 
     - HpmiBoolUnavailable:
     Battery utilization hint is unavailable at the moment.
+    
 
   - HpmiBoolFalse:
     It is not necessary to preserve charge in the internal batteries
 	at the moment.
+    
 
 - HpmiBoolTrue:
     Every attempt should be made to save as much charge as possible in
     the internal batteries.
-        
-            `Version`
 
-            Set to HPMI_BATTERY_UTILIZATION_HINT_VERSION_1.
+`Version`
+
+Set to HPMI_BATTERY_UTILIZATION_HINT_VERSION_1.
 
 
 ## Requirements
@@ -82,19 +88,14 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 | **Minimum UMDF version** |  |
 | **Header** | hpmi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hpmi\ne-hpmi-_hpmi_hint_bool.md">HPMI_HINT_BOOL</a>
-</dt>
-<dt>
-<a href="..\hpmi\ni-hpmi-ioctl_hpmi_battery_utilization_hint.md">IOCTL_HPMI_BATTERY_UTILIZATION_HINT</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
-</dt>
-</dl>
+
+<a href="..\hpmi\ne-hpmi-_hpmi_hint_bool.md">HPMI_HINT_BOOL</a>
+
+<a href="..\hpmi\ni-hpmi-ioctl_hpmi_battery_utilization_hint.md">IOCTL_HPMI_BATTERY_UTILIZATION_HINT</a>
+
  
 
  

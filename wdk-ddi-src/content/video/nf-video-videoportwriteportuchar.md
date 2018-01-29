@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0f05f765-ca59-4a92-91a0-f1123dd9cd6f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortWritePortUchar
+ms.keywords : VideoPortWritePortUchar, VideoPort_Functions_cfd3f257-e96f-4f75-a335-6b78aaa47c70.xml, video/VideoPortWritePortUchar, display.videoportwriteportuchar, VideoPortWritePortUchar function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortWritePortUchar
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : Any level (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -83,11 +87,8 @@ Callers of <b>VideoPortWritePortUchar</b> can be running at any IRQL, provided t
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-</dl>
+
  
 
  

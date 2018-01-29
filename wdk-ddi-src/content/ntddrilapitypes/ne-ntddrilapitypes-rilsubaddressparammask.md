@@ -7,8 +7,8 @@ old-location : netvista\rilsubaddressparammask.htm
 old-project : netvista
 ms.assetid : 12684719-f263-4909-bcb7-b75381cc7e43
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSUBADDRESSPARAMMASK, RILSUBADDRESSPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILSUBADDRESSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_SA_SUBADDRESS, netvista.rilsubaddressparammask, RILSUBADDRESSPARAMMASK, ntddrilapitypes/RIL_PARAM_SA_SUBADDRESS, RIL_PARAM_SA_ALL, ntddrilapitypes/RIL_PARAM_SA_ALL, ntddrilapitypes/RILSUBADDRESSPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSUBADDRESSPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSUBADDRESSPARAMMASK
 ---
 
@@ -56,6 +60,11 @@ typedef enum _RILSUBADDRESSPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_SA_SUBADDRESS</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SA_TYPE</td>
 <td></td>
 </tr>
 </table>

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 146f0e43-a9de-4d4d-8b8f-219c22cfa871
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlStringCbCopyUnicodeStringEx
+ms.keywords : safestrings_38290608-dda4-4827-bcd2-3a0bef015690.xml, RtlStringCbCopyUnicodeStringEx, ntstrsafe/RtlStringCbCopyUnicodeStringEx, RtlStringCbCopyUnicodeStringEx function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcopyunicodestringex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) an
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlStringCbCopyUnicodeStringEx
-req.alt-loc : Ntstrsafe.lib,Ntstrsafe.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntstrsafe.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
 ---
 
@@ -81,21 +85,56 @@ One or more flags and, optionally, a fill byte. The flags are defined as follows
 ## Return Value
 
 <b>RtlStringCbCopyUnicodeStringEx</b> returns one of the following NTSTATUS values. 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>This <i>success</i> status means that source data was present, the string was copied without truncation, and the resultant destination buffer is null-terminated.
+</dl>
+</td>
+<td width="60%">
+This <i>success</i> status means that source data was present, the string was copied without truncation, and the resultant destination buffer is null-terminated.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>This <i>warning</i> status means that the copy operation did not complete because of insufficient space in the destination buffer. If STRSAFE_NO_TRUNCATION is set in <i>dwFlags</i>, the destination buffer is not modified. If the flag is not set, the destination buffer contains a truncated version of the copied string.
+</dl>
+</td>
+<td width="60%">
+This <i>warning</i> status means that the copy operation did not complete because of insufficient space in the destination buffer. If STRSAFE_NO_TRUNCATION is set in <i>dwFlags</i>, the destination buffer is not modified. If the flag is not set, the destination buffer contains a truncated version of the copied string.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>This <i>error</i> status means that the function received an invalid input parameter. For more information, see the following list.
+</dl>
+</td>
+<td width="60%">
+This <i>error</i> status means that the function received an invalid input parameter. For more information, see the following list.
 
- 
+</td>
+</tr>
+</table> 
 
 <b>RtlStringCbCopyUnicodeStringEx</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
-
-For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+<ul>
+<li>The contents of the <b>UNICODE_STRING</b> structure are invalid.</li>
+<li>An invalid flag is specified in dwFlags.</li>
+<li>The value in <i>cbDest</i> is larger than the maximum buffer size.</li>
+<li>The destination buffer (which <i>pszDest</i> points to) is already full.</li>
+<li>A buffer pointer is <b>NULL</b> and the STRSAFE_IGNORE_NULLS flag is not specified.</li>
+<li>The destination buffer pointer is <b>NULL</b>, but the buffer size is not zero.</li>
+<li>The destination buffer pointer is <b>NULL</b> or its length is zero, but a nonzero length source string is present.</li>
+</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -123,17 +162,12 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyunicodestring.md">RtlStringCbCopyUnicodeString</a>
-</dt>
-<dt>
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyunicodestringex.md">RtlStringCchCopyUnicodeStringEx</a>
-</dt>
-<dt>
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyunicodestring.md">RtlStringCbCopyUnicodeString</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyunicodestringex.md">RtlStringCchCopyUnicodeStringEx</a>
+
  
 
  

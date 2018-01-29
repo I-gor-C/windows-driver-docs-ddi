@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 50B76D96-120C-4C86-89ED-7F298E50B1A4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _PCM_DATA_FORMAT, PCM_DATA_FORMAT, *PPCM_DATA_FORMAT
+ms.keywords : PCM_DATA_FORMAT, bltooth.pcm_data_format, *PPCM_DATA_FORMAT, PCM_DATA_FORMAT enumeration [Bluetooth Devices], bthddi/PCM_DATA_FORMAT, _PCM_DATA_FORMAT, bthddi/, PPCM_DATA_FORMAT, PPCM_DATA_FORMAT enumeration pointer [Bluetooth Devices], bthddi/PPCM_DATA_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PCM_DATA_FORMAT
-req.alt-loc : bthddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames : PCM_DATA_FORMAT, *PPCM_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPCM_DATA_FORMAT, PCM_DATA_FORMAT"
 ---
 
 # _PCM_DATA_FORMAT Enumeration
@@ -47,6 +51,31 @@ typedef enum _PCM_DATA_FORMAT {
 ## Constants
 
 <table>
+
+<tr>
+<td>ScoPCMCFormatNA</td>
+<td></td>
+</tr>
+
+<tr>
+<td>ScoPCMFormat1sComplement</td>
+<td></td>
+</tr>
+
+<tr>
+<td>ScoPCMFormat2sComplement</td>
+<td></td>
+</tr>
+
+<tr>
+<td>ScoPCMFormatSignMagnitude</td>
+<td></td>
+</tr>
+
+<tr>
+<td>ScoPCMFormatUnsigned</td>
+<td></td>
+</tr>
 </table>
 
 

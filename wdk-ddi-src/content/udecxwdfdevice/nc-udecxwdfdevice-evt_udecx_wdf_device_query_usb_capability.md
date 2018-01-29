@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 96F3128C-C334-4531-9C86-3FA918A902AC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS
+ms.keywords : buses.evt_udecx_wdf_device_query_usb_capability, EvtUdecxWdfDeviceQueryUsbCapability callback function [Buses], EvtUdecxWdfDeviceQueryUsbCapability, EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY, EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY, udecxwdfdevice/EvtUdecxWdfDeviceQueryUsbCapability
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 
-req.alt-api : EvtUdecxWdfDeviceQueryUsbCapability
-req.alt-loc : UdecxWdfDevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS
 req.product : Windows 10 or later.
 ---
@@ -63,7 +67,6 @@ A handle to a framework device object that represents the controller. The client
 `CapabilityType`
 
 Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i>  values are  as follows:
-
 <ul>
 <li>GUID_USB_CAPABILITY_CHAINED_MDLS</li>
 <li>GUID_USB_CAPABILITY_SELECTIVE_SUSPEND</li>
@@ -72,8 +75,7 @@ Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i
 </li>
 <li>GUID_USB_CAPABILITY_DEVICE_CONNECTION_HIGH_SPEED_COMPATIBLE</li>
 <li>GUID_USB_CAPABILITY_DEVICE_CONNECTION_SUPER_SPEED_COMPATIBLE</li>
-</ul>
-   For information about the capabilities, see the Remarks section of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>.
+</ul>   For information about the capabilities, see the Remarks section of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>.
 
 `OutputBufferLength`
 
@@ -98,8 +100,10 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 The class extension invokes this callback function implemented by the client driver when the class extension receives a request to determine the emulated controller's capabilities. The callback is invoked only after <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> has returned, typically in <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>. This callback cannot be invoked after <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> has returned. 
 
 The class extension reports these capability GUIDs, as not supported: 
-
-The class extension reports the GUID_USB_CAPABILITY_SELECTIVE_SUSPEND capability GUID as supported without even invoking the callback function.
+<ul>
+<li>GUID_USB_CAPABILITY_STATIC_STREAMS</li>
+<li>GUID_USB_CAPABILITY_CLEAR_TT_BUFFER_ON_ASYNC_TRANSFER_CANCEL</li>
+</ul>The class extension reports the GUID_USB_CAPABILITY_SELECTIVE_SUSPEND capability GUID as supported without even invoking the callback function.
 
 For other GUIDs, the class extension invokes the client driver's implementation, such as GUID_USB_CAPABILITY_CHAINED_MDLS. The client driver is expected to determine support for I/O requests that use a chained MDL. If this capability is supported then, the <b>TransferBufferMdl</b> member of the <a href="..\usb\ns-usb-_urb.md">URB</a> contains the request buffer. If chained MDL is not supported, the client driver does not receive <b>TransferBufferMdl</b> values that  point to chained MDLs.
 
@@ -117,14 +121,10 @@ For other GUIDs, the class extension invokes the client driver's implementation,
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
  
 
  

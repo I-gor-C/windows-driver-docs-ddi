@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 201a4558-8755-4a28-9982-c02ce5b5d8e7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorClassExtension, ISensorClassExtension::PostEvent, PostEvent
+ms.keywords : ISensorClassExtension, ISensorClassExtension::PostEvent, PostEvent method [Sensor Devices], sensors.isensorclassextension_postevent, PostEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PostEvent
-req.alt-loc : SensorsClassExtension.lib,SensorsClassExtension.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : SensorsClassExtension.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SensorConnectionType
 req.product : Windows 10 or later.
 ---
@@ -62,27 +66,89 @@ Pointer to an IPortableDeviceValuesCollection interface that contains the list o
 ## Return Value
 
 This method returns an HRESULT. Possible values include, but are not limited to, one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method succeeded.
+</dl>
+</td>
+<td width="60%">
+The method succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_FALSE</b></dt>
-</dl>The method succeeded, but no client programs are currently subscribed to events. Do not post events when no clients are subscribed.
+</dl>
+</td>
+<td width="60%">
+The method succeeded, but no client programs are currently subscribed to events. Do not post events when no clients are subscribed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The event collection was empty.
+</dl>
+</td>
+<td width="60%">
+The event collection was empty.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_POINTER</b></dt>
-</dl>A required pointer argument was <b>NULL</b>.
+</dl>
+</td>
+<td width="60%">
+A required pointer argument was <b>NULL</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_WIN32(ERROR_CAN_NOT_COMPLETE)</b></dt>
-</dl>The class extension is not initialized.
+</dl>
+</td>
+<td width="60%">
+The class extension is not initialized.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_WIN32(ERROR_INTERNAL_DB_CORRUPTION</b></dt>
-</dl>A serialization error occurred.
+</dl>
+</td>
+<td width="60%">
+A serialization error occurred.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HRESULT_FROM_WIN32(ERROR_OBJECT_NOT_FOUND)</b></dt>
-</dl>No client programs are currently subscribed to events. Do not post events when no clients are subscribed.
+</dl>
+</td>
+<td width="60%">
+No client programs are currently subscribed to events. Do not post events when no clients are subscribed.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,8 +166,7 @@ For an example of a class that creates an event thread, see <a href="https://msd
 
 
 <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131487">IPortableDeviceValuesCollection</a> are documented in Windows Portable Devices.
-
-Raise state change events by calling <a href="https://msdn.microsoft.com/ae3bc846-df63-4186-9554-f4600e1f2066">ISensorClassExtension::PostStateChange</a>.</p>
+<div class="alert"><b>Note</b>  The sensor class extension will call PropVariantClear for PROPVARIANTs that you pass  to the sensor class extension.</div><div> </div>Raise state change events by calling <a href="https://msdn.microsoft.com/ae3bc846-df63-4186-9554-f4600e1f2066">ISensorClassExtension::PostStateChange</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

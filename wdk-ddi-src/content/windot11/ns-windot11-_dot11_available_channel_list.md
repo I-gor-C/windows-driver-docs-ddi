@@ -7,8 +7,8 @@ old-location : netvista\dot11_available_channel_list.htm
 old-project : netvista
 ms.assetid : 11fee366-5853-4702-8179-d5b764174dce
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _DOT11_AVAILABLE_CHANNEL_LIST, *PDOT11_AVAILABLE_CHANNEL_LIST, DOT11_AVAILABLE_CHANNEL_LIST
+ms.date : 1/18/2018
+ms.keywords : PDOT11_AVAILABLE_CHANNEL_LIST, PDOT11_AVAILABLE_CHANNEL_LIST structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_AVAILABLE_CHANNEL_LIST, windot11/DOT11_AVAILABLE_CHANNEL_LIST, *PDOT11_AVAILABLE_CHANNEL_LIST, DOT11_AVAILABLE_CHANNEL_LIST structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_c36ff4d6-283a-484c-8d68-0109c6150f4f.xml, _DOT11_AVAILABLE_CHANNEL_LIST, netvista.dot11_available_channel_list, DOT11_AVAILABLE_CHANNEL_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DOT11_AVAILABLE_CHANNEL_LIST
-req.alt-loc : windot11.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,12 +29,21 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT11_AVAILABLE_CHANNEL_LIST, DOT11_AVAILABLE_CHANNEL_LIST"
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_AVAILABLE_CHANNEL_LIST structure
-
+<div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_AVAILABLE_CHANNEL_LIST structure specifies the available operating frequency channel list
+  of the 
+  <mshelp:link keywords="netvista.dsss__hrdsss__and_erp_phy_configuration" tabindex="0">DSSS, HRDSSS, and ERP PHY
+  configurations</mshelp:link> that the NIC can operate with.
 
 ## Syntax
 ````
@@ -50,37 +57,42 @@ typedef struct _DOT11_AVAILABLE_CHANNEL_LIST {
 
 ## Members
 
-        
-            `Header`
 
-            The type, revision, and size of the DOT11_AVAILABLE_CHANNEL_LIST structure. This member is
+`Header`
+
+The type, revision, and size of the DOT11_AVAILABLE_CHANNEL_LIST structure. This member is
      formatted as an 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
      <b>Header</b> to the following values:
-        
-            `uChannelNumber`
 
-            An array that specifies the list of available operating frequency channels of the 
-     <a href="netvista.dsss__hrdsss__and_erp_phy_configuration">DSSS, HRDSSS, and ERP PHY
-     configurations</a> that the NIC can operate with.
-        
-            `uNumOfEntries`
 
-            The number of entries in the 
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+`uChannelNumber`
+
+An array that specifies the list of available operating frequency channels of the 
+     <mshelp:link keywords="netvista.dsss__hrdsss__and_erp_phy_configuration" tabindex="0">DSSS, HRDSSS, and ERP PHY
+     configurations</mshelp:link> that the NIC can operate with.
+
+`uNumOfEntries`
+
+The number of entries in the 
      <b>uChannelNumber</b> array.
-        
-            `uTotalNumOfEntries`
 
-            The maximum number of entries that the 
+`uTotalNumOfEntries`
+
+The maximum number of entries that the 
      <b>uChannelNumber</b> array can contain.
 
-    ## Remarks
-        This structure is used with 
-    <a href="netvista.oid_dot11_available_channel_list">
-    OID_DOT11_AVAILABLE_CHANNEL_LIST</a>.
+## Remarks
+This structure is used with 
+    <mshelp:link keywords="netvista.oid_dot11_available_channel_list" tabindex="0">
+    OID_DOT11_AVAILABLE_CHANNEL_LIST</mshelp:link>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,19 +102,15 @@ The miniport driver must set the members of
 | **Minimum UMDF version** |  |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
-<a href="netvista.oid_dot11_available_channel_list">
-   OID_DOT11_AVAILABLE_CHANNEL_LIST</a>
-</dt>
-</dl>
- 
+
+<mshelp:link keywords="netvista.oid_dot11_available_channel_list" tabindex="0">
+   OID_DOT11_AVAILABLE_CHANNEL_LIST</mshelp:link>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AVAILABLE_CHANNEL_LIST structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AVAILABLE_CHANNEL_LIST structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

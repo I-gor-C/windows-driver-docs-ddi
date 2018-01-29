@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eaa730a8-8ee3-43a7-a18e-094fbac4ba60
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ObReferenceObjectByPointerWithTag
+ms.keywords : ObReferenceObjectByPointerWithTag routine [Kernel-Mode Driver Architecture], wdm/ObReferenceObjectByPointerWithTag, kernel.obreferenceobjectbypointerwithtag, ObReferenceObjectByPointerWithTag, k107_5e5e16de-36ff-4a81-9fe6-9602053ccc6b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObReferenceObjectByPointerWithTag
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -68,7 +72,6 @@ A pointer to an opaque structure that specifies the object type. This parameter 
 `AccessMode`
 
 Indicates the access mode to use for the access check. Set this parameter to one of the following <b>MODE</b> enumeration values:
-
 <ul>
 <li>
 <b>UserMode</b>
@@ -78,8 +81,7 @@ Indicates the access mode to use for the access check. Set this parameter to one
 <b>KernelMode</b>
 
 </li>
-</ul>
-Lower-level drivers should specify <b>KernelMode</b>.
+</ul>Lower-level drivers should specify <b>KernelMode</b>.
 
 `Tag`
 
@@ -89,9 +91,23 @@ Specifies a four-byte, custom tag value. For more information, see the following
 ## Return Value
 
 <b>ObReferenceObjectByPointerWithTag</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The <i>ObjectType</i> parameter specifies the wrong object type for the object that the <i>Object</i> parameter points to, or <i>ObjectType</i> is <b>NULL</b> but <i>AccessMode</i> is <b>UserMode</b>.
+</dl>
+</td>
+<td width="60%">
+The <i>ObjectType</i> parameter specifies the wrong object type for the object that the <i>Object</i> parameter points to, or <i>ObjectType</i> is <b>NULL</b> but <i>AccessMode</i> is <b>UserMode</b>.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -117,26 +133,18 @@ To view an object reference trace in the <a href="http://go.microsoft.com/fwlink
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobjectdeferdeletewithtag.md">ObDereferenceObjectDeferDeleteWithTag</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558675">OBJECT_TYPE</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obreferenceobjectbypointer.md">ObReferenceObjectByPointer</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbypointer.md">ObReferenceObjectByPointer</a>
+
+<a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>
+
+<a href="..\wdm\nf-wdm-obdereferenceobjectdeferdeletewithtag.md">ObDereferenceObjectDeferDeleteWithTag</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558675">OBJECT_TYPE</a>
+
  
 
  

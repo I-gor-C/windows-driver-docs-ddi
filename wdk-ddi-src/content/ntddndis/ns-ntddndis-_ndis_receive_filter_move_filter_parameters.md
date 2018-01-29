@@ -7,8 +7,8 @@ old-location : netvista\ndis_receive_filter_move_filter_parameters.htm
 old-project : netvista
 ms.assetid : 4045d8ed-bf8d-4dc1-80c3-a77499a7bf4e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, *PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS
+ms.date : 1/18/2018
+ms.keywords : NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_move_filter_parameters, PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, _NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in NDIS 6.30 and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS
-req.alt-loc : Ntddndis.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, *PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure
@@ -51,38 +55,37 @@ typedef struct _NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS {
 
 ## Members
 
-        
-            `DestQueueId`
 
-            An NDIS_RECEIVE_QUEUE_ID value that specifies the identifier of the receive queue on which the filter is to be moved. For more information, see the Remarks section.
-        
-            `DestVPortId`
+`DestQueueId`
 
-            An NDIS_NIC_SWITCH_VPORT_ID value that specifies the identifier of the VPort on which this filter is to be moved.
-        
-            `FilterId`
+An NDIS_RECEIVE_QUEUE_ID value that specifies the identifier of the receive queue on which the filter is to be moved. For more information, see the Remarks section.
 
-            An NDIS_RECEIVE_FILTER_ID value that  specifies the identifier of the receive filter.
+`DestVPortId`
 
-<div class="alert"><b>Note</b>   The filter specified by this value must have been previously set through an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>.</div>
-<div> </div>
-        
-            `Header`
+An NDIS_NIC_SWITCH_VPORT_ID value that specifies the identifier of the VPort on which this filter is to be moved.
 
-            The type, revision, and size of the <b>NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+`FilterId`
+
+An NDIS_RECEIVE_FILTER_ID value that  specifies the identifier of the receive filter.
+<div class="alert"><b>Note</b>   The filter specified by this value must have been previously set through an OID method request of <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>.</div><div> </div>
+
+`Header`
+
+The type, revision, and size of the <b>NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
-        
-            `SourceQueueId`
 
-            An NDIS_RECEIVE_QUEUE_ID value that specifies the identifier of the receive queue on which this filter was previously set. For more information, see the Remarks section.
-        
-            `SourceVPortId`
+`SourceQueueId`
 
-            An NDIS_NIC_SWITCH_VPORT_ID value that specifies the identifier of the VPort on which this filter was previously set.
+An NDIS_RECEIVE_QUEUE_ID value that specifies the identifier of the receive queue on which this filter was previously set. For more information, see the Remarks section.
 
-    ## Remarks
-        This structure is used in OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451845">OID_RECEIVE_FILTER_MOVE_FILTER</a>.
+`SourceVPortId`
+
+An NDIS_NIC_SWITCH_VPORT_ID value that specifies the identifier of the VPort on which this filter was previously set.
+
+## Remarks
+This structure is used in OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451845">OID_RECEIVE_FILTER_MOVE_FILTER</a>.
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, the single root I/O virtualization (SR-IOV) interface allows receive filters to be set only  on the default receive queue on both default and nondefault VPorts. The <b>SourceQueueId</b> and <b>DestQueueId</b> members must always be set to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,19 +95,16 @@ The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJ
 | **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><b></b></dt>
-<dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451845">OID_RECEIVE_FILTER_MOVE_FILTER</a>
-</dt>
-</dl>
- 
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<b></b>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

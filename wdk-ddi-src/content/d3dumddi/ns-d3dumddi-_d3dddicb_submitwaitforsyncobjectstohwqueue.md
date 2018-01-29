@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9890EB61-2CED-41AB-9A87-76D5020D84A0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
+ms.keywords : D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE structure [Display Devices], _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, display.d3dddicb_submitwaitforsyncobjectstohwqueue, d3dumddi/D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ---
 
@@ -49,22 +53,22 @@ typedef struct _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE {
 
 ## Members
 
-        
-            `FenceValueArray`
 
-            Monitored fence values to be waited on.
-        
-            `hHwQueue`
+`FenceValueArray`
 
-            Hardware queue to queue the wait on.
-        
-            `ObjectCount`
+Monitored fence values to be waited on.
 
-            Number of objects to wait on.
-        
-            `ObjectHandleArray`
+`hHwQueue`
 
-            Handles to monitored fence synchronization objects to wait on.
+Hardware queue to queue the wait on.
+
+`ObjectCount`
+
+Number of objects to wait on.
+
+`ObjectHandleArray`
+
+Handles to monitored fence synchronization objects to wait on.
 
 
 ## Requirements

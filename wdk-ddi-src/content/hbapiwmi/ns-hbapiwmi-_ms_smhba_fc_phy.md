@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7fb199b6-dcdb-41fc-b1c4-4eef2177018e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY
+ms.keywords : _MS_SMHBA_FC_PHY, hbapiwmi/PMS_SMHBA_FC_PHY, PMS_SMHBA_FC_PHY structure pointer [Storage Devices], *PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY, structs-Fibre_64c8e970-8d72-4651-bcb8-8363b424cd04.xml, PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY structure [Storage Devices], hbapiwmi/MS_SMHBA_FC_PHY, storage.ms_smhba_fc_phy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MS_SMHBA_FC_PHY
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
 ---
 
 # _MS_SMHBA_FC_PHY structure
@@ -49,15 +53,14 @@ typedef struct _MS_SMHBA_FC_PHY {
 
 ## Members
 
-        
-            `MaxFrameSize`
 
-            The maximum frame size, in bytes, that is supported by PortWWN.
-        
-            `PhySpeed`
+`MaxFrameSize`
 
-            The signaling bit rates at which PortWWN is currently operating. This member must have one of the values in the following table.
+The maximum frame size, in bytes, that is supported by PortWWN.
 
+`PhySpeed`
+
+The signaling bit rates at which PortWWN is currently operating. This member must have one of the values in the following table.
 <table>
 <tr>
 <td>
@@ -130,15 +133,14 @@ The speed at which the port will operate has not yet been established.
 </td>
 </tr>
 </table>
-        
-            `PhySupportSpeed`
 
-            The signaling bit rates at which the port can operate. For a list of the values that this member supports, see PhySpeed.
-        
-            `PhyType`
+`PhySupportSpeed`
 
-            The port type. This member must have one of the values in the following table.
+The signaling bit rates at which the port can operate. For a list of the values that this member supports, see PhySpeed.
 
+`PhyType`
+
+The port type. This member must have one of the values in the following table.
 <table>
 <tr>
 <td>

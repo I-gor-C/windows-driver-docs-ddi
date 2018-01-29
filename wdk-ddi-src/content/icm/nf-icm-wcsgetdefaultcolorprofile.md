@@ -7,8 +7,8 @@ old-location : print\wcsgetdefaultcolorprofile.htm
 old-project : print
 ms.assetid : a5ace7f3-dc61-4799-b129-3c25c392ebf6
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : WcsGetDefaultColorProfile
+ms.date : 1/18/2018
+ms.keywords : colorfnc_c7de4cff-ebfb-4392-a2a2-1229a6b08aa1.xml, WcsGetDefaultColorProfile, WcsGetDefaultColorProfile function [Print Devices], icm/WcsGetDefaultColorProfile, print.wcsgetdefaultcolorprofile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Included in Windows Vista and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WcsGetDefaultColorProfile
-req.alt-loc : Mscms.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Mscms.lib
 req.dll : Mscms.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
@@ -56,7 +60,7 @@ BOOL WcsGetDefaultColorProfile(
 
 `scope`
 
-
+TBD
 
 `pDeviceName`
 
@@ -109,22 +113,16 @@ This function is executable in Least-Privileged User Account (LUA) context.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
-</dt>
-<dt>
-<a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
-</dt>
-<dt>
+
 <a href="..\icm\ne-icm-wcs_profile_management_scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a>
-</dt>
-<dt>
+
+<a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
+
 <a href="..\icm\nf-icm-wcsgetdefaultcolorprofilesize.md">WcsGetDefaultColorProfileSize</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20WcsGetDefaultColorProfile function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20WcsGetDefaultColorProfile function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

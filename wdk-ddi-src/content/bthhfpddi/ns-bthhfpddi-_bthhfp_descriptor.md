@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A3C1E53B-2E41-437A-8613-C43DCD4768B5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _BTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR
+ms.keywords : bthhfpddi/PBTHHFP_DESCRIPTOR, _BTHHFP_DESCRIPTOR, audio.bthhfp_descriptor, bthhfpddi/BTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR structure [Audio Devices], PBTHHFP_DESCRIPTOR, PBTHHFP_DESCRIPTOR structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BTHHFP_DESCRIPTOR
-req.alt-loc : Bthhfpddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR
 ---
 
@@ -53,37 +57,38 @@ typedef struct _BTHHFP_DESCRIPTOR {
 
 ## Members
 
-        
-            `ContainerId`
 
-            The PnP container ID for the paired HFP device.
-        
-            `FriendlyName`
+`ContainerId`
 
-            An indirect string identifying the human readable friendly name of the paired HFP device.
-        
-            `InputPinCategory`
+The PnP container ID for the paired HFP device.
 
-            KS pin category for the input function of the paired HFP device.
-        
-            `OutputPinCategory`
+`FriendlyName`
 
-            KS pin category for the output function of the paired HFP device.
-        
-            `SupportsVolume`
+An indirect string identifying the human readable friendly name of the paired HFP device.
 
-            Indicates whether the paired HFP device supports remote volume control.
-        
-            `VolumePropertyValuesSize`
+`InputPinCategory`
 
-            If remote volume control is supported, this member contains the size of the data returned by the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.
+KS pin category for the input function of the paired HFP device.
 
-    ## Remarks
-        The HFP driver calculates the <i>InputPinCategory</i> and <i>OutputPinCategory</i> GUIDs based on the 'Bluetooth Class of Device' data that is contained in the SDP information of the paired device. The audio driver sets the <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff563533(v=vs.85).aspx">KSPIN_DESCRIPTOR.Category</a> members for the input and output bridge pins to the calculated GUIDs.
-<p class="note">In some cases the input and output pin categories may be the same.
+`OutputPinCategory`
+
+KS pin category for the output function of the paired HFP device.
+
+`SupportsVolume`
+
+Indicates whether the paired HFP device supports remote volume control.
+
+`VolumePropertyValuesSize`
+
+If remote volume control is supported, this member contains the size of the data returned by the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.
+
+## Remarks
+The HFP driver calculates the <i>InputPinCategory</i> and <i>OutputPinCategory</i> GUIDs based on the 'Bluetooth Class of Device' data that is contained in the SDP information of the paired device. The audio driver sets the <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff563533(v=vs.85).aspx">KSPIN_DESCRIPTOR.Category</a> members for the input and output bridge pins to the calculated GUIDs.
+<div class="alert"><b>Note</b>  <p class="note">In some cases the input and output pin categories may be the same.
+
 <p class="note">The audio driver should make no particular assumptions about the category GUID values returned in <i>InputPinCategory</i> and <i>OutputPinCategory</i> members. The audio system uses this information to help determine the type of device (for example, headset versus speakers) and whether to use the device for different purposes such as the default communications device.
 
-The audio driver stores the <i>ContainerId</i> in appropriate context data, and returns this value in its implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265129">KSPROPERTY_JACK_CONTAINERID</a> KS property.
+</div><div> </div>The audio driver stores the <i>ContainerId</i> in appropriate context data, and returns this value in its implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265129">KSPROPERTY_JACK_CONTAINERID</a> KS property.
 
 If <i>SupportsVolume</i> is true, the audio driver includes volume support in its KS topology.
 
@@ -99,26 +104,20 @@ For information about the IOCTLs that work with this structure, see <a href="htt
 | **Minimum UMDF version** |  |
 | **Header** | bthhfpddi.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn302029">Bluetooth HFP DDI Structures</a>
-</dt>
-<dt>
-<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>
-</dt>
-<dt>
-<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a>
-</dt>
-<dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff563533(v=vs.85).aspx">KSPIN_DESCRIPTOR.Category</a></dt>
-<dt>
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff563533(v=vs.85).aspx">KSPIN_DESCRIPTOR.Category</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265129">KSPROPERTY_JACK_CONTAINERID</a>
-</dt>
-</dl>
+
+<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a>
+
+<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302029">Bluetooth HFP DDI Structures</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
+
  
 
  

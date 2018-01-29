@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 735C613E-BEAA-4E95-AF9D-A94A4BD940DE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IRB_REQ_ASYNC_LOCK, IRB_REQ_ASYNC_LOCK
+ms.keywords : IEEE.irb_req_async_lock, IRB_REQ_ASYNC_LOCK structure [Buses], IRB_REQ_ASYNC_LOCK, _IRB_REQ_ASYNC_LOCK, 1394/IRB_REQ_ASYNC_LOCK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRB_REQ_ASYNC_LOCK
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IRB_REQ_ASYNC_LOCK
 ---
 
@@ -58,31 +62,30 @@ typedef struct _IRB_REQ_ASYNC_LOCK {
 
 ## Members
 
-        
-            `Arguments`
 
-            Specifies the arguments used in this lock operation.
-        
-            `chPriority`
+`Arguments`
 
-            Reserved.
-        
-            `DataValues`
+Specifies the arguments used in this lock operation.
 
-            Specifies the data values used in this lock operation.
-        
-            `DestinationAddress`
+`chPriority`
 
-            Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>u.AsyncLock.DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
-        
-            `fulFlags`
+Reserved.
 
-            Not currently used. Drivers should set this to zero.
-        
-            `fulTransactionType`
+`DataValues`
 
-            Specifies which atomic transaction to execute on the 1394 node. The following function types are supported.
+Specifies the data values used in this lock operation.
 
+`DestinationAddress`
+
+Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>u.AsyncLock.DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
+
+`fulFlags`
+
+Not currently used. Drivers should set this to zero.
+
+`fulTransactionType`
+
+Specifies which atomic transaction to execute on the 1394 node. The following function types are supported.
 <table>
 <tr>
 <th>fulTransactionType</th>
@@ -149,34 +152,34 @@ If the original value and the argument differ, add the data value to original va
 </td>
 </tr>
 </table>
-        
-            `nNumberOfArgBytes`
 
-            Specifies the number of argument bytes used in performing this lock operation. May be zero, 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
-        
-            `nNumberOfDataBytes`
+`nNumberOfArgBytes`
 
-            Specifies the number of data bytes used in performing this lock operation. May be 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
-        
-            `nSpeed`
+Specifies the number of argument bytes used in performing this lock operation. May be zero, 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
 
-            Reserved.
-        
-            `pBuffer`
+`nNumberOfDataBytes`
 
-            Points to a buffer that receives lock data values returned from the node. The size of the buffer must be at least equal to the <b>u.AsyncLock.nNumberOfDataBytes</b> member.
-        
-            `Reserved`
+Specifies the number of data bytes used in performing this lock operation. May be 4 or 8. See the <b>u.AsyncLock.fulTransactionType</b> member for details.
 
-            Reserved.
-        
-            `tCode`
+`nSpeed`
 
-            Reserved.
-        
-            `ulGeneration`
+Reserved.
 
-            Specifies the bus reset generation as known by the device driver who submitted this asynchronous request. If the generation count specified does not match the actual generation of the bus, then this request is returned with an error.
+`pBuffer`
+
+Points to a buffer that receives lock data values returned from the node. The size of the buffer must be at least equal to the <b>u.AsyncLock.nNumberOfDataBytes</b> member.
+
+`Reserved`
+
+Reserved.
+
+`tCode`
+
+Reserved.
+
+`ulGeneration`
+
+Specifies the bus reset generation as known by the device driver who submitted this asynchronous request. If the generation count specified does not match the actual generation of the bus, then this request is returned with an error.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9e23ae80-7c39-4cee-b1ab-80085f24d41f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRemoteTarget, IWDFRemoteTarget::CloseForQueryRemove, CloseForQueryRemove
+ms.keywords : UMDFIoTargetObjectRef_b816e346-75b1-4da2-a9cf-f6db32abb3ed.xml, CloseForQueryRemove, wdf.iwdfremotetarget_closeforqueryremove, CloseForQueryRemove method, CloseForQueryRemove method, IWDFRemoteTarget interface, wudfddi/IWDFRemoteTarget::CloseForQueryRemove, IWDFRemoteTarget interface, CloseForQueryRemove method, umdf.iwdfremotetarget_closeforqueryremove, IWDFRemoteTarget, IWDFRemoteTarget::CloseForQueryRemove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFRemoteTarget.CloseForQueryRemove
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,10 +59,6 @@ This function has no parameters.
 
 The <b>CloseForQueryRemove</b> method always returns S_OK.
 
-The <b>CloseForQueryRemove</b> method always returns S_OK.
-
-The <b>CloseForQueryRemove</b> method always returns S_OK.
-
 ## Remarks
 
 If your driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556897">IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove</a> callback function, the callback function must call <b>CloseForQueryRemove</b> if it returns <b>TRUE</b> to indicate that the device can be removed. 
@@ -68,8 +68,6 @@ The <b>CloseForQueryRemove</b> method completes or cancels all I/O requests that
 After a driver calls <b>CloseForQueryRemove</b>, the driver cannot send I/O requests to the I/O target until it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff560278">IWDFRemoteTarget::Reopen</a>.
 
 For more information about the <b>CloseForQueryRemove</b> method, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>.
-
-The following code example shows an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556897">IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove</a> callback function that calls <b>CloseForQueryRemove</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,14 +83,10 @@ The following code example shows an <a href="https://msdn.microsoft.com/library/
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560253">IWDFRemoteTarget::Close</a>
-</dt>
-</dl>
+
  
 
  

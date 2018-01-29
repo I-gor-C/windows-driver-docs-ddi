@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe84e542-c8b2-4631-9ffb-dde471311871
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetCompletionRoutineEx
+ms.keywords : IoSetCompletionRoutineEx routine [Kernel-Mode Driver Architecture], k104_b574c1f0-f1e7-4c34-93ee-4681ec9e1046.xml, kernel.iosetcompletionroutineex, IoSetCompletionRoutineEx, wdm/IoSetCompletionRoutineEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows XP.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetCompletionRoutineEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : CompleteRequest, CompleteRequestStatusCheck, CompletionRoutineRegistered, IoAllocateForward, IoAllocateIrpSignalEventInCompletion, IoAllocateIrpSignalEventInCompletion2, IoAllocateIrpSignalEventInCompletion3, IoAllocateIrpSignalEventInCompletionTimeout, IoBuildFsdForward, IoBuildFsdIrpSignalEventInCompletion, IoBuildFsdIrpSignalEventInCompletion2, IoBuildFsdIrpSignalEventInCompletion3, IoBuildFsdIrpSignalEventInCompletionTimeout, IoSetCompletionExCompleteIrp, IoSetCompletionRoutineExCheck, IoSetCompletionRoutineExCheckDeviceObject, LowerDriverReturn, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PendedCompletedRequestEx, SignalEventInCompletion, SignalEventInCompletion2, SignalEventInCompletion3, StartDeviceWait2, StartDeviceWait4, SetCompletionRoutineFromDispatch, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -90,13 +94,19 @@ This routine returns STATUS_SUCCESS on success, or STATUS_INSUFFICIENT_RESOURCES
 
 ## Remarks
 
-The <i>IoCompletion</i> routine must belong to the driver that owns the device object pointed to by <i>DeviceObject</i>. This requirement prevents the <i>IoCompletion</i> routine from being unloaded before it returns.
+<div class="alert"><b>Note</b>  Unlike <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>, the <b>IoSetCompletionRoutineEx</b> routine returns an NTSTATUS value. The driver must check this value to determine if the <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> routine was successfully registered. If the <i>IoCompletion</i> routine is successfully registered, <b>IoSetCompletionRoutineEx</b> allocates memory that remains allocated until the <i>IoCompletion</i> routine executes. Drivers must ensure that their <i>IoCompletion</i> routine executes by calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>; otherwise, the kernel will leak memory.</div><div> </div>The <i>IoCompletion</i> routine must belong to the driver that owns the device object pointed to by <i>DeviceObject</i>. This requirement prevents the <i>IoCompletion</i> routine from being unloaded before it returns.
 
 The behavior of <b>IoSetCompletionRoutineEx</b> is the same as the <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a> routine, except that:
-
+<ul>
+<li>
 <b>IoSetCompletionRoutineEx</b> guarantees that a non-Plug and Play driver is not unloaded before the <i>IoCompletion</i> routine runs.
 
+</li>
+<li>
 <b>IoSetCompletionRoutineEx</b> is a routine that returns an NTSTATUS value.
+
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,32 +122,22 @@ The behavior of <b>IoSetCompletionRoutineEx</b> is the same as the <a href="..\w
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
+<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+
+<a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
+
+<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+
  
 
  

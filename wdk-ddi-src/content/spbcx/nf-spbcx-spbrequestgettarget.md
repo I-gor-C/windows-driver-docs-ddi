@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 2F89C886-99FF-4D6C-B52F-6422DB9E76AE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbRequestGetTarget
+ms.keywords : SPB.spbrequestgettarget, SpbRequestGetTarget, SpbRequestGetTarget method [Buses], spbcx/SpbRequestGetTarget
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpbRequestGetTarget
-req.alt-loc : spbcxstubs.lib,spbcxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Spbcxstubs.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -76,14 +80,10 @@ The returned SPBTARGET handle is guaranteed to remain valid until the correspond
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
-</dt>
-<dt>
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
-</dt>
-</dl>
+
  
 
  

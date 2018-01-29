@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b5985fc4-dd1a-455d-b2ad-3dc2dfec2e6e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
+ms.keywords : ifsk.mrxstart, MRxStart routine [Installable File System Drivers], MRxStart, PMRX_CALLDOWN_CTX, PMRX_CALLDOWN_CTX, mrx/MRxStart, mrxref_e76b85d0-b290-4206-a16c-5d5ed9a5cfff.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MRxStart
-req.alt-loc : mrx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
@@ -64,12 +68,34 @@ A pointer to the RDBSS_DEVICE_OBJECT structure for this network mini-redirector.
 ## Return Value
 
 <i>MRxStart</i> returns STATUS_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_REDIRECTOR_STARTED</b></dt>
-</dl>The network mini-redirector was already started.
+</dl>
+</td>
+<td width="60%">
+The network mini-redirector was already started.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>The network mini-redirector was unable to start successfully.
+</dl>
+</td>
+<td width="60%">
+The network mini-redirector was unable to start successfully.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -103,17 +129,12 @@ A network mini-redirector would normally maintain an internal variable indicatin
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549876">MRxDevFcbXXXControlFile</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550833">MRxStop</a>
-</dt>
-<dt>
 <a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550833">MRxStop</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549876">MRxDevFcbXXXControlFile</a>
+
  
 
  

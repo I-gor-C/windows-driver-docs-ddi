@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 82e3a1e9-275a-489a-9e6e-d76007a1abb9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_EX_INT13_INFO, *PDISK_EX_INT13_INFO, DISK_EX_INT13_INFO
+ms.keywords : ntdddisk/DISK_EX_INT13_INFO, storage.disk_ex_int13_info, PDISK_EX_INT13_INFO, structs-disk_be49445a-5e95-4b7a-b4ef-fa21f110aeca.xml, DISK_EX_INT13_INFO, DISK_EX_INT13_INFO structure [Storage Devices], ntdddisk/PDISK_EX_INT13_INFO, PDISK_EX_INT13_INFO structure pointer [Storage Devices], _DISK_EX_INT13_INFO, *PDISK_EX_INT13_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISK_EX_INT13_INFO
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PDISK_EX_INT13_INFO, DISK_EX_INT13_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DISK_EX_INT13_INFO, *PDISK_EX_INT13_INFO
 ---
 
 # _DISK_EX_INT13_INFO structure
@@ -53,19 +57,18 @@ typedef struct _DISK_EX_INT13_INFO {
 
 ## Members
 
-        
-            `ExBufferSize`
 
-            Indicates the size of the buffer that the caller provides to the BIOS in which to return the requested drive data. <b>ExBufferSize</b> must be 26 or greater. If <b>ExBufferSize</b> is less than 26, the BIOS returns an error . If <b>ExBufferSize</b> is between 30 and 66, the BIOS sets it to exactly 30 on exit. If <b>ExBufferSize</b> is 66 or greater, the BIOS sets it to exactly 66 on exit.
-        
-            `ExCylinders`
+`ExBufferSize`
 
-            Indicates the number of <i>physical </i>cylinders. This is one greater than the maximum cylinder number.
-        
-            `ExFlags`
+Indicates the size of the buffer that the caller provides to the BIOS in which to return the requested drive data. <b>ExBufferSize</b> must be 26 or greater. If <b>ExBufferSize</b> is less than 26, the BIOS returns an error . If <b>ExBufferSize</b> is between 30 and 66, the BIOS sets it to exactly 30 on exit. If <b>ExBufferSize</b> is 66 or greater, the BIOS sets it to exactly 66 on exit.
 
-            Provides information about the drive. The following table describes the significance of each bit, where bit 0 is the least significant bit and bit 15 the most significant bit. A value of one in the indicated bit means that the feature described in the "Meaning" column is available. A value of zero in the indicated bit means that the feature is not available with this drive.
+`ExCylinders`
 
+Indicates the number of <i>physical </i>cylinders. This is one greater than the maximum cylinder number.
+
+`ExFlags`
+
+Provides information about the drive. The following table describes the significance of each bit, where bit 0 is the least significant bit and bit 15 the most significant bit. A value of one in the indicated bit means that the feature described in the "Meaning" column is available. A value of zero in the indicated bit means that the feature is not available with this drive.
 <table>
 <tr>
 <th>Bit number </th>
@@ -152,26 +155,26 @@ Reserved, must be 0.
 </td>
 </tr>
 </table>
-        
-            `ExHeads`
 
-            Indicates the number of <i>physical </i>heads. This is one greater than the maximum head number.
-        
-            `ExReserved`
+`ExHeads`
 
-            Reserved.
-        
-            `ExSectorSize`
+Indicates the number of <i>physical </i>heads. This is one greater than the maximum head number.
 
-            Indicates the sector size in bytes.
-        
-            `ExSectorsPerDrive`
+`ExReserved`
 
-            Indicates the total count of sectors on the disk. This is one greater than the maximum logical block address.
-        
-            `ExSectorsPerTrack`
+Reserved.
 
-            Indicates the number of <i>physical </i>sectors per track. This number is the same as the maximum sector number.
+`ExSectorSize`
+
+Indicates the sector size in bytes.
+
+`ExSectorsPerDrive`
+
+Indicates the total count of sectors on the disk. This is one greater than the maximum logical block address.
+
+`ExSectorsPerTrack`
+
+Indicates the number of <i>physical </i>sectors per track. This number is the same as the maximum sector number.
 
 
 ## Requirements
@@ -182,16 +185,12 @@ Reserved, must be 0.
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
-</dt>
-<dt>
 <a href="..\ntdddisk\ns-ntdddisk-_disk_int13_info.md">DISK_INT13_INFO</a>
-</dt>
-</dl>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
+
  
 
  

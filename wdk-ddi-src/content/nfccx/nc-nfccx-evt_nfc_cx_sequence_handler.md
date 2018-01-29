@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 6EB96A37-06B9-4655-AD69-375EE770F4DF
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE
+ms.keywords : nfpdrivers.evtnfccxsequencehandler, EVT_NFC_CX_SEQUENCE_HANDLER, *PFN_NFC_CX_SEQUENCE_HANDLER, EvtNfcCxSequenceHandler callback function [Near-Field Proximity Drivers], EvtNfcCxSequenceHandler, EVT_NFC_CX_SEQUENCE_HANDLER, EVT_NFC_CX_SEQUENCE_HANDLER, nfccx/ EvtNfcCxSequenceHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : EvtNfcCxSequenceHandler
-req.alt-loc : nfccx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NPI_REGISTRATION_INSTANCE
 ---
 
@@ -93,10 +97,10 @@ On completion of handling the sequence, the client driver notifies the NFC CX th
 
 ## See Also
 
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

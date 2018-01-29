@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 413469b9-2f6c-4f4d-8723-80645a72744c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeDeleteClientSecurity
+ms.keywords : ntifs/SeDeleteClientSecurity, seref_bab4478e-d302-478b-8819-79c9b2f79aa7.xml, ifsk.sedeleteclientsecurity, SeDeleteClientSecurity routine [Installable File System Drivers], SeDeleteClientSecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SeDeleteClientSecurity
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : ntifs.h
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -50,7 +54,7 @@ VOID SeDeleteClientSecurity(
 
 `C`
 
-
+TBD
 
 
 ## Return Value
@@ -79,14 +83,10 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-secreateclientsecurityfromsubjectcontext.md">SeCreateClientSecurityFromSubjectContext</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d533721f-b4c8-44f9-9c39-f312e1ec9895
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+ms.keywords : PVIDEO_WIN32K_CALLBACKS_PARAMS, Video_Structs_1a8e1e6c-1019-4d0f-9a62-7802059cafd2.xml, VIDEO_WIN32K_CALLBACKS_PARAMS structure [Display Devices], _VIDEO_WIN32K_CALLBACKS_PARAMS, ntddvdeo/PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, ntddvdeo/VIDEO_WIN32K_CALLBACKS_PARAMS, display.video_win32k_callbacks_params, PVIDEO_WIN32K_CALLBACKS_PARAMS structure pointer [Display Devices], *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_WIN32K_CALLBACKS_PARAMS
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
@@ -49,22 +53,34 @@ typedef struct _VIDEO_WIN32K_CALLBACKS_PARAMS {
 
 ## Members
 
-        
-            `CalloutType`
 
-            Reserved for system use.
-        
-            `Param`
+`CalloutType`
 
-            Reserved for system use.
-        
-            `PhysDisp`
+Reserved for system use.
 
-            Reserved for system use.
-        
-            `Status`
+`IsPostDevice`
 
-            Reserved for system use.
+
+
+`LockUserSession`
+
+
+
+`Param`
+
+Reserved for system use.
+
+`PhysDisp`
+
+Reserved for system use.
+
+`Status`
+
+Reserved for system use.
+
+`SurpriseRemoval`
+
+
 
 
 ## Requirements

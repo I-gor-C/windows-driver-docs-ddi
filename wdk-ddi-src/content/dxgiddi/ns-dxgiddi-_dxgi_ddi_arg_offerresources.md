@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 54d53a48-b2e2-43f6-9e6d-c35c732b07d9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGI_DDI_ARG_OFFERRESOURCES, DXGI_DDI_ARG_OFFERRESOURCES
+ms.keywords : dxgiddi/DXGI_DDI_ARG_OFFERRESOURCES, DXGI_DDI_ARG_OFFERRESOURCES, display.dxgi_ddi_arg_offerresources, DXGI_DDI_ARG_OFFERRESOURCES structure [Display Devices], _DXGI_DDI_ARG_OFFERRESOURCES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8,WDDM 1.2 and later
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGI_DDI_ARG_OFFERRESOURCES
-req.alt-loc : Dxgiddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGI_DDI_ARG_OFFERRESOURCES
 ---
 
@@ -49,24 +53,24 @@ typedef struct _DXGI_DDI_ARG_OFFERRESOURCES {
 
 ## Members
 
-        
-            `hDevice`
 
-            [in] A handle to the display device (graphics context) on which the driver offers resources for reuse.
+`hDevice`
+
+[in] A handle to the display device (graphics context) on which the driver offers resources for reuse.
 
 The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when it created the device by calling the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> routine.
-        
-            `pResources`
 
-            [in] A pointer to an array of handles to the video memory resources that the driver offers.
-        
-            `Priority`
+`pResources`
 
-            [in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.
-        
-            `Resources`
+[in] A pointer to an array of handles to the video memory resources that the driver offers.
 
-            [in] The number of elements in the array pointed to by <b>pResources</b>.
+`Priority`
+
+[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.
+
+`Resources`
+
+[in] The number of elements in the array pointed to by <b>pResources</b>.
 
 
 ## Requirements
@@ -77,22 +81,16 @@ The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> m
 | **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-</dt>
-<dt>
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
-</dt>
-<dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">pfnOfferResources</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
+
  
 
  

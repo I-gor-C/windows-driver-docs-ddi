@@ -7,8 +7,8 @@ old-location : netvista\ril_drainmodemlogs.htm
 old-project : netvista
 ms.assetid : 2a9f3bb8-3de5-439c-86a3-7fdc6b025b8d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RIL_DrainModemLogs
+ms.date : 1/18/2018
+ms.keywords : rilapi/RIL_DrainModemLogs, RIL_DrainModemLogs method [Network Drivers Starting with Windows Vista], netvista.ril_drainmodemlogs, RIL_DrainModemLogs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RIL_DrainModemLogs
-req.alt-loc : rilapi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
-req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product : Windows 10 or later.
 ---
 

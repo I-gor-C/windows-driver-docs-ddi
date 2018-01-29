@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 61D637E6-316D-49A5-B1B1-C89415C7D0B8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords : kernel.platformidleveto, PlatformIdleVeto, PlatformIdleVeto routine [Kernel-Mode Driver Architecture], PlatformIdleVeto, POFXCALLBACKPLATFORMIDLEVETO, POFXCALLBACKPLATFORMIDLEVETO, pepfx/PlatformIdleVeto
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PlatformIdleVeto
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
 ---
 
 
@@ -74,9 +78,23 @@ Whether to increment or decrement the veto count. Set to TRUE to increment the v
 ## Return Value
 
 <b>PlatformIdleVeto</b> returns STATUS_SUCCESS if the call successfully increments or decrements the veto count. Possible error return values include the following status code.
+<table>
+<tr>
+<th>Return value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt>STATUS_NOT_IMPLEMENTED</dt>
-</dl>Indicates that the <b>PlatformIdleVeto</b> routine is not implemented for this processor.
+</dl>
+</td>
+<td width="60%">
+Indicates that the <b>PlatformIdleVeto</b> routine is not implemented for this processor.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -100,17 +118,12 @@ This routine must be called at IRQL = PASSIVE_LEVEL.
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186827">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186829">PEP_NOTIFY_PPM_QUERY_VETO_REASONS</a>
-</dt>
-</dl>
+
+<a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186827">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
+
  
 
  

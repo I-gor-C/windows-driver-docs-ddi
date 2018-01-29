@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f9415dc9-352a-4e93-a0c1-2519c8c89762
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_CREATEDEVICEFLAGS, D3DDDI_CREATEDEVICEFLAGS
+ms.keywords : D3D_other_Structs_45151acf-e91a-454b-be32-b7b7aaa619e9.xml, d3dumddi/D3DDDI_CREATEDEVICEFLAGS, D3DDDI_CREATEDEVICEFLAGS, D3DDDI_CREATEDEVICEFLAGS structure [Display Devices], display.d3dddi_createdeviceflags, _D3DDDI_CREATEDEVICEFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_CREATEDEVICEFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_CREATEDEVICEFLAGS
 ---
 
@@ -63,16 +67,12 @@ typedef struct _D3DDDI_CREATEDEVICEFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
+
  
 
  

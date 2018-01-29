@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : d6ea5ac7-d324-4986-bbfb-4decd278acf7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+ms.keywords : parports.ioctl_par_set_read_address, IOCTL_PAR_SET_READ_ADDRESS control code [Parallel Ports], IOCTL_PAR_SET_READ_ADDRESS, ntddpar/IOCTL_PAR_SET_READ_ADDRESS, cisspd_91a85f87-e3c1-4ccb-aeab-13a484c75224.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_PAR_SET_READ_ADDRESS
-req.alt-loc : ntddpar.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_SET_READ_ADDRESS IOCTL
-The IOCTL_PAR_SET_READ_ADDRESS request sets an extended capabilities port (ECP) or enhanced parallel port (EPP) read address (channel) for a parallel device.
-
-
-
 The IOCTL_PAR_SET_READ_ADDRESS request sets an extended capabilities port (ECP) or enhanced parallel port (EPP) read address (channel) for a parallel device.
 
 ### Major Code
@@ -63,14 +63,9 @@ None.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to the following value:
-
-
-
-<b>Parameters.DeviceIoControl.InputBufferLength</b> is less than the size, in bytes, of a UCHAR.
 
 
 ## Requirements
@@ -80,13 +75,10 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 | **Header** | ntddpar.h (include Ntddpar.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_set_write_address.md">IOCTL_PAR_SET_WRITE_ADDRESS</a>
-</dt>
-</dl>
+
  
 
  

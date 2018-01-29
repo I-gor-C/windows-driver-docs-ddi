@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a2bf1a8-d416-46bc-a9ba-9122407ea2a2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_RENDER, D3DDDICB_RENDER
+ms.keywords : display.d3dddicb_render, D3D_param_Structs_62df043b-dbd7-4faf-a911-683ab12ba79b.xml, D3DDDICB_RENDER, _D3DDDICB_RENDER, d3dumddi/D3DDDICB_RENDER, D3DDDICB_RENDER structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDICB_RENDER
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDICB_RENDER
 ---
 
@@ -65,92 +69,136 @@ typedef struct _D3DDDICB_RENDER {
 
 ## Members
 
-        
-            `BroadcastContext`
 
-            [in] An array of handles to the additional contexts to broadcast the current command buffer to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current command buffer to.
+`BegunAPISequenceNumberLow0Size`
+
+
+
+`BegunAPISequenceNumberLow1Size`
+
+
+
+`BroadcastContext`
+
+[in] An array of handles to the additional contexts to broadcast the current command buffer to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current command buffer to.
 
 The original context that the <b>hContext</b> member specifies and that owns the command buffer is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the user-mode display driver sends the command buffer to the owning context (<b>hContext</b>) and broadcasts to that one additional context.
-        
-            `BroadcastContextCount`
 
-            [in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.
-        
-            `CommandLength`
+`BroadcastContextCount`
 
-            [in] The size, in bytes, of the command buffer, starting from offset zero.
-        
-            `CommandOffset`
+[in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.
 
-            [in] The offset, in bytes, to the first command in the command buffer.
-        
-            `Flags`
+`CommandLength`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
-        
-            `hContext`
+[in] The size, in bytes, of the command buffer, starting from offset zero.
 
-            [in] A handle to the context that the driver submits the rendering operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.
-        
-            `NewAllocationListSize`
+`CommandOffset`
 
-            [in/out] The number of elements that the user-mode display driver requests for the next allocation list. 
+[in] The offset, in bytes, to the first command in the command buffer.
+
+`CompletedAPISequenceNumberLow0Size`
+
+
+
+`CompletedAPISequenceNumberLow1Size`
+
+
+
+`FirstAPISequenceNumberHigh`
+
+
+
+`Flags`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
+
+`hContext`
+
+[in] A handle to the context that the driver submits the rendering operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.
+
+`MarkerLogType`
+
+
+
+`NewAllocationListSize`
+
+[in/out] The number of elements that the user-mode display driver requests for the next allocation list. 
 
 The driver receives the number of elements for the allocation list that will be available when the next command buffer is submitted.
-        
-            `NewCommandBuffer`
 
-            This member is reserved and should be set to zero.
+`NewCommandBuffer`
+
+This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
-        
-            `NewCommandBufferSize`
 
-            [in/out] The size, in bytes, that the user-mode display driver requests for the next command buffer.
+`NewCommandBufferSize`
+
+[in/out] The size, in bytes, that the user-mode display driver requests for the next command buffer.
 
 The driver receives the size, in bytes, of the next command buffer to use.
-        
-            `NewPatchLocationListSize`
 
-            [in/out] The number of elements that the user-mode display driver requests for the next patch-location list.
+`NewPatchLocationListSize`
+
+[in/out] The number of elements that the user-mode display driver requests for the next patch-location list.
 
 The driver receives the number of elements for the patch-location list that will be available when the next command buffer is submitted.
-        
-            `NumAllocations`
 
-            [in] The number of elements in the allocation list.
-        
-            `NumPatchLocations`
+`NumAllocations`
 
-            [in] The number of elements in the patch-location list.
-        
-            `pNewAllocationList`
+[in] The number of elements in the allocation list.
 
-            [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
-        
-            `pNewCommandBuffer`
+`NumPatchLocations`
 
-            [out] A pointer to a command buffer that the user-mode display driver receives to use in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
-        
-            `pNewPatchLocationList`
+[in] The number of elements in the patch-location list.
 
-            [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
-        
-            `pPrivateDriverData`
+`pBegunAPISequenceNumberLow0`
 
-            [in] This member is reserved and should be set to zero.
+
+
+`pBegunAPISequenceNumberLow1`
+
+
+
+`pCompletedAPISequenceNumberLow0`
+
+
+
+`pCompletedAPISequenceNumberLow1`
+
+
+
+`pNewAllocationList`
+
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+
+`pNewCommandBuffer`
+
+[out] A pointer to a command buffer that the user-mode display driver receives to use in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+
+`pNewPatchLocationList`
+
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+
+`pPrivateDriverData`
+
+[in] This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
-        
-            `PrivateDriverDataSize`
 
-            [in] This member is reserved and should be set to zero.
+`PrivateDriverDataSize`
+
+[in] This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
-        
-            `QueuedBufferCount`
 
-            [out] The number of DMA buffers that are queued to the context that the <b>hContext</b> member specifies after the current submission occurs.
+`QueuedBufferCount`
+
+[out] The number of DMA buffers that are queued to the context that the <b>hContext</b> member specifies after the current submission occurs.
+
+`RenderCBSequence`
+
+
 
 
 ## Requirements
@@ -161,22 +209,16 @@ This member is available beginning with Windows 7.
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
-</dt>
-<dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 742ee83c-3db4-4d77-a79d-28bcc405746d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcDestroyContent
+ms.keywords : portcls/PcDestroyContent, PcDestroyContent, audio.pcdestroycontent, PcDestroyContent function [Audio Devices], audpc-routines_8f5adcf6-89a7-4918-ac2e-78afa45c38c5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcDestroyCo
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcDestroyContent
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -48,14 +52,10 @@ PORTCLASSAPI NTSTATUS NTAPI  PcDestroyContent(void);
 
 `ContentId`
 
-
+TBD
 
 
 ## Return Value
-
-See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.
-
-See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.
 
 See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.
 
@@ -77,14 +77,10 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmdestroycon
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>
-</dt>
-<dt>
 <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
-</dt>
-</dl>
+
+<a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 4d080a3d-7277-4bc5-b435-af2c334862ca
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.keywords : hid.ioctl_hid_get_collection_information, IOCTL_HID_GET_COLLECTION_INFORMATION control code [Human Input Devices], IOCTL_HID_GET_COLLECTION_INFORMATION, hidclass/IOCTL_HID_GET_COLLECTION_INFORMATION, hidioreq_f9030552-353d-4f1d-ae66-9689e8c9ad12.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_HID_GET_COLLECTION_INFORMATION
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT"
 ---
 
@@ -61,12 +65,17 @@ The size of a HID_COLLECTION_INFORMATION structure.
 <text></text>
 
 ### Status Block
-I/O Status block
 The HID class driver sets the following fields of <b>Irp-&gt;IoStatus</b>:
-
+<ul>
+<li>
 <b>Information</b> is set to <b>sizeof</b>(HID_COLLECTION_INFORMATION) if the data was retrieved successfully. 
 
+</li>
+<li>
 <b>Status</b> is set to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
+
+</li>
+</ul>
 
 
 ## Requirements
@@ -76,13 +85,10 @@ The HID class driver sets the following fields of <b>Irp-&gt;IoStatus</b>:
 | **Header** | hidclass.h (include Hidclass.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\hidclass\ns-hidclass-_hid_collection_information.md">HID_COLLECTION_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

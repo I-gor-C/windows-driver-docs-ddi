@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fc4faca4-4d44-4b3e-bace-718fc8774f54
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRequestSynchronizedRoutine
+ms.keywords : storage.ataportrequestsynchronizedroutine, AtaPortRequestSynchronizedRoutine routine [Storage Devices], AtaPortRequestSynchronizedRoutine, irb/AtaPortRequestSynchronizedRoutine, atartns_612d4956-589d-4404-b3d3-f72eb6119e65.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : AtaPortRequestSynchronizedRoutine
-req.alt-loc : irb.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,15 +26,22 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IDE_POWER_STATE
 ---
 
 
 # AtaPortRequestSynchronizedRoutine function
 The <b>AtaPortRequestSynchronizedRoutine</b> routine is used by the miniport driver to request synchronization with the interrupt service routine (ISR).
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
 
@@ -55,7 +60,7 @@ A pointer to the channel extension.
 
 `CallBackRoutine`
 
-
+TBD
 
 
 ## Return Value
@@ -71,6 +76,20 @@ The pointer to the channel extension that is stored in <i>ChannelExtension</i> w
 When the port driver calls the routine that is pointed to by <i>SynchronizedRoutine</i>, it passes the pointer to the channel extension that is stored in <i>ChannelExtension</i>.
 
 The <i>SynchronizedRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+VOID
+(*IDE_HW_DPC) (
+  IN PVOID ChannelExtension
+  );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,11 +105,8 @@ The <i>SynchronizedRoutine</i> function pointer is declared in <i>Irb.h</i> as f
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\irb\nf-irb-ataportcontrollersyncroutine.md">AtaPortControllerSyncRoutine</a>
-</dt>
-</dl>
+
  
 
  

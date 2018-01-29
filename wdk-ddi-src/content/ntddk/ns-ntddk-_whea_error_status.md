@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 5b11112b-e900-4894-a9ce-6895a4fa1956
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_STATUS, WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
+ms.keywords : PWHEA_ERROR_STATUS, ntddk/PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], whea.whea_error_status, _WHEA_ERROR_STATUS, whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], *PWHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_STATUS
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
 ---
 
@@ -58,13 +62,17 @@ typedef union _WHEA_ERROR_STATUS {
 
 ## Members
 
-        
-            `ErrorStatus`
 
-            A ULONGLONG representation of the contents of the WHEA_ERROR_STATUS union.
+`DUMMYSTRUCTNAME`
 
-    ## Remarks
-        The WHEA_ERROR_STATUS union provides the capability to abstract information from implementation-specific error registers into generic error codes so that the operating system can process the errors without an intimate knowledge of the underlying platform. This union is derived from the Error Status section of the <a href="http://go.microsoft.com/fwlink/p/?linkid=26730">Intel Itanium Processor Family System Abstraction Layer Specification</a>.
+
+
+`ErrorStatus`
+
+A ULONGLONG representation of the contents of the WHEA_ERROR_STATUS union.
+
+## Remarks
+The WHEA_ERROR_STATUS union provides the capability to abstract information from implementation-specific error registers into generic error codes so that the operating system can process the errors without an intimate knowledge of the underlying platform. This union is derived from the Error Status section of the <a href="http://go.microsoft.com/fwlink/p/?linkid=26730">Intel Itanium Processor Family System Abstraction Layer Specification</a>.
 
 A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>, <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>, and <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structures.
 
@@ -76,19 +84,14 @@ A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_wh
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
+
 <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
-</dt>
-</dl>
+
  
 
  

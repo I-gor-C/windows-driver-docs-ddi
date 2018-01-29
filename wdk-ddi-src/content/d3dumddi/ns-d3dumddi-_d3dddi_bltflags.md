@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 844d6aed-2ca2-45ef-bd53-54344dbdadbf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_BLTFLAGS, D3DDDI_BLTFLAGS
+ms.keywords : D3DDDI_BLTFLAGS structure [Display Devices], display.d3dddi_bltflags, D3DDDI_BLTFLAGS, d3dumddi/D3DDDI_BLTFLAGS, D3D_other_Structs_8d70fa64-3813-4165-a64d-4e91287e05d5.xml, _D3DDDI_BLTFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DDDI_BLTFLAGS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DDDI_BLTFLAGS
 ---
 
@@ -70,8 +74,52 @@ typedef struct _D3DDDI_BLTFLAGS {
 ## Members
 
 
-    ## Remarks
-        The <b>BeginPresentToDwm</b>, <b>ContinuePresentToDwm</b>, and <b>EndPresentToDwm</b> bit-field flags inform the user-mode display driver about the time when the Direct3D runtime performs parts of a DWM present operation.  Because DWM present operations can occur in multiple steps, the Direct3D runtime uses these flags to mark the steps in a sequence of bitblts. For example:
+## Remarks
+The <b>BeginPresentToDwm</b>, <b>ContinuePresentToDwm</b>, and <b>EndPresentToDwm</b> bit-field flags inform the user-mode display driver about the time when the Direct3D runtime performs parts of a DWM present operation.  Because DWM present operations can occur in multiple steps, the Direct3D runtime uses these flags to mark the steps in a sequence of bitblts. For example:  
+<ul>
+<li>If the present operation consists of one bitblt, the bitblt is marked as follows:<ul>
+<li><b>BeginPresentToDwm</b> = <b>TRUE</b>;</li>
+<li><b>ContinuePresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>EndPresentToDwm</b> = <b>TRUE</b>;</li>
+</ul>
+</li>
+<li>If the present operation consists of two bitblts, the bitblts are marked as shown in two sequential bitblt operations:<ol>
+<li>First bitblt:<ul>
+<li><b>BeginPresentToDwm</b> = <b>TRUE</b>;</li>
+<li><b>ContinuePresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>EndPresentToDwm</b> = <b>FALSE</b>;</li>
+</ul>
+</li>
+<li>Second bitblt:<ul>
+<li><b>BeginPresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>ContinuePresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>EndPresentToDwm</b> = <b>TRUE</b>;</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>If the present operation consists of three or more bitblts, the bitblts are marked as shown in the following sequential bitblt operations:<ol>
+<li>First bitblt:<ul>
+<li><b>BeginPresentToDwm</b> = <b>TRUE</b>;</li>
+<li><b>ContinuePresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>EndPresentToDwm</b> = <b>FALSE</b>;</li>
+</ul>
+</li>
+<li>Second and successive bitblts, not including the final bitblt:<ul>
+<li><b>BeginPresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>ContinuePresentToDwm</b> = <b>TRUE</b>;</li>
+<li><b>EndPresentToDwm</b> = <b>FALSE</b>;</li>
+</ul>
+</li>
+<li>Final bitblt:<ul>
+<li><b>BeginPresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>ContinuePresentToDwm</b> = <b>FALSE</b>;</li>
+<li><b>EndPresentToDwm</b> = <b>TRUE</b>;</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,16 +129,12 @@ typedef struct _D3DDDI_BLTFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_blt.md">D3DDDIARG_BLT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md">Flush</a>
-</dt>
-</dl>
+
  
 
  

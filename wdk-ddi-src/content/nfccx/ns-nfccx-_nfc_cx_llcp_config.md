@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 84A1F957-FAAE-4C2D-9D49-486813A26950
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : _NFC_CX_LLCP_CONFIG, *PNFC_CX_LLCP_CONFIG, NFC_CX_LLCP_CONFIG
+ms.keywords : nfccx/NFC_CX_LLCP_CONFIG, NFC_CX_LLCP_CONFIG, NFC_CX_LLCP_CONFIG structure [Near-Field Proximity Drivers], *PNFC_CX_LLCP_CONFIG, PNFC_CX_LLCP_CONFIG, PNFC_CX_LLCP_CONFIG structure pointer [Near-Field Proximity Drivers], _NFC_CX_LLCP_CONFIG, nfpdrivers.nfc_cx_llcp_config, nfccx/PNFC_CX_LLCP_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : None supported
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NFC_CX_LLCP_CONFIG
-req.alt-loc : nfccx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PNFC_CX_LLCP_CONFIG, NFC_CX_LLCP_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : NFC_CX_LLCP_CONFIG, *PNFC_CX_LLCP_CONFIG
 ---
 
 # _NFC_CX_LLCP_CONFIG structure
@@ -49,22 +53,22 @@ typedef struct _NFC_CX_LLCP_CONFIG {
 
 ## Members
 
-        
-            `LinkTimeout`
 
-            LTO timeout in multiples of 10 milliseconds. Default is 100 (1 second).
-        
-            `Miu`
+`LinkTimeout`
 
-            Max information unit in bytes. Default is 1024.
-        
-            `RecvWindowSize`
+LTO timeout in multiples of 10 milliseconds. Default is 100 (1 second).
 
-            The receive window size per LLCP spec. Default value is 5.
-        
-            `Size`
+`Miu`
 
-            Size of this structure in bytes.
+Max information unit in bytes. Default is 1024.
+
+`RecvWindowSize`
+
+The receive window size per LLCP spec. Default value is 5.
+
+`Size`
+
+Size of this structure in bytes.
 
 
 ## Requirements
@@ -75,12 +79,12 @@ typedef struct _NFC_CX_LLCP_CONFIG {
 | **Minimum UMDF version** |  |
 | **Header** | nfccx.h (include Ncidef.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a></dt>
-<dt><a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a></dt>
-</dl>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
  
 
  

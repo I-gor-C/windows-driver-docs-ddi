@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9159A6ED-0D85-422D-936A-13D7EC907A7C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmInitializeDevice
+ms.keywords : ucmmanager/UcmInitializeDevice, buses.ucminitializedevice, UcmInitializeDevice method [Buses], UcmInitializeDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 1.15
 req.umdf-ver : 2.15
-req.alt-api : UcmInitializeDevice
-req.alt-loc : UcmCxstub.lib,UcmCxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : UcmCxstub.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
 req.product : Windows 10 or later.
 ---
@@ -56,7 +60,7 @@ A handle to a framework device object that the client driver received in the pre
 
 `Config`
 
-
+A pointer to a caller-supplied <a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a> structure that is initialized by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>.
 
 
 ## Return Value
@@ -81,14 +85,10 @@ This method initializes UcmCx and allocates resources required, registers for Pn
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a>
-</dt>
-<dt>
 <a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>
-</dt>
-</dl>
+
+<a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a>
+
  
 
  

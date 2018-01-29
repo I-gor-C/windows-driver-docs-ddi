@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : E92F181A-DBD7-44A3-A49D-DDF07E03ADB1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCxGetReadIntervalTimeout
+ms.keywords : serports.sercxgetreadintervaltimeout, SerCxGetReadIntervalTimeout, 1/SerCxGetReadIntervalTimeout, SerCxGetReadIntervalTimeout method [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SerCxGetReadIntervalTimeout
-req.alt-loc : 1.0\Sercx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERCX_STATUS, *PSERCX_STATUS
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ A read (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">I
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
-</dt>
-<dt>
 <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 764e6504-a056-44c4-acf5-1788832a9c70
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN, D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN
+ms.keywords : d3dkmthk/D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN, D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN, _D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN, OpenGL_Structs_2e7ec746-9d7b-43b8-8606-1c92481031a3.xml, D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN structure [Display Devices], display.d3dkmt_gdimodel_sysmem_presenthistorytoken
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN is suppor
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN {
 
 ## Members
 
-        
-            `dwDirtyFlags`
 
-            [in] A set of flags in a 32-bit value that identifies the active rectangles (dirty regions) of the GDI surface.
-        
-            `hlsurf`
+`dwDirtyFlags`
 
-            [in] A 64-bit value that specifies the handle to a logical surface to copy from.
-        
-            `uiCookie`
+[in] A set of flags in a 32-bit value that identifies the active rectangles (dirty regions) of the GDI surface.
 
-            [in] A 64-bit value that specifies the handle to a physical surface to copy to.
+`hlsurf`
+
+[in] A 64-bit value that specifies the handle to a logical surface to copy from.
+
+`uiCookie`
+
+[in] A 64-bit value that specifies the handle to a physical surface to copy to.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 275AE285-6309-4A03-A02C-DBE8D44727CE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_PROCESSOR_FEEDBACK_COUNTER, *PPEP_PROCESSOR_FEEDBACK_COUNTER, PEP_PROCESSOR_FEEDBACK_COUNTER
+ms.keywords : PROCESSOR_FEEDBACK_COUNTER_FREQUENCY, PEP_PROCESSOR_FEEDBACK_COUNTER, kernel.pep_processor_feedback_counter, PPEP_PROCESSOR_FEEDBACK_COUNTER, PROCESSOR_FEEDBACK_COUNTER_PERFORMANCE, PPEP_PROCESSOR_FEEDBACK_COUNTER structure pointer [Kernel-Mode Driver Architecture], _PEP_PROCESSOR_FEEDBACK_COUNTER, PEP_PROCESSOR_FEEDBACK_COUNTER structure [Kernel-Mode Driver Architecture], PROCESSOR_FEEDBACK_TYPE_INSTANTANEOUS, *PPEP_PROCESSOR_FEEDBACK_COUNTER, pepfx/PPEP_PROCESSOR_FEEDBACK_COUNTER, PROCESSOR_FEEDBACK_TYPE_RELATIVE, pepfx/PEP_PROCESSOR_FEEDBACK_COUNTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PROCESSOR_FEEDBACK_COUNTER
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PPEP_PROCESSOR_FEEDBACK_COUNTER, PEP_PROCESSOR_FEEDBACK_COUNTER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : PEP_PROCESSOR_FEEDBACK_COUNTER, *PPEP_PROCESSOR_FEEDBACK_COUNTER
 ---
 
 # _PEP_PROCESSOR_FEEDBACK_COUNTER structure
@@ -52,13 +56,13 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 
 ## Members
 
-        
-            `NominalRate`
 
-            Specifies the nominal rate of the counter.
+`NominalRate`
 
-    ## Remarks
-        This structure
+Specifies the nominal rate of the counter.
+
+## Remarks
+This structure
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,16 +72,12 @@ typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/478E1AB1-B888-4EC2-A9C3-A33475E499E3">PEP structures</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186825">PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES notification</a>
-</dt>
-</dl>
+
  
 
  

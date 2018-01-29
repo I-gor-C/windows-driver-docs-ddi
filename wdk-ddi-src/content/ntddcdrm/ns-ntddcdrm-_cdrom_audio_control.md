@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f99ad24d-e1cf-4381-93b9-c10e4b19b401
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CDROM_AUDIO_CONTROL, CDROM_AUDIO_CONTROL, *PCDROM_AUDIO_CONTROL
+ms.keywords : CDROM_AUDIO_CONTROL, _CDROM_AUDIO_CONTROL, ntddcdrm/PCDROM_AUDIO_CONTROL, CDROM_AUDIO_CONTROL structure [Storage Devices], PCDROM_AUDIO_CONTROL, PCDROM_AUDIO_CONTROL structure pointer [Storage Devices], structs-CD-ROM_aac7f375-669d-4188-94bf-0f61c0fbf376.xml, storage.cdrom_audio_control, *PCDROM_AUDIO_CONTROL, ntddcdrm/CDROM_AUDIO_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CDROM_AUDIO_CONTROL
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CDROM_AUDIO_CONTROL, *PCDROM_AUDIO_CONTROL
 ---
 
@@ -47,14 +51,14 @@ typedef struct _CDROM_AUDIO_CONTROL {
 
 ## Members
 
-        
-            `LbaFormat`
 
-            Contains the logical block address (LBA) format.
-        
-            `LogicalBlocksPerSecond`
+`LbaFormat`
 
-            Contains the number of logical blocks per second.
+Contains the logical block address (LBA) format.
+
+`LogicalBlocksPerSecond`
+
+Contains the number of logical blocks per second.
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _CDROM_AUDIO_CONTROL {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_control.md">IOCTL_CDROM_GET_CONTROL</a>
-</dt>
-</dl>
+
  
 
  

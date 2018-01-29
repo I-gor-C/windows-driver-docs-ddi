@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e846a41a-9d9c-4ccb-a478-260f333333f1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _FORMATOP, FORMATOP
+ms.keywords : d3dumddi/FORMATOP, FORMATOP_PLANAR (0x02000000L), FORMATOP_CAPTURE (0x08000000L), FORMATOP_MEMBEROFGROUP_ARGB (0x00080000L), FORMATOP_SAME_FORMAT_RENDERTARGET (0x00000010L), FORMATOP_MULTIPLANE_OVERLAY (0x20000000L), FORMATOP_CONVERT_TO_ARGB (0x00002000L), FORMATOP_ZSTENCIL_WITH_ARBITRARY_COLOR_DEPTH (0x00000080L), FORMATOP_PIXELSIZE (0x00001000L), FORMATOP_VOLUMETEXTURE (0x00000002L), display.formatop, FORMATOP_SAME_FORMAT_UP_TO_ALPHA_RENDERTARGET (0x00000100L), FORMATOP_BUMPMAP (0x00010000L), _FORMATOP, FORMATOP, FORMATOP_SRGBWRITE (0x00100000L), FORMATOP_NOFILTER (0x00040000L), FORMATOP_CUBETEXTURE (0x00000004L), FORMATOP_TEXTURE (0x00000001L), FORMATOP_ZSTENCIL (0x00000040L), FORMATOP_3DACCELERATION (0x00000800L), FORMATOP_VIDEO_ENCODER (0x10000000L), FORMATOP_OVERLAY (0x04000000L), FORMATOP_OFFSCREEN_RENDERTARGET (0x00000008L), FORMATOP_SRGBREAD (0x00008000L), FORMATOP_NOALPHABLEND (0x00200000L), FORMATOP_DMAP (0x00020000L), FORMATOP structure [Display Devices], D3D_other_Structs_c60ed644-61b9-4700-8944-131765951138.xml, FORMATOP_NOTEXCOORDWRAPNORMIP (0x01000000L), FORMATOP_DISPLAYMODE (0x00000400L), FORMATOP_AUTOGENMIPMAP (0x00400000L), FORMATOP_OFFSCREENPLAIN (0x00004000L), FORMATOP_VERTEXTEXTURE (0x00800000L)
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FORMATOP
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : FORMATOP
 ---
 
@@ -50,26 +54,26 @@ typedef struct _FORMATOP {
 
 ## Members
 
-        
-            `BltMsTypes`
 
-            [out] A 32-bitmask for windowed multiple sampling.
-        
-            `FlipMsTypes`
+`BltMsTypes`
 
-            [out] A 32-bitmask for full-screen multiple sampling.
-        
-            `Format`
+[out] A 32-bitmask for windowed multiple sampling.
 
-            [in] The <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface.
-        
-            `Operations`
+`FlipMsTypes`
 
-            [out] A valid bitwise <b>OR</b> of the following flags that indicate the operations that can be performed on surfaces with the pixel format that is specified in the <b>Format</b> member. Some of the following flags imply that other flags should be used. If a driver sets a flag that implies other flags, the driver is not required to set the implied flags, and the Direct3D runtime determines the use of the implied flags.
-        
-            `PrivateFormatBitCount`
+[out] A 32-bitmask for full-screen multiple sampling.
 
-            [out] The bits per pixel of a pixel format that is private to the driver (that is, not one of the standard pixel formats that are defined by the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration type).
+`Format`
+
+[in] The <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface.
+
+`Operations`
+
+[out] A valid bitwise <b>OR</b> of the following flags that indicate the operations that can be performed on surfaces with the pixel format that is specified in the <b>Format</b> member. Some of the following flags imply that other flags should be used. If a driver sets a flag that implies other flags, the driver is not required to set the implied flags, and the Direct3D runtime determines the use of the implied flags.
+
+`PrivateFormatBitCount`
+
+[out] The bits per pixel of a pixel format that is private to the driver (that is, not one of the standard pixel formats that are defined by the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration type).
 
 
 ## Requirements
@@ -80,25 +84,18 @@ typedef struct _FORMATOP {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a>
-</dt>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

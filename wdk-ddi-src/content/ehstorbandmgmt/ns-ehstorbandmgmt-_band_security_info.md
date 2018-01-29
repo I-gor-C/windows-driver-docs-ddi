@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 310F996F-F350-4F25-BC8A-386513908557
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _BAND_SECURITY_INFO, *PBAND_SECURITY_INFO, BAND_SECURITY_INFO
+ms.keywords : ehstorbandmgmt/PBAND_LOCATION_INFO, BAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], ehstorbandmgmt/BAND_SECURITY_INFO, BAND_SECURITY_INFO, storage.band_security_info, BAND_LOCATION_INFO structure [Storage Devices], _BAND_SECURITY_INFO, PBAND_LOCATION_INFO, *PBAND_SECURITY_INFO, BAND_SECURITY_INFO structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BAND_LOCATION_INFO
-req.alt-loc : EhStorBandMgmt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBAND_SECURITY_INFO, BAND_SECURITY_INFO"
 ---
 
@@ -57,31 +61,99 @@ typedef struct _BAND_LOCATION_INFO {
 
 ## Members
 
-        
-            `CryptoAlgoIdType`
 
-            The type of encryption algorithm identifier used. This must be set to <b>AlgoIdTypeOidString</b>.
-        
-            `Metadata`
+`CryptoAlgoIdType`
 
-            A metadata field available for use by a key manager.
-        
-            `ReadLock`
+The type of encryption algorithm identifier used. This must be set to <b>AlgoIdTypeOidString</b>.
 
-            Whether the band is accessible for reading and how a read lock is affected by a power reset.
-        
-            `StructSize`
+`Metadata`
 
-            The size of the structure in bytes. Set to <b>sizeof</b>(BAND_SECURITY_INFO).
-        
-            `WriteLock`
+A metadata field available for use by a key manager.
 
-            Whether the band is accessible for writing and how a write lock is affected by a power reset.
+`ReadLock`
 
-    ## Remarks
-        Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indicate locking state and lock persistence. Their values are one of the following.
+Whether the band is accessible for reading and how a read lock is affected by a power reset.
+
+`StructSize`
+
+The size of the structure in bytes. Set to <b>sizeof</b>(BAND_SECURITY_INFO).
+
+`WriteLock`
+
+Whether the band is accessible for writing and how a write lock is affected by a power reset.
+
+## Remarks
+Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indicate locking state and lock persistence. Their values are one of the following.
+<table>
+<tr>
+<th>Lock State</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>INVALID_LOCK_STATE</td>
+<td>The lock state is not valid.</td>
+</tr>
+<tr>
+<td>PERSISTENT_UNLOCK</td>
+<td>The device is unlocked and remains unlocked during power reset.</td>
+</tr>
+<tr>
+<td>NONPERSISTENT_UNLOCK</td>
+<td>The device is unlocked but becomes locked during power reset.</td>
+</tr>
+<tr>
+<td>PERSISTENT_LOCK</td>
+<td>The device is locked and remains locked during power reset.</td>
+</tr>
+</table> 
 
 <b>CryptoAlgoOidString</b>  specifies the data encryption algorithm only if <b>ENUMBANDS_REPORT_CRYPTO_ALGO</b> is set in the <b>Flags</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a> in an <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a> request. Otherwise, both <b>CryptoAlgoOidString.Offset</b> and <b>CryptoAlgoOidString.Length</b> are set to 0. The following are possible encryption algorithm OID strings returned for <b>CryptoAlgoOidString</b>.
+<table>
+<tr>
+<th>Algorithm</th>
+<th>OID</th>
+</tr>
+<tr>
+<td>IAES128-ECB</td>
+<td>2.16.840.1.101.3.4.1.1</td>
+</tr>
+<tr>
+<td>AES128-CBC</td>
+<td>2.16.840.1.101.3.4.1.2.</td>
+</tr>
+<tr>
+<td>AES128-OFB</td>
+<td>2.16.840.1.101.3.4.1.3</td>
+</tr>
+<tr>
+<td>AES128-CFB</td>
+<td>2.16.840.1.101.3.4.1.4</td>
+</tr>
+<tr>
+<td>AES128-XTS</td>
+<td>1.3.111.2.1619.0.1.1</td>
+</tr>
+<tr>
+<td>AES256-ECB</td>
+<td>2.16.840.1.101.3.4.1.41</td>
+</tr>
+<tr>
+<td>AES256-CBC</td>
+<td>2.16.840.1.101.3.4.1.42</td>
+</tr>
+<tr>
+<td>AES256-OFB</td>
+<td>2.16.840.1.101.3.4.1.43</td>
+</tr>
+<tr>
+<td>AES256-CFB</td>
+<td>2.16.840.1.101.3.4.1.44</td>
+</tr>
+<tr>
+<td>AES256-XTS</td>
+<td>1.3.111.2.1619.0.1.2</td>
+</tr>
+</table> 
 
 When <b>BAND_SECURITY_INFO</b> is used in an input parameter set, <b>CryptoAlgoIdType</b> and <b>CryptoAlgoOidString</b> are not used and must be set to 0.
 
@@ -93,22 +165,16 @@ When <b>BAND_SECURITY_INFO</b> is used in an input parameter set, <b>CryptoAlgoI
 | **Minimum UMDF version** |  |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
-</dt>
-<dt>
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
-</dt>
-<dt>
+
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
-</dt>
-</dl>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
+
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
+
  
 
  

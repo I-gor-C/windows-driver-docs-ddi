@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 455ff9c9-89d5-4c79-8b01-f0d731ac8d5a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendSRL
+ms.keywords : HBA_SendSRL routine [Storage Devices], hbaapi/HBA_SendSRL, storage.hba_sendsrl, HBA_SendSRL, fibreHBA_rtns_30102c46-c07f-4d22-a0c7-83bea708c4b8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HBA_SendSRL
-req.alt-loc : Hbaapi.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Hbaapi.lib
 req.dll : Hbaapi.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : HBA_WWNTYPE
 ---
 
@@ -55,19 +59,19 @@ HBA_STATUS HBA_API HBA_SendSRL(
 
 `Handle`
 
-
+TBD
 
 `HbaPortWWN`
 
-
+TBD
 
 `Wwn`
 
-
+TBD
 
 `Domain`
 
-
+TBD
 
 `pRspBuffer`
 
@@ -81,18 +85,56 @@ On input, indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>. On o
 ## Return Value
 
 The <b>HBA_SendSRL</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendSRL</b> returns one of the following values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
-</dl>Returned if the complete payload of a reply to the SRL request was successfully retrieved. 
+</dl>
+</td>
+<td width="60%">
+Returned if the complete payload of a reply to the SRL request was successfully retrieved. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
-</dl>Returned if the HBA referenced by <i>handle</i> does not contain a port with a name that matches <i>hbaPortWWN</i>. 
+</dl>
+</td>
+<td width="60%">
+Returned if the HBA referenced by <i>handle</i> does not contain a port with a name that matches <i>hbaPortWWN</i>. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR_ELS_REJECT</b></dt>
-</dl>Returned if the destination port referenced by <i>wwn, </i>or the domain controller referenced by <i>domain, </i>rejected the request node identification information data (RNID) that identifies the source HBA.
+</dl>
+</td>
+<td width="60%">
+Returned if the destination port referenced by <i>wwn, </i>or the domain controller referenced by <i>domain, </i>rejected the request node identification information data (RNID) that identifies the source HBA.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
-</dl>Returned if an unspecified error occurred that prevented the execution of the SRL request.
+</dl>
+</td>
+<td width="60%">
+Returned if an unspecified error occurred that prevented the execution of the SRL request. 
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -109,14 +151,10 @@ The <b>HBA_SendSRL</b> routine returns a value of type <a href="https://msdn.mic
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-</dt>
-</dl>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
  
 
  

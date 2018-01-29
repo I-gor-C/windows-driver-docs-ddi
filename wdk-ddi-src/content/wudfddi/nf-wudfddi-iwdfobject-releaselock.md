@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 05771d81-d2e1-4787-a190-e7ef4d9ebcc9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject, IWDFObject::ReleaseLock, ReleaseLock
+ms.keywords : wudfddi/IWDFObject::ReleaseLock, wdf.iwdfobject_releaselock, umdf.iwdfobject_releaselock, ReleaseLock method, ReleaseLock, IWDFObject interface, ReleaseLock method, IWDFObject::ReleaseLock, UMDFBaseObjectRef_bdc7490f-170b-42bb-91af-435ee5dc3e5a.xml, IWDFObject, ReleaseLock method, IWDFObject interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFObject.ReleaseLock
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -55,16 +59,6 @@ This function has no parameters.
 
 None
 
-For a code example of how to use the <b>ReleaseLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.
-
-None
-
-For a code example of how to use the <b>ReleaseLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.
-
-None
-
-For a code example of how to use the <b>ReleaseLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,14 +74,10 @@ For a code example of how to use the <b>ReleaseLock</b> method, see <a href="htt
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560204">IWDFObject::AcquireLock</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
  
 
  

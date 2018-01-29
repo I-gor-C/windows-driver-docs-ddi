@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6397d96e-f3b1-4e2f-91ce-b123c9e8de81
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ObReferenceObjectByHandle
+ms.keywords : ObReferenceObjectByHandle routine [Kernel-Mode Driver Architecture], wdm/ObReferenceObjectByHandle, k107_97ce2cea-8f20-4b30-996c-9ea268951aef.xml, ObReferenceObjectByHandle, kernel.obreferenceobjectbyhandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ObReferenceObjectByHandle
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlObPassive, TargetRelationNeedsRef, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -65,10 +69,7 @@ Specifies the requested types of access to the object. The interpretation of thi
 `ObjectType`
 
 Pointer to the object type. <i>ObjectType</i> can be <b>*ExEventObjectType</b>, <b>*ExSemaphoreObjectType</b>, <b>*IoFileObjectType</b>, <b>*PsProcessType</b>, <b>*PsThreadType</b>, <b>*SeTokenObjectType</b>, <b>*TmEnlistmentObjectType</b>, <b>*TmResourceManagerObjectType</b>, <b>*TmTransactionManagerObjectType</b>, or <b>*TmTransactionObjectType</b>.
-
-<div class="alert"><b>Note</b>  The <b>SeTokenObjectType</b> object type is supported starting with Windows XP.</div>
-<div> </div>
-If <i>ObjectType</i> is not <b>NULL</b>, the operating system verifies that the supplied object type matches the object type of the object that <i>Handle</i> specifies.
+<div class="alert"><b>Note</b>  The <b>SeTokenObjectType</b> object type is supported starting with Windows XP.</div><div> </div>If <i>ObjectType</i> is not <b>NULL</b>, the operating system verifies that the supplied object type matches the object type of the object that <i>Handle</i> specifies.
 
 `AccessMode`
 
@@ -77,7 +78,6 @@ Specifies the access mode to use for the access check. It must be either <b>User
 `Object`
 
 Pointer to a variable that receives a pointer to the object's body. The following table contains the pointer types.
-
 <table>
 <tr>
 <th><i>ObjectType</i> parameter</th>
@@ -183,13 +183,10 @@ PKTRANSACTION
 
 </td>
 </tr>
-</table>
- 
+</table> 
 
 The structures that the pointer types reference are opaque, and drivers cannot access the structure members. Because the structures are opaque, PEPROCESS is equivalent to PKPROCESS, and PETHREAD is equivalent to PKTHREAD.
-
-<div class="alert"><b>Note</b>  The <b>SeTokenObjectType</b> object type is supported starting with Windows XP.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  The <b>SeTokenObjectType</b> object type is supported starting with Windows XP.</div><div> </div>
 
 `HandleInformation`
 
@@ -199,15 +196,45 @@ Drivers set this to <b>NULL</b>.
 ## Return Value
 
 <b>ObReferenceObjectByHandle</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_OBJECT_TYPE_MISMATCH</b></dt>
-</dl>The <i>ObjectType</i> parameter specifies the wrong object type for the object that is identified by the <i>Handle</i> parameter.
+</dl>
+</td>
+<td width="60%">
+The <i>ObjectType</i> parameter specifies the wrong object type for the object that is identified by the <i>Handle</i> parameter.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ACCESS_DENIED</b></dt>
-</dl>The caller cannot be granted the requested access rights to the object.
+</dl>
+</td>
+<td width="60%">
+The caller cannot be granted the requested access rights to the object.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl>The <i>Handle</i> parameter is not a valid object handle.
+</dl>
+</td>
+<td width="60%">
+The <i>Handle</i> parameter is not a valid object handle.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -233,20 +260,14 @@ If the call succeeds, a pointer to the object body is returned to the caller and
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
 <a href="..\wdm\nf-wdm-obreferenceobjectbypointer.md">ObReferenceObjectByPointer</a>
-</dt>
-</dl>
+
  
 
  

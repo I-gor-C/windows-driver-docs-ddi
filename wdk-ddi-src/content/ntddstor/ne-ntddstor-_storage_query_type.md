@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3f346a09-071e-4512-bf77-994d277cef4d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_QUERY_TYPE, *PSTORAGE_QUERY_TYPE, STORAGE_QUERY_TYPE
+ms.keywords : _STORAGE_QUERY_TYPE, STORAGE_QUERY_TYPE, ntddstor/PropertyMaskQuery, PSTORAGE_QUERY_TYPE, ntddstor/PSTORAGE_QUERY_TYPE, *PSTORAGE_QUERY_TYPE, PropertyMaskQuery, PropertyQueryMaxDefined, PropertyStandardQuery, ntddstor/PropertyExistsQuery, STORAGE_QUERY_TYPE enumeration [Storage Devices], PropertyExistsQuery, storage.storage_query_type, ntddstor/STORAGE_QUERY_TYPE, structs-general_e76c71e4-e6ef-40d0-a0e7-5a21102efb1b.xml, ntddstor/PropertyStandardQuery, ntddstor/PropertyQueryMaxDefined, PSTORAGE_QUERY_TYPE enumeration pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STORAGE_QUERY_TYPE
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSTORAGE_QUERY_TYPE, STORAGE_QUERY_TYPE"
 ---
 
@@ -88,17 +92,12 @@ Caller defines the exact nature of an <a href="..\ntddstor\ni-ntddstor-ioctl_sto
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-</dt>
-<dt>
+
 <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
-</dt>
-</dl>
+
  
 
  

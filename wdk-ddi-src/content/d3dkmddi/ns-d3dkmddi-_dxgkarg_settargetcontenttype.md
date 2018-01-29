@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BD849954-97CC-4314-B375-22829B0CEE86
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_SETTARGETCONTENTTYPE, DXGKARG_SETTARGETCONTENTTYPE
+ms.keywords : DXGKARG_SETTARGETCONTENTTYPE, _DXGKARG_SETTARGETCONTENTTYPE, DXGKARG_SETTARGETCONTENTTYPE structure [Display Devices], display.dxgkarg_settargetcontenttype, d3dkmddi/PDXGKARG_SETTARGETCONTENTTYPE, PDXGKARG_SETTARGETCONTENTTYPE, d3dkmddi/DXGKARG_SETTARGETCONTENTTYPE, PDXGKARG_SETTARGETCONTENTTYPE structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKARG_SETTARGETCONTENTTYPE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKARG_SETTARGETCONTENTTYPE
 ---
 
@@ -47,14 +51,14 @@ typedef struct _DXGKARG_SETTARGETCONTENTTYPE {
 
 ## Members
 
-        
-            `ContentType`
 
-            A D3DKMDT_VIDPN_PRESENT_PATH_CONTENT value indicating the type of content being presented on the target id for which the driver should optimize.
-        
-            `TargetId`
+`ContentType`
 
-            The identifier of a display adapter's video present target.
+A D3DKMDT_VIDPN_PRESENT_PATH_CONTENT value indicating the type of content being presented on the target id for which the driver should optimize.
+
+`TargetId`
+
+The identifier of a display adapter's video present target.
 
 
 ## Requirements

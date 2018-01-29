@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 18B13509-7692-4336-937C-264B31A6FB78
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.setmarkermode, SetMarkerMode callback function [Display Devices], SetMarkerMode, PFND3DWDDM1_3DDI_SETMARKERMODE, PFND3DWDDM1_3DDI_SETMARKERMODE, d3d10umddi/SetMarkerMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetMarkerMode
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -75,6 +79,11 @@ Returns <b>S_OK</b> or an appropriate error result if the function does not comp
 ## Remarks
 
 Follow these guidelines when you set up profile-type marker events in your user-mode driver, indicated by the <b>D3DWDDM1_3DDI_MARKER_TYPE_PROFILE</b> type:
+<ol>
+<li>Use lightweight instrumentation that doesn't produce a strong correlation with graphics command boundaries.</li>
+<li>The driver must be able to sample the GPU time stamp at the end of the graphics pipeline.</li>
+<li>Don't use sampling commands that place a high performance burden on the graphics pipeline, such as wait-for-idle commands. To be able to instrument profile-type marker events, your driver shouldn't have to flush the pipeline or caches.</li>
+</ol>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,11 +99,8 @@ Follow these guidelines when you set up profile-type marker events in your user-
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1_3ddi_marker_type.md">D3DWDDM1_3DDI_MARKER_TYPE</a>
-</dt>
-</dl>
+
  
 
  

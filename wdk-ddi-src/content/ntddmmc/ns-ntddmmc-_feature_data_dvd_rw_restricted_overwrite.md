@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1669872a-4306-4773-bd7e-6f481c5e689d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, *PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
+ms.keywords : FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure [Storage Devices], _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, ntddmmc/FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure pointer [Storage Devices], storage.feature_data_dvd_rw_restricted_overwrite, structs-CD-ROM_b6d53c83-8d7d-4fc1-9e42-b173219961a4.xml, *PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, ntddmmc/PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, *PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
 ---
 
 # _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure
@@ -52,37 +56,37 @@ typedef struct _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE {
 
 ## Members
 
-        
-            `Blank`
 
-            Indicates, when set to 1, that the device supports the BLANK command defined by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification, with Blanking Types of zero and one. When set to zero, this bit indicates that the device does not support this command.
-        
-            `DefectStatusDataGenerate`
+`Blank`
 
-            Corresponds to the Defect Status Bitmap Generate (DSBG) bit as defined by the <i>MMC-3</i> specification. When set to 1, this bit indicates that the device can generate a Defect Status Bitmap during formatting. When set to zero, this bit indicates that the device cannot generate a Defect Status Bitmap during formatting.
-        
-            `DefectStatusDataRead`
+Indicates, when set to 1, that the device supports the BLANK command defined by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification, with Blanking Types of zero and one. When set to zero, this bit indicates that the device does not support this command.
 
-            Corresponds to the Defect Status Bitmap Read (DSBR) bit as defined by the <i>MMC-3</i> specification. When set to 1, this bit indicates that the device allows initiators to read the Defect Status Bitmap of a medium. When set to zero, this bit indicates that the device does not support the reading of Defect Status Bitmap.
-        
-            `Header`
+`DefectStatusDataGenerate`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `Intermediate`
+Corresponds to the Defect Status Bitmap Generate (DSBG) bit as defined by the <i>MMC-3</i> specification. When set to 1, this bit indicates that the device can generate a Defect Status Bitmap during formatting. When set to zero, this bit indicates that the device cannot generate a Defect Status Bitmap during formatting.
 
-            Indicates, when set to 1, that the device supports writing on an intermediate state-bordered area and quick formatting (Format Type of 15 - Quick Format, as defined by the <i>MMC-3</i> specification). When set to zero, this bit indicates that the device does not support writing on an intermediate state-bordered area nor does it support quick formatting.
-        
-            `Reserved0`
+`DefectStatusDataRead`
 
-            Reserved.
-        
-            `Reserved1`
+Corresponds to the Defect Status Bitmap Read (DSBR) bit as defined by the <i>MMC-3</i> specification. When set to 1, this bit indicates that the device allows initiators to read the Defect Status Bitmap of a medium. When set to zero, this bit indicates that the device does not support the reading of Defect Status Bitmap.
 
-            Reserved.
+`Header`
 
-    ## Remarks
-        This structure holds data for the feature named "DVD-RW Restricted Overwrite" by the <i>MMC-3 </i>specification. In the <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a> enumeration, this feature is named <b>FeatureRigidRestrictedOverwrite</b>.
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+
+`Intermediate`
+
+Indicates, when set to 1, that the device supports writing on an intermediate state-bordered area and quick formatting (Format Type of 15 - Quick Format, as defined by the <i>MMC-3</i> specification). When set to zero, this bit indicates that the device does not support writing on an intermediate state-bordered area nor does it support quick formatting.
+
+`Reserved0`
+
+Reserved.
+
+`Reserved1`
+
+Reserved.
+
+## Remarks
+This structure holds data for the feature named "DVD-RW Restricted Overwrite" by the <i>MMC-3 </i>specification. In the <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a> enumeration, this feature is named <b>FeatureRigidRestrictedOverwrite</b>.
 
 Devices that support this feature can only write on block boundaries. These devices cannot perform read or write operations that transfer less than a block of data. See the <i>MMC-3</i> specification for more information.
 
@@ -94,16 +98,12 @@ Devices that support this feature can only write on block boundaries. These devi
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

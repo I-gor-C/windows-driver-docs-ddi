@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 953F34FC-2E8F-4569-89B8-2F9541456F3B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _WOF_VERSION_INFO, WOF_VERSION_INFO, *PWOF_VERSION_INFO
+ms.keywords : WOF_VERSION_INFO structure [Installable File System Drivers], PWOF_VERSION_INFO structure pointer [Installable File System Drivers], _WOF_VERSION_INFO, WOF_VERSION_INFO, ntifs/WOF_VERSION_INFO, ntifs/PWOF_VERSION_INFO, *PWOF_VERSION_INFO, PWOF_VERSION_INFO, ifsk.wof_version_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WOF_VERSION_INFO
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : WOF_VERSION_INFO, *PWOF_VERSION_INFO
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWOF_VERSION_INFO, WOF_VERSION_INFO"
 ---
 
 # _WOF_VERSION_INFO structure
@@ -46,10 +50,10 @@ typedef struct _WOF_VERSION_INFO {
 
 ## Members
 
-        
-            `WofVersion`
 
-            The version of the WOF driver. This value includes the major and minor version numbers of the operating system in the high-order word, and the build number of the operating system in the low-order word. The major version can be extracted with HIBYTE(HIWORD(<i>WofVersion</i>)); the minor version can be extracted with LOBYTE(HIWORD(<i>WofVersion</i>)); the build number can be extracted with LOWORD(<i>WofVersion</i>).
+`WofVersion`
+
+The version of the WOF driver. This value includes the major and minor version numbers of the operating system in the high-order word, and the build number of the operating system in the low-order word. The major version can be extracted with HIBYTE(HIWORD(<i>WofVersion</i>)); the minor version can be extracted with LOBYTE(HIWORD(<i>WofVersion</i>)); the build number can be extracted with LOWORD(<i>WofVersion</i>).
 
 
 ## Requirements
@@ -60,19 +64,14 @@ typedef struct _WOF_VERSION_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426734">FSCTL_GET_WOF_VERSION</a>
-</dt>
-<dt>
 <a href="..\ntifs\ns-ntifs-_wof_external_file_id.md">WOF_EXTERNAL_FILE_ID</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\ns-ntifs-_wof_external_info.md">WOF_EXTERNAL_INFO</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt426734">FSCTL_GET_WOF_VERSION</a>
+
  
 
  

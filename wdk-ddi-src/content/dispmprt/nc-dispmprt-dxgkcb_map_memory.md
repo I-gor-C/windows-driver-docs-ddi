@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 916a4d1d-0c40-4125-89ae-488251b04810
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbmapmemory, DxgkCbMapMemory callback function [Display Devices], DxgkCbMapMemory, DXGKCB_MAP_MEMORY, DXGKCB_MAP_MEMORY, dispmprt/DxgkCbMapMemory, DpFunctions_51d99a74-2fae-40b7-9e04-8afe0fc38805.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbMapMemory
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -108,11 +112,8 @@ The PHYSICAL_ADDRESS data type is defined in <i>Ntdef.h</i>.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2e533d7b-be70-4601-b9e1-4fe3ce51817f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeWaitForMultipleObjects
+ms.keywords : kernel.kewaitformultipleobjects, KeWaitForMultipleObjects, wdm/KeWaitForMultipleObjects, k105_03342f87-b6a7-4e26-a7e8-5a8157026c4a.xml, KeWaitForMultipleObjects routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeWaitForMultipleObjects
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrpProcessingComplete, IrqlKeWaitForMultipleObjects, HwStorPortProhibitedDDIs, SpNoWait
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -96,20 +100,56 @@ A pointer to a caller-allocated <b>KWAIT_BLOCK</b> array. If <i>Count</i> &lt;= 
 ## Return Value
 
 <b>KeWaitForMultipleObjects</b> can return one of the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The caller specified <b>WaitAll</b> for the <i>WaitType</i> parameter and all dispatcher objects in the <i>Object</i> array have been set to the signaled state.
+</dl>
+</td>
+<td width="60%">
+The caller specified <b>WaitAll</b> for the <i>WaitType</i> parameter and all dispatcher objects in the <i>Object</i> array have been set to the signaled state.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ALERTED</b></dt>
-</dl>The wait was interrupted to deliver an alert to the calling thread.
+</dl>
+</td>
+<td width="60%">
+The wait was interrupted to deliver an alert to the calling thread.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_USER_APC</b></dt>
-</dl>The wait was interrupted to deliver a user asynchronous procedure call (APC) to the calling thread.
+</dl>
+</td>
+<td width="60%">
+The wait was interrupted to deliver a user asynchronous procedure call (APC) to the calling thread.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_TIMEOUT</b></dt>
-</dl>A time-out occurred before the specified set of wait conditions was met. This value can be returned when an explicit time-out value of zero is specified, but the specified set of wait conditions cannot be met immediately.
+</dl>
+</td>
+<td width="60%">
+A time-out occurred before the specified set of wait conditions was met. This value can be returned when an explicit time-out value of zero is specified, but the specified set of wait conditions cannot be met immediately.
 
- 
+</td>
+</tr>
+</table> 
 
 Note that the NT_SUCCESS macro recognizes all of these status values as "success" values.
 
@@ -159,29 +199,20 @@ Callers of <b>KeWaitForMultipleObjects</b> can be running at IRQL &lt;= DISPATCH
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
+
+<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
+
+<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
+
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3BA2D85A-052B-4851-B31C-072F2872F3FE
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.keywords : storage.ioctl_cdrom_get_performance, IOCTL_CDROM_GET_PERFORMANCE control code [Storage Devices], IOCTL_CDROM_GET_PERFORMANCE, ntddcdrm/IOCTL_CDROM_GET_PERFORMANCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CDROM_GET_PERFORMANCE
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
@@ -67,22 +71,9 @@ Length of a <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_header.md">CDROM
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. 
 
 Because of  status code propagation from other APIs, the <b>Status</b> field can be set to (but is not limited to) the following:
-
-
-
-The request completed successfully.
-
-The input buffer length is smaller than required.
-
-The CDROM_PERFORMANCE_REQUEST header does not contain a valid combination of parameters specified by enumerations.
-
-The output buffer length is smaller than required.
-
-The device does not support this request.
 
 
 ## Requirements
@@ -92,22 +83,16 @@ The device does not support this request.
 | **Header** | ntddcdrm.h (include Winioctl.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_write_speed_request.md">CDROM_WRITE_SPEED_REQUEST</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_header.md">CDROM_PERFORMANCE_HEADER</a>
-</dt>
-</dl>
+
  
 
  

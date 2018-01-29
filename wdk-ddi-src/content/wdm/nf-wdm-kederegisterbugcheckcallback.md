@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0be95cee-c648-4905-9f4a-ea4e5fc794ed
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeDeregisterBugCheckCallback
+ms.keywords : k105_6bb11ae2-ceb1-4640-b59c-47b42496b819.xml, KeDeregisterBugCheckCallback, kernel.kederegisterbugcheckcallback, KeDeregisterBugCheckCallback routine [Kernel-Mode Driver Architecture], wdm/KeDeregisterBugCheckCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeDeregisterBugCheckCallback
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -73,11 +77,8 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5518
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
-</dt>
-</dl>
+
  
 
  

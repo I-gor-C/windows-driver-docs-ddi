@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4b7aac38-ab29-4cac-a7f0-896423b17400
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetMediaType
+ms.keywords : KsGetMediaType, ksproxy/KsGetMediaType, stream.ksgetmediatype, ksproxy_6472bffc-0280-4954-80f5-7e2ae2b2f49b.xml, KsGetMediaType function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsGetMediaType
-req.alt-loc : Ksproxy.lib,Ksproxy.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ksproxy.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PIPE_STATE
 ---
 
@@ -92,11 +96,8 @@ For more information about AM_MEDIA_TYPE, see the Microsoft Windows SDK document
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ksproxy\nn-ksproxy-ikspinfactory.md">IKsPinFactory</a>
-</dt>
-</dl>
+
  
 
  

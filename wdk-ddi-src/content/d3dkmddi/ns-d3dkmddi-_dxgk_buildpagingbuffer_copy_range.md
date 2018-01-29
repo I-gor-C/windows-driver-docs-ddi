@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BA35F50C-7399-41DC-A10B-2F5E4BB24B49
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_BUILDPAGINGBUFFER_COPY_RANGE, DXGK_BUILDPAGINGBUFFER_COPY_RANGE
+ms.keywords : d3dkmddi/DXGK_BUILDPAGINGBUFFER_COPY_RANGE, display.dxgk_buildpagingbuffer_copy_range, DXGK_BUILDPAGINGBUFFER_COPY_RANGE structure [Display Devices], DXGK_BUILDPAGINGBUFFER_COPY_RANGE, _DXGK_BUILDPAGINGBUFFER_COPY_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_BUILDPAGINGBUFFER_COPY_RANGE
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_BUILDPAGINGBUFFER_COPY_RANGE
 ---
 
@@ -50,26 +54,26 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_COPY_RANGE {
 
 ## Members
 
-        
-            `DstPageTableAddress`
 
-            The virtual address of the destination page table for the range. The address is aligned to 64KB boundary.
-        
-            `DstStartPteIndex`
+`DstPageTableAddress`
 
-            The index of the first page table entry in the destination page table for the range.
-        
-            `NumPageTableEntries`
+The virtual address of the destination page table for the range. The address is aligned to 64KB boundary.
 
-            The number of page table entries to copy.
-        
-            `SrcPageTableAddress`
+`DstStartPteIndex`
 
-            The virtual address of the source page table for the range. The address is aligned to 64KB boundary.
-        
-            `SrcStartPteIndex`
+The index of the first page table entry in the destination page table for the range.
 
-            The index of the first page table entry in the source page table for the range.
+`NumPageTableEntries`
+
+The number of page table entries to copy.
+
+`SrcPageTableAddress`
+
+The virtual address of the source page table for the range. The address is aligned to 64KB boundary.
+
+`SrcStartPteIndex`
+
+The index of the first page table entry in the source page table for the range.
 
 
 ## Requirements
@@ -80,16 +84,12 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_COPY_RANGE {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_copypagetableentries.md">DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
+
  
 
  

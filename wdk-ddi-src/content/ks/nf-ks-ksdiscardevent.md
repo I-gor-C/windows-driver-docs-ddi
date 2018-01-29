@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 14aaf96a-4d1f-4e4a-9fed-e493090157b8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDiscardEvent
+ms.keywords : ksfunc_553391e5-343a-4cc7-9bc5-99971cff2fcd.xml, KsDiscardEvent function [Streaming Media Devices], KsDiscardEvent, stream.ksdiscardevent, ks/KsDiscardEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsDiscardEvent
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,14 +79,10 @@ Typically, the <b>KsDiscardEvent</b> function is automatically called by the <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
-</dt>
-<dt>
 <a href="..\ks\nf-ks-ksfreeeventlist.md">KsFreeEventList</a>
-</dt>
-</dl>
+
+<a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
+
  
 
  

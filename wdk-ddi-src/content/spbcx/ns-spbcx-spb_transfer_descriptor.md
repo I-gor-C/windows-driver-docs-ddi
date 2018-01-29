@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 3D370646-3879-4415-8D80-04D0B23839B0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR
+ms.keywords : SPB_TRANSFER_DESCRIPTOR structure [Buses], spbcx/PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR, PSPB_TRANSFER_DESCRIPTOR structure pointer [Buses], spbcx/SPB_TRANSFER_DESCRIPTOR, SPB.spb_transfer_descriptor, *PSPB_TRANSFER_DESCRIPTOR, PSPB_TRANSFER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SPB_TRANSFER_DESCRIPTOR
-req.alt-loc : Spbcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Any IRQL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
@@ -50,30 +54,29 @@ typedef struct _SPB_TRANSFER_DESCRIPTOR {
 
 ## Members
 
-        
-            `DelayInUs`
 
-            An optional delay, in microseconds, before this transfer begins. For more information, see the following Remarks section.
-        
-            `Direction`
+`DelayInUs`
 
-            The direction of the transfer.  This member is set to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a> enumeration values:
+An optional delay, in microseconds, before this transfer begins. For more information, see the following Remarks section.
 
+`Direction`
+
+The direction of the transfer.  This member is set to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a> enumeration values:
 <ul>
 <li><b>SpbTransferDirectionFromDevice</b></li>
 <li><b>SpbTransferDirectionToDevice</b></li>
 </ul>
-        
-            `Size`
 
-            The size, in bytes, of the entire structure.  Used for versioning.
-        
-            `TransferLength`
+`Size`
 
-            The number of bytes of data to be transferred.
+The size, in bytes, of the entire structure.  Used for versioning.
 
-    ## Remarks
-        This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a> method. Before passing an <b>SPB_TRANSFER_DESCRIPTOR</b> structure to this method, initialize the structure by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a> function.
+`TransferLength`
+
+The number of bytes of data to be transferred.
+
+## Remarks
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a> method. Before passing an <b>SPB_TRANSFER_DESCRIPTOR</b> structure to this method, initialize the structure by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a> function.
 
 The <b>DelayInUs</b> member specifies a delay before the start of the transfer. In certain cases, a peripheral driver might need to insert a delay between two consecutive transfers in a sequence. For example, if a write to a target device specifies the type of information that is being requested, this device might need time to process the request before the information can be read. In addition, a peripheral driver might need to specify a delay before the first transfer in a sequence. In this case, the controller must apply the address or assert the device-select  line to the target device for the specified delay interval before the start of the first transfer.
 
@@ -85,19 +88,14 @@ The <b>DelayInUs</b> member specifies a delay before the start of the transfer. 
 | **Minimum UMDF version** |  |
 | **Header** | spbcx.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a>
+
  
 
  

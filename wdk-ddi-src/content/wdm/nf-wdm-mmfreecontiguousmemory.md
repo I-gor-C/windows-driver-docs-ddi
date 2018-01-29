@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 485c9b03-eb45-4c86-9292-ccd51ba7b080
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmFreeContiguousMemory
+ms.keywords : kernel.mmfreecontiguousmemory, wdm/MmFreeContiguousMemory, MmFreeContiguousMemory, MmFreeContiguousMemory routine [Kernel-Mode Driver Architecture], k106_1b930a75-7382-4a6c-a638-3e7675f43f83.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MmFreeContiguousMemory
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlMmDispatch, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -80,17 +84,12 @@ Callers of <b>MmFreeContiguousMemory</b> must be running at IRQL = APC_LEVEL. Fo
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md">MmAllocateContiguousMemorySpecifyCacheNode</a>
-</dt>
-</dl>
+
  
 
  

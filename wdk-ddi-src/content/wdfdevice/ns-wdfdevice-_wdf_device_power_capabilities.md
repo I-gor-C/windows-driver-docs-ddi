@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 56bb271f-d69c-4523-87cb-4922b405f808
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_DEVICE_POWER_CAPABILITIES, *PWDF_DEVICE_POWER_CAPABILITIES, WDF_DEVICE_POWER_CAPABILITIES
+ms.keywords : wdfdevice/PWDF_DEVICE_POWER_CAPABILITIES, kmdf.wdf_device_power_capabilities, WDF_DEVICE_POWER_CAPABILITIES structure, *PWDF_DEVICE_POWER_CAPABILITIES, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES, _WDF_DEVICE_POWER_CAPABILITIES, PWDF_DEVICE_POWER_CAPABILITIES, wdf.wdf_device_power_capabilities, WDF_DEVICE_POWER_CAPABILITIES, DFDeviceObjectGeneralRef_6678d7f5-5de1-473f-a2db-777405225add.xml, PWDF_DEVICE_POWER_CAPABILITIES structure pointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_DEVICE_POWER_CAPABILITIES
-req.alt-loc : wdfdevice.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PWDF_DEVICE_POWER_CAPABILITIES, WDF_DEVICE_POWER_CAPABILITIES"
 req.product : Windows 10 or later.
 ---
@@ -62,77 +66,83 @@ typedef struct _WDF_DEVICE_POWER_CAPABILITIES {
 
 ## Members
 
-        
-            `D1Latency`
 
-            The approximate time, in 100-nanosecond units, that the device requires to return to its D0 state from its D1 state. If this value is -1, the framework uses whatever value is currently stored in the system for this member.
-        
-            `D2Latency`
+`D1Latency`
 
-            The approximate time, in 100-nanosecond units, that the device requires to return to its D0 state from its D2 state. If this value is -1, the framework uses whatever value is currently stored in the system for this member.
-        
-            `D3Latency`
+The approximate time, in 100-nanosecond units, that the device requires to return to its D0 state from its D1 state. If this value is -1, the framework uses whatever value is currently stored in the system for this member.
 
-            The approximate time, in 100-nanosecond units, that the device requires to return to its D0 state from its D3 state. If this value is -1, the framework uses whatever value is currently stored in the system for this member.
-        
-            `DeviceD1`
+`D2Latency`
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device supports device sleeping state D1. For more information about the <b>WDF_TRI_STATE</b> value, see the following Remarks section.
-        
-            `DeviceD2`
+The approximate time, in 100-nanosecond units, that the device requires to return to its D0 state from its D2 state. If this value is -1, the framework uses whatever value is currently stored in the system for this member.
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device supports device sleeping state D2.
-        
-            `DeviceState`
+`D3Latency`
 
-            An array of DEVICE_POWER_STATE-typed values that indicates the most-powered device state that the device supports for each system power state. This array uses the SYSTEM_POWER_STATE enumeration as index values. If an array element's value is <b>PowerDeviceMaximum</b>, the framework uses whatever value that the operating system has stored for that element. The DEVICE_POWER_STATE and SYSTEM_POWER_STATE enumerations are defined in <i>wdm.h</i>. For more information about the <b>DeviceState</b> member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543087">DeviceState</a>.
-        
-            `DeviceWake`
+The approximate time, in 100-nanosecond units, that the device requires to return to its D0 state from its D3 state. If this value is -1, the framework uses whatever value is currently stored in the system for this member.
 
-            A DEVICE_POWER_STATE-typed value that indicates the lowest device power state from which the device can send a wake signal to the system. If this value is <b>PowerDeviceMaximum</b>, the framework uses whatever value is currently stored in the system for this member.
-        
-            `IdealDxStateForSx`
+`DeviceD1`
 
-            A DEVICE_POWER_STATE-typed value that indicates the <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">device sleeping state</a> that the device should enter when the system enters any <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping state</a> and the device is not enabled to wake the system. If this value is zero, the framework uses <b>PowerDeviceD3</b>. This value cannot be <b>PowerDeviceD0</b>.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device supports device sleeping state D1. For more information about the <b>WDF_TRI_STATE</b> value, see the following Remarks section.
+
+`DeviceD2`
+
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device supports device sleeping state D2.
+
+`DeviceState`
+
+An array of DEVICE_POWER_STATE-typed values that indicates the most-powered device state that the device supports for each system power state. This array uses the SYSTEM_POWER_STATE enumeration as index values. If an array element's value is <b>PowerDeviceMaximum</b>, the framework uses whatever value that the operating system has stored for that element. The DEVICE_POWER_STATE and SYSTEM_POWER_STATE enumerations are defined in <i>wdm.h</i>. For more information about the <b>DeviceState</b> member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543087">DeviceState</a>.
+
+`DeviceWake`
+
+A DEVICE_POWER_STATE-typed value that indicates the lowest device power state from which the device can send a wake signal to the system. If this value is <b>PowerDeviceMaximum</b>, the framework uses whatever value is currently stored in the system for this member.
+
+`IdealDxStateForSx`
+
+A DEVICE_POWER_STATE-typed value that indicates the <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">device sleeping state</a> that the device should enter when the system enters any <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping state</a> and the device is not enabled to wake the system. If this value is zero, the framework uses <b>PowerDeviceD3</b>. This value cannot be <b>PowerDeviceD0</b>.
 
 If a driver specifies an <b>IdealDxStateForSx</b> value that represents a higher-powered device sleeping state than the device's stack has specified in the device's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543087">DeviceState</a> array, the framework uses the lower-powered state that is in the array. For example, if the driver specifies an <b>IdealDxStateForSx</b> value of D1 and the device's <b>DeviceState</b> array specifies D2, the framework uses D2.
-        
-            `Size`
 
-            The size, in bytes, of this structure.
-        
-            `SystemWake`
+`Size`
 
-            A SYSTEM_POWER_STATE-typed value that indicates the lowest system power state from which the device can send a wake signal to the system. If this value is <b>PowerSystemMaximum</b>, the framework uses whatever value is currently stored in the system for this member. SYSTEM_POWER_STATE values are defined in <i>wdm.h</i>.
-        
-            `WakeFromD0`
+The size, in bytes, of this structure.
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D0 state.
-        
-            `WakeFromD1`
+`SystemWake`
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D1 state.
-        
-            `WakeFromD2`
+A SYSTEM_POWER_STATE-typed value that indicates the lowest system power state from which the device can send a wake signal to the system. If this value is <b>PowerSystemMaximum</b>, the framework uses whatever value is currently stored in the system for this member. SYSTEM_POWER_STATE values are defined in <i>wdm.h</i>.
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D2 state.
-        
-            `WakeFromD3`
+`WakeFromD0`
 
-            A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D3 state.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D0 state.
 
-    ## Remarks
-        The WDF_DEVICE_POWER_CAPABILITIES structure is used as input to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>.
+`WakeFromD1`
 
-Several members use the <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a> type. For these members, the following rules apply:
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D1 state.
 
+`WakeFromD2`
+
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D2 state.
+
+`WakeFromD3`
+
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can respond to a wake signal while in its D3 state.
+
+## Remarks
+The WDF_DEVICE_POWER_CAPABILITIES structure is used as input to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>.
+
+Several members use the <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a> type. For these members, the following rules apply:
+<ul>
+<li>
 A value of <b>WdfTrue</b> indicates that the device supports the capability and a value of <b>WdfFalse</b> indicates it does not. 
 
+</li>
+<li>
 Function drivers and filter drivers can specify <b>WdfTrue</b> or <b>WdfFalse</b>, or a value of <b>WdfUseDefault</b> to indicate that the framework should use the value that was provided by a lower driver in the stack. For example, if a bus driver specifies <b>WdfTrue</b> for <b>DeviceD1</b> and the device's function driver specifies <b>WdfUseDefault</b>, the framework uses <b>WdfTrue</b> for the capability.
 
+</li>
+<li>
 When a bus driver calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a> after it <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-device-objects-in-a-bus-driver">creates a device object</a> for a child device, it should specify <b>WdfTrue</b> or <b>WdfFalse</b>. A bus driver can specify <b>WdfUseDefault</b> for a child device, but in this case <b>WdfUseDefault</b> is the same as <b>WdfFalse</b>.
 
-To initialize a WDF_DEVICE_POWER_CAPABILITIES structure, a driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf_device_power_capabilities_init.md">WDF_DEVICE_POWER_CAPABILITIES_INIT</a>.
+</li>
+</ul>To initialize a WDF_DEVICE_POWER_CAPABILITIES structure, a driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf_device_power_capabilities_init.md">WDF_DEVICE_POWER_CAPABILITIES_INIT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -142,13 +152,10 @@ To initialize a WDF_DEVICE_POWER_CAPABILITIES structure, a driver should call <a
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a>
-</dt>
-</dl>
+
  
 
  

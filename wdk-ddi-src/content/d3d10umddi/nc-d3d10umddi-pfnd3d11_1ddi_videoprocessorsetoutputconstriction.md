@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4b34a76b-2e56-4656-9112-ad2e1d53525d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords : display.videoprocessorsetoutputconstriction, pfnVideoProcessorSetOutputConstriction callback function [Display Devices], pfnVideoProcessorSetOutputConstriction, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION, d3d10umddi/pfnVideoProcessorSetOutputConstriction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnVideoProcessorSetOutputConstriction
-req.alt-loc : D3d10umddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
@@ -90,6 +94,7 @@ The width and height of the <i>ConstrictonSize</i> parameter must be greater tha
 
 
 The driver reports its ability to support downsampling through the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcaps.md">GetVideoProcessorCaps</a> function. If the driver supports the <b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION</b> capability, it supports the ability to downsample the composed image.
+<div class="alert"><b>Note</b>  If the driver does not support the <b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION</b> capability, the Microsoft Direct3D runtime does not call the <b>VideoProcessorSetOutputConstriction</b> function.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,11 +110,8 @@ The driver reports its ability to support downsampling through the <a href="..\d
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
-</dt>
-</dl>
+
  
 
  

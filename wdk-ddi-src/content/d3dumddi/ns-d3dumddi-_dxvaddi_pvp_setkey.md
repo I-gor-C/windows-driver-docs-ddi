@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3707f9c9-109e-4ac2-bc34-c9f4f7651306
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXVADDI_PVP_SETKEY, DXVADDI_PVP_SETKEY
+ms.keywords : d3dumddi/DXVADDI_PVP_SETKEY, display.dxvaddi_pvp_setkey, DXVADDI_PVP_SETKEY structure [Display Devices], _DXVADDI_PVP_SETKEY, DXVA2_Structs_fbd26ed2-13ce-4f15-a7de-544f6f5fac33.xml, DXVADDI_PVP_SETKEY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXVADDI_PVP_SETKEY
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXVADDI_PVP_SETKEY
 ---
 
@@ -46,10 +50,10 @@ typedef struct _DXVADDI_PVP_SETKEY {
 
 ## Members
 
-        
-            `ContentKey`
 
-            [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_block128.md">DXVADDI_PVP_KEY128</a> structure that contains the 128-bit key.
+`ContentKey`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_block128.md">DXVADDI_PVP_KEY128</a> structure that contains the 128-bit key.
 
 
 ## Requirements
@@ -60,19 +64,14 @@ typedef struct _DXVADDI_PVP_SETKEY {
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodebeginframe.md">D3DDDIARG_DECODEBEGINFRAME</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decodebeginframe.md">DecodeBeginFrame</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_block128.md">DXVADDI_PVP_KEY128</a>
-</dt>
-</dl>
+
  
 
  

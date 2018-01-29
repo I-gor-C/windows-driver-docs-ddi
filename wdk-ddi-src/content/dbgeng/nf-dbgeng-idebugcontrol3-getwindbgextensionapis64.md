@@ -7,8 +7,8 @@ old-location : debugger\getwindbgextensionapis64.htm
 old-project : debugger
 ms.assetid : 01b34b26-2835-4a58-abf3-190da63d25eb
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugControl3, IDebugControl3::GetWindbgExtensionApis64, GetWindbgExtensionApis64
+ms.date : 1/19/2018
+ms.keywords : IDebugControl interface [Windows Debugging], GetWindbgExtensionApis64 method, IDebugControl2 interface [Windows Debugging], GetWindbgExtensionApis64 method, GetWindbgExtensionApis64, dbgeng/IDebugControl::GetWindbgExtensionApis64, IDebugControl3::GetWindbgExtensionApis64, dbgeng/IDebugControl2::GetWindbgExtensionApis64, debugger.getwindbgextensionapis64, IDebugControl_51215e32-dcd3-440f-92ee-6ff82ae1c8e6.xml, dbgeng/IDebugControl3::GetWindbgExtensionApis64, IDebugControl3 interface [Windows Debugging], GetWindbgExtensionApis64 method, GetWindbgExtensionApis64 method [Windows Debugging], IDebugControl interface, IDebugControl::GetWindbgExtensionApis64, IDebugControl2::GetWindbgExtensionApis64, GetWindbgExtensionApis64 method [Windows Debugging], IDebugControl3, GetWindbgExtensionApis64 method [Windows Debugging], IDebugControl3 interface, GetWindbgExtensionApis64 method [Windows Debugging], IDebugControl2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugControl.GetWindbgExtensionApis64,IDebugControl2.GetWindbgExtensionApis64,IDebugControl3.GetWindbgExtensionApis64
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -56,12 +60,34 @@ Receives a WINDBG_EXTENSION_APIS64 structure.  This structure contains the funct
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The value of <i>Api</i>-&gt;<b>nSize</b> does not equal the size of the structure WINDBG_EXTENSION_APIS64.
+</dl>
+</td>
+<td width="60%">
+The value of <i>Api</i>-&gt;<b>nSize</b> does not equal the size of the structure WINDBG_EXTENSION_APIS64.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -71,7 +97,7 @@ Many WdbgExts functions are really macros.  To ensure that these macros work cor
 
 The WINDBG_EXTENSION_APIS64 structure returned by this method serves the same purpose as the one provided to the callback function <a href="..\wdbgexts\nc-wdbgexts-pwindbg_extension_dll_init.md">WinDbgExtensionDllInit</a> (used by WdbgExts extensions).
 
-For a list of the functions provided by the WdbgExts API, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561258">WdbgExts Functions</a>.</p>
+For a list of the functions provided by the WdbgExts API, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561258">WdbgExts Functions</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

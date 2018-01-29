@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : D6C03D60-9FC4-4EF1-A7DD-4A91990D5CF1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, *PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET
+ms.keywords : "*PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, ksmedia/PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, stream.kscamera_extendedprop_cameraoffset, PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure pointer [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET, ksmedia/KSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.1.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_EXTENDEDPROP_CAMERAOFFSET
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET"
 ---
 
@@ -49,22 +53,22 @@ typedef struct _KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
 
 ## Members
 
-        
-            `Flag`
 
-            Reserved. Set to 0.
-        
-            `PitchAngle`
+`Flag`
 
-            The angle offset of the camera look direction from the horizontal axis of the camera facing direction.
-        
-            `Reserved`
+Reserved. Set to 0.
 
-            Reserved. Set to 0.
-        
-            `YawAngle`
+`PitchAngle`
 
-            The angle offset of the camera look direction from the vertical axis of the camera facing direction.
+The angle offset of the camera look direction from the horizontal axis of the camera facing direction.
+
+`Reserved`
+
+Reserved. Set to 0.
+
+`YawAngle`
+
+The angle offset of the camera look direction from the vertical axis of the camera facing direction.
 
 
 ## Requirements
@@ -75,16 +79,12 @@ typedef struct _KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md">KSCAMERA_EXTENDEDPROP_HEADER</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn567571">KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET</a>
-</dt>
-</dl>
+
  
 
  

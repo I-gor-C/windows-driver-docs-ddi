@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e1c1a67e-a18d-4eef-88ce-cd7edd371f54
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::GetDevice, GetDevice
+ms.keywords : UMDFQueueObjectRef_ecef922c-aff2-49ac-84bd-17e7e2e784a1.xml, IWDFIoQueue::GetDevice, GetDevice method, IWDFIoQueue interface, wdf.iwdfioqueue_getdevice, umdf.iwdfioqueue_getdevice, IWDFIoQueue interface, GetDevice method, GetDevice method, wudfddi/IWDFIoQueue::GetDevice, GetDevice, IWDFIoQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoQueue.GetDevice
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -60,8 +64,6 @@ A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wu
 
 None
 
-The following code example shows how to retrieve the device interface that owns an I/O queue.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,14 +79,10 @@ The following code example shows how to retrieve the device interface that owns 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
-</dt>
-</dl>
+
  
 
  

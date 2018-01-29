@@ -7,8 +7,8 @@ old-location : netvista\rildcslang_2.htm
 old-project : netvista
 ms.assetid : b6d50c5d-edc5-4037-9223-679fd19f195f
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILDCSLANG, RILDCSLANG
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RIL_DCSLANG_GERMAN, rilapitypes/RILDCSLANG, RIL_DCSLANG_POLISH, rilapitypes/RIL_DCSLANG_NORWEGIAN, RIL_DCSLANG_HEBREW, rilapitypes/RIL_DCSLANG_TURKISH, RILDCSLANG enumeration [Network Drivers Starting with Windows Vista], RIL_DCSLANG_ENGLISH, RIL_DCSLANG_RUSSIAN, RILDCSLANG, RIL_DCSLANG_DANISH, rilapitypes/RIL_DCSLANG_RUSSIAN, RIL_DCSLANG_ARABIC, rilapitypes/RIL_DCSLANG_HUNGARIAN, rilapitypes/RIL_DCSLANG_GREEK, RIL_DCSLANG_SWEDISH, netvista.rildcslang_2, rilapitypes/RIL_DCSLANG_FINNISH, rilapitypes/RIL_DCSLANG_SWEDISH, RIL_DCSLANG_ICELANDIC, RIL_DCSLANG_HUNGARIAN, rilapitypes/RIL_DCSLANG_CZECH, rilapitypes/RIL_DCSLANG_UNKNOWN, RIL_DCSLANG_NORWEGIAN, RIL_DCSLANG_UNKNOWN, rilapitypes/RIL_DCSLANG_POLISH, RIL_DCSLANG_TURKISH, RIL_DCSLANG_SPANISH, RIL_DCSLANG_ALL, RIL_DCSLANG_ITALIAN, RIL_DCSLANG_FRENCH, rilapitypes/RIL_DCSLANG_DANISH, rilapitypes/RIL_DCSLANG_DUTCH, rilapitypes/RIL_DCSLANG_PORTUGUESE, RIL_DCSLANG_GREEK, rilapitypes/RIL_DCSLANG_FRENCH, RIL_DCSLANG_PORTUGUESE, rilapitypes/RIL_DCSLANG_ENGLISH, RIL_DCSLANG_CZECH, RIL_DCSLANG_FINNISH, rilapitypes/RIL_DCSLANG_HEBREW, rilapitypes/RIL_DCSLANG_ARABIC, rilapitypes/RIL_DCSLANG_ALL, rilapitypes/RIL_DCSLANG_ICELANDIC, rilapitypes/RIL_DCSLANG_ITALIAN, RIL_DCSLANG_DUTCH, RIL_DCSLANG_GERMAN, rilapitypes/RIL_DCSLANG_SPANISH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILDCSLANG
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILDCSLANG
 req.product : Windows 10 or later.
 ---
@@ -137,6 +141,11 @@ typedef enum _RILDCSLANG {
 
 <tr>
 <td>RIL_DCSLANG_ITALIAN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_DCSLANG_None</td>
 <td></td>
 </tr>
 

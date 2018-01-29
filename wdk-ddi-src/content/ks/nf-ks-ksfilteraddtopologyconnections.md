@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 32a61103-5f2f-4b73-a299-bf6a14c3bec9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterAddTopologyConnections
+ms.keywords : KsFilterAddTopologyConnections, stream.ksfilteraddtopologyconnections, ks/KsFilterAddTopologyConnections, avfunc_99b8984f-5ca2-460b-ab20-230fd09b6d13.xml, KsFilterAddTopologyConnections function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterAddTopologyConnections
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -87,14 +91,10 @@ For more information about mutexes, see <a href="https://msdn.microsoft.com/011e
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-</dt>
-<dt>
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
-</dt>
-</dl>
+
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
  
 
  

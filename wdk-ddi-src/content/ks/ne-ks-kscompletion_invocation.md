@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2BD1A2F8-BAA2-40A3-9C97-667780A6F395
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSCOMPLETION_INVOCATION, KSCOMPLETION_INVOCATION
+ms.keywords : KSCOMPLETION_INVOCATION enumeration [Streaming Media Devices], KsInvokeOnCancel, ks/KsInvokeOnSuccess, ks/KsInvokeOnError, stream.kscompletion_invocation, KSCOMPLETION_INVOCATION, KsInvokeOnError, KsInvokeOnSuccess, ks/KSCOMPLETION_INVOCATION, ks/KsInvokeOnCancel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCOMPLETION_INVOCATION
-req.alt-loc : Ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KSCOMPLETION_INVOCATION
 ---
 

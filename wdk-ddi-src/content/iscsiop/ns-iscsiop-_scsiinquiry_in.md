@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b1a73ef7-c13a-4627-8eb0-b9285567caec
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _ScsiInquiry_IN, ScsiInquiry_IN, *PScsiInquiry_IN
+ms.keywords : "*PScsiInquiry_IN, iscsiop/PScsiInquiry_IN, _ScsiInquiry_IN, structs-iSCSI_2129d82b-f03d-49f2-bf1d-8716840d086c.xml, iscsiop/ScsiInquiry_IN, storage.scsiinquiry_in, PScsiInquiry_IN, PScsiInquiry_IN structure pointer [Storage Devices], ScsiInquiry_IN, ScsiInquiry_IN structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ScsiInquiry_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ScsiInquiry_IN, *PScsiInquiry_IN
 ---
 
@@ -49,25 +53,25 @@ typedef struct _ScsiInquiry_IN {
 
 ## Members
 
-        
-            `InquiryFlags`
 
-            The inquiry flags to set in the SCSI inquiry command. A value of 1 in the lowest order bit (0x01) indicates that the enable vital product data (EVPD) bit will be set in the inquiry command and the device server will return the optional vital product data that the page code field specifies in the inquiry command. A value of 1 in the second bit (0x02) indicates that the command support data bit will be set in the inquiry command and the device server will return the optional command support data that the operation code field specifies in the inquiry command.
-        
-            `Lun`
+`InquiryFlags`
 
-            A 64-bit number that, together with the name of the target, uniquely identifies the logical unit.
-        
-            `PageCode`
+The inquiry flags to set in the SCSI inquiry command. A value of 1 in the lowest order bit (0x01) indicates that the enable vital product data (EVPD) bit will be set in the inquiry command and the device server will return the optional vital product data that the page code field specifies in the inquiry command. A value of 1 in the second bit (0x02) indicates that the command support data bit will be set in the inquiry command and the device server will return the optional command support data that the operation code field specifies in the inquiry command.
 
-            The page code field in the SCSI inquiry command.
-        
-            `UniqueSessionId`
+`Lun`
 
-            A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+A 64-bit number that, together with the name of the target, uniquely identifies the logical unit.
 
-    ## Remarks
-        You must implement this method.
+`PageCode`
+
+The page code field in the SCSI inquiry command.
+
+`UniqueSessionId`
+
+A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+
+## Remarks
+You must implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,22 +81,16 @@ typedef struct _ScsiInquiry_IN {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
+<a href="..\iscsiop\ns-iscsiop-_scsiinquiry_out.md">ScsiInquiry_OUT</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
-</dt>
-<dt>
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsiinquiry_out.md">ScsiInquiry_OUT</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
  
 
  

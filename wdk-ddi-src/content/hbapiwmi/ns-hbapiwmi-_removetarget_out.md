@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 176dbb0c-227e-48b2-956c-9e2b42f4c68b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemoveTarget_OUT, *PRemoveTarget_OUT, RemoveTarget_OUT
+ms.keywords : RemoveTarget_OUT, *PRemoveTarget_OUT, storage.removetarget_out, PRemoveTarget_OUT, RemoveTarget_OUT structure [Storage Devices], _RemoveTarget_OUT, hbapiwmi/PRemoveTarget_OUT, hbapiwmi/RemoveTarget_OUT, structs-Fibre_0cab8f87-0c96-4e03-bfd9-495e245850ca.xml, PRemoveTarget_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RemoveTarget_OUT
-req.alt-loc : hbapiwmi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PRemoveTarget_OUT, RemoveTarget_OUT"
 ---
 
@@ -46,13 +50,13 @@ typedef struct _RemoveTarget_OUT {
 
 ## Members
 
-        
-            `HBAStatus`
 
-            Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+`HBAStatus`
 
-    ## Remarks
-        The WMI tool suite generates a declaration of the RemoveTarget_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+## Remarks
+The WMI tool suite generates a declaration of the RemoveTarget_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,13 +66,10 @@ typedef struct _RemoveTarget_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564030">RemoveTarget</a>
-</dt>
-</dl>
+
  
 
  

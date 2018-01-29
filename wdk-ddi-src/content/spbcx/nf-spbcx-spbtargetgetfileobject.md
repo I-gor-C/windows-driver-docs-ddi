@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : A89635EC-F5B8-4427-9AFD-9F71339595DF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbTargetGetFileObject
+ms.keywords : SPB.spbtargetgetfileobject, SpbTargetGetFileObject method [Buses], spbcx/SpbTargetGetFileObject, SpbTargetGetFileObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SpbTargetGetFileObject
-req.alt-loc : spbcxstubs.lib,spbcxstubs.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Spbcxstubs.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product : Windows 10 or later.
 ---
@@ -82,17 +86,12 @@ After <b>SpbTargetGetFileObject</b> returns a WDFFILEOBJECT handle, there is no 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/02756C35-E76C-42C0-80FA-359CADE224A1">EvtSpbTargetDisconnect</a>
-</dt>
-<dt>
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/02756C35-E76C-42C0-80FA-359CADE224A1">EvtSpbTargetDisconnect</a>
+
  
 
  

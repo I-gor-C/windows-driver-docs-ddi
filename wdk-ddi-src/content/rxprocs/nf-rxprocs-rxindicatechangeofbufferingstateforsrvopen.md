@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 70efd8d7-c275-440e-a4df-f41b799a63f0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxIndicateChangeOfBufferingStateForSrvOpen
+ms.keywords : ifsk.rxindicatechangeofbufferingstateforsrvopen, rxref_6fc017ff-369c-47c3-8a5c-45f808d1d86c.xml, rxprocs/RxIndicateChangeOfBufferingStateForSrvOpen, RxIndicateChangeOfBufferingStateForSrvOpen, RxIndicateChangeOfBufferingStateForSrvOpen function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxIndicateChangeOfBufferingStateForSrvOpen
-req.alt-loc : rxprocs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -66,7 +70,7 @@ A pointer to the key for the SRV_OPEN key structure.
 
 `Context`
 
-
+TBD
 
 
 ## Return Value
@@ -101,17 +105,12 @@ If a buffering state request can be processed immediately instead of being queue
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\rxprocs\nf-rxprocs-rxchangebufferingstate.md">RxChangeBufferingState</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstate.md">RxIndicateChangeOfBufferingState</a>
-</dt>
-<dt>
+
 <a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
-</dt>
-</dl>
+
+<a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstate.md">RxIndicateChangeOfBufferingState</a>
+
  
 
  

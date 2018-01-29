@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : C6C693CC-D9C0-4EE8-9F8C-07D8665C673D
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAcquireCachedMdl
+ms.keywords : KsAcquireCachedMdl function [Streaming Media Devices], GUID, stream.ksacquirecachedmdl, PVOID, ks/KsAcquireCachedMdl, KsAcquireCachedMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAcquireCachedMdl
-req.alt-loc : ks.lib,ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -64,7 +68,6 @@ The GUID extracted from the <b>MFSampleExtension_MDLCacheCookie</b> attribute it
 `CancelRoutine`
 
 Cancel routine, a callback function supplied by the Avstream miniport driver. This function is called when the state of the pin generating the sample is going to STOP state.  The signature of the cancel routine is as follows:
-
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -89,7 +92,7 @@ The context passed to the Avstream driver in the cancel routine. This context is
 
 `MdlAddr`
 
-
+TBD
 
 `ReleaseContext`
 

@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 195B9FA2-F7B2-4EA0-9D53-63E438666760
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO_CLX_ReleaseInterruptLock
+ms.keywords : GPIO_CLX_ReleaseInterruptLock method [Parallel Ports], gpioclx/GPIO_CLX_ReleaseInterruptLock, GPIO_CLX_ReleaseInterruptLock, GPIO.gpio_clx_releaseinterruptlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GPIO_CLX_ReleaseInterruptLock
-req.alt-loc : Msgpioclxstub.lib,Msgpioclxstub.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Msgpioclxstub.lib
 req.dll : 
 req.irql : See Remarks.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
 ---
 
@@ -84,11 +88,8 @@ If the <i>Context</i> parameter is NULL or points to an invalid GPIO device cont
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439482">GPIO_CLX_AcquireInterruptLock</a>
-</dt>
-</dl>
+
  
 
  

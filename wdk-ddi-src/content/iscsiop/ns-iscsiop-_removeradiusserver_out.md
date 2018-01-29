@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : da5be900-a362-4d74-9ac7-65b96f0348ce
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT
+ms.keywords : structs-iSCSI_dea5813a-b7e8-4702-af57-f7a40360efb9.xml, RemoveRADIUSServer_OUT structure [Storage Devices], _RemoveRADIUSServer_OUT, storage.removeradiusserver_out, iscsiop/RemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT, PRemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT, iscsiop/PRemoveRADIUSServer_OUT, PRemoveRADIUSServer_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RemoveRADIUSServer_OUT
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PRemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT
 ---
 
 # _RemoveRADIUSServer_OUT structure
@@ -46,13 +50,13 @@ typedef struct _RemoveRADIUSServer_OUT {
 
 ## Members
 
-        
-            `Status`
 
-            On output from <b>RemoveRADIUSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+`Status`
 
-    ## Remarks
-        It is optional that you implement this method.
+On output from <b>RemoveRADIUSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
+
+## Remarks
+It is optional that you implement this method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -62,19 +66,14 @@ typedef struct _RemoveRADIUSServer_OUT {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564020">RemoveRADIUSServer</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
 <a href="..\iscsiop\ns-iscsiop-_removeradiusserver_in.md">RemoveRADIUSServer_IN</a>
-</dt>
-</dl>
+
  
 
  

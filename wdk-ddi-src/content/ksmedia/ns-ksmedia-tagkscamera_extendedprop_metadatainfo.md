@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6AE59150-8A10-43B6-B910-AEBEDC2FD272
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKSCAMERA_EXTENDEDPROP_METADATAINFO, *PKSCAMERA_EXTENDEDPROP_METADATAINFO, KSCAMERA_EXTENDEDPROP_METADATAINFO
+ms.keywords : KSCAMERA_EXTENDEDPROP_METADATAINFO structure [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_METADATAINFO, PKSCAMERA_EXTENDEDPROP_METADATAINFO structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_METADATAINFO, *PKSCAMERA_EXTENDEDPROP_METADATAINFO, ksmedia/PKSCAMERA_EXTENDEDPROP_METADATAINFO, stream.kscamera_extendedprop_metadatainfo, PKSCAMERA_EXTENDEDPROP_METADATAINFO, tagKSCAMERA_EXTENDEDPROP_METADATAINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_EXTENDEDPROP_METADATAINFO
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PKSCAMERA_EXTENDEDPROP_METADATAINFO, KSCAMERA_EXTENDEDPROP_METADATAINFO"
 ---
 
@@ -47,13 +51,12 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_METADATAINFO {
 
 ## Members
 
-        
-            `BufferAlignment`
 
-            The required alignment for the metadata buffer.
+`BufferAlignment`
+
+The required alignment for the metadata buffer.
 
 <i>BufferAlignment</i> can be one of the following values:
-
 <ul>
 <li>
 KSCAMERA_EXTENDEDPROP_MetadataAlignment_16
@@ -96,10 +99,10 @@ KSCAMERA_EXTENDEDPROP_MetadataAlignment_8192
 
 </li>
 </ul>
-        
-            `MaxMetadataBufferSize`
 
-            The size of the metadata buffer.
+`MaxMetadataBufferSize`
+
+The size of the metadata buffer.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7a5fcb4f-fc9a-4ebb-93ef-b83461557b22
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UsbBuildGetStatusRequest
+ms.keywords : buses.usbbuildgetstatusrequest, usbfunc_a99bf737-8bb6-4000-af2b-ac076a4ffc8e.xml, usbdlib/UsbBuildGetStatusRequest, UsbBuildGetStatusRequest routine [Buses], UsbBuildGetStatusRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UsbBuildGetStatusRequest
-req.alt-loc : usbdlib.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : usbdlib.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
@@ -56,27 +60,27 @@ void UsbBuildGetStatusRequest(
 
 `urb`
 
-
+TBD
 
 `op`
 
-
+TBD
 
 `index`
 
-
+TBD
 
 `transferBuffer`
 
-
+TBD
 
 `transferBufferMDL`
 
-
+TBD
 
 `link`
 
-
+TBD
 
 
 ## Return Value
@@ -98,15 +102,12 @@ None
 
 ## See Also
 
-<dl>
-<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
 <a href="..\usb\ns-usb-_urb.md">URB</a>
-</dt>
-<dt>
+
 <a href="..\usb\ns-usb-_urb_control_get_status_request.md">_URB_CONTROL_GET_STATUS_REQUEST</a>
-</dt>
-<dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
-</dl>
+
  
 
  

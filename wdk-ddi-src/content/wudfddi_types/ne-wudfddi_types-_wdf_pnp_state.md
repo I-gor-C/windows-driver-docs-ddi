@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f17a6d52-5f68-470c-9f45-6a175e0fbf01
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_PNP_STATE, WDF_PNP_STATE
+ms.keywords : WdfPnpStateInvalid, WdfPnpStateDisabled, umdfstructs_5964ab34-28fb-410b-a863-1adc9e8eed03.xml, _WDF_PNP_STATE, WdfPnpStateFailed, wdf.wdf_pnp_state, WdfPnpStateDontDisplayInUI, WdfPnpStateResourcesChanged, wudfddi_types/WdfPnpStateNotDisableable, umdf.wdf_pnp_state, wudfddi_types/WdfPnpStateRemoved, WdfPnpStateMaximum, wudfddi_types/WdfPnpStateMaximum, WDF_PNP_STATE, wudfddi_types/WdfPnpStateInvalid, WdfPnpStateNotDisableable, WdfPnpStateRemoved, WDF_PNP_STATE enumeration, wudfddi_types/WdfPnpStateDisabled, wudfddi_types/WdfPnpStateDontDisplayInUI, wudfddi_types/WdfPnpStateResourcesChanged, wudfddi_types/WDF_PNP_STATE, wudfddi_types/WdfPnpStateFailed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WDF_PNP_STATE
-req.alt-loc : Wudfddi_types.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_PNP_STATE
 req.product : Windows 10 or later.
 ---
@@ -113,14 +117,10 @@ A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href=
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
-</dt>
-</dl>
+
  
 
  

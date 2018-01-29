@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f8d49d61-f15e-4972-bcd2-d20f1be5786c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _TRANSACTION_ENLISTMENT_PAIR, TRANSACTION_ENLISTMENT_PAIR, *PTRANSACTION_ENLISTMENT_PAIR
+ms.keywords : TRANSACTION_ENLISTMENT_PAIR structure [Kernel-Mode Driver Architecture], TRANSACTION_ENLISTMENT_PAIR, PTRANSACTION_ENLISTMENT_PAIR structure pointer [Kernel-Mode Driver Architecture], wdm/TRANSACTION_ENLISTMENT_PAIR, _TRANSACTION_ENLISTMENT_PAIR, PTRANSACTION_ENLISTMENT_PAIR, ktm_ref_5f4d1426-1829-4c3d-836f-8655b41d9c0c.xml, wdm/PTRANSACTION_ENLISTMENT_PAIR, *PTRANSACTION_ENLISTMENT_PAIR, kernel.transaction_enlistment_pair
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later operating syste
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSACTION_ENLISTMENT_PAIR
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TRANSACTION_ENLISTMENT_PAIR, *PTRANSACTION_ENLISTMENT_PAIR
 req.product : Windows 10 or later.
 ---
@@ -48,17 +52,17 @@ typedef struct _TRANSACTION_ENLISTMENT_PAIR {
 
 ## Members
 
-        
-            `EnlistmentId`
 
-            A GUID that KTM has assigned to the enlistment.
-        
-            `ResourceManagerId`
+`EnlistmentId`
 
-            A GUID that KTM has assigned to the resource manager that created the enlistment.
+A GUID that KTM has assigned to the enlistment.
 
-    ## Remarks
-        The <b>TRANSACTION_ENLISTMENT_PAIR</b> structure is used as a member of the <a href="..\wdm\ns-wdm-_transaction_enlistments_information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a> structure.
+`ResourceManagerId`
+
+A GUID that KTM has assigned to the resource manager that created the enlistment.
+
+## Remarks
+The <b>TRANSACTION_ENLISTMENT_PAIR</b> structure is used as a member of the <a href="..\wdm\ns-wdm-_transaction_enlistments_information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,16 +72,12 @@ typedef struct _TRANSACTION_ENLISTMENT_PAIR {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\ns-wdm-_transaction_enlistments_information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
-</dt>
-</dl>
+
  
 
  

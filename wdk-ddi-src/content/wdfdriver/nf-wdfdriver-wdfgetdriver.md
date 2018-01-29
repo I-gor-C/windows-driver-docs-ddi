@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 423d4407-9e30-4625-bbe8-5465af29cfaa
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfGetDriver
+ms.keywords : WdfGetDriver, wdfdriver/WdfGetDriver, kmdf.wdfgetdriver, WdfGetDriver method, PFN_WDFGETDRIVER, wdf.wdfgetdriver, DFDriverObjectRef_7419a365-e5ee-49cd-8d85-4db65cd27645.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfGetDriver
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DRIVER_INIT_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -55,16 +59,6 @@ This function has no parameters.
 
 <b>WdfGetDriver</b> returns a handle to a framework driver object, or <b>NULL</b> if the driver has not called <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.
 
-The following code example obtains a handle to the calling driver's framework driver object and uses the handle as input to <a href="..\wdfminiport\nf-wdfminiport-wdfdriverminiportunload.md">WdfDriverMiniportUnload</a>.
-
-<b>WdfGetDriver</b> returns a handle to a framework driver object, or <b>NULL</b> if the driver has not called <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.
-
-The following code example obtains a handle to the calling driver's framework driver object and uses the handle as input to <a href="..\wdfminiport\nf-wdfminiport-wdfdriverminiportunload.md">WdfDriverMiniportUnload</a>.
-
-<b>WdfGetDriver</b> returns a handle to a framework driver object, or <b>NULL</b> if the driver has not called <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.
-
-The following code example obtains a handle to the calling driver's framework driver object and uses the handle as input to <a href="..\wdfminiport\nf-wdfminiport-wdfdriverminiportunload.md">WdfDriverMiniportUnload</a>.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,11 +74,8 @@ The following code example obtains a handle to the calling driver's framework dr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-</dt>
-</dl>
+
  
 
  

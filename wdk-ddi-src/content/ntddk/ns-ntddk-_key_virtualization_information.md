@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 128dd4ed-12c6-472a-b63c-d2d217b5c716
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KEY_VIRTUALIZATION_INFORMATION, *PKEY_VIRTUALIZATION_INFORMATION, KEY_VIRTUALIZATION_INFORMATION
+ms.keywords : _KEY_VIRTUALIZATION_INFORMATION, KEY_VIRTUALIZATION_INFORMATION, ntddk/PKEY_VIRTUALIZATION_INFORMATION, PKEY_VIRTUALIZATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PKEY_VIRTUALIZATION_INFORMATION, kstruct_c_00c77a09-ed8d-4a66-9b18-b971c9eab5ce.xml, kernel.key_virtualization_information, ntddk/KEY_VIRTUALIZATION_INFORMATION, KEY_VIRTUALIZATION_INFORMATION structure [Kernel-Mode Driver Architecture], *PKEY_VIRTUALIZATION_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available on Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KEY_VIRTUALIZATION_INFORMATION
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PKEY_VIRTUALIZATION_INFORMATION, KEY_VIRTUALIZATION_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KEY_VIRTUALIZATION_INFORMATION, *PKEY_VIRTUALIZATION_INFORMATION
 ---
 
 # _KEY_VIRTUALIZATION_INFORMATION structure
@@ -51,30 +55,30 @@ typedef struct _KEY_VIRTUALIZATION_INFORMATION {
 
 ## Members
 
-        
-            `Reserved`
 
-            This value is reserved for system use.
-        
-            `VirtualizationCandidate`
+`Reserved`
 
-            Specifies whether the key is part of the virtualization namespace scope.
-        
-            `VirtualizationEnabled`
+This value is reserved for system use.
 
-            Specifies whether virtualization is enabled on this key. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1.
-        
-            `VirtualSource`
+`VirtualizationCandidate`
 
-            Specifies whether the key has ever been virtualized. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1.
-        
-            `VirtualStore`
+Specifies whether the key is part of the virtualization namespace scope.
 
-            Specified whether the key is a part of the virtual store path.
-        
-            `VirtualTarget`
+`VirtualizationEnabled`
 
-            Specifies whether the key is a virtual key. This value can be set to 1 only if <b>VirtualizationCandidate</b> and <b>VirtualizationEnabled</b> are both 0. This value is valid only on the virtual store key handles.
+Specifies whether virtualization is enabled on this key. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1.
+
+`VirtualSource`
+
+Specifies whether the key has ever been virtualized. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1.
+
+`VirtualStore`
+
+Specified whether the key is a part of the virtual store path.
+
+`VirtualTarget`
+
+Specifies whether the key is a virtual key. This value can be set to 1 only if <b>VirtualizationCandidate</b> and <b>VirtualizationEnabled</b> are both 0. This value is valid only on the virtual store key handles.
 
 
 ## Requirements
@@ -85,34 +89,24 @@ typedef struct _KEY_VIRTUALIZATION_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
+
 <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-</dt>
-<dt>
+
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
+
+<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
+
 <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+
+<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
+
  
 
  

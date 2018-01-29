@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 58e71ce5-29d0-4ee2-8d91-02230021110d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_OPENSYNCHRONIZATIONOBJECT, D3DKMT_OPENSYNCHRONIZATIONOBJECT
+ms.keywords : D3DKMT_OPENSYNCHRONIZATIONOBJECT, OpenGL_Structs_61f9f676-2b21-4cb3-8c6a-9f25ce3ac2bc.xml, _D3DKMT_OPENSYNCHRONIZATIONOBJECT, D3DKMT_OPENSYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dkmt_opensynchronizationobject, d3dkmthk/D3DKMT_OPENSYNCHRONIZATIONOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : D3DKMT_OPENSYNCHRONIZATIONOBJECT is supported beginn
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_OPENSYNCHRONIZATIONOBJECT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_OPENSYNCHRONIZATIONOBJECT
 ---
 
@@ -48,18 +52,18 @@ typedef struct _D3DKMT_OPENSYNCHRONIZATIONOBJECT {
 
 ## Members
 
-        
-            `hSharedHandle`
 
-            [in] A shared handle to the synchronization object to be opened.
-        
-            `hSyncObject`
+`hSharedHandle`
 
-            [out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object in the current process.
-        
-            `Reserved`
+[in] A shared handle to the synchronization object to be opened.
 
-            [in] An array of 64-bit values that are reserved for future use.
+`hSyncObject`
+
+[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object in the current process.
+
+`Reserved`
+
+[in] An array of 64-bit values that are reserved for future use.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _D3DKMT_OPENSYNCHRONIZATIONOBJECT {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensynchronizationobject.md">D3DKMTOpenSynchronizationObject</a>
-</dt>
-</dl>
+
  
 
  

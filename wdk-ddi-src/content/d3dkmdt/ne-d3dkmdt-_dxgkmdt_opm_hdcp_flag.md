@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 479a5913-eee6-4f39-9e51-d04708658bc2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKMDT_OPM_HDCP_FLAG, DXGKMDT_OPM_HDCP_FLAG
+ms.keywords : DmEnums_4969beac-7f4f-4bef-bd67-65599816c9ee.xml, DXGKMDT_OPM_HDCP_FLAG, d3dkmdt/DXGKMDT_OPM_HDCP_FLAG_NONE, DXGKMDT_OPM_HDCP_FLAG_REPEATER, DXGKMDT_OPM_HDCP_FLAG enumeration [Display Devices], d3dkmdt/DXGKMDT_OPM_HDCP_FLAG_REPEATER, _DXGKMDT_OPM_HDCP_FLAG, DXGKMDT_OPM_HDCP_FLAG_NONE, display.dxgkmdt_opm_hdcp_flag, d3dkmdt/DXGKMDT_OPM_HDCP_FLAG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGKMDT_OPM_HDCP_FLAG
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGKMDT_OPM_HDCP_FLAG
 ---
 
@@ -76,14 +80,10 @@ An HDCP repeater is a device that allows multiple monitors to display the video 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_connected_hdcp_device_information.md">DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

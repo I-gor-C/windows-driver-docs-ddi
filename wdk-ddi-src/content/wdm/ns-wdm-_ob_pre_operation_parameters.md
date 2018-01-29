@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 211bd3b1-34ca-414d-9167-0587c90cb56a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _OB_PRE_OPERATION_PARAMETERS, OB_PRE_OPERATION_PARAMETERS, *POB_PRE_OPERATION_PARAMETERS
+ms.keywords : kstruct_c_328dfe5b-e8ed-4277-9003-e194abbf81ba.xml, kernel.ob_pre_operation_parameters, OB_PRE_OPERATION_PARAMETERS union [Kernel-Mode Driver Architecture], OB_PRE_OPERATION_PARAMETERS, wdm/OB_PRE_OPERATION_PARAMETERS, POB_PRE_OPERATION_PARAMETERS union pointer [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_PARAMETERS, _OB_PRE_OPERATION_PARAMETERS, *POB_PRE_OPERATION_PARAMETERS, wdm/POB_PRE_OPERATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Server 2008 and later versions 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OB_PRE_OPERATION_PARAMETERS
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : OB_PRE_OPERATION_PARAMETERS, *POB_PRE_OPERATION_PARAMETERS
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef union _OB_PRE_OPERATION_PARAMETERS {
 
 ## Members
 
-        
-            `CreateHandleInformation`
 
-            An <a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a> structure that contains information that is specific to a handle that is being opened.
-        
-            `DuplicateHandleInformation`
+`CreateHandleInformation`
 
-            An <a href="..\wdm\ns-wdm-_ob_pre_duplicate_handle_information.md">OB_PRE_DUPLICATE_HANDLE_INFORMATION </a> structure that contains information that is specific to a handle that is being duplicated.
+An <a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a> structure that contains information that is specific to a handle that is being opened.
+
+`DuplicateHandleInformation`
+
+An <a href="..\wdm\ns-wdm-_ob_pre_duplicate_handle_information.md">OB_PRE_DUPLICATE_HANDLE_INFORMATION </a> structure that contains information that is specific to a handle that is being duplicated.
 
 
 ## Requirements
@@ -66,19 +70,14 @@ typedef union _OB_PRE_OPERATION_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_ob_pre_duplicate_handle_information.md">OB_PRE_DUPLICATE_HANDLE_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
-</dt>
-</dl>
+
+<a href="..\wdm\ns-wdm-_ob_pre_duplicate_handle_information.md">OB_PRE_DUPLICATE_HANDLE_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a>
+
  
 
  

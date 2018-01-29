@@ -7,8 +7,8 @@ old-location : netvista\rilcallhandoverstate_2.htm
 old-project : netvista
 ms.assetid : 21558cd6-f200-4867-920f-8aaadc9839f8
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLHANDOVERSTATE, *LPRILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE
+ms.date : 1/18/2018
+ms.keywords : "*LPRILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE, netvista.rilcallhandoverstate_2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLHANDOVERSTATE
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*LPRILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RILCALLHANDOVERSTATE, *LPRILCALLHANDOVERSTATE
 req.product : Windows 10 or later.
 ---
 
@@ -52,30 +56,30 @@ typedef struct _RILCALLHANDOVERSTATE {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dw3gppCause`
+`cbSize`
 
-            
-        
-            `dwNewType`
 
-            
-        
-            `dwOldType`
 
-            
-        
-            `dwParams`
+`dw3gppCause`
 
-            
-        
-            `dwPhase`
 
-            
+
+`dwNewType`
+
+
+
+`dwOldType`
+
+
+
+`dwParams`
+
+
+
+`dwPhase`
+
+
 
 
 ## Requirements

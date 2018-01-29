@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : aa027f03-7d74-4c0e-8f62-d53f41ae86ae
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _SYSTEM_POWER_STATE, *PSYSTEM_POWER_STATE, SYSTEM_POWER_STATE
+ms.keywords : wdm/PowerSystemSleeping3, PowerSystemUnspecified, kernel.system_power_state, wdm/PowerSystemShutdown, wdm/PowerSystemUnspecified, SYSTEM_POWER_STATE, wdm/PowerSystemHibernate, PowerSystemSleeping1, *PSYSTEM_POWER_STATE, PowerSystemSleeping2, sysenum_32377b1c-a5d3-491b-aebd-ee3d40798f73.xml, SYSTEM_POWER_STATE enumeration [Kernel-Mode Driver Architecture], PowerSystemShutdown, wdm/PowerSystemMaximum, PSYSTEM_POWER_STATE enumeration pointer [Kernel-Mode Driver Architecture], PowerSystemHibernate, wdm/PowerSystemSleeping2, wdm/PSYSTEM_POWER_STATE, PowerSystemSleeping3, PSYSTEM_POWER_STATE, wdm/PowerSystemSleeping1, _SYSTEM_POWER_STATE, wdm/SYSTEM_POWER_STATE, PowerSystemWorking, wdm/PowerSystemWorking, PowerSystemMaximum
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SYSTEM_POWER_STATE
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYSTEM_POWER_STATE, SYSTEM_POWER_STATE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYSTEM_POWER_STATE, *PSYSTEM_POWER_STATE
 req.product : Windows 10 or later.
 ---
 
@@ -115,11 +119,8 @@ For more information about power management in general, see <a href="https://msd
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 1fac7c03-2a48-4b29-951d-c777fbec7dd3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _MITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE
+ms.keywords : MITIGABLE_DEVICE_INTERFACE structure [Buses], *PMITIGABLE_DEVICE_INTERFACE, PCI.mitigable_device_interface, _MITIGABLE_DEVICE_INTERFACE, pcivirt/MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MITIGABLE_DEVICE_INTERFACE
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PMITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE"
 ---
 
@@ -51,35 +55,35 @@ typedef struct _MITIGABLE_DEVICE_INTERFACE {
 
 ## Members
 
-        
-            `Context`
 
-            Driver-defined context passed by the driver.
-        
-            `InterfaceDereference`
+`Context`
 
-            Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>.
-        
-            `InterfaceReference`
+Driver-defined context passed by the driver.
 
-            Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>.
-        
-            `ReadWriteMitigatedRegister`
+`InterfaceDereference`
 
-            Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/7cd45484-0fee-4b8e-aa35-4142883c146e">READ_WRITE_MITIGATED_REGISTER</a> callback function.
-        
-            `Size`
+Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>.
 
-            Size of this structure.
-        
-            `Version`
+`InterfaceReference`
 
-            Version of this structure
+Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>.
 
-    ## Remarks
-        This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to reset a specific virtual function. 
+`ReadWriteMitigatedRegister`
 
-The PF driver registers its implementation by setting the <b>ReadVfConfig</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.</p>
+Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/7cd45484-0fee-4b8e-aa35-4142883c146e">READ_WRITE_MITIGATED_REGISTER</a> callback function.
+
+`Size`
+
+Size of this structure.
+
+`Version`
+
+Version of this structure
+
+## Remarks
+This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to reset a specific virtual function. 
+
+The PF driver registers its implementation by setting the <b>ReadVfConfig</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

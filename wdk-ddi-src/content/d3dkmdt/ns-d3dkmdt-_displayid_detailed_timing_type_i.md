@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7b3fa3a4-a77a-4c5f-b157-1fbdc3a7be33
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DISPLAYID_DETAILED_TIMING_TYPE_I, DISPLAYID_DETAILED_TIMING_TYPE_I
+ms.keywords : DISPLAYID_DETAILED_TIMING_TYPE_I, DISPLAYID_DETAILED_TIMING_TYPE_I structure [Display Devices], _DISPLAYID_DETAILED_TIMING_TYPE_I, display.displayid_detailed_timing_type_i, DmStructs_75d5fd93-c7ae-4a57-9843-427c53a9416f.xml, d3dkmdt/DISPLAYID_DETAILED_TIMING_TYPE_I
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DISPLAYID_DETAILED_TIMING_TYPE_I
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DISPLAYID_DETAILED_TIMING_TYPE_I
 ---
 
@@ -67,33 +71,33 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
 
 ## Members
 
-        
-            `HorizontalActivePixels`
 
-            [in] The number of active pixels in the horizontal direction.
-        
-            `HorizontalBlankPixels`
+`HorizontalActivePixels`
 
-            [in] The number of blank pixels in the horizontal direction.
-        
-            `HorizontalSyncWidth`
+[in] The number of active pixels in the horizontal direction.
 
-            [in] The horizontal sync interval, in pixels.
-        
-            `VerticalActiveLines`
+`HorizontalBlankPixels`
 
-            [in] The number of active scan lines.
-        
-            `VerticalBlankLines`
+[in] The number of blank pixels in the horizontal direction.
 
-            [in] The number of blank scan lines.
-        
-            `VerticalSyncWidth`
+`HorizontalSyncWidth`
 
-            [in] The vertical sync interval, in number of lines.
+[in] The horizontal sync interval, in pixels.
 
-    ## Remarks
-        The Microsoft DirectX graphics kernel subsystem fills this structure by reading the additional target mode data that is stored in the registry at the following path:
+`VerticalActiveLines`
+
+[in] The number of active scan lines.
+
+`VerticalBlankLines`
+
+[in] The number of blank scan lines.
+
+`VerticalSyncWidth`
+
+[in] The vertical sync interval, in number of lines.
+
+## Remarks
+The Microsoft DirectX graphics kernel subsystem fills this structure by reading the additional target mode data that is stored in the registry at the following path:
 
 <b>HKEY_LOCAL_MACHINE\ SYSTEM\ CurrentControlSet\ Control\ GraphicsDrivers\ AdditionalTargetModeLists</b>
 
@@ -107,22 +111,16 @@ The graphics kernel subsystem also validates that each registry value meets the 
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554017">DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554019">DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554023">DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554017">DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554026">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554023">DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1AA59350-2475-4BF7-B447-42FDDB311882
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.keywords : storage.ioctl_storage_protocol_command, IOCTL_STORAGE_PROTOCOL_COMMAND control code [Storage Devices], IOCTL_STORAGE_PROTOCOL_COMMAND, ntddstor/IOCTL_STORAGE_PROTOCOL_COMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_STORAGE_PROTOCOL_COMMAND
-req.alt-loc : ntddstor.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
@@ -59,7 +63,6 @@ The driver returns the results of the vendor-specific command to the buffer at <
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes returned. The <b>Status</b> field is set to <b>STATUS_SUCCESS</b>, or possibly to <b>STATUS_INSUFFICIENT_RESOURCES</b>.
 
 
@@ -70,13 +73,10 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddstor\ns-ntddstor-_storage_protocol_command.md">STORAGE_PROTOCOL_COMMAND</a>
-</dt>
-</dl>
+
  
 
  

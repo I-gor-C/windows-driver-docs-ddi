@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a858b32-408e-4926-9aba-44046b0266e2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetAccessRanges
+ms.keywords : video/VideoPortGetAccessRanges, display.videoportgetaccessranges, VideoPortGetAccessRanges, VideoPort_Functions_a0db7d5d-01be-4c3c-9ea2-2ebd9b8aaca3.xml, VideoPortGetAccessRanges function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortGetAccessRanges
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -66,7 +70,7 @@ Specifies the number of elements in the <i>RequestedResources</i> array.
 
 `OPTIONAL`
 
-
+TBD
 
 `NumAccessRanges`
 
@@ -127,35 +131,24 @@ If the <i>HwVidFindAdapter</i> function claims bus-relative access ranges and po
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
-</dt>
-<dt>
-<a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
-</dt>
-<dt>
-<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportsetbusdata.md">VideoPortSetBusData</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
-</dt>
-</dl>
+
+<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
+
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
+
+<a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
+
+<a href="..\video\nf-video-videoportsetbusdata.md">VideoPortSetBusData</a>
+
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+
+<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
+
+<a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
+
  
 
  

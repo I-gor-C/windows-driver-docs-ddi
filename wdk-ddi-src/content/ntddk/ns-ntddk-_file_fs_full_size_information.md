@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4a37bfed-cf8e-4c97-a9fe-a44d910bed92
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_FS_FULL_SIZE_INFORMATION, *PFILE_FS_FULL_SIZE_INFORMATION, FILE_FS_FULL_SIZE_INFORMATION
+ms.keywords : "*PFILE_FS_FULL_SIZE_INFORMATION, PFILE_FS_FULL_SIZE_INFORMATION, fileinformationstructures_7ba05d64-c04e-48cf-84f1-48ad8de5d35b.xml, ntddk/PFILE_FS_FULL_SIZE_INFORMATION, ifsk.file_fs_full_size_information, FILE_FS_FULL_SIZE_INFORMATION structure [Installable File System Drivers], PFILE_FS_FULL_SIZE_INFORMATION structure pointer [Installable File System Drivers], FILE_FS_FULL_SIZE_INFORMATION, ntddk/FILE_FS_FULL_SIZE_INFORMATION, _FILE_FS_FULL_SIZE_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_FS_FULL_SIZE_INFORMATION
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PFILE_FS_FULL_SIZE_INFORMATION, FILE_FS_FULL_SIZE_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : FILE_FS_FULL_SIZE_INFORMATION, *PFILE_FS_FULL_SIZE_INFORMATION
 ---
 
 # _FILE_FS_FULL_SIZE_INFORMATION structure
@@ -50,39 +54,43 @@ typedef struct _FILE_FS_FULL_SIZE_INFORMATION {
 
 ## Members
 
-        
-            `ActualAvailableAllocationUnits`
 
-            Total number of free allocation units on the volume.
-        
-            `BytesPerSector`
+`ActualAvailableAllocationUnits`
 
-            Number of bytes in each sector.
-        
-            `CallerAvailableAllocationUnits`
+Total number of free allocation units on the volume.
 
-            Total number of free allocation units on the volume that are available to the user associated with the calling thread. 
+`BytesPerSector`
+
+Number of bytes in each sector.
+
+`CallerAvailableAllocationUnits`
+
+Total number of free allocation units on the volume that are available to the user associated with the calling thread. 
 
 <b>Windows 2000 and later:</b> If per-user quotas are in use, this value may be less than the total number of free allocation units on the disk.
-        
-            `SectorsPerAllocationUnit`
 
-            Number of sectors in each allocation unit.
-        
-            `TotalAllocationUnits`
+`SectorsPerAllocationUnit`
 
-            Total number of allocation units on the volume that are available to the user associated with the calling thread. 
+Number of sectors in each allocation unit.
+
+`TotalAllocationUnits`
+
+Total number of allocation units on the volume that are available to the user associated with the calling thread. 
 
 <b>Microsoft Windows 2000 and later:</b> If per-user quotas are in use, this value may be less than the total number of allocation units on the disk.
 
-    ## Remarks
-        This information can be queried in either of the following ways: 
-
+## Remarks
+This information can be queried in either of the following ways: 
+<ul>
+<li>
 Call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>, passing FileFsFullSizeInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_FS_FULL_SIZE_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
+</li>
+<li>
 Create an IRP with major function code IRP_MJ_QUERY_VOLUME_INFORMATION. 
 
-No specific access rights are required to query this information. Thus this information is available as long as the volume is accessed through an open handle to the volume itself, or to a file or directory on the volume. 
+</li>
+</ul>No specific access rights are required to query this information. Thus this information is available as long as the volume is accessed through an open handle to the volume itself, or to a file or directory on the volume. 
 
 The size of the buffer passed in the <i>FileInformation</i> parameter to <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a> must be at least <b>sizeof</b> (FILE_FS_FULL_SIZE_INFORMATION). 
 
@@ -96,19 +104,14 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-</dt>
-<dt>
 <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-</dt>
-</dl>
+
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+
  
 
  

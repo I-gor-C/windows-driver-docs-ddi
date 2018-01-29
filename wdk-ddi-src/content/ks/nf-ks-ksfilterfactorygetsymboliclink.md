@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : db657820-75b7-49fe-904d-05f8bc45b8c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryGetSymbolicLink
+ms.keywords : ks/KsFilterFactoryGetSymbolicLink, avfunc_066ba440-b7d8-4c75-99bd-7b7cb38e4d70.xml, stream.ksfilterfactorygetsymboliclink, KsFilterFactoryGetSymbolicLink function [Streaming Media Devices], KsFilterFactoryGetSymbolicLink
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsFilterFactoryGetSymbolicLink
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -55,11 +59,11 @@ A pointer to a <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> str
 
 ## Return Value
 
-<b>KsFilterFactoryGetSymbolicLink</b> returns a pointer to a Unicode string containing the <a href="wdkgloss.s#wdkgloss.symbolic_link#wdkgloss.symbolic_link"><i>symbolic link</i></a> for the filter factory if the call is successful, and <b>NULL</b> if unsuccessful. <b>NULL</b> indicates that no device interfaces have been registered for <i>FilterFactory</i>.
+<b>KsFilterFactoryGetSymbolicLink</b> returns a pointer to a Unicode string containing the <a href="https://msdn.microsoft.com/5f6fec1a-1134-4765-81be-9b50939e5e66">symbolic link</a> for the filter factory if the call is successful, and <b>NULL</b> if unsuccessful. <b>NULL</b> indicates that no device interfaces have been registered for <i>FilterFactory</i>.
 
 ## Remarks
 
-If <i>FilterFactory</i> has no registered device interfaces, <b>KsFilterFactoryGetSymbolicLink</b> returns <b>NULL</b>.</p>
+If <i>FilterFactory</i> has no registered device interfaces, <b>KsFilterFactoryGetSymbolicLink</b> returns <b>NULL</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

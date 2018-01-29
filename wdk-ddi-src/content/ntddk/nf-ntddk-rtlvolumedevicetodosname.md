@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e25db70f-04bf-4fb1-8ff5-2beb4c825797
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlVolumeDeviceToDosName
+ms.keywords : RtlVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture], k109_a95aea8c-1156-4852-b4eb-38d2f141fcca.xml, RtlVolumeDeviceToDosName, ntddk/RtlVolumeDeviceToDosName, kernel.rtlvolumedevicetodosname
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Obsolete for Microsoft Windows XP and later versions
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlVolumeDeviceToDosName
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -68,7 +72,7 @@ Pointer to a Unicode string containing the MS-DOS path of the volume device obje
 
 The behavior of this routine is identical to that of <a href="..\ntddk\nf-ntddk-iovolumedevicetodosname.md">IoVolumeDeviceToDosName</a>. For more information about how to use this routine, see <b>IoVolumeDeviceToDosName</b>.
 
-Drivers that must work on older NT-based operating systems may use this routine. Drivers written for Windows XP and later must use <b>IoVolumeDeviceToDosName</b> instead.</p>
+Drivers that must work on older NT-based operating systems may use this routine. Drivers written for Windows XP and later must use <b>IoVolumeDeviceToDosName</b> instead.
 
 ## Requirements
 | &nbsp; | &nbsp; |

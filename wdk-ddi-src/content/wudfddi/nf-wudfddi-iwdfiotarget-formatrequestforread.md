@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8a1b61c8-8b85-4224-ae20-3788eb0babe4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTarget, IWDFIoTarget::FormatRequestForRead, FormatRequestForRead
+ms.keywords : IWDFIoTarget::FormatRequestForRead, wdf.iwdfiotarget_formatrequestforread, IWDFIoTarget interface, FormatRequestForRead method, wudfddi/IWDFIoTarget::FormatRequestForRead, umdf.iwdfiotarget_formatrequestforread, FormatRequestForRead method, IWDFIoTarget interface, FormatRequestForRead method, IWDFIoTarget, FormatRequestForRead, UMDFIoTargetObjectRef_49d4b6d7-0cd7-4d8a-9b16-7ecc89f82f1e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoTarget.FormatRequestForRead
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -78,9 +82,7 @@ A pointer to the device offset that is used for the read. This parameter is opti
 
 ## Return Value
 
-<b>FormatRequestForRead</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h. 
-
-For a code example of how to use the <b>FormatRequestForRead</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557021">IWDFDevice::CreateRequest</a>.
+<b>FormatRequestForRead</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
 
 ## Requirements
@@ -97,23 +99,16 @@ For a code example of how to use the <b>FormatRequestForRead</b> method, see <a 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-</dt>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-<dt>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
 <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-</dt>
-</dl>
+
  
 
  

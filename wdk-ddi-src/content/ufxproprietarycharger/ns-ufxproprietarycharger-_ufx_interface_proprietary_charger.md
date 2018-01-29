@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3E75EA87-FBF8-4FFB-9CD7-F8E1D5353D68
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _UFX_INTERFACE_PROPRIETARY_CHARGER, UFX_INTERFACE_PROPRIETARY_CHARGER, *PUFX_INTERFACE_PROPRIETARY_CHARGER
+ms.keywords : UFX_INTERFACE_PROPRIETARY_CHARGER, ufxproprietarycharger/UFX_INTERFACE_PROPRIETARY_CHARGER, PUFX_INTERFACE_PROPRIETARY_CHARGER, UFX_INTERFACE_PROPRIETARY_CHARGER structure [Buses], _UFX_INTERFACE_PROPRIETARY_CHARGER, *PUFX_INTERFACE_PROPRIETARY_CHARGER, buses.ufx_interface_proprietary_charger, PUFX_INTERFACE_PROPRIETARY_CHARGER structure pointer [Buses], ufxproprietarycharger/PUFX_INTERFACE_PROPRIETARY_CHARGER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UFX_INTERFACE_PROPRIETARY_CHARGER
-req.alt-loc : ufxproprietarycharger.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : UFX_INTERFACE_PROPRIETARY_CHARGER, *PUFX_INTERFACE_PROPRIETARY_CHARGER
 req.product : Windows 10 or later.
 ---
@@ -51,26 +55,26 @@ typedef struct _UFX_INTERFACE_PROPRIETARY_CHARGER {
 
 ## Members
 
-        
-            `InterfaceHeader`
 
-            The interface version number.
-        
-            `ProprietaryChargerAbortOperation`
+`InterfaceHeader`
 
-            A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_abort_operation.md">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.
-        
-            `ProprietaryChargerDetect`
+The interface version number.
 
-            A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_detect.md">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.
-        
-            `ProprietaryChargerResetOperation`
+`ProprietaryChargerAbortOperation`
 
-            A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_reset_operation.md">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.
-        
-            `ProprietaryChargerSetProperty`
+A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_abort_operation.md">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.
 
-            A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_set_property.md">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.
+`ProprietaryChargerDetect`
+
+A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_detect.md">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.
+
+`ProprietaryChargerResetOperation`
+
+A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_reset_operation.md">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.
+
+`ProprietaryChargerSetProperty`
+
+A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_set_property.md">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.
 
 
 ## Requirements
@@ -81,13 +85,10 @@ typedef struct _UFX_INTERFACE_PROPRIETARY_CHARGER {
 | **Minimum UMDF version** |  |
 | **Header** | ufxproprietarycharger.h (include Ufxproprietarycharger.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/05D2B46A-282C-4B75-9F5C-2FC0AF344AB9">USB filter driver for supporting proprietary chargers</a>
-</dt>
-</dl>
+
  
 
  

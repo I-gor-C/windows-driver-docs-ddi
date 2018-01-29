@@ -7,8 +7,8 @@ old-location : debugger\getfieldoffset.htm
 old-project : debugger
 ms.assetid : 3e5e782b-1a72-446d-9d15-c0f513f3440c
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : GetFieldOffset
+ms.date : 1/19/2018
+ms.keywords : wdbgexts/GetFieldOffset, debugger.getfieldoffset, WdbgExts_Ref_22c8a9bc-dec9-4eec-95c6-b265694b4385.xml, GetFieldOffset function [Windows Debugging], GetFieldOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFieldOffset
-req.alt-loc : wdbgexts.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXT_TDOP
 req.product : Windows 10 or later.
 ---

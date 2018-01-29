@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 78C8FFFE-8A80-4C92-B822-5C6675E2BC18
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _REFS_SMR_VOLUME_GC_PARAMETERS, *PREFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS
+ms.keywords : ntifs/PREFS_SMR_VOLUME_GC_PARAMETERS, *PREFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS, PREFS_SMR_VOLUME_GC_PARAMETERS, ntifs/REFS_SMR_VOLUME_GC_PARAMETERS, PREFS_SMR_VOLUME_GC_PARAMETERS structure pointer [Installable File System Drivers], _REFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS structure [Installable File System Drivers], ifsk.refs_smr_volume_gc_parameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : REFS_SMR_VOLUME_GC_PARAMETERS
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PREFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS"
 ---
 
@@ -52,34 +56,34 @@ typedef struct _REFS_SMR_VOLUME_GC_PARAMETERS {
 
 ## Members
 
-        
-            `Action`
 
-            Specifies the garbage collection action.
-        
-            `CompressionFormat`
+`Action`
 
-            Reserved for future use.
-        
-            `Flags`
+Specifies the garbage collection action.
 
-            Specifies the flags. Flags is currently ignored.
-        
-            `IoGranularity`
+`CompressionFormat`
 
-            Specifies the volume's granularity. <b>IoGranularity</b> is a multiple of the cluster size up to the Shingled Magnetic Recording (SMR) band size (256 MB).  Zero or non-multiple of cluster size will result in a <b>STATUS_INVALID_PARAMETERS</b> status.
-        
-            `Method`
+Reserved for future use.
 
-            Specifies the garbage collection method or strategy. Currently only <b>MsSmrGcMethodCompaction</b> is allowed.
-        
-            `Unused`
+`Flags`
 
-            Reserved for future use.
-        
-            `Version`
+Specifies the flags. Flags is currently ignored.
 
-            Specifies the current version of <b>REFS_SMR_VOLUME_GC_PARAMETERS</b>. Version is currently ignored but should be set to <b>REFS_SMR_VOLUME_GC_PARAMETERS_VERSION_V1</b>.
+`IoGranularity`
+
+Specifies the volume's granularity. <b>IoGranularity</b> is a multiple of the cluster size up to the Shingled Magnetic Recording (SMR) band size (256 MB).  Zero or non-multiple of cluster size will result in a <b>STATUS_INVALID_PARAMETERS</b> status.
+
+`Method`
+
+Specifies the garbage collection method or strategy. Currently only <b>MsSmrGcMethodCompaction</b> is allowed.
+
+`Unused`
+
+Reserved for future use.
+
+`Version`
+
+Specifies the current version of <b>REFS_SMR_VOLUME_GC_PARAMETERS</b>. Version is currently ignored but should be set to <b>REFS_SMR_VOLUME_GC_PARAMETERS_VERSION_V1</b>.
 
 
 ## Requirements
@@ -90,13 +94,10 @@ typedef struct _REFS_SMR_VOLUME_GC_PARAMETERS {
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/782542C4-CFC5-4BF7-AF38-3247A3AC6AB9">FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS</a>
-</dt>
-</dl>
+
  
 
  

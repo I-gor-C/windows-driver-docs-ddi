@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ABC856E4-557D-45FD-B3A9-3FAA60542343
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_PROCESSOR_IDLE_TYPE, PEP_PROCESSOR_IDLE_TYPE, *PPEP_PROCESSOR_IDLE_TYPE"
+ms.keywords : kernel.pep_processor_idle_type, *PPEP_PROCESSOR_IDLE_TYPE, pep_x/PEP_PROCESSOR_IDLE_TYPE, PepIdleTypePlatform, pep_x/PepIdleTypeMax, PEP_PROCESSOR_IDLE_TYPE enumeration [Kernel-Mode Driver Architecture], PepIdleTypeMax, pep_x/PepIdleTypeProcessor, PEP_PROCESSOR_IDLE_TYPE, pep_x/PepIdleTypePlatform, PepIdleTypeProcessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_PROCESSOR_IDLE_TYPE
-req.alt-loc : pep_x.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PEP_PROCESSOR_IDLE_TYPE, *PPEP_PROCESSOR_IDLE_TYPE
 ---
 
@@ -80,11 +84,8 @@ The <b>Type</b> member of the <a href="..\pep_x\ns-pep_x-_pep_processor_idle_con
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pep_x\ns-pep_x-_pep_processor_idle_constraints.md">PEP_PROCESSOR_IDLE_CONSTRAINTS</a>
-</dt>
-</dl>
+
  
 
  

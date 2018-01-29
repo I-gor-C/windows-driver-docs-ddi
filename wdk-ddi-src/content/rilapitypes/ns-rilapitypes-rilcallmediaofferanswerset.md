@@ -7,8 +7,8 @@ old-location : netvista\rilcallmediaofferanswerset_2.htm
 old-project : netvista
 ms.assetid : 272e2bf5-9d84-407d-9126-41bcb4f43d91
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILCALLMEDIAOFFERANSWERSET, *LPRILCALLMEDIAOFFERANSWERSET, RILCALLMEDIAOFFERANSWERSET
+ms.date : 1/18/2018
+ms.keywords : rilapitypes/RILCALLMEDIAOFFERANSWERSET, *LPRILCALLMEDIAOFFERANSWERSET, RILCALLMEDIAOFFERANSWERSET structure [Network Drivers Starting with Windows Vista], netvista.rilcallmediaofferanswerset_2, RILCALLMEDIAOFFERANSWERSET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILCALLMEDIAOFFERANSWERSET
-req.alt-loc : rilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILCALLMEDIAOFFERANSWERSET, RILCALLMEDIAOFFERANSWERSET"
 req.product : Windows 10 or later.
 ---
@@ -50,22 +54,22 @@ typedef struct _RILCALLMEDIAOFFERANSWERSET {
 
 ## Members
 
-        
-            `cbSize`
 
-            
-        
-            `dwNumberOfItems`
+`cbSize`
 
-            
-        
-            `dwType`
 
-            
-        
-            `stOfferAnswer`
 
-            
+`dwNumberOfItems`
+
+
+
+`dwType`
+
+
+
+`stOfferAnswer`
+
+
 
 
 ## Requirements

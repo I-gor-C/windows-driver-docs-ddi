@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ca925b3c-8141-419d-99a1-43764ec07315
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords : display.dxgk_vidpntopology_interface_pfnenumpathtargetsfromsource, pfnEnumPathTargetsFromSource callback function [Display Devices], pfnEnumPathTargetsFromSource, DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE, DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE, d3dkmddi/pfnEnumPathTargetsFromSource, VidPnFunctions_1d5b570a-a3c6-444f-884f-cbd7228f64c9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnEnumPathTargetsFromSource
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -74,15 +78,45 @@ NTSTATUS DxgkddiVidpntopologyEnumpathtargetsfromsource(
 ## Return Value
 
 The <b>pfnEnumPathTargetsFromSource</b> function returns one of the following values:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The function succeeded.
+</dl>
+</td>
+<td width="60%">
+The function succeeded.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDPN_TOPOLOGY</b></dt>
-</dl>The handle supplied in <i>hVidPnTopology </i>was invalid.
+</dl>
+</td>
+<td width="60%">
+The handle supplied in <i>hVidPnTopology </i>was invalid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The pointer supplied in <i>pVidPnTargetId</i> was in valid.
+</dl>
+</td>
+<td width="60%">
+The pointer supplied in <i>pVidPnTargetId</i> was in valid.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -118,14 +152,10 @@ The D3DDDI_VIDEO_PRESENT_SOURCE_ID and D3DDDI_VIDEO_PRESENT_TARGET_ID data types
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpathsfromsource.md">pfnGetNumPathsFromSource</a>
-</dt>
-<dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getpathsourcefromtarget.md">pfnGetPathSourceFromTarget</a>
-</dt>
-</dl>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpathsfromsource.md">pfnGetNumPathsFromSource</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 55d63dcc-7728-4982-ad1c-e1ca40cc941e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _FEATURE_DATA_CD_READ, FEATURE_DATA_CD_READ, *PFEATURE_DATA_CD_READ
+ms.keywords : PFEATURE_DATA_CD_READ structure pointer [Storage Devices], *PFEATURE_DATA_CD_READ, FEATURE_DATA_CD_READ, ntddmmc/FEATURE_DATA_CD_READ, PFEATURE_DATA_CD_READ, FEATURE_DATA_CD_READ structure [Storage Devices], storage.feature_data_cd_read, structs-CD-ROM_8b31a56d-f370-4b85-8f37-a88041276a20.xml, _FEATURE_DATA_CD_READ, ntddmmc/PFEATURE_DATA_CD_READ
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FEATURE_DATA_CD_READ
-req.alt-loc : ntddmmc.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : FEATURE_DATA_CD_READ, *PFEATURE_DATA_CD_READ
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFEATURE_DATA_CD_READ, FEATURE_DATA_CD_READ"
 ---
 
 # _FEATURE_DATA_CD_READ structure
@@ -51,33 +55,33 @@ typedef struct _FEATURE_DATA_CD_READ {
 
 ## Members
 
-        
-            `C2ErrorData`
 
-            Indicates, when set to 1, that the device supports the C2 error pointers as described in the <i>MMC-3 </i>specification. When set to zero, it indicates that the device does not support C2 error pointers.
-        
-            `CDText`
+`C2ErrorData`
 
-            Indicates, when set to 1, that the device supports format code 0x05 of the READ/TOC/PMA/ATIP command, as defined in the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. When set to zero, CD-Text is not supported.
-        
-            `DigitalAudioPlay`
+Indicates, when set to 1, that the device supports the C2 error pointers as described in the <i>MMC-3 </i>specification. When set to zero, it indicates that the device does not support C2 error pointers.
 
-            
-        
-            `Header`
+`CDText`
 
-            Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
-        
-            `Reserved01`
+Indicates, when set to 1, that the device supports format code 0x05 of the READ/TOC/PMA/ATIP command, as defined in the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. When set to zero, CD-Text is not supported.
 
-            
-        
-            `Reserved2`
+`DigitalAudioPlay`
 
-            Reserved.
 
-    ## Remarks
-        This structure holds data for the feature named "CD Read" by the <i>MMC-3 </i>specification. Devices that support this feature can read CD-specific information from the media and can read user data from all types of CD blocks.
+
+`Header`
+
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+
+`Reserved01`
+
+
+
+`Reserved2`
+
+Reserved.
+
+## Remarks
+This structure holds data for the feature named "CD Read" by the <i>MMC-3 </i>specification. Devices that support this feature can read CD-specific information from the media and can read user data from all types of CD blocks.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,16 +91,12 @@ typedef struct _FEATURE_DATA_CD_READ {
 | **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-</dt>
-<dt>
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-</dt>
-</dl>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
  
 
  

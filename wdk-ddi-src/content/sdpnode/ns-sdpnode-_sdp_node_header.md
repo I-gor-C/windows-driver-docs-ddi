@@ -8,19 +8,17 @@ old-project : bltooth
 ms.assetid : 2c756db7-b7a9-493a-8fb1-8bbc741f8c63
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _SDP_NODE_HEADER, *PSDP_NODE_HEADER, SDP_NODE_HEADER
+ms.keywords : "*PSDP_NODE_HEADER, _SDP_NODE_HEADER, bltooth.sdp_node_header, sdpnode/SDP_NODE_HEADER, PSDP_NODE_HEADER, SDP_NODE_HEADER structure [Bluetooth Devices], SDP_NODE_HEADER, PSDP_NODE_HEADER structure pointer [Bluetooth Devices], sdpnode/PSDP_NODE_HEADER, bth_structs_9fc0ef9d-c505-4cd8-8ea7-78988215c68a.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : sdpnode.h
 req.include-header : Sdpnode.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions: Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SDP_NODE_HEADER
-req.alt-loc : sdpnode.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <= PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSDP_NODE_HEADER, SDP_NODE_HEADER"
 req.product : Windows 10 or later.
 ---
@@ -50,29 +54,29 @@ typedef struct _SDP_NODE_HEADER {
 
 ## Members
 
-        
-            `Link`
 
-            A linked-list structure that is used to link peer SDP record nodes when this structure is part of
+`Link`
+
+A linked-list structure that is used to link peer SDP record nodes when this structure is part of
      an 
      <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure. This member is used to link the
      first child of the node when the header is 
      <b>u.sequence</b> or 
      <b>u.alternative</b> part of the individual SDP_NODE structure.
-        
-            `SpecificType`
 
-            Extra information about the data type associated with the 
+`SpecificType`
+
+Extra information about the data type associated with the 
      <b>SDP_NODE_DATA</b> union that is associated with the SDP record element.
-        
-            `Type`
 
-            The data type of the 
+`Type`
+
+The data type of the 
      <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a> union held in the 
      <b>u</b> member of the SDP_NODE structure.
 
-    ## Remarks
-        Each SDP_NODE structure in the tree representation of an SDP record contains a SDP_NODE_HEADER
+## Remarks
+Each SDP_NODE structure in the tree representation of an SDP record contains a SDP_NODE_HEADER
     structure and an 
     <b>SDP_NODE_DATA</b> union.
 
@@ -95,22 +99,16 @@ The header specifies the type of data. Driver developers can access links to pee
 | **Minimum UMDF version** |  |
 | **Header** | sdpnode.h (include Sdpnode.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
-</dt>
-<dt>
-<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
-</dt>
-</dl>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
  
 
  

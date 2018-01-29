@@ -7,8 +7,8 @@ old-location : image\wias_assert.htm
 old-project : image
 ms.assetid : 74dac8e1-a909-4c22-a650-af8a43421c5c
 ms.author : windowsdriverdev
-ms.date : 1/17/2018
-ms.keywords : WIAS_ASSERT
+ms.date : 1/18/2018
+ms.keywords : image.wias_assert, WIAS_ASSERT macro [Imaging Devices], wiamdef/WIAS_ASSERT, IWiaLog_91198444-77d8-4f41-957b-de4c3262988a.xml, WIAS_ASSERT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WIAS_ASSERT
-req.alt-loc : wiamdef.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wiamdef.h
 req.dll : 
 req.irql : 
-req.typenames : "*PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product : Windows 10 or later.
 ---
 
@@ -52,11 +56,11 @@ VOID WIAS_ASSERT(
 
 `x`
 
-
+TBD
 
 `y`
 
-
+TBD
 
 
 ## Return Value
@@ -85,19 +89,14 @@ To enable asserts in free builds, drivers must define the WIA_DEBUG macro by add
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wiamdef\nf-wiamdef-wias_error.md">WIAS_ERROR</a>
-</dt>
-<dt>
+
 <a href="..\wiamdef\nf-wiamdef-wias_hresult.md">WIAS_HRESULT</a>
-</dt>
-<dt>
+
 <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ASSERT macro%20 RELEASE:%20(1/17/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ASSERT macro%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

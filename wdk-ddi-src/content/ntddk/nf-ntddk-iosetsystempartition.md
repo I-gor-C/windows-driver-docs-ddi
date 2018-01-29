@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f1606881-da8b-4034-bbdf-53c75e594032
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetSystemPartition
+ms.keywords : ntddk/IoSetSystemPartition, k104_b0beef8e-9d45-4125-a722-0a7189876308.xml, IoSetSystemPartition routine [Kernel-Mode Driver Architecture], kernel.iosetsystempartition, IoSetSystemPartition
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoSetSystemPartition
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -59,7 +63,7 @@ STATUS_SUCCESS if the boot partition can be set, or an error code on failure.
 
 ## Remarks
 
-The specified partition must contain the boot loader.</p>
+The specified partition must contain the boot loader.
 
 ## Requirements
 | &nbsp; | &nbsp; |

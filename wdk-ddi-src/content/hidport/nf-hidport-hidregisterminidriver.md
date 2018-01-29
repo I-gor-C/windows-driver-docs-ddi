@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 521928f8-6434-443a-83f0-7e8e00c756b5
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidRegisterMinidriver
+ms.keywords : HidRegisterMinidriver routine [Human Input Devices], HidRegisterMinidriver, hidport/HidRegisterMinidriver, hid.hidregisterminidriver, hidfunc_83ef5fb3-46fc-427e-a9de-8aa554ef26b6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Wind
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HidRegisterMinidriver
-req.alt-loc : Hid.lib,Hid.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Hid.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 
@@ -56,15 +60,45 @@ Pointer to a caller-allocated buffer that contains an initialized <a href="..\hi
 ## Return Value
 
 <b>HidRegisterMinidriver</b> returns one of the following NTSTATUS codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>Indicates that the routine completed without error and the minidriver is now registered with the HID class driver.
+</dl>
+</td>
+<td width="60%">
+Indicates that the routine completed without error and the minidriver is now registered with the HID class driver.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>Indicates that there was insufficient memory for the system to register the minidriver.
+</dl>
+</td>
+<td width="60%">
+Indicates that there was insufficient memory for the system to register the minidriver.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_REVISION_MISMATCH</b></dt>
-</dl>Indicates that the HID revision number provided in <i>MinidriverRegistration-&gt;</i>Revision is not supported by this version of the HID class driver.
+</dl>
+</td>
+<td width="60%">
+Indicates that the HID revision number provided in <i>MinidriverRegistration-&gt;</i>Revision is not supported by this version of the HID class driver.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -86,11 +120,8 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a>
-</dt>
-</dl>
+
  
 
  

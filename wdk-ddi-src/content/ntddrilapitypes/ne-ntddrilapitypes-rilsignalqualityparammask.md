@@ -7,8 +7,8 @@ old-location : netvista\rilsignalqualityparammask.htm
 old-project : netvista
 ms.assetid : cf6727dc-e6f3-418e-bee4-e372dcc29a66
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RILSIGNALQUALITYPARAMMASK, RILSIGNALQUALITYPARAMMASK
+ms.date : 1/18/2018
+ms.keywords : RILSIGNALQUALITYPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_SQ_SYSTEMTYPE, RIL_PARAM_SQ_SYSTEMTYPE, RIL_PARAM_SQ_NUMSIGNALBARS, netvista.rilsignalqualityparammask, RIL_PARAM_SQ_SIGNALSTRENGTH, ntddrilapitypes/RIL_PARAM_SQ_NUMSIGNALBARS, RIL_PARAM_SQ_ALL, ntddrilapitypes/RIL_PARAM_SQ_SIGNALSTRENGTH, RIL_PARAM_SQ_SNR, ntddrilapitypes/RIL_PARAM_SQ_SNR, RILSIGNALQUALITYPARAMMASK, ntddrilapitypes/RIL_PARAM_SQ_ALL, ntddrilapitypes/RILSIGNALQUALITYPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RILSIGNALQUALITYPARAMMASK
-req.alt-loc : ntddrilapitypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : RILSIGNALQUALITYPARAMMASK
 ---
 
@@ -54,6 +58,11 @@ typedef enum _RILSIGNALQUALITYPARAMMASK {
 
 <tr>
 <td>RIL_PARAM_SQ_ALL</td>
+<td></td>
+</tr>
+
+<tr>
+<td>RIL_PARAM_SQ_EXECUTOR</td>
 <td></td>
 </tr>
 

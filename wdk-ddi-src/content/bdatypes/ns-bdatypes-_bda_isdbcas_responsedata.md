@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 70BD9007-6CA4-49EC-8A30-3544FE62C18E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _BDA_ISDBCAS_RESPONSEDATA, *PBDA_ISDBCAS_RESPONSEDATA, BDA_ISDBCAS_RESPONSEDATA
+ms.keywords : stream.bda_isdbcas_responsedata, BDA_ISDBCAS_RESPONSEDATA, PBDA_ISDBCAS_RESPONSEDATA, bdatypes/BDA_ISDBCAS_RESPONSEDATA, bdatypes/PBDA_ISDBCAS_RESPONSEDATA, PBDA_ISDBCAS_RESPONSEDATA structure pointer [Streaming Media Devices], *PBDA_ISDBCAS_RESPONSEDATA, BDA_ISDBCAS_RESPONSEDATA structure [Streaming Media Devices], _BDA_ISDBCAS_RESPONSEDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : BDA_ISDBCAS_RESPONSEDATA
-req.alt-loc : Bdatypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBDA_ISDBCAS_RESPONSEDATA, BDA_ISDBCAS_RESPONSEDATA"
 ---
 
@@ -50,26 +54,26 @@ typedef struct _BDA_ISDBCAS_RESPONSEDATA {
 
 ## Members
 
-        
-            `argbIsdbCommandData`
 
-            
-        
-            `lResult`
+`argbIsdbCommandData`
 
-            
-        
-            `ulIsdbDataSize`
 
-            
-        
-            `ulIsdbStatus`
 
-            
-        
-            `ulRequestID`
+`lResult`
 
-            
+
+
+`ulIsdbDataSize`
+
+
+
+`ulIsdbStatus`
+
+
+
+`ulRequestID`
+
+
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ebe9bec3-6c38-48d8-b9af-03aadbc09d98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeQueryAdapterStatus
+ms.keywords : rxref_0813f428-95ae-47df-969c-c00563f3b3c8.xml, RxCeQueryAdapterStatus function [Installable File System Drivers], RxCeQueryAdapterStatus, rxce/RxCeQueryAdapterStatus, ifsk.rxcequeryadapterstatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxCeQueryAdapterStatus
-req.alt-loc : rxce.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
@@ -62,15 +66,45 @@ On input, this parameter contains a pointer to caller-allocated buffer to hold t
 ## Return Value
 
 <b>RxCeQueryAdapterStatus</b> returns STATUS_SUCCESS on success or one of the following error codes on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_ADDRESS_NOT_ASSOCIATED</b></dt>
-</dl>An adapter address is not associated with the RDBSS transport. 
+</dl>
+</td>
+<td width="60%">
+An adapter address is not associated with the RDBSS transport. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>The allocation of nonpaged pool memory needed by this routine failed. 
+</dl>
+</td>
+<td width="60%">
+The allocation of nonpaged pool memory needed by this routine failed. 
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>pTransport</i> parameter passed to this routine was invalid.
+</dl>
+</td>
+<td width="60%">
+The <i>pTransport</i> parameter passed to this routine was invalid. 
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -92,15 +126,12 @@ On input, this parameter contains a pointer to caller-allocated buffer to hold t
 
 ## See Also
 
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=138885">ADAPTER_STATUS</a></dt>
-<dt>
 <a href="..\rxce\nf-rxce-rxcequeryinformation.md">RxCeQueryInformation</a>
-</dt>
-<dt>
+
 <a href="..\rxce\nf-rxce-rxcequerytransportinformation.md">RxCeQueryTransportInformation</a>
-</dt>
-</dl>
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=138885">ADAPTER_STATUS</a>
+
  
 
  

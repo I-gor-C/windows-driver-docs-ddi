@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 40d0f5bf-609e-4609-8785-261b087fa372
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_REL_TIMEOUT_IN_SEC
+ms.keywords : WDF_REL_TIMEOUT_IN_SEC function, kmdf.wdf_rel_timeout_in_sec, WDF_REL_TIMEOUT_IN_SEC, wdf.wdf_rel_timeout_in_sec, wdfcore/WDF_REL_TIMEOUT_IN_SEC, DFTimerObjectRef_2c5d8c96-3c4d-484d-9d60-656c4c4a7cc5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_REL_TIMEOUT_IN_SEC
-req.alt-loc : None,None.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : None
 req.dll : 
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
 req.product : Windows 10 or later.
 ---
@@ -64,8 +68,6 @@ The number of seconds to convert.
 
 A relative time is a time value that is relative to the current system time. For example, if a caller passes a relative time value of five seconds to a function that accepts a time-out value, the function will time out five seconds after it is called.
 
-The following code example specifies a relative timeout value of 5 seconds for an I/O request.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -80,14 +82,10 @@ The following code example specifies a relative timeout value of 5 seconds for a
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfcore\nf-wdfcore-wdf_abs_timeout_in_sec.md">WDF_ABS_TIMEOUT_IN_SEC</a>
-</dt>
-<dt>
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
-</dt>
-</dl>
+
+<a href="..\wdfcore\nf-wdfcore-wdf_abs_timeout_in_sec.md">WDF_ABS_TIMEOUT_IN_SEC</a>
+
  
 
  

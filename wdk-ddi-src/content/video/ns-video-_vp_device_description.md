@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a605e37d-56cd-4d72-a713-314e20c2f630
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION
+ms.keywords : "*PVP_DEVICE_DESCRIPTION, PVP_DEVICE_DESCRIPTION, video/VP_DEVICE_DESCRIPTION, _VP_DEVICE_DESCRIPTION, display.vp_device_description, PVP_DEVICE_DESCRIPTION structure pointer [Display Devices], video/PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION structure [Display Devices], VP_DEVICE_DESCRIPTION, Video_Structs_056eb332-bc5b-4b1f-8219-91a418dd628f.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VP_DEVICE_DESCRIPTION
-req.alt-loc : video.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION"
 req.product : Windows 10 or later.
 ---
@@ -50,25 +54,25 @@ typedef struct _VP_DEVICE_DESCRIPTION {
 
 ## Members
 
-        
-            `Dma32BitAddresses`
 
-            If <b>TRUE</b>, specifies that 32-bit addresses are being used for DMA operations.
-        
-            `Dma64BitAddresses`
+`Dma32BitAddresses`
 
-            If <b>TRUE</b>, specifies that 64-bit addresses are being used for DMA operations.
-        
-            `MaximumLength`
+If <b>TRUE</b>, specifies that 32-bit addresses are being used for DMA operations.
 
-            Specifies the maximum number of bytes the device can handle in each DMA operation.
-        
-            `ScatterGather`
+`Dma64BitAddresses`
 
-            If <b>TRUE</b>, indicates that the device supports scatter/gather DMA. If <b>FALSE</b>, the device does not support scatter/gather DMA.
+If <b>TRUE</b>, specifies that 64-bit addresses are being used for DMA operations.
 
-    ## Remarks
-        This structure is available in Windows XP and later.</p>
+`MaximumLength`
+
+Specifies the maximum number of bytes the device can handle in each DMA operation.
+
+`ScatterGather`
+
+If <b>TRUE</b>, indicates that the device supports scatter/gather DMA. If <b>FALSE</b>, the device does not support scatter/gather DMA.
+
+## Remarks
+This structure is available in Windows XP and later.
 
 ## Requirements
 | &nbsp; | &nbsp; |

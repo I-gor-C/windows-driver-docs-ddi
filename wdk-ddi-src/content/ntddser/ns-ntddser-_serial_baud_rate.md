@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 1534B7AC-8968-4AE2-A871-D8F4D4E45CA1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERIAL_BAUD_RATE, SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE
+ms.keywords : PSERIAL_BAUD_RATE structure pointer [Serial Ports], PSERIAL_BAUD_RATE, SERIAL_BAUD_RATE structure [Serial Ports], SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE, serports.serial_baud_rate, _SERIAL_BAUD_RATE, ntddser/PSERIAL_BAUD_RATE, ntddser/SERIAL_BAUD_RATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SERIAL_BAUD_RATE
-req.alt-loc : Ntddser.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE
 ---
 
@@ -46,13 +50,13 @@ typedef struct _SERIAL_BAUD_RATE {
 
 ## Members
 
-        
-            `BaudRate`
 
-            The baud rate. This parameter specifies the number of bits per second that a serial port is currently configured to transmit or receive. For example, a <b>BaudRate</b> value of 115200 indicates that the port is configured to transfer 115,200 bits per second.
+`BaudRate`
 
-    ## Remarks
-        The <a href="..\ntddser\ni-ntddser-ioctl_serial_get_baud_rate.md">IOCTL_SERIAL_GET_BAUD_RATE</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a> I/O control requests use the <b>SERIAL_BAUD_RATE</b> structure to specify the baud rate of a serial port. The <b>IOCTL_SERIAL_SET_BAUD_RATE</b> request configures a serial port to operate at a specified baud rate. The <b>IOCTL_SERIAL_GET_BAUD_RATE</b> request queries a serial port for the baud rate that it is currently configured to operate at.
+The baud rate. This parameter specifies the number of bits per second that a serial port is currently configured to transmit or receive. For example, a <b>BaudRate</b> value of 115200 indicates that the port is configured to transfer 115,200 bits per second.
+
+## Remarks
+The <a href="..\ntddser\ni-ntddser-ioctl_serial_get_baud_rate.md">IOCTL_SERIAL_GET_BAUD_RATE</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a> I/O control requests use the <b>SERIAL_BAUD_RATE</b> structure to specify the baud rate of a serial port. The <b>IOCTL_SERIAL_SET_BAUD_RATE</b> request configures a serial port to operate at a specified baud rate. The <b>IOCTL_SERIAL_GET_BAUD_RATE</b> request queries a serial port for the baud rate that it is currently configured to operate at.
 
 For more information about some of the possible baud rates that a serial controller driver might support, see the description of the <b>MaxBaud</b> member in <a href="..\ntddser\ns-ntddser-_serial_commprop.md">SERIAL_COMMPROP</a>.
 
@@ -64,19 +68,14 @@ For more information about some of the possible baud rates that a serial control
 | **Minimum UMDF version** |  |
 | **Header** | ntddser.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_get_baud_rate.md">IOCTL_SERIAL_GET_BAUD_RATE</a>
-</dt>
-<dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a>
-</dt>
-<dt>
 <a href="..\ntddser\ns-ntddser-_serial_commprop.md">SERIAL_COMMPROP</a>
-</dt>
-</dl>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_get_baud_rate.md">IOCTL_SERIAL_GET_BAUD_RATE</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a>
+
  
 
  

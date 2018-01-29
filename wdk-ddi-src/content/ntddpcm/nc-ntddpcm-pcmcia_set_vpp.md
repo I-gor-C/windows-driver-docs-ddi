@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : 63c34784-6ea5-49e5-8ee7-79b70e5137f7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PAR_SET_INFORMATION, PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
+ms.keywords : PCMCIA.pcmcia_set_vpp, SetVpp callback function [Buses], SetVpp, PCMCIA_SET_VPP, PCMCIA_SET_VPP, ntddpcm/SetVpp, memcdref_fe05cf85-9e4b-4267-9214-b8809e42cd5a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SetVpp
-req.alt-loc : ntddpcm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL (See Remarks section.)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
 ---
 
@@ -87,14 +91,10 @@ Callers of this routine can run at IRQL &lt;= DISPATCH_LEVEL. To maintain overal
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
-</dt>
-</dl>
+
  
 
  

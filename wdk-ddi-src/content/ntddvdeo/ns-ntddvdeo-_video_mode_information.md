@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aac658d9-b90a-4724-9dc4-af3a561f64bd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _VIDEO_MODE_INFORMATION, VIDEO_MODE_INFORMATION, *PVIDEO_MODE_INFORMATION
+ms.keywords : VIDEO_MODE_INFORMATION, *PVIDEO_MODE_INFORMATION, ntddvdeo/PVIDEO_MODE_INFORMATION, VIDEO_MODE_INFORMATION structure [Display Devices], PVIDEO_MODE_INFORMATION, Video_Structs_76f182b8-be55-42d0-948f-29e05e956895.xml, PVIDEO_MODE_INFORMATION structure pointer [Display Devices], _VIDEO_MODE_INFORMATION, display.video_mode_information, ntddvdeo/VIDEO_MODE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VIDEO_MODE_INFORMATION
-req.alt-loc : ntddvdeo.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_MODE_INFORMATION, *PVIDEO_MODE_INFORMATION
 ---
 
@@ -65,11 +69,10 @@ typedef struct _VIDEO_MODE_INFORMATION {
 
 ## Members
 
-        
-            `AttributeFlags`
 
-            Is a set of flags indicating certain behavior for the device. The flags and their meanings are shown in the following table.
+`AttributeFlags`
 
+Is a set of flags indicating certain behavior for the device. The flags and their meanings are shown in the following table.
 <table>
 <tr>
 <th>Flag Name</th>
@@ -91,85 +94,233 @@ VIDEO_MODE_COLOR
 
 </td>
 <td>
-        
-            `BitsPerPlane`
 
-            Specifies the number of bits per pixel per plane.
-        
-            `BlueMask`
+<dl>
+<dt>0 = Mono-compatible</dt>
+<dt>1 = Color</dt>
+</dl>
 
-            Is the blue color mask for a device with direct color modes. For example, to indicate that bits 10 through 14 are to be used for blue, use the value 0x7C00.
-        
-            `DriverSpecificAttributeFlags`
 
-            Is a set of flags indicating certain behavior for the device. These private flags are defined in the miniport driver, and are for the use by the miniport and display drivers only.
-        
-            `Frequency`
+</td>
+</tr>
+<tr>
+<td>
+VIDEO_MODE_GRAPHICS
 
-            Specifies the screen refresh rate, in Hertz.
-        
-            `GreenMask`
+</td>
+<td>
+0x0002
 
-            Is the green color mask for a device with direct color modes. For example, to indicate that bits 5 through 9 are to be used for green, use the value 0x03E0.
-        
-            `Length`
+</td>
+<td>
+1
 
-            Specifies the length, in bytes, of this structure. A miniport driver can use this value to determine the version of this structure.
-        
-            `ModeIndex`
+</td>
+<td>
 
-            Specifies the index of the particular mode to be used in a call to the miniport driver.
-        
-            `NumberBlueBits`
+<dl>
+<dt>0 = Text mode</dt>
+<dt>1 = Graphics</dt>
+</dl>
 
-            Specifies the number of bits in the blue DAC.
-        
-            `NumberGreenBits`
 
-            Specifies the number of bits in the green DAC.
-        
-            `NumberOfPlanes`
+</td>
+</tr>
+<tr>
+<td>
+VIDEO_MODE_PALETTE_DRIVEN
 
-            Specifies the number of separate planes combined by the device.
-        
-            `NumberRedBits`
+</td>
+<td>
+0x0004
 
-            Specifies the number of bits in the red DAC.
-        
-            `RedMask`
+</td>
+<td>
+2
 
-            Is the red color mask for a device with direct color modes. For example, to indicate that bits 0 through 4 are to be used for red, use the value 0x001F.
-        
-            `ScreenStride`
+</td>
+<td>
 
-            Specifies the number of bytes between the start of one scan line and the next.
-        
-            `VideoMemoryBitmapHeight`
+<dl>
+<dt>0 = Colors are direct</dt>
+<dt>1 = Colors are indexed to a <a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">palette</a></dt>
+</dl>
 
-            Specifies the height, in pixels, of the video memory bitmap.
-        
-            `VideoMemoryBitmapWidth`
 
-            Specifies the width, in pixels, of the video memory bitmap.
-        
-            `VisScreenHeight`
+</td>
+</tr>
+<tr>
+<td>
+VIDEO_MODE_MANAGED_PALETTE
 
-            Specifies the number of visible lines (or scan lines) on the screen.
-        
-            `VisScreenWidth`
+</td>
+<td>
+0x0008
 
-            Specifies the number of visible pixels on one horizontal scan line.
-        
-            `XMillimeter`
+</td>
+<td>
+3
 
-            Specifies the width, in millimeters, of the active region on the output device.
-        
-            `YMillimeter`
+</td>
+<td>
 
-            Specifies the height, in millimeters, of the active region on the output device.
+<dl>
+<dt>0 = Palette is fixed (must be queried from miniport driver)</dt>
+<dt>1 = Palette is settable</dt>
+</dl>
 
-    ## Remarks
-        The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_avail_modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a> request, with each structure containing information about one mode of the adapter. The miniport driver returns one VIDEO_MODE_INFORMATION structure that contains information about the adapter's current mode in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_current_mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a> request.
+
+</td>
+</tr>
+<tr>
+<td>
+VIDEO_MODE_INTERLACED
+
+</td>
+<td>
+0x0010
+
+</td>
+<td>
+4
+
+</td>
+<td>
+
+<dl>
+<dt>0 = Non-interlaced mode</dt>
+<dt>1 = Interlaced mode</dt>
+</dl>
+
+
+</td>
+</tr>
+<tr>
+<td>
+VIDEO_MODE_NO_OFF_SCREEN
+
+</td>
+<td>
+0x0020
+
+</td>
+<td>
+5
+
+</td>
+<td>
+
+<dl>
+<dt>0 = Offscreen memory is available</dt>
+<dt>1 = Offscreen memory cannot be used to store information</dt>
+</dl>
+
+
+</td>
+</tr>
+<tr>
+<td>
+VIDEO_MODE_NO_64_BIT_ACCESS
+
+</td>
+<td>
+0x0040
+
+</td>
+<td>
+6
+
+</td>
+<td>
+
+<dl>
+<dt>0 = 64-bit memory writes to <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">frame buffer</a> are handled properly</dt>
+<dt>1 = 64-bit memory writes to frame buffer are not handled</dt>
+</dl>
+
+
+</td>
+</tr>
+</table>
+
+`BitsPerPlane`
+
+Specifies the number of bits per pixel per plane.
+
+`BlueMask`
+
+Is the blue color mask for a device with direct color modes. For example, to indicate that bits 10 through 14 are to be used for blue, use the value 0x7C00.
+
+`DriverSpecificAttributeFlags`
+
+Is a set of flags indicating certain behavior for the device. These private flags are defined in the miniport driver, and are for the use by the miniport and display drivers only.
+
+`Frequency`
+
+Specifies the screen refresh rate, in Hertz.
+
+`GreenMask`
+
+Is the green color mask for a device with direct color modes. For example, to indicate that bits 5 through 9 are to be used for green, use the value 0x03E0.
+
+`Length`
+
+Specifies the length, in bytes, of this structure. A miniport driver can use this value to determine the version of this structure.
+
+`ModeIndex`
+
+Specifies the index of the particular mode to be used in a call to the miniport driver.
+
+`NumberBlueBits`
+
+Specifies the number of bits in the blue DAC.
+
+`NumberGreenBits`
+
+Specifies the number of bits in the green DAC.
+
+`NumberOfPlanes`
+
+Specifies the number of separate planes combined by the device.
+
+`NumberRedBits`
+
+Specifies the number of bits in the red DAC.
+
+`RedMask`
+
+Is the red color mask for a device with direct color modes. For example, to indicate that bits 0 through 4 are to be used for red, use the value 0x001F.
+
+`ScreenStride`
+
+Specifies the number of bytes between the start of one scan line and the next.
+
+`VideoMemoryBitmapHeight`
+
+Specifies the height, in pixels, of the video memory bitmap.
+
+`VideoMemoryBitmapWidth`
+
+Specifies the width, in pixels, of the video memory bitmap.
+
+`VisScreenHeight`
+
+Specifies the number of visible lines (or scan lines) on the screen.
+
+`VisScreenWidth`
+
+Specifies the number of visible pixels on one horizontal scan line.
+
+`XMillimeter`
+
+Specifies the width, in millimeters, of the active region on the output device.
+
+`YMillimeter`
+
+Specifies the height, in millimeters, of the active region on the output device.
+
+## Remarks
+The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_avail_modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a> request, with each structure containing information about one mode of the adapter. The miniport driver returns one VIDEO_MODE_INFORMATION structure that contains information about the adapter's current mode in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_current_mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a> request.
 
 
 <dl>
@@ -192,19 +343,14 @@ VIDEO_MODE_COLOR
 | **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_avail_modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_current_mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a>
-</dt>
-</dl>
+
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_avail_modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1EBEBD5D-E0E5-48A3-8CDA-C336575E53C6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortPoFxPowerControl
+ms.keywords : StorPortPoFxPowerControl routine [Storage Devices], storage.storportpofxpowercontrol, StorPortPoFxPowerControl, storport/StorPortPoFxPowerControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : StorPortPoFxPowerControl
-req.alt-loc : storport.lib,storport.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Storport.lib
 req.dll : 
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : STOR_SPINLOCK
 req.product : Windows 10 or later.
 ---
@@ -61,7 +65,7 @@ A pointer to the hardware device extension for the host bus adapter (HBA). This 
 
 `Address`
 
-
+TBD
 
 `PowerControlCode`
 
@@ -91,12 +95,30 @@ A pointer to a location into which the routine writes the number of bytes of dat
 ## Return Value
 
 The <b>StorPortPoFxPowerControl</b> routine returns one of these status codes:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>The power control operation specified in <i>PowerControlCode</i> was successfully executed.
+</dl>
+</td>
+<td width="60%">
+The power control operation specified in <i>PowerControlCode</i> was successfully executed.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>Either <i>HwDeviceExtension</i> or <i>Device</i> is NULL.
+</dl>
+</td>
+<td width="60%">
+Either <i>HwDeviceExtension</i> or <i>Device</i> is NULL.
 
 -or-
 
@@ -105,15 +127,43 @@ The <b>StorPortPoFxPowerControl</b> routine returns one of these status codes:
 -or-
 
 The storage device specified by <i>Address</i> is not found.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The storage device is  not registered with the PoFx.
+</dl>
+</td>
+<td width="60%">
+The storage device is  not registered with the PoFx.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
-</dl>The current IRQL &gt; DISPATCH_LEVEL.
+</dl>
+</td>
+<td width="60%">
+The current IRQL &gt; DISPATCH_LEVEL.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl>The power control operation was unsuccessful.
+</dl>
+</td>
+<td width="60%">
+The power control operation was unsuccessful.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -135,14 +185,10 @@ Similarly, The PEP can send a power control request directly to the miniport. Th
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
-</dt>
-<dt>
 <a href="..\storport\nc-storport-hw_unit_control.md">HwStorUnitControl</a>
-</dt>
-</dl>
+
+<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
+
  
 
  

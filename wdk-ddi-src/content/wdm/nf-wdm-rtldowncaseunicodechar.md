@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1377a069-5065-4305-a48c-7a84f0071fc3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlDowncaseUnicodeChar
+ms.keywords : RtlDowncaseUnicodeChar routine [Kernel-Mode Driver Architecture], wdm/RtlDowncaseUnicodeChar, RtlDowncaseUnicodeChar, kernel.rtldowncaseunicodechar, k109_e9ba1cee-5de9-4f8f-b964-6668ddef36b7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of Window
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlDowncaseUnicodeChar
-req.alt-loc : Ntoskrnl.exe,Ntdll.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib; Ntdll.lib
 req.dll : Ntoskrnl.exe; Ntdll.dll
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -76,14 +80,10 @@ Ntoskrnl.lib supports the <b>RtlDowncaseUnicodeChar</b> routine in the WDK for W
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-rtldowncaseunicodestring.md">RtlDowncaseUnicodeString</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-rtlupcaseunicodechar.md">RtlUpcaseUnicodeChar</a>
-</dt>
-</dl>
+
  
 
  

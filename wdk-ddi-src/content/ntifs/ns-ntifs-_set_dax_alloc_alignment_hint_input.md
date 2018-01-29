@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 62C15E35-D9B6-449D-9AF2-F8A1F75C2BB9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, *PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT
+ms.keywords : ntifs/SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT structure pointer [Installable File System Drivers], ntifs/PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, _SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT structure [Installable File System Drivers], *PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, ifsk.set_dax_alloc_alignment_hint_input
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT
-req.alt-loc : Ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, *PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT
 ---
 

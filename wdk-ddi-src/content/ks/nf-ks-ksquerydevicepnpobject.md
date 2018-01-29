@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 207b776a-8f51-4385-a171-a9d0e84e70b5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsQueryDevicePnpObject
+ms.keywords : ksfunc_dd821abc-bd3b-45e9-a1de-1f9fd201db8e.xml, KsQueryDevicePnpObject function [Streaming Media Devices], stream.ksquerydevicepnpobject, ks/KsQueryDevicePnpObject, KsQueryDevicePnpObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsQueryDevicePnpObject
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -72,11 +76,8 @@ The <b>KsQueryDevicePnpObject</b> function returns the previously set PnP device
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561665">KsDefaultDispatchPnp</a>
-</dt>
-</dl>
+
  
 
  

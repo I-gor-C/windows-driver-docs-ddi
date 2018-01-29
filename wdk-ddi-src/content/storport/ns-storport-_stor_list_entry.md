@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 41E713D9-9499-40EB-8B21-DDB73362BAE3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY, STOR_LIST_ENTRY
+ms.keywords : STOR_LIST_ENTRY structure [Storage Devices], *PSTOR_LIST_ENTRY, PSTOR_LIST_ENTRY structure pointer [Storage Devices], storage.stor_list_entry, storport/PSTOR_LIST_ENTRY, _STOR_LIST_ENTRY, storport/STOR_LIST_ENTRY, STOR_LIST_ENTRY, PSTOR_LIST_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_LIST_ENTRY
-req.alt-loc : storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTOR_LIST_ENTRY, STOR_LIST_ENTRY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -50,22 +54,26 @@ typedef struct _STOR_LIST_ENTRY {
 
 ## Members
 
-        
-            `Blink`
 
-            For a <b>LIST_ENTRY</b> structure that serves as a list entry, the <b>Blink</b> member points to the previous entry in the list or to the list header if there is no previous entry in the list.
+`_STOR_LIST_ENTRY`
+
+
+
+`Blink`
+
+For a <b>LIST_ENTRY</b> structure that serves as a list entry, the <b>Blink</b> member points to the previous entry in the list or to the list header if there is no previous entry in the list.
 
 For a <b>LIST_ENTRY</b> structure that serves as the list header, the <b>Blink</b> member points to the last entry in the list or to the <b>LIST_ENTRY</b> structure itself if the list is empty.
-        
-            `Flink`
 
-            For a <b>LIST_ENTRY</b> structure that serves as a list entry, the <b>Flink</b> member points to the next entry in the list or to the list header if there is no next entry in the list. 
+`Flink`
+
+For a <b>LIST_ENTRY</b> structure that serves as a list entry, the <b>Flink</b> member points to the next entry in the list or to the list header if there is no next entry in the list. 
 
 For a <b>LIST_ENTRY</b> structure that serves as the list header, the <b>Flink</b> member points to the first entry in the list or to the LIST_ENTRY structure itself if the list is empty.
 
-    ## Remarks
-        A <b>STOR_LIST_ENTRY</b> structure that describes the list head must have been initialized by calling <a href="https://msdn.microsoft.com/E37C54C1-209F-4944-940B-2247E86C8130">StorPortInitializeListHead
-</a>.
+## Remarks
+A <b>STOR_LIST_ENTRY</b> structure that describes the list head must have been initialized by calling <mshelp:link keywords="storage.StorPortInitializeListHead" tabindex="0"><b>StorPortInitializeListHead
+</b></mshelp:link>.
 
 A driver can access the <b>Flink</b> or <b>Blink</b> members of a <b>STOR_LIST_ENTRY</b>, but the members must only be updated by the system routines supplied for this purpose.
 
@@ -79,40 +87,28 @@ For more information about how to use <b>STOR_LIST_ENTRY</b> structures to imple
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\storport\nf-storport-storportinterlockedinsertheadlist.md">StorPortInterlockedInsertHeadList</a>
-</dt>
-<dt>
-<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
+
 <a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
+
+<a href="..\storport\nf-storport-storportinterlockedinsertheadlist.md">StorPortInterlockedInsertHeadList</a>
+
+<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
+
+<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
+
+<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+
+<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
+
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
+
  
 
  

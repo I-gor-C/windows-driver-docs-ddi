@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 138b6ae2-4c89-40cb-a7b0-d1208e68c460
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_GETEXTENDEDMODECOUNTDATA, DD_GETEXTENDEDMODECOUNTDATA
+ms.keywords : DD_GETEXTENDEDMODECOUNTDATA, d3dhal/DD_GETEXTENDEDMODECOUNTDATA, DD_GETEXTENDEDMODECOUNTDATA structure [Display Devices], _DD_GETEXTENDEDMODECOUNTDATA, display.dd_getextendedmodecountdata, d3dstrct_2139722c-6eff-4c77-b899-2085de6239fd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DD_GETEXTENDEDMODECOUNTDATA
-req.alt-loc : d3dhal.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DD_GETEXTENDEDMODECOUNTDATA
 ---
 
@@ -51,21 +55,21 @@ typedef struct _DD_GETEXTENDEDMODECOUNTDATA {
 
 ## Members
 
-        
-            `dwModeCount`
 
-            Receives the number of supported extended display modes.
-        
-            `dwReserved`
+`dwModeCount`
 
-            Specifies a reserved field. Driver should not read or write.
-        
-            `gdi2`
+Receives the number of supported extended display modes.
 
-            Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.
+`dwReserved`
 
-    ## Remarks
-        To handle D3DGDI2_TYPE_GETEXTENDEDMODECOUNT, the driver must store the number of extended display modes that it supports in the <b>dwModeCount</b> member of DD_GETEXTENDEDMODECOUNTDATA. Display modes are described by D3DDISPLAYMODE structures. For more information about D3DDISPLAYMODE, see the DirectX SDK documentation.
+Specifies a reserved field. Driver should not read or write.
+
+`gdi2`
+
+Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.
+
+## Remarks
+To handle D3DGDI2_TYPE_GETEXTENDEDMODECOUNT, the driver must store the number of extended display modes that it supports in the <b>dwModeCount</b> member of DD_GETEXTENDEDMODECOUNTDATA. Display modes are described by D3DDISPLAYMODE structures. For more information about D3DDISPLAYMODE, see the DirectX SDK documentation.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,19 +79,14 @@ typedef struct _DD_GETEXTENDEDMODECOUNTDATA {
 | **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
-</dt>
-<dt>
-<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
-</dt>
-<dt>
 <a href="..\d3dhal\ns-d3dhal-_dd_getextendedmodedata.md">DD_GETEXTENDEDMODEDATA</a>
-</dt>
-</dl>
+
+<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+
  
 
  

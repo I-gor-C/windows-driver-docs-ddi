@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : dd5fd1f2-7040-40ee-bf9c-42e77c9738da
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemoveConnectionFromSession_IN, *PRemoveConnectionFromSession_IN, RemoveConnectionFromSession_IN
+ms.keywords : "*PRemoveConnectionFromSession_IN, structs-iSCSI_7dca8bd4-ebf8-4ccc-996a-852fabba5df3.xml, RemoveConnectionFromSession_IN, _RemoveConnectionFromSession_IN, RemoveConnectionFromSession_IN structure [Storage Devices], iscsiop/RemoveConnectionFromSession_IN, PRemoveConnectionFromSession_IN, storage.removeconnectionfromsession_in, iscsiop/PRemoveConnectionFromSession_IN, PRemoveConnectionFromSession_IN structure pointer [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RemoveConnectionFromSession_IN
-req.alt-loc : iscsiop.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PRemoveConnectionFromSession_IN, RemoveConnectionFromSession_IN"
 ---
 
@@ -47,17 +51,17 @@ typedef struct _RemoveConnectionFromSession_IN {
 
 ## Members
 
-        
-            `UniqueConnectionId`
 
-            A 64-bit integer that uniquely identifies the connection. Do not confuse this value with the connection ID (CID).
-        
-            `UniqueSessionId`
+`UniqueConnectionId`
 
-            A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+A 64-bit integer that uniquely identifies the connection. Do not confuse this value with the connection ID (CID).
 
-    ## Remarks
-        You must implement this class.
+`UniqueSessionId`
+
+A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+
+## Remarks
+You must implement this class.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -67,19 +71,14 @@ typedef struct _RemoveConnectionFromSession_IN {
 | **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 53665c1d-8c0b-45c7-8d23-13c0964eda39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetDeviceBase
+ms.keywords : video/VideoPortGetDeviceBase, VideoPortGetDeviceBase, display.videoportgetdevicebase, VideoPortGetDeviceBase function [Display Devices], VideoPort_Functions_ee5844a6-6337-42b7-b960-5228ad1c1ae4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortGetDeviceBase
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -69,7 +73,6 @@ The number of bytes, starting at <i>IoAddress</i>, to map.
 `InIoSpace`
 
 The location of the <i>IoAddress</i> range. This parameter can be one of the following flags or an ORed, compatible combination of these flags.
-
 <table>
 <tr>
 <th>Flag</th>
@@ -113,7 +116,7 @@ VIDEO_MEMORY_SPACE_P6CACHE
 <td>
 The processor aggregates a sequence of write operations, sends them to a cache line, and later flushes the cache. This flag is meaningful only when VIDEO_MEMORY_SPACE_IO is not set.
 
-Designates the video memory as write-combined (WC). For information about WC caching, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=204787">Write-Combining Memory in Video Miniport Drivers</a> website article.
+Designates the video memory as write-combined (WC). For information about WC caching, see the <a href="https://msdn.microsoft.com/library/windows/hardware/dn642116">Write-Combining Memory in Video Miniport Drivers</a> website article.
 
 </td>
 </tr>
@@ -133,14 +136,20 @@ You must call <b>VideoPortGetDeviceBase</b> from the miniport driver's <a href="
 Before <i>HwVidFindAdapter</i> returns control, you should store both the mapped base address returned by <b>VideoPortGetDeviceBase</b> and the length of the mapped access range in the adapter's device extension (pointed to by <i>HwDeviceExtension</i>) for later use.
 
 Access to the mapped address space must follow these rules:
-
+<ul>
+<li>
 If <i>InIoSpace</i> is VIDEO_MEMORY_SPACE_IO, which indicates that the address is in I/O space, the virtual address that this function returns should be passed to the <b>VideoPortReadPort</b><i>Xxx</i>, <b>VideoPortWritePort</b><i>Xxx</i>, <b>VideoPortReadPortBuffer</b><i>Xxx</i>, and <b>VideoPortWritePortBuffer</b><i>Xxx</i> functions, where <i>Xxx</i> is <b>Uchar</b>, <b>Ushort</b>, or <b>Ulong</b>.
 
+</li>
+<li>
 If <i>InIoSpace</i> is VIDEO_MEMORY_SPACE_MEMORY, which indicates that the address is not in I/O space but in memory space, the virtual address that this function returns should be passed to the <b>VideoPortReadRegister</b><i>Xxx</i>, <b>VideoPortWriteRegister</b><i>Xxx</i>, <b>VideoPortReadRegisterBuffer</b><i>Xxx</i>, and <b>VideoPortWriteRegisterBuffer</b><i>Xxx</i> functions, where <i>Xxx</i> is <b>Uchar</b>, <b>Ushort</b>, or <b>Ulong</b>.
 
+</li>
+<li>
 The driver must not access addresses that are outside the range delimited by <i>NumberOfUchars</i>.
 
-<b>VideoPortGetDeviceBase</b> and <a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a> can both be called by the video miniport driver to map video memory into a virtual address space. If you call both of these functions to map the same physical addresses, or if you call one of the functions more than once to map the same physical addresses, you might have more than one virtual-address range that maps to the same physical-address range. In that case, you must set the VIDEO_MEMORY_SPACE_P6CACHE flag of the <i>InIoSpace</i> parameter to the same value in all of those calls.
+</li>
+</ul><b>VideoPortGetDeviceBase</b> and <a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a> can both be called by the video miniport driver to map video memory into a virtual address space. If you call both of these functions to map the same physical addresses, or if you call one of the functions more than once to map the same physical addresses, you might have more than one virtual-address range that maps to the same physical-address range. In that case, you must set the VIDEO_MEMORY_SPACE_P6CACHE flag of the <i>InIoSpace</i> parameter to the same value in all of those calls.
 
 Every universal memory architecture (UMA) display device uses a frame buffer that is located in main memory rather than on a PCI bus. In this case, do not call <b>VideoPortMapMemory</b> to map the frame buffer. To map a UMA frame buffer into system space, call <a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>.
 
@@ -160,44 +169,30 @@ If a miniport driver does not support an adapter that it has mapped a logical ra
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a>
-</dt>
-<dt>
-<a href="..\video\nc-video-pminiport_get_registry_routine.md">HwVidQueryNamedValueCallback</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportcomparememory.md">VideoPortCompareMemory</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportfreedevicebase.md">VideoPortFreeDeviceBase</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
-</dt>
-<dt>
-<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
-</dt>
-<dt>
 <a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
-</dt>
-<dt>
+
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
+
+<a href="..\video\nf-video-videoportfreedevicebase.md">VideoPortFreeDeviceBase</a>
+
 <a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
-</dt>
-</dl>
+
+<a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a>
+
+<a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
+
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
+
+<a href="..\video\nc-video-pminiport_get_registry_routine.md">HwVidQueryNamedValueCallback</a>
+
+<a href="..\video\nf-video-videoportcomparememory.md">VideoPortCompareMemory</a>
+
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
+
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
+
+<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d579d9a3-7db1-47ed-859d-3fed99a4ee9d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_DIRECTFLIP_SUPPORT, D3DKMT_DIRECTFLIP_SUPPORT
+ms.keywords : D3DKMT_DIRECTFLIP_SUPPORT, D3DKMT_DIRECTFLIP_SUPPORT structure [Display Devices], display.d3dkmt_directflip_support, d3dkmthk/D3DKMT_DIRECTFLIP_SUPPORT, _D3DKMT_DIRECTFLIP_SUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_DIRECTFLIP_SUPPORT
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_DIRECTFLIP_SUPPORT
 ---
 
@@ -46,10 +50,10 @@ typedef struct _D3DKMT_DIRECTFLIP_SUPPORT {
 
 ## Members
 
-        
-            `Supported`
 
-            If <b>TRUE</b>, the driver supports Direct Flip operations. Otherwise, the driver does not support Direct Flip operations.
+`Supported`
+
+If <b>TRUE</b>, the driver supports Direct Flip operations. Otherwise, the driver does not support Direct Flip operations.
 
 
 ## Requirements

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d5d34f32-026b-4c9f-86ae-a835d4e9c381
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortUnlockBuffer
+ms.keywords : video/VideoPortUnlockBuffer, display.videoportunlockbuffer, VideoPort_Functions_2cb5a81f-1956-4431-bf54-7ee6e3d79eab.xml, VideoPortUnlockBuffer, VideoPortUnlockBuffer function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows XP and later versions of the Wi
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortUnlockBuffer
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,13 +29,19 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
 
 
 # VideoPortUnlockBuffer function
-The <b>VideoPortUnLockBuffer</b> function unlocks physical pages described by the specified memory descriptor list (<a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a>).
+The <b>VideoPortUnLockBuffer</b> function unlocks physical pages described by the specified memory descriptor list (<a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a>).
 
 ## Syntax
 
@@ -78,11 +82,8 @@ None
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a>
-</dt>
-</dl>
+
  
 
  

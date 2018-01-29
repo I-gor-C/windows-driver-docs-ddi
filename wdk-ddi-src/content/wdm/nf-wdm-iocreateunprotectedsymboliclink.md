@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 21ca4ec1-fd5f-46bb-9760-3bb0cdb761b9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateUnprotectedSymbolicLink
+ms.keywords : kernel.iocreateunprotectedsymboliclink, IoCreateUnprotectedSymbolicLink routine [Kernel-Mode Driver Architecture], wdm/IoCreateUnprotectedSymbolicLink, IoCreateUnprotectedSymbolicLink, k104_72bb6571-da2d-4027-bfcd-24438e3bd08a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoCreateUnprotectedSymbolicLink
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -87,20 +91,14 @@ For more information about when to use <b>IoCreateSymbolicLink</b>, see <a href=
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-ioassignarcname.md">IoAssignArcName</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-iocreatesymboliclink.md">IoCreateSymbolicLink</a>
-</dt>
-<dt>
+
+<a href="..\ntddk\nf-ntddk-ioassignarcname.md">IoAssignArcName</a>
+
 <a href="..\wdm\nf-wdm-iodeletesymboliclink.md">IoDeleteSymbolicLink</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
+
  
 
  

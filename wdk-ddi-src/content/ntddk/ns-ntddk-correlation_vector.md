@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 35c1799f-2012-42b0-95e6-6902c818a094
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CORRELATION_VECTOR, CORRELATION_VECTOR, *PCORRELATION_VECTOR
+ms.keywords : CORRELATION_VECTOR structure [Kernel-Mode Driver Architecture], kernel.correlation_vector, CORRELATION_VECTOR, ntddk/CORRELATION_VECTOR, *PCORRELATION_VECTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1709
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CORRELATION_VECTOR
-req.alt-loc : Ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : CORRELATION_VECTOR
 ---
 
@@ -48,15 +52,14 @@ typedef struct _CORRELATION_VECTOR {
 
 ## Members
 
-        
-            `Vector`
 
-            An array CHARs that represents the correlation vector.
-        
-            `Version`
+`Vector`
 
-            The version of the correlation vector. Possible values are: 
+An array CHARs that represents the correlation vector.
 
+`Version`
+
+The version of the correlation vector. Possible values are: 
 <ul>
 <li>RTL_CORRELATION_VECTOR_VERSION_1</li>
 <li>RTL_CORRELATION_VECTOR_VERSION_2</li>

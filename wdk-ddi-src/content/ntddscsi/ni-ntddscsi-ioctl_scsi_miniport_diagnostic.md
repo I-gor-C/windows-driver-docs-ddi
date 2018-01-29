@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 79E89E4A-3B06-40FA-BFA6-598331C0A330
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+ms.keywords : storage.ioctl_scsi_miniport_diagnostic, IOCTL_SCSI_MINIPORT_DIAGNOSTIC control code [Storage Devices], IOCTL_SCSI_MINIPORT_DIAGNOSTIC, ntddscsi/IOCTL_SCSI_MINIPORT_DIAGNOSTIC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SCSI_MINIPORT_DIAGNOSTIC
-req.alt-loc : ntddscsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_MINIPORT_DIAGNOSTIC IOCTL
@@ -64,8 +68,8 @@ Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
 For more information, see [XREF-LINK:NTSTATUS Values].
 
-    ## Remarks
-        To perform this operation, call the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> 
+## Remarks
+To perform this operation, call the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> 
    function with the following parameters.
 
 
@@ -84,10 +88,6 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 
 Parameters
 
-
-
-Parameters
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -95,16 +95,12 @@ Parameters
 | **Header** | ntddscsi.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddscsi\ns-ntddscsi-_storage_diagnostic_mp_request.md">STORAGE_DIAGNOSTIC_MP_REQUEST</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
-</dt>
-</dl>
+
+<a href="..\ntddscsi\ns-ntddscsi-_storage_diagnostic_mp_request.md">STORAGE_DIAGNOSTIC_MP_REQUEST</a>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : da4074ac-309d-46b9-b630-79d73ed73f36
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMDT_PIXEL_VALUE_ACCESS_MODE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE
+ms.keywords : DmEnums_ac8b4715-9a7c-4698-8f57-e6125f90f75b.xml, D3DKMDT_PVAM_SETTABLEPALETTE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration [Display Devices], D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_SETTABLEPALETTE, d3dkmdt/D3DKMDT_PVAM_UNINITIALIZED, D3DKMDT_PVAM_PRESETPALETTE, D3DKMDT_PVAM_UNINITIALIZED, d3dkmdt/D3DKMDT_PVAM_PRESETPALETTE, D3DKMDT_PVAM_DIRECT, display.d3dkmdt_pixel_value_access_mode, d3dkmdt/D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_DIRECT, _D3DKMDT_PIXEL_VALUE_ACCESS_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMDT_PIXEL_VALUE_ACCESS_MODE
-req.alt-loc : d3dkmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMDT_PIXEL_VALUE_ACCESS_MODE
 ---
 
@@ -86,11 +90,8 @@ The <b>Format.Graphics</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
-</dt>
-</dl>
+
  
 
  

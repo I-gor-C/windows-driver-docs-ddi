@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 241525fd-c21b-4c24-91a0-6a79df4faea7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlAllocatePoolWithQuotaTag
+ms.keywords : FsRtlAllocatePoolWithQuotaTag, fsrtlref_f4d15687-848c-4c31-8f30-48eb69498cc9.xml, FsRtlAllocatePoolWithQuotaTag routine [Installable File System Drivers], ntifs/FsRtlAllocatePoolWithQuotaTag, ifsk.fsrtlallocatepoolwithquotatag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlAllocatePoolWithQuotaTag
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -62,9 +66,7 @@ Type of pool to allocate. One of the following:
 <li><b>PagedPoolCacheAligned</b></li>
 </ul>
 
-
-<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used.</div>
-<div> </div>
+<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used.</div><div> </div>
 
 `NumberOfBytes`
 
@@ -103,17 +105,12 @@ Callers of <b>FsRtlAllocatePoolWithQuotaTag</b> must be running at IRQL &lt;= DI
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545659">FsRtlAllocatePoolWithQuota</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
+
  
 
  

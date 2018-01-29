@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 4038d5a5-9ce7-44cb-a6f0-3033617cfe6a
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : _ACPI_METHOD_ARGUMENT_V1, ACPI_METHOD_ARGUMENT_V1, ACPI_METHOD_ARGUMENT, *PACPI_METHOD_ARGUMENT, *PACPI_METHOD_ARGUMENT_V1
+ms.keywords : acpi-meth-eval-ref_a8988425-e05b-4e85-a345-31a367dec427.xml, *PACPI_METHOD_ARGUMENT, acpiioct/ACPI_METHOD_ARGUMENT_V1, _ACPI_METHOD_ARGUMENT_V1, ACPI_METHOD_ARGUMENT, *PACPI_METHOD_ARGUMENT_V1, ACPI_METHOD_ARGUMENT_V1, acpi.acpi_method_argument, ACPI_METHOD_ARGUMENT_V1 structure [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 2000 and later versions of Windows.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ACPI_METHOD_ARGUMENT_V1
-req.alt-loc : Acpiioct.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : ACPI_METHOD_ARGUMENT_V1, ACPI_METHOD_ARGUMENT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : ACPI_METHOD_ARGUMENT, ACPI_METHOD_ARGUMENT_V1
 ---
 
 # _ACPI_METHOD_ARGUMENT_V1 structure
@@ -51,17 +55,21 @@ typedef struct _ACPI_METHOD_ARGUMENT_V1 {
 
 ## Members
 
-        
-            `DataLength`
 
-            The number of UCHAR elements in the <b>Data</b> array that contains the argument data.
-        
-            `Type`
+`DataLength`
 
-            The type of the method argument, as specified by one of the following:
+The number of UCHAR elements in the <b>Data</b> array that contains the argument data.
 
-    ## Remarks
-        An ACPI_EVAL_OUTPUT_BUFFER structure includes an <b>Argument</b> array of ACPI_METHOD_ARGUMENT structures. The following IOCTLs evaluate control methods and return output arguments in an <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a> structure:
+`DUMMYUNIONNAME`
+
+
+
+`Type`
+
+The type of the method argument, as specified by one of the following:
+
+## Remarks
+An ACPI_EVAL_OUTPUT_BUFFER structure includes an <b>Argument</b> array of ACPI_METHOD_ARGUMENT structures. The following IOCTLs evaluate control methods and return output arguments in an <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a> structure:
 
 
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
@@ -91,19 +99,14 @@ For more information about how to use ACPI_METHOD_ARGUMENT structures to supply 
 | **Minimum UMDF version** |  |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_complex_v1.md">ACPI_EVAL_INPUT_BUFFER_COMPLEX</a>
-</dt>
-<dt>
+
 <a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_complex_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX</a>
-</dt>
-<dt>
+
 <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a>
-</dt>
-</dl>
+
  
 
  

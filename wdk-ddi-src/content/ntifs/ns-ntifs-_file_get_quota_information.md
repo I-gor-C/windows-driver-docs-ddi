@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4c4d57bd-28b3-4db3-a172-bc1a27dd10b2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_GET_QUOTA_INFORMATION, FILE_GET_QUOTA_INFORMATION, *PFILE_GET_QUOTA_INFORMATION
+ms.keywords : "*PFILE_GET_QUOTA_INFORMATION, ifsk.file_get_quota_information, ntifs/FILE_GET_QUOTA_INFORMATION, FILE_GET_QUOTA_INFORMATION structure [Installable File System Drivers], PFILE_GET_QUOTA_INFORMATION structure pointer [Installable File System Drivers], FILE_GET_QUOTA_INFORMATION, ntifs/PFILE_GET_QUOTA_INFORMATION, fileinformationstructures_e64ee968-bf98-422e-9bed-837b984fbc33.xml, _FILE_GET_QUOTA_INFORMATION, PFILE_GET_QUOTA_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FILE_GET_QUOTA_INFORMATION
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : FILE_GET_QUOTA_INFORMATION, *PFILE_GET_QUOTA_INFORMATION
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PFILE_GET_QUOTA_INFORMATION, FILE_GET_QUOTA_INFORMATION"
 ---
 
 # _FILE_GET_QUOTA_INFORMATION structure
@@ -48,21 +52,21 @@ typedef struct _FILE_GET_QUOTA_INFORMATION {
 
 ## Members
 
-        
-            `NextEntryOffset`
 
-            Offset, in bytes, of the next FILE_GET_QUOTA_INFORMATION-typed entry. This member is zero if no other entries follow this one.
-        
-            `Sid`
+`NextEntryOffset`
 
-            Security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>) whose quota information is to be returned.
-        
-            `SidLength`
+Offset, in bytes, of the next FILE_GET_QUOTA_INFORMATION-typed entry. This member is zero if no other entries follow this one.
 
-            Length, in bytes, of the <b>Sid</b> member.
+`Sid`
 
-    ## Remarks
-        The FILE_GET_QUOTA_INFORMATION structure is used to query for quota information. The quota information is returned in a <a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>-structured buffer. 
+Security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>) whose quota information is to be returned.
+
+`SidLength`
+
+Length, in bytes, of the <b>Sid</b> member.
+
+## Remarks
+The FILE_GET_QUOTA_INFORMATION structure is used to query for quota information. The quota information is returned in a <a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>-structured buffer. 
 
 This structure must be aligned on a LONG (4-byte) boundary.
 
@@ -74,25 +78,18 @@ This structure must be aligned on a LONG (4-byte) boundary.
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
-</dt>
-<dt>
+
+<a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+
+<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
+
  
 
  

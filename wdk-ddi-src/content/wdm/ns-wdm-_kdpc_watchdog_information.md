@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8b0d3fd8-0952-4cfa-81e1-255145fd27dd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _KDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION
+ms.keywords : _KDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION, kernel.dpc_watchdog_information, kstruct_a_22042f11-ce6d-481a-949a-d6370ab442ad.xml, KDPC_WATCHDOG_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/KDPC_WATCHDOG_INFORMATION, PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION, PKDPC_WATCHDOG_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PKDPC_WATCHDOG_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows Vista.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KDPC_WATCHDOG_INFORMATION
-req.alt-loc : Wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -51,29 +55,29 @@ typedef struct _KDPC_WATCHDOG_INFORMATION {
 
 ## Members
 
-        
-            `DpcTimeCount`
 
-            Time remaining for the current deferred procedure call, if DPC time-out has been enabled.
-        
-            `DpcTimeLimit`
+`DpcTimeCount`
 
-            Time limit for a single, current deferred procedure call. If DPC time-out has been disabled, this value is set to 0.
-        
-            `DpcWatchdogCount`
+Time remaining for the current deferred procedure call, if DPC time-out has been enabled.
 
-            Time value remaining for the current sequence of deferred procedure calls, if enabled.
-        
-            `DpcWatchdogLimit`
+`DpcTimeLimit`
 
-            Total time limit permitted for a sequence of deferred procedure calls. If DPC watchdog has been disabled, this value is set to zero.
-        
-            `Reserved`
+Time limit for a single, current deferred procedure call. If DPC time-out has been disabled, this value is set to 0.
 
-            Reserved for system use.
+`DpcWatchdogCount`
 
-    ## Remarks
-        Time figures stored in each member are dimensionless.
+Time value remaining for the current sequence of deferred procedure calls, if enabled.
+
+`DpcWatchdogLimit`
+
+Total time limit permitted for a sequence of deferred procedure calls. If DPC watchdog has been disabled, this value is set to zero.
+
+`Reserved`
+
+Reserved for system use.
+
+## Remarks
+Time figures stored in each member are dimensionless.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,13 +87,10 @@ typedef struct _KDPC_WATCHDOG_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-kequerydpcwatchdoginformation.md">KeQueryDpcWatchdogInformation</a>
-</dt>
-</dl>
+
  
 
  

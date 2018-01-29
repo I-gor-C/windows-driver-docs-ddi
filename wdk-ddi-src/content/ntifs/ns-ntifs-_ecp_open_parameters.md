@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
+ms.keywords : ECP_OPEN_PARAMETERS structure [Installable File System Drivers], PECP_OPEN_PARAMETERS structure pointer [Installable File System Drivers], *PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, ifsk.ecp_open_parameters, ntifs/ECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS, ntifs/PECP_OPEN_PARAMETERS, _ECP_OPEN_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 10, version 1709.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ECP_OPEN_PARAMETERS
-req.alt-loc : ntifs.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
 ---
 
@@ -48,11 +52,10 @@ typedef struct _ECP_OPEN_PARAMETERS {
 
 ## Members
 
-        
-            `Flags`
 
-            Flags that Specify the parameters or purpose for opening a file. Contains one of the following values:
+`Flags`
 
+Flags that Specify the parameters or purpose for opening a file. Contains one of the following values:
 <table>
 <tr>
 <th>Name</th>
@@ -75,14 +78,14 @@ typedef struct _ECP_OPEN_PARAMETERS {
 <td>Opening file to delete it.</td>
 </tr>
 </table>
-        
-            `Reserved`
 
-            Reserved for future use. This must be initialized to 0.
-        
-            `Size`
+`Reserved`
 
-            Specifies the size of this context structure, in bytes.
+Reserved for future use. This must be initialized to 0.
+
+`Size`
+
+Specifies the size of this context structure, in bytes.
 
 
 ## Requirements

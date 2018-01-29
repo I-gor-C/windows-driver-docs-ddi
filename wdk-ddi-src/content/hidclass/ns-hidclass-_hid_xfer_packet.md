@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : b256e6fd-d44f-482a-836d-a812634b4b3a
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HID_XFER_PACKET, HID_XFER_PACKET, *PHID_XFER_PACKET
+ms.keywords : hidclass/PHID_XFER_PACKET, hid.hid_xfer_packet, HID_XFER_PACKET structure [Human Input Devices], *PHID_XFER_PACKET, _HID_XFER_PACKET, hidclass/HID_XFER_PACKET, hidstrct_55f22385-a5ed-46b5-9f97-9d47ee731145.xml, HID_XFER_PACKET, PHID_XFER_PACKET structure pointer [Human Input Devices], PHID_XFER_PACKET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : HID_XFER_PACKET
-req.alt-loc : hidclass.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : HID_XFER_PACKET, *PHID_XFER_PACKET
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PHID_XFER_PACKET, HID_XFER_PACKET"
 ---
 
 # _HID_XFER_PACKET structure
@@ -48,21 +52,21 @@ typedef struct _HID_XFER_PACKET {
 
 ## Members
 
-        
-            `reportBuffer`
 
-            Pointer to a report buffer.
-        
-            `reportBufferLen`
+`reportBuffer`
 
-            Specifies the length of the report at <b>reportBuffer</b>.
-        
-            `reportId`
+Pointer to a report buffer.
 
-            Specifies the report ID of the report contained at <b>reportBuffer</b>. This parameter is optional, and, if not specified, should be set to zero.
+`reportBufferLen`
 
-    ## Remarks
-        The HID class driver uses this structure to specify information about a HID report when it uses an I/O request to get or set a report.
+Specifies the length of the report at <b>reportBuffer</b>.
+
+`reportId`
+
+Specifies the report ID of the report contained at <b>reportBuffer</b>. This parameter is optional, and, if not specified, should be set to zero.
+
+## Remarks
+The HID class driver uses this structure to specify information about a HID report when it uses an I/O request to get or set a report.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -72,22 +76,16 @@ typedef struct _HID_XFER_PACKET {
 | **Minimum UMDF version** |  |
 | **Header** | hidclass.h (include Hidport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_feature.md">IOCTL_HID_GET_FEATURE</a>
-</dt>
-<dt>
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_input_report.md">IOCTL_HID_GET_INPUT_REPORT</a>
-</dt>
-<dt>
 <a href="..\hidclass\ni-hidclass-ioctl_hid_set_feature.md">IOCTL_HID_SET_FEATURE</a>
-</dt>
-<dt>
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_feature.md">IOCTL_HID_GET_FEATURE</a>
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_input_report.md">IOCTL_HID_GET_INPUT_REPORT</a>
+
 <a href="..\hidclass\ni-hidclass-ioctl_hid_set_output_report.md">IOCTL_HID_SET_OUTPUT_REPORT</a>
-</dt>
-</dl>
+
  
 
  

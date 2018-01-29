@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6011a3e9-1de1-4862-b6a4-a3becf3ec3ca
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _CLFS_LOG_NAME_INFORMATION, *PCLFS_LOG_NAME_INFORMATION, PPCLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION
+ms.keywords : CLFS_LOG_NAME_INFORMATION structure [Kernel-Mode Driver Architecture], PPCLFS_LOG_NAME_INFORMATION, wdm/PCLFS_LOG_NAME_INFORMATION, kstruct_a_381305d2-8396-4f34-b981-0ba3eb732cd1.xml, PCLFS_LOG_NAME_INFORMATION, *PCLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION, kernel.clfs_log_name_information, wdm/CLFS_LOG_NAME_INFORMATION, wdm/PPCLFS_LOG_NAME_INFORMATION, PPCLFS_LOG_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _CLFS_LOG_NAME_INFORMATION, PCLFS_LOG_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CLFS_LOG_NAME_INFORMATION
-req.alt-loc : wdm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL (see Remarks section)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PCLFS_LOG_NAME_INFORMATION, PPCLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION"
 req.product : Windows 10 or later.
 ---
@@ -48,14 +52,14 @@ typedef struct _CLFS_LOG_NAME_INFORMATION {
 
 ## Members
 
-        
-            `Name`
 
-            An array of wide characters that holds the log name.
-        
-            `NameLengthInBytes`
+`Name`
 
-            The size, in bytes, of the log name.
+An array of wide characters that holds the log name.
+
+`NameLengthInBytes`
+
+The size, in bytes, of the log name.
 
 
 ## Requirements
@@ -66,16 +70,12 @@ typedef struct _CLFS_LOG_NAME_INFORMATION {
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\wdm\nf-wdm-clfssetlogfileinformation.md">ClfsSetLogFileInformation</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a>
-</dt>
-</dl>
+
  
 
  

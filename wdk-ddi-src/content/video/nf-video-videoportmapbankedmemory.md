@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ee94d883-b4c4-4cd5-9b61-2e51810f8fc8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortMapBankedMemory
+ms.keywords : VideoPortMapBankedMemory, video/VideoPortMapBankedMemory, VideoPortMapBankedMemory function [Display Devices], VideoPort_Functions_14384264-da80-4c16-8de9-af143ac6a014.xml, display.videoportmapbankedmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of the 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : VideoPortMapBankedMemory
-req.alt-loc : Videoprt.sys
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_PORT_SERVICES
 req.product : Windows 10 or later.
 ---
@@ -74,7 +78,6 @@ Pointer to a variable specifying the total number of bytes of device memory to b
 `InIoSpace`
 
 Indicates the location of the range. This parameter can be one of the following values:
-
 <table>
 <tr>
 <th>Value</th>
@@ -134,7 +137,7 @@ Indicates that the address range specified should be mapped into user mode rathe
 
 `VirtualAddress`
 
-Is a handle to the process into which the memory must be mapped, or <b>NULL</b>. <b>NULL</b> specifies that the port driver should map the logical memory range at any location in the address space of the current process. Otherwise, this handle can be a value passed in a <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> by the miniport driver's corresponding display driver. On return from a successful call, <b>VideoPortMapBankedMemory</b> resets the variable to the base virtual address to which it has mapped the given <i>PhysicalAddress</i>.
+Is a handle to the process into which the memory must be mapped, or <b>NULL</b>. <b>NULL</b> specifies that the port driver should map the logical memory range at any location in the address space of the current process. Otherwise, this handle can be a value passed in a <a href="https://msdn.microsoft.com/a1de1905-09f3-4689-ace9-06690a1f930a">VRP</a> by the miniport driver's corresponding display driver. On return from a successful call, <b>VideoPortMapBankedMemory</b> resets the variable to the base virtual address to which it has mapped the given <i>PhysicalAddress</i>.
 
 `BankLength`
 
@@ -177,29 +180,20 @@ Pointer to a miniport driver-supplied context that is passed back to the driver 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567322">HwVidBankedMemoryCallback</a>
-</dt>
-<dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
-</dt>
-<dt>
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_share_video_memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
-</dt>
-<dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unshare_video_memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a>
-</dt>
-<dt>
+
 <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
-</dt>
-<dt>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unshare_video_memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a>
+
 <a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>
-</dt>
-<dt>
+
 <a href="..\video\nf-video-videoportunmapmemory.md">VideoPortUnmapMemory</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567322">HwVidBankedMemoryCallback</a>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
+
  
 
  

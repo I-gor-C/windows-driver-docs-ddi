@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 75d66965-ab97-4f67-b62f-e7fedbf524a6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcGetDeviceProperty
+ms.keywords : audio.pcgetdeviceproperty, PcGetDeviceProperty, portcls/PcGetDeviceProperty, PcGetDeviceProperty function [Audio Devices], audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : The PortCls system driver implements the PcGetDevice
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PcGetDeviceProperty
-req.alt-loc : Portcls.lib,Portcls.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Portcls.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
@@ -139,14 +143,10 @@ Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the requ
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
-</dt>
-</dl>
+
  
 
  

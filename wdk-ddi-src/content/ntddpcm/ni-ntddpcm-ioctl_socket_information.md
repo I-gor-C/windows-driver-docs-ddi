@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : 95563d68-e812-4c62-9668-8cb25b4735aa
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
+ms.keywords : PCMCIA.ioctl_socket_information, IOCTL_SOCKET_INFORMATION control code [Buses], IOCTL_SOCKET_INFORMATION, ntddpcm/IOCTL_SOCKET_INFORMATION, memcdref_8730c03b-fc86-4d43-8aa9-6d15abcfa2d0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_SOCKET_INFORMATION
-req.alt-loc : ntddpcm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
 ---
 
@@ -61,7 +65,6 @@ The size of the requested socket data.
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field is set to the number of bytes read. 
 
 If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS.
@@ -82,13 +85,10 @@ If there is no card in the indicated socket, the <b>Status</b> field is set to S
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537612">PCMCIA_SOCKET_INFORMATION</a>
-</dt>
-</dl>
+
  
 
  

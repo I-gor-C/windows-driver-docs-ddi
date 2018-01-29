@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f1a3882e-7d45-4634-ae1d-fb8102716f36
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : WcsTranslateColors
+ms.keywords : display.evt_idd_cx_monitor_opm_get_certificate, EvtIddCxMonitorOpmGetCertificate callback function [Display Devices], EvtIddCxMonitorOpmGetCertificate, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, iddcx/EvtIddCxMonitorOpmGetCertificate, PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : _requires_same_
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 

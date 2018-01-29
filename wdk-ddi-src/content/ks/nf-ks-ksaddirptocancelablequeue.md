@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 399ca0d6-6355-40f8-ac2c-c69d7ae699e1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAddIrpToCancelableQueue
+ms.keywords : KsAddIrpToCancelableQueue, ks/KsAddIrpToCancelableQueue, ksfunc_8a3caaa5-29ca-4c55-a3f6-8214808954b3.xml, stream.ksaddirptocancelablequeue, KsAddIrpToCancelableQueue function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsAddIrpToCancelableQueue
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -83,7 +87,7 @@ If the IRP has been put into a cancel state when this routine is called, <b>KsAd
 
 The <b>KsAddIrpToCancelableQueue</b> function allows IRPs to be canceled even before being placed on a cancel list, or when being moved from one list to another. This function can be called at IRQ level DISPATCH_LEVEL or lower unless the driver-allocated queue and all entries in the queue are system-resident or allocated from resident storage.
 
-The function does not use the cancel spin lock to add items to the list. Access to the list is synchronized using the provided spin lock and relies on atomic operations on Irp-&gt;CancelRoutine.</p>
+The function does not use the cancel spin lock to add items to the list. Access to the list is synchronized using the provided spin lock and relies on atomic operations on Irp-&gt;CancelRoutine.
 
 ## Requirements
 | &nbsp; | &nbsp; |

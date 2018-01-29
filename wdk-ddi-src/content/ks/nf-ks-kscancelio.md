@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 082a63d5-5ba5-4cd3-aea3-0184317e1e96
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCancelIo
+ms.keywords : ksfunc_135412c3-120f-4b19-ac05-da63ab6b1ddd.xml, KsCancelIo function [Streaming Media Devices], KsCancelIo, ks/KsCancelIo, stream.kscancelio
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsCancelIo
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : < DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -82,11 +86,8 @@ If the IRP being canceled has a driver-supplied cancel routine, the cancel spin 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-ksaddirptocancelablequeue.md">KsAddIrpToCancelableQueue</a>
-</dt>
-</dl>
+
  
 
  

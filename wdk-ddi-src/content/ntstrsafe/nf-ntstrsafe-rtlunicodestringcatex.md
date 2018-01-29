@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9894863c-89e9-491e-b958-874ac8ee8c30
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringCatEx
+ms.keywords : safestrings_6b13f3af-ca18-4b2a-b5f0-04f0f2330701.xml, RtlUnicodeStringCatEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCatEx, RtlUnicodeStringCatEx, kernel.rtlunicodestringcatex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows XP with Service Pack
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUnicodeStringCatEx
-req.alt-loc : Ntstrsafe.lib,Ntstrsafe.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntstrsafe.lib
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
 ---
 
@@ -71,21 +75,55 @@ One or more flags and, optionally, a fill byte. The flags are defined as follows
 ## Return Value
 
 <b>RtlUnicodeStringCatEx</b> returns one of the following NTSTATUS values.
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>This <i>success</i> status means source data was present, and the strings were concatenated without truncation.
+</dl>
+</td>
+<td width="60%">
+This <i>success</i> status means source data was present, and the strings were concatenated without truncation.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_BUFFER_OVERFLOW</b></dt>
-</dl>This <i>warning</i> status means the concatenation operation did not complete due to insufficient space in the destination buffer. If STRSAFE_NO_TRUNCATION is set in <i>dwFlags</i>, the destination buffer is not modified. If the flag is not set, the destination buffer contains a truncated version of the intended result.
+</dl>
+</td>
+<td width="60%">
+This <i>warning</i> status means the concatenation operation did not complete due to insufficient space in the destination buffer. If STRSAFE_NO_TRUNCATION is set in <i>dwFlags</i>, the destination buffer is not modified. If the flag is not set, the destination buffer contains a truncated version of the intended result.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>This <i>error</i> status means the function received an invalid input parameter. For more information, see the following list.
+</dl>
+</td>
+<td width="60%">
+This <i>error</i> status means the function received an invalid input parameter. For more information, see the following list.
 
- 
+</td>
+</tr>
+</table> 
 
 <b>RtlUnicodeStringCatEx</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
-
-For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+<ul>
+<li>The contents of a <b>UNICODE_STRING</b> structure are invalid.</li>
+<li>An invalid flag is specified in <i>dwFlags</i>.</li>
+<li>The destination buffer is already full.</li>
+<li>A buffer pointer is <b>NULL</b> and the STRSAFE_IGNORE_NULLS flag is not specified.</li>
+<li>The destination buffer pointer is <b>NULL</b>, but the buffer size is not zero.</li>
+<li>The destination buffer pointer is <b>NULL</b>, or its length is zero, but a nonzero length source string is present.</li>
+</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -113,14 +151,10 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcat.md">RtlUnicodeStringCat</a>
-</dt>
-<dt>
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-</dt>
-</dl>
+
  
 
  

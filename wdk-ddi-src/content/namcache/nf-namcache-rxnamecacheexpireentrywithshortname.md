@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4d842454-4a59-4f82-9aeb-3dfbe9d8cd8a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxNameCacheExpireEntryWithShortName
+ms.keywords : RxNameCacheExpireEntryWithShortName, RxNameCacheExpireEntryWithShortName function [Installable File System Drivers], rxref_fcde2e61-9855-4d66-8b81-a437921d5ec5.xml, namcache/RxNameCacheExpireEntryWithShortName, ifsk.rxnamecacheexpireentrywithshortname
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxNameCacheExpireEntryWithShortName
-req.alt-loc : namcache.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
@@ -82,32 +86,22 @@ Because the active list is scanned, the <b>RxNameCacheExpireEntryWithShortName</
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\namcache\nf-namcache-rxnamecacheactivateentry.md">RxNameCacheActivateEntry</a>
-</dt>
-<dt>
-<a href="..\namcache\nf-namcache-rxnamecachecheckentry.md">RxNameCacheCheckEntry</a>
-</dt>
-<dt>
-<a href="..\namcache\nf-namcache-rxnamecachecreateentry.md">RxNameCacheCreateEntry</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecacheexpireentry.md">RxNameCacheExpireEntry</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecachefetchentry.md">RxNameCacheFetchEntry</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecachefinalize.md">RxNameCacheFinalize</a>
-</dt>
-<dt>
+
+<a href="..\namcache\nf-namcache-rxnamecachecheckentry.md">RxNameCacheCheckEntry</a>
+
 <a href="..\namcache\nf-namcache-rxnamecachefreeentry.md">RxNameCacheFreeEntry</a>
-</dt>
-<dt>
+
 <a href="..\namcache\nf-namcache-rxnamecacheinitialize.md">RxNameCacheInitialize</a>
-</dt>
-</dl>
+
+<a href="..\namcache\nf-namcache-rxnamecachecreateentry.md">RxNameCacheCreateEntry</a>
+
  
 
  

@@ -2,13 +2,13 @@
 UID : NC:hdaudio.PGET_WALL_CLOCK_REGISTER
 title : PGET_WALL_CLOCK_REGISTER
 author : windows-driver-content
-description : The GetWallClockRegister routine retrieves a pointer to the wall clock register.The function pointer type for a GetWallClockRegister routine is defined as
+description : The GetWallClockRegister routine retrieves a pointer to the wall clock register.The function pointer type for a GetWallClockRegister routine is defined as:
 old-location : audio\getwallclockregister.htm
 old-project : audio
 ms.assetid : 4efe4b23-eb4f-4170-8d73-05cae2ba21c2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords : audio.getwallclockregister, GetWallClockRegister callback function [Audio Devices], GetWallClockRegister, PGET_WALL_CLOCK_REGISTER, PGET_WALL_CLOCK_REGISTER, hdaudio/GetWallClockRegister, aud-prop2_1600e03f-4be0-4a61-9596-7970ace3df2f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetWallClockRegister
-req.alt-loc : hdaudio.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : <=DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
@@ -85,17 +89,12 @@ For more information, see <a href="https://msdn.microsoft.com/6764affc-a4f0-4568
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
-</dt>
-<dt>
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
-</dt>
-<dt>
+
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
-</dt>
-</dl>
+
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
+
  
 
  

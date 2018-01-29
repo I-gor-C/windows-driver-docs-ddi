@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : d2615320-6c8a-4813-afb5-c5b510e5fde9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_ERROR_SOURCE_TYPE, *PWHEA_ERROR_SOURCE_TYPE, WHEA_ERROR_SOURCE_TYPE
+ms.keywords : ntddk/WheaErrSrcTypeCPE, ntddk/WHEA_ERROR_SOURCE_TYPE, ntddk/WheaErrSrcTypeIPFCPE, WheaErrSrcTypeINIT, WheaErrSrcTypeIPFMCA, WheaErrSrcTypeMax, ntddk/WheaErrSrcTypeIPFMCA, ntddk/WheaErrSrcTypeMax, ntddk/WheaErrSrcTypeSCIGeneric, PWHEA_ERROR_SOURCE_TYPE, whearef_786d549e-14b1-4945-a1ce-23c7112ff0c8.xml, WheaErrSrcTypePCIe, ntddk/WheaErrSrcTypeINIT, WheaErrSrcTypeIPFCPE, _WHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypeIPFCMC, ntddk/WheaErrSrcTypePCIe, WheaErrSrcTypeNMI, WheaErrSrcTypeGeneric, ntddk/WheaErrSrcTypeCMC, ntddk/WheaErrSrcTypeMCE, *PWHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypeBOOT, WHEA_ERROR_SOURCE_TYPE enumeration [WHEA Drivers and Applications], ntddk/WheaErrSrcTypeIPFCMC, ntddk/WheaErrSrcTypeNMI, PWHEA_ERROR_SOURCE_TYPE enumeration pointer [WHEA Drivers and Applications], WheaErrSrcTypeSCIGeneric, WheaErrSrcTypeMCE, WheaErrSrcTypeCPE, WheaErrSrcTypeCMC, WHEA_ERROR_SOURCE_TYPE, whea.whea_error_source_type, ntddk/PWHEA_ERROR_SOURCE_TYPE, ntddk/WheaErrSrcTypeGeneric, ntddk/WheaErrSrcTypeBOOT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_ERROR_SOURCE_TYPE
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PWHEA_ERROR_SOURCE_TYPE, WHEA_ERROR_SOURCE_TYPE"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WHEA_ERROR_SOURCE_TYPE, *PWHEA_ERROR_SOURCE_TYPE
 ---
 
 # _WHEA_ERROR_SOURCE_TYPE Enumeration
@@ -81,6 +85,11 @@ typedef enum _WHEA_ERROR_SOURCE_TYPE {
 </tr>
 
 <tr>
+<td>WheaErrSrcTypeGenericV2</td>
+<td></td>
+</tr>
+
+<tr>
 <td>WheaErrSrcTypeINIT</td>
 <td>An Itanium processor INIT error.</td>
 </tr>
@@ -124,6 +133,11 @@ typedef enum _WHEA_ERROR_SOURCE_TYPE {
 <td>WheaErrSrcTypeSCIGeneric</td>
 <td>A service control interrupt (SCI).</td>
 </tr>
+
+<tr>
+<td>WheaErrSrcTypeSCIGenericV2</td>
+<td></td>
+</tr>
 </table>
 
 ## Remarks
@@ -142,14 +156,10 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
-</dt>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+
  
 
  

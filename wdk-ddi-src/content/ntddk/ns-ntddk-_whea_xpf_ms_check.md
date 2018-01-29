@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : aa446b31-ac53-4623-bacd-72ab72e94618
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _WHEA_XPF_MS_CHECK, WHEA_XPF_MS_CHECK, *PWHEA_XPF_MS_CHECK
+ms.keywords : "*PWHEA_XPF_MS_CHECK, whearef_ebbe0f28-499b-41ad-9e2b-c533c391c154.xml, PWHEA_XPF_MS_CHECK, ntddk/WHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK union pointer [WHEA Drivers and Applications], WHEA_XPF_MS_CHECK, WHEA_XPF_MS_CHECK union [WHEA Drivers and Applications], ntddk/PWHEA_XPF_MS_CHECK, whea.whea_xpf_ms_check, _WHEA_XPF_MS_CHECK"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1,
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : WHEA_XPF_MS_CHECK
-req.alt-loc : ntddk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : WHEA_XPF_MS_CHECK, *PWHEA_XPF_MS_CHECK
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_XPF_MS_CHECK, WHEA_XPF_MS_CHECK"
 ---
 
 # _WHEA_XPF_MS_CHECK structure
@@ -62,13 +66,17 @@ typedef union _WHEA_XPF_MS_CHECK {
 
 ## Members
 
-        
-            `XpfMsCheck`
 
-            A ULONGLONG representation of the contents of the WHEA_XPF_MS_CHECK union.
+`DUMMYSTRUCTNAME`
 
-    ## Remarks
-        If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_MSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_MS_CHECK union.
+
+
+`XpfMsCheck`
+
+A ULONGLONG representation of the contents of the WHEA_XPF_MS_CHECK union.
+
+## Remarks
+If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_MSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_MS_CHECK union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,13 +86,10 @@ typedef union _WHEA_XPF_MS_CHECK {
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
-</dt>
-</dl>
+
  
 
  

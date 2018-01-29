@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 726a4f12-3cee-4d95-89d3-39f2bb357967
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_GETPROCESSDEVICELOSTSUPPORT, D3DKMT_GETPROCESSDEVICELOSTSUPPORT
+ms.keywords : D3DKMT_GETPROCESSDEVICELOSTSUPPORT, D3DKMT_GETPROCESSDEVICELOSTSUPPORT structure [Display Devices], display.d3dkmt-getprocessdevicelostsupport, d3dkmthk/D3DKMT_GETPROCESSDEVICELOSTSUPPORT, _D3DKMT_GETPROCESSDEVICELOSTSUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_GETPROCESSDEVICELOSTSUPPORT
-req.alt-loc : d3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_GETPROCESSDEVICELOSTSUPPORT
 ---
 
@@ -50,18 +54,18 @@ typedef struct _D3DKMT_GETPROCESSDEVICELOSTSUPPORT {
 
 ## Members
 
-        
-            `AdapterLuid`
 
-            LUID of Adapter that is potentially being detached
-        
-            `hProcess`
+`AdapterLuid`
 
-            A handle to the process.
-        
-            `Support`
+LUID of Adapter that is potentially being detached
 
-            Indicates whether or not all devices of the process using the adapter can recover from graphics device lost.
+`hProcess`
+
+A handle to the process.
+
+`Support`
+
+Indicates whether or not all devices of the process using the adapter can recover from graphics device lost.
 
 
 ## Requirements

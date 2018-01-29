@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A80754BD-0F23-4EE9-898F-30743AA82C72
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIncrementKeepAliveCount
+ms.keywords : IoIncrementKeepAliveCount, kernel.ioincrementkeepalivecount, ntddk/IoIncrementKeepAliveCount, IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IoIncrementKeepAliveCount
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : 
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -77,11 +81,8 @@ This routine returns <b>STATUS_SUCCESS</b> on success, or the appropriate <b>NTS
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-iodecrementkeepalivecount.md">IoDecrementKeepAliveCount</a>
-</dt>
-</dl>
+
  
 
  

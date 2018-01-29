@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4295ef73-b9a8-4593-8114-d0b836275b13
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : _WDF_IO_TARGET_SENT_IO_ACTION, WDF_IO_TARGET_SENT_IO_ACTION
+ms.keywords : kmdf.wdf_io_target_sent_io_action, WdfIoTargetCancelSentIo, wdfiotarget/WDF_IO_TARGET_SENT_IO_ACTION, wdfiotarget/WdfIoTargetCancelSentIo, wdf.wdf_io_target_sent_io_action, wdfiotarget/WdfIoTargetWaitForSentIoToComplete, WdfIoTargetSentIoUndefined, WdfIoTargetWaitForSentIoToComplete, _WDF_IO_TARGET_SENT_IO_ACTION, WdfIoTargetLeaveSentIoPending, wdfiotarget/WdfIoTargetLeaveSentIoPending, DFIOTargetRef_f9150c63-6b0b-4050-b4ae-fd5ebbda4e0d.xml, wdfiotarget/WdfIoTargetSentIoUndefined, WDF_IO_TARGET_SENT_IO_ACTION, WDF_IO_TARGET_SENT_IO_ACTION enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_IO_TARGET_SENT_IO_ACTION
-req.alt-loc : wdfiotarget.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_IO_TARGET_SENT_IO_ACTION
 req.product : Windows 10 or later.
 ---
@@ -93,14 +97,10 @@ For the UMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
-</dt>
-<dt>
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
-</dt>
-</dl>
+
+<a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
+
  
 
  

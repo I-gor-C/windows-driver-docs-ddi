@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f915294f-457f-4913-b4b0-e94e1806a06d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTargetStateManagement, IWDFIoTargetStateManagement::GetState, GetState
+ms.keywords : IWDFIoTargetStateManagement::GetState, umdf.iwdfiotargetstatemanagement_getstate, wudfddi/IWDFIoTargetStateManagement::GetState, wdf.iwdfiotargetstatemanagement_getstate, UMDFIoTargetObjectRef_0a52ff77-9947-49a1-958a-ffe6e61ec169.xml, GetState method, IWDFIoTargetStateManagement interface, GetState method, IWDFIoTargetStateManagement, GetState method, IWDFIoTargetStateManagement interface, GetState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFIoTargetStateManagement.GetState
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -53,11 +57,7 @@ This function has no parameters.
 
 ## Return Value
 
-<b>GetState</b> returns a <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.
-
-<b>GetState</b> returns a <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.
-
-<b>GetState</b> returns a <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.
+<b>GetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.
 
 ## Remarks
 
@@ -66,10 +66,6 @@ For more information about <b>GetState</b>, see <a href="https://msdn.microsoft.
 
 
 For more information about I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-i-o-targets-in-umdf">Using I/O Targets</a>.
-
-
-
-The following code example determines whether a local I/O target is stopped.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,14 +81,10 @@ The following code example determines whether a local I/O target is stopped.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560265">IWDFRemoteTarget::GetState</a>
-</dt>
-</dl>
+
  
 
  

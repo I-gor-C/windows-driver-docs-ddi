@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 023e3780-bc88-446b-b235-8853807fb05a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DDRAW_CAPS, DDRAW_CAPS
+ms.keywords : display.ddraw_caps, D3D_other_Structs_5e02fa0c-95ae-4b62-aaa3-7530aec9aee5.xml, DDRAW_CAPS, d3dumddi/DDRAW_CAPS, _DDRAW_CAPS, DDRAW_CAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DDRAW_CAPS
-req.alt-loc : d3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DDRAW_CAPS
 ---
 
@@ -50,11 +54,10 @@ typedef struct _DDRAW_CAPS {
 
 ## Members
 
-        
-            `Caps`
 
-            [out] A valid bitwise OR of the following general capability bits that the driver supports.
+`Caps`
 
+[out] A valid bitwise OR of the following general capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -91,11 +94,10 @@ Z-buffers can be depth-filled in bitblt operations.
 </td>
 </tr>
 </table>
-        
-            `Caps2`
 
-            [out] A valid bitwise OR of more of the following general capability bits that the driver supports.
+`Caps2`
 
+[out] A valid bitwise OR of more of the following general capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -152,11 +154,10 @@ The driver supports dynamic textures.
 </td>
 </tr>
 </table>
-        
-            `CKeyCaps`
 
-            [out] A valid bitwise OR of the following color key capability bits that the driver supports.
+`CKeyCaps`
 
+[out] A valid bitwise OR of the following color key capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -183,11 +184,10 @@ Transparent bit-block transfers (bitblts) can be performed with a color key that
 </td>
 </tr>
 </table>
-        
-            `FxCaps`
 
-            [out] A valid bitwise OR of the following stretching and effects capability bits that the driver supports.
+`FxCaps`
 
+[out] A valid bitwise OR of the following stretching and effects capability bits that the driver supports.
 <table>
 <tr>
 <th>Capability bit</th>
@@ -214,10 +214,10 @@ Bit-block transfers (bitblts) that flip the contents of the source surface to th
 </td>
 </tr>
 </table>
-        
-            `MaxVideoPorts`
 
-            [out] The maximum number of video ports that the device supports.
+`MaxVideoPorts`
+
+[out] The maximum number of video ports that the device supports.
 
 
 ## Requirements
@@ -228,19 +228,14 @@ Bit-block transfers (bitblts) that flip the contents of the source surface to th
 | **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-</dt>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-</dt>
-<dt>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
  
 
  

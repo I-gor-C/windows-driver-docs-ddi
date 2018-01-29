@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f13e9474-7805-4c58-983d-4cfea4f005cc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_REQUEST_COMPLETION_PARAMS_INIT
+ms.keywords : WDF_REQUEST_COMPLETION_PARAMS_INIT function, WDF_REQUEST_COMPLETION_PARAMS_INIT, kmdf.wdf_request_completion_params_init, DFRequestObjectRef_f92844e3-5003-45db-9684-608301b1ec32.xml, wdfrequest/WDF_REQUEST_COMPLETION_PARAMS_INIT, wdf.wdf_request_completion_params_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WDF_REQUEST_COMPLETION_PARAMS_INIT
-req.alt-loc : wdfrequest.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WDF_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
@@ -66,8 +70,6 @@ Drivers must call <b>WDF_REQUEST_COMPLETION_PARAMS_INIT</b> to initialize a <a h
 
 The <b>WDF_REQUEST_COMPLETION_PARAMS_INIT</b> function zeros the specified <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structure and sets the structure's <b>Size</b> member. It also sets the structure's <b>Type</b> member to <b>WdfRequestTypeNoFormat</b>.
 
-For a code example that uses <b>WDF_REQUEST_COMPLETION_PARAMS_INIT</b>, see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a>.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -82,11 +84,8 @@ For a code example that uses <b>WDF_REQUEST_COMPLETION_PARAMS_INIT</b>, see <a h
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a>
-</dt>
-</dl>
+
  
 
  

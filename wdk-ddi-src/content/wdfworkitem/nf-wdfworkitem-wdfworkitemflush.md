@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5868dd01-17ba-4edf-b665-c90d2b1aa2ba
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWorkItemFlush
+ms.keywords : kmdf.wdfworkitemflush, DFWorkItemObjectRef_620a50e7-1995-4806-b71a-932f7fc7c35a.xml, wdfworkitem/WdfWorkItemFlush, WdfWorkItemFlush method, WdfWorkItemFlush, wdf.wdfworkitemflush, PFN_WDFWORKITEMFLUSH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 1.0
 req.umdf-ver : 2.0
-req.alt-api : WdfWorkItemFlush
-req.alt-loc : Wdf01000.sys,Wdf01000.sys.dll,WUDFx02000.dll,WUDFx02000.dll.dll
 req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -70,8 +74,6 @@ Most drivers that use work items do not need to call <b>WdfWorkItemFlush</b>. A 
 
 For more information about work items, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-framework-work-items">Using Framework Work Items</a>.
 
-The following code example is an <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_query_remove.md">EvtIoTargetQueryRemove</a> callback function from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">Toaster</a> sample driver.
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -86,11 +88,8 @@ The following code example is an <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/2a2811de-9024-40a8-b8af-b61ca4100218">EvtWorkItem</a>
-</dt>
-</dl>
+
  
 
  

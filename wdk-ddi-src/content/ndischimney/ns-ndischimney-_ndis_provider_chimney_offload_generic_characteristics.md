@@ -7,8 +7,8 @@ old-location : netvista\ndis_provider_chimney_offload_generic_characteristics.ht
 old-project : netvista
 ms.assetid : e80a9999-2e4e-4da0-8aae-54ee71d9249d
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS
+ms.date : 1/18/2018
+ms.keywords : PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, netvista.ndis_provider_chimney_offload_generic_characteristics, ndischimney/NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, ndischimney/PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, _NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, tcp_chim_struct_3145314d-c0a6-4d4e-b489-c38dda6c43e5.xml, PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS
-req.alt-loc : ndischimney.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS
 ---
 
@@ -57,53 +61,53 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS {
 
 ## Members
 
-        
-            `Flags`
 
-            Reserved for system use.
-        
-            `Header`
+`Flags`
 
-            The header of the NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure. The header is
+Reserved for system use.
+
+`Header`
+
+The header of the NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure. The header is
      formatted as an 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure. The
      NDIS_OBJECT_HEADER structure contains the revision number of the
      NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure and the size of the
      NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure, including the header, in bytes. The 
      <b>Type</b> member of the header is not significant.
-        
-            `InitiateOffloadHandler`
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">
-     MiniportInitiateOffload</a> function.
-        
-            `InvalidateOffloadHandler`
+`InitiateOffloadHandler`
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">
-     MiniportInvalidateOffload</a> function.
-        
-            `QueryOffloadHandler`
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.miniportinitiateoffload" tabindex="0"><i>
+     MiniportInitiateOffload</i></mshelp:link> function.
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">
-     MiniportQueryOffload</a> function.
-        
-            `TerminateOffloadHandler`
+`InvalidateOffloadHandler`
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">
-     MiniportTerminateOffload</a> function.
-        
-            `UpdateOffloadHandler`
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.miniportinvalidateoffload" tabindex="0"><i>
+     MiniportInvalidateOffload</i></mshelp:link> function.
 
-            The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">
-     MiniportUpdateOffload</a> function.
+`QueryOffloadHandler`
 
-    ## Remarks
-        To register its generic chimney offload entry points, an offload target or intermediate driver calls
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.miniportqueryoffload" tabindex="0"><i>
+     MiniportQueryOffload</i></mshelp:link> function.
+
+`TerminateOffloadHandler`
+
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.miniportterminateoffload" tabindex="0"><i>
+     MiniportTerminateOffload</i></mshelp:link> function.
+
+`UpdateOffloadHandler`
+
+The entry point of the driver's 
+     <mshelp:link keywords="netvista.miniportupdateoffload" tabindex="0"><i>
+     MiniportUpdateOffload</i></mshelp:link> function.
+
+## Remarks
+To register its generic chimney offload entry points, an offload target or intermediate driver calls
     the 
     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function
     in the context of the 
@@ -119,36 +123,26 @@ typedef struct _NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS {
 | **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">MiniportInvalidateOffload</a>
-</dt>
-<dt>
-<a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a>
-</dt>
-<dt>
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-</dt>
-<dt>
+
+<a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">MiniportInvalidateOffload</a>
+
+<a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
+
 <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a>
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-</dt>
-<dt>
+
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

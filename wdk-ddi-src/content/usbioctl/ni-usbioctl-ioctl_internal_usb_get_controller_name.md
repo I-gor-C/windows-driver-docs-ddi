@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 52390982-febe-4d6d-b53a-160fb281b099
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _USB_HUB_TYPE, USB_HUB_TYPE
+ms.keywords : buses.ioctl_internal_usb_get_controller_name, IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME control code [Buses], IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME, usbioctl/IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME, usbirp_36fbf149-8f7d-46ac-9ef3-017cbb000e1c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME
-req.alt-loc : Usbioctl.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,17 +29,17 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : USB_HUB_TYPE
 req.product : Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME IOCTL
-The <b>IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</b> I/O request queries the bus driver for the device name of the USB host controller. 
-
-<b>IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</b> is a kernel-mode I/O control request. This request targets the USB hub PDO. This request must be sent at an IRQL of PASSIVE_LEVEL.
-
-
-
 The <b>IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</b> I/O request queries the bus driver for the device name of the USB host controller. 
 
 <b>IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</b> is a kernel-mode I/O control request. This request targets the USB hub PDO. This request must be sent at an IRQL of PASSIVE_LEVEL.
@@ -68,11 +66,10 @@ It will be filled only up to the length specified in <b>Parameters.Others.Argume
 <text></text>
 
 ### Status Block
-I/O Status block
 The bus or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or the appropriate error status.
 
-    ## Remarks
-        The caller must supply a buffer that is large enough to hold a <a href="..\usbioctl\ns-usbioctl-_usb_hub_name.md">USB_HUB_NAME</a> structure. The  <b>Parameters.Others.Argument2</b> value indicates size of that buffer. Upon successful completion, the <b>HubName</b> member of <b>USB_HUB_NAME</b> contains the name of the controller and the <b>ActualLength</b> member indicates the length of the controller name string. Note that <b>ActualLength</b> does not indicate the size of the entire <b>USB_HUB_NAME</b> structure. If the buffer supplied in <b>Parameters.Others.Argument1</b> is not large enough to hold the string, the <b>HubName</b> value might show a truncated string.
+## Remarks
+The caller must supply a buffer that is large enough to hold a <a href="..\usbioctl\ns-usbioctl-_usb_hub_name.md">USB_HUB_NAME</a> structure. The  <b>Parameters.Others.Argument2</b> value indicates size of that buffer. Upon successful completion, the <b>HubName</b> member of <b>USB_HUB_NAME</b> contains the name of the controller and the <b>ActualLength</b> member indicates the length of the controller name string. Note that <b>ActualLength</b> does not indicate the size of the entire <b>USB_HUB_NAME</b> structure. If the buffer supplied in <b>Parameters.Others.Argument1</b> is not large enough to hold the string, the <b>HubName</b> value might show a truncated string.
 
 To obtain the size of the buffer required to hold the string, send the request twice. In the first request, specify a buffer that is at least <code>sizeof(USB_HUB_NAME)</code> bytes. Otherwise, <b>ActualLength</b> does not indicate the correct length of the string and the request fails with STATUS_BUFFER_TOO_SMALL.
 
@@ -85,13 +82,10 @@ After the first request completes successfully, allocate a buffer of <code>Actua
 | **Header** | usbioctl.h |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\usbioctl\ns-usbioctl-_usb_hub_name.md">USB_HUB_NAME</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 483e6144-9752-4d47-9ed4-7e73bc0a59cc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SRIOV_INVALIDATE_BLOCK, SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK
+ms.keywords : "*PSRIOV_INVALIDATE_BLOCK, PCI.sriov_invalidate_block, SRIOV_INVALIDATE_BLOCK, pcivirt/SRIOV_INVALIDATE_BLOCK, _SRIOV_INVALIDATE_BLOCK, SRIOV_INVALIDATE_BLOCK structure [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : SRIOV_INVALIDATE_BLOCK
-req.alt-loc : Pcivirt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK
 ---
 
@@ -47,14 +51,14 @@ typedef struct _SRIOV_INVALIDATE_BLOCK {
 
 ## Members
 
-        
-            `BlockMask`
 
-            a block of configuration data.
-        
-            `VfIndex`
+`BlockMask`
 
-            Zero-based index of the virtual function (VF) from the first VF exposed by this physical function (PF).
+a block of configuration data.
+
+`VfIndex`
+
+Zero-based index of the virtual function (VF) from the first VF exposed by this physical function (PF).
 
 
 ## Requirements
@@ -65,13 +69,10 @@ typedef struct _SRIOV_INVALIDATE_BLOCK {
 | **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/b6f0e65f-c8e4-418f-a4b2-a7037368d5a3">IOCTL_SRIOV_INVALIDATE_BLOCK</a>
-</dt>
-</dl>
+
  
 
  

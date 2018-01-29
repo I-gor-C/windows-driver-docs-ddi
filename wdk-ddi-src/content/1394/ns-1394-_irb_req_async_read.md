@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : C88A1F30-FC6B-4EC4-8F10-F507E17CF01D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _IRB_REQ_ASYNC_READ, IRB_REQ_ASYNC_READ
+ms.keywords : IEEE.irb_req_async_read, IRB_REQ_ASYNC_READ, IRB_REQ_ASYNC_READ structure [Buses], 1394/IRB_REQ_ASYNC_READ, _IRB_REQ_ASYNC_READ
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IRB_REQ_ASYNC_READ
-req.alt-loc : 1394.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : IRB_REQ_ASYNC_READ
 ---
 
@@ -56,23 +60,22 @@ typedef struct _IRB_REQ_ASYNC_READ {
 
 ## Members
 
-        
-            `chPriority`
 
-            Reserved. Drivers must set this to zero.
-        
-            `DestinationAddress`
+`chPriority`
 
-            Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
-        
-            `ElapsedTime`
+Reserved. Drivers must set this to zero.
 
-            Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
-        
-            `fulFlags`
+`DestinationAddress`
 
-            Specifies any nondefault settings for this operation. The following flags are provided.
+Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
 
+`ElapsedTime`
+
+Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
+
+`fulFlags`
+
+Specifies any nondefault settings for this operation. The following flags are provided.
 <table>
 <tr>
 <th>Flag</th>
@@ -99,14 +102,14 @@ The bus driver returns the elapsed time of the operation in <b>u.AsyncRead.Elaps
 </td>
 </tr>
 </table>
-        
-            `Mdl`
 
-            Points to an MDL that describes the device driver's buffer, which receives data from the 1394 node.
-        
-            `nBlockSize`
+`Mdl`
 
-            Specifies the size of each individual block within the data stream that is read as a whole from the 1394 node. If this parameter is zero, the maximum packet size for the device and speed selected is used to issue these read requests, unless raw-mode addressing is used.
+Points to an MDL that describes the device driver's buffer, which receives data from the 1394 node.
+
+`nBlockSize`
+
+Specifies the size of each individual block within the data stream that is read as a whole from the 1394 node. If this parameter is zero, the maximum packet size for the device and speed selected is used to issue these read requests, unless raw-mode addressing is used.
 
 
 
@@ -115,28 +118,28 @@ If raw-mode addressing is used, the client driver should set the <b>nBlockSize</
 
 
 For more information on raw-mode addressing, see <a href="https://msdn.microsoft.com/93ad0cdf-5ac2-4916-b90e-1e64ca4494b6">Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus.</a>
-<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="buses.device_driver_interface__ddi__changes_in_windows_7#speed#speed">New Flags for Speed and Payload Size</a> and <a href="buses.device_driver_interface__ddi__changes_in_windows_7#ioctl#ioctl">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
+<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
 <div> </div>
-        
-            `nNumberOfBytesToRead`
 
-            Specifies the number of bytes to be read from the 1394 node.
-        
-            `nSpeed`
+`nNumberOfBytesToRead`
 
-            Reserved. Drivers must set this to zero.
-        
-            `Reserved`
+Specifies the number of bytes to be read from the 1394 node.
 
-            Reserved. Drivers must set this to zero.
-        
-            `tCode`
+`nSpeed`
 
-            Reserved. Drivers must set this to zero.
-        
-            `ulGeneration`
+Reserved. Drivers must set this to zero.
 
-            Specifies the bus reset generation as known by the device driver that submits this asynchronous request. If the generation count specified does not match the actual generation of the bus, this request is returned with an error of STATUS_INVALID_GENERATION.
+`Reserved`
+
+Reserved. Drivers must set this to zero.
+
+`tCode`
+
+Reserved. Drivers must set this to zero.
+
+`ulGeneration`
+
+Specifies the bus reset generation as known by the device driver that submits this asynchronous request. If the generation count specified does not match the actual generation of the bus, this request is returned with an error of STATUS_INVALID_GENERATION.
 
 
 ## Requirements

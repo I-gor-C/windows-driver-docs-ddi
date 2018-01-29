@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5670a4dd-3804-4532-8765-2fdffe1c4a0b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoSetPowerRequest
+ms.keywords : portn_8f3abb03-a324-4841-b630-b62344d656ce.xml, PoSetPowerRequest routine [Kernel-Mode Driver Architecture], kernel.posetpowerrequest, PoSetPowerRequest, wdm/PoSetPowerRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 7.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoSetPowerRequest
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -51,12 +55,11 @@ NTSTATUS PoSetPowerRequest(
 
 `PowerRequest`
 
-A pointer to a power request object that was created by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
+A pointer to a power request object that was created by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
 
 `Type`
 
 The type of power request. Set this parameter to the following <a href="..\wdm\ne-wdm-_power_request_type.md">POWER_REQUEST_TYPE</a> enumeration value:
-
 <ul>
 <li>
 <b>PowerRequestSystemRequired</b>
@@ -68,13 +71,27 @@ The type of power request. Set this parameter to the following <a href="..\wdm\n
 ## Return Value
 
 <b>PoSetPowerRequest</b> returns STATUS_SUCCESS if the call is successful. If the call fails, possible error return codes include the following:
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>The <i>Type</i> parameter is set to an unsupported value.
+</dl>
+</td>
+<td width="60%">
+The <i>Type</i> parameter is set to an unsupported value.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
-A driver can call the <b>PoSetPowerRequest</b> routine to request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> override several types of default power behavior, which are specified as <a href="..\wdm\ne-wdm-_power_request_type.md">POWER_REQUEST_TYPE</a> enumeration values. To restore the default behavior, the driver cancels the request by calling the <a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a> routine.
+A driver can call the <b>PoSetPowerRequest</b> routine to request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> override several types of default power behavior, which are specified as <a href="..\wdm\ne-wdm-_power_request_type.md">POWER_REQUEST_TYPE</a> enumeration values. To restore the default behavior, the driver cancels the request by calling the <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> routine.
 
 The power manager maintains a count of the active requests for each power request type. The <b>PoSetPowerRequest</b> routine increments the count for the specified power request type by one. The <b>PoClearPowerRequest</b> routine decrements the count by one. A nonzero count indicates that requests from one or more components are active. After the count decrements to zero, the computer reverts to the default behavior for the specified power request type.
 
@@ -92,17 +109,12 @@ The power manager maintains a count of the active requests for each power reques
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
-</dt>
-<dt>
+<a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a>
+
 <a href="..\wdm\ne-wdm-_power_request_type.md">POWER_REQUEST_TYPE</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+
  
 
  

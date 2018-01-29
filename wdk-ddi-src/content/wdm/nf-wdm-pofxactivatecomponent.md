@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B964B836-68C1-4254-963C-8D46ACE64107
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxActivateComponent
+ms.keywords : PO_FX_FLAG_ASYNC_ONLY, wdm/PoFxActivateComponent, PoFxActivateComponent, PoFxActivateComponent routine [Kernel-Mode Driver Architecture], PO_FX_FLAG_BLOCKING, kernel.pofxactivatecomponent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PoFxActivateComponent
-req.alt-loc : Ntoskrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -64,13 +68,34 @@ The index that identifies the component. This parameter is an index into the <b>
 The flags for the activation operation. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_<i>XXX</i></b> bits:
 
 These two flag bits are mutually exclusive. For more information, see Remarks.
-
 <table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
 </tr>
 <tr>
+<td width="40%"><a id="PO_FX_FLAG_BLOCKING"></a><a id="po_fx_flag_blocking"></a><dl>
+<dt><b>PO_FX_FLAG_BLOCKING</b></dt>
+<dt>0x1</dt>
+</dl>
+</td>
+<td width="60%">
+Make the condition change synchronous. If this flag is set, the routine that requests the condition change does not return control to the calling driver until the component hardware completes the transition to the new condition. This flag can be used only if the caller is running at IRQL &lt; DISPATCH_LEVEL.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="PO_FX_FLAG_ASYNC_ONLY"></a><a id="po_fx_flag_async_only"></a><dl>
+<dt><b>PO_FX_FLAG_ASYNC_ONLY</b></dt>
+<dt>0x2</dt>
+</dl>
+</td>
+<td width="60%">
+Make the condition change fully asynchronous. If this flag is set, the calling driver's callback routine is called from a thread other than the thread in which the routine that requests the condition change is called. Thus, the routine that requests the condition change always returns asynchronously without waiting for the callback to complete.
+
+</td>
+</tr>
+</table>
 
 
 ## Return Value
@@ -113,23 +138,16 @@ PoFx notifies the driver when a transition between the active condition and idle
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a>
-</dt>
-<dt>
+
 <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-pofxidlecomponent.md">PoFxIdleComponent</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-</dt>
-</dl>
+
+<a href="..\wdm\nf-wdm-pofxidlecomponent.md">PoFxIdleComponent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a>
+
  
 
  

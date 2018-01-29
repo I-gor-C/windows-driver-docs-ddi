@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : be96eb59-6128-41bd-ad31-38f0d1a4e656
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : NpdBrokerUninitialize
+ms.keywords : stream.kstrcontextdispatch, KStrContextDispatch routine [Streaming Media Devices], KStrContextDispatch, PFNKSCONTEXT_DISPATCH, PFNKSCONTEXT_DISPATCH, ks/KStrContextDispatch, ksfunc_b607dd80-6da6-4364-9452-4c2e53c54343.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KStrContextDispatch
-req.alt-loc : ks.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : KEYWORDSELECTOR
 ---
 
@@ -85,11 +89,8 @@ To manipulate the list entry only, <i>KStrContextDispatch</i> can call<b> KsSetP
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\nf-ks-kssetpowerdispatch.md">KsSetPowerDispatch</a>
-</dt>
-</dl>
+
  
 
  

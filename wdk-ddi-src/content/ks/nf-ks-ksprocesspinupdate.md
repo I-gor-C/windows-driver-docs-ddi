@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9f6c28ad-d3dd-4be4-a637-10958a9cbd20
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsProcessPinUpdate
+ms.keywords : stream.ksprocesspinupdate, KsProcessPinUpdate, KsProcessPinUpdate function [Streaming Media Devices], ks/KsProcessPinUpdate, avfunc_8f096e7d-7eb1-40c7-bcc9-762e671bb3d4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Microsoft Windows XP and later operatin
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KsProcessPinUpdate
-req.alt-loc : Ks.lib,Ks.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : Ks.lib
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -75,14 +79,10 @@ For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a>
-</dt>
-<dt>
+
 <a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
-</dt>
-</dl>
+
  
 
  

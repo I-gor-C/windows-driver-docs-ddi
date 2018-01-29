@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2330fda2-71f5-4a8b-8124-775a40926bc1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeBugCheckEx
+ms.keywords : kernel.kebugcheckex, KeBugCheckEx routine [Kernel-Mode Driver Architecture], KeBugCheckEx, wdm/KeBugCheckEx, k105_17af10bb-b21d-408e-bf73-421ce705d117.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 2000 and later versions of Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KeBugCheckEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : Any level
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -104,23 +108,16 @@ However, even during driver development, this routine is of only limited utility
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
-</dt>
-<dt>
 <a href="..\ntddk\nf-ntddk-kebugcheck.md">KeBugCheck</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
+
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+
 <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
-</dt>
-</dl>
+
  
 
  

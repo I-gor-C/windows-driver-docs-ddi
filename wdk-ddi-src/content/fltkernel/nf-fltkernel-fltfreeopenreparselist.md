@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 78FA1585-F834-48E4-BB15-78BA5563F9D0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFreeOpenReparseList
+ms.keywords : ifsk.fltfreeopenreparselist, FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers], fltkernel/FltAddOpenReparseEntry, FltFreeOpenReparseList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10, version 1607
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FltAddOpenReparseEntry
-req.alt-loc : fltKernel.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : _IRQL_requires_max_(APC_LEVEL)
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : EXpsFontRestriction
 ---
 

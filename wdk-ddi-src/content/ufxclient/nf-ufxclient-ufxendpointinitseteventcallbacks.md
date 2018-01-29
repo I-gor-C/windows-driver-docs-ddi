@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D3D8D948-400A-47A0-98E9-ECF5643DB5D2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UfxEndpointInitSetEventCallbacks
+ms.keywords : UfxEndpointInitSetEventCallbacks method [Buses], UfxEndpointInitSetEventCallbacks, buses.ufxendpointinitseteventcallbacks, ufxclient/UfxEndpointInitSetEventCallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : UfxEndpointInitSetEventCallbacks
-req.alt-loc : ufxclient.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -69,7 +73,7 @@ The client driver calls <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md"
 
   The client driver first calls <a href="..\ufxclient\nf-ufxclient-ufx_endpoint_callbacks_init.md">UFX_ENDPOINT_CALLBACKS_INIT</a> to initialize a <a href="..\ufxclient\ns-ufxclient-_ufx_endpoint_callbacks.md">UFX_ENDPOINT_CALLBACKS</a> structure. Then it calls <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a> with the initialized <b>UFX_ENDPOINT_CALLBACKS</b> structure.
 
-For an code example that shows how to create a UFXENDPOINT object and initialize its context, see the Remarks section of <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.</p>
+For an code example that shows how to create a UFXENDPOINT object and initialize its context, see the Remarks section of <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A89AB86B-4DC9-43ED-9EE6-1D4B693DAB91
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE
+ms.keywords : PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE, pepfx/PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE, PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_interrupt_resource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported starting with Windows 10.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE
-req.alt-loc : pepfx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
@@ -107,11 +111,8 @@ This function does not return a value.
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\pepfx\ns-pepfx-_pep_acpi_interrupt_resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a>
-</dt>
-</dl>
+
  
 
  

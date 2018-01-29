@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 192F419C-F38F-4B42-8111-86D58D6781DA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfntrimresidencyset, pfnTrimResidencySet callback function [Display Devices], pfnTrimResidencySet, PFND3DDDI_TRIMRESIDENCYSET, PFND3DDDI_TRIMRESIDENCYSET, d3dukmdt/pfnTrimResidencySet
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 10
 req.target-min-winversvr : Windows Server 2016
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnTrimResidencySet
-req.alt-loc : d3dukmdt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -80,11 +84,8 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_trimresidencyset.md">D3DDDIARG_TRIMRESIDENCYSET</a>
-</dt>
-</dl>
+
  
 
  

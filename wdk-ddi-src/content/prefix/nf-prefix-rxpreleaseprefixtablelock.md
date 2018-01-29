@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 57aef4ed-2ece-4af3-b1ca-e4fe5a306f82
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxpReleasePrefixTableLock
+ms.keywords : RxpReleasePrefixTableLock function [Installable File System Drivers], rxref_34f5b33a-efeb-42a0-8e57-6c32c262319a.xml, RxpReleasePrefixTableLock, prefix/RxpReleasePrefixTableLock, ifsk.rxpreleaseprefixtablelock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : RxpReleasePrefixTableLock routine is only available 
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxpReleasePrefixTableLock
-req.alt-loc : prefix.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PSHIMOPTS, SHIMOPTS"
 req.product : Windows 10 or later.
 ---
@@ -55,15 +59,15 @@ A pointer to the RX_PREFIX_TABLE structure where the lock was previously acquire
 
 `ProcessBufferingStateChangeRequests`
 
-
+TBD
 
 `FileName`
 
-
+TBD
 
 `LineNumber`
 
-
+TBD
 
 
 ## Return Value
@@ -90,29 +94,20 @@ Normal kernel APC delivery should be disabled before calling the <b>RxpAcquirePr
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545900">FsRtlEnterFileSystem</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
-</dt>
-<dt>
-<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
-</dt>
-<dt>
-<a href="..\prefix\nf-prefix-rxprefixtablelookupname.md">RxPrefixTableLookupName</a>
-</dt>
-<dt>
-<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
-</dt>
-<dt>
+
+<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
+
 <a href="..\prefix\nf-prefix-rxpacquireprefixtablelockshared.md">RxpAcquirePrefixTableLockShared</a>
-</dt>
-</dl>
+
+<a href="..\prefix\nf-prefix-rxprefixtablelookupname.md">RxPrefixTableLookupName</a>
+
+<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
+
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545900">FsRtlEnterFileSystem</a>
+
  
 
  

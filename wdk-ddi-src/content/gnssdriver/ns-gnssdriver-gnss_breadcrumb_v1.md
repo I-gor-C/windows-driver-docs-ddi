@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : BE1D09C4-8EC0-4BF3-A943-20EDD44F9CF1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_BREADCRUMB_V1, GNSS_BREADCRUMB_V1, *PGNSS_BREADCRUMB_V1
+ms.keywords : GNSS_BREADCRUMB_V1 structure [Sensor Devices], GNSS_BREADCRUMB_V1, gnssdriver/GNSS_BREADCRUMB_V1, *PGNSS_BREADCRUMB_V1, PGNSS_BREADCRUMB_V1 structure pointer [Sensor Devices], PGNSS_BREADCRUMB_V1, gnssdriver/PGNSS_BREADCRUMB_V1, sensors.gnss_breadcrumb_v1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GNSS_BREADCRUMB_V1
-req.alt-loc : gnssdriver.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : GNSS_BREADCRUMB_V1, *PGNSS_BREADCRUMB_V1
 ---
 
@@ -56,50 +60,50 @@ typedef struct {
 
 ## Members
 
-        
-            `Altitude`
 
-            Contains the breadcrumb altitude value at the time of the fix.
-        
-            `AltitudeAccuracy`
+`Altitude`
 
-            Contains the breadcrumb altitude accuracy value.
-        
-            `FixSuccess`
+Contains the breadcrumb altitude value at the time of the fix.
 
-            A Boolean type that contains the fix success value.
-        
-            `FixTimeStamp`
+`AltitudeAccuracy`
 
-            Contains the breadcrumb fix timestamp value.
-        
-            `Heading`
+Contains the breadcrumb altitude accuracy value.
 
-            Contains the breadcrumb heading value at the time of the fix.
-        
-            `HeadingAccuracy`
+`FixSuccess`
 
-            Contains the breadcrumb heading accuracy value.
-        
-            `HorizontalAccuracy`
+A Boolean type that contains the fix success value.
 
-            Contains the breadcrumb horizontal altitude value.
-        
-            `Latitude`
+`FixTimeStamp`
 
-            Contains the breadcrumb longitude value at the time of the fix.
-        
-            `Longitude`
+Contains the breadcrumb fix timestamp value.
 
-            Contains the breadcrumb latitude at the time of the fix.
-        
-            `Speed`
+`Heading`
 
-            Contains the speed value at the time of the breadcrumb fix.
-        
-            `SpeedAccuracy`
+Contains the breadcrumb heading value at the time of the fix.
 
-            Contains the breadcrumb speed accuracy value.
+`HeadingAccuracy`
+
+Contains the breadcrumb heading accuracy value.
+
+`HorizontalAccuracy`
+
+Contains the breadcrumb horizontal altitude value.
+
+`Latitude`
+
+Contains the breadcrumb longitude value at the time of the fix.
+
+`Longitude`
+
+Contains the breadcrumb latitude at the time of the fix.
+
+`Speed`
+
+Contains the speed value at the time of the breadcrumb fix.
+
+`SpeedAccuracy`
+
+Contains the breadcrumb speed accuracy value.
 
 
 ## Requirements

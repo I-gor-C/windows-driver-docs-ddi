@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e3478867-394b-466c-ad9a-259bedd66669
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DVD_COPYRIGHT_DESCRIPTOR, DVD_COPYRIGHT_DESCRIPTOR, *PDVD_COPYRIGHT_DESCRIPTOR
+ms.keywords : "*PDVD_COPYRIGHT_DESCRIPTOR, PDVD_COPYRIGHT_DESCRIPTOR, structs-DVD_35ca576a-d7b4-49df-95cf-1d5339c6ae78.xml, DVD_COPYRIGHT_DESCRIPTOR structure [Storage Devices], _DVD_COPYRIGHT_DESCRIPTOR, ntddcdvd/PDVD_COPYRIGHT_DESCRIPTOR, PDVD_COPYRIGHT_DESCRIPTOR structure pointer [Storage Devices], DVD_COPYRIGHT_DESCRIPTOR, ntddcdvd/DVD_COPYRIGHT_DESCRIPTOR, storage.dvd_copyright_descriptor"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DVD_COPYRIGHT_DESCRIPTOR
-req.alt-loc : ntddcdvd.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DVD_COPYRIGHT_DESCRIPTOR, *PDVD_COPYRIGHT_DESCRIPTOR
 ---
 
@@ -48,18 +52,18 @@ typedef struct _DVD_COPYRIGHT_DESCRIPTOR {
 
 ## Members
 
-        
-            `CopyrightProtectionType`
 
-            Indicates, when set to 1, the presence of data specific to a copyright protection system. A value of zero indicates there is no such data. All other values are reserved.
-        
-            `RegionManagementInformation`
+`CopyrightProtectionType`
 
-            Indicates in which regions of the world the disc can be played. Each bit represents one of eight regions. If a bit is set, the disc cannot be played in the corresponding region. If a bit is not set, the disc can be played in the corresponding region.
-        
-            `Reserved`
+Indicates, when set to 1, the presence of data specific to a copyright protection system. A value of zero indicates there is no such data. All other values are reserved.
 
-            Reserved.
+`RegionManagementInformation`
+
+Indicates in which regions of the world the disc can be played. Each bit represents one of eight regions. If a bit is set, the disc cannot be played in the corresponding region. If a bit is not set, the disc can be played in the corresponding region.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements
@@ -70,13 +74,10 @@ typedef struct _DVD_COPYRIGHT_DESCRIPTOR {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
-</dt>
-</dl>
+
  
 
  

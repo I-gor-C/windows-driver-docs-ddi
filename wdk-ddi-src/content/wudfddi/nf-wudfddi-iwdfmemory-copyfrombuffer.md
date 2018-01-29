@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d8e56186-f801-4684-8919-236d2429310f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFMemory, IWDFMemory::CopyFromBuffer, CopyFromBuffer
+ms.keywords : IWDFMemory interface, CopyFromBuffer method, CopyFromBuffer method, CopyFromBuffer method, IWDFMemory interface, CopyFromBuffer, umdf.iwdfmemory_copyfrombuffer, UMDFMemoryObjectRef_ca676a5f-0dba-423a-9013-3bb95974371a.xml, wdf.iwdfmemory_copyfrombuffer, wudfddi/IWDFMemory::CopyFromBuffer, IWDFMemory::CopyFromBuffer, IWDFMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.5
-req.alt-api : IWDFMemory.CopyFromBuffer
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -70,8 +74,6 @@ The number of bytes to copy from the buffer that <i>pSourceBuffer</i> points to.
 
 <b>CopyFromBuffer</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
-For a code example of how to use the <b>CopyFromBuffer</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,14 +89,10 @@ For a code example of how to use the <b>CopyFromBuffer</b> method, see <a href="
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
-</dt>
-</dl>
+
  
 
  

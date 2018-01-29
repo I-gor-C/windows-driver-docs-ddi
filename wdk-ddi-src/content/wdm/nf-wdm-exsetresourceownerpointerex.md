@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 96293fbc-0c3c-4685-8708-dd84fcc2223e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExSetResourceOwnerPointerEx
+ms.keywords : ExSetResourceOwnerPointerEx, wdm/ExSetResourceOwnerPointerEx, ExSetResourceOwnerPointerEx routine [Kernel-Mode Driver Architecture], k102_2bcc65e9-00e7-4fc5-a1d6-1f797b2c6038.xml, kernel.exsetresourceownerpointerex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows 7 and later versions of the Win
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : ExSetResourceOwnerPointerEx
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : HwStorPortProhibitedDDIs
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <= DISPATCH_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---
@@ -62,14 +66,12 @@ A pointer value that identifies the resource owner. This parameter value is nomi
 `Flags`
 
 A set of flags that can modify the operation of this routine. Set this parameter either to zero or to the following flag value:
-
 <ul>
 <li>
 FLAG_OWNER_POINTER_IS_THREAD
 
 </li>
-</ul>
-If <i>Flags</i> = FLAG_OWNER_POINTER_IS_THREAD, <i>OwnerPointer</i> must point to a value of type ERESOURCE_THREAD, which is a pointer to an opaque thread object. If <i>Flags</i> = 0, <i>OwnerPointer</i> must point to a storage object in system memory that remains allocated until the resource is released. For more information, see the following Remarks section.
+</ul>If <i>Flags</i> = FLAG_OWNER_POINTER_IS_THREAD, <i>OwnerPointer</i> must point to a value of type ERESOURCE_THREAD, which is a pointer to an opaque thread object. If <i>Flags</i> = 0, <i>OwnerPointer</i> must point to a storage object in system memory that remains allocated until the resource is released. For more information, see the following Remarks section.
 
 
 ## Return Value
@@ -112,32 +114,22 @@ For more information about managing executive resources, see <a href="https://ms
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exacquireresourceexclusivelite.md">ExAcquireResourceExclusiveLite</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544614">ExGetCurrentResourceThread</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a>
-</dt>
-<dt>
 <a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a>
-</dt>
-<dt>
+
 <a href="..\wdm\nf-wdm-exsetresourceownerpointer.md">ExSetResourceOwnerPointer</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a>
+
+<a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a>
+
+<a href="..\wdm\nf-wdm-exacquireresourceexclusivelite.md">ExAcquireResourceExclusiveLite</a>
+
+<a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544614">ExGetCurrentResourceThread</a>
+
+<a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a>
+
  
 
  

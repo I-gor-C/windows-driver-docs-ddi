@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 591ef01a-1a89-454a-ab58-a76813a9d4c2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagTRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS
+ms.keywords : "*PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS structure [Streaming Media Devices], PTRANSPORTAUDIOPARMS, tagTRANSPORTAUDIOPARMS, PTRANSPORTAUDIOPARMS structure pointer [Streaming Media Devices], ksmedia/PTRANSPORTAUDIOPARMS, vidcapstruct_f68139f5-186d-43da-8f9a-45d2af4f782b.xml, stream.transportaudioparms, ksmedia/TRANSPORTAUDIOPARMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : TRANSPORTAUDIOPARMS
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS
 ---
 
 # tagTRANSPORTAUDIOPARMS structure
@@ -50,29 +54,29 @@ typedef struct tagTRANSPORTAUDIOPARMS {
 
 ## Members
 
-        
-            `EnableOutput`
 
-            Specifies the enable audio output. The default is ED_AUDIO_ALL.
-        
-            `EnableRecord`
+`EnableOutput`
 
-            Specifies the enable audio record. The default is zero.
-        
-            `EnableSelsync`
+Specifies the enable audio output. The default is ED_AUDIO_ALL.
 
-            Specifies the selsync.
-        
-            `Input`
+`EnableRecord`
 
-            Specifies the audio input to use. For example, specify zero to use the first (zeroth) audio input.
-        
-            `MonitorSource`
+Specifies the enable audio record. The default is zero.
 
-            Indicates the monitor source. The default is zero.
+`EnableSelsync`
 
-    ## Remarks
-        Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.</p>
+Specifies the selsync.
+
+`Input`
+
+Specifies the audio input to use. For example, specify zero to use the first (zeroth) audio input.
+
+`MonitorSource`
+
+Indicates the monitor source. The default is zero.
+
+## Remarks
+Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 
 ## Requirements
 | &nbsp; | &nbsp; |

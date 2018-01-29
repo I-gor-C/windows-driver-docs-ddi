@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 7c8a0dc8-49ec-476f-b183-1baa419e831d
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
+ms.keywords : hid.pi8042_mouse_isr, MouseIsr callback function [Human Input Devices], MouseIsr, PI8042_MOUSE_ISR, PI8042_MOUSE_ISR, ntdd8042/MouseIsr, i8042ref_f077c4e7-f77b-4f47-a0a7-a7007e4f2475.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : MouseIsr
-req.alt-loc : ntdd8042.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : See Remarks section.
-req.typenames : "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 
@@ -119,20 +123,14 @@ A PI8042_MOUSE_ISR callback runs in kernel mode at the IRQL of the I8042prt mous
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/34d0a7e9-4a1e-43ba-a643-800ebaadc360">MouFilter_IsrHook</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542403">MOUSE_INPUT_DATA</a>
-</dt>
-<dt>
 <a href="..\ntdd8042\ne-ntdd8042-_mouse_state.md">MOUSE_STATE</a>
-</dt>
-<dt>
+
+<a href="https://msdn.microsoft.com/34d0a7e9-4a1e-43ba-a643-800ebaadc360">MouFilter_IsrHook</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542403">MOUSE_INPUT_DATA</a>
+
 <a href="..\ntdd8042\ns-ntdd8042-_output_packet.md">OUTPUT_PACKET</a>
-</dt>
-</dl>
+
  
 
  

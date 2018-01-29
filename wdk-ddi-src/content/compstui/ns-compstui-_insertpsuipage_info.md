@@ -7,8 +7,8 @@ old-location : print\insertpsuipage_info.htm
 old-project : print
 ms.assetid : 99ec8cfa-3ec7-4080-b22a-dba0a86b7e4a
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _INSERTPSUIPAGE_INFO, *PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO
+ms.date : 1/18/2018
+ms.keywords : "*PINSERTPSUIPAGE_INFO, cpsuifnc_0d805815-c7ca-4fd4-8a77-269d6b79588e.xml, compstui/PINSERTPSUIPAGE_INFO, _INSERTPSUIPAGE_INFO, PINSERTPSUIPAGE_INFO structure pointer [Print Devices], INSERTPSUIPAGE_INFO, PINSERTPSUIPAGE_INFO, compstui/INSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO structure [Print Devices], print.insertpsuipage_info"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : INSERTPSUIPAGE_INFO
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : INSERTPSUIPAGE_INFO, *PINSERTPSUIPAGE_INFO
 ---
 
 # _INSERTPSUIPAGE_INFO structure
@@ -51,30 +55,30 @@ typedef struct _INSERTPSUIPAGE_INFO {
 
 ## Members
 
-        
-            `cbSize`
 
-            Caller-supplied size, in bytes, of the INSERTPSUIPAGE_INFO structure.
-        
-            `dwData1`
+`cbSize`
 
-            
-        
-            `dwData2`
+Caller-supplied size, in bytes, of the INSERTPSUIPAGE_INFO structure.
 
-            
-        
-            `dwData3`
+`dwData1`
 
-            Caller-supplied values that depend on the contents of the <b>Type</b> member, as follows:
-        
-            `Mode`
 
-            Caller-supplied value indicating where CPSUI should insert the new pages. It must be one of the following values:
-        
-            `Type`
 
-            Caller-supplied integer value indicating the type of insertion being requested. The member can contain one of the following constants:
+`dwData2`
+
+
+
+`dwData3`
+
+Caller-supplied values that depend on the contents of the <b>Type</b> member, as follows:
+
+`Mode`
+
+Caller-supplied value indicating where CPSUI should insert the new pages. It must be one of the following values:
+
+`Type`
+
+Caller-supplied integer value indicating the type of insertion being requested. The member can contain one of the following constants:
 
 
 ## Requirements

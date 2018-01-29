@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bb73217c-b159-4fd8-8cb3-334326a651ba
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _STOR_DPC, *PSTOR_DPC, STOR_DPC
+ms.keywords : STOR_DPC, storage.stor_dpc, *PSTOR_DPC, _STOR_DPC, storport/STOR_DPC, STOR_DPC structure [Storage Devices], structs-general_e1bef2e1-9703-433c-b8a1-daf30db1aaf6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : STOR_DPC
-req.alt-loc : Storport.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PSTOR_DPC, STOR_DPC"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : STOR_DPC, *PSTOR_DPC
 req.product : Windows 10 or later.
 ---
 
@@ -53,16 +57,12 @@ The STOR_DPC structure is an opaque structure that represents a DPC object. Do n
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
-</dt>
-<dt>
 <a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
-</dt>
-</dl>
+
+<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
+
  
 
  

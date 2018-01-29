@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 76909efd-99ca-4e47-9c81-8a48608c2543
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2, IWDFIoRequest2::GetEffectiveIoType, GetEffectiveIoType
+ms.keywords : umdf.iwdfiorequest2_geteffectiveiotype, wdf.iwdfiorequest2_geteffectiveiotype, GetEffectiveIoType method, wudfddi/IWDFIoRequest2::GetEffectiveIoType, GetEffectiveIoType method, IWDFIoRequest2 interface, IWDFIoRequest2, UMDFRequestObjectRef_cfea225a-09a5-4aed-8576-de9c44c18b81.xml, GetEffectiveIoType, IWDFIoRequest2::GetEffectiveIoType, IWDFIoRequest2 interface, GetEffectiveIoType method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 1.9
-req.alt-api : IWDFIoRequest2.GetEffectiveIoType
-req.alt-loc : WUDFx.dll
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support : Unavailable in UMDF 2.0 and later.
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : WUDFx.dll
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -53,17 +57,11 @@ This function has no parameters.
 
 ## Return Value
 
-<b>GetEffectiveIoType</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value that identifies the buffer access method that UMDF is using for the I/O request's data buffers. 
-
-<b>GetEffectiveIoType</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value that identifies the buffer access method that UMDF is using for the I/O request's data buffers. 
-
 <b>GetEffectiveIoType</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value that identifies the buffer access method that UMDF is using for the I/O request's data buffers.
 
 ## Remarks
 
 For more information about accessing data buffers and when your driver should use <b>GetEffectiveIoType</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers in UMDF-Based Drivers</a>.
-
-The following code example shows how an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556885">IQueueCallbackWrite::OnWrite</a> callback function can obtain the buffer access method of an I/O request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,14 +77,10 @@ The following code example shows how an <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
-</dt>
-<dt>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE (UMDF)</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bb2d56a0-37f4-48bc-8b56-e5250f0f7443
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxPurgeRelatedFobxs
+ms.keywords : scavengr/RxPurgeRelatedFobxs, RxPurgeRelatedFobxs, RxPurgeRelatedFobxs function [Installable File System Drivers], ifsk.rxpurgerelatedfobxs, rxref_56862045-c344-4392-9a25-b4e22c36379f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RxPurgeRelatedFobxs
-req.alt-loc : scavengr.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : NtosKrnl.exe
 req.dll : 
 req.irql : <= APC_LEVEL
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -62,7 +66,7 @@ A pointer to the RX_CONTEXT structure.
 
 `AttemptFinalization`
 
-
+TBD
 
 `PurgingFcb`
 
@@ -72,9 +76,23 @@ A pointer to the FCB structure for which purging should occur.
 ## Return Value
 
 <b>RxPurgeRelatedFobxs</b> returns STATUS_SUCCESS on success or one of the following error values on failure: 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
-</dl>No related FOBX structures could be purged.
+</dl>
+</td>
+<td width="60%">
+No related FOBX structures could be purged.
+
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -102,20 +120,14 @@ If <i>PFCB</i> is not <b>NULL</b>, and this purging FCB strcuture is not the sam
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
-</dt>
-<dt>
-<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
-</dt>
-<dt>
 <a href="..\rxprocs\nf-rxprocs-rxscavengeallfobxs.md">RxScavengeAllFobxs</a>
-</dt>
-<dt>
+
 <a href="..\scavengr\nf-scavengr-rxscavengefobxsfornetroot.md">RxScavengeFobxsForNetRoot</a>
-</dt>
-</dl>
+
+<a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
+
  
 
  

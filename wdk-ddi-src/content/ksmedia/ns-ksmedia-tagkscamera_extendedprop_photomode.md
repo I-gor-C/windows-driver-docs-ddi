@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 96F920FC-43CE-4ACC-B880-9AD03B5D6009
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE, *PKSCAMERA_EXTENDEDPROP_PHOTOMODE
+ms.keywords : KSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE structure [Streaming Media Devices], stream.kscamera_extendedprop_photomode, ksmedia/PKSCAMERA_EXTENDEDPROP_PHOTOMODE, ksmedia/KSCAMERA_EXTENDEDPROP_PHOTOMODE, tagKSCAMERA_EXTENDEDPROP_PHOTOMODE, PKSCAMERA_EXTENDEDPROP_PHOTOMODE structure pointer [Streaming Media Devices], *PKSCAMERA_EXTENDEDPROP_PHOTOMODE, PKSCAMERA_EXTENDEDPROP_PHOTOMODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSCAMERA_EXTENDEDPROP_PHOTOMODE
-req.alt-loc : Ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : KSCAMERA_EXTENDEDPROP_PHOTOMODE, *PKSCAMERA_EXTENDEDPROP_PHOTOMODE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_PHOTOMODE structure
@@ -49,22 +53,22 @@ typedef struct _KSCAMERA_EXTENDEDPROP_PHOTOMODE {
 
 ## Members
 
-        
-            `MaxHistoryFrames`
 
-            Maximum number of history frames supported by the driver.
-        
-            `RequestedHistoryFrames`
+`MaxHistoryFrames`
 
-            The number of history frames to reserve by the driver. The value of <b>RequestedHistoryFrames</b> &lt;= <b>MaxHistoryFrames</b>.
-        
-            `Reserved`
+Maximum number of history frames supported by the driver.
 
-            Reserved. Set to 0.
-        
-            `SubMode`
+`RequestedHistoryFrames`
 
-            Not used. Set to 0.
+The number of history frames to reserve by the driver. The value of <b>RequestedHistoryFrames</b> &lt;= <b>MaxHistoryFrames</b>.
+
+`Reserved`
+
+Reserved. Set to 0.
+
+`SubMode`
+
+Not used. Set to 0.
 
 
 ## Requirements
@@ -75,13 +79,10 @@ typedef struct _KSCAMERA_EXTENDEDPROP_PHOTOMODE {
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn917959">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE</a>
-</dt>
-</dl>
+
  
 
  

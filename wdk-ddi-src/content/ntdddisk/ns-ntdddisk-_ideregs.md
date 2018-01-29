@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 20897336-e032-4aa7-be5f-47704c6d1d12
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _IDEREGS, IDEREGS, *PIDEREGS, *LPIDEREGS
+ms.keywords : "*LPIDEREGS, ntdddisk/IDEREGS, *PIDEREGS, storage.ideregs, ntdddisk/LPIDEREGS, PIDEREGS structure pointer [Storage Devices], LPIDEREGS, structs-IDE_aeab294c-9363-4207-bbcb-d9d442ab5c92.xml, _IDEREGS, ntdddisk/PIDEREGS, IDEREGS structure [Storage Devices], IDEREGS, PIDEREGS, LPIDEREGS structure pointer [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDEREGS
-req.alt-loc : ntdddisk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : IDEREGS, *PIDEREGS, *LPIDEREGS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : IDEREGS, *LPIDEREGS, *PIDEREGS
 ---
 
 # _IDEREGS structure
@@ -53,27 +57,26 @@ typedef struct _IDEREGS {
 
 ## Members
 
-        
-            `bCommandReg`
 
-            Holds the contents of the IDE command register.
-        
-            `bCylHighReg`
+`bCommandReg`
 
-            Holds the contents of the IDE high-order cylinder register.
-        
-            `bCylLowReg`
+Holds the contents of the IDE command register.
 
-            Holds the contents of the IDE low-order cylinder register.
-        
-            `bDriveHeadReg`
+`bCylHighReg`
 
-            Holds the contents of the IDE drive/head register.
-        
-            `bFeaturesReg`
+Holds the contents of the IDE high-order cylinder register.
 
-            Holds the contents of the Features register. This register is used to specify Self-Monitoring Analysis and Reporting Technology (SMART) commands. This member can hold any of the following values:
+`bCylLowReg`
 
+Holds the contents of the IDE low-order cylinder register.
+
+`bDriveHeadReg`
+
+Holds the contents of the IDE drive/head register.
+
+`bFeaturesReg`
+
+Holds the contents of the Features register. This register is used to specify Self-Monitoring Analysis and Reporting Technology (SMART) commands. This member can hold any of the following values:
 <table>
 <tr>
 <th>Feature</th>
@@ -190,18 +193,18 @@ Enables offline mode when set to 1. Disables offline mode when 0.
 </td>
 </tr>
 </table>
-        
-            `bReserved`
 
-            Reserved for future use. Should always be zero.
-        
-            `bSectorCountReg`
+`bReserved`
 
-            Holds the contents of the sector count register. IDE sector count register.
-        
-            `bSectorNumberReg`
+Reserved for future use. Should always be zero.
 
-            Holds the contents of the sector number register.
+`bSectorCountReg`
+
+Holds the contents of the sector count register. IDE sector count register.
+
+`bSectorNumberReg`
+
+Holds the contents of the sector number register.
 
 
 ## Requirements
@@ -212,16 +215,12 @@ Enables offline mode when set to 1. Disables offline mode when 0.
 | **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_ex.md">ATA_PASS_THROUGH_EX</a>
-</dt>
-<dt>
+
 <a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_direct.md">ATA_PASS_THROUGH_DIRECT</a>
-</dt>
-</dl>
+
  
 
  

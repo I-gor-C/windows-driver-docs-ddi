@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3a120831-deac-4075-9aa7-8ae39ac29363
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUpperString
+ms.keywords : RtlUpperString, k109_07df2cdb-0d52-4094-bcdf-62977c15e098.xml, kernel.rtlupperstring, ntddk/RtlUpperString, RtlUpperString routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 2000.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RtlUpperString
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : <=APC_LEVEL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -82,11 +86,8 @@ The number of bytes copied from <i>SourceString</i> is either the <b>Length</b> 
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntddk\nf-ntddk-rtlupperchar.md">RtlUpperChar</a>
-</dt>
-</dl>
+
  
 
  

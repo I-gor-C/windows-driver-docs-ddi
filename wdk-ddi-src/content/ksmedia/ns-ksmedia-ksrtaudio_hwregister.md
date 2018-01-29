@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3d1dc600-f7cb-488e-9f92-678e0a6a58f8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER
+ms.keywords : ksmedia/PKSRTAUDIO_HWREGISTER, aud-prop_f94f5b72-e081-48ee-96b9-4649201743d5.xml, ksmedia/KSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER structure [Audio Devices], PKSRTAUDIO_HWREGISTER, PKSRTAUDIO_HWREGISTER structure pointer [Audio Devices], audio.ksrtaudio_hwregister
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later Windows operati
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : KSRTAUDIO_HWREGISTER
-req.alt-loc : ksmedia.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PKSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : KSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER
 ---
 
 # KSRTAUDIO_HWREGISTER structure
@@ -50,29 +54,29 @@ typedef struct {
 
 ## Members
 
-        
-            `Accuracy`
 
-            Specifies the accuracy of the clock or position register. See the following Remarks section.
-        
-            `Denominator`
+`Accuracy`
 
-            Specifies the denominator of the frequency at which the clock register increments. See the following Remarks. section.
-        
-            `Numerator`
+Specifies the accuracy of the clock or position register. See the following Remarks section.
 
-            Specifies the numerator of the frequency at which the clock register increments. See the following Remarks. section.
-        
-            `Register`
+`Denominator`
 
-            Pointer to the register. This member specifies the virtual address into which the register is mapped.
-        
-            `Width`
+Specifies the denominator of the frequency at which the clock register increments. See the following Remarks. section.
 
-            Specifies the width, in bits, of the register. The value of this member can be 32 or 64.
+`Numerator`
 
-    ## Remarks
-        For hardware position register requests via KSPROPERTY_RTAUDIO_POSITIONREGISTER the driver fills in the <b>Register</b>, <b>Width</b> and <b>Accuracy</b> members, because the other members are specific to clock registers.  For hardware clock register requests via KSPROPERTY_RTAUDIO_CLOCKREGISTER the driver fills in the entire structure.
+Specifies the numerator of the frequency at which the clock register increments. See the following Remarks. section.
+
+`Register`
+
+Pointer to the register. This member specifies the virtual address into which the register is mapped.
+
+`Width`
+
+Specifies the width, in bits, of the register. The value of this member can be 32 or 64.
+
+## Remarks
+For hardware position register requests via KSPROPERTY_RTAUDIO_POSITIONREGISTER the driver fills in the <b>Register</b>, <b>Width</b> and <b>Accuracy</b> members, because the other members are specific to clock registers.  For hardware clock register requests via KSPROPERTY_RTAUDIO_CLOCKREGISTER the driver fills in the entire structure.
 
 A clock register is a counter that increments at the frequency of the internal hardware clock that drives the internal bus of the audio device. The register increments by one with each tick of the clock. The register begins counting when the device powers on and continues to run until the device powers off. The clock register is used by software to synchronize two or more devices with independent hardware clocks.
 
@@ -94,19 +98,14 @@ For position registers, the <i>Accuracy</i> parameter represents the accuracy of
 | **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537381">KSPROPERTY_RTAUDIO_POSITIONREGISTER</a>
-</dt>
-<dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537376">KSPROPERTY_RTAUDIO_CLOCKREGISTER</a>
-</dt>
-<dt>
 <a href="..\ksmedia\ns-ksmedia-ksrtaudio_hwregister_property.md">KSRTAUDIO_HWREGISTER_PROPERTY</a>
-</dt>
-</dl>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537381">KSPROPERTY_RTAUDIO_POSITIONREGISTER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537376">KSPROPERTY_RTAUDIO_CLOCKREGISTER</a>
+
  
 
  

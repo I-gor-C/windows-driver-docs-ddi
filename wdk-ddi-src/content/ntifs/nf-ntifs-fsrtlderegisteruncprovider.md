@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3f53a22f-b5d6-4e3d-987d-989bd5840b2a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlDeregisterUncProvider
+ms.keywords : FsRtlDeregisterUncProvider routine [Installable File System Drivers], fsrtlref_d1eb1778-7643-44df-8f68-edc995b22246.xml, ifsk.fsrtlderegisteruncprovider, FsRtlDeregisterUncProvider, ntifs/FsRtlDeregisterUncProvider
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : FsRtlDeregisterUncProvider
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -86,14 +90,10 @@ For more information, see the following sections in the Design Guide:
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex~r3.md">FsRtlRegisterUncProviderEx</a>
-</dt>
-</dl>
+
  
 
  

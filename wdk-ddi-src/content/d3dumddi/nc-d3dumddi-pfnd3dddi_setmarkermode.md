@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D45750D9-F722-4208-8D00-E14FD9C009CB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_PTE, DXGK_PTE
+ms.keywords : display.pfnsetmarkermode, pfnSetMarkerMode callback function [Display Devices], pfnSetMarkerMode, PFND3DDDI_SETMARKERMODE, PFND3DDDI_SETMARKERMODE, d3dumddi/pfnSetMarkerMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
 req.target-min-winversvr : Windows Server 2012 R2
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : pfnSetMarkerMode
-req.alt-loc : D3dumddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_PTE
 ---
 
@@ -75,6 +79,11 @@ Returns <b>S_OK</b> or an appropriate error result if the function does not comp
 ## Remarks
 
 Follow these guidelines when you set up profile-type marker events in your user-mode driver, indicated by the <b>D3DDDIMT_PROFILE</b> type:
+<ol>
+<li>Use lightweight instrumentation that doesn't produce a strong correlation with graphics command boundaries.</li>
+<li>The driver must be able to sample the GPU time stamp at the end of the graphics pipeline.</li>
+<li>Don't use sampling commands that place a high performance burden on the graphics pipeline, such as wait-for-idle commands. To be able to instrument profile-type marker events, your driver shouldn't have to flush the pipeline or caches.</li>
+</ol>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,14 +99,10 @@ Follow these guidelines when you set up profile-type marker events in your user-
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_markertype.md">D3DDDI_MARKERTYPE</a>
-</dt>
-<dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarkermode.md">SetMarkerMode</a>
-</dt>
-</dl>
+
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_markertype.md">D3DDDI_MARKERTYPE</a>
+
  
 
  

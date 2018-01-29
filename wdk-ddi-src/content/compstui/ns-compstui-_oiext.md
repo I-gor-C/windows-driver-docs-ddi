@@ -7,8 +7,8 @@ old-location : print\oiext.htm
 old-project : print
 ms.assetid : 932e5520-0ebf-4cfa-893a-a7eb969cb697
 ms.author : windowsdriverdev
-ms.date : 1/8/2018
-ms.keywords : _OIEXT, *POIEXT, OIEXT
+ms.date : 1/18/2018
+ms.keywords : _OIEXT, POIEXT structure pointer [Print Devices], OIEXT structure [Print Devices], OIEXT, cpsuifnc_3abbb233-5393-4e23-a206-0474cfd6d7f1.xml, print.oiext, *POIEXT, compstui/POIEXT, POIEXT, compstui/OIEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : OIEXT
-req.alt-loc : compstui.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*POIEXT, OIEXT"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : OIEXT, *POIEXT
 ---
 
 # _OIEXT structure
@@ -50,19 +54,18 @@ typedef struct _OIEXT {
 
 ## Members
 
-        
-            `cbSize`
 
-            Size, in bytes, of the OIEXT structure.
-        
-            `dwReserved`
+`cbSize`
 
-            Reserved, must be initialized to zero.
-        
-            `Flags`
+Size, in bytes, of the OIEXT structure.
 
-            Can contain the following bit flag:
+`dwReserved`
 
+Reserved, must be initialized to zero.
+
+`Flags`
+
+Can contain the following bit flag:
 <table>
 <tr>
 <th>Flag</th>
@@ -83,14 +86,14 @@ CPSUI does not check this flag if <b>pHelpFile</b> specifies a resource ID.
 </td>
 </tr>
 </table>
-        
-            `hInstCaller`
 
-            Instance handle to a DLL containing string and icon resources belonging to the <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a>, <a href="..\compstui\ns-compstui-_opttype.md">OPTTYPE</a>, and <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures associated with the OIEXT structure. If <b>NULL</b>, CPSUI obtains resources from the DLL identified by the <b>hInstCaller</b> member of a <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
-        
-            `pHelpFile`
+`hInstCaller`
 
-            Pointer to a NULL-terminated string representing a path to a help file containing help information for the option. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. If <b>NULL</b>, CPSUI uses the help file identified by the <b>pHelpFile</b> member of a <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
+Instance handle to a DLL containing string and icon resources belonging to the <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a>, <a href="..\compstui\ns-compstui-_opttype.md">OPTTYPE</a>, and <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures associated with the OIEXT structure. If <b>NULL</b>, CPSUI obtains resources from the DLL identified by the <b>hInstCaller</b> member of a <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
+
+`pHelpFile`
+
+Pointer to a NULL-terminated string representing a path to a help file containing help information for the option. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. If <b>NULL</b>, CPSUI uses the help file identified by the <b>pHelpFile</b> member of a <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
 
 
 ## Requirements

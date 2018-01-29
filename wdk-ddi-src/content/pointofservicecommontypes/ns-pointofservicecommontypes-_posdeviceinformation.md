@@ -7,8 +7,8 @@ old-location : pos\posdeviceinformation.htm
 old-project : pos
 ms.assetid : 9ae1cfd1-1ef8-4f27-b6e1-f593bdc020e8
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PosDeviceInformation, PosDeviceInformation
+ms.date : 1/18/2018
+ms.keywords : pos.posdeviceinformation, _PosDeviceInformation, PosDeviceInformation, PosDeviceInformation structure, pointofservicecommontypes/PosDeviceInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : PosDeviceInformation
-req.alt-loc : PointOfServiceCommonTypes.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : Called at PASSIVE_LEVEL.
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : PosDeviceInformation
 ---
 
@@ -55,49 +59,49 @@ typedef struct _PosDeviceInformation {
 
 ## Members
 
-        
-            `DeviceCategory`
 
-            Indicates the device category (for example, POSPrinter or CashDrawer).
-        
-            `FirmwareRevision`
+`DeviceCategory`
 
-            Indicates the device firmware revision.
-        
-            `InstallationDate`
+Indicates the device category (for example, POSPrinter or CashDrawer).
 
-            Indicates the device installation date.
-        
-            `Interface`
+`FirmwareRevision`
 
-            Indicates the device hardware interface (for example, serial or USB).
-        
-            `ManufactureDate`
+Indicates the device firmware revision.
 
-            Indicates the date the device was manufactured.
-        
-            `ManufacturerName`
+`InstallationDate`
 
-            Indicates the name of the device manufacturer.
-        
-            `MechanicalRevision`
+Indicates the device installation date.
 
-            Indicates the device hardware revision.
-        
-            `ModelName`
+`Interface`
 
-            Indicates the model name of the device.
-        
-            `SerialNumber`
+Indicates the device hardware interface (for example, serial or USB).
 
-            Indicates the serial number of the device.
-        
-            `UnifiedPOSVersion`
+`ManufactureDate`
 
-            Indicates the version of the UPOS specification supported.
+Indicates the date the device was manufactured.
 
-    ## Remarks
-        These strings must be NULL terminated, and the maximum length of the strings is <code>STATISTICS_STRING_SIZE - 1</code>.</p>
+`ManufacturerName`
+
+Indicates the name of the device manufacturer.
+
+`MechanicalRevision`
+
+Indicates the device hardware revision.
+
+`ModelName`
+
+Indicates the model name of the device.
+
+`SerialNumber`
+
+Indicates the serial number of the device.
+
+`UnifiedPOSVersion`
+
+Indicates the version of the UPOS specification supported.
+
+## Remarks
+These strings must be NULL terminated, and the maximum length of the strings is <code>STATISTICS_STRING_SIZE - 1</code>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

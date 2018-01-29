@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3ab0c8b8-1f41-48b7-9c42-ea843ebcd82e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcSetReadAheadGranularity
+ms.keywords : ntifs/CcSetReadAheadGranularity, CcSetReadAheadGranularity, ccref_9b995224-0e59-43c6-b827-c15d9ae6e86c.xml, CcSetReadAheadGranularity routine [Installable File System Drivers], ifsk.ccsetreadaheadgranularity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : CcSetReadAheadGranularity
-req.alt-loc : NtosKrnl.exe
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : TOKEN_TYPE
 ---
 
@@ -80,20 +84,14 @@ After <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
-</dt>
-<dt>
-<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
-</dt>
-<dt>
+
 <a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
-</dt>
-</dl>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
+
  
 
  

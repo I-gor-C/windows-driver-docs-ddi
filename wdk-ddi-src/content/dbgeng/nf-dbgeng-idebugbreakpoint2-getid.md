@@ -7,8 +7,8 @@ old-location : debugger\getid.htm
 old-project : debugger
 ms.assetid : 991d8a40-1991-4c06-9557-9abee3ed8073
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugBreakpoint2, IDebugBreakpoint2::GetId, GetId
+ms.date : 1/19/2018
+ms.keywords : dbgeng/IDebugBreakpoint::GetId, IDebugBreakpoint interface [Windows Debugging], GetId method, dbgeng/IDebugBreakpoint2::GetId, IDebugBreakpoint2, IDebugBreakpoint2::GetId, debugger.getid, GetId method [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], GetId method, ComOther_408e8e80-f34e-4895-9bae-66dbb0f9aa97.xml, IDebugBreakpoint::GetId, GetId method [Windows Debugging], IDebugBreakpoint2 interface, GetId, GetId method [Windows Debugging], IDebugBreakpoint interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDebugBreakpoint.GetId,IDebugBreakpoint2.GetId
-req.alt-loc : dbgeng.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
@@ -55,11 +59,23 @@ The breakpoint ID.
 
 ## Return Value
 
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The method was successful.
+</dl>
+</td>
+<td width="60%">
+The method was successful.
 
- 
+</td>
+</tr>
+</table> 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -69,7 +85,7 @@ The breakpoint ID remains fixed as long as the breakpoint exists.  However, afte
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the breakpoint ID.
 
-For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
+For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

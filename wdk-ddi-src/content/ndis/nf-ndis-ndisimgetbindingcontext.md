@@ -7,8 +7,8 @@ old-location : netvista\ndisimgetbindingcontext.htm
 old-project : netvista
 ms.assetid : fc0668b3-9242-4d30-9dc9-820f6d596d6c
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : NdisIMGetBindingContext
+ms.date : 1/18/2018
+ms.keywords : netvista.ndisimgetbindingcontext, NdisIMGetBindingContext function [Network Drivers Starting with Windows Vista], NdisIMGetBindingContext, ndis/NdisIMGetBindingContext, intermediate_ref_ef5b6cf4-209a-4e51-be20-2e0e7bcc1ac8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : NdisIMGetBindingContext
-req.alt-loc : ndis.lib,ndis.dll
 req.ddi-compliance : Irql_IM_Function
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : Ndis.lib
 req.dll : 
 req.irql : < DISPATCH_LEVEL
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -76,8 +80,8 @@ A protocol driver or intermediate driver can call
 
 Such a device context area was allocated and defined by the lower level NDIS intermediate driver and
     passed to NDIS in a call to the 
-    <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
-    NdisIMInitializeDeviceInstanceEx</a> function.
+    <mshelp:link keywords="netvista.ndisiminitializedeviceinstanceex" tabindex="0"><b>
+    NdisIMInitializeDeviceInstanceEx</b></mshelp:link> function.
 
 All protocol drivers that call 
     <b>NdisIMGetBindingContext</b> can safely assume that the underlying intermediate driver allocated its
@@ -98,20 +102,15 @@ All protocol drivers that call
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
-   NdisIMInitializeDeviceInstanceEx</a>
-</dt>
-<dt>
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
-</dt>
-<dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
-</dt>
-</dl>
- 
+
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+
+<mshelp:link keywords="netvista.ndisiminitializedeviceinstanceex" tabindex="0"><b>
+   NdisIMInitializeDeviceInstanceEx</b></mshelp:link>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMGetBindingContext function%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMGetBindingContext function%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

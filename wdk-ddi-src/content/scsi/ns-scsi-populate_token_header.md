@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 897C74A3-041D-487E-8891-7161B76ABAA1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : POPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER, *PPOPULATE_TOKEN_HEADER
+ms.keywords : scsi/PPOPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER structure [Storage Devices], PPOPULATE_TOKEN_HEADER structure pointer [Storage Devices], PPOPULATE_TOKEN_HEADER, scsi/POPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER, *PPOPULATE_TOKEN_HEADER, storage.populate_token_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available starting with Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : POPULATE_TOKEN_HEADER
-req.alt-loc : scsi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : POPULATE_TOKEN_HEADER, *PPOPULATE_TOKEN_HEADER
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PPOPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -54,41 +58,41 @@ typedef struct _POPULATE_TOKEN_HEADER {
 
 ## Members
 
-        
-            `BlockDeviceRangeDescriptor`
 
-            An array of <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the logical blocks representing the file being read from the LUN.
-        
-            `BlockDeviceRangeDescriptorListLength`
+`BlockDeviceRangeDescriptor`
 
-            The length, in bytes, for all  of the <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
-        
-            `Immediate`
+An array of <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the logical blocks representing the file being read from the LUN.
 
-            If set, the status of the POPULATE TOKEN command is returned immediately after receipt and validation of the range descriptors. Otherwise, status is returned after all command processing is complete.
-        
-            `InactivityTimeout`
+`BlockDeviceRangeDescriptorListLength`
 
-            The timeout duration for which the copy provider waits for the next command using the token created for this representation of data (ROD). The validity of the token created  for the ROD described by this structure expires at this timeout value.
-        
-            `PopulateTokenDataLength`
+The length, in bytes, for all  of the <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
 
-            The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.
-        
-            `Reserved1`
+`Immediate`
 
-            Reserved bits.
-        
-            `Reserved2`
+If set, the status of the POPULATE TOKEN command is returned immediately after receipt and validation of the range descriptors. Otherwise, status is returned after all command processing is complete.
 
-            Reserved.
-        
-            `Reserved3`
+`InactivityTimeout`
 
-            Reserved.
+The timeout duration for which the copy provider waits for the next command using the token created for this representation of data (ROD). The validity of the token created  for the ROD described by this structure expires at this timeout value.
 
-    ## Remarks
-        The <b>POPULATE_TOKEN_HEADER</b> structure contains a series of <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the token ROD.
+`PopulateTokenDataLength`
+
+The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.
+
+`Reserved1`
+
+Reserved bits.
+
+`Reserved2`
+
+Reserved.
+
+`Reserved3`
+
+Reserved.
+
+## Remarks
+The <b>POPULATE_TOKEN_HEADER</b> structure contains a series of <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the token ROD.
 
 All multibyte values are in big endian format. Prior to setting, these values must be converted from the endian format of the current platform.
 
@@ -100,13 +104,10 @@ All multibyte values are in big endian format. Prior to setting, these values mu
 | **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Scsi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
-</dt>
-</dl>
+
  
 
  

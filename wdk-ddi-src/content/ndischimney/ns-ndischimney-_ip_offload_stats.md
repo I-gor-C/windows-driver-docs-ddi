@@ -7,8 +7,8 @@ old-location : netvista\ip_offload_stats.htm
 old-project : netvista
 ms.assetid : f40c5734-2546-40c3-a6fb-58f728c3cc5e
 ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : _IP_OFFLOAD_STATS, IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS
+ms.date : 1/18/2018
+ms.keywords : "*PIP_OFFLOAD_STATS, ndischimney/IP_OFFLOAD_STATS, PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS, ndischimney/PIP_OFFLOAD_STATS, PIP_OFFLOAD_STATS structure pointer [Network Drivers Starting with Windows Vista], _IP_OFFLOAD_STATS, IP_OFFLOAD_STATS structure [Network Drivers Starting with Windows Vista], netvista.ip_offload_stats, tcp_chim_struct_292881aa-1c15-4b1a-abd9-927d3b3b8f7b.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IP_OFFLOAD_STATS
-req.alt-loc : ndischimney.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : "*PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS"
 ---
 
 # _IP_OFFLOAD_STATS structure
@@ -60,79 +64,79 @@ typedef struct _IP_OFFLOAD_STATS {
 
 ## Members
 
-        
-            `InDelivers`
 
-            The number of input IP datagrams that were successfully delivered to offloaded TCP connections.
+`InDelivers`
+
+The number of input IP datagrams that were successfully delivered to offloaded TCP connections.
      See 
      "ipInDelivers" in RFC 2011.
-        
-            `InDiscards`
 
-            The number of input IP datagrams received on offloaded TCP connections that contained nothing to
+`InDiscards`
+
+The number of input IP datagrams received on offloaded TCP connections that contained nothing to
      prevent their further processing but that were discarded for run-time reasons, such as a lack of
      available memory or other resources. See 
      "ipInDiscards" in RFC 2011.
-        
-            `InHeaderErrors`
 
-            The number of input IP datagrams received on offloaded TCP connections that were discarded because
+`InHeaderErrors`
+
+The number of input IP datagrams received on offloaded TCP connections that were discarded because
      of errors in their IP headers. Such errors include bad checksums, version number mismatch, other format
      errors, time-to-live exceeded, and errors discovered in processing IPv6 options if the offload target
      supports such options. (An offload target does not process IPv4 options.) This count does not include
      errors resulting from invalid destination addresses. See 
      "ipInHdrErrors" in RFC 2011.
-        
-            `InOctets`
 
-            The total number of octets (bytes) in input IP datagrams that have been received from the
+`InOctets`
+
+The total number of octets (bytes) in input IP datagrams that have been received from the
      interface on offloaded TCP connections. Octets from datagrams counted in 
      <b>InReceives</b> must be counted here. 
      <b>InOctets</b> must include the number of bytes in the IP header and payload.
-        
-            `InReceives`
 
-            The total number of input IP datagrams that have been received from the interface on offloaded TCP
+`InReceives`
+
+The total number of input IP datagrams that have been received from the interface on offloaded TCP
      connections, including IP datagrams received in error. See 
      "ipInReceives" in RFC 2011.
-        
-            `InTruncatedPackets`
 
-            The number of input IP datagrams discarded because the datagram frame didn't carry enough data. 
+`InTruncatedPackets`
+
+The number of input IP datagrams discarded because the datagram frame didn't carry enough data. 
      <b>InTruncatedPackets</b> should only be incremented if the frame contained a valid header but was
      otherwise shorter than required. Frames that are too short to contain a valid header should be counted
      as 
      <b>InHeaderErrors</b> .
-        
-            `OutDiscards`
 
-            The number of output IP datagrams that the offload target supplied to its IP layer for which no
+`OutDiscards`
+
+The number of output IP datagrams that the offload target supplied to its IP layer for which no
      problem was encountered to prevent their transmission but that were discarded for run-time reasons, such
      as a lack of memory or other resources. See 
      "ipOutDiscards" in RFC 2011.
-        
-            `OutNoRoutes`
 
-            The number of output IP datagrams that the offload target supplied to its IP layer that were
+`OutNoRoutes`
+
+The number of output IP datagrams that the offload target supplied to its IP layer that were
      discarded because no route (such as an offloaded path state object) could be found to transmit them to
      their destination. See 
      "ipOutNoRoutes" in RFC 2011.
-        
-            `OutOctets`
 
-            The total number of octets (bytes) in IP datagrams that the offload target supplied to its IP
+`OutOctets`
+
+The total number of octets (bytes) in IP datagrams that the offload target supplied to its IP
      layer in requests for transmission on offloaded TCP connections. Octets from datagrams counted in 
      <b>OutRequests</b> must be counted here. 
      <b>OutOctets</b> must include the number of bytes in the IP header and payload.
-        
-            `OutRequests`
 
-            The number of IP datagrams that the offload target supplied to its IP layer in requests for
+`OutRequests`
+
+The number of IP datagrams that the offload target supplied to its IP layer in requests for
      transmission on offloaded TCP connections. See 
      "ipOutRequests" in RFC 2011.
 
-    ## Remarks
-        The statistics in the IP_OFFLOAD_STATS structure pertain only to IP datagrams that the offload target
+## Remarks
+The statistics in the IP_OFFLOAD_STATS structure pertain only to IP datagrams that the offload target
     has processed on offloaded TCP connections. The offload target must not include counts for IP datagrams
     on non-offloaded connections. The statistics pertain to a single network interface.
 
@@ -145,17 +149,21 @@ If an offload target's TCP chimney capabilities are enabled (see
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff558995">NDIS_TASK_OFFLOAD</a>) and if at least one
     neighbor state object has been offloaded to the offload target, the offload target can process a received
     packet that has a corrupted IP header in one of two ways:
-
+<ul>
+<li>
 The offload target can indicate the packet through the non-offload interface by calling the 
-      <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
-      NdisMIndicateReceiveNetBufferLists</a> function. In this case, the offload target must not increment
+      <mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
+      NdisMIndicateReceiveNetBufferLists</b></mshelp:link> function. In this case, the offload target must not increment
       the InHeaderErrors counter. This is the recommended approach.
 
+</li>
+<li>
 Alternatively, the offload target can drop the corrupted packet 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff558995">NDIS_TASK_OFFLOAD</a> and increment the
       InHeaderErrors counter.
 
-The host stack integrates the statistics returned by an offload target with the statistics that the
+</li>
+</ul>The host stack integrates the statistics returned by an offload target with the statistics that the
     host stack maintains for non-offloaded TCP connections.
 
 Note that the host stack supplies an IP_OFFLOAD_STATS structure when setting OID_IP4_OFFLOAD_STATS or
@@ -176,25 +184,19 @@ All of the counters that supply the values for the IP_OFFLOAD_STATS structure wr
 | **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
-   NdisMIndicateReceiveNetBufferLists</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558995">NDIS_TASK_OFFLOAD</a>
-</dt>
-<dt>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569758">OID_IP4_OFFLOAD_STATS</a>
-</dt>
-<dt>
+
+<mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
+   NdisMIndicateReceiveNetBufferLists</b></mshelp:link>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569759">OID_IP6_OFFLOAD_STATS</a>
-</dt>
-</dl>
- 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IP_OFFLOAD_STATS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IP_OFFLOAD_STATS structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

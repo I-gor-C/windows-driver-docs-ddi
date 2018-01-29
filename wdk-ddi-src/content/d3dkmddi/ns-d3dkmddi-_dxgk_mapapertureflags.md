@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c6a6f98f-a4e3-47ed-b9e9-7303c824612d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGK_MAPAPERTUREFLAGS, DXGK_MAPAPERTUREFLAGS
+ms.keywords : _DXGK_MAPAPERTUREFLAGS, d3dkmddi/DXGK_MAPAPERTUREFLAGS, DmStructs_74b5ec6e-0c62-419f-beb2-676d993c7496.xml, display.dxgk_mapapertureflags, DXGK_MAPAPERTUREFLAGS structure [Display Devices], DXGK_MAPAPERTUREFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DXGK_MAPAPERTUREFLAGS
-req.alt-loc : d3dkmddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : DXGK_MAPAPERTUREFLAGS
 ---
 
@@ -62,16 +66,12 @@ typedef struct _DXGK_MAPAPERTUREFLAGS {
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-</dt>
-<dt>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
-</dt>
-</dl>
+
  
 
  

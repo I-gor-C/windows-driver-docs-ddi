@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 71e8eb0e-599b-44cf-955b-828f6667edf6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords : display.dxgkcbunmapmemory, DxgkCbUnmapMemory callback function [Display Devices], DxgkCbUnmapMemory, DXGKCB_UNMAP_MEMORY, DXGKCB_UNMAP_MEMORY, dispmprt/DxgkCbUnmapMemory, DpFunctions_d0ba5b02-22ab-4fad-a54a-1e402f538456.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : callback
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Available in Windows Vista and later versions of the
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : DxgkCbUnmapMemory
-req.alt-loc : dispmprt.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : PASSIVE_LEVEL
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -80,11 +84,8 @@ The beginning address of the range to be unmapped. This address can be a virtual
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_map_memory.md">DxgkCbMapMemory</a>
-</dt>
-</dl>
+
  
 
  

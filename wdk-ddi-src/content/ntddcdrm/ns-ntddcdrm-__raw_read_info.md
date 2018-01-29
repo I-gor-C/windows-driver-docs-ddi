@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8786545d-39b2-4331-9d62-3b345eb58d1f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : __RAW_READ_INFO, *PRAW_READ_INFO, RAW_READ_INFO
+ms.keywords : PRAW_READ_INFO structure pointer [Storage Devices], RAW_READ_INFO structure [Storage Devices], storage.raw_read_info, __RAW_READ_INFO, *PRAW_READ_INFO, ntddcdrm/RAW_READ_INFO, RAW_READ_INFO, structs-CD-ROM_4414d6ab-7048-4977-b373-58d1240f5262.xml, PRAW_READ_INFO, ntddcdrm/PRAW_READ_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : RAW_READ_INFO
-req.alt-loc : ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,7 +29,13 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
-req.typenames : "*PRAW_READ_INFO, RAW_READ_INFO"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : RAW_READ_INFO, *PRAW_READ_INFO
 ---
 
 # __RAW_READ_INFO structure
@@ -48,18 +52,18 @@ typedef struct __RAW_READ_INFO {
 
 ## Members
 
-        
-            `DiskOffset`
 
-            Contains an offset into the CD-ROM disc where data will be read. You can  calculate this offset by multiplying the starting sector number for the request times 2048.
-        
-            `SectorCount`
+`DiskOffset`
 
-            Contains the number of sectors to read.
-        
-            `TrackMode`
+Contains an offset into the CD-ROM disc where data will be read. You can  calculate this offset by multiplying the starting sector number for the request times 2048.
 
-            Contains an enumerator of type <a href="..\ntddcdrm\ne-ntddcdrm-_track_mode_type.md">TRACK_MODE_TYPE</a> that indicates the type of the track mode.
+`SectorCount`
+
+Contains the number of sectors to read.
+
+`TrackMode`
+
+Contains an enumerator of type <a href="..\ntddcdrm\ne-ntddcdrm-_track_mode_type.md">TRACK_MODE_TYPE</a> that indicates the type of the track mode.
 
 
 ## Requirements
@@ -70,16 +74,12 @@ typedef struct __RAW_READ_INFO {
 | **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_raw_read.md">IOCTL_CDROM_RAW_READ</a>
-</dt>
-<dt>
+
 <a href="..\ntddcdrm\ne-ntddcdrm-_track_mode_type.md">TRACK_MODE_TYPE</a>
-</dt>
-</dl>
+
  
 
  

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ef7ffca-9192-4578-8397-c7fbb2ea2239
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_MONITOR_DESCRIPTION,
+ms.keywords : iddcx/IDDCX_MONITOR_DESCRIPTION, display.iddcx_monitor_description, IDDCX_MONITOR_DESCRIPTION, IDDCX_MONITOR_DESCRIPTION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDDCX_MONITOR_DESCRIPTION
-req.alt-loc : iddcx.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : 
 ---
 
@@ -49,22 +53,22 @@ typedef struct IDDCX_MONITOR_DESCRIPTION {
 
 ## Members
 
-        
-            `DataSize`
 
-            The size of the monitor description data.
-        
-            `pData`
+`DataSize`
 
-            Pointer to the monitor description data.
-        
-            `Size`
+The size of the monitor description data.
 
-            Total size of the structure.
-        
-            `Type`
+`pData`
 
-            Type of this monitor description.
+Pointer to the monitor description data.
+
+`Size`
+
+Total size of the structure.
+
+`Type`
+
+Type of this monitor description.
 
 
 ## Requirements

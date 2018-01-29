@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b327bdd4-f145-4211-a77c-80dffad16547
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _WRITE_ROTATION, WRITE_ROTATION, *PWRITE_ROTATION
+ms.keywords : storage.ioctl_cdrom_get_inquiry_data, IOCTL_CDROM_GET_INQUIRY_DATA control code [Storage Devices], IOCTL_CDROM_GET_INQUIRY_DATA, ntddcdrm/IOCTL_CDROM_GET_INQUIRY_DATA, k307_9b073c58-022f-47c3-aeba-716277accce5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : ioctl
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IOCTL_CDROM_GET_INQUIRY_DATA
-req.alt-loc : Ntddcdrm.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,14 +29,16 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_INQUIRY_DATA IOCTL
-Returns the SCSI inquiry data for the CD-ROM device. This IOCTL can be used when a device has been exclusively locked with <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>.
-
-
-
 Returns the SCSI inquiry data for the CD-ROM device. This IOCTL can be used when a device has been exclusively locked with <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>.
 
 ### Major Code
@@ -63,11 +63,10 @@ The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the returned in
 <text></text>
 
 ### Status Block
-I/O Status block
 The <b>Information</b> field contains the number of bytes returned in the output buffer. The <b>Status</b> field indicates the results of the operation.
 
-    ## Remarks
-        TBD
+## Remarks
+TBD
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,16 +75,12 @@ The <b>Information</b> field contains the number of bytes returned in the output
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 | **IRQL** |  |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
-</dt>
-<dt>
 <a href="..\scsi\ns-scsi-_inquirydata.md">INQUIRYDATA</a>
-</dt>
-</dl>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
+
  
 
  

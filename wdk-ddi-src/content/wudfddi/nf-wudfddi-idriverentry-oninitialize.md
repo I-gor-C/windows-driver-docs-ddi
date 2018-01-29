@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c676588e-348b-4840-9873-6b1bb2454987
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IDriverEntry, IDriverEntry::OnInitialize, OnInitialize
+ms.keywords : IDriverEntry::OnInitialize, OnInitialize method, UMDFDriverObjectRef_01ebb7b4-69bb-4597-b21a-d3ff6cf3bc24.xml, OnInitialize, IDriverEntry, IDriverEntry interface, OnInitialize method, OnInitialize method, IDriverEntry interface, umdf.idriverentry_oninitialize, wdf.idriverentry_oninitialize, wudfddi/IDriverEntry::OnInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : IDriverEntry.OnInitialize
-req.alt-loc : Wudfddi.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,9 +26,15 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : wudfddi.h
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : "*PPOWER_ACTION, POWER_ACTION"
 req.product : Windows 10 or later.
 ---
@@ -78,14 +82,10 @@ The framework creates a new driver object for each driver that is loaded in the 
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a>
-</dt>
-<dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
-</dt>
-</dl>
+
+<a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a>
+
  
 
  

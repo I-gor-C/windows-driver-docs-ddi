@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7fc9295b-90b4-4fa7-abcb-3e3e6a165203
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_RECLAIMALLOCATIONS, D3DKMT_RECLAIMALLOCATIONS
+ms.keywords : d3dkmthk/D3DKMT_RECLAIMALLOCATIONS, display.d3dkmt_reclaimallocations, _D3DKMT_RECLAIMALLOCATIONS, D3DKMT_RECLAIMALLOCATIONS, D3DKMT_RECLAIMALLOCATIONS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -19,8 +19,6 @@ req.target-min-winverclnt : Windows 8
 req.target-min-winversvr : Windows Server 2012
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : D3DKMT_RECLAIMALLOCATIONS
-req.alt-loc : D3dkmthk.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -31,6 +29,12 @@ req.type-library :
 req.lib : 
 req.dll : 
 req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
 req.typenames : D3DKMT_RECLAIMALLOCATIONS
 ---
 
@@ -50,34 +54,34 @@ typedef struct _D3DKMT_RECLAIMALLOCATIONS {
 
 ## Members
 
-        
-            `HandleList`
 
-            [in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
+`HandleList`
+
+[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
 
 If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.
-        
-            `hDevice`
 
-            [in] A D3DKMT_HANDLE data type that represents a handle to the device that created the allocations.
-        
-            `NumAllocations`
+`hDevice`
 
-            [in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
-        
-            `pDiscarded`
+[in] A D3DKMT_HANDLE data type that represents a handle to the device that created the allocations.
 
-            [out] An  array of Boolean values that specify whether each resource or allocation was discarded.
+`NumAllocations`
+
+[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
+
+`pDiscarded`
+
+[out] An  array of Boolean values that specify whether each resource or allocation was discarded.
 
 Each Boolean value in this array corresponds to a resource at the same index location in the arrays pointed to by <b>pResources</b> or   <b>HandleList.</b>
 
 The DirectX graphics kernel subsystem sets each Boolean value to <b>TRUE</b> if the correponding resource was discarded, or to <b>FALSE</b> if not.
 
 The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>NULL</b>, the content of the resource or allocation can be assumed to be lost. If the driver does not need the content of the resource or allocation, setting <b>pDiscarded</b> to <b>NULL</b> might improve performance.
-        
-            `pResources`
 
-            [in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
+`pResources`
+
+[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
 
 
 ## Requirements
@@ -88,13 +92,10 @@ The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>N
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
-<dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreclaimallocations.md">D3DKMTReclaimAllocations</a>
-</dt>
-</dl>
+
  
 
  
